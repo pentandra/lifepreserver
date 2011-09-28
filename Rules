@@ -18,7 +18,7 @@ Compass.add_project_configuration 'compass/config.rb'
 #   because “*” matches zero or more characters.
 
 compile '/stylesheet/' do
-  # don’t filter or layout
+  filter :sass, Compass.sass_engine_options
 end
 
 compile '*' do
