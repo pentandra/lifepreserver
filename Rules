@@ -21,6 +21,26 @@ compile '/css/*/' do
   filter :sass, Compass.sass_engine_options
 end
 
+compile '/sass/partials/*/' do
+  # don't compile partials
+end
+
+compile '/js/*/' do
+  # don't compile javascript
+end
+
+compile '/robots/' do
+  nil
+end
+
+compile '/humans/' do
+  nil
+end
+
+compile '/crossdomain/' do
+  nil
+end
+
 compile '*' do
   if item.binary?
     # don’t filter binary items
@@ -28,6 +48,13 @@ compile '*' do
     filter :erb
     layout 'default'
   end
+end
+
+### Routing rules
+
+route '/css/_*/' do
+  # don't output partials, so return nil
+  nil
 end
 
 route '/css/*/' do
