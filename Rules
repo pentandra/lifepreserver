@@ -17,7 +17,7 @@ Compass.add_project_configuration 'compass/config.rb'
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
 
-compile '/stylesheet/' do
+compile '/css/*/' do
   filter :sass, Compass.sass_engine_options
 end
 
