@@ -30,15 +30,15 @@ compile '/js/*/' do
 end
 
 compile '/robots/' do
-  nil
+  # don't compile robots
 end
 
 compile '/humans/' do
-  nil
+  # don't compile humans
 end
 
 compile '/crossdomain/' do
-  nil
+  # don't compile crossdomain.xml
 end
 
 compile '*' do
