@@ -33,7 +33,7 @@ html { font-size: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; -
 
 body { margin: 0; font-size: 13px; line-height: 1.231; }
 
-body, button, input, select, textarea { font-family: sans-serif; color: #222; }
+body, button, input, select, textarea { font-family: sans-serif; color: $pentandra-brown; }
 
 /* 
  * These selection declarations have to be separate
@@ -41,8 +41,8 @@ body, button, input, select, textarea { font-family: sans-serif; color: #222; }
  * Also: hot pink!
  */
 
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::-moz-selection { background: $pentandra-light-red; color: #fff; text-shadow: none; }
+::selection { background: $pentandra-light-red; color: #fff; text-shadow: none; }
 
 
 /* =============================================================================
