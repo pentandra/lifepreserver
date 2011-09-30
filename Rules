@@ -25,20 +25,11 @@ compile '/css/*/' do
   filter :sass, Compass.sass_engine_options
 end
 
+compile '/static/*' do
+end
+
 compile '/js/*/' do
   # don't compile javascript
-end
-
-compile '/robots/' do
-  # don't compile robots
-end
-
-compile '/humans/' do
-  # don't compile humans
-end
-
-compile '/crossdomain/' do
-  # don't compile crossdomain.xml
 end
 
 compile '*' do
@@ -50,7 +41,12 @@ compile '*' do
   end
 end
 
-### Routing rules
+### Routing Rules ###################################################
+
+route '/static/*' do
+  # /static/foo.html/ -> /foo.html
+  item.identifier[7..-2]
+end
 
 route '/css/partials/_*/' do
   # don't output partials, so return nil
@@ -67,20 +63,8 @@ route '/js/*/' do
   item.identifier.chop + '.js'
 end
 
-route '/robots/' do
-  '/robots.txt'
-end
-
 route '/404/' do
   '/404.html'
-end
-
-route '/crossdomain/' do
-  '/crossdomain.xml'
-end
-
-route '/humans/' do
-  '/humans.txt'
 end
 
 route '*' do
