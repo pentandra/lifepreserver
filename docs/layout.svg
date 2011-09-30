@@ -26,11 +26,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.15625"
+     inkscape:zoom="0.297"
      inkscape:cx="496"
-     inkscape:cy="777.00055"
+     inkscape:cy="1000"
      inkscape:document-units="px"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="g7608"
      showgrid="true"
      inkscape:window-width="1309"
      inkscape:window-height="748"
@@ -482,7 +482,7 @@
        inkscape:collect="always"
        xlink:href="#pattern6808"
        id="pattern4941"
-       patternTransform="matrix(2.1988548,0,0,2.1988548,460.60903,569.52811)" />
+       patternTransform="matrix(2.1988548,0,0,2.1988548,460.60903,566.86142)" />
     <linearGradient
        id="linearGradient7527">
       <stop
@@ -495,7 +495,7 @@
          id="stop7531" />
     </linearGradient>
     <pattern
-       patternTransform="matrix(1.0127101,0,0,1.0127101,558.66209,847.67117)"
+       patternTransform="matrix(1.0127101,0,0,1.0127101,558.66209,841.0044)"
        id="pattern5141"
        xlink:href="#pattern4734"
        inkscape:collect="always" />
@@ -1261,35 +1261,35 @@
            inkscape:transform-center-x="-6.022498"
            transform="matrix(0.62509944,0.23517949,-0.23517949,0.62509944,447.47141,379.46489)"
            inkscape:transform-center-y="1.0662924"
-           style="fill:#544233"
+           style="fill:#6e5643;fill-opacity:1"
            id="g3203">
           <path
              sodipodi:nodetypes="cccccccccc"
-             style="fill:#544233;fill-opacity:1;stroke:none"
+             style="fill:#6e5643;fill-opacity:1;stroke:none"
              d="m 176.88541,495.89925 -40.46875,29.375 14.6875,20.25 13.15625,-9.5625 -0.0125,35.28246 24.99942,-0.0308 0.0131,-35.40789 13.375,9.71875 14.6875,-20.21875 z"
              id="path3205"
              inkscape:connector-curvature="0" />
           <path
              sodipodi:nodetypes="cccccccccc"
-             style="fill:#544233;fill-opacity:1;stroke:none"
+             style="fill:#6e5643;fill-opacity:1;stroke:none"
              d="m 71.164692,572.49763 15.431754,47.56544 23.797584,-7.71104 -5.02898,-15.46732 33.55176,10.91477 7.69595,-23.78538 L 112.9419,573.06 126.31808,563.34288 111.6276,543.1263 z"
              id="use3207"
              inkscape:connector-curvature="0" />
           <path
              sodipodi:nodetypes="cccccccccc"
-             style="fill:#544233;fill-opacity:1;stroke:none"
+             style="fill:#6e5643;fill-opacity:1;stroke:none"
              d="m 111.34459,696.71424 50.0061,0.0221 0.0202,-25.01569 -16.26433,0.003 20.74862,-28.53677 -20.24306,-14.66937 -20.82283,28.63789 -5.10806,-15.72427 -23.766724,7.72422 z"
              id="use3209"
              inkscape:connector-curvature="0" />
           <path
              sodipodi:nodetypes="cccccccccc"
-             style="fill:#544233;fill-opacity:1;stroke:none"
+             style="fill:#6e5643;fill-opacity:1;stroke:none"
              d="m 241.89787,696.8859 15.47371,-47.55181 -23.78509,-7.7495 -5.02293,15.46928 -20.7284,-28.55146 -20.20685,14.71921 20.80164,28.65328 -16.53314,-10e-4 0.002,24.9904 z"
              id="use3211"
              inkscape:connector-curvature="0" />
           <path
              sodipodi:nodetypes="cccccccccc"
-             style="fill:#544233;fill-opacity:1;stroke:none"
+             style="fill:#6e5643;fill-opacity:1;stroke:none"
              d="m 282.4043,572.77542 -40.44282,-29.41069 -14.72021,20.22623 13.15999,9.55736 -33.55948,10.891 7.75454,23.76634 33.67895,-10.92918 -5.10998,15.72364 23.76787,7.7207 z"
              id="use3213"
              inkscape:connector-curvature="0" />
@@ -1298,7 +1298,7 @@
              id="text3215"
              y="359.67276"
              x="556.83289"
-             style="font-size:144px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:5.73999977px;word-spacing:0px;fill:#544233;fill-opacity:1;stroke:none;font-family:Comfortaa;-inkscape-font-specification:Comfortaa"
+             style="font-size:144px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:5.73999976999999983px;word-spacing:0px;fill:#6e5643;fill-opacity:1;stroke:none;font-family:Comfortaa;-inkscape-font-specification:Comfortaa"
              xml:space="preserve"><tspan
                y="359.67276"
                x="556.83289"
@@ -1868,9 +1868,9 @@
     </g>
     <g
        id="g7608"
-       transform="translate(0,264)">
+       transform="translate(0,266.66669)">
       <rect
-         y="970.66669"
+         y="966.66663"
          x="851.93762"
          height="92"
          width="79.999969"
@@ -1972,7 +1972,7 @@
              id="rect7597" /></flowRegion><flowPara
            id="flowPara7866">We believe life is too short to redo other people's research. We can move faster and build better research conclusions as we build on each others research. No man is an island.</flowPara></flowRoot>      <g
          id="g5122"
-         transform="matrix(-1,0,0,-1,1783.8752,2320)"
+         transform="matrix(-1,0,0,-1,1783.8752,2312)"
          style="display:inline">
         <rect
            style="fill:#544233;fill-opacity:1;stroke:none"
@@ -2006,6 +2006,16 @@
          height="92"
          x="851.93762"
          y="833.33331" />
+      <text
+         xml:space="preserve"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:5.73999977px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
+         x="803"
+         y="1427"
+         id="text4216"
+         sodipodi:linespacing="125%"
+         transform="translate(0,-266.66669)"><tspan
+           sodipodi:role="line"
+           id="tspan4218"></tspan></text>
     </g>
     <text
        sodipodi:linespacing="105%"
@@ -2037,17 +2047,27 @@
     <flowRoot
        xml:space="preserve"
        id="flowRoot4981"
-       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:104.99999523%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
-       transform="translate(-1.78125,12.9537)"><flowRegion
+       style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:104.99999523%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
+       transform="translate(-1.78125,61.176501)"><flowRegion
          id="flowRegion4983"><rect
            id="rect4985"
-           width="619.37689"
-           height="168.24121"
-           x="49.849247"
-           y="631.63818"
-           style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:104.99999523%;letter-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;font-family:Function Pro;-inkscape-font-specification:Function Pro" /></flowRegion><flowPara
-         id="flowPara4987"> </flowPara><flowPara
-         id="flowPara4993">Research has traditionally been a solo activity. We envision a better research experience.</flowPara></flowRoot>  </g>
+           width="527.87512"
+           height="254.41272"
+           x="49.84375"
+           y="620.37958"
+           style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:104.99999523%;letter-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;font-family:Function Pro;-inkscape-font-specification:Function Pro" /></flowRegion><flowPara
+         id="flowPara4993">Research has traditionally been a solo activity. We envision a better research experience. </flowPara></flowRoot>    <text
+       xml:space="preserve"
+       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:1px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;fill-opacity:1;stroke:none;display:inline;font-family:Function Caps;-inkscape-font-specification:Function Caps"
+       x="48.0625"
+       y="1033.3333"
+       id="text4189"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4191"
+         x="48.0625"
+         y="1033.3333">What we stand for:</tspan></text>
+  </g>
   <g
      inkscape:groupmode="layer"
      id="layer4"
