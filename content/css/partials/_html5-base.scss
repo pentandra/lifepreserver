@@ -31,26 +31,25 @@ audio[controls], canvas, video { display: inline-block; *display: inline; *zoom:
 
 html { font-size: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
-body { margin: 0; font-size: 13px; line-height: 1.231; }
+body { margin: 0; font-size: $base-font-size; line-height: $base-line-height; }
 
-body, button, input, select, textarea { font-family: sans-serif; color: $pentandra-brown; }
+body, button, input, select, textarea { font-family: $base-font-family; color: $font-color; }
 
 /* 
  * These selection declarations have to be separate
  * No text-shadow: twitter.com/miketaylr/status/12228805301
- * Also: hot pink!
  */
 
-::-moz-selection { background: $pentandra-light-red; color: #fff; text-shadow: none; }
-::selection { background: $pentandra-light-red; color: #fff; text-shadow: none; }
+::-moz-selection { background: $selected-background-color; color: $selected-font-color; text-shadow: none; }
+::selection { background: $selected-background-color; color: $selected-font-color; text-shadow: none; }
 
 
 /* =============================================================================
    Links
    ========================================================================== */
 
-a { color: #00e; }
-a:visited { color: #551a8b; }
+a { color: $link-color; }
+a:visited { color: $link-visited-color; }
 a:focus { outline: thin dotted; }
 
 /* Improve readability when focused and hovered in all browsers: people.opera.com/patrickl/experiments/keyboard/test */

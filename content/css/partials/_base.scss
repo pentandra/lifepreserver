@@ -1,36 +1,34 @@
 // This file must be imported before loading html5-boilerplate
 
+// default font-family
+$base-font-family: unquote('sans-serif');
+
 // default font-size
-$base-font-size: 15px;
+$base-font-size: 13px;
 
 // default line-height
-$base-line-height: 1.5em;
+$base-line-height: 1.231;
 
 // colors
 
 $pentandra-red: #db1111;
-$pentandra-light-red: #f36666;
 $pentandra-brown: #544233;
 
 $content-background: white;
 $page-background: rgb(232, 232, 232);
 
-$font-color: #444444;
+$font-color: $pentandra-brown;
 
-$link-color: #e50050;
+$link-color: #00e;
 
 $link-hover-color: #e50050;
 
 $link-active-color: #e50050;
 
-$link-visited-color: #e50050;
+$link-visited-color: #551a8b;
 
 // color for selected text
-$selected-font-color: black;
+$selected-font-color: #000;
 
 // bg-color for selected text
-$selected-background-color: #ff5e99;
-
-// left margin for ul an ol
-$list-left-margin: 1.8em;
-
+$selected-background-color: #ffff9e;
