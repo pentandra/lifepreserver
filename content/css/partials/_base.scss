@@ -1,7 +1,11 @@
 // This file must be imported before loading html5-boilerplate
 
 // default font-family
-$base-font-family: unquote('sans-serif');
+$base-font-family: unquote('FunctionProBook');
+
+// less configuration
+$less-grid-element: unquote('#container');
+$less-font-family: $base-font-family;
 
 // default font-size
 $base-font-size: 13px;
@@ -10,22 +14,21 @@ $base-font-size: 13px;
 $base-line-height: 1.231;
 
 // colors
-
 $pentandra-red: #db1111;
 $pentandra-brown: #544233;
 
-$content-background: white;
-$page-background: rgb(232, 232, 232);
+$content-background: #fff;
+$page-background: #fff;
 
 $font-color: $pentandra-brown;
 
-$link-color: #00e;
+$link-color: $pentandra-brown;
 
-$link-hover-color: #e50050;
+$link-hover-color: #000;
 
 $link-active-color: #e50050;
 
-$link-visited-color: #551a8b;
+$link-visited-color: $pentandra-brown;
 
 // color for selected text
 $selected-font-color: #000;

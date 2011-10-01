@@ -7,5 +7,61 @@ cols    1     2      3      4      5      6      7      8      9      10
 px      68    160    252    344    436    528    620    712    804    896    */
 
 #{$less-grid-element} {
-  @include grid(10); 
+  @include grid(10, false); 
+  padding: 0 48px 84px;
+  margin: 0 auto;
+}
+
+header {
+  height: 133px;
+  font-size: 18px;
+//  position: fixed;
+  width: 100%;
+
+  h1 a { 
+    background: transparent url('/images/logo.png') no-repeat center center;
+    width: 306px;
+    height: 58px;
+    margin: 21px 0 0 -12px;
+  }
+
+  .separator {
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    left: 0;
+    height: 33px;
+    background: $pentandra-brown;
+  }
+}
+
+nav {
+  float: right;
+  margin-top: 50px;
+
+  li {
+    float: left;
+    margin-left: 40px;
+  }
+}
+
+#main {
+  padding-top: 67px;
+}
+
+
+#zeugma {
+  text-align: right;
+
+  h2, p {
+    width: 344px;
+    padding-left: 552px;
+  }
+  
+  #mosaic {
+    background: transparent url('/images/mosaic.png') no-repeat scroll left top;
+    width: 513px;
+    height: 400px;
+    position: absolute;
+  }
 }

@@ -1,13 +1,20 @@
 // Global style definitions
 
 h1 {
-  @extend .huge; }
+  @extend .huge; 
+  margin: 0;
+}
 
 h2 {
-  @extend .large; }
+  @extend .large; 
+  font-weight: normal;
+  margin: 0;
+  padding: 24px 0;
+}
 
 h3 {
-  @extend .bigger; }
+  @extend .bigger;
+}
 
 h4 {
   @extend .big; }
@@ -16,10 +23,18 @@ small {
   @extend .small; }
 
 body {
-  background: rgb(232, 232, 232);
-  color: rgb(60, 60, 60);
-  // Stops Mobile Safari from auto-adjusting font-sizes
-  -webkit-text-size-adjust: 100%; }
+  font-family: $base-font-family;
+  background: $page-background;
+  color: $font-color;
+}
 
 // Selection colors (easy to forget)
 @include selection-color(unquote("rgb(255,255,158)"));
+
+#{$less-grid-element} {
+  background: $content-background;
+}
+
+header h1 {
+  position: absolute;
+}

@@ -26,23 +26,23 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.297"
+     inkscape:zoom="0.80443548"
      inkscape:cx="496"
-     inkscape:cy="1000"
+     inkscape:cy="1536.802"
      inkscape:document-units="px"
-     inkscape:current-layer="g7608"
+     inkscape:current-layer="layer3"
      showgrid="true"
      inkscape:window-width="1309"
      inkscape:window-height="748"
      inkscape:window-x="50"
      inkscape:window-y="-10"
      inkscape:window-maximized="1"
-     showguides="false"
+     showguides="true"
      inkscape:guide-bbox="true"
      showborder="true"
      inkscape:showpageshadow="false"
      inkscape:snap-page="true"
-     inkscape:object-paths="false"
+     inkscape:object-paths="true"
      inkscape:snap-object-midpoints="false"
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="false"
@@ -54,7 +54,8 @@
      inkscape:snap-midpoints="false"
      inkscape:snap-bbox-midpoints="false"
      inkscape:snap-intersection-paths="false"
-     inkscape:snap-grids="true">
+     inkscape:snap-grids="true"
+     inkscape:snap-bbox-edge-midpoints="true">
     <sodipodi:guide
        position="48.0625,1999.9374"
        orientation="1999.8751,0"
@@ -1000,163 +1001,160 @@
      inkscape:label="Common"
      style="display:inline">
     <g
-       id="g3417">
-      <g
-         id="g3407">
-        <text
-           xml:space="preserve"
-           style="font-size:21px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0.5px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
+       id="g3407">
+      <text
+         sodipodi:linespacing="125%"
+         id="text3349"
+         y="66.666702"
+         x="599.01251"
+         style="font-size:21px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0.5px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
+         xml:space="preserve"><tspan
+           y="66.666702"
            x="599.01251"
-           y="66.666702"
-           id="text3349"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             id="tspan3351"
-             x="599.01251"
-             y="66.666702">Company</tspan></text>
-        <text
-           sodipodi:linespacing="125%"
-           id="text3353"
-           y="66.666702"
+           id="tspan3351"
+           sodipodi:role="line">Company</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:21px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0.5px;word-spacing:0px;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
+         x="710.66187"
+         y="66.666702"
+         id="text3353"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3355"
            x="710.66187"
-           style="font-size:21px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0.5px;word-spacing:0px;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
-           xml:space="preserve"><tspan
-             y="66.666702"
-             x="710.66187"
-             id="tspan3355"
-             sodipodi:role="line">Products</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-size:21px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0.5px;word-spacing:0px;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
-           x="810.48358"
+           y="66.666702">Products</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3399"
+         y="66.666702"
+         x="810.48358"
+         style="font-size:21px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0.5px;word-spacing:0px;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
+         xml:space="preserve"><tspan
            y="66.666702"
-           id="text3399"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             id="tspan3401"
-             x="810.48358"
-             y="66.666702">Blog</tspan></text>
-        <text
-           sodipodi:linespacing="125%"
-           id="text3403"
-           y="66.490921"
+           x="810.48358"
+           id="tspan3401"
+           sodipodi:role="line">Blog</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:21px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0.5px;word-spacing:0px;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
+         x="877.36121"
+         y="66.490921"
+         id="text3403"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3405"
            x="877.36121"
-           style="font-size:21px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0.5px;word-spacing:0px;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
-           xml:space="preserve"><tspan
-             y="66.490921"
-             x="877.36121"
-             id="tspan3405"
-             sodipodi:role="line">Contact</tspan></text>
-      </g>
+           y="66.490921">Contact</tspan></text>
+    </g>
+    <g
+       transform="translate(36.013926,-973.42058)"
+       id="g5520">
       <g
-         id="g5520"
-         transform="translate(36.013926,-973.42058)">
+         transform="matrix(0.2418249,0,0,0.2418249,178.80903,832.22686)"
+         id="g3193-0"
+         inkscape:export-filename="/home/chris/Documents/family-history/Pentandra/pentandra-logo.png"
+         inkscape:export-xdpi="232.61"
+         inkscape:export-ydpi="232.61">
+        <rect
+           y="721.63904"
+           x="329.30502"
+           height="138.3181"
+           width="146.701"
+           id="rect3197-5"
+           style="fill:#544233;fill-opacity:1;stroke:none" />
         <g
-           inkscape:export-ydpi="232.61"
-           inkscape:export-xdpi="232.61"
-           inkscape:export-filename="/home/chris/Documents/family-history/Pentandra/pentandra-logo.png"
-           id="g3193-0"
-           transform="matrix(0.2418249,0,0,0.2418249,178.80903,832.22686)">
-          <rect
-             style="fill:#544233;fill-opacity:1;stroke:none"
-             id="rect3197-5"
-             width="146.701"
-             height="138.3181"
-             x="329.30502"
-             y="721.63904" />
-          <g
-             inkscape:transform-center-x="-6.022498"
-             transform="matrix(0.62509944,0.23517949,-0.23517949,0.62509944,447.47141,379.46489)"
-             inkscape:transform-center-y="1.0662924"
-             style="fill:#ffffff"
-             id="g3203-4">
-            <path
-               sodipodi:nodetypes="cccccccccc"
-               style="fill:#ffffff;fill-opacity:1;stroke:none"
-               d="m 176.88541,495.89925 -40.46875,29.375 14.6875,20.25 13.15625,-9.5625 -0.0125,35.28246 24.99942,-0.0308 0.0131,-35.40789 13.375,9.71875 14.6875,-20.21875 z"
-               id="path3205-1"
-               inkscape:connector-curvature="0" />
-            <path
-               sodipodi:nodetypes="cccccccccc"
-               style="fill:#ffffff;fill-opacity:1;stroke:none"
-               d="m 71.164692,572.49763 15.431754,47.56544 23.797584,-7.71104 -5.02898,-15.46732 33.55176,10.91477 7.69595,-23.78538 L 112.9419,573.06 126.31808,563.34288 111.6276,543.1263 z"
-               id="use3207-4"
-               inkscape:connector-curvature="0" />
-            <path
-               sodipodi:nodetypes="cccccccccc"
-               style="fill:#ffffff;fill-opacity:1;stroke:none"
-               d="m 111.34459,696.71424 50.0061,0.0221 0.0202,-25.01569 -16.26433,0.003 20.74862,-28.53677 -20.24306,-14.66937 -20.82283,28.63789 -5.10806,-15.72427 -23.766724,7.72422 z"
-               id="use3209-5"
-               inkscape:connector-curvature="0" />
-            <path
-               sodipodi:nodetypes="cccccccccc"
-               style="fill:#ffffff;fill-opacity:1;stroke:none"
-               d="m 241.89787,696.8859 15.47371,-47.55181 -23.78509,-7.7495 -5.02293,15.46928 -20.7284,-28.55146 -20.20685,14.71921 20.80164,28.65328 -16.53314,-10e-4 0.002,24.9904 z"
-               id="use3211-8"
-               inkscape:connector-curvature="0" />
-            <path
-               sodipodi:nodetypes="cccccccccc"
-               style="fill:#ffffff;fill-opacity:1;stroke:none"
-               d="m 282.4043,572.77542 -40.44282,-29.41069 -14.72021,20.22623 13.15999,9.55736 -33.55948,10.891 7.75454,23.76634 33.67895,-10.92918 -5.10998,15.72364 23.76787,7.7207 z"
-               id="use3213-5"
-               inkscape:connector-curvature="0" />
-            <text
-               sodipodi:linespacing="125%"
-               id="text3215-1"
-               y="359.67276"
+           id="g3203-4"
+           style="fill:#ffffff"
+           inkscape:transform-center-y="1.0662924"
+           transform="matrix(0.62509944,0.23517949,-0.23517949,0.62509944,447.47141,379.46489)"
+           inkscape:transform-center-x="-6.022498">
+          <path
+             inkscape:connector-curvature="0"
+             id="path3205-1"
+             d="m 176.88541,495.89925 -40.46875,29.375 14.6875,20.25 13.15625,-9.5625 -0.0125,35.28246 24.99942,-0.0308 0.0131,-35.40789 13.375,9.71875 14.6875,-20.21875 z"
+             style="fill:#ffffff;fill-opacity:1;stroke:none"
+             sodipodi:nodetypes="cccccccccc" />
+          <path
+             inkscape:connector-curvature="0"
+             id="use3207-4"
+             d="m 71.164692,572.49763 15.431754,47.56544 23.797584,-7.71104 -5.02898,-15.46732 33.55176,10.91477 7.69595,-23.78538 L 112.9419,573.06 126.31808,563.34288 111.6276,543.1263 z"
+             style="fill:#ffffff;fill-opacity:1;stroke:none"
+             sodipodi:nodetypes="cccccccccc" />
+          <path
+             inkscape:connector-curvature="0"
+             id="use3209-5"
+             d="m 111.34459,696.71424 50.0061,0.0221 0.0202,-25.01569 -16.26433,0.003 20.74862,-28.53677 -20.24306,-14.66937 -20.82283,28.63789 -5.10806,-15.72427 -23.766724,7.72422 z"
+             style="fill:#ffffff;fill-opacity:1;stroke:none"
+             sodipodi:nodetypes="cccccccccc" />
+          <path
+             inkscape:connector-curvature="0"
+             id="use3211-8"
+             d="m 241.89787,696.8859 15.47371,-47.55181 -23.78509,-7.7495 -5.02293,15.46928 -20.7284,-28.55146 -20.20685,14.71921 20.80164,28.65328 -16.53314,-10e-4 0.002,24.9904 z"
+             style="fill:#ffffff;fill-opacity:1;stroke:none"
+             sodipodi:nodetypes="cccccccccc" />
+          <path
+             inkscape:connector-curvature="0"
+             id="use3213-5"
+             d="m 282.4043,572.77542 -40.44282,-29.41069 -14.72021,20.22623 13.15999,9.55736 -33.55948,10.891 7.75454,23.76634 33.67895,-10.92918 -5.10998,15.72364 23.76787,7.7207 z"
+             style="fill:#ffffff;fill-opacity:1;stroke:none"
+             sodipodi:nodetypes="cccccccccc" />
+          <text
+             xml:space="preserve"
+             style="font-size:144px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:5.73999977px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Comfortaa;-inkscape-font-specification:Comfortaa"
+             x="556.83289"
+             y="359.67276"
+             id="text3215-1"
+             sodipodi:linespacing="125%"><tspan
+               sodipodi:role="line"
+               id="tspan3217-9"
                x="556.83289"
-               style="font-size:144px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:5.73999977px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Comfortaa;-inkscape-font-specification:Comfortaa"
-               xml:space="preserve"><tspan
-                 y="359.67276"
-                 x="556.83289"
-                 id="tspan3217-9"
-                 sodipodi:role="line" /></text>
-          </g>
-          <g
-             id="g3219-9"
-             style="fill:#db1111;fill-opacity:1"
-             inkscape:transform-center-y="1.0662925"
-             transform="matrix(0.62509944,0.23517949,-0.23517949,0.62509944,447.47141,379.46489)"
-             inkscape:transform-center-x="-6.0224982">
-            <path
-               inkscape:connector-curvature="0"
-               transform="matrix(0.86332393,-0.32480607,0.32480607,0.86332393,14.811063,541.81926)"
-               id="path3221-6"
-               d="m 120.65625,224.53125 -0.15625,0.40625 50.71875,19.09375 15.59375,-19.5 -66.15625,0 z"
-               style="fill:#db1111;fill-opacity:1;stroke:none" />
-            <path
-               inkscape:connector-curvature="0"
-               transform="matrix(0.86332393,-0.32480607,0.32480607,0.86332393,14.811063,541.81926)"
-               id="path3223-7"
-               d="m 238.125,160.5625 21.59375,-27 -21.59375,-32.8125 0,59.8125 z"
-               style="fill:#db1111;fill-opacity:1;stroke:none" />
-            <text
-               xml:space="preserve"
-               style="font-size:144px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:5.73999977px;word-spacing:0px;fill:#db1111;fill-opacity:1;stroke:none;font-family:Comfortaa;-inkscape-font-specification:Comfortaa"
-               x="556.83289"
-               y="359.67276"
-               id="text3225-9"
-               sodipodi:linespacing="125%"><tspan
-                 sodipodi:role="line"
-                 id="tspan3227-05"
-                 x="556.83289"
-                 y="359.67276" /></text>
-          </g>
+               y="359.67276" /></text>
         </g>
-        <text
-           xml:space="preserve"
-           style="font-size:50.00019836px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-2.5px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Caps;-inkscape-font-specification:Function Caps"
-           x="7.6985564"
-           y="1040.0873"
-           id="text3210-9"
-           sodipodi:linespacing="125%"><tspan
-             dx="0 0 0 1.0000041 0 0 -1 -1.0000041 3"
-             sodipodi:role="line"
-             id="tspan3212-7"
-             x="7.6985564"
-             y="1040.0873"
-             style="font-size:50.00019836px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-2.5px;writing-mode:lr-tb;text-anchor:start;font-family:Function Caps;-inkscape-font-specification:Function Caps">PENTANDRA</tspan></text>
+        <g
+           inkscape:transform-center-x="-6.0224982"
+           transform="matrix(0.62509944,0.23517949,-0.23517949,0.62509944,447.47141,379.46489)"
+           inkscape:transform-center-y="1.0662925"
+           style="fill:#db1111;fill-opacity:1"
+           id="g3219-9">
+          <path
+             style="fill:#db1111;fill-opacity:1;stroke:none"
+             d="m 120.65625,224.53125 -0.15625,0.40625 50.71875,19.09375 15.59375,-19.5 -66.15625,0 z"
+             id="path3221-6"
+             transform="matrix(0.86332393,-0.32480607,0.32480607,0.86332393,14.811063,541.81926)"
+             inkscape:connector-curvature="0" />
+          <path
+             style="fill:#db1111;fill-opacity:1;stroke:none"
+             d="m 238.125,160.5625 21.59375,-27 -21.59375,-32.8125 0,59.8125 z"
+             id="path3223-7"
+             transform="matrix(0.86332393,-0.32480607,0.32480607,0.86332393,14.811063,541.81926)"
+             inkscape:connector-curvature="0" />
+          <text
+             sodipodi:linespacing="125%"
+             id="text3225-9"
+             y="359.67276"
+             x="556.83289"
+             style="font-size:144px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:5.73999977px;word-spacing:0px;fill:#db1111;fill-opacity:1;stroke:none;font-family:Comfortaa;-inkscape-font-specification:Comfortaa"
+             xml:space="preserve"><tspan
+               y="359.67276"
+               x="556.83289"
+               id="tspan3227-05"
+               sodipodi:role="line" /></text>
+        </g>
       </g>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3210-9"
+         y="1040.0873"
+         x="7.6985564"
+         style="font-size:50.00019836px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-2.5px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Caps;-inkscape-font-specification:Function Caps"
+         xml:space="preserve"><tspan
+           style="font-size:50.00019836px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-2.5px;writing-mode:lr-tb;text-anchor:start;font-family:Function Caps;-inkscape-font-specification:Function Caps"
+           y="1040.0873"
+           x="7.6985564"
+           id="tspan3212-7"
+           sodipodi:role="line"
+           dx="0 0 0 1.0000041 0 0 -1 -1.0000041 3">PENTANDRA</tspan></text>
     </g>
     <rect
        style="fill:#2a1a0d;fill-opacity:1;stroke:none"
@@ -1798,7 +1796,8 @@
        style="display:inline"
        id="g7191"
        inkscape:export-xdpi="89.986961"
-       inkscape:export-ydpi="89.986961">
+       inkscape:export-ydpi="89.986961"
+       inkscape:export-filename="/home/chris/devel/pentandra/lifepreserver/static/images/zeugma.jpg.png">
       <rect
          y="233.3333"
          x="443.51083"
@@ -2021,42 +2020,54 @@
        sodipodi:linespacing="105%"
        id="text3408"
        y="400"
-       x="941.1106"
-       style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:104.99999523000001034%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#544233;fill-opacity:1;stroke:none;display:inline;font-family:Function Caps;-inkscape-font-specification:Function Caps"
+       x="945.68811"
+       style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:104.99999523%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#544233;fill-opacity:1;stroke:none;display:inline;font-family:Function Caps;-inkscape-font-specification:Function Caps"
        xml:space="preserve"><tspan
          y="400"
-         x="941.1106"
+         x="945.68811"
          sodipodi:role="line"
          id="tspan3435">We're about the</tspan><tspan
          y="437.79999"
-         x="941.1106"
+         x="945.68811"
          sodipodi:role="line"
          id="tspan3449">Entire Research Process.</tspan><tspan
          y="475.60001"
-         x="941.1106"
+         x="945.68811"
          sodipodi:role="line"
          id="tspan3437">Beginning to End.</tspan><tspan
          y="513.40002"
-         x="941.1106"
+         x="945.68811"
          sodipodi:role="line"
          id="tspan3439">Every Piece.</tspan><tspan
          y="551.20001"
-         x="941.1106"
+         x="945.68811"
          sodipodi:role="line"
          id="tspan3441">All of it.</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot4981"
-       style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:104.99999523%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
+       style="font-size:24px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:104.99999523000001034%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;fill-opacity:1;stroke:none;font-family:Cabin;-inkscape-font-specification:Cabin Italic"
        transform="translate(-1.78125,61.176501)"><flowRegion
          id="flowRegion4983"><rect
            id="rect4985"
            width="527.87512"
-           height="254.41272"
+           height="251.77722"
            x="49.84375"
            y="620.37958"
-           style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:104.99999523%;letter-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;font-family:Function Pro;-inkscape-font-specification:Function Pro" /></flowRegion><flowPara
-         id="flowPara4993">Research has traditionally been a solo activity. We envision a better research experience. </flowPara></flowRoot>    <text
+           style="font-size:24px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:104.99999523%;letter-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;font-family:Cabin;-inkscape-font-specification:Cabin Italic" /></flowRegion><flowPara
+         id="flowPara4948"
+         style="font-style:italic;-inkscape-font-specification:Cabin Italic;font-family:Cabin;font-weight:normal;font-stretch:normal;font-variant:normal;font-size:24px">Wish that you could have something that keeps track of your research for you?</flowPara><flowPara
+         style="font-style:italic;-inkscape-font-specification:Cabin Italic;font-family:Cabin;font-weight:normal;font-stretch:normal;font-variant:normal;font-size:24px"
+         id="flowPara4952" /><flowPara
+         id="flowPara4946"
+         style="font-style:italic;-inkscape-font-specification:Cabin Italic;font-family:Cabin;font-weight:normal;font-stretch:normal;font-variant:normal;font-size:24px">Ever tried to share your research and struggled to get the point accross?</flowPara><flowPara
+         style="font-style:italic;-inkscape-font-specification:Cabin Italic;font-family:Cabin;font-weight:normal;font-stretch:normal;font-variant:normal;font-size:24px"
+         id="flowPara4954" /><flowPara
+         id="flowPara4936"
+         style="font-style:italic;-inkscape-font-specification:Cabin Italic;font-family:Cabin;font-weight:normal;font-stretch:normal;font-variant:normal;font-size:24px">Tired of having to redo or check other peoples' research?</flowPara><flowPara
+         id="flowPara4938" /><flowPara
+         id="flowPara4940"
+         style="font-weight:bold;-inkscape-font-specification:Cabin Bold Italic">We envision a better research experience. </flowPara></flowRoot>    <text
        xml:space="preserve"
        style="font-size:72px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:1px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;fill-opacity:1;stroke:none;display:inline;font-family:Function Caps;-inkscape-font-specification:Function Caps"
        x="48.0625"
