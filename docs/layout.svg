@@ -26,9 +26,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.80443548"
+     inkscape:zoom="1.15625"
      inkscape:cx="496"
-     inkscape:cy="1536.802"
+     inkscape:cy="1780.973"
      inkscape:document-units="px"
      inkscape:current-layer="layer3"
      showgrid="true"
@@ -37,7 +37,7 @@
      inkscape:window-x="50"
      inkscape:window-y="-10"
      inkscape:window-maximized="1"
-     showguides="true"
+     showguides="false"
      inkscape:guide-bbox="true"
      showborder="true"
      inkscape:showpageshadow="false"
@@ -1164,7 +1164,7 @@
        x="0"
        y="1666.6666" />
     <rect
-       style="fill:#544233;fill-opacity:1;stroke:none"
+       style="fill:#2a1a0d;fill-opacity:1;stroke:none"
        id="rect3978"
        width="992"
        height="33.333302"
@@ -1241,7 +1241,10 @@
          sodipodi:role="line">© Pentandra Research Solutions, Inc.</tspan></text>
     <g
        id="g5520-6"
-       transform="translate(36.013926,693.24602)">
+       transform="translate(36.013926,693.24602)"
+       inkscape:export-filename="/home/chris/devel/pentandra/lifepreserver/static/images/pentandra-logo-reverse.png"
+       inkscape:export-xdpi="89.986961"
+       inkscape:export-ydpi="89.986961">
       <g
          inkscape:export-ydpi="232.61"
          inkscape:export-xdpi="232.61"
@@ -1771,7 +1774,7 @@
      style="display:inline">
     <text
        xml:space="preserve"
-       style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:100%;letter-spacing:0.5px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#631e18;fill-opacity:1;stroke:none;display:inline;font-family:Function Pro;-inkscape-font-specification:Function Pro"
+       style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#631e18;fill-opacity:1;stroke:none;display:inline;font-family:Function Pro;-inkscape-font-specification:Function Pro"
        x="945.88013"
        y="266.66669"
        id="text3334"
@@ -1780,17 +1783,17 @@
          x="946.38013"
          y="266.66669"
          id="tspan3338"><tspan
-           style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:100%;letter-spacing:0.5px;writing-mode:lr-tb;text-anchor:end;fill:#db1111;font-family:Function Pro;-inkscape-font-specification:Function Pro"
+           style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:100%;letter-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#db1111;font-family:Function Pro;-inkscape-font-specification:Function Pro"
            id="tspan3344">Redefining</tspan><tspan
-           style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:100%;letter-spacing:0.5px;writing-mode:lr-tb;text-anchor:end;fill:#544233;font-family:Function Pro;-inkscape-font-specification:Function Pro"
+           style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:100%;letter-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#544233;font-family:Function Pro;-inkscape-font-specification:Function Pro"
            id="tspan4116"> the</tspan></tspan><tspan
          sodipodi:role="line"
          x="946.38013"
          y="314.66669"
          id="tspan5819"><tspan
-           style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:100%;letter-spacing:0.5px;writing-mode:lr-tb;text-anchor:end;fill:#544233;font-family:Function Pro;-inkscape-font-specification:Function Pro"
+           style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:100%;letter-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#544233;font-family:Function Pro;-inkscape-font-specification:Function Pro"
            id="tspan5826">way we </tspan><tspan
-           style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:100%;letter-spacing:0.5px;writing-mode:lr-tb;text-anchor:end;fill:#db1111;font-family:Function Pro;-inkscape-font-specification:Function Pro"
+           style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:100%;letter-spacing:0px;writing-mode:lr-tb;text-anchor:end;fill:#db1111;font-family:Function Pro;-inkscape-font-specification:Function Pro"
            id="tspan3346">research</tspan></tspan></text>
     <g
        style="display:inline"

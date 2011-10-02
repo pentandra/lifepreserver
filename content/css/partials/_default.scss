@@ -8,7 +8,7 @@ px      68    160    252    344    436    528    620    712    804    896    */
 
 #{$less-grid-element} {
   @include grid(10, false); 
-  padding: 0 48px 84px;
+  padding: 0 48px;
   margin: 0 auto;
 }
 
@@ -50,7 +50,7 @@ nav {
 }
 
 
-#zeugma {
+section#zeugma {
   text-align: right;
 
   h2, p {
@@ -63,5 +63,27 @@ nav {
     width: 513px;
     height: 400px;
     position: absolute;
+  }
+}
+
+section#ourstand {
+  height: 500px;
+}
+
+footer {
+
+  div.content {
+    @include grid(10, false); 
+    padding: 33px 48px 84px;
+    margin: 0 auto;
+    height: 200px;
+  }
+
+  span#footerlogo {
+    background: transparent url('/images/pentandra-logo-reverse.png') no-repeat scroll center top;
+    cursor: pointer;
+    width: 285px;
+    font-size: 14px;
+    padding: 67px 0 0 0;
   }
 }

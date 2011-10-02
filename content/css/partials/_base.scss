@@ -16,9 +16,12 @@ $base-line-height: 1.231;
 // colors
 $pentandra-red: #db1111;
 $pentandra-brown: #544233;
+$pentandra-white: #ffffff;
 
-$content-background: #fff;
-$page-background: #fff;
+$content-background: $pentandra-white;
+$page-background: $pentandra-white;
+$footer-background: #2a1a0d;
+$footer-font-color: $pentandra-white;
 
 $font-color: $pentandra-brown;
 
