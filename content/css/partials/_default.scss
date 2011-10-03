@@ -42,6 +42,14 @@ nav {
   li {
     float: left;
     margin-left: 40px;
+
+    a {
+      padding-bottom: 3px;
+    }
+    
+    a:hover {
+      border-bottom: 2px #fde9e9 solid;
+    }
   }
 }
 
@@ -80,10 +88,14 @@ footer {
   }
 
   span#footerlogo {
-    background: transparent url('/images/pentandra-logo-reverse.png') no-repeat scroll center top;
+    background: transparent url('/images/pentandra-logo-reverse.png') no-repeat scroll left top;
     cursor: pointer;
-    width: 285px;
+    width: 368px;
     font-size: 14px;
     padding: 67px 0 0 0;
+  }
+
+  span#newfromtheblog {
+    width: 368px;
   }
 }

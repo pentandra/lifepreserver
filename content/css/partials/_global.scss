@@ -21,6 +21,12 @@ h3 {
 h4 {
   @extend .big; }
 
+h5 {
+  margin: 0;
+  text-transform: uppercase;
+  @extend .small;
+}
+
 small {
   @extend .small; }
 
