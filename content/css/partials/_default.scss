@@ -98,4 +98,47 @@ footer {
   span#newfromtheblog {
     width: 368px;
   }
+
+  span#getinvolved {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      float: left;
+      height: 24px;
+    }
+
+    a {
+      margin-right: 10px;
+    }
+
+    .fb {
+      background: transparent url('/images/fb.png') no-repeat center center;
+      width: 11px;
+    }
+
+    .twitter {
+      background: transparent url('/images/twitter.png') no-repeat center center;
+      width: 35px;
+    }
+
+    .gplus {
+      background: transparent url('/images/gplus.png') no-repeat center center;
+      width: 24px;
+    }
+
+    .email {
+      background: transparent url('/images/email.png') no-repeat top center;
+      width: 24px;
+    }
+
+    .rss {
+      background: transparent url('/images/rss.png') no-repeat center center;
+      width: 24px;
+      margin: 0;
+    }
+  }
 }
