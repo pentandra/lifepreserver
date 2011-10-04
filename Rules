@@ -32,6 +32,12 @@ compile '/js/*/' do
   # don't compile javascript
 end
 
+compile '/' do
+  filter :erb
+  layout 'default'
+  filter :rubypants
+end
+
 compile '*' do
   if item.binary?
     # don’t filter binary items
