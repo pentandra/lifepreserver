@@ -27,8 +27,8 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="164.11308"
-     inkscape:cy="271.63405"
+     inkscape:cx="160"
+     inkscape:cy="512"
      inkscape:document-units="px"
      inkscape:current-layer="layer3"
      showgrid="true"
@@ -664,19 +664,6 @@
          stdDeviation="17.880548"
          inkscape:collect="always" />
     </filter>
-    <filter
-       color-interpolation-filters="sRGB"
-       height="1.412522"
-       y="-0.20626096"
-       width="1.3193417"
-       x="-0.15967084"
-       id="filter5066"
-       inkscape:collect="always">
-      <feGaussianBlur
-         id="feGaussianBlur5068"
-         stdDeviation="5.3161619"
-         inkscape:collect="always" />
-    </filter>
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient192"
@@ -726,6 +713,15 @@
        effect="spiro"
        id="path-effect3791-3"
        is_visible="true" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath12778">
+      <path
+         inkscape:connector-curvature="0"
+         id="path12780"
+         d="m 140.0625,200 343.87512,0 0,400 -343.87512,0 z"
+         style="fill:#544233;fill-opacity:1" />
+    </clipPath>
   </defs>
   <metadata
      id="metadata7">
@@ -1622,7 +1618,8 @@
          style="opacity:0.75107296;fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter5050)"
          id="path4141"
          d="m 305.84375,244.71875 c -3.99519,-0.24863 -7.86646,0.42426 -10.25,2.09375 -2.25756,1.58125 -4.4614,1.82176 -10.34375,1.15625 -6.67181,-0.75483 -7.64991,-0.56572 -9.25,1.71875 -0.98517,1.40652 -2.42063,2.5625 -3.15625,2.5625 -2.11054,0 -6.96481,5.8407 -7.40625,8.90625 -0.28858,2.00407 -1.62426,3.11036 -4.75,3.90625 -2.387,0.60779 -6.4258,1.87437 -8.96875,2.8125 -3.30299,1.21852 -5.52133,1.33986 -7.8125,0.46875 -1.76395,-0.67065 -5.41949,-1.21875 -8.125,-1.21875 -11.52782,0 -18.17886,6.70957 -16.78125,16.90625 0.62262,4.54254 0.32627,5.58936 -2,7.21875 -3.81803,2.67424 -9.577,2.38334 -12.8125,-0.65625 -2.06047,-1.93571 -3.3308,-2.26317 -5.0625,-1.375 -3.19475,1.63855 -10.77201,3.9445 -12.90625,3.9375 -0.97458,-0.003 -5.28313,-3.12005 -9.5625,-6.9375 -6.66709,-5.94741 -8.04841,-6.69875 -9.71875,-5.3125 -1.63007,1.35285 -2.16816,1.26562 -3.15625,-0.5 -0.64989,-1.16129 -1.95103,-2.125 -2.90625,-2.125 -0.95522,0 -2.17337,-0.69362 -2.71875,-1.5625 -2.35674,-3.75458 -7.72517,-5.89725 -12.75,-5.09375 l -5,0.78125 0.0937,135.3125 c 0.0469,80.74835 0.52646,134.20532 1.1875,132.5625 1.52719,-3.79539 6.83935,-4.92506 11.15625,-2.375 1.89387,1.11873 5.12816,2.03125 7.15625,2.03125 2.35315,0 4.28767,0.92494 5.375,2.5625 1.50112,2.26081 2.16249,2.38687 5.4375,1.125 2.73914,-1.05531 5.33778,-1.08269 9.90625,-0.0937 3.41,0.73816 7.6075,1.50959 9.3125,1.6875 3.26139,0.34036 8.67321,-0.0983 13.21875,-1.03125 1.48905,-0.30561 3.06521,-1.66136 3.5,-3.03125 0.43479,-1.3699 2.29783,-3.27168 4.125,-4.21875 2.032,-1.05322 4.94694,-4.88808 7.5,-9.875 4.75532,-9.28864 13.59558,-17.55371 17.625,-16.5 1.52895,0.39983 3.83845,-0.54971 6.15625,-2.5 3.10741,-2.61472 5.16816,-3.16325 12.375,-3.375 6.58036,-0.19334 9.30278,-0.84928 11.4375,-2.71875 1.54047,-1.34906 4.454,-3.25807 6.5,-4.25 2.046,-0.99194 4.41919,-2.63325 5.25,-3.65625 1.05221,-1.29562 1.50375,-1.39219 1.53125,-0.3125 0.0217,0.8525 0.8137,1.53125 1.75,1.53125 0.93631,0 4.24125,1.12738 7.34375,2.5 l 5.625,2.5 4.4375,-2.625 c 2.4402,-1.43975 4.4375,-3.55245 4.4375,-4.71875 0,-1.16628 0.77843,-3.18278 1.71875,-4.46875 1.57431,-2.15299 1.94873,-2.17401 4.65625,-0.40625 7.70107,5.02806 24.36589,5.41381 35.8125,0.84375 13.60196,-5.43058 17.4441,-6.4309 18.96875,-4.90625 0.75065,0.75065 2.18411,1.375 3.1875,1.375 1.0034,0 2.81728,0.90138 4.03125,2 2.03908,1.84535 2.45713,1.79312 5.53125,-0.625 4.78377,-3.76283 16.81178,-3.76627 19.3125,0 1.43737,2.1648 3.36979,2.74636 11,3.28125 6.21294,0.43555 10.1822,1.38585 12.09375,2.875 4.52451,3.52472 10.30828,4.33146 12.21875,1.71875 1.31294,-1.79555 3.46737,-2.17785 11.875,-2.15625 12.89159,0.0332 19.90834,1.89106 23.3125,6.21875 3.68756,4.68796 8.8616,7.86606 11.5,7.03125 1.22622,-0.38798 3.04097,-0.0406 4.03125,0.78125 1.57068,1.30355 1.8125,-8.24758 1.8125,-74.90625 0,-42.0265 -0.29258,-76.4375 -0.65625,-76.4375 -1.83242,0 -13,6.41538 -13,7.46875 0,1.65697 -4.58628,1.55568 -5.625,-0.125 -0.45822,-0.74116 -1.86967,-1.07828 -3.125,-0.75 -1.25534,0.32827 -3.2531,-0.1027 -4.4375,-0.96875 -1.47658,-1.0797 -3.32974,-1.26122 -5.875,-0.53125 -2.04162,0.58553 -3.73615,0.94008 -3.78125,0.78125 -1.14156,-4.01421 -6.8476,-11.85586 -13.40625,-18.40625 -4.6035,-4.5977 -8.375,-8.87708 -8.375,-9.53125 0,-0.65418 -1.1221,-1.49159 -2.46875,-1.84375 -1.34666,-0.35216 -3.605,-2.61394 -5.03125,-5.03125 -1.67747,-2.8431 -4.12787,-4.88525 -6.9375,-5.8125 -2.93226,-0.96773 -4.10095,-2.01566 -3.625,-3.1875 0.38775,-0.95469 0.98928,-2.44451 1.34375,-3.3125 0.35679,-0.87362 -0.98937,-2.53103 -3,-3.71875 -5.1355,-3.03361 -13.95133,-13.89015 -13.09375,-16.125 0.41776,-1.08865 -0.58711,-2.86365 -2.46875,-4.34375 -1.74647,-1.37376 -3.15625,-3.55753 -3.15625,-4.875 0,-1.31746 -1.42,-3.71073 -3.125,-5.3125 -1.705,-1.60176 -3.09375,-3.64465 -3.09375,-4.53125 0,-0.88661 -1.67275,-2.47322 -3.71875,-3.53125 -2.046,-1.05803 -3.71875,-2.47201 -3.71875,-3.125 0,-0.653 -2.78909,-2.59039 -6.1875,-4.3125 -4.15826,-2.10714 -6.42313,-4.10681 -6.9375,-6.15625 -0.91378,-3.64076 -3.87727,-4.79117 -9.59375,-3.71875 -3.16059,0.59293 -4.39494,0.32015 -4.9375,-1.09375 -1.2476,-3.25121 -9.27725,-4.69634 -17.1875,-3.0625 -6.76706,1.39771 -7.22761,1.324 -11.84375,-1.875 -2.88193,-1.99717 -7.00481,-3.15762 -11,-3.40625 z"
-         transform="translate(-15,0)" />
+         transform="translate(-15,0)"
+         clip-path="url(#clipPath12778)" />
       <path
          inkscape:connector-curvature="0"
          id="path7112"
@@ -1714,7 +1711,7 @@
        id="text11921"
        y="1523.8094"
        x="34"
-       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:1px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#2a1a0d;fill-opacity:1;stroke:none;display:inline;font-family:Function Pro;-inkscape-font-specification:Function Pro"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:1px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;fill-opacity:1;stroke:none;display:inline;font-family:Function Pro;-inkscape-font-specification:Function Pro"
        xml:space="preserve"><tspan
          id="tspan11923"
          y="1523.8094"
@@ -1848,18 +1845,7 @@
            x="483.93762"
            y="700"
            style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:114.99999762%;letter-spacing:0px;fill:#2a1a0d;font-family:Function Pro;-inkscape-font-specification:Function Pro" /></flowRegion><flowPara
-         id="flowPara12742">Our flagship product, Geungle, is a genealogical research system. Built upon industry standards, it is awesome.</flowPara></flowRoot>    <text
-       xml:space="preserve"
-       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#db1111;fill-opacity:1;stroke:none;display:inline;font-family:Function Pro;-inkscape-font-specification:Function Pro"
-       x="206.608"
-       y="1575.74"
-       id="text12748"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         x="206.608"
-         y="1575.74"
-         id="tspan12752">Learn more</tspan></text>
-    <text
+         id="flowPara12742">Our flagship product, Geungle, is a research system for generational history (a.k.a. genealogy done right).</flowPara></flowRoot>    <text
        sodipodi:linespacing="125%"
        id="text11683"
        y="1238.0952"
@@ -1873,7 +1859,7 @@
     <flowRoot
        xml:space="preserve"
        id="flowRoot10068"
-       style="font-size:16px;font-style:oblique;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Function Pro;-inkscape-font-specification:Function Pro Oblique"
+       style="font-size:16px;font-style:oblique;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#2a1a0d;fill-opacity:1;stroke:none;display:inline;font-family:Function Pro;-inkscape-font-specification:Function Pro Oblique"
        transform="translate(-3.176,-1.6955)"><flowRegion
          id="flowRegion10070"><rect
            id="rect10072"
@@ -1881,8 +1867,8 @@
            height="96.1241"
            x="37"
            y="477"
-           style="font-size:16px;font-style:oblique;line-height:125%;letter-spacing:0px;-inkscape-font-specification:Function Pro Oblique" /></flowRegion><flowPara
-         id="flowPara10076">Ever struggled with research? Tired of having to redo or check other peoples' research? Wish it wasn't so hard to share your work? We build software that makes research easier.</flowPara></flowRoot>    <text
+           style="font-size:16px;font-style:oblique;line-height:125%;letter-spacing:0px;fill:#2a1a0d;-inkscape-font-specification:Function Pro Oblique" /></flowRegion><flowPara
+         id="flowPara10076">Ever struggled with research? Tired of having to redo or check the research other people have done? Wish it wasn't so hard to share your work? We build software that makes research easier.</flowPara></flowRoot>    <text
        xml:space="preserve"
        style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:1px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;fill-opacity:1;stroke:none;display:inline;font-family:Function Pro;-inkscape-font-specification:Function Pro"
        x="34"
@@ -1931,17 +1917,17 @@
        style="opacity:0.92000002;fill:url(#pattern11679);fill-opacity:1;stroke:none;display:inline" />
     <text
        xml:space="preserve"
-       style="font-size:20px;font-style:oblique;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#db1111;fill-opacity:1;stroke:none;display:inline;font-family:Function Pro;-inkscape-font-specification:Function Pro Oblique"
-       x="46.183437"
-       y="205.0562"
+       style="font-size:22px;font-style:oblique;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#db1111;fill-opacity:1;stroke:none;display:inline;font-family:Function Pro;-inkscape-font-specification:Function Pro Oblique"
+       x="36.012642"
+       y="206.51421"
        id="text10058"
        sodipodi:linespacing="125%"
        inkscape:transform-center-y="10.705302"><tspan
          sodipodi:role="line"
          id="tspan10060"
-         x="46.183437"
-         y="205.0562"
-         style="font-size:20px;font-style:oblique;letter-spacing:0px;-inkscape-font-specification:Function Pro Oblique">Pushing Research Boundaries</tspan></text>
+         x="36.012642"
+         y="206.51421"
+         style="font-size:22px;font-style:oblique;letter-spacing:0px;-inkscape-font-specification:Function Pro Oblique">Pushing Research Boundaries</tspan></text>
   </g>
   <g
      style="display:none"
