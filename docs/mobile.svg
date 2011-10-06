@@ -28,9 +28,9 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1"
      inkscape:cx="160"
-     inkscape:cy="512"
+     inkscape:cy="1689"
      inkscape:document-units="px"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="g3407"
      showgrid="true"
      inkscape:window-width="1309"
      inkscape:window-height="748"
@@ -797,35 +797,35 @@
          sodipodi:linespacing="125%"
          id="text3353"
          y="66.666702"
-         x="714.79498"
+         x="712.61462"
          style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0.5px;word-spacing:0px;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
          xml:space="preserve"><tspan
            y="66.666702"
-           x="714.79498"
+           x="712.61462"
            id="tspan3355"
            sodipodi:role="line">Products</tspan></text>
       <text
          xml:space="preserve"
          style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0.5px;word-spacing:0px;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
-         x="787.43488"
+         x="783.07422"
          y="66.666702"
          id="text3399"
          sodipodi:linespacing="125%"><tspan
            sodipodi:role="line"
            id="tspan3401"
-           x="787.43488"
-           y="66.666702">Blog</tspan></text>
+           x="783.07422"
+           y="66.666702">Research</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text3403"
          y="66.490921"
-         x="834.49835"
+         x="857.0166"
          style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0.5px;word-spacing:0px;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
          xml:space="preserve"><tspan
            y="66.490921"
-           x="834.49835"
+           x="857.0166"
            id="tspan3405"
-           sodipodi:role="line">Contact</tspan></text>
+           sodipodi:role="line">Blog</tspan></text>
     </g>
     <g
        id="g5520"
@@ -1567,7 +1567,7 @@
        y="142.8571" />
   </g>
   <g
-     style="display:inline"
+     style="display:none"
      inkscape:label="Front Page"
      id="layer3"
      inkscape:groupmode="layer">
@@ -1961,10 +1961,32 @@
          x="941.6106"
          sodipodi:role="line"
          id="tspan5502">collaborative research</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Function Pro;-inkscape-font-specification:Function Pro"
+       x="52"
+       y="338"
+       id="text12784"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan12786"
+         x="52"
+         y="338">435.294.2964</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text12788"
+       y="366"
+       x="52"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Function Pro;-inkscape-font-specification:Function Pro"
+       xml:space="preserve"><tspan
+         y="366"
+         x="52"
+         id="tspan12790"
+         sodipodi:role="line">hello@pentandra.com</tspan></text>
   </g>
   <g
      style="display:none"
-     inkscape:label="Contact"
+     inkscape:label="Research"
      id="layer5"
      inkscape:groupmode="layer" />
 </svg>
