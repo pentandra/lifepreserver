@@ -28,7 +28,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.80241935"
      inkscape:cx="496"
-     inkscape:cy="1360.1608"
+     inkscape:cy="823.03518"
      inkscape:document-units="px"
      inkscape:current-layer="layer3"
      showgrid="true"
@@ -1846,50 +1846,50 @@
     <g
        style="fill:#544233"
        id="g3407"
-       transform="translate(58.000014,11.917998)">
+       transform="translate(51.115982,11.917998)">
       <text
          sodipodi:linespacing="125%"
          id="text3349"
          y="66.666702"
-         x="633.26251"
-         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0.5px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
+         x="615.92163"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0.5px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
          xml:space="preserve"><tspan
            y="66.666702"
-           x="633.26251"
+           x="615.92163"
            id="tspan3351"
            sodipodi:role="line">Company</tspan></text>
       <text
          xml:space="preserve"
-         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0.5px;word-spacing:0px;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
-         x="756.90576"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0.5px;word-spacing:0px;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
+         x="750.50977"
          y="66.666702"
          id="text3353"
          sodipodi:linespacing="125%"><tspan
            sodipodi:role="line"
            id="tspan3355"
-           x="756.90576"
+           x="750.50977"
            y="66.666702">Products</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text3399"
          y="66.666702"
-         x="712.61462"
-         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0.5px;word-spacing:0px;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
+         x="702.84375"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0.5px;word-spacing:0px;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
          xml:space="preserve"><tspan
            y="66.666702"
-           x="712.61462"
+           x="702.84375"
            id="tspan3401"
            sodipodi:role="line">Blog</tspan></text>
       <text
          xml:space="preserve"
-         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0.5px;word-spacing:0px;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
-         x="827.36536"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0.5px;word-spacing:0px;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
+         x="827.3653"
          y="66.490921"
          id="text3403"
          sodipodi:linespacing="125%"><tspan
            sodipodi:role="line"
            id="tspan3405"
-           x="827.36536"
+           x="827.3653"
            y="66.490921">Research</tspan></text>
     </g>
   </g>
@@ -1898,6 +1898,17 @@
      id="layer3"
      inkscape:label="Front Page"
      style="display:inline">
+    <text
+       xml:space="preserve"
+       style="font-size:34px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:1px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;fill-opacity:1;stroke:none;display:inline;font-family:Function Pro;-inkscape-font-specification:Function Pro"
+       x="48.062496"
+       y="1476.1903"
+       id="text11921"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="48.062496"
+         y="1476.1903"
+         id="tspan11923">MEET GEUNGLE</tspan></text>
     <g
        style="display:inline"
        id="g7191"
@@ -2034,19 +2045,8 @@
          height="119.77707"
          width="184" />
     </g>
-    <text
-       xml:space="preserve"
-       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:1px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;fill-opacity:1;stroke:none;display:inline;font-family:Function Pro;-inkscape-font-specification:Function Pro"
-       x="48.062496"
-       y="1476.1903"
-       id="text11921"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         x="48.062496"
-         y="1476.1903"
-         id="tspan11923">MEET GEUNGLE:</tspan></text>
     <g
-       transform="matrix(0.79312499,0,0,0.79312499,-154.18437,282.5689)"
+       transform="matrix(0.83958373,0,0,0.83958373,-166.03135,209.86105)"
        id="g12711">
       <rect
          style="fill:#2a1a0d;fill-opacity:1;stroke:none"
@@ -2162,16 +2162,16 @@
       </g>
     </g>
     <flowRoot
-       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:114.99999762%;letter-spacing:0px;word-spacing:0px;fill:#2a1a0d;fill-opacity:1;stroke:none;display:inline;font-family:Function Pro;-inkscape-font-specification:Function Pro"
+       style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:114.99999762%;letter-spacing:0px;word-spacing:0px;fill:#2a1a0d;fill-opacity:1;stroke:none;display:inline;font-family:Function Pro;-inkscape-font-specification:Function Pro"
        id="flowRoot12736"
        xml:space="preserve"
-       transform="translate(-68.775002,789.1895)"><flowRegion
+       transform="translate(-69.023,789.38334)"><flowRegion
          id="flowRegion12738"><rect
-           style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:114.99999762%;letter-spacing:0px;fill:#2a1a0d;font-family:Function Pro;-inkscape-font-specification:Function Pro"
+           style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:114.99999762%;letter-spacing:0px;fill:#2a1a0d;font-family:Function Pro;-inkscape-font-specification:Function Pro"
            y="734.97461"
            x="391.9375"
-           height="94.883492"
-           width="344.77512"
+           height="94.689651"
+           width="345.02313"
            id="rect12740" /></flowRegion><flowPara
          id="flowPara12742">Our flagship product, Geungle, is a research system for generational history (a.k.a. genealogy done right).</flowPara></flowRoot>    <text
        xml:space="preserve"
@@ -2198,17 +2198,17 @@
            id="rect10072" /></flowRegion><flowPara
          id="flowPara10076">Ever struggled with research? Tired of having to redo or check the research other people have done? Wish it wasn't so hard to share your work? </flowPara><flowPara
          id="flowPara6571" /><flowPara
-         id="flowPara6573">We build software that makes research easier.</flowPara></flowRoot>    <text
+         id="flowPara6573">Want software that makes research easier?</flowPara></flowRoot>    <text
        sodipodi:linespacing="125%"
        id="text10084"
-       y="951.13293"
-       x="47.838497"
-       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:1px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;fill-opacity:1;stroke:none;display:inline;font-family:Function Pro;-inkscape-font-specification:Function Pro"
+       y="952.38098"
+       x="48.0625"
+       style="font-size:34px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:1px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;fill-opacity:1;stroke:none;display:inline;font-family:Function Pro;-inkscape-font-specification:Function Pro"
        xml:space="preserve"><tspan
          id="tspan10090"
-         y="951.13293"
-         x="47.838497"
-         sodipodi:role="line">WE ENVISION:</tspan></text>
+         y="952.38098"
+         x="48.0625"
+         sodipodi:role="line">WE ENVISION A BETTER RESEARCH EXPERIENCE</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:1px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;fill-opacity:1;stroke:none;display:inline;font-family:Function Pro;-inkscape-font-specification:Function Pro"
@@ -2249,23 +2249,23 @@
        inkscape:transform-center-y="10.705307"
        sodipodi:linespacing="100%"
        id="text10058"
-       y="273.08722"
-       x="687.85278"
+       y="268.6752"
+       x="688.2345"
        style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#db1111;fill-opacity:1;stroke:none;display:inline;font-family:Function Pro;-inkscape-font-specification:Function Pro"
        xml:space="preserve"><tspan
          style="font-size:44px;font-style:normal;text-align:start;line-height:100%;letter-spacing:0px;text-anchor:start;-inkscape-font-specification:Function Pro"
-         y="273.08722"
-         x="687.85278"
+         y="268.6752"
+         x="688.2345"
          id="tspan10060"
          sodipodi:role="line">PUSHING</tspan><tspan
          style="font-size:44px;font-style:normal;text-align:start;line-height:100%;letter-spacing:0px;text-anchor:start;-inkscape-font-specification:Function Pro"
-         y="317.08722"
-         x="687.85278"
+         y="312.6752"
+         x="688.2345"
          sodipodi:role="line"
          id="tspan11497">RESEARCH</tspan><tspan
          style="font-size:44px;font-style:normal;text-align:start;line-height:100%;letter-spacing:0px;text-anchor:start;-inkscape-font-specification:Function Pro"
-         y="361.08722"
-         x="687.85278"
+         y="356.6752"
+         x="688.2345"
          sodipodi:role="line"
          id="tspan11499">BOUNDARIES</tspan></text>
     <text
@@ -2364,25 +2364,17 @@
    style="font-weight:bold;-inkscape-font-specification:Function Pro Bold">Geungle</tspan></tspan></text>
       </g>
     </g>
-    <use
-       x="0"
-       y="0"
-       xlink:href="#rect6944"
-       id="use11491"
-       transform="translate(-2.0703125e-6,523.80952)"
-       width="992"
-       height="2000" />
     <flowRoot
        transform="translate(-84.1615,558.3998)"
-       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:114.99999762%;letter-spacing:0.5px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;fill-opacity:1;stroke:none;display:inline;font-family:Function Pro;-inkscape-font-specification:Function Pro"
+       style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:114.99999762000000203%;letter-spacing:0.50000000000000000px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;fill-opacity:1;stroke:none;display:inline;font-family:Function Pro;-inkscape-font-specification:Function Pro"
        id="flowRoot3394-4"
        xml:space="preserve"><flowRegion
          id="flowRegion3396-1"><rect
-           style="font-size:32px;line-height:114.99999762%;letter-spacing:0.5px;fill:#544233"
+           style="font-size:28px;line-height:114.99999762%;letter-spacing:0.5px;fill:#544233"
            y="204.11874"
            x="132"
-           height="160.11961"
-           width="619.87512"
+           height="142.24336"
+           width="620.09912"
            id="rect3398-6" /></flowRegion><flowPara
          id="flowPara3406-4">We are a small group of people devoted to promoting and facilitating quality research and making research collaboration possible.</flowPara></flowRoot>  </g>
   <g
