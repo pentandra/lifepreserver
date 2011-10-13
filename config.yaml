@@ -71,4 +71,4 @@ deploy:
   public:
     dst: "pentandra.com:/srv/http/lifepreserver"
   staging:
-    dst: "root@rebikov.process.tree:/srv/http/lifepreserver"
+    dst: "vlad@rebikov.process.tree:/srv/http/lifepreserver"
