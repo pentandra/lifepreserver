@@ -69,7 +69,7 @@ notify_on_compilation_failure: true
 
 deploy:
   public:
-    dst: "jenkins@pentandra.com:/srv/http/lifepreserver"
+    dst: "pentandra.com:/srv/http/lifepreserver"
     options: [ '-gpPrtvz', '--delete-after' ]
   staging:
     dst: "vlad@rebikov.process.tree:/srv/http/lifepreserver"
