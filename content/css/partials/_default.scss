@@ -69,9 +69,15 @@ nav {
 }
 
 section#zeugma {
+  padding-top: 48px;
+
   p {
     font-style: italic;
     font-size: 22px;
+  }
+
+  h2 {
+    letter-spacing: -2px;
   }
 
   h2, p {
@@ -97,8 +103,8 @@ section#ourcompany {
 footer {
 
   div.content {
-    @include grid(10, false); 
-    padding: 33px 48px 84px;
+    @include grid(10); 
+//    padding: 33px 48px 84px;
     margin: 0 auto;
     height: 200px;
   }

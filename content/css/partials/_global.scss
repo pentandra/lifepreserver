@@ -48,22 +48,35 @@ header h1 {
   position: absolute;
 }
 
-.button, button {
+a.button {
   
-  @include border-radius(12px, 12px);
   background-color: $pentandra-brown;
   font-size: 17px;
   height: 48px;
   line-height: 48px;
   text-align: center;
-  color: white;
+  color: $pentandra-white;
   cursor: pointer;
   float: left;
   margin-top: 6px;
   @include grid(3, false);
+  @include border-radius(12px, 12px);
   
-  span {
+  em {
     font-weight: bold;
+    font-style: normal;
+  }
+
+  &:hover {
+    background-color: #6e5643;
+  }
+
+  &:focus {
+    background-color: $pentandra-red;
+  }
+
+  &:visited {
+    color: $pentandra-white;
   }
 
 }
