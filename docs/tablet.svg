@@ -26,16 +26,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
+     inkscape:zoom="1.1601562"
      inkscape:cx="384"
-     inkscape:cy="765.2035"
+     inkscape:cy="678.92433"
      inkscape:document-units="px"
      inkscape:current-layer="layer3"
      showgrid="true"
      inkscape:window-width="1309"
      inkscape:window-height="748"
-     inkscape:window-x="50"
-     inkscape:window-y="-10"
+     inkscape:window-x="57"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      showguides="false"
      inkscape:guide-bbox="true"
@@ -1921,17 +1921,17 @@
     <text
        sodipodi:linespacing="125%"
        id="text11921"
-       y="1237.0032"
-       x="27.866501"
+       y="1238.7271"
+       x="88.203201"
        style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:1px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;fill-opacity:1;stroke:none;display:inline;font-family:Function Pro;-inkscape-font-specification:Function Pro"
        xml:space="preserve"><tspan
          id="tspan11923"
-         y="1237.0032"
-         x="27.866501"
+         y="1238.7271"
+         x="88.203201"
          sodipodi:role="line">MEET GEUNGLE:</tspan></text>
     <g
        id="g12711"
-       transform="matrix(0.83958374,0,0,0.83958374,-186.03136,67.003847)">
+       transform="matrix(0.83958374,0,0,0.83958374,-130.86637,-55.754504)">
       <rect
          y="1565"
          x="255"
@@ -2046,7 +2046,7 @@
       </g>
     </g>
     <flowRoot
-       transform="translate(-364.675,551.05555)"
+       transform="translate(29.237458,480.37541)"
        xml:space="preserve"
        id="flowRoot12736"
        style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:114.99999762%;letter-spacing:0px;word-spacing:0px;fill:#2a1a0d;fill-opacity:1;stroke:none;display:inline;font-family:Function Pro;-inkscape-font-specification:Function Pro"><flowRegion
@@ -2179,7 +2179,9 @@
        id="text8991"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         id="tspan8993" /></text>
+         id="tspan8993"
+         x="759"
+         y="390" /></text>
     <g
        transform="translate(454.0625,-142.85711)"
        id="g9030">
@@ -2207,7 +2209,7 @@
    id="tspan9028">Products</tspan></tspan></text>
     </g>
     <g
-       transform="translate(362.0625,571.42859)"
+       transform="translate(384.24432,574.01437)"
        id="g11419">
       <rect
          y="714.28571"
