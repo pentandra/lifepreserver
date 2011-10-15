@@ -1,3 +1,5 @@
+@import "compass/css3/border-radius";
+
 // Global style definitions
 
 h1 {
@@ -15,7 +17,6 @@ h2 {
 h3 {
   @extend .bigger;
   font-weight: normal;
-  font-family: unquote('FunctionCapsMedium');
 }
 
 h4 {
@@ -46,6 +47,41 @@ body {
 header h1 {
   position: absolute;
 }
+
+.button, button {
+  
+  @include border-radius(12px, 12px);
+  background-color: $pentandra-brown;
+  font-size: 17px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  float: left;
+  margin-top: 6px;
+  @include grid(3, false);
+  
+  span {
+    font-weight: bold;
+  }
+
+}
+
+section#zeugma {
+
+  h2 {
+    color: $pentandra-red;
+    text-transform: uppercase;
+  }
+
+  #mosaic {
+    background: transparent url('/images/zeugma.jpg') no-repeat scroll left top;
+    position: absolute;
+  }
+
+}
+
 
 footer {
   background: $footer-background;
