@@ -6,10 +6,16 @@
 cols    1     2      3      4      5      6      7      8      9      10
 px      68    160    252    344    436    528    620    712    804    896    */
 
+$gutter-width: 24px;
+
 #{$less-grid-element} {
   @include grid(10, false); 
   padding: 0 48px;
   margin: 0 auto;
+}
+
+h3 {
+  font-size: 37px;
 }
 
 header {
@@ -57,6 +63,8 @@ nav {
 
   section {
     margin-top: 48px;
+    padding-bottom: 20px;
+    border-top: 5px solid $pentandra-brown;
 
     p {
       margin-left: 276px;
@@ -70,6 +78,7 @@ nav {
 
 section#zeugma {
   padding-top: 48px;
+  border: 0;
 
   p {
     font-style: italic;
@@ -94,34 +103,91 @@ section#zeugma {
 
 section#ourcompany {
   margin-top: 96px;
+  border: 0;
 
   p {
     @extend .big;
   }
 }
 
+section#researchexperience {
+
+  dl {
+    @extend .clearfix;
+  }
+
+  dt {
+    text-align: right;
+    text-transform: uppercase;
+    @extend .big;
+    @include grid(3, false);
+    float: left;
+    height: $grid_height*2;
+    margin-bottom: $grid_height;
+  }
+
+  dd {
+    float: left;
+    margin: 0 0 $grid_height $gutter_width;
+    @include grid(4, false);
+  }
+
+  figure {
+    float: left;
+    @include grid(3, false);
+    height: $grid_height*2;
+    margin: 0 0 $grid_height $gutter_width;
+  }
+
+  figure#clarity {
+    background: transparent url('/images/clarity.jpg') no-repeat scroll left top;
+  }
+
+  figure#context {
+    background: transparent url('/images/context.jpg') no-repeat scroll left top;
+  }
+
+  figure#collaboration {
+    background: transparent url('/images/collaboration.jpg') no-repeat scroll left top;
+    height: 120px;
+  }
+}
+
+section#meetgeungle {
+  @extend .clearfix;
+
+  div#geunglelogo {
+    float: right;
+  }
+}
+
 footer {
 
   div.content {
-    @include grid(10); 
-//    padding: 33px 48px 84px;
+    @include grid(10, false); 
+    padding: 33px 48px 84px;
     margin: 0 auto;
-    height: 200px;
+    @extend .clearfix;
   }
 
   span#footerlogo {
     background: transparent url('/images/pentandra-logo-reverse.png') no-repeat scroll left top;
     cursor: pointer;
-    width: 368px;
     font-size: 14px;
     padding: 67px 0 0 0;
+    @include grid(4, false);
   }
 
-  span#whatshappening {
-    width: 368px;
+  section {
+    margin-left: $gutter_width;
   }
 
-  span#feelingsocial {
+  section#recentthoughts {
+    @include grid(4, false);
+  }
+
+  section#feelingsocial {
+    @include grid(2, false);
     ul {
       list-style: none;
       margin: 0;
@@ -147,13 +213,9 @@ footer {
       width: 35px;
     }
 
-//    .gplus {
-//      background: transparent url('/images/gplus.png') no-repeat center center;
-//      width: 24px;
-//    }
-
     .email {
       background: transparent url('/images/email.png') no-repeat top center;
+      margin: 3px 10px;
       width: 24px;
     }
 

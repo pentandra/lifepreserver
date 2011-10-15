@@ -95,6 +95,12 @@ section#zeugma {
 
 }
 
+section#meetgeungle {
+  div#geunglelogo {
+    background: transparent url('/images/geungle-logo.png') no-repeat scroll center top;
+    @include grid(3);
+  }
+}
 
 footer {
   background: $footer-background;
@@ -103,7 +109,7 @@ footer {
   width: 100%;
   left: 0;
 
-  span {
+  span, section {
     float: left;
   }
 }
