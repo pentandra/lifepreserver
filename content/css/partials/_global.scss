@@ -97,8 +97,7 @@ section#zeugma {
 
 section#meetgeungle {
   div#geunglelogo {
-    background: transparent url('/images/geungle-logo.png') no-repeat scroll center top;
-    @include grid(3);
+    background: transparent url('/images/geungle-logo.png') no-repeat scroll left top;
   }
 }
 

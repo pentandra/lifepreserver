@@ -157,7 +157,9 @@ section#meetgeungle {
   @extend .clearfix;
 
   div#geunglelogo {
-    float: right;
+    @include grid(6, false);
+    height: 158px;
+    margin: 30px 30px 30px 276px;
   }
 }
 
