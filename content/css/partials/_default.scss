@@ -86,7 +86,7 @@ section#zeugma {
   }
 
   h2 {
-    letter-spacing: -2px;
+    letter-spacing: -1px;
   }
 
   h2, p {
@@ -157,8 +157,8 @@ section#meetgeungle {
   @extend .clearfix;
 
   div#geunglelogo {
-    @include grid(6, false);
-    height: 158px;
+    @include grid(7, false);
+    height: 186px;
     margin: 30px 30px 30px 276px;
   }
 }
