@@ -19,10 +19,13 @@ h3 {
 }
 
 header {
-  height: 144px;
+  height: 111px;
+  position: fixed;
   font-size: 18px;
-//  position: fixed;
-  width: 100%;
+
+  h1 {
+    position: absolute;
+  }
 
   h1 a { 
     background: transparent url('/images/pentandra-logo.png') no-repeat center center;
@@ -31,13 +34,9 @@ header {
     margin-top: 48px;
   }
 
-  .separator {
-    position: absolute;
-    width: 100%;
-    top: 111px;
-    left: 0;
-    height: 33px;
-    background: $pentandra-brown;
+  div.content {
+    @include grid(10, false);
+    margin: 0 auto;
   }
 }
 
@@ -60,6 +59,8 @@ nav {
 }
 
 #main {
+
+  margin-top: 180px;
 
   section {
     margin-top: 48px;
@@ -122,21 +123,21 @@ section#researchexperience {
     @extend .big;
     @include grid(3, false);
     float: left;
-    height: $grid_height*2;
-    margin-bottom: $grid_height;
+    height: $grid-height*2;
+    margin-bottom: $grid-height;
   }
 
   dd {
     float: left;
-    margin: 0 0 $grid_height $gutter_width;
+    margin: 0 0 $grid-height $gutter_width;
     @include grid(4, false);
   }
 
   figure {
     float: left;
     @include grid(3, false);
-    height: $grid_height*2;
-    margin: 0 0 $grid_height $gutter_width;
+    height: $grid-height*2;
+    margin: 0 0 $grid-height $gutter_width;
   }
 
   figure#clarity {

@@ -44,8 +44,15 @@ body {
   background: $content-background;
 }
 
-header h1 {
+header {
+
   position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: $pentandra-white;
+  z-index: 999; 
+  border-bottom: 33px solid $pentandra-brown;
 }
 
 a.button {
