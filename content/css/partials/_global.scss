@@ -20,7 +20,9 @@ h3 {
 }
 
 h4 {
-  @extend .big; }
+  @extend .big; 
+  font-weight: normal;
+}
 
 h5 {
   margin: 0 0 6px;
@@ -32,16 +34,17 @@ small {
   @extend .small; }
 
 body {
-  font-family: $base-font-family;
+  font-family: $base-font-family,sans-serif;
   background: $page-background;
   color: $font-color;
 }
 
 // Selection colors (easy to forget)
-@include selection-color(unquote("rgb(255,255,158)"));
+// @include selection-color(unquote("rgb(255,255,158)"));
 
 #{$less-grid-element} {
   background: $content-background;
+  margin: 0 auto;
 }
 
 header {
@@ -59,14 +62,14 @@ a.button {
   
   background-color: $pentandra-brown;
   font-size: 17px;
-  height: 48px;
-  line-height: 48px;
+  height: $grid-height;
+  line-height: $grid-height;
   text-align: center;
   color: $pentandra-white;
   cursor: pointer;
   float: left;
   margin-top: 6px;
-  @include grid(3, false);
+  @include grid(3);
   @include border-radius(12px, 12px);
   
   em {
@@ -104,7 +107,7 @@ section#zeugma {
 
 section#meetgeungle {
   div#geunglelogo {
-    background: transparent url('/images/geungle-logo.png') no-repeat scroll left top;
+    background: transparent url('/images/geungle-logo_3col.png') no-repeat scroll center top;
   }
 }
 
@@ -117,5 +120,9 @@ footer {
 
   span, section {
     float: left;
+  }
+
+  div.content {
+    background-color: $footer-background;
   }
 }

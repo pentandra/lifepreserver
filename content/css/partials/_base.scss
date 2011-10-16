@@ -4,8 +4,11 @@
 $base-font-family: unquote('FunctionProBook');
 
 // less configuration
-$less-grid-element: unquote('#container');
-$less-font-family: $base-font-family;
+$less-grid-element: unquote('.content');
+$less-grid-padding: false;
+$less-gutter-width: 24px;
+$less-column-width: 68px;
+$grid-height: 48px;
 
 // default font-size
 $base-font-size: 13px;
@@ -34,9 +37,7 @@ $link-active-color: #e50050;
 $link-visited-color: $pentandra-brown;
 
 // color for selected text
-$selected-font-color: #000;
+$selected-font-color: $pentandra-white;
 
 // bg-color for selected text
-$selected-background-color: #ffff9e;
-
-$grid-height: 48px;
+$selected-background-color: $pentandra-red;

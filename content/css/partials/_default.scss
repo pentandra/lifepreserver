@@ -6,20 +6,15 @@
 cols    1     2      3      4      5      6      7      8      9      10
 px      68    160    252    344    436    528    620    712    804    896    */
 
-$gutter-width: 24px;
+$less-outer-margin: 48px;
 
 #{$less-grid-element} {
-  @include grid(10, false); 
-  padding: 0 48px;
-  margin: 0 auto;
-}
-
-h3 {
-  font-size: 37px;
+  @include grid(10); 
+  padding: 0 $less-outer-margin;
 }
 
 header {
-  height: 111px;
+  height: $grid-height*3 - 33px;
   position: fixed;
   font-size: 18px;
 
@@ -29,13 +24,13 @@ header {
 
   h1 a { 
     background: transparent url('/images/pentandra-logo.png') no-repeat center center;
-    @include grid(3, false);
+    @include grid(3);
     height: 34px;
-    margin-top: 48px;
+    margin-top: $grid-height;
   }
 
   div.content {
-    @include grid(10, false);
+    @include grid(10);
     margin: 0 auto;
   }
 }
@@ -46,14 +41,19 @@ nav {
 
   li {
     float: left;
-    margin-left: 30px;
 
     a {
-      padding-bottom: 3px;
-    }
+      padding: 7px 15px;
     
-    a:hover {
-      border-bottom: 2px #fde9e9 solid;
+      &:hover, &:focus {
+        background-color: $pentandra-brown;
+        @include border-radius(12px, 12px);
+        color: $pentandra-white;
+      }
+
+      &:focus {
+        background-color: $pentandra-red;
+      }
     }
   }
 }
@@ -63,12 +63,12 @@ nav {
   margin-top: 180px;
 
   section {
-    margin-top: 48px;
-    padding-bottom: 20px;
+    margin-top: $grid-height;
+    padding-bottom: $grid-height/2;
     border-top: 5px solid $pentandra-brown;
 
     p {
-      margin-left: 276px;
+      margin-left: ($less-column-width+$less-gutter-width)*3;
     }
 
     h3 {
@@ -78,7 +78,7 @@ nav {
 }
 
 section#zeugma {
-  padding-top: 48px;
+  padding-top: $grid-height;
   border: 0;
 
   p {
@@ -91,19 +91,19 @@ section#zeugma {
   }
 
   h2, p {
-    @include grid(3, false); 
-    padding: 0 0 0 644px;
-    margin-left: 0;
+    @include grid(3); 
+    padding: 0;
+    margin-left: ($less-column-width + $less-gutter-width)*7;
   }
   
   #mosaic {
-    @include grid(6, false);
+    @include grid(6);
     height: 412px;
   }
 }
 
 section#ourcompany {
-  margin-top: 96px;
+  margin-top: $grid-height*2;
   border: 0;
 
   p {
@@ -113,31 +113,31 @@ section#ourcompany {
 
 section#researchexperience {
 
-  dl {
+  div.wrapper {
     @extend .clearfix;
-  }
-
-  dt {
-    text-align: right;
-    text-transform: uppercase;
-    @extend .big;
-    @include grid(3, false);
-    float: left;
     height: $grid-height*2;
     margin-bottom: $grid-height;
-  }
 
-  dd {
-    float: left;
-    margin: 0 0 $grid-height $gutter_width;
-    @include grid(4, false);
-  }
+    h4 {
+      float: left;
+      @include grid(3);
+      text-align: right;
+      text-transform: uppercase;
+      margin: 0;
+    }
 
-  figure {
-    float: left;
-    @include grid(3, false);
-    height: $grid-height*2;
-    margin: 0 0 $grid-height $gutter_width;
+    p {
+      float: left;
+      @include grid(4);
+      margin: 0 $less-gutter-width 0;
+    }
+
+    figure {
+      float: left;
+      @include grid(3);
+      height: $grid-height*2;
+      margin: 5px 0 $less-gutter-width;
+    }
   }
 
   figure#clarity {
@@ -151,6 +151,7 @@ section#researchexperience {
   figure#collaboration {
     background: transparent url('/images/collaboration.jpg') no-repeat scroll left top;
     height: 120px;
+    margin-top: -10px;
   }
 }
 
@@ -158,16 +159,17 @@ section#meetgeungle {
   @extend .clearfix;
 
   div#geunglelogo {
-    @include grid(7, false);
-    height: 186px;
-    margin: 30px 30px 30px 276px;
+    @include grid(3);
+    float: right;
+    padding: 0 0 60px;
+    height: 76px;
   }
 }
 
 footer {
 
   div.content {
-    @include grid(10, false); 
+    @include grid(10); 
     padding: 33px 48px 84px;
     margin: 0 auto;
     @extend .clearfix;
@@ -178,19 +180,19 @@ footer {
     cursor: pointer;
     font-size: 14px;
     padding: 67px 0 0 0;
-    @include grid(4, false);
+    @include grid(4);
   }
 
   section {
-    margin-left: $gutter_width;
+    margin-left: $less-gutter-width;
   }
 
   section#recentthoughts {
-    @include grid(4, false);
+    @include grid(4);
   }
 
   section#feelingsocial {
-    @include grid(2, false);
+    @include grid(2);
     ul {
       list-style: none;
       margin: 0;
