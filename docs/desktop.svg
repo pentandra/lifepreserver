@@ -28,14 +28,14 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1"
      inkscape:cx="496"
-     inkscape:cy="157.9589"
+     inkscape:cy="1757.9589"
      inkscape:document-units="px"
      inkscape:current-layer="layer3"
      showgrid="true"
      inkscape:window-width="1309"
      inkscape:window-height="748"
-     inkscape:window-x="57"
-     inkscape:window-y="0"
+     inkscape:window-x="50"
+     inkscape:window-y="-10"
      inkscape:window-maximized="1"
      showguides="false"
      inkscape:guide-bbox="true"
@@ -1004,7 +1004,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -2263,19 +2263,19 @@
        id="text10058"
        y="268.6752"
        x="688.2345"
-       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#db1111;fill-opacity:1;stroke:none;display:inline;font-family:Function Pro;-inkscape-font-specification:Function Pro"
+       style="font-size:44px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#db1111;fill-opacity:1;stroke:none;display:inline;font-family:Function Pro;-inkscape-font-specification:Function Pro Medium"
        xml:space="preserve"><tspan
-         style="font-size:44px;font-style:normal;text-align:start;line-height:100%;letter-spacing:0px;text-anchor:start;-inkscape-font-specification:Function Pro"
+         style="font-size:44px;font-style:normal;text-align:start;line-height:100%;letter-spacing:0px;text-anchor:start;-inkscape-font-specification:Function Pro Medium;font-family:Function Pro;font-weight:500;font-stretch:normal;font-variant:normal;writing-mode:lr"
          y="268.6752"
          x="688.2345"
          id="tspan10060"
          sodipodi:role="line">PUSHING</tspan><tspan
-         style="font-size:44px;font-style:normal;text-align:start;line-height:100%;letter-spacing:0px;text-anchor:start;-inkscape-font-specification:Function Pro"
+         style="font-size:44px;font-style:normal;text-align:start;line-height:100%;letter-spacing:0px;text-anchor:start;-inkscape-font-specification:Function Pro Medium;font-family:Function Pro;font-weight:500;font-stretch:normal;font-variant:normal;writing-mode:lr"
          y="312.6752"
          x="688.2345"
          sodipodi:role="line"
          id="tspan11497">RESEARCH</tspan><tspan
-         style="font-size:44px;font-style:normal;text-align:start;line-height:100%;letter-spacing:0px;text-anchor:start;-inkscape-font-specification:Function Pro"
+         style="font-size:44px;font-style:normal;text-align:start;line-height:100%;letter-spacing:0px;text-anchor:start;-inkscape-font-specification:Function Pro Medium;font-family:Function Pro;font-weight:500;font-stretch:normal;font-variant:normal;writing-mode:lr"
          y="356.6752"
          x="688.2345"
          sodipodi:role="line"

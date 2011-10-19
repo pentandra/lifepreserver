@@ -14,9 +14,7 @@ $less-outer-margin: 48px;
 }
 
 header {
-  height: $grid-height*3 - 33px;
   position: fixed;
-  font-size: 18px;
 
   h1 {
     position: absolute;
@@ -27,11 +25,6 @@ header {
     @include grid(3);
     height: 34px;
     margin-top: $grid-height;
-  }
-
-  div.content {
-    @include grid(10);
-    margin: 0 auto;
   }
 }
 
@@ -45,15 +38,15 @@ nav {
     a {
       padding: 7px 15px;
     
-      &:hover, &:focus {
-        background-color: $pentandra-brown;
-        @include border-radius(12px, 12px);
-        color: $pentandra-white;
-      }
+     &:hover, &:focus {
+       background-color: $pentandra-brown;
+       @include border-radius(12px, 12px);
+       color: $pentandra-white;
+     }
 
-      &:focus {
-        background-color: $pentandra-red;
-      }
+     &:focus {
+       background-color: $pentandra-red;
+     }
     }
   }
 }
@@ -170,9 +163,7 @@ section#meetgeungle {
 footer {
 
   div.content {
-    @include grid(10); 
     padding: 33px 48px 84px;
-    margin: 0 auto;
     @extend .clearfix;
   }
 

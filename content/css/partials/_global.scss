@@ -1,4 +1,5 @@
 @import "compass/css3/border-radius";
+@import "compass/css3/box-shadow";
 
 // Global style definitions
 
@@ -50,12 +51,15 @@ body {
 header {
 
   position: absolute;
+  z-index: 999; 
+  height: $grid-height*3 - 33px;
   width: 100%;
   top: 0;
   left: 0;
   background-color: $pentandra-white;
-  z-index: 999; 
+  @include box-shadow($pentandra-brown 0 0 4px);
   border-bottom: 33px solid $pentandra-brown;
+
 }
 
 a.button {

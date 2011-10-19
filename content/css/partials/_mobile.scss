@@ -6,6 +6,46 @@
 cols    1     2      3
 px      68    160    252    */
 
+$less-outer-margin: 34px;
+
 @media only screen and (max-width: 767px) {
+
   #{$less-grid-element} {
-    @include grid(3); } }
+    @include grid(3); 
+    padding: 0 $less-outer-margin;
+  } 
+
+  header {
+    position: static;
+  }
+
+  nav {
+    float: none;
+    position: absolute;
+    margin-top: $grid-height*3 - 33px;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 33px;
+    @include grid(3);
+
+    ul li {
+
+      width: 25%;
+      text-align: center;
+
+      a {
+        color: $pentandra-white !important;
+        padding: 0;
+        display: block;
+
+        &:hover, &:focus {
+          background-color: $pentandra-red;
+          @include border-radius(0, 0);
+        }
+      }
+    }
+  }
+
+  #main {
+  } 
+}
