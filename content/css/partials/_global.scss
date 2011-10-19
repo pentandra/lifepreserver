@@ -70,8 +70,8 @@ a.button {
   line-height: $grid-height;
   text-align: center;
   color: $pentandra-white;
+  display: block;
   cursor: pointer;
-  float: left;
   margin-top: 6px;
   @include grid(3);
   @include border-radius(12px, 12px);
@@ -95,16 +95,16 @@ a.button {
 
 }
 
+div#main section {
+  @extend .clearfix;
+}
+
 section#zeugma {
+  position: relative;
 
   h2 {
     color: $pentandra-red;
     text-transform: uppercase;
-  }
-
-  #mosaic {
-    background: transparent url('/images/zeugma.jpg') no-repeat scroll left top;
-    position: absolute;
   }
 
 }

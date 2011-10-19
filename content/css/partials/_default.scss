@@ -13,6 +13,10 @@ $less-outer-margin: 48px;
   padding: 0 $less-outer-margin;
 }
 
+a.button {
+  float: left;
+}
+
 header {
   position: fixed;
 
@@ -90,15 +94,18 @@ section#zeugma {
     margin-left: ($less-column-width + $less-gutter-width)*7;
   }
   
-  #mosaic {
+  div#mosaic {
     @include grid(6);
+    background: transparent url('/images/zeugma.jpg') no-repeat scroll left top;
     height: 412px;
+    position: absolute;
+    top: $grid-height;
+    left: 0;
   }
 }
 
 section#ourcompany {
   margin-top: $grid-height*2;
-  border: 0;
 
   p {
     @extend .big;

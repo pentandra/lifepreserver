@@ -28,16 +28,16 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1"
      inkscape:cx="309.5"
-     inkscape:cy="1443.8532"
+     inkscape:cy="1733.8532"
      inkscape:document-units="px"
      inkscape:current-layer="layer3"
      showgrid="true"
      inkscape:window-width="1309"
      inkscape:window-height="748"
-     inkscape:window-x="50"
-     inkscape:window-y="-10"
+     inkscape:window-x="57"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
-     showguides="false"
+     showguides="true"
      inkscape:guide-bbox="true"
      showborder="true"
      inkscape:showpageshadow="false"
@@ -751,7 +751,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1584,7 +1584,7 @@
      inkscape:groupmode="layer">
     <g
        transform="matrix(0.49134769,0,0,0.49134769,10.384602,139.82566)"
-       inkscape:export-filename="/home/chris/devel/pentandra/lifepreserver/static/images/zeugma.png"
+       inkscape:export-filename="/home/chris/devel/pentandra/lifepreserver/static/images/zeugma_3col.png"
        inkscape:export-ydpi="89.986961"
        inkscape:export-xdpi="89.986961"
        id="g7191"
@@ -1928,17 +1928,17 @@
        style="opacity:0.92000002;fill:url(#pattern11679);fill-opacity:1;stroke:none;display:inline" />
     <text
        xml:space="preserve"
-       style="font-size:22px;font-style:oblique;font-variant:normal;font-weight:500;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#db1111;fill-opacity:1;stroke:none;display:inline;font-family:Function Pro;-inkscape-font-specification:Function Pro Medium Oblique"
-       x="25.183485"
+       style="font-size:20px;font-style:oblique;font-variant:normal;font-weight:500;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#db1111;fill-opacity:1;stroke:none;display:inline;font-family:Function Pro;-inkscape-font-specification:Function Pro Medium Oblique"
+       x="37.439529"
        y="198.51421"
        id="text10058"
        sodipodi:linespacing="125%"
        inkscape:transform-center-y="10.705302"><tspan
          sodipodi:role="line"
          id="tspan10060"
-         x="25.183485"
+         x="37.439529"
          y="198.51421"
-         style="font-size:22px;font-style:oblique;font-variant:normal;font-weight:500;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;writing-mode:lr-tb;text-anchor:start;font-family:Function Pro;-inkscape-font-specification:Function Pro Medium Oblique">Breaking Research Boundaries</tspan></text>
+         style="font-size:20px;font-style:oblique;font-variant:normal;font-weight:500;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;writing-mode:lr-tb;text-anchor:start;font-family:Function Pro;-inkscape-font-specification:Function Pro Medium Oblique">Breaking Research Boundaries</tspan></text>
   </g>
   <g
      style="display:none"

@@ -15,8 +15,12 @@ $less-outer-margin: 34px;
     padding: 0 $less-outer-margin;
   } 
 
+  a.button {
+    float: none;
+  }
+
   header {
-//    position: static;
+    position: static;
   }
 
   nav {
@@ -47,5 +51,88 @@ $less-outer-margin: 34px;
   }
 
   #main {
+    margin-top: 0;
+
+    section {
+
+      p {
+        margin-left: 0;
+      }
+
+    }
   } 
+
+  section#zeugma {
+    padding-top: 0;
+
+    h2 {
+      font-weight: normal;
+      font-style: italic;
+      text-align: center;
+      margin-bottom: 24px;
+      text-transform: none;
+      font-size: 25px;
+    }
+
+    p {
+      font-size: inherit; 
+    }
+
+    h2, p {
+      margin-left: 0;
+    }
+
+    div#mosaic {
+      background: transparent url('/images/zeugma_3col.jpg') no-repeat scroll left top;
+      @include grid(3);
+      height: 197px;
+      position: static;
+    }
+  }
+
+  section#ourcompany {
+    margin-top: $grid-height;
+  }
+
+  section#researchexperience {
+
+    div.wrapper {
+      height: auto;
+      margin-bottom: $grid-height/2;
+      
+      h4 {
+        float: none;
+        text-align: left;
+        margin: inherit;
+      }
+
+      p {
+        @include grid(3);
+        float: none;
+        margin: inherit;
+      }
+
+      figure {
+        float: none;
+      }
+    }
+  }
+
+  footer {
+    div.content {
+      padding: 33px 34px 60px;
+    }
+
+    span#footerlogo {
+      @include grid(3);
+    }
+
+    section {
+      margin-left: inherit;
+    }
+
+    section#recentthoughts {
+      @include grid(3);
+    }
+  }
 }
