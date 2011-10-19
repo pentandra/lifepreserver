@@ -32,16 +32,16 @@ $less-outer-margin: 34px;
     font-size: 13px;
     line-height: 33px;
     @include grid(3);
+    text-align: center;
 
     ul li {
-
-      width: 25%;
-      text-align: center;
+      display: inline;
+      float: none;
 
       a {
         color: $pentandra-white !important;
-        padding: 0;
-        display: block;
+        padding: 0 5px;
+        display: inline-block;
 
         &:hover, &:focus {
           background-color: $pentandra-red;
