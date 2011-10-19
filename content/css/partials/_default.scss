@@ -15,6 +15,7 @@ $less-outer-margin: 48px;
 
 a.button {
   float: left;
+  margin-top: 6px;
 }
 
 header {
@@ -157,7 +158,6 @@ section#researchexperience {
 }
 
 section#meetgeungle {
-  @extend .clearfix;
 
   div#geunglelogo {
     @include grid(3);

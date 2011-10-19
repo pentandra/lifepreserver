@@ -17,6 +17,7 @@ $less-outer-margin: 34px;
 
   a.button {
     float: none;
+    margin-top: auto;
   }
 
   header {
@@ -117,7 +118,17 @@ $less-outer-margin: 34px;
     }
   }
 
+  section#meetgeungle {
+
+    div#geunglelogo {
+      padding: 0;
+      float: none;
+    }
+  }
+
   footer {
+    margin-top: $grid-height/2;
+
     div.content {
       padding: 33px 34px 60px;
     }

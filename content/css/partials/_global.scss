@@ -72,7 +72,6 @@ a.button {
   color: $pentandra-white;
   display: block;
   cursor: pointer;
-  margin-top: 6px;
   @include grid(3);
   @include border-radius(12px, 12px);
   
