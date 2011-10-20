@@ -14,7 +14,6 @@ $less-outer-margin: 48px;
 }
 
 a.button {
-  float: left;
   margin-top: 6px;
 }
 
@@ -66,7 +65,9 @@ nav {
     border-top: 5px solid $pentandra-brown;
 
     p {
-      margin-left: ($less-column-width+$less-gutter-width)*3;
+      float: right;
+      @include grid(7);
+      margin-top: -6px;
     }
 
     h3 {
@@ -82,6 +83,7 @@ section#zeugma {
   p {
     font-style: italic;
     font-size: 22px;
+    margin: 22px 0;
   }
 
   h2 {
@@ -160,10 +162,10 @@ section#researchexperience {
 section#meetgeungle {
 
   div#geunglelogo {
-    @include grid(3);
-    float: right;
-    padding: 0 0 60px;
-    height: 76px;
+      background: transparent url('/images/geungle-logo.png') no-repeat scroll center top;
+      @include grid(7);
+      height: 186px;
+      margin: 0 0 60px 252px + $less-gutter-width;
   }
 }
 
@@ -219,7 +221,6 @@ footer {
 
     .email {
       background: transparent url('/images/email.png') no-repeat top center;
-      margin: 3px 10px;
       width: 24px;
     }
 

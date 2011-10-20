@@ -16,7 +16,6 @@ $less-outer-margin: 34px;
   } 
 
   a.button {
-    float: none;
     margin-top: auto;
   }
 
@@ -58,6 +57,9 @@ $less-outer-margin: 34px;
 
       p {
         margin-left: 0;
+        margin-top: inherit;
+        @include grid(3);
+        float: none;
       }
 
     }
@@ -122,7 +124,10 @@ $less-outer-margin: 34px;
 
     div#geunglelogo {
       padding: 0;
-      float: none;
+      background: transparent url('/images/geungle-logo_3col.png') no-repeat scroll center top;
+      @include grid(3);
+      height: 76px;
+      margin-left: 0;
     }
   }
 
