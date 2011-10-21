@@ -98,6 +98,8 @@ $less-outer-margin: 34px;
 
   section#researchexperience {
 
+    counter-reset: section;
+
     div.wrapper {
       height: auto;
       margin-bottom: $grid-height/2;
@@ -106,6 +108,11 @@ $less-outer-margin: 34px;
         float: none;
         text-align: left;
         margin: inherit;
+
+        &:before {
+          counter-increment: section;
+          content: counter(section) ". ";
+        }
       }
 
       p {
