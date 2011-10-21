@@ -40,12 +40,18 @@ nav {
     float: left;
 
     a {
+      color: $pentandra-brown;
       padding: 7px 15px;
     
       &:hover, &:focus {
         background-color: $pentandra-red;
         @include border-radius(12px, 12px);
-        color: $pentandra-white;
+        color: $pentandra-white !important;
+        text-decoration: none;
+      }
+
+      &:visited {
+        color: $pentandra-brown;
       }
     }
   }

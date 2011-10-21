@@ -40,6 +40,14 @@ body {
   color: $font-color;
 }
 
+a {
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+}
+
 // Selection colors (easy to forget)
 // @include selection-color(unquote("rgb(255,255,158)"));
 
@@ -82,6 +90,7 @@ a.button {
 
   &:hover {
     background-color: #6e5643;
+    text-decoration: none;
   }
 
   &:focus {
