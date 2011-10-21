@@ -42,15 +42,11 @@ nav {
     a {
       padding: 7px 15px;
     
-     &:hover, &:focus {
-       background-color: $pentandra-brown;
-       @include border-radius(12px, 12px);
-       color: $pentandra-white;
-     }
-
-     &:focus {
-       background-color: $pentandra-red;
-     }
+      &:hover, &:focus {
+        background-color: $pentandra-red;
+        @include border-radius(12px, 12px);
+        color: $pentandra-white;
+      }
     }
   }
 }

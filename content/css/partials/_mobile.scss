@@ -43,7 +43,6 @@ $less-outer-margin: 34px;
         display: inline-block;
 
         &:hover, &:focus {
-          background-color: $pentandra-red;
           @include border-radius(0, 0);
         }
       }
