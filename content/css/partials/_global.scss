@@ -57,7 +57,7 @@ header {
   top: 0;
   left: 0;
   background-color: $pentandra-white;
-  @include box-shadow($pentandra-brown 0 0 4px);
+//  @include box-shadow($pentandra-brown 0 0 4px);
   border-bottom: 33px solid $pentandra-brown;
 
 }
