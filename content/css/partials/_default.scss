@@ -185,7 +185,7 @@ footer {
   }
 
   section {
-    margin-left: $less-gutter-width;
+    margin: 0 0 $grid-height $less-gutter-width;
   }
 
   section#recentthoughts {
@@ -194,6 +194,7 @@ footer {
 
   section#feelingsocial {
     @include grid(2);
+
     ul {
       list-style: none;
       margin: 0;
@@ -206,7 +207,7 @@ footer {
     }
 
     a {
-      margin-right: 10px;
+      margin-right: 22px;
     }
 
     .fb {
