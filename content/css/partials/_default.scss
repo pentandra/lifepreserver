@@ -66,6 +66,10 @@ nav {
     padding-bottom: $grid-height/2;
     border-top: 5px solid $pentandra-brown;
 
+    &:first-child {
+      border-top: 0 none;
+    }
+
     p {
       float: right;
       @include grid(7);
@@ -80,7 +84,6 @@ nav {
 
 section#zeugma {
   padding-top: $grid-height;
-  border: 0;
 
   p {
     font-style: italic;
