@@ -32,9 +32,10 @@ compile '/js/*/' do
   # don't compile javascript
 end
 
-compile '/' do
+compile '/*' do
   filter :erb
   layout 'default'
+#  filter :relativize_paths, :type => :html
   filter :rubypants
 end
 
