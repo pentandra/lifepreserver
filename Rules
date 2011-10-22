@@ -17,36 +17,6 @@ Compass.add_project_configuration 'compass/config.rb'
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
 
-compile '/css/partials/_*/' do
-  # don't compile partials
-end
-
-compile '/css/*/' do
-  filter :sass, Compass.sass_engine_options
-end
-
-compile '/static/*' do
-end
-
-compile '/js/*/' do
-  # don't compile javascript
-end
-
-compile '/*' do
-  filter :erb
-  layout 'default'
-#  filter :relativize_paths, :type => :html
-  filter :rubypants
-end
-
-compile '*' do
-  if item.binary?
-    # don’t filter binary items
-  else
-    filter :erb
-    layout 'default'
-  end
-end
 
 ### Routing Rules ###################################################
 
@@ -81,6 +51,39 @@ route '*' do
   else
     # Write item with identifier /foo/ to /foo/index.html
     item.identifier + 'index.html'
+  end
+end
+
+### Compilation Rules ###################################################
+
+compile '/css/partials/_*/' do
+  # don't compile partials
+end
+
+compile '/css/*/' do
+  filter :sass, Compass.sass_engine_options
+end
+
+compile '/static/*' do
+end
+
+compile '/js/*/' do
+  # don't compile javascript
+end
+
+compile '/*' do
+  filter :erb
+  layout 'default'
+#  filter :relativize_paths, :type => :html
+  filter :rubypants
+end
+
+compile '*' do
+  if item.binary?
+    # don’t filter binary items
+  else
+    filter :erb
+    layout 'default'
   end
 end
 
