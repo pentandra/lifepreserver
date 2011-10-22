@@ -15,6 +15,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 
 	<link rel="stylesheet" href="/css/style.css">
+  <link rel="alternate" type="application/atom+xml" href="http://feeds.feedburner.com/pentandra" />
 
 	<script src="/js/libs/modernizr-2.0.6.min.js"></script>
 </head>
@@ -27,7 +28,7 @@
       <nav>
         <ul>
           <li><a href="/company/">Company</a></li>
-          <li><a href="http://blog.pentandra.com/">Blog</a></li>
+          <li><a href="/blog/">Blog</a></li>
           <li><a href="/products/">Products</a></li>
           <li><a href="/research/">Research</a></li>
         </ul>
@@ -60,17 +61,19 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="/js/libs/jquery-1.6.2.min.js"><\/script>')</script>
 
-<!-- scripts concatenated and minified via ant build script-->
+<!-- scripts concatenated and minified via build script-->
 <script src="/js/plugins.js"></script>
 <script src="/js/script.js"></script>
 <!-- end scripts-->
 
+<% if $add_google_analytics then %>
 <script>
 	var _gaq=[['_setAccount','UA-26002603-1'],['_trackPageview']];
 	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
 	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
 	s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
+<% end %>
 
 <!--[if lt IE 7 ]>
 	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>

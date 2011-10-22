@@ -1,0 +1,9 @@
+<article id="post">
+
+  <h1><%= @item[:title] %></h1>
+
+  <p id="permalink"><%= @config[:base_url] + @item.path %></p>
+  <%= @item.html_dateline(true) %>
+  <%= yield %>
+
+</article>

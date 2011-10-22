@@ -18,6 +18,18 @@ Compass.add_project_configuration 'compass/config.rb'
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
 
+preprocess do
+  sorted_articles.each do |p|
+    if not p[:excerpt] then
+      # Extract the excerpt from the body, if not already given explicitly.
+      p[:excerpt] = p.raw_content.split("\n\n")[0]
+    end
+
+    if p[:excerpt] then
+      p[:excerpt] = Nanoc3::Filters::Kramdown.new.run(p[:excerpt])
+    end
+  end
+end
 
 ### Routing Rules ###################################################
 
@@ -119,11 +131,11 @@ compile '/posts/*/' do
     if $add_disqus_comments then
       layout 'disqus_comments'
     end
-    layout 'blog'
+    layout 'default'
   end
 end
 
-compile '/posts/*/' :rep => :rss_content do
+compile '/posts/*/', :rep => :rss_content do
   filter :kramdown
   filter :absolutify # make links/images all absolute for RSS readers
 end
