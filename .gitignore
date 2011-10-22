@@ -3,3 +3,4 @@ output
 tmp
 nanoc-autocompile.log
 *.swp
+settings.rb
