@@ -4,6 +4,7 @@
 
   <p id="permalink"><%= @config[:base_url] + @item.path %></p>
   <%= @item.html_dateline(true) %>
+  <p>Tags: <%= tags_for(@item) %></p>
   <%= yield %>
 
 </article>
