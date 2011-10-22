@@ -46,6 +46,7 @@ data_sources:
     type: static
     items_root: /static/
 
+# Base URL, used for the Atom feed
 base_url: http://pentandra.com/
 
 # Configuration for the “watch” command, which watches a site for changes and
