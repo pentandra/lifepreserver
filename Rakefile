@@ -26,6 +26,10 @@ task :build_production do
   Rake::Task["optimize_pngs"].invoke
 end
 
+task :stage do
+  system('rake', 'deploy:rsync', 'config=staging')
+end
+
 task :publish do
   exit unless system("scripts/confirm.sh")
   Rake::Task["build_production"].invoke
