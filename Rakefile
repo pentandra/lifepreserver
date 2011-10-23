@@ -20,6 +20,11 @@ task :optimize_pngs do
   system('find', 'output', '-name', '*.png', '-exec', 'optipng', '-o7', '{}', ';')
 end
 
+task :build_staging do
+  system('cp', 'settings/staging.rb', 'settings.rb')
+  Rake::Task["rebuild"].invoke
+end
+
 task :build_production do
   system('cp', 'settings/prd.rb', 'settings.rb')
   Rake::Task["rebuild"].invoke
@@ -27,6 +32,7 @@ task :build_production do
 end
 
 task :stage do
+  Rake::Task["build_staging"].invoke
   system('rake', 'deploy:rsync', 'config=staging')
 end
 
