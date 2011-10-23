@@ -131,4 +131,14 @@ footer {
   div.content {
     background-color: $footer-background;
   }
+
+  div.post {
+    a {
+      color: $pentandra-white;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
 }

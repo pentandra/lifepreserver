@@ -54,7 +54,7 @@
         <% @site.sorted_articles[0, 4].each do |post| %>
         <div class="post"> 
           <%= link_to(post[:title], post.path) %>
-          <span><%= post[:created_at] %></span>
+          <small><%= post[:created_at] %></small>
         </div>
         <% end %>
         
