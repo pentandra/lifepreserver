@@ -128,9 +128,6 @@ compile '/posts/*/' do
   if $include_drafts or @item[:published] then
     filter :kramdown
     layout 'post'
-    if $add_disqus_comments then
-      layout 'disqus_comments'
-    end
     layout 'default'
   end
 end

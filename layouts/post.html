@@ -1,10 +1,25 @@
 <article id="post">
 
   <h1><%= @item[:title] %></h1>
+  <h2>Written at: <%= @item[:created_at] %></h2>
 
   <p id="permalink"><%= @config[:base_url] + @item.path %></p>
-  <%= @item.html_dateline(true) %>
   <p>Tags: <%= tags_for(@item) %></p>
+
   <%= yield %>
 
 </article>
+
+<div id="comments">
+  <% if $add_livefyre_comments then %>
+  <!-- START: Livefyre Embed -->
+  <script type='text/javascript' src='http://www.livefyre.com/wjs/v1.0/javascripts/livefyre_init.js'></script>
+  <script type='text/javascript'>
+    var fyre = LF({
+      site_id: 291113,
+      version: '1.0'
+    });
+  </script>
+  <!-- END: Livefyre Embed -->
+  <% end %>
+</div>
