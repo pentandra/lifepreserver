@@ -50,6 +50,14 @@
       </section>
       <section id="recentthoughts">
         <h5>Recent Thoughts</h5>
+        
+        <% @site.sorted_articles[0, 4].each do |post| %>
+        <div class="post"> 
+          <%= link_to(post[:title], post.path) %>
+          <span><%= post[:created_at] %></span>
+        </div>
+        <% end %>
+        
       </section>
       <span id="footerlogo" onclick="location.href='http://pentandra.com';">
         &#169; Pentandra Research Solutions, Inc.

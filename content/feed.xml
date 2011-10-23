@@ -2,15 +2,14 @@
 feed_url: http://feeds.feedburner.com/pentandra
 ---
 <%=
+
 params = {
-  :title => "pentandra.com",
-  :author_name => "Pentandra Research Solutions, Inc.",
+  :title => "Pentandra Blog",
+  :author_name => "Pentandra Research Solutions",
   :author_uri => "http://pentandra.com/",
-  :articles => all_articles,
-  :limit => 9999999,
-  :excerpt_proc => lambda { |article| article[:excerpt] },
   :content_proc => lambda { |article| article.compiled_content(:rep => :rss_content) }
 }
 
-atom_feed(params)
+atom_feed( params )
+
 %>

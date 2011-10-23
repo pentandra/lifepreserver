@@ -2,23 +2,11 @@
 title: Blog
 ---
 
-<h2>Our Blog</h1>
+<h2>Recent Thoughts</h2>
 
-<%
-html = ""
-first = true
-all_articles.map { |a| a[:created_at].year }.uniq.each do |year|
-  published_year = false
-
-  all_articles.select { |a| a[:created_at].year == year }.each do |post|
-    html += "<hr />" if not first
-      first = false
-
-    html += "<h1 class=\"year\">#{year}</h1>" if not published_year
-      published_year = true
-
-    html += post.html_summary
-  end
-end
-%>
-<%=html%>
+<% @site.sorted_articles[0, $recent_posts_limit].each do |post| %>
+<div class="post">
+  <%= link_to(post[:title], post.path) %>
+  <span><%= post[:created_at] %></span>
+</div>
+<% end %>

@@ -71,7 +71,7 @@ end
 
 route '/posts/*/' do
   if $include_drafts or @item[:published] then
-    '/posts/' + @item.slug + '/index.html'
+    '/blog/' + @item.slug + '/index.html'
   end
 end
 
@@ -120,7 +120,6 @@ end
 
 compile '/posts/' do
   filter :erb
-  layout 'item'
   layout 'default'
 end
 
