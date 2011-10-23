@@ -3,7 +3,7 @@
   <h1><%= @item[:title] %></h1>
   <h2>Written at: <%= @item[:created_at] %></h2>
 
-  <p id="permalink"><%= @config[:base_url] + @item.path %></p>
+  <p id="permalink"><a href="<%= url_for(@item) %>"><%= url_for(@item) %></a></p>
   <p>Tags: <%= tags_for(@item) %></p>
 
   <%= yield %>
