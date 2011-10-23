@@ -32,13 +32,11 @@ task :build_production do
 end
 
 task :stage do
-  Rake::Task["build_staging"].invoke
   system('rake', 'deploy:rsync', 'config=staging')
 end
 
 task :publish do
   exit unless system("scripts/confirm.sh")
-  Rake::Task["build_production"].invoke
   system('rake', 'deploy:rsync', 'config=public')
 end
 
