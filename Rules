@@ -106,7 +106,7 @@ end
 
 compile '/js/*/' do
   if $use_minified_js then
-    filter :uglifyjs
+    filter :uglify_js
   end
 end
 
