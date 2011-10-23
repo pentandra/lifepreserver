@@ -9,5 +9,5 @@ gem 'nanoc' # for compiling the site
 gem 'nanoc3' # for compiling the site
 gem 'nokogiri' # for parsing HTML
 gem 'rainpress' # for compact CSS
-gem 'rdiscount' # for fast Markdown
 gem 'rubypants' # for pretty typography
+gem 'uglifier' # for compact javascript
