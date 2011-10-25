@@ -26,18 +26,18 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.89818548"
+     inkscape:zoom="0.88709677"
      inkscape:cx="496"
-     inkscape:cy="1362.5769"
+     inkscape:cy="1670.7004"
      inkscape:document-units="px"
-     inkscape:current-layer="layer4"
+     inkscape:current-layer="g3699"
      showgrid="true"
      inkscape:window-width="1309"
      inkscape:window-height="748"
-     inkscape:window-x="50"
-     inkscape:window-y="-10"
+     inkscape:window-x="57"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
-     showguides="true"
+     showguides="false"
      inkscape:guide-bbox="true"
      showborder="true"
      inkscape:showpageshadow="false"
@@ -982,7 +982,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1437,26 +1437,17 @@
          inkscape:export-ydpi="89.986961" />
       <g
          id="g6584"
-         transform="translate(17.331726,-9.477795)"
+         transform="translate(17.331731,-9.477795)"
          inkscape:export-filename="/home/chris/devel/pentandra/lifepreserver/static/images/rss.png"
          inkscape:export-xdpi="89.986961"
          inkscape:export-ydpi="89.986961">
-        <rect
-           ry="3"
-           rx="3"
-           y="1742.6667"
-           x="902.6059"
-           height="24.216215"
-           width="24"
-           id="rect6568"
-           style="fill:#ffffff;fill-opacity:1;stroke:none" />
         <g
-           style="fill:#544233"
-           transform="translate(-0.03632232,-0.16518536)"
+           style="fill:#ffffff"
+           transform="matrix(1.4538194,0,0,1.4538194,-415.13527,-796.46632)"
            id="g6579">
           <path
              sodipodi:type="arc"
-             style="fill:#544233;fill-opacity:1;stroke:none"
+             style="fill:#ffffff;fill-opacity:1;stroke:none"
              id="path6572"
              sodipodi:cx="886.13928"
              sodipodi:cy="1789.1318"
@@ -1465,40 +1456,27 @@
              d="m 889.20352,1789.1318 c 0,1.6924 -1.37191,3.0643 -3.06424,3.0643 -1.69233,0 -3.06423,-1.3719 -3.06423,-3.0643 0,-1.6923 1.3719,-3.0642 3.06423,-3.0642 1.69233,0 3.06424,1.3719 3.06424,3.0642 z"
              transform="matrix(0.81586433,0,0,0.81586433,185.93006,300.9939)" />
           <path
-             style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#544233;fill-opacity:1;stroke:none;stroke-width:0.8946833;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
+             style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.8946833;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
              d="m 906.39949,1752.5767 0,3.0386 1.62868,0 c 3.29302,0 5.97278,2.5749 5.97278,5.868 l 0,1.6994 3.03879,0 0,-1.6994 c 0,-4.9144 -4.09724,-8.9066 -9.01157,-8.9066 z"
              id="path6575"
              inkscape:connector-curvature="0"
              sodipodi:nodetypes="ccssccssc" />
           <path
-             style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#544233;fill-opacity:1;stroke:none;stroke-width:0.8946833;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
+             style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.8946833;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
              d="m 906.39949,1746.7087 0,3.0386 1.62868,0 c 6.53963,0 11.84078,5.1964 11.84078,11.736 l 0,1.6994 3.03878,0 0,-1.6994 c 0,-8.1609 -6.71862,-14.7746 -14.87956,-14.7746 z"
              id="path6577"
              inkscape:connector-curvature="0"
              sodipodi:nodetypes="ccssccssc" />
         </g>
       </g>
-      <g
-         id="g6710"
-         transform="matrix(0.66666667,0,0,0.66666667,289.93849,571.41814)"
-         inkscape:transform-center-x="12"
-         inkscape:transform-center-y="8.0035161"
+      <path
+         inkscape:connector-curvature="0"
+         id="path5340"
+         style="font-size:35.40473938px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:11.2901783px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
+         d="m 880.04329,1755.5566 c 1.91278,1.0768 4.33083,1.6324 7.0015,1.6324 3.13985,0 5.59399,-0.5556 8.62556,-2.0144 l -0.75789,-2.0145 c -3.21203,1.4588 -5.26917,1.9104 -7.90376,1.9104 -2.23759,0 -4.15037,-0.4169 -5.70226,-1.2852 -3.10375,-1.7366 -4.98045,-5.0014 -4.98045,-8.6136 0,-5.5571 4.47519,-9.8986 10.17745,-9.8986 5.44962,0 9.31128,3.5078 9.31128,8.4746 0,3.0564 -1.62407,5.9739 -3.32031,5.9739 -0.64962,0 -0.97443,-0.382 -0.97443,-1.1114 0,-0.3473 0.0722,-1.0073 0.14436,-1.5976 l 0.97443,-7.8843 -2.38195,0 -0.18045,1.6671 c -1.15488,-1.3545 -2.41804,-1.945 -4.25864,-1.945 -3.82556,0 -6.74888,2.9175 -6.74888,6.8076 0,3.6122 2.59851,6.2865 6.06316,6.2865 1.80451,0 2.9594,-0.5557 4.4391,-2.084 0.46917,1.3546 1.33534,2.0492 2.59849,2.0492 3.13985,0 5.81053,-3.8552 5.81053,-8.3357 0,-5.9044 -4.94437,-10.3849 -11.4406,-10.3849 -7.07368,0 -12.5594,5.2446 -12.5594,11.9826 0,4.3415 2.30978,8.301 6.06316,10.3849 m 5.23309,-5.8697 c -2.02106,0 -3.46467,-1.6671 -3.46467,-3.9595 0,-2.6049 1.84061,-4.6193 4.22256,-4.6193 2.05713,0 3.53684,1.4935 3.53684,3.6468 0,2.6397 -2.02106,4.932 -4.29473,4.932"
          inkscape:export-filename="/home/chris/devel/pentandra/lifepreserver/static/images/email.png"
          inkscape:export-xdpi="89.986961"
-         inkscape:export-ydpi="89.986961">
-        <rect
-           y="1742.6667"
-           x="876.0625"
-           height="24"
-           width="36"
-           id="rect6603"
-           style="fill:#ffffff;fill-opacity:1;stroke:none" />
-        <path
-           id="path6694"
-           d="m 877.59375,1742.6562 -1.53125,0 0,0.031 0,1.3125 11.5,9.75 -11.5,11.5 0,1.4062 1.4375,0 11.5625,-11.5937 4.34375,3.6875 0.65625,0.5625 0.65625,-0.5625 4.34375,-3.6875 11.5625,11.5937 1.4375,0 0,-1.4062 -11.5,-11.5 11.5,-9.75 0,-1.3125 0,-0.031 -1.53125,0 -16.46875,14.0313 -16.46875,-14.0313 z"
-           style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#544233;fill-opacity:1;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
-           inkscape:connector-curvature="0" />
-      </g>
+         inkscape:export-ydpi="89.986961" />
     </g>
     <rect
        style="fill:#544233;fill-opacity:1;stroke:none"
@@ -2026,7 +2004,7 @@
            x="132"
            y="204.11874"
            style="font-size:28px;line-height:114.99999762%;letter-spacing:0.5px;fill:#544233" /></flowRegion><flowPara
-         id="flowPara3406-4">We are a small group of people devoted to promoting quality research and facilitating research collaboration.</flowPara></flowRoot>    <g
+         id="flowPara3406-4">We are a small group of people devoted to promoting quality research and facilitating collaboration throughout the research process. </flowPara></flowRoot>    <g
        transform="translate(14.0625,761.9047)"
        id="g11574"
        style="display:inline">
@@ -2098,21 +2076,21 @@
        xml:space="preserve"
        style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Function Pro;-inkscape-font-specification:Function Pro"
        x="598.49652"
-       y="632.16962"
+       y="592.16962"
        id="text12784"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan12786"
          x="598.49652"
-         y="632.16962">Phone: 435.294.2964</tspan></text>
+         y="592.16962">Phone: 435.294.2964</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text12788"
-       y="660.16968"
+       y="620.16968"
        x="598.49652"
        style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Function Pro;-inkscape-font-specification:Function Pro"
        xml:space="preserve"><tspan
-         y="660.16968"
+         y="620.16968"
          x="598.49652"
          id="tspan12790"
          sodipodi:role="line">Email: hello@pentandra.com</tspan></text>
@@ -2138,11 +2116,7 @@
          sodipodi:role="line"
          x="600.0625"
          y="523.80951"
-         id="tspan10090-0-0">CONTACT US, WE'RE </tspan><tspan
-         sodipodi:role="line"
-         x="600.0625"
-         y="558.80951"
-         id="tspan5240">FRIENDLY</tspan></text>
+         id="tspan5240">GIVE US A HOLLER!</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot3458"
@@ -2189,17 +2163,6 @@
          y="1285.7144"
          x="48.0625"
          sodipodi:role="line">THE MOTHER OF INVENTION</tspan></text>
-    <text
-       sodipodi:linespacing="125%"
-       id="text3482"
-       y="584.62262"
-       x="598.56848"
-       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:1px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;fill-opacity:1;stroke:none;display:inline;font-family:Function Pro;-inkscape-font-specification:Function Pro"
-       xml:space="preserve"><tspan
-         id="tspan3484"
-         y="584.62262"
-         x="598.56848"
-         sodipodi:role="line">(at least we try to be)</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text3498"
@@ -2416,7 +2379,7 @@
        xml:space="preserve"
        id="flowRoot4681"
        style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
-       transform="translate(552.0615,451.18655)"><flowRegion
+       transform="matrix(0.99910793,0,0,1,552.10432,451.18675)"><flowRegion
          id="flowRegion4683"><rect
            id="rect4685"
            width="474.28958"
@@ -2434,16 +2397,16 @@
          sodipodi:role="line"
          id="tspan5202"
          x="48.0625"
-         y="285.71429">Our Mission</tspan></text>
+         y="285.71429">Passionate</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text5204"
        y="310"
-       x="48.0625"
+       x="324.0625"
        style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:1px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
        xml:space="preserve"><tspan
          y="310"
-         x="48.0625"
+         x="324.0625"
          id="tspan5206"
          sodipodi:role="line">Quality research or bust</tspan></text>
     <text
@@ -2456,18 +2419,18 @@
          y="285.71429"
          x="324.0625"
          id="tspan5210"
-         sodipodi:role="line">We're Small</tspan></text>
+         sodipodi:role="line">Quality over quantity</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:1px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
-       x="324.0625"
-       y="310"
+       x="48.0625"
+       y="380.95239"
        id="text5212"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan5214"
-         x="324.0625"
-         y="310">Two strong and loving it</tspan></text>
+         x="48.0625"
+         y="380.95239">We can move fast</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text5216"
@@ -2478,7 +2441,7 @@
          y="357"
          x="48.0625"
          id="tspan5218"
-         sodipodi:role="line">By Us, For Us (And You)</tspan></text>
+         sodipodi:role="line">Small and focused</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:1px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
@@ -2511,7 +2474,7 @@
          sodipodi:role="line"
          id="tspan5230"
          x="324.0625"
-         y="357">Values</tspan></text>
+         y="357">We eat our own dogfood</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text5232"
@@ -2522,7 +2485,7 @@
          y="380.95239"
          x="324.0625"
          id="tspan5234"
-         sodipodi:role="line">Yes,we have them</tspan></text>
+         sodipodi:role="line">This is for us, too!</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:1px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro Bold"
@@ -2534,6 +2497,61 @@
          id="tspan5238"
          x="48.0625"
          y="428.57141" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:1px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro Bold"
+       x="48.0625"
+       y="428.57141"
+       id="text5242"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5244"
+         x="48.0625"
+         y="428.57141">Committed</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text5246"
+       y="428.57141"
+       x="324.0625"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:1px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro Bold"
+       xml:space="preserve"><tspan
+         y="428.57141"
+         x="324.0625"
+         id="tspan5248"
+         sodipodi:role="line">Outstanding advisors</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text5250"
+       y="310"
+       x="48.0625"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:1px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
+       xml:space="preserve"><tspan
+         y="310"
+         x="48.0625"
+         id="tspan5252"
+         sodipodi:role="line">We love what we do</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:1px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
+       x="324.0625"
+       y="453"
+       id="text5254"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5256"
+         x="324.0625"
+         y="453">We are so grateful</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text5258"
+       y="453"
+       x="48.0625"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:1px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
+       xml:space="preserve"><tspan
+         y="453"
+         x="48.0625"
+         id="tspan5260"
+         sodipodi:role="line">We're here to stay</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"

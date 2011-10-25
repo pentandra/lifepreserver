@@ -27,17 +27,17 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="309.5"
-     inkscape:cy="1733.8532"
+     inkscape:cx="314"
+     inkscape:cy="1706.7847"
      inkscape:document-units="px"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="layer4"
      showgrid="true"
      inkscape:window-width="1309"
      inkscape:window-height="748"
      inkscape:window-x="57"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     showguides="true"
+     showguides="false"
      inkscape:guide-bbox="true"
      showborder="true"
      inkscape:showpageshadow="false"
@@ -751,7 +751,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1179,16 +1179,16 @@
              sodipodi:cy="1789.1318"
              sodipodi:rx="3.064235"
              sodipodi:ry="3.064235"
-             d="m 889.20352,1789.1318 c 0,1.6924 -1.37191,3.0643 -3.06424,3.0643 -1.69233,0 -3.06423,-1.3719 -3.06423,-3.0643 0,-1.6923 1.3719,-3.0642 3.06423,-3.0642 1.69233,0 3.06424,1.3719 3.06424,3.0642 z"
+             d="m 889.20352,1789.1318 a 3.064235,3.064235 0 1 1 -6.12847,0 3.064235,3.064235 0 1 1 6.12847,0 z"
              transform="matrix(0.81586433,0,0,0.81586433,185.93006,300.9939)" />
           <path
-             style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#544233;fill-opacity:1;stroke:none;stroke-width:0.89468329999999996;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
+             style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#544233;fill-opacity:1;stroke:none;stroke-width:0.8946833;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
              d="m 906.39949,1752.5767 0,3.0386 1.62868,0 c 3.29302,0 5.97278,2.5749 5.97278,5.868 l 0,1.6994 3.03879,0 0,-1.6994 c 0,-4.9144 -4.09724,-8.9066 -9.01157,-8.9066 z"
              id="path6575"
              inkscape:connector-curvature="0"
              sodipodi:nodetypes="ccssccssc" />
           <path
-             style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#544233;fill-opacity:1;stroke:none;stroke-width:0.89468329999999996;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
+             style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#544233;fill-opacity:1;stroke:none;stroke-width:0.8946833;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
              d="m 906.39949,1746.7087 0,3.0386 1.62868,0 c 6.53963,0 11.84078,5.1964 11.84078,11.736 l 0,1.6994 3.03878,0 0,-1.6994 c 0,-8.1609 -6.71862,-14.7746 -14.87956,-14.7746 z"
              id="path6577"
              inkscape:connector-curvature="0"
@@ -1578,7 +1578,7 @@
     </g>
   </g>
   <g
-     style="display:inline"
+     style="display:none"
      inkscape:label="Front Page"
      id="layer3"
      inkscape:groupmode="layer">
@@ -1941,7 +1941,7 @@
          style="font-size:20px;font-style:oblique;font-variant:normal;font-weight:500;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;writing-mode:lr-tb;text-anchor:start;font-family:Function Pro;-inkscape-font-specification:Function Pro Medium Oblique">Breaking Research Boundaries</tspan></text>
   </g>
   <g
-     style="display:none"
+     style="display:inline"
      inkscape:label="Company"
      id="layer4"
      inkscape:groupmode="layer">

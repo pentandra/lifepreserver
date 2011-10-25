@@ -1,5 +1,5 @@
 ---
-title: Changing the Reward System for Genealogical Research
+title: Changing the Reward System of Genealogical Research
 kind: article
 author_name: Chris Chapman
 created_at: 2011-10-22

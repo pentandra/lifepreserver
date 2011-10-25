@@ -6,7 +6,10 @@ title: Blog
 
 <% @site.sorted_articles[0, $recent_posts_limit].each do |post| %>
 <div class="post">
-  <%= link_to(post[:title], post.path) %>
-  <span><%= post[:created_at] %></span>
+  <h3><%= link_to(post[:title], post.path) %></h3>
+  <h4><%= post[:created_at] %></h4>
+
+  <%= post[:excerpt] %>
+
 </div>
 <% end %>
