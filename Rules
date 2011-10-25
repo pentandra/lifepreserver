@@ -128,6 +128,8 @@ compile '/posts/*/' do
     filter :kramdown
     layout 'post'
     layout 'default'
+    filter :rubypants
+    filter :beautifier
   end
 end
 
@@ -143,6 +145,7 @@ compile '*' do
     filter :erb
     layout 'default'
     filter :rubypants
+    filter :beautifier
   end
 end
 
