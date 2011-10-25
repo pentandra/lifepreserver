@@ -1,9 +1,9 @@
 <article id="post">
 
-  <h1><%= @item[:title] %></h1>
-  <h2>Written at: <%= @item[:created_at] %></h2>
+  <h2><%= @item[:title] %></h2>
+  <h3>Written at: <%= @item[:created_at] %></h3>
 
-  <p id="permalink"><a href="<%= url_for(@item) %>"><%= url_for(@item) %></a></p>
+  <p id="permalink">Permalink: <a href="<%= url_for(@item) %>"><%= url_for(@item) %></a></p>
   <p>Tags: <%= tags_for(@item) %></p>
 
   <%= yield %>

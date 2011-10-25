@@ -103,8 +103,12 @@ a.button {
 
 }
 
-div#main section {
+div#main {
   @extend .clearfix;
+
+  section {
+    @extend .clearfix;
+  }
 }
 
 section#zeugma {

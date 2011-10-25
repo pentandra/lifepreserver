@@ -63,8 +63,8 @@ nav {
 
   section {
     margin-top: $grid-height;
-    padding-bottom: $grid-height/2;
-    border-top: 5px solid $pentandra-brown;
+    margin-bottom: $grid-height/2;
+    border-top: 1px solid $pentandra-brown;
 
     &:first-child {
       border-top: 0 none;
@@ -78,6 +78,33 @@ nav {
 
     h3 {
       text-transform: uppercase;
+    }
+  }
+
+  section.post {
+
+    h3 {
+      @include grid(7);
+      float: right;
+    }
+
+    div.details {
+      @include grid(3);
+      float: left;
+    }
+
+  }
+
+  a[rel~="tag"] {
+    color: white;
+    @extend .small;
+    background-color: $pentandra-red;
+    padding: 4px 7px;
+    @include border-radius(6px, 6px);
+    margin-right: 8px;
+
+    &:hover {
+      text-decoration: none;
     }
   }
 }
@@ -200,21 +227,6 @@ section#company {
   }
 }
 
-div.post {
-  @extend .clearfix;
-  margin: $grid-height / 2 0;
-  border-top: 1px solid $pentandra-brown;
-
-  h4 {
-    float: left;
-    @include grid(2);
-  }
-  h3, p {
-    float: right;
-    @include grid(8);
-  }
-}
-
 footer {
 
   div.content {
@@ -236,6 +248,21 @@ footer {
 
   section#recentthoughts {
     @include grid(5);
+
+    div.post {
+      @extend .clearfix;
+      margin: 3px 0;
+    }
+
+    span {
+      float: left;
+      font-size: 16px;
+    }
+
+    div.title {
+      @include grid(4);
+      float: right;
+    }
   }
 
   section#feelingsocial {

@@ -5,6 +5,9 @@ author_name: Chris Chapman
 created_at: 2011-10-22
 updated_at: 2011-10-22
 published: false
+tags:
+  - Essay
+  - Opinionated
 ---
 It seems that the going trend in the genealogical industry right now is, "Did
 you find a new ancestor today?" 
