@@ -29,6 +29,8 @@ preprocess do
       p[:excerpt] = Nanoc3::Filters::Kramdown.new.run(p[:excerpt])
     end
   end
+
+  create_tag_pages
 end
 
 ### Routing Rules ###################################################
@@ -135,7 +137,6 @@ end
 
 compile '/posts/*/', :rep => :rss_content do
   filter :kramdown
-  filter :absolutify # make links/images all absolute for RSS readers
 end
 
 compile '*' do
