@@ -1,4 +1,5 @@
 output
+output.diff
 .sass-cache
 tmp
 nanoc-autocompile.log

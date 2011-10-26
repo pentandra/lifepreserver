@@ -59,21 +59,13 @@ route '/404/' do
   '/404.html'
 end
 
-route '/feed/' do
-  '/private_feed.xml'
-end
-
-route '/feed/', :rep => :old_feed do
-  '/feed/index.html'
-end
-
-route '/posts/*/', :rep => :rss_content do
-  nil
+route '/blog/feed_private/' do
+  item.identifier + 'index.xml'
 end
 
 route '/posts/*/' do
-  if $include_drafts or @item[:published] then
-    '/blog/' + @item.slug + '/index.html'
+  if $include_drafts or item[:published] then
+    '/blog/' + item[:created_at].to_s + '/' + item.slug + '/index.html'
   end
 end
 
@@ -81,6 +73,9 @@ route '*' do
   if item.binary?
     # Write item with identifier /foo/ to /foo.ext
     item.identifier.chop + '.' + item[:extension]
+  elsif item[:is_partial] || item[:kind] == 'article'
+    # Don't output partial items
+    nil
   else
     # Write item with identifier /foo/ to /foo/index.html
     item.identifier + 'index.html'
@@ -112,11 +107,7 @@ compile '/js/*/' do
   end
 end
 
-compile '/feed/' do
-  filter :erb
-end
-
-compile '/feed/', :rep => :old_feed do
+compile '/blog/feed_private/' do
   filter :erb
 end
 
@@ -133,10 +124,6 @@ compile '/posts/*/' do
     filter :rubypants
     filter :beautifier
   end
-end
-
-compile '/posts/*/', :rep => :rss_content do
-  filter :kramdown
 end
 
 compile '*' do
