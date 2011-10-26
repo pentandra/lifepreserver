@@ -111,11 +111,6 @@ compile '/blog/feed_private/' do
   filter :erb
 end
 
-compile '/posts/' do
-  filter :erb
-  layout 'default'
-end
-
 compile '/posts/*/' do
   if $include_drafts or @item[:published] then
     filter :kramdown

@@ -59,11 +59,10 @@ nav {
 
 #main {
 
-  margin-top: 180px;
+  margin-top: $grid-height * 3;
 
   section {
-    margin-top: $grid-height;
-    margin-bottom: $grid-height/2;
+    margin: $grid-height 0 $grid-height/2;
     border-top: 1px solid $pentandra-brown;
 
     &:first-child {
@@ -95,6 +94,22 @@ nav {
 
   }
 
+  article#post {
+    margin: $grid-height 0 $grid-height/2;
+    @include grid(7);
+    float: right;
+
+    h3 {
+      @extend .small;
+      text-transform: uppercase;
+    }
+  }
+
+  aside {
+    @include grid(3);
+    float: left;
+  }
+
   a[rel~="tag"] {
     color: white;
     @extend .small;
@@ -106,6 +121,20 @@ nav {
     &:hover {
       text-decoration: none;
     }
+  }
+
+  article#post p:last-child:after {
+    content: "\25C2";
+    padding-left: 10px;
+    position: relative;
+
+//    Show the logo as the endmark - doesn't look very sharp.
+//    float: right;
+//    height: 16px;
+//    width: 16px;
+//    background: transparent url('/images/endmark.png') no-repeat bottom left;
+//    position: relative;
+//    content: "\0020";
   }
 }
 
