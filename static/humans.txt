@@ -3,10 +3,10 @@
 
 
 /* TEAM */
-  <your title>: <your name>
-  Site: 
-  Twitter: 
-  Location: 
+  Developer: Chris Chapman 
+  Site: http://pentandra.com
+  Twitter: @cd_chapman
+  Location: Logan, UT
 
 /* THANKS */
   Names (& URL): 
@@ -14,30 +14,39 @@
 /* SITE */
   Standards: HTML5, CSS3
   Components: Modernizr, jQuery
-  Software:
-  
+  Software: nanoc
 
-                                    
-                               -o/-                       
-                               +oo//-                     
-                              :ooo+//:                    
-                             -ooooo///-                   
-                             /oooooo//:                   
-                            :ooooooo+//-                  
-                           -+oooooooo///-                 
-           -://////////////+oooooooooo++////////////::    
-            :+ooooooooooooooooooooooooooooooooooooo+:::-  
-              -/+ooooooooooooooooooooooooooooooo+/::////:-
-                -:+oooooooooooooooooooooooooooo/::///////:-
-                  --/+ooooooooooooooooooooo+::://////:-   
-                     -:+ooooooooooooooooo+:://////:--     
-                       /ooooooooooooooooo+//////:-        
-                      -ooooooooooooooooooo////-           
-                      /ooooooooo+oooooooooo//:            
-                     :ooooooo+/::/+oooooooo+//-           
-                    -oooooo/::///////+oooooo///-          
-                    /ooo+::://////:---:/+oooo//:          
-                   -o+/::///////:-      -:/+o+//-         
-                   :-:///////:-            -:/://         
-                     -////:-                 --//:        
-                       --                       -:        
+
+      ................................................................      
+      qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq      
+      qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq/;;+;qqqqqqqqqqqqqq      
+      qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq/;+..       +/qqqqqqqqqqqq      
+      qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq/.                /qqqqqqqqqqq      
+      qqqqqqqqqqqqqqqqqqqqqq//;+;qqqqqqqq+                 ;qqqqqqqqqq      
+      qqqqqqqqqqqqqqq/;;+.       /qqqqqqq/                  ./qqqqqqqq      
+      qqqqqqqqqqqq.              +qqqqqqqq; ..+               /qqqqqqq      
+      qqqqqqqqqqqq                /qqqqqqqqqqq.               ./qqqqqq      
+      qqqqqqqqqqq/            .+;//qqqqqqqqqq;       .q;   .;/qqqqqqqq      
+      qqqqqqqqqqq/              +/qqqqqqqqqq;        /qq/;/qqqqqqqqqqq      
+      qqqqqqqqqqq;                ./qqqqqqq/        /qqqqqqqqqqqqqqqqq      
+      qqqqqqqqqqq;       .           ;qqqqqq/;+.   ;qqqqqqqqqqqqq/+ ./      
+      qqqqqqqqqqq+       q/;        +/qqqqqqqqqqq//qqqqqqqqqq/;.            
+      qqqqqqqqqqq;..... .qqqq/+    /qqqqqqqqqqqqqqqqqqqqqqqqq/.       +     
+      qqqqqqqqqqqqqqqqqqqqqqqqq/;;qqqqqqqqqqqqqqqqqqqq;;;;;;///+      ;/+   
+      qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq                ;//;  
+      qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq/                ;////.
+      qqqqqqqqqqq/;//////qqqqqq/;/qqqqqqqqqqqqqqqqqqq/                ;//// 
+      qqqqqqqqqq/       +qqq/+    ;qqqqqqqqqqqqqqqqqq/;+++++++..      ;//+  
+      qqqqqqqqqq/       ;/+        +/qqqqqqqqqqqqqqqqqqqqqqqq/+       ;;    
+      qqqqqqqqqq;                   +qqqqqqqqqq/;;/qqqqqqqqqq;              
+      qqqqqqqqqq;                .;/qqqqqq/+.     +qqqqqqqqqqq/;.   ./      
+      qqqqqqqqqq+             .;/qqqqqqqqq/        /qqqqqqqqqqqqq/+;qq      
+      qqqqqqqqqq+            .;/qqqqqqqqqqq;       +qqq//qqqqqqqqqqqqq      
+      qqqqqqqqqq.               +qqqqqqqqqqq.       //.  ./qqqqqqqqqqq      
+      qqqqqqqqqq//+.            /qqqqqqq/;/q/               +/qqqqqqqq      
+      qqqqqqqqqqqqqqqq/;+.     /qqqqqqqq.                   +/qqqqqqqq      
+      qqqqqqqqqqqqqqqqqqqqq/;+/qqqqqqqq+                   /qqqqqqqqqq      
+      ////////////////////////////////;                  +////////////      
+                                        .+;////////////.                    
+                                              .+;////+                      
+                                                  .;+                       
