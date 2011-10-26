@@ -1,4 +1,4 @@
 #!/bin/sh
 
-jp2a --width=80 --invert --chars="   .+;/qpQ" ../static/images/logo.jpg >> ../static/humans.txt
+jp2ajp2a --width=70 --invert --chars="   .+;/oqQ" ../static/images/logo.jpg >> ../static/humans.txt
 
