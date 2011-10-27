@@ -35,10 +35,10 @@
       <h1><a href="/" class="ir">Pentandra Research Solutions</a></h1>
       <nav>
         <ul>
-          <li><a href="/company/">Company</a></li>
-          <li><a href="/blog/">Blog</a></li>
-          <li><a href="/products/">Products</a></li>
-          <li><a href="/research/">Research</a></li>
+          <li><%= link_to('Company',   '/company/') %></li>
+          <li><%= link_to('Blog',      '/blog/') %></li>
+          <li><%= link_to('Products',  '/products/') %></li>
+          <li><%= link_to('Research',  '/research/') %></li>
         </ul>
       </nav>
     </div>
@@ -59,7 +59,7 @@
       <section id="recentthoughts">
         <h5>Recent Thoughts</h5>
         
-        <% @site.sorted_articles[0, 4].each do |post| %>
+        <% @site.publishing_articles[0, 4].each do |post| %>
         <div class="post"> 
           <div class="title"><%= link_to(post[:title], post.path) %></div>
           <span><%= post[:created_at] %></span>

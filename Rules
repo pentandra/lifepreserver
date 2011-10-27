@@ -23,7 +23,7 @@ preprocess do
   # Creates article excerpts if they are not given and runs them through
   # kramdown
   def generate_article_excerpts
-    sorted_articles.each do |p|
+    publishing_articles.each do |p|
       if not p[:excerpt] then
         # Extract the excerpt from the body, if not already given explicitly.
         p[:excerpt] = p.raw_content.split("\n\n")[0]
@@ -37,7 +37,7 @@ preprocess do
 
   # Creates in-memory tag pages from partial: layouts/tag.html
   def generate_tag_pages
-    tag_set(@items).each do |tag|
+    tag_set(publishing_articles).each do |tag|
       items << Nanoc3::Item.new(
         "<%= render('tag',  :tag => '#{tag}') %>",
         { :title => "Tag: #{tag}" },
@@ -47,8 +47,10 @@ preprocess do
     end
   end
 
+  # Creates in-memory blog archive pages from partial:
+  # layouts/blog_archive.html
   def generate_blog_archives
-    years = articles.map { |a| a[:created_at].year }.uniq
+    years = publishing_articles.map { |a| a[:created_at].year }.uniq
     years.each do |year|
       items << Nanoc3::Item.new(
         "<%= render('blog_archive', :year => #{year}) %>",
@@ -143,11 +145,11 @@ compile '*' do
   else
     filter :erb
 
-    if @item[:extension] == 'markdown'
+    if item[:extension] == 'markdown'
       filter :kramdown
     end
 
-    layout 'post' if @item[:kind] == 'article'
+    layout 'post' if item[:kind] == 'article'
     
     layout 'default'
     filter :rubypants

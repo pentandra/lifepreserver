@@ -6,7 +6,7 @@ title: Blog
   <h2>Our Thoughts</h2>
 </section>
 
-<% @site.sorted_articles[0, $recent_posts_limit].each do |post| %>
+<% @site.publishing_articles[0, $recent_posts_limit].each do |post| %>
 <section class="post">
   <h3><%= link_to(post[:title], post.path) %></h3>
   
