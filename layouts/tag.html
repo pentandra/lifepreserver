@@ -1,19 +1,5 @@
-<h1><%= tag.capitalize %> Articles</h1>
+<h1><%= tag %> Articles</h1>
 
 <% items_with_tag(tag).each do |article| %>
-
-<section class="article">
-  
-  <h1><%= article[:title] %></h1>
-
-  <p>
-    <%= link_to "read " + article[:title], article.path %>
-  </p>
-
-  <p>
-    Tags: <%= tags_for(article, :base_url => '/tags/') %>
-  </p>
-
-</section>
-
+  <%= render('excerpt', :article => article) %>
 <% end %>

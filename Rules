@@ -41,7 +41,7 @@ preprocess do
       items << Nanoc3::Item.new(
         "<%= render('tag',  :tag => '#{tag}') %>",
         { :title => "Tag: #{tag}" },
-        "/tags/#{tag}/",
+        "/tag/#{tag}/",
         :binary => false
       )
     end
@@ -125,7 +125,7 @@ compile '/css/*/' do
   end
 end
 
-compile '/static/*' do
+compile '/static/*/' do
   # don't compile
 end
 

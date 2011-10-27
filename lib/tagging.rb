@@ -70,6 +70,12 @@ module Nanoc3::Helpers
       ranks
     end
 
+    # Override parent method to add a slash on the end of the href
+    # Not sure if there is a better way to do this?
+    def link_for_tag(tag, base_url)
+        %[<a href="#{h base_url}#{h tag}/" rel="tag">#{h tag}</a>]
+    end
+
   end
 
 end

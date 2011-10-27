@@ -1,0 +1,21 @@
+<section class="post">
+
+  <h3>
+    <%= link_to(article[:title], article.path, { :title => "Full article", :class => "permalink" }) %>
+  </h3>
+
+  <div class="details">
+    <h4><%= article[:created_at] %></h4>
+    <h5><%= article[:author_name] %></h5>
+  </div>
+
+  <div class="excerpt">
+    <%= article[:excerpt] %>
+  </div>
+
+  <p>
+    <%= tags_for(article, { :separator => "", :base_url => "/tag/" }) %>
+  </p>
+
+</section>
+                                        
