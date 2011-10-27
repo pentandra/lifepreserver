@@ -30,7 +30,7 @@ preprocess do
     end
   end
 
-  create_tag_pages
+#  create_tag_pages
 end
 
 ### Routing Rules ###################################################
@@ -73,7 +73,7 @@ route '*' do
   if item.binary?
     # Write item with identifier /foo/ to /foo.ext
     item.identifier.chop + '.' + item[:extension]
-  elsif item[:is_partial] || item[:kind] == 'article'
+  elsif item[:is_partial] || item.is_post?
     # Don't output partial items
     nil
   else
@@ -111,21 +111,18 @@ compile '/blog/feed_private/' do
   filter :erb
 end
 
-compile '/posts/*/' do
-  if $include_drafts or @item[:published] then
-    filter :kramdown
-    layout 'post'
-    layout 'default'
-    filter :rubypants
-    filter :beautifier
-  end
-end
-
 compile '*' do
   if item.binary?
     # don’t filter binary items
   else
     filter :erb
+
+    if @item[:extension] == 'markdown'
+      filter :kramdown
+    end
+
+    layout 'post' if @item.is_post?
+    
     layout 'default'
     filter :rubypants
     filter :beautifier
