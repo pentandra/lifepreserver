@@ -1,11 +1,13 @@
-<% pages_with_tag(@page.tag_meta).each do |article| %>
+<h1><%= tag.capitalize %> Articles</h1>
+
+<% items_with_tag(tag).each do |article| %>
 
 <section class="article">
   
-  <h1><%= article.title %></h1>
+  <h1><%= article[:title] %></h1>
 
   <p>
-    <%= link_to "read " + article.title, article.path %>
+    <%= link_to "read " + article[:title], article.path %>
   </p>
 
   <p>

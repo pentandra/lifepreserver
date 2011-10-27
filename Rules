@@ -19,18 +19,22 @@ Compass.add_project_configuration 'compass/config.rb'
 #   because “*” matches zero or more characters.
 
 preprocess do
-  sorted_articles.each do |p|
-    if not p[:excerpt] then
-      # Extract the excerpt from the body, if not already given explicitly.
-      p[:excerpt] = p.raw_content.split("\n\n")[0]
-    end
+  
+  def generate_article_excerpts
+    sorted_articles.each do |p|
+      if not p[:excerpt] then
+        # Extract the excerpt from the body, if not already given explicitly.
+        p[:excerpt] = p.raw_content.split("\n\n")[0]
+      end
 
-    if p[:excerpt] then
-      p[:excerpt] = Nanoc3::Filters::Kramdown.new.run(p[:excerpt])
+      if p[:excerpt] then
+        p[:excerpt] = Nanoc3::Filters::Kramdown.new.run(p[:excerpt])
+      end
     end
   end
 
-#  create_tag_pages
+  generate_article_excerpts
+  create_tag_pages
 end
 
 ### Routing Rules ###################################################
@@ -73,7 +77,7 @@ route '*' do
   if item.binary?
     # Write item with identifier /foo/ to /foo.ext
     item.identifier.chop + '.' + item[:extension]
-  elsif item[:is_partial] || item.is_post?
+  elsif item[:is_partial] || item.is_article?
     # Don't output partial items
     nil
   else
@@ -121,7 +125,7 @@ compile '*' do
       filter :kramdown
     end
 
-    layout 'post' if @item.is_post?
+    layout 'post' if @item.is_article?
     
     layout 'default'
     filter :rubypants

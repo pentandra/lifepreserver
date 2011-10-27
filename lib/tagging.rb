@@ -1,6 +1,6 @@
 # from this thread: http://groups.google.com/group/nanoc/browse_thread/thread/caefcab791fd3c4b
 
-module Nanoc::Helpers
+module Nanoc3::Helpers
 
   module Tagging
 
@@ -68,18 +68,6 @@ module Nanoc::Helpers
       end
 
       ranks
-    end
-
-    # Creates in-memory tag pages from partial: layouts/tag_page.html
-    def create_tag_pages
-      tag_set(items).each do |tag|
-        items << Nanoc3::Item.new(
-          "= render('tag_page',  :tag => '#{tag}')",
-          { :title => "Tag: #{tag}" },
-          "/tags/#{tag}/",
-          :binary => false
-        )
-      end
     end
 
   end
