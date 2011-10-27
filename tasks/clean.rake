@@ -15,7 +15,10 @@ task :clean_all do
 
   # Remove stray files
   stray_files = present_files - compiled_files
-  stray_files.each { |f| FileUtils.rm(f) }
+  stray_files.each do |f| 
+    puts "Deleting file #{f}"
+    FileUtils.rm(f)
+  end
 
   # Remove empty directories
   loop do
