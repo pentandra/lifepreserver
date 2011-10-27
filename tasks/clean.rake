@@ -4,7 +4,6 @@ desc 'Removes all stray files from the output directory'
 task :clean_all do
   # Get compiled files
   site = Nanoc3::Site.new('.')
-  site.load_data
   compiled_files = site.items.map do |item|
     item.reps.map do |rep|
       rep.raw_path
