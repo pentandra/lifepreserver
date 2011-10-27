@@ -20,6 +20,8 @@ Compass.add_project_configuration 'compass/config.rb'
 
 preprocess do
   
+  # Creates article excerpts if they are not given and runs them through
+  # kramdown
   def generate_article_excerpts
     sorted_articles.each do |p|
       if not p[:excerpt] then
@@ -33,8 +35,33 @@ preprocess do
     end
   end
 
+  # Creates in-memory tag pages from partial: layouts/tag.html
+  def generate_tag_pages
+    tag_set(@items).each do |tag|
+      items << Nanoc3::Item.new(
+        "<%= render('tag',  :tag => '#{tag}') %>",
+        { :title => "Tag: #{tag}" },
+        "/tags/#{tag}/",
+        :binary => false
+      )
+    end
+  end
+
+  def generate_blog_archives
+    years = articles.map { |a| a[:created_at].year }.uniq
+    years.each do |year|
+      items << Nanoc3::Item.new(
+        "<%= render('blog_archive', :year => #{year}) %>",
+        { :title => "Articles from #{year}" },
+        "/blog/#{year}/",
+        :binary => false
+      )
+    end
+  end
+
   generate_article_excerpts
-  create_tag_pages
+  generate_tag_pages
+  generate_blog_archives
 end
 
 ### Routing Rules ###################################################
@@ -67,19 +94,14 @@ route '/blog/feed_private/' do
   item.identifier + 'index.xml'
 end
 
-route '/posts/*/' do
-  if $include_drafts or item[:published] then
-    '/blog/' + item[:created_at].to_s + '/' + item.slug + '/index.html'
-  end
-end
-
 route '*' do
   if item.binary?
     # Write item with identifier /foo/ to /foo.ext
     item.identifier.chop + '.' + item[:extension]
-  elsif item[:is_partial] || item.is_article?
-    # Don't output partial items
-    nil
+  elsif item[:kind] == 'article'
+    if $include_drafts or item[:published] then
+      item.identifier + 'index.html'
+    end
   else
     # Write item with identifier /foo/ to /foo/index.html
     item.identifier + 'index.html'

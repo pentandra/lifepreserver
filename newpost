@@ -8,7 +8,7 @@ read RAW_TITLE
 /bin/echo -n "Enter your name: "
 read AUTHOR
 
-TITLE=$(echo "$RAW_TITLE" | sed -e 's/[ _]/-/g' -e 's/[^a-zA-Z0-9-]//g' -e 's/-$//g')
+TITLE=$(echo "$RAW_TITLE" | sed -e 's/[ _]/-/g' -e 's/[^a-zA-Z0-9-]//g' -e 's/-$//g' -e 's/\(.*\)/\L\1/')
 
 echo "---
 title: $RAW_TITLE
@@ -18,6 +18,6 @@ created_at: $YEAR-$MONTH-$DAY
 updated_at: $YEAR-$MONTH-$DAY
 published: false
 ---
-This is your new post." > "content/posts/$TITLE.markdown"
+This is your new post." > "content/blog/$YEAR/$TITLE.markdown"
 
-echo "Created content/posts/$TITLE.markdown"
+echo "Created content/blog/$YEAR/$TITLE.markdown"
