@@ -147,7 +147,7 @@ compile '*' do
       filter :kramdown
     end
 
-    layout 'post' if @item.is_article?
+    layout 'post' if @item[:kind] == 'article'
     
     layout 'default'
     filter :rubypants
