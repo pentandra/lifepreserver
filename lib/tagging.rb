@@ -13,9 +13,9 @@ module Nanoc3::Helpers
     def tag_set(items = nil)
       items = @items if items.nil?
       tags = Set.new
-      items.each do |post|
-        next if post[:tags].nil?
-        post[:tags].each { |tag| tags << tag }
+      items.each do |item|
+        next if item[:tags].nil?
+        item[:tags].each { |tag| tags << tag.to_s }
       end
       tags.to_a
     end
@@ -53,18 +53,20 @@ module Nanoc3::Helpers
       count = count_tags( items )
 
       max, min = 0, items.size
+
       count.keys.each do |t|
         max = count[t] if count[t] > max
         min = count[t] if count[t] < min
       end
 
       divisor = ( ( max.to_f - min ) / n )
+      divisor = 1 if divisor == 0
 
       ranks = {}
       count.keys.each do |t|
         rank = n - 1 - ( count[t] - min) /divisor
         rank = 0 if rank < 0
-        ranks[t] = rank.to_i
+        ranks[t.to_s] = rank.to_i
       end
 
       ranks

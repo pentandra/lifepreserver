@@ -41,7 +41,7 @@ preprocess do
       items << Nanoc3::Item.new(
         "<%= render('tag',  :tag => '#{tag}') %>",
         { :title => "Tag: #{tag}" },
-        "/tag/#{tag}/",
+        "/tags/#{tag}/",
         :binary => false
       )
     end

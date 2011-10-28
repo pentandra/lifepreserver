@@ -1,5 +1,9 @@
-<h1><%= tag %> Articles</h1>
+<section>
+  <h2><%= tag %> Articles</h2>
+</section>
 
 <% items_with_tag(tag).each do |article| %>
   <%= render('excerpt', :article => article) %>
 <% end %>
+
+<%= render 'blog_meta' %>

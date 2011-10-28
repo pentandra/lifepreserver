@@ -1,3 +1,8 @@
+<section>
+  <h2>Articles from <%= @year %></h2>
+</section>
 <% @item.children.sort_by { |item| item[:created_at] }.reverse.each do |article| %>
   <%= render('excerpt', :article => article) %>
 <% end %>
+
+<%= render 'blog_meta' %>

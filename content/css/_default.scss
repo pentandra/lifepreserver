@@ -32,7 +32,7 @@ header {
   }
 }
 
-nav {
+nav.main {
   float: right;
   margin-top: 61px;
 
@@ -135,6 +135,42 @@ nav {
 //    background: transparent url('/images/endmark.png') no-repeat bottom left;
 //    position: relative;
 //    content: "\0020";
+  }
+
+  section#blogmeta {
+    
+    div {
+      float: right;
+      @include grid(3);
+      margin-left: $less-gutter-width;
+    }
+
+    div#tags {
+      
+      li {
+        float: left;
+      }
+
+      a {
+        padding: 2px 5px;
+        font-size: 12px;
+        margin-right: 4px;
+      }
+    }
+
+    div#authors {
+      @include grid(4);
+    }
+
+    div#archives {
+      margin-left: 0;
+    }
+  }
+
+  section#tags {
+    li {
+      float: left;
+    }
   }
 }
 

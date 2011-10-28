@@ -23,7 +23,7 @@ $less-outer-margin: 34px;
     position: static;
   }
 
-  nav {
+  nav.main {
     float: none;
     position: absolute;
     margin-top: $grid-height*3 - 33px;
