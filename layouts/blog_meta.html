@@ -1,28 +1,25 @@
-<section id="blogmeta">
-  <div id="tags">
+<aside id="blogmeta">
+  <nav id="tags">
     <h4>Tags A-Z</h4>
-    <nav>
-      <ul>
-      <% tag_set(publishing_articles).sort.each do |tag| %>
-        <li><%= link_for_tag(tag, "/tags/") %></li> 
-      <% end %>
-      </ul>
-    </nav>
-  </div>
-  <div id="authors">
+    <ul>
+    <% tag_set(publishing_articles).sort.each do |tag| %>
+      <li><%= link_for_tag(tag, "/tags/") %></li> 
+    <% end %>
+    </ul>
+  </nav>
+  <nav id="authors">
     <h4>Authors</h4>
     
     <h5>Chris Chapman</h5>
     <h5>Katie Chapman</h5>
 
-  </div>
-  <div id="archives">
+  </nav>
+  <nav id="archives">
     <h4>Archives</h4>
-    <nav>
-      <ul>
-        <li><%= link_to_unless_current '2011', '/blog/2011/' %></li>
-      </ul>
-    </nav>
-  </div>
-</section>
+    <ul>
+      <li><%= link_to_unless_current 'Recent Articles', '/blog/' %></li>
+      <li><%= link_to_unless_current '2011', '/blog/2011/' %></li>
+    </ul>
+  </nav>
+</aside>
 

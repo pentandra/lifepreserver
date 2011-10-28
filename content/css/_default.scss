@@ -1,3 +1,6 @@
+@import "compass/css3/border-radius";
+@import "compass/css3/box-shadow";
+
 /* Default Layout: 992px.
  * Gutters: 24px.
  * Outer margins: 48px.
@@ -14,11 +17,50 @@ $less-outer-margin: 48px;
 }
 
 a.button {
+  
   margin-top: 6px;
+  background-color: $pentandra-brown;
+  font-size: 17px;
+  height: $grid-height;
+  line-height: $grid-height;
+  text-align: center;
+  color: $pentandra-white;
+  display: block;
+  cursor: pointer;
+  @include grid(3);
+  @include border-radius(12px, 12px);
+  
+  em {
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  &:hover {
+    background-color: #6e5643;
+    text-decoration: none;
+  }
+
+  &:focus {
+    background-color: $pentandra-red;
+  }
+
+  &:visited {
+    color: $pentandra-white;
+  }
 }
 
-header {
+header.main {
+
 //  position: fixed;
+  position: absolute;
+  z-index: 999; 
+  height: $grid-height*3 - 33px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: $pentandra-white;
+//  @include box-shadow($pentandra-brown 0 0 4px);
+  border-bottom: 33px solid $pentandra-brown;
 
   h1 {
     position: absolute;
@@ -30,28 +72,28 @@ header {
     height: 34px;
     margin-top: $grid-height;
   }
-}
 
-nav.main {
-  float: right;
-  margin-top: 61px;
+  nav {
+    float: right;
+    margin-top: 61px;
 
-  li {
-    float: left;
+    li {
+      float: left;
 
-    a {
-      color: $pentandra-brown;
-      padding: 7px 15px;
-    
-      &:hover, &:focus {
-        background-color: $pentandra-red;
-        @include border-radius(12px, 12px);
-        color: $pentandra-white !important;
-        text-decoration: none;
-      }
-
-      &:visited {
+      a {
         color: $pentandra-brown;
+        padding: 7px 15px;
+      
+        &:hover, &:focus {
+          background-color: $pentandra-red;
+          @include border-radius(12px, 12px);
+          color: $pentandra-white !important;
+          text-decoration: none;
+        }
+
+        &:visited {
+          color: $pentandra-brown;
+        }
       }
     }
   }
@@ -59,9 +101,11 @@ nav.main {
 
 #main {
 
+  @extend .clearfix;
   margin-top: $grid-height * 3;
 
   section {
+    @extend .clearfix;
     margin: $grid-height 0 $grid-height/2;
     border-top: 1px solid $pentandra-brown;
 
@@ -105,11 +149,6 @@ nav.main {
     }
   }
 
-  aside {
-    @include grid(3);
-    float: left;
-  }
-
   a[rel~="tag"] {
     color: white;
     @extend .small;
@@ -137,20 +176,24 @@ nav.main {
 //    content: "\0020";
   }
 
-  section#blogmeta {
-    
-    div {
+  aside#postmeta {
+    @include grid(3);
+    float: left;
+  }
+
+  aside#blogmeta {
+    @extend .clearfix;
+    margin: $grid-height 0;
+    border-top: 3px solid $pentandra-brown;
+
+    nav {
       float: right;
       @include grid(3);
       margin-left: $less-gutter-width;
     }
 
-    div#tags {
+    nav#tags {
       
-      li {
-        float: left;
-      }
-
       a {
         padding: 2px 5px;
         font-size: 12px;
@@ -158,16 +201,16 @@ nav.main {
       }
     }
 
-    div#authors {
+    nav#authors {
       @include grid(4);
     }
 
-    div#archives {
+    nav#archives {
       margin-left: 0;
     }
   }
 
-  section#tags {
+  nav#tags {
     li {
       float: left;
     }
@@ -175,6 +218,7 @@ nav.main {
 }
 
 section#zeugma {
+  position: relative;
   padding-top: $grid-height;
 
   p {
@@ -184,6 +228,8 @@ section#zeugma {
   }
 
   h2 {
+    color: $pentandra-red;
+    text-transform: uppercase;
     letter-spacing: -1px;
     font-weight: bold;
   }
@@ -292,11 +338,36 @@ section#company {
   }
 }
 
-footer {
+footer.main {
+
+  background: $footer-background;
+  color: $footer-font-color;
+  position: absolute;
+  width: 100%;
+  left: 0;
+
+  span, section {
+    float: right;
+  }
+
+  section {
+    margin: 0 0 $grid-height $less-gutter-width;
+  }
 
   div.content {
+    background-color: $footer-background;
     padding: 33px 48px 84px;
     @extend .clearfix;
+  }
+
+  div.post {
+    a {
+      color: $pentandra-white;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
 
   span#footerlogo {
@@ -305,10 +376,6 @@ footer {
     font-size: 14px;
     padding: 67px 0 0 0;
     @include grid(3);
-  }
-
-  section {
-    margin: 0 0 $grid-height $less-gutter-width;
   }
 
   section#recentthoughts {

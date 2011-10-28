@@ -12,15 +12,16 @@
 
 </article>
 
-<aside>
+<aside id="postmeta">
 
-  <section id="tags">
+  <nav id="tags">
     <h4>Tags</h4>
+
     <%= tags_for(@item, { :separator => "", :base_url => "/tags/" }) %>
-  </section>
+  </nav>
 
   <p>
-    <%= link_to("permalink", item.path, { :title => "Permalink to this article", :class => "permalink" }) %>
+    <%= link_to("permalink", @item.path, { :title => "Permalink to this article", :class => "permalink" }) %>
   </p>
 
 </aside>

@@ -19,31 +19,31 @@ $less-outer-margin: 34px;
     margin-top: auto;
   }
 
-  header {
+  header.main {
     position: static;
-  }
 
-  nav.main {
-    float: none;
-    position: absolute;
-    margin-top: $grid-height*3 - 33px;
-    font-weight: bold;
-    font-size: 13px;
-    line-height: 33px;
-    @include grid(3);
-    text-align: center;
-
-    ul li {
-      display: inline;
+    nav {
       float: none;
+      position: absolute;
+      margin-top: $grid-height*3 - 33px;
+      font-weight: bold;
+      font-size: 13px;
+      line-height: 33px;
+      @include grid(3);
+      text-align: center;
 
-      a {
-        color: $pentandra-white !important;
-        padding: 0 5px;
-        display: inline-block;
+      ul li {
+        display: inline;
+        float: none;
 
-        &:hover, &:focus {
-          @include border-radius(0, 0);
+        a {
+          color: $pentandra-white !important;
+          padding: 0 5px;
+          display: inline-block;
+
+          &:hover, &:focus {
+            @include border-radius(0, 0);
+          }
         }
       }
     }

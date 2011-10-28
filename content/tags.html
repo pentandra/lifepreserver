@@ -1,7 +1,7 @@
-<section id="tags">
-  <h2>Tags A-Z</h2>
+<section>
+  <nav id="tags">
+    <h2>Tags A-Z</h2>
 
-  <nav>
     <ul>
     <% tag_set(publishing_articles).sort.each do |tag| %>
       <li><%= link_for_tag(tag, "/tags/") %>
