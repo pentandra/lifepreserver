@@ -47,6 +47,18 @@ preprocess do
     end
   end
 
+  # Creates in-memory author pages from partial: layouts/author.html
+  def generate_author_pages
+    authors(publishing_articles).each do |author|
+      items << Nanoc3::Item.new(
+        "<%= render('author', :author => '#{author}') %>",
+        { :title => "Articles by #{author}" },
+        "/blog/authors/#{author.to_slug}/",
+        :binary => false
+      )
+    end
+  end
+
   # Creates in-memory blog archive pages from partial:
   # layouts/blog_archive.html
   def generate_blog_archives
@@ -63,6 +75,7 @@ preprocess do
 
   generate_article_excerpts
   generate_tag_pages
+  generate_author_pages
   generate_blog_archives
 end
 

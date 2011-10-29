@@ -193,16 +193,13 @@ header.main {
     }
 
     nav#tags {
+      @include grid(4);
       
       a {
         padding: 2px 5px;
         font-size: 12px;
         margin-right: 4px;
       }
-    }
-
-    nav#authors {
-      @include grid(4);
     }
 
     nav#archives {
