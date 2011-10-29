@@ -12,3 +12,4 @@ gem 'rainpress' # for compact CSS
 gem 'rubypants' # for pretty typography
 gem 'uglifier' # for compact javascript
 gem 'beautifier' # for beautiful HTML
+gem 'activesupport' # for to_slug
