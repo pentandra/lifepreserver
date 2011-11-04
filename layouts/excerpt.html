@@ -1,21 +1,20 @@
-<section class="post">
+<article class="excerpt">
 
   <h3>
     <%= link_to(article[:title], article.path, { :title => "Full article", :class => "permalink" }) %>
   </h3>
 
-  <div class="details">
-    <h4><%= article[:created_at] %></h4>
+  <%= article[:excerpt] %>
+
+  <nav>
+    <%= link_to("Read More", article.path, { :title => "Read the full article", :class => "readmore" }) %>
+    <p><%= tags_for(article, { :separator => "", :base_url => "/tags/" }) %></p>
+  </nav>
+
+  <footer>
+    <time class="big" pubdate><%= article[:created_at] %></time>
     <h5><%= article[:author_name] %></h5>
-  </div>
+  </footer>
 
-  <div class="excerpt">
-    <%= article[:excerpt] %>
-  </div>
-
-  <p>
-    <%= tags_for(article, { :separator => "", :base_url => "/tags/" }) %>
-  </p>
-
-</section>
+</article>
                                         

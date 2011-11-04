@@ -1,9 +1,11 @@
-<section>
+<header>
   <h2>Articles by <%= @author %></h2>
-</section>
+</header>
 
-<% articles_by_author(author).each do |article| %>
-  <%= render('excerpt', :article => article) %>
-<% end %>
+<div class="articles">
+  <% articles_by_author(author).each do |article| %>
+    <%= render('excerpt', :article => article) %>
+  <% end %>
+</div>
 
 <%= render 'blog_meta' %>

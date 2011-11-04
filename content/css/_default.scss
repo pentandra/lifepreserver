@@ -49,7 +49,20 @@ a.button {
   }
 }
 
-header.main {
+a[rel~="tag"] {
+  color: white;
+  @extend .small;
+  background-color: $pentandra-brown;
+  padding: 3px 7px;
+  @include border-radius(6px, 6px);
+  margin-right: 8px;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+header[role="banner"] {
 
 //  position: fixed;
   position: absolute;
@@ -122,94 +135,9 @@ header.main {
     h3 {
       text-transform: uppercase;
     }
-  }
 
-  section.post {
-
-    h3 {
-      @include grid(7);
-      float: right;
-    }
-
-    div.details {
-      @include grid(3);
-      float: left;
-    }
-
-  }
-
-  article#post {
-    margin: $grid-height 0 $grid-height/2;
-    @include grid(7);
-    float: right;
-
-    h3 {
-      @extend .small;
-      text-transform: uppercase;
-    }
-  }
-
-  a[rel~="tag"] {
-    color: white;
-    @extend .small;
-    background-color: $pentandra-red;
-    padding: 4px 7px;
-    @include border-radius(6px, 6px);
-    margin-right: 8px;
-
-    &:hover {
-      text-decoration: none;
-    }
-  }
-
-  article#post p:last-child:after {
-    content: "\25C2";
-    padding-left: 10px;
-    position: relative;
-
-//    Show the logo as the endmark - doesn't look very sharp.
-//    float: right;
-//    height: 16px;
-//    width: 16px;
-//    background: transparent url('/images/endmark.png') no-repeat bottom left;
-//    position: relative;
-//    content: "\0020";
-  }
-
-  aside#postmeta {
-    @include grid(3);
-    float: left;
-  }
-
-  aside#blogmeta {
-    @extend .clearfix;
-    margin: $grid-height 0;
-    border-top: 3px solid $pentandra-brown;
-
-    nav {
-      float: right;
-      @include grid(3);
-      margin-left: $less-gutter-width;
-    }
-
-    nav#tags {
-      @include grid(4);
-      
-      a {
-        padding: 2px 5px;
-        font-size: 12px;
-        margin-right: 4px;
-      }
-    }
-
-    nav#archives {
-      margin-left: 0;
-    }
-  }
-
-  nav#tags {
-    li {
-      float: left;
+    section {
+      border-top: none;
     }
   }
 }
@@ -247,14 +175,6 @@ section#zeugma {
   }
 }
 
-section#ourcompany {
-  margin-top: $grid-height*2;
-
-  p {
-    @extend .big;
-  }
-}
-
 section#researchexperience {
 
   div.wrapper {
@@ -276,7 +196,7 @@ section#researchexperience {
       margin: 0 $less-gutter-width 0;
     }
 
-    figure {
+    div {
       float: left;
       @include grid(3);
       height: $grid-height*2;
@@ -284,29 +204,26 @@ section#researchexperience {
     }
   }
 
-  figure#clarity {
+  div#clarity {
     background: transparent url('/images/clarity.jpg') no-repeat scroll left top;
   }
 
-  figure#context {
+  div#context {
     background: transparent url('/images/context.jpg') no-repeat scroll left top;
   }
 
-  figure#collaboration {
+  div#collaboration {
     background: transparent url('/images/collaboration.jpg') no-repeat scroll left top;
     height: 120px;
     margin-top: -10px;
   }
 }
 
-section#meetgeungle {
-
-  div#geunglelogo {
-      background: transparent url('/images/geungle-logo.png') no-repeat scroll center top;
-      @include grid(7);
-      height: 186px;
-      margin: 0 0 60px 252px + $less-gutter-width;
-  }
+div#geunglelogo {
+    background: transparent url('/images/geungle-logo.png') no-repeat scroll center top;
+    @include grid(7);
+    height: 186px;
+    margin: 0 0 60px 252px + $less-gutter-width;
 }
 
 section#company {
@@ -335,7 +252,95 @@ section#company {
   }
 }
 
-footer.main {
+//
+// Blog styling
+//
+
+article.excerpt {
+
+  h3 {
+    @include grid(7);
+    float: right;
+
+    a {
+      color: $pentandra-brown;
+    }
+  }
+
+  div.details {
+    @include grid(3);
+    float: left;
+  }
+
+}
+
+article.post {
+  margin: $grid-height 0 $grid-height/2;
+  @include grid(7);
+  float: right;
+
+  h3 {
+    @extend .small;
+    text-transform: uppercase;
+  }
+
+  &:p:last-child:after {
+    content: "\25C2";
+    padding-left: 10px;
+    position: relative;
+
+  //    Show the logo as the endmark - doesn't look very sharp.
+  //    float: right;
+  //    height: 16px;
+  //    width: 16px;
+  //    background: transparent url('/images/endmark.png') no-repeat bottom left;
+  //    position: relative;
+  //    content: "\0020";
+  }
+}
+
+aside.postmeta {
+  @include grid(3);
+  float: left;
+}
+
+aside.blogmeta {
+  @extend .clearfix;
+  margin: $grid-height 0;
+  border-top: 3px solid $pentandra-brown;
+
+  nav {
+    float: right;
+    @include grid(3);
+    margin-left: $less-gutter-width;
+  }
+
+  nav.tags {
+    @include grid(4);
+    
+    a {
+      padding: 2px 5px;
+      font-size: 12px;
+      margin-right: 4px;
+    }
+  }
+
+  nav.archives {
+    margin-left: 0;
+  }
+}
+
+nav.tags {
+  li {
+    float: left;
+  }
+}
+
+//
+// Footer
+//
+
+footer[role="contentinfo"] {
 
   background: $footer-background;
   color: $footer-font-color;
@@ -343,58 +348,54 @@ footer.main {
   width: 100%;
   left: 0;
 
-  span, section {
+  a {
+    color: $pentandra-white;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  aside, small {
     float: right;
   }
 
-  section {
+  aside {
     margin: 0 0 $grid-height $less-gutter-width;
   }
 
   div.content {
-    background-color: $footer-background;
+    background-color: inherit;
     padding: 33px 48px 84px;
     @extend .clearfix;
   }
 
-  div.post {
-    a {
-      color: $pentandra-white;
-
-      &:hover {
-        text-decoration: none;
-      }
-    }
-  }
-
-  span#footerlogo {
+  small#footerlogo {
     background: transparent url('/images/pentandra-logo-reverse.png') no-repeat scroll left top;
     cursor: pointer;
-    font-size: 14px;
     padding: 67px 0 0 0;
     @include grid(3);
   }
 
-  section#recentthoughts {
+  aside#recentthoughts {
     @include grid(5);
 
-    div.post {
+    article.excerpt {
       @extend .clearfix;
       margin: 3px 0;
-    }
+      time {
+        float: left;
+      }
 
-    span {
-      float: left;
-      font-size: 16px;
-    }
-
-    div.title {
-      @include grid(4);
-      float: right;
+      h5 {
+        @include grid(4);
+        float: right;
+        line-height: 24px;
+      }
     }
   }
 
-  section#feelingsocial {
+  aside#feelingsocial {
     @include grid(2);
 
     ul {

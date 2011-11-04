@@ -1,4 +1,5 @@
 <aside id="blogmeta">
+
   <nav id="authors">
     <h4>Authors</h4>
     
@@ -6,9 +7,9 @@
     <% authors(publishing_articles).each do |author| %>
       <li><%= link_for_author(author, "/blog/authors/") %></li>
     <% end %>
-  </ul>
-
+    </ul>
   </nav>
+
   <nav id="tags">
     <h4>Tags A-Z</h4>
     <ul>
@@ -17,6 +18,7 @@
     <% end %>
     </ul>
   </nav>
+
   <nav id="archives">
     <h4>Archives</h4>
     <ul>
@@ -24,5 +26,6 @@
       <li><%= link_to_unless_current '2011', '/blog/2011/' %></li>
     </ul>
   </nav>
+
 </aside>
 
