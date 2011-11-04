@@ -8,8 +8,6 @@ h1 {
 h2 {
   @extend .large; 
   font-weight: normal;
-  margin: 0;
-  padding: 24px 0;
 }
 
 h3 {
@@ -23,7 +21,6 @@ h4 {
 }
 
 h5 {
-  margin: 0 0 6px;
   text-transform: uppercase;
   @extend .small;
 }

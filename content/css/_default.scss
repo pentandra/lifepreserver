@@ -132,7 +132,7 @@ header[role="banner"] {
       margin-top: -6px;
     }
 
-    h3 {
+    h2 {
       text-transform: uppercase;
     }
 
@@ -177,7 +177,7 @@ section#zeugma {
 
 section#researchexperience {
 
-  div.wrapper {
+  section {
     @extend .clearfix;
     height: $grid-height*2;
     margin-bottom: $grid-height;
@@ -196,12 +196,13 @@ section#researchexperience {
       margin: 0 $less-gutter-width 0;
     }
 
-    div {
-      float: left;
-      @include grid(3);
-      height: $grid-height*2;
-      margin: 5px 0 $less-gutter-width;
-    }
+  }
+
+  div {
+    float: left;
+    @include grid(3);
+    height: $grid-height*2;
+    margin: 5px 0 $less-gutter-width;
   }
 
   div#clarity {
@@ -380,9 +381,13 @@ footer[role="contentinfo"] {
   aside#recentthoughts {
     @include grid(5);
 
+    h5 {
+      margin: 0;
+    }
+
     article.excerpt {
       @extend .clearfix;
-      margin: 3px 0;
+      margin: 5px 0;
       time {
         float: left;
       }
