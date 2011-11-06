@@ -21,7 +21,7 @@ module Nanoc3::Helpers
     end
 
     def link_for_author(author, base_url)
-      %[<a href="#{h base_url}#{h author.to_slug}/">#{h author}</a>]  
+      %[<a href="#{h base_url}#{h author.to_slug}/" rel="author" title="Articles by #{h author}">#{h author}</a>]  
     end
 
     def articles_by_author(author)

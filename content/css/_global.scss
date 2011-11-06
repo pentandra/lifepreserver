@@ -2,7 +2,7 @@
 
 h1 {
   @extend .huge; 
-  margin: 0;
+  font-weight: normal;
 }
 
 h2 {
@@ -13,6 +13,7 @@ h2 {
 h3 {
   @extend .bigger;
   font-weight: normal;
+  text-transform: uppercase;
 }
 
 h4 {
@@ -49,4 +50,3 @@ a {
   background: $content-background;
   margin: 0 auto;
 }
-

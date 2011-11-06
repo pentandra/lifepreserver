@@ -1,20 +1,23 @@
-<article class="excerpt">
+<article class="excerpt clearfix">
 
-  <h3>
-    <%= link_to(article[:title], article.path, { :title => "Full article", :class => "permalink" }) %>
-  </h3>
+  <header>
+    <h2 class="big">
+      <%= link_to(article[:title], article.path, { :title => "Full article", :class => "permalink" }) %>
+    </h2>
+
+    <h3 class="small">By <%= article[:author_name] %></h3>
+    <time class="big" pubdate><%= article[:created_at] %></time>
+  </header>
 
   <%= article[:excerpt] %>
 
-  <nav>
+  <p>
     <%= link_to("Read More", article.path, { :title => "Read the full article", :class => "readmore" }) %>
-    <p><%= tags_for(article, { :separator => "", :base_url => "/tags/" }) %></p>
-  </nav>
+  </p>
 
-  <footer>
-    <time class="big" pubdate><%= article[:created_at] %></time>
-    <h5><%= article[:author_name] %></h5>
-  </footer>
+  <aside>
+    <p><%= tags_for(article, { :separator => "", :base_url => "/tags/" }) %></p>
+  </aside>
 
 </article>
                                         

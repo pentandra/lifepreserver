@@ -64,6 +64,7 @@ a[rel~="tag"] {
 
 header[role="banner"] {
 
+  @extend .clearfix;
 //  position: fixed;
   position: absolute;
   z-index: 999; 
@@ -77,6 +78,7 @@ header[role="banner"] {
 
   h1 {
     position: absolute;
+    margin: 0;
   }
 
   h1 a { 
@@ -143,35 +145,32 @@ header[role="banner"] {
 }
 
 section#zeugma {
-  position: relative;
-  padding-top: $grid-height;
 
-  p {
-    font-style: italic;
-    font-size: 22px;
-    margin: 11px 0;
-  }
+  padding: $grid-height 0; 
 
-  h2 {
-    color: $pentandra-red;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-    font-weight: bold;
-  }
-
-  h2, p {
+  div.wrapper {
     @include grid(3); 
-    padding: 0;
-    margin-left: ($less-column-width + $less-gutter-width)*7;
+    float: right;
+      
+    p {
+      font-style: italic;
+      float: none;
+      width: 100%;
+    }
+
+    h2 {
+      color: $pentandra-red;
+      letter-spacing: -1px;
+      font-weight: bold;
+      margin-top: 0;
+    }
   }
   
   div#mosaic {
     @include grid(6);
     background: transparent url('/images/zeugma.jpg') no-repeat scroll left top;
     height: 412px;
-    position: absolute;
-    top: $grid-height;
-    left: 0;
+    float: left;
   }
 }
 
@@ -195,7 +194,6 @@ section#researchexperience {
       @include grid(4);
       margin: 0 $less-gutter-width 0;
     }
-
   }
 
   div {
@@ -227,31 +225,79 @@ div#geunglelogo {
     margin: 0 0 60px 252px + $less-gutter-width;
 }
 
-section#company {
+//
+// Company
+//
 
-  dt {
-    font-weight: bold;
+article#company {
+
+  p {
+    float: none;
+    width: auto;
+    margin-top: 5px;
   }
 
-  dt, dd {
-    @include grid(3);
-  }
-  
-  div#summary {
-    @include grid(6);
+  section {
+    section {
+      @include grid(5);
+      float: left;
+      margin: 0;
 
-    h2 {
-      letter-spacing: -2px;
-      text-transform: uppercase;
+      &:nth-child(even) {
+        margin-right: 24px;
+      }
     }
-      
-  }
-
-  div#team {
-    @include grid(4);
-    float: right;
   }
 }
+
+section#meettheteam {
+
+  div.wrapper {
+    @include grid(4);
+    float: left;
+  }
+
+  div#teamphoto {
+    @include grid(6);
+    height: 290px;
+    float: right;
+    background: transparent url('/images/team-436x290.jpg') no-repeat scroll right bottom;
+    margin-top: $grid-height;
+
+    &:hover {
+      background-image: url('/images/team-436x290-silly.jpg');
+    }
+  }
+
+  nav {
+    @extend .clearfix;
+    clear: both;
+    background-color: $pentandra-brown;
+    color: $pentandra-white;
+    margin: 0 (-$less-outer-margin);
+    padding: 24px $less-outer-margin $less-outer-margin;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    li {
+      width: 33.333%;
+      float: left;
+      margin-top: 24px;
+    }
+
+    a {
+      font-weight: bold;
+      color: $pentandra-white;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
 
 //
 // Blog styling
@@ -259,20 +305,16 @@ section#company {
 
 article.excerpt {
 
-  h3 {
+  p, h2, h3 {
     @include grid(7);
-    float: right;
-
-    a {
-      color: $pentandra-brown;
-    }
+    float: right; 
   }
 
-  div.details {
-    @include grid(3);
+  time {
     float: left;
+    @include grid(3);
+    text-align: right;
   }
-
 }
 
 article.post {
@@ -282,7 +324,6 @@ article.post {
 
   h3 {
     @extend .small;
-    text-transform: uppercase;
   }
 
   &:p:last-child:after {
@@ -305,18 +346,20 @@ aside.postmeta {
   float: left;
 }
 
-aside.blogmeta {
+aside#blogmeta {
   @extend .clearfix;
   margin: $grid-height 0;
   border-top: 3px solid $pentandra-brown;
 
-  nav {
+
+  div {
+    @extend nav;
     float: right;
     @include grid(3);
     margin-left: $less-gutter-width;
   }
 
-  nav.tags {
+  div.tags {
     @include grid(4);
     
     a {
@@ -326,12 +369,12 @@ aside.blogmeta {
     }
   }
 
-  nav.archives {
+  div.archives {
     margin-left: 0;
   }
 }
 
-nav.tags {
+div.tags {
   li {
     float: left;
   }
@@ -388,8 +431,10 @@ footer[role="contentinfo"] {
     article.excerpt {
       @extend .clearfix;
       margin: 5px 0;
+
       time {
-        float: left;
+        width: auto;
+        text-align: left;
       }
 
       h5 {

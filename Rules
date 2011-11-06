@@ -53,7 +53,7 @@ preprocess do
       items << Nanoc3::Item.new(
         "<%= render('author', :author => '#{author}') %>",
         { :title => "Articles by #{author}" },
-        "/blog/authors/#{author.to_slug}/",
+        "/authors/#{author.to_slug}/",
         :binary => false
       )
     end
