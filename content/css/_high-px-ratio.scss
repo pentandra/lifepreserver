@@ -4,5 +4,12 @@ device-pixel-ratio of 2+, such as iPhone 4. */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   #{$less-grid-element} {
+
+  }
+
+  div#pentandra-logo {
+    width: 504px;
+    height: 504px;
+    background-image: url('/images/pentandra-logo-504x504.png');
   }
 }
