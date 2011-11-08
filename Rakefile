@@ -38,7 +38,7 @@ task :stage do
 end
 
 task :publish do
-  exit unless system("scripts/confirm.sh")
+#  exit unless system("scripts/confirm.sh")
   system('rake', 'deploy:rsync', 'config=public')
 end
 
