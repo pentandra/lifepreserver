@@ -18,66 +18,6 @@ Compass.add_project_configuration 'compass/config.rb'
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
 
-preprocess do
-  
-  # Creates article excerpts if they are not given and runs them through
-  # kramdown
-  def generate_article_excerpts
-    publishing_articles.each do |p|
-      if not p[:excerpt] then
-        # Extract the excerpt from the body, if not already given explicitly.
-        p[:excerpt] = p.raw_content.split("\n\n")[0]
-      end
-
-      if p[:excerpt] then
-        p[:excerpt] = Nanoc3::Filters::Kramdown.new.run(p[:excerpt])
-      end
-    end
-  end
-
-  # Creates in-memory tag pages from partial: layouts/tag.html
-  def generate_tag_pages
-    tag_set(publishing_articles).each do |tag|
-      items << Nanoc3::Item.new(
-        "<%= render('tag',  :tag => '#{tag}') %>",
-        { :title => "Tag: #{tag}" },
-        "/tags/#{tag}/",
-        :binary => false
-      )
-    end
-  end
-
-  # Creates in-memory author pages from partial: layouts/author.html
-  def generate_author_pages
-    authors(publishing_articles).each do |author|
-      items << Nanoc3::Item.new(
-        "<%= render('author', :author => '#{author}') %>",
-        { :title => "Articles by #{author}" },
-        "/authors/#{author.to_slug}/",
-        :binary => false
-      )
-    end
-  end
-
-  # Creates in-memory blog archive pages from partial:
-  # layouts/blog_archive.html
-  def generate_blog_archives
-    years = publishing_articles.map { |a| a[:created_at].year }.uniq
-    years.each do |year|
-      items << Nanoc3::Item.new(
-        "<%= render('blog_archive', :year => #{year}) %>",
-        { :title => "Articles from #{year}" },
-        "/blog/#{year}/",
-        :binary => false
-      )
-    end
-  end
-
-  generate_article_excerpts
-  generate_tag_pages
-  generate_author_pages
-  generate_blog_archives
-end
 
 ### Routing Rules ###################################################
 
@@ -105,18 +45,11 @@ route '/404/' do
   '/404.html'
 end
 
-route '/blog/feed_private/' do
-  item.identifier + 'index.xml'
-end
 
 route '*' do
   if item.binary?
     # Write item with identifier /foo/ to /foo.ext
     item.identifier.chop + '.' + item[:extension]
-  elsif item[:kind] == 'article'
-    if $include_drafts or item[:published] then
-      item.identifier + 'index.html'
-    end
   else
     # Write item with identifier /foo/ to /foo/index.html
     item.identifier + 'index.html'
@@ -148,22 +81,12 @@ compile '/js/*/' do
   end
 end
 
-compile '/blog/feed_private/' do
-  filter :erb
-end
-
 compile '*' do
   if item.binary?
     # don’t filter binary items
   else
     filter :erb
 
-    if item[:extension] == 'markdown'
-      filter :kramdown
-    end
-
-    layout 'article' if item[:kind] == 'article'
-    
     layout 'default'
     filter :rubypants
     filter :beautifier
