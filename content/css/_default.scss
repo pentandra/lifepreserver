@@ -298,6 +298,53 @@ section#meettheteam {
   }
 }
 
+section.teammember {
+
+  h3, h4 {
+    margin: 0 0 14px;
+  }
+
+  div.wrapper {
+    width: 232px; // = @include grid(3) - 20px;
+    float: right;
+    padding-right: 20px;
+  }
+
+  aside {
+    float: left;
+    @include grid(2);
+    margin: 12px 0 24px;
+
+    a[href^="mailto"] {
+      padding-left: 20px; 
+      background: transparent url('/images/email.png') center left scroll no-repeat;
+    }
+
+    p {
+      margin: 5px 0;
+    }
+  }
+
+  div.photo {
+    float: left;
+    width: 150px; // 150 + 2px + 8px borders = grid(2) or 160px
+    height: 150px;
+    border: solid $pentandra-brown;
+    border-top-width: 2px;
+    border-right-width: 8px;
+    border-bottom-width: 8px;
+    border-left-width: 2px;
+  }
+
+  div#chrischapman {
+    background: transparent url('/images/chris-150x150.jpg') no-repeat scroll top left;
+  }
+    
+  div#katiechapman {
+    background: transparent url('/images/katie-150x150.jpg') no-repeat scroll top left;
+  }
+}
+
 
 //
 // Blog styling
@@ -473,8 +520,8 @@ footer[role="contentinfo"] {
       width: 35px;
     }
 
-    .email {
-      background: transparent url('/images/email.png') no-repeat top center;
+    .contact {
+      background: transparent url('/images/contact.png') no-repeat top center;
       width: 24px;
     }
 
