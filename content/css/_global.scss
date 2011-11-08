@@ -2,7 +2,7 @@
 
 h1 {
   @extend .huge; 
-  font-weight: normal;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -13,7 +13,6 @@ h2 {
 h3 {
   @extend .bigger;
   font-weight: normal;
-  text-transform: uppercase;
 }
 
 h4 {
