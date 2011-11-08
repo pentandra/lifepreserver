@@ -12,7 +12,17 @@ $less-outer-margin: 34px;
 
   #{$less-grid-element} {
     @include grid(3); 
-    padding: 0 $less-outer-margin;
   } 
 
+  h1 {
+    font-size: 29px;
+    line-height: 36px;
+    letter-spacing: 0;
+  }
+    
+  div#pentandra-logo {
+    @include grid(3, false);
+    height: 252px;
+    background-image: url('/images/pentandra-logo-252x252.png');
+  }
 }

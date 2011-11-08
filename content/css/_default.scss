@@ -12,12 +12,13 @@ px      68    160    252    344    436    528    620    712    804    896    */
 $less-outer-margin: 48px;
 
 #{$less-grid-element} {
-  @include grid(10, true); 
-  padding: 0 $less-outer-margin;
+  @include grid(10); 
 }
 
-header[role="banner"] {
-
+h1 {
+  font-size: 123px;
+  line-height: 132px;
+  letter-spacing: -2px;
 }
 
 #main {
@@ -34,9 +35,4 @@ div#pentandra-logo {
   @include grid(7);
   height: 620px;
   background: transparent url('/images/pentandra-logo-620x620.png') no-repeat left top scroll;
-}
-
-footer[role="contentinfo"] {
-  @include grid(10, true);
-  margin: 0 auto;
 }

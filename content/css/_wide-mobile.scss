@@ -7,5 +7,19 @@ cols    1     2      3      4      5
 px      68    160    252    344    436    */
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+  
   #{$less-grid-element} {
-    @include grid(5); } }
+    @include grid(5); 
+  } 
+
+  h1 {
+    font-size: 47px;
+    line-height: 48px;
+  }
+
+  div#pentandra-logo {
+    @include grid(5, false);
+    height: 436px;
+    background-image: url('/images/pentandra-logo-436x436.png');
+  }
+}
