@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'compass'
+require './settings'
 
 Compass.add_project_configuration 'compass/config.rb'
 
@@ -17,17 +18,17 @@ Compass.add_project_configuration 'compass/config.rb'
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
 
-compile '/css/*/' do
-  filter :sass, Compass.sass_engine_options
+
+### Routing Rules ###################################################
+
+route '/static/*' do
+  # /static/foo.html/ -> /foo.html
+  item.identifier[7..-2]
 end
 
-compile '*' do
-  if item.binary?
-    # don’t filter binary items
-  else
-    filter :erb
-    layout 'default'
-  end
+route '/css/_*/' do
+  # don't output partials, so return nil
+  nil
 end
 
 route '/css/*/' do
@@ -40,21 +41,10 @@ route '/js/*/' do
   item.identifier.chop + '.js'
 end
 
-route '/robots/' do
-  '/robots.txt'
-end
-
 route '/404/' do
   '/404.html'
 end
 
-route '/crossdomain/' do
-  '/crossdomain.xml'
-end
-
-route '/humans/' do
-  '/humans.txt'
-end
 
 route '*' do
   if item.binary?
@@ -63,6 +53,43 @@ route '*' do
   else
     # Write item with identifier /foo/ to /foo/index.html
     item.identifier + 'index.html'
+  end
+end
+
+### Compilation Rules ###################################################
+
+compile '/css/_*/' do
+  # don't compile partials
+end
+
+compile '/css/*/' do
+  filter :sass, Compass.sass_engine_options
+
+  if $use_minified_css then
+    # compress CSS :)
+    filter :rainpress
+  end
+end
+
+compile '/static/*/' do
+  # don't compile
+end
+
+compile '/js/*/' do
+  if $use_minified_js then
+    filter :uglify_js
+  end
+end
+
+compile '*' do
+  if item.binary?
+    # don’t filter binary items
+  else
+    filter :erb
+
+    layout 'default'
+    filter :rubypants
+    filter :beautifier
   end
 end
 

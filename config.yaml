@@ -17,7 +17,7 @@ index_filenames: [ 'index.html' ]
 # Whether or not to generate a diff of the compiled content when compiling a
 # site. The diff will contain the differences between the compiled content
 # before and after the last site compilation.
-enable_output_diff: false
+enable_output_diff: true
 
 # The data sources where nanoc loads its data from. This is an array of
 # hashes; each array element represents a single data source. By default,
@@ -42,21 +42,36 @@ data_sources:
 
     config:
       allow_periods_in_identifiers: true
+  -
+    type: static
+    items_root: /static/
+
+# Base URL, used for the Atom feed
+base_url: http://pentandra.com
 
 # Configuration for the “watch” command, which watches a site for changes and
 # recompiles if necessary.
 watcher:
-  # A list of directories to watch for changes. When editing this, make sure
-  # that the “output/” and “tmp/” directories are _not_ included in this list,
-  # because recompiling the site will cause these directories to change, which
-  # will cause the site to be recompiled, which will cause these directories
-  # to change, which will cause the site to be recompiled again, and so on.
-  dirs_to_watch: [ 'content', 'layouts', 'lib', 'compass' ]
 
-  # A list of single files to watch for changes. As mentioned above, don’t put
-  # any files from the “output/” or “tmp/” directories in here.
-  files_to_watch: [ 'config.yaml', 'Rules' ]
+# A list of directories to watch for changes. When editing this, make sure
+# that the “output/” and “tmp/” directories are _not_ included in this list,
+# because recompiling the site will cause these directories to change, which
+# will cause the site to be recompiled, which will cause these directories
+# to change, which will cause the site to be recompiled again, and so on.
+dirs_to_watch: [ 'content', 'layouts', 'lib', 'compass' ]
 
-  # When to send notifications (using Growl or notify-send).
-  notify_on_compilation_success: true
-  notify_on_compilation_failure: true
+# A list of single files to watch for changes. As mentioned above, don’t put
+# any files from the “output/” or “tmp/” directories in here.
+files_to_watch: [ 'config.yaml', 'Rules' ]
+
+# When to send notifications (using Growl or notify-send).
+notify_on_compilation_success: true
+notify_on_compilation_failure: true
+
+deploy:
+  public:
+    dst: "pentandra.com:/srv/http/lifepreserver"
+    options: [ '-gpPrtvz', '--delete-after' ]
+  staging:
+    dst: "vlad@rebikov.process.tree:/srv/http/lifepreserver"
+    options: [ '-gpPrtvz', '--delete-after' ]

@@ -1,3 +1,7 @@
 output
+output.diff
 .sass-cache
 tmp
+nanoc-autocompile.log
+*.swp
+settings.rb
