@@ -22,4 +22,14 @@ px      68    160    252    344    436    */
     height: 436px;
     background-image: url('/images/pentandra-logo-436x436.png');
   }
+
+  // Retina media query.
+  // Overrides styles for devices with a
+  // device-pixel-ratio of 2+, such as iPhone 4.
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+    div#pentandra-logo {
+      background-size: 436px auto;
+      background-image: url('/images/pentandra-logo-436x436@2x.png');
+    }
+  }
 }
