@@ -3,6 +3,7 @@
 h1 {
   @extend .huge; 
   font-weight: normal;
+  font-family: $bold-font-family, sans-serif;
 }
 
 h2 {
