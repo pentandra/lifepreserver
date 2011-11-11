@@ -31,5 +31,15 @@
          url('/fonts/FunctionPro-Book-webfont.svg#FunctionProBook') format('svg');
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
+    font-family: 'FunctionProMedium';
+    src: url('/fonts/FunctionPro-Medium-webfont.eot');
+    src: url('/fonts/FunctionPro-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/FunctionPro-Medium-webfont.woff') format('woff'),
+         url('/fonts/FunctionPro-Medium-webfont.ttf') format('truetype'),
+         url('/fonts/FunctionPro-Medium-webfont.svg#FunctionProBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
