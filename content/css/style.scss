@@ -1,18 +1,18 @@
-@import "base";
-@import "fonts";
+@import "partials/base";
+@import "partials/fonts";
 
-@import "normalize";
+@import "partials/normalize";
 
 @import "less/framework";
 @import "less/typography/18px";
 
 
-@import "global";
-@import "default";
-@import "tablet";
-@import "mobile";
-@import "wide-mobile";
-@import "high-px-ratio";
+@import "partials/global";
+@import "partials/default";
+@import "partials/tablet";
+@import "partials/mobile";
+@import "partials/wide-mobile";
+@import "partials/high-px-ratio";
 
-@import "nonsemantic";
-@import "print";
+@import "partials/nonsemantic";
+@import "partials/print";
