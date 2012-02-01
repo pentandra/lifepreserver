@@ -22,6 +22,10 @@
 
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 
+  <% if @item[:has_video] then %>
+  <link rel="stylesheet" href="/js/media/mediaelementplayer.css" />  
+  <% end %>
+
 	<link rel="stylesheet" href="/css/style.css?v=0.5" />
   <link rel="alternate" type="application/atom+xml" href="http://feeds.feedburner.com/pentandra" />
   
@@ -76,8 +80,17 @@
   </div>
 </footer>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="/js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+
+<% if @item[:has_video] then %>
+<script src="/js/media/mediaelement-and-player.min.js"></script>
+<script>
+  $('document').ready(function() {
+    $('video').mediaelementplayer();
+  });
+</script>
+<% end %>
 
 <!-- scripts concatenated and minified via build script-->
 <script src="/js/plugins.js"></script>
