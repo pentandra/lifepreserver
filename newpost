@@ -18,6 +18,6 @@ created_at: $YEAR-$MONTH-$DAY
 updated_at: $YEAR-$MONTH-$DAY
 published: false
 ---
-This is your new post." > "content/blog/$YEAR/$TITLE.markdown"
+This is your new post." > "content/blog/$TITLE.markdown"
 
-echo "Created content/blog/$YEAR/$TITLE.markdown"
+echo "Created content/blog/$TITLE.markdown"
