@@ -87,7 +87,9 @@
 <script src="/js/media/mediaelement-and-player.min.js"></script>
 <script>
   $('document').ready(function() {
-    $('video').mediaelementplayer();
+    $('video').mediaelementplayer({
+      enableAutosize: false
+    });
   });
 </script>
 <% end %>
