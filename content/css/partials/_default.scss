@@ -429,15 +429,28 @@ div.tags {
 }
 
 .footnotes {
-  @extend .small }
+  @extend .small 
+}
+
+figure {
+  @include grid(3);
+  margin: 10px 0;
+}
+   
+figcaption {
+  @extend .small; 
+  padding: 5px 0;
+}
 
 article#research {
   
   div#researchprocess {
-    background-image: url('/images/research-process.png');
+    background: transparent url('/images/research-process.png') no-repeat 0 0;
     height: 133.33333px;
-    width: 225px;
-    background-position: 0 0;
+  }
+
+  aside {
+    @extend .clearfix;
   }
 }
 
