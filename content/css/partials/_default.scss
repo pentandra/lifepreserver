@@ -1,5 +1,6 @@
 @import "compass/css3/border-radius";
 @import "compass/css3/box-shadow";
+@import "compass/css3/transform";
 
 /* Default Layout: 992px.
  * Gutters: 24px.
@@ -161,6 +162,8 @@ section#zeugma {
     h1 {
       color: $pentandra-red;
       text-transform: uppercase;
+      @include rotate(90deg);
+      margin: 0;
     }
   }
   
@@ -422,6 +425,19 @@ aside#blogmeta {
 div.tags {
   li {
     float: left;
+  }
+}
+
+.footnotes {
+  @extend .small }
+
+article#research {
+  
+  div#researchprocess {
+    background-image: url('/images/research-process.png');
+    height: 133.33333px;
+    width: 225px;
+    background-position: 0 0;
   }
 }
 
