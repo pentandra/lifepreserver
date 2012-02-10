@@ -16,6 +16,8 @@ If you are not familiar with RootsTech, let me say that it is an attempt by
 bring together genealogical software creators and users. I think they have been
 successful, in a way, in reaching this goal.
 
+![RootsTech 2012](/images/rootstech.320x480-75.2012.jpg)
+
 However, as Janet Havorka mentioned in her
 [session](http://rootstech.org/schedule/saturday/TU031 "Advocating Genealogy and Growing the Market: Issues of the New Genealogist"),
 there are at least three different types of genealogists: new, seasoned, and 

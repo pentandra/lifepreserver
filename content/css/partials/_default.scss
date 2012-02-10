@@ -224,6 +224,7 @@ div#geunglelogo {
     @include grid(7);
     height: 186px;
     margin: 0 0 60px 252px + $less-gutter-width;
+    clear: both;
 }
 
 //
@@ -351,17 +352,32 @@ section.teammember {
 // Blog styling
 //
 
-article.excerpt {
+div.excerpt {
 
-  p, h2, h3 {
+  border-top: 1px solid $pentandra-brown;
+  
+  article {
+
     @include grid(7);
-    float: right; 
-  }
+    float: right;
+    position: relative;
 
-  time {
-    float: left;
-    @include grid(3);
-    text-align: right;
+    h2 {
+      text-transform: uppercase;
+    }
+
+    time {
+      @include grid(3);
+      position: absolute;
+      top: 0;
+      margin-left: -(252px + $less-gutter-width);
+      margin-top: $grid-height/2;
+    }
+
+    aside {
+      float: right;
+      margin-bottom: $grid-height/4;
+    }
   }
 }
 
@@ -370,22 +386,20 @@ article.post {
   @include grid(7);
   float: right;
 
-  h3 {
-    @extend .small;
+  small {
+    text-transform: uppercase;
+  }
+
+  img {
+    float: right;
+    margin: $less-gutter-width;
+    margin-right: 0;
   }
 
   &:p:last-child:after {
     content: "\25C2";
     padding-left: 10px;
     position: relative;
-
-  //    Show the logo as the endmark - doesn't look very sharp.
-  //    float: right;
-  //    height: 16px;
-  //    width: 16px;
-  //    background: transparent url('/images/endmark.png') no-repeat bottom left;
-  //    position: relative;
-  //    content: "\0020";
   }
 }
 
