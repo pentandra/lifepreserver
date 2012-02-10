@@ -25,7 +25,21 @@ module Nanoc3::Helpers
     end
 
     def articles_by_author(author)
-      @items.select { |i| i[:author_name] == author }
+      publishing_articles.select { |i| i[:author_name] == author }
+    end
+
+    def articles_for_year(year)
+      publishing_articles.select { |i| i[:created_at].year == year }
+    end
+
+    def link_for_archive(year, base_url)
+      %[<a href="#{h base_url}#{h year.to_s}/" title="Articles written in #{h year.to_s}">#{h year.to_s}</a>]
+    end
+
+    def archive_years(articles = nil)
+      articles = @articles if articles.nil?
+      years = articles.map { |a| a[:created_at].year }.uniq
+      years.to_a
     end
 
   end

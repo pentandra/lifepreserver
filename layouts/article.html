@@ -1,11 +1,13 @@
-<article id="post">
+<article class="post">
 
   <header>
     <h2><%= @item[:title] %></h2>
 
-    <h3>
-      Written <time datetime="<%= @item[:created_at] %>" pubdate><%= @item[:created_at].strftime("%B %d, %Y") %></time> by <%= @item[:author_name] %>
-    </h3>
+    <small>
+      Written <time datetime="<%= @item[:created_at] %>" pubdate><%= @item[:created_at].strftime("%B %d, %Y") %></time> 
+      by 
+      <%= link_for_author( @item[:author_name], "/authors/") %>
+    </small>
   </header>
 
   <%= yield %>
