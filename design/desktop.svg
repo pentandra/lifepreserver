@@ -28,9 +28,9 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.84879032"
      inkscape:cx="496"
-     inkscape:cy="1665.1315"
+     inkscape:cy="1396.952"
      inkscape:document-units="px"
-     inkscape:current-layer="layer5"
+     inkscape:current-layer="layer6"
      showgrid="true"
      inkscape:window-width="1366"
      inkscape:window-height="751"
@@ -2344,7 +2344,7 @@
     </g>
   </g>
   <g
-     style="display:none"
+     style="display:inline"
      inkscape:label="Blog"
      id="layer6"
      inkscape:groupmode="layer">
@@ -2412,32 +2412,32 @@
          id="flowPara4940">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla sagittis condimentum ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus eu orci. In commodo, dolor quis fermentum ullamcorper, urna massa volutpat massa, vitae mattis purus arcu nec nulla. Curabitur lorem risus, sagittis vitae, accumsan a, iaculis id, metus. Suspendisse molestie sem. Pellentesque ac turpis. Phasellus auctor enim eget sem. </flowPara><flowPara
          id="flowPara4942" /></flowRoot>    <path
        style="fill:none;stroke:#544233;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 51.0518,653.0446 895.87513,0"
+       d="m 51.0518,619.0476 895.87513,0"
        id="path5633"
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
        style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:1px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#db1111;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
        x="232.0625"
-       y="714.28571"
+       y="680.2887"
        id="text5635"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan5637"
          x="232.0625"
-         y="714.28571">Changing the Reward System of Genealogical</tspan><tspan
+         y="680.2887">Changing the Reward System of Genealogical</tspan><tspan
          sodipodi:role="line"
          x="232.0625"
-         y="759.28571"
+         y="725.2887"
          id="tspan4281">Research</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text5639"
-       y="724.7113"
+       y="690.71429"
        x="51.051796"
        style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
        xml:space="preserve"><tspan
-         y="724.7113"
+         y="690.71429"
          x="51.051796"
          id="tspan5641"
          sodipodi:role="line">2011-10-22</tspan></text>
@@ -2445,15 +2445,15 @@
        xml:space="preserve"
        style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
        x="232.98581"
-       y="809.0918"
+       y="775.09479"
        id="text5643"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan5645"
          x="232.98581"
-         y="809.0918">BY CHRIS CHAPMAN</tspan></text>
+         y="775.09479">BY CHRIS CHAPMAN</tspan></text>
     <flowRoot
-       transform="translate(-184.375,411.83665)"
+       transform="translate(-184.375,377.83965)"
        xml:space="preserve"
        id="flowRoot5649"
        style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"><flowRegion
@@ -2466,7 +2466,8 @@
            y="431.198" /></flowRegion><flowPara
          id="flowPara5655">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla sagittis condimentum ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus eu orci. In commodo, dolor quis fermentum ullamcorper, urna massa volutpat massa, vitae mattis purus arcu nec nulla. Curabitur lorem risus, sagittis vitae, accumsan a, iaculis id, metus. Suspendisse molestie sem. Pellentesque ac turpis. Phasellus auctor enim eget sem. </flowPara><flowPara
          id="flowPara5657" /></flowRoot>    <g
-       id="g5074">
+       id="g5074"
+       transform="matrix(0.8710201,0,0,0.8710201,552.45017,-87.977169)">
       <g
          transform="translate(-91.937513,2.0476052)"
          id="g5053">
@@ -2545,7 +2546,7 @@
        y="0"
        xlink:href="#g5074"
        id="use5088"
-       transform="translate(0,381)"
+       transform="translate(-4.4e-6,325.21098)"
        width="992"
        height="2000" />
   </g>
@@ -2769,7 +2770,7 @@
      inkscape:groupmode="layer"
      id="layer5"
      inkscape:label="Research"
-     style="display:inline">
+     style="display:none">
     <flowRoot
        transform="translate(15.0625,-13.64255)"
        style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#2a1a0d;fill-opacity:1;stroke:none;display:inline;font-family:Function Pro;-inkscape-font-specification:Function Pro"
@@ -4420,5 +4421,20 @@
        id="path8937"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccccc" />
+    <rect
+       y="703.21631"
+       x="90.274696"
+       height="143.02016"
+       width="151.68814"
+       id="rect3197-5-8-4-2"
+       style="fill:#544233;fill-opacity:1;stroke:none;display:inline" />
+    <image
+       style="display:inline"
+       y="790.54254"
+       x="134.94063"
+       id="image7006-7-5-1-2"
+       xlink:href="file:///home/chris/devel/pentandra/zeugma.png"
+       height="39.057751"
+       width="59.99995" />
   </g>
 </svg>
