@@ -442,6 +442,22 @@ div.tags {
   }
 }
 
+//
+// "Open" styling
+//
+
+section#openresearch {
+  
+  aside {
+    @include grid(7);
+    float: right;
+
+    footer {
+      @extend .small;
+    }
+  }
+}
+
 .footnotes {
   @extend .small 
 }
@@ -551,6 +567,34 @@ footer[role="contentinfo"] {
       margin-right: 22px;
     }
 
+    a.button {
+
+      margin-top: 36px;
+      background-color: $pentandra-white;
+      height: $grid-height / 2;
+      line-height: $grid-height / 2;
+      color: $pentandra-brown;
+      @include grid(2);
+      @include border-radius(6px);
+      
+      &:hover {
+        background-color: $pentandra-white;
+      }
+
+      &:focus {
+        background-color: $pentandra-white;
+      }
+
+      &:visited {
+        color: $pentandra-brown;
+      }
+    }
+
+    .gplus {
+      background: transparent url('/images/gplus.png') no-repeat center center;
+      width: 24px;
+    }
+
     .fb {
       background: transparent url('/images/fb.png') no-repeat center center;
       width: 11px;
@@ -559,11 +603,6 @@ footer[role="contentinfo"] {
     .twitter {
       background: transparent url('/images/twitter.png') no-repeat center center;
       width: 35px;
-    }
-
-    .contact {
-      background: transparent url('/images/contact.png') no-repeat top center;
-      width: 24px;
     }
 
     .rss {
