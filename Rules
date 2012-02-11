@@ -79,50 +79,6 @@ preprocess do
   generate_blog_archives
 end
 
-### Routing Rules ###################################################
-
-route '/static/*' do
-  # /static/foo.html/ -> /foo.html
-  item.identifier[7..-2]
-end
-
-route '/css/partials/_*/' do
-  # don't output partials, so return nil
-  nil
-end
-
-route '/css/*/' do
-  # don't generate a directory like we do for HTML files
-  item.identifier.chop + '.css'
-end
-
-route '/js/*/' do
-  # don't generate a directory like we do for HTML files
-  item.identifier.chop + '.js'
-end
-
-route '/404/' do
-  '/404.html'
-end
-
-route '/blog/feed_private/' do
-  item.identifier + 'index.xml'
-end
-
-route '*' do
-  if item.binary?
-    # Write item with identifier /foo/ to /foo.ext
-    item.identifier.chop + '.' + item[:extension]
-  elsif item[:kind] == 'article'
-    if $include_drafts or item[:published] then
-      item.identifier + 'index.html'
-    end
-  else
-    # Write item with identifier /foo/ to /foo/index.html
-    item.identifier + 'index.html'
-  end
-end
-
 ### Compilation Rules ###################################################
 
 compile '/css/partials/_*/' do
@@ -167,6 +123,50 @@ compile '*' do
     layout 'default'
     filter :rubypants
     filter :beautifier
+  end
+end
+
+### Routing Rules ###################################################
+
+route '/static/*' do
+  # /static/foo.html/ -> /foo.html
+  item.identifier[7..-2]
+end
+
+route '/css/partials/_*/' do
+  # don't output partials, so return nil
+  nil
+end
+
+route '/css/*/' do
+  # don't generate a directory like we do for HTML files
+  item.identifier.chop + '.css'
+end
+
+route '/js/*/' do
+  # don't generate a directory like we do for HTML files
+  item.identifier.chop + '.js'
+end
+
+route '/404/' do
+  '/404.html'
+end
+
+route '/blog/feed_private/' do
+  item.identifier + 'index.xml'
+end
+
+route '*' do
+  if item.binary?
+    # Write item with identifier /foo/ to /foo.ext
+    item.identifier.chop + '.' + item[:extension]
+  elsif item[:kind] == 'article'
+    if $include_drafts or item[:published] then
+      item.identifier + 'index.html'
+    end
+  else
+    # Write item with identifier /foo/ to /foo/index.html
+    item.identifier + 'index.html'
   end
 end
 
