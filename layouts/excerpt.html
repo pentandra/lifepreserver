@@ -3,7 +3,7 @@
 
     <header>
       <h2 class="big">
-        <%= link_to(article[:title], article.path, { :title => "Full article", :class => "permalink" }) %>
+        <%= link_to(article[:title], article, { :title => "Full article", :class => "permalink" }) %>
       </h2>
 
       <p>By <%= link_for_author( article[:author_name], "/authors/") %></p>

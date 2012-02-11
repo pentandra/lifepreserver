@@ -40,7 +40,7 @@
 
 <header role="banner">
   <div class="content">
-    <h1><a href="/" class="ir">Pentandra Research Solutions</a></h1>
+    <h1><%= link_to("Pentandra Research Solutions", '/', :class => 'ir') %></h1>
     <nav>
       <ul>
         <li><%= link_to('Solutions', '/solutions/') %></li>
@@ -78,7 +78,7 @@
       <% end %>
       
     </aside>
-    <small id="footerlogo" onclick="location.href='http://pentandra.com/';">
+    <small id="footerlogo" onclick="location.href='<%= config[:base_url] %>';">
       &#169; Pentandra Research Solutions, Inc.
     </small>
   </div>
