@@ -118,7 +118,9 @@ compile '*' do
       filter :kramdown
     end
 
-    layout 'article' if item[:kind] == 'article'
+    if item[:kind] == 'article' && ($include_drafts or item[:published]) then
+      layout 'article'
+    end
     
     layout 'default'
     filter :rubypants
