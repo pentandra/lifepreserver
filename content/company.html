@@ -1,5 +1,20 @@
 --- 
 title: Company
+teammembers:
+  - name: Chris Chapman
+    title: CEO and Super Coder
+    email: chris@pentandra.com
+    twitter: cd_chapman
+    summary: >
+      Chris loves to tackle difficult problems and dreams (literally) about
+      making research easier. He is our systems thinker.
+  - name: Katie Chapman
+    title: CFO and Think Tanker
+    email: katie@pentandra.com
+    twitter: KAMChapman
+    summary: >
+      Katie loves to solve a good puzzle and thrives on the details. She is
+      also our finance and tax geek and actually enjoys it.
 ---
 
 <article id="company">
@@ -125,51 +140,29 @@ title: Company
 
     <h2>Our Roster</h2>
     
+    <% @item[:teammembers].each do |member| %> 
     <section class="teammember vcard clearfix">
 
-      <div id="chrischapman" class="photo"></div>
+      <div id="<%= member[:name].to_slug %>" class="photo"></div>
 
       <div class="wrapper">
         <hgroup>
-          <h3 class="big fn">Chris Chapman</h3>
-          <h4 class="small">CEO and Super Coder</h4>
+          <h3 class="big fn"><%= member[:name] %></h3>
+          <h4 class="small"><%= member[:title] %></h4>
         </hgroup>
 
         <p>
-          Chris loves to tackle difficult problems and dreams (literally) about
-          making research easier. He is our systems thinker.
+          <%= member[:summary] %>
         </p>
       </div>
 
       <aside>
-        <p><a href="https://twitter.com/cd_chapman" class="twitter-follow-button url" data-show-count="false" data-button="grey" data-link-color="#db1111" data-width="160px">Follow @cd_chapman</a></p>
-        <p><a class="email" href="mailto:chris@pentandra.com" title="chris@pentandra.com">Email</a></p>
+        <p><a href="https://twitter.com/<%= member[:twitter] %>" class="twitter-follow-button url" data-show-count="false" data-width="160px">Follow @<%= member[:twitter] %></a></p>
+        <p><a class="email" href="mailto:<%= member[:email] %>" title="<%= member[:email] %>">Email</a></p>
       </aside>
 
     </section>
-    <section class="teammember vcard clearfix">
-
-      <div id="katiechapman" class="photo"></div>
-
-      <div class="wrapper">
-        <hgroup>
-          <h3 class="big fn">Katie Chapman</h3>
-          <h4 class="small">CFO and Think Tanker</h4>
-        </hgroup>
-
-        <p>
-          Katie loves to solve a good puzzle and thrives on the details. She is
-          also our finance and tax geek and actually enjoys it.
-        </p>
-      </div>
-
-      <aside>
-        <p><a href="https://twitter.com/KAMChapman" class="twitter-follow-button url" data-show-count="false" data-button="grey" data-link-color="#db1111" data-width="160px">Follow @KAMChapman</a></p>
-        <p><a class="email" href="mailto:katie@pentandra.com" title="katie@pentandra.com">Email</a></p>
-      </aside>
-
-
-    </section>
+    <% end %>
 
   </section>
 
@@ -185,4 +178,4 @@ title: Company
   </footer>
 
 </article>
-<script src="//platform.twitter.com/widgets.js"></script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
