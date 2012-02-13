@@ -26,11 +26,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="702.39743"
-     inkscape:cy="182.61292"
+     inkscape:zoom="0.95564516"
+     inkscape:cx="493.90717"
+     inkscape:cy="274.6973"
      inkscape:document-units="px"
-     inkscape:current-layer="g3699"
+     inkscape:current-layer="layer2"
      showgrid="true"
      inkscape:window-width="1366"
      inkscape:window-height="751"
@@ -783,7 +783,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1272,7 +1272,10 @@
       </g>
       <g
          id="g4041"
-         transform="translate(-27.003108,-47.127247)">
+         transform="translate(-27.003108,-47.127247)"
+         inkscape:export-filename="/home/chris/devel/pentandra/lifepreserver/static/images/gplus.png"
+         inkscape:export-xdpi="89.998596"
+         inkscape:export-ydpi="89.998596">
         <g
            id="g12-7"
            transform="matrix(0.375,0,0,-0.375,811.06561,1804.3162)">
@@ -1364,6 +1367,14 @@
           </g>
         </g>
       </g>
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:none"
+         id="rect4067"
+         width="160"
+         height="25"
+         x="784.0625"
+         y="1768.7975"
+         rx="6" />
     </g>
     <rect
        y="109.5238"
@@ -1421,6 +1432,17 @@
            x="827.3653"
            y="66.490921">Research</tspan></text>
     </g>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
+       x="825.45276"
+       y="1768.3882"
+       id="text4069"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4071"
+         x="825.45276"
+         y="1768.3882">Contact Us</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
@@ -1958,7 +1980,7 @@
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="Company"
-     style="display:none">
+     style="display:inline">
     <flowRoot
        transform="translate(-84.0915,-14.60305)"
        style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0.5px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#2a1a0d;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
@@ -2519,7 +2541,7 @@
     </g>
   </g>
   <g
-     style="display:inline"
+     style="display:none"
      inkscape:label="Blog"
      id="layer6"
      inkscape:groupmode="layer">
@@ -2642,7 +2664,7 @@
          id="flowPara5655">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla sagittis condimentum ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus eu orci. In commodo, dolor quis fermentum ullamcorper, urna massa volutpat massa, vitae mattis purus arcu nec nulla. Curabitur lorem risus, sagittis vitae, accumsan a, iaculis id, metus. Suspendisse molestie sem. Pellentesque ac turpis. Phasellus auctor enim eget sem. </flowPara><flowPara
          id="flowPara5657" /></flowRoot>    <g
        id="g5074"
-       transform="matrix(0.8710201,0,0,0.8710201,552.45017,-87.977169)">
+       transform="matrix(0.8710201,0,0,0.8710201,552.45017,60.022831)">
       <g
          transform="translate(-91.937513,2.0476052)"
          id="g5053">
@@ -2721,7 +2743,7 @@
        y="0"
        xlink:href="#g5074"
        id="use5088"
-       transform="translate(-4.4e-6,325.21098)"
+       transform="translate(-4.4e-6,347.21098)"
        width="992"
        height="2000" />
   </g>

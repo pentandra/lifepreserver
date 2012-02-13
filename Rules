@@ -108,6 +108,10 @@ compile '/blog/feed_private/' do
   filter :erb
 end
 
+compile '/company/', :rep => :vcard do
+  filter :build_vcard
+end
+
 compile '*' do
   if item.binary?
     # don’t filter binary items
@@ -156,6 +160,10 @@ end
 
 route '/blog/feed_private/' do
   item.identifier + 'index.xml'
+end
+
+route '/company/', :rep => :vcard do
+  '/my.vcf'
 end
 
 route '*' do

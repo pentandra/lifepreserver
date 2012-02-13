@@ -1,7 +1,6 @@
 require "htmlbeautifier/beautifier"
 
 class BeautifierFilter < Nanoc3::Filter
-
   
   identifier :beautifier
   type :text

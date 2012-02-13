@@ -72,7 +72,7 @@
       
       <% @site.publishing_articles[0, 4].each do |post| %>
       <article class="excerpt"> 
-        <h5><%= link_to(post[:title], post.path) %></h5>
+        <h5><%= link_to(post[:title], post) %></h5>
         <time pubdate><%= post[:created_at] %></time>
       </article>
       <% end %>
