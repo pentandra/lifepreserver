@@ -1,5 +1,9 @@
 --- 
 title: Company
+company_name: Pentandra Research Solutions, Inc.
+phone: +1 435.294.2964
+email: hello@pentandra.com
+twitter: PentandraInc
 teammembers:
   - first_name: Chris
     last_name: Chapman
@@ -177,10 +181,10 @@ teammembers:
     <h2>Give Us A Holler!</h2>
 
     <address class="vcard">
-      <p class="fn org">Pentandra Research Solutions, Inc.</p>
-      <p>Phone: <span class="tel">+1 (435) 294-2964</span></p>
-      <p>Email: <a class="email" href="mailto:hello@pentandra.com">hello@pentandra.com</a></p>
-        <p><a href="https://twitter.com/PentandraInc" class="twitter-follow-button url" data-show-count="false">Follow @PentandraInc</a></p>
+      <p class="fn org"><%= @item[:company_name] %></p>
+      <p>Phone: <span class="tel"><%= @item[:phone] %></span></p>
+      <p>Email: <a class="email" href="mailto:<%= @item[:email] %>"><%= @item[:email] %></a></p>
+      <p><a href="https://twitter.com/<%= @item[:twitter] %>" class="twitter-follow-button url" data-show-count="false">Follow @<%= @item[:twitter] %></a></p>
     </address>
       
   </footer>
