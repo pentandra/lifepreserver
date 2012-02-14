@@ -57,7 +57,7 @@ teammembers:
           <p>We can move fast</p>
         </li>
         <li>
-          <a href="#dogfood">We eat our own dogfood</a>
+          <a href="#dogfood">Consumers</a>
           <p>This is for us, too!</p>
         </li>
         <li>
@@ -65,8 +65,8 @@ teammembers:
           <p>We're here to stay</p>
         </li>
         <li>
-          <a href="#advisors">Outstanding advisors</a>
-          <p>We are so grateful</p>
+          <a href="#community">Community-oriented</a>
+          <p>That's where it's at</p>
         </li>
       </ol>
     </nav>
@@ -83,7 +83,10 @@ teammembers:
 
       <p>
         Some people call it <abbr title="Obsessive-Compulsive Disorder">OCD</abbr>;
-        others call it passion.
+        others call it passion. We love good research. We want to make it
+        easier for you to do good research. We believe that software should work
+        the way researchers work, not the other way around. That is what drives 
+        us. Crazy.
       </p>
 
     </section>
@@ -93,16 +96,13 @@ teammembers:
       <h3>Quality Over Quantity</h3>
 
       <p>
-        We love good research. We figure that if you're going to spend the time
-        and money to do research, you might as well do it right. We've seen (and
-        produced) enough bad research that we know it is worth doing things
-        right, even if it takes longer. We want to make it easier for you to do
+        We figure that if you're going to spend the time to do research, you
+        might as well do it right. We want to make it easier for you to do
         good research. And after you've done a great job, we want to help you
-        share it and show it off. (You want to show it off after you've put all 
-        that work into it, don't you?)
+        show it off. (You want to show it off after you've put all that work 
+        into it, don't you?)
       </p>
 
-      We want this to be right.
     </section>
 
     <section id="smallandfocused">
@@ -110,7 +110,8 @@ teammembers:
 
       <p>
         And we like it that way. Being small helps us to move faster and be more
-        responsive to the needs of our customers.
+        responsive to the needs of our customers. Please let us know how we can
+        serve you better! Really. We want to know.
       </p>
     </section>
 
@@ -120,29 +121,27 @@ teammembers:
       <p>
         Our company came about because we wanted to keep track of our own family
         history research. We hunted for software that would help us with it. We
-        couldn't find any that did what we needed. So we decided to do it ourselves, and here we are!
+        couldn't find any that did what we needed. So we decided to do it 
+        ourselves, and here we are! We thought it would be selfish to not share
+        it.
       </p>
-      We thought it would be selfish to make it for ourselves and not share it.
     </section>
 
     <section id="committed">
       <h3>We Are Here For You</h3>
 
       <p>
-        We believe that software should work the way researchers work, not the
-        other way around. We are here to simplify your research experience. Please
-        let us know how we can serve you better! Really. We want to know.
-      </p>
         We are committed to sticking around.
+      </p>
     </section>
 
-    <section id="advisors">
+    <section id="community">
       <h3>We Love Community</h3>
 
       <p>
         Our company would not be here without the contributions from many in the
         technological and genealogical communities. We are happy to have a chance
-        to contribute back.
+        to <%= link_to("contribute back", "/open/") %>.
       </p>
     </section>
 
@@ -169,7 +168,7 @@ teammembers:
 
       <aside>
         <p><a href="https://twitter.com/<%= member[:twitter] %>" class="twitter-follow-button url" data-show-count="false" data-width="160px">Follow @<%= member[:twitter] %></a></p>
-        <p><a class="email" href="mailto:<%= member[:email] %>" title="<%= member[:email] %>">Email</a></p>
+        <p><a class="email small" href="mailto:<%= member[:email] %>" title="<%= member[:email] %>">Email <%= member[:first_name] %></a></p>
       </aside>
 
     </section>

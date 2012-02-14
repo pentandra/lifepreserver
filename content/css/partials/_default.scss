@@ -248,6 +248,10 @@ article#company {
       &:nth-child(even) {
         margin-right: 24px;
       }
+
+      p {
+        padding-right: 10px;
+      }
     }
   }
 }
@@ -424,6 +428,10 @@ aside#blogmeta {
 
   div.archives {
     margin-left: 0;
+  }
+
+  div.authors {
+    text-align: right;
   }
 }
 
