@@ -25,6 +25,8 @@ h4 {
 h5 {
   text-transform: uppercase;
   @extend .small;
+  font-weight: normal;
+  font-family: $bold-font-family, sans-serif;
 }
 
 small {

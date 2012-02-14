@@ -1,17 +1,23 @@
 --- 
 title: Company
 teammembers:
-  - name: Chris Chapman
+  - first_name: Chris
+    last_name: Chapman
     title: CEO and Super Coder
     email: chris@pentandra.com
     twitter: cd_chapman
+    phone: 435-294-2964
+    phone_ext: 1000
     summary: >
       Chris loves to tackle difficult problems and dreams (literally) about
       making research easier. He is our systems thinker.
-  - name: Katie Chapman
+  - first_name: Katie
+    last_name: Chapman
     title: CFO and Think Tanker
     email: katie@pentandra.com
     twitter: KAMChapman
+    phone: 435-294-2964
+    phone_ext: 1001
     summary: >
       Katie loves to solve a good puzzle and thrives on the details. She is
       also our finance and tax geek and actually enjoys it.
@@ -25,15 +31,14 @@ teammembers:
       <h2>Meet the Team.</h3>
 
       <p class="big">
-        We are a small group of people devoted to promoting quality research and
-        facilitating collaboration throughout the research process.
+        We are couple of research addicts trying to promote quality research
+        and make collaboration throughout the research process easier.
       </p>
     </div>
 
     <div id="teamphoto"></div>
 
     <nav>
-
       <ol>
         <li>
           <a href="#passionate">Passionate</a>
@@ -48,7 +53,7 @@ teammembers:
           <p>We can move fast</p>
         </li>
         <li>
-          <a href="#necessityis">Necessity is...</a>
+          <a href="#dogfood">We eat our own dogfood</a>
           <p>This is for us, too!</p>
         </li>
         <li>
@@ -60,7 +65,6 @@ teammembers:
           <p>We are so grateful</p>
         </li>
       </ol>
-
     </nav>
 
   </section>
@@ -74,7 +78,8 @@ teammembers:
       <h3>Passionate</h3>
 
       <p>
-        
+        Some people call it <abbr title="Obsessive-Compulsive Disorder">OCD</abbr>;
+        others call it passion.
       </p>
 
     </section>
@@ -93,6 +98,7 @@ teammembers:
         that work into it, don't you?)
       </p>
 
+      We want this to be right.
     </section>
 
     <section id="smallandfocused">
@@ -104,14 +110,15 @@ teammembers:
       </p>
     </section>
 
-    <section id="necessityis">
-      <h3>The Mother Of Invention</h3>
+    <section id="dogfood">
+      <h3>We Eat Our Own Dogfood</h3>
 
       <p>
         Our company came about because we wanted to keep track of our own family
         history research. We hunted for software that would help us with it. We
-        couldn't find any. So we decided to do it ourselves, and here we are!
+        couldn't find any that did what we needed. So we decided to do it ourselves, and here we are!
       </p>
+      We thought it would be selfish to make it for ourselves and not share it.
     </section>
 
     <section id="committed">
@@ -122,6 +129,7 @@ teammembers:
         other way around. We are here to simplify your research experience. Please
         let us know how we can serve you better! Really. We want to know.
       </p>
+        We are committed to sticking around.
     </section>
 
     <section id="advisors">
@@ -141,19 +149,18 @@ teammembers:
     <h2>Our Roster</h2>
     
     <% @item[:teammembers].each do |member| %> 
+    <% member_name = member[:first_name] + " " + member[:last_name] %>
     <section class="teammember vcard clearfix">
 
-      <div id="<%= member[:name].to_slug %>" class="photo"></div>
+      <img class="photo" src="/images/<%= member_name.to_slug %>-150x150.jpg" alt="Photo of <%= member_name %>" />
 
       <div class="wrapper">
         <hgroup>
-          <h3 class="big fn"><%= member[:name] %></h3>
+          <h3 class="big fn"><%= member_name %></h3>
           <h4 class="small"><%= member[:title] %></h4>
         </hgroup>
 
-        <p>
-          <%= member[:summary] %>
-        </p>
+        <p><%= member[:summary] %></p>
       </div>
 
       <aside>
@@ -170,9 +177,10 @@ teammembers:
     <h2>Give Us A Holler!</h2>
 
     <address class="vcard">
-      <p class="fn">Pentandra Research Solutions, Inc.</p>
+      <p class="fn org">Pentandra Research Solutions, Inc.</p>
       <p>Phone: <span class="tel">+1 (435) 294-2964</span></p>
       <p>Email: <a class="email" href="mailto:hello@pentandra.com">hello@pentandra.com</a></p>
+        <p><a href="https://twitter.com/PentandraInc" class="twitter-follow-button url" data-show-count="false">Follow @PentandraInc</a></p>
     </address>
       
   </footer>

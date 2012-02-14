@@ -32,7 +32,7 @@ a.button {
   @include border-radius(12px, 12px);
   
   em {
-    font-weight: bold;
+    font-family: $bold-font-family, sans-serif;
     font-style: normal;
   }
 
@@ -257,6 +257,8 @@ section#meettheteam {
   div.wrapper {
     @include grid(4);
     float: left;
+
+
   }
 
   div#teamphoto {
@@ -290,7 +292,7 @@ section#meettheteam {
     }
 
     a {
-      font-weight: bold;
+      font-family: $bold-font-family, sans-serif;
       color: $pentandra-white;
 
       &:hover {
@@ -327,23 +329,12 @@ section.teammember {
     }
   }
 
-  div.photo {
+  img {
     float: left;
     width: 150px; // 150 + 2px + 8px borders = grid(2) or 160px
     height: 150px;
     border: solid $pentandra-brown;
-    border-top-width: 2px;
-    border-right-width: 8px;
-    border-bottom-width: 8px;
-    border-left-width: 2px;
-  }
-
-  div#chris-chapman {
-    background: transparent url('/images/chris-150x150.jpg') no-repeat scroll top left;
-  }
-    
-  div#katie-chapman {
-    background: transparent url('/images/katie-150x150.jpg') no-repeat scroll top left;
+    border-width: 11px;
   }
 }
 
