@@ -1,4 +1,3 @@
-require 'less'
 # Require any additional compass plugins here.
 
 http_path    = "/" 
