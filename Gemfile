@@ -13,4 +13,6 @@ gem 'rubypants' # for pretty typography
 gem 'uglifier' # for compact javascript
 gem 'htmlbeautifier' # for beautiful HTML
 gem 'activesupport' # for to_slug
-gem 'vpim' 
+gem 'vpim' # PIM data
+gem 'rqrcode' # for qrcodes
+gem 'chunky_png' # PNG generation of qrcodes

@@ -254,6 +254,44 @@ article#company {
       }
     }
   }
+
+  footer {
+    background-color: $pentandra-red-shaded;
+    margin: 0 (-$less-outer-margin);
+    padding: 24px $less-outer-margin;
+    color: $pentandra-white;
+
+    a {
+      color: $pentandra-white;
+    }
+
+    aside {
+      float: left;
+      @include grid(3);
+      margin-left: $less-gutter-width;
+
+      &.social {
+        @include grid(4);
+
+      }
+
+      .twitter {
+        margin-top: 20px;
+      }
+
+      &:first-of-type {
+        margin-left: 0;
+      }
+
+      figure {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.fb-like-box {
+  background-color: $pentandra-white;
 }
 
 section#meettheteam {

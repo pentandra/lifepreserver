@@ -2,6 +2,11 @@
 
 */
 
+$(document).ready(function() {
+
+  $('a').smoothScroll();
+
+});
 
 
 $(document).ready(function() {

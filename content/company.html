@@ -58,7 +58,7 @@ teammembers:
         </li>
         <li>
           <a href="#dogfood">Consumers</a>
-          <p>This is for us, too!</p>
+          <p>We eat our own dogfood</p>
         </li>
         <li>
           <a href="#committed">Committed</a>
@@ -106,41 +106,44 @@ teammembers:
     </section>
 
     <section id="smallandfocused">
-      <h3>We're Small</h3>
+      <h3>Small And Focused</h3>
 
       <p>
-        And we like it that way. Being small helps us to move faster and be more
-        responsive to the needs of our customers. Please let us know how we can
-        serve you better! Really. We want to know.
+        We're small...and we like it that way. Being small helps us to move 
+        faster and be more responsive to the needs of our customers. We are 
+        focused on making your life easier (at least your research life). 
+        Please let us know how we can serve you better! Really. We want to know.
       </p>
     </section>
 
     <section id="dogfood">
-      <h3>We Eat Our Own Dogfood</h3>
+      <h3>Consumers</h3>
 
       <p>
         Our company came about because we wanted to keep track of our own family
         history research. We hunted for software that would help us with it. We
-        couldn't find any that did what we needed. So we decided to do it 
-        ourselves, and here we are! We thought it would be selfish to not share
+        couldn't find any that did what we needed. So we decided to make it 
+        ourselves, and here we are! We thought it would be selfish not to share
         it.
       </p>
     </section>
 
     <section id="committed">
-      <h3>We Are Here For You</h3>
+      <h3>Committed</h3>
 
       <p>
-        We are committed to sticking around.
+        We are committed to sticking around. We are trying to accomplish
+        something great. We want to see it through.
       </p>
     </section>
 
     <section id="community">
-      <h3>We Love Community</h3>
+      <h3>Community Oriented</h3>
 
       <p>
-        Our company would not be here without the contributions from many in the
-        technological and genealogical communities. We are happy to have a chance
+        We love community. Our company would not be here without the 
+        contributions from many in the technological and genealogical
+        communities. We are happy to have a chance
         to <%= link_to("contribute back", "/open/") %>.
       </p>
     </section>
@@ -176,17 +179,36 @@ teammembers:
 
   </section>
 
-  <footer id="contact">
+  <footer id="contact" class="clearfix">
     <h2>Give Us A Holler!</h2>
 
-    <address class="vcard">
-      <p class="fn org"><%= @item[:company_name] %></p>
-      <p>Phone: <span class="tel"><%= @item[:phone] %></span></p>
-      <p>Email: <a class="email" href="mailto:<%= @item[:email] %>"><%= @item[:email] %></a></p>
-      <p><a href="https://twitter.com/<%= @item[:twitter] %>" class="twitter-follow-button url" data-show-count="false" data-size="large">Follow @<%= @item[:twitter] %></a></p>
-    </address>
+    <aside>
+      <address class="vcard">
+        <p class="fn org"><%= @item[:company_name] %></p>
+        <p>Phone: <a class="tel" href="tel:<%= @item[:phone].gsub(/[\s\.-]/, "") %>"><%= @item[:phone] %></a></p>
+        <p>Email: <a class="email" href="mailto:<%= @item[:email] %>"><%= @item[:email] %></a></p>
+      </address>
+    </aside>
+
+    <aside>
+      <figure>
+        <a href="<%= @item.path(:rep => :vcard) %>">
+          <img src="<%= @item.path(:rep => :qrcode) %>" alt="" />
+        </a>
+        <figcaption>Our vCard</figcaption>
+      </figure>
+    </aside>
+
+    <aside class="social">
+        <div class="g-plus" data-href="https://plus.google.com/108021950461928542978" data-width="300" data-height="69" data-theme="light"></div>
+        <div class="fb-like-box" data-href="http://www.facebook.com/PentandraInc" data-width="300" data-height="121" data-show-faces="true" data-stream="false" data-header="true"></div>
+        <div class="twitter"><a href="https://twitter.com/<%= @item[:twitter] %>" class="twitter-follow-button" data-width="300px" data-show-count="false" data-size="large">Follow @<%= @item[:twitter] %></a></div>
+    </aside>
       
   </footer>
 
 </article>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<script type="text/javascript">window.___gcfg={lang: 'en'};(function(){var po=document.createElement("script");po.type="text/javascript";po.async=true;po.src="https://apis.google.com/js/plusone.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(po, s);})();</script>
+<div id="fb-root"></div>
+<script>(function(d, s, id){var js, fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="//connect.facebook.net/en_US/all.js#xfbml=1";fjs.parentNode.insertBefore(js, fjs);}(document,'script','facebook-jssdk'));</script>

@@ -46,6 +46,18 @@ a {
 
 }
 
+address {
+  font-style: normal;
+}
+
+blockquote {
+  background-color: $pentandra-red-shaded;
+  color: $pentandra-white;
+  margin-left: -$less-gutter-width;
+  padding: 10px;
+  clear: both;
+}
+
 // Selection colors (easy to forget)
 // @include selection-color(unquote("rgb(255,255,158)"));
 

@@ -109,7 +109,18 @@ compile '/blog/feed_private/' do
 end
 
 compile '/company/', :rep => :vcard do
-  filter :build_vcard
+  filter :vcard, {
+    :name => @item[:company_name], 
+    :phone => @item[:phone], 
+    :email => @item[:email] }
+end
+
+compile '/company/', :rep => :qrcode do
+  filter :vcard, {
+    :name => @item[:company_name], 
+    :phone => @item[:phone], 
+    :email => @item[:email] }
+  filter :qrcode, :size => 14
 end
 
 compile '*' do
@@ -163,7 +174,11 @@ route '/blog/feed_private/' do
 end
 
 route '/company/', :rep => :vcard do
-  '/my.vcf'
+  item.identifier.chop + '.vcf'
+end
+
+route '/company/', :rep => :qrcode do
+  '/images/pentandra-qrcode.png'
 end
 
 route '*' do

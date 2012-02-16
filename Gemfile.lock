@@ -21,12 +21,13 @@ GEM
     i18n (0.6.0)
     kramdown (0.13.4)
     multi_json (1.0.4)
-    nanoc (3.2.4)
-      nanoc3 (>= 3.2.4)
-    nanoc3 (3.2.4)
-      cri (~> 2.0)
+    nanoc (3.3.0)
+      cri (~> 2.1)
+    nanoc3 (3.3.0)
+      nanoc (>= 3.3.0)
     nokogiri (1.5.0)
     rainpress (1.0)
+    rqrcode (0.4.2)
     rubypants (0.2.0)
     sass (3.1.15)
     uglifier (1.2.3)
@@ -39,6 +40,7 @@ PLATFORMS
 
 DEPENDENCIES
   activesupport
+  chunky_png
   coderay
   compass
   compass-less-plugin
@@ -49,6 +51,7 @@ DEPENDENCIES
   nanoc3
   nokogiri
   rainpress
+  rqrcode
   rubypants
   uglifier
   vpim
