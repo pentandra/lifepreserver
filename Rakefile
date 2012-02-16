@@ -34,11 +34,11 @@ task :build_production do
 end
 
 task :stage do
-  system('rake', 'deploy:rsync', 'config=staging')
+  system('nanoc', 'deploy', '-t', 'staging')
 end
 
 task :publish do
   exit unless system("scripts/confirm.sh")
-  system('rake', 'deploy:rsync', 'config=public')
+  system('nanoc', 'deploy', '-t', 'public')
 end
 
