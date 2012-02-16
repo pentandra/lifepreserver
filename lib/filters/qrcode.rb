@@ -10,10 +10,11 @@ class QRCodeFilter < Nanoc3::Filter
 
     # Extract params
     size = params[:size] || 4
-    pixels = params[:pixels] || 3
+    chunk_size = params[:chunk_size] || 3
+    color = params[:color]
 
     qr = RQRCode::QRCode.new(content, :size => size, :level => :h)
-    image = qr.to_image(pixels)
+    image = qr.to_image(chunk_size, 4, color)
 
     image.save(output_filename)
   end

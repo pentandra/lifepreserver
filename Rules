@@ -120,7 +120,7 @@ compile '/company/', :rep => :qrcode do
     :name => @item[:company_name], 
     :phone => @item[:phone], 
     :email => @item[:email] }
-  filter :qrcode, :size => 14
+  filter :qrcode, :size => 14, :color => "#544233"
 end
 
 compile '*' do

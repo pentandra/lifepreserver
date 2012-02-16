@@ -10,7 +10,9 @@ module RQRCode
     #
     # adapted from http://dagi3d.net/posts/3-generating-qr-code-images-with-rqrcode
     #
-    def to_image(size = 5, offset = 4)
+    def to_image(size = 5, offset = 4, color) 
+
+      color = color || ChunkyPNG::Color::BLACK
       
       margin = offset * size
       dim = size * @modules.size + margin * 2 
@@ -20,9 +22,8 @@ module RQRCode
         @modules.each_index do |y|
           if (self.dark?(x,y))
             image.rect(y * size + margin, x * size + margin, 
-                       (y * size) + size + margin, (x * size) + size + margin, 
-                       ChunkyPNG::Color::from_hex("#544233"), 
-                       ChunkyPNG::Color::from_hex("#544233"))
+                       (y * size) + size + margin - 1, (x * size) + size + margin - 1, 
+                       color, color)
           end
         end
       end
