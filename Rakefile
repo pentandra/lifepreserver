@@ -27,14 +27,14 @@ task :build_staging do
   Rake::Task["rebuild"].invoke
 end
 
+task :stage do
+  system('nanoc', 'deploy', '-t', 'staging')
+end
+
 task :build_production do
   system('cp', 'settings/prd.rb', 'settings.rb')
   Rake::Task["rebuild"].invoke
   Rake::Task["optimize_pngs"].invoke
-end
-
-task :stage do
-  system('nanoc', 'deploy', '-t', 'staging')
 end
 
 task :publish do
