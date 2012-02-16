@@ -1,4 +1,4 @@
-require 'nanoc3/tasks'
+require 'nanoc/tasks'
 
 Dir['tasks/**/*.rake'].sort.each { |rakefile| load rakefile }
 
@@ -11,7 +11,7 @@ task :fullclean => :clean do
 end
 
 task :compile do
-  system('nanoc3', 'compile')
+  system('nanoc', 'compile')
 end
 
 task :ping do
