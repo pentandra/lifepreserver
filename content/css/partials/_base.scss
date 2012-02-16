@@ -4,20 +4,18 @@
 $base-font-family: unquote('FunctionProBook');
 $bold-font-family: unquote('FunctionProMedium');
 
-// less configuration
-$less-grid-element: unquote('div.content');
-$less-grid-padding: false;
-$less-gutter-width: 24px;
-$less-column-width: 68px;
+// grid configuration
 $grid-height: 48px;
 
 // default font-size
-$base-font-size: 13px;
+$base-font-size: 18px;
 
 // default line-height
-$base-line-height: 1.231;
+$base-line-height: 24px;
 
+//
 // colors
+//
 $pentandra-red: #db1111;
 $pentandra-brown: #544233;
 $pentandra-white: #ffffff;
@@ -30,16 +28,12 @@ $footer-font-color: $pentandra-white;
 
 $font-color: $pentandra-brown;
 
+// link colors
 $link-color: $pentandra-red;
-
 $link-hover-color: $pentandra-red;
-
 $link-active-color: $pentandra-red;
-
 $link-visited-color: $pentandra-red;
 
 // color for selected text
 $selected-font-color: $pentandra-white;
-
-// bg-color for selected text
 $selected-background-color: $pentandra-red;

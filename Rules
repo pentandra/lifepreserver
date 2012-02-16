@@ -85,6 +85,10 @@ compile '/css/partials/_*/' do
   # don't compile partials
 end
 
+compile '/css/modules/_*/' do
+  # don't compile modules
+end
+
 compile '/css/*/' do
   filter :sass, Compass.sass_engine_options
 
@@ -153,7 +157,10 @@ route '/static/*' do
 end
 
 route '/css/partials/_*/' do
-  # don't output partials, so return nil
+  nil
+end
+
+route '/css/modules/_*/' do
   nil
 end
 

@@ -33,6 +33,7 @@ small {
   @extend .small; }
 
 body {
+  @extend .normal;
   font-family: $base-font-family,sans-serif;
   background: $page-background;
   color: $font-color;
@@ -59,7 +60,7 @@ blockquote {
 }
 
 // Selection colors (easy to forget)
-// @include selection-color(unquote("rgb(255,255,158)"));
+@include selection-color($selected-font-color, $selected-background-color);
 
 #{$less-grid-element} {
   background: $content-background;

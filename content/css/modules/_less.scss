@@ -1,0 +1,38 @@
+$less-grid-element: unquote("div.content");
+$less-gutter-width: 24px;
+$less-column-width: 68px;
+
+@mixin grid($columns, $padding: false) {
+  @include column($columns, true);
+
+  @if $padding == true {
+    @include grid-padding($columns);
+  }
+}
+
+@mixin grid-padding($columns) {
+  @if $columns == 10 {
+    padding: 72px 48px 84px;
+  } @else if $columns == 8 {
+    padding: 48px 28px 60px;
+  } @else if $columns == 3 {
+    padding: 48px 34px 60px;
+  } @else if $columns == 5 {
+    padding: 36px 22px 48px;
+  }
+}
+
+@mixin column($columns, $last: false) {
+  width: ($less-column-width * $columns) + ($less-gutter-width * ($columns - 1));
+
+  @if $last != true {
+    margin-right: $less-gutter-width;
+  }
+}
+
+@mixin selection-color($color: unquote("rgb(0,0,0)"), $background-color: unquote("rgb(255,255,158)")) {
+  ::selection {background: #{$background-color};color: #{$color};text-shadow: none;}
+  ::-moz-selection {background: #{$background-color};color: #{$color};text-shadow: none;}
+  img::selection {background: transparent;}
+  img::-moz-selection {background: transparent;}
+}

@@ -31,17 +31,9 @@ audio[controls], canvas, video { display: inline-block; *display: inline; *zoom:
 
 html { font-size: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
-body { margin: 0; font-size: $base-font-size; line-height: $base-line-height; }
+body { margin: 0; }
 
-body, button, input, select, textarea { font-family: $base-font-family,sans-serif; color: $font-color; }
-
-/* 
- * These selection declarations have to be separate
- * No text-shadow: twitter.com/miketaylr/status/12228805301
- */
-
-::-moz-selection { background: $selected-background-color; color: $selected-font-color; text-shadow: none; }
-::selection { background: $selected-background-color; color: $selected-font-color; text-shadow: none; }
+body, button, input, select, textarea { font-family: $base-font-family, sans-serif; color: $font-color; }
 
 
 /* =============================================================================
@@ -95,8 +87,6 @@ small { font-size: 85%; }
 sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
 sup { top: -0.5em; }
 sub { bottom: -0.25em; }
-
-.emph { color: $pentandra-red; }
 
 
 /* =============================================================================
