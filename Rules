@@ -112,15 +112,17 @@ compile '/company/', :rep => :vcard do
   filter :vcard, {
     :name => @item[:company_name], 
     :phone => @item[:phone], 
-    :email => @item[:email] }
+    :email => @item[:email],
+    :url => @config[:base_url]}
 end
 
 compile '/company/', :rep => :qrcode do
   filter :vcard, {
     :name => @item[:company_name], 
     :phone => @item[:phone], 
-    :email => @item[:email] }
-  filter :qrcode, :size => 14, :color => "#544233"
+    :email => @item[:email],
+    :url => @config[:base_url]}
+  filter :qrcode, :size => 17, :module_size => 2, :color => "#544233"
 end
 
 compile '*' do

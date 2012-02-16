@@ -285,6 +285,15 @@ article#company {
 
       figure {
         margin: 0;
+
+        img {
+          float: right;
+        }
+
+        figcaption {
+          float: right;
+          clear: both;
+        }
       }
     }
   }

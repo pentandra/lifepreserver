@@ -7,23 +7,29 @@ class VcardFilter < Nanoc3::Filter
   def run(content, params = {})
 
     # Extract params
-    first_name = params[:first_name] || ''
+    first_name = params[:first_name]
     last_name = params[:last_name] || params[:name] || ''
-    email = params[:email] || ''
-    phone = params[:phone].gsub(/[\s\.-]/, "") || ''
 
     card = Vpim::Vcard::Maker.make2 do |maker|
 
       maker.add_name do |name|
-        name.given = first_name
-        name.family = last_name
+        name.given = first_name unless first_name.nil?
+        name.family = last_name unless last_name.nil?
       end
 
-      maker.add_email(email) { |e| e.location = 'work' }
+      unless params[:email].nil?
+        maker.add_email(params[:email]) { |e| e.location = 'work' }
+      end
 
-      maker.add_tel(phone) do |tel|
-        tel.location = 'work'
-        tel.capability = 'voice'
+      unless params[:phone].nil?
+        maker.add_tel(params[:phone].gsub(/[\s\.-]/, "")) do |tel|
+          tel.location = 'work'
+          tel.capability = 'voice'
+        end
+      end
+
+      unless params[:url].nil?
+        maker.add_url(params[:url])
       end
     end
 
