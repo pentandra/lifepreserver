@@ -188,7 +188,7 @@ teammembers:
     <aside class="small">
       <p><a href="https://twitter.com/<%= member[:twitter] %>" class="twitter-follow-button url" data-show-count="false" data-width="160px">Follow @<%= member[:twitter] %></a></p>
       <p><a class="email" href="mailto:<%= member[:email] %>" title="<%= member[:email] %>">Email <%= member[:first_name] %></a></p>
-      <p>Phone: <a class="tel" href="tel:<%= member[:phone].gsub(/[\s\.-]/, "") %>"><%= member[:phone] %> Ext. <%= member[:phone_ext] %></a></p>
+      <p>Phone: <a class="tel" href="tel:<%= member[:phone].gsub(/[\s\.-]/, "") %>;ext=<%= member[:phone_ext] %>"><%= member[:phone] %> Ext. <%= member[:phone_ext] %></a></p>
     </aside>
 
   </section>
@@ -199,13 +199,28 @@ teammembers:
 <footer id="contact" class="clearfix">
   <h2>Give Us A Holler!</h2>
 
-  <aside>
+  <div>
     <address class="vcard">
       <p class="fn org"><%= @item[:company_name] %></p>
       <p>Phone: <a class="tel" href="tel:<%= @item[:phone].gsub(/[\s\.-]/, "") %>"><%= @item[:phone] %></a></p>
       <p>Email: <a class="email" href="mailto:<%= @item[:email] %>"><%= @item[:email] %></a></p>
     </address>
-  </aside>
+
+    <p>
+
+      We are located in Logan, Utah, in beautiful Cache Valley. We work from
+      home. We love it--most of the time. 
+
+    </p>
+
+    <figure>
+      <a href="<%= @item.path(:rep => :vcard) %>">
+        <img src="<%= @item.path(:rep => :qrcode) %>" alt="" />
+      </a>
+      <figcaption>Our vCard</figcaption>
+    </figure>
+
+  </div>
 
   <aside class="social">
       <div class="g-plus" data-href="https://plus.google.com/108021950461928542978" data-width="300" data-height="69" data-theme="light"></div>
@@ -213,15 +228,6 @@ teammembers:
       <div class="twitter"><a href="https://twitter.com/<%= @item[:twitter] %>" class="twitter-follow-button" data-width="300px" data-show-count="false" data-size="large">Follow @<%= @item[:twitter] %></a></div>
   </aside>
     
-  <aside>
-    <figure>
-      <a href="<%= @item.path(:rep => :vcard) %>">
-        <img src="<%= @item.path(:rep => :qrcode) %>" alt="" />
-      </a>
-      <figcaption>Our vCard</figcaption>
-    </figure>
-  </aside>
-
 </footer>
 
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
