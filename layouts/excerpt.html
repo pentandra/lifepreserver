@@ -13,9 +13,11 @@
 
     <%= article[:excerpt] %>
 
-    <aside>
-      <%= tags_for(article, { :separator => "", :base_url => "/tags/" }) %>
-    </aside>
+    <footer>
+      <p>
+        <%= tags_for(article, { :separator => "", :base_url => "/tags/" }) %>
+      </p>
+    </footer>
 
   </article>
 </div>                                

@@ -7,5 +7,7 @@ cols    1     2      3      4      5
 px      68    160    252    344    436    */
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  #{$less-grid-element} {
-    @include grid(5); } }
+  .content {
+    @include grid(5); 
+  } 
+}

@@ -1,36 +1,41 @@
+//
 // Global style definitions
+// Less astute browsers will use this layout, so keep it limited.
+//
+
+@import "compass/css3/border-radius";
+@import "compass/css3/box-shadow";
+@import "compass/css3/transform";
+
+
+@include selection-color($selected-font-color, $selected-background-color);
+
+//
+// Default HTML Styles
 
 h1 {
   @extend .huge; 
-  font-weight: normal;
-  font-family: $bold-font-family, sans-serif;
 }
 
-h2 {
+h2  {
   @extend .large; 
-  font-weight: normal;
 }
 
 h3 {
   @extend .bigger;
-  font-weight: normal;
-  text-transform: uppercase;
 }
 
 h4 {
   @extend .big; 
-  font-weight: normal;
 }
 
 h5 {
-  text-transform: uppercase;
   @extend .small;
-  font-weight: normal;
-  font-family: $bold-font-family, sans-serif;
 }
 
 small {
-  @extend .small; }
+  @extend .small; 
+}
 
 body {
   @extend .normal;
@@ -44,7 +49,6 @@ a {
   &:hover {
     text-decoration: underline;
   }
-
 }
 
 address {
@@ -54,15 +58,131 @@ address {
 blockquote {
   background-color: $pentandra-red-shaded;
   color: $pentandra-white;
-  margin-left: -$less-gutter-width;
-  padding: 10px;
+  padding: $base-line-height;
   clear: both;
 }
 
-// Selection colors (easy to forget)
-@include selection-color($selected-font-color, $selected-background-color);
 
-#{$less-grid-element} {
-  background: $content-background;
+//
+// Classes
+
+.bold {
+  font-family: $bold-font-family, sans-serif;
+  font-weight: normal;
+}
+
+.button {
+  
+  @extend .reverse;
+  font-size: $base-font-size - 1;
+  clear: both;
+  display: block;
+  @include border-radius($default-radius);
+
+  em {
+    @extend .bold;
+    font-style: normal;
+  }
+}
+
+a.button {
+  @include grid(3);
+  margin-top: 6px;
+  height: $grid-height;
+  line-height: $grid-height;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #6e5643;
+  }
+
+  &:focus {
+    background-color: $pentandra-red;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: $pentandra-white;
+  }
+}
+
+.reverse {
+  background-color: $pentandra-brown;
+  color: $pentandra-white;
+}
+
+.tag {
+  @extend .small;
+  @extend .reverse;
+  padding: 3px 7px;
+  margin-right: 8px;
+  @include border-radius($default-radius / 2);
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+
+//
+// Layout-agnostic selected elements
+
+.content {
+  background-color: $content-background;
   margin: 0 auto;
 }
+
+header[role="banner"] {
+
+//  position: fixed;
+  position: absolute;
+  z-index: 999; 
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: $pentandra-white;
+//  @include box-shadow($pentandra-brown 0 0 4px);
+
+  h1 {
+    position: absolute;
+    margin: 0;
+  }
+
+  h1 a { 
+    background: transparent url('/images/pentandra-logo.png') no-repeat center center;
+    @include grid(3);
+    height: 34px;
+    margin-top: $grid-height;
+  }
+}
+
+#main {
+
+  section {
+    @extend .clearfix;
+    margin: $grid-height 0 $grid-height/2;
+    border-top: 1px solid $pentandra-brown;
+
+    &:first-child {
+      border-top: 0 none;
+    }
+
+    p {
+      margin-top: -6px;
+    }
+
+//    #{headings(1,4)} {
+//      text-transform: uppercase;
+//    }
+
+    section {
+      clear: both;
+      border-top: none;
+    }
+  }
+}
+

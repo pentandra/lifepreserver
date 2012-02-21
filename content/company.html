@@ -27,187 +27,203 @@ teammembers:
       also our finance and tax geek and actually enjoys it.
 ---
 
-<article id="company">
+<section id="meettheteam">
 
-  <section id="meettheteam">
+  <div class="wrapper">
+
+    <h2>Meet the Team.</h2>
+
+    <p class="big">
+
+      We are couple of research addicts trying to promote quality research
+      and make collaboration throughout the research process possible.
+
+    </p>
+
+  </div>
+
+  <div id="teamphoto"></div>
+
+  <nav>
+    <dl>
+      <dt><a href="#passionate">Passionate</a></dt>
+      <dd>To the point of obsession</dd>
+      <dt><a href="#quality">Quality over quantity</a></dt>
+      <dd>Quality research or bust</dd>
+      <dt><a href="#smallandfocused">Small and focused</a></dt>
+      <dd>We can move fast</dd>
+      <dt><a href="#dogfood">Dogfood</a></dt>
+      <dd>We eat our own</dd>
+      <dt><a href="#committed">Committed</a></dt>
+      <dd>We're here to stay</dd>
+      <dt><a href="#open">Open</a></dt>
+      <dd>We can't do it alone</dd>
+    </dl>
+  </nav>
+
+</section>
+
+<section id="ourvalues">
+
+  <h2>Our Values</h2>
+
+  <section id="passionate">
+
+    <h3>Passionate</h3>
+
+    <p>
+
+      Some people call it <abbr title="Obsessive-Compulsive Disorder">OCD</abbr>;
+      others call it passion. We love good research. We want to make it easier
+      to do good research. We believe that software should work the way
+      researchers work, not the other way around. That is what drives
+      us---crazy.
+      
+    </p>
+
+  </section>
+
+  <section id="quality">
+
+    <h3>Quality Over Quantity</h3>
+
+    <p>
+
+      We figure that if you're going to spend the time to do research, you
+      might as well do it right. We want to make it easier for you to do <%=
+      link_to('good research', '/research/') %>. And after you've done a great
+      job, we want to help you show it off. (You want to show it off after
+      you've put all that work into it, don't you?)
+
+    </p>
+
+  </section>
+
+  <section id="smallandfocused">
+
+    <h3>Small And Focused</h3>
+
+    <p>
+
+      We're small...and we like it that way. Being small helps us to move
+      faster and be more responsive to the needs of our customers. It also
+      helps us keep our expenses down. Even when we cross the divide from a
+      struggling startup to a profitable company (hopefully sooner than later)
+      we want to stay small and connected. 
+
+    </p>
+    
+  </section>
+
+  <section id="dogfood">
+
+    <h3>We Eat Our Own Dogfood</h3>
+
+    <p>
+
+      Necessity is the mother of invention. At least it was for us. We're
+      genealogy junkies and needed something that would help us keep track of
+      our family history research. In our hunt, what we found was a surprising
+      lack of software that really understood the research process (in
+      genealogy or any other research field). So we decided to make it
+      ourselves. We thought it would be selfish not to share it, so here we
+      are!
+
+    </p>
+
+  </section>
+
+  <section id="committed">
+
+    <h3>Committed</h3>
+
+    <p>
+      
+      We are committed to making research easier. This is our primary
+      objective. We also want to keep data open. To do this we are building on
+      open standards. We are trying to accomplish something great. We are
+      determined to see it through.
+
+    </p>
+
+  </section>
+
+  <section id="open">
+  
+    <h3>Open</h3>
+
+    <p>
+
+      Openness is all about collaboration. To us, this means open research,
+      open source, and an open business model. We wouldn't be here without the
+      open contributions from many in the technological and genealogical
+      communities. We are happy to have a chance to <%= link_to("contribute
+      back", "/open/") %>. We invite you to join with us to build something
+      bigger than us. 
+
+    </p>
+
+  </section>
+
+</section>
+
+<section>
+
+  <h2>Our Roster</h2>
+  
+  <% @item[:teammembers].each do |member| %> 
+  <% member_name = member[:first_name] + " " + member[:last_name] %>
+  <section class="teammember vcard clearfix">
+
+    <img class="photo" src="/images/<%= member_name.to_slug %>-150x150.jpg" alt="Photo of <%= member_name %>" />
 
     <div class="wrapper">
-      <h2>Meet the Team.</h3>
+      <hgroup>
+        <h3 class="big fn"><%= member_name %></h3>
+        <h4 class="small"><%= member[:title] %></h4>
+      </hgroup>
 
-      <p class="big">
-        We are couple of research addicts trying to promote quality research
-        and make collaboration throughout the research process easier.
-      </p>
+      <p><%= member[:summary] %></p>
     </div>
 
-    <div id="teamphoto"></div>
-
-    <nav>
-      <ol>
-        <li>
-          <a href="#passionate">Passionate</a>
-          <p>We love what we do</p>
-        </li>
-        <li>
-          <a href="#quality">Quality over quantity</a>
-          <p>Quality research or bust</p>
-        </li>
-        <li>
-          <a href="#smallandfocused">Small and focused</a>
-          <p>We can move fast</p>
-        </li>
-        <li>
-          <a href="#dogfood">Consumers</a>
-          <p>We eat our own dogfood</p>
-        </li>
-        <li>
-          <a href="#committed">Committed</a>
-          <p>We're here to stay</p>
-        </li>
-        <li>
-          <a href="#community">Community-oriented</a>
-          <p>That's where it's at</p>
-        </li>
-      </ol>
-    </nav>
+    <aside class="small">
+      <p><a href="https://twitter.com/<%= member[:twitter] %>" class="twitter-follow-button url" data-show-count="false" data-width="160px">Follow @<%= member[:twitter] %></a></p>
+      <p><a class="email" href="mailto:<%= member[:email] %>" title="<%= member[:email] %>">Email <%= member[:first_name] %></a></p>
+    </aside>
 
   </section>
+  <% end %>
 
-  <section id="ourvalues">
+</section>
 
-    <h2>Our Values</h2>
+<footer id="contact" class="clearfix">
+  <h2>Give Us A Holler!</h2>
 
-    <section id="passionate">
+  <aside>
+    <address class="vcard">
+      <p class="fn org"><%= @item[:company_name] %></p>
+      <p>Phone: <a class="tel" href="tel:<%= @item[:phone].gsub(/[\s\.-]/, "") %>"><%= @item[:phone] %></a></p>
+      <p>Email: <a class="email" href="mailto:<%= @item[:email] %>"><%= @item[:email] %></a></p>
+    </address>
+  </aside>
 
-      <h3>Passionate</h3>
-
-      <p>
-        Some people call it <abbr title="Obsessive-Compulsive Disorder">OCD</abbr>;
-        others call it passion. We love good research. We want to make it
-        easier for you to do good research. We believe that software should work
-        the way researchers work, not the other way around. That is what drives 
-        us. Crazy.
-      </p>
-
-    </section>
-
-    <section id="quality">
-
-      <h3>Quality Over Quantity</h3>
-
-      <p>
-        We figure that if you're going to spend the time to do research, you
-        might as well do it right. We want to make it easier for you to do
-        good research. And after you've done a great job, we want to help you
-        show it off. (You want to show it off after you've put all that work 
-        into it, don't you?)
-      </p>
-
-    </section>
-
-    <section id="smallandfocused">
-      <h3>Small And Focused</h3>
-
-      <p>
-        We're small...and we like it that way. Being small helps us to move 
-        faster and be more responsive to the needs of our customers. We are 
-        focused on making your life easier (at least your research life). 
-        Please let us know how we can serve you better! Really. We want to know.
-      </p>
-    </section>
-
-    <section id="dogfood">
-      <h3>Consumers</h3>
-
-      <p>
-        Our company came about because we wanted to keep track of our own family
-        history research. We hunted for software that would help us with it. We
-        couldn't find any that did what we needed. So we decided to make it 
-        ourselves, and here we are! We thought it would be selfish not to share
-        it.
-      </p>
-    </section>
-
-    <section id="committed">
-      <h3>Committed</h3>
-
-      <p>
-        We are committed to sticking around. We are trying to accomplish
-        something great. We want to see it through.
-      </p>
-    </section>
-
-    <section id="community">
-      <h3>Community Oriented</h3>
-
-      <p>
-        We love community. Our company would not be here without the 
-        contributions from many in the technological and genealogical
-        communities. We are happy to have a chance
-        to <%= link_to("contribute back", "/open/") %>.
-      </p>
-    </section>
-
-  </section>
-
-  <section>
-
-    <h2>Our Roster</h2>
+  <aside class="social">
+      <div class="g-plus" data-href="https://plus.google.com/108021950461928542978" data-width="300" data-height="69" data-theme="light"></div>
+      <div class="fb-like-box" data-href="http://www.facebook.com/PentandraInc" data-width="300" data-height="121" data-show-faces="true" data-stream="false" data-header="true"></div>
+      <div class="twitter"><a href="https://twitter.com/<%= @item[:twitter] %>" class="twitter-follow-button" data-width="300px" data-show-count="false" data-size="large">Follow @<%= @item[:twitter] %></a></div>
+  </aside>
     
-    <% @item[:teammembers].each do |member| %> 
-    <% member_name = member[:first_name] + " " + member[:last_name] %>
-    <section class="teammember vcard clearfix">
+  <aside>
+    <figure>
+      <a href="<%= @item.path(:rep => :vcard) %>">
+        <img src="<%= @item.path(:rep => :qrcode) %>" alt="" />
+      </a>
+      <figcaption>Our vCard</figcaption>
+    </figure>
+  </aside>
 
-      <img class="photo" src="/images/<%= member_name.to_slug %>-150x150.jpg" alt="Photo of <%= member_name %>" />
+</footer>
 
-      <div class="wrapper">
-        <hgroup>
-          <h3 class="big fn"><%= member_name %></h3>
-          <h4 class="small"><%= member[:title] %></h4>
-        </hgroup>
-
-        <p><%= member[:summary] %></p>
-      </div>
-
-      <aside class="small">
-        <p><a href="https://twitter.com/<%= member[:twitter] %>" class="twitter-follow-button url" data-show-count="false" data-width="160px">Follow @<%= member[:twitter] %></a></p>
-        <p><a class="email" href="mailto:<%= member[:email] %>" title="<%= member[:email] %>">Email <%= member[:first_name] %></a></p>
-      </aside>
-
-    </section>
-    <% end %>
-
-  </section>
-
-  <footer id="contact" class="clearfix">
-    <h2>Give Us A Holler!</h2>
-
-    <aside>
-      <address class="vcard">
-        <p class="fn org"><%= @item[:company_name] %></p>
-        <p>Phone: <a class="tel" href="tel:<%= @item[:phone].gsub(/[\s\.-]/, "") %>"><%= @item[:phone] %></a></p>
-        <p>Email: <a class="email" href="mailto:<%= @item[:email] %>"><%= @item[:email] %></a></p>
-      </address>
-    </aside>
-
-    <aside>
-      <figure>
-        <a href="<%= @item.path(:rep => :vcard) %>">
-          <img src="<%= @item.path(:rep => :qrcode) %>" alt="" />
-        </a>
-        <figcaption>Our vCard</figcaption>
-      </figure>
-    </aside>
-
-    <aside class="social">
-        <div class="g-plus" data-href="https://plus.google.com/108021950461928542978" data-width="300" data-height="69" data-theme="light"></div>
-        <div class="fb-like-box" data-href="http://www.facebook.com/PentandraInc" data-width="300" data-height="121" data-show-faces="true" data-stream="false" data-header="true"></div>
-        <div class="twitter"><a href="https://twitter.com/<%= @item[:twitter] %>" class="twitter-follow-button" data-width="300px" data-show-count="false" data-size="large">Follow @<%= @item[:twitter] %></a></div>
-    </aside>
-      
-  </footer>
-
-</article>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 <script type="text/javascript">window.___gcfg={lang: 'en'};(function(){var po=document.createElement("script");po.type="text/javascript";po.async=true;po.src="https://apis.google.com/js/plusone.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(po, s);})();</script>
 <div id="fb-root"></div>

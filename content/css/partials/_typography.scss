@@ -13,24 +13,29 @@
 .large {
 	font-size: 47px;
 	line-height: 48px;
+	letter-spacing: normal;
 }
 
 .bigger {
 	font-size: 29px;
 	line-height: 36px;
+	letter-spacing: normal;
 }
 
 .big {
 	font-size: 25px;
 	line-height: 30px;
+	letter-spacing: normal;
 }
 
 .normal {
   font-size: $base-font-size; 
   line-height: $base-line-height;
+	letter-spacing: normal;
 }
 
 .small {
 	font-size: 13px;
 	line-height: 18px;
+	letter-spacing: normal;
 }

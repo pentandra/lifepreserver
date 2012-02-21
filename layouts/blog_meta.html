@@ -1,33 +1,35 @@
-<aside id="blogmeta">
+<footer class="blogmeta">
 
-  <div class="authors">
-    <h4>Authors</h4>
+  <nav class="authors">
+    <h2 class="big">Authors</h2>
     
     <ul>
     <% authors(publishing_articles).each do |author| %>
       <li><%= link_for_author(author, "/authors/") %></li>
     <% end %>
     </ul>
-  </div>
+  </nav>
 
-  <div class="tags">
-    <h4>Tags A-Z</h4>
+  <nav class="tags">
+    <h2 class="big">Tags A-Z</h2>
+
     <ul>
     <% tag_set(publishing_articles).sort.each do |tag| %>
-      <li><%= link_for_tag(tag, "/tags/") %></li> 
+      <li><%= link_for_tagcloud(tag, "/tags/") %></li> 
     <% end %>
     </ul>
-  </div>
+  </nav>
 
-  <div class="archives">
-    <h4>Archives</h4>
+  <nav class="archives">
+    <h2 class="big">Archives</h2>
+
     <ul>
       <li><%= link_to 'Recent Articles', '/blog/' %></li>
     <% archive_years(publishing_articles).sort.reverse.each do |year| %>
       <li><%= link_for_archive(year, "/blog/") %></li>
     <% end %>
     </ul>
-  </div>
+  </nav>
 
-</aside>
+</footer>
 

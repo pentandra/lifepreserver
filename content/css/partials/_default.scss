@@ -1,6 +1,7 @@
-@import "compass/css3/border-radius";
-@import "compass/css3/box-shadow";
-@import "compass/css3/transform";
+//
+// Default layout - only put styles in here that are layout specific
+// Less astute browsers will use this layout, so keep it limited.
+//
 
 /* Default Layout: 992px.
  * Gutters: 24px.
@@ -11,83 +12,17 @@ cols    1     2      3      4      5      6      7      8      9      10
 px      68    160    252    344    436    528    620    712    804    896    */
 
 $less-outer-margin: 48px;
+$rod-height: 33px;
 
-#{$less-grid-element} {
+.content {
   @include grid(10); 
   padding: 0 $less-outer-margin;
 }
 
-a.button {
-  
-  margin-top: 6px;
-  background-color: $pentandra-brown;
-  font-size: 17px;
-  height: $grid-height;
-  line-height: $grid-height;
-  text-align: center;
-  color: $pentandra-white;
-  display: block;
-  cursor: pointer;
-  @include grid(3);
-  @include border-radius(12px, 12px);
-  
-  em {
-    font-family: $bold-font-family, sans-serif;
-    font-style: normal;
-  }
-
-  &:hover {
-    background-color: #6e5643;
-    text-decoration: none;
-  }
-
-  &:focus {
-    background-color: $pentandra-red;
-  }
-
-  &:visited {
-    color: $pentandra-white;
-  }
-}
-
-a[rel~="tag"] {
-  color: white;
-  @extend .small;
-  background-color: $pentandra-brown;
-  padding: 3px 7px;
-  @include border-radius(6px, 6px);
-  margin-right: 8px;
-
-  &:hover {
-    text-decoration: none;
-  }
-}
-
 header[role="banner"] {
 
-  @extend .clearfix;
-//  position: fixed;
-  position: absolute;
-  z-index: 999; 
-  height: $grid-height*3 - 33px;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background-color: $pentandra-white;
-//  @include box-shadow($pentandra-brown 0 0 4px);
-  border-bottom: 33px solid $pentandra-brown;
-
-  h1 {
-    position: absolute;
-    margin: 0;
-  }
-
-  h1 a { 
-    background: transparent url('/images/pentandra-logo.png') no-repeat center center;
-    @include grid(3);
-    height: 34px;
-    margin-top: $grid-height;
-  }
+  height: $grid-height*3 - $rod-height;
+  border-bottom: $rod-height solid $pentandra-brown;
 
   nav {
     float: right;
@@ -102,7 +37,7 @@ header[role="banner"] {
       
         &:hover, &:focus {
           background-color: $pentandra-red;
-          @include border-radius(12px, 12px);
+          @include border-radius($default-radius);
           color: $pentandra-white !important;
           text-decoration: none;
         }
@@ -117,30 +52,20 @@ header[role="banner"] {
 
 #main {
 
-  @extend .clearfix;
   margin-top: $grid-height * 3;
 
   section {
-    @extend .clearfix;
-    margin: $grid-height 0 $grid-height/2;
-    border-top: 1px solid $pentandra-brown;
-
-    &:first-child {
-      border-top: 0 none;
-    }
 
     p {
       float: right;
       @include grid(7);
-      margin-top: -6px;
     }
 
-    h2 {
-      text-transform: uppercase;
-    }
-
-    section {
-      border-top: none;
+    .sub {
+      float: left;
+      @include grid(3);
+      text-align: right;
+      margin: 0;
     }
   }
 }
@@ -159,7 +84,7 @@ section#zeugma {
       width: 100%;
     }
 
-    h1 {
+    .exclamatory {
       color: $pentandra-red;
       text-transform: uppercase;
       @include rotate(90deg);
@@ -178,17 +103,8 @@ section#zeugma {
 section#researchexperience {
 
   section {
-    @extend .clearfix;
     height: $grid-height*2;
     margin-bottom: $grid-height;
-
-    h4 {
-      float: left;
-      @include grid(3);
-      text-align: right;
-      text-transform: uppercase;
-      margin: 0;
-    }
 
     p {
       float: left;
@@ -450,7 +366,7 @@ aside.postmeta {
   float: left;
 }
 
-aside#blogmeta {
+#blogmeta {
   @extend .clearfix;
   margin: $grid-height 0;
   border-top: 3px solid $pentandra-brown;
@@ -492,7 +408,7 @@ div.tags {
 // "Open" styling
 //
 
-section#openresearch {
+#openresearch {
   
   aside {
     @include grid(7);
@@ -564,38 +480,39 @@ footer[role="contentinfo"] {
     @extend .clearfix;
   }
 
-  small#footerlogo {
+  #footerlogo {
     background: transparent url('/images/pentandra-logo-reverse.png') no-repeat scroll left top;
     cursor: pointer;
     padding: 67px 0 0 0;
     @include grid(3);
   }
 
-  aside#recentthoughts {
+  #recentthoughts {
     @include grid(5);
 
-    h5 {
+    h1 {
+      @extend .bold;
       margin: 0;
+      text-transform: uppercase;
     }
 
     article.excerpt {
-      @extend .clearfix;
+      clear: both;
       margin: 5px 0;
 
       time {
         width: auto;
         text-align: left;
-      }
-
-      h5 {
+      } 
+      h1 {
         @include grid(4);
         float: right;
-        line-height: 24px;
+        line-height: $base-line-height;
       }
     }
   }
 
-  aside#feelingsocial {
+  #feelingsocial {
     @include grid(2);
 
     ul {

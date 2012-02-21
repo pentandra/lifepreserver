@@ -10,7 +10,7 @@ $less-outer-margin: 34px;
 
 @media only screen and (max-width: 767px) {
 
-  #{$less-grid-element} {
+  .content {
     @include grid(3); 
     padding: 0 $less-outer-margin;
   } 
