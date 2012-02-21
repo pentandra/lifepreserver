@@ -1,7 +1,7 @@
 --- 
 title: Company
 company_name: Pentandra Research Solutions, Inc.
-phone: +1 435.294.2964
+phone: &tel +1 435.294.2964
 email: hello@pentandra.com
 twitter: PentandraInc
 teammembers:
@@ -10,7 +10,7 @@ teammembers:
     title: CEO and Super Coder
     email: chris@pentandra.com
     twitter: cd_chapman
-    phone: 435-294-2964
+    phone: *tel
     phone_ext: 1000
     summary: >
       Chris loves to tackle difficult problems and dreams (literally) about
@@ -20,7 +20,7 @@ teammembers:
     title: CFO and Think Tanker
     email: katie@pentandra.com
     twitter: KAMChapman
-    phone: 435-294-2964
+    phone: *tel
     phone_ext: 1001
     summary: >
       Katie loves to solve a good puzzle and thrives on the details. She is
@@ -157,9 +157,8 @@ teammembers:
       Openness is all about collaboration. To us, this means open research,
       open source, and an open business model. We wouldn't be here without the
       open contributions from many in the technological and genealogical
-      communities. We are happy to have a chance to <%= link_to("contribute
-      back", "/open/") %>. We invite you to join with us to build something
-      bigger than us. 
+      communities. We are happy to have a chance to <%= link_to("contribute back", "/open/") %>. 
+      We invite you to join with us to build something amazing together. 
 
     </p>
 
@@ -189,6 +188,7 @@ teammembers:
     <aside class="small">
       <p><a href="https://twitter.com/<%= member[:twitter] %>" class="twitter-follow-button url" data-show-count="false" data-width="160px">Follow @<%= member[:twitter] %></a></p>
       <p><a class="email" href="mailto:<%= member[:email] %>" title="<%= member[:email] %>">Email <%= member[:first_name] %></a></p>
+      <p>Phone: <a class="tel" href="tel:<%= member[:phone].gsub(/[\s\.-]/, "") %>"><%= member[:phone] %> Ext. <%= member[:phone_ext] %></a></p>
     </aside>
 
   </section>
