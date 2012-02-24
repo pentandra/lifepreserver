@@ -101,7 +101,7 @@ section, .section {
 
   // Move text up to the top of the container to line up with neighbors. 
   // Algorithm: ($font-size - $line-height) / 2
-  .normal, p {
+  .normal {
     margin-top: -3px;
   }
 
@@ -165,18 +165,17 @@ a.button, .button a {
     color: $pentandra-white;
     background-color: $pentandra-brown;
     
-    &:hover {
-     background-color: #6e5643;
-    }
-
-    &:focus {
+    &:hover, &:focus {
      background-color: $pentandra-red;
     }
   }
 }
 
 .img {
-  text-align: center;
+
+  img {
+    display: block;
+  }
 }
 
 .menu {
