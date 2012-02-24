@@ -33,6 +33,10 @@ h5 {
   @extend .small;
 }
 
+#{headings(1,3)} {
+  text-transform: uppercase;
+}
+
 small {
   @extend .small; 
 }
@@ -62,127 +66,195 @@ blockquote {
   clear: both;
 }
 
+em, .em {
+  font-family: $bold-font-family, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+section, .section {
+  @extend .group;
+  margin: $grid-height 0 $grid-height / 2;
+}
 
 //
 // Classes
 
-.bold {
-  font-family: $bold-font-family, sans-serif;
-  font-weight: normal;
+
+// Block Structures
+
+.mod {
+  margin-top: $base-line-height / 2;
+  margin-bottom: $base-line-height / 2;
 }
 
-.button {
-  
-  @extend .reverse;
-  font-size: $base-font-size - 1;
-  clear: both;
-  display: block;
+.basic {
   @include border-radius($default-radius);
+}
 
-  em {
-    @extend .bold;
-    font-style: normal;
+.mini {
+  @include border-radius($default-radius / 2);
+}
+
+.bd, .aside {
+  @extend .group;
+
+  // Move text up to the top of the container to line up with neighbors. 
+  // Algorithm: ($font-size - $line-height) / 2
+  .normal, p {
+    margin-top: -3px;
+  }
+
+  // Algorithm: ($font-size - $line-height)
+  .big, .small {
+    margin-top: -5px;
+  }
+
+  .bigger {
+    margin-top: -7px;
+  }
+
+  .large {
+    margin-top: -1px;
+  }
+
+  .huge {
+    margin-top: -8px;
+  }
+
+  .gigantic {
+    margin-top: -9px;
   }
 }
 
-a.button {
-  @include grid(3);
-  margin-top: 6px;
-  height: $grid-height;
+// Block Skins
+
+.simple {
+  @include border-radius($default-radius);
+  border: 1px solid $pentandra-brown;
+}
+
+.noted {
+  border-top: 1px solid $pentandra-brown;
+}
+
+
+// Content classes
+
+a.button, .button a {
+  font-size: $base-font-size - 1;
   line-height: $grid-height;
   text-align: center;
-  cursor: pointer;
+
+  @include border-radius($default-radius);
+  display: block;
+
+  color: $pentandra-brown;
+  background-color: $pentandra-white;
+
+  &:hover, &:focus {
+   background-color: $pentandra-red;
+   color: $pentandra-white;
+  }
 
   &:hover {
-    background-color: #6e5643;
+   text-decoration: none;
   }
 
-  &:focus {
-    background-color: $pentandra-red;
+  &.rev {
+    color: $pentandra-white;
+    background-color: $pentandra-brown;
+    
+    &:hover {
+     background-color: #6e5643;
+    }
+
+    &:focus {
+     background-color: $pentandra-red;
+    }
   }
+}
+
+.img {
+  text-align: center;
+}
+
+.menu {
+  ul li {
+    float: left;
+  }
+}
+
+.tag {
+  padding: 3px 7px;
+  margin-right: 8px;
+  height: $grid-height;
+  line-height: $grid-height;
 
   &:hover {
     text-decoration: none;
   }
+}
+
+
+//
+// Background blocks
+
+.rev, .rev a {
+  background-color: $pentandra-brown;
+  color: $pentandra-white;
+}
+
+.grab, .grab a {
+  background-color: $pentandra-red-shaded;
+  color: $pentandra-white;
+}
+
+.excl {
+  color: $pentandra-red;
+}
+
+.rev a, .grab a {
 
   &:visited {
     color: $pentandra-white;
   }
 }
 
-.reverse {
-  background-color: $pentandra-brown;
-  color: $pentandra-white;
-}
-
-.tag {
-  @extend .small;
-  @extend .reverse;
-  padding: 3px 7px;
-  margin-right: 8px;
-  @include border-radius($default-radius / 2);
-
-  &:hover {
-    text-decoration: none;
-  }
-}
-
 
 //
-// Layout-agnostic selected elements
+// Layout classes
 
 .content {
+  @extend .group;
   background-color: $content-background;
   margin: 0 auto;
 }
 
-header[role="banner"] {
+.main {
+  border-top: 33px solid $pentandra-brown;
+}
 
-//  position: fixed;
-  position: absolute;
-  z-index: 999; 
-  width: 100%;
-  top: 0;
-  left: 0;
-  background-color: $pentandra-white;
-//  @include box-shadow($pentandra-brown 0 0 4px);
+.banner {
 
-  h1 {
-    position: absolute;
+  .logo {
+    float: left;
     margin: 0;
   }
 
-  h1 a { 
-    background: transparent url('/images/pentandra-logo.png') no-repeat center center;
-    @include grid(3);
-    height: 34px;
-    margin-top: $grid-height;
-  }
-}
+  .menu {
+    float: right;
 
-#main {
-
-  section {
-    @extend .clearfix;
-    margin: $grid-height 0 $grid-height/2;
-    border-top: 1px solid $pentandra-brown;
-
-    &:first-child {
-      border-top: 0 none;
-    }
-
-    p {
-      margin-top: -6px;
-    }
-
-//    #{headings(1,4)} {
-//      text-transform: uppercase;
-//    }
-
-    section {
-      clear: both;
-      border-top: none;
+    .button a {
+      font-size: $base-font-size;
+      line-height: 34px;
+      padding: 0 15px;
     }
   }
 }
 
+.logo { 
+  @include grid(3);
+  height: 34px;
+  background: transparent url('/images/pentandra-logo.png') no-repeat center center;
+}

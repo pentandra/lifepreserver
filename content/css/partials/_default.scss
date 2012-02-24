@@ -12,135 +12,56 @@ cols    1     2      3      4      5      6      7      8      9      10
 px      68    160    252    344    436    528    620    712    804    896    */
 
 $less-outer-margin: 48px;
-$rod-height: 33px;
 
 .content {
   @include grid(10); 
   padding: 0 $less-outer-margin;
 }
 
-header[role="banner"] {
+.bd {
+  @include grid(7);
+  float: right;
 
-  height: $grid-height*3 - $rod-height;
-  border-bottom: $rod-height solid $pentandra-brown;
-
-  nav {
+  .img {
     float: right;
-    margin-top: 61px;
-
-    li {
-      float: left;
-
-      a {
-        color: $pentandra-brown;
-        padding: 7px 15px;
-      
-        &:hover, &:focus {
-          background-color: $pentandra-red;
-          @include border-radius($default-radius);
-          color: $pentandra-white !important;
-          text-decoration: none;
-        }
-
-        &:visited {
-          color: $pentandra-brown;
-        }
-      }
-    }
+    margin-left: $less-gutter-width;
+  }
+// combine?
+  .aside {
+    float: right;
+    margin: $base-line-height 0 $grid-height $less-gutter-width;
   }
 }
 
-#main {
+.aside {
+  @include grid(3);
+  float: left;
 
-  margin-top: $grid-height * 3;
-
-  section {
-
-    p {
-      float: right;
-      @include grid(7);
-    }
-
-    .sub {
-      float: left;
-      @include grid(3);
-      text-align: right;
-      margin: 0;
-    }
+  // ?
+  .close {
+    text-align: right;
   }
 }
 
-section#zeugma {
-
-  padding: $grid-height 0; 
-
-  div.wrapper {
+.montage {
+  .em {
+    @include rotate(-90deg);
     @include grid(3); 
     float: right;
-      
-    p {
-      font-style: italic;
-      float: none;
-      width: 100%;
-    }
-
-    .exclamatory {
-      color: $pentandra-red;
-      text-transform: uppercase;
-      @include rotate(90deg);
-      margin: 0;
-    }
-  }
-  
-  div#mosaic {
-    @include grid(6);
-    background: transparent url('/images/zeugma.jpg') no-repeat scroll left top;
-    height: 412px;
-    float: left;
+    margin: 132px 0 0;
   }
 }
 
-section#researchexperience {
-
-  section {
-    height: $grid-height*2;
-    margin-bottom: $grid-height;
-
-    p {
-      float: left;
-      @include grid(4);
-      margin: 0 $less-gutter-width 0;
-    }
-  }
-
-  div {
-    float: left;
-    @include grid(3);
-    height: $grid-height*2;
-    margin: 5px 0 $less-gutter-width;
-  }
-
-  div#clarity {
-    background: transparent url('/images/clarity.jpg') no-repeat scroll left top;
-  }
-
-  div#context {
-    background: transparent url('/images/context.jpg') no-repeat scroll left top;
-  }
-
-  div#collaboration {
-    background: transparent url('/images/collaboration.jpg') no-repeat scroll left top;
-    height: 120px;
-    margin-top: -10px;
-  }
-}
-
-div#geunglelogo {
-    background: transparent url('/images/geungle-logo.png') no-repeat scroll center top;
+.geungle-logo {
     @include grid(7);
     height: 186px;
-    margin: 0 0 60px 252px + $less-gutter-width;
-    clear: both;
+    background: transparent url('/images/geungle-logo.png') no-repeat scroll center top;
+}
+
+.zeugma {
+  @include grid(7);
+  height: 412px;
+  background: transparent url('/images/zeugma.jpg') no-repeat scroll center top;
 }
 
 //
@@ -241,7 +162,6 @@ section#meettheteam {
   }
 
   nav {
-    @extend .clearfix;
     clear: both;
     background-color: $pentandra-brown;
     color: $pentandra-white;
@@ -367,7 +287,6 @@ aside.postmeta {
 }
 
 #blogmeta {
-  @extend .clearfix;
   margin: $grid-height 0;
   border-top: 3px solid $pentandra-brown;
 
@@ -404,36 +323,6 @@ div.tags {
   }
 }
 
-//
-// "Open" styling
-//
-
-#openresearch {
-  
-  aside {
-    @include grid(7);
-    float: right;
-
-    footer {
-      @extend .small;
-    }
-  }
-}
-
-.footnotes {
-  @extend .small 
-}
-
-figure {
-  @include grid(3);
-  margin: 10px 0;
-}
-   
-figcaption {
-  @extend .small; 
-  padding: 5px 0;
-}
-
 article#research {
   
   div#researchprocess {
@@ -442,7 +331,7 @@ article#research {
   }
 
   aside {
-    @extend .clearfix;
+//    @extend .clearfix;
   }
 }
 
@@ -450,16 +339,9 @@ article#research {
 // Footer
 //
 
-footer[role="contentinfo"] {
-
-  background: $footer-background;
-  color: $footer-font-color;
-  position: absolute;
-  width: 100%;
-  left: 0;
+.contentinfo {
 
   a {
-    color: $pentandra-white;
 
     &:hover {
       text-decoration: none;
@@ -477,7 +359,6 @@ footer[role="contentinfo"] {
   div.content {
     background-color: inherit;
     padding: 33px 48px 84px;
-    @extend .clearfix;
   }
 
   #footerlogo {
@@ -533,8 +414,6 @@ footer[role="contentinfo"] {
     a.button {
 
       margin-top: 36px;
-      background-color: $pentandra-white;
-      height: $grid-height / 2;
       line-height: $grid-height / 2;
       color: $pentandra-brown;
       @include grid(2);
@@ -552,26 +431,29 @@ footer[role="contentinfo"] {
         color: $pentandra-brown;
       }
     }
-
-    .gplus {
-      background: transparent url('/images/gplus.png') no-repeat center center;
-      width: 24px;
-    }
-
-    .fb {
-      background: transparent url('/images/fb.png') no-repeat center center;
-      width: 11px;
-    }
-
-    .twitter {
-      background: transparent url('/images/twitter.png') no-repeat center center;
-      width: 35px;
-    }
-
-    .rss {
-      background: transparent url('/images/rss.png') no-repeat center center;
-      width: 24px;
-      margin: 0;
-    }
   }
+}
+
+.gplus {
+  height: $base-line-height;
+  width: 24px;
+  background: transparent url('/images/gplus.png') no-repeat center center;
+}
+
+.fb {
+  height: $base-line-height;
+  width: 11px;
+  background: transparent url('/images/fb.png') no-repeat center center;
+}
+
+.twitter {
+  height: $base-line-height;
+  width: 35px;
+  background: transparent url('/images/twitter.png') no-repeat center center;
+}
+
+.rss {
+  height: $base-line-height;
+  width: 24px;
+  background: transparent url('/images/rss.png') no-repeat center center;
 }
