@@ -80,6 +80,16 @@ $less-outer-margin: 48px;
   background: transparent url('/images/zeugma.jpg') no-repeat scroll center top;
 }
 
+.theteam {
+  @include grid(6);
+  height: 290px;
+  background: transparent url('/images/team-436x290.jpg') no-repeat scroll right bottom;
+
+  &:hover {
+    background-image: url('/images/team-436x290-silly.jpg');
+  }
+}
+
 //
 // Company
 //
