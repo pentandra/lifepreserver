@@ -27,8 +27,8 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.96774194"
-     inkscape:cx="496"
-     inkscape:cy="1672.841"
+     inkscape:cx="494.96666"
+     inkscape:cy="1604.6411"
      inkscape:document-units="px"
      inkscape:current-layer="layer8"
      showgrid="true"
@@ -791,7 +791,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -3880,7 +3880,7 @@
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="Company"
-     style="display:inline">
+     style="display:none">
     <flowRoot
        transform="translate(-84.0915,-14.60305)"
        style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0.5px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#2a1a0d;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
@@ -4458,7 +4458,100 @@
      inkscape:groupmode="layer"
      id="layer8"
      inkscape:label="Open"
-     style="display:none" />
+     style="display:inline">
+    <rect
+       style="fill:#544233;fill-opacity:1;stroke:none;display:inline"
+       id="rect3949"
+       width="992"
+       height="96"
+       x="0"
+       y="394.5571" />
+    <g
+       id="g9030-7"
+       transform="translate(14.0625,-295.53815)">
+      <rect
+         rx="12.172313"
+         ry="12.172312"
+         style="fill:#ffffff;fill-opacity:1;stroke:none"
+         id="rect3635-8-6"
+         width="251.87512"
+         height="47.619095"
+         x="34"
+         y="714.28571" />
+      <text
+         xml:space="preserve"
+         style="font-size:17px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
+         x="108.7896"
+         y="742.37927"
+         id="text3637-2-5"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3639-05-6"
+           x="108.7896"
+           y="742.37927">Open Research</tspan></text>
+    </g>
+    <g
+       transform="translate(658.0625,-295.53815)"
+       id="g3925">
+      <rect
+         y="714.28571"
+         x="34"
+         height="47.619095"
+         width="251.87512"
+         id="rect3927"
+         style="fill:#ffffff;fill-opacity:1;stroke:none"
+         ry="12.172312"
+         rx="12.172313" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3929"
+         y="742.37927"
+         x="111.02165"
+         style="font-size:17px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
+         xml:space="preserve"><tspan
+           y="742.37927"
+           x="111.02165"
+           id="tspan3931"
+           sodipodi:role="line">Open Business</tspan></text>
+    </g>
+    <g
+       id="g3933"
+       transform="translate(336.0625,-295.53815)">
+      <rect
+         rx="12.172313"
+         ry="12.172312"
+         style="fill:#ffffff;fill-opacity:1;stroke:none"
+         id="rect3935"
+         width="251.87512"
+         height="47.619095"
+         x="34"
+         y="714.28571" />
+      <text
+         xml:space="preserve"
+         style="font-size:17px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
+         x="115.39756"
+         y="742.37927"
+         id="text3937"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3939"
+           x="115.39756"
+           y="742.37927">Open Source</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:76px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#544233;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"
+       x="48.0625"
+       y="238.0952"
+       id="text3941"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3943"
+         x="48.0625"
+         y="238.0952">AN <tspan
+   style="fill:#db1111"
+   id="tspan3945">OPEN</tspan> APPROACH</tspan></text>
+  </g>
   <g
      style="display:none"
      inkscape:label="Blog"

@@ -188,6 +188,13 @@ a.button, .button a {
   }
 }
 
+.menu3 {
+  ul li {
+    @include grid(3);
+  }
+}
+    
+
 .tag {
   padding: 3px 7px;
   margin-right: 8px;
@@ -224,10 +231,15 @@ a.button, .button a {
   }
 }
 
-.rev a.button {
+.rev a.button, .rev .button a {
 
   color: $pentandra-brown;
   background-color: $pentandra-white;
+
+  &:hover, &:focus {
+    color: $pentandra-white;
+    background-color: $pentandra-red;
+  }
 }
 
 

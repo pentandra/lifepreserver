@@ -13,9 +13,19 @@ px      68    160    252    344    436    528    620    712    804    896    */
 
 $less-outer-margin: 48px;
 
+//
+// Block structures
+
 .content {
   @include grid(10); 
   padding: 0 $less-outer-margin;
+}
+
+.ext {
+  margin-left: -$less-outer-margin;
+  margin-right: -$less-outer-margin;
+  padding-left: $less-outer-margin;
+  padding-right: $less-outer-margin;
 }
 
 .bd {
@@ -27,6 +37,16 @@ $less-outer-margin: 48px;
     margin-left: $less-gutter-width;
   }
   
+}
+
+.menu3 {
+  ul li {
+    margin-right: 70px;
+
+    &.last {
+      margin-right: 0;
+    }
+  }
 }
 
 .aside {
