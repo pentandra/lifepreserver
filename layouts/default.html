@@ -25,13 +25,13 @@
 
   <script src="/js/libs/modernizr-2.0.6.min.js"></script>
 </head>
-<body>
+<body id="top">
 
-<header role="banner">
+<header role="banner" class="banner section">
   <div class="content">
-    <h1><%= link_to("Pentandra Research Solutions", '/', :class => 'ir') %></h1>
-    <nav>
-      <ul>
+    <h1 class="logo"><%= link_to("Pentandra Research Solutions", '/', :class => 'ir') %></h1>
+    <nav class="menu">
+      <ul class="button">
         <li><%= link_to('Products',  '/products/') %></li>
         <li><%= link_to('Research',  '/research/') %></li>
         <li><%= link_to('Company',   '/company/') %></li>
@@ -41,37 +41,55 @@
     </nav>
   </div>
 </header>
-<div id="main" role="main" class="content clearfix">
-  <%= yield %>
-</div>
-<footer role="contentinfo">
+<div id="main" role="main" class="main">
   <div class="content">
-    <aside id="feelingsocial">
-      <ul>
-        <li><a href="https://plus.google.com/108021950461928542978?prsrc=3" class="gplus ir">Google+</a></li>
-        <li><a href="http://www.facebook.com/PentandraInc" class="fb ir">Facebook</a></li>
-        <li><a href="http://twitter.com/PentandraInc" class="twitter ir">Twitter</a></li>
-        <li><a href="http://feeds.feedburner.com/pentandra/" class="rss ir">RSS</a></li>
-      </ul>
+    <%= yield %>
+  </div>
+</div>
+<footer role="contentinfo" class="rev contentinfo">
+  <div class="content">
+    <div class="section">
+      <div class="bd">
+        <aside class="aside">
+          <div class="menu group nav">
+            <ul>
+              <li><a href="https://plus.google.com/108021950461928542978?prsrc=3" class="gplus ir">Google+</a></li>
+              <li><a href="http://www.facebook.com/PentandraInc" class="fb ir">Facebook</a></li>
+              <li><a href="http://twitter.com/PentandraInc" class="twitter ir">Twitter</a></li>
+              <li><a href="http://feeds.feedburner.com/pentandra/" class="rss ir">RSS</a></li>
+            </ul>
+          </div>
 
-      <a href="/company/#contact" class="button">Contact Us</a>
-      <p class="small"><a href="#main" class="bold">Back to top</a></p>
-    </aside>
-    <aside id="recentthoughts">
-      <h1 class="small">Recent Thoughts</h1>
-      
-      <% @site.publishing_articles[0, 4].each do |post| %>
-      <article class="excerpt"> 
-        <h2 class="small"><%= link_to(post[:title], post) %></h2>
-        <time pubdate><%= post[:created_at] %></time>
-      </article>
-      <% end %>
-      
-    </aside>
-    <small id="footerlogo" onclick="location.href='<%= @config[:base_url] %>';">
-      &#169; Pentandra Research Solutions, Inc.
-    </small>
+          <div class="mini mod">
+            <a href="/company/#contact" class="em button">Contact Us</a>
+          </div>
 
+        </aside>
+
+        <aside class="inner">
+          <h2 class="small em">Recent Thoughts</h2>
+          
+          <div class="articles group">
+            <% @site.publishing_articles[0, 4].each do |post| %>
+            <article> 
+              <header>
+                <time pubdate class="em"><%= post[:created_at] %></time>
+                <h3 class="small"><%= link_to(post[:title], post) %></h3>
+              </header>
+            </article>
+            <% end %>
+          </div>
+          
+        </aside>
+
+      </div>
+      <small class="aside revlogo copyright" onclick="location.href='<%= @config[:base_url] %>';">
+        &#169; Pentandra Research Solutions, Inc.
+      </small>
+
+      <p class="small"><a href="#top" class="em">Back to top</a></p>
+
+    </div>
   </div>
 </footer>
 

@@ -27,43 +27,39 @@ teammembers:
       also our finance and tax geek and actually enjoys it.
 ---
 
-<section id="meettheteam">
+<div class="wrapper">
 
-  <div class="wrapper">
+  <h1 class="large">Meet the Team.</h1>
 
-    <h2>Meet the Team.</h2>
+  <p class="big">
 
-    <p class="big">
+    We are couple of research addicts trying to promote quality research
+    and make collaboration throughout the research process possible.
 
-      We are couple of research addicts trying to promote quality research
-      and make collaboration throughout the research process possible.
+  </p>
 
-    </p>
+</div>
 
-  </div>
+<div id="teamphoto"></div>
 
-  <div id="teamphoto"></div>
+<nav class="rev menu">
+  <dl>
+    <dt><a href="#passionate">Passionate</a></dt>
+    <dd>To the point of obsession</dd>
+    <dt><a href="#quality">Quality over quantity</a></dt>
+    <dd>Quality research or bust</dd>
+    <dt><a href="#smallandfocused">Small and focused</a></dt>
+    <dd>We can move fast</dd>
+    <dt><a href="#dogfood">Dogfood</a></dt>
+    <dd>We eat our own</dd>
+    <dt><a href="#committed">Committed</a></dt>
+    <dd>We're here to stay</dd>
+    <dt><a href="#open">Open</a></dt>
+    <dd>We can't do it alone</dd>
+  </dl>
+</nav>
 
-  <nav>
-    <dl>
-      <dt><a href="#passionate">Passionate</a></dt>
-      <dd>To the point of obsession</dd>
-      <dt><a href="#quality">Quality over quantity</a></dt>
-      <dd>Quality research or bust</dd>
-      <dt><a href="#smallandfocused">Small and focused</a></dt>
-      <dd>We can move fast</dd>
-      <dt><a href="#dogfood">Dogfood</a></dt>
-      <dd>We eat our own</dd>
-      <dt><a href="#committed">Committed</a></dt>
-      <dd>We're here to stay</dd>
-      <dt><a href="#open">Open</a></dt>
-      <dd>We can't do it alone</dd>
-    </dl>
-  </nav>
-
-</section>
-
-<section id="ourvalues">
+<section id="ourvalues" class="noted">
 
   <h2>Our Values</h2>
 
@@ -166,13 +162,13 @@ teammembers:
 
 </section>
 
-<section>
+<section class="noted">
 
   <h2>Our Roster</h2>
   
   <% @item[:teammembers].each do |member| %> 
   <% member_name = member[:first_name] + " " + member[:last_name] %>
-  <section class="teammember vcard clearfix">
+  <section class="teammember vcard group">
 
     <img class="photo" src="/images/<%= member_name.to_slug %>-150x150.jpg" alt="Photo of <%= member_name %>" />
 
@@ -196,7 +192,7 @@ teammembers:
 
 </section>
 
-<footer id="contact" class="clearfix">
+<footer id="contact" class="group">
   <h2>Give Us A Holler!</h2>
 
   <div>

@@ -22,22 +22,18 @@ $less-outer-margin: 48px;
   @include grid(7);
   float: right;
 
-  .img {
+  .aside {
     float: right;
     margin-left: $less-gutter-width;
   }
-// combine?
-  .aside {
-    float: right;
-    margin: $base-line-height 0 $grid-height $less-gutter-width;
-  }
+  
 }
 
 .aside {
   @include grid(3);
   float: left;
 
-  // ?
+  // ? move this into the parent class?
   .close {
     text-align: right;
   }
@@ -341,119 +337,7 @@ article#research {
 
 .contentinfo {
 
-  a {
-
-    &:hover {
-      text-decoration: none;
-    }
-  }
-
-  aside, small {
-    float: right;
-  }
-
-  aside {
-    margin: 0 0 $grid-height $less-gutter-width;
-  }
-
-  div.content {
-    background-color: inherit;
-    padding: 33px 48px 84px;
-  }
-
-  #footerlogo {
-    background: transparent url('/images/pentandra-logo-reverse.png') no-repeat scroll left top;
-    cursor: pointer;
-    padding: 67px 0 0 0;
-    @include grid(3);
-  }
-
-  #recentthoughts {
+  .inner {
     @include grid(5);
-
-    h1 {
-      @extend .bold;
-      margin: 0;
-      text-transform: uppercase;
-    }
-
-    article.excerpt {
-      clear: both;
-      margin: 5px 0;
-
-      time {
-        width: auto;
-        text-align: left;
-      } 
-      h1 {
-        @include grid(4);
-        float: right;
-        line-height: $base-line-height;
-      }
-    }
   }
-
-  #feelingsocial {
-    @include grid(2);
-
-    ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    li {
-      float: left;
-      height: 24px;
-    }
-
-    a {
-      margin-right: 22px;
-    }
-
-    a.button {
-
-      margin-top: 36px;
-      line-height: $grid-height / 2;
-      color: $pentandra-brown;
-      @include grid(2);
-      @include border-radius(6px);
-      
-      &:hover {
-        background-color: $pentandra-white;
-      }
-
-      &:focus {
-        background-color: $pentandra-white;
-      }
-
-      &:visited {
-        color: $pentandra-brown;
-      }
-    }
-  }
-}
-
-.gplus {
-  height: $base-line-height;
-  width: 24px;
-  background: transparent url('/images/gplus.png') no-repeat center center;
-}
-
-.fb {
-  height: $base-line-height;
-  width: 11px;
-  background: transparent url('/images/fb.png') no-repeat center center;
-}
-
-.twitter {
-  height: $base-line-height;
-  width: 35px;
-  background: transparent url('/images/twitter.png') no-repeat center center;
-}
-
-.rss {
-  height: $base-line-height;
-  width: 24px;
-  background: transparent url('/images/rss.png') no-repeat center center;
 }

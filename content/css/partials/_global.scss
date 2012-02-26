@@ -105,25 +105,24 @@ section, .section {
     margin-top: -3px;
   }
 
-  // Algorithm: ($font-size - $line-height)
   .big, .small {
-    margin-top: -5px;
+    margin-top: -3px // 2.5px;
   }
 
   .bigger {
-    margin-top: -7px;
+    margin-top: -4px; // 3.5px;
   }
 
   .large {
-    margin-top: -1px;
+    margin-top: -1px; // 0.5px;
   }
 
   .huge {
-    margin-top: -8px;
+    margin-top: -4px;
   }
 
   .gigantic {
-    margin-top: -9px;
+    margin-top: -5px; // 4.5px;
   }
 }
 
@@ -169,6 +168,11 @@ a.button, .button a {
      background-color: $pentandra-red;
     }
   }
+}
+
+.mini a.button, .mini .button a {
+  @include border-radius($default-radius / 2);
+  line-height: $grid-height / 2;
 }
 
 .img {
@@ -220,6 +224,22 @@ a.button, .button a {
   }
 }
 
+.rev a.button {
+
+  color: $pentandra-brown;
+  background-color: $pentandra-white;
+}
+
+
+// Grid classes
+
+.unit1of4 {
+  width: 25%;
+}
+
+.col5 {
+  @include grid(5);
+}
 
 //
 // Layout classes
@@ -252,8 +272,79 @@ a.button, .button a {
   }
 }
 
+.contentinfo {
+
+  padding-bottom: 84px; // From lessframework
+
+  a {
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .section {
+    margin-top: 33px; // Questionable
+  }
+
+  .content {
+    background-color: inherit;
+  }
+
+  .bd .aside {
+    @include grid(2);
+  }
+
+  .menu ul li {
+    margin-left: 22px; // Can we come up with a generic centering thing?
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+// This is kind of ugly and not reuseable
+.copyright {
+  cursor: pointer;
+  padding-top: $grid-height * 1.5;
+}
+
+//
+// Background-image classes
+
 .logo { 
   @include grid(3);
   height: 34px;
   background: transparent url('/images/pentandra-logo.png') no-repeat center center;
+}
+
+.revlogo {
+  @include grid(3);
+  height: 34px;
+  background: transparent url('/images/pentandra-logo-reverse.png') no-repeat left top;
+}
+
+.gplus {
+  height: $base-line-height;
+  width: 24px;
+  background: transparent url('/images/gplus.png') no-repeat center center;
+}
+
+.fb {
+  height: $base-line-height;
+  width: 11px;
+  background: transparent url('/images/fb.png') no-repeat center center;
+}
+
+.twitter {
+  height: $base-line-height;
+  width: 35px;
+  background: transparent url('/images/twitter.png') no-repeat center center;
+}
+
+.rss {
+  height: $base-line-height;
+  width: 24px;
+  background: transparent url('/images/rss.png') no-repeat center center;
 }
