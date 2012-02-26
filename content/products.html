@@ -1,51 +1,70 @@
 --- 
 title: Products
-ready_for_geungle: false
+ready_for_geungle: true
 ---
 
 <h1>Our Products</h1>
 
-<section id="geungle">
+<section id="geungle" class="noted">
 
-  <h2>Geungle</h2>
+  <div class="group">
 
-  <div id="geunglelogo"></div>
-  
-  <p>
-    Geungle, pronounced like "jungle," is a platform for scholarly genealogical
-    research, sometimes referred to as 
-    <a href="http://www.ngsgenealogy.org/galleries/Ref_Researching/NGSQVol91Pg26077GenealogyHistory.pdf">generational history</a>. 
-    Designed to work the way professional genealogists work, Geungle allows
-    collaboration in a way that has never before been possible.
-  </p>
+    <h2>Geungle</h2>
 
-  <% if @item[:ready_for_geungle] %>
-  <a href="http://geungle.com/" class="button">Visit <em>Geungle</em></a>
-  <% end %>
+    <div class="bd">
+      <p class="normal">
+        Geungle, pronounced like "jungle," is a platform for scholarly genealogical
+        research, sometimes referred to as 
+        <a href="http://www.ngsgenealogy.org/galleries/Ref_Researching/NGSQVol91Pg26077GenealogyHistory.pdf">generational history</a>. 
+        Designed to work the way professional genealogists work, Geungle allows
+        collaboration in a way that has never before been possible.
+      </p>
+    </div>
 
-  <p>
-    Built upon standards from the digital archive, library,
-    knowledge management, semantic web, and genealogical communities, Geungle
-    is designed to interoperate at many levels to make genealogical research
-    discoverable and research collaboration a modern reality.
-  </p>
+    <div class="bd">
+      <div class="geungle-logo"></div>
+    </div>
+    
+    <% if @item[:ready_for_geungle] %>
+    <div class="aside">
+      <a href="http://geungle.com/" class="rev button">Visit <em>Geungle</em></a>
+    </div>
+    <% end %>
+
+    <div class="bd">
+
+      <p>
+        Built upon standards from the digital archive, library,
+        knowledge management, semantic web, and genealogical communities, Geungle
+        is designed to interoperate at many levels to make genealogical research
+        discoverable and research collaboration a modern reality.
+      </p>
+
+    </div>
+  </div>
 
   <section>
-    <h3 class="big">Our Weltanschauung is Wide Open</h3>
 
-    <p>
-      Weltanschauung, or <em>world view</em>, has special meaning in genealogical
-      research.
-    </p>
+    <div class="aside">
+      <h3 class="big close">Our Weltanschauung is Wide Open</h3>
+    </div>
 
-    <blockquote cite="http://www.betaversion.org/~stefano/linotype/news/91/">
-      <p>
-        [The closed] world assumption implies that everything we don’t know is
-        false, while the open world assumption states that everything we don’t know
-        is undefined.
+    <div class="bd">
+      <p class="normal">
+        Weltanschauung, or <em>world view</em>, has special meaning in genealogical
+        research.
       </p>
-    </blockquote>
-  </section>
 
+      <blockquote class="mod grab" cite="http://www.betaversion.org/~stefano/linotype/news/91/">
+        <p>
+          [The closed] world assumption implies that everything we don’t know is
+          false, while the open world assumption states that everything we don’t know
+          is undefined.
+        </p>
+      </blockquote>
+
+    </div>
+
+  </section>
 
 </section>

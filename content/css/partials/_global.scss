@@ -60,10 +60,7 @@ address {
 }
 
 blockquote {
-  background-color: $pentandra-red-shaded;
-  color: $pentandra-white;
-  padding: $base-line-height;
-  clear: both;
+  padding: $base-line-height / 2 $base-line-height;
 }
 
 em, .em {
@@ -105,12 +102,16 @@ section, .section {
     margin-top: -3px;
   }
 
-  .big, .small {
+  .small {
     margin-top: -3px // 2.5px;
   }
 
+  .big {
+    margin-top: -5px // Added based on visual experimentation (font kerning)
+  }
+
   .bigger {
-    margin-top: -4px; // 3.5px;
+    margin-top: -7px; // 3.5px;
   }
 
   .large {
@@ -118,11 +119,11 @@ section, .section {
   }
 
   .huge {
-    margin-top: -4px;
+    margin-top: -8px;
   }
 
   .gigantic {
-    margin-top: -5px; // 4.5px;
+    margin-top: -9px; // 4.5px;
   }
 }
 
