@@ -281,24 +281,6 @@ article.post {
   }
 }
 
-#blogmeta {
-
-
-  div.tags {
-    @include grid(4);
-    
-    a {
-      padding: 2px 5px;
-      font-size: 12px;
-      margin-right: 4px;
-    }
-  }
-
-  div.authors {
-    text-align: right;
-  }
-}
-
 article#research {
   
   div#researchprocess {
