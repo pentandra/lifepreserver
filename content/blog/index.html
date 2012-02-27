@@ -3,7 +3,7 @@ title: Blog
 ---
 <h1>Our Thoughts</h1>
 
-<div class="articles group">
+<div class="group">
 <% @site.publishing_articles[0, 10].each do |article| %>
   <%= render('excerpt', :article => article) %>
 <% end %>

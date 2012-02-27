@@ -1,23 +1,30 @@
-<div class="excerpt clearfix">
-  <article>
+<article class="noted section">
 
+  <div class="bd mod">
     <header>
-      <h2 class="big">
+      <h2 class="bigger">
         <%= link_to(article[:title], article, { :title => "Full article", :class => "permalink" }) %>
       </h2>
 
-      <p>By <%= link_for_author( article[:author_name], "/authors/") %></p>
+      <p class="normal">By <%= link_for_author( article[:author_name], "/authors/") %></p>
 
-      <time class="big" pubdate><%= article[:created_at] %></time>
     </header>
 
     <%= article[:excerpt] %>
 
-    <footer>
-      <p>
-        <%= tags_for(article, { :separator => "", :base_url => "/tags/" }) %>
-      </p>
+    <footer class="aside mini">
+      <nav class="menu group">
+        <ul class="button">
+          <% tag_set(Array(article)).each do |tag| %>
+          <li><%= link_for_tag(tag, "/tags/") %></li>
+          <% end %>
+        </ul>
+      </nav>
     </footer>
+  </div>
 
-  </article>
-</div>                                
+  <footer class="aside mod">
+    <time class="big" pubdate><%= article[:created_at] %></time>
+  </footer>
+
+</article>

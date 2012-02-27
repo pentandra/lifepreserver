@@ -1,35 +1,43 @@
-<footer class="blogmeta">
+<footer class="pop mod group blogmeta">
 
-  <nav class="authors">
-    <h2 class="big">Authors</h2>
-    
-    <ul>
-    <% authors(publishing_articles).each do |author| %>
-      <li><%= link_for_author(author, "/authors/") %></li>
-    <% end %>
-    </ul>
-  </nav>
+  <div class="bd">
+    <div class="aside">
+      <nav class="mod">
+        <h2 class="big">Authors</h2>
+        
+        <ul>
+        <% authors(publishing_articles).each do |author| %>
+          <li><%= link_for_author(author, "/authors/") %></li>
+        <% end %>
+        </ul>
+      </nav>
+    </div>
 
-  <nav class="tags">
-    <h2 class="big">Tags A-Z</h2>
+    <nav class="mod menu inner">
+      <h2 class="big">Tags A-Z</h2>
 
-    <ul>
-    <% tag_set(publishing_articles).sort.each do |tag| %>
-      <li><%= link_for_tagcloud(tag, "/tags/") %></li> 
-    <% end %>
-    </ul>
-  </nav>
+      <div class="mini group">
+        <ul class="button">
+        <% tag_set(publishing_articles).sort.each do |tag| %>
+          <li><%= link_for_tagcloud(tag, "/tags/") %></li> 
+        <% end %>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
-  <nav class="archives">
-    <h2 class="big">Archives</h2>
+  <div class="aside">
+    <nav class="mod">
+      <h2 class="big">Archives</h2>
 
-    <ul>
-      <li><%= link_to 'Recent Articles', '/blog/' %></li>
-    <% archive_years(publishing_articles).sort.reverse.each do |year| %>
-      <li><%= link_for_archive(year, "/blog/") %></li>
-    <% end %>
-    </ul>
-  </nav>
+      <ul>
+        <li><%= link_to 'Recent Articles', '/blog/' %></li>
+      <% archive_years(publishing_articles).sort.reverse.each do |year| %>
+        <li><%= link_for_archive(year, "/blog/") %></li>
+      <% end %>
+      </ul>
+    </nav>
+  </div>
 
 </footer>
 

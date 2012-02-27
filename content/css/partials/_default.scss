@@ -37,6 +37,9 @@ $less-outer-margin: 48px;
     margin-left: $less-gutter-width;
   }
   
+  .inner {
+    @include grid(4);
+  }
 }
 
 .menu3 {
@@ -256,35 +259,6 @@ section.teammember {
 // Blog styling
 //
 
-div.excerpt {
-
-  border-top: 1px solid $pentandra-brown;
-  
-  article {
-
-    @include grid(7);
-    float: right;
-    position: relative;
-
-    h2 {
-      text-transform: uppercase;
-    }
-
-    time {
-      @include grid(3);
-      position: absolute;
-      top: 0;
-      margin-left: -(252px + $less-gutter-width);
-      margin-top: $grid-height/2;
-    }
-
-    aside {
-      float: right;
-      margin-bottom: $grid-height/4;
-    }
-  }
-}
-
 article.post {
   margin: $grid-height 0 $grid-height/2;
   @include grid(7);
@@ -307,22 +281,8 @@ article.post {
   }
 }
 
-aside.postmeta {
-  @include grid(3);
-  float: left;
-}
-
 #blogmeta {
-  margin: $grid-height 0;
-  border-top: 3px solid $pentandra-brown;
 
-
-  div {
-    @extend nav;
-    float: right;
-    @include grid(3);
-    margin-left: $less-gutter-width;
-  }
 
   div.tags {
     @include grid(4);
@@ -334,18 +294,8 @@ aside.postmeta {
     }
   }
 
-  div.archives {
-    margin-left: 0;
-  }
-
   div.authors {
     text-align: right;
-  }
-}
-
-div.tags {
-  li {
-    float: left;
   }
 }
 

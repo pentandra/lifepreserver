@@ -103,11 +103,11 @@ section, .section {
   }
 
   .small {
-    margin-top: -3px // 2.5px;
+    margin-top: -3px; // 2.5px;
   }
 
   .big {
-    margin-top: -5px // Added based on visual experimentation (font kerning)
+    margin-top: -3px; //-5px // Added based on visual experimentation (font kerning)
   }
 
   .bigger {
@@ -136,6 +136,10 @@ section, .section {
 
 .noted {
   border-top: 1px solid $pentandra-brown;
+}
+
+.pop {
+  border-top: 3px solid $pentandra-brown;
 }
 
 
@@ -174,6 +178,7 @@ a.button, .button a {
 .mini a.button, .mini .button a {
   @include border-radius($default-radius / 2);
   line-height: $grid-height / 2;
+  font-size: 13px;
 }
 
 .img {
@@ -196,15 +201,10 @@ a.button, .button a {
 }
     
 
-.tag {
+a.tag {
+  display: inline;
   padding: 3px 7px;
-  margin-right: 8px;
-  height: $grid-height;
-  line-height: $grid-height;
-
-  &:hover {
-    text-decoration: none;
-  }
+  margin-right: 4px;
 }
 
 
