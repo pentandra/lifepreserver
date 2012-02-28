@@ -17,7 +17,7 @@ If you are not familiar with RootsTech, let me say that it is an attempt by
 bring together genealogical software creators and users. This is the second
 conference with about 4,000 people in attendance. 
 
-![RootsTech 2012](/images/rootstech.320x480-75.2012.jpg){: .aside }
+![RootsTech 2012](/images/rootstech.320x480-75.2012.jpg){: .aside .mod }
 
 However, as Janet Havorka mentioned in her
 [session](http://rootstech.org/schedule/saturday/TU031 "Advocating Genealogy and Growing the Market: Issues of the New Genealogist"),
