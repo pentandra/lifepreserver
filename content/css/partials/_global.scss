@@ -181,6 +181,12 @@ a.button, .button a {
   font-size: 13px;
 }
 
+a.tag {
+  display: inline;
+  padding: 3px 7px;
+  margin-right: 4px;
+}
+
 .img {
 
   img {
@@ -200,13 +206,9 @@ a.button, .button a {
   }
 }
     
-
-a.tag {
-  display: inline;
-  padding: 3px 7px;
-  margin-right: 4px;
+.up {
+  text-transform: uppercase;
 }
-
 
 //
 // Background blocks
@@ -308,6 +310,12 @@ a.tag {
       margin-left: 0;
     }
   }
+}
+
+.post p:last-child:after {
+  content: "\25C2";
+  padding-left: 10px;
+  position: relative;
 }
 
 // This is kind of ugly and not reuseable

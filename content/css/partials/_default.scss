@@ -254,33 +254,6 @@ section.teammember {
   }
 }
 
-
-//
-// Blog styling
-//
-
-article.post {
-  margin: $grid-height 0 $grid-height/2;
-  @include grid(7);
-  float: right;
-
-  small {
-    text-transform: uppercase;
-  }
-
-  img {
-    float: right;
-    margin: $less-gutter-width;
-    margin-right: 0;
-  }
-
-  &:p:last-child:after {
-    content: "\25C2";
-    padding-left: 10px;
-    position: relative;
-  }
-}
-
 article#research {
   
   div#researchprocess {
@@ -288,9 +261,6 @@ article#research {
     height: 133.33333px;
   }
 
-  aside {
-//    @extend .clearfix;
-  }
 }
 
 //

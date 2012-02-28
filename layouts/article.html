@@ -1,44 +1,61 @@
-<article class="post">
+<article class="section">
 
-  <header>
-    <h2><%= @item[:title] %></h2>
+  <div class="bd">
+    <header>
+      <h1><%= @item[:title] %></h1>
 
-    <small>
-      Written <time datetime="<%= @item[:created_at] %>" pubdate><%= @item[:created_at].strftime("%B %d, %Y") %></time> 
-      by 
-      <%= link_for_author( @item[:author_name], "/authors/") %>
-    </small>
-  </header>
+      <small class="up">
+        Written <time datetime="<%= @item[:created_at] %>" pubdate><%= @item[:created_at].strftime("%B %d, %Y") %></time> 
+        by 
+        <%= link_for_author( @item[:author_name], "/authors/") %>
+      </small>
+    </header>
 
-  <%= yield %>
+    <div class="post">
+      <%= yield %>
+    </div>
 
-  <div id="comments">
     <% if $add_livefyre_comments then %>
-    <!-- START: Livefyre Embed -->
-    <script type='text/javascript' src='http://www.livefyre.com/wjs/v1.0/javascripts/livefyre_init.js'></script>
-    <script type='text/javascript'>
-      var fyre = LF({
-        site_id: 291113,
-        version: '1.0'
-      });
-    </script>
-    <!-- END: Livefyre Embed -->
+    <section class="comments">
+      <!-- START: Livefyre Embed -->
+      <script type='text/javascript' src='http://www.livefyre.com/wjs/v1.0/javascripts/livefyre_init.js'></script>
+      <script type='text/javascript'>
+        var fyre = LF({
+          site_id: 291113,
+          version: '1.0'
+        });
+      </script>
+      <!-- END: Livefyre Embed -->
+    </section>
     <% end %>
+
   </div>
+
+  <aside class="aside">
+
+    <h2 class="visuallyhidden">Meta</h2>
+
+    <section>
+      <h3 class="bigger">About the Author</h3>
+
+    </section>
+
+    <nav class="menu group mini">
+      <h3 class="big">Tags</h3>
+
+      <ul class="button">
+        <% tag_set(Array(@item)).each do |tag| %>
+        <li><%= link_for_tag(tag, "/tags/") %></li>
+        <% end %>
+      </ul>
+    </nav>
+
+    <p>
+      <%= link_to("permalink", @item, { :title => "Permalink to this article", :class => "permalink" }) %>
+    </p>
+
+  </aside>
 
 </article>
 
-<aside id="postmeta">
-
-  <nav id="tags">
-    <h4>Tags</h4>
-
-    <%= tags_for(@item, { :separator => "", :base_url => "/tags/" }) %>
-  </nav>
-
-  <p>
-    <%= link_to("permalink", @item, { :title => "Permalink to this article", :class => "permalink" }) %>
-  </p>
-
-</aside>
-
+<%= render 'blog_meta' %>
