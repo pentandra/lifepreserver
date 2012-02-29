@@ -15,3 +15,4 @@ gem 'vpim' # PIM data
 gem 'rqrcode' # for qrcodes
 gem 'chunky_png' # PNG generation of qrcodes
 gem 'builder'
+gem 'adsf'
