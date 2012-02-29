@@ -12,7 +12,9 @@
    ========================================================================== */
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
-audio[controls], canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
 
 
 /* =============================================================================
@@ -31,9 +33,9 @@ audio[controls], canvas, video { display: inline-block; *display: inline; *zoom:
 
 html { font-size: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
-body { margin: 0; }
-
 body, button, input, select, textarea { font-family: $base-font-family, sans-serif; color: $font-color; }
+
+body { margin: 0; }
 
 
 /* =============================================================================
@@ -43,6 +45,7 @@ body, button, input, select, textarea { font-family: $base-font-family, sans-ser
 a { 
   color: $link-color;
   &:visited { color: $link-visited-color; }
+  &:hover { color: $link-hover-color; }
   &:focus { outline: thin dotted; }
 }
 
@@ -109,7 +112,7 @@ dd { margin: 0 0 0 40px; }
  * code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
  */
 
-img { border: 0; -ms-interpolation-mode: bicubic; }
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
 
 /*
  * Correct overflow displayed oddly in IE9 
@@ -134,15 +137,15 @@ figure { margin: 0; }
 form { margin: 0; }
 fieldset { border: 0; margin: 0; padding: 0; }
 
+/* Indicate that 'label' will shift focus to the associated form element */
+label { cursor: pointer; }
+
 /* 
  * 1. Correct color not inheriting in IE6/7/8/9 
  * 2. Correct alignment displayed oddly in IE6/7 
  */
 
-legend { border: 0; *margin-left: -7px; padding: 0; }
-
-/* Indicate that 'label' will shift focus to the associated form element */
-label { cursor: pointer; }
+legend { border: 0; *margin-left: -7px; padding: 0; white-space: normal; }
 
 /*
  * 1. Correct font-size not inheriting in all browsers
@@ -164,14 +167,21 @@ button, input { line-height: normal; *overflow: visible; }
  * 2. Allow styling of clickable form elements in iOS
  */
 
-button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
+
+/*
+ * Re-set default cursor for disabled elements
+ */
+
+button[disabled], input[disabled] { cursor: default; }
 
 /*
  * Consistent box sizing and appearance
  */
 
-input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
-input[type="search"] { -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }
 
 /* 
  * Remove inner padding and border in FF3/4
@@ -180,8 +190,12 @@ input[type="search"] { -moz-box-sizing: content-box; -webkit-box-sizing: content
 
 button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
 
-/* Remove default vertical scrollbar in IE6/7/8/9 */
-textarea { overflow: auto; vertical-align: top; }
+/*
+ * 1. Remove default vertical scrollbar in IE6/7/8/9
+ * 2. Allow only vertical resizing
+ */
+
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
 
 /* Colors for form validity */
 input:valid, textarea:valid {  }
@@ -193,3 +207,11 @@ input:invalid, textarea:invalid { background-color: #f0dddd; }
    ========================================================================== */
 
 table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+
+/* =============================================================================
+   Chrome Frame Prompt
+   ========================================================================== */
+
+.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
