@@ -217,37 +217,47 @@ teammembers:
 
 </section>
 
-<footer id="contact" class="group">
-  <h2>Give Us A Holler!</h2>
+<footer id="contact" class="group ext grab">
 
-  <div>
-    <address class="vcard">
-      <p class="fn org"><%= @item[:company_name] %></p>
-      <p>Phone: <a class="tel" href="tel:<%= @item[:phone].gsub(/[\s\.-]/, "") %>"><%= @item[:phone] %></a></p>
-      <p>Email: <a class="email" href="mailto:<%= @item[:email] %>"><%= @item[:email] %></a></p>
-    </address>
+  <section>
 
-    <p>
+    <h2>Give Us A Holler!</h2>
 
-      We are located in Logan, Utah, in beautiful Cache Valley. We work from
-      home. We love it--most of the time. 
+    <div class="bd">
 
-    </p>
+      <figure class="aside mod">
+        <a href="<%= @item.path(:rep => :vcard) %>">
+          <img src="<%= @item.path(:rep => :qrcode) %>" alt="" />
+        </a>
+        <figcaption>Our vCard</figcaption>
+      </figure>
 
-    <figure>
-      <a href="<%= @item.path(:rep => :vcard) %>">
-        <img src="<%= @item.path(:rep => :qrcode) %>" alt="" />
-      </a>
-      <figcaption>Our vCard</figcaption>
-    </figure>
+      <div class="inner">
+      <address class="vcard">
+        <p class="fn org"><%= @item[:company_name] %></p>
+        <p>Phone: <a class="tel" href="tel:<%= @item[:phone].gsub(/[\s\.-]/, "") %>"><%= @item[:phone] %></a></p>
+        <p>Email: <a class="email" href="mailto:<%= @item[:email] %>"><%= @item[:email] %></a></p>
+      </address>
 
-  </div>
+      <p>
 
-  <aside class="social">
-      <div class="g-plus" data-href="https://plus.google.com/108021950461928542978" data-width="300" data-height="69" data-theme="light"></div>
-      <div class="fb-like-box" data-href="http://www.facebook.com/PentandraInc" data-width="300" data-height="121" data-show-faces="true" data-stream="false" data-header="true"></div>
-      <div class="twitter"><a href="https://twitter.com/<%= @item[:twitter] %>" class="twitter-follow-button" data-width="300px" data-show-count="false" data-size="large">Follow @<%= @item[:twitter] %></a></div>
-  </aside>
+        We are located in Logan, Utah, in beautiful Cache Valley. We work from
+        home. We love it--most of the time. 
+
+      </p>
+
+      <aside class="social">
+        <h3>Get Social</h3>
+        
+        <div class="g-plus" data-href="https://plus.google.com/108021950461928542978" data-width="300" data-height="69" data-theme="light"></div>
+        <div class="fb-like-box" data-href="http://www.facebook.com/PentandraInc" data-width="300" data-height="121" data-show-faces="true" data-stream="false" data-header="true"></div>
+        <div class="twitter"><a href="https://twitter.com/<%= @item[:twitter] %>" class="twitter-follow-button" data-width="300px" data-show-count="false" data-size="large">Follow @<%= @item[:twitter] %></a></div>
+      </aside>
+
+    </div>
+    </div>
+
+  </section>
     
 </footer>
 

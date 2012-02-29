@@ -3,10 +3,6 @@
 // Less astute browsers will use this layout, so keep it limited.
 //
 
-@import "compass/css3/border-radius";
-@import "compass/css3/box-shadow";
-@import "compass/css3/transform";
-
 
 @include selection-color($selected-font-color, $selected-background-color);
 
@@ -96,34 +92,36 @@ section, .section {
 .bd, .aside {
   @extend .group;
 
-  // Move text up to the top of the container to line up with neighbors. 
-  // Algorithm: ($font-size - $line-height) / 2
-  .normal {
-    margin-top: -3px;
-  }
+  &.fx {
+    // Move text up to the top of the container to line up with neighbors. 
+    // Algorithm: ($font-size - $line-height) / 2
+    .normal {
+      margin-top: -3px;
+    }
 
-  .small {
-    margin-top: -3px; // 2.5px;
-  }
+    .small {
+      margin-top: -3px; // 2.5px;
+    }
 
-  .big {
-    margin-top: -3px; //-5px // Added based on visual experimentation (font kerning)
-  }
+    .big {
+      margin-top: -3px; //-5px // Added based on visual experimentation (font kerning)
+    }
 
-  .bigger {
-    margin-top: -7px; // 3.5px;
-  }
+    .bigger {
+      margin-top: -7px; // 3.5px;
+    }
 
-  .large {
-    margin-top: -1px; // 0.5px;
-  }
+    .large {
+      margin-top: -1px; // 0.5px;
+    }
 
-  .huge {
-    margin-top: -8px;
-  }
+    .huge {
+      margin-top: -8px;
+    }
 
-  .gigantic {
-    margin-top: -9px; // 4.5px;
+    .gigantic {
+      margin-top: -9px; // 4.5px;
+    }
   }
 }
 
@@ -151,6 +149,7 @@ a.button, .button a {
   text-align: center;
 
   @include border-radius($default-radius);
+  @include pie;
   display: block;
 
   color: $pentandra-brown;
@@ -296,7 +295,7 @@ a.tag {
   }
 
   .content {
-    background-color: inherit;
+    background-color: $pentandra-brown; // inherit; Doesn't work in IE7
   }
 
   .bd .aside {

@@ -1,8 +1,8 @@
-<article class="section">
+<article class="group">
 
   <div class="bd">
     <header>
-      <h1><%= @item[:title] %></h1>
+      <h1 class="large"><%= @item[:title] %></h1>
 
       <small class="up">
         Written <time datetime="<%= @item[:created_at] %>" pubdate><%= @item[:created_at].strftime("%B %d, %Y") %></time> 
