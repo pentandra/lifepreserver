@@ -139,10 +139,56 @@ $less-outer-margin: 48px;
   background: transparent url('/images/email-white.png') no-repeat center left;
 }
 
+.fb {
+  height: $base-line-height;
+  width: 11px;
+  background: transparent url('/images/fb.png') no-repeat center center;
+}
+
 .geungle-logo {
   @include grid(7);
   height: 186px;
   background: transparent url('/images/geungle-logo.png') no-repeat scroll center top;
+}
+
+.gplus {
+  height: 32px;
+  width: 32px;
+  background: transparent url('/images/gplus-32.png') no-repeat center left;
+}
+
+.rev .gplus, .grab .gplus {
+  height: $base-line-height;
+  width: 24px;
+  background: transparent url('/images/gplus-white.png') no-repeat center center;
+}
+
+.logo { 
+  @include grid(3);
+  height: 34px;
+  background: transparent url('/images/pentandra-logo.png') no-repeat center center;
+}
+
+.rev .logo, .grab .logo {
+  background: transparent url('/images/pentandra-logo-reverse.png') no-repeat left top;
+}
+
+.rss {
+  height: $base-line-height;
+  width: 24px;
+  background: transparent url('/images/rss.png') no-repeat center center;
+}
+
+.twitter {
+  height: 32px;
+  width: 32px;
+  background: transparent url('/images/twitter-32.png') no-repeat center left;
+}
+
+.rev .twitter, .grab .twitter {
+  height: $base-line-height;
+  width: 35px;
+  background: transparent url('/images/twitter.png') no-repeat center center;
 }
 
 .zeugma {
