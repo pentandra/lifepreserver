@@ -62,10 +62,35 @@ $less-outer-margin: 48px;
   }
 }
 
+.icon {
+  padding-left: 32px + 5px;
+  line-height: 32px;
+}
+
+// Grid classes
+
+.bl {
+  @include grid(5);
+
+  &.ock {
+    margin-left: $less-gutter-width;
+  }
+
+  .bd {
+    @include grid(3);
+  }
+
+  .aside {
+    @include grid(2);
+  }
+}
+
+
+//
+// Layout classes
+
 .montage {
   .em {
-//    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-//    -ms-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
     @include rotate(-90deg);
     @include grid(3); 
     float: right;
@@ -75,187 +100,50 @@ $less-outer-margin: 48px;
   }
 }
 
-.geungle-logo {
-    @include grid(7);
-    height: 186px;
-    background: transparent url('/images/geungle-logo.png') no-repeat scroll center top;
-}
-
-.zeugma {
-  @include grid(7);
-  height: 412px;
-  background: transparent url('/images/zeugma.jpg') no-repeat scroll center top;
-}
-
 .theteam {
   @include grid(6);
   height: 290px;
   background: transparent url('/images/team-436x290.jpg') no-repeat scroll right bottom;
+  float: right;
 
   &:hover {
     background-image: url('/images/team-436x290-silly.jpg');
   }
 }
 
-//
-// Company
-//
+.teammember {
 
-article#company {
-
-  p {
-    float: none;
-    width: auto;
-    margin-top: 5px;
-  }
-
-  section {
-    section {
-      @include grid(5);
-      float: left;
-      margin: 0;
-
-      &:nth-child(even) {
-        margin-right: 24px;
-      }
-
-      p {
-        padding-right: 10px;
-      }
-    }
-  }
-
-  footer {
-    background-color: $pentandra-red-shaded;
-    margin: 0 (-$less-outer-margin);
-    padding: 24px $less-outer-margin;
-    color: $pentandra-white;
-
-    a {
-      color: $pentandra-white;
-    }
-
-    aside {
-      float: left;
-      @include grid(3);
-      margin-left: $less-gutter-width;
-
-      &.social {
-        @include grid(4);
-
-      }
-
-      .twitter {
-        margin-top: 20px;
-      }
-
-      &:first-of-type {
-        margin-left: 0;
-      }
-
-      figure {
-        margin: 0;
-
-        img {
-          float: right;
-        }
-
-        figcaption {
-          float: right;
-          clear: both;
-        }
-      }
-    }
-  }
-}
-
-.fb-like-box {
-  background-color: $pentandra-white;
-}
-
-section#meettheteam {
-
-  div.wrapper {
-    @include grid(4);
+  .photo {
     float: left;
-
-
-  }
-
-  div#teamphoto {
-    @include grid(6);
-    height: 290px;
-    float: right;
-    background: transparent url('/images/team-436x290.jpg') no-repeat scroll right bottom;
-    margin-top: $grid-height;
-
-    &:hover {
-      background-image: url('/images/team-436x290-silly.jpg');
-    }
-  }
-
-  nav {
-    clear: both;
-    background-color: $pentandra-brown;
-    color: $pentandra-white;
-    margin: 0 (-$less-outer-margin);
-    padding: 24px $less-outer-margin $less-outer-margin;
-
-    p {
-      margin-bottom: 0;
-    }
-
-    li {
-      width: 33.333%;
-      float: left;
-      margin-top: 24px;
-    }
-
-    a {
-      font-family: $bold-font-family, sans-serif;
-      color: $pentandra-white;
-
-      &:hover {
-        text-decoration: none;
-      }
-    }
-  }
-}
-
-section.teammember {
-
-  h3, h4 {
-    margin: 0 0 14px;
-  }
-
-  div.wrapper {
-    width: 232px; // = @include grid(3) - 20px;
-    float: right;
-    padding-right: 20px;
-  }
-
-  aside {
-    float: left;
-    @include grid(2);
-    margin: 12px 0 24px;
-
-    a[href^="mailto"] {
-      padding-left: 20px; 
-      background: transparent url('/images/email.png') center left scroll no-repeat;
-    }
-
-    p {
-      margin: 5px 0;
-    }
-  }
-
-  img {
-    float: left;
-    width: 150px; // 150 + 2px + 8px borders = grid(2) or 160px
+    width: 150px; // 150 + 10px borders = grid(2) or 160px
     height: 150px;
-    border: solid $pentandra-brown;
-    border-width: 11px;
+    border: 11px solid $pentandra-brown;
   }
+}
+
+//
+// Background-image classes
+
+.email {
+  height: 20px;
+  width: 32px;
+  background: transparent url('/images/email.png') no-repeat center left;
+}
+
+.grab .email, .rev .email {
+  background: transparent url('/images/email-white.png') no-repeat center left;
+}
+
+.geungle-logo {
+  @include grid(7);
+  height: 186px;
+  background: transparent url('/images/geungle-logo.png') no-repeat scroll center top;
+}
+
+.zeugma {
+  @include grid(7);
+  height: 412px;
+  background: transparent url('/images/zeugma.jpg') no-repeat scroll center top;
 }
 
 article#research {

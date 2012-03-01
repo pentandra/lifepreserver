@@ -65,11 +65,6 @@ em, .em {
   font-style: normal;
 }
 
-section, .section {
-  @extend .group;
-  margin: $grid-height 0 $grid-height / 2;
-}
-
 //
 // Classes
 
@@ -79,6 +74,16 @@ section, .section {
 .mod {
   margin-top: $base-line-height / 2;
   margin-bottom: $base-line-height / 2;
+}
+
+.mmod {
+  margin-top: $base-line-height / 4;
+  margin-bottom: $base-line-height / 4;
+}
+
+.section {
+  @extend .group;
+  margin: $grid-height 0 $grid-height / 2;
 }
 
 .basic {
@@ -92,9 +97,9 @@ section, .section {
 .bd, .aside {
   @extend .group;
 
+  // Move text up to the top of the container to line up with neighbors. 
+  // Algorithm: ($font-size - $line-height) / 2
   &.fx {
-    // Move text up to the top of the container to line up with neighbors. 
-    // Algorithm: ($font-size - $line-height) / 2
     .normal {
       margin-top: -3px;
     }
@@ -183,6 +188,9 @@ a.button, .button a {
 a.tag {
   display: inline;
   padding: 3px 7px;
+}
+
+.sp a {
   margin-right: 4px;
 }
 
@@ -247,12 +255,8 @@ a.tag {
 
 // Grid classes
 
-.unit1of4 {
-  width: 25%;
-}
-
-.col5 {
-  @include grid(5);
+.item { // List semantics
+  float: left;
 }
 
 //
@@ -325,6 +329,14 @@ a.tag {
   padding-top: $grid-height * 1.5;
 }
 
+.fb-like-box {
+  background-color: $pentandra-white;
+}
+
+.social-tw, .social-fb {
+  margin-bottom: 13px;
+}
+
 //
 // Background-image classes
 
@@ -334,16 +346,20 @@ a.tag {
   background: transparent url('/images/pentandra-logo.png') no-repeat center center;
 }
 
-.revlogo {
-  @include grid(3);
-  height: 34px;
+.rev .logo, .grab .logo {
   background: transparent url('/images/pentandra-logo-reverse.png') no-repeat left top;
 }
 
-.gplus {
+.rev .gplus, .grab .gplus {
   height: $base-line-height;
   width: 24px;
-  background: transparent url('/images/gplus.png') no-repeat center center;
+  background: transparent url('/images/gplus-white.png') no-repeat center center;
+}
+
+.gplus {
+  height: 32px;
+  width: 32px;
+  background: transparent url('/images/gplus-32.png') no-repeat center left;
 }
 
 .fb {
@@ -353,6 +369,12 @@ a.tag {
 }
 
 .twitter {
+  height: 32px;
+  width: 32px;
+  background: transparent url('/images/twitter-32.png') no-repeat center left;
+}
+
+.rev .twitter, .grab .twitter {
   height: $base-line-height;
   width: 35px;
   background: transparent url('/images/twitter.png') no-repeat center center;

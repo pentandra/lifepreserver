@@ -1,6 +1,5 @@
 --- 
 title: Company
-company_name: Pentandra Research Solutions, Inc.
 phone: &tel +1 435.294.2964
 email: hello@pentandra.com
 twitter: PentandraInc
@@ -10,6 +9,7 @@ teammembers:
     title: CEO and Super Coder
     email: chris@pentandra.com
     twitter: cd_chapman
+    gplus: 102332274449851755462
     phone: *tel
     phone_ext: 1000
     summary: >
@@ -20,6 +20,7 @@ teammembers:
     title: CFO and Think Tanker
     email: katie@pentandra.com
     twitter: KAMChapman
+    gplus: 104975395018953249008
     phone: *tel
     phone_ext: 1001
     summary: >
@@ -29,16 +30,22 @@ teammembers:
 
 <div class="section">
 
-  <h1 class="large">Meet the Team.</h1>
+  <div class="group">
+    <div class="bd">
+      <h1 class="large">Meet the Team.</h1>
 
-  <p class="big">
+      <p class="big">
 
-    We are couple of research addicts trying to promote quality research
-    and make collaboration throughout the research process possible.
+        We are couple of research addicts trying to promote quality research
+        and make collaboration throughout the research process possible.
 
-  </p>
+      </p>
 
-  <div class="theteam"></div>
+      <div class="group">
+        <div class="theteam"></div>
+      </div>
+    </div>
+  </div>
 
   <nav class="group rev ext">
     <div class="menu menu3">
@@ -84,11 +91,12 @@ teammembers:
   </nav>
 
 </div>
-<section id="ourvalues" class="noted">
+
+<section id="ourvalues" class="noted section">
 
   <h2>Our Values</h2>
 
-  <section id="passionate">
+  <section id="passionate" class="item bl">
 
     <h3>Passionate</h3>
 
@@ -104,7 +112,7 @@ teammembers:
 
   </section>
 
-  <section id="quality">
+  <section id="quality" class="item bl ock">
 
     <h3>Quality Over Quantity</h3>
 
@@ -120,7 +128,7 @@ teammembers:
 
   </section>
 
-  <section id="smallandfocused">
+  <section id="smallandfocused" class="item bl">
 
     <h3>Small And Focused</h3>
 
@@ -136,7 +144,7 @@ teammembers:
     
   </section>
 
-  <section id="dogfood">
+  <section id="dogfood" class="item bl ock">
 
     <h3>We Eat Our Own Dogfood</h3>
 
@@ -154,7 +162,7 @@ teammembers:
 
   </section>
 
-  <section id="committed">
+  <section id="committed" class="item bl">
 
     <h3>Committed</h3>
 
@@ -169,7 +177,7 @@ teammembers:
 
   </section>
 
-  <section id="open">
+  <section id="open" class="item bl ock">
   
     <h3>Open</h3>
 
@@ -187,29 +195,33 @@ teammembers:
 
 </section>
 
-<section class="noted">
+<section class="noted section">
 
   <h2>Our Roster</h2>
   
-  <% @item[:teammembers].each do |member| %> 
+  <% @item[:teammembers].each_with_index do |member, i| %> 
   <% member_name = member[:first_name] + " " + member[:last_name] %>
-  <section class="teammember vcard group">
+  <section class="teammember vcard group mod bl<%= i.odd? ? ' ock' : '' %> item">
 
     <img class="photo" src="/images/<%= member_name.to_slug %>-150x150.jpg" alt="Photo of <%= member_name %>" />
 
-    <div class="wrapper">
+    <div class="bd fx group">
+
       <hgroup>
         <h3 class="big fn"><%= member_name %></h3>
         <h4 class="small"><%= member[:title] %></h4>
       </hgroup>
 
       <p><%= member[:summary] %></p>
+
     </div>
 
-    <aside class="small">
-      <p><a href="https://twitter.com/<%= member[:twitter] %>" class="twitter-follow-button url" data-show-count="false" data-width="160px">Follow @<%= member[:twitter] %></a></p>
-      <p><a class="email" href="mailto:<%= member[:email] %>" title="<%= member[:email] %>">Email <%= member[:first_name] %></a></p>
-      <p>Phone: <a class="tel" href="tel:<%= member[:phone].gsub(/[\s\.-]/, "") %>;ext=<%= member[:phone_ext] %>"><%= member[:phone] %> Ext. <%= member[:phone_ext] %></a></p>
+    <aside class="mmod aside nav menu">
+      <ul class="sp">
+        <li><a class="gplus ir url" title="<%= member_name %> on Google+" href="https://plus.google.com/<%= member[:gplus] %>?prsrc=3"><%= member_name %> on Google+</a></li>
+        <li><a class="twitter ir url" href="https://twitter.com/<%= member[:twitter] %>" title="Follow @<%= member[:twitter] %>">Follow @<%= member[:twitter] %></a></li>
+        <li><a class="email ir" href="mailto:<%= member[:email] %>" title="<%= member[:email] %>">Email <%= member[:first_name] %></a></li>
+      </ul>
     </aside>
 
   </section>
@@ -219,46 +231,48 @@ teammembers:
 
 <footer id="contact" class="group ext grab">
 
-  <section>
+  <h2>Give Us A Holler!</h2>
 
-    <h2>Give Us A Holler!</h2>
+  <div class="bd">
 
-    <div class="bd">
+    <aside class="aside fx">
+      <h3>Get Social</h3>
 
-      <figure class="aside mod">
-        <a href="<%= @item.path(:rep => :vcard) %>">
-          <img src="<%= @item.path(:rep => :qrcode) %>" alt="" />
-        </a>
-        <figcaption>Our vCard</figcaption>
-      </figure>
+      <div class="mod">
+        <div class="g-plus" data-href="https://plus.google.com/108021950461928542978" data-width="252" data-height="69" data-theme="light"></div>
+        <div class="social-tw"><a href="https://twitter.com/<%= @item[:twitter] %>" class="twitter-follow-button" data-width="252px" data-show-count="false" data-size="large">Follow @<%= @item[:twitter] %></a></div>
+        <div class="social-fb fb-like-box" data-href="http://www.facebook.com/PentandraInc" data-width="252" data-height="121" data-show-faces="true" data-stream="false" data-header="true"></div>
+      </div>
 
-      <div class="inner">
-      <address class="vcard">
-        <p class="fn org"><%= @item[:company_name] %></p>
-        <p>Phone: <a class="tel" href="tel:<%= @item[:phone].gsub(/[\s\.-]/, "") %>"><%= @item[:phone] %></a></p>
-        <p>Email: <a class="email" href="mailto:<%= @item[:email] %>"><%= @item[:email] %></a></p>
-      </address>
+    </aside>
 
-      <p>
+    <address class="vcard">
+      <div class="fn org">Pentandra Research Solutions, Inc.</div>
+      <div class="adr">
+        <div class="locality">Logan, UT</div>
+        <div class="country-name">USA</div>
+      </div>
+      <p>Phone: <a class="tel" href="tel:<%= @item[:phone].gsub(/[\s\.-]/, "") %>"><%= @item[:phone] %></a></p>
+      <p>Email: <a class="email icon" href="mailto:<%= @item[:email] %>"><%= @item[:email] %></a></p>
+    </address>
 
-        We are located in Logan, Utah, in beautiful Cache Valley. We work from
-        home. We love it--most of the time. 
+    <p>
 
-      </p>
+      We are located in Logan, Utah, in beautiful Cache Valley. We work from
+      home. We love it--most of the time. 
 
-      <aside class="social">
-        <h3>Get Social</h3>
-        
-        <div class="g-plus" data-href="https://plus.google.com/108021950461928542978" data-width="300" data-height="69" data-theme="light"></div>
-        <div class="fb-like-box" data-href="http://www.facebook.com/PentandraInc" data-width="300" data-height="121" data-show-faces="true" data-stream="false" data-header="true"></div>
-        <div class="twitter"><a href="https://twitter.com/<%= @item[:twitter] %>" class="twitter-follow-button" data-width="300px" data-show-count="false" data-size="large">Follow @<%= @item[:twitter] %></a></div>
-      </aside>
+    </p>
 
-    </div>
-    </div>
+  </div>
 
-  </section>
-    
+  <figure class="aside mod">
+    <a href="<%= @item.path(:rep => :vcard) %>">
+      <img src="<%= @item.path(:rep => :qrcode) %>" alt="" />
+    </a>
+    <figcaption>Our vCard</figcaption>
+  </figure>
+
+
 </footer>
 
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
