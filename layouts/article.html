@@ -36,8 +36,23 @@
     <h2 class="visuallyhidden">Meta</h2>
 
     <section>
-      <h3 class="bigger">About the Author</h3>
 
+      <h3 class="bigger">The Author</h3>
+
+      <% 
+       company = @items.find { |i| i.identifier == '/company/' } 
+       author = company[:teammembers].find { |m| m[:first_name] + " " + m[:last_name] == @item[:author_name] }
+      %>
+
+      <figure id="author">
+        <img class="photo" src="<%= image_path(author) %>" alt="Photo of <%= full_name(author) %>" />
+        <figcaption class="mod">
+          <div class="big"><%= full_name(author) %></div>
+          <div><%= author[:title] %></div>
+          <a href="/company/#<%= full_name(author).to_slug %>">More about <%= author[:first_name] %></a>
+        </figcaption>
+      </figure>
+    
     </section>
 
     <nav class="menu group mini">
