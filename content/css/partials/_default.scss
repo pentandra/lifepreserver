@@ -100,14 +100,16 @@ $less-outer-margin: 48px;
   }
 }
 
+$theteam-height: 290px;
+
 .teamintro {
   @include grid(4);
-  float: left;
+  min-height: $theteam-height; // Having trouble in IE7 with container smaller than image
 }
 
 .theteam {
   @include grid(6);
-  height: 290px;
+  height: $theteam-height;
   background: transparent url('/images/team-436x290.jpg') no-repeat scroll right bottom;
   position: absolute;
   bottom: 0;
