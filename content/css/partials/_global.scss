@@ -179,6 +179,10 @@ a.button, .button a {
   }
 }
 
+.holder {
+  position: relative;
+}
+
 .mini a.button, .mini .button a {
   @include border-radius($default-radius / 2);
   line-height: $grid-height / 2;
