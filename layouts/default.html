@@ -83,11 +83,20 @@
         </aside>
 
       </div>
-      <small class="aside logo copyright" onclick="location.href='<%= @config[:base_url] %>';">
-        &#169; Pentandra Research Solutions, Inc.
-      </small>
+      <div class="aside">
 
-      <p class="small"><a href="#top" class="em">Back to top</a></p>
+        <div class="group">
+          <small class="aside logo copyright" onclick="location.href='<%= @config[:base_url] %>';">
+            &#169; Pentandra Research Solutions, Inc.
+          </small>
+        </div>
+
+        <div class="mod holder"> 
+          <div class="button-arrow-up"></div>
+          <a href="#top" class="button em">Back to top</a>
+        </div>
+
+      </div>
 
     </div>
   </div>
