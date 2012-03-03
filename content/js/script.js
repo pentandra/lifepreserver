@@ -6,6 +6,35 @@ $(document).ready(function() {
 
   $('a').smoothScroll();
 
+  if ($.fn.sharrre) {
+    $('#share').sharrre({
+
+      share: {
+        googlePlus: true,
+        facebook: true,
+        twitter: true
+      },
+
+      buttons: {
+        googlePlus: { size: 'tall' },
+        facebook: { layout: 'box_count' },
+        twitter: { count: 'vertical', via: 'PentandraInc' }
+      },
+
+      hover: function(api, options) {
+        $(api.element).find('.buttons').show();
+      },
+
+      hide: function(api, options) {
+        $(api.element).find('.buttons').hide();
+      },
+
+      urlCurl: '',
+      enableTracking: true
+      
+    });
+  }
+
 });
 
 

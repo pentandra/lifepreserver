@@ -337,10 +337,68 @@ a.tag {
   padding-top: $grid-height * 1.5;
 }
 
+//
+// Social classes
+//
+
 .fb-like-box {
   background-color: $pentandra-white;
 }
 
 .social-tw, .social-fb {
   margin-bottom: 13px;
+}
+
+.sharrre { 
+
+  $sharrre-height: $grid-height / 3 * 2;
+
+  .box {
+    float: left;
+  }
+
+  .count {
+    display: block;
+    float: right;
+    @include border-right-radius($default-radius / 2);
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    @include grid(1);
+    color: $pentandra-white;
+    background-color: $pentandra-brown;
+    height: $sharrre-height;
+    line-height: $sharrre-height;
+  }
+
+  .share {
+    display: block;
+    float: right;
+    text-align: center;
+    text-decoration: none;
+    width: 116px; // 1 col + 2 gutters
+    height: $sharrre-height;
+    line-height: $sharrre-height;
+    color: $pentandra-white;
+    background-color: $pentandra-red;
+    @include border-left-radius($default-radius / 2);
+  }
+
+  .buttons {
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+    z-index: 10;
+    background-color: $pentandra-red;
+    @include single-box-shadow($pentandra-brown);
+  }
+
+  .button {
+    float: left;
+    margin-left: 10px;
+  }
+
+  .twitter {
+    margin: 0 10px 0 0;
+  }
 }
