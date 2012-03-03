@@ -377,50 +377,32 @@ a.tag {
   margin-bottom: 13px;
 }
 
+.share {
+  text-align: center;
+  line-height: $grid-height / 3 * 2;
+  color: $pentandra-white;
+  background-color: $pentandra-brown;
+  @include border-top-radius($default-radius);
+  width: 204px;
+}
+
 .sharrre { 
 
-  $sharrre-height: $grid-height / 3 * 2;
-
-  .box {
-    float: left;
-  }
-
-  .count {
-    display: block;
-    float: right;
-    @include border-right-radius($default-radius / 2);
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    @include grid(1);
-    color: $pentandra-white;
-    background-color: $pentandra-brown;
-    height: $sharrre-height;
-    line-height: $sharrre-height;
-  }
-
-  .share {
-    display: block;
-    float: right;
-    text-align: center;
-    text-decoration: none;
-    width: 116px; // 1 col + 2 gutters
-    height: $sharrre-height;
-    line-height: $sharrre-height;
-    color: $pentandra-white;
-    background-color: $pentandra-red;
-    @include border-left-radius($default-radius / 2);
-  }
+  @include border-bottom-radius($default-radius);
+  text-align: center;
+  padding: 10px 0;
+  width: 204px;
 
   .buttons {
+    width: 174px;
+    margin: 0 auto;
   }
 
   .button {
     float: left;
-    margin-right: 10px;
   }
 
-  .facebook {
-    margin: 0;
+  .googleplus {
+    margin-right: 10px;
   }
 }
