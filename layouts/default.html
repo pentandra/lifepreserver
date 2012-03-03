@@ -74,7 +74,7 @@
             <article> 
               <header>
                 <time pubdate class="em"><%= post[:created_at] %></time>
-                <h3 class="small"><%= link_to(post[:title], post) %></h3>
+                <h3 class="small"><%= link_to(post[:title], post, { :rel => "bookmark" }) %></h3>
               </header>
             </article>
             <% end %>
