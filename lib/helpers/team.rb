@@ -1,4 +1,4 @@
-module Nanoc::Helpers
+module Nanoc3::Helpers
   module Team
 
     def full_name(member)
