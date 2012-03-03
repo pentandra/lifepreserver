@@ -37,7 +37,7 @@
 
     <section>
 
-      <h3 class="bigger">The Author</h3>
+      <h3>The Author</h3>
 
       <% 
        company = @items.find { |i| i.identifier == '/company/' } 
@@ -55,9 +55,13 @@
     
     </section>
 
-    <div class="section">
-      <div id="share" data-url="<%= shorten(url_for(@item)) %>" data-title="share" data-text="<%= @item[:title] %>"></div>
-    </div>
+    <section class="grab banner section">
+
+      <h3 class="big">Share</h3>
+      
+      <div class="mod group" id="share" data-url="<%= shorten(url_for(@item)) %>" data-title="share" data-text="<%= @item[:title] %>"></div>
+
+    </section>
 
     <nav class="menu group mini">
       <h3 class="big">Tags</h3>

@@ -60,6 +60,14 @@ $less-outer-margin: 48px;
   .close {
     text-align: right;
   }
+
+  .banner {
+    margin-right: $less-gutter-width;
+    margin-left: -$less-outer-margin;
+    padding-left: $less-outer-margin;
+    @include border-right-radius($default-radius);
+    @include pie;
+  }
 }
 
 .icon {

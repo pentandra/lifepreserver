@@ -260,6 +260,34 @@ a.tag {
   }
 }
 
+.drop-shadow {
+  position: relative;
+  width: 90%;
+}
+
+.drop-shadow:before, .drop-shadow:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  height: 20%;
+  max-width: 300px;
+  @include single-box-shadow(rgba(0, 0, 0, 0.7), 0, 15px, 10px);
+  @include rotate(-3deg);
+}  
+
+.drop-shadow:after {
+  right:10px;
+  left:auto;
+  @include rotate(3deg);
+}
+
+.shadow {
+  @include single-box-shadow($pentandra-brown, 0, 0, 10px);
+}
+
 
 // Grid classes
 
@@ -385,20 +413,14 @@ a.tag {
   }
 
   .buttons {
-    display: none;
-    position: absolute;
-    padding-top: 10px;
-    z-index: 10;
-    background-color: $pentandra-red;
-    @include single-box-shadow($pentandra-brown);
   }
 
   .button {
     float: left;
-    margin-left: 10px;
+    margin-right: 10px;
   }
 
-  .twitter {
-    margin: 0 10px 0 0;
+  .facebook {
+    margin: 0;
   }
 }

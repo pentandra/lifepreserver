@@ -21,15 +21,10 @@ $(document).ready(function() {
         twitter: { count: 'vertical', via: 'PentandraInc' }
       },
 
-      hover: function(api, options) {
-        $(api.element).find('.buttons').show();
-      },
-
-      hide: function(api, options) {
-        $(api.element).find('.buttons').hide();
-      },
-
       urlCurl: '',
+
+      enableHover: false,
+      enableCounter: false,
       enableTracking: true
       
     });
