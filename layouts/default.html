@@ -113,6 +113,10 @@
 </script>
 <% end %>
 
+<% if @item[:kind] == "article" then %>
+<script src="/js/libs/jquery.sharrre-1.2.0.min.js"></script>
+<% end %>
+
 <!-- scripts concatenated and minified via build script-->
 <script src="/js/plugins.js"></script>
 <script src="/js/script.js"></script>
