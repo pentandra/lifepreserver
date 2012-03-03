@@ -70,7 +70,7 @@
     </nav>
 
     <p>
-      <%= link_to("permalink", @item, { :rel => "bookmark", :title => "Permalink to this article", :class => "permalink" }) %>
+      <a class="permalink" rel="bookmark" title="Permalink to this article" href="<%= url_for(@item) %>">permalink</a>
     </p>
 
   </aside>
