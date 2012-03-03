@@ -56,7 +56,7 @@
     </section>
 
     <div class="section">
-      <div id="share" data-title="share" data-text="<%= @item[:title] %>"></div>
+      <div id="share" data-url="<%= shorten(url_for(@item)) %>" data-title="share" data-text="<%= @item[:title] %>"></div>
     </div>
 
     <nav class="menu group mini">

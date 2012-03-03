@@ -19,9 +19,14 @@ GEM
     fssm (0.2.8.1)
     haml (3.1.4)
     htmlbeautifier (0.0.6)
+    httparty (0.8.1)
+      multi_json
+      multi_xml
     i18n (0.6.0)
+    json (1.6.5)
     kramdown (0.13.5)
     multi_json (1.1.0)
+    multi_xml (0.4.1)
     nanoc (3.3.1)
       cri (~> 2.1)
     nokogiri (1.5.0)
@@ -30,6 +35,9 @@ GEM
     rqrcode (0.4.2)
     rubypants (0.2.0)
     sass (3.1.15)
+    shortly (0.3.3)
+      httparty
+      json
     systemu (2.4.2)
     uglifier (1.2.3)
       execjs (>= 0.3.0)
@@ -54,6 +62,7 @@ DEPENDENCIES
   rainpress
   rqrcode
   rubypants
+  shortly
   systemu
   uglifier
   vpim

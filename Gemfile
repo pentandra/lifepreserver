@@ -17,3 +17,4 @@ gem 'chunky_png' # PNG generation of qrcodes
 gem 'builder'
 gem 'adsf'
 gem 'systemu'
+gem 'shortly' # For URL shortening
