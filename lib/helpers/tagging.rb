@@ -1,6 +1,6 @@
 # from this thread: http://groups.google.com/group/nanoc/browse_thread/thread/caefcab791fd3c4b
 
-module Nanoc3::Helpers
+module Nanoc::Helpers
 
   module Tagging
 

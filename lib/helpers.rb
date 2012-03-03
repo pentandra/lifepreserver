@@ -1,9 +1,7 @@
-include Nanoc3::Helpers::Blogging
-include Nanoc3::Helpers::Capturing
-include Nanoc3::Helpers::Filtering
-include Nanoc3::Helpers::HTMLEscape
-include Nanoc3::Helpers::LinkTo
-include Nanoc3::Helpers::Rendering
-include Nanoc3::Helpers::Tagging
-include Nanoc3::Helpers::Text
-include Nanoc3::Helpers::Team
+include Nanoc::Helpers::Blogging
+include Nanoc::Helpers::Capturing
+include Nanoc::Helpers::Filtering
+include Nanoc::Helpers::HTMLEscape
+include Nanoc::Helpers::LinkTo
+include Nanoc::Helpers::Rendering
+include Nanoc::Helpers::Tagging

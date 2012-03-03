@@ -1,4 +1,4 @@
-module Nanoc3::Helpers
+module Nanoc::Helpers
 
   module Blogging
 

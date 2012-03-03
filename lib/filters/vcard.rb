@@ -1,6 +1,6 @@
 require "vpim/vcard"
 
-class VcardFilter < Nanoc3::Filter
+class VcardFilter < Nanoc::Filter
 
   identifier :vcard
 

@@ -1,7 +1,7 @@
 require "rqrcode"
 require "vpim/vcard"
 
-class QRCodeFilter < Nanoc3::Filter
+class QRCodeFilter < Nanoc::Filter
 
   identifier :qrcode
   type :text => :binary

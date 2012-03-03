@@ -1,7 +1,7 @@
-module Nanoc3::Filters
+module Nanoc::Filters
 
   # This filter adds permalinks to all section headers
-  class AddLinksToHeaders < Nanoc3::Filter
+  class AddLinksToHeaders < Nanoc::Filter
 
     identifiers :add_links_to_headers
 
