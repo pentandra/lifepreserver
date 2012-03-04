@@ -289,16 +289,19 @@ a.tag {
 }
 
 
+//
 // Grid classes
 
 .item { // List semantics
   float: left;
 }
 
+.apart {
+  padding-right: $less-gutter-width;
+}
+
 //
 // Layout classes
-
-.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
 
 .content {
   @extend .group;
@@ -380,18 +383,26 @@ a.tag {
 .share {
   text-align: center;
   line-height: $grid-height / 3 * 2;
-  color: $pentandra-white;
-  background-color: $pentandra-brown;
   @include border-top-radius($default-radius);
-  width: 204px;
+  width: 252px - $less-gutter-width;
+  cursor: pointer;
+}
+
+.bottom {
+  line-height: $grid-height / 3;
+  height: $grid-height / 3;
+  @include border-bottom-radius($default-radius);
+  width: 252px - $less-gutter-width;
 }
 
 .sharrre { 
 
-  @include border-bottom-radius($default-radius);
   text-align: center;
-  padding: 10px 0;
-  width: 204px;
+  padding-top: 10px;
+  padding-bottom: 2px;
+  width: 252px - $less-gutter-width;
+  background-color: $pentandra-red;
+  color: $pentandra-white;
 
   .buttons {
     width: 174px;
