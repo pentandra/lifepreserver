@@ -384,6 +384,7 @@ a.tag {
   text-align: center;
   line-height: $grid-height / 3 * 2;
   @include border-top-radius($default-radius);
+  @include pie;
   width: 252px - $less-gutter-width;
   cursor: pointer;
 }
@@ -392,6 +393,7 @@ a.tag {
   line-height: $grid-height / 3;
   height: $grid-height / 3;
   @include border-bottom-radius($default-radius);
+  @include pie;
   width: 252px - $less-gutter-width;
 }
 
