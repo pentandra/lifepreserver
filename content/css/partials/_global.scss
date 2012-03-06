@@ -41,6 +41,7 @@ body {
   @extend .normal;
   font-family: $base-font-family,sans-serif;
   background: $page-background;
+  background: url(/images/groovepaper.png) repeat;
   color: $font-color;
 }
 
@@ -63,7 +64,18 @@ em, .em {
   font-family: $oblique-font-family, sans-serif;
   font-weight: normal;
   font-style: normal;
+
+  .em {
+    font-family: $base-font-family, sans-serif;
+  }
 }
+
+.bold {
+  font-family: $bold-font-family, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 //
 // Classes
@@ -316,7 +328,9 @@ a.tag {
   border-top: 33px solid $pentandra-brown;
 }
 
-.banner {
+[role="banner"] {
+
+  background-color: $pentandra-white;
 
   .logo {
     float: left;

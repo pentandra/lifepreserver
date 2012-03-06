@@ -35,11 +35,20 @@ $less-outer-margin: 48px;
   .aside {
     float: right;
     margin-left: $less-gutter-width;
+
+    &.banner {
+      margin-right: -$less-outer-margin;
+      padding-right: $less-outer-margin;
+      padding-left: $less-gutter-width;
+      @include border-left-radius($default-radius);
+      @include pie;
+    }
   }
   
   .inner {
     @include grid(4);
   }
+
 }
 
 .menu3 {
@@ -62,7 +71,7 @@ $less-outer-margin: 48px;
   }
 
   .banner {
-    margin-right: $less-gutter-width;
+    margin-right: $less-outer-margin;
     margin-left: -$less-outer-margin;
     padding-left: $less-outer-margin;
     @include border-right-radius($default-radius);
@@ -98,7 +107,7 @@ $less-outer-margin: 48px;
 // Layout classes
 
 .montage {
-  .em {
+  .bold {
     @include rotate(-90deg);
     @include grid(3); 
     float: right;

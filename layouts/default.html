@@ -26,18 +26,20 @@
 </head>
 <body id="top">
 <!--[if lt IE 7]><p class="grab">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-<header role="banner" class="banner section">
-  <div class="content">
-    <h1 class="logo"><%= link_to("Pentandra Research Solutions", '/', :class => 'ir') %></h1>
-    <nav class="menu">
-      <ul class="button">
-        <li><%= link_to('Products',  '/products/') %></li>
-        <li><%= link_to('Research',  '/research/') %></li>
-        <li><%= link_to('Company',   '/company/') %></li>
-        <li><%= link_to('Open',      '/open/') %></li>
-        <li><%= link_to('Blog',      '/blog/') %></li>
-      </ul>
-    </nav>
+<header role="banner" class="banner group">
+  <div class="section">
+    <div class="content">
+      <h1 class="logo"><%= link_to("Pentandra Research Solutions", '/', :class => 'ir') %></h1>
+      <nav class="menu">
+        <ul class="button">
+          <li><%= link_to('Products',  '/products/') %></li>
+          <li><%= link_to('Research',  '/research/') %></li>
+          <li><%= link_to('Company',   '/company/') %></li>
+          <li><%= link_to('Open',      '/open/') %></li>
+          <li><%= link_to('Blog',      '/blog/') %></li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </header>
 <div id="main" role="main" class="main">
@@ -61,19 +63,19 @@
           </div>
 
           <div class="mini mod">
-            <a href="/company/#contact" class="em button">Contact Us</a>
+            <a href="/company/#contact" class="bold button">Contact Us</a>
           </div>
 
         </aside>
 
         <aside class="inner">
-          <h2 class="small em">Recent Thoughts</h2>
+          <h2 class="small bold">Recent Thoughts</h2>
           
           <div class="group">
             <% @site.publishing_articles[0, 4].each do |post| %>
             <article> 
               <header>
-                <time pubdate class="em"><%= post[:created_at] %></time>
+                <time pubdate><%= post[:created_at] %></time>
                 <h3 class="small"><%= link_to(post[:title], post, { :rel => "bookmark" }) %></h3>
               </header>
             </article>
@@ -94,7 +96,7 @@
       </div>
     </div>
 
-    <a href="#top" class="button em">Back to top</a>
+    <a href="#top" class="button">Back to top</a>
 
   </div>
 </footer>
