@@ -41,7 +41,6 @@ body {
   @extend .normal;
   font-family: $base-font-family,sans-serif;
   background: $page-background;
-  background: url(/images/groovepaper.png) repeat;
   color: $font-color;
 }
 
@@ -64,10 +63,6 @@ em, .em {
   font-family: $oblique-font-family, sans-serif;
   font-weight: normal;
   font-style: normal;
-
-  .em {
-    font-family: $base-font-family, sans-serif;
-  }
 }
 
 .bold {
@@ -230,6 +225,16 @@ a.tag {
 .menu3 {
   ul li {
     @include grid(3);
+  }
+}
+
+.sidenote {
+
+  font-family: $oblique-font-family, sans-serif;
+  font-style: normal;
+
+  .em {
+    font-family: $base-font-family, sans-serif;
   }
 }
     
