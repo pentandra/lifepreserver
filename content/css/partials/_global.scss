@@ -244,6 +244,8 @@ a.tag {
 
 .rev a, .grab a {
 
+  text-decoration: underline;
+
   &:visited {
     color: $pentandra-white;
   }
@@ -253,6 +255,7 @@ a.tag {
 
   color: $pentandra-brown;
   background-color: $pentandra-white;
+  text-decoration: none;
 
   &:hover, &:focus {
     color: $pentandra-white;
