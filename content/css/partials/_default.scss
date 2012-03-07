@@ -41,7 +41,13 @@ $less-outer-margin: 48px;
       padding-right: $less-outer-margin;
       @include border-left-radius($default-radius);
       @include pie;
+
+      .pod {
+        border-right: 2px $pentandra-white dashed;
+      }
     }
+
+
   }
   
   .inner {
@@ -70,11 +76,15 @@ $less-outer-margin: 48px;
   }
 
   .banner {
-    margin-right: $less-outer-margin;
+    margin-right: $less-gutter-width;
     margin-left: -$less-outer-margin;
     padding-left: $less-outer-margin;
     @include border-right-radius($default-radius);
     @include pie;
+
+    .pod {
+      border-left: 2px $pentandra-white dashed;
+    }
   }
 }
 

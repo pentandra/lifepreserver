@@ -55,15 +55,16 @@
     
     </section>
 
-    <div class="section">
+    <section class="grab banner section">
 
-      <div class="rev share">share</div>
-      
-      <div class="group" id="share" data-url="<%= shorten(url_for(@item)) %>" data-title="share" data-text="<%= @item[:title] %>"></div>
+      <div class="mod pod">
+        <h3 class="big">Share</h3>
+        
+        <div class="group" id="share" data-url="<%= shorten(url_for(@item)) %>" data-title="share" data-text="<%= @item[:title] %>"></div>
+        
+      </div>
 
-      <div class="rev bottom"></div>
-
-    </div>
+    </section>
 
     <nav class="menu group mini">
       <h3 class="big">Tags</h3>

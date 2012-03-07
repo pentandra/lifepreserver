@@ -83,12 +83,9 @@ em, .em {
   margin-bottom: $base-line-height / 2;
 }
 
-.fmod {
-  margin: $base-line-height / 2;
-}
-
-.lmod {
-  margin-left: $base-line-height;
+.pod {
+  padding-left: $less-gutter-width;
+  padding-right: $less-gutter-width;
 }
 
 .mmod { //TODO fix
@@ -413,36 +410,7 @@ a.tag {
   margin-bottom: 13px;
 }
 
-.share {
-  text-align: center;
-  line-height: $grid-height / 3 * 2;
-  @include border-top-radius($default-radius);
-  @include pie;
-  width: 252px - $less-gutter-width;
-  cursor: pointer;
-}
-
-.bottom {
-  line-height: $grid-height / 3;
-  height: $grid-height / 3;
-  @include border-bottom-radius($default-radius);
-  @include pie;
-  width: 252px - $less-gutter-width;
-}
-
 .sharrre { 
-
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 2px;
-  width: 252px - $less-gutter-width;
-  background-color: $pentandra-red;
-  color: $pentandra-white;
-
-  .buttons {
-    width: 174px;
-    margin: 0 auto;
-  }
 
   .button {
     float: left;
