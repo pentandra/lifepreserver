@@ -39,7 +39,6 @@ $less-outer-margin: 48px;
     &.banner {
       margin-right: -$less-outer-margin;
       padding-right: $less-outer-margin;
-      padding-left: $less-gutter-width;
       @include border-left-radius($default-radius);
       @include pie;
     }

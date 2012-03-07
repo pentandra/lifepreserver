@@ -83,6 +83,14 @@ em, .em {
   margin-bottom: $base-line-height / 2;
 }
 
+.fmod {
+  margin: $base-line-height / 2;
+}
+
+.lmod {
+  margin-left: $base-line-height;
+}
+
 .mmod { //TODO fix
   margin-top: $base-line-height / 4;
   margin-bottom: $base-line-height / 4;
@@ -355,7 +363,9 @@ a.tag {
 
 .contentinfo {
 
-  padding-bottom: 84px; // From lessframework
+  a {
+    text-decoration: none;
+  }
 
   .section {
     margin-top: 33px; // Questionable
@@ -363,6 +373,7 @@ a.tag {
 
   .content {
     background-color: $pentandra-brown; // inherit; Doesn't work in IE7
+    padding-bottom: 84px; // From lessframework
   }
 
   .bd .aside {
