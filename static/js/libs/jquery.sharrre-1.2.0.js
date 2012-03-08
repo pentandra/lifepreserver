@@ -1,6 +1,6 @@
 /*
  *  Sharrre.com - Make your sharing widget!
- *  Version: beta 1.3.0 
+ *  Version: beta 1.2.0 
  *  Author: Julien Hany
  *  License: MIT http://en.wikipedia.org/wiki/MIT_License or GPLv2 http://en.wikipedia.org/wiki/GNU_General_Public_License
  */
@@ -19,10 +19,8 @@
       digg: false,
       delicious: false,
       stumbleupon: false,
-      linkedin: false,
-      pinterest: false
+      linkedin: false
     },
-    shareTotal: 0,
     template: '',
     title: '',
     url: document.location.href,
@@ -41,13 +39,11 @@
     buttons: {  //settings for buttons
       googlePlus : {  //http://www.google.com/webmasters/+1/button/
         url: '',  //if you need to personnalize button url
-        urlCount: false,  //if you want to use personnalize button url on global counter
         size: 'medium',
         lang: 'en-US'
       },
       facebook: { //http://developers.facebook.com/docs/reference/plugins/like/
         url: '',  //if you need to personalize url button
-        urlCount: false,  //if you want to use personnalize button url on global counter
         action: 'like',
         layout: 'button_count',
         width: '',
@@ -59,7 +55,6 @@
       },
       twitter: {  //http://twitter.com/about/resources/tweetbutton
         url: '',  //if you need to personalize url button
-        urlCount: false,  //if you want to use personnalize button url on global counter
         count: 'horizontal',
         hashtags: '',
         via: '',
@@ -68,29 +63,19 @@
       },
       digg: { //http://about.digg.com/downloads/button/smart
         url: '',  //if you need to personalize url button
-        urlCount: false,  //if you want to use personnalize button url on global counter
         type: 'DiggCompact'
       },
       delicious: {
         url: '',  //if you need to personalize url button
-        urlCount: false,  //if you want to use personnalize button url on global counter
         size: 'medium' //medium or tall
       },
       stumbleupon: {  //http://www.stumbleupon.com/badges/
         url: '',  //if you need to personalize url button
-        urlCount: false,  //if you want to use personnalize button url on global counter
         layout: '1'
       },
       linkedin: {  //http://developer.linkedin.com/plugins/share-button
         url: '',  //if you need to personalize url button
-        urlCount: false,  //if you want to use personnalize button url on global counter
         counter: ''
-      },
-      pinterest: { //http://pinterest.com/about/goodies/
-        url: '',  //if you need to personalize url button
-        media: '',
-        description: '',
-        layout: 'horizontal'
       }
     }
   },
@@ -105,8 +90,7 @@
     delicious: 'http://feeds.delicious.com/v2/json/urlinfo/data?url={url}&callback=?',
     //stumbleupon: "http://www.stumbleupon.com/services/1.01/badge.getinfo?url={url}&format=jsonp&callback=?",
     stumbleupon: "",
-    linkedin: "http://www.linkedin.com/countserv/count/share?format=jsonp&url={url}&callback=?",
-    pinterest: ""
+    linkedin: "http://www.linkedin.com/countserv/count/share?format=jsonp&url={url}&callback=?"
   },
   /* Load share buttons asynchronously
   ================================================== */
@@ -123,7 +107,7 @@
         loading = 1;
         (function() {
           var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-          po.src = '//apis.google.com/js/plusone.js';
+          po.src = 'https://apis.google.com/js/plusone.js';
           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
         })();
       }
@@ -165,7 +149,7 @@
         })();
       }
       else{
-        $.ajax({ url: '//platform.twitter.com/widgets.js', dataType: 'script', cache:true}); //http://stackoverflow.com/q/6536108
+        $.ajax({ url: 'http://platform.twitter.com/widgets.js', dataType: 'script', cache:true}); //http://stackoverflow.com/q/6536108
       }
     },
     digg : function(self){
@@ -178,7 +162,7 @@
           var s = document.createElement('SCRIPT'), s1 = document.getElementsByTagName('SCRIPT')[0];
           s.type = 'text/javascript';
           s.async = true;
-          s.src = '//widgets.digg.com/buttons.js';
+          s.src = 'http://widgets.digg.com/buttons.js';
           s1.parentNode.insertBefore(s, s1);
         })();
       }
@@ -216,7 +200,7 @@
         loading = 1;
         (function() {
           var li = document.createElement('script');li.type = 'text/javascript';li.async = true;
-          li.src = '//platform.stumbleupon.com/1/widgets.js'; 
+          li.src = 'http://platform.stumbleupon.com/1/widgets.js'; 
           var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(li, s);
         })();
         s = window.setTimeout(function(){
@@ -224,7 +208,7 @@
             STMBLPN.processWidgets();
             clearInterval(s);
           }
-        },500);
+        },100);
       }
       else{
         STMBLPN.processWidgets();
@@ -238,23 +222,13 @@
         loading = 1;
         (function() {
           var li = document.createElement('script');li.type = 'text/javascript';li.async = true;
-          li.src = '//platform.linkedin.com/in.js'; 
+          li.src = 'http://platform.linkedin.com/in.js'; 
           var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(li, s);
         })();
       }
       else{
         window.IN.init();
       }
-    },
-    pinterest : function(self){
-      var sett = self.options.buttons.pinterest;
-      $(self.element).find('.buttons').append('<div class="button pinterest"><a href="http://pinterest.com/pin/create/button/?url='+(sett.url !== '' ? sett.url : self.options.url)+'&media='+sett.media+'&description='+sett.description+'" class="pin-it-button" count-layout="'+sett.layout+'">Pin It</a></div>');
-
-      (function() {
-        var li = document.createElement('script');li.type = 'text/javascript';li.async = true;
-        li.src = '//assets.pinterest.com/js/pinit.js'; 
-        var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(li, s);
-      })();
     }
   },
   /* Tracking for Google Analytics
@@ -294,7 +268,6 @@
       },1000);
     },
     digg: function(){
-      //if somenone find a solution, mail me !
       /*$(this.element).find('.digg').on('click', function(){
         _gaq.push(['_trackSocial', 'digg', 'add']);
       });*/
@@ -305,9 +278,6 @@
       function LinkedInShare() {
         _gaq.push(['_trackSocial', 'linkedin', 'share']);
       }
-    },
-    pinterest: function(){
-      //if somenone find a solution, mail me !
     }
   },
   /* Popup for each social network
@@ -333,9 +303,6 @@
     },
     linkedin: function(opt){
       window.open('https://www.linkedin.com/cws/share?url='+encodeURIComponent((opt.buttons.delicious.url !== '' ? opt.buttons.delicious.url : opt.url))+'&token=&isFramed=true', 'linkedin', 'toolbar=no,width=550,height=550');
-    },
-    pinterest: function(opt){
-      window.open('http://pinterest.com/pin/create/button/?url='+encodeURIComponent((opt.buttons.pinterest.url !== '' ? opt.buttons.pinterest.url : opt.url))+'&media='+encodeURIComponent(opt.buttons.pinterest.media)+'&description='+opt.buttons.pinterest.description, 'pinterest', 'toolbar=no,width=700,height=300');
     }
   };
 
@@ -360,7 +327,6 @@
     if(this.options.urlCurl !== ''){
       urlJson.googlePlus = this.options.urlCurl + '?url={url}&type=googlePlus'; // PHP script for GooglePlus...
       urlJson.stumbleupon = this.options.urlCurl + '?url={url}&type=stumbleupon'; // PHP script for Stumbleupon...
-      urlJson.pinterest = this.options.urlCurl + '?url={url}&type=pinterest'; // PHP script for Pinterest...
     }
     $(this.element).addClass(this.options.className); //add class
     
@@ -374,13 +340,6 @@
     if(typeof $(this.element).data('text') !== 'undefined'){
       this.options.text = $(this.element).data('text');
     }
-    
-    //how many social website have been selected
-    $.each(this.options.share, function(name, val) {
-      if(val === true){
-        self.options.shareTotal ++;
-      }
-    });
     
     if(self.options.enableCounter === true){  //if for some reason you don't need counter
       //get count of social share that have been selected
@@ -438,17 +397,11 @@
     var self = this,
     count = 0,
     url = urlJson[name].replace('{url}', encodeURIComponent(this.options.url));
-    if(this.options.buttons[name].urlCount === true && this.options.buttons[name].url !== ''){
-      url = urlJson[name].replace('{url}', this.options.buttons[name].url);
-    }
     //console.log('name : ' + name + ' - url : '+url); //debug
     if(url != ''){  //urlCurl = '' if you don't want to used PHP script but used social button
       $.getJSON(url, function(json){
         if(typeof json.count !== "undefined"){  //GooglePlus, Stumbleupon, Twitter and Digg
           count += parseInt(json.count, 10);
-        }
-        else if(typeof json.likes !== "undefined"){ //Facebook Fan page
-          count += parseInt(json.likes, 10);  //changed shares to likes to use with fanPage url
         }
         else if(typeof json.shares !== "undefined"){  //Facebook
          count += parseInt(json.shares, 10);
@@ -461,12 +414,7 @@
         self.options.count[name] = count;
         self.options.total += count;
         self.renderer();
-        //check if this is the last social website to launch render
-        var shareCount = 0;
-        for (e in self.options.count) { shareCount++; }
-        if(shareCount === self.options.shareTotal){
-          self.options.render(self, self.options);
-        }
+        self.options.render(self, self.options);
         //console.log(json); //debug
       });
     }
@@ -516,8 +464,7 @@
         digg: {site: 'digg', action: 'add'},
         delicious: {site: 'delicious', action: 'add'},
         stumbleupon: {site: 'stumbleupon', action: 'add'},
-        linkedin: {site: 'linkedin', action: 'share'},
-        pinterest: {site: 'pinterest', action: 'pin'}
+        linkedin: {site: 'linkedin', action: 'share'}
       };
       _gaq.push(['_trackSocial', tracking[site].site, tracking[site].action]);
     }
@@ -529,35 +476,14 @@
     var html = $(this.element).html();
     $(this.element).html(html.replace(this.options.total, this.options.total+1));
   };
-  
-  /* Methode for add +1 to a counter
-  ================================================== */
-  Plugin.prototype.update = function (url, text) {
-    if(url !== ''){
-      this.options.url = url;
-    }
-    if(text !== ''){
-      this.options.text = text;
-    }
-  };
 
   /* A really lightweight plugin wrapper around the constructor, preventing against multiple instantiations
   ================================================== */
   $.fn[pluginName] = function ( options ) {
-    var args = arguments;
-    if (options === undefined || typeof options === 'object') {
-      return this.each(function () {
-        if (!$.data(this, 'plugin_' + pluginName)) {
-          $.data(this, 'plugin_' + pluginName, new Plugin( this, options ));
-        }
-      });
-    } else if (typeof options === 'string' && options[0] !== '_' && options !== 'init') {
-      return this.each(function () {
-        var instance = $.data(this, 'plugin_' + pluginName);
-        if (instance instanceof Plugin && typeof instance[options] === 'function') {
-          instance[options].apply( instance, Array.prototype.slice.call( args, 1 ) );
-        }
-      });
-    }
-  };
+    return this.each(function () {
+      if (!$.data(this, 'plugin_' + pluginName)) {
+        $.data(this, 'plugin_' + pluginName, new Plugin( this, options ));
+      }
+    });
+  }
 })(jQuery, window, document);
