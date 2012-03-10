@@ -12,8 +12,7 @@ tags:
 
 We had a blast last month at the 
 [RootsTech](http://rootstech.org/ "rootstech.org") conference in Salt Lake City.
-If you are not familiar with RootsTech, let me say that it is a conference
-mostly organized by 
+If you are not familiar with RootsTech, it is a conference organized mostly by 
 [FamilySearch International](http://familysearch.org "familysearch.org") to 
 bring together genealogical software creators and users. This is the second
 year of the conference.

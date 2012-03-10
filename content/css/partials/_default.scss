@@ -217,6 +217,10 @@ $theteam-height: 290px;
   background: transparent url('/images/twitter.png') no-repeat center center;
 }
 
+.zeugma-collab {
+  margin-top: -31px;
+}
+
 .zeugma {
   @include grid(6);
   height: 412px;
