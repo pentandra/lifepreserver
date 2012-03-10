@@ -18,3 +18,4 @@ gem 'builder'
 gem 'adsf'
 gem 'systemu'
 gem 'shortly' # For URL shortening
+gem 'html_spellchecker' # To check spelling

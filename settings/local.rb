@@ -2,6 +2,7 @@
 
 $include_drafts = true
 $recent_posts_limit = 4
+$spellcheck = true
 $use_minified_js = false
 $use_minified_css = false
 

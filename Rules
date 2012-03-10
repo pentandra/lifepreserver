@@ -142,8 +142,13 @@ compile '*' do
     if item[:kind] == 'article' && ($include_drafts or item[:published]) then
       layout 'article'
     end
+
+    if $spellcheck then
+      filter :spellchecker
+    end
     
     layout 'default'
+
     filter :rubypants
     filter :beautifier
   end
