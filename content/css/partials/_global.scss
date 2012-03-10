@@ -232,12 +232,6 @@ a.tag {
   }
 }
 
-.menu3 {
-  ul li {
-    @include grid(3);
-  }
-}
-
 .sidenote {
 
   font-family: $oblique-font-family, sans-serif;

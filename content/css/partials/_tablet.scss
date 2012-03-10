@@ -6,8 +6,90 @@
 cols    1     2      3      4      5      6      7      8
 px      68    160    252    344    436    528    620    712    */
 
+$less-outer-margin: 28px;
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .content {
     @include grid(8); 
+    padding: 0 $less-outer-margin;
   } 
+
+  .ext {
+    margin-left: -$less-outer-margin;
+    margin-right: -$less-outer-margin;
+    padding-left: $less-outer-margin;
+    padding-right: $less-outer-margin;
+  }
+
+  .bd {
+    @include grid(5);
+
+    .aside {
+      float: none;
+      margin-left: 0;
+
+      &.banner {
+        margin-right: -$less-outer-margin;
+        padding-right: $less-outer-margin;
+      }
+    }
+  }
+
+  .menu3 {
+    ul li {
+      width: 222px;
+      margin-right: 23px;
+    }
+  }
+
+  .aside {
+
+    .banner {
+      margin-left: -$less-outer-margin;
+      padding-left: $less-outer-margin;
+    }
+  }
+
+
+  //
+  // Grid classes
+
+  .bl {
+    @include grid(6);
+    float: none;
+    margin: 0 auto;
+
+    &.ock {
+      margin: 0 auto;
+    }
+
+  }
+
+
+  //
+  // Layout classes
+  
+  $theteam-height: 228px;
+
+  .theteam {
+    @include grid(4);
+    height: $theteam-height;
+    background-size: 100%;
+  }
+    
+
+  //
+  // Background-image classes
+  .geungle-logo {
+    @include grid(5);
+    height: 130px;
+    background-size: 100%;
+  }
+
+  .zeugma {
+    @include grid(5);
+    height: 340px;
+    background-size: 100%;
+  }
+    
 }
