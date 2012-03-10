@@ -25,6 +25,7 @@ $less-outer-margin: 28px;
     @include grid(5);
 
     .aside {
+      width: auto;
       float: none;
       margin-left: 0;
 
