@@ -63,6 +63,11 @@ em, .em {
   font-family: $oblique-font-family, sans-serif;
   font-weight: normal;
   font-style: normal;
+
+  cite {
+    font-family: $base-font-family, sans-serif;
+    font-style: normal;
+  }
 }
 
 .bold {
@@ -240,6 +245,7 @@ a.tag {
 
   .em {
     font-family: $base-font-family, sans-serif;
+    font-style: normal;
   }
 }
     
