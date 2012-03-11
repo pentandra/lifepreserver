@@ -121,6 +121,10 @@ $less-outer-margin: 48px;
   .aside {
     float: right;
   }
+
+  .bd {
+    float: left;
+  }
 }
 
 $theteam-height: 290px;
@@ -140,15 +144,6 @@ $theteam-height: 290px;
 
   &:hover {
     background-image: url('/images/team-436x290-silly.jpg');
-  }
-}
-
-.teammember {
-
-  .photo {
-    float: left;
-    width: 150px; // 150 + 10px borders = grid(2) or 160px
-    height: 150px;
   }
 }
 
@@ -224,7 +219,7 @@ $theteam-height: 290px;
 .zeugma {
   @include grid(6);
   height: 412px;
-  background: transparent url('/images/zeugma.jpg') no-repeat scroll left top;
+  background: transparent url('/images/zeugma.jpg') no-repeat scroll left center;
 }
 
 //

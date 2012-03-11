@@ -26,9 +26,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.86491935"
-     inkscape:cx="486.75058"
-     inkscape:cy="494.75058"
+     inkscape:zoom="0.67431756"
+     inkscape:cx="496"
+     inkscape:cy="1533.8731"
      inkscape:document-units="px"
      inkscape:current-layer="layer4"
      showgrid="true"
@@ -783,7 +783,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1975,7 +1975,7 @@
        style="fill:none;stroke:#544233;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
   </g>
   <g
-     style="display:none"
+     style="display:inline"
      inkscape:label="Products"
      id="layer7"
      inkscape:groupmode="layer">
@@ -3872,7 +3872,7 @@
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="Company"
-     style="display:inline">
+     style="display:none">
     <flowRoot
        transform="translate(-84.0915,-14.60305)"
        style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0.5px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#2a1a0d;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro"

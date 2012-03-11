@@ -199,10 +199,23 @@ teammembers:
   <h2>Our Roster</h2>
   
   <% @item[:teammembers].each_with_index do |member, i| %> 
-  <section id="<%= full_name(member).to_slug %>" class="teammember vcard group bl<%= i.odd? ? ' ock' : '' %> item">
+  <section id="<%= full_name(member).to_slug %>" class="teammember vcard bl<%= i.odd? ? ' ock' : '' %> item">
 
-    <div class="mod">
-      <img class="photo" src="<%= image_path(member) %>" alt="Photo of <%= full_name(member) %>" />
+    <div class="mod group">
+      
+      <div class="aside">
+        <img class="photo" src="<%= image_path(member) %>" alt="Photo of <%= full_name(member) %>" />
+
+        <aside class="mmod nav menu">
+
+          <ul class="sp">
+            <li><a class="gplus ir url" title="<%= full_name(member) %> on Google+" href="https://plus.google.com/<%= member[:gplus] %>?prsrc=3"><%= full_name(member) %> on Google+</a></li>
+            <li><a class="twittr ir url" href="https://twitter.com/<%= member[:twitter] %>" title="Follow @<%= member[:twitter] %>">Follow @<%= member[:twitter] %></a></li>
+            <li><a class="email ir" href="mailto:<%= member[:email] %>" title="<%= member[:email] %>">Email <%= member[:first_name] %></a></li>
+          </ul>
+
+        </aside>
+      </div>
 
       <div class="bd fx group">
 
@@ -214,14 +227,6 @@ teammembers:
         <p><%= member[:summary] %></p>
 
       </div>
-
-      <aside class="mmod aside nav menu">
-        <ul class="sp">
-          <li><a class="gplus ir url" title="<%= full_name(member) %> on Google+" href="https://plus.google.com/<%= member[:gplus] %>?prsrc=3"><%= full_name(member) %> on Google+</a></li>
-          <li><a class="twittr ir url" href="https://twitter.com/<%= member[:twitter] %>" title="Follow @<%= member[:twitter] %>">Follow @<%= member[:twitter] %></a></li>
-          <li><a class="email ir" href="mailto:<%= member[:email] %>" title="<%= member[:email] %>">Email <%= member[:first_name] %></a></li>
-        </ul>
-      </aside>
 
     </div>
 

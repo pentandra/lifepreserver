@@ -15,150 +15,99 @@ $less-outer-margin: 34px;
     padding: 0 $less-outer-margin;
   } 
 
-  a.button {
-    margin-top: auto;
+  .ext {
+    margin-left: -$less-outer-margin;
+    margin-right: -$less-outer-margin;
+    padding-left: $less-outer-margin;
+    padding-right: $less-outer-margin;
   }
 
-  header.main {
+  .bd {
+    @include grid(3);
+    float: none;
+
+    .aside {
+      float: none;
+      margin-left: 0;
+
+      &.banner {
+        margin-right: -$less-outer-margin;
+        padding-right: $less-outer-margin;
+      }
+    }
+
+    .inner {
+      @include grid(3);
+    }
+  }
+
+  .aside {
+    float: none;
+
+    .banner {
+      margin-left: -$less-outer-margin;
+      padding-left: $less-outer-margin;
+    }
+  }
+
+  .img img {
+    margin: 0 auto;
+  }
+
+  // Grid classes
+
+  .bl {
+    @include grid(3);
+
+    &.ock {
+      margin-left: 0;
+    }
+  }
+
+  //
+  // Layout classes
+
+  .montage {
+
+    .aside {
+      float: none;
+    }
+
+    .bd {
+      float: none;
+    }
+  }
+
+  .teamintro {
+    @include grid(3);
+  }
+
+  .theteam {
+    @include grid(3);
+    height: 168px;
+    background-image: url('/images/team-252x168.jpg');
     position: static;
 
-    nav {
-      float: none;
-      position: absolute;
-      margin-top: $grid-height*3 - 33px;
-      font-weight: bold;
-      font-size: 13px;
-      line-height: 33px;
-      @include grid(3);
-      text-align: center;
-
-      ul li {
-        display: inline;
-        float: none;
-
-        a {
-          color: $pentandra-white !important;
-          padding: 0 5px;
-          display: inline-block;
-
-          &:hover, &:focus {
-            @include border-radius(0, 0);
-          }
-        }
-      }
+    &:hover {
+      background-image: url('/images/team-252x168-silly.jpg');
     }
+
   }
 
-  #main {
-    margin-top: 0;
 
-    section {
-
-      p {
-        margin-left: 0;
-        margin-top: inherit;
-        @include grid(3);
-        float: none;
-      }
-
-    }
-  } 
-
-  section#zeugma {
-    padding-top: 0;
-
-    h2 {
-      font-weight: normal;
-      text-align: center;
-      margin-bottom: 24px;
-      text-transform: none;
-      font-size: 20px;
-      letter-spacing: 0;
-    }
-
-    p {
-      font-size: inherit; 
-    }
-
-    h2, p {
-      margin-left: 0;
-    }
-
-    div#mosaic {
-      background: transparent url('/images/zeugma_3col.jpg') no-repeat scroll left top;
-      @include grid(3);
-      height: 197px;
-      position: static;
-    }
+  //
+  // Background-image classes
+  
+  .zeugma {
+    @include grid(3);
+    height: 197px;
+    background-image: url('/images/zeugma_3col.jpg');
+  }
+    
+  .geungle-logo {
+    @include grid(3);
+    height: 76px;
+    background-image: url('/images/geungle-logo_3col.png');
   }
 
-  section#ourcompany {
-    margin-top: $grid-height;
-  }
-
-  section#researchexperience {
-
-    counter-reset: section;
-
-    div.wrapper {
-      height: auto;
-      margin-bottom: $grid-height/2;
-      
-      h4 {
-        float: none;
-        text-align: left;
-        margin: inherit;
-
-        &:before {
-          counter-increment: section;
-          content: counter(section) ". ";
-        }
-      }
-
-      p {
-        @include grid(3);
-        float: none;
-        margin: inherit;
-      }
-
-      figure {
-        float: none;
-      }
-    }
-  }
-
-  section#meetgeungle {
-
-    div#geunglelogo {
-      padding: 0;
-      background: transparent url('/images/geungle-logo_3col.png') no-repeat scroll center top;
-      @include grid(3);
-      height: 76px;
-      margin-left: 0;
-    }
-  }
-
-  footer {
-    margin-top: $grid-height/2;
-
-    span, section {
-      float: left;
-    }
-
-    div.content {
-      padding: 33px 34px 60px;
-    }
-
-    span#footerlogo {
-      @include grid(3);
-    }
-
-    section {
-      margin-left: 0;
-    }
-
-    section#recentthoughts {
-      @include grid(3);
-    }
-  }
 }
