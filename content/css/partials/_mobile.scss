@@ -23,7 +23,7 @@ $less-outer-margin: 34px;
   }
 
   .bd {
-    @include grid(3);
+    width: auto;
     float: none;
 
     .aside {
@@ -37,7 +37,7 @@ $less-outer-margin: 34px;
     }
 
     .inner {
-      @include grid(3);
+      width: auto;
     }
   }
 
@@ -57,7 +57,7 @@ $less-outer-margin: 34px;
   // Grid classes
 
   .bl {
-    @include grid(3);
+    width: auto;
 
     &.ock {
       margin-left: 0;
@@ -79,7 +79,7 @@ $less-outer-margin: 34px;
   }
 
   .teamintro {
-    @include grid(3);
+    width: auto;
   }
 
   .theteam {
