@@ -4,4 +4,4 @@ output.diff
 tmp
 nanoc-autocompile.log
 *.swp
-settings.rb
+environment.rb

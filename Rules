@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'compass'
-require './settings'
+require './environment'
 
 Compass.add_project_configuration 'compass/config.rb'
 
