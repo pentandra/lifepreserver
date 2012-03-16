@@ -55,8 +55,13 @@ address {
   font-style: normal;
 }
 
-blockquote {
+.bq { // blockquote
+
   padding: $base-line-height / 2 $base-line-height;
+
+  blockquote { 
+    margin: 0; 
+  }
 }
 
 em, .em {

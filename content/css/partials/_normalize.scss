@@ -102,7 +102,7 @@ abbr[title] { border-bottom: 1px dotted; }
 
 b, strong { @extend .bold; }
 
-blockquote { margin: 1em 40px; }
+blockquote, .bq { margin: 1em 40px; }
 
 i, cite, dfn { font-family: $oblique-font-family, sans-serif; font-style: normal; }
 
