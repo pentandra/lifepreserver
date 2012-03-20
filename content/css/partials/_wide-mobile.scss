@@ -63,4 +63,26 @@ $less-outer-margin: 22px;
       }
     }
   }
+
+
+  //
+  // Background-image classes
+
+  .geungle-logo {
+    @include grid(5);
+    height: 130px;
+    background-size: 100%;
+    background-image: url('/images/geungle-logo.png');
+  }
+
+  .logo {
+    @include grid(5);
+    height: 58px;
+    background-image: url('/images/pentandra-logo_436x58.png');
+  }
+
+  .rev .logo, .grab .logo {
+    background-image: url('/images/pentandra-logo-reverse_436x58.png');
+  }
+
 }
