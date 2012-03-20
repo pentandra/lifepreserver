@@ -40,11 +40,16 @@ $(document).ready(function() {
     return false;
   });
   
-  // Scroll to #main on mobile phones on page load
+});
+
+$(window).load(function() {
+
+  // Scroll to #main on mobile phones after page load
   if ($(window).width() < 767) {
     $.smoothScroll({
       speed: 800,
       scrollTarget: '#main'
     });
   }
+
 });
