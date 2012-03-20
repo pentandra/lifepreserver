@@ -40,4 +40,11 @@ $(document).ready(function() {
     return false;
   });
   
+  // Scroll to #main on mobile phones on page load
+  if ($(window).width() < 767) {
+    $.smoothScroll({
+      speed: 800,
+      scrollTarget: '#main'
+    });
+  }
 });
