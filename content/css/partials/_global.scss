@@ -343,9 +343,12 @@ a.tag {
 
   background-color: $pentandra-white;
 
+  h1 {
+    margin: 0;
+  }
+
   .logo {
     float: left;
-    margin: 0;
   }
 
   .menu {
