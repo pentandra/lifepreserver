@@ -25,4 +25,16 @@ $less-outer-margin: 22px;
       }
     }
   }
+
+  .bl {
+
+    .aside {
+      float: left;
+    }
+
+    .bd {
+      float: right;
+    }
+  }
+
 }

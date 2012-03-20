@@ -109,6 +109,7 @@ $less-outer-margin: 48px;
 
   .aside {
     @include grid(2);
+    margin-right: $less-gutter-width;
   }
 }
 
