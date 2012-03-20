@@ -13,4 +13,16 @@ $less-outer-margin: 22px;
     @include grid(5); 
     padding: 0 $less-outer-margin;
   } 
+
+  .menu2 {
+
+    ul li {
+      width: (436px - $less-gutter-width) / 2;
+      float: left;
+
+      &:nth-child(even) {
+        margin-left: $less-gutter-width;
+      }
+    }
+  }
 }

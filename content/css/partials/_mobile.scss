@@ -46,6 +46,7 @@ $less-outer-margin: 34px;
     .aside {
       float: none;
       margin-left: 0;
+      width: auto;
 
       &.banner {
         margin-right: -$less-outer-margin;
@@ -81,6 +82,13 @@ $less-outer-margin: 34px;
   .img img {
     margin: 0 auto;
   }
+
+  .menu3 ul li {
+    float: none;
+    width: auto;
+    margin-right: 0;
+  }
+
 
   // Grid classes
 
@@ -150,7 +158,6 @@ $less-outer-margin: 34px;
       }
     }
   }
-
 
   //
   // Background-image classes
