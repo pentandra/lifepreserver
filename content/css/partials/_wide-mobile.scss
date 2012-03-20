@@ -49,4 +49,18 @@ $less-outer-margin: 22px;
       background-image: url('/images/team-436x290-silly.jpg');
     }
   }
+
+  .contentinfo {
+
+    .bd {
+      
+      .aside {
+        float: right;
+      }
+
+      .inner {
+        @include grid(3);
+      }
+    }
+  }
 }
