@@ -390,6 +390,12 @@ a.tag {
   }
 }
 
+.teammember {
+  .aside {
+    margin-bottom: $base-line-height;
+  }
+}
+
 .post p:last-child:after {
   content: "\25C2";
   padding-left: 10px;

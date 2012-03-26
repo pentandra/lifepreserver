@@ -40,6 +40,21 @@ $less-outer-margin: 22px;
   //
   // Layout classes
 
+  .motto {
+
+    h1 {
+      float: right;
+      @include grid(3);
+    }
+
+    p {
+      float: left;
+      @include grid(2);
+      text-align: right;
+      margin-top: 3px;
+    }
+  }
+
   .theteam {
     @include grid(5);
     height: 290px;
@@ -85,4 +100,10 @@ $less-outer-margin: 22px;
     background-image: url('/images/pentandra-logo-reverse_436x58.png');
   }
 
+  .zeugma {
+    @include grid(5);
+    height: 412px;
+    background-image: url('/images/zeugma.jpg');
+    background-size: 100%;
+  }
 }

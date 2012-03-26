@@ -13,9 +13,9 @@ $less-outer-margin: 34px;
   //
   // HTML Elements
 
-  h1 { // @extend .large
+  h1 { 
     font-size: 47px;
-    line-height: 48px;
+    line-height: 68px; // 1.61/2 * .huge line-height
     letter-spacing: normal;
   }
 
@@ -46,7 +46,6 @@ $less-outer-margin: 34px;
     .aside {
       float: none;
       margin-left: 0;
-      width: auto;
 
       &.banner {
         margin-right: -$less-outer-margin;
@@ -62,10 +61,15 @@ $less-outer-margin: 34px;
 
   .aside {
     float: none;
+    width: auto;
 
     .banner {
       margin-left: -$less-outer-margin;
       padding-left: $less-outer-margin;
+    }
+
+    .close {
+      text-align: left;
     }
   }
 
@@ -89,6 +93,9 @@ $less-outer-margin: 34px;
     margin-right: 0;
   }
 
+  .static {
+    @include grid(3);
+  }
 
   // Grid classes
 
@@ -102,6 +109,10 @@ $less-outer-margin: 34px;
 
   //
   // Layout classes
+
+  .logo {
+    @include grid(3);
+  }
 
   .copyright {
     float: left;
@@ -169,8 +180,12 @@ $less-outer-margin: 34px;
   
   .zeugma {
     @include grid(3);
-    height: 197px;
+    height: 252px; //197px;
     background-image: url('/images/zeugma_3col.jpg');
+  }
+
+  .zeugma-collab {
+    margin-top: 0;
   }
     
   .geungle-logo {
