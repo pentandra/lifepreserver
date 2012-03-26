@@ -290,30 +290,6 @@ a.tag {
   }
 }
 
-.drop-shadow {
-  position: relative;
-  width: 90%;
-}
-
-.drop-shadow:before, .drop-shadow:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  bottom: 15px;
-  left: 10px;
-  width: 50%;
-  height: 20%;
-  max-width: 300px;
-  @include single-box-shadow(rgba(0, 0, 0, 0.7), 0, 15px, 10px);
-  @include rotate(-3deg);
-}  
-
-.drop-shadow:after {
-  right:10px;
-  left:auto;
-  @include rotate(3deg);
-}
-
 .shadow {
   @include single-box-shadow($pentandra-brown, 0, 0, 10px);
 }
@@ -379,6 +355,10 @@ a.tag {
 
   .bd .aside {
     @include grid(2);
+  }
+
+  aside {
+    margin-bottom: $base-line-height;
   }
 
   .menu ul li {
