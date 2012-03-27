@@ -97,6 +97,10 @@ $less-outer-margin: 34px;
     @include grid(3);
   }
 
+  .newline {
+    display: block;
+  }
+
   // Grid classes
 
   .bl {
