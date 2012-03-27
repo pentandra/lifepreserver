@@ -17,7 +17,7 @@ If you are not familiar with RootsTech, it is a conference organized mostly by
 bring together genealogical software creators and users. This is the second
 year of the conference.
 
-![RootsTech 2012](/images/rootstech.320x480-75.2012.jpg){: .aside .mod }
+![RootsTech 2012](/images/rootstech.320x480-75.2012.jpg){: .aside .mod .static }
 
 ## Things I Learned
 {: .bigger }
