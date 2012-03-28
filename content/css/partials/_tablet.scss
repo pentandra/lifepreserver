@@ -78,6 +78,9 @@ $less-outer-margin: 28px;
     background-size: 100%;
   }
     
+  .montage .bd {
+    @include grid(4);
+  }
 
   //
   // Background-image classes
@@ -85,6 +88,10 @@ $less-outer-margin: 28px;
     @include grid(5);
     height: 130px;
     background-size: 100%;
+  }
+
+  .process {
+    margin-top: 0;
   }
 
   .zeugma {

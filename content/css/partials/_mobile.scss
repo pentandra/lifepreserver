@@ -133,6 +133,7 @@ $less-outer-margin: 34px;
     }
 
     .bd {
+      width: auto;
       float: none;
     }
   }
@@ -182,6 +183,19 @@ $less-outer-margin: 34px;
   //
   // Background-image classes
   
+  .geungle-logo {
+    @include grid(3);
+    height: 76px;
+    background-image: url('/images/geungle-logo_3col.png');
+  }
+
+  .process {
+    @include grid(3);
+    height: 240px;
+    background-image: url('/images/research-process_3col.png');
+    margin-top: 0;
+  }
+
   .zeugma {
     @include grid(3);
     height: 252px; //197px;
@@ -192,10 +206,4 @@ $less-outer-margin: 34px;
     margin-top: 0;
   }
     
-  .geungle-logo {
-    @include grid(3);
-    height: 76px;
-    background-image: url('/images/geungle-logo_3col.png');
-  }
-
 }

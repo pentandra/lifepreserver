@@ -104,6 +104,12 @@ $less-outer-margin: 22px;
     background-image: url('/images/pentandra-logo-reverse_436x58.png');
   }
 
+  .process {
+    @include grid(5);
+    height: 328px;
+    background-image: url('/images/research-process.png');
+  }
+
   .zeugma {
     @include grid(5);
     height: 412px;

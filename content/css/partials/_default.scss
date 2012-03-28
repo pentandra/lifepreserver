@@ -129,6 +129,7 @@ $less-outer-margin: 48px;
 
   .bd {
     float: left;
+    @include grid(6);
   }
 }
 
@@ -197,6 +198,13 @@ $theteam-height: 290px;
 
 .rev .logo, .grab .logo {
   background: transparent url('/images/pentandra-logo-reverse.png') no-repeat left top;
+}
+
+.process {
+  @include grid(4);
+  height: 328px;
+  background: $pentandra-white url('/images/research-process.png') no-repeat center center;
+  margin-top: -#{$grid-height};
 }
 
 .rss {
