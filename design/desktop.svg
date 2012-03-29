@@ -26,9 +26,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="480.33159"
-     inkscape:cy="1179.9363"
+     inkscape:zoom="0.84879032"
+     inkscape:cx="496"
+     inkscape:cy="1405.6845"
      inkscape:document-units="px"
      inkscape:current-layer="layer5"
      showgrid="true"
@@ -817,29 +817,9 @@
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4779"
-       id="linearGradient4932"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.0716378,0,0,1.0716378,-30.429727,776.17977)"
-       x1="223.79417"
-       y1="216.13988"
-       x2="74.23336"
-       y2="66.579063" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4779"
        id="linearGradient4973"
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(1.0716378,0,0,1.0716378,-30.429727,776.17977)"
-       x1="223.79417"
-       y1="216.13988"
-       x2="74.23336"
-       y2="66.579063" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4779"
-       id="linearGradient5072"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.0716378,0,0,1.0716378,363.55925,690.94891)"
        x1="223.79417"
        y1="216.13988"
        x2="74.23336"
@@ -3805,10 +3785,10 @@
     </g>
     <g
        id="g3889"
-       inkscape:export-filename="/home/chris/devel/pentandra/lifepreserver/static/images/research-collaboration-211x209.png"
+       inkscape:export-filename="/home/chris/devel/pentandra/lifepreserver/static/images/open-pentandra.png"
        inkscape:export-xdpi="89.998596"
        inkscape:export-ydpi="89.998596"
-       transform="translate(8.3890063,76.549683)">
+       transform="matrix(1.1960634,0,0,1.1960634,-123.38307,-62.490521)">
       <g
          inkscape:export-ydpi="232.61"
          inkscape:export-xdpi="232.61"
