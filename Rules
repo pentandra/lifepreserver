@@ -114,7 +114,8 @@ end
 
 compile '/company/', :rep => :vcard do
   filter :vcard, {
-    :name => @item[:company_name], 
+    :name => "Pentandra", 
+    :org => "Pentandra Research Solutions, Inc.",
     :phone => @item[:phone], 
     :email => @item[:email],
     :url => @config[:base_url]}
@@ -122,7 +123,8 @@ end
 
 compile '/company/', :rep => :qrcode do
   filter :vcard, {
-    :name => @item[:company_name], 
+    :name => "Pentandra", 
+    :org => "Pentandra Research Solutions, Inc.",
     :phone => @item[:phone], 
     :email => @item[:email],
     :url => @config[:base_url]}

@@ -17,6 +17,10 @@ class VcardFilter < Nanoc::Filter
         name.family = last_name unless last_name.nil?
       end
 
+      unless params[:org].nil?
+        maker.org = params[:org]
+      end
+
       unless params[:email].nil?
         maker.add_email(params[:email]) { |e| e.location = 'work' }
       end
