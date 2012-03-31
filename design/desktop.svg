@@ -26,11 +26,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.84879032"
-     inkscape:cx="496"
-     inkscape:cy="1405.6845"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="657.20015"
+     inkscape:cy="810.45572"
      inkscape:document-units="px"
-     inkscape:current-layer="layer5"
+     inkscape:current-layer="g6931"
      showgrid="true"
      inkscape:window-width="1366"
      inkscape:window-height="768"
@@ -45,7 +45,7 @@
      inkscape:object-paths="false"
      inkscape:snap-object-midpoints="false"
      inkscape:snap-bbox="true"
-     inkscape:bbox-paths="false"
+     inkscape:bbox-paths="true"
      inkscape:snap-nodes="true"
      inkscape:object-nodes="true"
      inkscape:snap-to-guides="true"
@@ -586,6 +586,22 @@
        position="563.78604,1659.7761"
        orientation="-46.132339,70.400929"
        id="guide6998" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="865.98243,806.5238"
+       id="guide6923" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="851.93762,843.12659"
+       id="guide6925" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="848.93762,843.12659"
+       id="guide6927" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="603.0625,812.19122"
+       id="guide6929" />
   </sodipodi:namedview>
   <defs
      id="defs4">
@@ -4318,6 +4334,152 @@
                sodipodi:role="line">5</tspan></text>
         </g>
       </g>
+    </g>
+    <g
+       id="g6931"
+       inkscape:export-filename="/home/chris/devel/pentandra/lifepreserver/static/images/pillars.png"
+       inkscape:export-xdpi="89.959999"
+       inkscape:export-ydpi="89.959999">
+      <rect
+         y="1344.9524"
+         x="600.0625"
+         height="36"
+         width="252"
+         id="rect6814"
+         style="fill:#544233;stroke:none" />
+      <g
+         transform="translate(46.333313,-14.353996)"
+         id="g6907">
+        <rect
+           style="fill:#544233;fill-opacity:1;stroke:none"
+           id="rect6816"
+           width="36"
+           height="132"
+           x="553.72919"
+           y="1227.3064" />
+        <text
+           xml:space="preserve"
+           style="font-size:18px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro Medium"
+           x="-1347.6873"
+           y="578.17316"
+           id="text6818"
+           sodipodi:linespacing="125%"
+           transform="matrix(0,-1,1,0,0,0)"><tspan
+             sodipodi:role="line"
+             id="tspan6820"
+             x="-1347.6873"
+             y="578.17316">Attribution</tspan></text>
+      </g>
+      <g
+         transform="translate(43.333313,-14.353996)"
+         id="g6902">
+        <rect
+           y="1227.3064"
+           x="610.72919"
+           height="132"
+           width="36"
+           id="rect6822"
+           style="fill:#544233;fill-opacity:1;stroke:none" />
+        <text
+           transform="matrix(0,-1,1,0,0,0)"
+           sodipodi:linespacing="125%"
+           id="text6824"
+           y="633.22919"
+           x="-1347.6873"
+           style="font-size:18px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro Medium"
+           xml:space="preserve"><tspan
+             y="633.22919"
+             x="-1347.6873"
+             id="tspan6826"
+             sodipodi:role="line">Comprehensive</tspan></text>
+      </g>
+      <g
+         transform="translate(40.333313,-14.353996)"
+         id="g6897">
+        <rect
+           style="fill:#544233;fill-opacity:1;stroke:none"
+           id="rect6828"
+           width="36"
+           height="132"
+           x="667.72919"
+           y="1227.3064" />
+        <text
+           xml:space="preserve"
+           style="font-size:18px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro Medium"
+           x="-1347.6873"
+           y="691.9032"
+           id="text6830"
+           sodipodi:linespacing="125%"
+           transform="matrix(0,-1,1,0,0,0)"><tspan
+             sodipodi:role="line"
+             id="tspan6832"
+             x="-1347.6873"
+             y="691.9032">Well-Reasoned</tspan></text>
+      </g>
+      <g
+         transform="translate(37.333313,-14.353996)"
+         id="g6892">
+        <rect
+           y="1227.3064"
+           x="724.72919"
+           height="132"
+           width="36"
+           id="rect6834"
+           style="fill:#544233;fill-opacity:1;stroke:none" />
+        <text
+           transform="matrix(0,-1,1,0,0,0)"
+           sodipodi:linespacing="125%"
+           id="text6836"
+           y="748.94818"
+           x="-1347.7413"
+           style="font-size:18px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro Medium"
+           xml:space="preserve"><tspan
+             y="748.94818"
+             x="-1347.7413"
+             id="tspan6838"
+             sodipodi:role="line">Verifiable</tspan></text>
+      </g>
+      <g
+         transform="translate(34.333313,-14.354004)"
+         id="g6887">
+        <rect
+           style="fill:#544233;fill-opacity:1;stroke:none"
+           id="rect6840"
+           width="36"
+           height="132"
+           x="781.72919"
+           y="1227.3064" />
+        <text
+           xml:space="preserve"
+           style="font-size:18px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Function Pro;-inkscape-font-specification:Function Pro Medium"
+           x="-1347.6873"
+           y="803.6712"
+           id="text6842"
+           sodipodi:linespacing="125%"
+           transform="matrix(0,-1,1,0,0,0)"><tspan
+             sodipodi:role="line"
+             id="tspan6844"
+             x="-1347.6873"
+             y="803.6712">Transparent</tspan></text>
+      </g>
+      <path
+         sodipodi:nodetypes="cccccccc"
+         inkscape:connector-curvature="0"
+         id="path6914"
+         d="m 726.06251,1140.9524 122.87511,49.5238 c 1.7829,0.8603 3,1.0471 3,3 l 0.12482,19.4762 -252.00001,0 7e-5,-19.4762 c 0.027,-2.0856 1.08938,-2.1156 3,-3 z"
+         inkscape:transform-center-y="-11.999999"
+         style="fill:#db1111;fill-opacity:1;stroke:none" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text6916"
+         y="1197.646"
+         x="690.84021"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:5.73999977px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Function Caps;-inkscape-font-specification:Function Caps Bold"
+         xml:space="preserve"><tspan
+           y="1197.646"
+           x="690.84021"
+           id="tspan6918"
+           sodipodi:role="line">Proof</tspan></text>
     </g>
   </g>
   <g
