@@ -207,6 +207,21 @@ $theteam-height: 290px;
   margin-top: -#{$grid-height};
 }
 
+.question {
+
+  height: 345px;
+  position: relative;
+
+  &:before {
+    content: "?";
+    font-size: 385px;
+    line-height: 345px;
+    position: absolute;
+    left: 40px;
+    top: 3px;
+  }
+}
+
 .rss {
   height: $base-line-height;
   width: 24px;

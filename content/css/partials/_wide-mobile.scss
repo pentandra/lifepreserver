@@ -110,6 +110,13 @@ $less-outer-margin: 22px;
     background-image: url('/images/research-process.png');
   }
 
+  .question {
+
+    &:before {
+      left: 125px;
+    }
+  }
+
   .zeugma {
     @include grid(5);
     height: 412px;
