@@ -190,15 +190,6 @@ $theteam-height: 290px;
   background: transparent url('/images/gplus-white.png') no-repeat center center;
 }
 
-.journey {
-  position: absolute;
-  top: -#{$grid-height * 2};
-  right: 0;
-  height: 372px;
-  @include grid(3);
-  background: transparent url('/images/journey.png') no-repeat bottom left;
-}
-
 .logo { 
   @include grid(3);
   height: 34px;

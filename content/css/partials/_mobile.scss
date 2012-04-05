@@ -189,10 +189,6 @@ $less-outer-margin: 34px;
     background-image: url('/images/geungle-logo_3col.png');
   }
 
-  .journey {
-    background-image: none;
-  }
-
   .process {
     @include grid(3);
     height: 240px;
