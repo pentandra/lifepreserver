@@ -9,6 +9,14 @@ px      68    160    252    344    436    528    620    712    */
 $less-outer-margin: 28px;
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  // 
+  // HTML elements
+
+  dd {
+    margin-left: 30px;
+  }
+
   .content {
     @include grid(8); 
     padding: 0 $less-outer-margin;
