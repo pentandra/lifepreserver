@@ -81,10 +81,14 @@ em, .em {
   font-style: normal;
 }
 
-.newthought {
+.special {
   font-family: $special-font-family, serif;
   font-weight: normal;
   font-style: normal;
+}
+
+.newthought {
+  @extend .special;
 }
 
 //
