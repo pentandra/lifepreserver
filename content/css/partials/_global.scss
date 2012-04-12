@@ -91,6 +91,10 @@ em, .em {
   @extend .special;
 }
 
+.footnotes {
+  @extend .small;
+}
+
 //
 // Classes
 
