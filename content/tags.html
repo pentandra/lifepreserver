@@ -1,0 +1,13 @@
+<section>
+  <h1>Tags A-Z</h1>
+
+  <nav class="tags">
+    <ul>
+    <% tag_set(publishing_articles).sort.each do |tag| %>
+      <li><%= link_for_tagcloud(tag, "/tags/") %>
+    <% end %>
+    </ul>
+  </nav>
+</section>
+
+<%= render 'blog_meta' %>

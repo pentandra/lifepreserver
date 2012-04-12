@@ -1,0 +1,126 @@
+/* Wide Mobile Layout: 480px.
+ * Gutters: 24px.
+ * Outer margins: 22px.
+ * Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+$less-outer-margin: 22px;
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .content {
+    @include grid(5); 
+    padding: 0 $less-outer-margin;
+  } 
+
+  .menu2 {
+
+    ul li {
+      width: (436px - $less-gutter-width) / 2;
+      float: left;
+
+      &:nth-child(even) {
+        margin-left: $less-gutter-width;
+      }
+    }
+  }
+
+  .bl {
+
+    .aside {
+      float: left;
+    }
+
+    .bd {
+      float: right;
+    }
+  }
+
+  .newline {
+    display: inline;
+  }
+
+  //
+  // Layout classes
+
+  .motto {
+
+    h1 {
+      float: right;
+      @include grid(3);
+    }
+
+    p {
+      float: left;
+      @include grid(2);
+      text-align: right;
+      margin-top: 3px;
+    }
+  }
+
+  .theteam {
+    @include grid(5);
+    height: 290px;
+    background-image: url('/images/team-436x290.jpg');
+
+    &:hover {
+      background-image: url('/images/team-436x290-silly.jpg');
+    }
+  }
+
+  .contentinfo {
+
+    .bd {
+      
+      .aside {
+        float: right;
+      }
+
+      .inner {
+        @include grid(3);
+      }
+    }
+  }
+
+
+  //
+  // Background-image classes
+
+  .geungle-logo {
+    @include grid(5);
+    height: 130px;
+    background-size: 100%;
+    background-image: url('/images/geungle-logo.png');
+  }
+
+  .logo {
+    @include grid(5);
+    height: 58px;
+    background-image: url('/images/pentandra-logo_436x58.png');
+  }
+
+  .rev .logo, .grab .logo {
+    background-image: url('/images/pentandra-logo-reverse_436x58.png');
+  }
+
+  .process {
+    @include grid(5);
+    height: 328px;
+    background-image: url('/images/research-process.png');
+  }
+
+  .question {
+
+    &:before {
+      left: 125px;
+    }
+  }
+
+  .zeugma {
+    @include grid(5);
+    height: 412px;
+    background-image: url('/images/zeugma.jpg');
+    background-size: 100%;
+  }
+}

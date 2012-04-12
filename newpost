@@ -1,0 +1,23 @@
+#!/bin/sh
+
+YEAR=$(date +%Y)
+MONTH=$(date +%m)
+DAY=$(date +%d)
+/bin/echo -n "Enter title: "
+read RAW_TITLE
+/bin/echo -n "Enter your name: "
+read AUTHOR
+
+TITLE=$(echo "$RAW_TITLE" | sed -e 's/[ _]/-/g' -e 's/[^a-zA-Z0-9-]//g' -e 's/-$//g' -e 's/\(.*\)/\L\1/')
+
+echo "---
+title: $RAW_TITLE
+kind: article
+author_name: $AUTHOR
+created_at: $YEAR-$MONTH-$DAY
+updated_at: $YEAR-$MONTH-$DAY
+published: false
+---
+This is your new post." > "content/blog/$TITLE.markdown"
+
+echo "Created content/blog/$TITLE.markdown"

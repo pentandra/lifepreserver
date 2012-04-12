@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'compass'
-require './settings'
+require './environment'
 
 Compass.add_project_configuration 'compass/config.rb'
 
@@ -18,48 +18,75 @@ Compass.add_project_configuration 'compass/config.rb'
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
 
+preprocess do
+  
+  # Creates article excerpts if they are not given and runs them through
+  # kramdown
+  def generate_article_excerpts
+    publishing_articles.each do |p|
+      if not p[:excerpt] then
+        # Extract the excerpt from the body, if not already given explicitly.
+        p[:excerpt] = p.raw_content.split("\n\n")[0]
+      end
 
-### Routing Rules ###################################################
-
-route '/static/*' do
-  # /static/foo.html/ -> /foo.html
-  item.identifier[7..-2]
-end
-
-route '/css/_*/' do
-  # don't output partials, so return nil
-  nil
-end
-
-route '/css/*/' do
-  # don't generate a directory like we do for HTML files
-  item.identifier.chop + '.css'
-end
-
-route '/js/*/' do
-  # don't generate a directory like we do for HTML files
-  item.identifier.chop + '.js'
-end
-
-route '/404/' do
-  '/404.html'
-end
-
-
-route '*' do
-  if item.binary?
-    # Write item with identifier /foo/ to /foo.ext
-    item.identifier.chop + '.' + item[:extension]
-  else
-    # Write item with identifier /foo/ to /foo/index.html
-    item.identifier + 'index.html'
+      if p[:excerpt] then
+        p[:excerpt] = Nanoc3::Filters::Kramdown.new.run(p[:excerpt])
+      end
+    end
   end
+
+  # Creates in-memory tag pages from partial: layouts/tag.html
+  def generate_tag_pages
+    tag_set(publishing_articles).each do |tag|
+      items << Nanoc3::Item.new(
+        "<%= render('tag',  :tag => '#{tag}') %>",
+        { :title => "Tag: #{tag}" },
+        "/tags/#{tag}/",
+        :binary => false
+      )
+    end
+  end
+
+  # Creates in-memory author pages from partial: layouts/author.html
+  def generate_author_pages
+    authors(publishing_articles).each do |author|
+      items << Nanoc3::Item.new(
+        "<%= render('author', :author => '#{author}') %>",
+        { :title => "Articles by #{author}" },
+        "/authors/#{author.to_slug}/",
+        :binary => false
+      )
+    end
+  end
+
+  # Creates in-memory blog archive pages from partial:
+  # layouts/blog_archive.html
+  def generate_blog_archives
+    years = publishing_articles.map { |a| a[:created_at].year }.uniq
+    years.each do |year|
+      items << Nanoc3::Item.new(
+        "<%= render('blog_archive', :year => #{year}) %>",
+        { :title => "Articles from #{year}" },
+        "/blog/#{year}/",
+        :binary => false
+      )
+    end
+  end
+
+  generate_article_excerpts
+  generate_tag_pages
+  generate_author_pages
+  generate_blog_archives
 end
 
 ### Compilation Rules ###################################################
 
-compile '/css/_*/' do
+compile '/css/partials/_*/' do
   # don't compile partials
+end
+
+compile '/css/modules/_*/' do
+  # don't compile modules
 end
 
 compile '/css/*/' do
@@ -81,15 +108,106 @@ compile '/js/*/' do
   end
 end
 
+compile '/blog/feed_private/' do
+  filter :erb
+end
+
+compile '/company/', :rep => :vcard do
+  filter :vcard, {
+    :name => "Pentandra", 
+    :org => "Pentandra Research Solutions, Inc.",
+    :phone => @item[:phone], 
+    :email => @item[:email],
+    :url => @config[:base_url]}
+end
+
+compile '/company/', :rep => :qrcode do
+  filter :vcard, {
+    :name => "Pentandra", 
+    :org => "Pentandra Research Solutions, Inc.",
+    :phone => @item[:phone], 
+    :email => @item[:email],
+    :url => @config[:base_url]}
+  filter :qrcode, :size => 17, :module_size => 2, :color => "#544233"
+end
+
 compile '*' do
   if item.binary?
     # don’t filter binary items
   else
     filter :erb
 
+    if item[:extension] == 'markdown'
+      filter :kramdown
+    end
+
+    if item[:kind] == 'article' && ($include_drafts or item[:published]) then
+      layout 'article'
+    end
+
+    if $spellcheck then
+      filter :spellchecker
+    end
+    
     layout 'default'
+
     filter :rubypants
     filter :beautifier
+  end
+end
+
+### Routing Rules ###################################################
+
+route '/static/*' do
+  # /static/foo.html/ -> /foo.html
+  item.identifier[7..-2]
+end
+
+route '/css/partials/_*/' do
+  nil
+end
+
+route '/css/modules/_*/' do
+  nil
+end
+
+route '/css/*/' do
+  # don't generate a directory like we do for HTML files
+  item.identifier.chop + '.css'
+end
+
+route '/js/*/' do
+  # don't generate a directory like we do for HTML files
+  item.identifier.chop + '.js'
+end
+
+route '/404/' do
+  '/404.html'
+end
+
+route '/blog/feed_private/' do
+  item.identifier + 'index.xml'
+end
+
+route '/company/', :rep => :vcard do
+  item.identifier.chop + '.vcf'
+end
+
+route '/company/', :rep => :qrcode do
+  '/images/pentandra-qrcode.png'
+end
+
+route '*' do
+  if item.binary?
+    # Write item with identifier /foo/ to /foo.ext
+    item.identifier.chop + '.' + item[:extension]
+  elsif item[:kind] == 'article'
+    if $include_drafts or item[:published] then
+      item.identifier + 'index.html'
+    end
+  else
+    # Write item with identifier /foo/ to /foo/index.html
+    item.identifier + 'index.html'
   end
 end
 

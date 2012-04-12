@@ -1,11 +1,8 @@
 require 'active_support'
 
-module Nanoc3::Helpers
+module Nanoc::Helpers
 
   module Text
-    extend self
-
-    SEPARATORS = %w[- _ +]
 
     # Generate a slug for the string +value+.
     #
@@ -24,9 +21,10 @@ module Nanoc3::Helpers
     # --
     # @api public
     def to_slug(separator = "-")
-
-      unless SEPARATORS.include?(separator)
-        raise "Word separator must be one of #{SEPARATORS}"
+      
+      separators = %w[- _ +]
+      unless separators.include?(separator)
+        raise "Word separator must be one of #{separators}"
       end
       
       re_separator = Regexp.escape(separator)

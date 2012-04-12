@@ -1,8 +1,8 @@
 require 'digest'
 
-module Nanoc3::DataSources
+module Nanoc::DataSources
 
-  class Static < Nanoc3::DataSource
+  class Static < Nanoc::DataSource
 
     identifier :static
 
@@ -25,7 +25,7 @@ module Nanoc3::DataSources
         mtime = File.mtime(filename)
         checksum = checksum_for(filename)
 
-        Nanoc3::Item.new(
+        Nanoc::Item.new(
           filename,
           attributes,
           identifier,

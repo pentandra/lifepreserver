@@ -1,0 +1,30 @@
+<article class="noted section">
+
+  <div class="bd fx mod">
+    <header>
+      <h2 class="bigger">
+        <%= link_to(article[:title], article, { :rel => "bookmark", :title => "Full article", :class => "permalink" }) %>
+      </h2>
+
+      <p class="normal">By <%= link_for_author( article[:author_name], "/authors/") %></p>
+
+    </header>
+
+    <%= article[:excerpt] %>
+
+    <footer class="aside mini">
+      <nav class="menu group">
+        <ul class="button">
+          <% tag_set(Array(article)).each do |tag| %>
+          <li><%= link_for_tag(tag, "/tags/") %></li>
+          <% end %>
+        </ul>
+      </nav>
+    </footer>
+  </div>
+
+  <footer class="aside mod">
+    <time class="big" pubdate><%= article[:created_at] %></time>
+  </footer>
+
+</article>

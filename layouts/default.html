@@ -1,45 +1,122 @@
 <!doctype html>
-<!--[if lt IE 7]>
-<html class="no-js ie6 oldie" lang="en">
-<![endif]-->
-<!--[if IE 7]>
-<html class="no-js ie7 oldie" lang="en">
-<![endif]-->
-<!--[if IE 8]>
-<html class="no-js ie8 oldie" lang="en">
-<![endif]-->
-<!--[if gt IE 8]><!-->
 <html class="no-js" lang="en">
-<!--<![endif]-->
 <head>
 	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>Pentandra</title>
+	<title><%= @item[:title] %> | Pentandra</title>
 	<meta name="description" content="" />
 	<meta name="author" content="" />
-	<meta name="generator" content="nanoc 3.2.2" />
+	<meta name="generator" content="nanoc 3.2.4" />
 
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 
-	<link rel="stylesheet" href="/css/style.css" />
+  <% if @item[:has_video] then %>
+  <link rel="stylesheet" href="/js/media/mediaelementplayer.css" />  
+  <% end %>
+
+	<link rel="stylesheet" href="/css/style.css?v=0.8" />
+  <link rel="alternate" type="application/atom+xml" href="http://feeds.feedburner.com/pentandra" />
+  <link href="https://plus.google.com/108021950461928542978" rel="publisher" />
   
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png" />
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png" />
   <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png" />
 
-  <link href="https://plus.google.com/108021950461928542978/" rel="publisher" />
-  
-  <script src="/js/libs/modernizr-2.0.6.min.js"></script>
+  <script src="/js/libs/modernizr-2.5.3.min.js"></script>
 </head>
-<body>
-
-<div id="main" role="main" class="content">
-  <%= yield %>
+<body id="top">
+<!--[if lt IE 7]><p class="grab">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+<header role="banner" class="banner group">
+  <div class="section">
+    <div class="content">
+      <h1><%= link_to("Pentandra Research Solutions", "/", :class => "ir logo") %></h1>
+      <nav class="menu group">
+        <ul class="button">
+          <li><%= link_to('Products',  '/products/') %></li>
+          <li><%= link_to('Research',  '/research/') %></li>
+          <li><%= link_to('Company',   '/company/') %></li>
+          <li><%= link_to('Open',      '/open/') %></li>
+          <li><%= link_to('Blog',      '/blog/') %></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+<div id="main" role="main" class="main">
+  <div class="content">
+    <%= yield %>
+  </div>
 </div>
+<footer role="contentinfo" class="rev contentinfo">
+  <div class="content">
+    <div class="section">
+      <div class="bd fx">
+        <aside class="aside">
+          <div class="menu group nav">
+            <ul>
+              <li><a rel="external" href="https://plus.google.com/108021950461928542978?prsrc=3" class="gplus ir">Google+</a></li>
+              <li><a rel="external" href="http://www.facebook.com/PentandraInc" class="fb ir">Facebook</a></li>
+              <li><a rel="external" href="http://twitter.com/PentandraInc" class="twittr ir">Twitter</a></li>
+              <li><a rel="external" href="http://feeds.feedburner.com/pentandra/" class="rss ir">RSS</a></li>
+            </ul>
+          </div>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="/js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+          <div class="mini mod">
+            <a href="/company/#contact" class="bold button">Contact Us</a>
+          </div>
+
+        </aside>
+
+        <aside class="inner">
+          <h2 class="small bold">Recent Thoughts</h2>
+          
+          <div class="group">
+            <% @site.publishing_articles[0, 4].each do |post| %>
+            <article> 
+              <header>
+                <time pubdate><%= post[:created_at] %></time>
+                <h3 class="small"><%= link_to(post[:title], post, { :rel => "bookmark" }) %></h3>
+              </header>
+            </article>
+            <% end %>
+          </div>
+          
+        </aside>
+
+      </div>
+      <div class="aside">
+
+        <div class="group">
+          <small class="aside logo copyright" onclick="location.href='<%= @config[:base_url] %>';">
+            &#169; Pentandra Research Solutions, Inc.
+          </small>
+        </div>
+
+      </div>
+    </div>
+
+    <a href="#top" class="button">Back to top</a>
+
+  </div>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+
+<% if @item[:has_video] then %>
+<script src="/js/media/mediaelement-and-player.min.js"></script>
+<script>
+  $('document').ready(function() {
+    $('video').mediaelementplayer({
+      enableAutosize: false
+    });
+  });
+</script>
+<% end %>
+
+<% if @item[:kind] == "article" then %>
+<script src="/js/libs/jquery.sharrre-1.2.0.min.js"></script>
+<% end %>
 
 <!-- scripts concatenated and minified via build script-->
 <script src="/js/plugins.js"></script>
@@ -55,11 +132,5 @@
 </script>
 <% end %>
 
-<!--[if lt IE 7 ]>
-	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
-	<script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
-<![endif]-->
-
 </body>
 </html>
-

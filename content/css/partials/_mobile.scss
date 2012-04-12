@@ -1,0 +1,213 @@
+/* Mobile Layout: 320px.
+ * Gutters: 24px.
+ * Outer margins: 34px.
+ * Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+$less-outer-margin: 34px;
+
+@media only screen and (max-width: 767px) {
+
+  //
+  // HTML Elements
+
+  h1 { 
+    font-size: 47px;
+    line-height: 68px; // 1.61/2 * .huge line-height
+    letter-spacing: normal;
+  }
+
+  blockquote, .bq { 
+    margin: 1em 0;
+  }
+
+  dd {
+    margin-left: 20px;
+  }
+
+
+  //
+  // 
+
+  .content {
+    @include grid(3); 
+    padding: 0 $less-outer-margin;
+  } 
+
+  .ext {
+    margin-left: -$less-outer-margin;
+    margin-right: -$less-outer-margin;
+    padding-left: $less-outer-margin;
+    padding-right: $less-outer-margin;
+  }
+
+  .bd {
+    width: auto;
+    float: none;
+
+    .aside {
+      float: none;
+      margin-left: 0;
+
+      &.banner {
+        margin-right: -$less-outer-margin;
+        padding-right: $less-outer-margin;
+      }
+    }
+
+    .inner {
+      width: auto;
+    }
+
+  }
+
+  .aside {
+    float: none;
+    width: auto;
+
+    .banner {
+      margin-left: -$less-outer-margin;
+      padding-left: $less-outer-margin;
+    }
+
+    .close {
+      text-align: left;
+    }
+  }
+
+  .bd, .aside {
+
+    &.fx {
+
+      .normal {
+        margin-top: 1em;
+      }
+    }
+  }
+
+  .img img {
+    margin: 0 auto;
+  }
+
+  .menu3 ul li {
+    float: none;
+    width: auto;
+    margin-right: 0;
+  }
+
+  .static {
+    @include grid(3);
+  }
+
+  .newline {
+    display: block;
+  }
+
+  // Grid classes
+
+  .bl {
+    width: auto;
+
+    &.ock {
+      margin-left: 0;
+    }
+  }
+
+  //
+  // Layout classes
+
+  .logo {
+    @include grid(3);
+  }
+
+  .copyright {
+    float: left;
+  }
+
+  .main {
+    border: none;
+  }
+
+  .montage {
+
+    .aside {
+      float: none;
+    }
+
+    .bd {
+      width: auto;
+      float: none;
+    }
+  }
+
+  .teamintro {
+    width: auto;
+    min-height: 0;
+  }
+
+  .theteam {
+    @include grid(3);
+    height: 168px;
+    background-image: url('/images/team-252x168.jpg');
+    position: static;
+
+    &:hover {
+      background-image: url('/images/team-252x168-silly.jpg');
+    }
+
+  }
+
+  [role="banner"] {
+
+    .logo {
+      float: none;
+    }
+
+    .menu {
+      float: none;
+      margin-top: $grid-height;
+      background-color: $pentandra-brown;
+      margin-left: -$less-outer-margin;
+      margin-right: -$less-outer-margin;
+      padding: 0 $less-outer-margin;
+
+      ul li {
+        float: none;
+        margin: $base-line-height 0;
+      }
+
+      .button a {
+        line-height: $grid-height;
+      }
+    }
+  }
+
+  //
+  // Background-image classes
+  
+  .geungle-logo {
+    @include grid(3);
+    height: 76px;
+    background-image: url('/images/geungle-logo_3col.png');
+  }
+
+  .process {
+    @include grid(3);
+    height: 240px;
+    background-image: url('/images/research-process_3col.png');
+    margin-top: 0;
+  }
+
+  .zeugma {
+    @include grid(3);
+    height: 252px; //197px;
+    background-image: url('/images/zeugma_3col.jpg');
+  }
+
+  .zeugma-collab {
+    margin-top: 0;
+  }
+    
+}

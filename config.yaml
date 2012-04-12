@@ -70,8 +70,10 @@ notify_on_compilation_failure: true
 
 deploy:
   public:
+    kind: rsync
     dst: "pentandra.com:/srv/http/lifepreserver"
     options: [ '-gpPrtvz', '--delete-after' ]
   staging:
+    kind: rsync
     dst: "vlad@rebikov.process.tree:/srv/http/lifepreserver"
     options: [ '-gpPrtvz', '--delete-after' ]

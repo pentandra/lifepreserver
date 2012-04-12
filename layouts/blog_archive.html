@@ -1,0 +1,7 @@
+<h1>Articles from <%= @year %></h1>
+
+<% articles_for_year(year).sort_by { |item| item[:created_at] }.reverse.each do |article| %>
+<%= render('excerpt', :article => article) %>
+<% end %>
+
+<%= render 'blog_meta' %>

@@ -1,0 +1,47 @@
+// This file must be imported before loading html5-boilerplate
+
+// default font-family
+$base-font-family: unquote('FunctionProBook');
+$bold-font-family: unquote('FunctionProMedium');
+$oblique-font-family: unquote('FunctionProBookOblique');
+$special-font-family: unquote('FunctionCapsBook');
+
+// default typography
+$base-font-size: 18px;
+$base-line-height: 24px;
+
+// grid configuration
+$grid-height: $base-line-height * 2;
+
+
+//
+// colors
+//
+$pentandra-red: #db1111;
+$pentandra-brown: #544233;
+$pentandra-white: #ffffff;
+$pentandra-red-shaded: #bb3131;
+
+$content-background: $pentandra-white;
+$page-background: $pentandra-white; // #f8f6f4;
+$footer-background: $pentandra-brown;
+$footer-font-color: $pentandra-white;
+
+$font-color: $pentandra-brown;
+
+// link colors
+$link-color: $pentandra-red;
+$link-hover-color: $pentandra-red;
+$link-active-color: $pentandra-red;
+$link-visited-color: $pentandra-red;
+
+// color for selected text
+$selected-font-color: $pentandra-white;
+$selected-background-color: $pentandra-red;
+
+//
+// Other common settings
+//
+$default-radius: 12px;
+
+$pie-behavior: unquote('url(/css/PIE.htc)');

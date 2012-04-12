@@ -1,0 +1,7 @@
+<h1>Articles by <%= @author %></h1>
+
+<% articles_by_author(author).each do |article| %>
+<%= render('excerpt', :article => article) %>
+<% end %>
+
+<%= render 'blog_meta' %>

@@ -1,0 +1,7 @@
+<h1><%= tag %> Articles</h1>
+
+<% items_with_tag(tag).each do |article| %>
+<%= render('excerpt', :article => article) %>
+<% end %>
+
+<%= render 'blog_meta' %>

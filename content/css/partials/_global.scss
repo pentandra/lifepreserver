@@ -1,0 +1,422 @@
+//
+// Global style definitions
+// Less astute browsers will use this layout, so keep it limited.
+//
+
+
+@include selection-color($selected-font-color, $selected-background-color);
+
+//
+// Default HTML Styles
+
+h1 {
+  @extend .huge; 
+}
+
+h2  {
+  @extend .large; 
+}
+
+h3 {
+  @extend .bigger;
+}
+
+h4 {
+  @extend .big; 
+}
+
+h5 {
+  @extend .small;
+}
+
+#{headings(1,3)} {
+  text-transform: uppercase;
+}
+
+small {
+  @extend .small; 
+}
+
+body {
+  @extend .normal;
+  font-family: $base-font-family,sans-serif;
+  background: $page-background;
+  color: $font-color;
+}
+
+a {
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+address {
+  font-style: normal;
+}
+
+.bq { // blockquote
+
+  padding: $base-line-height / 2 $base-line-height;
+
+  blockquote { 
+    margin: 0; 
+  }
+}
+
+em, .em {
+  font-family: $oblique-font-family, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+
+  cite {
+    font-family: $base-font-family, sans-serif;
+    font-style: normal;
+  }
+}
+
+.bold {
+  font-family: $bold-font-family, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.special {
+  font-family: $special-font-family, serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.newthought {
+  @extend .special;
+}
+
+//
+// Classes
+
+
+// Block Structures
+
+.mod {
+  margin-top: $base-line-height / 2;
+  margin-bottom: $base-line-height / 2;
+}
+
+.pod {
+  padding-left: $less-gutter-width;
+  padding-right: $less-gutter-width;
+}
+
+.mmod { //TODO fix
+  margin-top: $base-line-height / 4;
+  margin-bottom: $base-line-height / 4;
+}
+
+.section {
+  @extend .group;
+  margin: $grid-height 0 $grid-height / 2;
+}
+
+.basic {
+  @include border-radius($default-radius);
+}
+
+.mini {
+  @include border-radius($default-radius / 2);
+}
+
+.bd, .aside {
+  @extend .group;
+
+  // Move text up to the top of the container to line up with neighbors. 
+  // Algorithm: ($font-size - $line-height) / 2
+  &.fx {
+    .normal {
+      margin-top: -3px;
+    }
+
+    .small {
+      margin-top: -3px; // 2.5px;
+    }
+
+    .big {
+      margin-top: -3px; //-5px // Added based on visual experimentation (font kerning)
+    }
+
+    .bigger {
+      margin-top: -7px; // 3.5px;
+    }
+
+    .large {
+      margin-top: -1px; // 0.5px;
+    }
+
+    .huge {
+      margin-top: -8px;
+    }
+
+    .gigantic {
+      margin-top: -9px; // 4.5px;
+    }
+  }
+}
+
+
+// Block Skins
+
+.simple {
+  @include border-radius($default-radius);
+  border: 1px solid $pentandra-brown;
+}
+
+.noted {
+  border-top: 1px solid $pentandra-brown;
+}
+
+.pop {
+  border-top: 3px solid $pentandra-brown;
+}
+
+.photo {
+  border: 11px solid $pentandra-brown;
+}
+
+// Content classes
+
+a.button, .button a {
+  font-size: $base-font-size - 1;
+  line-height: $grid-height;
+  text-align: center;
+
+  @include border-radius($default-radius);
+  @include pie;
+  display: block;
+
+  color: $pentandra-brown;
+  background-color: $pentandra-white;
+
+  &:hover, &:focus {
+   background-color: $pentandra-red;
+   color: $pentandra-white;
+  }
+
+  &:hover {
+   text-decoration: none;
+  }
+
+  &.rev {
+    color: $pentandra-white;
+    background-color: $pentandra-brown;
+    
+    &:hover, &:focus {
+     background-color: $pentandra-red;
+    }
+  }
+}
+
+.mini a.button, .mini .button a {
+  @include border-radius($default-radius / 2);
+  line-height: $grid-height / 2;
+  font-size: 13px;
+}
+
+a.tag {
+  display: inline;
+  padding: 3px 7px;
+  margin-right: 4px;
+}
+
+.sp a {
+  margin-right: 4px;
+}
+
+.holder {
+  position: relative;
+}
+
+.img {
+
+  img {
+    display: block;
+  }
+}
+
+.menu {
+  ul li {
+    float: left;
+  }
+}
+
+.sidenote {
+
+  font-family: $oblique-font-family, sans-serif;
+  font-style: normal;
+
+  .em {
+    font-family: $base-font-family, sans-serif;
+    font-style: normal;
+  }
+}
+    
+.up {
+  text-transform: uppercase;
+}
+
+//
+// Background blocks
+
+.rev, .rev a {
+  background-color: $pentandra-brown;
+  color: $pentandra-white;
+}
+
+.grab, .grab a {
+  background-color: $pentandra-red-shaded;
+  color: $pentandra-white;
+}
+
+.excl {
+  color: $pentandra-red;
+}
+
+.rev a, .grab a {
+
+  text-decoration: underline;
+
+  &:visited {
+    color: $pentandra-white;
+  }
+}
+
+.rev a.button, .rev .button a {
+
+  color: $pentandra-brown;
+  background-color: $pentandra-white;
+  text-decoration: none;
+
+  &:hover, &:focus {
+    color: $pentandra-white;
+    background-color: $pentandra-red;
+  }
+}
+
+.shadow {
+  @include single-box-shadow($pentandra-brown, 0, 0, 10px);
+}
+
+
+//
+// Grid classes
+
+.item { // List semantics
+  float: left;
+}
+
+.apart {
+  padding-right: $less-gutter-width;
+}
+
+//
+// Layout classes
+
+.content {
+  @extend .group;
+  background-color: $content-background;
+  margin: 0 auto;
+}
+
+[role="banner"] {
+
+  background-color: $pentandra-white;
+
+  h1 {
+    margin: 0;
+  }
+
+  .logo {
+    float: left;
+  }
+
+  .menu {
+    float: right;
+
+    .button a {
+      font-size: $base-font-size;
+      line-height: 34px;
+      padding: 0 15px;
+    }
+  }
+}
+
+.contentinfo {
+
+  a {
+    text-decoration: none;
+  }
+
+  .section {
+    margin-top: 33px; // Questionable
+  }
+
+  .content {
+    background-color: $pentandra-brown; // inherit; Doesn't work in IE7
+    padding-bottom: 84px; // From lessframework
+  }
+
+  .bd .aside {
+    @include grid(2);
+  }
+
+  aside {
+    margin-bottom: $base-line-height;
+  }
+
+  .menu ul li {
+    margin-left: 22px; // Can we come up with a generic centering thing?
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.teammember {
+  .aside {
+    margin-bottom: $base-line-height;
+  }
+}
+
+.post p:last-child:after {
+  content: "\25C2";
+  padding-left: 10px;
+  position: relative;
+}
+
+// This is kind of ugly and not reuseable
+.copyright {
+  cursor: pointer;
+  padding-top: $grid-height * 1.5;
+}
+
+//
+// Social classes
+//
+
+.fb-like-box {
+  background-color: $pentandra-white;
+}
+
+.social-tw, .social-fb {
+  margin-bottom: 13px;
+}
+
+.sharrre { 
+
+  .button {
+    float: left;
+  }
+
+  .googleplus {
+    margin-right: 10px;
+  }
+}
