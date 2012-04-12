@@ -386,7 +386,7 @@ a.tag {
   }
 }
 
-.post p:last-child:after {
+.post .conclusion:after {
   content: "\25C2";
   padding-left: 10px;
   position: relative;
