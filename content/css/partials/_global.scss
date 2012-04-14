@@ -95,6 +95,22 @@ em, .em {
   @extend .small;
 }
 
+a.permalink {
+  color: desaturate(lighten($link-color, 50%), 20%);
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+article a.permalink {
+  color: $link-color;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 //
 // Classes
 
