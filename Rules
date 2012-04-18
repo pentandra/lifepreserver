@@ -148,6 +148,8 @@ compile '*' do
     if $spellcheck then
       filter :spellchecker
     end
+
+#    filter :add_links_to_headers
     
     layout 'default'
 

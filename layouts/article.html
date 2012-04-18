@@ -3,7 +3,6 @@
   <div class="bd">
     <header>
       <h1 class="large"><%= @item[:title] %></h1>
-
       <small class="up">
         Written <time datetime="<%= @item[:created_at] %>" pubdate><%= @item[:created_at].strftime("%B %d, %Y") %></time> 
         by 
@@ -64,9 +63,11 @@
       </ul>
     </nav>
 
-    <p>
-      <a class="permalink" rel="bookmark" title="Permalink to this article" href="<%= url_for(@item) %>">permalink</a>
-    </p>
+    <div class="section">
+
+      <a rel="bookmark" title="Permanent link to this article" href="<%= url_for(@item) %>">Permanent link</a> to this article
+
+    </div>
 
   </aside>
 
