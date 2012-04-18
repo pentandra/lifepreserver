@@ -61,18 +61,18 @@ Elizabeth Shown Mills describes three types of genealogists in her paper
 Janet Havorka at RootsTech this year similarly described three types of
 genealogists in her lecture [Advocating Genealogy and Growing the Market: Issues of the New Genealogist](http://s3.amazonaws.com/rootstech/original/Advocating%20Genealogy.docx?1322717131 "Click for Syllabus").
 Havorka called these: new, seasoned, and professional. These categories roughly
-correspond to Mill's categories above.
+correspond to Mills' categories above.
 
 ## User and Software Approaches
 {: .bigger }
 
-Whatever they are called, these types of genealogists approach software very
-differently in genealogical research. When starting out with research, family
-tree climbers don't really know what to do or where to start. They feel
-empowered when they obtain some family tree software and create their first
-family tree. Generational historians, on the other hand, have had to use a
-combination of ad hoc methods, including word documents, filing cabinets, and
-spreadsheets, to keep track of what they are doing. 
+Whatever they are called, these types of genealogists approach genealogical
+software in very different ways. When starting out with research, family tree
+climbers don't really know what to do or where to start. They feel empowered
+when they obtain some family tree software and create their first family tree.
+Generational historians, on the other hand, have had to use a combination of ad
+hoc methods, including word documents, filing cabinets, and spreadsheets, to
+keep track of what they are doing. 
 
 There are changes happening in the genealogical software industry right now.
 Many family tree climbers, at some point, realize that there is more to
@@ -115,11 +115,11 @@ accurate."[^1] This type of software integrates openly with software from other
 domains, such as history and other social sciences.
 
 Some software companies are just starting to scratch the surface of Genealogy
-2.0. Our software, [Geungle](/products/#geungle), is targeting Genealogy 3.0.
-As more tools become available that support traditional genealogists and
-generational historians, we will see the gap between new and professional
-genealogists narrow. Tools that work the way research works will help new
-genealogists assimilate the research process better and faster.
+2.0. As [more tools](/products/#geungle) become available that support
+traditional genealogists and generational historians, we will see the gap
+between new and professional genealogists narrow. Tools that work the way
+research works will help new genealogists assimilate the research process
+better and faster.
 
 ## Users at RootsTech
 {: .bigger }
