@@ -137,7 +137,7 @@ RootsTech right now seems to be more about tech marketing and less about real
 genealogical research. Many of the people coming to RootsTech are on the
 beginner side. While attracted to the technology, they also want to be exposed
 to real genealogical research and learn how to do it. In this desire, some
-attendees left disappointed. It does not have to be this way.
+attendees left disappointed. But it does not have to be this way.
 
 People don't want genealogy sugar-coated. They want to know what _really_
 happened to their _real_ ancestors. Why spend all the time, money, and energy
