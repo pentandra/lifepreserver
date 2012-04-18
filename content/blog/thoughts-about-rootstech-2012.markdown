@@ -25,8 +25,8 @@ thoughts may not be specifically about RootsTech, but more of a response to the
 current state of the genealogical software industry.
 
 First, kudos to FamilySearch for organizing RootsTech. Their efforts are making
-a difference. A lot more dialog going on between users and developers now than
-in the past.
+a difference. A lot more dialog is going on between users and developers now
+than in the past.
 
 However, there is more than one type of user.
 
