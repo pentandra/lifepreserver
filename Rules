@@ -149,7 +149,7 @@ compile '*' do
       filter :spellchecker
     end
 
-    filter :add_links_to_headers
+#    filter :add_links_to_headers
     
     layout 'default'
 
