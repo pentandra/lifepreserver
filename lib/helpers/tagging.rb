@@ -83,6 +83,11 @@ module Nanoc::Helpers
       %[<a href="#{h base_url}#{h tag}/" class="tag rev">#{h tag}</a>]
     end
 
+    def items_with_tag(tag, items=nil)
+      items = @items if items.nil?
+      items.select { |i| (i[:tags] || []).include?(tag) }
+    end
+
   end
 
 end
