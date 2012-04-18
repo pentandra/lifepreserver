@@ -2,7 +2,7 @@
 title: Thoughts About RootsTech 2012
 kind: article
 author_name: Chris Chapman
-created_at: 2012-03-06
+created_at: 2012-04-17
 updated_at: 2012-04-17
 published: true
 tags:
@@ -11,11 +11,11 @@ tags:
   - Essay
 ---
 
-Last month I attended the second annual [RootsTech](http://rootstech.org/
-"rootstech.org") conference in Salt Lake City. For those not familiar with
-RootsTech: it is a conference hosted by [FamilySearch
-International](http://familysearch.org "familysearch.org") to bring together
-genealogical software creators and users.
+A couple months ago I attended the second annual
+[RootsTech](http://rootstech.org/ "rootstech.org") conference in Salt Lake
+City. For those not familiar with RootsTech: it is a conference hosted by
+[FamilySearch International](http://familysearch.org "familysearch.org") to
+bring together genealogical software creators and users.
 
 ![RootsTech 2012](/images/rootstech.320x480-75.2012.jpg){: .aside .mod .static }
 
