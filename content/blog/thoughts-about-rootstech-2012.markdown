@@ -70,9 +70,9 @@ Whatever they are called, these types of genealogists approach genealogical
 software in very different ways. When starting out with research, family tree
 climbers don't really know what to do or where to start. They feel empowered
 when they obtain some family tree software and create their first family tree.
-Generational historians, on the other hand, have had to use a combination of ad
-hoc methods, including word documents, filing cabinets, and spreadsheets, to
-keep track of what they are doing. 
+Most generational historians, on the other hand, use a combination of ad hoc
+methods, including word documents, filing cabinets, and spreadsheets, to keep
+track of what they are doing. 
 
 There are changes happening in the genealogical software industry right now.
 Many family tree climbers, at some point, realize that there is more to
@@ -118,7 +118,7 @@ Some software companies are just starting to scratch the surface of Genealogy
 2.0. As [more tools](/products/#geungle) become available that support
 traditional genealogists and generational historians, we will see the gap
 between new and professional genealogists narrow. Tools that work the way
-research works will help new genealogists assimilate the research process
+research works will help new genealogists comprehend the research process
 better and faster.
 
 ## Users at RootsTech
@@ -126,7 +126,7 @@ better and faster.
 
 So what has this to do with users at RootsTech? Because of the software
 currently being offered by genealogical vendors, it is not surprising that the
-distribution of user types at RootsTech seemed a little skewed. It seemed that
+distribution of user types at RootsTech was a little skewed. It seemed that
 professional genealogists or historians were few and far between. There were
 exceptions, of course; a few stalwart professionals did come. Yet I wonder
 about the future of RootsTech when such an important group, the only group that
@@ -135,9 +135,9 @@ has RootsTech been unable to attract this vital group of people?
 
 RootsTech right now seems to be more about tech marketing and less about real
 genealogical research. Many of the people coming to RootsTech are on the
-beginner side and want to be exposed to real genealogical research. While there
-were some great technology sessions, I know that some attendees left
-disappointed. It does not have to be this way.
+beginner side. While they are attracted to the technology, they also want to be
+exposed to real genealogical research and learn how to do it. In this desire,
+some attendees left disappointed. It does not have to be this way.
 
 People don't want genealogy sugar-coated. They want to know what _really_
 happened to their _real_ ancestors. Why spend all the time, money, and energy
