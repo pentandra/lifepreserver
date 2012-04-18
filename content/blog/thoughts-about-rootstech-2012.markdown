@@ -76,10 +76,11 @@ track of what they are doing.
 
 There are changes happening in the genealogical software industry right now.
 Many family tree climbers, at some point, realize that there is more to
-genealogy than sticking names and dates on a pedigree chart. The National
-Genealogical Society, Board for Certification of Genealogists, and several
-other groups are doing much to teach people what good research looks like. Yet
-most software companies are still not getting it.
+genealogy than sticking names and dates on a pedigree chart. The 
+[National Genealogical Society](http://ngsgenealogy.org){: rel="external" },
+[Board for Certification of Genealogists](http://bcgcertification.org/){: rel="external"},
+and several other groups are doing much to teach people what good research
+looks like. Yet most software companies are still not getting it.
 
 To meet the needs of these various types of users, we need more than one type
 of genealogy software. We also need a way to categorize genealogy software so
