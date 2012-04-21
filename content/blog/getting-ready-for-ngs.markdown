@@ -28,21 +28,20 @@ see and visit our booth?" People set up booths at trade shows to sell software,
 books, hotel stays, computers or mobile devices, etc. Why are _we_ setting up a
 booth?
 
-We are a software company, but we feel that is only *part* of what we are
-trying to offer. Community is very important to us. Part of the reason we are
-[open](/open/) is so that we can become an active, contributing member of the
-genealogy community---we don't want to be labeled merely as a "vendor." We're
-starting small, but we hope that a community of developers, genealogists,
-marketers, and enthusiasts will _want_ to join us in an awesome project with
-ambitious goals. We've never done this before, though, so I hope we don't mess
-it up somehow.
-
 The answer that kept impressing on us was that we need to have a booth that
 invites people in for open discussion. There are many booths that feel closed
 off, giving the feeling that the company likes a separation between itself and
 its customers. We feel that our customers are part of our company and we want
 them to feel welcome to come in and make themselves at home. We're just
 ordinary people trying to do amazing things. We want others to be a part of it.
+
+We are a software company, but we feel that is only *part* of what we are
+trying to offer. Community is very important to us. Part of the reason we are
+[open](/open/) is so that we can become an active, contributing member of the
+genealogy community---we don't want to be labeled merely as a "vendor." We're
+starting small, but we hope that a community of developers, genealogists,
+marketers, and enthusiasts will _want_ to join us in an awesome project with
+ambitious goals.
 
 ![Booth Layout](/images/booth.png){: .mod .aside .static }
 
