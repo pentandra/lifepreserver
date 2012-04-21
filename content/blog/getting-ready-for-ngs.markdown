@@ -7,6 +7,14 @@ updated_at: 2012-04-20
 published: false
 tags:
   - Genealogy
+excerpt: >
+  Pentandra is heading to the [National Genealogical Society
+  conference](http://www.ngsgenealogy.org/cs/conference_info) this year! I
+  can't believe that the long-awaited day is approaching so fast. We are so
+  excited.  This will be the first conference of any kind that we will have
+  attended as a company. While have attended the last two years as NGS members
+  brainstorming our business idea, this year we are looking forward to sharing
+  with everyone what we have been working on and what we're trying to do.
 ---
 
 ![NGS 2012 Conference](/images/2012_NGS_Logo_Final.jpg){: .mod .aside .static }
