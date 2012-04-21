@@ -4,7 +4,7 @@ kind: article
 author_name: Chris Chapman
 created_at: 2012-04-20
 updated_at: 2012-04-20
-published: false
+published: true
 tags:
   - NGS
   - Genealogy
