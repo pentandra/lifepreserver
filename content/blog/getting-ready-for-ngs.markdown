@@ -32,10 +32,9 @@ have been working on and what we're trying to do.
 {: .bigger }
 
 For the last couple weeks, we have been working on our booth. While designing
-the booth, a big question was, "What do we want people to experience when they
-see and visit our booth?" People set up booths at trade shows to sell software,
-books, hotel stays, computers or mobile devices, etc. Why are _we_ setting up a
-booth?
+it, a big question was, "What do we want people to experience when they see and
+visit our booth?" People set up booths at trade shows to sell software, books,
+hotel stays, computers or mobile devices, etc. Why are _we_ setting up a booth?
 
 The answer that kept impressing on us was that we need to have a booth that
 invites people in for open discussion. There are many booths that feel closed
