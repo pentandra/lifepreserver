@@ -6,4 +6,7 @@ $use_minified_js = true
 $use_minified_css = true
 
 $add_google_analytics = true
-$add_livefyre_comments = true
+
+$add_comments = true
+$livefyre_domain = "pentandra.com"
+$livefyre_siteid = 291113
