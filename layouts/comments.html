@@ -1,13 +1,12 @@
-<% if $add_livefyre_comments then %>
+<% if $add_comments then %>
 <div class="comments group">
-  <!-- START: Livefyre Embed -->
-  <script type='text/javascript' src='http://www.livefyre.com/wjs/v1.0/javascripts/livefyre_init.js'></script>
+  <div id="livefyre"></div>
+  <script src='http://zor.livefyre.com/wjs/v1.0/javascripts/livefyre_init.js'></script>
   <script type='text/javascript'>
     var fyre = LF({
-      site_id: 291113,
-      version: '1.0'
+      site_id: <%= $livefyre_siteid %>,
+      article_id: '<%= (@item[:article_id]) || @item[:title].to_slug %>',
     });
   </script>
-  <!-- END: Livefyre Embed -->
 </div>
 <% end %>
