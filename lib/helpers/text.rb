@@ -1,4 +1,5 @@
 require 'active_support'
+require 'digest/md5'
 
 module Nanoc::Helpers
 
@@ -35,6 +36,10 @@ module Nanoc::Helpers
       result.gsub!(/^#{re_separator}|#{re_separator}$/, '') # Remove leading/trailing separator.
       result.downcase!
       result
+    end
+
+    def md5(text)
+      Digest::MD5.hexdigest(text)
     end
 
     private
