@@ -69,10 +69,11 @@ We hope that people will want to get involved, and that our out-of-the-box
 booth ideas won't be a complete flop. Our success depends on people. We can't
 do what we hope to accomplish without people willing to come and share their
 ideas.
+{: .conclusion }
 
 <figure class="mod">
-  <figcaption><p>Our chairs have arrived!</p></figcaption>
   <img title="Arrow Chairs" src="/images/chairarrival.jpg" class="photo" />
+  <figcaption><p>Our chairs have arrived!</p></figcaption>
 </figure>
 
 *[NGS]: National Genealogical Society
