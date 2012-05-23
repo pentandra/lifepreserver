@@ -49,8 +49,8 @@ insights, like baby steps of refinement. Thinking through the big picture again
 validated our thoughts and helped us make sure we were staying on track with
 our goals. Had anything gotten in the way? Were we missing something important?
 
-<figure class="mod static small img">
-  <img alt="Chris, two kids, and a sister on the way to the final round" src="/images/growam2012-chrisandothers.jpg" />
+<figure class="mod small img">
+  <img class="static" alt="Chris, two kids, and a sister on the way to the final round" src="/images/growam2012-chrisandothers.jpg" />
   <figcaption>
 
     This is Chris with his sister and two of our kids headed to the final
