@@ -8,6 +8,7 @@ published: false
 tags:
   - Funding
   - GrowAm
+has_video: true
 ---
 
 For the past couple of months we've had the chance to participate in the 
@@ -49,14 +50,14 @@ our goals. Had anything gotten in the way? Were we missing something important?
 Second, we had to step way outside our comfort zone during some parts of the
 competition. We've wanted to take on video production for various things in the
 past, but have never felt like we had the skillset to do it. As part of the
-second round of the competition, we needed to submit a two-minute video. So
-guess what?! We learned! It may not be ready for an Oscar nomination, but we
+second round of the competition, we needed to submit a [two-minute video](#growam-video).
+So guess what?! We learned! It may not be ready for an Oscar nomination, but we
 thought it was pretty good for three days of crash-course-style experience. (It
 also got us out of a jam when we had technical difficulties at NGS because we
 were able to fall back on the video we had created for the competition.) It's
 given us confidence to take on a video in the future (hopefully with a little
 more time to put it together). The other major way we were thrown outside of
-our comfort zone came in the final round. We pitched to an angel investor. We
+our comfort zone came in the final round.  We pitched to an angel investor. We
 have never done that before and the thought had always been scary. Now that
 we've done it, it's not that intimidating anymore. They asked us hard
 questions, and we were able to answer them with confidence. The more questions
@@ -74,5 +75,14 @@ stopping us.
 
 P.S.---Another random realization: adrenaline can make up for a lot of lack in
 sleep. But the letdown after the adrenaline stops is brutal.
+
+<figure class="simple mod" id="growam-video">
+  <video style="width:100%;height:100%;" poster="/videos/growam2012.jpg" controls="controls" preload="none">
+    <source type="video/mp4" src="/videos/growam2012.mp4" />
+    <source type="video/webm" src="/videos/growam2012.webm" />
+    <source type="video/ogg" src="/videos/growam2012.ogv" />
+  </video>
+</figure>
+    
 
 *[NGS]: National Genealogical Society 2012 Conference
