@@ -20,6 +20,8 @@ win any money, but we learned a lot and gained confidence in our ability to
 communicate what we are doing to business folks (especially when they're not
 research geeks).
 
+![Katie at our half-table during the Grow America competition](/images/growam2012-katie.jpg){: .mod .aside .static }
+
 It was inspiring and enlightening to see other entrepreneurs going through the
 same things we're going through. We're not the only ones that are young and
 somewhat inexperienced, but trying to fill "executive" shoes. We're just normal
@@ -46,6 +48,16 @@ doing. It's not that what we were making big changes, but we received deeper
 insights, like baby steps of refinement. Thinking through the big picture again
 validated our thoughts and helped us make sure we were staying on track with
 our goals. Had anything gotten in the way? Were we missing something important?
+
+<figure class="mod static small img">
+  <img alt="Chris, two kids, and a sister on the way to the final round" src="/images/growam2012-chrisandothers.jpg" />
+  <figcaption>
+
+    This is Chris with his sister and two of our kids headed to the final
+    round. Family support makes all the difference. 
+
+  </figcaption>
+</figure>
 
 Second, we had to step way outside our comfort zone during some parts of the
 competition. We've wanted to take on video production for various things in the
@@ -76,12 +88,20 @@ stopping us.
 P.S.---Another random realization: adrenaline can make up for a lot of lack in
 sleep. But the letdown after the adrenaline stops is brutal.
 
-<figure class="simple mod" id="growam-video">
-  <video style="width:100%;height:100%;" poster="/videos/growam2012.jpg" controls="controls" preload="none">
-    <source type="video/mp4" src="/videos/growam2012.mp4" />
-    <source type="video/webm" src="/videos/growam2012.webm" />
-    <source type="video/ogg" src="/videos/growam2012.ogv" />
-  </video>
+<figure id="growam-video" class="mod">
+  <div class="simple"> 
+    <video style="width:100%;height:100%;" poster="/videos/growam2012.jpg" controls="controls" preload="none">
+      <source type="video/mp4" src="/videos/growam2012.mp4" />
+      <source type="video/webm" src="/videos/growam2012.webm" />
+      <source type="video/ogg" src="/videos/growam2012.ogv" />
+    </video>
+  </div>
+  <figcaption class="small">
+
+      Our submission to the Grow America Competition. Thanks Abe and Jake for
+      helping us out!
+
+  </figcaption>
 </figure>
     
 
