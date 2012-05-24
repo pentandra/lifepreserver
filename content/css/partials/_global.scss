@@ -177,7 +177,6 @@ a.permalink {
 // Block Skins
 
 .simple {
-  @include border-radius($default-radius);
   border: 1px solid $pentandra-brown;
 }
 
@@ -428,7 +427,7 @@ a.tag {
     float: left;
   }
 
-  .googleplus, .facebook {
+  .googleplus {
     margin-right: 10px;
   }
 }

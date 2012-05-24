@@ -41,6 +41,11 @@ $less-outer-margin: 22px;
     display: inline;
   }
 
+  .img .static {
+    width: auto;
+    max-width: 436px;
+  }
+
   //
   // Layout classes
 
