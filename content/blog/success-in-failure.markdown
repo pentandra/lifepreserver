@@ -4,7 +4,7 @@ kind: article
 author_name: Katie Chapman
 created_at: 2012-05-21
 updated_at: 2012-05-21
-published: false
+published: true
 tags:
   - Funding
   - GrowAm
