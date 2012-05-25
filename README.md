@@ -22,5 +22,5 @@ Then visit [http://localhost:3000/](http://localhost:3000/).
 Thanks to the people that helped me come to grips with the power of nanoc,
 including:
 
-Vincent Driessen (https://github.com/nvie/blog)
-Dennis Defreyne, of course (https://github.com/ddfreyne/nanoc)
+* Vincent Driessen (https://github.com/nvie/blog)
+* Dennis Defreyne, of course (https://github.com/ddfreyne/nanoc)
