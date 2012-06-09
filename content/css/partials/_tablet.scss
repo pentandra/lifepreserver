@@ -42,6 +42,20 @@ $less-outer-margin: 28px;
         padding-right: $less-outer-margin;
       }
     }
+
+    .inner {
+      width: auto;
+    }
+  }
+
+  .bd, .aside {
+
+    &.fx {
+
+      .normal {
+        margin-top: 1em;
+      }
+    }
   }
 
   .menu3 {
