@@ -86,7 +86,9 @@ $less-outer-margin: 48px;
     .pod {
       border-left: 2px $pentandra-white dashed;
     }
+
   }
+
 }
 
 .icon {
@@ -117,8 +119,16 @@ $less-outer-margin: 48px;
 //
 // Layout classes
 
+.excerpt {
+
+  .pubdate {
+    // Line up the published date with the article title horizontally
+    margin: 14px 0 $base-line-height + 4px;
+  }
+}
+
 .main {
-  border-top: 33px solid $pentandra-brown;
+  border-top: $base-line-height * 1.5 solid $pentandra-brown;
 }
 
 .montage {
@@ -133,17 +143,18 @@ $less-outer-margin: 48px;
   }
 }
 
-$theteam-height: 290px;
+$theteam-height: $base-line-height * 12;
 
 .teamintro {
   @include grid(4);
-  min-height: $theteam-height; // Having trouble in IE7 with container smaller than image
+  min-height: $theteam-height;
+  padding-top: $base-line-height;
 }
 
 .theteam {
   @include grid(5);
   height: $theteam-height;
-  background: transparent url('/images/team-436x290.jpg') no-repeat scroll right bottom;
+  background: transparent right bottom no-repeat url('/images/team-436x290.jpg');
   position: absolute;
   bottom: 0;
   right: 0;
@@ -159,52 +170,52 @@ $theteam-height: 290px;
 .email {
   height: 20px;
   width: 32px;
-  background: transparent url('/images/email.png') no-repeat center left;
+  background: transparent left center no-repeat url('/images/email.png');
 }
 
 .grab .email, .rev .email {
-  background: transparent url('/images/email-white.png') no-repeat center left;
+  background: transparent left center no-repeat url('/images/email-white.png');
 }
 
 .fb {
   height: $base-line-height;
   width: 11px;
-  background: transparent url('/images/fb.png') no-repeat center center;
+  background: transparent center center no-repeat url('/images/fb.png');
 }
 
 .geungle-logo {
   @include grid(7);
-  height: 186px;
-  background: transparent url('/images/geungle-logo.png') no-repeat scroll center top;
+  height: $base-line-height * 7;
+  background: transparent left top no-repeat url('/images/geungle-logo.png');
 }
 
 .gplus {
   height: 32px;
   width: 32px;
-  background: transparent url('/images/gplus-32.png') no-repeat center left;
+  background: transparent left center no-repeat url('/images/gplus-32.png');
 }
 
 .rev .gplus, .grab .gplus {
   height: $base-line-height;
   width: 24px;
-  background: transparent url('/images/gplus-white.png') no-repeat center center;
+  background: transparent center center no-repeat url('/images/gplus-white.png');
 }
 
 .logo { 
   @include grid(3);
-  height: 34px;
-  background: transparent url('/images/pentandra-logo.png') no-repeat center center;
+  height: $base-line-height * 1.5;
+  background: transparent center top no-repeat url('/images/pentandra-logo.png');
 }
 
 .rev .logo, .grab .logo {
-  background: transparent url('/images/pentandra-logo-reverse.png') no-repeat left top;
+  background: transparent left top no-repeat url('/images/pentandra-logo-reverse.png');
 }
 
 .process {
   @include grid(4);
   height: 328px;
-  background: $pentandra-white url('/images/research-process.png') no-repeat center center;
-  margin-top: -#{$grid-height};
+  background: $pentandra-white center center no-repeat url('/images/research-process.png');
+  margin-top: -#{$base-line-height*2};
 }
 
 .question {
@@ -225,29 +236,29 @@ $theteam-height: 290px;
 .rss {
   height: $base-line-height;
   width: 24px;
-  background: transparent url('/images/rss.png') no-repeat center center;
+  background: transparent center center no-repeat url('/images/rss.png');
 }
 
 .twittr {
   height: 32px;
   width: 32px;
-  background: transparent url('/images/twitter-32.png') no-repeat center left;
+  background: transparent left center no-repeat  url('/images/twitter-32.png');
 }
 
 .rev .twittr, .grab .twittr {
   height: $base-line-height;
   width: 35px;
-  background: transparent url('/images/twitter.png') no-repeat center center;
+  background: transparent center center no-repeat url('/images/twitter.png');
 }
 
 .zeugma-collab {
-  margin-top: -31px;
+  margin-top: -14px;
 }
 
 .zeugma {
   @include grid(6);
-  height: 412px;
-  background: transparent url('/images/zeugma.jpg') no-repeat scroll left center;
+  height: $base-line-height * 17;
+  background: transparent right center no-repeat url('/images/zeugma.jpg?v2');
 }
 
 //

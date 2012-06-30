@@ -9,17 +9,18 @@ $(document).ready(function() {
 
 function createGrid () {
 	$('body').append('<div id="less-grid"></div>');
-	var pageWidth = $('body').width();
-	//var pageWidth = $('body').children(':first').width();   //If you don't set body width, uncomment this
-	//var pageLeft = ($('body').width() - pageWidth) / 2;	  //If you don't set body width, uncomment this
-	$('#less-grid').css({ 
+	var pageWidth = $('#main').width();
+	var pageLeft = ($('body').width() - pageWidth) / 2;
+
+  $('#less-grid').css({ 
 							width: pageWidth,
 							position: "absolute",
 							top: "0",
 							bottom: "0",
 							zIndex: 900,
-							//left: pageLeft //If you don't set body width, uncomment this
+							left: pageLeft
 	});
+
 	var colWidth = 68;
 	var colSep = 24;
 	var colCount = 1;

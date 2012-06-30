@@ -8,18 +8,21 @@
 	font-size: 76px;
 	line-height: 84px;
 	letter-spacing: -1px;
+  margin: $base-line-height*1.75 0;
 }
 
 .large {
 	font-size: 47px;
-	line-height: 48px;
+	line-height: $base-line-height * 2;
 	letter-spacing: normal;
+  margin: $base-line-height 0;
 }
 
 .bigger {
 	font-size: 29px;
-	line-height: 36px;
+	line-height: $base-line-height * 1.5;
 	letter-spacing: normal;
+  margin: $base-line-height/2 0 $base-line-height;
 }
 
 .big {

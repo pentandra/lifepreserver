@@ -50,7 +50,7 @@
 <footer role="contentinfo" class="rev contentinfo">
   <div class="content">
     <div class="section">
-      <div class="bd fx">
+      <div class="bd">
         <aside class="aside">
           <div class="menu group nav">
             <ul>
@@ -72,7 +72,7 @@
           
           <div class="group">
             <% @site.publishing_articles[0, 4].each do |post| %>
-            <article> 
+            <article class="excerpt"> 
               <header>
                 <time pubdate><%= post[:created_at] %></time>
                 <h3 class="small"><%= link_to(post[:title], post, { :rel => "bookmark" }) %></h3>
@@ -133,6 +133,17 @@
 <% end %>
 <% if $use_grid then %>
 <script src="/js/libs/less-grid-4.js"></script>
+<script src="/js/libs/baseliner-0.9.8.min.js"></script>
+<script>
+  $(document).ready(function() {
+    baseliner = new Baseliner({
+      gridHeight: 24,
+      gridColor: 'blue',
+      gridOpacity:  50,
+      gridSpace: 3
+    });
+  });
+</script>
 <% end %>
 
 </body>

@@ -55,13 +55,31 @@ address {
   font-style: normal;
 }
 
-.bq { // blockquote
+h3.close {
+  line-height: 29px;
+  margin-top: 0;
+}
 
-  padding: $base-line-height / 2 $base-line-height;
+p {
+  margin: 0 0 $base-line-height;
+
+  &.big {
+    margin: 0 0 30px;
+  }
+
+  &.bigger {
+    margin: 0 0 $base-line-height * 1.5;
+  }
+}
+
+.bq, .bq.grab { // blockquote
+
+  padding: $base-line-height*1.5 $less-gutter-width;
 
   blockquote { 
     margin: 0; 
   }
+
 }
 
 em, .em {
@@ -126,7 +144,7 @@ a.permalink {
 
 .section {
   @extend .group;
-  margin: $grid-height 0 $grid-height / 2;
+  margin: 0 0 $base-line-height;
 }
 
 .basic {
@@ -139,38 +157,6 @@ a.permalink {
 
 .bd, .aside {
   @extend .group;
-
-  // Move text up to the top of the container to line up with neighbors. 
-  // Algorithm: ($font-size - $line-height) / 2
-  &.fx {
-    .normal {
-      margin-top: -3px;
-    }
-
-    .small {
-      margin-top: -3px; // 2.5px;
-    }
-
-    .big {
-      margin-top: -3px; //-5px // Added based on visual experimentation (font kerning)
-    }
-
-    .bigger {
-      margin-top: -7px; // 3.5px;
-    }
-
-    .large {
-      margin-top: -1px; // 0.5px;
-    }
-
-    .huge {
-      margin-top: -8px;
-    }
-
-    .gigantic {
-      margin-top: -9px; // 4.5px;
-    }
-  }
 }
 
 
@@ -181,7 +167,17 @@ a.permalink {
 }
 
 .noted {
-  border-top: 1px solid $pentandra-brown;
+  $border-height: 1px;
+  border-top: $border-height solid $pentandra-brown;
+
+  h2 {
+    margin: $base-line-height - $border-height 0 $base-line-height * 2;
+  }
+
+  h2.bigger {
+    margin: $base-line-height/2 - $border-height 0 $base-line-height;
+  }
+
 }
 
 .pop {
@@ -196,7 +192,7 @@ a.permalink {
 
 a.button, .button a {
   font-size: $base-font-size - 1;
-  line-height: $grid-height;
+  line-height: $base-line-height * 2;
   text-align: center;
 
   @include border-radius($default-radius);
@@ -218,6 +214,7 @@ a.button, .button a {
   &.rev {
     color: $pentandra-white;
     background-color: $pentandra-brown;
+    padding: 0;
     
     &:hover, &:focus {
      background-color: $pentandra-red;
@@ -227,7 +224,7 @@ a.button, .button a {
 
 .mini a.button, .mini .button a {
   @include border-radius($default-radius / 2);
-  line-height: $grid-height / 2;
+  line-height: $base-line-height;
   font-size: 13px;
 }
 
@@ -290,13 +287,18 @@ a.tag {
   color: $pentandra-red;
 }
 
-.rev a, .grab a {
+.rev, .grab {
 
-  text-decoration: underline;
+  padding-top: $base-line-height;
 
-  &:visited {
-    color: $pentandra-white;
+  a {
+    text-decoration: underline;
+
+    &:visited {
+      color: $pentandra-white;
+    }
   }
+
 }
 
 .rev a.button, .rev .button a {
@@ -336,9 +338,18 @@ a.tag {
   margin: 0 auto;
 }
 
+.montage {
+  padding: $base-line-height * 2 0;
+}
+
+.research h1 {
+  margin-top: 0;
+}
+
 [role="banner"] {
 
   background-color: $pentandra-white;
+  margin-top: $base-line-height * 2;
 
   h1 {
     margin: 0;
@@ -353,7 +364,7 @@ a.tag {
 
     .button a {
       font-size: $base-font-size;
-      line-height: 34px;
+      line-height: $base-line-height * 1.5;
       padding: 0 15px;
     }
   }
@@ -365,13 +376,11 @@ a.tag {
     text-decoration: none;
   }
 
-  .section {
-    margin-top: 33px; // Questionable
-  }
-
   .content {
-    background-color: $pentandra-brown; // inherit; Doesn't work in IE7
-    padding-bottom: 84px; // From lessframework
+    background-color: $pentandra-brown;
+    // Introduce some syncopation
+    padding-top: $base-line-height * 1.5;
+    padding-bottom: $base-line-height * 3.5;
   }
 
   .bd .aside {
@@ -406,7 +415,7 @@ a.tag {
 // This is kind of ugly and not reuseable
 .copyright {
   cursor: pointer;
-  padding-top: $grid-height * 1.5;
+  padding-top: $base-line-height * 3;
 }
 
 //

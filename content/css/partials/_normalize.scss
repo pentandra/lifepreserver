@@ -6,6 +6,20 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 
+/*	Resets
+	------	*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
 
 /* =============================================================================
    HTML5 element display
@@ -35,8 +49,6 @@ html { font-size: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; -
 
 body, button, input, select, textarea { font-family: $base-font-family, sans-serif; color: $font-color; }
 
-body { margin: 0; }
-
 
 /* =============================================================================
    Links
@@ -61,48 +73,13 @@ a:hover, a:active { outline: 0; }
    Typography
    ========================================================================== */
 
-/*
- * Addresses font sizes and margins set differently in IE6/7
- * Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5
- */
-
-h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
-}
-
-h2 {
-    font-size: 1.5em;
-    margin: 0.83em 0;
-}
-
-h3 {
-    font-size: 1.17em;
-    margin: 1em 0;
-}
-
-h4 {
-    font-size: 1em;
-    margin: 1.33em 0;
-}
-
-h5 {
-    font-size: 0.83em;
-    margin: 1.67em 0;
-}
-
-h6 {
-    font-size: 0.75em;
-    margin: 2.33em 0;
-}
-
 #{headings()} { font-weight: normal; } // We will use fonts to show boldness
 
 abbr[title] { border-bottom: 1px dotted; }
 
 b, strong { @extend .bold; }
 
-blockquote, .bq { margin: 1em 40px; }
+blockquote, .bq { margin: 0 40px $base-line-height; }
 
 i, cite, dfn { font-family: $oblique-font-family, sans-serif; font-style: normal; }
 
@@ -120,8 +97,6 @@ pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
 
 q { quotes: none; }
 q:before, q:after { content: ""; content: none; }
-
-small { font-size: 85%; }
 
 /* Position subscript and superscript content without affecting line-height: gist.github.com/413930 */
 sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }

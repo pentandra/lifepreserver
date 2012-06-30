@@ -20,7 +20,7 @@ $less-outer-margin: 34px;
   }
 
   blockquote, .bq { 
-    margin: 1em 0;
+    margin: 0 0 $base-line-height;
   }
 
   dd {
@@ -167,7 +167,7 @@ $less-outer-margin: 34px;
 
     .menu {
       float: none;
-      margin-top: $grid-height;
+      margin-top: $base-line-height * 2;
       background-color: $pentandra-brown;
       margin-left: -$less-outer-margin;
       margin-right: -$less-outer-margin;
@@ -179,7 +179,7 @@ $less-outer-margin: 34px;
       }
 
       .button a {
-        line-height: $grid-height;
+        line-height: $base-line-height * 2;
       }
     }
   }

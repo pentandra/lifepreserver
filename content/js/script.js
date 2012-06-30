@@ -6,6 +6,8 @@ $(document).ready(function() {
 
   $('a').smoothScroll();
 
+  //$('img').baseline(24);
+
   if ($.fn.sharrre) {
     $('#share').sharrre({
 
