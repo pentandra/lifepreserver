@@ -72,7 +72,7 @@ p {
   }
 }
 
-.bq, .bq.grab { // blockquote
+.bq { // blockquote
 
   padding: $base-line-height*1.5 $less-gutter-width;
 
@@ -289,8 +289,6 @@ a.tag {
 
 .rev, .grab {
 
-  padding-top: $base-line-height;
-
   a {
     text-decoration: underline;
 
@@ -334,7 +332,6 @@ a.tag {
 
 .content {
   @extend .group;
-  background-color: $content-background;
   margin: 0 auto;
 }
 
@@ -377,7 +374,6 @@ a.tag {
   }
 
   .content {
-    background-color: $pentandra-brown;
     // Introduce some syncopation
     padding-top: $base-line-height * 1.5;
     padding-bottom: $base-line-height * 3.5;

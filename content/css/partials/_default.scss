@@ -89,6 +89,10 @@ $less-outer-margin: 48px;
 
   }
 
+  .rev, .grab, &.rev, &.grab {
+    padding-top: $base-line-height;
+  }
+
 }
 
 .icon {
