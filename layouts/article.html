@@ -1,7 +1,7 @@
 <article class="group">
 
   <div class="bd">
-    <header>
+    <header class="section">
       <h1 class="large"><%= @item[:title] %></h1>
       <small class="up">
         Written <time datetime="<%= @item[:created_at] %>" pubdate><%= @item[:created_at].strftime("%B %d, %Y") %></time> 
@@ -10,7 +10,7 @@
       </small>
     </header>
 
-    <div class="post">
+    <div class="post section">
       <%= yield %>
     </div>
 
@@ -44,7 +44,7 @@
 
     <section class="grab banner section static">
 
-      <div class="mod pod">
+      <div class="section pod">
         <h3 class="big">Share</h3>
         
         <div class="group" id="share" data-url="<%= shorten(url_for(@item)) %>" data-title="share" data-text="<%= @item[:title] %>"></div>
@@ -53,12 +53,12 @@
 
     </section>
 
-    <nav class="menu group mini">
+    <nav class="menu group">
       <h3 class="big">Tags</h3>
 
       <ul class="button">
         <% [*@item[:tags]].each do |tag| %>
-        <li><%= link_for_tag(tag, "/tags/") %></li>
+        <li><%= link_for_tag(tag, "/tags/") %>&nbsp;</li>
         <% end %>
       </ul>
     </nav>

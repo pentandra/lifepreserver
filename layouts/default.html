@@ -31,12 +31,12 @@
     <div class="content">
       <h1><%= link_to("Pentandra Research Solutions", "/", :class => "ir logo") %></h1>
       <nav class="menu group">
-        <ul class="button">
-          <li><%= link_to('Products',  '/products/') %></li>
-          <li><%= link_to('Research',  '/research/') %></li>
-          <li><%= link_to('Company',   '/company/') %></li>
-          <li><%= link_to('Open',      '/open/') %></li>
-          <li><%= link_to('Blog',      '/blog/') %></li>
+        <ul>
+          <li><%= link_to('Products',  '/products/', :class => "button") %></li>
+          <li><%= link_to('Research',  '/research/', :class => "button") %></li>
+          <li><%= link_to('Company',   '/company/', :class => "button") %></li>
+          <li><%= link_to('Open',      '/open/', :class => "button") %></li>
+          <li><%= link_to('Blog',      '/blog/', :class => "button") %></li>
         </ul>
       </nav>
     </div>
@@ -61,7 +61,7 @@
             </ul>
           </div>
 
-          <div class="mini mod">
+          <div class="mod">
             <a href="/company/#contact" class="bold button">Contact Us</a>
           </div>
 

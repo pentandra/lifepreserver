@@ -1,8 +1,8 @@
-<footer class="pop mod group blogmeta">
+<footer class="pop section blogmeta">
 
   <div class="bd">
     <div class="aside">
-      <nav class="mod">
+      <nav>
         <h2 class="big">Authors</h2>
         
         <ul>
@@ -13,13 +13,13 @@
       </nav>
     </div>
 
-    <nav class="mod menu inner">
+    <nav class="menu inner">
       <h2 class="big">Tags A-Z</h2>
 
-      <div class="mini group">
-        <ul class="button">
+      <div class="group">
+        <ul>
         <% tag_set(publishing_articles).sort.each do |tag| %>
-          <li><%= link_for_tagcloud(tag, "/tags/") %></li> 
+          <li><%= link_for_tagcloud(tag, "/tags/") %>&nbsp;</li> 
         <% end %>
         </ul>
       </div>
@@ -27,7 +27,7 @@
   </div>
 
   <div class="aside">
-    <nav class="mod">
+    <nav>
       <h2 class="big">Archives</h2>
 
       <ul>
