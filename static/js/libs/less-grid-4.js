@@ -9,12 +9,12 @@ $(document).ready(function() {
 
 function createGrid () {
 	$('body').append('<div id="less-grid"></div>');
-	var pageWidth = $('#main').width();
+	var pageWidth = $('#main').children(':first').width();
 	var pageLeft = ($('body').width() - pageWidth) / 2;
 
   $('#less-grid').css({ 
 							width: pageWidth,
-							position: "absolute",
+							position: "fixed",
 							top: "0",
 							bottom: "0",
 							zIndex: 900,
@@ -36,7 +36,9 @@ function createGrid () {
 								background: "#3d5fa3",
 								opacity: 0.5,
 								color: "#fff",
-								fontSize: "13px",
+                fontFamily: "Arial, sans-serif",
+								fontSize: "11px",
+                fontWeight: "bold",
 								paddingTop: "33px"
 		});
 		colCount++;
@@ -44,32 +46,29 @@ function createGrid () {
 }
 
 function createSwitch () {
-	$('body').append('<span id="less-grid-switch">show grid</span>');
+	$('body').append('<span id="less-grid-switch">Show Grid</span>');
 	$('#less-grid-switch').css({ 
-							position: "absolute",
-							top: "0",
-							right: "0",
-							background: "#3d5fa3",
-							border: "2px solid #fff",
-							borderTop: 0,
-							color: "#fff",
-							fontSize: "13px",
-							lineHeight: "13px",
-							padding: "2px 8px 6px 8px",
+							position: "fixed",
+							bottom: "0",
+							right: "10px",
+							background: "#333",
+							color: "#eee",
+              fontFamily: "Arial, sans-serif",
+							fontSize: "12px",
+              fontWeight: "bold",
+							padding: "5px 15px",
 							cursor: "pointer",
-							"border-radius": "0 0 5px 5px",
-							"-moz-border-radius": "0 0 5px 5px",
 							zIndex: 1000
 							
 	});
 	$('#less-grid-switch').toggle(function() {
-		$(this).text("x");
+		$(this).text("Hide Grid");
 		$('#less-grid').show();
 		$(this).attr('rel','on');
 		$('#less-grid').remove();
 		createGrid();	
 	}, function() {
-		$(this).text('show grid');
+		$(this).text('Show Grid');
 		$('#less-grid').hide();
 		$(this).attr('rel','off');
 	});
