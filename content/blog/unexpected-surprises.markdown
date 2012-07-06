@@ -37,7 +37,6 @@ really do what their name suggests. They serve as the middle-man between an
 anonymous giver and the person receiving the gift.
 
 ## Gift
-{: .bigger }
 
 Needless to say, we accepted the gift. Even though we had no idea how much
 would be coming, we were thrilled to know that someone out there wanted to
@@ -60,26 +59,27 @@ We were grateful for the financial support, but the note that came attached to
 the check is at least as valuable to us. I would like to share some of it with
 you:
 
-<div class="bq grab">
-  <blockquote>
-    <p>
+<div class="group">
+  <div class="bq grab">
+    <blockquote>
+      <p>
 
-      Dear Chapmans: We were impressed with Pentandra Research Solutions, Inc's
-      Geungle, a most viable product with great potential to revolutionize the
-      way we do Family History research. We noted your table at Grow
-      America...We also noted your web site. We were disappointed that the Grow
-      America judges did not fully understand, nor appreciate your potential in
-      this regard.  Accordingly, we make this anonymous contribution to your
-      successful implementation of this most needed product. We are confident
-      with your enthusiasm and hard work, and working together that you will be
-      successful.
+        Dear Chapmans: We were impressed with Pentandra Research Solutions,
+        Inc's Geungle, a most viable product with great potential to
+        revolutionize the way we do Family History research. We noted your
+        table at Grow America...We also noted your web site. We were
+        disappointed that the Grow America judges did not fully understand, nor
+        appreciate your potential in this regard.  Accordingly, we make this
+        anonymous contribution to your successful implementation of this most
+        needed product. We are confident with your enthusiasm and hard work,
+        and working together that you will be successful.
 
-    </p>
-  </blockquote>
+      </p>
+    </blockquote>
+  </div>
 </div>
 
 ## Gratitude
-{: .bigger }
 
 Giving Anonymously also provides a way for the gift recipients to record a
 thank you message for the giver. I was afraid that I would lose all ability to
