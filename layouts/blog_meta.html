@@ -31,7 +31,7 @@
       <h2 class="big">Archives</h2>
 
       <ul>
-        <li><%= link_to 'Recent Articles', '/blog/' %></li>
+        <li><%= link_to 'Most Recent', '/blog/' %></li>
       <% archive_years(publishing_articles).sort.reverse.each do |year| %>
         <li><%= link_for_archive(year, "/blog/") %></li>
       <% end %>
