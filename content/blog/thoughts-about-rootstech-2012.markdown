@@ -18,12 +18,12 @@ City. For those not familiar with RootsTech: it is a conference hosted by
 [FamilySearch International](http://familysearch.org "familysearch.org") to
 bring together genealogical software creators and users.
 
-![RootsTech 2012](/images/rootstech.320x480-75.2012.jpg){: .aside .mod .static }
+![RootsTech 2012](/images/rootstech.320x480-75.2012.jpg){: .aside .static }
 
-Since I never wrote about my experiences with RootsTech 2011, I will try to
-summarize my thoughts about RootsTech in general in this article. Some of my
-thoughts may not be specifically about RootsTech, but more of a response to the
-current state of the genealogical software industry.
+Since I never wrote about my experiences with RootsTech <span class="special">2011</span>, 
+I will try to summarize my thoughts about RootsTech in general in this article.
+Some of my thoughts may not be specifically about RootsTech, but more of a
+response to the current state of the genealogical software industry.
 
 First, kudos to FamilySearch for organizing RootsTech. Their efforts are making
 a difference. A lot more dialog is going on between users and developers now
@@ -32,7 +32,6 @@ than in the past.
 However, there is more than one type of user.
 
 ## What is a User?
-{: .bigger }
 
 Elizabeth Shown Mills describes three types of genealogists in her paper
 <a rel="external" href="http://www.ngsgenealogy.org/galleries/Ref_Researching/NGSQVol91Pg26077GenealogyHistory.pdf"><cite>Genealogy in the "Information Age": History's New Frontier?</cite></a>:
@@ -46,18 +45,19 @@ Elizabeth Shown Mills describes three types of genealogists in her paper
 > Traditional Genealogists
 >
 > : As serious compilers of family data, most strive to meet the standards set
-> forth by the Jacobus School in the 1930s...Their goal is likely to produce
-> "compiled genealogies" that are _reference_ works rather than _family
-> histories_, so they try to identify as many family members as possible, with
-> vital statistics but little or no historical context.
+> forth by the Jacobus School in the <span class="special">1930</span>s...Their
+> goal is likely to produce "compiled genealogies" that are _reference_ works
+> rather than _family histories_, so they try to identify as many family
+> members as possible, with vital statistics but little or no historical
+> context.
 >
 > Generational Historians
 >
 > : Individuals of this mindset thirst for historical knowledge in all its
 > cultural, economic, legal, religious, and social contexts...They value the
-> difference between gathering names and reconstructing lives...Their measure of
-> success is not the number of family members found, but the extent to which they
-> correctly portray each human life they study.
+> difference between gathering names and reconstructing lives...Their measure
+> of success is not the number of family members found, but the extent to which
+> they correctly portray each human life they study.
 
 Janet Havorka at RootsTech this year similarly described three types of
 genealogists in her lecture [Advocating Genealogy and Growing the Market: Issues of the New Genealogist](http://s3.amazonaws.com/rootstech/original/Advocating%20Genealogy.docx?1322717131 "Click for Syllabus").
@@ -65,7 +65,6 @@ Havorka called these: new, seasoned, and professional. These categories roughly
 correspond to Mills' categories above.
 
 ## User and Software Approaches
-{: .bigger }
 
 Whatever they are called, these types of genealogists approach genealogical
 software in very different ways. When starting out with research, family tree
@@ -96,8 +95,9 @@ Genealogy 1.0
 
 : This is your run-of-the-mill family tree software, sometimes referred to
 (lovingly) as a record manager. Most of the genealogy software currently
-available falls in this category. GEDCOM is the de facto standard for this
-category of software. 
+available falls in this category. 
+<abbr title="GEnealogical Data COMmunication">GEDCOM</abbr> is the de facto
+standard for this category of software. 
 
 Genealogy 2.0
 
@@ -118,14 +118,13 @@ accurate."[^1] This type of software integrates openly with software from other
 domains, such as history and other social sciences.
 
 Some software companies are just starting to scratch the surface of Genealogy
-2.0. As [more tools](/products/#geungle) become available that support
-traditional genealogists and generational historians, we will see the gap
-between new and professional genealogists narrow. Tools that work the way
-research works will help new genealogists comprehend the research process
-better and faster.
+<span class="special">2.0</span>. As [more tools](/products/#geungle) become
+available that support traditional genealogists and generational historians, we
+will see the gap between new and professional genealogists narrow. Tools that
+work the way research works will help new genealogists comprehend the research
+process better and faster.
 
 ## Users at RootsTech
-{: .bigger }
 
 So what has this to do with users at RootsTech? Because of the software
 currently being offered by genealogical vendors, it is not surprising that the
@@ -165,4 +164,3 @@ next step.
 
 *[NGS]: National Genealogical Society
 *[BCG]: Board for Certification of Genealogists
-*[GEDCOM]: GEnealogical Data COMmunication

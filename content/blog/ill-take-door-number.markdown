@@ -87,7 +87,6 @@ We believe in keeping as many doors open as we can. When we see what fits right
 we will move forward through whichever door(s) feels best.
 
 ## Financing Doors
-{: .bigger }
 
 Here are some of the financing doors we see as possibly open to us right now,
 along with the good, bad, and ugly of each. We may try any or all of these, or
