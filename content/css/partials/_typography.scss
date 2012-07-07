@@ -1,44 +1,47 @@
 .gigantic {
 	font-size: 123px;
-	line-height: 132px;
+	line-height: $base-line-height * 5.5; // 132px
 	letter-spacing: -2px;
+  margin: $base-line-height * 2.25 0;
 }
 
 .huge {
 	font-size: 76px;
-	line-height: 84px;
+	line-height: $base-line-height * 3.5; // 84px
 	letter-spacing: -1px;
-  margin: $base-line-height*1.75 0;
+  margin: $base-line-height * 1.75 0;
 }
 
 .large {
 	font-size: 47px;
-	line-height: $base-line-height * 2;
+	line-height: $base-line-height * 2; // 48px
 	letter-spacing: normal;
-  margin: $base-line-height 0;
+  margin-bottom: $base-line-height;
 }
 
 .bigger {
 	font-size: 29px;
-	line-height: $base-line-height * 1.5;
+	line-height: $base-line-height * 1.5; // 36px
 	letter-spacing: normal;
-  margin: $base-line-height/2 0 $base-line-height;
+  margin-bottom: $base-line-height * 1.5;
 }
 
 .big {
 	font-size: 25px;
-	line-height: 30px;
+	line-height: $base-line-height * 1.25; // 30px (4:5 incremental leading)
 	letter-spacing: normal;
+  margin-bottom: $base-line-height * 1.25;
+  //margin: 0 0 $base-line-height * 2 - ($base-line-height * 1.25);
 }
 
 .normal {
-  font-size: $base-font-size; 
-  line-height: $base-line-height;
+  font-size: $base-font-size;  // 18px
+  line-height: $base-line-height; // 26px
 	letter-spacing: normal;
 }
 
 .small {
 	font-size: 13px;
-	line-height: 18px;
+	line-height: $base-line-height * 0.75; // 18px (5:4 incremental leading)
 	letter-spacing: normal;
 }

@@ -33,6 +33,19 @@ h5 {
   text-transform: uppercase;
 }
 
+h1.large {
+  margin-top: $base-line-height;
+}
+
+h3.close {
+  line-height: 29px;
+}
+
+h3.flush {
+  line-height: 20px;
+  margin-bottom: 32px;
+}
+
 small {
   @extend .small; 
 }
@@ -55,26 +68,13 @@ address {
   font-style: normal;
 }
 
-h3.close {
-  line-height: 29px;
-  margin-top: 0;
-}
-
 p {
-  margin: 0 0 $base-line-height;
-
-  &.big {
-    margin: 0 0 30px;
-  }
-
-  &.bigger {
-    margin: 0 0 $base-line-height * 1.5;
-  }
+  margin-bottom: $base-line-height;
 }
 
 .bq { // blockquote
 
-  padding: $base-line-height*1.5 $less-gutter-width;
+  padding: $base-line-height*1.5;
 
   blockquote { 
     margin: 0; 
@@ -133,8 +133,8 @@ a.permalink {
 }
 
 .pod {
-  padding-left: $less-gutter-width;
-  padding-right: $less-gutter-width;
+  padding-left: $less-gutter-width / 2;
+  padding-right: $less-gutter-width / 2;
 }
 
 .mmod { //TODO fix
@@ -153,6 +153,10 @@ a.permalink {
 
 .bd, .aside {
   @extend .group;
+}
+
+.loud {
+  padding: $base-line-height * 2 0;
 }
 
 
@@ -177,11 +181,24 @@ a.permalink {
 }
 
 .pop {
-  border-top: 3px solid $pentandra-brown;
+  $border-height: 3px;
+  border-top: $border-height solid $pentandra-brown;
+
+  // header
+  .big {
+    $margin: $base-line-height * 0.75;
+    margin: $margin - $border-height 0 $margin;
+  }
 }
 
 .photo {
-  border: 11px solid $pentandra-brown;
+  $border-width: 11px;
+  $photo-width: 160px;
+
+  border: $border-width solid $pentandra-brown;
+  width: $photo-width;
+  margin-bottom: ($base-line-height * 7) - $photo-width;
+  @include box-sizing(border-box);
 }
 
 // Content classes
@@ -190,7 +207,6 @@ a.button, a.tag {
 
   text-align: center;
   @include pie;
-  display: block;
 
   color: $pentandra-brown;
   background-color: $pentandra-white;
@@ -218,16 +234,15 @@ a.button, a.tag {
 a.button {
   font-size: $base-font-size - 1;
   line-height: $base-line-height * 2;
+  display: block;
 
   @include border-radius($default-radius);
 }
 
 a.tag {
 
-  line-height: $base-line-height;
   font-size: 13px;
-  display: inline;
-
+  
   @include border-radius($default-radius / 2);
 
   &.rev {
@@ -266,6 +281,20 @@ a.tag {
     font-style: normal;
   }
 }
+
+.parenthesis {
+  position: relative;
+  font-size: 92%;
+}
+
+.tel .parenthesis {
+  top: -0.15em;
+}
+
+.ndash {
+  position: relative;
+  top: -0.1em;
+}
     
 .up {
   text-transform: uppercase;
@@ -273,16 +302,6 @@ a.tag {
 
 //
 // Background blocks
-
-.rev, .rev a {
-  background-color: $pentandra-brown;
-  color: $pentandra-white;
-}
-
-.grab, .grab a {
-  background-color: $pentandra-red-shaded;
-  color: $pentandra-white;
-}
 
 .excl {
   color: $pentandra-red;
@@ -298,6 +317,16 @@ a.tag {
     }
   }
 
+}
+
+.rev, .rev a {
+  background-color: $pentandra-brown;
+  color: $pentandra-white;
+}
+
+.grab, .grab a {
+  background-color: $pentandra-red-shaded;
+  color: $pentandra-white;
 }
 
 .rev a.button {
@@ -334,14 +363,6 @@ a.tag {
 .content {
   @extend .group;
   margin: 0 auto;
-}
-
-.montage {
-  padding: $base-line-height * 2 0;
-}
-
-.research h1 {
-  margin-top: 0;
 }
 
 [role="banner"] {
@@ -403,10 +424,23 @@ a.tag {
   }
 }
 
-.post .conclusion:after {
-  content: "\25C2";
-  padding-left: 10px;
-  position: relative;
+.post {
+
+  border-left: 1px solid $pentandra-brown;
+  
+  .img {
+    margin-bottom: $base-line-height;
+  }
+
+  .excerpt > p:first-child {
+    @extend .big;
+  }
+  
+  .conclusion:after {
+    content: "\E000";
+    margin-left: 0.5em;
+    position: relative;
+  }
 }
 
 // This is kind of ugly and not reuseable
@@ -428,6 +462,8 @@ a.tag {
 }
 
 .sharrre { 
+
+  height: $base-line-height * 3;
 
   .button {
     float: left;

@@ -21,11 +21,32 @@ $less-outer-margin: 48px;
   padding: 0 $less-outer-margin;
 }
 
-.ext {
-  margin-left: -$less-outer-margin;
-  margin-right: -$less-outer-margin;
-  padding-left: $less-outer-margin;
-  padding-right: $less-outer-margin;
+.aside {
+  @include grid(3);
+  float: left;
+
+  // ? move this into the parent class?
+  .close {
+    text-align: right;
+  }
+
+  .banner {
+    margin-right: $less-column-width / 2;
+    margin-left: -$less-outer-margin;
+    padding-left: $less-outer-margin;
+    @include border-right-radius($default-radius);
+    @include pie;
+
+    .pod {
+      border-left: 2px $pentandra-white dashed;
+    }
+
+  }
+
+  .rev, .grab, &.rev, &.grab {
+    padding-top: $base-line-height;
+  }
+
 }
 
 .bd {
@@ -47,6 +68,9 @@ $less-outer-margin: 48px;
       }
     }
 
+    .rev, .grab, &.rev, &.grab {
+      padding-left: $less-gutter-width / 2;
+    }
 
   }
   
@@ -54,6 +78,13 @@ $less-outer-margin: 48px;
     @include grid(4);
   }
 
+}
+
+.ext {
+  margin-left: -$less-outer-margin;
+  margin-right: -$less-outer-margin;
+  padding-left: $less-outer-margin;
+  padding-right: $less-outer-margin;
 }
 
 .menu3 {
@@ -65,34 +96,6 @@ $less-outer-margin: 48px;
       margin-right: 0;
     }
   }
-}
-
-.aside {
-  @include grid(3);
-  float: left;
-
-  // ? move this into the parent class?
-  .close {
-    text-align: right;
-  }
-
-  .banner {
-    margin-right: $less-gutter-width;
-    margin-left: -$less-outer-margin;
-    padding-left: $less-outer-margin;
-    @include border-right-radius($default-radius);
-    @include pie;
-
-    .pod {
-      border-left: 2px $pentandra-white dashed;
-    }
-
-  }
-
-  .rev, .grab, &.rev, &.grab {
-    padding-top: $base-line-height;
-  }
-
 }
 
 .icon {
@@ -208,7 +211,7 @@ $theteam-height: $base-line-height * 12;
 .logo { 
   @include grid(3);
   height: $base-line-height * 1.5;
-  background: transparent center top no-repeat url('/images/pentandra-logo.png');
+  background: transparent center center no-repeat url('/images/pentandra-logo.png');
 }
 
 .rev .logo, .grab .logo {
@@ -217,9 +220,9 @@ $theteam-height: $base-line-height * 12;
 
 .process {
   @include grid(4);
-  height: 328px;
+  height: $base-line-height * 12;
   background: $pentandra-white center center no-repeat url('/images/research-process.png');
-  margin-top: -#{$base-line-height*2};
+  margin-top: -#{$base-line-height};
 }
 
 .question {
@@ -261,7 +264,7 @@ $theteam-height: $base-line-height * 12;
 
 .zeugma {
   @include grid(6);
-  height: $base-line-height * 17;
+  height: $base-line-height * 16;
   background: transparent right center no-repeat url('/images/zeugma.jpg?v2');
 }
 

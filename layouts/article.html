@@ -1,14 +1,15 @@
 <article class="group">
 
+  <header class="section">
+    <h1><%= @item[:title] %></h1>
+    <div class="bd em up">
+      Written <time datetime="<%= @item[:created_at] %>" pubdate><%= @item[:created_at].strftime("%B %d, %Y") %></time> 
+      by 
+      <%= link_for_author( @item[:author_name], "/authors/") %>
+    </div>
+  </header>
+
   <div class="bd">
-    <header class="section">
-      <h1 class="large"><%= @item[:title] %></h1>
-      <small class="up">
-        Written <time datetime="<%= @item[:created_at] %>" pubdate><%= @item[:created_at].strftime("%B %d, %Y") %></time> 
-        by 
-        <%= link_for_author( @item[:author_name], "/authors/") %>
-      </small>
-    </header>
 
     <div class="post section">
       <%= yield %>
@@ -22,7 +23,7 @@
 
     <h2 class="visuallyhidden">Meta</h2>
 
-    <section>
+    <section class="section">
 
       <h3>The Author</h3>
 
@@ -33,7 +34,7 @@
 
       <figure id="author">
         <img class="photo" src="<%= image_path(author) %>" alt="Photo of <%= full_name(author) %>" />
-        <figcaption class="mod">
+        <figcaption class="section">
           <div class="big"><%= full_name(author) %></div>
           <div><%= author[:title] %></div>
           <a href="/company/#<%= full_name(author).to_slug %>">More about <%= author[:first_name] %></a>
@@ -53,10 +54,10 @@
 
     </section>
 
-    <nav class="menu group">
+    <nav class="menu section banner">
       <h3 class="big">Tags</h3>
 
-      <ul class="button">
+      <ul>
         <% [*@item[:tags]].each do |tag| %>
         <li><%= link_for_tag(tag, "/tags/") %>&nbsp;</li>
         <% end %>

@@ -8,8 +8,10 @@ $special-font-family: unquote('FunctionCapsBook');
 
 // default typography
 $base-font-size: 18px;
-$base-line-height: 24px;
+$base-line-height: 26px;
 
+// Golden ratio
+$phi: (1 + sqrt(5))/2;
 
 //
 // colors

@@ -75,11 +75,12 @@ a:hover, a:active { outline: 0; }
 
 #{headings()} { font-weight: normal; } // We will use fonts to show boldness
 
+abbr { font-family: $special-font-family; letter-spacing: 0.1em; }
 abbr[title] { border-bottom: 1px dotted; }
 
 b, strong { @extend .bold; }
 
-blockquote, .bq { margin: 0 40px $base-line-height; }
+blockquote, .bq { margin: $base-line-height * 1.5 0; }
 
 i, cite, dfn { font-family: $oblique-font-family, sans-serif; font-style: normal; }
 
@@ -108,10 +109,9 @@ sub { bottom: -0.25em; }
    Lists
    ========================================================================== */
 
-ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
-dt { @extend .bold; }
-dd { margin: 0 0 0 40px; }
-.nav ul, nav ul, .nav ol, nav ol { list-style: none; margin: 0; padding: 0; }
+ul, ol { margin-bottom:  $base-line-height; padding-left: 1.5em; position: relative; left: -1.5em; }
+dt { font-family: $special-font-family, sans-serif; margin-top: $base-line-height; }
+.nav ul, nav ul, .nav ol, nav ol { list-style: none; margin: 0; padding: 0; position: static; }
 
 
 /* =============================================================================
