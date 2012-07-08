@@ -251,7 +251,7 @@ a.tag {
 }
 
 .sp a {
-  margin-right: 4px;
+  margin-right: 6px;
 }
 
 .holder {
@@ -266,7 +266,7 @@ a.tag {
 }
 
 .menu {
-  ul li {
+  li {
     float: left;
   }
 }
@@ -317,6 +317,10 @@ a.tag {
     }
   }
 
+  .wrapper {
+    padding-top: $base-line-height;
+  }
+
 }
 
 .rev, .rev a {
@@ -357,12 +361,30 @@ a.tag {
   padding-right: $less-gutter-width;
 }
 
+.expo {
+
+  height: $base-line-height * 5;
+
+  li {
+    padding-right: $less-gutter-width;
+  }
+
+  img {
+    @include grid(1);
+  }
+}
+
 //
 // Layout classes
 
 .content {
   @extend .group;
   margin: 0 auto;
+}
+
+// A typographic float. Use for images in a blog post.
+.float {
+  float: left;
 }
 
 [role="banner"] {
@@ -426,8 +448,6 @@ a.tag {
 
 .post {
 
-  border-left: 1px solid $pentandra-brown;
-  
   .img {
     margin-bottom: $base-line-height;
   }

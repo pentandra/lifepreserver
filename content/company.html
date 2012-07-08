@@ -200,12 +200,12 @@ teammembers:
   <% @item[:teammembers].each_with_index do |member, i| %> 
   <section id="<%= full_name(member).to_slug %>" class="teammember vcard bl<%= i.odd? ? ' ock' : '' %> item">
 
-    <div class="mod group">
+    <div class="section">
       
       <div class="aside">
         <img class="photo" src="<%= image_path(member) %>" alt="Photo of <%= full_name(member) %>" />
 
-        <aside class="mmod nav menu">
+        <aside class="nav menu">
 
           <ul class="sp">
             <li><a class="gplus ir url" title="<%= full_name(member) %> on Google+" href="https://plus.google.com/<%= member[:gplus] %>?prsrc=3"><%= full_name(member) %> on Google+</a></li>
@@ -236,54 +236,56 @@ teammembers:
 
 <footer id="contact" class="group ext grab">
 
-  <h2>Give Us A Holler!</h2>
+  <div class="wrapper">
+    <h2>Give Us A Holler!</h2>
 
-  <div class="bd">
+    <div class="bd">
 
-    <aside class="aside">
-      <h3>Get Social</h3>
+      <aside class="aside">
+        <h3>Get Social</h3>
 
-      <div class="mod">
-        <div class="g-plus" data-href="https://plus.google.com/108021950461928542978" data-width="252" data-height="69" data-theme="light"></div>
-        <div class="social-tw"><a href="https://twitter.com/<%= @item[:twitter] %>" class="twitter-follow-button" data-width="252px" data-show-count="false" data-size="large">Follow @<%= @item[:twitter] %></a></div>
-        <div class="social-fb fb-like-box" data-href="http://www.facebook.com/PentandraInc" data-width="252" data-height="121" data-show-faces="true" data-stream="false" data-header="true"></div>
-      </div>
+        <div class="mod">
+          <div class="g-plus" data-href="https://plus.google.com/108021950461928542978" data-width="252" data-height="69" data-theme="light"></div>
+          <div class="social-tw"><a href="https://twitter.com/<%= @item[:twitter] %>" class="twitter-follow-button" data-width="252px" data-show-count="false" data-size="large">Follow @<%= @item[:twitter] %></a></div>
+          <div class="social-fb fb-like-box" data-href="http://www.facebook.com/PentandraInc" data-width="252" data-height="121" data-show-faces="true" data-stream="false" data-header="true"></div>
+        </div>
 
-    </aside>
+      </aside>
 
-    <address class="vcard">
-      <div class="fn org">Pentandra Research Solutions, Inc.</div>
-      <div class="adr">
-        <div class="locality">Logan, UT</div>
-        <div class="country-name">USA</div>
-      </div>
-      <div class="tel">Phone: +1 <span class="parenthesis">(</span>435<span class="parenthesis">)</span> 294<span class="ndash">--</span>2964</div>
-      <p>Email: <a class="email icon" href="mailto:<%= @item[:email] %>"><%= @item[:email] %></a></p>
-    </address>
+      <address class="vcard">
+        <div class="fn org">Pentandra Research Solutions, Inc.</div>
+        <div class="adr">
+          <div class="locality">Logan, UT</div>
+          <div class="country-name">USA</div>
+        </div>
+        <div class="tel">Phone: +1 <span class="parenthesis">(</span>435<span class="parenthesis">)</span> 294<span class="ndash">--</span>2964</div>
+        <p>Email: <a class="email icon" href="mailto:<%= @item[:email] %>"><%= @item[:email] %></a></p>
+      </address>
 
-    <p>
+      <p>
 
-       We support <a href="http://ccpact.com" rel="external">The Company--Customer Pact</a>.
+         We support <a href="http://ccpact.com" rel="external">The Company--Customer Pact</a>.
 
-    </p>
+      </p>
 
-    <p>
+      <p>
 
-      We are located in Logan, Utah, in the beautiful Cache Valley. We work
-      from home. When we are not busy with the business, we are busy keeping
-      track of our kids and their pet rocks. We love it---most of the time. 
+        We are located in Logan, Utah, in the beautiful Cache Valley. We work
+        from home. When we are not busy with the business, we are busy keeping
+        track of our kids and their pet rocks. We love it---most of the time. 
 
-    </p>
+      </p>
+
+    </div>
+
+    <figure class="aside mod">
+      <a href="<%= @item.path(:rep => :vcard) %>">
+        <img src="<%= @item.path(:rep => :qrcode) %>" alt="" />
+      </a>
+      <figcaption>Our vCard</figcaption>
+    </figure>
 
   </div>
-
-  <figure class="aside mod">
-    <a href="<%= @item.path(:rep => :vcard) %>">
-      <img src="<%= @item.path(:rep => :qrcode) %>" alt="" />
-    </a>
-    <figcaption>Our vCard</figcaption>
-  </figure>
-
 
 </footer>
 

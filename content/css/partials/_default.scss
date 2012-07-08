@@ -31,49 +31,62 @@ $less-outer-margin: 48px;
   }
 
   .banner {
-    margin-right: $less-column-width / 2;
+    margin-right: $less-column-width;
+    padding-right: 0;
     margin-left: -$less-outer-margin;
     padding-left: $less-outer-margin;
-    @include border-right-radius($default-radius);
-    @include pie;
+    //@include border-right-radius($default-radius);
+    //@include border-left-radius(0);
 
-    .pod {
-      border-left: 2px $pentandra-white dashed;
+    .fancy {
+      $border-width: 2px;
+
+      border-left: $border-width $pentandra-white dashed;
+      margin-left: -#{$border-width};
+      border-right: none;
+      margin-right: 0;
+
+      // Overrides .pod for more padding next to the border
+      padding-left: $less-gutter-width;
     }
-
   }
 
-  .rev, .grab, &.rev, &.grab {
-    padding-top: $base-line-height;
-  }
+}
 
+.banner {
+  margin-right: -$less-outer-margin;
+  padding-right: $less-outer-margin;
+  margin-left: -($less-gutter-width + $less-column-width);
+  padding-left: $less-gutter-width + $less-column-width;
+  //@include border-left-radius($default-radius);
+  @include pie;
+
+  .fancy {
+    $border-width: 2px;
+
+    border-right: $border-width $pentandra-white dashed;
+    margin-right: -#{$border-width};
+
+    // More padding next to the border
+    // padding-right: $less-gutter-width;
+  }
 }
 
 .bd {
   @include grid(7);
   float: right;
-
-  .aside {
-    float: right;
-    margin-left: $less-gutter-width;
-
-    &.banner {
-      margin-right: -$less-outer-margin;
-      padding-right: $less-outer-margin;
-      @include border-left-radius($default-radius);
-      @include pie;
-
-      .pod {
-        border-right: 2px $pentandra-white dashed;
-      }
-    }
-
-    .rev, .grab, &.rev, &.grab {
-      padding-left: $less-gutter-width / 2;
-    }
-
-  }
   
+  .aside {
+    margin-left: $less-gutter-width;
+    float: right;
+  }
+
+  .other {
+    margin-right: $less-gutter-width;
+    float: left;
+    @include grid(3);
+  }
+    
   .inner {
     @include grid(4);
   }
@@ -88,13 +101,20 @@ $less-outer-margin: 48px;
 }
 
 .menu3 {
-  ul li {
+  li {
     @include grid(3);
     margin-right: 70px;
 
     &.last {
       margin-right: 0;
     }
+  }
+}
+
+.bd .menu3 {
+  li {
+    @include grid(2);
+    margin-right: $less-gutter-width;
   }
 }
 
@@ -155,7 +175,7 @@ $theteam-height: $base-line-height * 12;
 .teamintro {
   @include grid(4);
   min-height: $theteam-height;
-  padding-top: $base-line-height;
+  padding: $base-line-height 0;
 }
 
 .theteam {
@@ -226,14 +246,15 @@ $theteam-height: $base-line-height * 12;
 }
 
 .question {
+  $height: $base-line-height * 13;
 
-  height: 345px;
+  height: $height;
   position: relative;
 
   &:before {
     content: "?";
     font-size: 385px;
-    line-height: 345px;
+    line-height: $height;
     position: absolute;
     left: 40px;
     top: 3px;

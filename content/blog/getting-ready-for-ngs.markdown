@@ -18,8 +18,7 @@ excerpt: >
   with everyone what we have been working on and what we're trying to do.
 ---
 
-![NGS 2012 Conference](/images/2012_NGS_Logo_Final.jpg){: .aside .static }
-
+![NGS 2012 Conference](/images/2012_NGS_Logo_Final.jpg){: .aside .static .img }
 Pentandra is heading to the [National Genealogical Society
 conference](http://www.ngsgenealogy.org/cs/conference_info) this year! I can't
 believe that the long-awaited day is approaching so fast. We are so excited.
@@ -52,7 +51,7 @@ starting small, but we hope that a community of developers, genealogists,
 marketers, and enthusiasts will _want_ to join us in an awesome project with
 ambitious goals.
 
-![Booth Layout](/images/booth.png){: .aside .static }
+![Booth Layout](/images/booth.png){: .other .img .static }
 
 So we had the idea to set up chairs in the form of a pentagon, an important
 shape in our logo and in [our description of the research
@@ -70,9 +69,9 @@ do what we hope to accomplish without people willing to come and share their
 ideas.
 {: .conclusion }
 
-<figure>
+<figure class="img static">
   <img title="Arrow Chairs" src="/images/chairarrival.jpg" />
-  <figcaption><p>Our chairs have arrived!</p></figcaption>
+  <figcaption class="small"><p>Our chairs have arrived!</p></figcaption>
 </figure>
 
 *[NGS]: National Genealogical Society
