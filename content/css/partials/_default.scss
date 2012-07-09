@@ -206,7 +206,7 @@ $theteam-height: $base-line-height * 12;
 
 .fb {
   height: $base-line-height;
-  width: 11px;
+  width: 12px;
   background: transparent center center no-repeat url('/images/fb.png');
 }
 
@@ -224,7 +224,7 @@ $theteam-height: $base-line-height * 12;
 
 .rev .gplus, .grab .gplus {
   height: $base-line-height;
-  width: 24px;
+  width: $base-line-height;
   background: transparent center center no-repeat url('/images/gplus-white.png');
 }
 
@@ -263,7 +263,7 @@ $theteam-height: $base-line-height * 12;
 
 .rss {
   height: $base-line-height;
-  width: 24px;
+  width: $base-line-height;
   background: transparent center center no-repeat url('/images/rss.png');
 }
 
@@ -275,7 +275,7 @@ $theteam-height: $base-line-height * 12;
 
 .rev .twittr, .grab .twittr {
   height: $base-line-height;
-  width: 35px;
+  width: 38px;
   background: transparent center center no-repeat url('/images/twitter.png');
 }
 
