@@ -262,8 +262,12 @@ a.tag {
   @include border-radius($default-radius / 2);
 
   &.rev {
-    padding: 3px 7px;
+    padding: 4px 8px;
   }
+}
+
+.tags li {
+  height: $base-line-height;
 }
 
 .sp a {

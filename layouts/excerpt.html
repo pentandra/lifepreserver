@@ -20,7 +20,7 @@
 
   <footer class="aside section">
     <nav class="menu group banner">
-      <ul>
+      <ul class="tags">
         <% tag_set(Array(article)).each do |tag| %>
         <li><%= link_for_tag(tag, "/tags/") %>&nbsp;</li>
         <% end %>
