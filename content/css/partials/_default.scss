@@ -152,9 +152,16 @@ $less-outer-margin: 48px;
 
 .excerpt {
 
+  // Line up the published date with the article title horizontally
   .pubdate {
-    // Line up the published date with the article title horizontally
-    padding: 14px 0 $base-line-height + 4px;
+    $offset: 2px;
+
+    padding-top: $base-line-height - $offset;
+    margin-bottom: $base-line-height / 2 + $offset;
+  
+    .big {
+      line-height: $base-line-height * 1.5;
+    }
   }
 }
 
