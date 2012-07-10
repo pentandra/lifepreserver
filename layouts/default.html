@@ -51,8 +51,8 @@
   <div class="content">
     <div class="section">
       <div class="bd">
-        <aside class="aside">
-          <div class="menu group nav">
+        <aside class="aside section">
+          <div class="menu section nav">
             <ul>
               <li><a rel="external" href="https://plus.google.com/108021950461928542978?prsrc=3" class="gplus ir">Google+</a></li>
               <li><a rel="external" href="http://www.facebook.com/PentandraInc" class="fb ir">Facebook</a></li>
@@ -61,21 +61,21 @@
             </ul>
           </div>
 
-          <div class="mod">
+          <div class="contact">
             <a href="/company/#contact" class="bold button">Contact Us</a>
           </div>
 
         </aside>
 
         <aside class="inner">
-          <h2 class="small bold">Recent Thoughts</h2>
+          <h2 class="small flush bold">Recent Thoughts</h2>
           
           <div class="group">
             <% @site.publishing_articles[0, 4].each do |post| %>
             <article class="excerpt"> 
               <header>
-                <time pubdate><%= post[:created_at] %></time>
-                <h3 class="small"><%= link_to(post[:title], post, { :rel => "bookmark" }) %></h3>
+                <time pubdate><%= date_for(post) %></time>
+                <h3 class="normal"><%= link_to(post[:title], post, { :rel => "bookmark" }) %></h3>
               </header>
             </article>
             <% end %>

@@ -42,6 +42,10 @@ module Nanoc::Helpers
       years.to_a
     end
 
+    def date_for(article)
+      article[:created_at].to_s.gsub(/-/, '<span class="ndash">--</span>')
+    end
+
   end
 
 end

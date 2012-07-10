@@ -46,6 +46,18 @@ h3.flush {
   margin-bottom: 32px;
 }
 
+.normal.flush {
+  $height: 13px;
+  line-height: $height;
+  margin-bottom: $base-line-height - $height;
+}
+
+.small.flush {
+  $height: 11px;
+  line-height: $height;
+  margin-bottom: $base-line-height - $height;
+}
+
 small {
   @extend .small; 
 }
@@ -295,6 +307,10 @@ a.tag {
   position: relative;
   top: -0.1em;
 }
+
+.big .ndash {
+  margin: 0 -0.07em;
+}
     
 .up {
   text-transform: uppercase;
@@ -425,10 +441,6 @@ a.tag {
 
   .bd .aside {
     @include grid(2);
-  }
-
-  aside {
-    margin-bottom: $base-line-height;
   }
 
   .menu ul li {
