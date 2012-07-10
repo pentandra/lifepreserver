@@ -270,11 +270,11 @@ a.button {
   }
 
   a {
-    padding: 0 10px 0 14px;
-    margin-left: $tag-space;
+    padding: 0 14px 0 10px;
+    margin-right: $tag-space;
     color: $pentandra-white;
     background-color: $pentandra-brown;
-    @include border-right-radius($default-radius / 2);
+    @include border-left-radius($default-radius / 2);
     @include pie;
 
     &:hover, &:focus {
@@ -282,7 +282,7 @@ a.button {
       background-color: $pentandra-red;
 
       &:before {
-        border-color: transparent $pentandra-red transparent transparent;
+        border-color: transparent transparent transparent $pentandra-red;
       }
     }
 
@@ -290,19 +290,19 @@ a.button {
       content: "";
       position: absolute;
       top: 0;
-      left: -$tag-space;
+      right: -$tag-space;
       width: 0;
       height: 0;
-      border-color: transparent $pentandra-brown transparent transparent;
+      border-color: transparent transparent transparent $pentandra-brown;
       border-style: solid;
-      border-width: $tag-space $tag-space $tag-space 0;
+      border-width: $tag-space 0 $tag-space $tag-space;
     }
 
     &:after {
       content: "";
       position: absolute;
       top: 8px;
-      left: 0;
+      right: 0;
       width: 4px;
       height: 4px;
       background: $pentandra-white;
