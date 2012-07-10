@@ -105,6 +105,10 @@ em, .em {
   }
 }
 
+ul {
+  list-style-type: square;
+}
+
 .bold {
   font-family: $bold-font-family, sans-serif;
   font-weight: normal;
@@ -187,7 +191,7 @@ a.permalink {
   }
 
   h2.bigger {
-    margin: $base-line-height/2 - $border-height 0 $base-line-height;
+    margin-bottom: $base-line-height;
   }
 
 }
@@ -464,10 +468,6 @@ a.tag {
     margin-bottom: $base-line-height;
   }
 
-  .excerpt > p:first-child {
-    @extend .big;
-  }
-  
   .conclusion:after {
     content: "\E000";
     margin-left: 0.5em;

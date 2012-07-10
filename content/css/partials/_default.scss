@@ -128,6 +128,10 @@ $less-outer-margin: 48px;
 .bl {
   @include grid(5);
 
+  h3 {
+    margin-bottom: $base-line-height / 2;
+  }
+
   &.ock {
     margin-left: $less-gutter-width;
   }
