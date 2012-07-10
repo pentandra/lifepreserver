@@ -57,7 +57,7 @@
     <nav class="menu section banner">
       <h3 class="big">Tags</h3>
 
-      <ul>
+      <ul class="tags">
         <% [*@item[:tags]].each do |tag| %>
         <li><%= link_for_tag(tag, "/tags/") %>&nbsp;</li>
         <% end %>
