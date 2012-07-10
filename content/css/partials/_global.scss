@@ -219,31 +219,20 @@ a.permalink {
 
 // Content classes
 
-a.button {
+a.button, .tags a {
 
   text-align: center;
   @include pie;
 
-  color: $pentandra-brown;
-  background-color: $pentandra-white;
+  color: $pentandra-white;
+  background-color: $pentandra-brown;
 
   &:hover, &:focus {
    background-color: $pentandra-red;
-   color: $pentandra-white;
   }
 
   &:hover {
    text-decoration: none;
-  }
-
-  &.rev {
-    color: $pentandra-white;
-    background-color: $pentandra-brown;
-    padding: 0;
-    
-    &:hover, &:focus {
-     background-color: $pentandra-red;
-    }
   }
 }
 
@@ -258,6 +247,7 @@ a.button {
 .tags {
   $tag-height: $base-line-height * 0.8;
   $tag-space: 10px;
+  $hole-diameter: 4px;
 
   li, a {
 
@@ -270,17 +260,11 @@ a.button {
   }
 
   a {
-    padding: 0 14px 0 10px;
+    padding: 0 $tag-space + $hole-diameter 0 $tag-space;
     margin-right: $tag-space;
-    color: $pentandra-white;
-    background-color: $pentandra-brown;
     @include border-left-radius($default-radius / 2);
-    @include pie;
 
     &:hover, &:focus {
-      text-decoration: none;
-      background-color: $pentandra-red;
-
       &:before {
         border-color: transparent transparent transparent $pentandra-red;
       }
@@ -301,10 +285,10 @@ a.button {
     &:after {
       content: "";
       position: absolute;
-      top: 8px;
+      top: $hole-diameter * 2;
       right: 0;
-      width: 4px;
-      height: 4px;
+      width: $hole-diameter;
+      height: $hole-diameter;
       background: $pentandra-white;
       @include border-radius(2px);
     }
@@ -471,11 +455,18 @@ a.button {
 
   .menu {
     float: right;
+  }
 
-    a.button {
-      font-size: $base-font-size;
-      line-height: $base-line-height * 1.5;
-      padding: 0 15px;
+  a.button {
+    color: $pentandra-brown;
+    background-color: $pentandra-white;
+    font-size: $base-font-size;
+    line-height: $base-line-height * 1.5;
+    padding: 0 15px;
+
+    &:hover {
+      background-color: $pentandra-red;
+      color: $pentandra-white;
     }
   }
 }
