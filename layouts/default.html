@@ -49,7 +49,7 @@
 </div>
 <footer role="contentinfo" class="rev contentinfo">
   <div class="content">
-    <div class="section">
+    <div class="group">
       <div class="bd">
         <aside class="aside section">
           <div class="menu section nav">
@@ -84,7 +84,7 @@
         </aside>
 
       </div>
-      <div class="aside">
+      <div class="aside section">
 
         <div class="group">
           <small class="aside logo copyright" onclick="location.href='<%= @config[:base_url] %>';">
@@ -93,6 +93,8 @@
         </div>
 
       </div>
+
+      <%= link_to('Colophon', '/colophon/') %>
     </div>
 
     <a href="#top" class="button">Back to top</a>
