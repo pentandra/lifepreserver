@@ -20,7 +20,7 @@ win any money, but we learned a lot and gained confidence in our ability to
 communicate what we are doing to business folks (especially when they're not
 research geeks).
 
-![Katie at our half-table during the Grow America competition](/images/growam2012-katie.jpg){: .aside .static .img }
+![Katie at our half-table during the Grow America competition](growam2012-katie.jpg){: .aside .static .img }
 
 It was inspiring and enlightening to see other entrepreneurs going through the
 same things we're going through. We're not the only ones that are young and
@@ -50,7 +50,7 @@ validated our thoughts and helped us make sure we were staying on track with
 our goals. Had anything gotten in the way? Were we missing something important?
 
 <figure class="img">
-  <img class="static" alt="Chris, two kids, and a sister on the way to the final round" src="/images/growam2012-chrisandothers.jpg" />
+  <img class="static" alt="Chris, two kids, and a sister on the way to the final round" src="growam2012-chrisandothers.jpg" />
   <figcaption class="small">
 
     This is Chris with his sister and two of our kids headed to the final
@@ -90,10 +90,10 @@ sleep. But the letdown after the adrenaline stops is brutal.
 
 <figure id="growam-video">
   <div class="simple"> 
-    <video style="width:100%;height:100%;" poster="/videos/growam2012.jpg" controls="controls" preload="none">
-      <source type="video/mp4" src="/videos/growam2012.mp4" />
-      <source type="video/webm" src="/videos/growam2012.webm" />
-      <source type="video/ogg" src="/videos/growam2012.ogv" />
+    <video style="width:100%;height:100%;" poster="growam2012.jpg" controls="controls" preload="none">
+      <source type="video/mp4" src="growam2012_mp4.mp4" />
+      <source type="video/webm" src="growam2012_webm.webm" />
+      <source type="video/ogg" src="growam2012_ogv.ogv" />
     </video>
   </div>
   <figcaption class="small">

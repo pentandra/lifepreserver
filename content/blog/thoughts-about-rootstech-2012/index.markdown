@@ -18,7 +18,7 @@ City. For those not familiar with RootsTech: it is a conference hosted by
 [FamilySearch International](http://familysearch.org "familysearch.org") to
 bring together genealogical software creators and users.
 
-![RootsTech 2012](/images/rootstech.320x480-75.2012.jpg){: .aside .static }
+![RootsTech 2012](rootstech.320x480-75.2012.jpg){: .aside .static }
 
 Since I never wrote about my experiences with RootsTech <span class="special">2011</span>, 
 I will try to summarize my thoughts about RootsTech in general in this article.
