@@ -86,15 +86,18 @@
       </div>
       <div class="aside section">
 
-        <div class="group">
-          <small class="aside logo copyright" onclick="location.href='<%= @config[:base_url] %>';">
-            &#169; Pentandra Research Solutions, Inc.
-          </small>
+        <div class="logo section"></div>
+
+        <div class="nav section">
+          <ul>
+            <li><%= link_to('Colophon', '/colophon/') %></li>
+          </ul>
         </div>
+
+        <small>&#169; <a href="/">Pentandra Research Solutions, Inc.</a></small>
 
       </div>
 
-      <%= link_to('Colophon', '/colophon/') %>
     </div>
 
     <a href="#top" class="button">Back to top</a>
