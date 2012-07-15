@@ -28,10 +28,10 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.85080645"
-     inkscape:cx="496"
-     inkscape:cy="717.91469"
+     inkscape:cx="516.99487"
+     inkscape:cy="2009.9712"
      inkscape:document-units="px"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="g3699"
      showgrid="true"
      inkscape:window-width="1366"
      inkscape:window-height="751"
@@ -703,7 +703,7 @@
        xlink:href="#pattern11665"
        inkscape:collect="always" />
     <pattern
-       patternTransform="matrix(1.2997355,0,0,1.2997355,463.39525,1011.9998)"
+       patternTransform="matrix(1.2997355,0,0,1.2997355,463.39525,1002.597)"
        id="pattern11679"
        xlink:href="#pattern11665"
        inkscape:collect="always" />
@@ -1213,7 +1213,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1650,7 +1650,7 @@
          inkscape:export-ydpi="89.986961"
          inkscape:export-xdpi="89.986961"
          inkscape:export-filename="/home/chris/devel/pentandra/lifepreserver/static/images/twitter.png"
-         transform="matrix(0.01651588,0,0,-0.01651588,863.17627,1757.405)"
+         transform="matrix(0.01789221,0,0,-0.01789221,863.17627,1757.405)"
          id="g12">
         <path
            id="path14"
@@ -1663,14 +1663,14 @@
          inkscape:export-xdpi="89.986961"
          inkscape:export-filename="/home/chris/devel/pentandra/lifepreserver/static/images/fb.png"
          id="path3006"
-         d="m 837.4658,1757.4051 -4.96423,0 0,-12.0005 -2.48161,0 0,-4.1363 2.48161,0 0,-2.4826 c 0,-3.3739 1.40065,-5.3806 5.37961,-5.3806 l 3.31341,0 0,4.1363 -2.07013,0 c -1.54942,0 -1.65222,0.5783 -1.65222,1.6567 l -0.006,2.0702 3.75256,0 -0.43919,4.1363 -3.31337,0 0,12.0005 z"
+         d="m 838.08629,1757.4051 -5.37792,0 0,-13.0005 -2.68841,0 0,-4.481 2.68841,0 0,-2.6895 c 0,-3.6551 1.51737,-5.829 5.82791,-5.829 l 3.58953,0 0,4.481 -2.24264,0 c -1.67854,0 -1.78991,0.6265 -1.78991,1.7947 l -0.006,2.2428 4.06528,0 -0.47579,4.481 -3.58949,0 0,13.0005 z"
          style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
          inkscape:connector-curvature="0" />
       <g
          inkscape:export-ydpi="89.986961"
          inkscape:export-xdpi="89.986961"
          inkscape:export-filename="/home/chris/devel/pentandra/lifepreserver/static/images/rss.png"
-         transform="translate(17.331731,-9.477795)"
+         transform="matrix(1.0855819,0,0,1.0855819,-59.915005,-160.69101)"
          id="g6584">
         <g
            id="g6579"
@@ -1702,8 +1702,8 @@
       </g>
       <g
          id="g4041"
-         transform="translate(-27.003108,-47.127247)"
-         inkscape:export-filename="/home/chris/devel/pentandra/lifepreserver/static/images/gplus.png"
+         transform="matrix(1.0833333,0,0,1.0833333,-94.591909,-197.48693)"
+         inkscape:export-filename="/home/chris/devel/pentandra/lifepreserver/static/images/gplus-white.png"
          inkscape:export-xdpi="89.998596"
          inkscape:export-ydpi="89.998596">
         <g
@@ -1896,7 +1896,7 @@
        inkscape:export-xdpi="89.986961"
        inkscape:export-ydpi="89.986961"
        inkscape:export-filename="/home/chris/devel/pentandra/lifepreserver/static/images/zeugma.png"
-       transform="matrix(1.02,0,0,1.02,3.7812455,34.0952)">
+       transform="matrix(1.0294904,0,0,1.0294904,3.325113,28.400959)">
       <rect
          y="233.3333"
          x="443.51083"
@@ -2004,7 +2004,7 @@
          id="flowPara11693">We believe life is too short to redo other people's research. We can move faster and build better research conclusions as we build on each others research. No man is an island.</flowPara></flowRoot>    <g
        id="g12553"
        transform="translate(658.06247,22.434769)"
-       inkscape:export-filename="/home/chris/devel/pentandra/lifepreserver/static/images/collaboration.png"
+       inkscape:export-filename="/home/chris/devel/pentandra/lifepreserver/design/collaboration.png"
        inkscape:export-xdpi="89.986961"
        inkscape:export-ydpi="89.986961">
       <rect
@@ -2218,7 +2218,7 @@
        height="104"
        x="692.0625"
        y="1134.095"
-       inkscape:export-filename="/home/chris/devel/pentandra/lifepreserver/static/images/context.png"
+       inkscape:export-filename="/home/chris/devel/pentandra/lifepreserver/design/context.png"
        inkscape:export-xdpi="89.986961"
        inkscape:export-ydpi="89.986961" />
     <text
@@ -2406,7 +2406,7 @@
     <rect
        inkscape:export-ydpi="89.986961"
        inkscape:export-xdpi="89.986961"
-       inkscape:export-filename="/home/chris/devel/pentandra/lifepreserver/static/images/clarity.png"
+       inkscape:export-filename="/home/chris/devel/pentandra/lifepreserver/design/clarity.png"
        style="opacity:0.92000002;fill:url(#pattern6143);fill-opacity:1;stroke:none;display:inline"
        id="rect4656"
        width="252"
