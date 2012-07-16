@@ -58,6 +58,7 @@ Elizabeth Shown Mills describes three types of genealogists in her paper
 > difference between gathering names and reconstructing lives...Their measure
 > of success is not the number of family members found, but the extent to which
 > they correctly portray each human life they study.
+{: .bq .grab }
 
 Janet Havorka at RootsTech this year similarly described three types of
 genealogists in her lecture [Advocating Genealogy and Growing the Market: Issues of the New Genealogist](http://s3.amazonaws.com/rootstech/original/Advocating%20Genealogy.docx?1322717131 "Click for Syllabus").
