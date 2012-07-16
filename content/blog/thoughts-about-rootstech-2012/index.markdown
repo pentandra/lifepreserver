@@ -104,8 +104,9 @@ Genealogy 2.0
 : Sometimes called source-centric, this type of software is aware of the
 genealogical research process, so that your research conclusions can be traced
 back to the source documents from which you obtained the information to use as
-evidence. FamilySearch is pushing hard for [GEDCOM X](http://gedcomx.org/){:
-rel="external" } to be the standard for this type of software.
+evidence. FamilySearch is pushing hard for 
+<abbr><a href="http://gedcomx.org/" rel="external">GEDCOM X</a></abbr>
+to be the standard for this type of software.
 
 Genealogy 3.0
 
