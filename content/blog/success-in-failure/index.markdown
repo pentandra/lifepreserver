@@ -78,7 +78,7 @@ they asked, the more I felt validated in our business approach and decisions.
 The competition also gave me an even greater appreciation for those that are in
 fields of research. Research is challenging in any field. It is also
 challenging to explain research to someone that has never done it before---let
-alone explain it in <span class="special">2--3</span> minutes.
+alone explain it in <span class="oldstyle">2--3</span> minutes.
 
 Overall, this experience gave me encouragement to take those next steps. I
 recognize now more than ever that we *can* be successful. There is nothing

@@ -20,7 +20,7 @@ bring together genealogical software creators and users.
 
 ![RootsTech 2012](rootstech.320x480-75.2012.jpg){: .aside .static }
 
-Since I never wrote about my experiences with RootsTech <span class="special">2011</span>, 
+Since I never wrote about my experiences with RootsTech <span class="oldstyle">2011</span>, 
 I will try to summarize my thoughts about RootsTech in general in this article.
 Some of my thoughts may not be specifically about RootsTech, but more of a
 response to the current state of the genealogical software industry.
@@ -45,7 +45,7 @@ Elizabeth Shown Mills describes three types of genealogists in her paper
 > Traditional Genealogists
 >
 > : As serious compilers of family data, most strive to meet the standards set
-> forth by the Jacobus School in the <span class="special">1930</span>s...Their
+> forth by the Jacobus School in the <span class="oldstyle">1930</span>s...Their
 > goal is likely to produce "compiled genealogies" that are _reference_ works
 > rather than _family histories_, so they try to identify as many family
 > members as possible, with vital statistics but little or no historical
@@ -120,7 +120,7 @@ accurate."[^1] This type of software integrates openly with software from other
 domains, such as history and other social sciences.
 
 Some software companies are just starting to scratch the surface of Genealogy
-<span class="special">2.0</span>. As [more tools](/products/#geungle) become
+<span class="oldstyle">2.0</span>. As [more tools](/products/#geungle) become
 available that support traditional genealogists and generational historians, we
 will see the gap between new and professional genealogists narrow. Tools that
 work the way research works will help new genealogists comprehend the research
