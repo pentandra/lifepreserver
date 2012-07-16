@@ -74,7 +74,7 @@
             <% @site.publishing_articles[0, 4].each do |post| %>
             <article class="excerpt"> 
               <header>
-                <time pubdate><%= date_for(post) %></time>
+                <time pubdate datetime="<%= post[:created_at] %>"><%= date_for(post) %></time>
                 <h3 class="normal"><%= link_to(post[:title], post, { :rel => "bookmark" }) %></h3>
               </header>
             </article>
