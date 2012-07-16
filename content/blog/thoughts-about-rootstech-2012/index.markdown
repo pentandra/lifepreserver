@@ -151,7 +151,7 @@ of the [how's and why's of research](/research/process/). We're hoping that we
 can make this transition a little easier.
 
 I have found the lectures by professional genealogists at NGS conferences _so
-much more useful_ to me as a developer and certainly as a genealogist. I just
+much more useful to me_ as a developer and certainly as a genealogist. I just
 can't get enough of the methodology track. Yet I have seen very few developers at
 these conferences take advantage of the professional genealogical education
 offered.
