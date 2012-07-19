@@ -4,8 +4,11 @@
 
 $(document).ready(function() {
 
-  $('a').smoothScroll();
+  // Kerning
+  $('#ourvalues h2').lettering();
 
+  $('a').smoothScroll();
+  
   $('.post img').baseline(26);
 
   if ($.fn.sharrre) {
