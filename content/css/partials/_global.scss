@@ -80,7 +80,7 @@ address {
   font-style: normal;
 }
 
-p {
+address, p {
   margin-bottom: $base-line-height;
 }
 
@@ -554,6 +554,10 @@ a.button {
     margin-left: 0.5em;
     position: relative;
   }
+}
+
+#vcard {
+  padding-bottom: 3px; // Get back onto baseline. Based on 186px² qrcode.
 }
 
 //

@@ -241,14 +241,13 @@ teammembers:
 
     <div class="bd">
 
-      <aside class="aside">
-        <h3>Get Social</h3>
+      <aside class="aside section">
 
-        <div class="mod">
-          <div class="g-plus" data-href="https://plus.google.com/108021950461928542978" data-width="252" data-height="69" data-theme="light"></div>
-          <div class="social-tw"><a href="https://twitter.com/<%= @item[:twitter] %>" class="twitter-follow-button" data-width="252px" data-show-count="false" data-size="large">Follow @<%= @item[:twitter] %></a></div>
-          <div class="social-fb fb-like-box" data-href="http://www.facebook.com/PentandraInc" data-width="252" data-height="121" data-show-faces="true" data-stream="false" data-header="true"></div>
-        </div>
+        <h3 class="flush">Get Social</h3>
+
+        <div class="g-plus" data-href="https://plus.google.com/108021950461928542978" data-width="252" data-height="69" data-theme="light"></div>
+        <div class="social-tw"><a href="https://twitter.com/<%= @item[:twitter] %>" class="twitter-follow-button" data-width="252px" data-show-count="false" data-size="large">Follow @<%= @item[:twitter] %></a></div>
+        <div class="social-fb fb-like-box" data-href="http://www.facebook.com/PentandraInc" data-width="252" data-height="121" data-show-faces="true" data-stream="false" data-header="true"></div>
 
       </aside>
 
@@ -259,7 +258,7 @@ teammembers:
           <div class="country-name">USA</div>
         </div>
         <div class="tel">Phone: +1 <span class="parenthesis">(</span>435<span class="parenthesis">)</span> 294<span class="ndash">--</span>2964</div>
-        <p>Email: <a class="email icon" href="mailto:<%= @item[:email] %>"><%= @item[:email] %></a></p>
+        <div>Email: <a href="mailto:<%= @item[:email] %>"><%= @item[:email] %></a></div>
       </address>
 
       <p>
@@ -278,11 +277,11 @@ teammembers:
 
     </div>
 
-    <figure class="aside mod">
+    <figure class="aside section" id="vcard">
       <a href="<%= @item.path(:rep => :vcard) %>">
         <img src="<%= @item.path(:rep => :qrcode) %>" alt="" />
       </a>
-      <figcaption>Our vCard</figcaption>
+      <figcaption class="small bold">Our vCard</figcaption>
     </figure>
 
   </div>
