@@ -477,6 +477,10 @@ a.button {
     text-decoration: none;
   }
 
+  article h3 {
+    margin-bottom: $base-line-height;
+  }
+
   .content {
     // Introduce some syncopation
     padding-top: $base-line-height * 1.5;
@@ -492,6 +496,37 @@ a.button {
 
     &:first-child {
       margin-left: 0;
+    }
+  }
+}
+
+.motto {
+
+  p {
+    font-size: 20px;
+  }
+
+  h1 {
+    letter-spacing: -2px;
+    font-size: 59px;
+
+    .char1 {
+      vertical-align: top;
+      margin-left: -4px;
+    }
+
+    .word1 .char4, .word2 .char5 {
+      vertical-align: top;
+      margin-left: 2px;
+    }
+
+    .word2 .char8 {
+      vertical-align: top;
+      margin-left: 1px;
+    }
+
+    .word3 {
+      letter-spacing: 2px;
     }
   }
 }
