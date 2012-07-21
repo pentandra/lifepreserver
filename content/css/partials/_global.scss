@@ -507,14 +507,18 @@ a.button {
   }
 
   h1 {
-    letter-spacing: -2px;
-    font-size: 59px;
 
+    // Group the lines of the motto closer together
+    line-height: 45px;
+    margin-bottom: 21px; // Get back on the baseline
+
+    // Line up words along column
     .char1 {
       vertical-align: top;
       margin-left: -4px;
     }
 
+    // Kerning
     .word1 .char4, .word2 .char5 {
       vertical-align: top;
       margin-left: 2px;
@@ -525,8 +529,9 @@ a.button {
       margin-left: 1px;
     }
 
-    .word3 {
-      letter-spacing: 2px;
+    // Shape the heading
+    .word1 {
+      letter-spacing: 3px; // Draw attention to BREAKING
     }
   }
 }
