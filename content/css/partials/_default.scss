@@ -35,8 +35,8 @@ $less-outer-margin: 48px;
     padding-right: 0;
     margin-left: -$less-outer-margin;
     padding-left: $less-outer-margin;
-    //@include border-right-radius($default-radius);
-    //@include border-left-radius(0);
+    @include border-right-radius($default-radius);
+    @include border-left-radius(0);
 
     .fancy {
       $border-width: 2px;
@@ -58,7 +58,7 @@ $less-outer-margin: 48px;
   padding-right: $less-outer-margin;
   margin-left: -($less-gutter-width + $less-column-width);
   padding-left: $less-gutter-width + $less-column-width;
-  //@include border-left-radius($default-radius);
+  @include border-left-radius($default-radius);
   @include pie;
 
   .fancy {
