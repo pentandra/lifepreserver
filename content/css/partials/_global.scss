@@ -49,7 +49,6 @@ h3.flush {
 .normal.flush {
   $height: 13px;
   line-height: $height;
-  margin-bottom: $base-line-height - $height;
 }
 
 .small.flush {
@@ -353,6 +352,10 @@ a.button {
   text-transform: uppercase;
 }
 
+.low {
+  text-transform: lowercase;
+}
+
 //
 // Background blocks
 
@@ -491,6 +494,10 @@ a.button {
     @include grid(2);
   }
 
+  .excerpt h3 {
+    display: inline;
+  }
+
   .menu ul li {
     margin-left: 19px; // Can we come up with a generic centering thing?
 
@@ -498,6 +505,10 @@ a.button {
       margin-left: 0;
     }
   }
+}
+
+.main {
+  border-top: $base-line-height * 1.5 solid $pentandra-brown;
 }
 
 .motto {
