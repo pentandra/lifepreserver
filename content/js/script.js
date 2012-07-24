@@ -7,6 +7,7 @@ $(document).ready(function() {
   // Kerning
   $('#ourvalues h2').lettering();
   $('.motto h1').lettering('words').children('span').lettering();
+  $('.teamintro h1').lettering();
 
 
   $('a').smoothScroll();
