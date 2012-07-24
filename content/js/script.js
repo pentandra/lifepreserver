@@ -8,6 +8,7 @@ $(document).ready(function() {
   $('#ourvalues h2').lettering();
   $('.motto h1').lettering('words').children('span').lettering();
   $('.teamintro h1').lettering();
+  $('#meetgeungle h2').lettering();
 
 
   $('a').smoothScroll();
