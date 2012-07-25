@@ -46,6 +46,10 @@ h3.flush {
   margin-bottom: 32px;
 }
 
+h4.small {
+  margin-bottom: $base-line-height * 0.25;
+}
+
 .normal.flush {
   $height: 13px;
   line-height: $height;
@@ -548,8 +552,17 @@ a.button {
 }
 
 .teammember {
+  $photo-height: 160px;
+  $social-button-height: 32px;
+  $photo-margin: $base-line-height / 4;
+  $excess: ($base-line-height * 8) - ($photo-height + $social-button-height);
+
   .aside {
-    margin-bottom: $base-line-height;
+    margin-bottom: $excess - $photo-margin;
+  }
+
+  .photo {
+    margin-bottom: $photo-margin;
   }
 }
 
