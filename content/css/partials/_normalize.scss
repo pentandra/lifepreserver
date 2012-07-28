@@ -112,7 +112,7 @@ sub { bottom: -0.25em; }
 ul, ol { margin-bottom:  $base-line-height; padding-left: 1.5em; position: relative; left: -1.5em; }
 .nav ul, nav ul, .nav ol, nav ol { list-style: none; margin: 0; padding: 0; position: static; }
 
-dt { font-family: $special-font-family, sans-serif; }
+dt { font-family: $bold-font-family, sans-serif; }
 dd { margin-bottom: $base-line-height; }
 
 
