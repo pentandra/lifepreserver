@@ -7,7 +7,7 @@ gem 'kramdown' # for advanced markdown
 gem 'nanoc' # for compiling the site
 gem 'nokogiri' # for parsing HTML
 gem 'rainpress' # for compact CSS
-gem 'rubypants' # for pretty typography
+gem 'rubypants-unicode' # for pretty typography
 gem 'uglifier' # for compact javascript
 gem 'htmlbeautifier' # for beautiful HTML
 gem 'activesupport' # for to_slug
