@@ -109,8 +109,8 @@ sub { bottom: -0.25em; }
    Lists
    ========================================================================== */
 
-ul, ol { margin-bottom:  $base-line-height; padding-left: 1.5em; position: relative; left: -1.5em; }
-.nav ul, nav ul, .nav ol, nav ol { list-style: none; margin: 0; padding: 0; position: static; }
+ul, ol { margin-bottom:  $base-line-height; }
+.nav ul, nav ul, .nav ol, nav ol { list-style: none; margin: 0; }
 
 dt { font-family: $bold-font-family, sans-serif; }
 dd { margin-bottom: $base-line-height; }
