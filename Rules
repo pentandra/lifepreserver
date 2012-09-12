@@ -153,7 +153,7 @@ compile '*' do
     
     layout 'default'
 
-    filter :rubypants
+    filter :rubypantsunicode
     filter :beautifier
   end
 end
