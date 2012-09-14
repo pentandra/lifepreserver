@@ -161,6 +161,7 @@ a.permalink {
 .pod {
   padding-left: $less-gutter-width / 2;
   padding-right: $less-gutter-width / 2;
+  @include box-sizing(border-box);
 }
 
 .mmod { //TODO fix
