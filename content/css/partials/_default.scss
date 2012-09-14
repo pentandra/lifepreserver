@@ -260,14 +260,14 @@ $theteam-height: $base-line-height * 12;
 }
 
 .question {
-  $height: $base-line-height * 13;
+  $height: $base-line-height * 8;
 
-  height: $height;
+  height: $height + $base-line-height;
   position: relative;
 
   &:before {
     content: "?";
-    font-size: 385px;
+    font-size: 275px;
     line-height: $height;
     position: absolute;
     left: 40px;
