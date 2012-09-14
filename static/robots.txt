@@ -3,3 +3,4 @@
 
 User-agent: *
 
+Sitemap: http://pentandra.com/sitemap.xml
