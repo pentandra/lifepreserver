@@ -13,8 +13,6 @@ $(document).ready(function() {
 
   $('a').smoothScroll();
   
-  $('.post img').baseline(26);
-
   if ($.fn.sharrre) {
     $('#share').sharrre({
 
@@ -44,4 +42,9 @@ $(document).ready(function() {
 
   }
 
+});
+
+// Wait until after images have loaded to run baselinejs.
+$(window).load(function() {
+  $('.post img').baseline(26);
 });
