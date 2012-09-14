@@ -35,11 +35,6 @@ $(document).ready(function() {
       enableTracking: true
       
     });
-
-    $('.share').click(function() {
-      $('#share').toggle();
-    });
-
   }
 
 });
