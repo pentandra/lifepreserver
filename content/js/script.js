@@ -20,14 +20,14 @@ $(document).ready(function() {
 
       share: {
         googlePlus: true,
-        facebook: true,
-        twitter: true
+        twitter: true,
+        linkedin: true,
+        facebook: true
       },
 
       buttons: {
-        googlePlus: { size: 'tall' },
-        facebook: { layout: 'box_count' },
-        twitter: { count: 'vertical', via: 'PentandraInc' }
+        linkedin: { counter: 'right' },
+        twitter: { via: 'PentandraInc' }
       },
 
       urlCurl: '',

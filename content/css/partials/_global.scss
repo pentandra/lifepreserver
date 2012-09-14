@@ -211,6 +211,13 @@ a.permalink {
   }
 }
 
+.meta {
+  $border-height: 1px;
+  border-bottom: $border-height solid $pentandra-brown;
+  margin-bottom: 0 - $border-height;
+}
+
+
 .photo {
   $border-width: 11px;
   $photo-width: 160px;
@@ -599,15 +606,10 @@ a.button {
 
 .sharrre { 
 
-  height: $base-line-height * 3;
-
   .button {
-    float: left;
+    height: $base-line-height;
   }
 
-  .googleplus {
-    margin-right: 10px;
-  }
 }
 
 //
