@@ -50,6 +50,12 @@ h4.small {
   margin-bottom: $base-line-height * 0.25;
 }
 
+hgroup {
+  h4 {
+    margin: 0;
+  }
+}
+
 .normal.flush {
   $height: 13px;
   line-height: $height;
