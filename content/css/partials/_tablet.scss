@@ -13,10 +13,6 @@ $less-outer-margin: 28px;
   // 
   // HTML elements
 
-  dd {
-    margin-left: 30px;
-  }
-
   .content {
     @include grid(8); 
     padding: 0 $less-outer-margin;
@@ -45,16 +41,6 @@ $less-outer-margin: 28px;
 
     .inner {
       width: auto;
-    }
-  }
-
-  .bd, .aside {
-
-    &.fx {
-
-      .normal.inner {
-        margin-top: 1em;
-      }
     }
   }
 

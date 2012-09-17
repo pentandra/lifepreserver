@@ -79,6 +79,10 @@ $less-outer-margin: 48px;
   .aside {
     margin-left: $less-gutter-width;
     float: right;
+
+    &.pod {
+      padding-left: 0;
+    }
   }
 
   .other {
@@ -321,6 +325,10 @@ $theteam-height: $base-line-height * 12;
 //
 
 .contentinfo {
+
+  .excerpt h3 {
+    display: inline;
+  }
 
   .inner {
     @include grid(5);

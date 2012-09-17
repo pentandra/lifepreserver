@@ -23,10 +23,6 @@ $less-outer-margin: 34px;
     margin: 0 0 $base-line-height;
   }
 
-  dd {
-    margin-left: 20px;
-  }
-
 
   //
   // 
@@ -77,14 +73,8 @@ $less-outer-margin: 34px;
     }
   }
 
-  .bd, .aside {
-
-    &.fx {
-
-      .normal {
-        margin-top: 1em;
-      }
-    }
+  .item {
+    float: none;
   }
 
   .img img {
@@ -179,6 +169,14 @@ $less-outer-margin: 34px;
       }
     }
   }
+
+  .contentinfo {
+
+    .excerpt h3 {
+      display: block;
+    }
+  }
+
 
   //
   // Background-image classes
