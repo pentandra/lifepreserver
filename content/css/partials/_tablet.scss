@@ -41,6 +41,8 @@ $less-outer-margin: 28px;
 
     .inner {
       width: auto;
+      padding-right: $less-gutter-width / 2;
+      @include box-sizing(border-box);
     }
   }
 
@@ -70,6 +72,10 @@ $less-outer-margin: 28px;
 
     &.ock {
       margin: 0 auto;
+    }
+
+    .bd {
+      @include grid(4);
     }
 
   }
@@ -104,6 +110,13 @@ $less-outer-margin: 28px;
 
   .process {
     margin-top: 0;
+  }
+
+  .question {
+
+    &:before {
+      left: 140px;
+    }
   }
 
   .zeugma {

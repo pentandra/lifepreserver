@@ -9,6 +9,7 @@ px      68    160    252    344    436    */
 $less-outer-margin: 22px;
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+
   .content {
     @include grid(5); 
     padding: 0 $less-outer-margin;
@@ -54,13 +55,14 @@ $less-outer-margin: 22px;
     h1 {
       float: right;
       @include grid(3);
+      margin-top: 0;
     }
 
     p {
       float: left;
       @include grid(2);
       text-align: right;
-      margin-top: 3px;
+      margin-top: 5px;
     }
   }
 
