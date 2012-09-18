@@ -95,6 +95,10 @@ $less-outer-margin: 34px;
     display: block;
   }
 
+  .excerpt .pubdate {
+    padding-top: 0;
+  }
+
   // Grid classes
 
   .bl {
