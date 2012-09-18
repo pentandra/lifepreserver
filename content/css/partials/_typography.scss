@@ -5,28 +5,28 @@
   margin: $base-line-height * 2.25 0;
 }
 
-.huge {
+.huge, h1 {
 	font-size: 76px;
 	line-height: $base-line-height * 3.5; // 84px
 	letter-spacing: -1px;
   margin: $base-line-height * 1.75 0;
 }
 
-.large {
+.large, h2 {
 	font-size: 47px;
 	line-height: $base-line-height * 2; // 48px
 	letter-spacing: normal;
   margin-bottom: $base-line-height;
 }
 
-.bigger {
+.bigger, h3 {
 	font-size: 29px;
 	line-height: $base-line-height * 1.5; // 36px
 	letter-spacing: normal;
   margin-bottom: $base-line-height * 1.5;
 }
 
-.big {
+.big, h4 {
 	font-size: 25px;
 	line-height: $base-line-height * 1.25; // 30px (4:5 incremental leading)
 	letter-spacing: normal;
@@ -40,7 +40,7 @@
 	letter-spacing: normal;
 }
 
-.small {
+.small, h5 {
 	font-size: 14px;
 	line-height: $base-line-height * 0.75; // 18px (5:4 incremental leading)
 	letter-spacing: normal;

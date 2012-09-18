@@ -9,26 +9,6 @@
 //
 // Default HTML Styles
 
-h1 {
-  @extend .huge; 
-}
-
-h2  {
-  @extend .large; 
-}
-
-h3 {
-  @extend .bigger;
-}
-
-h4 {
-  @extend .big; 
-}
-
-h5 {
-  @extend .small;
-}
-
 #{headings(1,3)} {
   text-transform: uppercase;
 }
