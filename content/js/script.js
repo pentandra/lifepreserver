@@ -101,6 +101,7 @@ $(document).ready(function() {
   Pentandra.Scrolling.init();
   Pentandra.Social.init('#share');
 
+  AccessifyHTML5();
 });
 
 // Wait until after images have loaded to run baselinejs.
