@@ -19,6 +19,10 @@ $less-outer-margin: 34px;
     letter-spacing: normal;
   }
 
+  h3.flush {
+    line-height: 39px;
+  }
+
   blockquote, .bq { 
     margin: 0 0 $base-line-height;
   }
@@ -55,6 +59,8 @@ $less-outer-margin: 34px;
 
     .inner {
       width: auto;
+      padding-right: $less-gutter-width / 2;
+      @include box-sizing(border-box);
     }
 
   }
