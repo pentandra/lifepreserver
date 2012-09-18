@@ -21,6 +21,8 @@ Pentandra.Kerning = (function() {
 
 Pentandra.Scrolling = (function() {
 
+  var mobileWidth = 768;
+
   function setupScrollingFor(elem) {
 
     $(elem).smoothScroll({
@@ -31,14 +33,34 @@ Pentandra.Scrolling = (function() {
   
   }
 
+  function smallMenuInUse() {
+    return $(window).width() < mobileWidth;
+  }
+
   function scrollWhenTheHashChanges() {
 
     $(window).hashchange(function() {
       var hash = location.hash;
 
-      $.smoothScroll({
-        scrollTarget: hash
-      });
+      if (!hash && smallMenuInUse()) {
+
+        // Scroll to the top of the main content
+        $.smoothScroll({
+          scrollTarget: '#main'
+        });
+
+      } else {
+
+        if (document.getElementById(hash.substring(1))) {
+          $.smoothScroll({
+            scrollTarget: hash
+          });
+        }
+
+      }
+
+      return false;
+
     });
 
   }
