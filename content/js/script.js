@@ -11,7 +11,11 @@ $(document).ready(function() {
   $('#meetgeungle h2').lettering();
 
 
-  $('a').smoothScroll();
+  $('a').smoothScroll({
+    afterScroll: function(opts) {
+      location.hash = opts.scrollTarget;
+    }
+  });
   
   if ($.fn.sharrre) {
     $('#share').sharrre({
