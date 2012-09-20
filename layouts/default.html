@@ -44,6 +44,18 @@
 </header>
 <div id="main" role="main" class="main">
   <div class="content">
+    <% if @item[:wip] then %>
+    <div class="wip section">
+      <div class="mod bd big">
+        <p>
+
+          This page is a work in progress. Please don't critique too harshly as
+          we work to get it just right.
+
+        </p>
+      </div>
+    </div>
+    <% end %>
     <%= yield %>
   </div>
 </div>
