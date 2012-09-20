@@ -36,7 +36,7 @@ $less-outer-margin: 34px;
     padding: 0 $less-outer-margin;
   } 
 
-  .ext {
+  .ext, .wip {
     margin-left: -$less-outer-margin;
     margin-right: -$less-outer-margin;
     padding-left: $less-outer-margin;
