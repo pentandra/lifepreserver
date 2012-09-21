@@ -21,11 +21,14 @@ Pentandra.Kerning = (function() {
 
 Pentandra.Scrolling = (function() {
 
-  var mobileWidth = 768;
+  var mobileWidth = 768, previousPosition = null;
 
   function setupScrollingFor(elem) {
 
     $(elem).smoothScroll({
+      beforeScroll: function(opts) {
+        previousPosition = $(window).scrollTop();
+      },
       afterScroll: function(opts) {
         location.hash = opts.scrollTarget;
       }
@@ -42,12 +45,22 @@ Pentandra.Scrolling = (function() {
     $(window).hashchange(function() {
       var hash = location.hash;
 
-      if (!hash && smallMenuInUse()) {
+      if (!hash) {
+        
+        // If there is a previous position, move there
+        if ($.isNumeric(previousPosition)) {
+          $.smoothScroll(previousPosition);
+        } 
+        
+        // If we're coming to the page for the first time and we are on a
+        // mobile device, scroll down past the menu to the main content.
+        else if (smallMenuInUse()) {
 
-        // Scroll to the top of the main content
-        $.smoothScroll({
-          scrollTarget: '#main'
-        });
+          // Scroll to the top of the main content
+          $.smoothScroll({
+            scrollTarget: '#main'
+          });
+        }
 
       } else {
 
