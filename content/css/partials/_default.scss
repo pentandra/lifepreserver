@@ -284,8 +284,15 @@ $theteam-height: $base-line-height * 12;
   margin-bottom: $base-line-height / 2;
 }
 
-#fig\3A process img, #fig\3A io img {
+#fig\3A io img {
   margin-bottom: $base-line-height * 0.75;
+}
+
+#fig\3A journey img {
+  $image-height: 372px;
+  height: $image-height;
+  width: 204px;
+  margin-bottom: ($base-line-height * 15) - $image-height;
 }
 
 #fig\3A phases img {
