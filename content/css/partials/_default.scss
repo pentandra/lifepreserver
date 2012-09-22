@@ -292,6 +292,10 @@ $theteam-height: $base-line-height * 12;
   margin-bottom: $base-line-height * 0.25;
 }
 
+#fig\3A processtree img {
+  margin-bottom: ($base-line-height * 9) - 217px;
+}
+
 .rss {
   height: $base-line-height;
   width: $base-line-height;

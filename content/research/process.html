@@ -281,12 +281,13 @@ wip: true
         Of course, research does not normally progress linearly through these
         stages from <span class="special">orientation</span> down to
         <span class="special">proof</span>. It is an iterative process. Often,
-        progress through these phases happens so fast that we don't realize
-        that we are doing it. Sometimes it takes longer. It depends on the
-        problem at hand.
+        research follows a seemingly random and cyclical pattern. However,
+        progress through these phases can sometimes happen so fast that we
+        don't realize it. Other times it takes longer. It depends on the
+        problem at hand. This process continues until answers are found and
+        questions are laid to rest.
 
       </p>
-
       <p>
 
         If a mistake is made in an early phase, everything built later upon
@@ -389,7 +390,7 @@ wip: true
 
       <p>
 
-        So this framework sounds nice, but how do we keep track of it all?
+        So this framework idea sounds nice, but how do we keep track of it all?
         Large research problems can be overwhelming. If we break up these large
         problems into bite-sized pieces, research becomes more straightforward.
         Like scientists that break matter down into atoms, we need to isolate a
@@ -409,46 +410,10 @@ wip: true
         We have taken apart the research process to figure out how to make the
         process easier for researchers. What we found is that while computers
         are not very good at <em>doing</em> research, they are really good at
-        <em>organizing</em> research. They can take care of the bookkeeping so
-        that researchers have more time to put the pieces together.
+        <em>organizing</em> research. Computers can take care of the
+        bookkeeping so that researchers have more time to put the pieces
+        together.
 
-      </p>
-
-      <aside class="banner grab section">
-        <div class="fancy wrapper group">
-
-          <div class="inner item">
-            <p>
-
-              A <dfn>case</dfn> is the fundamental unit of research.
-              
-            </p>
-          </div>
-          <div class="aside item pod">
-
-            <p>
-
-              A <dfn id="hypothesis">hypothesis</dfn> is an unverified answer to a research
-              question.  
-              
-            </p>
-            <p>
-
-              <a class="button" href="http://en.wikipedia.org/wiki/Hypothesis" rel="external">Hypothesis on <b>Wikipedia</b></a>
-
-            </p>
-          </div>
-
-        </div>
-      </aside>
-
-      <p>
-
-        In our software systems we call this whole thing a <em>case</em>. A
-        case is made of a question, its conclusion (if one has been reached),
-        and all of the research and analysis undertaken to answer that
-        question. Think of it as a little bundle of research.
-        
       </p>
 
     </div>
@@ -468,83 +433,156 @@ wip: true
       </figcaption>
     </figure>
 
-    <div class="bd">
-      <p>
+    <section id="case">
 
-        The idea of case study research is common in social, educational, and
-        political research. Dr. Gary Thomas of the University of Birmingham has
-        described case studies as follows:
+      <div class="bd">
 
-      </p>
+        <h4>The Case</h4>
 
-      <figure class="bq grab">
-        <blockquote cite="http://qix.sagepub.com/content/17/6/511">
-          <p>
+        <p>
 
-            Case studies are analyses of persons, events, decisions, periods,
-            projects, policies, institutions, or other systems that are studied
-            holistically by one or more methods.
-            
-          </p>
-        </blockquote>
-        <figcaption>--- Gary Thomas, in <cite><a href="http://qix.sagepub.com/content/17/6/511" rel="external">A Typology for the Case Study in Social Science Following a Review of Definition, Discourse, and Structure</a></cite>, from the <cite>Qualitative Inquiry</cite></figcaption>
-      </figure>
+          So how can we break up research into smaller pieces? The answer is
+          obvious---in our minds we already group little bundles of research
+          together almost instinctively. In fact, we've discussed it already!
+          There is a natural demarcation between these little bundles of
+          research, bounded by a <span class="special">question</span> and a
+          <span class="special">conclusion</span>. We call these little bundles
+          of research <em class="special">cases</em>.
 
-    </div>
-    <div class="bd">
+        </p>
 
-      <figure id="fig:processtree" class="aside img static mod">
+
+        <div class="banner grab section">
+          <div class="fancy wrapper group">
+
+            <div class="inner item">
+              <p>
+
+                A <dfn class="special">case</dfn> is the fundamental unit of
+                research.
+                
+              </p>
+              <p>
+
+                A case includes a question, its conclusion (or
+                <a href="#hypothesis">hypothesis</a> if a solid conclusion has
+                not yet been reached), and all of the research and analysis
+                undertaken to answer that question. Think of it as a little
+                bundle of research.
+                
+              </p>
+
+            </div>
+            <div class="aside item pod">
+
+              <p>
+
+                A <dfn id="hypothesis">hypothesis</dfn> is an unproven answer
+                to a research question.  
+                
+              </p>
+              <p>
+
+                <a class="button" href="http://en.wikipedia.org/wiki/Hypothesis" rel="external">Hypothesis on <b>Wikipedia</b></a>
+
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <p>
+
+          Cases are the building blocks of research. They are what we are
+          focused on as a company.
+
+        </p>
+
+      </div>
+    </section>
+    <section id="multiplicity">
+
+      <div class="bd">
+
+        <h4>A Multiplicity of Cases</h4>
+
+        <p>
+
+          Once a case has been built, other cases can be built on top of it.
+          Cases can be grouped into projects. Cases can be shared with others,
+          allowing others to see not only the conclusions, but the entire
+          research process including the <span class="special">evidence</span>,
+          <span class="special">information</span>, and
+          <span class="special">data</span> the conclusion is based upon.
+
+        </p>
+        <p>
+
+          One question often leads to more questions. 
+
+        </p>
+
+        <figure class="bq grab" id="growingquestions">
+
+          <blockquote cite="http://en.wikiquote.org/wiki/Thorstein_Veblen">
+            <p>
+
+              The outcome of any serious research can only be to make two
+              questions grow where only one grew before.
+
+            </p>
+          </blockquote>
+          <figcaption>--- Thorstein Veblen, from <cite>The Evolution of the Scientific Point of View</cite></figcaption>
+
+        </figure>
+
+      </div>
+
+      <figure id="fig:processtree" class="aside img static">
         <img src="/images/processtree.png" alt="The process tree" />
-        <figcaption>
-          <p>Cases can build on top of each other</p>
+        <figcaption class="small">
+          <dl>
+            <dt>Figure 5</dt>
+            <dd>Cases can be built on top of each other.</dd>
+          </dl>
         </figcaption>
       </figure>
 
-      <p>
+    </section>
+    <section id="origins">
 
-        Cases are the building blocks of research. Once a case has been built,
-        other cases can be built on top of it. Cases can be grouped into
-        projects. Cases can be shared with others, allowing others to see not
-        only the conclusions, but the entire research process.
+      <div class="bd">
 
-      </p>
+        <h4>Case Origins</h4>
 
-      <p>
+        <p>
+          
+          Our definition of a case in software vs. colloquial definitions.
 
-        The research process is not always linear, but oftentimes follows a
-        seemingly random and cyclical pattern. One question often leads to more
-        questions. This process continues until answers are found and questions
-        are laid to rest.
+        </p>
+        <p>
 
-      </p>
+          The idea of case study research is common in social, educational, and
+          political research. Dr. Gary Thomas of the University of Birmingham
+          has described case studies as follows:
 
-      <figure class="bq grab" id="growingquestions">
+        </p>
 
-        <blockquote cite="http://en.wikiquote.org/wiki/Thorstein_Veblen">
-          <p>
+        <figure class="bq grab">
+          <blockquote cite="http://qix.sagepub.com/content/17/6/511">
+            <p>
 
-            The outcome of any serious research can only be to make two
-            questions grow where only one grew before.
+              Case studies are analyses of persons, events, decisions, periods,
+              projects, policies, institutions, or other systems that are
+              studied holistically by one or more methods.
+              
+            </p>
+          </blockquote>
+          <figcaption>--- Gary Thomas, in <cite><a href="http://qix.sagepub.com/content/17/6/511" rel="external">A Typology for the Case Study in Social Science Following a Review of Definition, Discourse, and Structure</a></cite>, from the <cite>Qualitative Inquiry</cite></figcaption>
+        </figure>
 
-          </p>
-        </blockquote>
-        <figcaption>--- Thorstein Veblen, from <cite>The Evolution of the Scientific Point of View</cite></figcaption>
-
-      </figure>
-
-    </div>
-
-    <div class="aside">
-      <div class="banner rev section">
-        <div class="fancy wrapper group pod">
-          <p>
-
-            As a company, we are focused on the building blocks of research.
-
-          </p>
-        </div>
       </div>
-    </div>
+    </section>
 
   </section>
   <section id="proof" class="section">
@@ -618,7 +656,7 @@ wip: true
       <img src="/images/pillars.png" alt="The pillars of proof" />
       <figcaption class="small">
         <dl>
-          <dt>Figure 5</dt>
+          <dt>Figure 6</dt>
           <dd>
           
             How can you prove that your conclusions are right? The strength of
