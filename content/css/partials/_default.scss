@@ -132,7 +132,7 @@ $less-outer-margin: 48px;
 .bl {
   @include grid(5);
 
-  h3 {
+  h3, .h3.flush {
     margin-bottom: $base-line-height / 2;
   }
 
