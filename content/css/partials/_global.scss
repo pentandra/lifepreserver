@@ -99,6 +99,15 @@ ul {
   list-style-type: square;
 }
 
+ol {
+  font-family: $special-font-family, serif;
+
+  p {
+    font-family: $base-font-family, sans-serif;
+  }
+}
+
+
 .bold {
   font-family: $bold-font-family, sans-serif;
   font-weight: normal;
