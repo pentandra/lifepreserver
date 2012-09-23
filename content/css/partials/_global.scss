@@ -115,10 +115,6 @@ ul {
   @extend .special;
 }
 
-.footnotes {
-  @extend .small;
-}
-
 a.permalink {
   color: desaturate(lighten($link-color, 50%), 20%);
 
