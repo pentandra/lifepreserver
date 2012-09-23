@@ -124,6 +124,10 @@ ol {
   @extend .special;
 }
 
+.footnotes [rel="reference"], sup a[rel="footnote"] {
+  text-decoration: none;
+}
+
 a.permalink {
   color: desaturate(lighten($link-color, 50%), 20%);
 
