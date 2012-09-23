@@ -400,6 +400,13 @@ a.button {
   }
 }
 
+.grab a.button {
+
+  &:hover, &:focus {
+    background-color: $pentandra-brown;
+  }
+}
+
 .shadow {
   @include single-box-shadow($pentandra-brown, 0, 0, 10px);
 }
