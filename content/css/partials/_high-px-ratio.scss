@@ -5,7 +5,7 @@ device-pixel-ratio of 2+, such as iPhone 4. */
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
 
   .retina {
-    width: 100%;
+    max-width: 100%;
   }
 
   .aside .geungle-logo {
