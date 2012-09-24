@@ -509,17 +509,6 @@ a.button {
     padding-bottom: $base-line-height * 3.5;
   }
 
-  .bd .aside {
-    @include grid(2);
-  }
-
-  .menu ul li {
-    margin-left: 21px; // Can we come up with a generic centering thing?
-
-    &:first-child {
-      margin-left: 0;
-    }
-  }
 }
 
 .main {

@@ -81,7 +81,16 @@ $less-outer-margin: 22px;
     .bd {
       
       .aside {
+        @include grid(2);
         float: right;
+      }
+
+      .menu ul li {
+        margin: 0 0 0 21px;
+
+        &:first-child {
+          margin-left: 0;
+        }
       }
 
       .inner {
