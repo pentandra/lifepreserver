@@ -6,10 +6,12 @@ device-pixel-ratio of 2+, such as iPhone 4. */
 
   .aside .geungle-logo {
     background-image: url('/images/geungle-logo_3col@2x.png');
+    background-size: 100%;
   }
 
   .logo { 
     background-image: url('/images/pentandra-logo@2x.png');
+    background-size: 100%;
   }
 
   .rev .logo, .grab .logo {
@@ -18,14 +20,17 @@ device-pixel-ratio of 2+, such as iPhone 4. */
 
   .email {
     background-image: url('/images/email@2x.png');
+    background-size: 100%;
   }
 
   .fb {
     background: url('/images/fb@2x.png');
+    background-size: 100%;
   }
 
   .gplus {
     background-image: url('/images/gplus-64.png');
+    background-size: 100%;
   }
 
   .rev .gplus, .grab .gplus {
@@ -34,10 +39,12 @@ device-pixel-ratio of 2+, such as iPhone 4. */
 
   .rss {
     background-image: url('/images/rss@2x.png');
+    background-size: 100%;
   }
 
   .twittr {
     background-image: url('/images/twitter-32@2x.png?v2');
+    background-size: 100%;
   }
 
   .rev .twittr, .grab .twittr {
@@ -46,6 +53,7 @@ device-pixel-ratio of 2+, such as iPhone 4. */
 
   .zeugma {
     background-image: url('/images/zeugma.jpg@2x?v2');
+    background-size: 100%;
   }
 
   // Retina for mobile
@@ -53,6 +61,7 @@ device-pixel-ratio of 2+, such as iPhone 4. */
 
     .process {
       background-image: url('/images/research-process_3col@2x.png');
+      background-size: 100%;
     }
  
     .zeugma {
