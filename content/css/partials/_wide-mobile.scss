@@ -97,8 +97,8 @@ $less-outer-margin: 22px;
   .geungle-logo {
     @include grid(5);
     height: 130px;
-    background-size: 100%;
     background-image: url('/images/geungle-logo.png');
+    background-size: 100%;
   }
 
   .logo {
@@ -114,7 +114,8 @@ $less-outer-margin: 22px;
   .process {
     @include grid(5);
     height: 328px;
-    background-image: url('/images/research-process.png');
+    background-image: url('/images/research-process_3col@2x.png');
+    background-size: 100%;
   }
 
   .question {

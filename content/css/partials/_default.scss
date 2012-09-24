@@ -228,9 +228,11 @@ $theteam-height: $base-line-height * 12;
 }
 
 .aside .geungle-logo {
+  $logo-height: 74px;
   @include grid(3);
-  height: 76px;
+  height: $logo-height;
   background-image: url('/images/geungle-logo_3col.png');
+  padding-bottom: ($base-line-height * 3) - $logo-height;
 }
 
 

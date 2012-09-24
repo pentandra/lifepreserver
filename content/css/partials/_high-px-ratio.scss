@@ -5,7 +5,8 @@ device-pixel-ratio of 2+, such as iPhone 4. */
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
 
   .aside .geungle-logo {
-    background-image: url('/images/geungle-logo_3col@2x.png');
+    // Just use the normal image
+    background-image: url('/images/geungle-logo.png');
     background-size: 100%;
   }
 
@@ -59,13 +60,19 @@ device-pixel-ratio of 2+, such as iPhone 4. */
   // Retina for mobile
   @media (max-width: 767px) {
 
+    .geungle-logo {
+      // Just use the normal image
+      background-image: url('/images/geungle-logo.png');
+      background-size: 100%;
+    }
+
     .process {
       background-image: url('/images/research-process_3col@2x.png');
       background-size: 100%;
     }
  
     .zeugma {
-      // Just use the normal one
+      // Just use the normal image
       background-image: url('/images/zeugma.jpg?v2');
     }
 
