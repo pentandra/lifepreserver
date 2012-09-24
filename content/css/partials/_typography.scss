@@ -68,3 +68,6 @@
   margin-left: -3px;
 }
 
+.long {
+  @include hyphens(auto);
+}
