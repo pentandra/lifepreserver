@@ -4,6 +4,10 @@ device-pixel-ratio of 2+, such as iPhone 4. */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
 
+  .retina {
+    background-size: 100%;
+  }
+
   .aside .geungle-logo {
     // Just use the normal image
     background-image: url('/images/geungle-logo.png');
@@ -68,7 +72,7 @@ device-pixel-ratio of 2+, such as iPhone 4. */
 
     .process {
       background-image: url('/images/research-process_3col@2x.png');
-      background-size: 100%;
+      background-size: auto 100%;
     }
  
     .zeugma {
