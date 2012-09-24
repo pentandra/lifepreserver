@@ -98,6 +98,14 @@ $less-outer-margin: 22px;
     }
   }
 
+  [role="banner"] {
+    .menu {
+      margin-left: -$less-outer-margin;
+      margin-right: -$less-outer-margin;
+      padding: 0 $less-outer-margin;
+    }
+  }
+
   .contentinfo {
 
     .bd {
