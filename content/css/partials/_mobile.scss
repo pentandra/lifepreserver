@@ -207,7 +207,7 @@ $less-outer-margin: 34px;
   .zeugma {
     @include grid(3);
     height: 252px; //197px;
-    background-image: url('/images/zeugma_3col.jpg');
+    background-image: url('/images/zeugma_3col.jpg?v2');
   }
 
   .zeugma-collab {

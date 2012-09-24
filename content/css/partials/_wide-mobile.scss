@@ -127,7 +127,7 @@ $less-outer-margin: 22px;
   .zeugma {
     @include grid(5);
     height: 412px;
-    background-image: url('/images/zeugma.jpg');
+    background-image: url('/images/zeugma.jpg?v2');
     background-size: 100%;
   }
 }

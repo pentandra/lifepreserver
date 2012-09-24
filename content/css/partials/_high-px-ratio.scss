@@ -3,6 +3,78 @@ Overrides styles for devices with a
 device-pixel-ratio of 2+, such as iPhone 4. */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
-  .content {
+
+  .aside .geungle-logo {
+    background-image: url('/images/geungle-logo_3col@2x.png');
+  }
+
+  .logo { 
+    background-image: url('/images/pentandra-logo@2x.png');
+  }
+
+  .rev .logo, .grab .logo {
+    background-image: url('/images/pentandra-logo-reverse@2x.png');
+  }
+
+  .email {
+    background-image: url('/images/email@2x.png');
+  }
+
+  .fb {
+    background: url('/images/fb@2x.png');
+  }
+
+  .gplus {
+    background-image: url('/images/gplus-64.png');
+  }
+
+  .rev .gplus, .grab .gplus {
+    background-image: url('/images/gplus-white@2x.png');
+  }
+
+  .rss {
+    background-image: url('/images/rss@2x.png');
+  }
+
+  .twittr {
+    background-image: url('/images/twitter-32@2x.png?v2');
+  }
+
+  .rev .twittr, .grab .twittr {
+    background-image: url('/images/twitter@2x.png?v2');
+  }
+
+  .zeugma {
+    background-image: url('/images/zeugma.jpg@2x?v2');
+  }
+
+  // Retina for mobile
+  @media (max-width: 767px) {
+
+    .process {
+      background-image: url('/images/research-process_3col@2x.png');
+    }
+ 
+    .zeugma {
+      // Just use the normal one
+      background-image: url('/images/zeugma.jpg?v2');
+    }
+
+  }
+
+  // Retina for wide-mobile
+  @media (min-width: 480px) and (max-width: 767px) {
+    
+    .logo {
+      background-image: url('/images/pentandra-logo_436x58@2x.png');
+    }
+
+    .rev .logo, .grab .logo {
+      background-image: url('/images/pentandra-logo-reverse_436x58@2x.png');
+    }
+
+    .zeugma {
+      background-image: url('/images/zeugma@2x.jpg?v2');
+    }
   }
 }
