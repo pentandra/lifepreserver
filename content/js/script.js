@@ -132,6 +132,8 @@ Pentandra.Social = (function() {
 
 $(document).ready(function() {
 
+  $("#main img.retina").retina({ suffix: "@2x" });
+
   Pentandra.Kerning.init();
   Pentandra.Scrolling.init();
   Pentandra.Social.init('#share');
