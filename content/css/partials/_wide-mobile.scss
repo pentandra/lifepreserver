@@ -15,6 +15,28 @@ $less-outer-margin: 22px;
     padding: 0 $less-outer-margin;
   } 
 
+  .ext {
+    margin-left: -$less-outer-margin;
+    margin-right: -$less-outer-margin;
+    padding-left: $less-outer-margin;
+    padding-right: $less-outer-margin;
+  }
+
+  .banner {
+    margin-right: -$less-outer-margin;
+    padding-right: $less-outer-margin;
+    margin-left: -($less-gutter-width + $less-column-width);
+    padding-left: $less-gutter-width + $less-column-width;
+  }
+
+  .aside {
+
+    .banner {
+      margin-left: -$less-outer-margin;
+      padding-left: $less-outer-margin;
+    }
+  }
+
   .menu2 {
 
     ul li {
@@ -124,7 +146,7 @@ $less-outer-margin: 22px;
     @include grid(5);
     height: 328px;
     background-image: url('/images/research-process_3col@2x.png');
-    background-size: 100%;
+    background-size: auto 100%;
   }
 
   .question {

@@ -50,11 +50,6 @@ $less-outer-margin: 34px;
     .aside {
       float: none;
       margin-left: 0;
-
-      &.banner {
-        margin-right: -$less-outer-margin;
-        padding-right: $less-outer-margin;
-      }
     }
 
     .inner {
@@ -63,6 +58,13 @@ $less-outer-margin: 34px;
       @include box-sizing(border-box);
     }
 
+  }
+
+  .banner {
+    margin-right: -$less-outer-margin;
+    padding-right: $less-outer-margin;
+    margin-left: -($less-gutter-width + $less-column-width);
+    padding-left: $less-gutter-width + $less-column-width;
   }
 
   .aside {
