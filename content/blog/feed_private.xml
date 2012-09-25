@@ -5,6 +5,7 @@ author_name: Pentandra Research Solutions, Inc.
 author_uri: http://pentandra.com
 articles: publishing_articles
 limit: 10
+is_hidden: true
 ---
 
 <%= atom_feed %>
