@@ -30,7 +30,7 @@ Pentandra.Scrolling = (function() {
         previousPosition = $(window).scrollTop();
       },
       afterScroll: function(opts) {
-        location.hash = opts.scrollTarget;
+        location.hash = unescapeSelector(opts.scrollTarget);
       }
     });
   
@@ -66,7 +66,7 @@ Pentandra.Scrolling = (function() {
 
         if (document.getElementById(hash.substring(1))) {
           $.smoothScroll({
-            scrollTarget: hash
+            scrollTarget: escapeSelector(hash)
           });
         }
 
@@ -84,6 +84,14 @@ Pentandra.Scrolling = (function() {
 
       return false;
     });
+  }
+
+  function escapeSelector(str) {
+    return str.replace(/(:|\.)/g, '\\$1');
+  }
+
+  function unescapeSelector(str) {
+    return str.replace(/\\/g, '');
   }
 
   return {
