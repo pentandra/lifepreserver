@@ -72,15 +72,9 @@ module Nanoc::Helpers
       ranks
     end
 
-    # Override parent method to add a slash on the end of the href
-    # Not sure if there is a better way to do this?
-    def link_for_tag(tag, base_url)
-      %[<a href="#{h base_url}#{h tag}/" class="tag rev" rel="tag">#{h tag}</a>]
-    end
-
     # Same as link_for_tag, but does not include the 'rel' attribute.
     def link_for_tagcloud(tag, base_url)
-      %[<a href="#{h base_url}#{h tag}/" class="tag rev">#{h tag}</a>]
+      %[<a href="#{h base_url}#{h tag}/">#{h tag}</a>]
     end
 
     def items_with_tag(tag, items=nil)

@@ -30,7 +30,7 @@ module Nanoc::Filters
     
     # Creates a permalink for the given section id
     def permalink_for(section_id)
-      %[ <a class="permalink" rel="bookmark" href="##{section_id}" title="Permanent link to this section">&#182;</a>]
+      %[ <a class="permalink" rel="bookmark" href="##{section_id}" title="Permanent link to this section">&#167;</a>]
     end
 
   end

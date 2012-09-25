@@ -19,12 +19,12 @@ $less-outer-margin: 34px;
     letter-spacing: normal;
   }
 
-  blockquote, .bq { 
-    margin: 1em 0;
+  h3.flush {
+    line-height: 39px;
   }
 
-  dd {
-    margin-left: 20px;
+  blockquote, .bq { 
+    margin: 0 0 $base-line-height;
   }
 
 
@@ -50,17 +50,21 @@ $less-outer-margin: 34px;
     .aside {
       float: none;
       margin-left: 0;
-
-      &.banner {
-        margin-right: -$less-outer-margin;
-        padding-right: $less-outer-margin;
-      }
     }
 
     .inner {
       width: auto;
+      padding-right: $less-gutter-width / 2;
+      @include box-sizing(border-box);
     }
 
+  }
+
+  .banner {
+    margin-right: -$less-outer-margin;
+    padding-right: $less-outer-margin;
+    margin-left: -($less-gutter-width + $less-column-width);
+    padding-left: $less-gutter-width + $less-column-width;
   }
 
   .aside {
@@ -77,14 +81,8 @@ $less-outer-margin: 34px;
     }
   }
 
-  .bd, .aside {
-
-    &.fx {
-
-      .normal {
-        margin-top: 1em;
-      }
-    }
+  .item {
+    float: none;
   }
 
   .img img {
@@ -105,6 +103,10 @@ $less-outer-margin: 34px;
     display: block;
   }
 
+  .excerpt .pubdate {
+    padding-top: 0;
+  }
+
   // Grid classes
 
   .bl {
@@ -120,10 +122,6 @@ $less-outer-margin: 34px;
 
   .logo {
     @include grid(3);
-  }
-
-  .copyright {
-    float: left;
   }
 
   .main {
@@ -148,13 +146,17 @@ $less-outer-margin: 34px;
   }
 
   .theteam {
+    $theteam-height: $base-line-height * 7;
+    $theteam-image-height: 168px;
     @include grid(3);
-    height: 168px;
-    background-image: url('/images/team-252x168.jpg');
+    height: $theteam-image-height;
+    margin-top: $theteam-height - $theteam-image-height;
+    background-image: url('/images/team-252x336.jpg');
+    background-position: 0 0;
     position: static;
 
     &:hover {
-      background-image: url('/images/team-252x168-silly.jpg');
+      background-position: 0 #{-$theteam-image-height};
     }
 
   }
@@ -167,7 +169,7 @@ $less-outer-margin: 34px;
 
     .menu {
       float: none;
-      margin-top: $grid-height;
+      margin-top: $base-line-height * 2;
       background-color: $pentandra-brown;
       margin-left: -$less-outer-margin;
       margin-right: -$less-outer-margin;
@@ -179,18 +181,41 @@ $less-outer-margin: 34px;
       }
 
       .button a {
-        line-height: $grid-height;
+        line-height: $base-line-height * 2;
       }
     }
   }
+
+  .contentinfo {
+
+    .bd .aside {
+      width: auto;
+    }
+
+    .menu ul li {
+      $spacing: (252px - (26px + 12px + 32px + 26px)) / 8;
+      margin: 0 $spacing;
+
+      &:first-child {
+        margin-left: $spacing;
+      }
+    }
+
+    .excerpt h3 {
+      display: block;
+    }
+  }
+
 
   //
   // Background-image classes
   
   .geungle-logo {
+    $logo-height: 74px;
     @include grid(3);
-    height: 76px;
+    height: $logo-height;
     background-image: url('/images/geungle-logo_3col.png');
+    padding-bottom: ($base-line-height * 3) - $logo-height;
   }
 
   .process {
@@ -203,7 +228,7 @@ $less-outer-margin: 34px;
   .zeugma {
     @include grid(3);
     height: 252px; //197px;
-    background-image: url('/images/zeugma_3col.jpg');
+    background-image: url('/images/zeugma_3col.jpg?v2');
   }
 
   .zeugma-collab {

@@ -13,10 +13,6 @@ $less-outer-margin: 28px;
   // 
   // HTML elements
 
-  dd {
-    margin-left: 30px;
-  }
-
   .content {
     @include grid(8); 
     padding: 0 $less-outer-margin;
@@ -45,16 +41,8 @@ $less-outer-margin: 28px;
 
     .inner {
       width: auto;
-    }
-  }
-
-  .bd, .aside {
-
-    &.fx {
-
-      .normal.inner {
-        margin-top: 1em;
-      }
+      padding-right: $less-gutter-width / 2;
+      @include box-sizing(border-box);
     }
   }
 
@@ -86,6 +74,10 @@ $less-outer-margin: 28px;
       margin: 0 auto;
     }
 
+    .bd {
+      @include grid(4);
+    }
+
   }
 
   .static {
@@ -96,12 +88,18 @@ $less-outer-margin: 28px;
   //
   // Layout classes
   
-  $theteam-height: 228px;
+  $theteam-height: $base-line-height * 9;
+  $theteam-image-height: 229px;
 
   .theteam {
     @include grid(4);
-    height: $theteam-height;
+    height: $theteam-image-height;
+    margin-top: $theteam-height - $theteam-image-height;
     background-size: 100%;
+
+    &:hover {
+      background-position: 0 #{-$theteam-image-height};
+    }
   }
     
   .montage .bd {
@@ -118,6 +116,13 @@ $less-outer-margin: 28px;
 
   .process {
     margin-top: 0;
+  }
+
+  .question {
+
+    &:before {
+      left: 140px;
+    }
   }
 
   .zeugma {

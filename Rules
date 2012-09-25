@@ -73,6 +73,15 @@ preprocess do
     end
   end
 
+  def mark_unpublished_articles_as_hidden
+    articles.each do |article|
+      if article[:published].nil? || article[:published] == false
+        article[:is_hidden] = true
+      end
+    end
+  end
+
+  mark_unpublished_articles_as_hidden
   generate_article_excerpts
   generate_tag_pages
   generate_author_pages
@@ -109,6 +118,10 @@ compile '/js/*/' do
 end
 
 compile '/blog/feed_private/' do
+  filter :erb
+end
+
+compile '/sitemap/' do
   filter :erb
 end
 
@@ -153,7 +166,7 @@ compile '*' do
     
     layout 'default'
 
-    filter :rubypants
+    filter :rubypantsunicode
     filter :beautifier
   end
 end
@@ -189,6 +202,10 @@ end
 
 route '/blog/feed_private/' do
   item.identifier + 'index.xml'
+end
+
+route '/sitemap/' do
+  item.identifier.chop + '.xml'
 end
 
 route '/company/', :rep => :vcard do

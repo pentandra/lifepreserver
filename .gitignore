@@ -5,3 +5,4 @@ tmp
 nanoc-autocompile.log
 *.swp
 environment.rb
+*.log

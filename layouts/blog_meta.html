@@ -1,25 +1,25 @@
-<footer class="pop mod group blogmeta">
+<footer class="pop section blogmeta">
 
   <div class="bd">
     <div class="aside">
-      <nav class="mod">
+      <nav>
         <h2 class="big">Authors</h2>
         
         <ul>
-        <% authors(publishing_articles).each do |author| %>
+        <% authors(publishing_articles).sort.each do |author| %>
           <li><%= link_for_author(author, "/authors/") %></li>
         <% end %>
         </ul>
       </nav>
     </div>
 
-    <nav class="mod menu inner">
-      <h2 class="big">Tags A-Z</h2>
+    <nav class="menu inner">
+      <h2 class="big">Tags A<span class="ndash">--</span>Z</h2>
 
-      <div class="mini group">
-        <ul class="button">
+      <div class="group">
+        <ul class="tags">
         <% tag_set(publishing_articles).sort.each do |tag| %>
-          <li><%= link_for_tagcloud(tag, "/tags/") %></li> 
+          <li><%= link_for_tagcloud(tag, "/tags/") %>&nbsp;</li> 
         <% end %>
         </ul>
       </div>
@@ -27,11 +27,11 @@
   </div>
 
   <div class="aside">
-    <nav class="mod">
+    <nav>
       <h2 class="big">Archives</h2>
 
       <ul>
-        <li><%= link_to 'Recent Articles', '/blog/' %></li>
+        <li><%= link_to 'Most Recent', '/blog/' %></li>
       <% archive_years(publishing_articles).sort.reverse.each do |year| %>
         <li><%= link_for_archive(year, "/blog/") %></li>
       <% end %>

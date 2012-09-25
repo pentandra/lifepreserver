@@ -8,11 +8,10 @@ $special-font-family: unquote('FunctionCapsBook');
 
 // default typography
 $base-font-size: 18px;
-$base-line-height: 24px;
+$base-line-height: 26px;
 
-// grid configuration
-$grid-height: $base-line-height * 2;
-
+// Golden ratio
+$phi: (1 + sqrt(5))/2;
 
 //
 // colors
@@ -22,7 +21,13 @@ $pentandra-brown: #544233;
 $pentandra-white: #ffffff;
 $pentandra-red-shaded: #bb3131;
 
-$content-background: $pentandra-white;
+// secondary
+$pentandra-violet: #bca8fc;
+$pentandra-yellow: #f9fc31;
+$pentandra-cyan: #4edbfc;
+$pentandra-lime: #8bfc4e;
+$pentandra-mango: #fc804e;
+
 $page-background: $pentandra-white; // #f8f6f4;
 $footer-background: $pentandra-brown;
 $footer-font-color: $pentandra-white;
