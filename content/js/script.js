@@ -78,10 +78,19 @@ Pentandra.Scrolling = (function() {
 
   }
 
+  function setupScrollingToTop() {
+    $(".backtotop").click(function() {
+      $.smoothScroll(0);
+
+      return false;
+    });
+  }
+
   return {
 
-    init: function() {
-      setupScrollingFor('a');
+    init: function(elem) {
+      setupScrollingFor(elem);
+      setupScrollingToTop();
       scrollWhenTheHashChanges();
 
       this.trigger();
@@ -135,7 +144,7 @@ $(document).ready(function() {
   $("#main img.retina").retina({ suffix: "@2x" });
 
   Pentandra.Kerning.init();
-  Pentandra.Scrolling.init();
+  Pentandra.Scrolling.init("#main a");
   Pentandra.Social.init('#share');
 
   AccessifyHTML5();

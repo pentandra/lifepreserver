@@ -234,6 +234,8 @@ a.button, .tags a {
   color: $pentandra-white;
   background-color: $pentandra-brown;
 
+  cursor: pointer;
+
   &:hover, &:focus {
    background-color: $pentandra-red;
   }
