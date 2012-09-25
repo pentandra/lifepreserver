@@ -9,10 +9,33 @@ px      68    160    252    344    436    */
 $less-outer-margin: 22px;
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+
   .content {
     @include grid(5); 
     padding: 0 $less-outer-margin;
   } 
+
+  .ext {
+    margin-left: -$less-outer-margin;
+    margin-right: -$less-outer-margin;
+    padding-left: $less-outer-margin;
+    padding-right: $less-outer-margin;
+  }
+
+  .banner {
+    margin-right: -$less-outer-margin;
+    padding-right: $less-outer-margin;
+    margin-left: -($less-gutter-width + $less-column-width);
+    padding-left: $less-gutter-width + $less-column-width;
+  }
+
+  .aside {
+
+    .banner {
+      margin-left: -$less-outer-margin;
+      padding-left: $less-outer-margin;
+    }
+  }
 
   .menu2 {
 
@@ -54,23 +77,36 @@ $less-outer-margin: 22px;
     h1 {
       float: right;
       @include grid(3);
+      margin-top: 0;
     }
 
     p {
       float: left;
       @include grid(2);
       text-align: right;
-      margin-top: 3px;
+      margin-top: 5px;
     }
   }
 
   .theteam {
+    $theteam-height: $base-line-height * 12;
+    $theteam-image-height: 290px;
     @include grid(5);
-    height: 290px;
-    background-image: url('/images/team-436x290.jpg');
+    height: $theteam-image-height;
+    margin-top: $theteam-height - $theteam-image-height;
+    background-image: url('/images/team-436x580.jpg');
+    background-position: 0 0;
 
     &:hover {
-      background-image: url('/images/team-436x290-silly.jpg');
+      background-position: 0 #{-$theteam-image-height};
+    }
+  }
+
+  [role="banner"] {
+    .menu {
+      margin-left: -$less-outer-margin;
+      margin-right: -$less-outer-margin;
+      padding: 0 $less-outer-margin;
     }
   }
 
@@ -79,7 +115,16 @@ $less-outer-margin: 22px;
     .bd {
       
       .aside {
+        @include grid(2);
         float: right;
+      }
+
+      .menu ul li {
+        margin: 0 0 0 21px;
+
+        &:first-child {
+          margin-left: 0;
+        }
       }
 
       .inner {
@@ -95,8 +140,8 @@ $less-outer-margin: 22px;
   .geungle-logo {
     @include grid(5);
     height: 130px;
-    background-size: 100%;
     background-image: url('/images/geungle-logo.png');
+    background-size: 100%;
   }
 
   .logo {
@@ -112,7 +157,8 @@ $less-outer-margin: 22px;
   .process {
     @include grid(5);
     height: 328px;
-    background-image: url('/images/research-process.png');
+    background-image: url('/images/research-process_3col@2x.png');
+    background-size: auto 100%;
   }
 
   .question {
@@ -125,7 +171,7 @@ $less-outer-margin: 22px;
   .zeugma {
     @include grid(5);
     height: 412px;
-    background-image: url('/images/zeugma.jpg');
+    background-image: url('/images/zeugma.jpg?v2');
     background-size: 100%;
   }
 }

@@ -1,16 +1,19 @@
 <article class="group">
 
-  <div class="bd">
-    <header>
-      <h1 class="large"><%= @item[:title] %></h1>
-      <small class="up">
+  <header class="section">
+    <h1><%= @item[:title] %></h1>
+    <div class="group meta">
+      <div class="bd up">
         Written <time datetime="<%= @item[:created_at] %>" pubdate><%= @item[:created_at].strftime("%B %d, %Y") %></time> 
         by 
         <%= link_for_author( @item[:author_name], "/authors/") %>
-      </small>
-    </header>
+      </div>
+    </div>
+  </header>
 
-    <div class="post">
+  <div class="bd">
+
+    <div class="post section">
       <%= yield %>
     </div>
 
@@ -22,21 +25,23 @@
 
     <h2 class="visuallyhidden">Meta</h2>
 
-    <section>
-
-      <h3>The Author</h3>
+    <section class="section">
 
       <% 
        company = @items.find { |i| i.identifier == '/company/' } 
        author = company[:teammembers].find { |m| m[:first_name] + " " + m[:last_name] == @item[:author_name] }
       %>
 
+      <h3 class="big">The Author</h3>
+
       <figure id="author">
         <img class="photo" src="<%= image_path(author) %>" alt="Photo of <%= full_name(author) %>" />
-        <figcaption class="mod">
-          <div class="big"><%= full_name(author) %></div>
-          <div><%= author[:title] %></div>
-          <a href="/company/#<%= full_name(author).to_slug %>">More about <%= author[:first_name] %></a>
+        <figcaption class="small">
+          <div class="normal"><%= full_name(author) %></div>
+          <div class="small em"><%= author[:title] %></div>
+          <p>
+            <a href="/company/#<%= full_name(author).to_slug %>">More about <%= author[:first_name] %></a>
+          </p>
         </figcaption>
       </figure>
     
@@ -44,21 +49,21 @@
 
     <section class="grab banner section static">
 
-      <div class="mod pod">
+      <div class="fancy wrapper group pod">
         <h3 class="big">Share</h3>
         
-        <div class="group" id="share" data-url="<%= shorten(url_for(@item)) %>" data-title="share" data-text="<%= @item[:title] %>"></div>
+        <div class="section" id="share" data-url="<%= shorten(url_for(@item)) %>" data-title="share" data-text="<%= @item[:title] %>"></div>
         
       </div>
 
     </section>
 
-    <nav class="menu group mini">
+    <nav class="menu section banner">
       <h3 class="big">Tags</h3>
 
-      <ul class="button">
+      <ul class="tags">
         <% [*@item[:tags]].each do |tag| %>
-        <li><%= link_for_tag(tag, "/tags/") %></li>
+        <li><%= link_for_tag(tag, "/tags/") %>&nbsp;</li>
         <% end %>
       </ul>
     </nav>

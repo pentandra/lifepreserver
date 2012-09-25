@@ -9,28 +9,42 @@
 //
 // Default HTML Styles
 
-h1 {
-  @extend .huge; 
-}
-
-h2  {
-  @extend .large; 
-}
-
-h3 {
-  @extend .bigger;
-}
-
-h4 {
-  @extend .big; 
-}
-
-h5 {
-  @extend .small;
-}
-
 #{headings(1,3)} {
   text-transform: uppercase;
+}
+
+h1.large {
+  margin-top: $base-line-height;
+}
+
+h3.close {
+  line-height: 29px;
+}
+
+h3.flush {
+  line-height: 20px;
+  margin-bottom: 32px;
+}
+
+h4.small {
+  margin-bottom: $base-line-height * 0.25;
+}
+
+hgroup {
+  h3.flush {
+    margin-bottom: $base-line-height * 0.75;
+  }
+}
+
+.normal.flush {
+  $height: 13px;
+  line-height: $height;
+}
+
+.small.flush {
+  $height: 11px;
+  line-height: $height;
+  margin-bottom: $base-line-height - $height;
 }
 
 small {
@@ -42,6 +56,7 @@ body {
   font-family: $base-font-family,sans-serif;
   background: $page-background;
   color: $font-color;
+  text-rendering: optimizeLegibility;
 }
 
 a {
@@ -55,13 +70,18 @@ address {
   font-style: normal;
 }
 
+address, p {
+  margin-bottom: $base-line-height;
+}
+
 .bq { // blockquote
 
-  padding: $base-line-height / 2 $base-line-height;
+  padding: $base-line-height*1.5;
 
   blockquote { 
     margin: 0; 
   }
+
 }
 
 em, .em {
@@ -75,13 +95,26 @@ em, .em {
   }
 }
 
+ul {
+  list-style-type: square;
+}
+
+ol {
+  font-family: $special-font-family, serif;
+
+  p {
+    font-family: $base-font-family, sans-serif;
+  }
+}
+
+
 .bold {
   font-family: $bold-font-family, sans-serif;
   font-weight: normal;
   font-style: normal;
 }
 
-.special {
+.special, .oldstyle {
   font-family: $special-font-family, serif;
   font-weight: normal;
   font-style: normal;
@@ -91,8 +124,8 @@ em, .em {
   @extend .special;
 }
 
-.footnotes {
-  @extend .small;
+.footnotes [rel="reference"], sup a[rel="footnote"] {
+  text-decoration: none;
 }
 
 a.permalink {
@@ -115,8 +148,9 @@ a.permalink {
 }
 
 .pod {
-  padding-left: $less-gutter-width;
-  padding-right: $less-gutter-width;
+  padding-left: $less-gutter-width / 2;
+  padding-right: $less-gutter-width / 2;
+  @include box-sizing(border-box);
 }
 
 .mmod { //TODO fix
@@ -126,51 +160,19 @@ a.permalink {
 
 .section {
   @extend .group;
-  margin: $grid-height 0 $grid-height / 2;
+  margin: 0 0 $base-line-height;
 }
 
 .basic {
   @include border-radius($default-radius);
 }
 
-.mini {
-  @include border-radius($default-radius / 2);
-}
-
 .bd, .aside {
   @extend .group;
+}
 
-  // Move text up to the top of the container to line up with neighbors. 
-  // Algorithm: ($font-size - $line-height) / 2
-  &.fx {
-    .normal {
-      margin-top: -3px;
-    }
-
-    .small {
-      margin-top: -3px; // 2.5px;
-    }
-
-    .big {
-      margin-top: -3px; //-5px // Added based on visual experimentation (font kerning)
-    }
-
-    .bigger {
-      margin-top: -7px; // 3.5px;
-    }
-
-    .large {
-      margin-top: -1px; // 0.5px;
-    }
-
-    .huge {
-      margin-top: -8px;
-    }
-
-    .gigantic {
-      margin-top: -9px; // 4.5px;
-    }
-  }
+.loud {
+  padding: $base-line-height * 2 0;
 }
 
 
@@ -181,64 +183,133 @@ a.permalink {
 }
 
 .noted {
-  border-top: 1px solid $pentandra-brown;
+  $border-height: 1px;
+  border-top: $border-height solid $pentandra-brown;
+
+  h2 {
+    margin: $base-line-height - $border-height 0 $base-line-height * 2;
+  }
+
+  h2.bigger {
+    margin-bottom: $base-line-height / 2;
+  }
+
 }
 
 .pop {
-  border-top: 3px solid $pentandra-brown;
+  $border-height: 3px;
+  border-top: $border-height solid $pentandra-brown;
+
+  // header
+  .big {
+    $margin: $base-line-height * 0.75;
+    margin: $margin - $border-height 0 $margin;
+  }
 }
 
+.meta {
+  $border-height: 1px;
+  border-bottom: $border-height solid $pentandra-brown;
+  margin-bottom: 0 - $border-height;
+}
+
+
 .photo {
-  border: 11px solid $pentandra-brown;
+  $border-width: 11px;
+  $photo-width: 160px;
+
+  border: $border-width solid $pentandra-brown;
+  width: $photo-width;
+  margin-bottom: ($base-line-height * 7) - $photo-width;
+  @include box-sizing(border-box);
 }
 
 // Content classes
 
-a.button, .button a {
-  font-size: $base-font-size - 1;
-  line-height: $grid-height;
+a.button, .tags a {
+
   text-align: center;
-
-  @include border-radius($default-radius);
   @include pie;
-  display: block;
 
-  color: $pentandra-brown;
-  background-color: $pentandra-white;
+  color: $pentandra-white;
+  background-color: $pentandra-brown;
+
+  cursor: pointer;
 
   &:hover, &:focus {
    background-color: $pentandra-red;
-   color: $pentandra-white;
   }
 
   &:hover {
    text-decoration: none;
   }
+}
 
-  &.rev {
-    color: $pentandra-white;
-    background-color: $pentandra-brown;
-    
+a.button {
+  font-size: $base-font-size - 1;
+  line-height: $base-line-height * 2;
+  display: block;
+
+  @include border-radius($default-radius);
+}
+
+.tags {
+  $tag-height: 20px; //$base-line-height * 0.8;
+  $tag-space: 10px;
+  $hole-diameter: 4px;
+
+  li, a {
+
+    float: left;
+    position: relative;
+
+    height: $tag-height;
+    line-height: $tag-height;
+    font-size: 13px;
+  }
+
+  a {
+    padding: 0 $tag-space + $hole-diameter 0 $tag-space;
+    margin-right: $tag-space * 1.25;
+    @include border-left-radius($default-radius / 2);
+
     &:hover, &:focus {
-     background-color: $pentandra-red;
+      &:before {
+        border-color: transparent transparent transparent $pentandra-red;
+      }
     }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -$tag-space;
+      width: 0;
+      height: 0;
+      border-color: transparent transparent transparent $pentandra-brown;
+      border-style: solid;
+      border-width: $tag-space 0 $tag-space $tag-space;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: $hole-diameter * 2;
+      right: 0;
+      width: $hole-diameter;
+      height: $hole-diameter;
+      background: $pentandra-white;
+      @include border-radius(2px);
+    }
+  }
+
+  li {
+    margin: ($base-line-height - $tag-height) / 2 0;
   }
 }
 
-.mini a.button, .mini .button a {
-  @include border-radius($default-radius / 2);
-  line-height: $grid-height / 2;
-  font-size: 13px;
-}
-
-a.tag {
-  display: inline;
-  padding: 3px 7px;
-  margin-right: 4px;
-}
-
 .sp a {
-  margin-right: 4px;
+  margin-right: 6px;
 }
 
 .holder {
@@ -253,7 +324,7 @@ a.tag {
 }
 
 .menu {
-  ul li {
+  li {
     float: left;
   }
 }
@@ -268,13 +339,55 @@ a.tag {
     font-style: normal;
   }
 }
+
+.parenthesis {
+  position: relative;
+  font-size: 92%;
+}
+
+.tel .parenthesis {
+  top: -0.15em;
+}
+
+.ndash {
+  position: relative;
+  top: -0.1em;
+}
+
+.big .ndash {
+  margin: 0 -0.07em;
+}
     
 .up {
   text-transform: uppercase;
 }
 
+.low {
+  text-transform: lowercase;
+}
+
 //
 // Background blocks
+
+.excl {
+  color: $pentandra-red;
+}
+
+.rev, .grab {
+
+  a {
+    text-decoration: underline;
+
+    &:visited {
+      color: $pentandra-white;
+    }
+  }
+
+  .wrapper {
+    padding-top: $base-line-height;
+  }
+
+}
 
 .rev, .rev a {
   background-color: $pentandra-brown;
@@ -286,20 +399,7 @@ a.tag {
   color: $pentandra-white;
 }
 
-.excl {
-  color: $pentandra-red;
-}
-
-.rev a, .grab a {
-
-  text-decoration: underline;
-
-  &:visited {
-    color: $pentandra-white;
-  }
-}
-
-.rev a.button, .rev .button a {
+.rev a.button, .grab a.button {
 
   color: $pentandra-brown;
   background-color: $pentandra-white;
@@ -311,10 +411,21 @@ a.tag {
   }
 }
 
+.grab a.button {
+
+  &:hover, &:focus {
+    background-color: $pentandra-brown;
+  }
+}
+
 .shadow {
   @include single-box-shadow($pentandra-brown, 0, 0, 10px);
 }
 
+.wip {
+  color: $pentandra-white;
+  background-color: $pentandra-violet;
+}
 
 //
 // Grid classes
@@ -327,18 +438,36 @@ a.tag {
   padding-right: $less-gutter-width;
 }
 
+.expo {
+
+  height: $base-line-height * 5;
+
+  li {
+    padding-right: $less-gutter-width;
+  }
+
+  img {
+    @include grid(1);
+  }
+}
+
 //
 // Layout classes
 
 .content {
   @extend .group;
-  background-color: $content-background;
   margin: 0 auto;
+}
+
+// A typographic float. Use for images in a blog post.
+.float {
+  float: left;
 }
 
 [role="banner"] {
 
   background-color: $pentandra-white;
+  margin-top: $base-line-height * 2;
 
   h1 {
     margin: 0;
@@ -350,11 +479,18 @@ a.tag {
 
   .menu {
     float: right;
+  }
 
-    .button a {
-      font-size: $base-font-size;
-      line-height: 34px;
-      padding: 0 15px;
+  a.button {
+    color: $pentandra-brown;
+    background-color: $pentandra-white;
+    font-size: $base-font-size;
+    line-height: $base-line-height * 1.5;
+    padding: 0 15px;
+
+    &:hover {
+      background-color: $pentandra-red;
+      color: $pentandra-white;
     }
   }
 }
@@ -365,48 +501,86 @@ a.tag {
     text-decoration: none;
   }
 
-  .section {
-    margin-top: 33px; // Questionable
-  }
-
-  .content {
-    background-color: $pentandra-brown; // inherit; Doesn't work in IE7
-    padding-bottom: 84px; // From lessframework
-  }
-
-  .bd .aside {
-    @include grid(2);
-  }
-
-  aside {
+  article h3 {
     margin-bottom: $base-line-height;
   }
 
-  .menu ul li {
-    margin-left: 22px; // Can we come up with a generic centering thing?
+  .content {
+    // Introduce some syncopation
+    padding-top: $base-line-height * 1.5;
+    padding-bottom: $base-line-height * 3.5;
+  }
 
-    &:first-child {
-      margin-left: 0;
+}
+
+.main {
+  border-top: $base-line-height * 1.5 solid $pentandra-brown;
+}
+
+.motto {
+
+  p {
+    font-size: 20px;
+  }
+
+  h1 {
+
+    // Group the lines of the motto closer together
+    line-height: 45px;
+    margin-bottom: 21px; // Get back on the baseline
+
+    // Line up words along column
+    .char1 {
+      margin-left: -4px;
+    }
+
+    // Kerning
+    .word1 .char4, .word2 .char5 {
+      margin-left: 2px;
+    }
+
+    .word2 .char8 {
+      margin-left: 1px;
+    }
+
+    // Shape the heading
+    .word1 {
+      letter-spacing: 3px; // Draw attention to BREAKING
     }
   }
 }
 
 .teammember {
+  $photo-height: 160px;
+  $social-button-height: 32px;
+  $photo-margin: $base-line-height / 4;
+  $excess: ($base-line-height * 8) - ($photo-height + $social-button-height);
+
   .aside {
-    margin-bottom: $base-line-height;
+    margin-bottom: $excess - $photo-margin;
+  }
+
+  .photo {
+    margin-bottom: $photo-margin;
   }
 }
 
-.post .conclusion:after {
-  content: "\25C2";
-  padding-left: 10px;
-  position: relative;
+.post {
+
+  .img {
+    margin-bottom: $base-line-height;
+  }
+
+  .conclusion:after {
+    content: "\E000";
+    font-family: $special-font-family;
+    margin-left: 0.5em;
+    position: relative;
+  }
 }
 
-// This is kind of ugly and not reuseable
-.copyright {
-  cursor: pointer;
-  padding-top: $grid-height * 1.5;
+#vcard {
+  padding-bottom: 3px; // Get back onto baseline. Based on 186px² qrcode.
 }
 
 //
@@ -424,12 +598,9 @@ a.tag {
 .sharrre { 
 
   .button {
-    float: left;
+    height: $base-line-height;
   }
 
-  .googleplus {
-    margin-right: 10px;
-  }
 }
 
 //

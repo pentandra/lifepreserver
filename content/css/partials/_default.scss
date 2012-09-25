@@ -21,52 +21,6 @@ $less-outer-margin: 48px;
   padding: 0 $less-outer-margin;
 }
 
-.ext {
-  margin-left: -$less-outer-margin;
-  margin-right: -$less-outer-margin;
-  padding-left: $less-outer-margin;
-  padding-right: $less-outer-margin;
-}
-
-.bd {
-  @include grid(7);
-  float: right;
-
-  .aside {
-    float: right;
-    margin-left: $less-gutter-width;
-
-    &.banner {
-      margin-right: -$less-outer-margin;
-      padding-right: $less-outer-margin;
-      @include border-left-radius($default-radius);
-      @include pie;
-
-      .pod {
-        border-right: 2px $pentandra-white dashed;
-      }
-    }
-
-
-  }
-  
-  .inner {
-    @include grid(4);
-  }
-
-}
-
-.menu3 {
-  ul li {
-    @include grid(3);
-    margin-right: 70px;
-
-    &.last {
-      margin-right: 0;
-    }
-  }
-}
-
 .aside {
   @include grid(3);
   float: left;
@@ -77,15 +31,91 @@ $less-outer-margin: 48px;
   }
 
   .banner {
-    margin-right: $less-gutter-width;
+    margin-right: $less-column-width;
+    padding-right: 0;
     margin-left: -$less-outer-margin;
     padding-left: $less-outer-margin;
     @include border-right-radius($default-radius);
-    @include pie;
+    @include border-left-radius(0);
 
-    .pod {
-      border-left: 2px $pentandra-white dashed;
+    .fancy {
+      $border-width: 2px;
+
+      border-left: $border-width $pentandra-white dashed;
+      margin-left: -#{$border-width};
+      border-right: none;
+      margin-right: 0;
+
+      // Overrides .pod for more padding next to the border
+      padding-left: $less-gutter-width;
     }
+  }
+
+}
+
+.banner {
+  margin-right: -$less-outer-margin;
+  padding-right: $less-outer-margin;
+  margin-left: -($less-gutter-width + $less-column-width);
+  padding-left: $less-gutter-width + $less-column-width;
+  @include border-left-radius($default-radius);
+  @include pie;
+
+  .fancy {
+    $border-width: 2px;
+
+    border-right: $border-width $pentandra-white dashed;
+    margin-right: -#{$border-width};
+  }
+}
+
+.bd {
+  @include grid(7);
+  float: right;
+  
+  .aside {
+    margin-left: $less-gutter-width;
+    float: right;
+
+    &.pod {
+      padding-left: 0;
+    }
+  }
+
+  .other {
+    margin-right: $less-gutter-width;
+    float: left;
+    @include grid(3);
+  }
+    
+  .inner {
+    @include grid(4);
+  }
+
+}
+
+.ext {
+  margin-left: -$less-outer-margin;
+  margin-right: -$less-outer-margin;
+  padding-left: $less-outer-margin;
+  padding-right: $less-outer-margin;
+}
+
+.menu3 {
+  li {
+    @include grid(3);
+    margin-right: 70px;
+
+    &.last {
+      margin-right: 0;
+    }
+  }
+}
+
+.bd .menu3 {
+  li {
+    @include grid(2);
+    margin-right: $less-gutter-width;
   }
 }
 
@@ -98,6 +128,10 @@ $less-outer-margin: 48px;
 
 .bl {
   @include grid(5);
+
+  h3, .h3.flush {
+    margin-bottom: $base-line-height / 2;
+  }
 
   &.ock {
     margin-left: $less-gutter-width;
@@ -117,8 +151,19 @@ $less-outer-margin: 48px;
 //
 // Layout classes
 
-.main {
-  border-top: 33px solid $pentandra-brown;
+.excerpt {
+
+  // Line up the published date with the article title horizontally
+  .pubdate {
+    $offset: 2px;
+
+    padding-top: $base-line-height - $offset;
+    margin-bottom: $base-line-height / 2 + $offset;
+  
+    .big {
+      line-height: $base-line-height * 1.5;
+    }
+  }
 }
 
 .montage {
@@ -133,23 +178,27 @@ $less-outer-margin: 48px;
   }
 }
 
-$theteam-height: 290px;
+$theteam-height: $base-line-height * 12;
 
 .teamintro {
   @include grid(4);
-  min-height: $theteam-height; // Having trouble in IE7 with container smaller than image
+  min-height: $theteam-height;
+  padding: $base-line-height 0;
 }
 
 .theteam {
+  $theteam-image-height: 290px;
   @include grid(5);
-  height: $theteam-height;
-  background: transparent url('/images/team-436x290.jpg') no-repeat scroll right bottom;
+  height: $theteam-image-height;
+  margin-top: $theteam-height - $theteam-image-height;
+  background: transparent right bottom no-repeat url('/images/team-436x580.jpg');
+  background-position: 0 0;
   position: absolute;
   bottom: 0;
   right: 0;
 
   &:hover {
-    background-image: url('/images/team-436x290-silly.jpg');
+    background-position: 0 #{-$theteam-image-height};
   }
 }
 
@@ -159,95 +208,128 @@ $theteam-height: 290px;
 .email {
   height: 20px;
   width: 32px;
-  background: transparent url('/images/email.png') no-repeat center left;
+  background: transparent left center no-repeat url('/images/email.png');
 }
 
 .grab .email, .rev .email {
-  background: transparent url('/images/email-white.png') no-repeat center left;
+  background: transparent left center no-repeat url('/images/email-white.png');
 }
 
 .fb {
   height: $base-line-height;
-  width: 11px;
-  background: transparent url('/images/fb.png') no-repeat center center;
+  width: 12px;
+  background: transparent center center no-repeat url('/images/fb.png');
 }
 
 .geungle-logo {
   @include grid(7);
-  height: 186px;
-  background: transparent url('/images/geungle-logo.png') no-repeat scroll center top;
+  height: $base-line-height * 7;
+  background: transparent left top no-repeat url('/images/geungle-logo.png');
 }
+
+.aside .geungle-logo {
+  $logo-height: 74px;
+  @include grid(3);
+  height: $logo-height;
+  background-image: url('/images/geungle-logo_3col.png');
+  padding-bottom: ($base-line-height * 3) - $logo-height;
+}
+
 
 .gplus {
   height: 32px;
   width: 32px;
-  background: transparent url('/images/gplus-32.png') no-repeat center left;
+  background: transparent left center no-repeat url('/images/gplus-32.png');
 }
 
 .rev .gplus, .grab .gplus {
   height: $base-line-height;
-  width: 24px;
-  background: transparent url('/images/gplus-white.png') no-repeat center center;
+  width: $base-line-height;
+  background: transparent center center no-repeat url('/images/gplus-white.png');
 }
 
 .logo { 
   @include grid(3);
-  height: 34px;
-  background: transparent url('/images/pentandra-logo.png') no-repeat center center;
+  height: $base-line-height * 1.5;
+  background: transparent center center no-repeat url('/images/pentandra-logo.png');
 }
 
 .rev .logo, .grab .logo {
-  background: transparent url('/images/pentandra-logo-reverse.png') no-repeat left top;
+  background: transparent left top no-repeat url('/images/pentandra-logo-reverse.png');
 }
 
 .process {
   @include grid(4);
-  height: 328px;
-  background: $pentandra-white url('/images/research-process.png') no-repeat center center;
-  margin-top: -#{$grid-height};
+  height: $base-line-height * 12;
+  background: $pentandra-white center center no-repeat url('/images/research-process.png');
+  margin-top: -#{$base-line-height};
 }
 
 .question {
+  $height: $base-line-height * 8;
 
-  height: 345px;
+  height: $height + $base-line-height;
   position: relative;
 
   &:before {
     content: "?";
-    font-size: 385px;
-    line-height: 345px;
+    font-size: 275px;
+    line-height: $height;
     position: absolute;
     left: 40px;
     top: 3px;
   }
 }
 
+// #fig:proof img
+#fig\3A proof img {
+  margin-bottom: $base-line-height / 2;
+}
+
+#fig\3A io img {
+  margin-bottom: $base-line-height * 0.75;
+}
+
+#fig\3A journey img {
+  $image-height: 372px;
+  height: $image-height;
+  width: 204px;
+  margin-bottom: ($base-line-height * 15) - $image-height;
+}
+
+#fig\3A phases img {
+  margin-bottom: $base-line-height * 0.25;
+}
+
+#fig\3A processtree img {
+  margin-bottom: ($base-line-height * 9) - 217px;
+}
+
 .rss {
   height: $base-line-height;
-  width: 24px;
-  background: transparent url('/images/rss.png') no-repeat center center;
+  width: $base-line-height;
+  background: transparent center center no-repeat url('/images/rss.png');
 }
 
 .twittr {
   height: 32px;
   width: 32px;
-  background: transparent url('/images/twitter-32.png') no-repeat center left;
+  background: transparent left center no-repeat  url('/images/twitter-32.png?v2');
 }
 
 .rev .twittr, .grab .twittr {
   height: $base-line-height;
-  width: 35px;
-  background: transparent url('/images/twitter.png') no-repeat center center;
+  background: transparent center center no-repeat url('/images/twitter.png?v2');
 }
 
 .zeugma-collab {
-  margin-top: -31px;
+  margin-top: -14px;
 }
 
 .zeugma {
   @include grid(6);
-  height: 412px;
-  background: transparent url('/images/zeugma.jpg') no-repeat scroll left center;
+  height: $base-line-height * 16;
+  background: transparent right center no-repeat url('/images/zeugma.jpg?v2');
 }
 
 //
@@ -255,6 +337,22 @@ $theteam-height: 290px;
 //
 
 .contentinfo {
+
+  .bd .aside {
+    @include grid(2);
+  }
+
+  .menu ul li {
+    margin-left: 21px; // Can we come up with a generic centering thing?
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  .excerpt h3 {
+    display: inline;
+  }
 
   .inner {
     @include grid(5);
