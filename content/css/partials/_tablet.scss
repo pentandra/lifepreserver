@@ -88,12 +88,18 @@ $less-outer-margin: 28px;
   //
   // Layout classes
   
-  $theteam-height: 228px;
+  $theteam-height: $base-line-height * 9;
+  $theteam-image-height: 229px;
 
   .theteam {
     @include grid(4);
-    height: $theteam-height;
+    height: $theteam-image-height;
+    margin-top: $theteam-height - $theteam-image-height;
     background-size: 100%;
+
+    &:hover {
+      background-position: 0 #{-$theteam-image-height};
+    }
   }
     
   .montage .bd {

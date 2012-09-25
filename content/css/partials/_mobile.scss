@@ -146,13 +146,17 @@ $less-outer-margin: 34px;
   }
 
   .theteam {
+    $theteam-height: $base-line-height * 7;
+    $theteam-image-height: 168px;
     @include grid(3);
-    height: 168px;
-    background-image: url('/images/team-252x168.jpg');
+    height: $theteam-image-height;
+    margin-top: $theteam-height - $theteam-image-height;
+    background-image: url('/images/team-252x336.jpg');
+    background-position: 0 0;
     position: static;
 
     &:hover {
-      background-image: url('/images/team-252x168-silly.jpg');
+      background-position: 0 #{-$theteam-image-height};
     }
 
   }
