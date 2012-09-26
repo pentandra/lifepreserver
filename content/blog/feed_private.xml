@@ -5,6 +5,9 @@ author_name: Pentandra Research Solutions, Inc.
 author_uri: http://pentandra.com
 articles: publishing_articles
 limit: 10
+is_hidden: true
 ---
 
-<%= atom_feed %>
+<%= atom_feed :content_proc => lambda { |a| absolutify a, a.compiled_content(:snapshot => :pre) }, :excerpt_proc => lambda { |a| absolutify a, a[:excerpt] } %>
+  
+      
