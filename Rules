@@ -111,6 +111,13 @@ compile '/static/*/' do
   # don't compile
 end
 
+compile '/js/search-data/' do
+  filter :erb
+  if $use_minified_js then
+    filter :uglify_js
+  end
+end
+
 compile '/js/*/' do
   if $use_minified_js then
     filter :uglify_js

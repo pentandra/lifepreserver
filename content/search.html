@@ -1,0 +1,43 @@
+---
+title: Search
+---
+
+<% content_for :javascripts do %>
+<script src="/js/search-data.js"></script>
+<script src="/js/libs/purl.js"></script>
+<script>
+  $(function() {
+    if ($.url().param("q")) {
+      var query = $.url().param("q").replace("+", " ");
+      $("input#q").attr('value', query);
+      search(query, displayResults);
+    }
+
+    $("input#q").keyup(function() {
+      search(this.value, displayResults);
+    });
+  });
+
+  function displayResults(items) {
+    if (items.length > 0) {
+      var html = "";
+      for (var i = 0; i < items.length; i++) {
+        html += '<li><p><a href="'+items[i].url+'">'+items[i].title+'</a></p></li>';
+      }
+      $("ol#results").html(html);
+    } else {
+      $("ol#results").html('<li class="none"><p>Nothing found.</p></li>');
+    }
+  }
+</script>
+<% end %>
+
+<h1>Search</h1>
+
+<input type="search" placeholder="Search..." id="q" />
+
+<h2 class="big">Results</h2>
+
+<ol id="results">
+  <li class="none"><p>Please enter a search term.</p></li>
+</ol>
