@@ -603,6 +603,44 @@ a.button {
 
 }
 
+// 
+// Video embedding classes
+//
+
+// from http://amobil.se/2011/11/responsive-embeds/
+.embed-container {
+  position: relative;
+  height: 0;
+  margin-bottom: $base-line-height;
+
+  iframe, object, embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+// 16:9 aspect ratio
+.wideScreen {
+  padding-bottom: 56.25%;  
+}
+
+// 4:3 aspect ratio
+.fullScreen {
+  padding-bottom: 75%;
+}
+
+.chrome_25 {
+  padding-top: 25px;
+}
+
+.chrome_35 {
+  padding-top: 35px;
+}
+
 //
 // Comments overrides
 //
