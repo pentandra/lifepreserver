@@ -4,9 +4,16 @@
     <h1><%= @item[:title] %></h1>
     <div class="group meta">
       <div class="bd up">
-        Written <time datetime="<%= @item[:created_at] %>" pubdate><%= @item[:created_at].strftime("%B %d, %Y") %></time> 
-        by 
-        <%= link_for_author( @item[:author_name], "/authors/") %>
+        <div>
+          Written <time datetime="<%= @item[:created_at] %>" pubdate><%= @item[:created_at].strftime("%B %d, %Y") %></time> 
+          by 
+          <%= link_for_author( @item[:author_name], "/authors/") %>
+        </div>
+        <% if @item[:updated_at] > @item[:created_at] then %>
+        <div>
+          Last Updated <time datetime="<%= @item[:updated_at] %>"><%= @item[:updated_at].strftime("%B %d, %Y") %></time> 
+        </div>
+        <% end %>  
       </div>
     </div>
   </header>
