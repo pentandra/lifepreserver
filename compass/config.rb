@@ -1,7 +1,7 @@
 # Require any additional compass plugins here.
 
 http_path    = "/" 
-project_path = "." 
+project_path = File.expand_path(File.join(File.dirname(__FILE__), '..')) 
 css_dir      = "output/css" 
 sass_dir     = "content/css" 
 images_dir   = "output/images"
