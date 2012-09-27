@@ -138,14 +138,10 @@
 </script>
 <% end %>
 
-<% if @item[:kind] == "article" then %>
-<script src="/js/libs/jquery.sharrre-1.3.3.min.js"></script>
-<% end %>
+<%= content_for(@item, :javascripts) %>
 
-<!-- scripts concatenated and minified via build script-->
 <script src="/js/plugins.js?v=<%= @config[:version] %>"></script>
 <script src="/js/script.js?v=<%= @config[:version] %>"></script>
-<!-- end scripts-->
 
 <% if $add_google_analytics then %>
 <script>
