@@ -46,6 +46,34 @@ module Nanoc::Helpers
       article[:created_at].to_s.gsub(/-/, '<span class="ndash">--</span>')
     end
 
+    # Nanoc helper to display blog post summary and a link to the full post.
+    # Used inside <% sorted_articles.each do |item| %>...<% end %> block etc.
+    #
+    # From https://gist.github.com/3134795
+    # 
+    # @example Put the following in your layout:
+    # 
+    #    <%= article_summary(item,'Read the full article>>') %>
+    #    
+    # To customize the link text you can add 'read_more' attribute to your
+    # item metadata or pass the string to the helper, as above.
+    # 
+    # Add <!--MORE--> separator somewhere in your item to split it. Otherwise
+    # the full article text is displayed.
+    #
+    # @param [String] item The blog post
+    #
+    # @param [String] read_more_text The 'Read more...' text
+    #
+    # @param [String] separator Separates item summary from item body. Defaults to <!--MORE-->
+    # 
+    def article_summary(article, read_more_text="Read more...", separator="<!--MORE-->")
+      summary,body = article.compiled_content.split(separator)
+      return article.compiled_content unless body
+      link = link_to( (article[:read_more] || read_more_text), article.path, { :class => 'readmore', :title => "Read the full article" })
+      return summary+"<p class=\"readmore\">#{link}</p>"
+    end
+
   end
 
 end

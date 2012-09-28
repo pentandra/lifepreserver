@@ -15,6 +15,8 @@ a lot lately and how it relates to what we are trying to accomplish at
 Pentandra. Perhaps it is because we are "poor college students" trying to do
 amazing things, or maybe it is because we have 
 
+<!--MORE-->
+
 ## Horizon 2020
 
 OpenAIRE

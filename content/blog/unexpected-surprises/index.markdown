@@ -3,7 +3,7 @@ title: Unexpected Surprises
 kind: article
 author_name: Katie Chapman
 created_at: 2012-06-08
-updated_at: 2012-06-08
+updated_at: 2012-09-27
 published: true
 tags:
   - GrowAm
@@ -23,10 +23,13 @@ competition I received an interesting email. It reminded me of half a dozen
 scams where they tell you that you have won some great prize and all you need
 to do is share every piece of your personal and financial information in order
 to get it.  What I could see of the email without opening it was, "Dear Chris &
-Katie Chapman, One of your friends wants to give you a fin..."  I thought,
+Katie Chapman, One of your friends wants to give you a financial..."  I thought,
 "Yeah, sure!"  Then I realized it was my business email, where very little
 garbage email ends up (knock on wood). I almost deleted it as Spam, but then
 decided, "Eh, it can't hurt to at least read the thing." So I clicked it open.
+
+<!--MORE-->
+
 What I found was a message from an organization named [Giving Anonymously](http://givinganon.org/).
 It said that some friend wanted to give us an anonymous gift and all we needed
 to do was reply and confirm that we would accept the gift. Again, I thought to

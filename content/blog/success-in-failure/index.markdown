@@ -20,6 +20,8 @@ win any money, but we learned a lot and gained confidence in our ability to
 communicate what we are doing to business folks (especially when they're not
 research geeks).
 
+<!--MORE-->
+
 ![Katie at our half-table during the Grow America competition](growam2012-katie.jpg){: .aside .static .img }
 
 It was inspiring and enlightening to see other entrepreneurs going through the

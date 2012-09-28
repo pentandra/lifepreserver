@@ -20,21 +20,6 @@ Compass.add_project_configuration 'compass/config.rb'
 
 preprocess do
   
-  # Creates article excerpts if they are not given and runs them through
-  # kramdown
-  def generate_article_excerpts
-    publishing_articles.each do |p|
-      if not p[:excerpt] then
-        # Extract the excerpt from the body, if not already given explicitly.
-        p[:excerpt] = p.raw_content.split("\n\n")[0]
-      end
-
-      if p[:excerpt] then
-        p[:excerpt] = Nanoc::Filters::Kramdown.new.run(p[:excerpt])
-      end
-    end
-  end
-
   # Creates in-memory tag pages from partial: layouts/tag.html
   def generate_tag_pages
     tag_set(publishing_articles).each do |tag|
@@ -82,7 +67,6 @@ preprocess do
   end
 
   mark_unpublished_articles_as_hidden
-  generate_article_excerpts
   generate_tag_pages
   generate_author_pages
   generate_blog_archives
