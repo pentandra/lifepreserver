@@ -74,6 +74,10 @@ address, p {
   margin-bottom: $base-line-height;
 }
 
+li p {
+  margin-bottom: 0;
+}
+
 .bq { // blockquote
 
   padding: $base-line-height*1.5;
@@ -251,6 +255,14 @@ a.button {
   display: block;
 
   @include border-radius($default-radius);
+}
+
+.deep {
+  cursor: pointer;
+}
+
+[rel="reference"] {
+  padding-left: 0.5em;
 }
 
 .tags {
@@ -611,7 +623,6 @@ a.button {
 .embed-container {
   position: relative;
   height: 0;
-  margin-bottom: $base-line-height;
 
   iframe, object, embed {
     position: absolute;
