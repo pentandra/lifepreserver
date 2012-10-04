@@ -8,6 +8,6 @@ limit: 10
 is_hidden: true
 ---
 
-<%= atom_feed :content_proc => lambda { |a| absolutify a, a.compiled_content(:snapshot => :pre) }, :excerpt_proc => lambda { |a| absolutify a, a[:excerpt] } %>
+<%= atom_feed :content_proc => lambda { |a| absolutify a, a.compiled_content(:snapshot => :pre) }, :excerpt_proc => lambda { |a| absolutify a, article_summary(a) } %>
   
       

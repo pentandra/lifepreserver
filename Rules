@@ -20,25 +20,10 @@ Compass.add_project_configuration 'compass/config.rb'
 
 preprocess do
   
-  # Creates article excerpts if they are not given and runs them through
-  # kramdown
-  def generate_article_excerpts
-    publishing_articles.each do |p|
-      if not p[:excerpt] then
-        # Extract the excerpt from the body, if not already given explicitly.
-        p[:excerpt] = p.raw_content.split("\n\n")[0]
-      end
-
-      if p[:excerpt] then
-        p[:excerpt] = Nanoc3::Filters::Kramdown.new.run(p[:excerpt])
-      end
-    end
-  end
-
   # Creates in-memory tag pages from partial: layouts/tag.html
   def generate_tag_pages
     tag_set(publishing_articles).each do |tag|
-      items << Nanoc3::Item.new(
+      items << Nanoc::Item.new(
         "<%= render('tag',  :tag => '#{tag}') %>",
         { :title => "Tag: #{tag}" },
         "/tags/#{tag}/",
@@ -50,7 +35,7 @@ preprocess do
   # Creates in-memory author pages from partial: layouts/author.html
   def generate_author_pages
     authors(publishing_articles).each do |author|
-      items << Nanoc3::Item.new(
+      items << Nanoc::Item.new(
         "<%= render('author', :author => '#{author}') %>",
         { :title => "Articles by #{author}" },
         "/authors/#{author.to_slug}/",
@@ -64,7 +49,7 @@ preprocess do
   def generate_blog_archives
     years = publishing_articles.map { |a| a[:created_at].year }.uniq
     years.each do |year|
-      items << Nanoc3::Item.new(
+      items << Nanoc::Item.new(
         "<%= render('blog_archive', :year => #{year}) %>",
         { :title => "Articles from #{year}" },
         "/blog/#{year}/",
@@ -82,7 +67,6 @@ preprocess do
   end
 
   mark_unpublished_articles_as_hidden
-  generate_article_excerpts
   generate_tag_pages
   generate_author_pages
   generate_blog_archives
@@ -109,6 +93,13 @@ end
 
 compile '/static/*/' do
   # don't compile
+end
+
+compile '/js/search-data/' do
+  filter :erb
+  if $use_minified_js then
+    filter :uglify_js
+  end
 end
 
 compile '/js/*/' do
@@ -155,6 +146,7 @@ compile '*' do
     end
 
     if item[:kind] == 'article' && ($include_drafts or item[:published]) then
+      filter :absolutify_local_paths
       layout 'article'
     end
 

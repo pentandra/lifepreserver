@@ -23,6 +23,8 @@ reached this point. But here we are, on the verge of releasing our first
 product and offering an open-source research platform for doing amazing
 research and sharing it with the world. Life is amazing!
 
+<!--MORE-->
+
 For those that are not aware, I am still a college student. Or I suppose a more
 accurate statement would be that I am *again* a college student. Chris has been
 a student for the majority of the last decade and is still waiting to get that

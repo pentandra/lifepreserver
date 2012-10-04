@@ -73,6 +73,13 @@ module Nanoc::Helpers
     end
 
     # Same as link_for_tag, but does not include the 'rel' attribute.
+    #
+    # To conform with the HTML5 rel="tag" specification, the rel attribute
+    # should apply only to the current document. A tag cloud, by definition,
+    # does not apply to the current document only, but is a summary of many
+    # documents' tags.
+    #
+    # See http://microformats.org/wiki/rel-tag
     def link_for_tagcloud(tag, base_url)
       %[<a href="#{h base_url}#{h tag}/">#{h tag}</a>]
     end
