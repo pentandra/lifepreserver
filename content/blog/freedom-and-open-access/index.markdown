@@ -75,10 +75,10 @@ caddish proposal was made right before the holidays at the end of last year:
 the [Research Works Act](http://en.wikipedia.org/wiki/Research_Works_Act).[^RWA]
 This act would prohibit any federal agency from mandating open access without the
 consent of the publishers, in effect, giving publishers complete control to
-restrict public access to all publicly-funded research. Oh, and also telling
-the government to get out. This is complete troll-like behavior. The public has
-paid for this bridge and the publishers want to make a profit off of anyone who
-crosses.
+restrict public access to all publicly-funded research. Oh, not letting the
+government have a say in the research we paid for. This is complete troll-like
+behavior. The public has paid for this bridge and the publishers want to make a
+profit off of anyone who crosses, and they act as if they are entitled to do it. 
 
 C'mon, publishers, are you so comfortable with your presses that you require
 legislation to enforce your business model? There are
@@ -102,15 +102,14 @@ the equation is the [research data](/research/process/#p[DirGaf],h[DirGaf,1,2,Dc
 If the data is locked up in an inaccessible archive, it sure makes it hard to
 access!
 
-Why does it matter? It's that without the access, we can't use it.
+Why does it matter? Because without the access, we can't use it. And all the
+research that has used that data cannot be verified anymore. It also sets a
+dangerous precedent for thoughtless legislators to follow when looking for
+quick and easy budget cuts. 
 
-It also sets a dangerous precedent for thoughtless legislators to
-follow when looking for quick and easy budget cuts. (What can we do to lower
-fiscal expenses and promote open access?)
-
-However, not everything in the US is this bleak. A bill was passed in
-<span class="oldstyle">2008</span> that required that all NIH-funded research be
-submitted to [PubMed Central](http://www.ncbi.nlm.nih.gov/pmc/) to be made
+Not everything in the US is this bleak. A bill was passed in
+<span class="oldstyle">2008</span> that required that all NIH-funded research
+be submitted to [PubMed Central](http://www.ncbi.nlm.nih.gov/pmc/) to be made
 publicly available no later than <span class="oldstyle">12</span> months after
 the publication date. This is the main reason that many of the research papers
 in the biomedical and life sciences are publicly available in the US.
@@ -293,7 +292,7 @@ approach to software design?
 [^FRPAA]:  The Association of American Publishers was the 
     [primary opponent](http://en.wikipedia.org/wiki/Federal_Research_Public_Access_Act#Opposition)
     of the
-    <a href="http://thomas.loc.gov/cgi-bin/bdquery/D?d112:36:./temp/~bdRyfe:@@@L&summ2=m&|/home/LegislativeData.php|" rel="external"><abbr>FRPAA</abbr></a>
+    <a href="http://thomas.loc.gov/cgi-bin/query/z?c112:H.R.4004:" rel="external"><abbr>FRPAA</abbr></a>
     and the
     [primary proponent](http://en.wikipedia.org/wiki/Research_Works_Act#Reception)
     of the Research Works Act.
