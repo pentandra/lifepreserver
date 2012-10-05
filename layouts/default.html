@@ -11,7 +11,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 
   <% if @item[:has_video] then %>
-  <link rel="stylesheet" href="/js/media/mediaelementplayer.css" />  
+  <link rel="stylesheet" href="/js/mejs-2.9.4/mediaelementplayer.css" />  
   <% end %>
 
   <link rel="stylesheet" href="/css/style.css?v=<%= @config[:version] %>" />
@@ -128,12 +128,10 @@
 <script>window.jQuery || document.write('<script src="/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
 
 <% if @item[:has_video] then %>
-<script src="/js/media/mediaelement-and-player.min.js"></script>
+<script src="/js/mejs-2.9.4/mediaelement-and-player.min.js"></script>
 <script>
   $('document').ready(function() {
-    $('video').mediaelementplayer({
-      enableAutosize: false
-    });
+    $('video').mediaelementplayer();
   });
 </script>
 <% end %>
