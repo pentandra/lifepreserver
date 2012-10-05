@@ -8,6 +8,7 @@ published: false
 tags: 
   - Open Access
   - Opinionated
+has_video: true
 ---
  
 ![Open Access Logo](openaccess.png){: .aside .static .img }
@@ -131,9 +132,9 @@ that interests you:
 * [What countries promote Open Access right now?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=26m39s){: .deep .oa-promoters }
 
 <figure id="ruvr">
-  <div class="embed-container wideScreen chrome_25">
-    <div id="player"></div>
-  </div>
+    <video style="width:100%;height:100%;max-width:100%" id="player" preload="none" controls="controls">
+      <source type="video/youtube" src="http://www.youtube.com/watch?v=v31zpZ4woOI" />
+    </video>
   <figcaption class="small">
     <p> 
 
@@ -220,15 +221,54 @@ connected, then we are failing with OA.
 
 So where does genealogy fit in all this?
 
+In many research fields, researchers advance their careers through journal
+publication. Many of these journals are "held hostage" by some of the big
+publishers, including Elsevier, Wiley, and Springer. However, genealogists do
+not suffer with this blight. There are a few high-quality journals published in
+the field, including the [National Genealogical Society Quarterly](http://www.ngsgenealogy.org/cs/ngsq)
+and [The Genealogist](http://www.fasg.org/TheGenealogist.html). These journals
+are published by genealogical societies or through universities, and the
+peer-review process handled by the society. While the journals are highly
+regarded, journal publications are not the primary path for career advancement
+in this field. Most career advancement is done through private client research
+and word-of-mouth.
+
 Genealogy has traditionally been looked on as history's red-headed stepchild.
 This is due in part to the large number of amateur researchers, and part to
-misunderstandings as to what good genealogical research looks like. 
+misunderstandings as to what good genealogical research looks like. But it has
+become a very rigorous, multifaceted research field, the output of which other
+fields grow increasingly dependent on.
+
+We are starting with genealogy, first of all, because genealogists are looking
+for more efficient and robust ways to collaborate and disseminate their
+research. Their are fewer barriers for us to overcome because we don't have to
+compete with a deeply entrenched, highly expensive journal as the primary means
+for career advancement. We also view genealogy as a highly engaging research
+field. I mean who doesn't care about the past and how their ancestors were
+affected by it or how their ancestors affected the past? Our approach is not so
+much about family trees (there are plenty of companies that do that), but it
+could be called micro-history or generational history research (for more info
+about that see [Geungle](/products#geungle)).
 
 ## Freedom
 
+In reality this is all about freedom. In that past (as in before the Internet),
+these high-profile, prestigious journals were the best way to get access to the
+latest research. Nowadays there are faster and better ways to communicate and
+disseminate scholarly research, and the big journal publishers are actually
+getting in the way and slowing down the dissemination of research. There is no
+reason why a third party should stand at the gate of publicly-funded research,
+giving or denying access to whomsoever it wishes.  Any time there is someone
+arbitrarily regulating the free flow of information (or research, in this
+case), we as, researchers, entrepreneurs, and citizens will not have access to
+the information we need to make the best decisions in our jobs, lives, and
+nations.
+
+We, at Pentandra, are committed to designing research software from the ground
+up with Open Access in mind.
 
 As always, I would love to hear your thoughts. What do you think of our
-approach?
+approach to Open Access?
 {: .conclusion }
 
 ## Footnotes
@@ -238,8 +278,8 @@ approach?
     and then the public does not need to pay anything for access. Gold Open
     Access has an obvious scalable business model and publishers are still able
     to maintain some control over access, such as embargoes.
-    [More information](http://en.wikipedia.org/wiki/Open_access#Methods_of_financing_gold_open_access_publishing)
-    about methods of financing Open Access can be found on Wikipedia.
+    [More information about methods of financing Open Access](http://en.wikipedia.org/wiki/Open_access#Methods_of_financing_gold_open_access_publishing)
+    can be found on Wikipedia.
 
 [^FRPAA]:  The Association of American Publishers was the 
     [primary opponent](http://en.wikipedia.org/wiki/Federal_Research_Public_Access_Act#Opposition)
@@ -259,40 +299,34 @@ approach?
 [^RWA]: The [Research Works Act](http://thomas.loc.gov/cgi-bin/bdquery/z?d112:HR03699:@@@L&summ2=m&)
     would in effect repeal <abbr>NIH</abbr>'s 
     <a href="http://publicaccess.nih.gov/policy.htm">Public Access Policy</a>.
+    Richard Price, <abbr>CEO</abbr> of [academia.edu](http://academia.edu)
+    [wrote](http://blog.academia.edu/post/17986108041/the-dangerous-research-works-act)
+    about some of the particular arguments against this bill.
 
-*[OA]:
 *[PDF]: Portable Document Format
 *[FRPAA]: Federal Research Public Access Act
 *[NIH]: National Institutes of Health
 
 <% content_for :javascripts do %>
 <script>
-  var tag = document.createElement('script');
-  tag.src = "//www.youtube.com/iframe_api";
-  var firstScriptTag = document.getElementsByTagName('script')[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-  var player;
-  function onYouTubeIframeAPIReady() {
-    player = new YT.Player('player', {
-      videoId: 'v31zpZ4woOI',
-      playerVars: {
-        rel: 0,
-        origin: "<%= @site.config[:base_url] %>"
-      }
-    });
-  }
+(function() {
+
+  var ruvr = document.getElementById('ruvr');
+  var playerEl = document.getElementById('player');
+  var player = new MediaElementPlayer(playerEl, {
+    alwaysShowControls: true
+  });
 
   function showVideoAndSeekTo(seconds) {
-    var playerEl = document.getElementById('player');
 
-    if (withinViewport(playerEl)) {
-        player.seekTo(seconds, true);
+    if (withinViewport(ruvr)) {
+        player.setCurrentTime(seconds);
     } else {
       $.smoothScroll({
-        scrollTarget: '#player',
+        scrollTarget: '#ruvr',
         afterScroll: function() {
-          player.seekTo(seconds, true);
+          player.setCurrentTime(seconds);
         }
       });
     }
@@ -339,6 +373,8 @@ approach?
   $("a.oa-promoters").click(function(event) {
     return showVideoAndSeekTo(1599);
   });
+
+}());
 
 </script>
 <% end %>
