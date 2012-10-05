@@ -108,3 +108,11 @@ sleep. But the letdown after the adrenaline stops is brutal.
     
 
 *[NGS]: National Genealogical Society 2012 Conference
+
+<% content_for :javascripts do %>
+<script>
+  $('document').ready(function() {
+    $('video').mediaelementplayer();
+  });
+</script>
+<% end %>

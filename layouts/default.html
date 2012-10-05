@@ -129,11 +129,6 @@
 
 <% if @item[:has_video] then %>
 <script src="/js/mejs-2.9.4/mediaelement-and-player.min.js"></script>
-<script>
-  $('document').ready(function() {
-    $('video').mediaelementplayer();
-  });
-</script>
 <% end %>
 
 <%= content_for(@item, :javascripts) %>
