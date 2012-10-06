@@ -53,75 +53,82 @@ particularly convincing.
 When research is disseminated openly, the entry barrier to build upon that
 research is lowered significantly. Anyone can access the research, with or
 without an academic affiliation. Further research and innovation can then
-accelerate more quickly and with less expense.
+accelerate more quickly with less expense.
 
 ## Public Policy
 
-To give some context to our thoughts about open access, let me summarize what
-is being done about open access right now in governments around the world.
+Right now, the discussion about open access is centered around publicly-funded
+research. These public funds are distributed by the government to researchers
+in the form of grants, and because the government is distributing the money, it
+sets the rules. Ideally, those rules would be in the public interest. To give
+some context to our thoughts, let me summarize what is being done about open
+access right now by governments around the world.
 
-The [European Union](http://en.wikipedia.org/wiki/European_Union) seems to be
-the most progressive in the promotion of open access. They have started an
-initiative called [Horizon 2020](http://ec.europa.eu/research/horizon2020/index_en.cfm?pg=home&video=none)
-in which open access plays a big part. The UK has mandated that all
-publicly-funded research be offered open access by <span class="oldstyle">2014</span>.
+The European Union and the UK specifically seem to be the most progressive in
+the promotion of open access. The EU has started an initiative called
+[Horizon 2020](http://ec.europa.eu/research/horizon2020/index_en.cfm?pg=home&video=none)
+which mandates open access dissemination of publicly-funded research by
+<span class="oldstyle">2016</span>. The UK has mandated that all
+publicly-funded research will be offered openly by
+<span class="oldstyle">2014</span>.
 
 In the US the situation is a little different. Several attempts have been made
-to legislate open access, including the [Federal Research Public Access Act](http://en.wikipedia.org/wiki/Federal_Research_Public_Access_Act).
-The lobbying of the Association of American Publishers was primarily responsible
-for the fact that FRPAA did not become law.[^FRPAA] More recently, attempts have
-been made to promote *closed* access to publicly-funded research. The most
-caddish proposal was made right before the holidays at the end of last year:
-the [Research Works Act](http://en.wikipedia.org/wiki/Research_Works_Act).[^RWA]
-This act would prohibit any federal agency from mandating open access without the
-consent of the publishers, in effect, giving publishers complete control to
-restrict public access to all publicly-funded research. Oh, not letting the
-government have a say in the research we paid for. This is complete troll-like
-behavior. The public has paid for this bridge and the publishers want to make a
-profit off of anyone who crosses, and they act as if they are entitled to do it. 
+to legislate open access. In <span class="oldstyle">2008</span>, a bill was
+successfully passed that required that all NIH-funded research be submitted to
+[PubMed Central](http://www.ncbi.nlm.nih.gov/pmc/), an open access repository
+for the biomedical and life sciences. Following up with that win, the
+[Federal Research Public Access Act](http://en.wikipedia.org/wiki/Federal_Research_Public_Access_Act),
+which would mandate similar requirements across all the big governmental
+funding agencies, has been introduced to US Congress three times up to this
+point in time, but has not made it out of committee, primarily because of the 
+lobbying of the Association of American Publishers.[^AAP]
+
+More recently, attempts have been made to promote *closed* access to
+publicly-funded research.  The most caddish proposal was made right before the
+holidays at the end of last year: the [Research Works Act](http://en.wikipedia.org/wiki/Research_Works_Act).[^RWA]
+This act would prohibit any federal agency from mandating open access without
+the consent of the publishers, in effect, giving publishers complete control to
+restrict public access to all publicly-funded research. Oh, and not letting the
+government have a say in it. This is complete troll-like behavior. The public
+has paid for this bridge and the publishers want to make a profit off of anyone
+who crosses, and they act as if they are entitled to do it. 
 
 C'mon, publishers, are you so comfortable with your presses that you require
-legislation to enforce your business model? There are
+legislation to perpetuate your antiquated business model? There are
 [so many other options](http://gigaom.com/2012/03/26/dont-build-a-paywall-create-a-velvet-rope-instead/)
 for monetizing the research and publication industry! Come down from your
 this-is-how-it-has-always-been-done ivory towers and get with the program.
 
 Recently, the governor of Georgia announced that the Georgia State Archives
-would be closed to the public due to budget cuts. Georgia has also cut staff
-at the archives from <span class="oldstyle">53</span> employees down to 
-<span class="oldstyle">3</span> over the last <span class="oldstyle">10</span>
-years.[^GSA] Some say that this is the
+would be closed to the public due to budget cuts. They couldn't afford to pay
+the staff. Over the last <span class="oldstyle">10</span> years, Georgia has 
+cut staff at the archives from <span class="oldstyle">53</span> employees down
+to three.[^GSA]
+
+What has the Georgia State Archives to do with open access? Everything. While a
+lot of discussion on open access centers around research papers, a big part of
+the equation is the [research data](/research/process/#p[DirGaf],h[DirGaf,1,2,DciDce,1]).
+Without the data, there would be no papers! If the data is locked up in an
+inaccessible archive, it sure makes it hard to access! Why does access to the
+data matter? Because without the access, we can't use it. And all the research
+that has used that data cannot be verified anymore.
+
+Closing the archives also sets a dangerous precedent for thoughtless
+legislators to follow when looking for quick and easy budget cuts. Some say
+that we are entering the
 [beginning of the Dark Ages](http://www.nytimes.com/2012/09/27/us/budget-cuts-to-limit-public-access-to-georgia-archives.html?_r=0#p[WohFyo],h[WohFyo,1])
 for public records. (If you have not done so already, please
 [sign the petition](http://www.change.org/petitions/the-governor-of-ga-leave-our-state-archives-open-to-the-public)
 to save the Georgia State Archives!)
 
-What has the Georgia State Archives to do with open access? Everything. While a
-lot of discussion on open access centers around research papers, a big part of
-the equation is the [research data](/research/process/#p[DirGaf],h[DirGaf,1,2,DciDce,1]).
-If the data is locked up in an inaccessible archive, it sure makes it hard to
-access!
-
-Why does it matter? Because without the access, we can't use it. And all the
-research that has used that data cannot be verified anymore. It also sets a
-dangerous precedent for thoughtless legislators to follow when looking for
-quick and easy budget cuts. 
-
-Not everything in the US is this bleak. A bill was passed in
-<span class="oldstyle">2008</span> that required that all NIH-funded research
-be submitted to [PubMed Central](http://www.ncbi.nlm.nih.gov/pmc/) to be made
-publicly available no later than <span class="oldstyle">12</span> months after
-the publication date. This is the main reason that many of the research papers
-in the biomedical and life sciences are publicly available in the US.
-
 ## A Closer Look
 
 Open access is a complicated and highly-debated topic right now. Many people
-sit on both sides of the fence, because a researcher may publish, referee, and
-even sit on editorial boards. If you have a spare half-hour, this is a good
-round-table discussion on open access that gives a deeper look into some of the
-issues. If you don't have much time right now, feel free to pick a question or
-two below that interests you:
+sit on both sides of the fence. A researcher may publish, referee, and even sit
+on editorial boards, all at the same time! If you have a spare half-hour, this
+is a good round-table discussion on open access that gives a deeper look into
+some of the issues. If you don't have much time right now, feel free to pick a
+question or two below that interests you:
 
 * [Is open access a good idea?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=1m22s){: .deep .oa-goodidea }
 * [How much does open access cost?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=4m2s){: .deep .oa-cost }
@@ -257,26 +264,26 @@ about that see [Geungle](/products#geungle)).
 
 ## Freedom
 
-In reality this is all about freedom. In that past (as in before the Internet),
-these high-profile, prestigious journals were the best way to get access to the
-latest research. Nowadays there are faster and better ways to communicate and
-disseminate scholarly research, and the big journal publishers are actually
-getting in the way and slowing down the dissemination of research. There is no
-reason why a third party should stand at the gate of publicly-funded research,
-giving or denying access to whomsoever it wishes.  Any time there is someone
-arbitrarily regulating the free flow of information (or research, in this
-case), we as, researchers, entrepreneurs, and citizens will not have access to
-the information we need to make the best decisions in our jobs, lives, and
-nations.
+In that past (as in before the Internet), these high-profile, prestigious
+journals were the best way to get access to the latest research. Nowadays there
+are faster and better ways to communicate and disseminate scholarly research,
+and the big journal publishers are actually getting in the way and slowing down
+research dissemination. When it comes down to it, this is all about freedom.
+There is just no good reason anymore why a third party should stand at the gate
+of publicly-funded research, giving or denying access to whomsoever it wishes.
+Any time there is someone arbitrarily regulating the free flow of information
+(or research, in this case), we as, researchers, entrepreneurs, and citizens
+will not have access to the information we need to make the best decisions in
+our jobs, lives, and nations.
 
 We, at Pentandra, are committed to designing research software from the ground
 up with open access in mind. While there are some exciting advancements in
-research software, such as [Utopia Documents](http://utopiadocs.com/), we think
-that these improvements are transitional, and that the future of research lies
-in open, [domain-specific](/research/#p[WtrHwt],h[WtrHwt,2]) research systems.
+current research software, such as [Utopia Documents](http://utopiadocs.com/),
+we think that these improvements are transitional, and that the future of
+research lies in open, [domain-specific](/research/#p[WtrHwt],h[WtrHwt,2])
+research systems.
 
-As always, I would love to hear your thoughts. What do you think of our
-approach to software design?
+As always, I would love to hear your thoughts.
 {: .conclusion }
 
 ## Footnotes
@@ -289,12 +296,12 @@ approach to software design?
     [More information about methods of financing open access](http://en.wikipedia.org/wiki/Open_access#Methods_of_financing_gold_open_access_publishing)
     can be found on Wikipedia.
 
-[^FRPAA]:  The Association of American Publishers was the 
+[^AAP]: The Association of American Publishers was the 
     [primary opponent](http://en.wikipedia.org/wiki/Federal_Research_Public_Access_Act#Opposition)
     of the
     <a href="http://thomas.loc.gov/cgi-bin/query/z?c112:H.R.4004:" rel="external"><abbr>FRPAA</abbr></a>
     and the
-    [primary proponent](http://en.wikipedia.org/wiki/Research_Works_Act#Reception)
+    [proponent](http://en.wikipedia.org/wiki/Research_Works_Act#Reception)
     of the Research Works Act.
 
 [^GSA]: Starting November <span class="oldstyle">1</span> of this year,
@@ -311,12 +318,13 @@ approach to software design?
     wrote about [some of the particular arguments](http://blog.academia.edu/post/17986108041/the-dangerous-research-works-act)
     against this bill. As a reaction to this bill and to being fed up with the
     injustices of the current system, some researchers set up a website to
-    [boycott Elsevier](http://thecostofknowledge.com/), the primary promoter of
-    the bill.
+    [boycott Elsevier](http://thecostofknowledge.com/), one of the primary
+    promoters of the bill.
 
 *[PDF]: Portable Document Format
 *[FRPAA]: Federal Research Public Access Act
 *[NIH]: National Institutes of Health
+*[EU]: European Union
 
 <% content_for :javascripts do %>
 <script>
