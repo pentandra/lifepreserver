@@ -2,31 +2,23 @@
 title: Freedom and Open Access
 kind: article
 author_name: Chris Chapman
-created_at: 2012-09-26
-updated_at: 2012-09-26
+created_at: 2012-10-05
+updated_at: 2012-10-05
 published: false
 tags: 
   - Open Access
   - Opinionated
+  - Genealogy
+  - Essay
 has_video: true
 ---
  
 ![Open Access Logo](openaccess.png){: .aside .static .img }
 I have been thinking a lot about open access lately and how it relates to what
 we are trying to accomplish at Pentandra. I'm not going to go into the details
-of open access here, you can read about that
-[elsewhere](http://en.wikipedia.org/wiki/Open_access), but I do want to discuss
+of open access here---you can read about that
+[elsewhere](http://en.wikipedia.org/wiki/Open_access)---but I do want to discuss
 what it means to us and how that influences our approach to software design.
-
-In principle, we support the idea of open access. It just makes sense for the
-public to have open access to the research it paid for. Researchers like open
-access because it enables their research to have a broader dissemination and a
-subsequently larger impact. Pretty much, the only people that don't like it are
-the journal publishers.[^anti-OA] It kind of messes up their business model,
-which has been working great for them for the last <span
-class="oldstyle">100+</span> years.
-
-<!--MORE-->
 
 In general, academic research is being published the same way it has been
 published since the beginning of academic publishing (or at least since
@@ -35,18 +27,39 @@ around). In recent years, the venerable research paper has evolved from a
 simple paper publication to a complex digital publication as a PDF. This rather
 small change has made research papers much cheaper to distribute, making ideas
 like open access financially feasible. So when people talk about open access,
-they are talking about offering the results (research papers and sometimes the
-underlying data as well) of publicly-funded research to the public at no extra
-charge over the Internet. 
+they are talking about offering the results of publicly-funded research
+(research papers and sometimes the underlying data as well) to the public over
+the Internet for free. 
+
+<!--MORE-->
+
+We support the principles behind open access. It just makes sense for the
+public to be able to have open access to the research it paid for in the first
+place. Researchers like open access because it enables their research to have a
+broader dissemination and a subsequently larger impact. Pretty much, the only
+people that don't like it are the journal publishers.[^anti-OA] Open access
+kind of messes up their business model, which has been working great for them
+for the last <span class="oldstyle">100+</span> years.
 
 The problem is that publishers don't want these research papers distributed
 freely. They want them behind a paywall so they can continue to profit from
-their business model, which is based primarily on journal subscriptions. 
+their business model, which is based primarily on journal subscriptions. Making
+a profit is not bad---but they are in a position to charge whatever they want
+for journals and get away with it. And they do. Subscription costs go up 
+<span class="oldstyle">5--7<span class="symbol">%</span></span> each year as library budgets are shrinking.
+Yet these publishers have consistently netted over
+<span class="oldstyle">35<span class="symbol">%</span></span> per year, while all the refereeing, writing,
+and editing is done for free by researchers. Large academic libraries in the UK
+(and I'm sure it is a similar cost here in the states) end up paying over
+<span class="oldstyle"><span class="symbol">£</span>1,000,000</span> a year for
+research that was donated to these insatiable institutions, quite possibly by
+members of their own faculty!
 
-As a researcher, I don't want to shell out <span class="oldstyle">$8--30</span>
-per paper when I don't even know beforehand whether the paper will
-significantly help my research project. If I was not a student of an academic
-institution where I have access to some of the more popular journals, I
+Putting their business practices aside, as a researcher, I don't want to shell
+out <span class="oldstyle"><span class="symbol">$</span>8--30</span> per paper
+when I don't even know beforehand whether the paper will significantly help my
+research project. If I was not a student or faculty member of an academic
+institution, where I had access to some of the more popular journals, I
 probably would not risk the expense unless the paper's abstract was
 particularly convincing.
 
@@ -57,16 +70,16 @@ accelerate more quickly with less expense.
 
 ## Public Policy
 
-Right now, the discussion about open access is centered around publicly-funded
-research. These public funds are distributed by the government to researchers
-in the form of grants, and because the government is distributing the money, it
-sets the rules. Ideally, those rules would be in the public interest. To give
-some context to our thoughts, let me summarize what is being done about open
-access right now by governments around the world.
+So where does all this publicly-funded research come from? Well, the government
+collects taxes from the public. These public funds are distributed by the
+government to researchers in the form of grants, and because the government is
+distributing the money, it sets the rules. Ideally, those rules would be in the
+public interest. To give some context to our thoughts, let me summarize what is
+being done about open access right now by governments around the world.
 
-The European Union and the UK specifically seem to be the most progressive in
-the promotion of open access. The EU has started an initiative called
-[Horizon 2020](http://ec.europa.eu/research/horizon2020/index_en.cfm?pg=home&video=none)
+The European Union and the UK seem to be the most progressive in the promotion
+of open access. The EU has started an initiative called
+<a href="http://ec.europa.eu/research/horizon2020/index_en.cfm?pg=home&video=none" rel="external">Horizon <span class="oldstyle">2020</span></a>
 which mandates open access dissemination of publicly-funded research by
 <span class="oldstyle">2016</span>. The UK has mandated that all
 publicly-funded research will be offered openly by
@@ -80,8 +93,8 @@ for the biomedical and life sciences. Following up with that win, the
 [Federal Research Public Access Act](http://en.wikipedia.org/wiki/Federal_Research_Public_Access_Act),
 which would mandate similar requirements across all the big governmental
 funding agencies, has been introduced to US Congress three times up to this
-point in time, but has not made it out of committee, primarily because of the 
-lobbying of the Association of American Publishers.[^AAP]
+point, but has not made it out of committee, primarily because of the lobbying
+efforts of the Association of American Publishers.[^AAP]
 
 More recently, attempts have been made to promote *closed* access to
 publicly-funded research.  The most caddish proposal was made right before the
@@ -96,8 +109,9 @@ who crosses, and they act as if they are entitled to do it.
 C'mon, publishers, are you so comfortable with your presses that you require
 legislation to perpetuate your antiquated business model? There are
 [so many other options](http://gigaom.com/2012/03/26/dont-build-a-paywall-create-a-velvet-rope-instead/)
-for monetizing the research and publication industry! Come down from your
-this-is-how-it-has-always-been-done ivory towers and get with the program.
+for monetizing the research and publication industry in more valuable ways!
+Come down from your this-is-how-it-has-always-been-done ivory towers and get
+with the program.
 
 Recently, the governor of Georgia announced that the Georgia State Archives
 would be closed to the public due to budget cuts. They couldn't afford to pay
@@ -111,7 +125,8 @@ the equation is the [research data](/research/process/#p[DirGaf],h[DirGaf,1,2,Dc
 Without the data, there would be no papers! If the data is locked up in an
 inaccessible archive, it sure makes it hard to access! Why does access to the
 data matter? Because without the access, we can't use it. And all the research
-that has used that data cannot be verified anymore.
+that has used that data cannot be verified anymore, and future research cannot
+be built reliably on top of it.
 
 Closing the archives also sets a dangerous precedent for thoughtless
 legislators to follow when looking for quick and easy budget cuts. Some say
@@ -128,7 +143,7 @@ sit on both sides of the fence. A researcher may publish, referee, and even sit
 on editorial boards, all at the same time! If you have a spare half-hour, this
 is a good round-table discussion on open access that gives a deeper look into
 some of the issues. If you don't have much time right now, feel free to pick a
-question or two below that interests you:
+question or two below that interests you and hear what they have to say:
 
 * [Is open access a good idea?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=1m22s){: .deep .oa-goodidea }
 * [How much does open access cost?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=4m2s){: .deep .oa-cost }
@@ -167,17 +182,18 @@ approach? This could be summed up in two points:
 
 1. We believe that for many fields, the research paper is not a good fit for
    the dissemination of research. Research is an iterative process and an
-   iterative model for research publication is a much better solution to the
-   problem. This allows research conclusions to be disseminated little by
-   little, instead of in one monolithic publication.
+   iterative model for research dissemination is a much better solution to the
+   problem. This allows research conclusions to be published little by little,
+   instead of in one monolithic publication.
 
 2. While wikis are being used successfully for collaborative, iterative
-   research dissemination in fields such as math, for many fields this is not
+   research dissemination in fields such as math, for many fields a wiki is not
    enough. A [wiki](http://en.wikipedia.org/wiki/Wiki) deals primarily with
    textual revisions and does not provide the structure to follow a research
-   conclusion back to the underlying sources.  Research semantics get lost, and
-   [citations are just not enough](/research/#p[RsbOsr],h[RsbOsr,3]). We
-   believe we have a solution to that problem.
+   conclusion back through the research process to the underlying data the
+   conclusion is based upon. Research semantics get lost, and
+   [citations are just not enough](/research/#p[RsbOsr],h[RsbOsr,3]).
+   We believe we have a solution to that problem.
    
 ### An Iterative Model
 
@@ -197,23 +213,24 @@ enable collaboration in earlier phases of the research process. Things just get
 done faster this way. As research progresses, the output is presented in an
 incremental, natural way.
 
-With research, the pre-publication peer review makes more sense in a
-print paradigm, where a paper is printed once and can't be changed after
-publication. While we are familiar with this paradigm, and much of academia
-uses it, paper publications are just not a very good fit for the research
-process. It was just all that was available at the time.
+As practices in traditional research, the pre-publication peer review makes
+more sense in a print paradigm, where a paper is printed once and can't be
+changed after publication. While we are familiar with this paradigm, and much
+of academia uses it, paper publications are just not a very good fit for the
+research process. It was just all that was available at the time.
 
 If you are not convinced, take a look at the open-source software movement. I
 know that software is not research, but the underlying processes are very
 similar. A software developer's research output is, if you will, the source
-code. Using some sort of iterative methodology, the developer will build little
-pieces of functionality. The researcher "develops" conclusions in a similar
-manner. I will have more to say about this in a later article.
+code. Using some sort of iterative methodology, the developer will piece little
+bits of functionality together until, eventually, he will arrive at a
+sophisticated product. The researcher "develops" conclusions in a similar
+manner. I may have more to say about this in a later article.
 
 ### Beyond Wikis
 
 Research is messy. Sometimes it just doesn't fit very well in a four page
-research paper. There are some excellent examples of the use of wikis in
+research paper. While there are some excellent examples of the use of wikis in
 research dissemination, such as [Scholarpedia](http://www.scholarpedia.org/),
 wikis are still based on the research paper model. Collaboration occurs only
 during the writing of the paper, and not during the whole research process. 
@@ -221,12 +238,12 @@ during the writing of the paper, and not during the whole research process.
 Our approach is to build software around the
 [unit of research](/research/process/#unit). This gives research a natural
 structure that can be shared or developed in an understandable and
-collaborative way. This is an important distinction between true
-[research software](/research/#p[WtrHwt],h[WtrHwt,2,3]) and wikis. While it is
-possible to provide open access to a research paper and even to the underlying
-research data by placing it on the web, if we fail to show _how_ they are
-connected, then we are failing to give people access to the research and
-thought processes behind those research outputs. We need the whole research
+collaborative way. This is an important distinction between
+[true research software](/research/#p[WtrHwt],h[WtrHwt,2,3]) and wikis. While
+it is possible to provide open access to a research paper and even to the
+underlying research data by placing it on the web, if we fail to show _how_
+they are connected, then we are failing to give people access to the research
+and thought processes behind those research outputs. We need the whole research
 [context](/research#context) to really understand those research outputs.
 
 ## Why Genealogy?
@@ -264,35 +281,33 @@ about that see [Geungle](/products#geungle)).
 
 ## Freedom
 
-In that past (as in before the Internet), these high-profile, prestigious
-journals were the best way to get access to the latest research. Nowadays there
-are faster and better ways to communicate and disseminate scholarly research,
-and the big journal publishers are actually getting in the way and slowing down
+In that past (as in before the Internet), high-profile, prestigious journals
+were the best way to get access to the latest research. Nowadays there are
+faster and better ways to communicate and disseminate scholarly research, and
+the big journal publishers are actually getting in the way and slowing down
 research dissemination. When it comes down to it, this is all about freedom.
 There is just no good reason anymore why a third party should stand at the gate
 of publicly-funded research, giving or denying access to whomsoever it wishes.
 Any time there is someone arbitrarily regulating the free flow of information
-(or research, in this case), we as, researchers, entrepreneurs, and citizens
+(or research, in this case), we, as researchers, entrepreneurs, and citizens
 will not have access to the information we need to make the best decisions in
 our jobs, lives, and nations.
 
 We, at Pentandra, are committed to designing research software from the ground
 up with open access in mind. While there are some exciting advancements in
-current research software, such as [Utopia Documents](http://utopiadocs.com/),
-we think that these improvements are transitional, and that the future of
-research lies in open, [domain-specific](/research/#p[WtrHwt],h[WtrHwt,2])
-research systems.
+current research software,[^utopia] we think that these improvements are
+transitional, and that the future of research lies in open,
+[domain-specific](/research/#p[WtrHwt],h[WtrHwt,2]) research systems.
 
 As always, I would love to hear your thoughts.
 {: .conclusion }
 
 ## Footnotes
 
-[^anti-OA]: Some publishers do support open access. The most commonly supported is
-    Gold Open Access, where the author pays the fee to publish his research,
-    and then the public does not need to pay anything for access. Gold Open
-    Access has an obvious scalable business model and publishers are still able
-    to maintain some control over access, such as embargoes.
+[^anti-OA]: Some publishers do support open access, primarily the "gold"
+    variant, where the author pays the fee to publish his research. Then the
+    publishers feel that they were paid enough to make it worth their while
+    and the public does not need to pay anything for access.
     [More information about methods of financing open access](http://en.wikipedia.org/wiki/Open_access#Methods_of_financing_gold_open_access_publishing)
     can be found on Wikipedia.
 
@@ -313,18 +328,20 @@ As always, I would love to hear your thoughts.
 
 [^RWA]: The [Research Works Act](http://thomas.loc.gov/cgi-bin/bdquery/z?d112:HR03699:@@@L&summ2=m&)
     would in effect repeal <abbr>NIH</abbr>'s 
-    <a href="http://publicaccess.nih.gov/policy.htm">Public Access Policy</a>.
+    <a href="http://publicaccess.nih.gov/policy.htm">open access policy</a>.
     Richard Price, <abbr>CEO</abbr> of [academia.edu](http://academia.edu),
     wrote about [some of the particular arguments](http://blog.academia.edu/post/17986108041/the-dangerous-research-works-act)
     against this bill. As a reaction to this bill and to being fed up with the
-    injustices of the current system, some researchers set up a website to
-    [boycott Elsevier](http://thecostofknowledge.com/), one of the primary
-    promoters of the bill.
+    injustices of the current system in general, some researchers set up a
+    website to [boycott Elsevier](http://thecostofknowledge.com/), one of the
+    primary promoters of the bill.
+
+[^utopia]: Such as [Utopia Documents](http://utopiadocs.com/).
 
 *[PDF]: Portable Document Format
 *[FRPAA]: Federal Research Public Access Act
 *[NIH]: National Institutes of Health
-*[EU]: European Union
+*[EU]:
 
 <% content_for :javascripts do %>
 <script>
