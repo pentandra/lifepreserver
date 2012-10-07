@@ -358,7 +358,6 @@ As always, I would love to hear your thoughts.
   var ruvr = document.getElementById('ruvr');
   var playerEl = document.getElementById('player');
   var player = new MediaElementPlayer(playerEl, {
-    alwaysShowControls: true
   });
 
   function showVideoAndSeekTo(seconds) {
