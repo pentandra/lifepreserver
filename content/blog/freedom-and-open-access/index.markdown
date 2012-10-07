@@ -367,7 +367,8 @@ As always, I would love to hear your thoughts.
         player.setCurrentTime(seconds);
     } else {
       $.smoothScroll({
-        scrollTarget: '#ruvr',
+        scrollTarget: ruvr,
+        offset: $(ruvr).height() - $(window).height(),
         afterScroll: function() {
           player.setCurrentTime(seconds);
         }
