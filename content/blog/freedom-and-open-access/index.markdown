@@ -89,7 +89,7 @@ In the US the situation is a little different. Several attempts have been made
 to legislate open access. In <span class="oldstyle">2008</span>, a bill was
 successfully passed that required that all NIH-funded research be submitted to
 [PubMed Central](http://www.ncbi.nlm.nih.gov/pmc/), an open access repository
-for the biomedical and life sciences. Following up with that win, the
+for the biomedical and life sciences. Following up from that win,[^NIH] the
 [Federal Research Public Access Act](http://en.wikipedia.org/wiki/Federal_Research_Public_Access_Act),
 which would mandate similar requirements across all the big governmental
 funding agencies, has been introduced to US Congress three times up to this
@@ -284,7 +284,7 @@ about that see [Geungle](/products#geungle)).
 In that past (as in before the Internet), high-profile, prestigious journals
 were the best way to get access to the latest research. Nowadays there are
 faster and better ways to communicate and disseminate scholarly research, and
-the big journal publishers are actually getting in the way and slowing down
+the big journal publishers are actually getting in the way and bottlenecking 
 research dissemination. When it comes down to it, this is all about freedom.
 There is just no good reason anymore why a third party should stand at the gate
 of publicly-funded research, giving or denying access to whomsoever it wishes.
@@ -337,6 +337,13 @@ As always, I would love to hear your thoughts.
     primary promoters of the bill.
 
 [^utopia]: Such as [Utopia Documents](http://utopiadocs.com/).
+
+[^NIH]: While I do consider this a battle won, the policy only requires that
+    the paper be submitted to PubMed within
+    [twelve months of publication](http://publicaccess.nih.gov/policy.htm).
+    While it is great that the research will be available eventually, twelve
+    months is too long for most research organizations to wait for the latest
+    research, and they end up needing to subscribe to the journal anyways.
 
 *[PDF]: Portable Document Format
 *[FRPAA]: Federal Research Public Access Act
