@@ -58,8 +58,8 @@ similar cost here in the states) end up paying over
 for research that was donated to these insatiable institutions, quite possibly
 by members of their own faculty!
 
-C'mon, publishers, are you so comfortable with the status quo that you require
-legislation to perpetuate your antiquated business model? There are
+C'mon, publishers, are you so comfortable with your modus operandi that you
+require legislation to perpetuate your antiquated business model? There are
 [so many other options](http://gigaom.com/2012/03/26/dont-build-a-paywall-create-a-velvet-rope-instead/)
 for monetizing the research and publication industry in more valuable ways!
 Come down from your this-is-how-it-has-always-been-done ivory towers, stop
@@ -73,11 +73,6 @@ research project. If I was not a student or faculty member of an academic
 institution, where I had access to some of the more popular journals, I
 probably would not risk the expense unless the paper's abstract was
 particularly convincing.
-
-When research is disseminated openly, the entry barrier to build upon that
-research is lowered significantly. Anyone can access the research, with or
-without an academic affiliation. Further research and innovation can then
-accelerate more quickly and with less expense.
 
 ## Public Policy
 
@@ -131,11 +126,11 @@ down to three.[^GSA]
 What has the Georgia State Archives to do with open access? Everything. While a
 lot of discussion on open access centers around research papers, a big part of
 the equation is the [research data](/research/process/#p[DirGaf],h[DirGaf,1,2,DciDce,1]).
-Without the data, there would be no papers! If the data is locked up in an
-inaccessible archive, it sure makes it hard to access! Why does access to the
-data matter? Because without the access, we can't use it. And all the research
-that has used that data cannot be verified anymore, and future research cannot
-be built reliably on top of it.
+Without the data, there would be no conclusions and no papers! If the data is
+locked up in an inaccessible archive, it sure makes it hard to access. Why does
+access to the data matter? Because without the access, we can't use it. And all
+the research that has used that data cannot be verified anymore, and future
+research cannot be built reliably on top of it.
 
 Closing the archives also sets a dangerous precedent for thoughtless
 legislators to follow when looking for quick and easy budget cuts. Some say
@@ -183,6 +178,31 @@ question or two below that interests you and hear what they have to say:
     </p>
   </figcaption>
 </figure>
+
+## Beyond Fairness
+
+While the self-serving actions of the publishers may be reason enough to
+support open access, there is another, more meaningful reason besides
+"fairness." Open access opens up a huge potential for collaboration and moving
+scientific research forward.
+
+When research is disseminated openly, the entry barrier to build upon that
+research is lowered significantly. Anyone can access the research, with or
+without an academic affiliation. Further research and innovation can then
+accelerate more quickly and with less expense. Having access to research across
+domains will give more depth and [context](/research#context) to future
+research output. Text mining can accelerate contextual understanding, leading
+to surprising cross-discipline breakthroughs and collaboration.
+
+From an economics perspective, open access creates value. Nobody really knows
+how that value will be
+[captured](http://www.edge.org/conversation/-39the-clothesline-paradox-39-) in
+the future. Each research paper is just sitting there, on the Ether, ready to
+be used in some novel, unforeseen way to make our world a better place.
+Open-source software has created enormous value as developers have taken chunks
+of software functionality and put them together in new and innovative ways.
+Open-access research, or even better, [open research](/open#research), can work
+the same way.
 
 ## Our Approach
 
