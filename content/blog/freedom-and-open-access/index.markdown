@@ -77,7 +77,7 @@ particularly convincing.
 When research is disseminated openly, the entry barrier to build upon that
 research is lowered significantly. Anyone can access the research, with or
 without an academic affiliation. Further research and innovation can then
-accelerate more quickly with less expense.
+accelerate more quickly and with less expense.
 
 ## Public Policy
 
@@ -88,13 +88,14 @@ distributing the money, it sets the rules. Ideally, those rules would be in the
 public interest. To give some context to our thoughts, let me summarize what is
 being done about open access right now by governments around the world.
 
-The European Union and the UK seem to be the most progressive in the promotion
-of open access. The EU has started an initiative called
-<a href="http://ec.europa.eu/research/horizon2020/index_en.cfm?pg=home&video=none" rel="external">Horizon <span class="oldstyle">2020</span></a>
-which mandates open access dissemination of publicly-funded research by
-<span class="oldstyle">2016</span>. The UK has mandated that all
-publicly-funded research will be offered openly by
-<span class="oldstyle">2014</span>.
+The UK and the European Union seem to be the most progressive in the promotion
+of open access. The UK has pioneered efforts to legislate open access, having
+mandated that all publicly-funded research will be offered openly by
+<span class="oldstyle">2014</span>. Following their footsteps, the European
+Commission has mandated open access dissemination of all research paid for by
+its latest research initiative, named
+<a href="http://ec.europa.eu/research/horizon2020/index_en.cfm?pg=home&video=none" rel="external">Horizon <span class="oldstyle">2020</span></a>.
+It is hoped that other EU member states will follow suit.[^EU-OA]
 
 In the US the situation is a little different. Several attempts have been made
 to legislate open access. In <span class="oldstyle">2008</span>, a bill was
@@ -106,6 +107,10 @@ which would mandate similar requirements across all the big governmental
 funding agencies, has been introduced to US Congress three times up to this
 point, but has not made it out of committee, primarily because of the lobbying
 efforts of the Association of American Publishers.[^AAP]
+The [White House was petitioned](https://petitions.whitehouse.gov/petition/require-free-access-over-internet-scientific-journal-articles-arising-taxpayer-funded-research/wDX82FLQ)
+in May of this year to require open access to taxpayer-funded research,
+effectually proposing the same thing as FRPAA. As of today, the White House has
+yet to respond.
 
 More recently, attempts have been made to promote *closed* access to
 publicly-funded research.  The most caddish proposal was made right before the
@@ -357,6 +362,14 @@ As always, I would love to hear your thoughts.
     [Listen](http://www.youtube.com/watch?v=v31zpZ4woOI&t=13m35s){: .oa-value }
     to the discussion about the value that publishers currently add to the
     research dissemination process.
+
+[^EU-OA]: The announcement of the mandate from the European Commission came
+    only a day after the UK announced their new open access policy. The
+    commission
+    [hopes](http://www.nature.com/news/europe-joins-uk-open-access-bid-1.11022)
+    that open access publishing by member states will reach 
+    <span class="oldstyle">60<span class="symbol">%</span></span> by 
+    <span class="oldstyle">2016</span>.
 
 *[PDF]: Portable Document Format
 *[FRPAA]: Federal Research Public Access Act
