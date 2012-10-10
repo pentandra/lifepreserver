@@ -155,3 +155,11 @@ changefreq: monthly
   <a class="section aside button" href="/open/business/">How Do You <b>Want to Help?</b></a>
 
 </section>
+
+<% content_for :javascripts do %>
+<script>
+  $('document').ready(function() {
+    $('video').mediaelementplayer();
+  });
+</script>
+<% end %>
