@@ -257,10 +257,6 @@ a.button {
   @include border-radius($default-radius);
 }
 
-.deep {
-  cursor: pointer;
-}
-
 [rel="reference"] {
   padding-left: 0.5em;
 }

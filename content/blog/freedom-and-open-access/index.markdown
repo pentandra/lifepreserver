@@ -29,7 +29,7 @@ small change has made research papers much cheaper to distribute, making ideas
 like open access financially feasible. So when people talk about open access,
 they are talking about offering the results of publicly-funded research
 (research papers and sometimes the underlying data as well) to the public over
-the Internet for free. 
+the Internet for free.
 
 <!--MORE-->
 
@@ -38,22 +38,33 @@ public to be able to have open access to the research it paid for in the first
 place. Researchers like open access because it enables their research to have a
 broader dissemination and a subsequently larger impact. Pretty much, the only
 people that don't like it are the journal publishers.[^anti-OA] Open access
-kind of messes up their business model, which has been working great for them
-for the last <span class="oldstyle">100+</span> years.
+effectively flips their business model upside down.
 
 The problem is that publishers don't want these research papers distributed
 freely. They want them behind a paywall so they can continue to profit from
-their business model, which is based primarily on journal subscriptions. Making
-a profit is not bad---but they are in a position to charge whatever they want
-for journals and get away with it. And they do. Subscription costs go up 
-<span class="oldstyle">5--7<span class="symbol">%</span></span> each year as library budgets are shrinking.
-Yet these publishers have consistently netted over
-<span class="oldstyle">35<span class="symbol">%</span></span> per year, while all the refereeing, writing,
-and editing is done for free by researchers. Large academic libraries in the UK
-(and I'm sure it is a similar cost here in the states) end up paying over
-<span class="oldstyle"><span class="symbol">£</span>1,000,000</span> a year for
-research that was donated to these insatiable institutions, quite possibly by
-members of their own faculty!
+their business model, which is based primarily on journal subscriptions. This
+approach has been working great for them for the last
+<span class="oldstyle">100+</span> years. Making a profit is not bad---but
+they are in a position to charge whatever they want for journals and get away 
+with it. And they do. They get all the profits, but they do not add much
+value[^pubvalue] to the research that is donated to them. Journal subscription
+costs continue to rise <span class="oldstyle">5--7<span class="symbol">%</span></span>
+each year as library budgets are shrinking. Yet these publishers have
+consistently netted over <span class="oldstyle">35<span class="symbol">%</span></span>
+per year, while all the refereeing, writing, and editing is done for them for
+free by researchers. Large academic libraries in the UK (and I'm sure it is a
+similar cost here in the states) end up paying over
+<span class="oldstyle"><span class="symbol">£</span>1,000,000</span> a year
+for research that was donated to these insatiable institutions, quite possibly
+by members of their own faculty!
+
+C'mon, publishers, are you so comfortable with the status quo that you require
+legislation to perpetuate your antiquated business model? There are
+[so many other options](http://gigaom.com/2012/03/26/dont-build-a-paywall-create-a-velvet-rope-instead/)
+for monetizing the research and publication industry in more valuable ways!
+Come down from your this-is-how-it-has-always-been-done ivory towers, stop
+digging in your heels, and get with the <span class="oldstyle">21</span>st
+century.
 
 Putting their business practices aside, as a researcher, I don't want to shell
 out <span class="oldstyle"><span class="symbol">$</span>8--30</span> per paper
@@ -106,18 +117,11 @@ government have a say in it. This is complete troll-like behavior. The public
 has paid for this bridge and the publishers want to make a profit off of anyone
 who crosses, and they act as if they are entitled to do it. 
 
-C'mon, publishers, are you so comfortable with your presses that you require
-legislation to perpetuate your antiquated business model? There are
-[so many other options](http://gigaom.com/2012/03/26/dont-build-a-paywall-create-a-velvet-rope-instead/)
-for monetizing the research and publication industry in more valuable ways!
-Come down from your this-is-how-it-has-always-been-done ivory towers and get
-with the program.
-
-Recently, the governor of Georgia announced that the Georgia State Archives
-would be closed to the public due to budget cuts. They couldn't afford to pay
-the staff. Over the last <span class="oldstyle">10</span> years, Georgia has 
-cut staff at the archives from <span class="oldstyle">53</span> employees down
-to three.[^GSA]
+Recently, the governor of Georgia (state) announced that the Georgia State
+Archives would be closed to the public due to budget cuts. They couldn't afford
+to pay the staff. Over the last <span class="oldstyle">10</span> years, Georgia
+has cut staff at the archives from <span class="oldstyle">53</span> employees
+down to three.[^GSA]
 
 What has the Georgia State Archives to do with open access? Everything. While a
 lot of discussion on open access centers around research papers, a big part of
@@ -145,16 +149,16 @@ is a good round-table discussion on open access that gives a deeper look into
 some of the issues. If you don't have much time right now, feel free to pick a
 question or two below that interests you and hear what they have to say:
 
-* [Is open access a good idea?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=1m22s){: .deep .oa-goodidea }
-* [How much does open access cost?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=4m2s){: .deep .oa-cost }
-* [What is the Gold Open Access model?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=11m44s){: .deep .oa-gold }
-* [What can publishers do to add value?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=13m35s){: .deep .oa-value }
-* [How can authors afford Gold Open Access?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=15m31s){: .deep .oa-afford }
-* [Are publishers really necessary for open access?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=16m33s){: .deep .oa-publishers }
-* [What is the Green Open Access model?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=20m38s){: .deep .oa-green }
-* [Are publishers confident in their added value?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=21m24s){: .deep .publisher-value }
-* [Will open access put publishers out of business?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=22m43s){: .deep .publisher-death }
-* [What countries mandate open access right now?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=26m39s){: .deep .oa-promoters }
+* [Is open access a good idea?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=1m22s){: .oa-goodidea }
+* [How much does open access cost?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=4m2s){: .oa-cost }
+* [What is the Gold Open Access model?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=11m44s){: .oa-gold }
+* [What can publishers do to add value?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=13m35s){: .oa-value }
+* [How can authors afford Gold Open Access?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=15m31s){: .oa-afford }
+* [Are publishers really necessary for open access?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=16m33s){: .oa-publishers }
+* [What is the Green Open Access model?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=20m38s){: .oa-green }
+* [Are publishers confident in their added value?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=21m24s){: .publisher-value }
+* [Will open access put publishers out of business?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=22m43s){: .publisher-death }
+* [What countries mandate open access right now?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=26m39s){: .oa-promoters }
 
 <figure id="ruvr">
     <video style="width:100%;height:100%;max-width:100%" id="player" preload="none" controls="controls">
@@ -338,12 +342,21 @@ As always, I would love to hear your thoughts.
 
 [^utopia]: Such as [Utopia Documents](http://utopiadocs.com/).
 
-[^NIH]: While I do consider this a battle won, the policy only requires that
+[^NIH]: While I do consider this a battle won, the policy requires only that
     the paper be submitted to PubMed within
     [twelve months of publication](http://publicaccess.nih.gov/policy.htm).
     While it is great that the research will be available eventually, twelve
-    months is too long for most research organizations to wait for the latest
-    research, and they end up needing to subscribe to the journal anyways.
+    months is too long to wait for the latest research for most research
+    organizations, so a subscription to the journal is still necessary.
+
+[^pubvalue]: Most of the value added by publishers currently involves
+    selecting and typesetting research papers, assigning a
+    <a href="http://www.doi.org/"><abbr>DOI</abbr></a>, and organizing the
+    peer-review process for those papers. While this is commendable, it is
+    hardly worth the money they get paid for it.
+    [Listen](http://www.youtube.com/watch?v=v31zpZ4woOI&t=13m35s){: .oa-value }
+    to the discussion about the value that publishers currently add to the
+    research dissemination process.
 
 *[PDF]: Portable Document Format
 *[FRPAA]: Federal Research Public Access Act
