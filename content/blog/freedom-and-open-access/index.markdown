@@ -13,15 +13,17 @@ tags:
 has_video: true
 ---
  
-![Open Access Logo](openaccess.png){: .aside .static .img }
+![Open Access Logo](openaccess.png){: .static }
+{: .aside .img }
+
 I have been thinking a lot about open access lately and how it relates to what
 we are trying to accomplish at Pentandra. I'm not going to go into the details
 of open access here---you can read about that
 [elsewhere](http://en.wikipedia.org/wiki/Open_access)---but I do want to discuss
 what it means to us and how that influences our approach to software design.
 
-In general, academic research is being published the same way it has been
-published since the beginning of academic publishing (or at least since
+In general, scholarly research is being published the same way it has been
+published since the beginning of scholarly publishing (or at least since
 [Johannes Gutenberg](http://en.wikipedia.org/wiki/Johannes_Gutenberg) was
 around). In recent years, the venerable research paper has evolved from a
 simple paper publication to a complex digital publication as a PDF. This rather
@@ -78,7 +80,7 @@ particularly convincing.
 
 So where does all this publicly-funded research come from? Well, the government
 collects taxes from the public. These public funds are distributed by the
-government to researchers in the form of grants, and because the government is
+government to researchers in the form of grants. Because the government is
 distributing the money, it sets the rules. Ideally, those rules would be in the
 public interest. To give some context to our thoughts, let me summarize what is
 being done about open access right now by governments around the world.
@@ -109,36 +111,42 @@ yet to respond.
 
 More recently, attempts have been made to promote *closed* access to
 publicly-funded research.  The most caddish proposal was made right before the
-holidays at the end of last year: the [Research Works Act](http://en.wikipedia.org/wiki/Research_Works_Act).[^RWA]
-This act would prohibit any federal agency from mandating open access without
-the consent of the publishers, in effect, giving publishers complete control to
-restrict public access to all publicly-funded research. Oh, and not letting the
+holidays at the end of last year: the Research Works Act.[^RWA] This act would
+prohibit any federal agency from mandating open access without the consent of
+the publishers, in effect, giving publishers complete control to restrict
+public access to all publicly-funded research. Oh, and not letting the
 government have a say in it. This is complete troll-like behavior. The public
 has paid for this bridge and the publishers want to make a profit off of anyone
 who crosses, and they act as if they are entitled to do it. 
 
-Recently, the governor of Georgia (state) announced that the Georgia State
-Archives would be closed to the public due to budget cuts. They couldn't afford
-to pay the staff. Over the last <span class="oldstyle">10</span> years, Georgia
-has cut staff at the archives from <span class="oldstyle">53</span> employees
-down to three.[^GSA]
+Recently, the governor of Georgia announced that the Georgia State Archives
+would be closed to the public due to budget cuts. They couldn't afford to pay
+the staff. This isn't the first time that Georgia has cut funding for the
+archives. Over the last <span class="oldstyle">10</span> years, Georgia has
+cut staff at the archives from <span class="oldstyle">53</span> employees down
+to three.[^GSA] (If you have not done so already, please
+[sign the petition](http://www.change.org/petitions/the-governor-of-ga-leave-our-state-archives-open-to-the-public)
+to save the Georgia State Archives!)
 
 What has the Georgia State Archives to do with open access? Everything. While a
 lot of discussion on open access centers around research papers, a big part of
 the equation is the [research data](/research/process/#p[DirGaf],h[DirGaf,1,2,DciDce,1]).
 Without the data, there would be no conclusions and no papers! If the data is
 locked up in an inaccessible archive, it sure makes it hard to access. Why does
-access to the data matter? Because without the access, we can't use it. And all
-the research that has used that data cannot be verified anymore, and future
+access to the data matter? Because without the access, we can't use it. All the
+research that has used that data cannot be verified anymore, and future
 research cannot be built reliably on top of it.
 
 Closing the archives also sets a dangerous precedent for thoughtless
-legislators to follow when looking for quick and easy budget cuts. Some say
-that we are entering the
+legislators to follow when looking for quick and easy budget cuts.
+
+Other well-intentioned, but shallow-thinking legislators are trying to limit or
+completely deny public access to United States Social Security Death Records
+for the sake of discouraging identity theft, yet their efforts only exacerbate
+the problem, effectually [removing the only way to detect it](http://www.nytimes.com/2012/10/09/us/social-security-death-record-limits-hinder-researchers.html?_r=2#p[MJsMJs],h[MJsMJs]).
+Some say that we are entering the
 [beginning of the Dark Ages](http://www.nytimes.com/2012/09/27/us/budget-cuts-to-limit-public-access-to-georgia-archives.html?_r=0#p[WohFyo],h[WohFyo,1])
-for public records. (If you have not done so already, please
-[sign the petition](http://www.change.org/petitions/the-governor-of-ga-leave-our-state-archives-open-to-the-public)
-to save the Georgia State Archives!)
+for public records.
 
 ## A Closer Look
 
@@ -197,12 +205,12 @@ to surprising cross-discipline breakthroughs and collaboration.
 From an economics perspective, open access creates value. Nobody really knows
 how that value will be
 [captured](http://www.edge.org/conversation/-39the-clothesline-paradox-39-) in
-the future. Each research paper is just sitting there, on the Ether, ready to
-be used in some novel, unforeseen way to make our world a better place.
-Open-source software has created enormous value as developers have taken chunks
-of software functionality and put them together in new and innovative ways.
-Open-access research, or even better, [open research](/open#research), can work
-the same way.
+the future. The research is just sitting there, on the Ether, ready to be used
+in some novel, unforeseen way to make our world a better place.  Open-source
+software has created enormous value as developers have taken chunks of software
+functionality and put them together in new and innovative ways.  Open-access
+research, or even better, [open research](/open#research), can work the same
+way.
 
 ## Our Approach
 
@@ -260,9 +268,10 @@ manner. I may have more to say about this in a later article.
 
 Research is messy. Sometimes it just doesn't fit very well in a four page
 research paper. While there are some excellent examples of the use of wikis in
-research dissemination, such as [Scholarpedia](http://www.scholarpedia.org/),
-wikis are still based on the research paper model. Collaboration occurs only
-during the writing of the paper, and not during the whole research process. 
+research dissemination, such as [Scholarpedia](http://www.scholarpedia.org/) or
+[Wikiversity](http://en.wikiversity.org/), wikis are still based on the
+research paper model. Collaboration occurs only during the writing of the
+paper, and not during the whole research process. 
 
 Our approach is to build software around the
 [unit of research](/research/process/#unit). This gives research a natural
@@ -365,6 +374,35 @@ As always, I would love to hear your thoughts.
     website to [boycott Elsevier](http://thecostofknowledge.com/), one of the
     primary promoters of the bill.
 
+    In response to many of these reactions,
+    [Elsevier eventually withdrew support](http://www.elsevier.com/wps/find/intro.cws_home/newmessagerwa)
+    for the bill. Representatives Darrell Issa and Carolyn B. Maloney issued
+    the [following statement](https://plus.google.com/117417705451874519785/posts/7McDJNDrpcR):
+    
+    > "The introduction of <abbr>HR</abbr> <span class="oldstyle">3699</span>
+    > has spurred a robust, expansive debate on the topics of scientific and
+    > scholarly publishing, intellectual property protection, and public access
+    > to federally funded research.  Since its introduction, we have heard from
+    > numerous stakeholders and interested parties on both sides of this
+    > important issue.
+    >
+    > "As the costs of publishing continue to be driven down by new technology,
+    > we will continue to see a growth in open access publishers. This new and
+    > innovative model appears to be the wave of the future. The transition
+    > must be collaborative, and must respect copyright law and the principles
+    > of open access. The American people deserve to have access to research
+    > for which they have paid. This conversation needs to continue and we have
+    > come to the conclusion that the Research Works Act has exhausted the
+    > useful role it can play in the debate. As such, we want Americans
+    > concerned about access to research and other participants in this debate
+    > to know we will not be taking legislative action on <abbr>HR</abbr> <span
+    > class="oldstyle">3699</span>, the Research Works Act. We do intend to
+    > remain involved in efforts to examine and study the protection of
+    > intellectual property rights and open access to publicly funded
+    > research."
+    {: .bq .grab }
+
+
 [^utopia]: Such as [Utopia Documents](http://utopiadocs.com/).
 
 [^NIH]: While I do consider this a battle won, the policy requires only that
@@ -395,6 +433,7 @@ As always, I would love to hear your thoughts.
 *[FRPAA]: Federal Research Public Access Act
 *[NIH]: National Institutes of Health
 *[EU]:
+*[HR]:
 
 <% content_for :javascripts do %>
 <script>
