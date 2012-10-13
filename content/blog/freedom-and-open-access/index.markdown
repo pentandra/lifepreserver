@@ -114,10 +114,10 @@ publicly-funded research.  The most caddish proposal was made right before the
 holidays at the end of last year: the Research Works Act.[^RWA] This act would
 prohibit any federal agency from mandating open access without the consent of
 the publishers, in effect, giving publishers complete control to restrict
-public access to all publicly-funded research. Oh, and not letting the
-government have a say in it. This is complete troll-like behavior. The public
-has paid for this bridge and the publishers want to make a profit off of anyone
-who crosses, and they act as if they are entitled to do it. 
+public access to all publicly-funded research. Oh---and taking away from the
+government the right to have a say in it. This is complete troll-like behavior.
+The public has paid for this bridge and the publishers want to make a profit
+off of anyone who crosses, and they act as if they are entitled to do it. 
 
 Recently, the governor of Georgia announced that the Georgia State Archives
 would be closed to the public due to budget cuts. They couldn't afford to pay
@@ -360,18 +360,20 @@ As always, I would love to hear your thoughts.
 [^GSA]: Starting November <span class="oldstyle">1</span> of this year,
     [Georgia State Archives will lose seven](http://georgiaarchivesmatters.org/2012/09/27/the-staff-what-we-stand-to-lose/)
     of the remaining ten employees. At the same time, Georgia is spending
-    upwards of <span class="oldstyle">$400</span> million in public funds to
+    upwards of <span class="oldstyle"><span class="symbol">$</span>400</span>
+    million in public funds to
     [build a new football stadium](http://www.bizjournals.com/atlanta/print-edition/2012/05/11/atlantas-proposed-new-football.html?page=all)
     instead of retrofitting the Georgia Dome with a retractable roof.
 
 [^RWA]: The [Research Works Act](http://thomas.loc.gov/cgi-bin/bdquery/z?d112:HR03699:@@@L&summ2=m&)
-    would in effect repeal <abbr>NIH</abbr>'s 
+    (<abbr>HR</abbr> <span class="oldstyle">3699</span>) would in effect repeal
+    <abbr title="National Institutes of Health">NIH</abbr>'s 
     <a href="http://publicaccess.nih.gov/policy.htm">open access policy</a>.
     Richard Price, <abbr>CEO</abbr> of [academia.edu](http://academia.edu),
     wrote about [some of the particular arguments](http://blog.academia.edu/post/17986108041/the-dangerous-research-works-act)
     against this bill. As a reaction to this bill and to being fed up with the
-    injustices of the current system in general, some researchers set up a
-    website to [boycott Elsevier](http://thecostofknowledge.com/), one of the
+    injustices of the current system in general, some researchers set up [a
+    website to boycott Elsevier](http://thecostofknowledge.com/), one of the
     primary promoters of the bill.
 
     In response to many of these reactions,
