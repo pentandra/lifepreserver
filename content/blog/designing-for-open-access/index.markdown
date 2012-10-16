@@ -377,7 +377,7 @@ transitional, and that the future of research lies in open,
 As always, I would love to hear your thoughts.
 {: .conclusion }
 
-## Footnotes
+## Notes
 
 [^anti-OA]: Some publishers do support open access, primarily the "gold"
     variant, where the author pays the fee to publish his research. Then the
