@@ -1,5 +1,5 @@
 ---
-title: Freedom and Open Access
+title: Designing For Open Access
 kind: article
 author_name: Chris Chapman
 created_at: 2012-10-05
