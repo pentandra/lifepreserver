@@ -94,16 +94,25 @@ its latest research initiative, named
 <a href="http://ec.europa.eu/research/horizon2020/index_en.cfm?pg=home&video=none" rel="external">Horizon <span class="oldstyle">2020</span></a>.
 It is hoped that other EU member states will follow suit.[^EU-OA]
 
+Australia and New Zealand also have a lot of support going for open access and
+even [open research](https://sites.google.com/site/nzauopenresearch/). In
+Australia, two main agencies give out research funds: the National Health and
+Medical Research Council and the Australian Research Council. Earlier this year
+the NHMRC mandated a policy to put research papers in an open access repository
+<span class="oldstyle">12</span> months after publication. The ARC is now 
+[following their lead](http://chronicle.com/blogs/wiredcampus/the-australian-research-councils-new-leader-opens-up/40276).
+
 In the US the situation is a little different. Several attempts have been made
-to legislate open access. In <span class="oldstyle">2008</span>, a bill was
-successfully passed that required that all NIH-funded research be submitted to
+to legislate open access, but there has been a lot of opposition and not all
+have been successful. In <span class="oldstyle">2008</span>, a bill was
+successfully[^NIH] passed that required all NIH-funded research be submitted to
 [PubMed Central](http://www.ncbi.nlm.nih.gov/pmc/), an open access repository
-for the biomedical and life sciences. Following up from that win,[^NIH] the
-[Federal Research Public Access Act](http://en.wikipedia.org/wiki/Federal_Research_Public_Access_Act),
-which would mandate similar requirements across all the big governmental
-funding agencies, has been introduced to US Congress three times up to this
-point, but has not made it out of committee, primarily because of the lobbying
-efforts of the Association of American Publishers.[^AAP]
+for the biomedical and life sciences. Hoping to keep the momentum going, the
+[Federal Research Public Access Act](http://en.wikipedia.org/wiki/Federal_Research_Public_Access_Act)
+was introduced to Congress, which extended the similar requirements across all
+the big governmental funding agencies. Publishers lobbied[^AAP] and the bill
+never made it out of committee. Up to this point in time, FRPAA has been
+introduced to US Congress three times, but has not made it out of committee.
 The [White House was petitioned](https://petitions.whitehouse.gov/petition/require-free-access-over-internet-scientific-journal-articles-arising-taxpayer-funded-research/wDX82FLQ)
 in May of this year to require open access to taxpayer-funded research,
 effectually proposing the same thing as FRPAA. As of today, the White House has
@@ -169,7 +178,7 @@ question or two below that interests you and hear what they have to say:
 * [What countries mandate open access right now?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=26m39s){: .oa-promoters }
 
 <figure id="ruvr">
-    <video style="width:100%;height:100%;max-width:100%" id="player" preload="none" controls="controls">
+    <video style="width:100%;height:100%;max-width:100%;" id="player" preload="none" controls="controls">
       <source type="video/youtube" src="http://www.youtube.com/watch?v=v31zpZ4woOI" />
     </video>
   <figcaption class="small">
@@ -187,6 +196,33 @@ question or two below that interests you and hear what they have to say:
   </figcaption>
 </figure>
 
+### The Philosophy Behind It
+
+Peter Suber is considered by many to be the expert on open access.
+
+<figure id="petersuber">
+  
+  <audio id="suberinterview" preload="none" controls="controls">
+    <source src="SuberPodcast_mp3.mp3" type="audio/mpeg"> 
+    <source src="SuberPodcast_ogg.ogg" type="audio/ogg"> 
+  </audio>
+
+  <figcaption class="small">
+    <p>
+
+      In an interview on the Harvard University campus at the 
+      <a href="http://cyber.law.harvard.edu/hoap/Main_Page" rel="external">Berkman Center for Internet and Society</a>,
+      where he is a faculty fellow, Suber says that "the focus of the open
+      access movement is on journal articles for which scholars are not paid,
+      and therefore for which the have nothing to lose and everything to gain
+      by enlarging their audience by putting them online free of
+      charge."
+      <a href="http://dx.doi.org/10.6084/m9.figshare.96368">http://dx.doi.org/10.6084/m9.figshare.96368</a>
+
+    </p>
+  </figcaption>
+</figure>
+
 ## Beyond Fairness
 
 While the self-serving actions of the publishers may be reason enough to
@@ -195,12 +231,13 @@ support open access, there is another, more meaningful reason besides
 scientific research forward.
 
 When research is disseminated openly, the entry barrier to build upon that
-research is lowered significantly. Anyone can access the research, with or
-without an academic affiliation. Further research and innovation can then
-accelerate more quickly and with less expense. Having access to research across
-domains will give more depth and [context](/research#context) to future
-research output. Text mining can accelerate contextual understanding, leading
-to surprising cross-discipline breakthroughs and collaboration.
+research is [lowered significantly](http://localhost:3000/research/#p[TuaWto],h[TuaWto,2]).
+Anyone can access the research, with or without an academic affiliation.
+Further research and innovation can then accelerate more quickly and with less
+expense. Having access to research across domains will give more depth and
+[context](/research#context) to future research output. Text mining can
+accelerate contextual understanding, leading to surprising cross-discipline
+breakthroughs and collaboration.
 
 From an economics perspective, open access creates value. Nobody really knows
 how that value will be
@@ -417,8 +454,8 @@ As always, I would love to hear your thoughts.
 [^pubvalue]: Most of the value added by publishers currently involves
     selecting and typesetting research papers, assigning a
     <a href="http://www.doi.org/"><abbr>DOI</abbr></a>, and organizing the
-    peer-review process for those papers. While this is commendable, it is
-    hardly worth the money they get paid for it.
+    peer-review process. While this is commendable, it is hardly worth the
+    money they get paid for it.
     [Listen](http://www.youtube.com/watch?v=v31zpZ4woOI&t=13m35s){: .oa-value }
     to the discussion about the value that publishers currently add to the
     research dissemination process.
@@ -436,6 +473,8 @@ As always, I would love to hear your thoughts.
 *[NIH]: National Institutes of Health
 *[EU]:
 *[HR]:
+*[NHMRC]: National Health and Medical Research Council (Australia)
+*[ARC]: Australian Research Council
 
 <% content_for :javascripts do %>
 <script>
@@ -506,6 +545,13 @@ As always, I would love to hear your thoughts.
   });
 
 }());
+
+$(document).ready(function() {
+  $("audio").mediaelementplayer({
+    alwaysShowControls: true,
+    audioWidth: '100%'
+  });
+});
 
 </script>
 <% end %>
