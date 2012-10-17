@@ -60,7 +60,7 @@ preprocess do
 
   def mark_unpublished_articles_as_hidden
     articles.each do |article|
-      if article[:published].nil? || article[:published] == false
+      if not $include_drafts && (article[:published].nil? || article[:published] == false)
         article[:is_hidden] = true
       end
     end
