@@ -21,17 +21,17 @@ h3.close {
   line-height: 29px;
 }
 
-h3.flush {
+.big.flush, h3.flush {
   line-height: 20px;
   margin-bottom: 32px;
 }
 
-h4.small {
+h4.small, h5.small {
   margin-bottom: $base-line-height * 0.25;
 }
 
 hgroup {
-  h3.flush {
+  .big.flush, h3.flush {
     margin-bottom: $base-line-height * 0.75;
   }
 }
@@ -328,11 +328,8 @@ a.button {
   position: relative;
 }
 
-.img {
-
-  img {
-    display: block;
-  }
+.img img {
+  display: block;
 }
 
 .menu {
