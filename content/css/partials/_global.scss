@@ -107,6 +107,14 @@ ol {
   }
 }
 
+// Keep the list unified
+li p {
+  margin-bottom: 0;
+
+  & + p {
+    text-indent: 1em;
+  }
+}
 
 .bold {
   font-family: $bold-font-family, sans-serif;
