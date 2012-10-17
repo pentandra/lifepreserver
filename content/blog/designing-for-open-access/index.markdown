@@ -105,7 +105,7 @@ the NHMRC mandated a policy to put research papers in an open access repository
 In the US the situation is a little different. Several attempts have been made
 to legislate open access, but there has been a lot of opposition and not all
 have been successful. In <span class="oldstyle">2008</span>, a bill was
-successfully[^NIH] passed that required all NIH-funded research be submitted to
+successfully passed[^NIH] that required all NIH-funded research be submitted to
 [PubMed Central](http://www.ncbi.nlm.nih.gov/pmc/), an open access repository
 for the biomedical and life sciences. Hoping to keep the momentum going, the
 [Federal Research Public Access Act](http://en.wikipedia.org/wiki/Federal_Research_Public_Access_Act)
@@ -444,9 +444,10 @@ As always, I would love to hear your thoughts.
 
 [^utopia]: Such as [Utopia Documents](http://utopiadocs.com/).
 
-[^NIH]: While I do consider this a battle won, the policy requires only that
-    the paper be submitted to PubMed within
-    [twelve months of publication](http://publicaccess.nih.gov/policy.htm).
+[^NIH]: This policy was passed as part of the
+    <a href="http://thomas.loc.gov/cgi-bin/bdquery/z?d110:H.R.2764:">Consolidated Appropriations Act, <span class="oldstyle">2008</span></a>.
+    The law requires that the paper be submitted to PubMed Central
+    [no later than twelve months after publication](http://publicaccess.nih.gov/policy.htm).
     While it is great that the research will be available eventually, twelve
     months is too long to wait for the latest research for most research
     organizations, so a subscription to the journal is still necessary.
