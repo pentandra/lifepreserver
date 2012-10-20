@@ -96,6 +96,7 @@ $less-outer-margin: 34px;
   }
 
   .static {
+    display: block;
     @include grid(3);
   }
 
