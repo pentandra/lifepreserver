@@ -1,5 +1,6 @@
 ---
 title: Success in Failure
+description: while we didn't win, we succeeded
 kind: article
 author_name: Katie Chapman
 created_at: 2012-05-21
@@ -19,6 +20,8 @@ like a good fit. Looking back, we are really glad that we entered. We did not
 win any money, but we learned a lot and gained confidence in our ability to
 communicate what we are doing to business folks (especially when they're not
 research geeks).
+
+<!--MORE-->
 
 ![Katie at our half-table during the Grow America competition](growam2012-katie.jpg){: .aside .static .img }
 
@@ -106,3 +109,11 @@ sleep. But the letdown after the adrenaline stops is brutal.
     
 
 *[NGS]: National Genealogical Society 2012 Conference
+
+<% content_for :javascripts do %>
+<script>
+  $('document').ready(function() {
+    $('video').mediaelementplayer();
+  });
+</script>
+<% end %>

@@ -1,5 +1,6 @@
 ---
 title: Open Approach
+description: we promote openness and are open in many ways
 has_video: true
 priority: 0.65
 changefreq: monthly
@@ -29,14 +30,14 @@ changefreq: monthly
 <nav class="section rev ext">
   <div class="menu menu3">
     <ul class="group mod">
-      <li><a href="#openresearch" class="mod button">Open Research</a></li>
-      <li><a href="#opensource" class="mod button">Open Source</a></li>
-      <li class="last"><a href="#openbusiness" class="mod button">Open Business</a></li>
+      <li><a href="#research" class="mod button">Open Research</a></li>
+      <li><a href="#source" class="mod button">Open Source</a></li>
+      <li class="last"><a href="#business" class="mod button">Open Business</a></li>
     </ul>
   </div>
 </nav>
 
-<section id="openresearch" class="noted section">
+<section id="research" class="noted section">
 
   <h2>Open Research</h2>
 
@@ -82,7 +83,7 @@ changefreq: monthly
     
 </section>
 
-<section id="opensource" class="noted section">
+<section id="source" class="noted section">
 
   <h2>Open Source</h2>
 
@@ -105,7 +106,7 @@ changefreq: monthly
 
 </section>
 
-<section id="openbusiness" class="noted section">
+<section id="business" class="noted section">
 
   <h2>Open Business</h2>
 
@@ -155,3 +156,11 @@ changefreq: monthly
   <a class="section aside button" href="/open/business/">How Do You <b>Want to Help?</b></a>
 
 </section>
+
+<% content_for :javascripts do %>
+<script>
+  $('document').ready(function() {
+    $('video').mediaelementplayer();
+  });
+</script>
+<% end %>

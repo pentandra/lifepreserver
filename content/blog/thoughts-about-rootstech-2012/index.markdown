@@ -1,5 +1,6 @@
 ---
 title: Thoughts About RootsTech 2012
+description: classifications of the future of genealogical software
 kind: article
 author_name: Chris Chapman
 created_at: 2012-04-17
@@ -12,18 +13,19 @@ tags:
   - Essay
 ---
 
+![RootsTech 2012](rootstech.320x480-75.2012.jpg){: .aside .static .img }
 A couple months ago I attended the second annual
 [RootsTech](http://rootstech.org/ "rootstech.org") conference in Salt Lake
 City. For those not familiar with RootsTech: it is a conference hosted by
 [FamilySearch International](http://familysearch.org "familysearch.org") to
 bring together genealogical software creators and users.
 
-![RootsTech 2012](rootstech.320x480-75.2012.jpg){: .aside .static }
-
 Since I never wrote about my experiences with RootsTech <span class="oldstyle">2011</span>, 
 I will try to summarize my thoughts about RootsTech in general in this article.
 Some of my thoughts may not be specifically about RootsTech, but more of a
 response to the current state of the genealogical software industry.
+
+<!--MORE-->
 
 First, kudos to FamilySearch for organizing RootsTech. Their efforts are making
 a difference. A lot more dialog is going on between users and developers now

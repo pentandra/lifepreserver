@@ -1,5 +1,6 @@
 ---
 title: I'll Take Door Number...?
+description: how should we seek funding?
 kind: article
 author_name: Katie Chapman
 created_at: 2012-05-02
@@ -22,6 +23,8 @@ amazingly prolific support of our closest loved ones, we could never have
 reached this point. But here we are, on the verge of releasing our first
 product and offering an open-source research platform for doing amazing
 research and sharing it with the world. Life is amazing!
+
+<!--MORE-->
 
 For those that are not aware, I am still a college student. Or I suppose a more
 accurate statement would be that I am *again* a college student. Chris has been
