@@ -21,9 +21,9 @@ GEM
       multi_json (~> 1.0)
     adsf (1.1.1)
       rack (>= 1.0.0)
-    builder (3.1.3)
+    builder (3.1.4)
     chunky_png (1.2.6)
-    coderay (1.0.7)
+    coderay (1.0.8)
     colored (1.2)
     compass (0.12.2)
       chunky_png (~> 1.2)
@@ -45,7 +45,7 @@ GEM
     kramdown (0.14.0)
     multi_json (1.3.6)
     multi_xml (0.5.1)
-    nanoc (3.4.1)
+    nanoc (3.4.0)
       cri (~> 2.2)
     nokogiri (1.5.5)
     rack (1.4.1)
@@ -78,7 +78,7 @@ DEPENDENCIES
   hunspell-ffi!
   json
   kramdown
-  nanoc
+  nanoc (= 3.4.0)
   nokogiri
   rainpress
   rqrcode

@@ -1,5 +1,6 @@
 ---
 title: Unexpected Surprises
+description: there are angels out there
 kind: article
 author_name: Katie Chapman
 created_at: 2012-06-08

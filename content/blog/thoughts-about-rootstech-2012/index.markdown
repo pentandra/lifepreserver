@@ -1,5 +1,6 @@
 ---
 title: Thoughts About RootsTech 2012
+description: classifications of the future of genealogical software
 kind: article
 author_name: Chris Chapman
 created_at: 2012-04-17
@@ -12,7 +13,7 @@ tags:
   - Essay
 ---
 
-![RootsTech 2012](rootstech.320x480-75.2012.jpg){: .aside .static }
+![RootsTech 2012](rootstech.320x480-75.2012.jpg){: .aside .static .img }
 A couple months ago I attended the second annual
 [RootsTech](http://rootstech.org/ "rootstech.org") conference in Salt Lake
 City. For those not familiar with RootsTech: it is a conference hosted by

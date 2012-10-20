@@ -40,7 +40,7 @@ $less-outer-margin: 28px;
     }
 
     .inner {
-      width: auto;
+      width: 100%;
       padding-right: $less-gutter-width / 2;
       @include box-sizing(border-box);
     }

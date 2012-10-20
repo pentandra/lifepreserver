@@ -36,7 +36,7 @@ module Search
   } unless defined?(STOP_WORDS)
 
   def search_terms_for(item)
-    if item.identifier =~ /^\/(blog|research|products|company|open)/
+    if item.identifier !~ /^\/(js|css|404)/
       content = item.rep_named(:default).compiled_content
       doc = Nokogiri::HTML(content)
       full_text = doc.css("p, h1, h2, h3, h4, h5, h6").map{|el| el.inner_text}.join(" ")
@@ -58,7 +58,7 @@ module Search
       search_terms_for(item).each do |term|
         idx["terms"][term] ||= []
         idx["terms"][term] << id
-        (0...term.length).each do |c|
+        (1...term.length).each do |c|
           subterm = term[0...c]
           # puts "Indexing: #{subterm}"
           idx["approximate"][subterm] ||= []
@@ -71,7 +71,7 @@ module Search
       idx["items"][id] = {
         "url" => "#{item.identifier}",
         "title" => item[:title],
-        "crumb" => item[:crumb]
+        "desc" => item[:description]
       }
       id += 1
     end

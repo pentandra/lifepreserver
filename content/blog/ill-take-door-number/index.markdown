@@ -1,5 +1,6 @@
 ---
 title: I'll Take Door Number...?
+description: how should we seek funding?
 kind: article
 author_name: Katie Chapman
 created_at: 2012-05-02

@@ -21,17 +21,17 @@ h3.close {
   line-height: 29px;
 }
 
-h3.flush {
+.big.flush, h3.flush {
   line-height: 20px;
   margin-bottom: 32px;
 }
 
-h4.small {
+h4.small, h5.small {
   margin-bottom: $base-line-height * 0.25;
 }
 
 hgroup {
-  h3.flush {
+  .big.flush, h3.flush {
     margin-bottom: $base-line-height * 0.75;
   }
 }
@@ -74,10 +74,6 @@ address, p {
   margin-bottom: $base-line-height;
 }
 
-li p {
-  margin-bottom: 0;
-}
-
 .bq { // blockquote
 
   padding: $base-line-height*1.5;
@@ -111,6 +107,14 @@ ol {
   }
 }
 
+// Keep the list unified
+li p {
+  margin-bottom: 0;
+
+  & + p {
+    text-indent: 1em;
+  }
+}
 
 .bold {
   font-family: $bold-font-family, sans-serif;
@@ -230,7 +234,7 @@ a.permalink {
 
 // Content classes
 
-a.button, .tags a {
+a.button, input.button, .tags a {
 
   text-align: center;
   @include pie;
@@ -249,7 +253,7 @@ a.button, .tags a {
   }
 }
 
-a.button {
+a.button, input.button {
   font-size: $base-font-size - 1;
   line-height: $base-line-height * 2;
   display: block;
@@ -257,8 +261,9 @@ a.button {
   @include border-radius($default-radius);
 }
 
-.deep {
-  cursor: pointer;
+input.button {
+  border: 0;
+  padding: 0;
 }
 
 [rel="reference"] {
@@ -328,11 +333,9 @@ a.button {
   position: relative;
 }
 
-.img {
-
-  img {
-    display: block;
-  }
+.img img {
+  display: block;
+  max-width: 100%;
 }
 
 .menu {
@@ -411,7 +414,7 @@ a.button {
   color: $pentandra-white;
 }
 
-.rev a.button, .grab a.button {
+.rev a.button, .rev input.button, .grab a.button {
 
   color: $pentandra-brown;
   background-color: $pentandra-white;
@@ -577,7 +580,7 @@ a.button {
   }
 }
 
-.post {
+article {
 
   .img {
     margin-bottom: $base-line-height;

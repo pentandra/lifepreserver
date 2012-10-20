@@ -201,7 +201,7 @@ input[type="checkbox"], input[type="radio"] {
 
 input[type="search"] { 
   -webkit-appearance: textfield; 
-  @include box-sizing(content-box); 
+  @include box-sizing(border-box); 
 }
 
 input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }

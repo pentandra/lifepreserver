@@ -1,5 +1,6 @@
 ---
 title: Success in Failure
+description: while we didn't win, we succeeded
 kind: article
 author_name: Katie Chapman
 created_at: 2012-05-21
@@ -108,3 +109,11 @@ sleep. But the letdown after the adrenaline stops is brutal.
     
 
 *[NGS]: National Genealogical Society 2012 Conference
+
+<% content_for :javascripts do %>
+<script>
+  $('document').ready(function() {
+    $('video').mediaelementplayer();
+  });
+</script>
+<% end %>

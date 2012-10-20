@@ -94,6 +94,12 @@ $less-outer-margin: 48px;
 
 }
 
+.inner, .aside {
+  input {
+    width: 100%;
+  }
+}
+
 .ext {
   margin-left: -$less-outer-margin;
   margin-right: -$less-outer-margin;

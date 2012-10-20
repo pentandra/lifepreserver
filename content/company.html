@@ -1,5 +1,6 @@
 --- 
 title: Company
+description: who we are and what we stand for
 company_name: Pentandra Research Solutions, Inc.
 phone: &tel +1 435.294.2964
 email: hello@pentandra.com
@@ -38,8 +39,9 @@ priority: 0.6
 
       <p class="big">
 
-        We are couple of research addicts trying to promote quality research
-        and make collaboration possible throughout the research process.
+        We are small company of research addicts trying to promote quality
+        research and make collaboration possible throughout the research
+        process.
 
       </p>
     </div>
@@ -194,44 +196,87 @@ priority: 0.6
 
 </section>
 
+<section id="mission" class="noted section">
+
+  <h2>Our Mission</h2>
+  
+  <div class="bd">
+
+    <p>
+
+      We are a 
+      <%= link_to "social entrepreneurship", "/blog/a-social-business/" %>
+      company with a mission to change the way the world does research. By
+      utilizing current technologies, we are creating software that works the
+      way research has the potential to work. This is a researcher-driven
+      effort to shift the paradigm of current research practices and lower the
+      barriers to research. 
+
+    </p>
+    <p>
+
+      True open access to research is currently held hostage by the limitations
+      of the research paper publication paradigm. We want to empower
+      researchers to preserve their entire research experience with clarity.
+      Doing so enables researchers to collaborate and publish their research in
+      context throughout the research process.
+
+    </p>
+
+  </div>
+
+  <div class="aside">
+    <div class="section img">
+      <img class="retina" src="/images/logo.png" alt="Pentandra logo" />
+    </div>
+  </div>
+
+</section>
+
 <section class="noted section" id="roster">
 
   <h2>Our Roster</h2>
   
-  <% @item[:teammembers].each_with_index do |member, i| %> 
-  <section id="<%= full_name(member).to_slug %>" class="teammember vcard bl<%= i.odd? ? ' ock' : '' %> item">
+  <section id="coreteam">
 
-    <div class="section">
-      
-      <div class="aside">
-        <img class="photo" src="<%= image_path(member) %>" alt="Photo of <%= full_name(member) %>" />
+    <h3>Core Team</h3>
 
-        <aside class="nav menu">
+    <% @item[:teammembers].each_with_index do |member, i| %> 
+    <section id="<%= full_name(member).to_slug %>" class="teammember vcard bl<%= i.odd? ? ' ock' : '' %> item">
 
-          <ul class="sp">
-            <li><a class="gplus ir url" title="<%= full_name(member) %> on Google+" href="https://plus.google.com/<%= member[:gplus] %>?prsrc=3"><%= full_name(member) %> on Google+</a></li>
-            <li><a class="twittr ir url" href="https://twitter.com/<%= member[:twitter] %>" title="Follow @<%= member[:twitter] %>">Follow @<%= member[:twitter] %></a></li>
-            <li><a class="email ir" href="mailto:<%= member[:email] %>" title="<%= member[:email] %>">Email <%= member[:first_name] %></a></li>
-          </ul>
+      <div class="section">
+        
+        <div class="aside">
+          <img class="photo" src="<%= image_path(member) %>" alt="Photo of <%= full_name(member) %>" />
 
-        </aside>
+          <aside class="nav menu">
+
+            <ul class="sp">
+              <li><a class="gplus ir url" title="<%= full_name(member) %> on Google+" href="https://plus.google.com/<%= member[:gplus] %>?prsrc=3"><%= full_name(member) %> on Google+</a></li>
+              <li><a class="twittr ir url" href="https://twitter.com/<%= member[:twitter] %>" title="Follow @<%= member[:twitter] %>">Follow @<%= member[:twitter] %></a></li>
+              <li><a class="email ir" href="mailto:<%= member[:email] %>" title="<%= member[:email] %>">Email <%= member[:first_name] %></a></li>
+            </ul>
+
+          </aside>
+        </div>
+
+        <div class="bd group">
+
+          <hgroup>
+            <h4 class="big fn flush"><%= full_name(member) %></h4>
+            <h5 class="em small"><%= member[:title] %></h5>
+          </hgroup>
+
+          <p><%= member[:summary] %></p>
+
+        </div>
+
       </div>
 
-      <div class="bd group">
-
-        <hgroup>
-          <h3 class="big fn flush"><%= full_name(member) %></h3>
-          <h4 class="em small"><%= member[:title] %></h4>
-        </hgroup>
-
-        <p><%= member[:summary] %></p>
-
-      </div>
-
-    </div>
+    </section>
+    <% end %>
 
   </section>
-  <% end %>
 
 </section>
 
