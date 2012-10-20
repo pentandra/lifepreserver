@@ -76,11 +76,12 @@ company](http://en.wikipedia.org/wiki/Social_business).
 
 According to Wikipedia,
 
-> a <dfn>social business</dfn> is a non-loss, non-dividend company designed to
-> address a social objective within the highly regulated marketplace of today.
-> It is distinct from a non-profit because the business should seek to generate
-> a modest profit but this will be used to expand the company’s reach, improve
-> the product or service or in other ways to subsidize the social mission.
+> a <dfn id="socialbusiness">social business</dfn> is a non-loss, non-dividend
+> company designed to address a social objective within the highly regulated
+> marketplace of today.  It is distinct from a non-profit because the business
+> should seek to generate a modest profit but this will be used to expand the
+> company’s reach, improve the product or service or in other ways to subsidize
+> the social mission.
 {: .bq .grab }
 
 YES!!! We finally found out who we are! The pieces are starting to fit together
