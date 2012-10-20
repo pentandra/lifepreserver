@@ -1,5 +1,6 @@
 ---
 title: Designing For Open Access
+description: what does open access mean to us?
 kind: article
 author_name: Chris Chapman
 created_at: 2012-10-05

@@ -2,7 +2,7 @@
 is_hidden: true
 ---
 
-window.Pentandra = {};
+window.Pentandra = window.Pentandra || {};
 
 Pentandra.Kerning = (function() {
 
@@ -146,6 +146,52 @@ Pentandra.Social = (function() {
 
 }());
 
+Pentandra.Search = (function() {
+
+  function unique(arrayName) {
+    var newArray = new Array();
+    label: for (var i = 0; i < arrayName.length; i++) {
+      for (var j = 0; j < newArray.length; j++) {
+        if (newArray[j] == arrayName[i])
+        continue label;
+      }
+
+      newArray[newArray.length] = arrayName[i];
+    }
+    
+    return newArray;
+  }
+
+  function search(query, callback) {
+    if (!Pentandra.index) {
+      throw new Error("Pentandra.index has not been loaded! Cannot search.");
+    }
+
+    var terms = $.trim(query).replace(/[\W\s_]+/m,' ').toLowerCase().split(/\s+/);
+    var matching_ids = null;
+    for (var i = 0; i < terms.length; i++) {
+      var term = terms[i];
+      var exactmatch = Pentandra.index.terms[term] || [];
+      var approxmatch = Pentandra.index.approximate[term] || [];
+      var ids = unique(exactmatch.concat(approxmatch));
+      if (matching_ids) {
+        matching_ids = $.grep(matching_ids, function(id) {
+          return ids.indexOf(id) != -1;
+        });
+      } else {
+        matching_ids = ids;
+      }
+    }
+    callback($.map(matching_ids, function(id){ return Pentandra.index.items[id]; }))
+  }
+
+  return {
+    search: function(query, callback) {
+      search(query, callback);
+    }
+  };
+
+}());
 
 $(document).ready(function() {
 

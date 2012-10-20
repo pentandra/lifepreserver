@@ -72,3 +72,36 @@ var AccessifyHTML5=function(b){var a={article:{role:"article"},aside:{role:"comp
  * @version     0.2
  * @date        2011-11-05
  */(function(e){var t=function(n,r){var i=!1;try{if(typeof n!="object"||n.nodeType!==1)throw new Error("First argument should be a DOM element");var s,o,u,a=n.getAttribute("data-withinviewport-settings")&&window.JSON?JSON.parse(n.getAttribute("data-withinviewport-settings")):{},r=typeof r=="string"?{sides:r}:r||{},f={sides:r.sides||a.sides||t.defaults.sides||"all",top:r.top||a.top||t.defaults.top||0,right:r.right||a.right||t.defaults.right||0,bottom:r.bottom||a.bottom||t.defaults.bottom||0,left:r.left||a.left||t.defaults.left||0},l={top:function(){return h[1]>=c[1]+f.top},right:function(){return h[0]+n.offsetWidth<=window.innerWidth+c[0]-f.right},bottom:function(){return h[1]+n.offsetHeight<=c[1]+window.innerHeight-f.bottom},left:function(){return h[0]>=c[0]+f.left},all:function(){return l.top()&&l.right()&&l.bottom()&&l.left()}},c=function(){var t=e.body.scrollLeft,n=e.body.scrollTop;return n==0&&(window.pageYOffset?n=window.pageYOffset:n=e.body.parentElement?e.body.parentElement.scrollTop:0),t==0&&(window.pageXOffset?t=window.pageXOffset:t=e.body.parentElement?e.body.parentElement.scrollLeft:0),[t,n]}(),h=function(){var e=n,t=0,r=0;if(e.offsetParent){t=e.offsetLeft,r=e.offsetTop;while(e=e.offsetParent)t+=e.offsetLeft,r+=e.offsetTop}return[t,r]}();s=f.sides.split(" "),o=s.length;while(o--){u=s[o].toLowerCase();if(/top|right|bottom|left|all/.test(u)){if(!l[u]())return!1;i=!0}}return i}catch(p){}finally{return i}};t.prototype.defaults={sides:"all",top:0,right:0,bottom:0,left:0},t.defaults=t.prototype.defaults,window.withinViewport=t,arr="top,right,bottom,left".split(","),i=arr.length;while(i--)side=arr[i],t.prototype[side]=function(e){return t(e,side)},t[side]=t.prototype[side]})(document);
+
+ /**
+  * QueryString
+  * 
+  * Amalgamation from
+  * http://stackoverflow.com/questions/901115/how-can-i-get-query-string-values
+  *
+  */
+(function($) {
+
+  $.QueryString = (function(name) {
+    if (name == "") return {};
+    var b = {};
+    for (var i = 0; i < name.length; ++i) {
+      var param = name[i].split('=');
+      if (param.length != 2) continue;
+      b[param[0]] = decodeURIComponent(param[1].replace(/\+/g, ' '));
+    }
+
+    return b;
+  })(window.location.search.substr(1).split('&'));
+
+})(jQuery);
+
+/*
+    jQuery `input` special event v1.2
+    http://whattheheadsaid.com/projects/input-special-event
+
+    (c) 2010-2011 Andy Earnshaw
+    forked by dodo (https://github.com/dodo)
+    MIT license
+    www.opensource.org/licenses/mit-license.php
+*/(function(e,t){function l(t){return e(t).prop("contenteditable")=="true"||t.tagName in a}var n=".inputEvent ",r="bound.inputEvent",i="value.inputEvent",s="delegated.inputEvent",o=["input","textInput","propertychange","paste","cut","keydown","keyup","drop",""].join(n),u=["focusin","mouseover","dragstart",""].join(n)+o,a={TEXTAREA:t,INPUT:t},f={paste:t,cut:t,keydown:t,drop:t,textInput:t};e.event.special.txtinput={setup:function(t,n,a){function a(t){var n=t.target;window.clearTimeout(c),c=null;if(v)return;t.type in f&&!c?c=window.setTimeout(function(){n.value!==e.data(n,i)&&(e(n).trigger("txtinput"),e.data(n,i,n.value))},0):t.type=="propertychange"?t.originalEvent.propertyName=="value"&&(e(n).trigger("txtinput"),e.data(n,i,n.value),v=!0,window.setTimeout(function(){v=!1},0)):(e(n).trigger("txtinput"),e.data(n,i,n.value),v=!0,window.setTimeout(function(){v=!1},0))}var c,h,p=this,d=e(this),v=!1;l(p)?(h=e.data(p,r)||0,h||d.bind(o,a),e.data(p,r,++h),e.data(p,i,p.value)):d.bind(u,function(t){var n=t.target;l(n)&&!e.data(p,s)&&(h=e.data(n,r)||0,h||(e(n).bind(o,a),a.apply(this,arguments)),e.data(p,s,!0),e.data(n,r,++h),e.data(n,i,n.value))})},teardown:function(){var t=e(this);t.unbind(u),t.find("input, textarea").andSelf().each(function(){bndCount=e.data(this,r,(e.data(this,r)||1)-1),bndCount||t.unbind(o)})}},e.fn.input=function(t){return t?e(this).bind("txtinput",t):this.trigger("txtinput")}})(jQuery);

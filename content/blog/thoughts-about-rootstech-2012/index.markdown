@@ -1,5 +1,6 @@
 ---
 title: Thoughts About RootsTech 2012
+description: classifications of the future of genealogical software
 kind: article
 author_name: Chris Chapman
 created_at: 2012-04-17

@@ -1,5 +1,6 @@
 ---
 title: Success in Failure
+description: while we didn't win, we succeeded
 kind: article
 author_name: Katie Chapman
 created_at: 2012-05-21
