@@ -25,7 +25,7 @@ preprocess do
     tag_set(publishing_articles).each do |tag|
       items << Nanoc::Item.new(
         "<%= render('tag',  :tag => '#{tag}') %>",
-        { :title => "Tag: #{tag}" },
+        { :title => "Tag: #{tag}", :is_hidden => true },
         "/tags/#{tag}/",
         :binary => false
       )
@@ -37,7 +37,7 @@ preprocess do
     authors(publishing_articles).each do |author|
       items << Nanoc::Item.new(
         "<%= render('author', :author => '#{author}') %>",
-        { :title => "Articles by #{author}" },
+        { :title => "Articles by #{author}", :is_hidden => true },
         "/authors/#{author.to_slug}/",
         :binary => false
       )
@@ -51,7 +51,7 @@ preprocess do
     years.each do |year|
       items << Nanoc::Item.new(
         "<%= render('blog_archive', :year => #{year}) %>",
-        { :title => "Articles from #{year}" },
+        { :title => "Articles from #{year}", :is_hidden => true },
         "/blog/#{year}/",
         :binary => false
       )
@@ -60,7 +60,7 @@ preprocess do
 
   def mark_unpublished_articles_as_hidden
     articles.each do |article|
-      if not $include_drafts && (article[:published].nil? || article[:published] == false)
+      if not article[:published] || $include_drafts
         article[:is_hidden] = true
       end
     end
