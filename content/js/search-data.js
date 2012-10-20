@@ -1,3 +1,7 @@
+---
+is_hidden: true
+---
+
 function unique(arrayName)
  {
     var newArray = new Array();

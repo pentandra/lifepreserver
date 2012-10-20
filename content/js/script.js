@@ -1,6 +1,6 @@
-/* Author:
-
-*/
+---
+is_hidden: true
+---
 
 window.Pentandra = {};
 

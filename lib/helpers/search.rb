@@ -36,7 +36,8 @@ module Search
   } unless defined?(STOP_WORDS)
 
   def search_terms_for(item)
-    if item.identifier =~ /^\/(blog|research|products|company|open)/
+    puts item.identifier
+    if item.identifier !~ /^\/(js|css|404)/
       content = item.rep_named(:default).compiled_content
       doc = Nokogiri::HTML(content)
       full_text = doc.css("p, h1, h2, h3, h4, h5, h6").map{|el| el.inner_text}.join(" ")
