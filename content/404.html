@@ -3,17 +3,163 @@ title: Page Not Found :(
 is_hidden: true
 ---     
 
-<h1>Not found <span>:(</span></h1>
-<div>
-  <p>Sorry, but the page you were trying to view does not exist.</p>
-  <p>It looks like this was the result of either:</p>
-  <ul>
-    <li>a mistyped address</li>
-    <li>an out-of-date link</li>
-  </ul>
+<div class="group">
+  <h1>Not found <span>:(</span></h1>
+
+  <div class="bd">
+
+  </div>
 </div>
-  
+<section class="noted section">
+
+  <h2>Can We Help?</h2>
+
+  <div class="bd">
+
+    <p>
+      
+      Sorry, but the page you were trying to view does not exist.
+
+    </p>
+    <p>
+      
+      It's likely that this was the result of either:
+    
+    </p>
+    <ul>
+      <li>a mistyped address</li>
+      <li>an out-of-date link</li>
+    </ul>
+    
+    <div class="banner grab section">
+
+      <div class="fancy wrapper group">
+
+        <noscript>
+          <p>
+
+            Searching requires Javascript, though, so if you want to be able to
+            find anything, please enable Javascript.
+
+          </p>
+        </noscript>
+
+        <div class="group">
+          <div class="section inner item">
+            <input type="search" placeholder="Search by keyword..." id="q" autofocus />
+          </div>
+          <div class="aside pod item">
+            <p>
+
+              Enter a keyword to search
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section hidden" id="results">
+
+      <h3>Is this what you were looking for?</h3>
+
+      <p>
+
+        If not, you are welcome to enter a keyword above and search for it!
+
+      </p>
+
+      <ol id="results-list"></ol>
+
+    </div>
+
+  </div>
+
+</section>
+<section class="noted section">
+
+  <h2>If that didn't work</h2>
+
+  <div class="bd">
+
+    <p> 
+
+      Let's try a full-text search from Google.
+
+    </p>
+
+    <div class="banner rev section">
+
+      <form method="GET" action="http://www.google.com/search" id="google" class="fancy wrapper group">
+
+        <div class="section">
+          <div class="section inner item">
+            <input type="search" placeholder="Search Google..." name="q" id="gq" />
+          </div>
+          <div class="aside pod item">
+            <input type="submit" class="button" value="Google Search" />
+          </div>
+        </div>
+      </form>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+<% content_for :javascripts do %>
+<script src="/js/search-data.js?v=<%= @site.config[:version] %>"></script>
 <script>
-  var GOOG_FIXURL_LANG = (navigator.language || '').slice(0,2), GOOG_FIXURL_SITE = location.host;
+  $(function() {
+    var search = Pentandra.Search.search,
+        searchInput = $("input#q"),
+        searchDomain = $.url("<%= @site.config[:base_url] %>").attr('host');
+        notFoundSegments = $.url().segment();
+
+    searchInput.input(function() {
+      search(this.value, displayResults);
+    });
+
+    $("#google").submit(function(e) {
+      var q = window.encodeURIComponent(this["q"].value),
+          url = "http://www.google.com/search?q=site:"+searchDomain+" "+q;
+
+      window.location = url;
+      return false;
+    });
+
+    if (notFoundSegments) {
+      var query = notFoundSegments.join(" ");
+
+      searchInput.val(query);
+      searchInput.trigger("txtinput");
+
+      $("#gq").val(query);
+    }
+
+  });
+
+  function displayResults(items) {
+    if (items.length > 0) {
+      var html = "";
+
+      for (var i = 0; i < items.length; i++) {
+        var description = '';
+        if (items[i].desc) { 
+          description = ' / ' + items[i].desc;
+        }
+
+        html += '<li><p><a href="'+items[i].url+'">'+items[i].title+'</a>'+description+'</p></li>';
+      }
+      $("ol#results-list").html(html);
+      $("#results").removeClass("hidden");
+    } else {
+      $("#results").addClass("hidden");
+      $("ol#results-list").html("");
+    }
+  }
 </script>
-<script src="http://linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js"></script>
+<% end %>

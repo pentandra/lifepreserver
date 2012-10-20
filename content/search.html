@@ -28,13 +28,22 @@ is_hidden: true
           <p>
 
             Searching requires Javascript, though, so if you want to be able to
-            find anything, please enable Javascript!
+            find anything, please enable Javascript.
 
           </p>
         </noscript>
 
-        <div class="section">
-          <input class="inner" type="search" placeholder="Search by keyword..." name="q" id="q" autofocus />
+        <div class="group">
+          <div class="section inner item">
+            <input class="inner" type="search" placeholder="Search by keyword..." name="q" id="q" autofocus />
+          </div>
+          <div class="aside pod item">
+            <p>
+
+              Enter a keyword to search
+
+            </p>
+          </div>
         </div>
       </form>
 
@@ -56,7 +65,7 @@ is_hidden: true
 <script>
   $(function() {
     var search = Pentandra.Search.search,
-        query = $.QueryString["q"],
+        query = $.url().param("q"),
         searchInput = $("input#q");
 
     searchInput.input(function() {
@@ -64,7 +73,7 @@ is_hidden: true
     });
 
     if (query) {
-      searchInput.val(query);
+      searchInput.val(window.decodeURIComponent(query));
       searchInput.trigger("txtinput");
     }
 

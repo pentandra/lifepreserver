@@ -234,7 +234,7 @@ a.permalink {
 
 // Content classes
 
-a.button, .tags a {
+a.button, input.button, .tags a {
 
   text-align: center;
   @include pie;
@@ -253,12 +253,17 @@ a.button, .tags a {
   }
 }
 
-a.button {
+a.button, input.button {
   font-size: $base-font-size - 1;
   line-height: $base-line-height * 2;
   display: block;
 
   @include border-radius($default-radius);
+}
+
+input.button {
+  border: 0;
+  padding: 0;
 }
 
 [rel="reference"] {
@@ -409,7 +414,7 @@ a.button {
   color: $pentandra-white;
 }
 
-.rev a.button, .grab a.button {
+.rev a.button, .rev input.button, .grab a.button {
 
   color: $pentandra-brown;
   background-color: $pentandra-white;
