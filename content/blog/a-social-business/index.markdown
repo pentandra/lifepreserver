@@ -4,7 +4,7 @@ kind: article
 author_name: Chris Chapman
 created_at: 2012-10-18
 updated_at: 2012-10-18
-published: false
+published: true
 tags:
   - Decisions
   - Funding
