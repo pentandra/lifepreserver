@@ -10,19 +10,8 @@ tags:
   - Funding
 ---
 
-<div about="a_perplexed_window_cleaner.jpg" xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="aside img">
-  <img src="a_perplexed_window_cleaner.jpg" alt="A perplexed window cleaner" class="static" />
-  <div class="small">
-
-    <span property="dct:title">A perplexed window cleaner</span>, complete with
-    ladder, looking up at Capital House outside of the Edgeware Road
-    Underground station. This image is by
-    <a href="http://www.geograph.org.uk/profile/1621" rel="cc:attributionURL dct:creator" property="cc:attributionName">Stephen McKay</a>
-    and licensed under a
-    <a href="http://creativecommons.org/licenses/by-sa/3.0" rel="license"><abbr>CC-BY-SA</abbr></a> license.
-    
-  </div>
-</div>
+![A Social Business](social-business.png){: .static .retina }
+{: .aside .img }
 
 We have had an identity crisis lately as we have tried to figure out who we
 really are as a company. Since the beginning of this whole venture, we have
@@ -30,6 +19,8 @@ felt like we have been straddling the fence between a profit and non-profit
 organization in our desires to promote research and grow in the way we envision
 yet have the community support that is so critical in the future of research.
 We wanted a business structure that took the best parts from both!
+
+<!--MORE-->
 
 We have a <a href="/company#mission">mission</a> that is really the
 most important reason that we are doing this to begin with---and we believe in
@@ -39,8 +30,6 @@ to deal with the funding limitations and red tape of the <span
 class="oldstyle">501</span>(c)<span class="oldstyle">(3)</span>. We just want
 to focus on our mission. On the other hand, we don't want the fact that we are
 a for-profit company to deter people from supporting what we are doing.
-
-<!--MORE-->
 
 Originally, we felt strongly about doing this as a for-profit company so we
 would have the flexibility we need to do whatever it took to promote our
@@ -95,27 +84,27 @@ According to Wikipedia,
 {: .bq .grab }
 
 YES!!! We finally found out who we are! The pieces are starting to fit together
-now. We _can_ use business to help solve the problems with research! It is
-funny, since this doesn't really change our plans or our approach, but, hey,
-I'll take validation wherever I can find it! It is nice to know what type of
-company we are and to be able to tell someone else now, too. This definition is
-very much in line with what we have hoped to build this company to be. And I
-think it gives us some stuff to work on and much more focused direction to
-take.
+now. We _can_ use the power of business to help solve the problems with
+research! It is funny, since this doesn't drastically change our plans or
+approach, but, hey, I'll take validation wherever I can find it! It is nice to
+know what type of company we are and to be able to tell someone else now, too.
+This definition is very much in line with what we have hoped to build this
+company to be. And I think it gives us some stuff to work on and much more
+focused direction to take.
 
 ![Be the change](bthechangebadge.jpg){: .static }
 {: .aside .img }
 
 We are not alone in this. A non-profit by the name of [B
 Lab](http://www.bcorporation.net/what-are-b-corps/the-non-profit-behind-b-corps)
-has created a certification (and a legislation in some states) called a <abbr>B
-Corporation</abbr>, or benefit corporation. They say, "By voluntarily meeting
-higher standards of transparency, accountability, and performance, Certified
-<abbr>B Corps</abbr> are distinguishing themselves in a cluttered marketplace
-by offering a positive vision of a better way to do business." They have put
-together a governance model to make being a better business easier and more
-transparent.  We are excited at the prospect of becoming a <abbr>B Corp</abbr>
-in the future, so stay tuned!
+has created a certification (and an actual entity through legislation in some
+states) called a <abbr>B Corporation</abbr>, or benefit corporation. They say,
+"By voluntarily meeting higher standards of transparency, accountability, and
+performance, Certified <abbr>B Corps</abbr> are distinguishing themselves in a
+cluttered marketplace by offering a positive vision of a better way to do
+business." They have put together a governance model to make being a better
+business easier and more transparent.  We are excited at the prospect of
+becoming a <abbr>B Corporation</abbr> in the future, so stay tuned!
 
 You may argue, "But is research good for society?" If you're reading this post,
 I probably don't have to convince you of that.[^goodforsociety]
@@ -123,5 +112,5 @@ I probably don't have to convince you of that.[^goodforsociety]
 
 
 [^goodforsociety]: It is thanks to research that the Internet and this post has
-    been brought to you today. A better question might be, "Is this post good
+    been brought to you today. A better question might be, "Is this _post_ good
     for society?"
