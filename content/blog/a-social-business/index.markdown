@@ -13,39 +13,40 @@ tags:
 ![A Social Business](social-business.png){: .static .retina }
 {: .aside .img }
 
-We have had an identity crisis lately as we have tried to figure out who we
-really are as a company. Since the beginning of this whole venture, we have
-felt like we have been straddling the fence between a profit and non-profit
-organization in our desires to promote research and grow in the way we envision
-yet have the community support that is so critical in the future of research.
-We wanted a business structure that took the best parts from both!
+We have gone through an identity crisis recently as we have tried to figure out
+who we really are as a company. Since the beginning of this whole venture, we
+have felt like we have been straddling the fence between a profit and
+non-profit organization in our desires to promote research and grow in the way
+we envision yet have the community support that is so critical for the future
+of research. We wanted a business structure that took the best parts from
+both!
 
 <!--MORE-->
 
-We have a <a href="/company#mission">mission</a> that is really the
-most important reason that we are doing this to begin with---and we believe in
-it. We are so excited about it. But at the same time we have some great
-business ideas to promote this new paradigm of research. We don't want to have
-to deal with the funding limitations and red tape of the <span
+We have a <a href="/company#mission">mission</a> that is the most important
+reason that we are doing all this to begin with---and we believe in it. We are
+so excited about it. But at the same time we have some great business ideas to
+promote this new paradigm of research. We don't want to have to deal with the
+funding limitations and red tape of the <span
 class="oldstyle">501</span>(c)<span class="oldstyle">(3)</span>. We just want
 to focus on our mission. On the other hand, we don't want the fact that we are
 a for-profit company to deter people from supporting what we are doing.
 
 Originally, we felt strongly about doing this as a for-profit company so we
-would have the flexibility we need to do whatever it took to promote our
-mission, and also so we could generate sufficient profits to extend our reach
-for good as far as we can. We wanted to be self-sufficient and not have to
-worry about the success of the next fundraising campaign.
+could have the flexibility to do whatever it took to promote our mission and
+generate sufficient profits to extend our reach for good as far as possible. We
+also wanted to be self-sufficient and not have to worry about the success of
+the next fundraising campaign.
 
-Having gone down this path, one thing we have wondered about is how do we rally
-researchers, scholars, academics, and others behind us if we are a for-profit
-company? Isn't this the domain of the not-for-profits? 
+As a for-profit company, one thing we have wondered about is how do we rally
+researchers, scholars, academics, and others behind us? Isn't this the domain
+of the not-for-profits? 
 
-After thinking about it some more, I thought of some companies that I have come
-to admire. All of them are run by people who have a higher vision for what
-business can be. These are good companies started by good people that think
+After thinking about it some more, I remembered some companies that I have come
+to admire. All of them are run by people who have a higher vision of what
+business can be. They are good companies started by good people that think
 businesses can be more than heartless profit machines. They have what is
-sometimes referred to as a double or triple bottom line (people, planet,
+sometimes referred to as a double or triple bottom line (people, planet, and
 profit). One such business, Ben & Jerry's Homemade, Inc. (you know, the yummy
 ice cream), gives <span class="oldstyle">7.5</span> percent of their before-tax
 profits to charity and purchases brownies from a bakery that hires people from
@@ -64,14 +65,15 @@ world of venture capital investing. Does it have to be this way?
 
 ## Social What?
 
-I must admit, they didn't teach us much about this in business school. When I
-first heard of [social
+I must admit, they didn't teach us much about this in business school. Being a
+researcher at heart, I decided to try to find an answer to my question. I found
+some really cool things. When I stumbled across the term [social
 enterprise](http://en.wikipedia.org/wiki/Social_enterprise), I thought it was
 referring to an organization that is really good at using Facebook. Nope. In
 this context, social refers to society---as in _for the good of society_. It
 turns out this is a label for the type of business that we are trying to build!
-I cannot tell you how thrilled I was to find out that [a social enterprise can
-be structured as a for-profit
+I cannot tell you how thrilled I was when I found out that [a social enterprise
+can be structured as a for-profit
 company](http://en.wikipedia.org/wiki/Social_business).
 
 According to Wikipedia,
@@ -89,29 +91,30 @@ now. We _can_ use the power of business to help solve the problems with
 research! It is funny, since this doesn't drastically change our plans or
 approach, but, hey, I'll take validation wherever I can find it! It is nice to
 know what type of company we are and to be able to tell someone else now, too.
-This definition is very much in line with what we have hoped to build this
-company to be. And I think it gives us some stuff to work on and much more
-focused direction to take.
+This definition is very much in line with what we hope this company will be.
+And I think it gives us some stuff to work on and a much more focused direction
+to take.
 
 ![Be the change](bthechangebadge.jpg){: .static }
 {: .aside .img }
 
 We are not alone in this. A non-profit by the name of [B
 Lab](http://www.bcorporation.net/what-are-b-corps/the-non-profit-behind-b-corps)
-has created a certification (and an actual entity through legislation in some
-states) called a <abbr>B Corporation</abbr>, or benefit corporation. They say,
-"By voluntarily meeting higher standards of transparency, accountability, and
-performance, Certified <abbr>B Corps</abbr> are distinguishing themselves in a
-cluttered marketplace by offering a positive vision of a better way to do
-business." They have put together a governance model to make being a better
-business easier and more transparent.  We are excited at the prospect of
-becoming a <abbr>B Corporation</abbr> in the future, so stay tuned!
+has created a certification (and an actual business entity by legislation in
+some states) called a <abbr>B Corporation</abbr>, or benefit corporation.  They
+say, "By voluntarily meeting higher standards of transparency, accountability,
+and performance, Certified <abbr>B Corps</abbr> are distinguishing themselves
+in a cluttered marketplace by offering a positive vision of a better way to do
+business." They have put together a governance model to help businesses
+maintain this high level of transparency, accountability, and performance. We
+are excited at the prospect of becoming a <abbr>B Corp</abbr> in the
+future, so stay tuned!
 
 You may argue, "But is research good for society?" If you're reading this post,
 I probably don't have to convince you of that.[^goodforsociety]
 {: .conclusion }
 
 
-[^goodforsociety]: It is thanks to research that the Internet and this post has
-    been brought to you today. A better question might be, "Is this _post_ good
-    for society?"
+[^goodforsociety]: It is thanks to research that the Internet and this post
+    have been brought to you today. A better question might be, "Is this _post_
+    good for society?"
