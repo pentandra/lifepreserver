@@ -318,7 +318,6 @@ input.button {
       height: $hole-diameter;
       background: $pentandra-white;
       @include border-radius(2px);
-      @include pie;
     }
   }
 
