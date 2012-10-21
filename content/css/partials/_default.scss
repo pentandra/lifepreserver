@@ -257,7 +257,7 @@ $theteam-height: $base-line-height * 12;
 .logo { 
   @include grid(3);
   height: $base-line-height * 1.5;
-  background: transparent center center no-repeat url('/images/pentandra-logo.png');
+  background: transparent left top no-repeat url('/images/pentandra-logo.png');
 }
 
 .rev .logo, .grab .logo {
