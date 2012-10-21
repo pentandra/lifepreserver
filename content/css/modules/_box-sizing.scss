@@ -10,5 +10,7 @@
   @include experimental(box-sizing, $bs,
     -moz, -webkit, not -o, not -ms, not -khtml, official
   );
+
+  // For IE6 and IE7
   *behavior: url(/css/boxsizing.htc);
 }

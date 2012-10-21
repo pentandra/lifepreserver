@@ -9,7 +9,7 @@ published: true
 tags:
   - Funding
   - GrowAm
-has_video: true
+has_media: true
 ---
 
 For the past couple of months we've had the chance to participate in the 
