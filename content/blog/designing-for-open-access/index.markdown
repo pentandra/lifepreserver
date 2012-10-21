@@ -11,7 +11,7 @@ tags:
   - Opinionated
   - Genealogy
   - Essay
-has_video: true
+has_media: true
 ---
  
 ![Open Access Logo](openaccess.png){: .static }
