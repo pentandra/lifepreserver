@@ -228,6 +228,7 @@ a.permalink {
 
   border: $border-width solid $pentandra-brown;
   width: $photo-width;
+  height: $photo-width; // For IE8
   margin-bottom: ($base-line-height * 7) - $photo-width;
   @include box-sizing(border-box);
 }
