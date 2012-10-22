@@ -99,10 +99,10 @@ Originally, we felt strongly about doing this as a for-profit company so we
 could have the flexibility to do whatever it took to promote our mission and
 generate sufficient profits to extend our reach for good as far as possible. We
 also wanted to be self-sufficient and not have to worry about the success of
-the next fundraising campaign. We also don't think that taxpayer-funded
-companies are the best way to go either. Relying on grants has its own perils
-in these days of uncertain politics. I don't like the idea staking our
-company's revenue or future on them. 
+the next fundraising campaign. We don't think that a taxpayer-funded company is
+the best way to go either. Relying on grants has its own perils in these days
+of uncertain politics. I don't like the idea staking our company's revenue or
+future completely upon them. 
 
 After thinking about it some more, I remembered some companies that I have come
 to admire. All of them are run by people who have a higher vision of what
@@ -118,10 +118,10 @@ more like them?
 In a way, it's funny to think about this right now. We are still pre-revenue.
 Yet, I think _now_ is the time to make these decisions. Funding choices made
 early in a company's existence can limit options later on. In general, tech
-companies are not known for their philanthropy and humanitarian generosities.
+startups are not known for their philanthropy and humanitarian generosities.
 In too many instances, they are characterized more by a high-velocity scramble
 to reach the next round of funding, at the same time giving little thought to
-what it takes to actually build a self-sufficient, lasting enterprise. Burnout
+what it actually takes to build a self-sufficient, lasting enterprise. Burnout
 hits too soon for too many. Much of this problem stems from the dog-eat-dog
 world of venture capital investing.[^shareholders] Does it have to be this way?
 
@@ -162,10 +162,10 @@ structuring this way.
 [Google.org](http://news.blogs.nytimes.com/2006/09/14/philanthropy-googles-way-not-the-usual/),
 was structured as a for-profit charity. It was an experiment by Google to
 change the way philanthropies are administered. While some problems arose in
-Google.org's implementation, it is not limited in the ways that traditional
-non-profit organizations are limited. For example, it can create or invest in
-businesses, lobby Congress, and seek funding from venture capitalists. It also
-pays income taxes.
+Google.org's implementation, their structure is not limited in the ways that
+traditional non-profit organizations are limited. For example, it can create or
+invest in businesses, lobby Congress, and seek funding from venture
+capitalists. It also pays income taxes.
 
 We differ the most from Google.org in that we need to make a profit to survive
 and to promote our mission, and maybe this is where Google.org went wrong. It
@@ -187,9 +187,9 @@ and performance, Certified <abbr>B Corps</abbr> are distinguishing themselves
 in a cluttered marketplace by offering a positive vision of a better way to do
 business." They have put together a governance model to help businesses
 maintain this high level of transparency, accountability, and performance. This
-governance model can be _baked_ into state laws and even into corporate bylaws.
-We are excited at the prospect of becoming a <abbr>B Corp</abbr> in the future,
-so stay tuned!
+governance model can be _baked_ into corporate bylaws and even state laws.  We
+are excited at the prospect of becoming a <abbr>B Corp</abbr> in the future, so
+stay tuned!
 
 You may argue, "But is research good for society?" If you're reading this post,
 I probably don't have to convince you of that.[^goodforsociety]
