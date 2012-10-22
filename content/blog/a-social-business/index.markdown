@@ -4,7 +4,7 @@ description: our identity crisis and how we overcame it
 kind: article
 author_name: Chris Chapman
 created_at: 2012-10-18
-updated_at: 2012-10-18
+updated_at: 2012-10-22
 published: true
 tags:
   - Decisions
@@ -43,6 +43,45 @@ As a for-profit company, one thing we have wondered about is how do we rally
 researchers, scholars, academics, and others behind us? Isn't this the domain
 of the not-for-profits? 
 
+Martin Weller, Professor of Educational Technology at [The Open
+University](http://www.open.ac.uk/), stated[^OA-Swindle]:
+
+> I’ve heard Stephen Downes say that as soon as any form of commercial
+> enterprise touches education it ruins it (or words to that effect). I
+> wouldn’t go that far, I think for instance that commercial companies often
+> make a better job of software and technology than universities, but academic
+> publishing is such an odd business that maybe it doesn’t make sense as a
+> commercial enterprise. As David Wiley so nicely parodies in his [trucker’s
+> parable](http://chronicle.com/blogs/wiredcampus/david-wiley-the-parable-of-the-inventorthe-trucker/7244),
+> there isn’t really another industry like it. Academics (paid by the taxpayer
+> or students) provide free content, and then the same academics provide free
+> services (editorship and peer-review) and then hand over rights and ownership
+> to a commercial company, who provide a separate set of services, and then
+> sell back the content to the same group of academics.
+>
+> I know a few people who work in commercial publishing, and they are smart,
+> good people who genuinely care about promoting knowledge and publishing as a
+> practice. This is not a cry for such people to be out on the streets, but
+> rather for their skills and experience to be employed by and for
+> universities, the research communities and the taxpayer rather than for
+> shareholders. In this business Downes’ contamination theory seems to hold,
+> there is simply no space in the ecosystem for profit to exist, and when it
+> does it corrupts the whole purpose of the enterprise, which is to share and
+> disseminate knowledge.
+{: .bq .grab }
+
+Past indiscretions of commercial companies has tainted the pool of scholarly
+publishing. How can we think that we can avoid these pitfalls?
+
+Our vision of <a href="/research#future">the future of research</a> is so
+different from the modus operandi of scholarly publishing right now, that I
+think we have a fighting chance of making a difference without falling into the
+traps of the current commercial publishers. We are also researchers, and
+achieving our mission is more important to us than how much profit we bring in
+(though we need to be profitable to survive). It is businesses that have come
+into this market with a limited, profit-centric view that have embezzled the
+industry.
+
 After thinking about it some more, I remembered some companies that I have come
 to admire. All of them are run by people who have a higher vision of what
 business can be. They are good companies started by good people that think
@@ -62,7 +101,7 @@ In too many instances, they are characterized more by a high-velocity scramble
 to reach the next round of funding, at the same time giving little thought to
 what it takes to actually build a self-sufficient, lasting enterprise. Burnout
 hits too soon for too many. Much of this problem stems from the dog-eat-dog
-world of venture capital investing. Does it have to be this way?
+world of venture capital investing.[^shareholders] Does it have to be this way?
 
 ## Social What?
 
@@ -96,10 +135,28 @@ This definition is very much in line with what we hope this company will be.
 And I think it gives us some stuff to work on and a much more focused direction
 to take.
 
+We are not alone in this. Other companies are seeing the benefit of structuring
+this way.
+[Google.org](http://news.blogs.nytimes.com/2006/09/14/philanthropy-googles-way-not-the-usual/),
+was structured as a for-profit charity. It was an experiment by Google to
+change the way philanthropies are administered. While some problems arose in
+Google.org's implementation, it is not limited in the ways that traditional
+non-profit organizations are limited. For example, it can create or invest in
+businesses, lobby Congress, and seek funding from venture capitalists. It also
+pays income taxes.
+
+We differ the most from Google.org in that we need to make a profit to survive
+and to promote our mission, and maybe this is where Google.org went wrong. It
+acted like a non-profit when [it was really a for-profit
+organization](http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=all).
+We want to keep our options open, and have the best from both worlds. Yet when
+times get tight, how can we maintain this status and not fall into the greedy
+trap of commercialism?
+
 ![Be the change](bthechangebadge.jpg){: .static }
 {: .aside .img }
 
-We are not alone in this. A non-profit by the name of [B
+A non-profit by the name of [B
 Lab](http://www.bcorporation.net/what-are-b-corps/the-non-profit-behind-b-corps)
 has created a certification (and an actual business entity by legislation in
 some states) called a <abbr>B Corporation</abbr>, or benefit corporation.  They
@@ -107,9 +164,10 @@ say, "By voluntarily meeting higher standards of transparency, accountability,
 and performance, Certified <abbr>B Corps</abbr> are distinguishing themselves
 in a cluttered marketplace by offering a positive vision of a better way to do
 business." They have put together a governance model to help businesses
-maintain this high level of transparency, accountability, and performance. We
-are excited at the prospect of becoming a <abbr>B Corp</abbr> in the
-future, so stay tuned!
+maintain this high level of transparency, accountability, and performance. This
+governance model can be _baked_ into corporate bylaws and even into state laws.
+We are excited at the prospect of becoming a <abbr>B Corp</abbr> in the future,
+so stay tuned!
 
 You may argue, "But is research good for society?" If you're reading this post,
 I probably don't have to convince you of that.[^goodforsociety]
@@ -119,3 +177,10 @@ I probably don't have to convince you of that.[^goodforsociety]
 [^goodforsociety]: It is thanks to research that the Internet and this post
     have been brought to you today. A better question might be, "Is this _post_
     good for society?"
+
+[^OA-Swindle]: From the blog post [The great Open Access
+    swindle](http://blog.okfn.org/2012/10/22/the-great-open-access-swindle/), a
+    guest post on the Open Knowledge Foundation's blog.
+
+[^shareholders]: This is one reason we have been so careful about our
+    shareholders.
