@@ -41,7 +41,7 @@ Martin Weller, Professor of Educational Technology at [The Open
 University](http://www.open.ac.uk/), stated:
 
 <figure class="bq grab">
-  <blockquote>
+  <blockquote cite="http://blog.okfn.org/2012/10/22/the-great-open-access-swindle">
     <p>
 
       I’ve heard Stephen Downes say that as soon as any form of commercial
@@ -146,7 +146,7 @@ According to Wikipedia,
 > should seek to generate a modest profit but this will be used to expand the
 > company’s reach, improve the product or service or in other ways to subsidize
 > the social mission.
-{: .bq .grab }
+{: .bq .grab cite="http://en.wikipedia.org/wiki/Social_business" }
 
 YES!!! We finally found out who we are! The pieces are starting to fit together
 now. We _can_ use the power of business to help solve the problems with
