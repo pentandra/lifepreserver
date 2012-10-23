@@ -87,13 +87,16 @@ University](http://www.open.ac.uk/), stated:
 Past indiscretions of commercial companies has tainted the provenient pool of
 scholarly publishing. How can we avoid these pitfalls?
 
-Our vision of <a href="/research#future">the future of research</a> is so
-different from the modus operandi of scholarly publishing, that I think we have
-a fighting chance of making a difference without falling into the traps of the
-current commercial publishers. We are also researchers, and achieving our
-mission is more important to us than how much profit we bring in (though we
-need to be profitable to survive). It is those that have come into this market
-with a limited, profit-centric view that have embezzled the industry.
+Within the current publishing paradigm we agree with Weller---there is no space
+for profit to exist without imposing tariffs on either the inputs or outputs of
+knowledge dissemination. But our vision of
+<a href="/research#future">the future of research</a> is so different from the
+modus operandi of scholarly publishing, that I think we have a fighting chance
+of making a difference without falling into the traps of the current commercial
+publishers. We are also researchers, and achieving our mission is more
+important to us than how much profit we bring in (though we need to be
+profitable to survive). It is those that have come into this market with a
+limited, profit-centric view that have embezzled the industry.
 
 Originally, we felt strongly about doing this as a for-profit company so we
 could have the flexibility to do whatever it took to promote our mission and
