@@ -4,7 +4,7 @@ description: our identity crisis and how we overcame it
 kind: article
 author_name: Chris Chapman
 created_at: 2012-10-18
-updated_at: 2012-10-22
+updated_at: 2012-10-23
 published: true
 tags:
   - Decisions
@@ -89,16 +89,16 @@ scholarly publishing. How can we avoid these pitfalls?
 
 Within the current publishing paradigm we agree with Weller---there is no space
 for profit to exist without imposing tariffs on either the inputs or the
-outputs of knowledge dissemination. But our vision of
-<a href="/research#future">the future of research</a> is so different from the
-modus operandi of scholarly publishing, that I think we have a fighting chance
-of making a difference without falling into the traps of the current commercial
-publishers. Our business model does not restrict the dissemination of
-knowledge, but is based on providing tools and services that help with the
-actual process of research. We are also researchers and have [a mission to
-lower the barriers to research](/company/#p[WaaTia],h[WaaTia,3]). It is those
-that have come into this market with a limited, profit-centric view that have
-embezzled the industry.
+outputs of knowledge dissemination. Those with narrow, profit-centric views
+have embezzled the scholarly community, in the process setting themselves up as
+the gatekeepers of knowledge dissemination.
+
+Our vision of <a href="/research#future">the future of research</a> is so
+different from the modus operandi of scholarly publishing, that I think we have
+a fighting chance of making a difference without falling into the traps of the
+current commercial publishers. Our business model does not restrict the
+dissemination of knowledge, but is based on providing tools and services that
+help with the actual process of research.
 
 Originally, we felt strongly about doing this as a for-profit company so we
 could have the flexibility to do whatever it took to promote our mission and
