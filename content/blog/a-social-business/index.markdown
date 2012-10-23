@@ -4,7 +4,7 @@ description: our identity crisis and how we overcame it
 kind: article
 author_name: Chris Chapman
 created_at: 2012-10-18
-updated_at: 2012-10-22
+updated_at: 2012-10-23
 published: true
 tags:
   - Decisions
