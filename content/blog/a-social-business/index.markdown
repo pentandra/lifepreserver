@@ -41,7 +41,7 @@ Martin Weller, Professor of Educational Technology at [The Open
 University](http://www.open.ac.uk/), stated:
 
 <figure class="bq grab">
-  <blockquote>
+  <blockquote cite="http://blog.okfn.org/2012/10/22/the-great-open-access-swindle">
     <p>
 
       I’ve heard Stephen Downes say that as soon as any form of commercial
@@ -87,13 +87,16 @@ University](http://www.open.ac.uk/), stated:
 Past indiscretions of commercial companies has tainted the provenient pool of
 scholarly publishing. How can we avoid these pitfalls?
 
-Our vision of <a href="/research#future">the future of research</a> is so
-different from the modus operandi of scholarly publishing, that I think we have
-a fighting chance of making a difference without falling into the traps of the
-current commercial publishers. We are also researchers, and achieving our
-mission is more important to us than how much profit we bring in (though we
-need to be profitable to survive). It is those that have come into this market
-with a limited, profit-centric view that have embezzled the industry.
+Within the current publishing paradigm we agree with Weller---there is no space
+for profit to exist without imposing tariffs on either the inputs or outputs of
+knowledge dissemination. But our vision of
+<a href="/research#future">the future of research</a> is so different from the
+modus operandi of scholarly publishing, that I think we have a fighting chance
+of making a difference without falling into the traps of the current commercial
+publishers. We are also researchers, and achieving our mission is more
+important to us than how much profit we bring in (though we need to be
+profitable to survive). It is those that have come into this market with a
+limited, profit-centric view that have embezzled the industry.
 
 Originally, we felt strongly about doing this as a for-profit company so we
 could have the flexibility to do whatever it took to promote our mission and
@@ -146,7 +149,7 @@ According to Wikipedia,
 > should seek to generate a modest profit but this will be used to expand the
 > company’s reach, improve the product or service or in other ways to subsidize
 > the social mission.
-{: .bq .grab }
+{: .bq .grab cite="http://en.wikipedia.org/wiki/Social_business" }
 
 YES!!! We finally found out who we are! The pieces are starting to fit together
 now. We _can_ use the power of business to help solve the problems with
