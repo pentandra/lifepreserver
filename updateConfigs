@@ -1,0 +1,7 @@
+#!/bin/sh
+
+rsync \
+  -vz \
+  -e "ssh -i /home/chris/.ssh/pentandraec2key.pem" \
+  --rsync-path="sudo rsync" \
+  {nginx.conf,mime.types} ec2-user@pentandra.com:/etc/nginx/
