@@ -1,23 +1,19 @@
-# this file is used by the nginx.conf
-
 types {
   text/html                             html htm shtml;
   text/css                              css;
-  # application/rss+xml causes some browsers to start a download
-  text/xml                              xml rss;
-  image/gif                             gif;
-  image/jpeg                            jpeg jpg;
-  # http://www.rfc-editor.org/rfc/rfc4329.txt
-  application/javascript                js;
-  application/atom+xml                  atom;
-
   text/cache-manifest                   manifest appcache;
   text/mathml                           mml;
   text/plain                            txt;
   text/vnd.sun.j2me.app-descriptor      jad;
   text/vnd.wap.wml                      wml;
   text/x-component                      htc;
+  text/x-vcard                          vcf;
 
+  # JavaScript
+  application/javascript                js jsonp;
+  application/json                      json;
+
+  # Images
   image/png                             png;
   image/svg+xml                         svg svgz;
   image/tiff                            tif tiff;
@@ -25,8 +21,11 @@ types {
   image/webp                            webp;
   image/x-icon                          ico;
   image/x-jng                           jng;
-  image/x-ms-bmp                        bmp;
+  image/bmp                             bmp;
+  image/gif                             gif;
+  image/jpeg                            jpeg jpg;
 
+  application/xml                       rss atom xml rdf;
   application/java-archive              jar war ear;
   application/mac-binhex40              hqx;
   application/msword                    doc;
@@ -34,7 +33,6 @@ types {
   application/postscript                ps eps ai;
   application/rtf                       rtf;
   application/vnd.ms-excel              xls;
-  application/vnd.ms-fontobject         eot;
   application/vnd.ms-powerpoint         ppt;
   application/vnd.wap.wmlc              wmlc;
   application/xhtml+xml                 xhtml;
@@ -42,8 +40,9 @@ types {
   application/vnd.google-earth.kmz      kmz;
   application/x-7z-compressed           7z;
   application/x-chrome-extension        crx;
+  application/x-opera-extension         oex;
+  application/x-xpinstall               xpi;
   application/x-cocoa                   cco;
-  application/x-font-ttf                ttf ttc;
   application/x-java-archive-diff       jardiff;
   application/x-java-jnlp-file          jnlp;
   application/x-makeself                run;
@@ -56,7 +55,6 @@ types {
   application/x-stuffit                 sit;
   application/x-tcl                     tcl tk;
   application/x-x509-ca-cert            der pem crt;
-  application/x-xpinstall               xpi;
   application/zip                       zip;
 
   application/octet-stream              bin exe dll;
@@ -66,13 +64,17 @@ types {
   application/octet-stream              msi msp msm;
   application/octet-stream              safariextz;
 
+  # Audio
   audio/midi                            mid midi kar;
   audio/mpeg                            mp3;
   audio/ogg                             oga ogg;
+  audio/mp4                             m4a f4a f4b aac;
   audio/x-realaudio                     ra;
   audio/x-wav                           wav;
 
+  # Video
   video/3gpp                            3gpp 3gp;
+  video/mp4                             mp4 m4v f4v f4p;
   video/mpeg                            mpeg mpg;
   video/ogg                             ogv;
   video/quicktime                       mov;
@@ -83,6 +85,9 @@ types {
   video/x-ms-wmv                        wmv;
   video/x-msvideo                       avi;
 
-  font/opentype                         otf;
-  font/woff                             woff;
+  # Webfonts
+  application/vnd.ms-fontobject         eot;
+  application/x-font-ttf                ttf ttc;
+  application/x-font-opentype           otf;
+  application/x-font-woff               woff;
 }
