@@ -439,6 +439,11 @@ input.button {
   }
 }
 
+.grab .emHighlight {
+  color: $pentandra-red;
+  background-color: $pentandra-white;
+}
+
 .shadow {
   @include single-box-shadow($pentandra-brown, 0, 0, 10px);
 }
