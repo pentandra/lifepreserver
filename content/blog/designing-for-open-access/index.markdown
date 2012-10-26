@@ -3,8 +3,8 @@ title: Designing For Open Access
 description: what does open access mean to us?
 kind: article
 author_name: Chris Chapman
-created_at: 2012-10-05
-updated_at: 2012-10-05
+created_at: 2012-10-24
+updated_at: 2012-10-24
 published: false
 tags: 
   - Open Access
@@ -14,52 +14,69 @@ tags:
 has_media: true
 ---
  
-![Open Access Logo](openaccess.png){: .static }
+![Open Access Logo](open_access.jpg){: .static }
 {: .aside .img }
 
-I have been thinking a lot about open access lately and how it relates to what
-we are trying to accomplish at Pentandra. I'm not going to go into the details
-of open access here---you can read about that
-[elsewhere](http://en.wikipedia.org/wiki/Open_access)---but I do want to discuss
-what it means to us and how that influences our approach to software design.
+This week is [Open Access Week](http://openaccessweek.org/)! I have been
+thinking a lot about open access lately and how it relates to what we are
+trying to accomplish at Pentandra. I'm not going to go into the details of open
+access here (you can read about that
+[elsewhere](http://en.wikipedia.org/wiki/Open_access)), but I *do* want to
+discuss what it means to us and how that influences our approach to software
+design.
 
 In general, scholarly research is being published the same way it has been
-published since the beginning of scholarly publishing (or at least since
-[Johannes Gutenberg](http://en.wikipedia.org/wiki/Johannes_Gutenberg) was
-around). In recent years, the venerable research paper has evolved from a
-simple paper publication to a complex digital publication as a PDF. This rather
-small change has made research papers much cheaper to distribute, making ideas
-like open access financially feasible. So when people talk about open access,
-they are talking about offering the results of publicly-funded research
-(research papers and sometimes the underlying data as well) to the public over
-the Internet for free.
+published since the beginning of scholarly publishing (with the <a
+href="http://en.wikipedia.org/wiki/Journal_des_s%C3%A7avans"><cite>Journal des
+sçavans</cite></a> and the <a
+href="http://en.wikipedia.org/wiki/Philosophical_Transactions_of_the_Royal_Society"><cite>Philosophical
+Transactions of the Royal Society</cite></a> in <span
+class="oldstyle">1665</span>). With the passing of _a lot_ of time and the
+advancements of the digital age, the venerable research paper has evolved from
+a paper-only publication to a digital publication as well, usually taking the
+form of a PDF. While the research paper is being published increasingly in this
+modern-day medium, it still closely resembles its thin, fibrous counterpart.
+However, the digital medium has made research papers much cheaper to
+distribute, making ideas like open access financially feasible.
 
 <!--MORE-->
 
-We support the principles behind open access. It just makes sense for the
-public to be able to have open access to the research it paid for in the first
-place. Researchers like open access because it enables their research to have a
-broader dissemination and a subsequently larger impact. Pretty much, the only
-people that don't like it are the journal publishers.[^anti-OA] Open access
-effectively flips their business model upside down.
+In the lingua franca of the current open access movement, <dfn
+id="openaccess">open access</dfn> means allowing unrestricted access to the
+results of publicly-funded research (journal articles and sometimes the
+underlying data as well) to the public over the Internet for free.
 
-The problem is that publishers don't want these research papers distributed
-freely. They want them behind a paywall so they can continue to profit from
-their business model, which is based primarily on journal subscriptions. This
-approach has been working great for them for the last
-<span class="oldstyle">100+</span> years. Making a profit is not bad---but
-they are in a position to charge whatever they want for journals and get away 
-with it. And they do. They get all the profits, but they do not add much
+We support the principles behind the open access movement. As I quoted Martin
+Weller in [a previous post](/blog/a-social-business/#p[IhSApb],h[IhSApb,4]), it
+just makes sense for the public to be able to have open access to the research
+it paid for in the first place. Researchers like open access because it enables
+their research to have a broader dissemination and a subsequently larger
+impact.
+
+Pretty much, the only people that don't like open access are the journal
+publishers.[^anti-OA] Open access effectively flips their business model upside
+down.  The problem is that publishers don't want these research papers
+distributed freely. They want them behind a paywall so they can continue to
+profit from their business model, which is based primarily on journal
+subscriptions. This approach has been working great for them for the last <span
+class="oldstyle">100+</span> years. Making a profit is not bad---but they are
+in a position to charge whatever they want for journals and get away with it.
+And they do. They get all the profits, but they do not add much
 value[^pubvalue] to the research that is donated to them. Journal subscription
-costs continue to rise <span class="oldstyle">5--7<span class="symbol">%</span></span>
-each year as library budgets are shrinking. Yet these publishers have
-consistently netted over <span class="oldstyle">35<span class="symbol">%</span></span>
-per year, while all the refereeing, writing, and editing is done for them for
-free by researchers. Large academic libraries in the UK (and I'm sure it is a
-similar cost here in the states) end up paying over
-<span class="oldstyle"><span class="symbol">£</span>1,000,000</span> a year
-for research that was donated to these insatiable institutions, quite possibly
-by members of their own faculty!
+costs continue to rise <span class="oldstyle">5--7<span
+class="symbol">%</span></span> each year as library budgets are shrinking. Yet
+these publishers have consistently netted over <span class="oldstyle">35<span
+class="symbol">%</span></span> per year, while all the refereeing, writing, and
+editing is done for them for free by researchers. Large academic libraries in
+the UK (and I'm sure it is a similar cost here in the states) end up paying
+over <span class="oldstyle"><span class="symbol">£</span>1,000,000</span> a
+year for research that was donated to these insatiable institutions, quite
+possibly by members of their own faculty!
+
+The fact that this practice has persisted for almost <span
+class="oldstyle">350</span> years is kind of mind-boggling. I guess there
+really was no other option until the Internet came along with a better way to
+publish.
 
 C'mon, publishers, are you so comfortable with your modus operandi that you
 require legislation to perpetuate your antiquated business model? There are
@@ -188,7 +205,7 @@ question or two below that interests you and hear what they have to say:
       The London Bureau of
       <a href="http://english.ruvr.ru/" rel="external">The Voice of Russia</a>
       interviews several open access advocates, including Ross Mounce, from the 
-      <a href="okfn.org">Open Knowledge Foundation</a>, Rita Gardner, the
+      <a href="http://okfn.org">Open Knowledge Foundation</a>, Rita Gardner, the
       director of the Royal Geographic Society, Bjorn Brembs, Professor at the
       Department of Genetics at the University of Leipzig, and Timothy Gowers,
       Math Professor at Cambridge University.
@@ -470,7 +487,7 @@ As always, I would love to hear your thoughts.
     <span class="oldstyle">60<span class="symbol">%</span></span> by 
     <span class="oldstyle">2016</span>.
 
-*[PDF]: Portable Document Format
+*[PDF]:
 *[FRPAA]: Federal Research Public Access Act
 *[NIH]: National Institutes of Health
 *[EU]:
