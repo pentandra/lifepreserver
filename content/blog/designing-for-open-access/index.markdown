@@ -20,10 +20,8 @@ has_media: true
 This week is [Open Access Week](http://openaccessweek.org/)! I have been
 thinking a lot about open access lately and how it relates to what we are
 trying to accomplish at Pentandra. I'm not going to go into the details of open
-access here (you can read about that
-[elsewhere](http://en.wikipedia.org/wiki/Open_access)), but I *do* want to
-discuss what it means to us and how that influences our approach to software
-design.
+access here,[^OA-Overview] but I *do* want to discuss what it means to us and
+how that influences our approach to software design.
 
 In general, scholarly research is being published the same way it has been
 published since the beginning of scholarly publishing (with the <a
@@ -31,13 +29,14 @@ href="http://en.wikipedia.org/wiki/Journal_des_s%C3%A7avans"><cite>Journal des
 sçavans</cite></a> and the <a
 href="http://en.wikipedia.org/wiki/Philosophical_Transactions_of_the_Royal_Society"><cite>Philosophical
 Transactions of the Royal Society</cite></a> in <span
-class="oldstyle">1665</span>). With the passing of _a lot_ of time and the
-advancements of the digital age, the venerable research paper has evolved from
-a paper-only publication to a digital publication as well, usually taking the
-form of a PDF. While the research paper is being published increasingly in this
-modern-day medium, it still closely resembles its thin, fibrous counterpart.
-However, the digital medium has made research papers much cheaper to
-distribute, making ideas like open access financially feasible.
+class="oldstyle">1665</span>). With the passing of almost <span
+class="oldstyle">350</span> years and the advancements of the digital age, the
+venerable research paper has evolved from a paper-only publication to a digital
+publication as well, usually taking the form of a PDF. While the research paper
+is being published increasingly in this modern-day medium, it still closely
+resembles its thin, fibrous counterpart.  However, the digital medium has made
+research papers much cheaper to distribute, making ideas like open access
+financially feasible.
 
 <!--MORE-->
 
@@ -63,20 +62,18 @@ class="oldstyle">100+</span> years. Making a profit is not bad---but they are
 in a position to charge whatever they want for journals and get away with it.
 And they do. They get all the profits, but they do not add much
 value[^pubvalue] to the research that is donated to them. Journal subscription
-costs continue to rise <span class="oldstyle">5--7<span
-class="symbol">%</span></span> each year as library budgets are shrinking. Yet
-these publishers have consistently netted over <span class="oldstyle">35<span
-class="symbol">%</span></span> per year, while all the refereeing, writing, and
-editing is done for them for free by researchers. Large academic libraries in
-the UK (and I'm sure it is a similar cost here in the states) end up paying
-over <span class="oldstyle"><span class="symbol">£</span>1,000,000</span> a
-year for research that was donated to these insatiable institutions, quite
-possibly by members of their own faculty!
+costs continue to rise <span class="oldstyle">5--7</span> percent each year as
+library budgets are shrinking. Yet these publishers have consistently netted
+over <span class="oldstyle">35</span> percent each year, while all the
+refereeing, writing, and editing is done for them for free by researchers.
+Large academic libraries in the UK (and I'm sure it is a similar cost here in
+the states) end up paying over <span class="oldstyle"><span
+class="symbol">£</span>1,000,000</span> a year for research that was donated to
+these insatiable institutions, quite possibly by members of their own faculty!
 
-The fact that this practice has persisted for almost <span
-class="oldstyle">350</span> years is kind of mind-boggling. I guess there
-really was no other option until the Internet came along with a better way to
-publish.
+The fact that this practice has persisted for so long is kind of mind-boggling.
+I guess there really was no other option until the Internet came along with a
+better way to publish.
 
 C'mon, publishers, are you so comfortable with your modus operandi that you
 require legislation to perpetuate your antiquated business model? There are
@@ -174,72 +171,6 @@ the problem, effectually [removing the only way to detect it](http://www.nytimes
 Some say that we are entering the
 [beginning of the Dark Ages](http://www.nytimes.com/2012/09/27/us/budget-cuts-to-limit-public-access-to-georgia-archives.html?_r=0#p[WohFyo],h[WohFyo,1])
 for public records.
-
-## A Closer Look
-
-Open access is a complicated and highly-debated topic right now. Many people
-sit on both sides of the fence. A researcher may publish, referee, and even sit
-on editorial boards, all at the same time! If you have a spare half-hour, this
-is a good round-table discussion on open access that gives a deeper look into
-some of the issues. If you don't have much time right now, feel free to pick a
-question or two below that interests you and hear what they have to say:
-
-* [Is open access a good idea?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=1m22s){: .oa-goodidea }
-* [How much does open access cost?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=4m2s){: .oa-cost }
-* [What is the Gold Open Access model?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=11m44s){: .oa-gold }
-* [What can publishers do to add value?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=13m35s){: .oa-value }
-* [How can authors afford Gold Open Access?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=15m31s){: .oa-afford }
-* [Are publishers really necessary for open access?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=16m33s){: .oa-publishers }
-* [What is the Green Open Access model?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=20m38s){: .oa-green }
-* [Are publishers confident in their added value?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=21m24s){: .publisher-value }
-* [Will open access put publishers out of business?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=22m43s){: .publisher-death }
-* [What countries mandate open access right now?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=26m39s){: .oa-promoters }
-
-<figure id="ruvr">
-    <video style="width:100%;height:100%;max-width:100%;" id="player" preload="none" controls="controls">
-      <source type="video/youtube" src="http://www.youtube.com/watch?v=v31zpZ4woOI" />
-    </video>
-  <figcaption class="small">
-    <p> 
-
-      The London Bureau of
-      <a href="http://english.ruvr.ru/" rel="external">The Voice of Russia</a>
-      interviews several open access advocates, including Ross Mounce, from the 
-      <a href="http://okfn.org">Open Knowledge Foundation</a>, Rita Gardner, the
-      director of the Royal Geographic Society, Bjorn Brembs, Professor at the
-      Department of Genetics at the University of Leipzig, and Timothy Gowers,
-      Math Professor at Cambridge University.
-
-    </p>
-  </figcaption>
-</figure>
-
-### The Philosophy Behind It
-
-Peter Suber is considered by many to be the expert on open access.
-
-<figure id="petersuber">
-  
-  <audio id="suberinterview" preload="none" controls="controls">
-    <source src="SuberPodcast_mp3.mp3" type="audio/mpeg"> 
-    <source src="SuberPodcast_ogg.ogg" type="audio/ogg"> 
-  </audio>
-
-  <figcaption class="small">
-    <p>
-
-      In an interview on the Harvard University campus at the 
-      <a href="http://cyber.law.harvard.edu/hoap/Main_Page" rel="external">Berkman Center for Internet and Society</a>,
-      where he is a faculty fellow, Suber says that "the focus of the open
-      access movement is on journal articles for which scholars are not paid,
-      and therefore for which the have nothing to lose and everything to gain
-      by enlarging their audience by putting them online free of
-      charge."
-      <a href="http://dx.doi.org/10.6084/m9.figshare.96368">http://dx.doi.org/10.6084/m9.figshare.96368</a>
-
-    </p>
-  </figcaption>
-</figure>
 
 ## Beyond Fairness
 
@@ -487,6 +418,83 @@ As always, I would love to hear your thoughts.
     <span class="oldstyle">60<span class="symbol">%</span></span> by 
     <span class="oldstyle">2016</span>.
 
+[^OA-Overview]: Open access is a complicated and highly-debated topic right
+    now. Many people sit on both sides of the fence. A researcher may publish,
+    referee, and even sit on editorial boards, all at the same time! If you
+    have a spare half-hour, this is a good round-table discussion on open
+    access that gives a deeper look into some of the issues. If you don't have
+    much time right now, feel free to pick a question or two below that
+    interests you and hear what they have to say:
+
+    * [is open access a good idea?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=1m22s){: .oa-goodidea }
+
+    * [how much does open access cost?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=4m2s){: .oa-cost }
+
+    * [what is the Gold Open Access model?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=11m44s){: .oa-gold }
+
+    * [what can publishers do to add value?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=13m35s){: .oa-value }
+
+    * [how can authors afford Gold Open Access?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=15m31s){: .oa-afford }
+    
+    * [are publishers really necessary for open access?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=16m33s){: .oa-publishers }
+
+    * [what is the Green Open Access model?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=20m38s){: .oa-green }
+
+    * [are publishers confident in their added value?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=21m24s){: .publisher-value }
+
+    * [will open access put publishers out of business?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=22m43s){: .publisher-death }
+ 
+    * [what countries mandate open access right now?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=26m39s){: .oa-promoters }
+
+    <figure id="ruvr" class="section">
+      <div class="inner item">
+        <video style="width:100%;height:100%;max-width:100%;" id="player" preload="none" controls="controls">
+          <source type="video/youtube" src="http://www.youtube.com/watch?v=v31zpZ4woOI" />
+        </video>
+      </div>
+      <figcaption class="small aside item pod">
+        <p> 
+
+          The London Bureau of
+          <a href="http://english.ruvr.ru/" rel="external">The Voice of Russia</a>
+          interviews several open access advocates, including Ross Mounce, from the 
+          <a href="http://okfn.org">Open Knowledge Foundation</a>, Rita Gardner, the
+          director of the Royal Geographic Society, Bjorn Brembs, Professor at the
+          Department of Genetics at the University of Leipzig, and Timothy Gowers,
+          Math Professor at Cambridge University.
+
+        </p>
+      </figcaption>
+    </figure>
+
+    Peter Suber is considered by many to be the expert on open access. He
+    understands the philosophy behind it. In a recent interview he said that
+    "the focus of the open access movement is on journal articles for which
+    scholars are not paid, and therefore for which the have nothing to lose and
+    everything to gain by enlarging their audience by putting them online free
+    of charge."
+    {: .section }
+
+    <figure id="petersuber">
+      
+      <audio id="suberinterview" preload="none" controls="controls">
+        <source src="SuberPodcast_mp3.mp3" type="audio/mpeg"> 
+        <source src="SuberPodcast_ogg.ogg" type="audio/ogg"> 
+      </audio>
+
+      <figcaption class="small">
+        <p>
+
+          An interview with Peter Suber on the Harvard University campus at the
+          <a href="http://cyber.law.harvard.edu/hoap/Main_Page"
+          rel="external">Berkman Center for Internet and Society</a>, where
+          Suber is a faculty fellow.
+          <a href="http://dx.doi.org/10.6084/m9.figshare.96368">http://dx.doi.org/10.6084/m9.figshare.96368</a>
+
+        </p>
+      </figcaption>
+    </figure>
+    
 *[PDF]:
 *[FRPAA]: Federal Research Public Access Act
 *[NIH]: National Institutes of Health
