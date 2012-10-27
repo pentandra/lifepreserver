@@ -206,6 +206,6 @@ $(document).ready(function() {
 
 // Wait until after images have loaded to run baselinejs.
 $(window).load(function() {
-  $('.post img').baseline(26);
+  $('article .bd img').baseline(26);
   $('.bd').emphasis();
 });
