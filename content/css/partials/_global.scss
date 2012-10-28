@@ -105,6 +105,10 @@ ol {
   p {
     font-family: $base-font-family, sans-serif;
   }
+
+  ul {
+    list-style-type: none;
+  }
 }
 
 // Keep the list unified
@@ -437,6 +441,11 @@ input.button {
   &:hover, &:focus {
     background-color: $pentandra-brown;
   }
+}
+
+.grab .emHighlight {
+  color: $pentandra-red;
+  background-color: $pentandra-white;
 }
 
 .shadow {
