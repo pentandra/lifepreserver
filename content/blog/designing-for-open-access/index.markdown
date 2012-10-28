@@ -274,6 +274,8 @@ and thought processes behind those research outputs. We need the whole research
 
 So where does genealogy fit in all this?
 
+Vapor is the only thing holding up many of these conclusions.
+
 In many research fields, researchers advance their careers through journal
 publication. Many of these journals are "held hostage" by some of the big
 publishers, including Elsevier, Wiley, and Springer. However, genealogists do
@@ -322,8 +324,6 @@ up with open access in mind. While there are some exciting advancements in
 current research software,[^utopia] we think that these improvements are
 transitional, and that the future of research lies in open,
 [domain-specific](/research/#p[WtrHwt],h[WtrHwt,2]) research systems.
-
-As always, I would love to hear your thoughts.
 {: .conclusion }
 
 ## Notes
@@ -447,12 +447,10 @@ As always, I would love to hear your thoughts.
     * [what countries mandate open access right now?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=26m39s){: .oa-promoters }
 
     <figure id="ruvr" class="section">
-      <div class="inner item">
-        <video style="width:100%;height:100%;max-width:100%;" id="player" preload="none" controls="controls">
-          <source type="video/youtube" src="http://www.youtube.com/watch?v=v31zpZ4woOI" />
-        </video>
-      </div>
-      <figcaption class="small aside item pod">
+      <video style="width:100%;height:100%;max-width:100%;" id="player" preload="none" controls="controls">
+        <source type="video/youtube" src="http://www.youtube.com/watch?v=v31zpZ4woOI" />
+      </video>
+      <figcaption class="small">
         <p> 
 
           The London Bureau of
@@ -475,7 +473,7 @@ As always, I would love to hear your thoughts.
     of charge."
     {: .section }
 
-    <figure id="petersuber">
+    <figure id="petersuber" class="section">
       
       <audio id="suberinterview" preload="none" controls="controls">
         <source src="SuberPodcast_mp3.mp3" type="audio/mpeg"> 
@@ -494,7 +492,39 @@ As always, I would love to hear your thoughts.
         </p>
       </figcaption>
     </figure>
-    
+
+    And to finish it off, here is a great video by [PhD
+    Comics](http://www.phdcomics.com/tv/):
+    {: .section }
+
+    <figure id="PhD-OA" about="http://www.youtube.com/watch?v=L5rVH1KGBCY"
+                       xmlns:cc="http://creativecommons.org/ns#"
+                       xmlns:dct="http://purl.org/dc/terms/">
+      <video id="oa-explained" style="width:100%;height:100%;max-width:100%;" preload="none" controls="controls">
+        <source type="video/youtube" src="http://www.youtube.com/watch?v=L5rVH1KGBCY" />
+      </video>
+      <figcaption class="small">
+        <p> 
+
+          What is open access? Nick Shockey and Jonathan Eisen take us through
+          the world of open access publishing and explain just what it's all
+          about.
+
+          <a property="dct:title" rel="cc:attributionURL"
+             href="http://www.phdcomics.com/tv/#015">Open Access
+             Explained!</a>,
+          by <a href="http://www.phdcomics.com"
+                property="cc:attributionName"
+                rel="dct:creator">PhD Comics</a>,
+          is licensed under a
+          <a rel="license"
+             href="http://creativecommons.org/licenses/by/3.0/">
+             <abbr>CC-BY</abbr></a> license.
+
+        </p>
+      </figcaption>
+    </figure>
+
 *[PDF]:
 *[FRPAA]: Federal Research Public Access Act
 *[NIH]: National Institutes of Health
@@ -578,6 +608,9 @@ $(document).ready(function() {
     alwaysShowControls: true,
     audioWidth: '100%'
   });
+
+  $("#oa-explained").mediaelementplayer();
+
 });
 
 </script>

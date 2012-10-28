@@ -105,6 +105,10 @@ ol {
   p {
     font-family: $base-font-family, sans-serif;
   }
+
+  ul {
+    list-style-type: none;
+  }
 }
 
 // Keep the list unified
