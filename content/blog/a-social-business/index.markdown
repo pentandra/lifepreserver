@@ -4,7 +4,7 @@ description: our identity crisis and how we overcame it
 kind: article
 author_name: Chris Chapman
 created_at: 2012-10-18
-updated_at: 2012-10-23
+updated_at: 2012-10-26
 published: true
 tags:
   - Decisions
@@ -205,5 +205,5 @@ I probably don't have to convince you of that.[^goodforsociety]
     have been brought to you today. A better question might be, "Is this _post_
     good for society?"
 
-[^shareholders]: This is one reason we have been so careful about our
-    shareholders.
+[^shareholders]: This is one reason we have been so careful in the selection of
+    our shareholders.

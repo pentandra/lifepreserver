@@ -23,7 +23,8 @@ research geeks).
 
 <!--MORE-->
 
-![Katie at our half-table during the Grow America competition](growam2012-katie.jpg){: .aside .static .img }
+![Katie at our half-table during the Grow America competition](growam2012-katie.jpg){: .static }
+{: .aside .img }
 
 It was inspiring and enlightening to see other entrepreneurs going through the
 same things we're going through. We're not the only ones that are young and
