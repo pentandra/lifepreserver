@@ -1,19 +1,3 @@
----
-title: Designing For Open Access
-description: what does open access mean to us?
-kind: article
-author_name: Chris Chapman
-created_at: 2012-10-24
-updated_at: 2012-10-24
-published: false
-tags: 
-  - Open Access
-  - Opinionated
-  - Genealogy
-  - Essay
-has_media: true
----
- 
 ![Open Access Logo](open_access.jpg){: .static }
 {: .aside .img }
 
