@@ -48,7 +48,7 @@ Everyone is an expert in something. In much of the new thought on leadership,
 
 While practitioners discover new things every day, few take the time (or would
 even want to learn _how_) to publish their findings in a scholarly journal. But
-many would and *could* participate in the research process, if there were
+many could and *would* participate in the research process, if there were
 easier ways to do so.
 
 For many in the academic and research communities, the publication of journal
