@@ -78,10 +78,10 @@ interim solutions, it only makes sense to make the process more granular.
 
 What is so cool to me is that someone down in the trenches---not in the ivory
 tower---figured it out. Ms. Stephens is an unusual mix of hairdresser *and*
-archaeologist. We need more researchers like that.
+archaeologist. She is a good example of what I would call a [_bridge builder_](/research/#p[OwgWnb],h[OwgWnb,3]). We need more researchers like that.
 {: .conclusion }
 
-This is such a good example of a [bridge builder](/research/#p[OwgWnb],h[OwgWnb,3]) that I wanted to share it.
+
 
 ## Notes
 
