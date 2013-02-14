@@ -32,14 +32,31 @@ goes home and tries to recreate the hairdos of the ancient Romans. As she
 studied history books and experimented, she couldn't get the hairdos to hold
 together. She persisted and finally had a breakthrough. 
 
-So she decided to write about it. "It's amazing how much chutzpah you have when
-you have no idea what you're doing," she said. I don't write scholarly
-material. I'm a hairdresser." The journal's editor, John Humphrey surmised, "I
-could tell even from the first version that it was a very serious piece of
-experimental archaeology which no scholar who was not a hairdresser---in other
-words, no scholar---would have been able to write."
+The most amazing thing, to me, is that she took the time to publish her
+findings. "It's amazing how much chutzpah you have when you have no idea what
+you're doing," she said. I don't write scholarly material. I'm a hairdresser."
+The journal's editor, John Humphrey surmised, "I could tell even from the first
+version that it was a very serious piece of experimental archaeology which no
+scholar who was not a hairdresser---in other words, no scholar---would have
+been able to write."
 
-This highlights, in my opinion, a dichotomy that exists in academia today.
+This highlights, in my opinion, one of the brightest possibilities for the
+future of research and research collaboration.
+
+We should not leave the discovery of knowledge only to the academically elite.
+Everyone is an expert in something. In much of the new thought on leadership, 
+
+While practitioners discover new things every day, few take the time (or would
+even want to learn _how_) to publish their findings in a scholarly journal. But
+many would and *could* participate in the research process, if there were
+easier ways to do so.
+
+For many in the academic and research communities, the publication of journal
+articles is tied tightly to job continuity and promotion. Yet, scholarly
+writing, in many cases, is too byzantine and impenetrable for human
+consumption. It is almost as if the writers were more concerned about keeping
+the research to themselves rather than freely disseminating it to the
+world.[^1st-journals]
 
 Cross-discipline collaboration is far from commonplace.
 
@@ -54,6 +71,11 @@ journal is printed and mailed out, they editors feel their job is done.
 
 There should be no excuse for researchers to continue working in isolation. 
 
+The current research publication process worked well when the only way to
+publish was in print. We live in a different world now and think that the whole
+publication process needs to be redesigned for this new world. While there are
+interim solutions, it only makes sense to make the process more granular.
+
 What is so cool to me is that someone down in the trenches---not in the ivory
 tower---figured it out. Ms. Stephens is an unusual mix of hairdresser *and*
 archaeologist. We need more researchers like that.
@@ -67,18 +89,24 @@ This is such a good example of a [bridge builder](/research/#p[OwgWnb],h[OwgWnb,
     on Its Head," <i>The Wall Street Journal</i>, February 7, 2013, A1 and A12.
 
 [^ja]: Ms. Stephens' journal article, _Ancient Roman hairdressing: on
-    (hair)pins and needles_, is freely
-    [available for download](http://www.journalofromanarch.com/samples.html)
-    on the journal's website or you may also
-    [download the article directly.](http://www.journalofromanarch.com/samples/v21.110_adj.pdf){: .pdf }
+    (hair)pins and needles_, is
+    [freely available for download](http://www.journalofromanarch.com/samples.html)
+    on the journal's website.
+
+[^1st-journals]: 
+    The original scientific journals, the Philosophical Transactions of the
+    Royal Society and the Journal des sçavans, were created to provide a means
+    of establishing
+    [priority](http://en.wikipedia.org/wiki/Scientific_priority), and not
+    necessarily to disseminate research to the public. Many researchers,
+    including Sir Isaac Newton and Gottfried Wilhelm von Leibniz actually
+    enciphered their findings using anagrams so that the uninformed could not
+    read them! For more information see
+    [Academic
+    Publishing](http://en.wikipedia.org/wiki/Academic_publishing#History) on
+    Wikipedia.
+
 
 [^2]: http://www.thehistoryblog.com/archives/14729
 
 http://en.wikipedia.org/wiki/File:Julia-domna.jpg
-
-<% content_for :javascripts do %>
-<script src="/js/libs/jquery.gdocsviewer.min.js"></script>
-<script>
-  $('a.pdf').gdocsViewer({ width: '100%' });
-</script>
-<% end %>
