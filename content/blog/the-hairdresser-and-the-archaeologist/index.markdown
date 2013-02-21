@@ -53,7 +53,7 @@ ancients used needle and thread to stitch together their hair designs.
 
 The most remarkable thing to me, however, is that she took the time to publish
 her findings. "It's amazing how much chutzpah you have when you have no idea
-what you're doing," she said. I don't write scholarly material. I'm a
+what you're doing," she said. "I don't write scholarly material. I'm a
 hairdresser." The journal's editor, John Humphrey surmised, "I could tell even
 from the first version that it was a very serious piece of experimental
 archaeology which no scholar who was not a hairdresser---in other words, no
