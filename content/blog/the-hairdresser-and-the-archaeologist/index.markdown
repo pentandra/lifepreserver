@@ -2,8 +2,8 @@
 title: The Hairdresser and the Archaeologist 
 kind: article
 author_name: Chris Chapman
-created_at: 2013-02-12
-updated_at: 2013-02-12
+created_at: 2013-02-20
+updated_at: 2013-02-20
 published: false
 tags:
   - Connections
@@ -26,8 +26,8 @@ tags:
 
 I don't know much about hairdos, especially those that were in vogue <span
 class="oldstyle">1500</span> years ago. But it turns out that the experts may
-not have known everything there is to know about them either. Last week, on the
-front page of the Wall Street Journal was [a
+not have known everything there is to know about them either. A couple weeks
+ago, on the front page of the Wall Street Journal was [a
 story](http://online.wsj.com/article/SB10001424127887324900204578286272195339456.html)[^1]
 about a very unusual hairdresser named Janet Stephens. 
 
