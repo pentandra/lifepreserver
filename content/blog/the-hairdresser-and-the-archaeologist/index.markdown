@@ -3,7 +3,7 @@ title: The Hairdresser and the Archaeologist
 kind: article
 author_name: Chris Chapman
 created_at: 2013-02-20
-updated_at: 2013-02-20
+updated_at: 2013-02-21
 published: true
 tags:
   - Connections
