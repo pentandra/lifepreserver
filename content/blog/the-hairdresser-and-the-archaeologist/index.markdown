@@ -129,8 +129,8 @@ need more researchers like that.
 
     The original scientific journals, the <cite>Philosophical Transactions of
     the Royal Society</cite> and the <cite>Journal des sçavans</cite>, were
-    created to provide a means of establishing
-    [priority](http://en.wikipedia.org/wiki/Scientific_priority), and not
+    created primarily to provide a means of establishing [scientific
+    priority](http://en.wikipedia.org/wiki/Scientific_priority), and not
     necessarily to disseminate research to the public. Many researchers,
     including Sir Isaac Newton and Gottfried Wilhelm von Leibniz actually
     enciphered their findings using anagrams so that the uninformed could not
