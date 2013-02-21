@@ -63,7 +63,7 @@ This highlights, in my opinion, one of the brightest possibilities for the
 future of research and research collaboration: we should not leave all of the
 discovery of knowledge to the academically elite. One of my favorite authors,
 Meg Wheatley, writes about the new thought on leadership and organization,
-which can also be applied to research:
+can also be applied to research:
 
 <figure class="bq grab">
   <blockquote>
