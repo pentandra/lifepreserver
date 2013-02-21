@@ -9,11 +9,20 @@ tags:
   - Connections
   - Holism
   - Opinionated
-has_media: true
 ---
 
-![Coin of Julia Domna I](Julia-domna.jpg){: .static }
-{: .aside .img }
+<figure about="/blog/the-hairdresser-and-the-archaeologist/Julia-domna.jpg"
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:cc="http://creativecommons.org/ns#" class="aside img">
+  <img src="/blog/the-hairdresser-and-the-archaeologist/Julia-domna.jpg" alt="Coin of Julia Domna I" class="static" />
+  <figcaption class="small">
+    This image, entitled <span property="dct:title">Coin of Julia Domna</span>,
+    by 
+    <a href="http://en.wikipedia.org/wiki/User:Rasiel" property="cc:attributionName" rel="cc:attributionURL dct:creator">Rasiel Suarez</a>
+    is licensed under a 
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><abbr>CC-BY-SA</abbr> license</a>.
+  </figcaption>
+</figure>
 
 I don't know much about hairdos, especially those that were in vogue <span
 class="oldstyle">1500</span> years ago. But it turns out that the experts may
@@ -28,60 +37,83 @@ Ms. Stephens is a hairdresser by trade, but has done something not very many
 hairdressers before her have done. She has published research[^ja] in an
 academic journal---the [Journal of Roman
 Archaeology](http://www.journalofromanarch.com/). Apparently after work she
-goes home and tries to recreate the hairdos of the ancient Romans. As she
-studied history books and experimented, she couldn't get the hairdos to hold
-together. She persisted and finally had a breakthrough. 
+goes home and tries to recreate the hairdos of the ancient Romans. But as she
+studied the history books and conducted experiments, she couldn't get the
+hairdos to hold together. Nevertheless, she persisted and finally had a
+breakthrough:
 
-The most amazing thing, to me, is that she took the time to publish her
-findings. "It's amazing how much chutzpah you have when you have no idea what
-you're doing," she said. I don't write scholarly material. I'm a hairdresser."
-The journal's editor, John Humphrey surmised, "I could tell even from the first
-version that it was a very serious piece of experimental archaeology which no
-scholar who was not a hairdresser---in other words, no scholar---would have
-been able to write."
+> Studying translations of Roman literature, Ms. Stephens says, she realized
+> the Latin term "acus" was probably being misunderstood in the context of
+> hairdressing. Acus has several meanings including a "single-prong hairpin" or
+> "needle and thread," she says. Translators generally went with "hairpin."
+{: .bq .grab }
+
+All of her research and experimentation seemed to point to the fact that the
+ancients used needle and thread to stitch together their hair designs.
+
+The most remarkable thing to me, however, is that she took the time to publish
+her findings. "It's amazing how much chutzpah you have when you have no idea
+what you're doing," she said. I don't write scholarly material. I'm a
+hairdresser." The journal's editor, John Humphrey surmised, "I could tell even
+from the first version that it was a very serious piece of experimental
+archaeology which no scholar who was not a hairdresser---in other words, no
+scholar---would have been able to write."
 
 This highlights, in my opinion, one of the brightest possibilities for the
-future of research and research collaboration.
+future of research and research collaboration: we should not leave all of the
+discovery of knowledge to the academically elite. One of my favorite authors,
+Meg Wheatley, writes about the new thought on leadership and organization,
+which can also be applied to research:
 
-We should not leave the discovery of knowledge only to the academically elite.
-Everyone is an expert in something. In much of the new thought on leadership, 
+<figure class="bq grab">
+  <blockquote>
+    <p>
+
+      In the traditional model, we leave the interpretation of data to senior
+      or expert people. A few people, charged with interpreting the data,
+      observe only a few potentialities contained within that data. How often
+      do we even think about all the data that goes unnoticed because we rely
+      on these solitary observations?
+
+    </p>
+    <p>
+        
+      ... It would seem that the more participants we engage in this
+      participative universe, the more we can access its potentials and the
+      wiser we can become.  We banish the ghosts of this ghostly universe by
+      engaging in a different pattern of behavior---one in which more and more
+      of us are included in the process of observing what is going on, and
+      contributing our unique interpretations to the organization.
+
+    </p>
+  </blockquote>
+  <figcaption>--- Margaret J. Wheatley, from <cite>Leadership and the New Science</cite>, pp. <span class="oldstyle">66--67</span></figcaption>
+</figure>
 
 While practitioners discover new things every day, few take the time (or would
-even want to learn _how_) to publish their findings in a scholarly journal. But
-many could and *would* participate in the research process, if there were
-easier ways to do so.
+even want to learn _how_) to publish their findings in a scholarly journal.
+But I think many could and *would* participate in the research process, if
+there were easier ways to do so.
 
-For many in the academic and research communities, the publication of journal
-articles is tied tightly to job continuity and promotion. Yet, scholarly
-writing, in many cases, is too byzantine and impenetrable for human
-consumption. It is almost as if the writers were more concerned about keeping
-the research to themselves rather than freely disseminating it to the
-world.[^1st-journals]
+As a side thought, for many in the academic and research communities, the
+publication of journal articles is tied tightly to job continuity and
+promotion. Yet, scholarly writing, in many cases, is too byzantine and
+impenetrable for human consumption. It is almost as if the writers were more
+concerned about keeping the research to themselves rather than freely
+disseminating it to the world.[^1st-journals]
 
-Cross-discipline collaboration is far from commonplace.
-
-It is natural for people of likemindedness to come together. Mathmaticians
-enjoy talking with other mathmaticians. It is easy to relate to each other.
-Journals have been created because like-minded academicians and researchers
-said, "Why don't we create a journal for our field?" However, in this era of
-interconnected-ness it is not enough anymore. We can't stop there! We have to
-reach beyond our field and connect our research to everything else. There are
-thousands of journals out there, but they mostly exist in isolation. Once the
-journal is printed and mailed out, they editors feel their job is done. 
-
-There should be no excuse for researchers to continue working in isolation. 
-
+There should be no excuse for researchers to continue working in isolation.
 The current research publication process worked well when the only way to
-publish was in print. We live in a different world now and think that the whole
-publication process needs to be redesigned for this new world. While there are
-interim solutions, it only makes sense to make the process more granular.
+publish involved printed paper. We live in a different world now and the
+publication process needs to be redesigned for this new world.
 
-What is so cool to me is that someone down in the trenches---not in the ivory
-tower---figured it out. Ms. Stephens is an unusual mix of hairdresser *and*
-archaeologist. She is a good example of what I would call a [_bridge builder_](/research/#p[OwgWnb],h[OwgWnb,3]). We need more researchers like that.
+Either way, what is so cool to me is that someone down in the trenches---not in
+the ivory tower---figured it out. Ms. Stephens had a different perspective and
+could discern the existing holes in logic that the "experts" couldn't see. She
+is an unusual mix of hairdresser *and* archaeologist and is a good example of
+what I would call a [_bridge builder_](/research/#p[OwgWnb],h[OwgWnb,3]). We
+need more researchers like that.
 {: .conclusion }
-
-
 
 ## Notes
 
@@ -105,8 +137,3 @@ archaeologist. She is a good example of what I would call a [_bridge builder_](/
     [Academic
     Publishing](http://en.wikipedia.org/wiki/Academic_publishing#History) on
     Wikipedia.
-
-
-[^2]: http://www.thehistoryblog.com/archives/14729
-
-http://en.wikipedia.org/wiki/File:Julia-domna.jpg
