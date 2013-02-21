@@ -3,7 +3,7 @@ title: The Hairdresser and the Archaeologist
 kind: article
 author_name: Chris Chapman
 created_at: 2013-02-20
-updated_at: 2013-02-20
+updated_at: 2013-02-21
 published: true
 tags:
   - Connections
@@ -63,7 +63,7 @@ This highlights, in my opinion, one of the brightest possibilities for the
 future of research and research collaboration: we should not leave all of the
 discovery of knowledge to the academically elite. One of my favorite authors,
 Meg Wheatley, writes about the new thought on leadership and organization,
-which can also be applied to research:
+can also be applied to research:
 
 <figure class="bq grab">
   <blockquote>
@@ -126,14 +126,14 @@ need more researchers like that.
     on the journal's website.
 
 [^1st-journals]: 
-    The original scientific journals, the Philosophical Transactions of the
-    Royal Society and the Journal des sçavans, were created to provide a means
-    of establishing
-    [priority](http://en.wikipedia.org/wiki/Scientific_priority), and not
+
+    The original scientific journals, the <cite>Philosophical Transactions of
+    the Royal Society</cite> and the <cite>Journal des sçavans</cite>, were
+    created primarily to provide a means of establishing [scientific
+    priority](http://en.wikipedia.org/wiki/Scientific_priority), and not
     necessarily to disseminate research to the public. Many researchers,
     including Sir Isaac Newton and Gottfried Wilhelm von Leibniz actually
     enciphered their findings using anagrams so that the uninformed could not
-    read them! For more information see
-    [Academic
+    read them! For more information see [Academic
     Publishing](http://en.wikipedia.org/wiki/Academic_publishing#History) on
     Wikipedia.
