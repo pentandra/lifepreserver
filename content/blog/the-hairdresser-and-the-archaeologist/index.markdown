@@ -11,7 +11,7 @@ tags:
   - Opinionated
 ---
 
-<figure about="/blog/the-hairdresser-and-the-archaeologist/Julia-domna.jpg"
+<figure about="http://pentandra.com/blog/the-hairdresser-and-the-archaeologist/Julia-domna.jpg"
     xmlns:dct="http://purl.org/dc/terms/"
     xmlns:cc="http://creativecommons.org/ns#" class="aside img">
   <img src="/blog/the-hairdresser-and-the-archaeologist/Julia-domna.jpg" alt="Coin of Julia Domna I" class="static" />
