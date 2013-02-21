@@ -4,7 +4,7 @@ kind: article
 author_name: Chris Chapman
 created_at: 2013-02-20
 updated_at: 2013-02-20
-published: false
+published: true
 tags:
   - Connections
   - Holism
