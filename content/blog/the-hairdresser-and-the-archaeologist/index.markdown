@@ -3,7 +3,7 @@ title: The Hairdresser and the Archaeologist
 kind: article
 author_name: Chris Chapman
 created_at: 2013-02-20
-updated_at: 2013-02-21
+updated_at: 2013-03-02
 published: true
 tags:
   - Connections
@@ -63,7 +63,7 @@ This highlights, in my opinion, one of the brightest possibilities for the
 future of research and research collaboration: we should not leave all of the
 discovery of knowledge to the academically elite. One of my favorite authors,
 Meg Wheatley, writes about the new thought on leadership and organization,
-can also be applied to research:
+which can also be applied to research:
 
 <figure class="bq grab">
   <blockquote>
