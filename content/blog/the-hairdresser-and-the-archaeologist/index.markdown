@@ -40,13 +40,11 @@ Archaeology](http://www.journalofromanarch.com/). Apparently after work she
 goes home and tries to recreate the hairdos of the ancient Romans. But as she
 studied the history books and conducted experiments, she couldn't get the
 hairdos to hold together. Nevertheless, she persisted and finally had a
-breakthrough:
-
-> Studying translations of Roman literature, Ms. Stephens says, she realized
-> the Latin term "acus" was probably being misunderstood in the context of
-> hairdressing. Acus has several meanings including a "single-prong hairpin" or
-> "needle and thread," she says. Translators generally went with "hairpin."
-{: .bq .grab }
+breakthrough. Quoting from the newspaper article: "Studying translations of
+Roman literature, Ms. Stephens says, she realized the Latin term 'acus' was
+probably being misunderstood in the context of hairdressing. Acus has several
+meanings including a 'single-prong hairpin' or 'needle and thread,' she says.
+Translators generally went with 'hairpin.'"
 
 All of her research and experimentation seemed to point to the fact that the
 ancients used needle and thread to stitch together their hair designs.
