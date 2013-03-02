@@ -1,5 +1,6 @@
 ---
 title: The Hairdresser and the Archaeologist 
+description: the need to involve more people in research
 kind: article
 author_name: Chris Chapman
 created_at: 2013-02-20
