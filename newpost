@@ -5,6 +5,8 @@ MONTH=$(date +%m)
 DAY=$(date +%d)
 /bin/echo -n "Enter title: "
 read RAW_TITLE
+/bin/echo -n "Enter description: "
+read DESCRIPTION
 /bin/echo -n "Enter your name: "
 read AUTHOR
 
@@ -14,6 +16,7 @@ mkdir content/blog/$TITLE
 
 echo "---
 title: $RAW_TITLE
+description: $DESCRIPTION
 kind: article
 author_name: $AUTHOR
 created_at: $YEAR-$MONTH-$DAY
