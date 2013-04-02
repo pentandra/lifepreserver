@@ -102,7 +102,7 @@
 
         <div class="logo section"></div>
 
-        <div class="nav section">
+        <div class="nav">
           <ul>
             <li><a href="/research/#future">The Future of Research</a></li>
             <li><%= link_to('Research 101', '/research/process/') %></li>
@@ -111,19 +111,23 @@
           </ul>
         </div>
 
-        <div class="section">
-          <small class="em">Version <%= @config[:version] %></small>
-        </div>
-
-        <div class="section">
-          <small class="bold">&#169; <a href="/">Pentandra Research Solutions, Inc.</a></small>
-        </div>
-
       </div>
 
     </div>
 
-    <a class="button backtotop">Back to top</a>
+    <div class="section">
+      <a class="button backtotop">Back to top</a>
+    </div>
+
+    <div class="group">
+      <div>
+        <small class="bold">&#169; <a href="/">Pentandra Research Solutions, Inc.</a></small>
+      </div>
+      <div>
+        <small class="em">Version <%= @config[:version] %></small>
+      </div>
+    </div>
+
 
   </div>
 </footer>
