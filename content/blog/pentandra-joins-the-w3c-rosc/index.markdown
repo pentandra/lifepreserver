@@ -5,7 +5,7 @@ kind: article
 author_name: Chris Chapman
 created_at: 2013-04-19
 updated_at: 2013-04-19
-published: false
+published: true
 tags:
   - Open Access
   - Open Research
