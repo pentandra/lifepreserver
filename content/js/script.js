@@ -124,6 +124,7 @@ Pentandra.Social = (function() {
     },
 
     buttons: {
+      googlePlus: { annotation: 'none' },
       linkedin: { counter: 'right' },
       twitter: { via: 'PentandraInc', related: 'geungle' }
     },
