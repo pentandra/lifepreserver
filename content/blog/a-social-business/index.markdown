@@ -82,8 +82,6 @@ University](http://www.open.ac.uk/), stated:
   </figcaption>
 </figure>
 
-{: .bq .grab }
-
 Past indiscretions of commercial companies has tainted the provenient pool of
 scholarly publishing. How can we avoid these pitfalls?
 
