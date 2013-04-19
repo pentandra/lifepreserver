@@ -45,4 +45,12 @@ We are really excited to be part of this change in the way research has been
 disseminated for hundreds of years.
 {: .conclusion }
 
+PS---We live in a world of acronym soup, and when we saw the acronym for ROSC
+we had a good laugh. We have been working on a soon-to-be-open-source project
+composed of the domain-agnostic guts of Geungle---essentially based on the
+model of a case. We have named the project ROC. A funny coincidence of similar
+naming! _(Watch for an announcement about ROC soon!)_
+
 *[W3C]: World Wide Web Consortium
+*[ROSC]: Research Object for Scholarly Communication
+*[ROC]: Open Research Core
