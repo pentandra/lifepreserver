@@ -102,16 +102,48 @@ ul {
 ol {
   font-family: $special-font-family, serif;
 
+  // Display the number without the period
+/*
+  list-style-type: none;
+
+  & > li {
+    counter-increment: customlistcounter;
+  }
+
+  & > li:before {
+    content: counter(customlistcounter) " ";
+    float: left;
+    margin-left: -1.2em;
+  }
+
+  &:first-child {
+    counter-reset: customlistcounter;
+  }
+  
+*/
   p {
+    // Use base font for the actual text of the list
     font-family: $base-font-family, sans-serif;
   }
 
   ul {
     list-style-type: none;
+    margin-bottom: 0;
+  }
+
+  ol {
+    // Nested lists
+    padding-left: 1.5em;
+    list-style-type: lower-alpha;
+    margin-bottom: 0;
   }
 }
 
+// Is this needed at all? A big question is how do we demarcate paragraphs? Do
+// we do the business-like white line between?
+
 // Keep the list unified
+/*
 li p {
   margin-bottom: 0;
 
@@ -119,6 +151,7 @@ li p {
     text-indent: 1em;
   }
 }
+*/
 
 .bold {
   font-family: $bold-font-family, sans-serif;
