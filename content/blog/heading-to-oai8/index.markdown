@@ -33,7 +33,7 @@ The second reason is that CERN is the birthplace of the [World Wide
 Web](http://en.wikipedia.org/wiki/World_Wide_Web). In <span
 class="oldstyle">1990</span>, Tim Berners-Lee and Robert Cailliau,
 [proposed](http://www.w3.org/Proposal.html) to develop a system that would use
-hypertext as "a way to link and access information of various kids as a web of
+hypertext as "a way to link and access information of various kinds as a web of
 nodes in which the user can browse at will." Kind of a cool idea, isn't it? 
 
 The semantic web builds on this idea, but instead of linking _web pages_
