@@ -49,7 +49,7 @@ Thank you, all!
 {: .conclusion }
 
 [^1]: CERN has been busy trying to preserve [this moment in history](http://info.cern.ch/).
-      For a bit of nostalgia, here is a link to the first web site---ever:
+      For a bit of nostalgia, here is a link to the first web site---_ever_:
       [http://info.cern.ch/hypertext/WWW/TheProject.html](http://info.cern.ch/hypertext/WWW/TheProject.html)
 
 
