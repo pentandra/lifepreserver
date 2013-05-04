@@ -4,7 +4,7 @@ description: We're taking a poster to CERN!
 kind: article
 author_name: Chris Chapman
 created_at: 2013-04-29
-updated_at: 2013-04-29
+updated_at: 2013-05-03
 published: true
 tags:
   - Open Research
@@ -34,7 +34,7 @@ Web](http://en.wikipedia.org/wiki/World_Wide_Web). In <span
 class="oldstyle">1990</span>, Tim Berners-Lee and Robert Cailliau,
 [proposed](http://www.w3.org/Proposal.html) to develop a system that would use
 hypertext as "a way to link and access information of various kinds as a web of
-nodes in which the user can browse at will." Kind of a cool idea, isn't it? 
+nodes in which the user can browse at will."[^1] Kind of a cool idea, isn't it? 
 
 The semantic web builds on this idea, but instead of linking _web pages_
 together, hypertext is used to link _data_ together. In a way, what we are
@@ -47,6 +47,11 @@ now.
 
 Thank you, all!
 {: .conclusion }
+
+[^1]: CERN has been busy trying to preserve [this moment in history](http://info.cern.ch/).
+      For a bit of nostalgia, here is a link to the first web site---ever:
+      [http://info.cern.ch/hypertext/WWW/TheProject.html](http://info.cern.ch/hypertext/WWW/TheProject.html)
+
 
 *[CERN]: Organisation européenne pour la recherche nucléaire (English: European Organization for Nuclear Research)
 *[ROC]: Open Research Core
