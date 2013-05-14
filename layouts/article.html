@@ -1,26 +1,27 @@
-<article class="group">
+<article class="group" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="section">
-    <h1><%= @item[:title] %></h1>
+    <h1 itemprop="name"><%= @item[:title] %></h1>
     <div class="group meta">
       <div class="bd up">
         <div>
-          Written <time datetime="<%= @item[:created_at] %>" pubdate><%= @item[:created_at].strftime("%B %d, %Y") %></time> 
+          Written <time itemprop="datePublished" datetime="<%= @item[:created_at] %>" pubdate><%= @item[:created_at].strftime("%B %d, %Y") %></time> 
           by 
           <%= link_for_author( @item[:author_name], "/authors/") %>
         </div>
         <% if @item[:updated_at] > @item[:created_at] then %>
         <div>
-          Last Updated <time datetime="<%= @item[:updated_at] %>"><%= @item[:updated_at].strftime("%B %d, %Y") %></time> 
+          Last Updated <time itemprop="dateModified" datetime="<%= @item[:updated_at] %>"><%= @item[:updated_at].strftime("%B %d, %Y") %></time> 
         </div>
         <% end %>  
+        <meta itemprop="description" content="<%= @item[:description] %>">
       </div>
     </div>
   </header>
 
   <div class="bd">
 
-    <div class="post section">
+    <div class="post section" itemprop="articleBody">
       <%= yield %>
     </div>
 
@@ -77,7 +78,7 @@
 
     <div class="section">
 
-      <a rel="bookmark" title="Permanent link to this article" href="<%= url_for(@item) %>">Permanent link</a> to this article
+      <a rel="bookmark" itemprop="url" title="Permanent link to this article" href="<%= url_for(@item) %>">Permanent link</a> to this article
 
     </div>
 
