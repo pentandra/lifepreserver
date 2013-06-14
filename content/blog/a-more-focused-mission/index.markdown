@@ -5,7 +5,7 @@ kind: article
 author_name: Chris Chapman
 created_at: 2013-06-13
 updated_at: 2013-06-13
-published: false
+published: true
 ---
 
 As we have finished up our preparations for [OAI8](/blog/heading-to-oai8/),
@@ -14,7 +14,7 @@ mission](/company#mission). Doing so has helped us to focus even more on what
 we are trying to achieve and will (hopefully) help us to be able to make more
 of a difference.
 
-We want to share with you a little of the journey that we went through, and why
+I want to share with you a little of the journey that we went through, and why
 we made some of the changes that we made.
 
 <!--MORE-->
@@ -42,10 +42,10 @@ specific:
 
 In our original mission "chang[ing] the way the world does research" sounds a
 little vague. There are many ways to change the way people do research, and a
-lot of those changes could be bad! Our passion really lies in preserving the
-research process. This leads to the acceleration of future research because you
-don't have to do as much backtracking of your own research or guessing what
-other researchers have done.
+lot of those changes could be bad! Our passion is really in preserving the
+research process. Preserving the process leads to the acceleration of future
+research because you don't have to do as much backtracking of your own research
+or guessing what other researchers have done.
 
 The last sentence grew quite a bit. 
 
@@ -60,22 +60,23 @@ as the published output of the research process, the journal article, the
 research paper, etc. This mindset was created out of necessity. In the "old
 days," researchers kept their research notes by hand and had to _wait_ to
 publish until they had a finished product because it was expensive and
-time-intensive to typeset and print that paper, let alone the cost of the
-printing press! To move ahead with research, we need to stop thinking this way.
-Little bits of research can be published now as we go along for little or no
-cost. Does that diminish the value of the final output of the research
-process---the paper? I don't think so, but we _do_ need to enlarge our scope of
-what we recognize as <span class="oldstyle">research</span>.
+time-intensive to typeset and print that paper, and that doesn't take into
+consideration the cost of the printing press! To move ahead with research, we
+need to stop thinking this way. In our modern world, little bits of research
+can be published as we go along for little or no cost. Does that diminish the
+value of the final output of the research process---the paper? I don't think
+so, but we _do_ need to enlarge our scope of what we recognize as <span
+class="oldstyle">research</span>.
 
-So we realized that we not only need to shift the research _practices_, but our
-whole concept of what research _is_.
+So we realized that we not only need to shift the research _practices_, but we
+need to shift our whole concept of what research _is_.
 
 There were a lot of implied social ills in the last part of the sentence,
-"lower the barriers to research," and we need to be more explicit in what we
-meant. There are many barriers to research, some financial, some cultural, and
-some technical. Dissemination and accessibility of research can be talked about
-with multiple levels of meaning. The current meaning refers to the distribution
-and accessibility of research papers, in either paper or electronic form. Open
+"lower the barriers to research," and we needed to be more explicit. There are
+many barriers to research, some financial, some cultural, and some technical.
+Dissemination and accessibility of research can be talked about with multiple
+levels of meaning. The prevailing definition refers to the distribution and
+accessibility of research papers, in either paper or electronic form. Open
 access repositories store thousands, even millions of these papers. But on a
 deeper level, accessibility could be thought of as referring to the concepts
 and questions that these papers are addressing. The technology to access
