@@ -44,15 +44,15 @@
 
       <figure id="author">
         <img class="photo" src="<%= image_path(author) %>" alt="Photo of <%= full_name(author) %>" />
-        <figcaption class="small">
+        <figcaption class="small nav">
           <div class="normal"><%= full_name(author) %></div>
           <div class="small em"><%= author[:title] %></div>
-          <p>
-            <a href="/company/#<%= full_name(author).to_slug %>">More about <%= author[:first_name] %></a>
-          </p>
+          <ul>
+            <li><a href="/company/#<%= full_name(author).to_slug %>"><%= author[:first_name] %> at Pentandra</a></li>
+            <li><a href="https://plus.google.com/<%= author[:gplus] %>?rel=author"><%= author[:first_name] %> on Google+</a></li>
+          </ul>
         </figcaption>
       </figure>
-    
     </section>
 
     <section class="grab banner section static">
