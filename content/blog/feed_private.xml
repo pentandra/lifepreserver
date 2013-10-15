@@ -4,7 +4,7 @@ feed_url: http://pentandra.com/blog/feed
 author_name: Pentandra Research Solutions, Inc.
 author_uri: http://pentandra.com
 articles: publishing_articles
-limit: 10
+limit: 20
 is_hidden: true
 ---
 
