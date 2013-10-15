@@ -4,8 +4,11 @@ description: Designing roc has helped us to focus more on what we need to do.
 kind: article
 author_name: Chris Chapman
 created_at: 2013-06-13
-updated_at: 2013-06-13
+updated_at: 2013-10-15
 published: true
+tags:
+  - Open Business
+  - Growth
 ---
 
 As we have finished up our preparations for [OAI8](/blog/heading-to-oai8/),
@@ -90,5 +93,5 @@ completely inspires me, and it was an amazing experience for me to dig deeper
 into an idea that I thought we had completely thought through _so many times_
 before. 
 
-So, does this mission inspire you?
+Now, all that's left is to get a lot done!
 {: .conclusion }
