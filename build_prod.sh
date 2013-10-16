@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # First check to make sure bundler is installed
-if [ ! gem list bundler -i ]; then
+if [ ! `gem list bundler -i` ]; then
   gem install bundler
 fi
 
