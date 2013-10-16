@@ -18,6 +18,5 @@ gem 'builder'
 gem 'adsf'
 gem 'systemu'
 gem 'shortly' # For URL shortening
-gem 'hunspell-ffi', :git => 'git://github.com/cdchapman/hunspell-ffi.git'
-gem 'html_spellchecker', :git => 'git://github.com/cdchapman/HTML-Spellchecker.git' # To check spelling
+gem 'html_spellchecker', '~> 0.1.7' 
 gem 'json'
