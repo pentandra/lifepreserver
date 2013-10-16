@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Ready, set...
+gem install bundler
 bundle install
 
 # Let's make this a fresh build
