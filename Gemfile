@@ -20,3 +20,7 @@ gem 'systemu'
 gem 'shortly' # For URL shortening
 gem 'html_spellchecker'
 gem 'json'
+
+group :development do
+  gem 'listen'
+end

@@ -6,7 +6,7 @@ if [ `gem list bundler -i` = "false" ]; then
 fi
 
 # Ready, set...
-bundle install
+bundle install --without development
 
 # Let's make this a fresh build
 rm -rf {output,tmp}
