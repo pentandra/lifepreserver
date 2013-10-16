@@ -1,4 +1,3 @@
-require "rqrcode"
 require "chunky_png"
 
 module RQRCode
