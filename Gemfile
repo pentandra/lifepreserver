@@ -1,4 +1,4 @@
-source :rubygems
+source 'https://rubygems.org'
 
 gem 'coderay' # for syntax highlighting
 gem 'compass' # for advanced CSS
