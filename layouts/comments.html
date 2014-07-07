@@ -4,19 +4,19 @@
   <script src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
   <script>
     (function () {
-        var articleId = '<%= article_id(@item) %>';
-        fyre.conv.load({}, [{
+      fyre.conv.load(
+        { network: '<%= $livefyre_network_name %>' },
+        [
+          {
             el: 'livefyre',
-            network: 'livefyre.com',
-            siteId: '<%= $livefyre_siteid %>',
-            articleId: articleId,
-            signed: false,
-            collectionMeta: {
-                title: '<%= @item[:title] %>',
-                articleId: articleId,
-                url: '<%= url_for(@item) %>',
-            }
-        }], function() {});
+            siteId: '<%= $livefyre_site_id %>',
+            articleId: '<%= article_id(@item) %>',
+            collectionMeta: '<%= collection_meta_token_for(@item, "livecomments") %>',
+            checksum: '<%= collection_checksum_for(@item) %>'
+          }
+        ],
+        function() { console.log('comments loaded'); }
+      );
     }());
   </script>
 </div>
