@@ -89,17 +89,6 @@ module Nanoc::Helpers
       items.select { |i| (i[:tags] || []).include?(tag) }
     end
 
-    def simple_tags_for(item, params = {})
-      none_text = params[:none_text] || '(none)'
-      separator = params[:separator] || ', '
-
-      if item[:tags].nil? || item[:tags].empty?
-        none_text
-      else
-        item[:tags].join(separator)
-      end
-    end
-
   end
 
 end
