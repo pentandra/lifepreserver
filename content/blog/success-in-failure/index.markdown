@@ -2,6 +2,7 @@
 title: Success in Failure
 description: while we didn't win, we succeeded
 kind: article
+article_id: success-in-failure
 author_name: Katie Chapman
 created_at: 2012-05-21
 updated_at: 2012-05-21
@@ -12,7 +13,7 @@ tags:
 has_media: true
 ---
 
-For the past couple of months we've had the chance to participate in the 
+For the past couple of months we've had the chance to participate in the
 [Grow America](http://growam.com){: rel="external" } Springboard competition.
 It was tough to decide if we should enter, since our time is already spread so
 thin. However, like-it-or-not, it takes money to run a business, and this felt
@@ -30,7 +31,7 @@ It was inspiring and enlightening to see other entrepreneurs going through the
 same things we're going through. We're not the only ones that are young and
 somewhat inexperienced, but trying to fill "executive" shoes. We're just normal
 people trying to make something out of an idea we believe in. Seeing these
-other companies succeed gave us that "if they can do it, we can do it" feeling. 
+other companies succeed gave us that "if they can do it, we can do it" feeling.
 
 Seeing the companies that are a little further along than we are gave us a
 vision of the next steps we need to take. Some of these steps are exciting and
@@ -41,7 +42,7 @@ that we need to build partnerships with other businesses. It's easy for us to
 connect with like-minded people, but business-to-business is a whole new
 ballgame for us.
 
-The actual competition process helped us as well in two ways. 
+The actual competition process helped us as well in two ways.
 
 First, it reminded us of something we already know: *our business plan needs to
 be a living document, not something that we dust off once a year*. When we were
@@ -58,7 +59,7 @@ our goals. Had anything gotten in the way? Were we missing something important?
   <figcaption class="small">
 
     This is Chris with his sister and two of our kids headed to the final
-    round. Family support makes all the difference. 
+    round. Family support makes all the difference.
 
   </figcaption>
 </figure>
@@ -93,7 +94,7 @@ P.S.---Another random realization: adrenaline can make up for a lot of lack in
 sleep. But the letdown after the adrenaline stops is brutal.
 
 <figure id="growam-video">
-  <div class="simple"> 
+  <div class="simple">
     <video style="width:100%;height:100%;" poster="growam2012.jpg" controls="controls" preload="none">
       <source type="video/mp4" src="growam2012_mp4.mp4" />
       <source type="video/webm" src="growam2012_webm.webm" />
@@ -107,7 +108,7 @@ sleep. But the letdown after the adrenaline stops is brutal.
 
   </figcaption>
 </figure>
-    
+
 
 *[NGS]: National Genealogical Society 2012 Conference
 

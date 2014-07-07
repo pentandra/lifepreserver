@@ -2,6 +2,7 @@
 title: Getting Ready for NGS
 description: ready or not, here we go!
 kind: article
+article_id: getting-ready-for-ngs
 author_name: Chris Chapman
 created_at: 2012-04-20
 updated_at: 2012-04-20

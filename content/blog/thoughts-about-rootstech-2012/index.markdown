@@ -2,6 +2,7 @@
 title: Thoughts About RootsTech 2012
 description: classifications of the future of genealogical software
 kind: article
+article_id: thoughts-about-rootstech-2012
 author_name: Chris Chapman
 created_at: 2012-04-17
 updated_at: 2012-04-17
@@ -22,7 +23,7 @@ City. For those not familiar with RootsTech: it is a conference hosted by
 [FamilySearch International](http://familysearch.org "familysearch.org") to
 bring together genealogical software creators and users.
 
-Since I never wrote about my experiences with RootsTech <span class="oldstyle">2011</span>, 
+Since I never wrote about my experiences with RootsTech <span class="oldstyle">2011</span>,
 I will try to summarize my thoughts about RootsTech in general in this article.
 Some of my thoughts may not be specifically about RootsTech, but more of a
 response to the current state of the genealogical software industry.
@@ -77,11 +78,11 @@ climbers don't really know what to do or where to start. They feel empowered
 when they obtain some family tree software and create their first family tree.
 Most generational historians, on the other hand, use a combination of ad hoc
 methods, including word documents, filing cabinets, and spreadsheets, to keep
-track of what they are doing. 
+track of what they are doing.
 
 There are changes happening in the genealogical software industry right now.
 Many family tree climbers, at some point, realize that there is more to
-genealogy than sticking names and dates on a pedigree chart. The 
+genealogy than sticking names and dates on a pedigree chart. The
 [National Genealogical Society](http://ngsgenealogy.org){: rel="external" },
 [Board for Certification of Genealogists](http://bcgcertification.org/){: rel="external"},
 and several other groups are doing much to teach people what good research
@@ -99,16 +100,16 @@ Genealogy 1.0
 
 : This is your run-of-the-mill family tree software, sometimes referred to
 (lovingly) as a record manager. Most of the genealogy software currently
-available falls in this category. 
+available falls in this category.
 <abbr title="GEnealogical Data COMmunication">GEDCOM</abbr> is the de facto
-standard for this category of software. 
+standard for this category of software.
 
 Genealogy 2.0
 
 : Sometimes called source-centric, this type of software is aware of the
 genealogical research process, so that your research conclusions can be traced
 back to the source documents from which you obtained the information to use as
-evidence. FamilySearch is pushing hard for 
+evidence. FamilySearch is pushing hard for
 <a href="http://gedcomx.org/" rel="external"><abbr>GEDCOM X</abbr></a>
 to be the standard for this type of software.
 
@@ -138,7 +139,7 @@ professional genealogists or historians were few and far between. There were
 exceptions, of course; a few stalwart professionals did come. Yet I wonder
 about the future of RootsTech when such an important group, the only group that
 really understands the full breadth of the domain, was noticeably sparse. Why
-has RootsTech been unable to attract this vital group of people? 
+has RootsTech been unable to attract this vital group of people?
 
 RootsTech right now seems to be more about tech marketing and less about real
 genealogical research. Many of the people coming to RootsTech are on the

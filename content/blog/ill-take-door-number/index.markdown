@@ -2,6 +2,7 @@
 title: I'll Take Door Number...?
 description: how should we seek funding?
 kind: article
+article_id: i-ll-take-door-number
 author_name: Katie Chapman
 created_at: 2012-05-02
 updated_at: 2012-05-02
@@ -99,7 +100,7 @@ some long lost relative come volunteer to simply finance the whole thing
 Whatever the end choice(s), I don't want to rule any of them out, at least not
 yet, so I will share them all and see where it goes from here.
 
-Bank Loan 
+Bank Loan
 
 : *Good:* We maintain control and will not have some investor telling us what
   to do. This is important since an investor may or may not be friendly with
@@ -108,7 +109,7 @@ Bank Loan
 : *Bad:* We have to pay it all back, starting right away, with interest and
   fees tacked on.  Also, banks like companies that already have a good track
   record---that's tough since we are brand new.
-   
+
 : *Ugly:* That whole decade long education thing and personally financing this
   business for so long has left us with little collateral for a bank to look at
   as the “fall back on” motivation to loan to us.
@@ -117,23 +118,23 @@ Alternate Style Loans
 
 : *Good:* Same control thing as a traditional loan, but with a greater
   likelihood to be approved.
-  
+
 : *Bad:* Again, we have to pay it back from the very
   beginning when cash will be tightest, but with potentially higher interest
   weighing things down.
-  
+
 : *Ugly:* Extra red tape sometimes gets involved.
 
 Business Competitions
 
 : *Good:* Essentially “free money” that could be used with no major strings
   attached and no drain on the company in the future to pay it back.
-   
+
 : *Bad:* They take time away from our other work to submit to, prepare for, and
   participate in. They offer nothing close to a guarantee that we will win
   anything. Really it feels a bit like gambling---something I am not fond of
   when it come to a business that matters this much to me.
-  
+
 : *Ugly:* Honestly, research may be hugely important to me and to an involved
   researcher, but business competitions are usually run and judged by business
   people, not researchers. In other words, I fear we might not have great
@@ -147,10 +148,10 @@ Angel Investor(s)
   connections to other folks that have already traveled this road (it's great
   to have amazing mentors---we already have many, but more would certainly not
   be a bad thing).
-  
+
 : *Bad:* It can be tough to find them or get their attention and there are
   legal costs involved that are discouraging at this point.
-  
+
 : *Ugly:* Since looking into funding options, I have heard more than one horror
   story of a highly overbearing or difficult to work with angel---not super
   excited with that possibility.
@@ -161,14 +162,14 @@ Venture Capital
   helpful. Plus, they are also familiar with the risks involved with our lack
   of prior financial history and they are generally willing to wait for the
   rewards on their investment to come in.
-   
+
 : *Bad:* They often want to invest huge amounts of money, requiring uber-fast
   growth---something that just doesn't seem to fit right now. Also, they are
   more controlling of what we do and have much greater say in how things are
   handled. We are open and willing to pay attention to all suggestions, but not
   so excited to be directed by people that are essentially only in it for the
   money and not aware of or concerned with the needs of the research community.
-  
+
 : *Ugly:* They often require a sell-out at some future point in order to
   facilitate their highly lucrative “exit” from the business. Plus, if things
   are not managed the way they want (again, our dedication to the open source
@@ -192,7 +193,7 @@ Crowdfunding
   value to the "investors." At the same time, we can't offer rewards too
   astounding or the rewards themselves pull back too much of the raised
   funds---this would make it impossible to accomplish what we need to.
-  
+
 : *Ugly:* There are people that think crowdfunding is a hokey thing and I don't
   want to ever give the impression that we are doing any of this just for the
   sake of getting our hands on some quick cash. I sometimes wonder if asking

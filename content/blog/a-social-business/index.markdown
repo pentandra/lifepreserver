@@ -2,6 +2,7 @@
 title: A Social Business
 description: our identity crisis and how we overcame it
 kind: article
+article_id: a-social-business
 author_name: Chris Chapman
 created_at: 2012-10-18
 updated_at: 2012-10-26
@@ -35,7 +36,7 @@ to focus on our mission.
 On the other hand, we don't want the fact that we are a for-profit company to
 deter people from supporting what we are doing. As a for-profit company, how
 _do_ we rally researchers, scholars, academics, and others behind us? Isn't
-this the domain of the not-for-profits? 
+this the domain of the not-for-profits?
 
 Martin Weller, Professor of Educational Technology at [The Open
 University](http://www.open.ac.uk/), stated:
@@ -105,7 +106,7 @@ also wanted to be self-sufficient and not have to worry about the success of
 the next fundraising campaign. We don't think that a taxpayer-funded company is
 the best way to go either. Relying on grants has its own perils in these days
 of uncertain politics. I don't like the idea staking our company's revenue or
-future completely upon them. 
+future completely upon them.
 
 After thinking about it some more, I remembered some companies that I have come
 to admire. All of them are run by people who have a higher vision of what

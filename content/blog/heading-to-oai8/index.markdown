@@ -2,6 +2,7 @@
 title: Heading to OAI8
 description: We're taking a poster to CERN!
 kind: article
+article_id: heading-to-oai8
 author_name: Chris Chapman
 created_at: 2013-04-29
 updated_at: 2013-05-03
@@ -34,7 +35,7 @@ Web](http://en.wikipedia.org/wiki/World_Wide_Web). In <span
 class="oldstyle">1990</span>, Tim Berners-Lee and Robert Cailliau,
 [proposed](http://www.w3.org/Proposal.html) to develop a system that would use
 hypertext as "a way to link and access information of various kinds as a web of
-nodes in which the user can browse at will."[^1] Kind of a cool idea, isn't it? 
+nodes in which the user can browse at will."[^1] Kind of a cool idea, isn't it?
 
 The semantic web builds on this idea, but instead of linking _web pages_
 together, hypertext is used to link _data_ together. In a way, what we are

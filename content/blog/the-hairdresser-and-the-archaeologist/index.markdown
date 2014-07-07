@@ -1,7 +1,8 @@
 ---
-title: The Hairdresser and the Archaeologist 
+title: The Hairdresser and the Archaeologist
 description: the need to involve more people in research
 kind: article
+article_id: the-hairdresser-and-the-archaeologist
 author_name: Chris Chapman
 created_at: 2013-02-20
 updated_at: 2013-03-02
@@ -18,9 +19,9 @@ tags:
   <img src="/blog/the-hairdresser-and-the-archaeologist/Julia-domna.jpg" alt="Coin of Julia Domna I" class="static" />
   <figcaption class="small">
     This image, entitled <span property="dct:title">Coin of Julia Domna</span>,
-    by 
+    by
     <a href="http://en.wikipedia.org/wiki/User:Rasiel" property="cc:attributionName" rel="cc:attributionURL dct:creator">Rasiel Suarez</a>
-    is licensed under a 
+    is licensed under a
     <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><abbr>CC-BY-SA</abbr> license</a>.
   </figcaption>
 </figure>
@@ -30,7 +31,7 @@ class="oldstyle">1500</span> years ago. But it turns out that the experts may
 not have known everything there is to know about them either. A couple weeks
 ago, on the front page of the Wall Street Journal was [a
 story](http://online.wsj.com/article/SB10001424127887324900204578286272195339456.html)[^1]
-about a very unusual hairdresser named Janet Stephens. 
+about a very unusual hairdresser named Janet Stephens.
 
 <!--MORE-->
 
@@ -76,7 +77,7 @@ which can also be applied to research:
 
     </p>
     <p>
-        
+
       ... It would seem that the more participants we engage in this
       participative universe, the more we can access its potentials and the
       wiser we can become.  We banish the ghosts of this ghostly universe by
@@ -124,7 +125,7 @@ need more researchers like that.
     [freely available for download](http://www.journalofromanarch.com/samples.html)
     on the journal's website.
 
-[^1st-journals]: 
+[^1st-journals]:
 
     The original scientific journals, the <cite>Philosophical Transactions of
     the Royal Society</cite> and the <cite>Journal des sçavans</cite>, were

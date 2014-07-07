@@ -2,6 +2,7 @@
 title: Open Business, Open Booth
 description: We're opening our booth this year!
 kind: article
+article_id: open-business-open-booth
 author_name: Katie Chapman
 created_at: 2013-04-25
 updated_at: 2013-04-25
@@ -79,7 +80,7 @@ and understanding. We want to create an opportunity for people with great
 thoughts about research to have a comfortable (think of those sweet chairs!),
 welcoming, and more intimate place to create a discussion. In a way, this post
 could be considered “a call for topics.” But these presentations will be more
-like well-led roundtable discussions on a variety of research subjects. 
+like well-led roundtable discussions on a variety of research subjects.
 
 <figure class="img">
   <img class="static" alt="The cozy chairs in our booth" src="booth_chairs.jpg" />
@@ -120,7 +121,7 @@ Answer 1:
 Question 2:
 : But what if my topic has nothing to do with Geungle or Pentandra?
 
-Answer 2: 
+Answer 2:
 
 : If we wanted all the talk in our booth to be about our company or about
 Geungle, then why would we open our booth? I suppose I just answered a question
@@ -184,7 +185,7 @@ particulars.
    scheduled time so we can say hi and meet you face to face in case we have
    only met online before (another great perk for us).
 
-5. The other participants will come and take a seat in one of our sweet chairs. 
+5. The other participants will come and take a seat in one of our sweet chairs.
 
 6. You can use our white board or simply sit in the group and present your
    thoughts. If you have never presented before and would like to record it to
@@ -204,7 +205,7 @@ Like so many things we do, or have done, or hope to do in the future, this is
 an experiment. We have no idea how well it will be received, but for the sake
 of offering one more chance to learn from each other, we are willing to give it
 a try. So, if you have a great idea you would like to share or discuss, please
-let us know. 
+let us know.
 
 If you would like to find out what topics will be covered in our Open Booth,
 then please check out our Conferences page through the week of NGS in Las
