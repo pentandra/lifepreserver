@@ -9,6 +9,9 @@ $use_grid = true
 
 $add_google_analytics = false
 
-$add_comments = false
+$add_comments = true
 $livefyre_domain = "pentandra.com"
-$livefyre_siteid = 291113
+$livefyre_network_name = "livefyre.com"
+$livefyre_network_key = ""
+$livefyre_site_id = 291113
+$livefyre_site_key = "U/rbOILgY1XE1cuqrQR3F3bKz8g="

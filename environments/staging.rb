@@ -8,5 +8,3 @@ $use_minified_css = true
 $add_google_analytics = false
 
 $add_comments = false
-$livefyre_domain = "pentandra.com"
-$livefyre_siteid = 291113
