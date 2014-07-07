@@ -21,6 +21,9 @@ gem 'shortly' # For URL shortening
 gem 'html_spellchecker'
 gem 'json'
 gem 'livefyre'
+gem 'jwt', '~> 0.1'
+gem 'rest-client', '~> 1.6'
+gem 'addressable'
 
 group :development do
   gem 'guard-nanoc'
