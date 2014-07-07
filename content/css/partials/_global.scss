@@ -48,7 +48,7 @@ hgroup {
 }
 
 small {
-  @extend .small; 
+  @extend .small;
 }
 
 body {
@@ -78,8 +78,8 @@ address, p {
 
   padding: $base-line-height*1.5;
 
-  blockquote { 
-    margin: 0; 
+  blockquote {
+    margin: 0;
   }
 
 }
@@ -119,7 +119,7 @@ ol {
   &:first-child {
     counter-reset: customlistcounter;
   }
-  
+
 */
   p {
     // Use base font for the actual text of the list
@@ -415,7 +415,7 @@ input.button {
 .big .ndash {
   margin: 0 -0.07em;
 }
-    
+
 .up {
   text-transform: uppercase;
 }
@@ -658,7 +658,7 @@ article {
   margin-bottom: 13px;
 }
 
-.sharrre { 
+.sharrre {
 
   .button {
     height: $base-line-height;
@@ -666,7 +666,7 @@ article {
 
 }
 
-// 
+//
 // Video embedding classes
 //
 
@@ -687,7 +687,7 @@ article {
 
 // 16:9 aspect ratio
 .wideScreen {
-  padding-bottom: 56.25%;  
+  padding-bottom: 56.25%;
 }
 
 // 4:3 aspect ratio
@@ -709,8 +709,4 @@ article {
 
 .comments {
   font-family: sans-serif;
-}
-
-#livefyre {
-  min-width: 252px;
 }
