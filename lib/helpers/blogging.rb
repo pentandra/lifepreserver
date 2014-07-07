@@ -74,9 +74,9 @@ module Nanoc::Helpers
       return summary+"<p class=\"readmore\">#{link}</p>"
     end
 
-    def article_id(article)
-      include Nanoc::Helpers::Text
+    include Nanoc::Helpers::Text
 
+    def article_id(article)
       article[:article_id] || md5(article[:title].to_slug)
     end
 

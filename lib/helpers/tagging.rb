@@ -64,7 +64,7 @@ module Nanoc::Helpers
 
       ranks = {}
       count.keys.each do |t|
-        rank = n - 1 - ( count[t] - min) /divisor
+        rank = n - 1 - ( count[t] - min) / divisor
         rank = 0 if rank < 0
         ranks[t.to_s] = rank.to_i
       end
@@ -87,6 +87,17 @@ module Nanoc::Helpers
     def items_with_tag(tag, items=nil)
       items = @items if items.nil?
       items.select { |i| (i[:tags] || []).include?(tag) }
+    end
+
+    def simple_tags_for(item, params = {})
+      none_text = params[:none_text] || '(none)'
+      separator = params[:separator] || ', '
+
+      if item[:tags].nil? || item[:tags].empty?
+        none_text
+      else
+        item[:tags].join(separator)
+      end
     end
 
   end
