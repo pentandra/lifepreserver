@@ -20,6 +20,7 @@ gem 'systemu'
 gem 'shortly' # For URL shortening
 gem 'html_spellchecker'
 gem 'json'
+gem 'livefyre'
 
 group :development do
   gem 'guard-nanoc'
