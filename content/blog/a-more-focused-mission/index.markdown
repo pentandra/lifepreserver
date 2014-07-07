@@ -2,6 +2,7 @@
 title: A More Focused Mission
 description: Designing roc has helped us to focus more on what we need to do.
 kind: article
+article_id: a-more-focused-mission
 author_name: Chris Chapman
 created_at: 2013-06-13
 updated_at: 2013-10-15
@@ -50,7 +51,7 @@ research process. Preserving the process leads to the acceleration of future
 research because you don't have to do as much backtracking of your own research
 or guessing what other researchers have done.
 
-The last sentence grew quite a bit. 
+The last sentence grew quite a bit.
 
 The first part of the last sentence of our original mission talks about
 "shifting the paradigm of current research practices." This is a good thing,
@@ -91,7 +92,7 @@ with [cases](/research/process#case).
 Well, we are simple people with big ideas. I love having a mission that
 completely inspires me, and it was an amazing experience for me to dig deeper
 into an idea that I thought we had completely thought through _so many times_
-before. 
+before.
 
 Now, all that's left is to get a lot done!
 {: .conclusion }

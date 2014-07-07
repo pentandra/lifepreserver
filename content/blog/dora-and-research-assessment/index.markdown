@@ -2,6 +2,7 @@
 title: DORA and Research Assessment
 description: An uphill battle in assessing research quality
 kind: article
+article_id: dora-and-research-assessment
 author_name: Chris Chapman
 created_at: 2013-05-16
 updated_at: 2013-05-16
@@ -23,7 +24,7 @@ That is a surprisingly difficult question to answer.
 
 The naïve approach to research assessment is to boil everything down to a
 number---a metric. But you cannot reduce quality or impact down to a simple
-quantitative singularity, unless it happens to be 
+quantitative singularity, unless it happens to be
 <a href="http://en.wikipedia.org/wiki/Phrases_from_The_Hitchhiker's_Guide_to_the_Galaxy#Answer_to_the_Ultimate_Question_of_Life.2C_the_Universe.2C_and_Everything_.2842.29">the number <span class="oldstyle">42</span></a>.
 Shortcuts to research assessment [don't work](http://www.molbiolcell.org/content/24/10/1505.full).
 Our current degenerative system of research assessment is an outstanding

@@ -2,6 +2,7 @@
 title: We're Back
 description: been through the wringer, but coming back stronger
 kind: article
+article_id: we-re-back
 author_name: Katie Chapman
 created_at: 2013-02-08
 updated_at: 2013-02-08
@@ -27,7 +28,7 @@ What built the strength is less important than what you do with the strength
 once you have it. I am not here right now to share all of the twists we have
 experienced of late. The specific details of our strength training are not the
 important part. Using that strength to accomplish more than we could have
-before is what matters as we move forward. 
+before is what matters as we move forward.
 
 <!--MORE-->
 
