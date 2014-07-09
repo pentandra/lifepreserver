@@ -4,27 +4,21 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-	<meta charset="utf-8" />
-
-	<title><%= @item[:title] %> | Pentandra</title>
-	<meta name="description" content="" />
-	<meta name="author" content="" />
-	<meta name="generator" content="nanoc 3.4.1" />
-
-	<meta name="viewport" content="width=device-width,initial-scale=1" />
-
+  <meta charset="utf-8" />
+  <title><%= @item[:title] %> | Pentandra</title>
+  <meta name="description" content="Much about Pentandra and its mission" />
+  <meta name="author" content="" />
+  <meta name="generator" content="nanoc 3.4.1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <% if @item[:has_media] then %>
-  <link rel="stylesheet" href="/js/mejs-2.9.4/mediaelementplayer.css" />  
+  <link rel="stylesheet" href="/js/mejs-2.9.4/mediaelementplayer.css" />
   <% end %>
-
   <link rel="stylesheet" href="/css/style.css?v=<%= @config[:version] %>" />
   <link rel="alternate" type="application/atom+xml" href="/blog/feed" />
   <link href="https://plus.google.com/108021950461928542978" rel="publisher" />
-  
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png" />
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png" />
   <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png" />
-
   <script src="/js/libs/modernizr.custom.07718.js"></script>
 </head>
 <body>
@@ -35,11 +29,11 @@
       <h1><%= link_to("Pentandra Research Solutions", "/", :class => "ir logo") %></h1>
       <nav class="menu group">
         <ul>
-          <li><%= link_to('Products',  '/products/', :class => "button") %></li>
-          <li><%= link_to('Research',  '/research/', :class => "button") %></li>
-          <li><%= link_to('Company',   '/company/', :class => "button") %></li>
-          <li><%= link_to('Open',      '/open/', :class => "button") %></li>
-          <li><%= link_to('Blog',      '/blog/', :class => "button") %></li>
+          <li><%= link_to('Products', '/products/', :class => "button") %></li>
+          <li><%= link_to('Research', '/research/', :class => "button") %></li>
+          <li><%= link_to('Company',  '/company/', :class => "button") %></li>
+          <li><%= link_to('Open',     '/open/', :class => "button") %></li>
+          <li><%= link_to('Blog',     '/blog/', :class => "button") %></li>
         </ul>
       </nav>
     </div>
@@ -75,33 +69,25 @@
               <li><a href="/blog/feed" class="rss ir">RSS</a></li>
             </ul>
           </div>
-
           <div class="contact section">
             <a href="/company/#contact" class="bold button">Contact Us</a>
           </div>
-
         </aside>
-
         <aside class="inner section">
           <h2 class="normal flush">Recent Thoughts</h2>
-          
           <div class="group">
             <% @site.publishing_articles[0, 5].each do |post| %>
-            <article class="excerpt"> 
+            <article class="excerpt">
               <a href="<%= post.path  %>" rel="bookmark">
-                <time class="small bold" pubdate datetime="<%= post[:created_at] %>"><%= date_for(post) %></time>&#8194;<h3 class="normal"><%= post[:title] %></h3>
+                <time class="small bold" datetime="<%= post[:created_at] %>"><%= date_for(post) %></time>&#8194;<h3 class="normal"><%= post[:title] %></h3>
               </a>
             </article>
             <% end %>
           </div>
-          
         </aside>
-
       </div>
       <div class="aside section">
-
         <div class="logo section"></div>
-
         <div class="nav">
           <ul>
             <li><a href="/research/#future">The Future of Research</a></li>
@@ -110,15 +96,11 @@
             <li><%= link_to('Search', '/search/') %></li>
           </ul>
         </div>
-
       </div>
-
     </div>
-
     <div class="section">
       <a class="button backtotop">Back to top</a>
     </div>
-
     <div class="group">
       <div>
         <small class="bold">&#169; <a href="/">Pentandra Research Solutions, Inc.</a></small>
@@ -127,8 +109,6 @@
         <small class="em">Version <%= @config[:version] %></small>
       </div>
     </div>
-
-
   </div>
 </footer>
 
@@ -166,6 +146,5 @@
   });
 </script>
 <% end %>
-
 </body>
 </html>

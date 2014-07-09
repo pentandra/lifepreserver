@@ -2,6 +2,8 @@ module Nanoc::Helpers
 
   module Blogging
 
+    include Nanoc::Helpers::Text
+
     def publishing_articles
       if $include_drafts then
         sorted_articles
@@ -21,7 +23,7 @@ module Nanoc::Helpers
     end
 
     def link_for_author(author, base_url)
-      %[<a href="#{h base_url}#{h author.to_slug}/" rel="author" title="Articles by #{h author}">#{h author}</a>]
+      %[<a href="#{h base_url}#{h author.to_slug}/" title="Articles by #{h author}">#{h author}</a>]
     end
 
     def articles_by_author(author)
@@ -73,8 +75,6 @@ module Nanoc::Helpers
       link = link_to( (article[:read_more] || read_more_text), article.path, { :class => 'readmore', :title => "Read the full article" })
       return summary+"<p class=\"readmore\">#{link}</p>"
     end
-
-    include Nanoc::Helpers::Text
 
     def article_id(article)
       article[:article_id] || md5(article[:title].to_slug)

@@ -1,23 +1,16 @@
 <article class="noted section excerpt">
-
   <div class="bd">
     <header>
       <h2 class="bigger">
         <%= link_to(article[:title], article, { :rel => "bookmark", :title => "Full article" }) %>
       </h2>
-
       <p class="em">By <%= link_for_author( article[:author_name], "/authors/") %></p>
-
     </header>
-
     <%= article_summary article %>
-
   </div>
-
   <footer class="aside pubdate section">
-    <time class="big" pubdate datetime="<%= article[:created_at] %>"><%= date_for(article) %></time>
+    <time class="big" datetime="<%= article[:created_at] %>"><%= date_for(article) %></time>
   </footer>
-
   <footer class="aside section">
     <nav class="menu group banner">
       <ul class="tags">
@@ -27,5 +20,4 @@
       </ul>
     </nav>
   </footer>
-
 </article>
