@@ -294,10 +294,11 @@ priority: 0.6
 
         <h3 class="flush">Get Social</h3>
 
-        <div class="g-plus" data-href="https://plus.google.com/108021950461928542978" data-width="252" data-height="69" data-theme="light"></div>
-        <div class="social-tw"><a href="https://twitter.com/<%= @item[:twitter] %>" class="twitter-follow-button" data-width="252px" data-show-count="false" data-size="large">Follow @<%= @item[:twitter] %></a></div>
-        <div class="social-fb fb-like-box" data-href="http://www.facebook.com/PentandraInc" data-width="252" data-height="121" data-show-faces="true" data-stream="false" data-header="true"></div>
-
+        <ul class="none">
+          <li class="social-gp" ><a href="https://plus.google.com/+Pentandra" class="button">Pentandra on Google+</a></li>
+          <li class="social-tw"><a href="https://twitter.com/intent/user?screen_name=<%= @item[:twitter] %>" class="button">Follow @<%= @item[:twitter] %></a></li>
+          <li class="social-fb"><a href="http://www.facebook.com/PentandraInc" class="button">Pentandra on FB</a></li>
+        </ul>
       </aside>
 
       <div class="inner group">
@@ -339,10 +340,3 @@ priority: 0.6
   </div>
 
 </footer>
-
-<% content_for :javascripts do %>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-<script type="text/javascript">window.___gcfg={lang: 'en'};(function(){var po=document.createElement("script");po.type="text/javascript";po.async=true;po.src="https://apis.google.com/js/plusone.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(po, s);})();</script>
-<div id="fb-root"></div>
-<script>(function(d, s, id){var js, fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="//connect.facebook.net/en_US/all.js#xfbml=1";fjs.parentNode.insertBefore(js, fjs);}(document,'script','facebook-jssdk'));</script>
-<% end %>
