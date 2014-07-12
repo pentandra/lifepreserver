@@ -72,6 +72,14 @@ module Nanoc::Helpers
       ranks
     end
 
+    # Returns a link to the specified tag.
+    #
+    # Overrides Nanoc::Helpers::Tagging#link_for_tag, adding support for
+    # multi-word tags.
+    def link_for_tag(tag, base_url)
+      %[<a href="#{h base_url}#{h tag.to_slug}" rel="tag">#{h tag}</a>]
+    end
+
     # Same as link_for_tag, but does not include the 'rel' attribute.
     #
     # To conform with the HTML5 rel="tag" specification, the rel attribute
@@ -81,7 +89,7 @@ module Nanoc::Helpers
     #
     # See http://microformats.org/wiki/rel-tag
     def link_for_tagcloud(tag, base_url)
-      %[<a href="#{h base_url}#{h tag}/">#{h tag}</a>]
+      %[<a href="#{h base_url}#{h tag.to_slug}">#{h tag}</a>]
     end
 
     def items_with_tag(tag, items=nil)

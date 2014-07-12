@@ -19,14 +19,14 @@ Compass.add_project_configuration 'compass/config.rb'
 #   because “*” matches zero or more characters.
 
 preprocess do
-  
+
   # Creates in-memory tag pages from partial: layouts/tag.html
   def generate_tag_pages
     tag_set(publishing_articles).each do |tag|
       items << Nanoc::Item.new(
         "<%= render('tag',  :tag => '#{tag}') %>",
         { :title => "Tag: #{tag}", :is_hidden => true },
-        "/tags/#{tag}/",
+        "/tags/#{tag.to_slug}/",
         :binary => false
       )
     end
@@ -118,18 +118,18 @@ end
 
 compile '/company/', :rep => :vcard do
   filter :vcard, {
-    :name => "Pentandra", 
+    :name => "Pentandra",
     :org => "Pentandra Research Solutions, Inc.",
-    :phone => @item[:phone], 
+    :phone => @item[:phone],
     :email => @item[:email],
     :url => @config[:base_url]}
 end
 
 compile '/company/', :rep => :qrcode do
   filter :vcard, {
-    :name => "Pentandra", 
+    :name => "Pentandra",
     :org => "Pentandra Research Solutions, Inc.",
-    :phone => @item[:phone], 
+    :phone => @item[:phone],
     :email => @item[:email],
     :url => @config[:base_url]}
   filter :qrcode, :size => 17, :module_size => 2, :color => "#544233"
@@ -155,7 +155,7 @@ compile '*' do
     end
 
 #    filter :add_links_to_headers
-    
+
     layout 'default'
 
     filter :rubypantsunicode
