@@ -1,4 +1,4 @@
---- 
+---
 title: Company
 description: who we are and what we stand for
 company_name: Pentandra Research Solutions, Inc.
@@ -109,7 +109,7 @@ priority: 0.6
       to do good research. We believe that software should work the way
       researchers work, not the other way around. That is what drives
       us---crazy.
-      
+
     </p>
 
   </section>
@@ -140,7 +140,7 @@ priority: 0.6
       helps us keep our expenses down. Even when we cross the divide from a
       struggling startup to a profitable company (hopefully sooner than later)
       we want to stay small and connected.
-    
+
     </p>
 
   </section>
@@ -168,7 +168,7 @@ priority: 0.6
     <h3>Committed</h3>
 
     <p>
-      
+
       We are committed to making research easier. This is our primary
       objective. We also want to keep data open. To do this we are building on
       open standards. We are trying to accomplish something great. We are
@@ -179,7 +179,7 @@ priority: 0.6
   </section>
 
   <section id="open" class="item bl ock section">
-  
+
     <h3>Open</h3>
 
     <p>
@@ -188,8 +188,8 @@ priority: 0.6
       open source, and an open business model. We wouldn't be here without the
       open contributions from many in the technological and genealogical
       communities. We are happy to have a chance to
-      <%= link_to "contribute back", "/open/" %>. 
-      We invite you to join with us to build something amazing together. 
+      <%= link_to "contribute back", "/open/" %>.
+      We invite you to join with us to build something amazing together.
 
     </p>
 
@@ -200,12 +200,12 @@ priority: 0.6
 <section id="mission" class="noted section">
 
   <h2>Our Mission</h2>
-  
+
   <div class="bd">
 
     <p>
 
-      We are a 
+      We are a
       <%= link_to "social entrepreneurship", "/blog/a-social-business/" %>
       company with a mission to preserve and accelerate the process of
       research. This is a researcher-driven effort to shift the paradigm of
@@ -239,18 +239,18 @@ priority: 0.6
 <section class="noted section" id="roster">
 
   <h2>Our Roster</h2>
-  
+
   <section id="coreteam">
 
     <h3>Core Team</h3>
 
-    <% @item[:teammembers].each_with_index do |member, i| %> 
+    <% @item[:teammembers].each_with_index do |member, i| %>
     <section id="<%= full_name(member).to_slug %>" class="teammember vcard bl<%= i.odd? ? ' ock' : '' %> item">
 
       <div class="section">
-        
+
         <div class="aside">
-          <img class="photo" src="<%= image_path(member) %>" alt="Photo of <%= full_name(member) %>" />
+          <img class="photo" src="<%= member_image_path(member) %>" alt="Photo of <%= full_name(member) %>" />
 
           <aside class="nav menu">
 
@@ -294,10 +294,11 @@ priority: 0.6
 
         <h3 class="flush">Get Social</h3>
 
-        <div class="g-plus" data-href="https://plus.google.com/108021950461928542978" data-width="252" data-height="69" data-theme="light"></div>
-        <div class="social-tw"><a href="https://twitter.com/<%= @item[:twitter] %>" class="twitter-follow-button" data-width="252px" data-show-count="false" data-size="large">Follow @<%= @item[:twitter] %></a></div>
-        <div class="social-fb fb-like-box" data-href="http://www.facebook.com/PentandraInc" data-width="252" data-height="121" data-show-faces="true" data-stream="false" data-header="true"></div>
-
+        <ul class="none">
+          <li class="social-gp" ><a href="https://plus.google.com/+Pentandra" class="button">Pentandra on Google+</a></li>
+          <li class="social-tw"><a href="https://twitter.com/intent/user?screen_name=<%= @item[:twitter] %>" class="button">Follow @<%= @item[:twitter] %></a></li>
+          <li class="social-fb"><a href="http://www.facebook.com/PentandraInc" class="button">Pentandra on FB</a></li>
+        </ul>
       </aside>
 
       <div class="inner group">
@@ -321,7 +322,7 @@ priority: 0.6
 
           We are located in Logan, Utah, in the beautiful Cache Valley. We work
           from home. When we are not busy with the business, we are busy keeping
-          track of our kids and their pet rocks. We love it---most of the time. 
+          track of our kids and their pet rocks. We love it---most of the time.
 
         </p>
 
@@ -339,10 +340,3 @@ priority: 0.6
   </div>
 
 </footer>
-
-<% content_for :javascripts do %>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-<script type="text/javascript">window.___gcfg={lang: 'en'};(function(){var po=document.createElement("script");po.type="text/javascript";po.async=true;po.src="https://apis.google.com/js/plusone.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(po, s);})();</script>
-<div id="fb-root"></div>
-<script>(function(d, s, id){var js, fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="//connect.facebook.net/en_US/all.js#xfbml=1";fjs.parentNode.insertBefore(js, fjs);}(document,'script','facebook-jssdk'));</script>
-<% end %>

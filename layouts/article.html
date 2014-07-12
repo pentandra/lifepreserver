@@ -1,89 +1,66 @@
-<article class="group" itemscope itemtype="http://schema.org/BlogPosting">
-
+<article class="group" vocab="http://schema.org/" typeof="BlogPosting">
   <header class="section">
-    <h1 itemprop="name"><%= @item[:title] %></h1>
+    <h1 property="name headline"><%= @item[:title] %></h1>
     <div class="group meta">
       <div class="bd up">
         <div>
-          Written <time itemprop="datePublished" datetime="<%= @item[:created_at] %>" pubdate><%= @item[:created_at].strftime("%B %d, %Y") %></time> 
-          by 
+          Written <time property="datePublished" datetime="<%= @item[:created_at] %>"><%= @item[:created_at].strftime("%B %d, %Y") %></time>
+          by
           <%= link_for_author( @item[:author_name], "/authors/") %>
         </div>
         <% if @item[:updated_at] > @item[:created_at] then %>
         <div>
-          Last Updated <time itemprop="dateModified" datetime="<%= @item[:updated_at] %>"><%= @item[:updated_at].strftime("%B %d, %Y") %></time> 
+          Last Updated <time property="dateModified" datetime="<%= @item[:updated_at] %>"><%= @item[:updated_at].strftime("%B %d, %Y") %></time>
         </div>
-        <% end %>  
-        <meta itemprop="description" content="<%= @item[:description] %>">
+        <% end %>
+        <meta property="description" content="<%= @item[:description] %>">
       </div>
     </div>
   </header>
-
   <div class="bd">
-
-    <div class="post section" itemprop="articleBody">
+    <div class="post section" property="articleBody">
       <%= yield %>
     </div>
-
     <%= render "comments" %>
-
   </div>
-
   <aside class="aside">
-
     <h2 class="visuallyhidden">Meta</h2>
-
-    <section class="section">
-
-      <% 
-       company = @items.find { |i| i.identifier == '/company/' } 
+    <section class="section" typeof="Person" property="author">
+      <%
+       company = @items.find { |i| i.identifier == '/company/' }
        author = company[:teammembers].find { |m| m[:first_name] + " " + m[:last_name] == @item[:author_name] }
       %>
-
       <h3 class="big">The Author</h3>
-
       <figure id="author">
-        <img class="photo" src="<%= image_path(author) %>" alt="Photo of <%= full_name(author) %>" />
+        <img class="photo" src="<%= member_image_path(author) %>" alt="Photo of <%= full_name(author) %>" property="image" />
         <figcaption class="small nav">
-          <div class="normal"><%= full_name(author) %></div>
-          <div class="small em"><%= author[:title] %></div>
+          <div class="normal" property="name" rel="author"><%= full_name(author) %></div>
+          <div class="small em" property="jobTitle"><%= author[:title] %></div>
           <ul>
-            <li><a href="/company/#<%= full_name(author).to_slug %>"><%= author[:first_name] %> at Pentandra</a></li>
+            <li><a href="<%= member_path(author) %>" property="url"><%= author[:first_name] %> at <span property="worksFor">Pentandra</span></a></li>
             <li><a href="https://plus.google.com/<%= author[:gplus] %>?rel=author"><%= author[:first_name] %> on Google+</a></li>
           </ul>
         </figcaption>
       </figure>
     </section>
-
     <section class="grab banner section static">
-
       <div class="fancy wrapper group pod">
         <h3 class="big">Share</h3>
-        
         <div class="section" id="share" data-url="<%= shorten(url_for(@item)) %>" data-title="share" data-text="<%= @item[:title] %>"></div>
-        
       </div>
-
     </section>
-
     <nav class="menu section banner">
       <h3 class="big">Tags</h3>
-
       <ul class="tags">
         <% [*@item[:tags]].each do |tag| %>
         <li><%= link_for_tag(tag, "/tags/") %>&nbsp;</li>
         <% end %>
       </ul>
     </nav>
-
     <div class="section">
-
-      <a rel="bookmark" itemprop="url" title="Permanent link to this article" href="<%= url_for(@item) %>">Permanent link</a> to this article
-
+      <a rel="bookmark" property="url" title="Permanent link to this article" href="<%= url_for(@item) %>">Permanent link</a> to this article
     </div>
-
   </aside>
-
 </article>
 
 <% content_for :javascripts do %>

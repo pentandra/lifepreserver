@@ -33,7 +33,7 @@ Pentandra.Scrolling = (function() {
         location.hash = unescapeSelector(opts.scrollTarget);
       }
     });
-  
+
   }
 
   function smallMenuInUse() {
@@ -46,12 +46,12 @@ Pentandra.Scrolling = (function() {
       var hash = location.hash;
 
       if (!hash) {
-        
+
         // If there is a previous position, move there
         if ($.isNumeric(previousPosition)) {
           $.smoothScroll(previousPosition);
-        } 
-        
+        }
+
         // If we're coming to the page for the first time and we are on a
         // mobile device, scroll down past the menu to the main content.
         else if (smallMenuInUse()) {
@@ -134,7 +134,7 @@ Pentandra.Social = (function() {
     enableHover: false,
     enableCounter: false,
     enableTracking: true
-    
+
   };
 
   return {
@@ -159,7 +159,7 @@ Pentandra.Search = (function() {
 
       newArray[newArray.length] = arrayName[i];
     }
-    
+
     return newArray;
   }
 
@@ -184,12 +184,10 @@ Pentandra.Search = (function() {
       }
     }
     callback($.map(matching_ids, function(id){ return Pentandra.index.items[id]; }))
-  }
+  };
 
   return {
-    search: function(query, callback) {
-      search(query, callback);
-    }
+    search: search
   };
 
 }());
