@@ -146,12 +146,12 @@ As we've learned ourselves what genealogical research looks like, all those
 nice generational tree structures fade into the background, and we're left with
 similar types of semi-structured information that is found in any other
 research field. There is [a lot of momentum](/blog/heading-to-oai8/) in the
-general research community to develop standards that are domain agnostic. It
-totally makes sense to collaborate.
+general research community to develop open technological standards that are
+domain agnostic. It totally makes sense to collaborate.
   
 Maybe the biggest reason is that we can't do it alone. We need all the help we
 can get. Only as we come to an understanding of each person's human experience
-will we have any confidence in the outputs of our research. That is why we need
+can we have any confidence in the outputs of our research. That is why we need
 all the help we can get. We need to cooperate with other research fields
 because they are trying to make sense of this world, too. We need their
 research and they need our research.
