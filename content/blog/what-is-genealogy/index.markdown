@@ -41,15 +41,15 @@ It must be fun to integrate with all that data." Without realizing it, my
 friend described what most people think about when they describe technology for
 genealogy. Sticking peoples' names and dates on a tree. Sounds fun, right? It's
 actually kind of addictive until you realize that with each generation the tree
-gets bigger by a power of two, and in family history software right now, the
-tree never ends, it just keeps on going forever... but that's a different
-story.
+gets bigger by a power of two, and in most family history software right now,
+the tree never ends, it turns into a math problem and just keeps on going
+forever... but that's a different story.
 
 Looking at genealogy in this way is both a shallow and distorted view of
 reality. Was the sole purpose of Doe Darling's existence to produce seven
 nicely named children, all lined up neatly in a row? I hope not.
 
-We (at Pentandra) look at genealogy as the study of _lives_, of mankind.[^life]
+We (at Pentandra) look at genealogy as the study of _lives_; of mankind.[^life]
 Life is messy. Life is full. Life is complicated. Life is rich. A pedigree
 chart would be the last thing I would pick to describe it.
 
@@ -77,15 +77,21 @@ better way.
 ## What's needed?
 
 Like most things in life, a combination of things must happen to make
-genealogical research more meaningful and productive experience.
+genealogical research a more meaningful and productive experience.
 
 First, we need more people to realize there is a problem. For many,
 genealogical research is their first foray into the world of research, and
-many, even long-time genealogists, do not know what good research looks like.
+many, even long-time genealogists, do not know what good genealogical research
+looks like. It doesn't take long for the current software to convince newcomers
+that genealogy is nothing more than a collection of names and dates, with a few
+images thrown in for good measure.[^caveat]
 
-Second, we need software that shows, as transparently as possible, what good
-research looks like. We're working on that with Geungle and other initiatives,
-but right now it is a lot of pioneering work.
+Second, as wonderful as the [Genealogical Proof
+Standard](http://www.bcgcertification.org/resources/standard.html) is, we need
+software that shows, as transparently as possible, what good research looks
+like. People learn best with examples and feedback (and maybe with a teensy bit
+of social pressure thrown in). We're working on this with Geungle and other
+initiatives, but right now it is a lot of pioneering work.
 
 While those two would be a good start, here are a few other things to keep in
 mind:
@@ -94,7 +100,8 @@ mind:
   research, does not mean it is above our heads, or than we're not smart enough
   to participate. This is the study of life, of mankind, a domain in which all
   of us should have at least _some_ experience. But it _is_ research, and we
-  need to treat it as such.
+  need to treat it as such. We need to be reasoning things out and creating
+  solid inferences that we wouldn't be afraid to stick our names on.
 * Relationships between evidence and claims must be treated as first-class
   citizens by technology. It's the only real thing that we've got to go on most
   of the time, except for analyses (created by researchers) using that
@@ -107,7 +114,7 @@ mind:
   whom we're studying, lived. There must be room for experimentation and
   hypotheses, alternate or temporary realities, etc.
 * Only _after_ you have all the pieces can you be really sure about what the
-  puzzle is representing.
+  puzzle is actually representing.
 * If you follow the preceding point's logic further, that means that tools for
   genealogy must be founded on something other than identity, since identity
   must be proven first, by evidence.
@@ -131,12 +138,12 @@ come close. Dispicable? Well, there have been many ugly and dispicable things
 that have happened throughout mankind's existence, and it is essential, when
 studying someone's life, to understand, at least to some degree, all that they
 experienced, the good and the bad. Fortunately, we don't have to experience it
-all for ourselves.
+all for ourselves, though we may surely empathize.
 
 So where does the bigger research community fit into all of this?
 
-As we've learned ourselves what genealogical research is like, all those nice
-generational tree structures fade into the background, and we're left with
+As we've learned ourselves what genealogical research looks like, all those
+nice generational tree structures fade into the background, and we're left with
 similar types of semi-structured information that is found in any other
 research field. There is [a lot of momentum](/blog/heading-to-oai8/) in the
 general research community to develop standards that are domain agnostic. It
@@ -156,3 +163,9 @@ research and they need our research.
     [microhistory](http://en.wikipedia.org/wiki/Microhistory), but we've gotten
     a lot of blank looks, even from historians! When we say we're writing
     software for genealogy, people are _way_ more understanding.
+
+[^caveat]: 
+
+    It is important to note that there are many knowledgeable genealogists that
+    come to the table with some sort of autonomous research framework who use
+    these tools for various purposes, despite the tools' inherent limitations. 
