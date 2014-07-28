@@ -26,10 +26,10 @@ digitization and indexing are, in particular, amazing achievements that will
 benefit researchers for many years to come. What I have beef with involves the
 prolific, unsubstantiated family trees that seem to grow on everyone's wall.
 Well, technologically speaking, I think the ladder is on the wrong wall, and
-engineers at FamilySearch, Ancestry.com, and other wonderful companies have
-taken this paradigm very far, but it is not solving the problems that so
-desperately need to be solved. I think it's time for a fresh look at the thing
-we call genealogy.
+engineers at FamilySearch, Ancestry.com, and other great companies have taken
+this paradigm very far, but it is not solving the problems that so desperately
+need to be solved. I think it's time for a fresh look at the thing we call
+genealogy.
 
 <!--MORE-->
 
