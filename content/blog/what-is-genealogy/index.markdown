@@ -162,6 +162,10 @@ can we have any confidence in the outputs of our research. That is why we need
 all the help we can get. We need to cooperate with other research fields
 because they are trying to make sense of this world, too. We need their
 research and they need our research.
+
+Why, you say, would we need low-density particle physics research to help
+determine the political affiliations of my Civil War ancestor? Well, you never
+know, but we do need the physicist. They're human aren't they?
 {: .conclusion }
 
 [^life]: 
