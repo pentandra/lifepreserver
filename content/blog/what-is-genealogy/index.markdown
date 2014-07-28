@@ -50,7 +50,7 @@ Looking at genealogy in this way is both a shallow and distorted view of
 reality. Was the sole purpose of Doe Darling's existence to produce seven
 nicely named children, all lined up neatly in a row? I hope not.
 
-We (at Pentandra) look at genealogy as the study of _lives_; of mankind.[^life]
+We (at Pentandra) look at genealogy as the study of _lives_---of mankind.[^life]
 Life is messy. Life is full. Life is complicated. Life is rich. A pedigree
 chart would be the last thing I would pick to describe it.
 
@@ -99,7 +99,7 @@ mind:
 
 * We need to accept the fact that this is research. Just because it is
   research, does not mean it is above our heads, or than we're not smart enough
-  to participate. This is the study of life, of mankind, a domain in which all
+  to participate. This is the study of life---of mankind---a domain in which all
   of us should have at least _some_ experience. But it _is_ research, and we
   need to treat it as such. We need to be reasoning things out and creating
   solid inferences that we wouldn't be afraid to stick our names on.
@@ -112,8 +112,8 @@ mind:
   also applies: just because you can enter it easily into a computer does not
   mean it becomes true.
 * Reconstructing lives includes reconstructing the world in which these people,
-  whom we're studying, lived. There must be room for experimentation and
-  hypotheses, alternate or temporary realities, etc.
+  whom we're studying, lived. There must be room for experimentation,
+  hypotheses, and alternate or hypothetical realities.
 * Only _after_ you have all the pieces can you be really sure about what the
   puzzle is actually representing.
 * If you follow the preceding point's logic further, that means that tools for
