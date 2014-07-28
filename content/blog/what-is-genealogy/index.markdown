@@ -27,7 +27,7 @@ prolific, unsubstantiated family trees that seem to grow on everyone's wall.
 Well, technologically speaking, I think the ladder is on the wrong wall, and
 engineers at FamilySearch, Ancestry.com, and other wonderful companies have
 taken this paradigm as far as it can go, but it is not solving the problems
-that so desperately need to be solved. I think it's time for a fresh look at
+that so desperately needs to be solved. I think it's time for a fresh look at
 the thing we call genealogy.
 
 <!--MORE-->
