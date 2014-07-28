@@ -61,12 +61,16 @@
       <h3 class="big">Permalinks</h3>
       <form action="<%= url_for(@item) %>">
         <div>
-          <label>URL:</label>
-          <input rel="bookmark" type="url" property="url" title="Permanent link to this article" value="<%= url_for(@item) %>">
+          <label>
+            URL:
+            <input rel="bookmark" type="url" property="url" title="Permanent link to this article" value="<%= url_for(@item) %>">
+          </label>
         </div>
         <div>
-          <label>HTML:</label>
-          <input type="text" value="<%= h('<cite class="h-cite"><a class="u-url p-name" href="'+url_for(@item)+'">'+@item[:title]+'</a> (<abbr class="p-author h-card" title="'+@item[:author_name]+'">'+author[:last_name]+'</abbr> <time class="dt-published">'+@item[:created_at].to_s+'</time>)</cite>') %>">
+          <label>
+            HTML:
+            <input type="text" value="<%= h('<cite class="h-cite"><a class="u-url p-name" href="'+url_for(@item)+'">'+@item[:title]+'</a> (<abbr class="p-author h-card" title="'+@item[:author_name]+'">'+author[:last_name]+'</abbr> <time class="dt-published">'+@item[:created_at].to_s+'</time>)</cite>') %>">
+          </label>
         </div>
       </form>
     </div>
