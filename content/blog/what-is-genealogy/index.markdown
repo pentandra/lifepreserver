@@ -33,7 +33,7 @@ we call genealogy.
 
 <!--MORE-->
 
-## Genealogy?
+## Is Genealogy Tree-like Data?
 
 A couple months ago I was speaking with a friend at a conference in San
 Francisco, and mentioned that I was working on software for genealogical
