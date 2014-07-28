@@ -137,8 +137,18 @@ Pentandra.Social = (function() {
 
   };
 
+  var setupPermalinks = function() {
+    $(".permalinks input").focus(function(e) {
+      $(this)
+        .select()
+        .one('mouseup', function(e) { e.preventDefault(); });
+    });
+  };
+
   return {
     init: function(target) {
+      setupPermalinks();
+
       if ($.fn.sharrre) {
         $(target).sharrre(opts);
       }
