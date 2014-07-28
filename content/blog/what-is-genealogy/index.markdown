@@ -93,7 +93,8 @@ mind:
 * We need to accept the fact that this is research. Just because it is
   research, does not mean it is above our heads, or than we're not smart enough
   to participate. This is the study of life, of mankind, a domain in which all
-  of us should have at least _some_ experience.
+  of us should have at least _some_ experience. But it _is_ research, and we
+  need to treat it as such.
 * Relationships between evidence and claims must be treated as first-class
   citizens by technology. It's the only real thing that we've got to go on most
   of the time, except for analyses (created by researchers) using that
