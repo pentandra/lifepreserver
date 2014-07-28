@@ -10,6 +10,7 @@ tags:
   - Genealogy
   - Opinionated
   - Holism
+  - Geungle
 ---
 
 OK. We've had people ask us why we are worrying about the bigger research
@@ -126,6 +127,10 @@ mind:
   communication. It's an art. While a computer can help make this process
   easier, humans are still needed.
 
+After all of that, could we not still show relationships using a pedigree
+chart? Yes! But we _cannot_ begin and end there. We need to do (and publish)
+more.
+
 ## A lofty goal
 
 Now you may have a better idea now of what we are trying to accomplish with
@@ -134,20 +139,22 @@ touches upon every facet of mankind's sojourn on earth.
 
 A loftly goal, you say? Yes! Unattainable? Probably, but there is a lot we can
 do to understand the past even if we cannot reconstruct all of it...or even
-come close. Dispicable? Well, there have been many ugly and dispicable things
-that have happened throughout mankind's existence, and it is essential, when
-studying someone's life, to understand, at least to some degree, all that they
-experienced, the good and the bad. Fortunately, we don't have to experience it
-all for ourselves, though we may surely empathize.
+  come close. Dispicable? Well, I wouldn't go that far, but there have been
+  many ugly and dispicable things that have happened throughout mankind's
+  existence, and it is essential, when studying someone's life, to understand,
+  at least to some degree, all that they experienced, the good and the bad.
+  Fortunately, we don't have to experience it all for ourselves, though we may
+  surely empathize.
 
 So where does the bigger research community fit into all of this?
 
 As we've learned ourselves what genealogical research looks like, all those
-nice generational tree structures fade into the background, and we're left with
-similar types of semi-structured information that is found in any other
-research field. There is [a lot of momentum](/blog/heading-to-oai8/) in the
-general research community to develop open technological standards that are
-domain agnostic. It totally makes sense to collaborate.
+nice generational tree structures fade into the background,[^analysis-trees]
+and we're left with similar types of semi-structured information that is found
+in any other research field. There is [a lot of
+momentum](/blog/heading-to-oai8/) in the general research community to develop
+open technological standards that are domain agnostic. It totally makes sense
+to collaborate.
   
 Maybe the biggest reason is that we can't do it alone. We need all the help we
 can get. Only as we come to an understanding of each person's human experience
@@ -169,3 +176,9 @@ research and they need our research.
     It is important to note that there are many knowledgeable genealogists that
     come to the table with some sort of autonomous research framework who use
     these tools for various purposes, despite the tools' inherent limitations. 
+
+[^analysis-trees]:
+    Actually this is not entirely true. Trees and graphs are used in
+    genealogical research, not as a publication format, but as a tool for
+    analysis. They are great for trying to make sense out of the relationships
+    in a family or community while working on a research question.
