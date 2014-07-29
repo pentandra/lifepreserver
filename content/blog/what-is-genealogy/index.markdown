@@ -178,7 +178,7 @@ know, but we do need the physicist. They're human aren't they?
 [^caveat]: 
 
     It is important to note that there are many knowledgeable genealogists that
-    come to the table with some sort of autonomous research framework who use
+    come to the table with some sort of conceptual research framework who use
     these tools for various purposes, despite the tools' inherent limitations. 
 
 [^analysis-trees]:
