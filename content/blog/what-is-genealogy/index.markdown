@@ -163,6 +163,12 @@ all the help we can get. We need to cooperate with other research fields
 because they are trying to make sense of this world, too. We need their
 research and they need our research.
 
+While we could call it microhistory,[^life] the collection of all of these
+microhistories amount to a large corpus of knowledge, studied from many
+different perspectives. To study and truly understand who these people _were_,
+we need to know what they _knew_. In this way, genealogy is an amalgamation of
+all the world's knowledge, set in historical context. 
+
 Why, you say, would we need low-density particle physics research to help
 determine the political affiliations of my Civil War ancestor? Well, you never
 know, but we do need the physicist. They're human aren't they?
