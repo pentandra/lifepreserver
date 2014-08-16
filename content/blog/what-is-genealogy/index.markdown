@@ -65,7 +65,7 @@ nicely named children, all lined up neatly in a row? I hope not.
       temperatures in terms of colors of light.
     </span>
     Licensed under a
-    <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><abbr>CC-BY-NC</abbr> license</a>.
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><abbr>CC-BY-NC</abbr> license</a>. Used by permission.
   </figcaption>
 </figure>
 
@@ -225,6 +225,6 @@ know, but we do need the physicist. They're human aren't they?
 
 [^ee]:
     Elizabeth Shown Mills has more to say about this topic on her blog,
-    [_QuickLesson 18: Genealogy? In the Academic World? Seriously?_](https://www.evidenceexplained.com/content/quicklesson-18-genealogy-academic-world-seriously),
-    and in her papers, [_Bridging the Historic Divide: Family History and 'Academic'    History_](http://www.historicpathways.com/download/bridghisdivideivide.pdf)
-    and [_Genealogy in the Information Age: History's New Frontier?_](http://www.historicpathways.com/download/genininfoage.pdf)
+    [_QuickLesson 18: Genealogy? In the Academic World? Seriously?_](https://www.evidenceexplained.com/content/quicklesson-18-genealogy-academic-world-seriously) (2014),
+    and in her papers, [_Bridging the Historic Divide: Family History and 'Academic'    History_](http://www.historicpathways.com/download/bridghisdivideivide.pdf) (2007)
+    and [_Genealogy in the Information Age: History's New Frontier?_](http://www.historicpathways.com/download/genininfoage.pdf) (2003).
