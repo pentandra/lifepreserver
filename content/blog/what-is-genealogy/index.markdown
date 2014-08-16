@@ -50,7 +50,33 @@ Looking at genealogy in this way is both a shallow and distorted view of
 reality. Was the sole purpose of Doe Darling's existence to produce seven
 nicely named children, all lined up neatly in a row? I hope not.
 
-We (at Pentandra) look at genealogy as the study of _lives_---of mankind.[^life]
+<figure id="internetmap" class="img" prefix="dc: http://purl.org/dc/terms/ cc: http://creativecommons.org/ns#" about="<%= url_for(@item) %>opte-2010_620.png">
+  <img src="opte-2010_620.png" alt="The Internet 2010" class="static" />
+  <figcaption class="small">
+    <span property="dc:title">The Internet 2010</span>,
+    by
+    <a href="http://www.opte.org/" property="cc:attributionName" rel="cc:attributeURL dc:creator">The Opte Project</a>,
+    <span property="dc:description">
+      was never released publicly prior to 2014. It has only been
+      viewable at the Museum of Modern Art (MoMA) in New York, and in an
+      edition of Discover Magazine. The color selection is based the color of
+      incandescence, where the most connection points represent the highest
+      temperatures in terms of colors of light.
+    </span>
+    Licensed under a
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><abbr>CC-BY-NC</abbr> license</a>.
+  </figcaption>
+</figure>
+
+Looking at genealogy as a bunch of interconnected family trees is akin to
+looking at the World Wide Web as a bunch of nodes and edges. While the view may
+nice to look at, it's not all there is to it. You may have [browsed to this
+node at will](http://www.w3.org/Proposal.html), but you probably didn't think
+of it that way.
+
+## Our Perspective
+
+We (at Pentandra) look at genealogy as the study of _lives_---of mankind.
 Life is messy. Life is full. Life is complicated. Life is rich. A pedigree
 chart would be the last thing I would pick to describe it.
 
@@ -121,7 +147,9 @@ mind:
   must be proven first, by evidence.
 * Questions must be studied in context. We cannot rip someone out of their
   world and expect to get a good understanding of who they were by studying
-  their vital information alone.
+  their vital information alone. People are part of the world context in which
+  they lived. They cannot be taken out of that world, they are part of it, and
+  must be studied in that context.
 * Answers must be articulated in a way that promotes understanding, deeper
   insight, and further research. Presenting good research is all about
   communication. It's an art. While a computer can help make this process
@@ -161,7 +189,7 @@ can get. Only as we come to an understanding of each person's human experience
 can we have any confidence in the outputs of our research. That is why we need
 all the help we can get. We need to cooperate with other research fields
 because they are trying to make sense of this world, too. We need their
-research and they need our research.
+research and they need our research.[^ee]
 
 While we could call it microhistory,[^life] the collection of all of these
 microhistories amount to a large corpus of knowledge, studied from many
@@ -182,13 +210,20 @@ know, but we do need the physicist. They're human aren't they?
     software for genealogy, people are _way_ more understanding.
 
 [^caveat]: 
-
     It is important to note that there are many knowledgeable genealogists that
-    come to the table with some sort of conceptual research framework who use
-    these tools for various purposes, despite the tools' inherent limitations. 
+    come to the table with some sort of conceptual research framework that they
+    use to guide their research. Some may use these tools, despite the inherent
+    limitations, for part of their research output, but they are generally not
+    used during the research process.
 
 [^analysis-trees]:
     Actually this is not entirely true. Trees and graphs are used in
     genealogical research, not as a publication format, but as a tool for
     analysis. They are great for trying to make sense out of the relationships
     in a family or community while working on a research question.
+
+[^ee]:
+    Elizabeth Shown Mills has more to say about this topic on her blog,
+    [_QuickLesson 18: Genealogy? In the Academic World? Seriously?_](https://www.evidenceexplained.com/content/quicklesson-18-genealogy-academic-world-seriously),
+    and in her papers, [_Bridging the Historic Divide: Family History and 'Academic'    History_](http://www.historicpathways.com/download/bridghisdivideivide.pdf)
+    and [_Genealogy in the Information Age: History's New Frontier?_](http://www.historicpathways.com/download/genininfoage.pdf)
