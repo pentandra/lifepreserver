@@ -53,9 +53,10 @@ nicely named children, all lined up neatly in a row? I hope not.
 <figure id="internetmap" class="img" prefix="dc: http://purl.org/dc/terms/ cc: http://creativecommons.org/ns#" about="<%= url_for(@item) %>opte-2010_620.png">
   <img src="opte-2010_620.png" alt="The Internet 2010" class="static" />
   <figcaption class="small">
+    <span class="bold">Figure 1</span>
     <span property="dc:title">The Internet 2010</span>,
     by
-    <a href="http://www.opte.org/" property="cc:attributionName" rel="cc:attributeURL dc:creator">The Opte Project</a>,
+    <a href="http://www.opte.org/" property="cc:attributionName" rel="cc:attributeURL dc:creator">The Opte Project / Barrett Lyon</a>,
     <span property="dc:description">
       was never released publicly prior to 2014. It has only been
       viewable at the Museum of Modern Art (MoMA) in New York, and in an
