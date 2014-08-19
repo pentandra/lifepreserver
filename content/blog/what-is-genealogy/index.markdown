@@ -51,7 +51,7 @@ reality. Was the sole purpose of Doe Darling's existence to produce seven
 nicely named children, all lined up neatly in a row? I hope not.
 
 <figure id="internetmap" class="img" prefix="dc: http://purl.org/dc/terms/ cc: http://creativecommons.org/ns#" about="<%= url_for(@item) %>opte-2010_620.png">
-  <img src="opte-2010_620.png" alt="The Internet 2010" class="static" />
+  <img src="opte-2010_620.png" alt="The Internet 2010" class="static framed" />
   <figcaption class="small">
     <span class="bold">Figure 1</span>
     <span property="dc:title">The Internet 2010</span>,
