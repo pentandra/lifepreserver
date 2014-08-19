@@ -89,9 +89,7 @@ $less-outer-margin: 34px;
     margin: 0 auto;
   }
 
-  .menu3 ul li {
-    float: none;
-    width: auto;
+  .menu3 li {
     margin-right: 0;
   }
 
@@ -177,7 +175,7 @@ $less-outer-margin: 34px;
       padding: 0 $less-outer-margin;
 
       ul li {
-        float: none;
+        display: block;
         margin: $base-line-height 0;
       }
 
@@ -191,15 +189,6 @@ $less-outer-margin: 34px;
 
     .bd .aside {
       width: auto;
-    }
-
-    .menu ul li {
-      $spacing: (252px - (26px + 12px + 32px + 26px)) / 8;
-      margin: 0 $spacing;
-
-      &:first-child {
-        margin-left: $spacing;
-      }
     }
 
     .excerpt h3 {

@@ -32,7 +32,7 @@
       %>
       <h3 class="big">The Author</h3>
       <figure id="author">
-        <img class="photo" src="<%= member_image_path(author) %>" alt="Photo of <%= full_name(author) %>" property="image" />
+        <img class="photo framed" src="<%= member_image_path(author) %>" alt="Photo of <%= full_name(author) %>" property="image" />
         <figcaption class="small nav">
           <div class="normal" property="name" rel="author"><%= full_name(author) %></div>
           <div class="small em" property="jobTitle"><%= author[:title] %></div>

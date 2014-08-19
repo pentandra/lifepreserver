@@ -23,7 +23,7 @@
  */
 
 @font-face {
-    font-family: 'FunctionProBook';
+    font-family: $base-font-family;
     src: url('/fonts/FunctionPro-Book.eot');
     src: url('/fonts/FunctionPro-Book.eot?#iefix') format('embedded-opentype'),
          url('/fonts/FunctionPro-Book.woff') format('woff'),
@@ -34,7 +34,7 @@
 }
 
 @font-face {
-    font-family: 'FunctionProMedium';
+    font-family: $bold-font-family;
     src: url('/fonts/FunctionPro-Medium-webfont.eot');
     src: url('/fonts/FunctionPro-Medium-webfont.eot?#iefix') format('embedded-opentype'),
          url('/fonts/FunctionPro-Medium-webfont.woff') format('woff'),
@@ -45,7 +45,7 @@
 }
 
 @font-face {
-    font-family: 'FunctionProBookOblique';
+    font-family: $oblique-font-family;
     src: url('/fonts/FunctionPro-BookOblique.eot');
     src: url('/fonts/FunctionPro-BookOblique.eot?#iefix') format('embedded-opentype'),
          url('/fonts/FunctionPro-BookOblique.woff') format('woff'),
@@ -56,7 +56,7 @@
 }
 
 @font-face {
-    font-family: 'FunctionCapsBook';
+    font-family: $special-font-family;
     src: url('/fonts/FunctionCaps-Book-webfont.eot');
     src: url('/fonts/FunctionCaps-Book-webfont.eot?#iefix') format('embedded-opentype'),
          url('/fonts/FunctionCaps-Book-webfont.woff') format('woff'),

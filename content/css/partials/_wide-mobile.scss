@@ -119,14 +119,6 @@ $less-outer-margin: 22px;
         float: right;
       }
 
-      .menu ul li {
-        margin: 0 0 0 21px;
-
-        &:first-child {
-          margin-left: 0;
-        }
-      }
-
       .inner {
         @include grid(3);
       }

@@ -250,14 +250,29 @@ priority: 0.6
       <div class="section">
 
         <div class="aside">
-          <img class="photo" src="<%= member_image_path(member) %>" alt="Photo of <%= full_name(member) %>" />
+          <img class="photo framed" src="<%= member_image_path(member) %>" alt="Photo of <%= full_name(member) %>" />
 
           <aside class="nav menu">
 
-            <ul class="sp">
-              <li><a class="gplus ir url" title="<%= full_name(member) %> on Google+" href="https://plus.google.com/<%= member[:gplus] %>?prsrc=3"><%= full_name(member) %> on Google+</a></li>
-              <li><a class="twittr ir url" href="https://twitter.com/<%= member[:twitter] %>" title="Follow @<%= member[:twitter] %>">Follow @<%= member[:twitter] %></a></li>
-              <li><a class="email ir" href="mailto:<%= member[:email] %>" title="<%= member[:email] %>">Email <%= member[:first_name] %></a></li>
+            <ul class="sp framed rev">
+              <li>
+                <a class="url" title="<%= full_name(member) %> on Google+" href="https://plus.google.com/<%= member[:gplus] %>?prsrc=3">
+                  <span aria-hidden="true" class="icon-googleplus"></span>
+                  <span class="visuallyhidden"><%= full_name(member) %> on Google+</span>
+                </a>
+              </li>
+              <li>
+                <a class="url" href="https://twitter.com/<%= member[:twitter] %>" title="Follow @<%= member[:twitter] %>">
+                  <span aria-hidden="true" class="icon-twitter"></span>
+                  <span class="visuallyhidden">Follow @<%= member[:twitter] %></span>
+                </a>
+              </li>
+              <li>
+                <a class="email" href="mailto:<%= member[:email] %>" title="<%= member[:email] %>">
+                  <span aria-hidden="true" class="icon-mail"></span>
+                  <span class="visuallyhidden">Email <%= member[:first_name] %></span>
+                </a>
+              </li>
             </ul>
 
           </aside>

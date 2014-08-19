@@ -258,19 +258,26 @@ a.permalink {
   margin-bottom: 0 - $border-height;
 }
 
-
-.photo {
+.framed {
   $border-width: 11px;
-  $photo-width: 160px;
 
   border: $border-width solid $pentandra-brown;
-  width: $photo-width;
-  height: $photo-width; // For IE8
-  margin-bottom: ($base-line-height * 7) - $photo-width;
   @include box-sizing(border-box);
 }
 
+.photo {
+  $photo-width: 160px;
+
+  width: $photo-width;
+  height: $photo-width; // For IE8
+  margin-bottom: ($base-line-height * 7) - $photo-width;
+}
+
 // Content classes
+
+.centered {
+  text-align: center;
+}
 
 a.button, input.button, .tags a {
 
@@ -368,10 +375,6 @@ input.button {
   @include border-radius($default-radius / 2);
 }
 
-.sp a {
-  margin-right: 6px;
-}
-
 .holder {
   position: relative;
 }
@@ -383,7 +386,7 @@ input.button {
 
 .menu {
   li {
-    float: left;
+    display: inline-block;
   }
 }
 
@@ -614,17 +617,12 @@ input.button {
 }
 
 .teammember {
-  $photo-height: 160px;
-  $social-button-height: 32px;
-  $photo-margin: $base-line-height / 4;
-  $excess: ($base-line-height * 8) - ($photo-height + $social-button-height);
-
-  .aside {
-    margin-bottom: $excess - $photo-margin;
+  .rev a {
+    text-decoration: none;
   }
 
   .photo {
-    margin-bottom: $photo-margin;
+    margin-bottom: 0;
   }
 }
 
@@ -635,10 +633,14 @@ article {
   }
 
   .conclusion:after {
-    content: "\E000";
+    content: "\e000";
     font-family: $special-font-family;
-    margin-left: 0.5em;
-    position: relative;
+    margin: -3px 0.3em;
+    font-size: $base-line-height;
+    position: absolute;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
   }
 }
 
