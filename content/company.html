@@ -12,6 +12,7 @@ teammembers:
     email: chris@pentandra.com
     twitter: cd_chapman
     gplus: 102332274449851755462
+    github: cdchapman
     phone: *tel
     phone_ext: 1000
     summary: >
@@ -246,76 +247,68 @@ priority: 0.6
 
     <% @item[:teammembers].each_with_index do |member, i| %>
     <section id="<%= full_name(member).to_slug %>" class="teammember vcard bl<%= i.odd? ? ' ock' : '' %> item">
-
       <div class="section">
-
         <div class="aside">
           <img class="photo framed" src="<%= member_image_path(member) %>" alt="Photo of <%= full_name(member) %>" />
-
           <aside class="nav menu">
-
             <ul class="sp framed rev">
+              <% if member[:gplus] then %>
               <li>
                 <a class="url" title="<%= full_name(member) %> on Google+" href="https://plus.google.com/<%= member[:gplus] %>?prsrc=3">
                   <span aria-hidden="true" class="icon-googleplus"></span>
                   <span class="visuallyhidden"><%= full_name(member) %> on Google+</span>
                 </a>
               </li>
+              <% end %>
+              <% if member[:twitter] then %>
               <li>
                 <a class="url" href="https://twitter.com/<%= member[:twitter] %>" title="Follow @<%= member[:twitter] %>">
                   <span aria-hidden="true" class="icon-twitter"></span>
                   <span class="visuallyhidden">Follow @<%= member[:twitter] %></span>
                 </a>
               </li>
+              <% end %>
+              <% if member[:github] then %>
               <li>
-                <a class="email" href="mailto:<%= member[:email] %>" title="<%= member[:email] %>">
+                <a class="url" href="https://github.com/<%= member[:github] %>" title="Check out <%= member[:first_name] %> on Github">
+                  <span aria-hidden="true" class="icon-github"></span>
+                  <span class="visuallyhidden">Check out <%= member[:first_name] %> on Github</span>
+                </a>
+              </li>
+              <% end %>
+              <li>
+                <a class="email" href="mailto:<%= member[:email] %>" title="mailto:<%= member[:email] %>">
                   <span aria-hidden="true" class="icon-mail"></span>
                   <span class="visuallyhidden">Email <%= member[:first_name] %></span>
                 </a>
               </li>
             </ul>
-
           </aside>
         </div>
-
         <div class="bd group">
-
           <hgroup>
             <h4 class="big fn flush"><%= full_name(member) %></h4>
             <h5 class="em small"><%= member[:title] %></h5>
           </hgroup>
-
           <p><%= member[:summary] %></p>
-
         </div>
-
       </div>
-
     </section>
     <% end %>
-
   </section>
-
 </section>
-
 <footer id="contact" class="group ext grab">
-
   <div class="wrapper">
     <h2>Give Us A Holler!</h2>
-
     <div class="bd">
-
       <aside class="aside section">
-
         <h3 class="flush">Get Social</h3>
-
         <ul class="none">
           <li class="social-gp" ><a href="https://plus.google.com/+Pentandra" class="button">Pentandra on Google+</a></li>
           <li class="social-tw"><a href="https://twitter.com/intent/user?screen_name=<%= @item[:twitter] %>" class="button">Follow @<%= @item[:twitter] %></a></li>
           <li class="social-fb"><a href="http://www.facebook.com/PentandraInc" class="button">Pentandra on FB</a></li>
         </ul>
       </aside>
-
       <div class="inner group">
         <address class="vcard">
           <div class="fn org">Pentandra Research Solutions, Inc.</div>
@@ -326,13 +319,9 @@ priority: 0.6
           <div class="tel">Phone: +1 <span class="parenthesis">(</span>435<span class="parenthesis">)</span> 294<span class="ndash">--</span>2964</div>
           <div>Email: <a href="mailto:<%= @item[:email] %>"><%= @item[:email] %></a></div>
         </address>
-
         <p>
-
            We support <a href="http://ccpact.com" rel="external">The Company--Customer Pact</a>.
-
         </p>
-
         <p>
 
           We are located in Logan, Utah, in the beautiful Cache Valley. We work
@@ -340,18 +329,13 @@ priority: 0.6
           track of our kids and their pet rocks. We love it---most of the time.
 
         </p>
-
       </div>
-
     </div>
-
     <figure class="aside section" id="vcard">
       <a href="<%= @item.path(:rep => :vcard) %>">
         <img src="<%= @item.path(:rep => :qrcode) %>" alt="" />
       </a>
       <figcaption class="small bold">Our vCard</figcaption>
     </figure>
-
   </div>
-
 </footer>
