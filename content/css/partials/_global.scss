@@ -484,8 +484,16 @@ input.button {
   background-color: $pentandra-white;
 }
 
-.grab .icons a, .rev .icons a {
+.grab .icons a, .rev .icons a { // Needs this specificity
   text-decoration: none;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  &:hover, &:active { color: $link-hover-color; }
+}
+
+.grab [class^="icon-"], .grab [class*=" icon-"] {
+  &:hover, &:focus { color: $pentandra-lime; }
 }
 
 .shadow {
