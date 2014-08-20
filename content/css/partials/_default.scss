@@ -297,11 +297,6 @@ $theteam-height: $base-line-height * 12;
 
 .contentinfo {
 
-  [class^="icon-"], [class*=" icon-"] {
-    font-size: $base-line-height * 2;
-    line-height: 1.1;
-  }
-
   .bd .aside {
     @include grid(2);
   }
