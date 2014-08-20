@@ -250,8 +250,8 @@ priority: 0.6
       <div class="section">
         <div class="aside">
           <img class="photo framed" src="<%= member_image_path(member) %>" alt="Photo of <%= full_name(member) %>" />
-          <aside class="nav menu">
-            <ul class="sp framed rev">
+          <aside class="nav menu rev">
+            <ul class="sp framed icons">
               <% if member[:gplus] then %>
               <li>
                 <a class="url" title="<%= full_name(member) %> on Google+" href="https://plus.google.com/<%= member[:gplus] %>?prsrc=3">

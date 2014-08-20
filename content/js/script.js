@@ -114,29 +114,6 @@ Pentandra.Scrolling = (function() {
 
 Pentandra.Social = (function() {
 
-  var opts = {
-
-    share: {
-      googlePlus: true,
-      twitter: true,
-      linkedin: true,
-      facebook: true
-    },
-
-    buttons: {
-      googlePlus: { annotation: 'none' },
-      linkedin: { counter: 'right' },
-      twitter: { via: 'PentandraInc', related: 'geungle' }
-    },
-
-    urlCurl: '',
-
-    enableHover: false,
-    enableCounter: false,
-    enableTracking: true
-
-  };
-
   var setupPermalinks = function() {
     $(".permalinks input").focus(function(e) {
       $(this)
@@ -148,10 +125,6 @@ Pentandra.Social = (function() {
   return {
     init: function(target) {
       setupPermalinks();
-
-      if ($.fn.sharrre) {
-        $(target).sharrre(opts);
-      }
     }
   };
 

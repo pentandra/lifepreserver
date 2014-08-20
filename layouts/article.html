@@ -46,7 +46,39 @@
     <section class="grab banner section static">
       <div class="fancy wrapper group pod">
         <h3 class="big">Share</h3>
-        <div class="section" id="share" data-url="<%= shorten(url_for(@item)) %>" data-title="share" data-text="<%= @item[:title] %>"></div>
+        <div class="menu nav section icons big" id="share">
+          <% 
+            sharer_url = shorten(url_for(@item))
+            sharer_text = h(@item[:title])
+            sharer_tags = h(@item[:tags].join(',')) unless @item[:tags].nil?
+          %>
+          <ul class="centered">
+            <li>
+              <a rel="external" href="https://plus.google.com/share?url=<%= sharer_url %>">
+                <span aria-hidden="true" class="icon-googleplus"></span>
+                <span class="visuallyhidden">Share on Google+</span>
+              </a>
+            </li>
+            <li>
+              <a rel="external" href="https://www.facebook.com/sharer/sharer.php?u=<%= sharer_url %>">
+                <span aria-hidden="true" class="icon-facebook"></span>
+                <span class="visuallyhidden">Share on Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a rel="external" href="https://twitter.com/share?url=<%=sharer_url %>&text=<%= sharer_text %>&via=PentandraInc&hashtags=<%= sharer_tags %>&related=pentandrainc,geungle">
+                <span aria-hidden="true" class="icon-twitter"></span>
+                <span class="visuallyhidden">Share on Twitter</span>
+              </a>
+            </li>
+            <li>
+              <a rel="external" href="https://www.linkedin.com/shareArticle?mini=true&url=<%= sharer_url %>&title=<%= h(@item[:title]) %>&summary=<%= @item[:description] %>&source=pentandra.com">
+                <span aria-hidden="true" class="icon-linkedin"></span>
+                <span class="visuallyhidden">Share on LinkedIn</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <nav class="menu section banner">
@@ -76,8 +108,3 @@
     </div>
   </aside>
 </article>
-
-<% content_for :javascripts do %>
-<%= content_for(@item, :javascripts) %>
-<script src="/js/libs/jquery.sharrre-1.3.3.min.js"></script>
-<% end %>
