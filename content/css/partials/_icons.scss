@@ -23,8 +23,6 @@
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-
-  &:hover, &:active { color: $link-hover-color; }
 }
 
 .big [class^="icon-"], .big [class*=" icon-"] {
