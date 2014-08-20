@@ -114,34 +114,17 @@ Pentandra.Scrolling = (function() {
 
 Pentandra.Social = (function() {
 
-  var opts = {
-
-    share: {
-      googlePlus: true,
-      twitter: true,
-      linkedin: true,
-      facebook: true
-    },
-
-    buttons: {
-      googlePlus: { annotation: 'none' },
-      linkedin: { counter: 'right' },
-      twitter: { via: 'PentandraInc', related: 'geungle' }
-    },
-
-    urlCurl: '',
-
-    enableHover: false,
-    enableCounter: false,
-    enableTracking: true
-
+  var setupPermalinks = function() {
+    $(".permalinks input").focus(function(e) {
+      $(this)
+        .select()
+        .one('mouseup', function(e) { e.preventDefault(); });
+    });
   };
 
   return {
     init: function(target) {
-      if ($.fn.sharrre) {
-        $(target).sharrre(opts);
-      }
+      setupPermalinks();
     }
   };
 

@@ -95,7 +95,7 @@ $less-outer-margin: 48px;
 
 .inner, .aside {
   input {
-    width: 100%;
+    width: 98%;
   }
 }
 
@@ -109,7 +109,7 @@ $less-outer-margin: 48px;
 .menu3 {
   li {
     @include grid(3);
-    margin-right: 70px;
+    margin-right: 65px;
 
     &.last {
       margin-right: 0;
@@ -210,22 +210,6 @@ $theteam-height: $base-line-height * 12;
 //
 // Background-image classes
 
-.email {
-  height: 20px;
-  width: 32px;
-  background: transparent left center no-repeat url('/images/email.png');
-}
-
-.grab .email, .rev .email {
-  background: transparent left center no-repeat url('/images/email-white.png');
-}
-
-.fb {
-  height: $base-line-height;
-  width: 12px;
-  background: transparent center center no-repeat url('/images/fb.png');
-}
-
 .geungle-logo {
   @include grid(7);
   height: $base-line-height * 7;
@@ -238,19 +222,6 @@ $theteam-height: $base-line-height * 12;
   height: $logo-height;
   background-image: url('/images/geungle-logo_3col.png');
   padding-bottom: ($base-line-height * 3) - $logo-height;
-}
-
-
-.gplus {
-  height: 32px;
-  width: 32px;
-  background: transparent left center no-repeat url('/images/gplus-32.png');
-}
-
-.rev .gplus, .grab .gplus {
-  height: $base-line-height;
-  width: $base-line-height;
-  background: transparent center center no-repeat url('/images/gplus-white.png');
 }
 
 .logo { 
@@ -310,23 +281,6 @@ $theteam-height: $base-line-height * 12;
   margin-bottom: ($base-line-height * 9) - 217px;
 }
 
-.rss {
-  height: $base-line-height;
-  width: $base-line-height;
-  background: transparent center center no-repeat url('/images/rss.png');
-}
-
-.twittr {
-  height: 32px;
-  width: 32px;
-  background: transparent left center no-repeat  url('/images/twitter-32.png?v2');
-}
-
-.rev .twittr, .grab .twittr {
-  height: $base-line-height;
-  background: transparent center center no-repeat url('/images/twitter.png?v2');
-}
-
 .zeugma-collab {
   margin-top: -14px;
 }
@@ -345,14 +299,6 @@ $theteam-height: $base-line-height * 12;
 
   .bd .aside {
     @include grid(2);
-  }
-
-  .menu ul li {
-    margin-left: 21px; // Can we come up with a generic centering thing?
-
-    &:first-child {
-      margin-left: 0;
-    }
   }
 
   .excerpt h3 {

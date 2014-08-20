@@ -9,7 +9,7 @@ $use_grid = true
 
 $add_google_analytics = false
 
-$add_comments = true
+$add_comments = false
 $livefyre_domain = "pentandra.com"
 $livefyre_network_name = "livefyre.com"
 $livefyre_network_key = ""
