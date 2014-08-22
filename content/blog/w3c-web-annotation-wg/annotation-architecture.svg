@@ -74,6 +74,7 @@
       if (!e) {
         e = window.event;        
       }
+      e.preventDefault();
 
       if (window.event) {
         keyCode = window.event.keyCode;
