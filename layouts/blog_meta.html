@@ -12,10 +12,10 @@
     </div>
     <nav class="menu inner">
       <h2 class="big">Tags A<span class="ndash">--</span>Z</h2>
-      <div class="group">
+      <div class="group menu">
         <ul class="tags">
         <% tag_set(publishing_articles).sort.each do |tag| %>
-          <li><%= link_for_tagcloud(tag, "/tags/") %>&nbsp;</li>
+          <li><%= link_for_tagcloud(tag, "/tags/") %></li>
         <% end %>
         </ul>
       </div>
