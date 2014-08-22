@@ -105,6 +105,10 @@ $less-outer-margin: 34px;
   .excerpt .pubdate {
     padding-top: 0;
   }
+  
+  .normal.flush {
+    line-height: $base-line-height;
+  }
 
   // Grid classes
 

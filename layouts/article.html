@@ -81,11 +81,11 @@
         </div>
       </div>
     </section>
-    <nav class="menu section banner">
+    <nav class="section banner">
       <h3 class="big">Tags</h3>
       <ul class="tags">
         <% [*@item[:tags]].each do |tag| %>
-        <li><%= link_for_tag(tag, "/tags/") %>&nbsp;</li>
+        <li><%= link_for_tag(tag, "/tags/") %></li>
         <% end %>
       </ul>
     </nav>

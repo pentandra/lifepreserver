@@ -322,7 +322,6 @@ input.button {
 
   li, a {
 
-    float: left;
     position: relative;
 
     height: $tag-height;
@@ -331,6 +330,7 @@ input.button {
   }
 
   a {
+    display: inline-block;
     padding: 0 $tag-space + $hole-diameter 0 $tag-space;
     margin-right: $tag-space * 1.25;
     @include border-radius($default-radius / 2 0 0 $default-radius / 2);
@@ -366,7 +366,7 @@ input.button {
   }
 
   li {
-    margin: ($base-line-height - $tag-height) / 2 0;
+    padding: ($base-line-height - $tag-height) / 2 0;
   }
 }
 
@@ -580,7 +580,7 @@ input.button {
   }
 
   article h3 {
-    margin-bottom: $base-line-height;
+    margin-bottom: 0;
   }
 
   .content {
