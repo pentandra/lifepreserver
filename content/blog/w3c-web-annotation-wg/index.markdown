@@ -23,6 +23,16 @@ agnostic. They are lightweight and distributed. They are awesome.
 
 <!--MORE-->
 
-<figure class="embed-container wideScreen" id="annotation-architecture">
-  <iframe src="annotation-architecture.svg" class="simple static"></iframe>
+<figure id="annotation_architecture" class="section">
+  <div class="embed-container wideScreen"> 
+    <iframe src="annotation-architecture.svg" class="simple static"></iframe>
+  </div>
+  <figcaption class="small">
+    <span class="bold">Figure 1.</span>
+    Infographic from the W3C about web annotations. 
+    <a href="annotation-architecture.svg">Display fullscreen</a> for best viewing
+    experience.
+  </figcaption>
 </figure>
+
+Let's take a sneak peek inside to see how Geungle works...
