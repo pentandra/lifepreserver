@@ -15,7 +15,7 @@ tags:
 We are thrilled that one of the core building blocks that we are using for
 Geungle made it into a [W3C Working Group](http://www.w3.org/annotation/)
 yesterday! It has been a long road up to this point, and there is still a good
-ways to go, but this is a great achievement none the less. 
+ways to go, but this is a great achievement nonetheless. 
 
 Web annotations are fundamental to collaborative, open research. They have the
 potential to revolutionize the way that research is published. They are domain
