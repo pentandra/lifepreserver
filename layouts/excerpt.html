@@ -12,7 +12,7 @@
     <time class="big" datetime="<%= article[:created_at] %>"><%= date_for(article) %></time>
   </footer>
   <footer class="aside section">
-    <nav class="menu group banner">
+    <nav class="group banner">
       <ul class="tags">
         <% tag_set(Array(article)).each do |tag| %>
         <li><%= link_for_tag(tag, "/tags/") %>&nbsp;</li>
