@@ -61,6 +61,9 @@ $less-outer-margin: 28px;
     }
   }
 
+  .normal.flush {
+    line-height: $base-line-height;
+  }
 
   //
   // Grid classes
@@ -139,7 +142,7 @@ $less-outer-margin: 28px;
     .bd .aside {
       width: auto;
 
-      .section {
+      .section, .group {
         float: left;
         margin: 0;
       }
