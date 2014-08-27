@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'coderay' # for syntax highlighting
-gem 'compass' # for advanced CSS
+gem 'compass', '~>0.12' # for advanced CSS
 gem 'haml' # for layouts with clean sources
 gem 'kramdown' # for advanced markdown
 gem 'nanoc' # for compiling the site
@@ -20,7 +20,7 @@ gem 'systemu'
 gem 'shortly' # For URL shortening
 gem 'html_spellchecker'
 gem 'json'
-gem 'livefyre'
+gem 'livefyre', '1.1.4'
 gem 'jwt', '~> 0.1'
 gem 'rest-client', '~> 1.6'
 gem 'addressable'
