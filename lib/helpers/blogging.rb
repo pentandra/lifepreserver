@@ -22,7 +22,14 @@ module Nanoc::Helpers
       authors.to_a
     end
 
+    #
+    # Create a link for the author of this page
+    #
     def link_for_author(author, base_url)
+      %[<a rel="author" href="#{h base_url}#{h author.to_slug}/" title="More articles by #{h author}">#{h author}</a>]
+    end
+
+    def link_for_an_author(author, base_url)
       %[<a href="#{h base_url}#{h author.to_slug}/" title="Articles by #{h author}">#{h author}</a>]
     end
 
@@ -35,7 +42,7 @@ module Nanoc::Helpers
     end
 
     def link_for_archive(year, base_url)
-      %[<a href="#{h base_url}#{h year.to_s}/" title="Articles written in #{h year.to_s}">#{h year.to_s}</a>]
+      %[<a rel="archives" href="#{h base_url}#{h year.to_s}/" title="Articles written in #{h year.to_s}">#{h year.to_s}</a>]
     end
 
     def archive_years(articles = nil)
