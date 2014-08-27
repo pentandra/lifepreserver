@@ -34,8 +34,8 @@
       <figure id="author">
         <img class="photo framed" src="<%= member_image_path(author) %>" alt="Photo of <%= full_name(author) %>" property="image" />
         <figcaption class="small nav">
-          <div class="normal" property="name" rel="author"><%= full_name(author) %></div>
-          <div class="small em" property="jobTitle"><%= author[:title] %></div>
+          <h4 class="normal shaved" property="name" rel="author"><%= full_name(author) %></h4>
+          <h5 class="small em" property="jobTitle"><%= author[:title] %></h5>
           <ul>
             <li><a href="<%= member_path(author) %>" property="url"><%= author[:first_name] %> at <span property="worksFor">Pentandra</span></a></li>
             <li><a href="https://plus.google.com/<%= author[:gplus] %>?rel=author"><%= author[:first_name] %> on Google+</a></li>

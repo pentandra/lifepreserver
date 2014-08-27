@@ -21,11 +21,6 @@ h3.close {
   line-height: 29px;
 }
 
-.big.flush, h3.flush {
-  line-height: 20px;
-  margin-bottom: 32px;
-}
-
 h4.small, h5.small {
   margin-bottom: $base-line-height * 0.25;
 }
@@ -34,6 +29,11 @@ hgroup {
   .big.flush, h3.flush {
     margin-bottom: $base-line-height * 0.75;
   }
+}
+
+.big.flush, h3.flush {
+  line-height: 20px;
+  margin-bottom: 32px;
 }
 
 .normal.flush {
@@ -45,6 +45,10 @@ hgroup {
   $height: 11px;
   line-height: $height;
   margin-bottom: $base-line-height - $height;
+}
+
+.shaved {
+  margin-bottom: 0;
 }
 
 small {
