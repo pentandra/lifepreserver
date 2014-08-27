@@ -23,6 +23,7 @@ gem 'livefyre', '1.1.4'
 gem 'jwt', '~> 0.1'
 gem 'rest-client', '~> 1.6'
 gem 'addressable'
+gem 'rubypants-unicode'
 
 group :development do
   gem 'guard-nanoc'
