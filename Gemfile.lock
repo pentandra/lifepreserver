@@ -16,7 +16,7 @@ GEM
     chunky_png (1.3.1)
     coderay (1.1.0)
     colored (1.2)
-    compass (0.12.6)
+    compass (0.12.7)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.2.19)
@@ -37,10 +37,13 @@ GEM
       nanoc (>= 3.6.3)
     haml (4.0.5)
       tilt
+    html5small (0.3.0)
+      htmlentities (>= 4.1.0)
+      nokogiri (>= 1.5.0)
     html_spellchecker (0.1.7)
       hunspell-ffi (= 0.1.3)
       nokogiri (~> 1.4)
-    htmlbeautifier (0.0.9)
+    htmlentities (4.3.2)
     httparty (0.13.0)
       json (~> 1.8)
       multi_xml (>= 0.5.2)
@@ -81,7 +84,6 @@ GEM
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
     rqrcode (0.4.2)
-    rubypants-unicode (0.2.3)
     sass (3.2.19)
     shortly (0.3.5)
       httparty (= 0.13.0)
@@ -112,8 +114,8 @@ DEPENDENCIES
   compass (~> 0.12)
   guard-nanoc
   haml
+  html5small
   html_spellchecker
-  htmlbeautifier
   json
   jwt (~> 0.1)
   kramdown
@@ -123,7 +125,6 @@ DEPENDENCIES
   rainpress
   rest-client (~> 1.6)
   rqrcode
-  rubypants-unicode
   shortly
   systemu
   uglifier

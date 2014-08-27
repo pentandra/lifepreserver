@@ -7,9 +7,8 @@ gem 'kramdown' # for advanced markdown
 gem 'nanoc' # for compiling the site
 gem 'nokogiri' # for parsing HTML
 gem 'rainpress' # for compact CSS
-gem 'rubypants-unicode' # for pretty typography
 gem 'uglifier' # for compact javascript
-gem 'htmlbeautifier' # for beautiful HTML
+gem 'html5small'
 gem 'activesupport' # for to_slug
 gem 'vpim' # PIM data
 gem 'rqrcode' # for qrcodes
