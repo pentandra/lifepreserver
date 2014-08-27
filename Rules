@@ -157,6 +157,8 @@ compile '*' do
 
     layout 'default'
 
+    filter :rubypantsunicode
+
     if $use_minified_html then
       filter :html5small
     end
