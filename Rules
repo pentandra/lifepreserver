@@ -86,7 +86,6 @@ compile '/css/*/' do
   filter :sass, Compass.sass_engine_options
 
   if $use_minified_css then
-    # compress CSS :)
     filter :rainpress
   end
 end
@@ -142,11 +141,11 @@ compile '*' do
     filter :erb
 
     if item[:extension] == 'markdown'
-      filter :kramdown
+      filter :kramdown, :auto_ids => false
     end
 
     if item[:kind] == 'article' && ($include_drafts or item[:published]) then
-      filter :absolutify_local_paths
+      filter :absolutize_paths, :type => :html
       layout 'article'
     end
 
@@ -159,7 +158,10 @@ compile '*' do
     layout 'default'
 
     filter :rubypantsunicode
-#    filter :beautifier
+
+    if $use_minified_html then
+      filter :html5small
+    end
   end
 end
 
