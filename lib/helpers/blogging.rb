@@ -22,15 +22,15 @@ module Nanoc::Helpers
       authors.to_a
     end
 
-    # Creates a rel=author attribute by default.
-    # Pass in :rel => false if not wanted.
-    def link_for_author(author, base_url, params = {})
-      use_rel = params.fetch(:rel) { true }
-      if use_rel then
-        %[<a rel="author" href="#{h base_url}#{h author.to_slug}/" title="Articles by #{h author}">#{h author}</a>]
-      else
-        %[<a href="#{h base_url}#{h author.to_slug}/" title="Articles by #{h author}">#{h author}</a>]
-      end
+    #
+    # Create a link for the author of this page
+    #
+    def link_for_author(author, base_url)
+      %[<a rel="author" href="#{h base_url}#{h author.to_slug}/" title="More articles by #{h author}">#{h author}</a>]
+    end
+
+    def link_for_an_author(author, base_url)
+      %[<a href="#{h base_url}#{h author.to_slug}/" title="Articles by #{h author}">#{h author}</a>]
     end
 
     def articles_by_author(author)
