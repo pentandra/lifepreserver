@@ -49,8 +49,8 @@
         <div class="menu nav section icons big" id="share">
           <% 
             sharer_url = shorten(url_for(@item))
-            sharer_text = h(@item[:title])
-            sharer_tags = h(@item[:tags].join(',')) unless @item[:tags].nil?
+            sharer_text = URI.escape(@item[:title])
+            sharer_tags = URI.escape(@item[:tags].join(',')) unless @item[:tags].nil?
           %>
           <ul class="centered">
             <li>
