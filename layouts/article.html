@@ -50,6 +50,7 @@
           <% 
             sharer_url = shorten(url_for(@item))
             sharer_text = URI.escape(@item[:title])
+            sharer_desc = URI.escape(@item[:description])
             sharer_tags = URI.escape(@item[:tags].join(',')) unless @item[:tags].nil?
           %>
           <ul class="centered">
@@ -72,7 +73,7 @@
               </a>
             </li>
             <li>
-              <a rel="external" href="https://www.linkedin.com/shareArticle?mini=true&url=<%= sharer_url %>&title=<%= h(@item[:title]) %>&summary=<%= @item[:description] %>&source=pentandra.com">
+              <a rel="external" href="https://www.linkedin.com/shareArticle?mini=true&url=<%= sharer_url %>&title=<%= sharer_text %>&summary=<%= sharer_desc %>&source=pentandra.com">
                 <span aria-hidden="true" class="icon-linkedin"></span>
                 <span class="visuallyhidden">Share on LinkedIn</span>
               </a>
