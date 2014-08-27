@@ -22,8 +22,15 @@ module Nanoc::Helpers
       authors.to_a
     end
 
-    def link_for_author(author, base_url)
-      %[<a href="#{h base_url}#{h author.to_slug}/" title="Articles by #{h author}">#{h author}</a>]
+    # Creates a rel=author attribute by default.
+    # Pass in :rel => false if not wanted.
+    def link_for_author(author, base_url, params = {})
+      use_rel = params.fetch(:rel) { true }
+      if use_rel then
+        %[<a rel="author" href="#{h base_url}#{h author.to_slug}/" title="Articles by #{h author}">#{h author}</a>]
+      else
+        %[<a href="#{h base_url}#{h author.to_slug}/" title="Articles by #{h author}">#{h author}</a>]
+      end
     end
 
     def articles_by_author(author)
@@ -35,7 +42,7 @@ module Nanoc::Helpers
     end
 
     def link_for_archive(year, base_url)
-      %[<a href="#{h base_url}#{h year.to_s}/" title="Articles written in #{h year.to_s}">#{h year.to_s}</a>]
+      %[<a rel="archives" href="#{h base_url}#{h year.to_s}/" title="Articles written in #{h year.to_s}">#{h year.to_s}</a>]
     end
 
     def archive_years(articles = nil)
