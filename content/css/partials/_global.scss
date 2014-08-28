@@ -394,6 +394,11 @@ input.button {
   }
 }
 
+.lt-ie8 .menu li {
+  zoom: 1;
+  display: inline;
+}
+
 .sidenote {
 
   font-family: $oblique-font-family, sans-serif;

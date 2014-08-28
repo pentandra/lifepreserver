@@ -1,5 +1,5 @@
 ---
-title: W3C Web Annotation WG
+title: W3C Web Annotation Working Group
 description: Web annotations are really going to happen!
 kind: article
 author_name: Chris Chapman
@@ -15,7 +15,9 @@ tags:
 We are thrilled that one of the core building blocks that we are using for
 Geungle made it into a [W3C Working Group](http://www.w3.org/annotation/)
 yesterday! It has been a long road up to this point, and there is still a good
-ways to go, but this is a great achievement nonetheless. 
+ways to go before it becomes a [W3C
+Recommendation](http://www.w3.org/standards/faq#std), and is adopted by the
+general Web community, but this is a great achievement nonetheless. 
 
 Web annotations are fundamental to collaborative, open research. They have the
 potential to revolutionize the way that research is published. They are domain
@@ -36,3 +38,5 @@ agnostic. They are lightweight and distributed. They are awesome.
 </figure>
 
 Let's take a sneak peek inside to see how Geungle works...
+
+*[Web]: World-Wide Web
