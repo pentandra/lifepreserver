@@ -1,24 +1,25 @@
-<article class="group" vocab="http://schema.org/" typeof="BlogPosting">
+<article class="group h-entry" vocab="http://schema.org/" typeof="BlogPosting">
   <header class="section">
-    <h1 property="name headline"><%= @item[:title] %></h1>
+    <h1 class="p-name" property="name headline"><%= @item[:title] %></h1>
     <div class="group meta">
       <div class="bd up">
         <div>
-          Written <time property="datePublished" datetime="<%= @item[:created_at] %>"><%= @item[:created_at].strftime("%B %d, %Y") %></time>
+          Written <time class="dt-published" property="datePublished" datetime="<%= @item[:created_at] %>"><%= @item[:created_at].strftime("%B %d, %Y") %></time>
           by
           <%= link_for_author( @item[:author_name], "/authors/") %>
         </div>
         <% if @item[:updated_at] > @item[:created_at] then %>
         <div>
-          Last Updated <time property="dateModified" datetime="<%= @item[:updated_at] %>"><%= @item[:updated_at].strftime("%B %d, %Y") %></time>
+          Last Updated <time class="dt-updated" property="dateModified" datetime="<%= @item[:updated_at] %>"><%= @item[:updated_at].strftime("%B %d, %Y") %></time>
         </div>
         <% end %>
-        <meta property="description" content="<%= @item[:description] %>">
+        <meta class="p-summary" property="description" content="<%= @item[:description] %>">
+        <meta property="url" content="<%= url_for(@item) %>">
       </div>
     </div>
   </header>
   <div class="bd">
-    <div class="post section" property="articleBody">
+    <div class="post section e-content" property="articleBody">
       <%= yield %>
     </div>
     <%= render "comments" %>
@@ -96,7 +97,7 @@
         <div>
           <label>
             URL:
-            <input class="bookmark" type="url" property="url" title="Permanent link to this article" value="<%= url_for(@item) %>">
+            <input class="bookmark u-uid u-url" type="url" value="<%= url_for(@item) %>">
           </label>
         </div>
         <div>
