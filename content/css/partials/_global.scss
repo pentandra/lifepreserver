@@ -391,7 +391,17 @@ input.button {
 .menu {
   li {
     display: inline-block;
+
+    // To fix the inline-block whitespace issue, however in this
+    // case I want a space between the elements, even when the HTML
+    // is minimized.
+    margin-right: 4px;
   }
+}
+
+.lt-ie8 .menu li {
+  zoom: 1;
+  display: inline;
 }
 
 .sidenote {
