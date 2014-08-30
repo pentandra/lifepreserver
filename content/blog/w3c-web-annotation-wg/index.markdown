@@ -97,8 +97,8 @@ census records or high-speed proton collisions. Web annotations do not change
 the data or documents that they point to. Since web annotations are creative
 works, the annotation creator is at liberty to choose how (or if) to license an
 annotation, the same as with any other authored content on the web. This makes
-it possible to share annotations of images in paywalled image repositories.
-(Yes, I'm looking at you.)
+it possible to openly share annotations of images in paywalled image
+repositories. (Yes, I'm looking at you.)
 
 So to conclude, web annotations are awesome. They're fundamental for
 collaborative, open research. They have the potential to revolutionize the way
