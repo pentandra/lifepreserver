@@ -26,7 +26,7 @@ from many different places and worked together, trying to make the web a better
 place. While there were opportunities to sow seeds of discord, no one did (that
 I am aware of). This is kind of unique in the standards world (yes, even at the
 W3C), but I think everyone just realized the importance of this work, and that
-collaboration was essential for success. I have learned a lot watching the
+collaboration was essential for success. I have learned a lot watching this
 process, and have been impressed by everyone in the [Open Annotation
 Collaboration][oac], especially Rob Sanderson, Paolo Ciccarese, and Herbert Van
 de Sompel for their vision and inclusive approach. 
