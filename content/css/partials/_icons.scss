@@ -28,6 +28,16 @@
   margin-right: 0.15em;
 }
 
+.icons [class^="icon-"], .icons [class*=" icon-"] {
+  font-size: $base-line-height;
+  vertical-align: middle;
+}
+
+.big.icons [class^="icon-"], .big.icons [class*=" icon-"] {
+  font-size: $base-line-height * 2;
+  line-height: 1.1;
+}
+
 .icon-mail:before {
 	content: "\e605";
 }

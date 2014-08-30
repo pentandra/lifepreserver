@@ -489,16 +489,6 @@ input.button {
 }
 
 // The next three specifiers for icon fonts
-.icons [class^="icon-"], .icons [class*=" icon-"] {
-  font-size: $base-line-height;
-  vertical-align: middle;
-}
-
-.big [class^="icon-"], .big [class*=" icon-"] {
-  font-size: $base-line-height * 2;
-  line-height: 1.1;
-}
-
 .grab .icons a, .rev .icons a { // Needs this specificity
   text-decoration: none;
 }
