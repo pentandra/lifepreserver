@@ -5,7 +5,7 @@ kind: article
 author_name: Chris Chapman
 created_at: 2014-08-21
 updated_at: 2014-08-29
-published: false
+published: true
 tags:
   - Open Standards
   - W3C
