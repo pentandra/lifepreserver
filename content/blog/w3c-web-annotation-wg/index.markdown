@@ -14,15 +14,15 @@ tags:
 ---
 
 We are thrilled that one of the core building blocks that we are using for
-Geungle has finally made it on the [W3C standards track][w3c-annotation] This
-is a great achievement, and in fact, [Doug Schepers][shepazu], the W3C contact
-for the new working group, mentioned that web annotations broke the record for
-the number of W3C votes for any new charter ever since online voting began (in
-<span class="oldstyle">2003</span>).[^w3c-email] While it has been a long road
-up to this point, there is still a good ways to go before it becomes a [W3C
-Recommendation][w3c-rec]{: .abbr}, and is adopted by the general Web community.
-I have thoroughly enjoyed witnessing how many people have come together from
-many different places and have worked together, trying to make the web a better
+Geungle has finally made it onto the [W3C standards track][w3c-annotation].
+This is a great achievement, and in fact, [Doug Schepers][shepazu], the W3C
+contact for the new working group, mentioned that web annotations broke the
+record for the number of W3C votes for any new charter ever since online voting
+began (in <span class="oldstyle">2003</span>).[^w3c-email] While it has been a
+long road up to this point, there is still a good ways to go before it becomes
+a [W3C Recommendation][w3c-rec]{: .abbr}, and is adopted by the general Web
+community. I have thoroughly enjoyed witnessing how people have come together
+from many different places and worked together, trying to make the web a better
 place. While there were opportunities to sow seeds of discord, no one did (that
 I am aware of). This is kind of unique in the standards world (yes, even at the
 W3C), but I think everyone just realized the importance of this work, and that
