@@ -14,18 +14,22 @@ tags:
 ---
 
 We are thrilled that one of the core building blocks that we are using for
-Geungle made it into a [W3C working group](http://www.w3.org/annotation/)
-yesterday! This is a great achievement, and in fact, Doug Schepers
-[mentioned][schepers] that the <q
-cite="http://lists.w3.org/Archives/Public/public-openannotation/2014Aug/0003.html">
-charter broke the record for any charter review since W3C first started using
-its polling system</q>. It has been a long road up to this point, and there is
-still a good ways to go before it becomes a <a class="abbr"
-href="http://www.w3.org/standards/faq#std">W3C Recommendation</a>, and is
-adopted by the general Web community. This effort has taken many people working
-together, and I want to especially thank the co-chairs of the [Open Annotation
-Collaboration](http://www.openannotation.org/), Rob Sanderson, Paolo Ciccarese,
-and Herbert Van de Sompel for their vision and inclusive approach. 
+Geungle has finally made it on the [W3C standards track][w3c-annotation] This
+is a great achievement, and in fact, [Doug Schepers][shepazu], the W3C contact
+for the new working group, mentioned that web annotations broke the record for
+the number of W3C votes for any new charter ever since online voting began (in
+<span class="oldstyle">2003</span>).[^w3c-email] While it has been a long road
+up to this point, there is still a good ways to go before it becomes a [W3C
+Recommendation][w3c-rec]{: .abbr}, and is adopted by the general Web community.
+I have thoroughly enjoyed witnessing how many people have come together from
+many different places and have worked together, trying to make the web a better
+place. While there were opportunities to sow seeds of discord, no one did (that
+I am aware of). This is kind of unique in the standards world (yes, even at the
+W3C), but I think everyone just realized the importance of this work, and that
+collaboration was essential for success. I have learned a lot watching the
+process, and have been impressed by everyone in the [Open Annotation
+Collaboration][oac], especially Rob Sanderson, Paolo Ciccarese, and Herbert Van
+de Sompel for their vision and inclusive approach. 
 
 Since the [creation of the World Wide Web][oai8], not all has been
 [peachy-keen][pk]. The original vision of the Web, according to Tim
@@ -123,13 +127,13 @@ this means for genealogy. Bring on the Web!
 [^term-research]: _research_, from the [Online Etymology Dictionary](http://www.etymonline.com/index.php?term=research).
 [^term-re-]: _re-_, from the [Online Etymology Dictionary](http://www.etymonline.com/index.php?term=re-)
 [^fishes]: See [_The Fishes and the Frying-Pan_](http://books.google.com/books?id=4UE-AAAAcAAJ&lpg=PA349&ots=74gka8Ll6P&dq=Fables%20of%20Aesop%20and%20Other%20Eminent%20Mythologists%3A%20Abstemius's%20Fables&pg=PA289#v=onepage&q&f=false), from Abstemius' Fables, in which the Remedy is many times worse than the Disease.
+[^w3c-email]: [The announcement](http://lists.w3.org/Archives/Public/public-openannotation/2014Aug/0003.html) for the new working group is in the W3C mailing list archive.
 
 [internet-lost]: http://www.theguardian.com/technology/2014/aug/24/internet-lost-its-way-tim-berners-lee-world-wide-web "How the web lost its way–and its founding principles"
 [pk]: http://www.oxforddictionaries.com/definition/american_english/peachy-keen 
 [RDF]: http://en.wikipedia.org/wiki/Resource_Description_Framework
 [JSON-LD]: http://json-ld.org/
 [oai8]: /blog/heading-to-oai8/#p[TsrKoa],h[TsrKoa] "A little about the beginnings of the WWW"
-[schepers]: http://lists.w3.org/Archives/Public/public-openannotation/2014Aug/0003.html
 [mission]: /company#mission
 [vision]: /blog/a-social-business/#p[OvoObm],h[OvoObm,1,2]
 [I]: /research/process/#p[IiiIsb]
@@ -138,6 +142,10 @@ this means for genealogy. Bring on the Web!
 [LHC]: http://home.web.cern.ch/topics/large-hadron-collider "Expensive information"
 [weak-force]: http://en.wikipedia.org/wiki/Weak_interaction
 [paradigm]: /blog/a-social-business/#p[WtcTwn],h[WtcTwn,2]
+[w3c-annotation]: http://www.w3.org/annotation/ "W3C Web Annotation Working Group"
+[w3c-rec]: http://www.w3.org/standards/faq#std "What is a W3C Recommendation?"
+[shepazu]: http://www.w3.org/People/Schepers/
+[oac]: http://www.openannotation.org/
 
 *[W3C]: World Wide Web Consortium
 *[RDF]: Resource Description Framework
