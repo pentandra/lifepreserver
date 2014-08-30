@@ -391,11 +391,6 @@ input.button {
 .menu {
   li {
     display: inline-block;
-
-    // To fix the inline-block whitespace issue, however in this
-    // case I want a space between the elements, even when the HTML
-    // is minimized.
-    margin-right: 4px;
   }
 }
 
@@ -493,21 +488,24 @@ input.button {
   }
 }
 
-.grab .emHighlight {
-  color: $pentandra-red;
-  background-color: $pentandra-white;
-}
-
+// The next three specifiers for icon fonts
 .grab .icons a, .rev .icons a { // Needs this specificity
   text-decoration: none;
 }
 
-[class^="icon-"], [class*=" icon-"] {
-  &:hover, &:active { color: $link-hover-color; }
+.rev span.button {
+  &:hover, &:focus { color: $link-hover-color; }
 }
 
-.grab [class^="icon-"], .grab [class*=" icon-"] {
+.grab span.button {
   &:hover, &:focus { color: $pentandra-lime; }
+}
+
+// End icon fonts
+
+.grab .emHighlight {
+  color: $pentandra-red;
+  background-color: $pentandra-white;
 }
 
 .shadow {

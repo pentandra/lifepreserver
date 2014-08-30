@@ -76,7 +76,7 @@ a:hover, a:active { outline: 0; }
 #{headings()} { font-weight: normal; } // We will use fonts to show boldness
 
 abbr, .abbr { font-family: $special-font-family; letter-spacing: 0.05em; text-transform: lowercase; }
-abbr[title] { border-bottom: 1px dashed lighten($pentandra-red, 30%); }
+abbr[title] { border-bottom: 1px dashed #e3e3e3; }
 
 b, strong { @extend .bold; }
 

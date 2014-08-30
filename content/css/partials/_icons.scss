@@ -17,15 +17,23 @@
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
-  font-size: $base-line-height;
-  vertical-align: middle;
+  margin-right: 0.06em;
 
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.big [class^="icon-"], .big [class*=" icon-"] {
+.small [class^="icon-"], .small [class*=" icon-"] {
+  margin-right: 0.15em;
+}
+
+.icons [class^="icon-"], .icons [class*=" icon-"] {
+  font-size: $base-line-height;
+  vertical-align: middle;
+}
+
+.big.icons [class^="icon-"], .big.icons [class*=" icon-"] {
   font-size: $base-line-height * 2;
   line-height: 1.1;
 }

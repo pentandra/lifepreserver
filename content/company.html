@@ -255,7 +255,7 @@ priority: 0.6
               <% if member[:gplus] then %>
               <li>
                 <a class="url" title="<%= full_name(member) %> on Google+" href="https://plus.google.com/<%= member[:gplus] %>?prsrc=3">
-                  <span aria-hidden="true" class="icon-googleplus"></span>
+                  <span aria-hidden="true" class="button icon-googleplus"></span>
                   <span class="visuallyhidden"><%= full_name(member) %> on Google+</span>
                 </a>
               </li>
@@ -263,7 +263,7 @@ priority: 0.6
               <% if member[:twitter] then %>
               <li>
                 <a class="url" href="https://twitter.com/<%= member[:twitter] %>" title="Follow @<%= member[:twitter] %>">
-                  <span aria-hidden="true" class="icon-twitter"></span>
+                  <span aria-hidden="true" class="button icon-twitter"></span>
                   <span class="visuallyhidden">Follow @<%= member[:twitter] %></span>
                 </a>
               </li>
@@ -271,14 +271,14 @@ priority: 0.6
               <% if member[:github] then %>
               <li>
                 <a class="url" href="https://github.com/<%= member[:github] %>" title="Check out <%= member[:first_name] %> on Github">
-                  <span aria-hidden="true" class="icon-github"></span>
+                  <span aria-hidden="true" class="button icon-github"></span>
                   <span class="visuallyhidden">Check out <%= member[:first_name] %> on Github</span>
                 </a>
               </li>
               <% end %>
               <li>
                 <a class="email" href="mailto:<%= member[:email] %>" title="mailto:<%= member[:email] %>">
-                  <span aria-hidden="true" class="icon-mail"></span>
+                  <span aria-hidden="true" class="button icon-mail"></span>
                   <span class="visuallyhidden">Email <%= member[:first_name] %></span>
                 </a>
               </li>
