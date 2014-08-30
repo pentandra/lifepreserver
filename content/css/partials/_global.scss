@@ -493,21 +493,34 @@ input.button {
   }
 }
 
-.grab .emHighlight {
-  color: $pentandra-red;
-  background-color: $pentandra-white;
+// The next three specifiers for icon fonts
+.icons [class^="icon-"], .icons [class*=" icon-"] {
+  font-size: $base-line-height;
+  vertical-align: middle;
+}
+
+.big [class^="icon-"], .big [class*=" icon-"] {
+  font-size: $base-line-height * 2;
+  line-height: 1.1;
 }
 
 .grab .icons a, .rev .icons a { // Needs this specificity
   text-decoration: none;
 }
 
-[class^="icon-"], [class*=" icon-"] {
-  &:hover, &:active { color: $link-hover-color; }
+.rev span.button {
+  &:hover, &:focus { color: $link-hover-color; }
 }
 
-.grab [class^="icon-"], .grab [class*=" icon-"] {
+.grab span.button {
   &:hover, &:focus { color: $pentandra-lime; }
+}
+
+// End icon fonts
+
+.grab .emHighlight {
+  color: $pentandra-red;
+  background-color: $pentandra-white;
 }
 
 .shadow {
