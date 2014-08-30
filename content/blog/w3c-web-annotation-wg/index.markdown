@@ -92,13 +92,13 @@ differentiates the research domains from each other is what that information is
 and how that information is obtained.
 
 Web annotations let us build on top of these existing sources of information.
-They are domain agnostic, so it doesn't matter whether the information I am
-dealing with involves census records or high-speed proton collisions. Web
-annotations do not change the data or documents that they point to. Since web
-annotations are creative works, so the annotation creator is at liberty to
-choose how (or if) to license an annotation, just like any other content on the
-web. This makes it possible to share annotations of images in paywalled image
-repositories. (Yes, I'm looking at you.)
+They are domain agnostic, so it doesn't matter whether the information involves
+census records or high-speed proton collisions. Web annotations do not change
+the data or documents that they point to. Since web annotations are creative
+works, the annotation creator is at liberty to choose how (or if) to license an
+annotation, the same as any other content on the web. This makes it possible to
+share annotations of images in paywalled image repositories. (Yes, I'm looking
+at you.)
 
 So to conclude, web annotations are awesome. They're fundamental for
 collaborative, open research. They have the potential to revolutionize the way
