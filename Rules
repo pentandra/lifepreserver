@@ -141,7 +141,7 @@ compile '*' do
     filter :erb
 
     if item[:extension] == 'markdown'
-      filter :kramdown, :auto_ids => false
+      filter :kramdown
     end
 
     if item[:kind] == 'article' && ($include_drafts or item[:published]) then
