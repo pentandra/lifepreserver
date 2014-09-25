@@ -113,7 +113,7 @@ ul, ol { margin-bottom:  $base-line-height; }
 .nav ul, nav ul, .nav ol, nav ol { list-style: none; margin: 0; }
 ul.none, ol.none { list-style: none; }
 
-dt { font-family: $bold-font-family, sans-serif; }
+dt, dt dfn { font-family: $bold-font-family, sans-serif; font-style: normal; }
 dd { margin-bottom: $base-line-height; }
 
 
