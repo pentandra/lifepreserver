@@ -83,7 +83,7 @@ University](http://www.open.ac.uk/), stated:
   </figcaption>
 </figure>
 
-Past indiscretions of commercial companies has tainted the provenient pool of
+Past indiscretions of commercial companies have tainted the provenient pool of
 scholarly publishing. How can we avoid these pitfalls?
 
 Within the current publishing paradigm we agree with Weller---there is no space
