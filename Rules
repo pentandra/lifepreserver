@@ -189,6 +189,14 @@ route '/404/' do
   '/404.html'
 end
 
+route '/spec/README' do
+  nil
+end
+
+route '/spec/LICENSE' do
+  nil
+end
+
 route '/blog/feed_private/' do
   item.identifier + 'index.xml'
 end
