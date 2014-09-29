@@ -145,7 +145,7 @@ compile '*' do
     end
 
     if item[:kind] == 'article' && ($include_drafts or item[:published]) then
-      filter :absolutize_paths, :type => :html
+      filter :absolutify_local_paths
       layout 'article'
     end
 
