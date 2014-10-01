@@ -114,6 +114,7 @@
             <li><%= link_to('Research 101', '/research/process/') %></li>
             <li><%= link_to('Colophon', '/colophon/') %></li>
             <li><%= link_to('Search', '/search/') %></li>
+            <li><%= link_to('Legal', '/policy/')%></li>
           </ul>
         </div>
       </div>
@@ -123,7 +124,20 @@
     </div>
     <div class="group">
       <div>
-        <small class="bold">© <a href="/">Pentandra Research Solutions, Inc.</a></small>
+
+        <small class="bold">Copyright © <%= Time.now.year %> <a
+            href="/">Pentandra Research Solutions, Inc.</a></small>
+
+      </div>
+      <div>
+
+        <small>Except where otherwise <%= link_to 'noted', '/policy/' %>,
+          content on this site is licensed under a <a
+            property="http://creativecommons.org/ns#license"
+            href="http://creativecommons.org/licenses/by/4.0/"
+            rel="license">Creative Commons Attribution 4.0 International
+            license</a>.</small>
+
       </div>
       <div>
         <small class="em">Version <%= @config[:version] %></small>
