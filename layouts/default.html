@@ -122,15 +122,6 @@
       <a class="button backtotop">Back to top</a>
     </div>
     <div class="group" prefix="cc: http://creativecommons.org/ns#">
-      <div class="hidden">
-
-        <small class="bold">Copyright © <span
-            property="schema:copyrightYear"><%= Time.now.year %></span> <a
-            href="http://pentandra.com" rel="cc:attributionURL"
-            property="cc:attributionName">Pentandra Research Solutions,
-            Inc.</a></small>
-
-      </div>
       <div>
 
         <small>Except where otherwise <%= link_to 'noted', 'http://pentandra.com/policy/', :rel => "cc:useGuidelines" %>,
@@ -139,6 +130,15 @@
             href="http://creativecommons.org/licenses/by/4.0/"
             rel="license">Creative Commons Attribution 4.0 International
             license</a>.</small>
+
+      </div>
+      <div class="visuallyhidden">
+
+        <small class="bold">Copyright © <span
+            property="schema:copyrightYear"><%= Time.now.year %></span> <a
+            href="http://pentandra.com" rel="cc:attributionURL"
+            property="cc:attributionName">Pentandra Research Solutions,
+            Inc.</a></small>
 
       </div>
       <div>
