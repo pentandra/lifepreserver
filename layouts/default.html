@@ -20,7 +20,10 @@
   <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png" />
   <script src="/js/libs/modernizr.custom.07718.js"></script>
 </head>
-<body prefix="dc: http://purl.org/dc/terms/ schema: http://schema.org/ ctag: http://commontag.org/ns# cc: http://creativecommons.org/ns#" typeof="schema:WebPage">
+<body prefix="dc: http://purl.org/dc/terms/ schema: http://schema.org/ ctag:
+  http://commontag.org/ns# cc: http://creativecommons.org/ns#"
+  typeof="schema:WebPage"
+  <% if @item[:tags] then %>rel="ctag:tagged"<% end %>>
 <!--[if lt IE 7]><p class="grab">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 <header role="banner" class="group">
   <div class="section">
