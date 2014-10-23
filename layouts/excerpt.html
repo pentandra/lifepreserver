@@ -1,15 +1,15 @@
-<article class="noted section excerpt">
+<article class="noted section excerpt" property="schema:blogPost ctag:tagged" typeof="schema:BlogPosting" resource="<%= url_for article %>">
   <div class="bd">
     <header>
       <h2 class="bigger">
-        <%= link_to(article[:title], article, { :rel => "bookmark", :title => "Full article" }) %>
+        <%= link_to(article[:title], article, { :property => "dc:title schema:name", :rel => "bookmark", :title => "Full article" }) %>
       </h2>
       <p class="em">By <%= link_for_author( article[:author_name], "/authors/") %></p>
     </header>
     <%= article_summary article %>
   </div>
   <footer class="aside pubdate section">
-    <time class="big" datetime="<%= article[:created_at] %>"><%= date_for(article) %></time>
+    <time class="big" property="schema:dateCreated" datetime="<%= article[:created_at] %>"><%= date_for(article) %></time>
   </footer>
   <footer class="aside section">
     <nav class="group banner">
