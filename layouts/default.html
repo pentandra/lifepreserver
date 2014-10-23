@@ -21,8 +21,8 @@
   <script src="/js/libs/modernizr.custom.07718.js"></script>
 </head>
 <body prefix="dc: http://purl.org/dc/terms/ schema: http://schema.org/ ctag:
-  http://commontag.org/ns# cc: http://creativecommons.org/ns#"
-  typeof="schema:WebPage">
+  http://commontag.org/ns# cc: http://creativecommons.org/ns# xsd:
+  http://www.w3.org/2001/XMLSchema#" typeof="schema:WebPage">
 <!--[if lt IE 7]><p class="grab">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 <header role="banner" class="group">
   <div class="section">
@@ -137,8 +137,8 @@
       </div>
       <div class="visuallyhidden">
 
-        <small class="bold">Copyright © <span
-            property="schema:copyrightYear"><%= Time.now.year %></span> <a
+        <small class="bold">Copyright © <span property="dc:date schema:copyrightYear"
+            datatype="xsd:gYear"><%= Time.now.year %></span> <a
             href="http://pentandra.com" rel="cc:attributionURL"
             property="cc:attributionName">Pentandra Research Solutions,
             Inc.</a></small>
