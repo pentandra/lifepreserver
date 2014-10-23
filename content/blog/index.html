@@ -2,10 +2,14 @@
 title: Blog
 is_hidden: true
 ---
-<h1>Recent Thoughts</h1>
+<div class="group" typeof="schema:Blog">
 
-<% @site.publishing_articles[0, 10].each do |article| %>
-<%= render('excerpt', :article => article) %>
-<% end %>
+  <h1>Recent Thoughts</h1>
 
-<%= render 'blog_meta' %>
+  <% @site.publishing_articles[0, 10].each do |article| %>
+  <%= render('excerpt', :article => article) %>
+  <% end %>
+
+  <%= render 'blog_meta' %>
+
+</div>
