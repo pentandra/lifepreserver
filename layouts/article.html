@@ -1,44 +1,44 @@
 <article class="group h-entry" typeof="schema:BlogPosting" property="ctag:tagged">
   <header class="section">
-    <h1 class="p-name" property="name headline"><%= @item[:title] %></h1>
+    <h1 class="p-name" property="dc:title schema:name schema:headline"><%= @item[:title] %></h1>
     <div class="group meta">
       <div class="bd up">
         <div>
-          Written <time class="dt-published" property="datePublished" datetime="<%= @item[:created_at] %>"><%= @item[:created_at].strftime("%B %d, %Y") %></time>
+          Written <time class="dt-published" property="dc:created schema:datePublished" datetime="<%= @item[:created_at] %>"><%= @item[:created_at].strftime("%B %d, %Y") %></time>
           by
           <%= link_for_author( @item[:author_name], "/authors/") %>
         </div>
         <% if @item[:updated_at] > @item[:created_at] then %>
         <div>
-          Last Updated <time class="dt-updated" property="dateModified" datetime="<%= @item[:updated_at] %>"><%= @item[:updated_at].strftime("%B %d, %Y") %></time>
+          Last Updated <time class="dt-updated" property="dc:modified schema:dateModified" datetime="<%= @item[:updated_at] %>"><%= @item[:updated_at].strftime("%B %d, %Y") %></time>
         </div>
         <% end %>
-        <meta class="p-summary" property="description" content="<%= @item[:description] %>">
-        <meta property="url" content="<%= url_for(@item) %>">
+        <meta class="p-summary" property="dc:description schema:description" content="<%= @item[:description] %>">
+        <meta property="schema:url" content="<%= url_for(@item) %>">
       </div>
     </div>
   </header>
   <div class="bd">
-    <div class="post section e-content" property="articleBody">
+    <div class="post section e-content" property="schema:articleBody">
       <%= yield %>
     </div>
     <%= render "comments" %>
   </div>
   <aside class="aside">
     <h2 class="visuallyhidden">Meta</h2>
-    <section class="section" typeof="Person" property="author">
+    <section class="section" typeof="dc:Agent schema:Person" property="dc:creator schema:author">
       <%
        company = @items.find { |i| i.identifier == '/company/' }
        author = company[:teammembers].find { |m| m[:first_name] + " " + m[:last_name] == @item[:author_name] }
       %>
       <h3 class="big">The Author</h3>
       <figure id="author">
-        <img class="photo framed" src="<%= member_image_path(author) %>" alt="Photo of <%= full_name(author) %>" property="image" />
+        <img class="photo framed" src="<%= member_image_path(author) %>" alt="Photo of <%= full_name(author) %>" property="schema:image" />
         <figcaption class="small nav">
-          <h4 class="normal shaved" property="name"><%= full_name(author) %></h4>
-          <h5 class="small em" property="jobTitle"><%= author[:title] %></h5>
+          <h4 class="normal shaved" property="schema:name"><%= full_name(author) %></h4>
+          <h5 class="small em" property="schema:jobTitle"><%= author[:title] %></h5>
           <ul>
-            <li><a href="<%= member_path(author) %>" property="url"><%= author[:first_name] %> at <span property="worksFor">Pentandra</span></a></li>
+            <li><a href="<%= member_path(author) %>" property="schema:url"><%= author[:first_name] %> at <span property="schema:worksFor">Pentandra</span></a></li>
             <li><a href="https://plus.google.com/<%= author[:gplus] %>?rel=author"><%= author[:first_name] %> on Google+</a></li>
           </ul>
         </figcaption>
