@@ -35,10 +35,10 @@ nicely named children, all lined up neatly in a row? I hope not.
   <img src="opte-2010_620.png" alt="The Internet 2010" class="static framed" />
   <figcaption class="small">
     <span class="bold">Figure 1</span>
-    <span property="dc:title">The Internet 2010</span>,
-    by
-    <a href="http://www.opte.org/" property="cc:attributionName" rel="cc:attributionURL dc:creator">The Opte Project / Barrett Lyon</a>,
     <span property="dc:description">
+      <span property="dc:title">The Internet 2010</span>,
+      by
+      <a href="http://www.opte.org/" property="cc:attributionName" rel="cc:attributionURL dc:creator">The Opte Project / Barrett Lyon</a>,
       was never released publicly prior to 2014. It has only been
       viewable at the Museum of Modern Art (MoMA) in New York, and in an
       edition of Discover Magazine. The color selection is based the color of
