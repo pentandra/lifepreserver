@@ -9,11 +9,19 @@ module LifePreserver
     end
 
     def member_path(member)
-      "/company/#" + full_name(member).to_slug
+      if @config[:base_url].nil?
+        raise RuntimeError.new('Cannot build member path: site configuration has no base_url')
+      end
+
+      @config[:base_url] + "/company#" + full_name(member).to_slug
     end
 
     def member_image_path(member)
-      "/images/" + full_name(member).to_slug + "-150x150.jpg"
+      if @config[:base_url].nil?
+        raise RuntimeError.new('Cannot build member image path: site configuration has no base_url')
+      end
+
+      @config[:base_url] + "/images/" + full_name(member).to_slug + "-150x150.jpg"
     end
 
   end
