@@ -81,11 +81,12 @@ source contains [information][I] that could possibly help in answering a
 [question][Q]. This source of information is searched closely, over and over,
 until new knowledge, in the form of a [conclusion][C], is obtained.
 
-<figure about="<%= url_for @item %>higgsboson.jpeg" id="simulated-higgs" class="img">
+<figure about="<%= url_for @item %>higgsboson.jpeg" id="simulated-higgs" class="img" typeof="prov:Entity">
+  <link property="prov:wasDerivedFrom" href="http://cds.cern.ch/record/628469" typeof="prov:Entity">
   <img class="static" alt="CMS: Simulated Higgs to two jets and two electrons" src="higgsboson.jpeg" />
   <figcaption class="small">
-    <b property="dc:title">CMS: Simulated Higgs to two jets and two electrons</b>
-    by <a href="http://cern.ch" property="cc:attributionName" rel="cc:attributionURL dc:creator">CERN</a>.
+    <b property="dc:title schema:name">CMS: Simulated Higgs to two jets and two electrons</b>
+    by <a href="http://cern.ch" property="cc:attributionName" typeof="schema:Organization" rel="cc:attributionURL dc:creator">CERN</a>.
     <span property="dc:description">Here a Higgs boson is produced which decays
     into two jets of hadrons and two electrons. The lines represent the
     possible paths of particles produced by the proton-proton collision in the
