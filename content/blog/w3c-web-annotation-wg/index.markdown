@@ -81,7 +81,7 @@ source contains [information][I] that could possibly help in answering a
 [question][Q]. This source of information is searched closely, over and over,
 until new knowledge, in the form of a [conclusion][C], is obtained.
 
-<figure about="<%= url_for @item %>higgsboson.jpeg" id="simulated-higgs" class="img" prefix="dc: http://purl.org/dc/terms/ cc: http://creativecommons.org/ns#">
+<figure about="<%= url_for @item %>higgsboson.jpeg" id="simulated-higgs" class="img">
   <img class="static" alt="CMS: Simulated Higgs to two jets and two electrons" src="higgsboson.jpeg" />
   <figcaption class="small">
     <b property="dc:title">CMS: Simulated Higgs to two jets and two electrons</b>
