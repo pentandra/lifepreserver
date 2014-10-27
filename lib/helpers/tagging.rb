@@ -82,9 +82,9 @@ module Nanoc::Helpers
       semantic_tag = SEMANTIC_TAGS[tag]
 
       if semantic_tag
-        %[<a href="#{h base_url}#{h tag.to_slug}" rel="tag ctag:means" typeof="ctag:AuthorTag" resource="#{h semantic_tag}" property="ctag:label">#{h tag}</a>]
+        %[<a href="#{h base_url}#{h tag.to_slug}/" rel="tag ctag:means" typeof="ctag:AuthorTag" resource="#{h semantic_tag}" property="ctag:label">#{h tag}</a>]
       else
-        %[<a href="#{h base_url}#{h tag.to_slug}" rel="tag">#{h tag}</a>]
+        %[<a href="#{h base_url}#{h tag.to_slug}/" rel="tag">#{h tag}</a>]
       end
     end
 
@@ -97,7 +97,7 @@ module Nanoc::Helpers
     #
     # See http://microformats.org/wiki/rel-tag
     def link_for_tagcloud(tag, base_url)
-      %[<a href="#{h base_url}#{h tag.to_slug}">#{h tag}</a>]
+      %[<a href="#{h base_url}#{h tag.to_slug}/">#{h tag}</a>]
     end
 
     def items_with_tag(tag, items=nil)
