@@ -5,3 +5,5 @@ rsync \
   -e "ssh -i /home/chris/.ssh/pentandraec2key.pem" \
   --rsync-path="sudo rsync" \
   {nginx.conf,mime.types} ec2-user@pentandra.com:/etc/nginx/
+
+ssh -i /home/chris/.ssh/pentandraec2key.pem ec2-user@pentandra.com 'sudo service nginx reload'
