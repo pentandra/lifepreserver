@@ -13,14 +13,14 @@ tags:
 has_media: true
 ---
 
-For the past couple of months we've had the chance to participate in the
-[Grow America](http://growam.com){: rel="external" } Springboard competition.
-It was tough to decide if we should enter, since our time is already spread so
-thin. However, like-it-or-not, it takes money to run a business, and this felt
-like a good fit. Looking back, we are really glad that we entered. We did not
-win any money, but we learned a lot and gained confidence in our ability to
-communicate what we are doing to business folks (especially when they're not
-research geeks).
+For the past couple of months we've had the chance to participate in the [Grow
+America](http://web.archive.org/web/20120621062316/http://www.growam.com/){:
+rel="external" } Springboard competition.  It was tough to decide if we should
+enter, since our time is already spread so thin. However, like-it-or-not, it
+takes money to run a business, and this felt like a good fit. Looking back, we
+are really glad that we entered. We did not win any money, but we learned a lot
+and gained confidence in our ability to communicate what we are doing to
+business folks (especially when they're not research geeks).
 
 <!--MORE-->
 
