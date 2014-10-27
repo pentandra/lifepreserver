@@ -47,6 +47,7 @@ nicely named children, all lined up neatly in a row? I hope not.
     </span>
     Licensed under a
     <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><abbr>CC-BY-NC</abbr> license</a>. Used by permission.
+    <span class="icon-cc"></span><span class="icon-cc-by"></span><span class="icon-cc-nc"></span>
   </figcaption>
 </figure>
 
