@@ -25,6 +25,7 @@
               dc: http://purl.org/dc/terms/
               foaf: http://xmlns.com/foaf/0.1/
               prov: http://www.w3.org/ns/prov#
+              rdfa: http://www.w3.org/ns/rdfa#
               schema: http://schema.org/
               sioc: http://rdfs.org/sioc/ns#
               vcard: http://www.w3.org/2006/vcard/ns#
@@ -132,7 +133,7 @@
       <a class="button backtotop">Back to top</a>
     </div>
     <div class="group">
-      <div>
+      <div resource="#license" typeof="rdfa:Pattern">
 
         <small>Except where otherwise <%= link_to 'noted', 'http://pentandra.com/policy/', :rel => "cc:useGuidelines" %>,
           content on this site is licensed under a <a
@@ -141,10 +142,7 @@
             rel="license">Creative Commons Attribution 4.0 International
             license</a>.</small>
 
-      </div>
-      <div class="visuallyhidden">
-
-        <small class="bold">Copyright © <span property="schema:copyrightYear"
+        <small class="visuallyhidden">Copyright © <span property="schema:copyrightYear"
             datatype="xsd:gYear"><%= Time.now.year %></span> <a
             href="http://pentandra.com" rel="cc:attributionURL
             schema:copyrightHolder schema:publisher"
