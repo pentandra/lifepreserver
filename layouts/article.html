@@ -1,26 +1,25 @@
-<article class="group" typeof="schema:BlogPosting sioc:BlogPost" property="ctag:tagged">
+<article class="group h-entry" typeof="schema:BlogPosting sioc:BlogPost" property="ctag:tagged">
   <header class="section">
-    <h1 property="dc:title schema:headline"><%= @item[:title] %></h1>
+    <h1 class="p-name" property="dc:title schema:name schema:headline"><%= @item[:title] %></h1>
     <div class="group meta">
       <div class="bd up">
         <div>
-          Written <time property="dc:created schema:datePublished" datetime="<%= @item[:created_at] %>"><%= @item[:created_at].strftime("%B %d, %Y") %></time>
+          Written <time class="dt-published" property="dc:created schema:datePublished" datetime="<%= @item[:created_at] %>"><%= @item[:created_at].strftime("%B %d, %Y") %></time>
           by
           <%= link_for_author( @item[:author_name], "/authors/") %>
         </div>
         <% if @item[:updated_at] > @item[:created_at] then %>
         <div>
-          Last Updated <time property="dc:modified schema:dateModified" datetime="<%= @item[:updated_at] %>"><%= @item[:updated_at].strftime("%B %d, %Y") %></time>
+          Last Updated <time class="dt-updated" property="dc:modified schema:dateModified" datetime="<%= @item[:updated_at] %>"><%= @item[:updated_at].strftime("%B %d, %Y") %></time>
         </div>
         <% end %>
-        <meta property="dc:description schema:description" content="<%= @item[:description] %>">
-        <meta property="schema:url" resource="<%= url_for(@item) %>" />
-        <link property="rdfa:copy" href="#license" />
+        <meta class="p-summary" property="dc:description schema:description" content="<%= @item[:description] %>">
+        <meta property="schema:url" resource="<%= url_for(@item) %>">
       </div>
     </div>
   </header>
   <div class="bd">
-    <div class="post section" property="schema:articleBody sioc:content">
+    <div class="post section e-content" property="schema:articleBody sioc:content">
       <%= yield %>
     </div>
     <%= render "comments" %>
@@ -102,13 +101,12 @@
         <div>
           <label>
             URL:
-            <input class="bookmark" type="url" value="<%= url_for(@item) %>">
+            <input class="bookmark u-uid u-url" type="url" value="<%= url_for(@item) %>">
           </label>
         </div>
         <div>
           <label>
-            HTML <i>(with <a
-                href="http://microformats.org/">microformats</a>)</i>:
+            HTML:
             <input type="text" value="<%= h('<cite class="h-cite"><a class="u-url p-name" href="'+url_for(@item)+'">'+@item[:title]+'</a> (<abbr class="p-author h-card" title="'+@item[:author_name]+'">'+author[:last_name]+'</abbr> <time class="dt-published">'+@item[:created_at].to_s+'</time>)</cite>') %>">
           </label>
         </div>
