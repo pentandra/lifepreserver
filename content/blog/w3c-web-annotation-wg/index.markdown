@@ -122,17 +122,20 @@ that research is published. In the near future I will be describing what this
 means for genealogy. Bring on the Web!
 {: .conclusion }
 
-<figure about="<%= url_for @item %>annotation-architecture.svg" vocab="http://purl.org/dc/terms/" id="annotation_architecture" class="section">
+<figure typeof="schema:ImageObject" property="schema:image" resource="<%= url_for @item %>annotation-architecture.svg" id="annotation_architecture" class="section">
+  <meta property="schema:representativeOfPage" content="schema:True" />
   <div class="embed-container wideScreen"> 
-    <iframe src="annotation-architecture.svg" class="simple static"></iframe>
+    <iframe property="schema:contentUrl" src="<%= url_for(@item) %>annotation-architecture.svg" class="simple static"></iframe>
   </div>
-  <figcaption class="small">
-    <b property="title">Web Annotation Architecture</b>,
-    <span property="description">an infographic from the W3C about web annotations.</span>
-    <a href="annotation-architecture.svg">Display fullscreen</a> for the best
-    viewing experience.
-    Licensed under a
-    <a property="http://creativecommons.org/ns#license" rel="license" href="http://creativecommons.org/publicdomain/zero/1.0/">CC0 license.</a> 
+  <figcaption class="small" property="schema:caption">
+    <span property="dc:description schema:description"><b property="schema:name
+    dc:title">Web Annotation Architecture</b>, an infographic from the <span
+    property="schema:author dc:creator" resource="http://www.w3.org"
+    typeof="schema:Organization">W3C</span> about web annotations.</span> <a
+    href="annotation-architecture.svg">Display fullscreen</a> for the best
+    viewing experience. Licensed under a <a
+    property="http://creativecommons.org/ns#license" rel="license"
+    href="http://creativecommons.org/publicdomain/zero/1.0/">CC0 license.</a>
     <span class="icon-cc"></span><span class="icon-cc-zero"></span>
   </figcaption>
 </figure>
