@@ -81,9 +81,9 @@ source contains [information][I] that could possibly help in answering a
 [question][Q]. This source of information is searched closely, over and over,
 until new knowledge, in the form of a [conclusion][C], is obtained.
 
-<figure about="<%= url_for @item %>higgsboson.jpeg" id="simulated-higgs" class="img" typeof="prov:Entity">
+<figure resource="#simulated-higgs" class="img" typeof="schema:ImageObject prov:Entity">
   <link property="prov:wasDerivedFrom" href="http://cds.cern.ch/record/628469" typeof="prov:Entity">
-  <img class="static" alt="CMS: Simulated Higgs to two jets and two electrons" src="higgsboson.jpeg" />
+  <img property="schema:contentUrl" class="static" alt="CMS: Simulated Higgs to two jets and two electrons" src="higgsboson.jpeg" />
   <figcaption class="small">
     <b property="dc:title schema:name">CMS: Simulated Higgs to two jets and two electrons</b>
     by <a href="http://cern.ch" property="cc:attributionName" typeof="schema:Organization" rel="cc:attributionURL dc:creator">CERN</a>.
@@ -122,22 +122,22 @@ that research is published. In the near future I will be describing what this
 means for genealogy. Bring on the Web!
 {: .conclusion }
 
-<figure typeof="schema:ImageObject" property="schema:image" resource="<%= url_for @item %>annotation-architecture.svg" id="annotation_architecture" class="section">
-  <meta property="schema:representativeOfPage" content="schema:True" />
+<figure typeof="schema:ImageObject" property="schema:image" resource="#infographic" class="section">
+  <meta property="schema:representativeOfPage" content="true" />
   <div class="embed-container wideScreen"> 
-    <iframe property="schema:contentUrl" src="<%= url_for(@item) %>annotation-architecture.svg" class="simple static"></iframe>
+    <iframe property="schema:contentUrl" src="annotation-architecture.svg" class="simple static"></iframe>
   </div>
-  <figcaption class="small" property="schema:caption">
-    <span property="dc:description schema:description"><b property="schema:name
-    dc:title">Web Annotation Architecture</b>, an infographic from the <span
-    property="schema:author dc:creator" resource="http://www.w3.org"
-    typeof="schema:Organization">W3C</span> about web annotations.</span> <a
-    href="annotation-architecture.svg">Display fullscreen</a> for the best
-    viewing experience. Licensed under a <a
-    property="http://creativecommons.org/ns#license" rel="license"
-    href="http://creativecommons.org/publicdomain/zero/1.0/">CC0 license.</a>
-    <span class="icon-cc"></span><span class="icon-cc-zero"></span>
-  </figcaption>
+
+  <figcaption class="small" property="schema:caption"><span
+  property="dc:description schema:description"><b property="schema:name
+  dc:title">Web Annotation Architecture</b>, an infographic from the <span
+  property="schema:author dc:creator" resource="http://www.w3.org"
+  typeof="schema:Organization">W3C</span> about web annotations.</span> <a
+  href="annotation-architecture.svg">Display fullscreen</a> for the best
+  viewing experience. Licensed under a <a property="cc:license"
+  href="http://creativecommons.org/publicdomain/zero/1.0/">CC0 license.</a>
+  <span class="icon-cc"></span><span class="icon-cc-zero"></span></figcaption>
+
 </figure>
 
 ## Notes
