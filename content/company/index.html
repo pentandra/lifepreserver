@@ -295,7 +295,7 @@ priority: 0.6
     </ul>
 
   </div>
-  <section class="bd">
+  <div class="bd">
     <p>
 
       <span class="newthought">We are a <a href="http://benefitcorp.net"
@@ -316,14 +316,13 @@ priority: 0.6
             2012)</span></a></li>
 
     </ul>
-  </section>
+  </div>
   <!-- Remove after we have our first benefit report available ;)
   <div class="aside">
     <a class="section button" href="/company/reports/">Our <b>Benefit Reports</b></a>
   </div>
   -->
 </section>
-
 <section class="noted section" id="roster">
 
   <h2>Our Roster</h2>
@@ -333,10 +332,10 @@ priority: 0.6
     <h3>Core Team</h3>
 
     <% @item[:teammembers].each_with_index do |member, i| %>
-    <section id="<%= full_name(member).to_slug %>" class="teammember vcard bl<%= i.odd? ? ' ock' : '' %> item">
+    <section resource="#<%= full_name(member).to_slug %>" typeof="schema:Person foaf:Person" id="<%= full_name(member).to_slug %>" class="teammember vcard bl<%= i.odd? ? ' ock' : '' %> item">
       <div class="section">
         <div class="aside">
-          <img class="photo framed" src="<%= member_image_path(member) %>" alt="Photo of <%= full_name(member) %>" />
+          <img property="foaf:img schema:image" class="photo framed" src="<%= member_image_path(member) %>" alt="Photo of <%= full_name(member) %>" />
           <aside class="nav menu rev">
             <ul class="sp framed icons">
               <% if member[:gplus] then %>
@@ -364,7 +363,7 @@ priority: 0.6
               </li>
               <% end %>
               <li>
-                <a class="email" href="mailto:<%= member[:email] %>" title="mailto:<%= member[:email] %>">
+                <a property="schema:email foaf:mbox" class="email" href="mailto:<%= member[:email] %>" title="mailto:<%= member[:email] %>">
                   <span aria-hidden="true" class="button icon-mail"></span>
                   <span class="visuallyhidden">Email <%= member[:first_name] %></span>
                 </a>
@@ -373,11 +372,12 @@ priority: 0.6
           </aside>
         </div>
         <div class="bd group">
-          <hgroup>
-            <h4 class="big fn flush"><%= full_name(member) %></h4>
-            <h5 class="em small"><%= member[:title] %></h5>
-          </hgroup>
-          <p><%= member[:summary] %></p>
+          <header>
+            <h4 class="big fn flush" property="foaf:name schema:name"><%= full_name(member) %></h4>
+            <p class="em small flush" property="schema:jobTitle"><%= member[:title] %></p>
+          </header>
+          <link property="schema:worksFor" href="http://pentandra.com" />
+          <p property="schema:description"><%= member[:summary] %></p>
         </div>
       </div>
     </section>
