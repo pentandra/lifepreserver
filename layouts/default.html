@@ -12,9 +12,8 @@
   <% if @item[:has_media] then %>
   <link rel="stylesheet" href="/js/mejs-2.14.2/mediaelementplayer.min.css" />
   <% end %>
-  <link rel="stylesheet" href="/css/style.css?v=<%= @config[:version] %>" />
+  <link rel="stylesheet" href="/css/style.css?v=<%= @site.config[:version] %>" />
   <link rel="alternate" type="application/atom+xml" href="/blog/feed" />
-  <link href="https://plus.google.com/108021950461928542978" rel="publisher" />
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png" />
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png" />
   <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png" />
@@ -152,7 +151,7 @@
 
       </div>
       <div>
-        <small class="em">Version <span property="schema:version"><%= @config[:version] %></span></small>
+        <small class="em">Version <%= @config[:version] %></small>
       </div>
     </div>
   </div>
