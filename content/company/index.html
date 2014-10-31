@@ -340,7 +340,7 @@ priority: 0.6
       <% @item[:teammembers].each_with_index do |member, i| %>
       <section resource="#<%= full_name(member).to_slug %>"
         property="schema:employee" typeof="schema:Person foaf:Person"
-        id="description-<%= full_name(member).to_slug %>"
+        id="<%= full_name(member).to_slug %>_description"
         class="teammember vcard bl<%= i.odd? ? ' ock' : '' %> item">
         <div class="section">
           <div class="aside">

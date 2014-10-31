@@ -14,6 +14,7 @@
         </div>
         <% end %>
         <meta class="p-summary" property="dc:description schema:description" content="<%= @item[:description] %>">
+        <link property="schema:isPartOf" href="/blog/#blog" />
       </div>
     </div>
   </header>
@@ -38,9 +39,10 @@
           <h5 class="small em" property="schema:jobTitle"><%= author[:title] %></h5>
           <ul>
 
-            <li><a href="<%= member_path(author) %>" property="schema:url"><%=
-                author[:first_name] %> at <span property="schema:worksFor"
-                  resource="http://pentandra.com">Pentandra</span></a></li>
+            <li><a href="<%= member_description_path(author) %>"
+                property="schema:url"><%= author[:first_name] %> at <span
+                  property="schema:worksFor"
+                  resource="/company/#company">Pentandra</span></a></li>
 
             <li><a href="https://plus.google.com/<%= author[:gplus] %>?rel=author"><%= author[:first_name] %> on Google+</a></li>
           </ul>

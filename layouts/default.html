@@ -135,22 +135,23 @@
     <div class="group">
       <div resource="#license" typeof="rdfa:Pattern">
 
-        <small>Except where otherwise <%= link_to 'noted', 'http://pentandra.com/policy/', :rel => "cc:useGuidelines" %>,
-          content on this site is licensed under a <a
-            property="cc:license"
-            href="http://creativecommons.org/licenses/by/4.0/"
-            rel="license">Creative Commons Attribution 4.0 International
-            license</a>.</small>
+        <div><small>Except where otherwise <a href="/policy/"
+              property="cc:useGuidelines">noted</a>, content on this site is
+            licensed under a <a property="cc:license"
+              href="http://creativecommons.org/licenses/by/4.0/">Creative
+              Commons Attribution 4.0 International license</a>.</small></div>
 
-        <small class="visuallyhidden">Copyright © <span property="schema:copyrightYear"
-            datatype="xsd:gYear"><%= Time.now.year %></span> <a
-            href="http://pentandra.com" rel="cc:attributionURL
-            schema:copyrightHolder schema:publisher"
-            property="cc:attributionName" typeof="schema:Corporation"><span
-              property="schema:name schema:legalName">Pentandra Research
-              Solutions, Inc.</span></a></small>
+        <div><small property="cc:attributionName">Copyright © <span
+              property="schema:copyrightYear" datatype="xsd:gYear"><%=
+              Time.now.year %></span><link property="cc:attributionURL"
+            href="<%= @site.config[:base_url] %>" /> <span
+              property="schema:copyrightHolder schema:publisher"
+              typeof="schema:Corporation"
+              resource="/company/#company">Pentandra Research Solutions,
+              Inc.</span></a></small></div>
 
       </div>
+      <link property="rdfa:copy" href="#license" />
       <div>
         <small class="em">Version <%= @config[:version] %></small>
       </div>

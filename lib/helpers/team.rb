@@ -12,6 +12,10 @@ module LifePreserver
       "/company/#" + full_name(member).to_slug
     end
 
+    def member_description_path(member)
+      "/company/#" + full_name(member).to_slug + "_description"
+    end
+
     def member_image_path(member)
       "/images/" + full_name(member).to_slug + "-150x150.jpg"
     end

@@ -1,9 +1,13 @@
-<article class="noted section excerpt" property="schema:blogPost ctag:tagged" typeof="schema:BlogPosting" resource="<%= url_for article %>">
+<article property="schema:blogPost ctag:tagged" typeof="schema:BlogPosting" resource="<%= url_for article %>#blogpost" class="noted section excerpt">
   <div class="bd">
     <header>
+
       <h2 class="bigger">
-        <%= link_to(article[:title], article, { :property => "dc:title schema:name", :rel => "bookmark", :title => "Full article" }) %>
+        <a property="schema:url" rel="bookmark" title="Full article" href="<%= url_for article %>">
+          <span property="dc:title schema:name"><%= article[:title] %></span>
+        </a>
       </h2>
+
       <p class="em">By <%= link_for_author( article[:author_name], "/authors/") %></p>
     </header>
     <%= article_summary article %>
@@ -20,5 +24,6 @@
       </ul>
     </nav>
   </footer>
+  <link property="schema:isPartOf" href="/blog/#blog" />
   <link property="rdfa:copy" href="#license" />
 </article>
