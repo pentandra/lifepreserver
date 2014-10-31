@@ -343,6 +343,7 @@ priority: 0.6
         id="<%= full_name(member).to_slug %>_description"
         class="teammember vcard bl<%= i.odd? ? ' ock' : '' %> item">
         <span rev="schema:employee" resource="#company"></span>
+        <link property="foaf:isPrimaryTopicOf" href="#<%= full_name(member).to_slug %>_description" />
         <div class="section">
           <div class="aside">
             <img property="foaf:img schema:image" class="photo framed" src="<%= member_image_path(member) %>" alt="Photo of <%= full_name(member) %>" />
