@@ -329,11 +329,11 @@ priority: 0.6
     </div>
     -->
   </section>
-  <section class="noted section" id="roster">
+  <section class="noted group" id="roster">
 
     <h2>Our Roster</h2>
 
-    <section id="coreteam" resource="#coreteam" typeof="foaf:Group">
+    <section id="coreteam_description" class="section" resource="#coreteam" typeof="foaf:Group">
 
       <h3 property="foaf:name">Core Team</h3>
 
@@ -344,8 +344,8 @@ priority: 0.6
         class="teammember vcard bl<%= i.odd? ? ' ock' : '' %> item">
         <span rev="schema:employee" resource="#company"></span>
         <link property="foaf:isPrimaryTopicOf" href="#<%= full_name(member).to_slug %>_description" />
-        <div class="section">
-          <div class="aside">
+        <div class="group">
+          <div class="section aside">
             <img property="foaf:img schema:image" class="photo framed" src="<%= member_image_path(member) %>" alt="Photo of <%= full_name(member) %>" />
             <aside class="nav menu rev">
               <ul class="sp framed icons">
