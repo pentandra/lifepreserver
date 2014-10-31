@@ -35,7 +35,9 @@
 <header id="banner" role="banner" class="group">
   <div class="section">
     <div class="content">
-      <h1><%= link_to("Pentandra Research Solutions", "/", :class => "ir logo") %></h1>
+      <h1 resource="#license"><a href="/" class="ir logo"
+          property="cc:attributionName" rel="cc:attributionURL">Pentandra
+          Research Solutions, Inc.</a></h1>
       <nav class="menu group">
         <ul>
           <li><%= link_to('Products', '/products/', :class => "button") %></li>
@@ -135,23 +137,17 @@
     <div class="group">
       <div resource="#license" typeof="rdfa:Pattern">
 
-        <div><small>Except where otherwise <a href="/policy/"
+        <small>Except where otherwise <a href="/policy/"
               property="cc:useGuidelines">noted</a>, content on this site is
             licensed under a <a property="cc:license"
               href="http://creativecommons.org/licenses/by/4.0/"><abbr
                 title="Creative Commons Attribution 4.0
                 International">CC-BY</abbr> license</a>. <span
               class="icon-cc"></span><span
-              class="icon-cc-by"></span></small></div>
+              class="icon-cc-by"></span></small>
 
-        <div><small property="cc:attributionName">Copyright © <span
-              property="schema:copyrightYear" datatype="xsd:gYear"><%=
-              Time.now.year %></span><link property="cc:attributionURL"
-            href="<%= @site.config[:base_url] %>" /> <span
-              property="schema:copyrightHolder schema:publisher"
-              typeof="schema:Corporation"
-              resource="/company/#company">Pentandra Research Solutions,
-              Inc.</span></a></small></div>
+        <meta property="schema:copyrightYear" datatype="xsd:gYear" content="<%= Time.now.year %>" />
+        <link property="schema:copyrightHolder schema:publisher" typeof="schema:Corporation" href="/company/#company" />
 
       </div>
       <link property="rdfa:copy" href="#license" />
