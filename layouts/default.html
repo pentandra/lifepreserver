@@ -32,7 +32,7 @@
               xsd: http://www.w3.org/2001/XMLSchema#"
   typeof="schema:WebPage">
 <!--[if lt IE 7]><p class="grab">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-<header role="banner" class="group">
+<header id="banner" role="banner" class="group">
   <div class="section">
     <div class="content">
       <h1><%= link_to("Pentandra Research Solutions", "/", :class => "ir logo") %></h1>
@@ -65,7 +65,7 @@
     <%= yield %>
   </div>
 </div>
-<footer role="contentinfo" class="rev contentinfo">
+<footer id="contentinfo" role="contentinfo" class="rev contentinfo">
   <div class="content">
     <div class="group">
       <div class="bd">
