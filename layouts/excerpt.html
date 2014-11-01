@@ -1,9 +1,9 @@
-<article property="schema:blogPost ctag:tagged" typeof="cc:Work schema:BlogPosting" resource="<%= url_for article %>#blogpost" class="noted section excerpt">
+<article property="schema:blogPost ctag:tagged" typeof="cc:Work schema:BlogPosting" resource="<%= article.path %>#blogpost" class="noted section excerpt">
   <div class="bd">
     <header>
 
       <h2 class="bigger">
-        <a property="schema:url" rel="bookmark" title="Full article" href="<%= url_for article %>">
+        <a property="schema:url" rel="bookmark" title="Full article" href="<%= article.path %>">
           <span property="dc:title schema:name"><%= article[:title] %></span>
         </a>
       </h2>
