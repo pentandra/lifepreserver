@@ -3,8 +3,8 @@ title: What Is Genealogy?
 description: A fresh look at the thing we call genealogy
 kind: article
 author_name: Chris Chapman
-created_at: 2014-07-27
-updated_at: 2014-07-27
+created_at: 2014-09-27
+updated_at: 2014-09-27
 published: false
 tags:
   - Genealogy
@@ -12,29 +12,6 @@ tags:
   - Holism
   - Geungle
 ---
-
-OK. We've had people ask us why we are worrying about the bigger research
-community. Shouldn't we be focusing on genealogy?
-
-Good question.
-
-Let me share with you some of our thoughts on the subject. Keep in mind that I
-am an avid proponent of all those that build technologies for genealogy. I just
-think that technology for genealogy is stuck right now. Don't get me wrong,
-there are wonderful products coming out of these companies. The record
-digitization and indexing are, in particular, amazing achievements that will
-benefit researchers for many years to come. What I have beef with involves the
-prolific, unsubstantiated family trees that seem to grow on everyone's wall.
-Well, technologically speaking, I think the ladder is on the wrong wall, and
-engineers at FamilySearch, Ancestry.com, and other great companies have taken
-this paradigm very far, but it is not solving the problems that so desperately
-need to be solved. I think it's time for a fresh look at the thing we call
-genealogy.
-
-<!--MORE-->
-
-## Is Genealogy Tree-like Data?
-
 A couple months ago I was speaking with a friend at a conference in San
 Francisco, and mentioned that I was working on software for genealogical
 research. He said, "Cool! Genealogy has a lot of structured, tree-like data.
@@ -44,28 +21,33 @@ genealogy. Sticking peoples' names and dates on a tree. Sounds fun, right? It's
 actually kind of addictive until you realize that with each generation the tree
 gets bigger by a power of two, and in most family history software right now,
 the tree never ends, it turns into a math problem and just keeps on going
-forever... but that's a different story.
+forever...but that's a different story.
+
+<!--MORE-->
+
+## Is Genealogy Tree-like Data?
 
 Looking at genealogy in this way is both a shallow and distorted view of
 reality. Was the sole purpose of Doe Darling's existence to produce seven
 nicely named children, all lined up neatly in a row? I hope not.
 
-<figure id="internetmap" class="img" prefix="dc: http://purl.org/dc/terms/ cc: http://creativecommons.org/ns#" about="<%= url_for(@item) %>opte-2010_620.png">
+<figure id="internetmap" class="img" about="<%= url_for(@item) %>opte-2010_620.png">
   <img src="opte-2010_620.png" alt="The Internet 2010" class="static framed" />
   <figcaption class="small">
     <span class="bold">Figure 1</span>
-    <span property="dc:title">The Internet 2010</span>,
-    by
-    <a href="http://www.opte.org/" property="cc:attributionName" rel="cc:attributionURL dc:creator">The Opte Project / Barrett Lyon</a>,
     <span property="dc:description">
-      was never released publicly prior to 2014. It has only been
-      viewable at the Museum of Modern Art (MoMA) in New York, and in an
-      edition of Discover Magazine. The color selection is based the color of
+      <span property="dc:title">The Internet 2010</span>, by <a
+      href="http://www.opte.org/" property="cc:attributionName"
+      rel="cc:attributionURL dc:creator">The Opte Project / Barrett Lyon</a>,
+      was never released publicly prior to 2014. It has only been viewable at
+      the Museum of Modern Art (MoMA) in New York, and in an edition of
+      Discover Magazine. The color selection is based the color of
       incandescence, where the most connection points represent the highest
       temperatures in terms of colors of light.
     </span>
     Licensed under a
     <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><abbr>CC-BY-NC</abbr> license</a>. Used by permission.
+    <span class="icon-cc"></span><span class="icon-cc-by"></span><span class="icon-cc-nc"></span>
   </figcaption>
 </figure>
 
@@ -99,8 +81,10 @@ think it still applies. All of the technological approaches that I've seen up
 to this point (please let me know if I'm missing something out there), cram
 people's lives into a "single, self-consistent verbal scheme" (however pretty
 it may be) that totally ruins the whole experience for me. I start focusing on
-the wrong things, and look at the people as dry, lifeless data. There must be a
-better way.
+the wrong things, and look at the people as dry, lifeless data. Genealogy is in
+danger because of technologies like these that oversimplify the research
+process. This software-for-the-masses approach has watered down genealogy into
+a quest to fill in slots on a pedigree chart.[^motivations] There must be a better way.
 
 ## What's needed?
 
@@ -160,49 +144,6 @@ After all of that, could we not still show relationships using a pedigree
 chart? Yes! But we _cannot_ begin and end there. We need to do (and publish)
 more.
 
-## A lofty goal
-
-Now you may have a better idea now of what we are trying to accomplish with
-Geungle. We are trying to reconstruct the entire history of mankind. This
-touches upon every facet of mankind's sojourn on earth.
-
-A loftly goal, you say? Yes! Unattainable? Probably, but there is a lot we can
-do to understand the past even if we cannot reconstruct all of it...or even
-  come close. Dispicable? Well, I wouldn't go that far, but there have been
-  many ugly and dispicable things that have happened throughout mankind's
-  existence, and it is essential, when studying someone's life, to understand,
-  at least to some degree, all that they experienced, the good and the bad.
-  Fortunately, we don't have to experience it all for ourselves, though we may
-  surely empathize.
-
-So where does the bigger research community fit into all of this?
-
-As we've learned ourselves what genealogical research looks like, all those
-nice generational tree structures fade into the background,[^analysis-trees]
-and we're left with similar types of semi-structured information that is found
-in any other research field. There is [a lot of
-momentum](/blog/heading-to-oai8/) in the general research community to develop
-open technological standards that are domain agnostic. It totally makes sense
-to collaborate.
-  
-Maybe the biggest reason is that we can't do it alone. We need all the help we
-can get. Only as we come to an understanding of each person's human experience
-can we have any confidence in the outputs of our research. That is why we need
-all the help we can get. We need to cooperate with other research fields
-because they are trying to make sense of this world, too. We need their
-research and they need our research.[^ee]
-
-While we could call it microhistory,[^life] the collection of all of these
-microhistories amount to a large corpus of knowledge, studied from many
-different perspectives. To study and truly understand who these people _were_,
-genealogy requires us to know what they _knew_. In this way, genealogy is an
-amalgamation of all the world's knowledge, set in historical context. 
-
-Why, you say, would we need low-density particle physics research to help
-determine the political affiliations of my Civil War ancestor? Well, you never
-know, but we do need the physicist. They're human aren't they?
-{: .conclusion }
-
 [^life]: 
     We've tried telling people that were writing software for [generational
     history](/blog/thoughts-about-rootstech-2012#what-is-a-user) or
@@ -228,3 +169,11 @@ know, but we do need the physicist. They're human aren't they?
     [_QuickLesson 18: Genealogy? In the Academic World? Seriously?_](https://www.evidenceexplained.com/content/quicklesson-18-genealogy-academic-world-seriously) (2014),
     and in her papers, [_Bridging the Historic Divide: Family History and 'Academic'    History_](http://www.historicpathways.com/download/bridghisdivideivide.pdf) (2007)
     and [_Genealogy in the Information Age: History's New Frontier?_](http://www.historicpathways.com/download/genininfoage.pdf) (2003).
+
+[^motivations]:
+
+    A lot of pressure is on software developers to produce software like this.
+    Since it does not require much training or know-how to enter names into a
+    record manager, such software potentially has a much bigger market. This
+    type of thinking is short-sighted, however, and has perpetuated many of the
+    problems that we see in the genealogy community today.

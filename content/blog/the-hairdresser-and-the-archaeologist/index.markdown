@@ -13,14 +13,12 @@ tags:
   - Opinionated
 ---
 
-<figure about="<%= url_for(@item) %>Julia-domna.jpg"
-    xmlns:dct="http://purl.org/dc/terms/"
-    xmlns:cc="http://creativecommons.org/ns#" class="aside img">
+<figure about="<%= url_for(@item) %>Julia-domna.jpg" class="aside img">
   <img src="Julia-domna.jpg" alt="Coin of Julia Domna I" class="static" />
   <figcaption class="small">
-    This image, entitled <span property="dct:title">Coin of Julia Domna</span>,
+    This image, entitled <span property="dc:title">Coin of Julia Domna</span>,
     by
-    <a href="http://en.wikipedia.org/wiki/User:Rasiel" property="cc:attributionName" rel="cc:attributionURL dct:creator">Rasiel Suarez</a>
+    <a href="http://en.wikipedia.org/wiki/User:Rasiel" property="cc:attributionName" rel="cc:attributionURL dc:creator">Rasiel Suarez</a>
     is licensed under a
     <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><abbr>CC-BY-SA</abbr> license</a>.
   </figcaption>

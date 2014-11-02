@@ -6,6 +6,8 @@ module Nanoc::Helpers
 
     require 'set'
 
+    SEMANTIC_TAGS = Hash[File.read('semantic.tags').split("\n").map { |i| i.split(': ')}] unless defined?(SEMANTIC_TAGS)
+
     # Returns all the tags present in a collection of items.
     # There are no duplicates (because this is a set).
     #
@@ -77,7 +79,13 @@ module Nanoc::Helpers
     # Overrides Nanoc::Helpers::Tagging#link_for_tag, adding support for
     # multi-word tags.
     def link_for_tag(tag, base_url)
-      %[<a href="#{h base_url}#{h tag.to_slug}" rel="tag">#{h tag}</a>]
+      semantic_tag = SEMANTIC_TAGS[tag]
+
+      if semantic_tag
+        %[<a href="#{h base_url}#{h tag.to_slug}/" rel="tag ctag:means" typeof="ctag:AuthorTag" resource="#{h semantic_tag}" property="ctag:label">#{h tag}</a>]
+      else
+        %[<a href="#{h base_url}#{h tag.to_slug}/" rel="tag">#{h tag}</a>]
+      end
     end
 
     # Same as link_for_tag, but does not include the 'rel' attribute.
@@ -89,7 +97,7 @@ module Nanoc::Helpers
     #
     # See http://microformats.org/wiki/rel-tag
     def link_for_tagcloud(tag, base_url)
-      %[<a href="#{h base_url}#{h tag.to_slug}">#{h tag}</a>]
+      %[<a href="#{h base_url}#{h tag.to_slug}/">#{h tag}</a>]
     end
 
     def items_with_tag(tag, items=nil)
