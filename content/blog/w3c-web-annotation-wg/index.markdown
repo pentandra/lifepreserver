@@ -81,10 +81,11 @@ source contains [information][I] that could possibly help in answering a
 [question][Q]. This source of information is searched closely, over and over,
 until new knowledge, in the form of a [conclusion][C], is obtained.
 
-<figure about="<%= url_for @item %>higgsboson.jpeg" id="simulated-higgs" class="img" prefix="dc: http://purl.org/dc/terms/ cc: http://creativecommons.org/ns#">
-  <img class="static" alt="CMS: Simulated Higgs to two jets and two electrons" src="higgsboson.jpeg" />
+<figure resource="#simulated-higgs" class="img" typeof="schema:ImageObject prov:Entity">
+  <link property="prov:wasDerivedFrom" href="http://cds.cern.ch/record/628469" typeof="prov:Entity">
+  <img property="schema:contentUrl" class="static" alt="CMS: Simulated Higgs to two jets and two electrons" src="higgsboson.jpeg" />
   <figcaption class="small">
-    <b property="dc:title">CMS: Simulated Higgs to two jets and two electrons</b>
+    <b property="dc:title schema:name">CMS: Simulated Higgs to two jets and two electrons</b>
     by <a href="http://cern.ch" property="cc:attributionName" rel="cc:attributionURL dc:creator">CERN</a>.
     <span property="dc:description">Here a Higgs boson is produced which decays
     into two jets of hadrons and two electrons. The lines represent the
@@ -121,19 +122,22 @@ that research is published. In the near future I will be describing what this
 means for genealogy. Bring on the Web!
 {: .conclusion }
 
-<figure about="<%= url_for @item %>annotation-architecture.svg" vocab="http://purl.org/dc/terms/" id="annotation_architecture" class="section">
+<figure typeof="schema:ImageObject" property="schema:image" resource="#infographic" class="section">
+  <meta property="schema:representativeOfPage" content="true" />
   <div class="embed-container wideScreen"> 
-    <iframe src="annotation-architecture.svg" class="simple static"></iframe>
+    <iframe property="schema:contentUrl" src="annotation-architecture.svg" class="simple static"></iframe>
   </div>
-  <figcaption class="small">
-    <b property="title">Web Annotation Architecture</b>,
-    <span property="description">an infographic from the W3C about web annotations.</span>
-    <a href="annotation-architecture.svg">Display fullscreen</a> for the best
-    viewing experience.
-    Licensed under a
-    <a property="http://creativecommons.org/ns#license" rel="license" href="http://creativecommons.org/publicdomain/zero/1.0/">CC0 license.</a> 
-    <span class="icon-cc"></span><span class="icon-cc-zero"></span>
-  </figcaption>
+
+  <figcaption class="small" property="schema:caption"><span
+  property="dc:description schema:description"><b property="schema:name
+  dc:title">Web Annotation Architecture</b>, an infographic from the <span
+  property="schema:author dc:creator" resource="http://www.w3.org">W3C</span>
+  about web annotations.</span> <a href="annotation-architecture.svg">Display
+  fullscreen</a> for the best viewing experience. Licensed under a <a
+  property="cc:license"
+  href="http://creativecommons.org/publicdomain/zero/1.0/">CC0 license.</a>
+  <span class="icon-cc"></span><span class="icon-cc-zero"></span></figcaption>
+
 </figure>
 
 ## Notes

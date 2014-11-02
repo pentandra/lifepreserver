@@ -7,26 +7,37 @@
   <meta charset="utf-8" />
   <title><%= @item[:title] %> | Pentandra</title>
   <meta name="description" content="Much about Pentandra and its mission" />
-  <meta name="author" content="" />
-  <meta name="generator" content="nanoc 3.4.1" />
+  <meta name="generator" content="nanoc 3.7.3" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <% if @item[:has_media] then %>
   <link rel="stylesheet" href="/js/mejs-2.14.2/mediaelementplayer.min.css" />
   <% end %>
-  <link rel="stylesheet" href="/css/style.css?v=<%= @config[:version] %>" />
+  <link rel="stylesheet" href="/css/style.css?v=<%= @site.config[:version] %>" />
   <link rel="alternate" type="application/atom+xml" href="/blog/feed" />
-  <link href="https://plus.google.com/108021950461928542978" rel="publisher" />
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png" />
-  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png" />
   <script src="/js/libs/modernizr.custom.07718.js"></script>
 </head>
-<body>
+<body prefix="cc: http://creativecommons.org/ns#
+              ctag: http://commontag.org/ns#
+              dc: http://purl.org/dc/terms/
+              foaf: http://xmlns.com/foaf/0.1/
+              prov: http://www.w3.org/ns/prov#
+              rdfa: http://www.w3.org/ns/rdfa#
+              schema: http://schema.org/
+              sioc: http://rdfs.org/sioc/ns#
+              vcard: http://www.w3.org/2006/vcard/ns#
+              xhv: http://www.w3.org/1999/xhtml/vocab#
+              xsd: http://www.w3.org/2001/XMLSchema#"
+  typeof="schema:WebPage cc:Work">
 <!--[if lt IE 7]><p class="grab">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-<header role="banner" class="group">
+<header id="banner" role="banner" class="group">
   <div class="section">
     <div class="content">
-      <h1><%= link_to("Pentandra Research Solutions", "/", :class => "ir logo") %></h1>
+      <h1 resource="#license"><a href="/" class="ir logo"
+          property="cc:attributionName" rel="cc:attributionURL">Pentandra
+          Research Solutions, Inc.</a></h1>
       <nav class="menu group">
         <ul>
           <li><%= link_to('Products', '/products/', :class => "button") %></li>
@@ -39,7 +50,7 @@
     </div>
   </div>
 </header>
-<div id="main" role="main" class="main">
+<div id="main" role="main" class="main" property="schema:mainContentOfPage" typeof="schema:WebPageElement">
   <div class="content">
     <% if @item[:wip] then %>
     <div class="wip section">
@@ -56,13 +67,13 @@
     <%= yield %>
   </div>
 </div>
-<footer role="contentinfo" class="rev contentinfo">
+<footer id="contentinfo" role="contentinfo" class="rev contentinfo">
   <div class="content">
     <div class="group">
       <div class="bd">
-        <aside class="aside section">
+        <aside class="actions aside section">
           <div class="contact section">
-            <a href="/company/#contact" class="bold button">Contact Us</a>
+            <a href="/company/#donating" class="bold button">Donate</a>
           </div>
           <div class="menu group nav">
             <ul class="centered icons big">
@@ -73,13 +84,13 @@
                 </a>
               </li>
               <li>
-                <a rel="external" href="http://www.facebook.com/PentandraInc">
+                <a rel="external" href="https://www.facebook.com/PentandraInc">
                   <span aria-hidden="true" class="button icon-facebook"></span>
                   <span class="visuallyhidden">Facebook</span>
                 </a>
               </li>
               <li>
-                <a rel="external" href="http://twitter.com/PentandraInc">
+                <a rel="external" href="https://twitter.com/PentandraInc">
                   <span aria-hidden="true" class="button icon-twitter"></span>
                   <span class="visuallyhidden">Twitter</span>
                 </a>
@@ -111,10 +122,11 @@
         <div class="nav">
           <ul>
             <li><a href="/research/#future">The Future of Research</a></li>
-            <li><%= link_to('Research 101', '/research/process/') %></li>
+            <li><a href="/research/process/">Research <span
+                  class="oldstyle">101</span></a></li>
             <li><%= link_to('Colophon', '/colophon/') %></li>
             <li><%= link_to('Search', '/search/') %></li>
-            <li><%= link_to('Legal', '/policy/')%></li>
+            <li><%= link_to('Policy', '/policy/')%></li>
           </ul>
         </div>
       </div>
@@ -122,26 +134,25 @@
     <div class="section">
       <a class="button backtotop">Back to top</a>
     </div>
-    <div class="group" xmlns:cc="http://creativecommons.org/ns#">
-      <div class="hidden">
+    <div class="group">
+      <div resource="#license" typeof="rdfa:Pattern">
 
-        <small class="bold">Copyright © <%= Time.now.year %> <a
-            href="http://pentandra.com" rel="cc:attributionURL"
-            property="cc:attributionName">Pentandra Research Solutions, Inc.</a></small>
+        <small>Except where otherwise <a href="/policy/"
+              property="cc:useGuidelines">noted</a>, content on this site is
+            licensed under a <a property="cc:license"
+              href="http://creativecommons.org/licenses/by/4.0/"><abbr
+                title="Creative Commons Attribution 4.0
+                International">CC-BY</abbr> license</a>. <span
+              class="icon-cc"></span><span
+              class="icon-cc-by"></span></small>
 
-      </div>
-      <div>
-
-        <small>Except where otherwise <%= link_to 'noted', 'http://pentandra.com/policy/', :rel => "cc:useGuidelines" %>,
-          content on this site is licensed under a <a
-            property="cc:license"
-            href="http://creativecommons.org/licenses/by/4.0/"
-            rel="license">Creative Commons Attribution 4.0 International
-            license</a>.</small>
+        <link property="schema:copyrightHolder schema:publisher" typeof="schema:Corporation" href="/company/#company" />
 
       </div>
+      <meta property="schema:copyrightYear" datatype="xsd:gYear" content="2011" />
+      <link property="rdfa:copy" href="#license" />
       <div>
-        <small class="em">Version <%= @config[:version] %></small>
+        <small class="em">Version <span property="dc:hasVersion"><%= @config[:version] %></span></small>
       </div>
     </div>
   </div>
