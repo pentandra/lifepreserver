@@ -1,6 +1,6 @@
 ---
 title: A Social Business
-description: our identity crisis and how we overcame it
+description: Our identity crisis and how we overcame it.
 kind: article
 article_id: a-social-business
 author_name: Chris Chapman

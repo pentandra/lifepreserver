@@ -1,6 +1,6 @@
 ---
 title: Getting Ready for NGS
-description: ready or not, here we go!
+description: Ready or not, here we go!
 kind: article
 article_id: getting-ready-for-ngs
 author_name: Chris Chapman

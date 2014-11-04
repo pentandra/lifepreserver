@@ -1,6 +1,6 @@
 ---
 title: We're Back
-description: been through the wringer, but coming back stronger
+description: Been through the wringer, but coming back stronger.
 kind: article
 article_id: we-re-back
 author_name: Katie Chapman
