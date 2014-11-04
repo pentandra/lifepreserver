@@ -1,6 +1,8 @@
 ---
 title: Interdisciplinary Genealogy
-description: Venturing out of the genealogy bubble---options for integrating with the broader scholarly community
+description: >
+  Venturing out of the genealogy bubble: options for integrating with the
+  broader scholarly community.
 kind: article
 author_name: Chris Chapman
 created_at: 2014-10-20

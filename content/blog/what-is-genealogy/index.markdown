@@ -1,6 +1,6 @@
 ---
 title: What Is Genealogy?
-description: A fresh look at the thing we call genealogy
+description: A fresh look at the thing we call genealogy.
 kind: article
 author_name: Chris Chapman
 created_at: 2014-09-27
