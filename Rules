@@ -25,7 +25,7 @@ preprocess do
     tag_set(publishing_articles).each do |tag|
       items << Nanoc::Item.new(
         "<%= render('tag',  :tag => '#{tag}') %>",
-        { :title => "Tag: #{tag}", :is_hidden => true },
+        { :title => "Tag: #{tag}", :is_hidden => true, :description => "All posts having to do with the tag '#{tag}'" },
         "/tags/#{tag.to_slug}/",
         :binary => false
       )
