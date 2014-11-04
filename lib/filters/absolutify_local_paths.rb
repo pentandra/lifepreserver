@@ -10,7 +10,7 @@ module Nanoc::Filters
 
     def run(content, arguments={})
 
-      # Set assings so helper function can be used
+      # Set assigns so helper function can be used
       @item_rep = assigns[:item_rep] if @item_rep.nil?
 
       require 'nokogiri'
@@ -30,7 +30,7 @@ module Nanoc::Filters
       end
 
       # Done
-      doc.to_s
+      doc.to_html
     end
 
     private
