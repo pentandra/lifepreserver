@@ -16,7 +16,7 @@ module Nanoc::Filters
       require 'nokogiri'
 
       # Parse
-      doc = Nokogiri::HTML(content)
+      doc = Nokogiri::HTML.fragment(content)
 
       # Find all hyperlinks
       doc.xpath("//*[@src]", "//*[@href]").each do |element|
@@ -30,7 +30,7 @@ module Nanoc::Filters
       end
 
       # Done
-      doc.to_html
+      doc.to_s
     end
 
     private
