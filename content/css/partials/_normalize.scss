@@ -14,7 +14,7 @@ p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em,
 img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr,
 dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figure, figcaption, hgroup,
+article, aside, canvas, details, figure, figcaption,
 menu, footer, header, nav, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -25,7 +25,7 @@ menu, footer, header, nav, section, summary, time, mark, audio, video {
    HTML5 element display
    ========================================================================== */
 
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+article, aside, details, figcaption, figure, footer, header, nav, section { display: block; }
 audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 audio:not([controls]) { display: none; }
 [hidden] { display: none; }
