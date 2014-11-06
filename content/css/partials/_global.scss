@@ -453,6 +453,10 @@ input.button {
     }
   }
 
+  a.footnote, a.reversefootnote {
+    text-decoration: none;
+  }
+
   .wrapper {
     padding-top: $base-line-height;
   }
@@ -486,10 +490,6 @@ input.button {
   &:hover, &:focus {
     background-color: $pentandra-brown;
   }
-}
-
-.rev a.reversefootnote, .grab a.reversefootnote {
-  text-decoration: none;
 }
 
 // The next three specifiers for icon fonts
