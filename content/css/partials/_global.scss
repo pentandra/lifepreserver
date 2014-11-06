@@ -25,7 +25,7 @@ h4.small, h5.small {
   margin-bottom: $base-line-height * 0.25;
 }
 
-hgroup {
+header {
   .big.flush, h3.flush {
     margin-bottom: $base-line-height * 0.75;
   }
@@ -486,6 +486,10 @@ input.button {
   &:hover, &:focus {
     background-color: $pentandra-brown;
   }
+}
+
+.rev a.reversefootnote, .grab a.reversefootnote {
+  text-decoration: none;
 }
 
 // The next three specifiers for icon fonts
