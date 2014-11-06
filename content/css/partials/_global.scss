@@ -488,6 +488,10 @@ input.button {
   }
 }
 
+.rev a.reversefootnote, .grab a.reversefootnote {
+  text-decoration: none;
+}
+
 // The next three specifiers for icon fonts
 .grab .icons a, .rev .icons a { // Needs this specificity
   text-decoration: none;
