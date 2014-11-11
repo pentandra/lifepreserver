@@ -41,9 +41,28 @@ financially feasible.
 
 <!--MORE-->
 
+## 17th Century Tech
+
+Let's take a look at the technology that was available for scientific
+publications during the <span class="oldstyle">17</span>th century.
+
+<figure id="fig:composing-stick" class="img" property="schema:image" resource="#composing_stick" typeof="schema:ImageObject">
+  <img property="schema:contentUrl" class="static" src="Metal_movable_type.jpg" alt="Metal movable type in a composing stick" />
+  <figcaption class="small">
+
+    <b>Figure 1</b>
+    <span property="schema:name dc:title">Movable type in a composing stick</span>,
+    by <span property="cc:attributionName">Willi Heidelbach</span>, licensed under a <a
+    href="http://creativecommons.org/licenses/by-sa/3.0/" rel="license"
+    property="cc:license"><abbr title="Creative Commons Attribution-Share Alike 3.0 Unported">CC-BY-SA</abbr> license</a>.
+    <span class="icon-cc"></span><span class="icon-cc-by"></span><span class="icon-cc-sa"></span>
+
+  </figcaption>
+</figure>
+
 In the lingua franca of the current open access movement, <dfn
-id="openaccess">open access</dfn> means allowing unrestricted access to the
-results of publicly-funded research (journal articles and sometimes the
+id="def:openaccess">open access</dfn> means allowing unrestricted access to the
+results of publicly funded research (journal articles and sometimes the
 underlying data as well) to the public over the Internet for free.
 
 We support the principles behind the open access movement. As I quoted Martin
@@ -185,7 +204,7 @@ research is [lowered significantly](http://localhost:3000/research/#p[TuaWto],h[
 Anyone can access the research, with or without an academic affiliation.
 Further research and innovation can then accelerate more quickly and with less
 expense. Having access to research across domains will give more depth and
-[context](/research#context) to future research output. Text mining can
+[context](/research/#context) to future research output. Text mining can
 accelerate contextual understanding, leading to surprising cross-discipline
 breakthroughs and collaboration.
 
@@ -196,8 +215,8 @@ the future. The research is just sitting there, on the Ether, ready to be used
 in some novel, unforeseen way to make our world a better place.  Open-source
 software has created enormous value as developers have taken chunks of software
 functionality and put them together in new and innovative ways.  Open-access
-research, or even better, [open research](/open#research), can work the same
-way.
+research, or even better, [open research](/open/#research), can work the
+same way.
 
 ## Our Approach
 
@@ -269,7 +288,7 @@ it is possible to provide open access to a research paper and even to the
 underlying research data by placing it on the web, if we fail to show _how_
 they are connected, then we are failing to give people access to the research
 and thought processes behind those research outputs. We need the whole research
-[context](/research#context) to really understand those research outputs.
+[context](/research/#context) to really understand those research outputs.
 
 ## Why Genealogy?
 
@@ -304,7 +323,7 @@ field. I mean who doesn't care about the past and how their ancestors were
 affected by it or how their ancestors affected the past? Our approach is not so
 much about family trees (there are plenty of companies that do that), but it
 could be called micro-history or generational history research (for more info
-about that see [Geungle](/products#geungle)).
+about that see [Geungle](/products/#geungle)).
 
 ## Freedom
 
@@ -344,9 +363,12 @@ transitional, and that the future of research lies in open,
     [proponent](http://en.wikipedia.org/wiki/Research_Works_Act#Reception)
     of the Research Works Act.
 
-[^GSA]: Starting November <span class="oldstyle">1</span> of this year,
+[^GSA]:
+
+    Starting November <span class="oldstyle">1</span> of this year,
     [Georgia State Archives will lose seven](http://georgiaarchivesmatters.org/2012/09/27/the-staff-what-we-stand-to-lose/)
-    of the remaining ten employees. At the same time, Georgia is spending
+    of the remaining ten employees. As is all too common in politicking, at the
+    same time, Georgia is spending
     upwards of <span class="oldstyle"><span class="symbol">$</span>400</span>
     million in public funds to
     [build a new football stadium](http://www.bizjournals.com/atlanta/print-edition/2012/05/11/atlantas-proposed-new-football.html?page=all)
