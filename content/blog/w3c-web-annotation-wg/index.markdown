@@ -152,7 +152,7 @@ means for genealogy. Bring on the Web!
 [RDF]: http://en.wikipedia.org/wiki/Resource_Description_Framework
 [JSON-LD]: http://json-ld.org/
 [oai8]: /blog/heading-to-oai8/#p[TsrKoa],h[TsrKoa] "A little about the beginnings of the WWW"
-[mission]: /company#mission
+[mission]: /company/#sec:mission
 [vision]: /blog/a-social-business/#p[OvoObm],h[OvoObm,1,2]
 [S]: /research/process#data
 [I]: /research/process#information
