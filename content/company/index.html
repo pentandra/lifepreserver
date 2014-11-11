@@ -326,17 +326,17 @@
 
     <h2>Our Roster</h2>
 
-    <section id="coreteam_description" class="section" resource="#coreteam" typeof="foaf:Group">
+    <section id="sec:coreteam" class="section" resource="#coreteam" typeof="foaf:Group">
 
       <h3 property="foaf:name">Core Team</h3>
 
       <% @item[:teammembers].each_with_index do |member, i| %>
       <section resource="#<%= full_name(member).to_slug %>"
         property="foaf:member" typeof="schema:Person foaf:Person"
-        id="<%= full_name(member).to_slug %>_description"
+        id="sec:<%= full_name(member).to_slug %>"
         class="teammember vcard bl<%= i.odd? ? ' ock' : '' %> item">
         <span rev="schema:employee" resource="#company"></span>
-        <link property="foaf:isPrimaryTopicOf" href="#<%= full_name(member).to_slug %>_description" />
+        <link property="foaf:isPrimaryTopicOf" href="#sec:<%= full_name(member).to_slug %>" />
         <div class="group">
           <div class="section aside">
             <img property="foaf:img schema:image" class="photo framed" src="<%= member_image_path(member) %>" alt="Photo of <%= full_name(member) %>" />
