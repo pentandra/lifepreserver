@@ -16,7 +16,7 @@ module Nanoc::Filters
       require 'nokogiri'
 
       # Parse
-      doc = Nokogiri::HTML.fragment(content)
+      doc = Nokogiri::HTML(content)
 
       # Find all hyperlinks
       doc.xpath("//*[@src]", "//*[@href]").each do |element|
