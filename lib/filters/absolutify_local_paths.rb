@@ -16,10 +16,10 @@ module Nanoc::Filters
       require 'nokogiri'
 
       # Parse
-      doc = Nokogiri::HTML(content)
+      doc = Nokogiri::HTML.fragment(content)
 
       # Find all hyperlinks
-      doc.xpath("//*[@src]", "//*[@href]").each do |element|
+      doc.xpath("descendant::*[@src]", "descendant::*[@href]").each do |element|
         targetAttribute = element.matches?("a") ? "href" : "src"
           
         target = element[targetAttribute]
