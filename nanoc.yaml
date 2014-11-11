@@ -1,4 +1,4 @@
-# Site version
+# Site version. Used for cache busting as well as for general information.
 version: 1.14.17
 
 # A list of file extensions that nanoc will consider to be textual rather than
@@ -61,11 +61,11 @@ watcher:
 # because recompiling the site will cause these directories to change, which
 # will cause the site to be recompiled, which will cause these directories
 # to change, which will cause the site to be recompiled again, and so on.
-dirs_to_watch: [ 'content', 'layouts', 'lib', 'compass' ]
+dirs_to_watch: [ 'content', 'layouts', 'lib', 'compass', 'static' ]
 
 # A list of single files to watch for changes. As mentioned above, don’t put
 # any files from the “output/” or “tmp/” directories in here.
-files_to_watch: [ 'config.yaml', 'Rules' ]
+files_to_watch: [ 'nanoc.yaml', 'Rules', 'dictionary', 'semantic_tags' ]
 
 # When to send notifications (using Growl or notify-send).
 notify_on_compilation_success: true
