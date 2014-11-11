@@ -1,3 +1,20 @@
+The majority of this blog post was written in October <span
+class="oldstyle">2012</span>, when <span class="em">open access</span> was
+probably at its peak of political popularity. Even though this a jump back in
+time as far as open access goes, and was originally written, I think, from an
+overly academic viewpoint, it has some value in describing some of the
+foundations upon which we are building our ideas and company. Since the time
+this post was started, the Obama Administration has issued [a
+directive](http://www.whitehouse.gov/blog/2013/02/22/expanding-public-access-results-federally-funded-research)
+to the big Federal agencies <q
+cite="http://www.whitehouse.gov/blog/2013/02/22/expanding-public-access-results-federally-funded-research">to
+make the published results of federally funded research freely available to the
+public within one year of publication and requiring researchers to better
+account for and manage the digital data resulting from federally funded
+scientific research.</q> It's a step in the right direction, at least for the
+US.
+{: .intro .em }
+
 ![Open Access Logo](open_access.jpg){: .static }
 {: .aside .img }
 
@@ -509,11 +526,13 @@ transitional, and that the future of research lies in open,
       </figcaption>
     </figure>
 
-*[PDF]:
+*[PDF]: Portable Document Format
 *[FRPAA]: Federal Research Public Access Act
 *[NIH]: National Institutes of Health
-*[EU]:
-*[HR]:
+*[EU]: European Union
+*[US]: United States
+*[UK]: United Kingdom
+*[HR]: House of Representatives
 *[NHMRC]: National Health and Medical Research Council (Australia)
 *[ARC]: Australian Research Council
 
