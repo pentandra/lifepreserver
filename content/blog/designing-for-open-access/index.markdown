@@ -533,12 +533,12 @@ transitional, and that the future of research lies in open,
           the world of open access publishing and explain just what it's all
           about.
 
-          <a property="dct:title" rel="cc:attributionURL"
+          <a property="dc:title" rel="cc:attributionURL"
              href="http://www.phdcomics.com/tv/#015">Open Access
              Explained!</a>,
           by <a href="http://www.phdcomics.com"
                 property="cc:attributionName"
-                rel="dct:creator">PhD Comics</a>,
+                rel="dc:creator">PhD Comics</a>,
           is licensed under a
           <a rel="license"
              href="http://creativecommons.org/licenses/by/3.0/">
