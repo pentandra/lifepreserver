@@ -47,7 +47,7 @@ Let's take a look at the technology that was available for scientific
 publications during the <span class="oldstyle">17</span>th century.
 
 <figure id="fig:composing-stick" class="img" property="schema:image" resource="#composing_stick" typeof="schema:ImageObject">
-  <img property="schema:contentUrl" class="static" src="Metal_movable_type.jpg" alt="Metal movable type in a composing stick" />
+  <img property="schema:contentUrl" class="framed static" src="Metal_movable_type.jpg" alt="Metal movable type in a composing stick" />
   <figcaption class="small">
 
     <b>Figure 1</b>
