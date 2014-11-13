@@ -404,17 +404,17 @@
           <address class="vcard">
             <div property="schema:name schema:legalName" class="fn org"><a
                 property="schema:url" href="<%= @site.config[:base_url] %>"
-                >Pentandra Research Solutions, Inc.</a></div>
+                ><%= @site.config[:vcard][:full_name] %></a></div>
             <div property="schema:location" typeof="schema:PostalAddress" class="adr">
               <div><span class="locality"
-                  property="schema:addressLocality">Logan</span>, <span
+                  property="schema:addressLocality"><%= @site.config[:vcard][:locality] %></span>, <span
                   class="region"
-                  property="schema:addressRegion">UT</span></div>
-              <div property="schema:addressCountry" class="country-name">USA</div>
+                  property="schema:addressRegion"><%= @site.config[:vcard][:region] %></span></div>
+              <div property="schema:addressCountry" class="country-name"><%= @site.config[:vcard][:country] %></div>
             </div>
             <div>Phone: <a property="schema:telephone" class="tel"
-                href="tel:+14352942964">+1 435 294 2964</a></div>
-            <div>Email: <a property="schema:email" href="mailto:<%= @item[:email] %>"><%= @item[:email] %></a></div>
+                href="tel:<%= @site.config[:vcard][:phone].gsub(/[\s\.-]+/, "") %>"><%= @site.config[:vcard][:phone] %></a></div>
+            <div>Email: <a property="schema:email" href="mailto:<%= @site.config[:vcard][:email] %>"><%= @site.config[:vcard][:email] %></a></div>
           </address>
           <p>
              We support <a href="http://web.archive.org/web/20120615152553/http://www.ccpact.com/" rel="external">The Company--Customer Pact</a>.

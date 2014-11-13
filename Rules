@@ -116,21 +116,11 @@ compile '/sitemap/' do
 end
 
 compile '/company/', :rep => :vcard do
-  filter :vcard, {
-    :name => "Pentandra",
-    :org => "Pentandra Research Solutions, Inc.",
-    :phone => @item[:phone],
-    :email => @item[:email],
-    :url => @config[:base_url]}
+  filter :vcard, @config[:vcard]
 end
 
 compile '/company/', :rep => :qrcode do
-  filter :vcard, {
-    :name => "Pentandra",
-    :org => "Pentandra Research Solutions, Inc.",
-    :phone => @item[:phone],
-    :email => @item[:email],
-    :url => @config[:base_url]}
+  filter :vcard, @config[:vcard]
   filter :qrcode, :size => 17, :module_size => 2, :color => "#544233"
 end
 
@@ -141,7 +131,7 @@ compile '*' do
     filter :erb
 
     if item[:extension] == 'markdown'
-      filter :kramdown
+      filter :kramdown, @config[:kramdown]
     end
 
     if item[:kind] == 'article' && ($include_drafts or item[:published]) then

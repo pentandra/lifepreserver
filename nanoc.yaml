@@ -50,7 +50,7 @@ data_sources:
     items_root: /static/
 
 # Base URL, used for the Atom feed
-base_url: http://pentandra.com
+base_url: &base_url http://pentandra.com
 
 # Configuration for the “watch” command, which watches a site for changes and
 # recompiles if necessary.
@@ -80,3 +80,21 @@ deploy:
     kind: rsync
     dst: "vlad@rebikov.process.tree:/srv/http/lifepreserver"
     options: [ '-gpPrtvz', '--delete-after' ]
+
+kramdown:
+  auto_ids: true
+  auto_id_prefix: "sec:"
+  auto_id_stripping: true
+
+vcard:
+  full_name: Pentandra Research Solutions, Inc.
+  nick_name: Pentandra
+  kind: org
+  street_address:
+  locality: Logan
+  region: UT
+  postal_code: 84321
+  country: USA
+  phone: +1 435 294 2964
+  email: hello@pentandra.com
+  url: *base_url

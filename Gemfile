@@ -10,7 +10,7 @@ gem 'rainpress' # for compact CSS
 gem 'uglifier' # for compact javascript
 gem 'html5small'
 gem 'activesupport' # for to_slug
-gem 'vpim' # PIM data
+gem 'vcardigan' # for vCards
 gem 'rqrcode' # for qrcodes
 gem 'chunky_png' # PNG generation of qrcodes
 gem 'builder'
