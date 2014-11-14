@@ -163,7 +163,7 @@
 
     </section>
   </section>
-  <section id="mission" class="noted section">
+  <section id="sec:mission" class="noted section">
 
     <h2>Our Mission</h2>
 
@@ -243,14 +243,14 @@
 
           <span class="newthought">We are a <a href="http://benefitcorp.net"
               rel="external">benefit corporation</a></span>, which basically
-          means that we're legally required to create a material positive impact
-          on society and the environment. We go beyond that minimum legal
-          requirement by establishing a non-dividend stock policy and reinvesting
-          <span class="oldstyle">100%</span> of our profits in ways that will
-          promote open research, build up the community, improve our products and
-          services, or in some other way entirely---whatever will further <a
-            href="#mission">our mission</a> the most and maximize our social
-          impact in the world.
+          means that we're legally required to create a material positive
+          impact on society and the environment. We go beyond that minimum
+          legal requirement by establishing a non-dividend stock policy and
+          reinvesting <span class="oldstyle">100%</span> of our profits in ways
+          that will promote open research, build up the community, improve our
+          products and services, or in some other way entirely---whatever will
+          further <a href="#sec:mission">our mission</a> the most and maximize
+          our social impact in the world.
 
         </p>
         <ul>
@@ -267,6 +267,7 @@
       </div>
       -->
     </div>
+    <% if @site.config[:accepting_donations] then %>
     <section id="donating" class="section">
       <div class="bd">
         <h3 class="flush">Donating</h3>
@@ -279,7 +280,7 @@
           to reach sustained profitability. Since we're a benefit corporation,
           these donations are not tax-deductible, but doesn't this, in fact,
           make them more <em>charitable?</em> If you like what <a
-            href="/company#mission">we're trying to do</a>, please consider
+            href="#sec:mission">we're trying to do</a>, please consider
           donating.
 
         </p>
@@ -292,6 +293,7 @@
         </form>
       </div>
     </section>
+    <% end %>
     <section id="investing" class="section">
       <div class="bd">
 
@@ -326,17 +328,17 @@
 
     <h2>Our Roster</h2>
 
-    <section id="coreteam_description" class="section" resource="#coreteam" typeof="foaf:Group">
+    <section id="sec:coreteam" class="section" resource="#coreteam" typeof="foaf:Group">
 
       <h3 property="foaf:name">Core Team</h3>
 
-      <% @item[:teammembers].each_with_index do |member, i| %>
+      <% @item[:teammembers].select {|v| v[:member_of] == "Core Team" }.each_with_index do |member, i| %>
       <section resource="#<%= full_name(member).to_slug %>"
         property="foaf:member" typeof="schema:Person foaf:Person"
-        id="<%= full_name(member).to_slug %>_description"
+        id="sec:<%= full_name(member).to_slug %>"
         class="teammember vcard bl<%= i.odd? ? ' ock' : '' %> item">
         <span rev="schema:employee" resource="#company"></span>
-        <link property="foaf:isPrimaryTopicOf" href="#<%= full_name(member).to_slug %>_description" />
+        <link property="foaf:isPrimaryTopicOf" href="#sec:<%= full_name(member).to_slug %>" />
         <div class="group">
           <div class="section aside">
             <img property="foaf:img schema:image" class="photo framed" src="<%= member_image_path(member) %>" alt="Photo of <%= full_name(member) %>" />
@@ -404,17 +406,17 @@
           <address class="vcard">
             <div property="schema:name schema:legalName" class="fn org"><a
                 property="schema:url" href="<%= @site.config[:base_url] %>"
-                >Pentandra Research Solutions, Inc.</a></div>
+                ><%= @site.config[:vcard][:full_name] %></a></div>
             <div property="schema:location" typeof="schema:PostalAddress" class="adr">
               <div><span class="locality"
-                  property="schema:addressLocality">Logan</span>, <span
+                  property="schema:addressLocality"><%= @site.config[:vcard][:locality] %></span>, <span
                   class="region"
-                  property="schema:addressRegion">UT</span></div>
-              <div property="schema:addressCountry" class="country-name">USA</div>
+                  property="schema:addressRegion"><%= @site.config[:vcard][:region] %></span></div>
+              <div property="schema:addressCountry" class="country-name"><%= @site.config[:vcard][:country] %></div>
             </div>
             <div>Phone: <a property="schema:telephone" class="tel"
-                href="tel:+14352942964">+1 435 294 2964</a></div>
-            <div>Email: <a property="schema:email" href="mailto:<%= @item[:email] %>"><%= @item[:email] %></a></div>
+                href="tel:<%= @site.config[:vcard][:phone].gsub(/[\s\.-]+/, "") %>"><%= @site.config[:vcard][:phone] %></a></div>
+            <div>Email: <a property="schema:email" href="mailto:<%= @site.config[:vcard][:email] %>"><%= @site.config[:vcard][:email] %></a></div>
           </address>
           <p>
              We support <a href="http://web.archive.org/web/20120615152553/http://www.ccpact.com/" rel="external">The Company--Customer Pact</a>.

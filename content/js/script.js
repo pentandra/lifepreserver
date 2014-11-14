@@ -186,8 +186,6 @@ $(document).ready(function() {
   AccessifyHTML5();
 });
 
-// Wait until after images have loaded to run baselinejs.
 $(window).load(function() {
-  $('article .bd img').baseline(26);
   $('.bd').emphasis();
 });

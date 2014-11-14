@@ -14,9 +14,9 @@ tags:
 
 As we have finished up our preparations for [OAI8](/blog/heading-to-oai8/),
 we've had a wonderful opportunity to review our [company's
-mission](/company#mission). Doing so has helped us to focus even more on what
-we are trying to achieve and will (hopefully) help us to be able to make more
-of a difference.
+mission](/company/#sec:mission). Doing so has helped us to focus even more on
+what we are trying to achieve and will (hopefully) help us to be able to make
+more of a difference.
 
 I want to share with you a little of the journey that we went through, and why
 we made some of the changes that we made.
