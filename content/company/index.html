@@ -332,7 +332,7 @@
 
       <h3 property="foaf:name">Core Team</h3>
 
-      <% @item[:teammembers].each_with_index do |member, i| %>
+      <% @item[:teammembers].select {|v| v[:member_of] == "Core Team" }.each_with_index do |member, i| %>
       <section resource="#<%= full_name(member).to_slug %>"
         property="foaf:member" typeof="schema:Person foaf:Person"
         id="sec:<%= full_name(member).to_slug %>"
