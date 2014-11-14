@@ -13,6 +13,7 @@ gem 'activesupport' # for to_slug
 gem 'vcardigan' # for vCards
 gem 'rqrcode' # for qrcodes
 gem 'chunky_png' # PNG generation of qrcodes
+gem 'optipng' # to compress the outputted qrcode
 gem 'builder'
 gem 'adsf'
 gem 'systemu'
