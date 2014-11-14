@@ -267,6 +267,7 @@
       </div>
       -->
     </div>
+    <% if @site.config[:accepting_donations] then %>
     <section id="donating" class="section">
       <div class="bd">
         <h3 class="flush">Donating</h3>
@@ -292,6 +293,7 @@
         </form>
       </div>
     </section>
+    <% end %>
     <section id="investing" class="section">
       <div class="bd">
 
