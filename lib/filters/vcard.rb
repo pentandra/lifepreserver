@@ -22,19 +22,22 @@ class VcardFilter < Nanoc::Filter
     ext = params[:extension]
     url = params[:url]
     org = params[:org]
+    photo_uri = params[:photo_uri]
 
-    vcard = VCardigan.create
+    vcard = VCardigan.create(:version => '3.0')
 
-    vcard.fullname escape(full_name)
+    vcard.rev DateTime.now.strftime(format='%F')
+
+    vcard.fullname full_name
 
     if @site.config[:base_url]
       vcard.source @site.config[:base_url] + @item_rep.path
     end
 
-    vcard.kind kind
+    #vcard.kind kind
 
     if kind == 'individual'
-      vcard.name [ last_name, first_name ].map { |x| escape x }
+      vcard.name [ last_name, first_name ]
     end
 
     vcard.nickname nick_name unless nick_name.nil?
@@ -43,21 +46,18 @@ class VcardFilter < Nanoc::Filter
       vcard.email email, :type => 'work'
     end
 
-    vcard.org escape(org) unless org.nil?
-    vcard.url escape(url) unless url.nil?
+    vcard.org org unless org.nil?
+    vcard.url url unless url.nil?
 
     unless tel.nil?
-      tel_uri = "tel:" + tel.gsub(/[\s\.-]/, '') + (ext.nil? ? "" : ";ext=" + ext)
-      vcard.tel tel_uri, :type => 'voice,work', :value => 'uri'
+      vcard.tel tel.gsub(/[\s\.-]/, ''), :type => 'voice,work,msg'
+    end
+
+    unless photo_uri.nil?
+      vcard.photo photo_uri, :value => 'uri'
     end
 
     vcard.to_s
-  end
-
-  private
-
-  def escape(str)
-    escaped = str.gsub(",", "\\,")
   end
 
 end
