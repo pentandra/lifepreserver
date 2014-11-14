@@ -16,6 +16,13 @@ class QRCodeFilter < Nanoc::Filter
     image = qr.to_image(module_size, 4, color)
 
     image.save(output_filename)
+
+    require "optipng"
+
+    if Optipng.available?
+      Optipng.optimize(output_filename, { :level => 7 })
+    end
+
   end
 
 end

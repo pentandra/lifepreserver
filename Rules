@@ -121,7 +121,7 @@ end
 
 compile '/company/', :rep => :qrcode do
   filter :vcard, @config[:vcard]
-  filter :qrcode, :size => 17, :module_size => 2, :color => "#544233"
+  filter :qrcode, :size => 25, :module_size => 2, :color => "#544233"
 end
 
 compile '*' do
