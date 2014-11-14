@@ -193,7 +193,7 @@ route '/sitemap/' do
 end
 
 route '/company/', :rep => :vcard do
-  item.identifier.chop + '.vcf'
+  item.identifier + 'pentandra.vcf'
 end
 
 route '/company/', :rep => :qrcode do
