@@ -1,5 +1,5 @@
 # Site version. Used for cache busting as well as for general information.
-version: 1.14.19
+version: 1.14.20
 
 # A list of file extensions that nanoc will consider to be textual rather than
 # binary. If an item with an extension not in this list is found,  the file
@@ -98,5 +98,6 @@ vcard:
   phone: +1 435 294 2964
   email: hello@pentandra.com
   url: *base_url
+  photo_uri: "http://pentandra.com/images/logo.png"
 
 accepting_donations: true
