@@ -60,7 +60,7 @@ others about what to do as well as what not to do. We want to get to know how
 the community works, how they do what they do, and why it matters to them. Not
 only that, but we genuinely care about advancing good research, both within
 ourselves and for others as well. For that matter, our entire
-[mission](/company#mission) is about improving research.
+[mission](/company/#sec:mission) is about improving research.
 
 ## Open Booth
 

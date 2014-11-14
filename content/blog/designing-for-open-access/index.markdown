@@ -1,3 +1,20 @@
+The majority of this blog post was written in October <span
+class="oldstyle">2012</span>, when <span class="em">open access</span> was
+probably at its peak of political popularity. Even though this a jump back in
+time as far as open access goes, and was originally written, I think, from an
+overly academic viewpoint, it has some value in describing some of the
+foundations upon which we are building our ideas and company. Since the time
+this post was started, the Obama Administration has issued [a
+directive](http://www.whitehouse.gov/blog/2013/02/22/expanding-public-access-results-federally-funded-research)
+to the big Federal agencies <q
+cite="http://www.whitehouse.gov/blog/2013/02/22/expanding-public-access-results-federally-funded-research">to
+make the published results of federally funded research freely available to the
+public within one year of publication and requiring researchers to better
+account for and manage the digital data resulting from federally funded
+scientific research.</q> It's a step in the right direction, at least for the
+US.
+{: .intro .em }
+
 ![Open Access Logo](open_access.jpg){: .static }
 {: .aside .img }
 
@@ -24,9 +41,28 @@ financially feasible.
 
 <!--MORE-->
 
+## 17th Century Tech
+
+Let's take a look at the technology that was available for scientific
+publications during the <span class="oldstyle">17</span>th century.
+
+<figure id="fig:composing-stick" class="img" property="schema:image" resource="#composing_stick" typeof="schema:ImageObject">
+  <img property="schema:contentUrl" class="framed static" src="Metal_movable_type.jpg" alt="Metal movable type in a composing stick" />
+  <figcaption class="small">
+
+    <b>Figure 1</b>
+    <span property="schema:name dc:title">Movable type in a composing stick</span>,
+    by <span property="cc:attributionName">Willi Heidelbach</span>, licensed under a <a
+    href="http://creativecommons.org/licenses/by-sa/3.0/" rel="license"
+    property="cc:license"><abbr title="Creative Commons Attribution-Share Alike 3.0 Unported">CC-BY-SA</abbr> license</a>.
+    <span class="icon-cc"></span><span class="icon-cc-by"></span><span class="icon-cc-sa"></span>
+
+  </figcaption>
+</figure>
+
 In the lingua franca of the current open access movement, <dfn
-id="openaccess">open access</dfn> means allowing unrestricted access to the
-results of publicly-funded research (journal articles and sometimes the
+id="def:openaccess">open access</dfn> means allowing unrestricted access to the
+results of publicly funded research (journal articles and sometimes the
 underlying data as well) to the public over the Internet for free.
 
 We support the principles behind the open access movement. As I quoted Martin
@@ -168,7 +204,7 @@ research is [lowered significantly](http://localhost:3000/research/#p[TuaWto],h[
 Anyone can access the research, with or without an academic affiliation.
 Further research and innovation can then accelerate more quickly and with less
 expense. Having access to research across domains will give more depth and
-[context](/research#context) to future research output. Text mining can
+[context](/research/#context) to future research output. Text mining can
 accelerate contextual understanding, leading to surprising cross-discipline
 breakthroughs and collaboration.
 
@@ -179,8 +215,8 @@ the future. The research is just sitting there, on the Ether, ready to be used
 in some novel, unforeseen way to make our world a better place.  Open-source
 software has created enormous value as developers have taken chunks of software
 functionality and put them together in new and innovative ways.  Open-access
-research, or even better, [open research](/open#research), can work the same
-way.
+research, or even better, [open research](/open/#research), can work the
+same way.
 
 ## Our Approach
 
@@ -252,7 +288,7 @@ it is possible to provide open access to a research paper and even to the
 underlying research data by placing it on the web, if we fail to show _how_
 they are connected, then we are failing to give people access to the research
 and thought processes behind those research outputs. We need the whole research
-[context](/research#context) to really understand those research outputs.
+[context](/research/#context) to really understand those research outputs.
 
 ## Why Genealogy?
 
@@ -287,7 +323,7 @@ field. I mean who doesn't care about the past and how their ancestors were
 affected by it or how their ancestors affected the past? Our approach is not so
 much about family trees (there are plenty of companies that do that), but it
 could be called micro-history or generational history research (for more info
-about that see [Geungle](/products#geungle)).
+about that see [Geungle](/products/#geungle)).
 
 ## Freedom
 
@@ -327,9 +363,12 @@ transitional, and that the future of research lies in open,
     [proponent](http://en.wikipedia.org/wiki/Research_Works_Act#Reception)
     of the Research Works Act.
 
-[^GSA]: Starting November <span class="oldstyle">1</span> of this year,
+[^GSA]:
+
+    Starting November <span class="oldstyle">1</span> of this year,
     [Georgia State Archives will lose seven](http://georgiaarchivesmatters.org/2012/09/27/the-staff-what-we-stand-to-lose/)
-    of the remaining ten employees. At the same time, Georgia is spending
+    of the remaining ten employees. As is all too common in politicking, at the
+    same time, Georgia is spending
     upwards of <span class="oldstyle"><span class="symbol">$</span>400</span>
     million in public funds to
     [build a new football stadium](http://www.bizjournals.com/atlanta/print-edition/2012/05/11/atlantas-proposed-new-football.html?page=all)
@@ -494,12 +533,12 @@ transitional, and that the future of research lies in open,
           the world of open access publishing and explain just what it's all
           about.
 
-          <a property="dct:title" rel="cc:attributionURL"
+          <a property="dc:title" rel="cc:attributionURL"
              href="http://www.phdcomics.com/tv/#015">Open Access
              Explained!</a>,
           by <a href="http://www.phdcomics.com"
                 property="cc:attributionName"
-                rel="dct:creator">PhD Comics</a>,
+                rel="dc:creator">PhD Comics</a>,
           is licensed under a
           <a rel="license"
              href="http://creativecommons.org/licenses/by/3.0/">
@@ -509,11 +548,13 @@ transitional, and that the future of research lies in open,
       </figcaption>
     </figure>
 
-*[PDF]:
+*[PDF]: Portable Document Format
 *[FRPAA]: Federal Research Public Access Act
 *[NIH]: National Institutes of Health
-*[EU]:
-*[HR]:
+*[EU]: European Union
+*[US]: United States
+*[UK]: United Kingdom
+*[HR]: House of Representatives
 *[NHMRC]: National Health and Medical Research Council (Australia)
 *[ARC]: Australian Research Council
 

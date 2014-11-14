@@ -6,7 +6,7 @@ module Nanoc::Helpers
 
     require 'set'
 
-    SEMANTIC_TAGS = Hash[File.read('semantic.tags').split("\n").map { |i| i.split(': ')}] unless defined?(SEMANTIC_TAGS)
+    SEMANTIC_TAGS = Hash[File.read('semantic_tags').split("\n").map { |i| i.split(': ')}] unless defined?(SEMANTIC_TAGS)
 
     # Returns all the tags present in a collection of items.
     # There are no duplicates (because this is a set).

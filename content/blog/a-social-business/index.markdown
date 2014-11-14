@@ -25,11 +25,11 @@ both!
 
 <!--MORE-->
 
-We have a <a href="/company#mission">mission</a> that is the most important
-reason that we are doing all this to begin with---and we believe in it. We are
-so excited about it. But at the same time we have some great business ideas to
-promote this new paradigm of research. We don't want to have to deal with the
-funding limitations and red tape of the <span
+We have a <a href="/company/#sec:mission">mission</a> that is the most
+important reason that we are doing all this to begin with---and we believe in
+it. We are so excited about it. But at the same time we have some great
+business ideas to promote this new paradigm of research. We don't want to have
+to deal with the funding limitations and red tape of the <span
 class="oldstyle">501</span>(c)<span class="oldstyle">(3)</span>. We just want
 to focus on our mission.
 

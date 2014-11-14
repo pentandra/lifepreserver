@@ -1,5 +1,4 @@
 require "rqrcode"
-require "vpim/vcard"
 
 class QRCodeFilter < Nanoc::Filter
 

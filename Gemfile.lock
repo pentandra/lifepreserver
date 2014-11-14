@@ -102,7 +102,7 @@ GEM
     uglifier (2.5.3)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    vpim (13.11.11)
+    vcardigan (0.0.6)
 
 PLATFORMS
   ruby
@@ -132,4 +132,4 @@ DEPENDENCIES
   shortly
   systemu
   uglifier
-  vpim
+  vcardigan
