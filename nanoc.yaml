@@ -98,3 +98,5 @@ vcard:
   phone: +1 435 294 2964
   email: hello@pentandra.com
   url: *base_url
+
+accepting_donations: true
