@@ -68,15 +68,15 @@ GEM
     lumberjack (1.0.9)
     method_source (0.8.2)
     mime-types (2.4.3)
-    mini_portile (0.6.1)
+    mini_portile (0.6.0)
     minitest (5.4.3)
     multi_json (1.10.1)
     multi_xml (0.5.5)
     nanoc (3.7.3)
       cri (~> 2.3)
     netrc (0.8.0)
-    nokogiri (1.6.4.1)
-      mini_portile (~> 0.6.0)
+    nokogiri (1.6.3.1)
+      mini_portile (= 0.6.0)
     optipng (0.2.1)
       command-builder (>= 0.2.0)
       unix-whereis (>= 0.1.0)
@@ -137,7 +137,7 @@ DEPENDENCIES
   kramdown
   livefyre (= 1.1.4)
   nanoc
-  nokogiri
+  nokogiri (= 1.6.3.1)
   optipng
   rainpress
   rest-client (~> 1.6)
