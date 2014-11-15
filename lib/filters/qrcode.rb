@@ -19,7 +19,7 @@ class QRCodeFilter < Nanoc::Filter
 
     require "optipng"
 
-    if Optipng.available?
+    if $use_optimized_images and Optipng.available?
       Optipng.optimize(output_filename, { :level => 7 })
     end
 
