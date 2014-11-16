@@ -487,7 +487,7 @@ transitional, and that the future of research lies in open,
     * [what countries mandate open access right now?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=26m39s){: .oa-promoters }
 
     <figure id="ruvr" class="section">
-      <video width="100%" height="100%" style="width: 100%; height: 100%;" id="player" preload="none" controls="controls">
+      <video class="simple" width="100%" height="100%" style="width: 100%; height: 100%;" id="player" preload="none" controls="controls">
         <source type="video/youtube" src="http://www.youtube.com/watch?v=v31zpZ4woOI" />
       </video>
       <figcaption class="small">
@@ -538,7 +538,7 @@ transitional, and that the future of research lies in open,
     {: .section }
 
     <figure id="PhD-OA" resource="http://www.youtube.com/watch?v=L5rVH1KGBCY">
-      <video width="100%" height="100%" style="width: 100%; height: 100%; max-width: 100%;" id="oa-explained" preload="none" controls="controls">
+      <video class="simple" width="100%" height="100%" style="width: 100%; height: 100%; max-width: 100%;" id="oa-explained" preload="none" controls="controls">
         <source type="video/youtube" src="http://www.youtube.com/watch?v=L5rVH1KGBCY" />
       </video>
       <figcaption class="small">
