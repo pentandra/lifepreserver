@@ -43,6 +43,12 @@ financially feasible.
 
 <!--MORE-->
 
+## Contents
+{:.no_toc}
+
+1. Table of Contents
+{:toc}
+
 ## 17th Century Tech
 
 Let's take a look at the technology that was available for scientific
