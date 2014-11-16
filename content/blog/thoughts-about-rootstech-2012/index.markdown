@@ -41,46 +41,29 @@ However, there is more than one type of user.
 Elizabeth Shown Mills describes three types of genealogists in her paper
 <a rel="external" href="http://www.ngsgenealogy.org/galleries/Ref_Researching/NGSQVol91Pg26077GenealogyHistory.pdf"><cite>Genealogy in the "Information Age": History's New Frontier?</cite></a>:
 
-<blockquote class="bq grab">
-  <dl>
-    <dt><dfn id="def:family-tree-climbers">Family Tree Climbers</dfn></dt>
-    <dd>
-      <p>
-
-        Many are avid toilers, but they <em>collect</em> rather than
-        <em>conduct investigations</em>. Typically, they spurn documentation
-        [and] evidence standards...because they are "just doing this for fun."
-
-      </p>
-    </dd>
-    <dt><dfn id="def:traditional-genealogists">Traditional Genealogists</dfn></dt>
-    <dd>
-      <p>
-
-        As serious compilers of family data, most strive to meet the standards
-        set forth by the Jacobus School in the <span
-        class="oldstyle">1930</span>s...Their goal is likely to produce
-        "compiled genealogies" that are <em>reference</em> works rather than
-        <em>family histories</em>, so they try to identify as many family
-        members as possible, with vital statistics but little or no historical
-        context.
-
-      </p>
-    </dd>
-    <dt><dfn id="def:generational-historians">Generational Historians</dfn></dt>
-    <dd>
-      <p>
-
-        Individuals of this mindset thirst for historical knowledge in all its
-        cultural, economic, legal, religious, and social contexts...They value
-        the difference between gathering names and reconstructing lives...Their
-        measure of success is not the number of family members found, but the
-        extent to which they correctly portray each human life they study.
-
-      </p>
-    </dd>
-  </dl>
-</blockquote>
+> Family Tree Climbers
+>
+> : Many are avid toilers, but they _collect_ rather than _conduct
+> investigations_. Typically, they spurn documentation [and] evidence
+> standards...because they are "just doing this for fun."
+>
+> Traditional Genealogists
+>
+> : As serious compilers of family data, most strive to meet the standards set
+> forth by the Jacobus School in the <span class="oldstyle">1930</span>s...Their
+> goal is likely to produce "compiled genealogies" that are _reference_ works
+> rather than _family histories_, so they try to identify as many family
+> members as possible, with vital statistics but little or no historical
+> context.
+>
+> Generational Historians
+>
+> : Individuals of this mindset thirst for historical knowledge in all its
+> cultural, economic, legal, religious, and social contexts...They value the
+> difference between gathering names and reconstructing lives...Their measure
+> of success is not the number of family members found, but the extent to which
+> they correctly portray each human life they study.
+{: .bq .grab }
 
 Janet Havorka at RootsTech this year similarly described three types of
 genealogists in her lecture [Advocating Genealogy and Growing the Market: Issues of the New Genealogist](http://s3.amazonaws.com/rootstech/original/Advocating%20Genealogy.docx?1322717131 "Click for Syllabus").
@@ -183,7 +166,7 @@ building the bridges that need to be built. I hope that RootsTech can take the
 next step.
 {: .conclusion }
 
-[^1]: Elizabeth Shown Mills taught me this principle in email correspondence, June 2011.
+[^1]: Elizabeth Shown Mills taught me this principle in a personal email sent June 2011.
 
 *[NGS]: National Genealogical Society
 *[BCG]: Board for Certification of Genealogists
