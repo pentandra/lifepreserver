@@ -166,7 +166,7 @@ building the bridges that need to be built. I hope that RootsTech can take the
 next step.
 {: .conclusion }
 
-[^1]: Elizabeth Shown Mills taught me this principle in a personal email sent June 2011.
+[^1]: Elizabeth Shown Mills taught me this principle through email correspondence during June, 2011.
 
 *[NGS]: National Genealogical Society
 *[BCG]: Board for Certification of Genealogists
