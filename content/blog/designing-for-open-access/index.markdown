@@ -168,9 +168,7 @@ would be closed to the public due to budget cuts. They couldn't afford to pay
 the staff. This isn't the first time that Georgia has cut funding for the
 archives. Over the last <span class="oldstyle">10</span> years, Georgia has
 cut staff at the archives from <span class="oldstyle">53</span> employees down
-to three.[^GSA] (If you have not done so already, please
-[sign the petition](http://www.change.org/petitions/the-governor-of-ga-leave-our-state-archives-open-to-the-public)
-to save the Georgia State Archives!)
+to three.[^GSA]
 
 What has the Georgia State Archives to do with open access? Everything. While a
 lot of discussion on open access centers around research papers, a big part of
@@ -365,14 +363,22 @@ transitional, and that the future of research lies in open,
 
 [^GSA]:
 
-    Starting November <span class="oldstyle">1</span> of this year,
-    [Georgia State Archives will lose seven](http://georgiaarchivesmatters.org/2012/09/27/the-staff-what-we-stand-to-lose/)
-    of the remaining ten employees. As is all too common in politicking, at the
-    same time, Georgia is spending
-    upwards of <span class="oldstyle"><span class="symbol">$</span>400</span>
-    million in public funds to
-    [build a new football stadium](http://www.bizjournals.com/atlanta/print-edition/2012/05/11/atlantas-proposed-new-football.html?page=all)
-    instead of retrofitting the Georgia Dome with a retractable roof.
+    As of November <span class="oldstyle">1</span> of <span class="oldstyle">2012</span>
+    [Georgia State Archives was set to lose seven](http://georgiaarchivesmatters.org/2012/09/27/the-staff-what-we-stand-to-lose/){:.external}
+    of the remaining ten employees. Because of
+    [the efforts of many](http://www.change.org/petitions/the-governor-of-ga-leave-our-state-archives-open-to-the-public){:.external}
+    Governor Nathan Deal
+    [restored two of the jobs](http://www.ajc.com/news/news/state-regional-govt-politics/5-georgia-archives-employees-will-still-lose-jobs/nShnm/){:.external},
+    which will be enough to keep the archives open until the middle of next
+    year. Happily, during the latest session of the Georgia General Assembly <span
+    class="oldstyle">(2013--2014)</span>, a good portion of the lost budget was
+    restored. You can track the progress on
+    [georgiaarchivesmatters.org](http://georgiaarchivesmatters.org/){:.external}.
+    As is unfortunately all too common with political priorities, at the same
+    time Georgia is spending upwards of <span class="oldstyle"><span
+    class="symbol">$</span>400</span> million in public funds to
+    [build a controversial new football stadium](http://www.bizjournals.com/atlanta/print-edition/2012/05/11/atlantas-proposed-new-football.html?page=all){:.external}
+    instead of retrofitting the Georgia Dome with a retractable roof. 
 
 [^RWA]: The [Research Works Act](http://thomas.loc.gov/cgi-bin/bdquery/z?d112:HR03699:@@@L&summ2=m&)
     (<abbr>HR</abbr> <span class="oldstyle">3699</span>) would in effect repeal
