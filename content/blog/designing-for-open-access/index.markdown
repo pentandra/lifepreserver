@@ -189,9 +189,9 @@ legislators to follow when looking for quick and easy budget cuts.
 Other well-intentioned, but shallow-thinking legislators are trying to limit or
 completely deny public access to United States Social Security Death Records
 for the sake of discouraging identity theft, yet their efforts only exacerbate
-the problem, effectually [removing the only way to detect it](http://www.nytimes.com/2012/10/09/us/social-security-death-record-limits-hinder-researchers.html?_r=2#p[MJsMJs],h[MJsMJs]).
+the problem, effectually [removing the only way to detect it](http://www.nytimes.com/2012/10/09/us/social-security-death-record-limits-hinder-researchers.html?_r=2#p[MJsMJs],h[MJsMJs]){:.external}.
 Some say that we are entering the
-[beginning of the Dark Ages](http://www.nytimes.com/2012/09/27/us/budget-cuts-to-limit-public-access-to-georgia-archives.html?_r=0#p[WohFyo],h[WohFyo,1])
+[beginning of the Dark Ages](http://www.nytimes.com/2012/09/27/us/budget-cuts-to-limit-public-access-to-georgia-archives.html?_r=0#p[WohFyo],h[WohFyo,1]){:.external}
 for public records.
 
 ## Beyond Fairness
@@ -302,10 +302,11 @@ In many research fields, researchers advance their careers through journal
 publication. Many of these journals are "held hostage" by some of the big
 publishers, including Elsevier, Wiley, and Springer. However, genealogists do
 not suffer with this blight. There are a few high-quality journals published in
-the field, including the [National Genealogical Society Quarterly](http://www.ngsgenealogy.org/cs/ngsq)
-and [The Genealogist](http://www.fasg.org/TheGenealogist.html). These journals
-are published by genealogical societies or through universities, and the
-peer-review process handled by the society. While the journals are highly
+the field, including the [National Genealogical Society
+Quarterly](http://www.ngsgenealogy.org/cs/ngsq){:.external} and [The
+Genealogist](http://www.fasg.org/TheGenealogist.html){:.external}. These
+journals are published by genealogical societies or through universities, and
+the peer-review process handled by the society. While the journals are highly
 regarded, journal publications are not the primary path for career advancement
 in genealogy. Most career advancement is done through private client research
 and word-of-mouth.
