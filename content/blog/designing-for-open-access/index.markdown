@@ -1,10 +1,12 @@
-The majority of this blog post was written in October <span
-class="oldstyle">2012</span>, when <span class="em">open access</span> was
-probably at its peak of political popularity. Even though this a jump back in
-time as far as open access goes, and was originally written, I think, from an
-overly academic viewpoint, it has some value in describing some of the
-foundations upon which we are building our ideas and company. Since the time
-this post was started, the Obama Administration has issued [a
+The majority of the section about [the modern open access
+movement](#sec:the-modern-open-access-movement) of this post was written in
+October <span class="oldstyle">2012</span>, when <span class="em">open
+access</span> was probably at its peak of political popularity. Even though
+this a jump back in time as far as the open access movement goes, and was
+originally written, I think, from an overly academic viewpoint, it has some
+value in describing some of the foundations upon which we are building our
+ideas and company. Since the time this post was started, the Obama
+Administration has issued [a
 directive](http://www.whitehouse.gov/blog/2013/02/22/expanding-public-access-results-federally-funded-research)
 to the big Federal agencies <q
 cite="http://www.whitehouse.gov/blog/2013/02/22/expanding-public-access-results-federally-funded-research">to
@@ -60,6 +62,8 @@ publications during the <span class="oldstyle">17</span>th century.
   </figcaption>
 </figure>
 
+## The Modern Open Access Movement
+
 In the lingua franca of the current open access movement, <dfn
 id="def:openaccess">open access</dfn> means allowing unrestricted access to the
 results of publicly funded research (journal articles and sometimes the
@@ -111,7 +115,7 @@ institution, where I had access to some of the more popular journals, I
 probably would not risk the expense unless the paper's abstract was
 particularly convincing.
 
-## Public Policy
+### Public Policy
 
 So where does all this publicly-funded research come from? Well, the government
 collects taxes from the public. These public funds are distributed by the
