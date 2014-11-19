@@ -298,41 +298,36 @@ they are connected, then we are failing to give people access to the research
 and thought processes behind those research outputs. We need the whole research
 [context](/research/#context) to really understand those research outputs.
 
-## Why Genealogy?
+Let's take a look at the technology that was available for scientific
+publications during the <span class="oldstyle">17</span>th century.
 
-So where does genealogy fit in all this?
+<figure id="fig:movable-type" class="img" property="schema:image" resource="#movable_type" typeof="schema:ImageObject">
+  <img property="schema:contentUrl" class="framed static" src="movable_type.jpg" alt="Movable type" />
+  <figcaption class="small">
 
-Vapor is the only thing holding up many of these conclusions.
+    <b>Figure 1</b>
+    <span property="schema:name dc:title">Movable type</span> in a type case.
 
-In many research fields, researchers advance their careers through journal
-publication. Many of these journals are "held hostage" by some of the big
-publishers, including Elsevier, Wiley, and Springer. However, genealogists do
-not suffer with this blight. There are a few high-quality journals published in
-the field, including the [National Genealogical Society
-Quarterly](http://www.ngsgenealogy.org/cs/ngsq){:.external} and [The
-Genealogist](http://www.fasg.org/TheGenealogist.html){:.external}. These
-journals are published by genealogical societies or through universities, and
-the peer-review process handled by the society. While the journals are highly
-regarded, journal publications are not the primary path for career advancement
-in genealogy. Most career advancement is done through private client research
-and word-of-mouth.
+  </figcaption>
+  <link property="rdfa:copy" href="#license" />
+</figure>
 
-Genealogy has traditionally been looked on as history's red-headed stepchild.
-This is due in part to the large number of amateur researchers, and in part to
-misunderstandings as to what good genealogical research looks like. But it has
-become a very rigorous, multifaceted research field, the output of which other
-fields grow increasingly dependent on.
+Movable type worked really well for alphabets that had relatively few
+characters in them.
 
-We are starting with genealogy, first of all, because genealogists are looking
-for more efficient and robust ways to collaborate and disseminate their
-research. Their are fewer barriers for us to overcome because we don't have to
-compete with a deeply entrenched, highly expensive journal as the primary means
-for career advancement. We also view genealogy as a highly engaging research
-field. I mean who doesn't care about the past and how their ancestors were
-affected by it or how their ancestors affected the past? Our approach is not so
-much about family trees (there are plenty of companies that do that), but it
-could be called micro-history or generational history research (for more info
-about that see [Geungle](/products/#geungle)).
+<figure id="fig:composing-stick" class="img" property="schema:image" resource="#composing_stick" typeof="schema:ImageObject">
+  <img property="schema:contentUrl" class="framed static" src="Metal_movable_type.jpg" alt="Metal movable type in a composing stick" />
+  <figcaption class="small">
+
+    <b>Figure 2</b>
+    <span property="schema:name dc:title">Movable type in a composing stick</span>,
+    by <span property="cc:attributionName">Willi Heidelbach</span>, licensed under a <a
+    href="http://creativecommons.org/licenses/by-sa/3.0/" rel="license"
+    property="cc:license"><abbr title="Creative Commons Attribution-Share Alike 3.0 Unported">CC-BY-SA</abbr> license</a>.
+    <span class="icon-cc"></span><span class="icon-cc-by"></span><span class="icon-cc-sa"></span>
+
+  </figcaption>
+</figure>
 
 ## Freedom
 
