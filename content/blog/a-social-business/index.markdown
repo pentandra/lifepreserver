@@ -92,7 +92,7 @@ outputs of knowledge dissemination. Those with narrow, profit-centric views
 have embezzled the scholarly community, in the process setting themselves up as
 the gatekeepers of knowledge dissemination.
 
-Our vision of <a href="/research#future">the future of research</a> is so
+Our vision of <a href="/research/#sec:future">the future of research</a> is so
 different from the modus operandi of scholarly publishing, that I think we have
 a fighting chance of making a difference without falling into the traps of the
 current commercial publishers. Our business model does not restrict the
