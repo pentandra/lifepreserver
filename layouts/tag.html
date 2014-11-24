@@ -1,4 +1,41 @@
-<h1><%= tag %> Articles</h1>
+<div class="group">
+
+  <h1 property="schema:name"><%= tag %> Articles</h1>
+
+  <% if semantic_tag then %>
+  <div class="bd">
+    <p class="big">
+      
+      The <span class="tags"><%= link_for_tag(tag, "/tags/") %></span> tag
+      represents the concept <a class="external" href="<%= semantic_tag['uri']
+        %>" title="<%= semantic_tag['label'] %> on DBpedia"><cite><%=
+          semantic_tag["label"].downcase %></cite></a>, which is described as
+      follows:
+    
+    </p>
+    <figure id="fig:<%= tag.to_slug %>" class="bq rev" resource="#<%= tag.to_slug('_') %>" typeof="schema:CreativeWork">
+      <blockquote cite="<%= semantic_tag['uri'] %>">
+        <p property="schema:text"><%= semantic_tag["abstract"] %></p>
+      </blockquote>
+      <figcaption>
+
+        --- <a property="dc:title" rel="cc:attributionURL prov:wasDerivedFrom"
+          href="<%= semantic_tag['topic'] %>" class="external"><cite><%=
+            semantic_tag["label"] %></cite> on <b
+            property="cc:attributionName">Wikipedia</b></a>, licensed under
+        a <a class="external" property="cc:license"
+          href="http://creativecommons.org/licenses/by-sa/3.0/"><abbr
+            title="Creative Commons Attribution-ShareAlike 3.0 Unported"
+            >CC-BY-SA</abbr> license</a>. 
+
+        <span class="small"><span class="icon-cc"></span><span
+            class="icon-cc-by"></span><span class="icon-cc-sa"></span></span>
+      
+      </figcaption>
+    </figure>
+  </div>
+  <% end %>
+</div>
 
 <% items_with_tag(tag, publishing_articles).each do |article| %>
 <%= render('excerpt', :article => article) %>
