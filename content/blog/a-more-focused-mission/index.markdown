@@ -87,7 +87,7 @@ and questions that these papers are addressing. The technology to access
 research at this level would completely change the way that research is used by
 the world. In our new mission, this is what we mean when we talk about making
 research more accessible to the world. This is what we are trying to accomplish
-with [cases](/research/process#case).
+with [research cases](/research/process#sec:research-case).
 
 Well, we are simple people with big ideas. I love having a mission that
 completely inspires me, and it was an amazing experience for me to dig deeper
