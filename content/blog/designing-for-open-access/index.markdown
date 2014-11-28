@@ -656,8 +656,8 @@ without hidden agendas or selfish motivations.
     href="https://archive.org/details/AChristmasWithoutSnow"
     property="prov:wasDerivedFrom">Internet Archive</a>, produced by <span
     property="cc:attributionName schema:productionCompany">Korty Films</span>
-    in <span class="oldstyle" property="schema:datePublished">1980</span>
-    </span>. Licensed under a <a property="cc:license"
+    in <span class="oldstyle" property="schema:datePublished">1980</span></span>.
+    Licensed under a <a property="cc:license"
     href="http://creativecommons.org/publicdomain/zero/1.0/"
     class="external"><abbr title="Creative Commons Zero (Public Domain
     Dedication)">CC0</abbr> license</a>. <span class="icon-cc"></span><span
@@ -844,10 +844,11 @@ seem more technical.
 
 Do I think that these ideas will be widely accepted by professional research
 community? Probably about as much as telling a community of professional
-pastors of religion that the world needs more lay ministers. That may be
+pastors of religion that the world needs more lay ministers. This may be
 especially true for those researchers that are at the top of their professional
 ladders. Yet, I may be writing more to the those of the world that are
-researchers at heart, not by profession.
+researchers at heart, not by profession, or to those researchers that are
+starting out, trying to make sense of a paradoxical profession.
 
 In that past (as in before the Internet), high-profile, prestigious journals
 were the best way to get access to the latest research. Nowadays there are
