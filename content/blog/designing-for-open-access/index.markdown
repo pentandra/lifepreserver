@@ -443,12 +443,13 @@ past and its future. We can't keep taking stuff at face value.
 Yet some of the artifacts of traditional knowledge creation, namely citations
 and peer review, are not first-class citizens on the Web. In fact, imposing
 citations on documents on the web is fairly awkward, and feels like a hack.
-Citations are an artifact carried over from the documents of the print
-paradigm. They don't fit the Web architecture or take advantage of the power of
-the Web. Not only that, but once they are there, it is all too easy to lose
-them. Since the [W3C's vision for the Web][w3c_vision] involves 'participation,
-sharing knowledge, and thereby building trust on a global scale,' doesn't it
-seem weird that there is no inherent mechanism to track knowledge *creation*?
+Citations are a remnant of the print paradigm. They were put at the end of
+papers because they would be in the way if they were put anywhere else. They
+don't fit the Web architecture or take advantage of the power of the Web. Not
+only that, but once they are there, it is all too easy to lose them. Since the
+[W3C's vision for the Web][w3c_vision] involves 'participation, sharing
+knowledge, and thereby building trust on a global scale,' doesn't it seem weird
+that there is no inherent mechanism to track knowledge *creation*?
 
 
 What would it look like if the process of knowledge creation was modeled on the
