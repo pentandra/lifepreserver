@@ -380,74 +380,6 @@ lot of time trying to crack open nuts. So what would true open access to
 knowledge look like? I have listed five general principles below that would
 really [open up our access to the knowledge of the world][mission].
 
-### Emphasizing Attribution, not Authorship
-
-We need to focus more on attribution, not authorship. We're researchers first,
-not authors, aren't we? We want to know who did the *research!* Authorship in
-research is a remnant of [the early modern
-period](#sec:the-early-modern-period), and stems from the limitations of the
-paper publication paradigm. When all you have is a monolithic paper at the end,
-*is there any other way to attach your name to your research?* Authorship has
-been the source of countless scientific squabbles. All to often, it's the
-researcher with the most power in an organization who ends up higher up in the
-list of authors of a research paper, not the one that actually did the most
-work!
-
-True open access to knowledge needs to be very fine-grained, so you know exactly
-who did what. Transparency is the important factor here, not so much for
-personal aggrandizement or [scientific priority], but for accountability and
-traceability. In general, I don't believe in the *[lone genius]*. Great
-breakthroughs in knowledge are almost always very incremental, and are built
-upon the thoughts of many predecessors. To teach anything else disregards the
-context in which a discovery was made. I subscribe more to the theory of
-[multiple discovery]---<q
-cite="http://en.wikipedia.org/wiki/Multiple_discovery">that most scientific
-discoveries and inventions are made independently and more or less
-simultaneously by multiple scientists and inventors</q>.
-
-<figure class="bq grab">
-  <blockquote cite="http://en.wikipedia.org/wiki/Multiple_discovery">
-    <p>
-
-      When the time is ripe for certain things, they appear at different places
-      in the manner of violets coming to light in early spring.
-
-    </p>
-  </blockquote>
-  <figcaption>--- <a href="http://en.wikipedia.org/wiki/Farkas_Bolyai"
-  class="external">Farkas Bolyai</a>, to his son <a href="http://en.wikipedia.org/wiki/J%C3%A1nos_Bolyai" class="external">János</a>, urging him to publish his theory of non-Euclidiean geometry without delay.</figcaption>
-</figure>
-
-#### A Highly Heterogeneous Composition
-
-While wikis are being used successfully for collaborative, iterative research
-dissemination in fields such as math, for many fields a wiki is not enough. A
-[wiki](http://en.wikipedia.org/wiki/Wiki) deals primarily with textual
-revisions and does not provide the structure to follow a research conclusion
-back through the research process to the underlying data the conclusion is
-based upon. Research semantics get lost, and [citations are just not
-enough](/research/#p[RsbOsr],h[RsbOsr,3]).  We believe we have a solution to
-that problem.
-
-Research is messy. Sometimes it just doesn't fit very well in a four page
-research paper. While there are some excellent examples of the use of wikis in
-research dissemination, such as
-[Scholarpedia](http://www.scholarpedia.org/){:.external} or
-[Wikiversity](http://en.wikiversity.org/){:.external}, wikis are still based on
-the research paper model. Collaboration occurs only during the writing of the
-paper, and not during the whole research process. 
-
-Our approach is to build software around the
-[unit of research](/research/process/#unit). This gives research a natural
-structure that can be shared or developed in an understandable and
-collaborative way. This is an important distinction between
-[true research software](/research/#p[WtrHwt],h[WtrHwt,2,3]) and wikis. While
-it is possible to provide open access to a research paper and even to the
-underlying research data by placing it on the web, if we fail to show _how_
-they are connected, then we are failing to give people access to the research
-and thought processes behind those research outputs. We need the whole research
-[context] to really understand those research outputs.
-
 ### Creating Open Knowledge
 
 Before we can *open up* knowledge, we need to know what *knowledge* is. In our
@@ -574,6 +506,147 @@ stays there and doesn't get shared.
 
 Look at collaboration and openness as a positive thing, a way to do more good,
 more quickly. Trickle down economics.
+
+### Emphasizing Attribution, not Authorship
+
+We need to focus more on attribution, not authorship. We're researchers first,
+not authors, aren't we? We want to know who did the *research!* Authorship in
+research is a remnant of [the early modern
+period](#sec:the-early-modern-period), and stems from the limitations of the
+paper publication paradigm. When all you have is a monolithic paper at the end,
+*is there any other way to attach your name to your research?* Authorship has
+been the source of countless scientific squabbles. All to often, it's the
+researcher with the most power in an organization who ends up higher up in the
+list of authors of a research paper, not the one that actually did the most
+work!
+
+True open access to knowledge needs to be very fine-grained, so you know exactly
+who did what. Transparency is the important factor here, not so much for
+personal aggrandizement or [scientific priority], but for accountability and
+traceability. In general, I don't believe in the *[lone genius]*. Great
+breakthroughs in knowledge are almost always very incremental, and are built
+upon the thoughts of many predecessors. To teach anything else disregards the
+context in which a discovery was made. I subscribe more to the theory of
+[multiple discovery]---<q
+cite="http://en.wikipedia.org/wiki/Multiple_discovery">that most scientific
+discoveries and inventions are made independently and more or less
+simultaneously by multiple scientists and inventors</q>.
+
+<figure class="bq grab">
+  <blockquote cite="http://en.wikipedia.org/wiki/Multiple_discovery">
+    <p>
+
+      When the time is ripe for certain things, they appear at different places
+      in the manner of violets coming to light in early spring.
+
+    </p>
+  </blockquote>
+  <figcaption>--- <a href="http://en.wikipedia.org/wiki/Farkas_Bolyai"
+  class="external">Farkas Bolyai</a>, to his son <a href="http://en.wikipedia.org/wiki/J%C3%A1nos_Bolyai" class="external">János</a>, urging him to publish his theory of non-Euclidiean geometry without delay.</figcaption>
+</figure>
+
+#### A Highly Heterogeneous Composition
+
+While wikis are being used successfully for collaborative, iterative research
+dissemination in fields such as math, for many fields a wiki is not enough. A
+[wiki](http://en.wikipedia.org/wiki/Wiki) deals primarily with textual
+revisions and does not provide the structure to follow a research conclusion
+back through the research process to the underlying data the conclusion is
+based upon. Research semantics get lost, and [citations are just not
+enough](/research/#p[RsbOsr],h[RsbOsr,3]).  We believe we have a solution to
+that problem.
+
+Research is messy. Sometimes it just doesn't fit very well in a four page
+research paper. While there are some excellent examples of the use of wikis in
+research dissemination, such as
+[Scholarpedia](http://www.scholarpedia.org/){:.external} or
+[Wikiversity](http://en.wikiversity.org/){:.external}, wikis are still based on
+the research paper model. Collaboration occurs only during the writing of the
+paper, and not during the whole research process. 
+
+Our approach is to build software around the
+[unit of research](/research/process/#unit). This gives research a natural
+structure that can be shared or developed in an understandable and
+collaborative way. This is an important distinction between
+[true research software](/research/#p[WtrHwt],h[WtrHwt,2,3]) and wikis. While
+it is possible to provide open access to a research paper and even to the
+underlying research data by placing it on the web, if we fail to show _how_
+they are connected, then we are failing to give people access to the research
+and thought processes behind those research outputs. We need the whole research
+[context] to really understand those research outputs.
+
+### Iterating Research
+
+For some research questions, that is a
+good way to go, but for most, 
+
+Over the last decade software development processes have evolved from a
+monolithic [waterfall model]{:.external} to more [iterative]{:.external}
+methodologies. It just didn't work to go through one giant iteration when
+designing a complicated software system. It is much more efficient to go
+through many small iterations through the development process, getting feedback
+from the project owners along the way.
+
+Research is, by nature, iterative. It is very uncommon to come to a correct
+conclusion to any sophisticated research question in one fell swoop. Yet the
+research paper model promotes the idea that the research needs to be completely
+finished before it can be published. It doesn't have to be this way. For many
+fields, the research paper is not a good fit for the publication of research.
+It's just the way it has been done for hundreds of years. Research is an
+iterative process, so a realtime, iterative model for research publication
+would be a much better solution to the problem. Research outputs need to be
+published little by little, instead of as one perfected, monolithic publication
+at the end. It's is better to get the research out there to invite
+collaboration and peer review during earlier phases of the research process.
+As research progresses, the research outputs are presented in an incremental,
+natural way.
+
+As is practiced in traditional research, the pre-publication peer review makes
+more sense in a print paradigm, where a paper is printed once and can't be
+changed after publication. While we are familiar with this paradigm, and much
+of academia uses it, paper publications are just not a very good fit for the
+research process. It was just all that was available at the time.
+
+If you are not convinced, take a look at the open-source software movement.
+Software is not research, but the underlying development processes are very
+similar. A software developer's research output is, if you will, the source
+code. Using some sort of iterative methodology, the developer will piece little
+bits of functionality together until, eventually, he will arrive at a
+sophisticated product. The researcher "develops" conclusions in a similar
+manner. That product may include a nicely written paper, but all the underlying
+research needs to be openly accessible as well.
+
+#### Asynchronous Research
+
+We don't just need an acceleration of science---we need a completely different
+paradigm.
+
+The questions don't change but the answers do
+--- Dan Reed
+   
+### Determining Research Quality
+
+I am not of the opinion that amateurs should be given only academic drudgework,
+but that everyone should have the opportunity to meaningfully participate at
+every level of the knowledge creation process.
+
+Yet we all vary in knowledge and skill levels. How can we ensure the quality of
+research outputs? We don't have any commonly accepted Authorities of
+Omniscience to ask to verify the accuracy of our research. Over the centuries,
+we have had to resort to our peers.
+
+What is the purpose of vetting or peer review? Simply to have an established
+authority whose output we can depend on with some semblance of trust. Review is
+mainly a filtering mechanism! The goal was to exclude as many papers as
+possible so as to reduce the incremental costs of printing. This had the added
+benefit of reducing [information overload] for the consumer reader. On the
+other hand, peer review also helped good papers become better by giving
+criticism and editorial feedback to the authors.
+
+{::comment}Also, researchers didn't publish because they had to for
+their grant, so they could continue surviving. They published when they had
+something valuable to say.  Imagine how much the publication volume of research
+papers would reduce if that principle was followed today!{:/comment}
 
 ### Democratizing Research
 
@@ -743,79 +816,6 @@ id="q:amateurship"
 cite="https://en.wikipedia.org/wiki/Citizen_science#History">amateurship
 instead of money-biased technical bureaucrats</q>.'
 
-### Determining Research Quality
-
-I am not of the opinion that amateurs should be given only academic drudgework,
-but that everyone should have the opportunity to meaningfully participate at
-every level of the knowledge creation process.
-
-Yet we all vary in knowledge and skill levels. How can we ensure the quality of
-research outputs? We don't have any commonly accepted Authorities of
-Omniscience to ask to verify the accuracy of our research. Over the centuries,
-we have had to resort to our peers.
-
-What is the purpose of vetting or peer review? Simply to have an established
-authority whose output we can depend on with some semblance of trust. Review is
-mainly a filtering mechanism! The goal was to exclude as many papers as
-possible so as to reduce the incremental costs of printing. This had the added
-benefit of reducing [information overload] for the consumer reader. On the
-other hand, peer review also helped good papers become better by giving
-criticism and editorial feedback to the authors.
-
-{::comment}Also, researchers didn't publish because they had to for
-their grant, so they could continue surviving. They published when they had
-something valuable to say.  Imagine how much the publication volume of research
-papers would reduce if that principle was followed today!{:/comment}
-
-### Iterating Research
-
-For some research questions, that is a
-good way to go, but for most, 
-
-Over the last decade software development processes have evolved from a
-monolithic [waterfall model]{:.external} to more [iterative]{:.external}
-methodologies. It just didn't work to go through one giant iteration when
-designing a complicated software system. It is much more efficient to go
-through many small iterations through the development process, getting feedback
-from the project owners along the way.
-
-Research is, by nature, iterative. It is very uncommon to come to a correct
-conclusion to any sophisticated research question in one fell swoop. Yet the
-research paper model promotes the idea that the research needs to be completely
-finished before it can be published. It doesn't have to be this way. For many
-fields, the research paper is not a good fit for the publication of research.
-It's just the way it has been done for hundreds of years. Research is an
-iterative process, so a realtime, iterative model for research publication
-would be a much better solution to the problem. Research outputs need to be
-published little by little, instead of as one perfected, monolithic publication
-at the end. It's is better to get the research out there to invite
-collaboration and peer review during earlier phases of the research process.
-As research progresses, the research outputs are presented in an incremental,
-natural way.
-
-As is practiced in traditional research, the pre-publication peer review makes
-more sense in a print paradigm, where a paper is printed once and can't be
-changed after publication. While we are familiar with this paradigm, and much
-of academia uses it, paper publications are just not a very good fit for the
-research process. It was just all that was available at the time.
-
-If you are not convinced, take a look at the open-source software movement.
-Software is not research, but the underlying development processes are very
-similar. A software developer's research output is, if you will, the source
-code. Using some sort of iterative methodology, the developer will piece little
-bits of functionality together until, eventually, he will arrive at a
-sophisticated product. The researcher "develops" conclusions in a similar
-manner. That product may include a nicely written paper, but all the underlying
-research needs to be openly accessible as well.
-
-#### Asynchronous Research
-
-We don't just need an acceleration of science---we need a completely different
-paradigm.
-
-The questions don't change but the answers do
---- Dan Reed
-   
 ## Technological Foundations of Research Publication
 
 We live in a different time now than when Sir Isaac Newton was around---a time
