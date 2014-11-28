@@ -383,14 +383,15 @@ really [open up our access to the knowledge of the world][mission].
 ### Emphasizing Attribution, not Authorship
 
 We need to focus more on attribution, not authorship. We're researchers first,
-not authors, aren't we? We want to know who did the *research!* Authorship is a
-remnant of [the early modern period](#sec:the-early-modern-period), and stems
-from the limitations of the paper publication paradigm. When all you have is a
-monolithic paper at the end, *is there any other way to attach your name to
-your research?* Authorship has been the source of countless scientific
-squabbles. All to often, it's the researcher with the most power in an
-organization who ends up higher up in the list of authors of a research paper,
-not the one that actually did the most work!
+not authors, aren't we? We want to know who did the *research!* Authorship in
+research is a remnant of [the early modern
+period](#sec:the-early-modern-period), and stems from the limitations of the
+paper publication paradigm. When all you have is a monolithic paper at the end,
+*is there any other way to attach your name to your research?* Authorship has
+been the source of countless scientific squabbles. All to often, it's the
+researcher with the most power in an organization who ends up higher up in the
+list of authors of a research paper, not the one that actually did the most
+work!
 
 True open access to knowledge needs to be very fine-grained, so you know exactly
 who did what. Transparency is the important factor here, not so much for
@@ -447,7 +448,7 @@ they are connected, then we are failing to give people access to the research
 and thought processes behind those research outputs. We need the whole research
 [context] to really understand those research outputs.
 
-### Opening Up Silos of Knowledge
+### Creating Open Knowledge
 
 Before we can *open up* knowledge, we need to know what *knowledge* is. In our
 [mission], we allude to the process of *knowledge creation*, yet can knowledge
@@ -1153,8 +1154,8 @@ transitional, and that the future of research lies in open,
     researcher on an ivory tower, benevolently throwing out copies of his most
     recent publication to the masses below. I don't like it inasmuch as it
     focuses attention on the altitude of the researcher, rather than on the
-    research itself. I prefer more down-to-earth terms, such as *collaboration*
-    or *communication*.
+    research itself. It also implies a one-way transmission. I prefer more
+    down-to-earth terms, such as *collaboration* or *communication*.
 
 [^Vespucci]: To be completely fair, Columbus only discovered the [West Indies].
     It was [Amerigo Vespucci] who discovered the continents which we know today
