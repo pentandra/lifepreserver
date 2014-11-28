@@ -1,4 +1,6 @@
-The majority of the section of this post about [the modern open access
+This post is the result of the last two years of searching, trying to
+understand how we need to move forward as a company and as a society. The
+majority of the section of this post about [the modern open access
 movement](#sec:the-modern-open-access-movement) was written in October
 *2012*{:.oldstyle}, when open access was probably at its peak of political
 popularity. Even though this a jump back in time as far as the open access
@@ -341,7 +343,7 @@ research innovation and chill passion for discovery. It takes effort for sure,
 sometimes even years of effort, but one thing is certain: you don't need to be
 a PhD to contribute to the knowledge of the world. It would be good to remember
 that not to long ago [science was dominated by
-amateurs](#sec:democratizated-research). _Anyone_ can progress things, bringing
+amateurs](#sec:democratizing-research). _Anyone_ can progress things, bringing
 in fresh new ideas from a wealth of unique backgrounds and understandings.
 Questions can be answered more quickly by bringing more eyes and minds together
 to work on a problem. Jack also, like many others that are driven to make
@@ -589,8 +591,16 @@ Such are attempts to widen the gap between ivory-tower researchers and the
 common man---as if the incomprehensible paper makes a researcher intellectually
 unapproachable or the grant money justifiable. I think this is an artifact from
 [the middle ages](#sec:the-middle-ages), when the prevailing approach was to
-keep the masses in the dark. We should be beyond that now. Any research can be
-explained simply if enough thought is put into it. Truth is simple.
+keep the masses in the dark. We should be beyond that now. Knowledge is not
+exclusively squirrelled away in monastic libraries anymore. It's at our
+fingertips. Even government censoring cannot stop the flow of it. There is no
+excuse to try to keep people from learning so as only to prove your own
+intellectual superiority. The dynamics of the knowledge industry are changing,
+and we need to start working together as a team. Any concept can be explained
+simply if enough thought is put into it. Truth is simple. Knowledge is not the
+exclusive property of the professional intellectualist. The *real* power comes
+in teaching and sharing---in collaboration---where, like a good choir or
+orchestra, the whole is greater than the sum of the parts.
 
 In saying this, I don't want to diminish the importance of domain vocabularies.
 Domain-specific vocabularies are justified and needed to explain complicated
@@ -669,12 +679,12 @@ paper bearing his theory [of general relativity].</q>'[^chaplin]
 
 What if Einstein had waited for a federal grant before starting on this work?
 The chances of a grant proposal being accepted would have been very small,
-since his ideas went against everything that was being taught at the time. What
-then? If a grant had been denied, would he have decided to just forget about
-it? Instead, he pursued his passion in simplicity. This was the era of [small
-science], when science was pursued for the love of it. 'Love is a better
-teacher than a sense of duty,'[^violin_practicing] Einstein said, and
-'imagination is more important than knowledge.' 
+since his ideas seemed insane at the time. What then? If a grant had been
+denied, would he have decided to just forget about it? Instead, he pursued his
+passion in simplicity. This was the era of [small science], when science was
+pursued for the love of it. 'Love is a better teacher than a sense of
+duty,'[^violin_practicing] Einstein said, and 'imagination is more important
+than knowledge.' 
 
 I'm not suggesting that the world is full of thousands of untapped Einsteins,
 but that we need to check our motivations for pursuing science and research as
@@ -830,6 +840,13 @@ Research cases are more a social construct than technical. Research objects
 seem more technical.
 
 ## Freedom
+
+Do I think that these ideas will be widely accepted by professional research
+community? Probably about as much as preaching that there needs to be more lay
+ministers to a community of professional pastors of religion, especially to
+those researchers that are near the tops of their professional ladders. Yet, I
+may be writing more to the those of the world that are researchers at heart,
+not by profession.
 
 In that past (as in before the Internet), high-profile, prestigious journals
 were the best way to get access to the latest research. Nowadays there are
