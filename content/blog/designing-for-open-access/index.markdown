@@ -689,8 +689,9 @@ than knowledge.'
 I'm not suggesting that the world is full of thousands of untapped Einsteins,
 but that we need to check our motivations for pursuing science and research as
 a society in general. We need to do more of, what I would call, <dfn
-id="def:little_research">little research</dfn>. A world where, as Chargaff put
-it, science and research are dominated by '<q id="q:amateurship"
+id="def:little_research">little research</dfn>. We need to create a world
+where, as Chargaff put it, science and research are dominated by '<q
+id="q:amateurship"
 cite="https://en.wikipedia.org/wiki/Citizen_science#History">amateurship
 instead of money-biased technical bureaucrats</q>.'
 
@@ -842,11 +843,11 @@ seem more technical.
 ## Freedom
 
 Do I think that these ideas will be widely accepted by professional research
-community? Probably about as much as preaching that there needs to be more lay
-ministers to a community of professional pastors of religion, especially to
-those researchers that are near the tops of their professional ladders. Yet, I
-may be writing more to the those of the world that are researchers at heart,
-not by profession.
+community? Probably about as much as telling a community of professional
+pastors of religion that the world needs more lay ministers. That may be
+especially true for those researchers that are at the top of their professional
+ladders. Yet, I may be writing more to the those of the world that are
+researchers at heart, not by profession.
 
 In that past (as in before the Internet), high-profile, prestigious journals
 were the best way to get access to the latest research. Nowadays there are
