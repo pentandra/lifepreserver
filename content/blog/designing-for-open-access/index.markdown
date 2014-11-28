@@ -440,6 +440,10 @@ past and its future. We can't keep taking stuff at face value.
   </figcaption>
 </figure>
 
+What would it look like if the [process of knowledge creation][mission] was
+modeled on the Web? What if you could look *inside* a given fact, and see how
+it came into existence?
+
 Just like the World Wide Web, research must be open and democratized. 
 
 #### Publications as Silos
@@ -601,9 +605,6 @@ Just like the World Wide Web lets people of all skill levels participate in the
 [Web of Documents][web], true open access to knowledge needs to allow
 people---of all skill levels---to participate in the process of research.
 
-We live in a time of widespread intellectual affluence. Knowledge is available
-for free at your nearest Internet connection.
-
 <figure id="fig:jefferson" class="bq grab">
   <blockquote>
     <p>
@@ -621,9 +622,10 @@ for free at your nearest Internet connection.
   <figcaption>--- Thomas Jefferson</figcaption>
 </figure>
 
-We need researchers that are motivated by a [passion for
-discovery][passion]---that want to serve humanity without hidden agendas or
-selfish motivations.
+We live in a time of widespread intellectual affluence. Knowledge is available
+for free at your nearest Internet connection. We need researchers that are
+motivated by a [passion for discovery][passion]---that want to serve humanity
+without hidden agendas or selfish motivations.
 
 <figure class="section" resource="#you_are_amateurs" typeof="schema:VideoObject">
   <meta property="schema:bitrate" content="649k" />
@@ -654,19 +656,33 @@ selfish motivations.
   </figcaption>
 </figure>
 
+It was while Albert Einstein worked full-time as an examiner at a patent office
+that he published his radical [four papers][miracle year] that would change our
+understanding of space, time, and matter. According to his wife Elsa, a few
+years later '<q cite="https://en.wikipedia.org/wiki/Albert_Einstein">[d]uring
+breakfast on morning, \[Einstein\] seemed lost in thought and ignored his food.
+[I] asked him if something was bothering him. He sat down at the piano and
+started playing. He continued playing and writing notes for half an hour, then
+went upstairs to his study, where he remained for two weeks, with [me] bringing
+up his food. At the end of the two weeks he came downstairs with two sheets of
+paper bearing his theory [of general relativity].</q>'[^chaplin]
 
-<figure id="quote:amateurship" resource="#amateurship" class="bq grab">
-  <blockquote cite="https://en.wikipedia.org/wiki/Citizen_science#History">
-    <p>Science dominated by "amateurship instead of money-biased technical
-    bureaucrats"</p>
-  </blockquote>
-  <figcaption>
+What if Einstein had waited for a federal grant before starting on this work?
+The chances of a grant proposal being accepted would have been very small,
+since his ideas went against everything that was being taught at the time. What
+then? If a grant had been denied, would he have decided to just forget about
+it? Instead, he pursued his passion in simplicity. This was the era of [small
+science], when science was pursued for the love of it. 'Love is a better
+teacher than a sense of duty,'[^violin_practicing] Einstein said, and
+'imagination is more important than knowledge.' 
 
-    --- Erwin Chargaff, in <cite>Heraclitean Fire: Sketches from a Life Before
-    Nature</cite>
-
-  </figcaption>
-</figure>
+I'm not suggesting that the world is full of thousands of untapped Einsteins,
+but that we need to check our motivations for pursuing science and research as
+a society in general. We need to do more of, what I would call, <dfn
+id="def:little_research">little research</dfn>. A world where, as Chargaff put
+it, science and research are dominated by '<q id="q:amateurship"
+cite="https://en.wikipedia.org/wiki/Citizen_science#History">amateurship
+instead of money-biased technical bureaucrats</q>.'
 
 ### Going Beyond Web 2.0
 
@@ -924,6 +940,41 @@ transitional, and that the future of research lies in open,
 
 [^utopia]: Such as [Utopia Documents](http://utopiadocs.com/).
 
+[^chaplin]: Charlie Chaplin, in his [autobiography], mentions a dinner at 
+    his home in <span class="oldstyle">1926</span>, during which Einstein's
+    second wife, Elsa, told him and two other friends about the time Einstein
+    conceived of the theory of relativity. She related:
+
+    > The Doctor \[Einstein\] came down in his dressing gown as usual for
+    > breakfast but he hardly touched a thing. I thought something was wrong,
+    > so I asked him what was troubling him. "Darling," he said, "I have a
+    > wonderful idea." And after drinking his coffee, he went to the piano and
+    > started playing. Now and again he would stop, making a few notes then
+    > report: "I've got a wonderful idea, a marvelous idea." I said: "Then for
+    > goodness sake tell me what it is, don't keep me in suspense." He said:
+    > "It's difficult, I still have to work it out."
+    >
+    > Mrs. Einstein told Mr. Chaplin that Einstein continued playing the piano
+    > and making notes for about half an hour, then went upstairs to his study,
+    > telling her that he did not wish to be disturbed, and he remained there
+    > for two weeks. "Each day I sent up his meals," she said, "and in the
+    > evening he would walk a little for exercise, then return to his work
+    > again."
+    >
+    > "Eventually," Mrs. Einstein said, "he came down from his study looking
+    > very pale." "That's it," he told me, wearily putting two sheets of paper
+    > on the table. And that was his theory of relativity.
+    {: .bq .grab }
+
+    He later referred to this as the happiest time of his
+    life.[^Einsteins_Dream]
+    
+[^Einsteins_Dream]: Parker, Barry. [Einstein's Dream: The Search for a Unified Theory of the Universe](http://books.google.com/books?id=GMZyB1bBpssC). Basic Books, 2008. ISBN: 9780465011858.
+
+[^violin_practicing]: While Einstein said this in particular about his love of
+    music and violin practice, the same applies to any skill that you are
+    pursuing.
+
 [^NIH]: This policy was passed as part of the
     <a href="http://thomas.loc.gov/cgi-bin/bdquery/z?d110:H.R.2764:">Consolidated Appropriations Act, <span class="oldstyle">2008</span></a>.
     The law requires that the paper be submitted to PubMed Central [no later
@@ -1148,6 +1199,10 @@ transitional, and that the future of research lies in open,
 [web]: <https://en.wikipedia.org/wiki/World_Wide_Web> "World Wide Web on Wikipedia"
 [Small Science]: <https://en.wikipedia.org/wiki/Small_Science> "Small Science on Wikipedia"
 [eisenhower]: <https://en.wikipedia.org/wiki/Eisenhower%27s_farewell_address> "Eisenhower's farewell address on Wikipedia"
+[miracle year]: <https://en.wikipedia.org/wiki/Annus_Mirabilis_papers> "Annus Mirabilis papers on Wikipedia"
+[autobiography]: <http://books.google.com/books/about/My_Autobiography.html?id=31UyYJnDhJsC> "My Autobiography by Charlie Chaplin"
+[einstein]: <https://en.wikipedia.org/wiki/Albert_Einstein> "Albert Einstein on Wikipedia"
+[altmetrics]: <https://en.wikipedia.org/wiki/Altmetrics> "Altmetrics on Wikipedia"
 
 
 <% content_for :javascripts do %>
