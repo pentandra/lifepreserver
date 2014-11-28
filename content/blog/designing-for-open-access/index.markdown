@@ -353,10 +353,10 @@ research---a family friend had recently died of pancreatic cancer.
 Oftentimes, practitioners will see things that the theoreticians miss. Not only
 that, but once they *do* see, practitioners will often have the passion and
 influence needed to create change. As [we wrote about before][hairdresser],
-Janet Stephens, the hairdresser, saw something historians missed. She had a
-passion for old hairstyles, and set out to recreate them. She knew how to work
-with hair and persisted until she found a solution. Historians had long
-misinterpreted what Janet understood---and Janet was willing to share.
+Janet Stephens saw something historians missed. She had a passion for old
+hairstyles, and set out to recreate them. She knew how to work with hair and
+persisted until she found a solution. Historians had long misinterpreted what
+Janet understood---and Janet was willing to share.
 
 Josh Sommer is a good example of someone passionate about finding an
 answer---passionate enough to do something about it. After he was diagnosed
@@ -368,16 +368,17 @@ types involved in research.
 ## Designing for True Open Access to Knowledge
 
 While open access to research journals is a great step, it does not solve the
-fundamental problem of open access to knowledge. In a way, it seems like a hack
-on top of the current publication paradigm. The same goes for [altmetrics].
-While it lets us have access to the papers, it still doesn't give us open
-access to the knowledge contained therein---*the knowledge that was in the
-researcher's head*. The scholarly paper is just a *format* for the
-dissemination of knowledge. True open access, to us, means more than [just open
-access to these research papers](#sec:the-modern-open-access-movement)---it
-means open access to raw, unadulterated *knowledge*. It means opening up
-[silos][mission]---the silo of the individual researcher as well as
-organizational silos.
+fundamental problem of open access to knowledge. In a way, it's a hack on top
+of the paper publication paradigm. The same goes for [altmetrics] as it stands
+right now. True open access, to us, means more than [just open access to these
+research papers](#sec:the-modern-open-access-movement)---it means open access
+to raw, unadulterated *knowledge*. The scholarly paper is just a *format* for
+the dissemination[^dissemination] of knowledge. Even if we have access to the
+papers, we still have a problem. We still have to manually and mentally extract
+that knowledge from the paper. Our brains become the bottleneck, and we spend a
+lot of time trying to crack open nuts. So what would true open access to
+knowledge look like? I have listed five general principles below that would
+really [open up our access to the knowledge of the world][mission].
 
 ### Emphasizing Attribution, not Authorship
 
@@ -416,7 +417,71 @@ simultaneously by multiple scientists and inventors</q>.
   class="external">Farkas Bolyai</a>, to his son <a href="http://en.wikipedia.org/wiki/J%C3%A1nos_Bolyai" class="external">János</a>, urging him to publish his theory of non-Euclidiean geometry without delay.</figcaption>
 </figure>
 
+#### A Highly Heterogeneous Composition
+
+While wikis are being used successfully for collaborative, iterative research
+dissemination in fields such as math, for many fields a wiki is not enough. A
+[wiki](http://en.wikipedia.org/wiki/Wiki) deals primarily with textual
+revisions and does not provide the structure to follow a research conclusion
+back through the research process to the underlying data the conclusion is
+based upon. Research semantics get lost, and [citations are just not
+enough](/research/#p[RsbOsr],h[RsbOsr,3]).  We believe we have a solution to
+that problem.
+
+Research is messy. Sometimes it just doesn't fit very well in a four page
+research paper. While there are some excellent examples of the use of wikis in
+research dissemination, such as
+[Scholarpedia](http://www.scholarpedia.org/){:.external} or
+[Wikiversity](http://en.wikiversity.org/){:.external}, wikis are still based on
+the research paper model. Collaboration occurs only during the writing of the
+paper, and not during the whole research process. 
+
+Our approach is to build software around the
+[unit of research](/research/process/#unit). This gives research a natural
+structure that can be shared or developed in an understandable and
+collaborative way. This is an important distinction between
+[true research software](/research/#p[WtrHwt],h[WtrHwt,2,3]) and wikis. While
+it is possible to provide open access to a research paper and even to the
+underlying research data by placing it on the web, if we fail to show _how_
+they are connected, then we are failing to give people access to the research
+and thought processes behind those research outputs. We need the whole research
+[context] to really understand those research outputs.
+
 ### Opening Up Silos of Knowledge
+
+Before we can *open up* knowledge, we need to know what *knowledge* is. In our
+[mission], we allude to the process of *knowledge creation*, yet can knowledge
+really be created? Christopher Columbus did not *create* the [New World]---he
+only discovered it[^Vespucci] to the Old World. It had been waiting there all
+along. Likewise, knowledge, or truth, is already there, waiting for us to
+discover it! The knowledge that this completely new land mass existed was new
+to the Europeans. It is in this sense that we talk about knowledge creation.
+<dfn id="def:knowledge_creation">Knowledge creation</dfn> is the process of
+discovering something that we, as a society, did not know about before, the
+acceptance of which has now reached critical mass, meaning that it has been
+tested sufficiently and is now generally accepted as truth.[^knowledge_creation]
+
+<figure id="fig:jefferson" class="bq grab">
+  <blockquote>
+    <p>
+      
+      That ideas should freely spread from one to another over the globe, for
+      the moral and mutual instruction of man, and improvement of his
+      condition, seems to have been peculiarly and benevolently designed by
+      nature, when she made them, like fire, expansible over all space, without
+      lessening their density at any point, and like the air in which we
+      breathe, move, and have our physical being, incapable of confinement or
+      exclusive appropriation.
+
+    </p>
+  </blockquote>
+  <figcaption>--- Thomas Jefferson</figcaption>
+</figure>
+
+True open access to knowledge requires that this knowledge creation process be
+open and transparent---visible for all to see and build upon.
+
+#### Knowledge on the World Wide Web
 
 The World Wide Web has spurred a world-wide collaboration of knowledge. Spirit
 of egalitarianism. Yet knowledge is put on the Web, but loses its context---its
@@ -441,6 +506,12 @@ past and its future. We can't keep taking stuff at face value.
 
   </figcaption>
 </figure>
+
+Citations are awkward on the Web. They don't fit the architecture. They get
+lost. They don't take advantage of the power of the Web. They are not a
+first-class citizen on the Web. They are an artifact carried over from the
+documents of the print paradigm. They're not good enough. Wikipedia has had to
+use several hacks to get cititions to not be totally of a nuisance!
 
 What would it look like if the [process of knowledge creation][mission] was
 modeled on the Web? What if you could look *inside* a given fact, and see how
@@ -503,14 +574,6 @@ stays there and doesn't get shared.
 Look at collaboration and openness as a positive thing, a way to do more good,
 more quickly. Trickle down economics.
 
-#### Asynchronous Research
-
-We don't just need an acceleration of science---we need a completely different
-paradigm.
-
-The questions don't change but the answers do
---- Dan Reed
-   
 ### Democratizing Research
 
 It wasn't too long ago that science was dominated by amateurs. Research was an
@@ -613,24 +676,8 @@ vocabularies and concepts if they're willing to put forth the effort.
 
 Just like the World Wide Web lets people of all skill levels participate in the
 [Web of Documents][web], true open access to knowledge needs to allow
-people---of all skill levels---to participate in the process of research.
-
-<figure id="fig:jefferson" class="bq grab">
-  <blockquote>
-    <p>
-      
-      That ideas should freely spread from on to another over the globe, for
-      the moral and mutual instruction of man, and improvement of his
-      condition, seems to have been peculiarly and benevolently designed by
-      nature, when she made them, like fire, expansible over all space, without
-      lessening their density at any point, and like the air in which we
-      breathe, move, and have our physical being, incapable of confinement or
-      exclusive appropriation.
-
-    </p>
-  </blockquote>
-  <figcaption>--- Thomas Jefferson</figcaption>
-</figure>
+people---of all skill levels---to participate in the process of knowledge
+creation.
 
 We live in a time of widespread intellectual affluence. Knowledge is available
 for free at your nearest Internet connection. We need researchers that are
@@ -695,37 +742,31 @@ id="q:amateurship"
 cite="https://en.wikipedia.org/wiki/Citizen_science#History">amateurship
 instead of money-biased technical bureaucrats</q>.'
 
-### Going Beyond Web 2.0
+### Determining Research Quality
 
-2. While wikis are being used successfully for collaborative, iterative
-   research dissemination in fields such as math, for many fields a wiki is not
-   enough. A [wiki](http://en.wikipedia.org/wiki/Wiki) deals primarily with
-   textual revisions and does not provide the structure to follow a research
-   conclusion back through the research process to the underlying data the
-   conclusion is based upon. Research semantics get lost, and
-   [citations are just not enough](/research/#p[RsbOsr],h[RsbOsr,3]).
-   We believe we have a solution to that problem.
+I am not of the opinion that amateurs should be given only academic drudgework,
+but that everyone should have the opportunity to meaningfully participate at
+every level of the knowledge creation process.
 
-Research is messy. Sometimes it just doesn't fit very well in a four page
-research paper. While there are some excellent examples of the use of wikis in
-research dissemination, such as
-[Scholarpedia](http://www.scholarpedia.org/){:.external} or
-[Wikiversity](http://en.wikiversity.org/){:.external}, wikis are still based on
-the research paper model. Collaboration occurs only during the writing of the
-paper, and not during the whole research process. 
+Yet we all vary in knowledge and skill levels. How can we ensure the quality of
+research outputs? We don't have any commonly accepted Authorities of
+Omniscience to ask to verify the accuracy of our research. Over the centuries,
+we have had to resort to our peers.
 
-Our approach is to build software around the
-[unit of research](/research/process/#unit). This gives research a natural
-structure that can be shared or developed in an understandable and
-collaborative way. This is an important distinction between
-[true research software](/research/#p[WtrHwt],h[WtrHwt,2,3]) and wikis. While
-it is possible to provide open access to a research paper and even to the
-underlying research data by placing it on the web, if we fail to show _how_
-they are connected, then we are failing to give people access to the research
-and thought processes behind those research outputs. We need the whole research
-[context] to really understand those research outputs.
+What is the purpose of vetting or peer review? Simply to have an established
+authority whose output we can depend on with some semblance of trust. Review is
+mainly a filtering mechanism! The goal was to exclude as many papers as
+possible so as to reduce the incremental costs of printing. This had the added
+benefit of reducing [information overload] for the consumer reader. On the
+other hand, peer review also helped good papers become better by giving
+criticism and editorial feedback to the authors.
 
-### Iterative Research
+{::comment}Also, researchers didn't publish because they had to for
+their grant, so they could continue surviving. They published when they had
+something valuable to say.  Imagine how much the publication volume of research
+papers would reduce if that principle was followed today!{:/comment}
+
+### Iterating Research
 
 For some research questions, that is a
 good way to go, but for most, 
@@ -766,8 +807,14 @@ sophisticated product. The researcher "develops" conclusions in a similar
 manner. That product may include a nicely written paper, but all the underlying
 research needs to be openly accessible as well.
 
-### A Highly Heterogeneous Composition
+#### Asynchronous Research
 
+We don't just need an acceleration of science---we need a completely different
+paradigm.
+
+The questions don't change but the answers do
+--- Dan Reed
+   
 ## Technological Foundations of Research Publication
 
 We live in a different time now than when Sir Isaac Newton was around---a time
@@ -959,41 +1006,6 @@ transitional, and that the future of research lies in open,
 
 [^utopia]: Such as [Utopia Documents](http://utopiadocs.com/).
 
-[^chaplin]: Charlie Chaplin, in his [autobiography], mentions a dinner at 
-    his home in <span class="oldstyle">1926</span>, during which Einstein's
-    second wife, Elsa, told him and two other friends about the time Einstein
-    conceived of the theory of relativity. She related:
-
-    > The Doctor \[Einstein\] came down in his dressing gown as usual for
-    > breakfast but he hardly touched a thing. I thought something was wrong,
-    > so I asked him what was troubling him. "Darling," he said, "I have a
-    > wonderful idea." And after drinking his coffee, he went to the piano and
-    > started playing. Now and again he would stop, making a few notes then
-    > report: "I've got a wonderful idea, a marvelous idea." I said: "Then for
-    > goodness sake tell me what it is, don't keep me in suspense." He said:
-    > "It's difficult, I still have to work it out."
-    >
-    > Mrs. Einstein told Mr. Chaplin that Einstein continued playing the piano
-    > and making notes for about half an hour, then went upstairs to his study,
-    > telling her that he did not wish to be disturbed, and he remained there
-    > for two weeks. "Each day I sent up his meals," she said, "and in the
-    > evening he would walk a little for exercise, then return to his work
-    > again."
-    >
-    > "Eventually," Mrs. Einstein said, "he came down from his study looking
-    > very pale." "That's it," he told me, wearily putting two sheets of paper
-    > on the table. And that was his theory of relativity.
-    {: .bq .grab }
-
-    He later referred to this as the happiest time of his
-    life.[^Einsteins_Dream]
-    
-[^Einsteins_Dream]: Parker, Barry. [Einstein's Dream: The Search for a Unified Theory of the Universe](http://books.google.com/books?id=GMZyB1bBpssC). Basic Books, 2008. ISBN: 9780465011858.
-
-[^violin_practicing]: While Einstein said this in particular about his love of
-    music and violin practice, the same applies to any skill that you are
-    pursuing.
-
 [^NIH]: This policy was passed as part of the
     <a href="http://thomas.loc.gov/cgi-bin/bdquery/z?d110:H.R.2764:">Consolidated Appropriations Act, <span class="oldstyle">2008</span></a>.
     The law requires that the paper be submitted to PubMed Central [no later
@@ -1137,6 +1149,61 @@ transitional, and that the future of research lies in open,
       </figcaption>
     </figure>
 
+[^dissemination]: To me the word *dissemination* evokes the image of a
+    researcher on an ivory tower, benevolently throwing out copies of his most
+    recent publication to the masses below. I don't like it inasmuch as it
+    focuses attention on the altitude of the researcher, rather than on the
+    research itself. I prefer more down-to-earth terms, such as *collaboration*
+    or *communication*.
+
+[^Vespucci]: To be completely fair, Columbus only discovered the [West Indies].
+    It was [Amerigo Vespucci] who discovered the continents which we know today
+    as North and South America.
+
+[^knowledge_creation]: For a more formal definition of knowledge creation, and
+    especially for the process that new knowledge takes as it becomes more
+    integrated into society, see Ikujiro Nonaka's paper, <a
+    href="http://www.jstor.org/stable/2635068"><cite>A Dynamic Theory
+    of Organizational Knowledge Creation</cite></a> (behind JSTOR's paywall, sorry!), and
+    <a href="http://www.palgrave-journals.com/kmrp/journal/v1/n1/full/8500001a.html">
+    <cite>The knowledge-creating theory revisited: knowledge creation as a
+    synthesizing process</cite></a> by Nonaka and Toyama.
+
+[^chaplin]: Charlie Chaplin, in his [autobiography], mentions a dinner at 
+    his home in <span class="oldstyle">1926</span>, during which Einstein's
+    second wife, Elsa, told him and two other friends about the time Einstein
+    conceived of the theory of relativity. She related:
+
+    > The Doctor \[Einstein\] came down in his dressing gown as usual for
+    > breakfast but he hardly touched a thing. I thought something was wrong,
+    > so I asked him what was troubling him. "Darling," he said, "I have a
+    > wonderful idea." And after drinking his coffee, he went to the piano and
+    > started playing. Now and again he would stop, making a few notes then
+    > report: "I've got a wonderful idea, a marvelous idea." I said: "Then for
+    > goodness sake tell me what it is, don't keep me in suspense." He said:
+    > "It's difficult, I still have to work it out."
+    >
+    > Mrs. Einstein told Mr. Chaplin that Einstein continued playing the piano
+    > and making notes for about half an hour, then went upstairs to his study,
+    > telling her that he did not wish to be disturbed, and he remained there
+    > for two weeks. "Each day I sent up his meals," she said, "and in the
+    > evening he would walk a little for exercise, then return to his work
+    > again."
+    >
+    > "Eventually," Mrs. Einstein said, "he came down from his study looking
+    > very pale." "That's it," he told me, wearily putting two sheets of paper
+    > on the table. And that was his theory of relativity.
+    {: .bq .grab }
+
+    He later referred to this as the happiest time of his
+    life.[^Einsteins_Dream]
+    
+[^Einsteins_Dream]: Parker, Barry. [Einstein's Dream: The Search for a Unified Theory of the Universe](http://books.google.com/books?id=GMZyB1bBpssC). Basic Books, 2008. ISBN: 9780465011858.
+
+[^violin_practicing]: While Einstein said this in particular about his love of
+    music and violin practice, the same applies to any skill that you are
+    pursuing.
+
 *[PDF]: Portable Document Format
 *[FRPAA]: Federal Research Public Access Act
 *[NIH]: National Institutes of Health
@@ -1222,7 +1289,9 @@ transitional, and that the future of research lies in open,
 [autobiography]: <http://books.google.com/books/about/My_Autobiography.html?id=31UyYJnDhJsC> "My Autobiography by Charlie Chaplin"
 [einstein]: <https://en.wikipedia.org/wiki/Albert_Einstein> "Albert Einstein on Wikipedia"
 [altmetrics]: <https://en.wikipedia.org/wiki/Altmetrics> "Altmetrics on Wikipedia"
-
+[New World]: <https://en.wikipedia.org/wiki/New_World> "The New World on Wikipedia"
+[Amerigo Vespucci]: <https://en.wikipedia.org/wiki/Amerigo_Vespucci "Amerigo Vespucci on Wikipedia"
+[West Indies]: <https://en.wikipedia.org/wiki/West_Indies> "West Indies on Wikipedia"
 
 <% content_for :javascripts do %>
 <script>
