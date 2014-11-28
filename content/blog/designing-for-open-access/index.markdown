@@ -110,11 +110,11 @@ Each page was a work of art, and required careful planning.
 
     <span property="schema:description"><b property="schema:name dc:title">A
     Gutenberg-style printing press</b>, located in the town of Ferney-Voltaire,
-    France. Printing presses like these revolutionized mass communication.</span>
-    Licensed under a <a
+    France. Printing presses like these made the mass dissemination of
+    knowledge possible.</span> Licensed under a <a
     href="http://creativecommons.org/licenses/by/4.0/"><abbr title="Creative
-    Commons Attribution 4.0 International">CC-BY</abbr> license</a>.
-    <span class="icon-cc"></span><span class="icon-cc-by"></span>
+    Commons Attribution 4.0 International">CC-BY</abbr> license</a>. <span
+    class="icon-cc"></span><span class="icon-cc-by"></span>
 
   </figcaption>
   <link property="rdfa:copy" href="#license" />
