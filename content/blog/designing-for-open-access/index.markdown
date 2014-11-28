@@ -365,7 +365,7 @@ Foundation]{:.external} to bring researchers together in a race for a cure.
 *Isn't this what [collaboration] is all about?* We need more people of all
 types involved in research.
 
-## Designing for True Open Access to Knowledge
+## Designing True Open Access to Knowledge
 
 While open access to research journals is a great step, it does not solve the
 fundamental problem of open access to knowledge. In a way, it's a hack on top
@@ -375,7 +375,7 @@ research papers](#sec:the-modern-open-access-movement)---it means open access
 to raw, unadulterated *knowledge*. The scholarly paper is just a *format* for
 the dissemination[^dissemination] of knowledge. Even if we have access to the
 papers, we still have a problem. We still have to manually and mentally extract
-that knowledge from the paper. Our brains become the bottleneck, and we spend a
+that knowledge from each paper. Our brains become the bottleneck and we spend a
 lot of time trying to crack open nuts. So what would true open access to
 knowledge look like? I have listed five general principles below that would
 really [open up our access to the knowledge of the world][mission].
@@ -440,17 +440,20 @@ past and its future. We can't keep taking stuff at face value.
   </figcaption>
 </figure>
 
-Citations are awkward on the Web. They don't fit the architecture. They get
-lost. They don't take advantage of the power of the Web. They are not a
-first-class citizen on the Web. They are an artifact carried over from the
-documents of the print paradigm. They're not good enough. Wikipedia has had to
-use several hacks to get cititions to not be totally of a nuisance!
+Yet some of the artifacts of traditional knowledge creation, namely citations
+and peer review, are not first-class citizens on the Web. In fact, imposing
+citations on documents on the web is fairly awkward, and feels like a hack.
+Citations are an artifact carried over from the documents of the print
+paradigm. They don't fit the Web architecture or take advantage of the power of
+the Web. Not only that, but once they are there, it is all too easy to lose
+them. Since the [W3C's vision for the Web][w3c_vision] involves 'participation,
+sharing knowledge, and thereby building trust on a global scale,' doesn't it
+seem weird that there is no inherent mechanism to track knowledge *creation*?
 
-What would it look like if the [process of knowledge creation][mission] was
-modeled on the Web? What if you could look *inside* a given fact, and see how
-it came into existence?
 
-Just like the World Wide Web, research must be open and democratized. 
+What would it look like if the process of knowledge creation was modeled on the
+Web? What if you could look *inside* a given fact, and see how it came into
+existence? And then support it with addition arguments or challenge it?
 
 #### Publications as Silos
 
@@ -1164,9 +1167,10 @@ transitional, and that the future of research lies in open,
 [^knowledge_creation]: For a more formal definition of knowledge creation, and
     especially for the process that new knowledge takes as it becomes more
     integrated into society, see Ikujiro Nonaka's paper, <a
-    href="http://www.jstor.org/stable/2635068"><cite>A Dynamic Theory
-    of Organizational Knowledge Creation</cite></a> (behind JSTOR's paywall, sorry!), and
-    <a href="http://www.palgrave-journals.com/kmrp/journal/v1/n1/full/8500001a.html">
+    href="http://www.jstor.org/stable/2635068"><cite>A Dynamic Theory of
+    Organizational Knowledge Creation</cite></a> (behind <abbr>JSTOR</abbr>'s
+    paywall, sorry!), and <a
+    href="http://www.palgrave-journals.com/kmrp/journal/v1/n1/full/8500001a.html">
     <cite>The knowledge-creating theory revisited: knowledge creation as a
     synthesizing process</cite></a> by Nonaka and Toyama.
 
@@ -1219,6 +1223,7 @@ transitional, and that the future of research lies in open,
 *[DOI]: Digital Object Identifier
 *[DARPA]: Defence Advanced Research Projects Agency
 *[NASA]: National Aeronautics and Space Administration
+*[W3C]: World Wide Web Consortium
 
 [clarity]: </research/#sec:clarity> "The Future of Research: Clarity"
 [context]: </research/#sec:context> "The Future of Research: Context"
@@ -1293,6 +1298,7 @@ transitional, and that the future of research lies in open,
 [New World]: <https://en.wikipedia.org/wiki/New_World> "The New World on Wikipedia"
 [Amerigo Vespucci]: <https://en.wikipedia.org/wiki/Amerigo_Vespucci "Amerigo Vespucci on Wikipedia"
 [West Indies]: <https://en.wikipedia.org/wiki/West_Indies> "West Indies on Wikipedia"
+[w3c_vision]: <http://www.w3.org/Consortium/mission.html#vision>
 
 <% content_for :javascripts do %>
 <script>
