@@ -925,11 +925,13 @@ transitional, and that the future of research lies in open,
 {: .conclusion }
 
 ## End Notes
+{:.no_toc}
 
 1. Footnotes
 {:footnotes}
 
 ## Additional Resources
+{:.no_toc}
 
 * Febvre, Lucien and Martin, Henri-Jean. [The Coming of the Book: The Impact of Printing 1450--1800][febvre]{:.external}
 * Eisenstein, Elizabeth. [The Printing Press as an Agent of Change][press_agent]{:.external}.
