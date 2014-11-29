@@ -671,7 +671,7 @@ competitive advantage. Governments also began to employ researchers for
 competitive advantage in warfare.[^manhattan-project] After World War <span
 class="roman">II</span>, the National Science Foundation was established in the
 US to unify the nation's efforts in scientific progress. In Europe, research
-was supported at the national level, and since <span
+began to be supported at the national level, and since <span
 class="oldstyle">1984</span> at the EU level with the [Framework Programmes].
 
 Isn't this progress? I'm not so sure. It's all too easy for political
@@ -681,13 +681,14 @@ cite="https://en.wikipedia.org/wiki/Eisenhower%27s_farewell_address">prospect
 of domination of the nation's scholars by Federal employment, project
 allocation, and the power of money<q>.' When the prevailing culture is *publish
 or perish*, the temptation is great to cater to the fashionable, rather than to
-follow dreams to explore uncharted territories.  The chance of discovering
+follow dreams to explore uncharted territories. The chance of discovering
 spectacular vistas have to be balanced with the risk of not winning that grant.
 The natural instinct to survive is strong and focuses achievements inward,
 instead of what the true motivation of scientific research should be: an
-outward expression of love for mankind and the world in which we live. Instead,
-researchers are forced to push research forward relentlessly, all the time
-pushing other researchers down in a selfish scramble to survive.
+outward expression of love for mankind and the world in which we live, or at
+least a passionate desire to *know*. Instead, researchers are forced to push
+research forward relentlessly, all the time pushing other researchers down in a
+selfish scramble to survive.
 
 <figure id="quote:institutionalization_chargaff" resource="#institutionalization_of_science" class="bq grab">
   <blockquote>
@@ -791,15 +792,17 @@ without hidden agendas or selfish motivations.
   </figcaption>
 </figure>
 
-It was while Albert Einstein worked full-time as an examiner at a patent office
-that he published his radical [four papers][miracle year] that would change our
-understanding of space, time, and matter. According to his wife Elsa, a few
-years later '<q cite="https://en.wikipedia.org/wiki/Albert_Einstein">[d]uring
-breakfast on morning, \[Einstein\] seemed lost in thought and ignored his food.
-[I] asked him if something was bothering him. He sat down at the piano and
-started playing. He continued playing and writing notes for half an hour, then
-went upstairs to his study, where he remained for two weeks, with [me] bringing
-up his food. At the end of the two weeks he came downstairs with two sheets of
+It was in <span class="oldstyle">1905</span>, while Albert Einstein worked
+full-time as an examiner at a patent office, that he published [four
+papers][miracle year], including his papers on [special relativity] and
+[mass-energy equivalence], that would change our understanding of space, time,
+and matter. A few years passed. According to his wife Elsa, '<q
+cite="https://en.wikipedia.org/wiki/Albert_Einstein">[d]uring breakfast on
+morning, \[Einstein\] seemed lost in thought and ignored his food. [I] asked
+him if something was bothering him. He sat down at the piano and started
+playing. He continued playing and writing notes for half an hour, then went
+upstairs to his study, where he remained for two weeks, with [me] bringing up
+his food. At the end of the two weeks he came downstairs with two sheets of
 paper bearing his theory [of general relativity].</q>'[^chaplin]
 
 What if Einstein had waited for a federal grant before starting on this work?
@@ -1295,6 +1298,8 @@ transitional, and that the future of research lies in open,
 [miracle year]: <https://en.wikipedia.org/wiki/Annus_Mirabilis_papers> "Annus Mirabilis papers on Wikipedia"
 [autobiography]: <http://books.google.com/books/about/My_Autobiography.html?id=31UyYJnDhJsC> "My Autobiography by Charlie Chaplin"
 [einstein]: <https://en.wikipedia.org/wiki/Albert_Einstein> "Albert Einstein on Wikipedia"
+[special relativity]: <https://en.wikipedia.org/wiki/Special_relativity> "Special Relativity on Wikipedia"
+[mass-energy equivalence]: <https://en.wikipedia.org/wiki/Mass%E2%80%93energy_equivalence> "Mass-energy equivalence on Wikipedia"
 [altmetrics]: <https://en.wikipedia.org/wiki/Altmetrics> "Altmetrics on Wikipedia"
 [New World]: <https://en.wikipedia.org/wiki/New_World> "The New World on Wikipedia"
 [Amerigo Vespucci]: <https://en.wikipedia.org/wiki/Amerigo_Vespucci "Amerigo Vespucci on Wikipedia"
