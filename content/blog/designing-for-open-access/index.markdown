@@ -483,7 +483,7 @@ that there is no inherent mechanism to track knowledge *creation*?
 
 What would it look like if the process of knowledge creation was modeled on the
 Web? What if you could look *inside* a given fact, and see how it came into
-existence? And then support it with addition arguments or challenge it? Maybe
+existence? And then support it with additional arguments or challenge it? Maybe
 the best way to describe open knowledge is to start with why current
 technologies are not open knowledge.
 
