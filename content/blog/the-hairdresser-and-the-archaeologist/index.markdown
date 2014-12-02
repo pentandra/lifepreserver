@@ -11,6 +11,7 @@ tags:
   - Connections
   - Holism
   - Opinionated
+  - Citizen Science
 ---
 
 <figure about="<%= url_for(@item) %>Julia-domna.jpg" class="aside img">

@@ -1,4 +1,5 @@
-# from this thread: http://groups.google.com/group/nanoc/browse_thread/thread/caefcab791fd3c4b
+require 'sparql/client'
+require 'yaml'
 
 module Nanoc::Helpers
 
@@ -6,7 +7,13 @@ module Nanoc::Helpers
 
     require 'set'
 
-    SEMANTIC_TAGS = Hash[File.read('semantic_tags').split("\n").map { |i| i.split(': ')}] unless defined?(SEMANTIC_TAGS)
+    SEMANTIC_TAGS = YAML.load_file('data/tag_data.yaml') unless defined?(SEMANTIC_TAGS)
+
+    def semantic_tag?(tag)
+      SEMANTIC_TAGS.has_key?(tag)
+    end
+
+    # from this thread: http://groups.google.com/group/nanoc/browse_thread/thread/caefcab791fd3c4b
 
     # Returns all the tags present in a collection of items.
     # There are no duplicates (because this is a set).
@@ -79,10 +86,8 @@ module Nanoc::Helpers
     # Overrides Nanoc::Helpers::Tagging#link_for_tag, adding support for
     # multi-word tags.
     def link_for_tag(tag, base_url)
-      semantic_tag = SEMANTIC_TAGS[tag]
-
-      if semantic_tag
-        %[<a href="#{h base_url}#{h tag.to_slug}/" rel="tag ctag:means" typeof="ctag:AuthorTag" resource="#{h semantic_tag}" property="ctag:label">#{h tag}</a>]
+      if semantic_tag?(tag)
+        %[<a href="#{h base_url}#{h tag.to_slug}/" rel="tag ctag:means" typeof="ctag:AuthorTag" resource="#{h SEMANTIC_TAGS[tag]["uri"]}" property="ctag:label">#{h tag}</a>]
       else
         %[<a href="#{h base_url}#{h tag.to_slug}/" rel="tag">#{h tag}</a>]
       end

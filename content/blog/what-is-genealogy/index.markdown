@@ -86,6 +86,46 @@ danger because of technologies like these that oversimplify the research
 process. This software-for-the-masses approach has watered down genealogy into
 a quest to fill in slots on a pedigree chart.[^motivations] There must be a better way.
 
+## Why Genealogy?
+
+So where does genealogy fit in all this?
+
+To do genealogy right, we need to reconstruct the world of those past. As such,
+we see genealogy, or as we would call it, [generational history][gen_hist], as
+the ultimate meta-domain---it's the study of the entirety of mankind,
+individually and collectively.
+
+Vapor is the only thing holding up many of these conclusions.
+
+In many research fields, researchers advance their careers through journal
+publication. Many of these journals are "held hostage" by some of the big
+publishers, including Elsevier, Wiley, and Springer. However, genealogists do
+not suffer with this blight. There are a few high-quality journals published in
+the field, including the [National Genealogical Society
+Quarterly][NGSQ]{:.external} and [The Genealogist][TG]{:.external}. These
+journals are published by genealogical societies or through universities, and
+the peer-review process handled by the society. While the journals are highly
+regarded, journal publications are not the primary path for career advancement
+in genealogy. Most career advancement is done through private client research
+and word-of-mouth.
+
+Genealogy has traditionally been looked on as history's red-headed stepchild.
+This is due in part to the large number of amateur researchers, and in part to
+misunderstandings as to what good genealogical research looks like. But it has
+become a very rigorous, multifaceted research field, the output of which other
+fields grow increasingly dependent on.
+
+We are starting with genealogy, first of all, because genealogists are looking
+for more efficient and robust ways to collaborate and disseminate their
+research. Their are fewer barriers for us to overcome because we don't have to
+compete with a deeply entrenched, highly expensive journal as the primary means
+for career advancement. We also view genealogy as a highly engaging research
+field. I mean who doesn't care about the past and how their ancestors were
+affected by it or how their ancestors affected the past? Our approach is not so
+much about family trees (there are plenty of companies that do that), but it
+could be called micro-history or generational history research (for more info
+about that see [Geungle](/products/#geungle)).
+
 ## What's needed?
 
 Like most things in life, a combination of things must happen to make

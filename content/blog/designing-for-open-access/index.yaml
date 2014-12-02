@@ -1,9 +1,9 @@
 ---
 title: Designing For Open Access
-description: What does open access mean to us?
+description: What does open access mean to us? And how do we design for it?
 meta_description: >
-  A post describing what open access means to us, and how we design systems
-  to support it.
+  A post describing what open access means to us, and our approach to designing
+  systems from the bottom up that open access to knowledge.
 kind: article
 author_name: Chris Chapman
 created_at: 2014-10-24
@@ -11,8 +11,11 @@ updated_at: 2014-10-24
 published: false
 tags:
   - Open Access
+  - Open Research
   - Opinionated
-  - Genealogy
   - Essay
+  - Connections
+  - Citizen Science
+  - W3C
 has_media: true
 ---

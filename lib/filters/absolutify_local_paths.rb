@@ -18,7 +18,7 @@ module Nanoc::Filters
       # Parse
       doc = Nokogiri::HTML.fragment(content)
 
-      # Find all hyperlinks
+      # Find all src and href attributes
       doc.xpath("descendant::*[@src]", "descendant::*[@href]").each do |element|
         targetAttribute = element.matches?("a") ? "href" : "src"
           
