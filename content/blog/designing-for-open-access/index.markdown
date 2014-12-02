@@ -58,6 +58,10 @@ to solve the problem of [access to knowledge][mission].
 
 ### The Middle Ages
 
+The Middle Ages (<span class="oldstyle">5</span>th to <span
+class="oldstyle">15</span>th centuries) was a period of great intellectual
+activity.
+
 Few books, and those that were in existence were located in monasteries. They
 were not open to the public. Illiteracy was widespread, but even beyond that,
 books were normally written in [Latin], a language that the common people did
@@ -100,7 +104,30 @@ Each page was a work of art, and required careful planning.
   </figcaption>
 </figure>
 
+#### Access to Knowledge
+
+<figure id="fig:galileo" class="bq grab">
+  <blockquote>
+    <p>
+
+      The <em>leitmotif</em> that I recognize in Galileo's work is the
+      passionate fight against any kind of dogma based on authority. Only
+      experience and careful reflection are accepted by him as criteria of
+      truth. Nowadays it is hard for us to grasp how sinister and revolutionary
+      such an attitude appeared at Galileo's time, when merely to doubt the
+      truth of opinions which had no basis but authority was considered a
+      capital crime and punished accordingly.
+
+    </p>
+  </blockquote>
+  <figcaption>--- Albert Einstein, forward to Galileo's <cite>Dialogue
+  Concerning the Two Chief World Systems, Ptolemaic and Copernican</cite>,
+  reprinted in <span class="oldstyle">1953</span>.</figcaption>
+</figure>
+
 ### The Early Modern Period
+
+#### The Work of One (or a few) for the Many
 
 <figure id="fig:printing-press" class="img" property="schema:image" resource="#printing_press" typeof="schema:ImageObject">
   <a property="schema:contentUrl" href="printing_press.jpg">
@@ -109,9 +136,10 @@ Each page was a work of art, and required careful planning.
   <figcaption class="small">
 
     <span property="schema:description"><b property="schema:name dc:title">A
-    Gutenberg-style printing press</b>, located in the town of Ferney-Voltaire,
-    France. Printing presses like these made the mass dissemination of
-    knowledge possible.</span> Licensed under a <a
+    Gutenberg-style printing press</b>, inside the Book Workshop of La Maison
+    Fusier, located in the town of Ferney-Voltaire, France. Printing presses
+    like these made the mass dissemination of knowledge possible.</span>
+    Licensed under a <a
     href="http://creativecommons.org/licenses/by/4.0/"><abbr title="Creative
     Commons Attribution 4.0 International">CC-BY</abbr> license</a>. <span
     class="icon-cc"></span><span class="icon-cc-by"></span>
@@ -372,8 +400,9 @@ fundamental problem of open access to knowledge. In a way, it's a hack on top
 of the paper publication paradigm. The same goes for [altmetrics] as it stands
 right now. True open access, to us, means more than [just open access to these
 research papers](#sec:the-modern-open-access-movement)---it means open access
-to raw, unadulterated *knowledge*. The scholarly paper is just a *format* for
-the dissemination[^dissemination] of knowledge. Even if we have access to the
+to raw, unadulterated knowledge, which must include access to the
+*knowledge-creation process*. The scholarly paper is just a *format* for the
+dissemination[^dissemination] of knowledge. Even if we have access to the
 papers, we still have a problem. We still have to manually and mentally extract
 that knowledge from each paper. Our brains become the bottleneck and we spend a
 lot of time trying to crack open nuts. So what would true open access to
@@ -454,7 +483,9 @@ that there is no inherent mechanism to track knowledge *creation*?
 
 What would it look like if the process of knowledge creation was modeled on the
 Web? What if you could look *inside* a given fact, and see how it came into
-existence? And then support it with addition arguments or challenge it?
+existence? And then support it with addition arguments or challenge it? Maybe
+the best way to describe open knowledge is to start with why current
+technologies are not open knowledge.
 
 #### Publications as Silos
 
@@ -522,7 +553,9 @@ paper publication paradigm. When all you have is a monolithic paper at the end,
 been the source of countless scientific squabbles. All to often, it's the
 researcher with the most power in an organization who ends up higher up in the
 list of authors of a research paper, not the one that actually did the most
-work!
+work! In fact, David Colquhoun has mentioned that he has 'come across cases
+where authors had not even read papers on which their name
+appears.'[^colquhoun]
 
 True open access to knowledge needs to be very fine-grained, so you know exactly
 who did what. Transparency is the important factor here, not so much for
@@ -531,7 +564,7 @@ traceability. In general, I don't believe in the *[lone genius]*. Great
 breakthroughs in knowledge are almost always very incremental, and are built
 upon the thoughts of many predecessors. To teach anything else disregards the
 context in which a discovery was made. I subscribe more to the theory of
-[multiple discovery]---<q
+*[multiple discovery]*---<q
 cite="http://en.wikipedia.org/wiki/Multiple_discovery">that most scientific
 discoveries and inventions are made independently and more or less
 simultaneously by multiple scientists and inventors</q>.
@@ -549,35 +582,38 @@ simultaneously by multiple scientists and inventors</q>.
   class="external">Farkas Bolyai</a>, to his son <a href="http://en.wikipedia.org/wiki/J%C3%A1nos_Bolyai" class="external">János</a>, urging him to publish his theory of non-Euclidiean geometry without delay.</figcaption>
 </figure>
 
+The point is that attribution, or credit, should take care of itself if the
+process of knowledge creation is transparent. Like minds should to be able to
+work together, focusing on what they are trying to achieve without worrying
+unduly about credit management.
+
 #### A Highly Heterogeneous Composition
 
-While wikis are being used successfully for collaborative, iterative research
-dissemination in fields such as math, for many fields a wiki is not enough. A
-[wiki](http://en.wikipedia.org/wiki/Wiki) deals primarily with textual
-revisions and does not provide the structure to follow a research conclusion
-back through the research process to the underlying data the conclusion is
-based upon. Research semantics get lost, and [citations are just not
-enough](/research/#p[RsbOsr],h[RsbOsr,3]).  We believe we have a solution to
-that problem.
-
-Research is messy. Sometimes it just doesn't fit very well in a four page
-research paper. While there are some excellent examples of the use of wikis in
-research dissemination, such as
+Research is messy. Sometimes it just doesn't fit very well in a four- or
+eight-page research paper. While there are some excellent examples of the use
+of [wikis][wiki] in research, such as
 [Scholarpedia](http://www.scholarpedia.org/){:.external} or
 [Wikiversity](http://en.wikiversity.org/){:.external}, wikis are still based on
-the research paper model. Collaboration occurs only during the writing of the
-paper, and not during the whole research process. 
+the research paper model. Transparent collaboration occurs only during the
+writing of the paper, and not throughout the entire research process. For most
+fields this is not enough. Wikis are built on textual revisions and do not
+provide the structure to follow a research conclusion back through the research
+process to the underlying data and analyses the conclusion is based upon.
+Research semantics get lost, and [citations are just not
+enough](/research/#p[RsbOsr],h[RsbOsr,3]).
 
-Our approach is to build software around the
-[unit of research](/research/process/#unit). This gives research a natural
-structure that can be shared or developed in an understandable and
-collaborative way. This is an important distinction between
-[true research software](/research/#p[WtrHwt],h[WtrHwt,2,3]) and wikis. While
-it is possible to provide open access to a research paper and even to the
-underlying research data by placing it on the web, if we fail to show _how_
-they are connected, then we are failing to give people access to the research
-and thought processes behind those research outputs. We need the whole research
-[context] to really understand those research outputs.
+
+Open access to the knowledge-creation process needs to be built around the
+[unit of research](/research/process/#unit). This gives research outputs a
+natural structure that can be developed in a simple and understandable way.
+These research outputs can then be shared or composed together in various
+collaborative ways. This is an important distinction between [true research
+software](/research/#p[WtrHwt],h[WtrHwt,2,3]) and wikis. While it is possible
+to provide open access to a research paper and even to the underlying research
+data, if we fail to show _how_ they are connected, then we are failing to give
+people access to the research and thought processes behind those research
+outputs. We need the whole [research context][context] to really understand
+those research outputs.
 
 ### Iterating Research
 
@@ -620,7 +656,9 @@ sophisticated product. The researcher "develops" conclusions in a similar
 manner. That product may include a nicely written paper, but all the underlying
 research needs to be openly accessible as well.
 
-#### Asynchronous Research
+#### The Work of Many for the Many
+
+Async research.
 
 We don't just need an acceleration of science---we need a completely different
 paradigm.
@@ -647,10 +685,41 @@ benefit of reducing [information overload] for the consumer reader. On the
 other hand, peer review also helped good papers become better by giving
 criticism and editorial feedback to the authors.
 
-{::comment}Also, researchers didn't publish because they had to for
-their grant, so they could continue surviving. They published when they had
-something valuable to say.  Imagine how much the publication volume of research
-papers would reduce if that principle was followed today!{:/comment}
+Also, researchers didn't publish because they had to for their grant, so they
+could continue surviving. They published when they had something valuable to
+say. Imagine how much the publication volume of research papers would reduce if
+that principle was followed today!
+
+Peer review Separating [impact] from technical validity.
+
+Yet the answers to peer review lie in the foundations of the Web.
+
+#### Forecasting Research Impact
+
+Publishers are notoriously bad at predicting research impact. 
+
+#### Judging Technical Validity
+
+Peer review is as [domain-specific] as research itself. In fact, isn't peer
+review a form of research? The reviewer has a different motivation---to play
+the part of devil's advocate, hypercritically looking for logical fallacies or
+other misrepresentations.
+
+Reviews include the vocabulary of the domain. Not only does the criteria, but
+the importance of review varies by domain. While we need a general,
+domain-agnostic way to share and build on each others' research, the peer
+review of the future cannot be one-size-fits all. Researchers are
+domain-specific as well, so this should work.
+
+Peer review is a process too, and should be transparent. Questions that are
+raised during research should be modeled in the same way as research is. If the
+questions are answered during the course of the review by the research under
+review, that is good. If questions remain open, that is a sign of either a
+problem with the technical correctness of the research, or a future research
+direction.
+
+Value in the anonymity of the review may necessitate review attributions to
+remain hidden, locked away in individual silos. 
 
 ### Democratizing Research
 
@@ -686,9 +755,9 @@ spectacular vistas have to be balanced with the risk of not winning that grant.
 The natural instinct to survive is strong and focuses achievements inward,
 instead of what the true motivation of scientific research should be: an
 outward expression of love for mankind and the world in which we live, or at
-least a passionate desire to *know*. Instead, researchers are forced to push
-research forward relentlessly, all the time pushing other researchers down in a
-selfish scramble to survive.
+least a passionate desire to *know* how our world works. Instead, researchers
+are forced to push research forward relentlessly, all the time pushing other
+researchers down in a selfish scramble to survive.
 
 <figure id="quote:institutionalization_chargaff" resource="#institutionalization_of_science" class="bq grab">
   <blockquote>
@@ -739,7 +808,9 @@ fingertips. Even government censoring cannot stop the flow of it. There is no
 excuse to try to keep people from learning so as only to prove your own
 intellectual superiority. The dynamics of the knowledge industry are changing,
 and we need to start working together as a team. Any concept can be explained
-simply if enough thought is put into it. Truth is simple. Knowledge is not the
+simply if enough thought is put into it. I think it actually requires *more*
+skill to explain complicated things in a simple way, relating in such a way
+that a broad audience can understand. Truth is simple. Knowledge is not the
 exclusive property of the professional intellectualist. The *real* power comes
 in teaching and sharing---in collaboration---where, like a good choir or
 orchestra, the whole is greater than the sum of the parts.
@@ -750,6 +821,10 @@ technical concepts in a given domain or discipline. Yet, as we learned from
 [Jack Andraka](#sec:some-good-examples), anyone can understand complicated
 vocabularies and concepts if they're willing to put forth the effort.
 [Wikipedia] anyone?
+
+#### A Middle Ground
+
+
 
 #### Little Research
 
@@ -920,8 +995,8 @@ our jobs, lives, and nations.
 We, at Pentandra, are committed to designing research software from the ground
 up with open access in mind. While there are some exciting advancements in
 current research software,[^utopia] we think that these improvements are
-transitional, and that the future of research lies in open,
-[domain-specific](/research/#p[WtrHwt],h[WtrHwt,2]) research systems.
+transitional, and that the future of research lies in open, [domain-specific]
+research systems.
 {: .conclusion }
 
 ## End Notes
@@ -1215,6 +1290,8 @@ transitional, and that the future of research lies in open,
     music and violin practice, the same applies to any skill that you are
     pursuing.
 
+[^colquhoun]: <http://www.michaeleisen.org/blog/?p=694#comment-359363>
+
 *[PDF]: Portable Document Format
 *[FRPAA]: Federal Research Public Access Act
 *[NIH]: National Institutes of Health
@@ -1230,6 +1307,7 @@ transitional, and that the future of research lies in open,
 *[DARPA]: Defence Advanced Research Projects Agency
 *[NASA]: National Aeronautics and Space Administration
 *[W3C]: World Wide Web Consortium
+*[ISBN]: International Standard Book Number
 
 [clarity]: </research/#sec:clarity> "The Future of Research: Clarity"
 [context]: </research/#sec:context> "The Future of Research: Context"
@@ -1307,6 +1385,8 @@ transitional, and that the future of research lies in open,
 [Amerigo Vespucci]: <https://en.wikipedia.org/wiki/Amerigo_Vespucci "Amerigo Vespucci on Wikipedia"
 [West Indies]: <https://en.wikipedia.org/wiki/West_Indies> "West Indies on Wikipedia"
 [w3c_vision]: <http://www.w3.org/Consortium/mission.html#vision>
+[wiki]: <http://en.wikipedia.org/wiki/Wiki> "Wiki on Wikipedia"
+[domain-specific]: </research/#p[WtrHwt],h[WtrHwt,2]> "The Future of Research > To be most effective, research software must be domain specific"
 
 <% content_for :javascripts do %>
 <script>
