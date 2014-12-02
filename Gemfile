@@ -5,7 +5,7 @@ gem 'compass', '~>0.12' # for advanced CSS
 gem 'haml' # for layouts with clean sources
 gem 'kramdown' # for advanced markdown
 gem 'nanoc' # for compiling the site
-gem 'nokogiri' # for parsing HTML
+gem 'nokogiri', '1.6.3.1' # for parsing HTML
 gem 'rainpress' # for compact CSS
 gem 'uglifier' # for compact javascript
 gem 'html5small'
@@ -25,6 +25,8 @@ gem 'jwt', '~> 0.1'
 gem 'rest-client', '~> 1.6'
 gem 'addressable'
 gem 'rubypants-unicode'
+gem 'rdf'
+gem 'sparql-client'
 
 group :development do
   gem 'guard-nanoc'
