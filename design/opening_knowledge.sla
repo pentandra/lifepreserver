@@ -227,7 +227,7 @@
             <ITEXT CPARENT="Level 3 Titles" FONT="Lato Heavy" FCOLOR="Pentandra Brown" CH="Iterating Research"/>
             <para/>
             <para/>
-            <ITEXT FONT="Lato Semibold" FONTSIZE="32" CH="Research, by nature, is iterative. It’s very uncommon to come to a correct conclusion to any sophisticated research question in one fell swoop. Yet the research paper model promotes the idea that the research needs to be completely finished before it can be published. It doesn’t have to be this way!"/>
+            <ITEXT FONT="Lato Semibold" FONTSIZE="32" CH="Research, by nature, is iterative. It’s very uncommon to come to a correct conclusion to any sophisticated research question in one fell swoop. Yet the research paper model promotes the idea that the research needs to be completely ﬁnished before it can be published. It doesn’t have to be this way!"/>
             <para/>
             <para/>
             <ITEXT FONT="Lato Semibold" FONTSIZE="32" CH="Software is not research, but the underlying development processes are very similar. The developer will piece little bits of functionality together until, eventually, he will arrive at a sophisticated product. The researcher develops conclusions in a similar manner. That product may include a nicely written paper, but all the underlying research needs to be openly  accessible as well."/>
@@ -238,7 +238,7 @@
             <ITEXT CPARENT="Level 3 Titles" FONT="Lato Heavy" FCOLOR="Pentandra Brown" CH="Attribution—Not Authorship"/>
             <para/>
             <para/>
-            <ITEXT FONT="Lato Semibold" CH="We need to focus more on attribution, not on authorship. We’re researchers first, not authors, aren’t we? We want to know who did the research! True open access to knowledge needs to be very fine-grained so we can know exactly who did what. Transparency is the important factor here, not so much for personal aggrandizement or scientific priority, but for accountability and traceability."/>
+            <ITEXT FONT="Lato Semibold" CH="We need to focus more on attribution, not on authorship. We’re researchers ﬁrst, not authors, aren’t we? We want to know who did the research! True open access to knowledge needs to be very ﬁne-grained so we can know exactly who did what. Transparency is the important factor here, not so much for self-aggrandizement or scientific priority, but for accountability and traceability."/>
             <trail/>
             <PageItemAttributes/>
         </PAGEOBJECT>
@@ -250,7 +250,7 @@
             <ITEXT CPARENT="Level 3 Titles" FONT="Lato Heavy" FCOLOR="Pentandra Brown" CH="A New Paradigm"/>
             <para LINESPMode="2"/>
             <para/>
-            <ITEXT FONT="Lato Semibold" CH="Open access to research journals is a great step, but does not solve the fundamental problem of open access to knowledge. We live in a time of widespread intellectual affluence. Knowledge is available for free at your nearest Internet connection. Yet true open access to knowledge must include access to the "/>
+            <ITEXT FONT="Lato Semibold" CH="Open access to research journals is a great step, but does not solve the fundamental problem of open access to knowledge. We live in a time of widespread intellectual aﬄuence. Knowledge is available for free at your nearest Internet connection. Yet true open access to knowledge must include access to the "/>
             <ITEXT FONT="Lato Semibold Italic" CH="knowledge-creation process"/>
             <ITEXT FONT="Lato Semibold" CH=", so that the foundations of knowledge can be visible for all to see and build upon."/>
             <trail/>
@@ -285,7 +285,7 @@
             <ITEXT FONT="Lato Semibold" CH="The dynamics of the knowledge industry are changing, and we need to start working together as a team. Any concept can be explained simply if enough thought is put into it. Truth is simple. Knowledge is not the exclusive property of the professional intellectualist. The real power comes in teaching and sharing—in collaboration—where the whole is greater than the sum of the parts. "/>
             <para/>
             <para/>
-            <ITEXT FONT="Lato Semibold" CH="Just like the World Wide Web lets people of all skill levels participate in the Web of documents, true open access to knowledge needs to allow people—of all skill levels—to participate in the process of knowledge creation. Research must be brought back down to its roots, the avocation of the inspired and impassioned."/>
+            <ITEXT FONT="Lato Semibold" CH="Just like the World Wide Web lets people of all skill levels participate in the Web of documents, true open access to knowledge needs to allow people—of all skill levels—to participate in the process of knowledge creation. Research must be brought back down to its roots—the avocation of the inspired and impassioned."/>
             <trail/>
             <PageItemAttributes/>
         </PAGEOBJECT>
@@ -313,7 +313,7 @@
             <para/>
             <ITEXT FONT="Lato Semibold" FCOLOR="Pentandra Brown" CH="Pentandra Research Solutions, Inc. "/>
             <para/>
-            <ITEXT FONT="Lato Semibold" FCOLOR="Pentandra Brown" CH="You can find us at "/>
+            <ITEXT FONT="Lato Semibold" FCOLOR="Pentandra Brown" CH="You can ﬁnd us at "/>
             <ITEXT FONT="Lato Heavy" FCOLOR="Pentandra Brown" CH="http://pentandra.com"/>
             <ITEXT FONT="Lato Semibold" FCOLOR="Pentandra Brown" CH="."/>
             <trail/>
