@@ -26,7 +26,7 @@ First, much of the research that is being done at CERN is to increase our
 understanding of what I would call _inner space_, or, the atom. When I think of
 outer space, I think of NASA; when I think of inner space, I think of CERN.
 Much of our work as a company is to understand and model the [fundamental unit
-of research](/research/process#unit): the _case_.
+of research](/research/process/#sec:unit-of-research): the _case_.
 
 <!--MORE-->
 
