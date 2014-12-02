@@ -602,18 +602,17 @@ process to the underlying data and analyses the conclusion is based upon.
 Research semantics get lost, and [citations are just not
 enough](/research/#p[RsbOsr],h[RsbOsr,3]).
 
-
 Open access to the knowledge-creation process needs to be built around the
-[unit of research](/research/process/#unit). This gives research outputs a
-natural structure that can be developed in a simple and understandable way.
-These research outputs can then be shared or composed together in various
-collaborative ways. This is an important distinction between [true research
-software](/research/#p[WtrHwt],h[WtrHwt,2,3]) and wikis. While it is possible
-to provide open access to a research paper and even to the underlying research
-data, if we fail to show _how_ they are connected, then we are failing to give
-people access to the research and thought processes behind those research
-outputs. We need the whole [research context][context] to really understand
-those research outputs.
+[unit of research](/research/process/#sec:unit-of-research). This gives
+research outputs a natural structure that can be developed in a simple and
+understandable way.  These research outputs can then be shared or composed
+together in various collaborative ways. This is an important distinction
+between [true research software](/research/#p[WtrHwt],h[WtrHwt,2,3]) and wikis.
+While it is possible to provide open access to a research paper and even to the
+underlying research data, if we fail to show _how_ they are connected, then we
+are failing to give people access to the research and thought processes behind
+those research outputs. We need the whole [research context][context] to really
+understand those research outputs.
 
 ### Iterating Research
 
