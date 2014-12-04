@@ -6,3 +6,5 @@ nanoc-autocompile.log
 *.swp
 environment.rb
 *.log
+*.autosave
+*.bak
