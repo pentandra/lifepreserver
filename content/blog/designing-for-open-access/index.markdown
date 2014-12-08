@@ -83,9 +83,11 @@ Each page was a work of art, and required careful planning.
   <figcaption class="small">
 
     <span property="schema:description"><b property="dc:title schema:name">An
-    illuminated scientific manuscript</b>, written in <a class="external"
-    href="https://en.wikipedia.org/wiki/Latin" title="Latin on
-    Wikipedia">Latin</a> upon <a class="external"
+    illuminated scientific manuscript</b>, or better known at the time as
+    <dfn><a href="https://en.wikipedia.org/wiki/Natural_philosophy"
+    title="Philosophia Naturalis on Wikipedia">natural philosophy</a></dfn>,
+    written in <a class="external" href="https://en.wikipedia.org/wiki/Latin"
+    title="Latin on Wikipedia">Latin</a> upon <a class="external"
     href="https://en.wikipedia.org/wiki/Parchment" title="Parchment on
     Wikipedia">parchment</a> circa <span class="oldstyle">1292</span>, showing
     a contemporary dipiction of the Arabic <a class="external"
@@ -378,13 +380,13 @@ to work on a problem. Jack also, like many others that are driven to make
 similar breakthroughs, had personal reasons that impelled him forward in his
 research---a family friend had recently died of pancreatic cancer.
 
-Oftentimes, practitioners will see things that the theoreticians miss. Not only
-that, but once they *do* see, practitioners will often have the passion and
-influence needed to create change. As [we wrote about before][hairdresser],
-Janet Stephens saw something historians missed. She had a passion for old
-hairstyles, and set out to recreate them. She knew how to work with hair and
-persisted until she found a solution. Historians had long misinterpreted what
-Janet understood---and Janet was willing to share.
+<span class="newthought">Oftentimes, practitioners will see things</span> that
+the theoreticians miss. Not only that, but once they *do* see, practitioners
+will often have the passion and influence needed to create change. As [we wrote
+about before][hairdresser], Janet Stephens saw something historians missed. She
+had a passion for old hairstyles, and set out to recreate them. She knew how to
+work with hair and persisted until she found a solution. Historians had long
+misinterpreted what Janet understood---and Janet was willing to share.
 
 Josh Sommer is a good example of someone passionate about finding an
 answer---passionate enough to do something about it. After he was diagnosed
@@ -821,10 +823,6 @@ technical concepts in a given domain or discipline. Yet, as we learned from
 vocabularies and concepts if they're willing to put forth the effort.
 [Wikipedia] anyone?
 
-#### A Middle Ground
-
-
-
 #### Little Research
 
 Just like the World Wide Web lets people of all skill levels participate in the
@@ -921,8 +919,9 @@ of, that when you took it away it would cease being research?
 
 ### A Closer Look at 17th Century Tech
 
-Let's take a look at the technology that was available for scientific
-publications during the <span class="oldstyle">17</span>th century.
+To understand how to move forward, we must look back to the past. Let's take a look
+at the technology that was available for scientific publications during the
+<span class="oldstyle">17</span>th century.
 
 <figure id="fig:movable-type" class="img" property="schema:image" resource="#movable_type" typeof="schema:ImageObject">
   <link property="rdfa:copy" href="#license" />
