@@ -157,6 +157,9 @@
         <link property="schema:copyrightHolder schema:publisher" typeof="schema:Corporation" href="/company/#company" />
       </div>
       <meta property="schema:copyrightYear" datatype="xsd:gYear" content="2011" />
+      <% if $generate_timestamp then %>
+      <meta property="prov:generatedAtTime" datatype="xsd:dateTime" content="<%= DateTime.now.to_s %>" />
+      <% end %>
       <link property="rdfa:copy" href="#license" />
       <div>
         <small class="em">Version <span property="dc:hasVersion"><%= @config[:version] %></span></small>
