@@ -27,6 +27,7 @@ gem 'addressable'
 gem 'rubypants-unicode'
 gem 'rdf'
 gem 'sparql-client'
+gem 'json-ld'
 
 group :development do
   gem 'guard-nanoc'
