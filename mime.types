@@ -56,7 +56,9 @@ types {
   video/x-msvideo                       avi;
 
 # Web feeds
-  application/xml                       atom rss xml;
+  application/xml                       xml;
+  application/atom+xml                  atom;
+  application/rss+xml                   rss;
 
 # Web fonts
   application/font-woff                 woff;
