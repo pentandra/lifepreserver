@@ -202,7 +202,7 @@ route '/spec/LICENSE' do
 end
 
 route '/blog/feed_private/' do
-  item.identifier + 'index.xml'
+  item.identifier + 'index.atom'
 end
 
 route '/sitemap/' do
