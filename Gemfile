@@ -28,6 +28,7 @@ gem 'rubypants-unicode'
 gem 'rdf'
 gem 'sparql-client'
 gem 'json-ld'
+gem 'rdf-turtle'
 
 group :development do
   gem 'guard-nanoc'

@@ -94,6 +94,12 @@ compile '/static/*/' do
   # don't compile
 end
 
+compile '/spec/*/', :rep => :jsonld do
+  if item[:extension] == 'ttl' 
+    filter :turtle2jsonld, :context => "{\"@context\": { \"\": \"https://w3id.org/roc#\", \"rdfs\": \"http://www.w3.org/2000/01/rdf-schema#\", \"owl\": \"http://www.w3.org/2002/07/owl#\" }}"
+  end
+end
+
 compile '/spec/*/' do
   # don't compile
 end
@@ -184,13 +190,13 @@ route '/js/*/' do
   item.identifier.chop + '.js'
 end
 
+route '/404/' do
+  '/404.html'
+end
+
 route '/spec/js/*/' do
   # don't generate a directory like we do for HTML files
   item.identifier.chop + '.js'
-end
-
-route '/404/' do
-  '/404.html'
 end
 
 route '/spec/README' do
@@ -199,6 +205,20 @@ end
 
 route '/spec/LICENSE' do
   nil
+end
+
+route '/spec/*/' do
+  if item[:extension] == 'ttl'
+    item.identifier.chop + '.' + item[:extension]
+  else
+    item.identifier + 'index.html'
+  end
+end
+
+route '/spec/*/', :rep => :jsonld do
+  if item[:extension] == 'ttl' 
+    item.identifier.chop + '.jsonld'
+  end
 end
 
 route '/blog/feed_private/' do
