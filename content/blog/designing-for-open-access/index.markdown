@@ -31,7 +31,7 @@ that influences our approach to business and software design.
 
 During the course of writing this essay, I've had to bring together a broad
 spectrum of ideas in order to render a complete picture of where we've come
-from and where we're going as a society. I've needed to reach back a thousand
+from and where we're going as a society. I've needed to reach back two thousand
 years, pull threads out of the centuries, and weave them together in our
 present time. I could have shared this picture using more of a piecemeal
 approach, separating all of this into a series of posts, but decided to keep
@@ -442,14 +442,38 @@ tested sufficiently and is now generally accepted as truth.[^knowledge_creation]
   <figcaption>--- Thomas Jefferson</figcaption>
 </figure>
 
-True open access to knowledge requires that this knowledge creation process be
+True open access to knowledge requires that this knowledge-creation process be
 open and transparent---visible for all to see and build upon.
+
+For thousands of years, we've taken knowledge at face value. That was all that
+the medium of paper, parchment, or tablet could do! To explain how a new piece
+of knowledge came about, we've had to do it with expository text, located
+somewhere around the statement itself. The World Wide Web is largely a transfer
+of this textual paradigm to digital form. Has this been valuable? Of course!
+But the Web can do far more than paper can. Publishing knowledge as plain text
+has worked up to this point, but it's easy for the research context to get lost
+or never get published in the first place. The Web can let us look _into_ or
+_behind_ a bit of knowledge to see where it came from, where it is now, and
+will allow us to take knowledge new places in the future. This is what we call
+[<dfn id="def:opening-knowledge">opening up knowledge</dfn>][mission].
 
 #### Knowledge on the World Wide Web
 
 The World Wide Web has spurred a world-wide collaboration of knowledge. Spirit
 of egalitarianism. Yet knowledge is put on the Web, but loses its context---its
-past and its future. We can't keep taking stuff at face value.
+past and its future. We can't keep taking knowledge at face value.
+
+Some of the paper-bound artifacts of traditional knowledge creation, namely
+citations and peer review, are not first-class citizens on the Web. In fact,
+citations have been carted over in situ to the documents of the World Wide Web.
+Imposing footnotes on documents on the web is fairly awkward, and feels like a
+hack. Footnotes don't really make sense in a web document. For that matter,
+footnotes are awkward on paper as well! All of that switching back and forth
+nonsense. Footnotes and citations are a remnant of the print paradigm. It seems
+they were put at the end of papers as that was the least bad place to put them.
+Likewise, they don't fit the Web architecture or take advantage of the power of
+the Web. Not only that, but once they are there, it is all too easy to lose
+them.
 
 <figure id="quote:web_models_society" resource="#web_models_society" class="bq grab">
   <blockquote cite="http://lists.w3.org/Archives/Public/www-tag/2002Jul/0090.html">
@@ -471,17 +495,11 @@ past and its future. We can't keep taking stuff at face value.
   </figcaption>
 </figure>
 
-Yet some of the artifacts of traditional knowledge creation, namely citations
-and peer review, are not first-class citizens on the Web. In fact, imposing
-citations on documents on the web is fairly awkward, and feels like a hack.
-Citations are a remnant of the print paradigm. They were put at the end of
-papers because they would be in the way if they were put anywhere else. They
-don't fit the Web architecture or take advantage of the power of the Web. Not
-only that, but once they are there, it is all too easy to lose them. Since the
-[W3C's vision for the Web][w3c_vision] involves 'participation, sharing
-knowledge, and thereby building trust on a global scale,' doesn't it seem weird
-that there is no inherent mechanism to track knowledge *creation*?
-
+A big part of society is involved in the creation of knowledge. Yet knowledge
+creation takes place outside of the Web today. Since the [W3C's vision for the
+Web][w3c_vision] involves 'participation, sharing knowledge, and thereby
+building trust on a global scale,' doesn't it seem weird that there is no
+inherent mechanism to track knowledge *creation?*
 
 What would it look like if the process of knowledge creation was modeled on the
 Web? What if you could look *inside* a given fact, and see how it came into
@@ -959,8 +977,9 @@ characters in them.
 
 ### Research Cases: A Proposal for the Future
 
-Just as Gutenberg found a way to break down a page of text into movable type,
-we need to break research itself down into little pieces.
+Research begets knowledge. Just as Gutenberg found a way to break down a page
+of text into movable type, we need to break research itself down into little
+pieces.
 
 Having the open access to the research data is not enough---you also need to
 know [how that data was used][clarity].
