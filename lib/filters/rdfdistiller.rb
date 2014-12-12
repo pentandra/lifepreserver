@@ -18,14 +18,9 @@ module Nanoc::Filters
       reader = RDF::Reader.for(in_format.to_sym) {content}
       reader.new(content, :prefixes => prefixes) {|r| graph << r}
 
-#      compacted = nil
-#      JSON::LD::API::fromRdf(graph) do |expanded|
-#        compacted = JSON::LD::API.compact(expanded, context['@context'])
-#      end
-
-#      compacted
       format = RDF::Format.for(out_format.to_sym)
-      graph.dump(format.to_sym, { :standard_prefixes => true, :prefixes => prefixes })
+
+      graph.dump(format.to_sym, :prefixes => prefixes )
     end
 
   end
