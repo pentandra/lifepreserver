@@ -25,10 +25,7 @@ gem 'jwt', '~> 0.1'
 gem 'rest-client', '~> 1.6'
 gem 'addressable'
 gem 'rubypants-unicode'
-gem 'rdf'
-gem 'sparql-client'
-gem 'json-ld'
-gem 'rdf-turtle'
+gem 'linkeddata'
 
 group :development do
   gem 'guard-nanoc'
