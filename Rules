@@ -96,7 +96,7 @@ end
 
 compile '/spec/*/', :rep => :jsonld do
   if item[:extension] == 'ttl' 
-    filter :turtle2jsonld, :context => "{\"@context\": { \"\": \"https://w3id.org/roc#\", \"rdfs\": \"http://www.w3.org/2000/01/rdf-schema#\", \"owl\": \"http://www.w3.org/2002/07/owl#\" }}"
+    filter :rdf_distiller, :in => :ttl, :out => :jsonld
   end
 end
 
