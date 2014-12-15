@@ -8,7 +8,12 @@ module Nanoc::Filters
 
     def run(content, params={})
 
-      prefixes = {}
+      options = {
+        standard_prefixes: true,
+        prefixes: {},
+        base_uri: params[:base_uri] || @item.path,
+        validate: true,
+      }
 
       in_format = params[:in] || "turtle"
       out_format = params[:out] || "turtle"
@@ -16,11 +21,11 @@ module Nanoc::Filters
       graph = RDF::Repository.new
       
       reader = RDF::Reader.for(in_format.to_sym) {content}
-      reader.new(content, :prefixes => prefixes) {|r| graph << r}
+      reader.new(content, options) {|r| graph << r}
 
-      format = RDF::Format.for(out_format.to_sym)
+      format = RDF::Format.for(out_format.to_sym).to_sym
 
-      graph.dump(format.to_sym, :prefixes => prefixes )
+      graph.dump(format, options)
     end
 
   end
