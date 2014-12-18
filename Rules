@@ -200,11 +200,6 @@ route '/404/' do
   '/404.html'
 end
 
-route '/spec/js/*/' do
-  # don't generate a directory like we do for HTML files
-  item.identifier.chop + '.js'
-end
-
 route '/spec/README' do
   nil
 end
@@ -213,12 +208,9 @@ route '/spec/LICENSE' do
   nil
 end
 
-route '/spec/*/' do
-  if item[:extension] == 'ttl'
-    item.identifier.chop + '.' + item[:extension]
-  else
-    item.identifier + 'index.html'
-  end
+route '/spec/js/*/' do
+  # don't generate a directory like we do for HTML files
+  item.identifier.chop + '.js'
 end
 
 route '/spec/*/', :rep => :jsonld do
@@ -250,7 +242,7 @@ route '/company/', :rep => :qrcode do
 end
 
 route '*' do
-  if item.binary?
+  if item.binary? || item[:extension] == 'ttl'
     # Write item with identifier /foo/ to /foo.ext
     item.identifier.chop + '.' + item[:extension]
   elsif item[:kind] == 'article'
