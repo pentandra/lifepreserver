@@ -66,10 +66,24 @@ preprocess do
     end
   end
 
+  # Includes any custom json-ld contexts for RDF turtle data.
+  #
+  # Looks for a file called `context.json` in the same directory as the turtle
+  # source file, and adds it to the item's metadata under the key `context`.
+  def add_custom_jsonld_contexts
+    items.each do |item|
+      if item[:extension] == 'ttl' then
+        context_path = item[:filename].rpartition("/")[0] + "/context.json"
+        item[:context] = JSON.parse(File.read context_path) if File.exists? context_path
+      end
+    end
+  end
+
   mark_unpublished_articles_as_hidden
   generate_tag_pages
   generate_author_pages
   generate_blog_archives
+  add_custom_jsonld_contexts
 end
 
 ### Compilation Rules ###################################################
