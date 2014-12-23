@@ -71,7 +71,7 @@ module LifePreserver
           # puts "Indexed: #{term}"
         end
         idx["items"][id] = {
-          "url" => "#{item.identifier}",
+          "url" => "#{item.path}",
           "title" => item[:title],
           "desc" => item[:description]
         }
