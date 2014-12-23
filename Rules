@@ -66,6 +66,14 @@ preprocess do
     end
   end
 
+  def mark_javascripts_as_hidden
+    items.each do |item|
+      if item[:extension] == 'js' then
+        item[:is_hidden] = true
+      end
+    end
+  end
+
   # Includes any custom json-ld contexts for RDF turtle data.
   #
   # Looks for a file called `context.json` in the same directory as the turtle
@@ -80,6 +88,7 @@ preprocess do
   end
 
   mark_unpublished_articles_as_hidden
+  mark_javascripts_as_hidden
   generate_tag_pages
   generate_author_pages
   generate_blog_archives
