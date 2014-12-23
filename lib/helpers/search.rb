@@ -55,7 +55,7 @@ module LifePreserver
         "terms" => {},
         "items" => {}
       }
-      items = @items.reject { |i| i[:is_hidden] || i.binary? }
+      items = @items.reject { |i| i[:is_hidden] || i[:is_hidden_from_human_search] || i.binary? }
       items.each do |item|
         search_terms_for(item).each do |term|
           idx["terms"][term] ||= []

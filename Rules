@@ -83,6 +83,7 @@ preprocess do
       if item[:extension] == 'ttl' then
         context_path = item[:filename].rpartition("/")[0] + "/context.json"
         item[:context] = JSON.parse(File.read context_path) if File.exists? context_path
+        item[:is_hidden_from_human_search] = true
       end
     end
   end
