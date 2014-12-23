@@ -83,6 +83,21 @@ preprocess do
       if item[:extension] == 'ttl' then
         context_path = item[:filename].rpartition("/")[0] + "/context.json"
         item[:context] = JSON.parse(File.read context_path) if File.exists? context_path
+      end
+    end
+  end
+
+  # We don't want anything nanoc specific in the spec folder, so have to use
+  # some trickery to get the information we need for searches.
+  def extract_metadata_from_specification_documents
+    require 'nokogiri'
+
+    @items.select { |i| i.identifier.start_with?("/spec/") }.each do |item|
+      case item[:extension]
+      when 'html'
+        doc = Nokogiri::HTML(File.open(item[:filename]))
+        item[:title] = doc.at_css("title").inner_text
+      else
         item[:is_hidden_from_human_search] = true
       end
     end
@@ -94,6 +109,7 @@ preprocess do
   generate_author_pages
   generate_blog_archives
   add_custom_jsonld_contexts
+  extract_metadata_from_specification_documents
 end
 
 ### Compilation Rules ###################################################
@@ -224,12 +240,12 @@ route '/404/' do
   '/404.html'
 end
 
-route '/spec/README' do
-  nil
+route '/spec/README/' do
+  '/spec/README.md'
 end
 
-route '/spec/LICENSE' do
-  nil
+route '/spec/LICENSE/' do
+  '/spec/LICENSE'
 end
 
 route '/spec/js/*/' do
