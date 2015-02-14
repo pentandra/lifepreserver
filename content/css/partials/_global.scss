@@ -99,6 +99,11 @@ em, .em {
   }
 }
 
+hr {
+  border-top: 1px dashed $font-color;
+  margin: $base-line-height 0;
+}
+
 ul {
   list-style-type: square;
 }
