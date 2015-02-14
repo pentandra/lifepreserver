@@ -10,12 +10,12 @@ module Nanoc::Filters
 
       in_format = params[:in] || "turtle"
       out_format = params[:out] || "turtle"
-      base_uri = params[:base_uri] || @item[:base_uri] || @item.path
+      base_uri = params[:base_uri] || @item[:base_uri] || @site.config[:base_url] + @item.path
 
       options = {
         standard_prefixes: true,
         prefixes: {},
-        #base_uri: base_uri,
+        base_uri: base_uri,
         validate: true,
       }
 
@@ -29,13 +29,13 @@ module Nanoc::Filters
       case format
       when :jsonld
         if @item[:context] then
-          context = JSON.parse(@item[:context])
-          options.merge!({ :context => context['@context'] })
+          options.merge!({ :context => @item[:context]['@context'] })
         end
 
+=begin
         jsonld = JSON.parse graph.dump(format, options)
 
-        base = jsonld['@graph'].select { |statement| statement['@id'] == base_uri }.first
+        base = jsonld['@graph'].select { |statement| statement['@id'] == base_uri || statement['@id'] == '#' }.first
         unless base.nil? then
           jsonld['@graph'].delete(base)
           jsonld.merge!(base)
@@ -43,8 +43,10 @@ module Nanoc::Filters
 
         defines = jsonld['@graph'].select { |statement| statement.has_key?('rdfs:isDefinedBy') }
         defines.each do |s|
-          jsonld['@graph'].delete(s)
-          s.delete('rdfs:isDefinedBy')
+          if s['rdfs:isDefinedBy'] == base_uri
+            jsonld['@graph'].delete(s)
+            s.delete('rdfs:isDefinedBy')
+          end
         end
         jsonld['defines'] = defines unless defines.empty?
 
@@ -55,7 +57,10 @@ module Nanoc::Filters
         graph.dump(format, options)
       else
         graph.dump(format, options)
+=end
       end
+
+      graph.dump(format, options)
 
     end
 
