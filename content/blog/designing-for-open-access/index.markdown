@@ -74,7 +74,10 @@ commissioning a book would employ a [clerk], or scholar, would manage the
 copying process of the book. Normally, the clerk employed scribes or copyists
 to do the actual work of writing the book.
 
-Each page was a work of art, and required careful planning.
+Each page was a work of art, and required careful planning. The text and images
+were not separate things, but were designed as one and flowed together into a unified
+whole.
+
 
 <figure id="fig:illuminated-scientific-manuscript" class="img" property="schema:image" resource="#illuminated_scientific_manuscript" typeof="schema:ImageObject">
   <a title="View manuscript at the British Library" property="prov:wasDerivedFrom" href="http://www.bl.uk/catalogues/illuminatedmanuscripts/ILLUMIN.ASP?Size=mid&IllID=21739" class="external">
@@ -129,7 +132,19 @@ Each page was a work of art, and required careful planning.
 
 ### The Early Modern Period
 
-#### The Work of One (or a few) for the Many
+#### The Republic of Letters
+
+The Invisible College
+
+Rosicrucianism and the Royal Society
+
+#### The Printing Press: The Work of One (or a few) for the Many
+
+Journal des Sçavans and Philosophical Transactions
+
+<cite>Philosophical Transactions, Giving some Accompt to the of the present
+Undertakings, Studies, and Labours of the Ingenious in many considerable parts
+of the World</cite>
 
 <figure id="fig:printing-press" class="img" property="schema:image" resource="#printing_press" typeof="schema:ImageObject">
   <a property="schema:contentUrl" href="printing_press.jpg">
@@ -939,7 +954,8 @@ of, that when you took it away it would cease being research?
 
 To understand how to move forward, we must look back to the past. Let's take a look
 at the technology that was available for scientific publications during the
-<span class="oldstyle">17</span>th century.
+<span class="oldstyle">17</span>th century. It can serve as sort of a loose
+metaphor for how to proceed in the future.
 
 <figure id="fig:movable-type" class="img" property="schema:image" resource="#movable_type" typeof="schema:ImageObject">
   <link property="rdfa:copy" href="#license" />
