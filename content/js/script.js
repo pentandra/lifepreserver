@@ -1,7 +1,3 @@
----
-is_hidden: true
----
-
 window.Pentandra = window.Pentandra || {};
 
 Pentandra.Kerning = (function() {

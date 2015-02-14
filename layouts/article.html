@@ -32,16 +32,16 @@
     </p>
 
     <%
-     company = @items.find { |i| i.identifier == '/company/' }
+     company = @items['/company/']
      author = company[:teammembers].find { |m| m[:first_name] + " " + m[:last_name] == @item[:author_name] }
     %>
-    <section class="section" resource="<%= member_path(author) %>" typeof="dc:Agent schema:Person foaf:Person" property="dc:creator schema:author foaf:maker">
+    <section class="section banner" resource="<%= member_path(author) %>" typeof="dc:Agent schema:Person foaf:Person" property="dc:creator schema:author foaf:maker">
       <h3 class="big">The Author</h3>
       <figure id="author">
         <img class="photo framed" src="<%= member_image_path(author) %>" alt="Photo of <%= full_name(author) %>" property="schema:image foaf:img" />
         <figcaption class="small nav">
-          <h4 class="normal shaved" property="schema:name foaf:name"><%= full_name(author) %></h4>
-          <h5 class="small em" property="schema:jobTitle"><%= author[:title] %></h5>
+          <h4 class="normal shaved" property="rdfs:label schema:name foaf:name"><%= full_name(author) %></h4>
+          <p class="small em flush" property="schema:jobTitle"><%= author[:title] %></p>
           <ul>
 
             <li><a href="<%= member_description_path(author) %>"

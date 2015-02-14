@@ -99,6 +99,11 @@ em, .em {
   }
 }
 
+hr {
+  border-top: 1px dashed $font-color;
+  margin: $base-line-height 0;
+}
+
 ul {
   list-style-type: square;
 }
@@ -678,6 +683,10 @@ article {
 
 .social-gp, .social-tw, .social-fb {
   margin-bottom: 13px;
+}
+
+.permalinks input {
+  cursor: pointer;
 }
 
 //

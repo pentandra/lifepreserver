@@ -31,7 +31,7 @@ that influences our approach to business and software design.
 
 During the course of writing this essay, I've had to bring together a broad
 spectrum of ideas in order to render a complete picture of where we've come
-from and where we're going as a society. I've needed to reach back a thousand
+from and where we're going as a society. I've needed to reach back two thousand
 years, pull threads out of the centuries, and weave them together in our
 present time. I could have shared this picture using more of a piecemeal
 approach, separating all of this into a series of posts, but decided to keep
@@ -74,7 +74,10 @@ commissioning a book would employ a [clerk], or scholar, would manage the
 copying process of the book. Normally, the clerk employed scribes or copyists
 to do the actual work of writing the book.
 
-Each page was a work of art, and required careful planning.
+Each page was a work of art, and required careful planning. The text and images
+were not separate things, but were designed as one and flowed together into a unified
+whole.
+
 
 <figure id="fig:illuminated-scientific-manuscript" class="img" property="schema:image" resource="#illuminated_scientific_manuscript" typeof="schema:ImageObject">
   <a title="View manuscript at the British Library" property="prov:wasDerivedFrom" href="http://www.bl.uk/catalogues/illuminatedmanuscripts/ILLUMIN.ASP?Size=mid&IllID=21739" class="external">
@@ -83,9 +86,11 @@ Each page was a work of art, and required careful planning.
   <figcaption class="small">
 
     <span property="schema:description"><b property="dc:title schema:name">An
-    illuminated scientific manuscript</b>, written in <a class="external"
-    href="https://en.wikipedia.org/wiki/Latin" title="Latin on
-    Wikipedia">Latin</a> upon <a class="external"
+    illuminated scientific manuscript</b>, or better known at the time as
+    <dfn><a href="https://en.wikipedia.org/wiki/Natural_philosophy"
+    title="Philosophia Naturalis on Wikipedia">natural philosophy</a></dfn>,
+    written in <a class="external" href="https://en.wikipedia.org/wiki/Latin"
+    title="Latin on Wikipedia">Latin</a> upon <a class="external"
     href="https://en.wikipedia.org/wiki/Parchment" title="Parchment on
     Wikipedia">parchment</a> circa <span class="oldstyle">1292</span>, showing
     a contemporary dipiction of the Arabic <a class="external"
@@ -127,7 +132,19 @@ Each page was a work of art, and required careful planning.
 
 ### The Early Modern Period
 
-#### The Work of One (or a few) for the Many
+#### The Republic of Letters
+
+The Invisible College
+
+Rosicrucianism and the Royal Society
+
+#### The Printing Press: The Work of One (or a few) for the Many
+
+Journal des Sçavans and Philosophical Transactions
+
+<cite>Philosophical Transactions, Giving some Accompt to the of the present
+Undertakings, Studies, and Labours of the Ingenious in many considerable parts
+of the World</cite>
 
 <figure id="fig:printing-press" class="img" property="schema:image" resource="#printing_press" typeof="schema:ImageObject">
   <a property="schema:contentUrl" href="printing_press.jpg">
@@ -378,13 +395,13 @@ to work on a problem. Jack also, like many others that are driven to make
 similar breakthroughs, had personal reasons that impelled him forward in his
 research---a family friend had recently died of pancreatic cancer.
 
-Oftentimes, practitioners will see things that the theoreticians miss. Not only
-that, but once they *do* see, practitioners will often have the passion and
-influence needed to create change. As [we wrote about before][hairdresser],
-Janet Stephens saw something historians missed. She had a passion for old
-hairstyles, and set out to recreate them. She knew how to work with hair and
-persisted until she found a solution. Historians had long misinterpreted what
-Janet understood---and Janet was willing to share.
+<span class="newthought">Oftentimes, practitioners will see things</span> that
+the theoreticians miss. Not only that, but once they *do* see, practitioners
+will often have the passion and influence needed to create change. As [we wrote
+about before][hairdresser], Janet Stephens saw something historians missed. She
+had a passion for old hairstyles, and set out to recreate them. She knew how to
+work with hair and persisted until she found a solution. Historians had long
+misinterpreted what Janet understood---and Janet was willing to share.
 
 Josh Sommer is a good example of someone passionate about finding an
 answer---passionate enough to do something about it. After he was diagnosed
@@ -440,14 +457,38 @@ tested sufficiently and is now generally accepted as truth.[^knowledge_creation]
   <figcaption>--- Thomas Jefferson</figcaption>
 </figure>
 
-True open access to knowledge requires that this knowledge creation process be
+True open access to knowledge requires that this knowledge-creation process be
 open and transparent---visible for all to see and build upon.
+
+For thousands of years, we've taken knowledge at face value. That was all that
+the medium of paper, parchment, or tablet could do! To explain how a new piece
+of knowledge came about, we've had to do it with expository text, located
+somewhere around the statement itself. The World Wide Web is largely a transfer
+of this textual paradigm to digital form. Has this been valuable? Of course!
+But the Web can do far more than paper can. Publishing knowledge as plain text
+has worked up to this point, but it's easy for the research context to get lost
+or never get published in the first place. The Web can let us look _into_ or
+_behind_ a bit of knowledge to see where it came from, where it is now, and
+will allow us to take knowledge new places in the future. This is what we call
+[<dfn id="def:opening-knowledge">opening up knowledge</dfn>][mission].
 
 #### Knowledge on the World Wide Web
 
 The World Wide Web has spurred a world-wide collaboration of knowledge. Spirit
 of egalitarianism. Yet knowledge is put on the Web, but loses its context---its
-past and its future. We can't keep taking stuff at face value.
+past and its future. We can't keep taking knowledge at face value.
+
+Some of the paper-bound artifacts of traditional knowledge creation, namely
+citations and peer review, are not first-class citizens on the Web. In fact,
+citations have been carted over in situ to the documents of the World Wide Web.
+Imposing footnotes on documents on the web is fairly awkward, and feels like a
+hack. Footnotes don't really make sense in a web document. For that matter,
+footnotes are awkward on paper as well! All of that switching back and forth
+nonsense. Footnotes and citations are a remnant of the print paradigm. It seems
+they were put at the end of papers as that was the least bad place to put them.
+Likewise, they don't fit the Web architecture or take advantage of the power of
+the Web. Not only that, but once they are there, it is all too easy to lose
+them.
 
 <figure id="quote:web_models_society" resource="#web_models_society" class="bq grab">
   <blockquote cite="http://lists.w3.org/Archives/Public/www-tag/2002Jul/0090.html">
@@ -469,17 +510,11 @@ past and its future. We can't keep taking stuff at face value.
   </figcaption>
 </figure>
 
-Yet some of the artifacts of traditional knowledge creation, namely citations
-and peer review, are not first-class citizens on the Web. In fact, imposing
-citations on documents on the web is fairly awkward, and feels like a hack.
-Citations are a remnant of the print paradigm. They were put at the end of
-papers because they would be in the way if they were put anywhere else. They
-don't fit the Web architecture or take advantage of the power of the Web. Not
-only that, but once they are there, it is all too easy to lose them. Since the
-[W3C's vision for the Web][w3c_vision] involves 'participation, sharing
-knowledge, and thereby building trust on a global scale,' doesn't it seem weird
-that there is no inherent mechanism to track knowledge *creation*?
-
+A big part of society is involved in the creation of knowledge. Yet knowledge
+creation takes place outside of the Web today. Since the [W3C's vision for the
+Web][w3c_vision] involves 'participation, sharing knowledge, and thereby
+building trust on a global scale,' doesn't it seem weird that there is no
+inherent mechanism to track knowledge *creation?*
 
 What would it look like if the process of knowledge creation was modeled on the
 Web? What if you could look *inside* a given fact, and see how it came into
@@ -821,10 +856,6 @@ technical concepts in a given domain or discipline. Yet, as we learned from
 vocabularies and concepts if they're willing to put forth the effort.
 [Wikipedia] anyone?
 
-#### A Middle Ground
-
-
-
 #### Little Research
 
 Just like the World Wide Web lets people of all skill levels participate in the
@@ -897,6 +928,25 @@ id="q:amateurship"
 cite="https://en.wikipedia.org/wiki/Citizen_science#History">amateurship
 instead of money-biased technical bureaucrats</q>.'
 
+The change that I would like to see is for everyone to be a part of this
+intellectual revolution---that we get rid of the ivory tower and play this game
+together, on an even playing field, respecting and valuing each others vastly
+disparate contributions to this great work. In many ways this would parallel
+the web developer revolution that has occurred over the last two decades. At
+the beginning of the Web, the scientists were the web developers. There's a
+reason the Web looked like it did in the <span class="oldstyle">90</span>'s,
+and it was not all a technical problem. The Web was created at CERN to navigate
+between scientific documents. Designers at some point realized the vast
+potential of design on the Web, and pushed for the ability to express more.
+Business people flocked to the Web when they saw the potential to disseminate
+more information for low or zero costs. Slowly, the Web grew up and we have
+HTML5, CSS3, JavaScript, browsers that can handle great complexity without
+breaking a sweat, and an audience that wants it. Web developers come up with
+extremely creative solutions, learn from and share ideas freely with each
+other. It doesn't matter which school they went to, only how good their ideas
+are. They are playing on an even playing field. Anyone can be a web developer!
+The same can happen with research and researchers.
+
 ## Technological Foundations of Research Publication
 
 We live in a different time now than when Sir Isaac Newton was around---a time
@@ -921,8 +971,10 @@ of, that when you took it away it would cease being research?
 
 ### A Closer Look at 17th Century Tech
 
-Let's take a look at the technology that was available for scientific
-publications during the <span class="oldstyle">17</span>th century.
+To understand how to move forward, we must look back to the past. Let's take a look
+at the technology that was available for scientific publications during the
+<span class="oldstyle">17</span>th century. It can serve as sort of a loose
+metaphor for how to proceed in the future.
 
 <figure id="fig:movable-type" class="img" property="schema:image" resource="#movable_type" typeof="schema:ImageObject">
   <link property="rdfa:copy" href="#license" />
@@ -960,8 +1012,9 @@ characters in them.
 
 ### Research Cases: A Proposal for the Future
 
-Just as Gutenberg found a way to break down a page of text into movable type,
-we need to break research itself down into little pieces.
+Research begets knowledge. Just as Gutenberg found a way to break down a page
+of text into movable type, we need to break research itself down into little
+pieces.
 
 Having the open access to the research data is not enough---you also need to
 know [how that data was used][clarity].

@@ -1,6 +1,3 @@
----
-is_hidden: true
----
 // usage: log('inside coolFunc', this, arguments);
 window.log = function(){
   log.history = log.history || [];   // store logs to an array for reference

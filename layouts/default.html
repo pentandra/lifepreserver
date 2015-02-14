@@ -17,18 +17,7 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <script src="/js/libs/modernizr.custom.07718.js"></script>
 </head>
-<body prefix="cc: http://creativecommons.org/ns#
-              ctag: http://commontag.org/ns#
-              dc: http://purl.org/dc/terms/
-              foaf: http://xmlns.com/foaf/0.1/
-              prov: http://www.w3.org/ns/prov#
-              rdfa: http://www.w3.org/ns/rdfa#
-              schema: http://schema.org/
-              sioc: http://rdfs.org/sioc/ns#
-              vcard: http://www.w3.org/2006/vcard/ns#
-              xhv: http://www.w3.org/1999/xhtml/vocab#
-              xsd: http://www.w3.org/2001/XMLSchema#"
-  typeof="schema:WebPage cc:Work">
+<body prefix="cc: http://creativecommons.org/ns# ctag: http://commontag.org/ns# dbr: http://dbpedia.org/resource/ dc: http://purl.org/dc/terms/ deo: http://purl.org/spar/deo/ foaf: http://xmlns.com/foaf/0.1/ owl: http://www.w3.org/2002/07/owl# prov: http://www.w3.org/ns/prov# rdfa: http://www.w3.org/ns/rdfa# schema: http://schema.org/ sioc: http://rdfs.org/sioc/ns# vcard: http://www.w3.org/2006/vcard/ns# xhv: http://www.w3.org/1999/xhtml/vocab# xsd: http://www.w3.org/2001/XMLSchema#" typeof="schema:WebPage cc:Work prov:Entity">
 <!--[if lt IE 7]><p class="grab">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 <header id="banner" role="banner" class="group">
   <div class="section">
@@ -68,6 +57,9 @@
 <footer id="contentinfo" role="contentinfo" class="rev contentinfo">
   <div class="content">
     <div class="group">
+      <div class="bd mission">
+        <p class="bigger"><%= @items['/company/'][:mission] %></p>
+      </div>
       <div class="bd">
         <aside class="actions aside section">
           <div class="contact section">
@@ -157,6 +149,9 @@
         <link property="schema:copyrightHolder schema:publisher" typeof="schema:Corporation" href="/company/#company" />
       </div>
       <meta property="schema:copyrightYear" datatype="xsd:gYear" content="2011" />
+      <% if $generate_timestamp then %>
+      <meta property="prov:generatedAtTime" datatype="xsd:dateTime" content="<%= DateTime.now.to_s %>" />
+      <% end %>
       <link property="rdfa:copy" href="#license" />
       <div>
         <small class="em">Version <span property="dc:hasVersion"><%= @config[:version] %></span></small>
