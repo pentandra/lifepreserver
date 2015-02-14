@@ -4,8 +4,8 @@ description: Research Cases presented at the University of Oxford.
 kind: article
 author_name: Chris Chapman
 created_at: 2015-01-14
-updated_at: 2015-01-14
-published: false
+updated_at: 2015-02-14
+published: true
 tags:
   - Citizen Science
   - Open Research
