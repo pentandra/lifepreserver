@@ -928,6 +928,25 @@ id="q:amateurship"
 cite="https://en.wikipedia.org/wiki/Citizen_science#History">amateurship
 instead of money-biased technical bureaucrats</q>.'
 
+The change that I would like to see is for everyone to be a part of this
+intellectual revolution---that we get rid of the ivory tower and play this game
+together, on an even playing field, respecting and valuing each others vastly
+disparate contributions to this great work. In many ways this would parallel
+the web developer revolution that has occurred over the last two decades. At
+the beginning of the Web, the scientists were the web developers. There's a
+reason the Web looked like it did in the <span class="oldstyle">90</span>'s,
+and it was not all a technical problem. The Web was created at CERN to navigate
+between scientific documents. Designers at some point realized the vast
+potential of design on the Web, and pushed for the ability to express more.
+Business people flocked to the Web when they saw the potential to disseminate
+more information for low or zero costs. Slowly, the Web grew up and we have
+HTML5, CSS3, JavaScript, browsers that can handle great complexity without
+breaking a sweat, and an audience that wants it. Web developers come up with
+extremely creative solutions, learn from and share ideas freely with each
+other. It doesn't matter which school they went to, only how good their ideas
+are. They are playing on an even playing field. Anyone can be a web developer!
+The same can happen with research and researchers.
+
 ## Technological Foundations of Research Publication
 
 We live in a different time now than when Sir Isaac Newton was around---a time
