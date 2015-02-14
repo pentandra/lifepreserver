@@ -19,6 +19,7 @@ The following is an expanded version of a presentation I prepared for the <span
 class="oldstyle">FORCE2015</span> conference at the University of Oxford to
 give an introduction and background to what we are trying to accomplish with
 [Research Cases](http://researchcases.org).
+{: .em .intro }
 
 <!--MORE-->
 
@@ -37,8 +38,11 @@ of interaction and collaboration that correspondence provided.
 The [Republic of Letters](https://en.wikipedia.org/wiki/Republic_of_Letters)
 was an international network of philosophical collaborators during the <span
 class="oldstyle">17</span>th and <span class="oldstyle">18</span>th centuries.
-Letters were exchanged in a quasi-public manner between interested parties,
-primarily gentlemen. [Explain more]
+Letters were exchanged in a quasi-public manner between interested parties.
+Leisure time, money for postage, and a curious mind were the only barriers for
+entry into this network, though because of cultural barriers that existed at
+the time, the Republic was mostly comprised of gentlemen---lady
+[interlocutors][Interlocutor] were quite rare.
 
 <figure id="fig:vanLeeuwenhoek" class="img" property="schema:image" resource="#leeuwenhoek" typeof="schema:ImageObject">
   <img property="schema:contentUrl" src="Jan_Verkolje_-_Antonie_van_Leeuwenhoek.jpg" class="static" alt="A portrait of Antonie van Leeuwenhoek by Jan Verkolje" />
@@ -55,7 +59,7 @@ communication and collaboration, correspondence by letter, exchanging over
 <span class="oldstyle">560</span> letters with the Royal Society during the
 course of his life. Leeuwenhoek is widely regarded as an amateur, and I believe
 that he would appreciate that designation, because he did his research to
-satisfy his curiosity and just for the love of it.
+satisfy his curiosity---for the love of it.
 
 ## Publish or Perish
 
@@ -82,8 +86,10 @@ While journals have been very successful at disseminating research news, they
 have also promoted an attitude of fierce competition and the social consequent
 of *publish or perish*. The printing process has entrenched the subtle yet
 devastating ideas that research must be finished before it is shared and that
-peer review is a one-time ordeal. The commercialization of research and the
-journal publication industry has only exacerbated the problem.
+peer review is a one-time ordeal. Researchers are incentivized to hold back
+until they have everything figured out to increase their chances of getting
+published. The commercialization of research and the journal publication
+industry has only exacerbated the problem.
 
 <figure id="fig:ivorytowers" class="img" property="schema:image" resource="#ivorytowers" typeof="schema:ImageObject">
   <img property="schema:contentUrl" src="ivory_towers.jpg" class="static" alt="The Hawksmoor Towers of All Souls College, University of Oxford" />
@@ -116,13 +122,15 @@ orchestrators of peer review.
 
 Where has this led us?
 
-* To a funding model that is tied to the publishing process, to which
-  researchers are slaves.[^codrington]
-* Living with the overhead and time delays of the publishing process.
+* To a funding model for research that is tied to the publishing process, to
+  which researchers are slaves.[^codrington]
 * To a false sense of scarcity as publishers are forced to select a limited
-  number of *'the best'* papers to publish to control publishing costs.
-* Researchers have become silos themselves to protect their own interests and
-  increase their chances of being published.
+  number of what they think are *the best* papers to publish to control
+  publishing costs. Then we have to live with the overhead and time delays of
+  the publishing process.
+* Research is now more about dissertation than discourse.
+* Researchers have become silos themselves (or in small groups) to protect
+  their own interests.
 * All the above kinda takes the fun out of research. 
 
 Is this what we want? I don't think so.
@@ -158,15 +166,15 @@ direct and differentiated ways?
 
 What would this technology look like? If all we needed was a modern version of
 correspondence, it seems that email and mailing lists would have taken over
-that role by now. Blogs and wikis are good at disseminating content,[^bliki]
-but they have not successfully replaced the journal either. Why haven't these
+that role by now. Blogs and wikis are good at disseminating content, but they
+have not successfully replaced the journal either. Why haven't these
 technologies replaced the journal already? The subtle, yet obvious reason is
 that the dissemination of content is not enough. Dissemination is not valuable
 enough in its own right to warrant widespread change in the way we do research.
 As a research community, we're missing something important. Something that
 we've lost. Something that is worth changing for, something that would
 accelerate research like nothing else would. Never before in the history of our
-World has knowledge and enlightenment been so freely available to all. Never
+world has knowledge and enlightenment been so freely available to all. Never
 before have so many joined the ranks of the curious. Yet while they want to
 participate in the creation of knowledge, modern-day researchers shouldn't need
 to jump through the hoops of traditional journal publishers anymore. Journals
@@ -192,13 +200,13 @@ be part of the future of research:
   smaller pieces brought together over time. These individual pieces need to be
   published in context with fine-grained attribution for all contributions
   made. Research shared this way would lower the administrative overhead for
-  grantors and open the door to micro-grants and other alternative funding
-  models, which would enable greater maneuverability to follow the direction
-  that the research leads.
+  grantors and grantees, and open the door to micro-grants and other
+  alternative funding models, which would enable greater maneuverability to
+  follow the direction that the research leads.
 * We need to get away from the monoculture of the journal article as the only
   community-sanctioned format of publication and value a diversity of
   approaches. Researchers should own their own research and control how it is
-  shared. An exception to this rule possibly exists if the research was funded
+  shared, though there *may* be an exception to this if the research was funded
   by a third party.
 * Direct, public, and rapid interaction between any and all interested
   researchers removes the need to go through a middleman for scholarly
@@ -208,7 +216,7 @@ be part of the future of research:
   to participate and contribute, whatever the skill level. All contributions
   can be transparently judged based on merit. Above all, *research should be
   fun!* If the fun is not inherent in the research itself, it should at least
-  exist as a feeling of camaradarie among fellow discoverers.
+  exist as a feeling of camaraderie amongst fellow discoverers.
 * Feedback and peer-review need to be introduced much earlier and continue
   throughout the research process. As James Jurin said, 'All reasonings [should
   be left] to the judgement of the Publick, to whom indeed it properly
@@ -229,7 +237,12 @@ We invite anyone interested [to participate](http://researchcases.org "Help out 
 
     After Henry Oldenburg's prolific tenure as secretary of the Royal Society,
     several subsequent secretaries could not keep up with the volume and
-    diversity of correspondence, so correspondence stagnated. 
+    diversity of correspondence, so correspondence stagnated. James Jurin came
+    along in the <span class="oldstyle">1720</span>s, and revived the society's
+    correspondence. He was so successful that he couldn't handle the volume of
+    correspondence after a while. In <span class="oldstyle">1752</span> the
+    Committee of Papers was established to spread the load across the
+    institution.
 
 [^neylon]:
 
@@ -238,9 +251,5 @@ We invite anyone interested [to participate](http://researchcases.org "Help out 
     future of research that parallels Oldenburg's experience
     <span class="oldstyle">350</span> years earlier.
 
-[^bliki]:
-
-    A few examples of wiki-style publications are
-    [Scholarpedia](http://www.scholarpedia.org),...
-
 [Antonie van Leeuwenhoek]: https://en.wikipedia.org/wiki/Antonie_van_Leeuwenhoek "Leeuwenhoek on Wikipedia"
+[Interlocutor]: http://en.wikipedia.org/wiki/Interlocutor_(linguistics) "Or in other words, the person who takes part in a conversation, the person to whom the letter is being written."
