@@ -66,10 +66,50 @@ preprocess do
     end
   end
 
+  def mark_javascripts_as_hidden
+    items.each do |item|
+      if item[:extension] == 'js' then
+        item[:is_hidden] = true
+      end
+    end
+  end
+
+  # Includes any custom json-ld contexts for RDF turtle data.
+  #
+  # Looks for a file called `context.json` in the same directory as the turtle
+  # source file, and adds it to the item's metadata under the key `context`.
+  def add_custom_jsonld_contexts
+    items.each do |item|
+      if item[:extension] == 'ttl' then
+        context_path = item[:filename].rpartition("/")[0] + "/context.json"
+        item[:context] = JSON.parse(File.read context_path) if File.exists? context_path
+      end
+    end
+  end
+
+  # We don't want anything nanoc specific in the spec folder, so have to use
+  # some trickery to get the information we need for searches.
+  def extract_metadata_from_specification_documents
+    require 'nokogiri'
+
+    @items.select { |i| i.identifier.start_with?("/spec/") }.each do |item|
+      case item[:extension]
+      when 'html'
+        doc = Nokogiri::HTML(File.open(item[:filename]))
+        item[:title] = doc.at_css("title").inner_text
+      else
+        item[:is_hidden_from_human_search] = true
+      end
+    end
+  end
+
   mark_unpublished_articles_as_hidden
+  mark_javascripts_as_hidden
   generate_tag_pages
   generate_author_pages
   generate_blog_archives
+  add_custom_jsonld_contexts
+  extract_metadata_from_specification_documents
 end
 
 ### Compilation Rules ###################################################
@@ -92,6 +132,18 @@ end
 
 compile '/static/*/' do
   # don't compile
+end
+
+compile '/spec/*/', :rep => :jsonld do
+  if item[:extension] == 'ttl' 
+    filter :rdf_distiller, :in => :ttl, :out => :jsonld
+  end
+end
+
+compile '/spec/*/', :rep => :rdfxml do
+  if item[:extension] == 'ttl' 
+    filter :rdf_distiller, :in => :ttl, :out => :rdfxml
+  end
 end
 
 compile '/spec/*/' do
@@ -184,25 +236,37 @@ route '/js/*/' do
   item.identifier.chop + '.js'
 end
 
+route '/404/' do
+  '/404.html'
+end
+
+route '/spec/README/' do
+  '/spec/README.md'
+end
+
+route '/spec/LICENSE/' do
+  '/spec/LICENSE'
+end
+
 route '/spec/js/*/' do
   # don't generate a directory like we do for HTML files
   item.identifier.chop + '.js'
 end
 
-route '/404/' do
-  '/404.html'
+route '/spec/*/', :rep => :jsonld do
+  if item[:extension] == 'ttl' 
+    item.identifier.chop + '.jsonld'
+  end
 end
 
-route '/spec/README' do
-  nil
-end
-
-route '/spec/LICENSE' do
-  nil
+route '/spec/*/', :rep => :rdfxml do
+  if item[:extension] == 'ttl' 
+    item.identifier.chop + '.rdf'
+  end
 end
 
 route '/blog/feed_private/' do
-  item.identifier + 'index.xml'
+  item.identifier + 'index.atom'
 end
 
 route '/sitemap/' do
@@ -218,7 +282,7 @@ route '/company/', :rep => :qrcode do
 end
 
 route '*' do
-  if item.binary?
+  if item.binary? || item[:extension] == 'ttl'
     # Write item with identifier /foo/ to /foo.ext
     item.identifier.chop + '.' + item[:extension]
   elsif item[:kind] == 'article'

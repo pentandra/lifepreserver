@@ -140,7 +140,7 @@ $less-outer-margin: 28px;
     }
 
     .actions {
-      margin-bottom: 8px;
+      margin-bottom: 8px + $base-line-height;
     }
 
     .bd .aside {
