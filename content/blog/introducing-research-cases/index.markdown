@@ -4,7 +4,7 @@ description: Research Cases presented at the University of Oxford.
 kind: article
 author_name: Chris Chapman
 created_at: 2015-01-14
-updated_at: 2015-02-14
+updated_at: 2015-02-16
 published: true
 tags:
   - Citizen Science
@@ -216,7 +216,7 @@ be part of the future of research:
   to participate and contribute, whatever the skill level. All contributions
   can be transparently judged based on merit. Above all, *research should be
   fun!* If the fun is not inherent in the research itself, it should at least
-  exist as a feeling of camaraderie amongst fellow discoverers.
+  exist as a feeling of camaraderie amongst fellow discoverers.[^franklin]
 * Feedback and peer-review need to be introduced much earlier and continue
   throughout the research process. As James Jurin said, 'All reasonings [should
   be left] to the judgement of the Publick, to whom indeed it properly
@@ -251,5 +251,37 @@ We invite anyone interested [to participate](http://researchcases.org "Help out 
     future of research that parallels Oldenburg's experience
     <span class="oldstyle">350</span> years earlier.
 
+[^franklin]:
+
+    To get a glimpse into the openness and camaraderie that existed at the
+    beginning of the [Enlightenment], even to the open sharing of ideas,
+    preliminary data, and thoughts that were not completely thought out, here's
+    an excerpt from a letter from [Benjamin Franklin] to [Peter Collinson] in
+    <span class="oldstyle">1753</span>:
+
+    <figure class="bq grab">
+      <blockquote>
+        <p>
+
+        These Thoughts, my dear Friend, are many of the crude and hasty, and if
+        I were merely ambitious of acquiring some Reputation in Philosophy, I
+        ought to keep them by me, 'till corrected and improved by Time and
+        farther Experience. But since even short Hints, and imperfect
+        Experiments in any new Branch of Science, being communicated, have
+        oftentimes a good Effect, in exciting the attention of the Ingenious to
+        the Subject, and so becoming the Occasion of more exact disquisitions
+        (as I before observed) and more compleat Discoveries, you are at
+        Liberty to communicate this Paper to whom you please; it being of more
+        Importance that Knowledge should increase, than that your Friend should
+        be thought an accurate Philosopher.
+
+        </p>
+      </blockquote>
+      <figcaption><p>--- Quoted in <a href="http://books.google.com/books/about/The_Invention_of_Air.html">The Invention of Air</a> by Steven Johnson</p></figcaption>
+    </figure>
+
 [Antonie van Leeuwenhoek]: https://en.wikipedia.org/wiki/Antonie_van_Leeuwenhoek "Leeuwenhoek on Wikipedia"
 [Interlocutor]: http://en.wikipedia.org/wiki/Interlocutor_(linguistics) "Or in other words, the person who takes part in a conversation, the person to whom the letter is being written."
+[Enlightenment]: http://en.wikipedia.org/wiki/Age_of_Enlightenment "Age of Enlightment on Wikipedia"
+[Peter Collinson]: http://en.wikipedia.org/wiki/Peter_Collinson_%28botanist%29 "Peter Collinson on Wikipedia"
+[Benjamin Franklin]: http://en.wikipedia.org/wiki/Benjamin_Franklin "Benjamin Franklin on Wikipedia"
