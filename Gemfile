@@ -31,4 +31,5 @@ group :development do
   gem 'guard'
   gem 'guard-nanoc'
   gem 'guard-livereload', require: false
+  gem 'rbtrace'
 end
