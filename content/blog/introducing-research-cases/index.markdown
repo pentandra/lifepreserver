@@ -49,12 +49,16 @@ this age. The sharing of knowledge was more important than feeding the ego.
 Citizens of the Republic wrote back and forth to each other, describing in
 detail the most recent thoughts, conveying the results of the latest
 experiments, and hunches.[^franklin] This correspondence proceeded in a very
-piecemeal, informal fashion.
+piecemeal, informal fashion---thought upon thought.
 
 <figure id="fig:vanLeeuwenhoek" class="img" property="schema:image" resource="#leeuwenhoek" typeof="schema:ImageObject">
   <img property="schema:contentUrl" src="Jan_Verkolje_-_Antonie_van_Leeuwenhoek.jpg" class="static" alt="A portrait of Antonie van Leeuwenhoek by Jan Verkolje" />
   <figcaption class="small">
-    <b>A portrait of Antonie van Leeuwenhoek</b> by Jan Verkolje.
+
+    <b>Antonie van Leeuwenhoek</b>, here posing with his favored device of
+    scientific communication: the letter. Portrait by the Dutch <a
+    href="http://en.wikipedia.org/wiki/Jan_Verkolje">Jan Verkolje</a>.
+
   </figcaption>
 </figure>
 
@@ -65,8 +69,8 @@ papers or books. He relied on the open and effective method of scientific
 communication and collaboration, correspondence by letter, exchanging over
 <span class="oldstyle">560</span> letters with the Royal Society during the
 course of his life. Leeuwenhoek is widely regarded as an amateur, and I believe
-that he would appreciate that designation, because he did his research only to
-satisfy his curiosity. He researched for the love of it.
+that he would appreciate that designation, because he researched to satisfy his
+curiosity---he researched for the love of it.
 
 ## Publish or Perish
 
