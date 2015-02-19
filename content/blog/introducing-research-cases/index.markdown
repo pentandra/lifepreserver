@@ -9,6 +9,7 @@ published: true
 tags:
   - Citizen Science
   - Open Research
+  - Essay
   - Republic of Letters
   - Open Standards
   - Research Cases
