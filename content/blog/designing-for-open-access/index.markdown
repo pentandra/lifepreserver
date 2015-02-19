@@ -15,7 +15,7 @@ public within one year of publication and requiring researchers to better
 account for and manage the digital data resulting from federally funded
 scientific research.</q> It's a step in the right direction, at least for the
 US.
-{: .intro .em }
+{: .intro }
 
 ---
 
