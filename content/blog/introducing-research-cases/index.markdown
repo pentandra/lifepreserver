@@ -73,7 +73,7 @@ course of his life. Leeuwenhoek is widely regarded as an amateur, and I believe
 that he would appreciate that designation, because he researched to satisfy his
 curiosity---he researched for the love of it.
 
-## Publish or Perish
+### Publish or Perish
 
 For the last <span class="oldstyle">350</span> or so years we have relied on
 journals for the dissemination of scholarly news. Yet journals were only a
