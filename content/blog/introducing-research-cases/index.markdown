@@ -4,7 +4,7 @@ description: Research Cases presented at the University of Oxford.
 kind: article
 author_name: Chris Chapman
 created_at: 2015-01-14
-updated_at: 2015-02-16
+updated_at: 2015-02-19
 published: true
 tags:
   - Citizen Science
@@ -16,10 +16,10 @@ tags:
 ---
 
 The following is an expanded version of a presentation I prepared for the <span
-class="oldstyle">FORCE2015</span> conference at the University of Oxford to
-give an introduction and background to what we are trying to accomplish with
-[Research Cases](http://researchcases.org).
-{: .em .intro }
+class="abbr">FORCE2015</span> conference at the University of Oxford to give an
+introduction and background to what we are trying to accomplish with [Research
+Cases](http://researchcases.org).
+{: .intro }
 
 <!--MORE-->
 
@@ -27,22 +27,29 @@ give an introduction and background to what we are trying to accomplish with
 
 ## Motives of Correspondence
 
-For the last <span class="oldstyle">350</span> or so years we have relied on
-journals for the dissemination of scholarly news. Yet journals were only a
-complement to the communications method already in use at the time:
-_correspondence by letter_. The journal was a labor-saving device to distribute
-the latest research news en masse to the public. However, as a communications
-medium, journals allow only one-way discourse and lack many of the advantages
-of interaction and collaboration that correspondence provided.
+The [Republic of Letters] was an international network of collaborators that
+existed during the <span class="oldstyle">17</span>th and <span
+class="oldstyle">18</span>th centuries. In this metaphysical Republic, letters
+about natural philosophy (science), religion, politics, or really any
+intellectual topic were exchanged in a quasi-public manner between interested
+parties. Leisure time, money for postage, and a curious mind were the only
+barriers for entry into this network.[^barriers-to-entry]
 
-The [Republic of Letters](https://en.wikipedia.org/wiki/Republic_of_Letters)
-was an international network of philosophical collaborators during the <span
-class="oldstyle">17</span>th and <span class="oldstyle">18</span>th centuries.
-Letters were exchanged in a quasi-public manner between interested parties.
-Leisure time, money for postage, and a curious mind were the only barriers for
-entry into this network, though because of cultural barriers that existed at
-the time, the Republic was mostly comprised of gentlemen---lady
-[interlocutors][Interlocutor] were quite rare.
+The Republic of Letters was part of a bigger movement: the [Enlightenment], or
+the Age of Reason, an exciting time when old ideas were being overturned,
+experimentation was being emphasized, and long-entrenched authority was being
+challenged. This was the age of [sapere aude]---dare to know---as discussed by
+Immanuel Kant in his essay <cite>[Answering the Question: What Is
+Enlightenment?]</cite> in <span class="oldstyle">1784</span>.
+
+This was a time before our overspecialization and compartmentalization of
+research into our tidy little boxes. Ideas were discussed freely, and flowed
+from one domain to another. Openness and a desire to find truth characterized
+this age. The sharing of knowledge was more important than feeding the ego.
+Members of the Republic wrote back and forth to each other, describing in
+detail the most recent thoughts, conveying the results of the latest
+experiments, and hunches.[^franklin] This correspondence proceeded in a very
+piecemeal, informal fashion.
 
 <figure id="fig:vanLeeuwenhoek" class="img" property="schema:image" resource="#leeuwenhoek" typeof="schema:ImageObject">
   <img property="schema:contentUrl" src="Jan_Verkolje_-_Antonie_van_Leeuwenhoek.jpg" class="static" alt="A portrait of Antonie van Leeuwenhoek by Jan Verkolje" />
@@ -58,29 +65,41 @@ papers or books. He relied on the open and effective method of scientific
 communication and collaboration, correspondence by letter, exchanging over
 <span class="oldstyle">560</span> letters with the Royal Society during the
 course of his life. Leeuwenhoek is widely regarded as an amateur, and I believe
-that he would appreciate that designation, because he did his research to
-satisfy his curiosity---for the love of it.
+that he would appreciate that designation, because he did his research only to
+satisfy his curiosity. He researched for the love of it.
 
 ## Publish or Perish
+
+For the last <span class="oldstyle">350</span> or so years we have relied on
+journals for the dissemination of scholarly news. Yet journals were only a
+complement to the communications method already in use at the time:
+_correspondence by letter_. The journal was a labor-saving device to distribute
+the latest research news en masse to the public. However, as a communications
+medium, journals allow only one-way discourse and lack many of the advantages
+of interaction and collaboration that correspondence provided.
 
 If those involved in the Republic of Letters had something that worked so well,
 namely correspondence by letter, what were the motives for creating the
 journal?
 
+In early <span class="oldstyle">1665</span> Henry Oldenburg obtained a copy of
+the newly published [Journal des sçavans], published out of Paris, France. It
+prompted a business idea. If he could publish a journal entirely devoted to
+natural philosophy, he would be able to more easily promote new scientific
+ideas, broaden the reach of the Royal Society, and perhaps even make a little
+bit of money on the side. From a systems perspective, Oldenburg wanted to
+maximize the scale of dissemination of scientific news by minimizing the
+friction that existed in the system.[^neylon] Thus started the Philosophical
+Transactions. His plan worked except for the money part, though he generally
+made just enough to cover his rent.
+
 As it turns out, many of these early decisions to create the journal and
 centralize scientific communications were driven simply by economics. It was
 cheaper to disseminate scientific news using the printing press rather than
-employing an army of copyists.
-
-In early <span class="oldstyle">1665</span> Henry Oldenburg obtained a copy of
-the newly published Journal des sçavans. It prompted a business idea. If he
-could create a journal entirely devoted to natural philosophy (or science), he
-would be able to more easily promote new scientific ideas, broaden the reach of
-the Royal Society, and perhaps even make a little bit of money on the side. In
-other words, Oldenburg wanted to maximize the scale of dissemination of
-scientific news by minimizing the friction that existed in the system.[^neylon]
-Thus started the Philosophical Transactions. His plan worked except for the
-money part, though he made just enough to cover his rent.
+employing an army of copyists. Eventually, the economics of the machine won.
+More efficient was it to disseminate scientific news to a broad audience using
+a printing press than it was to keep up this one-to-one, direct style of
+interaction.
 
 While journals have been very successful at disseminating research news, they
 have also promoted an attitude of fierce competition and the social consequent
@@ -112,13 +131,11 @@ industry has only exacerbated the problem.
 </figure>
 
 The economics of the journal have led to an environment of centralization in
-which research outputs funnel through the publisher. Eventually, the economics
-of the machine won. More efficient was it to disseminate scientific news to a
-broad audience using a printing press than it was to keep up this one-to-one,
-direct style of interaction. The quest for notoriety has also played a part,
-with researchers seeking to become published to secure opportunities for future
-funding. Publishers became the de facto gatekeepers of knowledge, and the
-orchestrators of peer review.
+which research outputs funnel through the publisher. Publishers have become the
+de facto gatekeepers of knowledge, and the orchestrators of peer review. The
+quest for notoriety and personal gain has also played a part in this
+transformation, with researchers seeking to become published to make a name for
+themselves and to secure opportunities for future funding.
 
 Where has this led us?
 
@@ -157,31 +174,31 @@ Andrea Rusnock said,
   <figcaption>--- <a href="http://www.jstor.org/stable/4028081">Correspondence networks and the Royal Society, <span class="oldstyle">1700--1750</span></a></figcaption>
 </figure>
 
-Is there some way we could superimpose our modern technology on the motives
-that drove members of the Republic of Letters to collaborate so eagerly?
-Couldn't we create something even *more* valuable than the original Republic
-because we have technology that they didn't? Technology that excels at
-communication? Technology that allows us to collaborate economically in more
-direct and differentiated ways?
+Is there some way we could craft modern technology to support the motives that
+drove members of the Republic of Letters to collaborate so eagerly?  Couldn't
+we create something even *more* valuable than the original Republic because we
+have technology that they didn't? Technology that excels at communication?
+Technology that allows us to collaborate economically in more direct and
+differentiated ways?
 
 What would this technology look like? If all we needed was a modern version of
 correspondence, it seems that email and mailing lists would have taken over
 that role by now. Blogs and wikis are good at disseminating content, but they
 have not successfully replaced the journal either. Why haven't these
 technologies replaced the journal already? The subtle, yet obvious reason is
-that the dissemination of content is not enough. Dissemination is not valuable
-enough in its own right to warrant widespread change in the way we do research.
-As a research community, we're missing something important. Something that
-we've lost. Something that is worth changing for, something that would
-accelerate research like nothing else would. Never before in the history of our
-world has knowledge and enlightenment been so freely available to all. Never
-before have so many joined the ranks of the curious. Yet while they want to
-participate in the creation of knowledge, modern-day researchers shouldn't need
-to jump through the hoops of traditional journal publishers anymore. Journals
-are just not the labor-saving device they used to be.
+that the dissemination of content is not enough. The dissemination of content
+is not valuable enough in its own right to warrant widespread change in the way
+we do research. As a research community, we're missing something important.
+Something that we've lost. Something that is worth changing for, something that
+would accelerate research like nothing else would. Never before in the history
+of our world has knowledge and enlightenment been so freely available to all.
+Never before have so many joined the ranks of the curious. Yet while they want
+to participate in the creation of knowledge, modern-day researchers shouldn't
+need to jump through the hoops of traditional journal publishers anymore.
+Journals are just not the labor-saving device they used to be.
 
 Research cases is a vision for a new kind of research---a research that is more
-participative, similar in spirit to the network of correspondence that existed
+participative, similar in spirit to the networks of correspondence that existed
 during the <span class="oldstyle">17</span>th and <span
 class="oldstyle">18</span>th centuries.
 
@@ -216,10 +233,10 @@ be part of the future of research:
   to participate and contribute, whatever the skill level. All contributions
   can be transparently judged based on merit. Above all, *research should be
   fun!* If the fun is not inherent in the research itself, it should at least
-  exist as a feeling of camaraderie amongst fellow discoverers.[^franklin]
+  exist as a feeling of camaraderie amongst fellow discoverers.
 * Feedback and peer-review need to be introduced much earlier and continue
-  throughout the research process. As James Jurin said, 'All reasonings [should
-  be left] to the judgement of the Publick, to whom indeed it properly
+  throughout the research process. As James Jurin said, 'All reasonings should
+  be left to the judgement of the Publick, to whom indeed it properly
   belongs.'[^jurin]
 
 We invite anyone interested [to participate](http://researchcases.org "Help out with Research Cases").
@@ -239,10 +256,13 @@ We invite anyone interested [to participate](http://researchcases.org "Help out 
     several subsequent secretaries could not keep up with the volume and
     diversity of correspondence, so correspondence stagnated. James Jurin came
     along in the <span class="oldstyle">1720</span>s, and revived the society's
-    correspondence. He was so successful that he couldn't handle the volume of
-    correspondence after a while. In <span class="oldstyle">1752</span> the
-    Committee of Papers was established to spread the load across the
-    institution.
+    correspondence. He was so successful at this revival that he increasingly
+    couldn't handle the volume of correspondence. In <span
+    class="oldstyle">1752</span> the Committee of Papers was established to
+    spread the load across the institution. Thus were the beginnings of peer
+    review as we know it today.[^rusnock]
+
+[^rusnock]: Rusnock, Andrea. <a href="http://www.jstor.org/stable/4028081">Correspondence Networks and the Royal Society, <span class="oldstyle">1700--1750</span></a>. <cite>The British Journal for the History of Science</cite> vol. <span class="oldstyle">32</span>, no. <span class="oldstyle">2</span>, Did the Royal Society Matter in the Eighteenth Century? (June <span class="oldstyle">1999</span>), pp. <span class="oldstyle">155--69</span>.
 
 [^neylon]:
 
@@ -280,8 +300,19 @@ We invite anyone interested [to participate](http://researchcases.org "Help out 
       <figcaption><p>--- Quoted in <a href="http://books.google.com/books/about/The_Invention_of_Air.html">The Invention of Air</a> by Steven Johnson</p></figcaption>
     </figure>
 
+[^barriers-to-entry]:
+
+    Due to cultural barriers that existed at the time, the Republic was mostly
+    comprised of gentlemen---lady [interlocutors][Interlocutor] were quite
+    rare.
+
+
 [Antonie van Leeuwenhoek]: https://en.wikipedia.org/wiki/Antonie_van_Leeuwenhoek "Leeuwenhoek on Wikipedia"
 [Interlocutor]: http://en.wikipedia.org/wiki/Interlocutor_(linguistics) "Or in other words, the person who takes part in a conversation, the person to whom the letter is being written."
 [Enlightenment]: http://en.wikipedia.org/wiki/Age_of_Enlightenment "Age of Enlightment on Wikipedia"
 [Peter Collinson]: http://en.wikipedia.org/wiki/Peter_Collinson_%28botanist%29 "Peter Collinson on Wikipedia"
 [Benjamin Franklin]: http://en.wikipedia.org/wiki/Benjamin_Franklin "Benjamin Franklin on Wikipedia"
+[Journal des sçavans]: http://en.wikipedia.org/wiki/Journal_des_s%C3%A7avans "Journal des sçavans on Wikipedia"
+[Republic of Letters]: https://en.wikipedia.org/wiki/Republic_of_Letters "Republic of Letters on Wikipedia"
+[Sapere Aude]: http://en.wikipedia.org/wiki/Sapere_aude "A Latin phrase meaning 'Dare to know'"
+[Answering the Question: What is Enlightenment?]: http://en.wikipedia.org/wiki/Answering_the_Question:_What_is_Enlightenment%3F
