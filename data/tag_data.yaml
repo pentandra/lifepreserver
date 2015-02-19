@@ -334,3 +334,39 @@ Citizen Science:
     of these activities by researchers on a primarily avocational basis." Citizen
     science is sometimes called "public participation in scientific research."
   topic: http://en.wikipedia.org/wiki/Citizen_science
+Republic of Letters:
+  uri: http://dbpedia.org/resource/Republic_of_Letters
+  label: Republic of Letters
+  abstract: ! 'Republic of Letters (Respublica literaria) is the long-distance intellectual
+    community in the late 17th and 18th century in Europe and America. It fostered
+    communication among the intellectuals of Age of Enlightenment, or "philosophes"
+    as they were called in France. The Republic of Letters emerged in the 17th century
+    as a self-proclaimed community of scholars and literary figures that stretched
+    across national boundaries but respected differences in language and culture.
+    These communities that transcended national boundaries formed the basis of a metaphysical
+    Republic. Because of societal constraints on women, the Republic of Letters consisted
+    mostly of men. As such, many scholars use "Republic of Letters" and "men of letters"
+    interchangeably. The circulation of handwritten letters was necessary for its function
+    because it enabled intellectuals to correspond with each other from great distances.
+    All citizens of the 17th century Republic of Letters corresponded by letter, exchanged
+    published papers and pamphlets, and considered it their duty to bring others into
+    the Republic through the expansion of correspondence. The origin of this term remains
+    unclear. The term first appeared in its Latin form in the 15th century and was
+    used increasingly in the sixteenth and seventeenth, so that by the end of that
+    century it featured in the titles of several important journals. Currently, the
+    consensus is that Pierre Bayle first translated the term in his journal Nouvelles
+    de la République des Lettres in 1664. But there are some historians who disagree
+    and some have gone so far as to say that its origin dates back to Plato''s Republic.
+    Part of the difficulty in determining its origin is that, unlike an academy or
+    literary society, it existed only in the minds of its members. Historians are presently
+    debating the importance of the Republic of Letters in influencing the Enlightenment.
+    Today, most Anglo-American historians, whatever their point of entry to debate,
+    occupy a common ground: the Republic of Letters and the Enlightenment were distinct.'
+  topic: http://en.wikipedia.org/wiki/Republic_of_Letters
+Treatise:
+  uri: http://dbpedia.org/resource/Treatise
+  label: Treatise
+  abstract: A treatise is a formal and systematic written discourse on some subject,
+    generally longer and treating it in greater depth than an essay, and more concerned
+    with investigating or exposing the principles of the subject.
+  topic: http://en.wikipedia.org/wiki/Treatise
