@@ -39,14 +39,14 @@ The Republic of Letters was part of a bigger movement: the [Enlightenment], or
 the Age of Reason, an exciting time when old ideas were being overturned,
 experimentation was being emphasized, and long-entrenched authority was being
 challenged. This was the age of [sapere aude]---dare to know---as discussed by
-Immanuel Kant in his essay <cite>[Answering the Question: What Is
+[Immanuel Kant] in his essay <cite>[Answering the Question: What Is
 Enlightenment?]</cite> in <span class="oldstyle">1784</span>.
 
 This was a time before our overspecialization and compartmentalization of
 research into our tidy little boxes. Ideas were discussed freely, and flowed
 from one domain to another. Openness and a desire to find truth characterized
 this age. The sharing of knowledge was more important than feeding the ego.
-Members of the Republic wrote back and forth to each other, describing in
+Citizens of the Republic wrote back and forth to each other, describing in
 detail the most recent thoughts, conveying the results of the latest
 experiments, and hunches.[^franklin] This correspondence proceeded in a very
 piecemeal, informal fashion.
@@ -58,7 +58,7 @@ piecemeal, informal fashion.
   </figcaption>
 </figure>
 
-This happy looking gentleman, [Antonie van Leeuwenhoek], is regarded by many as
+This happy-looking gentleman, [Antonie van Leeuwenhoek], is regarded by many as
 the father of microbiology. Among other things, he discovered bacteria and a
 method to drastically improve the power of a microscope. Yet he published zero
 papers or books. He relied on the open and effective method of scientific
@@ -174,21 +174,21 @@ Andrea Rusnock said,
   <figcaption>--- <a href="http://www.jstor.org/stable/4028081">Correspondence networks and the Royal Society, <span class="oldstyle">1700--1750</span></a></figcaption>
 </figure>
 
-Is there some way we could craft modern technology to support the motives that
-drove members of the Republic of Letters to collaborate so eagerly?  Couldn't
-we create something even *more* valuable than the original Republic because we
-have technology that they didn't? Technology that excels at communication?
-Technology that allows us to collaborate economically in more direct and
-differentiated ways?
+Is there some way we could craft modern technology to reinforce the motives
+that drove citizens of the Republic of Letters to collaborate so eagerly?
+Couldn't we create something even *more* valuable than the original Republic
+because we have technology that they didn't? Technology that excels at
+communication? Technology that allows us to collaborate economically in more
+direct and differentiated ways?
 
 What would this technology look like? If all we needed was a modern version of
 correspondence, it seems that email and mailing lists would have taken over
 that role by now. Blogs and wikis are good at disseminating content, but they
 have not successfully replaced the journal either. Why haven't these
 technologies replaced the journal already? The subtle, yet obvious reason is
-that the dissemination of content is not enough. The dissemination of content
-is not valuable enough in its own right to warrant widespread change in the way
-we do research. As a research community, we're missing something important.
+that the dissemination of content is not enough. Dissemination of content is
+not valuable enough in its own right to warrant widespread change in the way we
+do research. As a research community, we're missing something important.
 Something that we've lost. Something that is worth changing for, something that
 would accelerate research like nothing else would. Never before in the history
 of our world has knowledge and enlightenment been so freely available to all.
@@ -316,3 +316,4 @@ We invite anyone interested [to participate](http://researchcases.org "Help out 
 [Republic of Letters]: https://en.wikipedia.org/wiki/Republic_of_Letters "Republic of Letters on Wikipedia"
 [Sapere Aude]: http://en.wikipedia.org/wiki/Sapere_aude "A Latin phrase meaning 'Dare to know'"
 [Answering the Question: What is Enlightenment?]: http://en.wikipedia.org/wiki/Answering_the_Question:_What_is_Enlightenment%3F
+[Immanuel Kant]: http://en.wikipedia.org/wiki/Immanuel_Kant "Immanuel Kant on Wikipedia"
