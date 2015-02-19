@@ -113,7 +113,7 @@ devastating ideas that research must be finished before it is shared and that
 peer review is a one-time ordeal. Researchers are incentivized to hold back
 until they have everything figured out to increase their chances of getting
 published. The commercialization of research and the journal publication
-industry has only exacerbated the problem.
+industry have only exacerbated the problem.
 
 <figure id="fig:ivorytowers" class="img" property="schema:image" resource="#ivorytowers" typeof="schema:ImageObject">
   <img property="schema:contentUrl" src="ivory_towers.jpg" class="static" alt="The Hawksmoor Towers of All Souls College, University of Oxford" />
