@@ -46,7 +46,7 @@ This was a time before our overspecialization and compartmentalization of
 research into our tidy little boxes. Ideas were discussed freely, and flowed
 from one domain to another. Openness and a desire to find truth characterized
 this age. The sharing of knowledge was more important than feeding the ego.
-Members of the Republic wrote back and forth to each other, describing in
+Citizens of the Republic wrote back and forth to each other, describing in
 detail the most recent thoughts, conveying the results of the latest
 experiments, and hunches.[^franklin] This correspondence proceeded in a very
 piecemeal, informal fashion.
@@ -175,7 +175,7 @@ Andrea Rusnock said,
 </figure>
 
 Is there some way we could craft modern technology to reinforce the motives
-that drove members of the Republic of Letters to collaborate so eagerly?
+that drove citizens of the Republic of Letters to collaborate so eagerly?
 Couldn't we create something even *more* valuable than the original Republic
 because we have technology that they didn't? Technology that excels at
 communication? Technology that allows us to collaborate economically in more
