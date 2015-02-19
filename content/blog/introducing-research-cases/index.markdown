@@ -245,6 +245,7 @@ be part of the future of research:
   belongs.'[^jurin]
 
 We invite anyone interested [to participate](http://researchcases.org "Help out with Research Cases").
+{: .conclusion }
 
 ## Notes
 
