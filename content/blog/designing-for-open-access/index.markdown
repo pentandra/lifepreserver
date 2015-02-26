@@ -30,19 +30,7 @@ movement](#sec:the-modern-open-access-movement) was written in October
 popularity. Even though this a jump back in time as far as the open access
 movement goes, and was originally written, I think, from an overly academic
 viewpoint, it has some value in describing some of the foundations upon which
-<<<<<<< HEAD
 we are building our ideas and company.
-=======
-we are building our ideas and company. Since the time this post was started,
-the Obama Administration has issued [a directive][obama_directive]
-to the big Federal agencies <q
-cite="http://www.whitehouse.gov/blog/2013/02/22/expanding-public-access-results-federally-funded-research">to
-make the published results of federally funded research freely available to the
-public within one year of publication and requiring researchers to better
-account for and manage the digital data resulting from federally funded
-scientific research.</q> It's a step in the right direction, at least for the
-US.
->>>>>>> Get rid of all the rel and class external. Doing away with LP-11.
 {: .intro }
 
 ---
@@ -52,7 +40,6 @@ US.
   <img property="schema:contentUrl" class="static" alt="Open Access logo" src="open_access.jpg" />
 </div>
 
-<<<<<<< HEAD
 I have been thinking a lot about open access[^oa-overview] lately and how it
 relates to what we are trying to accomplish at Pentandra. I want to discuss
 what open access means to us and how that influences our approach to business
@@ -65,12 +52,6 @@ with research---that it will open up research to the world. Yet the problem of
 open access lies deeper, and we will not reach those promised blessings of
 universal access and understanding unless we delve down and solve the problems
 that have been holding back our entire research infrastructure.
-=======
-This week is [Open Access Week][oa_week]! I have been thinking a lot about open
-access[^OA-Overview] lately and how it relates to what we are trying to
-accomplish at Pentandra. I want to discuss what open access means to us and how
-that influences our approach to business and software design.
->>>>>>> Some small fixes
 
 During the course of writing what has turned into a treatise, I've had to bring
 together a broad spectrum of ideas in order to render a complete picture of
@@ -144,34 +125,7 @@ whole.
   <a title="View manuscript at the British Library" property="prov:wasDerivedFrom" href="http://www.bl.uk/catalogues/illuminatedmanuscripts/ILLUMIN.ASP?Size=mid&IllID=21739">
     <img property="schema:contentUrl" class="static" src="illuminated_scientific_manuscript.jpg" alt="Illuminated manuscript depicting canons for Toledan tables (c. 1292)" />
   </a>
-<<<<<<< HEAD
   <figcaption class="small"><span property="schema:description"><b property="dc:title schema:name">An illuminated scientific manuscript</b>, or better known at the time as <dfn><a href="https://en.wikipedia.org/wiki/Natural_philosophy" title="Philosophia Naturalis on Wikipedia">natural philosophy</a></dfn>, written in <a href="https://en.wikipedia.org/wiki/Latin" title="Latin on Wikipedia">Latin</a> upon <a href="https://en.wikipedia.org/wiki/Parchment" title="Parchment on Wikipedia">parchment</a> circa <span class="oldstyle">1292</span>, showing a contemporary dipiction of the Arabic <a href="http://en.wikipedia.org/wiki/Toledan_Tables">Toledan tables</a>, which used geometric chords and sines to predict the movements of the Sun, Moon, and planets relative to the fixed stars. At this time, the prevailing belief was that the Earth was stationary at the center of the universe.</span> Licensed under a <a property="cc:license" href="http://creativecommons.org/publicdomain/zero/1.0/" ><abbr title="Creative Commons Zero (Public Domain Dedication)">CC0</abbr> license</a> by the <a property="cc:attributionName" rel="cc:attributionURL" href="http://www.bl.uk">British Library</a>. <span class="icon-cc"></span><span class="icon-cc-zero"></span></figcaption>
-=======
-  <figcaption class="small">
-
-    <span property="schema:description"><b property="dc:title schema:name">An
-    illuminated scientific manuscript</b>, or better known at the time as
-    <dfn><a href="https://en.wikipedia.org/wiki/Natural_philosophy"
-    title="Philosophia Naturalis on Wikipedia">natural philosophy</a></dfn>,
-    written in <a href="https://en.wikipedia.org/wiki/Latin"
-    title="Latin on Wikipedia">Latin</a> upon <a
-    href="https://en.wikipedia.org/wiki/Parchment" title="Parchment on
-    Wikipedia">parchment</a> circa <span class="oldstyle">1292</span>, showing
-    a contemporary dipiction of the Arabic <a
-    href="http://en.wikipedia.org/wiki/Toledan_Tables">Toledan tables</a>,
-    which used geometric chords and sines to predict the movements of the Sun,
-    Moon, and planets relative to the fixed stars. At this time, the prevailing
-    belief was that the Earth was stationary at the center of the
-    universe.</span> Licensed under a <a property="cc:license"
-    href="http://creativecommons.org/publicdomain/zero/1.0/"
-   ><abbr title="Creative Commons Zero (Public Domain
-    Dedication)">CC0</abbr> license</a> by the <a property="cc:attributionName"
-    rel="cc:attributionURL" href="http://www.bl.uk">British
-    Library</a>. <span class="icon-cc"></span><span
-    class="icon-cc-zero"></span>
-
-  </figcaption>
->>>>>>> Get rid of all the rel and class external. Doing away with LP-11.
 </figure>
 
 #### Access to Knowledge
@@ -1205,27 +1159,11 @@ research systems.
 ## Additional Resources
 {:.no_toc}
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 * [The Coming of the Book: The Impact of Printing 1450--1800][febvre], by Lucien Febvre and Henri-Jean Martin. 
 * [The Printing Press as an Agent of Change][press_agent], by Elizabeth Eisenstein. 
 * [Hypertext as an agent of change][hypertext], by Mandy Brown.
 * [Manuscripts, Books, and Maps: The Printing Press and a Changing World][booktext], by Bruce Jones.
 * [The Funding of Science][funding] on Wikipedia.
-=======
-* Febvre, Lucien and Martin, Henri-Jean. [The Coming of the Book: The Impact of Printing 1450--1800][febvre]{:.external}
-* Eisenstein, Elizabeth. [The Printing Press as an Agent of Change][press_agent]{:.external}.
-* Brown, Mandy. [Hypertext as an agent of change][hypertext]{:.external}
-* [Manuscripts, Books, and Maps: The Printing Press and a Changing World][booktext]{:.external}
-* [The Funding of Science][funding]{:.external}
->>>>>>> Some small fixes
-=======
-* Febvre, Lucien and Martin, Henri-Jean. [The Coming of the Book: The Impact of Printing 1450--1800][febvre]
-* Eisenstein, Elizabeth. [The Printing Press as an Agent of Change][press_agent].
-* Brown, Mandy. [Hypertext as an agent of change][hypertext]
-* [Manuscripts, Books, and Maps: The Printing Press and a Changing World][booktext]
-* [The Funding of Science][funding]
->>>>>>> Get rid of all the rel and class external. Doing away with LP-11.
 
 
 [^anti-OA]: Some publishers do support open access, primarily the "gold"
