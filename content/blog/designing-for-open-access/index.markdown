@@ -40,6 +40,7 @@ we are building our ideas and company.
   <img property="schema:contentUrl" class="static" alt="Open Access logo" src="open_access.jpg" />
 </div>
 
+<<<<<<< HEAD
 I have been thinking a lot about open access[^oa-overview] lately and how it
 relates to what we are trying to accomplish at Pentandra. I want to discuss
 what open access means to us and how that influences our approach to business
@@ -52,6 +53,12 @@ with research---that it will open up research to the world. Yet the problem of
 open access lies deeper, and we will not reach those promised blessings of
 universal access and understanding unless we delve down and solve the problems
 that have been holding back our entire research infrastructure.
+=======
+This week is [Open Access Week][oa_week]! I have been thinking a lot about open
+access[^OA-Overview] lately and how it relates to what we are trying to
+accomplish at Pentandra. I want to discuss what open access means to us and how
+that influences our approach to business and software design.
+>>>>>>> Some small fixes
 
 During the course of writing what has turned into a treatise, I've had to bring
 together a broad spectrum of ideas in order to render a complete picture of
@@ -1159,11 +1166,19 @@ research systems.
 ## Additional Resources
 {:.no_toc}
 
+<<<<<<< HEAD
 * [The Coming of the Book: The Impact of Printing 1450--1800][febvre], by Lucien Febvre and Henri-Jean Martin. 
 * [The Printing Press as an Agent of Change][press_agent], by Elizabeth Eisenstein. 
 * [Hypertext as an agent of change][hypertext], by Mandy Brown.
 * [Manuscripts, Books, and Maps: The Printing Press and a Changing World][booktext], by Bruce Jones.
 * [The Funding of Science][funding] on Wikipedia.
+=======
+* Febvre, Lucien and Martin, Henri-Jean. [The Coming of the Book: The Impact of Printing 1450--1800][febvre]{:.external}
+* Eisenstein, Elizabeth. [The Printing Press as an Agent of Change][press_agent]{:.external}.
+* Brown, Mandy. [Hypertext as an agent of change][hypertext]{:.external}
+* [Manuscripts, Books, and Maps: The Printing Press and a Changing World][booktext]{:.external}
+* [The Funding of Science][funding]{:.external}
+>>>>>>> Some small fixes
 
 
 [^anti-OA]: Some publishers do support open access, primarily the "gold"
@@ -1543,11 +1558,16 @@ research systems.
 [West Indies]: <https://en.wikipedia.org/wiki/West_Indies> "West Indies on Wikipedia"
 [w3c_vision]: <http://www.w3.org/Consortium/mission.html#vision>
 [wiki]: <http://en.wikipedia.org/wiki/Wiki> "Wiki on Wikipedia"
+<<<<<<< HEAD
 [domain-specific]: </research/#p[WtrHwt],h[WtrHwt,2]> "Pentandra → The Future of Research → To be most effective, research software must be domain specific"
 [copy it]: <http://kk.org/thetechnium/2008/01/better-than-fre/> "Better Than Free, by Kevin Kelly"
 [research cases]: </blog/introducing-research-cases/> "Introducing Research Cases"
 [economics]: </blog/introducing-research-cases/#sec:publish-or-perish> "Introducing Research Cases > Publish Or Perish"
 [canada-tri-agency]: <http://poeticeconomics.blogspot.com/2015/02/canadas-tri-agency-open-access-policy.html> "Canada's tri-agency open access policy, by Heather Morrison"
+=======
+[domain-specific]: </research/#p[WtrHwt],h[WtrHwt,2]> "The Future of Research > To be most effective, research software must be domain specific"
+[copy it]: <http://kk.org/thetechnium/2008/01/better-than-fre/> "Better Than Free, by Kevin Kelly"
+>>>>>>> Some small fixes
 
 <% content_for :javascripts do %>
 <script>
