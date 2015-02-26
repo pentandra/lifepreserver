@@ -46,10 +46,10 @@ US.
   <img property="schema:contentUrl" class="static" alt="Open Access logo" src="open_access.jpg" />
 </div>
 
-This week is [Open Access Week][oa_week]! I have been thinking a lot about open
-access[^OA-Overview] lately and how it relates to what we are trying to
-accomplish at Pentandra. I want to discuss what open access means to us and how
-that influences our approach to business and software design.
+I have been thinking a lot about open access[^OA-Overview] lately and how it
+relates to what we are trying to accomplish at Pentandra. I want to discuss
+what open access means to us and how that influences our approach to business
+and software design.
 
 During the course of writing what has turned into a treatise, I've had to bring
 together a broad spectrum of ideas in order to render a complete picture of
