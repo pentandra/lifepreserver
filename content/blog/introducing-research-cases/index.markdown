@@ -119,11 +119,11 @@ industry have only exacerbated the problem.
   <img property="schema:contentUrl" src="ivory_towers.jpg" class="static" alt="The Hawksmoor Towers of All Souls College, University of Oxford" />
   <figcaption class="small">
 
-    <b>The formidable Hawksmoor Towers</b> of <a class="external"
+    <b>The formidable Hawksmoor Towers</b> of <a
     href="https://en.wikipedia.org/wiki/All_Souls_College,_Oxford">All Souls
     College</a>, University of Oxford, which have become a symbol of the ivory
     towers of research, or the disconnection between research and the public.
-    Photo by <a class="external" property="cc:attributionName"
+    Photo by <a property="cc:attributionName"
     rel="cc:attributionURL"
     href="https://commons.wikimedia.org/wiki/User:Godot13">Andrew Shiva</a>,
     licensed under a <a rel="cc:license"

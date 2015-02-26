@@ -29,7 +29,7 @@ popularity. Even though this a jump back in time as far as the open access
 movement goes, and was originally written, I think, from an overly academic
 viewpoint, it has some value in describing some of the foundations upon which
 we are building our ideas and company. Since the time this post was started,
-the Obama Administration has issued [a directive][obama_directive]{:.external}
+the Obama Administration has issued [a directive][obama_directive]
 to the big Federal agencies <q
 cite="http://www.whitehouse.gov/blog/2013/02/22/expanding-public-access-results-federally-funded-research">to
 make the published results of federally funded research freely available to the
@@ -103,7 +103,7 @@ whole.
 
 
 <figure id="fig:illuminated-scientific-manuscript" class="img" property="schema:image" resource="#illuminated_scientific_manuscript" typeof="schema:ImageObject">
-  <a title="View manuscript at the British Library" property="prov:wasDerivedFrom" href="http://www.bl.uk/catalogues/illuminatedmanuscripts/ILLUMIN.ASP?Size=mid&IllID=21739" class="external">
+  <a title="View manuscript at the British Library" property="prov:wasDerivedFrom" href="http://www.bl.uk/catalogues/illuminatedmanuscripts/ILLUMIN.ASP?Size=mid&IllID=21739">
     <img property="schema:contentUrl" class="static" src="illuminated_scientific_manuscript.jpg" alt="Illuminated manuscript depicting canons for Toledan tables (c. 1292)" />
   </a>
   <figcaption class="small">
@@ -112,20 +112,20 @@ whole.
     illuminated scientific manuscript</b>, or better known at the time as
     <dfn><a href="https://en.wikipedia.org/wiki/Natural_philosophy"
     title="Philosophia Naturalis on Wikipedia">natural philosophy</a></dfn>,
-    written in <a class="external" href="https://en.wikipedia.org/wiki/Latin"
-    title="Latin on Wikipedia">Latin</a> upon <a class="external"
+    written in <a href="https://en.wikipedia.org/wiki/Latin"
+    title="Latin on Wikipedia">Latin</a> upon <a
     href="https://en.wikipedia.org/wiki/Parchment" title="Parchment on
     Wikipedia">parchment</a> circa <span class="oldstyle">1292</span>, showing
-    a contemporary dipiction of the Arabic <a class="external"
+    a contemporary dipiction of the Arabic <a
     href="http://en.wikipedia.org/wiki/Toledan_Tables">Toledan tables</a>,
     which used geometric chords and sines to predict the movements of the Sun,
     Moon, and planets relative to the fixed stars. At this time, the prevailing
     belief was that the Earth was stationary at the center of the
     universe.</span> Licensed under a <a property="cc:license"
     href="http://creativecommons.org/publicdomain/zero/1.0/"
-    class="external"><abbr title="Creative Commons Zero (Public Domain
+   ><abbr title="Creative Commons Zero (Public Domain
     Dedication)">CC0</abbr> license</a> by the <a property="cc:attributionName"
-    rel="cc:attributionURL" href="http://www.bl.uk" class="external">British
+    rel="cc:attributionURL" href="http://www.bl.uk">British
     Library</a>. <span class="icon-cc"></span><span
     class="icon-cc-zero"></span>
 
@@ -245,7 +245,7 @@ better way to publish.
 
 C'mon, publishers, are you so comfortable with your modus operandi that you
 require legislation to perpetuate your antiquated business model? There are [so
-many other options][velvet_rope]{:.external} for monetizing the research and
+many other options][velvet_rope] for monetizing the research and
 publication industry in more valuable ways!  Come down from your
 this-is-how-it-has-always-been-done ivory towers, stop digging in your heels,
 and get with the <span class="oldstyle">21</span>st century.
@@ -273,7 +273,7 @@ mandated that all publicly-funded research will be offered openly by
 <span class="oldstyle">2014</span>. Following their footsteps, the European
 Commission has mandated open access dissemination of all research paid for by
 its latest research initiative, named
-<a href="http://ec.europa.eu/research/horizon2020/index_en.cfm?pg=home&video=none" rel="external">Horizon <span class="oldstyle">2020</span></a>.
+<a href="http://ec.europa.eu/research/horizon2020/index_en.cfm?pg=home&video=none">Horizon <span class="oldstyle">2020</span></a>.
 It is hoped that other EU member states will follow suit.[^EU-OA]
 
 Australia and New Zealand also have a lot of support going for open access and
@@ -282,20 +282,20 @@ Australia, two main agencies give out research funds: the National Health and
 Medical Research Council and the Australian Research Council. Earlier this year
 the NHMRC mandated a policy to put research papers in an open access repository
 <span class="oldstyle">12</span> months after publication. The ARC is now
-[following their lead][arc]{:.external}.
+[following their lead][arc].
 
 In the US the situation is a little different. Several attempts have been made
 to legislate open access, but there has been a lot of opposition and not all
 have been successful. In <span class="oldstyle">2008</span>, a bill was
 successfully passed[^NIH] that required all NIH-funded research be submitted to
-[PubMed Central][PubMed]{:.external}, an open access repository for the
+[PubMed Central][PubMed], an open access repository for the
 biomedical and life sciences. Hoping to keep the momentum going, the [Federal
-Research Public Access Act][FRPAA]{:.external} was introduced to Congress,
+Research Public Access Act][FRPAA] was introduced to Congress,
 which extended the similar requirements across all the big governmental funding
 agencies. Publishers lobbied[^AAP] and the bill never made it out of committee.
 Up to this point in time, FRPAA has been introduced to US Congress three times,
 but has not made it out of committee.  The [White House was
-petitioned][white_house]{:.external} in May of this year to require open access
+petitioned][white_house] in May of this year to require open access
 to taxpayer-funded research, effectually proposing the same thing as FRPAA. As
 of today, the White House has yet to respond.
 
@@ -331,8 +331,8 @@ legislators to follow when looking for quick and easy budget cuts.
 Other well-intentioned, but shallow-thinking legislators are trying to limit or
 completely deny public access to United States Social Security Death Records
 for the sake of discouraging identity theft, yet their efforts only exacerbate
-the problem, effectually [removing the only way to detect it][ssd]{:.external}.
-Some say that we are entering the [beginning of the Dark Ages][public_access]{:.external}
+the problem, effectually [removing the only way to detect it][ssd].
+Some say that we are entering the [beginning of the Dark Ages][public_access]
 for public records.
 
 #### Beyond Fairness
@@ -351,7 +351,7 @@ future research output. Text mining can accelerate contextual understanding,
 leading to surprising cross-discipline breakthroughs and collaboration.
 
 From an economics perspective, open access creates value. Nobody really knows
-how that value will be [captured][clothesline]{:.external} in the future. The
+how that value will be [captured][clothesline] in the future. The
 research is just sitting there, on the Ether, ready to be used in some novel,
 unforeseen way to make our world a better place.  Open-source software has
 created enormous value as developers have taken chunks of software
@@ -363,10 +363,10 @@ way.
 
 When Jack Andraka was <span class="oldstyle">15</span>, he set out to discover
 a way to detect early-stage pancreatic cancer. After reading hundreds of papers
-from [PubMed]{:.external}, he made a breakthrough during biology class. He took
+from [PubMed], he made a breakthrough during biology class. He took
 his discovery to the <span class="oldstyle">2012</span> Intel International
 Science and Engineering Fair, and the rest, as they say, [has been
-history][Andraka TEDx]{:.external}.
+history][Andraka TEDx].
 
 <figure id="fig:cancer-breakthrough" class="section" resource="#cancer_breakthrough" typeof="schema:VideoObject">
   <meta property="schema:bitrate" content="500k" />
@@ -385,7 +385,7 @@ history][Andraka TEDx]{:.external}.
 
     <span property="schema:description">An interview on Open Access to research
     journals with Dr. Francis S.  Collins, Director of the National Institutes
-    of Health, and Jack Andraka. Presented by the <a class="external"
+    of Health, and Jack Andraka. Presented by the <a
     property="cc:attributionName" rel="cc:attributionURL"
     href="http://www.righttoresearch.org">Right to Research Coalition</a>, with
     support from <abbr title="Scholarly Publishing and Academic Resources
@@ -400,7 +400,7 @@ history][Andraka TEDx]{:.external}.
 
 While people around the world have championed him, a few from the scientific
 community have scoffed at his debut achievements. While I agree with some of
-[the reservations][biotech_whiz]{:.external} Matthew Herper of Forbes Magazine
+[the reservations][biotech_whiz] Matthew Herper of Forbes Magazine
 holds towards Jack Andraka's preliminary publication draft, I think Matthew
 missed an opportunity here. Maybe Jack's biggest contribution to science so far
 wasn't developing a cool biosensor while still in high school, but was showing
@@ -428,8 +428,8 @@ misinterpreted what Janet understood---and Janet was willing to share.
 
 Josh Sommer is a good example of someone passionate about finding an
 answer---passionate enough to do something about it. After he was diagnosed
-with [chordoma]{: .external }, Josh founded the [Chordoma
-Foundation]{:.external} to bring researchers together in a race for a cure.
+with [chordoma], Josh founded the [Chordoma
+Foundation] to bring researchers together in a race for a cure.
 *Isn't this what [collaboration] is all about?* We need more people of all
 types involved in research.
 
@@ -566,7 +566,7 @@ not get published for the same reason.
 
     </p>
   </blockquote>
-  <figcaption>--- Jonathan B. Buckheit and David Donoho, <a href="http://statweb.stanford.edu/~donoho/Reports/1995/wavelab.pdf" class="external"><cite>Wavelab and Reproducible Research</cite></a>, 1995.</figcaption>
+  <figcaption>--- Jonathan B. Buckheit and David Donoho, <a href="http://statweb.stanford.edu/~donoho/Reports/1995/wavelab.pdf"><cite>Wavelab and Reproducible Research</cite></a>, 1995.</figcaption>
 </figure>
 
 The writing process is wonderful. Writing forces you to think, to formulate
@@ -637,7 +637,7 @@ simultaneously by multiple scientists and inventors</q>.
     </p>
   </blockquote>
   <figcaption>--- <a href="http://en.wikipedia.org/wiki/Farkas_Bolyai"
-  class="external">Farkas Bolyai</a>, to his son <a href="http://en.wikipedia.org/wiki/J%C3%A1nos_Bolyai" class="external">János</a>, urging him to publish his theory of non-Euclidiean geometry without delay.</figcaption>
+ >Farkas Bolyai</a>, to his son <a href="http://en.wikipedia.org/wiki/J%C3%A1nos_Bolyai">János</a>, urging him to publish his theory of non-Euclidiean geometry without delay.</figcaption>
 </figure>
 
 The point is that attribution, or credit, should take care of itself if the
@@ -650,8 +650,8 @@ unduly about credit management.
 Research is messy. Sometimes it just doesn't fit very well in a four- or
 eight-page research paper. While there are some excellent examples of the use
 of [wikis][wiki] in research, such as
-[Scholarpedia](http://www.scholarpedia.org/){:.external} or
-[Wikiversity](http://en.wikiversity.org/){:.external}, wikis are still based on
+[Scholarpedia](http://www.scholarpedia.org/) or
+[Wikiversity](http://en.wikiversity.org/), wikis are still based on
 the research paper model. Transparent collaboration occurs only during the
 writing of the paper, and not throughout the entire research process. For most
 fields this is not enough. Wikis are built on textual revisions and do not
@@ -678,7 +678,7 @@ For some research questions, that is a
 good way to go, but for most, 
 
 Over the last decade software development processes have evolved from a
-monolithic [waterfall model]{:.external} to more [iterative]{:.external}
+monolithic [waterfall model] to more [iterative]
 methodologies. It just didn't work to go through one giant iteration when
 designing a complicated software system. It is much more efficient to go
 through many small iterations through the development process, getting feedback
@@ -786,7 +786,7 @@ avocation enjoyed by teachers, philosophers, and other learned people.
 '\[N\]ever before has science become so alienated from the common man, and he, in
 turn, so suspicious of science,' said Erwin Chargaff, the biochemist who
 discovered <a href="https://en.wikipedia.org/wiki/Chargaff%27s_rules"
-class="external">two rules</a> that helped lead to the discovery of the double
+>two rules</a> that helped lead to the discovery of the double
 helix structure of <abbr title="Deoxyribonucleic acid">DNA</abbr>.
 
 #### The Rise of the Professional Researcher
@@ -913,7 +913,7 @@ without hidden agendas or selfish motivations.
     in <span class="oldstyle" property="schema:datePublished">1980</span></span>.
     Licensed under a <a property="cc:license"
     href="http://creativecommons.org/publicdomain/zero/1.0/"
-    class="external"><abbr title="Creative Commons Zero (Public Domain
+   ><abbr title="Creative Commons Zero (Public Domain
     Dedication)">CC0</abbr> license</a>. <span class="icon-cc"></span><span
     class="icon-cc-zero"></span>
 
@@ -976,8 +976,8 @@ We live in a different time now than when Sir Isaac Newton was around---a time
 in which we can take advantage of [multiple discovery] and push forward
 knowledge in an unprecedented way.
 
-[Clayton Christensen]{:.external} of Harvard Business
-School [predicts][technological core]{:.external} that '<q
+[Clayton Christensen] of Harvard Business
+School [predicts][technological core] that '<q
 cite="http://techcrunch.com/2013/04/06/clayton-christensen-talks-venture-capital-crowd-funding-and-how-to-measure-your-life/">in
 <span class="oldstyle">15</span> years from now, more than half of the
 universities will be in bankruptcy.</q>' The reason? '<q>For <span
@@ -1019,7 +1019,7 @@ Movable type worked really well for alphabets that had relatively few
 characters in them.
 
 <figure id="fig:composing-stick" class="img" property="schema:image" resource="#composing_stick" typeof="schema:ImageObject">
-  <a title="View original image on Wikimedia Commons" property="prov:wasDerivedFrom" href="http://upload.wikimedia.org/wikipedia/commons/a/ae/Metal_movable_type.jpg" class="external">
+  <a title="View original image on Wikimedia Commons" property="prov:wasDerivedFrom" href="http://upload.wikimedia.org/wikipedia/commons/a/ae/Metal_movable_type.jpg">
     <img property="schema:contentUrl" class="static" src="Metal_movable_type.jpg" alt="Metal movable type in a composing stick" />
   </a>
   <figcaption class="small">
@@ -1083,11 +1083,11 @@ research systems.
 ## Additional Resources
 {:.no_toc}
 
-* Febvre, Lucien and Martin, Henri-Jean. [The Coming of the Book: The Impact of Printing 1450--1800][febvre]{:.external}
-* Eisenstein, Elizabeth. [The Printing Press as an Agent of Change][press_agent]{:.external}.
-* Brown, Mandy. [Hypertext as an agent of change][hypertext]{:.external}
-* [Manuscripts, Books, and Maps: The Printing Press and a Changing World][booktext]{:.external}
-* [The Funding of Science][funding]{:.external}
+* Febvre, Lucien and Martin, Henri-Jean. [The Coming of the Book: The Impact of Printing 1450--1800][febvre]
+* Eisenstein, Elizabeth. [The Printing Press as an Agent of Change][press_agent].
+* Brown, Mandy. [Hypertext as an agent of change][hypertext]
+* [Manuscripts, Books, and Maps: The Printing Press and a Changing World][booktext]
+* [The Funding of Science][funding]
 
 
 [^anti-OA]: Some publishers do support open access, primarily the "gold"
@@ -1100,7 +1100,7 @@ research systems.
 [^AAP]: The Association of American Publishers was the 
     [primary opponent](http://en.wikipedia.org/wiki/Federal_Research_Public_Access_Act#Opposition)
     of the
-    <a href="http://thomas.loc.gov/cgi-bin/query/z?c112:H.R.4004:" rel="external"><abbr>FRPAA</abbr></a>
+    <a href="http://thomas.loc.gov/cgi-bin/query/z?c112:H.R.4004:"><abbr>FRPAA</abbr></a>
     and the
     [proponent](http://en.wikipedia.org/wiki/Research_Works_Act#Reception)
     of the Research Works Act.
@@ -1108,27 +1108,27 @@ research systems.
 [^GSA]:
 
     As of November <span class="oldstyle">1, 2012</span>,
-    [Georgia State Archives was set to lose seven](http://georgiaarchivesmatters.org/2012/09/27/the-staff-what-we-stand-to-lose/){:.external}
+    [Georgia State Archives was set to lose seven](http://georgiaarchivesmatters.org/2012/09/27/the-staff-what-we-stand-to-lose/)
     of the remaining ten employees. Because of
-    [the efforts of many](http://www.change.org/petitions/the-governor-of-ga-leave-our-state-archives-open-to-the-public){:.external}
+    [the efforts of many](http://www.change.org/petitions/the-governor-of-ga-leave-our-state-archives-open-to-the-public)
     Governor Nathan Deal
-    [restored two of the jobs](http://www.ajc.com/news/news/state-regional-govt-politics/5-georgia-archives-employees-will-still-lose-jobs/nShnm/){:.external},
+    [restored two of the jobs](http://www.ajc.com/news/news/state-regional-govt-politics/5-georgia-archives-employees-will-still-lose-jobs/nShnm/),
     which will be enough to keep the archives open until the middle of next
     year. At the same time, as is unfortunately all too common with competing
     political priorities, Georgia is spending upwards of <span class="oldstyle"><span
     class="symbol">$</span>400</span> million in public funds to
-    [build a controversial new football stadium][football]{:.external}
+    [build a controversial new football stadium][football]
     instead of retrofitting the Georgia Dome with a retractable roof. 
     Happily, during the latest session of the Georgia General Assembly <span
     class="oldstyle">(2013--2014)</span>, a good portion of the archive's lost
     budget was restored. You can track the progress on
-    [georgiaarchivesmatters.org](http://georgiaarchivesmatters.org/){:.external}.
+    [georgiaarchivesmatters.org](http://georgiaarchivesmatters.org/).
     
-[^RWA]: The [Research Works Act][RWA]{:.external}
+[^RWA]: The [Research Works Act][RWA]
     (<abbr>HR</abbr> <span class="oldstyle">3699</span>) would in effect repeal
     <abbr title="National Institutes of Health">NIH</abbr>'s 
     <a href="http://publicaccess.nih.gov/policy.htm">open access policy</a>.
-    Richard Price, <abbr>CEO</abbr> of [academia.edu](http://academia.edu){:.external},
+    Richard Price, <abbr>CEO</abbr> of [academia.edu](http://academia.edu),
     wrote about [some of the particular arguments](http://blog.academia.edu/post/17986108041/the-dangerous-research-works-act)
     against this bill. As a reaction to this bill and to being fed up with the
     injustices of the current system in general, some researchers set up [a
@@ -1136,7 +1136,7 @@ research systems.
     primary promoters of the bill.
 
     In response to many of these reactions,
-    [Elsevier eventually withdrew support][elsevier_RWA]{:.external}
+    [Elsevier eventually withdrew support][elsevier_RWA]
     for the bill. Representatives Darrell Issa and Carolyn B. Maloney issued
     the [following statement](https://plus.google.com/117417705451874519785/posts/7McDJNDrpcR):
     
@@ -1176,7 +1176,7 @@ research systems.
 
 [^pubvalue]: Most of the value added by publishers currently involves
     selecting and typesetting research papers, assigning a
-    <a href="http://www.doi.org/" class="external">
+    <a href="http://www.doi.org/">
       <abbr title="Digital Object Identifier">DOI</abbr></a>,
     and organizing the peer-review process. While this is commendable, it is
     hardly worth the money they get paid for it.
@@ -1186,12 +1186,12 @@ research systems.
 
 [^EU-OA]: The announcement of the mandate from the European Commission came
     only a day after the UK announced their new open access policy. The
-    commission [hopes]{:.external} that open access publishing by member states
+    commission [hopes] that open access publishing by member states
     will reach <span class="oldstyle">60<span class="symbol">%</span></span> by
     <span class="oldstyle">2016</span>.
 
 [^manhattan-project]: One of the first large-scale government research projects
-    was the [Manhattan Project]{:.external}, which led to the creation of the
+    was the [Manhattan Project], which led to the creation of the
     [US Office of Scientific Research and Development] in <span
     class="oldstyle">1941</span>, with Vannevar Bush as the director, and the
     creation of a network of national laboratories, including the [Lawrence
@@ -1239,7 +1239,7 @@ research systems.
         <p> 
 
           The London Bureau of
-          <a href="http://english.ruvr.ru/" rel="external">The Voice of Russia</a>
+          <a href="http://english.ruvr.ru/">The Voice of Russia</a>
           interviews several open access advocates, including Ross Mounce, from the 
           <a href="http://okfn.org">Open Knowledge Foundation</a>, Rita Gardner, the
           director of the Royal Geographic Society, Bjorn Brembs, Professor at the
@@ -1270,16 +1270,16 @@ research systems.
 
           An interview with Peter Suber on the Harvard University campus at the
           <a href="http://cyber.law.harvard.edu/hoap/Main_Page"
-            class="external">Berkman Center for Internet and Society</a>, where
+           >Berkman Center for Internet and Society</a>, where
           Suber is a faculty fellow.
-          <a class="external" href="http://dx.doi.org/10.6084/m9.figshare.96368">http://dx.doi.org/10.6084/m9.figshare.96368</a>
+          <a href="http://dx.doi.org/10.6084/m9.figshare.96368">http://dx.doi.org/10.6084/m9.figshare.96368</a>
           <span class="icon-cc"></span><span class="icon-cc-by"></span>
 
         </p>
       </figcaption>
     </figure>
 
-    And to finish it off, here is a great video by [PhD Comics]{:.external}:
+    And to finish it off, here is a great video by [PhD Comics]:
     {: .section }
 
     <figure id="PhD-OA" resource="http://www.youtube.com/watch?v=L5rVH1KGBCY">

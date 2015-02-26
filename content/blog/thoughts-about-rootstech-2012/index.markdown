@@ -39,7 +39,7 @@ However, there is more than one type of user.
 ## What is a User?
 
 Elizabeth Shown Mills describes three types of genealogists in her paper
-<a rel="external" href="http://www.ngsgenealogy.org/galleries/Ref_Researching/NGSQVol91Pg26077GenealogyHistory.pdf"><cite>Genealogy in the "Information Age": History's New Frontier?</cite></a>:
+<a href="http://www.ngsgenealogy.org/galleries/Ref_Researching/NGSQVol91Pg26077GenealogyHistory.pdf"><cite>Genealogy in the "Information Age": History's New Frontier?</cite></a>:
 
 > <dfn id="def:family-tree-climbers">Family Tree Climbers</dfn>
 >
@@ -83,8 +83,8 @@ track of what they are doing.
 There are changes happening in the genealogical software industry right now.
 Many family tree climbers, at some point, realize that there is more to
 genealogy than sticking names and dates on a pedigree chart. The
-[National Genealogical Society](http://ngsgenealogy.org){: rel="external" },
-[Board for Certification of Genealogists](http://bcgcertification.org/){: rel="external"},
+[National Genealogical Society](http://ngsgenealogy.org),
+[Board for Certification of Genealogists](http://bcgcertification.org/),
 and several other groups are doing much to teach people what good research
 looks like. Yet most software companies are still not getting it.
 
@@ -110,7 +110,7 @@ Genealogy 2.0
 genealogical research process, so that your research conclusions can be traced
 back to the source documents from which you obtained the information to use as
 evidence. FamilySearch is pushing hard for
-<a href="http://gedcomx.org/" rel="external"><abbr>GEDCOM X</abbr></a>
+<a href="http://gedcomx.org/"><abbr>GEDCOM X</abbr></a>
 to be the standard for this type of software.
 
 Genealogy 3.0

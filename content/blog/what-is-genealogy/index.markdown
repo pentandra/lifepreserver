@@ -102,7 +102,7 @@ publication. Many of these journals are "held hostage" by some of the big
 publishers, including Elsevier, Wiley, and Springer. However, genealogists do
 not suffer with this blight. There are a few high-quality journals published in
 the field, including the [National Genealogical Society
-Quarterly][NGSQ]{:.external} and [The Genealogist][TG]{:.external}. These
+Quarterly][NGSQ] and [The Genealogist][TG]. These
 journals are published by genealogical societies or through universities, and
 the peer-review process handled by the society. While the journals are highly
 regarded, journal publications are not the primary path for career advancement
