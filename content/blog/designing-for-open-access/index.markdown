@@ -962,11 +962,11 @@ and it was not all a technical problem. The Web was created at CERN to navigate
 between scientific documents. Designers at some point realized the vast
 potential of design on the Web, and pushed for the ability to express more.
 Business people flocked to the Web when they saw the potential to disseminate
-more information for low or zero costs. Slowly, the Web grew up and we have
-HTML5, CSS3, JavaScript, browsers that can handle great complexity without
-breaking a sweat, and an audience that wants it. Web developers come up with
-extremely creative solutions, learn from and share ideas freely with each
-other. It doesn't matter which school they went to, only how good their ideas
+more information [for low or zero costs][copy it]. Slowly, the Web grew up and
+we have HTML5, CSS3, JavaScript, browsers that can handle great complexity
+without breaking a sweat, and an audience that wants it. Web developers come up
+with extremely creative solutions, learn from and share ideas freely with each
+other. It doesn't matter which school they attended, only how good their ideas
 are. They are playing on an even playing field. Anyone can be a web developer!
 The same can happen with research and researchers.
 
