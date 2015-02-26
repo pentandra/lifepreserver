@@ -11,6 +11,7 @@ tags:
   - Open Research
   - Essay
   - Republic of Letters
+  - Phil Trans
   - Open Standards
   - Research Cases
   - Technology

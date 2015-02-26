@@ -14,6 +14,8 @@ tags:
   - Open Research
   - Opinionated
   - Connections
+  - Republic of Letters
+  - Phil Trans
   - Citizen Science
   - W3C
   - Treatise

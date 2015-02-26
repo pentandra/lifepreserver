@@ -12,6 +12,7 @@ tags:
   - Holism
   - Opinionated
   - Citizen Science
+  - Phil Trans
 ---
 
 <figure about="<%= url_for(@item) %>Julia-domna.jpg" class="aside img">
