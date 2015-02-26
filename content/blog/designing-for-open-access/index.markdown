@@ -1083,11 +1083,11 @@ research systems.
 ## Additional Resources
 {:.no_toc}
 
-* Febvre, Lucien and Martin, Henri-Jean. [The Coming of the Book: The Impact of Printing 1450--1800][febvre]
-* Eisenstein, Elizabeth. [The Printing Press as an Agent of Change][press_agent].
-* Brown, Mandy. [Hypertext as an agent of change][hypertext]
-* [Manuscripts, Books, and Maps: The Printing Press and a Changing World][booktext]
-* [The Funding of Science][funding]
+* [The Coming of the Book: The Impact of Printing 1450--1800][febvre], by Lucien Febvre and Henri-Jean Martin. 
+* [The Printing Press as an Agent of Change][press_agent], by Elizabeth Eisenstein. 
+* [Hypertext as an agent of change][hypertext], by Mandy Brown.
+* [Manuscripts, Books, and Maps: The Printing Press and a Changing World][booktext], by Bruce Jones.
+* [The Funding of Science][funding] on Wikipedia.
 
 
 [^anti-OA]: Some publishers do support open access, primarily the "gold"
