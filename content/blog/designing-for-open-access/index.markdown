@@ -29,8 +29,8 @@ popularity. Even though this a jump back in time as far as the open access
 movement goes, and was originally written, I think, from an overly academic
 viewpoint, it has some value in describing some of the foundations upon which
 we are building our ideas and company. Since the time this post was started,
-the Obama Administration has issued [a directive][obama_directive]
-to the big Federal agencies <q
+the Obama Administration has issued [a directive][obama_directive] to the big
+Federal agencies <q
 cite="http://www.whitehouse.gov/blog/2013/02/22/expanding-public-access-results-federally-funded-research">to
 make the published results of federally funded research freely available to the
 public within one year of publication and requiring researchers to better
@@ -46,7 +46,7 @@ US.
   <img property="schema:contentUrl" class="static" alt="Open Access logo" src="open_access.jpg" />
 </div>
 
-I have been thinking a lot about open access[^OA-Overview] lately and how it
+I have been thinking a lot about open access[^oa-overview] lately and how it
 relates to what we are trying to accomplish at Pentandra. I want to discuss
 what open access means to us and how that influences our approach to business
 and software design.
@@ -1203,7 +1203,7 @@ research systems.
     [National Science Foundation]. Before the war, academic research in science
     and engineering was not considered a federal responsibility.
 
-[^OA-Overview]: Open access is a complicated and highly-debated topic right
+[^oa-overview]: Open access is a complicated and highly-debated topic right
     now. Many people sit on both sides of the fence. A researcher may publish,
     referee, and even sit on editorial boards, all at the same time! If you
     have a spare half-hour, this is a good round-table discussion on open
