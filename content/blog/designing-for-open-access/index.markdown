@@ -51,13 +51,14 @@ access[^OA-Overview] lately and how it relates to what we are trying to
 accomplish at Pentandra. I want to discuss what open access means to us and how
 that influences our approach to business and software design.
 
-During the course of writing this essay, I've had to bring together a broad
-spectrum of ideas in order to render a complete picture of where we've come
-from and where we're going as a society. I've needed to reach back two thousand
-years, pull threads out of the centuries, and weave them together in our
-present time. I could have shared this picture using more of a piecemeal
-approach, separating all of this into a series of posts, but decided to keep
-the complete image intact. 
+During the course of writing what has turned into a treatise, I've had to bring
+together a broad spectrum of ideas in order to render a complete picture of
+where we've come from and where we're going as a society. I've needed to reach
+back two thousand years, pull threads out of the centuries, and weave them
+together in our present time. I could have shared this picture using more of a
+piecemeal approach, separating all of this into a series of posts, but decided
+to keep the complete image intact. I think it's important to do it this way so
+you can see more clearly where we're coming from as a company.
 
 <!--MORE-->
 
@@ -782,7 +783,7 @@ remain hidden, locked away in individual silos.
 It wasn't too long ago that science was dominated by amateurs. Research was an
 avocation enjoyed by teachers, philosophers, and other learned people.
 
-'[N]ever before has science become so alienated from the common man, and he, in
+'\[N\]ever before has science become so alienated from the common man, and he, in
 turn, so suspicious of science,' said Erwin Chargaff, the biochemist who
 discovered <a href="https://en.wikipedia.org/wiki/Chargaff%27s_rules"
 class="external">two rules</a> that helped lead to the discovery of the double
@@ -804,7 +805,7 @@ priorities to become the prominent driver for governmental funding. [In his
 farewell address][eisenhower], Dwight D. Eisenhower warned of the '<q
 cite="https://en.wikipedia.org/wiki/Eisenhower%27s_farewell_address">prospect
 of domination of the nation's scholars by Federal employment, project
-allocation, and the power of money<q>.' When the prevailing culture is *publish
+allocation, and the power of money</q>.' When the prevailing culture is *publish
 or perish*, the temptation is great to cater to the fashionable, rather than to
 follow dreams to explore uncharted territories. The chance of discovering
 spectacular vistas have to be balanced with the risk of not winning that grant.
@@ -924,13 +925,13 @@ full-time as an examiner at a patent office, that he published [four
 papers][miracle year], including his papers on [special relativity] and
 [mass-energy equivalence], that would change our understanding of space, time,
 and matter. A few years passed. According to his wife Elsa, '<q
-cite="https://en.wikipedia.org/wiki/Albert_Einstein">[d]uring breakfast on
-morning, \[Einstein\] seemed lost in thought and ignored his food. [I] asked
+cite="https://en.wikipedia.org/wiki/Albert_Einstein">\[d\]uring breakfast on
+morning, \[Einstein\] seemed lost in thought and ignored his food. \[I\] asked
 him if something was bothering him. He sat down at the piano and started
 playing. He continued playing and writing notes for half an hour, then went
-upstairs to his study, where he remained for two weeks, with [me] bringing up
+upstairs to his study, where he remained for two weeks, with \[me\] bringing up
 his food. At the end of the two weeks he came downstairs with two sheets of
-paper bearing his theory [of general relativity].</q>'[^chaplin]
+paper bearing his theory \[of general relativity\].</q>'[^chaplin]
 
 What if Einstein had waited for a federal grant before starting on this work?
 The chances of a grant proposal being accepted would have been very small,
@@ -1084,7 +1085,7 @@ research systems.
 
 * Febvre, Lucien and Martin, Henri-Jean. [The Coming of the Book: The Impact of Printing 1450--1800][febvre]{:.external}
 * Eisenstein, Elizabeth. [The Printing Press as an Agent of Change][press_agent]{:.external}.
-* [Hypertext as an agent of change][hypertext]{:.external}
+* Brown, Mandy. [Hypertext as an agent of change][hypertext]{:.external}
 * [Manuscripts, Books, and Maps: The Printing Press and a Changing World][booktext]{:.external}
 * [The Funding of Science][funding]{:.external}
 
@@ -1260,8 +1261,8 @@ research systems.
     <figure id="petersuber" class="section">
       
       <audio id="suberinterview" preload="none" controls="controls">
-        <source src="SuberPodcast_mp3.mp3" type="audio/mpeg"> 
-        <source src="SuberPodcast_ogg.ogg" type="audio/ogg"> 
+        <source src="SuberPodcast_mp3.mp3" type="audio/mpeg" />
+        <source src="SuberPodcast_ogg.ogg" type="audio/ogg" /> 
       </audio>
 
       <figcaption class="small">
@@ -1382,6 +1383,9 @@ research systems.
 *[NASA]: National Aeronautics and Space Administration
 *[W3C]: World Wide Web Consortium
 *[ISBN]: International Standard Book Number
+*[HTML5]: HyperText Markup Language, Version 5
+*[CSS3]: Cascading Style Sheets Level 3
+*[CERN]: European Organization for Nuclear Research (French: Organisation Européenne pour la Recherche Nucléaire)
 
 [clarity]: </research/#sec:clarity> "Pentandra → The Future of Research → Clarity"
 [context]: </research/#sec:context> "Pentandra → The Future of Research → Context"
@@ -1461,6 +1465,7 @@ research systems.
 [w3c_vision]: <http://www.w3.org/Consortium/mission.html#vision>
 [wiki]: <http://en.wikipedia.org/wiki/Wiki> "Wiki on Wikipedia"
 [domain-specific]: </research/#p[WtrHwt],h[WtrHwt,2]> "Pentandra → The Future of Research → To be most effective, research software must be domain specific"
+[copy it]: <http://kk.org/thetechnium/2008/01/better-than-fre/> "Better Than Free, by Kevin Kelly"
 
 <% content_for :javascripts do %>
 <script>
