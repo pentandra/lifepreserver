@@ -30,15 +30,7 @@ movement](#sec:the-modern-open-access-movement) was written in October
 popularity. Even though this a jump back in time as far as the open access
 movement goes, and was originally written, I think, from an overly academic
 viewpoint, it has some value in describing some of the foundations upon which
-we are building our ideas and company. Since the time this post was started,
-the Obama Administration has issued [a directive][obama_directive] to the big
-Federal agencies <q
-cite="http://www.whitehouse.gov/blog/2013/02/22/expanding-public-access-results-federally-funded-research">to
-make the published results of federally funded research freely available to the
-public within one year of publication and requiring researchers to better
-account for and manage the digital data resulting from federally funded
-scientific research.</q> It's a step in the right direction, at least for the
-US.
+we are building our ideas and company.
 {: .intro }
 
 ---
@@ -72,14 +64,17 @@ you can see more clearly where we're coming from as a company.
 
 ## A Brief History of Open Access
 
-We need to look at the economics of each era to understand the motivations for
-publication. I'm looking at this mainly from the perspective of the publication
-of knowledge in Europe during [the middle ages](#sec:the-middle-ages) and [the
-early modern period](#sec:the-early-modern-period), two transitionary times
-that have led us to where we are today. My goal is not to provide a
-comprehensive history of open access or research publication, but only to
-provide context for understanding our business and design approach as we work
-to solve the problem of [access to knowledge][mission].
+As I [briefly discussed earlier][economics], economics is oftentimes the
+underlying motivator for change. To really understand how we've come to where
+we are regarding access to knowledge, we need to look at the economics of each
+era to understand the motivations for publication. To start with, I'm looking
+from the perspective of the publication of knowledge in Europe during [the
+middle ages](#sec:the-middle-ages) and [the early modern
+period](#sec:the-early-modern-period), two transitionary times that have led us
+to where we are today. My goal is not to provide a comprehensive history of
+open access or research publication, but only to provide context for
+understanding our business and design approach as we work to solve the problem
+of [access to knowledge][mission].
 
 ### The Middle Ages
 
@@ -437,19 +432,37 @@ types involved in research.
 
 ## Designing True Open Access to Knowledge
 
-While open access to research journals is a great step, it does not solve the
+Since <span class="oldstyle">2012</span>, the conversation has drifted from
+open access to research papers to open access to research data. Since the time,
+we have achieved some limited success. In <span class="oldstyle">2013</span>,
+the Obama Administration issued [a directive][obama_directive] to the big US
+agencies <q
+cite="http://www.whitehouse.gov/blog/2013/02/22/expanding-public-access-results-federally-funded-research">to
+make the published results of federally funded research freely available to the
+public within one year of publication and requiring researchers to better
+account for and manage the digital data resulting from federally funded
+scientific research.</q> It's a step in the right direction, at least for the
+US. Canada's [three major funding agencies have just recently
+adopted][canada-tri-agency] a unified open-access policy. The European
+Commission has similarly encouraged open access to research outputs.
+
+But all of this is still not enough. [Research must clearly show not only
+*what* data was used, but *how* that data was used][clarity]. While open access
+to research papers and research data is a great step, it does not solve the
 fundamental problem of open access to knowledge. In a way, it's a hack on top
 of the paper publication paradigm. The same goes for [altmetrics] as it stands
-right now. True open access, to us, means more than [just open access to these
-research papers](#sec:the-modern-open-access-movement)---it means open access
+right now. True open access, to us, means more than just open access to these
+research papers or even to the underlying research data---it means open access
 to raw, unadulterated knowledge, which must include access to the
 *knowledge-creation process*. The scholarly paper is just a *format* for the
 dissemination[^dissemination] of knowledge. Even if we have access to the
-papers, we still have a problem. We still have to manually and mentally extract
-that knowledge from each paper. Our brains become the bottleneck and we spend a
-lot of time trying to crack open nuts. So what would true open access to
-knowledge look like? I have listed five general principles below that would
-really [open up our access to the knowledge of the world][mission].
+papers *and* the data, we still have a problem. We still have to manually and
+mentally extract that knowledge from each paper. Our brains become the
+bottleneck and we spend a lot of time trying to crack open nuts.
+
+So what would true open access to knowledge look like? I have listed five
+general principles below that would really [open up our access to the knowledge
+of the world][mission].
 
 ### Creating Open Knowledge
 
@@ -1316,7 +1329,9 @@ research systems.
     recent publication to the masses below. I don't like it inasmuch as it
     focuses attention on the altitude of the researcher, rather than on the
     research itself. It also implies a one-way transmission. I prefer more
-    down-to-earth terms, such as *collaboration* or *communication*.
+    down-to-earth terms, such as *collaboration* or *communication*. See
+    [Introducing Research Cases][research cases] for a more participative
+    approach.
 
 [^Vespucci]: To be completely fair, Columbus only discovered the [West Indies].
     It was [Amerigo Vespucci] who discovered the continents which we know today
@@ -1468,6 +1483,9 @@ research systems.
 [wiki]: <http://en.wikipedia.org/wiki/Wiki> "Wiki on Wikipedia"
 [domain-specific]: </research/#p[WtrHwt],h[WtrHwt,2]> "Pentandra → The Future of Research → To be most effective, research software must be domain specific"
 [copy it]: <http://kk.org/thetechnium/2008/01/better-than-fre/> "Better Than Free, by Kevin Kelly"
+[research cases]: </blog/introducing-research-cases/> "Introducing Research Cases"
+[economics]: </blog/introducing-research-cases/#sec:publish-or-perish> "Introducing Research Cases > Publish Or Perish"
+[canada-tri-agency]: <http://poeticeconomics.blogspot.com/2015/02/canadas-tri-agency-open-access-policy.html> "Canada's tri-agency open access policy, by Heather Morrison"
 
 <% content_for :javascripts do %>
 <script>
