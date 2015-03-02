@@ -4,7 +4,7 @@ description: Research Cases presented at the University of Oxford.
 kind: article
 author_name: Chris Chapman
 created_at: 2015-01-14
-updated_at: 2015-02-19
+updated_at: 2015-03-02
 published: true
 tags:
   - Citizen Science
@@ -221,7 +221,7 @@ be part of the future of research:
   Quasi-informal, open, flexible, in-process research is composed of many
   smaller pieces brought together over time. These individual pieces need to be
   published in context with fine-grained attribution for all contributions
-  made. Research shared this way would lower the administrative overhead for
+  made. Research shared this way would lower the administrative risk for
   grantors and grantees, and open the door to micro-grants and other
   alternative funding models, which would enable greater maneuverability to
   follow the direction that the research leads.
