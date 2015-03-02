@@ -743,6 +743,21 @@ The questions don't change but the answers do
    
 ### Determining Research Quality
 
+Why do we care about quality?
+
+1. We want the research conclusions to be correct and trustworthy.
+2. We nee to be able to judge how good a researcher is, for hiring or
+   promotion.
+
+Because of the nature of research, oftentimes it is hard to find an expert that
+can judge no. 2, so an appeal is made to authority. Does anyone else like what
+this researcher is saying? Has he or she published in quality journals?
+Oftentimes it is hard to know how good their research is by looking at the
+research outputs. However, this is true for other experts as well, sometimes
+something is published in a high-profile journal, and it has the appearence of
+quality research, but only later when others try to reproduce, or check the
+results, things don't add up. An anomoly is found in the data.
+
 I am not of the opinion that amateurs should be given only academic drudgework,
 but that everyone should have the opportunity to meaningfully participate at
 every level of the knowledge creation process.
@@ -768,6 +783,10 @@ that principle was followed today!
 Peer review Separating [impact] from technical validity.
 
 Yet the answers to peer review lie in the foundations of the Web.
+
+We should be able not only to see the research methodology used in a research
+project, but we need to be able to peer into the researchers brain to see how
+the researcher thinks.
 
 #### Forecasting Research Impact
 
