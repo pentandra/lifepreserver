@@ -451,14 +451,17 @@ But all of this is still not enough. [Research must clearly show not only
 to research papers and research data is a great step, it does not solve the
 fundamental problem of open access to knowledge. In a way, it's a hack on top
 of the paper publication paradigm. The same goes for [altmetrics] as it stands
-right now. True open access, to us, means more than just open access to these
-research papers or even to the underlying research data---it means open access
-to raw, unadulterated knowledge, which must include access to the
-*knowledge-creation process*. The scholarly paper is just a *format* for the
+right now. The scholarly paper is just a *format* for the
 dissemination[^dissemination] of knowledge. Even if we have access to the
 papers *and* the data, we still have a problem. We still have to manually and
 mentally extract that knowledge from each paper. Our brains become the
-bottleneck and we spend a lot of time trying to crack open nuts.
+bottleneck and we spend a lot of time trying to crack open nuts. True open
+access means more than just open access to these research papers or even to the
+underlying research data---it means open access to raw, unadulterated
+knowledge, which must include access to the *knowledge-creation process*. To
+really understand a piece of knowledge, you need to understand where it came
+from---its history. You need to understand *how and why* that nugget of
+knowledge came into existence in our culture.
 
 So what would true open access to knowledge look like? I have listed five
 general principles below that would really [open up our access to the knowledge
