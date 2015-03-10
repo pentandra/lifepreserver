@@ -45,6 +45,14 @@ relates to what we are trying to accomplish at Pentandra. I want to discuss
 what open access means to us and how that influences our approach to business
 and software design.
 
+This post is somewhat of a reaction to the open access movement, and some of
+the frustrations I've felt. It is as if open access is this bolt-on attachment
+to the paper-publication paradigm that is touted as solving all our problems
+with research---that it will open up research to the world. Yet the problem of
+open access lies deeper, and we will not reach those promised blessings of
+universal access and understanding unless we delve down and solve the problems
+that have been holding back our entire research infrastructure.
+
 During the course of writing what has turned into a treatise, I've had to bring
 together a broad spectrum of ideas in order to render a complete picture of
 where we've come from and where we're going as a society. I've needed to reach
@@ -150,6 +158,8 @@ whole.
   reprinted in <span class="oldstyle">1953</span>.</figcaption>
 </figure>
 
+Transition and the supposed immortality of copyists
+
 ### The Early Modern Period
 
 #### The Republic of Letters
@@ -157,6 +167,8 @@ whole.
 The Invisible College
 
 Rosicrucianism and the Royal Society
+
+Duplicating machines
 
 #### The Printing Press: The Work of One (or a few) for the Many
 
@@ -186,6 +198,9 @@ of the World</cite>
 </figure>
 
 ### The Modern Open Access Movement
+
+This is when open access became a thing. Before that, it existed, but not as a
+thing.
 
 In the lingua franca of the current open access movement, <dfn
 id="def:openaccess">open access</dfn> means allowing unrestricted access to the
@@ -446,9 +461,9 @@ US. Canada's [three major funding agencies have just recently
 adopted][canada-tri-agency] a unified open-access policy. The European
 Commission has similarly encouraged open access to research outputs.
 
-But all of this is still not enough. [Research must clearly show not only
-*what* data was used, but *how* that data was used][clarity]. While open access
-to research papers and research data is a great step, it does not solve the
+But all of this is still not enough. Research must [clearly show] not only
+*what* data was used, but *how* that data was used. While open access to
+research papers and research data is a great step, it does not solve the
 fundamental problem of open access to knowledge. In a way, it's a hack on top
 of the paper publication paradigm. The same goes for [altmetrics] as it stands
 right now. The scholarly paper is just a *format* for the
@@ -1429,6 +1444,7 @@ research systems.
 [clarity]: </research/#sec:clarity> "Pentandra → The Future of Research → Clarity"
 [context]: </research/#sec:context> "Pentandra → The Future of Research → Context"
 [collaboration]: </research/#sec:collaboration> "Pentandra → The Future of Research → Collaboration"
+[clearly show]: </research/#p[RsbOsr],h[RsbOsr,3]> "The Future of Research → Clarity (part of)"
 [obama_directive]: http://www.whitehouse.gov/blog/2013/02/22/expanding-public-access-results-federally-funded-research
 [oa_week]: http://openaccessweek.org/ "A global event promoting Open Access as a new norm in scholarship and research"
 [biotech_whiz]: http://www.forbes.com/sites/matthewherper/2014/01/08/why-biotech-whiz-kid-jack-andraka-is-not-on-the-forbes-30-under-30-list/
