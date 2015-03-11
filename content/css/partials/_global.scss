@@ -162,16 +162,20 @@ li p {
 }
 */
 
-.bold {
-  font-family: $bold-font-family, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-}
-
 .special, .oldstyle {
   font-family: $special-font-family, serif;
   font-weight: normal;
   font-style: normal;
+}
+
+.bold {
+  font-family: $bold-font-family, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+
+  .special, .oldstyle {
+    font-weight: bold;
+  }
 }
 
 .newthought {
