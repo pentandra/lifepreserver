@@ -187,20 +187,21 @@ communication? Technology that allows us to collaborate economically in more
 direct and differentiated ways?
 
 What would this technology look like? If all we needed was a modern version of
-correspondence, it seems that email and mailing lists would have taken over
-that role by now. Blogs and wikis are good at disseminating content, but they
-have not successfully replaced the journal either. Why haven't these
-technologies replaced the journal already? The subtle, yet obvious reason is
-that the dissemination of content is not enough. Dissemination of content is
-not valuable enough in its own right to warrant widespread change in the way we
-do research. As a research community, we're missing something important.
-Something that we've lost. Something that is worth changing for, something that
-would accelerate research like nothing else would. Never before in the history
-of our world has knowledge and enlightenment been so freely available to all.
-Never before have so many joined the ranks of the curious. Yet while they want
-to participate in the creation of knowledge, modern-day researchers shouldn't
-need to jump through the hoops of traditional journal publishers anymore.
-Journals are just not the labor-saving device they used to be.
+correspondence, it seems that [email and mailing lists would have taken
+over][skywriting] that role by now. Blogs and wikis are good at disseminating
+content, but they have not successfully replaced the journal either. Why
+haven't these technologies replaced the journal already? The subtle, yet
+obvious reason is that the dissemination of content is not enough.
+Dissemination of content is not valuable enough in its own right to warrant
+widespread change in the way we do research. As a research community, we're
+missing something important.  Something that we've lost. Something that is
+worth changing for, something that would accelerate research like nothing else
+would. Never before in the history of our world has knowledge and enlightenment
+been so freely available to all.  Never before have so many joined the ranks of
+the curious. Yet while they want to participate in the creation of knowledge,
+modern-day researchers shouldn't need to jump through the hoops of traditional
+journal publishers anymore.  Journals are just not the labor-saving device they
+used to be.
 
 Research cases is a vision for a new kind of research---a research that is more
 participative, similar in spirit to the networks of correspondence that existed
@@ -287,21 +288,7 @@ We invite anyone interested [to participate](http://researchcases.org "Help out 
 
     <figure class="bq grab">
       <blockquote>
-        <p>
-
-        These Thoughts, my dear Friend, are many of the crude and hasty, and if
-        I were merely ambitious of acquiring some Reputation in Philosophy, I
-        ought to keep them by me, 'till corrected and improved by Time and
-        farther Experience. But since even short Hints, and imperfect
-        Experiments in any new Branch of Science, being communicated, have
-        oftentimes a good Effect, in exciting the attention of the Ingenious to
-        the Subject, and so becoming the Occasion of more exact disquisitions
-        (as I before observed) and more compleat Discoveries, you are at
-        Liberty to communicate this Paper to whom you please; it being of more
-        Importance that Knowledge should increase, than that your Friend should
-        be thought an accurate Philosopher.
-
-        </p>
+        <p>These Thoughts, my dear Friend, are many of them crude and hasty, and if I were merely ambitious of acquiring some Reputation in Philosophy, I ought to keep them by me, 'till corrected and improved by Time and farther Experience. But since even short Hints, and imperfect Experiments in any new Branch of Science, being communicated, have oftentimes a good Effect, in exciting the attention of the Ingenious to the Subject, and so becoming the Occasion of more exact disquisitions (as I before observed) and more compleat Discoveries, you are at Liberty to communicate this Paper to whom you please; it being of more Importance that Knowledge should increase, than that your Friend should be thought an accurate Philosopher.</p>
       </blockquote>
       <figcaption><p>--- Quoted in <a href="http://books.google.com/books/about/The_Invention_of_Air.html">The Invention of Air</a> by Steven Johnson</p></figcaption>
     </figure>
@@ -323,3 +310,5 @@ We invite anyone interested [to participate](http://researchcases.org "Help out 
 [Sapere Aude]: http://en.wikipedia.org/wiki/Sapere_aude "A Latin phrase meaning 'Dare to know'"
 [Answering the Question: What is Enlightenment?]: http://en.wikipedia.org/wiki/Answering_the_Question:_What_is_Enlightenment%3F
 [Immanuel Kant]: http://en.wikipedia.org/wiki/Immanuel_Kant "Immanuel Kant on Wikipedia"
+[not a paper]: http://faculty.education.illinois.edu/burbules/papers/paper.1.html "This is Not a Paper, written in 1995"
+[skywriting]: http://cogprints.org/1581/1/harnad90.skywriting.html
