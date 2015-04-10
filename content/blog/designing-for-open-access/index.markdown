@@ -90,10 +90,24 @@ The Middle Ages (<span class="oldstyle">5</span>th to <span
 class="oldstyle">15</span>th centuries) was a period of great intellectual
 activity.
 
-Few books, and those that were in existence were located in monasteries. They
-were not open to the public. Illiteracy was widespread, but even beyond that,
-books were normally written in [Latin], a language that the common people did
-not even know.
+People were generally more stuck in on place. Feudal law often required that
+occupations be hereditary. Did they research? I imagine so. I think that it has
+always been man's passion to figure things out. But there was no good mechanism
+to share knowledge between fiefdoms. Most communication was oral. Few books
+existed, and those that did were cloistered away in monasteries---closed to the
+public.
+
+Illiteracy was widespread, but even beyond that, books were normally written in
+[Latin], a language that the common people did not even know. 
+
+Barriers to the spread of knowledge included:
+
+1. Language
+1. Location
+1. Access to books (formal knowledge presented in an accessible-for-learning
+   way) ($$$ and due to the below 2 problems)
+1. Formal education (was handled by the church)
+1. Scale
 
 #### The Work of Many for the One
 
@@ -111,30 +125,7 @@ whole.
   <a title="View manuscript at the British Library" property="prov:wasDerivedFrom" href="http://www.bl.uk/catalogues/illuminatedmanuscripts/ILLUMIN.ASP?Size=mid&IllID=21739">
     <img property="schema:contentUrl" class="static" src="illuminated_scientific_manuscript.jpg" alt="Illuminated manuscript depicting canons for Toledan tables (c. 1292)" />
   </a>
-  <figcaption class="small">
-
-    <span property="schema:description"><b property="dc:title schema:name">An
-    illuminated scientific manuscript</b>, or better known at the time as
-    <dfn><a href="https://en.wikipedia.org/wiki/Natural_philosophy"
-    title="Philosophia Naturalis on Wikipedia">natural philosophy</a></dfn>,
-    written in <a href="https://en.wikipedia.org/wiki/Latin"
-    title="Latin on Wikipedia">Latin</a> upon <a
-    href="https://en.wikipedia.org/wiki/Parchment" title="Parchment on
-    Wikipedia">parchment</a> circa <span class="oldstyle">1292</span>, showing
-    a contemporary dipiction of the Arabic <a
-    href="http://en.wikipedia.org/wiki/Toledan_Tables">Toledan tables</a>,
-    which used geometric chords and sines to predict the movements of the Sun,
-    Moon, and planets relative to the fixed stars. At this time, the prevailing
-    belief was that the Earth was stationary at the center of the
-    universe.</span> Licensed under a <a property="cc:license"
-    href="http://creativecommons.org/publicdomain/zero/1.0/"
-   ><abbr title="Creative Commons Zero (Public Domain
-    Dedication)">CC0</abbr> license</a> by the <a property="cc:attributionName"
-    rel="cc:attributionURL" href="http://www.bl.uk">British
-    Library</a>. <span class="icon-cc"></span><span
-    class="icon-cc-zero"></span>
-
-  </figcaption>
+  <figcaption class="small"><span property="schema:description"><b property="dc:title schema:name">An illuminated scientific manuscript</b>, or better known at the time as <dfn><a href="https://en.wikipedia.org/wiki/Natural_philosophy" title="Philosophia Naturalis on Wikipedia">natural philosophy</a></dfn>, written in <a href="https://en.wikipedia.org/wiki/Latin" title="Latin on Wikipedia">Latin</a> upon <a href="https://en.wikipedia.org/wiki/Parchment" title="Parchment on Wikipedia">parchment</a> circa <span class="oldstyle">1292</span>, showing a contemporary dipiction of the Arabic <a href="http://en.wikipedia.org/wiki/Toledan_Tables">Toledan tables</a>, which used geometric chords and sines to predict the movements of the Sun, Moon, and planets relative to the fixed stars. At this time, the prevailing belief was that the Earth was stationary at the center of the universe.</span> Licensed under a <a property="cc:license" href="http://creativecommons.org/publicdomain/zero/1.0/" ><abbr title="Creative Commons Zero (Public Domain Dedication)">CC0</abbr> license</a> by the <a property="cc:attributionName" rel="cc:attributionURL" href="http://www.bl.uk">British Library</a>. <span class="icon-cc"></span><span class="icon-cc-zero"></span></figcaption>
 </figure>
 
 #### Access to Knowledge
@@ -162,7 +153,12 @@ Transition and the supposed immortality of copyists
 
 ### The Early Modern Period
 
+1. Latency
+
 #### The Republic of Letters
+
+The availability of postal services lowered the barrier of location, though it
+introduced another problem: latency.
 
 The Invisible College
 
@@ -171,6 +167,13 @@ Rosicrucianism and the Royal Society
 Duplicating machines
 
 #### The Printing Press: The Work of One (or a few) for the Many
+
+Printing press lowered the barrier of scale. It didn't eliminate it by any
+stretch of the imagination, but it was a whole lot more economical than hiring
+a cadre of copyists.
+
+The printer and later the publisher became the one in charge of what got
+published thanks to economics.
 
 Journal des Sçavans and Philosophical Transactions
 
@@ -461,13 +464,16 @@ US. Canada's [three major funding agencies have just recently
 adopted][canada-tri-agency] a unified open-access policy. The European
 Commission has similarly encouraged open access to research outputs.
 
-But all of this is still not enough. Research must [clearly show] not only
-*what* data was used, but *how* that data was used. While open access to
-research papers and research data is a great step, it does not solve the
-fundamental problem of open access to knowledge. In a way, it's a hack on top
-of the paper publication paradigm. The same goes for [altmetrics] as it stands
-right now. The scholarly paper is just a *format* for the
-dissemination[^dissemination] of knowledge. Even if we have access to the
+But all of this is still not enough. Overcoming the barriers of the past has
+uncovered smaller problems and inconsistencies, making invisible things visible
+and giving us the opportinity to make previously impossible things possible.
+
+Research must [clearly show] not only *what* data was used, but *how* that data
+was used. While open access to research papers and research data is a great
+step, it does not solve the fundamental problem of open access to knowledge. In
+a way, it's a hack on top of the paper publication paradigm. The same goes for
+[altmetrics] as it stands right now. The scholarly paper is just a *format* for
+the dissemination[^dissemination] of knowledge. Even if we have access to the
 papers *and* the data, we still have a problem. We still have to manually and
 mentally extract that knowledge from each paper. Our brains become the
 bottleneck and we spend a lot of time trying to crack open nuts. True open
@@ -611,6 +617,10 @@ don't like paying for things that have no value. Peer review is donated. There
 is value in making research easier to do---things that could save time during
 the research process. But the inputs and outputs of the research process cannot
 be trolled!
+
+The emphasis on matter-of-fact statements instead of questions. Hiding the
+research process, or perhaps, simplifying, so that only the essential news was
+published? Terseness over expressiveness?
 
 #### Researchers as Silos
 
