@@ -536,9 +536,20 @@ will allow us to take knowledge new places in the future. This is what we call
 
 #### Knowledge on the World Wide Web
 
+With the Web such a large place, why are we worried about access to knowledge?
+Yes, there is a lot of knowledge on the World Wide Web, but the creation of
+knowledge is disconnected and not on the Web. There is no path for knowledge to
+become part of the Web in context. The transition is broken and leads to
+research rot. Knowledge integrity.
+
 The World Wide Web has spurred a world-wide collaboration of knowledge. Spirit
 of egalitarianism. Yet knowledge is put on the Web, but loses its context---its
 past and its future. We can't keep taking knowledge at face value.
+
+<figure id="fig:johnson" class="bq grab">
+  <blockquote><p>Integrity without knowledge is weak and useless, and knowledge without integrity is dangerous and dreadful.</p></blockquote>
+  <figcaption>--- Samuel Johnson, <a href="http://www.gutenberg.org/ebooks/652"><em>The History of Rasselas, Prince of Abissinia</em></a></figcaption>
+</figure>
 
 Some of the paper-bound artifacts of traditional knowledge creation, namely
 citations and peer review, are not first-class citizens on the Web. In fact,
