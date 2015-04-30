@@ -619,6 +619,9 @@ not get published for the same reason.
   <figcaption>--- Jonathan B. Buckheit and David Donoho, <a href="http://statweb.stanford.edu/~donoho/Reports/1995/wavelab.pdf"><cite>Wavelab and Reproducible Research</cite></a>, 1995.</figcaption>
 </figure>
 
+I would add to that the questions and thoughts that were in the researchers
+mind as the research was designed in the first place. 
+
 The writing process is wonderful. Writing forces you to think, to formulate
 plans and to analyze results. There is a lot of value in it! But there is no
 reason the publication process should cost money in our time. There is no
