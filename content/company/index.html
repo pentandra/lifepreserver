@@ -226,33 +226,22 @@
       </ul>
     </div>
   </section>
-  <section class="noted group" id="structure">
+  <section class="noted group" id="sec:socialbusiness">
 
-    <h2>Our Structure</h2>
+    <h2>A Social Business</h2>
 
     <div class="section">
       <div class="bd">
         <p>
 
-          <span class="newthought">We are a <a href="http://benefitcorp.net"
-              rel="external">benefit corporation</a></span>, which basically
-          means that we're legally required to create a material positive
-          impact on society and the environment. We go beyond that minimum
-          legal requirement by establishing a non-dividend stock policy and
-          reinvesting <span class="oldstyle">100%</span> of our profits in ways
-          that will promote open research, build up the community, improve our
-          products and services, or in some other way entirely---whatever will
-          further <a href="#sec:mission">our mission</a> the most and maximize
-          our social impact in the world.
+          We're a social business. What's that, you say? <dfn
+            id="def:socialbusiness">Social business</dfn>es use business
+          practices and methods as tools to tackle difficult problems of
+          society. We think social business is the ideal structure to make the
+          broad, systemic, multistakeholder changes that are needed for the
+          future of research.
 
         </p>
-        <ul>
-
-          <li><a href="/blog/a-social-business/">Essay describing our initial
-              debate between non-profit and for-profit <span class="oldstyle">(Oct
-                2012)</span></a></li>
-
-        </ul>
       </div>
       <!-- Remove after we have our first benefit report available ;)
       <div class="aside">
@@ -295,27 +284,34 @@
         <p>
 
           If you're interested in investing, keep in mind that as a social
-          business, our goal is not the fattening of shareholders' pocketbooks,
-          but rather the expanding of the social good that we can do in the
-          world. If you're still interested after that disclaimer, we'd love
-          <a href="#contact">to chat</a>.
+          business, dividends come in the form of social benefits to the world,
+          not personal financial gain. If you're still interested after that
+          disclaimer, feel free to <a href="/company/investing/">learn how
+            investing in our company works</a>.
 
         </p>
-        <figure class="bq grab">
-
-          <blockquote>
-            <p>
-
-              A charity dollar has only one life; a Social Business dollar can be
-              invested over and over again.
-
-            </p>
-          </blockquote>
-          <figcaption>--- Muhammad Yunus</figcaption>
-
-        </figure>
       </div>
     </section>
+  </section>
+  <section class="noted group" id="sec:stakeholders">
+
+    <h2>Our Stakeholders</h2>
+
+    <div class="bd">
+
+      <p>Here are some of the stakeholders we are trying to serve (in alphabetical order):</p>
+
+      <dl>
+
+        <% @item[:stakeholders].sort_by { |k| k[:name] }.each do |stakeholder| %>
+        <dt id="stakeholder:<%= stakeholder[:name].to_slug %>"><%= stakeholder[:name] %></dt>
+        <dd><%= stakeholder[:problem] %></dd>
+        <% end %>
+
+      </dl>
+
+    </div>
+
   </section>
   <section class="noted group" id="roster">
 
