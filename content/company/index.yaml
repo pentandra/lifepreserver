@@ -33,50 +33,72 @@ teammembers:
     summary: >
       Katie loves to solve a good puzzle and thrives on the details. She is
       also our finance and tax geek and actually enjoys it.
+
 stakeholders:
+
   - name: Amateur Researchers
     problem: >
       Amateurs research for the love of it, but are often excluded from
-      participation in research collaborations because barriers are set
-      arbitrarily high.
+      participation in research collaborations because they are not
+      professionals. Yet amateurs represent the great untapped potential of the
+      future of research.
     solution:
+
   - name: Professional Researchers
     problem: > 
       Researchers are stuck in a corrupt, backwards system that they can't
       escape from without sacrificing their careers. Fierce competition too
-      often leads to fraud, and sometimes even suicide.  Bad research gets
-      published and good research doesn't. Negative results are often not
-      considered 'a contribution to science' and do not get published, even
-      though they comprise <span class="oldstyle">99%</span> of the research
-      process and would be very useful to others.
+      often leads to fraud, and sometimes worse. Bad research gets published
+      and good research doesn't. Negative results are often not considered 'a
+      contribution to science' and do not get published, even though they make
+      up almost the entire research process and would be very useful to others.
     solution:
-  - name: Citizens and Commoners
+
+  - name: Friends, Romans, Countrymen
     problem: >
       Research is inaccessible to the people that need it most. Research
       remains locked away in researchers’ minds and proprietary systems.
-      Research papers are often stuck behind paywalls.
+      Research papers are often stuck behind paywalls. We all need knowledge
+      and research to be more accessible to the public.
     solution:
+
   - name: Students
     problem: >
-      Research and education are separate, but are part of the same cycle and
-      should be integrated. Students should be focusing more on critical
-      thinking and less on test scores.
+      Research and education are currently separate, but are part of the same
+      cycle and should be integrated. Critical thinking needs to be emphasized
+      over test scores.
     solution:
-  - name: Developing Societies
-    problem:
+
+  - name: Developing Researchers in Developing Societies
+    problem: >
+      Researchers often do not understand the power, opportunities, and
+      capacity they have to solve social problems in their own societies.
     solution:
+
   - name: Libraries
     problem: >
       While publishers are enjoying record profits, libraries increasingly
       cannot afford the soaring journal prices.
     solution:
-  - name: Businesses
-    problem: Social collaborations need ways to share and build everyone.
+
+  - name: Social Businesses, Entrepreneurships, and Nonprofits
+    problem: >
+      We can tackle big problems of society much more efficiently if we
+      understand the nature of the problems we face. Research collaborations
+      that span organizations are key to this understanding.
     solution:
-  - name: Funders
-    problem: Easier oversight and transparency into what is being funded.
+
+  - name: Funders and Fundees
+    problem: > 
+      Government funding of research is a fairly new invention. While it works
+      great for big science, it is too slow and burdensome for most research
+      projects. 
     solution:
+
   - name: Publishers
-    problem:
+    problem: >
+      Publishers get a bad rap, but they are trying to fill a real need in the
+      research ecosystem. In many ways they are trapped just as much as
+      professional researchers are.
     solution:
 ---
