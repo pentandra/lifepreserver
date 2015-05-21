@@ -856,7 +856,7 @@ technical concepts in a given domain or discipline. Yet, as we learned from
 vocabularies and concepts if they're willing to put forth the effort.
 [Wikipedia] anyone?
 
-#### Little Research
+#### A Hope for Little Research
 
 Just like the World Wide Web lets people of all skill levels participate in the
 [Web of Documents][web], true open access to knowledge needs to allow

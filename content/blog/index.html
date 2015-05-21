@@ -2,9 +2,9 @@
 title: Blog
 is_hidden: true
 ---
-<div class="group" resource="#blog" typeof="schema:Blog">
+<div class="group" resource="#blog" typeof="schema:Blog sioct:Weblog">
 
-  <h1 property="schema:name">Recent Thoughts</h1>
+  <h1 property="schema:name sioc:name">Recent Thoughts</h1>
 
   <% @site.publishing_articles[0, 10].each do |article| %>
   <%= render('excerpt', :article => article) %>

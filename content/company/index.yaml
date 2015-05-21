@@ -4,6 +4,7 @@ description: Who we are and what we stand for.
 meta_description: >
   Pentandra is a small company of research addicts trying to promote quality
   research and make collaboration possible throughout the research process.
+priority: 0.6
 mission: >
   Pentandra's mission is to open up the knowledge of the world, so that light
   and understanding will be more accessible to everyone.
@@ -32,5 +33,50 @@ teammembers:
     summary: >
       Katie loves to solve a good puzzle and thrives on the details. She is
       also our finance and tax geek and actually enjoys it.
-priority: 0.6
+stakeholders:
+  - name: Amateur Researchers
+    problem: >
+      Amateurs research for the love of it, but are often excluded from
+      participation in research collaborations because barriers are set
+      arbitrarily high.
+    solution:
+  - name: Professional Researchers
+    problem: > 
+      Researchers are stuck in a corrupt, backwards system that they can't
+      escape from without sacrificing their careers. Fierce competition too
+      often leads to fraud, and sometimes even suicide.  Bad research gets
+      published and good research doesn't. Negative results are often not
+      considered 'a contribution to science' and do not get published, even
+      though they comprise <span class="oldstyle">99%</span> of the research
+      process and would be very useful to others.
+    solution:
+  - name: Citizens and Commoners
+    problem: >
+      Research is inaccessible to the people that need it most. Research
+      remains locked away in researchers’ minds and proprietary systems.
+      Research papers are often stuck behind paywalls.
+    solution:
+  - name: Students
+    problem: >
+      Research and education are separate, but are part of the same cycle and
+      should be integrated. Students should be focusing more on critical
+      thinking and less on test scores.
+    solution:
+  - name: Developing Societies
+    problem:
+    solution:
+  - name: Libraries
+    problem: >
+      While publishers are enjoying record profits, libraries increasingly
+      cannot afford the soaring journal prices.
+    solution:
+  - name: Businesses
+    problem: Social collaborations need ways to share and build everyone.
+    solution:
+  - name: Funders
+    problem: Easier oversight and transparency into what is being funded.
+    solution:
+  - name: Publishers
+    problem:
+    solution:
 ---
