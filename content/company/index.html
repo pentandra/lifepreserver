@@ -249,34 +249,6 @@
       </div>
       -->
     </div>
-    <% if @site.config[:accepting_donations] then %>
-    <section id="donating" class="section">
-      <div class="bd">
-        <h3 class="flush">Donating</h3>
-      </div>
-      <div class="bd">
-        <p>
-
-          As we've started out, we've relied on <a href="/company/funders/">the
-            generous contributions of many</a> to keep us going while we work
-          to reach sustained profitability. Since we're a <a
-            href="http://benefitcorp.net">benefit corporation</a>, these
-          donations are not tax-deductible, but doesn't this, in fact, make
-          them more <em>charitable?</em> If you like what <a
-            href="#sec:mission">we're trying to do</a>, please consider
-          donating.
-
-        </p>
-      </div>
-      <div class="section aside">
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-          <input type="hidden" name="cmd" value="_s-xclick">
-          <input type="hidden" name="hosted_button_id" value="MP56WPL8KFLH8">
-          <input type="submit" class="button" name="submit" value="Donate via PayPal">
-        </form>
-      </div>
-    </section>
-    <% end %>
     <section id="investing" class="section">
       <div class="bd">
 
@@ -293,6 +265,31 @@
         </p>
       </div>
     </section>
+    <% if @site.config[:accepting_donations] then %>
+    <section id="donating" class="section">
+      <div class="bd">
+        <h3 class="flush">Donating</h3>
+      </div>
+      <div class="bd">
+        <p>
+
+          If you like what <a href="#sec:mission">we're doing</a>, but are not
+          interested in the technicalities of investing, please consider
+          donating. As we've started out, we've relied on <a
+            href="/company/funders/">the generous contributions of many</a> to
+          keep us going while we work to reach sustained profitability.
+
+        </p>
+      </div>
+      <div class="section aside">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="MP56WPL8KFLH8">
+          <input type="submit" class="button" name="submit" value="Donate via PayPal">
+        </form>
+      </div>
+    </section>
+    <% end %>
   </section>
   <section class="noted group" id="sec:stakeholders">
 
