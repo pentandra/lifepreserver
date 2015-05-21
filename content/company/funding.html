@@ -128,11 +128,16 @@ description: >
     </div>
 
   </section>
-  <section id="sec:daneandbarbarachapman" class="section">
+  <section id="sec:daneandbarbarachapman" class="section" typeof="schema:PayAction">
 
     <div class="bd">
 
-      <h3>Dane & Barbara Chapman</h3>
+      <h3>
+        <span typeof="schema:agent" resource="#dane">
+          <span property="schema:name">Dane</span></span> & 
+        <span typeof="schema:agent" resource="#barbara">
+          <span property="schema:name">Barbara</span></span> Chapman
+      </h3>
 
       <p>
         
@@ -145,9 +150,11 @@ description: >
       <aside>
         <dl>
           <dt>Funds Invested</dt>
-          <dd><span class="currency">$15,025</span> in January <span class="oldstyle">2015</span></dd>
+          <dd><span property="schema:priceCurrency" content="USD">$</span><span property="schema:price" content="15025">15,025</span> in <span property="schema:startTime" content="2015-01">January <span class="oldstyle">2015</span></span></dd>
         </dl>
       </aside>
+      <meta property="schema:actionStatus" content="schema:CompletedActionStatus" />
+      <link property="schema:recipient" href="/company/#company" />
 
     </div>
 
