@@ -266,7 +266,7 @@
       </div>
     </section>
     <% if @site.config[:accepting_donations] then %>
-    <section id="donating" class="section" typeof="schema:DonateAction">
+    <section id="donating" class="section" resource="#donate" typeof="schema:DonateAction">
       <link property="schema:actionStatus" href="schema:PotentialActionStatus" />
       <link property="schema:recipient" href="#company" />
       <div class="bd">
