@@ -92,9 +92,9 @@ stakeholders:
 
   - name: Funders and Fundees
     problem: > 
-      Government funding of research is a fairly new invention. While it works
-      great for big science, it is too slow and burdensome for most research
-      projects. 
+      Government funding of research is a relatively new invention. While it
+      works great for big science, it is too slow and burdensome for most
+      research projects. 
     solution:
 
   - name: Publishers
