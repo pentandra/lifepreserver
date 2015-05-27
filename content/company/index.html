@@ -289,22 +289,25 @@
     </section>
     <% end %>
   </section>
-  <section class="noted group" id="sec:stakeholders">
+  <section class="noted group" id="sec:stakeholders" typeof="foaf:Group" resource="#stakeholders">
 
-    <h2>Our Stakeholders</h2>
+    <h2 property="foaf:name">Our Stakeholders</h2>
 
     <div class="bd">
 
       <p>Here are some of the stakeholders we are trying to serve (in alphabetical order):</p>
 
-      <dl>
-
+      <ul class="none">
         <% @item[:stakeholders].sort_by { |k| k[:name] }.each do |stakeholder| %>
-        <dt id="stakeholder:<%= stakeholder[:name].to_slug %>"><%= stakeholder[:name] %></dt>
-        <dd><%= stakeholder[:problem] %></dd>
+        <% stakeholderSlug = stakeholder[:name].to_slug %>
+        <li id="stakeholder:<%= stakeholderSlug %>" property="foaf:member" resource="#<%= stakeholderSlug %>" typeof="foaf:Group">
+          <dl>
+            <dt property="foaf:name"><%= stakeholder[:name] %></dt>
+            <dd><%= stakeholder[:problem] %></dd>
+          </dl>
+        </li>
         <% end %>
-
-      </dl>
+      </ul>
 
     </div>
 
