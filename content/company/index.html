@@ -1,4 +1,4 @@
-<div class="group" typeof="schema:Corporation" resource="#company">
+<div class="group" typeof="fea:Company schema:Corporation" resource="#company">
   <div class="section">
 
     <div class="group holder">
@@ -169,7 +169,7 @@
 
     <div class="bd">
 
-      <p class="bigger"><%= @item[:mission] %></p>
+      <p class="bigger" property="fea:hasIntent" typeof="fea:Mission"><%= @item[:mission] %></p>
       <p>
         
         We hope that the effect of our mission will be to help bring <a
