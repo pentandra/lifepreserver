@@ -60,7 +60,7 @@ stakeholders:
       Research is inaccessible to the people that need it most. Research
       remains locked away in researchers’ minds and proprietary systems.
       Research papers are often stuck behind paywalls. We all need knowledge
-      and research to be more accessible to the public.
+      and research to be more accessible to people and machines.
     solution:
 
   - name: Students and Educators
@@ -92,9 +92,9 @@ stakeholders:
 
   - name: Funders and Fundees
     problem: > 
-      Government funding of research is a fairly new invention. While it works
-      great for big science, it is too slow and burdensome for most research
-      projects. 
+      Government funding of research is a relatively new invention. While it
+      works great for big science, it is too slow and burdensome for most
+      research projects. 
     solution:
 
   - name: Publishers
