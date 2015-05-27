@@ -1,11 +1,11 @@
-<div class="group" typeof="fea:Company schema:Corporation" resource="#company">
+<div class="group" typeof="essglobal:SSEInitiative fea:Company schema:Corporation" resource="#company">
   <div class="section">
 
     <div class="group holder">
       <div class="teamintro">
         <h1 class="large">Meet the Team.</h1>
 
-        <p class="big">
+        <p class="big" property="schema:description fea:description">
 
           We are small company of research addicts trying to promote quality
           research and make collaboration possible throughout the research
@@ -167,9 +167,9 @@
 
     <h2>Our Mission</h2>
 
-    <div class="bd">
+    <div class="bd" property="essglobal:mission">
 
-      <p class="bigger" property="fea:hasIntent" typeof="fea:Mission"><%= @item[:mission] %></p>
+      <p class="bigger" resource="#mission" property="fea:hasIntent" typeof="fea:Mission"><span property="fea:description"><%= @item[:mission] %></span></p>
       <p>
         
         We hope that the effect of our mission will be to help bring <a
@@ -202,26 +202,31 @@
       </p>
       <ul>
 
-        <li>Developing open-source tools that preserve the history of knowledge
-          creation and make open, transparent, real-time, collaborative,
-          cross-discipline research possible.</li>
+        <li property="essglobal:objective">Developing open-source tools that
+          preserve the history of knowledge creation and make open,
+          transparent, real-time, collaborative, cross-discipline research
+          possible.</li>
 
-        <li>Promoting, creating, and implementing open standards that further
-          open research and help transition research to the <a href="http://en.wikipedia.org/wiki/World_Wide_Web" title="World Wide Web on Wikipedia" rel="external">World Wide Web</a>.</li>
+        <li property="essglobal:objective">Promoting, creating, and
+          implementing open standards that further open research and help
+          transition research to the <a
+            href="http://en.wikipedia.org/wiki/World_Wide_Web" title="World
+            Wide Web on Wikipedia" rel="external">World Wide Web</a>.</li>
 
-        <li>Helping researchers, organizations, and funding agencies discover
-          and transition to policies and incentives that reward collaborative
-          open research, providing consulting services and technical or moral
-          support when needed.</li>
+        <li property="essglobal:objective">Helping researchers, organizations,
+          and funding agencies discover and transition to policies and
+          incentives that reward collaborative open research, providing
+          consulting services and technical or moral support when needed.</li>
 
-        <li>Educating interest groups, governments, and the general public
-          about the short- and long-term benefits of open research, and
-          supporting their efforts as they work to expand the influence of open
-          research on the world.</li>
+        <li property="essglobal:objective">Educating interest groups,
+          governments, and the general public about the short- and long-term
+          benefits of open research, and supporting their efforts as they work
+          to expand the influence of open research on the world.</li>
  
-        <li>Lowering the barrier of entry for the common man and practitioners
-          to participate meaningfully in high-quality research projects,
-          throughout the entire research process.</li>
+        <li property="essglobal:objective">Lowering the barrier of entry for
+          the common man and practitioners to participate meaningfully in
+          high-quality research projects, throughout the entire research
+          process.</li>
 
       </ul>
     </div>
