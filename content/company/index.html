@@ -1,4 +1,4 @@
-<div class="group" typeof="essglobal:SSEInitiative fea:Company schema:Corporation" resource="#company">
+<div class="group" prefix="essglobalst: http://purl.org/essglobal/standard/ fea: http://vocab.data.gov/def/fea#" typeof="essglobal:SSEInitiative fea:Company schema:Corporation" resource="#company">
   <div class="section">
 
     <div class="group holder">
@@ -235,11 +235,11 @@
 
     <h2>A Social Business</h2>
 
-    <link property="essglobal:legalForm" href="essglobal_st:legal-form/#L5" />
-    <link property="essglobal:qualifier" href="essglobal_st:qualifiers/#FreeKnowledgeorSoftware" />
-    <link property="essglobal:economicSector" href="essglobal_st:activities/#a10" />
-    <link property="essglobal:economicSector" href="essglobal_st:activities/#a13" />
-    <link property="essglobal:economicSector" href="essglobal_st:activities/#a16" />
+    <link property="essglobal:legalForm" resource="essglobalst:legal-form/#L5" />
+    <link property="essglobal:qualifier" resource="essglobalst:qualifiers/#FreeKnowledgeorSoftware" />
+    <link property="essglobal:economicSector" resource="essglobalst:activities/#a10" />
+    <link property="essglobal:economicSector" resource="essglobalst:activities/#a13" />
+    <link property="essglobal:economicSector" resource="essglobalst:activities/#a16" />
     <div class="section">
       <div class="bd">
         <p>
@@ -277,7 +277,7 @@
     </section>
     <% if @site.config[:accepting_donations] then %>
     <section id="donating" class="section" resource="#donate" typeof="schema:DonateAction">
-      <link property="schema:actionStatus" href="schema:PotentialActionStatus" />
+      <link property="schema:actionStatus" resource="schema:PotentialActionStatus" />
       <link property="schema:recipient" href="#company" />
       <div class="bd">
         <h3 class="flush" property="schema:name">Donating</h3>
