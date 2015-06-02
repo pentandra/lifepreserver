@@ -1,4 +1,4 @@
-<div class="group" prefix="essglobalst: http://purl.org/essglobal/standard/ fea: http://vocab.data.gov/def/fea#" typeof="essglobal:SSEInitiative fea:Company schema:Corporation" resource="#company">
+<div class="group" prefix="essglobalst: http://purl.org/essglobal/standard/ fea: http://vocab.data.gov/def/fea#" typeof="foaf:Organization essglobal:SSEInitiative fea:Company schema:Corporation" resource="#company">
   <div class="section">
 
     <div class="group holder">
@@ -403,7 +403,7 @@
         <div class="inner group">
           <address class="vcard">
             <div property="schema:name schema:legalName" class="fn org"><a
-                property="schema:url" href="<%= @site.config[:base_url] %>"
+                property="schema:url foaf:homepage" href="<%= @site.config[:base_url] %>"
                 ><%= @site.config[:vcard][:full_name] %></a></div>
             <div property="schema:location" typeof="schema:PostalAddress" class="adr">
               <div><span class="locality"
