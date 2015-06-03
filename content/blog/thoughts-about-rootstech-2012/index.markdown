@@ -44,7 +44,7 @@ Elizabeth Shown Mills describes three types of genealogists in her paper
 > <dfn id="def:family-tree-climbers">Family Tree Climbers</dfn>
 >
 > : Many are avid toilers, but they _collect_ rather than _conduct
-> investigations_. Typically, they spurn documentation [and] evidence
+> investigations_. Typically, they spurn documentation \[and\] evidence
 > standards...because they are "just doing this for fun."
 >
 > <dfn id="def:traditional-genealogists">Traditional Genealogists</dfn>
