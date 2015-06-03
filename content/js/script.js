@@ -54,7 +54,7 @@ Pentandra.Scrolling = (function() {
 
           // Scroll to the top of the main content
           $.smoothScroll({
-            scrollTarget: '#main'
+            scrollTarget: 'main'
           });
         }
 
@@ -173,10 +173,10 @@ Pentandra.Search = (function() {
 
 $(document).ready(function() {
 
-  $("#main img.retina").retina({ suffix: "@2x" });
+  $("main img.retina").retina({ suffix: "@2x" });
 
   Pentandra.Kerning.init();
-  Pentandra.Scrolling.init("#main a");
+  Pentandra.Scrolling.init("main a");
   Pentandra.Social.init('#share');
 
   AccessifyHTML5();

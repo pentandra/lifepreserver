@@ -37,7 +37,7 @@
     </div>
   </div>
 </header>
-<div id="main" role="main" class="main" property="schema:mainContentOfPage" typeof="schema:WebPageElement">
+<main role="main">
   <div class="content">
     <% if @item[:wip] then %>
     <div class="wip section">
@@ -53,7 +53,7 @@
     <% end %>
     <%= yield %>
   </div>
-</div>
+</main>
 <footer id="contentinfo" role="contentinfo" class="rev contentinfo">
   <div class="content">
     <div class="group">

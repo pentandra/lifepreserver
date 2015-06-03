@@ -13,4 +13,3 @@ include Nanoc::Helpers::XMLSitemap
 include LifePreserver::Team
 include LifePreserver::UrlShortener
 include LifePreserver::Search
-include LifePreserver::LF
