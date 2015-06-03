@@ -103,7 +103,6 @@ GEM
       celluloid (>= 0.15.2)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
-    livefyre (1.1.4)
     lumberjack (1.0.9)
     method_source (0.8.2)
     mime-types (2.4.3)
@@ -242,7 +241,6 @@ DEPENDENCIES
   jwt (~> 0.1)
   kramdown
   linkeddata
-  livefyre (= 1.1.4)
   nanoc
   nokogiri (= 1.6.3.1)
   optipng
