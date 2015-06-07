@@ -136,18 +136,22 @@ end
 
 compile '/spec/*/', :rep => :jsonld do
   if item[:extension] == 'ttl'
+    filter :erb
     filter :rdf_distiller, :in => :ttl, :out => :jsonld
   end
 end
 
 compile '/spec/*/', :rep => :rdfxml do
   if item[:extension] == 'ttl'
+    filter :erb
     filter :rdf_distiller, :in => :ttl, :out => :rdfxml
   end
 end
 
 compile '/spec/*/' do
-  # don't compile
+  if item[:extension] == 'ttl'
+    filter :erb
+  end
 end
 
 compile '/js/search-data/' do
