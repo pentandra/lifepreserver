@@ -149,7 +149,9 @@ compile '/spec/*/', :rep => :rdfxml do
 end
 
 compile '/spec/*/' do
-  if item[:extension] == 'ttl'
+  if item.binary?
+    # don’t filter binary items
+  else
     filter :erb
   end
 end
