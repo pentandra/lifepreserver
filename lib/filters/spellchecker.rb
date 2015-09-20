@@ -18,7 +18,14 @@ class SpellCheckerFilter < Nanoc::Filter
 end
 
 class HTML_Spellchecker
+
   def add(word)
-    @dict.add(word)
+    if word.include?(':') then
+      words = word.split(':', 2)
+      @dict.add_with_affix(words.first, words.last)
+    else
+      @dict.add(word)
+    end
   end
+
 end
