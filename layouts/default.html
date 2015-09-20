@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
   <meta charset="utf-8" />
-  <title><%= @item[:title] %> &#60; Pentandra</title>
+  <title><%= @item[:title] %> ‹ Pentandra</title>
   <meta name="description" content="<%= @item[:meta_description] || @item[:description] || @item[:title] %>" />
   <meta name="generator" content="nanoc 3.7.3" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="/css/style.css?v=<%= @site.config[:version] %>" />
   <link rel="alternate" type="application/atom+xml" href="/blog/feed" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <script src="/js/libs/modernizr.custom.07718.js"></script>
+  <script src="/js/libs/modernizr.custom.40730.js"></script>
 </head>
 <body prefix="cc: http://creativecommons.org/ns# ctag: http://commontag.org/ns# dbr: http://dbpedia.org/resource/ dc: http://purl.org/dc/terms/ deo: http://purl.org/spar/deo/ essglobal: http://purl.org/essglobal/vocab/ foaf: http://xmlns.com/foaf/0.1/ oa: http://www.w3.org/ns/oa# org: http://www.w3.org/ns/org# owl: http://www.w3.org/2002/07/owl# prov: http://www.w3.org/ns/prov# qb: http://purl.org/linked-data/cube# rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# rdfa: http://www.w3.org/ns/rdfa# rdfs: http://www.w3.org/2000/01/rdf-schema# schema: http://schema.org/ sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# vcard: http://www.w3.org/2006/vcard/ns# xhv: http://www.w3.org/1999/xhtml/vocab# xsd: http://www.w3.org/2001/XMLSchema#" typeof="schema:WebPage cc:Work prov:Entity">
 <!--[if lt IE 7]><p class="grab">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
@@ -37,7 +37,7 @@
     </div>
   </div>
 </header>
-<div id="main" role="main" class="main" property="schema:mainContentOfPage" typeof="schema:WebPageElement">
+<main role="main">
   <div class="content">
     <% if @item[:wip] then %>
     <div class="wip section">
@@ -53,7 +53,7 @@
     <% end %>
     <%= yield %>
   </div>
-</div>
+</main>
 <footer id="contentinfo" role="contentinfo" class="rev contentinfo">
   <div class="content">
     <div class="group">

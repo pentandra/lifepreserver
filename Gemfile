@@ -20,7 +20,6 @@ gem 'systemu'
 gem 'shortly' # For URL shortening
 gem 'html_spellchecker'
 gem 'json'
-gem 'livefyre', '1.1.4'
 gem 'jwt', '~> 0.1'
 gem 'rest-client', '~> 1.6'
 gem 'addressable'
