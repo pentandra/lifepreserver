@@ -1438,7 +1438,7 @@ research systems.
 [West Indies]: <https://en.wikipedia.org/wiki/West_Indies> "West Indies on Wikipedia"
 [w3c_vision]: <http://www.w3.org/Consortium/mission.html#vision>
 [wiki]: <http://en.wikipedia.org/wiki/Wiki> "Wiki on Wikipedia"
-[domain-specific]: </research/#p[WtrHwt],h[WtrHwt,2]> "The Future of Research > To be most effective, research software must be domain specific"
+[domain-specific]: </research/#p[WtrHwt],h[WtrHwt,2]> "The Future of Research › To be most effective, research software must be domain specific"
 
 <% content_for :javascripts do %>
 <script>
