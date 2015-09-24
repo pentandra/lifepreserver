@@ -117,3 +117,4 @@ but to machines as well.
 [mission]: </company/#sec:mission> "Pentandra → Our Mission"
 [our mission a couple years ago]: </blog/a-more-focused-mission/> "Pentandra → A More Focused Mission"
 *[CERN]: Organisation européenne pour la recherche nucléaire (English: European Organization for Nuclear Research)
+*[PhD]: Doctor of Philosophy
