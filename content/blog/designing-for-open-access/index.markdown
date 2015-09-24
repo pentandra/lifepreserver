@@ -1361,9 +1361,9 @@ research systems.
 *[W3C]: World Wide Web Consortium
 *[ISBN]: International Standard Book Number
 
-[clarity]: </research/#sec:clarity> "The Future of Research: Clarity"
-[context]: </research/#sec:context> "The Future of Research: Context"
-[collaboration]: </research/#sec:collaboration> "The Future of Research: Collaboration"
+[clarity]: </research/#sec:clarity> "Pentandra → The Future of Research → Clarity"
+[context]: </research/#sec:context> "Pentandra → The Future of Research → Context"
+[collaboration]: </research/#sec:collaboration> "Pentandra → The Future of Research → Collaboration"
 [obama_directive]: http://www.whitehouse.gov/blog/2013/02/22/expanding-public-access-results-federally-funded-research
 [oa_week]: http://openaccessweek.org/ "A global event promoting Open Access as a new norm in scholarship and research"
 [biotech_whiz]: http://www.forbes.com/sites/matthewherper/2014/01/08/why-biotech-whiz-kid-jack-andraka-is-not-on-the-forbes-30-under-30-list/
@@ -1399,7 +1399,7 @@ research systems.
 [Andraka TEDx]: <http://www.ted.com/talks/jack_andraka_a_promising_test_for_pancreatic_cancer_from_a_teenager> "Jack Andraka's TEDx speech"
 [illuminated]: <http://en.wikipedia.org/wiki/Illuminated_manuscript> "Illuminated Manuscript on Wikipedia"
 [booktext]: http://shikan.org/bjones/Books/booktext.html
-[mission]: </company/#sec:mission> "Pentandra's mission"
+[mission]: </company/#sec:mission> "Pentandra → Our Mission"
 [scientific priority]: http://en.wikipedia.org/wiki/Scientific_priority
 [lone genius]: http://en.wikipedia.org/wiki/Heroic_theory_of_invention_and_scientific_development
 [multiple discovery]: http://en.wikipedia.org/wiki/Multiple_discovery
