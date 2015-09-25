@@ -119,10 +119,11 @@ of knowledge that have traditionally been isolated. We need something that
 allows anyone to publish every bit of the journey, from the most random piece
 of evidence to the most profound analysis in real time, as the research is
 progressing. And all this research needs to be accessible not only to people,
-but to machines as well.  {: .conclusion }
+but to machines as well.
+{: .conclusion }
 
 <figure id="fig:alice" class="img" property="schema:image" resource="#alice" typeof="schema:ImageObject">
-  <a href="LRsaba_CERN_0212_00676.jpg" title="Click for full size"><img property="schema:contentUrl" src="LHR_alice.jpg" class="static" alt="ALICE detector at the Large Hadron Collider" /></a>
+  <a href="LRsaba_CERN_0212_00676.jpg" title="Click for maximum coolness"><img property="schema:contentUrl" src="LHR_alice.jpg" class="static" alt="ALICE detector at the Large Hadron Collider" /></a>
   <figcaption class="small">The <a href="http://cds.cern.ch/record/1436153"><abbr>ALICE</abbr> detector</a> at CERN. Copyright <span class="oldstyle">2012--2015 ©</span> CERN. <a href="http://copyright.cern.ch">Used by permission</a>.</figcaption>
 </figure>
 
