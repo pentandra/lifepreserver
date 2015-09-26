@@ -25,10 +25,11 @@
     <nav>
       <h2 class="big">Archives</h2>
       <ul>
-        <li><%= link_to 'Most Recent', '/blog/' %></li>
-      <% archive_years(publishing_articles).sort.reverse.each do |year| %>
+        <li><%= link_to 'Most Recent', '/blog/recent/' %></li>
+        <% archive_years(publishing_articles).sort.reverse.each do |year| %>
         <li><%= link_for_archive(year, "/blog/") %></li>
-      <% end %>
+        <% end %>
+        <li><%= link_to 'Everything', '/blog/' %></li>
       </ul>
     </nav>
   </div>
