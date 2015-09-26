@@ -88,10 +88,10 @@ few of the underlying connections in logic are ever published, making it hard
 for people to reproduce or build upon the research results. Even further,
 research that doesn't turn out as hoped is normally not published, meaning that
 all the research is lost, leading to a lot of duplication of work and wasted
-efforts. Page limits constrain how much an researcher can share in an article
-in the first place. Talk about a communications nightmare! We're only
-publishing a part of the picture here, leaving the rest up to the imagination.
-Scientific communications were healthier during the [Republic of Letters].
+efforts. Page limits constrain how much an researcher can share in the first
+place. Talk about a communications nightmare! We're only publishing a part of
+the picture here, leaving the rest up to the imagination. Scientific
+communications were healthier during the [Republic of Letters].
 
 I think it's interesting the the Web is [a graph of nodes and edges][graph],
 but we as humans extract knowledge from it primarily by reading documents.
@@ -105,10 +105,12 @@ translation process and dealt with knowledge on the Web directly?
 
 Maybe my hope for the future has come from reading too much academic writing,
 which most of the time doesn't deserve the distinction of prose. Most is not
-enjoyable to read, and seem like they were not very enjoyable to write in the
+enjoyable to read, and don't seem like they were very enjoyable to write in the
 first place. Please don't misunderstand. There _is_ a place for well-written
 prose! But situations exist, especially in research, that are not a good fit
-for the medium. Beyond that, our systems of citations are rooted in a
+for the medium. It's fine to add prose on top of the discoveries, but intricate
+prose should not be required to share the nuts and bolts of _knowledge
+creation_.  Beyond that, our systems of citations are rooted in a
 two-dimensional world, and have not been able grow beyond this limitation.
 Footnotes seem to be the best tool that we currently have to describe the
 connections between pieces of information, but are lousy at preserving the
@@ -116,7 +118,7 @@ context and meaning of those connections. There are huge opportunities here to
 improve the quality of the research experience.
 
 In general, we want to change how research is done and perceived. Research is
-currently assumed to be the domain of the scholarly elite. In the future, we
+currently assumed to be the domain of the scholarly elite. [In the future], we
 see research as part of the everyday life of many types of people, from many
 different backgrounds, contributing to the world's knowledge in many different
 ways. You don't need to be a PhD to contribute meaningfully to the progress of
@@ -151,6 +153,7 @@ but to machines as well.
 [graph]: <https://en.wikipedia.org/wiki/Graph_(mathematics)> "Graph on Wikipedia"
 [diminishing attention spans]: <http://www.theguardian.com/media-network/media-network-blog/2012/mar/19/attention-span-internet-consumer> "Say it quick, say it well – the attention span of a modern internet consumer (on theguardian)"
 [Republic of Letters]: </blog/introducing-research-cases/> "Pentandra → Introducing Research Cases"
+[In the future]: </research/#sec:future> "Pentandra → The Future of Research"
 *[CERN]: Organisation européenne pour la recherche nucléaire (English: European Organization for Nuclear Research)
 *[LHC]: Large Hadron Collider
 *[ALICE]: A Large Ion Collider Experiment
