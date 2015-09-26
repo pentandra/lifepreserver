@@ -104,7 +104,7 @@ would happen if we used the Web in a different way? If we sidestepped this
 translation process and dealt with knowledge on the Web directly?
 
 Maybe my hope for the future has come from reading too much academic writing,
-which most of the time doesn't deserve the distinction of prose. Most is not
+which most of the time doesn't deserve the distinction of prose. Most are not
 enjoyable to read, and don't seem like they were very enjoyable to write in the
 first place. Please don't misunderstand. There _is_ a place for well-written
 prose! But situations exist, especially in research, that are not a good fit
