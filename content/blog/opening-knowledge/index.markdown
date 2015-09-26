@@ -3,7 +3,7 @@ title: Opening Knowledge
 description: Designing true open access to knowledge.
 kind: article
 author_name: Chris Chapman
-created_at: 2015-09-24
+created_at: 2015-09-18
 updated_at: 2015-09-24
 published: false
 tags:
@@ -14,7 +14,6 @@ tags:
   - Research Cases
   - Republic of Letters
   - Technology
-  - W3C
   - Open Business
   - Growth
 ---
@@ -42,59 +41,79 @@ together to create a new piece of knowledge. Knowledge needs to be accessible
 in whatever way people think. We also need to be able to share knowledge in
 more open, personal ways.
 
-The <a href="#fig:squarehead">library pictured below</a> is a good metaphor for
-the needs in society right now. The sculptor, <a
-href="https://en.wikipedia.org/wiki/Sacha_Sosno">Sacha Sosno</a>, used the art
-of obliteration to leave it up to the viewer to imagine the rest the building.
-Due to the design of this library, nobody can see into the building from the
-outside, but the people inside can see out. Libraries are repositories of
-knowledge. This library could be full of the most enjoyable literature, but
+A library in France is a good metaphor for the problems with the accessibility
+of knowledge right now. If you look at <a href="#fig:squarehead">the picture
+below</a>, you notice that this library, officially named <span lang="fr">La
+Tête au Carré</span> (The Square Head), looks like a well-formed classical
+bust, up to the bottom lip. The rest is obscured by the opaque aluminum block
+that is the top four stories of the building. Due to the design of the library,
+nobody can see into the building from the outside, but the people inside can
+see out. This library could be full of the most enjoyable literature, but
 nobody would know that from looking at it. You would have to go inside and
 peruse the selection to find out.
 
 <figure id="fig:squarehead" class="img" property="schema:image" resource="#squarehead" typeof="schema:ImageObject">
   <img property="schema:contentUrl" src="square_head.jpg" class="static" alt="Tête carrée, or Square Head, a library in Nice, France" />
-  <figcaption class="small"><a href="https://www.flickr.com/photos/14382098@N03/4300141401/" lang="fr" title="Une tête au carré à Nice on Flickr"><b>Une tête au carré à Nice</b></a> (A square head in Nice) by <a lang="fr" property="cc:attributionName" rel="cc:attributionURL" href="https://www.flickr.com/photos/14382098@N03/">Benoît Lesquerbault</a>, licensed under a <a rel="cc:license" href="https://creativecommons.org/licenses/by/2.0/"><abbr title="Creative Commons Attribution 2.0 Generic">CC-BY</abbr></a> license, is actually the seven-story administration building of the municipal library in Nice, France. <span class="icon-cc"></span><span class="icon-cc-by"></span></figcaption>
+  <figcaption class="small"><a href="https://www.flickr.com/photos/14382098@N03/4300141401/" lang="fr" title="Une tête au carré à Nice on Flickr"><b>Une tête au carré à Nice</b></a> (A square head in Nice) by <a lang="fr" property="cc:attributionName" rel="cc:attributionURL" href="https://www.flickr.com/photos/14382098@N03/">Benoît Lesquerbault</a>, licensed under a <a rel="cc:license" href="https://creativecommons.org/licenses/by/2.0/"><abbr title="Creative Commons Attribution 2.0 Generic">CC-BY</abbr></a> license, is actually the seven-story administration building of the municipal library in Nice, France. The sculptor, <a
+href="https://en.wikipedia.org/wiki/Sacha_Sosno">Sacha Sosno</a>, uses the art
+of obliteration to invite the viewer to imagine the rest the sculpture. <span class="icon-cc"></span><span class="icon-cc-by"></span></figcaption>
 </figure>
 
 <!--MORE-->
 
-You could think of books, the Web, and people as libraries. All of these
-things, including each of us, are vast repositories of knowledge. Yet our
-ability to communicate this knowledge with each other is limited. Rather than
-guessing what other people are thinking, as in Sosno's sculpture, we need the
-ability to share what is in our heads!
-
-I think it's interesting the the Web is a graph of nodes and edges, but we as
-humans extract knowledge from it primarily by reading documents. While the Web
-is a vast improvement over the printing press, we must constantly go through
-the process of translating prose into information, and then connecting those
-pieces of information into knowledge in a way that our minds can understand.
-And then to write a web page, we need to translate our knowledge into prose
-that someone else can later assimilate the same way. What would happen if we
-used the Web in a different way? If we sidestepped this translation process and
-dealt with knowledge on the Web directly?
+Libraries are repositories of knowledge. You could think of books, the Web, and
+people as libraries. All of these things, especially each of us, are vast
+repositories of knowledge! Yet our ability to communicate this knowledge with
+each other is limited. We walk around and interact with each other as if we
+know each other, yet so much of who we are is not revealed to the people around
+us. We may not really be sure who we are ourselves! We try to share our
+thoughts and discoveries with each other, but to do so we have to translate
+these ideas into the much more limited medium of language. When we are directly
+in the presence of others, we have other tools at our disposal, such as
+gestures, expressions, inflection, and dynamics, but over long distances we
+experience increasing barriers to communication, especially when all we have to
+work with is prose. Our [diminishing attention spans] make the problem all the
+worse. Rather than being left to guess the meaning between the lines, as
+Sosno's sculpture suggests, we need the ability to share what is in our heads
+more directly! Prose gives the impression that it is precise, but in practice
+leaves much open for interpretation. Ambiguity is easy to introduce, and can
+confuse not only people, but machines as well.
 
 In scholarly research the situation is more bleak. The research publication
 process is too slow and isolated, not really having changed from what it was
 <span class="oldstyle">350</span> years ago. Commercial publishers put articles
 behind paywalls, charging <span class="oldstyle">$30--40</span> for access to
-each. Researchers get none of the profits.  Even with access to an article,
-very few of the underlying connections in logic are ever published, making it
-hard for people to reproduce or build upon the research results. Even further,
+each. Researchers get none of the profits. Even with access to an article, very
+few of the underlying connections in logic are ever published, making it hard
+for people to reproduce or build upon the research results. Even further,
 research that doesn't turn out as hoped is normally not published, meaning that
 all the research is lost, leading to a lot of duplication of work and wasted
-efforts. It is as if we're only publishing a part of the picture, leaving the
-rest up to the imagination.
+efforts. Page limits constrain how much an researcher can share in an article
+in the first place. Talk about a communications nightmare! We're only
+publishing a part of the picture here, leaving the rest up to the imagination.
+Scientific communications were healthier during the [Republic of Letters].
+
+I think it's interesting the the Web is [a graph of nodes and edges][graph],
+but we as humans extract knowledge from it primarily by reading documents.
+While the Web is a vast improvement over the printing press, we must constantly
+go through the process of translating prose into information, and then
+connecting those pieces of information into knowledge in a way that our minds
+can understand. And then to write a web page, we need to translate our
+knowledge into prose that someone else can later assimilate the same way. What
+would happen if we used the Web in a different way? If we sidestepped this
+translation process and dealt with knowledge on the Web directly?
 
 Maybe my hope for the future has come from reading too much academic writing,
 which most of the time doesn't deserve the distinction of prose. Most is not
-enjoyable to read, and was probably not very enjoyable to write in the first
-place. Beyond that, our systems of citations are rooted in a two-dimensional
-world, and cannot grow beyond this limitation. While footnotes seem to be the
-best tool that we currently have to describe the connections between pieces of
-information, they are lousy at preserving the context and meaning of those
-connections.
+enjoyable to read, and seem like they were not very enjoyable to write in the
+first place. Please don't misunderstand. There _is_ a place for well-written
+prose! But situations exist, especially in research, that are not a good fit
+for the medium. Beyond that, our systems of citations are rooted in a
+two-dimensional world, and have not been able grow beyond this limitation.
+Footnotes seem to be the best tool that we currently have to describe the
+connections between pieces of information, but are lousy at preserving the
+context and meaning of those connections. There are huge opportunities here to
+improve the quality of the research experience.
 
 In general, we want to change how research is done and perceived. Research is
 currently assumed to be the domain of the scholarly elite. In the future, we
@@ -108,7 +127,7 @@ class="oldstyle">90</span>'s, the Web was the domain of technical academics.
 Now the Web is cool, and everyone seems to be on the Web in some form or
 fashion. Anyone can become a web developer, blogger, or contribute something in
 some way, without anyone else's permission. Anyone—a curious student to a
-tenured professor or a seasoned entrepreneur to an aspiring researcher in a
+university scholar or a seasoned entrepreneur to an aspiring researcher in a
 third-world country to a professional genealogist—should be able to share their
 journey of discovery in a simple, open way. This mechanism should be simple
 enough to track basic questions and answers, and should scale well enough to
@@ -129,6 +148,9 @@ but to machines as well.
 
 [mission]: </company/#sec:mission> "Pentandra → Our Mission"
 [our mission a couple years ago]: </blog/a-more-focused-mission/> "Pentandra → A More Focused Mission"
+[graph]: <https://en.wikipedia.org/wiki/Graph_(mathematics)> "Graph on Wikipedia"
+[diminishing attention spans]: <http://www.theguardian.com/media-network/media-network-blog/2012/mar/19/attention-span-internet-consumer> "Say it quick, say it well – the attention span of a modern internet consumer (on theguardian)"
+[Republic of Letters]: </blog/introducing-research-cases/> "Pentandra → Introducing Research Cases"
 *[CERN]: Organisation européenne pour la recherche nucléaire (English: European Organization for Nuclear Research)
 *[LHC]: Large Hadron Collider
 *[ALICE]: A Large Ion Collider Experiment
