@@ -34,12 +34,11 @@ _We live in the information age. Why does knowledge need to be opened up?_
 
 Knowledge is trapped right now in books, on the Web, and in people's heads.
 Transferring knowledge from one person to another is harder than it needs to
-be, often requiring a lot of background learning to explain something, because
-the connections in logic are not linear. Research, at its essence, is simply
-structured learning, and is the process of connecting pieces of information
-together to create a new piece of knowledge. Knowledge needs to be accessible
-in whatever way people think. We also need to be able to share knowledge in
-more open, personal ways.
+be, often requiring a lot of background explanations because the connections in
+logic are not linear. Research, at its essence, is simply structured learning,
+and is the process of connecting pieces of information together to create a new
+piece of knowledge. Knowledge needs to be accessible in whatever way people
+think. We also need to be able to share knowledge in more open, personal ways.
 
 A library in France is a good metaphor for the problems with the accessibility
 of knowledge right now. If you look at <a href="#fig:squarehead">the picture
@@ -84,23 +83,24 @@ process is too slow and isolated, not really having changed from what it was
 <span class="oldstyle">350</span> years ago. Commercial publishers put articles
 behind paywalls, charging <span class="oldstyle">$30--40</span> for access to
 each. Researchers get none of the profits. Even with access to an article, very
-few of the underlying connections in logic are ever published, making it hard
-for people to reproduce or build upon the research results. Even further,
-research that doesn't turn out as hoped is normally not published, meaning that
-all the research is lost, leading to a lot of duplication of work and wasted
-efforts. Page limits constrain how much an researcher can share in the first
-place. Talk about a communications nightmare! We're only publishing a part of
-the picture here, leaving the rest up to the imagination. Scientific
-communications were healthier during the [Republic of Letters].
+few of the underlying connections in logic are ever published, especially when
+page limits constrain how much a researcher can share in the first place. This
+makes it hard for people to reproduce or build upon the research results. Even
+further, research that doesn't turn out as hoped is normally _not_ published at
+all. While the researcher may remember the result, the world doesn't. For all
+intents and purposes the research is lost, which leads to a lot of duplication
+of work and wasted efforts. Talk about a communications nightmare! Even in the
+best of circumstances, we're only publishing a part of the picture here, as in
+Sosno's sculpture above, leaving the rest up to the imagination.
 
-I think it's interesting the the Web is [a graph of nodes and edges][graph],
-but we as humans extract knowledge from it primarily by reading documents.
-While the Web is a vast improvement over the printing press, we must constantly
-go through the process of translating prose into information, and then
-connecting those pieces of information into knowledge in a way that our minds
-can understand. And then to write a web page, we need to translate our
-knowledge into prose that someone else can later assimilate the same way. What
-would happen if we used the Web in a different way? If we sidestepped this
+I think it's interesting the the World Wide Web is [a graph of nodes and
+edges][graph], but we as humans extract knowledge from it primarily by reading
+documents.  While the Web is a vast improvement over the printing press, we
+must constantly go through the process of translating prose into information,
+and then connecting those pieces of information into knowledge in a way that
+our minds can understand. And then to write a web page, we need to translate
+our knowledge into prose that someone else can later assimilate the same way.
+What would happen if we used the Web in a different way? If we sidestepped this
 translation process and dealt with knowledge on the Web directly?
 
 Maybe my hope for the future has come from reading too much academic writing,
@@ -108,39 +108,40 @@ which most of the time doesn't deserve the distinction of prose. Most are not
 enjoyable to read, and don't seem like they were very enjoyable to write in the
 first place. Please don't misunderstand. There _is_ a place for well-written
 prose! But situations exist, especially in research, that are not a good fit
-for the medium. It's fine to add prose on top of the discoveries, but intricate
-prose should not be required to share the nuts and bolts of _knowledge
-creation_.  Beyond that, our systems of citations are rooted in a
+for the medium. Prose can be added on top of the research like icing on a cake,
+but intricate prose should not be required to share the nuts and bolts of
+_knowledge creation_. Beyond that, our systems of citations are rooted in a
 two-dimensional world, and have not been able grow beyond this limitation.
 Footnotes seem to be the best tool that we currently have to describe the
 connections between pieces of information, but are lousy at preserving the
 context and meaning of those connections. There are huge opportunities here to
 improve the quality of the research experience.
 
-In general, we want to change how research is done and perceived. Research is
-currently assumed to be the domain of the scholarly elite. [In the future], we
-see research as part of the everyday life of many types of people, from many
-different backgrounds, contributing to the world's knowledge in many different
-ways. You don't need to be a PhD to contribute meaningfully to the progress of
-knowledge! Everyone knows different things and can bring a unique perspective
-to a question. We are creating a research counterculture. You could compare
-what we are doing to the World Wide Web. In the early <span
-class="oldstyle">90</span>'s, the Web was the domain of technical academics.
-Now the Web is cool, and everyone seems to be on the Web in some form or
-fashion. Anyone can become a web developer, blogger, or contribute something in
-some way, without anyone else's permission. Anyone—a curious student to a
-university scholar or a seasoned entrepreneur to an aspiring researcher in a
-third-world country to a professional genealogist—should be able to share their
-journey of discovery in a simple, open way. This mechanism should be simple
-enough to track basic questions and answers, and should scale well enough to
-handle complex, data-intensive research, such as studying heavy particle
-collisions in the <a href="#fig:alice">Large Hadron Collider</a> at CERN. It
-needs to open doors for collaboration within a research field and bridge fields
-of knowledge that have traditionally been isolated. We need something that
-allows anyone to publish every bit of the journey, from the most random piece
-of evidence to the most profound analysis in real time, as the research is
-progressing. And all this research needs to be accessible not only to people,
-but to machines as well.
+Research is currently assumed to be the domain of the scholarly elite. [In the
+future], we see research as part of the everyday life of many types of people,
+from many different backgrounds, contributing to the world's knowledge in many
+different ways. You don't need to be a PhD to contribute meaningfully to the
+progress of knowledge! Some people know the right questions to ask, and other
+people are better at finding answers. Everyone knows different things and can
+bring a unique perspective to a question. In general, we want to change how
+research is done and perceived. We are creating a research counterculture. You
+could compare what we are trying to achieve to the World Wide Web. In the early
+<span class="oldstyle">90</span>'s, the Web was the domain of technical
+academics.  Now the Web is cool, and everyone seems to be on the Web in some
+form or fashion. Anyone can become a web developer, blogger, or contribute
+something in some way, without anyone else's permission. Anyone—a curious
+student to a professional scholar or a seasoned entrepreneur to an aspiring
+researcher in a third-world country—should be able to share their journey of
+discovery in a simple, open way. This mechanism should be simple enough to
+track basic questions and answers, and should be flexible enough to handle
+complex, data-intensive research, such as studying heavy particle collisions in
+the <a href="#fig:alice">Large Hadron Collider</a> at CERN. It needs to open
+doors for collaboration within a research field and bridge fields of knowledge
+that have traditionally been isolated. We need something that allows anyone to
+publish every bit of the journey, from the most random piece of evidence to the
+most profound analysis in real time, as the research is progressing. And all
+this research needs to be accessible not only to people, but to machines as
+well.
 {: .conclusion }
 
 <figure id="fig:alice" class="img" property="schema:image" resource="#alice" typeof="schema:ImageObject">
