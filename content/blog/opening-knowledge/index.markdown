@@ -72,12 +72,12 @@ these ideas into the much more limited medium of language. When we are directly
 in the presence of others, we have other tools at our disposal, such as
 gestures, expressions, inflection, and dynamics, but over long distances we
 experience increasing barriers to communication, especially when all we have to
-work with is prose. Our [diminishing attention spans] make the problem all the
-worse. Rather than being left to guess the meaning between the lines, as
-Sosno's sculpture suggests, we need the ability to share what is in our heads
-more directly! Prose gives the impression that it is precise, but in practice
-leaves much open for interpretation. Ambiguity is easy to introduce, and can
-confuse not only people, but machines as well.
+work with is prose. Prose gives the impression that it is precise, but in
+practice leaves much open for interpretation. Ambiguity is easy to introduce,
+and can confuse not only people, but machines as well. Our [diminishing
+attention spans] make the problem all the worse. Rather than being left to
+guess the meaning between the lines, as Sosno's sculpture suggests, we need the
+ability to share what is in our heads more directly!
 
 In scholarly research the situation is more bleak. The research publication
 process is too slow and isolated, not really having changed from what it was
