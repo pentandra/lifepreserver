@@ -93,7 +93,7 @@ of work and wasted efforts. Talk about a communications nightmare! Even in the
 best of circumstances, we're only publishing a part of the picture here, as in
 Sosno's sculpture above, leaving the rest up to the imagination.
 
-I think it's interesting the the World Wide Web is [a graph of nodes and
+I think it's interesting that the World Wide Web is [a graph of nodes and
 edges][graph], but we as humans extract knowledge from it primarily by reading
 documents.  While the Web is a vast improvement over the printing press, we
 must constantly go through the process of translating prose into information,
