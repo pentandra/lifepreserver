@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 function createGrid () {
 	$('body').append('<div id="less-grid"></div>');
-	var pageWidth = $('#main').children(':first').width();
+	var pageWidth = $('main').children(':first').width();
 	var pageLeft = ($('body').width() - pageWidth) / 2;
 
   $('#less-grid').css({ 
