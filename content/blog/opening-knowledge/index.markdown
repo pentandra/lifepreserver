@@ -40,8 +40,8 @@ and is the process of connecting pieces of information together to create a new
 piece of knowledge. Knowledge needs to be accessible in whatever way people
 think. We also need to be able to share knowledge in more open, personal ways.
 
-A library in France is a good metaphor for the problems with the accessibility
-of knowledge right now. If you look at <a href="#fig:squarehead">the picture
+A library in France is a good metaphor for how knowledge is trapped and
+inaccessible right now. If you look at <a href="#fig:squarehead">the picture
 below</a>, you notice that this library, officially named <span lang="fr">La
 Tête au Carré</span> (The Square Head), looks like a well-formed classical
 bust, up to the bottom lip. The rest is obscured by the opaque aluminum block
@@ -88,10 +88,10 @@ page limits constrain how much a researcher can share in the first place. This
 makes it hard for people to reproduce or build upon the research results. Even
 further, research that doesn't turn out as hoped is normally _not_ published at
 all. While the researcher may remember the result, the world doesn't. For all
-intents and purposes the research is lost, which leads to a lot of duplication
-of work and wasted efforts. Talk about a communications nightmare! Even in the
-best of circumstances, we're only publishing a part of the picture here, as in
-Sosno's sculpture above, leaving the rest up to the imagination.
+intents and purposes the research is _obliterated_, which leads to a lot of
+duplication of work and wasted efforts. Talk about a communications nightmare!
+Even in the best of circumstances, we're only publishing a part of the picture
+here, as in Sosno's sculpture above, leaving the rest up to the imagination.
 
 I think it's interesting that the World Wide Web is [a graph of nodes and
 edges][graph], but we as humans extract knowledge from it primarily by reading
