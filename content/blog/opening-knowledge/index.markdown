@@ -33,7 +33,7 @@ All that we do in this company is motivated by our [mission], which is:
 _We live in the information age. Why does knowledge need to be opened up?_
 
 Knowledge is trapped right now in books, on the Web, and in people's heads. If
-our goal is to make light and understanding _more accessible_ to everyone, we
+our goal is to make _light and understanding_ more accessible to everyone, we
 need more than access to libraries and other repositories of knowledge. We need
 to lower or remove barriers to the transfer of knowledge from one person to
 another. Transferring knowledge is harder than it needs to be, often requiring
@@ -52,9 +52,9 @@ Tête au Carré</span> (The Square Head), looks like a well-formed classical
 bust, up to the bottom lip. The rest is obscured by the opaque aluminum block
 that is the top four stories of the library. It's hard to tell whether the
 library is depicting someone male or female, old or young, happy or sad.
-Neither can you tell what is in his or her mind, or even what he or she is
-thinking. Due to the design of it's exterior covering, nobody can see into the
-library from the outside, but the people inside can see out.
+Neither can you tell what is in his or her mind, nor what he or she is
+thinking. Because it is covered with finely perforated aluminum mesh, nobody
+can see into the library from the outside, but the people inside can see out.
 
 <figure id="fig:squarehead" class="img" property="schema:image" resource="#squarehead" typeof="schema:ImageObject">
   <img property="schema:contentUrl" src="square_head.jpg" class="static" alt="Tête carrée, or Square Head, a library in Nice, France" />
@@ -65,28 +65,32 @@ of obliteration to invite the viewer to imagine the rest the sculpture. <span cl
 
 <!--MORE-->
 
-I'm not sure whether the sculptor, <a href="http://www.sosno.com/">Sacha
-Sosno</a>, was trying to depict this, but to me this library screams of the
-impenetrability of the human mind. People only share what they want to share
-with others. 
-
 Libraries are repositories of knowledge. You could think of books, the Web, and
 people as libraries. All of these things, especially each of us, are vast
-repositories of knowledge! Yet our ability to communicate this knowledge with
-each other is limited. We walk around and interact with each other as if we
-know each other, yet so much of who we are is not revealed to the people around
-us. We may not really be sure who we are ourselves! We try to share our
-thoughts and discoveries with each other, but to do so we have to translate
-these ideas into the much more limited medium of language. When we are directly
-in the presence of others, we have other tools at our disposal, such as
-gestures, expressions, inflection, and dynamics, but over long distances we
-experience increasing barriers to communication, especially when all we have to
-work with is prose. Prose gives the impression that it is precise, but in
-practice leaves much open for interpretation. Ambiguity is easy to introduce,
-and can confuse not only people, but machines as well. Our [diminishing
-attention spans] make the problem all the worse. Rather than being left to
-guess the meaning between the lines, as Sosno's sculpture suggests, we need the
-ability to share what is in our heads more directly!
+repositories of knowledge! I'm not sure whether the sculptor, <a
+href="http://www.sosno.com/">Sacha Sosno</a>, was trying to depict this, but to
+me, <span lang="fr">La Tête au Carré</span> screams of the impenetrability of
+the human mind. Even if we're able to discern all the visual features of the
+heads of the people around us, it is still hard to share understanding with
+each other. As much as it would be convenient, we can't peer into each others
+minds, or send out packets of understanding to another. Our ability to
+communicate knowledge with each other is limited. We walk around and interact
+with each other as if we know each other, yet so much of who we are is not
+revealed to the people around us. We may not really be sure who we are
+ourselves! We try to share our thoughts and discoveries with each other, but to
+do so we have to translate these ideas into the much more limited medium of
+language. When we are directly in the presence of others, we have other tools
+at our disposal, such as gestures, expressions, inflection, and dynamics, but
+over long distances we experience increasing barriers to communication,
+especially when all we have to work with is prose. Prose gives the impression
+that it is precise, but in practice leaves much open for interpretation.
+Ambiguity is easy to introduce, and can confuse not only people, but machines
+as well. And even if we were perfect at our communication skills, people only
+share what they want to share with others. Much of our knowledge and
+understanding remains on the shelves, so to speak. Our [diminishing attention
+spans] make the problem all the worse! Rather than being left to guess the
+meaning between the lines, as Sosno's sculpture suggests, we need the ability
+to share what is in our heads more directly.
 
 In scholarly research the situation is more bleak. The research publication
 process is too slow and isolated, not really having changed from what it was
@@ -100,8 +104,11 @@ further, research that doesn't turn out as hoped is normally _not_ published at
 all. While the researcher may remember the result, the world doesn't. For all
 intents and purposes the research is _obliterated_, which leads to a lot of
 duplication of work and wasted efforts. Talk about a communications nightmare!
-Even in the best of circumstances, we're only publishing a part of the picture
-here, as in Sosno's sculpture above, leaving the rest up to the imagination.
+In many ways, [the way scholarly information used to be shared][Republic of
+Letters] is better than our current situation---at least it was more open and
+participative. Currently, even in the best of circumstances, we're only
+publishing a part of the picture, like Sosno's sculpture above, leaving the
+rest up to the imagination.
 
 I think it's interesting that the World Wide Web is [a graph of nodes and
 edges][graph], but we as humans extract knowledge from it primarily by reading
@@ -114,18 +121,18 @@ What would happen if we used the Web in a different way? If we sidestepped this
 translation process and dealt with knowledge on the Web directly?
 
 Maybe my hope for the future has come from reading too much academic writing,
-which most of the time doesn't deserve the distinction of prose. Most are not
+which much of the time doesn't deserve the distinction of prose. Most are not
 enjoyable to read, and don't seem like they were very enjoyable to write in the
 first place. Please don't misunderstand. There _is_ a place for well-written
 prose! But situations exist, especially in some types of research, that are not
-a good fit for the medium. Prose can be added on top of the research like icing
-on a cake, but intricate prose should not be required to share the nuts and
-bolts of _knowledge creation_. Beyond that, our systems of citations are rooted
-in a two-dimensional world, and have not been able grow beyond this limitation.
-Footnotes seem to be the best tool that we currently have to describe the
-connections between pieces of information, but are lousy at preserving the
-context and meaning of those connections. There are huge opportunities here to
-improve the quality of the research experience.
+a good fit for the form. Prose can be added on top of the research like icing
+on a cake, but intricate prose should not be required in order to share the
+nuts and bolts of _knowledge creation_. Beyond that, our systems of citations
+are rooted in a two-dimensional world, and have not been able grow beyond this
+limitation. Footnotes seem to be the best tool that we currently have to
+describe the connections between pieces of information, but are lousy at
+preserving the context and meaning of those connections. There are huge
+opportunities here to improve the quality of the research experience.
 
 Research is currently assumed to be the domain of the scholarly elite. [In the
 future], we see research as part of the everyday life of many types of people,
@@ -143,21 +150,26 @@ something in some way, without anyone else's permission. Anyone—a curious
 student to a professional scholar or a seasoned entrepreneur to an aspiring
 researcher in a third-world country—should be able to share their journey of
 discovery in a simple, open way. This mechanism should be simple enough to
-track basic questions and answers, and should be flexible enough to handle
-complex, data-intensive research. It needs to open doors for collaboration
-within a research field and bridge fields of knowledge that have traditionally
-been isolated. We need something that allows anyone to publish every bit of the
-journey, from the most random piece of evidence to the most profound analysis
-in real time, as the research is progressing. And all this research needs to be
-accessible not only to people, but to machines as well.
+track elementary questions and answers, and powerful enough to handle <a
+href="#fig:alice">complex, data-intensive research</a>. It needs to open doors
+for collaboration within a research field and bridge fields of knowledge that
+have traditionally been isolated. We need something that allows anyone to
+publish every bit of the journey, from the most random piece of evidence to the
+most profound analysis in real time, as the research is progressing. And all
+this research needs to be accessible not only to people, but to machines as
+well.
 
 <figure id="fig:alice" class="img" property="schema:image" resource="#alice" typeof="schema:ImageObject">
   <a href="LRsaba_CERN_0212_00676.jpg" title="Click for maximum coolness"><img property="schema:contentUrl" src="LHR_alice.jpg" class="static" alt="People working on the ALICE detector at the Large Hadron Collider" /></a>
   <figcaption class="small">The <a href="http://cds.cern.ch/record/1436153"><abbr>ALICE</abbr> detector</a>, part of the Large Hadron Collider at CERN. Detectors along the LHC produce <em>a lot</em> of data for research, about <span class="oldstyle">300</span> gigabytes per second.<sup id="fnref:lhc_computing_grid"><a href="#fn:lhc_computing_grid" class="footnote">1</a></sup> Image copyright <span class="oldstyle">2012--2015 ©</span> CERN. <a href="http://copyright.cern.ch">Used by permission</a>.</figcaption>
 </figure>
 
-If we're serious about sharing knowledge, we need to be willing to expose our
-minds to the world.
+So why does knowledge need to be opened up? What would be the benefit of
+making light and understanding more accessible to everyone?
+
+And this is more than an improvement of research communications here---we're
+talking about a whole new way to share knowledge! If we're serious about
+sharing knowledge, we need to be willing to expose our minds to the world. 
 {: .conclusion }
 
 ## End Notes
