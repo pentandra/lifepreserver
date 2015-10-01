@@ -5,7 +5,7 @@ kind: article
 author_name: Chris Chapman
 created_at: 2015-09-18
 updated_at: 2015-10-01
-published: false
+published: true
 tags:
   - Connections
   - Essay
