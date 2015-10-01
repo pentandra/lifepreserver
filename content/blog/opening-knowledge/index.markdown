@@ -16,6 +16,7 @@ tags:
   - Technology
   - Open Business
   - Growth
+  - W3C
 ---
 
 We blogged about [our mission a couple years ago], and it has been fascinating
