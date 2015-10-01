@@ -32,24 +32,29 @@ All that we do in this company is motivated by our [mission], which is:
 
 _We live in the information age. Why does knowledge need to be opened up?_
 
-Knowledge is trapped right now in books, on the Web, and in people's heads.
-Transferring knowledge from one person to another is harder than it needs to
-be, often requiring a lot of background explanations because the connections in
-logic are not linear. Research, at its essence, is simply structured learning,
-and is the process of connecting pieces of information together to create a new
-piece of knowledge. Knowledge needs to be accessible in whatever way people
-think. We also need to be able to share knowledge in more open, personal ways.
+Knowledge is trapped right now in books, on the Web, and in people's heads. If
+our goal is to make light and understanding _more accessible_ to everyone, we
+need more than access to libraries and other repositories of knowledge. We need
+to lower or remove barriers to the transfer of knowledge from one person to
+another. Transferring knowledge is harder than it needs to be, often requiring
+a lot of explanatory background information because the connections in logic of
+a particular nugget of knowledge are not linear. Research, at its essence, is
+simply structured learning, and is the process of connecting pieces of
+information together to create a new nugget of knowledge. We need easier ways
+to share these nuggets of knowledge. We also need to be able to share knowledge
+in more open, personal ways. Knowledge needs to be accessible in whatever way
+people think.
 
 A library in France is a good metaphor for how knowledge is trapped and
 inaccessible right now. If you look at <a href="#fig:squarehead">the picture
 below</a>, you notice that this library, officially named <span lang="fr">La
 Tête au Carré</span> (The Square Head), looks like a well-formed classical
 bust, up to the bottom lip. The rest is obscured by the opaque aluminum block
-that is the top four stories of the building. Due to the design of the library,
-nobody can see into the building from the outside, but the people inside can
-see out. This library could be full of the most enjoyable literature, but
-nobody would know that from looking at it. You would have to go inside and
-peruse the selection to find out.
+that is the top four stories of the library. It's hard to tell whether the
+library is depicting someone male or female, old or young, happy or sad.
+Neither can you tell what is in his or her mind, or even what he or she is
+thinking. Due to the design of it's exterior covering, nobody can see into the
+library from the outside, but the people inside can see out.
 
 <figure id="fig:squarehead" class="img" property="schema:image" resource="#squarehead" typeof="schema:ImageObject">
   <img property="schema:contentUrl" src="square_head.jpg" class="static" alt="Tête carrée, or Square Head, a library in Nice, France" />
@@ -59,6 +64,11 @@ of obliteration to invite the viewer to imagine the rest the sculpture. <span cl
 </figure>
 
 <!--MORE-->
+
+I'm not sure whether the sculptor, <a href="http://www.sosno.com/">Sacha
+Sosno</a>, was trying to depict this, but to me this library screams of the
+impenetrability of the human mind. People only share what they want to share
+with others. 
 
 Libraries are repositories of knowledge. You could think of books, the Web, and
 people as libraries. All of these things, especially each of us, are vast
@@ -107,11 +117,11 @@ Maybe my hope for the future has come from reading too much academic writing,
 which most of the time doesn't deserve the distinction of prose. Most are not
 enjoyable to read, and don't seem like they were very enjoyable to write in the
 first place. Please don't misunderstand. There _is_ a place for well-written
-prose! But situations exist, especially in research, that are not a good fit
-for the medium. Prose can be added on top of the research like icing on a cake,
-but intricate prose should not be required to share the nuts and bolts of
-_knowledge creation_. Beyond that, our systems of citations are rooted in a
-two-dimensional world, and have not been able grow beyond this limitation.
+prose! But situations exist, especially in some types of research, that are not
+a good fit for the medium. Prose can be added on top of the research like icing
+on a cake, but intricate prose should not be required to share the nuts and
+bolts of _knowledge creation_. Beyond that, our systems of citations are rooted
+in a two-dimensional world, and have not been able grow beyond this limitation.
 Footnotes seem to be the best tool that we currently have to describe the
 connections between pieces of information, but are lousy at preserving the
 context and meaning of those connections. There are huge opportunities here to
@@ -134,20 +144,28 @@ student to a professional scholar or a seasoned entrepreneur to an aspiring
 researcher in a third-world country—should be able to share their journey of
 discovery in a simple, open way. This mechanism should be simple enough to
 track basic questions and answers, and should be flexible enough to handle
-complex, data-intensive research, such as studying heavy particle collisions in
-the <a href="#fig:alice">Large Hadron Collider</a> at CERN. It needs to open
-doors for collaboration within a research field and bridge fields of knowledge
-that have traditionally been isolated. We need something that allows anyone to
-publish every bit of the journey, from the most random piece of evidence to the
-most profound analysis in real time, as the research is progressing. And all
-this research needs to be accessible not only to people, but to machines as
-well.
-{: .conclusion }
+complex, data-intensive research. It needs to open doors for collaboration
+within a research field and bridge fields of knowledge that have traditionally
+been isolated. We need something that allows anyone to publish every bit of the
+journey, from the most random piece of evidence to the most profound analysis
+in real time, as the research is progressing. And all this research needs to be
+accessible not only to people, but to machines as well.
 
 <figure id="fig:alice" class="img" property="schema:image" resource="#alice" typeof="schema:ImageObject">
-  <a href="LRsaba_CERN_0212_00676.jpg" title="Click for maximum coolness"><img property="schema:contentUrl" src="LHR_alice.jpg" class="static" alt="ALICE detector at the Large Hadron Collider" /></a>
-  <figcaption class="small">The <a href="http://cds.cern.ch/record/1436153"><abbr>ALICE</abbr> detector</a> at CERN. Copyright <span class="oldstyle">2012--2015 ©</span> CERN. <a href="http://copyright.cern.ch">Used by permission</a>.</figcaption>
+  <a href="LRsaba_CERN_0212_00676.jpg" title="Click for maximum coolness"><img property="schema:contentUrl" src="LHR_alice.jpg" class="static" alt="People working on the ALICE detector at the Large Hadron Collider" /></a>
+  <figcaption class="small">The <a href="http://cds.cern.ch/record/1436153"><abbr>ALICE</abbr> detector</a>, part of the Large Hadron Collider at CERN. Detectors along the LHC produce <em>a lot</em> of data for research, about <span class="oldstyle">300</span> gigabytes per second.<sup id="fnref:lhc_computing_grid"><a href="#fn:lhc_computing_grid" class="footnote">1</a></sup> Image copyright <span class="oldstyle">2012--2015 ©</span> CERN. <a href="http://copyright.cern.ch">Used by permission</a>.</figcaption>
 </figure>
+
+If we're serious about sharing knowledge, we need to be willing to expose our
+minds to the world.
+{: .conclusion }
+
+## End Notes
+{:.no_toc}
+
+1. Footnotes
+{:footnotes}
+
 
 [mission]: </company/#sec:mission> "Pentandra → Our Mission"
 [our mission a couple years ago]: </blog/a-more-focused-mission/> "Pentandra → A More Focused Mission"
@@ -159,3 +177,4 @@ well.
 *[LHC]: Large Hadron Collider
 *[ALICE]: A Large Ion Collider Experiment
 *[PhD]: Doctor of Philosophy
+[^lhc_computing_grid]: https://en.wikipedia.org/wiki/Worldwide_LHC_Computing_Grid
