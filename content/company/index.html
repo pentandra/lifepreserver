@@ -154,7 +154,7 @@
 
         Openness is all about collaboration. For us, this means open research,
         open source, and an open business model. We wouldn't be here without the
-        open contributions from many in the technological and genealogical
+        open contributions from many in the technology and research
         communities. We are happy to have a chance to
         <%= link_to "contribute back", "/open/" %>.
         We invite you to join with us to build something amazing together.
@@ -173,18 +173,22 @@
       <p>
         
         We hope that the effect of our mission will be to help bring <a
-          href="/open/#research" title="What is Open Research?">open
+          href="/open/#research" title="Pentandra → Open Research">open
           research</a> into the mainstream, so that human, enterprise, and
-        organizational <a href="http://en.wikipedia.org/wiki/Information_silo"
-          rel="external">silos</a> will be opened and <a
-          href="/research/#sec:collaboration">true research collaboration</a>
-        will take place, making it easier for anyone to participate in the
-        research process, seeking truth in a spirit of mutual cooperation,
-        across disciplines, subjects, and skill levels, allowing knowledge to
-        be shared with <a href="/research/#sec:clarity">clarity</a> and in <a
-          href="/research/#sec:context">context</a>, so that the bringing
-        together and organization of the knowledge of the world will be
-        accelerated.
+        organizational <a href="/blog/opening-knowledge/"
+          title="Pentandra → Opening Knowledge">silos will be opened</a> and <a
+          href="/research/#sec:collaboration"
+          title="Pentandra → The Future of Research → Collaboration"
+          >true research collaboration</a> will take
+        place, making it easier for anyone to participate in the research
+        process, seeking truth in a spirit of mutual cooperation, across
+        disciplines, subjects, and skill levels, allowing knowledge to be
+        shared with <a href="/research/#sec:clarity"
+          title="Pentandra → The Future of Research → Clarity">clarity</a> and in <a
+          href="/research/#sec:context"
+          title="Pentandra → The Future of Research → Context">context</a>,
+        so that the bringing together and organization of the knowledge of the
+        world will be accelerated.
 
       </p>
     </div>
@@ -244,12 +248,14 @@
       <div class="bd">
         <p>
 
-          We're a social business. What's that, you say? <dfn
-            id="def:socialbusiness">Social business</dfn>es use business
+          We <a href="/blog/a-social-business/"
+            title="Pentandra → A Social Business">looked at a
+            lot of business structures</a> and found that
+          social business was the best fit for what we are trying to achieve.
+          What's a social business, you say? A <dfn
+            id="def:socialbusiness">social business</dfn> uses business
           practices and methods as tools to tackle difficult problems of
-          society. We think social business is the ideal structure to make the
-          broad, systemic, multistakeholder changes that are needed for the
-          future of research.
+          society. It's a very new idea, so you could say we're pioneering it.
 
         </p>
       </div>
@@ -259,6 +265,66 @@
       </div>
       -->
     </div>
+    <section id="socialproblems" class="section">
+      <div class="bd">
+
+        <h3 class="flush">Social Problems</h3>
+
+        <p>
+          
+          <em>So what's the problem with research?</em> Research has been
+          published the same way for so long, and public support for research
+          so entrenched in our society that you may think that everything's <a
+            href="https://en.wiktionary.org/wiki/hunky_dory" title="Hunky dory
+            on Wiktionary">hunky dory</a>. While we share some of the problems
+          with research in <a href="/research/#sec:future" title="Pentandra →
+            The Future of Research">The Future of Research: A Manifesto</a>,
+          here are a few that we are focusing on as a company right now, that
+          affect nearly everyone in the world:
+
+        </p>
+
+        <ul class="none">
+
+          <li>
+            <dl>
+              <dt>Results from scholarly research are inaccessible to most people.</dt>
+              <dd>Research articles are often stuck behind paywalls, and even when they're not, the results are hard to find and are often written in language that is hard for most people to understand. <a href="/blog/opening-knowledge/" title="Pentandra → Opening Knowledge">Knowledge needs to be opened</a>.</dd>
+            </dl>
+          </li>
+
+          <li>
+            <dl>
+              <dt>Relatively few people are working on solutions which could improve the lives of many.</dt>
+              <dd>We need to open up the knowledge creation process so that the whole world can get involved in making the world a better place.</dd>
+            </dl>
+          </li>
+
+          <li>
+            <dl>
+              <dt>In our consumer-focused societies, people often expect to have information and knowledge spoonfed to them.</dt>
+              <dd>There's a big need for more people to research and think critically, and then to share what they have learned in an open, easy way.</dd>
+            </dl>
+          </li>
+
+          <li>
+            <dl>
+              <dt>Knowledge is often stuck and doesn't transcend the boundaries of its mother field.</dt>
+              <dd>The doors of communication between fields of knowledge need to be opened so that we can learn from each other.</dd>
+            </dl>
+          </li>
+
+          <li>
+            <dl>
+              <dt>There is too much dependence in the research community on public money.</dt>
+              <dd>Often, research doesn't happen anymore unless there's a grant for it! New marketplaces for research need to be opened and opportunities created. All types of researchers should feel free to follow their passion and contribute meaningfully to the knowledge of the world, in whichever way they see fit.</dd>
+            </dl>
+          </li>
+        
+        </ul>
+
+      </div>
+    </section>
     <section id="investing" class="section">
       <div class="bd">
 
@@ -269,8 +335,7 @@
           If you're interested in investing, keep in mind that as a social
           business, dividends come in the form of social benefits to the world,
           not personal financial gain. If you're still interested after that
-          disclaimer, feel free to <a href="/company/investing/">learn how
-            investing in our company works</a>.
+          disclaimer, feel free to <a href="#sec:contact">contact us</a>.
 
         </p>
       </div>
@@ -298,29 +363,6 @@
       </div>
     </section>
     <% end %>
-  </section>
-  <section class="noted group" id="sec:stakeholders" typeof="foaf:Group" resource="#stakeholders">
-
-    <h2 property="foaf:name">Our Stakeholders</h2>
-
-    <div class="bd">
-
-      <p>Here are some of the stakeholders we are trying to serve (in alphabetical order):</p>
-
-      <ul class="none">
-        <% @item[:stakeholders].sort_by { |k| k[:name] }.each do |stakeholder| %>
-        <% stakeholderSlug = stakeholder[:name].to_slug %>
-        <li id="stakeholder:<%= stakeholderSlug %>" property="foaf:member" resource="#<%= stakeholderSlug %>" typeof="foaf:Group">
-          <dl>
-            <dt property="foaf:name"><%= stakeholder[:name] %></dt>
-            <dd><%= stakeholder[:problem] %></dd>
-          </dl>
-        </li>
-        <% end %>
-      </ul>
-
-    </div>
-
   </section>
   <section class="noted group" id="roster">
 

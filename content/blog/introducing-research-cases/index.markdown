@@ -1,6 +1,6 @@
 ---
 title: "Introducing Research Cases"
-description: Research Cases presented at the University of Oxford.
+description: Some background motivations for research cases.
 kind: article
 author_name: Chris Chapman
 created_at: 2015-01-14
