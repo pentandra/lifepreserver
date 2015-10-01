@@ -75,23 +75,23 @@ the human mind. Even if we're able to discern all the visual features of the
 heads of the people around us, it is still hard to share understanding with
 each other. As much as it would be convenient, we can't peer into each others
 minds, or send out packets of understanding to another. Our ability to
-communicate knowledge with each other is limited. We walk around and interact
-with each other as if we know each other, yet so much of who we are is not
-revealed to the people around us. We may not really be sure who we are
-ourselves! We try to share our thoughts and discoveries with each other, but to
-do so we have to translate these ideas into the much more limited medium of
-language. When we are directly in the presence of others, we have other tools
-at our disposal, such as gestures, expressions, inflection, and dynamics, but
-over long distances we experience increasing barriers to communication,
-especially when all we have to work with is prose. Prose gives the impression
-that it is precise, but in practice leaves much open for interpretation.
-Ambiguity is easy to introduce, and can confuse not only people, but machines
-as well. And even if we were perfect at our communication skills, people only
-share what they want to share with others. Much of our knowledge and
-understanding remains on the shelves, so to speak. Our [diminishing attention
-spans] make the problem all the worse! Rather than being left to guess the
-meaning between the lines, as Sosno's sculpture suggests, we need the ability
-to share what is in our heads more directly.
+communicate knowledge is limited. We walk around and interact with each other
+as if we know each other, yet so much of who we are is not revealed to the
+people around us. We may not really be sure who we are ourselves! We try to
+share our thoughts and discoveries with each other, but to do so we have to
+translate these ideas into the much more limited medium of language. When we
+are directly in the presence of others, we have other tools at our disposal,
+such as gestures, expressions, inflection, and dynamics, but over long
+distances we experience increasing barriers to communication, especially when
+all we have to work with is prose. Prose gives the impression that it is
+precise, but in practice leaves much open for interpretation.  Ambiguity is
+easy to introduce, and can confuse not only people, but machines as well. And
+even if we were perfect at our communication skills, people only share what
+they want to share with others. Much of our knowledge and understanding remains
+on the shelves, so to speak. And our [diminishing attention spans] make the
+problem all the worse! Rather than being left to guess the meaning between the
+lines, as Sosno's sculpture suggests, we need the ability to share what is in
+our heads more directly.
 
 In scholarly research the situation is more bleak. The research publication
 process is too slow and isolated, not really having changed from what it was
