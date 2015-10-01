@@ -51,11 +51,11 @@ inaccessible right now. If you look at <a href="#fig:squarehead">the picture
 below</a>, you notice that this library, officially named <span lang="fr">La
 Tête au Carré</span> (The Square Head), looks like a well-formed classical
 bust, up to the bottom lip. The rest is obscured by the opaque aluminum block
-that is the top four stories of the library. It's hard to tell whether the
-library is depicting someone male or female, old or young, happy or sad.
-Neither can you tell what is in his or her mind, nor what he or she is
-thinking. Because it is covered with finely perforated aluminum mesh, nobody
-can see into the library from the outside, but the people inside can see out.
+that is the top four stories of the library. Because it is covered with finely
+perforated aluminum mesh, nobody can see into the library from the outside, but
+the people inside can see out. It's hard to tell whether the library is
+depicting someone male or female, old or young, happy or sad. Neither can you
+tell what is in his or her mind, nor what he or she is thinking.
 
 <figure id="fig:squarehead" class="img" property="schema:image" resource="#squarehead" typeof="schema:ImageObject">
   <img property="schema:contentUrl" src="square_head.jpg" class="static" alt="Tête carrée, or Square Head, a library in Nice, France" />
@@ -95,21 +95,21 @@ our heads more directly.
 
 In scholarly research the situation is more bleak. The research publication
 process is too slow and isolated, not really having changed from what it was
-<span class="oldstyle">350</span> years ago. Commercial publishers put articles
-behind paywalls, charging <span class="oldstyle">$30--40</span> for access to
-each. Researchers get none of the profits. Even with access to an article, very
-few of the underlying connections in logic are ever published, especially when
-page limits constrain how much a researcher can share in the first place. This
-makes it hard for people to reproduce or build upon the research results. Even
-further, research that doesn't turn out as hoped is normally _not_ published at
-all. While the researcher may remember the result, the world doesn't. For all
-intents and purposes the research is _obliterated_, which leads to a lot of
-duplication of work and wasted efforts. Talk about a communications nightmare!
-In many ways, [the way scholarly information used to be shared (in the Republic
-of Letters)][Republic of Letters] is better than our current situation---at
-least it was more open and participative. Currently, even in the best of
-circumstances, we're only publishing a part of the picture, like Sosno's
-sculpture above, leaving the rest up to the imagination.
+<span class="oldstyle">350</span> years ago. Commercial publishers put research
+articles behind paywalls, charging <span class="oldstyle">$30--40</span> for
+access to each. Researchers get none of the profits. Even with access to an
+article, very few of the underlying connections in logic are ever published,
+especially when page limits constrain how much a researcher can share in the
+first place. This makes it hard for people to reproduce or build upon the
+research results. Even further, research that doesn't turn out as hoped is
+normally _not_ published at all. While the researcher may remember the result,
+the world doesn't. For all intents and purposes the research is _obliterated_,
+which leads to a lot of duplication of work and wasted efforts. Talk about a
+communications nightmare!  In many ways, [the way scholarly information used to
+be shared (in the Republic of Letters)][Republic of Letters] is better than our
+current situation---at least it was more open and participative. Currently,
+even in the best of circumstances, we're only publishing a part of the picture,
+like Sosno's sculpture above, leaving the rest up to the imagination.
 
 I think it's interesting that the World Wide Web is [a graph of nodes and
 edges][graph], but we as humans extract knowledge from it primarily by reading
@@ -117,9 +117,10 @@ documents.  While the Web is a vast improvement over the printing press, we
 must constantly go through the process of translating prose into information,
 and then connecting those pieces of information into knowledge in a way that
 our minds can understand. And then to write a web page, we need to translate
-our knowledge into prose that someone else can later assimilate the same way.
-What would happen if we used the Web in a different way? If we sidestepped this
-translation process and dealt with knowledge on the Web directly?
+our knowledge into prose that someone else can later disassemble and assimilate
+in the same way. What would happen if we used the Web in a different way? If we
+sidestepped this translation process and dealt with knowledge on the Web
+directly?
 
 Maybe my hope for the future has come from reading too much academic writing,
 which much of the time doesn't deserve the distinction of prose. Most are not
@@ -165,18 +166,19 @@ well.
   <figcaption class="small">The <a href="http://cds.cern.ch/record/1436153"><abbr>ALICE</abbr> detector</a>, part of the Large Hadron Collider at CERN. Detectors along the LHC can produce <em>a lot</em> of data for research, <a href="https://en.wikipedia.org/wiki/Worldwide_LHC_Computing_Grid" title= "Worldwide LHC Computing Grid on Wikipedia">about <span class="oldstyle">300</span> gigabytes per second</a>. Image copyright <span class="oldstyle">2012--2015 ©</span> CERN. <a href="http://copyright.cern.ch">Used by permission</a>.</figcaption>
 </figure>
 
-So why does knowledge need to be opened up? What would be the benefit of making
-light and understanding more accessible to everyone? We need a greater ability
-to understand each other, especially over great distances. We need to take
-advantage of technology that can make it easier for us to understand and
-explain difficult concepts and relationships. We need to lower barriers to the
-sharing of knowledge so that light and understanding is more accessible to more
-people. What will be the effects of this? I don't know, but I know it will be
-good. More people will see eye to eye and understand each other. More people
-will be able to be helped. Our understanding, individually and collectively, of
-the world around us, its past and future, will improve much faster than
-otherwise. This is more than an improvement of research communications
-here---we're talking about a whole new way to share knowledge!
+So why does knowledge need to be opened up? And what would be the benefit of
+making light and understanding more accessible to everyone? We need a greater
+ability to understand each other, especially over great distances and across
+cultures. We need to take advantage of technology that can make it easier for
+us to understand and explain difficult concepts and relationships. We need to
+lower barriers to the sharing of knowledge so that light and understanding is
+more accessible to more people. What will the effects of this be? I don't know,
+but I know it will be good. More people will see eye to eye and understand each
+other. More people will be able to be helped. Our understanding, individually
+and collectively, of the world around us, its past and future, will improve
+much faster than otherwise. What we're aiming for here is more than an
+improvement of research communications---we're talking about a whole new way to
+share knowledge!
 
 And if we're serious about sharing knowledge, we need to be willing to expose
 our minds to the world.
