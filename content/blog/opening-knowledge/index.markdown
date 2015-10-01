@@ -35,16 +35,16 @@ _We live in the information age. Why does knowledge need to be opened up?_
 
 Knowledge is trapped right now in books, on the Web, and in people's heads. If
 our goal is to make _light and understanding_ more accessible to everyone, we
-need more than access to libraries and other repositories of knowledge. We need
-to lower or remove barriers to the transfer of knowledge from one person to
-another. Transferring knowledge is harder than it needs to be, often requiring
-a lot of explanatory background information because the connections in logic of
-a particular nugget of knowledge are not linear. Research, at its essence, is
-simply structured learning, and is the process of connecting pieces of
-information together to create a new nugget of knowledge. We need easier ways
-to share these nuggets of knowledge. We also need to be able to share knowledge
-in more open, personal ways. Knowledge needs to be accessible in whatever way
-people think.
+need more than _access_ to books, libraries and other repositories of
+knowledge.  We need to lower or remove barriers to the transfer of knowledge
+from one person to another. Transferring knowledge is harder than it needs to
+be, often requiring a lot of explanatory background information because the
+connections in logic of a particular nugget of knowledge are not linear.
+Research, at its essence, is simply structured learning, and is the process of
+connecting pieces of information together to create a new nugget of knowledge.
+We need easier ways to share these nuggets of knowledge. We also need to be
+able to share knowledge in more open, personal ways. Knowledge needs to be
+accessible in whatever way people think.
 
 A library in France is a good metaphor for how knowledge is trapped and
 inaccessible right now. If you look at <a href="#fig:squarehead">the picture
