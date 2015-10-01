@@ -164,12 +164,21 @@ well.
   <figcaption class="small">The <a href="http://cds.cern.ch/record/1436153"><abbr>ALICE</abbr> detector</a>, part of the Large Hadron Collider at CERN. Detectors along the LHC produce <em>a lot</em> of data for research, about <span class="oldstyle">300</span> gigabytes per second.<sup id="fnref:lhc_computing_grid"><a href="#fn:lhc_computing_grid" class="footnote">1</a></sup> Image copyright <span class="oldstyle">2012--2015 ©</span> CERN. <a href="http://copyright.cern.ch">Used by permission</a>.</figcaption>
 </figure>
 
-So why does knowledge need to be opened up? What would be the benefit of
-making light and understanding more accessible to everyone?
+So why does knowledge need to be opened up? What would be the benefit of making
+light and understanding more accessible to everyone? We need a greater ability
+to understand each other, especially over great distances. We need to take
+advantage of technology that can make it easier for us to understand and
+explain difficult concepts and relationships. We need to lower barriers to the
+sharing of knowledge so that light and understanding is more accessible to more
+people. What will be the effects of this? I don't know, but I know it will be
+good. More people will see eye to eye and understand each other. More people
+will be able to be helped. Our understanding, individually and collectively, of
+the world around us, its past and future, will improve much faster than
+otherwise. This is more than an improvement of research communications
+here---we're talking about a whole new way to share knowledge!
 
-And this is more than an improvement of research communications here---we're
-talking about a whole new way to share knowledge! If we're serious about
-sharing knowledge, we need to be willing to expose our minds to the world. 
+And if we're serious about sharing knowledge, we need to be willing to expose
+our minds to the world.
 {: .conclusion }
 
 ## End Notes
