@@ -105,11 +105,11 @@ further, research that doesn't turn out as hoped is normally _not_ published at
 all. While the researcher may remember the result, the world doesn't. For all
 intents and purposes the research is _obliterated_, which leads to a lot of
 duplication of work and wasted efforts. Talk about a communications nightmare!
-In many ways, [the way scholarly information used to be shared][Republic of
-Letters] is better than our current situation---at least it was more open and
-participative. Currently, even in the best of circumstances, we're only
-publishing a part of the picture, like Sosno's sculpture above, leaving the
-rest up to the imagination.
+In many ways, [the way scholarly information used to be shared (in the Republic
+of Letters)][Republic of Letters] is better than our current situation---at
+least it was more open and participative. Currently, even in the best of
+circumstances, we're only publishing a part of the picture, like Sosno's
+sculpture above, leaving the rest up to the imagination.
 
 I think it's interesting that the World Wide Web is [a graph of nodes and
 edges][graph], but we as humans extract knowledge from it primarily by reading
