@@ -161,7 +161,7 @@ well.
 
 <figure id="fig:alice" class="img" property="schema:image" resource="#alice" typeof="schema:ImageObject">
   <a href="LRsaba_CERN_0212_00676.jpg" title="Click for maximum coolness"><img property="schema:contentUrl" src="LHR_alice.jpg" class="static" alt="People working on the ALICE detector at the Large Hadron Collider" /></a>
-  <figcaption class="small">The <a href="http://cds.cern.ch/record/1436153"><abbr>ALICE</abbr> detector</a>, part of the Large Hadron Collider at CERN. Detectors along the LHC produce <em>a lot</em> of data for research, about <span class="oldstyle">300</span> gigabytes per second.<sup id="fnref:lhc_computing_grid"><a href="#fn:lhc_computing_grid" class="footnote">1</a></sup> Image copyright <span class="oldstyle">2012--2015 ©</span> CERN. <a href="http://copyright.cern.ch">Used by permission</a>.</figcaption>
+  <figcaption class="small">The <a href="http://cds.cern.ch/record/1436153"><abbr>ALICE</abbr> detector</a>, part of the Large Hadron Collider at CERN. Detectors along the LHC can produce <em>a lot</em> of data for research, <a href="https://en.wikipedia.org/wiki/Worldwide_LHC_Computing_Grid" title= "Worldwide LHC Computing Grid on Wikipedia">about <span class="oldstyle">300</span> gigabytes per second</a>. Image copyright <span class="oldstyle">2012--2015 ©</span> CERN. <a href="http://copyright.cern.ch">Used by permission</a>.</figcaption>
 </figure>
 
 So why does knowledge need to be opened up? What would be the benefit of making
@@ -180,13 +180,6 @@ here---we're talking about a whole new way to share knowledge!
 And if we're serious about sharing knowledge, we need to be willing to expose
 our minds to the world.
 {: .conclusion }
-
-## End Notes
-{:.no_toc}
-
-1. Footnotes
-{:footnotes}
-
 
 [mission]: </company/#sec:mission> "Pentandra → Our Mission"
 [our mission a couple years ago]: </blog/a-more-focused-mission/> "Pentandra → A More Focused Mission"
