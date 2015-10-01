@@ -44,8 +44,13 @@
 .icon-export:before {
 	content: "\e606";
 }
-.icon-heart:before {
+.icon-heart {
+  font-size: 1.1em;
+  vertical-align: text-bottom;
+
+  &:before {
 	content: "\e607";
+  }
 }
 .icon-star:before {
 	content: "\e608";

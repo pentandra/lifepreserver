@@ -124,7 +124,7 @@ accurate."[^1] This type of software integrates openly with software from other
 domains, such as history and other social sciences.
 
 Some software companies are just starting to scratch the surface of Genealogy
-<span class="oldstyle">2.0</span>. As [more tools](/products/#geungle) become
+<span class="oldstyle">2.0</span>. As [more tools](/solutions/#geungle) become
 available that support traditional genealogists and generational historians, we
 will see the gap between new and professional genealogists narrow. Tools that
 work the way research works will help new genealogists comprehend the research

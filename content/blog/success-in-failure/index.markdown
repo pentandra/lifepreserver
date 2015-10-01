@@ -36,7 +36,7 @@ other companies succeed gave us that "if they can do it, we can do it" feeling.
 Seeing the companies that are a little further along than we are gave us a
 vision of the next steps we need to take. Some of these steps are exciting and
 some are a little intimidating. It's exciting to think about actually having
-our [first product](/products#geungle) out there, in the hands of the people
+our [first product](/solutions/#geungle) out there, in the hands of the people
 that want it, and to start making a difference! It's intimidating to realize
 that we need to build partnerships with other businesses. It's easy for us to
 connect with like-minded people, but business-to-business is a whole new

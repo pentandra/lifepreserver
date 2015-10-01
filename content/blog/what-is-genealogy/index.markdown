@@ -124,7 +124,7 @@ field. I mean who doesn't care about the past and how their ancestors were
 affected by it or how their ancestors affected the past? Our approach is not so
 much about family trees (there are plenty of companies that do that), but it
 could be called micro-history or generational history research (for more info
-about that see [Geungle](/products/#geungle)).
+about that see [Geungle](/solutions/#geungle)).
 
 ## What's needed?
 
