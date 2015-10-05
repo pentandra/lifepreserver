@@ -1,5 +1,5 @@
 # Site version. Used for cache busting as well as for general information.
-version: 1.18.1
+version: 1.18.2
 
 # A list of file extensions that nanoc will consider to be textual rather than
 # binary. If an item with an extension not in this list is found,  the file

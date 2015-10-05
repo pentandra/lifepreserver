@@ -18,15 +18,18 @@ module Nanoc::Filters
       # Parse
       doc = Nokogiri::HTML.fragment(content)
 
-      # Find all src and href attributes
-      doc.xpath("descendant::*[@src]", "descendant::*[@href]").each do |element|
-        targetAttribute = element.matches?("a") ? "href" : "src"
-          
-        target = element[targetAttribute]
-        next if target.nil? || is_not_local(target)
+      attributes_to_check = ['src', 'href', 'resource']
 
-        # Add the item path to the target
-        element[targetAttribute] = @item_rep.path + target
+      # Find all src, href, and resource attributes
+      doc.xpath("descendant::*[@src]", "descendant::*[@href]", "descendant::*[@resource]").each do |element|
+        element.attributes.select { |k,v| attributes_to_check.include? k }.each do |attribute_name, attribute|
+          
+          target = attribute.content
+          next if target.nil? || is_not_local(target)
+
+          # Add the item path to the target
+          element[attribute_name] = @item_rep.path + target
+        end
       end
 
       # Done
