@@ -262,7 +262,7 @@ end
 route '/spec/*/', :rep => :jsonld do
   if item[:extension] == 'ttl'
     item.identifier.chop + '.jsonld'
-end
+  end
 end
 
 route '/spec/*/', :rep => :rdfxml do
