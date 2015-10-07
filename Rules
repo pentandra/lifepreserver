@@ -134,21 +134,21 @@ compile '/static/*/' do
   # don't compile
 end
 
-compile '/spec/*/', :rep => :jsonld do
+compile '/spec/*', :rep => :jsonld do
   if item[:extension] == 'ttl'
     filter :erb
     filter :rdf_distiller, :in => :ttl, :out => :jsonld
   end
 end
 
-compile '/spec/*/', :rep => :rdfxml do
+compile '/spec/*', :rep => :rdfxml do
   if item[:extension] == 'ttl'
     filter :erb
     filter :rdf_distiller, :in => :ttl, :out => :rdfxml
   end
 end
 
-compile '/spec/*/' do
+compile '/spec/*' do
   if item.binary?
     # don’t filter binary items
   else
@@ -259,13 +259,13 @@ route '/spec/js/*/' do
   item.identifier.chop + '.js'
 end
 
-route '/spec/*/', :rep => :jsonld do
+route '/spec/*', :rep => :jsonld do
   if item[:extension] == 'ttl'
     item.identifier.chop + '.jsonld'
   end
 end
 
-route '/spec/*/', :rep => :rdfxml do
+route '/spec/*', :rep => :rdfxml do
   if item[:extension] == 'ttl'
     item.identifier.chop + '.rdf'
   end
