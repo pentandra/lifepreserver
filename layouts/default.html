@@ -163,9 +163,9 @@
 <script src="/js/plugins.js?v=<%= @config[:version] %>"></script>
 <script src="/js/script.js?v=<%= @config[:version] %>"></script>
 
-<% if $add_google_analytics then %>
+<% if $add_analytics then %>
 <script>
-	var _gaq=[['_setAccount','UA-26002603-1'],['_trackPageview']];
+  var _gaq=[['_setAccount','<%= $analytics_id %>'],['_trackPageview']];
 	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
 	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
 	s.parentNode.insertBefore(g,s)}(document,'script'));
