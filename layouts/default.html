@@ -130,16 +130,15 @@
     <div class="group">
       <div resource="#license" typeof="rdfa:Pattern" class="group small montage">
         <div class="bd">
-          <small>Except <a href="/policy/" property="cc:useGuidelines">where otherwise noted</a>, content on this site is licensed under a <a property="cc:license" href="http://creativecommons.org/licenses/by/4.0/"><abbr title="Creative Commons Attribution 4.0 International">CC-BY</abbr> license</a>. <span class="icon-cc"></span> <span class="icon-cc-by"></span></small>
+          <div><small>Copyright <span class="oldstyle">© <span property="schema:copyrightYear" datatype="xsd:gYear">2011</span>–<%= Time.now.year %></span> <a href="/company/#company" property="schema:copyrightHolder schema:publisher">Pentandra Research Solutions, Inc.</a></small></div>
+          <div><small>Except <a href="/policy/" property="cc:useGuidelines">where otherwise noted</a>, content on this site is licensed under a <a property="cc:license" href="http://creativecommons.org/licenses/by/4.0/"><abbr title="Creative Commons Attribution 4.0 International">CC-BY</abbr> license</a>. <span class="icon-cc"></span> <span class="icon-cc-by"></span></small></div>
         </div>
         <div class="aside">
           <div class="nav">
             <a href="/policy/">Policy</a> | <a href="/company/#contact">Contact Us</a>
           </div>
         </div>
-        <link property="schema:copyrightHolder schema:publisher" href="/company/#company" />
       </div>
-      <meta property="schema:copyrightYear" datatype="xsd:gYear" content="2011" />
       <% if $generate_timestamp then %>
       <meta property="prov:generatedAtTime" datatype="xsd:dateTime" content="<%= DateTime.now.to_s %>" />
       <% end %>
