@@ -1,6 +1,6 @@
 ---
 title: Opening Knowledge
-description: Designing true open access to knowledge.
+description: We need true open access to knowledge.
 kind: article
 author_name: Chris Chapman
 created_at: 2015-09-18
