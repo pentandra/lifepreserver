@@ -110,6 +110,11 @@ $less-outer-margin: 22px;
     }
   }
 
+  // Hide icon labels
+  .icons .normal {
+    display: none;
+  }
+    
   .contentinfo {
 
     .bd {
