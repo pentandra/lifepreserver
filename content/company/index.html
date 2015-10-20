@@ -340,7 +340,6 @@
         </p>
       </div>
     </section>
-    <% if @site.config[:accepting_donations] then %>
     <section id="donating" class="section" resource="#donate" typeof="schema:DonateAction">
       <link property="schema:actionStatus" resource="schema:PotentialActionStatus" />
       <link property="schema:recipient" href="#company" />
@@ -362,7 +361,6 @@
         <a class="button" property="schema:target" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MP56WPL8KFLH8">Donate via <b>PayPal</b></a>
       </div>
     </section>
-    <% end %>
   </section>
   <section class="noted group" id="sec:roster">
 
