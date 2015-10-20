@@ -56,14 +56,6 @@
   <div class="content">
     <div class="group">
       <section class="group">
-        <div class="aside">
-          <h2 class="close normal">Our Mission</h2>
-        </div>
-        <div class="bd mission">
-          <p class="bigger"><%= @items['/company/'][:mission] %></p>
-        </div>
-      </section>
-      <section class="section">
         <section class="section">
           <div class="aside">
             <h2 class="close normal">Recent Thoughts</h2>
@@ -112,20 +104,20 @@
         </section>
       </section>
       <div class="bd">
-        <section class="aside section">
+        <section class="noted aside section">
           <h2 class="flush normal">About Pentandra</h2>
 
           <ul class="none">
             <li><a href="/blog/">The Pentandra Blog</a></li>
-            <li><a href="/research/#sec:future">The Manifesto</a></li>
             <li><a href="/company/#sec:mission">Our Mission</a></li>
             <li><a href="/company/#sec:roster">Our Roster</a></li>
             <li><a href="/company/#contact">Contact Us</a></li>
           </ul>
         </section>
-        <section class="inner group">
-          <h2 class="flush normal"></h2>
-
+        <section class="noted inner group">
+          <h2 class="flush normal">Our Mission</h2>
+          <p><%= @items['/company/'][:mission] %></p>
+      </section>
         </section>
       </div>
       <div class="aside section">
@@ -144,19 +136,19 @@
       <a class="button backtotop">Back to top</a>
     </div>
     <div class="group">
-      <div resource="#license" typeof="rdfa:Pattern" class="group small montage">
-        <div class="bd">
-          <div><small>Copyright <span class="oldstyle">©</span> <span property="schema:copyrightYear" datatype="xsd:gYear">2011</span>–<%= Time.now.year %> <a href="/company/#company" property="schema:copyrightHolder schema:publisher">Pentandra Research Solutions, Inc.</a></small></div>
-          <div><small>Except <a href="/policy/" property="cc:useGuidelines">where otherwise noted</a>, content on this site is licensed under a <a property="cc:license" href="http://creativecommons.org/licenses/by/4.0/"><abbr title="Creative Commons Attribution 4.0 International">CC-BY</abbr> license</a>. <span class="icon-cc"></span> <span class="icon-cc-by"></span></small></div>
-        </div>
+      <div class="group small montage">
         <div class="aside">
-          <div class="square menu group nav">
+          <div class="square menu section nav">
             <ul>
               <li><a href="/search/">Search</a></li>
               <li><a href="/colophon/">Colophon</a></li>
               <li><a href="/policy/">Policy</a></li>
             </ul>
           </div>
+        </div>
+        <div class="bd" resource="#license" typeof="rdfa:Pattern">
+          <div><small>Copyright <span class="oldstyle">©</span> <span property="schema:copyrightYear" datatype="xsd:gYear">2011</span>–<%= Time.now.year %> <a href="/company/#company" property="schema:copyrightHolder schema:publisher">Pentandra Research Solutions, Inc.</a></small></div>
+          <div><small>Except <a href="/policy/" property="cc:useGuidelines">where otherwise noted</a>, content on this site is licensed under a <a property="cc:license" href="http://creativecommons.org/licenses/by/4.0/"><abbr title="Creative Commons Attribution 4.0 International">CC-BY</abbr> license</a>. <span class="icon-cc"></span> <span class="icon-cc-by"></span></small></div>
         </div>
       </div>
       <% if $generate_timestamp then %>

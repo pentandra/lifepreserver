@@ -305,7 +305,12 @@ $theteam-height: $base-line-height * 12;
     text-align: right;
   }
 
-  .mission {
-    margin-top: -7px;
+  .noted {
+    $border-height: 1px;
+
+    h2 {
+      margin: $base-line-height - $border-height 0 $base-line-height;
+    }
   }
+
 }

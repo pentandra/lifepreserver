@@ -494,6 +494,10 @@ input.button {
   }
 }
 
+.rev .noted {
+  border-color: $pentandra-white;
+}
+
 .grab a.button {
 
   &:hover, &:focus {
