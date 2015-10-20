@@ -8,6 +8,7 @@ $use_minified_css = false
 $use_minified_html = false
 $use_grid = true
 
-$add_google_analytics = false
+$add_analytics = false
+$analytics_id = 'UA-26002603-1'
 
 $add_comments = false

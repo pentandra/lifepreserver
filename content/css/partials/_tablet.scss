@@ -132,6 +132,11 @@ $less-outer-margin: 28px;
     @include grid(5);
     background-size: 100%;
   }
+
+  // Hide icon labels
+  .icons .normal {
+    display: none;
+  }
     
   .contentinfo {
 
