@@ -1,6 +1,6 @@
 ---
 title: Opening Knowledge
-description: Designing true open access to knowledge.
+description: We need true open access to knowledge.
 kind: article
 author_name: Chris Chapman
 created_at: 2015-09-18
@@ -162,7 +162,7 @@ well.
 
 <figure id="fig:alice" class="img" property="schema:image" resource="#alice" typeof="schema:ImageObject">
   <a property="schema:contentUrl" href="LRsaba_CERN_0212_00676.jpg" title="Click for maximum coolness"><img property="schema:thumbnail" src="LHR_alice.jpg" class="static" alt="People working on the ALICE detector at the Large Hadron Collider" /></a>
-  <figcaption property="schema:caption" class="small">The <a href="http://cds.cern.ch/record/1436153"><abbr>ALICE</abbr> detector</a>, part of the Large Hadron Collider at <span property="schema:contentLocation">CERN</span>. Detectors along the LHC can produce <em>a lot</em> of data for research, <a href="https://en.wikipedia.org/wiki/Worldwide_LHC_Computing_Grid" title= "Worldwide LHC Computing Grid on Wikipedia">about <span class="oldstyle">300</span> gigabytes per second</a>. Image copyright <span class="oldstyle"><span property="schema:copyrightYear">2012</span>--2015 ©</span> <span property="schema:copyrightHolder" resource="http://home.web.cern.ch/">CERN</span>. <a href="http://copyright.cern.ch" rel="schema:publishingPrinciples">Used by permission</a>.</figcaption>
+  <figcaption property="schema:caption" class="small">The <a href="http://cds.cern.ch/record/1436153"><abbr>ALICE</abbr> detector</a>, part of the Large Hadron Collider at <span property="schema:contentLocation">CERN</span>. Detectors along the LHC can produce <em>a lot</em> of data for research, <a href="https://en.wikipedia.org/wiki/Worldwide_LHC_Computing_Grid" title= "Worldwide LHC Computing Grid on Wikipedia">about <span class="oldstyle">300</span> gigabytes per second</a>. Image copyright <span class="oldstyle">© <span property="schema:copyrightYear">2012</span>--2015</span> <span property="schema:copyrightHolder" resource="http://home.web.cern.ch/">CERN</span>. <a href="http://copyright.cern.ch" rel="schema:publishingPrinciples">Used by permission</a>.</figcaption>
 </figure>
 
 So why does knowledge need to be opened up? And what would be the benefit of
