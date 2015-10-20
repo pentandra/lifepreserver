@@ -7,7 +7,7 @@
   <meta charset="utf-8" />
   <title><%= @item[:title] %> ← Pentandra</title>
   <meta name="description" content="<%= @item[:meta_description] || @item[:description] || @item[:title] %>" />
-  <meta name="generator" content="nanoc 3.7.3" />
+  <meta name="generator" content="nanoc 3.8.0" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <% if @item[:has_media] then %>
   <link rel="stylesheet" href="/js/mejs-2.14.2/mediaelementplayer.min.css" />
@@ -55,74 +55,87 @@
 <footer id="contentinfo" role="contentinfo" class="rev contentinfo">
   <div class="content">
     <div class="group">
-      <section class="section">
+      <section class="group">
         <div class="aside">
-          <h3 class="close normal">Our Mission</h3>
+          <h2 class="close normal">Our Mission</h2>
         </div>
         <div class="bd mission">
           <p class="bigger"><%= @items['/company/'][:mission] %></p>
         </div>
       </section>
-      <div class="bd">
-        <aside class="actions aside section">
-          <div class="contact section">
-            <% if @site.config[:accepting_donations] then %>
-            <a href="/company/#donating" class="bold button"><span class="icon-heart"></span> Donate</a>
-            <% else %>
-            <a href="/company/#sec:contact" class="bold button">Contact Us</a>
-            <% end %>
+      <section class="section">
+        <section class="section">
+          <div class="aside">
+            <h2 class="close normal">Recent Thoughts</h2>
           </div>
-          <div class="menu group nav">
-            <ul class="centered icons big">
-              <li>
-                <a rel="external" href="https://plus.google.com/108021950461928542978?prsrc=3">
-                  <span aria-hidden="true" class="button icon-googleplus"></span>
-                  <span class="visuallyhidden">Google+</span>
-                </a>
-              </li>
-              <li>
-                <a rel="external" href="https://www.facebook.com/PentandraInc">
-                  <span aria-hidden="true" class="button icon-facebook"></span>
-                  <span class="visuallyhidden">Facebook</span>
-                </a>
-              </li>
-              <li>
-                <a rel="external" href="https://twitter.com/PentandraInc">
-                  <span aria-hidden="true" class="button icon-twitter"></span>
-                  <span class="visuallyhidden">Twitter</span>
-                </a>
-              </li>
-              <li>
-                <a href="/blog/feed">
-                  <span aria-hidden="true" class="button icon-rss"></span>
-                  <span class="visuallyhidden">RSS Feed</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </aside>
-        <aside class="inner section">
-          <h2 class="normal flush">Recent Thoughts</h2>
-          <div class="group">
+          <div class="bd">
             <% @site.publishing_articles[0, 5].each do |post| %>
             <article class="excerpt">
               <a href="<%= post.path  %>" rel="bookmark">
-                <time class="small bold" datetime="<%= post[:created_at] %>"><%= date_for(post) %></time>&#8194;<h3 class="normal"><%= post[:title] %></h3>
+                <time class="small bold" datetime="<%= post[:created_at] %>"><%= date_for(post) %></time>&#8194;<h3 class="normal"><%= post[:short_title] || post[:title] %></h3>
               </a>
             </article>
             <% end %>
           </div>
-        </aside>
+        </section>
+        <section class="actions section">
+          <div class="bd">
+            <div class="menu group nav">
+              <ul class="icons big">
+                <li>
+                  <a href="https://plus.google.com/108021950461928542978?prsrc=3">
+                    <span aria-hidden="true" class="button icon-googleplus"></span>
+                    <span class="normal">Google+</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/PentandraInc">
+                    <span aria-hidden="true" class="button icon-facebook"></span>
+                    <span class="normal">Facebook</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/PentandraInc">
+                    <span aria-hidden="true" class="button icon-twitter"></span>
+                    <span class="normal">Twitter</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/blog/feed">
+                    <span aria-hidden="true" class="button icon-rss"></span>
+                    <span class="normal">Blog Feed</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </section>
+      <div class="bd">
+        <section class="aside section">
+          <h2 class="flush normal">About Pentandra</h2>
+
+          <ul class="none">
+            <li><a href="/blog/">The Pentandra Blog</a></li>
+            <li><a href="/research/#sec:future">The Manifesto</a></li>
+            <li><a href="/company/#sec:mission">Our Mission</a></li>
+            <li><a href="/company/#sec:roster">Our Roster</a></li>
+            <li><a href="/company/#contact">Contact Us</a></li>
+          </ul>
+        </section>
+        <section class="inner group">
+          <h2 class="flush normal"></h2>
+
+        </section>
       </div>
       <div class="aside section">
         <div class="logo section"></div>
         <div class="nav">
           <ul>
             <li><a href="/research/#sec:future">The Future of Research</a></li>
-            <li><a href="/company/#sec:mission">Company Mission</a></li>
+            <li><a href="https://groups.pentandra.com/">Community Groups</a></li>
             <li><a href="/research/process/">Research <span class="oldstyle">101</span></a></li>
-            <li><%= link_to('Colophon', '/colophon/') %></li>
-            <li><%= link_to('Search', '/search/') %></li>
+            <li><a href="/company/#donating"><span class="icon-heart"></span> Donate</a></li>
           </ul>
         </div>
       </div>
@@ -137,8 +150,12 @@
           <div><small>Except <a href="/policy/" property="cc:useGuidelines">where otherwise noted</a>, content on this site is licensed under a <a property="cc:license" href="http://creativecommons.org/licenses/by/4.0/"><abbr title="Creative Commons Attribution 4.0 International">CC-BY</abbr> license</a>. <span class="icon-cc"></span> <span class="icon-cc-by"></span></small></div>
         </div>
         <div class="aside">
-          <div class="nav">
-            <a href="/policy/">Policy</a> | <a href="/company/#contact">Contact Us</a>
+          <div class="square menu group nav">
+            <ul>
+              <li><a href="/search/">Search</a></li>
+              <li><a href="/colophon/">Colophon</a></li>
+              <li><a href="/policy/">Policy</a></li>
+            </ul>
           </div>
         </div>
       </div>

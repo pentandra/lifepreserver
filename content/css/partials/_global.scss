@@ -397,6 +397,10 @@ input.button {
   li {
     display: inline-block;
   }
+
+  &.square li + li:before {
+    content: " ■ ";
+  }
 }
 
 .lt-ie8 .menu li {

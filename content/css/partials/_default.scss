@@ -297,16 +297,8 @@ $theteam-height: $base-line-height * 12;
 
 .contentinfo {
 
-  .bd .aside {
-    @include grid(2);
-  }
-
   .excerpt h3 {
     display: inline;
-  }
-
-  .inner {
-    @include grid(5);
   }
 
   .aside .nav {

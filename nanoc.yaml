@@ -100,5 +100,3 @@ vcard:
   email: hello@pentandra.com
   url: *base_url
   photo_uri: "http://pentandra.com/images/logo.png"
-
-accepting_donations: true
