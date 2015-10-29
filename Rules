@@ -140,20 +140,18 @@ end
 
 compile '/spec/*', :rep => :jsonld do
   if item[:extension] == 'ttl'
-    filter :erb
     filter :rdf_distiller, :in => :ttl, :out => :jsonld
   end
 end
 
 compile '/spec/*', :rep => :rdfxml do
   if item[:extension] == 'ttl'
-    filter :erb
     filter :rdf_distiller, :in => :ttl, :out => :rdfxml
   end
 end
 
 compile '/spec/*' do
-  # don't compile spec. This submodule needs to be independent.
+  # don't compile the rest of spec. This submodule needs to be independent.
 end
 
 compile '/js/search-data/' do
