@@ -29,7 +29,7 @@ module Nanoc::Filters
       case format
       when :jsonld
         if @item[:context] then
-          options.merge!({ :context => @item[:context]['@context'] })
+          options.merge!({ :context => @item[:context] })
         end
 
 =begin
