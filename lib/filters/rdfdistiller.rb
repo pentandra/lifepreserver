@@ -46,7 +46,7 @@ module Nanoc::Filters
           # Pull out ontology definitions into an array
           defines = jsonld['@graph'].select { |statement| statement.has_key?('rdfs:isDefinedBy') }
           defines.each do |defined|
-            if defined['rdfs:isDefinedBy']['@id'] == base_uri
+            if defined['rdfs:isDefinedBy'] == base_uri
               jsonld['@graph'].delete(defined)
               defined.delete('rdfs:isDefinedBy')
             end

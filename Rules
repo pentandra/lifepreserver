@@ -85,7 +85,7 @@ preprocess do
         context = JSON.parse(File.read context_path) if File.exists? context_path
         unless context.nil? then
           item[:context] = context['@context'] unless context['@context'].nil?
-          item[:base_uri] = context['@id'] unless context['@id'].nil?
+          item[:base_uri] = item[:context]['@base'] unless item[:context].nil?
         end
       end
     end
