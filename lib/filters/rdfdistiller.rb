@@ -37,7 +37,7 @@ module Nanoc::Filters
         if jsonld['@graph'] then
 
           # Restructure ontology meta to the top level
-          meta = jsonld['@graph'].select { |statement| statement['@type'] == 'owl:Ontology' }.first
+          meta = jsonld['@graph'].select { |statement| statement['@type'].include?('owl:Ontology') unless statement['@type'].nil? }.first
           unless meta.nil? then
             jsonld['@graph'].delete(meta)
             jsonld.merge!(meta)
