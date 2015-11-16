@@ -82,10 +82,13 @@ preprocess do
     items.each do |item|
       if item[:extension] == 'ttl' then
         context_path = item[:filename].rpartition("/")[0] + "/context.json"
-        context = JSON.parse(File.read context_path) if File.exists? context_path
-        unless context.nil? then
-          item[:context] = context['@context'] unless context['@context'].nil?
-          item[:base_uri] = item[:context]['@base'] unless item[:context].nil?
+        context_doc = JSON.parse(File.read context_path) if File.exists? context_path
+        unless context_doc.nil? then
+          item[:context] = context_doc["@context"] unless context_doc["@context"].nil?
+          unless item[:context].nil? then
+            base_context = [item[:context]].find { |k,v| k.include?("@base") }
+            item[:base_uri] = base_context["@base"] unless base_context.nil?
+          end
         end
       end
     end
