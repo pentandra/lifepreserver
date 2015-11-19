@@ -10,13 +10,14 @@ module Nanoc::Filters
 
       in_format = params[:in] || "turtle"
       out_format = params[:out] || "turtle"
-      base_uri = params[:base_uri] || @item[:base_uri] || @site.config[:base_url] + @item.path
+      base_uri = params[:base_uri] || @item[:base_uri] || @config[:base_url] + @item.path
 
       options = {
         standard_prefixes: true,
         prefixes: {},
         base_uri: base_uri,
         validate: true,
+        simple_compact_iris: true,
       }
 
       graph = RDF::Repository.new

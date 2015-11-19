@@ -1,3 +1,39 @@
+---
+title: Company
+description: Who we are and what we stand for.
+meta_description: >
+  Pentandra is a small company of research addicts trying to promote quality
+  research and make collaboration possible throughout the research process.
+priority: 0.6
+mission: >
+  Pentandra's mission is to open up the knowledge of the world, so that light
+  and understanding will be more accessible to everyone.
+twitter: PentandraInc
+teammembers:
+  - first_name: Chris
+    last_name: Chapman
+    title: Co-founder and Super Coder
+    email: chris@pentandra.com
+    twitter: cd_chapman
+    gplus: 102332274449851755462
+    github: cdchapman
+    phone_ext: 1000
+    member_of: Core Team
+    summary: >
+      Chris loves to tackle difficult problems and dreams (literally) about
+      making research easier. He is our systems thinker.
+  - first_name: Katie
+    last_name: Chapman
+    title: Co-founder and Exception Thinker
+    email: katie@pentandra.com
+    twitter: KAMChapman
+    gplus: 104975395018953249008
+    phone_ext: 1001
+    member_of: Core Team
+    summary: >
+      Katie loves to solve a good puzzle and thrives on the details. She is
+      also our finance and tax geek and actually enjoys it.
+---
 <div property="foaf:primaryTopic" class="group" prefix="essglobalst: http://purl.org/essglobal/standard/ fea: http://vocab.data.gov/def/fea#" typeof="foaf:Organization essglobal:SSEInitiative fea:Company schema:Corporation" resource="#company">
   <div class="section">
 
@@ -442,18 +478,18 @@
         <div class="inner group">
           <address class="vcard">
             <div property="schema:name schema:legalName" class="fn org"><a
-                property="schema:url foaf:homepage" href="<%= @site.config[:base_url] %>"
-                ><%= @site.config[:vcard][:full_name] %></a></div>
+                property="schema:url foaf:homepage" href="<%= @config[:base_url] %>"
+                ><%= @config[:vcard][:full_name] %></a></div>
             <div property="schema:location" typeof="schema:PostalAddress" class="adr">
               <div><span class="locality"
-                  property="schema:addressLocality"><%= @site.config[:vcard][:locality] %></span>, <span
+                  property="schema:addressLocality"><%= @config[:vcard][:locality] %></span>, <span
                   class="region"
-                  property="schema:addressRegion"><%= @site.config[:vcard][:region] %></span></div>
-              <div property="schema:addressCountry" class="country-name"><%= @site.config[:vcard][:country] %></div>
+                  property="schema:addressRegion"><%= @config[:vcard][:region] %></span></div>
+              <div property="schema:addressCountry" class="country-name"><%= @config[:vcard][:country] %></div>
             </div>
             <div>Phone: <a property="schema:telephone" class="tel"
-                href="tel:<%= @site.config[:vcard][:phone].gsub(/[\s\.-]+/, "") %>"><%= @site.config[:vcard][:phone] %></a></div>
-            <div>Email: <a property="schema:email" href="mailto:<%= @site.config[:vcard][:email] %>"><%= @site.config[:vcard][:email] %></a></div>
+                href="tel:<%= @config[:vcard][:phone].gsub(/[\s\.-]+/, "") %>"><%= @config[:vcard][:phone] %></a></div>
+            <div>Email: <a property="schema:email" href="mailto:<%= @config[:vcard][:email] %>"><%= @config[:vcard][:email] %></a></div>
           </address>
           <p>
              We support <a href="http://web.archive.org/web/20120615152553/http://www.ccpact.com/" rel="external">The Company--Customer Pact</a>.

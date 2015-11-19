@@ -61,7 +61,7 @@ is_hidden: true
 </div>
 
 <% content_for :javascripts do %>
-<script src="/js/search-data.js?v=<%= @site.config[:version] %>"></script>
+<script src="/js/search-data.js?v=<%= @config[:version] %>"></script>
 <script>
   $(function() {
     var search = Pentandra.Search.search,

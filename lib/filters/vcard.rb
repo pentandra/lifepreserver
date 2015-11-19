@@ -30,8 +30,8 @@ class VcardFilter < Nanoc::Filter
 
     vcard.fullname full_name
 
-    if @site.config[:base_url]
-      vcard.source @site.config[:base_url] + @item_rep.path
+    if @config[:base_url]
+      vcard.source @config[:base_url] + @item_rep.path
     end
 
     #vcard.kind kind

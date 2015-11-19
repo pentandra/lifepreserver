@@ -22,7 +22,7 @@
     <div class="post section e-content" property="schema:articleBody sioc:content">
       <%= yield %>
     </div>
-    <%= render "comments" %>
+    <%= render '/comments.*' %>
   </div>
   <aside class="aside">
     <h2 class="visuallyhidden">Meta</h2>
@@ -32,7 +32,7 @@
     </p>
 
     <%
-     company = @items['/company/']
+     company = @items['/company/index.*']
      author = company[:teammembers].find { |m| m[:first_name] + " " + m[:last_name] == @item[:author_name] }
     %>
     <section class="section banner" resource="<%= member_path(author) %>" typeof="dc:Agent schema:Person foaf:Person" property="dc:creator schema:author foaf:maker">

@@ -39,7 +39,7 @@ module LifePreserver
 
     def search_terms_for(item)
       if item.identifier !~ /^\/(js|css|404)/
-        content = item.rep_named(:default).compiled_content
+        content = item.reps[:default].compiled_content
         doc = Nokogiri::HTML(content)
         full_text = doc.css("p, h1, h2, h3, h4, h5, h6").map{|el| el.inner_text}.join(" ")
         "#{item[:title]} #{item[:meta_description]} #{full_text}".gsub(/[\W\s_]+/m,' ').downcase.split(/\s+/).uniq - STOP_WORDS
