@@ -221,12 +221,12 @@ route '/404.*' do
   '/404.html'
 end
 
-route '/spec/README' do
-  '/spec/README.md'
+route '/spec/README.*' do
+  nil
 end
 
 route '/spec/LICENSE' do
-  '/spec/LICENSE'
+  nil
 end
 
 route '/spec/**/*.ttl', :rep => :jsonld do
