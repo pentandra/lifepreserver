@@ -55,7 +55,15 @@ preprocess do
 
   def mark_javascripts_as_hidden
     items.each do |item|
-      if item[:extension] == 'js' then
+      if item.identifier.ext == 'js' then
+        item[:is_hidden] = true
+      end
+    end
+  end
+
+  def mark_stylesheets_as_hidden
+    items.each do |item|
+      if item.identifier.ext =~ /css/ then
         item[:is_hidden] = true
       end
     end
@@ -67,7 +75,7 @@ preprocess do
   # source file, and adds it to the item's metadata under the key `context`.
   def add_custom_jsonld_contexts
     items.each do |item|
-      if item[:extension] == 'ttl' then
+      if item.identifier.ext == 'ttl' then
         context_path = item[:filename].rpartition("/")[0] + "/context.json"
         context_doc = JSON.parse(File.read context_path) if File.exists? context_path
         unless context_doc.nil? then
@@ -87,7 +95,7 @@ preprocess do
     require 'nokogiri'
 
     @items.select { |i| i.identifier.to_s.start_with?("/spec/") }.each do |item|
-      case item[:extension]
+      case item.identifier.ext
       when 'html'
         doc = Nokogiri::HTML(File.open(item[:filename]))
         item[:title] = doc.at_css("title").inner_text
@@ -99,6 +107,7 @@ preprocess do
 
   mark_unpublished_articles_as_hidden
   mark_javascripts_as_hidden
+  mark_stylesheets_as_hidden
   generate_tag_pages
   generate_author_pages
   generate_blog_archives
@@ -117,10 +126,6 @@ compile '/css/*.scss' do
   if $use_minified_css then
     filter :rainpress
   end
-end
-
-compile '/static/**/*' do
-  # don't compile
 end
 
 compile '/spec/**/*.ttl', :rep => :jsonld do
@@ -207,11 +212,6 @@ compile '/**/*' do
 end
 
 ### Routing Rules ###################################################
-
-route '/static/**/*' do
-  # /static/foo.html/ → /foo.html
-  item.identifier.to_s.sub(/\A\/static/, '')
-end
 
 route '/css/*.scss' do
   item.identifier.without_ext + '.css'

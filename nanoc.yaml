@@ -66,12 +66,6 @@ data_sources:
     # be “legacy”, primarily used by older Nanoc sites.
     identifier_type: full
 
-  -
-    type: filesystem
-    items_root: /static
-    content_dir: 'static'
-    layouts_dir: null
-
 # Base URL, used for the Atom feed
 base_url: &base_url http://pentandra.com
 
