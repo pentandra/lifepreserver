@@ -96,7 +96,7 @@ spoonfed
 spoonfeed/breastfeed
 toolset/toolkit
 namespace/space
-da 
+da
 Vinci
 IRI
 URI
@@ -104,7 +104,7 @@ codebase/database
 RDF
 RDFa
 JSON
-JSON-LD
+LD
 HTML
 syntaxes
 backcountry/upcountry
@@ -114,3 +114,4 @@ Colletta/Alabama
 Berjon/Alabama
 centric
 ReSpec/Alabama
+VCS
