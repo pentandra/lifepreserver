@@ -136,8 +136,14 @@ compile '/spec/**/*.ttl', :rep => :rdfxml do
   filter :rdf_distiller, :in => :ttl, :out => :rdfxml
 end
 
-compile '/spec/**/*' do
-  # don't compile the rest of spec. This submodule needs to be independent.
+compile '/spec/**/*.html' do
+  if $spellcheck then
+    filter :spellchecker
+  end
+
+  if $use_minified_html then
+    filter :html5small
+  end
 end
 
 compile '/js/search-data.js' do
