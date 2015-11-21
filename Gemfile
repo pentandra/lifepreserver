@@ -18,7 +18,7 @@ gem 'builder'
 gem 'adsf'
 gem 'systemu'
 gem 'shortly' # For URL shortening
-gem 'html_spellchecker'
+gem 'html_spellchecker', :git => 'https://github.com/cdchapman/HTML-Spellchecker', :branch => 'mark'
 gem 'json'
 gem 'jwt', '~> 0.1'
 gem 'rest-client', '~> 1.6'
