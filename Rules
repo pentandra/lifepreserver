@@ -137,10 +137,6 @@ compile '/spec/**/*.ttl', :rep => :rdfxml do
 end
 
 compile '/spec/**/*.html' do
-  if $spellcheck then
-    filter :spellchecker
-  end
-
   if $use_minified_html then
     filter :html5small
   end
