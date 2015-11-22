@@ -78,7 +78,7 @@ checks:
     # If an internal link matches this pattern, the validity check will be skipped.
     # E.g.:
     #   exclude: ['^/server_status']
-    exclude: []
+    exclude: ['^/blog/feed']
 
 # Configuration for the “watch” command, which watches a site for changes and
 # recompiles if necessary.
