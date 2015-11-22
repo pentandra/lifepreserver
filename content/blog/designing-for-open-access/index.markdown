@@ -1456,7 +1456,7 @@ research systems.
 [mass-energy equivalence]: <https://en.wikipedia.org/wiki/Mass%E2%80%93energy_equivalence> "Mass-energy equivalence on Wikipedia"
 [altmetrics]: <https://en.wikipedia.org/wiki/Altmetrics> "Altmetrics on Wikipedia"
 [New World]: <https://en.wikipedia.org/wiki/New_World> "The New World on Wikipedia"
-[Amerigo Vespucci]: <https://en.wikipedia.org/wiki/Amerigo_Vespucci "Amerigo Vespucci on Wikipedia"
+[Amerigo Vespucci]: <https://en.wikipedia.org/wiki/Amerigo_Vespucci> "Amerigo Vespucci on Wikipedia"
 [West Indies]: <https://en.wikipedia.org/wiki/West_Indies> "West Indies on Wikipedia"
 [w3c_vision]: <http://www.w3.org/Consortium/mission.html#vision>
 [wiki]: <http://en.wikipedia.org/wiki/Wiki> "Wiki on Wikipedia"
