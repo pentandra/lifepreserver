@@ -155,14 +155,6 @@ compile '/js/**/*.js' do
   end
 end
 
-compile '/blog/feed_private.xml' do
-  filter :erb
-end
-
-compile '/sitemap.xml' do
-  filter :erb
-end
-
 compile '/company/index.*', :rep => :vcard do
   filter :vcard, @config[:vcard]
 end
@@ -170,6 +162,10 @@ end
 compile '/company/index.*', :rep => :qrcode do
   filter :vcard, @config[:vcard]
   filter :qrcode, :size => 25, :module_size => 2, :color => "#544233"
+end
+
+compile '/**/*.xml' do
+  filter :erb
 end
 
 compile '/**/*.html' do
