@@ -35,38 +35,20 @@ module Nanoc::Filters
 
         jsonld = JSON.parse graph.dump(format, options)
 
+        # Pull out statements about the default graph if any exist
         if jsonld['@graph'] then
-
-          # Restructure ontology meta to the top level
-          meta = jsonld['@graph'].select { |statement| statement['@type'].include?('owl:Ontology') unless statement['@type'].nil? }.first
+          meta = jsonld['@graph'].select { |node| node['@id'] == base_uri }.first
           unless meta.nil? then
             jsonld['@graph'].delete(meta)
             jsonld.merge!(meta)
           end
-
-          # Pull out ontology definitions into an array
-          defines = jsonld['@graph'].select { |statement| statement.has_key?('rdfs:isDefinedBy') }
-          defines.each do |defined|
-            if defined['rdfs:isDefinedBy'] == base_uri
-              jsonld['@graph'].delete(defined)
-              defined.delete('rdfs:isDefinedBy')
-            end
-          end
-
-          jsonld['defines'] = defines unless defines.empty?
-
-          jsonld.delete('@graph') if jsonld['@graph'].empty?
-
-          JSON.pretty_generate jsonld
-        else 
-          graph.dump(format, options)
         end
-        
+
+        JSON.pretty_generate jsonld
       when :rdfxml
         graph.dump(format, options)
       else
         graph.dump(format, options)
-
       end
 
     end
