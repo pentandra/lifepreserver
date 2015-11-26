@@ -33,9 +33,9 @@ module Nanoc::Filters
           options.merge!({ :context => @item[:context] })
         end
 
-        jsonld = JSON.parse repository.dump(output_format, options)
+        jsonld = ::JSON.parse repository.dump(output_format, options)
 
-        # Pull out statements about the default repository if any exist
+        # Pull out statements about the default graph if any exist
         if jsonld['@graph'] then
           meta = jsonld['@graph'].select { |node| node['@id'] == base_uri or node['@id'] == "" }.first
           unless meta.nil? then
@@ -44,7 +44,7 @@ module Nanoc::Filters
           end
         end
 
-        JSON.pretty_generate jsonld
+        ::JSON.pretty_generate jsonld
       else
         repository.dump(output_format, options)
       end
