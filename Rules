@@ -1,9 +1,9 @@
 #!/usr/bin/env ruby
 
 require 'compass'
-require './environment'
+require './etc/environment'
 
-Compass.add_project_configuration 'compass/config.rb'
+Compass.add_project_configuration 'etc/compass/config.rb'
 
 preprocess do
 

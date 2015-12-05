@@ -21,7 +21,7 @@ end
 
 task :fetch_tag_data do
 
-  semantic_tags = YAML.load_file('semantic_tags.yaml')
+  semantic_tags = YAML.load_file('etc/semantic_tags.yaml')
 
   FileUtils.mkdir_p('data')
 

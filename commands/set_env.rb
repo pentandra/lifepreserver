@@ -12,11 +12,11 @@ run do  |opts, args, cmd|
     exit 1
   end
 
-  if !File.exists?("environments/#{environment}.rb")
+  if !File.exists?("etc/environments/#{environment}.rb")
     $stderr.puts "Environment '#{environment}' does not exist."
     exit 1
   end
 
-  system('cp', "environments/#{environment}.rb", 'environment.rb')
+  system('cp', "etc/environments/#{environment}.rb", 'etc/environment.rb')
 
 end

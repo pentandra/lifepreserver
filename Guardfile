@@ -4,8 +4,7 @@
 guard 'nanoc' do
   watch('nanoc.yaml')
   watch('Rules')
-  watch('dictionary')
-  watch(%r{^(content|layouts|lib)/.*$})
+  watch(%r{^(etc|data|content|layouts|lib)/.*$})
 end
 
 guard 'livereload', :hostname => 'localhost', :port => '35729'  do
