@@ -1,5 +1,7 @@
 #!/bin/sh
 
+SCRIPT_PATH=$(dirname `which $0`)
+
 YEAR=$(date +%Y)
 MONTH=$(date +%m)
 DAY=$(date +%d)
@@ -12,7 +14,7 @@ read AUTHOR
 
 TITLE=$(echo "$RAW_TITLE" | sed -e 's/[ _]/-/g' -e 's/[^a-zA-Z0-9-]//g' -e 's/-$//g' -e 's/\(.*\)/\L\1/')
 
-mkdir content/blog/$TITLE
+mkdir $SCRIPT_PATH/../content/blog/$TITLE
 
 echo "---
 title: $RAW_TITLE
@@ -23,6 +25,6 @@ created_at: $YEAR-$MONTH-$DAY
 updated_at: $YEAR-$MONTH-$DAY
 published: false
 ---
-This is your new post." > "content/blog/$TITLE/index.markdown"
+This is your new post." > "$SCRIPT_PATH/../content/blog/$TITLE/index.markdown"
 
 echo "Created content/blog/$TITLE/index.markdown"

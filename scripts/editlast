@@ -1,0 +1,14 @@
+#!/bin/sh
+
+SCRIPT_PATH=$(dirname `which $0`)
+
+if [ -z "$1" ]; then
+LAST_N=1
+else
+LAST_N=$1
+fi
+if [ ! -z $EDITOR ]; then
+EDITOR=vim
+fi
+
+$EDITOR $(grep -r 'created_at' $SCRIPT_PATH/../content/blog/ | awk -F: '{ print $3, "---", $1 }' | sort | awk -F--- '{ print $2 }' | tail -n${LAST_N} | head -n1)

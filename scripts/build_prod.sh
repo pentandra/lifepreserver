@@ -1,5 +1,9 @@
 #!/bin/bash
 
+SCRIPT_PATH=$(dirname `which $0`)
+
+cd $SCRIPT_PATH/../
+
 # First check to make sure bundler is installed
 if [ `gem list bundler -i` = "false" ]; then
   gem install bundler
