@@ -8,7 +8,7 @@ $use_minified_html = true
 $use_optimized_images = true
 $generate_timestamp = true
 
-$add_analytics = false
+$add_analytics = true
 $analytics_id = 'UA-26002603-1'
 
 $add_comments = false
