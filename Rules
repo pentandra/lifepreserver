@@ -149,6 +149,9 @@ compile '/js/search-data.js' do
   end
 end
 
+compile '/js/**/*.min.js' do
+end
+
 compile '/js/**/*.js' do
   if $use_minified_js then
     filter :uglify_js
