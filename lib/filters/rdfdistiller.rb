@@ -29,9 +29,10 @@ module Nanoc::Filters
 
       case output_format
       when :jsonld
-        if @item[:context] then
-          options.merge!({ :context => @item[:context] })
-        end
+        options.merge!({ 
+          :context => @item[:context] || {},
+          :documentLoader => self.class.method(:load_document_local)
+        })
 
         jsonld = ::JSON.parse repository.dump(output_format, options)
 
@@ -44,6 +45,11 @@ module Nanoc::Filters
           end
         end
 
+        # Replace context with original context
+        if @item[:context] then
+          jsonld['@context'] = @item[:context]
+        end
+
         ::JSON.pretty_generate jsonld
       else
         repository.dump(output_format, options)
@@ -51,7 +57,15 @@ module Nanoc::Filters
 
     end
 
+    def self.load_document_local(url, options={}, &block)
+      if (RDF::URI(url, canonicalize: true) == RDF::URI('http://www.w3.org/ns/anno.jsonld'))
+        remote_document = JSON::LD::API::RemoteDocument.new(url, File.read('etc/contexts/anno.jsonld'))
+        return block_given? ? yield(remote_document) : remote_document
+      else
+        JSON::LD::API.documentLoader(url, options, &block)
+      end
+    end
+
   end
 
 end
-
