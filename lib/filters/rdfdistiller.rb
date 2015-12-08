@@ -59,7 +59,7 @@ module Nanoc::Filters
 
     def self.load_document_local(url, options={}, &block)
       if (RDF::URI(url, canonicalize: true) == RDF::URI('http://www.w3.org/ns/anno.jsonld'))
-        remote_document = JSON::LD::API::RemoteDocument.new(url, File.read('etc/contexts/anno.jsonld'))
+        remote_document = JSON::LD::API::RemoteDocument.new(url, File.read('var/contexts/anno.jsonld'))
         return block_given? ? yield(remote_document) : remote_document
       else
         JSON::LD::API.documentLoader(url, options, &block)
