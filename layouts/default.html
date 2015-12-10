@@ -10,7 +10,7 @@
   <meta name="generator" content="nanoc 4.0.0" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <% if @item[:has_media] then %>
-  <link rel="stylesheet" href="/js/libs/mejs-2.14.2/mediaelementplayer.min.css" />
+  <link rel="stylesheet" href="/js/libs/mejs-2.18.2/mediaelementplayer.min.css" />
   <% end %>
   <link rel="stylesheet" href="/css/style.css?v=<%= @config[:version] %>" />
   <link rel="alternate" type="application/atom+xml" href="/blog/feed" />
@@ -166,7 +166,7 @@
 <script>window.jQuery || document.write('<script src="/js/libs/jquery-1.7.1.js"><\/script>')</script>
 
 <% if @item[:has_media] then %>
-<script src="/js/libs/mejs-2.14.2/mediaelement-and-player.js"></script>
+<script src="/js/libs/mejs-2.18.2/mediaelement-and-player.js"></script>
 <% end %>
 
 <%= content_for(@item, :javascripts) %>
