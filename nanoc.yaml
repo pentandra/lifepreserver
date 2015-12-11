@@ -1,5 +1,5 @@
 # Site version. Used for cache busting as well as for general information.
-version: 1.20.4
+version: 1.20.5
 
 # The syntax to use for patterns in the Rules file. Can be either `"glob"`
 # (default) or `"legacy"`. The former will enable glob patterns, which behave
