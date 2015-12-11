@@ -396,6 +396,11 @@ input.button {
 .menu {
   li {
     display: inline-block;
+    margin-right: 0.3em;
+  }
+
+  .tags li {
+    margin-right: 0.1em;
   }
 
   &.square li + li:before {
