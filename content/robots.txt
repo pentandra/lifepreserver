@@ -6,4 +6,4 @@ is_hidden: true
 
 User-agent: *
 
-Sitemap: http://pentandra.com/sitemap.xml
+Sitemap: https://pentandra.com/sitemap.xml

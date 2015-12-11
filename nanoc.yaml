@@ -1,5 +1,5 @@
 # Site version. Used for cache busting as well as for general information.
-version: 1.20.2
+version: 1.20.3
 
 # The syntax to use for patterns in the Rules file. Can be either `"glob"`
 # (default) or `"legacy"`. The former will enable glob patterns, which behave
@@ -67,7 +67,7 @@ data_sources:
     identifier_type: full
 
 # Base URL, used for the Atom feed
-base_url: &base_url http://pentandra.com
+base_url: &base_url https://pentandra.com
 
 # Configuration for the “check” command, which run unit tests on the site.
 checks:
@@ -108,4 +108,4 @@ vcard:
   phone: +1 435 294 2964
   email: hello@pentandra.com
   url: *base_url
-  photo_uri: "http://pentandra.com/images/logo.png"
+  photo_uri: "https://pentandra.com/images/logo.png"
