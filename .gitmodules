@@ -1,3 +1,3 @@
 [submodule "content/spec"]
 	path = content/spec
-	url = https://github.com/pentandra/spec.git
+	url = git@github.com:pentandra/spec.git

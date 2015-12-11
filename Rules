@@ -1,32 +1,19 @@
 #!/usr/bin/env ruby
 
 require 'compass'
-require './environment'
+require './etc/environment'
 
-Compass.add_project_configuration 'compass/config.rb'
-
-# A few helpful tips about the Rules file:
-#
-# * The string given to #compile and #route are matching patterns for
-#   identifiers--not for paths. Therefore, you can’t match on extension.
-#
-# * The order of rules is important: for each item, only the first matching
-#   rule is applied.
-#
-# * Item identifiers start and end with a slash (e.g. “/about/” for the file
-#   “content/about.html”). To select all children, grandchildren, … of an
-#   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
-#   because “*” matches zero or more characters.
+Compass.add_project_configuration 'etc/compass/config.rb'
 
 preprocess do
 
   # Creates in-memory tag pages from partial: layouts/tag.html
   def generate_tag_pages
     tag_set(publishing_articles).each do |tag|
-      items << Nanoc::Item.new(
-        "<%= render('tag',  { :tag => '#{tag}', :semantic_tag => SEMANTIC_TAGS['#{tag}'] }) %>",
+      @items.create(
+        "<%= render('/tag.*',  { :tag => '#{tag}', :semantic_tag => SEMANTIC_TAGS['#{tag}'] }) %>",
         { :title => "Tag: #{tag}", :is_hidden => true, :description => "All posts having to do with the tag '#{tag}'" },
-        "/tags/#{tag.to_slug}/",
+        "/tags/#{tag.to_slug}/index.html",
         :binary => false
       )
     end
@@ -35,10 +22,10 @@ preprocess do
   # Creates in-memory author pages from partial: layouts/author.html
   def generate_author_pages
     authors(publishing_articles).each do |author|
-      items << Nanoc::Item.new(
-        "<%= render('author', :author => '#{author}') %>",
+      @items.create(
+        "<%= render('/author.*', :author => '#{author}') %>",
         { :title => "Articles by #{author}", :is_hidden => true },
-        "/authors/#{author.to_slug}/",
+        "/authors/#{author.to_slug}/index.html",
         :binary => false
       )
     end
@@ -49,10 +36,10 @@ preprocess do
   def generate_blog_archives
     years = publishing_articles.map { |a| a[:created_at].year }.uniq
     years.each do |year|
-      items << Nanoc::Item.new(
-        "<%= render('blog_archive', :year => #{year}) %>",
+      @items.create(
+        "<%= render('/blog_archive.*', :year => #{year}) %>",
         { :title => "Articles from #{year}", :is_hidden => true },
-        "/blog/#{year}/",
+        "/blog/#{year}/index.html",
         :binary => false
       )
     end
@@ -68,7 +55,15 @@ preprocess do
 
   def mark_javascripts_as_hidden
     items.each do |item|
-      if item[:extension] == 'js' then
+      if item.identifier.ext == 'js' then
+        item[:is_hidden] = true
+      end
+    end
+  end
+
+  def mark_stylesheets_as_hidden
+    items.each do |item|
+      if item.identifier.ext =~ /css/ then
         item[:is_hidden] = true
       end
     end
@@ -80,9 +75,16 @@ preprocess do
   # source file, and adds it to the item's metadata under the key `context`.
   def add_custom_jsonld_contexts
     items.each do |item|
-      if item[:extension] == 'ttl' then
+      if item.identifier.ext == 'ttl' then
         context_path = item[:filename].rpartition("/")[0] + "/context.json"
-        item[:context] = JSON.parse(File.read context_path) if File.exists? context_path
+        context_doc = JSON.parse(File.read context_path) if File.exists? context_path
+        unless context_doc.nil? then
+          item[:context] = context_doc["@context"] unless context_doc["@context"].nil?
+          unless item[:context].nil? then
+            base_context = [item[:context]].find { |k,v| k.include?("@base") }
+            item[:base_uri] = base_context["@base"] unless base_context.nil?
+          end
+        end
       end
     end
   end
@@ -92,8 +94,8 @@ preprocess do
   def extract_metadata_from_specification_documents
     require 'nokogiri'
 
-    @items.select { |i| i.identifier.start_with?("/spec/") }.each do |item|
-      case item[:extension]
+    @items.select { |i| i.identifier.to_s.start_with?("/spec/") }.each do |item|
+      case item.identifier.ext
       when 'html'
         doc = Nokogiri::HTML(File.open(item[:filename]))
         item[:title] = doc.at_css("title").inner_text
@@ -105,6 +107,7 @@ preprocess do
 
   mark_unpublished_articles_as_hidden
   mark_javascripts_as_hidden
+  mark_stylesheets_as_hidden
   generate_tag_pages
   generate_author_pages
   generate_blog_archives
@@ -112,17 +115,12 @@ preprocess do
   extract_metadata_from_specification_documents
 end
 
+ignore '/css/partials/_*'
+ignore '/css/modules/_*'
+
 ### Compilation Rules ###################################################
 
-compile '/css/partials/_*/' do
-  # don't compile partials
-end
-
-compile '/css/modules/_*/' do
-  # don't compile modules
-end
-
-compile '/css/*/' do
+compile '/css/*.scss' do
   filter :sass, Compass.sass_engine_options
 
   if $use_minified_css then
@@ -130,176 +128,150 @@ compile '/css/*/' do
   end
 end
 
-compile '/static/*/' do
-  # don't compile
+compile '/spec/**/*.ttl', :rep => :jsonld do
+  filter :rdf_distiller, :in => :ttl, :out => :jsonld
 end
 
-compile '/spec/*', :rep => :jsonld do
-  if item[:extension] == 'ttl'
-    filter :erb
-    filter :rdf_distiller, :in => :ttl, :out => :jsonld
+compile '/spec/**/*.ttl', :rep => :rdfxml do
+  filter :rdf_distiller, :in => :ttl, :out => :rdfxml
+end
+
+compile '/spec/**/*.html' do
+  if $use_minified_html then
+    filter :html5small
   end
 end
 
-compile '/spec/*', :rep => :rdfxml do
-  if item[:extension] == 'ttl'
-    filter :erb
-    filter :rdf_distiller, :in => :ttl, :out => :rdfxml
-  end
-end
-
-compile '/spec/*' do
-  # don't compile spec. This submodule needs to be independent.
-end
-
-compile '/js/search-data/' do
+compile '/js/search-data.js' do
   filter :erb
   if $use_minified_js then
     filter :uglify_js
   end
 end
 
-compile '/js/*/' do
+compile '/js/**/*.min.js' do
+end
+
+compile '/js/**/*.js' do
   if $use_minified_js then
     filter :uglify_js
   end
 end
 
-compile '/blog/feed_private/' do
-  filter :erb
-end
-
-compile '/sitemap/' do
-  filter :erb
-end
-
-compile '/company/', :rep => :vcard do
+compile '/company/index.*', :rep => :vcard do
   filter :vcard, @config[:vcard]
 end
 
-compile '/company/', :rep => :qrcode do
+compile '/company/index.*', :rep => :qrcode do
   filter :vcard, @config[:vcard]
   filter :qrcode, :size => 25, :module_size => 2, :color => "#544233"
 end
 
-compile '*' do
-  if item.binary?
-    # don’t filter binary items
-  else
-    filter :erb
+compile '/**/*.xml' do
+  filter :erb
+end
 
-    if item[:extension] == 'markdown'
-      filter :kramdown, @config[:kramdown]
-    end
+compile '/**/*.html' do
+  filter :erb
 
-    if item[:kind] == 'article' && ($include_drafts or item[:published]) then
-      filter :absolutify_local_paths
-      layout 'article'
-    end
-
-    if $spellcheck then
-      filter :spellchecker
-    end
-
-#    filter :add_links_to_headers
-
-    layout 'default'
-
-    filter :rubypantsunicode
-
-    if $use_minified_html then
-      filter :html5small
-    end
+  if $spellcheck then
+    filter :spellchecker
   end
+
+  layout '/default.*'
+
+  filter :rubypantsunicode
+
+  if $use_minified_html then
+    filter :html5small
+  end
+end
+
+compile '/**/*.{markdown,md}' do
+  filter :erb
+  filter :kramdown, @config[:kramdown]
+
+  if item[:kind] == 'article' && ($include_drafts or item[:published]) then
+    filter :absolutify_local_paths
+    layout '/article.*'
+  end
+
+  if $spellcheck then
+    filter :spellchecker
+  end
+
+  layout '/default.*'
+
+  filter :rubypantsunicode
+
+  if $use_minified_html then
+    filter :html5small
+  end
+end
+
+compile '/**/*' do
 end
 
 ### Routing Rules ###################################################
 
-route '/static/*' do
-  # /static/foo.html/ -> /foo.html
-  item.identifier[7..-2]
+route '/css/*.scss' do
+  item.identifier.without_ext + '.css'
 end
 
-route '/css/partials/_*/' do
-  nil
-end
-
-route '/css/modules/_*/' do
-  nil
-end
-
-route '/css/*/' do
-  # don't generate a directory like we do for HTML files
-  item.identifier.chop + '.css'
-end
-
-route '/js/*/' do
-  # don't generate a directory like we do for HTML files
-  item.identifier.chop + '.js'
-end
-
-route '/404/' do
+route '/404.*' do
   '/404.html'
 end
 
-route '/spec/README/' do
-  '/spec/README.md'
+route '/spec/README.*' do
+  nil
 end
 
-route '/spec/LICENSE/' do
-  '/spec/LICENSE'
+route '/spec/LICENSE' do
+  nil
 end
 
-route '/spec/css/*/' do
-  # don't generate a directory like we do for HTML files
-  item.identifier.chop + '.' + item[:extension]
+route '/spec/**/*.ttl', :rep => :jsonld do
+  item.identifier.without_ext + '.jsonld'
 end
 
-route '/spec/js/*/' do
-  # don't generate a directory like we do for HTML files
-  item.identifier.chop + '.js'
+route '/spec/**/*.ttl', :rep => :rdfxml do
+  item.identifier.without_ext + '.rdf'
 end
 
-route '/spec/*', :rep => :jsonld do
-  if item[:extension] == 'ttl'
-    item.identifier.chop + '.jsonld'
-  end
+route '/blog/feed_private.xml' do
+  item.identifier.without_ext + '/index.atom'
 end
 
-route '/spec/*', :rep => :rdfxml do
-  if item[:extension] == 'ttl'
-    item.identifier.chop + '.rdf'
-  end
+route '/company/index.*', :rep => :vcard do
+  '/company/pentandra.vcf'
 end
 
-route '/blog/feed_private/' do
-  item.identifier + 'index.atom'
-end
-
-route '/sitemap/' do
-  item.identifier.chop + '.xml'
-end
-
-route '/company/', :rep => :vcard do
-  item.identifier + 'pentandra.vcf'
-end
-
-route '/company/', :rep => :qrcode do
+route '/company/index.*', :rep => :qrcode do
   '/images/pentandra-qrcode.png'
 end
 
-route '*' do
-  if item.binary? || item[:extension] == 'ttl'
-    # Write item with identifier /foo/ to /foo.ext
-    item.identifier.chop + '.' + item[:extension]
-  elsif item[:kind] == 'article'
+route '/**/index.{html,markdown,md}' do
+  if item[:kind] == 'article'
     if $include_drafts or item[:published] then
-      item.identifier + 'index.html'
+      item.identifier.without_ext + '.html'
     end
   else
-    # Write item with identifier /foo/ to /foo/index.html
-    item.identifier + 'index.html'
+    item.identifier.without_ext + '.html'
   end
 end
 
-layout '*', :erb
+route '/**/*.{html,markdown,md}' do
+  if item[:kind] == 'article'
+    if $include_drafts or item[:published] then
+      item.identifier.without_ext + '/index.html'
+    end
+  else
+    item.identifier.without_ext + '/index.html'
+  end
+end
+
+route '/**/*' do
+  item.identifier.to_s
+end
+
+layout '/**/*', :erb

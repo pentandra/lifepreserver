@@ -21,9 +21,9 @@ end
 
 task :fetch_tag_data do
 
-  semantic_tags = YAML.load_file('semantic_tags.yaml')
+  semantic_tags = YAML.load_file('etc/semantic_tags.yaml')
 
-  FileUtils.mkdir_p('data')
+  FileUtils.mkdir_p('var')
 
   data = {}
 
@@ -57,5 +57,5 @@ task :fetch_tag_data do
 
   end
 
-  File.open("data/tag_data.yaml", 'w+') { |io| io.write(YAML.dump(data)) }
+  File.open("var/tag_data.yaml", 'w+') { |io| io.write(YAML.dump(data)) }
 end

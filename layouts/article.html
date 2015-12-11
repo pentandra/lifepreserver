@@ -22,7 +22,7 @@
     <div class="post section e-content" property="schema:articleBody sioc:content">
       <%= yield %>
     </div>
-    <%= render "comments" %>
+    <%= render '/comments.*' %>
   </div>
   <aside class="aside">
     <h2 class="visuallyhidden">Meta</h2>
@@ -32,7 +32,7 @@
     </p>
 
     <%
-     company = @items['/company/']
+     company = @items['/company/index.*']
      author = company[:teammembers].find { |m| m[:first_name] + " " + m[:last_name] == @item[:author_name] }
     %>
     <section class="section banner" resource="<%= member_path(author) %>" typeof="dc:Agent schema:Person foaf:Person" property="dc:creator schema:author foaf:maker">
@@ -65,25 +65,25 @@
           %>
           <ul class="centered">
             <li>
-              <a rel="external" href="https://plus.google.com/share?url=<%= sharer_url %>">
+              <a href="https://plus.google.com/share?url=<%= sharer_url %>" title="Share this article on Google+">
                 <span aria-hidden="true" class="button icon-googleplus"></span>
                 <span class="visuallyhidden">Share on Google+</span>
               </a>
             </li>
             <li>
-              <a rel="external" href="https://www.facebook.com/sharer/sharer.php?u=<%= sharer_url %>">
+              <a href="https://www.facebook.com/sharer/sharer.php?u=<%= sharer_url %>" title="Share this article on Facebook">
                 <span aria-hidden="true" class="button icon-facebook"></span>
                 <span class="visuallyhidden">Share on Facebook</span>
               </a>
             </li>
             <li>
-              <a rel="external" href="https://twitter.com/share?url=<%=sharer_url %>&amp;text=<%= sharer_text %>&amp;via=PentandraInc&amp;hashtags=<%= sharer_tags %>&amp;related=pentandrainc,geungle">
+              <a href="https://twitter.com/share?url=<%=sharer_url %>&amp;text=<%= sharer_text %>&amp;via=PentandraInc&amp;hashtags=<%= sharer_tags %>&amp;related=pentandrainc,geungle" title="Share this article on Twitter">
                 <span aria-hidden="true" class="button icon-twitter"></span>
                 <span class="visuallyhidden">Share on Twitter</span>
               </a>
             </li>
             <li>
-              <a rel="external" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=<%= sharer_url %>&amp;title=<%= sharer_text %>&amp;summary=<%= sharer_desc %>&amp;source=pentandra.com">
+              <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=<%= sharer_url %>&amp;title=<%= sharer_text %>&amp;summary=<%= sharer_desc %>&amp;source=pentandra.com" title="Share this article on LinkedIn">
                 <span aria-hidden="true" class="button icon-linkedin"></span>
                 <span class="visuallyhidden">Share on LinkedIn</span>
               </a>

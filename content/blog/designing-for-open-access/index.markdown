@@ -1,3 +1,25 @@
+---
+title: Designing For Open Access
+description: What does open access mean to us? And how do we design for it?
+meta_description: >
+  A post describing what open access means to us, and our approach to designing
+  systems from the bottom up that open access to knowledge.
+kind: article
+author_name: Chris Chapman
+created_at: 2014-10-24
+updated_at: 2014-10-24
+published: false
+tags:
+  - Open Access
+  - Open Research
+  - Opinionated
+  - Connections
+  - Citizen Science
+  - W3C
+  - Treatise
+has_media: true
+---
+
 This post is the result of the last two years of searching, trying to
 understand how we need to move forward as a company and as a society. The
 majority of the section of this post about [the modern open access
@@ -1434,7 +1456,7 @@ research systems.
 [mass-energy equivalence]: <https://en.wikipedia.org/wiki/Mass%E2%80%93energy_equivalence> "Mass-energy equivalence on Wikipedia"
 [altmetrics]: <https://en.wikipedia.org/wiki/Altmetrics> "Altmetrics on Wikipedia"
 [New World]: <https://en.wikipedia.org/wiki/New_World> "The New World on Wikipedia"
-[Amerigo Vespucci]: <https://en.wikipedia.org/wiki/Amerigo_Vespucci "Amerigo Vespucci on Wikipedia"
+[Amerigo Vespucci]: <https://en.wikipedia.org/wiki/Amerigo_Vespucci> "Amerigo Vespucci on Wikipedia"
 [West Indies]: <https://en.wikipedia.org/wiki/West_Indies> "West Indies on Wikipedia"
 [w3c_vision]: <http://www.w3.org/Consortium/mission.html#vision>
 [wiki]: <http://en.wikipedia.org/wiki/Wiki> "Wiki on Wikipedia"

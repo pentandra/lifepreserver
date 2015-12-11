@@ -7,7 +7,7 @@ module Nanoc::Helpers
 
     require 'set'
 
-    SEMANTIC_TAGS = YAML.load_file('data/tag_data.yaml') unless defined?(SEMANTIC_TAGS)
+    SEMANTIC_TAGS = YAML.load_file('var/tag_data.yaml') unless defined?(SEMANTIC_TAGS)
 
     def semantic_tag?(tag)
       SEMANTIC_TAGS.has_key?(tag)

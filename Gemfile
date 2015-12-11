@@ -5,7 +5,7 @@ gem 'compass', '~>0.12' # for advanced CSS
 gem 'haml' # for layouts with clean sources
 gem 'kramdown' # for advanced markdown
 gem 'nanoc' # for compiling the site
-gem 'nokogiri', '1.6.3.1' # for parsing HTML
+gem 'nokogiri' # for parsing HTML
 gem 'rainpress' # for compact CSS
 gem 'uglifier' # for compact javascript
 gem 'html5small'
@@ -18,13 +18,14 @@ gem 'builder'
 gem 'adsf'
 gem 'systemu'
 gem 'shortly' # For URL shortening
-gem 'html_spellchecker'
+gem 'html_spellchecker', :git => 'https://github.com/cdchapman/HTML-Spellchecker', :branch => 'mark'
 gem 'json'
 gem 'jwt', '~> 0.1'
 gem 'rest-client', '~> 1.6'
 gem 'addressable'
 gem 'rubypants-unicode'
 gem 'linkeddata'
+gem 'jsonlint'
 
 group :development do
   gem 'guard'

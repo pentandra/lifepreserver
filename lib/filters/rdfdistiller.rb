@@ -8,63 +8,64 @@ module Nanoc::Filters
 
     def run(content, params={})
 
-      in_format = params[:in] || "turtle"
-      out_format = params[:out] || "turtle"
-      base_uri = params[:base_uri] || @item[:base_uri] || @site.config[:base_url] + @item.path
+      input = params[:in] || "turtle"
+      output = params[:out] || "turtle"
+
+      base_uri = params[:base_uri] || @item[:base_uri] || @config[:base_url] + @item.path
 
       options = {
         standard_prefixes: true,
         prefixes: {},
         base_uri: base_uri,
         validate: true,
+        simple_compact_iris: true,
       }
 
-      graph = RDF::Repository.new
+      repository = RDF::Repository.new
       
-      reader = RDF::Reader.for(in_format.to_sym) {content}
-      reader.new(content, options) {|r| graph << r}
+      RDF::Reader.for(input.to_sym).new(content, options) { |reader| repository << reader }
 
-      format = RDF::Format.for(out_format.to_sym).to_sym
+      output_format = RDF::Format.for(output.to_sym).to_sym
 
-      case format
+      case output_format
       when :jsonld
-        if @item[:context] then
-          options.merge!({ :context => @item[:context]['@context'] })
-        end
+        options.merge!({ 
+          :context => @item[:context] || {},
+          :documentLoader => self.class.method(:load_document_local)
+        })
 
-=begin
-        jsonld = JSON.parse graph.dump(format, options)
+        jsonld = ::JSON.parse repository.dump(output_format, options)
 
-        base = jsonld['@graph'].select { |statement| statement['@id'] == base_uri || statement['@id'] == '#' }.first
-        unless base.nil? then
-          jsonld['@graph'].delete(base)
-          jsonld.merge!(base)
-        end
-
-        defines = jsonld['@graph'].select { |statement| statement.has_key?('rdfs:isDefinedBy') }
-        defines.each do |s|
-          if s['rdfs:isDefinedBy'] == base_uri
-            jsonld['@graph'].delete(s)
-            s.delete('rdfs:isDefinedBy')
+        # Pull out statements about the default graph if any exist
+        if jsonld['@graph'] then
+          meta = jsonld['@graph'].select { |node| node['@id'] == base_uri or node['@id'] == "" }.first
+          unless meta.nil? then
+            jsonld['@graph'].delete(meta)
+            jsonld.merge!(meta)
           end
         end
-        jsonld['defines'] = defines unless defines.empty?
 
-        jsonld.delete('@graph') if jsonld['@graph'].empty?
+        # Replace context with original context
+        if @item[:context] then
+          jsonld['@context'] = @item[:context]
+        end
 
-        JSON.pretty_generate jsonld
-      when :rdfxml
-        graph.dump(format, options)
+        ::JSON.pretty_generate jsonld
       else
-        graph.dump(format, options)
-=end
+        repository.dump(output_format, options)
       end
 
-      graph.dump(format, options)
+    end
 
+    def self.load_document_local(url, options={}, &block)
+      if (RDF::URI(url, canonicalize: true) == RDF::URI('http://www.w3.org/ns/anno.jsonld'))
+        remote_document = JSON::LD::API::RemoteDocument.new(url, File.read('var/contexts/anno.jsonld'))
+        return block_given? ? yield(remote_document) : remote_document
+      else
+        JSON::LD::API.documentLoader(url, options, &block)
+      end
     end
 
   end
 
 end
-
