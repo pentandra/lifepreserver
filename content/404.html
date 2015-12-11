@@ -111,12 +111,12 @@ is_hidden: true
 </section>
 
 <% content_for :javascripts do %>
-<script src="/js/search-data.js?v=<%= @site.config[:version] %>"></script>
+<script src="/js/search-data.js?v=<%= @config[:version] %>"></script>
 <script>
   $(function() {
     var search = Pentandra.Search.search,
         searchInput = $("input#q"),
-        searchDomain = $.url("<%= @site.config[:base_url] %>").attr('host');
+        searchDomain = $.url("<%= @config[:base_url] %>").attr('host');
         notFoundSegments = $.url().segment();
 
     searchInput.input(function() {

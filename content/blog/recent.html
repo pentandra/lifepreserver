@@ -6,10 +6,10 @@ is_hidden: true
 
   <h1>Recent Thoughts</h1>
 
-  <% @site.publishing_articles[0, 10].each do |article| %>
-  <%= render('excerpt', :article => article) %>
+  <% publishing_articles[0, 10].each do |article| %>
+  <%= render('/excerpt.*', :article => article) %>
   <% end %>
 
-  <%= render 'blog_meta' %>
+  <%= render '/blog_meta.*' %>
 
 </div>

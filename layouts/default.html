@@ -7,12 +7,12 @@
   <meta charset="utf-8" />
   <title><%= @item[:title] %> ← Pentandra</title>
   <meta name="description" content="<%= @item[:meta_description] || @item[:description] || @item[:title] %>" />
-  <meta name="generator" content="nanoc 3.8.0" />
+  <meta name="generator" content="nanoc 4.0.0" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <% if @item[:has_media] then %>
-  <link rel="stylesheet" href="/js/mejs-2.14.2/mediaelementplayer.min.css" />
+  <link rel="stylesheet" href="/js/libs/mejs-2.18.2/mediaelementplayer.min.css" />
   <% end %>
-  <link rel="stylesheet" href="/css/style.css?v=<%= @site.config[:version] %>" />
+  <link rel="stylesheet" href="/css/style.css?v=<%= @config[:version] %>" />
   <link rel="alternate" type="application/atom+xml" href="/blog/feed" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <script src="/js/libs/modernizr.custom.40730.js"></script>
@@ -55,13 +55,13 @@
 <footer id="contentinfo" role="contentinfo" class="rev contentinfo">
   <div class="content">
     <div class="group">
-      <section class="group">
+      <section class="section">
         <section class="section">
           <div class="aside">
             <h2 class="close normal">Recent Thoughts</h2>
           </div>
           <div class="bd">
-            <% @site.publishing_articles[0, 5].each do |post| %>
+            <% publishing_articles[0, 5].each do |post| %>
             <article class="excerpt">
               <a href="<%= post.path  %>" rel="bookmark">
                 <time class="small bold" datetime="<%= post[:created_at] %>"><%= date_for(post) %></time>&#8194;<h3 class="normal"><%= post[:short_title] || post[:title] %></h3>
@@ -116,7 +116,7 @@
         </section>
         <section class="noted inner group">
           <h2 class="flush normal">Our Mission</h2>
-          <p><%= @items['/company/'][:mission] %></p>
+          <p><%= @items['/company/index.*'][:mission] %></p>
       </section>
         </section>
       </div>
@@ -147,7 +147,7 @@
           </div>
         </div>
         <div class="bd" resource="#license" typeof="rdfa:Pattern">
-          <div><small>Copyright <span class="oldstyle">©</span> <span property="schema:copyrightYear" datatype="xsd:gYear">2011</span>–<%= Time.now.year %> <a href="/company/#company" property="schema:copyrightHolder schema:publisher">Pentandra Research Solutions, Inc.</a></small></div>
+          <div><small>Copyright © <span property="schema:copyrightYear" datatype="xsd:gYear">2011</span>–<%= Time.now.year %> <a href="/company/#company" property="schema:copyrightHolder schema:publisher">Pentandra Research Solutions, Inc.</a></small></div>
           <div><small>Except <a href="/policy/" property="cc:useGuidelines">where otherwise noted</a>, content on this site is licensed under a <a property="cc:license" href="http://creativecommons.org/licenses/by/4.0/"><abbr title="Creative Commons Attribution 4.0 International">CC-BY</abbr> license</a>. <span class="icon-cc"></span> <span class="icon-cc-by"></span></small></div>
         </div>
       </div>
@@ -163,10 +163,10 @@
 </footer>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="/js/libs/jquery-1.7.1.js"><\/script>')</script>
 
 <% if @item[:has_media] then %>
-<script src="/js/mejs-2.14.2/mediaelement-and-player.min.js"></script>
+<script src="/js/libs/mejs-2.18.2/mediaelement-and-player.js"></script>
 <% end %>
 
 <%= content_for(@item, :javascripts) %>

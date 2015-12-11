@@ -38,7 +38,7 @@
 </div>
 
 <% items_with_tag(tag, publishing_articles).each do |article| %>
-<%= render('header', :article => article) %>
+<%= render('/header.*', :article => article) %>
 <% end %>
 
-<%= render 'blog_meta' %>
+<%= render '/blog_meta.*' %>

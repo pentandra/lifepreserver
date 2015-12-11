@@ -96,9 +96,9 @@ sleep. But the letdown after the adrenaline stops is brutal.
 <figure id="growam-video">
   <div class="simple">
     <video style="width:100%;height:100%;" poster="growam2012.jpg" controls="controls" preload="none">
-      <source type="video/mp4" src="growam2012_mp4.mp4" />
-      <source type="video/webm" src="growam2012_webm.webm" />
-      <source type="video/ogg" src="growam2012_ogv.ogv" />
+      <source type="video/mp4" src="growam2012.mp4" />
+      <source type="video/webm" src="growam2012.webm" />
+      <source type="video/ogg" src="growam2012.ogv" />
     </video>
   </div>
   <figcaption class="small">

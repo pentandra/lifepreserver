@@ -18,7 +18,7 @@ module Nanoc::Helpers
     # @return [String] The absolute path to the target
     def absolute_path_to(item, target)
 
-      if @site.config[:base_url].nil?
+      if @config[:base_url].nil?
         raise Nanoc::Errors::GenericTrivial.new('Cannot build absolute path: site configuration has no base_url')
       end
 
@@ -33,7 +33,7 @@ module Nanoc::Helpers
       end
 
       absolute_path = unstack(item.path, path)
-      absolute_path = @site.config[:base_url] + absolute_path
+      absolute_path = @config[:base_url] + absolute_path
 
       absolute_path
     end
