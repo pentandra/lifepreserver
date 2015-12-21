@@ -183,7 +183,7 @@ of the World</cite>
   <a property="schema:contentUrl" href="printing_press.jpg">
     <img property="schema:thumbnail" class="static retina" src="printing_press_620x442.jpg" alt="An 18th-century reconstructed Gutenberg-style printing press" />
   </a>
-  <figcaption class="small"><span property="schema:description"><b property="schema:name dc:title">A Gutenberg-style printing press</b>, inside the Book Workshop of La Maison Fusier, located in the town of Ferney-Voltaire, France. Printing presses like these made the mass dissemination of knowledge possible.</span> Licensed under a <a href="http://creativecommons.org/licenses/by/4.0/"><abbr title="Creative Commons Attribution 4.0 International">CC-BY</abbr> license</a>. <span class="icon-cc"></span><span class="icon-cc-by"></span></figcaption>
+  <figcaption class="small"><span property="schema:description"><b property="schema:name dc:title">A Gutenberg-style printing press</b>, inside the Book Workshop of La Maison Fusier, located in the town of Ferney-Voltaire, France. Printing presses like these made the mass dissemination of knowledge possible.</span></figcaption>
   <link property="rdfa:copy" href="#license" />
 </figure>
 
