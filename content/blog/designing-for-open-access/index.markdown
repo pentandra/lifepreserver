@@ -144,9 +144,7 @@ whole.
 
     </p>
   </blockquote>
-  <figcaption>--- Albert Einstein, forward to Galileo's <cite>Dialogue
-  Concerning the Two Chief World Systems, Ptolemaic and Copernican</cite>,
-  reprinted in <span class="oldstyle">1953</span>.</figcaption>
+  <figcaption>--- Albert Einstein, forward to Galileo's <cite>Dialogue Concerning the Two Chief World Systems, Ptolemaic and Copernican</cite>, reprinted in <span class="oldstyle">1953</span>.</figcaption>
 </figure>
 
 Transition and the supposed immortality of copyists
@@ -185,18 +183,7 @@ of the World</cite>
   <a property="schema:contentUrl" href="printing_press.jpg">
     <img property="schema:thumbnail" class="static retina" src="printing_press_620x442.jpg" alt="An 18th-century reconstructed Gutenberg-style printing press" />
   </a>
-  <figcaption class="small">
-
-    <span property="schema:description"><b property="schema:name dc:title">A
-    Gutenberg-style printing press</b>, inside the Book Workshop of La Maison
-    Fusier, located in the town of Ferney-Voltaire, France. Printing presses
-    like these made the mass dissemination of knowledge possible.</span>
-    Licensed under a <a
-    href="http://creativecommons.org/licenses/by/4.0/"><abbr title="Creative
-    Commons Attribution 4.0 International">CC-BY</abbr> license</a>. <span
-    class="icon-cc"></span><span class="icon-cc-by"></span>
-
-  </figcaption>
+  <figcaption class="small"><span property="schema:description"><b property="schema:name dc:title">A Gutenberg-style printing press</b>, inside the Book Workshop of La Maison Fusier, located in the town of Ferney-Voltaire, France. Printing presses like these made the mass dissemination of knowledge possible.</span> Licensed under a <a href="http://creativecommons.org/licenses/by/4.0/"><abbr title="Creative Commons Attribution 4.0 International">CC-BY</abbr> license</a>. <span class="icon-cc"></span><span class="icon-cc-by"></span></figcaption>
   <link property="rdfa:copy" href="#license" />
 </figure>
 
@@ -389,28 +376,14 @@ history][Andraka TEDx].
   <meta property="schema:height" content="480" />
   <meta property="schema:width" content="854" />
   <meta property="schema:duration" content="PT3M59S" typeof="schema:Duration" />
-  <meta property="schema:thumbnail" content="Cancer_Breakthrough.ogv.jpg" />
-  <video id="video:cancer-breakthrough" style="width:100%;height:100%;" poster="Cancer_Breakthrough.ogv.jpg" controls="controls" preload="none">
-    <source property="schema:contentUrl" type="video/mp4" src="Cancer_Breakthrough_mp4.mp4" />
-    <source property="schema:contentUrl" type="video/webm" src="Cancer_Breakthrough_webm.webm" />
-    <source property="schema:contentUrl" type="video/ogg" src="Cancer_Breakthrough_ogv.ogv" />
-    <track kind="subtitles" src="Cancer_Breakthrough.ogv.en.srt" srclang="en" />
+  <meta property="schema:thumbnail" content="Cancer_Breakthrough.jpg" />
+  <video id="video:cancer-breakthrough" style="width:100%;height:100%;" poster="Cancer_Breakthrough.jpg" controls="controls" preload="none">
+    <source property="schema:contentUrl" type="video/mp4" src="Cancer_Breakthrough.mp4" />
+    <source property="schema:contentUrl" type="video/webm" src="Cancer_Breakthrough.webm" />
+    <source property="schema:contentUrl" type="video/ogg" src="Cancer_Breakthrough.ogv" />
+    <track kind="subtitles" src="Cancer_Breakthrough.en.srt" srclang="en" />
   </video>
-  <figcaption class="small">
-
-    <span property="schema:description">An interview on Open Access to research
-    journals with Dr. Francis S.  Collins, Director of the National Institutes
-    of Health, and Jack Andraka. Presented by the <a
-    property="cc:attributionName" rel="cc:attributionURL"
-    href="http://www.righttoresearch.org">Right to Research Coalition</a>, with
-    support from <abbr title="Scholarly Publishing and Academic Resources
-    Coalition">SPARC</abbr> and the Society for Science and the Public.</span>
-    Licensed under a <a rel="cc:license"
-    href="http://creativecommons.org/licenses/by/3.0/"><abbr title="Creative
-    Commons Attribution 3.0 Unported">CC-BY</abbr>
-    license</a>. <span class="icon-cc"></span><span class="icon-cc-by"></span>
-
-  </figcaption>
+  <figcaption class="small"><span property="schema:description">An interview on Open Access to research journals with Dr. Francis S.  Collins, Director of the National Institutes of Health, and Jack Andraka. Presented by the <a property="cc:attributionName" rel="cc:attributionURL" href="http://www.righttoresearch.org">Right to Research Coalition</a>, with support from <abbr title="Scholarly Publishing and Academic Resources Coalition">SPARC</abbr> and the Society for Science and the Public.</span> Licensed under a <a rel="cc:license" href="http://creativecommons.org/licenses/by/3.0/"><abbr title="Creative Commons Attribution 3.0 Unported">CC-BY</abbr> license</a>. <span class="icon-cc"></span><span class="icon-cc-by"></span></figcaption>
 </figure>
 
 While people around the world have championed him, a few from the scientific
@@ -573,14 +546,7 @@ them.
 
     </p>
   </blockquote>
-  <figcaption>
-
-    --- Tim Berners-Lee, in a <a
-    href="https://en.wikipedia.org/wiki/Global_Network_Navigator"><abbr
-    title="Global Network Navigator">GNN</abbr></a> interview, <span
-    class="oldstyle">1994</span>
-
-  </figcaption>
+  <figcaption>--- Tim Berners-Lee, in a <a href="https://en.wikipedia.org/wiki/Global_Network_Navigator"><abbr title="Global Network Navigator">GNN</abbr></a> interview, <span class="oldstyle">1994</span></figcaption>
 </figure>
 
 A big part of society is involved in the creation of knowledge. Yet knowledge
@@ -922,12 +888,7 @@ researchers down in a selfish scramble to survive.
 
     </p>
   </blockquote>
-  <figcaption>
-
-    --- Erwin Chargaff, <cite>Heraclitean Fire: Sketches from a Life Before
-    Nature</cite>, <span class="oldstyle">1978</span>
-
-  </figcaption>
+  <figcaption>--- Erwin Chargaff, <cite>Heraclitean Fire: Sketches from a Life Before Nature</cite>, <span class="oldstyle">1978</span></figcaption>
 </figure>
 
 Some researchers write highfalutin mumbo-jumbo in an effort to sound clever.
@@ -972,28 +933,14 @@ without hidden agendas or selfish motivations.
   <meta property="schema:height" content="384" />
   <meta property="schema:width" content="512" />
   <meta property="schema:duration" content="PT5M22S" typeof="schema:Duration" />
-  <meta property="schema:thumbnail" content="you_are_amateurs.avi.jpg" />
-  <video id="video:you_are_amateurs" style="width:100%;height:100%;" poster="you_are_amateurs.avi.jpg" controls="controls" preload="none">
-    <source property="schema:contentUrl" type="video/mp4" src="you_are_amateurs.avi_mp4.mp4" />
-    <source property="schema:contentUrl" type="video/webm" src="you_are_amateurs.avi_webm.webm" />
-    <source property="schema:contentUrl" type="video/ogg" src="you_are_amateurs.avi_ogv.ogv" />
-    <track kind="subtitles" src="you_are_amateurs.srt" srclang="en" />
+  <meta property="schema:thumbnail" content="you_are_amateurs.jpg" />
+  <video id="video:you_are_amateurs" style="width:100%;height:100%;" poster="you_are_amateurs.jpg" controls="controls" preload="none">
+    <source property="schema:contentUrl" type="video/mp4" src="you_are_amateurs.mp4" />
+    <source property="schema:contentUrl" type="video/webm" src="you_are_amateurs.webm" />
+    <source property="schema:contentUrl" type="video/ogg" src="you_are_amateurs.ogv" />
+    <track kind="subtitles" src="you_are_amateurs.en.srt" srclang="en" />
   </video>
-  <figcaption class="small">
-
-    <span property="schema:description"><b property="schema:title">You Are
-    Amateurs</b> from <cite>A Christmas Without Snow</cite>, via the <a
-    href="https://archive.org/details/AChristmasWithoutSnow"
-    property="prov:wasDerivedFrom">Internet Archive</a>, produced by <span
-    property="cc:attributionName schema:productionCompany">Korty Films</span>
-    in <span class="oldstyle" property="schema:datePublished">1980</span></span>.
-    Licensed under a <a property="cc:license"
-    href="http://creativecommons.org/publicdomain/zero/1.0/"
-   ><abbr title="Creative Commons Zero (Public Domain
-    Dedication)">CC0</abbr> license</a>. <span class="icon-cc"></span><span
-    class="icon-cc-zero"></span>
-
-  </figcaption>
+  <figcaption class="small"><span property="schema:description"><b property="schema:title">You Are Amateurs</b> from <cite>A Christmas Without Snow</cite>, via the <a href="https://archive.org/details/AChristmasWithoutSnow" property="prov:wasDerivedFrom">Internet Archive</a>, produced by <span property="cc:attributionName schema:productionCompany">Korty Films</span> in <span class="oldstyle" property="schema:datePublished">1980</span></span>. Licensed under a <a property="cc:license" href="http://creativecommons.org/publicdomain/zero/1.0/" ><abbr title="Creative Commons Zero (Public Domain Dedication)">CC0</abbr> license</a>. <span class="icon-cc"></span><span class="icon-cc-zero"></span></figcaption>
 </figure>
 
 It was in <span class="oldstyle">1905</span>, while Albert Einstein worked
@@ -1080,15 +1027,7 @@ metaphor for how to proceed in the future.
   <a property="schema:contentUrl" href="movable_type_in_typecase.jpg">
     <img property="schema:thumbnail" class="retina static" src="movable_type_in_typecase_620x442.jpg" alt="Movable type" />
   </a>
-  <figcaption class="small">
-
-    <b property="schema:name dc:title">Movable type</b>, or <em>sorts</em>, in
-    a type case. Licensed under a <a
-    href="http://creativecommons.org/licenses/by/4.0/"><abbr title="Creative
-    Commons Attribution 4.0 International">CC-BY</abbr> license</a>. <span
-    class="icon-cc"></span><span class="icon-cc-by"></span>
-
-  </figcaption>
+  <figcaption class="small"><b property="schema:name dc:title">Movable type</b>, or <em>sorts</em>, in a type case. Licensed under a <a href="http://creativecommons.org/licenses/by/4.0/"><abbr title="Creative Commons Attribution 4.0 International">CC-BY</abbr> license</a>. <span class="icon-cc"></span><span class="icon-cc-by"></span></figcaption>
 </figure>
 
 Movable type worked really well for alphabets that had relatively few
@@ -1098,15 +1037,7 @@ characters in them.
   <a title="View original image on Wikimedia Commons" property="prov:wasDerivedFrom" href="http://upload.wikimedia.org/wikipedia/commons/a/ae/Metal_movable_type.jpg">
     <img property="schema:contentUrl" class="static" src="Metal_movable_type.jpg" alt="Metal movable type in a composing stick" />
   </a>
-  <figcaption class="small">
-
-    <b property="schema:name dc:title">Movable type in a composing stick</b>,
-    by <span property="cc:attributionName">Willi Heidelbach</span>, licensed under a <a
-    href="http://creativecommons.org/licenses/by-sa/3.0/" rel="license"
-    property="cc:license"><abbr title="Creative Commons Attribution-Share Alike 3.0 Unported">CC-BY-SA</abbr> license</a>.
-    <span class="icon-cc"></span><span class="icon-cc-by"></span><span class="icon-cc-sa"></span>
-
-  </figcaption>
+  <figcaption class="small"><b property="schema:name dc:title">Movable type in a composing stick</b>, by <span property="cc:attributionName">Willi Heidelbach</span>, licensed under a <a href="http://creativecommons.org/licenses/by-sa/3.0/" rel="license" property="cc:license"><abbr title="Creative Commons Attribution-Share Alike 3.0 Unported">CC-BY-SA</abbr> license</a>.  <span class="icon-cc"></span><span class="icon-cc-by"></span><span class="icon-cc-sa"></span></figcaption>
 </figure>
 
 ### Research Cases: A Proposal for the Future
