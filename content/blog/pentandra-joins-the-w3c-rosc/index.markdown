@@ -5,7 +5,7 @@ kind: article
 article_id: pentandra-joins-the-w3c-rosc
 author_name: Chris Chapman
 created_at: 2013-04-19
-updated_at: 2013-04-19
+updated_at: 2016-03-04
 published: true
 tags:
   - Open Access
@@ -32,8 +32,8 @@ Quoting from their charter:
 > study, are what we call **Research Objects**.
 {: .bq .grab }
 
-What they refer to as _research objects_, we call
-[_research cases_](/research/process/#sec:research-case).
+I am curious to explore the relationship between _research objects_ and what we
+are working on with [_research cases_](/research/process/#sec:research-case).
 
 While this group has explicitly stated that they will not be publishing
 specifications, it is exciting to see this kind of dialog starting to happen.
