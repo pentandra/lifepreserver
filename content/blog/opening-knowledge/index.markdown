@@ -71,19 +71,19 @@ as if we know each other, yet so much of who we are is not revealed to the
 people around us. In some ways this is a good thing. We each get to choose what
 and how much to share of our private selves with others. Even so, every time we
 try to share our thoughts and discoveries with each other, we have to translate
-the constantly flowing ideas of our minds into the much more limited medium of
-language. When we are directly in the presence of others, we have other tools
-at our disposal, such as gestures, expressions, inflection, and dynamics, but
-over long distances we experience increasing barriers to communication,
-especially when all we have to work with is prose. Prose gives the impression
-that it is precise, but in practice leaves much open for interpretation.
-Ambiguity is easy to introduce, and can confuse not only people, but machines
-as well. And even if we were perfect at our communication skills, people only
-share what they want to share with others. Much of our knowledge and
-understanding remains on the shelves, so to speak. And our [diminishing
-attention spans] make the problem all the worse! Rather than being left to
-guess the meaning between the lines, as Sosno's sculpture suggests, we need the
-ability to share what is in our heads more directly.
+the constantly flowing ideas of our minds and hearts into the much more limited
+medium of language. When we are directly in the presence of others, we have
+other tools at our disposal, such as gestures, expressions, inflection, and
+dynamics, but over long distances we experience increasing barriers to
+communication, especially when all we have to work with is prose. Prose gives
+the impression that it is precise, but in practice leaves much open for
+interpretation. Ambiguity is easy to introduce, and can confuse not only
+people, but machines as well. And even if we were perfect at our communication
+skills, people only share what they want to share with others. Much of our
+knowledge and understanding remains on the shelves, so to speak. And our
+[diminishing attention spans] make the problem all the worse! Rather than being
+left to guess the meaning between the lines, as Sosno's sculpture suggests, we
+need the ability to share what is in our heads more directly.
 
 In the current scholarly ecosystem the situation is more bleak. The paper
 publication process is too slow and isolated, not having changed much from what
