@@ -132,25 +132,26 @@ preserving the context and meaning of those connections. There are huge
 opportunities here to improve the quality of the research experience.
 
 Scholarship is currently assumed to be the domain of the scholarly elite. [In
-the future], I see research as part of the everyday life of many types of
+the future], we see research as part of the everyday life of many types of
 people, from many different backgrounds, contributing to the world's knowledge
 in many different ways. You don't need to be a PhD to contribute meaningfully
 to the progress of knowledge! Some people know the right questions to ask, and
 other people are better at finding answers. Everyone knows different things and
 can bring a unique perspective to a question. In general, we want to change how
-research is done and perceived. We are creating a research counterculture. You
-could compare what we are trying to achieve to the beginnings of the World Wide
-Web. In the early <span class="oldstyle">90</span>'s, the Web was the domain of
-technical futurists. Now the Web is cool, and everyone seems to be on the Web
-in some form or fashion. Anyone can become a web developer, blogger, or
-contribute something in some way, without anyone else's permission. Anyone—a
-curious student to a professional scholar or a seasoned entrepreneur to an
-aspiring researcher in a third-world country—should be able to share their
-journey of discovery in a simple, open way. This mechanism should be simple
-enough to track elementary questions and answers, and powerful enough to handle
-<a href="#fig:alice">complex, data-intensive research</a>. It needs to open
-doors for collaboration within a research field and bridge fields of knowledge
-that have traditionally been isolated. We need something that allows anyone to
+research is done and perceived. A new research culture is growing, and we want
+to help it grow. You could compare what we are trying to achieve to the
+beginnings of the World Wide Web. In the early <span
+class="oldstyle">90</span>'s, the Web was the domain of technical futurists.
+Now the Web is cool, and everyone seems to be on the Web in some form or
+fashion. Anyone can become a web developer, blogger, or contribute something in
+some way, without anyone else's permission. Anyone—a curious student to a
+professional scholar or a seasoned entrepreneur to an aspiring researcher in a
+third-world country—should be able to share their journey of discovery in a
+simple, open way. This mechanism should be simple enough to track elementary
+questions and answers, and powerful enough to handle <a
+href="#fig:alice">complex, data-intensive research</a>. It needs to open doors
+for collaboration within a research field and bridge fields of knowledge that
+have traditionally been isolated. We need something that allows anyone to
 publish every bit of the journey, from the most random piece of evidence to the
 most profound analysis in real time, as the research is progressing. And all
 this research needs to be accessible not only to people, but to machines as
