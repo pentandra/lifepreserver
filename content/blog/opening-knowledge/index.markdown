@@ -19,17 +19,9 @@ tags:
   - W3C
 ---
 
-We blogged about [our mission a couple years ago], and it has been fascinating
-to see how our understanding has grown over time.
-{: .intro }
-
----
-
-All that we do in this company is motivated by our [mission], which is:
-
-> To open up the knowledge of the world, so that light and understanding will
-> be more accessible to everyone.
-{: .bq .grab }
+All that we do in this company is motivated by our [mission], which is, '<q
+cite="/company/#sec:mission">to open up the knowledge of the world, so that
+light and understanding will be more accessible to everyone.</q>'
 
 _We live in the information age. Why does knowledge need to be opened up?_
 
