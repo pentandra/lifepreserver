@@ -69,9 +69,9 @@ minds, or send out packets of understanding to another. Our ability to
 communicate knowledge is limited. We walk around and interact with each other
 as if we know each other, yet so much of who we are is not revealed to the
 people around us. In some ways this is a good thing. We each get to choose what
-and how much to share of our private selves with others. Yet every time we try
-to share our thoughts and discoveries with each other, we have to translate the
-constantly flowing ideas of our minds into the much more limited medium of
+and how much to share of our private selves with others. Even so, every time we
+try to share our thoughts and discoveries with each other, we have to translate
+the constantly flowing ideas of our minds into the much more limited medium of
 language. When we are directly in the presence of others, we have other tools
 at our disposal, such as gestures, expressions, inflection, and dynamics, but
 over long distances we experience increasing barriers to communication,
@@ -89,19 +89,19 @@ In the current scholarly ecosystem the situation is more bleak. The paper
 publication process is too slow and isolated, not having changed much from what
 it was <span class="oldstyle">350</span> years ago. Commercial publishers put
 research articles behind paywalls, charging consumers <span
-class="oldstyle">$30--40</span> for access to each. Yet researchers get none of
-the profits. Even with access to an article, very few of the underlying
-connections in logic are ever published, especially when page limits constrain
-how much a researcher can share in the first place. This makes it hard for
-others to reproduce or build upon the research results. Even further, research
-that doesn't turn out as hoped is normally _not_ published at all. While the
-researcher may remember the result, the world doesn't. For all intents and
-purposes the research is _obliterated_, which leads to a lot of duplication of
-work and wasted efforts. Talk about a communications nightmare! In some ways,
-[the way scholarly information used to be shared (in the Republic of
-Letters)][Republic of Letters] is better than our current situation---at least
-the culture accommodated a more open and participative approach. In present
-scholarly communications, even in the best of circumstances, we're only
+class="oldstyle">$30--40</span> for access to each. And the original authors or
+researchers get none of the profits. Even with access to an article, very few
+of the underlying connections in logic are ever published, especially when page
+limits constrain how much a researcher can share in the first place. This makes
+it hard for others to reproduce or build upon the research results. Even
+further, research that doesn't turn out as hoped is normally _not_ published at
+all. While the researcher may remember the result, the world doesn't. For all
+intents and purposes the research is _obliterated_, which leads to a lot of
+duplication of work and wasted efforts. Talk about a communications nightmare!
+In some ways, [the way scholarly information used to be shared (in the Republic
+of Letters)][Republic of Letters] is better than our current situation---at
+least the culture accommodated a more open and participative approach. In
+present scholarly communications, even in the best of circumstances, we're only
 publishing a part of the picture, like Sosno's sculpture above, leaving the
 rest up to the imagination.
 
