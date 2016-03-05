@@ -4,7 +4,7 @@ description: We need true open access to knowledge.
 kind: article
 author_name: Chris Chapman
 created_at: 2015-09-18
-updated_at: 2015-10-01
+updated_at: 2016-03-05
 published: true
 tags:
   - Connections
@@ -43,9 +43,9 @@ inaccessible right now. If you look at <a href="#fig:squarehead">the picture
 below</a>, you notice that this library, officially named <span lang="fr">La
 Tête au Carré</span> (The Square Head), looks like a well-formed classical
 bust, up to the bottom lip. The rest is obscured by the opaque aluminum block
-that is the top four stories of the library. Because it is covered with finely
-perforated aluminum mesh, nobody can see into the library from the outside, but
-the people inside can see out. It's hard to tell whether the library is
+that is the top four stories of the library. Nobody can see into the library
+from the outside, but because it is covered with finely perforated aluminum
+mesh, the people inside can see out. It's hard to tell whether the library is
 depicting someone male or female, old or young, happy or sad. Neither can you
 tell what is in his or her mind, nor what he or she is thinking.
 
@@ -68,85 +68,89 @@ each other. As much as it would be convenient, we can't peer into each others
 minds, or send out packets of understanding to another. Our ability to
 communicate knowledge is limited. We walk around and interact with each other
 as if we know each other, yet so much of who we are is not revealed to the
-people around us. We may not really be sure who we are ourselves! We try to
-share our thoughts and discoveries with each other, but to do so we have to
-translate these ideas into the much more limited medium of language. When we
-are directly in the presence of others, we have other tools at our disposal,
-such as gestures, expressions, inflection, and dynamics, but over long
-distances we experience increasing barriers to communication, especially when
-all we have to work with is prose. Prose gives the impression that it is
-precise, but in practice leaves much open for interpretation.  Ambiguity is
-easy to introduce, and can confuse not only people, but machines as well. And
-even if we were perfect at our communication skills, people only share what
-they want to share with others. Much of our knowledge and understanding remains
-on the shelves, so to speak. And our [diminishing attention spans] make the
-problem all the worse! Rather than being left to guess the meaning between the
-lines, as Sosno's sculpture suggests, we need the ability to share what is in
-our heads more directly.
+people around us. In some ways this is a good thing. We each get to choose what
+and how much to share of our private selves with others. Every time we try to
+share our thoughts and discoveries with each other, we have to translate the
+constantly flowing ideas of our minds into the much more limited medium of
+language. When we are directly in the presence of others, we have other tools
+at our disposal, such as gestures, expressions, inflection, and dynamics, but
+over long distances we experience increasing barriers to communication,
+especially when all we have to work with is prose. Prose gives the impression
+that it is precise, but in practice leaves much open for interpretation.
+Ambiguity is easy to introduce, and can confuse not only people, but machines
+as well. And even if we were perfect at our communication skills, people only
+share what they want to share with others. Much of our knowledge and
+understanding remains on the shelves, so to speak. And our [diminishing
+attention spans] make the problem all the worse! Rather than being left to
+guess the meaning between the lines, as Sosno's sculpture suggests, we need the
+ability to share what is in our heads more directly.
 
-In scholarly research the situation is more bleak. The research publication
-process is too slow and isolated, not really having changed from what it was
-<span class="oldstyle">350</span> years ago. Commercial publishers put research
-articles behind paywalls, charging <span class="oldstyle">$30--40</span> for
-access to each. Researchers get none of the profits. Even with access to an
-article, very few of the underlying connections in logic are ever published,
-especially when page limits constrain how much a researcher can share in the
-first place. This makes it hard for people to reproduce or build upon the
-research results. Even further, research that doesn't turn out as hoped is
-normally _not_ published at all. While the researcher may remember the result,
-the world doesn't. For all intents and purposes the research is _obliterated_,
-which leads to a lot of duplication of work and wasted efforts. Talk about a
-communications nightmare!  In many ways, [the way scholarly information used to
-be shared (in the Republic of Letters)][Republic of Letters] is better than our
-current situation---at least it was more open and participative. Currently,
-even in the best of circumstances, we're only publishing a part of the picture,
-like Sosno's sculpture above, leaving the rest up to the imagination.
+In the current scholarly ecosystem the situation is more bleak. The paper
+publication process is too slow and isolated, not having changed much from what
+it was <span class="oldstyle">350</span> years ago. Commercial publishers put
+research articles behind paywalls, charging consumers <span
+class="oldstyle">$30--40</span> for access to each. Yet researchers get none of
+the profits. Even with access to an article, very few of the underlying
+connections in logic are ever published, especially when page limits constrain
+how much a researcher can share in the first place. This makes it hard for
+others to reproduce or build upon the research results. Even further, research
+that doesn't turn out as hoped is normally _not_ published at all. While the
+researcher may remember the result, the world doesn't. For all intents and
+purposes the research is _obliterated_, which leads to a lot of duplication of
+work and wasted efforts. Talk about a communications nightmare! In some ways,
+[the way scholarly information used to be shared (in the Republic of
+Letters)][Republic of Letters] is better than our current situation---at least
+the culture accommodated a more open and participative approach. In present
+scholarly communications, even in the best of circumstances, we're only
+publishing a part of the picture, like Sosno's sculpture above, leaving the
+rest up to the imagination.
 
-I think it's interesting that the World Wide Web is [a graph of nodes and
-edges][graph], but we as humans extract knowledge from it primarily by reading
-documents.  While the Web is a vast improvement over the printing press, we
-must constantly go through the process of translating prose into information,
-and then connecting those pieces of information into knowledge in a way that
-our minds can understand. And then to write a web page, we need to translate
-our knowledge into prose that someone else can later disassemble and assimilate
-in the same way. What would happen if we used the Web in a different way? If we
-sidestepped this translation process and dealt with knowledge on the Web
-directly?
+Stepping back a bit, I think it's interesting that the World Wide Web is [a
+graph of nodes and edges][graph], but we as humans extract knowledge from it
+primarily by reading documents. While the Web is a vast improvement over the
+printing press, we must constantly go through the process of translating prose
+into information, and then connecting those pieces of information into
+knowledge in a way that our minds can understand. And then to write a web page,
+we need to translate our knowledge into prose that someone else can later
+disassemble and assimilate in the same way. What would happen if we used the
+Web in a different way? If we sidestepped this translation process and dealt
+with knowledge on the Web directly?
 
 Maybe my hope for the future has come from reading too much academic writing,
 which much of the time doesn't deserve the distinction of prose. Most are not
 enjoyable to read, and don't seem like they were very enjoyable to write in the
-first place. Please don't misunderstand. There _is_ a place for well-written
-prose! But situations exist, especially in some types of research, that are not
-a good fit for the form. Prose can be added on top of the research like icing
-on a cake, but intricate prose should not be required in order to share the
-nuts and bolts of _knowledge creation_. Beyond that, our systems of citations
-are rooted in a two-dimensional world, and have not been able grow beyond this
+first place. As I say this, please don't misunderstand. I have read
+well-written papers, and I believe that, _even in scholarly communications_,
+there is a place for well-written prose! But situations exist that are not a
+good fit for the form. Prose can be added on top of the research like icing on
+a cake, but intricate prose should not be required in order to share the nuts
+and bolts of _knowledge creation_. Beyond that, our systems of citations are
+rooted in a two-dimensional world, and have not been able grow beyond this
 limitation. Footnotes seem to be the best tool that we currently have to
 describe the connections between pieces of information, but are lousy at
 preserving the context and meaning of those connections. There are huge
 opportunities here to improve the quality of the research experience.
 
-Research is currently assumed to be the domain of the scholarly elite. [In the
-future], we see research as part of the everyday life of many types of people,
-from many different backgrounds, contributing to the world's knowledge in many
-different ways. You don't need to be a PhD to contribute meaningfully to the
-progress of knowledge! Some people know the right questions to ask, and other
-people are better at finding answers. Everyone knows different things and can
-bring a unique perspective to a question. In general, we want to change how
+Scholarship is currently assumed to be the domain of the scholarly elite. [In
+the future], I see research as part of the everyday life of many types of
+people, from many different backgrounds, contributing to the world's knowledge
+in many different ways. You don't need to be a PhD to contribute meaningfully
+to the progress of knowledge! Some people know the right questions to ask, and
+other people are better at finding answers. Everyone knows different things and
+can bring a unique perspective to a question. In general, we want to change how
 research is done and perceived. We are creating a research counterculture. You
-could compare what we are trying to achieve to the World Wide Web. In the early
-<span class="oldstyle">90</span>'s, the Web was the domain of technical
-academics.  Now the Web is cool, and everyone seems to be on the Web in some
-form or fashion. Anyone can become a web developer, blogger, or contribute
-something in some way, without anyone else's permission. Anyone—a curious
-student to a professional scholar or a seasoned entrepreneur to an aspiring
-researcher in a third-world country—should be able to share their journey of
-discovery in a simple, open way. This mechanism should be simple enough to
-track elementary questions and answers, and powerful enough to handle <a
-href="#fig:alice">complex, data-intensive research</a>. It needs to open doors
-for collaboration within a research field and bridge fields of knowledge that
-have traditionally been isolated. We need something that allows anyone to
+could compare what we are trying to achieve to the beginnings of the World Wide
+Web. In the early <span class="oldstyle">90</span>'s, the Web was the domain of
+technical futurists. Now the Web is cool, and everyone seems to be on the Web
+in some form or fashion. Anyone can become a web developer, blogger, or
+contribute something in some way, without anyone else's permission. Anyone—a
+curious student to a professional scholar or a seasoned entrepreneur to an
+aspiring researcher in a third-world country—should be able to share their
+journey of discovery in a simple, open way. This mechanism should be simple
+enough to track elementary questions and answers, and powerful enough to handle
+<a href="#fig:alice">complex, data-intensive research</a>. It needs to open
+doors for collaboration within a research field and bridge fields of knowledge
+that have traditionally been isolated. We need something that allows anyone to
 publish every bit of the journey, from the most random piece of evidence to the
 most profound analysis in real time, as the research is progressing. And all
 this research needs to be accessible not only to people, but to machines as
