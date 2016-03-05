@@ -38,6 +38,8 @@ We need easier ways to share these nuggets of knowledge. We also need to be
 able to share knowledge in more open, personal ways. Knowledge needs to be
 accessible in whatever way people think.
 
+<!--MORE-->
+
 A library in France is a good metaphor for how knowledge is trapped and
 inaccessible right now. If you look at <a href="#fig:squarehead">the picture
 below</a>, you notice that this library, officially named <span lang="fr">La
@@ -54,8 +56,6 @@ tell what is in his or her mind, nor what he or she is thinking.
   <img property="schema:contentUrl" src="square_head.jpg" class="static" alt="Tête carrée, or Square Head, a library in Nice, France" />
   <figcaption property="schema:caption" class="small"><a href="https://www.flickr.com/photos/14382098@N03/4300141401/" lang="fr" title="Une tête au carré à Nice on Flickr"><b>Une tête au carré à Nice</b></a> (A square head in Nice) by <a lang="fr" property="cc:attributionName" rel="cc:attributionURL" href="https://www.flickr.com/photos/14382098@N03/">Benoît Lesquerbault</a>, licensed under a <a rel="cc:license" href="https://creativecommons.org/licenses/by/2.0/"><abbr title="Creative Commons Attribution 2.0 Generic">CC-BY</abbr></a> license, is actually the seven-story administration building of the municipal library in <span property="schema:contentLocation">Nice, France</span>. The sculptor, Sacha Sosno, uses the art of obliteration to invite the viewer to imagine the rest the sculpture. <span class="icon-cc"></span><span class="icon-cc-by"></span></figcaption>
 </figure>
-
-<!--MORE-->
 
 Libraries are repositories of knowledge. You could think of books, the Web, and
 people as libraries. All of these things, especially each of us, are vast
