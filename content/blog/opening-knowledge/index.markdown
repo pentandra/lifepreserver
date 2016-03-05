@@ -127,14 +127,14 @@ a cake, but intricate prose should not be required in order to share the nuts
 and bolts of _knowledge creation_. The way papers are currently written,
 authors attempt to pull together elements from their experience in order to
 share something intelligible. Without fail, important elements end up getting
-left out or forgotten. The writing process filters information that the author
-deems irrelevant to the problem at hand or tacitly understood by the intended
-audience. Beyond that, our systems of citations are rooted in a two-dimensional
-world, and have not been able grow beyond this limitation. Footnotes seem to be
-the best tool that we currently have to describe the connections between pieces
-of information, but are lousy at preserving the context and meaning of those
-connections. There are huge opportunities here to improve the quality of the
-research experience.
+left out or forgotten. And the writing process filters information that the
+author deems irrelevant to the problem at hand or tacitly understood by the
+intended audience. Beyond that, our systems of citations are rooted in a
+two-dimensional world, and have not been able grow beyond this limitation.
+Footnotes seem to be the best tool that we currently have to describe the
+connections between pieces of information, but are lousy at preserving the
+context and meaning of those connections. There are huge opportunities here to
+improve the quality of the research experience.
 
 Scholarship is currently assumed to be the domain of the scholarly elite. [In
 the future], we see research as part of the everyday life of many types of
