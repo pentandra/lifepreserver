@@ -69,8 +69,8 @@ minds, or send out packets of understanding to another. Our ability to
 communicate knowledge is limited. We walk around and interact with each other
 as if we know each other, yet so much of who we are is not revealed to the
 people around us. In some ways this is a good thing. We each get to choose what
-and how much to share of our private selves with others. Every time we try to
-share our thoughts and discoveries with each other, we have to translate the
+and how much to share of our private selves with others. Yet every time we try
+to share our thoughts and discoveries with each other, we have to translate the
 constantly flowing ideas of our minds into the much more limited medium of
 language. When we are directly in the presence of others, we have other tools
 at our disposal, such as gestures, expressions, inflection, and dynamics, but
