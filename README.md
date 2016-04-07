@@ -1,10 +1,10 @@
-## Pentandra Website
+## Lifepreserver
 
-The website for [Pentandra Research Solutions](http://pentandra.com/).
+This is the website for [Pentandra Research Solutions](https://pentandra.com/).
 
 ### Contributing
 
-The source for pentandra.com is built using [nanoc](http://nanoc.stoneship.org/).
+The source for this project is built using [nanoc](http://nanoc.ws/).
 
 To get started:
 
