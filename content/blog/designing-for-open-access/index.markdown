@@ -17,7 +17,7 @@ tags:
   - Republic of Letters
   - Phil Trans
   - Citizen Science
-  - W3C
+  - World Wide Web
   - Treatise
 has_media: true
 ---

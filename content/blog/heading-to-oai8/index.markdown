@@ -10,7 +10,7 @@ published: true
 tags:
   - Open Research
   - OAI
-  - W3C
+  - World Wide Web
   - Growth
 ---
 

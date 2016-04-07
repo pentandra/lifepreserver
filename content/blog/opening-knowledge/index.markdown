@@ -16,7 +16,7 @@ tags:
   - Technology
   - Open Business
   - Growth
-  - W3C
+  - World Wide Web
 ---
 
 All that we do in this company is motivated by our [mission], which is, '<q
