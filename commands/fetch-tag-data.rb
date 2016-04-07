@@ -1,25 +1,11 @@
-require 'nanoc'
 require 'sparql/client'
 require 'yaml'
 
-task :default => [:compile]
+usage     'fetch-tag-data'
+aliases   :fetchtags, :ft
+summary   'fetches semantic tag data from the Web'
 
-task :optimize_pngs do
-  system('find', 'output', '-name', '*.png', '-exec', 'optipng', '-o7', '{}', ';')
-end
-
-task :build_production do
-  system('cp', 'settings/prd.rb', 'settings.rb')
-  Rake::Task["rebuild"].invoke
-  Rake::Task["optimize_pngs"].invoke
-end
-
-task :publish do
-  exit unless system("scripts/confirm.sh")
-  system('nanoc', 'deploy', '-t', 'public')
-end
-
-task :fetch_tag_data do
+run do |opts, args, cmd|
 
   semantic_tags = YAML.load_file('etc/semantic_tags.yaml')
 
