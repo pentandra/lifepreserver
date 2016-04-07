@@ -1,10 +1,10 @@
-usage 'set_env [options]'
+usage 'set-env [options]'
 aliases :se
 summary 'set the current environment'
 
 option :e, :env, 'specify the environment', :argument => :required
 
-run do  |opts, args, cmd|
+run do |opts, args, cmd|
 
   # get environment
   environment = opts.fetch(:env) do
