@@ -1,4 +1,4 @@
-require 'nanoc/tasks'
+require 'nanoc'
 require 'sparql/client'
 require 'yaml'
 
@@ -41,6 +41,7 @@ task :fetch_tag_data do
         <#{uri}> rdfs:label ?label ;
                  dbpedia-owl:abstract ?abstract ;
                  foaf:isPrimaryTopicOf ?topic .
+          FILTER (langMatches(lang(?label), \"en\"))
           FILTER (langMatches(lang(?abstract), \"en\"))
       }"
 
