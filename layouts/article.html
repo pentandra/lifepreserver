@@ -40,18 +40,11 @@
       <figure id="author">
         <img class="photo framed" src="<%= member_image_path(author) %>" alt="Photo of <%= full_name(author) %>" property="schema:image foaf:img" />
         <figcaption class="small nav">
-          <h4 class="normal shaved" property="rdfs:label schema:name foaf:name"><%= full_name(author) %></h4>
+          <h4 class="normal shaved" property="rdfs:label schema:name foaf:name"><a href="<%= member_description_path(author) %>" property="schema:url" class="subtle"><%= full_name(author) %></a></h4>
           <p class="small em flush" property="schema:jobTitle"><%= author[:title] %></p>
-          <ul>
-
-            <li><a href="<%= member_description_path(author) %>"
-                property="schema:url"><%= author[:first_name] %> at <span
-                  property="schema:worksFor"
-                  resource="/company/#company">Pentandra</span></a></li>
-
-          </ul>
         </figcaption>
       </figure>
+      <link property="schema:worksFor" href="/company/#company" />
     </section>
     <section class="grab banner section">
       <div class="fancy wrapper group pod">
