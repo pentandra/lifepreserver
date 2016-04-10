@@ -52,7 +52,7 @@ depicting someone male or female, old or young, happy or sad. Neither can you
 tell what is in his or her mind, nor what he or she is thinking.
 
 <figure id="fig:squarehead" class="img" property="schema:image" resource="#squarehead" typeof="schema:ImageObject">
-  <meta property="schema:representativeOfPage" content="true"/>
+  <link property="schema:representativeOfPage" href="schema:True"/>
   <img property="schema:contentUrl" src="square_head.jpg" class="static" alt="Tête carrée, or Square Head, a library in Nice, France" />
   <figcaption property="schema:caption" class="small"><a href="https://www.flickr.com/photos/14382098@N03/4300141401/" lang="fr" title="Une tête au carré à Nice on Flickr"><b>Une tête au carré à Nice</b></a> (A square head in Nice) by <a lang="fr" property="cc:attributionName" rel="cc:attributionURL" href="https://www.flickr.com/photos/14382098@N03/">Benoît Lesquerbault</a>, licensed under a <a rel="cc:license" href="https://creativecommons.org/licenses/by/2.0/"><abbr title="Creative Commons Attribution 2.0 Generic">CC-BY</abbr></a> license, is actually the seven-story administration building of the municipal library in <span property="schema:contentLocation">Nice, France</span>. The sculptor, Sacha Sosno, uses the art of obliteration to invite the viewer to imagine the rest the sculpture. <span class="icon-cc"></span><span class="icon-cc-by"></span></figcaption>
 </figure>
