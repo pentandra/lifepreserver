@@ -17,6 +17,7 @@ tags:
   - Open Business
   - Growth
   - World Wide Web
+  - Enlightenment
 ---
 
 All that we do in this company is motivated by our [mission], which is, '<q
