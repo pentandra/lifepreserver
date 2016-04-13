@@ -99,13 +99,13 @@
         <div>
           <label>
             URL:
-            <input class="bookmark u-uid u-url" type="url" value="<%= url_for(@item) %>">
+            <input readonly="readonly" class="bookmark u-uid u-url" type="url" value="<%= url_for(@item) %>">
           </label>
         </div>
         <div>
           <label>
             HTML:
-            <input type="text" value="<%= h('<cite class="h-cite"><a class="u-url p-name" href="'+url_for(@item)+'">'+@item[:title]+'</a> (<abbr class="p-author h-card" title="'+@item[:author_name]+'">'+author[:last_name]+'</abbr> <time class="dt-published">'+@item[:created_at].to_s+'</time>)</cite>') %>">
+            <input readonly="readonly" type="text" value="<%= h('<cite class="h-cite"><a class="u-url p-name" href="'+url_for(@item)+'">'+@item[:title]+'</a> (<abbr class="p-author h-card" title="'+@item[:author_name]+'">'+author[:last_name]+'</abbr> <time class="dt-published">'+@item[:created_at].to_s+'</time>)</cite>') %>">
           </label>
         </div>
       </form>
