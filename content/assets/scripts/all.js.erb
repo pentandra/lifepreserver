@@ -1,10 +1,10 @@
-<%= File.read('content/assets/components/jquery/dist/jquery.js') %>
+<%= File.read('content/assets/components/jquery/jquery.js') %>
 <%= File.read('content/assets/components/letteringjs/jquery.lettering.js') %>
 <%= File.read('content/assets/components/jquery-smooth-scroll/jquery.smooth-scroll.js') %>
 <%= File.read('content/assets/components/jquery-hashchange/jquery.ba-hashchange.js') %>
 <%= File.read('content/assets/components/accessifyhtml5/accessifyhtml5.jquery.js') %>
 <%= File.read('content/assets/components/Emphasis/js/emphasis.js') %>
-<%#<%= File.read('content/assets/components/jQuery-Retina/dist/jquery.retina.js') %>
+<%= File.read('content/assets/components/retina.js/dist/retina.js') %>
 
 window.Pentandra = window.Pentandra || {};
 
@@ -180,8 +180,6 @@ Pentandra.Search = (function() {
 
 $(document).ready(function() {
 
-  $("main img.retina").retina({ suffix: "@2x" });
-
   Pentandra.Kerning.init();
   Pentandra.Scrolling.init("main a");
   Pentandra.Social.init('#share');
@@ -189,6 +187,6 @@ $(document).ready(function() {
   AccessifyHTML5();
 });
 
-$(window).load(function() {
-  $('.bd').emphasis();
-});
+<%#$(window).load(function() {%>
+  <%#[>$('.bd').emphasis();<]%>
+<%#});%>
