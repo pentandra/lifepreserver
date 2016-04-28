@@ -1,0 +1,17 @@
+<!--[if lt IE 7]><p class="grab">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+<header id="banner" role="banner" class="group">
+  <div class="section">
+    <div class="content">
+      <span resource="#license"><a href="/" class="ir logo" property="cc:attributionName" rel="cc:attributionURL"><%= @config[:vcard][:full_name] %></a></span>
+      <nav role="navigation" class="menu group" property="schema:hasPart" typeof="schema:SiteNavigationElement">
+        <ul>
+          <li><%= link_to('Solutions', '/solutions/', :class => "button") %></li>
+          <li><%= link_to('Research', '/research/', :class => "button") %></li>
+          <li><%= link_to('Company',  '/company/', :class => "button") %></li>
+          <li><%= link_to('Open',     '/open/', :class => "button") %></li>
+          <li><%= link_to('Blog',     '/blog/recent/', :class => "button") %></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>

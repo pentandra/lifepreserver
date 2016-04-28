@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'coderay' # for syntax highlighting
-gem 'compass', '~>0.12' # for advanced CSS
+gem 'compass' # for advanced CSS
 gem 'haml' # for layouts with clean sources
 gem 'kramdown' # for advanced markdown
 gem 'nanoc' # for compiling the site

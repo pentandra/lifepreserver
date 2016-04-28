@@ -1,6 +1,6 @@
 require 'json'
 
-module LifePreserver
+module Pentandra
 
   module Search
 

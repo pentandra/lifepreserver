@@ -5,7 +5,7 @@ module Nanoc::Helpers
     include Nanoc::Helpers::Text
 
     def publishing_articles
-      if $include_drafts then
+      if not @config[:production] then
         sorted_articles
       else
         sorted_articles.select { |a| a[:published] } unless sorted_articles.nil?
@@ -33,12 +33,12 @@ module Nanoc::Helpers
       %[<a href="#{h base_url}#{h author.to_slug}/" title="Articles by #{h author}">#{h author}</a>]
     end
 
-    def articles_by_author(author)
-      publishing_articles.select { |i| i[:author_name] == author }
+    def articles_by_author(articles, author)
+      articles.select { |i| i[:author_name] == author }
     end
 
-    def articles_for_year(year)
-      publishing_articles.select { |i| i[:created_at].year == year }
+    def articles_by_year(articles, year)
+      articles.select { |i| i[:created_at].year == year }
     end
 
     def link_for_archive(year, base_url)
@@ -72,11 +72,11 @@ module Nanoc::Helpers
     #
     # @param [String] item The blog post
     #
-    # @param [String] read_more_text The 'Read more...' text
+    # @param [String] read_more_text The 'Read more →' text
     #
     # @param [String] separator Separates item summary from item body. Defaults to <!--MORE-->
     #
-    def article_summary(article, read_more_text="Read more...", separator="<!--MORE-->")
+    def article_summary(article, read_more_text="Read more →", separator="<!--MORE-->")
       summary,body = article.compiled_content.split(separator)
       return article.compiled_content unless body
       link = link_to( (article[:read_more] || read_more_text), article.path, { :class => 'readmore', :title => "Read the full article" })
@@ -85,6 +85,44 @@ module Nanoc::Helpers
 
     def article_id(article)
       article[:article_id] || md5(article[:title].to_slug)
+    end
+
+    # Creates in-memory tag pages from partial: layouts/tag.html
+    def generate_tag_pages(item_set)
+      count_tags(item_set).each do |tag, count|
+        @items.create(
+          "<%= render('/blog/tag.*',  { :tag => '#{tag}', :semantic_tag => SEMANTIC_TAGS['#{tag}'] }) %>",
+          { :title => "Tag: #{tag}", :kind => 'tag-page', :count => count, :is_hidden => true, :description => "All posts having to do with the tag '#{tag}'" },
+          "/tags/#{tag.to_slug}/index.erb",
+          :binary => false
+        )
+      end
+    end
+
+    # Creates in-memory author pages from partial: layouts/author.html
+    def generate_author_pages(item_set)
+      authors(item_set).each do |author|
+        @items.create(
+          "<%= render('/blog/author.*', :author => '#{author}') %>",
+          { :title => "Articles by #{author}", :kind => 'author-page', :is_hidden => true, :description => "All posts written by #{author}" },
+          "/authors/#{author.to_slug}/index.erb",
+          :binary => false
+        )
+      end
+    end
+
+    # Creates in-memory blog archive pages from partial:
+    # layouts/blog_archive.html
+    def generate_blog_archives(item_set)
+      years = item_set.map { |a| a[:created_at].year }.uniq
+      years.each do |year|
+        @items.create(
+          "<%= render('/blog/archive.*', :year => #{year}) %>",
+          { :title => "Articles from #{year}", :kind => 'archive-page', :is_hidden => true, :description => "All posts written in #{year}" },
+          "/archives/#{year}/index.erb",
+          :binary => false
+        )
+      end
     end
 
   end

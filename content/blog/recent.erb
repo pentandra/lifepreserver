@@ -1,0 +1,15 @@
+--- 
+title: Recent Thoughts
+is_hidden: true
+---
+<div class="group">
+
+  <h1>Recent Thoughts</h1>
+
+  <% publishing_articles[0, 10].each do |article| %>
+    <%= render('/blog/partials/excerpt.*', :item => article) %>
+  <% end %>
+
+  <%= render '/blog/partials/meta.*' %>
+
+</div>

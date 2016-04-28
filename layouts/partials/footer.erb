@@ -1,0 +1,109 @@
+<footer id="contentinfo" role="contentinfo" class="rev contentinfo">
+  <div class="content">
+    <div class="group">
+      <section class="section">
+        <section class="section">
+          <div class="aside">
+            <h2 class="close normal">Recent Thoughts</h2>
+          </div>
+          <div class="bd">
+            <% publishing_articles[0, 5].each do |post| %>
+            <article class="excerpt">
+              <a href="<%= post.path  %>" rel="bookmark">
+                <time class="small bold" datetime="<%= post[:created_at] %>"><%= date_for(post) %></time>&#8194;<h3 class="normal"><%= post[:short_title] || post[:title] %></h3>
+              </a>
+            </article>
+            <% end %>
+          </div>
+        </section>
+        <section class="actions section">
+          <div class="bd">
+            <div class="menu group nav">
+              <ul class="icons big">
+                <li>
+                  <a href="https://plus.google.com/108021950461928542978?prsrc=3">
+                    <span aria-hidden="true" class="button icon-googleplus"></span>
+                    <span class="normal">Google+</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/PentandraInc">
+                    <span aria-hidden="true" class="button icon-facebook"></span>
+                    <span class="normal">Facebook</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/PentandraInc">
+                    <span aria-hidden="true" class="button icon-twitter"></span>
+                    <span class="normal">Twitter</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/blog/feed">
+                    <span aria-hidden="true" class="button icon-rss"></span>
+                    <span class="normal">Blog Feed</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </section>
+      <div class="bd">
+        <section class="noted aside section">
+          <h2 class="flush normal">About Pentandra</h2>
+
+          <ul class="none">
+            <li><a href="/blog/">The Pentandra Blog</a></li>
+            <li><a href="/company/#sec:mission">Hope for the Future</a></li>
+            <li><a href="/company/#sec:roster">Our Roster</a></li>
+            <li><a href="/company/#sec:contact">Contact Us</a></li>
+          </ul>
+        </section>
+        <section class="noted inner group">
+          <h2 class="flush normal">Our Mission</h2>
+          <p><%= @items['/company/index.*'][:mission] %></p>
+      </section>
+        </section>
+      </div>
+      <div class="aside section">
+        <div class="logo section"></div>
+        <div class="nav">
+          <ul>
+            <li><a href="/research/#sec:future">The Future of Research</a></li>
+            <li><a href="https://groups.pentandra.com/">Community Groups</a></li>
+            <li><a href="/research/process/">Research <span class="oldstyle">101</span></a></li>
+            <li><a href="/company/#donating"><span class="icon-heart"></span> Donate</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <a class="button backtotop">Back to top</a>
+    </div>
+    <div class="group">
+      <div class="group small montage">
+        <div class="aside">
+          <div class="square menu section nav">
+            <ul>
+              <li><a href="/search/">Search</a></li>
+              <li><a href="/colophon/">Colophon</a></li>
+              <li><a href="/policy/">Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="bd" resource="#license" typeof="rdfa:Pattern">
+          <div><small>Copyright © <span property="schema:copyrightYear" datatype="xsd:gYear">2011</span>–<%= Time.now.year %> <a href="/company/#company" property="schema:copyrightHolder schema:publisher">Pentandra Research Solutions, Inc.</a></small></div>
+          <div><small>Except <a href="/policy/" property="cc:useGuidelines">where otherwise noted</a>, content on this site is licensed under a <a property="cc:license" href="http://creativecommons.org/licenses/by/4.0/"><abbr title="Creative Commons Attribution 4.0 International">CC-BY</abbr> license</a>. <span class="icon-cc"></span> <span class="icon-cc-by"></span></small></div>
+        </div>
+      </div>
+      <% if $generate_timestamp then %>
+      <meta property="prov:generatedAtTime" datatype="xsd:dateTime" content="<%= DateTime.now.to_s %>" />
+      <% end %>
+      <link property="rdfa:copy" href="#license" />
+      <div>
+        <small class="em">Version <span property="dc:hasVersion"><%= @config[:version] %></span></small>
+      </div>
+    </div>
+  </div>
+</footer>

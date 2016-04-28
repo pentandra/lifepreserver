@@ -1,52 +1,12 @@
 #!/usr/bin/env ruby
 
-require 'compass'
-require './etc/environment'
-
-Compass.add_project_configuration 'etc/compass/config.rb'
+require 'date'
 
 preprocess do
-
-  # Creates in-memory tag pages from partial: layouts/tag.html
-  def generate_tag_pages
-    tag_set(publishing_articles).each do |tag|
-      @items.create(
-        "<%= render('/tag.*',  { :tag => '#{tag}', :semantic_tag => SEMANTIC_TAGS['#{tag}'] }) %>",
-        { :title => "Tag: #{tag}", :is_hidden => true, :description => "All posts having to do with the tag '#{tag}'" },
-        "/tags/#{tag.to_slug}/index.html",
-        :binary => false
-      )
-    end
-  end
-
-  # Creates in-memory author pages from partial: layouts/author.html
-  def generate_author_pages
-    authors(publishing_articles).each do |author|
-      @items.create(
-        "<%= render('/author.*', :author => '#{author}') %>",
-        { :title => "Articles by #{author}", :is_hidden => true },
-        "/authors/#{author.to_slug}/index.html",
-        :binary => false
-      )
-    end
-  end
-
-  # Creates in-memory blog archive pages from partial:
-  # layouts/blog_archive.html
-  def generate_blog_archives
-    years = publishing_articles.map { |a| a[:created_at].year }.uniq
-    years.each do |year|
-      @items.create(
-        "<%= render('/blog_archive.*', :year => #{year}) %>",
-        { :title => "Articles from #{year}", :is_hidden => true },
-        "/blog/#{year}/index.html",
-        :binary => false
-      )
-    end
-  end
+  @config[:production] = !ENV['NANOC_ENV'].nil? && ENV['NANOC_ENV'] == 'production' # See https://github.com/nanoc/nanoc/issues/487
 
   def mark_unpublished_articles_as_hidden
-    articles.each do |article|
+    articles().each do |article|
       if not article[:published] || $include_drafts
         article[:is_hidden] = true
       end
@@ -54,18 +14,28 @@ preprocess do
   end
 
   def mark_javascripts_as_hidden
-    items.each do |item|
-      if item.identifier.ext == 'js' then
+    @items.each do |item|
+      if item.identifier.exts.include?('js') then
         item[:is_hidden] = true
       end
     end
   end
 
   def mark_stylesheets_as_hidden
-    items.each do |item|
+    @items.each do |item|
       if item.identifier.ext =~ /css/ then
         item[:is_hidden] = true
       end
+    end
+  end
+
+  def include_partials_when_has_media
+    @items.select { |i| i[:has_media] == true }.each do |item|
+      item[:head] ||= []
+      item[:endbody] ||= []
+
+      item[:head] << 'video-styles'
+      item[:endbody] << 'video-scripts'
     end
   end
 
@@ -74,7 +44,7 @@ preprocess do
   # Looks for a file called `context.json` in the same directory as the turtle
   # source file, and adds it to the item's metadata under the key `context`.
   def add_custom_jsonld_contexts
-    items.each do |item|
+    @items.each do |item|
       if item.identifier.ext == 'ttl' then
         context_path = item[:filename].rpartition("/")[0] + "/context.json"
         context_doc = JSON.parse(File.read context_path) if File.exists? context_path
@@ -108,25 +78,89 @@ preprocess do
   mark_unpublished_articles_as_hidden
   mark_javascripts_as_hidden
   mark_stylesheets_as_hidden
-  generate_tag_pages
-  generate_author_pages
-  generate_blog_archives
+
+  generate_tag_pages(publishing_articles())
+  generate_author_pages(publishing_articles())
+  generate_blog_archives(publishing_articles())
+
+  include_partials_when_has_media
+
   add_custom_jsonld_contexts
   extract_metadata_from_specification_documents
+
 end
 
-ignore '/css/partials/_*'
-ignore '/css/modules/_*'
+# Aggregated JavaScript scripts
+ 
+compile '/assets/scripts/*.js.erb' do
+  filter :erb
+  filter :uglify_js if @config[:production]
+end
 
-### Compilation Rules ###################################################
+route '/assets/scripts/*.js.erb' do
+  '/js/' + File.basename(@item.identifier.without_ext)
+end
 
-compile '/css/*.scss' do
+# Other JavaScript scripts
+ 
+compile '/assets/scripts/*.js' do
+  filter :uglify_js if @config[:production]
+end
+
+route '/assets/scripts/*.js' do
+  '/js/' + File.basename(@item.identifier.to_s)
+end
+
+# Stylesheets
+
+ignore '/assets/stylesheets/**/_*'
+
+compile '/assets/stylesheets/**/*.htc' do
+  write '/css/' + File.basename(@item.identifier.to_s)
+end
+
+compile '/assets/stylesheets/**/*' do
   filter :sass, Compass.sass_engine_options
-
-  if $use_minified_css then
-    filter :rainpress
-  end
 end
+
+route '/assets/stylesheets/**/*' do
+  '/css/' + File.basename(@item.identifier.without_ext + '.css')
+end
+
+# Favicon and images
+
+route '/assets/images/*' do
+  '/images/' + File.basename(@item.identifier.to_s)
+end
+
+# Fonts and other files
+
+route '/assets/fonts/**/*' do
+  '/fonts/' + File.basename(@item.identifier.to_s)
+end
+
+route '/assets/files/**/*' do
+  '/downloads/' + File.basename(@item.identifier.to_s)
+end
+
+ignore '/assets/components/mediaelement/build/DO NOT CHANGE THESE FILES. USE -src- FOLDER.txt'
+route '/assets/components/mediaelement/build/*' do
+  '/js/mediaelement/' + File.basename(@item.identifier.to_s)
+end
+
+ignore '/assets/components/**/*'
+
+# Sitemap
+
+compile '/sitemap.erb' do
+  filter :erb
+end
+
+route '/sitemap.erb' do
+  '/sitemap.xml'
+end
+
+# Specification documents (N3)
 
 compile '/spec/**/*.ttl', :rep => :jsonld do
   filter :rdf_distiller, :in => :ttl, :out => :jsonld
@@ -134,98 +168,6 @@ end
 
 compile '/spec/**/*.ttl', :rep => :rdfxml do
   filter :rdf_distiller, :in => :ttl, :out => :rdfxml
-end
-
-compile '/spec/**/*.html' do
-  # don't compile the rest of spec. This submodule needs to be independent.
-end
-
-compile '/js/search-data.js' do
-  filter :erb
-  if $use_minified_js then
-    filter :uglify_js
-  end
-end
-
-compile '/js/**/*.min.js' do
-end
-
-compile '/js/**/*.js' do
-  if $use_minified_js then
-    filter :uglify_js
-  end
-end
-
-compile '/company/index.*', :rep => :vcard do
-  filter :vcard, @config[:vcard]
-end
-
-compile '/company/index.*', :rep => :qrcode do
-  filter :vcard, @config[:vcard]
-  filter :qrcode, :size => 25, :module_size => 2, :color => "#544233"
-end
-
-compile '/**/*.xml' do
-  filter :erb
-end
-
-compile '/**/*.html' do
-  filter :erb
-
-  if $spellcheck then
-    filter :spellchecker
-  end
-
-  layout '/default.*'
-
-  filter :rubypantsunicode
-
-  if $use_minified_html then
-    filter :html5small
-  end
-end
-
-compile '/**/*.{markdown,md}' do
-  filter :erb
-  filter :kramdown, @config[:kramdown]
-
-  if item[:kind] == 'article' && ($include_drafts or item[:published]) then
-    filter :absolutify_local_paths
-    layout '/article.*'
-  end
-
-  if $spellcheck then
-    filter :spellchecker
-  end
-
-  layout '/default.*'
-
-  filter :rubypantsunicode
-
-  if $use_minified_html then
-    filter :html5small
-  end
-end
-
-compile '/**/*' do
-end
-
-### Routing Rules ###################################################
-
-route '/css/*.scss' do
-  item.identifier.without_ext + '.css'
-end
-
-route '/404.*' do
-  '/404.html'
-end
-
-route '/spec/README.*' do
-  nil
-end
-
-route '/spec/LICENSE' do
-  nil
 end
 
 route '/spec/**/*.ttl', :rep => :jsonld do
@@ -236,8 +178,15 @@ route '/spec/**/*.ttl', :rep => :rdfxml do
   item.identifier.without_ext + '.rdf'
 end
 
-route '/blog/feed_private.xml' do
-  item.identifier.without_ext + '/index.atom'
+# vcard
+
+compile '/company/index.*', :rep => :vcard do
+  filter :vcard, @config[:vcard]
+end
+
+compile '/company/index.*', :rep => :qrcode do
+  filter :vcard, @config[:vcard]
+  filter :qrcode, :size => 25, :module_size => 2, :color => "#544233"
 end
 
 route '/company/index.*', :rep => :vcard do
@@ -248,24 +197,97 @@ route '/company/index.*', :rep => :qrcode do
   '/images/pentandra-qrcode.png'
 end
 
-route '/**/index.{html,markdown,md}' do
-  if item[:kind] == 'article'
-    if $include_drafts or item[:published] then
-      item.identifier.without_ext + '.html'
-    end
-  else
-    item.identifier.without_ext + '.html'
-  end
+# Blog index
+
+compile '/blog/index.erb' do
+  filter :erb
+  layout '/blog/default.*'
+  #filter :rubypantsunicode
+  filter :html5small if @config[:production]
 end
 
-route '/**/*.{html,markdown,md}' do
-  if item[:kind] == 'article'
-    if $include_drafts or item[:published] then
-      item.identifier.without_ext + '/index.html'
-    end
-  else
-    item.identifier.without_ext + '/index.html'
+route '/blog/index.erb' do
+  item.identifier.without_ext + '.html'
+end
+
+# Blog feed
+
+compile '/blog/feed_private.erb' do
+  filter :erb
+end
+
+route '/blog/feed_private.erb' do
+  item.identifier.without_ext + '/index.atom'
+end
+
+# Blog tags, authors, and archives
+
+compile '/{tags,authors,archives}/**/*' do
+  filter :erb
+  #filter :rubypantsunicode
+  filter :html5small if @config[:production]
+end
+
+route '/{tags,authors,archives}/**/*' do
+  @item.identifier.without_ext + '.html'
+end
+
+# Blog posts
+
+compile '/blog/**/*.{md,mmd}' do
+  filter :erb
+  if 'mmd' == @item[:extension]
+  else # assume Markdown
+    filter :kramdown, @config[:kramdown]
   end
+  filter :absolutify_local_paths
+  filter :spellchecker if not @config[:production]
+  layout '/blog/article.*'
+  #filter :rubypantsunicode
+  filter :html5small if @config[:production]
+end
+
+route '/blog/**/*.{md,mmd}' do
+  @item.identifier.without_ext + '.html'
+end
+
+# Passthrough
+
+passthrough '/humans.txt'
+passthrough '/robots.txt'
+passthrough '/spec/README.*'
+passthrough '/spec/LICENSE'
+
+# HTML, ERB, and Markdown files
+
+compile '/**/*.erb' do
+  filter :erb
+  filter :spellchecker if not @config[:production]
+  layout '/default.*'
+  #filter :rubypantsunicode
+  filter :html5small if @config[:production]
+end
+
+compile '/**/*.html' do
+  filter :spellchecker if not @config[:production]
+  layout '/default.*'
+  #filter :rubypantsunicode
+  filter :html5small if @config[:production]
+end
+
+compile '/**/*' do
+end
+
+route '/404.html' do
+  item.identifier.to_s
+end
+
+route '/**/index.{erb,html,md,mmd}' do
+  item.identifier.without_ext + '.html'
+end
+
+route '/**/*.{erb,html,md,mmd}' do
+  item.identifier.without_ext + '/index.html'
 end
 
 route '/**/*' do

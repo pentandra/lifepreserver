@@ -17,7 +17,7 @@ is_hidden: true
 /* SITE */
   Standards: HTML5, CSS3
   Components: Modernizr, jQuery
-  Software: nanoc
+  Software: nanoc, Vim, Git
 
 
       ................................................................      

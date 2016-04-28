@@ -1,0 +1,25 @@
+<article property="schema:blogPost ctag:tagged" typeof="cc:Work schema:BlogPosting" resource="<%= @item.path %>#blogpost" class="noted section excerpt">
+  <div class="bd">
+    <header>
+      <h2 class="bigger">
+        <a property="schema:url" rel="bookmark" title="Full article" href="<%= @item.path %>">
+          <span property="dc:title schema:name"><%= @item[:title] %></span>
+        </a>
+      </h2>
+      <p class="em">By <%= link_for_author( @item[:author_name], "/authors/") %></p>
+    </header>
+    <%= article_summary(@item) %>
+  </div>
+  <%= render '/blog/partials/created_on.*' %>
+  <footer class="aside section">
+    <nav class="group banner">
+      <ul class="tags">
+        <% tag_set(Array(@item)).each do |tag| %>
+        <li><%= link_for_tag(tag, "/tags/") %></li>
+        <% end %>
+      </ul>
+    </nav>
+  </footer>
+  <link property="schema:isPartOf" href="/blog/#blog" />
+  <link property="rdfa:copy" href="#license" />
+</article>

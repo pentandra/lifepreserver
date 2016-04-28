@@ -1,0 +1,757 @@
+//
+// Global style definitions
+// Less astute browsers will use this layout, so keep it limited.
+//
+
+
+@include selection-color($selected-font-color, $selected-background-color);
+
+//
+// Default HTML Styles
+
+#{headings(1,3)} {
+  text-transform: uppercase;
+}
+
+h1.large {
+  margin-top: $base-line-height;
+}
+
+h3.close {
+  line-height: 29px;
+}
+
+h4.small, h5.small {
+  margin-bottom: $base-line-height * 0.25;
+}
+
+header {
+  .big.flush, h3.flush {
+    margin-bottom: $base-line-height * 0.75;
+  }
+}
+
+.big.flush, h3.flush {
+  line-height: 20px;
+  margin-bottom: 32px;
+}
+
+.normal.flush {
+  $height: 13px;
+  line-height: $height;
+}
+
+.small.flush {
+  $height: 11px;
+  line-height: $height;
+  margin-bottom: $base-line-height - $height;
+}
+
+.shaved {
+  margin-bottom: 0;
+}
+
+small {
+  @extend .small;
+}
+
+body {
+  @extend .normal;
+  font-family: $base-font-family,sans-serif;
+  background: $page-background;
+  color: $font-color;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &.subtle, &:visited.subtle, &:hover.subtle {
+    color: $font-color;
+    text-decoration: none;
+  }
+
+}
+
+address {
+  font-style: normal;
+}
+
+address, p {
+  margin-bottom: $base-line-height;
+}
+
+.bq { // blockquote
+
+  padding: $base-line-height*1.5;
+
+  blockquote {
+    margin: 0;
+  }
+
+}
+
+em, .em, .intro {
+  font-family: $oblique-font-family, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+
+  cite {
+    font-family: $base-font-family, sans-serif;
+    font-style: normal;
+  }
+}
+
+hr {
+  border-top: 1px dashed $font-color;
+  margin: $base-line-height 0;
+}
+
+ul {
+  list-style-type: square;
+}
+
+ol {
+  font-family: $special-font-family, serif;
+
+  // Display the number without the period
+/*
+  list-style-type: none;
+
+  & > li {
+    counter-increment: customlistcounter;
+  }
+
+  & > li:before {
+    content: counter(customlistcounter) " ";
+    float: left;
+    margin-left: -1.2em;
+  }
+
+  &:first-child {
+    counter-reset: customlistcounter;
+  }
+
+*/
+  p, a, .base {
+    // Use base font for the actual text of the list
+    font-family: $base-font-family, sans-serif;
+  }
+
+  ul {
+    list-style-type: none;
+    margin-bottom: 0;
+  }
+
+  ol {
+    // Nested lists
+    padding-left: 1.5em;
+    list-style-type: lower-alpha;
+    margin-bottom: 0;
+  }
+}
+
+// Is this needed at all? A big question is how do we demarcate paragraphs? Do
+// we do the business-like white line between?
+
+// Keep the list unified
+/*
+li p {
+  margin-bottom: 0;
+
+  & + p {
+    text-indent: 1em;
+  }
+}
+*/
+
+.special, .oldstyle {
+  font-family: $special-font-family, serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.bold {
+  font-family: $bold-font-family, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+
+  .special, .oldstyle {
+    font-weight: bold;
+  }
+}
+
+.newthought {
+  @extend .special;
+}
+
+.footnotes [rel="reference"], sup a[rel="footnote"] {
+  text-decoration: none;
+}
+
+a.permalink {
+  color: desaturate(lighten($link-color, 50%), 20%);
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+//
+// Classes
+
+
+// Block Structures
+
+.mod {
+  margin-top: $base-line-height / 2;
+  margin-bottom: $base-line-height / 2;
+}
+
+.pod {
+  padding-left: $less-gutter-width / 2;
+  padding-right: $less-gutter-width / 2;
+  @include box-sizing(border-box);
+}
+
+.mmod { //TODO fix
+  margin-top: $base-line-height / 4;
+  margin-bottom: $base-line-height / 4;
+}
+
+.section {
+  @extend .group;
+  margin: 0 0 $base-line-height;
+}
+
+.basic {
+  @include border-radius($default-radius);
+}
+
+.bd, .aside {
+  @extend .group;
+}
+
+.loud {
+  padding: $base-line-height * 2 0;
+}
+
+
+// Block Skins
+
+.simple {
+  border: 1px solid $pentandra-brown;
+}
+
+.noted {
+  $border-height: 1px;
+  border-top: $border-height solid $pentandra-brown;
+
+  h2 {
+    margin: $base-line-height - $border-height 0 $base-line-height * 2;
+  }
+
+  h2.bigger {
+    margin-bottom: $base-line-height / 2;
+  }
+
+}
+
+.pop {
+  $border-height: 3px;
+  border-top: $border-height solid $pentandra-brown;
+
+  // header
+  .big {
+    $margin: $base-line-height * 0.75;
+    margin: $margin - $border-height 0 $margin;
+  }
+}
+
+.meta {
+  $border-height: 1px;
+  border-bottom: $border-height solid $pentandra-brown;
+  margin-bottom: 0 - $border-height;
+}
+
+.framed {
+  $border-width: 11px;
+
+  border: $border-width solid $pentandra-brown;
+  @include box-sizing(border-box);
+}
+
+.photo {
+  $photo-width: 160px;
+
+  width: $photo-width;
+  height: $photo-width; // For IE8
+  margin-bottom: ($base-line-height * 7) - $photo-width;
+}
+
+// Content classes
+
+.centered {
+  text-align: center;
+}
+
+a.button, input.button, .tags a {
+
+  text-align: center;
+
+  color: $pentandra-white;
+  background-color: $pentandra-brown;
+
+  cursor: pointer;
+
+  &:hover, &:focus {
+   background-color: $pentandra-red;
+  }
+
+  &:hover {
+   text-decoration: none;
+  }
+}
+
+a.button, input.button {
+  font-size: $base-font-size - 1;
+  line-height: $base-line-height * 2;
+  display: block;
+
+  @include border-radius($default-radius);
+}
+
+input.button {
+  border: 0;
+  padding: 0;
+}
+
+[rel="reference"] {
+  padding-left: 0.5em;
+}
+
+.tags {
+  $tag-height: 20px; //$base-line-height * 0.8;
+  $tag-space: 10px;
+  $hole-diameter: 4px;
+
+  li, a {
+
+    position: relative;
+
+    height: $tag-height;
+    line-height: $tag-height;
+    font-size: 13px;
+  }
+
+  a {
+    display: inline-block;
+    padding: 0 $tag-space + $hole-diameter 0 $tag-space;
+    margin-right: $tag-space * 1.25;
+    @include border-radius($default-radius / 2 0 0 $default-radius / 2);
+
+    &:hover, &:focus {
+      &:before {
+        border-color: transparent transparent transparent $pentandra-red;
+      }
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -$tag-space;
+      width: 0;
+      height: 0;
+      border-color: transparent transparent transparent $pentandra-brown;
+      border-style: solid;
+      border-width: $tag-space 0 $tag-space $tag-space;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: $hole-diameter * 2;
+      right: 0;
+      width: $hole-diameter;
+      height: $hole-diameter;
+      background: $pentandra-white;
+      @include border-radius(2px);
+    }
+  }
+
+  li {
+    padding: ($base-line-height - $tag-height) / 2 0;
+  }
+}
+
+// IE7
+.lt-ie8 .tags a {
+  @include border-radius($default-radius / 2);
+}
+
+.holder {
+  position: relative;
+}
+
+.img img {
+  display: block;
+  max-width: 100%;
+}
+
+.menu {
+  li {
+    display: inline-block;
+    margin-right: 0.3em;
+  }
+
+  .tags li {
+    margin-right: 0.1em;
+  }
+
+  &.square li + li:before {
+    content: " ■ ";
+  }
+}
+
+.lt-ie8 .menu li {
+  zoom: 1;
+  display: inline;
+}
+
+.sidenote {
+
+  font-family: $oblique-font-family, sans-serif;
+  font-style: normal;
+
+  .em {
+    font-family: $base-font-family, sans-serif;
+    font-style: normal;
+  }
+}
+
+.parenthesis {
+  position: relative;
+  font-size: 92%;
+}
+
+.tel .parenthesis {
+  top: -0.15em;
+}
+
+.ndash {
+  position: relative;
+  top: -0.1em;
+}
+
+.big .ndash {
+  margin: 0 -0.07em;
+}
+
+.up {
+  text-transform: uppercase;
+}
+
+.low {
+  text-transform: lowercase;
+}
+
+//
+// Background blocks
+
+.excl {
+  color: $pentandra-red;
+}
+
+.rev, .grab {
+
+  a {
+    text-decoration: underline;
+
+    &:visited {
+      color: $pentandra-white;
+    }
+  }
+
+  a.footnote, a.reversefootnote {
+    text-decoration: none;
+  }
+
+  .wrapper {
+    padding-top: $base-line-height;
+  }
+
+}
+
+.rev, .rev a {
+  background-color: $pentandra-brown;
+  color: $pentandra-white;
+}
+
+.grab, .grab a {
+  background-color: $pentandra-red-shaded;
+  color: $pentandra-white;
+}
+
+.rev a.button, .rev input.button, .grab a.button {
+
+  color: $pentandra-brown;
+  background-color: $pentandra-white;
+  text-decoration: none;
+
+  &:hover, &:focus {
+    color: $pentandra-white;
+    background-color: $pentandra-red;
+  }
+}
+
+.rev .noted {
+  border-color: $pentandra-white;
+}
+
+.grab a.button {
+
+  &:hover, &:focus {
+    background-color: $pentandra-brown;
+  }
+}
+
+// The next three specifiers for icon fonts
+.grab .icons a, .rev .icons a { // Needs this specificity
+  text-decoration: none;
+}
+
+.rev span.button {
+  &:hover, &:focus { color: $link-hover-color; }
+}
+
+.grab span.button {
+  &:hover, &:focus { color: $pentandra-lime; }
+}
+
+// End icon fonts
+
+.grab .emHighlight {
+  color: $pentandra-red;
+  background-color: $pentandra-white;
+}
+
+.shadow {
+  @include single-box-shadow($pentandra-brown, 0, 0, 10px);
+}
+
+.wip {
+  color: $pentandra-white;
+  background-color: $pentandra-violet;
+}
+
+//
+// Grid classes
+
+.item { // List semantics
+  float: left;
+}
+
+.apart {
+  padding-right: $less-gutter-width;
+}
+
+.expo {
+
+  height: $base-line-height * 5;
+
+  li {
+    padding-right: $less-gutter-width;
+  }
+
+  img {
+    @include grid(1);
+  }
+}
+
+//
+// Layout classes
+
+.content {
+  @extend .group;
+  margin: 0 auto;
+}
+
+// A typographic float. Use for images in a blog post.
+.float {
+  float: left;
+}
+
+[role="banner"] {
+
+  background-color: $pentandra-white;
+  margin-top: $base-line-height * 2;
+
+  h1 {
+    margin: 0;
+  }
+
+  .logo {
+    float: left;
+  }
+
+  .menu {
+    float: right;
+  }
+
+  a.button {
+    color: $pentandra-brown;
+    background-color: $pentandra-white;
+    font-size: $base-font-size;
+    line-height: $base-line-height * 1.5;
+    padding: 0 15px;
+
+    &:hover {
+      background-color: $pentandra-red;
+      color: $pentandra-white;
+    }
+  }
+}
+
+.contentinfo {
+
+  a {
+    text-decoration: none;
+  }
+
+  article h3 {
+    margin-bottom: 0;
+  }
+
+  .content {
+    // Introduce some syncopation
+    padding-top: $base-line-height * 1.5;
+    padding-bottom: $base-line-height * 3.5;
+  }
+
+}
+
+main {
+  border-top: $base-line-height * 1.5 solid $pentandra-brown;
+}
+
+.motto {
+
+  p {
+    font-size: 20px;
+  }
+
+  h1 {
+
+    // Group the lines of the motto closer together
+    line-height: 45px;
+    margin-bottom: 21px; // Get back on the baseline
+
+    // Line up words along column
+    .char1 {
+      margin-left: -4px;
+    }
+
+    // Kerning
+    .word1 .char4, .word2 .char5 {
+      margin-left: 2px;
+    }
+
+    .word2 .char8 {
+      margin-left: 1px;
+    }
+
+    // Shape the heading
+    .word1 {
+      letter-spacing: 3px; // Draw attention to BREAKING
+    }
+  }
+}
+
+.teammember {
+  .photo {
+    margin-bottom: 0;
+  }
+}
+
+article {
+
+  .img {
+    margin-bottom: $base-line-height;
+  }
+
+  .conclusion:after {
+    content: "\e000";
+    font-family: $special-font-family;
+    margin: -3px 0.3em;
+    font-size: $base-line-height;
+    position: absolute;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+  }
+}
+
+#vcard {
+  padding-bottom: 3px; // Get back onto baseline. Based on 186px² qrcode.
+}
+
+//
+// Social classes
+//
+
+.social-gp, .social-tw, .social-fb {
+  margin-bottom: 13px;
+}
+
+.permalinks input {
+  cursor: pointer;
+}
+
+//
+// Video embedding classes
+//
+
+// from http://amobil.se/2011/11/responsive-embeds/
+.embed-container {
+  position: relative;
+  height: 0;
+
+  iframe, object, embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+// 16:9 aspect ratio
+.wideScreen {
+  padding-bottom: 56.25%;
+}
+
+// 4:3 aspect ratio
+.fullScreen {
+  padding-bottom: 75%;
+}
+
+.chrome_25 {
+  padding-top: 25px;
+}
+
+.chrome_35 {
+  padding-top: 35px;
+}
+
+//
+// Comments overrides
+//
+
+.comments {
+  font-family: sans-serif;
+}

@@ -1,7 +1,7 @@
 require 'shortly'
 require 'yaml'
 
-module LifePreserver
+module Pentandra
 
   module UrlShortener
 

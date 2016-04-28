@@ -1,4 +1,4 @@
-module LifePreserver
+module Pentandra
 
   module Team
 
