@@ -14,6 +14,7 @@ tags:
   - Essay
   - Open Research
   - Opinionated
+  - Scholarly Commons
 has_media: true
 ---
 
