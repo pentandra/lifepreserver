@@ -95,20 +95,14 @@ end
 compile '/assets/scripts/*.js.erb' do
   filter :erb
   filter :uglify_js if @config[:production]
-end
-
-route '/assets/scripts/*.js.erb' do
-  '/js/' + File.basename(@item.identifier.without_ext)
+  write '/js/' + File.basename(@item.identifier.without_ext)
 end
 
 # Other JavaScript scripts
  
 compile '/assets/scripts/*.js' do
   filter :uglify_js if @config[:production]
-end
-
-route '/assets/scripts/*.js' do
-  '/js/' + File.basename(@item.identifier.to_s)
+  write '/js/' + File.basename(@item.identifier.to_s)
 end
 
 # Stylesheets
@@ -121,10 +115,7 @@ end
 
 compile '/assets/stylesheets/**/*' do
   filter :sass, Compass.sass_engine_options
-end
-
-route '/assets/stylesheets/**/*' do
-  '/css/' + File.basename(@item.identifier.without_ext + '.css')
+  write '/css/' + File.basename(@item.identifier.without_ext + '.css')
 end
 
 # Favicon and images
@@ -154,47 +145,32 @@ ignore '/assets/components/**/*'
 
 compile '/sitemap.erb' do
   filter :erb
-end
-
-route '/sitemap.erb' do
-  '/sitemap.xml'
+  write '/sitemap.xml'
 end
 
 # Specification documents (N3)
 
 compile '/spec/**/*.ttl', :rep => :jsonld do
   filter :rdf_distiller, :in => :ttl, :out => :jsonld
+  write item.identifier.without_ext + '.jsonld'
 end
 
 compile '/spec/**/*.ttl', :rep => :rdfxml do
   filter :rdf_distiller, :in => :ttl, :out => :rdfxml
+  write item.identifier.without_ext + '.rdf'
 end
 
-route '/spec/**/*.ttl', :rep => :jsonld do
-  item.identifier.without_ext + '.jsonld'
-end
-
-route '/spec/**/*.ttl', :rep => :rdfxml do
-  item.identifier.without_ext + '.rdf'
-end
-
-# vcard
+# vcard and QR code
 
 compile '/company/index.*', :rep => :vcard do
   filter :vcard, @config[:vcard]
+  write '/company/pentandra.vcf'
 end
 
 compile '/company/index.*', :rep => :qrcode do
   filter :vcard, @config[:vcard]
   filter :qrcode, :size => 25, :module_size => 2, :color => "#544233"
-end
-
-route '/company/index.*', :rep => :vcard do
-  '/company/pentandra.vcf'
-end
-
-route '/company/index.*', :rep => :qrcode do
-  '/images/pentandra-qrcode.png'
+  write '/images/pentandra-qrcode.png'
 end
 
 # Blog index
@@ -204,20 +180,14 @@ compile '/blog/index.erb' do
   layout '/blog/default.*'
   #filter :rubypantsunicode
   filter :html5small if @config[:production]
-end
-
-route '/blog/index.erb' do
-  item.identifier.without_ext + '.html'
+  write item.identifier.without_ext + '.html'
 end
 
 # Blog feed
 
 compile '/blog/feed_private.erb' do
   filter :erb
-end
-
-route '/blog/feed_private.erb' do
-  item.identifier.without_ext + '/index.atom'
+  write item.identifier.without_ext + '/index.atom'
 end
 
 # Blog tags, authors, and archives
@@ -226,10 +196,7 @@ compile '/{tags,authors,archives}/**/*' do
   filter :erb
   #filter :rubypantsunicode
   filter :html5small if @config[:production]
-end
-
-route '/{tags,authors,archives}/**/*' do
-  @item.identifier.without_ext + '.html'
+  write item.identifier.without_ext + '.html'
 end
 
 # Blog posts
@@ -245,10 +212,7 @@ compile '/blog/**/*.{md,mmd}' do
   layout '/blog/article.*'
   #filter :rubypantsunicode
   filter :html5small if @config[:production]
-end
-
-route '/blog/**/*.{md,mmd}' do
-  @item.identifier.without_ext + '.html'
+  write item.identifier.without_ext + '.html'
 end
 
 # Passthrough
