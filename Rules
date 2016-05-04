@@ -178,7 +178,7 @@ end
 compile '/blog/index.erb' do
   filter :erb
   layout '/blog/default.*'
-  #filter :rubypantsunicode
+  filter :rubypantsunicode
   filter :html5small if @config[:production]
   write item.identifier.without_ext + '.html'
 end
@@ -194,7 +194,7 @@ end
 
 compile '/{tags,authors,archives}/**/*' do
   filter :erb
-  #filter :rubypantsunicode
+  filter :rubypantsunicode
   filter :html5small if @config[:production]
   write item.identifier.without_ext + '.html'
 end
@@ -210,7 +210,7 @@ compile '/blog/**/*.{md,mmd}' do
   filter :absolutify_local_paths
   filter :spellchecker if not @config[:production]
   layout '/blog/article.*'
-  #filter :rubypantsunicode
+  filter :rubypantsunicode
   filter :html5small if @config[:production]
   write item.identifier.without_ext + '.html'
 end
@@ -228,14 +228,14 @@ compile '/**/*.erb' do
   filter :erb
   filter :spellchecker if not @config[:production]
   layout '/default.*'
-  #filter :rubypantsunicode
+  filter :rubypantsunicode
   filter :html5small if @config[:production]
 end
 
 compile '/**/*.html' do
   filter :spellchecker if not @config[:production]
   layout '/default.*'
-  #filter :rubypantsunicode
+  filter :rubypantsunicode
   filter :html5small if @config[:production]
 end
 
