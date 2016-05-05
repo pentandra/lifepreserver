@@ -1,6 +1,8 @@
 require 'compass/import-once/activate'
 # Require any additional compass plugins here.
 
+add_import_path "content/assets/components/retina.js/src"
+
 http_path             = "/"
 project_path          = File.expand_path(File.join(File.dirname(__FILE__), '../../'))
 css_dir               = "content/assets/stylesheets"
