@@ -1,8 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'coderay'        # for syntax highlighting
 gem 'compass'        # for advanced CSS
-gem 'haml'           # for layouts with clean sources
 gem 'kramdown'       # for advanced markdown
 gem 'nanoc'          # for compiling the site
 gem 'nokogiri'       # for parsing HTML
@@ -28,6 +26,7 @@ gem 'linkeddata'
 gem 'jsonlint'
 gem 'pry'            # For nanoc shell
 gem 'w3c_validators' # For nanoc check
+gem 'pygmentize'     # For syntax coloring
 
 group :development do
   gem 'guard'

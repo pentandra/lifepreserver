@@ -167,6 +167,7 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    pygmentize (0.0.3)
     rack (1.6.4)
     rainpress (1.0)
     rb-fsevent (0.9.7)
@@ -312,12 +313,10 @@ DEPENDENCIES
   adsf
   builder
   chunky_png
-  coderay
   compass
   guard
   guard-livereload
   guard-nanoc
-  haml
   html5small
   html_spellchecker!
   json
@@ -329,6 +328,7 @@ DEPENDENCIES
   nokogiri
   optipng
   pry
+  pygmentize
   rainpress
   rbtrace
   rest-client (~> 1.6)

@@ -92,6 +92,7 @@ kramdown:
   auto_id_prefix: "sec:"
   auto_id_stripping: true
   toc_levels: 1..3
+  syntax_highlighter: nil
 
 # Base URL, used for the Atom feed
 base_url: &base_url "https://pentandra.com"

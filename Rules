@@ -207,6 +207,9 @@ compile '/blog/**/*.{md,mmd}' do
   else # assume Markdown
     filter :kramdown, @config[:kramdown]
   end
+  filter :colorize_syntax, 
+         :default_colorizer => :pygmentize,
+         :pygmentize => { :nowrap => 'True' }
   filter :absolutify_local_paths
   filter :spellchecker if not @config[:production]
   layout '/blog/article.*'
