@@ -245,8 +245,9 @@ end
 compile '/**/*' do
 end
 
-route '/404.html' do
-  item.identifier.to_s
+route '/404.erb' do
+  filter :erb
+  item.identifier.without_ext + '.html'
 end
 
 route '/**/index.{erb,html,md,mmd}' do
