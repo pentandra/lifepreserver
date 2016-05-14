@@ -82,7 +82,7 @@ source contains [information][I] that could possibly help in answering a
 until new knowledge, in the form of a [conclusion][C], is obtained.
 
 <figure resource="#simulated-higgs" class="img" typeof="schema:ImageObject prov:Entity">
-  <link property="prov:wasDerivedFrom" href="http://cds.cern.ch/record/628469" typeof="prov:Entity" />
+  <link property="prov:wasDerivedFrom" href="https://cds.cern.ch/record/628469" typeof="prov:Entity" />
   <img property="schema:contentUrl" class="static" alt="CMS: Simulated Higgs to two jets and two electrons" src="higgsboson.jpeg" />
   <figcaption class="small">
     <b property="dc:title schema:name">CMS: Simulated Higgs to two jets and two electrons</b>
