@@ -160,6 +160,8 @@ compile '/spec/**/*.ttl', :rep => :rdfxml do
   write item.identifier.without_ext + '.rdf'
 end
 
+passthrough '/spec/**/*'
+
 # vcard and QR code
 
 compile '/company/index.*', :rep => :vcard do
@@ -222,8 +224,6 @@ end
 
 passthrough '/humans.txt'
 passthrough '/robots.txt'
-passthrough '/spec/README.*'
-passthrough '/spec/LICENSE'
 
 # HTML, ERB, and Markdown files
 
