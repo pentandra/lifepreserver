@@ -131,3 +131,8 @@ vcard:
   email: hello@pentandra.com
   url: *base_url
   photo_uri: "https://pentandra.com/images/logo.png"
+
+qrcode:
+  size: 25
+  module_size: 2
+  color: "#544233"

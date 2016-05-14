@@ -169,7 +169,7 @@ end
 
 compile '/company/index.*', :rep => :qrcode do
   filter :vcard, @config[:vcard]
-  filter :qrcode, :size => 25, :module_size => 2, :color => "#544233"
+  filter :qrcode, @config[:qrcode]
   write '/images/pentandra-qrcode.png'
 end
 
