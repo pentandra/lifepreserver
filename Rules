@@ -95,7 +95,7 @@ end
 compile '/assets/scripts/*.js.erb' do
   filter :erb
   filter :uglify_js if @config[:production]
-  write '/js/' + File.basename(@item.identifier.without_ext)
+  write '/js/' + File.basename(@item.identifier.without_exts + fingerprint(@item[:filename]) + '.js')
 end
 
 # Other JavaScript scripts
@@ -166,13 +166,13 @@ passthrough '/spec/**/*'
 
 compile '/company/index.*', :rep => :vcard do
   filter :vcard, @config[:vcard]
-  write '/company/pentandra.vcf'
+  write '/company/pentandra' + fingerprint(@item[:filename]) + '.vcf'
 end
 
 compile '/company/index.*', :rep => :qrcode do
   filter :vcard, @config[:vcard]
   filter :qrcode, @config[:qrcode]
-  write '/images/pentandra-qrcode.png'
+  write '/images/pentandra-qrcode' + fingerprint(@item[:filename]) + '.png'
 end
 
 # Blog index

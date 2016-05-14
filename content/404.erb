@@ -111,7 +111,7 @@ is_hidden: true
 </section>
 
 <% content_for :javascripts do %>
-<script src="/js/search-data.js?v=<%= @config[:version] %>"></script>
+<script src="<%= @items["/assets/scripts/search-data.*"].path %>"></script>
 <script>
   $(function() {
     var search = Pentandra.Search.search,
