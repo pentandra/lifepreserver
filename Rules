@@ -30,7 +30,7 @@ preprocess do
   end
 
   def include_partials_when_has_media
-    @items.select { |i| i[:has_media] == true }.each do |item|
+    @items.select { |item| item.key?(:has_media) }.each do |item|
       item[:head] ||= []
       item[:endbody] ||= []
 
