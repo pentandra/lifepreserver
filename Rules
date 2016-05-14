@@ -213,7 +213,7 @@ compile '/blog/**/*.{md,mmd}' do
          :default_colorizer => :pygmentize,
          :pygmentize => { :nowrap => 'True' }
   filter :absolutify_local_paths
-  filter :spellchecker if not @config[:production]
+  filter :spellchecker unless @config[:production]
   layout '/blog/article.*'
   filter :rubypantsunicode
   filter :html5small if @config[:production]
@@ -229,14 +229,14 @@ passthrough '/robots.txt'
 
 compile '/**/*.erb' do
   filter :erb
-  filter :spellchecker if not @config[:production]
+  filter :spellchecker unless @config[:production]
   layout '/default.*'
   filter :rubypantsunicode
   filter :html5small if @config[:production]
 end
 
 compile '/**/*.html' do
-  filter :spellchecker if not @config[:production]
+  filter :spellchecker unless @config[:production]
   layout '/default.*'
   filter :rubypantsunicode
   filter :html5small if @config[:production]
