@@ -246,7 +246,6 @@ compile '/**/*' do
 end
 
 route '/404.erb' do
-  filter :erb
   item.identifier.without_ext + '.html'
 end
 
