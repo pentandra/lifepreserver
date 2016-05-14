@@ -7,6 +7,7 @@ include Nanoc::Helpers::Rendering
 include Nanoc::Helpers::Tagging
 include Nanoc::Helpers::Text
 include Nanoc::Helpers::XMLSitemap
+include Nanoc::Helpers::CacheBusting
 
 include Pentandra::Team
 include Pentandra::UrlShortener

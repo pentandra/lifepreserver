@@ -150,6 +150,8 @@ GEM
     multi_xml (0.5.5)
     nanoc (4.1.6)
       cri (~> 2.3)
+    nanoc-cachebuster (0.3.1)
+      nanoc (>= 3.3.0)
     nenv (0.3.0)
     net-http-persistent (2.9.4)
     netrc (0.11.0)
@@ -325,6 +327,7 @@ DEPENDENCIES
   kramdown
   linkeddata
   nanoc
+  nanoc-cachebuster
   nokogiri
   optipng
   pry
