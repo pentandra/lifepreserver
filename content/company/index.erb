@@ -420,10 +420,11 @@ teammembers:
         <aside class="aside section">
           <h3 class="flush">Get Social</h3>
           <ul class="none">
-            <li class="social-gp" ><a href="https://plus.google.com/+Pentandra" class="button">Pentandra on Google+</a></li>
+            <li class="social-gp" ><a rel="schema:sameAs" href="https://plus.google.com/+Pentandra" class="button">Pentandra on Google+</a></li>
             <li class="social-tw"><a href="https://twitter.com/intent/user?screen_name=<%= @item[:twitter] %>" class="button">Follow @<%= @item[:twitter] %></a></li>
-            <li class="social-fb"><a href="http://www.facebook.com/PentandraInc" class="button">Pentandra on FB</a></li>
+            <li class="social-fb"><a rel="schema:sameAs" href="http://www.facebook.com/PentandraInc" class="button">Pentandra on FB</a></li>
           </ul>
+          <link property="schema:sameAs" href="https://twitter.com/PentandraInc"/>
         </aside>
         <div class="inner group">
           <address class="vcard">
