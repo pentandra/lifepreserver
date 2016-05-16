@@ -1,4 +1,4 @@
-# Site version. Used for cache busting as well as for general information.
+# Site version.
 version: 1.20.6
 
 # The syntax to use for patterns in the Rules file. Can be either `"glob"`
