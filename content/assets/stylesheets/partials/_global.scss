@@ -539,10 +539,6 @@ input.button {
   background-color: $pentandra-white;
 }
 
-.shadow {
-  @include single-box-shadow($pentandra-brown, 0, 0, 10px);
-}
-
 .wip {
   color: $pentandra-white;
   background-color: $pentandra-violet;
