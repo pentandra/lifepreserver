@@ -55,7 +55,7 @@ validated our thoughts and helped us make sure we were staying on track with
 our goals. Had anything gotten in the way? Were we missing something important?
 
 <figure class="img">
-  <img class="static" alt="Chris, two kids, and a sister on the way to the final round" src="growam2012-chrisandothers.jpg" />
+  <img data-no-retina class="static" alt="Chris, two kids, and a sister on the way to the final round" src="growam2012-chrisandothers.jpg" />
   <figcaption class="small">
 
     This is Chris with his sister and two of our kids headed to the final

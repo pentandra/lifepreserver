@@ -37,7 +37,7 @@ we are building our ideas and company.
 
 <div property="schema:image" typeof="schema:ImageObject" class="aside img">
   <link property="schema:representativeOfPage" href="schema:True" />
-  <img property="schema:contentUrl" class="static" alt="Open Access logo" src="open_access.jpg" />
+  <img property="schema:contentUrl" class="static" alt="Open Access logo" data-no-retina src="open_access.jpg" />
 </div>
 
 I have been thinking a lot about open access[^oa-overview] lately and how it
@@ -123,7 +123,7 @@ whole.
 
 <figure id="fig:illuminated-scientific-manuscript" class="img" property="schema:image" resource="#illuminated_scientific_manuscript" typeof="schema:ImageObject">
   <a title="View manuscript at the British Library" property="prov:wasDerivedFrom" href="http://www.bl.uk/catalogues/illuminatedmanuscripts/ILLUMIN.ASP?Size=mid&IllID=21739">
-    <img property="schema:contentUrl" class="static" src="illuminated_scientific_manuscript.jpg" alt="Illuminated manuscript depicting canons for Toledan tables (c. 1292)" />
+    <img property="schema:contentUrl" class="static" data-no-retina src="illuminated_scientific_manuscript.jpg" alt="Illuminated manuscript depicting canons for Toledan tables (c. 1292)" />
   </a>
   <figcaption class="small"><span property="schema:description"><b property="dc:title schema:name">An illuminated scientific manuscript</b>, or better known at the time as <dfn><a href="https://en.wikipedia.org/wiki/Natural_philosophy" title="Philosophia Naturalis on Wikipedia">natural philosophy</a></dfn>, written in <a href="https://en.wikipedia.org/wiki/Latin" title="Latin on Wikipedia">Latin</a> upon <a href="https://en.wikipedia.org/wiki/Parchment" title="Parchment on Wikipedia">parchment</a> circa <span class="oldstyle">1292</span>, showing a contemporary dipiction of the Arabic <a href="http://en.wikipedia.org/wiki/Toledan_Tables">Toledan tables</a>, which used geometric chords and sines to predict the movements of the Sun, Moon, and planets relative to the fixed stars. At this time, the prevailing belief was that the Earth was stationary at the center of the universe.</span> Licensed under a <a property="cc:license" href="http://creativecommons.org/publicdomain/zero/1.0/" ><abbr title="Creative Commons Zero (Public Domain Dedication)">CC0</abbr> license</a> by the <a property="cc:attributionName" rel="cc:attributionURL" href="http://www.bl.uk">British Library</a>. <span class="icon-cc"></span><span class="icon-cc-zero"></span></figcaption>
 </figure>
