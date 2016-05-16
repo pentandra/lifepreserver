@@ -7,7 +7,7 @@
             <h2 class="close normal">Recent Thoughts</h2>
           </div>
           <div class="bd">
-            <% publishing_articles[0, 5].each do |post| %>
+            <% publishing_articles.first(@config[:site][:recent_thoughts_limit]).each do |post| %>
             <article class="excerpt">
               <a href="<%= post.path  %>" rel="bookmark">
                 <time class="small bold" datetime="<%= post[:created_at] %>"><%= date_for(post) %></time>&#8194;<h3 class="normal"><%= post[:short_title] || post[:title] %></h3>
