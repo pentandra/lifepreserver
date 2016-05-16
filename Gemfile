@@ -27,7 +27,7 @@ gem 'jsonlint'
 gem 'pry'            # For nanoc shell
 gem 'w3c_validators' # For nanoc check
 gem 'pygmentize'     # For syntax coloring
-gem 'nanoc-cachebuster'
+gem 'nanoc-cachebuster', :git => 'https://github.com/cdchapman/nanoc-cachebuster', :branch => 'nanoc-4'
 
 group :development do
   gem 'guard'
