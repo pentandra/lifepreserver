@@ -41,9 +41,8 @@ impossible to overcome either. Actually, in a way, I think that helping people
 become united in a common purpose and heading in a common direction is the only
 _real_ challenge that there is. Once we're there we will have a shared vision
 of what needs to be built, and once it is built we will all know how well it
-embodies that collective vision. FORCE11 is the only organization that we've
-found that is taking this challenge by the horns, and doing so in a general
-(not domain-specific) way.
+embodies that collective vision. FORCE11 is taking this challenge by the horns,
+and doing so in a general (not domain-specific) way.
 
 With this program, including the workshops and other exercises, the overarching
 question we hope to answer is this: _are we ready to define a scholarly commons?_
@@ -78,7 +77,18 @@ disciplines, gender, and geographic locations around the globe.
 
 ## Outcomes and continuations
 
-The difficulty of getting people there on short notice.
+Almost everyone that we invited turned up. I think we had one last-minute
+cancellation. Jeroen Bosman and Bianca Kramer did an excellent job designing
+the workshop. I think it was stimulating for everyone (maybe even a little too
+engaging for some people). Dinner on Friday night was delicious, but I was not
+prepared for the late Spanish dinners! I think we were done by 11:30PM!
+
+I think everyone present was in agreement that we are ready to define the
+scholarly commons. The next questions to answer include: _how do we define the
+commons? And how do we do this in a way that truly opens the door as wide as we
+can, so everyone feels included and is able to play a part in creating the
+commons?_
+{: .conclusion }
 
 [FORCE11]: <https://force11.org>
 [helmsley]: <http://helmsleytrust.org>
