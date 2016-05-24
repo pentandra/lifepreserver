@@ -150,13 +150,13 @@ end
 
 # Specification documents (N3)
 
-compile '/spec/**/*.ttl', :rep => :jsonld do
-  filter :rdf_distiller, :in => :ttl, :out => :jsonld
+compile '/spec/**/*.ttl', rep: :jsonld do
+  filter :rdf_distiller, in: :ttl, out: :jsonld
   write item.identifier.without_ext + '.jsonld'
 end
 
-compile '/spec/**/*.ttl', :rep => :rdfxml do
-  filter :rdf_distiller, :in => :ttl, :out => :rdfxml
+compile '/spec/**/*.ttl', rep: :rdfxml do
+  filter :rdf_distiller, in: :ttl, out: :rdfxml
   write item.identifier.without_ext + '.rdf'
 end
 
@@ -164,12 +164,12 @@ passthrough '/spec/**/*'
 
 # vcard and QR code
 
-compile '/company/index.*', :rep => :vcard do
+compile '/company/index.*', rep: :vcard do
   filter :vcard, @config[:vcard]
   write '/company/pentandra' + fingerprint(@item[:filename]) + '.vcf'
 end
 
-compile '/company/index.*', :rep => :qrcode do
+compile '/company/index.*', rep: :qrcode do
   filter :vcard, @config[:vcard]
   filter :qrcode, @config[:qrcode]
   write '/images/pentandra-qrcode' + fingerprint(@item[:filename]) + '.png'
@@ -211,9 +211,7 @@ compile '/blog/**/*.{md,mmd}' do
   else # assume Markdown
     filter :kramdown, @config[:kramdown]
   end
-  filter :colorize_syntax, 
-         :default_colorizer => :pygmentize,
-         :pygmentize => { :nowrap => 'True' }
+  filter :colorize_syntax, default_colorizer: :pygmentize, pygmentize: { nowrap: 'True' }
   filter :absolutify_local_paths
   filter :spellchecker unless @config[:production]
   layout '/blog/article.*'
