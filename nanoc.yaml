@@ -101,7 +101,7 @@ github_url: &github_url "https://github.com/pentandra/lifepreserver"
 
 site:
   name: Pentandra
-  recent_posts_limit: 4
+  recent_thoughts_limit: 5
 
 blog:
   name: The Pentandra Blog
