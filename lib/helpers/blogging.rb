@@ -1,3 +1,5 @@
+require 'uri'
+
 module Nanoc::Helpers
 
   module Blogging
@@ -123,6 +125,15 @@ module Nanoc::Helpers
           :binary => false
         )
       end
+    end
+
+    def sharer_for(item)
+      url = shorten(url_for(item))
+      text = URI.escape(item[:title])
+      desc = URI.escape(item[:description]) unless item[:description].nil?
+      tags = URI.escape(item[:tags].join(',')) unless (item[:tags].nil? or item[:tags].empty?)
+
+      { url: url, text: text, desc: desc, tags: tags }
     end
 
   end

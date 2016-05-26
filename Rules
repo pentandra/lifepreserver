@@ -81,6 +81,7 @@ preprocess do
   mark_javascripts_as_hidden
   mark_stylesheets_as_hidden
 
+  generate_author_uris(publishing_articles())
   generate_tag_pages(publishing_articles())
   generate_author_pages(publishing_articles())
   generate_blog_archives(publishing_articles())
