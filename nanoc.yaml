@@ -104,15 +104,12 @@ site:
   recent_thoughts_limit: 5
 
 blog:
-  name: The Pentandra Blog
+  title: The Pentandra Blog
   author_name: Pentandra
   author_uri: *base_url
   url: /blog
   tags_url: /tags
-  archive_url: /blog
-
-feed:
-  title: The Pentandra Blog Feed
+  archives_url: /blog/archives
 
 google_analytics:
   code: UA-26002603-1
