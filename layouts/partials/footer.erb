@@ -2,10 +2,11 @@
   <div class="content">
     <div class="group">
       <section class="section">
+        <div class="aside">
+          <h2 class="close normal">Recent Thoughts</h2>
+        </div>
         <section class="section">
-          <div class="aside">
-            <h2 class="close normal">Recent Thoughts</h2>
-          </div>
+          <h3 class="visuallyhidden">Latest Articles</h3>
           <div class="bd">
             <% publishing_articles.first(@config[:site][:recent_thoughts_limit]).each do |post| %>
             <article class="excerpt">
