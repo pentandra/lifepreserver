@@ -121,6 +121,10 @@ compile '/assets/stylesheets/**/*' do
   write '/css/' + File.basename(@item.identifier.without_ext + fingerprint(@item[:filename]) + '.css')
 end
 
+route '/assets/components/pygments/css/*' do
+  '/css/pygments/' + File.basename(@item.identifier.to_s)
+end
+
 # Favicon and images
 
 route '/assets/images/*' do
