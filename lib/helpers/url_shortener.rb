@@ -17,7 +17,7 @@ module Pentandra
       if not short_url then
         begin
           googl = Shortly::Clients::Googl
-          googl.apiKey = "AIzaSyBrWtN-MJPxlUaJy3hjpqv59P3_4w9BWho"
+          googl.apiKey = @config[:google_api_key]
           short_url = short_urls.store(hash, googl.shorten(url).shortUrl)
           File.open('var/short_urls.yaml', 'w+') { |io| io.write(YAML.dump(short_urls)) }
         rescue SocketError

@@ -3,6 +3,8 @@
 require 'date'
 
 preprocess do
+  @config[:google_api_key] = ENV['LIFEPRESERVER_API_KEY']
+
   @config[:production] = !ENV['NANOC_ENV'].nil? && ENV['NANOC_ENV'] == 'production' # See https://github.com/nanoc/nanoc/issues/487
 
   def mark_unpublished_articles_as_hidden
