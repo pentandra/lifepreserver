@@ -223,14 +223,14 @@ $theteam-height: $base-line-height * 12;
   padding-bottom: ($base-line-height * 3) - $logo-height;
 }
 
-.logo { 
+.logotype { 
   @include grid(3);
   height: $base-line-height * 1.5;
-  background: transparent left top no-repeat url('/images/pentandra-logo.png');
+  background: transparent left top no-repeat url('/images/pentandra-logotype_252x33.png');
 }
 
-.rev .logo, .grab .logo {
-  background: transparent left top no-repeat url('/images/pentandra-logo-reverse.png');
+.rev .logotype, .grab .logotype {
+  background: transparent left top no-repeat url('/images/pentandra-logotype-reverse_252x33.png');
 }
 
 .process {

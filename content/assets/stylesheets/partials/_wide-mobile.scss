@@ -141,14 +141,14 @@ $less-outer-margin: 22px;
     background-size: 100%;
   }
 
-  .logo {
+  .logotype {
     @include grid(5);
     height: 58px;
-    background-image: url('/images/pentandra-logo_436x58.png');
+    background-image: url('/images/pentandra-logotype_436x58.png');
   }
 
-  .rev .logo, .grab .logo {
-    background-image: url('/images/pentandra-logo-reverse_436x58.png');
+  .rev .logotype, .grab .logotype {
+    background-image: url('/images/pentandra-logotype-reverse_436x58.png');
   }
 
   .process {

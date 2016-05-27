@@ -124,7 +124,7 @@ $less-outer-margin: 34px;
   //
   // Layout classes
 
-  .logo {
+  .logotype {
     @include grid(3);
   }
 
@@ -167,7 +167,7 @@ $less-outer-margin: 34px;
 
   [role="banner"] {
 
-    .logo {
+    .logotype {
       float: none;
     }
 
