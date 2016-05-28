@@ -95,7 +95,7 @@ module Nanoc::Helpers
         @items.create(
           "<%= render('/blog/tag.*',  { :tag => '#{tag}', :semantic_tag => SEMANTIC_TAGS['#{tag}'] }) %>",
           { :title => "Tag: #{tag}", :kind => 'tag-page', :count => count, :is_hidden => true, :description => "All posts having to do with the tag '#{tag}'" },
-          "/tags/#{tag.to_slug}/index.erb",
+          @config[:blog][:tags_url] + "/#{tag.to_slug}/index.erb",
           :binary => false
         )
       end
@@ -107,7 +107,7 @@ module Nanoc::Helpers
         @items.create(
           "<%= render('/blog/author.*', :author => '#{author}') %>",
           { :title => "Articles by #{author}", :kind => 'author-page', :is_hidden => true, :description => "All posts written by #{author}" },
-          "/authors/#{author.to_slug}/index.erb",
+          @config[:blog][:authors_url] + "/#{author.to_slug}/index.erb",
           :binary => false
         )
       end
@@ -121,7 +121,7 @@ module Nanoc::Helpers
         @items.create(
           "<%= render('/blog/archive.*', :year => #{year}) %>",
           { :title => "Articles from #{year}", :kind => 'archive-page', :is_hidden => true, :description => "All posts written in #{year}" },
-          "/archives/#{year}/index.erb",
+          @config[:blog][:archives_url] + "/#{year}/index.erb",
           :binary => false
         )
       end

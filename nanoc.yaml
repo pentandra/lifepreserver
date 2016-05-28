@@ -110,7 +110,8 @@ blog:
   author_uri: *base_url
   url: /blog
   tags_url: /tags
-  archives_url: /blog/archives
+  archives_url: /archives
+  authors_url: /authors
 
 google_analytics:
   code: UA-26002603-1
