@@ -31,7 +31,15 @@ preprocess do
     end
   end
 
-  def include_partials_when_has_media
+  def mark_components_as_hidden
+    @items.each do |item|
+      if item.identifier =~ /^\/assets\/components/ then
+        item[:is_hidden] = true
+      end
+    end
+  end
+
+  def include_video_partials_when_has_media
     @items.select { |item| item.key?(:has_media) }.each do |item|
       item[:head] ||= []
       item[:endbody] ||= []
@@ -80,13 +88,14 @@ preprocess do
   mark_unpublished_articles_as_hidden
   mark_javascripts_as_hidden
   mark_stylesheets_as_hidden
+  mark_components_as_hidden
 
   generate_author_uris(publishing_articles())
   generate_tag_pages(publishing_articles())
   generate_author_pages(publishing_articles())
   generate_blog_archives(publishing_articles())
 
-  include_partials_when_has_media
+  include_video_partials_when_has_media
 
   add_custom_jsonld_contexts
   extract_metadata_from_specification_documents
