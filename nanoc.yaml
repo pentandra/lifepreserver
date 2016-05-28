@@ -101,6 +101,7 @@ github_url: &github_url "https://github.com/pentandra/lifepreserver"
 
 site:
   name: Pentandra
+  motto: Breaking Research Barriers
   recent_thoughts_limit: 5
 
 blog:
