@@ -4,7 +4,7 @@ description: What if we could start over from scratch?
 kind: article
 author_name: Chris Chapman
 created_at: 2016-04-07
-updated_at: 2016-04-07
+updated_at: 2016-05-26
 published: false
 tags:
   - Enlightenment
@@ -68,11 +68,12 @@ wanted a good mix of thought-leaders and young people. We also wanted a
 balanced representation of stakeholders from scholarly communities,
 disciplines, gender, and geographic locations around the globe.
 
-<figure id="fig:demographics" class="img" property="schema:image" resource="#demographics" typeof="schema:ImageObject">
+<figure id="fig:1" class="img" property="schema:image" resource="#demographics" typeof="schema:ImageObject">
   <a property="schema:contentUrl" href="Demographic%20breakdown%20SCWG%20workshop%201.png">
-    <img property="schema:thumbnail" class="static retina" src="Demographic%20breakdown%20SCWG%20workshop%201%20620x364.png" alt="Demographic composition of participants for the first workshop" />
+    <img property="schema:thumbnail" class="static retina" src="Demographic%20breakdown%20SCWG%20workshop%201%20620x364.png" alt="Figure 1" />
   </a>
   <link property="schema:representativeOfPage" href="schema:False" />
+  <figcaption class="small"><b>Figure 1.</b> Demographic breakdown of attendees depicted through donut charts. By stakeholder group: Research=43%, Libraries and Education=15%, Publishing=13%, Repositories=9%, Advocacy Community=7%, Scholarly Communication Organizations=7%, Funding Organizations=4%, Non-profit=2%. By discipline: Life Sciences=28%, Social Sciences and Economics=17%, Information Science=15%, Multidisciplinary=15%, Arts and Humanities=7%, Physical Sciences=7%, Computer Sciences and Engineering=4%, Medicine=4%, Law=2%. By geographic location: North America=50%, Western and Northern Europe=30%, Africa=7%, Asia=4%, Eastern Europe=4%, Latin America=4%. By gender: Male=50%, Female=50%. By career level: Early Career=39%, Senior=35%, Mid-Career=22%, Student=4%.</figcaption>
 </figure>
 
 ## Outcomes and continuations
@@ -83,12 +84,12 @@ the workshop. I think it was stimulating for everyone (maybe even a little too
 engaging for some people). Dinner on Friday night was delicious, but I was not
 prepared for the late Spanish dinners! I think we were done by 11:30PM!
 
+{: .conclusion }
 I think everyone present was in agreement that we are ready to define the
 scholarly commons. The next questions to answer include: _how do we define the
 commons? And how do we do this in a way that truly opens the door as wide as we
-can, so everyone feels included and is able to play a part in creating the
-commons?_
-{: .conclusion }
+can, so everyone feels included and able to play a part in the defining
+process?_
 
 [FORCE11]: <https://force11.org>
 [helmsley]: <http://helmsleytrust.org>
