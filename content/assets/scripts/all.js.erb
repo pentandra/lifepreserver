@@ -1,4 +1,6 @@
-<%= File.read('content/assets/components/jquery/jquery.js') %>
+<%= File.read('content/assets/components/jquery/dist/jquery.js') %>
+<%= File.read('content/assets/components/txtinput/txtinput.js') %>
+<%= File.read('content/assets/components/js-url/url.js') %>
 <%= File.read('content/assets/components/letteringjs/jquery.lettering.js') %>
 <%= File.read('content/assets/components/jquery-smooth-scroll/jquery.smooth-scroll.js') %>
 <%= File.read('content/assets/components/jquery-hashchange/jquery.ba-hashchange.js') %>
@@ -8,7 +10,7 @@
 
 window.Pentandra = window.Pentandra || {};
 
-Pentandra.Kerning = (function() {
+Pentandra.Kerning = (function($) {
 
   return {
     init: function() {
@@ -20,9 +22,9 @@ Pentandra.Kerning = (function() {
     }
   };
 
-}());
+}(jQuery));
 
-Pentandra.Scrolling = (function() {
+Pentandra.Scrolling = (function($, window) {
 
   var mobileWidth = 768, previousPosition = null;
 
@@ -33,7 +35,7 @@ Pentandra.Scrolling = (function() {
         previousPosition = $(window).scrollTop();
       },
       afterScroll: function(opts) {
-        location.hash = unescapeSelector(opts.scrollTarget);
+        window.location.hash = unescapeSelector(opts.scrollTarget);
       }
     });
 
@@ -46,7 +48,7 @@ Pentandra.Scrolling = (function() {
   function scrollWhenTheHashChanges() {
 
     $(window).hashchange(function() {
-      var hash = location.hash;
+      var hash = window.location.hash;
 
       if (!hash) {
 
@@ -113,9 +115,9 @@ Pentandra.Scrolling = (function() {
 
   };
 
-}());
+}(jQuery, window));
 
-Pentandra.Social = (function() {
+Pentandra.Social = (function($) {
 
   var setupPermalinks = function() {
     $(".permalinks input").focus(function(e) {
@@ -131,9 +133,9 @@ Pentandra.Social = (function() {
     }
   };
 
-}());
+}(jQuery));
 
-Pentandra.Search = (function() {
+Pentandra.Search = (function($) {
 
   function unique(arrayName) {
     var newArray = new Array();
@@ -176,7 +178,7 @@ Pentandra.Search = (function() {
     search: search
   };
 
-}());
+}(jQuery));
 
 $(document).ready(function() {
 
