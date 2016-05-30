@@ -7,6 +7,20 @@ $(document).ready(function() {
 	createSwitch();
 });
 
+// From http://stackoverflow.com/questions/14382857/what-to-use-instead-of-toggle-in-jquery-1-8
+$.fn.toggleClick = function() {
+  var methods = arguments,
+    count = methods.length;
+
+  return this.each(function(i, item){
+    var index = 0;
+
+    $(item).on('click', function() {
+        return methods[index++ % count].apply(this, arguments);
+    });
+  });
+};
+
 function createGrid () {
 	$('body').append('<div id="less-grid"></div>');
 	var pageWidth = $('main').children(':first').width();
@@ -61,7 +75,7 @@ function createSwitch () {
 							zIndex: 1000
 							
 	});
-	$('#less-grid-switch').toggle(function() {
+	$('#less-grid-switch').toggleClick(function() {
 		$(this).text("Hide Grid");
 		$('#less-grid').show();
 		$(this).attr('rel','on');
