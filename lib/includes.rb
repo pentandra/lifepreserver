@@ -12,3 +12,4 @@ include Nanoc::Helpers::CacheBusting
 include Pentandra::Team
 include Pentandra::UrlShortener
 include Pentandra::Search
+include Pentandra::Functional
