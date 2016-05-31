@@ -7,36 +7,19 @@ preprocess do
 
   @config[:production] = !ENV['NANOC_ENV'].nil? && ENV['NANOC_ENV'] == 'production' # See https://github.com/nanoc/nanoc/issues/487
 
-  def mark_unpublished_articles_as_hidden
-    articles().each do |article|
-      if not article[:published] || $include_drafts
-        article[:is_hidden] = true
-      end
-    end
-  end
+  def mark_items_as_hidden_that_should_be_hidden
 
-  def mark_javascripts_as_hidden
-    @items.each do |item|
-      if item.identifier.exts.include?('js') then
-        item[:is_hidden] = true
-      end
-    end
-  end
+    hidden_predicates = [
+      lambda { |item| @config[:production] ? (item.key?(:published) and not item[:published]) : false },
+      lambda { |item| item.identifier.exts.include?('js') },
+      lambda { |item| item.identifier.ext =~ /css/ },
+      lambda { |item| item.identifier =~ /^\/assets\/components/ }
+    ]
 
-  def mark_stylesheets_as_hidden
-    @items.each do |item|
-      if item.identifier.ext =~ /css/ then
-        item[:is_hidden] = true
-      end
-    end
-  end
+    should_be_hidden = disjoin(*hidden_predicates)
 
-  def mark_components_as_hidden
-    @items.each do |item|
-      if item.identifier =~ /^\/assets\/components/ then
-        item[:is_hidden] = true
-      end
-    end
+    @items.each { |item| item[:is_hidden] = true if should_be_hidden.call(item) }
+
   end
 
   def include_video_partials_when_has_media
@@ -85,10 +68,7 @@ preprocess do
     end
   end
 
-  mark_unpublished_articles_as_hidden
-  mark_javascripts_as_hidden
-  mark_stylesheets_as_hidden
-  mark_components_as_hidden
+  mark_items_as_hidden_that_should_be_hidden
 
   generate_author_uris(publishing_articles())
   generate_tag_pages(publishing_articles())
