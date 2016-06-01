@@ -115,3 +115,5 @@ types {
   text/x-vcard                          vcf;
 
 }
+
+# vi: ft=nginx
