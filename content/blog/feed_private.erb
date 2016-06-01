@@ -5,7 +5,7 @@ is_hidden: true
               :author_name => @config[:blog][:author_name],
               :author_uri => @config[:blog][:author_uri],
               :articles => published_articles,
-              :content_proc => lambda { |a| absolutify a, a.compiled_content(:snapshot => :pre) },
-              :excerpt_proc => lambda { |a| absolutify a, article_summary(a) },
+              :content_proc => ->(a) { absolutify(a, a.compiled_content(:snapshot => :pre)) },
+              :excerpt_proc => ->(a) { absolutify(a, article_summary(a)) },
               :limit => 10 
 %>

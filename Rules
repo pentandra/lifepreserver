@@ -10,10 +10,10 @@ preprocess do
   def mark_items_as_hidden_that_should_be_hidden
 
     hidden_predicates = [
-      lambda { |item| @config[:production] ? (item.key?(:published) and not item[:published]) : false },
-      lambda { |item| item.identifier.exts.include?('js') },
-      lambda { |item| item.identifier.ext =~ /css/ },
-      lambda { |item| item.identifier =~ /^\/assets\/components/ }
+      ->(item) { @config[:production] ? (item.key?(:published) and not item[:published]) : false },
+      ->(item) { item.identifier.exts.include?('js') },
+      ->(item) { item.identifier.ext =~ /css/ },
+      ->(item) { item.identifier =~ /^\/assets\/components/ }
     ]
 
     should_be_hidden = disjoin(*hidden_predicates)
