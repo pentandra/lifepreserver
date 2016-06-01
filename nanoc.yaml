@@ -112,6 +112,7 @@ blog:
   tags_url: /tags
   archives_url: /archives
   authors_url: /authors
+  feed_url: /blog/feed/
 
 google_analytics:
   code: UA-26002603-1
@@ -129,7 +130,7 @@ vcard:
   phone: +1 435 294 2964
   email: hello@pentandra.com
   url: *base_url
-  photo_uri: "https://pentandra.com/images/logo.png"
+  photo_uri: "https://pentandra.com/images/pentandra-logo.png"
 
 qrcode:
   size: 25
