@@ -38,7 +38,6 @@ module Pentandra
     } unless defined?(STOP_WORDS)
 
     def search_terms_for(item)
-      puts item.identifier.to_s
       content = item.reps[:default].compiled_content
       doc = Nokogiri::HTML(content)
       full_text = doc.css("p, h1, h2, h3, h4, h5, h6").map{ |el| el.inner_text }.join(" ")
