@@ -23,7 +23,7 @@ module Pentandra
       base = lambda { |*args| true }
       predicates.inject(base) do |built, pred|
         lambda do |*args|
-          built.call(*args) and pred.call(*args)
+          built.call(*args) && pred.call(*args)
         end
       end
     end
@@ -35,7 +35,7 @@ module Pentandra
       base = lambda { |*args| false }
       predicates.inject(base) do |built, pred|
         lambda do |*args|
-          built.call(*args) or pred.call(*args)
+          built.call(*args) || pred.call(*args)
         end
       end
     end
