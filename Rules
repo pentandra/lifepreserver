@@ -22,6 +22,10 @@ preprocess do
 
   end
 
+  def include_analytics
+    @items.each { |item| item[:endbody] = Array(item[:endbody]) << 'analytics' }
+  end
+
   def include_video_partials_when_has_media
     @items.select { |item| item.key?(:has_media) }.each do |item|
       item[:head] ||= []
@@ -75,6 +79,7 @@ preprocess do
   generate_author_pages(published_articles)
   generate_blog_archives(published_articles)
 
+  include_analytics
   include_video_partials_when_has_media
 
   add_custom_jsonld_contexts
