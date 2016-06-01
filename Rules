@@ -70,10 +70,10 @@ preprocess do
 
   mark_items_as_hidden_that_should_be_hidden
 
-  generate_author_uris(publishing_articles())
-  generate_tag_pages(publishing_articles())
-  generate_author_pages(publishing_articles())
-  generate_blog_archives(publishing_articles())
+  generate_author_uris(published_articles)
+  generate_tag_pages(published_articles)
+  generate_author_pages(published_articles)
+  generate_blog_archives(published_articles)
 
   include_video_partials_when_has_media
 

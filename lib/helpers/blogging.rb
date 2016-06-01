@@ -6,12 +6,9 @@ module Nanoc::Helpers
 
     include Nanoc::Helpers::Text
 
-    def publishing_articles
-      if not @config[:production] then
-        sorted_articles
-      else
-        sorted_articles.select { |a| a[:published] } unless sorted_articles.nil?
-      end
+    # Relies upon Rules preprocessing to set the `:is_hidden` attribute.
+    def published_articles
+      sorted_articles.reject { |a| a[:is_hidden] }
     end
 
     def authors(articles = nil)
@@ -130,8 +127,8 @@ module Nanoc::Helpers
     def sharer_for(item)
       url = shorten(url_for(item))
       text = URI.escape(item[:title])
-      desc = URI.escape(item[:description]) unless item[:description].nil?
-      tags = URI.escape(item[:tags].join(',')) unless (item[:tags].nil? or item[:tags].empty?)
+      desc = URI.escape(item[:description]) if item.key?(:description)
+      tags = URI.escape(Array(item[:tags]).join(','))
 
       { url: url, text: text, desc: desc, tags: tags }
     end

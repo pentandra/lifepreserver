@@ -1,13 +1,12 @@
 --- 
 title: Blog
 description: A collection of our thoughts about Pentandra and the future of research.
-is_hidden: true
 ---
 <div class="group" resource="#blog" typeof="schema:Blog sioct:Weblog">
 
   <h1 property="schema:name sioc:name"><%= @config[:blog][:title] %></h1>
 
-  <% publishing_articles.each do |article| %>
+  <% published_articles.each do |article| %>
     <%= render('/blog/partials/summary.*', :item => article) %>
   <% end %>
 

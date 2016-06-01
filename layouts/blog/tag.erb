@@ -26,7 +26,7 @@
     <% end %>
   </div>
 
-  <% items_with_tag(tag, publishing_articles).each do |article| %>
+  <% items_with_tag(tag, published_articles).each do |article| %>
     <%= render('/blog/partials/summary.*', :item => article) %>
   <% end %>
 

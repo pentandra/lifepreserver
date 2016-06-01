@@ -4,7 +4,7 @@ is_hidden: true
 <%= atom_feed :title => @config[:blog][:title],
               :author_name => @config[:blog][:author_name],
               :author_uri => @config[:blog][:author_uri],
-              :articles => publishing_articles,
+              :articles => published_articles,
               :content_proc => lambda { |a| absolutify a, a.compiled_content(:snapshot => :pre) },
               :excerpt_proc => lambda { |a| absolutify a, article_summary(a) },
               :limit => 10 
