@@ -191,7 +191,7 @@ end
 
 compile '/blog/feed_private.erb' do
   filter :erb
-  write item.identifier.without_ext + '/index.atom'
+  write item.identifier.without_ext + '.atom'
 end
 
 # Blog tags, authors, and archives
