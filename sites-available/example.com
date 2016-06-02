@@ -37,3 +37,5 @@ server {
   # Include the basic h5bp config set
   include h5bp/basic.conf;
 }
+
+# vi: ft=nginx
