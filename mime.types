@@ -94,7 +94,6 @@ types {
     application/pdf                       pdf;
     application/postscript                ai eps ps;
     application/rtf                       rtf;
-    application/vnd.wap.wmlc              wmlc;
     application/vnd.google-earth.kml+xml  kml;
     application/vnd.google-earth.kmz      kmz;
     application/vnd.wap.wmlc              wmlc;
