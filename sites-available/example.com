@@ -34,8 +34,8 @@ server {
   # Custom 404 page
   error_page 404 /404.html;
 
-  # Include the basic h5bp config set
-  include h5bp/basic.conf;
+  # Include the basic config set
+  include includes/basic.conf;
 }
 
 # vi: ft=nginx

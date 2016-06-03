@@ -20,7 +20,7 @@ server {
   # listen on the wrong host
   server_name www.example.com;
 
-  include h5bp/directive-only/ssl.conf;
+  include includes/directive-only/ssl.conf;
 
   # and redirect to the non-www host (declared below)
   return 301 https://example.com$request_uri;
@@ -38,7 +38,7 @@ server {
   # The host name to respond to
   server_name example.com;
 
-  include h5bp/directive-only/ssl.conf;
+  include includes/directive-only/ssl.conf;
 
   # Path for static files
   root /var/www/example.com/public;
@@ -49,8 +49,8 @@ server {
   # Custom 404 page
   error_page 404 /404.html;
 
-  # Include the basic h5bp config set
-  include h5bp/basic.conf;
+  # Include the basic config set
+  include includes/basic.conf;
 }
 
 # vi: ft=nginx

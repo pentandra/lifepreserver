@@ -21,7 +21,7 @@ server {
   # listen on the wrong host
   server_name www.pentandra.com;
 
-  include h5bp/directive-only/ssl.conf;
+  include includes/directive-only/ssl.conf;
 
   ssl_certificate /etc/letsencrypt/live/pentandra.com/fullchain.pem;
   ssl_certificate_key /etc/letsencrypt/live/pentandra.com/privkey.pem;
@@ -43,15 +43,15 @@ server {
   # The host name to respond to
   server_name pentandra.com;
 
-  include h5bp/directive-only/ssl.conf;
+  include includes/directive-only/ssl.conf;
 
   ssl_certificate /etc/letsencrypt/live/pentandra.com/fullchain.pem;
   ssl_certificate_key /etc/letsencrypt/live/pentandra.com/privkey.pem;
   ssl_dhparam /etc/letsencrypt/live/pentandra.com/dhparams.pem;
 
-  include h5bp/directive-only/ssl-stapling.conf;
+  include includes/directive-only/ssl-stapling.conf;
 
-  include h5bp/directive-only/extra-security.conf;
+  include includes/directive-only/extra-security.conf;
 
   # Path for static files
   root /srv/http/lifepreserver;
@@ -62,8 +62,8 @@ server {
   # Custom 404 page
   error_page 404 /404.html;
 
-  # Include the basic h5bp config set
-  include h5bp/basic.conf;
+  # Include the basic config set
+  include includes/basic.conf;
 
   # Redirect public feed to feedburner
   location /blog/feed {
