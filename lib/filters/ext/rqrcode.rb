@@ -19,10 +19,14 @@ module RQRCode
 
       @modules.each_index do |x|
         @modules.each_index do |y|
-          if (self.dark?(x,y))
-            image.rect(y * module_size + margin, x * module_size + margin, 
-                       (y * module_size) + module_size + margin - 1, (x * module_size) + module_size + margin - 1, 
-                       color, color)
+          image.rect(
+            y * module_size + margin, 
+            x * module_size + margin, 
+            (y * module_size) + module_size + margin - 1, 
+            (x * module_size) + module_size + margin - 1, 
+            color, 
+            color
+          ) if self.dark?(x,y)
           end
         end
       end
