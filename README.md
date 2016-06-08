@@ -24,3 +24,5 @@ including:
 
 * Vincent Driessen (https://github.com/nvie/blog)
 * Dennis Defreyne, of course (https://github.com/ddfreyne/nanoc)
+* Lifepillar (https://github.com/lifepillar/nanoc4-template) for some new
+  ideas.
