@@ -27,7 +27,6 @@ module RQRCode
             color, 
             color
           ) if self.dark?(x,y)
-          end
         end
       end
 
