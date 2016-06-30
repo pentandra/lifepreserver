@@ -8,7 +8,7 @@ is_hidden: true
 
   <nav class="tags group">
     <ul class="button">
-    <% tag_set(publishing_articles).sort.each do |tag| %>
+    <% tag_set(published_articles).sort.each do |tag| %>
       <li><%= link_for_tagcloud(tag, "/tags/") %>
     <% end %>
     </ul>
