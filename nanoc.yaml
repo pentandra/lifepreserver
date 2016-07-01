@@ -114,6 +114,9 @@ blog:
   authors_url: /authors
   feed_url: /blog/feed
 
+geungle:
+  live: false
+
 google_analytics:
   code: UA-26002603-1
   site: pentandra.com

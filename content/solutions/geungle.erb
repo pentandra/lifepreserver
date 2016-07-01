@@ -130,9 +130,11 @@ wip: true
 
     </div>
 
-    <div class="bd section">
-      <a href="http://geungle.com/" class="button">OK, I'm intrigued. <span class="newline">Take me to <b>Geungle</b></span></a>
-    </div>
+    <% if @config[:geungle][:live] then %>
+      <div class="bd section">
+        <a href="http://geungle.com/" class="button">OK, I'm intrigued. <span class="newline">Take me to <b>Geungle</b></span></a>
+      </div>
+    <% end %>
 
   </section>
   <section class="section" id="approach">
@@ -266,11 +268,13 @@ wip: true
 
   </section>
 
-  <div class="section bd">
-    <div class="section">
-      <a href="http://geungle.com/" class="button">Alright, I've heard enough! <span class="newline">Take me to <b>Geungle</b></span></a>
+  <% if @config[:geungle][:live] then %>
+    <div class="section bd">
+      <div class="section">
+        <a href="http://geungle.com/" class="button">Alright, I've heard enough! <span class="newline">Take me to <b>Geungle</b></span></a>
+      </div>
     </div>
-  </div>
+  <% end %>
 
   <footer class="footnotes bd">
 
