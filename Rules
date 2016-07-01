@@ -23,7 +23,7 @@ preprocess do
   end
 
   def include_analytics
-    @items.each { |item| item[:endbody] = Array(item[:endbody]) << 'analytics' }
+    @items.each { |item| item[:endbody] = Array(item[:endbody]) << 'analytics' } if @config[:production]
   end
 
   def include_video_partials_when_has_media
