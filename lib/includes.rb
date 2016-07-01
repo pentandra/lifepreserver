@@ -9,7 +9,7 @@ include Nanoc::Helpers::Text
 include Nanoc::Helpers::XMLSitemap
 include Nanoc::Helpers::CacheBusting
 
-include Pentandra::Team
+include Pentandra::Company
 include Pentandra::UrlShortener
 include Pentandra::Search
 include Pentandra::Functional

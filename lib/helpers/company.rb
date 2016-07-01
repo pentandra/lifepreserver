@@ -1,6 +1,6 @@
 module Pentandra
 
-  module Team
+  module Company
 
     include Nanoc::Helpers::Text
 
