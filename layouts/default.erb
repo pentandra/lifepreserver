@@ -1,19 +1,17 @@
-<% render '/base.*' do %>
+<% render('/base.*') do %>
 
   <%= render '/partials/header.*' %>
 
   <main role="main">
     <div class="content">
 
-      <% if @item[:wip] then %>
-        <%= render '/partials/wip.*' %>
-      <% end %>
+      <%= render('/partials/wip.*') if @item[:wip] %>
 
       <%= yield %>
 
     </div>
   </main>
 
-  <%= render '/partials/footer.*' %>
+  <%= render('/partials/footer.*') %>
 
 <% end %>

@@ -14,7 +14,7 @@ module Pentandra
 
       short_url = short_urls[hash]
 
-      if not short_url then
+      if !short_url then
         begin
           googl = Shortly::Clients::Googl
           googl.apiKey = @config[:google_api_key]
