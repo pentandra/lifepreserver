@@ -14,7 +14,7 @@ module Nanoc::Helpers
     #
     # ==== Example
     #
-    # "The World is Beautiful!".to_slug # => "the-world-is-beautiful"
+    # "The World is Beautiful!".to_slug # → "the-world-is-beautiful"
     #
     # ==== Returns
     # String:: A 'sluggified' version of this string

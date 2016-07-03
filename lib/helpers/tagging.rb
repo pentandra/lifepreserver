@@ -38,7 +38,7 @@ module Nanoc::Helpers
     # Count the tags in a given collection of items.
     # By default, the method counts tags in all items.
     #
-    # The result is a hash such as: { tag => count }.
+    # The result is a hash such as: { tag: count }.
     def count_tags(items=nil)
       items = @items if items.nil?
       count = Hash.new( 0 )
@@ -56,7 +56,7 @@ module Nanoc::Helpers
     # site) in 'n' classes of rank. The rank 0 corresponds to the most frequent
     # tags. The rank 'n-1' to the least frequent.
     #
-    # The result is a hash such as: { tag => rank }.
+    # The result is a hash such as: { tag: rank }.
     def rank_tags(n, items=nil)
       items = @items if items.nil?
       count = count_tags( items )
@@ -127,7 +127,7 @@ module Nanoc::Helpers
           "<%= render('/blog/tag.*', tag: '#{tag}', semantic_tag: SEMANTIC_TAGS['#{tag}']) %>",
           { title: "Tag: #{tag}", kind: 'tag-page', count: count, is_hidden: true, description: "All posts having to do with the tag '#{tag}'" },
           @config[:blog][:tags_url] + "/#{tag.to_slug}/index.erb",
-          :binary => false
+          binary: false
         )
       end
     end

@@ -3,7 +3,7 @@ require "rqrcode"
 class QRCodeFilter < Nanoc::Filter
 
   identifier :qrcode
-  type :text => :binary
+  type text: :binary
 
   def run(content, params = {})
 
@@ -12,7 +12,7 @@ class QRCodeFilter < Nanoc::Filter
     module_size = params[:module_size] || 3
     color = params[:color]
 
-    qr = RQRCode::QRCode.new(content, :size => size, :level => :h)
+    qr = RQRCode::QRCode.new(content, size: size, level: :h)
     image = qr.to_image(module_size, 4, color)
 
     image.save(output_filename)
@@ -20,7 +20,7 @@ class QRCodeFilter < Nanoc::Filter
     require "optipng"
 
     if @config[:production] and Optipng.available?
-      Optipng.optimize(output_filename, { :level => 7 })
+      Optipng.optimize(output_filename, level: 7 )
     end
 
   end

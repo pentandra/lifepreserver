@@ -1,4 +1,4 @@
-require "vcardigan"
+require 'vcardigan'
 
 class VcardFilter < Nanoc::Filter
 
@@ -18,44 +18,36 @@ class VcardFilter < Nanoc::Filter
     last_name = params[:last_name]
     nick_name = params[:nick_name]
     email = params[:email]
-    tel = params[:phone]
-    ext = params[:extension]
+    tel = params.key?(:extension) ? params[:phone] + ";ext=" + params[:extension] : params[:phone]
     url = params[:url]
     org = params[:org]
     photo_uri = params[:photo_uri]
+    logo_uri = params[:logo_uri]
 
-    vcard = VCardigan.create(:version => '3.0')
+    vcard = VCardigan.create(version: '3.0')
 
-    vcard.rev DateTime.now.strftime(format='%F')
+    vcard.rev(Time.now.strftime('%F'))
 
-    vcard.fullname full_name
+    vcard.fullname(full_name)
 
-    if @config[:base_url]
-      vcard.source @config[:base_url] + @item_rep.path
-    end
-
-    #vcard.kind kind
+    vcard.source(@config[:base_url] + @item_rep.path) if @config[:base_url]
 
     if kind == 'individual'
-      vcard.name [ last_name, first_name ]
+      vcard.name(last_name, first_name)
     end
 
     vcard.nickname nick_name unless nick_name.nil?
 
-    unless email.nil?
-      vcard.email email, :type => 'work'
-    end
+    vcard.email(email, type: 'work') unless email.nil?
 
-    vcard.org org unless org.nil?
-    vcard.url url unless url.nil?
+    vcard.org(org) unless org.nil?
+    vcard.url(url) unless url.nil?
 
-    unless tel.nil?
-      vcard.tel tel.gsub(/[\s\.-]/, ''), :type => 'voice,work,msg'
-    end
+    vcard.tel(tel, type: 'voice,work,msg') unless tel.nil?
 
-    unless photo_uri.nil?
-      vcard.photo photo_uri, :value => 'uri'
-    end
+    vcard.photo(photo_uri, value: 'uri') unless photo_uri.nil?
+
+    vcard.logo(logo_uri, value: 'uri') unless logo_uri.nil?
 
     vcard.to_s
   end

@@ -29,10 +29,10 @@ module Nanoc::Filters
 
       case output_format
       when :jsonld
-        options.merge!({ 
-          :context => @item[:context] || {},
-          :documentLoader => self.class.method(:load_document_local)
-        })
+        options.merge!(
+          context: @item[:context] || {}, 
+          documentLoader: self.class.method(:load_document_local)
+        )
 
         jsonld = ::JSON.parse repository.dump(output_format, options)
 
