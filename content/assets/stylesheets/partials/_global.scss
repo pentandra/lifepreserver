@@ -41,11 +41,18 @@ header {
   line-height: $height;
 }
 
-.small.flush {
-  $height: 11px;
-  line-height: $height;
-  margin-bottom: $base-line-height - $height;
+.small {
+  &.flush {
+    $height: 11px;
+    line-height: $height;
+    margin-bottom: $base-line-height - $height;
+  }
+
+  p {
+    margin-bottom: $base-line-height * 0.75;
+  }
 }
+
 
 .shaved {
   margin-bottom: 0;
@@ -393,6 +400,35 @@ input.button {
   @include border-radius($default-radius / 2);
 }
 
+.small .tags {
+  $tag-height: 16px; //$base-line-height * 0.75 * 0.8;
+  $tag-space: 8px;
+  $hole-diameter: 3px;
+
+  li, a {
+    height: $tag-height;
+    line-height: $tag-height;
+  }
+
+  a {
+    padding: 0 $tag-space + $hole-diameter 0 $tag-space;
+    margin-right: $tag-space * 1.25;
+
+    &:before {
+      right: -$tag-space;
+      border-width: $tag-space 0 $tag-space $tag-space;
+    }
+
+    &:after {
+      top: $hole-diameter * 2;
+    }
+  }
+
+  li {
+    padding: ($base-line-height - $tag-height) / 2 0;
+  }
+}
+
 .holder {
   position: relative;
 }
@@ -530,6 +566,19 @@ input.button {
 
 .grab span.button {
   &:hover, &:focus { color: $pentandra-lime; }
+}
+
+.rev .tags a, .grab .tags a {
+  color: $pentandra-brown;
+  background-color: $pentandra-white;
+
+  &:before {
+    border-color: transparent transparent transparent $pentandra-white;
+  }
+
+  &:after {
+    background: $pentandra-brown;
+  }
 }
 
 // End icon fonts
