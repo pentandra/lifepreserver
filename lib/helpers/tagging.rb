@@ -85,11 +85,11 @@ module Nanoc::Helpers
     #
     # Overrides Nanoc::Helpers::Tagging#link_for_tag, adding support for
     # multi-word tags.
-    def link_for_tag(tag, base_url)
+    def link_for_tag(tag)
       if semantic_tag?(tag)
-        %[<a href="#{h base_url}#{h tag.to_slug}/" rel="tag ctag:means" typeof="ctag:AuthorTag" resource="#{h SEMANTIC_TAGS[tag]["uri"]}" property="ctag:label">#{h tag}</a>]
+        %[<a href="#{@config[:blog][:tags_url]}/#{h tag.to_slug}/" rel="tag ctag:means" typeof="ctag:AuthorTag" resource="#{h SEMANTIC_TAGS[tag]["uri"]}" property="ctag:label">#{h tag}</a>]
       else
-        %[<a href="#{h base_url}#{h tag.to_slug}/" rel="tag">#{h tag}</a>]
+        %[<a href="#{@config[:blog][:tags_url]}/#{h tag.to_slug}/" rel="tag">#{h tag}</a>]
       end
     end
 
@@ -101,8 +101,8 @@ module Nanoc::Helpers
     # documents' tags.
     #
     # See http://microformats.org/wiki/rel-tag
-    def link_for_tagcloud(tag, base_url)
-      %[<a href="#{h base_url}#{h tag.to_slug}/">#{h tag}</a>]
+    def link_for_tagcloud(tag)
+      %[<a href="#{@config[:blog][:tags_url]}/#{h tag.to_slug}/">#{h tag}</a>]
     end
 
     def items_with_tag(tag, items=nil)
@@ -117,6 +117,18 @@ module Nanoc::Helpers
       paragraphs = abstract.split(%r{((?<=[a-z0-9])[.!?]['"]?(?=[A-Z0-9]))})
       paragraphs.reduce(String.new) do |acc, p|
         acc << ( p =~ /^[.!?'"]+$/ ? p + "</p>" : "<p>" + p )
+      end
+    end
+
+    # Creates in-memory tag pages from partial: layouts/tag.html
+    def generate_tag_pages(item_set)
+      count_tags(item_set).each do |tag, count|
+        @items.create(
+          "<%= render('/blog/tag.*', tag: '#{tag}', semantic_tag: SEMANTIC_TAGS['#{tag}']) %>",
+          { title: "Tag: #{tag}", kind: 'tag-page', count: count, is_hidden: true, description: "All posts having to do with the tag '#{tag}'" },
+          @config[:blog][:tags_url] + "/#{tag.to_slug}/index.erb",
+          :binary => false
+        )
       end
     end
 

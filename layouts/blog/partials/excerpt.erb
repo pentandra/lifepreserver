@@ -6,16 +6,16 @@
           <span property="dc:title schema:name"><%= @item[:title] %></span>
         </a>
       </h2>
-      <p class="em">By <%= link_for_author( @item[:author_name], "/authors/") %></p>
+      <p class="em">By <%= link_for_author(@item[:author_name]) %></p>
     </header>
     <%= article_summary(@item) %>
   </div>
-  <%= render '/blog/partials/created_on.*' %>
+  <%= render('/blog/partials/created_on.*') %>
   <footer class="aside section">
     <nav class="group banner">
       <ul class="tags">
         <% tag_set(Array(@item)).each do |tag| %>
-        <li><%= link_for_tag(tag, "/tags/") %></li>
+        <li><%= link_for_tag(tag) %></li>
         <% end %>
       </ul>
     </nav>

@@ -1,4 +1,4 @@
-<% render '/blog/default.*' do %>
+<% render('/blog/default.*') do %>
   <article class="group h-entry" resource="#blogpost" typeof="cc:Work schema:BlogPosting sioct:BlogPost" property="ctag:tagged">
     <header class="section">
       <h1 class="p-name" property="dc:title schema:headline"><%= @item[:title] %></h1>
@@ -7,7 +7,7 @@
           <div>
             Written <time class="dt-published" property="dc:created schema:datePublished" datetime="<%= @item[:created_at] %>"><%= @item[:created_at].strftime("%B %d, %Y") %></time>
             by
-            <%= link_for_author( @item[:author_name], "/authors/") %>
+            <%= link_for_author(@item[:author_name]) %>
           </div>
           <% if @item[:updated_at] > @item[:created_at] then %>
           <div>
@@ -23,8 +23,8 @@
       <div class="post section e-content" property="schema:articleBody sioc:content">
         <%= yield %>
       </div>
-      <%= render '/blog/partials/comments.*' %>
+      <%= render('/blog/partials/comments.*') %>
     </div>
-    <%= render '/blog/partials/sidebar.*' %>
+    <%= render('/blog/partials/sidebar.*') %>
   </article>
 <% end %>

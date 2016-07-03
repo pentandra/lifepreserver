@@ -1,4 +1,4 @@
-<% render '/blog/default.*' do %>
+<% render('/blog/default.*') do %>
   <div class="group">
 
     <h1 property="schema:name"><%= tag %> Articles</h1>
@@ -7,7 +7,7 @@
     <div class="bd">
       <p class="big">
         
-        The <span class="tags"><%= link_for_tag(tag, "/tags/") %></span> tag represents the concept <a href="<%= semantic_tag['uri'] %>" title="<%= semantic_tag['label'] %> on DBpedia"><cite><%= semantic_tag["label"].downcase %></cite></a>, which is described as follows:
+        The <span class="tags"><%= link_for_tag(tag) %></span> tag represents the concept <a href="<%= semantic_tag['uri'] %>" title="<%= semantic_tag['label'] %> on DBpedia"><cite><%= semantic_tag["label"].downcase %></cite></a>, which is described as follows:
       
       </p>
       <figure id="fig:<%= tag.to_slug %>" class="bq rev" resource="#<%= tag.to_slug('_') %>" typeof="schema:CreativeWork">
@@ -27,7 +27,7 @@
   </div>
 
   <% items_with_tag(tag, published_articles).each do |article| %>
-    <%= render('/blog/partials/summary.*', :item => article) %>
+    <%= render('/blog/partials/summary.*', item: article) %>
   <% end %>
 
 <% end %>

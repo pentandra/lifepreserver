@@ -24,24 +24,24 @@ module Nanoc::Helpers
     #
     # Create a link for the author of this page
     #
-    def link_for_author(author, base_url)
-      %[<a rel="author" href="#{h base_url}#{h author.to_slug}/" title="More articles by #{h author}">#{h author}</a>]
+    def link_for_author(author)
+      %[<a rel="author" href="#{@config[:blog][:authors_url]}/#{h author.to_slug}/" title="More articles by #{h author}">#{h author}</a>]
     end
 
-    def link_for_an_author(author, base_url)
-      %[<a href="#{h base_url}#{h author.to_slug}/" title="Articles by #{h author}">#{h author}</a>]
+    def link_for_an_author(author)
+      %[<a href="#{@config[:blog][:authors_url]}/#{h author.to_slug}/" title="Articles by #{h author}">#{h author}</a>]
     end
 
     def articles_by_author(articles, author)
-      articles.select { |i| i[:author_name] == author }
+      articles.select { |item| item[:author_name] == author }
     end
 
     def articles_by_year(articles, year)
-      articles.select { |i| i[:created_at].year == year }
+      articles.select { |item| item[:created_at].year == year }
     end
 
-    def link_for_archive(year, base_url)
-      %[<a rel="archives" href="#{h base_url}#{h year.to_s}/" title="Articles written in #{h year.to_s}">#{h year.to_s}</a>]
+    def link_for_archive(year)
+      %[<a rel="archives" href="#{@config[:blog][:archives_url]}/#{h year.to_s}/" title="Articles written in #{h year.to_s}">#{h year.to_s}</a>]
     end
 
     def archive_years(articles = nil)
@@ -78,32 +78,20 @@ module Nanoc::Helpers
     def article_summary(article, read_more_text="Read more ⇢", separator="<!--MORE-->")
       summary,body = article.compiled_content.split(separator)
       return article.compiled_content unless body
-      link = link_to( (article[:read_more] || read_more_text), article.path, { :class => 'readmore', :title => "Read the full article" })
-      return summary+"<p class=\"readmore\">#{link}</p>"
+      link = link_to( (article[:read_more] || read_more_text), article.path, class: 'readmore', title: "Read the full article" )
+      return summary + "<p class=\"readmore\">#{link}</p>"
     end
 
     def article_id(article)
       article[:article_id] || md5(article[:title].to_slug)
     end
 
-    # Creates in-memory tag pages from partial: layouts/tag.html
-    def generate_tag_pages(item_set)
-      count_tags(item_set).each do |tag, count|
-        @items.create(
-          "<%= render('/blog/tag.*',  { :tag => '#{tag}', :semantic_tag => SEMANTIC_TAGS['#{tag}'] }) %>",
-          { :title => "Tag: #{tag}", :kind => 'tag-page', :count => count, :is_hidden => true, :description => "All posts having to do with the tag '#{tag}'" },
-          @config[:blog][:tags_url] + "/#{tag.to_slug}/index.erb",
-          :binary => false
-        )
-      end
-    end
-
     # Creates in-memory author pages from partial: layouts/author.html
     def generate_author_pages(item_set)
       authors(item_set).each do |author|
         @items.create(
-          "<%= render('/blog/author.*', :author => '#{author}') %>",
-          { :title => "Articles by #{author}", :kind => 'author-page', :is_hidden => true, :description => "All posts written by #{author}" },
+          "<%= render('/blog/author.*', author: '#{author}') %>",
+          { title: "Articles by #{author}", kind: 'author-page', is_hidden: true, description: "All posts written by #{author}" },
           @config[:blog][:authors_url] + "/#{author.to_slug}/index.erb",
           :binary => false
         )
@@ -116,8 +104,8 @@ module Nanoc::Helpers
       years = item_set.map { |a| a[:created_at].year }.uniq
       years.each do |year|
         @items.create(
-          "<%= render('/blog/archive.*', :year => #{year}) %>",
-          { :title => "Articles from #{year}", :kind => 'archive-page', :is_hidden => true, :description => "All posts written in #{year}" },
+          "<%= render('/blog/archive.*', year: #{year}) %>",
+          { title: "Articles from #{year}", kind: 'archive-page', is_hidden: true, description: "All posts written in #{year}" },
           @config[:blog][:archives_url] + "/#{year}/index.erb",
           :binary => false
         )
