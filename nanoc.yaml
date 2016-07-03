@@ -97,7 +97,9 @@ kramdown:
 # Base URL of the website
 base_url: &base_url "https://pentandra.com"
 
-github_url: &github_url "https://github.com/pentandra/lifepreserver"
+github:
+  url: "https://github.com/pentandra/lifepreserver"
+  tag_url: "https://github.com/pentandra/lifepreserver/releases/tag"
 
 site:
   name: Pentandra
