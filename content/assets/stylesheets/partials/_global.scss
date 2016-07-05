@@ -48,7 +48,7 @@ header {
     margin-bottom: $base-line-height - $height;
   }
 
-  p {
+  p, ul, ol {
     margin-bottom: $base-line-height * 0.75;
   }
 }
