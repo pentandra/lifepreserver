@@ -126,7 +126,7 @@ module Nanoc::Helpers
         @items.create(
           "<%= render('/blog/tag.*', tag: '#{tag}', semantic_tag: SEMANTIC_TAGS['#{tag}']) %>",
           { title: "Tag: #{tag}", kind: 'tag-page', count: count, is_hidden: true, description: "All posts having to do with the tag '#{tag}'" },
-          @config[:blog][:tags_url] + "/#{tag.to_slug}/index.erb",
+          "#{@config[:blog][:tags_url]}/#{tag.to_slug}/index.erb",
           binary: false
         )
       end
