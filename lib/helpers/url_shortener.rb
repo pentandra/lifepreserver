@@ -1,7 +1,7 @@
 require 'shortly'
 require 'yaml'
 
-module Pentandra
+module Pentandra::Helpers
 
   module UrlShortener
 

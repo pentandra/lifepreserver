@@ -1,4 +1,4 @@
-module Pentandra
+module Pentandra::Helpers
 
   module Company
 

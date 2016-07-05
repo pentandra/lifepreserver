@@ -1,6 +1,6 @@
 require 'json'
 
-module Pentandra
+module Pentandra::Helpers
 
   module Search
 
