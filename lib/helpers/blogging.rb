@@ -51,7 +51,7 @@ module Nanoc::Helpers
     end
 
     def date_for(article)
-      article[:created_at].to_s.gsub(/-/, '<span class="ndash">--</span>')
+      ndashed(attribute_to_time(article[:created_at]).strftime('%F'))
     end
 
     # Nanoc helper to display blog post summary and a link to the full post.
