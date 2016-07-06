@@ -1,1 +1,1 @@
-<meta property="prov:generatedAtTime" datatype="xsd:dateTime" content="<%= DateTime.now.to_s %>" />
+<span property="doap:created" datatype="xsd:date" content="<%= attribute_to_time(compile_time).strftime('%F') %>"><span about="" property="prov:generatedAtTime" datatype="xsd:dateTime" content="<%= compile_time.xmlschema %>"><%= attribute_to_time(compile_time).utc.strftime('%A, %-d %B %Y at %R %Z') %></span></span>
