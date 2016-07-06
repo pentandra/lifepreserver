@@ -184,9 +184,9 @@ compile '/blog/index.erb' do
   write item.identifier.without_ext + '.html'
 end
 
-# Blog feed
+# Blog feeds
 
-compile '/blog/feed_private.erb' do
+compile '/**/feed.erb' do
   filter :erb
   write item.identifier.without_ext + '.atom'
 end
