@@ -532,7 +532,7 @@ input.button {
   color: $pentandra-white;
 }
 
-.rev a.button, .rev input.button, .grab a.button {
+.rev a.button, .rev input.button, .grab a.button, .rev .tags a, .grab .tags a {
 
   color: $pentandra-brown;
   background-color: $pentandra-white;
@@ -548,7 +548,7 @@ input.button {
   border-color: $pentandra-white;
 }
 
-.grab a.button {
+.grab a.button, .grab .tags a {
 
   &:hover, &:focus {
     background-color: $pentandra-brown;
@@ -569,15 +569,35 @@ input.button {
 }
 
 .rev .tags a, .grab .tags a {
-  color: $pentandra-brown;
-  background-color: $pentandra-white;
 
   &:before {
     border-color: transparent transparent transparent $pentandra-white;
   }
+}
+
+.rev .tags a {
+
+  &:hover, &:focus {
+    &:before {
+      border-color: transparent transparent transparent $pentandra-red;
+    }
+  }
 
   &:after {
     background: $pentandra-brown;
+  }
+}
+
+.grab .tags a {
+
+  &:hover, &:focus {
+    &:before {
+      border-color: transparent transparent transparent $pentandra-brown;
+    }
+  }
+
+  &:after {
+    background: $pentandra-white;
   }
 }
 
