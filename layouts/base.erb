@@ -16,6 +16,8 @@
 
     <script src="/js/modernizr.custom.40730.js"></script>
 
+    <%= render('/partials/atom-discovery.*', title: "#{@config[:blog][:title]} Feed", feed_url: @config[:blog][:feed_url]) %>
+
     <% for p in @item.fetch(:head, []) %>
       <%= render('/partials/#{p}.*') %>
     <% end %>
