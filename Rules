@@ -66,7 +66,8 @@ preprocess do
       case item.identifier.ext
       when 'html'
         doc = Nokogiri::HTML(File.open(item[:filename]))
-        item[:title] = doc.at_css("title").inner_text
+        item[:title] = doc.title
+        item[:description] = doc.xpath('//meta[@name="description"]/@content').map(&:value)
       else
         item[:is_hidden_from_human_search] = true
       end
