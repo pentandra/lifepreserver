@@ -1,0 +1,12 @@
+<section class="section">
+  <h3 class="visuallyhidden">Latest Articles</h3>
+  <div class="bd">
+    <% published_articles.first(limit).each do |post| %>
+    <article class="excerpt">
+      <a href="<%= post.path  %>" rel="bookmark">
+        <time class="small bold" datetime="<%= attribute_to_time(post[:created_at]).strftime('%F') %>"><%= date_for(post) %></time>&#8194;<h3 class="normal"><%= h post[:short_title] || post[:title] %></h3>
+      </a>
+    </article>
+    <% end %>
+  </div>
+</section>

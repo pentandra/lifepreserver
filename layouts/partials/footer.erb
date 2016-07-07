@@ -1,109 +1,16 @@
 <footer id="contentinfo" role="contentinfo" class="rev contentinfo">
   <div class="content">
     <div class="group">
-      <section class="section">
-        <div class="aside">
-          <h2 class="close normal">Recent Thoughts</h2>
-        </div>
-        <section class="section">
-          <h3 class="visuallyhidden">Latest Articles</h3>
-          <div class="bd">
-            <% published_articles.first(@config[:site][:recent_thoughts_limit]).each do |post| %>
-            <article class="excerpt">
-              <a href="<%= post.path  %>" rel="bookmark">
-                <time class="small bold" datetime="<%= post[:created_at] %>"><%= date_for(post) %></time>&#8194;<h3 class="normal"><%= post[:short_title] || post[:title] %></h3>
-              </a>
-            </article>
-            <% end %>
-          </div>
-        </section>
-        <section class="actions section">
-          <h3 class="visuallyhidden">Social Media Links</h3>
-          <div class="bd">
-            <div class="menu group nav">
-              <ul class="icons big">
-                <li>
-                  <a href="https://plus.google.com/108021950461928542978?prsrc=3">
-                    <span aria-hidden="true" class="button icon-googleplus"></span>
-                    <span class="normal">Google+</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.facebook.com/PentandraInc">
-                    <span aria-hidden="true" class="button icon-facebook"></span>
-                    <span class="normal">Facebook</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/PentandraInc">
-                    <span aria-hidden="true" class="button icon-twitter"></span>
-                    <span class="normal">Twitter</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="<%= @config[:blog][:feed_url] %>">
-                    <span aria-hidden="true" class="button icon-rss"></span>
-                    <span class="normal">Blog Feed</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-      </section>
-      <div class="bd">
-        <section class="noted aside section">
-          <h2 class="flush normal">About Pentandra</h2>
 
-          <ul class="none">
-            <li><a href="/blog/">The Pentandra Blog</a></li>
-            <li><a href="/company/#sec:mission">Hope for the Future</a></li>
-            <li><a href="/company/#sec:contact">Contact Us</a></li>
-          </ul>
-        </section>
-        <section class="noted inner group">
-          <h2 class="flush normal">Our Mission</h2>
-          <p><%= company[:mission] %></p>
-        </section>
-      </div>
-      <div class="aside section">
-        <h2 class="visuallyhidden">Other Links</h2>
-        <div class="logotype section"></div>
-        <div class="nav">
-          <ul>
-            <li><a href="/research/#sec:future">The Future of Research</a></li>
-            <li><a href="/research/process/">Research <span class="oldstyle">101</span></a></li>
-            <li><a href="/solutions/">Solutions</a></li>
-          </ul>
-        </div>
-      </div>
+      <%= render('/partials/recent-thoughts.*') %>
+
+      <%= render('/partials/about-pentandra.*') %>
+
     </div>
-    <div class="section">
-      <a class="section button backtotop">Back to top</a>
-    </div>
-    <div class="section small">
-      <div class="aside">
-        <div class="section nav">
-          <ul>
-            <li><a href="/search/">Search</a></li>
-            <li><a href="/colophon/">Colophon</a></li>
-            <li><a href="/policy/">Policy</a></li>
-            <li><a href="/company/#donating"><span class="icon-heart"></span> Donate</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="bd">
-        <div class="group" resource="pentandra-website:website" typeof="schema:WebSite">
-          <ul class="none" property="rdfa:copy" resource="#license" typeof="rdfa:Pattern">
-            <li><small>Copyright © <span property="schema:copyrightYear"><span property="doap:created" about="pentandra-website:project" datatype="xsd:date" content="2011-09-28">2011</span></span>--<%= Time.now.year %> <a href="/company/" resource="/company/#company" rel="schema:copyrightHolder schema:publisher" property="cc:attributionName"><%= @config[:vcard][:full_name] %></a></small></li>
-            <li><small>Except <a href="/policy/" property="cc:useGuidelines">where otherwise noted</a>, content on <a href="<%= @config[:base_url] %>" property="cc:attributionURL">this site</a> is licensed under a <a property="cc:license" href="http://creativecommons.org/licenses/by/4.0/"><abbr title="Creative Commons Attribution 4.0 International">CC-BY</abbr> license</a>. <span class="icon-cc"></span> <span class="icon-cc-by"></span></small></li>
-          </ul>
-          <ul class="none" property="schema:isBasedOn" resource="pentandra-website:project" typeof="doap:Project schema:SoftwareSourceCode">
-            <li><span property="doap:repository" resource="pentandra-website:repository" typeof="doap:GitRepository"><a rel="doap:location schema:codeRepository" property="doap:shortdesc" href="<%= @config[:git][:url] %>">Source code for pentandra.com</a> generously <a rel="doap:browse" href="<%= @config[:git][:browse_url] %>">hosted by Github</a></span>, with <span property="doap:release" resource="pentandra-website:release" typeof="doap:Version">this release tagged <span class="tags" property="doap:revision"><a href="<%= "#{@config[:git][:tag_url]}/#{@config[:version]}" %>"><%= @config[:version] %></a></span> and compiled <%= @config[:production] ? render('/partials/generated_at.*', compile_time: DateTime.now) : '[in development mode]' %></span>. Made with <span class="icon-heart"></span> in the <abbr>USA</abbr>.</li>
-          </ul>
-        </div>
-        <link property="rdfa:copy" href="#license" />
-      </div>
-    </div>
+
+    <%= render('/partials/back-to-top.*') %>
+
+    <%= render('/partials/fine-print.*') %>
+
   </div>
 </footer>
