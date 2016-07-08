@@ -1,4 +1,20 @@
 <ul class="none" property="rdfa:copy" resource="#license" typeof="rdfa:Pattern">
-  <li><small>Copyright © <span property="schema:copyrightYear"><span property="doap:created" about="pentandra-website:project" datatype="xsd:date" content="2011-09-28">2011</span></span>--<%= Time.now.year %> <a href="/company/" resource="/company/#company" rel="schema:copyrightHolder schema:publisher" property="cc:attributionName"><%= @config[:vcard][:full_name] %></a></small></li>
-  <li><small>Except <a href="/policy/" property="cc:useGuidelines">where otherwise noted</a>, content on <a href="<%= @config[:base_url] %>" property="cc:attributionURL">this site</a> is licensed under a <a property="cc:license" href="http://creativecommons.org/licenses/by/4.0/"><abbr title="Creative Commons Attribution 4.0 International">CC-BY</abbr> license</a>. <span class="icon-cc"></span> <span class="icon-cc-by"></span></small></li>
+
+  <li>
+    <small>
+      Copyright ©
+      <span property="schema:copyrightYear"><span property="doap:created" about="pentandra-website:project" datatype="xsd:date" content="2011-09-28">2011</span></span>--<%= Time.now.year %>
+      <span property="cc:attributionName"><a href="/company/" resource="pentandra:company" rel="schema:copyrightHolder schema:publisher" typeof="schema:Corporation"><span property="schema:name schema:legalName"><%= @config[:vcard][:full_name] %></span></a></span>
+    </small>
+  </li>
+
+  <li>
+    <small>
+      Except <a href="/policy/" property="cc:useGuidelines">where otherwise noted</a>, content on
+      <a href="<%= @config[:base_url] %>" property="cc:attributionURL">this site</a> is licensed under a
+      <a property="cc:license" href="http://creativecommons.org/licenses/by/4.0/"><abbr title="Creative Commons Attribution 4.0 International">CC-BY</abbr> license</a>.
+      <span class="icon-cc"></span> <span class="icon-cc-by"></span>
+    </small>
+  </li>
+
 </ul>
