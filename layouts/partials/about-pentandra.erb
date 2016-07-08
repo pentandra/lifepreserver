@@ -1,4 +1,4 @@
-<div class="bd">
+<div class="bd" resource="pentandra:company">
   <section class="noted aside section">
     <h2 class="flush normal">About Pentandra</h2>
     <ul class="none">
@@ -7,9 +7,9 @@
       <li><a href="/company/#sec:contact">Contact Us</a></li>
     </ul>
   </section>
-  <section class="noted inner group">
+  <section class="noted inner group" property="fea:hasIntent" resource="pentandra:mission" typeof="fea:Mission">
     <h2 class="flush normal">Our Mission</h2>
-    <p><%= company[:mission] %></p>
+    <p property="fea:description"><%= company[:mission] %></p>
   </section>
 </div>
 <div class="aside section">

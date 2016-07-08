@@ -34,7 +34,7 @@ teammembers:
       Katie loves to solve a good puzzle and thrives on the details. She is
       also our finance and tax geek and actually enjoys it.
 ---
-<div property="foaf:primaryTopic" class="group" prefix="essglobalst: http://purl.org/essglobal/standard/ fea: http://vocab.data.gov/def/fea#" typeof="foaf:Organization essglobal:SSEInitiative fea:Company schema:Corporation" resource="#company">
+<div property="foaf:primaryTopic" class="group" prefix="essglobalst: http://purl.org/essglobal/standard/" typeof="foaf:Organization essglobal:SSEInitiative fea:Company schema:Corporation" resource="pentandra:company">
   <div class="section">
 
     <div class="group holder">
@@ -205,7 +205,7 @@ teammembers:
 
     <div class="bd" property="essglobal:mission">
 
-      <p class="bigger" resource="#mission" property="fea:hasIntent" typeof="fea:Mission"><span property="fea:description"><%= @item[:mission] %></span></p>
+      <p class="bigger" resource="pentandra:mission" property="fea:hasIntent" typeof="fea:Mission"><span property="fea:description"><%= @item[:mission] %></span></p>
       <p>
         
         We hope that the effect of our mission will be to help bring <a
@@ -326,7 +326,7 @@ teammembers:
         </p>
       </div>
     </section>
-    <section id="donating" class="section" property="schema:potentialAction" resource="#donate" typeof="schema:DonateAction">
+    <section id="donating" class="section" property="schema:potentialAction" resource="pentandra:donate" typeof="schema:DonateAction">
       <link property="schema:recipient" href="#company" />
       <div class="bd">
         <h3 class="flush" property="schema:name">Donating</h3>
@@ -351,16 +351,16 @@ teammembers:
 
     <h2>Our Roster</h2>
 
-    <section id="sec:coreteam" class="section" resource="#coreteam" typeof="foaf:Group">
+    <section id="sec:coreteam" class="section" resource="pentandra:coreteam" typeof="foaf:Group">
 
       <h3 property="foaf:name">Core Team</h3>
 
       <% @item[:teammembers].select {|v| v[:member_of] == "Core Team" }.each_with_index do |member, i| %>
-      <section resource="#<%= full_name(member).to_slug %>"
+      <section resource="pentandra:<%= full_name(member).to_slug %>"
         property="foaf:member" typeof="schema:Person foaf:Person"
         id="sec:<%= full_name(member).to_slug %>"
         class="teammember vcard bl<%= i.odd? ? ' ock' : '' %> item">
-        <span rev="schema:employee" resource="#company"></span>
+        <span rev="schema:employee" resource="pentandra:company"></span>
         <link property="foaf:isPrimaryTopicOf" href="#sec:<%= full_name(member).to_slug %>" />
         <div class="group">
           <div class="section aside">
@@ -405,7 +405,7 @@ teammembers:
               <h4 class="big fn flush" property="foaf:name schema:name"><%= full_name(member) %></h4>
               <p class="em small title flush" property="schema:jobTitle"><%= member[:title] %></p>
             </header>
-            <link property="schema:worksFor" href="#company" />
+            <link property="schema:worksFor" href="pentandra:company" />
             <p property="schema:description"><%= member[:summary] %></p>
           </div>
         </div>
@@ -413,8 +413,8 @@ teammembers:
       <% end %>
     </section>
   </section>
-  <footer id="sec:contact" class="group ext grab" resource="#contact" typeof="schema:ContactPage">
-    <div class="wrapper" about="#company">
+  <footer id="sec:contact" class="group ext grab" resource="pentandra:contact" typeof="schema:ContactPage">
+    <div class="wrapper" about="pentandra:company">
       <h2>Give Us A Holler!</h2>
       <div class="bd">
         <aside class="aside section">
