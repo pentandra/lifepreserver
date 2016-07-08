@@ -3,23 +3,31 @@ module Company
   include Nanoc::Helpers::Text
 
   def full_name(member)
-    member[:first_name] + " " + member[:last_name]
+    "#{member[:first_name]} #{member[:last_name]}"
   end
 
   def member_path(member)
-    "/company/#" + full_name(member).to_slug
+    "#{company_path}##{full_name(member).to_slug}"
   end
 
   def member_description_path(member)
-    "/company/#sec:" + full_name(member).to_slug
+    "#{company_path}#sec:#{full_name(member).to_slug}"
   end
 
   def member_image_path(member)
-    "/images/" + full_name(member).to_slug + "-150x150.jpg"
+    "#{images_path}#{full_name(member).to_slug}-150x150.jpg"
   end
 
   def company
     @items["/company/index.*"].attributes
+  end
+
+  def company_path
+    "/company/"
+  end
+
+  def images_path
+    "/images/"
   end
 
   def teammember(author_name)
@@ -35,7 +43,7 @@ module Company
     item_set.each do |item|
       teammember = teammember(item[:author_name]) if item.key?(:author_name)
       if teammember then
-        item[:author_uri] ||= @config[:base_url] + member_description_path(teammember)
+        item[:author_uri] ||= "#{@config[:base_url]}#{member_description_path(teammember)}"
       end
     end
   end
