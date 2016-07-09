@@ -6,10 +6,7 @@ class VcardFilter < Nanoc::Filter
 
   def run(content, params = {})
 
-    # Check attributes
-    if params[:full_name].nil?
-      raise Nanoc::Errors::GenericTrivial.new('Cannot build vCard: the full_name parameter MUST be present')
-    end
+    validate params
 
     # Extract params
     full_name = params[:full_name]
@@ -18,8 +15,8 @@ class VcardFilter < Nanoc::Filter
     last_name = params[:last_name]
     nick_name = params[:nick_name]
     email = params[:email]
-    tel = params.key?(:extension) ? params[:phone] + ";ext=" + params[:extension] : params[:phone]
-    url = params[:url]
+    tel = params.key?(:extension) ? "#{params[:phone]};ext=#{params[:extension]}" : params[:phone]
+    url = params[:url] || @config[:base_url]
     org = params[:org]
     photo_uri = params[:photo_uri]
     logo_uri = params[:logo_uri]
@@ -30,7 +27,7 @@ class VcardFilter < Nanoc::Filter
 
     vcard.fullname(full_name)
 
-    vcard.source(@config[:base_url] + @item_rep.path) if @config[:base_url]
+    vcard.source(@config[:base_url] + @item_rep.path)
 
     if kind == 'individual'
       vcard.name(last_name, first_name)
@@ -50,6 +47,25 @@ class VcardFilter < Nanoc::Filter
     vcard.logo(logo_uri, value: 'uri') unless logo_uri.nil?
 
     vcard.to_s
+  end
+
+  private
+
+  def validate(params)
+    validate_config
+    validate_required_parameters(params)
+  end
+
+  def validate_config
+    if @config[:base_url].nil?
+      raise Nanoc::Errors::GenericTrivial.new('Cannot build vCard: site configuration has no base_url')
+    end
+  end
+
+  def validate_required_parameters(params)
+    if params[:full_name].nil?
+      raise Nanoc::Errors::GenericTrivial.new('Cannot build vCard: the full_name parameter MUST be present')
+    end
   end
 
 end
