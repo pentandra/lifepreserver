@@ -7,27 +7,19 @@ module Company
   end
 
   def member_path(member)
-    "#{company_path}##{full_name(member).to_slug}"
+    "#{@config[:company][:page_url]}/##{full_name(member).to_slug}"
   end
 
   def member_description_path(member)
-    "#{company_path}#sec:#{full_name(member).to_slug}"
+    "#{@config[:company][:page_url]}/#sec:#{full_name(member).to_slug}"
   end
 
   def member_image_path(member)
-    "#{images_path}#{full_name(member).to_slug}-150x150.jpg"
+    "#{@config[:site][:images_url]}/#{full_name(member).to_slug}-150x150.jpg"
   end
 
   def company
     @items["/company/index.*"].attributes
-  end
-
-  def company_path
-    "/company/"
-  end
-
-  def images_path
-    "/images/"
   end
 
   def teammember(author_name)

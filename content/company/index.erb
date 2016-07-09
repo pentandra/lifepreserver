@@ -430,17 +430,17 @@ teammembers:
           <address class="vcard">
             <div property="schema:name schema:legalName" class="fn org"><a
                 property="schema:url foaf:homepage" href="<%= @config[:base_url] %>"
-                ><%= @config[:vcard][:full_name] %></a></div>
+                ><%= @config[:company][:full_name] %></a></div>
             <div property="schema:location" typeof="schema:PostalAddress" class="adr">
               <div><span class="locality"
-                  property="schema:addressLocality"><%= @config[:vcard][:locality] %></span>, <span
+                  property="schema:addressLocality"><%= @config[:company][:locality] %></span>, <span
                   class="region"
-                  property="schema:addressRegion"><%= @config[:vcard][:region] %></span></div>
-              <div property="schema:addressCountry" class="country-name"><%= @config[:vcard][:country] %></div>
+                  property="schema:addressRegion"><%= @config[:company][:region] %></span></div>
+              <div property="schema:addressCountry" class="country-name"><%= @config[:company][:country] %></div>
             </div>
             <div>Phone: <a property="schema:telephone" class="tel"
-                href="tel:<%= @config[:vcard][:phone].gsub(/[\s\.-]+/, "") %>"><%= @config[:vcard][:phone] %></a></div>
-            <div>Email: <a property="schema:email" href="mailto:<%= @config[:vcard][:email] %>"><%= @config[:vcard][:email] %></a></div>
+                href="tel:<%= @config[:company][:phone].gsub(/[\s\.-]+/, "") %>"><%= @config[:company][:phone] %></a></div>
+            <div>Email: <a property="schema:email" href="mailto:<%= @config[:company][:email] %>"><%= @config[:company][:email] %></a></div>
           </address>
           <p>
              We support <a href="http://web.archive.org/web/20120615152553/http://www.ccpact.com/">The Company--Customer Pact</a>.

@@ -106,6 +106,8 @@ site:
   name: Pentandra
   motto: Breaking Research Barriers
   recent_thoughts_limit: 5
+  base_url: *base_url
+  images_url: /images
 
 blog:
   title: The Pentandra Blog
@@ -124,10 +126,9 @@ google_analytics:
   code: UA-26002603-1
   site: pentandra.com
 
-vcard:
+company:
   full_name: Pentandra Research Solutions, Inc.
   nick_name: Pentandra
-  kind: org
   street_address:
   locality: Logan
   region: UT
@@ -136,6 +137,7 @@ vcard:
   phone: +1 435 294 2964
   email: hello@pentandra.com
   url: *base_url
+  page_url: /company
   logo_uri: &logo_uri "https://pentandra.com/images/pentandra-logo.png"
   photo_uri: *logo_uri
 
