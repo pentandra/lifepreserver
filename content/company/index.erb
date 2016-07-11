@@ -405,7 +405,7 @@ teammembers:
               <h4 class="big fn flush" property="foaf:name schema:name"><%= full_name(member) %></h4>
               <p class="em small title flush" property="schema:jobTitle"><%= member[:title] %></p>
             </header>
-            <link property="schema:worksFor" href="pentandra:company" />
+            <link property="schema:worksFor" resource="pentandra:company" />
             <p property="schema:description"><%= member[:summary] %></p>
           </div>
         </div>
