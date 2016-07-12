@@ -9,6 +9,8 @@
       and compiled <%= @config[:production] ? "on #{render('/partials/generated_at.*', compile_time: DateTime.now)}" : '[in development mode]' %></span>.
   </li>
 
-  <li>Made with <span class="icon-heart"></span> in the <abbr>USA</abbr>.</li>
+  <li><a rel="nofollow" href="https://www.w3.org/2012/pyRdfa/extract?uri=<%= "#{@config[:base_url]}#{@item.path}" %>">View this web page as a machine sees it <span class="icon-screen"></span></a>.</li>
 
 </ul>
+
+<p>Made with <span class="icon-heart"><span class="visuallyhidden">love</span></span> in the <abbr>USA</abbr>.</p>
