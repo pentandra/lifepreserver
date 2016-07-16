@@ -205,7 +205,7 @@ var Baseliner = function(options) {
     var parent = document.createElement('div');
     parent.style.position = 'relative';
     parent.style.zIndex = 20000;
-    parent.style.marginTop = '20px';
+    //parent.style.marginTop = '20px';
     
     var action = document.createElement('div');
     action.id = 'overlay-it';
