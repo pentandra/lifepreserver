@@ -1,8 +1,8 @@
 /**
- * A function to overlay a dynamically created baseline grid
+ * An object to overlay a dynamically created baseline grid
  * on a webpage.
  *
- * @version 0.9.8
+ * @version 1.0
  * @author John Keyes <john@keyes.ie>
  * @copyright Copyright (c) 2011, John Keyes
  * @link https://github.com/jkeyes/baseline
@@ -20,17 +20,17 @@ var merge = function(src, dest) {
 /* From jQuery: dimensions.js */
 function getDimension(elem, name) {
   if (elem === window) {
-  	var docElemProp = elem.document.documentElement[ "client" + name ],
-  		body = elem.document.body;
-  	return elem.document.compatMode === "CSS1Compat" && docElemProp ||
-  		body && body[ "client" + name ] || docElemProp;    
+    var docElemProp = elem.document.documentElement[ "client" + name ],
+      body = elem.document.body;
+    return elem.document.compatMode === "CSS1Compat" && docElemProp ||
+      body && body[ "client" + name ] || docElemProp;    
   } else {
     return Math.max(
-				elem.documentElement["client" + name],
-				elem.body["scroll" + name], elem.documentElement["scroll" + name],
-				elem.body["offset" + name], elem.documentElement["offset" + name]
-			);
-	}
+        elem.documentElement["client" + name],
+        elem.body["scroll" + name], elem.documentElement["scroll" + name],
+        elem.body["offset" + name], elem.documentElement["offset" + name]
+      );
+  }
 }
 
 /**
@@ -40,6 +40,7 @@ var Baseliner = function(options) {
   var defaults = {
     'gridColor': [196, 196, 196],
     'gridHeight': 10,
+    'gridOffset': 0,
     'gridOpacity': 100,
     'gridSpace': 1
   }
@@ -75,11 +76,13 @@ var Baseliner = function(options) {
     this.overlay = document.createElement('div');
     this.overlay.id = this.overlay_id;
     document.body.appendChild(this.overlay);
-    this.overlay.style.background =  'url(http://baselinebg.keyes.ie/?h=' + this.opts.gridHeight + '&r=' + this.opts.gridColor[0] + '&g=' + this.opts.gridColor[1] + '&b=' + this.opts.gridColor[2] + '&s=' + this.opts.gridSpace + ') repeat';
+    var svgURL = "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='" + this.opts.gridSpace + "' height='" + this.opts.gridHeight + "'><rect style='fill: " + this.opts.gridColor + ";'  width='1' height='0.25px' x='0' y='" + (this.opts.gridHeight - 1) + "'/></svg>\")";
+    this.overlay.style.backgroundImage = svgURL;
     this.overlay.style.position = 'absolute';
-    this.overlay.style.top = '0px';
+    this.overlay.style.top = this.opts.gridOffset + 'px';
     this.overlay.style.left = '0px';
     this.overlay.style.zIndex = 9998;
+    this.overlay.style.pointerEvents = 'none';
     this.overlay.style.opacity = this.opts.gridOpacity / 100;
     this.resize()
   }
@@ -105,7 +108,7 @@ var Baseliner = function(options) {
   }
   this.refresh = function(value) {
     var value = parseInt(value);
-    if (value == 0 || isNaN(value)) {
+    if (value < 1 || isNaN(value)) {
       this.value = baseliner.opts.gridHeight;
       baseliner.grid_size.style.backgroundColor = "red";
       baseliner.grid_size.style.color = "white";
@@ -120,6 +123,23 @@ var Baseliner = function(options) {
     baseliner.opts.gridHeight = value;
     baseliner.toggle(true);
   }
+  this.refreshOffset = function(value) {
+    var value = parseInt(value);
+    if (value < 0 || isNaN(value)) {
+      this.value = baseliner.opts.gridOffset;
+      baseliner.grid_offset.style.backgroundColor = "red";
+      baseliner.grid_offset.style.color = "white";
+      return;
+    }
+    baseliner.grid_offset.style.backgroundColor = "white";
+    baseliner.grid_offset.style.color = "black";
+    if (baseliner.overlay) {
+      document.body.removeChild(baseliner.overlay);
+      baseliner.overlay = null;
+    }
+    baseliner.opts.gridOffset = value;
+    baseliner.toggle(true);
+  }
 
   init = function() {
     switch(baseliner.opts.gridColor) {
@@ -132,6 +152,8 @@ var Baseliner = function(options) {
       case 'black':
         baseliner.opts.gridColor = [0, 0, 0]; break;
     }
+    // convert the array to rgb
+    baseliner.opts.gridColor = "rgb(" + baseliner.opts.gridColor[0] + "," + baseliner.opts.gridColor[1] + "," + baseliner.opts.gridColor[2] + ")";
 
     var overlay_it = document.createElement('a');
     overlay_it.setAttribute('href', '');
@@ -142,22 +164,43 @@ var Baseliner = function(options) {
     overlay_it.onclick = function(evt) {
       if (!evt) var evt = window.event;
       baseliner.toggle();
-	    evt.cancelBubble = true;
-	    if (evt.stopPropagation) {
-	      evt.stopPropagation();
-	      evt.preventDefault();
-	    }
-	    return false;
+      evt.cancelBubble = true;
+      if (evt.stopPropagation) {
+        evt.stopPropagation();
+        evt.preventDefault();
+      }
+      return false;
     }
     baseliner.overlay_it = overlay_it;
+
+    var grid_size_label = document.createElement('label');
+    grid_size_label.setAttribute('for', 'baseliner-grid-size');
+    grid_size_label.innerText = 'Grid Size: ';
     
     var grid_size = document.createElement('input');
+    grid_size.setAttribute('name', 'baseliner-grid-size');
     grid_size.size = 3;
+    grid_size.type = 'number';
     grid_size.value = baseliner.opts.gridHeight;
     grid_size.style.textAlign = 'center';
     grid_size.style.border = '1px solid #CCC';
     grid_size.style.padding = '1px';
+    grid_size.style.marginRight = '5px';
     baseliner.grid_size = grid_size;
+
+    var grid_offset_label = document.createElement('label');
+    grid_offset_label.setAttribute('for', 'baseliner-grid-size');
+    grid_offset_label.innerText = 'Grid Offset: ';
+
+    var grid_offset = document.createElement('input');
+    grid_offset.setAttribute('name', 'baseliner-grid-size');
+    grid_offset.size = 3;
+    grid_offset.type = 'number';
+    grid_offset.value = baseliner.opts.gridOffset;
+    grid_offset.style.textAlign = 'center';
+    grid_offset.style.border = '1px solid #CCC';
+    grid_offset.style.padding = '1px';
+    baseliner.grid_offset = grid_offset;
 
     var parent = document.createElement('div');
     parent.style.position = 'relative';
@@ -179,7 +222,10 @@ var Baseliner = function(options) {
     action.style.color = '#EEE';
     
     action.appendChild(overlay_it);
+    action.appendChild(grid_size_label);
     action.appendChild(grid_size);
+    action.appendChild(grid_offset_label);
+    action.appendChild(grid_offset);
     parent.appendChild(action);
     document.body.appendChild(parent);
     
@@ -194,10 +240,19 @@ var Baseliner = function(options) {
     
     grid_size.onchange = grid_size.onkeyup = _heightChanged;
 
+    var _offsetChanged = function() {
+      window.clearTimeout(timer);
+      timer = window.setTimeout(function() {
+        baseliner.refreshOffset(grid_offset.value);
+      }, 400);
+    };
+
+    grid_offset.onchange = grid_offset.onkeyup = _offsetChanged;
+
     window.onresize = function() {
       baseliner.resize();
     };
-    document.onkeyup = function(event) {
+    document.onkeyup = function(evt) {
         if (!evt) var evt = window.event;
         var keyCode = evt.keyCode || evt.which;
 
@@ -211,4 +266,3 @@ var Baseliner = function(options) {
   }
   init();
 }
-
