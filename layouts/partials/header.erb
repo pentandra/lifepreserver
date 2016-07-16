@@ -1,11 +1,11 @@
-<!--[if lt IE 7]><p class="grab">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+<%= render('/partials/chromeframe.*') %>
 <header id="banner" class="group">
   <div class="section">
     <div class="content">
 
       <a href="/" class="ir logotype" about="pentandra-website:website" rel="schema:url" property="schema:name"><%= @config[:site][:name] %></a>
 
-      <nav class="menu group" property="schema:hasPart" resource="#mainmenu" typeof="schema:SiteNavigationElement">
+      <nav class="menu group" property="schema:hasPart" resource="pentandra-website:mainmenu" typeof="schema:SiteNavigationElement">
         <ul>
           <li><a href="/solutions/" class="button">Solutions</a></li>
           <li><a href="/research/" class="button">Research</a></li>
