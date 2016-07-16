@@ -1,10 +1,14 @@
-<div class="section small">
+<div class="section small" resource="pentandra-website:website" typeof="schema:WebSite">
 
   <div class="aside">
     <h2 class="visuallyhidden">Other Links</h2>
     <div class="nav">
       <ul>
-        <li><a href="/search/">Search</a></li>
+        <li property="schema:potentialAction" resource="pentandra-website:search" typeof="schema:SearchAction">
+          <meta property="schema:target" content="<%= "#{@config[:base_url]}#{@config[:site][:search_url]}/?q={search_term_string}" %>"/>
+          <meta property="schema:query-input" content="required name=search_term_string"/>
+          <a property="schema:url" href="<%= "#{@config[:site][:search_url]}/" %>">Search</a>
+        </li>
         <li><a href="/colophon/">Colophon</a></li>
         <li><a href="/policy/">Policy</a></li>
         <li><a href="/company/#donating"><span class="icon-heart"></span> Donate</a></li>
@@ -13,13 +17,11 @@
   </div>
 
   <div class="bd">
-    <div class="group" resource="pentandra-website:website" typeof="schema:WebSite">
 
-      <%= render('/partials/license.*') %>
+    <%= render('/partials/license.*') %>
 
-      <%= render('/partials/source-code.*') %>
+    <%= render('/partials/source-code.*') %>
 
-    </div>
-    <link property="rdfa:copy" href="#license" />
   </div>
 </div>
+<link property="rdfa:copy" href="#license" />

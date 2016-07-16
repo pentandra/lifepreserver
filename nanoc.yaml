@@ -108,6 +108,7 @@ site:
   recent_thoughts_limit: 5
   base_url: *base_url
   images_url: /images
+  search_url: /search
 
 blog:
   title: The Pentandra Blog
