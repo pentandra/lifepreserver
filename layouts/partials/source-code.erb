@@ -9,7 +9,9 @@
       and compiled <%= @config[:production] ? "on #{render('/partials/generated_at.*', compile_time: DateTime.now)}" : '[in development mode]' %></span>.
   </li>
 
-  <li><a rel="nofollow" href="https://www.w3.org/2012/pyRdfa/extract?uri=<%= "#{@config[:base_url]}#{@item.path}" %>">View this web page as a machine sees it <span class="icon-screen"></span></a>.</li>
+  <li>
+    <a rel="nofollow" href="https://www.w3.org/2012/pyRdfa/extract?uri=<%= "#{@config[:base_url]}#{@item.path}" %>"><span class="icon-screen"></span> View this web page as a machine sees it.</a>
+  </li>
 
 </ul>
 
