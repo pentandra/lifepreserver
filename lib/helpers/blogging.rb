@@ -1,5 +1,3 @@
-require 'uri'
-
 module Nanoc::Helpers
 
   module Blogging
@@ -112,13 +110,8 @@ module Nanoc::Helpers
       end
     end
 
-    def sharer_for(item)
-      url = shorten(url_for(item))
-      text = URI.escape(item[:title])
-      desc = URI.escape(item[:description]) if item.key?(:description)
-      tags = URI.escape(Array(item[:tags]).join(','))
-
-      { url: url, text: text, desc: desc, tags: tags }
+    def short_url_for(item)
+      shorten(url_for(item))
     end
 
   end

@@ -1,79 +1,78 @@
-    <aside class="aside">
-      <h2 class="visuallyhidden">Meta</h2>
+<aside class="aside">
+  <h2 class="visuallyhidden">Meta</h2>
 
-      <p class="big p-summary em banner" property="dc:description schema:description">
-        <%= @item[:description] %>
-      </p>
+  <p class="big p-summary em banner" property="dc:description schema:description">
+    <%= @item[:description] %>
+  </p>
 
-      <% author = teammember(@item[:author_name]) %>
-      <section class="section banner" resource="<%= member_path(author) %>" typeof="dc:Agent schema:Person foaf:Person" property="dc:creator schema:author foaf:maker">
-        <h3 class="big">The Author</h3>
-        <figure id="author">
-          <img class="photo framed" src="<%= member_image_path(author) %>" alt="Photo of <%= full_name(author) %>" property="schema:image foaf:img" />
-          <figcaption class="small nav">
-            <h4 class="normal shaved" property="rdfs:label schema:name foaf:name"><a href="<%= member_description_path(author) %>" property="schema:url" class="subtle"><%= full_name(author) %></a></h4>
-            <p class="small em flush" property="schema:jobTitle"><%= author[:title] %></p>
-          </figcaption>
-        </figure>
-        <link property="schema:worksFor" resource="pentandra:company" />
-      </section>
-      <section class="grab banner section">
-        <div class="fancy wrapper group pod">
-          <h3 class="big">Share</h3>
-          <div class="menu nav section icons big" id="share">
-            <% sharer = sharer_for(@item) %>
-            <ul class="centered">
-              <li>
-                <a href="https://plus.google.com/share?url=<%= sharer[:url] %>" title="Share this article on Google+">
-                  <span aria-hidden="true" class="button icon-googleplus"></span>
-                  <span class="visuallyhidden">Share on Google+</span>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.facebook.com/sharer/sharer.php?u=<%= sharer[:url] %>" title="Share this article on Facebook">
-                  <span aria-hidden="true" class="button icon-facebook"></span>
-                  <span class="visuallyhidden">Share on Facebook</span>
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/share?url=<%=sharer[:url] %>&amp;text=<%= sharer[:text] %>&amp;via=<%= company[:twitter] %>&amp;hashtags=<%= sharer[:tags] %>&amp;related=pentandrainc,geungle" title="Share this article on Twitter">
-                  <span aria-hidden="true" class="button icon-twitter"></span>
-                  <span class="visuallyhidden">Share on Twitter</span>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=<%= sharer[:url] %>&amp;title=<%= sharer[:text] %>&amp;summary=<%= sharer[:desc] %>&amp;source=pentandra.com" title="Share this article on LinkedIn">
-                  <span aria-hidden="true" class="button icon-linkedin"></span>
-                  <span class="visuallyhidden">Share on LinkedIn</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <nav class="section banner">
-        <h3 class="big">Tags</h3>
-        <ul class="tags">
-          <% [*@item[:tags]].each do |tag| %>
-          <li><%= link_for_tag(tag) %></li>
-          <% end %>
+  <% author = teammember(@item[:author_name]) %>
+  <section class="section banner" resource="<%= member_path(author) %>" typeof="dc:Agent schema:Person foaf:Person" property="dc:creator schema:author foaf:maker">
+    <h3 class="big">The Author</h3>
+    <figure id="author">
+      <img class="photo framed" src="<%= member_image_path(author) %>" alt="Photo of <%= full_name(author) %>" property="schema:image foaf:img" />
+      <figcaption class="small nav">
+        <h4 class="normal shaved" property="rdfs:label schema:name foaf:name"><a href="<%= member_description_path(author) %>" property="schema:url" class="subtle"><%= full_name(author) %></a></h4>
+        <p class="small em flush" property="schema:jobTitle"><%= author[:title] %></p>
+      </figcaption>
+    </figure>
+    <link property="schema:worksFor" resource="pentandra:company" />
+  </section>
+  <section class="grab banner section">
+    <div class="fancy wrapper group pod">
+      <h3 class="big">Share</h3>
+      <div class="menu nav section icons big" id="share">
+        <ul class="centered">
+          <li>
+            <a href="<%= %[https://plus.google.com/share?url=#{short_url_for(@item)}] %>" title="Share this article on Google+">
+              <span aria-hidden="true" class="button icon-googleplus"></span>
+              <span class="visuallyhidden">Share on Google+</span>
+            </a>
+          </li>
+          <li>
+            <a href="<%= %[https://www.facebook.com/sharer/sharer.php?u=#{short_url_for(@item)}] %>" title="Share this article on Facebook">
+              <span aria-hidden="true" class="button icon-facebook"></span>
+              <span class="visuallyhidden">Share on Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a href="<%= %[https://twitter.com/share?url=#{short_url_for(@item)}&amp;text=#{u @item[:title]}&amp;via=#{company[:twitter]}&amp;hashtags=#{u Array(@item[:tags]).join(',')}] %>" title="Share this article on Twitter">
+              <span aria-hidden="true" class="button icon-twitter"></span>
+              <span class="visuallyhidden">Share on Twitter</span>
+            </a>
+          </li>
+          <li>
+            <a href="<%= %[https://www.linkedin.com/shareArticle?mini=true&amp;url=#{short_url_for(@item)}&amp;title=#{u @item[:title]}&amp;summary=#{u @item[:description] if @item.key?(:description)}&amp;source=pentandra.com] %>" title="Share this article on LinkedIn">
+              <span aria-hidden="true" class="button icon-linkedin"></span>
+              <span class="visuallyhidden">Share on LinkedIn</span>
+            </a>
+          </li>
         </ul>
-      </nav>
-      <div class="section banner permalinks">
-        <h3 class="big">Permalinks</h3>
-        <form action="<%= url_for(@item) %>">
-          <div>
-            <label>
-              URL:
-              <input readonly="readonly" class="bookmark u-uid u-url" type="url" value="<%= url_for(@item) %>">
-            </label>
-          </div>
-          <div>
-            <label>
-              HTML:
-              <input readonly="readonly" type="text" value="<%= h %(<cite class="h-cite"><a class="u-url p-name" href="#{url_for(@item)}">#{@item[:title]}</a> (<abbr class="p-author h-card" title="#{@item[:author_name]}">#{author[:last_name]}</abbr> <time class="dt-published">#{attribute_to_time(@item[:created_at]).strftime('%F')}</time>)</cite>) %>">
-            </label>
-          </div>
-        </form>
       </div>
-    </aside>
+    </div>
+  </section>
+  <nav class="section banner">
+    <h3 class="big">Tags</h3>
+    <ul class="tags">
+      <% [*@item[:tags]].each do |tag| %>
+      <li><%= link_for_tag(tag) %></li>
+      <% end %>
+    </ul>
+  </nav>
+  <div class="section banner permalinks">
+    <h3 class="big">Permalinks</h3>
+    <form action="<%= url_for(@item) %>">
+      <div>
+        <label>
+          URL:
+          <input readonly="readonly" class="bookmark u-uid u-url" type="url" value="<%= url_for(@item) %>">
+        </label>
+      </div>
+      <div>
+        <label>
+          HTML:
+          <input readonly="readonly" type="text" value="<%= h %(<cite class="h-cite"><a class="u-url p-name" href="#{url_for(@item)}">#{@item[:title]}</a> (<abbr class="p-author h-card" title="#{@item[:author_name]}">#{author[:last_name]}</abbr> <time class="dt-published">#{attribute_to_time(@item[:created_at]).strftime('%F')}</time>)</cite>) %>">
+        </label>
+      </div>
+    </form>
+  </div>
+</aside>
