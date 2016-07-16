@@ -184,7 +184,7 @@ of the World</cite>
     <img property="schema:thumbnail" class="static retina" src="printing_press_620x442.jpg" alt="An 18th-century reconstructed Gutenberg-style printing press" />
   </a>
   <figcaption class="small"><span property="schema:description"><b property="schema:name dc:title">A Gutenberg-style printing press</b>, inside the Book Workshop of La Maison Fusier, located in the town of Ferney-Voltaire, France. Printing presses like these made the mass dissemination of knowledge possible.</span></figcaption>
-  <link property="rdfa:copy" href="#license" />
+  <link property="rdfa:copy" resource="pentandra-website:license" />
 </figure>
 
 ### The Modern Open Access Movement
@@ -963,7 +963,7 @@ at the technology that was available for scientific publications during the
 metaphor for how to proceed in the future.
 
 <figure id="fig:movable-type" class="img" property="schema:image" resource="#movable_type" typeof="schema:ImageObject">
-  <link property="rdfa:copy" href="#license" />
+  <link property="rdfa:copy" resource="pentandra-website:license" />
   <a property="schema:contentUrl" href="movable_type_in_typecase.jpg">
     <img property="schema:thumbnail" class="retina static" src="movable_type_in_typecase_620x442.jpg" alt="Movable type" />
   </a>
