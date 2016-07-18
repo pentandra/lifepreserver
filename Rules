@@ -187,7 +187,6 @@ compile '/blog/index.erb' do
   filter :cache_buster
   filter :rubypantsunicode
   filter :html5small if @config[:production]
-  write item.identifier.without_ext + '.html'
 end
 
 # Blog feeds
@@ -204,7 +203,6 @@ compile '/{tags,authors,archives}/**/*' do
   filter :cache_buster
   filter :rubypantsunicode
   filter :html5small if @config[:production]
-  write item.identifier.without_ext + '.html'
 end
 
 # Blog posts
@@ -222,7 +220,6 @@ compile '/blog/**/*.{md,mmd}' do
   filter :cache_buster
   filter :rubypantsunicode
   filter :html5small if @config[:production]
-  write item.identifier.without_ext + '.html'
 end
 
 # Passthrough
