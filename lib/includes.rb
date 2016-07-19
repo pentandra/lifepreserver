@@ -13,3 +13,4 @@ include Company
 include UrlShortener
 include Search
 include Functional
+include Breadcrumbs

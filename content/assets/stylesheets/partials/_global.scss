@@ -451,6 +451,10 @@ input.button {
   &.square li + li:before {
     content: " ■ ";
   }
+
+  &.rarrow li + li:before {
+    content: " ▶ ";
+  }
 }
 
 .lt-ie8 .menu li {
