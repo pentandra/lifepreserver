@@ -1,0 +1,14 @@
+<ul class="none" property="schema:isBasedOn" resource="pentandra-specifications:project" typeof="doap:Project">
+
+  <li>
+    <span property="doap:repository" resource="pentandra-specifications:repository" typeof="doap:GitRepository schema:SoftwareSourceCode">
+      <a rel="doap:location schema:codeRepository" property="schema:name doap:shortdesc" href="<%= @config[:spec][:git_url] %>">Source code for these specifications</a>
+      generously <a rel="doap:browse schema:url" href="<%= @config[:spec][:browse_url] %>">hosted by Github</a></span>,
+    with <span property="doap:release" resource="pentandra-specifications:release" typeof="doap:Version">this release tagged as
+      <span class="tags" property="doap:revision"><a href="<%= "#{@config[:git][:tag_url]}/#{@config[:version]}" %>"><%= @config[:version] %></a></span>
+      and compiled <%= @config[:production] ? "on #{render('/partials/generated_at.*', compile_time: DateTime.now)}" : '[in development mode]' %></span>.
+  </li>
+
+</ul>
+
+<p>Made with <span class="icon-heart"><span class="visuallyhidden">love</span></span> in the <abbr>USA</abbr>.</p>
