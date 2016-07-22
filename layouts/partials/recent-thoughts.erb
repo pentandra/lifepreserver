@@ -2,6 +2,9 @@
   <div class="aside">
     <h2 class="close normal">Recent Thoughts</h2>
   </div>
+
   <%= render('/blog/partials/latest-articles.*', limit: @config[:site][:recent_thoughts_limit]) %>
+  
   <%= render('/partials/social-media-links.*') %>
+
 </section>
