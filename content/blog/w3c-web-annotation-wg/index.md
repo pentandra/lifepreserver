@@ -123,7 +123,7 @@ means for genealogy. Bring on the Web!
 {: .conclusion }
 
 <figure typeof="schema:ImageObject" property="schema:image" resource="#infographic" class="section">
-  <link property="schema:representativeOfPage" href="schema:True" />
+  <link property="schema:representativeOfPage" resource="schema:True" />
   <div class="embed-container wideScreen"> 
     <iframe property="schema:contentUrl" src="annotation-architecture.svg" class="simple static"></iframe>
   </div>

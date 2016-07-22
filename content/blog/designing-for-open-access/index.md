@@ -36,7 +36,7 @@ we are building our ideas and company.
 ---
 
 <div property="schema:image" typeof="schema:ImageObject" class="aside img">
-  <link property="schema:representativeOfPage" href="schema:True" />
+  <link property="schema:representativeOfPage" resource="schema:True" />
   <img property="schema:contentUrl" class="static" alt="Open Access logo" data-no-retina src="open_access.jpg" />
 </div>
 
