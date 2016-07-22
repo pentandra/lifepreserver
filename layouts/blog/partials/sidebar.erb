@@ -53,7 +53,7 @@
   <nav class="section banner">
     <h3 class="big">Tags</h3>
     <ul class="tags">
-      <% [*@item[:tags]].each do |tag| %>
+      <% Array(@item[:tags]).each do |tag| %>
       <li><%= link_for_tag(tag) %></li>
       <% end %>
     </ul>
