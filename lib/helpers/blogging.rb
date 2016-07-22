@@ -114,6 +114,10 @@ module Nanoc::Helpers
       shorten(url_for(item))
     end
 
+    def blog_post?(item)
+      item[:kind] == 'article' && item.identifier =~ /^\/blog/
+    end
+
   end
 
 end
