@@ -93,7 +93,7 @@ end
 # Aggregated JavaScript scripts
  
 compile '/assets/scripts/*.js.erb' do
-  filter :erb
+  filter :erb, trim_mode: '>'
   filter :uglify_js if @config[:production]
   write '/js/' + File.basename(@item.identifier.without_exts + fingerprint(@item[:filename]) + '.js')
 end
@@ -195,7 +195,7 @@ end
 # Blog index
 
 compile '/blog/index.erb' do
-  filter :erb
+  filter :erb, trim_mode: '>'
   layout '/blog/default.*'
   filter :cache_buster
   filter :rubypantsunicode
@@ -212,7 +212,7 @@ end
 # Blog tags, authors, and archives
 
 compile '/{tags,authors,archives}/**/*' do
-  filter :erb
+  filter :erb, trim_mode: '>'
   filter :cache_buster
   filter :rubypantsunicode
   filter :html5small if @config[:production]
@@ -221,7 +221,7 @@ end
 # Blog posts
 
 compile '/blog/**/*.{md,mmd}' do
-  filter :erb
+  filter :erb, trim_mode: '>'
   if 'mmd' == @item[:extension]
   else # assume Markdown
     filter :kramdown, @config[:kramdown]
@@ -243,7 +243,7 @@ passthrough '/robots.txt'
 # HTML, ERB, and Markdown files
 
 compile '/**/*.erb' do
-  filter :erb
+  filter :erb, trim_mode: '>'
   filter :spellchecker unless @config[:production]
   layout '/default.*'
   filter :cache_buster
@@ -278,4 +278,4 @@ route '/**/*' do
   item.identifier.to_s
 end
 
-layout '/**/*', :erb
+layout '/**/*', :erb, trim_mode: '>'
