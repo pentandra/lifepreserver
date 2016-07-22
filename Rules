@@ -154,6 +154,8 @@ end
 
 # Specification documents (N3)
 
+ignore '/spec/README.*'
+
 compile '/spec/**/*.ttl', rep: :jsonld do
   filter :rdf_distiller, in: :ttl, out: :jsonld
   write item.identifier.without_ext + '.jsonld'
@@ -164,7 +166,18 @@ compile '/spec/**/*.ttl', rep: :rdfxml do
   write item.identifier.without_ext + '.rdf'
 end
 
-passthrough '/spec/**/*'
+compile '/spec/**/*.md' do
+  filter :kramdown, @config[:kramdown]
+  filter :colorize_syntax, default_colorizer: :pygmentize, pygmentize: { nowrap: 'True' }
+  filter :spellchecker unless @config[:production]
+  layout '/spec/default.*'
+  filter :cache_buster
+  filter :rubypantsunicode
+  filter :html5small if @config[:production]
+end
+
+passthrough '/spec/**/*.html'
+passthrough '/spec/LICENSE'
 
 # vcard and QR code
 
