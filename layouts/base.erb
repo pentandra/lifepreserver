@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-  <head>
+  <head prefix="article: http://ogp.me/ns/article# og: http://ogp.me/ns# profile: http://ogp.me/ns/profile#">
 
     <meta charset="utf-8" />
     <title><%= @item[:title] %> ← <%= @config[:site][:name] %></title>
@@ -13,6 +13,8 @@
 
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <%= render('/partials/opengraph.*') %>
 
     <script src="/js/modernizr.custom.40730.js"></script>
 
