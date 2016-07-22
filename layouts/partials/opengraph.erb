@@ -2,10 +2,12 @@
 <meta property="og:description" content="<%= @item[:description] %>" />
 <meta property="og:site_name" content="<%= @config[:site][:name] %>" />
 <meta property="og:url" content="<%= "#{@config[:base_url]}#{@item.path}" %>" />
+<meta property="og:locale" content="en_US" />
 <% if @item[:kind] ==  'article' then %>
   <meta property="og:type" content="article" />
-  <meta property="article:published_time" content="<%= attribute_to_time(@item[:created_at]).iso8601 %>" />
-  <meta property="article:modified_time" content="<%= attribute_to_time(@item[:updated_at]).iso8601 %>" />
+  <meta property="article:published_time" content="<%= attribute_to_time(@item[:created_at]).strftime('%F') %>" />
+  <meta property="article:modified_time" content="<%= attribute_to_time(@item[:updated_at]).strftime('%F') %>" />
+  <meta property="article:section" content="<%= config[:blog][:title] %>" />
   <%# TODO: article:author %>
   <% Array(@item[:tags]).each do |tag| %>
     <meta property="article:tag" content="<%= h tag %>" />
