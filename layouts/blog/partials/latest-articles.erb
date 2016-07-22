@@ -1,10 +1,13 @@
-<section class="section">
+<section class="section" resource="pentandra-website:latest-articles" typeof="schema:ItemList">
   <h3 class="visuallyhidden">Latest Articles</h3>
   <div class="bd">
-    <% published_articles.first(limit).each do |post| %>
-    <article class="excerpt">
-      <a href="<%= post.path  %>" rel="bookmark">
-        <time class="small bold" datetime="<%= attribute_to_time(post[:created_at]).strftime('%F') %>"><%= date_for(post) %></time>&#8194;<h3 class="normal"><%= h post[:short_title] || post[:title] %></h3>
+    <link property="schema:itemListOrder" resource="schema:itemListOrderDescending" />
+    <meta property="schema:numberOfItems" content="<%= h limit %>" />
+    <% published_articles.first(limit).each_with_index do |post, index| %>
+    <article class="excerpt" property="schema:itemListElement" typeof="schema:ListItem">
+      <meta property="schema:position" content="<%= "#{index + 1}" %>"/>
+      <a href="<%= post.path  %>" rel="bookmark" property="schema:item" typeof="schema:WebPage">
+        <time class="small bold" datetime="<%= attribute_to_time(post[:created_at]).strftime('%F') %>"><%= date_for(post) %></time>&#8194;<h3 class="normal" property="schema:name"><%= h post[:short_title] || post[:title] %></h3>
       </a>
     </article>
     <% end %>
