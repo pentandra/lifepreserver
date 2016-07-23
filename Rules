@@ -74,7 +74,7 @@ preprocess do
       when 'html'
         doc = Nokogiri::HTML(File.open(item[:filename]))
         item[:title] = doc.title
-        item[:description] = doc.xpath('//meta[@name="description"]/@content').map(&:value)
+        item[:description] = doc.xpath('//meta[@name="description"]/@content').map(&:value).first
       else
         item[:is_hidden_from_human_search] = true
       end
