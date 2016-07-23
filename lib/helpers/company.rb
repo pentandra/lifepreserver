@@ -7,7 +7,7 @@ module Company
   end
 
   def member_path(member)
-    "#{@config[:company][:page_url]}/##{full_name(member).to_slug}"
+    "#{@config[:company][:page_url]}##{full_name(member).to_slug}"
   end
 
   def member_description_path(member)
