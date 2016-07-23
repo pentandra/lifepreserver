@@ -72,7 +72,7 @@ disciplines, gender, and geographic locations around the globe.
   <a property="schema:contentUrl" href="Demographic%20breakdown%20SCWG%20workshop%201.png">
     <img property="schema:thumbnail" class="static retina" src="Demographic%20breakdown%20SCWG%20workshop%201%20620x364.png" alt="Figure 1" />
   </a>
-  <link property="schema:representativeOfPage" href="schema:False" />
+  <link property="schema:representativeOfPage" resource="schema:False" />
   <figcaption class="small"><b>Figure 1.</b> Demographic breakdown of attendees depicted through donut charts. By stakeholder group: Research=43%, Libraries and Education=15%, Publishing=13%, Repositories=9%, Advocacy Community=7%, Scholarly Communication Organizations=7%, Funding Organizations=4%, Non-profit=2%. By discipline: Life Sciences=28%, Social Sciences and Economics=17%, Information Science=15%, Multidisciplinary=15%, Arts and Humanities=7%, Physical Sciences=7%, Computer Sciences and Engineering=4%, Medicine=4%, Law=2%. By geographic location: North America=50%, Western and Northern Europe=30%, Africa=7%, Asia=4%, Eastern Europe=4%, Latin America=4%. By gender: Male=50%, Female=50%. By career level: Early Career=39%, Senior=35%, Mid-Career=22%, Student=4%.</figcaption>
 </figure>
 
