@@ -5,13 +5,13 @@
       <div class="group meta">
         <div class="bd up">
           <div>
-            Written <time class="dt-published" property="dc:created schema:datePublished" datetime="<%= @item[:created_at].strftime('%F') %>"><%= @item[:created_at].strftime("%B %d, %Y") %></time>
+            Written <time class="dt-published" property="dc:created schema:datePublished" datetime="<%= simple_date(@item[:created_at]) %>"><%= fancy_date(@item[:created_at]) %></time>
             by
             <%= link_for_author(@item[:author_name]) %>
           </div>
           <% if @item[:updated_at] > @item[:created_at] then %>
             <div>
-              Last Updated <time class="dt-updated" property="dc:modified schema:dateModified" datetime="<%= @item[:updated_at].strftime('%F') %>"><%= @item[:updated_at].strftime("%B %d, %Y") %></time>
+              Last Updated <time class="dt-updated" property="dc:modified schema:dateModified" datetime="<%= simple_date(@item[:updated_at]) %>"><%= fancy_date(@item[:updated_at]) %></time>
             </div>
           <% end %>
           <meta property="schema:copyrightYear" datatype="xsd:gYear" content="<%= @item[:created_at].year %>" />

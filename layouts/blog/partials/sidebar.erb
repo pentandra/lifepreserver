@@ -70,7 +70,7 @@
       <div>
         <label>
           HTML:
-          <input readonly="readonly" type="text" value="<%= h %[<cite class="h-cite"><a class="u-url p-name" href="#{url_for(@item)}">#{@item[:title]}</a> (<abbr class="p-author h-card" title="#{@item[:author_name]}">#{author[:last_name]}</abbr> <time class="dt-published">#{@item[:created_at].strftime('%F')}</time>)</cite>] %>">
+          <input readonly="readonly" type="text" value="<%= h %[<cite class="h-cite"><a class="u-url p-name" href="#{url_for(@item)}">#{@item[:title]}</a> (<abbr class="p-author h-card" title="#{@item[:author_name]}">#{author[:last_name]}</abbr> <time class="dt-published">#{date_for(@item)}</time>)</cite>] %>">
         </label>
       </div>
     </form>

@@ -5,8 +5,8 @@
 <meta property="og:locale" content="en_US" />
 <% if blog_post?(@item) %>
   <meta property="og:type" content="article" />
-  <meta property="article:published_time" content="<%= @item[:created_at].strftime('%F') %>" />
-  <meta property="article:modified_time" content="<%= @item[:updated_at].strftime('%F') %>" />
+  <meta property="article:published_time" content="<%= h simple_date(@item[:created_at]) %>" />
+  <meta property="article:modified_time" content="<%= h simple_date(@item[:updated_at]) %>" />
   <%# TODO: article:author %>
   <% Array(@item[:tags]).each do |tag| %>
     <meta property="article:tag" content="<%= h tag %>" />

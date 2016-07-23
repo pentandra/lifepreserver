@@ -48,8 +48,16 @@ module Nanoc::Helpers
       years.to_a
     end
 
-    def date_for(article)
-      ndashed(article[:created_at].strftime('%F'))
+    def date_for(item)
+      simple_date(item[:created_at])
+    end
+
+    def simple_date(date)
+      attribute_to_time(date).strftime('%F')
+    end
+
+    def fancy_date(date)
+      attribute_to_time(date).strftime('%B %d, %Y')
     end
 
     # Nanoc helper to display blog post summary and a link to the full post.
