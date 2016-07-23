@@ -3,7 +3,7 @@
     <h2 class="bigger">
       <a property="schema:url" rel="bookmark" title="Full article" href="<%= item.path %>"><span property="dc:title schema:name"><%= item[:title] %></span></a>
     </h2>
-    <p><%= @item[:description] %></p>
+    <p property="schema:description"><%= item[:description] %></p>
   </div>
   <%= render('/blog/partials/created_on.*') %>
   <link property="schema:isPartOf" resource="pentandra-blog:blog" />
