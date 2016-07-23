@@ -1,8 +1,8 @@
-<section class="section" resource="pentandra-website:latest-articles" typeof="schema:ItemList">
+<section class="section" resource="pentandra-blog:latest-articles" typeof="schema:ItemList">
   <h3 class="visuallyhidden">Latest Articles</h3>
   <div class="bd">
     <link property="schema:itemListOrder" resource="schema:itemListOrderDescending" />
-    <meta property="schema:numberOfItems" content="<%= h limit %>" />
+    <meta property="schema:numberOfItems" content="<%= h limit %>" datatype="schema:Integer" />
     <% published_articles.first(limit).each_with_index do |post, index| %>
     <article class="excerpt" property="schema:itemListElement" typeof="schema:ListItem">
       <meta property="schema:position" content="<%= "#{index + 1}" %>"/>
