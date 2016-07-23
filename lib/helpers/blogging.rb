@@ -49,7 +49,7 @@ module Nanoc::Helpers
     end
 
     def date_for(article)
-      ndashed(attribute_to_time(article[:created_at]).strftime('%F'))
+      ndashed(article[:created_at].strftime('%F'))
     end
 
     # Nanoc helper to display blog post summary and a link to the full post.
