@@ -15,14 +15,18 @@ tags:
   - Phil Trans
 ---
 
-<figure about="<%= url_for(@item) %>Julia-domna.jpg" class="aside img">
-  <img src="Julia-domna.jpg" alt="Coin of Julia Domna I" class="static" />
+<figure property="schema:image" id="fig:julia-domna" resource="#julia_domna" class="aside img" typeof="schema:ImageObject">
+  <link property="schema:representativeOfPage" resource="schema:True" />
+  <meta property="schema:width" content="399 px" datatype="schema:Distance" />
+  <meta property="schema:height" content="395 px" datatype="schema:Distance" />
+  <img property="schema:contentUrl" src="Julia-domna.jpg" alt="Coin of Julia Domna I" data-no-retina class="static" />
   <figcaption class="small">
-    This image, entitled <span property="dc:title">Coin of Julia Domna</span>,
+    This image, entitled <a href="https://commons.wikimedia.org/wiki/File:Julia-domna.jpg" rel="prov:wasDerivedFrom" property="schema:name dc:title">Coin of Julia Domna</a>,
     by
     <a href="http://en.wikipedia.org/wiki/User:Rasiel" property="cc:attributionName" rel="cc:attributionURL dc:creator">Rasiel Suarez</a>
     is licensed under a
     <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><abbr>CC-BY-SA</abbr> license</a>.
+    <span class="icon-cc"></span><span class="icon-cc-by"></span><span class="icon-cc-sa"></span>
   </figcaption>
 </figure>
 
