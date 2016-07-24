@@ -2,9 +2,6 @@ module Nanoc::Helpers
 
   module LinkTo
 
-    require 'nanoc/helpers/html_escape'
-    include Nanoc::Helpers::HTMLEscape
-
     # Returns the absolute path for the given path or item representation. The
     # returned path will not be HTML-escaped. The `:base_url` from the site
     # configuration is used in assembling the path.
