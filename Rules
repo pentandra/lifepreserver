@@ -203,7 +203,7 @@ end
 
 # Blog index
 
-compile '/blog/index.erb' do
+compile '/blog/{index,recent}.erb' do
   filter :erb, trim_mode: '>'
   layout '/blog/default.*'
   filter :cache_buster

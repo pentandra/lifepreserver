@@ -7,9 +7,7 @@ is_hidden: true
   <h1>Recent Thoughts</h1>
 
   <% published_articles[0, 10].each do |article| %>
-    <%= render('/blog/partials/excerpt.*', :item => article) %>
+    <%= render('/blog/partials/excerpt.*', item: article) %>
   <% end %>
-
-  <%= render '/blog/partials/meta.*' %>
 
 </div>
