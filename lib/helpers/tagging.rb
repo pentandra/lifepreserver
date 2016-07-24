@@ -93,7 +93,7 @@ module Nanoc::Helpers
       end
     end
 
-    # Same as link_for_tag, but does not include the 'rel' attribute.
+    # Same as link_for_tag, but does not include the `@rel` attribute.
     #
     # To conform with the HTML5 rel="tag" specification, the rel attribute
     # should apply only to the current document. A tag cloud, by definition,
@@ -124,8 +124,8 @@ module Nanoc::Helpers
     def generate_tag_pages(item_set)
       count_tags(item_set).each do |tag, count|
         @items.create(
-          "<%= render('/blog/tag.*', tag: '#{tag}', semantic_tag: SEMANTIC_TAGS['#{tag}']) %>",
-          { title: "Tag: #{tag}", kind: 'tag-page', count: count, is_hidden: true, description: "All posts having to do with the tag '#{tag}'" },
+          %[<%= render("/blog/tag.*", tag: "#{tag}", semantic_tag: SEMANTIC_TAGS["#{tag}"]) %>],
+          { title: "Tag: #{tag}", kind: "tag-page", count: count, is_hidden: true, description: "All posts having to do with the tag '#{tag}'" },
           "#{@config[:blog][:tags_url]}/#{tag.to_slug}/index.erb",
           binary: false
         )

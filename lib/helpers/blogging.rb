@@ -67,9 +67,9 @@ module Nanoc::Helpers
     #
     # @example Put the following in your layout:
     #
-    #    <%= article_summary(item,'Read the full article>>') %>
+    #    <%= article_summary(item, "Read the full article>>") %>
     #
-    # To customize the link text you can add 'read_more' attribute to your
+    # To customize the link text you can add `read_more` attribute to your
     # item metadata or pass the string to the helper, as above.
     #
     # Add <!--MORE--> separator somewhere in your item to split it. Otherwise
@@ -77,14 +77,14 @@ module Nanoc::Helpers
     #
     # @param [String] item The blog post
     #
-    # @param [String] read_more_text The 'Read more →' text
+    # @param [String] read_more_text The "Read more →" text
     #
     # @param [String] separator Separates item summary from item body. Defaults to <!--MORE-->
     #
     def article_summary(article, read_more_text="Read more ⇢", separator="<!--MORE-->")
       summary,body = article.compiled_content.split(separator)
       return article.compiled_content unless body
-      link = link_to( (article[:read_more] || read_more_text), article.path, class: 'readmore', title: "Read the full article" )
+      link = link_to( (article[:read_more] || read_more_text), article.path, class: "readmore", title: "Read the full article" )
       return summary + "<p class=\"readmore\">#{link}</p>"
     end
 
@@ -96,8 +96,8 @@ module Nanoc::Helpers
     def generate_author_pages(item_set)
       authors(item_set).each do |author|
         @items.create(
-          "<%= render('/blog/author.*', author: '#{author}') %>",
-          { title: "Articles by #{author}", kind: 'author-page', is_hidden: true, description: "All posts written by #{author}" },
+          %[<%= render("/blog/author.*", author: "#{author}") %>],
+          { title: "Articles by #{author}", kind: "author-page", is_hidden: true, description: "All posts written by #{author}" },
           "#{@config[:blog][:authors_url]}/#{author.to_slug}/index.erb",
           binary: false
         )
@@ -110,8 +110,8 @@ module Nanoc::Helpers
       years = item_set.map { |a| a[:created_at].year }.uniq
       years.each do |year|
         @items.create(
-          "<%= render('/blog/archive.*', year: #{year}) %>",
-          { title: "Articles from #{year}", kind: 'archive-page', is_hidden: true, description: "All posts written in #{year}" },
+          %[<%= render("/blog/archive.*", year: #{year}) %>],
+          { title: "Articles from #{year}", kind: "archive-page", is_hidden: true, description: "All posts written in #{year}" },
           "#{@config[:blog][:archives_url]}/#{year}/index.erb",
           binary: false
         )
@@ -123,7 +123,7 @@ module Nanoc::Helpers
     end
 
     def blog_post?(item)
-      item[:kind] == 'article' && item.identifier =~ /^\/blog/
+      item[:kind] == "article" && item.identifier =~ /^\/blog/
     end
 
   end
