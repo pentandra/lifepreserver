@@ -36,7 +36,7 @@ module Nanoc::Helpers
     end
 
     def absolutify(item, content)
-      content.gsub(/(<[^>]+\s+(src|href))=(['"]?)([^:]*?)\3([ >])/) do
+      content.gsub(/(<[^>]+\s+(src|href))=(['"]?)((?!.*http[s]?:).*?)\3([ \/>])/) do
         $1 + '=' + $3 + absolute_path_to(item, $4) + $3 + $5
       end
     end
