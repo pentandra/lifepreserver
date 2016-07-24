@@ -1,3 +1,5 @@
+require 'nokogiri'
+
 module Nanoc::Filters
 
   # This filter changes local src or href paths to absolute paths.
@@ -13,16 +15,14 @@ module Nanoc::Filters
       # Set assigns so helper function can be used
       @item_rep = assigns[:item_rep] if @item_rep.nil?
 
-      require 'nokogiri'
-
       # Parse
       doc = Nokogiri::HTML.fragment(content)
 
-      attributes_to_check = ['src', 'href', 'resource']
+      attributes_to_check = ['src', 'href']
 
       # Find all src, href, and resource attributes
-      doc.xpath("descendant::*[@src]", "descendant::*[@href]", "descendant::*[@resource]").each do |element|
-        element.attributes.select { |k,v| attributes_to_check.include? k }.each do |attribute_name, attribute|
+      doc.xpath("descendant::*[@src]", "descendant::*[@href]").each do |element|
+        element.attributes.select { |k,v| attributes_to_check.include?(k) }.each do |attribute_name, attribute|
           
           target = attribute.content
           next if target.nil? || is_not_local(target)
@@ -46,4 +46,3 @@ module Nanoc::Filters
   end
 
 end
-
