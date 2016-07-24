@@ -7,12 +7,12 @@ preprocess do
 
   @config[:production] = !ENV['NANOC_ENV'].nil? && ENV['NANOC_ENV'] == 'production' # See https://github.com/nanoc/nanoc/issues/487
 
-  # Assign a date to all items (not only blog posts) unless they have it already defined
-  @items.each do |item|
-    item[:created_at] = item.key?(:created_at) ? attribute_to_time(item[:created_at]) : Time.now
-    item[:updated_at] = attribute_to_time(item[:updated_at]) if item.key?(:updated_at)
+  def assign_date_to_all_items
+    @items.each do |item|
+      item[:created_at] = item.key?(:created_at) ? attribute_to_time(item[:created_at]) : Time.now
+      item[:updated_at] = attribute_to_time(item[:updated_at]) if item.key?(:updated_at)
+    end
   end
-
 
   def mark_items_as_hidden_that_should_be_hidden
 
@@ -80,6 +80,8 @@ preprocess do
       end
     end
   end
+
+  assign_date_to_all_items
 
   mark_items_as_hidden_that_should_be_hidden
 
