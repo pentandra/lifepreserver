@@ -7,7 +7,7 @@
     <article class="excerpt" property="schema:itemListElement" typeof="schema:ListItem">
       <meta property="schema:position" content="<%= "#{index + 1}" %>" />
       <a href="<%= post.path  %>" rel="bookmark" property="schema:item" typeof="schema:WebPage">
-        <time class="small bold" datetime="<%= h date_for(post) %>"><%= ndashed(date_for(post)) %></time>&#8194;<h3 class="normal" property="schema:name"><%= h post[:short_title] || post[:title] %></h3>
+        <time class="small bold" property="schema:datePublished" datetime="<%= h date_for(post) %>"><%= ndashed(date_for(post)) %></time>&#8194;<h3 class="normal" property="schema:name"><%= h post[:short_title] || post[:title] %></h3>
       </a>
     </article>
     <% end %>
