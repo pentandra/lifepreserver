@@ -7,7 +7,7 @@
       <li><a href="/company/#sec:contact">Contact Us</a></li>
     </ul>
   </section>
-  <section class="noted inner group" property="fea:hasIntent" resource="pentandra:mission" typeof="fea:Mission">
+  <section class="noted inner group" prefix="<%= prefixes_for(:fea) %>" property="fea:hasIntent" resource="pentandra:mission" typeof="fea:Mission">
     <h2 class="flush normal">Our Mission</h2>
     <p property="fea:description"><%= company[:mission] %></p>
   </section>
