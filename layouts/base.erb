@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-  <head prefix="article: http://ogp.me/ns/article# og: http://ogp.me/ns# profile: http://ogp.me/ns/profile#">
+  <head prefix="<%= prefixes_for(*open_graph_prefixes) %>">
 
     <meta charset="utf-8" />
     <title><%= @item[:title] %> ← <%= @config[:site][:name] %></title>
@@ -28,7 +28,7 @@
 
   </head>
 
-  <body prefix="adms: http://www.w3.org/ns/adms# cc: http://creativecommons.org/ns# ctag: http://commontag.org/ns# dbr: http://dbpedia.org/resource/ dc: http://purl.org/dc/terms/ deo: http://purl.org/spar/deo/ doap: http://usefulinc.com/ns/doap# essglobal: http://purl.org/essglobal/vocab/ fea: http://vocab.data.gov/def/fea# foaf: http://xmlns.com/foaf/0.1/ gr: http://purl.org/goodrelations/v1# oa: http://www.w3.org/ns/oa# org: http://www.w3.org/ns/org# owl: http://www.w3.org/2002/07/owl# pentandra: <%= "#{@config[:base_url]}#{@config[:company][:page_url]}#" %> pentandra-blog: <%= "#{@config[:base_url]}#{@config[:blog][:url]}#" %> pentandra-website: <%= "#{@config[:base_url]}#" %> prov: http://www.w3.org/ns/prov# qb: http://purl.org/linked-data/cube# rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# rdfa: http://www.w3.org/ns/rdfa# rdfs: http://www.w3.org/2000/01/rdf-schema# rov: http://www.w3.org/ns/regorg# schema: http://schema.org/ sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xhv: http://www.w3.org/1999/xhtml/vocab# xsd: http://www.w3.org/2001/XMLSchema#" about="" property="schema:isPartOf" resource="pentandra-website:website" typeof="schema:WebPage cc:Work prov:Entity">
+  <body prefix="<%= prefixes_for(*standard_prefixes, *company_prefixes, :deo, :doap) %>" about="" property="schema:isPartOf" resource="pentandra-website:website" typeof="schema:WebPage cc:Work prov:Entity">
 
     <% for p in @item.fetch(:beginbody, []) %>
       <%= render("/partials/#{p}.*") %>

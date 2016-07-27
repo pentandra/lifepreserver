@@ -14,3 +14,4 @@ include UrlShortener
 include Search
 include Functional
 include Breadcrumbs
+include Vocabulary
