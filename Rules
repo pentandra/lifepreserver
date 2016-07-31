@@ -81,14 +81,14 @@ preprocess do
     end
   end
 
-  assign_date_to_all_items
-
-  mark_items_as_hidden_that_should_be_hidden
-
   generate_author_uris(published_articles)
   generate_tag_pages(published_articles)
   generate_author_pages(published_articles)
   generate_blog_archives(published_articles)
+
+  assign_date_to_all_items
+
+  mark_items_as_hidden_that_should_be_hidden
 
   include_analytics
   include_hypothesis
