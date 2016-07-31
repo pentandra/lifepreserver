@@ -1,0 +1,184 @@
+---
+article:
+  uri: "http://ogp.me/ns/article#"
+  source: "etc/vocabs/article.ttl"
+  strict: false
+
+adms:
+  uri: "http://www.w3.org/ns/adms#"
+
+cc:
+  uri: "http://creativecommons.org/ns#"
+  source: "etc/vocabs/cc.ttl" # Source incorrectly uses https identifiers
+  alias: true
+
+ctag:
+  uri: "http://commontag.org/ns#"
+
+dbr:
+  uri: "http://dbpedia.org/resource/"
+  strict: false
+
+dc:
+  uri: "http://purl.org/dc/terms/"
+  alias: true
+
+deo:
+  uri: "http://purl.org/spar/deo/"
+  source: "http://www.sparontologies.net/ontologies/deo/source.ttl"
+
+doap:
+  uri: "http://usefulinc.com/ns/doap#"
+  alias: true
+  patch: |
+    @prefix : <http://usefulinc.com/ns/doap#> .
+    @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+    @prefix owl: <http://www.w3.org/2002/07/owl#>.
+    DeleteExisting {: owl:imports foaf:index.rdf .} .
+    AddNew {: owl:imports foaf: .} .
+
+essglobal:
+  uri: "http://purl.org/essglobal/vocab/"
+  source: "http://www.maltas.org/ess/vocabV1.2/essglobal-vocab.rdf"
+
+"essglobal_activities":
+  uri: "http://purl.org/essglobal/standard/activities/"
+  source: "http://www.maltas.org/ess/standard/activities.skos"
+  class_name: "ESSGLOBALActivities"
+
+"essglobal_legalform":
+  uri: "http://purl.org/essglobal/standard/legal-form/"
+  source: "http://www.maltas.org/ess/standard/legal-form.skos"
+  class_name: "ESSGLOBALLegalform"
+
+"essglobal_qualifiers":
+  uri: "http://purl.org/essglobal/standard/qualifiers/"
+  source: "http://www.maltas.org/ess/standard/qualifiers.skos"
+  class_name: "ESSGLOBALQualifiers"
+
+"essglobal_typeoflabour":
+  uri: "http://purl.org/essglobal/standard/type-of-labour/"
+  source: "http://www.maltas.org/ess/standard/type-of-labour.skos"
+  class_name: "ESSGLOBALTypeoflabour"
+
+fea:
+  uri: "http://vocab.data.gov/def/fea#"
+  source: "etc/vocabs/fea.ttl"
+
+foaf:
+  uri: "http://xmlns.com/foaf/0.1/"
+  alias: true
+
+gr:
+  uri: "http://purl.org/goodrelations/v1#"
+  source: "http://www.heppnetz.de/ontologies/goodrelations/v1.owl"
+  alias: true
+
+iana:
+  uri: "http://www.iana.org/assignments/relation/"
+  source: "etc/vocabs/iana.ttl"
+  alias: true
+
+jsonld:
+  uri: "http://www.w3.org/ns/json-ld#"
+  alias: true
+
+oa:
+  uri: "http://www.w3.org/ns/oa#"
+  alias: true
+
+og:
+  uri: "http://ogp.me/ns#"
+  alias: true
+  strict: false
+
+ogc:
+  uri: "http://ogp.me/ns/class#"
+  source: "http://ogp.me/ns"
+  alias: true
+  strict: false
+
+org:
+  uri: "http://www.w3.org/ns/org#"
+  alias: true
+
+owl:
+  uri: "http://www.w3.org/2002/07/owl#"
+  alias: true
+
+profile:
+  uri: "http://ogp.me/ns/profile#"
+  source: "etc/vocabs/profile.ttl"
+  strict: false
+
+prov:
+  uri: "http://www.w3.org/ns/prov#"
+  alias: true
+
+qb:
+  uri: "http://purl.org/linked-data/cube#"
+  alias: true
+
+rdf:
+  uri: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  alias: true
+
+rdfa:
+  uri: "http://www.w3.org/ns/rdfa#"
+  alias: true
+
+rdfs:
+  uri: "http://www.w3.org/2000/01/rdf-schema#"
+  alias: true
+
+rov:
+  uri: "http://www.w3.org/ns/regorg#"
+
+schema:
+  uri: "http://schema.org/"
+  alias: true
+
+sioc:
+  uri: "http://rdfs.org/sioc/ns#"
+  alias: true
+
+sioct:
+  uri: "http://rdfs.org/sioc/types#"
+
+skos:
+  uri: "http://www.w3.org/2004/02/skos/core#"
+  alias: true
+
+vcard:
+  uri: "http://www.w3.org/2006/vcard/ns#"
+  alias: true
+
+xhtml:
+  uri: "http://www.w3.org/1999/xhtml#"
+  strict: false
+  alias: true
+
+xhv:
+  uri: "http://www.w3.org/1999/xhtml/vocab#"
+  strict: false
+  alias: true
+
+xsd:
+  uri: "http://www.w3.org/2001/XMLSchema#"
+  strict: false
+  alias: true
+
+pentandra:
+  uri: <%= "\"#{@config[:base_url]}#{@config[:company][:page_url]}#\"" %>
+  strict: false
+
+"pentandra_blog":
+  uri: <%= "\"#{@config[:base_url]}#{@config[:blog][:url]}#\"" %>
+  strict: false
+  class_name: PENTANDRABlog
+
+"pentandra_website":
+  uri: <%= "\"#{@config[:base_url]}#\"" %>
+  strict: false
+  class_name: PENTANDRAWebsite
+...

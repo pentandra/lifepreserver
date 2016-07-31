@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-  <head prefix="<%= prefixes_for(*open_graph_prefixes) %>">
+  <head prefix="<%= prefixes_for(*open_graph_vocabularies) %>">
 
     <meta charset="utf-8" />
     <title><%= @item[:title] %> ← <%= @config[:site][:name] %></title>
@@ -28,7 +28,7 @@
 
   </head>
 
-  <body prefix="<%= prefixes_for(*standard_prefixes, *company_prefixes, :deo, :doap) %>" about="" property="schema:isPartOf" resource="pentandra-website:website" typeof="schema:WebPage cc:Work prov:Entity">
+  <body prefix="<%= prefixes_for(*standard_vocabularies, *company_vocabularies, :deo, :doap) %>" about="" property="schema:isPartOf" resource="pentandra-website:website" typeof="schema:WebPage cc:Work prov:Entity">
 
     <% for p in @item.fetch(:beginbody, []) %>
       <%= render("/partials/#{p}.*") %>

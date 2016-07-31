@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix og: <http://ogp.me/ns#> .
+@prefix ogc: <http://ogp.me/ns/class#> .
+@prefix profile: <http://ogp.me/ns/profile#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+profile:first_name a rdf:Property ;
+  rdfs:label "first name"@en-US ;
+  rdfs:comment "A name normally given to an individual by a parent or self-chosen."@en-US ;
+  rdfs:isDefinedBy profile: ;
+  rdfs:range ogc:string .
+profile:last_name a rdf:Property ;
+  rdfs:label "last name"@en-US ;
+  rdfs:comment "A name inherited from a family or marriage and by which the individual is commonly known."@en-US ;
+  rdfs:isDefinedBy profile: ;
+  rdfs:range ogc:string .
+profile:username a rdf:Property ;
+  rdfs:label "username"@en-US ;
+  rdfs:comment "A short unique string to identify them."@en-US ;
+  rdfs:isDefinedBy profile: ;
+  rdfs:range ogc:string .
+profile:gender a rdf:Property ;
+  rdfs:label "gender"@en-US ;
+  rdfs:comment "Their gender."@en-US ;
+  rdfs:isDefinedBy profile: ;
+  rdfs:range ogc:gender_str .
+
+ogc:gender_str a rdfs:Datatype ;
+  owl:oneOf ("male" "female") ;
+  rdfs:label "gender"@en-US ;
+  rdfs:comment "The gender: \"male\", \"female\"."@en-US ;
+  rdfs:isDefinedBy ogc: ;
+  rdfs:subClassOf xsd:string .
