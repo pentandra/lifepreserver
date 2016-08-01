@@ -1,6 +1,6 @@
 module Company
 
-  include Nanoc::Helpers::Text
+  include Text
 
   def full_name(member)
     "#{member[:first_name]} #{member[:last_name]}"

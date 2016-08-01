@@ -2,7 +2,7 @@ module Nanoc::Helpers
 
   module Blogging
 
-    include Nanoc::Helpers::Text
+    include Text
 
     # Relies upon Rules preprocessing to set the `:is_hidden` attribute.
     def published_articles

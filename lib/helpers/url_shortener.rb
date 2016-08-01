@@ -3,7 +3,7 @@ require 'yaml'
 
 module UrlShortener
 
-  include Nanoc::Helpers::Text
+  include Text
 
   def shorten(url)
 
