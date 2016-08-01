@@ -42,12 +42,12 @@ module RDF
 
     class << self
 
+      require 'text'
+      include Text
+
       # Override __prefix__ to have better prefixes
       def __prefix__
-        __name__.split('::').last.
-          gsub(/([A-Z]+)([A-Z][a-z])/,'\1-\2').
-          gsub(/([a-z\d])([A-Z])/, '\1-\2').
-          downcase.to_sym
+        hyphenate(__name__.split('::').last).to_sym
       end
 
     end
