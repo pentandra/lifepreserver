@@ -1,3 +1,5 @@
+require_relative 'text'
+
 module Company
 
   include Text

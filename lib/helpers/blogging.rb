@@ -1,3 +1,5 @@
+require_relative 'text'
+
 module Nanoc::Helpers
 
   module Blogging

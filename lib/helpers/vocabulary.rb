@@ -1,5 +1,6 @@
 require "rdf"
 require "rdf/vocab"
+require_relative 'text'
 
 module Vocabulary
 
@@ -40,10 +41,9 @@ module RDF
 
   class Vocabulary
 
-    class << self
+    include Text
 
-      require 'text'
-      include Text
+    class << self
 
       # Override __prefix__ to have better prefixes
       def __prefix__
