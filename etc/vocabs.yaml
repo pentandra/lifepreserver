@@ -165,6 +165,7 @@ xhv:
 
 xsd:
   uri: "http://www.w3.org/2001/XMLSchema#"
+  source: "etc/vocabs/xsd.ttl"
   strict: false
   alias: true
 
