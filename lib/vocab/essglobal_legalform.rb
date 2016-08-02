@@ -5,8 +5,8 @@ require 'rdf'
 module Vocab
   # @!parse
   #   # Vocabulary for <http://purl.org/essglobal/standard/legal-form/>
-  #   class ESSGLOBALLegalform < RDF::StrictVocabulary
+  #   class ESSGLOBALLegalform < RDF::Vocabulary
   #   end
-  class ESSGLOBALLegalform < RDF::StrictVocabulary("http://purl.org/essglobal/standard/legal-form/")
+  class ESSGLOBALLegalform < RDF::Vocabulary("http://purl.org/essglobal/standard/legal-form/")
   end
 end

@@ -5,9 +5,9 @@ require 'rdf'
 module Vocab
   # @!parse
   #   # Vocabulary for <http://purl.org/essglobal/standard/type-of-labour/>
-  #   class ESSGLOBALTypeoflabour < RDF::StrictVocabulary
+  #   class ESSGLOBALTypeoflabour < RDF::Vocabulary
   #   end
-  class ESSGLOBALTypeoflabour < RDF::StrictVocabulary("http://purl.org/essglobal/standard/type-of-labour/")
+  class ESSGLOBALTypeoflabour < RDF::Vocabulary("http://purl.org/essglobal/standard/type-of-labour/")
 
     # Extra definitions
     term :"",

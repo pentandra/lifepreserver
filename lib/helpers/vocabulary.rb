@@ -4,6 +4,15 @@ require_relative 'text'
 
 module Vocabulary
 
+  # Returns the pname for a prefix and suffix
+  def v(prefix, suffix)
+    find_by_prefix(prefix.to_sym)[suffix.to_sym].pname
+  end
+
+  def curie(uri)
+    RDF::Vocabulary.expand_pname(uri).pname
+  end
+
   def prefixes_for(*prefixes)
     prefixes.map { |prefix| "#{prefix}: #{find_by_prefix(prefix).to_uri}" }.join(" ")
   end
@@ -33,6 +42,10 @@ module Vocabulary
 
   def document_vocabularies
     [ :deo, :doco, :c4o ]
+  end
+
+  def instance_vocabularies
+    [ :dbo, :dbr, :yago ]
   end
 
 end

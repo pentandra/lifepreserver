@@ -8,13 +8,5 @@ module Vocab
   #   class PENTANDRAWebsite < RDF::Vocabulary
   #   end
   class PENTANDRAWebsite < RDF::Vocabulary("https://pentandra.com#")
-
-    # Extra definitions
-    term :banner,
-      label: "banner".freeze,
-      :"xhv:role" => []
-    term :contentinfo,
-      label: "contentinfo".freeze,
-      :"xhv:role" => []
   end
 end

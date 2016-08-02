@@ -10,9 +10,6 @@ module Vocab
   class PENTANDRA < RDF::Vocabulary("https://pentandra.com/company#")
 
     # Extra definitions
-    term :banner,
-      label: "banner".freeze,
-      :"xhv:role" => []
     term :"chris-chapman",
       :"foaf:img" => [],
       :"foaf:isPrimaryTopicOf" => [],
@@ -25,7 +22,13 @@ module Vocab
       :"schema:jobTitle" => [],
       :"schema:name" => [],
       :"schema:worksFor" => [],
-      type: ["foaf:Person".freeze, "schema:Person".freeze]
+      type: ["foaf:Person".freeze, "schema:Person".freeze, "vcard:Individual".freeze],
+      :"vcard:fn" => [],
+      :"vcard:hasEmail" => [],
+      :"vcard:hasGender" => [],
+      :"vcard:hasPhoto" => [],
+      :"vcard:rev" => [],
+      :"vcard:title" => []
     term :company,
       :"foaf:homepage" => [],
       :"http://purl.org/essglobal/vocab/economicSector" => [],
@@ -33,8 +36,8 @@ module Vocab
       :"http://purl.org/essglobal/vocab/mission" => [],
       :"http://purl.org/essglobal/vocab/objective" => [],
       :"http://purl.org/essglobal/vocab/qualifier" => [],
-      :"http://vocab.data.gov/def/fea#description" => [],
       :"http://vocab.data.gov/def/fea#hasIntent" => [],
+      :"http://www.w3.org/ns/regorg#legalName" => [],
       label: "company".freeze,
       :"schema:description" => [],
       :"schema:email" => [],
@@ -43,20 +46,24 @@ module Vocab
       :"schema:logo" => [],
       :"schema:name" => [],
       :"schema:potentialAction" => [],
+      :"schema:sameAs" => [],
       :"schema:telephone" => [],
       :"schema:url" => [],
-      type: ["foaf:Organization".freeze, "http://purl.org/essglobal/vocab/SSEInitiative".freeze, "http://vocab.data.gov/def/fea#Company".freeze, "schema:Corporation".freeze]
+      type: ["fea:Company".freeze, "foaf:Organization".freeze, "http://purl.org/essglobal/vocab/SSEInitiative".freeze, "http://www.w3.org/ns/regorg#RegisteredOrganization".freeze, "schema:Corporation".freeze, "vcard:Organization".freeze],
+      :"vcard:hasEmail" => [],
+      :"vcard:hasLogo" => [],
+      :"vcard:hasTelephone" => [],
+      :"vcard:hasURL" => [],
+      :"vcard:rev" => []
     term :contact,
       label: "contact".freeze,
       type: "schema:ContactPage".freeze
-    term :contentinfo,
-      label: "contentinfo".freeze,
-      :"xhv:role" => []
     term :coreteam,
       :"foaf:member" => [],
       :"foaf:name" => [],
       label: "coreteam".freeze,
-      type: "foaf:Group".freeze
+      type: "foaf:Group".freeze,
+      :"vcard:hasMember" => []
     term :donate,
       label: "donate".freeze,
       :"schema:description" => [],
@@ -76,7 +83,13 @@ module Vocab
       :"schema:jobTitle" => [],
       :"schema:name" => [],
       :"schema:worksFor" => [],
-      type: ["foaf:Person".freeze, "schema:Person".freeze]
+      type: ["foaf:Person".freeze, "schema:Person".freeze, "vcard:Individual".freeze],
+      :"vcard:fn" => [],
+      :"vcard:hasEmail" => [],
+      :"vcard:hasGender" => [],
+      :"vcard:hasPhoto" => [],
+      :"vcard:rev" => [],
+      :"vcard:title" => []
     term :mission,
       :"http://vocab.data.gov/def/fea#description" => [],
       label: "mission".freeze,

@@ -5,9 +5,9 @@ require 'rdf'
 module Vocab
   # @!parse
   #   # Vocabulary for <http://purl.org/essglobal/standard/activities/>
-  #   class ESSGLOBALActivities < RDF::StrictVocabulary
+  #   class ESSGLOBALActivities < RDF::Vocabulary
   #   end
-  class ESSGLOBALActivities < RDF::StrictVocabulary("http://purl.org/essglobal/standard/activities/")
+  class ESSGLOBALActivities < RDF::Vocabulary("http://purl.org/essglobal/standard/activities/")
 
     # Extra definitions
     term :"#A01",

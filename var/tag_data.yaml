@@ -36,6 +36,7 @@ Decisions:
   topic: http://en.wikipedia.org/wiki/Decision-making
 Enlightenment:
   uri: http://dbpedia.org/resource/Age_of_Enlightenment
+  type: http://dbpedia.org/class/yago/PhilosophicalMovements
   label: Age of Enlightenment
   abstract: The Age of Enlightenment or simply the Enlightenment or Age of Reason
     is an era from the 1620s to the 1780s in which cultural and intellectual forces
@@ -65,6 +66,7 @@ Enlightenment:
   topic: http://en.wikipedia.org/wiki/Age_of_Enlightenment
 Essay:
   uri: http://dbpedia.org/resource/Essay
+  type: http://dbpedia.org/ontology/Genre
   label: Essay
   abstract: 'Essays are generally scholarly pieces of writing giving the author''s
     own argument, but the definition is vague, overlapping with those of an article,
@@ -137,6 +139,7 @@ Holism:
   topic: http://en.wikipedia.org/wiki/Holism
 NGS:
   uri: http://dbpedia.org/resource/National_Genealogical_Society
+  type: http://xmlns.com/foaf/0.1/Organization
   label: National Genealogical Society
   abstract: The National Genealogical Society is a genealogical interest group founded
     in 1903 in Washington, D.C..  Its headquarters are in Arlington, Virginia.The
@@ -174,6 +177,7 @@ Open Research:
   topic: http://en.wikipedia.org/wiki/Open_research
 Open Standards:
   uri: http://dbpedia.org/resource/Open_standard
+  type: http://dbpedia.org/class/yago/Standards
   label: Open standard
   abstract: An open standard is a standard that is publicly available and has various
     rights to use associated with it, and may also have various properties of how
@@ -239,6 +243,7 @@ Opinionated:
   topic: http://en.wikipedia.org/wiki/Opinion_piece
 Phil Trans:
   uri: http://dbpedia.org/resource/Philosophical_Transactions_of_the_Royal_Society
+  type: http://dbpedia.org/class/yago/PublicationsEstablishedIn1665
   label: Philosophical Transactions of the Royal Society
   abstract: Philosophical Transactions later Philosophical Transactions of the Royal
     Society (Phil. Trans.) is a scientific journal published by the Royal Society.
@@ -281,6 +286,7 @@ Republic of Letters:
   topic: http://en.wikipedia.org/wiki/Republic_of_Letters
 Review:
   uri: http://dbpedia.org/resource/Review
+  type: http://dbpedia.org/ontology/Genre
   label: Review
   abstract: A review is an evaluation of a publication, service, or company such as
     a movie (a movie review), video game (video game review), musical composition
@@ -297,6 +303,7 @@ Review:
   topic: http://en.wikipedia.org/wiki/Review
 RootsTech:
   uri: http://dbpedia.org/resource/RootsTech
+  type: http://dbpedia.org/class/yago/Convention108309086
   label: RootsTech
   abstract: 'RootsTech is a family history and technology conference and trade show
     held annually in the Salt Palace Convention Center, Salt Lake City, Utah. It is
@@ -348,6 +355,7 @@ Treatise:
   topic: http://en.wikipedia.org/wiki/Treatise
 W3C:
   uri: http://dbpedia.org/resource/World_Wide_Web_Consortium
+  type: http://dbpedia.org/class/yago/StandardsOrganizations
   label: World Wide Web Consortium
   abstract: The World Wide Web Consortium (W3C) is the main international standards
     organization for the World Wide Web (abbreviated WWW or W3).Founded and currently
@@ -359,6 +367,7 @@ W3C:
   topic: http://en.wikipedia.org/wiki/World_Wide_Web_Consortium
 World Wide Web:
   uri: http://dbpedia.org/resource/World_Wide_Web
+  type: http://dbpedia.org/class/yago/Merchandise103748886
   label: World Wide Web
   abstract: The World Wide Web (www, W3) is an information space where documents and
     other web resources are identified by URLs, interlinked by hypertext links, and

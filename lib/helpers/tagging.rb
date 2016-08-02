@@ -87,7 +87,7 @@ module Nanoc::Helpers
     # multi-word tags.
     def link_for_tag(tag)
       if semantic_tag?(tag)
-        %[<a href="#{@config[:blog][:tags_url]}/#{h tag.to_slug}/" rel="tag ctag:means" typeof="ctag:AuthorTag" resource="#{h SEMANTIC_TAGS[tag]["uri"]}" property="ctag:label">#{h tag}</a>]
+        %[<a href="#{@config[:blog][:tags_url]}/#{h tag.to_slug}/" rel="tag ctag:tagged" resource="#tag_#{h tag.to_slug('_')}" typeof="ctag:AuthorTag"><link property="ctag:means" resource="#{curie(SEMANTIC_TAGS[tag]["uri"])}" typeof="#{curie(SEMANTIC_TAGS[tag].fetch("type", "owl:Thing"))}" /><span property="ctag:label">#{h tag}</span></a>]
       else
         %[<a href="#{@config[:blog][:tags_url]}/#{h tag.to_slug}/" rel="tag">#{h tag}</a>]
       end

@@ -5,9 +5,9 @@ require 'rdf'
 module Vocab
   # @!parse
   #   # Vocabulary for <http://purl.org/essglobal/standard/qualifiers/>
-  #   class ESSGLOBALQualifiers < RDF::StrictVocabulary
+  #   class ESSGLOBALQualifiers < RDF::Vocabulary
   #   end
-  class ESSGLOBALQualifiers < RDF::StrictVocabulary("http://purl.org/essglobal/standard/qualifiers/")
+  class ESSGLOBALQualifiers < RDF::Vocabulary("http://purl.org/essglobal/standard/qualifiers/")
 
     # Extra definitions
     term :"#Q01",

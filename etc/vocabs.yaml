@@ -15,6 +15,10 @@ cc:
 ctag:
   uri: "http://commontag.org/ns#"
 
+dbo:
+  uri: "http://dbpedia.org/ontology/"
+  #source: "http://mappings.dbpedia.org/server/ontology/dbpedia.owl"
+
 dbr:
   uri: "http://dbpedia.org/resource/"
   strict: false
@@ -173,17 +177,24 @@ xsd:
   strict: false
   alias: true
 
+yago:
+  uri: "http://dbpedia.org/class/yago/"
+  strict: false
+
 pentandra:
   uri: <%= "\"#{@config[:base_url]}#{@config[:company][:page_url]}#\"" %>
+  source: <%= "\"#{config[:output_dir]}#{@config[:company][:page_url]}/index.html\"" %>
   strict: false
 
 "pentandra_blog":
   uri: <%= "\"#{@config[:base_url]}#{@config[:blog][:url]}#\"" %>
+  source: <%= "\"#{@config[:output_dir]}#{@config[:blog][:url]}/index.html\"" %>
   strict: false
   class_name: PENTANDRABlog
 
 "pentandra_website":
   uri: <%= "\"#{@config[:base_url]}#\"" %>
+  source: <%= "\"#{@config[:output_dir]}/index.html\"" %>
   strict: false
   class_name: PENTANDRAWebsite
 ...
