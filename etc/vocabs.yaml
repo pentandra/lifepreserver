@@ -44,21 +44,25 @@ essglobal:
 "essglobal_activities":
   uri: "http://purl.org/essglobal/standard/activities/"
   source: "http://www.maltas.org/ess/standard/activities.skos"
+  strict: false
   class_name: "ESSGLOBALActivities"
 
 "essglobal_legalform":
   uri: "http://purl.org/essglobal/standard/legal-form/"
   source: "http://www.maltas.org/ess/standard/legal-form.skos"
+  strict: false
   class_name: "ESSGLOBALLegalform"
 
 "essglobal_qualifiers":
   uri: "http://purl.org/essglobal/standard/qualifiers/"
   source: "http://www.maltas.org/ess/standard/qualifiers.skos"
+  strict: false
   class_name: "ESSGLOBALQualifiers"
 
 "essglobal_typeoflabour":
   uri: "http://purl.org/essglobal/standard/type-of-labour/"
   source: "http://www.maltas.org/ess/standard/type-of-labour.skos"
+  strict: false
   class_name: "ESSGLOBALTypeoflabour"
 
 fea:
