@@ -10,7 +10,7 @@ module Nanoc::Helpers
     SEMANTIC_TAGS = YAML.load_file('var/tag_data.yaml') unless defined?(SEMANTIC_TAGS)
 
     def semantic_tag?(tag)
-      SEMANTIC_TAGS.has_key?(tag)
+      SEMANTIC_TAGS.key?(tag)
     end
 
     # from this thread: http://groups.google.com/group/nanoc/browse_thread/thread/caefcab791fd3c4b
@@ -87,7 +87,7 @@ module Nanoc::Helpers
     # multi-word tags.
     def link_for_tag(tag)
       if semantic_tag?(tag)
-        %[<a href="#{@config[:blog][:tags_url]}/#{h tag.to_slug}/" rel="tag ctag:tagged" resource="#tag_#{h tag.to_slug('_')}" typeof="ctag:AuthorTag"><link property="ctag:means" resource="#{curie(SEMANTIC_TAGS[tag]["uri"])}" typeof="#{curie(SEMANTIC_TAGS[tag].fetch("type", "owl:Thing"))}" /><span property="ctag:label">#{h tag}</span></a>]
+        %[<a href="#{@config[:blog][:tags_url]}/#{h tag.to_slug}/" rel="tag ctag:tagged" resource="#tagged_#{h tag.to_slug('_')}" typeof="ctag:AuthorTag"><link property="ctag:means" resource="#{curie(SEMANTIC_TAGS[tag]["uri"])}" typeof="#{curie(SEMANTIC_TAGS[tag].fetch("type", "owl:Thing"))}" /><span property="ctag:label">#{h tag}</span></a>]
       else
         %[<a href="#{@config[:blog][:tags_url]}/#{h tag.to_slug}/" rel="tag">#{h tag}</a>]
       end
