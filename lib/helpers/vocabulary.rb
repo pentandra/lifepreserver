@@ -43,13 +43,10 @@ module RDF
 
     include Text
 
-    class << self
-
-      # Override __prefix__ to have better prefixes
-      def __prefix__
-        hyphenate(__name__.split('::').last).to_sym
-      end
-
+    # Override __prefix__ class method to have better prefixes for some of
+    # these longer vocabulary names.
+    def self.__prefix__
+      hyphenate(__name__.split('::').last).to_sym
     end
     
   end
