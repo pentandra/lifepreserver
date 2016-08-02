@@ -362,7 +362,7 @@ teammembers:
         property="foaf:member vcard:hasMember" typeof="schema:Person foaf:Person vcard:Individual"
         id="sec:<%= full_name(member).to_slug %>"
         class="teammember vcard bl<%= i.odd? ? ' ock' : '' %> item">
-        <meta property="vcard:rev" datatype="xsd:dateTime" content="<%= @item[:created_at].xmlschema %>" />
+        <meta property="vcard:rev" datatype="xsd:date" content="<%= simple_date(@item[:created_at]) %>" />
         <link rev="schema:employee" resource="pentandra:company" />
         <link property="foaf:isPrimaryTopicOf" href="#sec:<%= full_name(member).to_slug %>" />
         <link property="vcard:hasGender" resource="vcard:<%= member[:gender].capitalize %>" />
@@ -421,7 +421,7 @@ teammembers:
     <div class="wrapper" about="pentandra:company">
       <h2>Give Us A Holler!</h2>
       <div class="bd">
-        <meta property="vcard:rev" datatype="xsd:dateTime" content="<%= @item[:created_at].xmlschema %>" />
+        <meta property="vcard:rev" datatype="xsd:date" content="<%= simple_date(@item[:created_at]) %>" />
         <aside class="aside section">
           <h3 class="flush">Get Social</h3>
           <ul class="none">
