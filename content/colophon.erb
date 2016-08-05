@@ -192,3 +192,24 @@ changefreq: monthly
 
   </div>
 </section>
+<section class="noted section">
+
+  <h2>The Build</h2>
+
+  <div class="bd">
+
+    <p>
+
+      The build process does not involve paper, ink, and moveable type, but it does involve many moving pieces. Much of this site is compiled beforehand, using <a href="<%= "http://ruby-doc.org/core-#{Ruby::Version::VERSION}/" %>">Ruby <span class="oldstyle"><%= "#{Ruby::Version::VERSION}" %></span></a>. We are so grateful for the many developers that have contributed their time, talents, and love through these component projects:
+
+    </p>
+    <ul>
+
+      <% Gem::Specification.sort.each do |gem| %>
+        <%= render('/partials/gem.*', gem: gem) %>
+      <% end %>
+
+    </ul>
+
+  </div>
+</section>

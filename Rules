@@ -1,11 +1,12 @@
 #!/usr/bin/env ruby
 
 require 'date'
+require 'nenv'
 
 preprocess do
-  @config[:google_api_key] = ENV['LIFEPRESERVER_API_KEY']
+  @config[:google_api_key] = Nenv.lifepreserver_api_key
 
-  @config[:production] = !ENV['NANOC_ENV'].nil? && ENV['NANOC_ENV'] == 'production' # See https://github.com/nanoc/nanoc/issues/487
+  @config[:production] = Nenv.nanoc_env? && Nenv.nanoc_env == 'production' # See https://github.com/nanoc/nanoc/issues/487
 
   def assign_date_to_all_items
     @items.each do |item|
