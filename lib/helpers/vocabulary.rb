@@ -4,9 +4,9 @@ require_relative 'text'
 
 module Vocabulary
 
-  # Returns the pname for a prefix and suffix
-  def v(prefix, suffix)
-    find_by_prefix(prefix.to_sym)[suffix.to_sym].pname
+  # Returns the pname for a prefix and reference
+  def v(prefix, reference)
+    find_by_prefix(prefix.to_sym)[reference.to_sym].pname
   end
 
   def curie(uri)
