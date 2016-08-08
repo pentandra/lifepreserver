@@ -7,10 +7,22 @@ article:
 adms:
   uri: "http://www.w3.org/ns/adms#"
 
+biro:
+  uri: "http://purl.org/spar/biro"
+  source: "http://www.sparontologies.net/ontologies/biro/source.ttl"
+
+c4o:
+  uri: "http://purl.org/spar/c4o/"
+  source: "http://www.sparontologies.net/ontologies/c4o/source.ttl"
+
 cc:
   uri: "http://creativecommons.org/ns#"
   source: "etc/vocabs/cc.ttl" # Source incorrectly uses https identifiers
   alias: true
+
+co:
+  uri: "http://purl.org/co/"
+  source: "etc/vocabs/collections.owl"
 
 ctag:
   uri: "http://commontag.org/ns#"
@@ -31,15 +43,22 @@ deo:
   uri: "http://purl.org/spar/deo/"
   source: "http://www.sparontologies.net/ontologies/deo/source.ttl"
 
+deps:
+  uri: "http://ontologi.es/doap-deps#"
+
 doap:
   uri: "http://usefulinc.com/ns/doap#"
   alias: true
   patch: |
     @prefix : <http://usefulinc.com/ns/doap#> .
     @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-    @prefix owl: <http://www.w3.org/2002/07/owl#>.
-    DeleteExisting {: owl:imports foaf:index.rdf .} .
-    AddNew {: owl:imports foaf: .} .
+    @prefix owl: <http://www.w3.org/2002/07/owl#> .
+    DeleteExisting { : owl:imports foaf:index.rdf } .
+    AddNew { : owl:imports foaf: } .
+
+doco:
+  uri: "http://purl.org/spar/doco/"
+  source: "http://www.sparontologies.net/ontologies/doco/source.ttl"
 
 essglobal:
   uri: "http://purl.org/essglobal/vocab/"
@@ -68,6 +87,10 @@ essglobal:
   source: "http://www.maltas.org/ess/standard/type-of-labour.skos"
   strict: false
   class_name: "ESSGLOBALTypeoflabour"
+
+fabio:
+  uri: "http://purl.org/spar/fabio/"
+  source: "http://www.sparontologies.net/ontologies/fabio/source.ttl"
 
 fea:
   uri: "http://vocab.data.gov/def/fea#"
@@ -144,6 +167,7 @@ rov:
 
 schema:
   uri: "http://schema.org/"
+  source: "https://raw.githubusercontent.com/schemaorg/schemaorg/sdo-makemake/data/releases/3.0/all-layers.nq"
   alias: true
 
 sioc:
