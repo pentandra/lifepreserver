@@ -203,16 +203,18 @@ changefreq: monthly
       The build process does not involve paper, ink, and moveable type, but it does involve many moving pieces. Much of this site is compiled beforehand, using <a href="<%= "http://ruby-doc.org/core-#{Ruby::Version::VERSION}/" %>">Ruby <span class="oldstyle"><%= "#{Ruby::Version::VERSION}" %></span></a>. We are so grateful for the many developers that have contributed their time, talents, and love through these component projects:
 
     </p>
-    <ul rel="deps:build-requirement">
+    <ul>
 
       <% Gem::Specification.sort.each do |gem| %>
-        <li property="deps:on" resource="http://rubygems.org/gems/<%= h gem.name %>" typeof="doap:Project">
-          <% if gem.homepage %>
-            <a rel="doap:homepage" href="<%= h gem.homepage %>" property="doap:name"><%= h gem.name %></a>
-          <% else %>
-            <span property="doap:name"><%= h gem.name %></span>
-          <% end %>
-          [<%= h gem.version %>]: <span property="doap:shortdesc"><%= h gem.summary %></span>
+        <li property="deps:build-requirement" typeof="deps:Dependency">
+          <span property="deps:on" datatype="deps:GemId" content="<%= "#{h gem.name} #{h gem.version}" %>">
+            <% if gem.homepage %>
+              <a rel="doap:homepage" href="<%= h gem.homepage %>" property="doap:name"><%= h gem.name %></a>
+            <% else %>
+              <span property="doap:name"><%= h gem.name %></span>
+            <% end %>
+            [<%= h gem.version %>]</span>:
+          <span property="doap:shortdesc"><%= h gem.summary %></span>
         </li>
       <% end %>
 
