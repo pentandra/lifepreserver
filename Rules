@@ -31,7 +31,7 @@ preprocess do
   end
 
   def include_analytics
-    @items.each { |item| item[:endbody] = Array(item[:endbody]) << 'analytics' } if @config[:production]
+    @items.each { |item| item[:endbody] = Array(item[:endbody]) << 'analytics' }
   end
 
   def include_video_partials_when_has_media
@@ -42,7 +42,7 @@ preprocess do
   end
 
   def include_hypothesis
-    @items.each { |item| item[:endbody] = Array(item[:endbody]) << 'hypothesis' } if @config[:production]
+    @items.each { |item| item[:endbody] = Array(item[:endbody]) << 'hypothesis' }
   end
 
   # We don't want anything nanoc specific in the spec folder, so have to use
@@ -71,8 +71,8 @@ preprocess do
 
   mark_items_as_hidden_that_should_be_hidden
 
-  include_analytics
-  include_hypothesis
+  include_analytics if @config[:production]
+  include_hypothesis if @config[:production]
   include_video_partials_when_has_media
 
   extract_metadata_from_specification_documents
