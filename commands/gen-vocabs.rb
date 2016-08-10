@@ -2,6 +2,9 @@ usage 'gen-vocabs'
 aliases :gv
 summary 'generate Ruby::RDF vocabularies from ontologies on the Web'
 
+flag :a, :all,  'generate all vocabularies'
+flag :L, :list, 'list all vocabularies'
+
 class GenVocabs < Nanoc::CLI::CommandRunner
 
   def run
@@ -10,6 +13,8 @@ class GenVocabs < Nanoc::CLI::CommandRunner
     require 'erb'
     require 'linkeddata'
 
+    validate_options_and_arguments
+
     load_site
 
     template = File.read('etc/vocabs.yaml')
@@ -17,6 +22,11 @@ class GenVocabs < Nanoc::CLI::CommandRunner
     context = Nanoc::Int::Context.new(env)
 
     vocabs = symbolize(YAML.load(ERB.new(template).result(context.get_binding)))
+
+    if options[:list]
+      list_vocabs(vocabs)
+      return
+    end
 
     vocabs.each do |id, v|
       next if v[:alias]
@@ -50,10 +60,30 @@ class GenVocabs < Nanoc::CLI::CommandRunner
 
   end
 
+  protected
+
   def env
+    self.class.env_for_site(site)
+  end
+
+  def self.env_for_site(site)
     {
       config: Nanoc::ConfigView.new(site.config, nil)
     }
+  end
+
+  def validate_options_and_arguments
+    if arguments.empty? && !options[:all] && !options[:list]
+      raise(Nanoc::Int::Errors::GenericTrivial,
+            "nothing to do (pass either --all, --list, or a list of prefixes)"
+           )
+    end
+  end
+
+  def list_vocabs(vocabs)
+    puts "Available vocabularies:"
+    puts
+    puts vocabs.map { |id, v| "#{v.fetch(:class_name, id.to_s.upcase)}: #{v[:uri]}" }.sort.join("\n")
   end
 
 end
