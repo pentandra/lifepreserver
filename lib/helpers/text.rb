@@ -43,6 +43,10 @@ module Text
       downcase
   end
 
+  def camelize(s)
+    s.downcase.split(%r{[-_\s]}).map(&:capitalize).join
+  end
+
   def md5(text)
     Digest::MD5.hexdigest(text)
   end
