@@ -164,7 +164,7 @@ rdfs:
 
 rov:
   uri: "http://www.w3.org/ns/regorg#"
-  #source: "etc/vocabs/rov.ttl" # needs to be local to deal with messed up vocabulary uri
+  source: "etc/vocabs/rov.ttl" # needs to be local to deal with messed up vocabulary uri
 
 schema:
   uri: "http://schema.org/"
