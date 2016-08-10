@@ -38,11 +38,7 @@ module Nanoc::Filters
         when :rdfa
           vocab.to_html(graph: repository, prefixes: prefixes, template: File.expand_path("../../../etc/vocabulary.haml", __FILE__))
         else
-          # use whatever writer we find
-          writer = RDF::Writer.for(output_format) || RDF::NTriples::Writer
-          writer.buffer(options) do |w|
-            vocab.each_statement { |statement| w << statement }
-          end
+          repository.dump(output_format, options)
         end
       else
         repository.dump(output_format, options)
