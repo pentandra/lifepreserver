@@ -84,7 +84,7 @@ end
 compile '/assets/scripts/*.js.erb' do
   filter :erb, trim_mode: '>'
   filter :uglify_js if @config[:production]
-  write '/js/' + File.basename(@item.identifier.without_exts + fingerprint(@item[:filename]) + '.js')
+  write '/js/' + File.basename("#{@item.identifier.without_exts}#{fingerprint(@item[:filename]) if @config[:production]}.js")
 end
 
 # Other JavaScript scripts
@@ -104,7 +104,7 @@ end
 
 compile '/assets/stylesheets/**/*' do
   filter :sass, Compass.sass_engine_options
-  write '/css/' + File.basename(@item.identifier.without_ext + fingerprint(@item[:filename]) + '.css')
+  write '/css/' + File.basename("#{@item.identifier.without_ext}#{fingerprint(@item[:filename]) if @config[:production]}.css")
 end
 
 route '/assets/components/pygments/css/*' do
@@ -160,8 +160,8 @@ compile '/spec/**/*.md' do
   filter :colorize_syntax, default_colorizer: :pygmentize, pygmentize: { nowrap: 'True' }
   filter :spellchecker unless @config[:production]
   layout '/spec/default.*'
-  filter :cache_buster
   filter :rubypantsunicode
+  filter :cache_buster if @config[:production]
   filter :html5small if @config[:production]
 end
 
@@ -172,13 +172,13 @@ passthrough '/spec/LICENSE'
 
 compile '/company/index.*', rep: :vcard do
   filter :vcard, @config[:company].merge(kind: 'org')
-  write '/company/pentandra' + fingerprint(@item[:filename]) + '.vcf'
+  write "/company/pentandra#{fingerprint(@item[:filename]) if @config[:production]}.vcf"
 end
 
 compile '/company/index.*', rep: :qrcode do
   filter :vcard, @config[:company].merge(kind: 'org')
   filter :qrcode, @config[:qrcode]
-  write '/images/pentandra-qrcode' + fingerprint(@item[:filename]) + '.png'
+  write "/images/pentandra-qrcode#{fingerprint(@item[:filename]) if @config[:production]}.png"
 end
 
 # Blog index
@@ -186,8 +186,8 @@ end
 compile '/blog/{index,recent}.erb' do
   filter :erb, trim_mode: '>'
   layout '/blog/default.*'
-  filter :cache_buster
   filter :rubypantsunicode
+  filter :cache_buster if @config[:production]
   filter :html5small if @config[:production]
 end
 
@@ -202,8 +202,8 @@ end
 
 compile '/{tags,authors,archives}/**/*' do
   filter :erb, trim_mode: '>'
-  filter :cache_buster
   filter :rubypantsunicode
+  filter :cache_buster if @config[:production]
   filter :html5small if @config[:production]
 end
 
@@ -219,8 +219,8 @@ compile '/blog/**/*.{md,mmd}' do
   filter :absolutify_local_paths
   filter :spellchecker unless @config[:production]
   layout '/blog/article.*'
-  filter :cache_buster
   filter :rubypantsunicode
+  filter :cache_buster if @config[:production]
   filter :html5small if @config[:production]
 end
 
@@ -235,16 +235,16 @@ compile '/**/*.erb' do
   filter :erb, trim_mode: '>'
   filter :spellchecker unless @config[:production]
   layout '/default.*'
-  filter :cache_buster
   filter :rubypantsunicode
+  filter :cache_buster if @config[:production]
   filter :html5small if @config[:production]
 end
 
 compile '/**/*.html' do
   filter :spellchecker unless @config[:production]
   layout '/default.*'
-  filter :cache_buster
   filter :rubypantsunicode
+  filter :cache_buster if @config[:production]
   filter :html5small if @config[:production]
 end
 
