@@ -66,12 +66,12 @@ module Vocab
 
     # Extra definitions
     term :"",
-      :"dc11:contributor" => [],
-      :"dc11:description" => [],
-      :"dc11:title" => [],
-      :"dc:issued" => [],
+      :"dc11:contributor" => [%(Alex Iskold).freeze, %(Alexandre Passant).freeze, %(Andraz Tori).freeze, %(Jamie Taylor).freeze, %(Peter Mika).freeze, %(Scott Montgomerie).freeze, %(Vuk Milicic).freeze],
+      :"dc11:description" => %(Common Tag RDF vocabulary, described using W3C RDF Schema. Common Tags allows documents and document fragments \(any resource which can be identified by a URI\) to be labeled with keywords and URIs, unambigiously idenfying the concepts covered by the resource.).freeze,
+      :"dc11:title" => %(Common Tag vocabulary).freeze,
+      :"dc:issued" => %(2009-06-08).freeze,
       label: "Common Tag vocabulary".freeze,
-      :"rdfs:seeAlso" => [],
+      :"rdfs:seeAlso" => %(http://commontag.org/mappings).freeze,
       type: "owl:Ontology".freeze
   end
 end

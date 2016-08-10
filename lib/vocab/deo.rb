@@ -13,7 +13,7 @@ module Vocab
     term :Acknowledgements,
       comment: %(Usually part of the preface, or a separate section in its own right, often as part of the back matter, it acknowledges those, including funding agencies, who contributed to the undertaking of a research project described in a publication, or to the creation of the work in some way. In scientific articles, the acknowledgements are usually placed as a separated section immediately following the Discussion or Conclusions.).freeze,
       label: "acknowledgements".freeze,
-      :"owl:equivalentClass" => [],
+      :"owl:equivalentClass" => %(http://purl.org/orb/1.0/Acknowledgements).freeze,
       subClassOf: "deo:DiscourseElement".freeze,
       type: "owl:Class".freeze
     term :AuthorContribution,
@@ -24,7 +24,7 @@ module Vocab
     term :Background,
       comment: %(Presentation of information that is essential for understanding the situation or problem that is the subject of the publication. In a journal article, the background is usually part of the Introduction, but may be present as separated section.).freeze,
       label: "background".freeze,
-      :"owl:equivalentClass" => [],
+      :"owl:equivalentClass" => %(http://salt.semanticauthoring.org/ontologies/sro#Background).freeze,
       subClassOf: "deo:DiscourseElement".freeze,
       type: "owl:Class".freeze
     term :BibliographicReference,
@@ -45,13 +45,13 @@ module Vocab
     term :Conclusion,
       comment: %(A reflection on the preceding text, summarizing the evidence, arguments or premises presented in the document and their logical outcomes. Conclusions are a fundamental feature in academic research publications, and may be included in the Discussion section.).freeze,
       label: "conclusion".freeze,
-      :"owl:equivalentClass" => [],
+      :"owl:equivalentClass" => [%(http://purl.org/orb/1.0/Conclusion).freeze, %(http://salt.semanticauthoring.org/ontologies/sro#Conclusion).freeze],
       subClassOf: "deo:DiscourseElement".freeze,
       type: "owl:Class".freeze
     term :Contribution,
       comment: %(A description of the part that this publication plays in the overall field.).freeze,
       label: "contribution".freeze,
-      :"owl:equivalentClass" => [],
+      :"owl:equivalentClass" => %(http://salt.semanticauthoring.org/ontologies/sro#Contribution).freeze,
       subClassOf: "deo:DiscourseElement".freeze,
       type: "owl:Class".freeze
     term :Data,
@@ -77,7 +77,7 @@ module Vocab
     term :Discussion,
       comment: %(An interpretation and discussion of the results obtained and an analysis of their significance, in support of conclusions. These conclusions may be part of this discussion or may be included in a separate section of the document.).freeze,
       label: "discussion".freeze,
-      :"owl:equivalentClass" => [],
+      :"owl:equivalentClass" => [%(http://purl.org/orb/1.0/Discussion).freeze, %(http://salt.semanticauthoring.org/ontologies/sro#Discussion).freeze],
       subClassOf: "deo:DiscourseElement".freeze,
       type: "owl:Class".freeze
     term :Epilogue,
@@ -88,7 +88,7 @@ module Vocab
     term :Evaluation,
       comment: %(A consideration of the value, meaning and significance of the results obtained.).freeze,
       label: "evaluation".freeze,
-      :"owl:equivalentClass" => [],
+      :"owl:equivalentClass" => %(http://salt.semanticauthoring.org/ontologies/sro#Evaluation).freeze,
       subClassOf: "deo:DiscourseElement".freeze,
       type: "owl:Class".freeze
     term :ExternalResourceDescription,
@@ -103,7 +103,7 @@ module Vocab
     term :Introduction,
       comment: %(An initial description which states the purpose and goals of the following writing, and, in the case of journal articles, typically includes background information on the research topic and a review of related work in the area.).freeze,
       label: "introduction".freeze,
-      :"owl:equivalentClass" => [],
+      :"owl:equivalentClass" => %(http://purl.org/orb/1.0/Introduction).freeze,
       subClassOf: "deo:DiscourseElement".freeze,
       type: "owl:Class".freeze
     term :Legend,
@@ -119,7 +119,7 @@ module Vocab
     term :Methods,
       comment: %(A description in a research paper documenting the specialized methods used in the work described. This description is often combined with a description of the materials used, in a section entitled 'Methods and Materials', 'Experimental' or a related term.).freeze,
       label: "methods".freeze,
-      :"owl:equivalentClass" => [],
+      :"owl:equivalentClass" => %(http://purl.org/orb/1.0/Methods).freeze,
       subClassOf: "deo:DiscourseElement".freeze,
       type: "owl:Class".freeze
     term :Model,
@@ -130,7 +130,7 @@ module Vocab
     term :Motivation,
       comment: %(A description of the justification for undertaking the work described in the publication.).freeze,
       label: "motivation".freeze,
-      :"owl:equivalentClass" => [],
+      :"owl:equivalentClass" => %(http://salt.semanticauthoring.org/ontologies/sro#Motivation).freeze,
       subClassOf: "deo:DiscourseElement".freeze,
       type: "owl:Class".freeze
     term :Postscript,
@@ -139,7 +139,7 @@ module Vocab
       subClassOf: "deo:DiscourseElement".freeze,
       type: "owl:Class".freeze
     term :ProblemStatement,
-      :"dc11:description" => [],
+      :"dc11:description" => %(A concise description of the issues that needed to be addressed by a work described in the document.).freeze,
       label: "problem statement".freeze,
       subClassOf: "deo:DiscourseElement".freeze,
       type: "owl:Class".freeze
@@ -161,13 +161,13 @@ module Vocab
     term :Results,
       comment: %(The report of the specific findings of an investigation, given without discussion or conclusion being drawn.).freeze,
       label: "results".freeze,
-      :"owl:equivalentClass" => [],
+      :"owl:equivalentClass" => %(http://purl.org/orb/1.0/Results).freeze,
       subClassOf: "deo:DiscourseElement".freeze,
       type: "owl:Class".freeze
     term :Scenario,
       comment: %(A presentation of a use case or test, based on a real or hypothetical situation, used to help someone think through a complex problem or system.).freeze,
       label: "scenario".freeze,
-      :"owl:equivalentClass" => [],
+      :"owl:equivalentClass" => %(http://salt.semanticauthoring.org/ontologies/sro#Scenario).freeze,
       subClassOf: "deo:DiscourseElement".freeze,
       type: "owl:Class".freeze
     term :SupplementaryInformationDescription,

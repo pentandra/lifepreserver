@@ -13,8 +13,8 @@ module Vocab
     term :Abstract,
       comment: %(A brief summary of a work on a particular subject, designed to act as the point-of-entry that will help the reader quickly to obtain an overview of the work's contents.   The abstract may be an integral part of the work itself, written by the same author\(s\) and appearing at the beginning of a work such as a research paper, report, review or thesis.  Alternatively it may be separate from the published work itself, and written by someone other than the author\(s\) of the published work, for example by a member of a professional abstracting service such as CAB Abstracts.).freeze,
       label: "abstract".freeze,
-      :"owl:disjointWith" => [],
-      :"rdfs:seeAlso" => [],
+      :"owl:disjointWith" => %(fabio:StructuredSummary).freeze,
+      :"rdfs:seeAlso" => %(fabio:StructuredSummary).freeze,
       subClassOf: "fabio:Expression".freeze,
       type: "owl:Class".freeze
     term :AcademicProceedings,
@@ -34,15 +34,15 @@ module Vocab
       type: "owl:Class".freeze
     term :AnalogItem,
       comment: %(A real object that is an exemplar of a fabio:Manifestation, such as a particular copy of the book 'Alice's adventures in Wonderland', that a person may own.).freeze,
-      :"dc11:description" => [],
+      :"dc11:description" => %(An analog item is an exemplar of an analog manifestation only and it is always stored in a storage medium suitable for analog objects, such as paper, vinyl discs and films.).freeze,
       label: "analog item".freeze,
-      :"owl:disjointWith" => [],
+      :"owl:disjointWith" => %(fabio:DigitalItem).freeze,
       subClassOf: "fabio:Item".freeze,
       type: "owl:Class".freeze
     term :AnalogManifestation,
       comment: %(A manifestation in an analog form.).freeze,
       label: "analog manifestation".freeze,
-      :"owl:disjointWith" => [],
+      :"owl:disjointWith" => %(fabio:DigitalManifestation).freeze,
       subClassOf: "fabio:Manifestation".freeze,
       type: "owl:Class".freeze
     term :AnalogStorageMedium,
@@ -138,7 +138,7 @@ module Vocab
     term :BookSeries,
       comment: %(A sequence of books having certain characteristics in common that are formally identified together as a group - for instance, the books in the Law, Governance and Technology Series published by Springer.).freeze,
       label: "book series".freeze,
-      :"owl:disjointWith" => [],
+      :"owl:disjointWith" => %(fabio:BookSet).freeze,
       subClassOf: "fabio:Series".freeze,
       type: "owl:Class".freeze
     term :BookSet,
@@ -333,7 +333,7 @@ module Vocab
       type: "owl:Class".freeze
     term :DigitalItem,
       comment: %(A digital object, such as a computer file.).freeze,
-      :"dc11:description" => [],
+      :"dc11:description" => %(A digital item is an exemplar of a digital manifestation only and it is always stored in a storage medium suitable for digital objects, such as CDs, DVDs, HDs and the Web.).freeze,
       label: "digital item".freeze,
       subClassOf: "fabio:Item".freeze,
       type: "owl:Class".freeze
@@ -355,7 +355,7 @@ module Vocab
     term :DisciplineDictionary,
       comment: %(A discipline dictionary is a collection of subject disciplines.).freeze,
       label: "discipline dictionary".freeze,
-      :"owl:disjointWith" => [],
+      :"owl:disjointWith" => %(fabio:TermDictionary).freeze,
       subClassOf: "skos:ConceptScheme".freeze,
       type: "owl:Class".freeze
     term :DoctoralThesis,
@@ -412,9 +412,23 @@ module Vocab
       comment: %(A segment or passage selected from a larger expression for use in another expression, usually with specific attribution to its original source.
 
 [Note: Use fabio:Excerpt to indicate a segment or passage selected from another expression that is not a passage of speech, and fabio:Quotation to indicate a segment or passage selected from another expression that is a passage of speech.]).freeze,
-      :"dc11:description" => [],
+      :"dc11:description" => %(An excerpt is more general than a quotation, and is generally used to indicate a re-published extract from a book, instruction manual, film, radio programme, etc, that need not be what someone said.  
+
+For example:
+     Oxford    01865
+     Oxshott   01372
+     Oxted      01883
+     Oxton      01578
+is an excerpt from the UK Dialling Codes section of the Oxford Telephone Directory.  
+
+Similarly, the following concluding passage from William Wordsworth's poem Lines written a Few Miles above Tintern Abbey is an excerpt rather than a quotation:
+                                           Nor wilt thou then forget,    
+    That after many wanderings, many years    
+    Of absence, these steep woods and lofty cliffs,    
+    And this green pastoral landscape, were to me    
+    More dear, both for themselves and for thy sake.).freeze,
       label: "excerpt".freeze,
-      :"rdfs:seeAlso" => [],
+      :"rdfs:seeAlso" => %(fabio:Quotation).freeze,
       subClassOf: "fabio:Expression".freeze,
       type: "owl:Class".freeze
     term :ExecutiveSummary,
@@ -429,7 +443,7 @@ module Vocab
       type: "owl:Class".freeze
     term :Expression,
       comment: %(A subclass of FRBR expression, restricted to expressions of fabio:Works.  For your latest research paper, the preprint submitted to the publisher, and the final published version to which the publisher assigned a unique digital object identifier, are both expressions of the same work.  ).freeze,
-      :"dc11:description" => [],
+      :"dc11:description" => %(A fabio:Expression can only have part or be part of another fabio:Expression.  Moreover, it can be a representation only of a fabio:Work, and  it can be embodied only in fabio:Manifestation\(s\).).freeze,
       label: "expression".freeze,
       subClassOf: "http://purl.org/vocab/frbr/core#Expression".freeze,
       type: "owl:Class".freeze
@@ -505,7 +519,7 @@ module Vocab
       type: "owl:Class".freeze
     term :Item,
       comment: %(A subclass of FRBR item, restricted to exemplars of fabio:Manifestations.  An example of a fabio:Item is a printed copy of a journal article on your desk, or a PDF file of that article that you purchased from a publisher and that now resides in digital form on your computer hard drive.  ).freeze,
-      :"dc11:description" => [],
+      :"dc11:description" => %(A fabio:Item can only have part or be part of another fabio:Item. Moreover, it can be an exemplar only of a fabio:Manifestation.).freeze,
       label: "item".freeze,
       subClassOf: "http://purl.org/vocab/frbr/core#Item".freeze,
       type: "owl:Class".freeze
@@ -603,7 +617,7 @@ module Vocab
       comment: %(A subclass of FRBR manifestation, restricted to manifestations of fabio:Expressions. fabio:Manifestation specifically applies to electronic \(digital\) as well as to physical manifestations of expressions.  
 
 Examples of different manifestations of a single 'version of record' expression of a scholarly work include an article in a print journal or the on-line version of that article as a web page.).freeze,
-      :"dc11:description" => [],
+      :"dc11:description" => %(A fabio:Manifestation can only have part or be part of another fabio:Manifestation.  Moreover, it can be an embodiment only of a fabio:Expression and it can be exemplified only by fabio:Item\(s\).).freeze,
       label: "manifestation".freeze,
       subClassOf: "http://purl.org/vocab/frbr/core#Manifestation".freeze,
       type: "owl:Class".freeze
@@ -665,7 +679,7 @@ Examples of different manifestations of a single 'version of record' expression 
     term :MovingImage,
       comment: %(A moving display, either generated dynamically by a computer program or formed from a series of pre-recorded still images imparting an impression of motion when shown in succession.  Examples include animations, cine films, videos, and computational simulations. Expressions of moving images may incorporate synchronized soundtracks.).freeze,
       label: "moving image".freeze,
-      :"owl:disjointWith" => [],
+      :"owl:disjointWith" => %(fabio:StillImage).freeze,
       subClassOf: "fabio:Image".freeze,
       type: "owl:Class".freeze
     term :MusicalComposition,
@@ -918,15 +932,20 @@ Examples of different manifestations of a single 'version of record' expression 
       comment: %(A passage of speech selected from a larger verbal or written expression for use in another expression, with specific attribution to its original source, and usually demarcated by quotation marks and / or by placing it in a separate indented paragraph. 
 
 [Note: Use fabio:Quotation to indicate a segment or passage selected from another expression that is a passage of speech, and fabio:Excerpt to indicate a segment or passage selected from another expression that is not a passage of speech.]).freeze,
-      :"dc11:description" => [],
+      :"dc11:description" => %(A quotation is a repetition of what someone has said, and is presented "within quotation marks", for example:
+
+On June 4th 1940, Winston Churchill made a speech on the radio that has since become famous, that included the words:
+       " . . . we shall fight on the beaches, we shall fight on the landing grounds, we shall fight in the fields and in the streets, we shall fight in the hills; we shall never surrender . . ."
+
+Similarly, the words "but Brutus is an honourable man" from Mark Antony's funeral speech in Shakespeare's play Julius Caesar is a quotation, since Mark Antony says these words in the play.).freeze,
       label: "quotation".freeze,
-      :"rdfs:seeAlso" => [],
+      :"rdfs:seeAlso" => %(fabio:Excerpt).freeze,
       subClassOf: "fabio:Expression".freeze,
       type: "owl:Class".freeze
     term :RapidCommunication,
       comment: %(A short rapidly published research article or conference paper, typically reporting significant research results that have been recently discovered, or a brief news item reporting such discoveries.).freeze,
       label: "rapid communication".freeze,
-      :"rdfs:seeAlso" => [],
+      :"rdfs:seeAlso" => %(fabio:BriefReport).freeze,
       subClassOf: "fabio:Expression".freeze,
       type: "owl:Class".freeze
     term :ReferenceBook,
@@ -1057,7 +1076,7 @@ A retraction is a public statement made about an earlier statement that withdraw
     term :StructuredSummary,
       comment: %(A structured summary containing essential metadata describing a research investigation and/or the research outputs that have resulted from it, for example datasets and journal articles, structured according to some minimal information standard.  Such a structured summary can be embodied in both human-readable and machine-readable manifestations, e.g. HTML and RDF.  Such a structured summary differs from the Abstract of a journal article, in that the latter is written as a piece of continuous prose, but typically omits vital factual information about the investigation, such as when and where it was conducted, by whom, and on now many specimens or subjects.).freeze,
       label: "structured summary".freeze,
-      :"rdfs:seeAlso" => [],
+      :"rdfs:seeAlso" => %(fabio:Abstract).freeze,
       subClassOf: "fabio:SpecificationDocument".freeze,
       type: "owl:Class".freeze
     term :SubjectDiscipline,
@@ -1112,7 +1131,7 @@ A retraction is a public statement made about an earlier statement that withdraw
       type: "owl:Class".freeze
     term :TermDictionary,
       comment: %(A controlled vocabulary, usually referring to terms within a particular classification system, such as the ACM Computing Classification System or MeSH, the Medical Subject Headings, or a controlled vocabulary of disciplines.).freeze,
-      :"dc11:description" => [],
+      :"dc11:description" => %(A term dictionary is a collection of subject terms.).freeze,
       label: "term dictionary".freeze,
       subClassOf: "skos:ConceptScheme".freeze,
       type: "owl:Class".freeze
@@ -1224,12 +1243,12 @@ A retraction is a public statement made about an earlier statement that withdraw
       type: "owl:Class".freeze
     term :Work,
       comment: %(A subclass of FRBR work, restricted to works that are published or potentially publishable, and that contain or are referred to by bibliographic references, or entities used to define bibliographic references. FaBiO works, and their expressions and manifestations, are primarily textual publications such as books, magazines, newspapers and journals, and items of their content.  However, they also include datasets, computer algorithms, experimental protocols, formal specifications and vocabularies, legal records, governmental papers, technical and commercial reports and similar publications, and also bibliographies, reference lists, library catalogues and similar collections. For this reason, fabio:Work is not an equivalent class to frbr:ScholarlyWork.  An example of a fabio:Work is your latest research paper.).freeze,
-      :"dc11:description" => [],
+      :"dc11:description" => %(A fabio:Work can only have part or be part of another fabio:Work. Moreover, it can be realized only by fabio:Expression\(s\).).freeze,
       label: "work".freeze,
       subClassOf: "http://purl.org/vocab/frbr/core#Work".freeze,
       type: "owl:Class".freeze
     term :WorkCollection,
-      :"dc11:creator" => [],
+      :"dc11:creator" => %(A collection of works.).freeze,
       label: "work collection".freeze,
       subClassOf: "fabio:Work".freeze,
       type: "owl:Class".freeze
@@ -1276,13 +1295,13 @@ A retraction is a public statement made about an earlier statement that withdraw
     property :hasArXivId,
       comment: %(An identifier used by the preprint repository ArXiv.).freeze,
       label: "has ArXiv identifier".freeze,
-      :"rdfs:isDefinedBy" => [],
+      :"rdfs:isDefinedBy" => %(http://arxiv.org/).freeze,
       subPropertyOf: "dc:identifier".freeze,
       type: "owl:DatatypeProperty".freeze
     property :hasCODEN,
       comment: %(A CODEN is a six character, alphanumeric bibliographic identification code, that provides concise, unique and unambiguous identification of the titles of serials and non-serial publications.).freeze,
       label: "has CODEN".freeze,
-      :"rdfs:seeAlso" => [],
+      :"rdfs:seeAlso" => %(http://en.wikipedia.org/wiki/CODEN).freeze,
       subPropertyOf: "dc:identifier".freeze,
       type: "owl:DatatypeProperty".freeze
     property :hasCharacterCount,
@@ -1339,8 +1358,8 @@ A retraction is a public statement made about an earlier statement that withdraw
     property :hasDiscipline,
       comment: %(The discipline to which a subject vocabulary belongs.).freeze,
       label: "has discipline".freeze,
-      :"owl:inverseOf" => [],
-      :"owl:propertyDisjointWith" => [],
+      :"owl:inverseOf" => %(fabio:isDisciplineOf).freeze,
+      :"owl:propertyDisjointWith" => %(fabio:isSchemeOf).freeze,
       range: "fabio:SubjectDiscipline".freeze,
       subPropertyOf: "owl:topObjectProperty".freeze,
       type: "owl:ObjectProperty".freeze
@@ -1372,20 +1391,20 @@ A retraction is a public statement made about an earlier statement that withdraw
       domain: "http://purl.org/vocab/frbr/core#Endeavour".freeze,
       label: "has handle".freeze,
       range: "xsd:string".freeze,
-      :"rdfs:isDefinedBy" => [],
+      :"rdfs:isDefinedBy" => %(http://www.handle.net/).freeze,
       subPropertyOf: "dc:identifier".freeze,
       type: "owl:DatatypeProperty".freeze
     property :hasIssnL,
       comment: %(A linking International Standard Serial Number.).freeze,
       label: "has ISSN-L".freeze,
-      :"rdfs:isDefinedBy" => [],
+      :"rdfs:isDefinedBy" => %(http://www.issn.org/2-22637-What-is-an-ISSN-L.php).freeze,
       subPropertyOf: "dc:identifier".freeze,
       type: "owl:DatatypeProperty".freeze
     property :hasManifestation,
       comment: %(A property linking a particular work to its manifestations.  This property is additional to the relationships between FRBR endeavours present in the classical FRBR data model.).freeze,
       domain: "http://purl.org/vocab/frbr/core#Work".freeze,
       label: "has manifestation".freeze,
-      :"owl:inverseOf" => [],
+      :"owl:inverseOf" => %(fabio:isManifestationOf).freeze,
       range: "http://purl.org/vocab/frbr/core#Manifestation".freeze,
       subPropertyOf: "http://purl.org/vocab/frbr/core#relatedEndeavour".freeze,
       type: "owl:ObjectProperty".freeze
@@ -1398,13 +1417,13 @@ A retraction is a public statement made about an earlier statement that withdraw
       comment: %(An internal identifier for journals available from the National Library of Medicine repository.).freeze,
       domain: "http://purl.org/vocab/frbr/core#Endeavour".freeze,
       label: "has National Library of Medicine journal identifier".freeze,
-      :"rdfs:isDefinedBy" => [],
+      :"rdfs:isDefinedBy" => %(http://www.nlm.nih.gov/).freeze,
       subPropertyOf: "dc:identifier".freeze,
       type: ["owl:DatatypeProperty".freeze, "owl:FunctionalProperty".freeze]
     property :hasPII,
       comment: %(Has Publisher Item Identifier).freeze,
       label: "has PII".freeze,
-      :"rdfs:seeAlso" => [],
+      :"rdfs:seeAlso" => %(http://en.wikipedia.org/wiki/Publisher_Item_Identifier).freeze,
       subPropertyOf: "dc:identifier".freeze,
       type: "owl:DatatypeProperty".freeze
     property :hasPageCount,
@@ -1423,7 +1442,7 @@ A retraction is a public statement made about an earlier statement that withdraw
       comment: %(A property linking a particular work to its items.  This property is additional to the relationships between FRBR endeavours present in the classical FRBR data model.).freeze,
       domain: "http://purl.org/vocab/frbr/core#Work".freeze,
       label: "has portrayal".freeze,
-      :"owl:inverseOf" => [],
+      :"owl:inverseOf" => %(fabio:isPortrayalOf).freeze,
       range: "http://purl.org/vocab/frbr/core#Item".freeze,
       subPropertyOf: "http://purl.org/vocab/frbr/core#relatedEndeavour".freeze,
       type: "owl:ObjectProperty".freeze
@@ -1437,7 +1456,7 @@ A retraction is a public statement made about an earlier statement that withdraw
       domain: "http://purl.org/vocab/frbr/core#Endeavour".freeze,
       label: "has PubMed Central identifier".freeze,
       range: "xsd:string".freeze,
-      :"rdfs:isDefinedBy" => [],
+      :"rdfs:isDefinedBy" => %(http://www.ncbi.nlm.nih.gov/pmc/).freeze,
       subPropertyOf: "dc:identifier".freeze,
       type: ["owl:DatatypeProperty".freeze, "owl:FunctionalProperty".freeze]
     property :hasPubMedId,
@@ -1445,7 +1464,7 @@ A retraction is a public statement made about an earlier statement that withdraw
       domain: "http://purl.org/vocab/frbr/core#Endeavour".freeze,
       label: "has PubMed identifier".freeze,
       range: "xsd:string".freeze,
-      :"rdfs:isDefinedBy" => [],
+      :"rdfs:isDefinedBy" => %(http://www.ncbi.nlm.nih.gov/pubmed/).freeze,
       subPropertyOf: "dc:identifier".freeze,
       type: ["owl:DatatypeProperty".freeze, "owl:FunctionalProperty".freeze]
     property :hasPublicationYear,
@@ -1458,7 +1477,7 @@ A retraction is a public statement made about an earlier statement that withdraw
       comment: %(A property linking a particular expression to its items.  This property is additional to the relationships between FRBR endeavours present in the classical FRBR data model.).freeze,
       domain: "http://purl.org/vocab/frbr/core#Expression".freeze,
       label: "has representation".freeze,
-      :"owl:inverseOf" => [],
+      :"owl:inverseOf" => %(fabio:isRepresentationOf).freeze,
       range: "http://purl.org/vocab/frbr/core#Item".freeze,
       subPropertyOf: "http://purl.org/vocab/frbr/core#relatedEndeavour".freeze,
       type: "owl:ObjectProperty".freeze
@@ -1478,7 +1497,7 @@ A retraction is a public statement made about an earlier statement that withdraw
       domain: "http://purl.org/vocab/frbr/core#Endeavour".freeze,
       label: ["has SICI".freeze, "has Serial Item and Contribution Identifier".freeze],
       range: "xsd:string".freeze,
-      :"rdfs:isDefinedBy" => [],
+      :"rdfs:isDefinedBy" => %(http://www.niso.org/apps/group_public/project/details.php?project_id=75).freeze,
       subPropertyOf: "dc:identifier".freeze,
       type: ["owl:DatatypeProperty".freeze, "owl:FunctionalProperty".freeze]
     property :hasSeason,
@@ -1546,7 +1565,7 @@ A retraction is a public statement made about an earlier statement that withdraw
       comment: %(This property relates a subject vocabulary to the discipline to which it belongs.).freeze,
       domain: "fabio:SubjectDiscipline".freeze,
       label: "is discipline of".freeze,
-      :"owl:propertyDisjointWith" => [],
+      :"owl:propertyDisjointWith" => %(skos:inScheme).freeze,
       subPropertyOf: "owl:topObjectProperty".freeze,
       type: "owl:ObjectProperty".freeze
     property :isManifestationOf,
@@ -1574,7 +1593,7 @@ A retraction is a public statement made about an earlier statement that withdraw
       comment: %(This property expresses the fact that a scheme contains a concept.).freeze,
       domain: "skos:ConceptScheme".freeze,
       label: "is scheme of".freeze,
-      :"owl:inverseOf" => [],
+      :"owl:inverseOf" => %(skos:inScheme).freeze,
       range: "skos:Concept".freeze,
       subPropertyOf: "owl:topObjectProperty".freeze,
       type: "owl:ObjectProperty".freeze
@@ -1582,7 +1601,7 @@ A retraction is a public statement made about an earlier statement that withdraw
       comment: %(This property relates a fabio:Item to the medium upon which it is stored.).freeze,
       domain: "fabio:Item".freeze,
       label: "is stored on".freeze,
-      :"owl:inverseOf" => [],
+      :"owl:inverseOf" => %(fabio:stores).freeze,
       range: "fabio:StorageMedium".freeze,
       subPropertyOf: "owl:topObjectProperty".freeze,
       type: "owl:ObjectProperty".freeze
@@ -1604,19 +1623,21 @@ A retraction is a public statement made about an earlier statement that withdraw
       comment: %(FaBiO, the FRBR-aligned Bibliographic Ontology, is an ontology for recording and publishing on the Semantic Web bibliographic records of scholarly endeavours. It forms part of SPAR, a suite of Semantic Publishing and Referencing Ontologies.  Other SPAR ontologies are described at http://purl.org/spar/.
 
 This ontology is available at http://purl.org/spar/fabio, and uses the namespace prefix fabio.).freeze,
-      :"dc11:contributor" => [],
-      :"dc11:creator" => [],
-      :"dc11:date" => [],
-      :"dc11:description" => [],
-      :"dc11:rights" => [],
-      :"dc11:title" => [],
-      :"http://purl.org/vocab/vann/preferredNamespacePrefix" => [],
-      :"http://purl.org/vocab/vann/preferredNamespaceUri" => [],
+      :"dc11:contributor" => [%(Paolo Ciccarese).freeze, %(Tim Clark).freeze],
+      :"dc11:creator" => [%(David Shotton).freeze, %(Silvio Peroni).freeze],
+      :"dc11:date" => %(2016-07-11).freeze,
+      :"dc11:description" => [%(FaBiO, the FRBR-aligned Bibliographic Ontology, is an ontology for recording and publishing on the Semantic Web descriptions of entities that are published or potentially publishable, and that contain or are referred to by bibliographic references, or entities used to define such bibliographic references. FaBiO entities are primarily textual publications such as books, magazines, newspapers and journals, and items of their content such as poems, conference papers and editorials.  However, they also include blogs, web pages, datasets, computer algorithms, experimental protocols, formal specifications and vocabularies, legal records, governmental papers, technical and commercial reports and similar publications, and also anthologies, catalogues and similar collections. 
+
+FaBiO classes are structured according to the FRBR schema of Works, Expressions, Manifestations and Items. Additional properties have been added to extends the FRBR data model by linking Works and Manifestations \(fabio:hasManifestation and fabio:isManifestationOf\), Works and Items \(fabio:hasPortrayal and fabio:isPortrayedBy\), and Expressions and Items  \(fabio:hasRepresentation and fabio:isRepresentedBy\).).freeze, %(https://svn.code.sf.net/p/sempublishing/code/FaBiO/FRBR%20diagram%20with%20new%20Fabio%20verbs.png).freeze],
+      :"dc11:rights" => %(This work is distributed under a Creative Commons Attribution License \(http://creativecommons.org/licenses/by/3.0/\).).freeze,
+      :"dc11:title" => %(FaBiO, the FRBR-aligned Bibliographic Ontology).freeze,
+      :"http://purl.org/vocab/vann/preferredNamespacePrefix" => %(fabio).freeze,
+      :"http://purl.org/vocab/vann/preferredNamespaceUri" => %(http://purl.org/spar/fabio/).freeze,
       label: "".freeze,
-      :"owl:backwardCompatibleWith" => [],
-      :"owl:imports" => [],
-      :"owl:priorVersion" => [],
-      :"owl:versionInfo" => [],
+      :"owl:backwardCompatibleWith" => %(https://svn.code.sf.net/p/sempublishing/code/FaBiO/2016-04-19-fabio-1_9_2.owl).freeze,
+      :"owl:imports" => %(http://purl.org/spar/frbr).freeze,
+      :"owl:priorVersion" => %(https://svn.code.sf.net/p/sempublishing/code/FaBiO/2016-04-19-fabio-1_9_2.owl).freeze,
+      :"owl:versionInfo" => %(1.9.3).freeze,
       type: "owl:Ontology".freeze
     term :SupplementaryInformationFile,
       comment: %(A file accompanying a published journal article, containing additional information of relevance to the article, typically available from the publisher's web site via a hyperlink from the journal article itself.).freeze,

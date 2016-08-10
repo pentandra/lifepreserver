@@ -13,12 +13,12 @@ module Vocab
     term :BibliographicInformationSource,
       comment: %(A source of information about bibliographic citations, such as Google Scholar, Web of Science or Scopus.).freeze,
       label: "bibliographic information source".freeze,
-      :"owl:disjointWith" => [],
+      :"owl:disjointWith" => [%(c4o:GlobalCitationCount).freeze, %(c4o:InTextReferencePointer).freeze],
       type: "owl:Class".freeze
     term :GlobalCitationCount,
       comment: %(The number of times a work has been cited globally, as determined from a particular bibliographic information source on a particular date.).freeze,
       label: "global citation count".freeze,
-      :"owl:disjointWith" => [],
+      :"owl:disjointWith" => %(c4o:InTextReferencePointer).freeze,
       type: "owl:Class".freeze
     term :InTextReferencePointer,
       comment: %(The in-text reference pointer is a textual element, usually embedded at the end of a phrase or sentence within the text of a document, that denotes a specific bibliographic reference present in the reference list of that document. For example, if the item in the reference list is: 
@@ -33,25 +33,31 @@ reference pointers are frequently aggregated, e.g. [4, 5, 6-9].  In such cases, 
 Or by use of the author names \(or the first author's name plus et al.\) and the publication year in parentheses, thus: \(Ko et al., 1999\). 
 
 Or, less commonly, by the use of a code, e.g. by specifying the first surname letter of the first three author of the cited work followed by the last two digits of the year of publication, this string of characters being enclosed within square brackets, thus: [KRR99].).freeze,
-      :"dc11:description" => [],
+      :"dc11:description" => [%(An in-text reference pointer is a textual device denoting a single bibliographic reference that is embedded in the text of a document within the context of a particular sentence.).freeze, %(https://svn.code.sf.net/p/sempublishing/code/C4O/InTextReferencePointer%20module.png).freeze],
       label: "in-text reference pointer".freeze,
       subClassOf: "http://purl.org/vocab/frbr/core#Expression".freeze,
       type: "owl:Class".freeze
     term :InTextReferencePointerList,
       comment: %(A list containing only in-text reference pointers denoting the specific bibliographic references to which the list pertains.).freeze,
-      :"dc11:description" => [],
+      :"dc11:description" => %(An in-text reference pointer list can contains only in-text reference pointer list items and it always pertains to one or more bibliographic references.).freeze,
       label: "in-text reference pointer list".freeze,
       subClassOf: "http://purl.org/co/List".freeze,
       type: "owl:Class".freeze
     term :InTextReferencePointerListItem,
       comment: %(This class describes all the list items that must be used in the context of an in-text reference pointer list.).freeze,
-      :"dc11:description" => [],
+      :"dc11:description" => %(An in-text reference pointer list item can contain only a single in-text reference pointer.
+
+Note that, as specified through the hasKey assertion, such a list cannot contain more than one item containing the same in-text reference pointer entity.).freeze,
       label: "in-text reference pointer list item".freeze,
       subClassOf: "http://purl.org/co/ListItem".freeze,
       type: "owl:Class".freeze
     term :SingleReferencePointerList,
       comment: %(An in-text reference pointer list that pertains to exactly one bibliographic reference.).freeze,
-      :"dc11:description" => [],
+      :"dc11:description" => %(A single reference pointer list pertains only to one bibliographic reference.
+
+Note that this semantic constraint is handled by the combined use of a particular restriction of this class, i.e. that the list pertains to exactly one owl:Thing, and that the following SWRL rule applies:
+
+c4o:InTextReferencePointerList\(?l\), c4o:denotes\(?p, ?r\), swan:item\(?l, ?i\), swan:itemContent\(?i, ?p\) -> c4o:pertainsTo\(?l, ?r\)).freeze,
       label: "single reference pointer list".freeze,
       subClassOf: "c4o:InTextReferencePointerList".freeze,
       type: "owl:Class".freeze
@@ -73,7 +79,7 @@ Or, less commonly, by the use of a code, e.g. by specifying the first surname le
       type: "owl:DatatypeProperty".freeze
     property :hasContext,
       comment: %(This property is used to indicate the textual context \(e.g. a sentence or a paragraph\) of a particular in-text reference pointer, this context providing the rhetorical motivation for the existence of that citation.).freeze,
-      :"dc11:description" => [],
+      :"dc11:description" => %(Any FRBR expression that constitutes the range of this property can have at most one particular literal textual content specified through the property c4o:hasContent.).freeze,
       domain: "c4o:InTextReferencePointer".freeze,
       label: "has context".freeze,
       subPropertyOf: "owl:topObjectProperty".freeze,
@@ -114,7 +120,7 @@ Or, less commonly, by the use of a code, e.g. by specifying the first surname le
       comment: %(A property used to assert the connection between a bibliographic reference and the in-text reference pointer that points to it.).freeze,
       domain: "http://purl.org/spar/biro/BibliographicReference".freeze,
       label: "is denoted by".freeze,
-      :"owl:inverseOf" => [],
+      :"owl:inverseOf" => %(c4o:denotes).freeze,
       range: "c4o:InTextReferencePointer".freeze,
       subPropertyOf: "owl:topObjectProperty".freeze,
       type: "owl:ObjectProperty".freeze

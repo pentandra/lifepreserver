@@ -13,7 +13,7 @@ module Vocab
     term :Abstract,
       comment: %(A brief summary of a book, a research article, thesis, review, conference proceeding or any in-depth analysis of a particular subject or discipline, the purpose of which is to help the reader quickly ascertain the publication's purpose.).freeze,
       label: "abstract".freeze,
-      :"owl:equivalentClass" => [],
+      :"owl:equivalentClass" => %(http://salt.semanticauthoring.org/ontologies/sro#Abstract).freeze,
       type: "owl:Class".freeze
     term :Afterword,
       comment: %(A literary device that is often found at the end of a piece of literature. It generally covers the story of how the book came into being, or how the idea for the book was developed. Alternatively, it may be written by someone other than the author of the book, and may discuss the work's historical or cultural context, if the work is being reissued many years after its original publication.).freeze,
@@ -55,18 +55,18 @@ module Vocab
     term :ChapterLabel,
       comment: %(A block containing a label for the chapter, that may include the chapter number.).freeze,
       label: "chapter label".freeze,
-      :"owl:disjointWith" => [],
+      :"owl:disjointWith" => %(doco:SectionLabel).freeze,
       type: "owl:Class".freeze
     term :ChapterSubtitle,
       comment: %(The subtitle of a chapter.).freeze,
       label: "chapter subtitle".freeze,
-      :"owl:disjointWith" => [],
+      :"owl:disjointWith" => %(doco:SectionSubtitle).freeze,
       subClassOf: "doco:Subtitle".freeze,
       type: "owl:Class".freeze
     term :ChapterTitle,
       comment: %(The title of a chapter.).freeze,
       label: "chapter title".freeze,
-      :"owl:disjointWith" => [],
+      :"owl:disjointWith" => %(doco:SectionTitle).freeze,
       subClassOf: "doco:Title".freeze,
       type: "owl:Class".freeze
     term :Colophon,
@@ -86,7 +86,7 @@ module Vocab
     term :FigureBox,
       comment: %(A space within a document that contains a figure and its caption.).freeze,
       label: "figure box".freeze,
-      :"owl:disjointWith" => [],
+      :"owl:disjointWith" => %(doco:TableBox).freeze,
       type: "owl:Class".freeze
     term :FigureLabel,
       comment: %(A block containing a label for the figure box, that may include the figure number.).freeze,
@@ -113,7 +113,7 @@ module Vocab
     term :FrontMatter,
       comment: %(The initial principle part of a document, usually containing self-referential metadata. In a book, this typically includes its title, authors, publisher, publication date, ISBN and copyright declaration, together with the preface, foreword, table of content, etc. In a journal article, the front matter is normally restricted to the title, authors and the authors' affiliation details, although the latter may alternatively be included in a footnote or the back matter. In books, the front matter pages may be numbered in lowercase Roman numerals.).freeze,
       label: "front matter".freeze,
-      :"owl:equivalentClass" => [],
+      :"owl:equivalentClass" => %(http://purl.org/orb/1.0/Header).freeze,
       type: "owl:Class".freeze
     term :Glossary,
       comment: %(A set of definitions of words or phrases of importance to the work, normally alphabetized. In longer works of fiction, the entries may contains places and characters.).freeze,
@@ -143,7 +143,7 @@ A distinct numbered group of lines in verse is normally called a stanza.).freeze
     term :ListOfAgents,
       comment: %(A list of items each denoting an agent, such as an author, a contributor or an organization, related to a particular publication.).freeze,
       label: "list of agents".freeze,
-      :"owl:disjointWith" => [],
+      :"owl:disjointWith" => %(doco:ListOfReferences).freeze,
       subClassOf: "doco:List".freeze,
       type: "owl:Class".freeze
     term :ListOfAuthors,
