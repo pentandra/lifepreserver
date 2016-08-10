@@ -109,8 +109,9 @@ GEM
     json-ld (2.0.0.1)
       multi_json (~> 1.11)
       rdf (~> 2.0)
-    jsonlint (0.1.0)
+    jsonlint (0.2.0)
       oj (~> 2)
+      trollop (~> 2)
     jwt (0.1.13)
       multi_json (>= 1.5)
     kramdown (1.11.1)
@@ -329,6 +330,7 @@ DEPENDENCIES
   guard
   guard-livereload
   guard-nanoc
+  haml
   html5small
   html_spellchecker!
   json

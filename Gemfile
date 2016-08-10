@@ -30,6 +30,7 @@ gem 'pygmentize'         # For syntax coloring
 gem 'nanoc-cachebuster', :git => 'https://github.com/cdchapman/nanoc-cachebuster', :branch => 'nanoc-4'
 gem 'nenv'               # For better environment variable handling
 gem 'ruby-version'
+gem 'haml'
 
 group :development do
   gem 'guard'
