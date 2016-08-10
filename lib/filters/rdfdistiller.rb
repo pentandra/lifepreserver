@@ -8,62 +8,38 @@ module Nanoc::Filters
 
     def run(content, params={})
 
-      input = params[:in] || "turtle"
-      output = params[:out] || "turtle"
+      input = params.fetch(:in, @item.identifier.ext)
+      output = params.fetch(:out, "turtle")
 
       base_uri = params[:base_uri] || @item[:base_uri] || @config[:base_url] + @item.path
+      prefix = params[:prefix] || @item[:prefix] || camelize(File.basename(@item.identifier.without_exts))
+      prefixes = params.fetch(:prefixes, {})
 
       options = {
-        standard_prefixes: true,
-        prefixes: {},
+        prefixes: prefixes,
         base_uri: base_uri,
-        validate: true,
-        simple_compact_iris: true,
+        validate: true
       }
 
       repository = RDF::Repository.new
       
       RDF::Reader.for(input.to_sym).new(content, options) { |reader| repository << reader }
 
+      vocab = RDF::Vocabulary.find(base_uri) || RDF::Vocabulary.from_graph(repository, url: base_uri, class_name: prefix.to_s.upcase)
+      
       output_format = RDF::Format.for(output.to_sym).to_sym
 
       case output_format
-      when :jsonld
-        options.merge!(
-          context: @item[:context] || {}, 
-          documentLoader: self.class.method(:load_document_local)
-        )
-
-        jsonld = ::JSON.parse repository.dump(output_format, options)
-
-        # Pull out statements about the default graph if any exist
-        if jsonld['@graph'] then
-          meta = jsonld['@graph'].select { |node| node['@id'] == base_uri or node['@id'] == "" }.first
-          unless meta.nil? then
-            jsonld['@graph'].delete(meta)
-            jsonld.merge!(meta)
-          end
-        end
-
-        # Replace context with original context
-        if @item[:context] then
-          jsonld['@context'] = @item[:context]
-        end
-
-        ::JSON.pretty_generate jsonld
+      when :turtle
+        vocab.to_ttl(graph: repository, prefixes: prefixes)
+      when :jsonld 
+        vocab.to_jsonld(graph: repository, prefixes: prefixes)
+      when :rdfa
+        vocab.to_html(graph: repository, prefixes: prefixes, template: File.expand_path("../../../etc/vocabulary.haml", __FILE__))
       else
         repository.dump(output_format, options)
       end
 
-    end
-
-    def self.load_document_local(url, options={}, &block)
-      if (RDF::URI(url, canonicalize: true) == RDF::URI('http://www.w3.org/ns/anno.jsonld'))
-        remote_document = JSON::LD::API::RemoteDocument.new(url, File.read('var/contexts/anno.jsonld'))
-        return block_given? ? yield(remote_document) : remote_document
-      else
-        JSON::LD::API.documentLoader(url, options, &block)
-      end
     end
 
   end

@@ -145,14 +145,23 @@ end
 
 ignore '/spec/README.*'
 
+compile '/spec/**/*.ttl' do
+  filter :rdf_distiller, out: :turtle
+end
+
 compile '/spec/**/*.ttl', rep: :jsonld do
-  filter :rdf_distiller, in: :ttl, out: :jsonld
+  filter :rdf_distiller, out: :jsonld
   write item.identifier.without_ext + '.jsonld'
 end
 
 compile '/spec/**/*.ttl', rep: :rdfxml do
-  filter :rdf_distiller, in: :ttl, out: :rdfxml
+  filter :rdf_distiller, out: :rdfxml
   write item.identifier.without_ext + '.rdf'
+end
+
+compile '/spec/**/*.ttl', rep: :html do
+  filter :rdf_distiller, out: :html
+  write item.identifier.without_ext + '.html'
 end
 
 compile '/spec/**/*.md' do
