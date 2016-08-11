@@ -41,7 +41,7 @@ module Vocabulary
   end
 
   def document_vocabularies
-    [ :deo, :doco, :c4o ]
+    [ :c4o, :deo, :doco, :fabio ]
   end
 
   def instance_vocabularies
