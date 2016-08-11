@@ -161,6 +161,8 @@ end
 
 compile '/spec/**/*.ttl', rep: :html do
   layout '/spec/vocabulary.*'
+  filter :cache_buster if @config[:production]
+  filter :html5small if @config[:production]
   write item.identifier.without_ext + '.html'
 end
 
