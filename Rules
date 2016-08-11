@@ -160,11 +160,11 @@ compile '/spec/**/*.ttl', rep: :rdfxml do
 end
 
 compile '/spec/**/*.ttl', rep: :html do
-  layout '/spec/vocabulary.*'
+  layout '/spec/vocabulary.*', output: :html
   write item.identifier.without_ext + '.html'
 end
 
-layout '/spec/vocabulary.*', :rdf_distiller, output: :html
+layout '/spec/vocabulary.*', :rdf_distiller
 
 compile '/spec/**/*.md' do
   filter :kramdown, @config[:kramdown]
