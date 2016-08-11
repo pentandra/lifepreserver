@@ -20,7 +20,7 @@ module Nanoc::Filters
     #       layout '/template.*'
     #     end
     #
-    #     layout '/template.*', :rdf_distiller, output: :html
+    #     layout '/template.*', :rdf_distiller, format: :html
     #
     # @param [String] _content Ignored. As the filter can be run as a layout,
     # the value of the `:content` parameter passed to the class at
@@ -31,8 +31,8 @@ module Nanoc::Filters
     # @return [String] The distilled content
     def run(_content, params={})
 
-      input = params.fetch(:input, @item.identifier.ext)
-      output = params.fetch(:output, "turtle")
+      input = params.fetch(:input_format, @item.identifier.ext)
+      output = params.fetch(:format, "turtle")
 
       base_uri = params[:base_uri] || @item[:base_uri] || @config[:base_url] + @item.path
       prefix = params[:prefix] || @item[:prefix] || camelize(File.basename(@item.identifier.without_exts))

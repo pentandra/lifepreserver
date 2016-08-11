@@ -146,25 +146,25 @@ end
 ignore '/spec/README.*'
 
 compile '/spec/**/*.ttl' do
-  filter :rdf_distiller, output: :turtle
+  filter :rdf_distiller, format: :turtle
 end
 
 compile '/spec/**/*.ttl', rep: :jsonld do
-  filter :rdf_distiller, output: :jsonld
+  filter :rdf_distiller, format: :jsonld
   write item.identifier.without_ext + '.jsonld'
 end
 
 compile '/spec/**/*.ttl', rep: :rdfxml do
-  filter :rdf_distiller, output: :rdfxml
+  filter :rdf_distiller, format: :rdfxml
   write item.identifier.without_ext + '.rdf'
 end
 
 compile '/spec/**/*.ttl', rep: :html do
-  layout '/spec/vocabulary.*', output: :html
+  layout '/spec/vocabulary.*'
   write item.identifier.without_ext + '.html'
 end
 
-layout '/spec/vocabulary.*', :rdf_distiller
+layout '/spec/vocabulary.*', :rdf_distiller, format: :html
 
 compile '/spec/**/*.md' do
   filter :kramdown, @config[:kramdown]
