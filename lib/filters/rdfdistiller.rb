@@ -14,6 +14,7 @@ module Nanoc::Filters
       base_uri = params[:base_uri] || @item[:base_uri] || @config[:base_url] + @item.path
       prefix = params[:prefix] || @item[:prefix] || camelize(File.basename(@item.identifier.without_exts))
       prefixes = params.fetch(:prefixes, {})
+      template = params[:template] || File.expand_path("../../../etc/vocabulary.haml", __FILE__)
 
       output_format = RDF::Format.for(output.to_sym).to_sym
 
@@ -36,7 +37,7 @@ module Nanoc::Filters
         when :jsonld 
           vocab.to_jsonld(graph: repository, prefixes: prefixes)
         when :rdfa
-          vocab.to_html(graph: repository, prefixes: prefixes, template: File.expand_path("../../../etc/vocabulary.haml", __FILE__))
+          vocab.to_html(graph: repository, prefixes: prefixes, template: template)
         else
           repository.dump(output_format, options)
         end
