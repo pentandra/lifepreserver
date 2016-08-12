@@ -2,7 +2,7 @@
 
   <%= render('/partials/header.*') %>
 
-  <main id="article-content" prefix="<%= prefix_mappings_for(*INSTANCE_VOCABULARIES) %>">
+  <main id="article-content" prefix="<%= prefix_mappings_for(*INSTANCE_PREFIXES) %>">
     <div class="content">
 
       <%= render('/partials/wip.*') if @item[:wip] %>

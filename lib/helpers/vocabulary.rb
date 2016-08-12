@@ -3,15 +3,15 @@ require "rdf/vocab"
 
 module Vocabulary
 
-  STANDARD_VOCABULARIES = [ :cc, :ctag, :dc, :foaf, :owl, :prov, :rdf, :rdfa, :rdfs, :schema, :sioc, :skos, :xhv, :xsd ].freeze unless defined?(STANDARD_VOCABULARIES)
+  STANDARD_PREFIXES = [ :cc, :ctag, :dc, :foaf, :owl, :prov, :rdf, :rdfa, :rdfs, :schema, :sioc, :skos, :xhv, :xsd ].freeze unless defined?(STANDARD_PREFIXES)
 
-  COMPANY_VOCABULARIES = [ :essglobal, :pentandra, :"pentandra-blog", :"pentandra-website", :rov ].freeze unless defined?(COMPANY_VOCABULARIES)
+  COMPANY_PREFIXES = [ :essglobal, :pentandra, :"pentandra-blog", :"pentandra-website", :rov ].freeze unless defined?(COMPANY_PREFIXES)
 
-  OPEN_GRAPH_VOCABULARIES = [ :article, :og, :profile ].freeze unless defined?(OPEN_GRAPH_VOCABULARIES)
+  OPEN_GRAPH_PREFIXES = [ :article, :og, :profile ].freeze unless defined?(OPEN_GRAPH_PREFIXES)
 
-  DOCUMENT_VOCABULARIES = [ :c4o, :deo, :doco, :fabio ].freeze unless defined?(DOCUMENT_VOCABULARIES)
+  DOCUMENT_PREFIXES = [ :c4o, :deo, :doco, :fabio ].freeze unless defined?(DOCUMENT_PREFIXES)
 
-  INSTANCE_VOCABULARIES = [ :dbo, :dbr, :yago ].freeze unless defined?(INSTANCE_VOCABULARIES)
+  INSTANCE_PREFIXES = [ :dbo, :dbr, :yago ].freeze unless defined?(INSTANCE_PREFIXES)
 
   # Returns the pname for a prefix and reference
   def v(prefix, reference)
