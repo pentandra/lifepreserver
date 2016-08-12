@@ -3,7 +3,7 @@ require "rdf/vocab"
 
 module Vocabulary
 
-  STANDARD_PREFIXES = [ :cc, :ctag, :dc, :foaf, :owl, :prov, :rdf, :rdfa, :rdfs, :schema, :sioc, :skos, :xhv, :xsd ].freeze unless defined?(STANDARD_PREFIXES)
+  STANDARD_PREFIXES = [ :cc, :ctag, :dc, :foaf, :owl, :prov, :rdf, :rdfs, :schema, :sioc, :skos, :xhv, :xsd ].freeze unless defined?(STANDARD_PREFIXES)
 
   COMPANY_PREFIXES = [ :essglobal, :pentandra, :"pentandra-blog", :"pentandra-website", :rov ].freeze unless defined?(COMPANY_PREFIXES)
 
