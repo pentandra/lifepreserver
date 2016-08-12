@@ -2,7 +2,7 @@
 title: Blog
 description: A collection of our thoughts about Pentandra and the future of research.
 ---
-<div class="group" prefix="<%= prefixes_for(:sioct) %>" resource="pentandra-blog:blog" typeof="schema:Blog sioct:Weblog">
+<div class="group" prefix="<%= prefix_mappings_for(:sioct) %>" resource="pentandra-blog:blog" typeof="schema:Blog sioct:Weblog">
 
   <h1 property="schema:name sioc:name"><%= @config[:blog][:title] %></h1>
 
