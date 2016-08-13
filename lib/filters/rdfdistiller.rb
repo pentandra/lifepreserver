@@ -50,7 +50,7 @@ module Nanoc::Filters
       
       RDF::Reader.for(input.to_sym).new(assigns[:content], options) { |reader| repository << reader }
       
-      if repository.query(predicate: RDF.type).map(&:object).include?(RDF::OWL.Ontology)
+      if repository.query([RDF::URI.new(base_uri), RDF.type, nil]).map(&:object).include?(RDF::OWL.Ontology)
         vocab = RDF::Vocabulary.find(base_uri) || RDF::Vocabulary.from_graph(repository, url: base_uri, class_name: prefix.to_s.upcase)
       
         case output_format
