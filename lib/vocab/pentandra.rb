@@ -28,7 +28,7 @@ module Vocab
       :"vcard:hasEmail" => %(mailto:chris@pentandra.com).freeze,
       :"vcard:hasGender" => %(vcard:Male).freeze,
       :"vcard:hasPhoto" => %(https://pentandra.com/images/chris-chapman-150x150.jpg).freeze,
-      :"vcard:rev" => %(2016-08-10).freeze,
+      :"vcard:rev" => %(2016-08-11).freeze,
       :"vcard:title" => %(Co-founder and Super Coder).freeze
     term :company,
       :"foaf:homepage" => %(https://pentandra.com).freeze,
@@ -92,7 +92,7 @@ module Vocab
       :"vcard:hasLogo" => %(https://pentandra.com/images/pentandra-logo.png).freeze,
       :"vcard:hasTelephone" => %(tel:+14352942964).freeze,
       :"vcard:hasURL" => %(https://pentandra.com).freeze,
-      :"vcard:rev" => %(2016-08-10).freeze
+      :"vcard:rev" => %(2016-08-11).freeze
     term :contact,
       label: "contact".freeze,
       type: "schema:ContactPage".freeze
@@ -136,7 +136,7 @@ module Vocab
       :"vcard:hasEmail" => %(mailto:katie@pentandra.com).freeze,
       :"vcard:hasGender" => %(vcard:Female).freeze,
       :"vcard:hasPhoto" => %(https://pentandra.com/images/katie-chapman-150x150.jpg).freeze,
-      :"vcard:rev" => %(2016-08-10).freeze,
+      :"vcard:rev" => %(2016-08-11).freeze,
       :"vcard:title" => %(Co-founder and Exception Thinker).freeze
     term :mission,
       :"http://vocab.data.gov/def/fea#description" => %(Pentandra’s mission is to open up the knowledge of the world, so that light and understanding will be more accessible to everyone.
