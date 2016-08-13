@@ -18,7 +18,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (5.0.0)
+    activesupport (5.0.0.1)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (~> 0.7)
       minitest (~> 5.1)
@@ -106,7 +106,7 @@ GEM
       ffi (~> 1.0.7)
     i18n (0.7.0)
     json (1.8.1)
-    json-ld (2.0.0.1)
+    json-ld (2.0.1)
       multi_json (~> 1.11)
       rdf (~> 2.0)
     jsonlint (0.2.0)
@@ -173,6 +173,7 @@ GEM
     optipng (0.2.1)
       command-builder (>= 0.2.0)
       unix-whereis (>= 0.1.0)
+    pandoc-ruby (2.0.1)
     pipe-run (0.3.0)
     pkg-config (1.1.7)
     pry (0.10.4)
@@ -243,7 +244,7 @@ GEM
     rdf-turtle (2.0.0)
       ebnf (~> 1.0, >= 1.0.1)
       rdf (~> 2.0)
-    rdf-vocab (2.0.2)
+    rdf-vocab (2.0.3)
       rdf (~> 2.0)
     rdf-xsd (2.0.0)
       rdf (~> 2.0)
@@ -343,6 +344,7 @@ DEPENDENCIES
   nenv
   nokogiri
   optipng
+  pandoc-ruby
   pry
   pygmentize
   rainpress

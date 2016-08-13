@@ -31,6 +31,7 @@ gem 'nanoc-cachebuster', :git => 'https://github.com/cdchapman/nanoc-cachebuster
 gem 'nenv'               # For better environment variable handling
 gem 'ruby-version'
 gem 'haml'
+gem 'pandoc-ruby'        # For benefit reports in ConTeXt
 
 group :development do
   gem 'guard'
