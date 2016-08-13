@@ -114,6 +114,10 @@ jsonld:
   uri: "http://www.w3.org/ns/json-ld#"
   alias: true
 
+mp:
+  uri: "http://purl.org/mp/"
+  source: "https://raw.githubusercontent.com/timclark001/mp/master/mp.owl"
+
 oa:
   uri: "http://www.w3.org/ns/oa#"
   alias: true
