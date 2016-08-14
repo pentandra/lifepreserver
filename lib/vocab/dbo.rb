@@ -22500,7 +22500,7 @@ http://vocab.getty.edu/ulan/$1).freeze,
               The DBpedia ontology provides the classes and properties used in the DBpedia data set.
             ).freeze,
       :"dc:issued" => %(2008-11-17T12:00Z).freeze,
-      :"dc:modified" => %(2016-08-12T18:55Z).freeze,
+      :"dc:modified" => %(2016-08-13T22:30Z).freeze,
       :"dc:publisher" => %(DBpedia Maintainers).freeze,
       :"dc:source" => %(http://mappings.dbpedia.org).freeze,
       :"dc:title" => %(The DBpedia Ontology).freeze,
