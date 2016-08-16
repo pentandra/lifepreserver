@@ -101,6 +101,7 @@ git:
   url: "https://github.com/pentandra/lifepreserver.git"
   browse_url: "https://github.com/pentandra/lifepreserver"
   tag_url: "https://github.com/pentandra/lifepreserver/releases/tag"
+  version_history_url: "https://github.com/lifepreserver/commits/master"
 
 site:
   name: Pentandra
