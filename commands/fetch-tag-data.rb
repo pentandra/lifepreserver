@@ -47,9 +47,8 @@ run do |opts, args, cmd|
     puts "Querying remote endpoint for <#{uri}>…"
 
     sparql.query(query).each do |solution|
-      t = tag.to_sym
-      data[t] = { uri: uri }
-      solution.each_binding { |name, v| data[t][name] = v.value }
+      data[tag] = { uri: uri }
+      solution.each_binding { |name, v| data[tag][name] = v.value }
     end
 
   end
