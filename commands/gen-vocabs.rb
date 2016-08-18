@@ -19,7 +19,9 @@ class GenVocabs < Nanoc::CLI::CommandRunner
 
     template = File.read('etc/vocabs.yaml')
 
-    context = Nanoc::Int::Context.new(env)
+    context = Nanoc::Int::Context.new({
+      config: Nanoc::ConfigView.new(site.config, nil)
+    })
 
     vocabs = symbolize(YAML.load(ERB.new(template).result(context.get_binding)))
 
@@ -61,16 +63,6 @@ class GenVocabs < Nanoc::CLI::CommandRunner
   end
 
   protected
-
-  def env
-    self.class.env_for_site(site)
-  end
-
-  def self.env_for_site(site)
-    {
-      config: Nanoc::ConfigView.new(site.config, nil)
-    }
-  end
 
   def validate_options_and_arguments
     if arguments.empty? && !options[:all] && !options[:list]
