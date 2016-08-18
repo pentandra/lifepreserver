@@ -24,14 +24,15 @@ gem 'addressable'
 gem 'rubypants-unicode'
 gem 'linkeddata'
 gem 'jsonlint'
-gem 'pry'                # For nanoc shell
-gem 'w3c_validators'     # For nanoc check
-gem 'pygmentize'         # For syntax coloring
+gem 'pry'                # for nanoc shell
+gem 'w3c_validators'     # for nanoc check
+gem 'pygmentize'         # for syntax coloring
 gem 'nanoc-cachebuster', :git => 'https://github.com/cdchapman/nanoc-cachebuster', :branch => 'nanoc-4'
-gem 'nenv'               # For better environment variable handling
+gem 'nenv'               # for better environment variable handling
 gem 'ruby-version'
 gem 'haml'
-gem 'pandoc-ruby'        # For benefit reports in ConTeXt
+gem 'pandoc-ruby'        # for benefit reports in ConTeXt
+gem 'git'                # for version and tagging info
 
 group :development do
   gem 'guard'
