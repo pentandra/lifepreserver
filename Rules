@@ -222,12 +222,9 @@ end
 
 # Blog posts
 
-compile '/blog/**/*.{md,mmd}' do
+compile '/blog/**/*.md' do
   filter :erb, trim_mode: '>'
-  if 'mmd' == @item[:extension]
-  else # assume Markdown
-    filter :kramdown, @config[:kramdown]
-  end
+  filter :kramdown, @config[:kramdown]
   filter :colorize_syntax, default_colorizer: :pygmentize, pygmentize: { nowrap: 'True' }
   filter :absolutify_local_paths
   filter :spellchecker unless @config[:production]
@@ -268,11 +265,11 @@ route '/404.erb' do
   item.identifier.without_ext + '.html'
 end
 
-route '/**/index.{erb,html,md,mmd}' do
+route '/**/index.{erb,html,md}' do
   item.identifier.without_ext + '.html'
 end
 
-route '/**/*.{erb,html,md,mmd}' do
+route '/**/*.{erb,html,md}' do
   item.identifier.without_ext + '/index.html'
 end
 
