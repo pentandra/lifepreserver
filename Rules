@@ -11,7 +11,7 @@ preprocess do
 
   git = Git.open(__dir__)
 
-  @config[:version] = @config[:production] ? git.describe('HEAD', exact_match: true) : git.describe # All production releases must be at a tag
+  @config[:version] = @config[:production] ? git.describe('HEAD', exact_match: true) : git.describe('HEAD', abbrev: 0) # All production releases must be at a tag
 
   def assign_date_to_all_items
     @items.each do |item|
