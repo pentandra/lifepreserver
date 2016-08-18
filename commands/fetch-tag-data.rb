@@ -16,7 +16,7 @@ run do |opts, args, cmd|
   sparql = SPARQL::Client.new("http://dbpedia.org/sparql")
 
   semantic_tags.each do |tag, uri|
-    query = "
+    query = <<-QUERY
       PREFIX dbo: <http://dbpedia.org/ontology/>
       PREFIX foaf: <http://xmlns.com/foaf/0.1/>
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -41,21 +41,22 @@ run do |opts, args, cmd|
             FILTER (?other != ?type)
           }
         }
-      }"
+      }
+    QUERY
 
-    puts "Query for #{uri}"
+    puts "Querying remote endpoint for <#{uri}>…"
 
-    result = sparql.query(query).first
-
-    next if result.nil?
-
-    data[tag] = { 'uri' => uri }
-    data[tag]['type'] = result[:type].value if result[:type]
-    data[tag]['label'] = result[:label].value if result[:label]
-    data[tag]['abstract'] = result[:abstract].value if result[:abstract]
-    data[tag]['topic'] = result[:topic].value if result[:topic]
+    sparql.query(query).each do |solution|
+      t = tag.to_sym
+      data[t] = { uri: uri }
+      solution.each_binding { |name, v| data[t][name] = v.value }
+    end
 
   end
 
+  puts "Writing tag data…"
+
   File.open("var/tag_data.yaml", 'w+') { |io| io.write(YAML.dump(data)) }
+
+  puts "Finished!"
 end

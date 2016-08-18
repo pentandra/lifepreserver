@@ -1,22 +1,22 @@
 <% render('/blog/default.*') do %>
   <div class="group">
 
-    <h1 property="schema:name"><%= tag %> Articles</h1>
+    <h1 property="schema:name"><%= "#{h tag}" %> Articles</h1>
 
-    <% if semantic_tag then %>
+    <% if semantic_tag %>
     <div class="bd">
       <p class="big">
         
-        The <span class="tags"><%= link_for_tag(tag) %></span> tag represents the concept <a href="<%= semantic_tag['uri'] %>" title="<%= semantic_tag['label'] %> on DBpedia"><cite><%= semantic_tag["label"].downcase %></cite></a>, which is described as follows:
+        The <span class="tags"><%= link_for_tag(tag) %></span> tag represents the concept <a href="<%= semantic_tag[:uri] %>" title="<%= semantic_tag[:label] %> on DBpedia"><cite><%= semantic_tag[:label].downcase %></cite></a>, which is described as follows:
       
       </p>
       <figure id="fig:<%= tag.to_slug %>" class="bq rev" resource="#<%= tag.to_slug('_') %>" typeof="schema:CreativeWork">
-        <blockquote property="schema:text" cite="<%= semantic_tag['uri'] %>">
-          <%= parse_abstract semantic_tag["abstract"] %>
+        <blockquote property="schema:text" cite="<%= semantic_tag[:uri] %>">
+          <%= parse_abstract(semantic_tag[:abstract]) %>
         </blockquote>
         <figcaption>
 
-          --- <a property="dc:title" rel="cc:attributionURL prov:wasDerivedFrom" href="<%= semantic_tag['topic'] %>"><cite><%= semantic_tag["label"] %></cite> on <b property="cc:attributionName">Wikipedia</b></a>, licensed under a <a property="cc:license" href="http://creativecommons.org/licenses/by-sa/3.0/"><abbr title="Creative Commons Attribution-ShareAlike 3.0 Unported" >CC-BY-SA</abbr> license</a>. 
+          --- <a property="dc:title" rel="cc:attributionURL prov:wasDerivedFrom" href="<%= semantic_tag[:topic] %>"><cite><%= semantic_tag[:label] %></cite> on <b property="cc:attributionName">Wikipedia</b></a>, licensed under a <a property="cc:license" href="http://creativecommons.org/licenses/by-sa/3.0/"><abbr title="Creative Commons Attribution-ShareAlike 3.0 Unported" >CC-BY-SA</abbr> license</a>. 
 
           <span class="small"><span class="icon-cc"></span><span class="icon-cc-by"></span><span class="icon-cc-sa"></span></span>
         

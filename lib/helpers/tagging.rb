@@ -7,10 +7,10 @@ module Tagging
 
   include Vocabulary
 
-  SEMANTIC_TAGS = YAML.load_file('var/tag_data.yaml') unless defined?(SEMANTIC_TAGS)
+  SEMANTIC_TAGS = YAML.load_file('var/tag_data.yaml').freeze unless defined?(SEMANTIC_TAGS)
 
   def semantic_tag?(tag)
-    SEMANTIC_TAGS.key?(tag)
+    SEMANTIC_TAGS.key?(tag.to_sym)
   end
 
   # from this thread: http://groups.google.com/group/nanoc/browse_thread/thread/caefcab791fd3c4b
@@ -87,7 +87,7 @@ module Tagging
   # multi-word tags.
   def link_for_tag(tag)
     if semantic_tag?(tag)
-      %[<a href="#{@config[:blog][:tags_url]}/#{h tag.to_slug}/" rel="tag ctag:tagged" resource="#tagged_#{h tag.to_slug('_')}" typeof="ctag:AuthorTag"><link property="ctag:means" resource="#{curie(SEMANTIC_TAGS[tag]["uri"])}" typeof="#{curie(SEMANTIC_TAGS[tag].fetch("type", "owl:Thing"))}" /><span property="ctag:label">#{h tag}</span></a>]
+      %[<a href="#{@config[:blog][:tags_url]}/#{h tag.to_slug}/" rel="tag ctag:tagged" resource="#tagged_#{h tag.to_slug('_')}" typeof="ctag:AuthorTag"><link property="ctag:means" resource="#{curie(SEMANTIC_TAGS[tag.to_sym][:uri])}" typeof="#{curie(SEMANTIC_TAGS[tag.to_sym].fetch(:type, "owl:Thing"))}" /><span property="ctag:label">#{h tag}</span></a>]
     else
       %[<a href="#{@config[:blog][:tags_url]}/#{h tag.to_slug}/" rel="tag">#{h tag}</a>]
     end
@@ -107,7 +107,7 @@ module Tagging
 
   def items_with_tag(tag, items=nil)
     items = @items if items.nil?
-    items.select { |i| (i[:tags] || []).include?(tag) }
+    items.select { |i| Array(i[:tags]).include?(tag) }
   end
 
   # Uses the convention by DBpedia that the first sentence of a new paragraph
@@ -124,7 +124,7 @@ module Tagging
   def generate_tag_pages(item_set)
     count_tags(item_set).each do |tag, count|
       @items.create(
-        %[<%= render("/blog/tag.*", tag: "#{tag}", semantic_tag: SEMANTIC_TAGS["#{tag}"]) %>],
+        %[<%= render("/blog/tag.*", tag: "#{tag}", semantic_tag: SEMANTIC_TAGS[:"#{tag}"]) %>],
         { title: "Tag: #{tag}", kind: "tag-page", count: count, is_hidden: true, description: "All posts having to do with the tag '#{tag}'" },
         "#{@config[:blog][:tags_url]}/#{tag.to_slug}/index.erb",
         binary: false
