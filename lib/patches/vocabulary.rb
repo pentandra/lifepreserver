@@ -13,7 +13,9 @@ module RDF
       end
 
       def find_by_prefix(prefix)
-        RDF::Vocabulary.detect { |v| v.__name__ && v.__prefix__ == prefix.to_sym }
+        vocab = RDF::Vocabulary.detect { |v| v.__name__ && v.__prefix__ == prefix.to_sym } 
+        raise "Could not find vocabulary for prefix: #{prefix}" unless vocab
+        vocab
       end
 
     end
