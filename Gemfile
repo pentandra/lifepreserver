@@ -6,33 +6,26 @@ gem 'nanoc'              # for compiling the site
 gem 'nokogiri'           # for parsing HTML
 gem 'rainpress'          # for compact CSS
 gem 'uglifier'           # for compact javascript
-gem 'html5small'
+gem 'html5small'         # for compact HTML
 gem 'activesupport'      # for to_slug
 gem 'vcardigan'          # for vCards
 gem 'rqrcode'            # for qrcodes
-gem 'chunky_png'         # PNG generation of qrcodes
+gem 'chunky_png'         # for PNG generation of qrcodes
 gem 'optipng'            # to compress the outputted qrcode
-gem 'builder'
-gem 'adsf'
-gem 'systemu'
-gem 'shortly'            # For URL shortening
-gem 'html_spellchecker', :git => 'https://github.com/cdchapman/HTML-Spellchecker', :branch => 'mark'
-gem 'json'
-gem 'jwt',               '~> 0.1'
-gem 'rest-client',       '~> 1.6'
-gem 'addressable'
+gem 'shortly'            # for URL shortening
+gem 'html_spellchecker', git: 'https://github.com/cdchapman/HTML-Spellchecker', branch: 'mark'
+gem 'rest-client'        # for downloads of external resources
 gem 'rubypants-unicode'
 gem 'linkeddata'
-gem 'jsonlint'
 gem 'pry'                # for nanoc shell
 gem 'w3c_validators'     # for nanoc check
 gem 'pygmentize'         # for syntax coloring
-gem 'nanoc-cachebuster', :git => 'https://github.com/cdchapman/nanoc-cachebuster', :branch => 'nanoc-4'
+gem 'nanoc-cachebuster', git: 'https://github.com/cdchapman/nanoc-cachebuster', branch: 'nanoc-4'
 gem 'nenv'               # for better environment variable handling
 gem 'ruby-version'
 gem 'haml'
 gem 'pandoc-ruby'        # for benefit reports in ConTeXt
-gem 'git'                # for version and tagging info
+gem 'git'                # for version history and tagging info
 
 group :development do
   gem 'guard'
