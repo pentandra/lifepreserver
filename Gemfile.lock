@@ -15,6 +15,23 @@ GIT
     nanoc-cachebuster (0.3.0)
       nanoc (>= 3.3.0)
 
+GIT
+  remote: https://github.com/ruby-rdf/rdf-vocab.git
+  revision: 1d623971734a59e61cae69a7e97988c2ab835ee6
+  branch: develop
+  specs:
+    rdf-vocab (2.1.0)
+      rdf (~> 2.1)
+
+GIT
+  remote: https://github.com/ruby-rdf/rdf.git
+  revision: 6a69875ba02e17e3daea78484b468575f564f7df
+  branch: develop
+  specs:
+    rdf (2.1.0)
+      hamster (~> 3.0)
+      link_header (~> 0.0, >= 0.0.8)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -184,9 +201,6 @@ GEM
       ffi (>= 1.0.6)
       msgpack (>= 0.4.3)
       trollop (>= 1.16.2)
-    rdf (2.1.0)
-      hamster (~> 3.0)
-      link_header (~> 0.0, >= 0.0.8)
     rdf-aggregate-repo (2.0.0)
       rdf (~> 2.0)
     rdf-isomorphic (2.0.0)
@@ -238,8 +252,6 @@ GEM
     rdf-turtle (2.0.0)
       ebnf (~> 1.0, >= 1.0.1)
       rdf (~> 2.0)
-    rdf-vocab (2.1.0)
-      rdf (~> 2.1)
     rdf-xsd (2.0.0)
       rdf (~> 2.0)
     ref (2.0.0)
@@ -337,6 +349,8 @@ DEPENDENCIES
   pygmentize
   rainpress
   rbtrace
+  rdf!
+  rdf-vocab!
   rest-client
   rqrcode
   ruby-version

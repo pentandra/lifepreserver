@@ -17,6 +17,8 @@ gem 'html_spellchecker', git: 'https://github.com/cdchapman/HTML-Spellchecker', 
 gem 'rest-client'        # for downloads of external resources
 gem 'rubypants-unicode'
 gem 'linkeddata'
+gem 'rdf-vocab',         git: 'https://github.com/ruby-rdf/rdf-vocab.git',      branch: 'develop'
+gem 'rdf',               git: 'https://github.com/ruby-rdf/rdf.git',            branch: 'develop'
 gem 'pry'                # for nanoc shell
 gem 'w3c_validators'     # for nanoc check
 gem 'pygmentize'         # for syntax coloring
