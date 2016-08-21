@@ -1,0 +1,4 @@
+<dl resource="<%= h "#{vocab.to_uri}" %>" typeof="voaf:Vocabulary">
+  <dt><a property="vann:preferredNamespaceUri" href="<%= h "#{vocab.to_uri}" %>"><abbr property="vann:preferredNamespacePrefix"><%= h vocab.__prefix__ %></abbr></a>: <span property="dc:title"><%= h ontology(vocab).fetch(:title) %></span></dt>
+  <dd property="dc:description"><%= h ontology(vocab).fetch(:description) %></dd>
+</dl>

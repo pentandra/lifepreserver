@@ -22,4 +22,10 @@ module Vocabulary
   def prefix_mappings_for(*prefixes)
     prefixes.map { |prefix| "#{prefix}: #{RDF::Vocabulary.find_by_prefix(prefix).to_uri}" }.join(" ")
   end
+
+  def ontology(vocab)
+    uri = vocab.ontology ? vocab.ontology.value : vocab.to_uri.value
+    VOAF_METADATA[uri.to_sym]
+  end
+
 end

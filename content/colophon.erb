@@ -159,6 +159,70 @@ changefreq: monthly
   </section>
 
 </section>
+<section class="noted section" prefix="<%= prefix_mappings_for(:voaf, :vann) %>" resource="pentandra-website:project">
+
+  <h2>The Vocabularies</h2>
+
+  <div class="bd">
+
+    <p>
+
+      In general, the syntaxes of <abbr title="HyperText Markup
+        Language">HTML5</abbr> is used for the document structure, <abbr
+        title="Cascading Style Sheets">CSS</abbr> for the visual design. To
+      describe the content and <em>meaning</em> of these web pages in a way
+      that can be expressed to a machine, the following vocabularies are used.
+
+    </p>
+
+  </div>
+  <section id="sec:standard-vocabularies" class="section">
+
+    <div class="bd">
+
+      <h3 class="flush">Standard Vocabularies</h3>
+
+      <ul class="none">
+        <% STANDARD_PREFIXES.map { |prefix| RDF::Vocabulary.find_by_prefix(prefix) }.each do |vocab| %>
+          <li><%= render("/partials/vocab_metadata.*", vocab: vocab) %></li>
+        <% end %>
+      </ul>
+
+    </div>
+
+  </section>
+  <section id="sec:business-vocabularies" class="section">
+
+    <div class="bd">
+
+      <h3 class="flush">Business Vocabularies</h3>
+
+      <ul class="none">
+        <% COMPANY_PREFIXES.map { |prefix| RDF::Vocabulary.find_by_prefix(prefix) }.each do |vocab| %>
+          <li><%= render("/partials/vocab_metadata.*", vocab: vocab) %></li>
+        <% end %>
+      </ul>
+
+    </div>
+
+  </section>
+  <section id="sec:document-vocabularies" class="section">
+
+    <div class="bd">
+
+      <h3 class="flush">Document Vocabularies</h3>
+
+      <ul class="none">
+        <% DOCUMENT_PREFIXES.map { |prefix| RDF::Vocabulary.find_by_prefix(prefix) }.each do |vocab| %>
+          <li><%= render("/partials/vocab_metadata.*", vocab: vocab) %></li>
+        <% end %>
+      </ul>
+
+    </div>
+
+  </section>
+
+</section>
 <section class="noted section">
 
   <h2>The Scripts</h2>
