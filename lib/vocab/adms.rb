@@ -9,6 +9,22 @@ module Vocab
   #   end
   class ADMS < RDF::StrictVocabulary("http://www.w3.org/ns/adms#")
 
+    # Ontology definition
+    ontology :"http://www.w3.org/ns/adms",
+      comment: %(This file specifies the set of RDF classes and properties used in ADMS).freeze,
+      :"dc:abstract" => %(ADMS is a profile of DCAT, used to describe semantic assets \(or just 'Assets'\), defined as highly reusable metadata \(e.g. xml schemata, generic data models\) and reference data \(e.g. code lists, taxonomies, dictionaries, vocabularies\) that are used for eGovernment system development.).freeze,
+      :"dc:description" => %(This is the RDF encoding of the Asset Description Metadata Schema, originally 
+    developed under the European Union's ISA Programme and further developed by the W3C Government Linked Data Working Group.
+    It re-uses terms from several other vocabularies, notably Dublin Core, with elements of SKOS, FOAF and more. ).freeze,
+      :"dc:modified" => [%(2013-05-24).freeze, %(2013-09-16).freeze, %(2013-12-21).freeze, %(2015-07-22).freeze],
+      :"dc:title" => %(Asset Description Metadata Schema \(ADMS\)).freeze,
+      :"http://purl.org/vocab/vann/preferredNamespacePrefix" => %(adms).freeze,
+      :"http://purl.org/vocab/vann/preferredNamespaceUri" => %(http://www.w3.org/ns/adms#).freeze,
+      :"http://purl.org/vocommons/voaf#specializes" => %(dcat:).freeze,
+      label: "Asset Description Metadata Schema (ADMS)".freeze,
+      type: ["http://purl.org/vocommons/voaf#Vocabulary".freeze, "owl:Ontology".freeze],
+      :"wdrs:describedby" => %(http://www.w3.org/TR/vocab-adms).freeze
+
     # Class definitions
     term :Asset,
       comment: %(An Asset is an abstract entity that reflects the intellectual content of the asset and represents those characteristics of the asset that are independent of its physical embodiment. This abstract entity combines the FRBR entities work \(a distinct intellectual or artistic creation\) and expression \(the intellectual or artistic realization of a work\). Assets can be versioned. Every time the intellectual content of an asset changes, the result is considered to be a new asset that can be linked to previous and next versions of the Asset. The physical embodiment of an Asset is called an Asset Distribution. A particular Asset may have zero or more Asset Distributions..).freeze,

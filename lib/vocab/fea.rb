@@ -9,6 +9,15 @@ module Vocab
   #   end
   class FEA < RDF::StrictVocabulary("http://vocab.data.gov/def/fea#")
 
+    # Ontology definition
+    ontology :"http://vocab.data.gov/def/fea#",
+      :"dc11:modified" => %(2015-06-26).freeze,
+      :"dc11:title" => %(FEA Vocabulary).freeze,
+      :"foaf:page" => %(http://vocab.data.gov/def/fea.html).freeze,
+      :"http://purl.org/vocab/vann/preferredNamespacePrefix" => %(fea).freeze,
+      :"http://purl.org/vocab/vann/preferredNamespaceUri" => %(http://vocab.data.gov/def/fea#).freeze,
+      type: "owl:Ontology".freeze
+
     # Class definitions
     term :Agency,
       comment: %(An agency of the US government).freeze,
@@ -293,15 +302,5 @@ PRM volume 1, p.13).freeze,
       range: "fea:IT_Initiative".freeze,
       :"rdfs:isDefinedBy" => %(fea:).freeze,
       type: "rdf:Property".freeze
-
-    # Extra definitions
-    term :"",
-      :"dc11:modified" => %(2015-06-26).freeze,
-      :"dc11:title" => %(FEA Vocabulary).freeze,
-      :"foaf:page" => %(http://vocab.data.gov/def/fea.html).freeze,
-      :"http://purl.org/vocab/vann/preferredNamespacePrefix" => %(fea).freeze,
-      :"http://purl.org/vocab/vann/preferredNamespaceUri" => %(http://vocab.data.gov/def/fea#).freeze,
-      label: "".freeze,
-      type: "owl:Ontology".freeze
   end
 end

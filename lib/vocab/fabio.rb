@@ -9,6 +9,27 @@ module Vocab
   #   end
   class FABIO < RDF::StrictVocabulary("http://purl.org/spar/fabio/")
 
+    # Ontology definition
+    ontology :"http://purl.org/spar/fabio/",
+      comment: %(FaBiO, the FRBR-aligned Bibliographic Ontology, is an ontology for recording and publishing on the Semantic Web bibliographic records of scholarly endeavours. It forms part of SPAR, a suite of Semantic Publishing and Referencing Ontologies.  Other SPAR ontologies are described at http://purl.org/spar/.
+
+This ontology is available at http://purl.org/spar/fabio, and uses the namespace prefix fabio.).freeze,
+      :"dc11:contributor" => [%(Paolo Ciccarese).freeze, %(Tim Clark).freeze],
+      :"dc11:creator" => [%(David Shotton).freeze, %(Silvio Peroni).freeze],
+      :"dc11:date" => %(2016-07-11).freeze,
+      :"dc11:description" => [%(FaBiO, the FRBR-aligned Bibliographic Ontology, is an ontology for recording and publishing on the Semantic Web descriptions of entities that are published or potentially publishable, and that contain or are referred to by bibliographic references, or entities used to define such bibliographic references. FaBiO entities are primarily textual publications such as books, magazines, newspapers and journals, and items of their content such as poems, conference papers and editorials.  However, they also include blogs, web pages, datasets, computer algorithms, experimental protocols, formal specifications and vocabularies, legal records, governmental papers, technical and commercial reports and similar publications, and also anthologies, catalogues and similar collections. 
+
+FaBiO classes are structured according to the FRBR schema of Works, Expressions, Manifestations and Items. Additional properties have been added to extends the FRBR data model by linking Works and Manifestations \(fabio:hasManifestation and fabio:isManifestationOf\), Works and Items \(fabio:hasPortrayal and fabio:isPortrayedBy\), and Expressions and Items  \(fabio:hasRepresentation and fabio:isRepresentedBy\).).freeze, %(https://svn.code.sf.net/p/sempublishing/code/FaBiO/FRBR%20diagram%20with%20new%20Fabio%20verbs.png).freeze],
+      :"dc11:rights" => %(This work is distributed under a Creative Commons Attribution License \(http://creativecommons.org/licenses/by/3.0/\).).freeze,
+      :"dc11:title" => %(FaBiO, the FRBR-aligned Bibliographic Ontology).freeze,
+      :"http://purl.org/vocab/vann/preferredNamespacePrefix" => %(fabio).freeze,
+      :"http://purl.org/vocab/vann/preferredNamespaceUri" => %(http://purl.org/spar/fabio/).freeze,
+      :"owl:backwardCompatibleWith" => %(https://svn.code.sf.net/p/sempublishing/code/FaBiO/2016-04-19-fabio-1_9_2.owl).freeze,
+      :"owl:imports" => %(http://purl.org/spar/frbr).freeze,
+      :"owl:priorVersion" => %(https://svn.code.sf.net/p/sempublishing/code/FaBiO/2016-04-19-fabio-1_9_2.owl).freeze,
+      :"owl:versionInfo" => %(1.9.3).freeze,
+      type: "owl:Ontology".freeze
+
     # Class definitions
     term :Abstract,
       comment: %(A brief summary of a work on a particular subject, designed to act as the point-of-entry that will help the reader quickly to obtain an overview of the work's contents.   The abstract may be an integral part of the work itself, written by the same author\(s\) and appearing at the beginning of a work such as a research paper, report, review or thesis.  Alternatively it may be separate from the published work itself, and written by someone other than the author\(s\) of the published work, for example by a member of a professional abstracting service such as CAB Abstracts.).freeze,
@@ -1619,26 +1640,6 @@ A retraction is a public statement made about an earlier statement that withdraw
       type: ["owl:DatatypeProperty".freeze, "owl:FunctionalProperty".freeze]
 
     # Extra definitions
-    term :"",
-      comment: %(FaBiO, the FRBR-aligned Bibliographic Ontology, is an ontology for recording and publishing on the Semantic Web bibliographic records of scholarly endeavours. It forms part of SPAR, a suite of Semantic Publishing and Referencing Ontologies.  Other SPAR ontologies are described at http://purl.org/spar/.
-
-This ontology is available at http://purl.org/spar/fabio, and uses the namespace prefix fabio.).freeze,
-      :"dc11:contributor" => [%(Paolo Ciccarese).freeze, %(Tim Clark).freeze],
-      :"dc11:creator" => [%(David Shotton).freeze, %(Silvio Peroni).freeze],
-      :"dc11:date" => %(2016-07-11).freeze,
-      :"dc11:description" => [%(FaBiO, the FRBR-aligned Bibliographic Ontology, is an ontology for recording and publishing on the Semantic Web descriptions of entities that are published or potentially publishable, and that contain or are referred to by bibliographic references, or entities used to define such bibliographic references. FaBiO entities are primarily textual publications such as books, magazines, newspapers and journals, and items of their content such as poems, conference papers and editorials.  However, they also include blogs, web pages, datasets, computer algorithms, experimental protocols, formal specifications and vocabularies, legal records, governmental papers, technical and commercial reports and similar publications, and also anthologies, catalogues and similar collections. 
-
-FaBiO classes are structured according to the FRBR schema of Works, Expressions, Manifestations and Items. Additional properties have been added to extends the FRBR data model by linking Works and Manifestations \(fabio:hasManifestation and fabio:isManifestationOf\), Works and Items \(fabio:hasPortrayal and fabio:isPortrayedBy\), and Expressions and Items  \(fabio:hasRepresentation and fabio:isRepresentedBy\).).freeze, %(https://svn.code.sf.net/p/sempublishing/code/FaBiO/FRBR%20diagram%20with%20new%20Fabio%20verbs.png).freeze],
-      :"dc11:rights" => %(This work is distributed under a Creative Commons Attribution License \(http://creativecommons.org/licenses/by/3.0/\).).freeze,
-      :"dc11:title" => %(FaBiO, the FRBR-aligned Bibliographic Ontology).freeze,
-      :"http://purl.org/vocab/vann/preferredNamespacePrefix" => %(fabio).freeze,
-      :"http://purl.org/vocab/vann/preferredNamespaceUri" => %(http://purl.org/spar/fabio/).freeze,
-      label: "".freeze,
-      :"owl:backwardCompatibleWith" => %(https://svn.code.sf.net/p/sempublishing/code/FaBiO/2016-04-19-fabio-1_9_2.owl).freeze,
-      :"owl:imports" => %(http://purl.org/spar/frbr).freeze,
-      :"owl:priorVersion" => %(https://svn.code.sf.net/p/sempublishing/code/FaBiO/2016-04-19-fabio-1_9_2.owl).freeze,
-      :"owl:versionInfo" => %(1.9.3).freeze,
-      type: "owl:Ontology".freeze
     term :SupplementaryInformationFile,
       comment: %(A file accompanying a published journal article, containing additional information of relevance to the article, typically available from the publisher's web site via a hyperlink from the journal article itself.).freeze,
       label: "SupplementaryInformationFile".freeze

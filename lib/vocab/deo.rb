@@ -9,6 +9,19 @@ module Vocab
   #   end
   class DEO < RDF::StrictVocabulary("http://purl.org/spar/deo/")
 
+    # Ontology definition
+    ontology :"http://purl.org/spar/deo",
+      comment: %(The Discourse Elements Ontology is an ontology for describing the major rhetorical elements of a document such as a journal article.  It is a subsidiary ontology that is imported into the Document Components Ontology, itself part of SPAR, the Semantic Publishing and Referencing Ontologies.  Other SPAR ontologies are described at http://purl.org/spar/.
+).freeze,
+      :"dc11:creator" => [%(David Shotton).freeze, %(Silvio Peroni).freeze],
+      :"dc11:date" => %(2015-07-03).freeze,
+      :"dc11:description" => %(DEO, The Discourse Elements Ontology, is an ontology written in OWL 2 DL that provides a structured vocabulary for rhetorical elements within documents \(e.g. Introduction, Discussion, Acknowledgements, Reference List, Figures, Appendix\), enabling these to be described in RDF.  It uses some of the rhetorical block elements from the SALT Rhetorical Ontology  and the Ontology of Rhetorical Blocks.).freeze,
+      :"dc11:rights" => %(This work is distributed under a Creative Commons Attribution License \(http://creativecommons.org/licenses/by/3.0/\).).freeze,
+      :"dc11:title" => %(The Discourse Elements Ontology
+     \(DEO\)).freeze,
+      :"owl:versionInfo" => %(1.1).freeze,
+      type: "owl:Ontology".freeze
+
     # Class definitions
     term :Acknowledgements,
       comment: %(Usually part of the preface, or a separate section in its own right, often as part of the back matter, it acknowledges those, including funding agencies, who contributed to the undertaking of a research project described in a publication, or to the creation of the work in some way. In scientific articles, the acknowledgements are usually placed as a separated section immediately following the Discussion or Conclusions.).freeze,

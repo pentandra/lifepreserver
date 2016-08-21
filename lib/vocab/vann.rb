@@ -9,6 +9,20 @@ module Vocab
   #   end
   class VANN < RDF::StrictVocabulary("http://purl.org/vocab/vann/")
 
+    # Ontology definition
+    ontology :"http://purl.org/vocab/vann/",
+      :"dc:creator" => %(http://iandavis.com/id/me).freeze,
+      :"dc:date" => %(2010-06-07).freeze,
+      :"dc:description" => %(This document describes a vocabulary for annotating descriptions of vocabularies with examples and usage notes.).freeze,
+      :"dc:identifier" => %(http://purl.org/vocab/vann/vann-vocab-20050401).freeze,
+      :"dc:isVersionOf" => %(vann:).freeze,
+      :"dc:replaces" => %(vann:vann-vocab-20040305).freeze,
+      :"dc:rights" => %(Copyright © 2005 Ian Davis).freeze,
+      :"dc:title" => %(VANN: A vocabulary for annotating vocabulary descriptions).freeze,
+      type: "owl:Ontology".freeze,
+      :"vann:preferredNamespacePrefix" => %(vann).freeze,
+      :"vann:preferredNamespaceUri" => %(http://purl.org/vocab/vann/).freeze
+
     # Property definitions
     property :changes,
       comment: %(A reference to a resource that describes changes between this version of a vocabulary and the previous.).freeze,
@@ -43,20 +57,5 @@ module Vocab
       :"rdfs:isDefinedBy" => %(vann:).freeze,
       subPropertyOf: "rdfs:seeAlso".freeze,
       type: "owl:AnnotationProperty".freeze
-
-    # Extra definitions
-    term :"",
-      :"dc:creator" => %(http://iandavis.com/id/me).freeze,
-      :"dc:date" => %(2010-06-07).freeze,
-      :"dc:description" => %(This document describes a vocabulary for annotating descriptions of vocabularies with examples and usage notes.).freeze,
-      :"dc:identifier" => %(http://purl.org/vocab/vann/vann-vocab-20050401).freeze,
-      :"dc:isVersionOf" => %(vann:).freeze,
-      :"dc:replaces" => %(vann:vann-vocab-20040305).freeze,
-      :"dc:rights" => %(Copyright © 2005 Ian Davis).freeze,
-      :"dc:title" => %(VANN: A vocabulary for annotating vocabulary descriptions).freeze,
-      label: "".freeze,
-      type: "owl:Ontology".freeze,
-      :"vann:preferredNamespacePrefix" => %(vann).freeze,
-      :"vann:preferredNamespaceUri" => %(http://purl.org/vocab/vann/).freeze
   end
 end

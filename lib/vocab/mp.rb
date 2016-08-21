@@ -9,6 +9,24 @@ module Vocab
   #   end
   class MP < RDF::StrictVocabulary("http://purl.org/mp/")
 
+    # Ontology definition
+    ontology :"http://purl.org/mp/",
+      comment: %(Micropublications: a Semantic Model for Claims, Evidence, Arguments and Annotations in Biomedical Communications.
+
+Author:         	Tim Clark \(1,2,3\)
+Contributors:   	Paolo Ciccarese \(1,2\), Carole Goble \(3\)
+
+Version 1.17, May 12, 2016.
+
+\(1\) Massachusetts General Hospital, Dept. of Neurology
+\(2\) Harvard Medical School
+\(3\) University of Manchester, School of Computer Science 
+
+).freeze,
+      :"owl:priorVersion" => %(1.17).freeze,
+      :"owl:versionInfo" => %(1.18).freeze,
+      type: "owl:Ontology".freeze
+
     # Class definitions
     term :ArticleText,
       label: "ArticleText".freeze,
@@ -360,24 +378,5 @@ module Vocab
     property :value,
       label: "value".freeze,
       type: ["owl:DatatypeProperty".freeze, "owl:FunctionalProperty".freeze]
-
-    # Extra definitions
-    term :"",
-      comment: %(Micropublications: a Semantic Model for Claims, Evidence, Arguments and Annotations in Biomedical Communications.
-
-Author:         	Tim Clark \(1,2,3\)
-Contributors:   	Paolo Ciccarese \(1,2\), Carole Goble \(3\)
-
-Version 1.17, May 12, 2016.
-
-\(1\) Massachusetts General Hospital, Dept. of Neurology
-\(2\) Harvard Medical School
-\(3\) University of Manchester, School of Computer Science 
-
-).freeze,
-      label: "".freeze,
-      :"owl:priorVersion" => %(1.17).freeze,
-      :"owl:versionInfo" => %(1.18).freeze,
-      type: "owl:Ontology".freeze
   end
 end

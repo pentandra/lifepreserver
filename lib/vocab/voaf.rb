@@ -9,6 +9,22 @@ module Vocab
   #   end
   class VOAF < RDF::StrictVocabulary("http://purl.org/vocommons/voaf#")
 
+    # Ontology definition
+    ontology :"http://purl.org/vocommons/voaf",
+      :"cc:license" => %(http://creativecommons.org/licenses/by/3.0/).freeze,
+      :"dc:contributor" => [%(http://data.semanticweb.org/person/lise-rozat).freeze, %(http://data.semanticweb.org/person/pierre-yves-vandenbussche).freeze],
+      :"dc:creator" => %(http://data.semanticweb.org/person/bernard-vatant).freeze,
+      :"dc:description" => %(A vocabulary to describe linked data vocabularies and their relations.).freeze,
+      :"dc:issued" => %(2011-03-11).freeze,
+      :"dc:modified" => %(2013-05-24).freeze,
+      :"dc:publisher" => %(http://dbpedia.org/resource/Open_Knowledge_Foundation).freeze,
+      :"dc:title" => %(Vocabulary of a Friend).freeze,
+      :"http://purl.org/vocab/frbr/core#realization" => [%(http://purl.org/vocommons/voaf/v1.0).freeze, %(http://purl.org/vocommons/voaf/v1.1).freeze, %(http://purl.org/vocommons/voaf/v2.0).freeze, %(http://purl.org/vocommons/voaf/v2.1).freeze, %(http://purl.org/vocommons/voaf/v2.2).freeze, %(http://purl.org/vocommons/voaf/v2.3).freeze],
+      :"http://purl.org/vocab/vann/preferredNamespacePrefix" => %(voaf).freeze,
+      :"http://purl.org/vocab/vann/preferredNamespaceUri" => %(http://purl.org/vocommons/voaf#).freeze,
+      type: ["owl:Ontology".freeze, "voaf:Vocabulary".freeze],
+      :"voaf:exampleDataset" => %(http://lov.okfn.org/dataset/lov/lov.rdf).freeze
+
     # Class definitions
     term :DatasetOccurrences,
       comment: %(Class used to store the number of occurences of a vocabulary in a particular dataset).freeze,

@@ -9,6 +9,30 @@ module Vocab
   #   end
   class DBO < RDF::StrictVocabulary("http://dbpedia.org/ontology/")
 
+    # Ontology definition
+    ontology :"http://dbpedia.org/ontology/",
+      :"cc:license" => [%(http://creativecommons.org/licenses/by-sa/3.0/).freeze, %(http://www.gnu.org/copyleft/fdl.html).freeze],
+      comment: %(
+              This ontology is generated from the manually created specifications in the DBpedia Mappings
+              Wiki. Each release of this ontology corresponds to a new release of the DBpedia data set which
+              contains instance data extracted from the different language versions of Wikipedia. For
+              information regarding changes in this ontology, please refer to the DBpedia Mappings Wiki.
+            ).freeze,
+      :"dc:creator" => %(DBpedia Maintainers and Contributors).freeze,
+      :"dc:description" => %(
+              The DBpedia ontology provides the classes and properties used in the DBpedia data set.
+            ).freeze,
+      :"dc:issued" => %(2008-11-17T12:00Z).freeze,
+      :"dc:modified" => %(2016-08-19T06:53Z).freeze,
+      :"dc:publisher" => %(DBpedia Maintainers).freeze,
+      :"dc:source" => %(http://mappings.dbpedia.org).freeze,
+      :"dc:title" => %(The DBpedia Ontology).freeze,
+      :"foaf:homepage" => %(http://wiki.dbpedia.org/Ontology).freeze,
+      :"http://purl.org/vocab/vann/preferredNamespacePrefix" => %(dbo).freeze,
+      :"http://purl.org/vocab/vann/preferredNamespaceUri" => %(http://dbpedia.org/ontology/).freeze,
+      :"owl:versionInfo" => %(latest-snapshot).freeze,
+      type: ["http://purl.org/vocommons/voaf#Vocabulary".freeze, "owl:Ontology".freeze]
+
     # Class definitions
     term :Abbey,
       comment: %(An abbey is a Catholic monastery or convent, under the authority of an Abbot or an Abbess, who serves as the spiritual father or mother of the community.).freeze,
@@ -22485,30 +22509,5 @@ http://vocab.getty.edu/ulan/$1).freeze,
       label: "zodiac sign".freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:zodiacSign).freeze,
       type: ["owl:ObjectProperty".freeze, "rdf:Property".freeze]
-
-    # Extra definitions
-    term :"",
-      :"cc:license" => [%(http://creativecommons.org/licenses/by-sa/3.0/).freeze, %(http://www.gnu.org/copyleft/fdl.html).freeze],
-      comment: %(
-              This ontology is generated from the manually created specifications in the DBpedia Mappings
-              Wiki. Each release of this ontology corresponds to a new release of the DBpedia data set which
-              contains instance data extracted from the different language versions of Wikipedia. For
-              information regarding changes in this ontology, please refer to the DBpedia Mappings Wiki.
-            ).freeze,
-      :"dc:creator" => %(DBpedia Maintainers and Contributors).freeze,
-      :"dc:description" => %(
-              The DBpedia ontology provides the classes and properties used in the DBpedia data set.
-            ).freeze,
-      :"dc:issued" => %(2008-11-17T12:00Z).freeze,
-      :"dc:modified" => %(2016-08-13T22:30Z).freeze,
-      :"dc:publisher" => %(DBpedia Maintainers).freeze,
-      :"dc:source" => %(http://mappings.dbpedia.org).freeze,
-      :"dc:title" => %(The DBpedia Ontology).freeze,
-      :"foaf:homepage" => %(http://wiki.dbpedia.org/Ontology).freeze,
-      :"http://purl.org/vocab/vann/preferredNamespacePrefix" => %(dbo).freeze,
-      :"http://purl.org/vocab/vann/preferredNamespaceUri" => %(http://dbpedia.org/ontology/).freeze,
-      label: "".freeze,
-      :"owl:versionInfo" => %(latest-snapshot).freeze,
-      type: ["http://purl.org/vocommons/voaf#Vocabulary".freeze, "owl:Ontology".freeze]
   end
 end

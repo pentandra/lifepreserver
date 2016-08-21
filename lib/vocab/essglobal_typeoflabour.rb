@@ -9,8 +9,8 @@ module Vocab
   #   end
   class ESSGLOBALTypeoflabour < RDF::Vocabulary("http://purl.org/essglobal/standard/type-of-labour/")
 
-    # Extra definitions
-    term :"",
+    # Ontology definition
+    ontology :"http://purl.org/essglobal/standard/type-of-labour/",
       :"dc11:contributor" => [%(Alan Tygel \(alantygel@gmail.com\)).freeze, %(Ana Alice Baptista \(analice@dsi.uminho.pt\)).freeze, %(Craig Borowiak \(cborowiakhaverford.edu\)).freeze, %(Daniel Tygel \(dtygel@gmail.com\)).freeze, %(Jason Nardi \(jason.nardi@gmail.com\)).freeze],
       :"dc11:creator" => %(Mariana Malta \(mariana@iscap.ipp.pt\)).freeze,
       :"dc11:description" => %(SSE Initiative or SSE Network Legal form controlled vocabulary for SSE).freeze,
@@ -20,8 +20,9 @@ module Vocab
       :"dc11:title" => %(Legal Form).freeze,
       :"dc:created" => %(2014-02-06).freeze,
       :"dc:publisher" => %(RIPESS-ESSGlobal).freeze,
-      label: "".freeze,
       type: "skos:ConceptScheme".freeze
+
+    # Extra definitions
     term :"#T1",
       label: "#T1".freeze,
       :"skos:inScheme" => %(essglobaltypeoflabour:).freeze,

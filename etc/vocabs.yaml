@@ -8,17 +8,12 @@ adms:
   uri: "http://www.w3.org/ns/adms#"
 
 biro:
-  uri: "http://purl.org/spar/biro"
+  uri: "http://purl.org/spar/biro/"
   source: "http://www.sparontologies.net/ontologies/biro/source.ttl"
 
 c4o:
   uri: "http://purl.org/spar/c4o/"
   source: "http://www.sparontologies.net/ontologies/c4o/source.ttl"
-
-cc:
-  uri: "http://creativecommons.org/ns#"
-  source: "etc/vocabs/cc.ttl" # Source incorrectly uses https identifiers
-  alias: true
 
 co:
   uri: "http://purl.org/co/"
@@ -35,26 +30,12 @@ dbr:
   uri: "http://dbpedia.org/resource/"
   strict: false
 
-dc:
-  uri: "http://purl.org/dc/terms/"
-  alias: true
-
 deo:
   uri: "http://purl.org/spar/deo/"
   source: "http://www.sparontologies.net/ontologies/deo/source.ttl"
 
 deps:
   uri: "http://ontologi.es/doap-deps#"
-
-doap:
-  uri: "http://usefulinc.com/ns/doap#"
-  alias: true
-  patch: |
-    @prefix : <http://usefulinc.com/ns/doap#> .
-    @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-    @prefix owl: <http://www.w3.org/2002/07/owl#> .
-    DeleteExisting { : owl:imports foaf:index.rdf } .
-    AddNew { : owl:imports foaf: } .
 
 doco:
   uri: "http://purl.org/spar/doco/"
@@ -96,142 +77,47 @@ fea:
   uri: "http://vocab.data.gov/def/fea#"
   source: "etc/vocabs/fea.ttl"
 
-foaf:
-  uri: "http://xmlns.com/foaf/0.1/"
-  alias: true
-
-gr:
-  uri: "http://purl.org/goodrelations/v1#"
-  source: "http://www.heppnetz.de/ontologies/goodrelations/v1.owl"
-  alias: true
-
-iana:
-  uri: "http://www.iana.org/assignments/relation/"
-  source: "etc/vocabs/iana.ttl"
-  alias: true
-
-jsonld:
-  uri: "http://www.w3.org/ns/json-ld#"
-  alias: true
-
 mp:
   uri: "http://purl.org/mp/"
   source: "https://raw.githubusercontent.com/timclark001/mp/master/mp.owl"
-
-oa:
-  uri: "http://www.w3.org/ns/oa#"
-  alias: true
-
-og:
-  uri: "http://ogp.me/ns#"
-  alias: true
-  strict: false
-
-ogc:
-  uri: "http://ogp.me/ns/class#"
-  source: "http://ogp.me/ns"
-  alias: true
-  strict: false
-
-org:
-  uri: "http://www.w3.org/ns/org#"
-  alias: true
-
-owl:
-  uri: "http://www.w3.org/2002/07/owl#"
-  alias: true
 
 profile:
   uri: "http://ogp.me/ns/profile#"
   source: "etc/vocabs/profile.ttl"
   strict: false
 
-prov:
-  uri: "http://www.w3.org/ns/prov#"
-  alias: true
-
-qb:
-  uri: "http://purl.org/linked-data/cube#"
-  alias: true
-
-rdf:
-  uri: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  alias: true
-
-rdfa:
-  uri: "http://www.w3.org/ns/rdfa#"
-  alias: true
-
-rdfs:
-  uri: "http://www.w3.org/2000/01/rdf-schema#"
-  alias: true
-
 rov:
   uri: "http://www.w3.org/ns/regorg#"
-  source: "etc/vocabs/rov.ttl" # needs to be local to deal with messed up vocabulary uri
-
-schema:
-  uri: "http://schema.org/"
-  source: "https://raw.githubusercontent.com/schemaorg/schemaorg/sdo-makemake/data/releases/3.0/all-layers.nq"
-  alias: true
-
-sioc:
-  uri: "http://rdfs.org/sioc/ns#"
-  alias: true
 
 sioct:
   uri: "http://rdfs.org/sioc/types#"
-
-skos:
-  uri: "http://www.w3.org/2004/02/skos/core#"
-  alias: true
 
 vann:
   uri: "http://purl.org/vocab/vann/"
   source: "etc/vocabs/vann.ttl"
 
-vcard:
-  uri: "http://www.w3.org/2006/vcard/ns#"
-  alias: true
-
 voaf:
   uri: "http://purl.org/vocommons/voaf#"
   source: "http://lov.okfn.org/vocommons/voaf/v2.3/voaf_v2.3.rdf"
-
-xhtml:
-  uri: "http://www.w3.org/1999/xhtml#"
-  strict: false
-  alias: true
-
-xhv:
-  uri: "http://www.w3.org/1999/xhtml/vocab#"
-  strict: false
-  alias: true
-
-xsd:
-  uri: "http://www.w3.org/2001/XMLSchema#"
-  source: "etc/vocabs/xsd.ttl"
-  strict: false
-  alias: true
 
 yago:
   uri: "http://dbpedia.org/class/yago/"
   strict: false
 
 pentandra:
-  uri: <%= "\"#{@config[:base_url]}#{@config[:company][:page_url]}#\"" %>
-  source: <%= "\"#{config[:output_dir]}#{@config[:company][:page_url]}/index.html\"" %>
+  uri: <%= "#{@config[:base_url]}#{@config[:company][:page_url]}#" %>
+  source: <%= "#{config[:output_dir]}#{@config[:company][:page_url]}/index.html" %>
   strict: false
 
 "pentandra_blog":
-  uri: <%= "\"#{@config[:base_url]}#{@config[:blog][:url]}#\"" %>
-  source: <%= "\"#{@config[:output_dir]}#{@config[:blog][:url]}/index.html\"" %>
+  uri: <%= "#{@config[:base_url]}#{@config[:blog][:url]}#" %>
+  source: <%= "#{@config[:output_dir]}#{@config[:blog][:url]}/index.html" %>
   strict: false
   class_name: PENTANDRABlog
 
 "pentandra_website":
-  uri: <%= "\"#{@config[:base_url]}#\"" %>
-  source: <%= "\"#{@config[:output_dir]}/index.html\"" %>
+  uri: <%= "#{@config[:base_url]}#" %>
+  source: <%= "#{@config[:output_dir]}/index.html" %>
   strict: false
   class_name: PENTANDRAWebsite
 ...

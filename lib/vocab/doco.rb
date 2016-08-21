@@ -9,6 +9,18 @@ module Vocab
   #   end
   class DOCO < RDF::StrictVocabulary("http://purl.org/spar/doco/")
 
+    # Ontology definition
+    ontology :"http://purl.org/spar/doco",
+      comment: [%(DoCO, the Document Components Ontology, is an ontology for describing the component parts of a bibliographic document.  It forms part of SPAR, a suite of Semantic Publishing and Referencing Ontologies.    Other SPAR ontologies are described at http://purl.org/spar/.).freeze, %(This ontology is available at http://purl.org/spar/doco, and uses the namespace prefix doco.).freeze],
+      :"dc11:creator" => [%(David Shotton).freeze, %(Silvio Peroni).freeze],
+      :"dc11:date" => %(2015-07-03).freeze,
+      :"dc11:description" => [%(DoCO, the Document Components Ontology, provides a structured vocabulary written in OWL 2 DL of document components, both structural \(e.g. block, inline, paragraph, section, chapter\) and rhetorical \(e.g. introduction, discussion, acknowledgements, reference list, figure, appendix\), enabling these components, and documents composed of them, to be described in RDF. It imports the Discourse Elements Ontology \(http://purl.org/spar/deo\) and the Document Structural Patterns Ontology \(http://www.essepuntato.it/2008/12/pattern\), and uses seven rhetorical block elements abstracted from the SALT Rhetorical Ontology and the Ontology of Rhetorical Blocks \(ORB\).).freeze, %(https://svn.code.sf.net/p/sempublishing/code/DoCO/doco%20architecture.png).freeze],
+      :"dc11:rights" => %(This work is distributed under a Creative Commons Attribution License \(http://creativecommons.org/licenses/by/3.0/\).).freeze,
+      :"dc11:title" => %(DoCO, the Document Components Ontology).freeze,
+      :"owl:imports" => [%(http://purl.org/spar/deo).freeze, %(http://www.essepuntato.it/2008/12/pattern).freeze],
+      :"owl:versionInfo" => %(1.3).freeze,
+      type: "owl:Ontology".freeze
+
     # Class definitions
     term :Abstract,
       comment: %(A brief summary of a book, a research article, thesis, review, conference proceeding or any in-depth analysis of a particular subject or discipline, the purpose of which is to help the reader quickly ascertain the publication's purpose.).freeze,

@@ -9,6 +9,25 @@ module Vocab
   #   end
   class PENTANDRA < RDF::Vocabulary("https://pentandra.com/company#")
 
+    # Ontology definition
+    ontology :"https://pentandra.com/company",
+      :"cc:attributionName" => %(Pentandra Research Solutions, Inc.).freeze,
+      :"cc:attributionURL" => %(https://pentandra.com).freeze,
+      :"cc:license" => %(http://creativecommons.org/licenses/by/4.0/).freeze,
+      :"cc:useGuidelines" => %(https://pentandra.com/policy/).freeze,
+      :"foaf:primaryTopic" => %(pentandra:company).freeze,
+      :"og:description" => %(Who we are and what we stand for.).freeze,
+      :"og:locale" => %(en_US).freeze,
+      :"og:site_name" => %(Pentandra).freeze,
+      :"og:title" => %(Company).freeze,
+      :"og:type" => %(website).freeze,
+      :"og:url" => %(https://pentandra.com/company/).freeze,
+      :"schema:copyrightHolder" => %(pentandra:company).freeze,
+      :"schema:copyrightYear" => %(2011).freeze,
+      :"schema:isPartOf" => %(pentandra-website:website).freeze,
+      :"schema:publisher" => %(pentandra:company).freeze,
+      type: ["cc:Work".freeze, "prov:Entity".freeze, "schema:WebPage".freeze]
+
     # Extra definitions
     term :"chris-chapman",
       :"foaf:img" => %(https://pentandra.com/images/chris-chapman-150x150.jpg).freeze,
@@ -28,7 +47,7 @@ module Vocab
       :"vcard:hasEmail" => %(mailto:chris@pentandra.com).freeze,
       :"vcard:hasGender" => %(vcard:Male).freeze,
       :"vcard:hasPhoto" => %(https://pentandra.com/images/chris-chapman-150x150.jpg).freeze,
-      :"vcard:rev" => %(2016-08-13).freeze,
+      :"vcard:rev" => %(2016-08-18).freeze,
       :"vcard:title" => %(Co-founder and Super Coder).freeze
     term :company,
       :"foaf:homepage" => %(https://pentandra.com).freeze,
@@ -92,7 +111,7 @@ module Vocab
       :"vcard:hasLogo" => %(https://pentandra.com/images/pentandra-logo.png).freeze,
       :"vcard:hasTelephone" => %(tel:+14352942964).freeze,
       :"vcard:hasURL" => %(https://pentandra.com).freeze,
-      :"vcard:rev" => %(2016-08-13).freeze
+      :"vcard:rev" => %(2016-08-18).freeze
     term :contact,
       label: "contact".freeze,
       type: "schema:ContactPage".freeze
@@ -136,7 +155,7 @@ module Vocab
       :"vcard:hasEmail" => %(mailto:katie@pentandra.com).freeze,
       :"vcard:hasGender" => %(vcard:Female).freeze,
       :"vcard:hasPhoto" => %(https://pentandra.com/images/katie-chapman-150x150.jpg).freeze,
-      :"vcard:rev" => %(2016-08-13).freeze,
+      :"vcard:rev" => %(2016-08-18).freeze,
       :"vcard:title" => %(Co-founder and Exception Thinker).freeze
     term :mission,
       :"http://vocab.data.gov/def/fea#description" => %(Pentandra’s mission is to open up the knowledge of the world, so that light and understanding will be more accessible to everyone.

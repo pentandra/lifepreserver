@@ -9,6 +9,14 @@ module Vocab
   #   end
   class SIOCT < RDF::StrictVocabulary("http://rdfs.org/sioc/types#")
 
+    # Ontology definition
+    ontology :"http://rdfs.org/sioc/types#",
+      :"dc:description" => %(Extends the SIOC Core Ontology \(Semantically-Interlinked Online Communities\) by defining subclasses and subproperties of SIOC terms.).freeze,
+      :"dc:title" => %(SIOC Types Ontology Module Namespace).freeze,
+      :"owl:imports" => %(sioc:).freeze,
+      :"rdfs:seeAlso" => %(http://rdfs.org/sioc/spec/#sec-modules).freeze,
+      type: ["owl:Ontology".freeze, "owl:Thing".freeze]
+
     # Class definitions
     term :AddressBook,
       comment: %(Describes a collection of personal or organisational addresses.).freeze,
@@ -265,14 +273,5 @@ module Vocab
       :"rdfs:isDefinedBy" => %(sioct:).freeze,
       subClassOf: "sioc:Container".freeze,
       type: "owl:Class".freeze
-
-    # Extra definitions
-    term :"",
-      :"dc:description" => %(Extends the SIOC Core Ontology \(Semantically-Interlinked Online Communities\) by defining subclasses and subproperties of SIOC terms.).freeze,
-      :"dc:title" => %(SIOC Types Ontology Module Namespace).freeze,
-      label: "".freeze,
-      :"owl:imports" => %(sioc:).freeze,
-      :"rdfs:seeAlso" => %(http://rdfs.org/sioc/spec/#sec-modules).freeze,
-      type: ["owl:Ontology".freeze, "owl:Thing".freeze]
   end
 end

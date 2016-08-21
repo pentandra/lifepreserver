@@ -9,6 +9,19 @@ module Vocab
   #   end
   class CO < RDF::StrictVocabulary("http://purl.org/co/")
 
+    # Ontology definition
+    ontology :"http://purl.org/co",
+      :"dc11:contributor" => [%(Marco Ocana).freeze, %(Paolo Ciccarese).freeze, %(Silvio Peroni).freeze],
+      :"dc11:creator" => %(http://www.paolociccarese.info).freeze,
+      :"dc11:date" => %(March 19, 2012).freeze,
+      :"dc11:format" => %(application/rdf+xml).freeze,
+      :"dc11:language" => %(en).freeze,
+      :"dc11:title" => %(The Collections Ontology
+\(CO\)).freeze,
+      :"owl:imports" => %(http://www.essepuntato.it/2009/10/error).freeze,
+      :"owl:versionInfo" => %(2.0).freeze,
+      type: "owl:Ontology".freeze
+
     # Class definitions
     term :Bag,
       comment: %(Collection that can have a number of copies of each object).freeze,

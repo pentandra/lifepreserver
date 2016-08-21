@@ -8,5 +8,23 @@ module Vocab
   #   class PENTANDRABlog < RDF::Vocabulary
   #   end
   class PENTANDRABlog < RDF::Vocabulary("https://pentandra.com/blog#")
+
+    # Ontology definition
+    ontology :"https://pentandra.com/blog",
+      :"cc:attributionName" => %(Pentandra Research Solutions, Inc.).freeze,
+      :"cc:attributionURL" => %(https://pentandra.com).freeze,
+      :"cc:license" => %(http://creativecommons.org/licenses/by/4.0/).freeze,
+      :"cc:useGuidelines" => %(https://pentandra.com/policy/).freeze,
+      :"og:description" => %(A collection of our thoughts about Pentandra and the future of research.).freeze,
+      :"og:locale" => %(en_US).freeze,
+      :"og:site_name" => %(Pentandra).freeze,
+      :"og:title" => %(Blog).freeze,
+      :"og:type" => %(website).freeze,
+      :"og:url" => %(https://pentandra.com/blog/).freeze,
+      :"schema:copyrightHolder" => %(https://pentandra.com/company#company).freeze,
+      :"schema:copyrightYear" => %(2011).freeze,
+      :"schema:isPartOf" => %(pentandra-website:website).freeze,
+      :"schema:publisher" => %(https://pentandra.com/company#company).freeze,
+      type: ["cc:Work".freeze, "prov:Entity".freeze, "schema:WebPage".freeze]
   end
 end

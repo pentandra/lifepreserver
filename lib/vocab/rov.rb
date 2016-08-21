@@ -9,6 +9,21 @@ module Vocab
   #   end
   class ROV < RDF::StrictVocabulary("http://www.w3.org/ns/regorg#")
 
+    # Ontology definition
+    ontology :"http://www.w3.org/ns/regorg",
+      comment: %(This file specifies the set of RDF classes and properties used in the Registered Organization Vocabulary vocabulary).freeze,
+      :"dc:abstract" => %(The Registered Organization Vocabulary is a profile of the Organization Ontology for describing organizations that have gained legal entity status through a formal registration process, typically in a national or regional register.).freeze,
+      :"dc:description" => %(This is the RDF encoding of the Legal Entity vocabulary, originally developed under the European Commission's ISA Programme.).freeze,
+      :"dc:modified" => [%(2013-05-24).freeze, %(2013-12-21).freeze],
+      :"dc:title" => %(Registered Organization Vocabulary).freeze,
+      :"http://purl.org/vocab/vann/preferredNamespacePrefix" => %(rov).freeze,
+      :"http://purl.org/vocab/vann/preferredNamespaceUri" => %(http://www.w3.org/ns/regorg#).freeze,
+      :"http://purl.org/vocommons/voaf#specializes" => %(http://www.w3.org/ns/org).freeze,
+      label: "Registered Organization Vocabulary".freeze,
+      :"owl:versionInfo" => %(Second version in w3.org/ns).freeze,
+      type: ["http://purl.org/vocommons/voaf#Vocabulary".freeze, "owl:Ontology".freeze],
+      :"wdrs:describedby" => %(http://www.w3.org/TR/vocab-regorg/).freeze
+
     # Class definitions
     term :RegisteredOrganization,
       comment: %(rov:RegisteredOrganization is the key class for the Registered Organization vocabulary and represents 
@@ -25,7 +40,7 @@ module Vocab
     natural persons, groups etc. - i.e. an Agent is any entity that is able to carry out actions.</p>).freeze,
       :"dc:identifier" => %(rov:RegisteredOrganization).freeze,
       label: "Registered Organization".freeze,
-      :"rdfs:isDefinedBy" => %(rov:).freeze,
+      :"rdfs:isDefinedBy" => %(http://www.w3.org/TR/vocab-regorg/).freeze,
       subClassOf: "org:FormalOrganization".freeze,
       type: ["owl:Class".freeze, "rdfs:Class".freeze]
 
@@ -36,34 +51,34 @@ module Vocab
       domain: "dc:Agent".freeze,
       label: "registered organization".freeze,
       range: "rov:RegisteredOrganization".freeze,
-      :"rdfs:isDefinedBy" => %(rov:).freeze,
+      :"rdfs:isDefinedBy" => %(http://www.w3.org/TR/vocab-regorg/).freeze,
       type: ["owl:ObjectProperty".freeze, "rdf:Property".freeze]
     property :legalName,
       comment: %(The legal name of the business. A business might have more than one legal name, particularly in countries with more than one official language. In such cases the language of the string should be identified.).freeze,
       :"dc:identifier" => %(rov:legalName).freeze,
       label: "legal name".freeze,
       range: "rdfs:Literal".freeze,
-      :"rdfs:isDefinedBy" => %(rov:).freeze,
+      :"rdfs:isDefinedBy" => %(http://www.w3.org/TR/vocab-regorg/).freeze,
       type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
     property :orgActivity,
       comment: %(The activity of a company should be recorded using a controlled vocabulary expressed as a SKOS concept scheme. Several such vocabularies exist, many of which map to the UN's ISIC codes. Where a particular controlled vocabulary is in use within a given context, such as SIC codes in the UK, it is acceptable to use these, however, the preferred choice for European interoperability is NACE. rov:orgActivity is a sub class of org:classification which has a range of skos:Concept.).freeze,
       :"dc:identifier" => %(rov:orgActivity).freeze,
       label: "company activity".freeze,
-      :"rdfs:isDefinedBy" => %(rov:).freeze,
+      :"rdfs:isDefinedBy" => %(http://www.w3.org/TR/vocab-regorg/).freeze,
       subPropertyOf: "org:classification".freeze,
       type: ["owl:ObjectProperty".freeze, "rdf:Property".freeze]
     property :orgStatus,
       comment: %(Terms like insolvent, bankrupt and in receivership are likely to have different legal implications in different jurisdictions. Best Practice for recording various other status levels is to use the relevant jurisdiction's terms and to do so in a consistent manner using a SKOS Concept Scheme. rov:orgStatus is a sub class of org:classification which has a range of skos:Concept.).freeze,
       :"dc:identifier" => %(rov:orgStatus).freeze,
       label: "company status".freeze,
-      :"rdfs:isDefinedBy" => %(rov:).freeze,
+      :"rdfs:isDefinedBy" => %(http://www.w3.org/TR/vocab-regorg/).freeze,
       subPropertyOf: "org:classification".freeze,
       type: ["owl:ObjectProperty".freeze, "rdf:Property".freeze]
     property :orgType,
       comment: %(This property records the type of organization. Familiar types are SA, PLC, LLC, GmbH etc. Each jurisdiction will have a limited set of recognized company types and these should be used in a consistent manner using a SKOS Concept Scheme. rov:orgType is a sub class of org:classification which has a range of skos:Concept.).freeze,
       :"dc:identifier" => %(rov:orgType).freeze,
       label: "company type".freeze,
-      :"rdfs:isDefinedBy" => %(rov:).freeze,
+      :"rdfs:isDefinedBy" => %(http://www.w3.org/TR/vocab-regorg/).freeze,
       subPropertyOf: "org:classification".freeze,
       type: ["owl:ObjectProperty".freeze, "rdf:Property".freeze]
     property :registration,
@@ -74,20 +89,5 @@ module Vocab
       :"rdfs:isDefinedBy" => %(rov:).freeze,
       subPropertyOf: "http://www.w3.org/ns/adms#identifier".freeze,
       type: ["owl:ObjectProperty".freeze, "rdf:Property".freeze]
-
-    # Extra definitions
-    term :"",
-      comment: %(This file specifies the set of RDF classes and properties used in the Registered Organization Vocabulary vocabulary).freeze,
-      :"dc:abstract" => %(The Registered Organization Vocabulary is a profile of the Organization Ontology for describing organizations that have gained legal entity status through a formal registration process, typically in a national or regional register.).freeze,
-      :"dc:description" => %(This is the RDF encoding of the Legal Entity vocabulary, originally developed under the European Commission's ISA Programme.).freeze,
-      :"dc:modified" => [%(2013-05-24).freeze, %(2013-12-21).freeze],
-      :"dc:title" => %(Registered Organization Vocabulary).freeze,
-      :"http://purl.org/vocab/vann/preferredNamespacePrefix" => %(rov).freeze,
-      :"http://purl.org/vocab/vann/preferredNamespaceUri" => %(http://www.w3.org/ns/regorg#).freeze,
-      :"http://purl.org/vocommons/voaf#specializes" => %(org:).freeze,
-      label: "Registered Organization Vocabulary".freeze,
-      :"owl:versionInfo" => %(Second version in w3.org/ns).freeze,
-      type: ["http://purl.org/vocommons/voaf#Vocabulary".freeze, "owl:Ontology".freeze],
-      :"wdrs:describedby" => %(http://www.w3.org/TR/vocab-regorg/).freeze
   end
 end

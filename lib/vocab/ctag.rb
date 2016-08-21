@@ -9,6 +9,16 @@ module Vocab
   #   end
   class CTAG < RDF::StrictVocabulary("http://commontag.org/ns#")
 
+    # Ontology definition
+    ontology :"http://commontag.org/ns#",
+      :"dc11:contributor" => [%(Alex Iskold).freeze, %(Alexandre Passant).freeze, %(Andraz Tori).freeze, %(Jamie Taylor).freeze, %(Peter Mika).freeze, %(Scott Montgomerie).freeze, %(Vuk Milicic).freeze],
+      :"dc11:description" => %(Common Tag RDF vocabulary, described using W3C RDF Schema. Common Tags allows documents and document fragments \(any resource which can be identified by a URI\) to be labeled with keywords and URIs, unambigiously idenfying the concepts covered by the resource.).freeze,
+      :"dc11:title" => %(Common Tag vocabulary).freeze,
+      :"dc:issued" => %(2009-06-08).freeze,
+      label: "Common Tag vocabulary".freeze,
+      :"rdfs:seeAlso" => %(http://commontag.org/mappings).freeze,
+      type: "owl:Ontology".freeze
+
     # Class definitions
     term :AuthorTag,
       comment: %(A Tag asserted by the author of a content resource.).freeze,
@@ -63,15 +73,5 @@ module Vocab
       label: "tagging date".freeze,
       subPropertyOf: "dc:created".freeze,
       type: "rdf:Property".freeze
-
-    # Extra definitions
-    term :"",
-      :"dc11:contributor" => [%(Alex Iskold).freeze, %(Alexandre Passant).freeze, %(Andraz Tori).freeze, %(Jamie Taylor).freeze, %(Peter Mika).freeze, %(Scott Montgomerie).freeze, %(Vuk Milicic).freeze],
-      :"dc11:description" => %(Common Tag RDF vocabulary, described using W3C RDF Schema. Common Tags allows documents and document fragments \(any resource which can be identified by a URI\) to be labeled with keywords and URIs, unambigiously idenfying the concepts covered by the resource.).freeze,
-      :"dc11:title" => %(Common Tag vocabulary).freeze,
-      :"dc:issued" => %(2009-06-08).freeze,
-      label: "Common Tag vocabulary".freeze,
-      :"rdfs:seeAlso" => %(http://commontag.org/mappings).freeze,
-      type: "owl:Ontology".freeze
   end
 end

@@ -9,6 +9,16 @@ module Vocab
   #   end
   class DEPS < RDF::StrictVocabulary("http://ontologi.es/doap-deps#")
 
+    # Ontology definition
+    ontology :"http://ontologi.es/doap-deps#",
+      comment: %(an extension to DOAP for describing a project's requirements).freeze,
+      :"dc:created" => %(2013-07-30).freeze,
+      :"dc:creator" => %(http://tobyinkster.co.uk/#i).freeze,
+      :"dc:issued" => %(2013-07-31).freeze,
+      :"dc:modified" => [%(2013-07-30).freeze, %(2013-07-31).freeze],
+      label: "DOAP Dependencies".freeze,
+      type: "owl:Ontology".freeze
+
     # Class definitions
     term :Dependency,
       comment: %(A condition to be met).freeze,
@@ -162,14 +172,6 @@ module Vocab
       type: "owl:ObjectProperty".freeze
 
     # Extra definitions
-    term :"",
-      comment: %(an extension to DOAP for describing a project's requirements).freeze,
-      :"dc:created" => %(2013-07-30).freeze,
-      :"dc:creator" => %(http://tobyinkster.co.uk/#i).freeze,
-      :"dc:issued" => %(2013-07-31).freeze,
-      :"dc:modified" => [%(2013-07-30).freeze, %(2013-07-31).freeze],
-      label: "DOAP Dependencies".freeze,
-      type: "owl:Ontology".freeze
     term :BuildPhase,
       label: "BuildPhase".freeze,
       type: "deps:Phase".freeze

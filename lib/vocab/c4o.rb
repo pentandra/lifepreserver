@@ -9,6 +9,23 @@ module Vocab
   #   end
   class C4O < RDF::StrictVocabulary("http://purl.org/spar/c4o/")
 
+    # Ontology definition
+    ontology :"http://purl.org/spar/c4o",
+      comment: [%(The Citation Counting and Context Characterization Ontology \(C4O\) is an ontology for characterizing the number and contexts of bibliographic citations.  It forms part of SPAR, a suite of Semantic Publishing and Referencing Ontologies.).freeze, %(This ontology is available at http://purl.org/spar/c4o, and uses the namespace prefix c4o.  Other SPAR ontologies are described at http://purl.org/spar/.).freeze],
+      :"dc11:creator" => [%(David Shotton).freeze, %(Silvio Peroni).freeze],
+      :"dc11:date" => %(2013-05-11).freeze,
+      :"dc11:description" => [%(C4O, the Citation Counting and Context Characterization Ontology \(C4O\) allows the characterization of bibliographic citations in terms of their number and their context.
+
+It provides the ontological structures to permit the number of in-text citations of a cited source \(i.e. the number of in-text reference pointers to a single reference in the citing articleâ€™s reference list\) to be recorded, and also the number of citations a cited entity has received globally, as determined by a bibliographic information resource such as Google Scholar, Scopus or Web of Knowledge on a particular date. 
+
+Moreover, it enables ontological descriptions of the context within the citing document in which an in-text reference pointer appears, and permits that context to be related to relevant textual passages in the cited document.
+).freeze, %(https://svn.code.sf.net/p/sempublishing/code/C4O/CitationCounting%20module.png).freeze],
+      :"dc11:rights" => %(This work is distributed under a Creative Commons Attribution License \(http://creativecommons.org/licenses/by/3.0/\).).freeze,
+      :"dc11:title" => %(C4O, the Citation Counting and Context Characterization Ontology).freeze,
+      :"owl:imports" => %(http://purl.org/spar/biro).freeze,
+      :"owl:versionInfo" => %(1.1.1).freeze,
+      type: "owl:Ontology".freeze
+
     # Class definitions
     term :BibliographicInformationSource,
       comment: %(A source of information about bibliographic citations, such as Google Scholar, Web of Science or Scopus.).freeze,
