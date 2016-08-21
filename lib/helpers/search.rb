@@ -2,7 +2,7 @@ require 'json'
 
 module Search
 
-  STOP_WORDS = %w{
+  STOP_WORDS ||= %w{
     a about above across after afterwards again against all almost
     alone along already also although always am among amongst amoungst
     amount an and another any anyhow anyone anything anyway anywhere
@@ -33,10 +33,12 @@ module Search
     whereby wherein whereupon wherever whether which while whither who
     whoever whole whom whose why will with within without would yet you
     your yours yourself yourselves
-  } unless defined?(STOP_WORDS)
+  }
+
+  private_constant :STOP_WORDS
 
   def search_terms_for(item)
-    content = item.reps[:default].compiled_content
+    content = item.compiled_content(rep: :default)
     doc = Nokogiri::HTML(content)
     full_text = doc.css("p, h1, h2, h3, h4, h5, h6").map{ |el| el.inner_text }.join(" ")
     "#{item[:title]} #{item[:meta_description]} #{full_text}".gsub(/[\W_]+/m,' ').downcase.split(/\s+/).uniq - STOP_WORDS
@@ -71,6 +73,7 @@ module Search
       }
       id += 1
     end
+
     idx
   end
 

@@ -7,7 +7,9 @@ module Tagging
 
   include Vocabulary
 
-  SEMANTIC_TAGS = YAML.load_file('var/tag_data.yaml').freeze unless defined?(SEMANTIC_TAGS)
+  SEMANTIC_TAGS ||= YAML.load_file('var/tag_data.yaml').freeze
+
+  private_constant :SEMANTIC_TAGS
 
   def semantic_tag?(tag)
     SEMANTIC_TAGS.key?(tag)
