@@ -19,8 +19,6 @@ gem 'rubypants-unicode'
 gem 'linkeddata'
 gem 'rdf-vocab',         git: 'https://github.com/ruby-rdf/rdf-vocab.git',      branch: 'develop'
 gem 'rdf',               git: 'https://github.com/ruby-rdf/rdf.git',            branch: 'develop'
-gem 'pry'                # for nanoc shell
-gem 'w3c_validators'     # for nanoc check
 gem 'pygmentize'         # for syntax coloring
 gem 'nanoc-cachebuster', git: 'https://github.com/cdchapman/nanoc-cachebuster', branch: 'nanoc-4'
 gem 'nenv'               # for better environment variable handling
@@ -34,4 +32,5 @@ group :development do
   gem 'guard-nanoc'
   gem 'guard-livereload', require: false
   gem 'rbtrace'
+  gem 'w3c_validators'     # for nanoc check
 end
