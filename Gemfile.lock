@@ -41,6 +41,8 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     addressable (2.4.0)
+    adsf (1.2.1)
+      rack (>= 1.0.0)
     bcp47 (0.3.3)
       i18n
     builder (3.2.2)
@@ -169,7 +171,7 @@ GEM
     msgpack (1.0.0)
     multi_json (1.12.1)
     multi_xml (0.5.5)
-    nanoc (4.3.0)
+    nanoc (4.3.2)
       cri (~> 2.3)
       hamster (~> 3.0)
       ref (~> 2.0)
@@ -193,6 +195,7 @@ GEM
       method_source (~> 0.8.1)
       slop (~> 3.4)
     pygmentize (0.0.3)
+    rack (2.0.1)
     rainpress (1.0)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
@@ -328,6 +331,7 @@ PLATFORMS
 
 DEPENDENCIES
   activesupport
+  adsf
   chunky_png
   compass
   git
