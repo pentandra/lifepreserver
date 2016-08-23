@@ -1,4 +1,5 @@
 require 'rdf'
+require 'active_support/core_ext/string/inflections'
 
 module RDF
 
@@ -11,7 +12,7 @@ module RDF
       # Override __prefix__ class method to have better prefixes for some of
       # these longer vocabulary names.
       def __prefix__
-        hyphenate(__name__.split('::').last).to_sym
+        __name__.demodulize.underscore.dasherize.to_sym
       end
 
       def find_by_prefix(prefix)

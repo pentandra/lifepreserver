@@ -36,17 +36,6 @@ module Text
     result
   end
 
-  def hyphenate(camel_cased_word)
-    camel_cased_word.to_s. 
-      gsub(/([A-Z]+)([A-Z][a-z])/,'\1-\2').
-      gsub(/([a-z\d])([A-Z])/, '\1-\2').
-      downcase
-  end
-
-  def camelize(s)
-    s.downcase.split(%r{[-_\s]}).map(&:capitalize).join
-  end
-
   def md5(text)
     Digest::MD5.hexdigest(text)
   end

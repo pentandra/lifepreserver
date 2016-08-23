@@ -1,4 +1,5 @@
 require 'linkeddata'
+require 'active_support/core_ext/string/inflections'
 
 module Nanoc::Filters
 
@@ -35,7 +36,7 @@ module Nanoc::Filters
       output = params.fetch(:format, "turtle")
 
       base_uri = params[:base_uri] || @item[:base_uri] || @config[:base_url] + @item.path
-      prefix = params[:prefix] || @item[:prefix] || camelize(File.basename(@item.identifier.without_exts))
+      prefix = params[:prefix] || @item[:prefix] || File.basename(@item.identifier.without_exts).camelize
       prefixes = params.fetch(:prefixes, {})
 
       output_format = RDF::Format.for(output.to_sym).to_sym
