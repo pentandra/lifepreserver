@@ -32,5 +32,5 @@ group :development do
   gem 'guard-nanoc'
   gem 'guard-livereload', require: false
   gem 'rbtrace'
-  gem 'w3c_validators'     # for nanoc check
+  gem 'w3c_validators'    # for nanoc check
 end
