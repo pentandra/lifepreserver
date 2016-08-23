@@ -58,11 +58,7 @@ module Text
   private
 
   def decompose(text)
-    if defined?(ActiveSupport::Multibyte::Handlers)  # Active Support < 2.2
-      ActiveSupport::Multibyte::Handlers::UTF8Handler.normalize(text, :kd).to_s
-    else  # ActiveSupport 2.2+
-      ActiveSupport::Multibyte::Chars.new(text).normalize(:kd).to_s
-    end
+    ActiveSupport::Multibyte::Chars.new(text).normalize(:kd).to_s
   end
 
 end
