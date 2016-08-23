@@ -1,23 +1,57 @@
-## Lifepreserver
+# Lifepreserver
 
 This is the website for [Pentandra Research Solutions](https://pentandra.com/).
 
-### Contributing
+## Development
 
 The source for this project is built using [nanoc](http://nanoc.ws/).
 
-To get started:
+### Before compiling…
 
-```
-git clone http://github.com/pentandra/lifepreserver.git
-cd lifepreserver
-bundle
-nanoc co
-nanoc view
-```
-Then visit [http://localhost:3000/](http://localhost:3000/).
+The following external dependencies or system packages need to be installed and
+in scope before compiling:
 
-### Thanks
+* Ruby (with [bundler](http://bundler.io/), i.e. `gem install bundler`)
+* Python (with [pygments](http://pygments.org/))
+* [pandoc](http://pandoc.org/) and [ConTeXt](http://wiki.contextgarden.net/)
+  for PDF generation of reports
+* [optipng](http://optipng.sourceforge.net/) (optional) for optimizing PNG images
+* [hunspell](https://hunspell.github.io/) for spell-checking
+* [git](https://git-scm.com/) for version tagging and history management
+* A JavaScript runtime, such as [node](https://nodejs.org/en/)
+  (or any runtime that [ExecJS](https://github.com/sstephenson/execjs) supports) 
+  with the following packages installed:
+  * [bower](https://bower.io/), i.e. `npm install bower -g`
+  * [UglifyJS](https://github.com/mishoo/UglifyJS2), i.e. `npm install uglify-js -g`
+
+### Then clone this repo, install bower components and Ruby gems…
+
+As follows:
+
+```bash
+$ git clone https://github.com/pentandra/lifepreserver.git
+$ cd lifepreserver
+$ bower install
+$ bundle install
+```
+### And compile!
+
+```bash
+$ bundle exec nanoc [compile] [--verbose]
+```
+
+### Start the HTTP server and request the page in your browser
+
+```bash
+# either
+$ nanoc view   # if you are only dealing with statically generated pages
+# or
+$ lapis server # if you are dealing with both the static and dynamic aspects of the site
+```
+
+And view the page in your browser.
+
+## Thanks
 
 Thanks to the people that helped me come to grips with the power of nanoc,
 including:
