@@ -45,7 +45,7 @@ $ bundle exec nanoc [compile] [--verbose]
 # either
 $ nanoc view   # if you are only dealing with statically generated pages
 # or
-$ lapis server # if you are dealing with both the static and dynamic aspects of the site
+$ nanoc server # if you are dealing with both the static and dynamic aspects of the site
 ```
 
 And view the page in your browser.
