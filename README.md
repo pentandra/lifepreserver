@@ -12,7 +12,7 @@ The following external dependencies or system packages need to be installed and
 in scope before compiling:
 
 * Ruby (with [bundler](http://bundler.io/), i.e. `gem install bundler`)
-* Python (with [pygments](http://pygments.org/))
+* Python (for [pygments](http://pygments.org/))
 * [pandoc](http://pandoc.org/) and [ConTeXt](http://wiki.contextgarden.net/)
   for PDF generation of reports
 * [optipng](http://optipng.sourceforge.net/) (optional) for optimizing PNG images
@@ -20,9 +20,8 @@ in scope before compiling:
 * [git](https://git-scm.com/) for version tagging and history management
 * A JavaScript runtime, such as [node](https://nodejs.org/en/)
   (or any runtime that [ExecJS](https://github.com/sstephenson/execjs) supports) 
-  with the following packages installed:
-  * [bower](https://bower.io/), i.e. `npm install bower -g`
-  * [UglifyJS](https://github.com/mishoo/UglifyJS2), i.e. `npm install uglify-js -g`
+  for [UglifyJS](https://github.com/mishoo/UglifyJS2) and [bower](https://bower.io/).
+    _(note: currently you need to install `bower` manually: `npm install bower -g`)_
 
 ### Then clone this repo, install bower components and Ruby gems…
 
