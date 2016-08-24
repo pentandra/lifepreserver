@@ -21,7 +21,7 @@ in scope before compiling:
 * A JavaScript runtime, such as [node](https://nodejs.org/en/)
   (or any runtime that [ExecJS](https://github.com/sstephenson/execjs) supports) 
   for [UglifyJS](https://github.com/mishoo/UglifyJS2) and [bower](https://bower.io/).
-    _(note: currently you need to install `bower` manually: `npm install bower -g`)_
+    _(note: currently you need to install `bower` manually, e.g. `npm install bower -g`)_
 
 ### Then clone this repo, install bower components and Ruby gems…
 
