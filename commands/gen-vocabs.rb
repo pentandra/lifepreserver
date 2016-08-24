@@ -12,6 +12,7 @@ class GenVocabs < Nanoc::CLI::CommandRunner
     require 'yaml'
     require 'erb'
     require 'linkeddata'
+    require 'active_support/core_ext/hash/keys'
 
     validate_options_and_arguments
 
@@ -23,7 +24,7 @@ class GenVocabs < Nanoc::CLI::CommandRunner
       config: Nanoc::ConfigView.new(site.config, nil)
     })
 
-    vocabs = symbolize(YAML.load(ERB.new(template).result(context.get_binding)))
+    vocabs = YAML.load(ERB.new(template).result(context.get_binding)).deep_symbolize_keys
 
     if options[:list]
       list_vocabs(vocabs)
