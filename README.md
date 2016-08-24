@@ -59,3 +59,6 @@ including:
 * Dennis Defreyne, of course (https://github.com/ddfreyne/nanoc)
 * Lifepillar (https://github.com/lifepillar/nanoc4-template) for some new
   ideas.
+
+Also, please see [the colophon](https://pentandra.com/colophon/) for more
+raving attributions!
