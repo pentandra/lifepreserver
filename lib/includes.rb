@@ -15,3 +15,4 @@ include Breadcrumbs
 include Text
 include Vocabulary
 include Tagging
+include History

@@ -2,16 +2,13 @@
 
 require 'date'
 require 'nenv'
-require 'git'
 
 preprocess do
   @config[:google_api_key] = Nenv.lifepreserver_api_key
 
   @config[:production] = Nenv.nanoc_env? && Nenv.nanoc_env == 'production' # See https://github.com/nanoc/nanoc/issues/487
 
-  git = Git.open(__dir__)
-
-  @config[:version] = @config[:production] ? git.describe('HEAD', exact_match: true) : git.describe('HEAD', abbrev: 0) # All production releases must be at a tag
+  populate_version_history
 
   def assign_date_to_all_items
     @items.each do |item|
