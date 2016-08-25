@@ -13,4 +13,8 @@ module History
     exact_match ? git.describe('HEAD', exact_match: true) : git.describe('HEAD', abbrev: 0) # All production releases must be at a tag
   end
 
+  def sorted_dependencies
+    @items.find_all('/project/dependencies/_*').sort_by(&:identifier)
+  end
+
 end

@@ -269,7 +269,7 @@ changefreq: monthly
     </p>
     <ul>
 
-      <% @items.find_all('/project/dependencies/_*').sort_by(&:identifier).each do |dependency| %>
+      <% sorted_dependencies.each do |dependency| %>
         <li property="deps:build-requirement" typeof="deps:Dependency">
           <span property="deps:on" datatype="deps:GemId" content="<%= "#{h dependency[:name]} #{h dependency[:version]}" %>">
             <% if dependency[:homepage] %>
