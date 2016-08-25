@@ -81,6 +81,8 @@ preprocess do
 
 end
 
+ignore '/**/_*'
+
 # Aggregated JavaScript scripts
  
 compile '/assets/scripts/*.js.erb' do
@@ -97,8 +99,6 @@ compile '/assets/scripts/*.js' do
 end
 
 # Stylesheets
-
-ignore '/assets/stylesheets/**/_*'
 
 compile '/assets/stylesheets/**/*.htc' do
   write '/css/' + File.basename(@item.identifier.to_s)

@@ -63,6 +63,9 @@ data_sources:
     # be “legacy”, primarily used by older Nanoc sites.
     identifier_type: full
 
+  - type: dependencies
+    items_root: /project/dependencies
+
 # Configuration for the “check” command, which run unit tests on the site.
 checks:
   # Configuration for the “internal_links” checker, which checks whether all
