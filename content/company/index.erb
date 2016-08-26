@@ -5,36 +5,6 @@ meta_description: >
   Pentandra is a small company of research addicts trying to promote quality
   research and make collaboration possible throughout the research process.
 priority: 0.6
-mission: >
-  Pentandra's mission is to open up the knowledge of the world, so that light
-  and understanding will be more accessible to everyone.
-twitter: PentandraInc
-teammembers:
-  - first_name: Chris
-    last_name: Chapman
-    gender: male
-    title: Co-founder and Super Coder
-    email: chris@pentandra.com
-    twitter: cd_chapman
-    gplus: 102332274449851755462
-    github: cdchapman
-    phone_ext: 1000
-    member_of: Core Team
-    summary: >
-      Chris loves to tackle difficult problems and dreams (literally) about
-      making research easier. He is our systems thinker.
-  - first_name: Katie
-    last_name: Chapman
-    gender: female
-    title: Co-founder and Exception Thinker
-    email: katie@pentandra.com
-    twitter: KAMChapman
-    gplus: 104975395018953249008
-    phone_ext: 1001
-    member_of: Core Team
-    summary: >
-      Katie loves to solve a good puzzle and thrives on the details. She is
-      also our finance and tax geek and actually enjoys it.
 ---
 <div property="foaf:primaryTopic" class="group" prefix="<%= prefix_mappings_for(:vcard, :"essglobal-activities", :"essglobal-legalform", :"essglobal-qualifiers", :"essglobal-typeoflabour") %>" resource="pentandra:company" typeof="foaf:Organization vcard:Organization">
   <div class="section">
@@ -207,7 +177,7 @@ teammembers:
 
     <div class="bd" property="essglobal:mission">
 
-      <p class="bigger"><%= @item[:mission] %></p>
+      <p class="bigger"><%= company[:mission] %></p>
       <p>
         
         We hope that the effect of our mission will be to help bring <a
@@ -357,7 +327,7 @@ teammembers:
 
       <h3 property="foaf:name">Core Team</h3>
 
-      <% @item[:teammembers].select {|v| v[:member_of] == "Core Team" }.each_with_index do |member, i| %>
+      <% company[:teammembers].select {|v| v[:member_of] == "Core Team" }.each_with_index do |member, i| %>
       <section resource="pentandra:<%= full_name(member).to_slug %>"
         property="foaf:member vcard:hasMember" typeof="schema:Person foaf:Person vcard:Individual"
         id="sec:<%= full_name(member).to_slug %>"
@@ -426,7 +396,7 @@ teammembers:
           <h3 class="flush">Get Social</h3>
           <ul class="none">
             <li class="social-gp" ><a rel="schema:sameAs" href="https://plus.google.com/+Pentandra" class="button">Pentandra on Google+</a></li>
-            <li class="social-tw"><a href="https://twitter.com/intent/user?screen_name=<%= @item[:twitter] %>" class="button">Follow @<%= @item[:twitter] %></a></li>
+            <li class="social-tw"><a href="https://twitter.com/intent/user?screen_name=<%= company[:twitter] %>" class="button">Follow @<%= company[:twitter] %></a></li>
             <li class="social-fb"><a rel="schema:sameAs" href="http://www.facebook.com/PentandraInc" class="button">Pentandra on FB</a></li>
           </ul>
           <link property="schema:sameAs" href="https://twitter.com/PentandraInc"/>

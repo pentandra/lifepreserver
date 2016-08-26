@@ -4,7 +4,7 @@ is_hidden_from_human_search: true
 <%= atom_feed title:         @config[:blog][:title],
               author_name:   @config[:blog][:author_name],
               author_uri:    @config[:blog][:author_uri],
-              articles:      published_articles,
+              articles:      published_blog_posts,
               content_proc:  ->(a) { absolutify(a, a.compiled_content(snapshot: :pre)) },
               excerpt_proc:  ->(a) { absolutify(a, article_summary(a)) },
               limit:         10

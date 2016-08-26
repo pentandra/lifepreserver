@@ -1,7 +1,7 @@
 <% render('/blog/default.*') do %>
   <h1>Articles by <%= author.to_s %></h1>
 
-  <% articles_by_author(published_articles, author).each do |article| %>
+  <% articles_by_author(published_blog_posts, author).each do |article| %>
     <%= render('/blog/partials/summary.*', item: article) %>
   <% end %>
 

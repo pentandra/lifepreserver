@@ -20,7 +20,7 @@ module Tagging
   end
 
   def tags
-    blk = -> { @items.select { |item| item[:kind] == 'tag' } }
+    blk = -> { @items.find_all('/project/tags/*') }
     if @items.frozen?
       @tag_items ||= blk.call
     else

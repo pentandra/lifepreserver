@@ -4,7 +4,7 @@
       <nav>
         <h2 class="big">Authors</h2>
         <ul>
-        <% authors(published_articles).sort.each do |author| %>
+        <% authors(published_blog_posts).sort.each do |author| %>
           <li><%= link_for_an_author(author) %></li>
         <% end %>
         </ul>
@@ -14,7 +14,7 @@
       <h2 class="big">Tags A<span class="ndash">--</span>Z</h2>
       <div class="group menu">
         <ul class="tags">
-        <% tag_set(published_articles).sort.each do |tag| %>
+        <% tag_set(published_blog_posts).sort.each do |tag| %>
           <li><%= link_for_tagcloud(tag) %></li>
         <% end %>
         </ul>
@@ -26,7 +26,7 @@
       <h2 class="big">Archives</h2>
       <ul>
         <li><%= link_to('Most Recent', '/blog/recent/') %></li>
-        <% archive_years(published_articles).sort.reverse_each do |year| %>
+        <% archive_years(published_blog_posts).sort.reverse_each do |year| %>
           <li><%= link_for_archive(year) %></li>
         <% end %>
         <li><%= link_to('Everything', '/blog/') %></li>

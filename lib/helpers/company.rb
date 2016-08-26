@@ -9,11 +9,11 @@ module Company
   end
 
   def member_path(member)
-    "#{@config[:company][:page_url]}##{full_name(member).to_slug}"
+    "#{company[:page_url]}##{full_name(member).to_slug}"
   end
 
   def member_description_path(member)
-    "#{@config[:company][:page_url]}/#sec:#{full_name(member).to_slug}"
+    "#{company[:page_url]}/#sec:#{full_name(member).to_slug}"
   end
 
   def member_image_path(member)
@@ -21,7 +21,7 @@ module Company
   end
 
   def company
-    @items["/company/index.*"].attributes
+    @config[:company]
   end
 
   def teammember(author_name)

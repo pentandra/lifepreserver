@@ -8,8 +8,8 @@ description: A collection of our thoughts about Pentandra and the future of rese
 
   <div resource="pentandra-blog:articles" typeof="schema:ItemList">
     <link property="schema:itemListOrder" resource="schema:itemListOrderDescending" />
-    <meta property="schema:numberOfItems" content="<%= h published_articles.length %>" datatype="schema:Integer" />
-    <% published_articles.each_with_index do |article, index| %>
+    <meta property="schema:numberOfItems" content="<%= h published_blog_posts.length %>" datatype="schema:Integer" />
+    <% published_blog_posts.each_with_index do |article, index| %>
       <%= render('/blog/partials/summary.*', item: article, position: index + 1) %>
     <% end %>
   </div>

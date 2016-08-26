@@ -1,7 +1,7 @@
 <% render('/blog/default.*') do %>
   <h1>Articles from <%= year.to_s %></h1>
 
-  <% articles_by_year(published_articles, year).sort_by { |item| item[:created_at] }.reverse_each do |article| %>
+  <% articles_by_year(published_blog_posts, year).sort_by { |item| item[:created_at] }.reverse_each do |article| %>
     <%= render('/blog/partials/summary.*', item: article) %>
   <% end %>
 
