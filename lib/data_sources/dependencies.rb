@@ -20,12 +20,12 @@ Class.new(Nanoc::DataSource) do
     new_item(
       '-',
       {
-               type: 'dependency',
-               name: gem.name,
-            summary: gem.summary,
-           homepage: gem.homepage,
-            version: gem.version.to_s,
-          is_hidden: true
+        kind:      'dependency',
+        name:      gem.name,
+        summary:   gem.summary,
+        homepage:  gem.homepage,
+        version:   gem.version.to_s,
+        is_hidden: true
       },
       Nanoc::Identifier.new("/dependencies/_#{slug}"),
       checksum_data: "name=#{gem.name},version=#{gem.version}")
