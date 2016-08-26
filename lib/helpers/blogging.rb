@@ -8,7 +8,12 @@ module Nanoc::Helpers
 
     # Relies upon Rules preprocessing to set the `:is_hidden` attribute.
     def published_articles
-      sorted_articles.reject { |a| a[:is_hidden] }
+      blk = -> { sorted_articles.reject { |a| a[:is_hidden] } }
+      if @items.frozen?
+        @published_article_items ||= blk.call
+      else
+        blk.call
+      end
     end
 
     def authors(articles = nil)
