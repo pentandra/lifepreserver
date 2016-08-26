@@ -15,10 +15,6 @@ module Vocabulary
 
   private_constant :VOAF_METADATA
 
-  def curie(uri)
-    RDF::Vocabulary.expand_pname(uri).pname
-  end
-
   def prefix_mappings_for(*prefixes)
     prefixes.map { |prefix| "#{prefix}: #{RDF::Vocabulary.find_by_prefix(prefix).to_uri}" }.join(" ")
   end
