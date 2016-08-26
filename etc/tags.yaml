@@ -1,0 +1,87 @@
+---
+- tag: Citizen Science
+  uri: http://dbpedia.org/resource/Citizen_science
+
+- tag: Connections
+  uri: http://dbpedia.org/resource/Interdependence
+
+- tag: Decisions
+  uri: http://dbpedia.org/resource/Decision-making
+
+- tag: Enlightenment
+  uri: http://dbpedia.org/resource/Age_of_Enlightenment
+
+- tag: Essay
+  uri: http://dbpedia.org/resource/Essay
+
+- tag: FORCE11
+
+- tag: Funding
+  uri: http://dbpedia.org/resource/Funding
+
+- tag: Genealogy
+  uri: http://dbpedia.org/resource/Genealogy
+
+- tag: Geungle
+
+- tag: GrowAm
+
+- tag: Growth
+  uri: http://dbpedia.org/resource/Growth
+
+- tag: Holism
+  uri: http://dbpedia.org/resource/Holism
+
+- tag: Joy
+  uri: http://dbpedia.org/resource/Joy
+
+- tag: NGS
+  uri: http://dbpedia.org/resource/National_Genealogical_Society
+
+- tag: OAI
+
+- tag: Open Access
+  uri: http://dbpedia.org/resource/Open_access
+
+- tag: Open Business
+  uri: http://dbpedia.org/resource/Open_business
+
+- tag: Open Research
+  uri: http://dbpedia.org/resource/Open_research
+
+- tag: Open Standards
+  uri: http://dbpedia.org/resource/Open_standard
+
+- tag: Opinionated
+  uri: http://dbpedia.org/resource/Opinion_piece
+
+- tag: Phil Trans
+  uri: http://dbpedia.org/resource/Philosophical_Transactions_of_the_Royal_Society
+
+- tag: Republic of Letters
+  uri: http://dbpedia.org/resource/Republic_of_Letters
+
+- tag: Research Cases
+
+- tag: Review
+  uri: http://dbpedia.org/resource/Review
+
+- tag: RootsTech
+  uri: http://dbpedia.org/resource/RootsTech
+
+- tag: Scholarly Commons
+
+- tag: Social Business
+
+- tag: Technology
+  uri: http://dbpedia.org/resource/Technology
+
+- tag: Treatise
+  uri: http://dbpedia.org/resource/Treatise
+
+- tag: W3C
+  uri: http://dbpedia.org/resource/World_Wide_Web_Consortium
+
+- tag: World Wide Web
+  uri: http://dbpedia.org/resource/World_Wide_Web
+...

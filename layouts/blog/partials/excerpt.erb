@@ -14,7 +14,7 @@
   <footer class="aside section">
     <nav class="group banner">
       <ul class="tags">
-        <% tag_set(Array(item)).each do |tag| %>
+        <% Array(item[:tags]).each do |tag| %>
         <li><%= link_for_tag(tag) %></li>
         <% end %>
       </ul>

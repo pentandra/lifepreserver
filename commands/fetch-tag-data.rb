@@ -1,33 +1,35 @@
 require 'sparql/client'
 require 'yaml'
+require 'active_support/core_ext/hash/keys'
 
 usage     'fetch-tag-data'
 aliases   :fetchtags, :ft
-summary   'fetches semantic tag data from the Web'
+summary   'fetches additional data about semantic tags from the Web'
 
 run do |opts, args, cmd|
 
-  semantic_tags = YAML.load_file('etc/semantic_tags.yaml')
+  tags = YAML.load_file('etc/tags.yaml').map(&:symbolize_keys)
 
   FileUtils.mkdir_p('var')
 
-  data = {}
+  data = []
 
   sparql = SPARQL::Client.new("http://dbpedia.org/sparql")
 
-  semantic_tags.each do |tag, uri|
+  tags.select { |t| t.key?(:uri) }.each do |tag|
+    uri = tag[:uri]
     query = <<-QUERY
       PREFIX dbo: <http://dbpedia.org/ontology/>
       PREFIX foaf: <http://xmlns.com/foaf/0.1/>
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
       PREFIX owl: <http://www.w3.org/2002/07/owl#>
 
-      SELECT ?abstract ?topic ?label ?type
+      SELECT ?abstract ?primaryTopicOf ?label ?type
       WHERE
       {
         <#{uri}> rdfs:label ?label ;
                  dbo:abstract ?abstract ;
-                 foaf:isPrimaryTopicOf ?topic .
+                 foaf:isPrimaryTopicOf ?primaryTopicOf .
           FILTER (langMatches(lang(?label), \"en\"))
           FILTER (langMatches(lang(?abstract), \"en\"))
 
@@ -46,16 +48,14 @@ run do |opts, args, cmd|
 
     puts "Querying remote endpoint for <#{uri}>…"
 
-    sparql.query(query).each do |solution|
-      data[tag] = { uri: uri }
-      solution.each_binding { |name, v| data[tag][name] = v.value }
-    end
+    sparql.query(query).each { |solution| solution.each_binding { |name, v| tag[name] = v.value } }
 
+    data << tag
   end
 
   puts "Writing tag data…"
 
-  File.open("var/tag_data.yaml", 'w+') { |io| io.write(YAML.dump(data)) }
+  File.open("var/additional_tag_data.yaml", 'w+') { |io| io.write(YAML.dump(data)) }
 
   puts "Finished!"
 end

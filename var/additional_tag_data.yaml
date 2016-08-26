@@ -1,5 +1,5 @@
 ---
-Citizen Science:
+- :tag: Citizen Science
   :uri: http://dbpedia.org/resource/Citizen_science
   :abstract: Citizen science (also known as crowd science, crowd-sourced science,
     civic science, volunteer monitoring or networked science) is scientific research
@@ -9,9 +9,9 @@ Citizen Science:
     of these activities by researchers on a primarily avocational basis." Citizen
     science is sometimes included in terms such as "public participation in scientific
     research", participatory monitoring and participatory action research.
-  :topic: http://en.wikipedia.org/wiki/Citizen_science
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Citizen_science
   :label: Citizen science
-Connections:
+- :tag: Connections
   :uri: http://dbpedia.org/resource/Interdependence
   :abstract: Interdependence is the mutual reliance between two or more groups.In
     relationships, interdependence is the degree to which members of the group are
@@ -23,9 +23,9 @@ Connections:
     freedom or independence as the ultimate good; others do the same with devotion
     to one's family, community, or society. Interdependence can be a common ground
     between these aspirations.
-  :topic: http://en.wikipedia.org/wiki/Interdependence
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Interdependence
   :label: Interdependence
-Decisions:
+- :tag: Decisions
   :uri: http://dbpedia.org/resource/Decision-making
   :abstract: This article deals with decision-making as analyzed in psychology. See
     also Decision theory.In psychology, decision-making is regarded as the cognitive
@@ -33,9 +33,9 @@ Decisions:
     alternative possibilities. Every decision-making process produces a final choice
     that may or may not prompt action. Decision-making is the process of identifying
     and choosing alternatives based on the values and preferences of the decision-maker.
-  :topic: http://en.wikipedia.org/wiki/Decision-making
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Decision-making
   :label: Decision-making
-Enlightenment:
+- :tag: Enlightenment
   :uri: http://dbpedia.org/resource/Age_of_Enlightenment
   :abstract: The Age of Enlightenment or simply the Enlightenment or Age of Reason
     is an era from the 1620s to the 1780s in which cultural and intellectual forces
@@ -62,10 +62,10 @@ Enlightenment:
     Some of these ideals proved influential and decisive in the course of the French
     Revolution, which began in 1789. After the Revolution, the Enlightenment was followed
     by an opposing intellectual movement known as Romanticism.
-  :topic: http://en.wikipedia.org/wiki/Age_of_Enlightenment
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Age_of_Enlightenment
   :label: Age of Enlightenment
   :type: http://dbpedia.org/class/yago/HistoricalEras
-Essay:
+- :tag: Essay
   :uri: http://dbpedia.org/resource/Essay
   :abstract: 'Essays are generally scholarly pieces of writing giving the author''s
     own argument, but the definition is vague, overlapping with those of an article,
@@ -86,10 +86,10 @@ Essay:
     focuses more on the evolution of a theme or an idea. A photographic essay is an
     attempt to cover a topic with a linked series of photographs; it may or may not
     have an accompanying text or captions.'
-  :topic: http://en.wikipedia.org/wiki/Essay
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Essay
   :label: Essay
   :type: http://www.wikidata.org/entity/Q188451
-Funding:
+- :tag: Funding
   :uri: http://dbpedia.org/resource/Funding
   :abstract: '"Funding" is the act of providing financial resources, usually in the
     form of money, or other values such as effort or time, to finance a need, program,
@@ -104,9 +104,9 @@ Funding:
     Our Business Startups Act (alternately, the "JOBS Act of 2012") (U.S.) is known
     as equity crowdfunding.Funds can be allocated for either short-term or long-term
     purposes.'
-  :topic: http://en.wikipedia.org/wiki/Funding
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Funding
   :label: Funding
-Genealogy:
+- :tag: Genealogy
   :uri: http://dbpedia.org/resource/Genealogy
   :abstract: 'Genealogy (from Greek: γενεά genea, "generation"; and λόγος logos, "knowledge"),
     also known as family history, is the study of families and the tracing of their
@@ -118,9 +118,11 @@ Genealogy:
     family in the larger historical picture, a sense of responsibility to preserve
     the past for future generations, and a sense of self-satisfaction in accurate
     storytelling.'
-  :topic: http://en.wikipedia.org/wiki/Genealogy
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Genealogy
   :label: Genealogy
-Holism:
+- :tag: Growth
+  :uri: http://dbpedia.org/resource/Growth
+- :tag: Holism
   :uri: http://dbpedia.org/resource/Holism
   :abstract: Holism (from Greek ὅλος holos "all, whole, entire") is the idea that
     systems (physical, biological, chemical, social, economic, mental, linguistic,
@@ -136,9 +138,11 @@ Holism:
     of understanding. And this works, to some extent... but putting things back together
     in order to understand them is harder, and typically comes later in the development
     of a scientist or in the development of science."
-  :topic: http://en.wikipedia.org/wiki/Holism
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Holism
   :label: Holism
-NGS:
+- :tag: Joy
+  :uri: http://dbpedia.org/resource/Joy
+- :tag: NGS
   :uri: http://dbpedia.org/resource/National_Genealogical_Society
   :abstract: The National Genealogical Society is a genealogical interest group founded
     in 1903 in Washington, D.C..  Its headquarters are in Arlington, Virginia.The
@@ -150,10 +154,12 @@ NGS:
     National Genealogical Society Quarterly, and the NGS Magazine. Annually, in conjunction
     with a sponsoring local genealogical society, it stages the "NGS Family History
     Conference."
-  :topic: http://en.wikipedia.org/wiki/National_Genealogical_Society
+  :primaryTopicOf: http://en.wikipedia.org/wiki/National_Genealogical_Society
   :label: National Genealogical Society
   :type: http://dbpedia.org/class/yago/OrganizationsBasedInVirginia
-Open Business:
+- :tag: Open Access
+  :uri: http://dbpedia.org/resource/Open_access
+- :tag: Open Business
   :uri: http://dbpedia.org/resource/Open_business
   :abstract: Open business is an approach to enterprise that draws on ideas from openness
     movements like free software, open source, open content and open tools and standards.
@@ -161,9 +167,9 @@ Open Business:
     business structures make contributors and non-contributors visible so that business
     benefits are distributed accordingly. They seek to increase personal engagement
     and positive outcomes by rewarding contributors in an open way.
-  :topic: http://en.wikipedia.org/wiki/Open_business
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Open_business
   :label: Open business
-Open Research:
+- :tag: Open Research
   :uri: http://dbpedia.org/resource/Open_research
   :abstract: Open research is research conducted in the spirit of free and open source
     software. Much like open source schemes that are built around a source code that
@@ -174,9 +180,9 @@ Open Research:
     is scientific in nature, it is frequently referred to as open science. Open research
     can also include social sciences, the humanities, mathematics, engineering and
     medicine.
-  :topic: http://en.wikipedia.org/wiki/Open_research
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Open_research
   :label: Open research
-Open Standards:
+- :tag: Open Standards
   :uri: http://dbpedia.org/resource/Open_standard
   :abstract: An open standard is a standard that is publicly available and has various
     rights to use associated with it, and may also have various properties of how
@@ -232,17 +238,17 @@ Open Standards:
     a particular firm has much power (not ownership) over the standard, which can
     occur when a firm’s platform “wins” in standard setting or the market makes one
     platform most popular.
-  :topic: http://en.wikipedia.org/wiki/Open_standard
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Open_standard
   :label: Open standard
   :type: http://dbpedia.org/class/yago/OpenStandards
-Opinionated:
+- :tag: Opinionated
   :uri: http://dbpedia.org/resource/Opinion_piece
   :abstract: An opinion piece is an article, published in a newspaper or magazine,
     that mainly reflects the author's opinion about the subject. Opinion pieces are
     featured in many periodicals.
-  :topic: http://en.wikipedia.org/wiki/Opinion_piece
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Opinion_piece
   :label: Opinion piece
-Phil Trans:
+- :tag: Phil Trans
   :uri: http://dbpedia.org/resource/Philosophical_Transactions_of_the_Royal_Society
   :abstract: Philosophical Transactions later Philosophical Transactions of the Royal
     Society (Phil. Trans.) is a scientific journal published by the Royal Society.
@@ -252,10 +258,10 @@ Phil Trans:
     and therefore also the world's longest-running scientific journal. The use of
     the word "Philosophical" in the title refers to "natural philosophy", which was
     the equivalent of what would now be generally called "science".
-  :topic: http://en.wikipedia.org/wiki/Philosophical_Transactions_of_the_Royal_Society
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Philosophical_Transactions_of_the_Royal_Society
   :label: Philosophical Transactions of the Royal Society
   :type: http://dbpedia.org/class/yago/MultidisciplinaryScientificJournals
-Republic of Letters:
+- :tag: Republic of Letters
   :uri: http://dbpedia.org/resource/Republic_of_Letters
   :abstract: 'The Republic of Letters (Respublica literaria) is the long-distance  intellectual
     community in the late 17th and 18th centuries in Europe and America. It fostered
@@ -283,9 +289,9 @@ Republic of Letters:
     of the Republic of Letters in influencing the Enlightenment. Today, most Anglo-American
     historians, whatever their point of entry to debate, occupy a common ground: the
     Republic of Letters and the Enlightenment were distinct.'
-  :topic: http://en.wikipedia.org/wiki/Republic_of_Letters
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Republic_of_Letters
   :label: Republic of Letters
-Review:
+- :tag: Review
   :uri: http://dbpedia.org/resource/Review
   :abstract: A review is an evaluation of a publication, service, or company such
     as a movie (a movie review), video game (video game review), musical composition
@@ -299,20 +305,20 @@ Review:
     on literature, culture, and current affairs. National Review, founded by William
     F. Buckley, Jr., is an influential conservative magazine, and Monthly Review is
     a long-running socialist periodical.
-  :topic: http://en.wikipedia.org/wiki/Review
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Review
   :label: Review
   :type: http://www.wikidata.org/entity/Q188451
-RootsTech:
+- :tag: RootsTech
   :uri: http://dbpedia.org/resource/RootsTech
   :abstract: 'RootsTech is a family history and technology conference and trade show
     held annually in the Salt Palace Convention Center, Salt Lake City, Utah. It is
     the successor to three former conferences: the Conference on Computerized Family
     History and Genealogy, the Family History Technology Workshop and the FamilySearch
     Developers Conference.'
-  :topic: http://en.wikipedia.org/wiki/RootsTech
+  :primaryTopicOf: http://en.wikipedia.org/wiki/RootsTech
   :label: RootsTech
   :type: http://dbpedia.org/class/yago/TradeShowsInTheUnitedStates
-Technology:
+- :tag: Technology
   :uri: http://dbpedia.org/resource/Technology
   :abstract: Technology (from Greek τέχνη, techne, "art, skill, cunning of hand";
     and -λογία, -logia) is the collection of techniques, skills, methods and processes
@@ -345,16 +351,16 @@ Technology:
     that the development of technology was restricted only to human beings, but 21st
     century scientific studies indicate that other primates and certain dolphin communities
     have developed simple tools and passed their knowledge to other generations.
-  :topic: http://en.wikipedia.org/wiki/Technology
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Technology
   :label: Technology
-Treatise:
+- :tag: Treatise
   :uri: http://dbpedia.org/resource/Treatise
   :abstract: A treatise is a formal and systematic written discourse on some subject,
     generally longer and treating it in greater depth than an essay, and more concerned
     with investigating or exposing the principles of the subject.
-  :topic: http://en.wikipedia.org/wiki/Treatise
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Treatise
   :label: Treatise
-W3C:
+- :tag: W3C
   :uri: http://dbpedia.org/resource/World_Wide_Web_Consortium
   :abstract: The World Wide Web Consortium (W3C) is the main international standards
     organization for the World Wide Web (abbreviated WWW or W3).Founded and currently
@@ -363,10 +369,10 @@ W3C:
     of standards for the World Wide Web. As of 11 August 2015, the World Wide Web
     Consortium (W3C) had 391 members.The W3C also engages in education and outreach,
     develops software and serves as an open forum for discussion about the Web.
-  :topic: http://en.wikipedia.org/wiki/World_Wide_Web_Consortium
+  :primaryTopicOf: http://en.wikipedia.org/wiki/World_Wide_Web_Consortium
   :label: World Wide Web Consortium
   :type: http://dbpedia.org/class/yago/InternationalNongovernmentalOrganizations
-World Wide Web:
+- :tag: World Wide Web
   :uri: http://dbpedia.org/resource/World_Wide_Web
   :abstract: The World Wide Web (www, W3) is an information space where documents
     and other web resources are identified by URLs, interlinked by hypertext links,
@@ -384,6 +390,6 @@ World Wide Web:
     publisher, or interactive where users contribute content or the content depends
     upon the user or their actions. Websites may be mostly informative, primarily
     for entertainment, or largely for commercial purposes.
-  :topic: http://en.wikipedia.org/wiki/World_Wide_Web
+  :primaryTopicOf: http://en.wikipedia.org/wiki/World_Wide_Web
   :label: World Wide Web
   :type: http://dbpedia.org/class/yago/Merchandise103748886

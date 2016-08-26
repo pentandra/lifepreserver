@@ -65,6 +65,8 @@ data_sources:
 
   - type: dependencies
     items_root: /project
+  - type: tags
+    items_root: /project
 
 # Configuration for the “check” command, which run unit tests on the site.
 checks:
