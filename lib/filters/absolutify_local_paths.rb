@@ -12,9 +12,6 @@ module Nanoc::Filters
 
     def run(content, arguments={})
 
-      # Set assigns so helper function can be used
-      @item_rep = assigns[:item_rep] if @item_rep.nil?
-
       # Parse
       doc = Nokogiri::HTML.fragment(content)
 
