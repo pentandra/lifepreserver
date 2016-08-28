@@ -1,3 +1,4 @@
+require 'rdf'
 require_relative 'text'
 
 module Company
@@ -8,8 +9,11 @@ module Company
     "#{person[:first_name]} #{person[:last_name]}"
   end
 
+  # Get an IRI for a person
+  #
+  # @return [RDF::IRI]
   def iri_for(person)
-    "#{@config[:base_url]}#{@config[:company][:page_url]}##{full_name(person).to_slug}"
+    RDF::IRI.new("#{@config[:base_url]}#{@config[:company][:page_url]}##{full_name(person).to_slug}")
   end
 
   # Relative path to a document section describing a person

@@ -6,7 +6,7 @@
   </p>
 
   <% author = person_by_name(@item[:author_name]) %>
-  <section class="section banner" resource="<%= RDF::URI.new(iri_for(author)).pname %>" typeof="dc:Agent schema:Person foaf:Person" property="dc:creator schema:author foaf:maker">
+  <section class="section banner" resource="<%= iri_for(author).pname %>" typeof="dc:Agent schema:Person foaf:Person" property="dc:creator schema:author foaf:maker">
     <h3 class="big">The Author</h3>
     <figure id="author">
       <img class="photo framed" src="<%= photo_url(author) %>" alt="Photo of <%= full_name(author) %>" property="schema:image foaf:img" />
