@@ -4,20 +4,21 @@ module Company
 
   include Text
 
-  def full_name(member)
-    "#{member[:first_name]} #{member[:last_name]}"
+  def full_name(person)
+    "#{person[:first_name]} #{person[:last_name]}"
   end
 
-  def member_path(member)
-    "#{@config[:company][:page_url]}##{full_name(member).to_slug}"
+  def iri_for(person)
+    "#{@config[:base_url]}#{@config[:company][:page_url]}##{full_name(person).to_slug}"
   end
 
-  def member_description_path(member)
-    "#{@config[:company][:page_url]}/#sec:#{full_name(member).to_slug}"
+  # Relative path to a document section describing a person
+  def description_path(person)
+    "#{@config[:company][:page_url]}/#sec:#{full_name(person).to_slug}"
   end
 
-  def member_photo_url(member)
-    "#{@config[:site][:images_url]}/#{full_name(member).to_slug}-150x150.jpg"
+  def photo_url(person)
+    "#{@config[:site][:images_url]}/#{full_name(person).to_slug}-150x150.jpg"
   end
 
   # Fetch all the attributes of the company item.
@@ -48,7 +49,7 @@ module Company
     item_set.each do |item|
       author = person_by_name(item[:author_name])
       if author
-        item[:author_uri] ||= "#{@config[:base_url]}#{member_description_path(author)}"
+        item[:author_uri] ||= "#{@config[:base_url]}#{description_path(author)}"
       end
     end
   end
