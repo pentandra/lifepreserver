@@ -1,0 +1,44 @@
+---
+company:
+  full_name: Pentandra Research Solutions, Inc.
+  nick_name: Pentandra
+  street_address:
+  locality: Logan
+  region: UT
+  postal_code: 84321
+  country: USA
+  phone: +1 435 294 2964
+  email: hello@pentandra.com
+  url: https://pentandra.com/
+  mission: >-
+    Pentandra’s mission is to open up the knowledge of the world, so that light
+    and understanding will be more accessible to everyone.
+  twitter: PentandraInc
+people:
+  - first_name: Chris
+    last_name: Chapman
+    gender: male
+    title: Co-founder and Super Coder
+    email: chris@pentandra.com
+    twitter: cd_chapman
+    gplus: 102332274449851755462
+    github: cdchapman
+    phone_ext: 1000
+    member_of: 
+      - Core Team
+    summary: >-
+      Chris loves to tackle difficult problems and dreams (literally) about
+      making research easier. He is our systems thinker.
+  - first_name: Katie
+    last_name: Chapman
+    gender: female
+    title: Co-founder and Exception Thinker
+    email: katie@pentandra.com
+    twitter: KAMChapman
+    gplus: 104975395018953249008
+    phone_ext: 1001
+    member_of: 
+      - Core Team
+    summary: >-
+      Katie loves to solve a good puzzle and thrives on the details. She is
+      also our finance and tax geek and actually enjoys it.

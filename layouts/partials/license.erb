@@ -4,7 +4,7 @@
     <small>
       Copyright ©
       <span property="schema:copyrightYear" datatype="xsd:gYear"><span property="doap:created" about="pentandra-website:project" datatype="xsd:date" content="2011-09-28">2011</span></span>--<%= Time.now.year %>
-      <span property="cc:attributionName"><a href="/company/" resource="pentandra:company" rel="schema:copyrightHolder schema:publisher" typeof="essglobal:SSEInitiative fea:Company schema:Corporation rov:RegisteredOrganization"><span property="schema:name schema:legalName rov:legalName"><%= @config[:company][:full_name] %></span></a></span>
+      <span property="cc:attributionName"><a href="/company/" resource="pentandra:company" rel="schema:copyrightHolder schema:publisher" typeof="essglobal:SSEInitiative fea:Company schema:Corporation rov:RegisteredOrganization"><span property="schema:name schema:legalName rov:legalName"><%= company[:full_name] %></span></a></span>
     </small>
   </li>
 

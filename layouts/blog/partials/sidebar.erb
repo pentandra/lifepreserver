@@ -5,11 +5,11 @@
     <%= @item[:description] %>
   </p>
 
-  <% author = teammember(@item[:author_name]) %>
+  <% author = person_by_name(@item[:author_name]) %>
   <section class="section banner" resource="<%= member_path(author) %>" typeof="dc:Agent schema:Person foaf:Person" property="dc:creator schema:author foaf:maker">
     <h3 class="big">The Author</h3>
     <figure id="author">
-      <img class="photo framed" src="<%= member_image_path(author) %>" alt="Photo of <%= full_name(author) %>" property="schema:image foaf:img" />
+      <img class="photo framed" src="<%= member_photo_url(author) %>" alt="Photo of <%= full_name(author) %>" property="schema:image foaf:img" />
       <figcaption class="small nav">
         <h4 class="normal shaved" property="rdfs:label schema:name foaf:name"><a href="<%= member_description_path(author) %>" property="schema:url" class="subtle"><%= full_name(author) %></a></h4>
         <p class="small em flush" property="schema:jobTitle"><%= author[:title] %></p>
