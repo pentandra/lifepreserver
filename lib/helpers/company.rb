@@ -1,5 +1,5 @@
-require 'rdf'
 require_relative 'text'
+require 'rdf'
 
 module Company
 
@@ -9,11 +9,19 @@ module Company
     "#{person[:first_name]} #{person[:last_name]}"
   end
 
-  # Get an IRI for a person
+  # Get an IRI for an object
   #
   # @return [RDF::IRI]
-  def iri_for(person)
-    RDF::IRI.new("#{@config[:base_url]}#{@config[:company][:page_url]}##{full_name(person).to_slug}")
+  def iri_for(obj)
+    if obj.is_a?(String)
+      RDF::IRI.new(obj)
+    elsif obj.respond_to?(:to_uri)
+      obj.to_uri
+    elsif obj.respond_to?(:identifier) && obj.identifier =~ '/company/people/*'
+      RDF::IRI.new("#{@config[:base_url]}#{@config[:company][:page_url]}##{full_name(obj).to_slug}")
+    else
+      raise ArgumentError, "Not sure how to get an IRI for an object of type `#{obj.class}`."
+    end
   end
 
   # Relative path to a document section describing a person
