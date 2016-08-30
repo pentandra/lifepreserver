@@ -31,12 +31,10 @@ Class.new(Nanoc::DataSource) do
       is_hidden: true
     }
 
-    attributes.merge!(tag)
-
     new_item(
       tag[:tag],
-      attributes,
-      Nanoc::Identifier.new("/tags/_#{slug}"),
+      attributes.merge(tag),
+      Nanoc::Identifier.new("/tags/#{slug}"),
       checksum_data: "tag=#{tag[:tag]},uri=#{tag[:uri]},abstract=#{tag[:abstract]}"
     )
   end

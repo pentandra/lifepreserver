@@ -51,7 +51,7 @@ module Tagging
   # Returns a link to the specified tag.
   def link_for_tag(tag, rel_tag: true)
     if tag.is_a?(String)
-      tag = @items["/project/tags/_#{tag.to_slug}"]
+      tag = @items["/project/tags/#{tag.to_slug}"]
       raise ArgumentError, "Tag metadata does not yet exist in `etc/tags.yaml` for the tag '#{tag}'. Please add the tag first and then try again." unless tag
     end
 
@@ -87,7 +87,7 @@ module Tagging
   # Creates in-memory tag pages for a collection of items
   def generate_tag_pages(items = nil)
     items = @items if items.nil?
-    tag_set(items).map { |tag| @items["/project/tags/_#{tag.to_slug}"] }.each do |tag|
+    tag_set(items).map { |tag| @items["/project/tags/#{tag.to_slug}"] }.each do |tag|
       @items.create(
         %[<%= render("/blog/tag.*", tag: @items["#{tag.identifier}"]) %>],
         { title: "Tag: #{tag.fetch(:label, tag.raw_content)}", kind: "tag-page", is_hidden: true, description: "All posts having to do with the tag '#{tag.raw_content}'" },

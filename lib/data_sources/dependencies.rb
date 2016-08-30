@@ -27,7 +27,7 @@ Class.new(Nanoc::DataSource) do
         version:   gem.version.to_s,
         is_hidden: true
       },
-      Nanoc::Identifier.new("/dependencies/_#{slug}"),
+      Nanoc::Identifier.new("/dependencies/#{slug}"),
       checksum_data: "name=#{gem.name},version=#{gem.version}")
   end
 

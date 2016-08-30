@@ -11,7 +11,7 @@ module Nanoc::Helpers
     end
 
     def blog_posts
-      blk = -> { @items.find_all('/blog/**/*.{md,html}') }
+      blk = -> { @items.find_all('/blog/**/*.md') }
       if @items.frozen?
         @blog_post_items ||= blk.call
       else

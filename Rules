@@ -82,6 +82,7 @@ preprocess do
 end
 
 ignore '/**/_*'
+ignore '/project/**/*'
 
 # Aggregated JavaScript scripts
  
