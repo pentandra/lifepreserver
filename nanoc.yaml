@@ -22,6 +22,11 @@ data_sources:
 
   - type: company
 
+  - type: filesystem
+    items_root: /company/benefit-reports
+    content_dir: benefit-reports/reports
+    layouts_dir: benefit-reports/layouts
+
 checks:
   internal_links:
     exclude: ['^/blog/feed']
