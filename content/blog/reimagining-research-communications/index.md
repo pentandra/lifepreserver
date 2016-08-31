@@ -4,7 +4,7 @@ description: What if we could start over from scratch?
 kind: article
 author_name: Chris Chapman
 created_at: 2016-04-07
-updated_at: 2016-05-26
+updated_at: 2016-08-31
 published: false
 tags:
   - Enlightenment
@@ -17,16 +17,22 @@ tags:
   - Technology
 ---
 
-Recently I had an opportunity to participate in an unusual workshop thanks to
-[FORCE11] and the [Leona M. and Harry B. Helmsley Charitable Trust][helmsley].
-This workshop is first in a series of workshops and exercises organized for the
-purpose of _defining the scholarly commons_, and this program is really the
-culmination of the desires of many to change how research is preserved and
-communicated. As you could probably guess, I am so excited to be a part of this
-movement! Because I am on the steering committee for [this working
-group][commons group], I have had the opportunity to observe both the
-foreground as well as the behind-the-scenes efforts. I want to share some of my
-impressions from both perspectives.
+Recently I had the wonderful opportunity of participating in an unusual
+workshop thanks to [FORCE11] and the [Leona M. and Harry B. Helmsley Charitable
+Trust][helmsley]. This workshop is first in a series of workshops and exercises
+organized for the purpose of _defining the scholarly commons_ (you can read the
+announcement of the program [here][announcement]). 
+
+I feel like this effort is really about the culmination of the desires of many,
+over hundreds of years, to change the way that we collectively create and share
+knowledge. While our world has gotten smaller, with many social and technical
+advances that have improved life in general, and access to knowledge
+specifically, I feel like we are now on the verge of something that will change
+our world in ways that we can't now fully anticipate. As you could probably
+guess, I am so excited to be a part of this movement! Because I am on the
+steering committee for [this working group][commons group], I have had the
+opportunity to observe both the foreground as well as the behind-the-scenes
+efforts. I want to share some of my impressions from both perspectives.
 
 <!--MORE-->
 
@@ -34,7 +40,7 @@ Before doing so, I wanted to express how fortunate we feel to be involved in
 FORCE11! When we started this company, we mainly focused on solving these
 problems with technology. It did not take long to realize that "if you build
 it, they will come" is really _not_ how it works in large-scale organizational
-migrations like this! While the right technology is needed, the social
+migrations like this! While the right technology is surely needed, the social
 challenges are at least <span class="oldstyle">1000</span> times more difficult
 to overcome than the technical ones! But we also discovered that they are not
 impossible to overcome either. Actually, in a way, I think that helping people
@@ -42,57 +48,156 @@ become united in a common purpose and heading in a common direction is the only
 _real_ challenge that there is. Once we're there we will have a shared vision
 of what needs to be built, and once it is built we will all know how well it
 embodies that collective vision. FORCE11 is taking this challenge by the horns,
-and doing so in a general (not domain-specific) way.
+and is trying to doing so in a domain-agnostic way.
 
-With this program, including the workshops and other exercises, the overarching
-question we hope to answer is this: _are we ready to define a scholarly commons?_
+## The premise
+
+So in a spirit of hope for the future, and with the assumption that everyone in
+the world would like to do things better and be more involved if they had the
+chance, here was the premise of the workshop:
+
+{: .bq .grab }
+> The scholarly system has vanished. The forms of communication that were valid
+> just a moment ago are now part of history. The contracts (international and
+> individual) have ceased to exist. All the universities, publications and job
+> titles are no longer in effect. The good news is that this is not an end: We
+> have gathered this very group here to re-start the whole system, and this is
+> a chance to do it better. You can use the same amount of money and technology
+> than there was available before, but use it better. Another good news is that
+> your intelligence, knowledge and creativity have not vanished. We will need
+> those qualities today. We are happy you made it to this emergency meeting.
+> Because of this situation, the scholarly world faces the question: Now that
+> we have to start from a blank slate, how do we want to organize ourselves?
+> How could we create our communication anew?
+
+Yes, it's a bit post-apocalyptic, but isn't it refreshing? Wouldn't it be _so
+much easier_ if all existing social contracts went away and we could design it
+all from scratch, almost as if we were outside of the current system?
+Fortunately or unfortunately, it is not likely that these changes will take
+place in real life this way, but it was fun for a couple days to play our hand
+at redesigning the way we do things, to take the blinders off and freely
+experiment. It think this premise also suggests the immense task that lays
+ahead as we seek to make these foundational changes in our society while wading
+through the modus operandi of research practices that is so entrenched in our
+culture right now.
 
 ## Preparations for a workshop
 
-One of the first questions that we considered in preparation for this workshop
-was do we steer the direction of the workshop and issuing outputs, or do we
-leave it open for people to create whatever they think the future is? I have to
-admit that there were times that I fought back at the idea, wanting to teach or
-indoctrinate concepts from commons theory during the workshop, and then use
-theory to design the commons from the top down. But we decided the later, to
-leave it completely up to the participants to design. We really had no clue to
-how it would turn out! Was it worth it? To me, I think this was the single best
-decision that we made in the design of the workshop. Everyone owned what they
-came up with, and even competed with other groups.
+By the time we found out that we had received the grant, there was not as much
+time as we would have liked to prepare for the first workshop, so we had to
+move quickly. We wanted to involve a good cross-section of people: old and
+young, diverse disciplines, north and south and east and west, so that what we
+came up with could be as representative of the collective feelings and thoughts
+of the world as possible. The overarching questions we hoped to answer with
+this workshop are these: _Are we ready to define a scholarly commons? Are
+people willing to work together to come up with new ways of doing things? Is
+there some common understanding of how that would work, or desire to move
+toward consensus?_
 
-Positivity.
+One of the first questions that we considered as a committee in preparation for
+this workshop was: do we take more of a top-down approach by steering the
+direction of the workshop toward ideas and theories about commons and
+commoning, or do we leave it open for people to create whatever they think the
+future is and see where the sticks fall? I have to admit that for much of the
+time I wanted to choose the former, wanting to teach or indoctrinate concepts
+from commons theory during the workshop, and to use theory to design the
+commons from the top down. But thanks to the thoughts of a few other people, we
+decided on the later, to leave it completely up to the participants to design
+the future. We really had no clue to how it would turn out, and whether or not
+any consensus at all would exist in the end.
 
-We did select participants that we knew were likely to have thought about these
-things before, that were involved somehow in this future-thinking already. We
-wanted a good mix of thought-leaders and young people. We also wanted a
-balanced representation of stakeholders from scholarly communities,
-disciplines, gender, and geographic locations around the globe.
+A big lesson that I learned in these early preparations was the importance, and
+I would even say the _critical role_, of a positive attitude. What if the
+answer in the end was that we were _not_ ready to define a scholarly commons?
+We needed to be willing to accept that (though I'm not sure what we would have
+done then with the rest of the program), but we also needed to have faith in
+the goodness of people, faith that this is the direction that the world needs
+to go, and hope that we will have the pieces to get there, and that people will
+_want_ to get there. While I think there is some purpose in all the pain,
+struggle, and opposition, (we need to have some pain points to have enough
+motivation to make positive change), it is certainly easier to complain about
+the pain than to take some positive action to make things better. It's hard to
+change the world, but not impossible. This is an effort of goodness, a positive
+thing aimed to make the world a better place, and we can only do it in a spirit
+of cheerfulness, not fearing.
 
-<figure id="fig:1" class="img" property="schema:image" resource="#demographics" typeof="schema:ImageObject">
-  <a property="schema:contentUrl" href="Demographic%20breakdown%20SCWG%20workshop%201.png">
-    <img property="schema:thumbnail" class="static retina" src="Demographic%20breakdown%20SCWG%20workshop%201%20620x364.png" alt="Figure 1" />
-  </a>
-  <link property="schema:representativeOfPage" resource="schema:False" />
-  <figcaption class="small"><b>Figure 1.</b> Demographic breakdown of attendees depicted through donut charts. By stakeholder group: Research=43%, Libraries and Education=15%, Publishing=13%, Repositories=9%, Advocacy Community=7%, Scholarly Communication Organizations=7%, Funding Organizations=4%, Non-profit=2%. By discipline: Life Sciences=28%, Social Sciences and Economics=17%, Information Science=15%, Multidisciplinary=15%, Arts and Humanities=7%, Physical Sciences=7%, Computer Sciences and Engineering=4%, Medicine=4%, Law=2%. By geographic location: North America=50%, Western and Northern Europe=30%, Africa=7%, Asia=4%, Eastern Europe=4%, Latin America=4%. By gender: Male=50%, Female=50%. By career level: Early Career=39%, Senior=35%, Mid-Career=22%, Student=4%.</figcaption>
-</figure>
 
 ## Outcomes and continuations
 
-Almost everyone that we invited turned up. I think we had one last-minute
-cancellation. Jeroen Bosman and Bianca Kramer did an excellent job designing
-the workshop. I think it was stimulating for everyone (maybe even a little too
-engaging for some people). Dinner on Friday night was delicious, but I was not
-prepared for the late Spanish dinners! I think we were done by 11:30PM!
+By the end of the two-day workshop, we had managed to converge on some ideas
+and principles. Here are a few that were meaningful to me:
+
+* All contributions are attributed in a way that promotes their value and facilitates credit for all forms of labor.
+* The Scholarly Commons are a fair place where everyone can play as long as they play fair and their contributions are [FAIR][fair-paper].
+* The commons contains all outputs created over the space of the entire tenure of research (all phases) and what is in the commons remains in there over times (though outputs can be built upon outside its borders).
+* Continuous research requires continuous infrastructure and expertise.
+* The scholarly commons shall provide equitable opportunities for diverse content, voices & disciplines to be discovered & used; it shall serve diverse needs and not re-inscribe existing power structures.
+* In the commons, shared content must have metadata that is: machine processable, meaning that it can be searched, aggregated, translated, manipulated; standards-based; use-agnostic; ideally rich.
+* The sustainability of the commons as an ecosystem is the shared responsibility of all participants.
+* Modifications to the principles of the commons must rely upon participation of the commons.
+* The commons are not static. They evolve in the hearts and minds of the community as everyone learns together and continuously quests their values.
+* Commercial entities are welcome, but cannot privatize content.
+* Sustaining a healthy commons requires a culture of reciprocity, where those who take from the commons give back to it.
+* Mentoring and training is a default part of doing research.
+* Stimulating and enabling competition.
+
+While some of these seem like they are a reaction and are tied to current
+frustrations, I think there are some timeless principles in there that could be
+distilled and applied in many different situations and contexts.
+
+Something that stuck out to me from group discussions was the idea of currency,
+or the free exchange of value in an ecosystem. _What is it that provides value
+in scholarship?_ Is it publishing papers? Is it money? We decided that it was
+none of those things, at least that was not the right way to look at it. The
+currency in the commons is the _contributions_, and the value of a particular
+contribution is how important that contribution is in some particular context.
+Anything can be of value in the right context! The emphasis, therefore, is on
+discoverability, participation, and reuse.
+
+<figure id="fig:workshop_participants" property="schema:image" resource="#workshop_participants" typeof="schema:ImageObject" class="img">
+  <link property="schema:representativeOfPage" resource="schema:True"/>
+  <a title="View the portrait full size" property="schema:contentUrl" href="reimagining_research_communications_force11_everyone@original.jpg">
+    <img property="schema:thumbnail" class="static" alt="A portrait of all the participants of the Redefining the Scholarly Commons workshop in Madrid, Spain, February 2016" src="reimagining_research_communications_force11_everyone.jpg" />
+  </a>
+  <figcaption property="schema:caption" class="small">Participants of the workshop <i>Reimagining Scholarly Communications</i>, held in <span property="schema:contentLocation">Madrid, Spain</span>, February 2016. I'm hiding (but smiling) in the back right. If you want to know who else came, check out the <a href="https://www.force11.org/group/scholarly-commons-working-group/attendee-list">participation list</a>. Thanks to <span property="schema:creator"><a typeof="schema:Person" property="schema:url" href="https://twitter.com/radicevslobodan"><span property="schema:name">Slobodan Radicev</span></a></span> for the photo.</figcaption>
+</figure>
+
+So was the [blank-slate approach](#sec:the-premise) worth it? To me, I think
+this was the single best decision that we made. Everyone owned what they came
+up with, and even competed with other groups in imagining the greatest future.
+There will be time to connect the dots of theory and history later. What we
+needed here was an opportunity to freely explore the future that we
+collectively hope to create, without any preconceived notions, limitations, or
+barriers.
 
 {: .conclusion }
-I think everyone present was in agreement that we are ready to define the
-scholarly commons. The next questions to answer include: _how do we define the
-commons? And how do we do this in a way that truly opens the door as wide as we
-can, so everyone feels included and able to play a part in the defining
-process?_
+In the end, we answered some of the questions that we had hoped to answer.
+There was general consensus that we _do_ want to work together, and that we
+_do_ want to find better ways of doing things, and that we _are_ ready to
+define a scholarly commons. We came up with a high-level sketch of the
+boundaries of the Scholarly Commons, but maybe more importantly, there was also
+the feeling that we were just barely scratching the surface, and that a lot
+more people, pieces, and ideas needed to be brought in and gathered. We are not
+done defining the Scholarly Commons! This is just the beginning. The next
+questions to answer include: _How do we define the commons? How can we do this
+in a way that truly opens the door as wide as we can, so everyone feels
+included and able to play a part in the defining process? And how do we ensure
+that this defining process will go on continuously?_
+
+---
+
+Bianca Kramer and Jeroen Bosman put a lot of work into publishing a report of
+the workshop. Please [check it out][workshop-report] to learn more, and please
+take the opportunity to go through the exercise on your own, or with your
+group.
 
 [FORCE11]: <https://force11.org>
 [helmsley]: <http://helmsleytrust.org>
-[commons group]: <https://www.force11.org/group/scholarly-commons-working-group> "Scholarly Commons Working Group at FORCE11"
+[commons group]: <https://www.force11.org/group/scholarly-commons-working-group> "Scholarly Commons Working Group @FORCE11"
+[announcement]: <https://www.force11.org/article/helmsley-charitable-trust-funds-force11-develop-scholarly-commons-future> "Program announcement @FORCE11"
+[workshop-report]: <http://dx.doi.org/10.3897/rio.2.e9340> "Defining the Scholarly Commons - Reimagining Research Communication. Report of Force11 SCWG Workshop, Madrid, Spain, February 25-27, 2016 on RIO"
+[fair-paper]: <http://dx.doi.org/10.1038/sdata.2016.18> "The FAIR Guiding Principles for scientific data management and stewardship on Scientific Data"
 
-*[FORCE11]: "FORCE11 is a community of scholars, librarians, archivists, publishers and research funders that has arisen organically to help facilitate the change toward improved knowledge creation and sharing."
+
+*[FAIR]: Findable, Accessible, Interoperable, Reusable
+*[FORCE11]: FORCE11 is a community of scholars, librarians, archivists, publishers and research funders that has arisen organically to help facilitate the change toward improved knowledge creation and sharing.
