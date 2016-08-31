@@ -21,32 +21,36 @@
     <div class="fancy wrapper group pod">
       <h3 class="big">Share</h3>
       <div class="menu nav section icons big" id="share">
-        <ul class="centered">
-          <li>
-            <a href="<%= %[https://plus.google.com/share?url=#{short_url_for(@item)}] %>" title="Share this article on Google+">
-              <span aria-hidden="true" class="button icon-googleplus"></span>
-              <span class="visuallyhidden">Share on Google+</span>
-            </a>
-          </li>
-          <li>
-            <a href="<%= %[https://www.facebook.com/sharer/sharer.php?u=#{short_url_for(@item)}] %>" title="Share this article on Facebook">
-              <span aria-hidden="true" class="button icon-facebook"></span>
-              <span class="visuallyhidden">Share on Facebook</span>
-            </a>
-          </li>
-          <li>
-            <a href="<%= %[https://twitter.com/share?url=#{short_url_for(@item)}&amp;text=#{u @item[:title]}&amp;via=#{company[:twitter]}&amp;hashtags=#{u Array(@item[:tags]).join(',')}] %>" title="Share this article on Twitter">
-              <span aria-hidden="true" class="button icon-twitter"></span>
-              <span class="visuallyhidden">Share on Twitter</span>
-            </a>
-          </li>
-          <li>
-            <a href="<%= %[https://www.linkedin.com/shareArticle?mini=true&amp;url=#{short_url_for(@item)}&amp;title=#{u @item[:title]}&amp;summary=#{u @item[:description] if @item.key?(:description)}&amp;source=pentandra.com] %>" title="Share this article on LinkedIn">
-              <span aria-hidden="true" class="button icon-linkedin"></span>
-              <span class="visuallyhidden">Share on LinkedIn</span>
-            </a>
-          </li>
-        </ul>
+        <% if @item[:published] %>
+          <ul class="centered">
+            <li>
+              <a href="<%= %[https://plus.google.com/share?url=#{short_url_for(@item)}] %>" title="Share this article on Google+">
+                <span aria-hidden="true" class="button icon-googleplus"></span>
+                <span class="visuallyhidden">Share on Google+</span>
+              </a>
+            </li>
+            <li>
+              <a href="<%= %[https://www.facebook.com/sharer/sharer.php?u=#{short_url_for(@item)}] %>" title="Share this article on Facebook">
+                <span aria-hidden="true" class="button icon-facebook"></span>
+                <span class="visuallyhidden">Share on Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a href="<%= %[https://twitter.com/share?url=#{short_url_for(@item)}&amp;text=#{u @item[:title]}&amp;via=#{company[:twitter]}&amp;hashtags=#{u Array(@item[:tags]).join(',')}] %>" title="Share this article on Twitter">
+                <span aria-hidden="true" class="button icon-twitter"></span>
+                <span class="visuallyhidden">Share on Twitter</span>
+              </a>
+            </li>
+            <li>
+              <a href="<%= %[https://www.linkedin.com/shareArticle?mini=true&amp;url=#{short_url_for(@item)}&amp;title=#{u @item[:title]}&amp;summary=#{u @item[:description] if @item.key?(:description)}&amp;source=pentandra.com] %>" title="Share this article on LinkedIn">
+                <span aria-hidden="true" class="button icon-linkedin"></span>
+                <span class="visuallyhidden">Share on LinkedIn</span>
+              </a>
+            </li>
+          </ul>
+        <% else %>
+          (not published)
+        <% end %>
       </div>
     </div>
   </section>
