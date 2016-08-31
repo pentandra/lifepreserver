@@ -8,7 +8,7 @@ Class.new(Nanoc::DataSource) do
 
   PREFIXES_USED ||= {
     standard:   [ :cc, :ctag, :dc, :foaf, :owl, :prov, :rdf, :rdfs, :schema, :sioc, :skos, :xhv ],
-    company:    [ :essglobal, :rov ],
+    business:   [ :essglobal, :rov ],
     open_graph: [ :article, :og, :profile ],
     document:   [ :deo, :doco, :fabio ],
     instance:   [ :dbo, :dbr, :yago ],
