@@ -75,11 +75,11 @@ much easier_ if all existing social contracts went away and we could design it
 all from scratch, almost as if we were outside of the current system?
 Fortunately or unfortunately, it is not likely that these changes will take
 place in real life this way, but it was fun for a couple days to play our hand
-at redesigning the way we do things, to take the blinders off and freely
-experiment. It think this premise also suggests the immense task that lays
-ahead as we seek to make these foundational changes in our society while wading
-through the modus operandi of research practices that is so entrenched in our
-culture right now.
+at redesigning the way we do things, to take the blinders off and experiment
+freely. It think this premise also suggests the immense task that lays ahead as
+we seek to make these foundational changes in our society while wading through
+the modus operandi of research practices that our culture is so entrenched in 
+right now.
 
 ## Preparations for a workshop
 
@@ -89,7 +89,7 @@ move quickly. We wanted to involve a good cross-section of people: old and
 young, diverse disciplines, north and south and east and west, so that what we
 came up with could be as representative of the collective feelings and thoughts
 of the world as possible. The overarching questions we hoped to answer with
-this workshop are these: _Are we ready to define a scholarly commons? Are
+this workshop were these: _Are we ready to define a scholarly commons? Are
 people willing to work together to come up with new ways of doing things? Is
 there some common understanding of how that would work, or desire to move
 toward consensus?_
@@ -103,8 +103,8 @@ time I wanted to choose the former, wanting to teach or indoctrinate concepts
 from commons theory during the workshop, and to use theory to design the
 commons from the top down. But thanks to the thoughts of a few other people, we
 decided on the later, to leave it completely up to the participants to design
-the future. We really had no clue to how it would turn out, and whether or not
-any consensus at all would exist in the end.
+the future, however they saw it. We really had no clue to how it would turn
+out, and whether or not any consensus at all would exist in the end.
 
 A big lesson that I learned in these early preparations was the importance, and
 I would even say the _critical role_, of a positive attitude. What if the
@@ -125,7 +125,7 @@ of cheerfulness, not fearing.
 ## Outcomes and continuations
 
 By the end of the two-day workshop, we had managed to converge on some ideas
-and principles. Here are a few that were meaningful to me:
+and principles. Here are a few that were especially meaningful to me:
 
 * All contributions are attributed in a way that promotes their value and facilitates credit for all forms of labor.
 * The Scholarly Commons are a fair place where everyone can play as long as they play fair and their contributions are [FAIR][fair-paper].
@@ -142,8 +142,9 @@ and principles. Here are a few that were meaningful to me:
 * Stimulating and enabling competition.
 
 While some of these seem like they are a reaction and are tied to current
-frustrations, I think there are some timeless principles in there that could be
-distilled and applied in many different situations and contexts.
+frustrations, I think some timeless principles exist within that could be
+distilled and would then be applicable to many different situations and
+contexts in knowledge work.
 
 Something that stuck out to me from group discussions was the idea of currency,
 or the free exchange of value in an ecosystem. _What is it that provides value
@@ -174,15 +175,15 @@ barriers.
 In the end, we answered some of the questions that we had hoped to answer.
 There was general consensus that we _do_ want to work together, and that we
 _do_ want to find better ways of doing things, and that we _are_ ready to
-define a scholarly commons. We came up with a high-level sketch of the
-boundaries of the Scholarly Commons, but maybe more importantly, there was also
-the feeling that we were just barely scratching the surface, and that a lot
-more people, pieces, and ideas needed to be brought in and gathered. We are not
-done defining the Scholarly Commons! This is just the beginning. The next
-questions to answer include: _How do we define the commons? How can we do this
-in a way that truly opens the door as wide as we can, so everyone feels
-included and able to play a part in the defining process? And how do we ensure
-that this defining process will go on continuously?_
+define a scholarly commons. These nascent outcomes form a high-level sketch of
+the boundaries of the Scholarly Commons, but with them came the general feeling
+that we were just barely scratching the surface, that a lot more people,
+pieces, and ideas needed to be gathered and brought in. We are not done
+defining the Scholarly Commons! This is just the beginning. The next questions
+to answer include: _How do we define the commons? How can we do this in a way
+that truly opens the door as wide as we can, so everyone feels included and
+able to play a part in the defining process? And how do we ensure that this
+defining process will go on continuously?_
 
 ---
 
