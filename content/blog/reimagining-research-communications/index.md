@@ -46,9 +46,10 @@ to overcome than the technical ones! But we also discovered that they are not
 impossible to overcome either. Actually, in a way, I think that helping people
 become united in a common purpose and heading in a common direction is the only
 _real_ challenge that there is. Once we're there we will have a shared vision
-of what needs to be built, and once it is built we will all know how well it
-embodies that collective vision. FORCE11 is taking this challenge by the horns,
-and is trying to doing so in a domain-agnostic way.
+of what needs to be built, and once it is built we will all be able to gauge
+how well it embodies that collective vision (or what still needs to be
+improved). FORCE11 is taking this challenge by the horns, and is trying to
+doing so in a domain-agnostic way.
 
 ## The premise
 
@@ -160,7 +161,7 @@ discoverability, participation, and reuse.
   <a title="View the portrait full size" property="schema:contentUrl" href="reimagining_research_communications_force11_everyone@original.jpg">
     <img property="schema:thumbnail" class="static" alt="A portrait of all the participants of the Redefining the Scholarly Commons workshop in Madrid, Spain, February 2016" src="reimagining_research_communications_force11_everyone.jpg" />
   </a>
-  <figcaption property="schema:caption" class="small">Participants of the workshop <i>Reimagining Scholarly Communications</i>, held in <span property="schema:contentLocation">Madrid, Spain</span>, February 2016. I'm hiding (but smiling) in the back right. If you want to know who else came, check out the <a href="https://www.force11.org/group/scholarly-commons-working-group/attendee-list">participation list</a>. Thanks to <span property="schema:creator"><a typeof="schema:Person" property="schema:url" href="https://twitter.com/radicevslobodan"><span property="schema:name">Slobodan Radicev</span></a></span> for the photo.</figcaption>
+  <figcaption property="schema:caption" class="small">Participants of the workshop <i>Reimagining Scholarly Communications</i>, held in <span property="schema:contentLocation">Madrid, Spain</span>, <span property="schema:dateCreated" content="2016-02-27" datatype="schema:Date">February 2016</span>. I'm hiding (but smiling) in the back right. If you want to know who else came, check out the <a href="https://www.force11.org/group/scholarly-commons-working-group/attendee-list">participation list</a>. Thanks to <span property="schema:creator" typeof="schema:Person"><a property="schema:url" href="https://twitter.com/radicevslobodan"><span property="schema:name">Slobodan Radicev</span></a></span> for the photo.</figcaption>
 </figure>
 
 So was the [blank-slate approach](#sec:the-premise) worth it? To me, I think
