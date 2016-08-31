@@ -20,6 +20,9 @@ data_sources:
   - type: tags
     items_root: /project
 
+  - type: vocabularies
+    items_root: /project
+
   - type: company
 
   - type: filesystem
