@@ -46,7 +46,7 @@ Class.new(Nanoc::DataSource) do
       kind: 'vocabulary',
       prefix: prefix,
       group: group_name,
-      namespace: vocab.to_uri.value,
+      namespace_uri: vocab.to_uri.value,
       is_hidden: true
     }
 
@@ -58,7 +58,10 @@ Class.new(Nanoc::DataSource) do
 
   # @return [Hash]
   def extract_metadata_from(vocab)
-    metadata = @voaf_metadata.fetch(ontology_uri(vocab).to_sym, {})
+    vocab_uri = vocab_uri(vocab)
+    metadata = @voaf_metadata.fetch(vocab_uri.to_sym, {})
+    metadata[:vocab_uri] = vocab_uri
+
     if metadata.key?(:description)
       metadata[:description] = cleanup(metadata[:description])
     end
@@ -71,7 +74,7 @@ Class.new(Nanoc::DataSource) do
     text[/[.!?]$/] ? text : text << '.'
   end
 
-  def ontology_uri(vocab)
+  def vocab_uri(vocab)
     vocab.ontology ? vocab.ontology.value : vocab.to_uri.value
   end
 

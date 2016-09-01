@@ -11,17 +11,12 @@ module Vocabulary
   INSTANCE_PREFIXES   ||= [ :dbo, :dbr, :yago ].freeze
   EXTRA_PREFIXES      ||= [ :pentandra, :"pentandra-blog", :"pentandra-website", :xsd ].freeze
 
-  VOAF_METADATA ||= YAML.load_file("var/voaf_metadata.yaml").freeze
-
-  private_constant :VOAF_METADATA
-
   def prefix_mappings_for(*prefixes)
     prefixes.map { |prefix| "#{prefix}: #{RDF::Vocabulary.find_by_prefix(prefix).to_uri}" }.join(" ")
   end
 
-  def ontology(vocab)
-    uri = vocab.ontology ? vocab.ontology.value : vocab.to_uri.value
-    VOAF_METADATA[uri.to_sym]
+  def vocabularies_for(group)
+    @items.find_all("/project/vocabularies/#{group}/*")
   end
 
 end
