@@ -2,7 +2,7 @@
 
   <%= render('/partials/header.*') %>
 
-  <main id="article-content" prefix="<%= prefix_mappings_for(*INSTANCE_PREFIXES) %>">
+  <main id="article-content" prefix="<%= prefix_mappings_for(:instances) %>">
     <div class="content">
 
       <%= render('/partials/wip.*') if @item[:wip] %>

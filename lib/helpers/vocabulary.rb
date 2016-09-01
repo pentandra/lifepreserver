@@ -1,21 +1,40 @@
-require "rdf"
-require "rdf/vocab"
+require "active_support/core_ext/object/blank"
 
 module Vocabulary
 
-  STANDARD_PREFIXES   ||= [ :cc, :ctag, :dc, :foaf, :owl, :prov, :rdf, :rdfs, :schema, :sioc, :skos, :xhv ].freeze
-  COMPANY_PREFIXES    ||= [ :essglobal, :rov ].freeze
-  OPEN_GRAPH_PREFIXES ||= [ :article, :og, :profile ].freeze
-  DOCUMENT_PREFIXES   ||= [ :deo, :doco, :fabio ].freeze
-  INSTANCE_PREFIXES   ||= [ :dbo, :dbr, :yago ].freeze
-  EXTRA_PREFIXES      ||= [ :pentandra, :"pentandra-blog", :"pentandra-website", :xsd ].freeze
+  # Finds all prefix mappings for the given arguments.
+  #
+  # @param [String, Symbol]
+  #
+  # @return [String]
+  def prefix_mappings_for(*args)
+    res = []
+    
+    args.each do |arg|
+      vocabs = vocabularies_for(arg)
 
-  def prefix_mappings_for(*prefixes)
-    prefixes.map { |prefix| "#{prefix}: #{RDF::Vocabulary.find_by_prefix(prefix).to_uri}" }.join(" ")
+      if vocabs.blank?
+        raise ArgumentError, "Unable to find a vocabulary for the argument `#{arg.inspect}`"
+      end
+
+      res << vocabs
+    end
+
+    res.flatten.map { |vocab| "#{vocab.fetch(:prefix)}: #{vocab.fetch(:namespace_uri)}" }.join(" ")
   end
 
-  def vocabularies_for(group)
-    @items.find_all("/project/vocabularies/#{group}/*")
+  # Finds a vocabulary or vocabularies for the given name.
+  #
+  # Accepts either group names or vocabulary prefixes. If the name is a group
+  # name, it should return the group. If it is a prefix, it should return a
+  # single vocabulary.
+  #
+  # @param [String, Symbol]
+  #
+  # @return [Array, Hash]
+  def vocabularies_for(name)
+    vocabs = @items.find_all("/project/vocabularies/#{name}/*")
+    vocabs.present? ? vocabs : @items["/project/vocabularies/*/#{name}"]
   end
 
 end
