@@ -23,7 +23,7 @@ module Vocab
               The DBpedia ontology provides the classes and properties used in the DBpedia data set.
             ).freeze,
       :"dc:issued" => %(2008-11-17T12:00Z).freeze,
-      :"dc:modified" => %(2016-08-19T06:53Z).freeze,
+      :"dc:modified" => %(2016-09-01T18:29Z).freeze,
       :"dc:publisher" => %(DBpedia Maintainers).freeze,
       :"dc:source" => %(http://mappings.dbpedia.org).freeze,
       :"dc:title" => %(The DBpedia Ontology).freeze,

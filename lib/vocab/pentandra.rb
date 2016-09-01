@@ -35,8 +35,7 @@ module Vocab
       :"foaf:mbox" => %(mailto:chris@pentandra.com).freeze,
       :"foaf:name" => %(Chris Chapman).freeze,
       label: "chris-chapman".freeze,
-      :"schema:description" => %(Chris loves to tackle difficult problems and dreams \(literally\) about making research easier. He is our systems thinker.
-).freeze,
+      :"schema:description" => %(Chris loves to tackle difficult problems and dreams \(literally\) about making research easier. He is our systems thinker.).freeze,
       :"schema:email" => %(mailto:chris@pentandra.com).freeze,
       :"schema:image" => %(https://pentandra.com/images/chris-chapman-150x150.jpg).freeze,
       :"schema:jobTitle" => %(Co-founder and Super Coder).freeze,
@@ -47,16 +46,15 @@ module Vocab
       :"vcard:hasEmail" => %(mailto:chris@pentandra.com).freeze,
       :"vcard:hasGender" => %(vcard:Male).freeze,
       :"vcard:hasPhoto" => %(https://pentandra.com/images/chris-chapman-150x150.jpg).freeze,
-      :"vcard:rev" => %(2016-08-18).freeze,
+      :"vcard:rev" => %(2016-09-01).freeze,
       :"vcard:title" => %(Co-founder and Super Coder).freeze
     term :company,
-      :"foaf:homepage" => %(https://pentandra.com).freeze,
+      :"foaf:homepage" => %(https://pentandra.com/).freeze,
       :"http://purl.org/essglobal/vocab/economicSector" => [%(essglobal-activities:A10).freeze, %(essglobal-activities:A13).freeze, %(essglobal-activities:A16).freeze],
       :"http://purl.org/essglobal/vocab/legalForm" => %(essglobal-legalform:L5).freeze,
       :"http://purl.org/essglobal/vocab/mission" => %(
 
       Pentandra’s mission is to open up the knowledge of the world, so that light and understanding will be more accessible to everyone.
-
       
         
         We hope that the effect of our mission will be to help bring open
@@ -105,13 +103,13 @@ module Vocab
       :"schema:potentialAction" => %(pentandra:donate).freeze,
       :"schema:sameAs" => [%(http://www.facebook.com/PentandraInc).freeze, %(https://plus.google.com/+Pentandra).freeze, %(https://twitter.com/PentandraInc).freeze],
       :"schema:telephone" => %(tel:+14352942964).freeze,
-      :"schema:url" => %(https://pentandra.com).freeze,
-      type: ["fea:Company".freeze, "foaf:Organization".freeze, "http://purl.org/essglobal/vocab/SSEInitiative".freeze, "http://www.w3.org/ns/regorg#RegisteredOrganization".freeze, "schema:Corporation".freeze, "vcard:Organization".freeze],
+      :"schema:url" => %(https://pentandra.com/).freeze,
+      type: ["foaf:Organization".freeze, "http://purl.org/essglobal/vocab/SSEInitiative".freeze, "http://vocab.data.gov/def/fea#Company".freeze, "http://www.w3.org/ns/regorg#RegisteredOrganization".freeze, "schema:Corporation".freeze, "vcard:Organization".freeze],
       :"vcard:hasEmail" => %(mailto:hello@pentandra.com).freeze,
       :"vcard:hasLogo" => %(https://pentandra.com/images/pentandra-logo.png).freeze,
       :"vcard:hasTelephone" => %(tel:+14352942964).freeze,
-      :"vcard:hasURL" => %(https://pentandra.com).freeze,
-      :"vcard:rev" => %(2016-08-18).freeze
+      :"vcard:hasURL" => %(https://pentandra.com/).freeze,
+      :"vcard:rev" => %(2016-09-01).freeze
     term :contact,
       label: "contact".freeze,
       type: "schema:ContactPage".freeze
@@ -143,8 +141,7 @@ module Vocab
       :"foaf:mbox" => %(mailto:katie@pentandra.com).freeze,
       :"foaf:name" => %(Katie Chapman).freeze,
       label: "katie-chapman".freeze,
-      :"schema:description" => %(Katie loves to solve a good puzzle and thrives on the details. She is also our finance and tax geek and actually enjoys it.
-).freeze,
+      :"schema:description" => %(Katie loves to solve a good puzzle and thrives on the details. She is also our finance and tax geek and actually enjoys it.).freeze,
       :"schema:email" => %(mailto:katie@pentandra.com).freeze,
       :"schema:image" => %(https://pentandra.com/images/katie-chapman-150x150.jpg).freeze,
       :"schema:jobTitle" => %(Co-founder and Exception Thinker).freeze,
@@ -155,11 +152,10 @@ module Vocab
       :"vcard:hasEmail" => %(mailto:katie@pentandra.com).freeze,
       :"vcard:hasGender" => %(vcard:Female).freeze,
       :"vcard:hasPhoto" => %(https://pentandra.com/images/katie-chapman-150x150.jpg).freeze,
-      :"vcard:rev" => %(2016-08-18).freeze,
+      :"vcard:rev" => %(2016-09-01).freeze,
       :"vcard:title" => %(Co-founder and Exception Thinker).freeze
     term :mission,
-      :"http://vocab.data.gov/def/fea#description" => %(Pentandra’s mission is to open up the knowledge of the world, so that light and understanding will be more accessible to everyone.
-).freeze,
+      :"http://vocab.data.gov/def/fea#description" => %(Pentandra’s mission is to open up the knowledge of the world, so that light and understanding will be more accessible to everyone.).freeze,
       label: "mission".freeze,
       type: "http://vocab.data.gov/def/fea#Mission".freeze
   end
