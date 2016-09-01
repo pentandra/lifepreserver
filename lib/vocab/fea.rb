@@ -10,7 +10,7 @@ module Vocab
   class FEA < RDF::StrictVocabulary("http://vocab.data.gov/def/fea#")
 
     # Ontology definition
-    ontology :"http://vocab.data.gov/def/fea#",
+    ontology :"http://vocab.data.gov/def/fea",
       :"dc11:modified" => %(2015-06-26).freeze,
       :"dc11:title" => %(FEA Vocabulary).freeze,
       :"foaf:page" => %(http://vocab.data.gov/def/fea.html).freeze,
