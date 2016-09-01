@@ -338,7 +338,7 @@ priority: 0.6
         <link property="vcard:hasGender" resource="vcard:<%= member[:gender].capitalize %>" />
         <div class="group">
           <div class="section aside">
-            <img property="foaf:img schema:image vcard:hasPhoto" class="photo framed" src="<%= member_photo_url(member) %>" alt="Photo of <%= full_name(member) %>" />
+            <img property="foaf:img schema:image vcard:hasPhoto" class="photo framed" src="<%= photo_url(member) %>" alt="Photo of <%= full_name(member) %>" />
             <aside class="nav menu rev">
               <ul class="sp framed icons">
                 <% if member[:gplus] %>
