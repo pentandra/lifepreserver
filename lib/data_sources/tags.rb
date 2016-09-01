@@ -4,16 +4,16 @@ require 'active_support/core_ext/string/inflections'
 Class.new(Nanoc::DataSource) do
   identifier :tags
 
+  def up
+    @tags = YAML.load_file('etc/tags.yaml').map(&:symbolize_keys)
+    @additional_tag_data = YAML.load_file('var/additional_tag_data.yaml')
+  end
+
   def items
     items = []
     
-    raw_tags = YAML.load_file('etc/tags.yaml')
-    tags = raw_tags.map(&:symbolize_keys)
-
-    additional_tag_data = YAML.load_file('var/additional_tag_data.yaml')
-
-    tags.each do |tag|
-      tag.update(additional_tag_data.find { |a| a[:tag] == tag[:tag] } || {})
+    @tags.each do |tag|
+      tag.update(@additional_tag_data.find { |a| a[:tag] == tag[:tag] } || {})
       items << tag_to_item(tag)
     end
 

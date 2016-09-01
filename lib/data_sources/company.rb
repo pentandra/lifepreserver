@@ -4,17 +4,19 @@ require 'active_support/core_ext/string/inflections'
 Class.new(Nanoc::DataSource) do
   identifier :company
 
+  def up
+    @company_info = YAML.load_file('etc/company.yaml').deep_symbolize_keys
+  end
+
   def items
     items = []
 
-    company_info = YAML.load_file('etc/company.yaml').deep_symbolize_keys
-
     items << new_item(
       '',
-      { is_hidden: true }.merge(company_info[:company]),
+      { is_hidden: true }.merge(@company_info[:company]),
       Nanoc::Identifier.new("/company/_"))
       
-    company_info[:people].each do |person|
+    @company_info[:people].each do |person|
       items << person_to_item(person)
     end
 
