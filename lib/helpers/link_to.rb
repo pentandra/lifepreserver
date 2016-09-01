@@ -2,31 +2,9 @@ module Nanoc::Helpers
 
   module LinkTo
 
-    # Returns the absolute path for the given path or item representation. The
-    # returned path will not be HTML-escaped. The `:base_url` from the site
-    # configuration is used in assembling the path.
-    #
-    # Some of this comes from https://gist.github.com/1597618, particularly the
-    # regexes.
-    #
-    # @param [String, Nanoc::Item, Nanoc::ItemRep] target The path/URL, item or
-    # item representation to which the absolute path should be generated
-    #
-    # @return [String] The absolute path to the target
-    def absolute_path_to(item, target)
-
+    def absolutify(item, content)
       validate_config
 
-      path = target.is_a?(String) ? target : target.path
-
-      if path.nil?
-        raise "Cannot get the absolute path to #{target.inspect} because this target is not outputted (its routing rule returns nil)"
-      end
-
-      @config[:base_url] + unstack(item.path, path)
-    end
-
-    def absolutify(item, content)
       content.gsub(/(<[^>]+\s+(src|href))=(['"]?)((?!.*http[s]?:).*?)\3([ \/>])/) do
         $1 + '=' + $3 + absolute_path_to(item, $4) + $3 + $5
       end
@@ -48,9 +26,31 @@ module Nanoc::Helpers
       p
     end
 
+    # Returns the absolute path for the given path or item representation. The
+    # returned path will not be HTML-escaped. The `:base_url` from the site
+    # configuration is used in assembling the path.
+    #
+    # Some of this comes from https://gist.github.com/1597618, particularly the
+    # regexes.
+    #
+    # @param [String, Nanoc::Item, Nanoc::ItemRep] target The path/URL, item or
+    # item representation to which the absolute path should be generated
+    #
+    # @return [String] The absolute path to the target
+    def absolute_path_to(item, target)
+
+      path = target.is_a?(String) ? target : target.path
+
+      if path.nil?
+        raise "Cannot get the absolute path to #{target.inspect} because this target is not outputted (its routing rule returns nil)"
+      end
+
+      @config[:base_url] + unstack(item.path, path)
+    end
+
     def validate_config
       if @config[:base_url].nil?
-        raise Nanoc::Errors::GenericTrivial.new('Cannot build absolute path: site configuration has no base_url')
+        raise Nanoc::Int::Errors::GenericTrivial.new('Cannot build absolute path: site configuration has no base_url')
       end
     end
 

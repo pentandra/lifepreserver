@@ -8,7 +8,7 @@
       </h2>
       <p class="em">By <%= link_for_author(item[:author_name]) %></p>
     </header>
-    <%= article_summary(item) %>
+    <%= post_summary(item) %>
   </div>
   <%= render('/blog/partials/created_on.*', item: item) %>
   <footer class="aside section">

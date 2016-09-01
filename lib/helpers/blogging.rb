@@ -1,6 +1,7 @@
+require "active_support/core_ext/object/blank"
 require_relative 'text'
 
-module Nanoc::Helpers
+module LifePreserver
 
   module Blogging
 
@@ -38,12 +39,12 @@ module Nanoc::Helpers
       end
     end
 
-    def authors(articles = nil)
-      articles = @articles if articles.nil?
+    def authors(posts = nil)
+      posts ||= @blog_posts
       authors = Set.new
-      articles.each do |article|
-        next if article[:author_name].nil?
-        authors << article[:author_name].to_s
+      posts.each do |post|
+        next if post[:author_name].blank?
+        authors << post[:author_name].to_s
       end
       authors.to_a
     end
@@ -51,70 +52,38 @@ module Nanoc::Helpers
     #
     # Create a link for the author of this page
     #
-    def link_for_author(author)
-      %[<a rel="author" href="#{@config[:blog][:authors_url]}/#{h author.to_slug}/" title="More articles by #{h author}">#{h author}</a>]
+    def link_for_author(author, rel_tag: true)
+      %[<a href="#{@config[:blog][:authors_url]}/#{h author.to_slug}/" title="Articles by #{h author}"#{" rel=\"author\"" if rel_tag}>#{h author}</a>]
     end
 
-    def link_for_an_author(author)
-      %[<a href="#{@config[:blog][:authors_url]}/#{h author.to_slug}/" title="Articles by #{h author}">#{h author}</a>]
+    def link_for_authorlist(author)
+      link_for_author(author, rel_tag: false)
     end
 
-    def articles_by_author(articles, author)
-      articles.select { |item| item[:author_name] == author }
+    def posts_by_author(posts, author_name)
+      posts.select { |post| post[:author_name] == author_name }
     end
 
-    def articles_by_year(articles, year)
-      articles.select { |item| item[:created_at].year == year }
+    def posts_by_year(posts, year)
+      posts.select { |post| post[:created_at].year == year }
     end
 
     def link_for_archive(year)
       %[<a rel="archives" href="#{@config[:blog][:archives_url]}/#{h year.to_s}/" title="Articles written in #{h year.to_s}">#{h year.to_s}</a>]
     end
 
-    def archive_years(articles = nil)
-      articles = @articles if articles.nil?
-      years = articles.map { |a| a[:created_at].year }.uniq
+    def archive_years(posts = nil)
+      posts ||= @blog_posts
+      years = posts.map { |a| a[:created_at].year }.uniq
       years.to_a
     end
 
-    def date_for(item)
-      simple_date(item[:created_at])
-    end
+    def post_summary(post, read_more_text="Read more ⇢", separator="<!--MORE-->")
+      summary,body = post.compiled_content.split(separator)
+      return summary unless body
 
-    def simple_date(date)
-      attribute_to_time(date).strftime('%F')
-    end
-
-    def fancy_date(date)
-      attribute_to_time(date).strftime('%B %d, %Y')
-    end
-
-    # Nanoc helper to display blog post summary and a link to the full post.
-    # Used inside <% published_blog_posts.each do |item| %>...<% end %> block etc.
-    #
-    # From https://gist.github.com/3134795
-    #
-    # @example Put the following in your layout:
-    #
-    #    <%= article_summary(item, "Read the full article>>") %>
-    #
-    # To customize the link text you can add `read_more` attribute to your
-    # item metadata or pass the string to the helper, as above.
-    #
-    # Add <!--MORE--> separator somewhere in your item to split it. Otherwise
-    # the full article text is displayed.
-    #
-    # @param [String] item The blog post
-    #
-    # @param [String] read_more_text The "Read more →" text
-    #
-    # @param [String] separator Separates item summary from item body. Defaults to <!--MORE-->
-    #
-    def article_summary(article, read_more_text="Read more ⇢", separator="<!--MORE-->")
-      summary,body = article.compiled_content.split(separator)
-      return article.compiled_content unless body
-      link = link_to( (article[:read_more] || read_more_text), article.path, class: "readmore", title: "Read the full article" )
-      return summary + "<p class=\"readmore\">#{link}</p>"
+      link = link_to(post.fetch(:read_more, read_more_text), post.path, class: "readmore", title: "Read the full article")
+      return summary << "<p class=\"readmore\">#{link}</p>"
     end
 
     def article_id(article)
