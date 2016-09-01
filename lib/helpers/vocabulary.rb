@@ -1,6 +1,5 @@
 require "rdf"
 require "rdf/vocab"
-require "yaml"
 
 module Vocabulary
 
