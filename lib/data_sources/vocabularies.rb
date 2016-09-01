@@ -66,6 +66,12 @@ Class.new(Nanoc::DataSource) do
   end
 
   def vocab_uri(vocab)
+    # HACK: until we have better handling of ontology definitions at a
+    # different uri than the namespace uri.
+    if vocab == RDF::Vocab::VOID
+      return "http://vocab.deri.ie/void"
+    end
+
     vocab.ontology ? vocab.ontology.value : vocab.to_uri.value
   end
 
