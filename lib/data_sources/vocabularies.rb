@@ -6,15 +6,6 @@ require 'rdf/vocab'
 Class.new(Nanoc::DataSource) do
   identifier :vocabularies
 
-  PREFIXES_USED ||= {
-    standard:   [ :cc, :ctag, :dc, :foaf, :owl, :prov, :rdf, :rdfs, :schema, :sioc, :skos, :xhv ],
-    business:   [ :essglobal, :rov ],
-    open_graph: [ :article, :og, :profile ],
-    document:   [ :deo, :doco, :fabio ],
-    instance:   [ :dbo, :dbr, :yago ],
-    extra:      [ :pentandra, :"pentandra-blog", :"pentandra-website", :xsd ]
-  }
-
   def up
     @voaf_metadata ||= YAML.load_file("var/voaf_metadata.yaml")
   end
@@ -26,7 +17,7 @@ Class.new(Nanoc::DataSource) do
   def items
     items = []
 
-    PREFIXES_USED.each do |group_name, group|
+    @config[:prefixes_used].each do |group_name, group|
       group.each do |prefix|
         vocab = RDF::Vocabulary.find_by_prefix(prefix)
         items << vocabulary_to_item(vocab, group_name)
