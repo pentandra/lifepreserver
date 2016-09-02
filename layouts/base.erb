@@ -28,7 +28,7 @@
 
   </head>
 
-  <body prefix="<%= prefix_mappings_for(:standard, :business, :pentandra, :doap) %>" about="" property="schema:isPartOf" resource="pentandra-website:website" typeof="schema:WebPage cc:Work prov:Entity">
+  <body prefix="<%= prefix_mappings_for(:standard, :business, :pentandra, :doap) %>" about="" property="schema:isPartOf" resource="pentandra-website:website" typeof="schema:WebPage cc:Work prov:Entity" class="<%= @item[:kind] %>">
 
     <% for p in @item.fetch(:beginbody, []) %>
       <%= render("/partials/#{p}.*") %>
