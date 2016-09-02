@@ -8,6 +8,9 @@
 - tag: Decisions
   uri: http://dbpedia.org/resource/Decision-making
 
+- tag: Design
+  uri: http://dbpedia.org/resource/Design
+
 - tag: Enlightenment
   uri: http://dbpedia.org/resource/Age_of_Enlightenment
 
