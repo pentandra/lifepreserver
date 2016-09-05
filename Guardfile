@@ -5,6 +5,7 @@ guard 'nanoc' do
   watch('etc/dictionary')
   watch('etc/compass/compass.rb')
   watch('etc/*.yaml')
+  watch(%r{^specifications/(playground|layouts).*$})
 end
 
 guard 'livereload', hostname: 'localhost', override_url: true  do
