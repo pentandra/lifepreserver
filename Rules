@@ -142,43 +142,41 @@ end
 
 # Specification documents (N3)
 
-ignore '/spec/README.*'
-
-compile '/spec/**/*.ttl' do
+compile '/specifications/**/*.ttl' do
   filter :rdf_distiller, format: :turtle
 end
 
-compile '/spec/**/*.ttl', rep: :jsonld do
+compile '/specifications/**/*.ttl', rep: :jsonld do
   filter :rdf_distiller, format: :jsonld
   write item.identifier.without_ext + '.jsonld'
 end
 
-compile '/spec/**/*.ttl', rep: :rdfxml do
+compile '/specifications/**/*.ttl', rep: :rdfxml do
   filter :rdf_distiller, format: :rdfxml
   write item.identifier.without_ext + '.rdf'
 end
 
-compile '/spec/**/*.ttl', rep: :html do
-  layout '/spec/vocabulary.*'
+compile '/specifications/**/*.ttl', rep: :html do
+  layout '/specifications/vocabulary.*'
   filter :cache_buster if @config[:production]
   filter :html5small if @config[:production]
   write item.identifier.without_ext + '.html'
 end
 
-layout '/spec/vocabulary.*', :rdf_distiller, format: :html
+layout '/specifications/vocabulary.*', :rdf_distiller, format: :html
 
-compile '/spec/**/*.md' do
+compile '/specifications/**/*.md' do
   filter :kramdown, @config[:kramdown]
   filter :colorize_syntax, default_colorizer: :pygmentize, pygmentize: { nowrap: 'True' }
   filter :spellchecker unless @config[:production]
-  layout '/spec/default.*'
+  layout '/specifications/default.*'
   filter :rubypantsunicode
   filter :cache_buster if @config[:production]
   filter :html5small if @config[:production]
 end
 
-passthrough '/spec/**/*.html'
-passthrough '/spec/LICENSE'
+passthrough '/specifications/**/*.html'
+
 
 # vcard and QR code
 
