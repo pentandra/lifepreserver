@@ -165,20 +165,27 @@ end
 
 layout '/specifications/vocabulary.*', :rdf_distiller, format: :html
 
-compile '/specifications/**/*.md' do
+passthrough '/specifications/**/*.html'
+
+# Company
+
+compile %r{\A/company/benefit-reports/\d{4}/index\.md} do
+  filter :erb, trim_mode: '>'
   filter :kramdown, @config[:kramdown]
-  filter :colorize_syntax, default_colorizer: :pygmentize, pygmentize: { nowrap: 'True' }
   filter :spellchecker unless @config[:production]
-  layout '/specifications/default.*'
+  layout '/default.*'
   filter :rubypantsunicode
   filter :cache_buster if @config[:production]
   filter :html5small if @config[:production]
 end
 
-passthrough '/specifications/**/*.html'
-
-
-# vcard and QR code
+compile %r{\A/company/benefit-reports/(\d{4})/index\.md}, rep: :pdf do |fiscal_year, _|
+  filter :pandoc, args: [
+    { from: :markdown, to: :context },
+    :smart
+  ]
+  write File.dirname(item.identifier.to_s) + "/UT_Pentandra_report_#{fiscal_year}.pdf"
+end
 
 compile '/company/_', rep: :vcard do
   filter :vcard, @config[:company].merge(kind: 'org')
