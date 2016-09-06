@@ -142,10 +142,10 @@ and principles. Here are a few that were especially meaningful to me:
 * Mentoring and training is a default part of doing research.
 * Stimulating and enabling competition.
 
-While some of these seem like they are a reaction and are tied to current
-frustrations, I think some timeless principles exist within that could be
-distilled and would then be applicable to many different situations and
-contexts in knowledge work.
+While some of these seem like they are reactions to frustrations with the
+current practices of scholarship, I think there are some timeless principles
+here that could be distilled and refined, and would then be applicable to many
+different situations and contexts in knowledge work.
 
 Something that stuck out to me from group discussions was the idea of currency,
 or the free exchange of value in an ecosystem. _What is it that provides value
