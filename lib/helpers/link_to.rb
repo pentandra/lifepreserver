@@ -12,6 +12,8 @@ module Nanoc::Helpers
 
     def link_to_id(id)
       item = @items[id]
+      raise ArgumentError, "Could not find item to link to with identifier: #{id}" unless item
+
       link_to(item[:short_title] || item[:title], item)
     end
 
