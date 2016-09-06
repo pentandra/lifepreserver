@@ -9,6 +9,18 @@
 //
 // Default HTML Styles
 
+body, button, input, select, textarea { color: $font-color; }
+
+a {
+  color: $link-color;
+  &:visited { color: $link-visited-color; }
+  &:hover { color: $link-hover-color; }
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+}
+
 #{headings(1,3)} {
   text-transform: uppercase;
 }
@@ -64,7 +76,6 @@ small {
 
 body {
   @extend .normal;
-  font-family: $base-font-family,sans-serif;
   background: $page-background;
   color: $font-color;
   text-rendering: optimizeLegibility;
@@ -87,9 +98,11 @@ address {
   font-style: normal;
 }
 
-address, p {
-  margin-bottom: $base-line-height;
+address, p, pre {
+  margin: 0 0 $base-line-height 0;
 }
+
+blockquote, .bq { margin: $base-line-height * 1.5 0; }
 
 .bq { // blockquote
 
@@ -101,21 +114,19 @@ address, p {
 
 }
 
-em, .em, .intro {
-  font-family: $oblique-font-family, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-
-  cite {
-    font-family: $base-font-family, sans-serif;
-    font-style: normal;
-  }
-}
-
 hr {
   border-top: 1px dashed $font-color;
   margin: $base-line-height 0;
 }
+
+dl, menu, ul, ol { margin: 0 0 $base-line-height 0; padding: 0; }
+
+dt { margin-top: $base-line-height; }
+dd { margin: 0; }
+
+.nav ul, .nav ol { list-style: none; list-style-image: none; }
+
+nav ol, .nav ol, nav ul, .nav ul { margin: 0 }
 
 ul {
   list-style-type: square;
@@ -174,22 +185,6 @@ li p {
   }
 }
 */
-
-.special, .oldstyle {
-  font-family: $special-font-family, serif;
-  font-weight: normal;
-  font-style: normal;
-}
-
-.bold {
-  font-family: $bold-font-family, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-
-  .special, .oldstyle {
-    font-weight: bold;
-  }
-}
 
 .newthought {
   @extend .special;
@@ -462,16 +457,7 @@ input.button {
   display: inline;
 }
 
-.sidenote {
-
-  font-family: $oblique-font-family, sans-serif;
-  font-style: normal;
-
-  .em {
-    font-family: $base-font-family, sans-serif;
-    font-style: normal;
-  }
-}
+.none { list-style: none; }
 
 .parenthesis {
   position: relative;
@@ -815,12 +801,4 @@ article {
 
 .chrome_35 {
   padding-top: 35px;
-}
-
-//
-// Comments overrides
-//
-
-.comments {
-  font-family: sans-serif;
 }

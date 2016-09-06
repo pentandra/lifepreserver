@@ -6,28 +6,13 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 
-/*	Resets
-	------	*/
-
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em,
-img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr,
-dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figure, figcaption,
-menu, footer, header, nav, section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-}
-
 /* =============================================================================
    HTML5 element display
    ========================================================================== */
 
-article, aside, details, figcaption, figure, footer, header, nav, section { display: block; }
+article, aside, details, figcaption, figure, footer, header, nav, section, summary { display: block; }
 audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
-audio:not([controls]) { display: none; }
+audio:not([controls]) { display: none; height: 0; }
 [hidden] { display: none; }
 
 
@@ -47,22 +32,18 @@ audio:not([controls]) { display: none; }
 
 html { font-size: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
-body, button, input, select, textarea { font-family: $base-font-family, sans-serif; color: $font-color; }
+body, button, input, select, textarea { font-family: sans-serif; }
 
+/* Address margins handled incorrectly in IE 6/7. */
+body { margin: 0; }
 
 /* =============================================================================
    Links
    ========================================================================== */
 
-a {
-  color: $link-color;
-  &:visited { color: $link-visited-color; }
-  &:hover { color: $link-hover-color; }
-  &:focus { outline: thin dotted; }
-}
-
-a, a:visited, a:active {
-  text-decoration: none;
+/*  Address `outline` inconsistency between Chrome and other browsers. */
+a:focus {
+  outline: thin dotted;
 }
 
 /* Improve readability when focused and hovered in all browsers: people.opera.com/patrickl/experiments/keyboard/test */
@@ -73,22 +54,46 @@ a:hover, a:active { outline: 0; }
    Typography
    ========================================================================== */
 
-#{headings()} { font-weight: normal; } // We will use fonts to show boldness
+/**
+ * Address font sizes and margins set differently in IE 6/7.
+ * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
+ * and Chrome.
+ */
 
-abbr, .abbr, .roman { font-family: $special-font-family; letter-spacing: 0.05em; text-transform: lowercase; }
+h1 { font-size: 2em; margin: 0.67em 0; }
+
+h2 { font-size: 1.5em; margin: 0.83em 0; }
+
+h3 { font-size: 1.17em; margin: 1em 0; }
+
+h4 { font-size: 1em; margin: 1.33em 0; }
+
+h5 { font-size: 0.83em; margin: 1.67em 0; }
+
+h6 { font-size: 0.67em; margin: 2.33em 0; }
+
+/* Address styling not present in IE 7/8/9, Safari 5, and Chrome. */
 abbr[title] { border-bottom: 1px dashed #e3e3e3; }
 
-b, strong { @extend .bold; }
+/* Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome. */
+b, strong { font-weight: bold; }
 
-blockquote, .bq { margin: $base-line-height * 1.5 0; }
+blockquote { margin: 1em 40px; }
 
-i, cite, dfn { font-family: $oblique-font-family, sans-serif; font-style: normal; }
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+
+i, cite, dfn { font-style: italic; }
 
 hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
 
 ins { background: #ff9; color: #000; text-decoration: none; }
 
-mark, .misspelled { background: #ff9; color: #000; @extend .bold; }
+mark { background: #ff0; color: #000; }
+
+/* Address margins set differently in IE 6/7. */ 
+p, pre { margin: 1em 0; }
 
 /* Redeclare monospace font family: en.wikipedia.org/wiki/User:Davidgothberg/Test59 */
 pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
@@ -96,7 +101,10 @@ pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier
 /* Improve readability of pre-formatted text in all browsers */
 pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
 
+/* Address CSS quotes not supported in IE 6/7. */
 q { quotes: none; }
+
+/* Address `quotes` property not supported in Safari 4. */
 q:before, q:after { content: ""; content: none; }
 
 /* Position subscript and superscript content without affecting line-height: gist.github.com/413930 */
@@ -109,12 +117,16 @@ sub { bottom: -0.25em; }
    Lists
    ========================================================================== */
 
-ul, ol { margin-bottom:  $base-line-height; }
-.nav ul, nav ul, .nav ol, nav ol { list-style: none; margin: 0; }
-ul.none, ol.none { list-style: none; }
+/* Address margins set differently in IE 6/7. */
+dl, menu, ul, ol { margin:  1em 0; }
 
-dt, dt dfn { font-family: $bold-font-family, sans-serif; font-style: normal; }
-dd { margin-bottom: $base-line-height; }
+dd { margin: 0 0 0 40px; }
+
+/* Address paddings set differently in IE 6/7. */
+menu, ol, ul { padding: 0 0 0 40px; }
+
+/* Correct list images handled incorrectly in IE 7. */
+nav ul, nav ol { list-style: none; list-style-image: none; }
 
 
 /* =============================================================================
@@ -128,19 +140,15 @@ dd { margin-bottom: $base-line-height; }
 
 img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
 
-/*
- * Correct overflow displayed oddly in IE9
- */
-
-svg:not(:root) {
-    overflow: hidden;
-}
+/* Correct overflow displayed oddly in IE9 */ 
+svg:not(:root) { overflow: hidden; }
 
 
 /* =============================================================================
    Figures
    ========================================================================== */
 
+/* Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11. */
 figure { margin: 0; }
 
 
@@ -148,8 +156,11 @@ figure { margin: 0; }
    Forms
    ========================================================================== */
 
+/* Correct margin displayed oddly in IE 6/7. */
 form { margin: 0; }
-fieldset { border: 0; margin: 0; padding: 0; }
+
+/* Define consistent border, margin, and padding. */
+fieldset { border: 1px solid #c0c0c0; margin: 0 2px; padding: 0.35em 0.625em 0.75em; }
 
 /* Indicate that 'label' will shift focus to the associated form element */
 label { cursor: pointer; }
@@ -176,18 +187,27 @@ button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: ba
 
 button, input { line-height: normal; *overflow: visible; }
 
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button, select { text-transform: none; }
+
 /*
  * 1. Display hand cursor for clickable form elements
  * 2. Allow styling of clickable form elements in iOS
  */
 
-button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
+button, html input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
 
 /*
  * Re-set default cursor for disabled elements
  */
 
-button[disabled], input[disabled] { cursor: default; }
+button[disabled], html input[disabled] { cursor: default; }
 
 /*
  * Consistent box sizing and appearance
@@ -202,7 +222,7 @@ input[type="checkbox"], input[type="radio"] {
 
 input[type="search"] {
   -webkit-appearance: textfield;
-  @include box-sizing(border-box);
+  @include box-sizing(content-box);
 }
 
 input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }

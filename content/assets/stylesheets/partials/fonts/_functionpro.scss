@@ -65,3 +65,59 @@
     font-weight: normal;
     font-style: normal;
 }
+
+body, button, input, select, textarea { font-family: $base-font-family, sans-serif; }
+
+#{headings()} { font-weight: normal; } // We will use fonts to show boldess
+
+abbr, .abbr, .roman { font-family: $special-font-family; letter-spacing: 0.05em; text-transform: lowercase; }
+
+.normal {
+  font-family: $base-font-family, sans-serif;
+}
+
+em, .em, .intro {
+  font-family: $oblique-font-family, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+
+  cite {
+    font-family: $base-font-family, sans-serif;
+    font-style: normal;
+  }
+}
+
+.special, .oldstyle {
+  font-family: $special-font-family, serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.sidenote {
+
+  font-family: $oblique-font-family, sans-serif;
+  font-style: normal;
+
+  .em {
+    font-family: $base-font-family, sans-serif;
+    font-style: normal;
+  }
+}
+
+.bold {
+  font-family: $bold-font-family, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+
+  .special, .oldstyle {
+    font-weight: bold;
+  }
+}
+
+b, strong { @extend .bold; }
+
+i, cite, dfn { font-family: $oblique-font-family, sans-serif; font-style: normal; }
+
+dt, dt dfn { font-family: $bold-font-family, sans-serif; font-style: normal; }
+
+mark, .misspelled { background: #ff9; color: #000; @extend .bold; }
