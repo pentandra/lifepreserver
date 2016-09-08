@@ -23,13 +23,15 @@ in scope before compiling:
   for [UglifyJS](https://github.com/mishoo/UglifyJS2) and [bower](https://bower.io/).
     _(note: currently you need to install `bower` manually, e.g. `npm install bower -g`)_
 
-### Then clone this repo, install bower components and Ruby gems…
+### Then clone this repo (including submodules), install bower components and Ruby gems…
 
 As follows:
 
 ```bash
 $ git clone https://github.com/pentandra/lifepreserver.git
 $ cd lifepreserver
+$ git submodule init
+$ git submodule update
 $ bower install
 $ bundle install
 ```
