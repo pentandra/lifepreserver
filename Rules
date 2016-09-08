@@ -52,12 +52,12 @@ preprocess do
   def extract_metadata_from_specification_documents
     require 'nokogiri'
 
-    @items.select { |item| item.identifier =~ /^\/spec/ }.each do |item|
+    @items.select { |item| item.identifier =~ /^\/specifications\// }.each do |item|
       case item.identifier.ext
       when 'html'
-        doc = Nokogiri::HTML(File.open(item[:filename]))
-        item[:title] = doc.title
-        item[:description] = doc.xpath('//meta[@name="description"]/@content').map(&:value).first
+        doc = Nokogiri::HTML(item.raw_content)
+        item[:title] ||= doc.title
+        item[:description] ||= doc.xpath('//meta[@name="description"]/@content').map(&:value).first
       else
         item[:is_hidden_from_human_search] = true
       end
