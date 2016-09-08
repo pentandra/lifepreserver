@@ -133,11 +133,21 @@ end
 
 ignore '/assets/components/**/*'
 
-# Sitemap
+# Sitemap and other meta files
 
 compile '/sitemap.erb' do
   filter :erb
   write '/sitemap.xml'
+end
+
+compile '/robots.*' do
+  filter :erb
+  write '/robots.txt'
+end
+
+compile '/humans.*' do
+  filter :erb
+  write '/humans.txt'
 end
 
 # Specification documents (N3)
@@ -237,11 +247,6 @@ compile '/blog/**/*.md' do
   filter :cache_buster if @config[:production]
   filter :html5small if @config[:production]
 end
-
-# Passthrough
-
-passthrough '/humans.txt'
-passthrough '/robots.txt'
 
 # HTML, ERB, and Markdown files
 
