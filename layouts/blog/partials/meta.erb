@@ -11,7 +11,7 @@
       </nav>
     </div>
     <nav class="menu inner">
-      <h2 class="big">Tags A<span class="ndash">--</span>Z</h2>
+      <h2 class="big"><%= ndashed("Tags A-Z") %></h2>
       <div class="group menu">
         <ul class="tags">
         <% tag_set(published_blog_posts).sort.each do |tag| %>
