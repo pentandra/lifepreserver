@@ -78,12 +78,12 @@ module LifePreserver
       years.to_a
     end
 
-    def post_summary(post, read_more_text="Read more ⇢", separator="<!--MORE-->")
+    def post_summary(post, read_more_text: "Read more ⇢", separator: "<!--MORE-->")
       summary,body = post.compiled_content.split(separator)
       return summary unless body
 
       link = link_to(post.fetch(:read_more, read_more_text), post.path, class: "readmore", title: "Read the full article")
-      return summary << "<p class=\"readmore\">#{link}</p>"
+      return summary << %[<p class="readmore">#{link}</p>]
     end
 
     def article_id(article)
