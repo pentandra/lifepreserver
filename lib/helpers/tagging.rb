@@ -56,7 +56,7 @@ module Tagging
     end
 
     if rel_tag && tag[:semantic]
-      %[<a href="#{@config[:blog][:tags_url]}/#{h tag.raw_content.to_slug}/" rel="tag ctag:tagged" resource="#tagged_#{h tag.raw_content.to_slug('_')}" typeof="ctag:AuthorTag"><link property="ctag:means" resource="#{RDF::URI.new(tag[:uri]).pname}" typeof="#{RDF::URI.new(tag.fetch(:type, RDF::OWL.Thing)).pname}" /><span property="ctag:label">#{h tag.raw_content}</span></a>]
+      %[<a href="#{@config[:blog][:tags_url]}/#{h tag.raw_content.to_slug}/" rel="tag ctag:tagged" resource="##{h tag.raw_content.to_slug('_')}_tag" typeof="ctag:AuthorTag"><link property="ctag:means" resource="#{RDF::URI.new(tag[:uri]).pname}" typeof="#{RDF::URI.new(tag.fetch(:type, RDF::OWL.Thing)).pname}" /><span property="ctag:label">#{h tag.raw_content}</span></a>]
     else
       %[<a href="#{@config[:blog][:tags_url]}/#{h tag.raw_content.to_slug}/"#{" rel=\"tag\"" if rel_tag}>#{h tag.raw_content}</a>]
     end
