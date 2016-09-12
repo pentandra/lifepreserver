@@ -8,12 +8,13 @@ include ERB::Util
 
 include LifePreserver::Blogging
 include LifePreserver::Dates
-include Company
-include UrlShortener
-include Search
-include Functional
+include LifePreserver::Company
+include LifePreserver::UrlShortener
+include LifePreserver::Search
+include LifePreserver::Functional
 include Breadcrumbs
-include Text
-include Vocabulary
-include Tagging
+include LifePreserver::Text
+include LifePreserver::Vocabulary
+include LifePreserver::Tagging
+include LifePreserver::LinkTo
 include History

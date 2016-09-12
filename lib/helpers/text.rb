@@ -1,18 +1,22 @@
 require 'active_support'
 require 'digest/md5'
 
-module Text
-  
-  def to_slug(separator = "-")
-    ActiveSupport::Inflector.parameterize(self, separator: separator)
-  end
+module LifePreserver
 
-  def md5(text)
-    Digest::MD5.hexdigest(text)
-  end
+  module Text
+    
+    def to_slug(separator = "-")
+      ActiveSupport::Inflector.parameterize(self, separator: separator)
+    end
 
-  def ndashed(string)
-    string.gsub('-', '<span class="ndash">--</span>')
+    def md5(text)
+      Digest::MD5.hexdigest(text)
+    end
+
+    def ndashed(string)
+      string.gsub('-', '<span class="ndash">--</span>')
+    end
+
   end
 
 end

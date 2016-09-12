@@ -1,4 +1,4 @@
-module Nanoc::Helpers
+module LifePreserver
 
   module LinkTo
 

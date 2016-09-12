@@ -7,7 +7,7 @@ module RDF
 
     class << self
 
-      include Text
+      include ::LifePreserver::Text
 
       # Override __prefix__ class method to have better prefixes for some of
       # these longer vocabulary names.
