@@ -14,6 +14,7 @@ tags:
   - Essay
   - Open Research
   - Opinionated
+  - Enlightenment
   - Scholarly Commons
 has_media: true
 ---
@@ -130,6 +131,8 @@ researcher, but the same thing could be applied to [basic research] if we say
 that research is a simple, organized way of trying to discover something that
 you want to know.
 
+## Anyone can Research?
+
 I'm reminded of the [Pixar] movie <cite><a
 href="http://www.imdb.com/title/tt0382932/" title="Ratatouille on
 IMDb">Ratatouille</a></cite>. As you may know, the whole premise of the movie
@@ -177,6 +180,18 @@ knowledge</em>.
 
 
 ## Towards a Scholarly Commons
+
+Why do we research? Is it to have a job? Is it to prove our intelligence, or to
+increase our personal prestige? If so, this has not always been the reason.
+When thinking about this I'm drawn back in time to the Republic of Letters and
+the beginning of the Enlightenment. Maybe I'm blinded by my own presentism, but
+as I read these early accounts, I get the impression that many of these early
+researchers we driven by an insatiable curiosity to _know_ things that they did
+not know. They did not care about status or tenure. For centuries people had
+been kept from the truth because of religious dogma, and all of a sudden tools
+were available that enabled _anyone_ to learn about the world around them.
+Suddenly the world was very different than anyone could have guessed. What an
+exciting time to be alive!
 
 The future [research communication standards][tcp/ip] should transcend
 incumbent scholarly circles. Future standards for scholarship should be
