@@ -64,26 +64,6 @@ wip: true
     </div>
 
   </section>
-  <section id="sec:scholarly-commons" class="section">
-
-    <div class="bd">
-
-      <h3 class="flush">Scholarly Commons</h3>
-
-      <p>
-
-        The Scholarly Commons is not a single platform or tool, but rather the
-        principles, best practices, interfaces and standards that should govern
-        the multidirectional flow of scholarly objects through all phases of
-        the research process from conception to dissemination.
-
-      </p>
-
-      <p><a href="https://www.force11.org/group/scholarly-commons-working-group">FORCE11 Scholarly Commons Working Group</a></p>
-
-    </div>
-
-  </section>
   <section id="sec:dmi" class="section">
 
     <div class="bd">
@@ -120,5 +100,54 @@ wip: true
     <%#</div>%>
 
   <%#</section>%>
+
+</section>
+<section class="noted section">
+
+  <h2>Consensus Documents</h2>
+
+  <div class="bd">
+
+    <p>
+
+      Documents on which we're collaborating with other people and groups, and
+      through which we're trying to reach some consensus.
+
+    </p>
+
+  </div>
+  <section id="sec:scholarly-commons" class="section">
+
+    <div class="bd">
+
+      <h3 class="flush">Scholarly Commons</h3>
+
+      <p>
+
+        The Scholarly Commons is not a single platform or tool, but rather the
+        principles, best practices, interfaces and standards that should govern
+        the multidirectional flow of scholarly objects through all phases of
+        the research process from conception to dissemination.
+
+      </p>
+
+      <dl>
+        <dt>Principles of the Scholarly Commons</dt>
+        <dd>A set of principles that express the substance of the Scholarly Commons, created by the <a href="https://www.force11.org/group/scholarly-commons-working-group"><abbr>FORCE11</abbr> Scholarly Commons Working Group</a>.</dd>
+
+        <dt>Our Own Thoughts about the Scholarly Commons</dt>
+        <dd>
+          <ul>
+            <% items_with_tag('Scholarly Commons', sorted_blog_posts).each do |post| %>
+              <li><%= link_to_id(post.identifier) %></li>
+            <% end %>
+          </ul>
+        </dd>
+
+      </dl>
+
+    </div>
+
+  </section>
 
 </section>
