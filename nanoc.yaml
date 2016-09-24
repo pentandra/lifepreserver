@@ -35,11 +35,6 @@ data_sources:
   - type: company
 
   - type: filesystem
-    items_root: /company/benefit-reports
-    content_dir: benefit-reports/reports
-    layouts_dir: benefit-reports/layouts
-
-  - type: filesystem
     items_root: /specifications
     content_dir: specifications/playground
     layouts_dir: specifications/layouts
