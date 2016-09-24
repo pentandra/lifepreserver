@@ -83,6 +83,7 @@ end
 
 ignore '/**/_*'
 ignore '/project/**/*'
+ignore '/**/README.md'
 
 # Aggregated JavaScript scripts
  
