@@ -153,6 +153,8 @@ end
 
 # Specification documents (N3)
 
+passthrough '/specifications/**/*.html'
+
 compile '/specifications/**/*.ttl' do
   filter :rdf_distiller, format: :turtle
 end
@@ -175,8 +177,6 @@ compile '/specifications/**/*.ttl', rep: :html do
 end
 
 layout '/specifications/vocabulary.*', :rdf_distiller, format: :html
-
-passthrough '/specifications/**/*.html'
 
 # Company
 
