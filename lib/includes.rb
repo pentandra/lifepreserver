@@ -17,4 +17,5 @@ include LifePreserver::Text
 include LifePreserver::Vocabulary
 include LifePreserver::Tagging
 include LifePreserver::LinkTo
+include LifePreserver::Reporting
 include History
