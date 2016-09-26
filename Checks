@@ -1,0 +1,14 @@
+deploy_check :internal_links
+deploy_check :mixed_content
+deploy_check :stale
+deploy_check :no_unprocessed_erb
+
+check :no_unprocessed_erb do
+  @output_filenames.each do |filename|
+    if @config[:text_extensions].any? { |ext| filename =~ /#{ext}$/ } && File.read(filename).match(/<%/)
+      add_issue("erb detected", :subject => filename)
+    end
+  end
+end
+
+# vi: ft=ruby

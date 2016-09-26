@@ -6,18 +6,22 @@ is_hidden: true
 
 
 /* TEAM */
-  Developer: Chris Chapman 
-  Site: https://pentandra.com
-  Twitter: @cd_chapman
-  Location: Logan, UT
+Developer: Chris Chapman 
+Site: https://pentandra.com
+Twitter: @cd_chapman
+Location: Logan, UT
 
 /* THANKS */
-  Names (& URL): 
+Names (& URL): 
+Joni Korpi http://jonikorpi.com/
+Denis Defreyne http://stoneship.org/
 
 /* SITE */
-  Standards: HTML5, CSS3
-  Components: Modernizr, jQuery
-  Software: nanoc
+Standards: HTML5, CSS3
+Components: Modernizr, jQuery, MediaElement.js, Lettering.js, Emphasis, AccessifyHTML5, hypothes.is
+Software: nanoc, vim, git
+
+See <%= @items['/colophon.*'].path %> for more info about the site and thanks.
 
 
       ................................................................      

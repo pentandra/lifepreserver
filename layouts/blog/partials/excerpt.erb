@@ -1,0 +1,25 @@
+<article property="schema:blogPost" typeof="cc:Work schema:BlogPosting ctag:TaggedContent" resource="<%= item.path %>#blogpost" class="noted section excerpt">
+  <div class="bd">
+    <header>
+      <h2 class="bigger">
+        <a property="schema:url" rel="bookmark" title="Full article" href="<%= item.path %>">
+          <span property="dc:title schema:name"><%= item[:title] %></span>
+        </a>
+      </h2>
+      <p class="em">By <%= link_for_author(item[:author_name]) %></p>
+    </header>
+    <%= post_summary(item) %>
+  </div>
+  <%= render('/blog/partials/created_on.*', item: item) %>
+  <footer class="aside section">
+    <nav class="group banner">
+      <ul class="tags">
+        <% Array(item[:tags]).each do |tag| %>
+        <li><%= link_for_tag(tag) %></li>
+        <% end %>
+      </ul>
+    </nav>
+  </footer>
+  <link property="schema:isPartOf" resource="pentandra-blog:blog" />
+  <link property="rdfa:copy" resource="pentandra-website:license" />
+</article>

@@ -1,13 +1,14 @@
-# A sample Guardfile
-# More info at https://github.com/guard/guard#readme
-
 guard 'nanoc' do
   watch('nanoc.yaml')
   watch('Rules')
-  watch(%r{^(etc|content|layouts|lib)/.*$})
+  watch(%r{^(content|layouts|lib)/.*$})
+  watch('etc/dictionary')
+  watch('etc/compass/compass.rb')
+  watch('etc/*.yaml')
+  watch(%r{^specifications/(playground|layouts).*$})
 end
 
-guard 'livereload', :hostname => 'localhost', :port => '35729'  do
-  watch(%r{content/.+\.(erb|haml|md|markdown|html|yaml|txt|sass|scss|css)})
+guard 'livereload', hostname: 'localhost', override_url: true  do
+  watch(%r{content/.+\.(erb|haml|md|markdown|html|yaml|txt|sass|scss|css|ttl)})
   watch(%r{layouts/.+\.(erb|haml|md|markdown|html|yaml)})
 end

@@ -1,0 +1,51 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+  <head prefix="<%= prefix_mappings_for(:open_graph) %>">
+
+    <meta charset="utf-8" />
+    <title><%= @item[:full_title] || "#{@item[:title]} ← #{@config[:site][:name]}" %></title>
+    <meta name="description" content="<%= @item[:meta_description] || @item[:description] || @item[:title] %>" />
+    <meta name="generator" content="Nanoc <%= "#{Nanoc::VERSION}" %>" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <%= render('/partials/opengraph.*') %>
+
+    <%= render('/partials/twittercard.*') %>
+
+    <script src="/js/modernizr.custom.40730.js"></script>
+
+    <%= render('/blog/partials/atom-discovery.*') %>
+
+    <% for p in @item.fetch(:head, []) %>
+      <%= render("/partials/#{p}.*") %>
+    <% end %>
+
+  </head>
+
+  <body prefix="<%= prefix_mappings_for(:standard, :business, :pentandra, :doap) %>" about="" property="schema:isPartOf" resource="pentandra-website:website" typeof="schema:WebPage cc:Work prov:Entity" class="<%= @item[:kind] %>">
+
+    <% for p in @item.fetch(:beginbody, []) %>
+      <%= render("/partials/#{p}.*") %>
+    <% end %>
+
+    <%= yield %>
+
+    <script src="/js/all.js"></script>
+
+    <% for p in @item.fetch(:endbody, []) %>
+      <%= render("/partials/#{p}.*") %>
+    <% end %>
+
+    <%= content_for(@item, :javascripts) %>
+
+    <%= render('/partials/devtools.*') unless @config[:production] %>
+
+  </body>
+
+</html>

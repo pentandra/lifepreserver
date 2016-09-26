@@ -1,10 +1,9 @@
 output
 output.diff
 .sass-cache
-tmp
-nanoc-autocompile.log
 *.swp
-environment.rb
-*.log
+crash.log
 *.autosave
 *.bak
+/content/assets/components/
+/tmp/

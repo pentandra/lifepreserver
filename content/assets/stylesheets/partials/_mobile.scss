@@ -1,0 +1,237 @@
+/* Mobile Layout: 320px.
+ * Gutters: 24px.
+ * Outer margins: 34px.
+ * Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+$less-outer-margin: 34px;
+
+@media only screen and (max-width: 767px) {
+
+  //
+  // HTML Elements
+
+  h1 { 
+    font-size: 47px;
+    line-height: 68px; // 1.61/2 * .huge line-height
+    letter-spacing: normal;
+  }
+
+  h3.flush {
+    line-height: 39px;
+  }
+
+  blockquote, .bq { 
+    margin: 0 0 $base-line-height;
+  }
+
+
+  //
+  // 
+
+  .content {
+    @include grid(3); 
+    padding: 0 $less-outer-margin;
+  } 
+
+  .ext {
+    margin-left: -$less-outer-margin;
+    margin-right: -$less-outer-margin;
+    padding-left: $less-outer-margin;
+    padding-right: $less-outer-margin;
+  }
+
+  .bd {
+    width: auto;
+    float: none;
+
+    .aside {
+      float: none;
+      margin-left: 0;
+    }
+
+    .inner {
+      width: 100%;
+      padding-right: $less-gutter-width / 2;
+      @include box-sizing(border-box);
+    }
+
+  }
+
+  .banner {
+    margin-right: -$less-outer-margin;
+    padding-right: $less-outer-margin;
+    margin-left: -($less-gutter-width + $less-column-width);
+    padding-left: $less-gutter-width + $less-column-width;
+  }
+
+  .aside {
+    float: none;
+    width: auto;
+
+    .banner {
+      margin-left: -$less-outer-margin;
+      padding-left: $less-outer-margin;
+    }
+
+    .close {
+      text-align: left;
+    }
+  }
+
+  .item {
+    float: none;
+  }
+
+  .img img {
+    margin: 0 auto;
+  }
+
+  .menu3 li {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .static {
+    display: block;
+    @include grid(3);
+  }
+
+  .newline {
+    display: block;
+  }
+
+  .excerpt .pubdate {
+    padding-top: 0;
+  }
+  
+  .normal.flush {
+    line-height: $base-line-height;
+  }
+
+  // Grid classes
+
+  .bl {
+    width: auto;
+
+    &.ock {
+      margin-left: 0;
+    }
+  }
+
+  //
+  // Layout classes
+
+  .logotype {
+    @include grid(3);
+  }
+
+  main {
+    border: none;
+  }
+
+  .montage {
+
+    .aside {
+      float: none;
+    }
+
+    .bd {
+      width: auto;
+      float: none;
+    }
+  }
+
+  .teamintro {
+    width: auto;
+    min-height: 0;
+  }
+
+  .theteam {
+    $theteam-height: $base-line-height * 7;
+    $theteam-image-height: 168px;
+    @include grid(3);
+    height: $theteam-image-height;
+    margin-top: $theteam-height - $theteam-image-height;
+    background-image: url('/images/team-252x336.jpg');
+    background-position: 0 0;
+    position: static;
+
+    &:hover {
+      background-position: 0 #{-$theteam-image-height};
+    }
+
+  }
+
+  #banner {
+
+    .logotype {
+      float: none;
+    }
+
+    .menu {
+      float: none;
+      margin-top: $base-line-height * 2;
+      background-color: $pentandra-brown;
+      margin-left: -$less-outer-margin;
+      margin-right: -$less-outer-margin;
+      padding: 0 $less-outer-margin;
+
+      ul li {
+        display: block;
+        margin: $base-line-height 0;
+      }
+
+      .button a {
+        line-height: $base-line-height * 2;
+      }
+    }
+  }
+
+  .contentinfo {
+
+    .bd .aside {
+      width: auto;
+    }
+
+    .excerpt h3 {
+      display: block;
+    }
+
+    .aside .nav {
+      text-align: left;
+    }
+  }
+
+
+  //
+  // Background-image classes
+  
+  .geungle-logo {
+    $logo-height: 74px;
+    @include grid(3);
+    height: $logo-height;
+    background-image: url('/images/geungle-logo_3col.png');
+    padding-bottom: ($base-line-height * 3) - $logo-height;
+  }
+
+  .process {
+    @include grid(3);
+    height: 240px;
+    background-image: url('/images/research-process_3col.png');
+    margin-top: 0;
+  }
+
+  .zeugma {
+    @include grid(3);
+    height: 252px; //197px;
+    background-image: url('/images/zeugma_3col.jpg?v2');
+  }
+
+  .zeugma-collab {
+    margin-top: 0;
+  }
+    
+}

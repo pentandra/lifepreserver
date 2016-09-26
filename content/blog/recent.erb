@@ -1,0 +1,13 @@
+--- 
+title: Recent Thoughts
+is_hidden: true
+---
+<div class="group">
+
+  <h1>Recent Thoughts</h1>
+
+  <% published_blog_posts[0, 10].each do |post| %>
+    <%= render('/blog/partials/excerpt.*', item: post) %>
+  <% end %>
+
+</div>

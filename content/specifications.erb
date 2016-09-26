@@ -1,0 +1,158 @@
+---
+title: Specifications
+description: Specifications, mostly ontologies, that we are working on, at various stages of development.
+---
+
+<div class="group">
+
+  <h1>Specifications</h1>
+
+  <div class="bd big">
+    
+    <p>
+
+      We're working on technical specifications that enrich our abilities to
+      share knowledge, opinion, and personal experience in our collective quest
+      for greater light and understanding. Achieving <a
+        href="/company/#sec:mission">our mission</a> calls for collaborating on
+      these open technical standards.
+
+    </p>
+
+    <p class="bigger">Come be part of what we're doing!</p>
+    
+  </div>
+</div>
+<section class="noted section">
+
+  <h2>Machine Vocabularies</h2>
+
+  <div class="bd">
+
+    <p>
+
+      Specifications built using open machine vocabularies bring rich
+      possibilities in our ability to communicate knowledge and understanding.
+      These vocabularies are designed for web applications and open research
+      systems and platforms. We use and refine them in the software we are
+      creating. We hope they will prove useful to others as well.
+
+    <p>
+
+  </div>
+  <section id="sec:knowledge-design" class="section">
+
+    <div class="bd">
+
+      <h3 class="flush">Knowledge Design</h3>
+
+      <p>
+        
+        A term coined by <a
+          href="https://www.youtube.com/watch?v=_oz_rKjLtW4">Jeffrey
+          Schnapp</a>, <dfn id="def:knowledge-design">knowledge design</dfn> is
+        the future of scholarship, where the process <em>is</em> the product.
+
+      </p>
+
+      <dl>
+
+        <dt><dfn id="def:design-cases">Design Cases</dfn></dt>
+        <dd>An evolution of <a href="https://en.wikipedia.org/wiki/Issue-Based_Information_System"><abbr title="Issue-Based Information System">IBIS</abbr></a>, design cases partition a design process into smaller pieces.</dd>
+
+        <dt><dfn id="def:research-cases">Research Cases</dfn></dt>
+        <dd>Research cases take design cases a step further, </dd>
+        <dd><%= link_to_id("/specifications/knowledge-design/research-cases/index.*") %></dd>
+
+      </dl>
+
+    </div>
+
+  </section>
+  <section id="sec:dmi" class="section">
+
+    <div class="bd">
+
+      <h3 class="flush">Dynamic Machine Interfaces</h3>
+
+      <p>Ontologies that build on <abbr title="REpresentational State Transfer">REST</abbr> ideas for machine interfaces and interactions.</p>
+
+      <dl>
+
+        <dt>Hydra</dt>
+        <dd><a href="http://www.hydra-cg.com/">Hydra Community Group</a></dd>
+
+      </dl>
+
+    </div>
+
+  </section>
+  <%#<section id="sec:business" class="section">%>
+
+    <%#<div class="bd">%>
+
+      <%#<h3 class="flush">Business</h3>%>
+
+      <%#<p>Vocabularies for open and social business.</p>%>
+
+      <%#<dl>%>
+
+        <%#<dt>Legal Forms</dt>%>
+        <%#<dd><a href="https://w3id.org/legal_form/">Legal form vocabulary</a></dd>%>
+
+      <%#</dl>%>
+
+    <%#</div>%>
+
+  <%#</section>%>
+
+</section>
+<section class="noted section">
+
+  <h2>Consensus Documents</h2>
+
+  <div class="bd">
+
+    <p>
+
+      Documents on which we're collaborating with other people and groups, and
+      through which we're trying to reach some sort of consensus.
+
+    </p>
+
+  </div>
+  <section id="sec:scholarly-commons" class="group">
+
+    <div class="bd">
+
+      <h3 class="flush">Scholarly Commons</h3>
+
+      <p>
+
+        The Scholarly Commons is not a single platform or tool, but rather the
+        principles, best practices, interfaces and standards that should govern
+        the multidirectional flow of scholarly objects through all phases of
+        the research process from conception to dissemination.
+
+      </p>
+
+      <dl>
+        <dt>Principles of the Scholarly Commons</dt>
+        <dd>A set of principles that express the substance of the Scholarly Commons, created by the <a href="https://www.force11.org/group/scholarly-commons-working-group"><abbr>FORCE11</abbr> Scholarly Commons Working Group</a>.</dd>
+
+        <dt>Our Own Thoughts about the Scholarly Commons</dt>
+        <dd>
+          <ul>
+            <% items_with_tag('Scholarly Commons', sorted_blog_posts).each do |post| %>
+              <li><%= link_to_id(post.identifier) %></li>
+            <% end %>
+          </ul>
+        </dd>
+
+      </dl>
+
+    </div>
+
+  </section>
+
+</section>

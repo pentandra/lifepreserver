@@ -1,0 +1,315 @@
+//
+// Default layout - only put styles in here that are layout specific
+// Less astute browsers will use this layout, so keep it limited.
+//
+
+/* Default Layout: 992px.
+ * Gutters: 24px.
+ * Outer margins: 48px.
+ * Leftover space for scrollbars @1024px: 32px. 
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+
+$less-outer-margin: 48px;
+
+//
+// Block structures
+
+.content {
+  @include grid(10); 
+  padding: 0 $less-outer-margin;
+}
+
+.aside {
+  @include grid(3);
+  float: left;
+
+  // ? move this into the parent class?
+  .close {
+    text-align: right;
+  }
+
+  .banner {
+    margin-right: $less-column-width;
+    padding-right: 0;
+    margin-left: -$less-outer-margin;
+    padding-left: $less-outer-margin;
+    @include border-radius(0 $default-radius $default-radius 0);
+
+    .fancy {
+      $border-width: 2px;
+
+      border-left: $border-width $pentandra-white dashed;
+      margin-left: -#{$border-width};
+      border-right: none;
+      margin-right: 0;
+
+      // Overrides .pod for more padding next to the border
+      padding-left: $less-gutter-width;
+    }
+  }
+
+}
+
+.banner {
+  margin-right: -$less-outer-margin;
+  padding-right: $less-outer-margin;
+  margin-left: -($less-gutter-width + $less-column-width);
+  padding-left: $less-gutter-width + $less-column-width;
+  @include border-radius($default-radius 0 0 $default-radius);
+
+  .fancy {
+    $border-width: 2px;
+
+    border-right: $border-width $pentandra-white dashed;
+    margin-right: -#{$border-width};
+  }
+}
+
+.bd {
+  @include grid(7);
+  float: right;
+  
+  .aside {
+    margin-left: $less-gutter-width;
+    float: right;
+
+    &.pod {
+      padding-left: 0;
+    }
+  }
+
+  .other {
+    margin-right: $less-gutter-width;
+    float: left;
+    @include grid(3);
+  }
+    
+  .inner {
+    @include grid(4);
+  }
+
+}
+
+.inner, .aside {
+  input {
+    width: 98%;
+  }
+}
+
+.ext {
+  margin-left: -$less-outer-margin;
+  margin-right: -$less-outer-margin;
+  padding-left: $less-outer-margin;
+  padding-right: $less-outer-margin;
+}
+
+.menu3 {
+  li {
+    @include grid(3);
+    margin-right: 65px;
+
+    &.last {
+      margin-right: 0;
+    }
+  }
+}
+
+.bd .menu3 {
+  li {
+    @include grid(2);
+    margin-right: $less-gutter-width;
+  }
+}
+
+.icon {
+  padding-left: 32px + 5px;
+  line-height: 32px;
+}
+
+// Grid classes
+
+.bl {
+  @include grid(5);
+
+  h3, .h3.flush {
+    margin-bottom: $base-line-height / 2;
+  }
+
+  &.ock {
+    margin-left: $less-gutter-width;
+  }
+
+  .bd {
+    @include grid(3);
+  }
+
+  .aside {
+    @include grid(2);
+    margin-right: $less-gutter-width;
+  }
+}
+
+
+//
+// Layout classes
+
+.excerpt {
+
+  // Line up the published date with the article title horizontally
+  .pubdate {
+    $offset: 2px;
+
+    padding-top: $base-line-height - $offset;
+    margin-bottom: $base-line-height / 2 + $offset;
+  
+    .big {
+      line-height: $base-line-height * 1.5;
+    }
+  }
+}
+
+.montage {
+
+  .aside {
+    float: right;
+  }
+
+  .bd {
+    float: left;
+    @include grid(6);
+  }
+}
+
+$theteam-height: $base-line-height * 12;
+
+.teamintro {
+  @include grid(4);
+  min-height: $theteam-height;
+  padding: $base-line-height 0;
+}
+
+.theteam {
+  $theteam-image-height: 290px;
+  @include grid(5);
+  height: $theteam-image-height;
+  margin-top: $theteam-height - $theteam-image-height;
+  background: transparent right bottom no-repeat url('/images/team-436x580.jpg');
+  background-position: 0 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  &:hover {
+    background-position: 0 #{-$theteam-image-height};
+  }
+}
+
+//
+// Background-image classes
+
+.geungle-logo {
+  @include grid(7);
+  height: $base-line-height * 7;
+  background: transparent left top no-repeat url('/images/geungle-logo.png');
+}
+
+.aside .geungle-logo {
+  $logo-height: 74px;
+  @include grid(3);
+  height: $logo-height;
+  background-image: url('/images/geungle-logo_3col.png');
+  padding-bottom: ($base-line-height * 3) - $logo-height;
+}
+
+.logotype { 
+  @include grid(3);
+  height: $base-line-height * 1.5;
+  background: transparent left top no-repeat url('/images/pentandra-logotype_252x33.png');
+}
+
+.rev .logotype, .grab .logotype {
+  background: transparent left top no-repeat url('/images/pentandra-logotype-reverse_252x33.png');
+}
+
+.process {
+  @include grid(4);
+  height: $base-line-height * 12;
+  background: $pentandra-white center center no-repeat url('/images/research-process.png');
+  margin-top: -#{$base-line-height};
+}
+
+.question {
+  $height: $base-line-height * 8;
+
+  height: $height + $base-line-height;
+  position: relative;
+
+  &:before {
+    content: "?";
+    font-size: 275px;
+    line-height: $height;
+    position: absolute;
+    left: 40px;
+    top: 3px;
+  }
+}
+
+// #fig:proof img
+#fig\3A proof img {
+  margin-bottom: $base-line-height / 2;
+}
+
+#fig\3A io img {
+  margin-bottom: $base-line-height * 0.75;
+}
+
+#fig\3A journey img {
+  $image-height: 372px;
+  height: $image-height;
+  width: 204px;
+  margin-bottom: ($base-line-height * 15) - $image-height;
+}
+
+#fig\3A phases img {
+  margin-bottom: $base-line-height * 0.25;
+}
+
+#fig\3A processtree img {
+  margin-bottom: ($base-line-height * 9) - 217px;
+}
+
+.zeugma-collab {
+  margin-top: -14px;
+}
+
+.zeugma {
+  @include grid(6);
+  height: $base-line-height * 16;
+  background: transparent right center no-repeat url('/images/zeugma.jpg?v2');
+}
+
+//
+// Footer
+//
+
+.contentinfo {
+
+  .excerpt h3 {
+    display: inline;
+  }
+
+  .aside .nav {
+    text-align: right;
+  }
+
+  .noted {
+    $border-height: 1px;
+
+    h2 {
+      margin: $base-line-height - $border-height 0 $base-line-height;
+    }
+  }
+
+}

@@ -1,0 +1,168 @@
+---
+title: Page Not Found :(
+is_hidden: true
+---     
+
+<div class="group">
+  <h1>Not found <span>:(</span></h1>
+
+  <div class="bd">
+
+  </div>
+</div>
+<section class="noted section">
+
+  <h2>Can We Help?</h2>
+
+  <div class="bd">
+
+    <p>
+      
+      Sorry, but the page you were trying to view does not exist.
+
+    </p>
+    <p>
+      
+      It's likely that this was the result of either:
+    
+    </p>
+    <ul>
+      <li>a mistyped address</li>
+      <li>an out-of-date link</li>
+    </ul>
+    
+    <div class="banner grab section">
+
+      <div class="fancy wrapper group">
+
+        <noscript>
+          <p>
+
+            Searching requires Javascript, though, so if you want to be able to
+            find anything, please enable Javascript.
+
+          </p>
+        </noscript>
+
+        <div class="group">
+          <div class="section inner item">
+            <input type="search" placeholder="Search by keyword..." id="q" autofocus />
+          </div>
+          <div class="aside pod item">
+            <p>
+
+              Enter a keyword to search
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section hidden" id="results">
+
+      <h3>Is this what you were looking for?</h3>
+
+      <p>
+
+        If not, you are welcome to enter a keyword above and search for it!
+
+      </p>
+
+      <ol id="results-list"></ol>
+
+    </div>
+
+  </div>
+
+</section>
+<section class="noted section">
+
+  <h2>If that didn't work</h2>
+
+  <div class="bd">
+
+    <p> 
+
+      Let's try a full-text search from Google.
+
+    </p>
+
+    <div class="banner rev section">
+
+      <form method="GET" action="https://www.google.com/search" id="google" class="fancy wrapper group">
+
+        <div class="section">
+          <div class="section inner item">
+            <input type="search" placeholder="Search Google..." name="q" id="gq" />
+          </div>
+          <div class="aside pod item">
+            <input type="submit" class="button" value="Google Search" />
+          </div>
+        </div>
+      </form>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+<% content_for :javascripts do %>
+<script src="/js/search-data.js"></script>
+<script>
+  $(function($, search) {
+    var query = $.url("?q"),
+        searchInput = $("input#q"),
+        searchDomain = $.url('hostname', '<%= @config[:base_url] %>'),
+        notFoundSegments = $.url('path').split('/'),
+        resultsContainer = $("#results"),
+        resultsList = $("ol#results-list");
+
+    var displayResults = function(items) {
+      if (items.length > 0) {
+        var html = "";
+
+        for (var i = 0; i < items.length; i++) {
+          var description = '';
+          if (items[i].desc) { 
+            description = ' / ' + items[i].desc;
+          }
+
+          html += '<li><p><a href="'+items[i].url+'">'+items[i].title+'</a>'+description+'</p></li>';
+        }
+        resultsList.html(html);
+        resultsContainer.removeClass("invisible");
+      } else {
+        resultsContainer.addClass("invisible");
+        resultsList.html("");
+      }
+    };
+
+    txtinput(searchInput.get(), function(event) {
+      search(searchInput.val(), displayResults);
+    });
+
+    $("#google").submit(function(e) {
+      var q = window.encodeURIComponent(this["q"].value),
+          url = "https://www.google.com/search?q=site:"+searchDomain+" "+q;
+
+      window.location = url;
+      return false;
+    });
+
+    if (notFoundSegments) {
+      var query = notFoundSegments.join(" ");
+
+      searchInput.val(query);
+      searchInput.trigger("txtinput");
+
+      $("#gq").val(query);
+    }
+
+  }(jQuery, Pentandra.search));
+
+</script>
+<% end %>

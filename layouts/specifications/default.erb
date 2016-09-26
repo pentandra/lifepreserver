@@ -1,0 +1,15 @@
+<% render('/base.*') do %>
+
+  <main id="article-content">
+    <div class="content">
+
+      <h1><%= @item[:title] %></h1>
+
+      <%= yield %>
+
+    </div>
+  </main>
+
+  <%= render('/specifications/partials/footer.*') %>
+
+<% end %>

@@ -1,0 +1,5 @@
+<meta name="twitter:card" content="<%= @item[:cover_image] ? "summary_large_image" : "summary" %>" />
+<meta name="twitter:site" content="<%= "@#{company[:twitter]}" %>" />
+<% if @item.key?(:author_name) %>
+  <meta name="twitter:creator" content="<%= "@#{teammember(@item[:author_name])[:twitter]}" %>" />
+<% end %>

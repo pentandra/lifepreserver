@@ -1,0 +1,413 @@
+---
+- :tag: Citizen Science
+  :uri: http://dbpedia.org/resource/Citizen_science
+  :abstract: Citizen science (also known as crowd science, crowd-sourced science,
+    civic science, volunteer monitoring or networked science) is scientific research
+    conducted, in whole or in part, by amateur or nonprofessional scientists. Formally,
+    citizen science has been defined as "the systematic collection and analysis of
+    data; development of technology; testing of natural phenomena; and the dissemination
+    of these activities by researchers on a primarily avocational basis." Citizen
+    science is sometimes included in terms such as "public participation in scientific
+    research", participatory monitoring and participatory action research.
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Citizen_science
+  :label: Citizen science
+- :tag: Connections
+  :uri: http://dbpedia.org/resource/Interdependence
+  :abstract: Interdependence is the mutual reliance between two or more groups.In
+    relationships, interdependence is the degree to which members of the group are
+    mutually dependent on the others. This concept differs from a dependent relationship,
+    where some members are dependent and some are not.In an interdependent relationship,
+    participants may be emotionally, economically, ecologically and/or morally reliant
+    on and responsible to each other. An interdependent relationship can arise between
+    two or more cooperative autonomous participants (e.g. a co-op). Some people advocate
+    freedom or independence as the ultimate good; others do the same with devotion
+    to one's family, community, or society. Interdependence can be a common ground
+    between these aspirations.
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Interdependence
+  :label: Interdependence
+- :tag: Decisions
+  :uri: http://dbpedia.org/resource/Decision-making
+  :abstract: This article deals with decision-making as analyzed in psychology. See
+    also Decision theory.In psychology, decision-making is regarded as the cognitive
+    process resulting in the selection of a belief or a course of action among several
+    alternative possibilities. Every decision-making process produces a final choice
+    that may or may not prompt action. Decision-making is the process of identifying
+    and choosing alternatives based on the values and preferences of the decision-maker.
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Decision-making
+  :label: Decision-making
+- :tag: Design
+  :uri: http://dbpedia.org/resource/Design
+  :abstract: Design is the creation of a plan or convention for the construction of
+    an object or a system (as in architectural blueprints, engineering drawings, business
+    processes, circuit diagrams and sewing patterns).  Design has different connotations
+    in different fields (see design disciplines below). In some cases the direct construction
+    of an object (as in pottery, engineering, management, cowboy coding and graphic
+    design) is also considered to be design.Designing often necessitates considering
+    the aesthetic, functional, economic and sociopolitical dimensions of both the
+    design object and design process. It may involve considerable research, thought,
+    modeling, interactive adjustment, and re-design. Meanwhile, diverse kinds of objects
+    may be designed, including clothing, graphical user interfaces, skyscrapers, corporate
+    identities, business processes and even methods of designing.Thus "design" may
+    be a substantive referring to a categorical abstraction of a created thing or
+    things (the design of something), or a verb for the process of creation, as is
+    made clear by grammatical context.
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Design
+  :label: Design
+- :tag: Enlightenment
+  :uri: http://dbpedia.org/resource/Age_of_Enlightenment
+  :abstract: The Age of Enlightenment or simply the Enlightenment or Age of Reason
+    is an era from the 1620s to the 1780s in which cultural and intellectual forces
+    in Western Europe emphasized reason, analysis, and individualism rather than traditional
+    lines of authority. It was promoted by philosophes and local thinkers in urban
+    coffee houses, salons, and Masonic lodges.  It challenged the authority of institutions
+    that were deeply rooted in society, especially the Roman Catholic Church; there
+    was much talk of ways to reform society with toleration, science and skepticism.Philosophers
+    including Francis Bacon (1562–1626), René Descartes (1596–1650), John Locke (1632–1704),
+    Baruch Spinoza (1632–77), Pierre Bayle (1647–1706), Giambattista Vico (1668–1744),
+    Voltaire (1694–1778), David Hume (1711–76), Immanuel Kant (1724–1804), Cesare
+    Beccaria (1738–94), Francesco Mario Pagano (1748–99) and Sir Isaac Newton (1642–1727)
+    influenced society by publishing widely read works.  Upon learning about enlightened
+    views, some rulers met with intellectuals and tried to apply their reforms, such
+    as allowing for toleration, or accepting multiple religions, in what became known
+    as enlightened absolutism. Coinciding with the Age of Enlightenment was the Scientific
+    revolution, spearheaded by Newton.New ideas and beliefs spread around the continent
+    and were fostered by an increase in literacy due to a departure from solely religious
+    texts. Publications include Encyclopédie (1751–72) that was edited by Denis Diderot
+    and (until 1759) Jean le Rond d'Alembert. Some 25,000 copies of the 35 volume
+    encyclopedia were sold, half of them outside France. The Dictionnaire philosophique
+    (Philosophical Dictionary, 1764) and Letters on the English (1733) written by
+    Voltaire (1694–1778) were revolutionary texts that spread the ideals of the Enlightenment.
+    Some of these ideals proved influential and decisive in the course of the French
+    Revolution, which began in 1789. After the Revolution, the Enlightenment was followed
+    by an opposing intellectual movement known as Romanticism.
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Age_of_Enlightenment
+  :label: Age of Enlightenment
+  :type: http://dbpedia.org/class/yago/HistoricalEras
+- :tag: Essay
+  :uri: http://dbpedia.org/resource/Essay
+  :abstract: 'Essays are generally scholarly pieces of writing giving the author''s
+    own argument, but the definition is vague, overlapping with those of an article,
+    a pamphlet and a short story.Essays can consist of a number of elements, including:
+    literary criticism, political manifestos, learned arguments, observations of daily
+    life, recollections, and reflections of the author. Almost all  modern essays  are
+    written in prose, but works in verse have been dubbed essays (e.g. Alexander Pope''s
+    An Essay on Criticism and An Essay on Man). While brevity usually defines an essay,
+    voluminous works like John Locke''s An Essay Concerning Human Understanding and
+    Thomas Malthus''s An Essay on the Principle of Population are counterexamples.In
+    some countries (e.g., the United States and Canada), essays have become a major
+    part of formal education. Secondary students are taught structured essay formats
+    to improve their writing skills; admission essays are often used by universities
+    in selecting applicants, and in the humanities and social sciences essays are
+    often used as a way of assessing the performance of students during final exams.The
+    concept of an "essay" has been extended to other mediums beyond writing. A film
+    essay is a movie which often incorporates documentary film making styles and which
+    focuses more on the evolution of a theme or an idea. A photographic essay is an
+    attempt to cover a topic with a linked series of photographs; it may or may not
+    have an accompanying text or captions.'
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Essay
+  :label: Essay
+  :type: http://www.wikidata.org/entity/Q188451
+- :tag: Funding
+  :uri: http://dbpedia.org/resource/Funding
+  :abstract: '"Funding" is the act of providing financial resources, usually in the
+    form of money, or other values such as effort or time, to finance a need, program,
+    and project, usually by an organisation or government. Generally, this word is
+    used when a firm uses its internal reserves to satisfy its necessity for cash,
+    while the term ‘financing‘ is used when the firms acquires capital from external
+    sources.Sources of funding include credit, venture capital, donations, grants,
+    savings, subsidies, and taxes. Fundings such as donations, subsidies, and grants
+    that have no direct requirement for return of investment are described as "soft
+    funding" or "crowdfunding".  Funding that facilitates the exchange of equity ownership
+    in a company for capital investment via an online funding portal as per the Jumpstart
+    Our Business Startups Act (alternately, the "JOBS Act of 2012") (U.S.) is known
+    as equity crowdfunding.Funds can be allocated for either short-term or long-term
+    purposes.'
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Funding
+  :label: Funding
+- :tag: Genealogy
+  :uri: http://dbpedia.org/resource/Genealogy
+  :abstract: 'Genealogy (from Greek: γενεά genea, "generation"; and λόγος logos, "knowledge"),
+    also known as family history, is the study of families and the tracing of their
+    lineages and history. Genealogists use oral interviews, historical records, genetic
+    analysis, and other records to obtain information about a family and to demonstrate
+    kinship and pedigrees of its members. The results are often displayed in charts
+    or written as narratives.The pursuit of family history and origins tends to be
+    shaped by several motivations, including the desire to carve out a place for one''s
+    family in the larger historical picture, a sense of responsibility to preserve
+    the past for future generations, and a sense of self-satisfaction in accurate
+    storytelling.'
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Genealogy
+  :label: Genealogy
+- :tag: Growth
+  :uri: http://dbpedia.org/resource/Growth
+- :tag: Holism
+  :uri: http://dbpedia.org/resource/Holism
+  :abstract: Holism (from Greek ὅλος holos "all, whole, entire") is the idea that
+    systems (physical, biological, chemical, social, economic, mental, linguistic,
+    etc.) and their properties should be viewed as wholes, not as collections of parts.  This
+    often includes the view that systems function as wholes and that their functioning
+    cannot be fully understood solely in terms of their component parts.Holism is
+    a form of antireductionism, which is the complement of reductionism. Reductionism
+    analyzes a complex system by subdividing or reduction to more fundamental parts.
+    For example, the processes of biology are reducible to chemistry, and the laws
+    of chemistry are explained by physics.Social scientist and physician Nicholas
+    A. Christakis explains that "for the last few centuries, the Cartesian project
+    in science has been to break matter down into ever smaller bits, in the pursuit
+    of understanding. And this works, to some extent... but putting things back together
+    in order to understand them is harder, and typically comes later in the development
+    of a scientist or in the development of science."
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Holism
+  :label: Holism
+- :tag: Joy
+  :uri: http://dbpedia.org/resource/Joy
+- :tag: NGS
+  :uri: http://dbpedia.org/resource/National_Genealogical_Society
+  :abstract: The National Genealogical Society is a genealogical interest group founded
+    in 1903 in Washington, D.C..  Its headquarters are in Arlington, Virginia.The
+    goals of the organization are to promote genealogical skill development, establish
+    high standards of genealogical research, and increase awareness of and interest
+    in family history. To accomplish this, the National Genealogical Society provides
+    educational programs, publishes several publications in the field of genealogy,
+    and creates networking opportunities for its members. It is the publisher of the
+    National Genealogical Society Quarterly, and the NGS Magazine. Annually, in conjunction
+    with a sponsoring local genealogical society, it stages the "NGS Family History
+    Conference."
+  :primaryTopicOf: http://en.wikipedia.org/wiki/National_Genealogical_Society
+  :label: National Genealogical Society
+  :type: http://dbpedia.org/class/yago/OrganizationsBasedInVirginia
+- :tag: Open Access
+  :uri: http://dbpedia.org/resource/Open_access
+- :tag: Open Business
+  :uri: http://dbpedia.org/resource/Open_business
+  :abstract: Open business is an approach to enterprise that draws on ideas from openness
+    movements like free software, open source, open content and open tools and standards.
+    The approach places value on transparency, stakeholder inclusion, and accountability.Open
+    business structures make contributors and non-contributors visible so that business
+    benefits are distributed accordingly. They seek to increase personal engagement
+    and positive outcomes by rewarding contributors in an open way.
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Open_business
+  :label: Open business
+- :tag: Open Research
+  :uri: http://dbpedia.org/resource/Open_research
+  :abstract: Open research is research conducted in the spirit of free and open source
+    software. Much like open source schemes that are built around a source code that
+    is made public, the central theme of open research is to make clear accounts of
+    the methodology freely available via the internet, along with any data or results
+    extracted or derived from them. This permits a massively distributed collaboration,
+    and one in which anyone may participate at any level of the project.If the research
+    is scientific in nature, it is frequently referred to as open science. Open research
+    can also include social sciences, the humanities, mathematics, engineering and
+    medicine.
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Open_research
+  :label: Open research
+- :tag: Open Standards
+  :uri: http://dbpedia.org/resource/Open_standard
+  :abstract: An open standard is a standard that is publicly available and has various
+    rights to use associated with it, and may also have various properties of how
+    it was designed (e.g. open process).  There is no single definition and interpretations
+    vary with usage.The terms open and standard have a wide range of meanings associated
+    with their usage.  There are a number of definitions of open standards which emphasize
+    different aspects of openness, including the openness of the resulting specification,
+    the openness of the drafting process, and the ownership of rights in the standard.
+    The term "standard" is sometimes restricted to technologies approved by formalized
+    committees that are open to participation by all interested parties and operate
+    on a consensus basis.The definitions of the term open standard used by academics,
+    the European Union and some of its member governments or parliaments such as Denmark,
+    France, and Spain preclude open standards requiring fees for use, as do the New
+    Zealand, South African and the Venezuelan governments. On the standard organisation
+    side, the World Wide Web Consortium (W3C) ensures that its specifications can
+    be implemented on a royalty-free basis.Many definitions of the term standard permit
+    patent holders to impose "reasonable and non-discriminatory licensing" royalty
+    fees and other licensing terms on implementers or users of the standard.  For
+    example, the rules for standards published by the major internationally recognized
+    standards bodies such as the Internet Engineering Task Force (IETF),  International
+    Organization for Standardization (ISO), International Electrotechnical Commission
+    (IEC), and ITU-T permit their standards to contain specifications whose implementation
+    will require payment of patent licensing fees. Among these organizations, only
+    the IETF and ITU-T explicitly refer to their standards as "open standards", while
+    the others refer only to producing "standards". The IETF and ITU-T use definitions
+    of "open standard" that allow "reasonable and non-discriminatory" patent licensing
+    fee requirements.There are those in the open-source software community who hold
+    that an "open standard" is only open if it can be freely adopted, implemented
+    and extended. While open standards or architectures are considered non-proprietary
+    in the sense that the standard is either unowned or owned by a collective body,
+    it can still be publicly shared and not tightly guarded. The typical example of
+    “open source” that has become a standard is the personal computer originated by
+    IBM and now referred to as Wintel, the combination of the Microsoft operating
+    system and Intel microprocessor. There are three others that are most widely accepted
+    as “open” which include the GSM phones (adopted as a government standard), Open
+    Group which promotes UNIX and the like, and the Internet Engineering Task Force
+    (IETF) which created the first standards of SMTP and TCP/IP. Buyers tend to prefer
+    open standards which they believe offer them cheaper products and more choice
+    for access due to network effects and increased competition between vendors.Open
+    standards which specify formats are sometimes referred to as open formats.Many
+    specifications that are sometimes referred to as standards are proprietary and
+    only available under restrictive contract terms (if they can be obtained at all)
+    from the organization that owns the copyright on the specification.  As such these
+    specifications are not considered to be fully open. Joel West has argued that
+    "open" standards are not black and white but have many different levels of "openness".
+    Ultimately a standard needs to be open enough that it will become adopted and
+    accepted in the market, but still closed enough that firms can get a return on
+    their investment in developing the technology around the standard. A more open
+    standard tends to occur when the knowledge of the technology becomes dispersed
+    enough that competition is increased and others are able to start copying the
+    technology as they implement it. This occurred with the Wintel architecture as
+    others were able to start imitating the software. Less open standards exist when
+    a particular firm has much power (not ownership) over the standard, which can
+    occur when a firm’s platform “wins” in standard setting or the market makes one
+    platform most popular.
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Open_standard
+  :label: Open standard
+  :type: http://dbpedia.org/class/yago/OpenStandards
+- :tag: Opinionated
+  :uri: http://dbpedia.org/resource/Opinion_piece
+  :abstract: An opinion piece is an article, published in a newspaper or magazine,
+    that mainly reflects the author's opinion about the subject. Opinion pieces are
+    featured in many periodicals.
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Opinion_piece
+  :label: Opinion piece
+- :tag: Phil Trans
+  :uri: http://dbpedia.org/resource/Philosophical_Transactions_of_the_Royal_Society
+  :abstract: Philosophical Transactions later Philosophical Transactions of the Royal
+    Society (Phil. Trans.) is a scientific journal published by the Royal Society.
+    In its earliest days, it was a private venture of the Royal Society's secretary.
+    It became an official society publication in the eighteenth century. It was established
+    in 1665, making it the first journal in the world exclusively devoted to science,
+    and therefore also the world's longest-running scientific journal. The use of
+    the word "Philosophical" in the title refers to "natural philosophy", which was
+    the equivalent of what would now be generally called "science".
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Philosophical_Transactions_of_the_Royal_Society
+  :label: Philosophical Transactions of the Royal Society
+  :type: http://dbpedia.org/class/yago/MultidisciplinaryScientificJournals
+- :tag: Republic of Letters
+  :uri: http://dbpedia.org/resource/Republic_of_Letters
+  :abstract: 'The Republic of Letters (Respublica literaria) is the long-distance  intellectual
+    community in the late 17th and 18th centuries in Europe and America. It fostered
+    communication among the intellectuals of the Age of Enlightenment, or "philosophes"
+    as they were called in France.  The Republic of Letters emerged in the 17th century
+    as a self-proclaimed community of scholars and literary figures that stretched
+    across national boundaries but respected differences in language and culture.  These
+    communities that transcended national boundaries formed the basis of a metaphysical
+    Republic.  Because of societal constraints on women, the Republic of Letters consisted
+    mostly of men. As such, many scholars use "Republic of Letters" and "men of letters"
+    interchangeably.The circulation of handwritten letters was necessary for its function
+    because it enabled intellectuals to correspond with each other from great distances.
+    All citizens of the 17th-century Republic of Letters corresponded by letter, exchanged
+    published papers and pamphlets, and considered it their duty to bring others into
+    the Republic through the expansion of correspondence.The first known occurrence
+    of the term in its Latin form (Respublica litteraria) is in a letter by Francesco
+    Barbaro to Poggio Bracciolini dated July 6, 1417; it was used increasingly in
+    the 16th and 17th, so that by the end of that century it featured in the titles
+    of several important journals.  Currently, the consensus is that Pierre Bayle
+    first translated the term in his journal Nouvelles de la République des Lettres
+    in 1664.  But there are some historians who disagree and some have gone so far
+    as to say that its origin dates back to Plato''s Republic.  Part of the difficulty
+    in determining its origin is that, unlike an academy or literary society, it existed
+    only in the minds of its members.Historians are presently debating the importance
+    of the Republic of Letters in influencing the Enlightenment. Today, most Anglo-American
+    historians, whatever their point of entry to debate, occupy a common ground: the
+    Republic of Letters and the Enlightenment were distinct.'
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Republic_of_Letters
+  :label: Republic of Letters
+- :tag: Review
+  :uri: http://dbpedia.org/resource/Review
+  :abstract: A review is an evaluation of a publication, service, or company such
+    as a movie (a movie review), video game (video game review), musical composition
+    (music review of a composition or recording), book (book review); a piece of hardware
+    like a car, home appliance, or computer; or an event or performance, such as a
+    live music concert, play, musical theater show, dance show, or art exhibition.
+    In addition to a critical evaluation, the review's author may assign the work
+    a rating to indicate its relative merit. More loosely, an author may review current
+    events, trends, or items in the news. A compilation of reviews may itself be called
+    a review. The New York Review of Books, for instance, is a collection of essays
+    on literature, culture, and current affairs. National Review, founded by William
+    F. Buckley, Jr., is an influential conservative magazine, and Monthly Review is
+    a long-running socialist periodical.
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Review
+  :label: Review
+  :type: http://www.wikidata.org/entity/Q188451
+- :tag: RootsTech
+  :uri: http://dbpedia.org/resource/RootsTech
+  :abstract: 'RootsTech is a family history and technology conference and trade show
+    held annually in the Salt Palace Convention Center, Salt Lake City, Utah. It is
+    the successor to three former conferences: the Conference on Computerized Family
+    History and Genealogy, the Family History Technology Workshop and the FamilySearch
+    Developers Conference.'
+  :primaryTopicOf: http://en.wikipedia.org/wiki/RootsTech
+  :label: RootsTech
+  :type: http://dbpedia.org/class/yago/TradeShowsInTheUnitedStates
+- :tag: Technology
+  :uri: http://dbpedia.org/resource/Technology
+  :abstract: Technology (from Greek τέχνη, techne, "art, skill, cunning of hand";
+    and -λογία, -logia) is the collection of techniques, skills, methods and processes
+    used in the production of goods or services or in the accomplishment of objectives,
+    such as scientific investigation.  Technology can be the knowledge of techniques,
+    processes, etc. or it can be embedded in machines, computers, devices and factories,
+    which can be operated by individuals without detailed knowledge of the workings
+    of such things.The human species' use of technology began with the conversion
+    of natural resources into simple tools. The prehistoric discovery of how to control
+    fire and the later Neolithic Revolution increased the available sources of food
+    and the invention of the wheel helped humans to travel in and control their environment.
+    Developments in historic times, including the printing press, the telephone, and
+    the Internet, have lessened physical barriers to communication and allowed humans
+    to interact freely on a global scale.  The steady progress of military technology
+    has brought weapons of ever-increasing destructive power, from clubs to nuclear
+    weapons.Technology has many effects.  It has helped develop more advanced economies
+    (including today's global economy) and has allowed the rise of a leisure class.
+    Many technological processes produce unwanted by-products, known as pollution,
+    and deplete natural resources, to the detriment of Earth's environment. Various
+    implementations of technology influence the values of a society and new technology
+    often raises new ethical questions. Examples include the rise of the notion of
+    efficiency in terms of human productivity, a term originally applied only to machines,
+    and the challenge of traditional norms.Philosophical debates have arisen over
+    the use of technology, with disagreements over whether technology improves the
+    human condition or worsens it. Neo-Luddism, anarcho-primitivism, and similar reactionary
+    movements criticise the pervasiveness of technology in the modern world, opining
+    that it harms the environment and alienates people; proponents of ideologies such
+    as transhumanism and techno-progressivism view continued technological progress
+    as beneficial to society and the human condition.  Until recently, it was believed
+    that the development of technology was restricted only to human beings, but 21st
+    century scientific studies indicate that other primates and certain dolphin communities
+    have developed simple tools and passed their knowledge to other generations.
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Technology
+  :label: Technology
+- :tag: Treatise
+  :uri: http://dbpedia.org/resource/Treatise
+  :abstract: A treatise is a formal and systematic written discourse on some subject,
+    generally longer and treating it in greater depth than an essay, and more concerned
+    with investigating or exposing the principles of the subject.
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Treatise
+  :label: Treatise
+- :tag: W3C
+  :uri: http://dbpedia.org/resource/World_Wide_Web_Consortium
+  :abstract: The World Wide Web Consortium (W3C) is the main international standards
+    organization for the World Wide Web (abbreviated WWW or W3).Founded and currently
+    led by Tim Berners-Lee, the consortium is made up of member organizations which
+    maintain full-time staff for the purpose of working together in the development
+    of standards for the World Wide Web. As of 11 August 2015, the World Wide Web
+    Consortium (W3C) had 391 members.The W3C also engages in education and outreach,
+    develops software and serves as an open forum for discussion about the Web.
+  :primaryTopicOf: http://en.wikipedia.org/wiki/World_Wide_Web_Consortium
+  :label: World Wide Web Consortium
+  :type: http://dbpedia.org/class/yago/InternationalNongovernmentalOrganizations
+- :tag: World Wide Web
+  :uri: http://dbpedia.org/resource/World_Wide_Web
+  :abstract: The World Wide Web (www, W3) is an information space where documents
+    and other web resources are identified by URLs, interlinked by hypertext links,
+    and can be accessed via the Internet. It has become known simply as the Web. The
+    World Wide Web was central to the development of the Information Age and is the
+    primary tool billions use to interact on the Internet, and it has changed people's
+    lives immeasurably.The World Wide Web was invented by English scientist Tim Berners-Lee
+    in 1989. He wrote the first web browser in 1990 while employed at CERN in Switzerland.Web
+    pages are primarily text documents formatted and annotated with Hypertext Markup
+    Language (HTML). In addition to formatted text, web pages may contain images,
+    video, and software components that are rendered in the user's web browser as
+    coherent pages of multimedia content. Embedded hyperlinks permit users to navigate
+    between web pages. Multiple web pages with a common theme, a common domain name,
+    or both, may be called a website. Website content can largely be provided by the
+    publisher, or interactive where users contribute content or the content depends
+    upon the user or their actions. Websites may be mostly informative, primarily
+    for entertainment, or largely for commercial purposes.
+  :primaryTopicOf: http://en.wikipedia.org/wiki/World_Wide_Web
+  :label: World Wide Web
+  :type: http://dbpedia.org/class/yago/Merchandise103748886
