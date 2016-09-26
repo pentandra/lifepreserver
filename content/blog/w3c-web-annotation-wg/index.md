@@ -65,7 +65,7 @@ to the underlying technologies of [RDF][RDF] and [JSON-LD][JSON-LD]. All of
 this gives us, as a research community, enormous potential for moving beyond
 [the current publishing paradigm][paradigm].
 
-## Annotations for Research
+# Annotations for Research
 
 To understand why web annotations are useful for research, we need to look a
 little deeper at what research _is_. The verb _research_ is from the Old French
@@ -140,7 +140,7 @@ means for genealogy. Bring on the Web!
 
 </figure>
 
-## Notes
+# Notes
 
 [^term-research]: _research_, from the [Online Etymology Dictionary](http://www.etymonline.com/index.php?term=research).
 [^term-re-]: _re-_, from the [Online Etymology Dictionary](http://www.etymonline.com/index.php?term=re-)

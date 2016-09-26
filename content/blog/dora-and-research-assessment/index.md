@@ -63,7 +63,7 @@ under the control of the researcher, but quality is. So, ideally, we should be
 basing our assessments and hiring, promotion, and funding decisions not upon
 impact, but upon research quality. Impact presupposes quality.
 
-## Research Assessment in one field
+# Research Assessment in one field
 
 In the field of genealogy there is an unusually disproportionate amount of
 cloddy research that is published. On one hand are the ever-proliferating

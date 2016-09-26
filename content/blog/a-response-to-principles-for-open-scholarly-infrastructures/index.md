@@ -16,18 +16,18 @@ tags:
 This post is mostly a response to [a recent article][principles] by Geoffrey
 Bilder, Jennifer Lin, Cameron Neylon.[^principles]
 
-## Governance
+# Governance
 
-### Coverage across the research enterprise
+## Coverage across the research enterprise
 
 Exit strategy for social business.
 
 
-### Cannot Lobby
+## Cannot Lobby
 
-## Sustainability
+# Sustainability
 
-## Insurance
+# Insurance
 
 [principles]: http://cameronneylon.net/blog/principles-for-open-scholarly-infrastructures/
 [right model]: http://cameronneylon.net/blog/whats-the-right-model-for-shared-scholarly-communications-infrastructure/

@@ -34,7 +34,7 @@ surprising places. Let me share a few examples.
 
 <!--MORE-->
 
-## Some Good Examples
+# Some Good Examples
 
 When Jack Andraka was <span class="oldstyle">15</span>, he set out to discover
 a way to detect early-stage pancreatic cancer. After reading hundreds of papers
@@ -131,7 +131,7 @@ researcher, but the same thing could be applied to [basic research] if we say
 that research is a simple, organized way of trying to discover something that
 you want to know.
 
-## Anyone can Research?
+# Anyone can Research?
 
 I'm reminded of the [Pixar] movie <cite><a
 href="http://www.imdb.com/title/tt0382932/" title="Ratatouille on
@@ -179,7 +179,7 @@ knowledge and seeks after it for understanding and to create <em>new
 knowledge</em>. 
 
 
-## Towards a Scholarly Commons
+# Towards a Scholarly Commons
 
 Why do we research? Is it to have a job? Is it to prove our intelligence, or to
 increase our personal prestige? If so, this has not always been the reason.

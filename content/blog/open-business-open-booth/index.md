@@ -24,7 +24,7 @@ day.)
 
 <!--MORE-->
 
-## Open Business
+# Open Business
 
 We have decided to do something we wanted to do last year, but were perhaps a
 bit too chicken to try the very first year in our new “vendor” role. Well, this
@@ -62,7 +62,7 @@ only that, but we genuinely care about advancing good research, both within
 ourselves and for others as well. For that matter, our entire
 [mission](/company/#sec:mission) is about improving research.
 
-## Open Booth
+# Open Booth
 
 We have the most comfy seats in the exhibit hall (blatantly biased opinion of
 course), or at least the brightest red ones (unless someone else has decided
@@ -104,7 +104,7 @@ circle of friends and colleagues. If you relate to any of those situations, or
 likely countless others that I didn't mention, then perhaps you are a perfect
 fit to come and teach and train and lift and lead others in our Open Booth.
 
-### What Kind of Discussions?
+## What Kind of Discussions?
 
 
 OK, so what if you fit the description of someone that could benefit from this
@@ -143,7 +143,7 @@ motives...When you present in our booth, then Chris or I get the outstanding
 opportunity to eavesdrop on what you are teaching your small group and we just
 might be lucky enough to learn something wonderful as well! I can't wait!
 
-### How will it Work?
+## How will it Work?
 
 Alright, let me attempt to break this down into some straightforward
 particulars.

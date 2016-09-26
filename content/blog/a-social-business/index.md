@@ -129,7 +129,7 @@ what it actually takes to build a self-sufficient, lasting enterprise. Burnout
 hits too soon for too many. Much of this problem stems from the dog-eat-dog
 world of venture capital investing.[^shareholders] Does it have to be this way?
 
-## Social What?
+# Social What?
 
 I must admit, they didn't teach us much about this in business school. Being a
 researcher at heart, I decided to try to find an answer to my question. I found

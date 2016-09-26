@@ -119,7 +119,7 @@ what I would call a [_bridge builder_](/research/#p[OwgWnb],h[OwgWnb,3]). We
 need more researchers like that.
 {: .conclusion }
 
-## Notes
+# Notes
 
 [^1]: Abigail Pesta, "On Pins and Needles: Stylist Turns Ancient Hairdo Debate
     on Its Head," <i>The Wall Street Journal</i>, February 7, 2013, A1 and A12.

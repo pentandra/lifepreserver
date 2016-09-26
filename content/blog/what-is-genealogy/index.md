@@ -25,7 +25,7 @@ forever...but that's a different story.
 
 <!--MORE-->
 
-## Is Genealogy Tree-like Data?
+# Is Genealogy Tree-like Data?
 
 Looking at genealogy in this way is both a shallow and distorted view of
 reality. Was the sole purpose of Doe Darling's existence to produce seven
@@ -57,7 +57,7 @@ nice to look at, it's not all there is to it. You may have [browsed to this
 node at will](http://www.w3.org/Proposal.html), but you probably didn't think
 of it that way.
 
-## Our Perspective
+# Our Perspective
 
 We (at Pentandra) look at genealogy as the study of _lives_---of mankind.
 Life is messy. Life is full. Life is complicated. Life is rich. A pedigree
@@ -86,7 +86,7 @@ danger because of technologies like these that oversimplify the research
 process. This software-for-the-masses approach has watered down genealogy into
 a quest to fill in slots on a pedigree chart.[^motivations] There must be a better way.
 
-## Why Genealogy?
+# Why Genealogy?
 
 So where does genealogy fit in all this?
 
@@ -126,7 +126,7 @@ much about family trees (there are plenty of companies that do that), but it
 could be called micro-history or generational history research (for more info
 about that see [Geungle](/solutions/#geungle)).
 
-## What's needed?
+# What's needed?
 
 Like most things in life, a combination of things must happen to make
 genealogical research a more meaningful and productive experience.

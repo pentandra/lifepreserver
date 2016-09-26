@@ -41,7 +41,7 @@ amazing things. Most amazing to me is that they really are for real and they
 really do what their name suggests. They serve as the middle-man between an
 anonymous giver and the person receiving the gift.
 
-## Gift
+# Gift
 
 Needless to say, we accepted the gift. Even though we had no idea how much
 would be coming, we were thrilled to know that someone out there wanted to
@@ -82,7 +82,7 @@ you:
   </blockquote>
 </div>
 
-## Gratitude
+# Gratitude
 
 Giving Anonymously also provides a way for the gift recipients to record a
 thank you message for the giver. I was afraid that I would lose all ability to

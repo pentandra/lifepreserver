@@ -25,7 +25,7 @@ have been working on and what we're trying to do.
 
 <!--MORE-->
 
-## Booth Approaches
+# Booth Approaches
 
 For the last couple of months, we have been designing our booth. During that
 process, a question that kept coming up was, "What do we want people to

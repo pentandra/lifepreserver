@@ -36,7 +36,7 @@ than in the past.
 
 However, there is more than one type of user.
 
-## What is a User?
+# What is a User?
 
 Elizabeth Shown Mills describes three types of genealogists in her paper
 <a href="http://www.ngsgenealogy.org/galleries/Ref_Researching/NGSQVol91Pg26077GenealogyHistory.pdf"><cite>Genealogy in the "Information Age": History's New Frontier?</cite></a>:
@@ -70,7 +70,7 @@ genealogists in her lecture [Advocating Genealogy and Growing the Market: Issues
 Havorka called these: new, seasoned, and professional. These categories roughly
 correspond to Mills' categories above.
 
-## User and Software Approaches
+# User and Software Approaches
 
 Whatever they are called, these types of genealogists approach genealogical
 software in very different ways. When starting out with research, family tree
@@ -130,7 +130,7 @@ will see the gap between new and professional genealogists narrow. Tools that
 work the way research works will help new genealogists comprehend the research
 process better and faster.
 
-## Users at RootsTech
+# Users at RootsTech
 
 So what has this to do with users at RootsTech? Because of the software
 currently being offered by genealogical vendors, it is not surprising that the

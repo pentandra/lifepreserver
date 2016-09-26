@@ -29,7 +29,7 @@ call _genealogy_.
 
 <!--MORE-->
 
-## A lofty goal
+# A lofty goal
 
 Now you may have a better idea now of what we are trying to accomplish with
 Geungle. We are trying to reconstruct the entire history of mankind. This
@@ -72,7 +72,7 @@ determine the political affiliations of my Civil War ancestor? Well, you never
 know, but we do need the physicist. They're human aren't they?
 {: .conclusion }
 
-## A lofty goal
+# A lofty goal
 
 Now you may have a better idea now of what we are trying to accomplish with
 Geungle. We are trying to reconstruct the entire history of mankind. This

@@ -51,7 +51,7 @@ how well it embodies that collective vision (or what still needs to be
 improved). FORCE11 is taking this challenge by the horns, and is trying to
 doing so in a domain-agnostic way.
 
-## The premise
+# The premise
 
 So in a spirit of hope for the future, and with the assumption that everyone in
 the world would like to do things better and be more involved if they had the
@@ -82,7 +82,7 @@ we seek to make these foundational changes in our society while wading through
 the modus operandi of research practices that our culture is so entrenched in 
 right now.
 
-## Preparations for a workshop
+# Preparations for a workshop
 
 By the time we found out that we had received the grant, there was not as much
 time as we would have liked to prepare for the first workshop, so we had to
@@ -123,7 +123,7 @@ thing aimed to make the world a better place, and we can only do it in a spirit
 of cheerfulness, not fearing.
 
 
-## Outcomes and continuations
+# Outcomes and continuations
 
 By the end of the two-day workshop, we had managed to converge on some ideas
 and principles. Here are a few that were especially meaningful to me:

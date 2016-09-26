@@ -64,13 +64,13 @@ you can see more clearly where we're coming from as a company.
 
 <!--MORE-->
 
-## Contents
+# Contents
 {:.no_toc}
 
 1. Table of Contents
 {:toc}
 
-## A Brief History of Open Access
+# A Brief History of Open Access
 
 As I [briefly discussed earlier][economics], economics is oftentimes the
 underlying motivator for change. To really understand how we've come to where
@@ -84,7 +84,7 @@ open access or research publication, but only to provide context for
 understanding our business and design approach as we work to solve the problem
 of [access to knowledge][mission].
 
-### The Middle Ages
+## The Middle Ages
 
 The Middle Ages (<span class="oldstyle">5</span>th to <span
 class="oldstyle">15</span>th centuries) was a period of great intellectual
@@ -109,7 +109,7 @@ Barriers to the spread of knowledge included:
 1. Formal education (was handled by the church)
 1. Scale
 
-#### The Work of Many for the One
+### The Work of Many for the One
 
 Only the wealthy could afford books during this time. The one that was
 commissioning a book would employ a [clerk], or scholar, would manage the
@@ -128,7 +128,7 @@ whole.
   <figcaption class="small"><span property="schema:description"><b property="dc:title schema:name">An illuminated scientific manuscript</b>, or better known at the time as <dfn><a href="https://en.wikipedia.org/wiki/Natural_philosophy" title="Philosophia Naturalis on Wikipedia">natural philosophy</a></dfn>, written in <a href="https://en.wikipedia.org/wiki/Latin" title="Latin on Wikipedia">Latin</a> upon <a href="https://en.wikipedia.org/wiki/Parchment" title="Parchment on Wikipedia">parchment</a> circa <span class="oldstyle">1292</span>, showing a contemporary dipiction of the Arabic <a href="http://en.wikipedia.org/wiki/Toledan_Tables">Toledan tables</a>, which used geometric chords and sines to predict the movements of the Sun, Moon, and planets relative to the fixed stars. At this time, the prevailing belief was that the Earth was stationary at the center of the universe.</span> Licensed under a <a property="cc:license" href="http://creativecommons.org/publicdomain/zero/1.0/" ><abbr title="Creative Commons Zero (Public Domain Dedication)">CC0</abbr> license</a> by the <a property="cc:attributionName" rel="cc:attributionURL" href="http://www.bl.uk">British Library</a>. <span class="icon-cc"></span><span class="icon-cc-zero"></span></figcaption>
 </figure>
 
-#### Access to Knowledge
+### Access to Knowledge
 
 <figure id="fig:galileo" class="bq grab">
   <blockquote>
@@ -149,11 +149,11 @@ whole.
 
 Transition and the supposed immortality of copyists
 
-### The Early Modern Period
+## The Early Modern Period
 
 1. Latency
 
-#### The Republic of Letters
+### The Republic of Letters
 
 The availability of postal services lowered the barrier of location, though it
 introduced another problem: latency.
@@ -164,7 +164,7 @@ Rosicrucianism and the Royal Society
 
 Duplicating machines
 
-#### The Printing Press: The Work of One (or a few) for the Many
+### The Printing Press: The Work of One (or a few) for the Many
 
 Printing press lowered the barrier of scale. It didn't eliminate it by any
 stretch of the imagination, but it was a whole lot more economical than hiring
@@ -187,7 +187,7 @@ of the World</cite>
   <link property="rdfa:copy" resource="pentandra-website:license" />
 </figure>
 
-### The Modern Open Access Movement
+## The Modern Open Access Movement
 
 This is when open access became a thing. Before that, it existed, but not as a
 thing.
@@ -260,7 +260,7 @@ institution, where I had access to some of the more popular journals, I
 probably would not risk the expense unless the paper's abstract was
 particularly convincing.
 
-#### Public Policy
+### Public Policy
 
 So where does all this publicly-funded research come from? Well, the government
 collects taxes from the public. These public funds are distributed by the
@@ -337,7 +337,7 @@ the problem, effectually [removing the only way to detect it][ssd].
 Some say that we are entering the [beginning of the Dark Ages][public_access]
 for public records.
 
-#### Beyond Fairness
+### Beyond Fairness
 
 While the self-serving actions of the publishers may be reason enough to
 support open access, there is another, more meaningful reason besides
@@ -361,7 +361,7 @@ functionality and put them together in new and innovative ways.  Open-access
 research, or even better, [open research](/open/#research), can work the same
 way.
 
-## Designing True Open Access to Knowledge
+# Designing True Open Access to Knowledge
 
 Since <span class="oldstyle">2012</span>, the conversation has drifted from
 open access to research papers to open access to research data. Since the time,
@@ -401,7 +401,7 @@ So what would true open access to knowledge look like? I have listed five
 general principles below that would really [open up our access to the knowledge
 of the world][mission].
 
-### Creating Open Knowledge
+## Creating Open Knowledge
 
 Before we can *open up* knowledge, we need to know what *knowledge* is. In our
 [mission], we allude to the process of *knowledge creation*, yet can knowledge
@@ -447,7 +447,7 @@ _behind_ a bit of knowledge to see where it came from, where it is now, and
 will allow us to take knowledge new places in the future. This is what we call
 [<dfn id="def:opening-knowledge">opening up knowledge</dfn>][mission].
 
-#### Knowledge on the World Wide Web
+### Knowledge on the World Wide Web
 
 With the Web such a large place, why are we worried about access to knowledge?
 Yes, there is a lot of knowledge on the World Wide Web, but the creation of
@@ -501,7 +501,7 @@ existence? And then support it with additional arguments or challenge it? Maybe
 the best way to describe open knowledge is to start with why current
 technologies are not open knowledge.
 
-#### Publications as Silos
+### Publications as Silos
 
 A paper represents a lot of research that was not published.
 
@@ -542,7 +542,7 @@ The emphasis on matter-of-fact statements instead of questions. Hiding the
 research process, or perhaps, simplifying, so that only the essential news was
 published? Terseness over expressiveness?
 
-#### Researchers as Silos
+### Researchers as Silos
 
 Even with the invention of the printing press, and the technological advances
 of the press over the years, research itself has remained, in large part, a
@@ -563,7 +563,7 @@ stays there and doesn't get shared.
 Look at collaboration and openness as a positive thing, a way to do more good,
 more quickly. Trickle down economics.
 
-### Emphasizing Attribution, not Authorship
+## Emphasizing Attribution, not Authorship
 
 We need to focus more on attribution, not authorship. We're researchers first,
 not authors, aren't we? We want to know who did the *research!* Authorship in
@@ -608,7 +608,7 @@ process of knowledge creation is transparent. Like minds should to be able to
 work together, focusing on what they are trying to achieve without worrying
 unduly about credit management.
 
-#### A Highly Heterogeneous Composition
+### A Highly Heterogeneous Composition
 
 Research is messy. Sometimes it just doesn't fit very well in a four- or
 eight-page research paper. While there are some excellent examples of the use
@@ -635,7 +635,7 @@ are failing to give people access to the research and thought processes behind
 those research outputs. We need the whole [research context][context] to really
 understand those research outputs.
 
-### Iterating Research
+## Iterating Research
 
 For some research questions, that is a
 good way to go, but for most, 
@@ -676,7 +676,7 @@ sophisticated product. The researcher "develops" conclusions in a similar
 manner. That product may include a nicely written paper, but all the underlying
 research needs to be openly accessible as well.
 
-#### The Work of Many for the Many
+### The Work of Many for the Many
 
 Async research.
 
@@ -686,7 +686,7 @@ paradigm.
 The questions don't change but the answers do
 --- Dan Reed
    
-### Determining Research Quality
+## Determining Research Quality
 
 Why do we care about quality?
 
@@ -733,11 +733,11 @@ We should be able not only to see the research methodology used in a research
 project, but we need to be able to peer into the researchers brain to see how
 the researcher thinks.
 
-#### Forecasting Research Impact
+### Forecasting Research Impact
 
 Publishers are notoriously bad at predicting research impact. 
 
-#### Judging Technical Validity
+### Judging Technical Validity
 
 Peer review is as [domain-specific] as research itself. In fact, isn't peer
 review a form of research? The reviewer has a different motivation---to play
@@ -760,7 +760,7 @@ direction.
 Value in the anonymity of the review may necessitate review attributions to
 remain hidden, locked away in individual silos. 
 
-### Democratizing Research
+## Democratizing Research
 
 It wasn't too long ago that science was dominated by amateurs. Research was an
 avocation enjoyed by teachers, philosophers, and other learned people.
@@ -771,7 +771,7 @@ discovered <a href="https://en.wikipedia.org/wiki/Chargaff%27s_rules"
 >two rules</a> that helped lead to the discovery of the double
 helix structure of <abbr title="Deoxyribonucleic acid">DNA</abbr>.
 
-#### The Rise of the Professional Researcher
+### The Rise of the Professional Researcher
 
 During the first half of the <span class="oldstyle">20</span>th century,
 corporations and universities realized that research could form part of their
@@ -856,7 +856,7 @@ technical concepts in a given domain or discipline. Yet, as we learned from
 vocabularies and concepts if they're willing to put forth the effort.
 [Wikipedia] anyone?
 
-#### A Hope for Little Research
+### A Hope for Little Research
 
 Just like the World Wide Web lets people of all skill levels participate in the
 [Web of Documents][web], true open access to knowledge needs to allow
@@ -933,7 +933,7 @@ other. It doesn't matter which school they attended, only how good their ideas
 are. They are playing on an even playing field. Anyone can be a web developer!
 The same can happen with research and researchers.
 
-## Technological Foundations of Research Publication
+# Technological Foundations of Research Publication
 
 We live in a different time now than when Sir Isaac Newton was around---a time
 in which we can take advantage of [multiple discovery] and push forward
@@ -955,7 +955,7 @@ education, but it is coming. *Research will be disrupted.*
 So what is truly required for research to be published? What is research made
 of, that when you took it away it would cease being research?
 
-### A Closer Look at 17th Century Tech
+## A Closer Look at 17th Century Tech
 
 To understand how to move forward, we must look back to the past. Let's take a look
 at the technology that was available for scientific publications during the
@@ -980,7 +980,7 @@ characters in them.
   <figcaption class="small"><b property="schema:name dc:title">Movable type in a composing stick</b>, by <span property="cc:attributionName">Willi Heidelbach</span>, licensed under a <a href="http://creativecommons.org/licenses/by-sa/3.0/" rel="license" property="cc:license"><abbr title="Creative Commons Attribution-Share Alike 3.0 Unported">CC-BY-SA</abbr> license</a>.  <span class="icon-cc"></span><span class="icon-cc-by"></span><span class="icon-cc-sa"></span></figcaption>
 </figure>
 
-### Research Cases: A Proposal for the Future
+## Research Cases: A Proposal for the Future
 
 Research begets knowledge. Just as Gutenberg found a way to break down a page
 of text into movable type, we need to break research itself down into little
@@ -1004,7 +1004,7 @@ citizen involvement? I don't see it yet. Kettering is also quoted as saying,
 the old ones." Research objects are definitely better than the venerable
 research paper, but they are still as closed-minded.
 
-## Freedom
+# Freedom
 
 Do I think that these ideas will be widely accepted by professional research
 community? Probably about as much as telling a community of professional
@@ -1033,13 +1033,13 @@ transitional, and that the future of research lies in open, [domain-specific]
 research systems.
 {: .conclusion }
 
-## End Notes
+# End Notes
 {:.no_toc}
 
 1. Footnotes
 {:footnotes}
 
-## Additional Resources
+# Additional Resources
 {:.no_toc}
 
 * [The Coming of the Book: The Impact of Printing 1450--1800][febvre], by Lucien Febvre and Henri-Jean Martin. 

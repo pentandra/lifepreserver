@@ -28,7 +28,7 @@ Cases](http://researchcases.org).
 
 ---
 
-## Motives of Correspondence
+# Motives of Correspondence
 
 The [Republic of Letters] was an international network of collaborators that
 existed during the <span class="oldstyle">17</span>th and <span
@@ -75,7 +75,7 @@ course of his life. Leeuwenhoek is widely regarded as an amateur, and I believe
 that he would appreciate that designation, because he researched to satisfy his
 curiosity---he researched for the love of it.
 
-### Publish or Perish
+## Publish or Perish
 
 For the last <span class="oldstyle">350</span> or so years we have relied on
 journals for the dissemination of scholarly news. Yet journals were only a
@@ -159,7 +159,7 @@ Where has this led us?
 
 Is this what we want? I don't think so.
 
-## Research Cases
+# Research Cases
 
 Let's step back a bit. The Republic of Letters was an amazing success. What can
 we learn from those early days of scientific correspondence?
@@ -250,7 +250,7 @@ be part of the future of research:
 We invite anyone interested [to participate](http://researchcases.org "Help out with Research Cases").
 {: .conclusion }
 
-## Notes
+# Notes
 
 [^codrington]: 
 
