@@ -21,7 +21,7 @@ Class.new(Nanoc::Filter) do
         f.write(content)
         f.flush
 
-        Open3.popen2e("context", "--mode=#{mode}", f.path, chdir: dir) do |_stdin, output, thread|
+        Open3.popen2e("context", "--nonstopmode", "--mode=#{mode}", f.path, chdir: dir) do |_stdin, output, thread|
           status = thread.value
 
           unless status.success?
