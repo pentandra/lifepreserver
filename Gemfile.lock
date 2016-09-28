@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf.git
-  revision: e46839c0fffa2b53b50e92cb338c472e2512db65
+  revision: 2f54dd5cb62ac44f2df059f1cdd6aff2c8b713b4
   branch: develop
   specs:
     rdf (2.1.0)
@@ -167,11 +167,11 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
     mini_portile2 (2.1.0)
-    minitest (5.9.0)
+    minitest (5.9.1)
     msgpack (1.0.0)
     multi_json (1.12.1)
     multi_xml (0.5.5)
-    nanoc (4.3.2)
+    nanoc (4.3.3)
       cri (~> 2.3)
       hamster (~> 3.0)
       ref (~> 2.0)
