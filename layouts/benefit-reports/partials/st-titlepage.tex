@@ -1,0 +1,48 @@
+\defineviewerlayer
+  [forprinter]
+  [printable=yes,state=stop]
+
+\definelayer
+  [logo]
+  [
+    lefttop,
+    x=\dimexpr(\backspace - 10pt)\relax,
+    y=\topspace,
+  ]
+
+\definelayer[monochrome]
+
+\definemakeup
+  [titlepage]
+  [
+    before=\setups{titlepage:setups},
+  ]
+
+\startsetups titlepage:setups
+  \setupbackgrounds[page][background={color,logo,foreground,monochrome},backgroundcolor=pentandrabrown]
+\stopsetups
+
+\starttext
+
+\starttitlepagemakeup
+
+\setlayer[logo]{\externalfigure[<%= Pathname.new(@items['/assets/images/pentandra-logotype-reverse.pdf'][:filename]).realpath %>]}
+
+\startcolor[white]
+{\bfd \setupinterlinespace Annual Benefit Corporation Report\par\blank[line]}
+{\bfc <%= /(?<fiscal_year>\d{4})/.match(@item.identifier) %>}
+\stopcolor
+
+\startviewerlayer[forprinter]
+
+\setlayer[logo]{\externalfigure[<%= Pathname.new(@items['/assets/images/pentandra-logotype.pdf'][:filename]).realpath %>]}
+
+\setlayer[monochrome]{\framed[frame=off,width=\paperwidth,height=\paperheight,background={color,logo},backgroundcolor=white]{}}
+
+\setlayer[monochrome]{\framed[frame=off,align=right,top=\vss,bottom=\vss,loffset=\backspace,width=\dimexpr(\backspace+\textwidth),height=\paperheight]{{\bfd \setupinterlinespace Annual Benefit Corporation Report\par\blank[line]}{\bfc <%= /(?<fiscal_year>\d{4})/.match(@item.identifier) %>}}}
+
+\stopviewerlayer
+
+\stoptitlepagemakeup
+
+\stoptext

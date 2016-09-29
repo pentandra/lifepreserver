@@ -1,0 +1,21 @@
+\setuplist[chapter]
+          [
+            pagenumber=no,
+            style=\bfb,
+            alternative=a,
+          ]
+
+\setuplist[section]
+          [
+            pagenumber=no,
+            alternative=d,
+            interaction=sectionnumber,
+          ]
+          
+\setupcombinedlist[content][list={chapter}]
+
+\starttext
+
+\completecontent
+
+\stoptext
