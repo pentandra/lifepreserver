@@ -165,7 +165,7 @@ description: Specifications, mostly ontologies, that we are working on, at vario
 
         <dl>
 
-          <% items_with_tag('Scholarly Commons', sorted_blog_posts).each do |post| %>
+          <% items_with_tag('Scholarly Commons', published_blog_posts).each do |post| %>
             <dt><%= link_to_id(post.identifier, title: "Read entire blog post") %></dt>
             <dd><%= post[:description] %></dd>
           <% end %>
