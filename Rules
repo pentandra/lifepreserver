@@ -182,13 +182,12 @@ layout '/specifications/vocabulary.*', :rdf_distiller, format: :html
 
 compile %r{\A/company/benefit-reports/\d{4}/index\.md} do
   filter :erb, trim_mode: '>'
-  filter :kramdown, @config[:kramdown]
-  #filter :pandoc, args: [
-    #{ from: :markdown, to: :html5 },
-    #{ base_header_level: 2 },
-    #:section_divs,
-    #:smart
-  #]
+  filter :pandoc, args: [
+    { from: :markdown, to: :html5 },
+    { base_header_level: 2 },
+    :section_divs,
+    :smart
+  ]
   filter :spellchecker unless @config[:production]
   layout '/benefit-reports/default.*'
   filter :rubypantsunicode
