@@ -50,23 +50,23 @@ Class.new(Nanoc::Filter) do
 
   # http://rubular.com/r/aRKvVMu34O
   def absolutify_css(content, params)
-    type = params.fetch(:type)
+    form = params.fetch(:form, :path)
 
     content.gsub(/url\((?<quote>['"]?)(?<path>\/(?:[^\/].*?)?)\k<quote>\)/) do
       quote = Regexp.last_match(:quote)
       path = Regexp.last_match(:path)
-      'url(' + quote + absolute_path_to(path, type) + quote + ')'
+      'url(' + quote + absolute_path_to(path, form) + quote + ')'
     end
   end
 
   # http://rubular.com/r/l3x8jlXDCl
   def absolutify_context(content, params)
-    type = params.fetch(:type)
+    form = params.fetch(:form, :uri)
 
     content.gsub(/\\useURL\s*(?<identifier>\[.*?\]){1}\s*\[(?<target>.*?)\]/) do
       identifier = Regexp.last_match(:identifier)
       target = Regexp.last_match(:target)
-      '\useURL' + identifier + '[' + absolute_path_to(target, type) + ']'
+      '\useURL' + identifier + '[' + absolute_path_to(target, form) + ']'
     end
   end
 
@@ -74,6 +74,7 @@ Class.new(Nanoc::Filter) do
     selectors  = params.fetch(:select, SELECTORS)
     namespaces = params.fetch(:namespaces, {})
     type       = params.fetch(:type)
+    form       = params.fetch(:form, :path)
 
     require 'nokogiri'
     case type
@@ -90,10 +91,10 @@ Class.new(Nanoc::Filter) do
       content = content.sub(%r{(<html[^>]+)xmlns="http://www.w3.org/1999/xhtml"}, '\1')
     end
 
-    nokogiri_process(content, selectors, namespaces, klass, type)
+    nokogiri_process(content, selectors, namespaces, klass, type, form)
   end
 
-  def nokogiri_process(content, selectors, namespaces, klass, type)
+  def nokogiri_process(content, selectors, namespaces, klass, type, form)
     # Ensure that all prefixes are strings
     namespaces = namespaces.reduce({}) { |new, (prefix, uri)| new.merge(prefix.to_s => uri) }
 
@@ -101,23 +102,22 @@ Class.new(Nanoc::Filter) do
     selectors.map { |sel| "descendant-or-self::#{sel}" }.each do |selector|
       doc.xpath(selector, namespaces).each do |node|
         if node.name == 'comment'
-          nokogiri_process_comment(node, doc, selectors, namespaces, klass, type)
+          nokogiri_process_comment(node, doc, selectors, namespaces, klass, type, form)
         elsif path_is_absolutifiable?(node.content)
-          puts node.inspect
-          node.content = absolute_path_to(node.content, type)
+          node.content = absolute_path_to(node.content, form)
         end
       end
     end
     doc.send("to_#{type}")
   end
 
-  def nokogiri_process_comment(node, doc, selectors, namespaces, klass, type)
+  def nokogiri_process_comment(node, doc, selectors, namespaces, klass, type, form)
     content = node.content.dup.sub(%r{^(\s*\[.+?\]>\s*)(.+?)(\s*<!\[endif\])}m) do |_m|
-      beginning = Regexp.last_match[1]
-      body = Regexp.last_match[2]
-      ending = Regexp.last_match[3]
+      beginning = Regexp.last_match(1)
+      body = Regexp.last_match(2)
+      ending = Regexp.last_match(3)
 
-      beginning + nokogiri_process(body, selectors, namespaces, klass, type) + ending
+      beginning + nokogiri_process(body, selectors, namespaces, klass, type, form) + ending
     end
 
     node.replace(Nokogiri::XML::Comment.new(doc, content))
@@ -127,11 +127,11 @@ Class.new(Nanoc::Filter) do
     !s.include?('://'.freeze)
   end
 
-  def absolute_path_to(target, type = :path)
+  def absolute_path_to(target, form = :path)
     abs_path = target.is_a?(String) ? target : target.path
     abs_path = unstack(@item_rep.path, abs_path)
 
-    if type == :uri
+    if form == :uri
       abs_path = @config[:base_url] + abs_path
     end
 

@@ -201,7 +201,7 @@ compile %r{\A/company/benefit-reports/(\d{4})/index\.md}, rep: :pdf do |fiscal_y
     { from: :markdown, to: :context },
     :chapters
   ]
-  filter :absolutify_paths, type: :context, form: :uri
+  filter :absolutify_paths, type: :context
   layout '/benefit-reports/report.*'
   filter :context2pdf, mode: @config[:production] ? "publish" : "draft", debug: true
   write File.dirname(item.identifier.to_s) + "/UT_Pentandra_report_#{fiscal_year}.pdf"
