@@ -180,7 +180,7 @@ layout '/specifications/vocabulary.*', :rdf_distiller, format: :html
 
 # Company
 
-compile %r{\A/company/benefit-reports/\d{4}/index\.md} do
+compile %r{/company/benefit-reports/\d{4}/index\.md} do
   filter :erb, trim_mode: '>'
   filter :pandoc, args: [
     { from: :markdown, to: :html5 },
@@ -195,7 +195,7 @@ compile %r{\A/company/benefit-reports/\d{4}/index\.md} do
   filter :html5small if @config[:production]
 end
 
-compile %r{\A/company/benefit-reports/(\d{4})/index\.md}, rep: :pdf do |fiscal_year, _|
+compile %r{/company/benefit-reports/(\d{4})/index\.md}, rep: :pdf do |fiscal_year, _|
   filter :erb
   filter :pandoc, args: [
     { from: :markdown, to: :context },
