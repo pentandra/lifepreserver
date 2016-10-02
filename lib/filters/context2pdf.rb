@@ -16,6 +16,8 @@ Class.new(Nanoc::Filter) do
       return
     end
 
+    odebug(content) if debug
+
     Dir.mktmpdir('nanoc-context') do |dir|
       File.open("#{dir}/document.tex", "w+") do |f|
         f.write(content)
