@@ -1,12 +1,13 @@
-require 'tmpdir'
-require 'open3'
-require 'fileutils'
-
 Class.new(Nanoc::Filter) do
   identifier :context2pdf
   type :text => :binary
 
   def run(content, params = {})
+
+    require 'tmpdir'
+    require 'open3'
+    require 'fileutils'
+
     debug = params.fetch(:debug, false)
     mode = params.fetch(:mode, :draft)
     trackers = params.fetch(:trackers, [])
