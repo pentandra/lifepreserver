@@ -59,11 +59,11 @@ Class.new(Nanoc::Filter) do
     end
   end
 
-  # http://rubular.com/r/l3x8jlXDCl
+  # http://rubular.com/r/GSkMfZLcyk
   def absolutify_context(content, params)
     form = params.fetch(:form, :uri)
 
-    content.gsub(/\\useURL\s*(?<identifier>\[.*?\]){1}\s*\[(?<target>.*?)\]/) do
+    content.gsub(/\\useURL\s*(?<identifier>\[.*?\]){1}\s*\[(?<target>\/(?:[^\/].*?)?)\]/) do |match|
       identifier = Regexp.last_match(:identifier)
       target = Regexp.last_match(:target)
       '\useURL' + identifier + '[' + absolute_path_to(target, form) + ']'
