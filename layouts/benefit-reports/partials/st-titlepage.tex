@@ -29,7 +29,7 @@
 
 \startcolor[white]
 {\bfd \setupinterlinespace Annual Benefit Corporation Report\par\blank[line]}
-{\bfc <%= /(?<fiscal_year>\d{4})/.match(@item.identifier) %>}
+{\bfc <%= fiscal_year %>}
 \stopcolor
 
 \startviewerlayer[forprinter]
@@ -38,7 +38,7 @@
 
 \setlayer[monochrome]{\framed[frame=off,width=\paperwidth,height=\paperheight,background={color,logo},backgroundcolor=white]{}}
 
-\setlayer[monochrome]{\framed[frame=off,align=right,top=\vss,bottom=\vss,loffset=\backspace,width=\dimexpr(\backspace+\textwidth),height=\paperheight]{{\bfd \setupinterlinespace Annual Benefit Corporation Report\par\blank[line]}{\bfc <%= /(?<fiscal_year>\d{4})/.match(@item.identifier) %>}}}
+\setlayer[monochrome]{\framed[frame=off,align=right,top=\vss,bottom=\vss,loffset=\backspace,width=\dimexpr(\backspace+\textwidth),height=\paperheight]{{\bfd \setupinterlinespace Annual Benefit Corporation Report\par\blank[line]}{\bfc <%= fiscal_year %>}}}
 
 \stopviewerlayer
 

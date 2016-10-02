@@ -20,6 +20,10 @@ module LifePreserver
       end
     end
 
+    def fiscal_year
+      /(?<fiscal_year>\d{4})/.match(@item.identifier)
+    end
+
   end
 
 end
