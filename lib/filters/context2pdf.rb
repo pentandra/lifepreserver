@@ -8,7 +8,7 @@ Class.new(Nanoc::Filter) do
 
   def run(content, params = {})
     debug = params.fetch(:debug, false)
-    mode = params.fetch(:mode, "draft")
+    mode = params.fetch(:mode, :draft)
 
     unless system('which', 'context', out: '/dev/null')
 			warn("Warning: `context` not found; PDF generation disabled.")
