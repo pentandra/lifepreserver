@@ -63,10 +63,10 @@ Class.new(Nanoc::Filter) do
   def absolutify_context(content, params)
     form = params.fetch(:form, :uri)
 
-    content.gsub(/\\useURL\s*(?<id>\[.*?\]){1}\s*\[(?<target>.*?)\]/) do
-      id = Regexp.last_match(:identifier)
+    content.gsub(/\\useURL\s*(?<identifier>\[.*?\]){1}\s*\[(?<target>.*?)\]/) do
+      identifier = Regexp.last_match(:identifier)
       target = Regexp.last_match(:target)
-      '\useURL' + id + '[' + absolute_path_to(target, form) + ']'
+      '\useURL' + identifier + '[' + absolute_path_to(target, form) + ']'
     end
   end
 
