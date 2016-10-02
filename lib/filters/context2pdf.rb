@@ -9,6 +9,7 @@ Class.new(Nanoc::Filter) do
   def run(content, params = {})
     debug = params.fetch(:debug, false)
     mode = params.fetch(:mode, :draft)
+    trackers = params.fetch(:trackers, [])
 
     unless system('which', 'context', out: '/dev/null')
 			warn("Warning: `context` not found; PDF generation disabled.")
@@ -23,7 +24,7 @@ Class.new(Nanoc::Filter) do
         f.write(content)
         f.flush
 
-        Open3.popen2e("context", "--nonstopmode", "--mode=#{mode}", f.path, chdir: dir) do |_stdin, output, thread|
+        Open3.popen2e("context", "--nonstopmode", "--mode=#{mode}", "--trackers=#{trackers.join(',')}", f.path, chdir: dir) do |_stdin, output, thread|
           status = thread.value
 
           unless status.success?
