@@ -4,7 +4,7 @@ module LifePreserver
 
     include Filtering
 
-    def absolutify(item_rep, content)
+    def absolutify_links(item_rep, content)
       simple_filter(item_rep, content, :absolutify_paths, type: :html, form: :uri)
     end
 
