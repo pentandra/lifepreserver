@@ -24,18 +24,42 @@
     expansion=quality,
   ]
 
-\setupalign[hz,hanging]
+\starttypescript [sans] [functionpro]
+  \definefontsynonym [FunctionPro-Book]        [name:functionprobook]
+  \definefontsynonym [FunctionPro-Bold]        [name:functionprobold]
+  \definefontsynonym [FunctionPro-Oblique]     [name:functionprobookoblique]
+  \definefontsynonym [FunctionPro-BoldOblique] [name:functionproboldoblique]
+\stoptypescript
+
+\starttypescript [sans] [functionpro]
+  \definefontsynonym [Sans]            [FunctionPro-Book]        [features=default]
+  \definefontsynonym [SansBold]        [FunctionPro-Bold]        [features=default]
+  \definefontsynonym [SansSlanted]     [FunctionPro-Oblique]     [features=default]
+  \definefontsynonym [SansBoldSlanted] [FunctionPro-BoldOblique] [features=default]
+  \definefontsynonym [SansItalic]      [SansSlanted]             [features=default]
+  \definefontsynonym [SansBoldItalic]  [SansBoldSlanted]         [features=default]
+\stoptypescript
+
+\definetypeface[functionpro][rm][sans][functionpro][default]
+\definetypeface[functionpro][ss][sans][functionpro][default]
 
 \setupbodyfont
-  [lato, 10pt]
+  [functionpro,ss]
+
+\setupbodyfontenvironment
+  [default]
+  [em=italic]
+
+\setupalign[hz,hanging]
 
 \setupheads
-  [alternative=margin]
+  [alternative=inmargin]
 
 \setupheadertexts
   [{\it <%= @item[:title] %>}][chapter]
 
-\setuphead[chapter][header=nomarking]
+\setupexternalfigures
+  [location=global,directory={<%= Pathname.new(@item[:filename]).realpath.dirname %>, <%= Pathname.new('content/assets/images/').realpath %>}]
 
 \definecolor[pentandrabrown][h=544233]
 \definecolor[pentandralightbrown][h=B19882]
@@ -63,10 +87,6 @@
     align=middle,
   ]
 
-\setupbodyfontenvironment
-  [default]
-  [em=italic]
-
 \setupitemize[inmargin,packed,broad]
 
 \setupdescriptions
@@ -92,13 +112,32 @@
 \setupinteraction
   [
     state=start,
-%    focus=standard,
+    focus=standard,
     title={<%= @item[:title] %>},
     author={<%= company[:full_name] %>},
     subtitle={<%= @item[:description] %>},
-%    color=blue,
-%    contrastcolor=blue,
+    style=normal,
+    color=pentandrared,
+    contrastcolor=pentandrared,
   ]
+
+\setuphead[chapter][style=\tfd\cap,header=nomarking]
+
+\setuplist[chapter]
+          [
+            pagenumber=no,
+            style=\tfb,
+            alternative=a,
+          ]
+
+\setuplist[section]
+          [
+            pagenumber=no,
+            alternative=d,
+            interaction=sectionnumber,
+          ]
+
+\setupcombinedlist[content][list={chapter}]
 
 \setupnotation
   [footnote]
@@ -106,47 +145,47 @@
     numbercommand=\cap\bf,
   ]
 
-\defineoverlay
-  [draftnotice]
-  [
-    {\framed[
-              frame=off,
-              foregroundcolor=middlegray,
-            ]
-            {\scale[
-                     sx=4,
-                     sy=4,
-                   ]
-                   {\rotate[rotation=90.0]{\cap{Draft Benefit Report [\currentdate[year,--,mm,--,dd]]}}}%
-            }%
-    }%
-  ]
+%\defineoverlay
+  %[draftnotice]
+  %[
+    %{\framed[
+              %frame=off,
+              %foregroundcolor=middlegray,
+            %]
+            %{\scale[
+                     %sx=4,
+                     %sy=4,
+                   %]
+                   %{\rotate[rotation=90.0]{\cap{Draft Benefit Report [\currentdate[year,--,mm,--,dd]]}}}%
+            %}%
+    %}%
+  %]
 
-\definelayer
-  [panel]
-  [
-    x=0pt,
-    y=0pt,
-    width=\paperwidth,
-    height=\paperheight,
-    state=repeat,
-  ]
+%\definelayer
+  %[panel]
+  %[
+    %x=0pt,
+    %y=0pt,
+    %width=\paperwidth,
+    %height=\paperheight,
+    %state=repeat,
+  %]
 
-\doifnotmode
-  {publish}
-  {
-    \setlayer
-      [panel]
-      {\framed[
-                frame=off,
-                width=\dimexpr\backspace-\leftmarginwidth-\leftmargindistance\relax,
-                height=\paperheight,
-                background=draftnotice,
-              ]
-              {}%
-      }%
-  }
+%\doifnotmode
+  %{publish}
+  %{
+    %\setlayer
+      %[panel]
+      %{\framed[
+                %frame=off,
+                %width=\dimexpr\backspace-\leftmarginwidth-\leftmargindistance\relax,
+                %height=\paperheight,
+                %background=draftnotice,
+              %]
+              %{}%
+      %}%
+  %}
 
-\setupbackgrounds
-  [paper]
-  [background=panel]
+%\setupbackgrounds
+  %[paper]
+  %[background=panel]

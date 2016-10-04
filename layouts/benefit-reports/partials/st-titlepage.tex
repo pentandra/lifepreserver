@@ -5,7 +5,7 @@
 \definelayer
   [logo]
   [
-    x=\dimexpr(\backspace - 10pt)\relax,
+    x=\dimexpr(\backspace - 10pt)\relax, % to assure that the logo lines up properly
     y=\topspace,
   ]
 
@@ -25,20 +25,20 @@
 
 \starttitlepagemakeup
 
-\setlayer[logo]{\externalfigure[<%= Pathname.new(@items['/assets/images/pentandra-logotype-reverse.pdf'][:filename]).realpath %>]}
+\setlayer[logo]{\externalfigure[pentandra-logotype-reverse.pdf]}
 
 \startcolor[white]
-{\bfd \setupinterlinespace Annual Benefit Corporation Report\par\blank[line]}
+{\bfd \setupinterlinespace Annual\\ Benefit\\ Corporation\\ Report\par\blank[line]}
 {\bfc <%= fiscal_year %>}
 \stopcolor
 
 \startviewerlayer[forprinter]
 
-\setlayer[logo]{\externalfigure[<%= Pathname.new(@items['/assets/images/pentandra-logotype.pdf'][:filename]).realpath %>]}
+\setlayer[logo]{\externalfigure[pentandra-logotype.pdf]}
 
 \setlayer[monochrome]{\framed[frame=off,width=\paperwidth,height=\paperheight,background={color,logo},backgroundcolor=white]{}}
 
-\setlayer[monochrome]{\framed[frame=off,align=right,top=\vss,bottom=\vss,loffset=\backspace,width=\dimexpr(\backspace+\textwidth),height=\paperheight]{{\bfd \setupinterlinespace Annual Benefit Corporation Report\par\blank[line]}{\bfc <%= fiscal_year %>}}}
+\setlayer[monochrome]{\framed[frame=off,align=right,top=\vss,bottom=\vss,loffset=\backspace,width=\dimexpr(\backspace+\textwidth),height=\paperheight]{{\bfd \setupinterlinespace Annual\\ Benefit\\ Corporation\\ Report\par\blank[line]}{\bfc <%= fiscal_year %>}}}
 
 \stopviewerlayer
 
