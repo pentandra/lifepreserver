@@ -1,0 +1,191 @@
+\setuppublications[alternative=apa]
+
+\setuppapersize[letter]
+
+%\showframe
+%\showgrid
+%\showsetups
+
+\setuplayout        
+  [
+    height=650pt,
+    footerdistance=2pt,
+    headerdistance=2pt,
+    backspace=200pt,
+    width=350pt,
+    grid=yes,
+  ]
+
+\definefontfeature
+  [default]
+  [default]
+  [
+    protrusion=quality,
+    expansion=quality,
+  ]
+
+\starttypescript [sans] [functionpro]
+  \definefontsynonym [FunctionPro-Book]        [name:functionprobook]
+  \definefontsynonym [FunctionPro-Bold]        [name:functionprobold]
+  \definefontsynonym [FunctionPro-Oblique]     [name:functionprobookoblique]
+  \definefontsynonym [FunctionPro-BoldOblique] [name:functionproboldoblique]
+\stoptypescript
+
+\starttypescript [sans] [functionpro]
+  \definefontsynonym [Sans]            [FunctionPro-Book]        [features=default]
+  \definefontsynonym [SansBold]        [FunctionPro-Bold]        [features=default]
+  \definefontsynonym [SansSlanted]     [FunctionPro-Oblique]     [features=default]
+  \definefontsynonym [SansBoldSlanted] [FunctionPro-BoldOblique] [features=default]
+  \definefontsynonym [SansItalic]      [SansSlanted]             [features=default]
+  \definefontsynonym [SansBoldItalic]  [SansBoldSlanted]         [features=default]
+\stoptypescript
+
+\definetypeface[functionpro][rm][sans][functionpro][default]
+\definetypeface[functionpro][ss][sans][functionpro][default]
+
+\setupbodyfont
+  [functionpro,ss]
+
+\setupbodyfontenvironment
+  [default]
+  [em=italic]
+
+\setupalign[hz,hanging]
+
+\setupheads
+  [alternative=inmargin]
+
+\setupheadertexts
+  [{\it <%= @item[:title] %>}][chapter]
+
+\setupexternalfigures
+  [location=global,directory={<%= Pathname.new(@item[:filename]).realpath.dirname %>, <%= Pathname.new('content/assets/images/').realpath %>}]
+
+\definecolor[pentandrabrown][h=544233]
+\definecolor[pentandralightbrown][h=B19882]
+\definecolor[pentandradarkbrown][h=3A220E]
+\definecolor[pentandrared][h=DB1111]
+\definecolor[pentandrasalmon][h=fc804e]
+\definecolor[pentandrapurple][h=bca8fc]
+
+\setupcolors
+  [textcolor=pentandradarkbrown]
+
+\setuppagenumbering 
+  [location=marginedge,style=slanted]
+
+\startsectionblockenvironment[frontpart]
+\setuppagenumbering[location=]
+\stopsectionblockenvironment
+
+\setupwhitespace[line]
+%\setupindenting[yes,small]
+
+\setupcaptions
+  [
+    minwidth=\textwidth,
+    align=middle,
+  ]
+
+\setupitemize[inmargin,packed,broad]
+
+\setupdescriptions
+  [
+    headstyle=bold,
+    alternative=inmargin,
+    headcommand=\rightaligned,
+  ]
+
+\definesynonyms[abbreviation][abbreviations][\infull]
+\setupsynonyms[abbreviation]
+  [
+    textstyle=normal,
+    synonymstyle=\cap\bf,
+  ]
+
+\def\href#1#2{\useURL[#2][{#2}][][{#1}]\goto{\url[#2]}[url(#1)]}
+\def\ahref#1{\color[linkcolor]{\ttx \href{#1}{#1}}}
+\def\httpahref#1{\color[linkcolor]{\ttx \href{http://#1}{#1}}}
+\def\mailto#1{\useURL[#1][mailto:#1][][#1]\from[{#1}]}
+\def\MailTo#1#2{\useURL[#1][mailto:#1][][#2]\from[{#1}]}
+
+\setupinteraction
+  [
+    state=start,
+    focus=standard,
+    title={<%= @item[:title] %>},
+    author={<%= company[:full_name] %>},
+    subtitle={<%= @item[:description] %>},
+    style=normal,
+    color=pentandrared,
+    contrastcolor=pentandrared,
+  ]
+
+\setuphead[chapter][style=\tfd\cap,header=nomarking]
+
+\setuplist[chapter]
+          [
+            pagenumber=no,
+            style=\tfb,
+            alternative=a,
+          ]
+
+\setuplist[section]
+          [
+            pagenumber=no,
+            alternative=d,
+            interaction=sectionnumber,
+          ]
+
+\setupcombinedlist[content][list={chapter}]
+
+\setupnotation
+  [footnote]
+  [
+    numbercommand=\cap\bf,
+  ]
+
+%\defineoverlay
+  %[draftnotice]
+  %[
+    %{\framed[
+              %frame=off,
+              %foregroundcolor=middlegray,
+            %]
+            %{\scale[
+                     %sx=4,
+                     %sy=4,
+                   %]
+                   %{\rotate[rotation=90.0]{\cap{Draft Benefit Report [\currentdate[year,--,mm,--,dd]]}}}%
+            %}%
+    %}%
+  %]
+
+%\definelayer
+  %[panel]
+  %[
+    %x=0pt,
+    %y=0pt,
+    %width=\paperwidth,
+    %height=\paperheight,
+    %state=repeat,
+  %]
+
+%\doifnotmode
+  %{publish}
+  %{
+    %\setlayer
+      %[panel]
+      %{\framed[
+                %frame=off,
+                %width=\dimexpr\backspace-\leftmarginwidth-\leftmargindistance\relax,
+                %height=\paperheight,
+                %background=draftnotice,
+              %]
+              %{}%
+      %}%
+  %}
+
+%\setupbackgrounds
+  %[paper]
+  %[background=panel]

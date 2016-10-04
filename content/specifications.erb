@@ -19,7 +19,7 @@ description: Specifications, mostly ontologies, that we are working on, at vario
 
     </p>
 
-    <p class="bigger">Come be part of what we're doing!</p>
+    <p class="bigger">Come join us! We need you.</p>
     
   </div>
 </div>
@@ -49,7 +49,7 @@ description: Specifications, mostly ontologies, that we are working on, at vario
       <p>
         
         A term coined by <a
-          href="https://www.youtube.com/watch?v=_oz_rKjLtW4">Jeffrey
+          href="https://via.hypothes.is/http://jeffreyschnapp.com/wp-content/uploads/2011/06/HH_lectures_Schnapp_01.pdf">Jeffrey
           Schnapp</a>, <dfn id="def:knowledge-design">knowledge design</dfn> is
         the future of scholarship, where the process <em>is</em> the product.
 
@@ -57,12 +57,13 @@ description: Specifications, mostly ontologies, that we are working on, at vario
 
       <dl>
 
-        <dt><dfn id="def:design-cases">Design Cases</dfn></dt>
-        <dd>An evolution of <a href="https://en.wikipedia.org/wiki/Issue-Based_Information_System"><abbr title="Issue-Based Information System">IBIS</abbr></a>, design cases partition a design process into smaller pieces.</dd>
+        <%#<dt><dfn id="def:design-cases">Design Cases</dfn></dt>%>
+        <%#<dd>An evolution of <a href="https://en.wikipedia.org/wiki/Issue-Based_Information_System"><abbr title="Issue-Based Information System">IBIS</abbr></a>, design cases partition a design process into smaller pieces.</dd>%>
 
         <dt><dfn id="def:research-cases">Research Cases</dfn></dt>
-        <dd>Research cases take design cases a step further, </dd>
+        <dd>Research Cases are a way to partition research conceptually into cases, each case organized around a question (or some other sort of cognitive discordance). They are designed for iterative, real-time research publication, and encourage open collaboration and discourse throughout the research process.</dd>
         <dd><%= link_to_id("/specifications/knowledge-design/research-cases/index.*") %></dd>
+        <dd><a href="https://researchcases.org">researchcases.org</a></dd>
 
       </dl>
 
@@ -75,7 +76,20 @@ description: Specifications, mostly ontologies, that we are working on, at vario
 
       <h3 class="flush">Dynamic Machine Interfaces</h3>
 
-      <p>Ontologies that build on <abbr title="REpresentational State Transfer">REST</abbr> ideas for machine interfaces and interactions.</p>
+      <p>
+
+        We see the future of the Web made of clients that are more intelligent
+        than the servers with which they interact. We need ways for these
+        intelligent clients to uniformly interact, and we call these ways <dfn
+          id="def:dmi">dynamic machine interfaces</dfn>, to differentiate them
+        from traditional <i>application programming interfaces</i>. <abbr
+          title="Dynamic Machine Interface">DMI</abbr>s use ontologies that are
+        designed to function in the <a
+          href="https://en.wikipedia.org/wiki/Representational_state_transfer"><abbr
+            title="REpresentational State Transfer">REST</abbr></a>
+        architectural style for machine interfaces and interactions.
+
+      </p>
 
       <dl>
 
@@ -129,27 +143,36 @@ description: Specifications, mostly ontologies, that we are working on, at vario
 
       <p>
 
-        The Scholarly Commons is not a single platform or tool, but rather the
-        principles, best practices, interfaces and standards that should govern
-        the multidirectional flow of scholarly objects through all phases of
-        the research process from conception to dissemination.
+        The Scholarly Commons is not a website, nor a platform or organization,
+        but the convergence around a set of principles, standards, and best
+        practices that govern how research artifacts (narrative, code, data,
+        workflows, etc.) should be handled for maximum human and machine-based
+        access. The Scholarly Commons is not an incremental improvement of the
+        current system of scholarship and science, but a ground-up redesign of
+        the entire system, from every perspective.
 
       </p>
 
       <dl>
         <dt>Principles of the Scholarly Commons</dt>
-        <dd>A set of principles that express the substance of the Scholarly Commons, created by the <a href="https://www.force11.org/group/scholarly-commons-working-group"><abbr>FORCE11</abbr> Scholarly Commons Working Group</a>.</dd>
-
-        <dt>Our Own Thoughts about the Scholarly Commons</dt>
-        <dd>
-          <ul>
-            <% items_with_tag('Scholarly Commons', sorted_blog_posts).each do |post| %>
-              <li><%= link_to_id(post.identifier) %></li>
-            <% end %>
-          </ul>
-        </dd>
+        <dd>A set of principles that express the substance of the Scholarly Commons, created by the <a href="https://www.force11.org/group/scholarly-commons-working-group"><span class="oldstyle">FORCE11</span> Scholarly Commons Working Group</a>.</dd>
 
       </dl>
+
+      <section>
+
+        <h4>Some of our thoughts on the Scholarly Commons</h4>
+
+        <dl>
+
+          <% items_with_tag('Scholarly Commons', published_blog_posts).each do |post| %>
+            <dt><%= link_to_id(post.identifier, title: "Read entire blog post") %></dt>
+            <dd><%= post[:description] %></dd>
+          <% end %>
+
+        </dl>
+
+      </section>
 
     </div>
 
