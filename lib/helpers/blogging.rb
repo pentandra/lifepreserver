@@ -86,6 +86,10 @@ module LifePreserver
       return summary << %[<p class="readmore">#{link}</p>]
     end
 
+    def prepare_item_for_feed(item, summary: false)
+      absolutify_links(item, summary ? post_summary(item) : item.compiled_content)
+    end
+
     def article_id(article)
       article[:article_id] || md5(article[:title].to_slug)
     end
