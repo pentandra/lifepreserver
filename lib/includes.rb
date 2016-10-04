@@ -19,3 +19,4 @@ include LifePreserver::Tagging
 include LifePreserver::LinkTo
 include LifePreserver::Reporting
 include History
+include LifePreserver::Filtering
