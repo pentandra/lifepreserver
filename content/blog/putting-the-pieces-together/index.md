@@ -212,8 +212,8 @@ here's what I would say:
 The Scholarly Commons is _an agreement_ to come together and unite in matters
 of practice and governance to create a commons for the good of anyone involved
 in scholarly or scientific knowledge. The Scholarly Commons is also _an
-opportunity_ to make the world a better place by doing these things better than
-we have ever done them before.
+opportunity_ to make the world a better place by doing things better than they
+have ever been done before.
 
 {:.conclusion}
 
