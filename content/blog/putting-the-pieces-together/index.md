@@ -110,9 +110,9 @@ make knowledge itself more free and abundant.
 
 ## An agreement to unite
 
-I see what we're trying to accomplish with the _principles_ of the Scholarly
-Commons as similar to what we know of the circumstances surrounding the signing
-of the [Mayflower Compact]: people with significant differences (in this case
+What we're trying to accomplish with the Scholarly Commons has some striking
+similarities to what we know of the circumstances surrounding the signing of
+the [Mayflower Compact]: people with significant differences (in this case
 significant religious differences, in our case the differences are more
 diverse) coming together to carve out a new way of approaching life---a new way
 of living together. Something that they never had before experienced in any
@@ -120,7 +120,7 @@ place they had ever lived.
 
 <figure id="fig:the-mayflower-compact" class="img" property="schema:image" typeof="schema:ImageObject">
   <img alt="Passengers of the Mayflower signing the 'Mayflower Compact' including Carver, Winston, Alden, Myles Standish, Howland, Bradford, Allerton, and Fuller." src="The_Mayflower_Compact.jpg" />
-  <figcaption class="small">The signing of the Mayflower Compact resembles the journey we are on to converge upon the principles of the Scholarly Commons.</figcaption>
+  <figcaption class="small">The depiction in <i property="schema:title">Signing the Mayflower Compact 1620</i>, by <a href="https://en.wikipedia.org/wiki/Jean_Leon_Gerome_Ferris">Jean Leon Gerome Ferris</a>, resembles the journey we are on to converge upon the principles of the Scholarly Commons.</figcaption>
 </figure>
 
 The passengers of the Mayflower created the compact because there were those
