@@ -4,7 +4,7 @@ Class.new(Nanoc::Filter) do
 
   identifier :absolutify_paths
 
-  SELECTORS = ['*/@href', '*/@src', 'object/@data', 'param[@name="movie"]/@content', 'comment()'].freeze
+  SELECTORS ||= ['*/@href', '*/@src', 'object/@data', 'param[@name="movie"]/@content', 'comment()'].freeze
 
   # Absolutifies all paths in the given content, which can be HTML, XHTML, XML
   # or CSS. In HTML, all `href` and `src` attributes will be absolutified. In
