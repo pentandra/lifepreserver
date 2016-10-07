@@ -285,7 +285,7 @@ touch.
 # How can it be done?
 
 I'm going to step forward through time and back down to reality for a minute,
-and face this problem of diversity. Our diversity is an opportunity but it is
+and face this question of diversity. Our diversity is an opportunity but it is
 also a challenge. We are all spread around the globe and don't have the luxury
 of being stuck together in the cabin of a ship with the exigency of making a
 decision and the determination to not set foot on shore before doing so. And,
