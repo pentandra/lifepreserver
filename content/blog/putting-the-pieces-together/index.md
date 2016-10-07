@@ -171,7 +171,7 @@ self-organization to meet a critical need.[^gardiner]
 The agreement to come together and unite instead of doing it all separately and
 individually was such as simple thing, yet so far-reaching in its consequences.
 And it was good they did this, because they needed everyone that was able to
-help make it through that first winter.
+help make it through that first winter. They needed that unity to survive.
 
 ## Our great decision
 
