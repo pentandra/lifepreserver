@@ -64,22 +64,21 @@ them.
 One unworkshop that especially stood out to me, and apparently to [many other
 workshop attendees][april], was a workshop led by [Ravi Murugesan][ravi] about
 building a commons for scholarship in the Global South. Since I have never
-lived in the Global South and I'm an unaffiliated researcher (does that make me
-an <i>un</i>researcher?), I have a lot to learn about the challenges that
-professional researchers face day-by-day around the world (though I've heard
-great things about the widespread culture of Open Access (e.g. [SciELO]) in
-South America, and other similar initiatives happening around the world). It
-was an wonderfully mind-opening experience for me. I found out that there is a
-lot of leftover cruft from the colonialization of the world over the past
-couple hundred years by various cultures (mostly by the more developed
-countries of the [Global North]), and the effects of these experiences still
-linger and extend deeply into the researcher's life at the academy. Many are
-resentful and feel like the North is trying to push their own ways of doing
-things upon others, without them having a say in what is going on. For many
-researchers in the South, institutional funding is given predominantly to solve
-local problems, yet the ultimate prize is to have an article published in a
-Northern journal. All this inequity has lead to serious pressures and real
-problems for researchers of all kinds.
+lived in the Global South and I'm an unaffiliated researcher, I have a lot to
+learn about the challenges that professional researchers face day-by-day around
+the world (though I've heard great things about the widespread culture of Open
+Access (e.g. [SciELO]) in South America, and other similar initiatives
+happening around the world). It was an wonderfully mind-opening experience for
+me. I found out that there is a lot of leftover cruft from the colonialization
+of the world over the past couple hundred years by various cultures (mostly by
+the more developed countries of the [Global North]), and the effects of these
+experiences still linger and extend deeply into the researcher's life at the
+academy. Many are resentful and feel like the North is trying to push their own
+ways of doing things upon others, without them having a say in what is going
+on. For many researchers in the South, institutional funding is given
+predominantly to solve local problems, yet the ultimate prize is to have an
+article published in a Northern journal. All this inequity has lead to serious
+pressures and real problems for researchers of all kinds.
 
 Several of us on the steering committee thought it was a cool coincidence that
 this workshop so far has been Spanish themed. We went from Madrid to San Diego,
