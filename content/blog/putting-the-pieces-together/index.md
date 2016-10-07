@@ -190,10 +190,10 @@ Quite frankly, I don't think any of our current approaches have had the power
 to transform the current systems of scholarship. We need something more,
 something that is so amazing that it would transform the world, something that
 others will see and say, "That's awesome! Why don't we work like that?" I think
-of the words of Alexander Hamilton, more than <span class="oldstyle">160</span>
-years after the initial compact was signed on board the Mayflower, yet
-describing a situation that is eerily similar to that earlier situation, just
-on a much bigger scale.
+of the words of Alexander Hamilton in discussing the need for a new
+constitution for the same region, more than <span class="oldstyle">160</span>
+years after the initial compact was signed on board the Mayflower, describing a
+situation eerily similar to that earlier time, just on a much bigger scale.
 
 <figure id="fig:hamilton" class="bq grab">
   <blockquote>
