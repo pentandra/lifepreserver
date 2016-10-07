@@ -1,6 +1,7 @@
 ---
 title: Putting the Pieces Together
-description: A tense convolution of thoughts from many perspectives.
+description: >
+  A tense convolution of thoughts from many perspectives, and a great choice.
 kind: article
 author_name: Chris Chapman
 created_at: 2016-09-29
@@ -52,42 +53,48 @@ what mattered to them.
 # A _global_ commons?
 
 During this workshop there was a main track, which Jeroen Bosman and Bianca
-Kramer expertly put together to fulfill some of the original Helmsley grant
-requirements of _putting the pieces together_. At many points in the program
-there was also the opportunity for any of the participants to create an
-unworkshop session about any topic they wanted to discuss. I tried to bounce
-around these unworkshops and the main track, learning as much as I could. Good
-conversations were taking place at all of them.
+Kramer expertly put together, that was needed to fulfill some of the original
+Helmsley grant requirements of _putting the pieces of the Scholarly Commons
+together_. At many points in the program there was also the opportunity for any
+of the participants to create an unworkshop session about any topic they wanted
+to discuss. I tried to bounce around these unworkshops and the main track,
+learning as much as I could. Good conversations were taking place at all of
+them.
 
 One unworkshop that especially stood out to me, and apparently to [many other
 workshop attendees][april], was a workshop led by [Ravi Murugesan][ravi] about
-building a commons for scholarship in the Global South. I have never lived in
-the Global South, and although I've heard great things about the widespread
-culture of Open Access (e.g. [SciELO]) in South America, I have a lot to learn
-about the challenges that researchers face around the world. It was an
-wonderfully mind-opening experience for me. I found out that there is a lot of
-leftover cruft from the colonialization of the world over the past couple
-hundred years by the Global North, and this extends deeply into the
-professional researcher's life at the academy. Many are resentful and feel like
-the North is trying to push their own ways of doing things upon others, without
-them having a say in what is going on. For many researchers in the South, the
-ultimate prize is to have an article published in a Northern journal. And this
-inequity has lead to serious pressures and real problems for researchers of all
-kinds.
+building a commons for scholarship in the Global South. Since I have never
+lived in the Global South and I'm an unaffiliated researcher (does that make me
+an <i>un</i>researcher?), I have a lot to learn about the challenges that
+professional researchers face day-by-day around the world (though I've heard
+great things about the widespread culture of Open Access (e.g. [SciELO]) in
+South America, and other similar initiatives happening around the world). It
+was an wonderfully mind-opening experience for me. I found out that there is a
+lot of leftover cruft from the colonialization of the world over the past
+couple hundred years by various cultures (mostly by the more developed
+countries of the [Global North]), and the effects of these experiences still
+linger and extend deeply into the researcher's life at the academy. Many are
+resentful and feel like the North is trying to push their own ways of doing
+things upon others, without them having a say in what is going on. For many
+researchers in the South, institutional funding is given predominantly to solve
+local problems, yet the ultimate prize is to have an article published in a
+Northern journal. All this inequity has lead to serious pressures and real
+problems for researchers of all kinds.
 
-We, as a steering committee, thought it was a cool coincidence that this
-workshop so far has been Spanish themed. We went from Madrid to San Diego, and
-were able to use the colors of each city flag in designing the workshop logos,
-and it just worked. But looking at [the map above](#fig:journey-of-defining)
-from more of an _evil_ point of view, our journey from Madrid to San Diego
-could be thought of as a journey of _conquest_. Isn't this path the same path
-that [Juan Rodríguez Cabrillo][cabrillo] and [others][vizcaino] took as they
-claimed land for Spain? The difference is that we are not conquistadores and we
-are not trying to colonialize the world or create an [encomienda]
-system[^citizen_science] here! In fact what I want is just the opposite. I
-think there is stuff here from history from which we should learn, and not
-repeat, and opportunities to try to do things a different way. And I think that
-we have a fundamental opportunity here, and it is critical that we do it right.
+Several of us on the steering committee thought it was a cool coincidence that
+this workshop so far has been Spanish themed. We went from Madrid to San Diego,
+and were able to use the colors of each city flag in designing the workshop
+logos, and it just worked. But looking at [the map
+above](#fig:journey-of-defining) from more of an _evil_ point of view, our
+journey from Madrid to San Diego could be thought of as a journey of
+_conquest_. Isn't this path the same path that [Juan Rodríguez
+Cabrillo][cabrillo] and [others][vizcaino] took as they claimed land for Spain?
+The difference is that we are not conquistadores and we are not trying to
+create an [encomienda] system[^citizen_science] here! In fact what I want is
+just the opposite. I think there is stuff here from history from which we
+should learn, and not repeat, and opportunities exist to try to do things a
+different way. And I think that we have a fundamental opportunity here, and it
+is critical that we do it right.
 
 I want to put forward here an alternative approach to explaining of my point by
 using the history of an early colony that encountered some challenges similar
@@ -149,7 +156,7 @@ place they had ever lived.
   <figcaption class="small">The depiction in <i property="schema:title">Signing the Mayflower Compact 1620</i>, by <a href="https://en.wikipedia.org/wiki/Jean_Leon_Gerome_Ferris">Jean Leon Gerome Ferris</a>, resembles the journey we have undertaken to converge upon the principles of the Scholarly Commons.</figcaption>
 </figure>
 
-After setting off for the New World, this ground encountered difficulties that
+After setting off for the New World, this group encountered difficulties that
 pushed their arrival later than anticipated and with not enough supplies to
 finish the voyage to Virginia. They decided it would be prudent to stop
 earlier, off the coast of Cape Cod, Massachusetts. Once it was decided that
@@ -173,11 +180,16 @@ be thought most meet and convenient for the general good of the colony", and
 agreed to abide by the laws that would be created. A brilliant example of
 self-organization to meet a critical need.[^gardiner]
 
+The agreement to come together and unite instead of doing it all separately and
+individually was such as simple thing, yet so far-reaching in its consequences.
+And it was good they did this, because they needed everyone that was able to
+help make it through that first winter.
+
 ## Our great decision
 
 We also face a critical decision at this point in time. Our choice is not about
-winter survival in a cold bay in New England, but it could be thought as a new
-land or frontier, a place that we don't fully understand yet, but full of
+winter survival in a cold bay in New England, but it _could be thought_ as a
+new land or frontier, a place that we don't fully understand yet, but full of
 promise and potential. There is certainly a need for _better ordering_ and
 _preservation_, and plenty of _ends aforesaid_. We may ask ourselves, what's
 wrong with just going at this on our own? There is so much potential out there,
@@ -295,6 +307,7 @@ creating a commons for science and scholarship for the good of all mankind.
 [colonization]: <http://wikidiff.com/colonialization/colonization> "Colonization vs colonialization"
 [ravi]: <https://twitter.com/ravimurugesan> "Ravi on Twitter"
 [scielo]: <http://scielo.org/php/index.php> "Scientific Electronic Library Online"
+[Global North]: <https://en.wikipedia.org/wiki/North%E2%80%93South_divide> "North-South Divide on Wikipedia"
 
 [^citizen_science]:
 
