@@ -80,11 +80,11 @@ predominantly to solve local problems, yet the ultimate prize is to have an
 article published in a Northern journal. All this inequity has lead to serious
 pressures and real problems for researchers of all kinds.
 
-Several of us on the steering committee thought it was a cool coincidence that
-this workshop so far has been Spanish themed. We went from Madrid to San Diego,
-and were able to use the colors of each city flag in designing the workshop
-logos, and it just worked. But looking at [the map
-above](#fig:journey-of-defining) from more of an _evil_ point of view, our
+<span class="newthought">Several of us on the steering committee thought</span>
+it was a cool coincidence that this workshop so far has been Spanish themed. We
+went from Madrid to San Diego, and were able to use the colors of each city
+flag in designing the workshop logos, and it just worked. But looking at [the
+map above](#fig:journey-of-defining) from more of an _evil_ point of view, our
 journey from Madrid to San Diego could be thought of as a journey of
 _conquest_. Isn't this path the same path that [Juan Rodríguez
 Cabrillo][cabrillo] and [others][vizcaino] took as they claimed land for Spain?
@@ -235,15 +235,15 @@ establish a commons for scholarly and scientific research, or to continue doing
 things the way they have been done for so long, having some vague hope for
 positive change.
 
-I see the Scholarly Commons as one of the most wonderful opportunities that has
-ever presented itself to mankind. So much of what happens in our world is based
-upon the knowledge that is available, and if we can remove barriers to that
-knowledge, and open up the ability for people to interact with it more freely,
-it would disrupt the world and further _so many other important initiatives_.
-For all the good intentions of those of earlier times, they never had the
-technology to pull off something like a global commons of researchers, sharing
-as they go, almost instantaneously, the collective research of the world, ever
-expanding.
+<span class="newthought">I see the Scholarly Commons as</span> one of the most
+wonderful opportunities that has ever presented itself to mankind. So much of
+what happens in our world is based upon the knowledge that is available, and if
+we can remove barriers to that knowledge, and open up the ability for people to
+interact with it more freely, it would disrupt the world and further _so many
+other important initiatives_. For all the good intentions of those of earlier
+times, they never had the technology to pull off something like a global
+commons of researchers, sharing as they go, almost instantaneously, the
+collective research of the world, ever expanding.
 
 Now as April Hathcock has [so nicely articulated][april], we need _real
 conversation_ to take place to take advantage of this opportunity. We need to
