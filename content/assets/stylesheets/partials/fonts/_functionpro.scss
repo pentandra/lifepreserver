@@ -56,6 +56,17 @@
 }
 
 @font-face {
+    font-family: '$bold-oblique-font-family';
+    src: url('/fonts/FunctionPro-MediumOblique-webfont.eot');
+    src: url('/fonts/FunctionPro-MediumOblique-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/FunctionPro-MediumOblique-webfont.woff') format('woff'),
+         url('/fonts/FunctionPro-MediumOblique-webfont.ttf') format('truetype'),
+         url('/fonts/FunctionPro-MediumOblique-webfont.svg#FunctionProMediumItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: $special-font-family;
     src: url('/fonts/FunctionCaps-Book-webfont.eot');
     src: url('/fonts/FunctionCaps-Book-webfont.eot?#iefix') format('embedded-opentype'),
