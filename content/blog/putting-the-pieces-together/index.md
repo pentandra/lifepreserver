@@ -13,6 +13,7 @@ tags:
   - Connections
   - FORCE11
   - Opinionated
+has_media: true
 ---
 
 <figure id="fig:journey-of-defining" property="schema:sharedContent" class="img" resource="#journey_of_defining" typeof="schema:ImageObject">
@@ -50,34 +51,58 @@ what mattered to them.
 
 # A _global_ commons?
 
-We thought it was an cool coincidence that this workshop so far has been
-Spanish themed. We went from Madrid to San Diego, and were able to use the
-colors of each city flag in designing the workshop logos, and it just worked.
-However, in this I think there is stuff we can learn from history to not
-repeat, but try a different way. And I think this is a fundamental opportunity
-we have here, and we need to do it right.
+During this workshop there was a main track, which Jeroen Bosman and Bianca
+Kramer expertly put together to fulfill some of the original Helmsley grant
+requirements of _putting the pieces together_. At many points in the program
+there was also the opportunity for any of the participants to create an
+unworkshop session about any topic they wanted to discuss. I tried to bounce
+around these unworkshops and the main track, learning as much as I could. Good
+conversations were taking place at all of them.
 
-Looking at [the map](#fig:journey-of-defining) from more of an _evil_ point of
-view, our journey from Madrid to San Diego could be thought of as a journey of
-_conquest_. Isn't this path the same path that [Juan Rodríguez
-Cabrillo][cabrillo] and [others][vizcaino] took as they claimed land for Spain?
-The difference is that we are not conquistadores and we are not trying to
-create an [encomienda] system[^citizen_science] here! Far from it! 
+One unworkshop that especially stood out to me, and apparently to [many other
+workshop attendees][april], was a workshop led by [Ravi Murugesan][ravi] about
+building a commons for scholarship in the Global South. I have never lived in
+the Global South, and although I've heard great things about the widespread
+culture of Open Access (e.g. [SciELO]) in South America, I have a lot to learn
+about the challenges that researchers face around the world. It was an
+wonderfully mind-opening experience for me. I found out that there is a lot of
+leftover cruft from the colonialization of the world over the past couple
+hundred years by the Global North, and this extends deeply into the
+professional researcher's life at the academy. Many are resentful and feel like
+the North is trying to push their own ways of doing things upon others, without
+them having a say in what is going on. For many researchers in the South, the
+ultimate prize is to have an article published in a Northern journal. And this
+inequity has lead to serious pressures and real problems for researchers of all
+kinds.
 
-An alternative example of an early colony that has some similarities to what
-we're trying to accomplish here are what we refer to now in the United States
-as the Pilgrims. This colony actually sticks out in history because it did
-something no other colony had ever done before. The people from the old country
-came for a very different reason than most. They were not entrepreneurs or
-determined to conquer indigenous peoples, but were fleeing religious
-persecution. They wanted freedom to practice religion the way they believed.
-This change how they approached problems, and with much patience and
-determination they were able to develop relationships of mutual respect with
-the indigenous peoples. They learned from each other. They helped each other.
-They created a new culture together and had such an impact that in this area of
-the world we still celebrate this amazing achievement in our [Thanksgiving
-holiday][thanksgiving]. And although it wasn't perfect, they showed the world
-that what they did was possible.
+We, as a steering committee, thought it was a cool coincidence that this
+workshop so far has been Spanish themed. We went from Madrid to San Diego, and
+were able to use the colors of each city flag in designing the workshop logos,
+and it just worked. But looking at [the map above](#fig:journey-of-defining)
+from more of an _evil_ point of view, our journey from Madrid to San Diego
+could be thought of as a journey of _conquest_. Isn't this path the same path
+that [Juan Rodríguez Cabrillo][cabrillo] and [others][vizcaino] took as they
+claimed land for Spain? The difference is that we are not conquistadores and we
+are not trying to colonialize the world or create an [encomienda]
+system[^citizen_science] here! In fact what I want is just the opposite. I
+think there is stuff here from history from which we should learn, and not
+repeat, and opportunities to try to do things a different way. And I think that
+we have a fundamental opportunity here, and it is critical that we do it right.
+
+I want to put forward here an alternative approach to explaining of my point by
+using the history of an early colony that encountered some challenges similar
+to what we're facing at this time. This colony actually sticks out in history
+because it did something no other colony had ever done before. Many of the
+people in this company came for a very different reason than most. They were
+not entrepreneurs or conquistadores determined to conquer indigenous peoples,
+but were fleeing religious persecution. They came seeking freedom to practice
+religion the way they believed. This change how they approached problems, and
+with much patience and determination they were able to develop relationships of
+mutual respect with the indigenous peoples. They learned from each other. They
+helped each other. They created a new culture together and had such an impact
+that in this area of the world we still celebrate this amazing achievement in
+our [Thanksgiving holiday][thanksgiving]. And although it wasn't perfect, they
+showed the world that what they did was possible.
 
 Now what we're doing here is not religious in nature, but I do see similarities
 in the motivations and desires between the two. Many are stuck in a system
@@ -88,7 +113,8 @@ researchers have suffered as much as those early Christians, who sometimes gave
 up everything to follow their beliefs. But I see an opportunity here to do
 something that never has been done before, something that would improve the
 lives of everyone, and to do it for the right reasons. The Scholarly Commons
-would not only give more freedom to the the professional researchers, but would
+will not only give more freedom to the professional researchers, but will open
+up opportunities for many more people to become involved in knowledge work, and
 make knowledge itself more free and abundant.
 
 <figure id="fig:jefferson" class="bq grab">
@@ -120,36 +146,54 @@ place they had ever lived.
 
 <figure id="fig:the-mayflower-compact" class="img" property="schema:image" typeof="schema:ImageObject">
   <img alt="Passengers of the Mayflower signing the 'Mayflower Compact' including Carver, Winston, Alden, Myles Standish, Howland, Bradford, Allerton, and Fuller." src="The_Mayflower_Compact.jpg" />
-  <figcaption class="small">The depiction in <i property="schema:title">Signing the Mayflower Compact 1620</i>, by <a href="https://en.wikipedia.org/wiki/Jean_Leon_Gerome_Ferris">Jean Leon Gerome Ferris</a>, resembles the journey we are on to converge upon the principles of the Scholarly Commons.</figcaption>
+  <figcaption class="small">The depiction in <i property="schema:title">Signing the Mayflower Compact 1620</i>, by <a href="https://en.wikipedia.org/wiki/Jean_Leon_Gerome_Ferris">Jean Leon Gerome Ferris</a>, resembles the journey we have undertaken to converge upon the principles of the Scholarly Commons.</figcaption>
 </figure>
 
-The passengers of the Mayflower created the compact because there were those
-that said they "would use their own liberty; for none had power to command
-them."[^bradford] They were wanting to go it on their own, every man for
-himself. Others thought it would be better to cooperate and help each other. In
+After setting off for the New World, this ground encountered difficulties that
+pushed their arrival later than anticipated and with not enough supplies to
+finish the voyage to Virginia. They decided it would be prudent to stop
+earlier, off the coast of Cape Cod, Massachusetts. Once it was decided that
+they would not be headed to their previously agreed-upon destination, Virginia,
+several of the passengers and crew said that the original charter was null and
+void, and that they "would use their own liberty; for none had power to command
+them."[^bradford] They were wanting to go at it in the new place on their own,
+every man for himself. Others thought it would be better to cooperate and help
+each other, especially as they arrived in this cold place late in November. In
 the end, they (thankfully) all consented to the latter for the sake of order
 and survival, and, I think the opportunity to do something that very few of
 their predecessors had ever had the opportunity to do: deliberately coming
 together and _creating their own government_. Just think of it!
 
-It wasn't what was _in_ the document that mattered as much as the fact that the
-mere existence of the document witnessed of the processes that went in to
-producing it. _The processes_ defined the social contract. The document was
-just evidence of the contract, something to which those who agreed to abide by
-it could look to and remember back.
+The compact was simple enough. They covenanted to "combine ourselves together
+into a civil body politic; for better ordering, and preservation and
+furtherance of the ends aforesaid". These ends aforesaid, or the goals
+previously mentioned, were to undertake a voyage and to plant a new colony.
+They then made provision for the creation of laws "from time to time, as shall
+be thought most meet and convenient for the general good of the colony", and
+agreed to abide by the laws that would be created. A brilliant example of
+self-organization to meet a critical need.[^gardiner]
 
 ## Our great decision
 
-What's wrong with just going at this on our own? Why not just let things go as
-they have done, and hope that it all works out? Isn't the laissez-faire
-approach good enough? Why is it so important that we come together and build a
-commons?
+We also face a critical decision at this point in time. Our choice is not about
+winter survival in a cold bay in New England, but it could be thought as a new
+land or frontier, a place that we don't fully understand yet, but full of
+promise and potential. There is certainly a need for _better ordering_ and
+_preservation_, and plenty of _ends aforesaid_. We may ask ourselves, what's
+wrong with just going at this on our own? There is so much potential out there,
+and people and organizations are already staking out their ground! Why not just
+let things go as they have done up to this point in time, and hope that it all
+works out? Isn't the laissez-faire approach good enough? It has gotten us here!
+Why is it so important that we come together and build a commons?
 
 Quite frankly, I don't think any of our current approaches have had the power
 to transform the current systems of scholarship. We need something more,
 something that is so amazing that it would transform the world, something that
-others will see and say, "Why don't we work like that?" I think of the words of
-Alexander Hamilton, many years after these 
+others will see and say, "That's awesome! Why don't we work like that?" I think
+of the words of Alexander Hamilton, more than <span class="oldstyle">160</span>
+years after the initial compact was signed on board the Mayflower, yet
+describing a situation that is eerily similar to that earlier situation, just
+on a much bigger scale.
 
 <figure id="fig:hamilton" class="bq grab">
   <blockquote>
@@ -168,35 +212,47 @@ Alexander Hamilton, many years after these
 
     </p>
   </blockquote>
-  <figcaption>--- Alexander Hamilton, <cite>The Federalist Papers</cite>, No. 1</figcaption>
+  <figcaption>--- Alexander Hamilton, <cite>The Federalist Papers</cite>, No. <span class="oldstyle">1</span></figcaption>
 </figure>
 
+Now the Scholarly Commons is not a civil body, it's a commons---a middle ground
+somewhere between the grassroots level of people and the institutions of
+state.[^commons] A commons has no prescribed structure; it is whatever the
+people decide for it to be. It is a coming together of people for some greater
+purpose. In our case, the great decision we collectively face is whether to
+establish a commons for scholarly and scientific research, or to continue doing
+things the way they have been done for so long, having some vague hope for
+positive change.
+
 I see the Scholarly Commons as one of the most wonderful opportunities that has
-ever presented itself to mankind. For all the good intentions of those of
-earlier times, they never had the technology to pull off something like a
-global commons of researchers, sharing as they go, almost instantaneously, the
-collective research of the world, ever expanding.
+ever presented itself to mankind. So much of what happens in our world is based
+upon the knowledge that is available, and if we can remove barriers to that
+knowledge, and open up the ability for people to interact with it more freely,
+it would disrupt the world and further _so many other important initiatives_.
+For all the good intentions of those of earlier times, they never had the
+technology to pull off something like a global commons of researchers, sharing
+as they go, almost instantaneously, the collective research of the world, ever
+expanding.
 
-What is our underlying motivation to create a commons? What is our order and
-survival? First of all, I see the Scholarly Commons as a relief for the
-burgeoning cadre of post-docs. Many opportunities for work and service that do
-not now exist will be opened up. Second, this will open up opportunities for
-many more people to become involved in scholarly and scientific research. No
-longer will people need to be affiliated with an institution to have access to
-the latest research efforts. This will stimulate discovery in a way that I
-think we can't comprehend right now. This has the potential to drastically
-improve and save lives.
-
-The fact that these conversations are happening is a good thing. We're all
-coming at this from where we are. But is there any other place from which we
-_could_ come? These conversations are the beginning of the commons! They have
-to happen, and the important thing is that we create a culture of learning:
-that we're willing to learn and grow and change as we go. This new land that we
-have embarked upon is full of ripe possibility, but for the sake of order and
-survival, it would be advantageous to do it in a way that gives as many people
-a voice as possible What is important is that we involve everyone in this
-defining process so we can create something well-rounded and balanced. We need
-something that everyone can touch.
+Now as April Hathcock has [so nicely articulated][april], we need _real
+conversation_ to take place to take advantage of this opportunity. We need to
+learn from each other, the North from the South, the West from the East, and
+vice versa. This can't be a colonialization of the world by the Global North.
+This would be an epic failure. The Scholarly Commons needs to be rather a
+[_colonization_][colonization] of _a new land of opportunity_ by people from
+all parts of the world, nations, cultures, and languages, that are willing to
+say that we can do better, and we will do it together. We need to continue
+these conversations. The fact that these conversations are happening at all is
+a good thing. We're all coming at this from where we are. But is there any
+other place from which we _could_ come? I see these conversations, however
+uncomfortable, candid, or mind-blowing as the beginning of the commons! They
+have to happen, and the important thing is that we create a culture of
+learning: that we're willing to learn and grow and change as we go. This new
+land that we have embarked upon is full of ripe possibility. What is important
+is that we agree to come together and unite to do something greater than any of
+us, and that we involve as many voices as would like to be heard so we can
+create something well-rounded and balanced. We need something that everyone can
+touch.
 
 # TL;DR
 
@@ -209,16 +265,19 @@ here's what I would say:
 
 {:.big}
 
-The Scholarly Commons is _an agreement_ to come together and unite in matters
-of practice and governance to create a commons for the good of anyone involved
-in scholarly or scientific knowledge. The Scholarly Commons is also _an
-opportunity_ to make the world a better place by doing things better than they
-have ever been done before.
+The Scholarly Commons is _an agreement_ to come together and create a commons
+for the good of anyone involved in scholarly or scientific knowledge. The
+Scholarly Commons is also _an opportunity_ to make the world a better place by
+drastically improving our practices and widening our networks for the
+production and flow of knowledge.
 
 {:.conclusion}
 
-As for the principles, I think we need to involve more people in the
-development of them. 
+As for the direction to go next with the principles, I think we need to create
+ways to preserve and continue these conversations. We need to find ways to
+broaden the conversations, and to invite more diverse groups to take part in
+them. Then we need to take what we discover and put it into practice, thereby
+creating a commons for science and scholarship for the good of all mankind.
 
 # Notes
 
@@ -231,6 +290,11 @@ development of them.
 {:lang="es"}
 [cabrillo]: <https://en.wikipedia.org/wiki/Juan_Rodr%C3%ADguez_Cabrillo> "Juan Rodríguez Cabrillo on Wikipedia"
 {:lang="es"}
+[new-video]: <http://bollier.org/blog/new-video-%E2%80%9Cre-imagine-future%E2%80%9D> "View more info on David Bollier's site"
+[april]: <https://aprilhathcock.wordpress.com/2016/09/27/making-the-local-global-the-colonialism-of-scholarly-communication/> "Making the Local Global: The Colonialism of Scholarly Communication"
+[colonization]: <http://wikidiff.com/colonialization/colonization> "Colonization vs colonialization"
+[ravi]: <https://twitter.com/ravimurugesan> "Ravi on Twitter"
+[scielo]: <http://scielo.org/php/index.php> "Scientific Electronic Library Online"
 
 [^citizen_science]:
 
@@ -238,4 +302,57 @@ development of them.
     doesn't go far enough, and sometimes I worry that the practice ends up
     resembling an [encomienda] system more than I would like.
 
-[^bradford]: From William Bradford's history "Of Plimoth Plantation." (find quote)
+[^bradford]:
+
+    These quotations from the Mayflower Compact and other circumstances
+    relating to these early colonists can be found on [the Wikipedia
+    page][Mayflower Compact] (with spelling modernized), or in [Bradford's
+    History "Of Plimoth
+    Plantation"](http://archive.org/stream/historyplymouth01socigoog#page/n246/mode/2up),
+    Book <span class="oldstyle">2</span> Anno <span
+    class="oldstyle">1620</span>, written by William Bradford in the years from
+    <span class="oldstyle">1630</span> to <span class="oldstyle">1651</span>,
+    and printed in entirety for the first time in <span
+    class="oldstyle">1854</span>.
+
+[^gardiner]:
+
+    In a footnote of a later edition of Bradford's history,[^bradford] a
+    quotation from Gardiner's <cite>History of England</cite>, <span
+    class="oldstyle">1603--1642, <span class="roman">IV</span>. 163</span> is
+    particularly relevant to the analogy I am making here with the Scholarly
+    Commons:
+
+    > In all this there was nothing new. The election of administrative
+    > functionaries took place in every borough town in England. What was
+    > really new was that whilst in England each corporation was exposed to the
+    > action of the other forces of the social system, in America the new
+    > corporation was practically left to itself. It was as if Exeter or York
+    > had drifted away from the rest of England, and had been left to its own
+    > resources on the other side of the Atlantic. The accident which had
+    > deprived the colony for a time of all legal connexion with the Home
+    > Government, was only a foreshadowing of its future fortunes. Sooner or
+    > later the colonies would have a social and political history of their
+    > own, which would not be a repetition of the social and political history
+    > of England.
+    {:.bq.grab}
+
+[^commons]:
+
+    Here's a recent video [from David Bollier and Anna Grear][new-video] that
+    explains why commons are so important, especially for the global problems
+    that we now face:
+
+    <video class="simple" poster="Re-Imagine2.jpg" width="100%" height="100%" style="width: 100%; height: 100%;" id="reimagine-the-future" preload="none" controls="controls">
+      <source type="video/youtube" src="https://www.youtube.com/watch?v=uA1Ri3LvIRs" />
+    </video>
+
+<% content_for :javascripts do %>
+<script>
+
+  $(document).ready(function() {
+    $("#reimagine-the-future").mediaelementplayer();
+  });
+
+</script>
+<% end %>
