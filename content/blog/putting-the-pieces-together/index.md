@@ -219,14 +219,14 @@ Now the Scholarly Commons is not a civil body, it's a commons---a middle ground
 somewhere between the grassroots level of people and the institutions of
 state.[^commons] A commons has no prescribed structure; it is whatever the
 people decide for it to be. It is a coming together of people for some greater
-purpose. In our case, the greater purpose is _the contributions_ that further
-our understanding of who we are, the world, and everything else associated. The
-great decision we collectively face is whether to come together and establish a
-commons for scholarly and scientific research, or to continue doing things the
-way they have been done for so long, having some vague hope for positive
-change. Without that choice, there is no Scholarly Commons nor indeed can there
-be, or at least not anything that will bring together and unite the researchers
-of the world in such a way.
+purpose. In our case, the greater purpose is _the
+contributions_[^contributions] that further our understanding of who we are,
+the world, and everything else associated. The great decision we collectively
+face is whether to come together and establish a commons for scholarly and
+scientific research, or to continue doing things the way they have been done
+for so long, having some vague hope for positive change. Without that choice,
+there is no Scholarly Commons nor indeed can there be, or at least not anything
+that will bring together and unite the researchers of the world in such a way.
 
 <span class="newthought">I see here an opportunity to do</span> something that
 never has been done before, something that would improve the lives of everyone,
@@ -284,16 +284,36 @@ touch.
 
 # How can it be done?
 
-If I can step forward through time and back down to reality for a minute, and
-face this problem of diversity. Our diversity is an opportunity but it is also
-a challenge. We are all spread around the globe and don't have the luxury of
-being stuck together in the cabin of a ship with the exigency of making a
+I'm going to step forward through time and back down to reality for a minute,
+and face this problem of diversity. Our diversity is an opportunity but it is
+also a challenge. We are all spread around the globe and don't have the luxury
+of being stuck together in the cabin of a ship with the exigency of making a
 decision and the determination to not set foot on shore before doing so. And,
 tomorrow, when it comes down to it, most of us have to do whatever our
 higher-ups tell us to do! How do we develop the capacity and urgency to make
 this choice in some sort of collective, unified way?
 
+Even after making that decision, I have a hundred more questions, including:
 
+* What is scholarship?
+* What does it mean to common through research?
+* What is the role of principles in the commons?
+* How do we make our processes of sharing more effective?
+* Who else needs to be involved?
+
+Since we can't stop the world while we answer these questions, we need leaders
+who have made the initial decision to come together and move forward, and have
+the vision, patience, and determination to find answers and make the needed
+changes a little bit at a time. Danny Kingsley brought up [the theory of the
+diffusion of innovations][diffusion], or how innovations permeate society, and
+in this I think we can find some clues as to how we move forward.
+
+I think that we need a bigger strategy, and a more holistic and inclusive
+approach to building a commons. We've focused institutionally so far, and
+rightly so. This is where it needs to start. But I think going forward we need
+to think more broadly, and reconsider the academy in a bigger context, with the
+end goals and needs of a much more diverse population in mind. We need a
+commons for the people, not for the institutions.
 
 # TL;DR
 
@@ -339,6 +359,7 @@ creating a commons for science and scholarship for the good of all mankind.
 [ravi]: <https://twitter.com/ravimurugesan> "Ravi on Twitter"
 [scielo]: <http://scielo.org/php/index.php> "Scientific Electronic Library Online"
 [Global North]: <https://en.wikipedia.org/wiki/North%E2%80%93South_divide> "North-South Divide on Wikipedia"
+[diffusion]: <https://en.wikipedia.org/wiki/Diffusion_of_innovations> "Diffusion of Innovations on Wikipedia"
 
 *[SciELO]: Scientific Electronic Library Online
 *[TL;DR]: Too Long; Didn't Read
@@ -394,6 +415,12 @@ creating a commons for science and scholarship for the good of all mankind.
     <video class="simple" poster="Re-Imagine2.jpg" width="100%" height="100%" style="width: 100%; height: 100%;" id="reimagine-the-future" preload="none" controls="controls">
       <source type="video/youtube" src="https://www.youtube.com/watch?v=uA1Ri3LvIRs" />
     </video>
+
+[^contributions]:
+
+    I'm thinking of contributions here in a broader sense: the social and
+    cultural processes of creating knowledge and sharing it with others, not
+    just technical resources.
 
 <% content_for :javascripts do %>
 <script>
