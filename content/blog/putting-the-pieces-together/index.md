@@ -14,6 +14,7 @@ tags:
   - Connections
   - FORCE11
   - Opinionated
+  - Essay
 has_media: true
 ---
 
