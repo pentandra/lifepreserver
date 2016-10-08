@@ -312,7 +312,7 @@ changes a little bit at a time. Danny Kingsley brought up [the theory of the
 diffusion of innovations][diffusion], or how innovations permeate society, and
 in this I think we can find some clues as to how we move forward.
 
-I think that we need a bigger strategy, and a more holistic and inclusive
+I think that we need a broader strategy, and a more holistic and inclusive
 approach to building a commons. We've focused institutionally so far, and
 rightly so. This is where it needs to start. But I think going forward we need
 to think more broadly, and reconsider the academy in a bigger context, with the
