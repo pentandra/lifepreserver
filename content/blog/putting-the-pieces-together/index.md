@@ -179,15 +179,16 @@ help make it through that first winter. They needed that unity to survive.
 ## Our great decision
 
 We also face a critical decision at this point in time. Our choice is not about
-winter survival in a cold bay in New England, but it _could be thought_ as a
-new land or frontier, a place that we don't fully understand yet, but full of
-promise and potential. There is certainly a need for _better ordering_ and
-_preservation_, and plenty of _ends aforesaid_. We may ask ourselves, what's
-wrong with just going at this on our own? There is so much potential out there,
-and people and organizations are already staking out their ground! Why not just
-let things go as they have done up to this point in time, and hope that it all
-works out? Isn't the laissez-faire approach good enough? It has gotten us here,
-hasn't it!? _Why is it so important that we come together and build a commons?_
+winter survival in a cold bay in New England, but the Scholarly Commons _could
+be thought of_ as a new land or frontier, a place that we don't fully
+understand yet, but full of promise and potential. There is certainly a need
+for _better ordering_ and _preservation_, and plenty of _ends aforesaid_. We
+may ask ourselves, what's wrong with just going at this on our own? There is so
+much potential out there, and people and organizations are already staking out
+their ground! Why not just let things go as they have done up to this point in
+time, and hope that it all works out? Isn't the laissez-faire approach good
+enough? It has gotten us here, hasn't it!? _Why is it so important that we come
+together and build a commons?_
 
 Quite frankly, I don't think any of our current approaches have had the power
 to transform the current systems of scholarship. We need something more,
