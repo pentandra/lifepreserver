@@ -232,7 +232,7 @@ for so long, having some vague hope for positive change. Without that choice,
 there is no Scholarly Commons nor indeed can there be, or at least not anything
 that will bring together and unite the researchers of the world in such a way.
 
-<span class="newthought">I see here an opportunity to do</span> something that
+<span class="newthought">I see here an opportunity to do something</span> that
 never has been done before, something that would improve the lives of everyone,
 and to do it for the right reasons. The Scholarly Commons will not only give
 more freedom to the professional researchers, but will open up opportunities
