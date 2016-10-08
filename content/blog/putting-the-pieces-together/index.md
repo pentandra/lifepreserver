@@ -266,7 +266,7 @@ technology to pull off something like a global commons of researchers, sharing
 as they go, almost instantaneously, the collective research of the world, ever
 expanding.
 
-Now as April Hathcock has [so nicely articulated][april], we need _real
+Now, as April Hathcock has [so nicely articulated][april], we need _real
 conversation_ to take place to take advantage of this opportunity. We need to
 learn from each other, the North from the South, the West from the East, and
 vice versa. This can't be a colonialization of the world by the Global North.
