@@ -408,7 +408,7 @@ creating a commons for science and scholarship for the good of all mankind.
     > later the colonies would have a social and political history of their
     > own, which would not be a repetition of the social and political history
     > of England.
-    {:.bq.grab}
+    {:.bq.grab lang="en-emodeng"}
 
 [^commons]:
 
