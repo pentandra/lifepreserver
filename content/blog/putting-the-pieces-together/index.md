@@ -151,10 +151,10 @@ every man for himself. Others, in a moment of inspiration, thought it would be
 better to cooperate and help each other, especially as they arrived in this
 cold place late in November. They drafted a compact that they hoped everyone
 would agree to and sign before they left the ship. Thankfully, and after some
-persuasion, they all consented to the latter for the sake of order and
-survival. I like to think that they also may have signed to take advantage of
-an opportunity to do something that very few of their Old World predecessors
-had ever had the opportunity to do: deliberately coming together and _creating
+persuasion, they all consented to sign for the sake of order and survival. I
+like to think that they also may have signed to take advantage of an
+opportunity to do something that very few of their Old World predecessors had
+ever had the opportunity to do: deliberately coming together and _creating
 their own government_. Just think of it!
 
 <figure id="fig:the-mayflower-compact" class="img" property="schema:image" typeof="schema:ImageObject">
