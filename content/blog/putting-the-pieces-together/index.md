@@ -132,10 +132,10 @@ access is as important as the free practice of religion, or that professional
 researchers have suffered as much as those early Christians, who sometimes gave
 up everything to follow their beliefs. It's just that as I contemplate the
 Scholarly Commons, I see this early venture with new eyes. I see a group of
-people with significant differences (in colonists' case significant religious
-differences, in our case the differences are more diverse) coming together for
-a common purpose. They had the opportunity to leave it all---to run away from
-their differences, but they chose not to.
+people with significant differences (in the colonists' case significant
+religious differences, in our case the differences are more diverse) coming
+together for a common purpose. They had the opportunity to leave it all---to
+run away from their differences, but they chose not to.
 
 ## An agreement to unite
 
@@ -147,12 +147,15 @@ headed to their previously agreed-upon destination, Virginia, several of the
 passengers and crew said that the original charter was null and void, and that
 they "would use their own liberty; for none had power to command
 them."[^bradford] They were wanting to go at it in the new place on their own,
-every man for himself. Others thought it would be better to cooperate and help
-each other, especially as they arrived in this cold place late in November. In
-the end, they (thankfully) all consented to the latter for the sake of order
-and survival, and, I think the opportunity to do something that very few of
-their predecessors had ever had the opportunity to do: deliberately coming
-together and _creating their own government_. Just think of it!
+every man for himself. Others, in a moment of inspiration, thought it would be
+better to cooperate and help each other, especially as they arrived in this
+cold place late in November. They drafted a compact that they hoped everyone
+would agree to and sign before they left the ship. Thankfully, and after some
+persuasion, they all consented to the latter for the sake of order and
+survival. I like to think that they also may have signed to take advantage of
+an opportunity to do something that very few of their Old World predecessors
+had ever had the opportunity to do: deliberately coming together and _creating
+their own government_. Just think of it!
 
 <figure id="fig:the-mayflower-compact" class="img" property="schema:image" typeof="schema:ImageObject">
   <img alt="Passengers of the Mayflower signing the 'Mayflower Compact' including Carver, Winston, Alden, Myles Standish, Howland, Bradford, Allerton, and Fuller." src="The_Mayflower_Compact.jpg" />
