@@ -45,8 +45,6 @@ of this one workshop. It was good that the workshop was held on the top floor
 of a fifteen-story building, with many windows, plenty of fresh air, and a nice
 balcony upon which to exercise [the law of two feet].
 
-(Picture of the fog)
-
 During this workshop there was a main track that was needed to fulfill some of
 the original Helmsley grant requirements, which Jeroen Bosman and Bianca Kramer
 expertly put together, designed around the theme of _putting the pieces
