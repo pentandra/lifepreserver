@@ -56,7 +56,7 @@ mattered to them. I tried to bounce around these unworkshops and the main
 track, learning as much as I could. Good conversations were taking place at all
 of them! But there were a few themes that I had been mulling, and questions for
 which I have been trying to find answers, that I want to explore and discuss
-further in this post, so here's a breakdown:
+further, so here's a breakdown of the rest of this post:
 
 1. Table of Contents
 {:toc}
