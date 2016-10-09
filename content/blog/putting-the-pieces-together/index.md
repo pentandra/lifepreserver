@@ -155,7 +155,7 @@ opportunity to do something that very few of their Old World predecessors had
 ever had the opportunity to do: deliberately coming together and _creating
 their own government_. Just think of it!
 
-<figure id="fig:the-mayflower-compact" class="img" property="schema:image" typeof="schema:ImageObject">
+<figure id="fig:the-mayflower-compact" class="img" property="schema:sharedContent" typeof="schema:ImageObject">
   <img alt="Passengers of the Mayflower signing the 'Mayflower Compact' including Carver, Winston, Alden, Myles Standish, Howland, Bradford, Allerton, and Fuller." src="The_Mayflower_Compact.jpg" />
   <figcaption class="small">The depiction in <i property="schema:title">Signing the Mayflower Compact 1620</i>, by <a href="https://en.wikipedia.org/wiki/Jean_Leon_Gerome_Ferris">Jean Leon Gerome Ferris</a>, resembles the journey we have undertaken to converge upon the principles of the Scholarly Commons.</figcaption>
 </figure>
