@@ -1,5 +1,7 @@
-<meta name="twitter:card" content="<%= @item[:cover_image] ? "summary_large_image" : "summary" %>" />
-<meta name="twitter:site" content="<%= "@#{company[:twitter]}" %>" />
-<% if @item.key?(:author_name) %>
-  <meta name="twitter:creator" content="<%= "@#{teammember(@item[:author_name])[:twitter]}" %>" />
+<% if @item.key?(:cover_image) %>
+  <%# Images should be at least 120x120 pixels, and < 1MB. This image will be cropped to square. %>
+  <%# Images should be at least 280x150 pixels for the large image, and < 1MB. %>
+  <meta name="twitter:card" content="<%= @item[:cover_image][:wide] ? "summary_large_image" : "summary" %>" />
+  <meta name="twitter:image:alt" content="<%= h @item[:cover_image][:alt] %>" />
 <% end %>
+<meta name="twitter:site" content="<%= "@#{company[:twitter]}" %>" />

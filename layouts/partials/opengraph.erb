@@ -1,8 +1,12 @@
+<%# for the archaic, proprietary, and limited Open Graph Protocol http://ogp.me/ %>
 <meta property="og:title" content="<%= @item[:title] %>" />
 <meta property="og:description" content="<%= @item[:description] %>" />
 <meta property="og:site_name" content="<%= @config[:site][:name] %>" />
 <meta property="og:url" content="<%= "#{@config[:base_url]}#{@item.path}" %>" />
 <meta property="og:locale" content="en_US" />
+<% if @item.key?(:cover_image) %>
+  <meta property="og:image" content="<%= h "#{@config[:base_url]}#{@items[@item[:cover_image][:id]].path}" %>" />
+<% end %>
 <% if blog_post?(@item) %>
   <meta property="og:type" content="article" />
   <meta property="article:published_time" content="<%= h simple_date(@item[:created_at]) %>" />
