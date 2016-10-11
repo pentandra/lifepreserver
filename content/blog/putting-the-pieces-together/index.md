@@ -40,23 +40,23 @@ For our steering committee, this workshop was one we have been truly
 anticipating, the culmination of a lot of thought and discussion of some very
 fundamental matters. As can be expected, many of us embarked upon this project
 from different places and with different expectations, and it seems that all of
-these various diverging streams of thought converged on the inputs and outputs
-of this one workshop. It was good that the workshop was held on the top floor
-of a fifteen-story building, with many windows, plenty of fresh air, and a nice
+our diverse streams of thought converged on the inputs and outputs of this one
+workshop. It was good that the workshop was held on the top floor of a
+fifteen-story building, with many windows, plenty of fresh air, and a nice
 balcony upon which to exercise [the law of two feet].
 
 During this workshop there was a main track that was needed to fulfill some of
 the original Helmsley grant requirements, which Jeroen Bosman and Bianca Kramer
-expertly put together, designed around the theme of _putting the pieces
-together_. At many points in the program there was also the opportunity for any
-of the participants to create an unworkshop session about any topic they wanted
-to discuss. Despite a somewhat rocky beginning, I am happy that the atmosphere
-did eventually open up, and people were able to share and participate in what
-mattered to them. I tried to bounce around these unworkshops and the main
-track, learning as much as I could. Good conversations were taking place at all
-of them! But there were a few themes that I had been mulling, and questions for
-which I have been trying to find answers, that I want to explore and discuss
-further, so here's a breakdown of the rest of this post:
+expertly designed to fit the theme of _putting the pieces together_. At many
+points in the program, participants also had the opportunity to propose or join
+an unworkshop session to discuss any related topic or perspective that they
+desired. Despite a somewhat rocky beginning, I am happy that people were able
+to share and participate in what mattered to them. I tried to bounce around
+these unworkshops and the main track, learning as much as I could. Good
+conversations were taking place at all of them! But there were a few themes
+that I have been mulling, and questions for which I have been trying to find
+answers, that I want to explore and discuss further, so here's a breakdown of
+the rest of this post:
 
 1. Table of Contents
 {:toc}
@@ -68,72 +68,87 @@ workshop attendees][april], was a workshop led by [Ravi Murugesan][ravi] about
 _incorporating scholarly attitudes from the Global South to develop the
 commons_. Since I have never lived in the Global South and I've never worked as
 an institutional researcher, I have a lot to learn about the challenges that
-professional researchers face day-by-day around the world (though I've heard
-great things about the widespread culture of Open Access (e.g. [SciELO]) in
-South America, and other similar initiatives happening around the world). It
-was an wonderfully mind-opening experience for me. I found out that there is a
-lot of leftover cruft from the colonialization of the world over the past
-couple hundred years by various cultures (mostly by the more developed
-countries of the [Global North]), and the effects of these experiences still
-linger and extend deeply into the researcher's life at the academy. Many are
-resentful and feel like the North is trying to push their own ways of doing
-things upon others, without them having a say in what is going on. For many
-researchers in the South, institutional funding is given predominantly to solve
-local problems, yet the ultimate prize is to have an article published in a
-Northern journal. All this inequity has lead to serious pressures and real
-problems for researchers of all kinds.
+professional researchers face day-by-day around the world. It was an
+wonderfully mind-opening experience for me. I found out that there is a lot of
+leftover cruft from the colonialization of the world over the past couple
+hundred years by various cultures (mostly by the more developed countries of
+the [Global North]), and the effects of these experiences still linger and
+extend deeply into the researcher's life at the academy. Many are resentful and
+feel like the North is trying to push their own ways of doing things upon
+others, without them having a say in what is going on. For many researchers in
+the South, institutional funding is given predominantly to solve local
+problems, yet the ultimate prize is to have an article published in a northern
+journal. All this imbalance has lead to serious pressures and real problems for
+researchers of all kinds.
+
+{::comment}
+(though I've heard great things about the widespread culture of Open Access
+(e.g. [SciELO]) in South America, and other similar initiatives happening
+around the world)
+{:/comment}
 
 Several of us on the steering committee thought it was a cool coincidence that
-this workshop so far has been Spanish themed. We went from Madrid to San Diego,
-and were able to use the colors of each city flag in designing the workshop
-logos, and it just worked. But looking at [the map
+these first two workshops has been Spanish themed. We started in Madrid, and
+now we're in San Diego, and were able to use the colors of each city flag in
+designing the workshop logos, and it just worked. But looking at [the map
 above](#fig:journey-of-defining) from more of an _evil_ point of view, our
 journey from Madrid to San Diego could be thought of as a journey of
-_conquest_. Isn't this path the same path that [Juan Rodríguez
-Cabrillo][cabrillo] and [others][vizcaino] took as they claimed land for Spain?
-The difference is that we are not conquistadores and we are not trying to
-create an [encomienda] system[^citizen_science] here! In fact what I want is
-just the opposite. I think there is stuff here from history from which we
-should learn, and not repeat, and opportunities exist to try to do things a
-different way. And I think that we have a fundamental opportunity here, and it
-is critical that we do it right.
+_conquest_. Isn't this the same path that [Juan Rodríguez Cabrillo][cabrillo]
+and [others][vizcaino] took as they claimed land for Spain? The difference is
+that we are not conquistadores and we are not trying to create an [encomienda]
+system[^citizen_science] here! In fact what we want is just the opposite. I
+think there is stuff here from history from which we should learn, and not
+repeat, and opportunities exist to try to do things a different way. We have a
+groundbreaking opportunity here, and it is critical that we do it right.
 
 <span class="newthought">I want to put forward here an alternative
 approach</span> to explaining where I think we are right now by comparing our
-situation with the situation of an early group of colonists that encountered
-some challenges similar to what we're facing at this time. This colony actually
-sticks out in history because it did something no other colony had ever done
-before. Many of the people in this company came for a very different reasons
-than did most of their contemporaries. They were not entrepreneurs or
-conquistadores determined to conquer indigenous peoples, but were fleeing
-religious persecution. They came seeking freedom to practice religion the way
-they believed. This difference obviously changed how they approached problems,
-and with much patience and determination they were able to develop
-relationships of mutual respect with the indigenous tribes of the New World.
-They learned from each other. They helped each other. It wasn't perfect. They
-had goof-ups on both sides. But they kept trying, and they did something that
-had never been done before. They showed the world that what they set out to
-achieve---something that the world thought was impossible---was possible. Their
-achievements changed the perception of many, and led to their eventual success
-as a colony. Together they created a new kind of society that had such an
-impact on the early culture of the US that we still celebrate this time of our
-history during our [Thanksgiving holiday][thanksgiving].
+situation with the situation of several early groups that encountered some
+challenges similar to what we're facing at this time. Maybe it's that Cameron
+Neylon has me [thinking about groups][groups] lately, but these groups actually
+stick out in history to me[^sticks-out] because of their unique accomplishments
+and the effects of their shared culture despite the fact that they came
+together from such distinctly divergent backgrounds and points of view.
 
 What we're trying to accomplish with the Scholarly Commons has some striking
 similarities to what we know of the circumstances surrounding the venture of
 the [Plymouth Colony] and specifically the signing of the [Mayflower Compact].
+As I contemplate where we are with the Scholarly Commons, I see this early
+venture with new eyes. I see groups of people with significant differences (in
+the colonists' case significant religious differences, in our case the
+differences are more diverse) coming together for a common purpose. They had
+the opportunity to leave it all---to run away from their differences, but they
+chose not to.
+
+Two groups were on board the Mayflower: those who commissioned the ship, and
+those who were commissioned to manage the ship and help setup a colony (the
+crew). According to language of the former (who kept the only records we have
+of this experience), these two groups were referred to respectively as the
+Saints and the Strangers. These labels may give some insight into the obvious
+tensions between the two groups. Unlike most of their contemporaries headed to
+the New World, these colonists were not entrepreneurs or conquistadores
+determined to conquer indigenous peoples, but came seeking freedom to practice
+religion the way they believed. This difference obviously changed how they
+approached problems, and with much patience and determination they were able to
+develop relationships of trust and mutual respect with each other as well as
+with the indigenous tribes of the New World.[^massasoit] They learned from each
+other. They helped each other. Their circumstances were not perfect, nor was
+every choice that each group made. They had goof-ups on both sides. But they
+kept trying, and they did something that had never been done before. They
+showed the world that what they set out to achieve---something that the world
+thought was impossible---was possible. Their achievements changed the
+perception of many, and led to their eventual success as a colony. Together
+they created a new kind of society that had such an impact on the early culture
+of the United States that we still celebrate this time of our history during
+our [Thanksgiving holiday][thanksgiving].
+
 Now what we're doing here is not religious in nature, but I do see similarities
-in the motivations and desires between the two. Many are stuck in a system
-where they don't have freedom to practice they way they would like to. In
-saying this, I'm not trying to say that being able to publish something open
+in the motivations and desires between the two experiences. Many are stuck in a
+system where they don't have freedom to practice they way they would like to.
+In saying this, I'm not trying to say that being able to publish something open
 access is as important as the free practice of religion, or that professional
-researchers have suffered as much as those early Christians, who sometimes gave
-up everything to follow their beliefs. It's just that as I contemplate the
-Scholarly Commons, I see this early venture with new eyes. I see a group of
-people with significant differences (in the colonists' case significant
-religious differences, in our case the differences are more diverse) coming
-together for a common purpose. They had the opportunity to leave it all---to
-run away from their differences, but they chose not to.
+researchers have suffered as much as those early Christians, or that I'm trying
+to cast people into stereotypes, which I'm not.
 
 ## An agreement to unite
 
@@ -145,15 +160,15 @@ headed to their previously agreed-upon destination, Virginia, several of the
 passengers and crew said that the original charter was null and void, and that
 they "would use their own liberty; for none had power to command
 them."[^bradford] They were wanting to go at it in the new place on their own,
-every man for himself. Others, in a moment of inspiration, thought it would be
-better to cooperate and help each other, especially as they arrived in this
-cold place late in November. They drafted a compact that they hoped everyone
-would agree to and sign before they left the ship. Thankfully, and after some
-persuasion, they all consented to sign for the sake of order and survival. I
-like to think that they also may have signed to take advantage of an
-opportunity to do something that very few of their Old World predecessors had
-ever had the opportunity to do: deliberately coming together and _creating
-their own government_. Just think of it!
+every man for himself. Others, in what I see as a moment of inspiration,
+thought it would be better to cooperate and help each other, especially as they
+arrived in this cold place in late November. They drafted a compact that they
+hoped everyone would agree to and sign before they left the ship. Thankfully,
+and after some persuasion, they all consented to sign for the sake of order and
+survival. I like to think that they also may have signed to take advantage of
+an opportunity to do something that very few of their Old World predecessors
+had ever had the opportunity to do: deliberately coming together and _creating
+their own government_.
 
 <figure id="fig:the-mayflower-compact" class="img" property="schema:sharedContent" typeof="schema:ImageObject">
   <img alt="Passengers of the Mayflower signing the 'Mayflower Compact' including Carver, Winston, Alden, Myles Standish, Howland, Bradford, Allerton, and Fuller." src="The_Mayflower_Compact.jpg" />
@@ -226,9 +241,13 @@ contributions_[^contributions] that further our understanding of who we are,
 the world, and everything else associated. The great decision we collectively
 face is whether to come together and establish a commons for scholarly and
 scientific research, or to continue doing things the way they have been done
-for so long, having some vague hope for positive change. Without that choice,
-there is no Scholarly Commons nor indeed can there be, or at least not anything
-that will bring together and unite the researchers of the world in such a way.
+for so long, having some vague hope for positive change. We need to decide by
+our conduct and example whether societies of researchers are really capable or
+not of establishing good governance from reflection and choice, or whether we
+are forever destined to depend for their scholarly communications on accident
+and market forces. Without that choice, there is no Scholarly Commons nor
+indeed can there be, or at least not anything that will bring together and
+unite the researchers of the world in such a way.
 
 <span class="newthought">I see here an opportunity to do something</span> that
 never has been done before, something that would improve the lives of everyone,
@@ -308,7 +327,17 @@ who have made the initial decision to come together and move forward, and have
 the vision, patience, and determination to find answers and make the needed
 changes a little bit at a time. Danny Kingsley brought up [the theory of the
 diffusion of innovations][diffusion], or how innovations permeate society, and
-in this I think we can find some clues as to how we move forward.
+in this I think we can find some clues as to how we move forward. There are
+communities that are ready to work in new ways. We need to find these early
+adopters and experiment with new ways of working together.
+
+Going forward, there needs to be an emphasis on practice. We have gathered all
+of these great ideas, and spent a lot of time distilling principles, but we
+need to show what scholarly commoning looks like. We need mechanisms for
+participating commoners to govern themselves, and principles flexible enough
+for anyone to repurpose or modify to fit a particular need, so that commoning
+comes out of practice, rather than being a set of principles that we try to
+_fit_ into an existing situation.
 
 I think that we need a broader strategy, and a more holistic and inclusive
 approach to building a commons. We've focused institutionally so far, and
@@ -362,6 +391,8 @@ creating a commons for science and scholarship for the good of all mankind.
 [scielo]: <http://scielo.org/php/index.php> "Scientific Electronic Library Online"
 [Global North]: <https://en.wikipedia.org/wiki/North%E2%80%93South_divide> "North-South Divide on Wikipedia"
 [diffusion]: <https://en.wikipedia.org/wiki/Diffusion_of_innovations> "Diffusion of Innovations on Wikipedia"
+[Massasoit]: <https://en.wikipedia.org/wiki/Massasoit> "Massasoit on Wikipedia"
+[groups]: <http://cameronneylon.net/blog/whos-in-the-club-new-frames-for-understanding-knowledge-sharing/> "Who’s in the Club? New frames for understanding knowledge sharing by Cameron Neylon"
 
 *[SciELO]: Scientific Electronic Library Online
 *[TL;DR]: Too Long; Didn't Read
@@ -423,6 +454,26 @@ creating a commons for science and scholarship for the good of all mankind.
     I'm thinking of contributions here in a broader sense: the social and
     cultural processes of creating knowledge and sharing it with others, not
     just technical resources.
+
+[^massasoit]: 
+
+    Before preparing this essay, I did not realize how fortunate these people
+    were in landing where they did, when they did.
+
+    The Plymouth colonists show this determination to bridge differences with
+    courage and their great fortune later on in their treaty with [Massasoit],
+    the great chief of the Wampanoag Indians, on March <span
+    class="oldstyle">22</span> the next year.
+
+[^sticks-out]:
+
+    I would not be surprised to learn that similar stories of disparate groups
+    coming together are found in the histories of many cultures around the
+    world, though I am biased and love the stories of the founding of the
+    United States. I picked these specific examples from history because they
+    are familiar to me (I knew about them), and they seemed to fit my
+    conception of the Scholarly Commons as something completely new, not an
+    incremental redesign of our current system of scholarly communication.
 
 <% content_for :javascripts do %>
 <script>
