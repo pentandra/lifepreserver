@@ -309,15 +309,15 @@ from all parts of the world, nations, cultures, and languages, that are willing
 to say that we can do better, and we will do it together. It is a space where
 we can bring together the best of our cultures. We need the widespread open
 culture of the South (which is exemplified in efforts such as [SciELO]). We
-don't need the ego or prestige culture of the North. It may be that the North
-has further to travel, and that the South may not have as far to go. Whichever
-way you see it, we need to continue these conversations. The fact that these
-conversations are happening at all is a good thing. We're all coming at this
-from where we are. But is there any other place from which we _could_ come? I
-see these conversations, however uncomfortable, candid, or mind-blowing as the
-beginning of the commons! They have to happen, and the important thing is that
-we create a culture of learning: that we're willing to learn and grow and
-change as we go. This new land that we have embarked upon is full of ripe
+need to leave behind the ego or prestige culture of the North. It may be that
+the North has further to travel, and that the South may not have as far to go.
+Whichever way you see it, we need to continue these conversations. The fact
+that these conversations are happening at all is a good thing. We're all coming
+at this from where we are. But is there any other place from which we _could_
+come? I see these conversations, however uncomfortable, candid, or mind-blowing
+as the beginning of the commons! They have to happen, and the important thing
+is that we create a culture of learning: that we're willing to learn and grow
+and change as we go. This new land that we have embarked upon is full of ripe
 possibility. What is important is that we agree to come together and unite to
 do something greater than any of us, and that we involve as many voices as
 would like to be heard so we can create something well-rounded and balanced. We
