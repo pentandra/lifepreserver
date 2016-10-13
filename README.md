@@ -52,15 +52,25 @@ $ nanoc server # if you are dealing with both the static and dynamic aspects of 
 
 And view the page in your browser.
 
+## Contributing
+
+This repository uses [GitFlow] to manage development and release activity. When
+starting a new feature, page, blog post, et cetera, please create a new branch
+for it based on the `develop` branch to ease review and integration.
+
+* Do your best to adhere to the existing coding conventions and idioms.
+* Don’t use hard tabs, and don’t leave trailing whitespace on any line. Before committing, run `git diff --check` to make sure of this.
+
 ## Thanks
 
 Thanks to the people that helped me come to grips with the power of nanoc,
 including:
 
-* Vincent Driessen (https://github.com/nvie/blog)
 * Dennis Defreyne, of course (https://github.com/ddfreyne/nanoc)
 * Lifepillar (https://github.com/lifepillar/nanoc4-template) for some new
-  ideas.
+  ideas during the transition to Nanoc 4.
 
 Also, please see [the colophon](https://pentandra.com/colophon/) for more
 raving attributions!
+
+[GitFlow]: <http://nvie.com/posts/a-successful-git-branching-model/>
