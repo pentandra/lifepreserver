@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-vocab.git
-  revision: 731d4d43ad5819a4a412893d062ca4426a10c92e
+  revision: 7e8a02724084e7d221cfb97d4a2e948fdf574b50
   branch: develop
   specs:
     rdf-vocab (2.1.0)
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf.git
-  revision: 2f54dd5cb62ac44f2df059f1cdd6aff2c8b713b4
+  revision: e1ff91841066369b8917dd21be9564452a6ea18a
   branch: develop
   specs:
     rdf (2.1.0)
@@ -114,7 +114,7 @@ GEM
       htmlentities (>= 4.1.0)
       nokogiri (>= 1.5.0)
     htmlentities (4.3.4)
-    http-cookie (1.0.2)
+    http-cookie (1.0.3)
       domain_name (~> 0.5)
     http_parser.rb (0.6.0)
     httparty (0.13.0)
@@ -171,16 +171,15 @@ GEM
     msgpack (1.0.0)
     multi_json (1.12.1)
     multi_xml (0.5.5)
-    nanoc (4.3.3)
+    nanoc (4.3.4)
       cri (~> 2.3)
       hamster (~> 3.0)
       ref (~> 2.0)
     nenv (0.3.0)
     net-http-persistent (2.9.4)
     netrc (0.11.0)
-    nokogiri (1.6.8)
+    nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
-      pkg-config (~> 1.1.7)
     notiffany (0.1.1)
       nenv (~> 0.1)
       shellany (~> 0.0)
@@ -189,7 +188,6 @@ GEM
       unix-whereis (>= 0.1.0)
     pandoc-ruby (2.0.1)
     pipe-run (0.3.0)
-    pkg-config (1.1.7)
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -268,7 +266,7 @@ GEM
       rspec-core (~> 3.5.0)
       rspec-expectations (~> 3.5.0)
       rspec-mocks (~> 3.5.0)
-    rspec-core (3.5.3)
+    rspec-core (3.5.4)
       rspec-support (~> 3.5.0)
     rspec-expectations (3.5.0)
       diff-lcs (>= 1.2.0, < 2.0)
@@ -281,7 +279,7 @@ GEM
       rspec-support (~> 3.5.0)
     rspec-support (3.5.0)
     ruby-version (0.4.3)
-    ruby_dep (1.4.0)
+    ruby_dep (1.5.0)
     rubypants-unicode (0.2.5)
     safe_yaml (1.0.4)
     sass (3.4.22)
