@@ -179,13 +179,24 @@ furtherance of the ends aforesaid". These ends aforesaid, or the goals
 previously mentioned, were to undertake a voyage and to plant a new colony.
 They then made provision for the creation of laws "from time to time, as shall
 be thought most meet and convenient for the general good of the colony", and
-agreed to abide by the laws that would be created. A brilliant example of
-self-organization to meet a critical need.[^gardiner]
+agreed to abide by the laws that would be created.[^cultural-affordances]
 
 The agreement to come together and unite instead of doing it all separately and
 individually was such as simple thing, yet so far-reaching in its consequences.
-And it was good they did this, because they needed everyone that was able to
-help make it through that first winter. They needed that unity to survive.
+They didn't worry at that point about deciding on specifics such as laws; those
+details could be worked out later as the need arose. With the possibility of
+mutiny hanging over their heads, these two groups effectively said on that cold
+November day in New England: _for our own survival, we need to be and to move
+forward together_. A brilliant example of self-organization to meet a critical
+need.[^rough-winter]
+
+## A clash of cultures
+
+The next spring, the colonists had the opportunity to enter into an agreement
+with a group from another culture: Massasoit, the well-respected leader of the
+Wampanoag Indian tribe. 
+
+Squanto
 
 ## Our great decision
 
@@ -248,11 +259,11 @@ indeed can there be, or at least not anything that will bring together and
 unite the researchers of the world in such a way.
 
 <span class="newthought">I see here an opportunity to do something</span> that
-never has been done before, something that would improve the lives of everyone,
-and to do it for the right reasons. The Scholarly Commons will not only give
-more freedom to the professional researchers, but will open up opportunities
-for many more people to become involved in knowledge work, and make knowledge
-itself more free and abundant.
+has never been done before---something that would improve the lives of
+everyone, and to do it for the right reasons. The Scholarly Commons will not
+only give more freedom to the professional researchers, but will open up
+opportunities for many more people to become involved in knowledge work, and
+make knowledge itself more free and abundant.
 
 <figure id="fig:jefferson" class="bq grab">
   <blockquote>
@@ -318,18 +329,10 @@ come? I see these conversations, however uncomfortable, candid, or mind-blowing
 as the beginning of the commons! They have to happen, and the important thing
 is that we create a culture of learning: that we're willing to learn and grow
 and change as we go. This new land that we have embarked upon is full of ripe
-possibility. What is important is that we agree to come together and unite to
-do something greater than any of us, and that we involve as many voices as
-would like to be heard so we can create something well-rounded and balanced. We
-need something that everyone can touch.
-
-Even after making that decision, I have a hundred more questions, including:
-
-* What is scholarship?
-* What does it mean to common through research?
-* What is the role of principles in the commons?
-* How do we make our processes of sharing more effective?
-* Who else needs to be involved?
+possibility. What is important is that we commit to come together to do
+something greater than any of us, and that we involve as many voices as would
+like to be heard so we can create something well-rounded and balanced. We need
+something that everyone can touch.
 
 Since we can't stop the world while we answer these questions, we need leaders
 who have made the initial decision to come together and move forward, and have
@@ -426,7 +429,7 @@ creating a commons for science and scholarship for the good of all mankind.
     and printed in entirety for the first time in <span
     class="oldstyle">1854</span>.
 
-[^gardiner]:
+[^cultural-affordances]:
 
     In a footnote of a later edition of Bradford's history,[^bradford] a
     quotation from Gardiner's <cite>History of England</cite>, <span
@@ -449,8 +452,9 @@ creating a commons for science and scholarship for the good of all mankind.
     {:.bq.grab lang="en-GB"}
 
     This echoes my own thoughts, that the New World and the Scholarly Commons
-    are less about _land_, but about the _affordance_ of the new culture and
-    sociality of that new land, or that the positioning of that land provided.
+    are less about _land_ per se, but about the _affordance_ of the new culture
+    and sociality of that new land, or that the positioning of that land
+    provided.
 
 [^commons]:
 
@@ -488,6 +492,12 @@ creating a commons for science and scholarship for the good of all mankind.
     conception of the Scholarly Commons as a break from the old ways: something
     completely new, not an incremental redesign of our current system of
     scholarly communication.
+
+[^rough-winter]:
+
+    And it was good they did this too, because they needed everyone that was
+    able to help to make it through that first winter. More than half of the
+    colonists died that winter, and the rest needed that unity to survive.
 
 <% content_for :javascripts do %>
 <script>
