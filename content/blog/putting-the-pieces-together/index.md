@@ -453,7 +453,7 @@ creating a commons for science and scholarship for the good of all mankind.
 
     This echoes my own thoughts, that the New World and the Scholarly Commons
     are less about _land_ per se, but about the _affordance_ of the new culture
-    and sociality of that new land, or that the positioning of that land
+    and sociality of that new land, or that the positioning of that land,
     provided.
 
 [^commons]:
