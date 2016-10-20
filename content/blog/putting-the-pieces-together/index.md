@@ -198,7 +198,33 @@ Wampanoag Indian tribe.
 
 Squanto
 
-## Our great decision
+## A new land of opportunity
+
+Now, as April Hathcock has [so nicely articulated][april], we need _real
+conversation_ to take place to take advantage of this opportunity. We need to
+learn from each other, the North from the South, the West from the East, and
+vice versa. This can't be a colonialization of the world by the Global North.
+This would be an epic failure. The Scholarly Commons needs to be rather a
+[_colonization_][colonization] of _a new land of shared practice_ by people
+from all parts of the world, nations, cultures, and languages, that are willing
+to say that we can do better, and we will do it together. It is a space where
+we can bring together the best of our cultures. We need the widespread open
+culture of the South (which is exemplified in efforts such as [SciELO]). We
+need to leave behind the ego or prestige culture of the North. It may be that
+the North has further to travel, and that the South may not have as far to go.
+Whichever way you see it, we need to continue these conversations. The fact
+that these conversations are happening at all is a good thing. We're all coming
+at this from where we are. But is there any other place from which we _could_
+come? I see these conversations, however uncomfortable, candid, or mind-blowing
+as the beginning of the commons! They have to happen, and the important thing
+is that we create a culture of learning: that we're willing to learn and grow
+and change as we go. This new land that we have embarked upon is full of ripe
+possibility. What is important is that we commit to come together to do
+something greater than any of us, and that we involve as many voices as would
+like to be heard so we can create something well-rounded and balanced. We need
+something that everyone can touch.
+
+# Our great decision
 
 We also face a critical decision at this point in time. Our choice is not about
 winter survival in a cold bay in New England, but the Scholarly Commons _could
@@ -310,30 +336,6 @@ tomorrow, when it comes down to it, most of us have to do whatever our
 higher-ups tell us to do! How do we develop the capacity and urgency to make
 this choice in some sort of collective, unified way?
 
-Now, as April Hathcock has [so nicely articulated][april], we need _real
-conversation_ to take place to take advantage of this opportunity. We need to
-learn from each other, the North from the South, the West from the East, and
-vice versa. This can't be a colonialization of the world by the Global North.
-This would be an epic failure. The Scholarly Commons needs to be rather a
-[_colonization_][colonization] of _a new land of shared practice_ by people
-from all parts of the world, nations, cultures, and languages, that are willing
-to say that we can do better, and we will do it together. It is a space where
-we can bring together the best of our cultures. We need the widespread open
-culture of the South (which is exemplified in efforts such as [SciELO]). We
-need to leave behind the ego or prestige culture of the North. It may be that
-the North has further to travel, and that the South may not have as far to go.
-Whichever way you see it, we need to continue these conversations. The fact
-that these conversations are happening at all is a good thing. We're all coming
-at this from where we are. But is there any other place from which we _could_
-come? I see these conversations, however uncomfortable, candid, or mind-blowing
-as the beginning of the commons! They have to happen, and the important thing
-is that we create a culture of learning: that we're willing to learn and grow
-and change as we go. This new land that we have embarked upon is full of ripe
-possibility. What is important is that we commit to come together to do
-something greater than any of us, and that we involve as many voices as would
-like to be heard so we can create something well-rounded and balanced. We need
-something that everyone can touch.
-
 Since we can't stop the world while we answer these questions, we need leaders
 who have made the initial decision to come together and move forward, and have
 the vision, patience, and determination to find answers and make the needed
@@ -342,6 +344,8 @@ diffusion of innovations][diffusion], or how innovations permeate society, and
 in this I think we can find some clues as to how we move forward. There are
 communities that are ready to work in new ways. We need to find these early
 adopters and experiment with new ways of working together.
+
+## The emergence of a <i>counter</i>culture
 
 Going forward, there needs to be an emphasis on practice. We have gathered all
 of these great ideas, and spent a lot of time distilling principles, but we
@@ -357,6 +361,15 @@ rightly so. This is where it needs to start. But I think going forward we need
 to think more broadly, and reconsider the academy in a bigger context, with the
 end goals and needs of a much more diverse population in mind. We need a
 commons for the people, not for the institutions.
+
+## The scholar-commoner
+
+The SC starts inside the heart and mind of each individual.
+
+We need researchers that are not biased against humanity.
+
+The Scholarly Commons is an opportunity to forgive, move forward, and overcome
+the effects of colonialism. Greed vs
 
 # TL;DR
 
@@ -405,6 +418,10 @@ creating a commons for science and scholarship for the good of all mankind.
 [diffusion]: <https://en.wikipedia.org/wiki/Diffusion_of_innovations> "Diffusion of Innovations on Wikipedia"
 [Massasoit]: <https://en.wikipedia.org/wiki/Massasoit> "Massasoit on Wikipedia"
 [groups]: <http://cameronneylon.net/blog/whos-in-the-club-new-frames-for-understanding-knowledge-sharing/> "Who’s in the Club? New frames for understanding knowledge sharing by Cameron Neylon"
+[neocolonialism]: <https://en.wikipedia.org/wiki/Neocolonialism> "Neocolonialism on Wikipedia"
+[subaltern]: <https://en.wikipedia.org/wiki/Subaltern_(postcolonialism)> "Subaltern on Wikipedia"
+[othering]: <https://en.wikipedia.org/wiki/Other> "Other on Wikipedia"
+[colonial mentality]: <https://en.wikipedia.org/wiki/Colonial_mentality> "Colonial mentality on Wikipedia"
 
 *[SciELO]: Scientific Electronic Library Online
 *[TL;DR]: Too Long; Didn't Read
