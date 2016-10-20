@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-vocab.git
-  revision: 7e8a02724084e7d221cfb97d4a2e948fdf574b50
+  revision: 4748329efb8a9671c465556e8fd813f3d7ad6878
   branch: develop
   specs:
     rdf-vocab (2.1.0)
@@ -168,10 +168,10 @@ GEM
     mime-types-data (3.2016.0521)
     mini_portile2 (2.1.0)
     minitest (5.9.1)
-    msgpack (1.0.0)
+    msgpack (1.0.2)
     multi_json (1.12.1)
     multi_xml (0.5.5)
-    nanoc (4.3.4)
+    nanoc (4.3.5)
       cri (~> 2.3)
       hamster (~> 3.0)
       ref (~> 2.0)
