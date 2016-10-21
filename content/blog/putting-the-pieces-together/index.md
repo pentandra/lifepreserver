@@ -29,10 +29,12 @@ has_media: true
 </figure>
 
 Last week I had the opportunity to participate in the second workshop of the
-Defining the Scholarly Commons project (I covered the first workshop in [an
-earlier blog posting][reimagining]). As you can tell from the squiggly line
-above, our course has not been linear, neither has it been smooth sailing. We
-have learned a lot, however, and even made some progress in the meantime.
+Defining the Scholarly Commons project (I covered the first workshop in <%=
+link_to('an earlier blog posting', '/blog/reimagining-research-communications/',
+title: 'Pentandra Blog → Reimagining Research Communications') %>.
+As you can tell from the squiggly line above, our course has not been linear,
+neither has it been smooth sailing. We have learned a lot, however, and even
+made some progress in the meantime.
 
 <!--MORE-->
 
@@ -98,9 +100,9 @@ groundbreaking opportunity here, and it is critical that we do it right.
 
 <span class="newthought">I want to put forward here an alternative
 approach</span> to explaining where I think we are right now by comparing our
-situation with the situation of several early groups that encountered
-challenges somewhat parallel to what we're facing at this time. Maybe it's that
-Cameron Neylon has me [thinking about groups][groups] lately, but these
+situation with a few experiences of several early groups that encountered
+challenges similar in principle to what we're facing at this time. Maybe it's
+that Cameron Neylon has me [thinking about groups][groups] lately, but these
 particular groups stick out in history to me[^disclaimer] because of their
 unique accomplishments and the effects of their shared culture despite the fact
 that they came together from such distinctly divergent backgrounds and points
@@ -138,16 +140,6 @@ society---a shared culture---that had such an impact on the early culture of
 the United States that we still celebrate this time of our history during our
 [Thanksgiving holiday][thanksgiving].
 
-{::comment}
-Now what we're doing here is not religious in nature, but I do see similarities
-in the motivations and desires between the two experiences. Many are stuck in a
-system where they don't have freedom to practice they way they would like to.
-In saying this, I'm not trying to say that being able to publish something open
-access is as important as the free practice of religion, or that professional
-researchers have suffered as much as those early Christians, or that I'm trying
-to cast people into stereotypes, which I'm not.
-{:/comment}
-
 ## An agreement to unite
 
 After setting off for the New World, this group encountered difficulties that
@@ -181,14 +173,14 @@ They then made provision for the creation of laws "from time to time, as shall
 be thought most meet and convenient for the general good of the colony", and
 agreed to abide by the laws that would be created.[^cultural-affordances]
 
-The agreement to come together and unite instead of doing it all separately and
-individually was such as simple thing, yet so far-reaching in its consequences.
-They didn't worry at that point about deciding on specifics such as laws; those
-details could be worked out later as the need arose. With the possibility of
-mutiny hanging over their heads, these two groups effectively said on that cold
-November day in New England: _for our own survival, we need to be and to move
-forward together_. A brilliant example of self-organization to meet a critical
-need.[^rough-winter]
+The agreement to deliberately come together and unite instead of doing it all
+separately and individually (or just letting whatever happen), was such a
+simple thing, yet so far-reaching in its consequences. They didn't worry at
+that point about deciding on specifics such as laws; those details could be
+worked out later as the need arose. With the possibility of mutiny hanging over
+their heads, these two groups effectively said on that cold November day in New
+England: _for our own survival, we need to be and to move forward together_. A
+brilliant example of self-organization to meet a critical need.[^rough-winter]
 
 ## A clash of cultures
 
@@ -199,6 +191,16 @@ Wampanoag Indian tribe.
 Squanto
 
 ## A new land of opportunity
+
+{::comment}
+Now what we're doing here is not religious in nature, but I do see similarities
+in the motivations and desires between the two experiences. Many are stuck in a
+system where they don't have freedom to practice they way they would like to.
+In saying this, I'm not trying to say that being able to publish something open
+access is as important as the free practice of religion, or that professional
+researchers have suffered as much as those early Christians, or that I'm trying
+to cast people into stereotypes, which I'm not.
+{:/comment}
 
 Now, as April Hathcock has [so nicely articulated][april], we need _real
 conversation_ to take place to take advantage of this opportunity. We need to
@@ -347,6 +349,28 @@ adopters and experiment with new ways of working together.
 
 ## The emergence of a <i>counter</i>culture
 
+Using the language of Christopher Alexander's book <cite>[Notes on the
+Synthesis of Form]</cite>, this problem could be viewed as a problem of
+_fitness_. The old form that [Henry Oldenburg designed][PhilTrans venture] has
+outlived its purpose, and does not fit the needs of our situation anymore. We
+need a new form or _culture_ of scholarship that fits the current context.
+
+However, according to Alexander, we cannot see the context to which we are
+trying to fit a new form, except for when the new form doesn't fit. We don't
+notice stuff that is right, we just see things that don't fit because they
+clash. So how can we _consciously_ design a new form that fits an invisible
+context which is so complex that we can't fully wrap our brains around it, even
+if we could see it?
+
+I don't see this as a mutinous rebellion, and I'm not advocating a mass
+uprising against the institutional powers-that-be. We don't want every
+researcher to quit their job or go on strike. What we need is a better
+alternative---a counterculture that people will find and to which they can
+align themselves as they are ready. We need a sandbox that will allow these new
+[patterns] and forms to be discovered and safely evolve without the risk of
+disruption or abolition by the hegemonies of the current
+system.[^cultural-affordances]
+
 Going forward, there needs to be an emphasis on practice. We have gathered all
 of these great ideas, and spent a lot of time distilling principles, but we
 need to show what scholarly commoning looks like. We need mechanisms for
@@ -370,6 +394,8 @@ We need researchers that are not biased against humanity.
 
 The Scholarly Commons is an opportunity to forgive, move forward, and overcome
 the effects of colonialism. Greed vs
+
+If we took away the current incentives, why would anyone do it?
 
 # TL;DR
 
@@ -399,7 +425,6 @@ creating a commons for science and scholarship for the good of all mankind.
 # Notes
 {:.no_toc}
 
-[reimagining]: </blog/reimagining-research-communications/> "Pentandra Blog → Reimagining Research Communications"
 [the law of two feet]: <https://en.wikipedia.org/w/index.php?title=Open_Space_Technology&oldid=737741556#Law_of_two_feet> "The Law of Two Feet on Wikipedia"
 [vizcaino]: <https://en.wikipedia.org/wiki/Sebasti%C3%A1n_Vizca%C3%ADno> "Sebastián Vizcaíno on Wikipedia"
 [Plymouth Colony]: <https://en.wikipedia.org/wiki/Plymouth_Colony> "Plymouth Colony on Wikipedia"
@@ -422,6 +447,9 @@ creating a commons for science and scholarship for the good of all mankind.
 [subaltern]: <https://en.wikipedia.org/wiki/Subaltern_(postcolonialism)> "Subaltern on Wikipedia"
 [othering]: <https://en.wikipedia.org/wiki/Other> "Other on Wikipedia"
 [colonial mentality]: <https://en.wikipedia.org/wiki/Colonial_mentality> "Colonial mentality on Wikipedia"
+[PhilTrans venture]: </blog/introducing-research-cases/#p[IeHHpw],h[IeHHpw,2,3,4]> "Henry Oldenburg's plan to produce the Philosophical Transactions"
+[Notes on the Synthesis of Form]: <https://en.wikipedia.org/wiki/Notes_on_the_Synthesis_of_Form> "Some info about 'Notes on the Synthesis of Form' on Wikipedia"
+[patterns]: <http://blogs.agu.org/geospace/2016/06/23/can-commons-design-pattern-lexicon-show-open-science-destination/> "Can a commons design-pattern lexicon show open-science to its destination? by Bruce Caron"
 
 *[SciELO]: Scientific Electronic Library Online
 *[TL;DR]: Too Long; Didn't Read
