@@ -1082,7 +1082,7 @@ research systems.
     class="oldstyle">(2013--2014)</span>, a good portion of the archive's lost
     budget was restored. You can track the progress on
     [georgiaarchivesmatters.org](http://georgiaarchivesmatters.org/).
-    
+
 [^RWA]: The [Research Works Act][RWA]
     (<abbr>HR</abbr> <span class="oldstyle">3699</span>) would in effect repeal
     <abbr title="National Institutes of Health">NIH</abbr>'s 
@@ -1218,7 +1218,7 @@ research systems.
     {: .section }
 
     <figure id="petersuber" class="section">
-      
+
       <audio id="suberinterview" preload="none" controls="controls">
         <source src="SuberPodcast_mp3.mp3" type="audio/mpeg" />
         <source src="SuberPodcast_ogg.ogg" type="audio/ogg" /> 

@@ -87,7 +87,11 @@ module LifePreserver
     end
 
     def prepare_item_for_feed(item, summary: false)
-      absolutify_links(item, summary ? post_summary(item) : item.compiled_content)
+      content = summary ? post_summary(item) : item.compiled_content
+
+      prepared_content = absolutify_links(item, content)
+      prepared_content = rubypantsify(item, prepared_content)
+      prepared_content
     end
 
     def article_id(article)
