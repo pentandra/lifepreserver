@@ -1,8 +1,6 @@
 preprocess do
   @config[:google_api_key] = Nenv.lifepreserver_api_key
 
-  @config[:production] = @config.unwrap.env_name == 'production'
-
   populate_version_history
 
   def assign_date_to_all_items
@@ -68,8 +66,8 @@ preprocess do
 
   mark_items_as_hidden_that_should_be_hidden
 
-  include_analytics if @config[:production]
-  include_hypothesis if @config[:production]
+  include_analytics if @config[:google_analytics]
+  include_hypothesis if @config[:hypothesis]
   include_video_partials_when_has_media
 
   extract_metadata_from_specification_documents

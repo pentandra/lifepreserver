@@ -38,7 +38,77 @@ checks:
   internal_links:
     exclude: ['^/blog/feed']
 
-base_url: &base_url "https://pentandra.com"
+environments:
+  default: &default
+    base_url: &base_url "https://pentandra.com"
+
+    kramdown:
+      auto_ids: true
+      auto_id_prefix: "sec:"
+      auto_id_stripping: true
+      toc_levels: 1..3
+      syntax_highlighter: nil
+      header_offset: 1
+
+    geungle:
+      live: false
+
+    qrcode:
+      size: 25
+      module_size: 2
+      color: "#544233"
+
+    git:
+      url: "https://github.com/pentandra/lifepreserver.git"
+      browse_url: "https://github.com/pentandra/lifepreserver"
+      tag_url: "https://github.com/pentandra/lifepreserver/releases/tag"
+      version_history_url: "https://github.com/lifepreserver/commits/master"
+
+    site: &site
+      name: Pentandra
+      motto: Breaking Research Barriers
+      recent_thoughts_limit: 5
+      base_url: *base_url
+      images_url: /images
+      search_url: /search
+
+    blog:
+      title: The Pentandra Blog
+      author_name: Pentandra
+      author_uri: *base_url
+      url: /blog
+      tags_url: /tags
+      archives_url: /archives
+      authors_url: /authors
+      feed_url: /blog/feed
+
+    company:
+      page_url: /company
+      logo_uri: &logo_uri "https://pentandra.com/images/pentandra-logo.png"
+      photo_uri: *logo_uri
+
+  development:
+    <<: *default
+
+    site:
+      <<: *site
+      recent_thoughts_limit: 0
+
+    include_drafts: true
+
+    context2pdf:
+      debug: true
+      trackers: [ 'graphics.locating' ]
+
+  production:
+    <<: *default
+
+    google_analytics:
+      code: UA-26002603-1
+      site: pentandra.com
+
+    hypothesis: true
+    production: true
 
 deploy:
   public:
@@ -49,52 +119,3 @@ deploy:
     kind: rsync
     dst: "vlad@rebikov.process.tree:/srv/http/lifepreserver"
     options: [ '-gpPrtvz', '--delete-after' ]
-
-kramdown:
-  auto_ids: true
-  auto_id_prefix: "sec:"
-  auto_id_stripping: true
-  toc_levels: 1..3
-  syntax_highlighter: nil
-  header_offset: 1
-
-git:
-  url: "https://github.com/pentandra/lifepreserver.git"
-  browse_url: "https://github.com/pentandra/lifepreserver"
-  tag_url: "https://github.com/pentandra/lifepreserver/releases/tag"
-  version_history_url: "https://github.com/lifepreserver/commits/master"
-
-site:
-  name: Pentandra
-  motto: Breaking Research Barriers
-  recent_thoughts_limit: 5
-  base_url: *base_url
-  images_url: /images
-  search_url: /search
-
-blog:
-  title: The Pentandra Blog
-  author_name: Pentandra
-  author_uri: *base_url
-  url: /blog
-  tags_url: /tags
-  archives_url: /archives
-  authors_url: /authors
-  feed_url: /blog/feed
-
-company:
-  page_url: /company
-  logo_uri: &logo_uri "https://pentandra.com/images/pentandra-logo.png"
-  photo_uri: *logo_uri
-
-geungle:
-  live: false
-
-google_analytics:
-  code: UA-26002603-1
-  site: pentandra.com
-
-qrcode:
-  size: 25
-  module_size: 2
-  color: "#544233"
