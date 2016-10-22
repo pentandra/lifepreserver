@@ -7,6 +7,7 @@ prune:
 
 data_sources:
   - type: filesystem
+    content_dir: items
 
   - type: dependencies
     items_root: /project
