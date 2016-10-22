@@ -9,7 +9,7 @@ Class.new(Nanoc::Filter) do
     require 'fileutils'
 
     debug = params.fetch(:debug, false)
-    mode = params.fetch(:mode, :draft)
+    mode = params.fetch(:mode, 'draft')
     trackers = params.fetch(:trackers, [])
 
     unless system('which', 'context', out: '/dev/null')

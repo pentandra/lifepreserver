@@ -145,47 +145,47 @@
     numbercommand=\cap\bf,
   ]
 
-%\defineoverlay
-  %[draftnotice]
-  %[
-    %{\framed[
-              %frame=off,
-              %foregroundcolor=middlegray,
-            %]
-            %{\scale[
-                     %sx=4,
-                     %sy=4,
-                   %]
-                   %{\rotate[rotation=90.0]{\cap{Draft Benefit Report [\currentdate[year,--,mm,--,dd]]}}}%
-            %}%
-    %}%
-  %]
+\defineoverlay
+  [draftnotice]
+  [
+    {\framed[
+              frame=off,
+              foregroundcolor=middlegray,
+            ]
+            {\scale[
+                     sx=4,
+                     sy=4,
+                   ]
+                   {\rotate[rotation=90.0]{\cap{Draft Benefit Report [\currentdate[year,--,mm,--,dd]]}}}%
+            }%
+    }%
+  ]
 
-%\definelayer
-  %[panel]
-  %[
-    %x=0pt,
-    %y=0pt,
-    %width=\paperwidth,
-    %height=\paperheight,
-    %state=repeat,
-  %]
+\definelayer
+  [panel]
+  [
+    x=0pt,
+    y=0pt,
+    width=\paperwidth,
+    height=\paperheight,
+    state=repeat,
+  ]
 
-%\doifnotmode
-  %{publish}
-  %{
-    %\setlayer
-      %[panel]
-      %{\framed[
-                %frame=off,
-                %width=\dimexpr\backspace-\leftmarginwidth-\leftmargindistance\relax,
-                %height=\paperheight,
-                %background=draftnotice,
-              %]
-              %{}%
-      %}%
-  %}
+\doifnotmode
+  {publish}
+  {
+    \setlayer
+      [panel]
+      {\framed[
+                frame=off,
+                width=\dimexpr\backspace-\leftmarginwidth-\leftmargindistance\relax,
+                height=\paperheight,
+                background=draftnotice,
+              ]
+              {}%
+      }%
+  }
 
-%\setupbackgrounds
-  %[paper]
-  %[background=panel]
+\setupbackgrounds
+  [paper]
+  [background=panel]
