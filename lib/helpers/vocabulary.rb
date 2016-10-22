@@ -35,8 +35,8 @@ module LifePreserver
     #
     # @return [Array, Hash]
     def vocabularies_for(name)
-      vocabs = @items.find_all("/project/vocabularies/#{name}/*")
-      vocabs.present? ? vocabs : @items["/project/vocabularies/*/#{name}"]
+      vocabs = @items.find_all("/_project/vocabularies/#{name}/*")
+      vocabs.present? ? vocabs : @items["/_project/vocabularies/*/#{name}"]
     end
 
   end
