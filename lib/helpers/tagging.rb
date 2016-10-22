@@ -22,7 +22,7 @@ module LifePreserver
     end
 
     def tags
-      blk = -> { @items.find_all('/project/tags/*') }
+      blk = -> { @items.find_all('/_project/tags/*') }
       if @items.frozen?
         @tag_items ||= blk.call
       else
@@ -53,7 +53,7 @@ module LifePreserver
     # Returns a link to the specified tag.
     def link_for_tag(tag, rel_tag: true)
       if tag.is_a?(String)
-        tag = @items["/project/tags/#{tag.to_slug}"]
+        tag = @items["/_project/tags/#{tag.to_slug}"]
         raise ArgumentError, "Tag metadata does not yet exist in `etc/tags.yaml` for the tag '#{tag}'. Please add the tag first and then try again." unless tag
       end
 
@@ -89,7 +89,7 @@ module LifePreserver
     # Creates in-memory tag pages for a collection of items
     def generate_tag_pages(items = nil)
       items = @items if items.nil?
-      tag_set(items).map { |tag| @items["/project/tags/#{tag.to_slug}"] }.each do |tag|
+      tag_set(items).map { |tag| @items["/_project/tags/#{tag.to_slug}"] }.each do |tag|
         @items.create(
           %[<%= render("/blog/tag.*", tag: @items["#{tag.identifier}"]) %>],
           { title: "Tag: #{tag.fetch(:label, tag.raw_content)}", kind: "tag-page", is_hidden: true, description: "All posts having to do with the tag '#{tag.raw_content}'" },

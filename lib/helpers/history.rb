@@ -14,7 +14,7 @@ module History
   end
 
   def sorted_dependencies
-    @items.find_all('/project/dependencies/*').sort_by(&:identifier)
+    @items.find_all('/_project/dependencies/*').sort_by(&:identifier)
   end
 
 end

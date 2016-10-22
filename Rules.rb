@@ -2,7 +2,7 @@ include_rules 'rules/preprocessing'
 
 # Things to ignore globally
 ignore '/**/_*'
-ignore '/project/**/*'
+ignore '/_*/**/*'
 ignore '/**/README.md'
 
 include_rules 'rules/javascripts'

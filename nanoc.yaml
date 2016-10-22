@@ -10,13 +10,13 @@ data_sources:
     content_dir: items
 
   - type: dependencies
-    items_root: /project
+    items_root: /_project
 
   - type: tags
-    items_root: /project
+    items_root: /_project
 
   - type: vocabularies
-    items_root: /project
+    items_root: /_project
     prefixes_used:
       standard:   [ cc, ctag, dc, foaf, owl, prov, rdf, rdfs, schema, sioc, skos, xhv ]
       business:   [ essglobal, fea, rov, vcard ]
