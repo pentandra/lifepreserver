@@ -1,6 +1,6 @@
-[submodule "content/spec"]
+[submodule "specifications"]
 	path = specifications
 	url = git@github.com:pentandra/specifications.git
-[submodule "content/company/benefit-reports"]
+[submodule "items/company/benefit-reports"]
 	path = items/company/benefit-reports
 	url = git@github.com:pentandra/benefit-reports.git
