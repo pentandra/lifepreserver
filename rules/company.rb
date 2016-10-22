@@ -23,7 +23,7 @@ compile %r{/company/benefit-reports/(\d{4})/index\.md}, rep: :pdf do |fiscal_yea
   ]
   filter :absolutify_paths, type: :context
   layout '/benefit-reports/report.*'
-  filter :context2pdf, @config[:context2pdf]
+  filter :context2pdf, @config[:context2pdf].merge(mode: @item[:wip] ? 'draft' : 'publish')
   write File.dirname(item.identifier.to_s) + "/UT_Pentandra_report_#{fiscal_year}.pdf"
 end
 
