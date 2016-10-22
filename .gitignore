@@ -5,5 +5,5 @@ output.diff
 crash.log
 *.autosave
 *.bak
-/content/assets/components/
-/tmp/
+items/assets/components/
+tmp/
