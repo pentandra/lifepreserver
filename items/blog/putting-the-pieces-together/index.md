@@ -372,6 +372,14 @@ for anyone to repurpose or modify to fit a particular need, so that commoning
 is co-created from practice, rather than being a set of principles that we try
 to _fit_ into an existing situation.
 
+If it looks the same and feels the same, then what have we changed? We have to
+stand for something.
+
+In making this argument, I'm making a few assumptions. The first is that more
+knowledge and understanding is a good thing. The second is that sharing is
+better than not sharing. Sharing is good because it creates new knowledge
+(which is good according to my first assumption).
+
 I think that we need a broader strategy, and a more holistic and inclusive
 approach to building a commons. We've focused institutionally so far, and
 rightly so. This is where it needs to start. But I think going forward we need
@@ -395,21 +403,13 @@ depiction of the <i>rational man</i> by economists as a self-interested person
 that only cares about his own gain. This is the man upon which Garrett Hardin
 based the <cite>[Tragedy of the Commons]</cite>.
 
-This new kind of researcher is one that is
-
-We need researchers that are not biased against humanity.
+This new kind of researcher is one that is human, and willing to work outside
+of these stereotypes. One that cares about humanity.
 
 The Scholarly Commons is an opportunity to forgive, move forward, and overcome
 the effects of colonialism. Greed vs
 
 If we took away the current incentives, why would anyone do it?
-
-In making this argument, I'm making a few assumptions. The first is that more
-knowledge and understanding is a good thing. The second is that sharing is
-better than not sharing. Sharing is good because it creates new knowledge
-(which is good according to my first assumption). I see the Scholarly Commons
-as something that happens within each commoner. If it feels the same, then we
-haven't changed anything, have we?
 
 # TL;DR
 
