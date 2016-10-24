@@ -91,11 +91,11 @@ module LifePreserver
     end
 
     def post_summary(post, read_more_text: "Read more ⇢", separator: "<!--MORE-->")
-      summary,body = post.compiled_content.split(separator)
+      summary, body = post.compiled_content.split(separator)
       return summary unless body
 
-      link = link_to(post.fetch(:read_more, read_more_text), post.path, class: "readmore", title: "Read the full article")
-      return summary << %[<p class="readmore">#{link}</p>]
+      link = link_to(post.fetch(:read_more, read_more_text), post, class: "readmore", title: "Read the full article")
+      summary << %[<p class="readmore">#{link}</p>]
     end
 
     def prepare_item_for_feed(item, summary: false)
