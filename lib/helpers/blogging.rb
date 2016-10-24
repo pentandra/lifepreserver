@@ -60,12 +60,24 @@ module LifePreserver
       link_for_author(author, rel_tag: false)
     end
 
+    # Get the all the posts by the given author
+    # Does not create dependencies.
+    #
+    # @param posts [Enumerable] the posts to filter
+    # @param author_name [String] the name of the author
+    #
     def posts_by_author(posts, author_name)
-      posts.select { |post| post[:author_name] == author_name }
+      posts.select { |post| post.unwrap.attributes[:author_name] == author_name }
     end
 
+    # Get the all the posts created during the given year
+    # Does not create dependencies.
+    #
+    # @param posts [Enumerable] the posts to filter
+    # @param year [Number] the year
+    #
     def posts_by_year(posts, year)
-      posts.select { |post| post[:created_at].year == year }
+      posts.select { |post| post.unwrap.attributes[:created_at].year == year }
     end
 
     def link_for_archive(year)
