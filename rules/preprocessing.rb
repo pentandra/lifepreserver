@@ -51,6 +51,7 @@ preprocess do
   end
 
   generate_author_uris(published_blog_posts)
+
   generate_tag_pages(published_blog_posts)
   generate_author_pages(published_blog_posts)
   generate_blog_archives(published_blog_posts)
