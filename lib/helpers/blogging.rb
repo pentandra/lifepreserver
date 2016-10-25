@@ -43,8 +43,9 @@ module LifePreserver
       posts ||= @blog_posts
       authors = Set.new
       posts.each do |post|
-        next if post[:author_name].blank?
-        authors << post[:author_name].to_s
+        author_name = post.unwrap.attributes[:author_name]
+        next if author_name.blank?
+        authors << author_name.to_s
       end
       authors.to_a
     end
@@ -86,7 +87,7 @@ module LifePreserver
 
     def archive_years(posts = nil)
       posts ||= @blog_posts
-      years = posts.map { |a| a[:created_at].year }.uniq
+      years = posts.map { |a| a.unwrap.attributes[:created_at].year }.uniq
       years.to_a
     end
 

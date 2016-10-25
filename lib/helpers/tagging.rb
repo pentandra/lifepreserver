@@ -15,7 +15,7 @@ module LifePreserver
       res = Set.new
 
       tags.each do |tag|
-        res << tag[:tag] if items_with_tag(tag, items).any?
+        res << tag.unwrap.attributes[:tag] if items_with_tag(tag, items).any?
       end
 
       res.to_a.freeze
