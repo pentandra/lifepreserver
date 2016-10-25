@@ -28,6 +28,7 @@ data_sources:
       extra:      [ essglobal-activities, essglobal-legalform, essglobal-qualifiers, essglobal-typeoflabour, sioct, xsd ]
 
   - type: company
+    company_metafile: 'etc/company.yaml'
 
   - type: filesystem
     items_root: /specifications
