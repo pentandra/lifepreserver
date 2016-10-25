@@ -13,19 +13,6 @@
     %title
       = ont["rdfs:label"].first['@value']
     %link{rel: "stylesheet", href: "/css/specifications.css"}
-    :css
-      dl.terms dt {
-        float: left;
-        clear: left;
-        width: 17vw;
-      }
-      dl.terms dd:after {
-          content: '';
-          display: block;
-          clear: both;
-          margin-bottom: 5px;
-      }
-      table.rdfs-definition td {vertical-align: top;}
   - pfx = RDF::Vocabulary.find(ont['@id']).__name__.split(':').last.downcase
   - pfxs = prefixes.inject([]) {|m, (k,v)| m << "#{k}: #{v}"}.join(' ')
   - typeof = ont['@type'].map {|t| RDF::URI(t).pname}.join(' ')

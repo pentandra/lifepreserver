@@ -24,3 +24,19 @@
 
 @import "partials/nonsemantic";
 @import "partials/print";
+
+dl.terms dt {
+  float: left;
+  clear: left;
+  width: 17vw;
+  margin-top: 0;
+}
+
+dl.terms dd:after {
+  content: '';
+  display: block;
+  clear: both;
+  margin-bottom: 5px;
+}
+
+table.rdfs-definition td { vertical-align: top; }
