@@ -18,4 +18,3 @@ end
 route '/404.erb' do
   item.identifier.without_ext + '.html'
 end
-
