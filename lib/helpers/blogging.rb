@@ -43,8 +43,9 @@ module LifePreserver
       posts ||= @blog_posts
       authors = Set.new
       posts.each do |post|
-        next if post[:author_name].blank?
-        authors << post[:author_name].to_s
+        author_name = post.unwrap.attributes[:author_name]
+        next if author_name.blank?
+        authors << author_name.to_s
       end
       authors.to_a
     end
@@ -60,12 +61,24 @@ module LifePreserver
       link_for_author(author, rel_tag: false)
     end
 
+    # Get the all the posts by the given author
+    # Does not create dependencies.
+    #
+    # @param [Enumerable] posts the posts to filter
+    # @param [String] author_name the name of the author
+    #
     def posts_by_author(posts, author_name)
-      posts.select { |post| post[:author_name] == author_name }
+      posts.select { |post| post.unwrap.attributes[:author_name] == author_name }
     end
 
+    # Get the all the posts created during the given year
+    # Does not create dependencies.
+    #
+    # @param [Enumerable] posts the posts to filter
+    # @param [Number] year the year
+    #
     def posts_by_year(posts, year)
-      posts.select { |post| post[:created_at].year == year }
+      posts.select { |post| post.unwrap.attributes[:created_at].year == year }
     end
 
     def link_for_archive(year)
@@ -74,16 +87,16 @@ module LifePreserver
 
     def archive_years(posts = nil)
       posts ||= @blog_posts
-      years = posts.map { |a| a[:created_at].year }.uniq
+      years = posts.map { |a| a.unwrap.attributes[:created_at].year }.uniq
       years.to_a
     end
 
     def post_summary(post, read_more_text: "Read more ⇢", separator: "<!--MORE-->")
-      summary,body = post.compiled_content.split(separator)
+      summary, body = post.compiled_content.split(separator)
       return summary unless body
 
-      link = link_to(post.fetch(:read_more, read_more_text), post.path, class: "readmore", title: "Read the full article")
-      return summary << %[<p class="readmore">#{link}</p>]
+      link = link_to(post.fetch(:read_more, read_more_text), post, class: "readmore", title: "Read the full article")
+      summary << %[<p class="readmore">#{link}</p>]
     end
 
     def prepare_item_for_feed(item, summary: false)

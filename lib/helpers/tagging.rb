@@ -15,7 +15,7 @@ module LifePreserver
       res = Set.new
 
       tags.each do |tag|
-        res << tag.raw_content if items_with_tag(tag, items).any?
+        res << tag.unwrap.attributes[:tag] if items_with_tag(tag, items).any?
       end
 
       res.to_a.freeze
@@ -31,7 +31,7 @@ module LifePreserver
     end
 
     def sorted_tags
-      blk = -> { tags.sort_by { |t| t[:tag] } }
+      blk = -> { tags.sort_by { |t| t.unwrap.attributes[:tag] } }
       if @items.frozen?
         @sorted_tag_items ||= blk.call
       else
@@ -40,9 +40,14 @@ module LifePreserver
     end
 
     # Return true if an item has a specified tag
+    # Does not create a dependency.
+    #
+    # @param [Nanoc::ItemWithoutRepsView] item the item to check
+    # @param [String, Nanoc::ItemWithoutRepsView] tag the tag, either a string or tag item
+    # 
+    # @return true if item is tagged such, otherwise false
     def has_tag?(item, tag)
-      return false if item[:tags].nil?
-      item[:tags].include?(tag.is_a?(String) ? tag : tag.raw_content)
+      Array(item.unwrap.attributes[:tags]).include?(tag.is_a?(String) ? tag : tag[:tag])
     end
 
     def items_with_tag(tag, items = nil)
@@ -58,9 +63,9 @@ module LifePreserver
       end
 
       if rel_tag && tag[:semantic]
-        %[<a href="#{@config[:blog][:tags_url]}/#{h tag.raw_content.to_slug}/" rel="tag ctag:tagged" resource="##{h tag.raw_content.to_slug('_')}_tag" typeof="ctag:AuthorTag"><link property="ctag:means" resource="#{RDF::URI.new(tag[:uri]).pname}" typeof="#{RDF::URI.new(tag.fetch(:type, RDF::OWL.Thing)).pname}" /><span property="ctag:label">#{h tag.raw_content}</span></a>]
+        %[<a href="#{@config[:blog][:tags_url]}/#{h tag[:tag].to_slug}/" rel="tag ctag:tagged" resource="##{h tag[:tag].to_slug('_')}_tag" typeof="ctag:AuthorTag"><link property="ctag:means" resource="#{RDF::URI.new(tag[:uri]).pname}" typeof="#{RDF::URI.new(tag.fetch(:type, RDF::OWL.Thing)).pname}" /><span property="ctag:label">#{h tag[:tag]}</span></a>]
       else
-        %[<a href="#{@config[:blog][:tags_url]}/#{h tag.raw_content.to_slug}/"#{" rel=\"tag\"" if rel_tag}>#{h tag.raw_content}</a>]
+        %[<a href="#{@config[:blog][:tags_url]}/#{h tag[:tag].to_slug}/"#{" rel=\"tag\"" if rel_tag}>#{h tag[:tag]}</a>]
       end
     end
 
@@ -89,11 +94,11 @@ module LifePreserver
     # Creates in-memory tag pages for a collection of items
     def generate_tag_pages(items = nil)
       items = @items if items.nil?
-      tag_set(items).map { |tag| @items["/_project/tags/#{tag.to_slug}"] }.each do |tag|
+      tag_set(items).map { |tag_name| @items["/_project/tags/#{tag_name.to_slug}"] }.each do |tag|
         @items.create(
           %[<%= render("/blog/tag.*", tag: @items["#{tag.identifier}"]) %>],
-          { title: "Tag: #{tag.fetch(:label, tag.raw_content)}", kind: "tag-page", is_hidden: true, description: "All posts having to do with the tag '#{tag.raw_content}'" },
-          "#{@config[:blog][:tags_url]}/#{tag.raw_content.to_slug}/index.erb",
+          { title: "Tag: #{tag.fetch(:label, tag[:tag])}", kind: "tag-page", is_hidden: true, description: "All posts having to do with the tag '#{tag[:tag]}'" },
+          "#{@config[:blog][:tags_url]}/#{tag[:tag].to_slug}/index.erb",
           binary: false
         )
       end

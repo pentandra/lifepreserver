@@ -5,7 +5,7 @@ Class.new(Nanoc::DataSource) do
   identifier :company
 
   def up
-    @company_info = YAML.load_file('etc/company.yaml').deep_symbolize_keys
+    @company_info = YAML.load_file(@config[:company_metafile]).deep_symbolize_keys
   end
 
   def items
@@ -13,7 +13,10 @@ Class.new(Nanoc::DataSource) do
 
     items << new_item(
       '',
-      { is_hidden: true }.merge(@company_info[:company]),
+      {
+        mtime: mtime_of(@config[:company_metafile]),
+        is_hidden: true
+      }.merge(@company_info[:company]),
       Nanoc::Identifier.new("/company/_"))
       
     @company_info[:people].each do |person|
@@ -40,6 +43,9 @@ Class.new(Nanoc::DataSource) do
       attributes.merge(person),
       Nanoc::Identifier.new("/company/people/_#{slug}"))
   end
-      
+
+  def mtime_of(meta_filename)
+    File.stat(meta_filename).mtime
+  end
 
 end

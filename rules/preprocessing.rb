@@ -3,13 +3,6 @@ preprocess do
 
   populate_version_history
 
-  def assign_date_to_all_items
-    @items.each do |item|
-      item[:created_at] = item.key?(:created_at) ? attribute_to_time(item[:created_at]) : Time.now
-      item[:updated_at] = attribute_to_time(item[:updated_at]) if item.key?(:updated_at)
-    end
-  end
-
   def mark_items_as_hidden_that_should_be_hidden
 
     hidden_predicates = [
@@ -58,11 +51,12 @@ preprocess do
   end
 
   generate_author_uris(published_blog_posts)
-  generate_tag_pages(published_blog_posts)
-  generate_author_pages(published_blog_posts)
-  generate_blog_archives(published_blog_posts)
 
-  assign_date_to_all_items
+  if @config[:site][:generate_blogmeta]
+    generate_tag_pages(published_blog_posts)
+    generate_author_pages(published_blog_posts)
+    generate_blog_archives(published_blog_posts)
+  end
 
   mark_items_as_hidden_that_should_be_hidden
 

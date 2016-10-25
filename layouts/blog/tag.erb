@@ -1,7 +1,7 @@
 <% render('/blog/default.*') do %>
   <div class="group">
 
-    <h1 property="schema:name"><%= "#{h tag.raw_content}" %> Articles</h1>
+    <h1 property="schema:name"><%= "#{h tag[:tag]}" %> Articles</h1>
 
     <% if tag[:semantic] %>
     <div class="bd">
@@ -10,7 +10,7 @@
         The <span class="tags"><%= link_for_tag(tag) %></span> tag represents the concept <a href="<%= tag[:uri] %>" title="<%= tag[:label] %> on DBpedia"><cite><%= tag[:label].downcase %></cite></a>, which is described as follows:
       
       </p>
-      <figure id="fig:<%= tag.raw_content.to_slug %>" class="bq rev" resource="#<%= tag.raw_content.to_slug('_') %>" typeof="schema:CreativeWork">
+      <figure id="fig:<%= tag[:tag].to_slug %>" class="bq rev" resource="#<%= tag[:tag].to_slug('_') %>" typeof="schema:CreativeWork">
         <blockquote property="schema:text" cite="<%= tag[:uri] %>">
           <%= parse_abstract(tag[:abstract]) %>
         </blockquote>

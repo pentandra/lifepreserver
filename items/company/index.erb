@@ -332,7 +332,7 @@ priority: 0.6
         property="foaf:member vcard:hasMember" typeof="schema:Person foaf:Person vcard:Individual"
         id="sec:<%= full_name(member).to_slug %>"
         class="teammember vcard bl<%= i.odd? ? ' ock' : '' %> item">
-        <meta property="vcard:rev" datatype="xsd:date" content="<%= simple_date(@item[:created_at]) %>" />
+        <meta property="vcard:rev" datatype="xsd:date" content="<%= simple_date(company[:mtime]) %>" />
         <link rev="schema:employee" resource="pentandra:company" />
         <link property="foaf:isPrimaryTopicOf" href="#sec:<%= full_name(member).to_slug %>" />
         <link property="vcard:hasGender" resource="vcard:<%= member[:gender].capitalize %>" />
@@ -391,7 +391,7 @@ priority: 0.6
     <div class="wrapper" about="pentandra:company">
       <h2>Give Us A Holler!</h2>
       <div class="bd">
-        <meta property="vcard:rev" datatype="xsd:date" content="<%= simple_date(@item[:created_at]) %>" />
+        <meta property="vcard:rev" datatype="xsd:date" content="<%= simple_date(company[:mtime]) %>" />
         <aside class="aside section">
           <h3 class="flush">Get Social</h3>
           <ul class="none">

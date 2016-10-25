@@ -5,7 +5,7 @@ compile '/assets/stylesheets/**/*.htc' do
 end
 
 compile '/assets/stylesheets/**/*' do
-  filter :sass, Compass.sass_engine_options
+  filter :compass, config_file: 'etc/compass/config.rb'
   write '/css/' + File.basename("#{@item.identifier.without_ext}#{fingerprint(@item[:filename]) if @config[:production]}.css")
 end
 

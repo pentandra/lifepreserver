@@ -28,6 +28,7 @@ data_sources:
       extra:      [ essglobal-activities, essglobal-legalform, essglobal-qualifiers, essglobal-typeoflabour, sioct, xsd ]
 
   - type: company
+    company_metafile: 'etc/company.yaml'
 
   - type: filesystem
     items_root: /specifications
@@ -68,11 +69,12 @@ environments:
       name: Pentandra
       motto: Breaking Research Barriers
       recent_thoughts_limit: 5
+      generate_blogmeta: true
       base_url: *base_url
       images_url: /images
       search_url: /search
 
-    blog:
+    blog: &blog
       title: The Pentandra Blog
       author_name: Pentandra
       author_uri: *base_url
@@ -93,8 +95,7 @@ environments:
     site:
       <<: *site
       recent_thoughts_limit: 0
-
-    include_drafts: true
+      generate_blogmeta: false
 
     context2pdf:
       debug: true

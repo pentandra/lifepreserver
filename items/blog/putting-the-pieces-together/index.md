@@ -320,13 +320,6 @@ technology to pull off something like a global commons of researchers, sharing
 as they go, almost instantaneously, the collective research of the world, ever
 expanding.
 
-In making this argument, I'm making a few assumptions. The first is that more
-knowledge and understanding is a good thing. The second is that sharing is
-better than not sharing. Sharing is good because it creates new knowledge
-(which is good according to my first assumption). I see the Scholarly Commons
-as something that happens within each commoner. If it feels the same, then we
-haven't changed anything, have we?
-
 # How can it be done?
 
 I'm going to step forward through time and back down to reality for a minute,
@@ -347,7 +340,7 @@ in this I think we can find some clues as to how we move forward. There are
 communities that are ready to work in new ways. We need to find these early
 adopters and experiment with new ways of working together.
 
-## The emergence of a <i>counter</i>culture
+## The necessity of a <i>counter</i>culture
 
 Using the language of Christopher Alexander's book <cite>[Notes on the
 Synthesis of Form]</cite>, this problem could be viewed as a problem of
@@ -379,6 +372,14 @@ for anyone to repurpose or modify to fit a particular need, so that commoning
 is co-created from practice, rather than being a set of principles that we try
 to _fit_ into an existing situation.
 
+If it looks the same and feels the same, then what have we changed? We have to
+stand for something.
+
+In making this argument, I'm making a few assumptions. The first is that more
+knowledge and understanding is a good thing. The second is that sharing is
+better than not sharing. Sharing is good because it creates new knowledge
+(which is good according to my first assumption).
+
 I think that we need a broader strategy, and a more holistic and inclusive
 approach to building a commons. We've focused institutionally so far, and
 rightly so. This is where it needs to start. But I think going forward we need
@@ -388,9 +389,22 @@ commons for the people, not for the institutions.
 
 ## The scholar-commoner
 
-The SC starts inside the heart and mind of each individual.
+This is where, at least to me, we come to the heart of what the Scholarly
+Commons is. While technology, efficiency, and all these social and cultural
+aspects are important, they are very abstract, high-level, and don't reach what
+I think the core of the Scholarly Commons is all about. The Scholarly Commons
+is about people---<em>changed</em> people. The change that we are hoping for
+must start inside the heart and mind of each individual.
 
-We need researchers that are not biased against humanity.
+We need a new kind of researcher. The current stereotype paints a researcher as
+aloof, caring only about himself and his next grant application. Researchers
+don't share because they're afraid of being scooped. This parallels the
+depiction of the <i>rational man</i> by economists as a self-interested person
+that only cares about his own gain. This is the man upon which Garrett Hardin
+based the <cite>[Tragedy of the Commons]</cite>.
+
+This new kind of researcher is one that is human, and willing to work outside
+of these stereotypes. One that cares about humanity.
 
 The Scholarly Commons is an opportunity to forgive, move forward, and overcome
 the effects of colonialism. Greed vs
@@ -450,6 +464,7 @@ creating a commons for science and scholarship for the good of all mankind.
 [PhilTrans venture]: </blog/introducing-research-cases/#p[IeHHpw],h[IeHHpw,2,3,4]> "Henry Oldenburg's plan to produce the Philosophical Transactions"
 [Notes on the Synthesis of Form]: <https://en.wikipedia.org/wiki/Notes_on_the_Synthesis_of_Form> "Some info about 'Notes on the Synthesis of Form' on Wikipedia"
 [patterns]: <http://blogs.agu.org/geospace/2016/06/23/can-commons-design-pattern-lexicon-show-open-science-destination/> "Can a commons design-pattern lexicon show open-science to its destination? by Bruce Caron"
+[Tragedy of the Commons]: <https://en.wikipedia.org/wiki/Tragedy_of_the_commons> "Tragedy of the commons on Wikipedia"
 
 *[SciELO]: Scientific Electronic Library Online
 *[TL;DR]: Too Long; Didn't Read
