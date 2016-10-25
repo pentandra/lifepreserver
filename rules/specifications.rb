@@ -1,6 +1,8 @@
-# Specification documents (N3)
+# Specification documents
 
 passthrough '/specifications/**/*.html'
+
+layout '/specifications/vocabulary.*', :rdf_distiller, format: :html
 
 compile '/specifications/**/*.ttl' do
   filter :rdf_distiller, format: :turtle
@@ -22,5 +24,3 @@ compile '/specifications/**/*.ttl', rep: :html do
   filter :html5small if @config[:production]
   write item.identifier.without_ext + '.html'
 end
-
-layout '/specifications/vocabulary.*', :rdf_distiller, format: :html
