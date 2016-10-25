@@ -1,6 +1,7 @@
 guard 'nanoc' do
   watch('nanoc.yaml')
   watch('Rules.rb')
+  watch(%r{^rules/.*$})
   watch(%r{^(items|layouts|lib)/.*$})
   watch('etc/dictionary')
   watch('etc/compass/compass.rb')
