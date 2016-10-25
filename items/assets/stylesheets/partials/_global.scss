@@ -352,6 +352,7 @@ input.button {
   }
 
   a {
+    font-weight: bold;
     display: inline-block;
     padding: 0 $tag-space + $hole-diameter 0 $tag-space;
     margin-right: $tag-space * 1.25;
