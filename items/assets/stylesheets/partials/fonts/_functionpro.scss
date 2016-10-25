@@ -34,36 +34,36 @@
 }
 
 @font-face {
-    font-family: $bold-font-family;
+    font-family: $base-font-family;
     src: url('/fonts/FunctionPro-Medium-webfont.eot');
     src: url('/fonts/FunctionPro-Medium-webfont.eot?#iefix') format('embedded-opentype'),
          url('/fonts/FunctionPro-Medium-webfont.woff') format('woff'),
          url('/fonts/FunctionPro-Medium-webfont.ttf') format('truetype'),
          url('/fonts/FunctionPro-Medium-webfont.svg#FunctionProBook') format('svg');
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: $oblique-font-family;
+    font-family: $base-font-family;
     src: url('/fonts/FunctionPro-BookOblique.eot');
     src: url('/fonts/FunctionPro-BookOblique.eot?#iefix') format('embedded-opentype'),
          url('/fonts/FunctionPro-BookOblique.woff') format('woff'),
          url('/fonts/FunctionPro-BookOblique.ttf') format('truetype'),
          url('/fonts/FunctionPro-BookOblique.svg#FunctionProBookOblique') format('svg');
     font-weight: normal;
-    font-style: normal;
+    font-style: oblique;
 }
 
 @font-face {
-    font-family: '$bold-oblique-font-family';
+    font-family: '$base-font-family';
     src: url('/fonts/FunctionPro-MediumOblique-webfont.eot');
     src: url('/fonts/FunctionPro-MediumOblique-webfont.eot?#iefix') format('embedded-opentype'),
          url('/fonts/FunctionPro-MediumOblique-webfont.woff') format('woff'),
          url('/fonts/FunctionPro-MediumOblique-webfont.ttf') format('truetype'),
          url('/fonts/FunctionPro-MediumOblique-webfont.svg#FunctionProMediumItalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
+    font-weight: bold;
+    font-style: oblique;
 }
 
 @font-face {
@@ -84,51 +84,21 @@ body, button, input, select, textarea { font-family: $base-font-family, sans-ser
 abbr, .abbr, .roman { font-family: $special-font-family; letter-spacing: 0.05em; text-transform: lowercase; }
 
 .normal {
-  font-family: $base-font-family, sans-serif;
+  font-style: normal;
 }
 
-em, .em, .intro {
-  font-family: $oblique-font-family, sans-serif;
-  font-weight: normal;
-  font-style: normal;
+em, .em, .intro, .sidenote {
+  font-style: oblique;
 
-  cite {
-    font-family: $base-font-family, sans-serif;
+  em, .em, cite {
     font-style: normal;
   }
 }
 
 .special, .oldstyle {
   font-family: $special-font-family, serif;
-  font-weight: normal;
-  font-style: normal;
 }
 
-.sidenote {
+i, cite, dfn { font-style: oblique; }
 
-  font-family: $oblique-font-family, sans-serif;
-  font-style: normal;
-
-  .em {
-    font-family: $base-font-family, sans-serif;
-    font-style: normal;
-  }
-}
-
-.bold {
-  font-family: $bold-font-family, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-
-  .special, .oldstyle {
-    font-weight: bold;
-  }
-}
-
-b, strong { @extend .bold; }
-
-i, cite, dfn { font-family: $oblique-font-family, sans-serif; font-style: normal; }
-
-dt, dt dfn { font-family: $bold-font-family, sans-serif; font-style: normal; }
-
-mark, .misspelled { background: #ff9; color: #000; @extend .bold; }
+dt, dt dfn { font-weight: bold; font-style: normal; }
