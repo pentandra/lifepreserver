@@ -63,8 +63,8 @@ module LifePreserver
     # Get the all the posts by the given author
     # Does not create dependencies.
     #
-    # @param posts [Enumerable] the posts to filter
-    # @param author_name [String] the name of the author
+    # @param [Enumerable] posts the posts to filter
+    # @param [String] author_name the name of the author
     #
     def posts_by_author(posts, author_name)
       posts.select { |post| post.unwrap.attributes[:author_name] == author_name }
@@ -73,8 +73,8 @@ module LifePreserver
     # Get the all the posts created during the given year
     # Does not create dependencies.
     #
-    # @param posts [Enumerable] the posts to filter
-    # @param year [Number] the year
+    # @param [Enumerable] posts the posts to filter
+    # @param [Number] year the year
     #
     def posts_by_year(posts, year)
       posts.select { |post| post.unwrap.attributes[:created_at].year == year }
