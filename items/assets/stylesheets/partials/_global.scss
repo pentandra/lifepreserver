@@ -326,6 +326,8 @@ a.button, input.button {
   @include border-radius($default-radius);
 }
 
+.bold { font-weight: bold; }
+
 input.button {
   border: 0;
   padding: 0;
