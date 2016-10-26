@@ -1,7 +1,7 @@
 # Company
 
 compile %r{/company/benefit-reports/\d{4}/index\.md} do
-  filter :erb, trim_mode: '>'
+  filter :erb, @config[:erb]
   filter :pandoc, args: [
     { from: :markdown, to: :html5 },
     { base_header_level: 2 },

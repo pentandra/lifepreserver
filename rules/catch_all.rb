@@ -1,7 +1,7 @@
 # HTML, ERB, and Markdown files
 
 compile '/**/*.erb' do
-  filter :erb, trim_mode: '>'
+  filter :erb, @config[:erb]
   filter :spellchecker unless @config[:production]
   layout '/default.*'
   filter :rubypantsunicode
@@ -32,4 +32,4 @@ route '/**/*' do
   item.identifier.to_s
 end
 
-layout '/**/*', :erb, trim_mode: '>'
+layout '/**/*', :erb, @config[:erb]
