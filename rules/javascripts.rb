@@ -1,7 +1,7 @@
 # Aggregated JavaScript scripts
  
 compile '/assets/scripts/*.js.erb' do
-  filter :erb, trim_mode: '>'
+  filter :erb, @config[:erb]
   filter :uglify_js if @config[:production]
   write '/js/' + File.basename("#{@item.identifier.without_exts}#{fingerprint(@item[:filename]) if @config[:production]}.js")
 end
