@@ -43,6 +43,9 @@ environments:
   default: &default
     base_url: &base_url "https://pentandra.com"
 
+    erb:
+      trim_mode: '>'
+
     kramdown:
       auto_ids: true
       auto_id_prefix: "sec:"
@@ -92,7 +95,7 @@ environments:
   development:
     <<: *default
 
-    site:
+    site: # Simplify dependencies for quicker compilation during development
       <<: *site
       recent_thoughts_limit: 0
       generate_blogmeta: false
