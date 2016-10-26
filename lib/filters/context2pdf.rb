@@ -13,7 +13,7 @@ Class.new(Nanoc::Filter) do
     trackers = params.fetch(:trackers, [])
 
     unless system('which', 'context', out: '/dev/null')
-			warn("Warning: `context` not found; PDF generation disabled.")
+      warn("Warning: `context` not found; PDF generation disabled.")
       File.write(output_filename, '')
       return
     end
