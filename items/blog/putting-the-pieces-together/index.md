@@ -188,7 +188,7 @@ The next spring, the colonists had the opportunity to enter into an agreement
 with a group from another culture: Massasoit, the well-respected leader of the
 Wampanoag Indian tribe. 
 
-Squanto
+Squanto and his friend.
 
 ## A new land of opportunity
 
@@ -413,12 +413,12 @@ If we took away the current incentives, why would anyone do it?
 
 # TL;DR
 
-So I had an assignment to write my thoughts in less than <span
-class="oldstyle">400</span> words as to what the Scholarly Commons _is_ and the
-direction that we go next for the principles. If you've made it this far in
-this post, you have realized how far I have failed. But if I was to sum up my
-thoughts into a very high-level statement of what the Scholarly Commons is,
-here's what I would say:
+So this essay started out as an assignment to write my thoughts in less than
+<span class="oldstyle">400</span> words as to what the Scholarly Commons _is_
+and the direction that we go next for the principles. If you've made it this
+far in this post, you have realized how far I have failed. But if I was to sum
+up my thoughts into a very high-level statement of what the Scholarly Commons
+is, here's what I would say:
 
 {:.big}
 

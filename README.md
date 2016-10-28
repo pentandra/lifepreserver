@@ -35,7 +35,7 @@ $ cd lifepreserver
 $ git submodule init
 $ git submodule update
 $ bower install
-$ bundle install
+$ bundle install --with=development
 ```
 
 ### Add experimental Nanoc feature for environments support (for now)
