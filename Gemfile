@@ -31,7 +31,6 @@ group :development, optional: true do
   gem 'guard'
   gem 'guard-nanoc'
   gem 'guard-livereload'
-  gem 'rbtrace'
   gem 'adsf'              # for nanoc view
   gem 'ghi'               # for GitHub issues
 end
