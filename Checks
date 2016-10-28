@@ -1,7 +1,15 @@
-deploy_check :internal_links
-deploy_check :mixed_content
-deploy_check :stale
-deploy_check :no_unprocessed_erb
+require 'open3'
+require 'json'
+
+check :html5 do
+  cmd = "java -jar opt/validator/vnu.jar --format json --skip-non-html --schema http://s.validator.nu/html5-all.rnc #{@config[:output_dir]}"
+  res = Open3.popen3(cmd) { |_stdin, _stdout, stderr| stderr.read }
+
+  JSON.parse(res).fetch('messages', []).each do |err|
+    subject = err['url'].sub(/^file:#{Regexp.escape File.dirname(__FILE__)}\//, '')
+    add_issue("#{err['message']} (line #{err['lastLine']}, column #{err['firstColumn']})", subject: subject)
+  end
+end
 
 check :no_unprocessed_erb do
   @output_filenames.each do |filename|
@@ -10,5 +18,19 @@ check :no_unprocessed_erb do
     end
   end
 end
+
+check :no_unprocessed_markdown do
+  @output_filenames.each do |filename|
+    if filename =~ /html$/ && File.read(filename).match(/]\(/)
+      add_issue('unprocessed markdown detected', subject: filename)
+    end
+  end
+end
+
+deploy_check :internal_links
+deploy_check :mixed_content
+deploy_check :stale
+deploy_check :no_unprocessed_erb
+deploy_check :no_unprocessed_markdown
 
 # vi: ft=ruby

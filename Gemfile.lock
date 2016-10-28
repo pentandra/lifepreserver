@@ -69,7 +69,7 @@ GEM
     cri (2.7.0)
       colored (~> 1.2)
     diff-lcs (1.2.5)
-    domain_name (0.5.20160826)
+    domain_name (0.5.20161021)
       unf (>= 0.0.5, < 1.0.0)
     ebnf (1.0.1)
       rdf (~> 2.0)
@@ -197,7 +197,7 @@ GEM
     pygmentize (0.0.3)
     rack (2.0.1)
     rainpress (1.0)
-    rb-fsevent (0.9.7)
+    rb-fsevent (0.9.8)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
     rbtrace (0.4.8)
@@ -309,7 +309,7 @@ GEM
     trollop (2.1.2)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    uglifier (3.0.2)
+    uglifier (3.0.3)
       execjs (>= 0.3.0, < 3)
     unf (0.1.4)
       unf_ext
@@ -318,9 +318,6 @@ GEM
       command-builder (>= 0.2.0)
       hash-utils (>= 0.18.0)
     vcardigan (0.0.9)
-    w3c_validators (1.2)
-      json
-      nokogiri
     webmock (1.24.6)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
@@ -361,7 +358,6 @@ DEPENDENCIES
   shortly
   uglifier
   vcardigan
-  w3c_validators
 
 BUNDLED WITH
    1.12.5
