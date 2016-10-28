@@ -318,9 +318,6 @@ GEM
       command-builder (>= 0.2.0)
       hash-utils (>= 0.18.0)
     vcardigan (0.0.9)
-    w3c_validators (1.2)
-      json
-      nokogiri
     webmock (1.24.6)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
@@ -361,7 +358,6 @@ DEPENDENCIES
   shortly
   uglifier
   vcardigan
-  w3c_validators
 
 BUNDLED WITH
    1.12.5
