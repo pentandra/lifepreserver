@@ -16,7 +16,9 @@ in scope before compiling:
 * [pandoc](http://pandoc.org/) and [ConTeXt](http://wiki.contextgarden.net/)
   for PDF generation of reports
 * [optipng](http://optipng.sourceforge.net/) (optional) for optimizing PNG images
-* [hunspell](https://hunspell.github.io/) for spell-checking
+* [hunspell](https://hunspell.github.io/) for spell-checking (with the [optional
+  fix](https://github.com/en-wl/wordlist/issues/122) for the en_US apostrophe
+  handling)
 * [git](https://git-scm.com/) for version tagging and history management
 * A JavaScript runtime, such as [node](https://nodejs.org/en/)
   (or any runtime that [ExecJS](https://github.com/sstephenson/execjs) supports) 
