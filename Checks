@@ -19,6 +19,13 @@ check :no_unprocessed_erb do
   end
 end
 
+check :no_unprocessed_markdown do
+  @output_filenames.each do |filename|
+    if filename =~ /html$/ && File.read(filename).match(/]\(/)
+      add_issue('unprocessed markdown detected', subject: filename)
+    end
+  end
+end
 
 deploy_check :internal_links
 deploy_check :mixed_content
