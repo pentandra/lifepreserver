@@ -33,4 +33,5 @@ group :development do
   gem 'guard-livereload', require: false
   gem 'rbtrace'
   gem 'adsf'              # for nanoc view
+  gem 'ghi'               # for GitHub issues
 end
