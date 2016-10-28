@@ -170,7 +170,6 @@ GEM
     mime-types-data (3.2016.0521)
     mini_portile2 (2.1.0)
     minitest (5.9.1)
-    msgpack (1.0.2)
     multi_json (1.12.1)
     multi_xml (0.5.5)
     nanoc (4.3.6)
@@ -206,10 +205,6 @@ GEM
     rb-fsevent (0.9.8)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
-    rbtrace (0.4.8)
-      ffi (>= 1.0.6)
-      msgpack (>= 0.4.3)
-      trollop (>= 1.16.2)
     rdf-aggregate-repo (2.0.0)
       rdf (~> 2.0)
     rdf-isomorphic (2.0.0)
@@ -312,7 +307,6 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (2.0.5)
-    trollop (2.1.2)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uglifier (3.0.3)
@@ -356,7 +350,6 @@ DEPENDENCIES
   pandoc-ruby
   pygmentize
   rainpress
-  rbtrace
   rdf!
   rdf-vocab!
   rest-client
