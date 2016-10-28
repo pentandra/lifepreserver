@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/cdchapman/HTML-Spellchecker
-  revision: b68e6762c35ae16501d98df14cd611cee403bb1d
+  revision: 66c574aa8ccbe217803f79e2bc592dd80dcaea22
   branch: mark
   specs:
     html_spellchecker (0.1.7)
