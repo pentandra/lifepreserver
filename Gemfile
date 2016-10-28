@@ -27,10 +27,10 @@ gem 'haml'
 gem 'pandoc-ruby'        # for benefit reports in ConTeXt
 gem 'git'                # for version history and tagging info
 
-group :development do
+group :development, optional: true do
   gem 'guard'
   gem 'guard-nanoc'
-  gem 'guard-livereload', require: false
+  gem 'guard-livereload'
   gem 'rbtrace'
   gem 'adsf'              # for nanoc view
   gem 'ghi'               # for GitHub issues
