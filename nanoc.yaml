@@ -91,6 +91,7 @@ environments:
       page_url: /company
       logo_uri: &logo_uri "https://pentandra.com/images/pentandra-logo.png"
       photo_uri: *logo_uri
+      kind: org
 
   development:
     <<: *default

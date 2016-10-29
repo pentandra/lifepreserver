@@ -26,9 +26,11 @@ class VcardFilter < Nanoc::Filter
     photo_uri = params[:photo_uri] || @item[:photo_uri]
     logo_uri = params[:logo_uri] || @item[:logo_uri]
 
+    rev = params[:rev] || @item[:rev] || @item[:mtime] || Time.now
+
     vcard = VCardigan.create(version: '3.0')
 
-    vcard.rev(Time.now.strftime('%F'))
+    vcard.rev(rev.strftime('%F'))
 
     vcard.fullname(full_name)
 

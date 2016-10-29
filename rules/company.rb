@@ -28,12 +28,12 @@ compile %r{/company/benefit-reports/(\d{4})/index\.md}, rep: :pdf do |fiscal_yea
 end
 
 compile '/company/_', rep: :vcard do
-  filter :vcard, @config[:company].merge(kind: 'org')
+  filter :vcard, @config[:company]
   write "/company/pentandra#{fingerprint(@item[:filename]) if @config[:production]}.vcf"
 end
 
 compile '/company/_', rep: :qrcode do
-  filter :vcard, @config[:company].merge(kind: 'org')
+  filter :vcard, @config[:company]
   filter :qrcode, @config[:qrcode]
   write "/images/pentandra-qrcode#{fingerprint(@item[:filename]) if @config[:production]}.png"
 end
