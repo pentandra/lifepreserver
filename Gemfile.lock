@@ -172,7 +172,7 @@ GEM
     minitest (5.9.1)
     multi_json (1.12.1)
     multi_xml (0.5.5)
-    nanoc (4.3.6)
+    nanoc (4.3.7)
       cri (~> 2.3)
       hamster (~> 3.0)
       parallel (~> 1.9)
