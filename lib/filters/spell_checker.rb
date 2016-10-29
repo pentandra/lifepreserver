@@ -1,5 +1,4 @@
-class SpellCheckerFilter < Nanoc::Filter
-  
+class SpellChecker < Nanoc::Filter
   identifier :spellchecker
 
   requires 'html_spellchecker'

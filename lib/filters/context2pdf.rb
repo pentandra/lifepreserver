@@ -1,4 +1,4 @@
-class Context2PdfFilter < Nanoc::Filter
+class Context2Pdf < Nanoc::Filter
   identifier :context2pdf
   type :text => :binary
 

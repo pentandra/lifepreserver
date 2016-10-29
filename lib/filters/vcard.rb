@@ -1,4 +1,4 @@
-class VcardFilter < Nanoc::Filter
+class Vcard < Nanoc::Filter
 
   identifier :vcard
 

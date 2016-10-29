@@ -1,4 +1,4 @@
-class CompassWithSassFilter < Nanoc::Filter
+class CompassWithSass < Nanoc::Filter
   identifier :compass
 
   requires 'compass'
