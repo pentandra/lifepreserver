@@ -344,7 +344,6 @@ DEPENDENCIES
   linkeddata
   nanoc
   nanoc-cachebuster!
-  nenv
   nokogiri
   optipng
   pandoc-ruby

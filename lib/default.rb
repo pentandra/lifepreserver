@@ -1,5 +1,4 @@
 require 'date'
-require 'nenv'
 require 'compass'
 require 'html5small/nanoc'
 require 'nanoc/cachebuster'

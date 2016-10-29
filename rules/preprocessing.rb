@@ -1,5 +1,5 @@
 preprocess do
-  @config[:google_api_key] = Nenv.lifepreserver_api_key
+  @config[:google_api_key] = ENV.fetch(LIFEPRESERVER_API_KEY)
 
   populate_version_history
 

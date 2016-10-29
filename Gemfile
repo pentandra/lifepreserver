@@ -21,7 +21,6 @@ gem 'rdf-vocab',         git: 'https://github.com/ruby-rdf/rdf-vocab.git',      
 gem 'rdf',               git: 'https://github.com/ruby-rdf/rdf.git',            branch: 'develop' # for latest code (included in `linkeddata` gem)
 gem 'pygmentize'         # for syntax coloring
 gem 'nanoc-cachebuster', git: 'https://github.com/cdchapman/nanoc-cachebuster', branch: 'nanoc-4'
-gem 'nenv'               # for better environment variable handling
 gem 'ruby-version'
 gem 'haml'
 gem 'pandoc-ruby'        # for benefit reports in ConTeXt
