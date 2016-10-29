@@ -11,19 +11,19 @@ The source for this project is built using [nanoc](http://nanoc.ws/).
 The following external dependencies or system packages need to be installed and
 in scope before compiling:
 
-* Ruby (with [bundler](http://bundler.io/), i.e. `gem install bundler`)
-* Python (for [pygments](http://pygments.org/))
-* [pandoc](http://pandoc.org/) and [ConTeXt](http://wiki.contextgarden.net/)
-  for PDF generation of reports
-* [optipng](http://optipng.sourceforge.net/) (optional) for optimizing PNG images
-* [hunspell](https://hunspell.github.io/) for spell-checking (with the [optional
-  fix](https://github.com/en-wl/wordlist/issues/122) for the en_US apostrophe
-  handling)
-* [git](https://git-scm.com/) for version tagging and history management
-* A JavaScript runtime, such as [node](https://nodejs.org/en/)
-  (or any runtime that [ExecJS](https://github.com/sstephenson/execjs) supports) 
-  for [UglifyJS](https://github.com/mishoo/UglifyJS2) and [bower](https://bower.io/).
-    _(note: currently you need to install `bower` manually, e.g. `npm install bower -g`)_
+* Ruby (with [bundler], i.e. `gem install bundler`)
+* Python (for [pygments])
+* [pandoc] and [ConTeXt] for PDF generation of reports
+* [hunspell] for spell-checking (with the [optional fix][apostrophe fix] for
+  the en_US apostrophe handling)
+* [git] for version tagging and history management
+* A JavaScript runtime, such as [node] (or any runtime that [ExecJS] supports)
+  for [UglifyJS] and [bower]. _(note: currently you need to install `bower`
+    manually, e.g. `npm install bower -g`)_
+
+#### Optional dependencies
+* [optipng] for optimizing PNG images
+* A Java 8 runtime for running the [Nu HTML] checker.
 
 ### Then clone this repo (including submodules), install bower components and Ruby gems…
 
@@ -79,7 +79,20 @@ including:
 * Lifepillar (https://github.com/lifepillar/nanoc4-template) for some new
   ideas during the transition to Nanoc 4.
 
-Also, please see [the colophon](https://pentandra.com/colophon/) for more
-raving attributions!
+Also, please see [the colophon][colophon] for more raving attributions!
 
 [GitFlow]: <http://nvie.com/posts/a-successful-git-branching-model/>
+[Nu HTML]: <https://validator.github.io/validator/>
+[UglifyJS]: <https://validator.github.io/validator/>
+[bower]: <https://bower.io/>
+[ExecJS]: <https://github.com/sstephenson/execjs>
+[node]: <https://nodejs.org/en/>
+[apostrophe fix]: <https://github.com/en-wl/wordlist/issues/122>
+[optipng]: <http://optipng.sourceforge.net/>
+[hunspell]: <https://hunspell.github.io/>
+[pandoc]: <http://pandoc.org/>
+[git]: <https://git-scm.com/>
+[ConTeXt]: <http://wiki.contextgarden.net/>
+[pygments]: <http://pygments.org/>
+[bundler]: <http://bundler.io/>
+[colophon]: <https://pentandra.com/colophon/>
