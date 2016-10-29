@@ -353,7 +353,6 @@ DEPENDENCIES
   rdf-vocab!
   rest-client
   rqrcode
-  ruby-version
   rubypants-unicode
   shortly
   uglifier
