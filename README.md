@@ -12,7 +12,6 @@ The following external dependencies or system packages need to be installed and
 in scope before compiling:
 
 * Ruby (with [bundler], i.e. `gem install bundler`)
-* Python (for [pygments])
 * [pandoc] and [ConTeXt] for PDF generation of reports
 * [hunspell] for spell-checking (with the [optional fix][apostrophe fix] for
   the en_US apostrophe handling)

@@ -19,8 +19,8 @@ gem 'rubypants-unicode'
 gem 'linkeddata'
 gem 'rdf-vocab',         git: 'https://github.com/ruby-rdf/rdf-vocab.git',      branch: 'develop' # for latest code (included in `linkeddata` gem)
 gem 'rdf',               git: 'https://github.com/ruby-rdf/rdf.git',            branch: 'develop' # for latest code (included in `linkeddata` gem)
-gem 'pygmentize'         # for syntax coloring
 gem 'nanoc-cachebuster', git: 'https://github.com/cdchapman/nanoc-cachebuster', branch: 'nanoc-4'
+gem 'rouge'
 gem 'haml'
 gem 'pandoc-ruby'        # for benefit reports in ConTeXt
 gem 'git'                # for version history and tagging info
