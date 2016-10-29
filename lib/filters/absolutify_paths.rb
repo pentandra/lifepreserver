@@ -1,8 +1,9 @@
 # Based on https://gist.github.com/fracai/1597618 and the
 # `Nanoc::Filters::RelativizePaths filter, with improvements
-Class.new(Nanoc::Filter) do
-
+class AbsolutifyPaths < Nanoc::Filter
   identifier :absolutify_paths
+
+  requires 'nokogiri'
 
   SELECTORS ||= ['*/@href', '*/@src', 'object/@data', 'param[@name="movie"]/@content', 'comment()'].freeze
 
@@ -76,7 +77,6 @@ Class.new(Nanoc::Filter) do
     type       = params.fetch(:type)
     form       = params.fetch(:form, :path)
 
-    require 'nokogiri'
     case type
     when :html
       klass = ::Nokogiri::HTML

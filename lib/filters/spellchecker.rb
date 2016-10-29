@@ -1,8 +1,8 @@
-require "html_spellchecker"
-
 class SpellCheckerFilter < Nanoc::Filter
   
   identifier :spellchecker
+
+  requires 'html_spellchecker'
 
   def run(content, params = {})
     checker = HTML_Spellchecker.english

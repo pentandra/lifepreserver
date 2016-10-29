@@ -1,12 +1,10 @@
-Class.new(Nanoc::Filter) do
+class Context2PdfFilter < Nanoc::Filter
   identifier :context2pdf
   type :text => :binary
 
-  def run(content, params = {})
+  requires 'tmpdir', 'open3', 'fileutils'
 
-    require 'tmpdir'
-    require 'open3'
-    require 'fileutils'
+  def run(content, params = {})
 
     debug = params.fetch(:debug, false)
     mode = params.fetch(:mode, 'draft')

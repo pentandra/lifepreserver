@@ -1,8 +1,8 @@
-require 'vcardigan'
-
 class VcardFilter < Nanoc::Filter
 
   identifier :vcard
+
+  requires 'vcardigan'
 
   def run(content, params = {})
 

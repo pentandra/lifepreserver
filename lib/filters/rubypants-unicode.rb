@@ -1,20 +1,17 @@
-require 'rubypants-unicode'
+class RubyPantsUnicode < Nanoc::Filter
 
-module Nanoc::Filters
-  class RubyPantsUnicode < Nanoc::Filter
+  identifier :rubypantsunicode
 
-    identifier :rubypantsunicode
+  requires 'rubypants-unicode'
 
-    # Runs the content through [RubyPants](http://chneukirchen.org/blog/static/projects/rubypants.html).
-    # This method takes no options.
-    #
-    # @param [String] content The content to filter
-    #
-    # @return [String] The filtered content
-    def run(content, params={})
-      # Get result
-      ::RubyPants.new(content).to_html
-    end
-
+  # Runs the content through [RubyPants](http://chneukirchen.org/blog/static/projects/rubypants.html).
+  # This method takes no options.
+  #
+  # @param [String] content The content to filter
+  #
+  # @return [String] The filtered content
+  def run(content, params={})
+    ::RubyPants.new(content).to_html
   end
+
 end
