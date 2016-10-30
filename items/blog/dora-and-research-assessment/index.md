@@ -32,7 +32,7 @@ example of the need _not_ to do assessments this way.
 
 Last December, a forward-thinking group of editors and publishers met to
 discuss some of the problems with research assessment and came up with a
-[declaration](http://am.ascb.org/dora/) that recommended eighteen ways to
+[declaration](http://www.ascb.org/dora/) that recommended eighteen ways to
 improve the status quo. These are very doable things that we can do _now_ to
 improve the situation, not some ivory-tower Mumbo Jumbo.
 
