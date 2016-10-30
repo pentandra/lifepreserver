@@ -69,7 +69,8 @@ then sell the company to a bigger company that can afford the windfall.
 
 [^contract-law]: Even though a large percentage of images from commercial image
     providers are in the public domain, from governmental providers, such as
-    [NARA](http://nara.gov), and are not copyrightable, these providers get
-    around this limitation through contract law by requiring new users to agree
-    to [certain conditions](http://www.ancestry.com/cs/legal/termsandconditions)
-    when they sign up for an account.
+    [NARA](https://www.archives.gov), and are not copyrightable, these
+    providers get around this limitation through contract law by requiring new
+    users to agree to [certain
+    conditions](http://www.ancestry.com/cs/legal/termsandconditions) when they
+    sign up for an account.

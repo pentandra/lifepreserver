@@ -32,7 +32,7 @@ decided, "Eh, it can't hurt to at least read the thing." So I clicked it open.
 
 <!--MORE-->
 
-What I found was a message from an organization named [Giving Anonymously](http://givinganon.org/).
+What I found was a message from an organization named [Giving Anonymously].
 It said that some friend wanted to give us an anonymous gift and all we needed
 to do was reply and confirm that we would accept the gift. Again, I thought to
 myself, "Yeah, right!" and almost deleted it. Fortunately, I resisted the
@@ -97,3 +97,5 @@ mental support that encourages us to keep pushing forward.
 So, if you are out there, whoever you are, please accept my gratitude and
 thanks.
 {: .conclusion }
+
+[Giving Anonymously]: <http://web.archive.org/web/20130617171311/https://givinganon.org/home> "Giving Anonymously on the Wayback Machine"

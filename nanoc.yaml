@@ -35,9 +35,12 @@ data_sources:
     content_dir: specifications/playground
     layouts_dir: specifications/layouts
 
-checks:
+checks: &checks
   internal_links:
-    exclude: ['^/blog/feed']
+    exclude: [ '^/blog/feed' ]
+
+  external_links:
+    exclude: [ 'example.org' ]
 
 environments:
   default: &default
@@ -104,6 +107,11 @@ environments:
     context2pdf:
       debug: true
       trackers: [ 'graphics.locating' ]
+
+    checks:
+      <<: *checks
+      internal_links:
+        exclude: [ '^/blog/feed', '^/tags', '^/archives', '^/authors' ]
 
   production:
     <<: *default
