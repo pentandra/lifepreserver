@@ -17,4 +17,10 @@ module History
     @items.find_all('/_project/dependencies/*').sort_by(&:identifier)
   end
 
+  def ruby_desc
+    gem_info = defined?(Gem) ? "with RubyGems #{Gem::VERSION}" : "without RubyGems"
+    engine = defined?(RUBY_ENGINE) ? RUBY_ENGINE : 'ruby'
+
+    %[#{engine} #{RUBY_VERSION} (#{RUBY_RELEASE_DATE}) #{gem_info}]
+  end
 end

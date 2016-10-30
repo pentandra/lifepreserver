@@ -1,5 +1,5 @@
 require 'shortly'
-require 'yaml'
+require 'yaml/store'
 
 module LifePreserver
 
@@ -7,27 +7,40 @@ module LifePreserver
 
     include Text
 
+    SHORT_URLS_FILENAME ||= 'var/short_urls.yaml'.freeze
+
+    private_constant :SHORT_URLS_FILENAME
+
     def shorten(url)
-
       hash = md5(url)
-      short_urls = YAML.load_file('var/short_urls.yaml')
+      store.transaction { store.fetch(hash, generate_short_url(hash, url)) }
+    end
 
-      short_url = short_urls[hash]
+    private
 
-      if !short_url then
+    def generate_short_url(key, long_url)
+      if @config[:google_api_key]
         begin
           googl = Shortly::Clients::Googl
           googl.apiKey = @config[:google_api_key]
-          short_url = short_urls.store(hash, googl.shorten(url).shortUrl)
-          File.open('var/short_urls.yaml', 'w+') { |io| io.write(YAML.dump(short_urls)) }
-        rescue SocketError
-          short_url = url # Just return the original if we have a network problem
-        end
-      end
+          short_url = googl.shorten(url).shortUrl
 
-      short_url
+          store.transaction { store[hash] = short_url }
+
+          short_url
+        rescue
+          long_url
+        end
+      else
+        long_url
+      end
+    end
+
+    def store
+      FileUtils.mkdir_p(File.dirname(SHORT_URLS_FILENAME))
+
+      @store ||= YAML::Store.new(SHORT_URLS_FILENAME)
     end
 
   end
-
 end

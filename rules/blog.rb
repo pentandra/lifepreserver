@@ -29,7 +29,8 @@ end
 compile '/blog/**/*.md' do
   filter :erb, @config[:erb]
   filter :kramdown, @config[:kramdown]
-  filter :colorize_syntax, default_colorizer: :pygmentize, pygmentize: { nowrap: 'True' }
+  filter :colorize_syntax,
+    default_colorizer: :rouge
   filter :absolutify_paths, type: :html
   filter :spellchecker unless @config[:production]
   layout '/blog/article.*'

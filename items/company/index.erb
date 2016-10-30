@@ -429,7 +429,7 @@ priority: 0.6
         </div>
       </div>
       <figure class="aside section img" id="fig:vcard">
-        <a href="<%= @items['/company/_'].path(rep: :vcard) %>">
+        <a href="<%= @items['/company/_'].path(rep: :qrcode, snapshot: :vcard) %>">
           <img src="<%= @items['/company/_'].path(rep: :qrcode) %>" alt="machine-readable QR code with embedded vCard for Pentandra Research Solutions" />
         </a>
         <figcaption class="small bold">Our vCard</figcaption>

@@ -271,7 +271,7 @@ changefreq: monthly
 
     <p>
 
-      The build process does not involve paper, ink, and moveable type, but it does involve many moving pieces. Much of this site is compiled beforehand, using <a href="<%= "http://ruby-doc.org/core-#{Ruby::Version::VERSION}/" %>">Ruby <span class="oldstyle"><%= "#{Ruby::Version::VERSION}" %></span></a>. We are so grateful for the many developers that have contributed their time, talents, and love through these component projects:
+      The build process does not involve paper, ink, and moveable type, but it does involve many moving pieces. Much of this site is compiled beforehand, using <a href="<%= "http://ruby-doc.org/core-#{RUBY_VERSION}/" %>"><%= ruby_desc %></a>. We are so grateful for the many developers that have contributed their time, talents, and love through this development platform, as well as through the following component projects:
 
     </p>
     <ul>
@@ -290,6 +290,18 @@ changefreq: monthly
       <% end %>
 
     </ul>
+
+    <p>
+
+      We also need to acknowledge the thousands of developers that have
+      contributed to the many unix-related projects on top of which we run all
+      of this infrastructure, specifically those from the <a
+        href="https://www.archlinux.org">Arch Linux</a>, <a
+        href="https://www.centos.org/">CentOS</a>, and <a
+        href="https://wiki.smartos.org/display/DOC/Home">SmartOS</a>
+      communities.
+
+    </p>
 
   </div>
 </section>

@@ -1,3 +1,11 @@
+module LifePreserver
+end
+
+require 'html5small/nanoc'
+require 'nanoc/cachebuster'
+require 'erb'
+
+# Helpers to include in a global context
 include Nanoc::Helpers::Blogging
 include Nanoc::Helpers::Capturing
 include Nanoc::Helpers::LinkTo

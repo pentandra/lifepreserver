@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-vocab.git
-  revision: 4748329efb8a9671c465556e8fd813f3d7ad6878
+  revision: 7c0dc4525d7a7c56222c9cb72f9608895725cd28
   branch: develop
   specs:
     rdf-vocab (2.1.0)
@@ -172,7 +172,7 @@ GEM
     minitest (5.9.1)
     multi_json (1.12.1)
     multi_xml (0.5.5)
-    nanoc (4.3.6)
+    nanoc (4.3.7)
       cri (~> 2.3)
       hamster (~> 3.0)
       parallel (~> 1.9)
@@ -196,7 +196,6 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
-    pygmentize (0.0.3)
     pygments.rb (0.6.3)
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.2.0)
@@ -263,6 +262,7 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
+    rouge (2.0.6)
     rqrcode (0.10.1)
       chunky_png (~> 1.0)
     rspec (3.5.0)
@@ -344,17 +344,15 @@ DEPENDENCIES
   linkeddata
   nanoc
   nanoc-cachebuster!
-  nenv
   nokogiri
   optipng
   pandoc-ruby
-  pygmentize
   rainpress
   rdf!
   rdf-vocab!
   rest-client
+  rouge
   rqrcode
-  ruby-version
   rubypants-unicode
   shortly
   uglifier
