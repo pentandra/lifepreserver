@@ -1,6 +1,10 @@
 \setuppublications[alternative=apa]
 
-\setuppapersize[letter]
+\definepapersize[standard][letter][letter]
+\definepapersize[european][A4][A4]
+
+\setuppapersize[standard]
+\doifmode{european}{\setuppapersize[european]}
 
 %\showframe
 %\showgrid
