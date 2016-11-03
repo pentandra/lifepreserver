@@ -7,7 +7,7 @@ prune:
 
 data_sources:
   - type: filesystem
-    content_dir: items
+    items_root: &static_root /static
 
   - type: dependencies
     items_root: /_project
@@ -45,6 +45,8 @@ checks: &checks
 environments:
   default: &default
     base_url: &base_url "https://pentandra.com"
+
+    static_root: *static_root
 
     erb:
       trim_mode: '>'
