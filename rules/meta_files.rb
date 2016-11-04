@@ -5,14 +5,9 @@ compile '/sitemap.erb' do
   write '/sitemap.xml'
 end
 
-compile '/robots.*' do
+compile '/static/{robots,humans}.*' do
   filter :erb
-  write '/robots.txt'
-end
-
-compile '/humans.*' do
-  filter :erb
-  write '/humans.txt'
+  write item.identifier.without_ext
 end
 
 route '/404.erb' do
