@@ -5,9 +5,9 @@
     <div class="nav">
       <ul>
         <li property="schema:potentialAction" resource="pentandra-website:search" typeof="schema:SearchAction">
-          <meta property="schema:target" content="<%= "#{@config[:base_url]}#{@config[:site][:search_url]}/?q={search_term_string}" %>"/>
+          <meta property="schema:target" content="<%= "#{path_to(@items['/static/search.*'], global: true)}?q={search_term_string}" %>"/>
           <meta property="schema:query-input" content="required name=search_term_string"/>
-          <a property="schema:url" href="<%= "#{@config[:site][:search_url]}/" %>">Search</a>
+          <a property="schema:url" href="<%= h path_to(@items['/static/search.*']) %>">Search</a>
         </li>
         <li><a about="pentandra-website:project" property="rdfs:seeAlso" href="/colophon/">Colophon</a></li>
         <li><a href="/policy/">Policy</a></li>

@@ -80,7 +80,6 @@ environments:
       generate_blogmeta: true
       base_url: *base_url
       images_url: /images
-      search_url: /search
 
     blog: &blog
       title: The Pentandra Blog
