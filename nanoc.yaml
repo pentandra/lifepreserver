@@ -45,7 +45,6 @@ checks: &checks
 environments:
   default: &default
     base_url: &base_url "https://pentandra.com"
-
     static_root: *static_root
 
     erb:
@@ -114,8 +113,11 @@ environments:
       internal_links:
         exclude: [ '^/blog/feed', '^/tags', '^/archives', '^/authors' ]
 
-  production:
+  production: &production
     <<: *default
+
+    static_root: '/srv/http/lifepreserver'
+    require_git_tag: true # All production releases must be at a tag
 
     google_analytics:
       code: UA-26002603-1
@@ -123,6 +125,11 @@ environments:
 
     hypothesis: true
     production: true
+
+  staging:
+    <<: *production
+
+    require_git_tag: false
 
 deploy:
   public:
