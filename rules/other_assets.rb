@@ -1,18 +1,18 @@
 # Favicon and images
 
-route '/assets/images/*' do
-  '/images/' + File.basename(@item.identifier.to_s)
+route '/static/assets/images/*' do
+  '/static/images/' + File.basename(@item.identifier.to_s)
 end
 
 # Fonts and other files
 
-route '/assets/fonts/**/*' do
-  '/fonts/' + File.basename(@item.identifier.to_s)
+route '/static/assets/fonts/**/*' do
+  '/static/fonts/' + File.basename(@item.identifier.to_s)
 end
 
-ignore '/assets/components/mediaelement/build/DO NOT CHANGE THESE FILES. USE -src- FOLDER.txt'
-route '/assets/components/mediaelement/build/*' do
-  '/js/mediaelement/' + File.basename(@item.identifier.to_s)
+ignore '/static/assets/components/mediaelement/build/DO NOT CHANGE THESE FILES. USE -src- FOLDER.txt'
+route '/static/assets/components/mediaelement/build/*' do
+  '/static/js/mediaelement/' + File.basename(@item.identifier.to_s)
 end
 
-ignore '/assets/components/**/*'
+ignore '/static/assets/components/**/*'

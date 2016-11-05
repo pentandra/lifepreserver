@@ -1,6 +1,6 @@
 # Blog index
 
-compile '/blog/{index,recent}.erb' do
+compile '/static/blog/{index,recent}.erb' do
   filter :erb, @config[:erb]
   layout '/blog/default.*'
   filter :rubypantsunicode
@@ -10,14 +10,14 @@ end
 
 # Blog feeds
 
-compile '/**/feed.erb' do
+compile '/static/**/feed.erb' do
   filter :erb
-  write item.identifier.without_ext + '.atom'
+  write static_route item.identifier.without_ext + '.atom'
 end
 
 # Blog tags, authors, and archives
 
-compile '/{tags,authors,archives}/**/*' do
+compile '/static/{tags,authors,archives}/**/*' do
   filter :erb, @config[:erb]
   filter :rubypantsunicode
   filter :cache_buster if @config[:production]
@@ -26,7 +26,7 @@ end
 
 # Blog posts
 
-compile '/blog/**/*.md' do
+compile '/static/blog/**/*.md' do
   filter :erb, @config[:erb]
   filter :kramdown, @config[:kramdown]
   filter :colorize_syntax,

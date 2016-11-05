@@ -8,11 +8,11 @@ module LifePreserver
     include Text
 
     def blog_post?(item)
-      item[:kind] == "article" && item.identifier =~ /^\/blog/
+      item[:kind] == "article" && item.identifier =~ /\/blog\//
     end
 
     def blog_posts
-      blk = -> { @items.find_all('/blog/**/*.md') }
+      blk = -> { @items.find_all('/static/blog/**/*.md') }
       if @items.frozen?
         @blog_post_items ||= blk.call
       else

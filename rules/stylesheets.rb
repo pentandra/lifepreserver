@@ -1,14 +1,14 @@
 # Stylesheets
 
-compile '/assets/stylesheets/**/*.htc' do
-  write '/css/' + File.basename(@item.identifier.to_s)
+compile "/static/assets/stylesheets/**/*.htc" do
+  write '/static/css/' + File.basename(@item.identifier.to_s)
 end
 
-compile '/assets/stylesheets/**/*' do
+compile '/static/assets/stylesheets/**/*' do
   filter :compass, config_file: 'etc/compass/config.rb'
-  write '/css/' + File.basename("#{@item.identifier.without_ext}#{fingerprint(@item[:filename]) if @config[:production]}.css")
+  write '/static/css/' + File.basename("#{@item.identifier.without_ext}#{fingerprint(@item[:filename]) if @config[:production]}.css")
 end
 
-route '/assets/components/pygments/css/*' do
-  '/css/pygments/' + File.basename(@item.identifier.to_s)
+route '/static/assets/components/pygments/css/*' do
+  '/static/css/pygments/' + File.basename(@item.identifier.to_s)
 end

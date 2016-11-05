@@ -20,15 +20,15 @@ end
 compile '/**/*' do
 end
 
-route '/**/index.{erb,html,md}' do
+route '/static/**/index.{erb,html,md}' do
   item.identifier.without_ext + '.html'
 end
 
-route '/**/*.{erb,html,md}' do
+route '/static/**/*.{erb,html,md}' do
   item.identifier.without_ext + '/index.html'
 end
 
-route '/**/*' do
+route "/static/**/*" do
   item.identifier.to_s
 end
 
