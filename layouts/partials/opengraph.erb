@@ -2,10 +2,10 @@
 <meta property="og:title" content="<%= @item[:title] %>" />
 <meta property="og:description" content="<%= @item[:description] %>" />
 <meta property="og:site_name" content="<%= @config[:site][:name] %>" />
-<meta property="og:url" content="<%= "#{@config[:base_url]}#{@item.path}" %>" />
+<meta property="og:url" content="<%= h path_to(@item, global: true) %>" />
 <meta property="og:locale" content="en_US" />
 <% if @item.key?(:cover_image) %>
-  <meta property="og:image" content="<%= h "#{@config[:base_url]}#{@items[@item[:cover_image][:id]].path}" %>" />
+  <meta property="og:image" content="<%= h path_to(@items[@item[:cover_image][:id]], global: true) %>" />
 <% end %>
 <% if blog_post?(@item) %>
   <meta property="og:type" content="article" />

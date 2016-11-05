@@ -1,3 +1,5 @@
+require_relative '../helpers/link_to'
+
 class Vcard < Nanoc::Filter
 
   identifier :vcard
@@ -34,7 +36,7 @@ class Vcard < Nanoc::Filter
 
     vcard.fullname(full_name)
 
-    vcard.source(@config[:base_url] + @item_rep.path)
+    vcard.source(@config[:base_url] + path_to(@item_rep))
 
     if kind == 'individual'
       vcard.name(last_name, first_name)

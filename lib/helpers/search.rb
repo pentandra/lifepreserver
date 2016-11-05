@@ -1,8 +1,11 @@
 require 'json'
+require_relative 'link_to'
 
 module LifePreserver
 
   module Search
+
+    include LinkTo
 
     STOP_WORDS ||= %w{
       a about above across after afterwards again against all almost
@@ -43,7 +46,7 @@ module LifePreserver
       content = item.compiled_content(rep: :default)
       doc = Nokogiri::HTML(content)
       full_text = doc.css("p, h1, h2, h3, h4, h5, h6").map{ |el| el.inner_text }.join(" ")
-      "#{item[:title]} #{item[:meta_description]} #{full_text}".gsub(/[\W_]+/m,' ').downcase.split(/\s+/).uniq - STOP_WORDS
+      "#{item[:title]} #{item[:meta_description] || item[:description]} #{full_text}".gsub(/[\W_]+/m,' ').downcase.split(/\s+/).uniq - STOP_WORDS
     end
 
     def search_index
@@ -69,7 +72,7 @@ module LifePreserver
           # puts "Indexed: #{term}"
         end
         idx["items"][id] = {
-          "url" => "#{item.path}",
+          "url" => "#{path_to(item)}",
           "title" => item[:title],
           "desc" => item[:description]
         }
