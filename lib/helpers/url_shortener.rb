@@ -1,11 +1,12 @@
 require 'shortly'
 require 'yaml/store'
+require_relative 'text'
 
 module LifePreserver
 
   module UrlShortener
 
-    include Text
+    include LifePreserver::Text
 
     SHORT_URLS_FILENAME ||= 'var/short_urls.yaml'.freeze
 

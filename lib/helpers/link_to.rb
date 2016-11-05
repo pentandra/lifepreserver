@@ -56,6 +56,10 @@ module LifePreserver
 
     alias path_to public_path_to
 
+    def short_url_for(item, rep: :default, snapshot: :last)
+      shorten(public_path_to(item, rep: rep, snapshot: snapshot, global: true))
+    end
+
     protected
 
     def unstack(current, target)

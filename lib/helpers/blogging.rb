@@ -137,10 +137,6 @@ module LifePreserver
       end
     end
 
-    def short_url_for(item)
-      shorten(url_for(item))
-    end
-
   end
 
 end
