@@ -1,5 +1,6 @@
 require "active_support/core_ext/object/blank"
 require_relative 'text'
+require_relative 'filtering'
 
 module LifePreserver
 
@@ -102,8 +103,9 @@ module LifePreserver
     def prepare_item_for_feed(item, summary: false)
       content = summary ? post_summary(item) : item.compiled_content
 
-      prepared_content = absolutify_links(item, content)
+      prepared_content = simple_filter(item, content, :absolutify_paths, type: :html, global: true)
       prepared_content = rubypantsify(item, prepared_content)
+
       prepared_content
     end
 

@@ -1,12 +1,10 @@
+require_relative 'url_shortener'
+
 module LifePreserver
 
   module LinkTo
 
-    include Filtering
-
-    def absolutify_links(item_rep, content)
-      simple_filter(item_rep, content, :absolutify_paths, type: :html, form: :uri)
-    end
+    include LifePreserver::UrlShortener
 
     def link_to_id(id, attributes = {})
       item = @items[id]
