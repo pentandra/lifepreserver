@@ -12,7 +12,7 @@ end
 
 compile '/static/**/feed.erb' do
   filter :erb
-  write static_route item.identifier.without_ext + '.atom'
+  write item.identifier.without_ext + '.atom'
 end
 
 # Blog tags, authors, and archives
