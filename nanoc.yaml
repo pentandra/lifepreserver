@@ -119,7 +119,6 @@ environments:
 
 data_sources:
   - type: filesystem
-    items_root: *static_root
     content_dir: items
 
   - type: dependencies
