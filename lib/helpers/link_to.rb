@@ -47,7 +47,7 @@ module LifePreserver
         raise "Cannot create a public path to #{target.inspect} because this target is not outputted (its routing rule returns nil)"
       end
 
-      path = unstack(@item_rep.path, path) if @item_rep
+      path = unstack(@item_rep.path, path) if @item_rep && @item_rep.path
 
       if global
         path = @config.fetch(:base_url) + path
