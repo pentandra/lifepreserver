@@ -1,6 +1,5 @@
 require "active_support/core_ext/object/blank"
 require_relative 'text'
-require_relative 'filtering'
 
 module LifePreserver
 
