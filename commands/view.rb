@@ -61,7 +61,7 @@ module Nanoc::CLI::Commands
     end
 
     def view_config_root
-      view_config[:root_subdir]
+      view_config[:static_root]
     end
 
     def load_adsf

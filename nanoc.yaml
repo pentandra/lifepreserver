@@ -4,6 +4,9 @@ enable_output_diff: true
 
 # Config for Nanoc commands
 
+view:
+  static_root: &static_root /static
+
 deploy:
   public:
     kind: rsync
@@ -29,7 +32,7 @@ checks: &checks
 environments:
   default: &default
     base_url: &base_url "https://pentandra.com"
-    static_root: &static_root "/static"
+    static_root: *static_root
 
     erb:
       trim_mode: '>'
@@ -100,7 +103,6 @@ environments:
   production: &production
     <<: *default
 
-    static_root: '/srv/http/lifepreserver'
     require_git_tag: true # All production releases must be at a tag
 
     google_analytics:
@@ -146,6 +148,3 @@ data_sources:
     items_root: /static/specifications
     content_dir: specifications/playground
     layouts_dir: specifications/layouts
-
-view:
-  root_subdir: *static_root
