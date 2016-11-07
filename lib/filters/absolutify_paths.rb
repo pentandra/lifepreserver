@@ -57,7 +57,7 @@ class AbsolutifyPaths < Nanoc::Filter
     content.gsub(/url\((?<quote>['"]?)(?<path>\/(?:[^\/].*?)?)\k<quote>\)/) do
       quote = Regexp.last_match(:quote)
       path = Regexp.last_match(:path)
-      'url(' + quote + path_to(path, global: global) + quote + ')'
+      'url(' + quote + public_path_to(path, global: global) + quote + ')'
     end
   end
 
@@ -68,7 +68,7 @@ class AbsolutifyPaths < Nanoc::Filter
     content.gsub(/\\useURL\s*(?<identifier>\[.*?\]){1}\s*\[(?<target>\/(?:[^\/].*?)?)\]/) do |match|
       identifier = Regexp.last_match(:identifier)
       target = Regexp.last_match(:target)
-      '\useURL' + identifier + '[' + path_to(target, global: global) + ']'
+      '\useURL' + identifier + '[' + public_path_to(target, global: global) + ']'
     end
   end
 
@@ -105,7 +105,7 @@ class AbsolutifyPaths < Nanoc::Filter
         if node.name == 'comment'
           nokogiri_process_comment(node, doc, selectors, namespaces, klass, type, global)
         elsif path_is_absolutifiable?(node.content)
-          node.content = path_to(node.content, global: global)
+          node.content = public_path_to(node.content, global: global)
         end
       end
     end
