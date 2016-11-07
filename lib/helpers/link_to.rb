@@ -33,19 +33,21 @@ module LifePreserver
              when String
                target
              when Nanoc::ItemWithRepsView, Nanoc::ItemWithoutRepsView
-               raise "Cannot create a link to #{target.inspect} because this target is not outputted (its routing rule returns nil)" if target.path(rep: rep, snapshot: snapshot).nil?
                target.path(rep: rep, snapshot: snapshot)
              when Nanoc::ItemRepView
-               raise "Cannot create a link to #{target.inspect} because this target is not outputted (its routing rule returns nil)" if target.path(snapshot: snapshot).nil?
                target.path(snapshot: snapshot)
              else
                raise ArgumentError, "Cannot link to #{target.inspect} (expected a string or an item, not a #{target.class.name})"
              end
 
+      unless path
+        raise "Cannot create a public path to #{target.inspect} because this target is not outputted (its routing rule returns nil)"
+      end
+
       path = unstack(@item_rep.path, path) if @item_rep
 
       if global
-        path = @config[:base_url] + path
+        path = @config.fetch(:base_url) + path
       end
 
       # Remove static root for public path
