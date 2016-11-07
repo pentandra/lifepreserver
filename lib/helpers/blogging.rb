@@ -109,15 +109,6 @@ module LifePreserver
       summary << %[<p class="readmore">#{link}</p>]
     end
 
-    def prepare_item_for_feed(item, summary: false)
-      content = summary ? post_summary(item) : item.compiled_content
-
-      prepared_content = simple_filter(item, content, :absolutify_paths, type: :html, global: true)
-      prepared_content = rubypantsify(item, prepared_content)
-
-      prepared_content
-    end
-
     def article_id(article)
       article[:article_id] || md5(article[:title].to_slug)
     end

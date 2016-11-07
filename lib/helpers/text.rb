@@ -17,10 +17,6 @@ module LifePreserver
       string.gsub('-', '<span class="ndash">--</span>')
     end
 
-    def rubypantsify(item_rep, content)
-      simple_filter(item_rep, content, :rubypantsunicode)
-    end
-
   end
 
 end
