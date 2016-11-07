@@ -39,7 +39,7 @@ module Nanoc::CLI::Commands
 
       # Build app
       site = self.site
-      site_root = site.config[:output_dir] + site.config[:static_root]
+      site_root = site.config[:output_dir] + view_config_root
 
       app = Rack::Builder.new do
         use Rack::CommonLogger
@@ -55,6 +55,14 @@ module Nanoc::CLI::Commands
     end
 
     protected
+
+    def view_config
+      site.config[:view] || {}
+    end
+
+    def view_config_root
+      view_config[:root_subdir]
+    end
 
     def load_adsf
       # Load adsf

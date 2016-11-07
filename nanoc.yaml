@@ -2,38 +2,20 @@ text_extensions: [ 'atom', 'coffee', 'css', 'erb', 'haml', 'handlebars', 'hb', '
 
 enable_output_diff: true
 
+# Config for Nanoc commands
+
+deploy:
+  public:
+    kind: rsync
+    dst: "pentandra.com:/srv/http/lifepreserver"
+    options: [ '-gpPrtvz', '--delete-after' ]
+  staging:
+    kind: rsync
+    dst: "vlad@rebikov.process.tree:/srv/http/lifepreserver"
+    options: [ '-gpPrtvz', '--delete-after' ]
+
 prune:
   auto_prune: true
-
-data_sources:
-  - type: filesystem
-    items_root: &static_root /static
-
-  - type: dependencies
-    items_root: /_project
-
-  - type: tags
-    items_root: /_project
-
-  - type: vocabularies
-    items_root: /_project
-    prefixes_used:
-      standard:   [ cc, ctag, dc, foaf, owl, prov, rdf, rdfs, schema, sioc, skos, xhv ]
-      business:   [ essglobal, fea, rov, vcard ]
-      open_graph: [ article, og, profile ]
-      document:   [ deo, doco, fabio ]
-      instances:  [ dbo, dbr, yago ]
-      technical:  [ deps, doap, vann, voaf, void ]
-      pentandra:  [ pentandra, pentandra-blog, pentandra-website ]
-      extra:      [ essglobal-activities, essglobal-legalform, essglobal-qualifiers, essglobal-typeoflabour, sioct, xsd ]
-
-  - type: company
-    company_metafile: 'etc/company.yaml'
-
-  - type: filesystem
-    items_root: /specifications
-    content_dir: specifications/playground
-    layouts_dir: specifications/layouts
 
 checks: &checks
   internal_links:
@@ -42,10 +24,12 @@ checks: &checks
   external_links:
     exclude: [ 'example.org' ]
 
+# Config for Nanoc environments
+
 environments:
   default: &default
     base_url: &base_url "https://pentandra.com"
-    static_root: *static_root
+    static_root: &static_root "/static"
 
     erb:
       trim_mode: '>'
@@ -131,12 +115,37 @@ environments:
 
     require_git_tag: false
 
-deploy:
-  public:
-    kind: rsync
-    dst: "pentandra.com:/srv/http/lifepreserver"
-    options: [ '-gpPrtvz', '--delete-after' ]
-  staging:
-    kind: rsync
-    dst: "vlad@rebikov.process.tree:/srv/http/lifepreserver"
-    options: [ '-gpPrtvz', '--delete-after' ]
+# Config for Nanoc data sources
+
+data_sources:
+  - type: filesystem
+    items_root: *static_root
+
+  - type: dependencies
+    items_root: /_project
+
+  - type: tags
+    items_root: /_project
+
+  - type: vocabularies
+    items_root: /_project
+    prefixes_used:
+      standard:   [ cc, ctag, dc, foaf, owl, prov, rdf, rdfs, schema, sioc, skos, xhv ]
+      business:   [ essglobal, fea, rov, vcard ]
+      open_graph: [ article, og, profile ]
+      document:   [ deo, doco, fabio ]
+      instances:  [ dbo, dbr, yago ]
+      technical:  [ deps, doap, vann, voaf, void ]
+      pentandra:  [ pentandra, pentandra-blog, pentandra-website ]
+      extra:      [ essglobal-activities, essglobal-legalform, essglobal-qualifiers, essglobal-typeoflabour, sioct, xsd ]
+
+  - type: company
+    company_metafile: 'etc/company.yaml'
+
+  - type: filesystem
+    items_root: /static/specifications
+    content_dir: specifications/playground
+    layouts_dir: specifications/layouts
+
+view:
+  root_subdir: *static_root
