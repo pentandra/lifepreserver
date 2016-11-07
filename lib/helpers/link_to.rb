@@ -14,13 +14,16 @@ module LifePreserver
     end
 
     def public_link_to(text, target, attributes = {})
+      # Pull out the global flag
+      global = attributes.delete(:global)
+
       # Join attributes
       attributes = attributes.reduce('') do |memo, (key, value)|
         memo + key.to_s + '="' + h(value) + '" '
       end
 
       # Create link
-      %[<a #{attributes}href="#{h public_path_to(target)}">#{h text}</a>]
+      %[<a #{attributes}href="#{h public_path_to(target, global: global)}">#{h text}</a>]
     end
 
     alias link_to public_link_to
