@@ -1,11 +1,15 @@
-text_extensions: [ 'atom', 'coffee', 'css', 'erb', 'haml', 'handlebars', 'hb', 'htm', 'html', 'js', 'less', 'markdown', 'md', 'ms', 'mustache', 'php', 'rb', 'rdoc', 'sass', 'scss', 'slim', 'tex', 'ttl', 'txt', 'xhtml', 'xml' ]
-
 enable_output_diff: true
+
+text_extensions: [ 'atom', 'coffee', 'css', 'erb', 'haml', 'handlebars', 'hb', 'htm', 'html', 'js', 'less', 'markdown', 'md', 'ms', 'mustache', 'php', 'rb', 'rdoc', 'sass', 'scss', 'slim', 'tex', 'ttl', 'txt', 'xhtml', 'xml' ]
 
 # Config for Nanoc commands
 
-view:
-  static_root: &static_root /static
+checks: &checks
+  internal_links:
+    exclude: [ '^/blog/feed' ]
+
+  external_links:
+    exclude: [ 'example.org' ]
 
 deploy:
   public:
@@ -20,12 +24,40 @@ deploy:
 prune:
   auto_prune: true
 
-checks: &checks
-  internal_links:
-    exclude: [ '^/blog/feed' ]
+view:
+  static_root: &static_root /static
 
-  external_links:
-    exclude: [ 'example.org' ]
+# Config for Nanoc data sources
+
+data_sources:
+  - type: filesystem
+    content_dir: items
+
+  - type: dependencies
+    items_root: /_project
+
+  - type: tags
+    items_root: /_project
+
+  - type: vocabularies
+    items_root: /_project
+    prefixes_used:
+      standard:   [ cc, ctag, dc, foaf, owl, prov, rdf, rdfs, schema, sioc, skos, xhv ]
+      business:   [ essglobal, fea, rov, vcard ]
+      open_graph: [ article, og, profile ]
+      document:   [ deo, doco, fabio ]
+      instances:  [ dbo, dbr, yago ]
+      technical:  [ deps, doap, vann, voaf, void ]
+      pentandra:  [ pentandra, pentandra-blog, pentandra-website ]
+      extra:      [ essglobal-activities, essglobal-legalform, essglobal-qualifiers, essglobal-typeoflabour, sioct, xsd ]
+
+  - type: company
+    company_metafile: 'etc/company.yaml'
+
+  - type: filesystem
+    items_root: /static/specifications
+    content_dir: specifications/playground
+    layouts_dir: specifications/layouts
 
 # Config for Nanoc environments
 
@@ -116,35 +148,3 @@ environments:
     <<: *production
 
     require_git_tag: false
-
-# Config for Nanoc data sources
-
-data_sources:
-  - type: filesystem
-    content_dir: items
-
-  - type: dependencies
-    items_root: /_project
-
-  - type: tags
-    items_root: /_project
-
-  - type: vocabularies
-    items_root: /_project
-    prefixes_used:
-      standard:   [ cc, ctag, dc, foaf, owl, prov, rdf, rdfs, schema, sioc, skos, xhv ]
-      business:   [ essglobal, fea, rov, vcard ]
-      open_graph: [ article, og, profile ]
-      document:   [ deo, doco, fabio ]
-      instances:  [ dbo, dbr, yago ]
-      technical:  [ deps, doap, vann, voaf, void ]
-      pentandra:  [ pentandra, pentandra-blog, pentandra-website ]
-      extra:      [ essglobal-activities, essglobal-legalform, essglobal-qualifiers, essglobal-typeoflabour, sioct, xsd ]
-
-  - type: company
-    company_metafile: 'etc/company.yaml'
-
-  - type: filesystem
-    items_root: /static/specifications
-    content_dir: specifications/playground
-    layouts_dir: specifications/layouts
