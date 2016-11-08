@@ -115,7 +115,7 @@ environments:
       photo_uri: *logo_uri
       kind: org
 
-  development:
+  development: &development
     <<: *default
 
     site: # Simplify dependencies for quicker compilation during development
@@ -131,6 +131,10 @@ environments:
       <<: *checks
       internal_links:
         exclude: [ '^/blog/feed', '^/tags', '^/archives', '^/authors' ]
+
+  static_only:
+    <<: *development
+    ignore_server_items: true
 
   production: &production
     <<: *default
