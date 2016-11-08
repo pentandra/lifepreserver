@@ -67,7 +67,7 @@ server {
 
   # Redirect public feed to feedburner
   location /blog/feed {
-    return 307 https://feeds.feedburner.com/pentandra;
+    return 307 /blog/feed.atom;
   }
 
   # Redirect products → solutions page
