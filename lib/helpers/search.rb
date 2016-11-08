@@ -2,9 +2,7 @@ require 'json'
 require_relative 'link_to'
 
 module LifePreserver
-
   module Search
-
     include LinkTo
 
     STOP_WORDS ||= %w{
@@ -81,7 +79,5 @@ module LifePreserver
 
       idx
     end
-
   end
-
 end

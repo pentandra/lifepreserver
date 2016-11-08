@@ -2,9 +2,7 @@
 # http://www.randomhacks.net/2007/02/01/some-useful-closures-in-ruby/
 
 module LifePreserver
-  
   module Functional
-
     # Builds a function that returns true
     # when 'f' returns false, and vice versa.
     def complement(f)
@@ -40,7 +38,5 @@ module LifePreserver
         end
       end
     end
-
   end
-
 end

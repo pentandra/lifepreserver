@@ -3,9 +3,7 @@ require 'set'
 require 'rdf'
 
 module LifePreserver
-
   module Tagging
-
     # Returns all the tags present in a collection of items.
     # There are no duplicates (because this is a set).
     #
@@ -103,7 +101,5 @@ module LifePreserver
         )
       end
     end
-
   end
-
 end

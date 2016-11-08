@@ -2,9 +2,7 @@ require "active_support/core_ext/object/blank"
 require_relative 'text'
 
 module LifePreserver
-
   module Blogging
-
     include Text
 
     def blog_post?(item)
@@ -137,7 +135,5 @@ module LifePreserver
         )
       end
     end
-
   end
-
 end

@@ -2,7 +2,6 @@ require_relative 'url_shortener'
 
 module LifePreserver
   module LinkTo
-
     include LifePreserver::UrlShortener
 
     def link_to_id(id, attributes = {})

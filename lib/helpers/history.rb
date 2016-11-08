@@ -1,7 +1,6 @@
 require 'git'
 
 module History
-
   # Run during preprocessing
   def populate_version_history(config = nil)
     config ||= @config

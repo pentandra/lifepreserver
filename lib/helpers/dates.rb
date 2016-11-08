@@ -1,6 +1,5 @@
 module LifePreserver
   module Dates
-
     # @param [String, Time, Date, DateTime] arg
     #
     # @return [Time]
