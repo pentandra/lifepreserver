@@ -10,8 +10,9 @@ preprocess do
       ->(item) { @config[:production] ? (item.key?(:published) && !item[:published]) : false },
       ->(item) { item.identifier.exts.include?('js') },
       ->(item) { item.identifier.ext =~ /css/ },
-      ->(item) { item.identifier =~ /^\/static\/assets\/components/ },
-      ->(item) { item.identifier =~ /(README|LICENSE)/ }
+      ->(item) { item.identifier =~ /^\/static\/assets\/components\// },
+      ->(item) { item.identifier =~ /(README|LICENSE)/ },
+      ->(item) { item.identifier.ext =~ /conf/ }
     ]
 
     should_be_hidden = disjoin(*hidden_predicates)

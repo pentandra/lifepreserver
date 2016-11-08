@@ -28,7 +28,7 @@ route '/static/**/*.{erb,html,md}' do
   item.identifier.without_ext + '/index.html'
 end
 
-route "/static/**/*" do
+route "/**/*" do
   item.identifier.to_s
 end
 
