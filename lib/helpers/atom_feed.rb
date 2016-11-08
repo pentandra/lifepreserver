@@ -118,7 +118,7 @@ module LifePreserver
 
       def build_for_article(a, xml)
         # Get URL
-        url = url_for(a)
+        url = public_path_to(a, global: true)
         return if url.nil?
 
         xml.entry do
@@ -182,23 +182,6 @@ module LifePreserver
       # Run
       builder.validate
       builder.build
-    end
-
-    # @return [String]
-    def url_for(item)
-      # Check attributes
-      if @config[:base_url].nil?
-        raise Nanoc::Int::Errors::GenericTrivial.new('Cannot build Atom feed: site configuration has no base_url')
-      end
-
-      # Build URL
-      if item[:custom_url_in_feed]
-        item[:custom_url_in_feed]
-      elsif item[:custom_path_in_feed]
-        @config[:base_url] + item[:custom_path_in_feed]
-      elsif item.path
-        @config[:base_url] + item.path
-      end
     end
 
     # @return [String]
