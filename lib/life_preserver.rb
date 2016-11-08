@@ -6,7 +6,6 @@ require 'nanoc/cachebuster'
 require 'erb'
 
 # Helpers to include in a global context
-include Nanoc::Helpers::Blogging
 include Nanoc::Helpers::Capturing
 include Nanoc::Helpers::Rendering
 include Nanoc::Helpers::XMLSitemap
@@ -26,3 +25,4 @@ include LifePreserver::Tagging
 include LifePreserver::LinkTo
 include LifePreserver::Reporting
 include History
+include LifePreserver::AtomFeed
