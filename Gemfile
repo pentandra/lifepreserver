@@ -24,6 +24,7 @@ gem 'rouge'
 gem 'haml'
 gem 'pandoc-ruby'        # for benefit reports in ConTeXt
 gem 'git'                # for version history and tagging info
+gem 'builder'            # for XML stuff, such as sitemap and atom feeds
 
 group :development, optional: true do
   gem 'guard'

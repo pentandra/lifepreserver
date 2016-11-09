@@ -2,9 +2,7 @@ require 'rdf'
 require_relative 'text'
 
 module LifePreserver
-
   module Company
-
     include Text
 
     def full_name(person)
@@ -75,7 +73,5 @@ module LifePreserver
         raise Nanoc::Int::Errors::GenericTrivial.new('Cannot generate author URIs: site configuration has no base_url')
       end
     end
-
   end
-
 end

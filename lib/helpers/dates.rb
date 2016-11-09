@@ -1,7 +1,5 @@
 module LifePreserver
-
   module Dates
-
     # @param [String, Time, Date, DateTime] arg
     #
     # @return [Time]
@@ -10,7 +8,7 @@ module LifePreserver
       when DateTime
         arg.to_time
       when Date
-        Time.local(arg.year, arg.month, arg.day)
+        Time.utc(arg.year, arg.month, arg.day)
       when String
         Time.parse(arg)
       else
@@ -29,7 +27,5 @@ module LifePreserver
     def fancy_date(date)
       attribute_to_time(date).strftime('%B %d, %Y')
     end
-
   end
-
 end

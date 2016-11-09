@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf.git
-  revision: e1ff91841066369b8917dd21be9564452a6ea18a
+  revision: 4740b4a52bf358656d01d93adc5174d5fe07aec8
   branch: develop
   specs:
     rdf (2.1.0)
@@ -40,7 +40,8 @@ GEM
       i18n (~> 0.7)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
-    addressable (2.4.0)
+    addressable (2.5.0)
+      public_suffix (~> 2.0, >= 2.0.2)
     adsf (1.2.1)
       rack (>= 1.0.0)
     bcp47 (0.3.3)
@@ -191,11 +192,12 @@ GEM
     pandoc-ruby (2.0.1)
     parallel (1.9.0)
     pipe-run (0.3.0)
-    posix-spawn (0.3.11)
+    posix-spawn (0.3.12)
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    public_suffix (2.0.4)
     pygments.rb (0.6.3)
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.2.0)
@@ -330,6 +332,7 @@ PLATFORMS
 DEPENDENCIES
   activesupport
   adsf
+  builder
   chunky_png
   compass
   ghi

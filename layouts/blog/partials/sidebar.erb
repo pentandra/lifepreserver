@@ -64,17 +64,17 @@
   </nav>
   <div class="section banner permalinks">
     <h3 class="big">Permalinks</h3>
-    <form action="<%= url_for(@item) %>">
+    <form action="<%= path_to(@item) %>">
       <div>
         <label>
           URL:
-          <input readonly="readonly" class="bookmark u-uid u-url" type="url" value="<%= url_for(@item) %>">
+          <input readonly="readonly" class="bookmark u-uid u-url" type="url" value="<%= path_to(@item, global: true) %>">
         </label>
       </div>
       <div>
         <label>
           HTML:
-          <input readonly="readonly" type="text" value="<%= h %[<cite class="h-cite"><a class="u-url p-name" href="#{url_for(@item)}">#{@item[:title]}</a> (<abbr class="p-author h-card" title="#{@item[:author_name]}">#{author[:last_name]}</abbr> <time class="dt-published">#{date_for(@item)}</time>)</cite>] %>">
+          <input readonly="readonly" type="text" value="<%= h %[<cite class="h-cite"><a class="u-url p-name" href="#{path_to(@item, global: true)}">#{@item[:title]}</a> (<abbr class="p-author h-card" title="#{@item[:author_name]}">#{author[:last_name]}</abbr> <time class="dt-published">#{date_for(@item)}</time>)</cite>] %>">
         </label>
       </div>
     </form>

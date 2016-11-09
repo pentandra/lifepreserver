@@ -1,7 +1,5 @@
 module LifePreserver
-
   module Reporting
-
     def benefit_reports
       blk = -> { @items.find_all(%r{/company/benefit-reports/\d{4}/index\.md}) }
       if @items.frozen?
@@ -23,7 +21,5 @@ module LifePreserver
     def fiscal_year
       /(?<fiscal_year>\d{4})/.match(@item.identifier)
     end
-
   end
-
 end
