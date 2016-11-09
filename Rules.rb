@@ -4,6 +4,7 @@ include_rules 'rules/preprocessing'
 ignore '/**/_*'
 ignore '/_*/**/*'
 ignore '/**/README.md'
+ignore '/**/LICENSE'
 
 include_rules 'rules/javascripts'
 include_rules 'rules/stylesheets'

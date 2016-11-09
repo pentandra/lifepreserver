@@ -55,11 +55,6 @@ data_sources:
   - type: company
     company_metafile: 'etc/company.yaml'
 
-  - type: filesystem
-    items_root: /static/specifications
-    content_dir: specifications/playground
-    layouts_dir: specifications/layouts
-
 # Config for Nanoc environments
 
 environments:
