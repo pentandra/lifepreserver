@@ -27,10 +27,26 @@ check :no_unprocessed_markdown do
   end
 end
 
+check :no_static_build_paths do
+  filenames = @output_filenames.select { |f| File.extname(f) == '.html' }
+  hrefs_with_filenames = ::Nanoc::Extra::LinkCollector.new(filenames, :internal).filenames_per_href
+  resource_uris_with_filenames = ::Nanoc::Extra::LinkCollector.new(filenames, :internal).filenames_per_resource_uri
+
+  uris = hrefs_with_filenames.merge(resource_uris_with_filenames)
+  uris.each_pair do |href, fns|
+    fns.each do |filename|
+      if href.start_with?(@config[:static_root])
+        add_issue("private build path present in #{href}", subject: filename)
+      end
+    end
+  end
+end
+
 deploy_check :internal_links
 deploy_check :mixed_content
 deploy_check :stale
 deploy_check :no_unprocessed_erb
 deploy_check :no_unprocessed_markdown
+deploy_check :no_static_build_paths
 
 # vi: ft=ruby

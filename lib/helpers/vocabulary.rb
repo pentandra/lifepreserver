@@ -1,9 +1,7 @@
 require "active_support/core_ext/object/blank"
 
 module LifePreserver
-
   module Vocabulary
-
     # Finds all prefix mappings for the given arguments.
     #
     # @param [String, Symbol]
@@ -38,7 +36,5 @@ module LifePreserver
       vocabs = @items.find_all("/_project/vocabularies/#{name}/*")
       vocabs.present? ? vocabs : @items["/_project/vocabularies/*/#{name}"]
     end
-
   end
-
 end

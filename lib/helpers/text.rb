@@ -2,9 +2,7 @@ require 'active_support'
 require 'digest/md5'
 
 module LifePreserver
-
   module Text
-    
     def to_slug(separator = "-")
       ActiveSupport::Inflector.parameterize(self, separator: separator)
     end
@@ -16,11 +14,5 @@ module LifePreserver
     def ndashed(string)
       string.gsub('-', '<span class="ndash">--</span>')
     end
-
-    def rubypantsify(item_rep, content)
-      simple_filter(item_rep, content, :rubypantsunicode)
-    end
-
   end
-
 end

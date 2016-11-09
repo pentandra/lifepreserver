@@ -1,11 +1,10 @@
 require 'shortly'
 require 'yaml/store'
+require_relative 'text'
 
 module LifePreserver
-
   module UrlShortener
-
-    include Text
+    include LifePreserver::Text
 
     SHORT_URLS_FILENAME ||= 'var/short_urls.yaml'.freeze
 
@@ -18,17 +17,16 @@ module LifePreserver
 
     private
 
+    # This method should only be called within a PStore::Transaction
     def generate_short_url(key, long_url)
       if @config[:google_api_key]
         begin
           googl = Shortly::Clients::Googl
           googl.apiKey = @config[:google_api_key]
-          short_url = googl.shorten(url).shortUrl
 
-          store.transaction { store[hash] = short_url }
-
-          short_url
-        rescue
+          store[key] = googl.shorten(long_url).shortUrl
+        rescue => e
+          warn(e.message)
           long_url
         end
       else
@@ -41,6 +39,5 @@ module LifePreserver
 
       @store ||= YAML::Store.new(SHORT_URLS_FILENAME)
     end
-
   end
 end

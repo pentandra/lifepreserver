@@ -2,17 +2,15 @@ require "active_support/core_ext/object/blank"
 require_relative 'text'
 
 module LifePreserver
-
   module Blogging
-
     include Text
 
     def blog_post?(item)
-      item[:kind] == "article" && item.identifier =~ /^\/blog/
+      item[:kind] == "article" && item.identifier =~ /\/blog\//
     end
 
     def blog_posts
-      blk = -> { @items.find_all('/blog/**/*.md') }
+      blk = -> { @items.find_all('/static/blog/**/*.md') }
       if @items.frozen?
         @blog_post_items ||= blk.call
       else
@@ -91,20 +89,21 @@ module LifePreserver
       years.to_a
     end
 
-    def post_summary(post, read_more_text: "Read more ⇢", separator: "<!--MORE-->")
-      summary, body = post.compiled_content.split(separator)
+    def post_summary(post_rep, read_more_text: "Read more ⇢", separator: "<!--MORE-->")
+      post_rep = case post_rep
+                 when Nanoc::ItemRepView
+                   post_rep
+                 when Nanoc::ItemWithRepsView
+                   post_rep.reps.fetch(:default)
+                 else
+                   raise ArgumentError, "Cannot summarize #{item_rep.inspect} (expected an item rep or an item, not a #{item_rep.class.name})"
+                 end
+
+      summary, body = post_rep.compiled_content.split(separator)
       return summary unless body
 
-      link = link_to(post.fetch(:read_more, read_more_text), post, class: "readmore", title: "Read the full article")
+      link = link_to(post_rep.item.fetch(:read_more, read_more_text), post_rep.item, global: post_rep.name != :default, class: "readmore", title: "Read the full article")
       summary << %[<p class="readmore">#{link}</p>]
-    end
-
-    def prepare_item_for_feed(item, summary: false)
-      content = summary ? post_summary(item) : item.compiled_content
-
-      prepared_content = absolutify_links(item, content)
-      prepared_content = rubypantsify(item, prepared_content)
-      prepared_content
     end
 
     def article_id(article)
@@ -136,11 +135,5 @@ module LifePreserver
         )
       end
     end
-
-    def short_url_for(item)
-      shorten(url_for(item))
-    end
-
   end
-
 end

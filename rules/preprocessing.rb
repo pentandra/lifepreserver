@@ -10,7 +10,9 @@ preprocess do
       ->(item) { @config[:production] ? (item.key?(:published) && !item[:published]) : false },
       ->(item) { item.identifier.exts.include?('js') },
       ->(item) { item.identifier.ext =~ /css/ },
-      ->(item) { item.identifier =~ /^\/assets\/components/ }
+      ->(item) { item.identifier =~ /^\/static\/assets\/components\// },
+      ->(item) { item.identifier =~ /(README|LICENSE)/ },
+      ->(item) { item.identifier.ext =~ /conf/ }
     ]
 
     should_be_hidden = disjoin(*hidden_predicates)
@@ -39,7 +41,7 @@ preprocess do
   def extract_metadata_from_specification_documents
     require 'nokogiri'
 
-    @items.select { |item| item.identifier =~ /^\/specifications\// }.each do |item|
+    @items.select { |item| item.identifier =~ /^\/static\/specifications\// }.each do |item|
       case item.identifier.ext
       when 'html'
         doc = Nokogiri::HTML(item.raw_content)

@@ -23,6 +23,7 @@ in scope before compiling:
 #### Optional dependencies
 * [optipng] for optimizing PNG images
 * A Java 8 runtime for running the [Nu HTML] checker.
+* [OpenResty] for running the dynamic parts of the site via `nanoc server`.
 
 ### Then clone this repo (including submodules), install bower components and Ruby gems…
 
@@ -58,7 +59,8 @@ $ nanoc view   # if you are only dealing with statically generated pages
 $ nanoc server # if you are dealing with both the static and dynamic aspects of the site
 ```
 
-And view the page in your browser.
+And view the page in your browser at [port 3000](http://localhost:3000/) for
+`nanoc view` or [port 4125](https://localhost:4125/) for `nanoc server`.
 
 ## Contributing
 
@@ -95,3 +97,4 @@ Also, please see [the colophon][colophon] for more raving attributions!
 [pygments]: <http://pygments.org/>
 [bundler]: <http://bundler.io/>
 [colophon]: <https://pentandra.com/colophon/>
+[OpenResty]: <http://openresty.org/>

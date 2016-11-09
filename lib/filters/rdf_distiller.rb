@@ -1,3 +1,5 @@
+require_relative '../helpers/link_to'
+
 class RdfDistiller < Nanoc::Filter
 
   identifiers :rdf_distiller
@@ -32,7 +34,7 @@ class RdfDistiller < Nanoc::Filter
     input = params.fetch(:input_format, @item.identifier.ext)
     output = params.fetch(:format, "turtle")
 
-    base_uri = params[:base_uri] || @item[:base_uri] || @config[:base_url] + @item.path
+    base_uri = params[:base_uri] || @item[:base_uri] || path_to(@item, global: true)
     prefix = params[:prefix] || @item[:prefix] || File.basename(@item.identifier.without_exts).camelize
     prefixes = params.fetch(:prefixes, {})
 

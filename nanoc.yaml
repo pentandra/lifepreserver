@@ -1,9 +1,34 @@
-text_extensions: [ 'atom', 'coffee', 'css', 'erb', 'haml', 'handlebars', 'hb', 'htm', 'html', 'js', 'less', 'markdown', 'md', 'ms', 'mustache', 'php', 'rb', 'rdoc', 'sass', 'scss', 'slim', 'tex', 'ttl', 'txt', 'xhtml', 'xml' ]
-
 enable_output_diff: true
+
+text_extensions: [ 'atom', 'conf', 'css', 'erb', 'haml', 'htm', 'html', 'js', 'markdown', 'md', 'rb', 'sass', 'scss', 'tex', 'ttl', 'txt', 'xml' ]
+
+# Config for Nanoc commands
+
+checks: &checks
+  internal_links:
+    exclude: [ '^/blog/feed' ]
+
+  external_links:
+    exclude: [ 'example.org' ]
+
+deploy:
+  public:
+    kind: rsync
+    dst: "pentandra.com:/srv/http/lifepreserver"
+    options: [ '-gpPrtvz', '--delete-after' ]
+  staging:
+    kind: rsync
+    dst: "vlad@rebikov.process.tree:/srv/http/lifepreserver"
+    options: [ '-gpPrtvz', '--delete-after' ]
 
 prune:
   auto_prune: true
+  exclude: [ 'logs', 'uwsgi_temp', 'scgi_temp', 'proxy_temp', 'fastcgi_temp', 'client_body_temp' ]
+
+view:
+  static_root: &static_root /static
+
+# Config for Nanoc data sources
 
 data_sources:
   - type: filesystem
@@ -31,54 +56,16 @@ data_sources:
     company_metafile: 'etc/company.yaml'
 
   - type: filesystem
-    items_root: /specifications
+    items_root: /static/specifications
     content_dir: specifications/playground
     layouts_dir: specifications/layouts
 
-checks: &checks
-  internal_links:
-    exclude: [ '^/blog/feed' ]
-
-  external_links:
-    exclude: [ 'example.org' ]
+# Config for Nanoc environments
 
 environments:
   default: &default
     base_url: &base_url "https://pentandra.com"
-
-    erb:
-      trim_mode: '>'
-
-    kramdown:
-      auto_ids: true
-      auto_id_prefix: "sec:"
-      auto_id_stripping: true
-      toc_levels: 1..3
-      syntax_highlighter: nil
-      header_offset: 1
-
-    geungle:
-      live: false
-
-    qrcode:
-      size: 25
-      module_size: 2
-      color: "#544233"
-
-    git:
-      url: "https://github.com/pentandra/lifepreserver.git"
-      browse_url: "https://github.com/pentandra/lifepreserver"
-      tag_url: "https://github.com/pentandra/lifepreserver/releases/tag"
-      version_history_url: "https://github.com/lifepreserver/commits/master"
-
-    site: &site
-      name: Pentandra
-      motto: Breaking Research Barriers
-      recent_thoughts_limit: 5
-      generate_blogmeta: true
-      base_url: *base_url
-      images_url: /images
-      search_url: /search
+    static_root: *static_root
 
     blog: &blog
       title: The Pentandra Blog
@@ -96,7 +83,40 @@ environments:
       photo_uri: *logo_uri
       kind: org
 
-  development:
+    erb:
+      trim_mode: '>'
+
+    kramdown:
+      auto_ids: true
+      auto_id_prefix: "sec:"
+      auto_id_stripping: true
+      toc_levels: 1..3
+      syntax_highlighter: nil
+      header_offset: 1
+
+    geungle:
+      live: false
+
+    git:
+      url: "https://github.com/pentandra/lifepreserver.git"
+      browse_url: "https://github.com/pentandra/lifepreserver"
+      tag_url: "https://github.com/pentandra/lifepreserver/releases/tag"
+      version_history_url: "https://github.com/lifepreserver/commits/master"
+
+    qrcode:
+      size: 25
+      module_size: 2
+      color: "#544233"
+
+    site: &site
+      name: Pentandra
+      motto: Breaking Research Barriers
+      recent_thoughts_limit: 5
+      generate_blogmeta: true
+      base_url: *base_url
+      images_url: /images
+
+  development: &development
     <<: *default
 
     site: # Simplify dependencies for quicker compilation during development
@@ -113,8 +133,24 @@ environments:
       internal_links:
         exclude: [ '^/blog/feed', '^/tags', '^/archives', '^/authors' ]
 
-  production:
+    server:
+      name: 'localhost'
+      pid_file: 'logs/nginx.pid'
+      port: 3125
+      port_tls: 4125
+      code_cache: 'off'
+      tls_certificate: 'etc/certs/server.crt'
+      tls_certificate_key: 'etc/certs/server.key'
+      tls_dhparam: 'etc/certs/dhparams.pem'
+
+  static_only:
+    <<: *development
+    ignore_server_items: true
+
+  production: &production
     <<: *default
+
+    require_git_tag: true # All production releases must be at a tag
 
     google_analytics:
       code: UA-26002603-1
@@ -123,12 +159,17 @@ environments:
     hypothesis: true
     production: true
 
-deploy:
-  public:
-    kind: rsync
-    dst: "pentandra.com:/srv/http/lifepreserver"
-    options: [ '-gpPrtvz', '--delete-after' ]
+    server:
+      name: 'pentandra.com'
+      pid_file: '/var/run/nginx.pid'
+      port: 80
+      port_tls: 443
+      code_cache: 'on'
+      tls_certificate: '/etc/letsencrypt/live/pentandra.com/fullchain.pem'
+      tls_certificate_key: '/etc/letsencrypt/live/pentandra.com/privkey.pem'
+      tls_dhparam: '/etc/letsencrypt/live/pentandra.com/dhparams.pem'
+
   staging:
-    kind: rsync
-    dst: "vlad@rebikov.process.tree:/srv/http/lifepreserver"
-    options: [ '-gpPrtvz', '--delete-after' ]
+    <<: *production
+
+    require_git_tag: false

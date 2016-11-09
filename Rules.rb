@@ -13,5 +13,7 @@ include_rules 'rules/specifications'
 include_rules 'rules/company'
 include_rules 'rules/blog'
 
+include_rules 'rules/dynamic'
+
 # This should always be last
 include_rules 'rules/catch_all'

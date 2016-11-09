@@ -1,7 +1,7 @@
-<article property="schema:blogPost" typeof="cc:Work schema:BlogPosting" resource="<%= item.path %>#blogpost" class="noted section excerpt">
+<article property="schema:blogPost" typeof="cc:Work schema:BlogPosting" resource="<%= path_to(item) %>#blogpost" class="noted section excerpt">
   <div class="bd">
     <h2 class="bigger">
-      <a property="schema:url" rel="bookmark" title="Full article" href="<%= item.path %>"><span property="dc:title schema:name"><%= item[:title] %></span></a>
+      <a property="schema:url" rel="bookmark" title="Full article" href="<%= path_to(item) %>"><span property="dc:title schema:name"><%= item[:title] %></span></a>
     </h2>
     <p property="schema:description"><%= item[:description] %></p>
   </div>

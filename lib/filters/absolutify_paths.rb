@@ -1,3 +1,4 @@
+require_relative '../helpers/link_to'
 # Based on https://gist.github.com/fracai/1597618 and the
 # `Nanoc::Filters::RelativizePaths filter, with improvements
 class AbsolutifyPaths < Nanoc::Filter
@@ -16,9 +17,9 @@ class AbsolutifyPaths < Nanoc::Filter
   # @option params [Symbol] :type The type of content to filter; can be
   # `:html`, `:xhtml`, `:xml`, `:css`, or `:context`.
   #
-  # @option params [Symbol] :form Use `:uri` to create an absolute URI based on
-  # the `@config[:base_url]`. Otherwise this filter only creates a reference to
-  # an absolute path.
+  # @option params [Boolean] :global Set true to create an absolute URI based
+  # on the `@config[:base_url]`. Otherwise this filter only creates a reference
+  # to an absolute path.
   #
   # @option params [Array] :select The XPath expression that matches the nodes
   # to modify. This param is only useful for the `:html`, `:xml`, and `:xhtml`
@@ -29,7 +30,7 @@ class AbsolutifyPaths < Nanoc::Filter
   # useful for the `:xml` and `:xhtml` types.
   def run(content, params={})
 
-    if params[:form] == :uri && @config[:base_url].nil?
+    if params[:global] && @config[:base_url].nil?
       raise 'Cannot build absolute path: site configuration has no base_url'
     end
 
@@ -51,23 +52,23 @@ class AbsolutifyPaths < Nanoc::Filter
 
   # http://rubular.com/r/aRKvVMu34O
   def absolutify_css(content, params)
-    form = params.fetch(:form, :path)
+    global = params.fetch(:global, false)
 
     content.gsub(/url\((?<quote>['"]?)(?<path>\/(?:[^\/].*?)?)\k<quote>\)/) do
       quote = Regexp.last_match(:quote)
       path = Regexp.last_match(:path)
-      'url(' + quote + absolute_path_to(path, form) + quote + ')'
+      'url(' + quote + public_path_to(path, global: global) + quote + ')'
     end
   end
 
   # http://rubular.com/r/GSkMfZLcyk
   def absolutify_context(content, params)
-    form = params.fetch(:form, :uri)
+    global = params.fetch(:global, true)
 
     content.gsub(/\\useURL\s*(?<identifier>\[.*?\]){1}\s*\[(?<target>\/(?:[^\/].*?)?)\]/) do |match|
       identifier = Regexp.last_match(:identifier)
       target = Regexp.last_match(:target)
-      '\useURL' + identifier + '[' + absolute_path_to(target, form) + ']'
+      '\useURL' + identifier + '[' + public_path_to(target, global: global) + ']'
     end
   end
 
@@ -75,7 +76,7 @@ class AbsolutifyPaths < Nanoc::Filter
     selectors  = params.fetch(:select, SELECTORS)
     namespaces = params.fetch(:namespaces, {})
     type       = params.fetch(:type)
-    form       = params.fetch(:form, :path)
+    global     = params.fetch(:global, false)
 
     case type
     when :html
@@ -91,10 +92,10 @@ class AbsolutifyPaths < Nanoc::Filter
       content = content.sub(%r{(<html[^>]+)xmlns="http://www.w3.org/1999/xhtml"}, '\1')
     end
 
-    nokogiri_process(content, selectors, namespaces, klass, type, form)
+    nokogiri_process(content, selectors, namespaces, klass, type, global)
   end
 
-  def nokogiri_process(content, selectors, namespaces, klass, type, form)
+  def nokogiri_process(content, selectors, namespaces, klass, type, global)
     # Ensure that all prefixes are strings
     namespaces = namespaces.reduce({}) { |new, (prefix, uri)| new.merge(prefix.to_s => uri) }
 
@@ -102,22 +103,22 @@ class AbsolutifyPaths < Nanoc::Filter
     selectors.map { |sel| "descendant-or-self::#{sel}" }.each do |selector|
       doc.xpath(selector, namespaces).each do |node|
         if node.name == 'comment'
-          nokogiri_process_comment(node, doc, selectors, namespaces, klass, type, form)
+          nokogiri_process_comment(node, doc, selectors, namespaces, klass, type, global)
         elsif path_is_absolutifiable?(node.content)
-          node.content = absolute_path_to(node.content, form)
+          node.content = public_path_to(node.content, global: global)
         end
       end
     end
     doc.send("to_#{type}")
   end
 
-  def nokogiri_process_comment(node, doc, selectors, namespaces, klass, type, form)
+  def nokogiri_process_comment(node, doc, selectors, namespaces, klass, type, global)
     content = node.content.dup.sub(%r{^(\s*\[.+?\]>\s*)(.+?)(\s*<!\[endif\])}m) do |_m|
       beginning = Regexp.last_match(1)
       body = Regexp.last_match(2)
       ending = Regexp.last_match(3)
 
-      beginning + nokogiri_process(body, selectors, namespaces, klass, type, form) + ending
+      beginning + nokogiri_process(body, selectors, namespaces, klass, type, global) + ending
     end
 
     node.replace(Nokogiri::XML::Comment.new(doc, content))
@@ -125,27 +126,6 @@ class AbsolutifyPaths < Nanoc::Filter
 
   def path_is_absolutifiable?(s)
     !s.include?('://'.freeze)
-  end
-
-  def absolute_path_to(target, form = :path)
-    abs_path = target.is_a?(String) ? target : target.path
-    abs_path = unstack(@item_rep.path, abs_path)
-
-    if form == :uri
-      abs_path = @config[:base_url] + abs_path
-    end
-
-    abs_path
-  end
-
-  def unstack(current, target)
-    if target =~ /^\//
-      return target
-    end
-    p = current.gsub(/[^\/]*$/, '') + target
-    p = p.gsub(/\/+/, '/')
-    p = p.gsub(/[^\/]*\/\.\.\//, '') while (p =~ /\.\.\//)
-    p
   end
 
 end
