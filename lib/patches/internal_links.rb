@@ -25,13 +25,10 @@ module Nanoc::Extra::Checking::Checks
       # Decode URL (e.g. '%20' -> ' ')
       path = URI.unescape(path)
 
-      # Prepend the static_root, since the items that we are checking are static
-      path = @config[:static_root] + path
-
       # Make absolute
       path =
         if path[0, 1] == '/'
-          @config[:output_dir] + path
+          @config[:output_dir] + @config[:static_root] + path
         else
           ::File.expand_path(path, ::File.dirname(origin))
         end

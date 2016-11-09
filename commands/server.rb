@@ -35,33 +35,40 @@ module LifePreserver
 
       load_site
 
+      c = Nanoc::CLI::ANSIStringColorizer
+
       conf = options[:conf] || 'nginx.conf'
       directives = options[:global] || 'daemon off;'
 
-
       nginx = find_nginx
       output_dir = site.config[:output_dir]
+      config_file = File.join(output_dir, conf)
       cmd = [ nginx, '-p', output_dir, '-c', conf, '-g', directives ]
 
-      Open3.popen3(*cmd) do |_stdin, stdout, stderr, wait_thr|
-        puts "Starting OpenResty (#{nginx}) in path (#{output_dir}) with config (#{conf}) and global directives (#{directives})"
+      Open3.popen3(*cmd) do |stdin, stdout, stderr, thread|
+        puts c.c("Starting OpenResty with config file (#{config_file})", :bold)
+        puts "OpenResty executable: #{nginx}"
+        puts "Global directives: #{directives}"
 
-        stdout_thread = Thread.new do
-          while (line = stdout.gets)
-            puts line
+        { stdout: stdout, stderr: stderr }.each do |key, stream|
+          Thread.new do
+            while (line = stream.gets)
+              print (key == :stderr) ? c.c(line, :yellow) : line
+            end
           end
         end
 
-        stderr_thread = Thread.new do
-          while (line = stderr.gets)
-            puts line
+        # Reload config on any user input
+        Thread.new do
+          while $stdin.gets
+            puts c.c("Reloading OpenResty with config file (#{config_file})", :bold)
+            system(*cmd, '-s', 'reload')
           end
         end
 
-        stdout_thread.join
-        stderr_thread.join
+        thread.join # don't exit until the external process is done
 
-        exit_status = wait_thr.value
+        exit_status = thread.value
         unless exit_status.success?
           raise Error.new(cmd, exit_status.to_i)
         end
@@ -85,7 +92,7 @@ module LifePreserver
         return to_check
       end
 
-      raise "Cannot find the OpenResty executable in any of the following places: #{NGINX_SEARCH_PATHS.join(':')} or in the current path: #{ENV['PATH']}"
+      raise "Cannot find the OpenResty executable in any of the following places: #{NGINX_SEARCH_PATHS.join(', ')} or in the current path (#{ENV['PATH']})"
     end
 
     def openresty?(path_to_check)
