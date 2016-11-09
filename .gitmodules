@@ -1,5 +1,5 @@
 [submodule "specifications"]
-	path = specifications
+	path = items/static/specifications
 	url = git@github.com:pentandra/specifications.git
 [submodule "benefit-reports"]
 	path = items/static/company/benefit-reports
