@@ -53,7 +53,7 @@ module LifePreserver
         { stdout: stdout, stderr: stderr }.each do |key, stream|
           Thread.new do
             while (line = stream.gets)
-              puts (key == :stderr) ? c.c(line.chomp, :yellow) : line
+              print (key == :stderr) ? c.c(line, :yellow) : line
             end
           end
         end
