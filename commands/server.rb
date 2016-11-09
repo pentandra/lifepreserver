@@ -45,7 +45,7 @@ module LifePreserver
       output_dir = site.config[:output_dir]
       cmd = [ nginx, '-p', output_dir, '-c', conf, '-g', directives ]
 
-      Open3.popen3(*cmd) do |_stdin, stdout, stderr, wait_thr|
+      Open3.popen3(*cmd) do |stdin, stdout, stderr, thread|
         puts c.c("Starting OpenResty with config file (#{File.join(output_dir, conf)})", :bold)
         puts "OpenResty executable: #{nginx}"
         puts "Global directives: #{directives}"
@@ -58,9 +58,16 @@ module LifePreserver
           end
         end
 
-        wait_thr.join # don't exit until the external process is done
+        # Reload config on any user input
+        Thread.new do
+          while (input = $stdin.gets)
+            system(*cmd, '-s', 'reload')
+          end
+        end
 
-        exit_status = wait_thr.value
+        thread.join # don't exit until the external process is done
+
+        exit_status = thread.value
         unless exit_status.success?
           raise Error.new(cmd, exit_status.to_i)
         end
