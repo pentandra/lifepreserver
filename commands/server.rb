@@ -40,13 +40,13 @@ module LifePreserver
       conf = options[:conf] || 'nginx.conf'
       directives = options[:global] || 'daemon off;'
 
-
       nginx = find_nginx
       output_dir = site.config[:output_dir]
+      config_file = File.join(output_dir, conf)
       cmd = [ nginx, '-p', output_dir, '-c', conf, '-g', directives ]
 
       Open3.popen3(*cmd) do |stdin, stdout, stderr, thread|
-        puts c.c("Starting OpenResty with config file (#{File.join(output_dir, conf)})", :bold)
+        puts c.c("Starting OpenResty with config file (#{config_file})", :bold)
         puts "OpenResty executable: #{nginx}"
         puts "Global directives: #{directives}"
 
@@ -60,7 +60,8 @@ module LifePreserver
 
         # Reload config on any user input
         Thread.new do
-          while (input = $stdin.gets)
+          while $stdin.gets
+            puts c.c("Reloading OpenResty with config file (#{config_file})", :bold)
             system(*cmd, '-s', 'reload')
           end
         end
