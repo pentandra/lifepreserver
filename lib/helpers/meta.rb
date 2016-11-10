@@ -14,7 +14,7 @@ module LifePreserver
     end
 
     def sorted_dependencies
-      @items.find_all('/_project/dependencies/*').sort_by(&:identifier)
+      @items.find_all('/lifepreserver/dependencies/*').sort_by(&:identifier)
     end
 
     def ruby_desc

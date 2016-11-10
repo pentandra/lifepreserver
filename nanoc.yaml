@@ -35,13 +35,13 @@ data_sources:
     content_dir: items
 
   - type: dependencies
-    items_root: /_project
+    items_root: &meta_items_root /lifepreserver
 
   - type: tags
-    items_root: /_project
+    items_root: *meta_items_root
 
   - type: vocabularies
-    items_root: /_project
+    items_root: *meta_items_root
     prefixes_used:
       standard:   [ cc, ctag, dc, foaf, owl, prov, rdf, rdfs, schema, sioc, skos, xhv ]
       business:   [ essglobal, fea, rov, vcard ]
