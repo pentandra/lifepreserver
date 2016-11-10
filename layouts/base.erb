@@ -20,7 +20,7 @@
 
     <script src="/js/modernizr.custom.40730.js"></script>
 
-    <%= render('/blog/partials/atom-discovery.*') %>
+    <%= render('/blog/partials/atom_discovery.*') %>
 
     <% for p in @item.fetch(:head, []) %>
       <%= render("/partials/#{p}.*") %>

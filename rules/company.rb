@@ -9,7 +9,7 @@ compile %r{/static/company/benefit-reports/\d{4}/index\.md} do
     :smart
   ]
   filter :spellchecker unless @config[:production]
-  layout '/benefit-reports/default.*'
+  layout '/benefit_reports/default.*'
   filter :rubypantsunicode
   filter :cache_buster if @config[:production]
   filter :html5small if @config[:production]
@@ -22,7 +22,7 @@ compile %r{/static/company/benefit-reports/(\d{4})/index\.md}, rep: :pdf do |fis
     :chapters
   ]
   filter :absolutify_paths, type: :context
-  layout '/benefit-reports/report.*'
+  layout '/benefit_reports/report.*'
   filter :context2pdf, @config[:context2pdf].merge(mode: @item[:wip] ? 'draft' : 'publish')
   write File.dirname(item.identifier.to_s) + "/UT_Pentandra_report_#{fiscal_year}.pdf"
 end
