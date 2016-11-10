@@ -24,5 +24,5 @@ include LifePreserver::Vocabulary
 include LifePreserver::Tagging
 include LifePreserver::LinkTo
 include LifePreserver::Reporting
-include History
+include LifePreserver::Meta
 include LifePreserver::AtomFeed
