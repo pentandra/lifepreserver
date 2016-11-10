@@ -1,15 +1,18 @@
-<section class="section" resource="pentandra-blog:latest-articles" typeof="schema:ItemList">
+<section property="schema:hasPart" class="section" resource="pentandra-blog:latest-articles" typeof="schema:ItemList">
   <h3 class="visuallyhidden">Latest Articles</h3>
   <div class="bd">
     <link property="schema:itemListOrder" resource="schema:itemListOrderDescending" />
     <meta property="schema:numberOfItems" content="<%= h limit %>" datatype="schema:Integer" />
     <% published_blog_posts.first(limit).each_with_index do |post, index| %>
-    <article class="excerpt" property="schema:itemListElement" typeof="schema:ListItem">
-      <meta property="schema:position" content="<%= "#{index + 1}" %>" />
-      <a href="<%= path_to(post) %>" rel="bookmark" property="schema:item" typeof="schema:WebPage">
-        <time class="small bold" property="schema:datePublished" datetime="<%= h date_for(post) %>"><%= ndashed(date_for(post)) %></time>&#8194;<h3 class="normal" property="schema:name"><%= h post[:short_title] || post[:title] %></h3>
-      </a>
-    </article>
+      <div property="schema:itemListElement" typeof="schema:ListItem">
+        <meta property="schema:position" content="<%= "#{index + 1}" %>" />
+        <article class="excerpt" property="schema:item" resource="<%= path_to(post) %>#blogpost" typeof="schema:BlogPost">
+          <a href="<%= path_to(post) %>" rel="bookmark" property="schema:url">
+            <time class="small bold" property="schema:datePublished" datetime="<%= h date_for(post) %>"><%= ndashed(date_for(post)) %></time>&#8194;<h3 class="normal" property="schema:name"><%= h post[:short_title] || post[:title] %></h3>
+          </a>
+          <link property="schema:isPartOf" resource="pentandra-blog:blog" />
+        </article>
+      </div>
     <% end %>
   </div>
 </section>
