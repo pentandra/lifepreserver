@@ -3,7 +3,7 @@ require 'git'
 module LifePreserver
   module Meta
     # Run during preprocessing
-    def populate_version_history(config = nil)
+    def validate_version_history(config = nil)
       config ||= @config
       config[:version] = fetch_git_tag(exact_match: config.fetch(:require_git_tag, false))
     end
