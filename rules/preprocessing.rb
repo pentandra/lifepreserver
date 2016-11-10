@@ -27,8 +27,8 @@ preprocess do
 
   def include_video_partials_when_has_media
     @items.select { |item| item.key?(:has_media) }.each do |item|
-      item[:head] = Array(item[:head]) << 'video-styles'
-      item[:endbody] = Array(item[:endbody]) << 'video-scripts'
+      item[:head] = Array(item[:head]) << 'video_styles'
+      item[:endbody] = Array(item[:endbody]) << 'video_scripts'
     end
   end
 
