@@ -13,8 +13,13 @@ module LifePreserver
       exact_match ? git.describe('HEAD', exact_match: true) : git.describe('HEAD', abbrev: 0)
     end
 
-    def sorted_dependencies
-      @items.find_all('/lifepreserver/dependencies/*').sort_by(&:identifier)
+    # Finds all the dependencies for the given group name.
+    #
+    # @param [String, Symbol]
+    #
+    # @return [Array]
+    def dependencies_for(group_name)
+      @items.find_all("/lifepreserver/dependencies/#{group_name}/*").sort_by(&:identifier)
     end
 
     def ruby_desc

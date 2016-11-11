@@ -6,8 +6,10 @@ Class.new(Nanoc::DataSource) do
   def items
     items = []
 
-    Bundler.rubygems.all_specs.each do |gem|
-      items << gem_to_item(gem)
+    groups(Bundler.environment).each do |group_name, dependencies|
+      dependencies.each do |dependency|
+        items << gem_to_item(dependency.to_spec, group_name.to_s)
+      end
     end
 
     items
@@ -15,7 +17,7 @@ Class.new(Nanoc::DataSource) do
 
   protected
 
-  def gem_to_item(gem)
+  def gem_to_item(gem, group_name)
     slug = gem.name.parameterize
     new_item(
       '-',
@@ -25,10 +27,20 @@ Class.new(Nanoc::DataSource) do
         summary:   gem.summary,
         homepage:  gem.homepage,
         version:   gem.version.to_s,
+        group:     group_name,
         is_hidden: true
       },
-      Nanoc::Identifier.new("/dependencies/#{slug}"),
-      checksum_data: "name=#{gem.name},version=#{gem.version}")
+      Nanoc::Identifier.new("/dependencies/#{group_name}/#{slug}"),
+      checksum_data: "name=#{gem.name},version=#{gem.version},group=#{group_name}")
   end
 
+  def groups(env)
+    relations = Hash.new { |h, k| h[k] = Set.new }
+    env.current_dependencies.each do |dependency|
+      dependency.groups.each do |group|
+        relations[group.to_s].add(dependency)
+      end
+    end
+    relations
+  end
 end
