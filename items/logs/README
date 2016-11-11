@@ -1,0 +1,6 @@
+OpenResty logs directory
+
+This directory contains outputted logs from the web server.
+
+This file needs to exist to create the logs directory in the compiled output in
+order for OpenResty to start. 

@@ -272,37 +272,72 @@ changefreq: monthly
 
     <p>
 
-      The build process does not involve paper, ink, and moveable type, but it does involve many moving pieces. Much of this site is compiled beforehand, using <a href="<%= "http://ruby-doc.org/core-#{RUBY_VERSION}/" %>"><%= ruby_desc %></a>. We are so grateful for the many developers that have contributed their time, talents, and love through this development platform, as well as through the following component projects:
+      The build process does not involve paper, ink, and moveable type, but it does involve many moving pieces. Much of this site is compiled beforehand, using <a href="<%= "http://ruby-doc.org/core-#{RUBY_VERSION}/" %>"><%= ruby_desc %></a> and the excellent <a href="http://nanoc.ws/">Nanoc</a> project.
 
     </p>
-    <ul>
+  </div>
+  <section id="sec:default-dependencies" class="section">
 
-      <% sorted_dependencies.each do |dependency| %>
-        <li property="deps:build-requirement" typeof="deps:Dependency">
-          <span property="deps:on" datatype="deps:GemId" content="<%= "#{h dependency[:name]} #{h dependency[:version]}" %>">
-            <% if dependency[:homepage] %>
-              <a rel="doap:homepage" href="<%= h dependency[:homepage] %>" property="doap:name"><%= h dependency[:name] %></a>
-            <% else %>
-              <span property="doap:name"><%= h dependency[:name] %></span>
-            <% end %>
-            [<%= h dependency[:version] %>]</span>:
-          <span property="doap:shortdesc"><%= h dependency[:summary] %></span>
-        </li>
-      <% end %>
+    <div class="bd">
 
-    </ul>
+      <h3 class="flush">Buildtime Dependencies</h3>
 
-    <p>
+      <p>
 
-      We also need to acknowledge the thousands of developers that have
-      contributed to the many unix-related projects on top of which we run all
-      of this infrastructure, specifically those from the <a
-        href="https://www.archlinux.org">Arch Linux</a>, <a
-        href="https://www.centos.org/">CentOS</a>, and <a
-        href="https://wiki.smartos.org/display/DOC/Home">SmartOS</a>
-      communities.
+        The following projects…
 
-    </p>
+      </p>
 
+      <%= render('/partials/dependency_metadata.*', group: :default) %>
+
+    </div>
+
+  </section>
+  <section id="sec:development-dependencies" class="section">
+
+    <div class="bd">
+
+      <h3 class="flush">Development Dependencies</h3>
+
+      <p>
+
+        The following projects…
+
+      </p>
+
+      <%= render('/partials/dependency_metadata.*', group: :development) %>
+
+    </div>
+
+  </section>
+  <section id="sec:os-gratitude" class="section">
+
+    <div class="bd">
+
+      <h3 class="flush">Foundational Infrastructures</h3>
+
+      <p>
+
+        We also need to acknowledge (though I think it would be impossible to
+        do so properly) the thousands of developers that have contributed to
+        the many unix-related infrastructures and middlewares on top of which
+        we build this project, specifically those from the <a
+          href="https://www.archlinux.org">Arch Linux</a>, <a
+          href="https://www.centos.org/">CentOS</a>, and <a
+          href="https://wiki.smartos.org/display/DOC/Home">SmartOS</a>
+        communities. The breadth and scope of the effort required to create and
+        maintain these infrastructures, as well as the good that has come into
+        the world because of them, is unfathomable.
+
+      </p>
+
+    </div>
+  </section>
+</section>
+<section class="noted section">
+
+  <h2>The Server</h2>
+
+  <div class="bd">
   </div>
 </section>
