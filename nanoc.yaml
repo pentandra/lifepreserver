@@ -160,6 +160,7 @@ environments:
       port: 80
       port_tls: 443
       code_cache: 'on'
+      platform: 'linux'
       tls_certificate: '/etc/letsencrypt/live/pentandra.com/fullchain.pem'
       tls_certificate_key: '/etc/letsencrypt/live/pentandra.com/privkey.pem'
       tls_dhparam: '/etc/letsencrypt/live/pentandra.com/dhparams.pem'
