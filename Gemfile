@@ -11,7 +11,7 @@ gem 'activesupport'      # for helpful extension methods
 gem 'vcardigan'          # for vCards
 gem 'rqrcode'            # for qrcodes
 gem 'chunky_png'         # for PNG generation of qrcodes
-gem 'optipng'            # to compress the outputted qrcode
+gem 'image_optimizer'    # to compress images
 gem 'shortly'            # for URL shortening
 gem 'html_spellchecker', git: 'https://github.com/cdchapman/HTML-Spellchecker', branch: 'mark'
 gem 'rest-client'        # for downloads of external resources

@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-vocab.git
-  revision: 7c0dc4525d7a7c56222c9cb72f9608895725cd28
+  revision: 08c60fc785b82d3441a341a1715d4624fe3d0386
   branch: develop
   specs:
     rdf-vocab (2.1.0)
@@ -47,11 +47,9 @@ GEM
     bcp47 (0.3.3)
       i18n
     builder (3.2.2)
-    chunky_png (1.3.7)
+    chunky_png (1.3.8)
     coderay (1.1.1)
     colored (1.2)
-    command-builder (0.3.2)
-      pipe-run (>= 0.2.1)
     compass (1.0.3)
       chunky_png (~> 1.2)
       compass-core (~> 1.0.2)
@@ -110,8 +108,6 @@ GEM
       tilt
     hamster (3.0.0)
       concurrent-ruby (~> 1.0)
-    hash-utils (2.2.0)
-      ruby-version (>= 0.4.0)
     hashdiff (0.3.0)
     html5small (0.4.0)
       htmlentities (>= 4.1.0)
@@ -126,6 +122,7 @@ GEM
     hunspell-ffi (0.1.3)
       ffi (~> 1.0.7)
     i18n (0.7.0)
+    image_optimizer (1.7.0)
     json (1.8.1)
     json-ld (2.1.0)
       multi_json (~> 1.11)
@@ -186,12 +183,8 @@ GEM
     notiffany (0.1.1)
       nenv (~> 0.1)
       shellany (~> 0.0)
-    optipng (0.2.1)
-      command-builder (>= 0.2.0)
-      unix-whereis (>= 0.1.0)
     pandoc-ruby (2.0.1)
     parallel (1.9.0)
-    pipe-run (0.3.0)
     posix-spawn (0.3.12)
     pry (0.10.4)
       coderay (~> 1.1.0)
@@ -283,7 +276,6 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.5.0)
     rspec-support (3.5.0)
-    ruby-version (0.4.3)
     ruby_dep (1.5.0)
     rubypants-unicode (0.2.5)
     safe_yaml (1.0.4)
@@ -316,9 +308,6 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.2)
-    unix-whereis (0.1.1)
-      command-builder (>= 0.2.0)
-      hash-utils (>= 0.18.0)
     vcardigan (0.0.9)
     webmock (1.24.6)
       addressable (>= 2.3.6)
@@ -343,12 +332,12 @@ DEPENDENCIES
   haml
   html5small
   html_spellchecker!
+  image_optimizer
   kramdown
   linkeddata
   nanoc
   nanoc-cachebuster!
   nokogiri
-  optipng
   pandoc-ruby
   rainpress
   rdf!

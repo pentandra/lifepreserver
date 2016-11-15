@@ -2,7 +2,7 @@ class QRCode < Nanoc::Filter
   identifier :qrcode
   type :text => :binary
 
-  requires 'rqrcode', 'chunky_png', 'optipng'
+  requires 'rqrcode'
 
   def run(content, params = {})
 
@@ -15,11 +15,6 @@ class QRCode < Nanoc::Filter
     image = qr.to_image(module_size, 4, color)
 
     image.save(output_filename)
-
-    if @config[:production] and Optipng.available?
-      Optipng.optimize(output_filename, level: 7 )
-    end
-
   end
 
 end
