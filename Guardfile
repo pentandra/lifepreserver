@@ -3,7 +3,7 @@ guard 'nanoc' do
   watch('Rules.rb')
   watch(%r{^rules/.*$})
   watch(%r{^(items|layouts|lib)/.*$})
-  watch('etc/dictionary')
+  watch('etc/hunspell/lifepreserver.dic')
   watch('etc/compass/compass.rb')
   watch(%r{^(etc|var)/.*\.yaml$})
 end
