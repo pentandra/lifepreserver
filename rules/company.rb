@@ -31,6 +31,7 @@ compile '/company/_', rep: :qrcode do
   filter :vcard, @config[:company]
   snapshot :vcard
   filter :qrcode, @config[:qrcode]
+  filter :image_optimizer
   write "/static/images/pentandra-qrcode#{fingerprint(@item[:filename]) if @config[:production]}.png"
 end
 

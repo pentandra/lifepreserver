@@ -47,3 +47,7 @@ compile '/static/blog/**/*.md', rep: :feed_entry do
   filter :absolutify_paths, type: :html, global: true
   filter :rubypantsunicode
 end
+
+compile '/static/blog/**/*.{jpg,jpeg,png,gif}' do
+  filter :image_optimizer if @config[:production]
+end

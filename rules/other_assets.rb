@@ -1,7 +1,8 @@
 # Favicon and images
 
-route '/static/assets/images/*' do
-  '/static/images/' + File.basename(@item.identifier.to_s)
+compile '/static/assets/images/**/*' do
+  filter :image_optimizer if @config[:production]
+  write '/static/images/' + File.basename(@item.identifier.to_s)
 end
 
 # Fonts and other files

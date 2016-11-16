@@ -21,7 +21,9 @@ in scope before compiling:
     manually, e.g. `npm install bower -g`)_
 
 #### Optional dependencies
-* [optipng] for optimizing PNG images
+
+* [optipng], [pngquant], [jpegoptim], and [gifsicle] for optimizing PNG, JPEG,
+  and GIF images, respectively.
 * A Java 8 runtime for running the [Nu HTML] checker.
 * [OpenResty] for running the dynamic parts of the site via `nanoc server`.
 
@@ -90,6 +92,9 @@ Also, please see [the colophon][colophon] for more raving attributions!
 [node]: <https://nodejs.org/en/>
 [apostrophe fix]: <https://github.com/en-wl/wordlist/issues/122>
 [optipng]: <http://optipng.sourceforge.net/>
+[pngquant]: <https://pngquant.org/>
+[jpegoptim]: <http://freecode.com/projects/jpegoptim>
+[gifsicle]: <https://www.lcdf.org/gifsicle/>
 [hunspell]: <https://hunspell.github.io/>
 [pandoc]: <http://pandoc.org/>
 [git]: <https://git-scm.com/>
