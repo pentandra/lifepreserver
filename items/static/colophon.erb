@@ -167,11 +167,21 @@ changefreq: monthly
 
     <p>
 
-      In general, the syntaxes of <abbr title="HyperText Markup
-        Language">HTML5</abbr> is used for the document structure, <abbr
-        title="Cascading Style Sheets">CSS</abbr> for the visual design. To
-      describe the content and <em>meaning</em> of these web pages in a way
-      that can be expressed to a machine, the following vocabularies are used.
+      To describe the content of this site in a way that its <em>meaning</em>
+      can be processed by a machine, we have incorporated machine vocabularies
+      in the form of embedded attributes in the markup of these web pages,
+      using an <a href="https://en.wikipedia.org/wiki/Open_Web_Platform"
+        title="Open Web Platform on Wikipedia">Open Web</a> standard called <a
+        href="https://www.w3.org/TR/rdfa-core/"><abbr title="Resource Description Framework through Attributes">RDFa</abbr></a>.
+
+    </p>
+    <p>
+
+      Doing so makes it possible for not only people to read the content of
+      this site, but for intelligent machine agents to distill and incorporate
+      meaning from the content, and then to connect knowledge together across
+      the Web. If you want to catch the vision of some of the possibilities,
+      check out Ruben Verborgh's thesis: <a href="https://ruben.verborgh.org/phd/"><cite>Serendipitous Web Applications through Semantic Hypermedia</cite></a>.
 
     </p>
 
@@ -272,9 +282,18 @@ changefreq: monthly
 
     <p>
 
-      The build process does not involve paper, ink, and moveable type, but it does involve many moving pieces. Much of this site is compiled beforehand, using <a href="<%= "http://ruby-doc.org/core-#{RUBY_VERSION}/" %>"><%= ruby_desc %></a> and the excellent <a href="http://nanoc.ws/">Nanoc</a> project.
+      The build process does not involve paper, ink, and moveable type, but it
+      does involve many moving pieces. Much of this site is statically compiled
+      using the excellent <a href="http://nanoc.ws/">Nanoc</a> project and <%=
+      ruby_desc %>. This approach gives us the best of both worlds: the
+      flexibility to decide which pieces of this site would be more
+      advantageous to compile beforehand, and which would be more appropriate
+      to generate dynamically the moment they are needed.
 
     </p>
+  </div>
+  <div class="aside img section">
+    <img data-no-retina src="/images/nanoc.png" alt="Nanoc logo: a bold red 'N' character centered within a dark grey circle, on a grey background." />
   </div>
   <section id="sec:default-dependencies" class="section">
 
@@ -284,7 +303,7 @@ changefreq: monthly
 
       <p>
 
-        The following projects…
+        <%= authors_of(dependencies_for(:default)).join(', ') %>
 
       </p>
 
@@ -301,7 +320,9 @@ changefreq: monthly
 
       <p>
 
-        The following projects…
+        There are certain tools that we used in preparing and developing this project.
+
+        <%= authors_of(dependencies_for(:development)).join(', ') %>
 
       </p>
 
@@ -321,7 +342,7 @@ changefreq: monthly
         We also need to acknowledge (though I think it would be impossible to
         do so properly) the thousands of developers that have contributed to
         the many unix-related infrastructures and middlewares on top of which
-        we build this project, specifically those from the <a
+        we have built this project, specifically those from the <a
           href="https://www.archlinux.org">Arch Linux</a>, <a
           href="https://www.centos.org/">CentOS</a>, and <a
           href="https://wiki.smartos.org/display/DOC/Home">SmartOS</a>
@@ -339,5 +360,8 @@ changefreq: monthly
   <h2>The Server</h2>
 
   <div class="bd">
+  </div>
+  <div class="aside img section">
+    <img data-no-retina src="/images/openresty.jpg" alt="OpenResty logo: a green, finely articulated bird formed in the cyclical shape of an event loop, the beak almost touching the tail." />
   </div>
 </section>

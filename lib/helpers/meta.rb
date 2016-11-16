@@ -1,7 +1,10 @@
 require 'git'
+require_relative 'company'
 
 module LifePreserver
   module Meta
+    include LifePreserver::Company
+
     # Run during preprocessing
     def validate_version_history(config = nil)
       config ||= @config
@@ -13,13 +16,33 @@ module LifePreserver
       exact_match ? git.describe('HEAD', exact_match: true) : git.describe('HEAD', abbrev: 0)
     end
 
-    # Finds all the dependencies for the given group name.
+    def sorted_dependencies
+      blk = -> { @items.find_all('/lifepreserver/dependencies/**/*').sort_by(&:identifier) }
+      if @items.frozen?
+        @sorted_dependency_items ||= blk.call
+      else
+        blk.call
+      end
+    end
+
+    # Finds all the dependencies for the given Bundler group name.
     #
     # @param [String, Symbol]
     #
     # @return [Array]
     def dependencies_for(group_name)
       @items.find_all("/lifepreserver/dependencies/#{group_name}/*").sort_by(&:identifier)
+    end
+
+    def authors_of(dependencies, external_only: true)
+      dependencies ||= sorted_dependencies
+      authors = dependencies.flat_map { |dep| dep[:authors] }.uniq.sort
+
+      if external_only # Take out our people
+        authors = authors - sorted_people.map { |person| full_name(person) }
+      end
+
+      authors
     end
 
     def ruby_desc
