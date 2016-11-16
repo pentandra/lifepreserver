@@ -1,13 +1,11 @@
 require_relative '../helpers/link_to'
 
 class Vcard < Nanoc::Filter
-
   identifier :vcard
 
   requires 'vcardigan'
 
   def run(content, params = {})
-
     validate params
 
     # Extract params
@@ -36,7 +34,7 @@ class Vcard < Nanoc::Filter
 
     vcard.fullname(full_name)
 
-    vcard.source(@config[:base_url] + path_to(@item_rep))
+    vcard.source(path_to(@item_rep, global: true))
 
     if kind == 'individual'
       vcard.name(last_name, first_name)
@@ -76,5 +74,4 @@ class Vcard < Nanoc::Filter
       raise Nanoc::Errors::GenericTrivial.new('Cannot build vCard: the full_name parameter MUST be present in either the params hash or item rep metadata')
     end
   end
-
 end
