@@ -6,7 +6,7 @@ check :html5 do
   res = Open3.popen3(cmd) { |_stdin, _stdout, stderr| stderr.read }
 
   JSON.parse(res).fetch('messages', []).each do |err|
-    subject = err['url'].sub(/^file:#{Regexp.escape File.dirname(__FILE__)}\//, '')
+    subject = err['url'].sub(/^file:#{Regexp.escape(__dir__)}\//, '')
     add_issue("#{err['message']} (line #{err['lastLine']}, column #{err['firstColumn']})", subject: subject)
   end
 end
