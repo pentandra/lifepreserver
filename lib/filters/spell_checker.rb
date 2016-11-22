@@ -21,8 +21,8 @@ class SpellChecker < Nanoc::Filter
       if node.text? && checked_tags.include?(parent.name)
         next if ignore_classes.include?(parent['class'])
         original_text = node.text
-        words = original_text.gsub(/(([[:word:]]|['’])+)/) { |word| dictionary.valid?(word) ? word : "<mark class=\"misspelled\">#{word}</mark>" }
-        node.replace(words)
+        checked_text = original_text.gsub(/([[[:word:]]'’]+)/) { |word| dictionary.valid?(word) ? word : "<mark class=\"misspelled\">#{word}</mark>" }
+        node.replace(checked_text)
       end
     end
 
