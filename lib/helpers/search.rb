@@ -1,11 +1,12 @@
 require 'json'
+require 'nokogiri'
 require_relative 'link_to'
 
 module LifePreserver
   module Search
     include LinkTo
 
-    STOP_WORDS ||= %w{
+    STOP_WORDS = %w{
       a about above across after afterwards again against all almost
       alone along already also although always am among amongst amoungst
       amount an and another any anyhow anyone anything anyway anywhere
@@ -41,10 +42,10 @@ module LifePreserver
     private_constant :STOP_WORDS
 
     def search_terms_for(item)
-      content = item.compiled_content(rep: :default)
+      content = item.compiled_content
       doc = Nokogiri::HTML(content)
       full_text = doc.css("p, h1, h2, h3, h4, h5, h6").map{ |el| el.inner_text }.join(" ")
-      "#{item[:title]} #{item[:meta_description] || item[:description]} #{full_text}".gsub(/[\W_]+/m,' ').downcase.split(/\s+/).uniq - STOP_WORDS
+      "#{item[:title]} #{item[:meta_description] || item[:description]} #{full_text}".gsub(/[\W_]+/m, ' ').downcase.split(/\s+/).uniq - STOP_WORDS
     end
 
     def search_index
