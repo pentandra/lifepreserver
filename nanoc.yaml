@@ -37,6 +37,10 @@ data_sources:
   - type: dependencies
     items_root: &meta_items_root /lifepreserver
 
+  - type : dictionaries
+    items_root: *meta_items_root
+    dictionaries_glob: 'etc/dictionaries/*'
+
   - type: tags
     items_root: *meta_items_root
 
