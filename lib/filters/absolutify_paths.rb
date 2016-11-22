@@ -127,5 +127,4 @@ class AbsolutifyPaths < Nanoc::Filter
   def path_is_absolutifiable?(s)
     !s.include?('://'.freeze)
   end
-
 end
