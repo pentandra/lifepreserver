@@ -49,7 +49,7 @@ check :spelling do
   filenames.each do |filename|
     doc = Nokogiri::HTML(File.read(filename))
     doc.xpath('descendant-or-self::mark[@class="misspelled"]').each do |node|
-      add_issue("misspelled word '#{node.text}' detected at #{node.path}", subject: filename)
+      add_issue("misspelled word '#{node.text}' detected on line #{node.line}", subject: filename)
     end
   end
 end
