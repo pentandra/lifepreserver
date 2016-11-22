@@ -13,7 +13,6 @@ gem 'rqrcode'            # for qrcodes
 gem 'chunky_png'         # for PNG generation of qrcodes
 gem 'image_optimizer'    # to compress images
 gem 'shortly'            # for URL shortening
-gem 'html_spellchecker', git: 'https://github.com/cdchapman/HTML-Spellchecker', branch: 'mark'
 gem 'rest-client'        # for downloads of external resources
 gem 'rubypants-unicode'
 gem 'linkeddata'
@@ -25,6 +24,7 @@ gem 'haml'
 gem 'pandoc-ruby'        # for benefit reports in ConTeXt
 gem 'git'                # for version history and tagging info
 gem 'builder'            # for XML stuff, such as sitemap and atom feeds
+gem 'ffi-hunspell',      git: 'https://github.com/cdchapman/ffi-hunspell'       # for spellchecking
 
 group :development, optional: true do
   gem 'guard'
