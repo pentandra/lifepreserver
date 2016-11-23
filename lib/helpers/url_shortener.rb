@@ -6,38 +6,38 @@ module LifePreserver
   module UrlShortener
     include LifePreserver::Text
 
-    SHORT_URLS_FILENAME ||= 'var/short_urls.yaml'.freeze
-
-    private_constant :SHORT_URLS_FILENAME
-
     def shorten(url)
       hash = md5(url)
-      store.transaction { store.fetch(hash, generate_short_url(hash, url)) }
+      store.transaction { store[hash] || generate_short_url(hash, url) }
     end
 
     private
 
     # This method should only be called within a PStore::Transaction
     def generate_short_url(key, long_url)
-      if @config[:google_api_key]
-        begin
-          googl = Shortly::Clients::Googl
-          googl.apiKey = @config[:google_api_key]
+      validate_config
 
-          store[key] = googl.shorten(long_url).shortUrl
-        rescue => e
-          warn(e.message)
-          long_url
-        end
-      else
+      begin
+        googl = Shortly::Clients::Googl
+        googl.apiKey = @config.fetch(:google_api_key)
+
+        store[key] = googl.shorten(long_url).shortUrl
+      rescue => e
+        warn("Unable to shorten '#{long_url}' due to the following error: #{e.message}")
         long_url
       end
     end
 
-    def store
-      FileUtils.mkdir_p(File.dirname(SHORT_URLS_FILENAME))
+    def validate_config
+      unless @config.key?(:google_api_key)
+        raise "Cannot generate short urls without a @config[:google_api_key]"
+      end
+    end
 
-      @store ||= YAML::Store.new(SHORT_URLS_FILENAME)
+    def store
+      short_urls_cache = File.expand_path(@config[:cache][:short_urls])
+      FileUtils.mkdir_p(File.dirname(short_urls_cache))
+      @store ||= YAML::Store.new(short_urls_cache)
     end
   end
 end
