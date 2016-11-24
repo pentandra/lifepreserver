@@ -33,3 +33,10 @@ group :development, optional: true do
   gem 'adsf'              # for nanoc view
   gem 'ghi'               # for GitHub issues
 end
+
+group :test, optional: true do
+  gem 'rspec'
+  gem 'rspec-mocks'
+  gem 'rake'
+  gem 'rubocop'
+end

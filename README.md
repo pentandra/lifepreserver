@@ -36,7 +36,7 @@ $ cd lifepreserver
 $ git submodule init
 $ git submodule update
 $ bower install
-$ bundle install
+$ bundle install --with development test
 ```
 
 ### And compile!
