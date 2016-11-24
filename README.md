@@ -39,12 +39,6 @@ $ bower install
 $ bundle install
 ```
 
-### Add experimental Nanoc feature for environments support (for now)
-
-```bash
-$ export NANOC_FEATURES=environments # or place this in `.bashrc` or equivalent
-```
-
 ### And compile!
 
 ```bash
