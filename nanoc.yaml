@@ -39,7 +39,7 @@ data_sources:
 
   - type : dictionaries
     items_root: *meta_items_root
-    dictionaries_glob: 'etc/dictionaries/*'
+    dictionaries_dir: 'etc/dictionaries'
 
   - type: tags
     items_root: *meta_items_root
