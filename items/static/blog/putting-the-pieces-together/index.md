@@ -92,7 +92,8 @@ above](#fig:journey-of-defining) from more of an _evil_ point of view, our
 journey from Madrid to San Diego could be thought of as a journey of
 _conquest_. Isn't this the same path that [Juan Rodríguez Cabrillo][cabrillo]
 and [others][vizcaino] took as they claimed land for Spain? The difference is
-that we are not conquistadores and we are not trying to create an [encomienda]
+that we are not <span lang="es">conquistadores</span> and we are not trying to
+create an [<span lang="es">encomienda</span>][encomienda]
 system[^citizen_science] here! In fact what we want is just the opposite. I
 think there is stuff here from history from which we should learn, and not
 repeat, and opportunities exist to try to do things a different way. We have a
@@ -125,20 +126,20 @@ the only records we have of this experience), these two groups were referred to
 respectively as the Saints and the Strangers. (These labels may give some
 insight into the obvious tensions between the two groups.) Unlike most of their
 contemporaries headed to the New World, these colonists were not entrepreneurs
-or conquistadores determined to conquer indigenous peoples, but came seeking
-freedom to practice religion the way they believed. This difference obviously
-changed how they approached problems, and with much patience and determination
-they were able to develop relationships of trust and mutual respect with each
-other as well as with the indigenous tribes of the New World.[^massasoit] They
-learned from each other. They helped each other. Their circumstances were not
-perfect, nor was every choice that was made. People goofed up on both sides.
-But they kept trying, got some things right, and they did something that had
-never been done before. They showed the world that what they set out to achieve
-was possible. Their achievements changed the perception of many, and led to
-their eventual success as a colony. Together they created a new kind of
-society---a shared culture---that had such an impact on the early culture of
-the United States that we still celebrate this time of our history during our
-[Thanksgiving holiday][thanksgiving].
+or <span lang="es">conquistadores</span> determined to conquer indigenous
+peoples, but came seeking freedom to practice religion the way they believed.
+This difference obviously changed how they approached problems, and with much
+patience and determination they were able to develop relationships of trust and
+mutual respect with each other as well as with the indigenous tribes of the New
+World.[^massasoit] They learned from each other. They helped each other. Their
+circumstances were not perfect, nor was every choice that was made. People
+goofed up on both sides. But they kept trying, got some things right, and they
+did something that had never been done before. They showed the world that what
+they set out to achieve was possible. Their achievements changed the perception
+of many, and led to their eventual success as a colony. Together they created a
+new kind of society---a shared culture---that had such an impact on the early
+culture of the United States that we still celebrate this time of our history
+during our [Thanksgiving holiday][thanksgiving].
 
 ## An agreement to unite
 
@@ -236,9 +237,9 @@ for _better ordering_ and _preservation_, and plenty of _ends aforesaid_. We
 may ask ourselves, what's wrong with just going at this on our own? There is so
 much potential out there, and people and organizations are already staking out
 their ground! Why not just let things go as they have done up to this point in
-time, and hope that it all works out? Isn't the laissez-faire approach good
-enough? It has gotten us here, hasn't it!? _Why is it so important that we do
-this together?_
+time, and hope that it all works out? Isn't the <span
+lang="fr">laissez-faire</span> approach good enough? It has gotten us here,
+hasn't it!? _Why is it so important that we do this together?_
 
 Quite frankly, I don't think any of our current approaches have had the power
 to transform the current systems of scholarship. We need something more,
@@ -445,8 +446,7 @@ creating a commons for science and scholarship for the good of all mankind.
 [Mayflower Compact]: <https://en.wikipedia.org/wiki/Mayflower_Compact>
 [thanksgiving]: <https://en.wikipedia.org/wiki/Thanksgiving> "Thanksgiving on Wikipedia"
 [encomienda]: <https://en.wikipedia.org/wiki/Encomienda> "a labor system, rewarding conquerors with the labor of particular groups of people"
-{:lang="es"}
-[cabrillo]: <https://en.wikipedia.org/wiki/Juan_Rodr%C3%ADguez_Cabrillo> "Juan Rodríguez Cabrillo on Wikipedia"
+[cabrillo]: <https://en.wikipedia.org/wiki/Juan_Rodr%C3%ADguez_Cabrillo> "Juan Rodríguez Cabrillo en Wikipedia"
 {:lang="es"}
 [new-video]: <http://bollier.org/blog/new-video-%E2%80%9Cre-imagine-future%E2%80%9D> "View more info on David Bollier's site"
 [april]: <https://aprilhathcock.wordpress.com/2016/09/27/making-the-local-global-the-colonialism-of-scholarly-communication/> "Making the Local Global: The Colonialism of Scholarly Communication"
@@ -474,7 +474,8 @@ creating a commons for science and scholarship for the good of all mankind.
 
     Actually I've been thinking more and more that the term _citizen science_
     doesn't go far enough, and sometimes I worry that the practice ends up
-    resembling an [encomienda] system more than I would like.
+    resembling an [<span lang="es">encomienda</span>][encomienda] system more
+    than I would like.
 
 [^bradford]:
 

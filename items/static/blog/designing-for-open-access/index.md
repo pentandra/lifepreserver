@@ -173,7 +173,7 @@ a cadre of copyists.
 The printer and later the publisher became the one in charge of what got
 published thanks to economics.
 
-Journal des Sçavans and Philosophical Transactions
+<span lang="fr">Journal des Sçavans</span> and Philosophical Transactions
 
 <cite>Philosophical Transactions, Giving some Accompt to the of the present
 Undertakings, Studies, and Labours of the Ingenious in many considerable parts
@@ -201,8 +201,8 @@ underlying data as well) to the public over the Internet for free.
 
 In general, scholarly research is being published the same way it has been
 published since the beginning of scholarly publishing (with the <a
-href="http://en.wikipedia.org/wiki/Journal_des_s%C3%A7avans"><cite>Journal des
-sçavans</cite></a> and the <a
+href="http://en.wikipedia.org/wiki/Journal_des_s%C3%A7avans"><cite
+lang="fr">Journal des sçavans</cite></a> and the <a
 href="http://en.wikipedia.org/wiki/Philosophical_Transactions_of_the_Royal_Society"><cite>Philosophical
 Transactions of the Royal Society</cite></a> in <span
 class="oldstyle">1665</span>). With the passing of almost <span

@@ -60,7 +60,7 @@ piecemeal, informal fashion---thought upon thought.
 
     <b>Antonie van Leeuwenhoek</b>, here posing with his favored device of
     scientific communication: the letter. Portrait by the Dutch <a
-    href="http://en.wikipedia.org/wiki/Jan_Verkolje">Jan Verkolje</a>.
+    href="http://en.wikipedia.org/wiki/Jan_Verkolje" lang="nl">Jan Verkolje</a>.
 
   </figcaption>
 </figure>
@@ -167,7 +167,7 @@ we learn from those early days of scientific correspondence?
 Andrea Rusnock said,
 
 <figure class="bq grab">
-  <blockquote cite="http://www.jstor.org/stable/4028081">
+  <blockquote cite="http://www.jstor.org/stable/4028081" lang="en-GB">
     <p>
 
       While publication and distribution of the Philosophical Transactions
@@ -289,7 +289,7 @@ We invite anyone interested [to participate](http://researchcases.org "Help out 
     <span class="oldstyle">1753</span>:
 
     <figure class="bq grab">
-      <blockquote>
+      <blockquote lang="en-GB">
         <p>These Thoughts, my dear Friend, are many of them crude and hasty, and if I were merely ambitious of acquiring some Reputation in Philosophy, I ought to keep them by me, 'till corrected and improved by Time and farther Experience. But since even short Hints, and imperfect Experiments in any new Branch of Science, being communicated, have oftentimes a good Effect, in exciting the attention of the Ingenious to the Subject, and so becoming the Occasion of more exact disquisitions (as I before observed) and more compleat Discoveries, you are at Liberty to communicate this Paper to whom you please; it being of more Importance that Knowledge should increase, than that your Friend should be thought an accurate Philosopher.</p>
       </blockquote>
       <figcaption><p>--- Quoted in <a href="http://books.google.com/books/about/The_Invention_of_Air.html">The Invention of Air</a> by Steven Johnson</p></figcaption>
@@ -303,11 +303,13 @@ We invite anyone interested [to participate](http://researchcases.org "Help out 
 
 
 [Antonie van Leeuwenhoek]: https://en.wikipedia.org/wiki/Antonie_van_Leeuwenhoek "Leeuwenhoek on Wikipedia"
+{:lang="nl"}
 [Interlocutor]: http://en.wikipedia.org/wiki/Interlocutor_(linguistics) "Or in other words, the person who takes part in a conversation, the person to whom the letter is being written."
 [Enlightenment]: http://en.wikipedia.org/wiki/Age_of_Enlightenment "Age of Enlightment on Wikipedia"
 [Peter Collinson]: http://en.wikipedia.org/wiki/Peter_Collinson_%28botanist%29 "Peter Collinson on Wikipedia"
 [Benjamin Franklin]: http://en.wikipedia.org/wiki/Benjamin_Franklin "Benjamin Franklin on Wikipedia"
 [Journal des sçavans]: http://en.wikipedia.org/wiki/Journal_des_s%C3%A7avans "Journal des sçavans on Wikipedia"
+{:lang="fr"}
 [Republic of Letters]: https://en.wikipedia.org/wiki/Republic_of_Letters "Republic of Letters on Wikipedia"
 [Sapere Aude]: http://en.wikipedia.org/wiki/Sapere_aude "A Latin phrase meaning 'Dare to know'"
 [Answering the Question: What is Enlightenment?]: http://en.wikipedia.org/wiki/Answering_the_Question:_What_is_Enlightenment%3F
