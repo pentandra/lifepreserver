@@ -2,14 +2,14 @@ require 'rubocop/rake_task'
 require 'rspec/core/rake_task'
 
 RuboCop::RakeTask.new(:rubocop) do |task|
-  task.options = %w(--display-cop-names --format simple)
-  task.patterns = [ 'lib/**/*.rb', 'spec/**/*.rb' ]
+  task.formatters = ['simple']
+  task.fail_on_error = false
 end
 
 RSpec::Core::RakeTask.new(:spec) do |task|
   task.verbose = false
 end
 
-task test: [ :spec ]
+task test: [:spec]
 
-task default: [ :test, :rubocop ]
+task default: [:test, :rubocop]

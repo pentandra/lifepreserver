@@ -24,12 +24,13 @@ gem 'haml'
 gem 'pandoc-ruby'        # for benefit reports in ConTeXt
 gem 'git'                # for version history and tagging info
 gem 'builder'            # for XML stuff, such as sitemap and atom feeds
-gem 'ffi-hunspell',      git: 'https://github.com/cdchapman/ffi-hunspell'       # for spellchecking
+gem 'ffi-hunspell',      git: 'https://github.com/cdchapman/ffi-hunspell'
 
 group :development, optional: true do
   gem 'guard'
   gem 'guard-nanoc'
   gem 'guard-livereload'
+  gem 'guard-rake'
   gem 'adsf'              # for nanoc view
   gem 'ghi'               # for GitHub issues
 end
@@ -37,7 +38,9 @@ end
 group :test, optional: true do
   gem 'rspec'
   gem 'rspec-mocks'
-  gem 'fuubar'
   gem 'rake'
+  gem 'fuubar'
   gem 'rubocop'
+  gem 'simplecov', require: false
+  gem 'minitest'
 end
