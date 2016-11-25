@@ -16,7 +16,7 @@ Class.new(Nanoc::DataSource) do
 
   def items
     items = []
-    
+
     @tags.each do |tag|
       tag.update(@additional_tag_data.find { |a| a[:tag] == tag[:tag] } || {})
       items << tag_to_item(tag)
@@ -33,15 +33,14 @@ Class.new(Nanoc::DataSource) do
     attributes = {
       kind:      'tag',
       semantic:  tag.key?(:abstract),
-      is_hidden: true
+      is_hidden: true,
     }
 
     new_item(
       tag[:tag],
       attributes.merge(tag),
       Nanoc::Identifier.new("/tags/#{slug}"),
-      checksum_data: "tag=#{tag[:tag]},uri=#{tag[:uri]},abstract=#{tag[:abstract]}"
+      checksum_data: "tag=#{tag[:tag]},uri=#{tag[:uri]},abstract=#{tag[:abstract]}",
     )
   end
-
 end

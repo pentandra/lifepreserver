@@ -5,8 +5,6 @@ class QRCode < Nanoc::Filter
   requires 'rqrcode'
 
   def run(content, params = {})
-
-    # Extract params
     size = params[:size] || 4
     module_size = params[:module_size] || 3
     color = params[:color]
@@ -16,5 +14,4 @@ class QRCode < Nanoc::Filter
 
     image.save(output_filename)
   end
-
 end

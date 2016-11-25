@@ -9,7 +9,7 @@ class ImageOptimizerFilter < Nanoc::Filter
     FileUtils.copy_file(filename, output_filename)
 
     options = {
-      identify: true
+      identify: true,
     }
 
     # then optimize in place

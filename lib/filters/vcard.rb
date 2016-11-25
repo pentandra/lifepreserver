@@ -5,7 +5,7 @@ class Vcard < Nanoc::Filter
 
   requires 'vcardigan'
 
-  def run(content, params = {})
+  def run(_content, params = {})
     validate params
 
     # Extract params

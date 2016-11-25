@@ -7,12 +7,12 @@ class SpellChecker < Nanoc::Filter
 
   def run(content, params = {})
     lang = params.fetch(:lang, Dictionary::DEFAULT_LANG)
-    ignore_classes = params.fetch(:ignore_classes, %w( filename handle identifier glob uri productname ))
+    ignore_classes = params.fetch(:ignore_classes, Set.new(%w(filename handle identifier glob uri productname)))
     checked_tags = params.fetch(:checked_tags, CHECKED_TAGS)
 
     options = {
       nanoc_spellchecker_filter: self,
-      base_lang: lang
+      base_lang: lang,
     }
 
     doc = Nokogiri::HTML.fragment(content)

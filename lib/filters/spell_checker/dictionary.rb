@@ -1,17 +1,9 @@
 require 'ffi/hunspell'
 
 class Dictionary
+  DEFAULT_LANG ||= 'en_US'.freeze
 
-  DEFAULT_LANG = 'en_US'.freeze
-
-  DEFAULT_HUNSPELL_LANGUAGE_CODES = [
-    'de_DE',
-    'en_US',
-    'es_ES',
-    'fr_FR',
-    'nl_NL',
-    'uk_UA',
-  ]
+  DEFAULT_HUNSPELL_LANGUAGE_CODES ||= %w(de_DE en_US es_ES fr_FR nl_NL uk_UA).freeze
 
   attr_reader :hunspell_lang
   attr_reader :dictionary_items
@@ -24,7 +16,7 @@ class Dictionary
     def instance(lang = DEFAULT_LANG, options = {})
       @dictionaries ||= {}
       hunspell_lang = find_hunspell_lang(lang)
-      @dictionaries[hunspell_lang] ||= self.new(hunspell_lang, options)
+      @dictionaries[hunspell_lang] ||= new(hunspell_lang, options)
     end
 
     def find_hunspell_lang(lang_tag)
@@ -51,7 +43,7 @@ class Dictionary
 
     @dictionary_items = filter.find_dictionary_items_for(@hunspell_lang)
     dictionary_items.each do |dic_item|
-      if (dic_item[:kind] == 'extra-dictionary')
+      if dic_item[:kind] == 'extra-dictionary'
         @hunspell_dic.add_dic(dic_item.raw_filename)
       end
 
@@ -66,7 +58,7 @@ class Dictionary
   protected
 
   def add_entry(hunspell_dic, entry)
-    if entry.include?('/') then
+    if entry.include?('/')
       word, example = entry.split('/', 2)
       hunspell_dic.add_with_affix(word, example)
     else

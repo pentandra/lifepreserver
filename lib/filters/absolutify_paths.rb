@@ -28,8 +28,7 @@ class AbsolutifyPaths < Nanoc::Filter
   # @option params [Hash] :namespaces The pairs `prefix => uri` to define any
   # namespace you want to use in the XPath expressions. This param is only
   # useful for the `:xml` and `:xhtml` types.
-  def run(content, params={})
-
+  def run(content, params = {})
     if params[:global] && @config[:base_url].nil?
       raise 'Cannot build absolute path: site configuration has no base_url'
     end

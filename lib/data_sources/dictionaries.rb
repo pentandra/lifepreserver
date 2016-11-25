@@ -44,7 +44,7 @@ Class.new(Nanoc::DataSource) do
         attributes,
         Nanoc::Identifier.new("/dictionaries/#{dic_lang}/#{dic_name}"),
         binary: binary,
-        checksum_data: "content=#{raw_content}"
+        checksum_data: "content=#{raw_content}",
       )
     end
 

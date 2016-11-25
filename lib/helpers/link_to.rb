@@ -21,7 +21,7 @@ module LifePreserver
       end
 
       # Create link
-      %[<a #{attributes}href="#{h public_path_to(target, global: global)}">#{h text}</a>]
+      %(<a #{attributes}href="#{h public_path_to(target, global: global)}">#{h text}</a>)
     end
 
     alias link_to public_link_to
