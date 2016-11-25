@@ -1,4 +1,4 @@
-# Extra hunspell dictionaries
+# Spelling dictionaries
 
 This folder contains hunspell dictionaries for spellchecking the [lifepreserver
 project](https://github.com/pentandra/lifepreserver).
