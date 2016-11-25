@@ -37,6 +37,7 @@ end
 group :test, optional: true do
   gem 'rspec'
   gem 'rspec-mocks'
+  gem 'fuubar'
   gem 'rake'
   gem 'rubocop'
 end
