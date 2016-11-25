@@ -8,3 +8,5 @@ crash.log
 items/static/assets/components/
 tmp/
 .bundle
+*.gem
+/coverage/
