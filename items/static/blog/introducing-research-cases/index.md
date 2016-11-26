@@ -226,7 +226,7 @@ be part of the future of research:
   smaller pieces brought together over time. These individual pieces need to be
   published in context with fine-grained attribution for all contributions
   made. Research shared this way would lower the administrative risk for
-  grantors and grantees, and open the door to micro-grants and other
+  granters and grantees, and open the door to micro-grants and other
   alternative funding models, which would enable greater maneuverability to
   follow the direction that the research leads.
 * We need to get away from the monoculture of the journal article as the only
