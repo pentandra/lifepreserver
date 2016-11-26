@@ -188,10 +188,10 @@ defining process will go on continuously?_
 
 ---
 
-Bianca Kramer and Jeroen Bosman put a lot of work into publishing a report of
-the workshop. Please [check it out][workshop-report] to learn more, and please
-take the opportunity to go through the exercise on your own, or with your
-group.
+<span lang="nl">Bianca Kramer</span> and <span lang="nl">Jeroen Bosman</span>
+put a lot of work into publishing a report of the workshop. Please [check it
+out][workshop-report] to learn more, and please take the opportunity to go
+through the exercise on your own, or with your group.
 
 [FORCE11]: <https://force11.org>
 [helmsley]: <http://helmsleytrust.org>

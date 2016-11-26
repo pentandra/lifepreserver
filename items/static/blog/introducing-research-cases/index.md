@@ -58,9 +58,10 @@ piecemeal, informal fashion---thought upon thought.
   <img property="schema:contentUrl" src="Jan_Verkolje_-_Antonie_van_Leeuwenhoek.jpg" class="static" alt="A portrait of Antonie van Leeuwenhoek by Jan Verkolje" />
   <figcaption class="small">
 
-    <b>Antonie van Leeuwenhoek</b>, here posing with his favored device of
-    scientific communication: the letter. Portrait by the Dutch <a
-    href="http://en.wikipedia.org/wiki/Jan_Verkolje" lang="nl">Jan Verkolje</a>.
+    <b lang="nl">Antonie van Leeuwenhoek</b>, here posing with his favored
+    device of scientific communication: the letter. Portrait by the Dutch <a
+    href="http://en.wikipedia.org/wiki/Jan_Verkolje" lang="nl">Jan
+    Verkolje</a>.
 
   </figcaption>
 </figure>

@@ -48,16 +48,17 @@ fifteen-story building, with many windows, plenty of fresh air, and a nice
 balcony upon which to exercise [the law of two feet].
 
 During this workshop there was a main track that was needed to fulfill some of
-the original Helmsley grant requirements, which Jeroen Bosman and Bianca Kramer
-expertly designed to fit the theme of _putting the pieces together_. At many
-points in the program, participants also had the opportunity to propose or join
-an unworkshop session to discuss any related topic or perspective that they
-desired. Despite a somewhat rocky beginning, I am happy that people were able
-to share and participate in what mattered to them. I tried to bounce around
-these unworkshops and the main track, learning as much as I could. Good
-conversations were taking place at all of them! But there were a few themes
-that I have been mulling, and questions for which I have been trying to find
-answers, that I want to explore further and discuss a bit in this post.
+the original Helmsley grant requirements, which <span lang="nl">Jeroen
+Bosman</span> and <span lang="nl">Bianca Kramer</span> expertly designed to fit
+the theme of _putting the pieces together_. At many points in the program,
+participants also had the opportunity to propose or join an unworkshop session
+to discuss any related topic or perspective that they desired. Despite a
+somewhat rocky beginning, I am happy that people were able to share and
+participate in what mattered to them. I tried to bounce around these
+unworkshops and the main track, learning as much as I could. Good conversations
+were taking place at all of them! But there were a few themes that I have been
+mulling, and questions for which I have been trying to find answers, that I
+want to explore further and discuss a bit in this post.
 
 For your reference, here's a quick breakdown of where I go from here:
 
