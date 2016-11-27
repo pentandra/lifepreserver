@@ -2,7 +2,7 @@
 
 compile '/**/*.erb' do
   filter :erb, @config[:erb]
-  filter :spellchecker unless @config[:production]
+  filter :spellchecker, type: :html
   layout '/default.*'
   filter :rubypantsunicode
   filter :cache_buster if @config[:production]
@@ -10,7 +10,7 @@ compile '/**/*.erb' do
 end
 
 compile '/**/*.html' do
-  filter :spellchecker unless @config[:production]
+  filter :spellchecker, type: :html
   layout '/default.*'
   filter :rubypantsunicode
   filter :cache_buster if @config[:production]

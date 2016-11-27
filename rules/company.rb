@@ -8,7 +8,7 @@ compile %r{/static/company/benefit-reports/\d{4}/index\.md} do
     :section_divs,
     :smart
   ]
-  filter :spellchecker unless @config[:production]
+  filter :spellchecker, type: :html
   layout '/benefit_reports/default.*'
   filter :rubypantsunicode
   filter :cache_buster if @config[:production]

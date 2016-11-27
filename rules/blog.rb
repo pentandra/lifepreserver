@@ -32,7 +32,7 @@ compile '/static/blog/**/*.md' do
   filter :colorize_syntax,
     default_colorizer: :rouge
   filter :absolutify_paths, type: :html
-  filter :spellchecker unless @config[:production]
+  filter :spellchecker, type: :html
   layout '/blog/article.*'
   filter :rubypantsunicode
   filter :cache_buster if @config[:production]
