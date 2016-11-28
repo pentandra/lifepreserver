@@ -1,6 +1,6 @@
 require 'filters/spell_checker/dictionary'
 
-RSpec.describe Dictionary do
+RSpec.describe SpellChecker::Dictionary do
   context 'using default parameters' do
     subject(:dic) { described_class.instance }
 
@@ -15,19 +15,19 @@ RSpec.describe Dictionary do
       end
 
       it 'selects a dictionary language by default if none is provided' do
-        expect(dic.hunspell_lang).to eq(Dictionary::DEFAULT_LANG)
+        expect(dic.hunspell_lang).to eq(SpellChecker::Dictionary::DEFAULT_LANG)
       end
     end
 
     describe '.find_hunspell_lang' do
       it 'returns the default language tag for a nil tag' do
         tag = described_class.find_hunspell_lang(nil)
-        expect(tag).to eq(Dictionary::DEFAULT_LANG)
+        expect(tag).to eq(SpellChecker::Dictionary::DEFAULT_LANG)
       end
 
       it 'returns the default language tag for an empty string' do
         tag = described_class.find_hunspell_lang('')
-        expect(tag).to eq(Dictionary::DEFAULT_LANG)
+        expect(tag).to eq(SpellChecker::Dictionary::DEFAULT_LANG)
       end
 
       it 'finds the default value for a language code' do
