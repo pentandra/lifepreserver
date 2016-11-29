@@ -6,7 +6,7 @@ module LifePreserver
   module Search
     include LinkTo
 
-    STOP_WORDS = %w{
+    STOP_WORDS ||= %w(
       a about above across after afterwards again against all almost
       alone along already also although always am among amongst amoungst
       amount an and another any anyhow anyone anything anyway anywhere
@@ -37,7 +37,7 @@ module LifePreserver
       whereby wherein whereupon wherever whether which while whither who
       whoever whole whom whose why will with within without would yet you
       your yours yourself yourselves
-    }
+    )
 
     private_constant :STOP_WORDS
 
