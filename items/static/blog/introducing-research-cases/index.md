@@ -244,9 +244,9 @@ be part of the future of research:
   fun!* If the fun is not inherent in the research itself, it should at least
   exist as a feeling of camaraderie amongst fellow discoverers.
 * Feedback and peer-review need to be introduced much earlier and continue
-  throughout the research process. As James Jurin said, 'All reasonings should
-  be left to the judgement of the Publick, to whom indeed it properly
-  belongs.'[^jurin]
+  throughout the research process. As James Jurin said, '<q lang="en-GB">All
+  reasonings should be left to the judgement of the Publick, to whom indeed it
+  properly belongs.</q>'[^jurin]
 
 We invite anyone interested [to participate](http://researchcases.org "Help out with Research Cases").
 {: .conclusion }
