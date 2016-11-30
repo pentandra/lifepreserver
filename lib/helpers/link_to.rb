@@ -52,8 +52,9 @@ module LifePreserver
         path = @config.fetch(:base_url) + path
       end
 
-      # Remove static root for public path
-      path.sub(@config[:static_root], '')
+      # Remove static root for public path, if available
+      static_root = @config.fetch(:static_root, '')
+      path.sub(static_root, '')
     end
 
     alias path_to public_path_to
