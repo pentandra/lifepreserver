@@ -52,10 +52,14 @@ module LifePreserver
       path = unstack(nearest_path, path) if nearest_path
 
       if global
+        if @config[:base_url].nil?
+          raise Nanoc::Int::Errors::GenericTrivial.new("Cannot build global path to #{target.inspect}: site configuration has no base_url")
+        end
+
         path = @config.fetch(:base_url) + path
       end
 
-      # Remove static root for public path, if available
+      # Remove static root for public path, if it exists
       static_root = @config.fetch(:static_root, '')
       path.sub(static_root, '')
     end
