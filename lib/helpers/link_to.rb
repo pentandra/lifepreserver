@@ -1,8 +1,11 @@
+require 'active_support/core_ext/string/output_safety'
+
 require_relative 'url_shortener'
 
 module LifePreserver
   module LinkTo
     include LifePreserver::UrlShortener
+    include ERB::Util
 
     def link_to_id(id, attributes = {})
       item = @items[id]
@@ -21,7 +24,7 @@ module LifePreserver
       end
 
       # Create link
-      %(<a #{attributes}href="#{h public_path_to(target, global: global)}">#{h text}</a>)
+      %(<a #{attributes}href="#{h public_path_to(target, global: global)}">#{html_escape_once(text)}</a>)
     end
 
     alias link_to public_link_to
