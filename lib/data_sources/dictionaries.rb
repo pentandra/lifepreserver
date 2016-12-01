@@ -15,51 +15,60 @@ Class.new(Nanoc::DataSource) do
     items = []
 
     FFI::Hunspell.directories.each do |dir|
-      Dir["#{dir}/*.{dic,yaml}"].each do |dic|
-        next if File.symlink?(dic)
+      Dir["#{dir}/*.{dic,yaml}"].each do |dic_file|
+        next if File.symlink?(dic_file)
 
-        first_line = File.open(dic, &:readline)
-        kind = case first_line
-               when /^\d+$/
-                 # a base dictionary will have a similarly named affix file
-                 File.exist?(dic.sub(/\.dic$/, '.aff')) ? 'base-dictionary' : 'extra-dictionary'
-               when /^-{3,5}$/
-                 'acronym-dictionary'
-               else
-                 'personal-dictionary'
-               end
+        items << dic_to_item(dic_file)
 
-        binary = %w(base-dictionary extra-dictionary).include?(kind)
-
-        entries = case kind
-                  when 'personal-dictionary'
-                    raw_content = File.read(dic)
-                    lines = raw_content.lines.map(&:chomp)
-                    { entries: lines }
-                  when 'acronym-dictionary'
-                    raw_content = File.read(dic)
-                    entries_hash = YAML.load(raw_content)
-                    { acronym_mappings: entries_hash, entries: entries_hash.keys }
-                  else
-                    {}
-                  end
-
-        attributes = {
-          name: File.basename(dic, '.*'),
-          kind: kind,
-        }.merge(entries)
-
-        filename = File.expand_path(dic)
-        items << new_item(
-          binary ? filename : Nanoc::Int::TextualContent.new(raw_content, filename: filename),
-          attributes,
-          Nanoc::Identifier.new("/dictionaries/#{File.basename(dir)}/#{File.basename(dic)}"),
-          binary: binary,
-          checksum_data: binary ? "word_count=#{first_line}" : "content=#{raw_content}",
-        )
+        # TODO: add affix item for base dictionaries?
       end
     end
 
     items
+  end
+
+  protected
+
+  def dic_to_item(dic_filename)
+    first_line = File.open(dic_filename, &:readline)
+    kind = case first_line
+           when /^\d+$/
+             # a base dictionary will have a similarly named affix file
+             File.exist?(dic_filename.sub(/\.dic$/, '.aff')) ? 'base-dictionary' : 'extra-dictionary'
+           when /^-{3,5}$/
+             'acronym-dictionary'
+           else
+             'personal-dictionary'
+           end
+
+    binary = %w(base-dictionary extra-dictionary).include?(kind)
+
+    entries = case kind
+              when 'personal-dictionary'
+                raw_content = File.read(dic_filename)
+                lines = raw_content.lines.map(&:chomp)
+                { entries: lines }
+              when 'acronym-dictionary'
+                raw_content = File.read(dic_filename)
+                entries_hash = YAML.load(raw_content)
+                { acronym_mappings: entries_hash, entries: entries_hash.keys }
+              else
+                {}
+              end
+
+    attributes = {
+      name: File.basename(dic_filename, '.*'),
+      kind: kind,
+      mtime: File.mtime(dic_filename),
+    }.merge(entries)
+
+    filename = File.expand_path(dic_filename)
+    parent_name = File.basename(File.dirname(dic_filename))
+    new_item(
+      binary ? filename : Nanoc::Int::TextualContent.new(raw_content, filename: filename),
+      attributes,
+      Nanoc::Identifier.new("/dictionaries/#{parent_name}/#{File.basename(filename)}"),
+      binary: binary,
+    )
   end
 end
