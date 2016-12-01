@@ -22,6 +22,7 @@ RSpec::Core::RakeTask.new(:spec) do |task|
   task.verbose = false
 end
 
+desc 'Run all tests and specs'
 task test: [:spec, :'test:all']
 
 task default: [:test, :rubocop]
