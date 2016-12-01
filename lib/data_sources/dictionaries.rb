@@ -20,9 +20,9 @@ Class.new(Nanoc::DataSource) do
 
         first_line = File.open(dic, &:readline)
         kind = case first_line
-               when /^(?<word_count>\d+)$/
-                 # FIXME is there a better way to distinguish these?
-                 $LAST_MATCH_INFO[:word_count].to_i > 10_000 ? 'base-dictionary' : 'extra-dictionary'
+               when /^\d+$/
+                 # a base dictionary will have a similarly named affix file
+                 File.exist?(dic.sub(/\.dic$/, '.aff')) ? 'base-dictionary' : 'extra-dictionary'
                when /^-{3,5}$/
                  'acronym-dictionary'
                else

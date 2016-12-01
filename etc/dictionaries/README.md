@@ -3,18 +3,18 @@
 This folder contains hunspell dictionaries for spellchecking the [lifepreserver
 project](https://github.com/pentandra/lifepreserver).
 
-The primary language of this project is US English [en_US](en_US/), but we
-include other languages as well. Dictionaries for these languages are found in
-subfolders that are named in accordance with hunspell naming conventions. To
-support a language, simply create a folder using this naming convention, and
-drop your dictionary and affix files into it.
+The primary language of this project is US English, but we include other
+languages as well. Dictionaries for these languages are found in subfolders
+that are named in accordance with hunspell naming conventions. To support a
+language, simply create a folder using this naming convention, and drop your
+dictionary and affix files into it.
 
-Any files that end with `.dic` or `.yaml` in a subdirectory and are less than
-10,000 lines long will be automatically added as an _extra dictionary_ in the
-Nanoc build process. The purpose of the YAML files is to create a foundation
-for doing something with acronyms in the future. For YAML files, only the keys
-will be added as dictionary entries, and each will be added as an _acronym
-dictionary_.
+Any files that end with `.dic` or `.yaml` in a subdirectory and do not have a
+associated affix file will be automatically added as an _extra dictionary_
+during the Nanoc build process. The purpose of the YAML files is to create a
+foundation for doing something with acronyms in the future. For YAML files,
+only the keys will be added as dictionary entries, and each will be added as an
+_acronym dictionary_.
 
 See [the `dictionaries` datasource](../../lib/data_sources/dictionaries.rb) for
 more detail on how this process works, and [the `dictionary`
