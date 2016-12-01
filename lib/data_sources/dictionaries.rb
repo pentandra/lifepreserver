@@ -1,54 +1,63 @@
+require 'ffi/hunspell'
+
 Class.new(Nanoc::DataSource) do
   identifier :dictionaries
+
+  def up
+    unless @config[:directories].nil?
+      FFI::Hunspell.directories = @config.fetch(:directories).flat_map do |d|
+        Dir["#{d}/*/"]
+      end
+    end
+  end
 
   def items
     items = []
 
-    Dir["#{@config.fetch(:dictionaries_dir)}/**/*.{yaml,dic}"].each do |dic|
-      dic_filename = File.expand_path(dic)
-      dic_name = File.basename(dic)
-      dic_lang = SpellChecker::Dictionary.find_hunspell_lang(Pathname.new(dic).parent.basename)
-      first_line = File.open(dic, &:readline)
-      kind = case first_line
-             when /^(?<word_count>\d+)$/
-               # FIXME is there a better way to distinguish these?
-               $LAST_MATCH_INFO[:word_count].to_i > 10_000 ? 'base-dictionary' : 'extra-dictionary'
-             when /^-{3,5}$/
-               'acronym-dictionary'
-             else
-               'personal-dictionary'
-             end
+    FFI::Hunspell.directories.each do |dir|
+      Dir["#{dir}/*.{dic,yaml}"].each do |dic|
+        next if File.symlink?(dic)
 
-      binary = %w(base-dictionary extra-dictionary).include?(kind)
+        first_line = File.open(dic, &:readline)
+        kind = case first_line
+               when /^(?<word_count>\d+)$/
+                 # FIXME is there a better way to distinguish these?
+                 $LAST_MATCH_INFO[:word_count].to_i > 10_000 ? 'base-dictionary' : 'extra-dictionary'
+               when /^-{3,5}$/
+                 'acronym-dictionary'
+               else
+                 'personal-dictionary'
+               end
 
-      raw_content = nil
-      entries = case kind
-                when 'personal-dictionary'
-                  raw_content = File.read(dic)
-                  lines = raw_content.lines.map(&:chomp)
-                  { dic_entries: lines }
-                when 'acronym-dictionary'
-                  raw_content = File.read(dic)
-                  dic_hash = YAML.load(raw_content)
-                  { acronym_mappings: dic_hash, dic_entries: dic_hash.keys }
-                else
-                  {}
-                end
+        binary = %w(base-dictionary extra-dictionary).include?(kind)
 
-      attributes = {
-        name: dic_name,
-        kind: kind,
-        lang: dic_lang,
-        is_hidden: true,
-      }.merge(entries)
+        entries = case kind
+                  when 'personal-dictionary'
+                    raw_content = File.read(dic)
+                    lines = raw_content.lines.map(&:chomp)
+                    { entries: lines }
+                  when 'acronym-dictionary'
+                    raw_content = File.read(dic)
+                    entries_hash = YAML.load(raw_content)
+                    { acronym_mappings: entries_hash, entries: entries_hash.keys }
+                  else
+                    {}
+                  end
 
-      items << new_item(
-        binary ? dic_filename : Nanoc::Int::TextualContent.new(raw_content, filename: dic_filename),
-        attributes,
-        Nanoc::Identifier.new("/dictionaries/#{dic_lang}/#{dic_name}"),
-        binary: binary,
-        checksum_data: binary ? "word_count=#{first_line}" : "content=#{raw_content}",
-      )
+        attributes = {
+          name: File.basename(dic, '.*'),
+          kind: kind,
+        }.merge(entries)
+
+        filename = File.expand_path(dic)
+        items << new_item(
+          binary ? filename : Nanoc::Int::TextualContent.new(raw_content, filename: filename),
+          attributes,
+          Nanoc::Identifier.new("/dictionaries/#{File.basename(dir)}/#{File.basename(dic)}"),
+          binary: binary,
+          checksum_data: binary ? "word_count=#{first_line}" : "content=#{raw_content}",
+        )
+      end
     end
 
     items
