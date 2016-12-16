@@ -3,24 +3,31 @@
 This folder contains hunspell dictionaries for spellchecking the [lifepreserver
 project](https://github.com/pentandra/lifepreserver).
 
-The primary language of this project is US English, but we include other
-languages as well. Dictionaries for these languages are found in subfolders
-that are named in accordance with hunspell naming conventions. To support a
-language, simply create a folder using this naming convention, and drop your
-dictionary and affix files into it.
+The primary language of this project is US English, but we support checking the
+spelling of other languages as well. In HTML or XHTML, simply add the proper
+[BCP47](https://tools.ietf.org/html/bcp47) code to a `lang` or `xml:lang`
+attribute of the enclosing element of the text you want to have checked.
 
-Any files that end with `.dic` or `.yaml` in a subdirectory and do not have a
-associated affix file will be automatically added as an _extra dictionary_
-during the Nanoc build process. The purpose of the YAML files is to create a
-foundation for doing something with acronyms in the future. For YAML files,
-only the keys will be added as dictionary entries, and each will be added as an
-_acronym dictionary_.
+Dictionaries for these languages are grouped here into subfolders corresponding
+to specific languages and regions. To support a language, simply create a
+folder and put your base dictionary and the associated affix file into it.
+
+In order to support multiple extra and/or personal dictionaries per language,
+we have adopted the following convention: to each base dictionary found in a
+given folder, any file that ends with `.dic` or `.yaml` in that folder (and
+does not have a associated affix file, i.e. is not a base dictionaries itself)
+will be added as a _personal_ or _extra_ dictionary during the Nanoc build
+process.
 
 See [the `dictionaries` datasource](../../lib/data_sources/dictionaries.rb) for
 more detail on how this process works, and [the `dictionary`
-filter](../../lib/filters/spell_checker/dictionary.rb) for detail about mapping
-between [BCP47](https://tools.ietf.org/html/bcp47) language tags and these
-hunspell conventions.
+helper](../../lib/filters/spell_checker/dictionary.rb) for more detail about
+mapping between [BCP47](https://tools.ietf.org/html/bcp47) language tags and
+these hunspell conventions.
+
+The purpose of the YAML files is to create a foundation for doing something
+with acronyms in the future. For YAML files, only the keys will be added as
+dictionary entries, and each will be added as an _acronym dictionary_.
 
 ## Upstream sources
 
@@ -40,3 +47,7 @@ Spanish ([es_ES](es_ES/))
 
 Dutch ([nl_NL](nl_NL/))
 : thanks to the [opentaal project](http://www.opentaal.org/)
+
+*[HTML]: HyperText Markup Language
+*[XHTML]: eXtensible HyperText Markup Language
+*[BCP47]: BCP 47: Tags for Identifying Languages, comprised of RFC5646 and RFC4647
