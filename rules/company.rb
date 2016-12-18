@@ -6,7 +6,7 @@ compile %r{/static/company/benefit-reports/\d{4}/index\.md} do
     { from: :markdown, to: :html5 },
     { base_header_level: 2 },
     :section_divs,
-    :smart
+    :smart,
   ]
   filter :spellchecker, type: :html
   layout '/benefit_reports/default.*'
@@ -19,7 +19,7 @@ compile %r{/static/company/benefit-reports/(\d{4})/index\.md}, rep: :pdf do |fis
   filter :erb
   filter :pandoc, args: [
     { from: :markdown, to: :context },
-    :chapters
+    :chapters,
   ]
   filter :absolutify_paths, type: :context
   layout '/benefit_reports/report.*'

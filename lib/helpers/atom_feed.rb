@@ -9,7 +9,6 @@ module LifePreserver
     include LifePreserver::Blogging
 
     class AtomFeedBuilder
-
       attr_accessor :config
 
       attr_accessor :limit

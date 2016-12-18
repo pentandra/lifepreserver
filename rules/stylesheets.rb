@@ -1,6 +1,6 @@
 # Stylesheets
 
-compile "/static/assets/stylesheets/**/*.htc" do
+compile '/static/assets/stylesheets/**/*.htc' do
   write '/static/css/' + File.basename(@item.identifier.to_s)
 end
 

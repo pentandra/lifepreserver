@@ -2,12 +2,11 @@ require 'uri'
 
 module Nanoc::Extra::Checking::Checks
   class InternalLinks < ::Nanoc::Extra::Checking::Check
-
     protected
 
-		# Override to compensate for static_path
+    # Override to compensate for static_path
     def valid?(href, origin)
-			# Skip hrefs that point to self
+      # Skip hrefs that point to self
       # FIXME: this is ugly and won’t always be correct
       return true if href == '.'
 
