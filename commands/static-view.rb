@@ -10,8 +10,8 @@ required :H, :handler, 'specify the handler to use (webrick/mongrel/...)'
 required :o, :host,    'specify the host to listen on (default: 0.0.0.0)'
 required :p, :port,    'specify the port to listen on (default: 3000)'
 
-module Nanoc::CLI::Commands
-  class View < ::Nanoc::CLI::CommandRunner
+module LifePreserver
+  class StaticView < ::Nanoc::CLI::Commands::View
     DEFAULT_HANDLER_NAME ||= :thin
 
     def run
@@ -63,29 +63,7 @@ module Nanoc::CLI::Commands
     def view_config_root
       view_config[:static_root]
     end
-
-    def load_adsf
-      # Load adsf
-      begin
-        require 'adsf'
-        return
-      rescue LoadError
-        $stderr.puts "Could not find the required 'adsf' gem, " \
-          'which is necessary for the view command.'
-      end
-
-      # Check asdf
-      begin
-        require 'asdf'
-        $stderr.puts "You appear to have 'asdf' installed, " \
-          "but not 'adsf'. Please install 'adsf' (check the spelling)!"
-      rescue LoadError
-      end
-
-      # Done
-      exit 1
-    end
   end
 end
 
-runner Nanoc::CLI::Commands::View
+runner LifePreserver::StaticView
