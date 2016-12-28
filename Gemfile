@@ -1,47 +1,47 @@
 source 'https://rubygems.org'
 
-gem 'nanoc'              # for compiling the site
-gem 'compass'            # for advanced CSS
-gem 'kramdown'           # for advanced markdown
-gem 'nokogiri'           # for parsing HTML
-gem 'rainpress'          # for compact CSS
-gem 'uglifier'           # for compact JavaScript
-gem 'html5small'         # for compact HTML
 gem 'activesupport'      # for helpful extension methods
-gem 'vcardigan'          # for vCards
-gem 'rqrcode'            # for qrcodes
-gem 'chunky_png'         # for PNG generation of qrcodes
-gem 'image_optimizer'    # to compress images
-gem 'shortly'            # for URL shortening
-gem 'rest-client'        # for downloads of external resources
-gem 'rubypants-unicode'
-gem 'linkeddata'
-gem 'rdf-vocab',         git: 'https://github.com/ruby-rdf/rdf-vocab.git',      branch: 'develop' # for latest code (included in `linkeddata` gem)
-gem 'rdf',               git: 'https://github.com/ruby-rdf/rdf.git',            branch: 'develop' # for latest code (included in `linkeddata` gem)
-gem 'nanoc-cachebuster', git: 'https://github.com/cdchapman/nanoc-cachebuster', branch: 'nanoc-4'
-gem 'rouge'
-gem 'haml'
-gem 'pandoc-ruby'        # for benefit reports in ConTeXt
-gem 'git'                # for version history and tagging info
 gem 'builder'            # for XML stuff, such as sitemap and atom feeds
+gem 'chunky_png'         # for PNG generation of qrcodes
+gem 'compass'            # for advanced CSS
 gem 'ffi-hunspell',      git: 'https://github.com/cdchapman/ffi-hunspell'
+gem 'git'                # for version history and tagging info
+gem 'haml'
+gem 'html5small'         # for compact HTML
+gem 'image_optimizer'    # to compress images
+gem 'kramdown'           # for advanced markdown
+gem 'linkeddata'
 gem 'locale'
+gem 'nanoc'              # for compiling the site
+gem 'nanoc-cachebuster', git: 'https://github.com/cdchapman/nanoc-cachebuster', branch: 'nanoc-4'
+gem 'nokogiri'           # for parsing HTML
+gem 'pandoc-ruby'        # for benefit reports in ConTeXt
+gem 'rainpress'          # for compact CSS
+gem 'rdf',               git: 'https://github.com/ruby-rdf/rdf.git',            branch: 'develop' # for latest code (included in `linkeddata` gem)
+gem 'rdf-vocab',         git: 'https://github.com/ruby-rdf/rdf-vocab.git',      branch: 'develop' # for latest code (included in `linkeddata` gem)
+gem 'rest-client'        # for downloads of external resources
+gem 'rouge'
+gem 'rqrcode'            # for qrcodes
+gem 'rubypants-unicode'
+gem 'shortly'            # for URL shortening
+gem 'uglifier'           # for compact JavaScript
+gem 'vcardigan'          # for vCards
 
 group :development, optional: true do
-  gem 'guard'
-  gem 'guard-nanoc'
-  gem 'guard-livereload'
-  gem 'guard-rake'
   gem 'adsf'              # for nanoc view
   gem 'ghi'               # for GitHub issues
+  gem 'guard'
+  gem 'guard-livereload'
+  gem 'guard-nanoc'
+  gem 'guard-rake'
 end
 
 group :test, optional: true do
+  gem 'fuubar'
+  gem 'minitest'
+  gem 'rake'
   gem 'rspec'
   gem 'rspec-mocks'
-  gem 'rake'
-  gem 'fuubar'
   gem 'rubocop'
   gem 'simplecov', require: false
-  gem 'minitest'
 end
