@@ -10,14 +10,14 @@ required :g, :global, 'specify any global directives (default: daemon off;)'
 
 module LifePreserver
   class Server < ::Nanoc::CLI::CommandRunner
-    NGINX_BIN = 'nginx'
+    NGINX_BIN = 'nginx'.freeze
     NGINX_SEARCH_PATHS = [
       '/usr/local/openresty/nginx/sbin/',
       '/usr/local/opt/openresty/bin/',
       '/usr/local/bin/',
       '/usr/sbin/',
-      '/opt/openresty/nginx/sbin/'
-    ]
+      '/opt/openresty/nginx/sbin/',
+    ].freeze
 
     class Error < ::Nanoc::Int::Errors::Generic
       def initialize(command, exit_code)
@@ -43,17 +43,17 @@ module LifePreserver
       nginx = find_nginx
       output_dir = site.config[:output_dir]
       config_file = File.join(output_dir, conf)
-      cmd = [ nginx, '-p', output_dir, '-c', conf, '-g', directives ]
+      cmd = [nginx, '-p', output_dir, '-c', conf, '-g', directives]
 
-      Open3.popen3(*cmd) do |stdin, stdout, stderr, thread|
-        puts c.c("Starting OpenResty with config file (#{config_file})", :bold)
-        puts "OpenResty executable: #{nginx}"
-        puts "Global directives: #{directives}"
+      Open3.popen3(*cmd) do |_stdin, stdout, stderr, thread|
+        $stderr.puts c.c("Starting OpenResty with config file (#{config_file})", :bold)
+        $stderr.puts "OpenResty executable: #{nginx}"
+        $stderr.puts "Global directives: #{directives}"
 
         { stdout: stdout, stderr: stderr }.each do |key, stream|
           Thread.new do
             while (line = stream.gets)
-              print (key == :stderr) ? c.c(line, :yellow) : line
+              print key == :stderr ? c.c(line, :yellow) : line
             end
           end
         end
