@@ -3,16 +3,14 @@ require 'chunky_png'
 
 module RQRCode
   class QRCode
-
     # to_image
     #
     # the module_size parameter indicates the width and height in pixels for each module
     #
     # adapted from http://dagi3d.net/posts/3-generating-qr-code-images-with-rqrcode
     #
-    def to_image(module_size = 5, offset = 4, color) 
-
-      color = color || ChunkyPNG::Color::BLACK
+    def to_image(module_size = 5, offset = 4, color)
+      color ||= ChunkyPNG::Color::BLACK
 
       margin = offset * module_size
       dim = module_size * @modules.size + margin * 2
@@ -26,8 +24,8 @@ module RQRCode
             (y * module_size) + module_size + margin - 1,
             (x * module_size) + module_size + margin - 1,
             color,
-            color
-          ) if self.dark?(x,y)
+            color,
+          ) if dark?(x, y)
         end
       end
 

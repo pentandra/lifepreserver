@@ -30,7 +30,7 @@ module LifePreserver
 
     def validate_config
       unless @config.key?(:google_api_key)
-        raise "Cannot generate short urls without a @config[:google_api_key]"
+        raise 'Cannot generate short urls without a @config[:google_api_key]'
       end
     end
 

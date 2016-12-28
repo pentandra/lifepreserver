@@ -77,9 +77,9 @@ module LifePreserver
         return target
       end
 
-      p = current.gsub(/[^\/]*$/, '') + target
-      p = p.gsub(/\/+/, '/')
-      p = p.gsub(/[^\/]*\/\.\.\//, '') while (p =~ /\.\.\//)
+      p = current.gsub(%r{[^/]*$}, '') + target
+      p = p.gsub(%r{/+}, '/')
+      p = p.gsub(%r{[^/]*/\.\./}, '') while p =~ %r{\.\./}
       p
     end
 

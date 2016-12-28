@@ -1,4 +1,4 @@
-require "active_support/core_ext/object/blank"
+require 'active_support/core_ext/object/blank'
 require_relative 'text'
 
 module LifePreserver
@@ -6,7 +6,7 @@ module LifePreserver
     include Text
 
     def blog_post?(item)
-      item[:kind] == "article" && item.identifier =~ /\/blog\//
+      item[:kind] == 'article' && item.identifier =~ %r{/blog/}
     end
 
     def blog_posts
@@ -52,7 +52,7 @@ module LifePreserver
     # Create a link for the author of this page
     #
     def link_for_author(author, rel_tag: true)
-      %[<a href="#{@config[:blog][:authors_url]}/#{h author.to_slug}/" title="Articles by #{h author}"#{" rel=\"author\"" if rel_tag}>#{h author}</a>]
+      %(<a href="#{@config[:blog][:authors_url]}/#{h author.to_slug}/" title="Articles by #{h author}"#{' rel="author"' if rel_tag}>#{h author}</a>)
     end
 
     def link_for_authorlist(author)
@@ -80,7 +80,7 @@ module LifePreserver
     end
 
     def link_for_archive(year)
-      %[<a rel="archives" href="#{@config[:blog][:archives_url]}/#{h year.to_s}/" title="Articles written in #{h year.to_s}">#{h year.to_s}</a>]
+      %(<a rel="archives" href="#{@config[:blog][:archives_url]}/#{h year.to_s}/" title="Articles written in #{h year.to_s}">#{h year.to_s}</a>)
     end
 
     def archive_years(posts = nil)
@@ -89,7 +89,7 @@ module LifePreserver
       years.to_a
     end
 
-    def post_summary(post_rep, read_more_text: "Read more ⇢", separator: "<!--MORE-->")
+    def post_summary(post_rep, read_more_text: 'Read more ⇢', separator: '<!--MORE-->')
       post_rep = case post_rep
                  when Nanoc::ItemRepView
                    post_rep
@@ -102,8 +102,8 @@ module LifePreserver
       summary, body = post_rep.compiled_content.split(separator)
       return summary unless body
 
-      link = link_to(post_rep.item.fetch(:read_more, read_more_text), post_rep.item, global: post_rep.name != :default, class: "readmore", title: "Read the full article")
-      summary << %[<p class="readmore">#{link}</p>]
+      link = link_to(post_rep.item.fetch(:read_more, read_more_text), post_rep.item, global: post_rep.name != :default, class: 'readmore', title: 'Read the full article')
+      summary << %(<p class="readmore">#{link}</p>)
     end
 
     def article_id(article)
@@ -114,10 +114,10 @@ module LifePreserver
     def generate_author_pages(item_set)
       authors(item_set).each do |author|
         @items.create(
-          %[<%= render("/blog/author.*", author: "#{author}") %>],
-          { title: "Articles by #{author}", kind: "author-page", is_hidden: true, description: "All posts written by #{author}" },
+          %(<%= render('/blog/author.*', author: '#{author}') %>),
+          { title: "Articles by #{author}", kind: 'author-page', is_hidden: true, description: "All posts written by #{author}" },
           "#{@config[:blog][:authors_url]}/#{author.to_slug}/index.erb",
-          binary: false
+          binary: false,
         )
       end
     end
@@ -128,10 +128,10 @@ module LifePreserver
       years = item_set.map { |a| a[:created_at].year }.uniq
       years.each do |year|
         @items.create(
-          %[<%= render("/blog/archive.*", year: #{year}) %>],
-          { title: "Articles from #{year}", kind: "archive-page", is_hidden: true, description: "All posts written in #{year}" },
+          %(<%= render('/blog/archive.*', year: #{year}) %>),
+          { title: "Articles from #{year}", kind: 'archive-page', is_hidden: true, description: "All posts written in #{year}" },
           "#{@config[:blog][:archives_url]}/#{year}/index.erb",
-          binary: false
+          binary: false,
         )
       end
     end

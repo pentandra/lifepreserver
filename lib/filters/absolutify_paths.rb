@@ -1,7 +1,9 @@
-require_relative '../helpers/link_to'
 # Based on https://gist.github.com/fracai/1597618 and the
 # `Nanoc::Filters::RelativizePaths filter, with improvements
 class AbsolutifyPaths < Nanoc::Filter
+  require_relative '../helpers/link_to'
+  include LifePreserver::LinkTo
+
   identifier :absolutify_paths
 
   requires 'nokogiri'
@@ -53,7 +55,7 @@ class AbsolutifyPaths < Nanoc::Filter
   def absolutify_css(content, params)
     global = params.fetch(:global, false)
 
-    content.gsub(/url\((?<quote>['"]?)(?<path>\/(?:[^\/].*?)?)\k<quote>\)/) do
+    content.gsub(%r{url\((?<quote>['"]?)(?<path>/(?:[^/].*?)?)\k<quote>\)}) do
       quote = Regexp.last_match(:quote)
       path = Regexp.last_match(:path)
       'url(' + quote + public_path_to(path, global: global) + quote + ')'
@@ -64,7 +66,7 @@ class AbsolutifyPaths < Nanoc::Filter
   def absolutify_context(content, params)
     global = params.fetch(:global, true)
 
-    content.gsub(/\\useURL\s*(?<identifier>\[.*?\]){1}\s*\[(?<target>\/(?:[^\/].*?)?)\]/) do |match|
+    content.gsub(%r{\\useURL\s*(?<identifier>\[.*?\]){1}\s*\[(?<target>/(?:[^/].*?)?)\]}) do
       identifier = Regexp.last_match(:identifier)
       target = Regexp.last_match(:target)
       '\useURL' + identifier + '[' + public_path_to(target, global: global) + ']'

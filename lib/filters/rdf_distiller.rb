@@ -45,7 +45,7 @@ class RdfDistiller < Nanoc::Filter
     }
 
     repository = RDF::Repository.new
-    
+
     RDF::Reader.for(input.to_sym).new(assigns[:content], options) { |reader| repository << reader }
 
     if repository.has_statement?(RDF::Statement(RDF::URI.new(base_uri), RDF.type, RDF::OWL.Ontology))
@@ -54,7 +54,7 @@ class RdfDistiller < Nanoc::Filter
       case output_format
       when :turtle
         vocab.to_ttl(graph: repository, prefixes: prefixes)
-      when :jsonld 
+      when :jsonld
         vocab.to_jsonld(graph: repository, prefixes: prefixes)
       when :rdfa
         raise 'The HTML/RDFa output format can only be run as a layout' unless assigns[:layout]
