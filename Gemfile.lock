@@ -15,25 +15,16 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-vocab.git
-  revision: 08c60fc785b82d3441a341a1715d4624fe3d0386
+  revision: 1bd467c1f5572e9601e116a70db908c72a8cb213
   branch: develop
   specs:
     rdf-vocab (2.1.0)
       rdf (~> 2.1)
 
-GIT
-  remote: https://github.com/ruby-rdf/rdf.git
-  revision: 3360405bd5586371a47c003a2ca0ca403c33b0ba
-  branch: develop
-  specs:
-    rdf (2.1.0)
-      hamster (~> 3.0)
-      link_header (~> 0.0, >= 0.0.8)
-
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (5.0.0.1)
+    activesupport (5.0.1)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (~> 0.7)
       minitest (~> 5.1)
@@ -61,7 +52,7 @@ GEM
       sass (>= 3.3.0, < 3.5)
     compass-import-once (1.0.5)
       sass (>= 3.2, < 3.5)
-    concurrent-ruby (1.0.2)
+    concurrent-ruby (1.0.4)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
     cri (2.7.1)
@@ -70,7 +61,7 @@ GEM
     docile (1.1.5)
     domain_name (0.5.20161129)
       unf (>= 0.0.5, < 1.0.0)
-    ebnf (1.0.2)
+    ebnf (1.1.0)
       rdf (~> 2.0)
       sxp (~> 1.0)
     em-websocket (0.5.1)
@@ -114,7 +105,7 @@ GEM
       tilt
     hamster (3.0.0)
       concurrent-ruby (~> 1.0)
-    hashdiff (0.3.1)
+    hashdiff (0.3.2)
     html5small (0.4.0)
       htmlentities (>= 4.1.0)
       nokogiri (>= 1.5.0)
@@ -128,8 +119,8 @@ GEM
     i18n (0.7.0)
     image_optimizer (1.7.0)
     json (1.8.1)
-    json-ld (2.1.0)
-      multi_json (~> 1.11)
+    json-ld (2.1.1)
+      multi_json (~> 1.12)
       rdf (~> 2.1)
     kramdown (1.13.1)
     ld-patch (0.3.0)
@@ -175,40 +166,39 @@ GEM
     minitest (5.10.1)
     multi_json (1.12.1)
     multi_xml (0.6.0)
-    nanoc (4.4.2)
+    nanoc (4.4.6)
       cri (~> 2.3)
       hamster (~> 3.0)
-      parallel (~> 1.9)
       ref (~> 2.0)
     nenv (0.3.0)
     net-http-persistent (2.9.4)
     netrc (0.11.0)
-    nokogiri (1.6.8.1)
+    nokogiri (1.7.0)
       mini_portile2 (~> 2.1.0)
     notiffany (0.1.1)
       nenv (~> 0.1)
       shellany (~> 0.0)
     pandoc-ruby (2.0.1)
-    parallel (1.10.0)
     parser (2.3.3.1)
       ast (~> 2.2)
-    posix-spawn (0.3.12)
     powerpack (0.1.1)
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
     public_suffix (2.0.4)
-    pygments.rb (0.6.3)
-      posix-spawn (~> 0.3.6)
-      yajl-ruby (~> 1.2.0)
+    pygments.rb (1.1.1)
+      multi_json (>= 1.0.0)
     rack (2.0.1)
-    rainbow (2.1.0)
+    rainbow (2.2.1)
     rainpress (1.0)
     rake (12.0.0)
     rb-fsevent (0.9.8)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
+    rdf (2.1.1)
+      hamster (~> 3.0)
+      link_header (~> 0.0, >= 0.0.8)
     rdf-aggregate-repo (2.0.0)
       rdf (~> 2.0)
     rdf-isomorphic (2.0.0)
@@ -296,7 +286,7 @@ GEM
     ruby_dep (1.5.0)
     rubypants-unicode (0.2.5)
     safe_yaml (1.0.4)
-    sass (3.4.22)
+    sass (3.4.23)
     shellany (0.0.1)
     shortly (0.3.6)
       httparty (= 0.13.0)
@@ -330,13 +320,12 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.2)
-    unicode-display_width (1.1.1)
+    unicode-display_width (1.1.2)
     vcardigan (0.0.9)
     webmock (1.24.6)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff
-    yajl-ruby (1.2.1)
 
 PLATFORMS
   ruby
@@ -368,7 +357,6 @@ DEPENDENCIES
   pandoc-ruby
   rainpress
   rake
-  rdf!
   rdf-vocab!
   rest-client
   rouge

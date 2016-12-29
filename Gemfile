@@ -17,7 +17,6 @@ gem 'nanoc-cachebuster', git: 'https://github.com/cdchapman/nanoc-cachebuster', 
 gem 'nokogiri'           # for parsing HTML
 gem 'pandoc-ruby'        # for benefit reports in ConTeXt
 gem 'rainpress'          # for compact CSS
-gem 'rdf',               git: 'https://github.com/ruby-rdf/rdf.git',            branch: 'develop' # for latest code (included in `linkeddata` gem)
 gem 'rdf-vocab',         git: 'https://github.com/ruby-rdf/rdf-vocab.git',      branch: 'develop' # for latest code (included in `linkeddata` gem)
 gem 'rest-client'        # for downloads of external resources
 gem 'rouge'
