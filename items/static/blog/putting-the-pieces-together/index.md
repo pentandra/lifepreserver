@@ -25,7 +25,7 @@ has_media: true
   <meta property="schema:height" content="624 px" datatype="schema:Distance" />
   <meta property="schema:contentSize" content="63KB" />
   <img property="schema:contentUrl" class="static" alt="A map of the world that depicts a journey by sea, starting near Madrid, Spain, then heading southward through the Atlantic Ocean to the Southern Ocean, around Cape Horn, and up the coast of South America, arriving finally at San Diego, California, with a few squiggly detours along the way" src="journey_of_defining_the_scholarly_commons.jpg" />
-  <figcaption property="schema:caption" class="small">A map of our journey so far of defining the Scholarly Commons, from Madrid, Spain, to San Diego, California. <span property="schema:hasPart" typeof="schema:ImageObject"><a property="schema:url" href="watercolor_HdLwglsB1l0.png">Map tiles</a> by <a property="cc:attributionName" rel="cc:attributionURL" href="http://stamen.com/">Stamen Design</a>, licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/3.0/"><abbr title="Creative Commons Attribution 3.0 Unported">CC-BY</abbr></a> license. <span class="icon-cc"></span><span class="icon-cc-by"></span></span></figcaption>
+  <figcaption property="schema:caption">A map of our journey so far of defining the Scholarly Commons, from Madrid, Spain, to San Diego, California. <span property="schema:hasPart" typeof="schema:ImageObject"><a property="schema:url" href="watercolor_HdLwglsB1l0.png">Map tiles</a> by <a property="cc:attributionName" rel="cc:attributionURL" href="http://stamen.com/">Stamen Design</a>, licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/3.0/"><abbr title="Creative Commons Attribution 3.0 Unported">CC-BY</abbr></a> license. <span class="icon-cc"></span><span class="icon-cc-by"></span></span></figcaption>
 </figure>
 
 Last week I had the opportunity to participate in the second workshop of the
@@ -166,7 +166,7 @@ their own government_.
 
 <figure id="fig:the-mayflower-compact" class="img" property="schema:sharedContent" typeof="schema:ImageObject">
   <img alt="Passengers of the Mayflower signing the 'Mayflower Compact' including Carver, Winston, Alden, Myles Standish, Howland, Bradford, Allerton, and Fuller." src="The_Mayflower_Compact.jpg" />
-  <figcaption class="small">The depiction in <i property="schema:title">Signing the Mayflower Compact 1620</i>, by <a href="https://en.wikipedia.org/wiki/Jean_Leon_Gerome_Ferris">Jean Leon Gerome Ferris</a>, resembles the journey we have undertaken to converge upon the principles of the Scholarly Commons.</figcaption>
+  <figcaption>The depiction in <i property="schema:title">Signing the Mayflower Compact 1620</i>, by <a href="https://en.wikipedia.org/wiki/Jean_Leon_Gerome_Ferris">Jean Leon Gerome Ferris</a>, resembles the journey we have undertaken to converge upon the principles of the Scholarly Commons.</figcaption>
 </figure>
 
 The compact was simple enough. They covenanted to "combine \[them\]selves

@@ -70,7 +70,7 @@ header {
   margin-bottom: 0;
 }
 
-small {
+small, figcaption {
   @extend .small;
 }
 
@@ -112,6 +112,9 @@ blockquote, .bq { margin: $base-line-height * 1.5 0; }
     margin: 0;
   }
 
+  figcaption {
+    @extend .normal;
+  }
 }
 
 hr {

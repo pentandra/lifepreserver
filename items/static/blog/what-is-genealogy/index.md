@@ -33,7 +33,7 @@ nicely named children, all lined up neatly in a row? I hope not.
 
 <figure id="fig:internetmap" class="img" resource="#internet_2010" typeof="schema:ImageObject">
   <img property="schema:contentUrl" src="opte-2010_620.png" alt="The Internet 2010" class="static framed" />
-  <figcaption class="small">
+  <figcaption>
     <span class="bold">Figure 1</span>
     <span property="dc:description">
       <span property="dc:title">The Internet 2010</span>, by <a

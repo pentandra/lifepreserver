@@ -125,7 +125,7 @@ whole.
   <a title="View manuscript at the British Library" property="prov:wasDerivedFrom" href="http://www.bl.uk/catalogues/illuminatedmanuscripts/ILLUMIN.ASP?Size=mid&IllID=21739">
     <img property="schema:contentUrl" class="static" data-no-retina src="illuminated_scientific_manuscript.jpg" alt="Illuminated manuscript depicting canons for Toledan tables (c. 1292)" />
   </a>
-  <figcaption class="small"><span property="schema:description"><b property="dc:title schema:name">An illuminated scientific manuscript</b>, or better known at the time as <dfn><a href="https://en.wikipedia.org/wiki/Natural_philosophy" title="Philosophia Naturalis on Wikipedia">natural philosophy</a></dfn>, written in <a href="https://en.wikipedia.org/wiki/Latin" title="Latin on Wikipedia">Latin</a> upon <a href="https://en.wikipedia.org/wiki/Parchment" title="Parchment on Wikipedia">parchment</a> circa <span class="oldstyle">1292</span>, showing a contemporary dipiction of the Arabic <a href="http://en.wikipedia.org/wiki/Toledan_Tables">Toledan tables</a>, which used geometric chords and sines to predict the movements of the Sun, Moon, and planets relative to the fixed stars. At this time, the prevailing belief was that the Earth was stationary at the center of the universe.</span> Licensed under a <a property="cc:license" href="http://creativecommons.org/publicdomain/zero/1.0/" ><abbr title="Creative Commons Zero (Public Domain Dedication)">CC0</abbr> license</a> by the <a property="cc:attributionName" rel="cc:attributionURL" href="http://www.bl.uk">British Library</a>. <span class="icon-cc"></span><span class="icon-cc-zero"></span></figcaption>
+  <figcaption><span property="schema:description"><b property="dc:title schema:name">An illuminated scientific manuscript</b>, or better known at the time as <dfn><a href="https://en.wikipedia.org/wiki/Natural_philosophy" title="Philosophia Naturalis on Wikipedia">natural philosophy</a></dfn>, written in <a href="https://en.wikipedia.org/wiki/Latin" title="Latin on Wikipedia">Latin</a> upon <a href="https://en.wikipedia.org/wiki/Parchment" title="Parchment on Wikipedia">parchment</a> circa <span class="oldstyle">1292</span>, showing a contemporary dipiction of the Arabic <a href="http://en.wikipedia.org/wiki/Toledan_Tables">Toledan tables</a>, which used geometric chords and sines to predict the movements of the Sun, Moon, and planets relative to the fixed stars. At this time, the prevailing belief was that the Earth was stationary at the center of the universe.</span> Licensed under a <a property="cc:license" href="http://creativecommons.org/publicdomain/zero/1.0/" ><abbr title="Creative Commons Zero (Public Domain Dedication)">CC0</abbr> license</a> by the <a property="cc:attributionName" rel="cc:attributionURL" href="http://www.bl.uk">British Library</a>. <span class="icon-cc"></span><span class="icon-cc-zero"></span></figcaption>
 </figure>
 
 ### Access to Knowledge
@@ -183,7 +183,7 @@ of the World</cite>
   <a property="schema:contentUrl" href="printing_press.jpg">
     <img property="schema:thumbnail" class="static retina" src="printing_press_620x442.jpg" alt="An 18th-century reconstructed Gutenberg-style printing press" />
   </a>
-  <figcaption class="small"><span property="schema:description"><b property="schema:name dc:title">A Gutenberg-style printing press</b>, inside the Book Workshop of La Maison Fusier, located in the town of Ferney-Voltaire, France. Printing presses like these made the mass dissemination of knowledge possible.</span></figcaption>
+  <figcaption><span property="schema:description"><b property="schema:name dc:title">A Gutenberg-style printing press</b>, inside the Book Workshop of La Maison Fusier, located in the town of Ferney-Voltaire, France. Printing presses like these made the mass dissemination of knowledge possible.</span></figcaption>
   <link property="rdfa:copy" resource="pentandra-website:license" />
 </figure>
 
@@ -880,7 +880,7 @@ without hidden agendas or selfish motivations.
     <source property="schema:contentUrl" type="video/ogg" src="you_are_amateurs.ogv" />
     <track kind="subtitles" src="you_are_amateurs.en.srt" srclang="en" />
   </video>
-  <figcaption class="small"><span property="schema:description"><b property="schema:title">You Are Amateurs</b> from <cite>A Christmas Without Snow</cite>, via the <a href="https://archive.org/details/AChristmasWithoutSnow" property="prov:wasDerivedFrom">Internet Archive</a>, produced by <span property="cc:attributionName schema:productionCompany">Korty Films</span> in <span class="oldstyle" property="schema:datePublished">1980</span></span>. Licensed under a <a property="cc:license" href="http://creativecommons.org/publicdomain/zero/1.0/" ><abbr title="Creative Commons Zero (Public Domain Dedication)">CC0</abbr> license</a>. <span class="icon-cc"></span><span class="icon-cc-zero"></span></figcaption>
+  <figcaption><span property="schema:description"><b property="schema:title">You Are Amateurs</b> from <cite>A Christmas Without Snow</cite>, via the <a href="https://archive.org/details/AChristmasWithoutSnow" property="prov:wasDerivedFrom">Internet Archive</a>, produced by <span property="cc:attributionName schema:productionCompany">Korty Films</span> in <span class="oldstyle" property="schema:datePublished">1980</span></span>. Licensed under a <a property="cc:license" href="http://creativecommons.org/publicdomain/zero/1.0/" ><abbr title="Creative Commons Zero (Public Domain Dedication)">CC0</abbr> license</a>. <span class="icon-cc"></span><span class="icon-cc-zero"></span></figcaption>
 </figure>
 
 It was in <span class="oldstyle">1905</span>, while Albert Einstein worked
@@ -967,7 +967,7 @@ metaphor for how to proceed in the future.
   <a property="schema:contentUrl" href="movable_type_in_typecase.jpg">
     <img property="schema:thumbnail" class="retina static" src="movable_type_in_typecase_620x442.jpg" alt="Movable type" />
   </a>
-  <figcaption class="small"><b property="schema:name dc:title">Movable type</b>, or <em>sorts</em>, in a type case. Licensed under a <a href="http://creativecommons.org/licenses/by/4.0/"><abbr title="Creative Commons Attribution 4.0 International">CC-BY</abbr> license</a>. <span class="icon-cc"></span><span class="icon-cc-by"></span></figcaption>
+  <figcaption><b property="schema:name dc:title">Movable type</b>, or <em>sorts</em>, in a type case. Licensed under a <a href="http://creativecommons.org/licenses/by/4.0/"><abbr title="Creative Commons Attribution 4.0 International">CC-BY</abbr> license</a>. <span class="icon-cc"></span><span class="icon-cc-by"></span></figcaption>
 </figure>
 
 Movable type worked really well for alphabets that had relatively few
@@ -977,7 +977,7 @@ characters in them.
   <a title="View original image on Wikimedia Commons" property="prov:wasDerivedFrom" href="http://upload.wikimedia.org/wikipedia/commons/a/ae/Metal_movable_type.jpg">
     <img property="schema:contentUrl" class="static" src="Metal_movable_type.jpg" alt="Metal movable type in a composing stick" />
   </a>
-  <figcaption class="small"><b property="schema:name dc:title">Movable type in a composing stick</b>, by <span property="cc:attributionName">Willi Heidelbach</span>, licensed under a <a href="http://creativecommons.org/licenses/by-sa/3.0/" rel="license" property="cc:license"><abbr title="Creative Commons Attribution-Share Alike 3.0 Unported">CC-BY-SA</abbr> license</a>.  <span class="icon-cc"></span><span class="icon-cc-by"></span><span class="icon-cc-sa"></span></figcaption>
+  <figcaption><b property="schema:name dc:title">Movable type in a composing stick</b>, by <span property="cc:attributionName">Willi Heidelbach</span>, licensed under a <a href="http://creativecommons.org/licenses/by-sa/3.0/" rel="license" property="cc:license"><abbr title="Creative Commons Attribution-Share Alike 3.0 Unported">CC-BY-SA</abbr> license</a>.  <span class="icon-cc"></span><span class="icon-cc-by"></span><span class="icon-cc-sa"></span></figcaption>
 </figure>
 
 ## Research Cases: A Proposal for the Future
@@ -1194,7 +1194,7 @@ research systems.
       <video class="simple" width="100%" height="100%" style="width: 100%; height: 100%;" id="player" preload="none" controls="controls">
         <source type="video/youtube" src="http://www.youtube.com/watch?v=v31zpZ4woOI" />
       </video>
-      <figcaption class="small">
+      <figcaption>
         <p> 
 
           The London Bureau of
@@ -1224,7 +1224,7 @@ research systems.
         <source src="SuberPodcast_ogg.ogg" type="audio/ogg" /> 
       </audio>
 
-      <figcaption class="small">
+      <figcaption>
         <p>
 
           An interview with Peter Suber on the Harvard University campus at the
@@ -1245,7 +1245,7 @@ research systems.
       <video class="simple" width="100%" height="100%" style="width: 100%; height: 100%; max-width: 100%;" id="oa-explained" preload="none" controls="controls">
         <source type="video/youtube" src="http://www.youtube.com/watch?v=L5rVH1KGBCY" />
       </video>
-      <figcaption class="small">
+      <figcaption>
         <p>
 
           What is open access? Nick Shockey and Jonathan Eisen take us through

@@ -20,7 +20,7 @@ tags:
   <meta property="schema:width" content="399 px" datatype="schema:Distance" />
   <meta property="schema:height" content="395 px" datatype="schema:Distance" />
   <img property="schema:contentUrl" src="Julia-domna.jpg" alt="Coin of Julia Domna I" data-no-retina class="static" />
-  <figcaption class="small">
+  <figcaption>
     This image, entitled <a href="https://commons.wikimedia.org/wiki/File:Julia-domna.jpg" rel="prov:wasDerivedFrom" property="schema:name dc:title">Coin of Julia Domna</a>,
     by
     <a href="http://en.wikipedia.org/wiki/User:Rasiel" property="cc:attributionName" rel="cc:attributionURL dc:creator">Rasiel Suarez</a>

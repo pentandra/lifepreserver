@@ -56,7 +56,7 @@ history][Andraka TEDx].
     <source property="schema:contentUrl" type="video/ogg" src="Cancer_Breakthrough.ogv" />
     <track kind="subtitles" src="Cancer_Breakthrough.en.srt" srclang="en" />
   </video>
-  <figcaption class="small"><span property="schema:description">An interview on Open Access to research journals with Dr. Francis S.  Collins, Director of the National Institutes of Health, and Jack Andraka. Presented by the <a property="cc:attributionName" rel="cc:attributionURL" href="http://www.righttoresearch.org">Right to Research Coalition</a>, with support from <abbr title="Scholarly Publishing and Academic Resources Coalition">SPARC</abbr> and the Society for Science and the Public.</span> Licensed under a <a rel="cc:license" href="http://creativecommons.org/licenses/by/3.0/"><abbr title="Creative Commons Attribution 3.0 Unported">CC-BY</abbr> license</a>. <span class="icon-cc"></span><span class="icon-cc-by"></span></figcaption>
+  <figcaption><span property="schema:description">An interview on Open Access to research journals with Dr. Francis S.  Collins, Director of the National Institutes of Health, and Jack Andraka. Presented by the <a property="cc:attributionName" rel="cc:attributionURL" href="http://www.righttoresearch.org">Right to Research Coalition</a>, with support from <abbr title="Scholarly Publishing and Academic Resources Coalition">SPARC</abbr> and the Society for Science and the Public.</span> Licensed under a <a rel="cc:license" href="http://creativecommons.org/licenses/by/3.0/"><abbr title="Creative Commons Attribution 3.0 Unported">CC-BY</abbr> license</a>. <span class="icon-cc"></span><span class="icon-cc-by"></span></figcaption>
 </figure>
 
 While people around the world have championed him, a few from the scientific
@@ -153,7 +153,7 @@ collective dreams.
     <source property="schema:contentUrl" type="video/webm" src="remy_finds_linguini.webm" />
     <source property="schema:contentUrl" type="video/ogg" src="remy_finds_linguini.ogv" />
   </video>
-  <figcaption class="small" property="schema:description">Let anyone help with research? Sounds like a recipe for disaster! From the film <cite>Ratatouille</cite>. Copyright © Pixar.</figcaption>
+  <figcaption property="schema:description">Let anyone help with research? Sounds like a recipe for disaster! From the film <cite>Ratatouille</cite>. Copyright © Pixar.</figcaption>
 </figure>
 
 Their abilities are put to the test when Anton Ego, the most discriminating

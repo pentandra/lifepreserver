@@ -70,7 +70,7 @@ ideas.
 
 <figure class="img static">
   <img title="Arrow Chairs" src="chairarrival.jpg" />
-  <figcaption class="small"><p>Our chairs have arrived!</p></figcaption>
+  <figcaption><p>Our chairs have arrived!</p></figcaption>
 </figure>
 
 *[NGS]: National Genealogical Society

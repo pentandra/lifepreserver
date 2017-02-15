@@ -84,9 +84,7 @@ like well-led roundtable discussions on a variety of research subjects.
 
 <figure class="img">
   <img class="static" alt="The cozy chairs in our booth" src="booth_chairs.jpg" />
-  <figcaption class="small">
-    Our cozy chairs.
-  </figcaption>
+  <figcaption>Our cozy chairs.</figcaption>
 </figure>
 
 I have seen hangouts, Q&A sessions, chats, webinars, and video conferences

@@ -85,7 +85,7 @@ until new knowledge, in the form of a [conclusion][C], is obtained.
 <figure resource="#simulated-higgs" class="img" typeof="schema:ImageObject prov:Entity">
   <link property="prov:wasDerivedFrom" href="https://cds.cern.ch/record/628469" typeof="prov:Entity" />
   <img property="schema:contentUrl" class="static" alt="CMS: Simulated Higgs to two jets and two electrons" src="higgsboson.jpeg" />
-  <figcaption class="small">
+  <figcaption>
     <b property="dc:title schema:name">Simulated Higgs to two jets and two electrons</b>
     by <a href="http://cern.ch" property="cc:attributionName" rel="cc:attributionURL dc:creator">CERN</a>.
     <span property="dc:description">Here a Higgs boson is produced which decays
@@ -128,17 +128,7 @@ means for genealogy. Bring on the Web!
   <div class="embed-container wideScreen"> 
     <iframe property="schema:contentUrl" src="annotation-architecture.svg" class="simple static"></iframe>
   </div>
-
-  <figcaption class="small" property="schema:caption"><span
-  property="dc:description schema:description"><b property="schema:name
-  dc:title">Web Annotation Architecture</b>, an infographic from the <span
-  property="schema:author dc:creator" resource="http://www.w3.org">W3C</span>
-  about web annotations.</span> <a href="annotation-architecture.svg">Display
-  fullscreen</a> for the best viewing experience. Licensed under a <a
-  property="cc:license"
-  href="http://creativecommons.org/publicdomain/zero/1.0/">CC0 license.</a>
-  <span class="icon-cc"></span><span class="icon-cc-zero"></span></figcaption>
-
+  <figcaption property="schema:caption"><span property="dc:description schema:description"><b property="schema:name dc:title">Web Annotation Architecture</b>, an infographic from the <span property="schema:author dc:creator" resource="http://www.w3.org">W3C</span> about web annotations.</span> <a href="annotation-architecture.svg">Display fullscreen</a> for the best viewing experience. Licensed under a <a property="cc:license" href="http://creativecommons.org/publicdomain/zero/1.0/">CC0 license.</a> <span class="icon-cc"></span><span class="icon-cc-zero"></span></figcaption>
 </figure>
 
 # Notes
