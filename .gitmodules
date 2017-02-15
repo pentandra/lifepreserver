@@ -4,6 +4,6 @@
 [submodule "benefit-reports"]
 	path = items/static/company/benefit-reports
 	url = git@github.com:pentandra/benefit-reports.git
-[submodule "items/static/proposals"]
-	path = items/static/proposals
+[submodule "proposals"]
+	path = items/static/company/proposals
 	url = https://github.com/pentandra/proposals.git
