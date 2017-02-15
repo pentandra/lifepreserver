@@ -2,12 +2,17 @@
 Berjon/M
 CentOS
 DBpedia/MS
+DecisionML/M
+IndieAuth/M
 IndieWeb/M
 Nanoc/M
 ReSpec/M
+RocketHub/M
 RubyGem/S
 Schepers/M
+Scholonto/M
 SmartOS
+Trello/M
 affordance
 buildtime/M
 codebase/SM
@@ -21,3 +26,4 @@ middleware/SM
 namespace/SM
 permalink/GSMD
 polyfill/MS
+vCard/MS

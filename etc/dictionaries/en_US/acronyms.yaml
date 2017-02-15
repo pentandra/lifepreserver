@@ -1,6 +1,7 @@
 ---
 CERN: European Organization for Nuclear Research
 DMI: Dynamic Machine Interface
+DOI: Digital Object Identifier
 FB: Facebook
 FHISO: Family History International Standards Organization
 GEDCOM: Genealogical Data Communication
@@ -19,6 +20,8 @@ RDFa: Resource Description Framework in Attributes
 RFC1738: RFC 1738
 RFC2119: RFC 2119
 RFC3987: RFC 3987
+SciELO: Scientific Electronic Library Online
+TBD: To Be Determined
 URI: Uniform Resource Identifier
 VCS: Version Control System
 W3C: World Wide Web Consortium

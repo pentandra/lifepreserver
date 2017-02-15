@@ -414,7 +414,7 @@ priority: 0.6
             </div>
             <div>Phone: <a property="schema:telephone vcard:hasTelephone" class="tel" typeof="vcard:Work"
                 href="tel:<%= company[:phone].gsub(/[\s\.-]+/, "") %>"><%= company[:phone] %></a></div>
-            <div>Email: <a property="schema:email vcard:hasEmail" href="mailto:<%= company[:email] %>"><%= company[:email] %></a></div>
+            <div>Email: <a class="identifier" property="schema:email vcard:hasEmail" href="mailto:<%= company[:email] %>"><%= company[:email] %></a></div>
           </address>
           <p>
              We support <a href="http://web.archive.org/web/20120615152553/http://www.ccpact.com/">The Company--Customer Pact</a>.
