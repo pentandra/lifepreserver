@@ -92,13 +92,15 @@ designing the workshop logos, and it just worked. But looking at [the map
 above](#fig:journey-of-defining) from more of an _evil_ point of view, our
 journey from Madrid to San Diego could be thought of as a journey of
 _conquest_. Isn't this the same path that [Juan Rodríguez Cabrillo][cabrillo]
-and [others][vizcaino] took as they claimed land for Spain? The difference is
-that we are not <span lang="es">conquistadores</span> and we are not trying to
-create an [<span lang="es">encomienda</span>][encomienda]
-system[^citizen_science] here! In fact what we want is just the opposite. I
-think there is stuff here from history from which we should learn, and not
-repeat, and opportunities exist to try to do things a different way. We have a
-groundbreaking opportunity here, and it is critical that we do it right.
+and [others][vizcaino] took as they claimed land for Spain? Obviously, this is
+not what we have in mind. The difference is that we are not <span
+lang="es">conquistadores</span> and we are not trying to create an [<span
+lang="es">encomienda</span>][encomienda] system[^citizen_science] here! In
+fact, the struggles and inequities of the current system are the very things
+from which we are trying to get away. I think there's a lesson from history
+here from which we should learn---and things we should not repeat.
+Groundbreaking opportunities exist to try to do things a different way. We have
+a chance to do something good here, and it is critical that we do it right.
 
 <span class="newthought">I want to put forward here an alternative
 approach</span> to explaining where I think we are right now by comparing our
@@ -342,6 +344,13 @@ in this I think we can find some clues as to how we move forward. There are
 communities that are ready to work in new ways. We need to find these early
 adopters and experiment with new ways of working together.
 
+The Scholarly Commons is a _culture_ of the same sort as the culture of Open,
+or the spirit of freedom. It is not a software platform any more than GitHub is
+the Open Source Software culture. The Scholarly Commons will need software with
+new types of interactions---those that open up the process of research and
+bring people together in more egalitarian ways. The more aligned the software
+is with this culture, the less people will find fault with it.
+
 ## The necessity of a <i>counter</i>culture
 
 Using the language of Christopher Alexander's book <cite>[Notes on the
@@ -466,6 +475,7 @@ creating a commons for science and scholarship for the good of all mankind.
 [Notes on the Synthesis of Form]: <https://en.wikipedia.org/wiki/Notes_on_the_Synthesis_of_Form> "Some info about 'Notes on the Synthesis of Form' on Wikipedia"
 [patterns]: <http://blogs.agu.org/geospace/2016/06/23/can-commons-design-pattern-lexicon-show-open-science-destination/> "Can a commons design-pattern lexicon show open-science to its destination? by Bruce Caron"
 [Tragedy of the Commons]: <https://en.wikipedia.org/wiki/Tragedy_of_the_commons> "Tragedy of the commons on Wikipedia"
+[open]: <http://cameronneylon.net/blog/not-what-not-who-or-how-but-why-is-open/> "Not what, not who, or how, but Why is Open? by Cameron Neylon"
 
 *[SciELO]: Scientific Electronic Library Online
 *[TL;DR]: Too Long; Didn't Read
@@ -513,10 +523,36 @@ creating a commons for science and scholarship for the good of all mankind.
     > of England.
     {:.bq.grab lang="en-GB"}
 
-    This echoes my own thoughts, that the New World and the Scholarly Commons
-    are less about _land_ per se, but about the _affordance_ of the new culture
-    and sociality of that new land, or that the positioning of that land,
-    provided.
+    In <span class="oldstyle">1776</span>, another philosopher, Adam Smith,
+    wrote in <cite>The Wealth of Nations, Book <span class="roman">IV</span>,
+    Chapter <span class="roman">VII</span>, Part <span
+    class="roman">II</span></cite>:
+
+    > The English puritans, persecuted at home, fled for freedom to America,
+    > and established there the four governments of New England. The English
+    > <span class="sic">catholics</span>, treated with equal injustice,
+    > established that of Maryland; the Quakers, that of Pennsylvania. The
+    > <span class="sic">Portugueze</span> Jews, persecuted by the inquisition,
+    > <span class="sic">stript</span> of their fortunes, and banished to
+    > Brazil, introduced, by their example, some sort of order and industry
+    > among the transported felons and strumpets, by whom that colony was
+    > originally peopled, and taught them the culture of the sugar-cane. Upon
+    > all these different occasions it was, not the wisdom and policy, but the
+    > disorder and injustice of the European governments, which peopled and
+    > cultivated America.
+    {:.bq.grab lang="en-GB"}
+
+    My point here has less to do with America _per se_ and is certainly not
+    meant to disparage or make light of any persons or groups from our
+    collective past, but that we need to be careful to not throw the baby out
+    with the bathwater. Some colonies were created not to establish dominion
+    over other peoples, but for higher, nobler motivations, for example, to
+    escape the injustices or tyrannies of an incumbent system. So from this
+    point of view, the Scholarly Commons is about a [_culture of open_][open],
+    and about the _affordance_ that that new culture and sociality provides.
+    The Scholarly Commons is a new sociality or culture in much the same way
+    that America was separate and distinct from the social and political world
+    of England.
 
 [^commons]:
 
