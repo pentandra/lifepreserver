@@ -2,7 +2,7 @@ usage     'fetch-tag-data'
 aliases   :fetchtags, :ft
 summary   'fetches additional data about semantic tags from the Web'
 
-run do
+run do |_opts, _args, _cmd|
   require 'sparql/client'
   require 'yaml'
   require 'active_support/core_ext/hash/keys'

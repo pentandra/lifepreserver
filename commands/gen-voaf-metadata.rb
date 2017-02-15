@@ -2,7 +2,7 @@ usage     'gen-voaf-metadata'
 aliases   :gvm, :voaf
 summary   'generates curated metadata for voaf vocabularies from the voaf dataset'
 
-run do
+run do |_opts, _args, _cmd|
   require 'rdf'
   require 'rdf/turtle'
   require 'sparql'
