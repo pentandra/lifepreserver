@@ -483,9 +483,9 @@ creating a commons for science and scholarship for the good of all mankind.
     These quotations from the Mayflower Compact and other circumstances
     relating to these early colonists can be found on [the Wikipedia
     page][Mayflower Compact] (with spelling modernized), or in [Bradford's
-    History "Of Plimoth
+    History "Of <span class="sic">Plimoth</span>
     Plantation"](http://archive.org/stream/historyplymouth01socigoog#page/n246/mode/2up),
-    Book <span class="oldstyle">2</span> Anno <span
+    Book <span class="oldstyle">2</span> <span class="sic">Anno</span> <span
     class="oldstyle">1620</span>, written by William Bradford in the years from
     <span class="oldstyle">1630</span> to <span class="oldstyle">1651</span>,
     and printed in entirety for the first time in <span
