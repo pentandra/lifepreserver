@@ -322,8 +322,8 @@ it would disrupt the world and further _so many other important initiatives_.
 For all the good intentions of those of earlier times, they never had the
 technology to pull off something like a global commons of researchers, sharing
 as they go, almost instantaneously, the collective research of the world, ever
-expanding. Thinking more about it, though, isn't this what the Web was
-[originally intended to accomplish?][heading to oai8]
+expanding. Thinking more about it, though, isn't this what [the Web was
+originally intended][heading to oai8] to accomplish?
 
 # How can it be done?
 
@@ -477,7 +477,7 @@ creating a commons for science and scholarship for the good of all mankind.
 [patterns]: <http://blogs.agu.org/geospace/2016/06/23/can-commons-design-pattern-lexicon-show-open-science-destination/> "Can a commons design-pattern lexicon show open-science to its destination? by Bruce Caron"
 [Tragedy of the Commons]: <https://en.wikipedia.org/wiki/Tragedy_of_the_commons> "Tragedy of the commons on Wikipedia"
 [open]: <http://cameronneylon.net/blog/not-what-not-who-or-how-but-why-is-open/> "Not what, not who, or how, but Why is Open? by Cameron Neylon"
-[heading to oai8]: </blog/heading-to-oai8/> "Pentandra Blog → Heading to OAI8"
+[heading to oai8]: </blog/heading-to-oai8/#p[WtoIaw],h[WtoIaw,1]> "Pentandra Blog → Heading to OAI8"
 
 *[SciELO]: Scientific Electronic Library Online
 *[TL;DR]: Too Long; Didn't Read
