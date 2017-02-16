@@ -32,7 +32,7 @@ Last week I had the opportunity to participate in the second workshop of the
 Defining the Scholarly Commons project (I covered the first workshop in <%=
 link_to('an earlier blog posting', '/blog/reimagining-research-communications/',
 title: 'Pentandra Blog → Reimagining Research Communications') %>.
-As you can tell from the squiggly line above, our course has not been linear,
+As you can tell from the squiggly line above, our course has not been straight,
 neither has it been smooth sailing. We have learned a lot, however, and even
 made some progress in the meantime.
 
@@ -273,7 +273,7 @@ situation eerily similar to that earlier time, just on a much bigger scale.
   <figcaption>--- Alexander Hamilton, <cite>The Federalist Papers</cite>, No. <span class="oldstyle">1</span></figcaption>
 </figure>
 
-Now the Scholarly Commons is not a civil body, it's a commons---a middle ground
+Now a scholarly commons is not a civil body, it's a commons---a middle ground
 somewhere between the grassroots level of people and the institutions of
 state.[^commons] A commons has no prescribed structure; it is whatever the
 people decide for it to be. It is a coming together of people for some greater
@@ -446,7 +446,7 @@ As for the direction to go next with the principles, I think we need to create
 ways to preserve and continue these conversations. We need to find ways to
 broaden the conversations, and to invite more diverse groups to take part in
 them. Then we need to take what we discover and put it into practice, thereby
-creating a commons for science and scholarship for the good of all mankind.
+creating scholarly and scientific commons for the good of all mankind.
 
 # Notes
 {:.no_toc}
