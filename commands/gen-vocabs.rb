@@ -20,7 +20,7 @@ class GenVocabs < ::Nanoc::CLI::CommandRunner
 
     context = Nanoc::Int::Context.new(config: Nanoc::ConfigView.new(site.config, nil))
 
-    vocabs = YAML.load(ERB.new(template).result(context.get_binding)).deep_symbolize_keys
+    vocabs = YAML.safe_load(ERB.new(template).result(context.get_binding)).deep_symbolize_keys
 
     if options[:list]
       list_vocabs(vocabs)

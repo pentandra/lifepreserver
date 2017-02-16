@@ -53,7 +53,7 @@ Class.new(Nanoc::DataSource) do
                 { entries: lines }
               when 'acronym-dictionary'
                 raw_content = File.read(dic_filename)
-                entries_hash = YAML.load(raw_content)
+                entries_hash = YAML.safe_load(raw_content)
                 { acronym_mappings: entries_hash, entries: entries_hash.keys }
               else
                 {}

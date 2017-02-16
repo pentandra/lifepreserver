@@ -7,8 +7,7 @@ require 'nanoc/spec'
 
 module Nanoc
   module CLI
-    def self.setup_cleaning_streams
-    end
+    def self.setup_cleaning_streams; end
   end
 end
 
