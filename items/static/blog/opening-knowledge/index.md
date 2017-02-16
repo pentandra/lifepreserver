@@ -196,4 +196,3 @@ our minds to the world.
 *[LHC]: Large Hadron Collider
 *[ALICE]: A Large Ion Collider Experiment
 *[PhD]: Doctor of Philosophy
-[^lhc_computing_grid]: https://en.wikipedia.org/wiki/Worldwide_LHC_Computing_Grid
