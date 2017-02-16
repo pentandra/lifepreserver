@@ -434,11 +434,8 @@ is, here's what I would say:
 
 {:.big}
 
-The Scholarly Commons is _a commitment_ to come together and create a commons
-for the good of anyone involved in scholarly or scientific knowledge. The
-Scholarly Commons is also _an opportunity_ to make the world a better place by
-drastically improving our practices and widening our networks for the
-production and flow of knowledge.
+<dfn id="def:the-scholarly-commons">The Scholarly Commons</dfn> is the culture
+of commoning together on scholarly and scientific knowledge.
 
 {:.conclusion}
 
