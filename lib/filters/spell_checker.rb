@@ -6,7 +6,7 @@ class SpellChecker < Nanoc::Filter
 
   requires 'set', 'nokogiri'
 
-  IGNORE_CLASSES ||= Set.new(%w(domainname filename handle identifier prefix projectname sic uri))
+  IGNORE_CLASSES ||= Set.new(%w(domainname filename foreign handle identifier prefix projectname sic uri))
 
   def run(content, params = {})
     case params[:type]
