@@ -1,9 +1,12 @@
 class SpellChecker < Nanoc::Filter
+  require_relative '../helpers/dictionaries'
+  include LifePreserver::Dictionaries
+
   identifier :spellchecker
 
-  requires 'set', 'nokogiri', "./#{__dir__}/spell_checker/dictionary"
+  requires 'set', 'nokogiri'
 
-  IGNORE_CLASSES ||= Set.new(%w(filename handle identifier glob uri productname))
+  IGNORE_CLASSES ||= Set.new(%w(domainname filename handle identifier prefix projectname sic uri))
 
   def run(content, params = {})
     case params[:type]
@@ -14,10 +17,6 @@ class SpellChecker < Nanoc::Filter
         'process. Pass a :type to the filter call (:html for HTML or ' \
         ':xhtml for XHTML).'
     end
-  end
-
-  def find_dictionary_items_for(lang)
-    @items.find_all("/lifepreserver/dictionaries/#{lang}/*")
   end
 
   protected
@@ -46,26 +45,21 @@ class SpellChecker < Nanoc::Filter
     # Ensure that all prefixes are strings
     namespaces = namespaces.reduce({}) { |new, (prefix, uri)| new.merge(prefix.to_s => uri) }
 
-    options = {
-      nanoc_spellchecker_filter: self,
-      dictionaries_dir: @config[:dictionaries_dir],
-    }
-
     doc = content =~ /<html[\s>]/ ? klass.parse(content) : klass.fragment(content)
     doc.traverse do |node|
       parent = node.parent
       if node.text? && parent.element?
         next if ignore_classes.include?(parent['class'])
 
-        node_lang = find_node_lang(node) || Dictionary::DEFAULT_LANG
-        dictionary = Dictionary.instance(node_lang, options)
-        depend_on(dictionary.dictionary_items)
+        node_lang = find_node_lang(node)
+        dic = dictionary(node_lang)
+        depend_on_attributes(dic.dependencies)
 
         original_text = node.text
         checked_text = original_text.gsub(/([[:word:]]+(?:['’][[:word:]]+)?)/) do |word|
-          if dictionary.valid?(word) || (node.previous && dictionary.valid?(node.previous.text + word))
+          if dic.valid?(word) || (node.previous && dic.valid?(node.previous.text + word))
             word
-          else 
+          else
             "<mark class=\"misspelled\">#{word}</mark>"
           end
         end
@@ -79,5 +73,12 @@ class SpellChecker < Nanoc::Filter
   def find_node_lang(node)
     # `node.lang` only works for `xml:lang` attributes in Nokogiri
     node.lang || node.xpath('(ancestor::*[@lang][1]/@lang)[last()]').map(&:value).first
+  end
+
+  def depend_on_attributes(items)
+    items = items.map { |i| i.is_a?(Nanoc::ItemWithRepsView) ? i.unwrap : i }
+
+    dependency_tracker = @assigns[:item]._context.dependency_tracker
+    items.each { |item| dependency_tracker.bounce(item, attributes: true) }
   end
 end

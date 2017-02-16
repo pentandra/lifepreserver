@@ -1,4 +1,5 @@
 require 'ffi/hunspell'
+require 'locale'
 
 Class.new(Nanoc::DataSource) do
   identifier :dictionaries
@@ -9,6 +10,10 @@ Class.new(Nanoc::DataSource) do
         Dir["#{d}/*/"]
       end
     end
+
+    Locale.default = @config.fetch(:default_lang, 'en_US')
+    FFI::Hunspell.lang = Locale.default.to_simple.to_s
+    Locale.set_app_language_tags(*@config.fetch(:supported_languages, Locale.default))
   end
 
   def items
@@ -16,8 +21,6 @@ Class.new(Nanoc::DataSource) do
 
     FFI::Hunspell.directories.each do |dir|
       Dir["#{dir}/*.{dic,yaml}"].each do |dic_file|
-        next if File.symlink?(dic_file)
-
         items << dic_to_item(dic_file)
 
         # TODO: add affix item for base dictionaries?
@@ -60,6 +63,7 @@ Class.new(Nanoc::DataSource) do
       name: File.basename(dic_filename, '.*'),
       kind: kind,
       mtime: File.mtime(dic_filename),
+      is_hidden: true,
     }.merge(entries)
 
     filename = File.expand_path(dic_filename)

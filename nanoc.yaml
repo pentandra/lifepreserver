@@ -39,7 +39,9 @@ data_sources:
 
   - type : dictionaries
     items_root: *meta_items_root
-    dictionaries_dir: &dictionaries_dir 'etc/dictionaries'
+    directories:
+      - 'etc/dictionaries'
+    supported_languages: [ 'en_US', 'en_GB', 'es_ES', 'fr_FR', 'nl_NL' ]
 
   - type: tags
     items_root: *meta_items_root
@@ -84,8 +86,6 @@ environments:
       logo_uri: &logo_uri "https://pentandra.com/images/pentandra-logo.png"
       photo_uri: *logo_uri
       kind: org
-
-    dictionaries_dir: *dictionaries_dir
 
     erb:
       trim_mode: '>'
