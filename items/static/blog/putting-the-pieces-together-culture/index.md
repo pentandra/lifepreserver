@@ -544,17 +544,17 @@ creating a commons for science and scholarship for the good of all mankind.
     > cultivated America.
     {:.bq.grab lang="en-GB"}
 
-    My point here has less to do with America _per se_ and is certainly not
-    meant to disparage or make light of any persons or groups from our
-    collective past, but that we need to be careful to not throw the baby out
-    with the bathwater. Some colonies were created not to establish dominion
-    over other peoples, but for higher, nobler motivations, for example, to
-    escape the injustices or tyrannies of an incumbent system. So from this
-    point of view, the Scholarly Commons is about a [_culture of open_][open],
-    and about the _affordance_ that that new culture and sociality provides.
-    The Scholarly Commons is a new sociality or culture in much the same way
-    that America was separate and distinct from the social and political world
-    of England.
+    My point here does not have to do with North versus South or America versus
+    Europe _per se_, and is certainly not meant to disparage or make light of
+    any persons or groups from our collective past, so please do not throw the
+    baby out with the bathwater! Some colonies were created not to establish
+    dominion over other peoples, but for higher, nobler motivations, for
+    example, to escape the injustices or tyrannies of an incumbent system. So
+    from this point of view, the Scholarly Commons is about a [_culture of
+    open_][open], and about the _affordance_ that that new culture and
+    sociality provides. The Scholarly Commons is a new sociality or culture in
+    much the same way that America was separate and distinct from the social
+    and political world of England.
 
 [^commons]:
 
