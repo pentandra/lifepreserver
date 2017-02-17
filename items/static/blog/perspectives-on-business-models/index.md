@@ -27,10 +27,11 @@ and archaic business models like these stifle collaboration and admission into
 the research community. These business models will hopefully become
 increasingly unsustainable.
 
-It's not that it doesn't cost businesses to host and disseminate
-these images---it's just that copying bits doesn't really provide lasting value
-to the customer.[^bits] At least not anymore. In this day and age it's
-commoditized and expected to be free. In the 90's, [when ancestry.com was
+It's not that it doesn't cost businesses to host and disseminate these
+images---it's just that copying bits doesn't really provide lasting value to
+the customer.[^bits] At least not anymore. In this day and age it's
+commoditized and expected to be free. In the <span
+class="oldstyle">90</span>'s, [when ancestry.com was
 founded](http://corporate.ancestry.com/about-ancestry/company-info/company-history/),
 the Internet was a great new thing, and companies could get away with charging
 people for access to things. Copies of software were sold, even though the

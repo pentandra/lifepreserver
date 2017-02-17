@@ -1194,19 +1194,7 @@ research systems.
       <video class="simple" width="100%" height="100%" style="width: 100%; height: 100%;" id="player" preload="none" controls="controls">
         <source type="video/youtube" src="http://www.youtube.com/watch?v=v31zpZ4woOI" />
       </video>
-      <figcaption>
-        <p> 
-
-          The London Bureau of
-          <a href="http://english.ruvr.ru/">The Voice of Russia</a>
-          interviews several open access advocates, including Ross Mounce, from the 
-          <a href="http://okfn.org">Open Knowledge Foundation</a>, Rita Gardner, the
-          director of the Royal Geographic Society, Björn Brembs, Professor at the
-          Department of Genetics at the University of Leipzig, and Timothy Gowers,
-          Math Professor at Cambridge University.
-
-        </p>
-      </figcaption>
+      <figcaption><p>The London Bureau of <a href="http://english.ruvr.ru/">The Voice of Russia</a> interviews several open access advocates, including Ross Mounce, from the <a href="http://okfn.org">Open Knowledge Foundation</a>, Rita Gardner, the director of the Royal Geographic Society, <span lang="nl">Björn Brembs</span>, Professor at the Department of Genetics at the University of Leipzig, and Timothy Gowers, Math Professor at Cambridge University.</p></figcaption>
     </figure>
 
     Peter Suber is considered by many to be the expert on open access. He

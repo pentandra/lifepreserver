@@ -122,7 +122,8 @@ need more researchers like that.
 # Notes
 
 [^1]: Abigail Pesta, "On Pins and Needles: Stylist Turns Ancient Hairdo Debate
-    on Its Head," <i>The Wall Street Journal</i>, February 7, 2013, A1 and A12.
+    on Its Head," <cite>The Wall Street Journal</cite>, February 7, 2013, <span
+    class="identifier">A1</span> and <span class="identifier">A12</span>.
 
 [^ja]: Ms. Stephens' journal article, _Ancient Roman hairdressing: on
     (hair)pins and needles_, is
