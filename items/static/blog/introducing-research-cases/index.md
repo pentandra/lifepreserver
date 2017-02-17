@@ -226,7 +226,7 @@ be part of the future of research:
   reasonings should be left to the judgement of the <span
   class="sic">Publick</span>, to whom indeed it properly belongs.</q>'[^jurin]
 
-We invite anyone interested [to participate](http://researchcases.org "Help out with Research Cases").
+We invite anyone interested [to participate](https://researchcases.org "Help out with Research Cases").
 {: .conclusion }
 
 # Notes
