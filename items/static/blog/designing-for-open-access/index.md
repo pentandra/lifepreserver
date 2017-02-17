@@ -531,7 +531,7 @@ mind as the research was designed in the first place.
 The writing process is wonderful. Writing forces you to think, to formulate
 plans and to analyze results. There is a lot of value in it! But there is no
 reason the publication process should cost money in our time. There is no
-scarcity of resources whos costs are incrementally incurred. It costs no money
+scarcity of resources whose costs are incrementally incurred. It costs no money
 to produce a PDF or to [copy it]. There is no value for anyone in it!  People
 don't like paying for things that have no value. Peer review is donated. There
 is value in making research easier to do---things that could save time during
@@ -660,7 +660,7 @@ collaboration and peer review during earlier phases of the research process.
 As research progresses, the research outputs are presented in an incremental,
 natural way.
 
-As is practiced in traditional research, the pre-publication peer review makes
+As is practiced in traditional research, the prepublication peer review makes
 more sense in a print paradigm, where a paper is printed once and can't be
 changed after publication. While we are familiar with this paradigm, and much
 of academia uses it, paper publications are just not a very good fit for the
@@ -677,7 +677,7 @@ research needs to be openly accessible as well.
 
 ### The Work of Many for the Many
 
-Async research.
+Asynchronous research.
 
 We don't just need an acceleration of science---we need a completely different
 paradigm.
@@ -1042,7 +1042,7 @@ research systems.
 # Additional Resources
 {:.no_toc}
 
-* [The Coming of the Book: The Impact of Printing 1450--1800][febvre], by Lucien Febvre and Henri-Jean Martin. 
+* [The Coming of the Book: The Impact of Printing 1450--1800][febvre], by <span lang="fr">Lucien Febvre</span> and <span lang="fr">Henri-Jean Martin</span>. 
 * [The Printing Press as an Agent of Change][press_agent], by Elizabeth Eisenstein. 
 * [Hypertext as an agent of change][hypertext], by Mandy Brown.
 * [Manuscripts, Books, and Maps: The Printing Press and a Changing World][booktext], by Bruce Jones.
@@ -1278,8 +1278,8 @@ research systems.
     approach.
 
 [^Vespucci]: To be completely fair, Columbus only discovered the [West Indies].
-    It was [Amerigo Vespucci]{:lang="es"} who discovered the continents which we
-    know today as North and South America.
+    It was [Amerigo Vespucci] who discovered the continents which we know today
+    as North and South America.
 
 [^knowledge_creation]: For a more formal definition of knowledge creation, and
     especially for the process that new knowledge takes as it becomes more
@@ -1326,7 +1326,7 @@ research systems.
     music and violin practice, the same applies to any skill that you are
     pursuing.
 
-[^colquhoun]: <http://www.michaeleisen.org/blog/?p=694#comment-359363>
+[^colquhoun]: <http://www.michaeleisen.org/blog/?p=694#comment-359363>{:.uri}
 
 *[PDF]: Portable Document Format
 *[FRPAA]: Federal Research Public Access Act

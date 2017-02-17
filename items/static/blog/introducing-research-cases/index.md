@@ -223,8 +223,8 @@ be part of the future of research:
   exist as a feeling of camaraderie amongst fellow discoverers.
 * Feedback and peer-review need to be introduced much earlier and continue
   throughout the research process. As James Jurin said, '<q lang="en-GB">All
-  reasonings should be left to the judgement of the Publick, to whom indeed it
-  properly belongs.</q>'[^jurin]
+  reasonings should be left to the judgement of the <span
+  class="sic">Publick</span>, to whom indeed it properly belongs.</q>'[^jurin]
 
 We invite anyone interested [to participate](http://researchcases.org "Help out with Research Cases").
 {: .conclusion }
