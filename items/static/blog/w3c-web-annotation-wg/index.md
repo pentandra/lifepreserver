@@ -29,11 +29,9 @@ kind of unique in the standards world (yes, even at the W3C), but I think
 everyone just realized the importance of this work, and that collaboration was
 essential for success.  I have learned a lot watching this process, and have
 been impressed by everyone in the [Open Annotation Collaboration][oac],
-especially Rob Sanderson, Paolo Ciccarese, and <span
-lang="nl">Herbert Van de Sompel</span> for their vision and inclusive approach.
-Thanks to [Hypothes.is][h] for sponsoring the W3C workshop that helped to make
-all of this happen.
-
+especially Rob Sanderson, Paolo Ciccarese, and Herbert Van de Sompel for their
+vision and inclusive approach. Thanks to [Hypothes.is][h] for sponsoring the
+W3C workshop that helped to make all of this happen.
 
 Since the [creation of the World Wide Web][oai8], not all has been
 [peachy-keen][pk]. The original vision of the Web, according to Tim
@@ -159,6 +157,7 @@ means for genealogy. Bring on the Web!
 [iwc]: http://indiewebcamp.com/
 [corporatism]: http://www.economicpolicyjournal.com/2009/11/explaining-difference-between.html "Capitalism vs Corporatism"
 [h]: https://hypothes.is/
+{:.domainname}
 
 *[W3C]: World Wide Web Consortium
 *[RDF]: Resource Description Framework

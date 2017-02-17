@@ -150,7 +150,7 @@ beginnings of the World Wide Web. In the early <span
 class="oldstyle">90</span>'s, the Web was the domain of technical futurists.
 Now the Web is cool, and everyone seems to be on the Web in some form or
 fashion. Anyone can become a web developer, blogger, or contribute something in
-some way, without anyone else's permission. Anyone—a curious student to a
+some way, without anyone else for permission. Anyone—a curious student to a
 professional scholar or a seasoned entrepreneur to an aspiring researcher in a
 third-world country—should be able to share their journey of discovery in a
 simple, open way. This mechanism should be simple enough to track elementary

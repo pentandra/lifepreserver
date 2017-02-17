@@ -119,15 +119,16 @@ profits to charity and purchases brownies from a bakery that hires people from
 prison.  Newman's Own Inc. contributes all profits to charity. How can we be
 more like them?
 
-In a way, it's funny to think about this right now. We are still pre-revenue.
-Yet, I think _now_ is the time to make these decisions. Funding choices made
-early in a company's existence can limit options later on. In general, tech
-startups are not known for their philanthropy and humanitarian generosities.
-In too many instances, they are characterized more by a high-velocity scramble
-to reach the next round of funding, at the same time giving little thought to
-what it actually takes to build a self-sufficient, lasting enterprise. Burnout
-hits too soon for too many. Much of this problem stems from the dog-eat-dog
-world of venture capital investing.[^shareholders] Does it have to be this way?
+In a way, it's funny to think about this right now. We are still <span
+class="sic">pre-revenue</span>. Yet, I think _now_ is the time to make these
+decisions. Funding choices made early in a company's existence can limit
+options later on. In general, tech startups are not known for their
+philanthropy and humanitarian generosities. In too many instances, they are
+characterized more by a high-velocity scramble to reach the next round of
+funding, at the same time giving little thought to what it actually takes to
+build a self-sufficient, lasting enterprise. Burnout hits too soon for too
+many. Much of this problem stems from the dog-eat-dog world of venture capital
+investing.[^shareholders] Does it have to be this way?
 
 # Social What?
 
@@ -163,17 +164,18 @@ to take.
 
 We are not alone in this---other companies are seeing the benefit of
 structuring this way.
-[Google.org](http://news.blogs.nytimes.com/2006/09/14/philanthropy-googles-way-not-the-usual/),
+[Google.org](http://news.blogs.nytimes.com/2006/09/14/philanthropy-googles-way-not-the-usual/){:.domainname},
 was structured as a for-profit charity. It was an experiment by Google to
 change the way philanthropies are administered. While some problems arose in
-Google.org's implementation, their structure is not limited in the ways that
-traditional non-profit organizations are limited. For example, it can create or
-invest in businesses, lobby Congress, and seek funding from venture
-capitalists. It also pays income taxes.
+<span class="domainname">Google.org</span>'s implementation, their structure is
+not limited in the ways that traditional non-profit organizations are limited.
+For example, it can create or invest in businesses, lobby Congress, and seek
+funding from venture capitalists. It also pays income taxes.
 
-We differ the most from Google.org in that we need to make a profit to survive
-and to promote our mission, and maybe this is where Google.org went wrong. It
-acted like a non-profit when [it was really a for-profit
+We differ the most from <span class="domainname">Google.org</span> in that we
+need to make a profit to survive and to promote our mission, and maybe this is
+where <span class="domainname">Google.org</span> went wrong. It acted like a
+non-profit when [it was really a for-profit
 organization](http://www.nytimes.com/2011/01/30/business/30charity.html?pagewanted=all).
 We want to keep our options open, and have the best parts of both worlds. Yet
 when times get tight, how can we maintain this status and not fall into the
@@ -182,8 +184,7 @@ greedy trap of commercialism?
 ![Be the change](bthechangebadge.jpg){: .static }
 {: .aside .img }
 
-A non-profit by the name of [B
-Lab](http://www.bcorporation.net/what-are-b-corps/the-non-profit-behind-b-corps)
+A non-profit by the name of [B Lab](http://www.bcorporation.net/what-are-b-corps/the-non-profit-behind-b-corps)
 has created a certification (and an actual business entity by legislation in
 some states) called a <abbr>B Corporation</abbr>, or benefit corporation.  They
 say, "By voluntarily meeting higher standards of transparency, accountability,
@@ -198,7 +199,6 @@ stay tuned!
 You may argue, "But is research good for society?" If you're reading this post,
 I probably don't have to convince you of that.[^goodforsociety]
 {: .conclusion }
-
 
 [^goodforsociety]: It is thanks to research that the Internet and this post
     have been brought to you today. A better question might be, "Is this _post_

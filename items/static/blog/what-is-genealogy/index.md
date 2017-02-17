@@ -124,7 +124,7 @@ field. I mean who doesn't care about the past and how their ancestors were
 affected by it or how their ancestors affected the past? Our approach is not so
 much about family trees (there are plenty of companies that do that), but it
 could be called micro-history or generational history research (for more info
-about that see [Geungle](/solutions/#geungle)).
+about that see [Geungle](/solutions/geungle/)).
 
 # What's needed?
 
@@ -184,12 +184,13 @@ After all of that, could we not still show relationships using a pedigree
 chart? Yes! But we _cannot_ begin and end there. We need to do (and publish)
 more.
 
-[^life]: 
-    We've tried telling people that were writing software for [generational
-    history](/blog/thoughts-about-rootstech-2012#what-is-a-user) or
-    [microhistory](http://en.wikipedia.org/wiki/Microhistory), but we've gotten
-    a lot of blank looks, even from historians! When we say we're writing
-    software for genealogy, people are _way_ more understanding.
+[^motivations]:
+
+    A lot of pressure is on software developers to produce software like this.
+    Since it does not require much training or know-how to enter names into a
+    record manager, such software potentially has a much bigger market. This
+    type of thinking is short-sighted, however, and has perpetuated many of the
+    problems that we see in the genealogy community today.
 
 [^caveat]: 
     It is important to note that there are many knowledgeable genealogists that
@@ -198,22 +199,6 @@ more.
     limitations, for part of their research output, but they are generally not
     used during the research process.
 
-[^analysis-trees]:
-    Actually this is not entirely true. Trees and graphs are used in
-    genealogical research, not as a publication format, but as a tool for
-    analysis. They are great for trying to make sense out of the relationships
-    in a family or community while working on a research question.
-
-[^ee]:
-    Elizabeth Shown Mills has more to say about this topic on her blog,
-    [_QuickLesson 18: Genealogy? In the Academic World? Seriously?_](https://www.evidenceexplained.com/content/quicklesson-18-genealogy-academic-world-seriously) (2014),
-    and in her papers, [_Bridging the Historic Divide: Family History and 'Academic'    History_](http://www.historicpathways.com/download/bridghisdivideivide.pdf) (2007)
-    and [_Genealogy in the Information Age: History's New Frontier?_](http://www.historicpathways.com/download/genininfoage.pdf) (2003).
-
-[^motivations]:
-
-    A lot of pressure is on software developers to produce software like this.
-    Since it does not require much training or know-how to enter names into a
-    record manager, such software potentially has a much bigger market. This
-    type of thinking is short-sighted, however, and has perpetuated many of the
-    problems that we see in the genealogy community today.
+[NGSQ]: http://www.ngsgenealogy.org/cs/ngsq
+[TG]: http://www.fasg.org/TheGenealogist.html
+[gen_hist]: /blog/thoughts-about-rootstech-2012/#def:generational-historians

@@ -58,7 +58,7 @@ noticeable absence of a business model. It is as if the founders couldn't
 figure out how to make money with their idea, so the goal is to amass users and
 then sell the company to a bigger company that can afford the windfall.
 
-[^journal-publishers]: http://southernlibrarianship.icaap.org/content/v09n03/mcguigan_g01.html
+[^journal-publishers]: <span class="uri">http://southernlibrarianship.icaap.org/content/v09n03/mcguigan_g01.html</span>
 
 [^bits]: Kevin Kelly has written some interesting essays about this, including
     [Better Than Free](http://kk.org/thetechnium/2008/01/better-than-fre/) and

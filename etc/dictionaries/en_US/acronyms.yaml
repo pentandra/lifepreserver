@@ -1,10 +1,15 @@
 ---
+CC0: Creative Commons Zero (Public Domain Dedication)
 CERN: European Organization for Nuclear Research
+CSS3: Cascading Style Sheets Level 3
+CSS: Cascading Style Sheets
 DMI: Dynamic Machine Interface
 DOI: Digital Object Identifier
 FB: Facebook
 FHISO: Family History International Standards Organization
+FRPAA: Federal Research Public Access Act
 GEDCOM: Genealogical Data Communication
+GNN: Global Network Navigator
 HTML5: HyperText Markup Language (5th major revision)
 HTML: HyperText Markup Language
 IRI: Internationalized Resource Identifier
@@ -12,6 +17,7 @@ JSON: JavaScript Object Notation
 LD: Linked Data
 LHC: Large Hadron Collider
 NGS: National Genealogical Society
+NHMRC: National Health and Medical Research Council (Australia)
 OAI8: CERN Workshop on Innovations in Scholarly Communication 8
 OAI: Open Archives Initiative
 OWL2: Web Ontology Language 2
@@ -21,8 +27,11 @@ RDFa: Resource Description Framework in Attributes
 RFC1738: RFC 1738
 RFC2119: RFC 2119
 RFC3987: RFC 3987
+ROSC: Research Object for Scholarly Communication
+SPARC: Scholarly Publishing and Academic Resources Coalition
 SciELO: Scientific Electronic Library Online
 TBD: To Be Determined
+UIDAN: Utah Individual Development Account Network
 URI: Uniform Resource Identifier
 VCS: Version Control System
 W3C: World Wide Web Consortium

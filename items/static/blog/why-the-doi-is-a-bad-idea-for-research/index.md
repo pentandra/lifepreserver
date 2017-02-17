@@ -13,7 +13,7 @@ Digital Object Identifiers
 
 It is important to not lose research.
 
-Centralized input system. Explicit barrier to entry. Rediculous. No company, no
+Centralized input system. Explicit barrier to entry. Ridiculous. No company, no
 matter how well positioned, is eternal.
 
 A better way. Distributed web architecture. Flexibility. Research Engines.

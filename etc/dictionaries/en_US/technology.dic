@@ -26,4 +26,5 @@ middleware/SM
 namespace/SM
 permalink/GSMD
 polyfill/MS
+realtime
 vCard/MS

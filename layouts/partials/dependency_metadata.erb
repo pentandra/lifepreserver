@@ -8,7 +8,7 @@
           <span class="projectname" property="doap:name"><%= h dependency[:name] %></span>
         <% end %>
         [<%= h dependency[:version] %>]</span>:
-      <span property="doap:shortdesc"><%= h dependency[:summary] %></span>
+      <span class="foreign" property="doap:shortdesc"><%= h dependency[:summary] %></span>
     </li>
   <% end %>
 </ul>

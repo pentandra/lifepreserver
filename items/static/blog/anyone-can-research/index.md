@@ -136,10 +136,10 @@ you want to know.
 I'm reminded of the [Pixar] movie <cite><a
 href="http://www.imdb.com/title/tt0382932/" title="Ratatouille on
 IMDb">Ratatouille</a></cite>. As you may know, the whole premise of the movie
-is Chef Gusteau's belief that *anyone can cook*. A talented rat named Remy is
-convinced that even he can be a great chef, so he finds a willing human to
-partner with---a garbage boy named Linguini---in becoming the cook of their
-collective dreams.
+is <span lang="fr">Chef Gusteau</span>'s belief that *anyone can cook*. A
+talented rat named Remy is convinced that even he can be a great chef, so he
+finds a willing human to partner with---a garbage boy named Linguini---in
+becoming the cook of their collective dreams.
 
 <figure id="fig:remy_finds_linguini" class="section" resource="#remy_finds_linguini" typeof="schema:VideoObject">
   <meta property="schema:bitrate" content="512k" />
@@ -163,7 +163,7 @@ find out the chef's true identity. The following is a quotation from his
 review:
 
 <figure id="fig:ego" class="bq grab">
-  <blockquote><p>In the past, I have made no secret of my disdain for Chef Gusteau's famous motto, 'Anyone can cook.' But I realize, only now do I truly understand what he meant. Not everyone can become a great artist; but a great artist can come from <em>anywhere</em>.</p></blockquote>
+<blockquote><p>In the past, I have made no secret of my disdain for <span lang="fr">Chef Gusteau</span>'s famous motto, 'Anyone can cook.' But I realize, only now do I truly understand what he meant. Not everyone can become a great artist; but a great artist can come from <em>anywhere</em>.</p></blockquote>
   <figcaption>--- Anton Ego, restaurant critic from <cite><a href="https://en.wikipedia.org/wiki/Ratatouille_(film)">Ratatouille</a></cite></figcaption>
 </figure>
 

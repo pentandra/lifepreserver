@@ -30,7 +30,7 @@ Quoting from their charter:
 > assets, including data used and generated in an investigation, methods used
 > for producing the data, as well as people and organisations involved in the
 > study, are what we call **Research Objects**.
-{: .bq .grab }
+{: .bq .grab lang="en-GB"}
 
 I am curious to explore the relationship between _research objects_ and what we
 are working on with [_research cases_](/research/process/#sec:research-case).
