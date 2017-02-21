@@ -50,13 +50,13 @@ $ bundle exec nanoc [compile] [--verbose]
 
 ```bash
 # either
-$ nanoc view   # if you are only dealing with statically generated pages
+$ nanoc static-view # if you are only dealing with statically generated pages
 # or
-$ nanoc server # if you are dealing with both the static and dynamic aspects of the site
+$ nanoc server      # if you are dealing with both the static and dynamic aspects of the site
 ```
 
 And view the page in your browser at [port 3000](http://localhost:3000/) for
-`nanoc view` or [port 4125](https://localhost:4125/) for `nanoc server`.
+`nanoc static-view` or [port 4125](https://localhost:4125/) for `nanoc server`.
 
 ## Contributing
 
