@@ -12,10 +12,11 @@ The following external dependencies or system packages need to be installed and
 in scope before compiling:
 
 * Ruby (with [bundler], i.e. `gem install bundler`)
-* [pandoc] and [ConTeXt] for PDF generation of reports
+* [pandoc] for markdown processing
+* [ConTeXt] for PDF generation of reports
 * [hunspell] _(>= 1.3.4)_ for spell-checking
 * [git] for version tagging and history management
-* A JavaScript runtime, such as [node] (or any runtime that [ExecJS] supports)
+* A JavaScript runtime, such as [node] (or any runtime that [ExecJS] supports),
   for [UglifyJS] and [bower]. _(note: currently you need to install `bower`
     manually, e.g. `npm install bower -g`)_
 
