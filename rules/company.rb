@@ -23,7 +23,7 @@ compile %r{/static/company/benefit-reports/(\d{4})/index\.md}, rep: :pdf_letter 
     :chapters,
   ]
   filter :absolutify_paths, type: :context
-  layout '/benefit-reports/report.*'
+  layout '/benefit_reports/report.*'
   snapshot :context, path: item.identifier.without_ext + '.tex' unless @config[:production]
   filter :context2pdf, @config.fetch(:context2pdf, {}).merge(mode: @item.key?(:wip) ? 'draft' : 'publish')
   write File.dirname(item.identifier.to_s) + "/UT_Pentandra_report_#{fiscal_year}.pdf"
@@ -36,7 +36,7 @@ compile %r{/static/company/benefit-reports/(\d{4})/index\.md}, rep: :pdf_A4 do |
     :chapters
   ]
   filter :absolutify_paths, type: :context
-  layout '/benefit-reports/report.*'
+  layout '/benefit_reports/report.*'
   snapshot :context, path: item.identifier.without_ext + '_a4.tex' unless @config[:production]
   filter :context2pdf, @config.fetch(:context2pdf, {}).merge(mode: [ @item[:wip] ? 'draft' : 'publish', 'european' ] )
   write File.dirname(item.identifier.to_s) + "/UT_Pentandra_report_#{fiscal_year}_a4.pdf"
