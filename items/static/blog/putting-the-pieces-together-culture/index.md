@@ -1,5 +1,5 @@
 ---
-title: Putting the Pieces Together
+title: "Putting the Pieces Together: Culture"
 description: >
   A tense convolution of thoughts from many perspectives, and a great choice.
 kind: article
@@ -25,14 +25,14 @@ has_media: true
   <meta property="schema:height" content="624 px" datatype="schema:Distance" />
   <meta property="schema:contentSize" content="63KB" />
   <img property="schema:contentUrl" class="static" alt="A map of the world that depicts a journey by sea, starting near Madrid, Spain, then heading southward through the Atlantic Ocean to the Southern Ocean, around Cape Horn, and up the coast of South America, arriving finally at San Diego, California, with a few squiggly detours along the way" src="journey_of_defining_the_scholarly_commons.jpg" />
-  <figcaption property="schema:caption" class="small">A map of our journey so far of defining the Scholarly Commons, from Madrid, Spain, to San Diego, California. <span property="schema:hasPart" typeof="schema:ImageObject"><a property="schema:url" href="watercolor_HdLwglsB1l0.png">Map tiles</a> by <a property="cc:attributionName" rel="cc:attributionURL" href="http://stamen.com/">Stamen Design</a>, licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/3.0/"><abbr title="Creative Commons Attribution 3.0 Unported">CC-BY</abbr></a> license. <span class="icon-cc"></span><span class="icon-cc-by"></span></span></figcaption>
+  <figcaption property="schema:caption">A map of our journey so far of defining the Scholarly Commons, from Madrid, Spain, to San Diego, California. <span property="schema:hasPart" typeof="schema:ImageObject"><a property="schema:url" href="watercolor_HdLwglsB1l0.png">Map tiles</a> by <a property="cc:attributionName" rel="cc:attributionURL" href="http://stamen.com/">Stamen Design</a>, licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/3.0/"><abbr title="Creative Commons Attribution 3.0 Unported">CC-BY</abbr></a> license. <span class="icon-cc"></span><span class="icon-cc-by"></span></span></figcaption>
 </figure>
 
 Last week I had the opportunity to participate in the second workshop of the
 Defining the Scholarly Commons project (I covered the first workshop in <%=
 link_to('an earlier blog posting', '/blog/reimagining-research-communications/',
 title: 'Pentandra Blog → Reimagining Research Communications') %>.
-As you can tell from the squiggly line above, our course has not been linear,
+As you can tell from the squiggly line above, our course has not been straight,
 neither has it been smooth sailing. We have learned a lot, however, and even
 made some progress in the meantime.
 
@@ -48,16 +48,17 @@ fifteen-story building, with many windows, plenty of fresh air, and a nice
 balcony upon which to exercise [the law of two feet].
 
 During this workshop there was a main track that was needed to fulfill some of
-the original Helmsley grant requirements, which Jeroen Bosman and Bianca Kramer
-expertly designed to fit the theme of _putting the pieces together_. At many
-points in the program, participants also had the opportunity to propose or join
-an unworkshop session to discuss any related topic or perspective that they
-desired. Despite a somewhat rocky beginning, I am happy that people were able
-to share and participate in what mattered to them. I tried to bounce around
-these unworkshops and the main track, learning as much as I could. Good
-conversations were taking place at all of them! But there were a few themes
-that I have been mulling, and questions for which I have been trying to find
-answers, that I want to explore further and discuss a bit in this post.
+the original Helmsley grant requirements, which <span lang="nl">Jeroen
+Bosman</span> and <span lang="nl">Bianca Kramer</span> expertly designed to fit
+the theme of _putting the pieces together_. At many points in the program,
+participants also had the opportunity to propose or join an unworkshop session
+to discuss any related topic or perspective that they desired. Despite a
+somewhat rocky beginning, I am happy that people were able to share and
+participate in what mattered to them. I tried to bounce around these
+unworkshops and the main track, learning as much as I could. Good conversations
+were taking place at all of them! But there were a few themes that I have been
+mulling, and questions for which I have been trying to find answers, that I
+want to explore further and discuss a bit in this post.
 
 For your reference, here's a quick breakdown of where I go from here:
 
@@ -91,12 +92,15 @@ designing the workshop logos, and it just worked. But looking at [the map
 above](#fig:journey-of-defining) from more of an _evil_ point of view, our
 journey from Madrid to San Diego could be thought of as a journey of
 _conquest_. Isn't this the same path that [Juan Rodríguez Cabrillo][cabrillo]
-and [others][vizcaino] took as they claimed land for Spain? The difference is
-that we are not conquistadores and we are not trying to create an [encomienda]
-system[^citizen_science] here! In fact what we want is just the opposite. I
-think there is stuff here from history from which we should learn, and not
-repeat, and opportunities exist to try to do things a different way. We have a
-groundbreaking opportunity here, and it is critical that we do it right.
+and [others][vizcaino] took as they claimed land for Spain? Obviously, this is
+not what we have in mind. The difference is that we are not <span
+lang="es">conquistadores</span> and we are not trying to create an [<span
+lang="es">encomienda</span>][encomienda] system[^citizen_science] here! In
+fact, the struggles and inequities of the current system are the very things
+from which we are trying to get away. I think there's a lesson from history
+here from which we should learn---and things we should not repeat.
+Groundbreaking opportunities exist to try to do things a different way. We have
+a chance to do something good here, and it is critical that we do it right.
 
 <span class="newthought">I want to put forward here an alternative
 approach</span> to explaining where I think we are right now by comparing our
@@ -125,20 +129,20 @@ the only records we have of this experience), these two groups were referred to
 respectively as the Saints and the Strangers. (These labels may give some
 insight into the obvious tensions between the two groups.) Unlike most of their
 contemporaries headed to the New World, these colonists were not entrepreneurs
-or conquistadores determined to conquer indigenous peoples, but came seeking
-freedom to practice religion the way they believed. This difference obviously
-changed how they approached problems, and with much patience and determination
-they were able to develop relationships of trust and mutual respect with each
-other as well as with the indigenous tribes of the New World.[^massasoit] They
-learned from each other. They helped each other. Their circumstances were not
-perfect, nor was every choice that was made. People goofed up on both sides.
-But they kept trying, got some things right, and they did something that had
-never been done before. They showed the world that what they set out to achieve
-was possible. Their achievements changed the perception of many, and led to
-their eventual success as a colony. Together they created a new kind of
-society---a shared culture---that had such an impact on the early culture of
-the United States that we still celebrate this time of our history during our
-[Thanksgiving holiday][thanksgiving].
+or <span lang="es">conquistadores</span> determined to conquer indigenous
+peoples, but came seeking freedom to practice religion the way they believed.
+This difference obviously changed how they approached problems, and with much
+patience and determination they were able to develop relationships of trust and
+mutual respect with each other as well as with the indigenous tribes of the New
+World.[^massasoit] They learned from each other. They helped each other. Their
+circumstances were not perfect, nor was every choice that was made. People
+goofed up on both sides. But they kept trying, got some things right, and they
+did something that had never been done before. They showed the world that what
+they set out to achieve was possible. Their achievements changed the perception
+of many, and led to their eventual success as a colony. Together they created a
+new kind of society---a shared culture---that had such an impact on the early
+culture of the United States that we still celebrate this time of our history
+during our [Thanksgiving holiday][thanksgiving].
 
 ## An agreement to unite
 
@@ -162,7 +166,7 @@ their own government_.
 
 <figure id="fig:the-mayflower-compact" class="img" property="schema:sharedContent" typeof="schema:ImageObject">
   <img alt="Passengers of the Mayflower signing the 'Mayflower Compact' including Carver, Winston, Alden, Myles Standish, Howland, Bradford, Allerton, and Fuller." src="The_Mayflower_Compact.jpg" />
-  <figcaption class="small">The depiction in <i property="schema:title">Signing the Mayflower Compact 1620</i>, by <a href="https://en.wikipedia.org/wiki/Jean_Leon_Gerome_Ferris">Jean Leon Gerome Ferris</a>, resembles the journey we have undertaken to converge upon the principles of the Scholarly Commons.</figcaption>
+  <figcaption>The depiction in <i property="schema:title">Signing the Mayflower Compact 1620</i>, by <a href="https://en.wikipedia.org/wiki/Jean_Leon_Gerome_Ferris">Jean Leon Gerome Ferris</a>, resembles the journey we have undertaken to converge upon the principles of the Scholarly Commons.</figcaption>
 </figure>
 
 The compact was simple enough. They covenanted to "combine \[them\]selves
@@ -236,9 +240,9 @@ for _better ordering_ and _preservation_, and plenty of _ends aforesaid_. We
 may ask ourselves, what's wrong with just going at this on our own? There is so
 much potential out there, and people and organizations are already staking out
 their ground! Why not just let things go as they have done up to this point in
-time, and hope that it all works out? Isn't the laissez-faire approach good
-enough? It has gotten us here, hasn't it!? _Why is it so important that we do
-this together?_
+time, and hope that it all works out? Isn't the <span
+lang="fr">laissez-faire</span> approach good enough? It has gotten us here,
+hasn't it!? _Why is it so important that we do this together?_
 
 Quite frankly, I don't think any of our current approaches have had the power
 to transform the current systems of scholarship. We need something more,
@@ -269,7 +273,7 @@ situation eerily similar to that earlier time, just on a much bigger scale.
   <figcaption>--- Alexander Hamilton, <cite>The Federalist Papers</cite>, No. <span class="oldstyle">1</span></figcaption>
 </figure>
 
-Now the Scholarly Commons is not a civil body, it's a commons---a middle ground
+Now a scholarly commons is not a civil body, it's a commons---a middle ground
 somewhere between the grassroots level of people and the institutions of
 state.[^commons] A commons has no prescribed structure; it is whatever the
 people decide for it to be. It is a coming together of people for some greater
@@ -318,7 +322,8 @@ it would disrupt the world and further _so many other important initiatives_.
 For all the good intentions of those of earlier times, they never had the
 technology to pull off something like a global commons of researchers, sharing
 as they go, almost instantaneously, the collective research of the world, ever
-expanding.
+expanding. Thinking more about it, though, isn't this what [the Web was
+originally intended][heading to oai8] to accomplish?
 
 # How can it be done?
 
@@ -339,6 +344,13 @@ diffusion of innovations][diffusion], or how innovations permeate society, and
 in this I think we can find some clues as to how we move forward. There are
 communities that are ready to work in new ways. We need to find these early
 adopters and experiment with new ways of working together.
+
+The Scholarly Commons is a _culture_ of the same sort as the culture of Open,
+or the spirit of freedom. It is not a software platform any more than GitHub is
+the Open Source Software culture. The Scholarly Commons will need software with
+new types of interactions---those that open up the process of research and
+bring people together in more egalitarian ways. The more aligned the software
+is with this culture, the less people will find fault with it.
 
 ## The necessity of a <i>counter</i>culture
 
@@ -422,11 +434,9 @@ is, here's what I would say:
 
 {:.big}
 
-The Scholarly Commons is _a commitment_ to come together and create a commons
-for the good of anyone involved in scholarly or scientific knowledge. The
-Scholarly Commons is also _an opportunity_ to make the world a better place by
-drastically improving our practices and widening our networks for the
-production and flow of knowledge.
+<dfn id="def:the-scholarly-commons">The Scholarly Commons</dfn> is the
+opportunity to come together and create a new culture of commoning on scholarly
+and scientific knowledge.
 
 {:.conclusion}
 
@@ -434,7 +444,7 @@ As for the direction to go next with the principles, I think we need to create
 ways to preserve and continue these conversations. We need to find ways to
 broaden the conversations, and to invite more diverse groups to take part in
 them. Then we need to take what we discover and put it into practice, thereby
-creating a commons for science and scholarship for the good of all mankind.
+creating scholarly and scientific commons for the good of all mankind.
 
 # Notes
 {:.no_toc}
@@ -445,8 +455,7 @@ creating a commons for science and scholarship for the good of all mankind.
 [Mayflower Compact]: <https://en.wikipedia.org/wiki/Mayflower_Compact>
 [thanksgiving]: <https://en.wikipedia.org/wiki/Thanksgiving> "Thanksgiving on Wikipedia"
 [encomienda]: <https://en.wikipedia.org/wiki/Encomienda> "a labor system, rewarding conquerors with the labor of particular groups of people"
-{:lang="es"}
-[cabrillo]: <https://en.wikipedia.org/wiki/Juan_Rodr%C3%ADguez_Cabrillo> "Juan Rodríguez Cabrillo on Wikipedia"
+[cabrillo]: <https://en.wikipedia.org/wiki/Juan_Rodr%C3%ADguez_Cabrillo> "Juan Rodríguez Cabrillo en Wikipedia"
 {:lang="es"}
 [new-video]: <http://bollier.org/blog/new-video-%E2%80%9Cre-imagine-future%E2%80%9D> "View more info on David Bollier's site"
 [april]: <https://aprilhathcock.wordpress.com/2016/09/27/making-the-local-global-the-colonialism-of-scholarly-communication/> "Making the Local Global: The Colonialism of Scholarly Communication"
@@ -465,6 +474,8 @@ creating a commons for science and scholarship for the good of all mankind.
 [Notes on the Synthesis of Form]: <https://en.wikipedia.org/wiki/Notes_on_the_Synthesis_of_Form> "Some info about 'Notes on the Synthesis of Form' on Wikipedia"
 [patterns]: <http://blogs.agu.org/geospace/2016/06/23/can-commons-design-pattern-lexicon-show-open-science-destination/> "Can a commons design-pattern lexicon show open-science to its destination? by Bruce Caron"
 [Tragedy of the Commons]: <https://en.wikipedia.org/wiki/Tragedy_of_the_commons> "Tragedy of the commons on Wikipedia"
+[open]: <http://cameronneylon.net/blog/not-what-not-who-or-how-but-why-is-open/> "Not what, not who, or how, but Why is Open? by Cameron Neylon"
+[heading to oai8]: </blog/heading-to-oai8/#p[WtoIaw],h[WtoIaw,1]> "Pentandra Blog → Heading to OAI8"
 
 *[SciELO]: Scientific Electronic Library Online
 *[TL;DR]: Too Long; Didn't Read
@@ -474,16 +485,17 @@ creating a commons for science and scholarship for the good of all mankind.
 
     Actually I've been thinking more and more that the term _citizen science_
     doesn't go far enough, and sometimes I worry that the practice ends up
-    resembling an [encomienda] system more than I would like.
+    resembling an [<span lang="es">encomienda</span>][encomienda] system more
+    than I would like.
 
 [^bradford]:
 
     These quotations from the Mayflower Compact and other circumstances
     relating to these early colonists can be found on [the Wikipedia
     page][Mayflower Compact] (with spelling modernized), or in [Bradford's
-    History "Of Plimoth
+    History "Of <span class="sic">Plimoth</span>
     Plantation"](http://archive.org/stream/historyplymouth01socigoog#page/n246/mode/2up),
-    Book <span class="oldstyle">2</span> Anno <span
+    Book <span class="oldstyle">2</span> <span class="sic">Anno</span> <span
     class="oldstyle">1620</span>, written by William Bradford in the years from
     <span class="oldstyle">1630</span> to <span class="oldstyle">1651</span>,
     and printed in entirety for the first time in <span
@@ -511,10 +523,36 @@ creating a commons for science and scholarship for the good of all mankind.
     > of England.
     {:.bq.grab lang="en-GB"}
 
-    This echoes my own thoughts, that the New World and the Scholarly Commons
-    are less about _land_ per se, but about the _affordance_ of the new culture
-    and sociality of that new land, or that the positioning of that land,
-    provided.
+    In <span class="oldstyle">1776</span>, another philosopher, Adam Smith,
+    wrote in <cite>The Wealth of Nations, Book <span class="roman">IV</span>,
+    Chapter <span class="roman">VII</span>, Part <span
+    class="roman">II</span></cite>:
+
+    > The English puritans, persecuted at home, fled for freedom to America,
+    > and established there the four governments of New England. The English
+    > <span class="sic">catholics</span>, treated with equal injustice,
+    > established that of Maryland; the Quakers, that of Pennsylvania. The
+    > <span class="sic">Portugueze</span> Jews, persecuted by the inquisition,
+    > <span class="sic">stript</span> of their fortunes, and banished to
+    > Brazil, introduced, by their example, some sort of order and industry
+    > among the transported felons and strumpets, by whom that colony was
+    > originally peopled, and taught them the culture of the sugar-cane. Upon
+    > all these different occasions it was, not the wisdom and policy, but the
+    > disorder and injustice of the European governments, which peopled and
+    > cultivated America.
+    {:.bq.grab lang="en-GB"}
+
+    My point here does not have to do with North versus South or America versus
+    Europe _per se_, and is certainly not meant to disparage or make light of
+    any persons or groups from our collective past, so please do not throw the
+    baby out with the bathwater! Some colonies were created not to establish
+    dominion over other peoples, but for higher, nobler motivations, for
+    example, to escape the injustices or tyrannies of an incumbent system. So
+    from this point of view, the Scholarly Commons is about a [_culture of
+    open_][open], and about the _affordance_ that that new culture and
+    sociality provides. The Scholarly Commons is a new sociality or culture in
+    much the same way that America was separate and distinct from the social
+    and political world of England.
 
 [^commons]:
 

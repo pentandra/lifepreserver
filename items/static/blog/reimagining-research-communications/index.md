@@ -37,19 +37,20 @@ efforts. I want to share some of my impressions from both perspectives.
 <!--MORE-->
 
 Before doing so, I wanted to express how fortunate we feel to be involved in
-FORCE11! When we started this company, we mainly focused on solving these
-problems with technology. It did not take long to realize that "if you build
-it, they will come" is really _not_ how it works in large-scale organizational
-migrations like this! While the right technology is surely needed, the social
-challenges are at least <span class="oldstyle">1000</span> times more difficult
-to overcome than the technical ones! But we also discovered that they are not
-impossible to overcome either. Actually, in a way, I think that helping people
-become united in a common purpose and heading in a common direction is the only
-_real_ challenge that there is. Once we're there we will have a shared vision
-of what needs to be built, and once it is built we will all be able to gauge
-how well it embodies that collective vision (or what still needs to be
-improved). FORCE11 is taking this challenge by the horns, and is trying to
-doing so in a domain-agnostic way.
+<span class="oldstyle">FORCE11</span>! When we started this company, we mainly
+focused on solving these problems with technology. It did not take long to
+realize that "if you build it, they will come" is really _not_ how it works in
+large-scale systemic migrations like this! While the right technology is surely
+needed, the social challenges are at least <span class="oldstyle">1000</span>
+times more difficult to overcome than the technical ones! But we also
+discovered that they are not impossible to overcome either. Actually, in a way,
+I think that helping people become united in a common purpose and heading in a
+common direction is the only _real_ challenge that there is. Once we're there
+we will have a shared vision of what needs to be built, and once it is built we
+will all be able to gauge how well it embodies that collective vision (or what
+still needs to be improved). <span class="oldstyle">FORCE11</span> is taking
+this challenge by the horns, and is trying to doing so in a domain-agnostic
+way.
 
 # The premise
 
@@ -161,7 +162,7 @@ discoverability, participation, and reuse.
   <a title="View the portrait full size" property="schema:contentUrl" href="reimagining_research_communications_force11_everyone@original.jpg">
     <img property="schema:thumbnail" class="static" alt="A portrait of all the participants of the Redefining the Scholarly Commons workshop in Madrid, Spain, February 2016" src="reimagining_research_communications_force11_everyone.jpg" />
   </a>
-  <figcaption property="schema:caption" class="small">Participants of the workshop <i>Reimagining Scholarly Communications</i>, held in <span property="schema:contentLocation">Madrid, Spain</span>, <span property="schema:dateCreated" content="2016-02-27" datatype="schema:Date">February 2016</span>. I'm hiding (but smiling) in the back right. If you want to know who else came, check out the <a href="https://www.force11.org/group/scholarly-commons-working-group/attendee-list">participant list</a>. Thanks to <span property="schema:creator" typeof="schema:Person"><a property="schema:url" href="https://twitter.com/radicevslobodan"><span property="schema:name">Slobodan Radicev</span></a></span> for the photo.</figcaption>
+  <figcaption property="schema:caption">Participants of the workshop <i>Reimagining Scholarly Communications</i>, held in <span property="schema:contentLocation">Madrid, Spain</span>, <span property="schema:dateCreated" content="2016-02-27" datatype="schema:Date">February 2016</span>. I'm hiding (but smiling) in the back right. If you want to know who else came, check out the <a href="https://www.force11.org/group/scholarly-commons-working-group/attendee-list">participant list</a>. Thanks to <span property="schema:creator" typeof="schema:Person"><a property="schema:url" href="https://twitter.com/radicevslobodan"><span property="schema:name">Slobodan Radicev</span></a></span> for the photo.</figcaption>
 </figure>
 
 So was the [blank-slate approach](#sec:the-premise) worth it? To me, I think
@@ -188,18 +189,17 @@ defining process will go on continuously?_
 
 ---
 
-Bianca Kramer and Jeroen Bosman put a lot of work into publishing a report of
-the workshop. Please [check it out][workshop-report] to learn more, and please
-take the opportunity to go through the exercise on your own, or with your
-group.
+<span lang="nl">Bianca Kramer</span> and <span lang="nl">Jeroen Bosman</span>
+put a lot of work into publishing a report of the workshop. Please [check it
+out][workshop-report] to learn more, and please take the opportunity to go
+through the exercise on your own, or with your group.
 
 [FORCE11]: <https://force11.org>
+{:.oldstyle}
 [helmsley]: <http://helmsleytrust.org>
 [commons group]: <https://www.force11.org/group/scholarly-commons-working-group> "Scholarly Commons Working Group @FORCE11"
 [announcement]: <https://www.force11.org/article/helmsley-charitable-trust-funds-force11-develop-scholarly-commons-future> "Program announcement @FORCE11"
 [workshop-report]: <http://dx.doi.org/10.3897/rio.2.e9340> "Defining the Scholarly Commons - Reimagining Research Communication. Report of Force11 SCWG Workshop, Madrid, Spain, February 25-27, 2016 on RIO"
 [fair-paper]: <http://dx.doi.org/10.1038/sdata.2016.18> "The FAIR Guiding Principles for scientific data management and stewardship on Scientific Data"
 
-
 *[FAIR]: Findable, Accessible, Interoperable, Reusable
-*[FORCE11]: FORCE11 is a community of scholars, librarians, archivists, publishers and research funders that has arisen organically to help facilitate the change toward improved knowledge creation and sharing.

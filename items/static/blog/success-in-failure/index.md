@@ -56,12 +56,7 @@ our goals. Had anything gotten in the way? Were we missing something important?
 
 <figure class="img">
   <img data-no-retina class="static" alt="Chris, two kids, and a sister on the way to the final round" src="growam2012-chrisandothers.jpg" />
-  <figcaption class="small">
-
-    This is Chris with his sister and two of our kids headed to the final
-    round. Family support makes all the difference.
-
-  </figcaption>
+  <figcaption>This is Chris with his sister and two of our kids headed to the final round. Family support makes all the difference.</figcaption>
 </figure>
 
 Second, we had to step way outside our comfort zone during some parts of the
@@ -101,14 +96,8 @@ sleep. But the letdown after the adrenaline stops is brutal.
       <source type="video/ogg" src="growam2012.ogv" />
     </video>
   </div>
-  <figcaption class="small">
-
-      Our submission to the Grow America Competition. Thanks Abe and Jake for
-      helping us out!
-
-  </figcaption>
+  <figcaption>Our submission to the Grow America Competition. Thanks Abe and Jake for helping us out!</figcaption>
 </figure>
-
 
 *[NGS]: National Genealogical Society 2012 Conference
 

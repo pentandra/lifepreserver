@@ -1,6 +1,11 @@
 [submodule "specifications"]
-	path = items/static/specifications
-	url = git@github.com:pentandra/specifications.git
+  path = items/static/specifications
+  url = https://github.com/pentandra/specifications.git
 [submodule "benefit-reports"]
-	path = items/static/company/benefit-reports
-	url = git@github.com:pentandra/benefit-reports.git
+  path = items/static/company/benefit-reports
+  url = https://github.com/pentandra/benefit-reports.git
+  branch = fiscalyear/2015
+[submodule "proposals"]
+  path = items/static/company/proposals
+  url = https://github.com/pentandra/proposals.git
+  branch = develop

@@ -70,7 +70,7 @@ header {
   margin-bottom: 0;
 }
 
-small {
+small, figcaption {
   @extend .small;
 }
 
@@ -98,7 +98,7 @@ address {
   font-style: normal;
 }
 
-address, p, pre {
+address, p, pre, figure {
   margin: 0 0 $base-line-height 0;
 }
 
@@ -112,6 +112,9 @@ blockquote, .bq { margin: $base-line-height * 1.5 0; }
     margin: 0;
   }
 
+  figcaption {
+    @extend .normal;
+  }
 }
 
 hr {
@@ -130,6 +133,12 @@ nav ol, .nav ol, nav ul, .nav ul { margin: 0 }
 
 ul {
   list-style-type: square;
+
+  ul {
+    // Nested lists
+    padding-left: 1.5em;
+    margin-bottom: 0;
+  }
 }
 
 ol {

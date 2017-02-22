@@ -7,7 +7,7 @@ Class.new(Nanoc::DataSource) do
   identifier :vocabularies
 
   def up
-    @voaf_metadata ||= YAML.load_file("var/voaf_metadata.yaml")
+    @voaf_metadata ||= YAML.load_file('var/voaf_metadata.yaml')
   end
 
   def down
@@ -38,13 +38,14 @@ Class.new(Nanoc::DataSource) do
       prefix: prefix,
       group: group_name,
       namespace_uri: vocab.to_uri.value,
-      is_hidden: true
+      is_hidden: true,
     }
 
     new_item(
-      "",
+      '',
       attributes.merge(metadata),
-      Nanoc::Identifier.new("/vocabularies/#{group_name.to_s.parameterize}/#{prefix.to_s.parameterize}"))
+      Nanoc::Identifier.new("/vocabularies/#{group_name.to_s.parameterize}/#{prefix.to_s.parameterize}"),
+    )
   end
 
   # @return [Hash]
@@ -69,10 +70,9 @@ Class.new(Nanoc::DataSource) do
     # HACK: until we have better handling of ontology definitions at a
     # different uri than the namespace uri.
     if vocab == RDF::Vocab::VOID
-      return "http://vocab.deri.ie/void"
+      return 'http://vocab.deri.ie/void'
     end
 
     vocab.ontology ? vocab.ontology.value : vocab.to_uri.value
   end
-
 end

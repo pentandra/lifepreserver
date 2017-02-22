@@ -29,10 +29,9 @@ end
 compile '/static/blog/**/*.md' do
   filter :erb, @config[:erb]
   filter :kramdown, @config[:kramdown]
-  filter :colorize_syntax,
-    default_colorizer: :rouge
+  filter :colorize_syntax, default_colorizer: :rouge
   filter :absolutify_paths, type: :html
-  filter :spellchecker unless @config[:production]
+  filter :spellchecker, type: :html
   layout '/blog/article.*'
   filter :rubypantsunicode
   filter :cache_buster if @config[:production]
@@ -42,8 +41,7 @@ end
 compile '/static/blog/**/*.md', rep: :feed_entry do
   filter :erb, @config[:erb]
   filter :kramdown, @config[:kramdown]
-  filter :colorize_syntax,
-    default_colorizer: :rouge
+  filter :colorize_syntax, default_colorizer: :rouge
   filter :absolutify_paths, type: :html, global: true
   filter :rubypantsunicode
 end

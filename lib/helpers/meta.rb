@@ -39,14 +39,14 @@ module LifePreserver
       authors = dependencies.flat_map { |dep| dep[:authors] }.uniq.sort
 
       if external_only # Take out our people
-        authors = authors - sorted_people.map { |person| full_name(person) }
+        authors -= sorted_people.map { |person| full_name(person) }
       end
 
       authors
     end
 
     def ruby_desc
-      gem_info = defined?(Gem) ? "with RubyGems #{Gem::VERSION}" : "without RubyGems"
+      gem_info = defined?(Gem) ? "with RubyGems #{Gem::VERSION}" : 'without RubyGems'
       engine = defined?(RUBY_ENGINE) ? RUBY_ENGINE : 'ruby'
 
       %[#{engine} #{RUBY_VERSION} (#{RUBY_RELEASE_DATE}) #{gem_info}]

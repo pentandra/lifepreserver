@@ -1,12 +1,11 @@
-require 'sparql/client'
-require 'yaml'
-require 'active_support/core_ext/hash/keys'
-
 usage     'fetch-tag-data'
 aliases   :fetchtags, :ft
 summary   'fetches additional data about semantic tags from the Web'
 
-run do |opts, args, cmd|
+run do |_opts, _args, _cmd|
+  require 'sparql/client'
+  require 'yaml'
+  require 'active_support/core_ext/hash/keys'
 
   tags = YAML.load_file('etc/tags.yaml').map(&:symbolize_keys)
 
@@ -14,7 +13,7 @@ run do |opts, args, cmd|
 
   data = []
 
-  sparql = SPARQL::Client.new("http://dbpedia.org/sparql")
+  sparql = SPARQL::Client.new('http://dbpedia.org/sparql')
 
   tags.select { |t| t.key?(:uri) }.each do |tag|
     uri = tag[:uri]
@@ -33,11 +32,11 @@ run do |opts, args, cmd|
           FILTER (langMatches(lang(?label), \"en\"))
           FILTER (langMatches(lang(?abstract), \"en\"))
 
-        OPTIONAL { 
+        OPTIONAL {
           <#{uri}> a ?type .
           #FILTER (strStarts(str(?type), \"http://dbpedia.org/ontology/\"))
           FILTER (?type != owl:Thing) # Let's get something more specific
-          FILTER NOT EXISTS { 
+          FILTER NOT EXISTS {
             <#{uri}> a ?other .
             ?other rdfs:subClassOf ?type .
             FILTER (?other != ?type)
@@ -46,16 +45,16 @@ run do |opts, args, cmd|
       }
     QUERY
 
-    puts "Querying remote endpoint for <#{uri}>…"
+    $stderr.puts "Querying remote endpoint for <#{uri}>…"
 
     sparql.query(query).each { |solution| solution.each_binding { |name, v| tag[name] = v.value } }
 
     data << tag
   end
 
-  puts "Writing tag data…"
+  $stderr.puts 'Writing tag data…'
 
-  File.open("var/additional_tag_data.yaml", 'w+') { |io| io.write(YAML.dump(data)) }
+  File.open('var/additional_tag_data.yaml', 'w+') { |io| io.write(YAML.dump(data)) }
 
-  puts "Finished!"
+  $stderr.puts 'Finished!'
 end

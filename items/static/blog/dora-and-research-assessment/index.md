@@ -22,7 +22,7 @@ That is a surprisingly difficult question to answer.
 
 <!--MORE-->
 
-The naïve approach to research assessment is to boil everything down to a
+The naive approach to research assessment is to boil everything down to a
 number---a metric. But you cannot reduce quality or impact down to a simple
 quantitative singularity, unless it happens to be
 <a href="http://en.wikipedia.org/wiki/Phrases_from_The_Hitchhiker's_Guide_to_the_Galaxy#Answer_to_the_Ultimate_Question_of_Life.2C_the_Universe.2C_and_Everything_.2842.29">the number <span class="oldstyle">42</span></a>.

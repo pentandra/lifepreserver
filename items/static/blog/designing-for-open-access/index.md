@@ -125,7 +125,7 @@ whole.
   <a title="View manuscript at the British Library" property="prov:wasDerivedFrom" href="http://www.bl.uk/catalogues/illuminatedmanuscripts/ILLUMIN.ASP?Size=mid&IllID=21739">
     <img property="schema:contentUrl" class="static" data-no-retina src="illuminated_scientific_manuscript.jpg" alt="Illuminated manuscript depicting canons for Toledan tables (c. 1292)" />
   </a>
-  <figcaption class="small"><span property="schema:description"><b property="dc:title schema:name">An illuminated scientific manuscript</b>, or better known at the time as <dfn><a href="https://en.wikipedia.org/wiki/Natural_philosophy" title="Philosophia Naturalis on Wikipedia">natural philosophy</a></dfn>, written in <a href="https://en.wikipedia.org/wiki/Latin" title="Latin on Wikipedia">Latin</a> upon <a href="https://en.wikipedia.org/wiki/Parchment" title="Parchment on Wikipedia">parchment</a> circa <span class="oldstyle">1292</span>, showing a contemporary dipiction of the Arabic <a href="http://en.wikipedia.org/wiki/Toledan_Tables">Toledan tables</a>, which used geometric chords and sines to predict the movements of the Sun, Moon, and planets relative to the fixed stars. At this time, the prevailing belief was that the Earth was stationary at the center of the universe.</span> Licensed under a <a property="cc:license" href="http://creativecommons.org/publicdomain/zero/1.0/" ><abbr title="Creative Commons Zero (Public Domain Dedication)">CC0</abbr> license</a> by the <a property="cc:attributionName" rel="cc:attributionURL" href="http://www.bl.uk">British Library</a>. <span class="icon-cc"></span><span class="icon-cc-zero"></span></figcaption>
+  <figcaption><span property="schema:description"><b property="dc:title schema:name">An illuminated scientific manuscript</b>, or better known at the time as <dfn><a href="https://en.wikipedia.org/wiki/Natural_philosophy" title="Philosophia Naturalis on Wikipedia">natural philosophy</a></dfn>, written in <a href="https://en.wikipedia.org/wiki/Latin" title="Latin on Wikipedia">Latin</a> upon <a href="https://en.wikipedia.org/wiki/Parchment" title="Parchment on Wikipedia">parchment</a> circa <span class="oldstyle">1292</span>, showing a contemporary depiction of the Arabic <a href="http://en.wikipedia.org/wiki/Toledan_Tables">Toledan tables</a>, which used geometric chords and sines to predict the movements of the Sun, Moon, and planets relative to the fixed stars. At this time, the prevailing belief was that the Earth was stationary at the center of the universe.</span> Licensed under a <a property="cc:license" href="http://creativecommons.org/publicdomain/zero/1.0/" ><abbr title="Creative Commons Zero (Public Domain Dedication)">CC0</abbr> license</a> by the <a property="cc:attributionName" rel="cc:attributionURL" href="http://www.bl.uk">British Library</a>. <span class="icon-cc"></span><span class="icon-cc-zero"></span></figcaption>
 </figure>
 
 ### Access to Knowledge
@@ -173,17 +173,17 @@ a cadre of copyists.
 The printer and later the publisher became the one in charge of what got
 published thanks to economics.
 
-Journal des Sçavans and Philosophical Transactions
+<span lang="fr">Journal des Sçavans</span> and Philosophical Transactions
 
-<cite>Philosophical Transactions, Giving some Accompt to the of the present
-Undertakings, Studies, and Labours of the Ingenious in many considerable parts
-of the World</cite>
+<cite lang="en-GB">Philosophical Transactions, Giving some <span
+class="sic">Accompt</span> to the of the present Undertakings, Studies, and
+Labours of the Ingenious in many considerable parts of the World</cite>
 
 <figure id="fig:printing-press" class="img" property="schema:image" resource="#printing_press" typeof="schema:ImageObject">
   <a property="schema:contentUrl" href="printing_press.jpg">
     <img property="schema:thumbnail" class="static retina" src="printing_press_620x442.jpg" alt="An 18th-century reconstructed Gutenberg-style printing press" />
   </a>
-  <figcaption class="small"><span property="schema:description"><b property="schema:name dc:title">A Gutenberg-style printing press</b>, inside the Book Workshop of La Maison Fusier, located in the town of Ferney-Voltaire, France. Printing presses like these made the mass dissemination of knowledge possible.</span></figcaption>
+  <figcaption><span property="schema:description"><b property="schema:name dc:title">A Gutenberg-style printing press</b>, inside the Book Workshop of <span lang="fr">La Maison Fusier</span>, located in the town of <span lang="fr">Ferney-Voltaire</span>, France. Printing presses like these made the mass dissemination of knowledge possible.</span></figcaption>
   <link property="rdfa:copy" resource="pentandra-website:license" />
 </figure>
 
@@ -201,8 +201,8 @@ underlying data as well) to the public over the Internet for free.
 
 In general, scholarly research is being published the same way it has been
 published since the beginning of scholarly publishing (with the <a
-href="http://en.wikipedia.org/wiki/Journal_des_s%C3%A7avans"><cite>Journal des
-sçavans</cite></a> and the <a
+href="http://en.wikipedia.org/wiki/Journal_des_s%C3%A7avans"><cite
+lang="fr">Journal des sçavans</cite></a> and the <a
 href="http://en.wikipedia.org/wiki/Philosophical_Transactions_of_the_Royal_Society"><cite>Philosophical
 Transactions of the Royal Society</cite></a> in <span
 class="oldstyle">1665</span>). With the passing of almost <span
@@ -245,12 +245,12 @@ The fact that this practice has persisted for so long is kind of mind-boggling.
 I guess there really was no other option until the Internet came along with a
 better way to publish.
 
-C'mon, publishers, are you so comfortable with your modus operandi that you
-require legislation to perpetuate your antiquated business model? There are [so
-many other options][velvet_rope] for monetizing the research and
-publication industry in more valuable ways!  Come down from your
-this-is-how-it-has-always-been-done ivory towers, stop digging in your heels,
-and get with the <span class="oldstyle">21</span>st century.
+<span class="sic">C'mon</span>, publishers, are you so comfortable with your
+modus operandi that you require legislation to perpetuate your antiquated
+business model? There are [so many other options][velvet_rope] for monetizing
+the research and publication industry in more valuable ways!  Come down from
+your this-is-how-it-has-always-been-done ivory towers, stop digging in your
+heels, and get with the <span class="oldstyle">21</span>st century.
 
 Putting their business practices aside, as a researcher, I don't want to shell
 out <span class="oldstyle"><span class="symbol">$</span>8--30</span> per paper
@@ -379,7 +379,7 @@ Commission has similarly encouraged open access to research outputs.
 
 But all of this is still not enough. Overcoming the barriers of the past has
 uncovered smaller problems and inconsistencies, making invisible things visible
-and giving us the opportinity to make previously impossible things possible.
+and giving us the opportunity to make previously impossible things possible.
 
 Research must [clearly show] not only *what* data was used, but *how* that data
 was used. While open access to research papers and research data is a great
@@ -531,7 +531,7 @@ mind as the research was designed in the first place.
 The writing process is wonderful. Writing forces you to think, to formulate
 plans and to analyze results. There is a lot of value in it! But there is no
 reason the publication process should cost money in our time. There is no
-scarcity of resources whos costs are incrementally incurred. It costs no money
+scarcity of resources whose costs are incrementally incurred. It costs no money
 to produce a PDF or to [copy it]. There is no value for anyone in it!  People
 don't like paying for things that have no value. Peer review is donated. There
 is value in making research easier to do---things that could save time during
@@ -599,8 +599,7 @@ simultaneously by multiple scientists and inventors</q>.
 
     </p>
   </blockquote>
-  <figcaption>--- <a href="http://en.wikipedia.org/wiki/Farkas_Bolyai"
- >Farkas Bolyai</a>, to his son <a href="http://en.wikipedia.org/wiki/J%C3%A1nos_Bolyai">János</a>, urging him to publish his theory of non-Euclidiean geometry without delay.</figcaption>
+  <figcaption>--- <a href="http://en.wikipedia.org/wiki/Farkas_Bolyai">Farkas Bolyai</a>, to his son <a href="http://en.wikipedia.org/wiki/J%C3%A1nos_Bolyai">János</a>, urging him to publish his theory of non-Euclidian geometry without delay.</figcaption>
 </figure>
 
 The point is that attribution, or credit, should take care of itself if the
@@ -661,7 +660,7 @@ collaboration and peer review during earlier phases of the research process.
 As research progresses, the research outputs are presented in an incremental,
 natural way.
 
-As is practiced in traditional research, the pre-publication peer review makes
+As is practiced in traditional research, the prepublication peer review makes
 more sense in a print paradigm, where a paper is printed once and can't be
 changed after publication. While we are familiar with this paradigm, and much
 of academia uses it, paper publications are just not a very good fit for the
@@ -678,14 +677,14 @@ research needs to be openly accessible as well.
 
 ### The Work of Many for the Many
 
-Async research.
+Asynchronous research.
 
 We don't just need an acceleration of science---we need a completely different
 paradigm.
 
 The questions don't change but the answers do
 --- Dan Reed
-   
+
 ## Determining Research Quality
 
 Why do we care about quality?
@@ -699,9 +698,9 @@ can judge no. 2, so an appeal is made to authority. Does anyone else like what
 this researcher is saying? Has he or she published in quality journals?
 Oftentimes it is hard to know how good their research is by looking at the
 research outputs. However, this is true for other experts as well, sometimes
-something is published in a high-profile journal, and it has the appearence of
+something is published in a high-profile journal, and it has the appearance of
 quality research, but only later when others try to reproduce, or check the
-results, things don't add up. An anomoly is found in the data.
+results, things don't add up. An anomaly is found in the data.
 
 I am not of the opinion that amateurs should be given only academic drudgework,
 but that everyone should have the opportunity to meaningfully participate at
@@ -780,7 +779,8 @@ competitive advantage in warfare.[^manhattan-project] After World War <span
 class="roman">II</span>, the National Science Foundation was established in the
 US to unify the nation's efforts in scientific progress. In Europe, research
 began to be supported at the national level, and since <span
-class="oldstyle">1984</span> at the EU level with the [Framework Programmes].
+class="oldstyle">1984</span> at the EU level with the [Framework
+Programmes]{:lang="en-GB"}.
 
 Isn't this progress? I'm not so sure. It's all too easy for political
 priorities to become the prominent driver for governmental funding. [In his
@@ -804,7 +804,7 @@ researchers down in a selfish scramble to survive.
       
       The institutionalization of science as a mass occupation, which began
       during my lifetime, has brought with it the necessity of its continual
-      growth---similar in that respect to such mythical entites as the "gross
+      growth---similar in that respect to such mythical entities as the "gross
       national product"---not because there is so much more to discover, but
       because there are so many who want to be paid to do it. Any attempt to
       reform is, therefore, met by insincere cries about the "freedom of
@@ -880,7 +880,7 @@ without hidden agendas or selfish motivations.
     <source property="schema:contentUrl" type="video/ogg" src="you_are_amateurs.ogv" />
     <track kind="subtitles" src="you_are_amateurs.en.srt" srclang="en" />
   </video>
-  <figcaption class="small"><span property="schema:description"><b property="schema:title">You Are Amateurs</b> from <cite>A Christmas Without Snow</cite>, via the <a href="https://archive.org/details/AChristmasWithoutSnow" property="prov:wasDerivedFrom">Internet Archive</a>, produced by <span property="cc:attributionName schema:productionCompany">Korty Films</span> in <span class="oldstyle" property="schema:datePublished">1980</span></span>. Licensed under a <a property="cc:license" href="http://creativecommons.org/publicdomain/zero/1.0/" ><abbr title="Creative Commons Zero (Public Domain Dedication)">CC0</abbr> license</a>. <span class="icon-cc"></span><span class="icon-cc-zero"></span></figcaption>
+  <figcaption><span property="schema:description"><b property="schema:title">You Are Amateurs</b> from <cite>A Christmas Without Snow</cite>, via the <a href="https://archive.org/details/AChristmasWithoutSnow" property="prov:wasDerivedFrom">Internet Archive</a>, produced by <span property="cc:attributionName schema:productionCompany">Korty Films</span> in <span class="oldstyle" property="schema:datePublished">1980</span></span>. Licensed under a <a property="cc:license" href="http://creativecommons.org/publicdomain/zero/1.0/" ><abbr title="Creative Commons Zero (Public Domain Dedication)">CC0</abbr> license</a>. <span class="icon-cc"></span><span class="icon-cc-zero"></span></figcaption>
 </figure>
 
 It was in <span class="oldstyle">1905</span>, while Albert Einstein worked
@@ -888,13 +888,13 @@ full-time as an examiner at a patent office, that he published [four
 papers][miracle year], including his papers on [special relativity] and
 [mass-energy equivalence], that would change our understanding of space, time,
 and matter. A few years passed. According to his wife Elsa, '<q
-cite="https://en.wikipedia.org/wiki/Albert_Einstein">\[d\]uring breakfast on
-morning, \[Einstein\] seemed lost in thought and ignored his food. \[I\] asked
-him if something was bothering him. He sat down at the piano and started
-playing. He continued playing and writing notes for half an hour, then went
-upstairs to his study, where he remained for two weeks, with \[me\] bringing up
-his food. At the end of the two weeks he came downstairs with two sheets of
-paper bearing his theory \[of general relativity\].</q>'[^chaplin]
+cite="https://en.wikipedia.org/wiki/Albert_Einstein" class="sic">\[d\]uring
+breakfast on morning, \[Einstein\] seemed lost in thought and ignored his food.
+\[I\] asked him if something was bothering him. He sat down at the piano and
+started playing. He continued playing and writing notes for half an hour, then
+went upstairs to his study, where he remained for two weeks, with \[me\]
+bringing up his food. At the end of the two weeks he came downstairs with two
+sheets of paper bearing his theory \[of general relativity\].</q>'[^chaplin]
 
 What if Einstein had waited for a federal grant before starting on this work?
 The chances of a grant proposal being accepted would have been very small,
@@ -967,7 +967,7 @@ metaphor for how to proceed in the future.
   <a property="schema:contentUrl" href="movable_type_in_typecase.jpg">
     <img property="schema:thumbnail" class="retina static" src="movable_type_in_typecase_620x442.jpg" alt="Movable type" />
   </a>
-  <figcaption class="small"><b property="schema:name dc:title">Movable type</b>, or <em>sorts</em>, in a type case. Licensed under a <a href="http://creativecommons.org/licenses/by/4.0/"><abbr title="Creative Commons Attribution 4.0 International">CC-BY</abbr> license</a>. <span class="icon-cc"></span><span class="icon-cc-by"></span></figcaption>
+  <figcaption><b property="schema:name dc:title">Movable type</b>, or <em>sorts</em>, in a type case. Licensed under a <a href="http://creativecommons.org/licenses/by/4.0/"><abbr title="Creative Commons Attribution 4.0 International">CC-BY</abbr> license</a>. <span class="icon-cc"></span><span class="icon-cc-by"></span></figcaption>
 </figure>
 
 Movable type worked really well for alphabets that had relatively few
@@ -977,7 +977,7 @@ characters in them.
   <a title="View original image on Wikimedia Commons" property="prov:wasDerivedFrom" href="http://upload.wikimedia.org/wikipedia/commons/a/ae/Metal_movable_type.jpg">
     <img property="schema:contentUrl" class="static" src="Metal_movable_type.jpg" alt="Metal movable type in a composing stick" />
   </a>
-  <figcaption class="small"><b property="schema:name dc:title">Movable type in a composing stick</b>, by <span property="cc:attributionName">Willi Heidelbach</span>, licensed under a <a href="http://creativecommons.org/licenses/by-sa/3.0/" rel="license" property="cc:license"><abbr title="Creative Commons Attribution-Share Alike 3.0 Unported">CC-BY-SA</abbr> license</a>.  <span class="icon-cc"></span><span class="icon-cc-by"></span><span class="icon-cc-sa"></span></figcaption>
+  <figcaption><b property="schema:name dc:title">Movable type in a composing stick</b>, by <span property="cc:attributionName">Willi Heidelbach</span>, licensed under a <a href="http://creativecommons.org/licenses/by-sa/3.0/" rel="license" property="cc:license"><abbr title="Creative Commons Attribution-Share Alike 3.0 Unported">CC-BY-SA</abbr> license</a>.  <span class="icon-cc"></span><span class="icon-cc-by"></span><span class="icon-cc-sa"></span></figcaption>
 </figure>
 
 ## Research Cases: A Proposal for the Future
@@ -1042,7 +1042,7 @@ research systems.
 # Additional Resources
 {:.no_toc}
 
-* [The Coming of the Book: The Impact of Printing 1450--1800][febvre], by Lucien Febvre and Henri-Jean Martin. 
+* [The Coming of the Book: The Impact of Printing 1450--1800][febvre], by <span lang="fr">Lucien Febvre</span> and <span lang="fr">Henri-Jean Martin</span>. 
 * [The Printing Press as an Agent of Change][press_agent], by Elizabeth Eisenstein. 
 * [Hypertext as an agent of change][hypertext], by Mandy Brown.
 * [Manuscripts, Books, and Maps: The Printing Press and a Changing World][booktext], by Bruce Jones.
@@ -1081,13 +1081,13 @@ research systems.
     Happily, during the latest session of the Georgia General Assembly <span
     class="oldstyle">(2013--2014)</span>, a good portion of the archive's lost
     budget was restored. You can track the progress on
-    [georgiaarchivesmatters.org](http://georgiaarchivesmatters.org/).
+    [georgiaarchivesmatters.org](http://georgiaarchivesmatters.org/){:.domainname}.
 
 [^RWA]: The [Research Works Act][RWA]
     (<abbr>HR</abbr> <span class="oldstyle">3699</span>) would in effect repeal
     <abbr title="National Institutes of Health">NIH</abbr>'s 
     <a href="http://publicaccess.nih.gov/policy.htm">open access policy</a>.
-    Richard Price, <abbr>CEO</abbr> of [academia.edu](http://academia.edu),
+    Richard Price, <abbr>CEO</abbr> of [academia.edu](http://academia.edu){:.domainname},
     wrote about [some of the particular arguments](http://blog.academia.edu/post/17986108041/the-dangerous-research-works-act)
     against this bill. As a reaction to this bill and to being fed up with the
     injustices of the current system in general, some researchers set up [a
@@ -1194,19 +1194,7 @@ research systems.
       <video class="simple" width="100%" height="100%" style="width: 100%; height: 100%;" id="player" preload="none" controls="controls">
         <source type="video/youtube" src="http://www.youtube.com/watch?v=v31zpZ4woOI" />
       </video>
-      <figcaption class="small">
-        <p> 
-
-          The London Bureau of
-          <a href="http://english.ruvr.ru/">The Voice of Russia</a>
-          interviews several open access advocates, including Ross Mounce, from the 
-          <a href="http://okfn.org">Open Knowledge Foundation</a>, Rita Gardner, the
-          director of the Royal Geographic Society, Bjorn Brembs, Professor at the
-          Department of Genetics at the University of Leipzig, and Timothy Gowers,
-          Math Professor at Cambridge University.
-
-        </p>
-      </figcaption>
+      <figcaption><p>The London Bureau of <a href="http://english.ruvr.ru/">The Voice of Russia</a> interviews several open access advocates, including Ross Mounce, from the <a href="http://okfn.org">Open Knowledge Foundation</a>, Rita Gardner, the director of the Royal Geographic Society, <span lang="nl">Björn Brembs</span>, Professor at the Department of Genetics at the University of Leipzig, and Timothy Gowers, Math Professor at Cambridge University.</p></figcaption>
     </figure>
 
     Peter Suber is considered by many to be the expert on open access. He
@@ -1224,14 +1212,14 @@ research systems.
         <source src="SuberPodcast_ogg.ogg" type="audio/ogg" /> 
       </audio>
 
-      <figcaption class="small">
+      <figcaption>
         <p>
 
           An interview with Peter Suber on the Harvard University campus at the
           <a href="http://cyber.law.harvard.edu/hoap/Main_Page"
            >Berkman Center for Internet and Society</a>, where
           Suber is a faculty fellow.
-          <a href="http://dx.doi.org/10.6084/m9.figshare.96368">http://dx.doi.org/10.6084/m9.figshare.96368</a>
+          <a href="http://dx.doi.org/10.6084/m9.figshare.96368" class="uri">http://dx.doi.org/10.6084/m9.figshare.96368</a>
           <span class="icon-cc"></span><span class="icon-cc-by"></span>
 
         </p>
@@ -1245,7 +1233,7 @@ research systems.
       <video class="simple" width="100%" height="100%" style="width: 100%; height: 100%; max-width: 100%;" id="oa-explained" preload="none" controls="controls">
         <source type="video/youtube" src="http://www.youtube.com/watch?v=L5rVH1KGBCY" />
       </video>
-      <figcaption class="small">
+      <figcaption>
         <p>
 
           What is open access? Nick Shockey and Jonathan Eisen take us through
@@ -1319,14 +1307,14 @@ research systems.
 
     He later referred to this as the happiest time of his
     life.[^Einsteins_Dream]
-    
+
 [^Einsteins_Dream]: Parker, Barry. [Einstein's Dream: The Search for a Unified Theory of the Universe](http://books.google.com/books?id=GMZyB1bBpssC). Basic Books, 2008. ISBN: 9780465011858.
 
 [^violin_practicing]: While Einstein said this in particular about his love of
     music and violin practice, the same applies to any skill that you are
     pursuing.
 
-[^colquhoun]: <http://www.michaeleisen.org/blog/?p=694#comment-359363>
+[^colquhoun]: <http://www.michaeleisen.org/blog/?p=694#comment-359363>{:.uri}
 
 *[PDF]: Portable Document Format
 *[FRPAA]: Federal Research Public Access Act
@@ -1363,9 +1351,6 @@ research systems.
 [hypertext]: http://aworkinglibrary.com/writing/hypertext-as-an-agent-of-change/
 [press_agent]: http://www.amazon.com/Printing-Press-Agent-Change-Volumes/dp/0521299551
 [febvre]: http://www.amazon.com/The-Coming-Book-Printing-1450-1800/dp/1859841082
-[NGSQ]: http://www.ngsgenealogy.org/cs/ngsq
-[TG]: http://www.fasg.org/TheGenealogist.html
-[gen_hist]: /blog/thoughts-about-rootstech-2012/#def:generational-historians
 [iterative]: <http://en.wikipedia.org/wiki/Iterative_and_incremental_development>
 [waterfall model]: http://en.wikipedia.org/wiki/Waterfall_model
 [research data]: </research/process/#p[DirGaf],h[DirGaf,1,2,DciDce,1]>

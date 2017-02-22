@@ -1,30 +1,84 @@
 class SpellChecker < Nanoc::Filter
+  require_relative '../helpers/dictionaries'
+  include LifePreserver::Dictionaries
+
   identifier :spellchecker
 
-  requires 'html_spellchecker'
+  requires 'set', 'nokogiri'
+
+  IGNORE_CLASSES ||= Set.new(%w(domainname filename foreign handle identifier prefix projectname sic uri))
 
   def run(content, params = {})
-    checker = HTML_Spellchecker.english
+    case params[:type]
+    when :html, :xhtml
+      spellcheck_html_like(content, params)
+    else
+      raise 'The spell_checker filter needs to know the type of content to ' \
+        'process. Pass a :type to the filter call (:html for HTML or ' \
+        ':xhtml for XHTML).'
+    end
+  end
 
-    if File.exist? "etc/dictionary" then
-      File.readlines("etc/dictionary").each do |word|
-        checker.add(word.chomp)
+  protected
+
+  def spellcheck_html_like(content, params)
+    ignore_classes = params.fetch(:ignore, IGNORE_CLASSES)
+    namespaces = params.fetch(:namespaces, {})
+    type       = params.fetch(:type)
+
+    case type
+    when :html
+      klass = ::Nokogiri::HTML
+    when :xhtml
+      klass = ::Nokogiri::XML
+      # FIXME: cleanup because it is ugly
+      # this cleans the XHTML namespace to process fragments and full
+      # documents in the same way. At least, Nokogiri adds this namespace
+      # if detects the `html` element.
+      content = content.sub(%r{(<html[^>]+)xmlns="http://www.w3.org/1999/xhtml"}, '\1')
+    end
+
+    nokogiri_process(content, ignore_classes, namespaces, klass, type)
+  end
+
+  def nokogiri_process(content, ignore_classes, namespaces, klass, type)
+    # Ensure that all prefixes are strings
+    namespaces = namespaces.reduce({}) { |new, (prefix, uri)| new.merge(prefix.to_s => uri) }
+
+    doc = content =~ /<html[\s>]/ ? klass.parse(content) : klass.fragment(content)
+    doc.traverse do |node|
+      parent = node.parent
+      if node.text? && parent.element?
+        next if ignore_classes.include?(parent['class'])
+
+        node_lang = find_node_lang(node)
+        dic = dictionary(node_lang)
+        depend_on_attributes(dic.dependencies)
+
+        original_text = node.text
+        checked_text = original_text.gsub(/([[:word:]]+(?:['’][[:word:]]+)?)/) do |word|
+          if dic.valid?(word) || (node.previous && dic.valid?(node.previous.text + word))
+            word
+          else
+            "<mark class=\"misspelled\">#{word}</mark>"
+          end
+        end
+        node.replace(checked_text)
       end
     end
 
-    checker.spellcheck(content)
-  end
-end
-
-class HTML_Spellchecker
-
-  def add(word)
-    if word.include?('/') then
-      words = word.split('/', 2)
-      @dict.add_with_affix(words.first, words.last)
-    else
-      @dict.add(word)
-    end
+    doc.to_s
   end
 
+  def find_node_lang(node)
+    # `node.lang` only works for `xml:lang` attributes in Nokogiri
+    node.lang || node.xpath('(ancestor::*[@lang][1]/@lang)[last()]').map(&:value).first
+  end
+
+  def depend_on_attributes(items)
+    items = items.map { |i| i.is_a?(Nanoc::ItemWithRepsView) ? i.unwrap : i }
+
+    dependency_tracker = @assigns[:item]._context.dependency_tracker
+    items.each { |item| dependency_tracker.bounce(item, attributes: true) }
+  end
 end

@@ -37,6 +37,12 @@ data_sources:
   - type: dependencies
     items_root: &meta_items_root /lifepreserver
 
+  - type : dictionaries
+    items_root: *meta_items_root
+    directories:
+      - 'etc/dictionaries'
+    supported_languages: [ 'en_US', 'en_GB', 'es_ES', 'fr_FR', 'nl_NL' ]
+
   - type: tags
     items_root: *meta_items_root
 
@@ -71,6 +77,9 @@ environments:
       archives_url: /archives
       authors_url: /authors
       feed_url: /blog/feed
+
+    cache:
+      short_urls: 'var/short_urls.yaml'
 
     company:
       page_url: /company

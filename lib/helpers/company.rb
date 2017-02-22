@@ -43,7 +43,7 @@ module LifePreserver
     def sorted_people
       people = @items.find_all('/company/people/*')
       people.sort_by do |p|
-        [ p[:last_name], p[:first_name] ]
+        [p[:last_name], p[:first_name]]
       end
     end
 

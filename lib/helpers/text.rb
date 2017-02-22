@@ -3,7 +3,7 @@ require 'digest/md5'
 
 module LifePreserver
   module Text
-    def to_slug(separator = "-")
+    def to_slug(separator = '-')
       ActiveSupport::Inflector.parameterize(self, separator: separator)
     end
 

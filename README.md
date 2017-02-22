@@ -12,11 +12,11 @@ The following external dependencies or system packages need to be installed and
 in scope before compiling:
 
 * Ruby (with [bundler], i.e. `gem install bundler`)
-* [pandoc] and [ConTeXt] for PDF generation of reports
-* [hunspell] for spell-checking (with the [optional fix][apostrophe fix] for
-  the en_US apostrophe handling)
+* [pandoc] for markdown processing
+* [ConTeXt] for PDF generation of reports
+* [hunspell] _(>= 1.3.4)_ for spell-checking
 * [git] for version tagging and history management
-* A JavaScript runtime, such as [node] (or any runtime that [ExecJS] supports)
+* A JavaScript runtime, such as [node] (or any runtime that [ExecJS] supports),
   for [UglifyJS] and [bower]. _(note: currently you need to install `bower`
     manually, e.g. `npm install bower -g`)_
 
@@ -37,13 +37,7 @@ $ cd lifepreserver
 $ git submodule init
 $ git submodule update
 $ bower install
-$ bundle install
-```
-
-### Add experimental Nanoc feature for environments support (for now)
-
-```bash
-$ export NANOC_FEATURES=environments # or place this in `.bashrc` or equivalent
+$ bundle install --with development test
 ```
 
 ### And compile!
@@ -56,13 +50,13 @@ $ bundle exec nanoc [compile] [--verbose]
 
 ```bash
 # either
-$ nanoc view   # if you are only dealing with statically generated pages
+$ nanoc static-view # if you are only dealing with statically generated pages
 # or
-$ nanoc server # if you are dealing with both the static and dynamic aspects of the site
+$ nanoc server      # if you are dealing with both the static and dynamic aspects of the site
 ```
 
 And view the page in your browser at [port 3000](http://localhost:3000/) for
-`nanoc view` or [port 4125](https://localhost:4125/) for `nanoc server`.
+`nanoc static-view` or [port 4125](https://localhost:4125/) for `nanoc server`.
 
 ## Contributing
 

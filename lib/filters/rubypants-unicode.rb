@@ -1,5 +1,4 @@
 class RubyPantsUnicode < Nanoc::Filter
-
   identifier :rubypantsunicode
 
   requires 'rubypants-unicode'
@@ -10,8 +9,7 @@ class RubyPantsUnicode < Nanoc::Filter
   # @param [String] content The content to filter
   #
   # @return [String] The filtered content
-  def run(content, params={})
+  def run(content, _params = {})
     ::RubyPants.new(content).to_html
   end
-
 end

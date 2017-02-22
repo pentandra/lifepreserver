@@ -28,9 +28,10 @@ Class.new(Nanoc::DataSource) do
         version:   gem.version.to_s,
         group:     group_name,
         authors:   gem.authors,
-        is_hidden: true
+        is_hidden: true,
       },
       Nanoc::Identifier.new("/dependencies/#{group_name.parameterize}/#{gem.name.parameterize}"),
-      checksum_data: "name=#{gem.name},version=#{gem.version},group=#{group_name}")
+      checksum_data: "name=#{gem.name},version=#{gem.version},group=#{group_name}",
+    )
   end
 end

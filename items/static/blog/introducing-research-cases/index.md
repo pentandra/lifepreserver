@@ -56,13 +56,7 @@ piecemeal, informal fashion---thought upon thought.
 
 <figure id="fig:vanLeeuwenhoek" class="img" property="schema:image" resource="#leeuwenhoek" typeof="schema:ImageObject">
   <img property="schema:contentUrl" src="Jan_Verkolje_-_Antonie_van_Leeuwenhoek.jpg" class="static" alt="A portrait of Antonie van Leeuwenhoek by Jan Verkolje" />
-  <figcaption class="small">
-
-    <b>Antonie van Leeuwenhoek</b>, here posing with his favored device of
-    scientific communication: the letter. Portrait by the Dutch <a
-    href="http://en.wikipedia.org/wiki/Jan_Verkolje">Jan Verkolje</a>.
-
-  </figcaption>
+  <figcaption><b lang="nl">Antonie van Leeuwenhoek</b>, here posing with his favored device of scientific communication: the letter. Portrait by the Dutch <a href="http://en.wikipedia.org/wiki/Jan_Verkolje"><span lang="nl">Jan Verkolje</span></a>.</figcaption>
 </figure>
 
 This happy-looking gentleman, [Antonie van Leeuwenhoek], is regarded by many as
@@ -119,22 +113,7 @@ industry have only exacerbated the problem.
 
 <figure id="fig:ivorytowers" class="img" property="schema:image" resource="#ivorytowers" typeof="schema:ImageObject">
   <img property="schema:contentUrl" src="ivory_towers.jpg" class="static" alt="The Hawksmoor Towers of All Souls College, University of Oxford" />
-  <figcaption class="small">
-
-    <b>The formidable Hawksmoor Towers</b> of <a
-    href="https://en.wikipedia.org/wiki/All_Souls_College,_Oxford">All Souls
-    College</a>, University of Oxford, which have become a symbol of the ivory
-    towers of research, or the disconnection between research and the public.
-    Photo by <a property="cc:attributionName"
-    rel="cc:attributionURL"
-    href="https://commons.wikimedia.org/wiki/User:Godot13">Andrew Shiva</a>,
-    licensed under a <a rel="cc:license"
-    href="http://creativecommons.org/licenses/by-sa/3.0/"><abbr title="Creative
-    Commons Attribution-Share Alike 3.0 Unported">CC-BY-SA</abbr> license</a>.
-    <span class="icon-cc"></span><span class="icon-cc-by"></span><span
-    class="icon-cc-sa"></span>
-
-  </figcaption>
+  <figcaption><b>The formidable Hawksmoor Towers</b> of <a href="https://en.wikipedia.org/wiki/All_Souls_College,_Oxford">All Souls College</a>, University of Oxford, which have become a symbol of the ivory towers of research, or the disconnection between research and the public. Photo by <a property="cc:attributionName" rel="cc:attributionURL" href="https://commons.wikimedia.org/wiki/User:Godot13">Andrew Shiva</a>, licensed under a <a rel="cc:license" href="http://creativecommons.org/licenses/by-sa/3.0/"><abbr title="Creative Commons Attribution-Share Alike 3.0 Unported">CC-BY-SA</abbr> license</a>. <span class="icon-cc"></span><span class="icon-cc-by"></span><span class="icon-cc-sa"></span></figcaption>
 </figure>
 
 The economics of the journal have led to an environment of centralization in
@@ -167,7 +146,7 @@ we learn from those early days of scientific correspondence?
 Andrea Rusnock said,
 
 <figure class="bq grab">
-  <blockquote cite="http://www.jstor.org/stable/4028081">
+  <blockquote cite="http://www.jstor.org/stable/4028081" lang="en-GB">
     <p>
 
       While publication and distribution of the Philosophical Transactions
@@ -225,7 +204,7 @@ be part of the future of research:
   smaller pieces brought together over time. These individual pieces need to be
   published in context with fine-grained attribution for all contributions
   made. Research shared this way would lower the administrative risk for
-  grantors and grantees, and open the door to micro-grants and other
+  granters and grantees, and open the door to micro-grants and other
   alternative funding models, which would enable greater maneuverability to
   follow the direction that the research leads.
 * We need to get away from the monoculture of the journal article as the only
@@ -243,11 +222,11 @@ be part of the future of research:
   fun!* If the fun is not inherent in the research itself, it should at least
   exist as a feeling of camaraderie amongst fellow discoverers.
 * Feedback and peer-review need to be introduced much earlier and continue
-  throughout the research process. As James Jurin said, 'All reasonings should
-  be left to the judgement of the Publick, to whom indeed it properly
-  belongs.'[^jurin]
+  throughout the research process. As James Jurin said, '<q lang="en-GB">All
+  reasonings should be left to the judgement of the <span
+  class="sic">Publick</span>, to whom indeed it properly belongs.</q>'[^jurin]
 
-We invite anyone interested [to participate](http://researchcases.org "Help out with Research Cases").
+We invite anyone interested [to participate](https://researchcases.org "Help out with Research Cases").
 {: .conclusion }
 
 # Notes
@@ -289,7 +268,7 @@ We invite anyone interested [to participate](http://researchcases.org "Help out 
     <span class="oldstyle">1753</span>:
 
     <figure class="bq grab">
-      <blockquote>
+      <blockquote lang="en-GB">
         <p>These Thoughts, my dear Friend, are many of them crude and hasty, and if I were merely ambitious of acquiring some Reputation in Philosophy, I ought to keep them by me, 'till corrected and improved by Time and farther Experience. But since even short Hints, and imperfect Experiments in any new Branch of Science, being communicated, have oftentimes a good Effect, in exciting the attention of the Ingenious to the Subject, and so becoming the Occasion of more exact disquisitions (as I before observed) and more compleat Discoveries, you are at Liberty to communicate this Paper to whom you please; it being of more Importance that Knowledge should increase, than that your Friend should be thought an accurate Philosopher.</p>
       </blockquote>
       <figcaption><p>--- Quoted in <a href="http://books.google.com/books/about/The_Invention_of_Air.html">The Invention of Air</a> by Steven Johnson</p></figcaption>
@@ -303,11 +282,13 @@ We invite anyone interested [to participate](http://researchcases.org "Help out 
 
 
 [Antonie van Leeuwenhoek]: https://en.wikipedia.org/wiki/Antonie_van_Leeuwenhoek "Leeuwenhoek on Wikipedia"
+{:lang="nl"}
 [Interlocutor]: http://en.wikipedia.org/wiki/Interlocutor_(linguistics) "Or in other words, the person who takes part in a conversation, the person to whom the letter is being written."
 [Enlightenment]: http://en.wikipedia.org/wiki/Age_of_Enlightenment "Age of Enlightment on Wikipedia"
 [Peter Collinson]: http://en.wikipedia.org/wiki/Peter_Collinson_%28botanist%29 "Peter Collinson on Wikipedia"
 [Benjamin Franklin]: http://en.wikipedia.org/wiki/Benjamin_Franklin "Benjamin Franklin on Wikipedia"
 [Journal des sçavans]: http://en.wikipedia.org/wiki/Journal_des_s%C3%A7avans "Journal des sçavans on Wikipedia"
+{:lang="fr"}
 [Republic of Letters]: https://en.wikipedia.org/wiki/Republic_of_Letters "Republic of Letters on Wikipedia"
 [Sapere Aude]: http://en.wikipedia.org/wiki/Sapere_aude "A Latin phrase meaning 'Dare to know'"
 [Answering the Question: What is Enlightenment?]: http://en.wikipedia.org/wiki/Answering_the_Question:_What_is_Enlightenment%3F

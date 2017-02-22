@@ -5,7 +5,7 @@ kind: article
 article_id: heading-to-oai8
 author_name: Chris Chapman
 created_at: 2013-04-29
-updated_at: 2013-05-03
+updated_at: 2017-02-15
 published: true
 tags:
   - Open Research
@@ -32,15 +32,18 @@ of research](/research/process/#sec:unit-of-research): the _case_.
 
 The second reason is that CERN is the birthplace of the [World Wide
 Web](http://en.wikipedia.org/wiki/World_Wide_Web). In <span
-class="oldstyle">1990</span>, Tim Berners-Lee and Robert Cailliau,
-[proposed](http://www.w3.org/Proposal.html) to develop a system that would use
-hypertext as "a way to link and access information of various kinds as a web of
-nodes in which the user can browse at will."[^1] Kind of a cool idea, isn't it?
+class="oldstyle">1990</span>, Tim Berners-Lee and <span lang="fr">Robert
+Cailliau</span>, [proposed](http://www.w3.org/Proposal.html) to develop a
+system that would use hypertext as "a way to link and access information of
+various kinds as a web of nodes in which the user can browse at
+will."[^first-website] Kind of a cool idea, isn't it?
 
-The semantic web builds on this idea, but instead of linking _web pages_
-together, hypertext is used to link _data_ together. In a way, what we are
-doing takes it a step further, linking the various elements of _research_
-together.
+While their original idea included linking _web pages_ together using hypertext
+(which is what we are used to thinking of when we think of the Web, and is
+probably how you ended up here reading this post), it was not limited to this.
+Their original idea extended to linking pieces of _data_ together. In a way,
+what we are doing takes it a step further, linking the various elements of
+_research_ together.
 
 Without the contributions of these two men and thousands of others, there is no
 way that we could even _imagine_ trying to accomplish what we are working on
@@ -49,9 +52,11 @@ now.
 Thank you, all!
 {: .conclusion }
 
-[^1]: CERN has been busy trying to preserve [this moment in history](http://info.cern.ch/).
-      For a bit of nostalgia, here is a link to the first web site---_ever_:
-      [http://info.cern.ch/hypertext/WWW/TheProject.html](http://info.cern.ch/hypertext/WWW/TheProject.html)
+[^first-website]: 
+
+    CERN has been busy trying to preserve [this moment in
+    history](http://info.cern.ch/). For a bit of nostalgia, here is a link to
+    the first web site---<em>ever</em>: [http://info.cern.ch/hypertext/WWW/TheProject.html](http://info.cern.ch/hypertext/WWW/TheProject.html){:.uri}
 
 
 *[CERN]: Organisation européenne pour la recherche nucléaire (English: European Organization for Nuclear Research)

@@ -1,5 +1,5 @@
 # Aggregated JavaScript scripts
- 
+
 compile '/static/assets/scripts/*.js.erb' do
   filter :erb, @config[:erb]
   filter :uglify_js if @config[:production]
@@ -7,7 +7,7 @@ compile '/static/assets/scripts/*.js.erb' do
 end
 
 # Other JavaScript scripts
- 
+
 compile '/static/assets/scripts/*.js' do
   filter :uglify_js if @config[:production]
   write '/static/js/' + File.basename(@item.identifier.to_s)

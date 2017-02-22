@@ -1,5 +1,6 @@
 require 'open3'
 require 'json'
+require 'nokogiri'
 
 check :html5 do
   cmd = "java -jar opt/validator/vnu.jar --format json --skip-non-html --schema http://s.validator.nu/html5-all.rnc #{@config[:output_dir]}"
@@ -36,8 +37,19 @@ check :no_static_build_paths do
   uris.each_pair do |href, fns|
     fns.each do |filename|
       if href.start_with?(@config[:static_root])
-        add_issue("private build path present in #{href}", subject: filename)
+        add_issue("private build path detected in #{href}", subject: filename)
       end
+    end
+  end
+end
+
+check :spelling do
+  filenames = @output_filenames.select { |f| File.extname(f) == '.html' }
+
+  filenames.each do |filename|
+    doc = Nokogiri::HTML(File.read(filename))
+    doc.xpath('descendant-or-self::mark[@class="misspelled"]').each do |node|
+      add_issue("misspelled word '#{node.text}' detected on line #{node.line}", subject: filename)
     end
   end
 end
@@ -48,5 +60,6 @@ deploy_check :stale
 deploy_check :no_unprocessed_erb
 deploy_check :no_unprocessed_markdown
 deploy_check :no_static_build_paths
+deploy_check :spelling
 
 # vi: ft=ruby

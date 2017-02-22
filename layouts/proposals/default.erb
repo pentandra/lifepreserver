@@ -1,0 +1,15 @@
+<% render('/default.*') do %>
+  <article class="group proposal" resource="#proposal" typeof="schema:Report" property="schema:mainEntity">
+    <header class="section">
+      <h1 property="dc:title schema:headline"><%= @item[:title] %></h1>
+      <div class="group meta">
+        <meta property="schema:copyrightYear" datatype="xsd:gYear" content="<%= @item[:created_at].year %>" />
+        <link property="rdfa:copy" resource="pentandra-website:license" />
+      </div>
+    </header>
+    <div class="bd">
+      <%= yield %>
+    </div>
+    <%= render('/proposals/partials/sidebar.*') %>
+  </article>
+<% end %>

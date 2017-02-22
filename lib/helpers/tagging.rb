@@ -42,15 +42,15 @@ module LifePreserver
     #
     # @param [Nanoc::ItemWithoutRepsView] item the item to check
     # @param [String, Nanoc::ItemWithoutRepsView] tag the tag, either a string or tag item
-    # 
+    #
     # @return true if item is tagged such, otherwise false
-    def has_tag?(item, tag)
+    def tag?(item, tag)
       Array(item.unwrap.attributes[:tags]).include?(tag.is_a?(String) ? tag : tag[:tag])
     end
 
     def items_with_tag(tag, items = nil)
       items = @items if items.nil?
-      items.select { |item| has_tag?(item, tag) }
+      items.select { |item| tag?(item, tag) }
     end
 
     # Returns a link to the specified tag.
@@ -61,9 +61,9 @@ module LifePreserver
       end
 
       if rel_tag && tag[:semantic]
-        %[<a href="#{@config[:blog][:tags_url]}/#{h tag[:tag].to_slug}/" rel="tag ctag:tagged" resource="##{h tag[:tag].to_slug('_')}_tag" typeof="ctag:AuthorTag"><link property="ctag:means" resource="#{RDF::URI.new(tag[:uri]).pname}" typeof="#{RDF::URI.new(tag.fetch(:type, RDF::OWL.Thing)).pname}" /><span property="ctag:label">#{h tag[:tag]}</span></a>]
+        %(<a href="#{@config[:blog][:tags_url]}/#{h tag[:tag].to_slug}/" rel="tag ctag:tagged" resource="##{h tag[:tag].to_slug('_')}_tag" typeof="ctag:AuthorTag"><link property="ctag:means" resource="#{RDF::URI.new(tag[:uri]).pname}" typeof="#{RDF::URI.new(tag.fetch(:type, RDF::OWL.Thing)).pname}" /><span property="ctag:label">#{h tag[:tag]}</span></a>)
       else
-        %[<a href="#{@config[:blog][:tags_url]}/#{h tag[:tag].to_slug}/"#{" rel=\"tag\"" if rel_tag}>#{h tag[:tag]}</a>]
+        %(<a href="#{@config[:blog][:tags_url]}/#{h tag[:tag].to_slug}/"#{' rel="tag"' if rel_tag}>#{h tag[:tag]}</a>)
       end
     end
 
@@ -76,16 +76,16 @@ module LifePreserver
     #
     # See http://microformats.org/wiki/rel-tag
     def link_for_tagcloud(tag)
-      link_for_tag(tag, rel_tag: false) 
+      link_for_tag(tag, rel_tag: false)
     end
 
     # Uses the convention by DBpedia that the first sentence of a new paragraph
     # is concatenated to the last sentence of the previous paragraph without a
     # space between.
     def parse_abstract(abstract)
-      paragraphs = abstract.split(%r{((?<=[a-z0-9])[.!?]['"]?(?=[A-Z0-9]))})
-      paragraphs.reduce(String.new) do |acc, p|
-        acc << ( p =~ /^[.!?'"]+$/ ? p + "</p>" : "<p>" + p )
+      paragraphs = abstract.split(/((?<=[a-z0-9])[.!?]['"]?(?=[A-Z0-9]))/)
+      paragraphs.reduce('') do |acc, p|
+        acc << (p =~ /^[.!?'"]+$/ ? p + '</p>' : '<p>' + p)
       end
     end
 
@@ -94,10 +94,10 @@ module LifePreserver
       items = @items if items.nil?
       tag_set(items).map { |tag_name| @items["/lifepreserver/tags/#{tag_name.to_slug}"] }.each do |tag|
         @items.create(
-          %[<%= render("/blog/tag.*", tag: @items["#{tag.identifier}"]) %>],
-          { title: "Tag: #{tag.fetch(:label, tag[:tag])}", kind: "tag-page", is_hidden: true, description: "All posts having to do with the tag '#{tag[:tag]}'" },
+          %(<%= render('/blog/tag.*', tag: @items['#{tag.identifier}']) %>),
+          { title: "Tag: #{tag.fetch(:label, tag[:tag])}", kind: 'tag-page', is_hidden: true, description: "All posts having to do with the tag '#{tag[:tag]}'" },
           "#{@config[:blog][:tags_url]}/#{tag[:tag].to_slug}/index.erb",
-          binary: false
+          binary: false,
         )
       end
     end

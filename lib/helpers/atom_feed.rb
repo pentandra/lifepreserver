@@ -4,11 +4,11 @@ require_relative 'dates'
 
 module LifePreserver
   module AtomFeed
-    class AtomFeedBuilder
-      include LifePreserver::Blogging
-      include LifePreserver::LinkTo
-      include LifePreserver::Dates
+    include LifePreserver::Dates
+    include LifePreserver::LinkTo
+    include LifePreserver::Blogging
 
+    class AtomFeedBuilder
       attr_accessor :config
 
       attr_accessor :limit
@@ -195,7 +195,7 @@ module LifePreserver
 
       formatted_date = attribute_to_time(item[:created_at]).__nanoc_to_iso8601_date
 
-      'tag:' + hostname + ',' + formatted_date + ':' + base_dir + (path_to(item) || item.identifier.to_s)
+      'tag:' + hostname + ',' + formatted_date + ':' + base_dir + path_to(item)
     end
   end
 end

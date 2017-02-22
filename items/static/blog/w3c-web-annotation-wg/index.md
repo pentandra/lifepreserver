@@ -30,9 +30,8 @@ everyone just realized the importance of this work, and that collaboration was
 essential for success.  I have learned a lot watching this process, and have
 been impressed by everyone in the [Open Annotation Collaboration][oac],
 especially Rob Sanderson, Paolo Ciccarese, and Herbert Van de Sompel for their
-vision and inclusive approach.  Thanks to [Hypothes.is][h] for sponsoring the
+vision and inclusive approach. Thanks to [Hypothes.is][h] for sponsoring the
 W3C workshop that helped to make all of this happen.
-
 
 Since the [creation of the World Wide Web][oai8], not all has been
 [peachy-keen][pk]. The original vision of the Web, according to Tim
@@ -69,9 +68,9 @@ this gives us, as a research community, enormous potential for moving beyond
 
 To understand why web annotations are useful for research, we need to look a
 little deeper at what research _is_. The verb _research_ is from the Old French
-<dfn id="def-recercher">recercher</dfn>, which means to _seek out_, or _search
-closely_.[^term-research] The <dfn id="def-re-">re-</dfn> prefix means _back to
-the original place; again, anew, once more_, also with sense of
+<dfn id="def-recercher" lang="fr">recercher</dfn>, which means to _seek out_,
+or _search closely_.[^term-research] The <dfn id="def-re-">re-</dfn> prefix
+means _back to the original place; again, anew, once more_, also with sense of
 _undoing_.[^term-re-] No wonder we beat our heads against the wall sometimes!
 It often feels like we need to start over again for the umpteenth time.
 
@@ -84,8 +83,8 @@ until new knowledge, in the form of a [conclusion][C], is obtained.
 <figure resource="#simulated-higgs" class="img" typeof="schema:ImageObject prov:Entity">
   <link property="prov:wasDerivedFrom" href="https://cds.cern.ch/record/628469" typeof="prov:Entity" />
   <img property="schema:contentUrl" class="static" alt="CMS: Simulated Higgs to two jets and two electrons" src="higgsboson.jpeg" />
-  <figcaption class="small">
-    <b property="dc:title schema:name">CMS: Simulated Higgs to two jets and two electrons</b>
+  <figcaption>
+    <b property="dc:title schema:name">Simulated Higgs to two jets and two electrons</b>
     by <a href="http://cern.ch" property="cc:attributionName" rel="cc:attributionURL dc:creator">CERN</a>.
     <span property="dc:description">Here a Higgs boson is produced which decays
     into two jets of hadrons and two electrons. The lines represent the
@@ -127,17 +126,7 @@ means for genealogy. Bring on the Web!
   <div class="embed-container wideScreen"> 
     <iframe property="schema:contentUrl" src="annotation-architecture.svg" class="simple static"></iframe>
   </div>
-
-  <figcaption class="small" property="schema:caption"><span
-  property="dc:description schema:description"><b property="schema:name
-  dc:title">Web Annotation Architecture</b>, an infographic from the <span
-  property="schema:author dc:creator" resource="http://www.w3.org">W3C</span>
-  about web annotations.</span> <a href="annotation-architecture.svg">Display
-  fullscreen</a> for the best viewing experience. Licensed under a <a
-  property="cc:license"
-  href="http://creativecommons.org/publicdomain/zero/1.0/">CC0 license.</a>
-  <span class="icon-cc"></span><span class="icon-cc-zero"></span></figcaption>
-
+  <figcaption property="schema:caption"><span property="dc:description schema:description"><b property="schema:name dc:title">Web Annotation Architecture</b>, an infographic from the <span property="schema:author dc:creator" resource="http://www.w3.org">W3C</span> about web annotations.</span> <a href="annotation-architecture.svg">Display fullscreen</a> for the best viewing experience. Licensed under a <a property="cc:license" href="http://creativecommons.org/publicdomain/zero/1.0/">CC0 license.</a> <span class="icon-cc"></span><span class="icon-cc-zero"></span></figcaption>
 </figure>
 
 # Notes
@@ -168,6 +157,7 @@ means for genealogy. Bring on the Web!
 [iwc]: http://indiewebcamp.com/
 [corporatism]: http://www.economicpolicyjournal.com/2009/11/explaining-difference-between.html "Capitalism vs Corporatism"
 [h]: https://hypothes.is/
+{:.domainname}
 
 *[W3C]: World Wide Web Consortium
 *[RDF]: Resource Description Framework

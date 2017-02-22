@@ -15,16 +15,16 @@ Class.new(Nanoc::DataSource) do
       '',
       {
         mtime: mtime_of(@config[:company_metafile]),
-        is_hidden: true
+        is_hidden: true,
       }.merge(@company_info[:company]),
-      Nanoc::Identifier.new("/company/_"))
-      
+      Nanoc::Identifier.new('/company/_'),
+    )
+
     @company_info[:people].each do |person|
       items << person_to_item(person)
     end
 
     items
-
   end
 
   protected
@@ -35,17 +35,17 @@ Class.new(Nanoc::DataSource) do
 
     attributes = {
       kind: 'person',
-      is_hidden: true
+      is_hidden: true,
     }
 
     new_item(
       full_name,
       attributes.merge(person),
-      Nanoc::Identifier.new("/company/people/_#{slug}"))
+      Nanoc::Identifier.new("/company/people/_#{slug}"),
+    )
   end
 
   def mtime_of(meta_filename)
     File.stat(meta_filename).mtime
   end
-
 end

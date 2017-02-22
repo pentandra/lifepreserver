@@ -44,12 +44,12 @@ specific:
 > and make research more accessible to the world.
 {: .bq .grab }
 
-In our original mission "chang\[ing\] the way the world does research" sounds a
-little vague. There are many ways to change the way people do research, and a
-lot of those changes could be bad! Our passion is really in preserving the
-research process. Preserving the process leads to the acceleration of future
-research because you don't have to do as much backtracking of your own research
-or guessing what other researchers have done.
+In our original mission "<span class="sic">chang\[ing\]</span> the way the
+world does research" sounds a little vague. There are many ways to change the
+way people do research, and a lot of those changes could be bad! Our passion is
+really in preserving the research process. Preserving the process leads to the
+acceleration of future research because you don't have to do as much
+backtracking of your own research or guessing what other researchers have done.
 
 The last sentence grew quite a bit.
 

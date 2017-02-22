@@ -1,15 +1,14 @@
-require 'rdf'
-require 'rdf/turtle'
-require 'sparql'
-require 'yaml'
-
 usage     'gen-voaf-metadata'
 aliases   :gvm, :voaf
 summary   'generates curated metadata for voaf vocabularies from the voaf dataset'
 
-run do |opts, args, cmd|
+run do |_opts, _args, _cmd|
+  require 'rdf'
+  require 'rdf/turtle'
+  require 'sparql'
+  require 'yaml'
 
-  puts "Loading voaf dataset…"
+  $stderr.puts 'Loading voaf dataset…'
 
   repository = RDF::Repository.load('etc/datasets/lov.n3')
 
@@ -29,7 +28,7 @@ run do |opts, args, cmd|
     }
   QUERY
 
-  puts "Querying data…"
+  $stderr.puts 'Querying data…'
 
   SPARQL.execute(query, repository).each do |solution|
     vocab = solution[:vocab].to_s.to_sym
@@ -37,9 +36,9 @@ run do |opts, args, cmd|
     solution.each_binding { |name, v| data[vocab][name] = v.value unless name == :vocab }
   end
 
-  puts "Writing metadata…"
+  $stderr.puts 'Writing metadata…'
 
-  File.open("var/voaf_metadata.yaml", 'w+') { |io| io.write(YAML.dump(data)) }
+  File.open('var/voaf_metadata.yaml', 'w+') { |io| io.write(YAML.dump(data)) }
 
-  puts "Finished!"
+  $stderr.puts 'Finished!'
 end

@@ -1,7 +1,6 @@
 require_relative '../helpers/link_to'
 
 class RdfDistiller < Nanoc::Filter
-
   identifiers :rdf_distiller
 
   requires 'linkeddata', 'active_support/core_ext/string/inflections'
@@ -29,10 +28,9 @@ class RdfDistiller < Nanoc::Filter
   # @param [Hash] params
   #
   # @return [String] The distilled content
-  def run(_content, params={})
-
+  def run(_content, params = {})
     input = params.fetch(:input_format, @item.identifier.ext)
-    output = params.fetch(:format, "turtle")
+    output = params.fetch(:format, 'turtle')
 
     base_uri = params[:base_uri] || @item[:base_uri] || path_to(@item, global: true)
     prefix = params[:prefix] || @item[:prefix] || File.basename(@item.identifier.without_exts).camelize
@@ -43,20 +41,20 @@ class RdfDistiller < Nanoc::Filter
     options = {
       prefixes: prefixes,
       base_uri: base_uri,
-      validate: true
+      validate: true,
     }
 
     repository = RDF::Repository.new
-    
+
     RDF::Reader.for(input.to_sym).new(assigns[:content], options) { |reader| repository << reader }
-    
+
     if repository.has_statement?(RDF::Statement(RDF::URI.new(base_uri), RDF.type, RDF::OWL.Ontology))
       vocab = RDF::Vocabulary.find(base_uri) || RDF::Vocabulary.from_graph(repository, url: base_uri, class_name: prefix.to_s.upcase)
-    
+
       case output_format
       when :turtle
         vocab.to_ttl(graph: repository, prefixes: prefixes)
-      when :jsonld 
+      when :jsonld
         vocab.to_jsonld(graph: repository, prefixes: prefixes)
       when :rdfa
         raise 'The HTML/RDFa output format can only be run as a layout' unless assigns[:layout]
@@ -67,7 +65,5 @@ class RdfDistiller < Nanoc::Filter
     else
       repository.dump(output_format, options)
     end
-
   end
-
 end

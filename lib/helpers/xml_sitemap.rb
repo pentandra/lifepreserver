@@ -32,7 +32,7 @@ module Nanoc::Helpers
           reps.reject! { |r| !select_proc[r] } if select_proc
           reps.sort_by { |r| r.name.to_s }.each do |rep|
             xml.url do
-              xml.loc path_to(rep, global: true)
+              xml.loc URI.escape(path_to(rep, global: true))
               xml.lastmod item[:mtime].__nanoc_to_iso8601_date unless item[:mtime].nil?
               xml.changefreq item[:changefreq] unless item[:changefreq].nil?
               xml.priority item[:priority] unless item[:priority].nil?

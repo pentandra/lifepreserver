@@ -55,7 +55,7 @@ tell what is in his or her mind, nor what he or she is thinking.
 <figure id="fig:squarehead" class="img" property="schema:image" resource="#squarehead" typeof="schema:ImageObject">
   <link property="schema:representativeOfPage" resource="schema:True"/>
   <img property="schema:contentUrl" src="square_head.jpg" class="static" alt="Tête carrée, or Square Head, a library in Nice, France" />
-  <figcaption property="schema:caption" class="small"><a href="https://www.flickr.com/photos/14382098@N03/4300141401/" lang="fr" title="Une tête au carré à Nice on Flickr"><b>Une tête au carré à Nice</b></a> (A square head in Nice) by <a lang="fr" property="cc:attributionName" rel="cc:attributionURL" href="https://www.flickr.com/photos/14382098@N03/">Benoît Lesquerbault</a>, licensed under a <a rel="cc:license" href="https://creativecommons.org/licenses/by/2.0/"><abbr title="Creative Commons Attribution 2.0 Generic">CC-BY</abbr></a> license, is actually the seven-story administration building of the municipal library in <span property="schema:contentLocation">Nice, France</span>. The sculptor, Sacha Sosno, uses the art of obliteration to invite the viewer to imagine the rest the sculpture. <span class="icon-cc"></span><span class="icon-cc-by"></span></figcaption>
+  <figcaption property="schema:caption"><a href="https://www.flickr.com/photos/14382098@N03/4300141401/" lang="fr" title="Une tête au carré à Nice on Flickr"><b>Une tête au carré à Nice</b></a> (A square head in Nice) by <a lang="fr" property="cc:attributionName" rel="cc:attributionURL" href="https://www.flickr.com/photos/14382098@N03/">Benoît Lesquerbault</a>, licensed under a <a rel="cc:license" href="https://creativecommons.org/licenses/by/2.0/"><abbr title="Creative Commons Attribution 2.0 Generic">CC-BY</abbr></a> license, is actually the seven-story administration building of the municipal library in <span property="schema:contentLocation">Nice, France</span>. The sculptor, Sacha Sosno, uses the art of obliteration to invite the viewer to imagine the rest the sculpture. <span class="icon-cc"></span><span class="icon-cc-by"></span></figcaption>
 </figure>
 
 Libraries are repositories of knowledge. You could think of books, the Web, and
@@ -150,7 +150,7 @@ beginnings of the World Wide Web. In the early <span
 class="oldstyle">90</span>'s, the Web was the domain of technical futurists.
 Now the Web is cool, and everyone seems to be on the Web in some form or
 fashion. Anyone can become a web developer, blogger, or contribute something in
-some way, without anyone else's permission. Anyone—a curious student to a
+some way, without anyone else for permission. Anyone—a curious student to a
 professional scholar or a seasoned entrepreneur to an aspiring researcher in a
 third-world country—should be able to share their journey of discovery in a
 simple, open way. This mechanism should be simple enough to track elementary
@@ -165,7 +165,7 @@ well.
 
 <figure id="fig:alice" class="img" property="schema:image" resource="#alice" typeof="schema:ImageObject">
   <a property="schema:contentUrl" href="LRsaba_CERN_0212_00676.jpg" title="Click for maximum coolness"><img property="schema:thumbnail" src="LHR_alice.jpg" class="static" alt="People working on the ALICE detector at the Large Hadron Collider" /></a>
-  <figcaption property="schema:caption" class="small">The <a href="http://cds.cern.ch/record/1436153"><abbr>ALICE</abbr> detector</a>, part of the Large Hadron Collider at <span property="schema:contentLocation">CERN</span>. Detectors along the LHC can produce <em>a lot</em> of data for research, <a href="https://en.wikipedia.org/wiki/Worldwide_LHC_Computing_Grid" title= "Worldwide LHC Computing Grid on Wikipedia">about <span class="oldstyle">300</span> gigabytes per second</a>. Image copyright <span class="oldstyle">© <span property="schema:copyrightYear">2012</span>--2015</span> <span property="schema:copyrightHolder" resource="http://home.web.cern.ch/">CERN</span>. <a href="http://copyright.cern.ch" rel="schema:publishingPrinciples">Used by permission</a>.</figcaption>
+  <figcaption property="schema:caption">The <a href="http://cds.cern.ch/record/1436153"><abbr>ALICE</abbr> detector</a>, part of the Large Hadron Collider at <span property="schema:contentLocation">CERN</span>. Detectors along the LHC can produce <em>a lot</em> of data for research, <a href="https://en.wikipedia.org/wiki/Worldwide_LHC_Computing_Grid" title= "Worldwide LHC Computing Grid on Wikipedia">about <span class="oldstyle">300</span> gigabytes per second</a>. Image copyright <span class="oldstyle">© <span property="schema:copyrightYear">2012</span>--2015</span> <span property="schema:copyrightHolder" resource="http://home.web.cern.ch/">CERN</span>. <a href="http://copyright.cern.ch" rel="schema:publishingPrinciples">Used by permission</a>.</figcaption>
 </figure>
 
 So why does knowledge need to be opened up? And what would be the benefit of
@@ -196,4 +196,3 @@ our minds to the world.
 *[LHC]: Large Hadron Collider
 *[ALICE]: A Large Ion Collider Experiment
 *[PhD]: Doctor of Philosophy
-[^lhc_computing_grid]: https://en.wikipedia.org/wiki/Worldwide_LHC_Computing_Grid

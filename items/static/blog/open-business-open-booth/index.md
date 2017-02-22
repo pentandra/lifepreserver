@@ -68,7 +68,7 @@ We have the most comfy seats in the exhibit hall (blatantly biased opinion of
 course), or at least the brightest red ones (unless someone else has decided
 to follow our comfy and flashy example). There are only five of these sweet
 chairs, which makes them absolutely perfect for a great small group discussion.
-Each conference we have been to lately has had “un-conferencing” sessions to
+Each conference we have been to lately has had _unconferencing_ sessions to
 open an opportunity to cover even more topics than can be covered by even the
 richest of conference programs. I love that idea! Now we want to take that idea
 and partner it with our desire to support good research.
@@ -84,9 +84,7 @@ like well-led roundtable discussions on a variety of research subjects.
 
 <figure class="img">
   <img class="static" alt="The cozy chairs in our booth" src="booth_chairs.jpg" />
-  <figcaption class="small">
-    Our cozy chairs.
-  </figcaption>
+  <figcaption>Our cozy chairs.</figcaption>
 </figure>
 
 I have seen hangouts, Q&A sessions, chats, webinars, and video conferences
@@ -149,14 +147,15 @@ Alright, let me attempt to break this down into some straightforward
 particulars.
 
 1. You let us know that you would like to present or lead a discussion on
-   ____________________ (your topic of choice) and any timing considerations
-   that you might have. (Obviously it would be silly to set you up with a time
-   to lead a discussion in the Open Booth while you are in the middle of giving
-   a lecture in another part of the conference center or while you are staffing
-   your local society's booth on the other side of the exhibit hall.)
+   _\[your topic of choice\]_ and any timing considerations that you might
+   have. (Obviously it would be silly to set you up with a time to lead a
+   discussion in the Open Booth while you are in the middle of giving a lecture
+   in another part of the conference center or while you are staffing your
+   local society's booth on the other side of the exhibit hall.)
 
-2. We set up a time for you on our schedule of Open Booth Chats. (Ooo, I just
-   made up that name for what to call these, I think I like it!)
+2. We set up a time for you on our schedule of Open Booth Chats. (<span
+   class="sic">Ooo</span>, I just made up that name for what to call these, I
+   think I like it!)
 
 3. We get the word out about your topic and the time of your Open Booth Chat in
    one of three ways. You just let me know which one you prefer and we go with

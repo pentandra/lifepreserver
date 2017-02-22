@@ -56,7 +56,7 @@ history][Andraka TEDx].
     <source property="schema:contentUrl" type="video/ogg" src="Cancer_Breakthrough.ogv" />
     <track kind="subtitles" src="Cancer_Breakthrough.en.srt" srclang="en" />
   </video>
-  <figcaption class="small"><span property="schema:description">An interview on Open Access to research journals with Dr. Francis S.  Collins, Director of the National Institutes of Health, and Jack Andraka. Presented by the <a property="cc:attributionName" rel="cc:attributionURL" href="http://www.righttoresearch.org">Right to Research Coalition</a>, with support from <abbr title="Scholarly Publishing and Academic Resources Coalition">SPARC</abbr> and the Society for Science and the Public.</span> Licensed under a <a rel="cc:license" href="http://creativecommons.org/licenses/by/3.0/"><abbr title="Creative Commons Attribution 3.0 Unported">CC-BY</abbr> license</a>. <span class="icon-cc"></span><span class="icon-cc-by"></span></figcaption>
+  <figcaption><span property="schema:description">An interview on Open Access to research journals with Dr. Francis S.  Collins, Director of the National Institutes of Health, and Jack Andraka. Presented by the <a property="cc:attributionName" rel="cc:attributionURL" href="http://www.righttoresearch.org">Right to Research Coalition</a>, with support from <abbr title="Scholarly Publishing and Academic Resources Coalition">SPARC</abbr> and the Society for Science and the Public.</span> Licensed under a <a rel="cc:license" href="http://creativecommons.org/licenses/by/3.0/"><abbr title="Creative Commons Attribution 3.0 Unported">CC-BY</abbr> license</a>. <span class="icon-cc"></span><span class="icon-cc-by"></span></figcaption>
 </figure>
 
 While people around the world have championed him, a few from the scientific
@@ -136,10 +136,10 @@ you want to know.
 I'm reminded of the [Pixar] movie <cite><a
 href="http://www.imdb.com/title/tt0382932/" title="Ratatouille on
 IMDb">Ratatouille</a></cite>. As you may know, the whole premise of the movie
-is Chef Gusteau's belief that *anyone can cook*. A talented rat named Remy is
-convinced that even he can be a great chef, so he finds a willing human to
-partner with---a garbage boy named Linguini---in becoming the cook of their
-collective dreams.
+is <span lang="fr">Chef Gusteau</span>'s belief that *anyone can cook*. A
+talented rat named Remy is convinced that even he can be a great chef, so he
+finds a willing human to partner with---a garbage boy named Linguini---in
+becoming the cook of their collective dreams.
 
 <figure id="fig:remy_finds_linguini" class="section" resource="#remy_finds_linguini" typeof="schema:VideoObject">
   <meta property="schema:bitrate" content="512k" />
@@ -153,7 +153,7 @@ collective dreams.
     <source property="schema:contentUrl" type="video/webm" src="remy_finds_linguini.webm" />
     <source property="schema:contentUrl" type="video/ogg" src="remy_finds_linguini.ogv" />
   </video>
-  <figcaption class="small" property="schema:description">Let anyone help with research? Sounds like a recipe for disaster! From the film <cite>Ratatouille</cite>. Copyright © Pixar.</figcaption>
+  <figcaption property="schema:description">Let anyone help with research? Sounds like a recipe for disaster! From the film <cite>Ratatouille</cite>. Copyright © Pixar.</figcaption>
 </figure>
 
 Their abilities are put to the test when Anton Ego, the most discriminating
@@ -163,7 +163,7 @@ find out the chef's true identity. The following is a quotation from his
 review:
 
 <figure id="fig:ego" class="bq grab">
-  <blockquote><p>In the past, I have made no secret of my disdain for Chef Gusteau's famous motto, 'Anyone can cook.' But I realize, only now do I truly understand what he meant. Not everyone can become a great artist; but a great artist can come from <em>anywhere</em>.</p></blockquote>
+<blockquote><p>In the past, I have made no secret of my disdain for <span lang="fr">Chef Gusteau</span>'s famous motto, 'Anyone can cook.' But I realize, only now do I truly understand what he meant. Not everyone can become a great artist; but a great artist can come from <em>anywhere</em>.</p></blockquote>
   <figcaption>--- Anton Ego, restaurant critic from <cite><a href="https://en.wikipedia.org/wiki/Ratatouille_(film)">Ratatouille</a></cite></figcaption>
 </figure>
 

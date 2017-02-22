@@ -20,7 +20,7 @@ tags:
   <meta property="schema:width" content="399 px" datatype="schema:Distance" />
   <meta property="schema:height" content="395 px" datatype="schema:Distance" />
   <img property="schema:contentUrl" src="Julia-domna.jpg" alt="Coin of Julia Domna I" data-no-retina class="static" />
-  <figcaption class="small">
+  <figcaption>
     This image, entitled <a href="https://commons.wikimedia.org/wiki/File:Julia-domna.jpg" rel="prov:wasDerivedFrom" property="schema:name dc:title">Coin of Julia Domna</a>,
     by
     <a href="http://en.wikipedia.org/wiki/User:Rasiel" property="cc:attributionName" rel="cc:attributionURL dc:creator">Rasiel Suarez</a>
@@ -122,7 +122,8 @@ need more researchers like that.
 # Notes
 
 [^1]: Abigail Pesta, "On Pins and Needles: Stylist Turns Ancient Hairdo Debate
-    on Its Head," <i>The Wall Street Journal</i>, February 7, 2013, A1 and A12.
+    on Its Head," <cite>The Wall Street Journal</cite>, February 7, 2013, <span
+    class="identifier">A1</span> and <span class="identifier">A12</span>.
 
 [^ja]: Ms. Stephens' journal article, _Ancient Roman hairdressing: on
     (hair)pins and needles_, is
@@ -132,12 +133,12 @@ need more researchers like that.
 [^1st-journals]:
 
     The original scientific journals, the <cite>Philosophical Transactions of
-    the Royal Society</cite> and the <cite>Journal des sçavans</cite>, were
-    created primarily to provide a means of establishing [scientific
-    priority](http://en.wikipedia.org/wiki/Scientific_priority), and not
-    necessarily to disseminate research to the public. Many researchers,
-    including Sir Isaac Newton and Gottfried Wilhelm von Leibniz actually
-    enciphered their findings using anagrams so that the uninformed could not
-    read them! For more information see [Academic
+    the Royal Society</cite> and the <cite lang="fr">Journal des
+    sçavans</cite>, were created primarily to provide a means of establishing
+    [scientific priority](http://en.wikipedia.org/wiki/Scientific_priority),
+    and not necessarily to disseminate research to the public. Many
+    researchers, including Sir Isaac Newton and Gottfried Wilhelm von Leibniz
+    actually enciphered their findings using anagrams so that the uninformed
+    could not read them! For more information see [Academic
     Publishing](http://en.wikipedia.org/wiki/Academic_publishing#History) on
     Wikipedia.
