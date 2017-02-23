@@ -31,7 +31,7 @@ has_media: true
 Last week I had the opportunity to participate in the second workshop of the
 Defining the Scholarly Commons project (I covered the first workshop in <%=
 link_to('an earlier blog posting', '/blog/reimagining-research-communications/',
-title: 'Pentandra Blog → Reimagining Research Communications') %>.
+title: 'Pentandra Blog → Reimagining Research Communications') %>).
 As you can tell from the squiggly line above, our course has not been straight,
 neither has it been smooth sailing. We have learned a lot, however, and even
 made some progress in the meantime.
