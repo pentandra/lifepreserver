@@ -39,7 +39,7 @@ preprocess do
   def extract_metadata_from_specification_documents
     require 'nokogiri'
 
-    @items.select { |item| item.identifier =~ %r{^/static/specifications/} }.each do |item|
+    @items.select { |item| item.identifier =~ %r{^/static/solutions/specifications/} }.each do |item|
       case item.identifier.ext
       when 'html'
         doc = Nokogiri::HTML(item.raw_content)
