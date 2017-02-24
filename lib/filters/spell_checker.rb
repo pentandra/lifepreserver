@@ -47,8 +47,10 @@ class SpellChecker < Nanoc::Filter
 
     doc = content =~ /<html[\s>]/ ? klass.parse(content) : klass.fragment(content)
     doc.traverse do |node|
+      next unless node.text?
+
       parent = node.parent
-      if node.text? && parent.element?
+      if parent.element?
         next if ignore_classes.include?(parent['class'])
 
         node_lang = find_node_lang(node)
