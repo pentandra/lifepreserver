@@ -302,7 +302,7 @@ changefreq: monthly
 
       <p class="foreign">
 
-        <%= authors_of(dependencies_for(:default)).join(', ') %>
+        <%= authors_of(dependencies_for(:default)).to_sentence %>.
 
       </p>
 
@@ -321,7 +321,7 @@ changefreq: monthly
 
         There are certain tools that we used in preparing and developing this project.
 
-        <span class="foreign"><%= authors_of(dependencies_for(:development)).join(', ') %></span>
+        <span class="foreign"><%= authors_of(dependencies_for(:development)).to_sentence %>.</span>
 
       </p>
 
