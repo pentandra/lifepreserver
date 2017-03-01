@@ -21,7 +21,7 @@ tags:
 The following is an expanded version of a presentation I prepared for the <span
 class="abbr">FORCE2015</span> conference at the University of Oxford to give an
 introduction and background to what we are trying to accomplish with [Research
-Cases](http://researchcases.org).
+Cases](https://researchcases.org).
 {: .intro }
 
 <!--MORE-->
