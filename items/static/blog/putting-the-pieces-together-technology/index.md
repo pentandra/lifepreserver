@@ -99,17 +99,18 @@ and learn from them. It didn't really matter as much whether a was open or not,
 but it was useful to know that a researcher took some data, put it in such and
 such tool, and something came out at the end. Really, we could look at the
 research process in a more _functional_ way, with the tools or other smaller
-parts of the process as black boxes within a bigger process. I'm reminded of
-what the humanist Jeffrey Schnapp says in his presentation on [Knowledge
-Design], that the process _is_ the product. Why are we not publishing the
-research process, even across tools, as the ultimate scholarly output? It is
-the _process_ that needs to be open and replicable, not the tools (not to say
-that we don't want open tooling---it can make certain things so much easier,
-but we need to be free to use the right tool for the job).
+parts of the process as black boxes within a bigger process. It is the
+_process_ that needs to be open and replicable, not the tools (not to say that
+we don't want open tooling---it can make certain things so much easier, but we
+need to be free to use the right tool for the job). I had the question, _why
+are we not publishing the research process, even across tools, as the
+fundamental scholarly output?_ I'm reminded of what the humanist Jeffrey
+Schnapp says in [his presentation] on knowledge design, that the process _is_
+the product.
 
 If we don't make the process explicit, how will we be able to share, reproduce,
 or assess the differences? If we keep the process implicit, or even leave it to
-post facto analysis to attempt to reveal it alone, we are missing the whole
+post facto analysis alone to attempt to reveal it, we are missing the whole
 point, and we end up not very far from where we are now: publishing _about_ the
 research, instead of publishing _research_, and our ability to effectively
 common will be impeded. 
@@ -129,7 +130,7 @@ common will be impeded.
   <figcaption>--- Jonathan B. Buckheit and David Donoho, <a href="http://statweb.stanford.edu/~donoho/Reports/1995/wavelab.pdf"><cite>Wavelab and Reproducible Research</cite></a>, 1995 (quoted in a <a href="http://www.wf4ever-project.org/wiki/download/attachments/2064544/ISMB2013KeynotecleanGOBLE.pdf">presentation</a> by Carole Goble).</figcaption>
 </figure>
 
-So where do we draw the line between implicit and explicit? Are we content to
+But where do we draw the line between implicit and explicit? Is it enough to
 know which tools the researcher used and when? What about the thoughts and
 intents of the researcher? This, to me, is really the level at which we need to
 be sharing. The researcher's decisions and and the process of how they came
