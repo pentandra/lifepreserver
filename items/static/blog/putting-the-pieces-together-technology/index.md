@@ -1,7 +1,7 @@
 ---
 title: "Putting the Pieces Together: Technology"
 description: >
-  The process is the product.
+  My epiphany that the process really is the product.
 kind: article
 author_name: Chris Chapman
 created_at: 2017-02-16
@@ -16,84 +16,214 @@ tags:
   - Open Standards
 ---
 
+Don't worry---this is not what you think. This post is not about specific
+technologies, but about what needs to be enabled by technology to allow for
+scholarly commoning. It is a follow-on to a post that I wrote about the
+[_culture_ of the Scholarly Commons][culture]. We need technology that will
+enable that culture, and it is currently missing.
+
 <!--MORE-->
 
-# Components or systems?
+# On gaps and systems
 
 One of the topics that pops up every once in a while in our discussions is the
 concept of _compliance_. I think this comes from the desire to know where the
 boundaries of the Scholarly Commons are, and following that line of thought,
 the question of whether or not something belongs within the commons is based
-upon whether that thing _complies_ with certain principles of the Scholarly
-Commons.
+upon whether that thing _complies_ with certain principles of openness or
+reusability.
 
-As much as I love and support open-source software and tooling, I think that
-this argument has been more of a red herring, missing the whole point of what
-the Scholarly Commons is about. Nevertheless, the main track of the workshop
-was designed to lead the workshop participants through an exercise of
-'compliance checking' common tools to see how well they conformed to the latest
-rendition of the principles of the Scholarly Commons.
+As much as I love and support open-source software and tooling, I think that,
+for us, this argument has been more of a red herring, missing the whole point
+of what the Scholarly Commons is about. To me the issue is less about
+compliance, and more about enabling interactions. We are either commoning, or
+we're not. Nevertheless, the main track of the workshop was designed to lead
+the workshop participants through an exercise of 'compliance checking' existing
+tools to see how well they conformed to the latest rendition of the principles
+of the Scholarly Commons.
 
-I think the hope was that, through an empirical approach, we could find a new
-system by looking at the old system. But innovation doesn't happen that way. It
-usually requires more.
+<figure class="img">
+  <a href="scholarly_commons_backbone_using_existing_stuff.jpg" title="Click for the whole board"><img src="scholarly_commons_backbone_using_existing_stuff_620x.jpg"/></a>
+  <figcaption>Some thoughts by <span lang="nl">Björn Brembs</span>, <span lang="nl">Jeroen Bosman</span>, and <span lang="nl">Bianca Kramer</span> on practical pathways toward a scholarly commons using existing tools, organizations, and services.</figcaption>
+</figure>
 
-> One essential characteristic of modern life is that we all depend on
-> systems---on assemblages of people or technologies or both---and among our
-> most profound difficulties is making them work. In medicine, for instance, if
-> I want my patients to receive the best care possible, not only must I do a
-> good job but a whole collection of diverse components have to somehow mesh
-> together effectively. Health care is like a car that way, points out Donald
-> Berwick, president of the Institute for Healthcare Improvement in Boston and
-> one of our deepest thinkers about systems in medicine. In both cases, having
-> great components is not enough.
->
-> We're obsessed in medicine with having great components---the best drugs, the
-> best devices, the best specialists---but pay little attention to how to make
-> them fit together well. Berwick notes how wrongheaded this approach is.
-> "Anyone who understands systems will know immediately that optimizing parts
-> is not a good route to system excellence," he says. He gives the example of a
-> famous thought experiment of trying to build the world's greatest car by
-> assembling the world's greatest car parts. We connect the engine of a
-> Ferrari, the brakes of a Porsche, the suspension of a BMW, the body of a
-> Volvo. "What we get, of course, is nothing close to a great car; we get a
-> pile of very expensive junk."
-{:.bq .grab #systems-vs-components}
+In the days leading up to the workshop, I struggled to understand the point of
+going through such an exercise. The hope was, as far as I could tell, that we
+could find a new system by looking at elements of the old system, and filling
+in any gaps that we find. But cultural change and innovation don't happen that
+way. We were not going to discover some preexisting solution that has been
+waiting for us out there just by looking at all the components. We need
+something more.
 
-So, in the days leading up to the workshop, I didn't know what the point was of
-going through this exercise. We were not going to discover some preexisting
-solution that has been waiting for us out there just by looking at all the
-components.
+To explain what I mean by this _something more_, allow me to share Atul
+Gawande's comparable struggle in the practice of medicine, which shows why
+looking at all the parts is not enough to fix the problem:
 
-Gawande continues from the [previous quote](#systems-vs-components):
+<figure id="systems-vs-components" class="bq grab">
+  <blockquote>
+    <p>One essential characteristic of modern life is that we all depend on systems---on assemblages of people or technologies or both---and among our most profound difficulties is making them work. In medicine, for instance, if I want my patients to receive the best care possible, not only must I do a good job but a whole collection of diverse components have to somehow mesh together effectively. Health care is like a car that way, points out Donald Berwick, president of the Institute for Healthcare Improvement in Boston and one of our deepest thinkers about systems in medicine. In both cases, having great components is not enough.</p>
+    <p>We're obsessed in medicine with having great components---the best drugs, the best devices, the best specialists---but pay little attention to how to make them fit together well. Berwick notes how wrongheaded this approach is. "Anyone who understands systems will know immediately that optimizing parts is not a good route to system excellence," he says. He gives the example of a famous thought experiment of trying to build the world's greatest car by assembling the world's greatest car parts. We connect the engine of a Ferrari, the brakes of a Porsche, the suspension of a BMW, the body of a Volvo. "What we get, of course, is nothing close to a great car; we get a pile of very expensive junk."</p>
+  </blockquote>
+  <figcaption>--- Atul Gawande, <cite>The Checklist Manifesto</cite>, <span class="oldstyle">2009</span>, pp. <span class="oldstyle">184--5</span></figcaption>
+</figure>
 
-> Nonetheless, in medicine that's exactly what we have done. We have a
-> thirty-billion-dollar-a-year National Institutes of Health, which has been a
-> remarkable powerhouse of medical discoveries. But we have no National
-> Institutes of Health Systems Innovation alongside it studying how best to
-> incorporate these discoveries into daily practice...
->
-> The same could be said in numerous other fields. We don't study routine
-> failures in teaching, in law, in government programs, in the financial
-> industry, or elsewhere. We don't look for the patterns of our recurrent
-> mistakes or devise and refine potential solutions for them.
->
-> But we could, and that is the ultimate point.
-{:.bq .grab}
+Research, just like medicine, is not simply the matter of lining up tools into
+a usable workflow. We need to approach this problem in a systemic way.
+
+# The exercise
+
+So despite my initial struggles, we went forward with the compliance exercise,
+and it was actually very enlightening in some unexpected ways.
+
+![Explicit representations of scientific workflows](science_workflows_620x.jpg)
+
+![Scientific workflows on transparency overlaid](science_workflows_overlaid_620x.jpg)
+
+![Social science workflows on transparency overlaid](social_science_workflows_overlaid_620x.jpg)
+
+![Humanities workflows on transparency overlaid](humanities_workflows_overlaid_620x.jpg)
+
+It didn't matter as much whether the particular tools that were used were
+'compliant' or even open, but that the process was open for others to view and
+take part in, or as was discussed, 'bad tools are used to perform good things'.
+That this was more about practice, and not tools. People use what they use
+because it works. _What_ a researcher is trying to achieve is way more useful
+than _how_ they go about to achieve it.
+
+# The process is the product
+
+As I was sitting there in the workshop, thinking about all the above, the
+answer came to me slowly but clearly. Because the research processes were made
+explicit and studied this way, it allowed us to reason about, find patterns,
+and learn from them. It didn't really matter as much whether a was open or not,
+but it was useful to know that a researcher took some data, put it in such and
+such tool, and something came out at the end. Really, we could look at the
+research process in a more _functional_ way, with the tools or other smaller
+parts of the process as black boxes within a bigger process. I'm reminded of
+what the humanist Jeffrey Schnapp says in his presentation on [Knowledge
+Design], that the process _is_ the product. Why are we not publishing the
+research process, even across tools, as the ultimate scholarly output? It is
+the _process_ that needs to be open and replicable, not the tools (not to say
+that we don't want open tooling---it can make certain things so much easier,
+but we need to be free to use the right tool for the job).
+
+If we don't make the process explicit, how will we be able to share, reproduce,
+or assess the differences? If we keep the process implicit, or even leave it to
+post facto analysis to attempt to reveal it alone, we are missing the whole
+point, and we end up not very far from where we are now: publishing _about_ the
+research, instead of publishing _research_, and our ability to effectively
+common will be impeded. 
+
+<figure class="bq grab">
+  <blockquote cite="http://www.wf4ever-project.org/wiki/download/attachments/2064544/ISMB2013KeynotecleanGOBLE.pdf">
+    <p>
+
+      An article about computational science in a scientific publication is
+      <em>not</em> the scholarship itself, it is merely <em>advertising</em> of
+      the scholarship. The actual scholarship is the complete software
+      development environment, and the complete set of instructions which
+      generated the figures.
+
+    </p>
+  </blockquote>
+  <figcaption>--- Jonathan B. Buckheit and David Donoho, <a href="http://statweb.stanford.edu/~donoho/Reports/1995/wavelab.pdf"><cite>Wavelab and Reproducible Research</cite></a>, 1995 (quoted in a <a href="http://www.wf4ever-project.org/wiki/download/attachments/2064544/ISMB2013KeynotecleanGOBLE.pdf">presentation</a> by Carole Goble).</figcaption>
+</figure>
+
+So where do we draw the line between implicit and explicit? Are we content to
+know which tools the researcher used and when? What about the thoughts and
+intents of the researcher? This, to me, is really the level at which we need to
+be sharing. The researcher's decisions and and the process of how they came
+about should form the basis of research publication and collaboration. From
+this perspective, the entire research process could be viewed as a sequence of
+decisions.
+
+Our process as a committee in defining the Scholarly Commons, aside from the
+workshops that we have held, has been mostly limited to seeking feedback when
+we were nearing a finished product. Our design process has not been very open,
+not because we we haven't wanted it to be open, but because of the lack of
+tooling that works this way right now. We're doing the best we can with what we
+have, but we need ways to do this better!
+
+In order to create a truly open, collaborative, egalitarian culture of
+scholarship, we also need the questions, thoughts, and intentions that were in
+the researcher's mind in the first place, _as the knowledge was designed_. We
+can't continue publishing only closed forms such as papers. We need to publish
+the _research_. If we can communicate more openly throughout the process, many
+of the existing forms of scholarly communications will either change or go
+away. The Scholarly Commons should be a jumping-off point to new ways of
+working together, taking the best ideas of how to do scholarship in a modern
+setting, setting aside as many of the undesirable social, cultural, and
+technical limitations as possible.
+
+To explain what I mean by this, allow me to give an example of my experience
+working on [the logo] for the Scholarly Commons (which has been backburnered
+until we better understand what it is that we are defining). As I went along, I
+made a conscious effort to explain each step, question, and resulting decision
+of the design process. This is the spirit and culture of the commons! Done this
+way, the process is open, transparent, and invites participation. It is easy
+for anyone to say, 'Did you think about this or that?' and contribute in
+context. It is easy for anyone to get involved in the design process, wherever
+and whenever the feel they have something to contribute.
 
 # Shared Practice
 
-This to me is the essence of commoning: sharing how, why, and what we do.
+This to me is the essence of commoning: sharing how, why, and what we do. We
+need to look at research more at a _cellular_ level (or [_tesseral_
+level][vision], if you will).
+
+Gawande continues from the [previous quote](#systems-vs-components):
+
+<figure class="bq grab">
+  <blockquote>
+    <p>Nonetheless, in medicine that's exactly what we have done. We have a thirty-billion-dollar-a-year National Institutes of Health, which has been a remarkable powerhouse of medical discoveries. But we have no National Institutes of Health Systems Innovation alongside it studying how best to incorporate these discoveries into daily practice...</p>
+    <p>The same could be said in numerous other fields. We don't study routine failures in teaching, in law, in government programs, in the financial industry, or elsewhere. We don't look for the patterns of our recurrent mistakes or devise and refine potential solutions for them.</p>
+    <p>But we could, and that is the ultimate point.</p>
+  </blockquote>
+  <figcaption>--- Atul Gawande, <cite>The Checklist Manifesto</cite>, <span class="oldstyle">2009</span>, p. <span class="oldstyle">185</span></figcaption>
+</figure>
 
 We already have shared practice---now we need a way to explicitly _share_ our
 practice, and, taking it another step further, to discover and share _patterns_
 of practice. Fiona Murphy and Danny Kingsley explored some possibilities for
 doing the latter during an unworkshop session.
 
-# TL;DR
+# A relative advantage
 
-The Scholarly Commons is _an opportunity_ to make the world a better place by
-drastically improving our practices and widening our networks for the
-production and flow of knowledge.
+When it comes down to it, making the transition to this new culture is really a
+user experience problem. We need some sort of infrastructure in-between the
+tools that will enable this commoning to happen. As much as we've focused on
+principles and culture (and they are the driving force in this effort!), we
+need an enabling infrastructure for commoning. We need streets for machines for
+navigate, so people don't have to. The existing lack of interoperability
+between tools is actually an opportunity for something better.
+
+Research zealots will still find ways to blaze trails where there are none, but
+why not plan for the city and prepare for the streets to make it easier for
+everyone to transition? The tools that are part of the commons should be able
+to discover other tools and people and research to interact with, and this
+could transform research into a dynamic system rather than the current static
+system. Our tools and machines need to know how to common too!
+
+Going back to Everett Rogers' <cite>Diffusion of Innovations</cite>, we need an
+advantage over the current system. If we can create a better research
+experience, then we have created that advantage. We will then have the
+potential to transform the culture!
+
+So building on my [earlier definition] of the Scholarly Commons, but from the
+perspective of technology:
+
+{:.big}
+
+<dfn id="def:technology-of-the-scholarly-commons">The Scholarly Commons</dfn>
+is an opportunity to transform the culture of scholarship by drastically
+improving our practices and widening our networks for the production and flow
+of knowledge.
 
 {:.conclusion}
+
+So how do we get there? We're working on a [proposal] for that very purpose.
+
+[culture]: </blog/putting-the-pieces-together-culture/> "The Pentandra Blog → Putting the Pieces Together: Culture"
+[earlier definition]: </blog/putting-the-pieces-together-culture/#def:the-scholarly-commons> "The Scholarly Commons is the opportunity to come together and create a new culture of commoning on scholarly and scientific knowledge."
+[vision]: </#sec:research-experience> "We envision a better research experience"
+[the logo]: <> "Branding the Scholarly Commons"
