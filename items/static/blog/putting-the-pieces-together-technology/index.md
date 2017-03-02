@@ -95,23 +95,23 @@ than _how_ they go about to achieve it.
 As I was sitting there in the workshop, thinking about all the above, the
 answer came to me slowly but clearly. Because the research processes were made
 explicit and studied this way, it allowed us to reason about, find patterns,
-and learn from them. It didn't really matter as much whether a was open or not,
-but it was useful to know that a researcher took some data, put it in such and
-such tool, and something came out at the end. Really, we could look at the
-research process in a more _functional_ way, with the tools or other smaller
-parts of the process as black boxes within a bigger process. It is the
-_process_ that needs to be open and replicable, not the tools (not to say that
-we don't want open tooling---it can make certain things so much easier, but we
-need to be free to use the right tool for the job). I had the question, _why
-are we not publishing the research process, even across tools, as the
+and learn from them. It didn't really matter as much whether a tool was open or
+not, but it _was_ useful to know that a researcher took some data, put it in
+such and such tool, and that something came out at the end. What if we could
+look at the research process in a more _functional_ way, with the tools or
+other smaller parts of the process as [black boxes][black box] within a bigger
+process? It is the _process_ that needs to be open and replicable, not the
+tools (not to say that we don't want open tooling---it can make certain things
+so much easier, but we need to be free to use the right tool for the job). _So
+why are we not publishing the research process, even across tools, as the
 fundamental scholarly output?_ I'm reminded of what the humanist Jeffrey
 Schnapp says in [his presentation] on knowledge design, that the process _is_
 the product.
 
 If we don't make the process explicit, how will we be able to share, reproduce,
-or assess the differences? If we keep the process implicit, or even leave it to
-post facto analysis alone to attempt to reveal it, we are missing the whole
-point, and we end up not very far from where we are now: publishing _about_ the
+or assess the differences? If we keep the process implicit, or leave it to post
+facto analysis alone to attempt to reveal it, we are missing the whole point,
+and we end up not very far from where we are now: publishing _about_ the
 research, instead of publishing _research_, and our ability to effectively
 common will be impeded. 
 
@@ -149,12 +149,13 @@ In order to create a truly open, collaborative, egalitarian culture of
 scholarship, we also need the questions, thoughts, and intentions that were in
 the researcher's mind in the first place, _as the knowledge was designed_. We
 can't continue publishing only closed forms such as papers. We need to publish
-the _research_. If we can communicate more openly throughout the process, many
-of the existing forms of scholarly communications will either change or go
-away. The Scholarly Commons should be a jumping-off point to new ways of
-working together, taking the best ideas of how to do scholarship in a modern
-setting, setting aside as many of the undesirable social, cultural, and
-technical limitations as possible.
+the _research_. We need to look at research more at a _cellular_ level (or
+[_tesseral_ level][vision], if you will :smile:). If we can communicate more
+openly throughout the process, many of the existing forms of scholarly
+communications will either change or go away. The Scholarly Commons should be a
+jumping-off point to new ways of working together, taking the best ideas of how
+to do scholarship in a modern setting, setting aside as many of the undesirable
+social, cultural, and technical limitations as possible.
 
 To explain what I mean by this, allow me to give an example of my experience
 working on [the logo] for the Scholarly Commons (which has been backburnered
@@ -168,11 +169,13 @@ and whenever the feel they have something to contribute.
 
 # Shared Practice
 
-This to me is the essence of commoning: sharing how, why, and what we do. We
-need to look at research more at a _cellular_ level (or [_tesseral_
-level][vision], if you will).
-
-Gawande continues from the [previous quote](#systems-vs-components):
+This to me is the essence of commoning: sharing how, why, and what we do. To do
+this, we need a way to explicitly _share_ our practice. Taking this idea a step
+further, we need a way to explicitly share _patterns_ of practice. Fiona Murphy
+and Danny Kingsley explored some possibilities for doing this during an
+unworkshop session. Continuing from the [previous
+quote](#systems-vs-components), Gawande shares how great the need is to
+incorporate discoveries into our daily practice:
 
 <figure class="bq grab">
   <blockquote>
@@ -183,10 +186,9 @@ Gawande continues from the [previous quote](#systems-vs-components):
   <figcaption>--- Atul Gawande, <cite>The Checklist Manifesto</cite>, <span class="oldstyle">2009</span>, p. <span class="oldstyle">185</span></figcaption>
 </figure>
 
-We already have shared practice---now we need a way to explicitly _share_ our
-practice, and, taking it another step further, to discover and share _patterns_
-of practice. Fiona Murphy and Danny Kingsley explored some possibilities for
-doing the latter during an unworkshop session.
+If we can come up with a way to do this in a very general way, this approach
+has the potential to make a real difference in how we practice as researchers,
+and maybe even blur the line between researchers and practitioners.
 
 # A relative advantage
 
@@ -228,3 +230,4 @@ So how do we get there? We're working on a [proposal] for that very purpose.
 [earlier definition]: </blog/putting-the-pieces-together-culture/#def:the-scholarly-commons> "The Scholarly Commons is the opportunity to come together and create a new culture of commoning on scholarly and scientific knowledge."
 [vision]: </#sec:research-experience> "We envision a better research experience"
 [the logo]: <> "Branding the Scholarly Commons"
+[black box]: <> "Black box on Wikipedia"
