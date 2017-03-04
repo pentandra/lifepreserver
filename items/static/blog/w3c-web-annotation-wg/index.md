@@ -17,17 +17,17 @@ We are thrilled that web annotations, one of the core building blocks that we
 are using for Geungle, have made it onto the [W3C standards
 track][w3c-annotation]. While this is a great stepping stone in the standards
 process, there is still a good ways to go before they becomes a [W3C
-Recommendation][w3c-rec]{: .abbr}, and are adopted by the general Web
-community.  There is great hope, however, for [Doug Schepers][shepazu], the W3C
-contact for the new working group, mentioned that web annotations broke the
-record for the number of W3C votes for any new charter ever since online voting
-began (in [2003]{.oldstyle}).[^w3c-email] I have thoroughly enjoyed witnessing
-how people have come together from many different places and worked together,
-trying to make the web a better place.  While there were opportunities to sow
-seeds of discord, no one did (that I am aware of). This is kind of unique in
-the standards world (yes, even at the W3C), but I think everyone just realized
-the importance of this work, and that collaboration was essential for success.
-I have learned a lot watching this process, and have been impressed by everyone
+Recommendation][w3c-rec], and are adopted by the general Web community.  There
+is great hope, however, for [Doug Schepers][shepazu], the W3C contact for the
+new working group, mentioned that web annotations broke the record for the
+number of W3C votes for any new charter ever since online voting began (in
+[2003]{.oldstyle}).[^w3c-email] I have thoroughly enjoyed witnessing how people
+have come together from many different places and worked together, trying to
+make the web a better place.  While there were opportunities to sow seeds of
+discord, no one did (that I am aware of). This is kind of unique in the
+standards world (yes, even at the W3C), but I think everyone just realized the
+importance of this work, and that collaboration was essential for success. I
+have learned a lot watching this process, and have been impressed by everyone
 in the [Open Annotation Collaboration][oac], especially Rob Sanderson, Paolo
 Ciccarese, and Herbert Van de Sompel for their vision and inclusive approach.
 Thanks to [Hypothes.is][h] for sponsoring the W3C workshop that helped to make
@@ -136,7 +136,7 @@ means for genealogy. Bring on the Web!
 [weak-force]: http://en.wikipedia.org/wiki/Weak_interaction
 [paradigm]: /blog/a-social-business/#p[WtcTwn],h[WtcTwn,2]
 [w3c-annotation]: http://www.w3.org/annotation/ "W3C Web Annotation Working Group"
-[w3c-rec]: http://www.w3.org/standards/faq#std "What is a W3C Recommendation?"
+[w3c-rec]: http://www.w3.org/standards/faq#std "What is a W3C Recommendation?" {.abbr}
 [shepazu]: http://www.w3.org/People/Schepers/
 [oac]: http://www.openannotation.org/
 [iwc]: http://indiewebcamp.com/

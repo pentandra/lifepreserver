@@ -85,7 +85,7 @@ to use all possible readers as a springboard for our financing ideas. I would
 love to hear back from any of you that have tread the startup financing waters
 before, or that can see a flaw in my logic, or that happens to know somebody,
 who knows somebody, that is way into research and happens to have tons of money
-that they just don't know what to do with. ;)
+that they just don't know what to do with :wink:.
 
 We believe in keeping as many doors open as we can. When we see what fits right
 we will move forward through whichever door(s) feels best.
@@ -209,4 +209,4 @@ seems so much neater and more simple now that it's down in text. We feel pretty
 sure of a few of these doors---one way or the other---but for the most part, we
 are going to simply test a lot of doors and see which ones seem to fit. I'm
 happy to keep you up to date as we step through or slam shut any of these
-possibilities. :)
+possibilities :smile:.

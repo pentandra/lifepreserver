@@ -36,12 +36,11 @@ surprising places. Let me share a few examples.
 
 # Some Good Examples
 
-When Jack Andraka was <span class="oldstyle">15</span>, he set out to discover
-a way to detect early-stage pancreatic cancer. After reading hundreds of papers
-from [PubMed], he made a breakthrough during biology class. He took
-his discovery to the <span class="oldstyle">2012</span> Intel International
-Science and Engineering Fair, and the rest, as they say, [has been
-history][Andraka TEDx].
+When Jack Andraka was [15]{.oldstyle}, he set out to discover a way to detect
+early-stage pancreatic cancer. After reading hundreds of papers from [PubMed],
+he made a breakthrough during biology class. He took his discovery to the <span
+class="oldstyle">2012</span> Intel International Science and Engineering Fair,
+and the rest, as they say, [has been history][Andraka TEDx].
 
 <figure id="fig:cancer-breakthrough" class="section" resource="#cancer_breakthrough" typeof="schema:VideoObject">
   <meta property="schema:bitrate" content="500k" />
@@ -61,30 +60,30 @@ history][Andraka TEDx].
 
 While people around the world have championed him, a few from the scientific
 community have scoffed at his debut achievements. While I agree with some of
-[the reservations][biotech_whiz] Matthew Herper of Forbes Magazine
-holds towards Jack Andraka's preliminary publication draft, I think Matthew
-missed an opportunity here. Maybe Jack's biggest contribution to science so far
-wasn't developing a cool biosensor while still in high school, but was showing
-the world that science can be understood by anyone and that meaningful
+[the reservations][biotech_whiz] Matthew Herper of Forbes Magazine holds
+towards Jack Andraka's preliminary publication draft, I think Matthew missed an
+opportunity here. Maybe Jack's biggest contribution to science so far wasn't
+developing a cool biosensor while still in high school, but was showing the
+world that science can be understood by anyone and that meaningful
 contributions to complicated research domains are not out of reach, even for
 young people. Too many artificial barriers are in place right now that stifle
 research innovation and chill passion for discovery. It takes effort for sure,
 sometimes even years of effort, but one thing is certain: you don't need to be
 a PhD to contribute to the knowledge of the world. It would be good to remember
-that not to long ago [science was dominated by
-amateurs](#sec:democratizing-research). _Anyone_ can progress things, bringing
-in fresh new ideas from a wealth of unique backgrounds and understandings.
-Questions can be answered more quickly by bringing more eyes and minds together
-to work on a problem. Jack also, like many others that are driven to make
-similar breakthroughs, had personal reasons that impelled him forward in his
-research---a family friend had recently died of pancreatic cancer.
+that not to long ago [science was dominated by amateurs][democratizing
+research]. _Anyone_ can progress things, bringing in fresh new ideas from a
+wealth of unique backgrounds and understandings. Questions can be answered more
+quickly by bringing more eyes and minds together to work on a problem. Jack
+also, like many others that are driven to make similar breakthroughs, had
+personal reasons that impelled him forward in his research---a family friend
+had recently died of pancreatic cancer.
 
-<span class="newthought">Oftentimes, practitioners will see things</span> that
-the theoreticians miss. Not only that, but once they *do* see, practitioners
-will often have the passion and influence needed to create change. As [we wrote
-about before][hairdresser], Janet Stephens saw something historians missed. She
-had a passion for old hairstyles, and set out to recreate them. She knew how to
-work with hair and persisted until she found a solution. Historians had long
+[Oftentimes, practitioners will see things]{.newthought} that the theoreticians
+miss. Not only that, but once they *do* see, practitioners will often have the
+passion and influence needed to create change. As [we wrote about
+before][hairdresser], Janet Stephens saw something historians missed. She had a
+passion for old hairstyles, and set out to recreate them. She knew how to work
+with hair and persisted until she found a solution. Historians had long
 misinterpreted what Janet understood---and Janet was willing to share.
 
 Josh Sommer is a good example of someone passionate about finding an
@@ -109,21 +108,17 @@ automobiles and [Freon] refrigerant for refrigeration and air conditioning
 systems, said the following about research:
 
 <figure class="bq grab">
-  <blockquote cite="http://www.daytonhistorybooks.com/page/page/4920708.htm">
-    <p>
 
-      For many years there has been much misunderstanding as to just what
-      research is. The popular conception seems to be that there is something
-      mysterious about it, and before any research can be done it is necessary
-      to have expensive scientific apparatus and large, elaborately equipped
-      buildings. Actually, this is not so. Research isn't a physical thing at
-      all but just a state of mind. It is a simple, organized way of trying to
-      accomplish something you wish to do, so simple that anyone can do
-      research anywhere at any time.
+> For many years there has been much misunderstanding as to just what research
+> is. The popular conception seems to be that there is something mysterious
+> about it, and before any research can be done it is necessary to have
+> expensive scientific apparatus and large, elaborately equipped buildings.
+> Actually, this is not so. Research isn't a physical thing at all but just a
+> state of mind. It is a simple, organized way of trying to accomplish
+> something you wish to do, so simple that anyone can do research anywhere at
+> any time.
 
-    </p>
-  </blockquote>
-  <figcaption>--- Charles F. Kettering, from <cite><a href="http://www.daytonhistorybooks.com/page/page/4920708.htm">Research is a State of Mind</a></cite>, from a series of talks given during the intermission of the General Motors Symphony of the Air radio show, December <span class="oldstyle">5, 1943</span></figcaption>
+<figcaption>--- Charles F. Kettering, from <a href="http://www.daytonhistorybooks.com/page/page/4920708.htm"><cite>Research is a State of Mind</cite></a>, from a series of talks given during the intermission of the General Motors Symphony of the Air radio show, December [5, 1943]{.oldstyle}.</span></figcaption>
 </figure>
   
 Charles Kettering was an inventor with a practical focus---an applied
@@ -133,13 +128,11 @@ you want to know.
 
 # Anyone can Research?
 
-I'm reminded of the [Pixar] movie <cite><a
-href="http://www.imdb.com/title/tt0382932/" title="Ratatouille on
-IMDb">Ratatouille</a></cite>. As you may know, the whole premise of the movie
-is <span lang="fr">Chef Gusteau</span>'s belief that *anyone can cook*. A
-talented rat named Remy is convinced that even he can be a great chef, so he
-finds a willing human to partner with---a garbage boy named Linguini---in
-becoming the cook of their collective dreams.
+I'm reminded of the [Pixar] movie [<cite>Ratatouille</cite>][Ratatouille IMDb].
+As you may know, the whole premise of the movie is [Chef Gusteau]{lang=fr}'s
+belief that *anyone can cook*. A talented rat named Remy is convinced that even
+he can be a great chef, so he finds a willing human to partner with---a garbage
+boy named Linguini---in becoming the cook of their collective dreams.
 
 <figure id="fig:remy_finds_linguini" class="section" resource="#remy_finds_linguini" typeof="schema:VideoObject">
   <meta property="schema:bitrate" content="512k" />
@@ -163,21 +156,23 @@ find out the chef's true identity. The following is a quotation from his
 review:
 
 <figure id="fig:ego" class="bq grab">
-<blockquote><p>In the past, I have made no secret of my disdain for <span lang="fr">Chef Gusteau</span>'s famous motto, 'Anyone can cook.' But I realize, only now do I truly understand what he meant. Not everyone can become a great artist; but a great artist can come from <em>anywhere</em>.</p></blockquote>
-  <figcaption>--- Anton Ego, restaurant critic from <cite><a href="https://en.wikipedia.org/wiki/Ratatouille_(film)">Ratatouille</a></cite></figcaption>
+
+> In the past, I have made no secret of my disdain for [Chef
+> Gusteau]{lang=fr}'s famous motto, 'Anyone can cook.' But I realize, only now
+> do I truly understand what he meant. Not everyone can become a great artist;
+> but a great artist can come from _anywhere_.
+
+<figcaption>--- Anton Ego, restaurant critic from [<cite>Ratatouille</cite>][Ratatouille]</figcaption>
 </figure>
 
 In the past, scholarship and research were separated, now they are growing
-closer than ever before.
-Likewise, not everyone can become a great researcher, but a great researcher
-can come from <em>anywhere</em>. But like Remy and Linguini, we each have
-different talents and abilities, and can accomplish much more if we work
-together rather than on our own.
+closer than ever before. Likewise, not everyone can become a great researcher,
+but a great researcher can come from _anywhere_. But like Remy and
+Linguini, we each have different talents and abilities, and can accomplish much
+more if we work together rather than on our own.
 
 I would define a <dfn id="dfn:scholar">scholar</dfn> as someone who values
-knowledge and seeks after it for understanding and to create <em>new
-knowledge</em>. 
-
+knowledge and seeks after it for understanding and to create _new knowledge_.
 
 # Towards a Scholarly Commons
 
@@ -217,8 +212,7 @@ application in the world, we're missing the dartboard entirely.
 [Charles F. Kettering]: <https://en.wikipedia.org/wiki/Charles_F._Kettering> "Charles F. Kettering on Wikipedia"
 [Ratatouille]: <https://en.wikipedia.org/wiki/Ratatouille_(film)> "Ratatouille on Wikipedia"
 [Pixar]: <https://en.wikipedia.org/wiki/Pixar> "Pixar on Wikipedia"
-
-*[PhD]: Doctor of Philosophy
+[Ratatouille IMDb]: <http://www.imdb.com/title/tt0382932/> "Ratatouille on IMDb"
 
 <% content_for :javascripts do %>
 <script>
