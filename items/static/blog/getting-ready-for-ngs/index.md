@@ -12,16 +12,18 @@ tags:
   - Genealogy
 ---
 
-![NGS 2012 Conference](2012_NGS_Logo_Final.jpg){: .static }
-{: .aside .img }
+<div class="aside img">
 
-Pentandra is heading to the [National Genealogical Society
-conference](http://www.ngsgenealogy.org/cs/conference_info) this year! I can't
-believe that the long-awaited day is approaching so fast. We are so excited.
-While we have attended the last two years as NGS members brainstorming our
-business idea, this will be the first conference of any kind that we will have
-attended as a company. We are looking forward to sharing with everyone what we
-have been working on and what we're trying to do.
+![The logo for the NGS 2012 Conference](2012_NGS_Logo_Final.jpg){.static}\
+
+</div>
+
+Pentandra is heading to the [National Genealogical Society conference][ngs
+conf] this year! I can't believe that the long-awaited day is approaching so
+fast. We are so excited. While we have attended the last two years as NGS
+members brainstorming our business idea, this will be the first conference of
+any kind that we will have attended as a company. We are looking forward to
+sharing with everyone what we have been working on and what we're trying to do.
 
 <!--MORE-->
 
@@ -49,8 +51,11 @@ starting small, but we hope that a community of developers, genealogists,
 marketers, and enthusiasts will _want_ to join us in an awesome project with
 ambitious goals.
 
-![Booth Layout](booth.png){: .other }
-{: .img .static }
+<div class="img">
+
+![Our 10 foot square booth layout](booth.png){.other .static}
+
+</div>
 
 So we had the idea to set up chairs in the form of a pentagon, an important
 shape in our logo and in [our description of the research
@@ -66,11 +71,10 @@ We hope that people will want to get involved, and that our out-of-the-box
 booth ideas won't be a complete flop. Our success depends on people. We can't
 do what we hope to accomplish without people willing to come and share their
 ideas.
-{: .conclusion }
 
 <figure class="img static">
   <img title="Arrow Chairs" src="chairarrival.jpg" />
   <figcaption><p>Our chairs have arrived!</p></figcaption>
 </figure>
 
-*[NGS]: National Genealogical Society
+[ngs conf]: <http://www.ngsgenealogy.org/cs/conference_info>

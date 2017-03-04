@@ -33,6 +33,8 @@ need to back up a bit. For those that have not made it that far through our
 company website, we are an [Open Business](/open/business). To give a taste of
 what that means to us, here is [a quote from our Open page](/open/#p[WaiJln],h[WaiJln,1,2,3,4,5]):
 
+<div class="bq grab">
+
 > We are in business to help make research easier. We figure if we are not
 > doing that, we are doing something wrong. It is more likely that we will get
 > it right if we learn from the principles of open research and open source and
@@ -42,7 +44,8 @@ what that means to us, here is [a quote from our Open page](/open/#p[WaiJln],h[W
 > to meet the needs of that community. Just like no man is an island, a
 > business that isolates itself from its customers can’t effectively give them
 > what they need or want.
-{: .bq .grab }
+
+</div>
 
 This open-ness is a two way street. We intend to be open about what we are
 doing and why we choose to do it this way or that. We see no need to leave you
@@ -60,7 +63,7 @@ others about what to do as well as what not to do. We want to get to know how
 the community works, how they do what they do, and why it matters to them. Not
 only that, but we genuinely care about advancing good research, both within
 ourselves and for others as well. For that matter, our entire
-[mission](/company/#sec:mission) is about improving research.
+[mission] is about improving research.
 
 # Open Booth
 
@@ -111,12 +114,15 @@ really be a good fit? Let me try to break down the kinds of topics that would
 be a good fit with two questions and their answers.
 
 Question 1:
+
 : Does what you want to present help increase or improve research in some way?
 
 Answer 1:
+
 : If the answer is yes, then it's likely a perfect fit!
 
 Question 2:
+
 : But what if my topic has nothing to do with Geungle or Pentandra?
 
 Answer 2:
@@ -153,32 +159,31 @@ particulars.
    in another part of the conference center or while you are staffing your
    local society's booth on the other side of the exhibit hall.)
 
-2. We set up a time for you on our schedule of Open Booth Chats. (<span
-   class="sic">Ooo</span>, I just made up that name for what to call these, I
-   think I like it!)
+2. We set up a time for you on our schedule of Open Booth Chats. ([Ooo]{.sic},
+   I just made up that name for what to call these, I think I like it!)
 
 3. We get the word out about your topic and the time of your Open Booth Chat in
    one of three ways. You just let me know which one you prefer and we go with
    that.
 
-   1. You tell those people you specifically want to have join in your
-      discussion about your topic and time and invite them to come. Your Open
-      Booth Chat will be listed on our website, but we will not actively
-      advertise it. Essentially, we just stay out of the way, so that you have
-      the people that YOU want there.
+     1. You tell those people you specifically want to have join in your
+        discussion about your topic and time and invite them to come. Your Open
+        Booth Chat will be listed on our website, but we will not actively
+        advertise it. Essentially, we just stay out of the way, so that you
+        have the people that YOU want there.
 
-   2. We list your Chat on our site, and then we go let all of our genealogy
-      friends know about it, with a broad and open invitation to anyone that
-      wants to come. This may lead to interesting numbers in either direction.
-      If you have a tiny group, then Chris and I will actually pull up a chair
-      ourselves and join in too! (You might not think that deserves an
-      exclamation point mark, but trust me, I would be excited to join in like
-      that.) The opposite issue could also arise. If your group outgrows our
-      five chairs, we will have a couple of folding chairs for back-up. And
-      then there is always the option for standing room right?
+     2. We list your Chat on our site, and then we go let all of our genealogy
+        friends know about it, with a broad and open invitation to anyone that
+        wants to come. This may lead to interesting numbers in either
+        direction. If you have a tiny group, then Chris and I will actually
+        pull up a chair ourselves and join in too! (You might not think that
+        deserves an exclamation point mark, but trust me, I would be excited to
+        join in like that.) The opposite issue could also arise. If your group
+        outgrows our five chairs, we will have a couple of folding chairs for
+        back-up. And then there is always the option for standing room right?
 
-   3. You invite who you would like and we throw out a broad invitation as
-      well. You know, we sort of combine efforts.
+     3. You invite who you would like and we throw out a broad invitation as
+        well. You know, we sort of combine efforts.
 
 4. At the conference, you come to our booth a couple minutes before your
    scheduled time so we can say hi and meet you face to face in case we have
@@ -210,4 +215,5 @@ If you would like to find out what topics will be covered in our Open Booth,
 then please check out our Conferences page through the week of NGS in Las
 Vegas. If you have any other ideas that you think we should be thinking about,
 please drop us a note or drop by our booth to chat. Really—please do.
-{: .conclusion }
+
+[mission]: </company/#sec:mission>

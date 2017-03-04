@@ -24,20 +24,18 @@ That is a surprisingly difficult question to answer.
 
 The naive approach to research assessment is to boil everything down to a
 number---a metric. But you cannot reduce quality or impact down to a simple
-quantitative singularity, unless it happens to be
-<a href="http://en.wikipedia.org/wiki/Phrases_from_The_Hitchhiker's_Guide_to_the_Galaxy#Answer_to_the_Ultimate_Question_of_Life.2C_the_Universe.2C_and_Everything_.2842.29">the number <span class="oldstyle">42</span></a>.
-Shortcuts to research assessment [don't work](http://www.molbiolcell.org/content/24/10/1505.full).
+quantitative singularity, unless it happens to be [the number
+[42]{.oldstyle}][42]. Shortcuts to research assessment [don't work][shortcuts].
 Our current degenerative system of research assessment is an outstanding
 example of the need _not_ to do assessments this way.
 
 Last December, a forward-thinking group of editors and publishers met to
 discuss some of the problems with research assessment and came up with a
-[declaration](http://www.ascb.org/dora/) that recommended eighteen ways to
-improve the status quo. These are very doable things that we can do _now_ to
-improve the situation, not some ivory-tower Mumbo Jumbo.
+[declaration][] that recommended eighteen ways to improve the status quo. These
+are very doable things that we can do _now_ to improve the situation, not some
+ivory-tower Mumbo Jumbo.
 
-![The San Fransisco Declaration on Research Assessment (DORA)](dora-logo-header.png){: .static}
-{: .img }
+![The logotype for the San Francisco Declaration on Research Assessment (DORA)](dora-logo-header.png){.static}
 
 While this guidance is not a complete solution to the problem, it is a way to
 improve the current system while improved methods of research dissemination are
@@ -81,13 +79,12 @@ journal article, however, we get a lot more to go on. Yet, is that enough? How
 do we measure the quality of research in a journal article? Do we measure it by
   how many footnotes there are, or the percentage of the page they take up?
 
-In genealogical research, we would use the [Genealogical Proof
-Standard](http://www.bcgcertification.org/resources/standard.html) (GPS) to
-measure research quality. The GPS outlines five
-criteria that, when used together, are a good measure of research quality. In
-other fields there are similar standards of research. In the end, you don't end
-up with a quick and easy number, but you _do_ get an understanding of whether
-the research is solid or lacking. Research must be assessed as a whole.
+In genealogical research, we would use the [Genealogical Proof Standard][gps]
+(GPS) to measure research quality. The GPS outlines five criteria that, when
+used together, are a good measure of research quality. In other fields there
+are similar standards of research. In the end, you don't end up with a quick
+and easy number, but you _do_ get an understanding of whether the research is
+solid or lacking. Research must be assessed as a whole.
 
 These are some of my initial thoughts on this, and I am still trying to think
 through the many issues involving the assessment of research quality. I would
@@ -95,4 +92,7 @@ love to invite you to share your thoughts!
 
 So how do _you_ measure research?
 
-*[GPS]: Genealogical Proof Standard
+[42]: <http://en.wikipedia.org/wiki/Phrases_from_The_Hitchhiker's_Guide_to_the_Galaxy#Answer_to_the_Ultimate_Question_of_Life.2C_the_Universe.2C_and_Everything_.2842.29>
+[shortcuts]: <http://www.molbiolcell.org/content/24/10/1505.full>
+[declaration]: <http://www.ascb.org/dora/>
+[gps]: <http://www.bcgcertification.org/resources/standard.html>

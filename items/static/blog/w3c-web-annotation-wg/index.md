@@ -21,17 +21,17 @@ Recommendation][w3c-rec]{: .abbr}, and are adopted by the general Web
 community.  There is great hope, however, for [Doug Schepers][shepazu], the W3C
 contact for the new working group, mentioned that web annotations broke the
 record for the number of W3C votes for any new charter ever since online voting
-began (in <span class="oldstyle">2003</span>).[^w3c-email] I have thoroughly
-enjoyed witnessing how people have come together from many different places and
-worked together, trying to make the web a better place.  While there were
-opportunities to sow seeds of discord, no one did (that I am aware of). This is
-kind of unique in the standards world (yes, even at the W3C), but I think
-everyone just realized the importance of this work, and that collaboration was
-essential for success.  I have learned a lot watching this process, and have
-been impressed by everyone in the [Open Annotation Collaboration][oac],
-especially Rob Sanderson, Paolo Ciccarese, and Herbert Van de Sompel for their
-vision and inclusive approach. Thanks to [Hypothes.is][h] for sponsoring the
-W3C workshop that helped to make all of this happen.
+began (in [2003]{.oldstyle}).[^w3c-email] I have thoroughly enjoyed witnessing
+how people have come together from many different places and worked together,
+trying to make the web a better place.  While there were opportunities to sow
+seeds of discord, no one did (that I am aware of). This is kind of unique in
+the standards world (yes, even at the W3C), but I think everyone just realized
+the importance of this work, and that collaboration was essential for success.
+I have learned a lot watching this process, and have been impressed by everyone
+in the [Open Annotation Collaboration][oac], especially Rob Sanderson, Paolo
+Ciccarese, and Herbert Van de Sompel for their vision and inclusive approach.
+Thanks to [Hypothes.is][h] for sponsoring the W3C workshop that helped to make
+all of this happen.
 
 Since the [creation of the World Wide Web][oai8], not all has been
 [peachy-keen][pk]. The original vision of the Web, according to Tim
@@ -83,17 +83,7 @@ until new knowledge, in the form of a [conclusion][C], is obtained.
 <figure resource="#simulated-higgs" class="img" typeof="schema:ImageObject prov:Entity">
   <link property="prov:wasDerivedFrom" href="https://cds.cern.ch/record/628469" typeof="prov:Entity" />
   <img property="schema:contentUrl" class="static" alt="CMS: Simulated Higgs to two jets and two electrons" src="higgsboson.jpeg" />
-  <figcaption>
-    <b property="dc:title schema:name">Simulated Higgs to two jets and two electrons</b>
-    by <a href="http://cern.ch" property="cc:attributionName" rel="cc:attributionURL dc:creator">CERN</a>.
-    <span property="dc:description">Here a Higgs boson is produced which decays
-    into two jets of hadrons and two electrons. The lines represent the
-    possible paths of particles produced by the proton-proton collision in the
-    detector while the energy these particles deposit is shown in blue.</span>
-    Licensed under a 
-    <a property="cc:license" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA license.</a>
-    <span class="icon-cc"></span><span class="icon-cc-by"></span><span class="icon-cc-sa"></span>
-  </figcaption>
+  <figcaption><b property="dc:title schema:name">Simulated Higgs to two jets and two electrons</b> by <a href="http://cern.ch" property="cc:attributionName" rel="cc:attributionURL dc:creator">CERN</a>. <span property="dc:description">Here a Higgs boson is produced which decays into two jets of hadrons and two electrons. The lines represent the possible paths of particles produced by the proton-proton collision in the detector while the energy these particles deposit is shown in blue.</span> Licensed under a <a property="cc:license" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA license.</a> <span class="icon-cc"></span><span class="icon-cc-by"></span><span class="icon-cc-sa"></span></figcaption>
 </figure>
 
 Really, the only thing that differentiates the research domains from each other
@@ -119,17 +109,12 @@ So to conclude, web annotations are awesome. They're fundamental for
 collaborative, open research. They have the potential to revolutionize the way
 that research is published. In the near future I will be describing what this
 means for genealogy. Bring on the Web!
-{: .conclusion }
 
 <figure typeof="schema:ImageObject" property="schema:image" resource="#infographic" class="section">
   <link property="schema:representativeOfPage" resource="schema:True" />
-  <div class="embed-container wideScreen"> 
-    <iframe property="schema:contentUrl" src="annotation-architecture.svg" class="simple static"></iframe>
-  </div>
+  <div class="embed-container wideScreen"><iframe property="schema:contentUrl" src="annotation-architecture.svg" class="simple static"></iframe></div>
   <figcaption property="schema:caption"><span property="dc:description schema:description"><b property="schema:name dc:title">Web Annotation Architecture</b>, an infographic from the <span property="schema:author dc:creator" resource="http://www.w3.org">W3C</span> about web annotations.</span> <a href="annotation-architecture.svg">Display fullscreen</a> for the best viewing experience. Licensed under a <a property="cc:license" href="http://creativecommons.org/publicdomain/zero/1.0/">CC0 license.</a> <span class="icon-cc"></span><span class="icon-cc-zero"></span></figcaption>
 </figure>
-
-# Notes
 
 [^term-research]: _research_, from the [Online Etymology Dictionary](http://www.etymonline.com/index.php?term=research).
 [^term-re-]: _re-_, from the [Online Etymology Dictionary](http://www.etymonline.com/index.php?term=re-)
@@ -156,12 +141,4 @@ means for genealogy. Bring on the Web!
 [oac]: http://www.openannotation.org/
 [iwc]: http://indiewebcamp.com/
 [corporatism]: http://www.economicpolicyjournal.com/2009/11/explaining-difference-between.html "Capitalism vs Corporatism"
-[h]: https://hypothes.is/
-{:.domainname}
-
-*[W3C]: World Wide Web Consortium
-*[RDF]: Resource Description Framework
-*[JSON-LD]: JSON for Linking Data
-*[CERN]: The European Organization for Nuclear Research
-*[CC-BY-SA]: Creative Commons Attribution-ShareAlike
-*[CC0]: Creative Commons Zero (Public Domain Dedication)
+[h]: https://hypothes.is/ {.domainname}

@@ -15,16 +15,15 @@ tags:
 There are some things in life that are "worth it" and some things that are not.
 We believe that the ideas we are promoting and working to make possible are
 "worth it." They are worth enough that we have essentially thrown all of our
-time and finances to it for the last, <span class="sic">ehem</span>,
-unmentionably long time frame. We feel grateful for the generous support of
-friends and family in our efforts, both in occasional and appreciated financial
-contributions, and even more in the cheer squad effect and the brave
-willingness to watch our brood of kids from time to time while we have tended
-to business matters. Without the amazingly prolific support of our closest
-loved ones, we could never have reached this point. But here we are, on the
-verge of releasing our first product and offering an open-source research
-platform for doing amazing research and sharing it with the world. Life is
-amazing!
+time and finances to it for the last, [ehem]{.sic}, unmentionably long time
+frame. We feel grateful for the generous support of friends and family in our
+efforts, both in occasional and appreciated financial contributions, and even
+more in the cheer squad effect and the brave willingness to watch our brood of
+kids from time to time while we have tended to business matters. Without the
+amazingly prolific support of our closest loved ones, we could never have
+reached this point. But here we are, on the verge of releasing our first
+product and offering an open-source research platform for doing amazing
+research and sharing it with the world. Life is amazing!
 
 <!--MORE-->
 
@@ -55,12 +54,11 @@ the timing of this venture. Now, _right now_, is the time to bring this into
 reality. In order to do that we need to have more people involved.
 
 So not only do we need to be able to survive as a family, but we also need to
-support those other people as well. That is a huge <span class="sic">ol'</span>
-difference and it goes beyond our bank account's ability to handle right now.
-We are so grateful to have been able to bankroll things along this far, but we
-recognize that the time has come to reach out. We need enough funding to get
-Geungle finished and up into the cloud, not just running from our local
-servers.
+support those other people as well. That is a huge [ol']{.sic} difference and
+it goes beyond our bank account's ability to handle right now. We are so
+grateful to have been able to bankroll things along this far, but we recognize
+that the time has come to reach out. We need enough funding to get Geungle
+finished and up into the cloud, not just running from our local servers.
 
 We don't want this to be a hit-and-run business. We want to make sure that we
 will be around to maintain support, continue to improve, and protect our
@@ -212,4 +210,3 @@ sure of a few of these doors---one way or the other---but for the most part, we
 are going to simply test a lot of doors and see which ones seem to fit. I'm
 happy to keep you up to date as we step through or slam shut any of these
 possibilities. :)
-{: .conclusion }

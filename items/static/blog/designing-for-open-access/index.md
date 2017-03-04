@@ -22,16 +22,18 @@ tags:
 has_media: true
 ---
 
+<div class="intro">
+
 This post is the result of the last two years of searching, trying to
 understand how we need to move forward as a company and as a society. The
-majority of the section of this post about [the modern open access
-movement](#sec:the-modern-open-access-movement) was written in October
-*2012*{:.oldstyle}, when open access was probably at its peak of political
-popularity. Even though this a jump back in time as far as the open access
-movement goes, and was originally written, I think, from an overly academic
-viewpoint, it has some value in describing some of the foundations upon which
-we are building our ideas and company.
-{: .intro }
+majority of the section of this post about [the modern open access movement]
+was written in October [2012]{.oldstyle}, when open access was probably at its
+peak of political popularity. Even though this a jump back in time as far as
+the open access movement goes, and was originally written, I think, from an
+overly academic viewpoint, it has some value in describing some of the
+foundations upon which we are building our ideas and company.
+
+</div>
 
 ---
 
@@ -64,12 +66,6 @@ you can see more clearly where we're coming from as a company.
 
 <!--MORE-->
 
-# Contents
-{:.no_toc}
-
-1. Table of Contents
-{:toc}
-
 # A Brief History of Open Access
 
 As I [briefly discussed earlier][economics], economics is oftentimes the
@@ -77,18 +73,16 @@ underlying motivator for change. To really understand how we've come to where
 we are regarding access to knowledge, we need to look at the economics of each
 era to understand the motivations for publication. To start with, I'm looking
 from the perspective of the publication of knowledge in Europe during [the
-middle ages](#sec:the-middle-ages) and [the early modern
-period](#sec:the-early-modern-period), two transitionary times that have led us
-to where we are today. My goal is not to provide a comprehensive history of
-open access or research publication, but only to provide context for
+middle ages] and [the early modern period], two transitionary times that have
+led us to where we are today. My goal is not to provide a comprehensive history
+of open access or research publication, but only to provide context for
 understanding our business and design approach as we work to solve the problem
 of [access to knowledge][mission].
 
 ## The Middle Ages
 
-The Middle Ages (<span class="oldstyle">5</span>th to <span
-class="oldstyle">15</span>th centuries) was a period of great intellectual
-activity.
+The Middle Ages ([5]{.oldstyle}th to [15]{.oldstyle}th centuries) was a period
+of great intellectual activity.
 
 People were generally more stuck in on place. Feudal law often required that
 occupations be hereditary. Did they research? I imagine so. I think that it has
@@ -103,11 +97,11 @@ Illiteracy was widespread, but even beyond that, books were normally written in
 Barriers to the spread of knowledge included:
 
 1. Language
-1. Location
-1. Access to books (formal knowledge presented in an accessible-for-learning
+2. Location
+3. Access to books (formal knowledge presented in an accessible-for-learning
    way) ($$$ and due to the below 2 problems)
-1. Formal education (was handled by the church)
-1. Scale
+4. Formal education (was handled by the church)
+5. Scale
 
 ### The Work of Many for the One
 
@@ -131,20 +125,15 @@ whole.
 ### Access to Knowledge
 
 <figure id="fig:galileo" class="bq grab">
-  <blockquote>
-    <p>
 
-      The <em>leitmotif</em> that I recognize in Galileo's work is the
-      passionate fight against any kind of dogma based on authority. Only
-      experience and careful reflection are accepted by him as criteria of
-      truth. Nowadays it is hard for us to grasp how sinister and revolutionary
-      such an attitude appeared at Galileo's time, when merely to doubt the
-      truth of opinions which had no basis but authority was considered a
-      capital crime and punished accordingly.
+> The _leitmotif_ that I recognize in Galileo's work is the passionate fight
+> against any kind of dogma based on authority. Only experience and careful
+> reflection are accepted by him as criteria of truth. Nowadays it is hard for
+> us to grasp how sinister and revolutionary such an attitude appeared at
+> Galileo's time, when merely to doubt the truth of opinions which had no basis
+> but authority was considered a capital crime and punished accordingly.
 
-    </p>
-  </blockquote>
-  <figcaption>--- Albert Einstein, forward to Galileo's <cite>Dialogue Concerning the Two Chief World Systems, Ptolemaic and Copernican</cite>, reprinted in <span class="oldstyle">1953</span>.</figcaption>
+<figcaption>--- Albert Einstein, forward to Galileo's <cite>Dialogue Concerning the Two Chief World Systems, Ptolemaic and Copernican</cite>, reprinted in [1953]{.oldstyle}.</figcaption>
 </figure>
 
 Transition and the supposed immortality of copyists
@@ -173,11 +162,11 @@ a cadre of copyists.
 The printer and later the publisher became the one in charge of what got
 published thanks to economics.
 
-<span lang="fr">Journal des Sçavans</span> and Philosophical Transactions
+[Journal des Sçavans]{lang=fr} and Philosophical Transactions
 
-<cite lang="en-GB">Philosophical Transactions, Giving some <span
-class="sic">Accompt</span> to the of the present Undertakings, Studies, and
-Labours of the Ingenious in many considerable parts of the World</cite>
+<cite lang="en-GB">Philosophical Transactions, Giving some [Accompt]{.sic} to
+the of the present Undertakings, Studies, and Labours of the Ingenious in many
+considerable parts of the World</cite>
 
 <figure id="fig:printing-press" class="img" property="schema:image" resource="#printing_press" typeof="schema:ImageObject">
   <a property="schema:contentUrl" href="printing_press.jpg">
@@ -204,15 +193,14 @@ published since the beginning of scholarly publishing (with the <a
 href="http://en.wikipedia.org/wiki/Journal_des_s%C3%A7avans"><cite
 lang="fr">Journal des sçavans</cite></a> and the <a
 href="http://en.wikipedia.org/wiki/Philosophical_Transactions_of_the_Royal_Society"><cite>Philosophical
-Transactions of the Royal Society</cite></a> in <span
-class="oldstyle">1665</span>). With the passing of almost <span
-class="oldstyle">350</span> years and the advancements of the digital age, the
-venerable research paper has evolved from a paper-only publication to a digital
-publication as well, usually taking the form of a PDF. While the research paper
-is being published increasingly in this modern-day medium, it still closely
-resembles its thin, fibrous counterpart. However, the digital medium has made
-research papers much cheaper to distribute, making ideas like open access
-financially feasible.
+Transactions of the Royal Society</cite></a> in [1665]{.oldstyle}). With the
+passing of almost [350]{.oldstyle} years and the advancements of the digital
+age, the venerable research paper has evolved from a paper-only publication to
+a digital publication as well, usually taking the form of a PDF. While the
+research paper is being published increasingly in this modern-day medium, it
+still closely resembles its thin, fibrous counterpart. However, the digital
+medium has made research papers much cheaper to distribute, making ideas like
+open access financially feasible.
 
 ---
 
@@ -227,38 +215,36 @@ publishers.[^anti-OA] Open access effectively flips their business model upside
 down.  The problem is that publishers don't want these research papers
 distributed freely. They want them behind a paywall so they can continue to
 profit from their business model, which is based primarily on journal
-subscriptions. This approach has been working great for them for the last <span
-class="oldstyle">100+</span> years. Making a profit is not bad---but they are
-in a position to charge whatever they want for journals and get away with it.
-And they do. They get all the profits, but they do not add much
-value[^pubvalue] to the research that is donated to them. Journal subscription
-costs continue to rise <span class="oldstyle">5--7</span> percent each year as
-library budgets are shrinking. Yet these publishers have consistently netted
-over <span class="oldstyle">35</span> percent each year, while all the
-refereeing, writing, and editing is done for them for free by researchers.
-Large academic libraries in the UK (and I'm sure it is a similar cost here in
-the states) end up paying over <span class="oldstyle"><span
-class="symbol">£</span>1,000,000</span> a year for research that was donated to
+subscriptions. This approach has been working great for them for the last
+[100+]{.oldstyle} years. Making a profit is not bad---but they are in a
+position to charge whatever they want for journals and get away with it. And
+they do. They get all the profits, but they do not add much value[^pubvalue] to
+the research that is donated to them. Journal subscription costs continue to
+rise [5--7]{.oldstyle} percent each year as library budgets are shrinking. Yet
+these publishers have consistently netted over [35]{.oldstyle} percent each
+year, while all the refereeing, writing, and editing is done for them for free
+by researchers. Large academic libraries in the UK (and I'm sure it is a
+similar cost here in the states) end up paying over
+[[£]{.symbol}1,000,000]{.oldstyle} a year for research that was donated to
 these insatiable institutions, quite possibly by members of their own faculty!
 
 The fact that this practice has persisted for so long is kind of mind-boggling.
 I guess there really was no other option until the Internet came along with a
 better way to publish.
 
-<span class="sic">C'mon</span>, publishers, are you so comfortable with your
-modus operandi that you require legislation to perpetuate your antiquated
-business model? There are [so many other options][velvet_rope] for monetizing
-the research and publication industry in more valuable ways!  Come down from
-your this-is-how-it-has-always-been-done ivory towers, stop digging in your
-heels, and get with the <span class="oldstyle">21</span>st century.
+[C'mon]{.sic}, publishers, are you so comfortable with your modus operandi that
+you require legislation to perpetuate your antiquated business model? There are
+[so many other options][velvet_rope] for monetizing the research and
+publication industry in more valuable ways!  Come down from your
+this-is-how-it-has-always-been-done ivory towers, stop digging in your heels,
+and get with the [21]{.oldstyle}st century.
 
 Putting their business practices aside, as a researcher, I don't want to shell
-out <span class="oldstyle"><span class="symbol">$</span>8--30</span> per paper
-when I don't even know beforehand whether the paper will significantly help my
-research project. If I was not a student or faculty member of an academic
-institution, where I had access to some of the more popular journals, I
-probably would not risk the expense unless the paper's abstract was
-particularly convincing.
+out [[$]{.symbol}8--30]{.oldstyle} per paper when I don't even know beforehand
+whether the paper will significantly help my research project. If I was not a
+student or faculty member of an academic institution, where I had access to
+some of the more popular journals, I probably would not risk the expense unless
+the paper's abstract was particularly convincing.
 
 ### Public Policy
 
@@ -272,11 +258,12 @@ being done about open access right now by governments around the world.
 The UK and the European Union seem to be the most progressive in the promotion
 of open access. The UK has pioneered efforts to legislate open access, having
 mandated that all publicly-funded research will be offered openly by
-<span class="oldstyle">2014</span>. Following their footsteps, the European
-Commission has mandated open access dissemination of all research paid for by
-its latest research initiative, named
-<a href="http://ec.europa.eu/research/horizon2020/index_en.cfm?pg=home&video=none">Horizon <span class="oldstyle">2020</span></a>.
-It is hoped that other EU member states will follow suit.[^EU-OA]
+[2014]{.oldstyle}. Following their footsteps, the European Commission has
+mandated open access dissemination of all research paid for by its latest
+research initiative, named <a
+href="http://ec.europa.eu/research/horizon2020/index_en.cfm?pg=home&video=none">Horizon
+[2020]{.oldstyle}</a>. It is hoped that other EU member states will follow
+suit.[^EU-OA]
 
 Australia and New Zealand also have a lot of support going for open access and
 even [open research](https://sites.google.com/site/nzauopenresearch/). In
@@ -416,20 +403,15 @@ acceptance of which has now reached critical mass, meaning that it has been
 tested sufficiently and is now generally accepted as truth.[^knowledge_creation]
 
 <figure id="fig:jefferson" class="bq grab">
-  <blockquote>
-    <p>
-      
-      That ideas should freely spread from one to another over the globe, for
-      the moral and mutual instruction of man, and improvement of his
-      condition, seems to have been peculiarly and benevolently designed by
-      nature, when she made them, like fire, expansible over all space, without
-      lessening their density at any point, and like the air in which we
-      breathe, move, and have our physical being, incapable of confinement or
-      exclusive appropriation.
 
-    </p>
-  </blockquote>
-  <figcaption>--- Thomas Jefferson</figcaption>
+> That ideas should freely spread from one to another over the globe, for the
+> moral and mutual instruction of man, and improvement of his condition, seems
+> to have been peculiarly and benevolently designed by nature, when she made
+> them, like fire, expansible over all space, without lessening their density
+> at any point, and like the air in which we breathe, move, and have our
+> physical being, incapable of confinement or exclusive appropriation.
+
+<figcaption>--- Thomas Jefferson</figcaption>
 </figure>
 
 True open access to knowledge requires that this knowledge-creation process be
@@ -460,8 +442,11 @@ of egalitarianism. Yet knowledge is put on the Web, but loses its context---its
 past and its future. We can't keep taking knowledge at face value.
 
 <figure id="fig:johnson" class="bq grab">
-  <blockquote><p>Integrity without knowledge is weak and useless, and knowledge without integrity is dangerous and dreadful.</p></blockquote>
-  <figcaption>--- Samuel Johnson, <a href="http://www.gutenberg.org/ebooks/652"><em>The History of Rasselas, Prince of Abissinia</em></a></figcaption>
+
+>  Integrity without knowledge is weak and useless, and knowledge without
+>  integrity is dangerous and dreadful.
+
+<figcaption>--- Samuel Johnson, <a href="http://www.gutenberg.org/ebooks/652"><cite>The History of Rasselas, Prince of Abissinia</cite></a></figcaption>
 </figure>
 
 Some of the paper-bound artifacts of traditional knowledge creation, namely
@@ -477,16 +462,12 @@ the Web. Not only that, but once they are there, it is all too easy to lose
 them.
 
 <figure id="quote:web_models_society" resource="#web_models_society" class="bq grab">
-  <blockquote cite="http://lists.w3.org/Archives/Public/www-tag/2002Jul/0090.html">
-    <p>
 
-      I don't want the Web to constrain what people do: the Web is not there to
-      constrain society. It's there to model society in its completeness, in
-      its entirety.
+> I don't want the Web to constrain what people do: the Web is not there to
+> constrain society. It's there to model society in its completeness, in its
+> entirety.
 
-    </p>
-  </blockquote>
-  <figcaption>--- Tim Berners-Lee, in a <a href="https://en.wikipedia.org/wiki/Global_Network_Navigator"><abbr title="Global Network Navigator">GNN</abbr></a> interview, <span class="oldstyle">1994</span></figcaption>
+<figcaption>--- Tim Berners-Lee, in a [GNN][] interview, [1994]{.oldstyle}, via [this email thread][tag-list].</figcaption>
 </figure>
 
 A big part of society is involved in the creation of knowledge. Yet knowledge
@@ -511,18 +492,13 @@ just would not make sense economically for the publisher. Negative results do
 not get published for the same reason.
 
 <figure class="bq grab">
-  <blockquote cite="http://www.wf4ever-project.org/wiki/download/attachments/2064544/ISMB2013KeynotecleanGOBLE.pdf">
-    <p>
 
-      An article about computational science in a scientific publication is
-      <em>not</em> the scholarship itself, it is merely <em>advertising</em> of
-      the scholarship. The actual scholarship is the complete software
-      development environment, and the complete set of instructions which
-      generated the figures.
+> An article about computational science in a scientific publication is *not*
+> the scholarship itself, it is merely *advertising* of the scholarship. The
+> actual scholarship is the complete software development environment, and the
+> complete set of instructions which generated the figures.
 
-    </p>
-  </blockquote>
-  <figcaption>--- Jonathan B. Buckheit and David Donoho, <a href="http://statweb.stanford.edu/~donoho/Reports/1995/wavelab.pdf"><cite>Wavelab and Reproducible Research</cite></a>, 1995.</figcaption>
+<figcaption>--- Jonathan B. Buckheit and David Donoho, [<cite>Wavelab and Reproducible Research</cite>][Wavelab], [1995]{.oldstyle}, via Carol Goble's [presentation][Goble].</figcaption>
 </figure>
 
 I would add to that the questions and thoughts that were in the researchers
@@ -553,7 +529,7 @@ process, even in high-technology domains. Progress is tracked in research
 notebooks and Post-it notes, or is just kept in the researcher's head. In this
 way, researchers themselves are silos! This culture has been promoted by a
 focus on [scientific priority] coupled with [over-discriminating journal
-publishers](#sec:the-modern-open-access-movement).
+publishers][the modern open access movement].
 
 In the end, the researchers must distill all of their notes
 into a four- or eight-page paper. Yet, what happens to all those notes? What
@@ -567,16 +543,15 @@ more quickly. Trickle down economics.
 
 We need to focus more on attribution, not authorship. We're researchers first,
 not authors, aren't we? We want to know who did the *research!* Authorship in
-research is a remnant of [the early modern
-period](#sec:the-early-modern-period), and stems from the limitations of the
-paper publication paradigm. When all you have is a monolithic paper at the end,
-*is there any other way to attach your name to your research?* Authorship has
-been the source of countless scientific squabbles. All to often, it's the
-researcher with the most power in an organization who ends up higher up in the
-list of authors of a research paper, not the one that actually did the most
-work! In fact, David Colquhoun has mentioned that he has 'come across cases
-where authors had not even read papers on which their name
-appears.'[^colquhoun]
+research is a remnant of [the early modern period][the early modern period],
+and stems from the limitations of the paper publication paradigm. When all you
+have is a monolithic paper at the end, *is there any other way to attach your
+name to your research?* Authorship has been the source of countless scientific
+squabbles. All to often, it's the researcher with the most power in an
+organization who ends up higher up in the list of authors of a research paper,
+not the one that actually did the most work! In fact, David Colquhoun has
+mentioned that he has 'come across cases where authors had not even read papers
+on which their name appears.'[^colquhoun]
 
 True open access to knowledge needs to be very fine-grained, so you know exactly
 who did what. Transparency is the important factor here, not so much for
@@ -591,15 +566,11 @@ discoveries and inventions are made independently and more or less
 simultaneously by multiple scientists and inventors</q>.
 
 <figure class="bq grab">
-  <blockquote cite="http://en.wikipedia.org/wiki/Multiple_discovery">
-    <p>
 
-      When the time is ripe for certain things, they appear at different places
-      in the manner of violets coming to light in early spring.
+> When the time is ripe for certain things, they appear at different places in
+> the manner of violets coming to light in early spring.
 
-    </p>
-  </blockquote>
-  <figcaption>--- <a href="http://en.wikipedia.org/wiki/Farkas_Bolyai">Farkas Bolyai</a>, to his son <a href="http://en.wikipedia.org/wiki/J%C3%A1nos_Bolyai">János</a>, urging him to publish his theory of non-Euclidian geometry without delay.</figcaption>
+<figcaption>--- [Farkas Bolyai], to his son [János], urging him to publish his theory of non-Euclidian geometry without delay.</figcaption>
 </figure>
 
 The point is that attribution, or credit, should take care of itself if the
@@ -623,16 +594,16 @@ Research semantics get lost, and [citations are just not
 enough](/research/#p[RsbOsr],h[RsbOsr,3]).
 
 Open access to the knowledge-creation process needs to be built around the
-[unit of research](/research/process/#sec:unit-of-research). This gives
-research outputs a natural structure that can be developed in a simple and
-understandable way.  These research outputs can then be shared or composed
-together in various collaborative ways. This is an important distinction
-between [true research software](/research/#p[WtrHwt],h[WtrHwt,2,3]) and wikis.
-While it is possible to provide open access to a research paper and even to the
-underlying research data, if we fail to show _how_ they are connected, then we
-are failing to give people access to the research and thought processes behind
-those research outputs. We need the whole [research context][context] to really
-understand those research outputs.
+[unit of research]. This gives research outputs a natural structure that can be
+developed in a simple and understandable way.  These research outputs can then
+be shared or composed together in various collaborative ways. This is an
+important distinction between [true research
+software](/research/#p[WtrHwt],h[WtrHwt,2,3]) and wikis. While it is possible
+to provide open access to a research paper and even to the underlying research
+data, if we fail to show _how_ they are connected, then we are failing to give
+people access to the research and thought processes behind those research
+outputs. We need the whole [research context][context] to really understand
+those research outputs.
 
 ## Iterating Research
 
@@ -765,22 +736,18 @@ It wasn't too long ago that science was dominated by amateurs. Research was an
 avocation enjoyed by teachers, philosophers, and other learned people.
 
 '\[N\]ever before has science become so alienated from the common man, and he, in
-turn, so suspicious of science,' said Erwin Chargaff, the biochemist who
-discovered <a href="https://en.wikipedia.org/wiki/Chargaff%27s_rules"
->two rules</a> that helped lead to the discovery of the double
-helix structure of <abbr title="Deoxyribonucleic acid">DNA</abbr>.
+turn, so suspicious of science,' said Erwin Chargaff, the biochemist.
 
 ### The Rise of the Professional Researcher
 
-During the first half of the <span class="oldstyle">20</span>th century,
-corporations and universities realized that research could form part of their
-competitive advantage. Governments also began to employ researchers for
-competitive advantage in warfare.[^manhattan-project] After World War <span
-class="roman">II</span>, the National Science Foundation was established in the
-US to unify the nation's efforts in scientific progress. In Europe, research
-began to be supported at the national level, and since <span
-class="oldstyle">1984</span> at the EU level with the [Framework
-Programmes]{:lang="en-GB"}.
+During the first half of the [20]{.oldstyle}th century, corporations and
+universities realized that research could form part of their competitive
+advantage. Governments also began to employ researchers for competitive
+advantage in warfare.[^manhattan-project] After World War [II]{.roman}, the
+National Science Foundation was established in the US to unify the nation's
+efforts in scientific progress. In Europe, research began to be supported at
+the national level, and since [1984]{.oldstyle} at the EU level with the
+[Framework Programmes]{lang=en-GB}.
 
 Isn't this progress? I'm not so sure. It's all too easy for political
 priorities to become the prominent driver for governmental funding. [In his
@@ -799,60 +766,54 @@ are forced to push research forward relentlessly, all the time pushing other
 researchers down in a selfish scramble to survive.
 
 <figure id="quote:institutionalization_chargaff" resource="#institutionalization_of_science" class="bq grab">
-  <blockquote>
-    <p>
-      
-      The institutionalization of science as a mass occupation, which began
-      during my lifetime, has brought with it the necessity of its continual
-      growth---similar in that respect to such mythical entities as the "gross
-      national product"---not because there is so much more to discover, but
-      because there are so many who want to be paid to do it. Any attempt to
-      reform is, therefore, met by insincere cries about the "freedom of
-      scientific inquiry"; and this will be followed by the immediate
-      constitution of all sorts of pressure groups, marching under the banner
-      of Galilei. Entrepreneurs disguised as freedom-fighters may look
-      ludicrous, but they are usually effective, for there is little as
-      irresistible as the momentum of the pocketbook.
 
-    </p>
-    <p>...</p>
-    <p>
+> The institutionalization of science as a mass occupation, which began during
+> my lifetime, has brought with it the necessity of its continual
+> growth---similar in that respect to such mythical entities as the "gross
+> national product"---not because there is so much more to discover, but
+> because there are so many who want to be paid to do it. Any attempt to reform
+> is, therefore, met by insincere cries about the "freedom of scientific
+> inquiry"; and this will be followed by the immediate constitution of all
+> sorts of pressure groups, marching under the banner of Galilei. Entrepreneurs
+> disguised as freedom-fighters may look ludicrous, but they are usually
+> effective, for there is little as irresistible as the momentum of the
+> pocketbook.
+>
+> ...
+>
+> Our kind of science has become so dependent on public support that nobody
+> seems to be able to do any research without a handout. If their applications
+> are turned down, even the youngest and most vigorous assistant professors
+> stop all work and spend the rest of their miserable days writing more
+> applications. This continual turning off and on of the financial faucets
+> produces Pavlovian effects and a general neurasthenia that are bound to
+> damage science irreversibly.
 
-      Our kind of science has become so dependent on public support that nobody
-      seems to be able to do any research without a handout. If their
-      applications are turned down, even the youngest and most vigorous
-      assistant professors stop all work and spend the rest of their miserable
-      days writing more applications. This continual turning off and on of the
-      financial faucets produces Pavlovian effects and a general neurasthenia
-      that are bound to damage science irreversibly.
-
-    </p>
-  </blockquote>
-  <figcaption>--- Erwin Chargaff, <cite>Heraclitean Fire: Sketches from a Life Before Nature</cite>, <span class="oldstyle">1978</span></figcaption>
+<figcaption>--- Erwin Chargaff, <cite>Heraclitean Fire: Sketches from a Life Before Nature</cite>, [1978]{.oldstyle}</figcaption>
 </figure>
 
 Some researchers write highfalutin mumbo-jumbo in an effort to sound clever.
 Such are attempts to widen the gap between ivory-tower researchers and the
 common man---as if the incomprehensible paper makes a researcher intellectually
 unapproachable or the grant money justifiable. I think this is an artifact from
-[the middle ages](#sec:the-middle-ages), when the prevailing approach was to
-keep the masses in the dark. We should be beyond that now. Knowledge is not
-exclusively squirrelled away in monastic libraries anymore. It's at our
-fingertips. Even government censoring cannot stop the flow of it. There is no
-excuse to try to keep people from learning so as only to prove your own
-intellectual superiority. The dynamics of the knowledge industry are changing,
-and we need to start working together as a team. Any concept can be explained
-simply if enough thought is put into it. I think it actually requires *more*
-skill to explain complicated things in a simple way, relating in such a way
-that a broad audience can understand. Truth is simple. Knowledge is not the
-exclusive property of the professional intellectualist. The *real* power comes
-in teaching and sharing---in collaboration---where, like a good choir or
-orchestra, the whole is greater than the sum of the parts.
+[the middle ages], when the prevailing approach was to keep the masses in the
+dark. We should be beyond that now. Knowledge is not exclusively squirrelled
+away in monastic libraries anymore. It's at our fingertips. Even government
+censoring cannot stop the flow of it. There is no excuse to try to keep people
+from learning so as only to prove your own intellectual superiority. The
+dynamics of the knowledge industry are changing, and we need to start working
+together as a team. Any concept can be explained simply if enough thought is
+put into it. I think it actually requires *more* skill to explain complicated
+things in a simple way, relating in such a way that a broad audience can
+understand. Truth is simple. Knowledge is not the exclusive property of the
+professional intellectualist. The *real* power comes in teaching and
+sharing---in collaboration---where, like a good choir or orchestra, the whole
+is greater than the sum of the parts.
 
 In saying this, I don't want to diminish the importance of domain vocabularies.
 Domain-specific vocabularies are justified and needed to explain complicated
 technical concepts in a given domain or discipline. Yet, as we learned from
-[Jack Andraka](#sec:some-good-examples), anyone can understand complicated
+[Jack Andraka][some good examples], anyone can understand complicated
 vocabularies and concepts if they're willing to put forth the effort.
 [Wikipedia] anyone?
 
@@ -883,11 +844,11 @@ without hidden agendas or selfish motivations.
   <figcaption><span property="schema:description"><b property="schema:title">You Are Amateurs</b> from <cite>A Christmas Without Snow</cite>, via the <a href="https://archive.org/details/AChristmasWithoutSnow" property="prov:wasDerivedFrom">Internet Archive</a>, produced by <span property="cc:attributionName schema:productionCompany">Korty Films</span> in <span class="oldstyle" property="schema:datePublished">1980</span></span>. Licensed under a <a property="cc:license" href="http://creativecommons.org/publicdomain/zero/1.0/" ><abbr title="Creative Commons Zero (Public Domain Dedication)">CC0</abbr> license</a>. <span class="icon-cc"></span><span class="icon-cc-zero"></span></figcaption>
 </figure>
 
-It was in <span class="oldstyle">1905</span>, while Albert Einstein worked
-full-time as an examiner at a patent office, that he published [four
-papers][miracle year], including his papers on [special relativity] and
-[mass-energy equivalence], that would change our understanding of space, time,
-and matter. A few years passed. According to his wife Elsa, '<q
+It was in [1905]{.oldstyle}, while Albert Einstein worked full-time as an
+examiner at a patent office, that he published [four papers][miracle year],
+including his papers on [special relativity] and [mass-energy equivalence],
+that would change our understanding of space, time, and matter. A few years
+passed. According to his wife Elsa, '<q
 cite="https://en.wikipedia.org/wiki/Albert_Einstein" class="sic">\[d\]uring
 breakfast on morning, \[Einstein\] seemed lost in thought and ignored his food.
 \[I\] asked him if something was bothering him. He sat down at the piano and
@@ -920,18 +881,18 @@ together, on an even playing field, respecting and valuing each others vastly
 disparate contributions to this great work. In many ways this would parallel
 the web developer revolution that has occurred over the last two decades. At
 the beginning of the Web, the scientists were the web developers. There's a
-reason the Web looked like it did in the <span class="oldstyle">90</span>'s,
-and it was not all a technical problem. The Web was created at CERN to navigate
-between scientific documents. Designers at some point realized the vast
-potential of design on the Web, and pushed for the ability to express more.
-Business people flocked to the Web when they saw the potential to disseminate
-more information [for low or zero costs][copy it]. Slowly, the Web grew up and
-we have HTML5, CSS3, JavaScript, browsers that can handle great complexity
-without breaking a sweat, and an audience that wants it. Web developers come up
-with extremely creative solutions, learn from and share ideas freely with each
-other. It doesn't matter which school they attended, only how good their ideas
-are. They are playing on an even playing field. Anyone can be a web developer!
-The same can happen with research and researchers.
+reason the Web looked like it did in the [90]{.oldstyle}'s, and it was not all
+a technical problem. The Web was created at CERN to navigate between scientific
+documents. Designers at some point realized the vast potential of design on the
+Web, and pushed for the ability to express more. Business people flocked to the
+Web when they saw the potential to disseminate more information [for low or
+zero costs][copy it]. Slowly, the Web grew up and we have HTML5, CSS3,
+JavaScript, browsers that can handle great complexity without breaking a sweat,
+and an audience that wants it. Web developers come up with extremely creative
+solutions, learn from and share ideas freely with each other. It doesn't matter
+which school they attended, only how good their ideas are. They are playing on
+an even playing field. Anyone can be a web developer! The same can happen with
+research and researchers.
 
 # Technological Foundations of Research Publication
 
@@ -939,15 +900,13 @@ We live in a different time now than when Sir Isaac Newton was around---a time
 in which we can take advantage of [multiple discovery] and push forward
 knowledge in an unprecedented way.
 
-[Clayton Christensen] of Harvard Business
-School [predicts][technological core] that '<q
-cite="http://techcrunch.com/2013/04/06/clayton-christensen-talks-venture-capital-crowd-funding-and-how-to-measure-your-life/">in
-<span class="oldstyle">15</span> years from now, more than half of the
-universities will be in bankruptcy.</q>' The reason? '<q>For <span
-class="oldstyle">300</span> years, higher education was not disruptable because
-there was no technological core.</q>' Well, education is getting disrupted
-right now, thanks to the technology core of [Udemy], [Coursera], [General
-Assembly] and the like.
+[Clayton Christensen] of Harvard Business School [predicts][technological core]
+that '<q cite="http://techcrunch.com/2013/04/06/clayton-christensen-talks-venture-capital-crowd-funding-and-how-to-measure-your-life/">in
+[15]{.oldstyle} years from now, more than half of the universities will be in
+bankruptcy.</q>' The reason? '<q>For [300]{.oldstyle} years, higher education
+was not disruptable because there was no technological core.</q>' Well,
+education is getting disrupted right now, thanks to the technology core of
+[Udemy], [Coursera], [General Assembly] and the like.
 
 Research is getting a technology core as well. It's coming slower than
 education, but it is coming. *Research will be disrupted.*
@@ -957,10 +916,10 @@ of, that when you took it away it would cease being research?
 
 ## A Closer Look at 17th Century Tech
 
-To understand how to move forward, we must look back to the past. Let's take a look
-at the technology that was available for scientific publications during the
-<span class="oldstyle">17</span>th century. It can serve as sort of a loose
-metaphor for how to proceed in the future.
+To understand how to move forward, we must look back to the past. Let's take a
+look at the technology that was available for scientific publications during
+the [17]{.oldstyle}th century. It can serve as sort of a loose metaphor for how
+to proceed in the future.
 
 <figure id="fig:movable-type" class="img" property="schema:image" resource="#movable_type" typeof="schema:ImageObject">
   <link property="rdfa:copy" resource="pentandra-website:license" />
@@ -1031,80 +990,74 @@ up with open access in mind. While there are some exciting advancements in
 current research software,[^utopia] we think that these improvements are
 transitional, and that the future of research lies in open, [domain-specific]
 research systems.
-{: .conclusion }
 
-# End Notes
-{:.no_toc}
+# Additional resources
 
-1. Footnotes
-{:footnotes}
-
-# Additional Resources
-{:.no_toc}
-
-* [The Coming of the Book: The Impact of Printing 1450--1800][febvre], by <span lang="fr">Lucien Febvre</span> and <span lang="fr">Henri-Jean Martin</span>. 
+* [The Coming of the Book: The Impact of Printing 1450--1800][febvre], by [Lucien Febvre]{lang=fr} and [Henri-Jean Martin]{lang=fr}.
 * [The Printing Press as an Agent of Change][press_agent], by Elizabeth Eisenstein. 
 * [Hypertext as an agent of change][hypertext], by Mandy Brown.
 * [Manuscripts, Books, and Maps: The Printing Press and a Changing World][booktext], by Bruce Jones.
 * [The Funding of Science][funding] on Wikipedia.
 
+[^anti-OA]:
 
-[^anti-OA]: Some publishers do support open access, primarily the "gold"
-    variant, where the author pays the fee to publish his research. Then the
-    publishers feel that they were paid enough to make it worth their while
-    and the public does not need to pay anything for access.
-    [More information about methods of financing open access](http://en.wikipedia.org/wiki/Open_access#Methods_of_financing_gold_open_access_publishing)
-    can be found on Wikipedia.
+    Some publishers do support open access, primarily the "gold" variant, where
+    the author pays the fee to publish his research. Then the publishers feel
+    that they were paid enough to make it worth their while and the public does
+    not need to pay anything for access. [More information about methods of
+    financing open access][financing open access] can be found on Wikipedia.
 
-[^AAP]: The Association of American Publishers was the 
-    [primary opponent](http://en.wikipedia.org/wiki/Federal_Research_Public_Access_Act#Opposition)
-    of the
-    <a href="http://thomas.loc.gov/cgi-bin/query/z?c112:H.R.4004:"><abbr>FRPAA</abbr></a>
-    and the
-    [proponent](http://en.wikipedia.org/wiki/Research_Works_Act#Reception)
-    of the Research Works Act.
+[^AAP]:
+
+    The Association of American Publishers was the [primary opponent][aap] of
+    the [FRPAA][FRPAA-legal] and the
+    [proponent](http://en.wikipedia.org/wiki/Research_Works_Act#Reception) of
+    the Research Works Act.
 
 [^GSA]:
 
-    As of November <span class="oldstyle">1, 2012</span>,
-    [Georgia State Archives was set to lose seven](http://georgiaarchivesmatters.org/2012/09/27/the-staff-what-we-stand-to-lose/)
-    of the remaining ten employees. Because of
-    [the efforts of many](http://www.change.org/petitions/the-governor-of-ga-leave-our-state-archives-open-to-the-public)
-    Governor Nathan Deal
-    [restored two of the jobs](http://www.ajc.com/news/news/state-regional-govt-politics/5-georgia-archives-employees-will-still-lose-jobs/nShnm/),
+    As of November [1, 2012]{.oldstyle}, [Georgia State Archives was set to
+    lose
+    seven](http://georgiaarchivesmatters.org/2012/09/27/the-staff-what-we-stand-to-lose/)
+    of the remaining ten employees. Because of [the efforts of
+    many](http://www.change.org/petitions/the-governor-of-ga-leave-our-state-archives-open-to-the-public)
+    Governor Nathan Deal [restored two of the
+    jobs](http://www.ajc.com/news/news/state-regional-govt-politics/5-georgia-archives-employees-will-still-lose-jobs/nShnm/),
     which will be enough to keep the archives open until the middle of next
     year. At the same time, as is unfortunately all too common with competing
-    political priorities, Georgia is spending upwards of <span class="oldstyle"><span
-    class="symbol">$</span>400</span> million in public funds to
-    [build a controversial new football stadium][football]
-    instead of retrofitting the Georgia Dome with a retractable roof. 
-    Happily, during the latest session of the Georgia General Assembly <span
-    class="oldstyle">(2013--2014)</span>, a good portion of the archive's lost
-    budget was restored. You can track the progress on
-    [georgiaarchivesmatters.org](http://georgiaarchivesmatters.org/){:.domainname}.
+    political priorities, Georgia is spending upwards of
+    [[$]{.symbol}400]{.oldstyle} million in public funds to [build a
+    controversial new football stadium][football] instead of retrofitting the
+    Georgia Dome with a retractable roof. Happily, during the latest session of
+    the Georgia General Assembly [(2013--2014)]{.oldstyle}, a good portion of
+    the archive's lost budget was restored. You can track the progress on
+    [georgiaarchivesmatters.org](http://georgiaarchivesmatters.org/){.domainname}.
 
-[^RWA]: The [Research Works Act][RWA]
-    (<abbr>HR</abbr> <span class="oldstyle">3699</span>) would in effect repeal
-    <abbr title="National Institutes of Health">NIH</abbr>'s 
-    <a href="http://publicaccess.nih.gov/policy.htm">open access policy</a>.
-    Richard Price, <abbr>CEO</abbr> of [academia.edu](http://academia.edu){:.domainname},
-    wrote about [some of the particular arguments](http://blog.academia.edu/post/17986108041/the-dangerous-research-works-act)
+[^RWA]:
+
+    The [Research Works Act][RWA] (HR [3699]{.oldstyle}) would in effect repeal
+    NIH's <a href="http://publicaccess.nih.gov/policy.htm">open access
+    policy</a>. Richard Price, <abbr>CEO</abbr> of
+    [academia.edu](http://academia.edu){.domainname}, wrote about [some of the
+    particular
+    arguments](http://blog.academia.edu/post/17986108041/the-dangerous-research-works-act)
     against this bill. As a reaction to this bill and to being fed up with the
     injustices of the current system in general, some researchers set up [a
     website to boycott Elsevier](http://thecostofknowledge.com/), one of the
     primary promoters of the bill.
 
-    In response to many of these reactions,
-    [Elsevier eventually withdrew support][elsevier_RWA]
-    for the bill. Representatives Darrell Issa and Carolyn B. Maloney issued
-    the [following statement](https://plus.google.com/117417705451874519785/posts/7McDJNDrpcR):
-    
-    > "The introduction of <abbr>HR</abbr> <span class="oldstyle">3699</span>
-    > has spurred a robust, expansive debate on the topics of scientific and
-    > scholarly publishing, intellectual property protection, and public access
-    > to federally funded research.  Since its introduction, we have heard from
-    > numerous stakeholders and interested parties on both sides of this
-    > important issue.
+    In response to many of these reactions, [Elsevier eventually withdrew
+    support][elsevier_RWA] for the bill. Representatives Darrell Issa and
+    Carolyn B. Maloney issued the [following
+    statement](https://plus.google.com/117417705451874519785/posts/7McDJNDrpcR):
+
+    <div class="bq grab">
+
+    > "The introduction of HR [3699]{.oldstyle} has spurred a robust, expansive
+    > debate on the topics of scientific and scholarly publishing, intellectual
+    > property protection, and public access to federally funded research.
+    > Since its introduction, we have heard from numerous stakeholders and
+    > interested parties on both sides of this important issue.
     >
     > "As the costs of publishing continue to be driven down by new technology,
     > we will continue to see a growth in open access publishers. This new and
@@ -1115,86 +1068,93 @@ research systems.
     > come to the conclusion that the Research Works Act has exhausted the
     > useful role it can play in the debate. As such, we want Americans
     > concerned about access to research and other participants in this debate
-    > to know we will not be taking legislative action on <abbr>HR</abbr> <span
-    > class="oldstyle">3699</span>, the Research Works Act. We do intend to
-    > remain involved in efforts to examine and study the protection of
-    > intellectual property rights and open access to publicly funded
-    > research."
-    {: .bq .grab }
+    > to know we will not be taking legislative action on HR [3699]{.oldstyle},
+    > the Research Works Act. We do intend to remain involved in efforts to
+    > examine and study the protection of intellectual property rights and open
+    > access to publicly funded research."
 
+    </div>
 
 [^utopia]: Such as [Utopia Documents](http://utopiadocs.com/).
 
-[^NIH]: This policy was passed as part of the
-    <a href="http://thomas.loc.gov/cgi-bin/bdquery/z?d110:H.R.2764:">Consolidated Appropriations Act, <span class="oldstyle">2008</span></a>.
-    The law requires that the paper be submitted to PubMed Central [no later
-    than twelve months after publication][nih policy]. While it is great that
-    the research will be available eventually, twelve months is too long to
-    wait for the latest research for most research organizations, so a
-    subscription to the journal is still necessary.
+[^NIH]:
 
-[^pubvalue]: Most of the value added by publishers currently involves
-    selecting and typesetting research papers, assigning a
-    <a href="http://www.doi.org/">
-      <abbr title="Digital Object Identifier">DOI</abbr></a>,
-    and organizing the peer-review process. While this is commendable, it is
-    hardly worth the money they get paid for it.
-    [Listen](http://www.youtube.com/watch?v=v31zpZ4woOI&t=13m35s){:.oa-value}
-    to the discussion about the value that publishers currently add to the
+    This policy was passed as part of the <a
+    href="http://thomas.loc.gov/cgi-bin/bdquery/z?d110:H.R.2764:">Consolidated
+    Appropriations Act, [2008]{.oldstyle}</a>. The law requires that the paper
+    be submitted to PubMed Central [no later than twelve months after
+    publication][nih policy]. While it is great that the research will be
+    available eventually, twelve months is too long to wait for the latest
+    research for most research organizations, so a subscription to the journal
+    is still necessary.
+
+[^pubvalue]:
+
+    Most of the value added by publishers currently involves selecting and
+    typesetting research papers, assigning a [DOI], and organizing the
+    peer-review process. While this is commendable, it is hardly worth the
+    money they get paid for it.
+    [Listen](http://www.youtube.com/watch?v=v31zpZ4woOI&t=13m35s){.oa-value} to
+    the discussion about the value that publishers currently add to the
     research dissemination process.
 
-[^EU-OA]: The announcement of the mandate from the European Commission came
-    only a day after the UK announced their new open access policy. The
-    commission [hopes] that open access publishing by member states
-    will reach <span class="oldstyle">60<span class="symbol">%</span></span> by
-    <span class="oldstyle">2016</span>.
-
-[^manhattan-project]: One of the first large-scale government research projects
-    was the [Manhattan Project], which led to the creation of the
-    [US Office of Scientific Research and Development] in <span
-    class="oldstyle">1941</span>, with Vannevar Bush as the director, and the
-    creation of a network of national laboratories, including the [Lawrence
-    Berkeley National Laboratory], [Los Alamos National Laboratory], [Oak Ridge
-    National Laboratory], [Argonne National Laboratory], [Ames Laboratory],
-    [Brookhaven National Laboratory], and [Sandia National Laboratory], and was
-    the beginning of what we call today [Big Science]. After World War <span
-    class="roman">II</span>, Vannevar was instrumental in establishing the
-    [National Science Foundation]. Before the war, academic research in science
-    and engineering was not considered a federal responsibility.
-
-[^oa-overview]: Open access is a complicated and highly-debated topic right
-    now. Many people sit on both sides of the fence. A researcher may publish,
-    referee, and even sit on editorial boards, all at the same time! If you
-    have a spare half-hour, this is a good round-table discussion on open
-    access that gives a deeper look into some of the issues. If you don't have
-    much time right now, feel free to pick a question or two below that
-    interests you and hear what they have to say:
-
-    * [is open access a good idea?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=1m22s){: .oa-goodidea }
-
-    * [how much does open access cost?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=4m2s){: .oa-cost }
-
-    * [what is the Gold Open Access model?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=11m44s){: .oa-gold }
-
-    * [what can publishers do to add value?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=13m35s){: .oa-value }
-
-    * [how can authors afford Gold Open Access?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=15m31s){: .oa-afford }
+[^EU-OA]:
     
-    * [are publishers really necessary for open access?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=16m33s){: .oa-publishers }
+    The announcement of the mandate from the European Commission came only a
+    day after the UK announced their new open access policy. The commission
+    [hopes] that open access publishing by member states will reach
+    [60[%]{.symbol}]{.oldstyle} by [2016]{.oldstyle}.
 
-    * [what is the Green Open Access model?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=20m38s){: .oa-green }
+[^manhattan-project]:
 
-    * [are publishers confident in their added value?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=21m24s){: .publisher-value }
+    One of the first large-scale government research projects was the
+    [Manhattan Project], which led to the creation of the [US Office of
+    Scientific Research and Development] in [1941]{.oldstyle}, with Vannevar
+    Bush as the director, and the creation of a network of national
+    laboratories, including the [Lawrence Berkeley National Laboratory], [Los
+    Alamos National Laboratory], [Oak Ridge National Laboratory], [Argonne
+    National Laboratory], [Ames Laboratory], [Brookhaven National Laboratory],
+    and [Sandia National Laboratory], and was the beginning of what we call
+    today [Big Science]. After World War [II]{.roman}, Vannevar was
+    instrumental in establishing the [National Science Foundation]. Before the
+    war, academic research in science and engineering was not considered a
+    federal responsibility.
 
-    * [will open access put publishers out of business?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=22m43s){: .publisher-death }
+[^oa-overview]:
+
+    Open access is a complicated and highly-debated topic right now. Many
+    people sit on both sides of the fence. A researcher may publish, referee,
+    and even sit on editorial boards, all at the same time! If you have a spare
+    half-hour, this is a good round-table discussion on open access that gives
+    a deeper look into some of the issues. If you don't have much time right
+    now, feel free to pick a question or two below that interests you and hear
+    what they have to say:
+
+    * [is open access a good idea?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=1m22s){.oa-goodidea}
+
+    * [how much does open access cost?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=4m2s){.oa-cost}
+
+    * [what is the Gold Open Access model?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=11m44s){.oa-gold}
+
+    * [what can publishers do to add value?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=13m35s){.oa-value}
+
+    * [how can authors afford Gold Open Access?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=15m31s){.oa-afford}
+
+    * [are publishers really necessary for open access?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=16m33s){.oa-publishers}
+
+    * [what is the Green Open Access model?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=20m38s){.oa-green}
+
+    * [are publishers confident in their added value?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=21m24s){.publisher-value}
+
+    * [will open access put publishers out of business?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=22m43s){.publisher-death}
  
-    * [what countries mandate open access right now?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=26m39s){: .oa-promoters }
+    * [what countries mandate open access right now?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=26m39s){.oa-promoters}
 
     <figure id="ruvr" class="section">
       <video class="simple" width="100%" height="100%" style="width: 100%; height: 100%;" id="player" preload="none" controls="controls">
         <source type="video/youtube" src="http://www.youtube.com/watch?v=v31zpZ4woOI" />
       </video>
-      <figcaption><p>The London Bureau of <a href="http://english.ruvr.ru/">The Voice of Russia</a> interviews several open access advocates, including Ross Mounce, from the <a href="http://okfn.org">Open Knowledge Foundation</a>, Rita Gardner, the director of the Royal Geographic Society, <span lang="nl">Björn Brembs</span>, Professor at the Department of Genetics at the University of Leipzig, and Timothy Gowers, Math Professor at Cambridge University.</p></figcaption>
+      <figcaption><p>The London Bureau of <a href="http://english.ruvr.ru/">The Voice of Russia</a> interviews several open access advocates, including Ross Mounce, from the <a href="http://okfn.org">Open Knowledge Foundation</a>, Rita Gardner, the director of the Royal Geographic Society, [Björn Brembs]{lang=nl}, Professor at the Department of Genetics at the University of Leipzig, and Timothy Gowers, Math Professor at Cambridge University.</p></figcaption>
     </figure>
 
     Peter Suber is considered by many to be the expert on open access. He
@@ -1203,86 +1163,60 @@ research systems.
     scholars are not paid, and therefore for which the have nothing to lose and
     everything to gain by enlarging their audience by putting them online free
     of charge."
-    {: .section }
 
     <figure id="petersuber" class="section">
-
       <audio id="suberinterview" preload="none" controls="controls">
         <source src="SuberPodcast_mp3.mp3" type="audio/mpeg" />
         <source src="SuberPodcast_ogg.ogg" type="audio/ogg" /> 
       </audio>
-
-      <figcaption>
-        <p>
-
-          An interview with Peter Suber on the Harvard University campus at the
-          <a href="http://cyber.law.harvard.edu/hoap/Main_Page"
-           >Berkman Center for Internet and Society</a>, where
-          Suber is a faculty fellow.
-          <a href="http://dx.doi.org/10.6084/m9.figshare.96368" class="uri">http://dx.doi.org/10.6084/m9.figshare.96368</a>
-          <span class="icon-cc"></span><span class="icon-cc-by"></span>
-
-        </p>
-      </figcaption>
+      <figcaption><p>An interview with Peter Suber on the Harvard University campus at the <a href="http://cyber.law.harvard.edu/hoap/Main_Page">Berkman Center for Internet and Society</a>, where Suber is a faculty fellow. <http://dx.doi.org/10.6084/m9.figshare.96368> <span class="icon-cc"></span><span class="icon-cc-by"></span></p></figcaption>
     </figure>
 
     And to finish it off, here is a great video by [PhD Comics]:
-    {: .section }
 
     <figure id="PhD-OA" resource="http://www.youtube.com/watch?v=L5rVH1KGBCY">
       <video class="simple" width="100%" height="100%" style="width: 100%; height: 100%; max-width: 100%;" id="oa-explained" preload="none" controls="controls">
         <source type="video/youtube" src="http://www.youtube.com/watch?v=L5rVH1KGBCY" />
       </video>
-      <figcaption>
-        <p>
-
-          What is open access? Nick Shockey and Jonathan Eisen take us through
-          the world of open access publishing and explain just what it's all
-          about.
-
-          <a property="dc:title" rel="cc:attributionURL"
-             href="http://www.phdcomics.com/tv/#015">Open Access
-             Explained!</a>,
-          by <a href="http://www.phdcomics.com"
-                property="cc:attributionName"
-                rel="dc:creator">PhD Comics</a>,
-          is licensed under a
-          <a rel="cc:license"
-             href="http://creativecommons.org/licenses/by/3.0/">
-             <abbr>CC-BY</abbr> license</a>.
-          <span class="icon-cc"></span><span class="icon-cc-by"></span>
-
-        </p>
-      </figcaption>
+      <figcaption><p>What is open access? Nick Shockey and Jonathan Eisen take us through the world of open access publishing and explain just what it's all about. <a property="dc:title" rel="cc:attributionURL" href="http://www.phdcomics.com/tv/#015">Open Access Explained!</a>, by <a href="http://www.phdcomics.com" property="cc:attributionName" rel="dc:creator">PhD Comics</a>, is licensed under a <a rel="cc:license" href="http://creativecommons.org/licenses/by/3.0/">CC-BY license</a>. <span class="icon-cc"></span><span class="icon-cc-by"></span></p></figcaption>
     </figure>
 
-[^dissemination]: To me the word *dissemination* evokes the image of a
-    researcher on an ivory tower, benevolently throwing out copies of his most
-    recent publication to the masses below. I don't like it inasmuch as it
-    focuses attention on the altitude of the researcher, rather than on the
-    research itself. It also implies a one-way transmission. I prefer more
-    down-to-earth terms, such as *collaboration* or *communication*. See
-    [Introducing Research Cases][research cases] for a more participative
-    approach.
+[^dissemination]:
 
-[^Vespucci]: To be completely fair, Columbus only discovered the [West Indies].
-    It was [Amerigo Vespucci] who discovered the continents which we know today
-    as North and South America.
+    To me the word *dissemination* evokes the image of a researcher on an ivory
+    tower, benevolently throwing out copies of his most recent publication to
+    the masses below. I don't like it inasmuch as it focuses attention on the
+    altitude of the researcher, rather than on the research itself. It also
+    implies a one-way transmission. I prefer more down-to-earth terms, such as
+    *collaboration* or *communication*. See [Introducing Research
+    Cases][research cases] for a more participative approach.
 
-[^knowledge_creation]: For a more formal definition of knowledge creation, and
-    especially for the process that new knowledge takes as it becomes more
-    integrated into society, see Ikujiro Nonaka's paper, <a
+[^Vespucci]:
+
+    To be completely fair, Columbus only discovered the [West Indies]. It was
+    [Amerigo Vespucci] who discovered the continents which we know today as
+    North and South America.
+
+[^knowledge_creation]:
+
+    For a more formal definition of knowledge creation, and especially for the
+    process that new knowledge takes as it becomes more integrated into
+    society, see Ikujiro Nonaka's paper, <a
     href="http://www.jstor.org/stable/2635068"><cite>A Dynamic Theory of
     Organizational Knowledge Creation</cite></a> (behind <abbr>JSTOR</abbr>'s
-    paywall, sorry!), and <a
+    paywall, :angry:), and <a
     href="http://www.palgrave-journals.com/kmrp/journal/v1/n1/full/8500001a.html">
     <cite>The knowledge-creating theory revisited: knowledge creation as a
     synthesizing process</cite></a> by Nonaka and Toyama.
 
-[^chaplin]: Charlie Chaplin, in his [autobiography], mentions a dinner at 
-    his home in <span class="oldstyle">1926</span>, during which Einstein's
-    second wife, Elsa, told him and two other friends about the time Einstein
-    conceived of the theory of relativity. She related:
+[^chaplin]:
+
+    Charlie Chaplin, in his [autobiography], mentions a dinner at his home in
+    [1926]{.oldstyle}, during which Einstein's second wife, Elsa, told him and
+    two other friends about the time Einstein conceived of the theory of
+    relativity. She related:
+
+    <div class="bq grab">
 
     > The Doctor \[Einstein\] came down in his dressing gown as usual for
     > breakfast but he hardly touched a thing. I thought something was wrong,
@@ -1303,37 +1237,21 @@ research systems.
     > "Eventually," Mrs. Einstein said, "he came down from his study looking
     > very pale." "That's it," he told me, wearily putting two sheets of paper
     > on the table. And that was his theory of relativity.
-    {: .bq .grab }
 
-    He later referred to this as the happiest time of his
-    life.[^Einsteins_Dream]
+    </div>
 
-[^Einsteins_Dream]: Parker, Barry. [Einstein's Dream: The Search for a Unified Theory of the Universe](http://books.google.com/books?id=GMZyB1bBpssC). Basic Books, 2008. ISBN: 9780465011858.
+    He later referred to this as the happiest time of his life.
 
-[^violin_practicing]: While Einstein said this in particular about his love of
-    music and violin practice, the same applies to any skill that you are
-    pursuing.
+    Parker, Barry. [Einstein's Dream: The Search for a Unified Theory of the
+    Universe](http://books.google.com/books?id=GMZyB1bBpssC). Basic Books,
+    2008. ISBN: [9780465011858]{.identifier}.
 
-[^colquhoun]: <http://www.michaeleisen.org/blog/?p=694#comment-359363>{:.uri}
+[^violin_practicing]:
 
-*[PDF]: Portable Document Format
-*[FRPAA]: Federal Research Public Access Act
-*[NIH]: National Institutes of Health
-*[EU]: European Union
-*[US]: United States
-*[UK]: United Kingdom
-*[HR]: House of Representatives
-*[NHMRC]: National Health and Medical Research Council (Australia)
-*[ARC]: Australian Research Council
-*[OA]: Open Access
-*[DOI]: Digital Object Identifier
-*[DARPA]: Defence Advanced Research Projects Agency
-*[NASA]: National Aeronautics and Space Administration
-*[W3C]: World Wide Web Consortium
-*[ISBN]: International Standard Book Number
-*[HTML5]: HyperText Markup Language, Version 5
-*[CSS3]: Cascading Style Sheets Level 3
-*[CERN]: European Organization for Nuclear Research (French: Organisation Européenne pour la Recherche Nucléaire)
+    While Einstein said this in particular about his love of music and violin
+    practice, the same applies to any skill that you are pursuing.
+
+[^colquhoun]: <http://www.michaeleisen.org/blog/?p=694#comment-359363>
 
 [clarity]: </research/#sec:clarity> "Pentandra → The Future of Research → Clarity"
 [context]: </research/#sec:context> "Pentandra → The Future of Research → Context"
@@ -1345,6 +1263,7 @@ research systems.
 [arc]: http://chronicle.com/blogs/wiredcampus/the-australian-research-councils-new-leader-opens-up/40276
 [PubMed]: http://www.ncbi.nlm.nih.gov/pmc/ "PubMed Central"
 [FRPAA]: http://en.wikipedia.org/wiki/Federal_Research_Public_Access_Act
+[FRPAA-legal]: <http://thomas.loc.gov/cgi-bin/query/z?c112:H.R.4004:>
 [white_house]: https://petitions.whitehouse.gov/petition/require-free-access-over-internet-scientific-journal-articles-arising-taxpayer-funded-research/wDX82FLQ
 [clothesline]: http://www.edge.org/conversation/-39the-clothesline-paradox-39-
 [public_access]: http://www.nytimes.com/2012/09/27/us/budget-cuts-to-limit-public-access-to-georgia-archives.html?_r=0#p[WohFyo],h[WohFyo,1]
@@ -1409,6 +1328,16 @@ research systems.
 [research cases]: </blog/introducing-research-cases/> "Introducing Research Cases"
 [economics]: </blog/introducing-research-cases/#sec:publish-or-perish> "Introducing Research Cases → Publish Or Perish"
 [canada-tri-agency]: <http://poeticeconomics.blogspot.com/2015/02/canadas-tri-agency-open-access-policy.html> "Canada's tri-agency open access policy, by Heather Morrison"
+[tag-list]: <http://lists.w3.org/Archives/Public/www-tag/2002Jul/0090.html>
+[GNN]: <https://en.wikipedia.org/wiki/Global_Network_Navigator> "Global Network Navigator on Wikipedia"
+[Goble]: <http://www.wf4ever-project.org/wiki/download/attachments/2064544/ISMB2013KeynotecleanGOBLE.pdf>
+[Wavelab]: <http://statweb.stanford.edu/~donoho/Reports/1995/wavelab.pdf>
+[Farkas Bolyai]: <http://en.wikipedia.org/wiki/Farkas_Bolyai> "Farkas Bolyai on Wikipedia"
+[János]: <http://en.wikipedia.org/wiki/J%C3%A1nos_Bolyai> "János Bolyai on Wikipedia"
+[unit of research]: </research/process/#sec:unit-of-research>
+[financing open access]: <http://en.wikipedia.org/wiki/Open_access#Methods_of_financing_gold_open_access_publishing>
+[DOI]: <http://www.doi.org/>
+[aap]: <http://en.wikipedia.org/wiki/Federal_Research_Public_Access_Act#Opposition>
 
 <% content_for :javascripts do %>
 <script>

@@ -48,22 +48,17 @@ fifteen-story building, with many windows, plenty of fresh air, and a nice
 balcony upon which to exercise [the law of two feet].
 
 During this workshop there was a main track that was needed to fulfill some of
-the original Helmsley grant requirements, which <span lang="nl">Jeroen
-Bosman</span> and <span lang="nl">Bianca Kramer</span> expertly designed to fit
-the theme of _putting the pieces together_. At many points in the program,
-participants also had the opportunity to propose or join an unworkshop session
-to discuss any related topic or perspective that they desired. Despite a
-somewhat rocky beginning, I am happy that people were able to share and
-participate in what mattered to them. I tried to bounce around these
-unworkshops and the main track, learning as much as I could. Good conversations
-were taking place at all of them! But there were a few themes that I have been
-mulling, and questions for which I have been trying to find answers, that I
-want to explore further and discuss a bit in this post.
-
-For your reference, here's a quick breakdown of where I go from here:
-
-1. Table of Contents
-{:toc}
+the original Helmsley grant requirements, which [Jeroen Bosman]{lang=nl} and
+[Bianca Kramer]{lang=nl} expertly designed to fit the theme of _putting the
+pieces together_. At many points in the program, participants also had the
+opportunity to propose or join an unworkshop session to discuss any related
+topic or perspective that they desired. Despite a somewhat rocky beginning, I
+am happy that people were able to share and participate in what mattered to
+them. I tried to bounce around these unworkshops and the main track, learning
+as much as I could. Good conversations were taking place at all of them! But
+there were a few themes that I have been mulling, and questions for which I
+have been trying to find answers, that I want to explore further and discuss a
+bit in this post.
 
 # A _global_ commons?
 
@@ -93,24 +88,23 @@ above](#fig:journey-of-defining) from more of an _evil_ point of view, our
 journey from Madrid to San Diego could be thought of as a journey of
 _conquest_. Isn't this the same path that [Juan Rodríguez Cabrillo][cabrillo]
 and [others][vizcaino] took as they claimed land for Spain? Obviously, this is
-not what we have in mind. The difference is that we are not <span
-lang="es">conquistadores</span> and we are not trying to create an [<span
-lang="es">encomienda</span>][encomienda] system[^citizen_science] here! In
-fact, the struggles and inequities of the current system are the very things
-from which we are trying to get away. I think there's a lesson from history
-here from which we should learn---and things we should not repeat.
-Groundbreaking opportunities exist to try to do things a different way. We have
-a chance to do something good here, and it is critical that we do it right.
+not what we have in mind. The difference is that we are not
+[conquistadores]{lang=es} and we are not trying to create an
+[[encomienda]{lang=es}][encomienda] system[^citizen_science] here! In fact, the
+struggles and inequities of the current system are the very things from which
+we are trying to get away. I think there's a lesson from history here from
+which we should learn---and things we should not repeat. Groundbreaking
+opportunities exist to try to do things a different way. We have a chance to do
+something good here, and it is critical that we do it right.
 
-<span class="newthought">I want to put forward here an alternative
-approach</span> to explaining where I think we are right now by comparing our
-situation with a few experiences of several early groups that encountered
-challenges similar in principle to what we're facing at this time. Maybe it's
-that Cameron Neylon has me [thinking about groups][groups] lately, but these
-particular groups stick out in history to me[^disclaimer] because of their
-unique accomplishments and the effects of their shared culture despite the fact
-that they came together from such distinctly divergent backgrounds and points
-of view.
+[I want to put forward here an alternative approach]{.newthought} to explaining
+where I think we are right now by comparing our situation with a few
+experiences of several early groups that encountered challenges similar in
+principle to what we're facing at this time. Maybe it's that Cameron Neylon has
+me [thinking about groups][groups] lately, but these particular groups stick
+out in history to me[^disclaimer] because of their unique accomplishments and
+the effects of their shared culture despite the fact that they came together
+from such distinctly divergent backgrounds and points of view.
 
 What we're trying to accomplish with the Scholarly Commons has some striking
 similarities to what we know of the circumstances surrounding the venture of
@@ -129,11 +123,11 @@ the only records we have of this experience), these two groups were referred to
 respectively as the Saints and the Strangers. (These labels may give some
 insight into the obvious tensions between the two groups.) Unlike most of their
 contemporaries headed to the New World, these colonists were not entrepreneurs
-or <span lang="es">conquistadores</span> determined to conquer indigenous
-peoples, but came seeking freedom to practice religion the way they believed.
-This difference obviously changed how they approached problems, and with much
-patience and determination they were able to develop relationships of trust and
-mutual respect with each other as well as with the indigenous tribes of the New
+or [conquistadores]{lang=es} determined to conquer indigenous peoples, but came
+seeking freedom to practice religion the way they believed. This difference
+obviously changed how they approached problems, and with much patience and
+determination they were able to develop relationships of trust and mutual
+respect with each other as well as with the indigenous tribes of the New
 World.[^massasoit] They learned from each other. They helped each other. Their
 circumstances were not perfect, nor was every choice that was made. People
 goofed up on both sides. But they kept trying, got some things right, and they
@@ -254,23 +248,18 @@ years after the initial compact was signed on board the Mayflower, describing a
 situation eerily similar to that earlier time, just on a much bigger scale.
 
 <figure id="fig:hamilton" class="bq grab">
-  <blockquote>
-    <p>
 
-      It has been frequently remarked that it seems to have been reserved to
-      the people of this country, to decide by their conduct and example, the
-      important question, whether societies of men are really capable or not of
-      establishing good government from reflection and choice, or whether they
-      are forever destined to depend for their political constitutions on
-      accident and force. If there be any truth in the remark, the crisis at
-      which we are arrived may with propriety be regarded as the period when
-      that decision is to be made; and a wrong election of the part we shall
-      act may, in this view, deserve to be considered as the general misfortune
-      of mankind.
+> It has been frequently remarked that it seems to have been reserved to the
+> people of this country, to decide by their conduct and example, the important
+> question, whether societies of men are really capable or not of establishing
+> good government from reflection and choice, or whether they are forever
+> destined to depend for their political constitutions on accident and force.
+> If there be any truth in the remark, the crisis at which we are arrived may
+> with propriety be regarded as the period when that decision is to be made;
+> and a wrong election of the part we shall act may, in this view, deserve to
+> be considered as the general misfortune of mankind.
 
-    </p>
-  </blockquote>
-  <figcaption>--- Alexander Hamilton, <cite>The Federalist Papers</cite>, No. <span class="oldstyle">1</span></figcaption>
+<figcaption>--- Alexander Hamilton, <cite>The Federalist Papers</cite>, No. [1]{.oldstyle}</figcaption>
 </figure>
 
 Now a scholarly commons is not a civil body, it's a commons---a middle ground
@@ -290,28 +279,23 @@ and market forces. Without that choice, there is no Scholarly Commons nor
 indeed can there be, or at least not anything that will bring together and
 unite the researchers of the world in such a way.
 
-<span class="newthought">I see here an opportunity to do something</span> that
-has never been done before---something that would improve the lives of
-everyone, and to do it for the right reasons. The Scholarly Commons will not
-only give more freedom to the professional researchers, but will open up
-opportunities for many more people to become involved in knowledge work, and
-make knowledge itself more free and abundant.
+[I see here an opportunity to do something]{.newthought} that has never been
+done before---something that would improve the lives of everyone, and to do it
+for the right reasons. The Scholarly Commons will not only give more freedom to
+the professional researchers, but will open up opportunities for many more
+people to become involved in knowledge work, and make knowledge itself more
+free and abundant.
 
 <figure id="fig:jefferson" class="bq grab">
-  <blockquote>
-    <p>
-      
-      That ideas should freely spread from one to another over the globe, for
-      the moral and mutual instruction of man, and improvement of his
-      condition, seems to have been peculiarly and benevolently designed by
-      nature, when she made them, like fire, expansible over all space, without
-      lessening their density at any point, and like the air in which we
-      breathe, move, and have our physical being, incapable of confinement or
-      exclusive appropriation.
 
-    </p>
-  </blockquote>
-  <figcaption>--- Thomas Jefferson</figcaption>
+> That ideas should freely spread from one to another over the globe, for the
+> moral and mutual instruction of man, and improvement of his condition, seems
+> to have been peculiarly and benevolently designed by nature, when she made
+> them, like fire, expansible over all space, without lessening their density
+> at any point, and like the air in which we breathe, move, and have our
+> physical being, incapable of confinement or exclusive appropriation.
+
+<figcaption>--- Thomas Jefferson</figcaption>
 </figure>
 
 I see the Scholarly Commons as one of the most wonderful opportunities that has
@@ -352,7 +336,7 @@ new types of interactions---those that open up the process of research and
 bring people together in more egalitarian ways. The more aligned the software
 is with this culture, the less people will find fault with it.
 
-## The necessity of a <i>counter</i>culture
+## The necessity of a *counter*culture
 
 Using the language of Christopher Alexander's book <cite>[Notes on the
 Synthesis of Form]</cite>, this problem could be viewed as a problem of
@@ -374,7 +358,7 @@ alternative---a counterculture that people will find and to which they can
 align themselves as they are ready. We need a sandbox that will allow these new
 [patterns] and forms to be discovered and safely evolve without the risk of
 disruption or abolition by the hegemonies of the current
-system.[^cultural-affordances]
+system.
 
 Going forward, there needs to be an emphasis on practice. We have gathered all
 of these great ideas, and spent a lot of time distilling principles, but we
@@ -426,19 +410,15 @@ If we took away the current incentives, why would anyone do it?
 # TL;DR
 
 So this essay started out as an assignment to write my thoughts in less than
-<span class="oldstyle">400</span> words as to what the Scholarly Commons _is_
-and the direction that we go next for the principles. If you've made it this
-far in this post, you have realized how far I have failed. But if I was to sum
-up my thoughts into a very high-level statement of what the Scholarly Commons
-is, here's what I would say:
-
-{:.big}
+[400]{.oldstyle} words as to what the Scholarly Commons _is_ and the direction
+that we go next for the principles. If you've made it this far in this post,
+you have realized how far I have failed. But if I was to sum up my thoughts
+into a very high-level statement of what the Scholarly Commons is, here's what
+I would say:
 
 <dfn id="def:the-scholarly-commons">The Scholarly Commons</dfn> is the
 opportunity to come together and create a new culture of commoning on scholarly
 and scientific knowledge.
-
-{:.conclusion}
 
 As for the direction to go next with the principles, I think we need to create
 ways to preserve and continue these conversations. We need to find ways to
@@ -446,17 +426,13 @@ broaden the conversations, and to invite more diverse groups to take part in
 them. Then we need to take what we discover and put it into practice, thereby
 creating scholarly and scientific commons for the good of all mankind.
 
-# Notes
-{:.no_toc}
-
 [the law of two feet]: <https://en.wikipedia.org/w/index.php?title=Open_Space_Technology&oldid=737741556#Law_of_two_feet> "The Law of Two Feet on Wikipedia"
 [vizcaino]: <https://en.wikipedia.org/wiki/Sebasti%C3%A1n_Vizca%C3%ADno> "Sebastián Vizcaíno on Wikipedia"
 [Plymouth Colony]: <https://en.wikipedia.org/wiki/Plymouth_Colony> "Plymouth Colony on Wikipedia"
 [Mayflower Compact]: <https://en.wikipedia.org/wiki/Mayflower_Compact>
 [thanksgiving]: <https://en.wikipedia.org/wiki/Thanksgiving> "Thanksgiving on Wikipedia"
 [encomienda]: <https://en.wikipedia.org/wiki/Encomienda> "a labor system, rewarding conquerors with the labor of particular groups of people"
-[cabrillo]: <https://en.wikipedia.org/wiki/Juan_Rodr%C3%ADguez_Cabrillo> "Juan Rodríguez Cabrillo en Wikipedia"
-{:lang="es"}
+[cabrillo]: <https://en.wikipedia.org/wiki/Juan_Rodr%C3%ADguez_Cabrillo> "Juan Rodríguez Cabrillo en Wikipedia" {lang=es}
 [new-video]: <http://bollier.org/blog/new-video-%E2%80%9Cre-imagine-future%E2%80%9D> "View more info on David Bollier's site"
 [april]: <https://aprilhathcock.wordpress.com/2016/09/27/making-the-local-global-the-colonialism-of-scholarly-communication/> "Making the Local Global: The Colonialism of Scholarly Communication"
 [colonization]: <http://wikidiff.com/colonialization/colonization> "Colonization vs colonialization"
@@ -477,37 +453,31 @@ creating scholarly and scientific commons for the good of all mankind.
 [open]: <http://cameronneylon.net/blog/not-what-not-who-or-how-but-why-is-open/> "Not what, not who, or how, but Why is Open? by Cameron Neylon"
 [heading to oai8]: </blog/heading-to-oai8/#p[WtoIaw],h[WtoIaw,1]> "Pentandra Blog → Heading to OAI8"
 
-*[SciELO]: Scientific Electronic Library Online
-*[TL;DR]: Too Long; Didn't Read
-*[US]: United States
-
 [^citizen_science]:
 
     Actually I've been thinking more and more that the term _citizen science_
     doesn't go far enough, and sometimes I worry that the practice ends up
-    resembling an [<span lang="es">encomienda</span>][encomienda] system more
-    than I would like.
+    resembling an [[encomienda]{lang=es}][encomienda] system more than I would
+    like.
 
 [^bradford]:
 
     These quotations from the Mayflower Compact and other circumstances
     relating to these early colonists can be found on [the Wikipedia
     page][Mayflower Compact] (with spelling modernized), or in [Bradford's
-    History "Of <span class="sic">Plimoth</span>
-    Plantation"](http://archive.org/stream/historyplymouth01socigoog#page/n246/mode/2up),
-    Book <span class="oldstyle">2</span> <span class="sic">Anno</span> <span
-    class="oldstyle">1620</span>, written by William Bradford in the years from
-    <span class="oldstyle">1630</span> to <span class="oldstyle">1651</span>,
-    and printed in entirety for the first time in <span
-    class="oldstyle">1854</span>.
+    History "Of [Plimoth]{.sic} Plantation"](http://archive.org/stream/historyplymouth01socigoog#page/n246/mode/2up),
+    Book [2]{.oldstyle} [Anno]{.sic} [1620]{.oldstyle}, written by William
+    Bradford in the years from [1630]{.oldstyle} to [1651]{.oldstyle}, and
+    printed in entirety for the first time in [1854]{.oldstyle}.
 
 [^cultural-affordances]:
 
-    In a footnote of a later edition of Bradford's history,[^bradford] a
-    quotation from Gardiner's <cite>History of England</cite>, <span
-    class="oldstyle">1603--1642, <span class="roman">IV</span>. 163</span> is
-    particularly relevant to the analogy I am making here with the Scholarly
-    Commons:
+    In a footnote of a later edition of Bradford's history, a quotation from
+    Gardiner's <cite>History of England</cite>, [1603--1642, [IV]{.roman}.
+    163]{.oldstyle} is particularly relevant to the analogy I am making here
+    with the Scholarly Commons:
+
+    <div class="bq grab" lang="en-GB">
 
     > In all this there was nothing new. The election of administrative
     > functionaries took place in every borough town in England. What was
@@ -521,12 +491,14 @@ creating scholarly and scientific commons for the good of all mankind.
     > later the colonies would have a social and political history of their
     > own, which would not be a repetition of the social and political history
     > of England.
-    {:.bq.grab lang="en-GB"}
 
-    In <span class="oldstyle">1776</span>, another philosopher, Adam Smith,
-    wrote in <cite>The Wealth of Nations, Book <span class="roman">IV</span>,
-    Chapter <span class="roman">VII</span>, Part <span
-    class="roman">II</span></cite>:
+    </div>
+
+    In [1776]{.oldstyle}, another philosopher, Adam Smith, wrote in <cite>The
+    Wealth of Nations, Book [IV]{.roman}, Chapter [VII]{.roman}, Part
+    [II]{.roman}</cite>:
+
+    <div class="bq grab" lang="en-GB">
 
     > The English puritans, persecuted at home, fled for freedom to America,
     > and established there the four governments of New England. The English
@@ -540,19 +512,20 @@ creating scholarly and scientific commons for the good of all mankind.
     > all these different occasions it was, not the wisdom and policy, but the
     > disorder and injustice of the European governments, which peopled and
     > cultivated America.
-    {:.bq.grab lang="en-GB"}
+
+    </div>
 
     My point here does not have to do with North versus South or America versus
     Europe _per se_, and is certainly not meant to disparage or make light of
-    any persons or groups from our collective past, so please do not throw the
-    baby out with the bathwater! Some colonies were created not to establish
-    dominion over other peoples, but for higher, nobler motivations, for
-    example, to escape the injustices or tyrannies of an incumbent system. So
-    from this point of view, the Scholarly Commons is about a [_culture of
-    open_][open], and about the _affordance_ that that new culture and
-    sociality provides. The Scholarly Commons is a new sociality or culture in
-    much the same way that America was separate and distinct from the social
-    and political world of England.
+    any persons or groups from our collective past. Some colonies were created
+    not to establish dominion over other peoples, but for higher, nobler
+    motivations, for example, to escape the injustices or tyrannies of an
+    incumbent system. So from this point of view, the Scholarly Commons is
+    about a [_culture of open_][open], and about the _affordance_ that that new
+    culture and sociality provides. The Scholarly Commons is a new sociality or
+    culture distinct from the traditional culture of scholarship in much the
+    same way that America was separate and distinct from the social and
+    political world of England.
 
 [^commons]:
 
@@ -577,8 +550,8 @@ creating scholarly and scientific commons for the good of all mankind.
 
     The Plymouth colonists show this determination to bridge differences with
     courage and their great fortune later on in their treaty with [Massasoit],
-    the great chief of the Wampanoag Indians, on March <span
-    class="oldstyle">22</span> the next year.
+    the great chief of the Wampanoag Indians, on March [22]{.oldstyle} the next
+    year.
 
 [^disclaimer]:
 

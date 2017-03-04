@@ -52,6 +52,8 @@ chart would be the last thing I would pick to describe it.
 In the essay, [The Servant as Leader](https://greenleaf.org/what-is-servant-leadership/),
 Robert Greenleaf quotes Percy Bridgeman, the physicist and philosopher,
 
+<div class="bq grab">
+
 > "No linguistic structure is capable of reproducing the full complexity of
 > experience... The only feasible way of dealing with this is to push a
 > particular verbal line of attack as far as it can go, and then switch to
@@ -60,7 +62,8 @@ Robert Greenleaf quotes Percy Bridgeman, the physicist and philosopher,
 > to force all experience. In doing this they create a purely verbal world in
 > which they can live a pretty autonomous existence, fortified by the ability
 > of many of their fellows to live in the same verbal world."
-{: .bq .grab }
+
+</div>
 
 While Bridgeman is talking about linguistic structures here, not pedigree
 charts or software, I think it still provides some thoughts as to what we
@@ -172,13 +175,9 @@ mind:
   communication. It's an art. While a computer can help make this process
   easier, humans are still needed.
 
-{:.conclusion}
-
 After all of that, could we not still show relationships using a pedigree
 chart? Yes! But we _cannot_ begin and end there. We need to do (and publish)
 more.
-
-# Notes
 
 [^motivations]:
 
