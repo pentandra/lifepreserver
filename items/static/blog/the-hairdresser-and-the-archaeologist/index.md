@@ -20,7 +20,7 @@ tags:
   <meta property="schema:width" content="399 px" datatype="schema:Distance" />
   <meta property="schema:height" content="395 px" datatype="schema:Distance" />
   <img property="schema:contentUrl" src="Julia-domna.jpg" alt="Coin of Julia Domna I" data-no-retina class="static" />
-  <figcaption><a href="https://commons.wikimedia.org/wiki/File:Julia-domna.jpg" rel="prov:wasDerivedFrom" property="schema:name dc:title"><cite>Coin of Julia Domna</cite></a> by <a href="http://en.wikipedia.org/wiki/User:Rasiel" property="cc:attributionName" rel="cc:attributionURL dc:creator">Rasiel Suarez</a>, licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><abbr>CC-BY-SA</abbr> license</a>. <span class="icon-cc"></span><span class="icon-cc-by"></span><span class="icon-cc-sa"></span></figcaption>
+  <figcaption><a href="https://commons.wikimedia.org/wiki/File:Julia-domna.jpg" rel="prov:wasDerivedFrom" property="schema:name dc:title"><cite>Coin of Julia Domna</cite></a> by <a href="http://en.wikipedia.org/wiki/User:Rasiel" property="cc:attributionName" rel="cc:attributionURL dc:creator">Rasiel Suarez</a>, licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA license</a>. <span class="icon-cc"></span><span class="icon-cc-by"></span><span class="icon-cc-sa"></span></figcaption>
 </figure>
 
 I don't know much about hairdos, especially those that were in vogue

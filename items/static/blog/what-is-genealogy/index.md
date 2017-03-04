@@ -34,7 +34,7 @@ nicely named children, all lined up neatly in a row? I hope not.
 
 <figure id="fig:internetmap" class="img" resource="#internet_2010" typeof="schema:ImageObject">
   <img property="schema:contentUrl" src="opte-2010_620.png" alt="The Internet 2010" class="static" />
-  <figcaption><span property="dc:description"><b property="dc:title">The Internet 2010</b>, by <a href="http://www.opte.org/" property="cc:attributionName" rel="cc:attributionURL dc:creator">The Opte Project / Barrett Lyon</a>. While a stunning visualization, is this what the Internet looks like to you? </span> Licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><abbr>CC-BY-NC</abbr> license</a>. Used by permission. <span class="icon-cc"></span><span class="icon-cc-by"></span><span class="icon-cc-nc"></span></figcaption>
+  <figcaption><span property="dc:description"><b property="dc:title">The Internet 2010</b>, by <a href="http://www.opte.org/" property="cc:attributionName" rel="cc:attributionURL dc:creator">The Opte Project / Barrett Lyon</a>. While a stunning visualization, is this what the Internet looks like to you? </span> Licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC license</a>. Used by permission. <span class="icon-cc"></span><span class="icon-cc-by"></span><span class="icon-cc-nc"></span></figcaption>
 </figure>
 
 Looking at genealogy as a bunch of interconnected family trees is akin to
