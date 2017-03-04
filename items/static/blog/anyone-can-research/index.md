@@ -55,7 +55,7 @@ and the rest, as they say, [has been history][Andraka TEDx].
     <source property="schema:contentUrl" type="video/ogg" src="Cancer_Breakthrough.ogv" />
     <track kind="subtitles" src="Cancer_Breakthrough.en.srt" srclang="en" />
   </video>
-  <figcaption><span property="schema:description">An interview on Open Access to research journals with Dr. Francis S.  Collins, Director of the National Institutes of Health, and Jack Andraka. Presented by the <a property="cc:attributionName" rel="cc:attributionURL" href="http://www.righttoresearch.org">Right to Research Coalition</a>, with support from <abbr title="Scholarly Publishing and Academic Resources Coalition">SPARC</abbr> and the Society for Science and the Public.</span> Licensed under a <a rel="cc:license" href="http://creativecommons.org/licenses/by/3.0/"><abbr title="Creative Commons Attribution 3.0 Unported">CC-BY</abbr> license</a>. <span class="icon-cc"></span><span class="icon-cc-by"></span></figcaption>
+  <figcaption><span property="schema:description">An interview on Open Access to research journals with Dr. Francis S.  Collins, Director of the National Institutes of Health, and Jack Andraka. Presented by the <a property="cc:attributionName" rel="cc:attributionURL" href="http://www.righttoresearch.org">Right to Research Coalition</a>, with support from SPARC and the Society for Science and the Public.</span> Licensed under a <a rel="cc:license" href="http://creativecommons.org/licenses/by/3.0/">CC-BY license</a>. <span class="icon-cc"></span><span class="icon-cc-by"></span></figcaption>
 </figure>
 
 While people around the world have championed him, a few from the scientific
