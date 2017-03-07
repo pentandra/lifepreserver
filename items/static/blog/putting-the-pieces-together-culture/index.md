@@ -517,15 +517,15 @@ creating scholarly and scientific commons for the good of all mankind.
 
     My point here does not have to do with North versus South or America versus
     Europe _per se_, and is certainly not meant to disparage or make light of
-    any persons or groups from our collective past. Some colonies were created
-    not to establish dominion over other peoples, but for higher, nobler
-    motivations, for example, to escape the injustices or tyrannies of an
-    incumbent system. So from this point of view, the Scholarly Commons is
-    about a [_culture of open_][open], and about the _affordance_ that that new
-    culture and sociality provides. The Scholarly Commons is a new sociality or
-    culture distinct from the traditional culture of scholarship in much the
-    same way that America was separate and distinct from the social and
-    political world of England.
+    any persons or groups from our collective past, but only to say that some
+    colonies were created not to establish dominion over other peoples, but for
+    higher, nobler motivations, for example: to escape the injustices or
+    tyrannies of an incumbent system. So from this point of view, the Scholarly
+    Commons is about a [_culture of open_][open], and about the _affordance_
+    that that new culture and sociality provides. The Scholarly Commons is a
+    new sociality or culture distinct from the traditional culture of
+    scholarship in much the same way that America was separate and distinct
+    from the social and political world of England.
 
 [^commons]:
 
