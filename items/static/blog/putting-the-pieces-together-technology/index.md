@@ -201,10 +201,90 @@ this, we need a way to explicitly _share_ our practice. I discussed this idea
 and the need to share our process openly in the [previous section][the process
 is the product]. Taking this idea a step further, we need a way to explicitly
 share _patterns_ of practice. Fiona Murphy and Danny Kingsley explored some
-possibilities for doing this using [decision trees] during an unworkshop
-session. Decision trees put the focus on concrete, actionable things we can do.
-Continuing from the [previous quote](#systems-vs-components), Gawande shares
-how great the need is to incorporate discoveries into our daily practice:
+possibilities for doing this using [decision trees], or what I prefer to call
+<dfn id="def:research-guides">research guides</dfn>, during an unworkshop
+session. Decision trees or research guides direct our focus onto concrete,
+actionable things we can do.
+
+Of course, the idea with these guides is not to mandate specific research
+practices, but to create a way to share our patterns of practice in a
+collaborative, peer-to-peer sort of way. If we can come up with a way to do
+this in a very general way, this approach has the potential to make a real
+difference in how we practice as researchers, and maybe even blur the line
+between researchers and practitioners. This vision is painted more beautifully
+in the foreword to one of my favorite books on typography. Here I quote,
+substituting the practice of research or scholarship for the practice of
+typography, since what is described could be applied to many fields:
+
+<figure class="bq grab">
+
+> One question, nevertheless, has been often in my mind. When all
+> right-thinking human beings are struggling to remember that other men and
+> women are free to be different, and free to become more different still, how
+> can one honestly write a rulebook? What reason and authority exist for these
+> commandments, suggestions and instructions? Surely \[researchers\], like
+> others, ought to be at liberty to follow or to blaze the trails they choose.
+>
+> \[Scholarship\] thrives as a shared concern -- and there are no paths at all
+> where there are no shared desires and directions. A \[researcher\] determined
+> to forge new routes must move, like other solitary travelers, through
+> uninhabited country and against the grain of the land, crossing common
+> thoroughfares in the silence before dawn. The subject of this book is not
+> \[scholarly\] solitude, but the old, well-traveled roads at the core of the
+> tradition: paths that each of us is free to follow or not, and to enter and
+> leave when we choose -- if only we know the paths are there and have a sense
+> of where they lead. That freedom is denied us if the tradition is concealed
+> or left for dead. Originality is everywhere, but much originality is blocked
+> if the way back to earlier discoveries is cut or overgrown.
+>
+> If you wish to use this book as a guide, by all means leave the road when you
+> wish. That is precisely the use of a road: to reach individually chosen
+> points of departure. By all means break the rules, and break them
+> beautifully, deliberately and well. That is one of the ends for which they
+> exist.
+
+<figcaption>--- Robert Bringhurst, <cite>The Elements of Typographic Style</cite>, version [3.2 (2008)]{.oldstyle}</figcaption>
+</figure>
+
+Instead of writing these rules or guides in prose and sticking them in a book,
+leaving it to those who have read the book to carry the torch, or capturing
+them in solitary, inert images for people to scan and manually decode, we need
+a way for machines to assemble, connect, and semi-automate these guiding
+processes. And as more of the researcher's process becomes open, machines will
+be free to find patterns among researchers' paths, giving way to some sort of
+collective intelligence in a common search for truth.
+
+As much as we've focused on principles and culture (and they are certainly the
+driving force in this effort!), we need an enabling infrastructure for
+commoning. We need to make the discovery process easier, and enlarge the doors
+and allow others to come and participate in this great endeavor! This is the
+answer to opening the pores of knowledge clubs and allowing others to play
+easier, more fluidly. Visitors can be guided to learn the ropes as quickly as
+possible. The existing lack of interoperability between tools is actually an
+opportunity for something better.
+
+Research zealots will still find ways to blaze trails where there are none, but
+why not plan for the city and prepare for the streets to make it easier for
+everyone to transition? We need streets for machines for navigate, so people
+don't have to. The tools that are part of the commons should be able to
+discover other tools and people and research to interact with, and this could
+transform research into a dynamic system rather than the current static system.
+Our tools and machines need to know how to common too!
+
+# A relative advantage
+
+When it comes down to it, making the transition to this new culture is really a
+user experience problem. Going back to Everett Rogers' <cite>Diffusion of
+Innovations</cite>, we need an advantage over the current system. If we can
+create a better research experience, then we have created an advantage. We will
+then have the potential to transform the culture!
+
+But we don't need to stop there! Once we have removed barriers to the
+production of knowledge, what is to stop us from using this knowledge freely to
+improve the lives of everyone!? Continuing from the [previous
+quote](#systems-vs-components) which spoke about the focus on components that
+has led to a lack of systemic excellence in the practice of medicine, Gawande
+provides some direction for the future:
 
 <figure class="bq grab">
 
@@ -224,32 +304,6 @@ how great the need is to incorporate discoveries into our daily practice:
 <figcaption>--- Atul Gawande, <cite>The Checklist Manifesto</cite>, [2009]{.oldstyle}, p. [185]{.oldstyle}</figcaption>
 </figure>
 
-If we can come up with a way to do this in a very general way, this approach
-has the potential to make a real difference in how we practice as researchers,
-and maybe even blur the line between researchers and practitioners.
-
-# A relative advantage
-
-When it comes down to it, making the transition to this new culture is really a
-user experience problem. We need some sort of infrastructure in-between the
-tools that will enable this commoning to happen. As much as we've focused on
-principles and culture (and they are the driving force in this effort!), we
-need an enabling infrastructure for commoning. We need streets for machines for
-navigate, so people don't have to. The existing lack of interoperability
-between tools is actually an opportunity for something better.
-
-Research zealots will still find ways to blaze trails where there are none, but
-why not plan for the city and prepare for the streets to make it easier for
-everyone to transition? The tools that are part of the commons should be able
-to discover other tools and people and research to interact with, and this
-could transform research into a dynamic system rather than the current static
-system. Our tools and machines need to know how to common too!
-
-Going back to Everett Rogers' <cite>Diffusion of Innovations</cite>, we need an
-advantage over the current system. If we can create a better research
-experience, then we have created that advantage. We will then have the
-potential to transform the culture!
-
 So building on my [earlier definition] of the Scholarly Commons, but from the
 perspective of technology:
 
@@ -265,7 +319,7 @@ So how do we get there? We're working on a [proposal] for that very purpose.
 [vision]: </#sec:research-experience> "We envision a better research experience"
 [the logo]: <https://docs.google.com/document/d/1YIxxMpcOni7alThkdVvvrnc_edKay2Ow4kiRwBDTQrs/edit> "Branding the Scholarly Commons"
 [black box]: <https://en.wikipedia.org/wiki/Black_box> "Black box on Wikipedia"
-[decision trees]: <decision_trees_proposal.jpg> "The original decision trees proposal"
+[decision trees]: <decision_trees_proposal.jpg> "Click to see the original decision trees proposal"
 [research cases]: </blog/introducing-research-cases/#sec:research-cases>
 [happy place]: <https://www.force11.org/blog/future-happy-place> "The Future is a Happy Place, by Maryann Martone"
 [his presentation]: <https://www.youtube.com/watch?v=_oz_rKjLtW4>
