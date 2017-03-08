@@ -33,14 +33,14 @@ the question of whether or not something belongs within the commons is based
 upon whether that thing _complies_ with certain principles of openness or
 reusability.
 
-As much as I love and support open-source software and tooling, I think that,
-for us, this argument has been more of a red herring, missing the whole point
-of what the Scholarly Commons is about. To me the issue is less about
-compliance, and more about enabling interactions. We are either commoning, or
-we're not. Nevertheless, the main track of the workshop was designed to lead
-the workshop participants through an exercise of 'compliance checking' existing
-tools to see how well they conformed to the latest rendition of the principles
-of the Scholarly Commons.
+As much as I love and support open-source software and tooling, I think that
+for us this argument has been more of a distraction from what the Scholarly
+Commons is all about. It is the _commoning_---the practices, not the
+tools---that needs to be compliant. The Scholarly Commons is about enabling
+_interactions_. Nevertheless, the main track of the workshop was designed to
+lead the workshop participants through an exercise of 'compliance checking'
+existing tools to see how well they conformed to the latest rendition of the
+principles of the Scholarly Commons.
 
 <figure class="img">
   <a href="scholarly_commons_backbone_using_existing_stuff.jpg" title="Click for the whole board"><img src="scholarly_commons_backbone_using_existing_stuff_620x.jpg"/></a>
@@ -113,12 +113,12 @@ process from several scientific domains.](science_workflows_620x.jpg)
 
 Here are a few of the thoughts that emerged from the exercise:
 
-* Bad tools are used to perform good things.
+* Bad tools are used to perform good things (often requiring some workarounds).
 * People use what they use because it works.
 * It's way more useful to think of what we are trying to _achieve_ with a tool,
-  rather than any intrinsic quality of compliance.
-* Practice is more important than tools.
+  rather than judging a tool's intrinsic quality of compliance.
 * Tools can actively hinder open if the outputs are not machine-accessible.
+* Practice is more important than tools.
 
 # The process is the product
 
@@ -214,7 +214,7 @@ difference in how we practice as researchers, and maybe even blur the line
 between researchers and practitioners. This vision is painted more beautifully
 in the foreword to one of my favorite books on typography. Here I quote,
 substituting the practice of research or scholarship for the practice of
-typography, since what is described could be applied to many fields:
+typography, since what is described could be applied to many practices:
 
 <figure class="bq grab">
 
