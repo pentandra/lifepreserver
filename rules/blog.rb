@@ -28,8 +28,13 @@ end
 
 compile '/static/blog/**/*.md' do
   filter :erb, @config[:erb]
-  filter :kramdown, @config[:kramdown]
-  filter :colorize_syntax, default_colorizer: :rouge
+  filter :pandoc, args: [
+    { from: :"markdown+emoji", to: :html5 },
+    { base_header_level: 2 },
+    :section_divs,
+    :normalize,
+    :smart,
+  ]
   filter :absolutify_paths, type: :html
   filter :spellchecker, type: :html
   layout '/blog/article.*'
@@ -40,8 +45,13 @@ end
 
 compile '/static/blog/**/*.md', rep: :feed_entry do
   filter :erb, @config[:erb]
-  filter :kramdown, @config[:kramdown]
-  filter :colorize_syntax, default_colorizer: :rouge
+  filter :pandoc, args: [
+    { from: :"markdown+emoji", to: :html5 },
+    { base_header_level: 2 },
+    :section_divs,
+    :normalize,
+    :smart,
+  ]
   filter :absolutify_paths, type: :html, global: true
   filter :rubypantsunicode
 end

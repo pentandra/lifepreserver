@@ -16,21 +16,14 @@ develop our business ideas? It turns out that our business is a product of its
 own, and we would like to share it.
 
 <figure class="bq grab">
-  <blockquote>
-    <p>
 
-      It will take time to develop the prototypes. But once creative minds come
-      up with the design for a social business and a prototype is developed
-      successfully, it can be replicated endlessly.
+> It will take time to develop the prototypes. But once creative minds come up
+> with the design for a social business and a prototype is developed
+> successfully, it can be replicated endlessly.
+>
+> Designing each small social business is like developing a seed. Once the seed
+> is developed, anybody can plant it where it is needed. Since each unit is
+> self-sustaining, funding does not become a constraint.
 
-    </p>
-    <p>
-
-      Designing each small social business is like developing a seed. Once the
-      seed is developed, anybody can plant it where it is needed. Since each
-      unit is self-sustaining, funding does not become a constraint.
-
-    </p>
-  </blockquote>
-  <figcaption>--- Muhammad Yunus, <cite>Building Social Business</cite></figcaption>
+<figcaption>--- Muhammad Yunus, <cite>Building Social Business</cite></figcaption>
 </figure>

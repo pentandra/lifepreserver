@@ -52,34 +52,27 @@ but nothing really stuck out. The timing made us wonder if it was someone we
 had met at the competition, but really we had no idea. When the mail finally
 came, Chris was naturally in a meeting. It took all of my will power to wait
 for him to open it with me, but I am glad I did. When we opened the envelope
-  and saw how generous our benefactor had been, I was honestly in a bit of
-  shock.  Now, the check was not for $10 billion or something obscene, but it
-  was for far more than I ever imagined someone would be willing to give,
-  without "strings attached." Even more than that, the amount was almost
-  perfectly what we needed in order for us to continue driving full steam ahead
-  right now. The amazing connection between our need and their gift felt like
-  perfect serendipity---my miracle.
+and saw how generous our benefactor had been, I was honestly in a bit of shock.
+Now, the check was not for $10 billion or something obscene, but it was for far
+more than I ever imagined someone would be willing to give, without "strings
+attached." Even more than that, the amount was almost perfectly what we needed
+in order for us to continue driving full steam ahead right now. The amazing
+connection between our need and their gift felt like perfect serendipity---my
+miracle.
 
 We were grateful for the financial support, but the note that came attached to
 the check is at least as valuable to us. I would like to share some of it with
 you:
 
 <div class="bq grab">
-  <blockquote>
-    <p>
-
-      Dear Chapmans: We were impressed with Pentandra Research Solutions,
-      Inc's Geungle, a most viable product with great potential to
-      revolutionize the way we do Family History research. We noted your
-      table at Grow America...We also noted your web site. We were
-      disappointed that the Grow America judges did not fully understand, nor
-      appreciate your potential in this regard.  Accordingly, we make this
-      anonymous contribution to your successful implementation of this most
-      needed product. We are confident with your enthusiasm and hard work,
-      and working together that you will be successful.
-
-    </p>
-  </blockquote>
+> Dear Chapmans: We were impressed with Pentandra Research Solutions, Inc's
+> Geungle, a most viable product with great potential to revolutionize the way
+> we do Family History research. We noted your table at Grow America...We also
+> noted your web site. We were disappointed that the Grow America judges did
+> not fully understand, nor appreciate your potential in this regard.
+> Accordingly, we make this anonymous contribution to your successful
+> implementation of this most needed product. We are confident with your
+> enthusiasm and hard work, and working together that you will be successful.
 </div>
 
 # Gratitude
@@ -96,6 +89,5 @@ mental support that encourages us to keep pushing forward.
 
 So, if you are out there, whoever you are, please accept my gratitude and
 thanks.
-{: .conclusion }
 
 [Giving Anonymously]: <http://web.archive.org/web/20130617171311/https://givinganon.org/home> "Giving Anonymously on the Wayback Machine"

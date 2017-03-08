@@ -106,7 +106,7 @@ blockquote, .bq { margin: $base-line-height * 1.5 0; }
 
 .bq { // blockquote
 
-  padding: $base-line-height*1.5;
+  padding: $base-line-height * 1.5;
 
   blockquote {
     margin: 0;
@@ -497,6 +497,10 @@ input.button {
   text-transform: lowercase;
 }
 
+.uri, .domainname {
+  @extend code;
+}
+
 //
 // Background blocks
 
@@ -741,24 +745,6 @@ main {
 .teammember {
   .photo {
     margin-bottom: 0;
-  }
-}
-
-article {
-
-  .img {
-    margin-bottom: $base-line-height;
-  }
-
-  .conclusion:after {
-    content: "\e000";
-    font-family: $special-font-family;
-    margin: -3px 0.3em;
-    font-size: $base-line-height;
-    position: absolute;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
   }
 }
 

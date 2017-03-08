@@ -34,7 +34,7 @@ nicely named children, all lined up neatly in a row? I hope not.
 
 <figure id="fig:internetmap" class="img" resource="#internet_2010" typeof="schema:ImageObject">
   <img property="schema:contentUrl" src="opte-2010_620.png" alt="The Internet 2010" class="static" />
-  <figcaption><span property="dc:description"><b property="dc:title">The Internet 2010</b>, by <a href="http://www.opte.org/" property="cc:attributionName" rel="cc:attributionURL dc:creator">The Opte Project / Barrett Lyon</a>. While a stunning visualization, is this what the Internet looks like to you? </span> Licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><abbr>CC-BY-NC</abbr> license</a>. Used by permission. <span class="icon-cc"></span><span class="icon-cc-by"></span><span class="icon-cc-nc"></span></figcaption>
+  <figcaption><span property="dc:description"><b property="dc:title">The Internet 2010</b>, by <a href="http://www.opte.org/" property="cc:attributionName" rel="cc:attributionURL dc:creator">The Opte Project / Barrett Lyon</a>. While a stunning visualization, is this what the Internet looks like to you? </span> Licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC license</a>. Used by permission. <span class="icon-cc"></span><span class="icon-cc-by"></span><span class="icon-cc-nc"></span></figcaption>
 </figure>
 
 Looking at genealogy as a bunch of interconnected family trees is akin to
@@ -52,6 +52,8 @@ chart would be the last thing I would pick to describe it.
 In the essay, [The Servant as Leader](https://greenleaf.org/what-is-servant-leadership/),
 Robert Greenleaf quotes Percy Bridgeman, the physicist and philosopher,
 
+<div class="bq grab">
+
 > "No linguistic structure is capable of reproducing the full complexity of
 > experience... The only feasible way of dealing with this is to push a
 > particular verbal line of attack as far as it can go, and then switch to
@@ -60,7 +62,8 @@ Robert Greenleaf quotes Percy Bridgeman, the physicist and philosopher,
 > to force all experience. In doing this they create a purely verbal world in
 > which they can live a pretty autonomous existence, fortified by the ability
 > of many of their fellows to live in the same verbal world."
-{: .bq .grab }
+
+</div>
 
 While Bridgeman is talking about linguistic structures here, not pedigree
 charts or software, I think it still provides some thoughts as to what we
@@ -172,13 +175,9 @@ mind:
   communication. It's an art. While a computer can help make this process
   easier, humans are still needed.
 
-{:.conclusion}
-
 After all of that, could we not still show relationships using a pedigree
 chart? Yes! But we _cannot_ begin and end there. We need to do (and publish)
 more.
-
-# Notes
 
 [^motivations]:
 

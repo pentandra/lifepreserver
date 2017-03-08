@@ -69,7 +69,6 @@ amalgamation of all the world's knowledge, set in historical context.
 Why, you say, would we need low-density particle physics research to help
 determine the political affiliations of my Civil War ancestor? Well, you never
 know, but we do need the physicist. They're human aren't they?
-{: .conclusion }
 
 [^life]: 
     We've tried telling people that were writing software for [generational
