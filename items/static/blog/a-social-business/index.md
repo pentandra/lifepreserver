@@ -200,11 +200,11 @@ I probably don't have to convince you of that.[^goodforsociety]
 
 [^goodforsociety]:
 
-    It is thanks to research that the Internet and this post
-    have been brought to you today. A better question might be, "Is this _post_
-    good for society?"
+    It is thanks to research that the Internet and this post have been brought
+    to you today. A better question might be: is this _post_ good for
+    society? :satisfied:\ 
 
 [^shareholders]:
 
-    This is one reason we have been so careful in the selection of
-    our shareholders.
+    This is one reason we have been so careful in the selection of our
+    shareholders.
