@@ -189,7 +189,7 @@ that truly opens the door as wide as we can, so everyone feels included and
 able to play a part in the defining process? And how do we ensure that this
 defining process will go on continuously?_
 
-# Addendum
+---
 
 [Bianca Kramer]{lang=nl} and [Jeroen Bosman]{lang=nl} put a lot of work into
 publishing a report of the workshop. Please [check it out][workshop-report] to
