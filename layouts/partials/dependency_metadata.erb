@@ -3,9 +3,9 @@
     <li property="deps:build-requirement" typeof="deps:Dependency">
       <span property="deps:on" datatype="deps:GemId" content="<%= "#{h dependency[:name]} #{h dependency[:version]}" %>">
         <% if dependency[:homepage] %>
-          <a rel="doap:homepage" href="<%= h dependency[:homepage] %>" property="doap:name"><code class="projectname"><%= h dependency[:name] %></code></a>
+          <a rel="doap:homepage" href="<%= h dependency[:homepage] %>" property="doap:name" class="projectname"><%= h dependency[:name] %></a>
         <% else %>
-          <code class="projectname" property="doap:name"><%= h dependency[:name] %></code>
+          <span class="projectname" property="doap:name"><%= h dependency[:name] %></span>
         <% end %>
         [<%= h dependency[:version] %>]</span>:
       <span class="foreign" property="doap:shortdesc"><%= h dependency[:summary] %></span>

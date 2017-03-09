@@ -497,7 +497,7 @@ input.button {
   text-transform: lowercase;
 }
 
-.uri, .domainname {
+.uri, .domainname, .projectname {
   @extend code;
 }
 
