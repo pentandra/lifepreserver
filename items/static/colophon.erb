@@ -284,10 +284,11 @@ changefreq: monthly
       The build process does not involve paper, ink, and moveable type, but it
       does involve many moving pieces. Much of this site is statically compiled
       using the excellent <a href="http://nanoc.ws/">Nanoc</a> project and <%=
-      ruby_desc %>. This approach gives us the best of both worlds: the
-      flexibility to decide which pieces of this site would be more
-      advantageous to compile beforehand, and which would be more appropriate
-      to generate dynamically the moment they are needed.
+      ruby_desc %>. The rest is handled in the backend by an HTTP server, <a
+        href="#sec:the-server">described below</a>. This approach gives us the
+      best of both worlds: the flexibility to decide which pieces of this site
+      would be more advantageous to compile beforehand, and which would be more
+      appropriate to generate dynamically the moment they are needed.
 
     </p>
   </div>
@@ -354,7 +355,7 @@ changefreq: monthly
     </div>
   </section>
 </section>
-<section class="noted section">
+<section class="noted section" id="sec:the-server">
 
   <h2>The Server</h2>
 
