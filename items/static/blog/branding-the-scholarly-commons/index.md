@@ -81,8 +81,7 @@ up, to fit the function for which it was to serve: enabling communications.
 From several points of view, you could say that the building was _embedded
 within_ the city's communications structure. The designers looked at the mail
 delivery process, looked at the needs of the public,[^for-the-public] and then
-designed the building to _fit_ that context. They looked at the mail process
-and then built a building around it.
+designed the building to _fit_ that context.
 
 Not [functionalism].
 
