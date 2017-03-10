@@ -19,8 +19,7 @@ tags:
 Don't worry---this is not what you think. This post is not about specific
 technologies, but about what needs to be enabled by technology to allow for
 scholarly commoning. It is a follow-on to a post that I wrote about the
-[_culture_ of the Scholarly Commons][culture]. We need technology that will
-enable that culture, and it is currently missing.
+[_culture_ of the Scholarly Commons][culture].
 
 <!--MORE-->
 
@@ -35,12 +34,12 @@ reusability.
 
 As much as I love and support open-source software and tooling, I think that
 for us this argument has been more of a distraction from what the Scholarly
-Commons is all about. It is the _commoning_---the practices, not the
-tools---that needs to be compliant. The Scholarly Commons is about enabling
-_interactions_. Nevertheless, the main track of the workshop was designed to
-lead the workshop participants through an exercise of 'compliance checking'
-existing tools to see how well they conformed to the latest rendition of the
-principles of the Scholarly Commons.
+Commons is all about. The Scholarly Commons is about enabling _interactions_
+and the _contributions_ that result from those interactions. Nevertheless, the
+main track of the workshop was designed to lead the workshop participants
+through an exercise of 'compliance checking' existing tools to see how well
+they conformed to the latest rendition of the principles of the Scholarly
+Commons.
 
 <figure class="img">
   <a href="scholarly_commons_backbone_using_existing_stuff.jpg" title="Click for the whole board"><img src="scholarly_commons_backbone_using_existing_stuff_620x.jpg"/></a>
@@ -51,12 +50,15 @@ In the days leading up to the workshop, I struggled to understand the point of
 going through such an exercise. The hope was, as far as I could tell, that we
 could find a new system by looking at elements of the old system, and filling
 in any gaps that we find. But cultural change and innovation don't happen that
-way. We were not going to discover some preexisting solution that has been
-waiting for us out there just by looking at all the components. We need
-something more.
+way. Besides that, many of the tools that are used for scholarship right now
+are based on cultural practices from which we are trying to get away. We need
+technology that will enable the culture of the Scholarly Commons, and this
+technology is currently missing. We were not going to discover some preexisting
+solution at this workshop that has been waiting for us out there just by
+looking at all the components of the current system. We need something more.
 
-To explain what I mean by this _something more_, allow me to share a comparable
-approach and the resulting struggle in the practice of medicine:
+To explain what I mean by this _something more_, allow me to share a similar
+approach and resulting struggle in the practice of medicine:
 
 <figure id="systems-vs-components" class="bq grab">
 
@@ -89,18 +91,18 @@ a usable workflow. We need to approach this problem in a systemic way.
 
 # The exercise
 
-So despite my initial struggles, we went forward with the compliance exercise,
-and it was actually very enlightening in some unexpected ways. First, it was
-good to talk about current practices. So much of my time I spend thinking, _'If
-we could start over from scratch, what would the world look like?'_ and I don't
-spend as much time thinking about the difficulties of transition that others
-are facing as well as I need to. For example, one participant was threatened
-with dismissal from her doctoral program for wanting to publish a paper open
-access. Compared with Open Access, what we're trying to do is space age. As
-much as it sounds nice, and [as happy as it would be to work in this new
-world][happy place], the transition to new ways of working together is not
-going to happen overnight. It is not enough to know what our destination
-is---we also need to know how to get there from where we are now.
+Putting those concerns aside for a moment, the compliance exercise was actually
+very enlightening in some unexpected ways. First, it was good to talk about
+current practices. So much of my time I spend thinking _if we could start over
+from scratch, what would the world look like?_ and I don't spend as much time
+thinking about the difficulties of transition that others are facing as well as
+I need to. For example, one participant was threatened with dismissal from her
+doctoral program for wanting to publish a paper open access. Compared with Open
+Access, what we're trying to do is space age. As much as it sounds nice, and
+[as happy as it would be to work in this new world][happy place], the
+transition to new ways of working together is not going to happen overnight. It
+is not enough to know what our destination is---we also need to know how to get
+there from where we are now.
 
 ![A tabletop spread with visual representations (line graphs) of the research
 process from several scientific domains.](science_workflows_620x.jpg)
@@ -119,6 +121,18 @@ Here are a few of the thoughts that emerged from the exercise:
   rather than judging a tool's intrinsic quality of compliance.
 * Tools can actively hinder open if the outputs are not machine-accessible.
 * Practice is more important than tools.
+
+Now merging these results with some of my previous thinking, it is the
+_commoning_---the practices, not the tools---that needs to be compliant. Yes,
+some tools align with practices that we want to carryover into this new way of
+working, but looking back, I think if we had kept the discussion more abstract
+and focused on specific _practices_ rather than on tools, we would not have had
+the disintegration of the main track as so many of the participants left to
+join the Global South discussion. So many of the tools we were studying were
+designed for the research culture and infrastructure of the Global North and
+just [did not connect with many of the people][april's blog post] that we
+brought from around the world. Even though this exercise did not work out as
+planned, I think this was an important negative result to obtain.
 
 # The process is the product
 
@@ -203,8 +217,8 @@ is the product]. Taking this idea a step further, we need a way to explicitly
 share _patterns_ of practice. Fiona Murphy and Danny Kingsley explored some
 possibilities for doing this using [decision trees], or what I prefer to call
 <dfn id="def:research-guides">research guides</dfn>, during an unworkshop
-session. Decision trees or research guides direct our focus onto concrete,
-actionable things we can do.
+session. Research guides direct the focus onto concrete, actionable things we
+can do.
 
 Of course, the idea with these guides is not to mandate specific research
 practices, but to create a way to share our patterns of practice in a
@@ -323,3 +337,4 @@ So how do we get there? We're working on a [proposal] for that very purpose.
 [research cases]: </blog/introducing-research-cases/#sec:research-cases>
 [happy place]: <https://www.force11.org/blog/future-happy-place> "The Future is a Happy Place, by Maryann Martone"
 [his presentation]: <https://www.youtube.com/watch?v=_oz_rKjLtW4>
+[april's blog post]: <https://aprilhathcock.wordpress.com/2016/09/27/making-the-local-global-the-colonialism-of-scholarly-communication/>
