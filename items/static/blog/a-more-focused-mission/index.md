@@ -12,11 +12,10 @@ tags:
   - Growth
 ---
 
-As we have finished up our preparations for [OAI8](/blog/heading-to-oai8/),
-we've had a wonderful opportunity to review our [company's
-mission](/company/#sec:mission). Doing so has helped us to focus even more on
-what we are trying to achieve and will (hopefully) help us to be able to make
-more of a difference.
+As we have finished up our preparations for [OAI8][], we've had a wonderful
+opportunity to review our [company's mission][mission]. Doing so has helped us
+to focus even more on what we are trying to achieve and will (hopefully) help
+us to be able to make more of a difference.
 
 I want to share with you a little of the journey that we went through, and why
 we made some of the changes that we made.
@@ -25,12 +24,15 @@ we made some of the changes that we made.
 
 To start with, here is our original mission:
 
+<div class="bq grab">
+
 > We are a social entrepreneurship company with a mission to change the way the
 > world does research. By utilizing current technologies, we are creating
 > software that works the way research has the potential to work. This is a
 > researcher-driven effort to shift the paradigm of current research practices
 > and lower the barriers to research.
-{: .bq .grab }
+
+</div>
 
 Our new mission cut out the second sentence altogether, since we realized over
 time that the fact that we develop software is more of an implementation
@@ -38,16 +40,19 @@ detail---it is _one way_ that we fulfill our mission. Even though we cut out a
 whole sentence, the new mission is almost the same length, but a lot more
 specific:
 
+<div class="bq grab">
+
 > We are a social entrepreneurship company with a mission to preserve and
 > accelerate the process of research. This is a researcher-driven effort to
 > shift the paradigm of research, remove barriers to knowledge dissemination,
 > and make research more accessible to the world.
-{: .bq .grab }
 
-In our original mission "<span class="sic">chang\[ing\]</span> the way the
-world does research" sounds a little vague. There are many ways to change the
-way people do research, and a lot of those changes could be bad! Our passion is
-really in preserving the research process. Preserving the process leads to the
+</div>
+
+In our original mission "[chang\[ing\]]{.sic} the way the world does research"
+sounds a little vague. There are many ways to change the way people do
+research, and a lot of those changes could be bad! Our passion is really in
+preserving the research process. Preserving the process leads to the
 acceleration of future research because you don't have to do as much
 backtracking of your own research or guessing what other researchers have done.
 
@@ -69,8 +74,7 @@ consideration the cost of the printing press! To move ahead with research, we
 need to stop thinking this way. In our modern world, little bits of research
 can be published as we go along for little or no cost. Does that diminish the
 value of the final output of the research process---the paper? I don't think
-so, but we _do_ need to enlarge our scope of what we recognize as <span
-class="oldstyle">research</span>.
+so, but we _do_ need to enlarge our scope of what we recognize as research.
 
 So we realized that we not only need to shift the research _practices_, but we
 need to shift our whole concept of what research _is_.
@@ -87,7 +91,7 @@ and questions that these papers are addressing. The technology to access
 research at this level would completely change the way that research is used by
 the world. In our new mission, this is what we mean when we talk about making
 research more accessible to the world. This is what we are trying to accomplish
-with [research cases](/research/process/#sec:research-case).
+with [research cases].
 
 Well, we are simple people with big ideas. I love having a mission that
 completely inspires me, and it was an amazing experience for me to dig deeper
@@ -95,4 +99,7 @@ into an idea that I thought we had completely thought through _so many times_
 before.
 
 Now, all that's left is to get a lot done!
-{: .conclusion }
+
+[mission]: </company/#sec:mission> "Pentandra's mission"
+[research cases]: </research/process/#sec:research-case>
+[OAI8]: </blog/heading-to-oai8/> "Heading to OAI8"

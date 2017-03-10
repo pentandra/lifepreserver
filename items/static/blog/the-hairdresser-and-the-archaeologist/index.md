@@ -20,32 +20,23 @@ tags:
   <meta property="schema:width" content="399 px" datatype="schema:Distance" />
   <meta property="schema:height" content="395 px" datatype="schema:Distance" />
   <img property="schema:contentUrl" src="Julia-domna.jpg" alt="Coin of Julia Domna I" data-no-retina class="static" />
-  <figcaption>
-    This image, entitled <a href="https://commons.wikimedia.org/wiki/File:Julia-domna.jpg" rel="prov:wasDerivedFrom" property="schema:name dc:title">Coin of Julia Domna</a>,
-    by
-    <a href="http://en.wikipedia.org/wiki/User:Rasiel" property="cc:attributionName" rel="cc:attributionURL dc:creator">Rasiel Suarez</a>
-    is licensed under a
-    <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><abbr>CC-BY-SA</abbr> license</a>.
-    <span class="icon-cc"></span><span class="icon-cc-by"></span><span class="icon-cc-sa"></span>
-  </figcaption>
+  <figcaption><a href="https://commons.wikimedia.org/wiki/File:Julia-domna.jpg" rel="prov:wasDerivedFrom" property="schema:name dc:title"><cite>Coin of Julia Domna</cite></a> by <a href="http://en.wikipedia.org/wiki/User:Rasiel" property="cc:attributionName" rel="cc:attributionURL dc:creator">Rasiel Suarez</a>, licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA license</a>. <span class="icon-cc"></span><span class="icon-cc-by"></span><span class="icon-cc-sa"></span></figcaption>
 </figure>
 
-I don't know much about hairdos, especially those that were in vogue <span
-class="oldstyle">1500</span> years ago. But it turns out that the experts may
-not have known everything there is to know about them either. A couple weeks
-ago, on the front page of the Wall Street Journal was [a
-story](http://online.wsj.com/article/SB10001424127887324900204578286272195339456.html)[^1]
+I don't know much about hairdos, especially those that were in vogue
+[1500]{.oldstyle} years ago. But it turns out that the experts may not have
+known everything there is to know about them either. A couple weeks ago, on the
+front page of the Wall Street Journal was [a story][story][^story-citation]
 about a very unusual hairdresser named Janet Stephens.
 
 <!--MORE-->
 
 Ms. Stephens is a hairdresser by trade, but has done something not very many
 hairdressers before her have done. She has published research[^ja] in an
-academic journal---the [Journal of Roman
-Archaeology](http://www.journalofromanarch.com/). Apparently after work she
-goes home and tries to recreate the hairdos of the ancient Romans. But as she
-studied the history books and conducted experiments, she couldn't get the
-hairdos to hold together. Nevertheless, she persisted and finally had a
+academic journal---the [Journal of Roman Archaeology][jra]. Apparently after
+work she goes home and tries to recreate the hairdos of the ancient Romans. But
+as she studied the history books and conducted experiments, she couldn't get
+the hairdos to hold together. Nevertheless, she persisted and finally had a
 breakthrough. Quoting from the newspaper article: "Studying translations of
 Roman literature, Ms. Stephens says, she realized the Latin term 'acus' was
 probably being misunderstood in the context of hairdressing. Acus has several
@@ -70,28 +61,21 @@ Meg Wheatley, writes about the new thought on leadership and organization,
 which can also be applied to research:
 
 <figure class="bq grab">
-  <blockquote>
-    <p>
 
-      In the traditional model, we leave the interpretation of data to senior
-      or expert people. A few people, charged with interpreting the data,
-      observe only a few potentialities contained within that data. How often
-      do we even think about all the data that goes unnoticed because we rely
-      on these solitary observations?
+> In the traditional model, we leave the interpretation of data to senior or
+> expert people. A few people, charged with interpreting the data, observe only
+> a few potentialities contained within that data. How often do we even think
+> about all the data that goes unnoticed because we rely on these solitary
+> observations?
+>
+> ... It would seem that the more participants we engage in this participative
+> universe, the more we can access its potentials and the wiser we can become.
+> We banish the ghosts of this ghostly universe by engaging in a different
+> pattern of behavior---one in which more and more of us are included in the
+> process of observing what is going on, and contributing our unique
+> interpretations...
 
-    </p>
-    <p>
-
-      ... It would seem that the more participants we engage in this
-      participative universe, the more we can access its potentials and the
-      wiser we can become.  We banish the ghosts of this ghostly universe by
-      engaging in a different pattern of behavior---one in which more and more
-      of us are included in the process of observing what is going on, and
-      contributing our unique interpretations to the organization.
-
-    </p>
-  </blockquote>
-  <figcaption>--- Margaret J. Wheatley, from <cite>Leadership and the New Science</cite>, pp. <span class="oldstyle">66--67</span></figcaption>
+<figcaption>--- Margaret J. Wheatley, from <cite>Leadership and the New Science</cite>, pp. [66--7]{.oldstyle}</figcaption>
 </figure>
 
 While practitioners discover new things every day, few take the time (or would
@@ -117,18 +101,22 @@ could discern the existing holes in logic that the "experts" couldn't see. She
 is an unusual mix of hairdresser *and* archaeologist and is a good example of
 what I would call a [_bridge builder_](/research/#p[OwgWnb],h[OwgWnb,3]). We
 need more researchers like that.
-{: .conclusion }
 
-# Notes
+[story]: <http://online.wsj.com/article/SB10001424127887324900204578286272195339456.html>
+[jra]: <http://www.journalofromanarch.com/>
 
-[^1]: Abigail Pesta, "On Pins and Needles: Stylist Turns Ancient Hairdo Debate
-    on Its Head," <cite>The Wall Street Journal</cite>, February 7, 2013, <span
-    class="identifier">A1</span> and <span class="identifier">A12</span>.
+[^story-citation]:
 
-[^ja]: Ms. Stephens' journal article, _Ancient Roman hairdressing: on
-    (hair)pins and needles_, is
-    [freely available for download](http://www.journalofromanarch.com/samples.html)
-    on the journal's website.
+    Abigail Pesta, "On Pins and Needles: Stylist Turns Ancient Hairdo Debate on
+    Its Head," <cite>The Wall Street Journal</cite>, February 7, 2013,
+    [A1]{.identifier} and [A12]{.identifier}.
+
+[^ja]:
+
+    Ms. Stephens' journal article, _Ancient Roman hairdressing: on (hair)pins
+    and needles_, is [freely available for
+    download](http://www.journalofromanarch.com/samples.html) on the journal's
+    website.
 
 [^1st-journals]:
 

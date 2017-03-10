@@ -17,5 +17,3 @@ Centralized input system. Explicit barrier to entry. Ridiculous. No company, no
 matter how well positioned, is eternal.
 
 A better way. Distributed web architecture. Flexibility. Research Engines.
-
-*[DOI]: Digital Object Identifier

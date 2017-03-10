@@ -58,7 +58,8 @@ So in a spirit of hope for the future, and with the assumption that everyone in
 the world would like to do things better and be more involved if they had the
 chance, here was the premise of the workshop:
 
-{: .bq .grab }
+<div class="bq grab">
+
 > The scholarly system has vanished. The forms of communication that were valid
 > just a moment ago are now part of history. The contracts (international and
 > individual) have ceased to exist. All the universities, publications and job
@@ -71,6 +72,8 @@ chance, here was the premise of the workshop:
 > Because of this situation, the scholarly world faces the question: Now that
 > we have to start from a blank slate, how do we want to organize ourselves?
 > How could we create our communication anew?
+
+</div>
 
 Yes, it's a bit post-apocalyptic, but isn't it refreshing? Wouldn't it be _so
 much easier_ if all existing social contracts went away and we could design it
@@ -165,15 +168,14 @@ discoverability, participation, and reuse.
   <figcaption property="schema:caption">Participants of the workshop <i>Reimagining Scholarly Communications</i>, held in <span property="schema:contentLocation">Madrid, Spain</span>, <span property="schema:dateCreated" content="2016-02-27" datatype="schema:Date">February 2016</span>. I'm hiding (but smiling) in the back right. If you want to know who else came, check out the <a href="https://www.force11.org/group/scholarly-commons-working-group/attendee-list">participant list</a>. Thanks to <span property="schema:creator" typeof="schema:Person"><a property="schema:url" href="https://twitter.com/radicevslobodan"><span property="schema:name">Slobodan Radicev</span></a></span> for the photo.</figcaption>
 </figure>
 
-So was the [blank-slate approach](#sec:the-premise) worth it? To me, I think
-this was the single best decision that we made. Everyone owned what they came
-up with, and even competed with other groups in imagining the greatest future.
+So was the [blank-slate approach][the premise] worth it? To me, I think this
+was the single best decision that we made. Everyone owned what they came up
+with, and even competed with other groups in imagining the greatest future.
 There will be time to connect the dots of theory and history later. What we
 needed here was an opportunity to freely explore the future that we
 collectively hope to create, without any preconceived notions, limitations, or
 barriers.
 
-{: .conclusion }
 In the end, we answered some of the questions that we had hoped to answer.
 There was general consensus that we _do_ want to work together, and that we
 _do_ want to find better ways of doing things, and that we _are_ ready to
@@ -189,17 +191,14 @@ defining process will go on continuously?_
 
 ---
 
-<span lang="nl">Bianca Kramer</span> and <span lang="nl">Jeroen Bosman</span>
-put a lot of work into publishing a report of the workshop. Please [check it
-out][workshop-report] to learn more, and please take the opportunity to go
-through the exercise on your own, or with your group.
+[Bianca Kramer]{lang=nl} and [Jeroen Bosman]{lang=nl} put a lot of work into
+publishing a report of the workshop. Please [check it out][workshop-report] to
+learn more, and please take the opportunity to go through the exercise on your
+own, or with your group.
 
-[FORCE11]: <https://force11.org>
-{:.oldstyle}
+[FORCE11]: <https://force11.org> {.oldstyle}
 [helmsley]: <http://helmsleytrust.org>
 [commons group]: <https://www.force11.org/group/scholarly-commons-working-group> "Scholarly Commons Working Group @FORCE11"
 [announcement]: <https://www.force11.org/article/helmsley-charitable-trust-funds-force11-develop-scholarly-commons-future> "Program announcement @FORCE11"
 [workshop-report]: <http://dx.doi.org/10.3897/rio.2.e9340> "Defining the Scholarly Commons - Reimagining Research Communication. Report of Force11 SCWG Workshop, Madrid, Spain, February 25-27, 2016 on RIO"
 [fair-paper]: <http://dx.doi.org/10.1038/sdata.2016.18> "The FAIR Guiding Principles for scientific data management and stewardship on Scientific Data"
-
-*[FAIR]: Findable, Accessible, Interoperable, Reusable

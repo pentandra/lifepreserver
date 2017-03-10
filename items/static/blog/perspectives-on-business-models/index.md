@@ -13,8 +13,6 @@ To be sustainable, a business must make a profit.
 If a business is not sustainable, it is doing a disservice to its clientele,
 shareholders, and any other constituencies.
 
-
-
 <!--MORE-->
 
 ## Paywalling
@@ -30,9 +28,8 @@ increasingly unsustainable.
 It's not that it doesn't cost businesses to host and disseminate these
 images---it's just that copying bits doesn't really provide lasting value to
 the customer.[^bits] At least not anymore. In this day and age it's
-commoditized and expected to be free. In the <span
-class="oldstyle">90</span>'s, [when ancestry.com was
-founded](http://corporate.ancestry.com/about-ancestry/company-info/company-history/),
+commoditized and expected to be free. In the [90]{.oldstyle}'s, [when
+ancestry.com was founded](http://corporate.ancestry.com/about-ancestry/company-info/company-history/),
 the Internet was a great new thing, and companies could get away with charging
 people for access to things. Copies of software were sold, even though the
 incremental cost of copying the software was essentially zero.[^buy-software]
@@ -59,17 +56,23 @@ noticeable absence of a business model. It is as if the founders couldn't
 figure out how to make money with their idea, so the goal is to amass users and
 then sell the company to a bigger company that can afford the windfall.
 
-[^journal-publishers]: <span class="uri">http://southernlibrarianship.icaap.org/content/v09n03/mcguigan_g01.html</span>
+[^journal-publishers]: <http://southernlibrarianship.icaap.org/content/v09n03/mcguigan_g01.html>
 
-[^bits]: Kevin Kelly has written some interesting essays about this, including
+[^bits]:
+
+    Kevin Kelly has written some interesting essays about this, including
     [Better Than Free](http://kk.org/thetechnium/2008/01/better-than-fre/) and
     [Technology Wants To Be Free](http://kk.org/thetechnium/2007/11/technology-want/).
 
-[^buy-software]: This practice continues to this day, but I still consider it a
-    relic of the past, and unsustainable.
+[^buy-software]:
 
-[^contract-law]: Even though a large percentage of images from commercial image
-    providers are in the public domain, from governmental providers, such as
+    This practice continues to this day, but I still consider it a relic of the
+    past, and unsustainable.
+
+[^contract-law]:
+
+    Even though a large percentage of images from commercial image providers
+    are in the public domain, from governmental providers, such as
     [NARA](https://www.archives.gov), and are not copyrightable, these
     providers get around this limitation through contract law by requiring new
     users to agree to [certain

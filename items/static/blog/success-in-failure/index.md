@@ -14,18 +14,21 @@ has_media: true
 ---
 
 For the past couple of months we've had the chance to participate in the [Grow
-America](http://web.archive.org/web/20120621062316/http://www.growam.com/)
-Springboard competition. It was tough to decide if we should
-enter, since our time is already spread so thin. However, like-it-or-not, it
-takes money to run a business, and this felt like a good fit. Looking back, we
-are really glad that we entered. We did not win any money, but we learned a lot
-and gained confidence in our ability to communicate what we are doing to
-business folks (especially when they're not research geeks).
+America] Springboard competition. It was tough to decide if we should enter,
+since our time is already spread so thin. However, like-it-or-not, it takes
+money to run a business, and this felt like a good fit. Looking back, we are
+really glad that we entered. We did not win any money, but we learned a lot and
+gained confidence in our ability to communicate what we are doing to business
+folks (especially when they're not research geeks).
 
 <!--MORE-->
 
-![Katie at our half-table during the Grow America competition](growam2012-katie.jpg){: .static }
-{: .aside .img }
+<div class="aside">
+
+![Katie at our half-table during the Grow America competition](growam2012-katie.jpg){.static}
+
+</div>
+
 
 It was inspiring and enlightening to see other entrepreneurs going through the
 same things we're going through. We're not the only ones that are young and
@@ -36,11 +39,10 @@ other companies succeed gave us that "if they can do it, we can do it" feeling.
 Seeing the companies that are a little further along than we are gave us a
 vision of the next steps we need to take. Some of these steps are exciting and
 some are a little intimidating. It's exciting to think about actually having
-our [first product](/solutions/#geungle) out there, in the hands of the people
-that want it, and to start making a difference! It's intimidating to realize
-that we need to build partnerships with other businesses. It's easy for us to
-connect with like-minded people, but business-to-business is a whole new
-ballgame for us.
+our [first product][Geungle] out there, in the hands of the people that want
+it, and to start making a difference! It's intimidating to realize that we need
+to build partnerships with other businesses. It's easy for us to connect with
+like-minded people, but business-to-business is a whole new ballgame for us.
 
 The actual competition process helped us as well in two ways.
 
@@ -77,29 +79,27 @@ they asked, the more I felt validated in our business approach and decisions.
 
 The competition also gave me an even greater appreciation for those that are in
 fields of research. Research is challenging in any field. It is also
-challenging to explain research to someone that has never done it before---let
-alone explain it in <span class="oldstyle">2--3</span> minutes.
+challenging to explain research to someone that has never done it before, let
+alone to try to explain it in [2--3]{.oldstyle} minutes.
 
 Overall, this experience gave me encouragement to take those next steps. I
 recognize now more than ever that we *can* be successful. There is nothing
 stopping us.
-{: .conclusion }
 
-P.S.---Another random realization: adrenaline can make up for a lot of lack in
+PS---Another random realization: adrenaline can make up for a lot of lack in
 sleep. But the letdown after the adrenaline stops is brutal.
 
 <figure id="growam-video">
-  <div class="simple">
-    <video style="width:100%;height:100%;" poster="growam2012.jpg" controls="controls" preload="none">
-      <source type="video/mp4" src="growam2012.mp4" />
-      <source type="video/webm" src="growam2012.webm" />
-      <source type="video/ogg" src="growam2012.ogv" />
-    </video>
-  </div>
+  <video style="width:100%;height:100%;" poster="growam2012.jpg" controls="controls" preload="none">
+    <source type="video/mp4" src="growam2012.mp4" />
+    <source type="video/webm" src="growam2012.webm" />
+    <source type="video/ogg" src="growam2012.ogv" />
+  </video>
   <figcaption>Our submission to the Grow America Competition. Thanks Abe and Jake for helping us out!</figcaption>
 </figure>
 
-*[NGS]: National Genealogical Society 2012 Conference
+[Grow America]: <http://web.archive.org/web/20120621062316/http://www.growam.com/> "Grow America via the Wayback Machine"
+[Geungle]: </solutions/geungle/> "Pentandra → Solutions → Geungle"
 
 <% content_for :javascripts do %>
 <script>
