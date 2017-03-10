@@ -46,14 +46,14 @@ of it.
 We are also a software company, but we feel that is only *part* of what we are
 trying to offer. Community is very important to us. Part of the reason we are
 [open](/open/) is so that we can become an active, contributing member of the
-genealogy community---we don't want to be labeled merely as a "vendor." We're
+genealogy community---we don't want to be labeled merely as a _vendor_. We're
 starting small, but we hope that a community of developers, genealogists,
 marketers, and enthusiasts will _want_ to join us in an awesome project with
 ambitious goals.
 
-<div class="img">
+<div class="img other">
 
-![Our 10 foot square booth layout](booth.png){.other .static}
+![Our 10 foot square booth layout](booth.png){.static}
 
 </div>
 
@@ -67,14 +67,14 @@ place where people can come for inspiration, rejuvenation, or to just take a
 break from their research labors. We're also planning on hosting some small
 group discussions during the conference.
 
+<figure class="aside img">
+  <img title="Arrow Chairs" src="chairarrival.jpg" class="static" />
+  <figcaption><p>Our chairs have arrived!</p></figcaption>
+</figure>
+
 We hope that people will want to get involved, and that our out-of-the-box
 booth ideas won't be a complete flop. Our success depends on people. We can't
 do what we hope to accomplish without people willing to come and share their
 ideas.
-
-<figure class="img static">
-  <img title="Arrow Chairs" src="chairarrival.jpg" />
-  <figcaption><p>Our chairs have arrived!</p></figcaption>
-</figure>
 
 [ngs conf]: <http://www.ngsgenealogy.org/cs/conference_info>
