@@ -64,7 +64,7 @@ Spain is known well for its architecture, so I thought that there may be some
 architectural edifice or feature that could serve as the basis for a design. It
 didn't take long to find it.
 
-Intro to <span lang="es-ES">Palacio de Comunicaciones</span>.
+Intro to [Palacio de Comunicaciones]{lang=es}.
 
 <figure property="schema:sharedContent" resource="#palacio_de_comunicaciones" id="photo:palacio-de-comunicaciones" class="img" typeof="schema:ImageObject">
   <link property="schema:representativeOfPage" resource="schema:False" />
@@ -72,7 +72,7 @@ Intro to <span lang="es-ES">Palacio de Comunicaciones</span>.
   <meta property="schema:height" content="647" />
   <meta property="schema:contentSize" content="113KB" />
   <img property="schema:contentUrl" src="palacio_de_comunicaciones.jpg" />
-  <figcaption class="small" property="schema:caption"><b property="schema:name" lang="es">El Palacio de Comunicaciones</b> (<span property="schema:name">Palace of Communications</span>), located in Madrid, Spain, not too far away from our workshop. <a href="https://ssl.panoramio.com/photo/9301215">Photo</a> by <a href="https://ssl.panoramio.com/user/82662?with_photo_id=9301215" property="cc:attributionURL">Sven Goelles</a>, licensed under a <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license"><abbr title="Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International">CC BY-NC-ND</abbr></a> license. <span class="icon-cc"></span><span class="icon-cc-by"></span><span class="icon-cc-nc"></span><span class="icon-cc-nd"></span></figcaption>
+  <figcaption property="schema:caption"><b property="schema:name" lang="es">El Palacio de Comunicaciones</b> (<span property="schema:name">Palace of Communications</span>), located in Madrid, Spain, not too far away from our workshop. <a href="https://ssl.panoramio.com/photo/9301215">Photo</a> by <a href="https://ssl.panoramio.com/user/82662?with_photo_id=9301215" property="cc:attributionURL">Sven Goelles</a>, licensed under a <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license"><abbr title="Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International">CC BY-NC-ND</abbr></a> license. <span class="icon-cc"></span><span class="icon-cc-by"></span><span class="icon-cc-nc"></span><span class="icon-cc-nd"></span></figcaption>
 </figure>
 
 It was not some grand generic building into which the mail delivery process was
@@ -81,7 +81,8 @@ up, to fit the function for which it was to serve: enabling communications.
 From several points of view, you could say that the building was _embedded
 within_ the city's communications structure. The designers looked at the mail
 delivery process, looked at the needs of the public,[^for-the-public] and then
-designed the building to _fit_ that context.
+designed the building to _fit_ that context. They looked at the mail process
+and then built a building around it.
 
 Not [functionalism].
 
