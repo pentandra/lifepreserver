@@ -68,7 +68,7 @@ break from their research labors. We're also planning on hosting some small
 group discussions during the conference.
 
 <figure class="aside img">
-  <img title="Arrow Chairs" src="chairarrival.jpg" class="static" />
+  <img data-no-retina title="Arrow Chairs" src="chairarrival.jpg" class="static" />
   <figcaption><p>Our chairs have arrived!</p></figcaption>
 </figure>
 
