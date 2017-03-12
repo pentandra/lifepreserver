@@ -77,11 +77,11 @@ Intro to [Palacio de Comunicaciones]{lang=es}.
 
 It was not some grand generic building into which the mail delivery process was
 fit, but the other way around. The whole building was designed, from the ground
-up, to fit the function for which it was to serve: enabling communications.
-From several points of view, you could say that the building was _embedded
-within_ the city's communications structure. The designers looked at the mail
-delivery process, looked at the needs of the public,[^for-the-public] and then
-designed the building to _fit_ that context.
+up, to fit the function for which it was to serve: enabling communications. The
+designers looked at the mail delivery process, looked at the needs of the
+public,[^for-the-public] and then designed the building to _fit_ that context.
+From several points of view, you could say that the building was _embedded_
+within the city's communications structure.
 
 Not [functionalism].
 
