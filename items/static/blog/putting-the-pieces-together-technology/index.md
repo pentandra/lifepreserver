@@ -154,12 +154,10 @@ participation, and the integration of scholarship into society, would diminish
 or be eliminated completely. Researchers would also have something to show for
 all their thinking.
 
-If we don't make the process explicit, how will we be able to share, reproduce,
-or assess the differences? If we keep the process implicit, or leave it to post
-facto analysis alone to attempt to reveal it, we are missing the whole point,
-and we end up not very far from where we are now: publishing _about_ the
-research, instead of publishing _research_, and our ability to effectively
-common will be impeded. 
+If we keep the process implicit, or leave it to post facto analysis alone to
+attempt to reveal it, we end up not very far from where we are now: publishing
+_about_ the research, instead of publishing _research_, and our ability to
+effectively collaborate deeper into the research process will be impeded.
 
 <figure class="bq grab">
 
@@ -184,7 +182,8 @@ workshops that we have held, has been mostly limited to seeking feedback when
 we were nearing a finished product. Our design process has not been very open,
 not because we we haven't wanted it to be open, but because of the lack of
 tooling that works this way. We're doing the best we can with what we have, but
-we need ways to do this better! [The future _is_ a happy place!][happy place]
+we need ways to do this better! I believe that the future really _is_ a [happy
+place]!
 
 In order to create a truly open, collaborative, egalitarian culture of
 scholarship, we also need the questions, thoughts, and intentions that were in
@@ -274,18 +273,19 @@ As much as we've focused on principles and culture (and they are certainly the
 driving force in this effort!), we need an enabling infrastructure for
 commoning. We need to make the discovery process easier, and enlarge the doors
 and allow others to come and participate in this great endeavor! This is the
-answer to opening the pores of knowledge clubs and allowing others to play
-easier, more fluidly. Visitors can be guided to learn the ropes as quickly as
-possible. The existing lack of interoperability between tools is actually an
-opportunity for something better.
+answer to increasing the porosity of the boundaries between knowledge clubs and
+allowing others to play easier, more fluidly. Visitors can be guided to learn
+the ropes as quickly as possible. The existing lack of interoperability between
+tools is actually an opportunity for something better.
 
 Research zealots will still find ways to blaze trails where there are none, but
 why not plan for the city and prepare for the streets to make it easier for
 everyone to transition? We need streets for machines for navigate, so people
 don't have to. The tools that are part of the commons should be able to
-discover other tools and people and research to interact with, and this could
-transform research into a dynamic system rather than the current static system.
-Our tools and machines need to know how to common too!
+discover other tools and people and research with which to interact. Our tools
+and machines need to know how to common too! Why not? All this could transform
+research into a realtime dynamic system rather than the current static system
+against which we struggle.
 
 # A relative advantage
 
@@ -323,10 +323,13 @@ provides some direction for the future:
 So building on my [earlier definition] of the Scholarly Commons, but from the
 perspective of technology:
 
+<div class="big">
+
 <dfn id="def:technology-of-the-scholarly-commons">The Scholarly Commons</dfn>
-is an opportunity to transform the culture of scholarship by drastically
-improving our practices and widening our networks for the production and flow
-of knowledge.
+is an opportunity to improve the world by drastically improving our practices
+relating to the production and use of knowledge.
+
+</div>
 
 So how do we get there? We're working on a [proposal] for that very purpose.
 
