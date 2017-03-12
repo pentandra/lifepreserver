@@ -148,8 +148,11 @@ at the research process in a more _functional_ way, with the tools or other
 smaller parts of the process as [black boxes][black box] within a bigger
 process? It is the _process_ that needs to be open and replicable. _So why are
 we not publishing the research process, even across tools, as the fundamental
-scholarly output?_ I'm reminded of what the humanist Jeffrey Schnapp says in
-[his presentation] on knowledge design, that the process _is_ the product.
+scholarly output?_ If the process was the product, many of the problems we are
+facing right now in scholarly communications, relating to reproducibility,
+participation, and the integration of scholarship into society, would diminish
+or be eliminated completely. Researchers would also have something to show for
+all their thinking.
 
 If we don't make the process explicit, how will we be able to share, reproduce,
 or assess the differences? If we keep the process implicit, or leave it to post
@@ -336,5 +339,4 @@ So how do we get there? We're working on a [proposal] for that very purpose.
 [decision trees]: <decision_trees_proposal.jpg> "Click to see the original decision trees proposal"
 [research cases]: </blog/introducing-research-cases/#sec:research-cases>
 [happy place]: <https://www.force11.org/blog/future-happy-place> "The Future is a Happy Place, by Maryann Martone"
-[his presentation]: <https://www.youtube.com/watch?v=_oz_rKjLtW4>
 [april's blog post]: <https://aprilhathcock.wordpress.com/2016/09/27/making-the-local-global-the-colonialism-of-scholarly-communication/>
