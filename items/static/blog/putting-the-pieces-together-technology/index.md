@@ -200,16 +200,15 @@ modern setting, setting aside as many of the undesirable social, cultural, and
 technical limitations as possible.
 
 To explain what I mean by this, allow me to give an example of my experience
-working on [the logo] for the Scholarly Commons (which has been backburnered
-while we have tried to come to a better understanding of what it is that we are
-actually defining). As I went along, I made a conscious effort to explain each
-step, question, and resulting decision of the design process. This is the
-spirit and culture of the commons! Done this way, the process is open,
-transparent, and invites participation. It is easy for anyone to say, 'Did you
-think about this or that?' and contribute in context. It is easy for anyone to
-get involved in the design process, wherever and whenever the feel they have
-something to contribute. Obviously, doing this in a Google Doc is less than
-ideal, but I hope you can see what I am trying to show.
+designing [the logo] for the Scholarly Commons. As I went along, I made a
+conscious effort to explain each step, impression, question, and resulting
+decision of the design process. This is the spirit and culture of the commons!
+Done this way, the process is open, transparent, and invites participation. It
+is easy for anyone to ask, 'Did you think about this or that?' and contribute
+in context. It is easy for anyone to get involved in the design process,
+wherever and whenever the feel they have something to contribute. Obviously,
+doing this with a Google Doc is less than ideal, but I hope you can see what I
+am trying to show.
 
 # Shared Practice
 
