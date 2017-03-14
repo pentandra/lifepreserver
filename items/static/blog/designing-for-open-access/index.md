@@ -829,7 +829,7 @@ for free at your nearest Internet connection. We need researchers that are
 motivated by a [passion for discovery][passion]---that want to serve humanity
 without hidden agendas or selfish motivations.
 
-<figure class="section" resource="#you_are_amateurs" typeof="schema:VideoObject">
+<figure resource="#you_are_amateurs" typeof="schema:VideoObject">
   <meta property="schema:bitrate" content="649k" />
   <meta property="schema:height" content="384" />
   <meta property="schema:width" content="512" />
@@ -1150,7 +1150,7 @@ research systems.
  
     * [what countries mandate open access right now?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=26m39s){.oa-promoters}
 
-    <figure id="ruvr" class="section">
+    <figure id="ruvr">
       <video class="simple" width="100%" height="100%" style="width: 100%; height: 100%;" id="player" preload="none" controls="controls">
         <source type="video/youtube" src="http://www.youtube.com/watch?v=v31zpZ4woOI" />
       </video>
@@ -1164,7 +1164,7 @@ research systems.
     everything to gain by enlarging their audience by putting them online free
     of charge."
 
-    <figure id="petersuber" class="section">
+    <figure id="petersuber">
       <audio id="suberinterview" preload="none" controls="controls">
         <source src="SuberPodcast_mp3.mp3" type="audio/mpeg" />
         <source src="SuberPodcast_ogg.ogg" type="audio/ogg" /> 
