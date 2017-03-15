@@ -1,5 +1,6 @@
 --- 
 title: Recent Thoughts
+has_media: true
 is_hidden: true
 ---
 <div class="group">
@@ -11,3 +12,11 @@ is_hidden: true
   <% end %>
 
 </div>
+
+<% content_for :javascripts do %>
+<script>
+$(document).ready(function() {
+  $('video').mediaelementplayer();
+});
+</script>
+<% end %>
