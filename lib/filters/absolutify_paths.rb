@@ -8,7 +8,7 @@ class AbsolutifyPaths < Nanoc::Filter
 
   requires 'nokogiri'
 
-  SELECTORS ||= ['*/@href', '*/@src', 'object/@data', 'param[@name="movie"]/@content', 'form/@action', 'comment()'].freeze
+  SELECTORS ||= ['*/@href', '*/@src', 'object/@data', 'param[@name="movie"]/@content', 'form/@action', 'video/@poster', 'comment()'].freeze
 
   # Absolutifies all paths in the given content, which can be HTML, XHTML, XML
   # or CSS. In HTML, all `href` and `src` attributes will be absolutified. In
