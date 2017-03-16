@@ -1,11 +1,13 @@
-35
+40
 Berjon/M
 CentOS
 DBpedia/MS
 DecisionML/M
 IndieAuth/M
 IndieWeb/M
+LuaJIT
 Nanoc/M
+OpenResty/M
 ReSpec/M
 RocketHub/M
 RubyGem/S
@@ -13,6 +15,7 @@ Schepers/M
 Scholonto/M
 SmartOS
 Trello/M
+WebMention
 affordance
 backend/MS
 buildtime/M

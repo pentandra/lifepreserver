@@ -301,9 +301,9 @@ changefreq: monthly
 
       <h3 class="flush">Buildtime Dependencies</h3>
 
-      <p class="foreign">
+      <p>
 
-        <%= authors_of(dependencies_for(:default)).to_sentence %>.
+        Many thanks to <span class="foreign"><%= authors_of(dependencies_for(:default)).to_sentence %></span> for the libraries and tools with which this site is compiled.
 
       </p>
 
@@ -320,9 +320,7 @@ changefreq: monthly
 
       <p>
 
-        There are certain tools that we used in preparing and developing this project.
-
-        <span class="foreign"><%= authors_of(dependencies_for(:development)).to_sentence %>.</span>
+        Also thank you to <span class="foreign"><%= authors_of(dependencies_for(:development)).to_sentence %></span> for the tools that have made the development process so much more bearable.
 
       </p>
 
@@ -360,6 +358,23 @@ changefreq: monthly
   <h2>The Server</h2>
 
   <div class="bd">
+
+    <p>
+
+      Dynamic aspects of this site are handled with <a
+        href="https://openresty.org/">OpenResty</a>, a dynamic web platform
+      based on <a href="http://nginx.org/">NGINX</a> and <a
+        href="http://luajit.org">LuaJIT</a>, giving us the flexibility to
+      handle certain things dynamically as this site grows in functionality.
+      Currently the server does not do anything special other than handling
+      standard HTTP requests for Web browsing and content negotiation for
+      linked data, but on the near horizon we are planning on supporting <a
+        href="http://webmention.net">WebMention</a> and <a
+        href="http://www.mementoweb.org">Memento</a> interactions. We'll fill
+      in this section over time as we have more ideas and functionality.
+
+    </p>
+
   </div>
   <div class="aside img section">
     <img data-no-retina src="/images/openresty.jpg" alt="OpenResty logo: a green, finely articulated bird formed in the cyclical shape of an event loop, the beak almost touching the tail." />

@@ -7,7 +7,7 @@
         <% else %>
           <code class="projectname" property="doap:name"><%= h dependency[:name] %></code>
         <% end %>
-        [<%= h dependency[:version] %>]</span>:
+        <span class="oldstyle">(<%= h dependency[:version] %>)</span></span>:
       <span class="foreign" property="doap:shortdesc"><%= h dependency[:summary] %></span>
     </li>
   <% end %>
