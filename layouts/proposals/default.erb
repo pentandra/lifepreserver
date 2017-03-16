@@ -2,10 +2,30 @@
   <article class="group proposal" resource="#proposal" typeof="schema:Report" property="schema:mainEntity">
     <header class="section">
       <h1 property="dc:title schema:headline"><%= @item[:title] %></h1>
-      <div class="group meta">
-        <meta property="schema:copyrightYear" datatype="xsd:gYear" content="<%= @item[:created_at].year %>" />
-        <link property="rdfa:copy" resource="pentandra-website:license" />
+      <div class="meta">
+        <dl class="group">
+          <dt id="document-id" class="aside"><div class="close">Document ID</div></dt>
+          <dd class="bd"><a class="uri" href="<%= path_to(@item, global: true) %>"><%= path_to(@item, global: true) %></a></dd>
+
+          <dt id="document-status" class="status aside"><div class="close">Status</div></dt>
+          <dd class="status bd centered up"><div class="<%= @item.fetch(:status, 'unpublished') %>"><%= @item.fetch(:status, 'unpublished') %></div></dd>
+
+          <dt id="document-published" class="aside"><div class="close">Published</div></dt>
+          <dd class="bd"><time property="schema:datePublished" datetime="<%= date_for(@item) %>"><%= ndashed(date_for(@item)) %></time></dd>
+
+          <% if @item[:updated_at] > @item[:created_at] then %>
+            <dt id="document-modified" class="aside"><div class="close">Modified</div></dt>
+            <dd class="bd"><time property="schema:dateModified" datetime="<%= simple_date(@item[:updated_at]) %>"><%= ndashed(simple_date(@item[:updated_at])) %></time></dd>
+          <% end %>
+
+          <% if @item.key?(:in_reply_to) %>
+            <dt id="document-in-reply-to" class="aside"><div class="close">In reply to</div></dt>
+            <dd class="bd"><a property="sioc:reply_of" href="<%= @item[:in_reply_to].fetch(:uri) %>"><%= @item[:in_reply_to].fetch(:title) %></a></dd>
+          <% end %>
+        </dl>
       </div>
+      <meta property="schema:copyrightYear" datatype="xsd:gYear" content="<%= @item[:created_at].year %>" />
+      <link property="rdfa:copy" resource="pentandra-website:license" />
     </header>
     <div class="bd">
       <%= yield %>

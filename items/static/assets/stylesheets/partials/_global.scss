@@ -344,6 +344,21 @@ input.button {
   padding-left: 0.5em;
 }
 
+.status {
+
+  line-height: $base-line-height * 2;
+
+  .unpublished {
+    background-color: desaturate($pentandra-brown, 80%);
+  }
+
+  .draft {
+    background-color: $pentandra-violet;
+    color: $pentandra-white;
+  }
+
+}
+
 .tags {
   $tag-height: 20px; //$base-line-height * 0.8;
   $tag-space: 10px;
