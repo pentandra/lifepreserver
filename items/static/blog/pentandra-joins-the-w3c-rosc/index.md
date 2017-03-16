@@ -31,7 +31,8 @@ Quoting from their charter:
 > better reuse and reproduce of research results and knowledge. These research
 > assets, including data used and generated in an investigation, methods used
 > for producing the data, as well as people and organisations involved in the
-> study, are what we call *Research Objects*.
+> study, are what we call <dfn id="def:research-objects">Research
+> Objects</dfn>.
 
 </div>
 
