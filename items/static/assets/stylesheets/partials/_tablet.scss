@@ -13,6 +13,11 @@ $less-outer-margin: 28px;
   // 
   // HTML elements
 
+  dd.bd { margin-top: 0; }
+
+  //
+  //
+
   .content {
     @include grid(8); 
     padding: 0 $less-outer-margin;
