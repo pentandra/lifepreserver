@@ -31,7 +31,7 @@ Quoting from their charter:
 > better reuse and reproduce of research results and knowledge. These research
 > assets, including data used and generated in an investigation, methods used
 > for producing the data, as well as people and organisations involved in the
-> study, are what we call **Research Objects**.
+> study, are what we call *Research Objects*.
 
 </div>
 
@@ -48,8 +48,8 @@ Internet was created][Arpanet] to begin with?
 We are really excited to be part of this change in the way research has been
 disseminated for hundreds of years.
 
-PS---We live in a world of acronym soup, and when we saw the acronym for ROSC
-we had a good laugh. We have been working on a soon-to-be-open-source project
+PS: We live in a world of acronym soup, and when we saw the acronym for ROSC we
+had a good laugh. We have been working on a soon-to-be-open-source project
 composed of the domain-agnostic guts of Geungle---essentially based on the
 model of a case. We have named the project ROC. A funny coincidence of similar
 naming! _(Watch for an announcement about ROC soon!)_
