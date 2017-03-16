@@ -4,6 +4,8 @@ description: A website for collaborative genealogical research.
 meta_description: >
   Geungle is an open-research ecosystem for professional and amateur
   genealogists with the goal of reconstructing the history of mankind.
+kind: project
+status: planning
 wip: true
 cover_image:
   id: '/static/assets/images/geungle-logo.png'
@@ -134,7 +136,7 @@ cover_image:
 
     </div>
 
-    <% if @config[:geungle][:live] then %>
+    <% if @item[:status] == 'live' then %>
       <div class="bd section">
         <a href="http://geungle.com/" class="button">OK, I'm intrigued. <span class="newline">Take me to <b>Geungle</b></span></a>
       </div>
@@ -253,7 +255,7 @@ cover_image:
 
   </section>
 
-  <% if @config[:geungle][:live] then %>
+  <% if @item[:status] == 'live' then %>
     <div class="section bd">
       <div class="section">
         <a href="http://geungle.com/" class="button">Alright, I've heard enough! <span class="newline">Take me to <b>Geungle</b></span></a>

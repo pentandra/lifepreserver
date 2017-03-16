@@ -173,7 +173,7 @@ next step.
 [familysearch]: <http://familysearch.org/> "familysearch.org"
 [mills' paper]: <http://www.ngsgenealogy.org/galleries/Ref_Researching/NGSQVol91Pg26077GenealogyHistory.pdf>
 [GEDCOM X]: <http://gedcomx.org/>
-[Geungle]: </solutions/geungle/> "Pentandra → Solutions → Geungle"
+[Geungle]: </solutions/projects/geungle/> "Pentandra → Solutions → Geungle"
 [ngs]: <http://ngsgenealogy.org>
 [bcg]: <http://bcgcertification.org/>
 [Havorka lecture]: <http://s3.amazonaws.com/rootstech/original/Advocating%20Genealogy.docx?1322717131> "Click for Syllabus"

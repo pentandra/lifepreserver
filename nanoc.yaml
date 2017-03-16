@@ -98,9 +98,6 @@ environments:
       syntax_highlighter: nil
       header_offset: 1
 
-    geungle:
-      live: false
-
     git:
       url: "https://github.com/pentandra/lifepreserver.git"
       browse_url: "https://github.com/pentandra/lifepreserver"

@@ -99,7 +99,7 @@ sleep. But the letdown after the adrenaline stops is brutal.
 </figure>
 
 [Grow America]: <http://web.archive.org/web/20120621062316/http://www.growam.com/> "Grow America via the Wayback Machine"
-[Geungle]: </solutions/geungle/> "Pentandra → Solutions → Geungle"
+[Geungle]: </solutions/projects/geungle/> "Pentandra → Solutions → Geungle"
 
 <% content_for :javascripts do %>
 <script>
