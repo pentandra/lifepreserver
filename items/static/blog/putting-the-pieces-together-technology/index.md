@@ -57,8 +57,8 @@ technology is currently missing. We were not going to discover some preexisting
 solution at this workshop that has been waiting for us out there just by
 looking at all the components of the current system. We need something more.
 
-To explain what I mean by this _something more_, allow me to share a similar
-approach and resulting struggle in the practice of medicine:
+To explain what I mean by this, allow me to share a similar fallacy and
+resulting struggle in the practice of medicine:
 
 <figure id="systems-vs-components" class="bq grab">
 
@@ -91,10 +91,10 @@ a usable workflow. We need to approach this problem in a systemic way.
 
 # The exercise
 
-Putting those concerns aside for a moment, the compliance exercise was actually
-very enlightening in some unexpected ways. First, it was good to talk about
-current practices. So much of my time I spend thinking _if we could start over
-from scratch, what would the world look like?_ and I don't spend as much time
+Putting those concerns aside for a moment, the compliance exercise was very
+enlightening in some unexpected ways. First, it was good to talk about current
+practices. So much of my time I spend thinking _if we could start over from
+scratch, what would the world look like?_ and I don't spend as much time
 thinking about the difficulties of transition that others are facing as well as
 I need to. For example, one participant was threatened with dismissal from her
 doctoral program for wanting to publish a paper open access. Compared with Open
@@ -131,8 +131,8 @@ the disintegration of the main track as so many of the participants left to
 join the Global South discussion. So many of the tools we were studying were
 designed for the research culture and infrastructure of the Global North and
 just [did not connect with many of the people][april's blog post] that we
-brought from around the world. Even though this exercise did not work out as
-planned, I think this was an important negative result to obtain.
+brought from around the world. Even so, I did not expect the participants to
+react this way, and I think this was an important negative result to obtain.
 
 # The process is the product
 
