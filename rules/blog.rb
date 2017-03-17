@@ -37,6 +37,7 @@ compile '/static/blog/**/*.md' do
   ]
   filter :absolutify_paths, type: :html
   filter :spellchecker, type: :html
+  filter :abbreviate, type: :html
   layout '/blog/article.*'
   filter :rubypantsunicode
   filter :cache_buster if @config[:production]

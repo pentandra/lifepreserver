@@ -9,6 +9,7 @@ compile %r{/static/company/benefit-reports/\d{4}/index\.md} do
     :smart,
   ]
   filter :spellchecker, type: :html
+  filter :abbreviate, type: :html
   layout '/benefit_reports/default.*'
   filter :rubypantsunicode
   filter :cache_buster if @config[:production]
@@ -38,6 +39,7 @@ compile '/static/company/proposals/*/index\.md' do
     :smart,
   ]
   filter :spellchecker, type: :html
+  filter :abbreviate, type: :html
   layout '/proposals/default.*'
   filter :rubypantsunicode
   filter :cache_buster if @config[:production]
