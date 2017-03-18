@@ -1203,8 +1203,8 @@ research systems.
     process that new knowledge takes as it becomes more integrated into
     society, see Ikujiro Nonaka's paper, <a
     href="http://www.jstor.org/stable/2635068"><cite>A Dynamic Theory of
-    Organizational Knowledge Creation</cite></a> (behind <abbr>JSTOR</abbr>'s
-    paywall, :angry:), and <a
+    Organizational Knowledge Creation</cite></a> (behind <span
+    class="abbr">JSTOR</span>'s paywall, :angry:), and <a
     href="http://www.palgrave-journals.com/kmrp/journal/v1/n1/full/8500001a.html">
     <cite>The knowledge-creating theory revisited: knowledge creation as a
     synthesizing process</cite></a> by Nonaka and Toyama.

@@ -177,12 +177,12 @@ A non-profit by the name of [B Lab][blab intro] has created a certification
 (and an actual business entity by legislation in some states) called a <i>B
 Corporation</i>, short for benefit corporation. They say, "By voluntarily
 meeting higher standards of transparency, accountability, and performance,
-Certified <abbr>B Corps</abbr> are distinguishing themselves in a cluttered
-marketplace by offering a positive vision of a better way to do business." They
-have put together a governance model to help businesses maintain this high
-level of transparency, accountability, and performance. This governance model
-can be _baked_ into corporate bylaws and even state laws.  We are excited at
-the prospect of becoming a <abbr>B Corp</abbr> in the future, so stay tuned!
+Certified B Corps are distinguishing themselves in a cluttered marketplace by
+offering a positive vision of a better way to do business." They have put
+together a governance model to help businesses maintain this high level of
+transparency, accountability, and performance. This governance model can be
+_baked_ into corporate bylaws and even state laws.  We are excited at the
+prospect of becoming a B Corp in the future, so stay tuned!
 
 You may argue, "But is research good for society?" If you're reading this post,
 I probably don't have to convince you of that.[^goodforsociety]
