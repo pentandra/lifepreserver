@@ -5,7 +5,7 @@ kind: article
 article_id: a-social-business
 author_name: Chris Chapman
 created_at: 2012-10-18
-updated_at: 2012-10-26
+updated_at: 2017-03-20
 published: true
 tags:
   - Decisions
@@ -174,15 +174,16 @@ commercialism?
 </div>
 
 A non-profit by the name of [B Lab][blab intro] has created a certification
-(and an actual business entity by legislation in some states) called a <i>B
-Corporation</i>, short for benefit corporation. They say, "By voluntarily
-meeting higher standards of transparency, accountability, and performance,
-Certified B Corps are distinguishing themselves in a cluttered marketplace by
-offering a positive vision of a better way to do business." They have put
-together a governance model to help businesses maintain this high level of
-transparency, accountability, and performance. This governance model can be
-_baked_ into corporate bylaws and even state laws.  We are excited at the
-prospect of becoming a B Corp in the future, so stay tuned!
+called a <dfn id="def:b-corp-certification">B Corp Certification</dfn>, and is
+spearheading legislation in some states to create a related business entity
+called a benefit corporation. They say, "By voluntarily meeting higher
+standards of transparency, accountability, and performance, Certified B Corps
+are distinguishing themselves in a cluttered marketplace by offering a positive
+vision of a better way to do business." They have put together a governance
+model to help businesses maintain this high level of transparency,
+accountability, and performance. This governance model can be _baked_ into
+corporate bylaws and even state laws in some states. We are excited at the
+prospect of becoming a benefit corporation in the future, so stay tuned!
 
 You may argue, "But is research good for society?" If you're reading this post,
 I probably don't have to convince you of that.[^goodforsociety]
