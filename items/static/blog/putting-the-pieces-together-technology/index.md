@@ -299,7 +299,7 @@ When it comes down to it, making the transition to this new culture is really a
 user experience problem. Going back to Everett Rogers' <cite>Diffusion of
 Innovations</cite>, we need an advantage over the current system. If we can
 create a better research experience, then we have created an advantage. We will
-then have the potential to transform the culture!
+then have the potential and power to transform the culture.
 
 But we don't need to stop there! Once we have removed barriers to the
 production of knowledge, what is to stop us from using this knowledge freely to
