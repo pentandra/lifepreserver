@@ -176,12 +176,12 @@ reaching that goal? If our goal is to create [a new culture][culture] of
 scholarship, what would change the culture? In order to create a new culture,
 we need more than open notebook science or even a static depiction of a
 researcher's process. We need something that draws people _into_ the process
-(while, of course, preserving attribution). What about the questions and
-intentions of the researcher? This is the level at which I think we really need
-to be sharing. The researcher's decisions and and the process of how they came
-about should form the basis of research publication and collaboration. From
-this perspective, the entire research process could be viewed as a sequence of
-decisions.
+(while, of course, preserving the attribution, integrity, and openness of the
+contributions). What about the questions and intentions of the researcher? This
+is the level at which I think we really need to be sharing. The researcher's
+decisions and and the process of how they came about should form the basis of
+research publication and collaboration. From this perspective, the entire
+research process could be viewed as a sequence of decisions.
 
 Our process as a committee in defining the Scholarly Commons, aside from the
 workshops that we have held, has been mostly limited to seeking feedback when
