@@ -70,7 +70,7 @@
     </label>
     <label>
       <abbr title="Permalink in HyperText Markup Language">HTML</abbr>
-      <input readonly="readonly" type="text" class="code" value="<%= h %[<cite class="h-cite"><a class="u-url p-name" href="#{path_to(@item, global: true)}">#{@item[:title]}</a> (<abbr class="p-author h-card" title="#{@item[:author_name]}">#{author[:last_name]}</abbr> <time class="dt-published">#{date_for(@item)}</time>)</cite>] %>">
+      <input readonly="readonly" type="text" class="code" value="<%= h %[<span class="h-cite"><a class="u-url p-name" href="#{path_to(@item, global: true)}"><cite>#{@item[:title]}</cite></a> (<abbr class="p-author h-card" title="#{@item[:author_name]}">#{author[:last_name]}</abbr> <time class="dt-published">#{date_for(@item)}</time>)</span>] %>">
     </label>
   </div>
 </aside>
