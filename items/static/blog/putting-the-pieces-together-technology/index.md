@@ -222,20 +222,18 @@ this, we need a way to explicitly _share_ our practice. I discussed this idea
 and the need to share our process openly in the [previous section][the process
 is the product]. Taking this idea a step further, we need a way to explicitly
 share _patterns_ of practice. Fiona Murphy and Danny Kingsley explored some
-possibilities for doing this using [decision trees], or what I prefer to call
-<dfn id="def:research-guides">research guides</dfn>, during an unworkshop
-session. Research guides direct the focus onto concrete, actionable things we
-can do.
+possibilities for doing this using [decision trees] during an unworkshop
+session. Decision trees direct the focus onto concrete, actionable things we
+can do. Decision trees, in this context, describe patterns of practice (that is
+to say _behavior_) that can actually _guide_ the practice of research.
 
-Of course, the idea with these guides is not to mandate specific research
-practices, but to create a way to share our patterns of practice in a
-collaborative, peer-to-peer sort of way. If we can come up with a way to do
-this in a very general way, this approach has the potential to make a real
-difference in how we practice as researchers, and maybe even blur the line
-between researchers and practitioners. This vision is painted more beautifully
-in the foreword to one of my favorite books on typography. Here I quote,
-substituting the practice of research or scholarship for the practice of
-typography, since what is described could be applied to many practices:
+Of course, the idea with these decision trees is not to mandate specific
+research practices, but to create a way to practice and share our patterns of
+practice in a collaborative, peer-to-peer sort of way. This vision is painted
+beautifully in the foreword to one of my favorite books on typography. Here I
+quote, substituting the practice of research or scholarship for the practice of
+typography, since what is described could be applied to many types of
+practices:
 
 <figure class="bq grab">
 
@@ -325,6 +323,14 @@ provides some direction for the future:
 
 <figcaption>--- Atul Gawande, <cite>The Checklist Manifesto</cite>, [2009]{.oldstyle}, p. [185]{.oldstyle}</figcaption>
 </figure>
+
+Decision trees can also be used as an analytical tool to study and refine
+practices themselves. This is one of the most promising ideas to me, and is
+something that will connect research to practice in a way that simply does not
+exist right now. If we can approach this in a very general way, this idea has
+the potential to make a real difference in how we practice, not just as
+researchers but as practitioners in many other fields, and may even blur the
+line between researchers and practitioners.
 
 So building on my [earlier definition] of the Scholarly Commons, but from the
 perspective of technology:
