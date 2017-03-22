@@ -510,7 +510,7 @@ input.button {
   text-transform: lowercase;
 }
 
-.uri, .domainname {
+.uri, .domainname, .code {
   @extend code;
 }
 

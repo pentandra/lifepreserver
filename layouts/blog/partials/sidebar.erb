@@ -64,19 +64,13 @@
   </nav>
   <div class="section banner permalinks">
     <h3 class="big">Permalinks</h3>
-    <form action="<%= path_to(@item) %>">
-      <div>
-        <label>
-          URL:
-          <input readonly="readonly" class="bookmark u-uid u-url" type="url" value="<%= path_to(@item, global: true) %>">
-        </label>
-      </div>
-      <div>
-        <label>
-          HTML:
-          <input readonly="readonly" type="text" value="<%= h %[<cite class="h-cite"><a class="u-url p-name" href="#{path_to(@item, global: true)}">#{@item[:title]}</a> (<abbr class="p-author h-card" title="#{@item[:author_name]}">#{author[:last_name]}</abbr> <time class="dt-published">#{date_for(@item)}</time>)</cite>] %>">
-        </label>
-      </div>
-    </form>
+    <label>
+      <abbr title="Permalink as a Uniform Resource Locator">URL</abbr>:
+      <input readonly="readonly" class="bookmark u-uid u-url uri" type="url" value="<%= path_to(@item, global: true) %>">
+    </label>
+    <label>
+      <abbr title="Permalink in HyperText Markup Language">HTML</abbr>:
+      <input readonly="readonly" type="text" class="code" value="<%= h %[<cite class="h-cite"><a class="u-url p-name" href="#{path_to(@item, global: true)}">#{@item[:title]}</a> (<abbr class="p-author h-card" title="#{@item[:author_name]}">#{author[:last_name]}</abbr> <time class="dt-published">#{date_for(@item)}</time>)</cite>] %>">
+    </label>
   </div>
 </aside>
