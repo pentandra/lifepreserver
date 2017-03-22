@@ -223,9 +223,42 @@ and the need to share our process openly in the [previous section][the process
 is the product]. Taking this idea a step further, we need a way to explicitly
 share _patterns_ of practice. Fiona Murphy and Danny Kingsley explored some
 possibilities for doing this using [decision trees] during an unworkshop
-session. Decision trees direct the focus onto concrete, actionable things we
-can do. Decision trees, in this context, describe patterns of practice (that is
-to say _behavior_) that can actually _guide_ the practice of research.
+session. Decision trees, in this context, describe patterns of _behavior_---or
+practice---that can actually _guide_ the practice of research. Decision trees
+direct the focus onto concrete, actionable things we can do.
+
+But we don't need to stop there! Once we have removed barriers to the
+production of knowledge, what is to stop us from using this knowledge freely to
+improve the lives of everyone!? Continuing from the [previous
+quote](#systems-vs-components) which spoke about the focus on components that
+has led to a lack of systemic excellence in the practice of medicine, Gawande
+provides some direction for the future:
+
+<figure class="bq grab">
+
+> Nonetheless, in medicine that's exactly what we have done. We have a
+> thirty-billion-dollar-a-year National Institutes of Health, which has been a
+> remarkable powerhouse of medical discoveries. But we have no National
+> Institutes of Health Systems Innovation alongside it studying how best to
+> incorporate these discoveries into daily practice...
+>
+> The same could be said in numerous other fields. We don't study routine
+> failures in teaching, in law, in government programs, in the financial
+> industry, or elsewhere. We don't look for the patterns of our recurrent
+> mistakes or devise and refine potential solutions for them.
+>
+> But we could, and that is the ultimate point.
+
+<figcaption>--- Atul Gawande, <cite>The Checklist Manifesto</cite>, p. [185]{.oldstyle}</figcaption>
+</figure>
+
+Decision trees can also be used as an analytical tool to study and refine
+practices themselves. This is one of the most promising ideas to me, and is
+something that will connect research to practice in a way that simply does not
+exist right now. If we can approach this in a very general way, this idea has
+the potential to make a real difference in how we practice, not just as
+researchers but as practitioners in many other fields, and may even blur the
+line between researchers and practitioners.
 
 Of course, the idea with these decision trees is not to mandate specific
 research practices, but to create a way to practice and share our patterns of
@@ -284,44 +317,13 @@ interoperability between tools is actually an opportunity for something better.
 
 # A relative advantage
 
-When it comes down to it, making the transition to this new culture is really a
-user experience problem. Going back to Everett Rogers' <cite>Diffusion of
-Innovations</cite>, we need an advantage over the current system. If we can
-create a better research experience, then we have created an advantage. We will
-then have the potential and power to transform the culture.
-
-But we don't need to stop there! Once we have removed barriers to the
-production of knowledge, what is to stop us from using this knowledge freely to
-improve the lives of everyone!? Continuing from the [previous
-quote](#systems-vs-components) which spoke about the focus on components that
-has led to a lack of systemic excellence in the practice of medicine, Gawande
-provides some direction for the future:
-
-<figure class="bq grab">
-
-> Nonetheless, in medicine that's exactly what we have done. We have a
-> thirty-billion-dollar-a-year National Institutes of Health, which has been a
-> remarkable powerhouse of medical discoveries. But we have no National
-> Institutes of Health Systems Innovation alongside it studying how best to
-> incorporate these discoveries into daily practice...
->
-> The same could be said in numerous other fields. We don't study routine
-> failures in teaching, in law, in government programs, in the financial
-> industry, or elsewhere. We don't look for the patterns of our recurrent
-> mistakes or devise and refine potential solutions for them.
->
-> But we could, and that is the ultimate point.
-
-<figcaption>--- Atul Gawande, <cite>The Checklist Manifesto</cite>, p. [185]{.oldstyle}</figcaption>
-</figure>
-
-Decision trees can also be used as an analytical tool to study and refine
-practices themselves. This is one of the most promising ideas to me, and is
-something that will connect research to practice in a way that simply does not
-exist right now. If we can approach this in a very general way, this idea has
-the potential to make a real difference in how we practice, not just as
-researchers but as practitioners in many other fields, and may even blur the
-line between researchers and practitioners.
+When it comes down to it, making the transition to this new culture is, in
+large part, a user experience problem. Going back to Everett Rogers'
+<cite>Diffusion of Innovations</cite>, we need an advantage over the current
+system. If we can create a better research experience, one that is open and
+invites anyone that desires to come and play and bring what they have to offer,
+then we have created an advantage. We will then have the potential and power to
+transform the culture.
 
 So building on my [earlier definition] of the Scholarly Commons, but from the
 perspective of technology:
