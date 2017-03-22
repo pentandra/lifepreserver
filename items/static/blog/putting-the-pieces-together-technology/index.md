@@ -312,7 +312,7 @@ provides some direction for the future:
 >
 > But we could, and that is the ultimate point.
 
-<figcaption>--- Atul Gawande, <cite>The Checklist Manifesto</cite>, [2009]{.oldstyle}, p. [185]{.oldstyle}</figcaption>
+<figcaption>--- Atul Gawande, <cite>The Checklist Manifesto</cite>, p. [185]{.oldstyle}</figcaption>
 </figure>
 
 Decision trees can also be used as an analytical tool to study and refine
