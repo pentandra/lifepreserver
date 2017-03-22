@@ -118,7 +118,7 @@ Here are a few of the thoughts that emerged from the exercise:
 * Bad tools are used to perform good things (often requiring some workarounds).
 * People use what they use because it works.
 * It's way more useful to think of what we are trying to _achieve_ with a tool,
-  rather than judging a tool's intrinsic quality of compliance.
+  rather than judging a tool's intrinsic quality of compliance in isolation.
 * Tools can actively hinder open if the outputs are not machine-accessible.
 * Practice is more important than tools.
 
