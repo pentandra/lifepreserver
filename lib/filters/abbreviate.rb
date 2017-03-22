@@ -46,22 +46,22 @@ class Abbreviate < Nanoc::Filter
       next unless node.text?
 
       parent = node.parent
-      if parent.element?
+      next unless parent.element?
 
-        abbreviated_text = node.text.dup.gsub(/([[:alnum:]]+(?:[\-;][[[:upper:]][[:digit:]]]+)*)/) do |word|
-          if acronym_mappings.key?(word.to_sym) && parent.name != 'abbr'
-            if visited_acronyms.include?(word.to_sym)
-              "<abbr>#{word}</abbr>"
-            else
-              visited_acronyms << word.to_sym
-              %(<abbr title="#{acronym_mappings[word.to_sym]}">#{word}</abbr>)
-            end
+      abbreviated_text = node.text.dup.gsub(/([[:alnum:]]+(?:[\-;][[[:upper:]][[:digit:]]]+)*)/) do |word|
+        if acronym_mappings.key?(word.to_sym) && parent.name != 'abbr'
+          if visited_acronyms.include?(word.to_sym)
+            "<abbr>#{word}</abbr>"
           else
-            word
+            visited_acronyms << word.to_sym
+            %(<abbr title="#{acronym_mappings[word.to_sym]}">#{word}</abbr>)
           end
+        else
+          word
         end
-        node.replace(abbreviated_text)
       end
+
+      node.replace(abbreviated_text)
     end
 
     doc.to_s
