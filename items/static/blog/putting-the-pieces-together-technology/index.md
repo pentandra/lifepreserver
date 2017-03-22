@@ -276,20 +276,11 @@ collective intelligence in a common search for truth.
 As much as we've focused on principles and culture (and they are certainly the
 driving force in this effort!), we need an enabling infrastructure for
 commoning. We need to make the discovery process easier, and enlarge the doors
-and allow others to come and participate in this great endeavor! This is the
-answer to increasing the porosity of the boundaries between knowledge clubs and
-allowing others to play easier, more fluidly. Visitors can be guided to learn
-the ropes as quickly as possible. The existing lack of interoperability between
-tools is actually an opportunity for something better.
-
-Research zealots will still find ways to blaze trails where there are none, but
-why not plan for the city and prepare for the streets to make it easier for
-everyone to transition? We need streets for machines for navigate, so people
-don't have to. The tools that are part of the commons should be able to
-discover other tools and people and research with which to interact. Our tools
-and machines need to know how to common too! Why not? All this could transform
-research into a realtime dynamic system rather than the current static system
-against which we struggle.
+and allow others to come and participate in this great endeavor! This is part
+of the answer to increasing the porosity of the boundaries between knowledge
+clubs and allowing others to play easier, more fluidly. Visitors can be guided
+to learn the ropes as quickly as possible. The existing lack of
+interoperability between tools is actually an opportunity for something better.
 
 # A relative advantage
 
