@@ -1,10 +1,10 @@
 # Lifepreserver
 
-This is the website for [Pentandra Research Solutions](https://pentandra.com/).
+This is the website for [Pentandra Research Solutions][pentandra].
 
 ## Development
 
-The source for this project is built using [nanoc](http://nanoc.ws/).
+The source for this project is built using [nanoc].
 
 ### Before compiling…
 
@@ -78,6 +78,8 @@ including:
 
 Also, please see [the colophon][colophon] for more raving attributions!
 
+[pentandra]: <https://pentandra.com/>
+[nanoc]: <http://nanoc.ws/>
 [GitFlow]: <http://nvie.com/posts/a-successful-git-branching-model/>
 [Nu HTML]: <https://validator.github.io/validator/>
 [UglifyJS]: <https://validator.github.io/validator/>
