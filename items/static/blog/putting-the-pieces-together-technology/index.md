@@ -319,6 +319,10 @@ interoperability between tools is actually an opportunity for something better.
 
 # A relative advantage
 
+To summarize, in my view we need technology to help us with two things that are
+actually very complementary: we need a way to preserve and expose our own
+individual journeys of discovery, and guides to help us through the process.
+
 When it comes down to it, making the transition to this new culture is, in
 large part, a user experience problem. Going back to Everett Rogers'
 <cite>Diffusion of Innovations</cite>, we need an advantage over the current
