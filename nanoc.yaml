@@ -145,6 +145,8 @@ environments:
 
     require_git_tag: true # All production releases must be at a tag
 
+    output_dir: 'output_prod'
+
     google_analytics:
       code: UA-26002603-1
       site: pentandra.com
