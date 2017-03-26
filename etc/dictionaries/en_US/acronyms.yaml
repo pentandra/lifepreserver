@@ -38,9 +38,12 @@ HTML5: HyperText Markup Language (5th major revision)
 HTML: HyperText Markup Language
 HTTP: HyperText Transfer Protocol
 IBIS: Issue-Based Information System
+IEC: International Electrotechnical Commission
+IETF: Internet Engineering Task Force
 IP: Internet Protocol
 IRI: Internationalized Resource Identifier
 ISBN: International Standard Book Number
+ISO: International Organization for Standardization
 JSON-LD: JavaScript Object Notation for Linked Data
 JSON: JavaScript Object Notation
 LD: Linked Data
@@ -74,6 +77,7 @@ ReST: Representational State Transfer
 SAX: Simple API for XML
 SIOC: Semantically-Interlinked Online Communities
 SKOS: Simple Knowledge Organization System
+SMTP: Simple Mail Transfer Protocol
 SPAR: Semantic Publishing and Referencing Ontologies
 SPARC: Scholarly Publishing and Academic Resources Coalition
 SSE: Social and Solidarity Economy
