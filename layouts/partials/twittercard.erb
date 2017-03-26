@@ -1,7 +1,8 @@
-<% if @item.key?(:cover_image) %>
+<% if @item.key?(:cover_image_id) %>
   <%# Images should be at least 120x120 pixels, and < 1MB. This image will be cropped to square. %>
   <%# Images should be at least 280x150 pixels for the large image, and < 1MB. %>
-  <meta name="twitter:card" content="<%= @item[:cover_image][:wide] ? "summary_large_image" : "summary" %>" />
-  <meta name="twitter:image:alt" content="<%= h @item[:cover_image][:alt] %>" />
+  <% cover_image = @items[@item.fetch(:cover_image_id)] %>
+  <meta name="twitter:card" content="<%= cover_image[:wide] ? "summary_large_image" : "summary" %>" />
+  <meta name="twitter:image:alt" content="<%= h cover_image[:alt] %>" />
 <% end %>
 <meta name="twitter:site" content="<%= "@#{company[:twitter]}" %>" />
