@@ -26,8 +26,13 @@
     <% end %>
   </div>
 
-  <% items_with_tag(tag, published_blog_posts).each do |article| %>
-    <%= render('/blog/partials/summary.*', item: article) %>
-  <% end %>
+  <% tagged_items = items_with_tag(tag, published_blog_posts) %>
+  <div property="schema:hasPart" resource="pentandra-website:items_tagged_<%= tag[:tag].to_slug('_') %>" typeof="schema:ItemList">
+    <link property="schema:itemListOrder" resource="schema:itemListOrderDescending" />
+    <meta property="schema:numberOfItems" content="<%= h tagged_items.length %>" datatype="schema:Integer" />
+    <% tagged_items.each_with_index do |post, index| %>
+      <%= render('/blog/partials/summary.*', item: post, position: index + 1) %>
+    <% end %>
+  </div>
 
 <% end %>
