@@ -96,7 +96,7 @@ module LifePreserver
         @items.create(
           %(<%= render('/blog/tag.*', tag: @items['#{tag.identifier}']) %>),
           { title: "Tag: #{tag.fetch(:label, tag[:tag])}", kind: 'tag-page', is_hidden: true, description: "All posts having to do with the tag '#{tag[:tag]}'" },
-          "#{@config[:blog][:tags_url]}/#{tag[:tag].to_slug}/index.erb",
+          "#{@config[:static_root]}#{@config[:blog][:tags_url]}/#{tag[:tag].to_slug}/index.erb",
           binary: false,
         )
       end

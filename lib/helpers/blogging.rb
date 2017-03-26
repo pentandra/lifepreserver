@@ -116,7 +116,7 @@ module LifePreserver
         @items.create(
           %(<%= render('/blog/author.*', author: '#{author}') %>),
           { title: "Articles by #{author}", kind: 'author-page', is_hidden: true, description: "All posts written by #{author}" },
-          "#{@config[:blog][:authors_url]}/#{author.to_slug}/index.erb",
+          "#{@config[:static_root]}#{@config[:blog][:authors_url]}/#{author.to_slug}/index.erb",
           binary: false,
         )
       end
@@ -130,7 +130,7 @@ module LifePreserver
         @items.create(
           %(<%= render('/blog/archive.*', year: #{year}) %>),
           { title: "Articles from #{year}", kind: 'archive-page', is_hidden: true, description: "All posts written in #{year}" },
-          "#{@config[:blog][:archives_url]}/#{year}/index.erb",
+          "#{@config[:static_root]}#{@config[:blog][:archives_url]}/#{year}/index.erb",
           binary: false,
         )
       end
