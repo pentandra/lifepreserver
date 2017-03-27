@@ -28,24 +28,6 @@ compile %r{/static/company/benefit-reports/(\d{4})/index\.md}, rep: :pdf do |fis
   write File.dirname(item.identifier.to_s) + "/UT_Pentandra_report_#{fiscal_year}.pdf"
 end
 
-compile '/static/company/proposals/*/index\.md' do
-  filter :erb, @config[:erb]
-  filter :pandoc, args: [
-    { from: :markdown, to: :html5 },
-    { base_header_level: 2 },
-    :section_divs,
-    :number_sections,
-    :normalize,
-    :smart,
-  ]
-  filter :spellchecker, type: :html
-  filter :abbreviate, type: :html
-  layout '/proposals/default.*'
-  filter :rubypantsunicode
-  filter :cache_buster if @config[:production]
-  filter :html5small if @config[:production]
-end
-
 compile '/company/_', rep: :qrcode do
   filter :vcard, @config[:company]
   snapshot :vcard, path: "/static/company/pentandra#{@config[:production] ? '-' + @item.fetch(:mtime).strftime('%Y%j') : ''}.vcf"
