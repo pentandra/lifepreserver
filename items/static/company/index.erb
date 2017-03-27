@@ -279,9 +279,11 @@ priority: 0.6
 
         </p>
       </div>
-      <div class="aside">
-        <a class="section button" href="/company/benefit-reports/">Our <b>Benefit Reports</b></a>
-      </div>
+      <% unless benefit_reports.empty? %>
+        <div class="aside">
+          <a class="section button" href="/company/benefit-reports/">Our <b>Benefit Reports</b></a>
+        </div>
+      <% end %>
     </div>
     <section id="investing" class="section">
       <div class="bd">

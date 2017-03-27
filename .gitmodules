@@ -4,7 +4,7 @@
 [submodule "benefit-reports"]
   path = items/static/company/benefit-reports
   url = https://github.com/pentandra/benefit-reports.git
-  branch = fiscalyear/2015
+  branch = master
 [submodule "proposals"]
   path = items/static/solutions/proposals
   url = https://github.com/pentandra/proposals.git

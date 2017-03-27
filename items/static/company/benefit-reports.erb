@@ -23,7 +23,15 @@ description: >
 
 </div>
 <div class="group">
-  <% sorted_benefit_reports.each do |report| %>
-    <%= render('/benefit_reports/partials/summary.*', item: report) %>
+  <% if benefit_reports.empty? %>
+    <div class="noted section">
+      <div class="bd">
+        <h2 class="em bigger">Nothing here yet. Check back here later ;)</h2>
+      </div>
+    </div>
+  <% else %>
+    <% sorted_benefit_reports.each do |report| %>
+      <%= render('/benefit_reports/partials/summary.*', item: report) %>
+    <% end %>
   <% end %>
 </div>
