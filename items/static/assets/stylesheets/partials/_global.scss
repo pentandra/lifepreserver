@@ -349,7 +349,8 @@ input.button {
   line-height: $base-line-height * 2;
 
   .unpublished {
-    background-color: desaturate($pentandra-brown, 80%);
+    background-color: $pentandra-cyan;
+    color: $pentandra-white;
   }
 
   .draft {
@@ -359,6 +360,16 @@ input.button {
 
   .submitted {
     background-color: $pentandra-yellow;
+  }
+
+  .approved {
+    background-color: $pentandra-lime;
+    color: $pentandra-white;
+  }
+
+  .rejected {
+    background-color: $pentandra-mango;
+    color: $pentandra-white;
   }
 }
 
