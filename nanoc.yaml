@@ -41,7 +41,7 @@ data_sources:
     items_root: *meta_items_root
     directories:
       - 'etc/dictionaries'
-    supported_languages: [ 'en_US', 'en_GB', 'es_ES', 'fr_FR', 'nl_NL' ]
+    supported_languages: [ 'en_US', 'en_GB', 'es_ES', 'fr_FR', 'nl_NL', 'de_DE' ]
 
   - type: tags
     items_root: *meta_items_root

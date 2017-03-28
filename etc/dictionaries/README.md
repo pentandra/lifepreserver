@@ -48,6 +48,9 @@ Spanish ([es_ES](es_ES/))
 Dutch ([nl_NL](nl_NL/))
 : thanks to the [opentaal project](http://www.opentaal.org/)
 
+German ([de_DE](de_DE/))
+: thanks to [Björn Jacke](https://www.j3e.de/ispell/igerman98/)
+
 *[HTML]: HyperText Markup Language
 *[XHTML]: eXtensible HyperText Markup Language
 *[BCP47]: BCP 47: Tags for Identifying Languages, comprised of RFC5646 and RFC4647
