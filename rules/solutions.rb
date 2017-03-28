@@ -35,7 +35,8 @@ end
 
 # Specification documents
 
-passthrough '/static/solutions/specifications/**/*.html'
+compile '/static/solutions/specifications/**/*.html' do
+end
 
 layout '/specifications/vocabulary.*', :rdf_distiller, format: :html
 
@@ -45,21 +46,21 @@ end
 
 compile '/static/solutions/specifications/**/*.ttl', rep: :jsonld do
   filter :rdf_distiller, format: :jsonld
-  write item.identifier.without_ext + '.jsonld'
+  write item.identifier.without_ext.sub('/specifications', '') + '.jsonld'
 end
 
 compile '/static/solutions/specifications/**/*.ttl', rep: :rdfxml do
   filter :rdf_distiller, format: :rdfxml
-  write item.identifier.without_ext + '.rdf'
+  write item.identifier.without_ext.sub('/specifications', '') + '.rdf'
 end
 
 compile '/static/solutions/specifications/**/*.ttl', rep: :html do
   layout '/specifications/vocabulary.*'
   filter :cache_buster if @config[:production]
   filter :html5small if @config[:production]
-  write item.identifier.without_ext + '.html'
+  write item.identifier.without_ext.sub('/specifications', '') + '.html'
 end
 
-route %r{/static/solutions(/(proposals|specifications))/.*} do |solution_type, _|
+route %r{/static/solutions(/(proposals|projects|specifications))/.*} do |solution_type, _|
   item.identifier.to_s.sub(solution_type, '')
 end
