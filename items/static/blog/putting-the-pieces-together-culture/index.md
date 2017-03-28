@@ -424,6 +424,9 @@ and scientific knowledge.
 
 </div>
 
+Bear in mind that these are my own thoughts, and do not necessarily represent
+the thoughts of our group. See this for some more perspectives.
+
 As for the direction to go next with the principles, I think we need to create
 ways to preserve and continue these conversations. We need to find ways to
 broaden the conversations, and to invite more diverse groups to take part in

@@ -21,6 +21,25 @@ technologies, but about what needs to be enabled by technology to allow for
 scholarly commoning. It is a follow-on to a post that I wrote about the
 [_culture_ of the Scholarly Commons][culture].
 
+We're all coming at this from different perspectives, so it is no surprise that
+we are not always in complete agreement about what we would like the Scholarly
+Commons to be. There is a general consensus, I am pretty sure, that the
+Scholarly Commons is scholarly communication in a modern setting, one in which
+we are not constrained by the limitations of print publishing. But it goes
+deeper than that. I think the Scholarly Commons represents scholarship
+reinvented for our modern era, where we take what is the best of the past, the
+aspirations and thirst for understanding that have motivated mankind for
+thousands of years, and redesign the whole system from scratch to fit our
+current needs, using whatever existing pieces or technologies that fit this new
+way of working and then figuring out how to build out the rest.
+
+The problem is, we're researchers, and instead of just letting things happen
+the way most commons happen, we're trying to be informed by those that study
+commons, such as Ostrom, .... I've thought often how funny this is. One of the
+participants commented that the Scholarly Commons is underpracticed, and with
+this I would agree. Much of the time we're talking hypothetically, and we
+really don't know how all this will play out.
+
 <!--MORE-->
 
 # On gaps and systems
@@ -353,3 +372,4 @@ So how do we get there? We're working on a [proposal] for that very purpose.
 [research cases]: </blog/introducing-research-cases/#sec:research-cases>
 [happy place]: <https://www.force11.org/blog/future-happy-place> "The Future is a Happy Place, by Maryann Martone"
 [april's blog post]: <https://aprilhathcock.wordpress.com/2016/09/27/making-the-local-global-the-colonialism-of-scholarly-communication/>
+[proposal]: <<%# link_to_id('/static/solutions/scholarly-commoning/index.md') %>>
