@@ -11,9 +11,9 @@ include_rules 'rules/javascripts'
 include_rules 'rules/stylesheets'
 include_rules 'rules/other_assets'
 include_rules 'rules/meta_files'
-include_rules 'rules/specifications'
 include_rules 'rules/company'
 include_rules 'rules/blog'
+include_rules 'rules/solutions'
 
 include_rules 'rules/dynamic'
 

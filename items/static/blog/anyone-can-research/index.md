@@ -42,7 +42,7 @@ he made a breakthrough during biology class. He took his discovery to the <span
 class="oldstyle">2012</span> Intel International Science and Engineering Fair,
 and the rest, as they say, [has been history][Andraka TEDx].
 
-<figure id="fig:cancer-breakthrough" class="section" resource="#cancer_breakthrough" typeof="schema:VideoObject">
+<figure id="fig:cancer-breakthrough" resource="#cancer_breakthrough" typeof="schema:VideoObject">
   <meta property="schema:bitrate" content="500k" />
   <meta property="schema:videoFrameSize" content="854x480" />
   <meta property="schema:height" content="480" />
@@ -134,7 +134,7 @@ belief that *anyone can cook*. A talented rat named Remy is convinced that even
 he can be a great chef, so he finds a willing human to partner with---a garbage
 boy named Linguini---in becoming the cook of their collective dreams.
 
-<figure id="fig:remy_finds_linguini" class="section" resource="#remy_finds_linguini" typeof="schema:VideoObject">
+<figure id="fig:remy_finds_linguini" resource="#remy_finds_linguini" typeof="schema:VideoObject">
   <meta property="schema:bitrate" content="512k" />
   <meta property="schema:videoFrameSize" content="720x352" />
   <meta property="schema:height" content="352" />

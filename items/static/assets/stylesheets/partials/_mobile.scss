@@ -27,6 +27,8 @@ $less-outer-margin: 34px;
     margin: 0 0 $base-line-height;
   }
 
+  dd.bd { margin-top: 0; }
+  dt.status { line-height: $base-line-height; }
 
   //
   // 

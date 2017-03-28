@@ -11,7 +11,7 @@ Class.new(Nanoc::DataSource) do
   end
 
   def down
-    @voaf_metadata = nil
+    #@voaf_metadata = nil
   end
 
   def items

@@ -9,7 +9,6 @@ gem 'git'                # for version history and tagging info
 gem 'haml'
 gem 'html5small'         # for compact HTML
 gem 'image_optimizer'    # to compress images
-gem 'kramdown'           # for advanced markdown
 gem 'linkeddata'
 gem 'locale'
 gem 'nanoc'              # for compiling the site
@@ -17,9 +16,7 @@ gem 'nanoc-cachebuster', git: 'https://github.com/cdchapman/nanoc-cachebuster', 
 gem 'nokogiri'           # for parsing HTML
 gem 'pandoc-ruby'        # for benefit reports in ConTeXt
 gem 'rainpress'          # for compact CSS
-gem 'rdf-vocab',         git: 'https://github.com/ruby-rdf/rdf-vocab.git',      branch: 'develop' # for latest code (included in `linkeddata` gem)
 gem 'rest-client'        # for downloads of external resources
-gem 'rouge'
 gem 'rqrcode'            # for qrcodes
 gem 'rubypants-unicode'
 gem 'shortly'            # for URL shortening

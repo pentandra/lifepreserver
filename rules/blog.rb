@@ -2,6 +2,7 @@
 
 compile '/static/blog/{index,recent}.erb' do
   filter :erb, @config[:erb]
+  filter :abbreviate, type: :html
   layout '/blog/default.*'
   filter :rubypantsunicode
   filter :cache_buster if @config[:production]
@@ -19,6 +20,7 @@ end
 
 compile '/static/{tags,authors,archives}/**/*' do
   filter :erb, @config[:erb]
+  filter :abbreviate, type: :html
   filter :rubypantsunicode
   filter :cache_buster if @config[:production]
   filter :html5small if @config[:production]
@@ -37,6 +39,7 @@ compile '/static/blog/**/*.md' do
   ]
   filter :absolutify_paths, type: :html
   filter :spellchecker, type: :html
+  filter :abbreviate, type: :html
   layout '/blog/article.*'
   filter :rubypantsunicode
   filter :cache_buster if @config[:production]

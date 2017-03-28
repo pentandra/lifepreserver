@@ -4,11 +4,10 @@ description: A website for collaborative genealogical research.
 meta_description: >
   Geungle is an open-research ecosystem for professional and amateur
   genealogists with the goal of reconstructing the history of mankind.
+kind: project
+status: planning
 wip: true
-cover_image:
-  id: '/static/assets/images/geungle-logo.png'
-  alt: 'The logotype for Geungle: five rotating, multicolored, expanding paths that converge in the center in a star formation.'
-  wide: true
+cover_image_id: '/static/assets/images/geungle-logo.png'
 ---
 
 <div class="group">
@@ -134,7 +133,7 @@ cover_image:
 
     </div>
 
-    <% if @config[:geungle][:live] then %>
+    <% if @item[:status] == 'live' then %>
       <div class="bd section">
         <a href="http://geungle.com/" class="button">OK, I'm intrigued. <span class="newline">Take me to <b>Geungle</b></span></a>
       </div>
@@ -237,7 +236,7 @@ cover_image:
 
         <dt>Genealogy</dt>
         <dd>Our primary motivator in creating Geungle was to make it possible to produce and share quality, transparent, reproducible research that measures up to industry standards, such as the <a href="http://www.bcgcertification.org/resources/standard.html">genealogical proof standard</a> of the <a href="http://www.bcgcertification.org/aboutbcg/index.html">Board for Certification of Genealogists</a>.</dd>
-        <dd>On a more technical note, while we can't forget <a href="https://en.wikipedia.org/wiki/GEDCOM"><abbr title="Genealogical Data Communication">GEDCOM</abbr></a> (for importing those useful or less-than-useful sources known as family trees), we are looking forward to collaborating with the <a href="http://fhiso.org/"><abbr title="Family History Information Standards Organization">FHISO</abbr></a>.</dd>
+        <dd>On a more technical note, while we can't forget <a href="https://en.wikipedia.org/wiki/GEDCOM">GEDCOM</a> (for importing those useful or less-than-useful sources known as family trees), we are looking forward to collaborating with the <a href="http://fhiso.org/">FHISO</a>.</dd>
 
       </dl>
 
@@ -253,7 +252,7 @@ cover_image:
 
   </section>
 
-  <% if @config[:geungle][:live] then %>
+  <% if @item[:status] == 'live' then %>
     <div class="section bd">
       <div class="section">
         <a href="http://geungle.com/" class="button">Alright, I've heard enough! <span class="newline">Take me to <b>Geungle</b></span></a>

@@ -15,32 +15,38 @@ class Context2Pdf < Nanoc::Filter
       return
     end
 
-    odebug(content) if debug
-
     Dir.mktmpdir('nanoc-context') do |dir|
       File.open("#{dir}/document.tex", 'w+') do |f|
         f.write(content)
         f.flush
 
-        Open3.popen2e('context', '--nonstopmode', "--mode=#{mode}", "--trackers=#{trackers.join(',')}", f.path, chdir: dir) do |_stdin, output, thread|
-          status = thread.value
+        c = Nanoc::CLI::ANSIStringColorizer
+        cmd = ['context', '--nonstopmode', "--mode=#{mode}", "--trackers=#{trackers.join(',')}", f.path]
 
-          unless status.success?
-            puts output.read
-            raise "ConTeXt exited with a non-zero status code #{status.exitstatus} (filename: #{filename})"
+        Open3.popen3(*cmd, chdir: dir) do |_stdin, stdout, stderr, thread|
+
+          if debug
+            { stdout: stdout, stderr: stderr }.each do |key, stream|
+              Thread.new do
+                while (line = stream.gets)
+                  $stderr.print key == :stderr ? c.c(line, :yellow) : line
+                end
+              end
+            end
           end
 
-          odebug(output) if debug
+          thread.join # don't exit until the external process is done
+
+          exit_status = thread.value
+
+          unless exit_status.success?
+            puts output.read
+            raise "ConTeXt exited with a non-zero status code #{exit_status.exitstatus} (filename: #{filename})"
+          end
         end
 
         FileUtils.cp(f.path.sub('.tex', '.pdf'), output_filename)
       end
     end
-  end
-
-  private
-
-  def odebug(msg)
-    msg.each_line { |l| puts "\033[1;31mDEBUG:\033[0m #{l}" }
   end
 end

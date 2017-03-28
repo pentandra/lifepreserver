@@ -5,7 +5,7 @@ description: >
 kind: article
 author_name: Chris Chapman
 created_at: 2017-02-16
-updated_at: 2017-02-16
+updated_at: 2017-03-22
 published: false
 tags:
   - Scholarly Commons
@@ -20,6 +20,25 @@ Don't worry---this is not what you think. This post is not about specific
 technologies, but about what needs to be enabled by technology to allow for
 scholarly commoning. It is a follow-on to a post that I wrote about the
 [_culture_ of the Scholarly Commons][culture].
+
+We're all coming at this from different perspectives, so it is no surprise that
+we are not always in complete agreement about what we would like the Scholarly
+Commons to be. There is a general consensus, I am pretty sure, that the
+Scholarly Commons is scholarly communication in a modern setting, one in which
+we are not constrained by the limitations of print publishing. But it goes
+deeper than that. I think the Scholarly Commons represents scholarship
+reinvented for our modern era, where we take what is the best of the past, the
+aspirations and thirst for understanding that have motivated mankind for
+thousands of years, and redesign the whole system from scratch to fit our
+current needs, using whatever existing pieces or technologies that fit this new
+way of working and then figuring out how to build out the rest.
+
+The problem is, we're researchers, and instead of just letting things happen
+the way most commons happen, we're trying to be informed by those that study
+commons, such as Ostrom, .... I've thought often how funny this is. One of the
+participants commented that the Scholarly Commons is underpracticed, and with
+this I would agree. Much of the time we're talking hypothetically, and we
+really don't know how all this will play out.
 
 <!--MORE-->
 
@@ -57,8 +76,8 @@ technology is currently missing. We were not going to discover some preexisting
 solution at this workshop that has been waiting for us out there just by
 looking at all the components of the current system. We need something more.
 
-To explain what I mean by this _something more_, allow me to share a similar
-approach and resulting struggle in the practice of medicine:
+To explain what I mean by this, allow me to share a similar fallacy and
+resulting struggle in the practice of medicine:
 
 <figure id="systems-vs-components" class="bq grab">
 
@@ -91,10 +110,10 @@ a usable workflow. We need to approach this problem in a systemic way.
 
 # The exercise
 
-Putting those concerns aside for a moment, the compliance exercise was actually
-very enlightening in some unexpected ways. First, it was good to talk about
-current practices. So much of my time I spend thinking _if we could start over
-from scratch, what would the world look like?_ and I don't spend as much time
+Putting those concerns aside for a moment, the compliance exercise was very
+enlightening in some unexpected ways. First, it was good to talk about current
+practices. So much of my time I spend thinking _if we could start over from
+scratch, what would the world look like?_ and I don't spend as much time
 thinking about the difficulties of transition that others are facing as well as
 I need to. For example, one participant was threatened with dismissal from her
 doctoral program for wanting to publish a paper open access. Compared with Open
@@ -118,7 +137,7 @@ Here are a few of the thoughts that emerged from the exercise:
 * Bad tools are used to perform good things (often requiring some workarounds).
 * People use what they use because it works.
 * It's way more useful to think of what we are trying to _achieve_ with a tool,
-  rather than judging a tool's intrinsic quality of compliance.
+  rather than judging a tool's intrinsic quality of compliance in isolation.
 * Tools can actively hinder open if the outputs are not machine-accessible.
 * Practice is more important than tools.
 
@@ -131,8 +150,8 @@ the disintegration of the main track as so many of the participants left to
 join the Global South discussion. So many of the tools we were studying were
 designed for the research culture and infrastructure of the Global North and
 just [did not connect with many of the people][april's blog post] that we
-brought from around the world. Even though this exercise did not work out as
-planned, I think this was an important negative result to obtain.
+brought from around the world. Even so, I did not expect the participants to
+react this way, and I think this was an important negative result to obtain.
 
 # The process is the product
 
@@ -148,15 +167,16 @@ at the research process in a more _functional_ way, with the tools or other
 smaller parts of the process as [black boxes][black box] within a bigger
 process? It is the _process_ that needs to be open and replicable. _So why are
 we not publishing the research process, even across tools, as the fundamental
-scholarly output?_ I'm reminded of what the humanist Jeffrey Schnapp says in
-[his presentation] on knowledge design, that the process _is_ the product.
+scholarly output?_ If the process was the product, many of the problems we are
+facing right now in scholarly communications, relating to reproducibility,
+participation, and the integration of scholarship into society, would diminish
+or be eliminated completely. Researchers would also have something to show for
+all their thinking.
 
-If we don't make the process explicit, how will we be able to share, reproduce,
-or assess the differences? If we keep the process implicit, or leave it to post
-facto analysis alone to attempt to reveal it, we are missing the whole point,
-and we end up not very far from where we are now: publishing _about_ the
-research, instead of publishing _research_, and our ability to effectively
-common will be impeded. 
+If we keep the process implicit, or leave it to post facto analysis alone to
+attempt to reveal it, we end up not very far from where we are now: publishing
+_about_ the research, instead of publishing _research_, and our ability to
+effectively collaborate deeper into the research process will be impeded.
 
 <figure class="bq grab">
 
@@ -169,19 +189,26 @@ common will be impeded.
 </figure>
 
 But where do we draw the line between implicit and explicit? Is it enough to
-know which tools the researcher used and when? What about the questions and
-intentions of the researcher? This is the level at which I think we really need
-to be sharing. The researcher's decisions and and the process of how they came
-about should form the basis of research publication and collaboration. From
-this perspective, the entire research process could be viewed as a sequence of
-decisions.
+know which tools the researcher used and when? The tools are part of it, but
+not all. We need to ask ourselves, what is our goal and what is of value in
+reaching that goal? If our goal is to create [a new culture][culture] of
+scholarship, what would change the culture? In order to create a new culture,
+we need more than open notebook science or even a static depiction of a
+researcher's process. We need something that draws people _into_ the process
+(while, of course, preserving the attribution, integrity, and openness of the
+contributions). What about the questions and intentions of the researcher? This
+is the level at which I think we really need to be sharing. The researcher's
+decisions and and the process of how they came about should form the basis of
+research publication and collaboration. From this perspective, the entire
+research process could be viewed as a sequence of decisions.
 
 Our process as a committee in defining the Scholarly Commons, aside from the
 workshops that we have held, has been mostly limited to seeking feedback when
 we were nearing a finished product. Our design process has not been very open,
 not because we we haven't wanted it to be open, but because of the lack of
 tooling that works this way. We're doing the best we can with what we have, but
-we need ways to do this better! [The future _is_ a happy place!][happy place]
+we need ways to do this better! I believe that the future really _is_ a [happy
+place]!
 
 In order to create a truly open, collaborative, egalitarian culture of
 scholarship, we also need the questions, thoughts, and intentions that were in
@@ -197,16 +224,15 @@ modern setting, setting aside as many of the undesirable social, cultural, and
 technical limitations as possible.
 
 To explain what I mean by this, allow me to give an example of my experience
-working on [the logo] for the Scholarly Commons (which has been backburnered
-while we have tried to come to a better understanding of what it is that we are
-actually defining). As I went along, I made a conscious effort to explain each
-step, question, and resulting decision of the design process. This is the
-spirit and culture of the commons! Done this way, the process is open,
-transparent, and invites participation. It is easy for anyone to say, 'Did you
-think about this or that?' and contribute in context. It is easy for anyone to
-get involved in the design process, wherever and whenever the feel they have
-something to contribute. Obviously, doing this in a Google Doc is less than
-ideal, but I hope you can see what I am trying to show.
+designing [the logo] for the Scholarly Commons. As I went along, I made a
+conscious effort to explain each step, impression, question, and resulting
+decision of the design process. This is the spirit and culture of the commons!
+Done this way, the process is open, transparent, and invites participation. It
+is easy for anyone to ask, 'Did you think about this or that?' and contribute
+in context. It is easy for anyone to get involved in the design process,
+wherever and whenever the feel they have something to contribute. Obviously,
+doing this with a Google Doc is less than ideal, but I hope you can see what I
+am trying to show.
 
 # Shared Practice
 
@@ -215,20 +241,20 @@ this, we need a way to explicitly _share_ our practice. I discussed this idea
 and the need to share our process openly in the [previous section][the process
 is the product]. Taking this idea a step further, we need a way to explicitly
 share _patterns_ of practice. Fiona Murphy and Danny Kingsley explored some
-possibilities for doing this using [decision trees], or what I prefer to call
-<dfn id="def:research-guides">research guides</dfn>, during an unworkshop
-session. Research guides direct the focus onto concrete, actionable things we
+possibilities for doing this using [decision trees] during an unworkshop
+session. Unlike the logical flow of questions that portray a researcher's prior
+journey of discovery, decision trees, in this context, describe patterns of
+practice (or _behavior_) that can guide the practice of research _going
+forward_. Decision trees direct the focus onto concrete, actionable things we
 can do.
 
-Of course, the idea with these guides is not to mandate specific research
-practices, but to create a way to share our patterns of practice in a
-collaborative, peer-to-peer sort of way. If we can come up with a way to do
-this in a very general way, this approach has the potential to make a real
-difference in how we practice as researchers, and maybe even blur the line
-between researchers and practitioners. This vision is painted more beautifully
-in the foreword to one of my favorite books on typography. Here I quote,
-substituting the practice of research or scholarship for the practice of
-typography, since what is described could be applied to many practices:
+Of course, the idea with these decision trees is not to mandate specific
+research practices, but to create a way to practice and share our patterns of
+practice in a collaborative, peer-to-peer sort of way. This vision is painted
+beautifully in the foreword to one of my favorite books on typography. Here I
+quote, substituting the practice of research or scholarship for the practice of
+typography, since what is described could be applied to many types of practices
+and we're talking here about the practice of research:
 
 <figure class="bq grab">
 
@@ -268,31 +294,6 @@ processes. And as more of the researcher's process becomes open, machines will
 be free to find patterns among researchers' paths, giving way to some sort of
 collective intelligence in a common search for truth.
 
-As much as we've focused on principles and culture (and they are certainly the
-driving force in this effort!), we need an enabling infrastructure for
-commoning. We need to make the discovery process easier, and enlarge the doors
-and allow others to come and participate in this great endeavor! This is the
-answer to opening the pores of knowledge clubs and allowing others to play
-easier, more fluidly. Visitors can be guided to learn the ropes as quickly as
-possible. The existing lack of interoperability between tools is actually an
-opportunity for something better.
-
-Research zealots will still find ways to blaze trails where there are none, but
-why not plan for the city and prepare for the streets to make it easier for
-everyone to transition? We need streets for machines for navigate, so people
-don't have to. The tools that are part of the commons should be able to
-discover other tools and people and research to interact with, and this could
-transform research into a dynamic system rather than the current static system.
-Our tools and machines need to know how to common too!
-
-# A relative advantage
-
-When it comes down to it, making the transition to this new culture is really a
-user experience problem. Going back to Everett Rogers' <cite>Diffusion of
-Innovations</cite>, we need an advantage over the current system. If we can
-create a better research experience, then we have created an advantage. We will
-then have the potential to transform the culture!
-
 But we don't need to stop there! Once we have removed barriers to the
 production of knowledge, what is to stop us from using this knowledge freely to
 improve the lives of everyone!? Continuing from the [previous
@@ -315,16 +316,50 @@ provides some direction for the future:
 >
 > But we could, and that is the ultimate point.
 
-<figcaption>--- Atul Gawande, <cite>The Checklist Manifesto</cite>, [2009]{.oldstyle}, p. [185]{.oldstyle}</figcaption>
+<figcaption>--- Atul Gawande, <cite>The Checklist Manifesto</cite>, p. [185]{.oldstyle}</figcaption>
 </figure>
+
+Decision trees can also be used as an analytical tool to study and refine
+practices themselves. This is one of the most promising ideas to me, and is
+something that will connect research to practice in a way that simply does not
+exist right now. If we can approach this in a very general way, this idea has
+the potential to make a real difference in how we practice, not just as
+researchers but as practitioners in many other fields, and may even blur the
+line between researchers and practitioners.
+
+As much as we've focused on principles and culture (and they are certainly the
+driving force in this effort!), we need an enabling infrastructure for
+commoning. We need to make the discovery process easier, and enlarge the doors
+and allow others to come and participate in this great endeavor! This is part
+of the answer to increasing the porosity of the boundaries between knowledge
+clubs and allowing others to play easier, more fluidly. Visitors can be guided
+to learn the ropes as quickly as possible. The existing lack of
+interoperability between tools is actually an opportunity for something better.
+
+# A relative advantage
+
+To summarize, in my view we need technology to help us with two things that are
+actually very complementary: we need a way to preserve and expose our own
+individual journeys of discovery, and guides to help us through the process.
+
+When it comes down to it, making the transition to this new culture is, in
+large part, a user experience problem. Going back to Everett Rogers'
+<cite>Diffusion of Innovations</cite>, we need an advantage over the current
+system. If we can create a better research experience, one that is open and
+invites anyone that desires to come and play and bring what they have to offer,
+then we have created an advantage. We will then have the potential and power to
+transform the culture.
 
 So building on my [earlier definition] of the Scholarly Commons, but from the
 perspective of technology:
 
+<div class="big">
+
 <dfn id="def:technology-of-the-scholarly-commons">The Scholarly Commons</dfn>
-is an opportunity to transform the culture of scholarship by drastically
-improving our practices and widening our networks for the production and flow
-of knowledge.
+is an opportunity to improve the world by drastically improving our practices
+relating to the production and use of knowledge.
+
+</div>
 
 So how do we get there? We're working on a [proposal] for that very purpose.
 
@@ -336,5 +371,5 @@ So how do we get there? We're working on a [proposal] for that very purpose.
 [decision trees]: <decision_trees_proposal.jpg> "Click to see the original decision trees proposal"
 [research cases]: </blog/introducing-research-cases/#sec:research-cases>
 [happy place]: <https://www.force11.org/blog/future-happy-place> "The Future is a Happy Place, by Maryann Martone"
-[his presentation]: <https://www.youtube.com/watch?v=_oz_rKjLtW4>
 [april's blog post]: <https://aprilhathcock.wordpress.com/2016/09/27/making-the-local-global-the-colonialism-of-scholarly-communication/>
+[proposal]: <<%# link_to_id('/static/solutions/scholarly-commoning/index.md') %>>

@@ -135,7 +135,6 @@ ul {
   list-style-type: square;
 
   ul {
-    // Nested lists
     padding-left: 1.5em;
     margin-bottom: 0;
   }
@@ -174,7 +173,6 @@ ol {
   }
 
   ol {
-    // Nested lists
     padding-left: 1.5em;
     list-style-type: lower-alpha;
     margin-bottom: 0;
@@ -346,6 +344,35 @@ input.button {
   padding-left: 0.5em;
 }
 
+.status {
+
+  line-height: $base-line-height * 2;
+
+  .unpublished {
+    background-color: $pentandra-cyan;
+    color: $pentandra-white;
+  }
+
+  .draft {
+    background-color: $pentandra-violet;
+    color: $pentandra-white;
+  }
+
+  .submitted {
+    background-color: $pentandra-yellow;
+  }
+
+  .approved {
+    background-color: $pentandra-lime;
+    color: $pentandra-white;
+  }
+
+  .rejected {
+    background-color: $pentandra-mango;
+    color: $pentandra-white;
+  }
+}
+
 .tags {
   $tag-height: 20px; //$base-line-height * 0.8;
   $tag-space: 10px;
@@ -497,7 +524,7 @@ input.button {
   text-transform: lowercase;
 }
 
-.uri, .domainname {
+.uri, .domainname, .code {
   @extend code;
 }
 

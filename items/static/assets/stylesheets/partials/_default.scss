@@ -13,6 +13,8 @@ px      68    160    252    344    436    528    620    712    804    896    */
 
 $less-outer-margin: 48px;
 
+dd.bd { margin-top: $base-line-height; }
+
 //
 // Block structures
 
@@ -205,6 +207,16 @@ $theteam-height: $base-line-height * 12;
     background-position: 0 #{-$theteam-image-height};
   }
 }
+
+.proposal {
+  .header-section-number {
+    position: absolute;
+    @include grid(3);
+    margin-left: -(($less-column-width * 3) + ($less-gutter-width * 3));
+    text-align: right;
+  }
+}
+
 
 //
 // Background-image classes

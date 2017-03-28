@@ -51,8 +51,8 @@ changefreq: monthly
       <dfn title="zeugma"><a href="http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0057%3Aentry%3Dzeu%3Dgma">zeugma</a></dfn>
       literally means <em>bridge</em> or <em>bond</em>. The city reached its
       heights of affluence during the period of Roman rule, which commenced in
-      <span class="oldstyle">64</span> <abbr>AD</abbr>. In <abbr>AD</abbr>
-      <span class="oldstyle">256</span>, the city was conquered and destroyed by
+      <span class="oldstyle">64</span> AD. In AD <span class="oldstyle">256</span>,
+      the city was conquered and destroyed by
       <a href="http://en.wikipedia.org/wiki/Shapur_I">King Shapur I</a>
       of the Persian Empire.
       
@@ -172,7 +172,7 @@ changefreq: monthly
       in the form of embedded attributes in the markup of these web pages,
       using an <a href="https://en.wikipedia.org/wiki/Open_Web_Platform"
         title="Open Web Platform on Wikipedia">Open Web</a> standard called <a
-        href="https://www.w3.org/TR/rdfa-core/"><abbr title="Resource Description Framework through Attributes">RDFa</abbr></a>.
+        href="https://www.w3.org/TR/rdfa-core/">RDFa</a>.
 
     </p>
     <p>
@@ -257,7 +257,7 @@ changefreq: monthly
     </p>
     <ul>
 
-      <li><a href="http://mediaelementjs.com/"><code class="projectname">MediaElement.js</code></a>, an <abbr title="Hypertext Markup Language (5th major revision)">HTML5</abbr> video and audio player, with fallbacks for older browsers.</li>
+      <li><a href="http://mediaelementjs.com/"><code class="projectname">MediaElement.js</code></a>, an HTML5 video and audio player, with fallbacks for older browsers.</li>
 
       <li><a href="http://jquery.com/"><code class="projectname">jQuery</code></a>, a foundational JavaScript library, used for compatibility with older browsers.</li>
 
@@ -265,7 +265,7 @@ changefreq: monthly
 
       <li><a href="http://letteringjs.com/"><code class="projectname">Lettering.js</code></a>, a jQuery plugin that helps kern some of the misbehaving section titles.</li>
 
-      <li><a href="https://github.com/yatil/accessifyhtml5.js"><code class="projectname">AccessifyHTML5</code></a>, a simple polyfill that adds <a href="http://www.w3.org/TR/wai-aria/"><abbr title="Accessible Rich Internet Applications">ARIA</abbr></a> attributes to the web pages to make this site more accessible to persons with disabilities.</li>
+      <li><a href="https://github.com/yatil/accessifyhtml5.js"><code class="projectname">AccessifyHTML5</code></a>, a simple polyfill that adds <a href="http://www.w3.org/TR/wai-aria/">ARIA</a> attributes to the web pages to make this site more accessible to persons with disabilities.</li>
 
       <li><a href="https://github.com/NYTimes/Emphasis"><code class="projectname">Emphasis</code></a>, for dynamic deep-linking and highlighting, by the <a href="http://nyti.ms/MSVgdw" >New York Times</a>.</li>
 
@@ -301,9 +301,9 @@ changefreq: monthly
 
       <h3 class="flush">Buildtime Dependencies</h3>
 
-      <p class="foreign">
+      <p>
 
-        <%= authors_of(dependencies_for(:default)).to_sentence %>.
+        Many thanks to <span class="foreign"><%= authors_of(dependencies_for(:default)).to_sentence %></span> for the libraries and tools with which this site is compiled.
 
       </p>
 
@@ -320,9 +320,7 @@ changefreq: monthly
 
       <p>
 
-        There are certain tools that we used in preparing and developing this project.
-
-        <span class="foreign"><%= authors_of(dependencies_for(:development)).to_sentence %>.</span>
+        Also thank you to <span class="foreign"><%= authors_of(dependencies_for(:development)).to_sentence %></span> for the tools that have made the development process so much more bearable.
 
       </p>
 
@@ -360,6 +358,23 @@ changefreq: monthly
   <h2>The Server</h2>
 
   <div class="bd">
+
+    <p>
+
+      Dynamic aspects of this site are handled with <a
+        href="https://openresty.org/">OpenResty</a>, a dynamic web platform
+      based on <a href="http://nginx.org/">NGINX</a> and <a
+        href="http://luajit.org">LuaJIT</a>, giving us the flexibility to
+      handle certain things dynamically as this site grows in functionality.
+      Currently the server does not do anything special other than handling
+      standard HTTP requests for Web browsing and content negotiation for
+      linked data, but on the near horizon we are planning on supporting <a
+        href="http://webmention.net">WebMention</a> and <a
+        href="http://www.mementoweb.org">Memento</a> interactions. We'll fill
+      in this section over time as we have more ideas and functionality.
+
+    </p>
+
   </div>
   <div class="aside img section">
     <img data-no-retina src="/images/openresty.jpg" alt="OpenResty logo: a green, finely articulated bird formed in the cyclical shape of an event loop, the beak almost touching the tail." />

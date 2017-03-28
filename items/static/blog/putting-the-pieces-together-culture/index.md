@@ -416,9 +416,16 @@ you have realized how far I have failed. But if I was to sum up my thoughts
 into a very high-level statement of what the Scholarly Commons is, here's what
 I would say:
 
+<div class="big">
+
 <dfn id="def:the-scholarly-commons">The Scholarly Commons</dfn> is the
 opportunity to come together and create a new culture of commoning on scholarly
 and scientific knowledge.
+
+</div>
+
+Bear in mind that these are my own thoughts, and do not necessarily represent
+the thoughts of our group. See this for some more perspectives.
 
 As for the direction to go next with the principles, I think we need to create
 ways to preserve and continue these conversations. We need to find ways to

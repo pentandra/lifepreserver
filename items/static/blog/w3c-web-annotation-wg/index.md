@@ -110,7 +110,7 @@ collaborative, open research. They have the potential to revolutionize the way
 that research is published. In the near future I will be describing what this
 means for genealogy. Bring on the Web!
 
-<figure typeof="schema:ImageObject" property="schema:image" resource="#infographic" class="section">
+<figure typeof="schema:ImageObject" property="schema:image" resource="#infographic">
   <link property="schema:representativeOfPage" resource="schema:True" />
   <div class="embed-container wideScreen"><iframe property="schema:contentUrl" src="annotation-architecture.svg" class="simple static"></iframe></div>
   <figcaption property="schema:caption"><span property="dc:description schema:description"><b property="schema:name dc:title">Web Annotation Architecture</b>, an infographic from the <span property="schema:author dc:creator" resource="http://www.w3.org">W3C</span> about web annotations.</span> <a href="annotation-architecture.svg">Display fullscreen</a> for the best viewing experience. Licensed under a <a property="cc:license" href="http://creativecommons.org/publicdomain/zero/1.0/">CC0 license.</a> <span class="icon-cc"></span><span class="icon-cc-zero"></span></figcaption>
