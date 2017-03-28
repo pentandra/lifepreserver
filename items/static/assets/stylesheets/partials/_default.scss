@@ -208,6 +208,16 @@ $theteam-height: $base-line-height * 12;
   }
 }
 
+.proposal {
+  .header-section-number {
+    position: absolute;
+    @include grid(3);
+    margin-left: -(($less-column-width * 3) + ($less-gutter-width * 3));
+    text-align: right;
+  }
+}
+
+
 //
 // Background-image classes
 
