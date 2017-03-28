@@ -28,10 +28,10 @@ discord, no one did (that I am aware of). This is kind of unique in the
 standards world (yes, even at the W3C), but I think everyone just realized the
 importance of this work, and that collaboration was essential for success. I
 have learned a lot watching this process, and have been impressed by everyone
-in the [Open Annotation Collaboration][oac], especially Rob Sanderson, Paolo
-Ciccarese, and Herbert Van de Sompel for their vision and inclusive approach.
-Thanks to [Hypothes.is][h] for sponsoring the W3C workshop that helped to make
-all of this happen.
+in the [Open Annotation Collaboration][oac], especially Rob Sanderson, [Paolo
+Ciccarese]{lang=it}, and Herbert Van de Sompel for their vision and inclusive
+approach. Thanks to [Hypothes.is][h] for sponsoring the W3C workshop that
+helped to make all of this happen.
 
 Since the [creation of the World Wide Web][oai8], not all has been
 [peachy-keen][pk]. The original vision of the Web, according to Tim
