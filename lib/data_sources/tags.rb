@@ -10,8 +10,8 @@ Class.new(Nanoc::DataSource) do
   end
 
   def down
-    @tags = nil
-    @additional_tag_data = nil
+    #@tags = nil
+    #@additional_tag_data = nil
   end
 
   def items
