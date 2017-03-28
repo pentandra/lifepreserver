@@ -125,8 +125,8 @@ need more researchers like that.
     sçavans</cite>, were created primarily to provide a means of establishing
     [scientific priority](http://en.wikipedia.org/wiki/Scientific_priority),
     and not necessarily to disseminate research to the public. Many
-    researchers, including Sir Isaac Newton and Gottfried Wilhelm von Leibniz
-    actually enciphered their findings using anagrams so that the uninformed
-    could not read them! For more information see [Academic
+    researchers, including Sir Isaac Newton and [Gottfried Wilhelm von
+    Leibniz]{lang=de} actually enciphered their findings using anagrams so that
+    the uninformed could not read them! For more information see [Academic
     Publishing](http://en.wikipedia.org/wiki/Academic_publishing#History) on
     Wikipedia.
