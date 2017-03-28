@@ -111,7 +111,7 @@ is_hidden: true
 </section>
 
 <% content_for :javascripts do %>
-<script src="/js/search-data.js"></script>
+<script src="<%= path_to(@items['/static/assets/scripts/search-data.js.erb']) %>"></script>
 <script>
   $(function($, search) {
     var query = $.url("?q"),
