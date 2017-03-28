@@ -51,6 +51,9 @@ Dutch ([nl_NL](nl_NL/))
 German ([de_DE](de_DE/))
 : thanks to [Björn Jacke](https://www.j3e.de/ispell/igerman98/)
 
+Italian ([it_IT](it_IT/))
+: thanks to the [Linguistico project](http://sourceforge.net/projects/linguistico/)
+
 *[HTML]: HyperText Markup Language
 *[XHTML]: eXtensible HyperText Markup Language
 *[BCP47]: BCP 47: Tags for Identifying Languages, comprised of RFC5646 and RFC4647
