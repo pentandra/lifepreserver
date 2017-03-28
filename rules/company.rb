@@ -32,6 +32,6 @@ compile '/company/_', rep: :qrcode do
   filter :vcard, @config[:company]
   snapshot :vcard, path: "/static/company/pentandra#{@config[:production] ? '-' + @item.fetch(:mtime).strftime('%Y%j') : ''}.vcf"
   filter :qrcode, @config[:qrcode]
-  filter :image_optimizer
+  filter :image_optimizer if @config[:production]
   write "/static/images/pentandra-qrcode#{@config[:production] ? '-' + @item.fetch(:mtime).strftime('%Y%j') : ''}.png"
 end
