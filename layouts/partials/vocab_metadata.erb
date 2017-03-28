@@ -1,0 +1,10 @@
+<ul class="none">
+  <% vocabularies_for(group).each do |vocab| %>
+    <li>
+      <dl resource="<%= h vocab.fetch(:vocab_uri) %>" property="void:vocabulary" typeof="voaf:Vocabulary">
+        <dt><a property="vann:preferredNamespaceUri" content="<%= h vocab.fetch(:namespace_uri) %>" href="<%= h vocab.fetch(:vocab_uri) %>"><code class="prefix" property="vann:preferredNamespacePrefix"><%= h vocab.fetch(:prefix) %></code></a>: <span class="foreign" property="dc:title"><%= h vocab.fetch(:title) %></span></dt>
+        <dd class="foreign" property="dc:description"><%= h vocab.fetch(:description) %></dd>
+      </dl>
+    </li>
+  <% end %>
+</ul>

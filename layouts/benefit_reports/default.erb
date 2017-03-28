@@ -1,0 +1,17 @@
+<% render('/default.*') do %>
+  <article class="group" resource="#benefit-report" typeof="schema:Report" property="schema:mainEntity">
+    <header class="section">
+      <h1 property="dc:title schema:headline">Annual Benefit Corporation Report</h1>
+      <div class="group meta">
+        <div class="bd up">
+          <p property="schema:reportNumber">Fiscal Year <time property="schema:copyrightYear" datatype="xsd:gYear"><%= fiscal_year %></time></p>
+          <link property="rdfa:copy" resource="pentandra-website:license" />
+        </div>
+      </div>
+    </header>
+    <div class="bd">
+      <%= yield %>
+    </div>
+    <%= render('/benefit_reports/partials/sidebar.*') %>
+  </article>
+<% end %>

@@ -1,0 +1,115 @@
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and 
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2011 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      FontSite Inc.
+ * License URL: http://www.fontspring.com/fflicense/fontsite
+ *
+ *
+ */
+
+@font-face {
+    font-family: $base-font-family;
+    src: url('/fonts/FunctionPro-Book.eot');
+    src: url('/fonts/FunctionPro-Book.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/FunctionPro-Book.woff') format('woff'),
+         url('/fonts/FunctionPro-Book.ttf') format('truetype'),
+         url('/fonts/FunctionPro-Book.svg#FunctionProBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $base-font-family;
+    src: url('/fonts/FunctionPro-Medium-webfont.eot');
+    src: url('/fonts/FunctionPro-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/FunctionPro-Medium-webfont.woff') format('woff'),
+         url('/fonts/FunctionPro-Medium-webfont.ttf') format('truetype'),
+         url('/fonts/FunctionPro-Medium-webfont.svg#FunctionProBook') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $base-font-family;
+    src: url('/fonts/FunctionPro-BookOblique.eot');
+    src: url('/fonts/FunctionPro-BookOblique.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/FunctionPro-BookOblique.woff') format('woff'),
+         url('/fonts/FunctionPro-BookOblique.ttf') format('truetype'),
+         url('/fonts/FunctionPro-BookOblique.svg#FunctionProBookOblique') format('svg');
+    font-weight: normal;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: '$base-font-family';
+    src: url('/fonts/FunctionPro-MediumOblique-webfont.eot');
+    src: url('/fonts/FunctionPro-MediumOblique-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/FunctionPro-MediumOblique-webfont.woff') format('woff'),
+         url('/fonts/FunctionPro-MediumOblique-webfont.ttf') format('truetype'),
+         url('/fonts/FunctionPro-MediumOblique-webfont.svg#FunctionProMediumItalic') format('svg');
+    font-weight: bold;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: $special-font-family;
+    src: url('/fonts/FunctionCaps-Book-webfont.eot');
+    src: url('/fonts/FunctionCaps-Book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/FunctionCaps-Book-webfont.woff') format('woff'),
+         url('/fonts/FunctionCaps-Book-webfont.ttf') format('truetype'),
+         url('/fonts/FunctionCaps-Book-webfont.svg#FunctionCapsBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $special-font-family;
+    src: url('/fonts/FunctionCaps-Medium-webfont.eot');
+    src: url('/fonts/FunctionCaps-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/FunctionCaps-Medium-webfont.woff') format('woff'),
+         url('/fonts/FunctionCaps-Medium-webfont.ttf') format('truetype'),
+         url('/fonts/FunctionCaps-Medium-webfont.svg#FunctionCapsMediumRegular') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body, button, input, select, textarea { font-family: $base-font-family, sans-serif; }
+
+#{headings()} { font-weight: normal; } // We will use fonts to show boldess
+
+abbr, .abbr, .roman { font-family: $special-font-family; letter-spacing: 0.05em; text-transform: lowercase; }
+
+.normal {
+  font-style: normal;
+}
+
+em, .em, .intro, .sidenote {
+  font-style: oblique;
+
+  em, .em, cite {
+    font-style: normal;
+  }
+}
+
+.special, .oldstyle {
+  font-family: $special-font-family, serif;
+}
+
+i, cite, dfn { font-style: oblique; }
+
+dt, dt dfn { font-weight: bold; font-style: normal; }

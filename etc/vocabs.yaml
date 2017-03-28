@@ -1,0 +1,123 @@
+---
+article:
+  uri: "http://ogp.me/ns/article#"
+  source: "etc/vocabs/article.ttl"
+  strict: false
+
+adms:
+  uri: "http://www.w3.org/ns/adms#"
+
+biro:
+  uri: "http://purl.org/spar/biro/"
+  source: "http://www.sparontologies.net/ontologies/biro/source.ttl"
+
+c4o:
+  uri: "http://purl.org/spar/c4o/"
+  source: "http://www.sparontologies.net/ontologies/c4o/source.ttl"
+
+co:
+  uri: "http://purl.org/co/"
+  source: "etc/vocabs/collections.owl"
+
+ctag:
+  uri: "http://commontag.org/ns#"
+
+dbo:
+  uri: "http://dbpedia.org/ontology/"
+  source: "http://mappings.dbpedia.org/server/ontology/dbpedia.owl"
+
+dbr:
+  uri: "http://dbpedia.org/resource/"
+  strict: false
+
+deo:
+  uri: "http://purl.org/spar/deo/"
+  source: "http://www.sparontologies.net/ontologies/deo/source.ttl"
+
+deps:
+  uri: "http://ontologi.es/doap-deps#"
+
+doco:
+  uri: "http://purl.org/spar/doco/"
+  source: "http://www.sparontologies.net/ontologies/doco/source.ttl"
+
+essglobal:
+  uri: "http://purl.org/essglobal/vocab/"
+  source: "http://www.maltas.org/ess/vocabV1.2/essglobal-vocab.rdf"
+
+"essglobal_activities":
+  uri: "http://purl.org/essglobal/standard/activities/"
+  source: "http://www.maltas.org/ess/standard/activities.skos"
+  strict: false
+  class_name: "ESSGLOBALActivities"
+
+"essglobal_legalform":
+  uri: "http://purl.org/essglobal/standard/legal-form/"
+  source: "http://www.maltas.org/ess/standard/legal-form.skos"
+  strict: false
+  class_name: "ESSGLOBALLegalform"
+
+"essglobal_qualifiers":
+  uri: "http://purl.org/essglobal/standard/qualifiers/"
+  source: "http://www.maltas.org/ess/standard/qualifiers.skos"
+  strict: false
+  class_name: "ESSGLOBALQualifiers"
+
+"essglobal_typeoflabour":
+  uri: "http://purl.org/essglobal/standard/type-of-labour/"
+  source: "http://www.maltas.org/ess/standard/type-of-labour.skos"
+  strict: false
+  class_name: "ESSGLOBALTypeoflabour"
+
+fabio:
+  uri: "http://purl.org/spar/fabio/"
+  source: "http://www.sparontologies.net/ontologies/fabio/source.ttl"
+
+fea:
+  uri: "http://vocab.data.gov/def/fea#"
+  source: "etc/vocabs/fea.ttl"
+
+mp:
+  uri: "http://purl.org/mp/"
+  source: "https://raw.githubusercontent.com/timclark001/mp/master/mp.owl"
+
+profile:
+  uri: "http://ogp.me/ns/profile#"
+  source: "etc/vocabs/profile.ttl"
+  strict: false
+
+rov:
+  uri: "http://www.w3.org/ns/regorg#"
+
+sioct:
+  uri: "http://rdfs.org/sioc/types#"
+
+vann:
+  uri: "http://purl.org/vocab/vann/"
+  source: "etc/vocabs/vann.ttl"
+
+voaf:
+  uri: "http://purl.org/vocommons/voaf#"
+  source: "http://lov.okfn.org/vocommons/voaf/v2.3/voaf_v2.3.rdf"
+
+yago:
+  uri: "http://dbpedia.org/class/yago/"
+  strict: false
+
+pentandra:
+  uri: <%= "#{@config[:base_url]}#{@config[:company][:page_url]}#" %>
+  source: <%= "#{config[:output_dir]}#{@config[:company][:page_url]}/index.html" %>
+  strict: false
+
+"pentandra_blog":
+  uri: <%= "#{@config[:base_url]}#{@config[:blog][:url]}#" %>
+  source: <%= "#{@config[:output_dir]}#{@config[:blog][:url]}/index.html" %>
+  strict: false
+  class_name: PENTANDRABlog
+
+"pentandra_website":
+  uri: <%= "#{@config[:base_url]}#" %>
+  source: <%= "#{@config[:output_dir]}/index.html" %>
+  strict: false
+  class_name: PENTANDRAWebsite
+...

@@ -1,0 +1,22 @@
+--- 
+title: Recent Thoughts
+has_media: true
+is_hidden: true
+---
+<div class="group">
+
+  <h1>Recent Thoughts</h1>
+
+  <% published_blog_posts[0, 10].each do |post| %>
+    <%= render('/blog/partials/excerpt.*', item: post) %>
+  <% end %>
+
+</div>
+
+<% content_for :javascripts do %>
+<script>
+$(document).ready(function() {
+  $('video').mediaelementplayer();
+});
+</script>
+<% end %>

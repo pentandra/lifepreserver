@@ -1,3 +1,11 @@
-[submodule "content/spec"]
-	path = content/spec
-	url = git@github.com:pentandra/spec.git
+[submodule "specifications"]
+  path = items/static/solutions/specifications
+  url = https://github.com/pentandra/specifications.git
+[submodule "benefit-reports"]
+  path = items/static/company/benefit-reports
+  url = https://github.com/pentandra/benefit-reports.git
+  branch = master
+[submodule "proposals"]
+  path = items/static/solutions/proposals
+  url = https://github.com/pentandra/proposals.git
+  branch = develop

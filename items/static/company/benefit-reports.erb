@@ -1,0 +1,37 @@
+---
+title: Benefit reports
+description: >
+  Benefit reports for Pentandra Research Solutions, Inc.
+---
+<div class="group">
+
+  <h1>Benefit Reports</h1>
+
+  <div class="bd">
+
+    <p class="big">
+
+      Benefit corporations are required to prepare annual benefit reports,
+      outlining our overall social and environmental performance, so the
+      public, as well as directors and shareholders, can be better informed.
+
+    </p>
+
+    <p class="bigger">So here you go:</p>
+
+  </div>
+
+</div>
+<div class="group">
+  <% if benefit_reports.empty? %>
+    <div class="noted section">
+      <div class="bd">
+        <h2 class="em bigger">Nothing here yet. Check back here later ;)</h2>
+      </div>
+    </div>
+  <% else %>
+    <% sorted_benefit_reports.each do |report| %>
+      <%= render('/benefit_reports/partials/summary.*', item: report) %>
+    <% end %>
+  <% end %>
+</div>

@@ -1,0 +1,10 @@
+<nav class="breadcrumbs small" property="schema:breadcrumb" typeof="schema:BreadcrumbList"> 
+  <ol class="menu rarrow">
+    <% breadcrumbs_trail.each_with_index do |breadcrumb, index| %>
+      <li property="schema:itemListElement" typeof="schema:ListItem">
+        <a property="schema:item" typeof="schema:WebPage" href="<%= breadcrumb.path %>"><span property="schema:name"><%= h breadcrumb[:title] %></span></a>
+        <meta property="schema:position" content="<%= "#{index + 1}" %>"/>
+      </li>
+    <% end %>
+  </ol>
+</nav>

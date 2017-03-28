@@ -1,0 +1,17 @@
+<% render('/base.*') do %>
+
+  <%= render('/partials/header.*') %>
+
+  <main id="article-content" prefix="<%= prefix_mappings_for(:instances) %>">
+    <div class="content">
+
+      <%= render('/partials/wip.*') if @item[:wip] %>
+
+      <%= yield %>
+
+    </div>
+  </main>
+
+  <%= render('/partials/footer.*') %>
+
+<% end %>

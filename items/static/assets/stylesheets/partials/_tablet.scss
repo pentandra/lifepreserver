@@ -1,0 +1,169 @@
+/* Tablet Layout: 768px.
+ * Gutters: 24px.
+ * Outer margins: 28px.
+ * Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+$less-outer-margin: 28px;
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  // 
+  // HTML elements
+
+  //
+  //
+
+  .content {
+    @include grid(8); 
+    padding: 0 $less-outer-margin;
+  } 
+
+  .ext {
+    margin-left: -$less-outer-margin;
+    margin-right: -$less-outer-margin;
+    padding-left: $less-outer-margin;
+    padding-right: $less-outer-margin;
+  }
+
+  .bd {
+    @include grid(5);
+
+    .aside {
+      width: auto;
+      float: none;
+      margin-left: 0;
+
+      &.banner {
+        margin-right: -$less-outer-margin;
+        padding-right: $less-outer-margin;
+      }
+    }
+
+    .inner {
+      width: 100%;
+      padding-right: $less-gutter-width / 2;
+      @include box-sizing(border-box);
+    }
+  }
+
+  .menu3 {
+    ul li {
+      width: 222px;
+      margin-right: 18px;
+    }
+  }
+
+  .aside {
+
+    .banner {
+      margin-left: -$less-outer-margin;
+      padding-left: $less-outer-margin;
+    }
+  }
+
+  .normal.flush {
+    line-height: $base-line-height;
+  }
+
+  //
+  // Grid classes
+
+  .bl {
+    @include grid(6);
+    float: none;
+    margin: 0 auto;
+
+    &.ock {
+      margin: 0 auto;
+    }
+
+    .bd {
+      @include grid(4);
+    }
+
+  }
+
+  .static {
+    max-width: 436px;
+  }
+
+
+  //
+  // Layout classes
+  
+  $theteam-height: $base-line-height * 9;
+  $theteam-image-height: 229px;
+
+  .theteam {
+    @include grid(4);
+    height: $theteam-image-height;
+    margin-top: $theteam-height - $theteam-image-height;
+    background-size: 100%;
+
+    &:hover {
+      background-position: 0 #{-$theteam-image-height};
+    }
+  }
+    
+  .montage .bd {
+    @include grid(4);
+  }
+
+  //
+  // Background-image classes
+  .geungle-logo {
+    @include grid(5);
+    height: 130px;
+    background-size: 100%;
+  }
+
+  .process {
+    margin-top: 0;
+  }
+
+  .question {
+
+    &:before {
+      left: 140px;
+    }
+  }
+
+  .zeugma {
+    @include grid(5);
+    background-size: 100%;
+  }
+
+  // Hide icon labels
+  .icons .normal {
+    display: none;
+  }
+    
+  .contentinfo {
+
+    .contact {
+      @include grid(2);
+    }
+
+    .actions {
+      margin-bottom: 8px + $base-line-height;
+    }
+
+    .bd .aside {
+      width: auto;
+
+      .section, .group {
+        float: left;
+        margin: 0;
+      }
+
+      .menu {
+        margin-left: $less-gutter-width;
+        @include grid(3);
+      }
+    }
+  }
+
+}

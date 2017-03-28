@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix og: <http://ogp.me/ns#> .
+@prefix ogc: <http://ogp.me/ns/class#> .
+@prefix article: <http://ogp.me/ns/article#> .
+
+article:published_time a rdf:Property ;
+  rdfs:label "published time"@en-US ;
+  rdfs:comment "When the article was first published."@en-US ;
+  rdfs:isDefinedBy article: ;
+  rdfs:range ogc:date_time_str .
+article:modified_time a rdf:Property ;
+  rdfs:label "modified time"@en-US ;
+  rdfs:comment "When the article was last changed."@en-US ;
+  rdfs:isDefinedBy article: ;
+  rdfs:range ogc:date_time_str .
+article:expiration_time a rdf:Property ;
+  rdfs:label "expiration time"@en-US ;
+  rdfs:comment "When the article is out of date after."@en-US ;
+  rdfs:isDefinedBy article: ;
+  rdfs:range ogc:date_time_str .
+article:author a rdf:Property ;
+  rdfs:label "author"@en-US ;
+  rdfs:comment "Writers of the article."@en-US ;
+  rdfs:isDefinedBy article: ;
+  rdfs:range ogc:url .
+article:section a rdf:Property ;
+  rdfs:label "section"@en-US ;
+  rdfs:comment "A high-level section name. E.g. Technology"@en-US ;
+  rdfs:isDefinedBy article: ;
+  rdfs:range ogc:string .
+article:tag a rdf:Property ;
+  rdfs:label "tag"@en-US ;
+  rdfs:comment "Tag words associated with this article."@en-US ;
+  rdfs:isDefinedBy article: ;
+  rdfs:range ogc:string .

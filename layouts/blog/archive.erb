@@ -1,0 +1,13 @@
+<% render('/blog/default.*') do %>
+  <h1>Articles from <%= year.to_s %></h1>
+
+  <% year_posts = posts_by_year(published_blog_posts, year) %>
+  <div property="schema:hasPart" resource="pentandra-blog:articles_by_<%= year.to_s %>" typeof="schema:ItemList">
+    <link property="schema:itemListOrder" resource="schema:itemListOrderDescending" />
+    <meta property="schema:numberOfItems" content="<%= h year_posts.length %>" datatype="schema:Integer" />
+    <% year_posts.sort_by { |post| post[:created_at] }.reverse.each_with_index do |post, index| %>
+      <%= render('/blog/partials/summary.*', item: post, position: index + 1) %>
+    <% end %>
+  </div>
+
+<% end %>

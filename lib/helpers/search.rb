@@ -1,10 +1,12 @@
 require 'json'
+require 'nokogiri'
+require_relative 'link_to'
 
 module LifePreserver
-
   module Search
+    include LinkTo
 
-    STOP_WORDS = %w{
+    STOP_WORDS ||= %w(
       a about above across after afterwards again against all almost
       alone along already also although always am among amongst amoungst
       amount an and another any anyhow anyone anything anyway anywhere
@@ -35,51 +37,48 @@ module LifePreserver
       whereby wherein whereupon wherever whether which while whither who
       whoever whole whom whose why will with within without would yet you
       your yours yourself yourselves
-    } unless defined?(STOP_WORDS)
+    ).freeze
+
+    private_constant :STOP_WORDS
 
     def search_terms_for(item)
-      if item.identifier !~ /^\/(js|css|404)/
-        content = item.reps[:default].compiled_content
-        doc = Nokogiri::HTML(content)
-        full_text = doc.css("p, h1, h2, h3, h4, h5, h6").map{|el| el.inner_text}.join(" ")
-        "#{item[:title]} #{item[:meta_description]} #{full_text}".gsub(/[\W\s_]+/m,' ').downcase.split(/\s+/).uniq - STOP_WORDS
-      else
-        []
-      end
+      content = item.compiled_content
+      doc = Nokogiri::HTML(content)
+      full_text = doc.css('p, h1, h2, h3, h4, h5, h6').map(&:inner_text).join(' ')
+      "#{item[:title]} #{item[:meta_description] || item[:description]} #{full_text}".gsub(/[\W_]+/m, ' ').downcase.split(/\s+/).uniq - STOP_WORDS
     end
 
     def search_index
-      id = 0;
+      id = 0
       idx = {
-        "approximate" => {},
-        "terms" => {},
-        "items" => {}
+        'approximate' => {},
+        'terms' => {},
+        'items' => {},
       }
-      items = @items.reject { |i| i[:is_hidden] || i[:is_hidden_from_human_search] || i.binary? }
-      items.each do |item|
+
+      @items.reject { |i| i.unwrap.attributes[:is_hidden] || i.unwrap.attributes[:is_hidden_from_human_search] || i.binary? }.each do |item|
         search_terms_for(item).each do |term|
-          idx["terms"][term] ||= []
-          idx["terms"][term] << id
+          idx['terms'][term] ||= []
+          idx['terms'][term] << id
           (1...term.length).each do |c|
             subterm = term[0...c]
             # puts "Indexing: #{subterm}"
-            idx["approximate"][subterm] ||= []
-            unless idx["approximate"][subterm].include?(id)
-              idx["approximate"][subterm] << id
+            idx['approximate'][subterm] ||= []
+            unless idx['approximate'][subterm].include?(id)
+              idx['approximate'][subterm] << id
             end
           end
           # puts "Indexed: #{term}"
         end
-        idx["items"][id] = {
-          "url" => "#{item.path}",
-          "title" => item[:title],
-          "desc" => item[:description]
+        idx['items'][id] = {
+          'url' => path_to(item),
+          'title' => item[:title],
+          'desc' => item[:description],
         }
         id += 1
       end
+
       idx
     end
-
   end
-
 end

@@ -1,0 +1,27 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Benefit Report Template for Pentandra Research Solutions, Inc.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\startproduct benefit-report
+
+<%= render('/benefit_reports/environments/default-env.*') %>
+
+\startfrontmatter
+
+<%= render('/benefit_reports/partials/st-titlepage.*') %>
+<%= render('/benefit_reports/partials/st-contents.*') %>
+
+\stopfrontmatter
+
+\startbodymatter
+
+<%= yield %>
+
+\stopbodymatter
+
+%\startappendices
+  %\completelistofabbreviations
+  %\completepublications[criterium=all]
+%\stopappendices
+
+\stopproduct

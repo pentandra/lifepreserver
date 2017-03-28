@@ -1,0 +1,185 @@
+---
+title: Specifications
+description: Specifications, mostly ontologies, that we are working on, at various stages of development.
+---
+
+<div class="group">
+
+  <h1>Specifications</h1>
+
+  <div class="bd big">
+    
+    <p>
+
+      We're working on technical specifications that enrich our abilities to
+      share knowledge, opinion, and personal experience in our collective quest
+      for greater light and understanding. Achieving <a
+        href="/company/#sec:mission">our mission</a> calls for collaborating on
+      these open technical standards.
+
+    </p>
+
+    <p class="bigger">Come join us! We need you.</p>
+    
+  </div>
+</div>
+<section class="noted section">
+
+  <h2>Machine Vocabularies</h2>
+
+  <div class="bd">
+
+    <p>
+
+      Specifications built using open machine vocabularies bring rich
+      possibilities in our ability to communicate knowledge and understanding.
+      These vocabularies are designed for web applications and open research
+      systems and platforms. We use and refine them in the software we are
+      creating. We hope they will prove useful to others as well.
+
+    <p>
+
+  </div>
+  <section id="sec:knowledge-design" class="section">
+
+    <div class="bd">
+
+      <h3 class="flush">Knowledge Design</h3>
+
+      <p>
+        
+        A term coined by <a
+          href="https://via.hypothes.is/http://jeffreyschnapp.com/wp-content/uploads/2011/06/HH_lectures_Schnapp_01.pdf">Jeffrey
+          Schnapp</a>, <dfn id="def:knowledge-design">knowledge design</dfn> is
+        the future of scholarship, where the process <em>is</em> the product.
+
+      </p>
+
+      <dl>
+
+        <%#<dt><dfn id="def:design-cases">Design Cases</dfn></dt>%>
+        <%#<dd>An evolution of <a href="https://en.wikipedia.org/wiki/Issue-Based_Information_System">IBIS</a>, design cases partition a design process into smaller pieces.</dd>%>
+
+        <dt><dfn id="def:research-cases">Research Cases</dfn></dt>
+        <dd>Research Cases are a way to partition research conceptually into cases, each case organized around a question (or some other sort of cognitive discordance). They are designed for iterative, real-time research publication, and encourage open collaboration and discourse throughout the research process.</dd>
+        <dd><%= link_to_id("/static/solutions/specifications/research-cases/index.*") %></dd>
+        <dd><a href="https://researchcases.org" class="domainname">researchcases.org</a></dd>
+
+      </dl>
+
+    </div>
+
+  </section>
+  <section id="sec:dmi" class="section">
+
+    <div class="bd">
+
+      <h3 class="flush">Dynamic Machine Interfaces</h3>
+
+      <p>
+
+        We see the future of the Web made of clients that are more intelligent
+        than the servers with which they interact. We need ways for these
+        intelligent clients to uniformly interact, and we call these ways <dfn
+          id="def:dmi">dynamic machine interfaces</dfn>, to differentiate them
+        from traditional <i>application programming interfaces</i>. <abbr
+          title="Dynamic Machine Interface">DMI</abbr>s use ontologies that are
+        designed to function in the <a
+          href="https://en.wikipedia.org/wiki/Representational_state_transfer">REST</a>
+        architectural style for machine interfaces and interactions.
+
+      </p>
+      <p>
+
+        If you want to catch the vision of some of the possibilities, check out
+        the thesis <a href="https://ruben.verborgh.org/phd/"><cite>Serendipitous Web Applications through Semantic Hypermedia</cite></a> by <span lang="nl">Ruben Verborgh</span>.
+
+      </p>
+      <dl>
+
+        <dt>Hydra</dt>
+        <dd><a href="http://www.hydra-cg.com/">Hydra Community Group</a></dd>
+
+      </dl>
+
+    </div>
+
+  </section>
+  <%#<section id="sec:business" class="section">%>
+
+    <%#<div class="bd">%>
+
+      <%#<h3 class="flush">Business</h3>%>
+
+      <%#<p>Vocabularies for open and social business.</p>%>
+
+      <%#<dl>%>
+
+        <%#<dt>Legal Forms</dt>%>
+        <%#<dd><a href="https://w3id.org/legal_form/">Legal form vocabulary</a></dd>%>
+
+      <%#</dl>%>
+
+    <%#</div>%>
+
+  <%#</section>%>
+
+</section>
+<section class="noted section">
+
+  <h2>Consensus Documents</h2>
+
+  <div class="bd">
+
+    <p>
+
+      Documents on which we're collaborating with other people and groups, and
+      through which we're trying to reach some sort of consensus.
+
+    </p>
+
+  </div>
+  <section id="sec:scholarly-commons" class="group">
+
+    <div class="bd">
+
+      <h3 class="flush">Scholarly Commons</h3>
+
+      <p>
+
+        The Scholarly Commons is not a website, nor a platform or organization,
+        but the convergence around a set of principles, standards, and best
+        practices that govern how research artifacts (narrative, code, data,
+        workflows, etc.) should be handled for maximum human and machine-based
+        access. The Scholarly Commons is not an incremental improvement of the
+        current system of scholarship and science, but a ground-up redesign of
+        the entire system, from every perspective.
+
+      </p>
+
+      <dl>
+        <dt>Principles of the Scholarly Commons</dt>
+        <dd>A set of principles that express the substance of the Scholarly Commons, created by the <a href="https://www.force11.org/group/scholarly-commons-working-group"><span class="oldstyle">FORCE11</span> Scholarly Commons Working Group</a>.</dd>
+
+      </dl>
+
+      <section>
+
+        <h4>Some of our thoughts on the Scholarly Commons</h4>
+
+        <dl>
+
+          <% items_with_tag('Scholarly Commons', published_blog_posts).each do |post| %>
+            <dt><%= link_to_id(post.identifier, title: "Read entire blog post") %></dt>
+            <dd><%= post[:description] %></dd>
+          <% end %>
+
+        </dl>
+
+      </section>
+
+    </div>
+
+  </section>
+
+</section>
