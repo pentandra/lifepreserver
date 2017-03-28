@@ -15,10 +15,12 @@ CSS3: Cascading Style Sheets Level 3
 CSS: Cascading Style Sheets
 DARPA: Defence Advanced Research Projects Agency
 DCMI: Dublin Core Metadata Initiative
+DIO: Design Intent Ontology
 DMI: Dynamic Machine Interface
 DMI: Dynamic Machine Interface
 DOAP: Description Of A Project
 DOI: Digital Object Identifier
+DSL: Domain Specific Language
 DoCO: Document Components Ontology
 EU: European Union
 FAIR: Findable, Accessible, Interoperable, Reusable
@@ -71,6 +73,7 @@ REST: REpresentational State Transfer
 RFC1738: RFC 1738
 RFC2119: RFC 2119
 RFC3987: RFC 3987
+RIO: Research Intent Ontology
 ROC: Open Research Core
 ROSC: Research Object for Scholarly Communication
 ReST: Representational State Transfer

@@ -12,6 +12,7 @@ OpenResty/M
 ReSpec/M
 RocketHub/M
 RubyGem/S
+SVG/M
 Schepers/M
 Scholonto/M
 SmartOS
@@ -34,5 +35,6 @@ namespace/SM
 permalink/GSMD
 polyfill/MS
 realtime
+syntaxes
 vCard/MS
 zipfile
