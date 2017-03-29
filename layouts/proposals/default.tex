@@ -1,0 +1,27 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Proposal Template for Pentandra Research Solutions, Inc.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\startproduct proposal
+
+<%= render('/environments/default-env.*') %>
+
+\startfrontmatter
+
+<%= render('/proposals/partials/st-titlepage.*') %>
+<%= render('/proposals/partials/st-contents.*') %>
+
+\stopfrontmatter
+
+\startbodymatter
+
+<%= yield %>
+
+\stopbodymatter
+
+%\startappendices
+  %\completelistofabbreviations
+  %\completepublications[criterium=all]
+%\stopappendices
+
+\stopproduct
