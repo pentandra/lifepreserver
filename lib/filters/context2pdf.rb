@@ -4,6 +4,17 @@ class Context2Pdf < Nanoc::Filter
 
   requires 'tmpdir', 'open3', 'fileutils'
 
+  class Error < ::Nanoc::Int::Errors::Generic
+    def initialize(command, exit_code)
+      @command   = command
+      @exit_code = exit_code
+    end
+
+    def message
+      "ConTeXt exited with a nonzero status code #{@exit_code} (command: #{@command.join(' ')})"
+    end
+  end
+
   def run(content, params = {})
     debug = params.fetch(:debug, false)
     mode = Array(params.fetch(:mode, 'draft')).join(',')
@@ -40,8 +51,7 @@ class Context2Pdf < Nanoc::Filter
           exit_status = thread.value
 
           unless exit_status.success?
-            puts output.read
-            raise "ConTeXt exited with a non-zero status code #{exit_status.exitstatus} (filename: #{filename})"
+            raise Error.new(cmd, exit_status.to_i)
           end
         end
 
