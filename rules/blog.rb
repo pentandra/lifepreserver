@@ -2,7 +2,6 @@
 
 compile '/static/blog/{index,recent}.erb' do
   filter :erb, @config[:erb]
-  filter :abbreviate, type: :html
   layout '/blog/default.*'
   filter :rubypantsunicode
   filter :cache_buster if @config[:production]
