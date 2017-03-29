@@ -12,26 +12,27 @@ compile '/static/solutions/proposals/*/index\.md' do
   ]
   filter :spellchecker, type: :html
   filter :abbreviate, type: :html
-  layout '/proposals/default.*'
+  layout '/proposals/default.erb'
   filter :rubypantsunicode
   filter :cache_buster if @config[:production]
   filter :html5small if @config[:production]
   write item.identifier.without_ext.sub('/proposals', '') + '.html'
 end
 
-#compile '/static/solutions/proposals/*/index\.md', rep: :pdf do
-  #filter :erb
-  #filter :pandoc, args: [
-    #{ from: :markdown, to: :context },
-    #:chapters,
-    #:normalize,
-    #:smart,
-  #]
-  #filter :absolutify_paths, type: :context
-  #layout '/benefit_reports/report.*'
-  #filter :context2pdf, @config.fetch(:context2pdf, {}).merge(mode: @item.key?(:wip) ? 'draft' : 'publish')
-  #write item.identifier.without_ext.tr('-', '_') + '.pdf'
-#end
+compile '/static/solutions/proposals/*/index\.md', rep: :pdf do
+  filter :erb
+  filter :pandoc, args: [
+    { from: :markdown, to: :context },
+    :chapters,
+    :normalize,
+    :smart,
+  ]
+  filter :absolutify_paths, type: :context
+  layout '/proposals/default.tex'
+  snapshot :context, path: File.dirname(item.identifier.to_s).sub('/proposals', '') + "/#{@item.fetch(:title).to_slug('_')}_proposal.tex"
+  filter :context2pdf, @config.fetch(:context2pdf, {}).merge(mode: @item.key?(:wip) ? 'draft' : 'publish')
+  write File.dirname(item.identifier.to_s).sub('/proposals', '') + "/#{@item.fetch(:title).to_slug('_')}_proposal.pdf"
+end
 
 # Specification documents
 
