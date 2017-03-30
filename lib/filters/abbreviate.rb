@@ -2,6 +2,8 @@ class Abbreviate < Nanoc::Filter
   require_relative '../helpers/dictionaries'
   include LifePreserver::Dictionaries
 
+  ABBREVIATION_REGEX ||= /([[:alnum:]]+(?:[\-;][[[:upper:]][[:digit:]]]+)*)/
+
   identifier :abbreviate
 
   requires 'nokogiri'
@@ -24,17 +26,8 @@ class Abbreviate < Nanoc::Filter
   protected
 
   def abbreviate_context(content, params, abbreviations)
-    content.gsub(/(?<word>[[:alnum:]]+(?:[\-;][[[:upper:]][[:digit:]]]+)*)(?<next_char>.)/) do
-      word = Regexp.last_match(:word)
-      next_char = Regexp.last_match(:next_char)
-
-      next if word == 'W3C'
-
-      if abbreviations.key?(word.to_sym)
-        next_char =~ /[[:space:]]/ ? "\\#{word}\\#{next_char}" : "\\#{word}#{next_char}"
-      else
-        "#{word}#{next_char}"
-      end
+    content.gsub(ABBREVIATION_REGEX) do |word|
+      abbreviations.key?(word.to_sym) ? "\\abbr{#{word}}" : word
     end
   end
 
@@ -66,7 +59,7 @@ class Abbreviate < Nanoc::Filter
       parent = node.parent
       next unless parent.element?
 
-      abbreviated_text = node.text.dup.gsub(/([[:alnum:]]+(?:[\-;][[[:upper:]][[:digit:]]]+)*)/) do |word|
+      abbreviated_text = node.text.dup.gsub(ABBREVIATION_REGEX) do |word|
         if abbreviations.key?(word.to_sym) && parent.name != 'abbr'
           if visited_abbreviations.include?(word.to_sym)
             "<abbr>#{word}</abbr>"
