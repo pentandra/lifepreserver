@@ -1,16 +1,17 @@
 class Abbreviate < Nanoc::Filter
+  require_relative '../helpers/dictionaries'
+  include LifePreserver::Dictionaries
 
   identifier :abbreviate
 
   requires 'nokogiri'
 
   def run(content, params = {})
-    dictionaries = @items.find_all('/lifepreserver/dictionaries/**/*').select { |d| d.unwrap.attributes[:kind] == 'acronym-dictionary' }
-    acronym_mappings = dictionaries.map { |dic| dic[:acronym_mappings] }.reduce(&:merge)
+    abbreviations = params[:abbreviations] || supported_acronyms
 
     case params[:type]
     when :html, :xhtml
-      abbreviate_html_like(content, params, acronym_mappings)
+      abbreviate_html_like(content, params, abbreviations)
     else
       raise 'The abbreviate filter needs to know the type of content to ' \
         'process. Pass a :type to the filter call (:html for HTML or ' \
@@ -20,7 +21,7 @@ class Abbreviate < Nanoc::Filter
 
   protected
 
-  def abbreviate_html_like(content, params, acronym_mappings)
+  def abbreviate_html_like(content, params, abbreviations)
     type = params.fetch(:type)
 
     case type
@@ -35,11 +36,11 @@ class Abbreviate < Nanoc::Filter
       content = content.sub(%r{(<html[^>]+)xmlns="http://www.w3.org/1999/xhtml"}, '\1')
     end
 
-    nokogiri_process(content, klass, type, acronym_mappings)
+    nokogiri_process(content, klass, type, abbreviations)
   end
 
-  def nokogiri_process(content, klass, type, acronym_mappings)
-    visited_acronyms = []
+  def nokogiri_process(content, klass, type, abbreviations)
+    visited_abbreviations = []
 
     doc = content =~ /<html[\s>]/ ? klass.parse(content) : klass.fragment(content)
     doc.traverse do |node|
@@ -49,12 +50,12 @@ class Abbreviate < Nanoc::Filter
       next unless parent.element?
 
       abbreviated_text = node.text.dup.gsub(/([[:alnum:]]+(?:[\-;][[[:upper:]][[:digit:]]]+)*)/) do |word|
-        if acronym_mappings.key?(word.to_sym) && parent.name != 'abbr'
-          if visited_acronyms.include?(word.to_sym)
+        if abbreviations.key?(word.to_sym) && parent.name != 'abbr'
+          if visited_abbreviations.include?(word.to_sym)
             "<abbr>#{word}</abbr>"
           else
-            visited_acronyms << word.to_sym
-            %(<abbr title="#{acronym_mappings[word.to_sym]}">#{word}</abbr>)
+            visited_abbreviations << word.to_sym
+            %(<abbr title="#{abbreviations[word.to_sym]}">#{word}</abbr>)
           end
         else
           word

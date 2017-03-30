@@ -89,5 +89,27 @@ module LifePreserver
       dependencies.keep_if { |d| d.unwrap.attributes[:kind] =~ /(?<!base)-dictionary/ }
       dependencies << base_dic
     end
+
+    def dictionaries
+      blk = -> { @items.find_all('/lifepreserver/dictionaries/**/*') }
+      if @items.frozen?
+        @dictionary_items ||= blk.call
+      else
+        blk.call
+      end
+    end
+
+    def acronym_dictionaries
+      blk = -> { dictionaries.select { |d| d.unwrap.attributes[:kind] == 'acronym-dictionary' } }
+      if @items.frozen?
+        @acronym_dictionary_items ||= blk.call
+      else
+        blk.call
+      end
+    end
+
+    def supported_acronyms
+      acronym_dictionaries.map { |dic| dic[:acronym_mappings] }.reduce(&:merge)
+    end
   end
 end
