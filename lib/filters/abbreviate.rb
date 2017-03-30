@@ -12,14 +12,31 @@ class Abbreviate < Nanoc::Filter
     case params[:type]
     when :html, :xhtml
       abbreviate_html_like(content, params, abbreviations)
+    when :context
+      abbreviate_context(content, params, abbreviations)
     else
       raise 'The abbreviate filter needs to know the type of content to ' \
-        'process. Pass a :type to the filter call (:html for HTML or ' \
-        ':xhtml for XHTML).'
+        'process. Pass a :type to the filter call (:html for HTML, ' \
+        ':xhtml for XHTML, or :context for ConTeXt).'
     end
   end
 
   protected
+
+  def abbreviate_context(content, params, abbreviations)
+    content.gsub(/(?<word>[[:alnum:]]+(?:[\-;][[[:upper:]][[:digit:]]]+)*)(?<next_char>.)/) do
+      word = Regexp.last_match(:word)
+      next_char = Regexp.last_match(:next_char)
+
+      next if word == 'W3C'
+
+      if abbreviations.key?(word.to_sym)
+        next_char =~ /[[:space:]]/ ? "\\#{word}\\#{next_char}" : "\\#{word}#{next_char}"
+      else
+        "#{word}#{next_char}"
+      end
+    end
+  end
 
   def abbreviate_html_like(content, params, abbreviations)
     type = params.fetch(:type)

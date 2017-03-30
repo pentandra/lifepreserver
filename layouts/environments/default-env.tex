@@ -112,6 +112,10 @@
     synonymstyle=\cap\bf,
   ]
 
+<% supported_abbreviations.each do |abbr, expanded| %>
+\abbreviation{<%= abbr %>}{<%= expanded %>}
+<% end %>
+
 \def\href#1#2{\useURL[#2][{#2}][][{#1}]\goto{\url[#2]}[url(#1)]}
 \def\ahref#1{\color[linkcolor]{\ttx \href{#1}{#1}}}
 \def\httpahref#1{\color[linkcolor]{\ttx \href{http://#1}{#1}}}

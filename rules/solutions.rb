@@ -27,6 +27,7 @@ compile '/static/solutions/proposals/*/index\.md', rep: :pdf do
     :normalize,
     :smart,
   ]
+  filter :abbreviate, type: :context
   filter :absolutify_paths, type: :context
   layout '/proposals/default.tex'
   snapshot :context, path: File.dirname(item.identifier.to_s).sub('/proposals', '') + "/#{@item.fetch(:title).to_slug('_')}_proposal.tex"
