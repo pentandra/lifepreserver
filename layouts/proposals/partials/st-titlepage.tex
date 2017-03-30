@@ -28,7 +28,7 @@
 \setlayer[logo]{\externalfigure[pentandra-logotype-reverse.pdf]}
 
 \startcolor[white]
-{\bfd \setupinterlinespace <%= @item.fetch(:title).gsub(' ', '\\\\\\\\ ') %>\\ Proposal\par\blank[line]}
+{\bfd \setupinterlinespace <%= @item.fetch(:title).gsub(/\s/, '\\\\\\\\ ') %>\\ Proposal\par\blank[line]}
 \stopcolor
 
 \startviewerlayer[forprinter]
@@ -37,7 +37,7 @@
 
 \setlayer[monochrome]{\framed[frame=off,width=\paperwidth,height=\paperheight,background={color,logo},backgroundcolor=white]{}}
 
-\setlayer[monochrome]{\framed[frame=off,align=right,top=\vss,bottom=\vss,loffset=\backspace,width=\dimexpr(\backspace+\textwidth),height=\paperheight]{{\bfd \setupinterlinespace <%= @item.fetch(:title).gsub(' ', '\\\\ ') %>\\ Proposal\par\blank[line]}}}
+\setlayer[monochrome]{\framed[frame=off,align=right,top=\vss,bottom=\vss,loffset=\backspace,width=\dimexpr(\backspace+\textwidth),height=\paperheight]{{\bfd \setupinterlinespace <%= @item.fetch(:title).gsub(/\s/, '\\\\\\\\ ') %>\\ Proposal\par\blank[line]}}}
 
 \stopviewerlayer
 
