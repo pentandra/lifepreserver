@@ -69,7 +69,7 @@ module LifePreserver
         raise "Could not find base dictionary item for language '#{hunspell_lang}'"
       end
 
-      @@dictionaries[hunspell_lang] = Dictionary.new(hunspell_lang, dependencies_for(base_dic))
+      @@dictionaries[hunspell_lang] = Dictionary.new(hunspell_lang, supplementary_dictionaries_for(base_dic))
     end
 
     def find_closest_lang(lang)
@@ -83,13 +83,6 @@ module LifePreserver
       locale.to_s
     end
 
-    def dependencies_for(base_dic)
-      identifier = base_dic.identifier
-      dependencies = @items.find_all(File.dirname(identifier.to_s) + '/*')
-      dependencies.keep_if { |d| d.unwrap.attributes[:kind] =~ /(?<!base)-dictionary/ }
-      dependencies << base_dic
-    end
-
     def dictionaries
       blk = -> { @items.find_all('/lifepreserver/dictionaries/**/*') }
       if @items.frozen?
@@ -99,17 +92,26 @@ module LifePreserver
       end
     end
 
-    def acronym_dictionaries
+    def abbreviation_dictionaries
       blk = -> { dictionaries.select { |d| d.unwrap.attributes[:kind] == 'acronym-dictionary' } }
       if @items.frozen?
-        @acronym_dictionary_items ||= blk.call
+        @abbreviation_dictionary_items ||= blk.call
       else
         blk.call
       end
     end
 
-    def supported_acronyms
-      acronym_dictionaries.map { |dic| dic[:acronym_mappings] }.reduce(&:merge)
+    def supported_abbreviations
+      abbreviation_dictionaries.map { |dic| dic[:acronym_mappings] }.reduce(&:merge)
+    end
+
+    protected
+
+    def supplementary_dictionaries_for(base_dic)
+      identifier = base_dic.identifier
+      dependencies = @items.find_all(File.dirname(identifier.to_s) + '/*')
+      dependencies.keep_if { |d| d.unwrap.attributes[:kind] =~ /(?<!base)-dictionary/ }
+      dependencies << base_dic
     end
   end
 end

@@ -7,7 +7,7 @@ class Abbreviate < Nanoc::Filter
   requires 'nokogiri'
 
   def run(content, params = {})
-    abbreviations = params[:abbreviations] || supported_acronyms
+    abbreviations = params[:abbreviations] || supported_abbreviations
 
     case params[:type]
     when :html, :xhtml

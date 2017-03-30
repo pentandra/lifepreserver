@@ -26,3 +26,4 @@ include LifePreserver::LinkTo
 include LifePreserver::Reporting
 include LifePreserver::Meta
 include LifePreserver::AtomFeed
+include LifePreserver::Dictionaries
