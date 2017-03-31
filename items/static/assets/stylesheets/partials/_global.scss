@@ -141,30 +141,24 @@ ul {
 }
 
 ol {
-  font-family: $special-font-family, serif;
-
   // Display the number without the period
-/*
   list-style-type: none;
 
   & > li {
-    counter-increment: customlistcounter;
+    counter-increment: numeral;
   }
 
   & > li:before {
-    content: counter(customlistcounter) " ";
-    float: left;
-    margin-left: -1.2em;
+    font-family: $special-font-family;
+    text-align: right;
+    content: counter(numeral);
+    position: absolute;
+    margin-left: -2.5em;
+    width: 2em;
   }
 
   &:first-child {
-    counter-reset: customlistcounter;
-  }
-
-*/
-  p, a, .base {
-    // Use base font for the actual text of the list
-    font-family: $base-font-family, sans-serif;
+    counter-reset: numeral;
   }
 
   ul {
@@ -177,6 +171,10 @@ ol {
     list-style-type: lower-alpha;
     margin-bottom: 0;
   }
+}
+
+.lt-ie8 ol {
+  list-style-type: decimal;
 }
 
 // Is this needed at all? A big question is how do we demarcate paragraphs? Do
