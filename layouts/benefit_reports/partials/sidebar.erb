@@ -1,8 +1,13 @@
 <aside class="aside">
   <h2 class="visuallyhidden">Meta</h2>
 
-  <ul class="none">
-    <li><a href="<%= path_to(@item, rep: :pdf) %>">Download as <abbr>PDF</abbr></a></li>
-  </ul>
+  <section class="section banner">
+    <h3 class="big">Download</h3>
 
+      <ul>
+        <li><a href="<%= path_to(@item, rep: :pdf_letter) %>"><abbr>PDF</abbr>, size: <abbr>US</abbr> letter</a></li>
+        <li><a href="<%= path_to(@item, rep: :pdf_A4) %>"><abbr>PDF</abbr>, size: european A4</a></li>
+      </ul>
+
+  </section>
 </aside>

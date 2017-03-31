@@ -6,8 +6,8 @@ class Context2Pdf < Nanoc::Filter
 
   def run(content, params = {})
     debug = params.fetch(:debug, false)
-    mode = params.fetch(:mode, 'draft')
-    trackers = params.fetch(:trackers, [])
+    mode = Array(params.fetch(:mode, 'draft')).join(',')
+    trackers = Array(params.fetch(:trackers, [])).join(',')
 
     unless system('which', 'context', out: '/dev/null')
       warn('Warning: `context` not found; PDF generation disabled.')
@@ -21,7 +21,7 @@ class Context2Pdf < Nanoc::Filter
         f.flush
 
         c = Nanoc::CLI::ANSIStringColorizer
-        cmd = ['context', '--nonstopmode', "--mode=#{mode}", "--trackers=#{trackers.join(',')}", f.path]
+        cmd = ['context', '--nonstopmode', "--mode=#{mode}", "--trackers=#{trackers}", f.path]
 
         Open3.popen3(*cmd, chdir: dir) do |_stdin, stdout, stderr, thread|
 
