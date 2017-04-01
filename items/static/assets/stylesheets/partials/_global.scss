@@ -127,6 +127,8 @@ dl, menu, ul, ol { margin: 0 0 $base-line-height 0; padding: 0; }
 dt { margin-top: $base-line-height; }
 dd { margin: 0; }
 
+dt.aside { margin-top: 0; }
+
 .nav ul, .nav ol { list-style: none; list-style-image: none; }
 
 nav ol, .nav ol, nav ul, .nav ul { margin: 0 }
