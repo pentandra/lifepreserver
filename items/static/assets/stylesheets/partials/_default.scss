@@ -128,6 +128,14 @@ $less-outer-margin: 48px;
   line-height: 32px;
 }
 
+.header-section-number {
+  font-family: $special-font-family;
+  position: absolute;
+  @include grid(3);
+  margin-left: -(($less-column-width * 3) + ($less-gutter-width * 3));
+  text-align: right;
+}
+
 // Grid classes
 
 .bl {
@@ -205,16 +213,6 @@ $theteam-height: $base-line-height * 12;
     background-position: 0 #{-$theteam-image-height};
   }
 }
-
-.proposal {
-  .header-section-number {
-    position: absolute;
-    @include grid(3);
-    margin-left: -(($less-column-width * 3) + ($less-gutter-width * 3));
-    text-align: right;
-  }
-}
-
 
 //
 // Background-image classes

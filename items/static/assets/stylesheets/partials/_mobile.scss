@@ -110,6 +110,11 @@ $less-outer-margin: 34px;
     line-height: $base-line-height;
   }
 
+  .header-section-number {
+    position: static;
+    margin-left: 0;
+  }
+
   // Grid classes
 
   .bl {
