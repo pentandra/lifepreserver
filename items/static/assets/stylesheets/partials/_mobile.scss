@@ -110,9 +110,11 @@ $less-outer-margin: 34px;
     line-height: $base-line-height;
   }
 
-  .header-section-number {
-    position: static;
-    margin-left: 0;
+  .numbered {
+    #{append-selector("h2, h3, h4, h5, h6", ":before")} {
+      position: static;
+      margin: 0 0.25em 0 0;
+    }
   }
 
   // Grid classes

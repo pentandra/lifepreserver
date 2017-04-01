@@ -113,3 +113,9 @@ em, .em, .intro, .sidenote {
 i, cite, dfn { font-style: oblique; }
 
 dt, dt dfn { font-weight: bold; font-style: normal; }
+
+.numbered {
+  #{append-selector("h2, h3, h4, h5, h6", ":before")} {
+    font-family: $special-font-family;
+  }
+}

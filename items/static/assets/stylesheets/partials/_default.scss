@@ -128,12 +128,13 @@ $less-outer-margin: 48px;
   line-height: 32px;
 }
 
-.header-section-number {
-  font-family: $special-font-family;
-  position: absolute;
-  @include grid(3);
-  margin-left: -(($less-column-width * 3) + ($less-gutter-width * 3));
-  text-align: right;
+.numbered {
+  #{append-selector("h2, h3, h4, h5, h6", ":before")} {
+    position: absolute;
+    @include grid(3);
+    margin-left: -(($less-column-width * 3) + ($less-gutter-width * 3));
+    text-align: right;
+  }
 }
 
 // Grid classes

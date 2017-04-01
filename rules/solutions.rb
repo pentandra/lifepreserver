@@ -6,7 +6,6 @@ compile '/static/solutions/proposals/*/index\.md' do
     { from: :markdown, to: :html5 },
     { base_header_level: 2 },
     :section_divs,
-    :number_sections,
     :normalize,
     :smart,
   ]
