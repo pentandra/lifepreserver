@@ -21,10 +21,6 @@ a, a:visited, a:active {
   text-decoration: none;
 }
 
-#{headings(1,3)} {
-  text-transform: uppercase;
-}
-
 h1.large {
   margin-top: $base-line-height;
 }
@@ -152,7 +148,6 @@ ol {
   }
 
   & > li:before {
-    font-family: $special-font-family;
     text-align: right;
     content: counter(numeral);
     position: absolute;
