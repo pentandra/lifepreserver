@@ -145,6 +145,7 @@ ul {
 ol {
   // Display the number without the period
   list-style-type: none;
+  counter-reset: numeral;
 
   & > li {
     counter-increment: numeral;
@@ -157,10 +158,6 @@ ol {
     position: absolute;
     margin-left: -2.5em;
     width: 2em;
-  }
-
-  &:first-child {
-    counter-reset: numeral;
   }
 
   ul {
