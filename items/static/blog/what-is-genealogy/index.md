@@ -28,20 +28,35 @@ forever...but that's a different story.
 
 # Is Genealogy Tree-like Data?
 
-Looking at genealogy in this way is both a shallow and distorted view of
-reality. Was the sole purpose of Doe Darling's existence to produce seven
-nicely named children, all lined up neatly in a row? I hope not.
+Looking at genealogy as a bunch of interconnected family trees is akin to
+looking at the World Wide Web as a bunch of nodes and edges. While the view may
+nice to look at, it's not all there is to it. You may have [browsed to this
+node at will](http://www.w3.org/Proposal.html), but you probably didn't think
+of it that way.
 
 <figure id="fig:internetmap" class="img" resource="#internet_2010" typeof="schema:ImageObject">
   <img property="schema:contentUrl" src="opte-2010_620.png" alt="The Internet 2010" class="static" />
   <figcaption><span property="dc:description"><b property="dc:title">The Internet 2010</b>, by <a href="http://www.opte.org/" property="cc:attributionName" rel="cc:attributionURL dc:creator">The Opte Project / Barrett Lyon</a>. While a stunning visualization, is this what the Internet looks like to you? </span> Licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC license</a>. Used by permission. <span class="icon-cc"></span><span class="icon-cc-by"></span><span class="icon-cc-nc"></span></figcaption>
 </figure>
 
-Looking at genealogy as a bunch of interconnected family trees is akin to
-looking at the World Wide Web as a bunch of nodes and edges. While the view may
-nice to look at, it's not all there is to it. You may have [browsed to this
-node at will](http://www.w3.org/Proposal.html), but you probably didn't think
-of it that way.
+Looking at genealogy in this way is both a shallow and distorted view of
+reality. Was the sole purpose of Doe Darling's existence to produce seven
+nicely named children, all lined up neatly in a row? I hope not. A few years
+ago I discussed Elizabeth Shown Mills' [types of genealogists][typology]. Of
+the three stereotypes of genealogists (family tree climbers, traditional
+genealogists, and generational historians), the only really satisfying approach
+to genealogy, at least looking forward, is that of the generational historian.
+In order to really understand and to know Doe, at least as far as is possible
+from our present-day perspective, we _must_ study her and her world deep enough
+to _know_ whether all of the evidence and conclusions we've gathered fit
+together into any sort of logical cohesion.
+
+In a way, the difference between the family tree climber or traditional
+genealogist and the generational historian is the difference between the Web of
+Documents (Web 2.0) and and Web of Linked Data (Web 3.0). The first looks at
+the relationships between documents and the second looks at the relationships
+and meaning of all the data contained by the documents. One is infinitely more
+rich, complex, and useful.
 
 # Our Perspective
 
@@ -89,12 +104,11 @@ individually and collectively.
 
 In many research fields, researchers advance their careers through journal
 publication. Many of these journals are "held hostage" by some of the big
-publishers, including Elsevier, Wiley, and Springer. However, genealogists do
-not suffer with this blight. There are a few high-quality journals published in
-the field, including the [National Genealogical Society
-Quarterly][NGSQ] and [The Genealogist][TG]. These
-journals are published by genealogical societies or through universities, and
-the peer-review process handled by the society. While the journals are highly
+publishers. However, genealogists do not suffer with this blight. There are a
+few high-quality journals published in the field, including the [National
+Genealogical Society Quarterly][NGSQ] and [The Genealogist][TG]. These journals
+are published by genealogical societies or through universities, and the
+peer-review process handled by the society. While the journals are highly
 regarded, journal publications are not the primary path for career advancement
 in genealogy. Most career advancement is done through private client research
 and word-of-mouth.
@@ -125,8 +139,8 @@ need a way to move forward with the research aspect of all of this. We still
 need answers! Like most things in life, a combination of things must happen to
 make genealogical research a more meaningful and productive experience.
 
-First, we need more people to realize there is a problem. For many,
-genealogical research is their first foray into the world of research, and
+First, we need more people to realize there is a problem. For many---but not
+all, genealogical research is their first foray into the world of research, and
 many, even long-time genealogists, do not know what good genealogical research
 looks like. It doesn't take long for the current software to convince newcomers
 that genealogy is nothing more than a collection of names and dates, with a few
@@ -197,3 +211,4 @@ more.
 [NGSQ]: http://www.ngsgenealogy.org/cs/ngsq
 [TG]: http://www.fasg.org/TheGenealogist.html
 [gen_hist]: /blog/thoughts-about-rootstech-2012/#def:generational-historians
+[typology]: /blog/thoughts-about-rootstech-2012/#fig:typology-of-genealogists
