@@ -10,6 +10,7 @@ include Nanoc::Helpers::Capturing
 include Nanoc::Helpers::Rendering
 include Nanoc::Helpers::XMLSitemap
 include Nanoc::Helpers::CacheBusting
+include Nanoc::Helpers::Filtering
 include ERB::Util
 
 include LifePreserver::Blogging
