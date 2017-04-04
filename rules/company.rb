@@ -29,7 +29,7 @@ compile %r{/static/company/benefit-reports/(\d{4})/index\.md}, rep: :pdf_letter 
   write File.dirname(item.identifier.to_s) + "/UT_Pentandra_report_#{fiscal_year}.pdf"
 end
 
-compile %r{/static/company/benefit-reports/(\d{4})/index\.md}, rep: :pdf_A4 do |fiscal_year, _|
+compile %r{/static/company/benefit-reports/(\d{4})/index\.md}, rep: :pdf_a4 do |fiscal_year, _|
   filter :erb
   filter :pandoc, args: [
     { from: :markdown, to: :context },

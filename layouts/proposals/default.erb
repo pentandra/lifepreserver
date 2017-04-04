@@ -40,6 +40,12 @@
             <dd class="bd"><a property="sioc:reply_of" href="<%= in_reply_to.fetch(:uri) %>"><%= in_reply_to.fetch(:title) %></a></dd>
           </dl>
         <% end %>
+
+        <dl id="document-alternative-representations" class="group">
+          <dt class="aside"><div class="close">Alternative representations</div></dt>
+          <dd class="bd"><abbr title="Portable Document Format">PDF</abbr>: <a href="<%= path_to(@item, rep: :pdf_letter) %>"><abbr title="United States">US</abbr> letter</a>, <a href="<%= path_to(@item, rep: :pdf_a4) %>"><abbr title="European paper size, defined by ISO 216">A4</abbr></a></dd>
+
+        </dl>
       </div>
       <meta property="schema:copyrightYear" datatype="xsd:gYear" content="<%= @item[:created_at].year %>" />
       <link property="rdfa:copy" resource="pentandra-website:license" />
