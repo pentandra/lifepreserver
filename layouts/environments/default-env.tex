@@ -29,19 +29,35 @@
   ]
 
 \starttypescript [sans] [functionpro]
-  \definefontsynonym [FunctionPro-Book]        [name:functionprobook]
-  \definefontsynonym [FunctionPro-Bold]        [name:functionprobold]
-  \definefontsynonym [FunctionPro-Oblique]     [name:functionprobookoblique]
-  \definefontsynonym [FunctionPro-BoldOblique] [name:functionproboldoblique]
+  \definefontsynonym [FunctionPro-Light]            [name:functionprolight]
+  \definefontsynonym [FunctionPro-LightOblique]     [name:functionprolightoblique]
+  \definefontsynonym [FunctionPro-Book]             [name:functionprobook]
+  \definefontsynonym [FunctionPro-Oblique]          [name:functionprobookoblique]
+  \definefontsynonym [FunctionPro-Medium]           [name:functionpromedium]
+  \definefontsynonym [FunctionPro-MediumOblique]    [name:functionpromediumoblique]
+  \definefontsynonym [FunctionPro-Demi]             [name:functionprodemi]
+  \definefontsynonym [FunctionPro-DemiOblique]      [name:functionprodemioblique]
+  \definefontsynonym [FunctionPro-Bold]             [name:functionprobold]
+  \definefontsynonym [FunctionPro-BoldOblique]      [name:functionproboldoblique]
+  \definefontsynonym [FunctionPro-ExtraBold]        [name:functionproextrabold]
+  \definefontsynonym [FunctionPro-ExtraBoldOblique] [name:functionproextraboldoblique]
+\stoptypescript
+
+\starttypescript [sans] [functioncaps]
+  \definefontsynonym [FunctionCaps-Light]  [name:functioncapslight]
+  \definefontsynonym [FunctionCaps-Book]   [name:functioncapsbook]
+  \definefontsynonym [FunctionCaps-Medium] [name:functioncapsmedium]
+  \definefontsynonym [FunctionCaps-Demi]   [name:functioncapsdemi]
 \stoptypescript
 
 \starttypescript [sans] [functionpro]
   \definefontsynonym [Sans]            [FunctionPro-Book]        [features=default]
-  \definefontsynonym [SansBold]        [FunctionPro-Bold]        [features=default]
+  \definefontsynonym [SansBold]        [FunctionPro-Medium]      [features=default]
   \definefontsynonym [SansSlanted]     [FunctionPro-Oblique]     [features=default]
   \definefontsynonym [SansBoldSlanted] [FunctionPro-BoldOblique] [features=default]
   \definefontsynonym [SansItalic]      [SansSlanted]             [features=default]
   \definefontsynonym [SansBoldItalic]  [SansBoldSlanted]         [features=default]
+  \definefontsynonym [SansCaps]        [FunctionCaps-Book]       [features=default]
 \stoptypescript
 
 \definetypeface[functionpro][rm][sans][functionpro][default]
@@ -94,7 +110,7 @@
     align=middle,
   ]
 
-\definesymbol[9][$\blacksquare$]
+\definesymbol[9][${\tfx \blacksquare}$]
 \setupitemize[9,inmargin,packed,broad]
 
 \setupdescriptions
@@ -114,7 +130,7 @@
 \definesynonyms[abbreviation][abbreviations][\infull][\abbr]
 \setupsynonyms[abbreviation]
   [
-    synonymstyle=\small, % leave this for now, but we should fix this with the FunctionCaps font
+    synonymstyle=\sc\nocap,
   ]
 
 <% supported_abbreviations.each do |abbr, expanded| %>
@@ -139,7 +155,17 @@
     contrastcolor=pentandrared,
   ]
 
-\setuphead[chapter][style=\tfd\cap,header=nomarking]
+\setuphead[chapter]
+  [
+    style=\tfd\cap,
+    header=nomarking,
+    numberstyle=\sc,
+  ]
+
+\setuphead[section]
+  [
+    numberstyle=\sc,
+  ]
 
 \setuplist[chapter]
           [
