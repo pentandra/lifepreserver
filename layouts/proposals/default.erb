@@ -43,8 +43,8 @@
 
         <dl id="document-alternative-representations" class="group">
           <dt class="aside"><div class="close">Alternative representations</div></dt>
-          <dd class="bd"><abbr title="Portable Document Format">PDF</abbr>: <a href="<%= path_to(@item, rep: :pdf_letter) %>"><abbr title="United States">US</abbr> letter</a>, <a href="<%= path_to(@item, rep: :pdf_a4) %>"><abbr title="European paper size, defined by ISO 216">A4</abbr></a></dd>
-
+          <dd class="bd"><a href="<%= path_to(@item, rep: :pdf_letter) %>"><abbr>PDF</abbr>, size: <abbr>US</abbr> letter</a></dd>
+          <dd class="bd"><a href="<%= path_to(@item, rep: :pdf_a4) %>"><abbr>PDF</abbr>, size: <abbr>ISO</abbr> <abbr>A4</abbr></a></dd>
         </dl>
       </div>
       <meta property="schema:copyrightYear" datatype="xsd:gYear" content="<%= @item[:created_at].year %>" />

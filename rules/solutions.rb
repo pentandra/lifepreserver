@@ -18,7 +18,7 @@ compile '/static/solutions/proposals/*/index\.md' do
   write item.identifier.without_ext.sub('/proposals', '') + '.html'
 end
 
-compile '/static/solutions/proposals/*/index\.md', rep: :pdf do
+compile '/static/solutions/proposals/*/index\.md', rep: :pdf_letter do
   filter :erb
   filter :pandoc, args: [
     { from: :markdown, to: :context },
@@ -32,6 +32,22 @@ compile '/static/solutions/proposals/*/index\.md', rep: :pdf do
   snapshot :context, path: File.dirname(item.identifier.to_s).sub('/proposals', '') + "/#{@item.fetch(:title).to_slug('_')}_proposal.tex"
   filter :context2pdf, @config.fetch(:context2pdf, {}).merge(mode: @item.key?(:wip) ? 'draft' : 'publish')
   write File.dirname(item.identifier.to_s).sub('/proposals', '') + "/#{@item.fetch(:title).to_slug('_')}_proposal.pdf"
+end
+
+compile '/static/solutions/proposals/*/index\.md', rep: :pdf_a4 do
+  filter :erb
+  filter :pandoc, args: [
+    { from: :markdown, to: :context },
+    :chapters,
+    :normalize,
+    :smart,
+  ]
+  filter :abbreviate, type: :context
+  filter :absolutify_paths, type: :context
+  layout '/proposals/default.tex'
+  snapshot :context, path: File.dirname(item.identifier.to_s).sub('/proposals', '') + "/#{@item.fetch(:title).to_slug('_')}_proposal_a4.tex"
+  filter :context2pdf, @config.fetch(:context2pdf, {}).merge(mode: [@item.key?(:wip) ? 'draft' : 'publish', 'european'])
+  write File.dirname(item.identifier.to_s).sub('/proposals', '') + "/#{@item.fetch(:title).to_slug('_')}_proposal_a4.pdf"
 end
 
 # Specification documents
