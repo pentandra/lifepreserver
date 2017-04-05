@@ -29,8 +29,8 @@ compile '/static/solutions/proposals/*/index\.md', rep: :pdf_letter do
   filter :abbreviate, type: :context
   filter :absolutify_paths, type: :context
   layout '/proposals/default.tex'
-  snapshot :context, path: File.dirname(item.identifier.to_s).sub('/proposals', '') + "/#{@item.fetch(:title).to_slug('_')}_proposal.tex"
-  filter :context2pdf, @config.fetch(:context2pdf, {}).merge(mode: @item.key?(:wip) ? 'draft' : 'publish')
+  snapshot :context, path: File.dirname(item.identifier.to_s).sub('/proposals', '') + "/#{@item.fetch(:title).to_slug('_')}_proposal.tex" unless @config[:production]
+  filter :context2pdf, @config.fetch(:context2pdf, {}).merge(mode: @item.fetch(:status, 'draft'))
   write File.dirname(item.identifier.to_s).sub('/proposals', '') + "/#{@item.fetch(:title).to_slug('_')}_proposal.pdf"
 end
 
@@ -45,8 +45,8 @@ compile '/static/solutions/proposals/*/index\.md', rep: :pdf_a4 do
   filter :abbreviate, type: :context
   filter :absolutify_paths, type: :context
   layout '/proposals/default.tex'
-  snapshot :context, path: File.dirname(item.identifier.to_s).sub('/proposals', '') + "/#{@item.fetch(:title).to_slug('_')}_proposal_a4.tex"
-  filter :context2pdf, @config.fetch(:context2pdf, {}).merge(mode: [@item.key?(:wip) ? 'draft' : 'publish', 'european'])
+  snapshot :context, path: File.dirname(item.identifier.to_s).sub('/proposals', '') + "/#{@item.fetch(:title).to_slug('_')}_proposal_a4.tex" unless @config[:production]
+  filter :context2pdf, @config.fetch(:context2pdf, {}).merge(mode: [@item.fetch(:status, 'draft'), 'european'])
   write File.dirname(item.identifier.to_s).sub('/proposals', '') + "/#{@item.fetch(:title).to_slug('_')}_proposal_a4.pdf"
 end
 
