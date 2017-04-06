@@ -28,3 +28,4 @@ include LifePreserver::Reporting
 include LifePreserver::Meta
 include LifePreserver::AtomFeed
 include LifePreserver::Dictionaries
+include LifePreserver::Dependencies
