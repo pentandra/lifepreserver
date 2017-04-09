@@ -9,7 +9,7 @@
             by
             <%= link_for_author(@item[:author_name]) %>
           </div>
-          <% if @item[:updated_at] > @item[:created_at] then %>
+          <% if @item[:updated_at] > @item[:created_at] %>
             <div>
               Last Updated <time class="dt-updated" property="dc:modified schema:dateModified" datetime="<%= simple_date(@item[:updated_at]) %>"><%= fancy_date(@item[:updated_at]) %></time>
             </div>
