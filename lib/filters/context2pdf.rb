@@ -17,7 +17,7 @@ class Context2Pdf < Nanoc::Filter
 
   def run(content, params = {})
     debug = params.fetch(:debug, false)
-    mode = Array(params.fetch(:mode, 'draft')).join(',')
+    mode = [@config.unwrap.env_name, params.fetch(:mode, 'draft')].join(',')
     trackers = Array(params.fetch(:trackers, [])).join(',')
 
     unless system('which', 'context', out: '/dev/null')
