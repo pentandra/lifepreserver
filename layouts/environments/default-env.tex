@@ -6,9 +6,13 @@
 \setuppapersize[usletter]
 \doifmode{european}{\setuppapersize[european]}
 
-%\showframe
-%\showgrid
-%\showsetups
+\startmode[development]
+  %\showframe
+  %\showgrid
+  %\showsetups
+
+  \version[temporary]
+\stopmode
 
 \setuplayout        
   [
@@ -219,8 +223,6 @@
     height=\paperheight,
     state=repeat,
   ]
-
-\doifmode{development} {\version[temporary]}
 
 \doifnotmode
   {publish}
