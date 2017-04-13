@@ -198,22 +198,6 @@
     numbercommand={\sc},
   ]
 
-\defineoverlay
-  [draftnotice]
-  [
-    {\framed[
-              frame=off,
-              foregroundcolor=middlegray,
-            ]
-            {\scale[
-                     sx=4,
-                     sy=4,
-                   ]
-                   {\rotate[rotation=90.0]{\cap{Draft <%= @item.fetch(:kind).capitalize %> [\currentdate[year,--,mm,--,dd]]}}}%
-            }%
-    }%
-  ]
-
 \definelayer
   [meta]
   [
@@ -224,20 +208,34 @@
     state=repeat,
   ]
 
-\doifnotmode
-  {publish}
-  {
-    \setlayer
-      [meta]
+\startmode[draft]
+  \defineoverlay
+    [draftnotice]
+    [
       {\framed[
                 frame=off,
-                width=\dimexpr\backspace-\leftmarginwidth-\leftmargindistance\relax,
-                height=\paperheight,
-                background=draftnotice,
+                foregroundcolor=middlegray,
               ]
-              {}%
+              {\scale[
+                       sx=4,
+                       sy=4,
+                     ]
+                     {\rotate[rotation=90.0]{\cap{Draft <%= @item.fetch(:kind).capitalize %> [\currentdate[year,--,mm,--,dd]]}}}%
+              }%
       }%
-  }
+    ]
+
+  \setlayer
+    [meta]
+    {\framed[
+              frame=off,
+              width=\dimexpr\backspace-\leftmarginwidth-\leftmargindistance\relax,
+              height=\paperheight,
+              background=draftnotice,
+            ]
+            {}%
+    }%
+\stopmode
 
 \setupbackgrounds
   [paper]
