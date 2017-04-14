@@ -6,14 +6,6 @@
 \setuppapersize[usletter]
 \doifmode{european}{\setuppapersize[european]}
 
-\startmode[development]
-  %\showframe
-  %\showgrid
-  %\showsetups
-
-  \version[temporary]
-\stopmode
-
 \setuplayout        
   [
     height=650pt,
@@ -203,6 +195,16 @@
   [
     state=repeat,
   ]
+
+\startmode[development]
+  %\showframe
+  %\showgrid
+  %\showsetups
+  \showbodyfont
+  \showbodyfontenvironment
+
+  \version[temporary]
+\stopmode
 
 \startmode[identifiable]
   \setlayer
