@@ -204,6 +204,22 @@
     state=repeat,
   ]
 
+\startmode[identifiable]
+  \setlayer
+    [meta]
+    {\framed[
+              frame=off,
+              align=right,
+              loffset=\backspace,
+              width=\dimexpr(\backspace+\textwidth),
+              height=\paperheight,
+              top=\vss,
+              bottom=,
+              foregroundcolor=middlegray,
+            ]
+            {\ttxx <%= path_to(@item, global: true) %>\blank[2*big]}}%
+\stopmode
+
 \startmode[draft]
   \defineoverlay
     [draftnotice]
