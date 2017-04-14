@@ -56,11 +56,33 @@
   \definefontsynonym [SansCaps]        [FunctionCaps-Book]       [features=default]
 \stoptypescript
 
+\starttypescript [mono] [ubuntumono]
+  \definefontsynonym [UbuntuMono-Regular]    [name:ubuntumonoregular]
+  \definefontsynonym [UbuntuMono-Italic]     [name:ubuntumonoitalic]
+  \definefontsynonym [UbuntuMono-Bold]       [name:ubuntumonobold]
+  \definefontsynonym [UbuntuMono-BoldItalic] [name:ubuntumonobolditalic]
+\stoptypescript
+
+\starttypescript [mono] [ubuntumono]
+  \definefontsynonym [Mono]           [UbuntuMono-Regular]    [features=default]
+  \definefontsynonym [MonoItalic]     [UbuntuMono-Italic]     [features=default]
+  \definefontsynonym [MonoBold]       [UbuntuMono-Bold]       [features=default]
+  \definefontsynonym [MonoBoldItalic] [UbuntuMono-BoldItalic] [features=default]
+
+  \definebodyfont [default] [tt]
+    [tf=Mono sa 0.85,
+      bf=MonoBold sa 0.85,
+      it=MonoItalic sa 0.85,
+      sl=MonoItalic sa 0.85,
+      bi=MonoBoldItalic sa 0.85,
+      bs=MonoBoldItalic sa 0.85]
+\stoptypescript
+
 \definetypeface[functionpro][rm][sans][functionpro][default]
 \definetypeface[functionpro][ss][sans][functionpro][default]
+\definetypeface[functionpro][tt][mono][ubuntumono][default]
 
-\setupbodyfont
-  [functionpro,ss]
+\setupbodyfont[functionpro,sans,12pt]
 
 \setupbodyfontenvironment
   [default]
