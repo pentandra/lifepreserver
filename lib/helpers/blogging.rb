@@ -87,8 +87,11 @@ module LifePreserver
 
     def archive_years(posts = nil)
       posts ||= published_blog_posts
-      years = posts.map { |a| a.unwrap.attributes.fetch(:published_at).year }.uniq
-      years.to_a
+      years = posts
+        .select { |post| post.unwrap.attributes.key?(:published_at) }
+        .map { |post| post.unwrap.attributes.fetch(:published_at).year }
+        .uniq
+        .to_a
     end
 
     def post_summary(post_rep, read_more_text: 'Read more ⇢', separator: '<!--MORE-->')
