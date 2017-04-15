@@ -221,13 +221,14 @@ know which tools the researcher used and when? The tools are part of it, but
 not all. We need to ask ourselves, what is our goal and what is of value in
 reaching that goal? If our goal is to create [a new culture][culture] of
 scholarship, what would change the culture? In order to create a new culture,
-we need more than open notebook science or even a static depiction of a
-researcher's process. We've talked a lot about attribution, but there's
-something we're not publishing right now---something more to this idea that
-we're not even talking about. We need something social that draws people _into_
-the process (while, of course, preserving the attribution, integrity, and
-openness of the contributions). What about the questions and intentions of the
-researcher? This is the level at which I think we really need to be sharing.
+we need more than open notebook science, research protocols, or even static
+depictions of researcher workflows. We've talked a lot about attribution, but
+there's something we're not publishing right now---something more to this idea
+that we're not even talking about. We need something social that draws people
+_into_ the process (while, of course, preserving the attribution, integrity,
+and openness of the contributions). What about the questions and intentions of
+the researcher? This is the level at which I think we really need to be
+sharing.
 
 Our process as a committee in defining the Scholarly Commons, aside from the
 workshops that we have held, has been mostly limited to seeking feedback when
