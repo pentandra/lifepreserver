@@ -5,9 +5,16 @@
       <div class="group meta">
         <div class="bd up">
           <div>
-            Written <time class="dt-published" property="dc:created schema:datePublished" datetime="<%= simple_date(@item[:created_at]) %>"><%= fancy_date(@item[:created_at]) %></time>
-            by
-            <%= link_for_author(@item[:author_name]) %>
+            <% if @item[:published_at] %>
+              <% if @item[:published_at] == @item[:created_at] %>
+                Written and published on <time class="dt-published" property="dc:created schema:dateCreated schema:datePublished" datetime="<%= simple_date(@item[:created_at]) %>"><%= fancy_date(@item[:created_at]) %></time>
+              <% else %>
+                Written since <time property="dc:created schema:dateCreated" datetime="<%= simple_date(@item[:created_at]) %>"><%= fancy_date(@item[:created_at]) %></time> and published on <time class="dt-published" property="schema:datePublished" datetime="<%= simple_date(@item[:published_at]) %>"><%= fancy_date(@item[:published_at]) %></time>
+              <% end %>
+            <% else%>
+              Written since <time property="dc:created" datetime="<%= simple_date(@item[:created_at]) %>"><%= fancy_date(@item[:created_at]) %></time> and not yet published
+            <% end %>
+            by <%= link_for_author(@item[:author_name]) %>
           </div>
           <% if @item[:updated_at] > @item[:created_at] %>
             <div>
