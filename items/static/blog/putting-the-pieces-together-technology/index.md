@@ -29,22 +29,23 @@ our own experiences and backgrounds, and each of our backgrounds is quite
 dissimilar. There is a general consensus, I am pretty sure, that the Scholarly
 Commons is scholarly communication in a modern setting, one in which we are not
 constrained by the limitations of print publishing. But the definition of the
-Commons goes much deeper than that. The Scholarly Commons represents
-scholarship reinvented for our modern era, and whichever the approach to do
-that, we are desiring to take the best of the past, the aspirations and thirst
-for understanding that have motivated mankind for thousands of years, and
-redesign the whole system from scratch to fit our current needs and desires,
-using whatever existing pieces or technologies that fit this new way of
-working, then figuring out how to build out the rest.
+Commons goes much deeper than that, and, as they say, the devil is in the
+details. The Scholarly Commons represents scholarship reinvented for our modern
+era, and whichever the approach to do that, we are desiring to take the best of
+the past, the aspirations and thirst for understanding that have motivated
+mankind for thousands of years, and redesign the whole system from scratch to
+fit our current needs and desires, using whatever existing pieces or
+technologies that fit this new way of working, then figuring out how to build
+out the rest.
 
 <!--MORE-->
 
 # On gaps and systems
 
 One of the topics that pops up every once in a while lately in the discussions
-in FORCE11's Scholarly Commons Working Group is the concept of _compliance_. I
-think this comes from the desire to understand what the Scholarly Commons
-is---to wrap our brains around the idea, and the hope that if we know where the
+in the Scholarly Commons working group is the concept of _compliance_. I think
+this comes from the desire to understand what the Scholarly Commons is---to
+wrap our brains around the idea, and the hope that if we know where the
 boundaries of the Scholarly Commons are, we might be able to reduce the
 Scholarly Commons to some transparent explanatory paragraph or set of
 principles. Following that type of thinking then, the question of whether or
@@ -52,18 +53,18 @@ not something belongs within the commons is based upon whether that thing
 _complies_ with certain agreed-upon principles. But the word _compliance_, to
 me, conveys more of a heavy-handed, top-down sort of idea, and promotes
 exclusivity over inclusivity. I think that for us over the past year this
-argument has been more of a distraction that has kept us from actually
-discovering more what the Scholarly Commons is all about. From my viewpoint,
-the Scholarly Commons is much more about _enabling interactions_ and the
-_contributions_ that result from those interactions. We're either commoning or
-we're not. The things we're working with either fit together or they don't. A
-better word for this type of interactivity might be <dfn
-id="def:compatibility">compatibility</dfn>, which, in a telecommunications
-context, means 'the capability of two or more items or components of equipment
-or material to exist or function in the same system or environment without
-mutual interference.'[^compatibility] We use and build upon resources that are
-compatible with our manner of working. Otherwise, we just don't use them. They
-just don't fit. There is no place to put them. They interfere with progress.
+argument has been more of a distraction that has kept us from discovering more
+what the Scholarly Commons is all about. From my viewpoint, the Scholarly
+Commons is more about _enabling interactions_ and the _contributions_ that
+result from those interactions. We're either commoning or we're not. The things
+we're working with either fit together or they don't. A better word for this
+type of interactivity might be <dfn id="def:compatibility">compatibility</dfn>,
+which, in a telecommunications context, means 'the capability of two or more
+items or components of equipment or material to exist or function in the same
+system or environment without mutual interference.'[^compatibility] We use and
+build upon resources that are compatible with our manner of working. Otherwise,
+we just don't use them. They just don't fit. There is no place to put them.
+They interfere with progress.
 
 Notwithstanding all this, the main track of this workshop was designed to lead
 participants through an exercise of 'compliance checking' existing tools to see
@@ -116,9 +117,12 @@ Research, just like medicine, is not simply the matter of lining up tools into
 a usable workflow. We need to approach this problem in a systemic way. The
 problem is, we're researchers, and instead of just letting things happen the
 way most commons happen, we're trying to be informed by those that study
-commons, such as Ostrom, and attempting to build this thing from the top down.
-I've thought often how funny this is. Someone on the SCWG steering committee
-has commented that the Scholarly Commons is undertheorized, and one of the
+commons, such as Ostrom, and attempting to build this thing, or at least
+organize it, deliberately. I've often wondered whether or not this is the right
+approach, but at least I've been able to find some humor in it, since what
+other group of people on this planet besides researchers would approach solving
+a problem like this in that way? Someone on the SCWG steering committee has
+commented that the Scholarly Commons is undertheorized, and one of the
 participants of this workshop commented that the Scholarly Commons is
 underpracticed. With both I would agree. Much of the time we're talking
 hypothetically, and we really don't know how all this will play out. But I
@@ -164,13 +168,13 @@ Here are a few of the thoughts that emerged from the exercise:
 * Tools can actively hinder open if the outputs are not machine-accessible.
 * Practice is more important than tools.
 
-Now merging these results with some of my previous thinking, it is the
+Now merging these results with some previous thoughts, it is the
 _commoning_---the practices, not the tools---that needs to be compliant. Yes,
 some tools align with practices that we want to carryover into this new way of
 working, but looking back, I think if we had kept the discussion more abstract
-and focused on specific _practices_ rather than on tools, we would not have had
-the disintegration of the main track as so many of the participants left to
-join the Global South discussion. So many of the tools we were studying were
+and focused on specific _practices_ rather than on tools, we may not have had
+the disintegration of the main workshop track as so many of the participants
+left to join other discussions. So many of the tools we were studying were
 designed for the research culture and infrastructure of the Global North and
 just [did not connect with many of the people][april's blog post] that we
 brought from around the world. Even so, I did not expect the participants to
@@ -225,10 +229,10 @@ we need more than open notebook science, research protocols, or even static
 depictions of researcher workflows. All of these things are great, but they
 don't invite participation by themselves. We've talked a lot about attribution,
 but there's something more to the concept of the researcher that we're not yet
-talking about. We need something social that draws people _into_ the process
-(while, of course, preserving the attribution, integrity, and openness of the
-contributions). What about the questions and intentions of the researcher? This
-is the level at which I think we really need to be sharing.
+talking about that much. We need something social that draws people _into_ the
+process (while, of course, preserving the attribution, integrity, and openness
+of the contributions). What about the questions and intentions of the
+researcher? This is the level at which I think we really need to be sharing.
 
 Our process as a committee in defining the Scholarly Commons, aside from the
 workshops that we have held, has been mostly limited to seeking feedback when
@@ -253,9 +257,9 @@ social, cultural, and technical limitations as possible. In fact, I would argue
 that this is something intrinsic to the Scholarly Commons---we can't have
 scholarly commoning unless we open up and expose the research process to this
 level of collaboration and participation. Otherwise we're still working in
-silos, albeit smaller, distributed ones. We need the spirit of scholarship that
-existed in [the Republic of Letters][republic of letters], and it comes quite
-naturally if we can stop taking ourselves so seriously.
+silos, albeit smaller, distributed ones. We need the spirit of scholarship and
+enlightenment that existed in [the Republic of Letters][republic of letters],
+and it comes quite naturally if we can stop taking ourselves so seriously.
 
 To explain what I mean by this, allow me to give an example of my experience
 designing [the logo] for the Scholarly Commons. As I went along, I made a
