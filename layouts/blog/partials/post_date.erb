@@ -1,7 +1,0 @@
-<footer class="aside postdate section">
-  <% if item[:published_at] %>
-    <time class="big published" property="schema:datePublished" datetime="<%= h publication_date_for(item) %>"><%= ndashed(publication_date_for(item)) %></time>
-  <% else %>
-    <time class="big not-published" property="schema:dateCreated" datetime="<%= h date_for(item) %>"><%= ndashed(date_for(item)) %></time>
-  <% end %>
-</footer>

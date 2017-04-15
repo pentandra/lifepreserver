@@ -1,0 +1,5 @@
+<% if item[:published_at] %>
+  <footer class="aside pubdate section">
+      <time class="big" property="schema:datePublished" datetime="<%= h publication_date_for(item) %>"><%= ndashed(publication_date_for(item)) %></time>
+  </footer>
+<% end %>
