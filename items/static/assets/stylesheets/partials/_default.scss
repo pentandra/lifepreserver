@@ -167,7 +167,7 @@ $less-outer-margin: 48px;
 .excerpt {
 
   // Line up the published date with the article title horizontally
-  .pubdate {
+  .postdate {
     $offset: 2px;
 
     padding-top: $base-line-height - $offset;

@@ -6,7 +6,7 @@ preprocess do
 
   def mark_items_as_hidden_that_should_be_hidden
     hidden_predicates = [
-      ->(item) { @config[:production] ? (item.key?(:published) && !item[:published]) : false },
+      ->(item) { @config[:production] ? item[:published_at] : false },
       ->(item) { item.identifier.exts.include?('js') },
       ->(item) { item.identifier.ext =~ /css/ },
       ->(item) { item.identifier =~ %r{^/static/assets/components/} },

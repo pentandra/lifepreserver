@@ -38,7 +38,7 @@ module LifePreserver
     end
 
     def authors(posts = nil)
-      posts ||= @blog_posts
+      posts ||= blog_posts
       authors = Set.new
       posts.each do |post|
         author_name = post.unwrap.attributes[:author_name]
@@ -62,21 +62,23 @@ module LifePreserver
     # Get the all the posts by the given author
     # Does not create dependencies.
     #
-    # @param [Enumerable] posts the posts to filter
     # @param [String] author_name the name of the author
+    # @param [Enumerable] posts the posts to filter
     #
-    def posts_by_author(posts, author_name)
+    def posts_by_author(author_name, posts = nil)
+      posts ||= published_blog_posts
       posts.select { |post| post.unwrap.attributes[:author_name] == author_name }
     end
 
-    # Get the all the posts created during the given year
+    # Get the all the posts published during the given year
     # Does not create dependencies.
     #
+    # @param [Number] year the year of publication
     # @param [Enumerable] posts the posts to filter
-    # @param [Number] year the year
     #
-    def posts_by_year(posts, year)
-      posts.select { |post| post.unwrap.attributes[:created_at].year == year }
+    def posts_by_year(year, posts = nil)
+      posts ||= published_blog_posts
+      posts.select { |post| post.unwrap.attributes.key?(:published_at) && post.unwrap.attributes.fetch(:published_at).year == year }
     end
 
     def link_for_archive(year)
@@ -84,8 +86,8 @@ module LifePreserver
     end
 
     def archive_years(posts = nil)
-      posts ||= @blog_posts
-      years = posts.map { |a| a.unwrap.attributes[:created_at].year }.uniq
+      posts ||= published_blog_posts
+      years = posts.map { |a| a.unwrap.attributes.fetch(:published_at).year }.uniq
       years.to_a
     end
 
@@ -125,8 +127,7 @@ module LifePreserver
     # Creates in-memory blog archive pages from partial:
     # layouts/blog_archive.html
     def generate_blog_archives(item_set)
-      years = item_set.map { |a| a[:created_at].year }.uniq
-      years.each do |year|
+      archive_years(item_set).each do |year|
         @items.create(
           %(<%= render('/blog/archive.*', year: #{year}) %>),
           { title: "Articles from #{year}", kind: 'archive-page', is_hidden: true, description: "All posts written in #{year}" },

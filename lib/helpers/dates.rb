@@ -24,6 +24,10 @@ module LifePreserver
       simple_date(item.fetch(:updated_at))
     end
 
+    def publication_date_for(item)
+      simple_date(item.fetch(:published_at))
+    end
+
     def simple_date(date)
       attribute_to_time(date).strftime('%F')
     end
