@@ -6,9 +6,8 @@ meta_description: >
   systems from the bottom up that open access to knowledge.
 kind: article
 author_name: Chris Chapman
-created_at: 2014-10-24
+created_at: 2012-10-24
 updated_at: 2014-10-24
-published: false
 tags:
   - Open Access
   - Open Research

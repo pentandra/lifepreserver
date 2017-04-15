@@ -6,7 +6,7 @@ article_id: unexpected-surprises
 author_name: Katie Chapman
 created_at: 2012-06-08
 updated_at: 2012-09-27
-published: true
+published_at: 2012-06-08
 tags:
   - GrowAm
   - Funding

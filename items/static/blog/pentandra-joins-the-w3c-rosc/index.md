@@ -6,7 +6,7 @@ article_id: pentandra-joins-the-w3c-rosc
 author_name: Chris Chapman
 created_at: 2013-04-19
 updated_at: 2016-03-04
-published: true
+published_at: 2013-04-19
 tags:
   - Open Access
   - Open Research

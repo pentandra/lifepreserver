@@ -6,7 +6,6 @@ kind: article
 author_name: Chris Chapman
 created_at: 2017-02-16
 updated_at: 2017-03-22
-published: false
 tags:
   - Scholarly Commons
   - Holism

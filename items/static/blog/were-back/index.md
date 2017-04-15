@@ -6,7 +6,7 @@ article_id: we-re-back
 author_name: Katie Chapman
 created_at: 2013-02-08
 updated_at: 2013-02-08
-published: true
+published_at: 2013-02-08
 tags:
   - Geungle
   - Growth

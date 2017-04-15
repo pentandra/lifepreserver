@@ -5,7 +5,6 @@ kind: article
 author_name: Chris Chapman
 created_at: 2016-04-07
 updated_at: 2016-08-31
-published: false
 tags:
   - Enlightenment
   - Scholarly Commons

@@ -7,7 +7,8 @@ kind: article
 author_name: Chris Chapman
 created_at: 2014-10-20
 updated_at: 2014-10-20
-published: false
+tags:
+  - Genealogy
 ---
 OK. We've had people ask us why we are worrying about the bigger research
 community. Shouldn't we be focusing on genealogy?

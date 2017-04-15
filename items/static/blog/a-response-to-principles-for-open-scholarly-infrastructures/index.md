@@ -6,7 +6,6 @@ kind: article
 author_name: Chris Chapman
 created_at: 2015-05-05
 updated_at: 2015-05-05
-published: false
 tags:
   - Social Business
   - Open Research

@@ -6,7 +6,7 @@ article_id: open-business-open-booth
 author_name: Katie Chapman
 created_at: 2013-04-25
 updated_at: 2013-04-25
-published: true
+published_at: 2013-04-25
 tags:
   - Open Business
   - NGS

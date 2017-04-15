@@ -4,9 +4,9 @@ description: The need to involve more people in research.
 kind: article
 article_id: the-hairdresser-and-the-archaeologist
 author_name: Chris Chapman
-created_at: 2013-02-20
+created_at: 2013-02-13
 updated_at: 2013-03-02
-published: true
+published_at: 2013-02-20
 tags:
   - Connections
   - Holism

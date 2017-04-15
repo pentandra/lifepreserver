@@ -6,7 +6,7 @@ article_id: success-in-failure
 author_name: Katie Chapman
 created_at: 2012-05-21
 updated_at: 2012-05-21
-published: true
+published_at: 2012-05-23
 tags:
   - Funding
   - GrowAm

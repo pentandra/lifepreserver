@@ -4,8 +4,7 @@ description: A fresh look at the thing we call genealogy.
 kind: article
 author_name: Chris Chapman
 created_at: 2014-09-27
-updated_at: 2014-09-27
-published: false
+updated_at: 2017-04-03
 tags:
   - Genealogy
   - Opinionated
