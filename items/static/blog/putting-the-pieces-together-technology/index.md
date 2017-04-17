@@ -218,30 +218,36 @@ people][april's blog post] that we brought from around the world. Even so, I
 did not expect the participants to react this way, and I think this was an
 important negative result to obtain and from which we should learn.
 
+Besides the logical fallacy that I described in [the first section][on gaps and
+systems], the only thing this exercise showed us is what is common in the
+current paradigm, not necessarily what would be required in a commoning
+paradigm. The exercise was designed to find _common_ patterns, not patterns of
+commoning. Common and commoning are not the same thing, and a common practice
+does not a commons make.
+
 # The process is the product
 
 As I was sitting there in the workshop, thinking about all the above, the
 answer came to me slowly but clearly. Because the research processes were made
 explicit and studied this way, it allowed us to reason about, find patterns,
-and learn from them. We discovered that it didn't really matter as much for the
-exercise whether a tool was open or not, but it _was_ useful to know that a
+and learn from them. ~~We discovered that it didn't really matter as much for
+the exercise whether a tool was open or not, but it _was_ useful to know that a
 researcher took some data, put it in such and such tool, and that something
 came out at the end (of course open tooling makes things so much easier, but we
-need to be free to use the right tool for the job). Well, what if we could look
-at the research process in a more _functional_ way, with the tools or other
-smaller parts of the process as [black boxes][black box] within a bigger
-process? It is the _process_ that needs to be open and replicable. _So why are
-we not publishing the research process, even across tools, as the fundamental
-scholarly output?_ If knowledge discovery happens sequentially for a
-researcher, _why are we not publishing the journey of the researcher?_ If the
+need to be free to use the right tool for the job).~~ The thought occurred
+that, well, what if we could look at the research process in more of a
+_functional_ way? Isn't it the _process_ that needs to be open and replicable?
+_So why are we not publishing the research process, even across tools, as the
+fundamental scholarly output?_ If knowledge discovery happens sequentially for
+a researcher, _why are we not publishing the journey of the researcher?_ If the
 process was the product, many of the problems we are facing right now in
 scholarly communications relating to reproducibility, participation, and the
-integration of scholarship into society would greatly diminish or be eliminated
-completely. Researchers would also have something to show for all their
-thinking. The researcher's thoughts and and the process of how they arrived at
-conclusions should form the basis of research publication and collaboration.
-From this perspective, the entire research process could be viewed as a
-sequence of decisions.
+integration of scholarship into society would be greatly diminished or
+eliminated completely. Researchers would also have something to show for all
+their thinking. The researcher's thoughts and and the process of how they
+arrived at conclusions should form the basis of research publication and
+collaboration. From this perspective, the entire research process could be
+viewed as a sequence of decisions.
 
 If we keep the process implicit, or leave it to post facto analysis alone to
 attempt to reveal it, we end up not very far from where we are now: publishing
