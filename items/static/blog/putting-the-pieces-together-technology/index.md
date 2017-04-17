@@ -5,7 +5,8 @@ description: >
 kind: article
 author_name: Chris Chapman
 created_at: 2017-02-16
-updated_at: 2017-04-15
+updated_at: 2017-04-17
+cover_image_id: '/static/blog/putting-the-pieces-together-technology/scholarly_commons_backbone_using_existing_stuff.jpg'
 tags:
   - Scholarly Commons
   - Holism
@@ -22,23 +23,26 @@ about _culture_ and the Scholarly Commons at the San Diego workshop last
 September. But, as it sometimes turns out in this funny thing we call life, it
 is time to release this post, and I am still working on the one about culture.
 Don't worry---this post is not about specific technologies, but about what
-needs to be enabled by technology to allow for scholarly commoning.
+needs to be enabled by technology to allow for _scholarly commoning_.
 
-Each of us involved in this project are coming at this from different
-perspectives, so it is no surprise that we are not always in complete agreement
-about what we would like the Scholarly Commons to be. We are each a product of
-our own experiences and backgrounds, and each of our backgrounds is quite
-dissimilar. There is a general consensus, I am pretty sure, that the Scholarly
-Commons is scholarly communication in a modern setting, one in which we are not
-constrained by the limitations of print publishing. But the definition of the
-Commons goes much deeper than that, and, as they say, the devil is in the
-details. The Scholarly Commons represents scholarship reinvented for our modern
-era, and whichever the approach to do that, we are desiring to take the best of
-the past, the aspirations and thirst for understanding that have motivated
-mankind for thousands of years, and redesign the whole system from scratch to
-fit our current needs and desires, using whatever existing pieces or
-technologies that fit this new way of working, then figuring out how to build
-out the rest.
+As this is my own response to the San Diego workshop and to our discovery
+process so far relating to the Scholarly Commons, it represents my own views
+only, and not necessarily the views of those in FORCE11's Scholarly Commons
+Working Group or even that group's steering committee. Each of us involved in
+this project are coming at this from different perspectives, so it is no
+surprise that we are not always in complete agreement about what we would like
+the Scholarly Commons to be. We are each a product of our own experiences and
+backgrounds, and each of our backgrounds is quite dissimilar. There is a
+general consensus, I am pretty sure, that the Scholarly Commons is scholarly
+communication in a modern setting, one in which we are not constrained by the
+limitations of print publishing. But the definition of the Commons goes much
+deeper than that, and, as they say, the devil is in the details. The Scholarly
+Commons represents scholarship reinvented for our modern era, and whichever the
+approach to do that, we are desiring to take the best of the past, the
+aspirations and thirst for understanding that have motivated mankind for
+thousands of years, and redesign the whole system from scratch to fit our
+current needs and desires, using whatever existing pieces or technologies that
+fit this new way of working, then figuring out how to build out the rest.
 
 <!--MORE-->
 
@@ -65,18 +69,15 @@ which, in a telecommunications context, means 'the capability of two or more
 items or components of equipment or material to exist or function in the same
 system or environment without mutual interference.'[^compatibility] We use and
 build upon resources that are compatible with our manner of working. Otherwise,
-we just don't use them. They just don't fit. There is no place to put them.
-They interfere with progress.
+we just don't use them. They just don't fit. There is no place to put them, and
+because of that they don't help, but interfere with progress. Compatibility
+puts the focus on fitness for use rather than on obedience, compliance, or even
+social expectation.
 
 Notwithstanding all this, the main track of this workshop was designed to lead
 participants through an exercise of 'compliance checking' existing tools to see
 how well they conformed to the latest rendition of the principles of the
 Scholarly Commons.
-
-<figure class="img">
-  <a href="scholarly_commons_backbone_using_existing_stuff.jpg" title="Click for the whole board"><img src="scholarly_commons_backbone_using_existing_stuff_620x.jpg"/></a>
-  <figcaption>Some thoughts that emerged during the workshop, from [Björn Brembs]{lang=nl}, [Jeroen Bosman]{lang=nl}, and [Bianca Kramer]{lang=nl}, on practical pathways toward a scholarly commons using existing tools, organizations, and services.</figcaption>
-</figure>
 
 In the days leading up to the workshop, I struggled to understand the point of
 going through such an exercise. The hope was, as far as I could tell, that we
@@ -118,50 +119,78 @@ share a similar fallacy and resulting struggle in the practice of medicine:
 Research, just like medicine, is not simply the matter of lining up tools into
 a usable workflow. We need to approach this problem in a systemic way. The
 problem is, we're researchers, and instead of just letting things happen the
-way most commons happen, we're trying to be informed by those that study
-commons, such as Ostrom, and attempting to build this thing, or at least
-organize it, deliberately. I've often wondered whether or not this is the right
-approach, but at least I've been able to find some humor in it, since what
-other group of people on this planet besides researchers would approach solving
-a problem like this in that way? Someone on the SCWG steering committee has
-commented that the Scholarly Commons is undertheorized, and one of the
-participants of this workshop commented that the Scholarly Commons is
-underpracticed. With both I would agree. Much of the time we're talking
-hypothetically, and we really don't know how all this will play out. But I
-think it is good to act according to the understanding that we have to invent
-this thing, let the understanding come from where it may. Even if we avoid some
-bumps by studying commoning theory and trying to apply what we learn, I'm sure
-we'll still experience enough trial and error throughout the process to feel
-that we're doing something good. It doesn't take much current research practice
-to come to the conclusion that there must be better ways of doing things and
-that critical technologies are currently missing. But why not try to do this
-thing? Someone has to figure this out, one way or another.
+way most commons happen, we're trying to be informed by those who have studied
+commons, such as Ostrom, Bollier, or Grear, and are attempting to build this
+thing, or at least organize it, deliberately. I've often wondered whether or
+not this is the right approach, but at least I've been able to find some humor
+in it, since what other group of people on this planet besides researchers
+would approach solving a problem like this in that way? Someone on the SCWG
+steering committee has commented that the Scholarly Commons is undertheorized,
+and one of the participants of this workshop commented that the Scholarly
+Commons is underpracticed. With both I would agree. Much of the time we're
+talking hypothetically, and we really don't know how all this will play out in
+reality, but I think it is good to act according to the understanding that we
+have to invent this thing, let the understanding come from where it may. Even
+if we avoid some bumps by studying commoning theory and trying to apply what we
+learn, I'm sure we'll still experience enough trial and error throughout the
+process to feel that we're doing something good. It doesn't take much current
+research practice to come to the conclusion that there must be better ways of
+doing things and that critical technologies are currently missing. But why not
+try to do this thing? Someone has to figure this out, one way or another.
 
 # The exercise
 
 Putting those concerns aside for a moment, the compliance exercise was very
-enlightening in some unexpected ways. First, it was good to talk about current
-practices. So much of my time I spend thinking _if we could start over from
-scratch, what would the world look like?_ and I don't spend as much time
+enlightening in some unexpected ways. I need to add here that I did not
+participate directly in most of the exercises, but spent most of the day
+bobbing between the discussions going on, observing and trying to understand
+the participants' various perspectives, so my understanding of some of the
+discussions may be incomplete.
+
+<figure class="img" resource="#scholarly_commons_backbone_using_existing_stuff_as_parts" property="schema:sharedContent" typeof="schema:ImageObject">
+  <link property="schema:representativeOfPage" resource="schema:True"/>
+  <a property="schema:url" href="scholarly_commons_backbone_using_existing_stuff.jpg" title="Click for the whole board"><img property="schema:thumbnail" src="scholarly_commons_backbone_using_existing_stuff_620x.jpg"/></a>
+  <figcaption class="schema:caption">Some thoughts that emerged during the main track of the workshop, which was slowly whittled down to a few people as discussions diverged, and eventually consisted primarily of [Björn Brembs]{lang=nl}, [Jeroen Bosman]{lang=nl}, and [Bianca Kramer]{lang=nl}, on practical pathways toward a scholarly commons using existing tools, organizations, and services.</figcaption>
+</figure>
+
+That said, as for my first bit of enlightenment, it was good to talk about
+current practices. So much of my time I spend thinking _if we could start over
+from scratch, what would the world look like?_ and I don't spend as much time
 thinking about the difficulties of transition that others are facing as well as
 I need to. For example, one participant was threatened with dismissal from her
-doctoral program for wanting to publish a paper open access. Compared with Open
-Access, the Scholarly Commons is from another millennium. As much as it sounds
-nice, and [as happy as it would be to work in this new world][happy place], the
-transition to new ways of working together is not going to happen overnight. It
-is not enough to know what our destination is---we also need to know how to get
-there from where we are now.
+doctoral program for wanting to publish a paper open access. Compared with the
+Open Access movement, the Scholarly Commons is from another millennium. As much
+as it sounds nice, and [as happy as it would be to work in this new
+world][happy place], the transition to new ways of working together is not
+going to happen overnight. It is not enough to know what our destination
+is---we also need to know how to get there from where we are now.
+
+After the tools went through the 'compliance checking' activity, they were
+plotted on a graph using research phases from the current publication paradigm.
+Participants were invited at that point to describe the path that they took (if
+there was one) through these tools in the course of work in their particular
+domain of study. The participants drew their path onto a transparency that was
+overlaid on the graph of tools, and then these transparencies were grouped by
+domain...
 
 ![A tabletop spread with visual representations (line graphs) of the research
 process from several scientific domains.](science_workflows_620x.jpg)
 
-![Scientific workflows on transparency overlaid](science_workflows_overlaid_620x.jpg)
+...and then superimposed on top of each other so that common patterns could be
+seen. Here are some examples:
 
-![Social science workflows on transparency overlaid](social_science_workflows_overlaid_620x.jpg)
+![Superimposed scientific workflows](science_workflows_overlaid_620x.jpg)
 
-![Humanities workflows on transparency overlaid](humanities_workflows_overlaid_620x.jpg)
+![Superimposed social science workflows](social_science_workflows_overlaid_620x.jpg)
 
-Here are a few of the thoughts that emerged from the exercise:
+![Superimposed humanities workflows (many humanists were in the Global South discussion during this exercise)](humanities_workflows_overlaid_620x.jpg)
+
+As you can see, while there is some overlap, the paths, even within domains,
+are very idiosyncratic. People are particular about which tools they want to
+use, and often there is more than one path to take---more then one tool that
+can be used to get a job done. Thinking about it now, certain tools may even be
+used to gain a competitive advantage. Here are a few other thoughts that
+emerged from the exercise:
 
 * Bad tools are used to perform good things (often requiring some workarounds).
 * People use what they use because it works.
@@ -170,17 +199,18 @@ Here are a few of the thoughts that emerged from the exercise:
 * Tools can actively hinder open if the outputs are not machine-accessible.
 * Practice is more important than tools.
 
-Now merging these results with some previous thoughts, it is the
-_commoning_---the practices, not the tools---that needs to be compliant. Yes,
-some tools align with practices that we want to carryover into this new way of
-working, but looking back, I think if we had kept the discussion more abstract
-and focused on specific _practices_ rather than on tools, we may not have had
-the disintegration of the main workshop track as so many of the participants
-left to join other discussions. So many of the tools we were studying were
-designed for the research culture and infrastructure of the Global North and
-just [did not connect with many of the people][april's blog post] that we
-brought from around the world. Even so, I did not expect the participants to
-react this way, and I think this was an important negative result to obtain.
+Now merging these results with previous thoughts in this essay, it may be that
+it is the _commoning_---the practices, not the tools---that needs to be
+compliant. Yes, some tools align with practices that we want to carryover into
+this new way of working, but looking back, I think if we had kept the
+discussion more abstract and focused on specific _practices_ rather than on
+tools, we may not have had the eventual disintegration of the main workshop
+track as so many of the participants left to join other discussions. So many of
+the tools we were studying were designed for the research culture and
+infrastructure of the Global North and just [did not connect with many of the
+people][april's blog post] that we brought from around the world. Even so, I
+did not expect the participants to react this way, and I think this was an
+important negative result to obtain.
 
 # The process is the product
 
@@ -225,16 +255,8 @@ effectively collaborate deeper into the research process will be impeded.
 But where do we draw the line between implicit and explicit? Is it enough to
 know which tools the researcher used and when? The tools are part of it, but
 not all. We need to ask ourselves, what is our goal and what is of value in
-reaching that goal? If our goal is to create [a new culture][culture] of
-scholarship, what would change the culture? In order to create a new culture,
-we need more than open notebook science, research protocols, or even static
-depictions of researcher workflows. All of these things are great, but they
-don't invite participation by themselves. We've talked a lot about attribution,
-but there's something more to the concept of the researcher that we're not yet
-talking about that much. We need something social that draws people _into_ the
-process (while, of course, preserving the attribution, integrity, and openness
-of the contributions). What about the questions and intentions of the
-researcher? This is the level at which I think we really need to be sharing.
+reaching that goal? If our goal is to create a new culture of scholarship, what
+would change the culture?
 
 Our process as a committee in defining the Scholarly Commons, aside from the
 workshops that we have held, has been mostly limited to seeking feedback when
@@ -242,28 +264,74 @@ we were nearing a finished product. Our design process has not been very open,
 not because we we haven't wanted it to be open, but because of the lack of
 tooling that works this way. We're doing the best we can with what we have, but
 we need ways to do this better! I believe that the future really _is_ a [happy
-place]!
+place]! Throughout this exploration (and it has been a luxury to be able to
+explore this topic so intensely for so long), I have tried to be open and learn
+from the many perspectives that have contributed to the ongoing definition of
+the Commons. I have found it particularly interesting that we have not talked
+at all about the definition of _scholarship_ in this process. I think we've
+assumed that we're trying to create something for the current professional
+community of scholars and researchers. But I think revisiting our definition of
+scholarship is a necessary part of defining the Scholarly Commons.
+
+If we go back far enough, say three or four hundred years ago, scholarly
+communication didn't happen in the sort of static, dissemination-oriented way
+that it does now. People wrote letters to each other, sharing their progress in
+understanding openly. It was a collective effort to gain a greater
+understanding of the world, one which was empirical and not based on dogma. It
+united people across languages, cultures, nationalities, and backgrounds. It
+was only later that, for motivations which I think were at odds to the original
+intent and mostly based on the economical limitations of print, these letters
+were editorialized, and the scholarly article was born. Eventually researchers
+submitted articles to the journals directly, and started using publication to
+establish scientific priority. You may think that this was a natural evolution,
+but I think we lost something in the transition to more 'modern' scholarly
+communication. I am reminded of a quote that I've [shared before][research
+cases]:
+
+<figure class="bq grab" lang="en-GB">
+
+> While publication and distribution of the Philosophical Transactions
+> certainly contributed to the diffusion of knowledge, it did not provide for
+> the flexibility, openness, manoeuvrability and relative rapidity of
+> interaction that correspondence did. In short, the Society’s correspondence
+> encouraged a more participatory science.
+
+<figcaption>--- Andrea Rusnock, <a href="http://www.jstor.org/stable/4028081">Correspondence networks and the Royal Society, <span class="oldstyle">1700--1750</span></a></figcaption>
+</figure>
+
+I would argue that what we have lost we need to revive and reintroduce into our
+concept and culture of scholarship, and that this idea of '[flexibility,
+openness, manoeuvrability, and relative rapidity of interaction]{lang=en-GB}'
+is intrinsic in the idea of the Scholarly Commons. We can't have scholarly
+commoning unless we open up and expose the research process to this level of
+collaboration and participation. Otherwise we're still working in silos, albeit
+smaller, distributed ones. We need the spirit of scholarship and enlightenment
+that existed in [the Republic of Letters][republic of letters], and it comes
+quite naturally if we can stop taking ourselves so seriously.
 
 In order to create a truly open, collaborative, egalitarian culture of
 scholarship, we also need the questions, thoughts, and intentions that were in
 the researcher's mind in the first place, _as the knowledge was designed_. We
 can't continue publishing or disseminating only closed forms. We need new forms
-that [invite participation][research cases]. We need to publish the _research_.
-We need to look at research more at a _cellular_ level (or [_tesseral_
-level][vision], if you will :blush:). If we can find ways to communicate more
+that [invite participation][research cases]. We need to publish the _research_,
+exposing it more at the _cellular_ level (or [_tesseral_ level][vision], if you
+will :blush:). In order to create this new culture, we need more than open
+notebook science, research protocols, or even static depictions of researcher
+workflows. All of these things are great, but they don't invite participation
+by themselves. We've talked a lot about attribution, but there's something more
+to the concept of the researcher that we're not yet talking about that much. We
+need something social and dynamic that brings together the pieces of research
+and draws people _into_ the process (while, of course, preserving the
+attribution, integrity, and openness of the contributions). What about the
+questions and intentions of the researcher? This is the level at which I think
+we really need to be sharing. If we can find effective ways to communicate more
 openly throughout the process, many of the existing forms of scholarly
 communications will either change or go away. The Scholarly Commons should be a
 jumping-off point to new ways of working together, taking the best ideas of how
 to do scholarship in a modern setting, setting aside as many of the undesirable
-social, cultural, and technical limitations as possible. In fact, I would argue
-that this is something intrinsic to the Scholarly Commons---we can't have
-scholarly commoning unless we open up and expose the research process to this
-level of collaboration and participation. Otherwise we're still working in
-silos, albeit smaller, distributed ones. We need the spirit of scholarship and
-enlightenment that existed in [the Republic of Letters][republic of letters],
-and it comes quite naturally if we can stop taking ourselves so seriously.
+social, cultural, and technical limitations as possible.
 
-To explain what I mean by this, allow me to give an example of my experience
+To give an example of what I mean by this, allow me to share my experience
 designing [the logo] for the Scholarly Commons. As I went along, I made a
 conscious effort to explain each step, impression, question, and resulting
 decision of the design process. This is the spirit and culture of the commons!
@@ -375,6 +443,10 @@ of the answer to increasing the porosity of the boundaries between knowledge
 clubs and allowing others to play easier, more fluidly. Visitors can be guided
 to learn the ropes as quickly as possible. The existing lack of
 interoperability between tools is actually an opportunity for something better.
+The ability to find patterns and assemble these guides, providing a mechanism
+to influence and constantly improve practice, is one of the benefits of the
+Scholarly Commons over [proprietary approaches], and is something which those
+types of approaches will never be able to offer in quite the same way.
 
 # A relative advantage
 
@@ -393,17 +465,18 @@ transform the culture.
 We also need the ability to try out this new system without worry of losing
 what we already have. Rogers refers to this as trialability. The Scholarly
 Commons is something that enhances---it does not detract or take away from the
-current system, but is an alternative that can exist _alongside_ (and hopefully
-eventually displace) the current system! If you are publishing your process
-openly, there is nothing to stop you (or someone else, for that matter) from
-writing up a summary for a journal, whether open or proprietary. Either way,
-the underlying research is still open for anyone to learn from or build upon.
-The Scholarly Commons is not anti-anything, but invites all to come and
-participate.
+current system, but is an alternative that can exist _alongside_ existing
+systems! If you are publishing your process openly, there is nothing to stop
+you (or someone else, for that matter) from writing up a summary for a journal,
+whether open or proprietary. Either way, the underlying research is still open
+for anyone to learn from or build upon. The Scholarly Commons is not anti
+anything, but invites all to come and participate. And because of its nature,
+the Scholarly Commons, by definition, has the potential to scale bigger in
+scope and influence than existing systems are capable.
 
-So even though I'm working on another post about culture, if I could sum up at
-this point what the Scholarly Commons is from the perspective of technology, I
-would say:
+So even though I'm working on another post about putting the cultural pieces of
+the Scholarly Commons together, if I could, at this point, sum up what the
+Scholarly Commons is from the perspective of technology, I would say:
 
 <div class="big">
 
@@ -415,7 +488,7 @@ relating to the production and use of knowledge.
 
 So how do we get there? We're working on a [proposal] for that very purpose.
 
-[culture]: </blog/putting-the-pieces-together-culture/> "The Pentandra Blog → Putting the Pieces Together: Culture"
+[proprietary approaches]: <https://scholarlykitchen.sspnet.org/2017/02/09/cobbling-together-workflow-businesses/>
 [earlier definition]: </blog/putting-the-pieces-together-culture/#def:the-scholarly-commons> "The Scholarly Commons is the opportunity to come together and create a new culture of commoning on scholarly and scientific knowledge."
 [vision]: </#sec:research-experience> "We envision a better research experience"
 [the logo]: <https://docs.google.com/document/d/1YIxxMpcOni7alThkdVvvrnc_edKay2Ow4kiRwBDTQrs/edit> "Branding the Scholarly Commons"
