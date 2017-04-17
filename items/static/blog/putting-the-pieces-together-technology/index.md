@@ -19,7 +19,7 @@ tags:
 ---
 
 This post started as a follow-on to a post I am writing about what I learned
-about _culture_ and the Scholarly Commons at the San Diego workshop last
+about the _culture_ of the Scholarly Commons at the San Diego workshop last
 September. But, as it sometimes turns out in this funny thing we call life, it
 is time to release this post, and I am still working on the one about culture.
 Don't worry---this post is not about specific technologies, but about what
@@ -28,21 +28,23 @@ needs to be enabled by technology to allow for _scholarly commoning_.
 As this is my own response to the San Diego workshop and to our discovery
 process so far relating to the Scholarly Commons, it represents my own views
 only, and not necessarily the views of those in FORCE11's Scholarly Commons
-Working Group or even that group's steering committee. Each of us involved in
-this project are coming at this from different perspectives, so it is no
-surprise that we are not always in complete agreement about what we would like
-the Scholarly Commons to be. We are each a product of our own experiences and
-backgrounds, and each of our backgrounds is quite dissimilar. There is a
-general consensus, I am pretty sure, that the Scholarly Commons is scholarly
-communication in a modern setting, one in which we are not constrained by the
-limitations of print publishing. But the definition of the Commons goes much
-deeper than that, and, as they say, the devil is in the details. The Scholarly
-Commons represents scholarship reinvented for our modern era, and whichever the
-approach to do that, we are desiring to take the best of the past, the
-aspirations and thirst for understanding that have motivated mankind for
-thousands of years, and redesign the whole system from scratch to fit our
-current needs and desires, using whatever existing pieces or technologies that
-fit this new way of working, then figuring out how to build out the rest.
+Working Group or even its steering committee. Each of us involved in this
+project are coming at this from different perspectives, so it is no surprise
+that we are not always in complete agreement about what we would like the
+Scholarly Commons to be. We are each a product of our own experiences and
+backgrounds, and each of our backgrounds is quite dissimilar. Even though this
+makes things difficult sometimes, I view this as a good thing. There is a
+general consensus among us, I am pretty sure, that the Scholarly Commons is
+scholarly communication in a modern setting, one in which we are not
+constrained by the limitations of print publishing. But the definition of the
+Commons goes much deeper than that, and, as they say, the devil is in the
+details. The Scholarly Commons represents scholarship reinvented for our modern
+era, and whichever the approach to do that, I am hoping we'll take the best of
+the past, the aspirations and thirst for understanding that have motivated
+mankind for thousands of years, and redesign the whole system from scratch to
+fit our current needs and desires, using whatever existing pieces or
+technologies that fit this new way of working, then figuring out how to build
+out the rest.
 
 <!--MORE-->
 
@@ -52,15 +54,15 @@ One of the topics that pops up every once in a while lately in the discussions
 in the Scholarly Commons working group is the concept of _compliance_. I think
 this comes from the desire to understand what the Scholarly Commons is---to
 wrap our brains around the idea, and the hope that if we know where the
-boundaries of the Scholarly Commons are, we might be able to reduce the
+boundaries of the Scholarly Commons lie, we might be able to reduce the
 Scholarly Commons to some transparent explanatory paragraph or set of
 principles. Following that type of thinking then, the question of whether or
 not something belongs within the commons is based upon whether that thing
 _complies_ with certain agreed-upon principles. But the word _compliance_, to
 me, conveys more of a heavy-handed, top-down sort of idea, and promotes
 exclusivity over inclusivity. I think that for us over the past year this
-argument has been more of a distraction that has kept us from discovering more
-what the Scholarly Commons is all about. From my viewpoint, the Scholarly
+argument has been more of a distraction that has held us back from discovering
+more what the Scholarly Commons is all about. From my viewpoint, the Scholarly
 Commons is more about _enabling interactions_ and the _contributions_ that
 result from those interactions. We're either commoning or we're not. The things
 we're working with either fit together or they don't. A better word for this
@@ -116,15 +118,15 @@ share a similar fallacy and resulting struggle in the practice of medicine:
 <figcaption>--- Atul Gawande, <cite>The Checklist Manifesto</cite>, [2009]{.oldstyle}, pp. [184--5]{.oldstyle}</figcaption>
 </figure>
 
-Research, just like medicine, is not simply the matter of lining up tools into
-a usable workflow. We need to approach this problem in a systemic way. The
+Research, just like medicine, is not simply a matter of lining up tools into a
+usable workflow. We need to approach this problem in a systemic way. The
 problem is, we're researchers, and instead of just letting things happen the
 way most commons happen, we're trying to be informed by those who have studied
 commons, such as Ostrom, Bollier, or Grear, and are attempting to build this
 thing, or at least organize it, deliberately. I've often wondered whether or
 not this is the right approach, but at least I've been able to find some humor
 in it, since what other group of people on this planet besides researchers
-would approach solving a problem like this in that way? Someone on the SCWG
+would approach solving a problem like this in that way? A member of the SCWG
 steering committee has commented that the Scholarly Commons is undertheorized,
 and one of the participants of this workshop commented that the Scholarly
 Commons is underpracticed. With both I would agree. Much of the time we're
@@ -141,7 +143,7 @@ try to do this thing? Someone has to figure this out, one way or another.
 # The exercise
 
 Putting those concerns aside for a moment, the compliance exercise was very
-enlightening in some unexpected ways. I need to add here that I did not
+enlightening for me in some unexpected ways. I need to add here that I did not
 participate directly in most of the exercises, but spent most of the day
 bobbing between the discussions going on, observing and trying to understand
 the participants' various perspectives, so my understanding of some of the
@@ -156,22 +158,24 @@ discussions may be incomplete.
 That said, as for my first bit of enlightenment, it was good to talk about
 current practices. So much of my time I spend thinking _if we could start over
 from scratch, what would the world look like?_ and I don't spend as much time
-thinking about the difficulties of transition that others are facing as well as
-I need to. For example, one participant was threatened with dismissal from her
-doctoral program for wanting to publish a paper open access. Compared with the
-Open Access movement, the Scholarly Commons is from another millennium. As much
-as it sounds nice, and [as happy as it would be to work in this new
-world][happy place], the transition to new ways of working together is not
-going to happen overnight. It is not enough to know what our destination
-is---we also need to know how to get there from where we are now.
+thinking about the difficulties of transitioning to this new world that others
+are facing. For example, one participant was threatened with dismissal from her
+doctoral program if she chose to publish a paper open access. And that's just
+the resistance placed against the Open Access movement, which has been going on
+for many years now. Compared with the Open Access movement, the Scholarly
+Commons seems like it is from another millennium. As much as it sounds nice,
+and [as happy as it would be to work in this new world][happy place], the
+transition to new ways of working together is not going to happen overnight. It
+is not enough to know what our destination is---we also need to know how to get
+there from where we are now.
 
-After the tools went through the 'compliance checking' activity, they were
-plotted on a graph using research phases from the current publication paradigm.
-Participants were invited at that point to describe the path that they took (if
-there was one) through these tools in the course of work in their particular
-domain of study. The participants drew their path onto a transparency that was
-overlaid on the graph of tools, and then these transparencies were grouped by
-domain...
+Back to the exercise, after the tools went through the 'compliance checking'
+activity, they were plotted on a graph, grouped by research phases from the
+current publication paradigm. Participants were invited at that point to
+describe the path that they would take (if there was one) through these tools
+in the course of work in their particular domain of study. The participants
+drew their path onto a transparency that was overlaid on top of the tools, and
+then these transparencies were grouped by domain...
 
 ![A tabletop spread with visual representations (line graphs) of the research
 process from several scientific domains.](science_workflows_620x.jpg)
@@ -187,30 +191,32 @@ seen. Here are some examples:
 
 As you can see, while there is some overlap, the paths, even within domains,
 are very idiosyncratic. People are particular about which tools they want to
-use, and often there is more than one path to take---more then one tool that
+use, and often there is more than one path to take---more than one tool that
 can be used to get a job done. Thinking about it now, certain tools may even be
-used to gain a competitive advantage. Here are a few other thoughts that
-emerged from the exercise:
+used to gain a competitive advantage.
+
+Here are a few other thoughts that emerged from the exercise:
 
 * Bad tools are used to perform good things (often requiring some workarounds).
 * People use what they use because it works.
 * It's way more useful to think of what we are trying to _achieve_ with a tool,
   rather than judging a tool's intrinsic quality of compliance in isolation.
-* Tools can actively hinder open if the outputs are not machine-accessible.
+* Tools can actively hinder open if the outputs are not machine-accessible
+  using open standards.
 * Practice is more important than tools.
 
-Now merging these results with previous thoughts in this essay, it may be that
-it is the _commoning_---the practices, not the tools---that needs to be
+Now merging these results with earlier thoughts shared in this essay, it may be
+that it is the _commoning_---the practices, not the tools---that needs to be
 compliant. Yes, some tools align with practices that we want to carryover into
 this new way of working, but looking back, I think if we had kept the
 discussion more abstract and focused on specific _practices_ rather than on
 tools, we may not have had the eventual disintegration of the main workshop
-track as so many of the participants left to join other discussions. So many of
+track as so many of the participants left to join other discussions. Most of
 the tools we were studying were designed for the research culture and
 infrastructure of the Global North and just [did not connect with many of the
 people][april's blog post] that we brought from around the world. Even so, I
 did not expect the participants to react this way, and I think this was an
-important negative result to obtain.
+important negative result to obtain and from which we should learn.
 
 # The process is the product
 
@@ -451,7 +457,7 @@ types of approaches will never be able to offer in quite the same way.
 # A relative advantage
 
 To summarize, in my view we need technology to help us with two things that are
-actually very complementary: we need a way to preserve and expose our own
+actually very complementary: we need a way to expose and preserve our own
 individual journeys of discovery, and guides to help us through the process.
 
 When it comes down to it, making the transition to this new culture is, in
