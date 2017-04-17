@@ -12,7 +12,15 @@
           <dl id="document-is-part-of" class="group">
             <% part_of = @items[@item.fetch(:part_of_id)] %>
             <dt class="aside"><div class="close">Is part of</div></dt>
-            <dd class="bd"><a property="schema:isPartOf" href="<%=h path_to(part_of) %>"><%= part_of.fetch(:title) %></a></dd>
+            <dd class="bd"><%= link_to_id(part_of, property: :'schema:isPartOf') %></a></dd>
+          </dl>
+        <% end %>
+
+        <% if @item.key?(:in_reply_to_id) %>
+          <dl id="document-in-reply-to" class="group">
+            <% in_reply_to = @items[@item.fetch(:in_reply_to_id)] %>
+            <dt class="aside"><div class="close">In reply to</div></dt>
+            <dd class="bd"><a property="sioc:reply_of" href="<%= in_reply_to.fetch(:uri) %>"><%= in_reply_to.fetch(:title) %></a></dd>
           </dl>
         <% end %>
 
@@ -30,14 +38,6 @@
           <dl id="document-modified" class="group">
             <dt class="aside"><div class="close">Modified</div></dt>
             <dd class="bd"><time property="schema:dateModified" datetime="<%= simple_date(@item[:updated_at]) %>"><%= ndashed(simple_date(@item[:updated_at])) %></time></dd>
-          </dl>
-        <% end %>
-
-        <% if @item.key?(:in_reply_to_id) %>
-          <dl id="document-in-reply-to" class="group">
-            <% in_reply_to = @items[@item.fetch(:in_reply_to_id)] %>
-            <dt class="aside"><div class="close">In reply to</div></dt>
-            <dd class="bd"><a property="sioc:reply_of" href="<%= in_reply_to.fetch(:uri) %>"><%= in_reply_to.fetch(:title) %></a></dd>
           </dl>
         <% end %>
 
