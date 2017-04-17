@@ -13,6 +13,8 @@ tags:
   - FORCE11
   - Technology
   - Open Standards
+  - Essay
+  - Opinionated
 ---
 
 This post started as a follow-on to a post I am writing about what I learned
