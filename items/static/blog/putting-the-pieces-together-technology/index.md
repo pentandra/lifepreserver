@@ -118,28 +118,6 @@ share a similar fallacy and resulting struggle in the practice of medicine:
 <figcaption>--- Atul Gawande, <cite>The Checklist Manifesto</cite>, [2009]{.oldstyle}, pp. [184--5]{.oldstyle}</figcaption>
 </figure>
 
-Research, just like medicine, is not simply a matter of lining up tools into a
-usable workflow. We need to approach this problem in a systemic way. The
-problem is, we're researchers, and instead of just letting things happen the
-way most commons happen, we're trying to be informed by those who have studied
-commons, such as Ostrom, Bollier, or Grear, and are attempting to build this
-thing, or at least organize it, deliberately. I've often wondered whether or
-not this is the right approach, but at least I've been able to find some humor
-in it, since what other group of people on this planet besides researchers
-would approach solving a problem like this in that way? A member of the SCWG
-steering committee has commented that the Scholarly Commons is undertheorized,
-and one of the participants of this workshop commented that the Scholarly
-Commons is underpracticed. With both I would agree. Much of the time we're
-talking hypothetically, and we really don't know how all this will play out in
-reality, but I think it is good to act according to the understanding that we
-have to invent this thing, let the understanding come from where it may. Even
-if we avoid some bumps by studying commoning theory and trying to apply what we
-learn, I'm sure we'll still experience enough trial and error throughout the
-process to feel that we're doing something good. It doesn't take much current
-research practice to come to the conclusion that there must be better ways of
-doing things and that critical technologies are currently missing. But why not
-try to do this thing? Someone has to figure this out, one way or another.
-
 # The exercise
 
 Putting those concerns aside for a moment, the compliance exercise was very
@@ -224,6 +202,28 @@ current paradigm, not necessarily what would be required in a commoning
 paradigm. The exercise was designed to find _common_ patterns, not patterns of
 commoning. Common and commoning are not the same thing, and a common practice
 does not a commons make.
+
+Research, just like medicine, is not simply a matter of lining up tools into a
+usable workflow. We need to approach this problem in a systemic way. The
+problem is, we're researchers, and instead of just letting things happen the
+way most commons happen, we're trying to be informed by those who have studied
+commons, such as Ostrom, Bollier, or Grear, and are attempting to build this
+thing, or at least organize it, deliberately. I've often wondered whether or
+not this is the right approach, but at least I've been able to find some humor
+in it, since what other group of people on this planet besides researchers
+would approach solving a problem like this in that way? A member of the SCWG
+steering committee has commented that the Scholarly Commons is undertheorized,
+and one of the participants of this workshop commented that the Scholarly
+Commons is underpracticed. With both I would agree. Much of the time we're
+talking hypothetically, and we really don't know how all this will play out in
+reality, but I think it is good to act according to the understanding that we
+have to invent this thing, let the understanding come from where it may. Even
+if we avoid some bumps by studying commoning theory and trying to apply what we
+learn, I'm sure we'll still experience enough trial and error throughout the
+process to feel that we're doing something good. It doesn't take much current
+research practice to come to the conclusion that there must be better ways of
+doing things and that critical technologies are currently missing. But why not
+try to do this thing? Someone has to figure this out, one way or another.
 
 # The process is the product
 
