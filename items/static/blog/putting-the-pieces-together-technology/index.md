@@ -44,7 +44,8 @@ the past, the aspirations and thirst for understanding that have motivated
 mankind for thousands of years, and redesign the whole system from scratch to
 fit our current needs and desires, using whatever existing pieces or
 technologies that fit this new way of working, then figuring out how to build
-out the rest.
+out the rest, so that, in the end, we will have built 'a constellation of
+working alternatives driven by a different logic.'[^Bollier]
 
 <!--MORE-->
 
@@ -152,8 +153,8 @@ activity, they were plotted on a graph, grouped by research phases from the
 current publication paradigm. Participants were invited at that point to
 describe the path that they would take (if there was one) through these tools
 in the course of work in their particular domain of study. The participants
-drew their path onto a transparency that was overlaid on top of the tools, and
-then these transparencies were grouped by domain...
+drew their path onto a transparency that was overlaid on top of the tools.
+These transparencies were then grouped by domain...
 
 ![A tabletop spread with visual representations (line graphs) of the research
 process from several scientific domains.](science_workflows_620x.jpg)
@@ -196,34 +197,38 @@ people][april's blog post] that we brought from around the world. Even so, I
 did not expect the participants to react this way, and I think this was an
 important negative result to obtain and from which we should learn.
 
-Besides the logical fallacy that I described in [the first section][on gaps and
-systems], the only thing this exercise showed us is what is common in the
-current paradigm, not necessarily what would be required in a commoning
-paradigm. The exercise was designed to find _common_ patterns, not patterns of
-commoning. Common and commoning are not the same thing, and a common practice
-does not a commons make.
+Also, it is important to understand that, besides the logical fallacy that I
+described in [the first section][on gaps and systems], the only thing this
+exercise showed us is what is common in the current paradigm, not necessarily
+what would be required in a commoning paradigm. The exercise was designed to
+find _common patterns_, not patterns of commoning. While this was useful in
+some ways, it leaves more important questions unanswered. A commons is an
+active, living process---a dynamic, evolving social activity, more deliberately
+known as <dfn id="def:commoning">commoning</dfn>. Common and commoning are not
+the same thing, and a common practice does not a commons make.
 
-Research, just like medicine, is not simply a matter of lining up tools into a
-usable workflow. We need to approach this problem in a systemic way. The
-problem is, we're researchers, and instead of just letting things happen the
-way most commons happen, we're trying to be informed by those who have studied
-commons, such as Ostrom, Bollier, or Grear, and are attempting to build this
-thing, or at least organize it, deliberately. I've often wondered whether or
-not this is the right approach, but at least I've been able to find some humor
-in it, since what other group of people on this planet besides researchers
-would approach solving a problem like this in that way? A member of the SCWG
-steering committee has commented that the Scholarly Commons is undertheorized,
-and one of the participants of this workshop commented that the Scholarly
-Commons is underpracticed. With both I would agree. Much of the time we're
-talking hypothetically, and we really don't know how all this will play out in
-reality, but I think it is good to act according to the understanding that we
-have to invent this thing, let the understanding come from where it may. Even
-if we avoid some bumps by studying commoning theory and trying to apply what we
-learn, I'm sure we'll still experience enough trial and error throughout the
-process to feel that we're doing something good. It doesn't take much current
-research practice to come to the conclusion that there must be better ways of
-doing things and that critical technologies are currently missing. But why not
-try to do this thing? Someone has to figure this out, one way or another.
+Research or scholarship, just like medicine, is not simply a matter of lining
+up tools into a usable workflow. We need to approach this problem in a systemic
+way, considering the many and various aspects of this new system, including
+production, governance, culture, economics, and technology. The problem is,
+we're researchers, and instead of just letting things happen the way most
+commons happen, we're trying to be informed by those who have studied commons,
+such as Ostrom, Bollier, [Helfrich]{lang=nl}, or Grear, and are attempting to
+build this thing, or at least organize it, deliberately. I've often wondered
+whether or not this is the right approach, but at least I've been able to find
+some humor in it, since what other group of people on this planet besides
+researchers would approach solving a problem like this in that way? A member of
+the SCWG steering committee has commented that the Scholarly Commons is
+undertheorized, and one of the participants of this workshop commented that the
+Scholarly Commons is underpracticed. With both I would agree. Much of the time
+we're talking hypothetically, and we really don't know how all this will play
+out in reality, but I think it is good to act according to the understanding
+that we have to invent this thing, let the understanding come from where it
+may. Even if we avoid some bumps by studying commoning theory and trying to
+apply what we learn, I'm sure we'll still experience enough trial and error
+throughout the process to feel that we're doing something good. And, of course
+we can't expect to figure all of this out in one workshop. But we must address
+the right questions.
 
 # The process is the product
 
@@ -322,26 +327,26 @@ that existed in [the Republic of Letters][republic of letters], and it comes
 quite naturally if we can stop taking ourselves so seriously.
 
 In order to create a truly open, collaborative, egalitarian culture of
-scholarship, we also need the questions, thoughts, and intentions that were in
-the researcher's mind in the first place, _as the knowledge was designed_. We
-can't continue publishing or disseminating only closed forms. We need new forms
-that [invite participation][research cases]. We need to publish the _research_,
-exposing it more at the _cellular_ level (or [_tesseral_ level][vision], if you
-will :blush:). In order to create this new culture, we need more than open
-notebook science, research protocols, or even static depictions of researcher
-workflows. All of these things are great, but they don't invite participation
-by themselves. We've talked a lot about attribution, but there's something more
-to the concept of the researcher that we're not yet talking about that much. We
-need something social and dynamic that brings together the pieces of research
-and draws people _into_ the process (while, of course, preserving the
-attribution, integrity, and openness of the contributions). What about the
-questions and intentions of the researcher? This is the level at which I think
-we really need to be sharing. If we can find effective ways to communicate more
-openly throughout the process, many of the existing forms of scholarly
-communications will either change or go away. The Scholarly Commons should be a
-jumping-off point to new ways of working together, taking the best ideas of how
-to do scholarship in a modern setting, setting aside as many of the undesirable
-social, cultural, and technical limitations as possible.
+scholarship, we also need what was in the researcher's mind in the first place,
+_as the knowledge was designed_. We can't continue publishing or disseminating
+only closed forms. We need new forms that [invite participation][research
+cases]. We need to publish the _research_, exposing it more at the _cellular_
+level (or [_tesseral_ level][vision], if you will :blush:). In order to create
+this new culture, we need more than open notebook science, research protocols,
+or even static depictions of researcher workflows. All of these things are
+great, but they don't invite participation by themselves. We've talked a lot
+about attribution, but there's something more to the concept of the researcher
+that we're not yet talking about that much. We need something social and
+dynamic that brings together the pieces of research and draws people _into_ the
+process (while, of course, preserving the attribution, integrity, and openness
+of the contributions). What about the questions and intentions of the
+researcher? This is the level at which I think we really need to be sharing. If
+we can find effective ways to communicate more openly throughout the process,
+many of the existing forms of scholarly communications will either change or go
+away. The Scholarly Commons should be a jumping-off point to new ways of
+working together, taking the best ideas of how to do scholarship in a modern
+setting, setting aside as many of the undesirable social, cultural, and
+technical limitations as possible.
 
 To give an example of what I mean by this, allow me to share my experience
 designing [the logo] for the Scholarly Commons. As I went along, I made a
@@ -511,5 +516,12 @@ So how do we get there? We're working on a [proposal] for that very purpose.
 [happy place]: <https://www.force11.org/blog/future-happy-place> "The Future is a Happy Place, by Maryann Martone"
 [april's blog post]: <https://aprilhathcock.wordpress.com/2016/09/27/making-the-local-global-the-colonialism-of-scholarly-communication/>
 [proposal]: <<%# link_to_id('/static/solutions/scholarly-commoning/index.md') %>>
+
+[^Bollier]:
+
+    From David Bollier's whitepaper, <a
+    href="commoning_as_a_transformative_social_paradigm.pdf"><cite>Commoning as
+    a Transformative Social Paradigm</cite></a>, November [2015]{.oldstyle}, p.
+    [9]{.oldstyle}.
 
 [^compatibility]: From Wiktionary.
