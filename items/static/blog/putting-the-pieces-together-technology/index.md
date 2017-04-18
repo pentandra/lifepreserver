@@ -190,20 +190,21 @@ compliant. Bollier says that a commons consists not just of a resource, but of
 a _community_ that manages a _resource_ by devising its own _rules, traditions,
 and values_. A commons is an active, living process---a dynamic, evolving
 social activity,[^Bollier-community] more deliberately known as <dfn
-id="def:commoning">commoning</dfn>. At this point, you may wonder, what is the
-shared resource of the Scholarly Commons? That is a valid question that I hope
-to answer later on in this essay. For right now, let's just say that it is
-potential contributions.
+id="def:commoning">commoning</dfn>.
 
 Also, it is important to understand that, besides the logical fallacy that I
 described in [the first section][on gaps and systems], the only thing this
 exercise showed us is what is common in the current paradigm, not necessarily
 what would be required in a commoning paradigm. The exercise was designed to
 find _common patterns_, not patterns of commoning. While this was useful in
-some ways, it leaves more important questions unanswered. Common and commoning
-are not the same thing, and a common practice does not a commons make. Yes,
-some existing tools align with practices that we would likely want to carryover
-into this new way of working, but looking back, I think if we had kept the
+some ways, it leaves more important questions unanswered, such as _what is the
+shared resource of the Scholarly Commons?_ and _who is the community that
+manages that shared resource?_ If we can't find answers to these questions,
+then we really have no way to know what any of the other questions are or
+whether any of the answers we come up with are right. Common and commoning are
+not the same thing, and a common practice does not a commons make. Yes, some
+existing tools align with practices that we would likely want to carryover into
+this new way of working, but looking back, I think if we had kept the
 discussion more abstract and focused on specific _practices_ rather than on
 tools, we may not have had the eventual disintegration of the main workshop
 track as so many of the participants left to join other discussions. Most of
@@ -235,6 +236,24 @@ apply what we learn, I'm sure we'll still experience enough trial and error
 throughout the process to feel that we're doing something good. And, of course
 we can't expect to figure all of this out in one workshop. But we must address
 the right questions.
+
+My own thoughts on this, which are consistent with commons theory and echoed in
+[a blog post by Bruce Caron][collectives], is that a scholarly commons will
+form out of a need to understand something. A community will gather around this
+need out of at least two motivations:
+
+1. a desire to gain understanding of some type of knowledge
+2. a desire and ability to make hidden things known, to satiate that desire for understanding
+
+The shared resource of that community is the active and latent knowledge of
+that field of study. The subtractability of that resource is the potential
+contributions and discoveries within that field of study. Scholarly commons
+(plural) can form around any type of knowledge, and can be nested within each
+other, most likely, but not necessarily, following the structure of the
+knowledge around which they are based. It is also possible to structure these
+commons around the type of need they are trying to fill. But whatever the
+structure of these commons, we need a standard technical mechanism to tie them
+together, so that they are interoperable and can benefit each other.
 
 # The process is the product
 
@@ -332,6 +351,8 @@ smaller, distributed ones. We need the spirit of scholarship and enlightenment
 that existed in [the Republic of Letters][republic of letters], and it comes
 quite naturally if we can stop taking ourselves so seriously.
 
+# Scholarly Commoning
+
 In order to create a truly open, collaborative, egalitarian culture of
 scholarship, we also need what was in the researcher's mind in the first place,
 _as the knowledge was designed_. We can't continue publishing or disseminating
@@ -369,15 +390,15 @@ am trying to show.
 
 This to me is the essence of commoning: sharing how, why, and what we do. To do
 this, we need a way to explicitly _share_ our practice. I discussed this idea
-and the need to share our process openly in the [previous section][the process
-is the product]. Taking this idea a step further, we need a way to explicitly
-share _patterns_ of practice. Fiona Murphy and Danny Kingsley explored some
-possibilities for doing this using [decision trees] during an unworkshop
-session. Unlike the logical flow of questions that portray a researcher's prior
-journey of discovery, decision trees, in this context, describe patterns of
-practice (or _behavior_) that can guide the practice of research _going
-forward_. Decision trees direct the focus onto concrete, actionable things we
-can do.
+and the need to share our process openly in a [previous section][the process is
+the product], and [what that means][scholarly commoning]. Taking this idea a
+step further, we need a way to explicitly share _patterns_ of practice. Fiona
+Murphy and Danny Kingsley explored some possibilities for doing this using
+[decision trees] during an unworkshop session. Unlike the logical flow of
+questions that portray a researcher's prior journey of discovery, decision
+trees, in this context, describe patterns of practice (or _behavior_) that can
+guide the practice of research _going forward_. Decision trees direct the focus
+onto concrete, actionable things we can do.
 
 Of course, the idea with these decision trees is not to mandate specific
 research practices, but to create a way to practice and share our patterns of
@@ -497,6 +518,9 @@ anything, but invites all to come and participate. And because of its nature,
 the Scholarly Commons, by definition, has the potential to scale bigger in
 scope and influence than existing systems are capable.
 
+And if we are really going to create a commons, it will be for the people that
+actually care about the knowledge.
+
 So even though I'm working on another post about putting the cultural pieces of
 the Scholarly Commons together, if I could, at this point, sum up what the
 Scholarly Commons is from the perspective of technology, I would say:
@@ -522,6 +546,7 @@ So how do we get there? We're working on a [proposal] for that very purpose.
 [happy place]: <https://www.force11.org/blog/future-happy-place> "The Future is a Happy Place, by Maryann Martone"
 [april's blog post]: <https://aprilhathcock.wordpress.com/2016/09/27/making-the-local-global-the-colonialism-of-scholarly-communication/>
 [proposal]: <<%# link_to_id('/static/solutions/scholarly-commoning/index.md') %>>
+[collectives]: <https://cybersocialstructure.org/2016/10/03/think-of-science-like-an-incurable-intellectual-disease/> "Think of science like an incurable intellectual disease, by Bruce Caron"
 
 [^Bollier]:
 
