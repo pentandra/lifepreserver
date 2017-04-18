@@ -186,26 +186,32 @@ Here are a few other thoughts that emerged from the exercise:
 
 Now merging these results with earlier thoughts shared in this essay, it may be
 that it is the _commoning_---the practices, not the tools---that needs to be
-compliant. Yes, some tools align with practices that we want to carryover into
-this new way of working, but looking back, I think if we had kept the
-discussion more abstract and focused on specific _practices_ rather than on
-tools, we may not have had the eventual disintegration of the main workshop
-track as so many of the participants left to join other discussions. Most of
-the tools we were studying were designed for the research culture and
-infrastructure of the Global North and just [did not connect with many of the
-people][april's blog post] that we brought from around the world. Even so, I
-did not expect the participants to react this way, and I think this was an
-important negative result to obtain and from which we should learn.
+compliant. Bollier says that a commons consists not just of a resource, but of
+a _community_ that manages a _resource_ by devising its own _rules, traditions,
+and values_. A commons is an active, living process---a dynamic, evolving
+social activity,[^Bollier-community] more deliberately known as <dfn
+id="def:commoning">commoning</dfn>. At this point, you may wonder, what is the
+shared resource of the Scholarly Commons? That is a valid question that I hope
+to answer later on in this essay. For right now, let's just say that it is
+potential contributions.
 
 Also, it is important to understand that, besides the logical fallacy that I
 described in [the first section][on gaps and systems], the only thing this
 exercise showed us is what is common in the current paradigm, not necessarily
 what would be required in a commoning paradigm. The exercise was designed to
 find _common patterns_, not patterns of commoning. While this was useful in
-some ways, it leaves more important questions unanswered. A commons is an
-active, living process---a dynamic, evolving social activity, more deliberately
-known as <dfn id="def:commoning">commoning</dfn>. Common and commoning are not
-the same thing, and a common practice does not a commons make.
+some ways, it leaves more important questions unanswered. Common and commoning
+are not the same thing, and a common practice does not a commons make. Yes,
+some existing tools align with practices that we would likely want to carryover
+into this new way of working, but looking back, I think if we had kept the
+discussion more abstract and focused on specific _practices_ rather than on
+tools, we may not have had the eventual disintegration of the main workshop
+track as so many of the participants left to join other discussions. Most of
+the tools we were studying were designed for the research culture and technical
+infrastructures of the Global North and just [did not connect with many of the
+people][april's blog post] that we brought from around the world. Even so, I
+did not expect the participants to react this way, and I think this was an
+important negative result to obtain and from which we should learn.
 
 Research or scholarship, just like medicine, is not simply a matter of lining
 up tools into a usable workflow. We need to approach this problem in a systemic
@@ -519,9 +525,14 @@ So how do we get there? We're working on a [proposal] for that very purpose.
 
 [^Bollier]:
 
-    From David Bollier's whitepaper, <a
-    href="commoning_as_a_transformative_social_paradigm.pdf"><cite>Commoning as
-    a Transformative Social Paradigm</cite></a>, November [2015]{.oldstyle}, p.
-    [9]{.oldstyle}.
+    Bollier, David. <a href="commoning_as_a_transformative_social_paradigm.pdf">
+    <cite>Commoning as a Transformative Social Paradigm</cite></a>,
+    Nov. [2015]{.oldstyle}, p. [9]{.oldstyle}.
+
+[^Bollier-community]:
+
+    Bollier, David. <a href="commoning_as_a_transformative_social_paradigm.pdf">
+    <cite>Commoning as a Transformative Social Paradigm</cite></a>,
+    Nov. [2015]{.oldstyle}, p. [6]{.oldstyle}.
 
 [^compatibility]: From Wiktionary.
