@@ -5,7 +5,6 @@ kind: article
 author_name: Chris Chapman
 created_at: 2015-12-23
 updated_at: 2015-12-23
-published: false
 tags:
   - Citizen Science
   - Holism

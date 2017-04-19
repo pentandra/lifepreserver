@@ -1,0 +1,279 @@
+\setuppublications[alternative=apa]
+
+\definepapersize[usletter][letter][letter]
+\definepapersize[european][A4][A4]
+
+\setuppapersize[usletter]
+\doifmode{european}{\setuppapersize[european]}
+
+\setuplayout        
+  [
+    height=650pt,
+    footerdistance=2pt,
+    headerdistance=2pt,
+    backspace=200pt,
+    width=350pt,
+    grid=yes,
+  ]
+
+\definefontfeature
+  [default]
+  [default]
+  [
+    protrusion=quality,
+    expansion=quality,
+  ]
+
+\starttypescript [sans] [functionpro]
+  \definefontsynonym [FunctionPro-Light]            [name:functionprolight]
+  \definefontsynonym [FunctionPro-LightOblique]     [name:functionprolightoblique]
+  \definefontsynonym [FunctionPro-Book]             [name:functionprobook]
+  \definefontsynonym [FunctionPro-Oblique]          [name:functionprobookoblique]
+  \definefontsynonym [FunctionPro-Medium]           [name:functionpromedium]
+  \definefontsynonym [FunctionPro-MediumOblique]    [name:functionpromediumoblique]
+  \definefontsynonym [FunctionPro-Demi]             [name:functionprodemi]
+  \definefontsynonym [FunctionPro-DemiOblique]      [name:functionprodemioblique]
+  \definefontsynonym [FunctionPro-Bold]             [name:functionprobold]
+  \definefontsynonym [FunctionPro-BoldOblique]      [name:functionproboldoblique]
+  \definefontsynonym [FunctionPro-ExtraBold]        [name:functionproextrabold]
+  \definefontsynonym [FunctionPro-ExtraBoldOblique] [name:functionproextraboldoblique]
+\stoptypescript
+
+\starttypescript [sans] [functioncaps]
+  \definefontsynonym [FunctionCaps-Light]  [name:functioncapslight]
+  \definefontsynonym [FunctionCaps-Book]   [name:functioncapsbook]
+  \definefontsynonym [FunctionCaps-Medium] [name:functioncapsmedium]
+  \definefontsynonym [FunctionCaps-Demi]   [name:functioncapsdemi]
+\stoptypescript
+
+\starttypescript [sans] [functionpro]
+  \definefontsynonym [Sans]            [FunctionPro-Book]        [features=default]
+  \definefontsynonym [SansBold]        [FunctionPro-Medium]      [features=default]
+  \definefontsynonym [SansSlanted]     [FunctionPro-Oblique]     [features=default]
+  \definefontsynonym [SansBoldSlanted] [FunctionPro-BoldOblique] [features=default]
+  \definefontsynonym [SansItalic]      [SansSlanted]             [features=default]
+  \definefontsynonym [SansBoldItalic]  [SansBoldSlanted]         [features=default]
+  \definefontsynonym [SansCaps]        [FunctionCaps-Book]       [features=default]
+  \definefontsynonym [OldStyle]        [FunctionCaps-Book]       [features=default]
+\stoptypescript
+
+\starttypescript [mono] [ubuntumono]
+  \definefontsynonym [UbuntuMono-Regular]    [name:ubuntumonoregular]
+  \definefontsynonym [UbuntuMono-Italic]     [name:ubuntumonoitalic]
+  \definefontsynonym [UbuntuMono-Bold]       [name:ubuntumonobold]
+  \definefontsynonym [UbuntuMono-BoldItalic] [name:ubuntumonobolditalic]
+\stoptypescript
+
+\starttypescript [mono] [ubuntumono]
+  \definefontsynonym [Mono]           [UbuntuMono-Regular]    [features=default]
+  \definefontsynonym [MonoItalic]     [UbuntuMono-Italic]     [features=default]
+  \definefontsynonym [MonoBold]       [UbuntuMono-Bold]       [features=default]
+  \definefontsynonym [MonoBoldItalic] [UbuntuMono-BoldItalic] [features=default]
+
+  \definebodyfont [default] [tt]
+    [tf=Mono sa 0.85,
+      bf=MonoBold sa 0.85,
+      it=MonoItalic sa 0.85,
+      sl=MonoItalic sa 0.85,
+      bi=MonoBoldItalic sa 0.85,
+      bs=MonoBoldItalic sa 0.85]
+\stoptypescript
+
+\definetypeface[pentandra][rm][sans][functionpro][default]
+\definetypeface[pentandra][ss][sans][functionpro][default]
+\definetypeface[pentandra][tt][mono][ubuntumono][default]
+
+\setupbodyfont[pentandra,sans,12pt]
+
+\setupbodyfontenvironment
+  [default]
+  [em=italic]
+
+\setupalign[hz,hanging]
+
+\setupheads
+  [alternative=inmargin]
+
+\setupheadertexts
+  [{\it <%= @item[:title] %>}][chapter]
+
+\setupexternalfigures
+  [
+    location=global,
+    directory={<%= Pathname.new(@item[:filename]).realpath.dirname %>, <%= Pathname.new(@items['/static/assets/images/*'].unwrap.attributes[:filename]).realpath.dirname %>},
+  ]
+
+\definecolor[pentandrabrown][h=544233]
+\definecolor[pentandralightbrown][h=B19882]
+\definecolor[pentandradarkbrown][h=3A220E]
+\definecolor[pentandrared][h=DB1111]
+\definecolor[pentandrasalmon][h=fc804e]
+\definecolor[pentandrapurple][h=bca8fc]
+
+\setupcolors
+  [textcolor=pentandradarkbrown]
+
+\setuppagenumbering 
+  [location=marginedge,style=slanted]
+
+\startsectionblockenvironment[frontpart]
+\setuppagenumbering[location=]
+\stopsectionblockenvironment
+
+\setupwhitespace[line]
+%\setupindenting[yes,small]
+
+\setupcaptions
+  [
+    minwidth=\textwidth,
+    align=middle,
+  ]
+
+\definesymbol[1][${\tfx \blacksquare}$]
+
+\setupitemize[1][inmargin,packed]
+  [
+    stopper={\space},
+    style={\sc},
+  ]
+
+\setupdescriptions
+  [
+    headstyle=bold,
+    alternative=inmargin,
+    headcommand=\rightaligned,
+  ]
+
+\definedescription[description]
+  [
+    alternative=top,
+    headcommand=,
+    inbetween=,
+  ]
+
+\definesynonyms[abbreviation][abbreviations][\infull][\abbr]
+\setupsynonyms[abbreviation]
+  [
+    synonymstyle={\sc\nocap\kerncharacters[0.05]},
+  ]
+
+<% supported_abbreviations.each do |abbr, expanded| %>
+\abbreviation{<%= abbr %>}{<%= expanded %>}
+<% end %>
+
+\def\href#1#2{\useURL[#2][{#2}][][{#1}]\goto{\url[#2]}[url(#1)]}
+\def\ahref#1{\color[linkcolor]{\ttx \href{#1}{#1}}}
+\def\httpahref#1{\color[linkcolor]{\ttx \href{http://#1}{#1}}}
+\def\mailto#1{\useURL[#1][mailto:#1][][#1]\from[{#1}]}
+\def\MailTo#1#2{\useURL[#1][mailto:#1][][#2]\from[{#1}]}
+
+\setupinteraction
+  [
+    state=start,
+    focus=standard,
+    title={<%= @item[:title] %>},
+    author={<%= company[:full_name] %>},
+    subtitle={<%= @item[:description] %>},
+    style=normal,
+    color=pentandrared,
+    contrastcolor=pentandrared,
+  ]
+
+\setuphead[chapter]
+  [
+    style=\tfd\cap,
+    header=nomarking,
+    numberstyle=\sc,
+  ]
+
+\setuphead[section]
+  [
+    numberstyle=\sc,
+  ]
+
+\setuplist[chapter]
+          [
+            pagenumber=no,
+            style=\tfb,
+            alternative=a,
+          ]
+
+\setuplist[section]
+          [
+            pagenumber=no,
+            alternative=d,
+            interaction=sectionnumber,
+          ]
+
+\setupcombinedlist[content][list={chapter}]
+
+\setupnotation
+  [footnote]
+  [
+    numbercommand={\sc},
+  ]
+
+\definelayer
+  [meta]
+  [
+    state=repeat,
+  ]
+
+\startmode[development]
+  %\showframe
+  %\showgrid
+  %\showsetups
+  %\showbodyfont
+  %\showbodyfontenvironment
+
+  \version[temporary]
+\stopmode
+
+\startmode[identifiable]
+  \setlayer
+    [meta]
+    {\framed[
+              frame=off,
+              align=right,
+              loffset=\dimexpr(\backspace-6pt)\relax,
+              width=\dimexpr(\backspace+\textwidth)\relax,
+              height=\paperheight,
+              top=\vss,
+              bottom=,
+            ]
+            {\tfx {\inframed[background=color,backgroundcolor=white,frame=off,offset=5pt]{\tt <%= path_to(@item, global: true) %>}}\blank[2*big]}%
+    }%
+\stopmode
+
+\startmode[draft]
+  \defineoverlay
+    [draftnotice]
+    [
+      {\framed[
+                frame=off,
+                foregroundcolor=middlegray,
+              ]
+              {\scale[
+                       sx=4,
+                       sy=4,
+                     ]
+                     {\rotate[rotation=90.0]{\cap{Draft <%= @item.fetch(:kind).capitalize %> [\currentdate[year,--,mm,--,dd]]}}}%
+              }%
+      }%
+    ]
+
+  \setlayer
+    [meta]
+    {\framed[
+              frame=off,
+              width=\dimexpr\backspace-\leftmarginwidth-\leftmargindistance\relax,
+              height=\paperheight,
+              background=draftnotice,
+            ]
+            {}%
+    }%
+\stopmode
+
+\setupbackgrounds
+  [paper]
+  [background=meta]

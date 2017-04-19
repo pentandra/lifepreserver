@@ -5,7 +5,6 @@ kind: article
 author_name: Chris Chapman
 created_at: 2014-04-21
 updated_at: 2014-04-21
-published: false
 ---
 
 To be sustainable, a business must make a profit.

@@ -4,10 +4,21 @@ class Context2Pdf < Nanoc::Filter
 
   requires 'tmpdir', 'open3', 'fileutils'
 
+  class Error < ::Nanoc::Int::Errors::Generic
+    def initialize(command, exit_code)
+      @command   = command
+      @exit_code = exit_code
+    end
+
+    def message
+      "ConTeXt exited with a nonzero status code #{@exit_code} (command: #{@command.join(' ')})"
+    end
+  end
+
   def run(content, params = {})
     debug = params.fetch(:debug, false)
-    mode = params.fetch(:mode, 'draft')
-    trackers = params.fetch(:trackers, [])
+    mode = [@config.unwrap.env_name, params.fetch(:mode, 'draft')].join(',')
+    trackers = Array(params.fetch(:trackers, [])).join(',')
 
     unless system('which', 'context', out: '/dev/null')
       warn('Warning: `context` not found; PDF generation disabled.')
@@ -21,7 +32,7 @@ class Context2Pdf < Nanoc::Filter
         f.flush
 
         c = Nanoc::CLI::ANSIStringColorizer
-        cmd = ['context', '--nonstopmode', "--mode=#{mode}", "--trackers=#{trackers.join(',')}", f.path]
+        cmd = ['context', '--nonstopmode', "--mode=#{mode}", "--trackers=#{trackers}", f.path]
 
         Open3.popen3(*cmd, chdir: dir) do |_stdin, stdout, stderr, thread|
 
@@ -40,8 +51,7 @@ class Context2Pdf < Nanoc::Filter
           exit_status = thread.value
 
           unless exit_status.success?
-            puts output.read
-            raise "ConTeXt exited with a non-zero status code #{exit_status.exitstatus} (filename: #{filename})"
+            raise Error.new(cmd, exit_status.to_i)
           end
         end
 

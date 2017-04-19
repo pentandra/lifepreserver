@@ -17,7 +17,15 @@ module LifePreserver
     end
 
     def date_for(item)
-      simple_date(item[:created_at])
+      simple_date(item.fetch(:created_at))
+    end
+
+    def last_modified_date_for(item)
+      simple_date(item.fetch(:updated_at))
+    end
+
+    def publication_date_for(item)
+      simple_date(item.fetch(:published_at))
     end
 
     def simple_date(date)

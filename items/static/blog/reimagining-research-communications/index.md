@@ -5,7 +5,6 @@ kind: article
 author_name: Chris Chapman
 created_at: 2016-04-07
 updated_at: 2016-08-31
-published: false
 tags:
   - Enlightenment
   - Scholarly Commons
@@ -162,10 +161,8 @@ discoverability, participation, and reuse.
 
 <figure id="fig:workshop_participants" property="schema:image" resource="#workshop_participants" typeof="schema:ImageObject" class="img">
   <link property="schema:representativeOfPage" resource="schema:True"/>
-  <a title="View the portrait full size" property="schema:contentUrl" href="reimagining_research_communications_force11_everyone@original.jpg">
-    <img property="schema:thumbnail" class="static" alt="A portrait of all the participants of the Redefining the Scholarly Commons workshop in Madrid, Spain, February 2016" src="reimagining_research_communications_force11_everyone.jpg" />
-  </a>
-  <figcaption property="schema:caption">Participants of the workshop <i>Reimagining Scholarly Communications</i>, held in <span property="schema:contentLocation">Madrid, Spain</span>, <span property="schema:dateCreated" content="2016-02-27" datatype="schema:Date">February 2016</span>. I'm hiding (but smiling) in the back right. If you want to know who else came, check out the <a href="https://www.force11.org/group/scholarly-commons-working-group/attendee-list">participant list</a>. Thanks to <span property="schema:creator" typeof="schema:Person"><a property="schema:url" href="https://twitter.com/radicevslobodan"><span property="schema:name">Slobodan Radicev</span></a></span> for the photo.</figcaption>
+  <img property="schema:url" class="static" alt="A portrait of all the participants of the Redefining the Scholarly Commons workshop in Madrid, Spain, February 2016" src="reimagining_research_communications_force11_everyone.jpg" />
+  <figcaption property="schema:caption">Participants of the workshop <i>Reimagining Scholarly Communications</i>, held in <span property="schema:contentLocation">Madrid, Spain</span>, <span property="schema:dateCreated" content="2016-02-27" datatype="schema:Date">February 2016</span>. I'm hiding (but smiling) in the back right. Thanks to <span property="schema:creator" typeof="schema:Person"><a property="schema:url" href="https://twitter.com/radicevslobodan"><span property="schema:name">Slobodan Radicev</span></a></span> for the photo.</figcaption>
 </figure>
 
 So was the [blank-slate approach][the premise] worth it? To me, I think this

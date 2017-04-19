@@ -6,7 +6,7 @@ article_id: getting-ready-for-ngs
 author_name: Chris Chapman
 created_at: 2012-04-20
 updated_at: 2012-04-20
-published: true
+published_at: 2012-04-21
 tags:
   - NGS
   - Genealogy

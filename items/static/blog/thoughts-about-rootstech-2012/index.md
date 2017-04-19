@@ -4,9 +4,9 @@ description: Classifications of the future of genealogical software.
 kind: article
 article_id: thoughts-about-rootstech-2012
 author_name: Chris Chapman
-created_at: 2012-04-17
+created_at: 2012-02-07
 updated_at: 2012-04-17
-published: true
+published_at: 2012-04-12
 tags:
   - RootsTech
   - Review
@@ -44,7 +44,7 @@ Elizabeth Shown Mills describes three types of genealogists in her paper
 [<cite>Genealogy in the "Information Age": History's New
 Frontier?</cite>][mills' paper]:
 
-<div class="bq grab">
+<figure class="bq grab" id="fig:typology-of-genealogists">
 
 > <dfn id="def:family-tree-climbers">Family Tree Climbers</dfn>
 >
@@ -69,7 +69,7 @@ Frontier?</cite>][mills' paper]:
 > of success is not the number of family members found, but the extent to which
 > they correctly portray each human life they study.
 
-</div>
+</figure>
 
 Janet Havorka at RootsTech this year similarly described three types of
 genealogists in her lecture [Advocating Genealogy and Growing the Market:

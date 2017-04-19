@@ -1,13 +1,7 @@
 // This file must be imported before loading html5-boilerplate
 
 // default font-family
-$base-font-family: unquote('Function Pro');
-$special-font-family: unquote('Function Caps');
 $icon-font-family: unquote('lifepreserver');
-
-// default typography
-$base-font-size: 18px;
-$base-line-height: 26px;
 
 // Golden ratio
 $phi: (1 + sqrt(5))/2;
@@ -20,7 +14,7 @@ $pentandra-brown: #544233;
 $pentandra-white: #ffffff;
 $pentandra-red-shaded: #bb3131;
 
-// secondary
+// secondary colors
 $pentandra-violet: #bca8fc;
 $pentandra-yellow: #f9fc31;
 $pentandra-cyan: #4edbfc;

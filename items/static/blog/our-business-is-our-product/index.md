@@ -5,7 +5,6 @@ kind: article
 author_name: Chris Chapman
 created_at: 2015-02-02
 updated_at: 2015-02-02
-published: false
 tags:
   - Open Business
   - Funding

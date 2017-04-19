@@ -6,7 +6,7 @@ article_id: i-ll-take-door-number
 author_name: Katie Chapman
 created_at: 2012-05-02
 updated_at: 2012-05-02
-published: true
+published_at: 2012-05-02
 tags:
   - Funding
   - Decisions

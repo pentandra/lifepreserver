@@ -4,7 +4,6 @@ kind: article
 author_name: Chris Chapman
 created_at: 2012-09-25
 updated_at: 2012-09-26
-published: false
 ---
 
 I have been meaning to write this article for a long time.

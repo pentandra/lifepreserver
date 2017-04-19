@@ -19,9 +19,9 @@
   </section>
   <section class="grab banner section">
     <div class="fancy wrapper group pod">
-      <h3 class="big">Share</h3>
-      <div class="menu nav section icons big" id="share">
-        <% if @item[:published] %>
+      <% if @item[:published_at] %>
+        <h3 class="big">Share</h3>
+        <div class="menu nav section icons big" id="share">
           <ul class="centered">
             <li>
               <a href="<%= %[https://plus.google.com/share?url=#{short_url_for(@item)}] %>" title="Share this article on Google+">
@@ -48,10 +48,10 @@
               </a>
             </li>
           </ul>
-        <% else %>
-          (not published)
-        <% end %>
-      </div>
+        </div>
+      <% else %>
+        <p><em>Please don't share this post publicly, as it has not yet been published.</em></p>
+      <% end %>
     </div>
   </section>
   <nav class="section banner">

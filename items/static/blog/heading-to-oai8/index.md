@@ -6,7 +6,7 @@ article_id: heading-to-oai8
 author_name: Chris Chapman
 created_at: 2013-04-29
 updated_at: 2017-02-15
-published: true
+published_at: 2013-04-29
 tags:
   - Open Research
   - OAI

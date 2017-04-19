@@ -4,7 +4,6 @@ kind: article
 author_name: Chris Chapman
 created_at: 2011-10-22
 updated_at: 2011-10-22
-published: false
 tags:
   - Essay
   - Opinionated
