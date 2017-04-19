@@ -87,7 +87,7 @@ module LifePreserver
 
     def archive_years(posts = nil)
       posts ||= published_blog_posts
-      years = posts
+      posts
         .select { |post| post.unwrap.attributes.key?(:published_at) }
         .map { |post| post.unwrap.attributes.fetch(:published_at).year }
         .uniq
