@@ -315,6 +315,8 @@ assumed that we're trying to create something for the current professional
 community of scholars and researchers. But I think revisiting our definition of
 scholarship is a necessary part of defining the Scholarly Commons.
 
+# Scholarly Commoning
+
 If we go back far enough, say three or four hundred years ago, scholarly
 communication didn't happen in the sort of static, dissemination-oriented way
 that it does now. People wrote letters to each other, sharing their progress in
@@ -352,8 +354,6 @@ of the research process. Otherwise we're still working in silos, albeit
 smaller, distributed ones. We need the spirit of scholarship and enlightenment
 that existed in [the Republic of Letters][republic of letters], and it comes
 quite naturally if we can stop taking ourselves so seriously.
-
-# Scholarly Commoning
 
 In order to create a truly open, collaborative, egalitarian culture of
 scholarship, we also need what was in the researcher's mind in the first place,
