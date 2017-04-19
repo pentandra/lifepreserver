@@ -453,10 +453,10 @@ collective intelligence in a common search for truth.
 
 But we don't need to stop there! Once we have removed barriers to the
 production of knowledge, what is to stop us from using this knowledge freely to
-improve the lives of everyone!? Continuing from the [previous
-quote](#systems-vs-components) which spoke about the focus on components that
-has led to a lack of systemic excellence in the practice of medicine, Gawande
-provides some direction for the future:
+improve the lives of everyone!? Continuing from his [previous
+quote](#systems-vs-components) about the focus on components that has led to a
+lack of systemic excellence in the practice of medicine, Gawande provides some
+direction for the future:
 
 <figure class="bq grab">
 
