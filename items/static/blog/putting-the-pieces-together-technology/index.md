@@ -201,25 +201,27 @@ described in [the first section][on gaps and systems], the only thing this
 exercise showed us is what is _common_ in the current paradigm, not necessarily
 what would be required in a _commoning paradigm_. The exercise was designed to
 find _common patterns_, not patterns of commoning. While this was useful in
-some ways, it leaves more important questions unanswered, such as _what is the
-shared resource of the Scholarly Commons?_ and _who is the community that
-manages that shared resource?_ If we can't find answers to these questions,
-then we really have no way to know what any of the other questions are or
-whether any of the answers we come up with are right. Common and commoning are
-not the same thing, and a common practice does not a commons make. Yes, some
-existing tools align with practices that we would likely want to carryover into
-this new way of working, but looking back, the focus of this exercise was much
-too narrow. I think if we had kept the discussion more abstract and focused on
-specific _practices_ rather than on specific tools, we may not have had the
-eventual disintegration of the main workshop track [as so many of the
-participants left][ravi's blog post] to join other discussions. Most of the
-tools we were studying were designed for the research culture and technical
-infrastructures of the Global North and just [did not connect with many of the
-people][april's blog post] that we brought from around the world. Perhaps even
-a focus on specific practices would have been too narrow as well, and we should
-have taken a step back and discussed the need for peer-production. Even so, I
-did not expect the participants to react this way, and I think this was an
-important negative result to obtain and from which we should learn.
+some ways, it leaves more important questions unanswered, such as _is there a
+shared resource of the Scholarly Commons? If so, what is it? and who is the
+community that manages that shared resource?_ If we can't find answers to these
+questions, then we really have no way to know what any of the other questions
+are or whether any of the answers we come up with are right. Common and
+commoning are not the same thing, and a common practice does not a commons
+make. Yes, some existing tools align with practices that we would likely want
+to carryover into this new way of working, but looking back, I think the focus
+of this exercise was too narrow. If we had kept the discussion more abstract
+and focused on specific _practices_ rather than on specific tools, we may not
+have had the eventual disintegration of the main workshop track as so many of
+the participants left to join [other excellent discussions][ravi's blog post].
+Most of the tools we were studying in this exercise were designed for the
+research culture and technical infrastructures of the Global North and just
+[may not have connected with many of the people][april's blog post] that we
+brought from around the world. But perhaps even a focus on specific practices
+would have been too narrow as well, and we should have taken a step back and
+discussed something else, such as the need for and approaches to global
+peer-production. Even so, I did not expect the participants to react this way,
+and I think this was an important negative result to obtain and from which we
+should learn.
 
 Research or scholarship, just like medicine, is not simply a matter of lining
 up tools into a usable workflow. We need to approach this problem in a systemic
@@ -245,7 +247,7 @@ My thoughts on this, which are consistent with commons theory and echoed in [a
 blog post by Bruce Caron][collectives], is that a scholarly commons will form
 out of a need to understand something. A commons will be formed by people that
 actually care about the knowledge: a collective. This collective will gather
-around this need out of at least two motivations:
+around a need out of at least two motivations:
 
 1. a desire to gain understanding of some type of knowledge
 2. a desire and ability to make hidden things known, to satiate that desire for
@@ -259,7 +261,7 @@ other, most likely, but not necessarily, following the structure of the
 knowledge around which they are based. It is also possible to structure these
 commons around the type of need they are trying to fill. But whatever the
 structure of these commons, we need a standard technical mechanism to tie them
-together, so that they are interoperable and mutually beneficial.
+together, so that they are mutually interoperable and beneficial.
 
 # The process is the product
 
