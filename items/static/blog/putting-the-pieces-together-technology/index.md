@@ -281,10 +281,13 @@ and the process of how they arrived at conclusions should form the basis of
 research publication and collaboration. From this perspective, the entire
 research process could be viewed as a sequence of decisions.
 
-If we keep the process implicit, or leave it to post facto analysis alone to
-attempt to reveal it, we end up not very far from where we are now: publishing
-_about_ the research, instead of publishing _research_, and our ability to
-effectively collaborate deeper into the research process will be impeded.
+I'm not advocating here that we capture a complete record of everything that a
+researcher is doing. But we need make explicit this common thread---this
+sequence of decisions---that drives the research forward. If we keep this part
+implicit, or leave it to ex post facto analysis alone to attempt to reveal it,
+we end up not very far from where we are now: publishing _about_ the research,
+instead of publishing _research_, and our ability to effectively collaborate
+deeper into the research process will be impeded.
 
 <figure class="bq grab">
 
@@ -298,9 +301,9 @@ effectively collaborate deeper into the research process will be impeded.
 
 But where do we draw the line between implicit and explicit? Is it enough to
 know which tools the researcher used and when? The tools are part of it, but
-not all. We need to ask ourselves, what is our goal and what is of value in
-reaching that goal? If our goal is to create a new culture of scholarship, what
-would change the culture?
+not all. We need to ask ourselves, _what is our goal?_ and then _what is of
+value in reaching that goal?_ If our goal is to create a new culture of
+scholarship, _what would change the culture?_
 
 Our process as a committee in defining the Scholarly Commons, aside from the
 workshops that we have held, has been mostly limited to seeking feedback when
