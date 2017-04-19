@@ -488,32 +488,33 @@ the potential to make a real difference in how we practice, not just as
 researchers but as practitioners in many other fields, and may even blur the
 line between researchers and practitioners.
 
-As much as we've focused on principles and culture (and they are certainly the
-driving force in this effort!), we need an enabling infrastructure for
-commoning. We need to make the discovery process easier, and enlarge the doors
-and allow others to come and participate in this great endeavor! This is part
-of the answer to increasing the porosity of the boundaries between knowledge
-clubs and allowing others to play easier, more fluidly. Visitors can be guided
-to learn the ropes as quickly as possible. The existing lack of
-interoperability between tools is actually an opportunity for something better.
-The ability to find patterns and assemble these guides, providing a mechanism
-to influence and constantly improve practice, is one of the benefits of the
-Scholarly Commons over [proprietary approaches], and is something which those
-types of approaches will never be able to offer in quite the same way.
+This is part of the answer to increasing the porosity of the boundaries between
+knowledge clubs and allowing others to play easier, more fluidly. Visitors can
+be guided to learn the ropes as quickly as possible. The ability to find
+patterns and assemble these guides, providing a mechanism to influence and
+constantly improve practice, is one of the benefits of the Scholarly Commons
+over [proprietary approaches], and is something which those types of approaches
+will never be able to offer in quite the same way.
 
 # A relative advantage
 
 To summarize, in my view we need technology to help us with two things that are
 actually very complementary: we need a way to expose and preserve our own
-individual journeys of discovery, and guides to help us through the process.
+individual journeys of discovery, and guides to help us through the process. As
+much as we've focused on principles and culture (and they are certainly the
+driving force in this effort!), we need an enabling infrastructure for
+commoning. We need to make the scholarly and scientific process easier, and
+then enlarge the doors and allow others to come and participate in this great
+endeavor!
 
 When it comes down to it, making the transition to this new culture is, in
-large part, a user experience problem. Going back to Everett Rogers'
-<cite>Diffusion of Innovations</cite>, we need an advantage over the current
-system. If we can create a better research experience, one that is open and
-invites anyone that desires to come and play and bring what they have to offer,
-then we have created an advantage. We will then have the potential and power to
-transform the culture.
+large part, a user experience problem. The existing lack of interoperability
+between tools is actually an opportunity for something better. Going back to
+Everett Rogers' <cite>Diffusion of Innovations</cite>, we need an advantage
+over the current system. If we can create a better research experience, one
+that is open and invites anyone that desires to come and play and bring what
+they have to offer, then we have created an advantage. We will then have the
+potential and power to transform the culture.
 
 We also need the ability to try out this new system without worry of losing
 what we already have. Rogers refers to this as trialability. The Scholarly
