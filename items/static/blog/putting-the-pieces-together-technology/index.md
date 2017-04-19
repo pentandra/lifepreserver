@@ -188,6 +188,26 @@ Here are a few other thoughts that emerged from the exercise:
   using open standards.
 * Practice is more important than tools.
 
+Research or scholarship, just like medicine, is not simply a matter of lining
+up tools into a usable workflow. We need to approach this problem in a systemic
+way, considering the many and various aspects of this new system, including
+production, governance, culture, economics, and technology. The problem is,
+we're researchers, and instead of just letting things happen the way most
+commons happen, we are trying to be informed by those who have studied commons,
+such as Ostrom, Bollier, [Helfrich]{lang=nl}, or Grear, and are attempting to
+build this thing, or at least organize it, deliberately. A member of the SCWG
+steering committee has commented that the Scholarly Commons is undertheorized,
+and one of the participants of this workshop commented that the Scholarly
+Commons is underpracticed. With both I would agree. Much of the time we're
+talking hypothetically, and we really don't know how all this will play out in
+reality. But I think it is good to act according to the understanding that we
+have to create this thing, let the understanding come from where it may. Even
+if we avoid some bumps by trying to apply what we learn from commoning theory,
+I'm sure we'll still experience enough trial and error throughout the process
+to feel that we're doing something good. And, of course we can't expect to
+figure all of this out in one workshop. But we must address the right
+questions. And we need to have the right goal.
+
 Merging these results with some earlier thoughts shared in this essay, it may
 be the _commoning_---the practices, not the tools---that needs to be compliant.
 Bollier says that a commons consists not just of a resource (such as tools),
@@ -222,26 +242,6 @@ discussed something else, such as the need for and approaches to global
 peer-production. Even so, I did not expect the participants to react this way,
 and I think this was an important negative result to obtain and from which we
 should learn.
-
-Research or scholarship, just like medicine, is not simply a matter of lining
-up tools into a usable workflow. We need to approach this problem in a systemic
-way, considering the many and various aspects of this new system, including
-production, governance, culture, economics, and technology. The problem is,
-we're researchers, and instead of just letting things happen the way most
-commons happen, we are trying to be informed by those who have studied commons,
-such as Ostrom, Bollier, [Helfrich]{lang=nl}, or Grear, and are attempting to
-build this thing, or at least organize it, deliberately. A member of the SCWG
-steering committee has commented that the Scholarly Commons is undertheorized,
-and one of the participants of this workshop commented that the Scholarly
-Commons is underpracticed. With both I would agree. Much of the time we're
-talking hypothetically, and we really don't know how all this will play out in
-reality. But I think it is good to act according to the understanding that we
-have to create this thing, let the understanding come from where it may. Even
-if we avoid some bumps by trying to apply what we learn from commoning theory,
-I'm sure we'll still experience enough trial and error throughout the process
-to feel that we're doing something good. And, of course we can't expect to
-figure all of this out in one workshop. But we must address the right
-questions. And we need to have the right goal.
 
 My thoughts on this, which are consistent with commons theory and echoed in [a
 blog post by Bruce Caron][collectives], is that a scholarly commons will form
