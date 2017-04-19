@@ -45,7 +45,8 @@ mankind for thousands of years, and redesign the whole system from scratch to
 fit our current needs and desires, using whatever existing pieces or
 technologies that fit this new way of working, then figuring out how to build
 out the rest, so that, hopefully, in the end, we will have built 'a
-constellation of working alternatives driven by a different logic.'[^Bollier]
+constellation of working alternatives driven by a different
+logic.'[^constellation]
 
 <!--MORE-->
 
@@ -209,15 +210,15 @@ existing tools align with practices that we would likely want to carryover into
 this new way of working, but looking back, the focus of this exercise was much
 too narrow. I think if we had kept the discussion more abstract and focused on
 specific _practices_ rather than on specific tools, we may not have had the
-eventual disintegration of the main workshop track as so many of the
-participants left to join other discussions. Most of the tools we were studying
-were designed for the research culture and technical infrastructures of the
-Global North and just [did not connect with many of the people][april's blog
-post] that we brought from around the world. Perhaps even a focus on specific
-practices would have been too narrow as well, and we should have taken a step
-back and discussed the need for peer-production. Even so, I did not expect the
-participants to react this way, and I think this was an important negative
-result to obtain and from which we should learn.
+eventual disintegration of the main workshop track [as so many of the
+participants left][ravi's blog post] to join other discussions. Most of the
+tools we were studying were designed for the research culture and technical
+infrastructures of the Global North and just [did not connect with many of the
+people][april's blog post] that we brought from around the world. Perhaps even
+a focus on specific practices would have been too narrow as well, and we should
+have taken a step back and discussed the need for peer-production. Even so, I
+did not expect the participants to react this way, and I think this was an
+important negative result to obtain and from which we should learn.
 
 Research or scholarship, just like medicine, is not simply a matter of lining
 up tools into a usable workflow. We need to approach this problem in a systemic
@@ -264,24 +265,19 @@ together, so that they are interoperable and mutually beneficial.
 As I was sitting there in the workshop, thinking about all the above, the
 answer came to me slowly but clearly. Because the research processes were made
 explicit and studied this way, it allowed us to reason about, find patterns,
-and learn from them. ~~We discovered that it didn't really matter as much for
-the exercise whether a tool was open or not, but it _was_ useful to know that a
-researcher took some data, put it in such and such tool, and that something
-came out at the end (of course open tooling makes things so much easier, but we
-need to be free to use the right tool for the job).~~ The thought occurred
-that, well, what if we could look at the research process in more of a
-_functional_ way? Isn't it the _process_ that needs to be open and replicable?
-_So why are we not publishing the research process, even across tools, as the
-fundamental scholarly output?_ If knowledge discovery happens sequentially for
-a researcher, _why are we not publishing the journey of the researcher?_ If the
-process was the product, many of the problems we are facing right now in
-scholarly communications relating to reproducibility, participation, and the
-integration of scholarship into society would be greatly diminished or
-eliminated completely. Researchers would also have something to show for all
-their thinking. The researcher's thoughts and and the process of how they
-arrived at conclusions should form the basis of research publication and
-collaboration. From this perspective, the entire research process could be
-viewed as a sequence of decisions.
+and learn from them. The thought occurred that, well, what if we could look at
+the research process in more of a _functional_ way? Isn't it the _process_ that
+needs to be open and replicable? _So why are we not publishing the research
+process, even across tools, as the fundamental scholarly output?_ If knowledge
+discovery happens sequentially for a researcher, _why are we not publishing the
+journey of the researcher?_ If the process was the product, many of the
+problems we are facing right now in scholarly communications relating to
+reproducibility, participation, and the integration of scholarship into society
+would be greatly diminished or eliminated completely. Researchers would also
+have something to show for all their thinking. The researcher's thoughts and
+and the process of how they arrived at conclusions should form the basis of
+research publication and collaboration. From this perspective, the entire
+research process could be viewed as a sequence of decisions.
 
 If we keep the process implicit, or leave it to post facto analysis alone to
 attempt to reveal it, we end up not very far from where we are now: publishing
@@ -344,7 +340,7 @@ cases]:
 > interaction that correspondence did. In short, the Society’s correspondence
 > encouraged a more participatory science.
 
-<figcaption>--- Andrea Rusnock, <a href="http://www.jstor.org/stable/4028081">Correspondence networks and the Royal Society, <span class="oldstyle">1700--1750</span></a></figcaption>
+<figcaption>--- [Andrea Rusnock]{lang=en-US}, <a href="http://www.jstor.org/stable/4028081">Correspondence networks and the Royal Society, <span class="oldstyle">1700--1750</span></a></figcaption>
 </figure>
 
 I would argue that what we have lost we need to revive and reintroduce into our
@@ -550,16 +546,17 @@ So how do we get there? We're working on a [proposal] for that very purpose.
 [april's blog post]: <https://aprilhathcock.wordpress.com/2016/09/27/making-the-local-global-the-colonialism-of-scholarly-communication/>
 [proposal]: <<%# link_to_id('/static/solutions/scholarly-commoning/index.md') %>>
 [collectives]: <https://cybersocialstructure.org/2016/10/03/think-of-science-like-an-incurable-intellectual-disease/> "Think of science like an incurable intellectual disease, by Bruce Caron"
+[ravi's blog post]: <http://blog.inasp.info/miles-scholarly-commons-global-academic-norm-2/> "Miles to go for Scholarly Commons to become a global academic norm, by Ravi Murugesan"
 
-[^Bollier]:
+[^constellation]:
 
-    Bollier, David. <a href="commoning_as_a_transformative_social_paradigm.pdf">
+    Bollier, David. <a href="https://hyp.is/upj6uiSeEee-Q6M26eFALg/thenextsystem.org/commoning-as-a-transformative-social-paradigm/">
     <cite>Commoning as a Transformative Social Paradigm</cite></a>,
     Nov. [2015]{.oldstyle}, p. [9]{.oldstyle}.
 
 [^Bollier-community]:
 
-    Bollier, David. <a href="commoning_as_a_transformative_social_paradigm.pdf">
+    Bollier, David. <a href="https://hyp.is/m-y5CiShEeeVrhfwB2Ooww/thenextsystem.org/commoning-as-a-transformative-social-paradigm/">
     <cite>Commoning as a Transformative Social Paradigm</cite></a>,
     Nov. [2015]{.oldstyle}, p. [6]{.oldstyle}.
 
