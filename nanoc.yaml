@@ -14,12 +14,12 @@ checks: &checks
 deploy:
   public:
     kind: rsync
-    dst: "pentandra.com:/srv/http/lifepreserver"
-    options: [ '-gpPrtvz', '--delete-after' ]
+    dst: "root@pentandra.com:/srv/http/lifepreserver"
+    options: [ '-gplPrtvz', '--delete-after', '--exclude=/logs' ]
   staging:
     kind: rsync
     dst: "vlad@rebikov.process.tree:/srv/http/lifepreserver"
-    options: [ '-gpPrtvz', '--delete-after' ]
+    options: [ '-gplPrtvz', '--delete-after' ]
 
 prune:
   auto_prune: true
