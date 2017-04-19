@@ -24,12 +24,12 @@ compile %r{/static/company/benefit-reports/(\d{4})/index\.md}, rep: :pdf_letter 
   ]
   filter :absolutify_paths, type: :context
   layout '/benefit_reports/report.*'
-  snapshot :context, path: item.identifier.without_ext + '.tex' unless @config[:production]
+  snapshot :context, path: File.dirname(item.identifier.to_s) + "/UT_Pentandra_report_#{fiscal_year}.tex" unless @config[:production]
   filter :context2pdf, @config.fetch(:context2pdf, {}).merge(mode: @item.key?(:wip) ? 'draft' : 'publish')
   write File.dirname(item.identifier.to_s) + "/UT_Pentandra_report_#{fiscal_year}.pdf"
 end
 
-compile %r{/static/company/benefit-reports/(\d{4})/index\.md}, rep: :pdf_A4 do |fiscal_year, _|
+compile %r{/static/company/benefit-reports/(\d{4})/index\.md}, rep: :pdf_a4 do |fiscal_year, _|
   filter :erb
   filter :pandoc, args: [
     { from: :markdown, to: :context },
@@ -37,8 +37,8 @@ compile %r{/static/company/benefit-reports/(\d{4})/index\.md}, rep: :pdf_A4 do |
   ]
   filter :absolutify_paths, type: :context
   layout '/benefit_reports/report.*'
-  snapshot :context, path: item.identifier.without_ext + '_a4.tex' unless @config[:production]
-  filter :context2pdf, @config.fetch(:context2pdf, {}).merge(mode: [ @item[:wip] ? 'draft' : 'publish', 'european' ] )
+  snapshot :context, path: File.dirname(item.identifier.to_s) + "/UT_Pentandra_report_#{fiscal_year}_a4.tex" unless @config[:production]
+  filter :context2pdf, @config.fetch(:context2pdf, {}).merge(mode: [ @item.key?(:wip) ? 'draft' : 'publish', 'european' ] )
   write File.dirname(item.identifier.to_s) + "/UT_Pentandra_report_#{fiscal_year}_a4.pdf"
 end
 

@@ -6,7 +6,7 @@ article_id: a-more-focused-mission
 author_name: Chris Chapman
 created_at: 2013-06-13
 updated_at: 2013-10-15
-published: true
+published_at: 2013-06-13
 tags:
   - Open Business
   - Growth

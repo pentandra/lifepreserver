@@ -16,8 +16,8 @@ module LifePreserver
       Digest::MD5.hexdigest(text)
     end
 
-    def ndashed(string)
-      string.to_s.gsub('-', '<span class="ndash">--</span>')
+    def ndashed(string, type: :html)
+      string.to_s.gsub('-', type == :html ? '<span class="ndash">--</span>': '--')
     end
   end
 end

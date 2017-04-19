@@ -1,43 +1,57 @@
 <% render('/default.*') do %>
-  <article class="group proposal" resource="#proposal" typeof="schema:Report" property="schema:mainEntity">
+  <article class="group proposal" resource="#proposal" typeof="fabio:Proposition" property="schema:mainEntity">
     <header class="section">
       <h1 property="dc:title schema:headline"><%= @item[:title] %></h1>
       <div class="meta">
-        <dl class="group">
-          <dt id="document-id" class="aside"><div class="close">Document ID</div></dt>
+        <dl id="document-id" class="group">
+          <dt class="aside"><div class="close">Document ID</div></dt>
           <dd class="bd"><a class="uri" href="<%= path_to(@item, global: true) %>"><%= path_to(@item, global: true) %></a></dd>
+        </dl>
 
-          <% if @item.key?(:part_of_id) %>
+        <% if @item.key?(:part_of_id) %>
+          <dl id="document-is-part-of" class="group">
             <% part_of = @items[@item.fetch(:part_of_id)] %>
-            <dt id="document-is-part-of" class="aside"><div class="close">Is part of</div></dt>
-            <dd class="bd"><a property="schema:isPartOf" href="<%=h path_to(part_of) %>"><%= part_of.fetch(:title) %></a></dd>
-          <% end %>
+            <dt class="aside"><div class="close">Is part of</div></dt>
+            <dd class="bd"><%= link_to_id(part_of, property: :'schema:isPartOf') %></a></dd>
+          </dl>
+        <% end %>
 
-          <dt id="document-status" class="status aside"><div class="close">Status</div></dt>
-          <dd class="status bd centered up"><div class="<%= @item.fetch(:status, 'unpublished') %>"><%= @item.fetch(:status, 'unpublished') %></div></dd>
-
-          <dt id="document-published" class="aside"><div class="close">Published</div></dt>
-          <dd class="bd"><time property="schema:datePublished" datetime="<%= date_for(@item) %>"><%= ndashed(date_for(@item)) %></time></dd>
-
-          <% if @item[:updated_at] > @item[:created_at] then %>
-            <dt id="document-modified" class="aside"><div class="close">Modified</div></dt>
-            <dd class="bd"><time property="schema:dateModified" datetime="<%= simple_date(@item[:updated_at]) %>"><%= ndashed(simple_date(@item[:updated_at])) %></time></dd>
-          <% end %>
-
-          <% if @item.key?(:in_reply_to_id) %>
+        <% if @item.key?(:in_reply_to_id) %>
+          <dl id="document-in-reply-to" class="group">
             <% in_reply_to = @items[@item.fetch(:in_reply_to_id)] %>
-            <dt id="document-in-reply-to" class="aside"><div class="close">In reply to</div></dt>
+            <dt class="aside"><div class="close">In reply to</div></dt>
             <dd class="bd"><a property="sioc:reply_of" href="<%= in_reply_to.fetch(:uri) %>"><%= in_reply_to.fetch(:title) %></a></dd>
-          <% end %>
+          </dl>
+        <% end %>
 
+        <dl id="document-status" class="group status">
+          <dt class="aside"><div class="close">Status</div></dt>
+          <dd class="bd centered up"><div class="<%= @item.fetch(:status, 'unpublished') %>"><%= @item.fetch(:status, 'unpublished') %></div></dd>
+        </dl>
+
+        <dl id="document-published" class="group">
+          <dt class="aside"><div class="close">Published</div></dt>
+          <dd class="bd"><time property="schema:datePublished" datetime="<%= date_for(@item) %>"><%= ndashed(date_for(@item)) %></time></dd>
+        </dl>
+
+        <% if @item[:updated_at] > @item[:created_at] then %>
+          <dl id="document-modified" class="group">
+            <dt class="aside"><div class="close">Modified</div></dt>
+            <dd class="bd"><time property="schema:dateModified" datetime="<%= simple_date(@item[:updated_at]) %>"><%= ndashed(simple_date(@item[:updated_at])) %></time></dd>
+          </dl>
+        <% end %>
+
+        <dl id="document-alternative-representations" class="group">
+          <dt class="aside"><div class="close">Alternative representations</div></dt>
+          <dd class="bd"><a rel="alternate" type="application/pdf" href="<%= path_to(@item, rep: :pdf_letter) %>"><abbr>PDF</abbr>, size: <abbr>US</abbr> letter</a></dd>
+          <dd class="bd"><a rel="alternate" type="application/pdf" href="<%= path_to(@item, rep: :pdf_a4) %>"><abbr>PDF</abbr>, size: <abbr>ISO</abbr> <abbr>A4</abbr></a></dd>
         </dl>
       </div>
       <meta property="schema:copyrightYear" datatype="xsd:gYear" content="<%= @item[:created_at].year %>" />
       <link property="rdfa:copy" resource="pentandra-website:license" />
     </header>
-    <div class="bd">
+    <div class="bd numbered">
       <%= yield %>
     </div>
-    <%= render('/proposals/partials/sidebar.*') %>
   </article>
 <% end %>

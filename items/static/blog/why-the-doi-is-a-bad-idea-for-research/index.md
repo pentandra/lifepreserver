@@ -5,7 +5,6 @@ kind: article
 author_name: Chris Chapman
 created_at: 2015-01-19
 updated_at: 2015-01-19
-published: false
 tags:
   - Open Research
 ---

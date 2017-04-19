@@ -5,7 +5,7 @@ kind: article
 author_name: Chris Chapman
 created_at: 2015-01-14
 updated_at: 2015-03-02
-published: true
+published_at: 2015-02-14
 tags:
   - Citizen Science
   - Open Research

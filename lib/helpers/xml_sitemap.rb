@@ -11,7 +11,7 @@ module Nanoc::Helpers
       require 'builder'
 
       # Extract parameters
-      items       = params.fetch(:items) { @items.reject { |i| i[:is_hidden] } }
+      items       = params.fetch(:items) { @items.reject { |i| i.unwrap.attributes[:is_hidden] } }
       select_proc = params.fetch(:rep_select, nil)
 
       # Create builder

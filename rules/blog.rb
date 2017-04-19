@@ -19,7 +19,6 @@ end
 
 compile '/static/{tags,authors,archives}/**/*' do
   filter :erb, @config[:erb]
-  filter :abbreviate, type: :html
   filter :rubypantsunicode
   filter :cache_buster if @config[:production]
   filter :html5small if @config[:production]

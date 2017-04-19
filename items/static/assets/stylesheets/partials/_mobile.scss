@@ -27,9 +27,6 @@ $less-outer-margin: 34px;
     margin: 0 0 $base-line-height;
   }
 
-  dd.bd { margin-top: 0; }
-  dt.status { line-height: $base-line-height; }
-
   //
   // 
 
@@ -111,6 +108,13 @@ $less-outer-margin: 34px;
   
   .normal.flush {
     line-height: $base-line-height;
+  }
+
+  .numbered {
+    #{append-selector("h2, h3, h4, h5, h6", ":before")} {
+      position: static;
+      margin: 0 (1em/4) 0 0;
+    }
   }
 
   // Grid classes

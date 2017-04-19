@@ -21,10 +21,6 @@ a, a:visited, a:active {
   text-decoration: none;
 }
 
-#{headings(1,3)} {
-  text-transform: uppercase;
-}
-
 h1.large {
   margin-top: $base-line-height;
 }
@@ -127,6 +123,8 @@ dl, menu, ul, ol { margin: 0 0 $base-line-height 0; padding: 0; }
 dt { margin-top: $base-line-height; }
 dd { margin: 0; }
 
+dt.aside { margin-top: 0; }
+
 .nav ul, .nav ol { list-style: none; list-style-image: none; }
 
 nav ol, .nav ol, nav ul, .nav ul { margin: 0 }
@@ -141,30 +139,20 @@ ul {
 }
 
 ol {
-  font-family: $special-font-family, serif;
-
   // Display the number without the period
-/*
   list-style-type: none;
+  counter-reset: numeral;
 
   & > li {
-    counter-increment: customlistcounter;
+    counter-increment: numeral;
   }
 
   & > li:before {
-    content: counter(customlistcounter) " ";
-    float: left;
-    margin-left: -1.2em;
-  }
-
-  &:first-child {
-    counter-reset: customlistcounter;
-  }
-
-*/
-  p, a, .base {
-    // Use base font for the actual text of the list
-    font-family: $base-font-family, sans-serif;
+    text-align: right;
+    content: counter(numeral);
+    position: absolute;
+    margin-left: -2.5em;
+    width: 2em;
   }
 
   ul {
@@ -177,6 +165,10 @@ ol {
     list-style-type: lower-alpha;
     margin-bottom: 0;
   }
+}
+
+.lt-ie8 ol {
+  list-style-type: decimal;
 }
 
 // Is this needed at all? A big question is how do we demarcate paragraphs? Do
@@ -338,6 +330,24 @@ a.button, input.button {
 input.button {
   border: 0;
   padding: 0;
+}
+
+.numbered {
+
+  counter-reset: h2;
+
+  h2 { counter-reset: h3; }
+  h3 { counter-reset: h4; }
+  h4 { counter-reset: h5; }
+  h5 { counter-reset: h6; }
+
+  h2:before { counter-increment: h2; content: counter(h2); }
+  h3:before { counter-increment: h3; content: counter(h2) "." counter(h3); }
+  h4:before { counter-increment: h4; content: counter(h2) "." counter(h3) "." counter(h4); }
+  h5:before { counter-increment: h5; content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5); }
+  h6:before { counter-increment: h6; content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6); }
+
+  h2.nocount:before, h3.nocount:before, h4.nocount:before, h5.nocount:before, h6.nocount:before { content: ""; counter-increment: none; }
 }
 
 [rel="reference"] {

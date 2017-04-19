@@ -23,7 +23,6 @@ kind: article
 author_name: $AUTHOR
 created_at: $YEAR-$MONTH-$DAY
 updated_at: $YEAR-$MONTH-$DAY
-published: false
 tags: []
 ---
 This is your new post." > "$SCRIPT_PATH/../items/static/blog/$TITLE/index.md"
