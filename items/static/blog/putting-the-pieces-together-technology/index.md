@@ -489,13 +489,14 @@ the potential to make a real difference in how we practice, not just as
 researchers but as practitioners in many other fields, and may even blur the
 line between researchers and practitioners.
 
-This is part of the answer to [increasing the porosity of the boundaries
-between knowledge clubs][porosity] and allowing others to play easier, more
-fluidly. Visitors can be guided to learn the ropes as quickly as possible. The
-ability to find patterns and assemble these guides, providing a mechanism to
-influence and constantly improve practice, is one of the benefits of the
-Scholarly Commons over [proprietary approaches], and is something which those
-types of approaches will never be able to offer in quite the same way.
+Sharing our patterns of practice is part of the answer to [increasing the
+porosity of the boundaries between knowledge clubs][porosity] and allowing
+others to play easier, more fluidly. Visitors can be guided to learn the ropes
+as quickly as possible. The ability to find patterns and assemble these guides,
+providing a mechanism to influence and constantly improve practice, is one of
+the benefits of the Scholarly Commons over [proprietary approaches], and is
+something which those types of approaches will never be able to offer in quite
+the same way.
 
 # A relative advantage
 
