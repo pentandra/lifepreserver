@@ -344,9 +344,11 @@ cases]:
 I would argue that what we have lost we need to revive and reintroduce into our
 concept and culture of scholarship, and that this idea of '[flexibility,
 openness, manoeuvrability, and relative rapidity of interaction]{lang=en-GB}'
-is intrinsic in the idea of the Scholarly Commons. We can't have scholarly
-commoning unless we open up and expose the research process to this level of
-collaboration and participation. Otherwise we're still working in silos, albeit
+is intrinsic in the idea of the Scholarly Commons. We can't really invite
+participation and collaboration in this way unless we open up and expose the
+research process at this level of granularity. We need to be publishing at the
+granularity that would allow us to actually work together throughout any part
+of the research process. Otherwise we're still working in silos, albeit
 smaller, distributed ones. We need the spirit of scholarship and enlightenment
 that existed in [the Republic of Letters][republic of letters], and it comes
 quite naturally if we can stop taking ourselves so seriously.
