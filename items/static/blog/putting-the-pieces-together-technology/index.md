@@ -542,8 +542,6 @@ relating to the production and use of knowledge.
 
 </div>
 
-So how do we get there? We're working on a [proposal] for that very purpose.
-
 [proprietary approaches]: <https://scholarlykitchen.sspnet.org/2017/02/09/cobbling-together-workflow-businesses/>
 [earlier definition]: </blog/putting-the-pieces-together-culture/#def:the-scholarly-commons> "The Scholarly Commons is the opportunity to come together and create a new culture of commoning on scholarly and scientific knowledge."
 [vision]: </#sec:research-experience> "We envision a better research experience"
