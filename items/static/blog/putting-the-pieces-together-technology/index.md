@@ -323,17 +323,17 @@ scholarship is a necessary part of defining the Scholarly Commons.
 If we go back far enough, say three or four hundred years ago, scholarly
 communication didn't happen in the sort of static, dissemination-oriented way
 that it does now. People wrote letters to each other, sharing their progress in
-understanding openly. It was a collective effort to gain a greater
-understanding of the world, one which was empirical and not based on dogma. It
-united people across languages, cultures, nationalities, and backgrounds. It
-was only later that, for motivations which I think were at odds to the original
-intent and mostly based on the economical limitations of print, these letters
-were editorialized, and the scholarly article was born. Eventually researchers
-submitted articles to the journals directly, and started using publication to
-establish scientific priority. You may think that this was a natural evolution,
-but I think we lost something in the transition to more 'modern' scholarly
-communication. I am reminded of a quote that I've [shared before][research
-cases]:
+understanding openly, including hunches, questions, impressions---the whole
+gamut. It was a collective effort to gain a greater understanding of the world,
+one which was empirical and not based on dogma. It united people across
+languages, cultures, nationalities, and backgrounds. It was only later that,
+for motivations which I think were at odds to the original intent and mostly
+based on the economical limitations of print, these letters were editorialized,
+and the scholarly article was born. Eventually researchers submitted articles
+to the journals directly, and started using publication to establish scientific
+priority. You may think that this was a natural evolution, but I think we lost
+something in the transition to more 'modern' scholarly communication. I am
+reminded of a quote that I've [shared before][research cases]:
 
 <figure class="bq grab" lang="en-GB">
 
