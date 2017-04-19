@@ -1,11 +1,12 @@
 ---
 title: "Putting the Pieces Together: Technology"
 description: >
-  My epiphany that the process really is the product.
+  A response to the 'Putting the Pieces Together' workshop, and my epiphany
+  that the process really is the product.
 kind: article
 author_name: Chris Chapman
 created_at: 2017-02-16
-updated_at: 2017-04-17
+updated_at: 2017-04-19
 cover_image_id: '/static/blog/putting-the-pieces-together-technology/scholarly_commons_backbone_using_existing_stuff.jpg'
 tags:
   - Scholarly Commons
