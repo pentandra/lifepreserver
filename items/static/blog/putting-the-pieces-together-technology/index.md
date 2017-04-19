@@ -398,15 +398,16 @@ am trying to show.
 
 This to me is the essence of commoning: sharing how, why, and what we do. To do
 this, we need a way to explicitly _share_ our practice. I discussed this idea
-and the need to share our process openly in a [previous section][the process is
-the product], and [what that means][scholarly commoning]. Taking this idea a
-step further, we need a way to explicitly share _patterns_ of practice. Fiona
-Murphy and Danny Kingsley explored some possibilities for doing this using
-[decision trees] during an unworkshop session. Unlike the logical flow of
-questions that portray a researcher's prior journey of discovery, decision
-trees, in this context, describe patterns of practice (or _behavior_) that can
-guide the practice of research _going forward_. Decision trees direct the focus
-onto concrete, actionable things we can do.
+and the need to share our process openly as [the fundamental scholarly
+product][the process is the product], and then [what that product should
+invite][scholarly commoning]. Taking this idea a step further, we need a way to
+explicitly share _patterns_ of practice. Fiona Murphy and Danny Kingsley
+explored some possibilities for doing this using [decision trees] during an
+unworkshop session. Unlike the logical flow of questions that portray a
+researcher's prior journey of discovery, decision trees, in this context,
+describe patterns of practice (or _behavior_) that can guide the practice of
+research _going forward_. Decision trees direct the focus onto concrete,
+actionable things we can do.
 
 Of course, the idea with these decision trees is not to mandate specific
 research practices, but to create a way to practice and share our patterns of
