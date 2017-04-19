@@ -160,7 +160,9 @@ These transparencies were then grouped by domain...
 process from several scientific domains.](science_workflows_620x.jpg)
 
 ...and then superimposed on top of each other so that common patterns could be
-seen. Here are some examples:
+seen.
+
+Here are some examples:
 
 ![Superimposed scientific workflows](science_workflows_overlaid_620x.jpg)
 
@@ -184,18 +186,18 @@ Here are a few other thoughts that emerged from the exercise:
   using open standards.
 * Practice is more important than tools.
 
-Now merging these results with some earlier thoughts shared in this essay, it
-may be the _commoning_---the practices, not the tools---that needs to be
-compliant. Bollier says that a commons consists not just of a resource (such as
-tools), but of a _community_ that manages a _resource_ by devising its own
-_rules, traditions, and values_. A commons is an active, living process---a
-dynamic, evolving social activity,[^Bollier-community] more deliberately known
-as <dfn id="def:commoning">commoning</dfn>.
+Merging these results with some earlier thoughts shared in this essay, it may
+be the _commoning_---the practices, not the tools---that needs to be compliant.
+Bollier says that a commons consists not just of a resource (such as tools),
+but of a _community_ that manages a _resource_ by devising its own _rules,
+traditions, and values_. A commons is an active, living process---a dynamic,
+evolving social activity,[^Bollier-community] more deliberately known as <dfn
+id="def:commoning">commoning</dfn>.
 
-Also, it is important to understand that, besides the logical fallacy that I
+Here it is important to understand that, besides the logical fallacy that I
 described in [the first section][on gaps and systems], the only thing this
-exercise showed us is what is common in the current paradigm, not necessarily
-what would be required in a commoning paradigm. The exercise was designed to
+exercise showed us is what is _common_ in the current paradigm, not necessarily
+what would be required in a _commoning paradigm_. The exercise was designed to
 find _common patterns_, not patterns of commoning. While this was useful in
 some ways, it leaves more important questions unanswered, such as _what is the
 shared resource of the Scholarly Commons?_ and _who is the community that
@@ -213,32 +215,29 @@ were designed for the research culture and technical infrastructures of the
 Global North and just [did not connect with many of the people][april's blog
 post] that we brought from around the world. Perhaps even a focus on specific
 practices would have been too narrow as well, and we should have taken a step
-back and focused on peer-production. Even so, I did not expect the participants
-to react this way, and I think this was an important negative result to obtain
-and from which we should learn.
+back and discussed the need for peer-production. Even so, I did not expect the
+participants to react this way, and I think this was an important negative
+result to obtain and from which we should learn.
 
 Research or scholarship, just like medicine, is not simply a matter of lining
 up tools into a usable workflow. We need to approach this problem in a systemic
 way, considering the many and various aspects of this new system, including
 production, governance, culture, economics, and technology. The problem is,
 we're researchers, and instead of just letting things happen the way most
-commons happen, we're trying to be informed by those who have studied commons,
+commons happen, we are trying to be informed by those who have studied commons,
 such as Ostrom, Bollier, [Helfrich]{lang=nl}, or Grear, and are attempting to
-build this thing, or at least organize it, deliberately. I've often wondered
-whether or not this is the right approach, but at least I've been able to find
-some humor in it, since what other group of people on this planet besides
-researchers would approach solving a problem like this in that way? A member of
-the SCWG steering committee has commented that the Scholarly Commons is
-undertheorized, and one of the participants of this workshop commented that the
-Scholarly Commons is underpracticed. With both I would agree. Much of the time
-we're talking hypothetically, and we really don't know how all this will play
-out in reality, but I think it is good to act according to the understanding
-that we have to invent this thing, let the understanding come from where it
-may. Even if we avoid some bumps by studying commoning theory and trying to
-apply what we learn, I'm sure we'll still experience enough trial and error
-throughout the process to feel that we're doing something good. And, of course
-we can't expect to figure all of this out in one workshop. But we must address
-the right questions.
+build this thing, or at least organize it, deliberately. A member of the SCWG
+steering committee has commented that the Scholarly Commons is undertheorized,
+and one of the participants of this workshop commented that the Scholarly
+Commons is underpracticed. With both I would agree. Much of the time we're
+talking hypothetically, and we really don't know how all this will play out in
+reality. But I think it is good to act according to the understanding that we
+have to create this thing, let the understanding come from where it may. Even
+if we avoid some bumps by trying to apply what we learn from commoning theory,
+I'm sure we'll still experience enough trial and error throughout the process
+to feel that we're doing something good. And, of course we can't expect to
+figure all of this out in one workshop. But we must address the right
+questions. And we need to have the right goal.
 
 My thoughts on this, which are consistent with commons theory and echoed in [a
 blog post by Bruce Caron][collectives], is that a scholarly commons will form
