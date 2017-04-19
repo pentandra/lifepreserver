@@ -256,12 +256,11 @@ around a need out of at least two motivations:
 The shared resource of that community includes the active and latent knowledge
 of that field of study. The subtractability of that resource is the potential
 contributions and discoveries within that field of study. Scholarly commons
-(plural) can form around any type of knowledge, and can be nested within each
-other, most likely, but not necessarily, following the structure of the
-knowledge around which they are based. It is also possible to structure these
-commons around the type of need they are trying to fill. But whatever the
-structure of these commons, we need a standard technical mechanism to tie them
-together, so that they are mutually interoperable and beneficial.
+(plural) can form around any type of knowledge, and can be nested within
+another, either imitating the structure of the knowledge around which they are
+based, or more likely, around the type of need they are trying to fill. But
+whatever the structure of these commons, we need a standard technical mechanism
+to tie them together, so that they are mutually interoperable and beneficial.
 
 # The process is the product
 
