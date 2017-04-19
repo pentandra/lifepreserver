@@ -488,13 +488,13 @@ the potential to make a real difference in how we practice, not just as
 researchers but as practitioners in many other fields, and may even blur the
 line between researchers and practitioners.
 
-This is part of the answer to increasing the porosity of the boundaries between
-knowledge clubs and allowing others to play easier, more fluidly. Visitors can
-be guided to learn the ropes as quickly as possible. The ability to find
-patterns and assemble these guides, providing a mechanism to influence and
-constantly improve practice, is one of the benefits of the Scholarly Commons
-over [proprietary approaches], and is something which those types of approaches
-will never be able to offer in quite the same way.
+This is part of the answer to [increasing the porosity of the boundaries
+between knowledge clubs][porosity] and allowing others to play easier, more
+fluidly. Visitors can be guided to learn the ropes as quickly as possible. The
+ability to find patterns and assemble these guides, providing a mechanism to
+influence and constantly improve practice, is one of the benefits of the
+Scholarly Commons over [proprietary approaches], and is something which those
+types of approaches will never be able to offer in quite the same way.
 
 # A relative advantage
 
@@ -558,6 +558,7 @@ So how do we get there? We're working on a [proposal] for that very purpose.
 [collectives]: <https://cybersocialstructure.org/2016/10/03/think-of-science-like-an-incurable-intellectual-disease/> "Think of science like an incurable intellectual disease, by Bruce Caron"
 [ravi's blog post]: <http://blog.inasp.info/miles-scholarly-commons-global-academic-norm-2/> "Miles to go for Scholarly Commons to become a global academic norm, by Ravi Murugesan"
 [san diego workshop]: <https://www.force11.org/group/scholarly-commons-working-group/san-diego-workshop-sept-2016>
+[porosity]: <http://cameronneylon.net/blog/the-end-of-the-journal-what-has-changed-what-stayed-the-same/> "The end of the journal? What has changed, what stayed the same?, by Cameron Neylon"
 
 [^constellation]:
 
