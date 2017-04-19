@@ -18,22 +18,23 @@ tags:
   - Opinionated
 ---
 
-This post started as a follow-on to a post I am writing about what I learned
-about the _culture_ of the Scholarly Commons at the San Diego workshop last
-September. But, as it sometimes turns out in this funny thing we call life, it
-is time to release this post, and I am still working on the one about culture.
-Don't worry---this post is not about specific technologies, but about what
-needs to be enabled by technology to allow for _scholarly commoning_.
+This post started as a follow-on to a post I am writing about the _culture_ of
+the Scholarly Commons in response to the [Scholarly Commons San Diego
+workshop][san diego workshop] held last September by [FORCE11]{.oldstyle}. But,
+as it sometimes turns out in this funny thing we call life, it is time to
+release this post, and I am still working on the one about culture. Don't
+worry---this post is not about specific technologies, but about what needs to
+be enabled by technology to allow for what I'm calling _scholarly commoning_.
 
 As this is my own response to the San Diego workshop and to our discovery
 process so far relating to the Scholarly Commons, it represents my own views
-only, and not necessarily the views of those in FORCE11's Scholarly Commons
-Working Group or even its steering committee. Each of us involved in this
-project are coming at this from different perspectives, so it is no surprise
-that we are not always in complete agreement about what we would like the
-Scholarly Commons to be. We are each a product of our own experiences and
-backgrounds, and each of our backgrounds is quite dissimilar. Even though this
-makes things difficult sometimes, I view this as a good thing. There is a
+only, and not necessarily the views of those in [FORCE11]{.oldstyle}'s
+Scholarly Commons Working Group or even its steering committee. Each of us
+involved in this project are coming at this from different perspectives, so it
+is no surprise that we are not always in complete agreement about what we would
+like the Scholarly Commons to be. We are each a product of our own experiences
+and backgrounds, and each of our backgrounds is quite dissimilar. Even though
+this makes things difficult sometimes, I view this as a good thing. There is a
 general consensus among us, I am pretty sure, that the Scholarly Commons is
 scholarly communication in a modern setting, one in which we are not
 constrained by the limitations of print publishing. But the definition of the
@@ -547,6 +548,7 @@ So how do we get there? We're working on a [proposal] for that very purpose.
 [proposal]: <<%# link_to_id('/static/solutions/scholarly-commoning/index.md') %>>
 [collectives]: <https://cybersocialstructure.org/2016/10/03/think-of-science-like-an-incurable-intellectual-disease/> "Think of science like an incurable intellectual disease, by Bruce Caron"
 [ravi's blog post]: <http://blog.inasp.info/miles-scholarly-commons-global-academic-norm-2/> "Miles to go for Scholarly Commons to become a global academic norm, by Ravi Murugesan"
+[san diego workshop]: <https://www.force11.org/group/scholarly-commons-working-group/san-diego-workshop-sept-2016>
 
 [^constellation]:
 
