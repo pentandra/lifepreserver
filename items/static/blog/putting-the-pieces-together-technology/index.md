@@ -215,9 +215,9 @@ have had the eventual disintegration of the main workshop track as so many of
 the participants left to join [other excellent discussions][ravi's blog post].
 Most of the tools we were studying in this exercise were designed for the
 research culture and technical infrastructures of the Global North and just
-[may not have connected with many of the people][april's blog post] that we
-brought from around the world. But perhaps even a focus on specific practices
-would have been too narrow as well, and we should have taken a step back and
+[did not connect with many of the people][april's blog post] that we brought
+from around the world. But perhaps even a focus on specific practices would
+have been too narrow as well, and we should have taken a step back and
 discussed something else, such as the need for and approaches to global
 peer-production. Even so, I did not expect the participants to react this way,
 and I think this was an important negative result to obtain and from which we
