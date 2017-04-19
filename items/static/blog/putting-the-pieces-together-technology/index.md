@@ -245,20 +245,20 @@ should learn.
 
 My thoughts on this, which are consistent with commons theory and echoed in [a
 blog post by Bruce Caron][collectives], is that a scholarly commons will form
-out of a need to understand something. A commons will be formed by people that
-actually care about the knowledge: a collective. This collective will gather
-around a need out of at least two motivations:
-
-1. a desire to gain understanding of some type of knowledge
-2. a desire and ability to make hidden things known, to satiate that desire for
-   understanding
-
-The shared resource of that community includes the active and latent knowledge
-of that field of study. The subtractability of that resource is the potential
-contributions and discoveries within that field of study. Scholarly commons
-(plural) can form around any type of knowledge, and can be nested within
-another, either imitating the structure of the knowledge around which they are
-based, or more likely, around the type of need they are trying to fill. But
+out of a need to understand something. People that actually care about certain
+knowledge will collect around a need to understand and a desire to care for and
+further that knowledge in order to satiate that need for understanding. This
+collective is the seed of a commons. Discussions will ensue that will establish
+rules, traditions, and values pertaining to how to deal with the shared
+resource of the commons, which will include the active and latent knowledge of
+that field of study. The subtractable resource of a scholarly commons is the
+latent knowledge that is revealed through contributions and discoveries within
+that field of study. Once a contribution is made, it cannot be made again in
+quite the same way, and once a new understanding is revealed to a collective,
+it cannot be discovered to that collective anew. Scholarly commons (plural) can
+form around any type of knowledge. A scholarly commons can be nested within
+another, either imitating the structure of the knowledge around which it was
+created, or more likely, around the type of need it is trying to fill. But
 whatever the structure of these commons, we need a standard technical mechanism
 to tie them together, so that they are mutually interoperable and beneficial.
 
