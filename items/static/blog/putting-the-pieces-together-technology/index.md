@@ -519,9 +519,11 @@ systems! If you are publishing your process openly, there is nothing to stop
 you (or someone else, for that matter) from writing up a summary for a journal,
 whether open or proprietary. Either way, the underlying research is still open
 for anyone to learn from or build upon. The Scholarly Commons is not anti
-anything, but invites all to come and participate. And because of its nature,
-the Scholarly Commons, by definition, has the potential to scale bigger in
-scope and influence than existing systems are capable.
+anything, but invites all to come and participate, which will enable it,
+potentially, to scale bigger in scope and influence than existing systems are
+capable. Because it will be a fully functioning alternative 'driven by a
+different logic',[^constellation] the Scholarly Commons will eventually have
+the ability to displace existing systems.
 
 So even though I'm working on another post about putting the cultural pieces of
 the Scholarly Commons together, if I could, at this point, sum up what the
