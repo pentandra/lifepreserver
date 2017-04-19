@@ -44,8 +44,8 @@ the past, the aspirations and thirst for understanding that have motivated
 mankind for thousands of years, and redesign the whole system from scratch to
 fit our current needs and desires, using whatever existing pieces or
 technologies that fit this new way of working, then figuring out how to build
-out the rest, so that, in the end, we will have built 'a constellation of
-working alternatives driven by a different logic.'[^Bollier]
+out the rest, so that, hopefully, in the end, we will have built 'a
+constellation of working alternatives driven by a different logic.'[^Bollier]
 
 <!--MORE-->
 
@@ -148,7 +148,7 @@ transition to new ways of working together is not going to happen overnight. It
 is not enough to know what our destination is---we also need to know how to get
 there from where we are now.
 
-Back to the exercise, after the tools went through the 'compliance checking'
+Back to the exercise: after the tools went through the 'compliance checking'
 activity, they were plotted on a graph, grouped by research phases from the
 current publication paradigm. Participants were invited at that point to
 describe the path that they would take (if there was one) through these tools
@@ -171,8 +171,8 @@ seen. Here are some examples:
 As you can see, while there is some overlap, the paths, even within domains,
 are very idiosyncratic. People are particular about which tools they want to
 use, and often there is more than one path to take---more than one tool that
-can be used to get a job done. Thinking about it now, certain tools may even be
-used to gain a competitive advantage.
+can be used to get a job done. Certain tools might even be used to gain a
+competitive advantage.
 
 Here are a few other thoughts that emerged from the exercise:
 
@@ -184,13 +184,13 @@ Here are a few other thoughts that emerged from the exercise:
   using open standards.
 * Practice is more important than tools.
 
-Now merging these results with earlier thoughts shared in this essay, it may be
-that it is the _commoning_---the practices, not the tools---that needs to be
-compliant. Bollier says that a commons consists not just of a resource, but of
-a _community_ that manages a _resource_ by devising its own _rules, traditions,
-and values_. A commons is an active, living process---a dynamic, evolving
-social activity,[^Bollier-community] more deliberately known as <dfn
-id="def:commoning">commoning</dfn>.
+Now merging these results with some earlier thoughts shared in this essay, it
+may be the _commoning_---the practices, not the tools---that needs to be
+compliant. Bollier says that a commons consists not just of a resource (such as
+tools), but of a _community_ that manages a _resource_ by devising its own
+_rules, traditions, and values_. A commons is an active, living process---a
+dynamic, evolving social activity,[^Bollier-community] more deliberately known
+as <dfn id="def:commoning">commoning</dfn>.
 
 Also, it is important to understand that, besides the logical fallacy that I
 described in [the first section][on gaps and systems], the only thing this
@@ -204,15 +204,18 @@ then we really have no way to know what any of the other questions are or
 whether any of the answers we come up with are right. Common and commoning are
 not the same thing, and a common practice does not a commons make. Yes, some
 existing tools align with practices that we would likely want to carryover into
-this new way of working, but looking back, I think if we had kept the
-discussion more abstract and focused on specific _practices_ rather than on
-tools, we may not have had the eventual disintegration of the main workshop
-track as so many of the participants left to join other discussions. Most of
-the tools we were studying were designed for the research culture and technical
-infrastructures of the Global North and just [did not connect with many of the
-people][april's blog post] that we brought from around the world. Even so, I
-did not expect the participants to react this way, and I think this was an
-important negative result to obtain and from which we should learn.
+this new way of working, but looking back, the focus of this exercise was much
+too narrow. I think if we had kept the discussion more abstract and focused on
+specific _practices_ rather than on specific tools, we may not have had the
+eventual disintegration of the main workshop track as so many of the
+participants left to join other discussions. Most of the tools we were studying
+were designed for the research culture and technical infrastructures of the
+Global North and just [did not connect with many of the people][april's blog
+post] that we brought from around the world. Perhaps even a focus on specific
+practices would have been too narrow as well, and we should have taken a step
+back and focused on peer-production. Even so, I did not expect the participants
+to react this way, and I think this was an important negative result to obtain
+and from which we should learn.
 
 Research or scholarship, just like medicine, is not simply a matter of lining
 up tools into a usable workflow. We need to approach this problem in a systemic
@@ -237,23 +240,25 @@ throughout the process to feel that we're doing something good. And, of course
 we can't expect to figure all of this out in one workshop. But we must address
 the right questions.
 
-My own thoughts on this, which are consistent with commons theory and echoed in
-[a blog post by Bruce Caron][collectives], is that a scholarly commons will
-form out of a need to understand something. A community will gather around this
-need out of at least two motivations:
+My thoughts on this, which are consistent with commons theory and echoed in [a
+blog post by Bruce Caron][collectives], is that a scholarly commons will form
+out of a need to understand something. A commons will be formed by people that
+actually care about the knowledge: a collective. This collective will gather
+around this need out of at least two motivations:
 
 1. a desire to gain understanding of some type of knowledge
-2. a desire and ability to make hidden things known, to satiate that desire for understanding
+2. a desire and ability to make hidden things known, to satiate that desire for
+   understanding
 
-The shared resource of that community is the active and latent knowledge of
-that field of study. The subtractability of that resource is the potential
+The shared resource of that community includes the active and latent knowledge
+of that field of study. The subtractability of that resource is the potential
 contributions and discoveries within that field of study. Scholarly commons
 (plural) can form around any type of knowledge, and can be nested within each
 other, most likely, but not necessarily, following the structure of the
 knowledge around which they are based. It is also possible to structure these
 commons around the type of need they are trying to fill. But whatever the
 structure of these commons, we need a standard technical mechanism to tie them
-together, so that they are interoperable and can benefit each other.
+together, so that they are interoperable and mutually beneficial.
 
 # The process is the product
 
@@ -362,19 +367,19 @@ only closed forms. We need new forms that [invite participation][research
 cases]. We need to publish the _research_, exposing it more at the _cellular_
 level (or [_tesseral_ level][vision], if you will :blush:). In order to create
 this new culture, we need more than open notebook science, research protocols,
-or even static depictions of researcher workflows. All of these things are
-great, but they don't invite participation by themselves. We've talked a lot
-about attribution, but there's something more to the concept of the researcher
-that we're not yet talking about that much. We need something social and
-dynamic that brings together the pieces of research and draws people _into_ the
-process (while, of course, preserving the attribution, integrity, and openness
-of the contributions). What about the questions and intentions of the
-researcher? This is the level at which I think we really need to be sharing. If
-we can find effective ways to communicate more openly throughout the process,
-many of the existing forms of scholarly communications will either change or go
-away. The Scholarly Commons should be a jumping-off point to new ways of
-working together, taking the best ideas of how to do scholarship in a modern
-setting, setting aside as many of the undesirable social, cultural, and
+reproducibility, or even static depictions of researcher workflows. All of
+these things are great, but they don't invite participation by themselves.
+We've talked a lot about attribution, but there's something more to the concept
+of the researcher that we're not yet talking about that much. We need something
+social and dynamic that brings together the pieces of research and draws people
+_into_ the process (while, of course, preserving the attribution, integrity,
+and openness of the contributions). What about the questions and intentions of
+the researcher? This is the level at which I think we really need to be
+sharing. If we can find effective ways to communicate more openly throughout
+the process, many of the existing forms of scholarly communications will either
+change or go away. The Scholarly Commons should be a jumping-off point to new
+ways of working together, taking the best ideas of how to do scholarship in a
+modern setting, setting aside as many of the undesirable social, cultural, and
 technical limitations as possible.
 
 To give an example of what I mean by this, allow me to share my experience
@@ -519,9 +524,6 @@ for anyone to learn from or build upon. The Scholarly Commons is not anti
 anything, but invites all to come and participate. And because of its nature,
 the Scholarly Commons, by definition, has the potential to scale bigger in
 scope and influence than existing systems are capable.
-
-And if we are really going to create a commons, it will be for the people that
-actually care about the knowledge.
 
 So even though I'm working on another post about putting the cultural pieces of
 the Scholarly Commons together, if I could, at this point, sum up what the
