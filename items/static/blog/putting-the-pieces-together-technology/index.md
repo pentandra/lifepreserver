@@ -124,20 +124,10 @@ share a similar fallacy and resulting struggle in the practice of medicine:
 Research or scholarship, just like medicine, is not simply a matter of lining
 up tools into a usable workflow. We need to approach this problem in a systemic
 way, considering the many and various aspects of this new system, including
-production, governance, culture, economics, and technology. The problem is,
-we're researchers, and instead of just letting things happen the way most
-commons happen, we are trying to be informed by those who have studied commons,
-such as Ostrom, Bollier, [Helfrich]{lang=nl}, or Grear, and are attempting to
-build this thing, or at least organize it, deliberately. A member of the SCWG
-steering committee has commented that the Scholarly Commons is undertheorized,
-and one of the participants of this workshop commented that the Scholarly
-Commons is underpracticed. With both I would agree. Much of the time we're
-talking hypothetically right now, and we really don't know how all this will
-play out in reality. But I think it is good to act according to the
-understanding that we have, let the understanding come from where it may. Even
-if we avoid some bumps by trying to apply what we learn from commoning theory,
-I'm sure that we'll still experience enough trial and error and growing pains
-throughout this process.
+production, governance, culture, economics, and technology. The Scholarly
+Commons will look different than our current system. To enable this different
+system, [we need something fundamentally different][they just don't get it]
+that will support this different culture.
 
 # The exercise
 
@@ -543,6 +533,7 @@ relating to the production and use of scholarly and scientific knowledge.
 [ravi's blog post]: <http://blog.inasp.info/miles-scholarly-commons-global-academic-norm-2/> "Miles to go for Scholarly Commons to become a global academic norm, by Ravi Murugesan"
 [san diego workshop]: <https://www.force11.org/group/scholarly-commons-working-group/san-diego-workshop-sept-2016>
 [porosity]: <http://cameronneylon.net/blog/the-end-of-the-journal-what-has-changed-what-stayed-the-same/> "The end of the journal? What has changed, what stayed the same?, by Cameron Neylon"
+[they just don't get it]: <http://cameronneylon.net/blog/they-just-dont-get-it/> "They. Just. Don't. Get. It..., by Cameron Neylon"
 
 [^constellation]:
 
