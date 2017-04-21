@@ -525,7 +525,7 @@ Scholarly Commons is from the perspective of technology, I would say:
 
 <dfn id="def:technology-of-the-scholarly-commons">The Scholarly Commons</dfn>
 is an opportunity to improve the world by drastically improving our practices
-relating to the production and use of knowledge.
+relating to the production and use of scholarly and scientific knowledge.
 
 </div>
 
