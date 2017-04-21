@@ -1,5 +1,5 @@
 ---
-title: "Defining the Scholarly Commons: Why a commons?"
+title: "Defining the Scholarly Commons: why a commons?"
 description: Why do we want a commons anyway? Isn't better tech enough?
 kind: article
 author_name: Chris Chapman

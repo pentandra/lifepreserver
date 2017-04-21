@@ -1,6 +1,6 @@
 ---
-title: "Defining the Scholarly Commons: Subtractable Resource"
-description: Is there a subtractable resource of a scholarly commons? Yes, there should be.
+title: "Defining the Scholarly Commons: subtractable resources"
+description: Is there a subtractable resource in your scholarly commons? Yes, there should be.
 kind: article
 author_name: Chris Chapman
 created_at: 2017-04-20
