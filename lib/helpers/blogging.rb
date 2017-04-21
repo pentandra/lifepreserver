@@ -19,7 +19,15 @@ module LifePreserver
     end
 
     def sorted_blog_posts
-      blk = -> { blog_posts.sort_by { |a| attribute_to_time(a.unwrap.attributes[:created_at]) }.reverse }
+      blk = lambda do
+        unpublished_posts, published_posts = blog_posts.partition { |p| p.unwrap.attributes[:published_at].nil? }
+
+        unpublished_posts = unpublished_posts.sort_by { |a| attribute_to_time(a.unwrap.attributes[:created_at]) }.reverse
+        published_posts = published_posts.sort_by { |a| attribute_to_time(a.unwrap.attributes[:published_at]) }.reverse
+
+        unpublished_posts + published_posts
+      end
+
       if @items.frozen?
         @sorted_blog_post_items ||= blk.call
       else
