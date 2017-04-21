@@ -358,7 +358,7 @@ input.button {
 
   line-height: $base-line-height * 2;
 
-  .unpublished {
+  .unpublished, .unsubmitted {
     background-color: $pentandra-cyan;
     color: $pentandra-white;
   }
