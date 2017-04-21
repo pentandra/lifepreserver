@@ -125,9 +125,9 @@ Research or scholarship, just like medicine, is not simply a matter of lining
 up tools into a usable workflow. We need to approach this problem in a systemic
 way, considering the many and various aspects of this new system, including
 production, governance, culture, economics, and technology. The Scholarly
-Commons will look different than our current system. To enable this different
-system, [we need something fundamentally different][they just don't get it]
-that will support this different culture.
+Commons will look different than our current system, and to enable this
+different system, [we need something fundamentally different][they just don't
+get it] that will drive this different culture.
 
 # The exercise
 
