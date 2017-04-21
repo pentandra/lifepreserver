@@ -26,7 +26,7 @@
 
         <dl id="document-status" class="group status">
           <dt class="aside"><div class="close">Status</div></dt>
-          <dd class="bd centered up"><div class="<%= @item.fetch(:status, 'unpublished') %>"><%= @item.fetch(:status, 'unpublished') %></div></dd>
+          <dd class="bd centered up"><div class="<%= proposal_status(@item) %>"><%= proposal_status(@item).capitalize %></div></dd>
         </dl>
 
         <dl id="document-published" class="group">
