@@ -380,26 +380,6 @@ wherever and whenever the feel they have something to contribute. Obviously,
 doing this with a Google Doc is less than ideal, but I hope you can see what I
 am trying to show.
 
-My thoughts on this, which are consistent with commons theory and are touched
-upon in [a blog post by Bruce Caron][collectives], is that a scholarly commons
-will form because of a need---a need for understanding. People that actually
-care about a certain knowledge will collect around a need to understand and a
-desire to care for and further that knowledge in order to satiate that need for
-understanding. This collective is the seed of a commons. Discussions will ensue
-that will establish rules, traditions, and values pertaining to how to deal
-with the shared resources of the commons, which will include the active and
-latent knowledge of that field of study. The subtractable resource around which
-a scholarly commons forms is the moments of discovery that reveal, bit by bit,
-the latent knowledge within that field of study. Once a contribution is made,
-it cannot be made again in quite the same way, and once a new understanding is
-revealed to a collective, it cannot be discovered to that collective anew.
-Scholarly commons (plural) can form around any type of knowledge. A scholarly
-commons can be nested within another, either imitating the structure of the
-knowledge around which it was created, or more likely, around the type of need
-it is trying to fill. But whatever the structure of these commons, we need a
-standard technical mechanism to tie them together, so that they are mutually
-interoperable and beneficial.
-
 # Shared Practice
 
 To me the essence of scholarly commoning is sharing how, why, and what we do.
@@ -560,7 +540,6 @@ relating to the production and use of knowledge.
 [happy place]: <https://www.force11.org/blog/future-happy-place> "The Future is a Happy Place, by Maryann Martone"
 [april's blog post]: <https://aprilhathcock.wordpress.com/2016/09/27/making-the-local-global-the-colonialism-of-scholarly-communication/>
 [proposal]: <<%# link_to_id('/static/solutions/scholarly-commoning/index.md') %>>
-[collectives]: <https://cybersocialstructure.org/2016/10/03/think-of-science-like-an-incurable-intellectual-disease/> "Think of science like an incurable intellectual disease, by Bruce Caron"
 [ravi's blog post]: <http://blog.inasp.info/miles-scholarly-commons-global-academic-norm-2/> "Miles to go for Scholarly Commons to become a global academic norm, by Ravi Murugesan"
 [san diego workshop]: <https://www.force11.org/group/scholarly-commons-working-group/san-diego-workshop-sept-2016>
 [porosity]: <http://cameronneylon.net/blog/the-end-of-the-journal-what-has-changed-what-stayed-the-same/> "The end of the journal? What has changed, what stayed the same?, by Cameron Neylon"
