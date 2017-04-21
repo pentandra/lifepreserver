@@ -290,14 +290,6 @@ scholarship is a necessary part of defining the Scholarly Commons.
 
 # Scholarly Commoning
 
- A commons is an active, living process---a dynamic,
-evolving social activity, more deliberately known as <dfn
-id="def:commoning">commoning</dfn>.
-
-Bollier says that a commons consists not just of a resource, but
-of a _community_ that manages a _resource_ by devising its own _rules,
-traditions, and values_.[^Bollier-community]
-
 If we go back far enough, say three or four hundred years ago, scholarly
 communication didn't happen in the sort of static, dissemination-oriented way
 that it does now. People wrote letters to each other, sharing their progress in
@@ -540,11 +532,5 @@ relating to the production and use of scholarly and scientific knowledge.
     Bollier, David. <a href="https://hyp.is/upj6uiSeEee-Q6M26eFALg/thenextsystem.org/commoning-as-a-transformative-social-paradigm/">
     <cite>Commoning as a Transformative Social Paradigm</cite></a>,
     Nov. [2015]{.oldstyle}, p. [9]{.oldstyle}.
-
-[^Bollier-community]:
-
-    Bollier, David. <a href="https://hyp.is/m-y5CiShEeeVrhfwB2Ooww/thenextsystem.org/commoning-as-a-transformative-social-paradigm/">
-    <cite>Commoning as a Transformative Social Paradigm</cite></a>,
-    Nov. [2015]{.oldstyle}, p. [6]{.oldstyle}.
 
 [^compatibility]: From Wiktionary.
