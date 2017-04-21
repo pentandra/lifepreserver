@@ -1,8 +1,7 @@
 ---
 title: "Putting the Pieces Together: Technology"
 description: >
-  What needs to be enabled by technology to allow for scholarly commoning, and
-  my epiphany that the process really is the product.
+  What needs to be enabled by technology to allow for scholarly commoning.
 kind: article
 author_name: Chris Chapman
 created_at: 2017-02-16
