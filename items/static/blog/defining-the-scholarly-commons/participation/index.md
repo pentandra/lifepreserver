@@ -10,8 +10,9 @@ tags:
 ---
 
 While legislation and academic policies do need to be changed to incentivize
-participation and value these broader contributions, researchers from Tripura,
-India or Thai Nguyen, Vietnam [will have many more opportunities than they
-currently have][ravi's second post] to participate and be heard.
+participation and value these broader contributions, researchers from remote
+locales of the world, such as Tripura, India or Thai Nguyen, Vietnam, [will
+have many more opportunities than they currently have][ravi's second post] to
+participate and be heard.
 
 [ravi's second post]: <http://blog.inasp.info/miles-scholarly-commons-global-academic-norm/> "Miles to go for scholarly commons to become a global academic norm, by Ravi Murugesan"
