@@ -2,7 +2,7 @@ class Context2Pdf < Nanoc::Filter
   identifier :context2pdf
   type :text => :binary
 
-  requires 'tmpdir', 'open3', 'fileutils'
+  requires 'open3', 'fileutils'
 
   class Error < ::Nanoc::Int::Errors::Generic
     def initialize(command, exit_code)
@@ -26,15 +26,18 @@ class Context2Pdf < Nanoc::Filter
       return
     end
 
-    Dir.mktmpdir('nanoc-context') do |dir|
-      File.open("#{dir}/document.tex", 'w+') do |f|
+    dir = self.class.tmp_path_for(@config[:output_dir], @item_rep)
+    FileUtils.mkdir_p(dir)
+
+    FileUtils.cd(dir) do
+      File.open('document.tex', 'w') do |f|
         f.write(content)
         f.flush
 
         c = Nanoc::CLI::ANSIStringColorizer
         cmd = ['context', '--nonstopmode', "--mode=#{mode}", "--trackers=#{trackers}", f.path]
 
-        Open3.popen3(*cmd, chdir: dir) do |_stdin, stdout, stderr, thread|
+        Open3.popen3(*cmd) do |_stdin, stdout, stderr, thread|
 
           if debug
             { stdout: stdout, stderr: stderr }.each do |key, stream|
@@ -58,5 +61,15 @@ class Context2Pdf < Nanoc::Filter
         FileUtils.cp(f.path.sub('.tex', '.pdf'), output_filename)
       end
     end
+  end
+
+  def self.tmp_path_for(output_dir, item_rep)
+    item_rep_hash = Digest::SHA1.hexdigest(item_rep.item.identifier.to_s + item_rep.name.to_s)[0..12]
+    File.join(tmp_path_prefix(output_dir), item_rep_hash)
+  end
+
+  def self.tmp_path_prefix(output_dir)
+    dir = Digest::SHA1.hexdigest(output_dir)[0..12]
+    File.join('tmp', 'context', dir)
   end
 end
