@@ -64,8 +64,8 @@ class Context2Pdf < Nanoc::Filter
   end
 
   def self.tmp_path_for(output_dir, item_rep)
-    item_rep_hash = Digest::SHA1.hexdigest(item_rep.item.identifier.to_s + item_rep.name.to_s)[0..12]
-    File.join(tmp_path_prefix(output_dir), item_rep_hash)
+    rep_tmp_path = Digest::SHA1.hexdigest("#{item_rep.item.identifier}-#{item_rep.name}")[0..12]
+    File.join(tmp_path_prefix(output_dir), rep_tmp_path)
   end
 
   def self.tmp_path_prefix(output_dir)
