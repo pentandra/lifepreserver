@@ -24,7 +24,7 @@ module LifePreserver
       blk = lambda do
         unpublished_posts, published_posts = blog_posts.partition { |p| p.unwrap.attributes[:published_at].nil? }
 
-        unpublished_posts = unpublished_posts.sort_by { |a| attribute_to_time(a.unwrap.attributes[:created_at]) }.reverse
+        unpublished_posts = unpublished_posts.sort_by { |a| attribute_to_time(a.unwrap.attributes[:updated_at]) }.reverse
         published_posts = published_posts.sort_by { |a| attribute_to_time(a.unwrap.attributes[:published_at]) }.reverse
 
         unpublished_posts + published_posts
