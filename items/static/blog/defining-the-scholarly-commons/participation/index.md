@@ -9,6 +9,13 @@ tags:
   - Defining the Commons
 ---
 
+The Scholarly Commons is more about the scholarly and scientific knowledge than
+it is about the current players---not that the current players don't matter,
+but that the underlying purposes and motivations for this work---the
+discoveries that will bless all of mankind and the commoning processes that
+support them---are bigger than any one player, to which no one player or group
+of players may lay claim.
+
 While legislation and academic policies do need to be changed to incentivize
 participation and value these broader contributions, researchers from remote
 locales of the world, such as Tripura, India or Thai Nguyen, Vietnam, [will

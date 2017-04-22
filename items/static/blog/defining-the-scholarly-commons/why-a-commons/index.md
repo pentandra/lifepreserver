@@ -9,6 +9,16 @@ tags:
   - Defining the Commons
 ---
 
+We don't want to create a commons for a commons sake. First we need to know
+what we need, and then we'll know what kind of structure will meet that need.
+So what do we need?
+
+Needs:
+
+- decentralization
+- participation
+-
+
 The problem is, we're researchers, and instead of just letting things happen
 the way most commons happen, we are trying to be informed by those who have
 studied commons, such as Ostrom, Bollier, [Helfrich]{lang=nl}, or Grear, and
