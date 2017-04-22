@@ -35,7 +35,7 @@ ask for our permission :joy:.
 <!--MORE-->
 
 <dl>
-<% items_with_tag('Defining the Commons', published_blog_posts).sort_by { |p| p[:title] }.each do |post| %>
+<% items_with_tag('Defining the Commons', sorted_blog_posts).sort_by { |p| p[:title] }.each do |post| %>
   <dt><%= link_to_if_published(post) %></dt>
   <dd><%= post[:description] %></dd>
 <% end %>
