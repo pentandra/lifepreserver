@@ -29,4 +29,7 @@ it is trying to fill. But whatever the structure of these commons, we need a
 standard technical mechanism to tie them together, so that they are mutually
 interoperable and beneficial.
 
+If you have your whole process open for everyone to see, nobody can lay claim
+that they discovered it before you!
+
 [collectives]: <https://cybersocialstructure.org/2016/10/03/think-of-science-like-an-incurable-intellectual-disease/> "Think of science like an incurable intellectual disease, by Bruce Caron"
