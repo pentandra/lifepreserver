@@ -1,6 +1,6 @@
 ---
-title: "Defining the Scholarly Commons: Subtractable Resource"
-description: Is there a subtractable resource of a scholarly commons? Yes, there should be.
+title: "Defining the Scholarly Commons: subtractable resources"
+description: Is there a subtractable resource in your scholarly commons? Yes, there should be.
 kind: article
 author_name: Chris Chapman
 created_at: 2017-04-20
@@ -28,5 +28,8 @@ knowledge around which it was created, or more likely, around the type of need
 it is trying to fill. But whatever the structure of these commons, we need a
 standard technical mechanism to tie them together, so that they are mutually
 interoperable and beneficial.
+
+If you have your whole process open for everyone to see, nobody can lay claim
+that they discovered it before you!
 
 [collectives]: <https://cybersocialstructure.org/2016/10/03/think-of-science-like-an-incurable-intellectual-disease/> "Think of science like an incurable intellectual disease, by Bruce Caron"

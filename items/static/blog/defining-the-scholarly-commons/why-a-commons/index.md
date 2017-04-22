@@ -1,5 +1,5 @@
 ---
-title: "Defining the Scholarly Commons: Why a commons?"
+title: "Defining the Scholarly Commons: why a commons?"
 description: Why do we want a commons anyway? Isn't better tech enough?
 kind: article
 author_name: Chris Chapman
@@ -8,6 +8,16 @@ updated_at: 2017-04-20
 tags:
   - Defining the Commons
 ---
+
+We don't want to create a commons for a commons sake. First we need to know
+what we need, and then we'll know what kind of structure will meet that need.
+So what do we need?
+
+Needs:
+
+- decentralization
+- participation
+-
 
 The problem is, we're researchers, and instead of just letting things happen
 the way most commons happen, we are trying to be informed by those who have

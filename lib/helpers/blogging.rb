@@ -1,9 +1,11 @@
 require 'active_support/core_ext/object/blank'
 require_relative 'text'
+require_relative 'link_to'
 
 module LifePreserver
   module Blogging
     include Text
+    include LinkTo
 
     def blog_post?(item)
       item[:kind] == 'article' && item.identifier =~ %r{/blog/}
@@ -22,7 +24,7 @@ module LifePreserver
       blk = lambda do
         unpublished_posts, published_posts = blog_posts.partition { |p| p.unwrap.attributes[:published_at].nil? }
 
-        unpublished_posts = unpublished_posts.sort_by { |a| attribute_to_time(a.unwrap.attributes[:created_at]) }.reverse
+        unpublished_posts = unpublished_posts.sort_by { |a| attribute_to_time(a.unwrap.attributes[:updated_at]) }.reverse
         published_posts = published_posts.sort_by { |a| attribute_to_time(a.unwrap.attributes[:published_at]) }.reverse
 
         unpublished_posts + published_posts
@@ -91,6 +93,14 @@ module LifePreserver
 
     def link_for_archive(year)
       %(<a rel="archives" href="#{@config[:blog][:archives_url]}/#{h year.to_s}/" title="Articles written in #{h year.to_s}">#{h year.to_s}</a>)
+    end
+
+    def link_to_if_published(post, attributes = {})
+      if published_blog_posts.include?(post)
+        link_to(post[:short_title] || post[:title], post, attributes)
+      else
+        %(<span class="title">#{post[:short_title] || post[:title]}</span>)
+      end
     end
 
     def archive_years(posts = nil)
