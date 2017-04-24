@@ -4,7 +4,7 @@ description: Is there a subtractable resource in your scholarly commons? Yes, th
 kind: article
 author_name: Chris Chapman
 created_at: 2017-04-20
-updated_at: 2017-04-20
+updated_at: 2017-04-24
 tags:
   - Defining the Commons
 ---
@@ -22,14 +22,31 @@ a scholarly commons forms is the moments of discovery that reveal, bit by bit,
 the latent knowledge within that field of study. Once a contribution is made,
 it cannot be made again in quite the same way, and once a new understanding is
 revealed to a collective, it cannot be discovered to that collective anew.
-Scholarly commons (plural) can form around any type of knowledge. A scholarly
-commons can be nested within another, either imitating the structure of the
-knowledge around which it was created, or more likely, around the type of need
-it is trying to fill. But whatever the structure of these commons, we need a
-standard technical mechanism to tie them together, so that they are mutually
-interoperable and beneficial.
+Scholarly commons can form around any type of knowledge. A scholarly commons
+can be nested within another, either imitating the structure of the knowledge
+around which it was created, or more likely, around the type of need it is
+trying to fill.
 
-If you have your whole process open for everyone to see, nobody can lay claim
-that they discovered it before you!
+If the moments of discovery are the subtractable resource of the commons, what
+is being done with these resources right now? Surely they still exist, but they
+are being privatized by researchers who lay claim to the ground, thinking of it
+as their own exclusive property, hoping that others will not stumble onto their
+territory. Perhaps this is a pessimistic perception, but why else would
+researchers not share what they're working on but for fear of being scooped?
+
+The culture of the commons views things differently. Discoveries are still your
+own, but there is no reason to hide your research from others. In actuality, it
+is much more likely that the opposite is happening. There is every reason to go
+out and claim the ground that you see so that other people can build on top of
+it---not just for your own sake, but for the sake of everyone else in the world
+that could be using your contribution right now. If your whole process open for
+everyone to see, nobody can lay claim that they discovered something before
+you! Though these contributions are smaller and more fine-grained, they are not
+half-baked. They are independent in their own sphere of influence, and come
+with more of a sense of immediate gratification, more feelings of service, and
+many more ways to contribute.
+
+In short: scholarly commons accelerate research because they expose the
+subtractability of discoveries in a more efficient way.
 
 [collectives]: <https://cybersocialstructure.org/2016/10/03/think-of-science-like-an-incurable-intellectual-disease/> "Think of science like an incurable intellectual disease, by Bruce Caron"
