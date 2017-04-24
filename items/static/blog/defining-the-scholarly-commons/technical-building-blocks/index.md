@@ -9,4 +9,6 @@ tags:
   - Defining the Commons
   - Technology
 ---
-This is your new post.
+
+Whatever the structure of these commons, we need a standard technical mechanism
+to tie them together, so that they are mutually interoperable and beneficial.
