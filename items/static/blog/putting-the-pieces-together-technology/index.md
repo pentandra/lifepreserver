@@ -227,52 +227,6 @@ else, such as the need for and approaches to global peer-production. Even so, I
 did not expect the participants to react this way, and I think this was an
 important negative result to obtain and from which we should learn.
 
-# The process is the product
-
-As I was sitting there in the workshop, thinking about all the above, the
-answer came to me slowly but clearly. A thought occurred that, well, had
-nothing to do with the exercise, except perhaps indirectly: because the
-research processes were made explicit and studied this way, it allowed us to
-reason about, find patterns, and learn from them. What if we could look at the
-research process in more of a _functional_ way? Isn't it the _process_ that
-needs to be open and replicable? _So why are we not publishing the research
-process, even across tools, as the fundamental scholarly output?_ If knowledge
-discovery happens sequentially for a researcher, _why are we not publishing the
-journey of the researcher?_ If the process was the product, many of the
-problems we are facing right now in scholarly communications relating to
-reproducibility, participation, and the integration of scholarship into society
-would be greatly diminished or eliminated completely. Researchers would also
-have something to show for all their thinking. The researcher's thoughts and
-and the process of how they arrived at conclusions should form the basis of
-research publication and collaboration. From this perspective, the entire
-research process could be viewed as a sequence of decisions.
-
-I'm not advocating here that we capture a complete record of everything that a
-researcher is doing. But we need make explicit this common thread---this
-sequence of decisions---that drives the research forward, and we should have
-the flexibility to choose deliberately, at each point of decision, whether or
-not to make a thing part of that thread. If we keep this part implicit, or
-leave it to ex post facto analysis alone to attempt to reveal it, we end up not
-very far from where we are now: publishing _about_ the research, instead of
-publishing _research_, and our ability to effectively collaborate deeper into
-the research process will be impeded.
-
-<figure class="bq grab">
-
-> An article about computational science in a scientific publication is *not*
-> the scholarship itself, it is merely *advertising* of the scholarship. The
-> actual scholarship is the complete software development environment, and the
-> complete set of instructions which generated the figures.
-
-<figcaption>--- Jonathan B. Buckheit and David Donoho, <a href="http://statweb.stanford.edu/~donoho/Reports/1995/wavelab.pdf"><cite>Wavelab and Reproducible Research</cite></a>, 1995 (quoted in a <a href="http://www.wf4ever-project.org/wiki/download/attachments/2064544/ISMB2013KeynotecleanGOBLE.pdf">presentation</a> by Carole Goble).</figcaption>
-</figure>
-
-But where do we draw the line between implicit and explicit? Is it enough to
-know which tools the researcher used and when? The tools are part of it, but
-not all. We need to ask ourselves, _what is our goal?_ and then _what is of
-value in reaching that goal?_ If our goal is to create a new culture of
-scholarship, _what would change the culture?_
-
 Our process as a committee in defining the Scholarly Commons, aside from the
 workshops that we have held, has been mostly limited to seeking feedback when
 we were nearing a finished product. Our design process has not been very open,
@@ -350,6 +304,54 @@ change or go away. The Scholarly Commons should be a jumping-off point to new
 ways of working together, taking the best ideas of how to do scholarship in a
 modern setting, setting aside as many of the undesirable social, cultural, and
 technical limitations as possible.
+
+# The process is the product
+
+As I was sitting there in the workshop, thinking about all the above, the
+answer came to me slowly but clearly. A thought occurred that, well, had
+nothing to do with the exercise, except perhaps indirectly: because the
+research processes were made explicit and studied this way, it allowed us to
+reason about, find patterns, and learn from them. What if we could look at the
+research process in more of a _functional_ way? Isn't it the _process_ that
+needs to be open and replicable? _So why are we not publishing the research
+process, even across tools, as the fundamental scholarly output?_ If knowledge
+discovery happens sequentially for a researcher, _why are we not publishing the
+journey of the researcher?_ If the process was the product, many of the
+problems we are facing right now in scholarly communications relating to
+reproducibility, participation, and the integration of scholarship into society
+would be greatly diminished or eliminated completely. Researchers would also
+have something to show for all their thinking. The researcher's thoughts and
+and the process of how they arrived at conclusions should form the basis of
+research publication and collaboration. From this perspective, the entire
+research process could be viewed as a sequence of decisions.
+
+I'm not advocating here that we capture a complete record of everything that a
+researcher is doing. But we need make explicit this common thread---this
+sequence of decisions---that drives the research forward, and we should have
+the flexibility to choose deliberately, at each point of decision, whether or
+not to make a thing part of that thread. This thread needs to be an integral
+part of the research experience, something that researchers curate as they go
+along. If we keep this part implicit, or leave it to ex post facto analysis
+alone to attempt to reveal it, we end up not very far from where we are now:
+publishing _about_ the research, instead of publishing _research_, and our
+ability to effectively collaborate deeper into the research process will be
+impeded.
+
+<figure class="bq grab">
+
+> An article about computational science in a scientific publication is *not*
+> the scholarship itself, it is merely *advertising* of the scholarship. The
+> actual scholarship is the complete software development environment, and the
+> complete set of instructions which generated the figures.
+
+<figcaption>--- Jonathan B. Buckheit and David Donoho, <a href="http://statweb.stanford.edu/~donoho/Reports/1995/wavelab.pdf"><cite>Wavelab and Reproducible Research</cite></a>, 1995 (quoted in a <a href="http://www.wf4ever-project.org/wiki/download/attachments/2064544/ISMB2013KeynotecleanGOBLE.pdf">presentation</a> by Carole Goble).</figcaption>
+</figure>
+
+But where do we draw the line between implicit and explicit? Is it enough to
+know which tools the researcher used and when? The tools are part of it, but
+not all. We need to ask ourselves, _what is our goal?_ and then _what is of
+value in reaching that goal?_ If our goal is to create a new culture of
+scholarship, _what would change the culture?_
 
 To give an example of what I mean by this, allow me to share my experience
 designing [the logo] for the Scholarly Commons. As I went along, I made a
