@@ -425,12 +425,18 @@ processes. And as more of the researcher's process becomes open, machines will
 be free to find patterns among researchers' paths, giving way to some sort of
 collective intelligence in a common search for truth.
 
-But we don't need to stop there! Once we have removed barriers to the
-production of knowledge, what is to stop us from using this knowledge freely to
-improve the lives of everyone!? Continuing from his [previous
-quote](#systems-vs-components) about the focus on components that has led to a
-lack of systemic excellence in the practice of medicine, Gawande provides some
-direction for the future:
+Decision trees can also be used as an analytical tool to study and refine
+practices themselves. This is one of the most promising ideas to me, and is
+something that will connect research to practice in a way that simply does not
+exist right now. But we don't need to stop there! Once we have removed barriers
+to the production of knowledge, what is to stop us from using this knowledge
+freely to improve the lives of everyone!? If we can approach this in a very
+general way, this idea has the potential to make a real difference in how we
+practice, not just as researchers but as practitioners in many other fields,
+and may even blur the line between researchers and practitioners. Continuing
+from his [previous quote](#systems-vs-components) about the focus on components
+that has led to a lack of systemic excellence in the practice of medicine,
+Gawande provides some direction for the future:
 
 <figure class="bq grab">
 
@@ -449,14 +455,6 @@ direction for the future:
 
 <figcaption>--- Atul Gawande, <cite>The Checklist Manifesto</cite>, p. [185]{.oldstyle}</figcaption>
 </figure>
-
-Decision trees can also be used as an analytical tool to study and refine
-practices themselves. This is one of the most promising ideas to me, and is
-something that will connect research to practice in a way that simply does not
-exist right now. If we can approach this in a very general way, this idea has
-the potential to make a real difference in how we practice, not just as
-researchers but as practitioners in many other fields, and may even blur the
-line between researchers and practitioners.
 
 Sharing our patterns of practice is part of the answer to [increasing the
 porosity of the boundaries between knowledge clubs][porosity] and allowing
