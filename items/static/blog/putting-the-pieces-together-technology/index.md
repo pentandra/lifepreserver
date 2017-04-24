@@ -353,31 +353,31 @@ not all. We need to ask ourselves, _what is our goal?_ and then _what is of
 value in reaching that goal?_ If our goal is to create a new culture of
 scholarship, _what would change the culture?_
 
-To give an example of what I mean by this, allow me to share my experience
-designing [the logo] for the Scholarly Commons. As I went along, I made a
-conscious effort to explain each step, impression, question, and resulting
-decision of the design process. This is the spirit and culture of the commons!
-Done this way, the process is open, transparent, and invites participation. It
-is easy for anyone to ask, 'Did you think about this or that?' and contribute
-in context. It is easy for anyone to get involved in the design process,
-wherever and whenever the feel they have something to contribute. Obviously,
-doing this with a Google Doc is less than ideal, but I hope you can see what I
-am trying to show.
+To give an example of what I mean, allow me to share my experience designing
+[the logo] for the Scholarly Commons. As I went along, I made a conscious
+effort to explain each step, impression, question, and resulting decision of
+the design process. This is the spirit and culture of the commons! Done this
+way, the process is open, transparent, and invites participation. It is easy
+for anyone to ask, 'Did you think about this or that?' and contribute in
+context. It is easy for anyone to get involved in the design process, wherever
+and whenever the feel they have something to contribute. Obviously, doing this
+with a Google Doc is less than ideal, but I hope you can see what I am trying
+to show.
 
 # Shared Practice
 
 To me the essence of scholarly commoning is sharing how, why, and what we do.
-To do this, we need a way to explicitly _share_ our practice. I discussed this
-idea and the need to share our process openly as [the fundamental scholarly
-product][the process is the product], and then [what that product should
-invite][scholarly commoning]. Taking this idea a step further, we need a way to
-explicitly share _patterns_ of practice. Fiona Murphy and Danny Kingsley
-explored some possibilities for doing this using [decision trees] during an
-unworkshop session. Unlike the logical flow of questions that portray a
-researcher's prior journey of discovery, decision trees, in this context,
-describe patterns of practice (or _behavior_) that can guide the practice of
-research _going forward_. Decision trees direct the focus onto concrete,
-actionable things we can do.
+To do this, we need a way to explicitly _share_ our practice. I discussed the
+need to share our practice openly as [the fundamental scholarly product][the
+process is the product], as well as [what that product should invite][scholarly
+commoning]. Taking this idea a step further, we need a way to explicitly share
+_patterns_ of practice. Fiona Murphy and Danny Kingsley explored some
+possibilities for doing this using [decision trees] during an unworkshop
+session. Unlike the logical flow of questions that portray a researcher's prior
+journey of discovery, decision trees, in this context, describe patterns of
+practice (or _behavior_) that can guide the practice of research _going
+forward_. Decision trees direct the focus onto concrete, actionable things we
+can do.
 
 Of course, the idea with these decision trees is not to mandate specific
 research practices, but to create a way to practice and share our patterns of
