@@ -296,14 +296,12 @@ We've talked a lot about attribution, but there's something more to the concept
 of the researcher that we're not yet talking about that much. We need something
 social and dynamic that brings together the pieces of research and draws people
 _into_ the process (while, of course, preserving the attribution, integrity,
-and openness of the contributions). What about the questions and intentions of
-the researcher? This is the level at which I think we really need to be
-sharing. If we can find effective ways to communicate more openly throughout
-the process, many of the existing forms of scholarly communications will either
-change or go away. The Scholarly Commons should be a jumping-off point to new
-ways of working together, taking the best ideas of how to do scholarship in a
-modern setting, setting aside as many of the undesirable social, cultural, and
-technical limitations as possible.
+and openness of the contributions). If we can find effective ways to
+communicate more openly throughout the process, many of the existing forms of
+scholarly communications will either change or go away. The Scholarly Commons
+should be a jumping-off point to new ways of working together, taking the best
+ideas of how to do scholarship in a modern setting, setting aside as many of
+the undesirable social, cultural, and technical limitations as possible.
 
 # The process is the product
 
@@ -351,7 +349,10 @@ But where do we draw the line between implicit and explicit? Is it enough to
 know which tools the researcher used and when? The tools are part of it, but
 not all. We need to ask ourselves, _what is our goal?_ and then _what is of
 value in reaching that goal?_ If our goal is to create a new culture of
-scholarship, _what would change the culture?_
+scholarship, _what would change the culture?_ What about the questions and
+intentions of the researcher? Sharing openly at this level may be just enough
+to change the culture, as it would invite people into the discovery process,
+placing the emphasis on potential participation rather than on prior prestige.
 
 To give an example of what I mean, allow me to share my experience designing
 [the logo] for the Scholarly Commons. As I went along, I made a conscious
