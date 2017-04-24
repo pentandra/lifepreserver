@@ -5,7 +5,7 @@ description: >
 kind: article
 author_name: Chris Chapman
 created_at: 2017-02-16
-updated_at: 2017-04-20
+updated_at: 2017-04-24
 cover_image_id: '/static/blog/putting-the-pieces-together-technology/scholarly_commons_backbone_using_existing_stuff.jpg'
 tags:
   - Scholarly Commons
@@ -141,7 +141,7 @@ understanding of some of the discussions may be incomplete.
 <figure class="img" resource="#scholarly_commons_backbone_using_existing_stuff_as_parts" property="schema:sharedContent" typeof="schema:ImageObject">
   <link property="schema:representativeOfPage" resource="schema:True"/>
   <a property="schema:url" href="scholarly_commons_backbone_using_existing_stuff.jpg" title="Click for the whole board"><img property="schema:thumbnail" src="scholarly_commons_backbone_using_existing_stuff_620x.jpg"/></a>
-  <figcaption class="schema:caption">Some thoughts that emerged during the main track of the workshop, which was slowly whittled down to a few people as discussions diverged, and eventually consisted primarily of [Björn Brembs]{lang=nl}, [Jeroen Bosman]{lang=nl}, and [Bianca Kramer]{lang=nl}, on practical pathways toward a scholarly commons using existing tools, organizations, and services.</figcaption>
+  <figcaption class="schema:caption">Some thoughts that emerged during the main track of the workshop, which was slowly whittled down to a few people as discussions diverged, on practical pathways toward a scholarly commons using existing tools, organizations, and services.</figcaption>
 </figure>
 
 As for the exercise, after the tools went through the 'compliance checking'
