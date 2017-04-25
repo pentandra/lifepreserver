@@ -56,8 +56,9 @@ module LifePreserver
     # Returns a link to the specified tag.
     def link_for_tag(tag, rel_tag: true)
       if tag.is_a?(String)
+        original_tag = tag
         tag = @items["/lifepreserver/tags/#{tag.to_slug}"]
-        raise ArgumentError, "Tag metadata does not yet exist in `etc/tags.yaml` for the tag '#{tag}'. Please add the tag first and then try again." unless tag
+        raise ArgumentError, "Tag metadata does not yet exist in `etc/tags.yaml` for the tag '#{original_tag}'. Please add the tag first and then try again." unless tag
       end
 
       if rel_tag && tag[:semantic]
