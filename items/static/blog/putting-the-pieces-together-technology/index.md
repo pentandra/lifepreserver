@@ -5,7 +5,7 @@ description: >
 kind: article
 author_name: Chris Chapman
 created_at: 2017-02-16
-updated_at: 2017-04-20
+updated_at: 2017-04-25
 cover_image_id: '/static/blog/putting-the-pieces-together-technology/scholarly_commons_backbone_using_existing_stuff.jpg'
 tags:
   - Scholarly Commons
@@ -141,7 +141,7 @@ understanding of some of the discussions may be incomplete.
 <figure class="img" resource="#scholarly_commons_backbone_using_existing_stuff_as_parts" property="schema:sharedContent" typeof="schema:ImageObject">
   <link property="schema:representativeOfPage" resource="schema:True"/>
   <a property="schema:url" href="scholarly_commons_backbone_using_existing_stuff.jpg" title="Click for the whole board"><img property="schema:thumbnail" src="scholarly_commons_backbone_using_existing_stuff_620x.jpg"/></a>
-  <figcaption class="schema:caption">Some thoughts that emerged during the main track of the workshop, which was slowly whittled down to a few people as discussions diverged, and eventually consisted primarily of [Björn Brembs]{lang=nl}, [Jeroen Bosman]{lang=nl}, and [Bianca Kramer]{lang=nl}, on practical pathways toward a scholarly commons using existing tools, organizations, and services.</figcaption>
+  <figcaption class="schema:caption">Some thoughts that emerged during the main track of the workshop, which was slowly whittled down to a few people as discussions diverged, on practical pathways toward a scholarly commons using existing tools, organizations, and services.</figcaption>
 </figure>
 
 As for the exercise, after the tools went through the 'compliance checking'
@@ -227,52 +227,6 @@ else, such as the need for and approaches to global peer-production. Even so, I
 did not expect the participants to react this way, and I think this was an
 important negative result to obtain and from which we should learn.
 
-# The process is the product
-
-As I was sitting there in the workshop, thinking about all the above, the
-answer came to me slowly but clearly. A thought occurred that, well, had
-nothing to do with the exercise, except perhaps indirectly: because the
-research processes were made explicit and studied this way, it allowed us to
-reason about, find patterns, and learn from them. What if we could look at the
-research process in more of a _functional_ way? Isn't it the _process_ that
-needs to be open and replicable? _So why are we not publishing the research
-process, even across tools, as the fundamental scholarly output?_ If knowledge
-discovery happens sequentially for a researcher, _why are we not publishing the
-journey of the researcher?_ If the process was the product, many of the
-problems we are facing right now in scholarly communications relating to
-reproducibility, participation, and the integration of scholarship into society
-would be greatly diminished or eliminated completely. Researchers would also
-have something to show for all their thinking. The researcher's thoughts and
-and the process of how they arrived at conclusions should form the basis of
-research publication and collaboration. From this perspective, the entire
-research process could be viewed as a sequence of decisions.
-
-I'm not advocating here that we capture a complete record of everything that a
-researcher is doing. But we need make explicit this common thread---this
-sequence of decisions---that drives the research forward, and we should have
-the flexibility to choose deliberately, at each point of decision, whether or
-not to make a thing part of that thread. If we keep this part implicit, or
-leave it to ex post facto analysis alone to attempt to reveal it, we end up not
-very far from where we are now: publishing _about_ the research, instead of
-publishing _research_, and our ability to effectively collaborate deeper into
-the research process will be impeded.
-
-<figure class="bq grab">
-
-> An article about computational science in a scientific publication is *not*
-> the scholarship itself, it is merely *advertising* of the scholarship. The
-> actual scholarship is the complete software development environment, and the
-> complete set of instructions which generated the figures.
-
-<figcaption>--- Jonathan B. Buckheit and David Donoho, <a href="http://statweb.stanford.edu/~donoho/Reports/1995/wavelab.pdf"><cite>Wavelab and Reproducible Research</cite></a>, 1995 (quoted in a <a href="http://www.wf4ever-project.org/wiki/download/attachments/2064544/ISMB2013KeynotecleanGOBLE.pdf">presentation</a> by Carole Goble).</figcaption>
-</figure>
-
-But where do we draw the line between implicit and explicit? Is it enough to
-know which tools the researcher used and when? The tools are part of it, but
-not all. We need to ask ourselves, _what is our goal?_ and then _what is of
-value in reaching that goal?_ If our goal is to create a new culture of
-scholarship, _what would change the culture?_
-
 Our process as a committee in defining the Scholarly Commons, aside from the
 workshops that we have held, has been mostly limited to seeking feedback when
 we were nearing a finished product. Our design process has not been very open,
@@ -342,40 +296,89 @@ We've talked a lot about attribution, but there's something more to the concept
 of the researcher that we're not yet talking about that much. We need something
 social and dynamic that brings together the pieces of research and draws people
 _into_ the process (while, of course, preserving the attribution, integrity,
-and openness of the contributions). What about the questions and intentions of
-the researcher? This is the level at which I think we really need to be
-sharing. If we can find effective ways to communicate more openly throughout
-the process, many of the existing forms of scholarly communications will either
-change or go away. The Scholarly Commons should be a jumping-off point to new
-ways of working together, taking the best ideas of how to do scholarship in a
-modern setting, setting aside as many of the undesirable social, cultural, and
-technical limitations as possible.
+and openness of the contributions). If we can find effective ways to
+communicate more openly throughout the process, many of the existing forms of
+scholarly communications will either change or go away. The Scholarly Commons
+should be a jumping-off point to new ways of working together, taking the best
+ideas of how to do scholarship in a modern setting, setting aside as many of
+the undesirable social, cultural, and technical limitations as possible.
 
-To give an example of what I mean by this, allow me to share my experience
-designing [the logo] for the Scholarly Commons. As I went along, I made a
-conscious effort to explain each step, impression, question, and resulting
-decision of the design process. This is the spirit and culture of the commons!
-Done this way, the process is open, transparent, and invites participation. It
-is easy for anyone to ask, 'Did you think about this or that?' and contribute
-in context. It is easy for anyone to get involved in the design process,
-wherever and whenever the feel they have something to contribute. Obviously,
-doing this with a Google Doc is less than ideal, but I hope you can see what I
-am trying to show.
+# The process is the product
+
+As I was sitting there in the workshop, thinking about all the above, the
+answer came to me slowly but clearly. A thought occurred that, well, had
+nothing to do with the exercise, except perhaps indirectly: because the
+research processes were made explicit and studied this way, it allowed us to
+reason about, find patterns, and learn from them. What if we could look at the
+research process in more of a _functional_ way? Isn't it the _process_ that
+needs to be open and replicable? _So why are we not publishing the research
+process, even across tools, as the fundamental scholarly output?_ If knowledge
+discovery happens sequentially for a researcher, _why are we not publishing the
+journey of the researcher?_ If the process was the product, many of the
+problems we are facing right now in scholarly communications relating to
+reproducibility, participation, and the integration of scholarship into society
+would be greatly diminished or eliminated completely. Researchers would also
+have something to show for all their thinking. The researcher's thoughts and
+and the process of how they arrived at conclusions should form the basis of
+research publication and collaboration. From this perspective, the entire
+research process could be viewed as a sequence of decisions.
+
+I'm not advocating here that we capture a complete record of everything that a
+researcher is doing. But we need make explicit this common thread---this
+sequence of decisions---that drives the research forward, and we should have
+the flexibility to choose deliberately, at each point of decision, whether or
+not to make a thing part of that thread. This thread needs to be an integral
+part of the research experience, something that researchers curate as they go
+along. If we keep this part implicit, or leave it to ex post facto analysis
+alone to attempt to reveal it, we end up not very far from where we are now:
+publishing _about_ the research, instead of publishing _research_, and our
+ability to effectively collaborate deeper into the research process will be
+impeded.
+
+<figure class="bq grab">
+
+> An article about computational science in a scientific publication is *not*
+> the scholarship itself, it is merely *advertising* of the scholarship. The
+> actual scholarship is the complete software development environment, and the
+> complete set of instructions which generated the figures.
+
+<figcaption>--- Jonathan B. Buckheit and David Donoho, <a href="http://statweb.stanford.edu/~donoho/Reports/1995/wavelab.pdf"><cite>Wavelab and Reproducible Research</cite></a>, 1995 (quoted in a <a href="https://www.slideshare.net/carolegoble/ismb2013-keynotecleangoble">presentation</a> by Carole Goble).</figcaption>
+</figure>
+
+But where do we draw the line between implicit and explicit? Is it enough to
+know which tools the researcher used and when? The tools are part of it, but
+not all. We need to ask ourselves, _what is our goal?_ and then _what is of
+value in reaching that goal?_ If our goal is to create a new culture of
+scholarship, _what would change the culture?_ What about the questions and
+intentions of the researcher? Sharing openly at this level may be just enough
+to change the culture, as it would invite people into the discovery process,
+placing the emphasis on potential participation rather than on prior prestige.
+
+To give an example of what I mean, allow me to share my experience designing
+[the logo] for the Scholarly Commons. As I went along, I made a conscious
+effort to explain each step, impression, question, and resulting decision of
+the design process. This is the spirit and culture of the commons! Done this
+way, the process is open, transparent, and invites participation. It is easy
+for anyone to ask, 'Did you think about this or that?' and contribute in
+context. It is easy for anyone to get involved in the design process, wherever
+and whenever the feel they have something to contribute. Obviously, doing this
+with a Google Doc is less than ideal, but I hope you can see what I am trying
+to show.
 
 # Shared Practice
 
 To me the essence of scholarly commoning is sharing how, why, and what we do.
-To do this, we need a way to explicitly _share_ our practice. I discussed this
-idea and the need to share our process openly as [the fundamental scholarly
-product][the process is the product], and then [what that product should
-invite][scholarly commoning]. Taking this idea a step further, we need a way to
-explicitly share _patterns_ of practice. Fiona Murphy and Danny Kingsley
-explored some possibilities for doing this using [decision trees] during an
-unworkshop session. Unlike the logical flow of questions that portray a
-researcher's prior journey of discovery, decision trees, in this context,
-describe patterns of practice (or _behavior_) that can guide the practice of
-research _going forward_. Decision trees direct the focus onto concrete,
-actionable things we can do.
+To do this, we need a way to explicitly _share_ our practice. I discussed the
+need to share our practice openly as [the fundamental scholarly product][the
+process is the product], as well as [what that product should invite][scholarly
+commoning]. Taking this idea a step further, we need a way to explicitly share
+_patterns_ of practice. Fiona Murphy and Danny Kingsley explored some
+possibilities for doing this using [decision trees] during an unworkshop
+session. Unlike the logical flow of questions that portray a researcher's prior
+journey of discovery, decision trees, in this context, describe patterns of
+practice (or _behavior_) that can guide the practice of research _going
+forward_. Decision trees direct the focus onto concrete, actionable things we
+can do.
 
 Of course, the idea with these decision trees is not to mandate specific
 research practices, but to create a way to practice and share our patterns of
@@ -423,12 +426,18 @@ processes. And as more of the researcher's process becomes open, machines will
 be free to find patterns among researchers' paths, giving way to some sort of
 collective intelligence in a common search for truth.
 
-But we don't need to stop there! Once we have removed barriers to the
-production of knowledge, what is to stop us from using this knowledge freely to
-improve the lives of everyone!? Continuing from his [previous
-quote](#systems-vs-components) about the focus on components that has led to a
-lack of systemic excellence in the practice of medicine, Gawande provides some
-direction for the future:
+Decision trees can also be used as an analytical tool to study and refine
+practices themselves. This is one of the most promising ideas to me, and is
+something that will connect research to practice in a way that simply does not
+exist right now. But we don't need to stop there! Once we have removed barriers
+to the production of knowledge, what is to stop us from using this knowledge
+freely to improve the lives of everyone!? If we can approach this in a very
+general way, this idea has the potential to make a real difference in how we
+practice, not just as researchers but as practitioners in many other fields,
+and may even blur the line between researchers and practitioners. Continuing
+from his [previous quote](#systems-vs-components) about the focus on components
+that has led to a lack of systemic excellence in the practice of medicine,
+Gawande provides some direction for the future:
 
 <figure class="bq grab">
 
@@ -447,14 +456,6 @@ direction for the future:
 
 <figcaption>--- Atul Gawande, <cite>The Checklist Manifesto</cite>, p. [185]{.oldstyle}</figcaption>
 </figure>
-
-Decision trees can also be used as an analytical tool to study and refine
-practices themselves. This is one of the most promising ideas to me, and is
-something that will connect research to practice in a way that simply does not
-exist right now. If we can approach this in a very general way, this idea has
-the potential to make a real difference in how we practice, not just as
-researchers but as practitioners in many other fields, and may even blur the
-line between researchers and practitioners.
 
 Sharing our patterns of practice is part of the answer to [increasing the
 porosity of the boundaries between knowledge clubs][porosity] and allowing
