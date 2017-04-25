@@ -5,7 +5,7 @@ description: >
 kind: article
 author_name: Chris Chapman
 created_at: 2017-02-16
-updated_at: 2017-04-24
+updated_at: 2017-04-25
 cover_image_id: '/static/blog/putting-the-pieces-together-technology/scholarly_commons_backbone_using_existing_stuff.jpg'
 tags:
   - Scholarly Commons
@@ -342,7 +342,7 @@ impeded.
 > actual scholarship is the complete software development environment, and the
 > complete set of instructions which generated the figures.
 
-<figcaption>--- Jonathan B. Buckheit and David Donoho, <a href="http://statweb.stanford.edu/~donoho/Reports/1995/wavelab.pdf"><cite>Wavelab and Reproducible Research</cite></a>, 1995 (quoted in a <a href="http://www.wf4ever-project.org/wiki/download/attachments/2064544/ISMB2013KeynotecleanGOBLE.pdf">presentation</a> by Carole Goble).</figcaption>
+<figcaption>--- Jonathan B. Buckheit and David Donoho, <a href="http://statweb.stanford.edu/~donoho/Reports/1995/wavelab.pdf"><cite>Wavelab and Reproducible Research</cite></a>, 1995 (quoted in a <a href="https://www.slideshare.net/carolegoble/ismb2013-keynotecleangoble">presentation</a> by Carole Goble).</figcaption>
 </figure>
 
 But where do we draw the line between implicit and explicit? Is it enough to
