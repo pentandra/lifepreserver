@@ -6,7 +6,7 @@ kind: article
 author_name: Chris Chapman
 created_at: 2017-02-16
 updated_at: 2017-04-25
-cover_image_id: '/static/blog/putting-the-pieces-together-technology/scholarly_commons_backbone_using_existing_stuff.jpg'
+cover_image_id: '/static/blog/putting-the-pieces-together-technology/researcher_workflows.png'
 tags:
   - Scholarly Commons
   - Holism
@@ -25,6 +25,8 @@ as it sometimes turns out in this funny thing we call life, it is time to
 release this post, and I am still working on the one about culture. Don't
 worry---this post is not about specific technologies, but about what needs to
 be enabled by technology to allow for what I'm calling _scholarly commoning_.
+
+![Researcher workflows, personal and context specific, overlapping and intertwining over time.](researcher_workflows.png)
 
 As this is my own response to the San Diego workshop and to our discovery
 process so far relating to the Scholarly Commons, it represents my own views
@@ -496,9 +498,9 @@ whether open or proprietary. Either way, the underlying research is still open
 for anyone to learn from or build upon. The Scholarly Commons is not anti
 anything, but invites all to come and participate, which will enable it,
 potentially, to scale bigger in scope and influence than existing systems are
-capable. Because it will be a fully functioning alternative 'driven by a
-different logic',[^constellation] the Scholarly Commons will eventually have
-the ability to displace existing systems.
+capable. Because it will be a fully functioning alternative _driven by a
+different logic_, the Scholarly Commons will eventually have the ability to
+displace existing systems.
 
 So even though I'm working on another post about putting the cultural pieces of
 the Scholarly Commons together, if I could, at this point, sum up what the
