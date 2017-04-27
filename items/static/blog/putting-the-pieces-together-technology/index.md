@@ -540,18 +540,6 @@ capable. Because it will be a fully functioning alternative _driven by a
 different logic_, the Scholarly Commons will eventually have the ability to
 displace existing systems.
 
-So even though I'm working on another post about putting the cultural pieces of
-the Scholarly Commons together, if I could, at this point, sum up what the
-Scholarly Commons is from the perspective of technology, I would say:
-
-<div class="big">
-
-<dfn id="def:technology-of-the-scholarly-commons">The Scholarly Commons</dfn>
-is an opportunity to improve the world by drastically improving our practices
-relating to scholarly and scientific knowledge.
-
-</div>
-
 [proprietary approaches]: <https://scholarlykitchen.sspnet.org/2017/02/09/cobbling-together-workflow-businesses/>
 [earlier definition]: </blog/putting-the-pieces-together-culture/#def:the-scholarly-commons> "The Scholarly Commons is the opportunity to come together and create a new culture of commoning on scholarly and scientific knowledge."
 [vision]: </#sec:research-experience> "We envision a better research experience"
