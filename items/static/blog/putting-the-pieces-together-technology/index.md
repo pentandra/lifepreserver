@@ -6,7 +6,7 @@ kind: article
 author_name: Chris Chapman
 created_at: 2017-02-16
 updated_at: 2017-04-25
-cover_image_id: '/static/blog/putting-the-pieces-together-technology/researcher_workflows.png'
+cover_image_id: '/static/blog/putting-the-pieces-together-technology/researcher_journeys.png'
 tags:
   - Scholarly Commons
   - Holism
@@ -26,7 +26,7 @@ release this post, and I am still working on the one about culture. Don't
 worry---this post is not about specific technologies, but about what needs to
 be enabled by technology to allow for what I'm calling _scholarly commoning_.
 
-![Researcher workflows, personal and context specific, overlapping and intertwining over time.](researcher_workflows.png)
+![Researcher journeys, personal and context specific, overlapping and intertwining over time.](researcher_journeys.png)
 
 As this is my own response to the San Diego workshop and to our discovery
 process so far relating to the Scholarly Commons, it represents my own views
