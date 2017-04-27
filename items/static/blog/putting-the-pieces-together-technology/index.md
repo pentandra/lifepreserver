@@ -227,11 +227,11 @@ new world from the current system. For example, one participant was threatened
 with dismissal from her doctoral program if she chose to publish a paper open
 access. And that's just the resistance placed against the Open Access movement,
 which has been going on for many years now. Compared with the Open Access
-movement, the Scholarly Commons seems like it is from another millennium. As
-much as it sounds nice, and [as happy as it would be to work in this new
-world][happy place], the transition to new ways of working together is not
-going to happen overnight. It is not enough to know what our destination
-is---we also need to know how to get there from where we are now.
+movement, the Scholarly Commons seems like it is from another millennium, or at
+least another century. As much as it sounds nice, and [as happy as it would be
+to work in this new world][happy place], the transition to new ways of working
+together is not going to happen overnight. It is not enough to know what our
+destination is---we also need to know how to get there from where we are now.
 
 Of course we can't expect to figure all of this out in one workshop. But we
 must address the right questions. And we need to have the right goal. Merging
@@ -272,14 +272,12 @@ workshops that we have held, has been mostly limited to seeking feedback when
 we were nearing a finished product. Our design process has not been very open,
 not because we we haven't wanted it that way, but because of the lack of
 tooling that preserves the continuity of a broad-reaching, multi-faceted
-exploratory research process. I think we're doing the best we can with what we
-have, but we need ways to do this better! I believe that the future really _is_
-a [happy place]!
-
-Throughout this exploration (and it has been a luxury to be able to explore
-this topic so intensely for so long), while I have learned much from the many
-perspectives that have been shared, I have found it particularly interesting
-that we have not yet discussed the definition of _scholarship_. I think we've
+exploratory research process. I believe that [the future really _is_ a happy
+place][happy place] and we need ways to do this better! Throughout this
+exploration (and it has been a luxury to be able to explore this topic so
+intensely for so long), while I have learned much from the many perspectives
+that have been shared, I have found it particularly interesting that we have
+not yet discussed together the definition of _scholarship_. I think we've
 assumed that we're trying to create something for the current professional
 community of scholars, scientists, and researchers, and anyone else who want to
 play their game. But I think revisiting our definitions of scholarship,
@@ -336,7 +334,7 @@ these things are great, but they don't invite participation by themselves.
 We've talked a lot about attribution, but there's something more to the concept
 of the researcher that we're not yet talking about that much. We need something
 social and dynamic that brings together the pieces of research and draws people
-_into_ the process (while, of course, preserving the attribution, integrity,
+_into the process_ (while, of course, preserving the attribution, integrity,
 and openness of the contributions). If we can find effective ways to
 communicate more openly throughout the process, many of the existing forms of
 scholarly communications will either change or go away. The Scholarly Commons
@@ -359,21 +357,21 @@ journey of the researcher?_ If the process was the product, many of the
 problems we are facing right now in scholarly communications relating to
 reproducibility, participation, and the integration of scholarship into society
 would be greatly diminished or eliminated completely. Researchers would also
-have something to show for all their thinking. The researcher's thoughts and
-and the process of how they arrived at conclusions should form the basis of
-research publication and collaboration. From this perspective, the entire
-research process could be viewed as a sequence of decisions.
+have something to show for all their thinking. From this perspective, the
+entire research process could be viewed as a sequence of decisions. The
+researcher's thoughts and and the process of how they arrived at conclusions
+should form the basis of research publication and collaboration.
 
 I'm not advocating here that we capture a complete record of everything that a
 researcher is doing. But we need make explicit this common thread---this
-sequence of decisions---that drives the research forward, and we should have
-the flexibility to choose deliberately, at each point of decision, whether or
-not to make a thing part of that thread. This thread needs to be an integral
-part of the research experience, something that researchers curate as they go
-along. If we keep this part implicit, or leave it to ex post facto analysis
-alone to attempt to reveal it, we end up not very far from where we are now:
-publishing _about_ the research, instead of publishing _research_, and our
-ability to effectively collaborate deeper into the research process will be
+sequence of decisions---that drives the research forward, and researchers
+should have the flexibility to choose deliberately, at each point of decision,
+whether or not to make a thing part of that thread. This thread needs to be an
+integral part of the research experience, something that researchers curate as
+they go along. If we keep this part implicit, or leave it to ex post facto
+analysis alone to attempt to reveal it, we end up not very far from where we
+are now: publishing _about_ the research, instead of publishing _research_, and
+our ability to effectively collaborate deeper into the research process will be
 impeded.
 
 <figure class="bq grab">
@@ -392,8 +390,8 @@ not all. We need to ask ourselves, _what is our goal?_ and then _what is of
 value in reaching that goal?_ If our goal is to create a new culture of
 scholarship, _what would change the culture?_ What about the questions and
 intentions of the researcher? Sharing openly at this level may be just enough
-to change the culture, as it would invite people into the discovery process,
-placing the emphasis on potential participation rather than on prior prestige.
+to change the culture, as it would invite people into the process and place the
+emphasis on potential participation rather than on prior prestige.
 
 To give an example of what I mean, allow me to share my experience designing
 [the logo] for the Scholarly Commons. As I went along, I made a conscious
