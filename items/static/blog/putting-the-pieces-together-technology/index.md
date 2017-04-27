@@ -76,10 +76,19 @@ working alternatives driven by a different logic.'[^constellation]
 
 # On gaps and systems
 
+As this essay is, in part, a review of the San Diego workshop,  I want to
+structure my thoughts around the main track of this workshop, which was devoted
+to 'putting the pieces together' by comparing the community vision of the
+Scholarly Commons against our current state of chaotic
+innovation,[^second-workshop]. While there were several unworkshop sessions,
+the main track was designed to lead participants through an exercise of
+'compliance checking' existing tools to see how well they conformed to the
+latest rendition of the principles of the Scholarly Commons.
+
 One of the topics that pops up every once in a while lately in the discussions
 in the Scholarly Commons working group is the concept of _compliance_. I think
-this comes from the desire to understand what the Scholarly Commons is---to
-wrap our brains around the idea, and the hope that if we know where the
+this comes from a natural desire to understand what the Scholarly Commons
+is---to wrap our brains around the idea, and the hope that if we know where the
 boundaries of the Scholarly Commons lie, we might be able to reduce the
 Scholarly Commons to some transparent explanatory paragraph or set of
 principles. Following that type of thinking then, the question of whether or
@@ -90,33 +99,34 @@ exclusivity over inclusivity. I think that for us over the past year this
 argument has been more of a distraction that has held us back from discovering
 more what the Scholarly Commons is all about. From my viewpoint, the Scholarly
 Commons is more about _enabling interactions_ and the _contributions_ that
-result from those interactions. We're either commoning or we're not. The things
-we're working with either fit together or they don't. A better word for this
-type of interactivity might be <dfn id="def:compatibility">compatibility</dfn>,
-which, in a telecommunications context, means 'the capability of two or more
-items or components of equipment or material to exist or function in the same
-system or environment without mutual interference.'[^compatibility] We use and
-build upon resources that are compatible with our manner of working. Otherwise,
-we just don't use them. They just don't fit. There is no place to put them, and
-because of that they don't help, but interfere with progress. Compatibility
-puts the focus on fitness for use rather than on obedience, compliance, or even
-social expectation.
+result from those interactions. In what we're trying to do, there is this idea
+about lowering barriers and reducing friction. The things we're working with
+either fit together or they don't. A better word for this type of interactivity
+might be <dfn id="def:compatibility">compatibility</dfn>, which, in a
+telecommunications context, means 'the capability of two or more items or
+components of equipment or material to exist or function in the same system or
+environment without mutual interference.'[^compatibility] We use and build upon
+resources that are compatible with our manner of working. Otherwise, we just
+don't use them. They just don't fit. There is no place to put them, and because
+of that they don't help, but interfere with progress. Compatibility puts the
+focus on fitness for use rather than on obedience, compliance, or even social
+expectation.
 
-Notwithstanding all this, the main track of this workshop was designed to lead
-participants through an exercise of 'compliance checking' existing tools to see
-how well they conformed to the latest rendition of the principles of the
-Scholarly Commons.
-
-In the days leading up to the workshop, I struggled to understand the point of
-going through such an exercise. The hope was, as far as I could tell, that we
-could find a new system by looking at elements of the old system, and filling
-in any gaps that we find. But cultural change and innovation don't happen that
-way. Besides that, many of the tools that are used for scholarship right now
-are based on cultural practices from which we are trying to get away. We were
-not going to discover some preexisting solution at this workshop that has just
-been waiting for us out there by looking at all the components of the current
-system. We need something more. To explain what I mean by this, allow me to
-share a similar fallacy and resulting struggle in the practice of medicine:
+So in the days leading up to the workshop, the hope for this main track was, as
+far as I could tell, that we would discover a new system by looking at and
+reacting to elements of the old system, and then filling in any gaps that we
+find. We were not going to discover some preexisting solution at this workshop
+that has just been waiting for us out there by looking at all the components of
+the current system. Cultural change and innovation don't happen that way.
+Besides that, many of the tools that are used for scholarship right now are
+based on cultural practices from which we are trying to get away. We need to
+take the system apart, looking at the original motivations that created the
+pieces that currently exist, and then design a new form to fit our current
+context, and I wondered how well we would create that by structuring the
+discussion so tightly around the current system. We need something incredibly
+basic, something _new_ that does not yet exist---_a different logic_ around
+which this new system can be shaped. To explain what I mean by this, allow me
+to share a similar fallacy and resulting struggle in the practice of medicine:
 
 <figure id="systems-vs-components" class="bq grab">
 
