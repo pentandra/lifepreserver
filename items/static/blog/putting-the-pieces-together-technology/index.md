@@ -113,24 +113,24 @@ of that they don't help, but interfere with progress. Compatibility puts the
 focus on fitness for use rather than on obedience, compliance, or even social
 expectation.
 
-So in the days leading up to the workshop, the hope for this main track was, as
-far as I could tell, that we would discover a new system by looking at and
-reacting to elements of the old system, and then filling in any gaps that we
-find. I struggled with this approach in the days leading up to the workshop. I
-had little hope that we would discover some preexisting solution at this
-workshop that has just been waiting for us out there by looking at all the
-components of the current system. Cultural change and innovation don't happen
-that way. Besides that, many of the tools that are currently used for
-scholarship are based on cultural practices from which we are trying to get
-away. To create a new system, we need to take the current system apart, looking
-at the original motivations that created the pieces that we have, and then take
-those motivations and design a new form to fit our current context. But I
-wondered how well we would come up with something tenable for the future when
-we were structuring the discussion so tightly around the current system. We
-were not going deep enough. We need something incredibly basic, something _new_
-that does not yet exist (or has been lost)---_a different logic_ around which a
-new system could be shaped. To explain what I'm looking for here, allow me to
-share a similar fallacy and resulting struggle in the practice of medicine:
+So as far as I could tell, the hope for this main track was that we would
+discover a new system by looking at and reacting to elements of the old system,
+and then filling in any gaps that we find. I struggled with this approach in
+the days leading up to the workshop. I had little hope that we would discover
+some preexisting solution at this workshop that has just been waiting for us
+out there by looking at all the components of the current system. Cultural
+change and innovation don't happen that way. Besides that, many of the tools
+that are currently used for scholarship are based on cultural practices from
+which we are trying to get away. To create a new system, we need to take the
+current system apart, looking at the original motivations that created the
+pieces that we have, and then take those motivations and design a new form to
+fit our current context. But I wondered how well we would come up with
+something tenable for the future when we were structuring the discussion so
+tightly around the current system. We were not going deep enough. We need
+something incredibly basic, something _new_ that does not yet exist (or has
+been lost)---_a different logic_ around which a new system could be shaped. To
+explain what I'm looking for here, allow me to share a similar fallacy and
+resulting struggle in the practice of medicine:
 
 <figure id="systems-vs-components" class="bq grab">
 
