@@ -252,7 +252,7 @@ answers we come up with are right or even what any of the other questions are.
 Common and commoning are not the same thing, and a common practice does not a
 commons make. Yes, some existing tools align with practices that we would
 likely want to carryover into this new way of working, but looking back, I
-think the focus of this exercise was too narrow. If we had kept the discussion
+think the focus of this exercise was too shallow. If we had kept the discussion
 more abstract and focused on specific _practices_ rather than on specific
 tools, we may not have had the eventual disintegration of the main workshop
 track as so many of the participants left to join [other excellent
@@ -260,11 +260,11 @@ discussions][ravi's blog post]. Most of the tools we were studying in this
 exercise were designed for the research culture and technical infrastructures
 of the Global North and just [did not connect with many of the people][april's
 blog post] that we brought from around the world. But perhaps even a focus on
-specific practices would have been too narrow as well, and we should have taken
-a step back and discussed something else, such as the need for and approaches
-to global peer-production. Even so, I did not expect the participants to react
-this way, and I think this was an important negative result to obtain and from
-which we should learn.
+specific practices would have been too shallow as well, and we should have
+taken a step back and discussed something else, such as the need for and
+approaches to global peer-production. Even so, I did not expect the
+participants to react this way, and I think this was an important negative
+result to obtain and from which we should learn.
 
 # Scholarly Commoning
 
