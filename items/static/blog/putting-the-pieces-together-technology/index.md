@@ -125,12 +125,12 @@ scholarship are based on cultural practices from which we are trying to get
 away. To create a new system, we need to take the current system apart, looking
 at the original motivations that created the pieces that we have, and then take
 those motivations and design a new form to fit our current context. But I
-wondered how well we would come up with something tenable when we were
-structuring the discussion so tightly around the current system. We were not
-going deep enough. We need something incredibly basic, something _new_ that
-does not yet exist (or has been lost)---_a different logic_ around which a new
-system could be shaped. To explain what I'm looking for here, allow me to share
-a similar fallacy and resulting struggle in the practice of medicine:
+wondered how well we would come up with something tenable for the future when
+we were structuring the discussion so tightly around the current system. We
+were not going deep enough. We need something incredibly basic, something _new_
+that does not yet exist (or has been lost)---_a different logic_ around which a
+new system could be shaped. To explain what I'm looking for here, allow me to
+share a similar fallacy and resulting struggle in the practice of medicine:
 
 <figure id="systems-vs-components" class="bq grab">
 
