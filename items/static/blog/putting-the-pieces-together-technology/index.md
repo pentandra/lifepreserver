@@ -25,7 +25,8 @@ workshop][san diego workshop] held last September by [FORCE11]{.oldstyle}. But,
 as it sometimes turns out in this funny thing we call life, it is time to
 release this post, and I am still working on the one about culture. Don't
 worry---this post is not about specific technologies, but about what needs to
-be enabled by technology to allow for what I'm calling _scholarly commoning_.
+be enabled by technology to allow for what I'm calling, for purposes of this
+discussion, _scholarly commoning_.
 
 ![Researcher journeys, personal and context specific, overlapping and intertwining over time.](researcher_journeys.png)
 
