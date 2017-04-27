@@ -16,6 +16,7 @@ tags:
   - Open Standards
   - Essay
   - Opinionated
+  - Review
 ---
 
 This post started as a follow-on to a post I am writing about the _culture_ of
