@@ -77,13 +77,13 @@ working alternatives driven by a different logic.'[^constellation]
 # On gaps and systems
 
 As this essay is, in part, a review of the San Diego workshop,  I want to
-structure my thoughts around the main track of this workshop, which was devoted
-to 'putting the pieces together' by comparing the community vision of the
-Scholarly Commons against our current state of chaotic
-innovation,[^second-workshop]. While there were several unworkshop sessions,
-the main track was designed to lead participants through an exercise of
-'compliance checking' existing tools to see how well they conformed to the
-latest rendition of the principles of the Scholarly Commons.
+structure my thoughts at first around the main track of this workshop, which
+was devoted to 'putting the pieces together' by comparing the community vision
+of the Scholarly Commons against our current state of chaotic
+innovation.[^second-workshop] While there were several unworkshop sessions, the
+main track was designed to lead participants through an exercise of 'compliance
+checking' existing tools to see how well they conformed to the latest rendition
+of the principles of the Scholarly Commons.
 
 One of the topics that pops up every once in a while lately in the discussions
 in the Scholarly Commons working group is the concept of _compliance_. I think
@@ -115,18 +115,21 @@ expectation.
 So in the days leading up to the workshop, the hope for this main track was, as
 far as I could tell, that we would discover a new system by looking at and
 reacting to elements of the old system, and then filling in any gaps that we
-find. We were not going to discover some preexisting solution at this workshop
-that has just been waiting for us out there by looking at all the components of
-the current system. Cultural change and innovation don't happen that way.
-Besides that, many of the tools that are used for scholarship right now are
-based on cultural practices from which we are trying to get away. We need to
-take the system apart, looking at the original motivations that created the
-pieces that currently exist, and then design a new form to fit our current
-context, and I wondered how well we would create that by structuring the
-discussion so tightly around the current system. We need something incredibly
-basic, something _new_ that does not yet exist---_a different logic_ around
-which this new system can be shaped. To explain what I mean by this, allow me
-to share a similar fallacy and resulting struggle in the practice of medicine:
+find. I struggled with this approach in the days leading up to the workshop. I
+had little hope that we would discover some preexisting solution at this
+workshop that has just been waiting for us out there by looking at all the
+components of the current system. Cultural change and innovation don't happen
+that way. Besides that, many of the tools that are currently used for
+scholarship are based on cultural practices from which we are trying to get
+away. To create a new system, we need to take the current system apart, looking
+at the original motivations that created the pieces that we have, and then take
+those motivations and design a new form to fit our current context. But I
+wondered how well we would come up with something tenable when we were
+structuring the discussion so tightly around the current system. We were not
+going deep enough. We need something incredibly basic, something _new_ that
+does not yet exist (or has been lost)---_a different logic_ around which a new
+system could be shaped. To explain what I'm looking for here, allow me to share
+a similar fallacy and resulting struggle in the practice of medicine:
 
 <figure id="systems-vs-components" class="bq grab">
 
@@ -174,7 +177,7 @@ understanding of some of the discussions may be incomplete.
 <figure class="img" resource="#scholarly_commons_backbone_using_existing_stuff_as_parts" property="schema:sharedContent" typeof="schema:ImageObject">
   <link property="schema:representativeOfPage" resource="schema:True"/>
   <a property="schema:url" href="scholarly_commons_backbone_using_existing_stuff.jpg" title="Click for the whole board"><img property="schema:thumbnail" src="scholarly_commons_backbone_using_existing_stuff_620x.jpg"/></a>
-  <figcaption class="schema:caption">Some thoughts that emerged during the main track of the workshop, which was slowly whittled down to a few people as discussions diverged, on practical pathways toward a scholarly commons using existing tools, organizations, and services.</figcaption>
+  <figcaption class="schema:caption">Some thoughts that emerged during the main track of the workshop, which was followed through to completion thanks to [Björn Brembs]{lang=nl}, [Jeroen Bosman]{lang=nl}, and [Bianca Kramer]{lang=nl}, on practical pathways toward a scholarly commons using existing tools, organizations, and services.</figcaption>
 </figure>
 
 As for the exercise, after the tools went through the 'compliance checking'
@@ -205,7 +208,8 @@ use, and often there is more than one path to take---more than one tool that
 can be used to get a job done. Certain tools might even be used to gain a
 competitive advantage.
 
-Here are a few of the group's thoughts that emerged during the exercise:
+Here are a few of the group's thoughts that emerged during the compliance
+exercise:
 
 * Bad tools are used to perform good things (often requiring some workarounds).
 * People use what they use because it works.
@@ -239,43 +243,47 @@ exercise was trying to illuminate what is _common_ among tool use in the
 current paradigm, not necessarily what would be required in a _commoning
 paradigm_. The exercise was designed to find _common patterns_, not patterns of
 commoning. While this was useful in some ways, it leaves more important
-questions unanswered, such as _is there a shared resource of the Scholarly
-Commons? If so, what is it? and who is the community that manages that shared
-resource?_ If we don't have answers to these more fundamental questions, then
-we really have no way to know whether any of the answers we come up with are
-right or even what any of the other questions are. Common and commoning are not
-the same thing, and a common practice does not a commons make. Yes, some
-existing tools align with practices that we would likely want to carryover into
-this new way of working, but looking back, I think the focus of this exercise
-was too narrow. If we had kept the discussion more abstract and focused on
-specific _practices_ rather than on specific tools, we may not have had the
-eventual disintegration of the main workshop track as so many of the
-participants left to join [other excellent discussions][ravi's blog post]. Most
-of the tools we were studying in this exercise were designed for the research
-culture and technical infrastructures of the Global North and just [did not
-connect with many of the people][april's blog post] that we brought from around
-the world. But perhaps even a focus on specific practices would have been too
-narrow as well, and we should have taken a step back and discussed something
-else, such as the need for and approaches to global peer-production. Even so, I
-did not expect the participants to react this way, and I think this was an
-important negative result to obtain and from which we should learn.
-
-Our process as a committee in defining the Scholarly Commons, aside from the
-workshops that we have held, has been mostly limited to seeking feedback when
-we were nearing a finished product. Our design process has not been very open,
-not because we we haven't wanted it to be open, but because of the lack of
-tooling that works this way. We're doing the best we can with what we have, but
-we need ways to do this better! I believe that the future really _is_ a [happy
-place]! Throughout this exploration (and it has been a luxury to be able to
-explore this topic so intensely for so long), I have tried to be open and learn
-from the many perspectives that have contributed to the ongoing definition of
-the Commons. I have found it particularly interesting that we have not talked
-at all about the definition of _scholarship_ in this process. I think we've
-assumed that we're trying to create something for the current professional
-community of scholars and researchers. But I think revisiting our definition of
-scholarship is a necessary part of defining the Scholarly Commons.
+questions unanswered, such as _is there a shared resource of a scholarly
+commons? If so, what is it? and who is the community that cares about or
+manages that shared resource?_ If we don't have answers to these more
+fundamental questions, then we really have no way to know whether any of the
+answers we come up with are right or even what any of the other questions are.
+Common and commoning are not the same thing, and a common practice does not a
+commons make. Yes, some existing tools align with practices that we would
+likely want to carryover into this new way of working, but looking back, I
+think the focus of this exercise was too narrow. If we had kept the discussion
+more abstract and focused on specific _practices_ rather than on specific
+tools, we may not have had the eventual disintegration of the main workshop
+track as so many of the participants left to join [other excellent
+discussions][ravi's blog post]. Most of the tools we were studying in this
+exercise were designed for the research culture and technical infrastructures
+of the Global North and just [did not connect with many of the people][april's
+blog post] that we brought from around the world. But perhaps even a focus on
+specific practices would have been too narrow as well, and we should have taken
+a step back and discussed something else, such as the need for and approaches
+to global peer-production. Even so, I did not expect the participants to react
+this way, and I think this was an important negative result to obtain and from
+which we should learn.
 
 # Scholarly Commoning
+
+Our process as so far in defining the Scholarly Commons, aside from the few
+workshops that we have held, has been mostly limited to seeking feedback when
+we were nearing a finished product. Our design process has not been very open,
+not because we we haven't wanted it that way, but because of the lack of
+tooling that preserves the continuity of a broad-reaching, multi-faceted
+exploratory research process. I think we're doing the best we can with what we
+have, but we need ways to do this better! I believe that the future really _is_
+a [happy place]!
+
+Throughout this exploration (and it has been a luxury to be able to explore
+this topic so intensely for so long), while I have learned much from the many
+perspectives that have been shared, I have found it particularly interesting
+that we have not yet discussed the definition of _scholarship_. I think we've
+assumed that we're trying to create something for the current professional
+community of scholars, scientists, and researchers, and anyone else who want to
+play their game. But I think revisiting our definitions of scholarship,
+science, and research is a necessary part of defining the Scholarly Commons.
 
 If we go back far enough, say three or four hundred years ago, scholarly
 communication didn't happen in the sort of static, dissemination-oriented way
