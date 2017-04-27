@@ -5,7 +5,7 @@ description: >
 kind: article
 author_name: Chris Chapman
 created_at: 2017-02-16
-updated_at: 2017-04-26
+updated_at: 2017-04-27
 cover_image_id: '/static/blog/putting-the-pieces-together-technology/researcher_journeys.png'
 tags:
   - Scholarly Commons
@@ -37,22 +37,42 @@ involved in this project are coming at this from different perspectives, so it
 is no surprise that we are not always in complete agreement about what we would
 like the Scholarly Commons to be. We are each a product of our own experiences
 and backgrounds, and each of our backgrounds is quite dissimilar. Even though
-this makes things difficult sometimes, I view this as a good thing because it
-has brought more perspectives to the table and has forced us to look at what
-we're doing from many different angles. There is a general consensus among us,
-I am pretty sure, that the Scholarly Commons is scholarly communication in a
-modern setting, one in which we are not constrained by the limitations of print
-publishing. But the definition of the Commons goes much deeper than that, and,
-as they say, the devil is in the details. The Scholarly Commons represents
-scholarship reinvented for our modern era, and whichever the approach to do
-that, I am hoping we'll take the best of the past, the aspirations and thirst
-for understanding that have motivated mankind for thousands of years, and
-redesign the whole system from scratch to fit our current needs and desires, so
-that, hopefully, in the end, we will have built, using the best of modern
-technologies, 'a constellation of working alternatives driven by a different
-logic.'[^constellation]
+this makes things difficult sometimes, I view this as a good thing in general,
+because it has brought more perspectives to the table and has forced us to look
+at what we're doing from many different angles.
 
 <!--MORE-->
+
+Ever since we started this thing, a central premise has been that we would
+'re-imagine scholarly communication starting from scratch as a system
+explicitly designed for machine-based access and networked scholarship, and not
+simply adapted from the paper-based system.'[^first-workshop] Throughout the
+course of us working on this, however, it has become evident that 'from
+scratch' and 'networked scholarship' mean different things to different people.
+For some on this steering committee (and likely others), this means an
+incremental realignment of existing platforms and services, some of which have
+been studied in the [[101]{.oldstyle} Scholarly Innovations project][101
+innovations]. But there are also those, myself included, that have been
+thinking of these terms on a more foundational level, of open approaches and
+emerging technologies that could actually change the conversation, such as
+HATEOAS and machine-based ontologies that could help connect researchers and
+research across tools and platforms, providing new interactions for scholarship
+that would open up the research process and give us ability to do things that
+we have never been able to do before. In trying to reconcile these two
+approaches, I have wondered whether it is possible that the idea of the
+Scholarly Commons could encompass both.
+
+There is a general consensus among us, I am pretty sure, that the Scholarly
+Commons is scholarly communication in a modern setting, one in which we are not
+constrained by the limitations of print publishing. But the definition of the
+Scholarly Commons goes much deeper than that, and, as they say, the devil is in
+the details. The Scholarly Commons represents scholarship reinvented for our
+modern era, and whichever the approach to do that, I am hoping we'll take the
+best of the past, the aspirations and thirst for understanding that have
+motivated mankind for thousands of years, and redesign the whole system from
+scratch to fit our current needs and desires, so that, hopefully, in the end,
+we will have built, using the best of modern technologies, 'a constellation of
+working alternatives driven by a different logic.'[^constellation]
 
 # On gaps and systems
 
@@ -530,11 +550,48 @@ relating to the production and use of scholarly and scientific knowledge.
 [san diego workshop]: <https://www.force11.org/group/scholarly-commons-working-group/san-diego-workshop-sept-2016>
 [porosity]: <http://cameronneylon.net/blog/the-end-of-the-journal-what-has-changed-what-stayed-the-same/> "The end of the journal? What has changed, what stayed the same?, by Cameron Neylon"
 [they just don't get it]: <http://cameronneylon.net/blog/they-just-dont-get-it/> "They. Just. Don't. Get. It..., by Cameron Neylon"
+[101 innovations]: <http://101innovations.wordpress.com> "101 Innovations in Scholarly Communication, by Jeroen Bosman and Bianca Kramer"
 
-[^constellation]:
-
-    Bollier, David. <a href="https://hyp.is/upj6uiSeEee-Q6M26eFALg/thenextsystem.org/commoning-as-a-transformative-social-paradigm/">
-    <cite>Commoning as a Transformative Social Paradigm</cite></a>,
-    Nov. [2015]{.oldstyle}, p. [9]{.oldstyle}.
+[^constellation]: Bollier, David. <a href="https://hyp.is/upj6uiSeEee-Q6M26eFALg/thenextsystem.org/commoning-as-a-transformative-social-paradigm/"><cite>Commoning as a Transformative Social Paradigm</cite></a>, Nov. [2015]{.oldstyle}, p. [9]{.oldstyle}.
 
 [^compatibility]: From Wiktionary.
+
+[^first-workshop]: In fact, the description of the original idea behind the first workshop reads:
+
+    <div class="bq rev">
+
+    > The first workshop would take up a [1K]{.sic} challenge idea by
+    > Dr. Sarah Callahan from FORCE[2015]{.oldstyle}: What would research
+    > communication look like after a clean start? A common theme that emerges
+    > from FORCE meetings in that many of our ideas for reforming scholarly
+    > communications spring from [350]{.oldstyle} years of tradition around
+    > scientific dissemination. As shown by the discussion on credit systems at
+    > FORCE[2015]{.oldstyle}, we don’t question the basic assumptions behind
+    > our current systems which are often electronic implementations of old
+    > practices that [pre-date]{.sic} machine-based access to information.
+    >
+    > This workshop will re-imagine scholarly communication starting from
+    > scratch as a system explicitly designed for machine-based access and
+    > networked scholarship, and not simply adapted from the paper-based
+    > system. For example, what would scientific discourse look like if we
+    > didn't have a [350]{.oldstyle} year old tradition of describing data
+    > rather than publishing it? What if the Ingelfinger rule stating that all
+    > articles must present new research had never been adopted? If the impact
+    > factor built around coarse citation systems hadn't taken hold? If science
+    > had always involved the work of large teams?
+
+    </div>
+
+[^second-workshop]: The description of the original idea behind the second workshop reads:
+
+    <div class="bq rev">
+
+    > The second workshop will be devoted to Putting the pieces together by
+    > comparing the community vision against our current state of "chaotic
+    > innovation". How close are we to realizing this vision? What pieces do we
+    > have? Where are we lacking infrastructure, expertise, tools, principles,
+    > or incentives? Where does current scholarship need radical retooling?
+    > What opportunities exist for the community to fill these gaps, and how
+    > can we create community buy-in around proposed solutions?
+
+    </div>
