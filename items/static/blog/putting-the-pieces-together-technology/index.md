@@ -279,10 +279,10 @@ exploration (and it has been a luxury to be able to explore this topic so
 intensely for so long), while I have learned much from the many perspectives
 that have been shared, I have found it particularly interesting that we have
 not yet discussed together the definition of _scholarship_. I think we've
-assumed that we're trying to create something for the current professional
-community of scholars, scientists, and researchers, and anyone else who want to
-play their game. But I think revisiting our definitions of scholarship,
-science, and research is a necessary part of defining the Scholarly Commons.
+focused too much on trying to create something appealing to the current
+professional community of scholars, scientists, and researchers. But I think
+revisiting our definitions of scholarship, science, and research is a necessary
+part of defining the Scholarly Commons.
 
 If we go back far enough, say three or four hundred years ago, scholarly
 communication didn't happen in the sort of static, dissemination-oriented way
