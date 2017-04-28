@@ -354,33 +354,34 @@ input.button {
   padding-left: 0.5em;
 }
 
+// Document statuses
+
+.unpublished, .unsubmitted {
+  background-color: $pentandra-cyan;
+  color: $pentandra-white;
+}
+
+.draft, .wip {
+  background-color: $pentandra-violet;
+  color: $pentandra-white;
+}
+
+.submitted {
+  background-color: $pentandra-yellow;
+}
+
+.approved {
+  background-color: $pentandra-lime;
+  color: $pentandra-white;
+}
+
+.rejected {
+  background-color: $pentandra-mango;
+  color: $pentandra-white;
+}
+
 .status {
-
   line-height: $base-line-height * 2;
-
-  .unpublished, .unsubmitted {
-    background-color: $pentandra-cyan;
-    color: $pentandra-white;
-  }
-
-  .draft {
-    background-color: $pentandra-violet;
-    color: $pentandra-white;
-  }
-
-  .submitted {
-    background-color: $pentandra-yellow;
-  }
-
-  .approved {
-    background-color: $pentandra-lime;
-    color: $pentandra-white;
-  }
-
-  .rejected {
-    background-color: $pentandra-mango;
-    color: $pentandra-white;
-  }
 }
 
 .tags {
@@ -649,11 +650,6 @@ input.button {
 .grab .emHighlight {
   color: $pentandra-red;
   background-color: $pentandra-white;
-}
-
-.wip {
-  color: $pentandra-white;
-  background-color: $pentandra-violet;
 }
 
 //
