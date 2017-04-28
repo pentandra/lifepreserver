@@ -1,5 +1,6 @@
 <% render('/default.*') do %>
   <article class="group h-entry" prefix="<%= prefix_mappings_for(:sioct) %>" resource="#blogpost" typeof="cc:Work schema:BlogPosting sioct:BlogPost ctag:TaggedContent" property="schema:mainEntity">
+    <%= render('/blog/partials/draft.*') unless @item[:published_at] %>
     <header class="section">
       <h1 class="p-name" property="dc:title schema:headline"><%= @item[:title] %></h1>
       <div class="group meta">
