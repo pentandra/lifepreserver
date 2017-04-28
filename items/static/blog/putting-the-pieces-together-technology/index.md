@@ -5,7 +5,8 @@ description: >
 kind: article
 author_name: Chris Chapman
 created_at: 2017-02-16
-updated_at: 2017-04-27
+updated_at: 2017-04-28
+published_at: 2017-04-28
 cover_image_id: '/static/blog/putting-the-pieces-together-technology/researcher_journeys.png'
 tags:
   - Scholarly Commons
@@ -50,18 +51,18 @@ explicitly designed for machine-based access and networked scholarship, and not
 simply adapted from the paper-based system.'[^first-workshop] Throughout the
 course of us working on this, however, it has become evident that 'from
 scratch' and 'networked scholarship' mean different things to different people.
-For some on this steering committee (and likely others), this means more of an
-incremental realignment of existing platforms and services, some of which have
-been studied in the [[101]{.oldstyle} Scholarly Innovations project][101
-innovations]. But there are also those, myself included, that have been
-thinking of these terms on a more foundational level, of open approaches and
-emerging technologies that could actually change the conversation, such as
-HATEOAS and machine-based ontologies that could help connect researchers and
-research across tools and platforms, providing new interactions for scholarship
-that would open up the research process and give us ability to do things that
-we have never been able to do before. In trying to reconcile these two
-approaches, I have wondered whether it is possible that the idea of the
-Scholarly Commons could encompass both.
+For some on this steering committee (and likely others), these terms convey
+more of an idea of an incremental realignment of existing platforms and
+services, some of which have been studied in the [[101]{.oldstyle} Scholarly
+Innovations project][101 innovations]. But there are also those, myself
+included, that have been thinking of these terms on a more foundational level,
+of open approaches and emerging technologies that could actually change the
+conversation, such as HATEOAS and machine-based ontologies that could help
+connect researchers and research across tools and platforms, providing new
+interactions for scholarship that would open up the research process and give
+us the ability to do things that we have never been able to do before. In
+trying to reconcile these two approaches, I have wondered whether it is
+possible that the idea of the Scholarly Commons could encompass both.
 
 There is a general consensus among us, I am pretty sure, that the Scholarly
 Commons is scholarly communication in a modern setting, one in which we are not
@@ -280,9 +281,9 @@ intensely for so long), while I have learned much from the many perspectives
 that have been shared, I have found it particularly interesting that we have
 not yet discussed together the definition of _scholarship_. I think we've
 focused too much on trying to create something appealing to the current
-professional community of scholars, scientists, and researchers, and I think
-revisiting our definitions of scholarship, science, and research is a necessary
-part of defining the Scholarly Commons.
+professional community of scholars, scientists, and researchers, and I believe
+that revisiting our definitions of scholarship, science, and research is a
+necessary part of defining the Scholarly Commons.
 
 If we go back far enough, say three or four hundred years ago, scholarly
 communication didn't happen in the sort of static, dissemination-oriented way
@@ -347,21 +348,22 @@ the undesirable social, cultural, and technical limitations as possible.
 
 As I was sitting there in the workshop, thinking about all the above, the
 answer came to me slowly but clearly. A thought occurred that, well, had
-nothing to do with the exercise, except perhaps indirectly: because the
+nothing to do with [the exercise], except perhaps indirectly: because the
 research processes were made explicit and studied this way, it allowed us to
-reason about, find patterns, and learn from them. What if we could look at the
-research process in more of a _functional_ way? Isn't it the _process_ that
-needs to be open and replicable? _So why are we not publishing the research
-process, even across tools, as the fundamental scholarly output?_ If knowledge
-discovery happens sequentially for a researcher, _why are we not publishing the
-journey of the researcher?_ If the process was the product, many of the
-problems we are facing right now in scholarly communications relating to
-reproducibility, participation, and the integration of scholarship into society
-would be greatly diminished or eliminated completely. Researchers would also
-have something to show for all their thinking. From this perspective, the
-entire research process could be viewed as a sequence of decisions. The
-researcher's thoughts and and the process of how they arrived at conclusions
-should form the basis of research publication and collaboration.
+reason about, find patterns, and learn from them. Then a flood of questions
+entered my mind: _What if we could look at the research process in more of a
+tangible way? Isn't it the process that needs to be open and replicable? So why
+are we not publishing the research process, even across tools, as the
+fundamental scholarly output? If research or even knowledge discovery happens
+sequentially for a researcher, why are we not publishing the journey of the
+researcher?_ If the process was the product, many of the problems we are facing
+right now in scholarly communications relating to reproducibility,
+participation, and the integration of scholarship into society would be greatly
+diminished or eliminated completely. Researchers would also have something to
+show for all their thinking. From this perspective, the entire research process
+could be viewed as a sequence of decisions. The researcher's thoughts and and
+the process of how they arrived at conclusions should form the basis of
+research publication and collaboration.
 
 I'm not advocating here that we capture a complete record of everything that a
 researcher is doing. But we need make explicit this common thread---this
@@ -387,7 +389,8 @@ impeded.
 
 But where do we draw the line between implicit and explicit? Is it enough to
 know which tools the researcher used and when? The tools are part of it, but
-not all. We need to ask ourselves, _what is our goal?_ and then _what is of
+stopping there would give us a very limited perspective into the research
+process. We need to ask ourselves, _what is our goal?_ and then _what is of
 value in reaching that goal?_ If our goal is to create a new culture of
 scholarship, _what would change the culture?_ What about the questions and
 intentions of the researcher? Sharing openly at this level may be just enough
