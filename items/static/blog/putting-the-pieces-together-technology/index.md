@@ -50,7 +50,7 @@ explicitly designed for machine-based access and networked scholarship, and not
 simply adapted from the paper-based system.'[^first-workshop] Throughout the
 course of us working on this, however, it has become evident that 'from
 scratch' and 'networked scholarship' mean different things to different people.
-For some on this steering committee (and likely others), this means an
+For some on this steering committee (and likely others), this means more of an
 incremental realignment of existing platforms and services, some of which have
 been studied in the [[101]{.oldstyle} Scholarly Innovations project][101
 innovations]. But there are also those, myself included, that have been
