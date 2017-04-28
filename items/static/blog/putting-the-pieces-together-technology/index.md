@@ -107,9 +107,9 @@ might be <dfn id="def:compatibility">compatibility</dfn>, which, in a
 telecommunications context, means 'the capability of two or more items or
 components of equipment or material to exist or function in the same system or
 environment without mutual interference.'[^compatibility] We use and build upon
-resources that are compatible with our manner of working. Otherwise, we just
-don't use them. They just don't fit. There is no place to put them, and because
-of that they don't help, but interfere with progress. Compatibility puts the
+resources that are compatible with our manner of working. If there are
+resources that don't fit, there is no place to put them. They don't help but
+interfere with progress, so we just don't use them. Compatibility puts the
 focus on fitness for use rather than on obedience, compliance, or even social
 expectation.
 
@@ -420,7 +420,7 @@ practice (or _behavior_) that can guide the practice of research _going
 forward_. Decision trees direct the focus onto concrete, actionable things we
 can do.
 
-Of course, the idea with these decision trees is not to mandate specific
+Of course, the idea with these research guides is not to mandate specific
 research practices, but to create a way to practice and share our patterns of
 practice in a collaborative, peer-to-peer sort of way. This vision is painted
 beautifully in the foreword to one of my favorite books on typography. Here I
