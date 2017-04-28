@@ -280,9 +280,9 @@ intensely for so long), while I have learned much from the many perspectives
 that have been shared, I have found it particularly interesting that we have
 not yet discussed together the definition of _scholarship_. I think we've
 focused too much on trying to create something appealing to the current
-professional community of scholars, scientists, and researchers, and I think
-revisiting our definitions of scholarship, science, and research is a necessary
-part of defining the Scholarly Commons.
+professional community of scholars, scientists, and researchers, and I believe
+that revisiting our definitions of scholarship, science, and research is a
+necessary part of defining the Scholarly Commons.
 
 If we go back far enough, say three or four hundred years ago, scholarly
 communication didn't happen in the sort of static, dissemination-oriented way
@@ -347,21 +347,22 @@ the undesirable social, cultural, and technical limitations as possible.
 
 As I was sitting there in the workshop, thinking about all the above, the
 answer came to me slowly but clearly. A thought occurred that, well, had
-nothing to do with the exercise, except perhaps indirectly: because the
+nothing to do with [the exercise], except perhaps indirectly: because the
 research processes were made explicit and studied this way, it allowed us to
-reason about, find patterns, and learn from them. What if we could look at the
-research process in more of a _functional_ way? Isn't it the _process_ that
-needs to be open and replicable? _So why are we not publishing the research
-process, even across tools, as the fundamental scholarly output?_ If knowledge
-discovery happens sequentially for a researcher, _why are we not publishing the
-journey of the researcher?_ If the process was the product, many of the
-problems we are facing right now in scholarly communications relating to
-reproducibility, participation, and the integration of scholarship into society
-would be greatly diminished or eliminated completely. Researchers would also
-have something to show for all their thinking. From this perspective, the
-entire research process could be viewed as a sequence of decisions. The
-researcher's thoughts and and the process of how they arrived at conclusions
-should form the basis of research publication and collaboration.
+reason about, find patterns, and learn from them. Then a flood of questions
+entered my mind: _What if we could look at the research process in more of a
+tangible way? Isn't it the process that needs to be open and replicable? So why
+are we not publishing the research process, even across tools, as the
+fundamental scholarly output? If research or even knowledge discovery happens
+sequentially for a researcher, why are we not publishing the journey of the
+researcher?_ If the process was the product, many of the problems we are facing
+right now in scholarly communications relating to reproducibility,
+participation, and the integration of scholarship into society would be greatly
+diminished or eliminated completely. Researchers would also have something to
+show for all their thinking. From this perspective, the entire research process
+could be viewed as a sequence of decisions. The researcher's thoughts and and
+the process of how they arrived at conclusions should form the basis of
+research publication and collaboration.
 
 I'm not advocating here that we capture a complete record of everything that a
 researcher is doing. But we need make explicit this common thread---this
@@ -387,7 +388,8 @@ impeded.
 
 But where do we draw the line between implicit and explicit? Is it enough to
 know which tools the researcher used and when? The tools are part of it, but
-not all. We need to ask ourselves, _what is our goal?_ and then _what is of
+stopping there would give us a very limited perspective into the research
+process. We need to ask ourselves, _what is our goal?_ and then _what is of
 value in reaching that goal?_ If our goal is to create a new culture of
 scholarship, _what would change the culture?_ What about the questions and
 intentions of the researcher? Sharing openly at this level may be just enough
