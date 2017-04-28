@@ -43,7 +43,7 @@ $ bundle install --with development test
 ### And compile!
 
 ```bash
-$ bundle exec nanoc [compile] [--verbose]
+$ bundle exec nanoc [compile] [--verbose] [--env=development]
 ```
 
 ### Start the HTTP server and request the page in your browser
@@ -66,6 +66,27 @@ for it based on the `develop` branch to ease review and integration.
 
 * Do your best to adhere to the existing coding conventions and idioms.
 * Don’t use hard tabs, and don’t leave trailing whitespace on any line. Before committing, run `git diff --check` to make sure of this.
+
+## Environments
+
+This project uses Nanoc environments for `development`, `staging`, and
+`production` builds. Be sure to set the `NANOC_ENV` shell variable or command
+line argument to set the current environment before a build, for example:
+
+```bash
+$ export NANOC_ENV=development # before running Nanoc commands
+
+or
+
+$ nanoc [command] --env=development # with each command
+```
+
+A `production` build must happen on a git tag, or the build will abort.
+
+For sake of completeness, a `static_only` environment exists that will build
+only the static items of the website, to give a build environment that avoids
+dependence upon any Lua libraries that may be needed to build the dynamic code
+upon which OpenResty runs.
 
 ## Thanks
 

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="620"
+   height="348"
+   viewBox="0 0 620 348"
+   id="svg10464"
+   version="1.1"
+   inkscape:version="0.92.1 r"
+   sodipodi:docname="researcher_journeys.svg"
+   inkscape:export-filename="/home/chris/devel/pentandra/lifepreserver/items/static/blog/putting-the-pieces-together-technology/researcher_workflows@2x.png"
+   inkscape:export-xdpi="192"
+   inkscape:export-ydpi="192">
+  <title
+     id="title10263">Researcher workflows</title>
+  <defs
+     id="defs10466" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.3806452"
+     inkscape:cx="310"
+     inkscape:cy="174"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer4"
+     showgrid="false"
+     units="px"
+     inkscape:snap-page="true"
+     inkscape:snap-bbox="false"
+     inkscape:bbox-nodes="true"
+     inkscape:bbox-paths="false"
+     inkscape:object-nodes="true"
+     inkscape:object-paths="false"
+     showguides="false"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="768"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:snap-nodes="true"
+     inkscape:showpageshadow="false"
+     showborder="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:snap-object-midpoints="true"
+     borderlayer="true">
+    <sodipodi:guide
+       position="256,256"
+       orientation="0,1"
+       id="guide5991"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="232,168"
+       orientation="0,1"
+       id="guide5993"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="240,24"
+       orientation="0,1"
+       id="guide5997"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="232,136"
+       orientation="1,0"
+       id="guide5999"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="176,152"
+       orientation="1,0"
+       id="guide6001"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="256,155.32995"
+       orientation="1,0"
+       id="guide6003"
+       inkscape:locked="false" />
+    <inkscape:grid
+       type="axonomgrid"
+       id="grid6007"
+       units="px"
+       empspacing="3"
+       spacingy="9.2"
+       gridanglex="30"
+       originx="0"
+       visible="true"
+       enabled="false" />
+    <inkscape:grid
+       type="xygrid"
+       id="grid7872"
+       dotted="false"
+       enabled="true"
+       empspacing="2"
+       color="#ff2b00"
+       opacity="0.1254902"
+       snapvisiblegridlinesonly="false"
+       spacingx="8"
+       spacingy="8" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata10469">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Researcher workflows</dc:title>
+        <dc:date>2017-04-26</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Chris Chapman</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>Pentandra Research Solutions, Inc.</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>scholarly commons</rdf:li>
+            <rdf:li>scholarship</rdf:li>
+            <rdf:li>commoning</rdf:li>
+            <rdf:li>knowledge</rdf:li>
+            <rdf:li>light</rdf:li>
+            <rdf:li>understanding</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:description />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by/4.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="background"
+     style="display:inline"
+     transform="translate(0,92)">
+    <rect
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#544233;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:64.07546234;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       id="rect11026"
+       width="620"
+       height="348"
+       x="0"
+       y="-92" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="workflows"
+     style="display:inline"
+     transform="translate(0,92)">
+    <path
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#fc804e;fill-opacity:0.62745098;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       d="m 0,-80 v 48 h 16 v 64 h 80 v 64 h 80 V 16 h 64 v -64 h 48 v 80 h 48 v 112 h 48 v 80 h 144 v 32 h 32 V 208 H 416 V 112 H 368 V 16 h -64 v -96 h -96 v 64 H 160 V 80 H 112 V 0 H 48 V -64 H 32 v -16 z"
+       id="path7949"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccccccccccccccccccccccccccccccc" />
+    <path
+       style="fill:#8bfc4e;fill-opacity:0.62745098;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 496,224 v -48 h 16 v -16 h 96 v 16 h 12 v 16 h -76 v -16 h -16 v 16 h -16 v 32 z"
+       id="path5376"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccccccccc" />
+    <path
+       sodipodi:nodetypes="ccccccccccccccccccccccccccccccccccccccccc"
+       inkscape:connector-curvature="0"
+       id="path10265"
+       d="m 0,48 v 48 h 16 v 64 h 80 v 16 h 112 v -32 h 64 V 96 h 16 V 48 h 96 v 48 h 80 v 48 h 96 v 64 h 60 V 192 H 592 V 128 H 512 V 80 H 496 V 64 H 400 V 32 H 272 v 32 h -32 v 48 h -48 v 48 H 112 V 128 H 48 V 64 H 32 V 48 Z"
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#4edbfc;fill-opacity:0.62745098;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+    <path
+       style="fill:#bca8fc;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:0.627451"
+       d="m 480,-92 v 44 h 16 v 96 h 16 V 64 H 620 V 48 H 528 V 32 H 512 V -80 h -16 v -12 z"
+       id="path4831"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccccccccc" />
+    <path
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#f9fc31;fill-opacity:0.62871291;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       d="m 0,256 v -48 h 16 v -64 h 80 v -32 h 80 v 64 h 64 v 48 h 80 v -80 h 96 V 16 h 48 v -48 h 48 v 48 h 32 v -80 h 16 v -16 h 60 v 16 h -12 v 16 H 592 V 32 H 496 V 0 h -16 v 32 h -32 v 144 h -80 v 48 h -16 v 16 H 208 v -32 h -48 v -80 h -48 v 48 H 48 v 64 H 32 v 16 z"
+       id="path10267"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccccccccccccccccccccccccccccccccccccccccccc" />
+  </g>
+</svg>
