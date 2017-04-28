@@ -9,21 +9,26 @@ tags:
   - Defining the Commons
 ---
 
-My thoughts on this, which are consistent with commons theory and are touched
-upon in [a blog post by Bruce Caron][collectives], is that a scholarly commons
-will form because of a need---a need for understanding. People that actually
-care about a certain knowledge will collect around a need to understand and a
-desire to care for and further that knowledge in order to satiate that need for
-understanding. This collective is the seed of a commons. Discussions will ensue
-that will establish rules, traditions, and values pertaining to how to deal
-with the shared resources of the commons, which will include the active and
-latent knowledge of that field of study. The subtractable resource around which
-a scholarly commons forms is the moments of discovery that reveal, bit by bit,
-the latent knowledge within that field of study. I'm using the term
-<dfn>discovery</dfn> very loosely here to mean any new insight or understanding
-to the collective that aids in further discovery. Once a contribution is made,
-it cannot be made again in quite the same way, and once a new understanding is
-revealed to a collective, it cannot be discovered to that collective anew.
+![Waves coming in off Pipeline beach, by MUrra](Hawaii-Pipeline.jpg)
+
+My thoughts on this, which I believe are consistent with commons theory and are
+touched upon in [a blog post by Bruce Caron][collectives], is that a scholarly
+commons will form because of a need---a need for understanding. People that
+actually care about a certain knowledge will collect around a need to
+understand and a desire to care for and further that knowledge in order to
+satiate that need for understanding. This collective is the seed of a commons.
+Discussions will ensue that will establish rules, traditions, and values
+pertaining to how to deal with the shared resources of the commons, which will
+include the active and latent knowledge of that field of study. The
+subtractable resource around which a scholarly commons forms is the moments of
+discovery that reveal, bit by bit, the latent knowledge within that field of
+study. I'm using the term <dfn>discovery</dfn> very loosely here to mean any
+new insight or understanding to the collective that aids in further discovery.
+Once a contribution is made, it cannot be made again in quite the same way, and
+once a new understanding is revealed to a collective, it cannot be discovered
+to that collective anew. Like the [waves at the Banzai Pipeline beach][surfing
+commons], these moments of discovery are a scarce resource. Once one of these
+moments comes, it will never come again.
 
 Scholarly commons can form around any type of knowledge. Scholarly commons can
 be nested into multiple layers, either imitating the structure of the knowledge
@@ -58,3 +63,4 @@ In short: scholarly commons accelerate research because they expose the
 subtractability of discoveries in a more efficient way.
 
 [collectives]: <https://cybersocialstructure.org/2016/10/03/think-of-science-like-an-incurable-intellectual-disease/> "Think of science like an incurable intellectual disease, by Bruce Caron"
+[surfing commons]: <http://www.onthecommons.org/magazine/surfing-commons-hawaii>
