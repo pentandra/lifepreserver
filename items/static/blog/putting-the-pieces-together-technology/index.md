@@ -5,7 +5,7 @@ description: >
 kind: article
 author_name: Chris Chapman
 created_at: 2017-02-16
-updated_at: 2017-04-27
+updated_at: 2017-04-28
 cover_image_id: '/static/blog/putting-the-pieces-together-technology/researcher_journeys.png'
 tags:
   - Scholarly Commons
@@ -50,18 +50,18 @@ explicitly designed for machine-based access and networked scholarship, and not
 simply adapted from the paper-based system.'[^first-workshop] Throughout the
 course of us working on this, however, it has become evident that 'from
 scratch' and 'networked scholarship' mean different things to different people.
-For some on this steering committee (and likely others), this means more of an
-incremental realignment of existing platforms and services, some of which have
-been studied in the [[101]{.oldstyle} Scholarly Innovations project][101
-innovations]. But there are also those, myself included, that have been
-thinking of these terms on a more foundational level, of open approaches and
-emerging technologies that could actually change the conversation, such as
-HATEOAS and machine-based ontologies that could help connect researchers and
-research across tools and platforms, providing new interactions for scholarship
-that would open up the research process and give us ability to do things that
-we have never been able to do before. In trying to reconcile these two
-approaches, I have wondered whether it is possible that the idea of the
-Scholarly Commons could encompass both.
+For some on this steering committee (and likely others), these terms convey
+more of an idea of an incremental realignment of existing platforms and
+services, some of which have been studied in the [[101]{.oldstyle} Scholarly
+Innovations project][101 innovations]. But there are also those, myself
+included, that have been thinking of these terms on a more foundational level,
+of open approaches and emerging technologies that could actually change the
+conversation, such as HATEOAS and machine-based ontologies that could help
+connect researchers and research across tools and platforms, providing new
+interactions for scholarship that would open up the research process and give
+us the ability to do things that we have never been able to do before. In
+trying to reconcile these two approaches, I have wondered whether it is
+possible that the idea of the Scholarly Commons could encompass both.
 
 There is a general consensus among us, I am pretty sure, that the Scholarly
 Commons is scholarly communication in a modern setting, one in which we are not
