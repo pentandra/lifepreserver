@@ -5,7 +5,7 @@ description: >
 kind: article
 author_name: Chris Chapman
 created_at: 2017-02-16
-updated_at: 2017-04-28
+updated_at: 2017-04-29
 published_at: 2017-04-28
 cover_image_id: '/static/blog/putting-the-pieces-together-technology/researcher_journeys.png'
 tags:
