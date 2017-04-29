@@ -43,13 +43,13 @@ module LifePreserver
       protected
 
       def sorted_relevant_articles
-        all = relevant_articles
+        all = @relevant_articles
 
         unless @preserve_order
-          all = all.sort_by { |a| attribute_to_time(a[:created_at]) }
+          all = all.sort_by { |a| attribute_to_time(a[:published_at] || a[:created_at]) }
         end
 
-        all.reverse.first(limit)
+        all.reverse.first(@limit)
       end
 
       def last_article
@@ -63,22 +63,22 @@ module LifePreserver
       end
 
       def validate_feed_item
-        if title.nil?
+        if @title.nil?
           raise Nanoc::Int::Errors::GenericTrivial.new('Cannot build Atom feed: no title in params, item or site config')
         end
-        if author_name.nil?
+        if @author_name.nil?
           raise Nanoc::Int::Errors::GenericTrivial.new('Cannot build Atom feed: no author_name in params, item or site config')
         end
-        if author_uri.nil?
+        if @author_uri.nil?
           raise Nanoc::Int::Errors::GenericTrivial.new('Cannot build Atom feed: no author_uri in params, item or site config')
         end
       end
 
       def validate_articles
-        if relevant_articles.empty?
+        if @relevant_articles.empty?
           raise Nanoc::Int::Errors::GenericTrivial.new('Cannot build Atom feed: no articles')
         end
-        if relevant_articles.any? { |a| a[:created_at].nil? }
+        if @relevant_articles.any? { |a| a[:created_at].nil? }
           raise Nanoc::Int::Errors::GenericTrivial.new('Cannot build Atom feed: one or more articles lack created_at')
         end
       end
@@ -90,10 +90,10 @@ module LifePreserver
 
           # Add primary attributes
           xml.id root_url
-          xml.title title
+          xml.title @title
 
           # Add date
-          xml.updated(attribute_to_time(last_article[:created_at]).__nanoc_to_iso8601_time)
+          xml.updated(attribute_to_time(last_article[:published_at] || last_article[:created_at]).__nanoc_to_iso8601_time)
 
           # Add links
           xml.link(rel: 'alternate', href: root_url)
@@ -101,13 +101,13 @@ module LifePreserver
 
           # Add author information
           xml.author do
-            xml.name author_name
-            xml.uri author_uri
+            xml.name @author_name
+            xml.uri @author_uri
           end
 
           # Add icon and logo
-          xml.icon icon if icon
-          xml.logo logo if logo
+          xml.icon @icon if @icon
+          xml.logo @logo if @logo
 
           # Add articles
           sorted_relevant_articles.each do |a|
@@ -127,7 +127,7 @@ module LifePreserver
           xml.title a[:title], type: 'html'
 
           # Add dates
-          xml.published attribute_to_time(a[:created_at]).__nanoc_to_iso8601_time
+          xml.published attribute_to_time(a[:published_at] || a[:created_at]).__nanoc_to_iso8601_time
           xml.updated attribute_to_time(a[:updated_at] || a[:created_at]).__nanoc_to_iso8601_time
 
           # Add specific author information
