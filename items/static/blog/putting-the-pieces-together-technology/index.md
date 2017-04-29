@@ -351,19 +351,19 @@ answer came to me slowly but clearly. A thought occurred that, well, had
 nothing to do with [the exercise], except perhaps indirectly: because the
 research processes were made explicit and studied this way, it allowed us to
 reason about, find patterns, and learn from them. Then a flood of questions
-entered my mind: _What if we could look at the research process in more of a
-tangible way? Isn't it the process that needs to be open and replicable? So why
-are we not publishing the research process, even across tools, as the
-fundamental scholarly output? If research or even knowledge discovery happens
-sequentially for a researcher, why are we not publishing the journey of the
-researcher?_ If the process was the product, many of the problems we are facing
-right now in scholarly communications relating to reproducibility,
-participation, and the integration of scholarship into society would be greatly
-diminished or eliminated completely. Researchers would also have something to
-show for all their thinking. From this perspective, the entire research process
-could be viewed as a sequence of decisions. The researcher's thoughts and and
-the process of how they arrived at conclusions should form the basis of
-research publication and collaboration.
+entered my mind: _What if we could look at the research process in more of an
+explicit, tangible way? Isn't it the process that needs to be open and
+replicable? So why are we not publishing the research process, even across
+tools, as the fundamental scholarly output? If research or even knowledge
+discovery happens sequentially for a researcher, why are we not publishing the
+journey of the researcher?_ If the process was the product, many of the
+problems we are facing right now in scholarly communications relating to
+reproducibility, participation, and the integration of scholarship into society
+would be greatly diminished or eliminated completely. Researchers would also
+have something to show for all their thinking. From this perspective, the
+entire research process could be viewed as a sequence of decisions. The
+researcher's thoughts and and the process of how they arrived at conclusions
+should form the basis of research publication and collaboration.
 
 I'm not advocating here that we capture a complete record of everything that a
 researcher is doing. But we need make explicit this common thread---this
