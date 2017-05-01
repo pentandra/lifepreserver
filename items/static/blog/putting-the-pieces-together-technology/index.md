@@ -5,7 +5,7 @@ description: >
 kind: article
 author_name: Chris Chapman
 created_at: 2017-02-16
-updated_at: 2017-04-29
+updated_at: 2017-05-01
 published_at: 2017-04-28
 cover_image_id: '/static/blog/putting-the-pieces-together-technology/researcher_journeys.png'
 tags:
@@ -57,12 +57,13 @@ services, some of which have been studied in the [[101]{.oldstyle} Scholarly
 Innovations project][101 innovations]. But there are also those, myself
 included, that have been thinking of these terms on a more foundational level,
 of open approaches and emerging technologies that could actually change the
-conversation, such as HATEOAS and machine-based ontologies that could help
-connect researchers and research across tools and platforms, providing new
-interactions for scholarship that would open up the research process and give
-us the ability to do things that we have never been able to do before. In
-trying to reconcile these two approaches, I have wondered whether it is
-possible that the idea of the Scholarly Commons could encompass both.
+conversation, such as distributed affordances, HATEOAS, and machine-based
+ontologies that could help connect researchers and research across tools and
+platforms, providing new interactions for scholarship that would open up the
+research process and give us the ability to do things that we have never been
+able to do before. In trying to reconcile these two approaches, I have wondered
+whether it is possible that the idea of the Scholarly Commons could encompass
+both.
 
 There is a general consensus among us, I am pretty sure, that the Scholarly
 Commons is scholarly communication in a modern setting, one in which we are not
@@ -350,23 +351,23 @@ the undesirable social, cultural, and technical limitations as possible.
 # The process is the product
 
 As I was sitting there in the workshop, thinking about all the above, the
-answer came to me slowly but clearly. A thought occurred that, well, had
-nothing to do with [the exercise], except perhaps indirectly: because the
-research processes were made explicit and studied this way, it allowed us to
-reason about, find patterns, and learn from them. Then a flood of questions
-entered my mind: _What if we could look at the research process in more of an
-explicit, tangible way? Isn't it the process that needs to be open and
-replicable? So why are we not publishing the research process, even across
-tools, as the fundamental scholarly output? If research or even knowledge
-discovery happens sequentially for a researcher, why are we not publishing the
-journey of the researcher?_ If the process was the product, many of the
-problems we are facing right now in scholarly communications relating to
-reproducibility, participation, and the integration of scholarship into society
-would be greatly diminished or eliminated completely. Researchers would also
-have something to show for all their thinking. From this perspective, the
-entire research process could be viewed as a sequence of decisions. The
-researcher's thoughts and and the process of how they arrived at conclusions
-should form the basis of research publication and collaboration.
+answer came to me slowly but clearly. A thought occurred that had somewhat to
+do with [the exercise], but more indirectly: because the research processes
+were made explicit and studied this way, it allowed us to reason about, find
+patterns, and learn from them. Then a flood of questions entered my mind: _What
+if we could look at the research process in more of an explicit, tangible way?
+Isn't it the process that needs to be open and replicable? So why are we not
+publishing the research process, even across tools, as the fundamental
+scholarly output? If research or even knowledge discovery happens sequentially
+for a researcher, why are we not publishing the journey of the researcher?_ If
+the process was the product, many of the problems we are facing right now in
+scholarly communications relating to reproducibility, participation, and the
+integration of scholarship into society would be greatly diminished or
+eliminated completely. Researchers would also have something to show for all
+their thinking. From this perspective, the entire research process could be
+viewed as a sequence of decisions. The researcher's thoughts and and the
+process of how they arrived at conclusions should form the basis of research
+publication and collaboration.
 
 I'm not advocating here that we capture a complete record of everything that a
 researcher is doing. But we need make explicit this common thread---this
