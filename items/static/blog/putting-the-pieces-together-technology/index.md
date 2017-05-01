@@ -57,12 +57,13 @@ services, some of which have been studied in the [[101]{.oldstyle} Scholarly
 Innovations project][101 innovations]. But there are also those, myself
 included, that have been thinking of these terms on a more foundational level,
 of open approaches and emerging technologies that could actually change the
-conversation, such as HATEOAS and machine-based ontologies that could help
-connect researchers and research across tools and platforms, providing new
-interactions for scholarship that would open up the research process and give
-us the ability to do things that we have never been able to do before. In
-trying to reconcile these two approaches, I have wondered whether it is
-possible that the idea of the Scholarly Commons could encompass both.
+conversation, such as distributed affordances, HATEOAS, and machine-based
+ontologies that could help connect researchers and research across tools and
+platforms, providing new interactions for scholarship that would open up the
+research process and give us the ability to do things that we have never been
+able to do before. In trying to reconcile these two approaches, I have wondered
+whether it is possible that the idea of the Scholarly Commons could encompass
+both.
 
 There is a general consensus among us, I am pretty sure, that the Scholarly
 Commons is scholarly communication in a modern setting, one in which we are not
