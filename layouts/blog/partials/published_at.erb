@@ -2,6 +2,6 @@
   <% if item[:published_at] %>
     <time class="big" property="schema:datePublished" datetime="<%= h publication_date_for(item) %>"><%= ndashed(publication_date_for(item)) %></time>
   <% else %>
-    <i><time class="big excl" property="schema:dateCreated" datetime="<%= h date_for(item) %>"><%= ndashed(date_for(item)) %></time></i>
+    <time class="big draft" property="schema:dateCreated" datetime="<%= h date_for(item) %>"><i><%= ndashed(date_for(item)) %></i></time>
   <% end %>
 </footer>
