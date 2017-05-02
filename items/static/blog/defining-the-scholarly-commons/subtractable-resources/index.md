@@ -26,25 +26,29 @@ pertaining to how to deal with the shared resources of the commons, which will
 include the active and latent knowledge of that field of study. The
 subtractable resource around which a scholarly commons forms is the moments of
 discovery that reveal, bit by bit, the latent knowledge within that field of
-study, using the term <dfn>discovery</dfn> here very loosely to mean any new
-insight or understanding to the collective that aids in further discovery. I'm
-separating the discovery from the knowledge that has been discovered. The
-discovery is the subtractable resource, as it happened in some moment of time
-and will never happen again. Once that discovery has occurred, it is now
-subtracted from the set of all potential discoveries within that domain. The
-knowledge that was revealed by that discovery, however, is set free, for
-example, to become public.
+study. In this definition, I'm using the term <dfn>discovery</dfn> very loosely
+to mean any new insight or understanding to the collective that aids in further
+discovery. I'm also separating the discovery from the knowledge that has been
+discovered. The discovery is the subtractable resource, and can be catalogued
+as such, as it happened in some moment of time and will never happen again. It
+can be subtracted from the set of all potential discoveries that remain within
+that field of study. The knowledge that was revealed by that discovery,
+however, is set free, for example, to become public.
 
-Surfing commons, such as [is based around the waves at the Banzai Pipeline
-beach][surfing commons], provide a more tangible illustration of this type of
-subtractable resource. Even though it seems like there will be no end to the
-waves that pummel the beach incessantly, each wave is unique and unrepeatable.
-Each wave is the arithmetical result of a complex set of forces that have acted
-together to produce its precise form of expression. Once one of these waves
-comes and goes, it will never come again. Like the waves of the sea, these
-moments of discovery are a scarce resource. Once a contribution is made, it
-cannot be made again in quite the same way, and once a new understanding is
-revealed to a collective, it cannot be discovered to that collective anew.
+Ocean waves provide a more tangible illustration of this type of subtractable
+resource. Even though it seems like there will be no end to the waves that
+pummel the beach incessantly, each wave is unique and unrepeatable. Each wave
+is the arithmetical result of a complex set of forces that have acted together
+to produce its precise form of expression. Once one of these waves comes and
+goes, it will never come again. In some locations, these waves are guarded and
+protected, like in [the surfing commons off the Banzai Pipeline beach][surfing
+commons], where rules describing how to use these scarce resources must be
+followed if you want to play. There are just not enough to go around, and
+surfers want to make the most of them when they happen. In a scholarly commons,
+like the waves of the sea, these moments of discovery are a scarce resource.
+Once a contribution is made, it cannot be made again in quite the same way.
+Once a new understanding is revealed to a collective, it cannot be discovered
+to that collective anew.
 
 Scholarly commons can form around any type of knowledge. Scholarly commons can
 be nested into multiple layers, either imitating the structure of the knowledge
