@@ -43,7 +43,7 @@ to produce its precise form of expression. Once one of these waves comes and
 goes, it will never come again. In some locations, these waves are guarded and
 protected, like in [the surfing commons off the Banzai Pipeline beach][surfing
 commons], where rules describing how to use these scarce resources must be
-followed if you want to play. There are just not enough to go around, and
+followed if you want to play. There are just not enough waves to go around, and
 surfers want to make the most of them when they happen. In a scholarly commons,
 like the waves of the sea, these moments of discovery are a scarce resource.
 Once a contribution is made, it cannot be made again in quite the same way.
