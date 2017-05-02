@@ -51,10 +51,10 @@ scooped?
 The culture of the commons views things differently. Discoveries are still your
 own, but there is no reason to hide your research from others. In actuality, it
 is much more likely that the opposite is happening. There is every reason to go
-out and *pro*claim the ground that you see so that other people can build on
+out and *proclaim* the ground that you see so that other people can build on
 top of it---not just for your own sake, but for the sake of everyone else in
 the world that could be using your contribution right now. If your whole
-process open for everyone to see, there is not the fear of others taking
+process is open for everyone to see, there is not the fear of others taking
 something away from you or claiming they have discovered something before you,
 but a trust that others will come to help uncover that which was before hidden.
 
