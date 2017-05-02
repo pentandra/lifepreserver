@@ -4,7 +4,7 @@ description: Is there a subtractable resource in your scholarly commons? Yes, th
 kind: article
 author_name: Chris Chapman
 created_at: 2017-04-20
-updated_at: 2017-04-28
+updated_at: 2017-05-01
 tags:
   - Defining the Commons
 ---
