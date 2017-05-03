@@ -40,6 +40,8 @@ can be subtracted from the set of all potential discoveries that remain within
 that field of study. The knowledge that was revealed by that discovery,
 however, is set free, for example, to become public.
 
+<!--MORE-->
+
 Ocean waves provide a more tangible illustration of this type of subtractable
 resource. Even though it seems like there will be no end to the waves that
 pummel the beach incessantly, each wave is unique and unrepeatable. Each wave
