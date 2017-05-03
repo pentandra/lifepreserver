@@ -80,16 +80,6 @@ module LifePreserver
       link_for_tag(tag, rel_tag: false)
     end
 
-    # Uses the convention by DBpedia that the first sentence of a new paragraph
-    # is concatenated to the last sentence of the previous paragraph without a
-    # space between.
-    def parse_abstract(abstract)
-      paragraphs = abstract.split(/((?<=[a-z0-9])[.!?]['"]?(?=[A-Z0-9]))/)
-      paragraphs.reduce('') do |acc, p|
-        acc << (p =~ /^[.!?'"]+$/ ? p + '</p>' : '<p>' + p)
-      end
-    end
-
     # Creates in-memory tag pages for a collection of items
     def generate_tag_pages(items = nil)
       items = @items if items.nil?
