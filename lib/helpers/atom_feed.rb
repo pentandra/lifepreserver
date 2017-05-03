@@ -191,8 +191,9 @@ module LifePreserver
 
     # @return [String]
     def atom_tag_for(item)
-      hostname, base_dir = %r{^.+?://([^/]+)(.*)$}.match(@config[:base_url])[1..2]
+      return item[:entry_id] if item[:entry_id]
 
+      hostname, base_dir = %r{^.+?://([^/]+)(.*)$}.match(@config[:base_url])[1..2]
       formatted_date = attribute_to_time(item[:created_at]).__nanoc_to_iso8601_date
 
       'tag:' + hostname + ',' + formatted_date + ':' + base_dir + path_to(item)
