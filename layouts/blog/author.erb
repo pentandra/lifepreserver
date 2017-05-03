@@ -1,13 +1,12 @@
 <% render('/blog/default.*') do %>
-  <h1>Articles by <%= author.to_s %></h1>
+  <h1>Posts by <%= author.to_s %></h1>
 
-  <% author_posts = posts_by_author(author, published_blog_posts) %>
-  <div property="schema:hasPart" resource="pentandra-blog:articles_by_<%= author.to_slug('_') %>" typeof="schema:ItemList">
+  <% author_posts = posts_by_author(author, published_weblog) %>
+  <div property="schema:hasPart" resource="pentandra-blog:posts_by_<%= author.to_slug('_') %>" typeof="schema:ItemList">
     <link property="schema:itemListOrder" resource="schema:itemListOrderDescending" />
     <meta property="schema:numberOfItems" content="<%= h author_posts.length %>" datatype="schema:Integer" />
     <% author_posts.each_with_index do |post, index| %>
       <%= render('/blog/partials/summary.*', item: post, position: index + 1) %>
     <% end %>
   </div>
-
 <% end %>
