@@ -4,27 +4,40 @@ description: Introducing a series of vignettes to discuss the Scholarly Commons.
 kind: article
 author_name: Chris Chapman
 created_at: 2017-04-20
-updated_at: 2017-04-20
+updated_at: 2017-05-03
 tags:
   - Scholarly Commons
   - Holism
   - FORCE11
 ---
 
-It's easy in a group setting for dominant voices or agendas, even if
-well-intentioned, to shape a discussion in a way that is not representative of
-the group, especially when confronted with the need to get things done. In a
+Almost two years ago, FORCE11 received a grant to try to answer the question,
+_are we ready to define the Scholarly Commons?_ Our intention was to design a
+new system of scholarly communication from scratch as a system explicitly
+designed for machine-based access and networked scholarship. I was invited to
+be on the steering committee of a working group around this program, and we
+held two (and a half) workshops to try to gather consensus on this topic with
+the hopes of answering this question in the affirmative. But perhaps out of
+fear that few would adopt a new system of scholarly communication if it looked
+too different from our current system, we have yet to approach some fundamental
+questions and define what it is that we're really talking about.
+
+It's easy in a committee or group setting for dominant voices or agendas, even
+if well-intentioned, to shape a discussion in a way that is not representative
+of the group, especially when confronted with the need to get things done. In a
 way, this is the very problem we are trying to address with the Scholarly
 Commons.
 
 It is with the hope that we can stir up the discussion that I am announcing
 here a series of vignettes, to prompt the many fundamental discussions that
 have not yet happened around this important topic, and to paint the picture of
-the Scholarly Commons from various perspectives. The intent is to raise
-questions and broaden our collective horizons, with the hope that through this
-exercise, we can come to some consensus as to which questions we need to be
-asking, and, not any less important, how best to find answers to those
-questions.
+the Scholarly Commons from various perspectives. Of course, we are painting
+here with the broad stroke of our own opinion, and these vignettes, by
+themselves, do not reflect the consensus of the SCWG steering committee. The
+intent is to raise questions, open the discussion, and broaden our collective
+horizons, with the hope that through this exercise, we can come to some
+consensus as to which questions we need to be asking, and, not any less
+important, how best to find answers to those questions.
 
 Here are a few questions that we're starting with. If you have other ideas that
 you would like to discuss or see discussed, we invite you to share them. We
