@@ -6,7 +6,7 @@ preprocess do
 
   def mark_items_as_hidden_that_should_be_hidden
     hidden_predicates = [
-      ->(item) { @config[:production] ? blog_post?(item) && item[:published_at].nil? : false },
+      ->(item) { @config[:production] ? article?(item) && item[:published_at].nil? : false },
       ->(item) { item.identifier.exts.include?('js') },
       ->(item) { item.identifier.ext =~ /css/ },
       ->(item) { item.identifier =~ %r{^/static/assets/components/} },
@@ -51,12 +51,12 @@ preprocess do
     end
   end
 
-  generate_author_uris(published_blog_posts)
+  generate_author_uris(weblog)
 
   if @config[:site][:generate_blogmeta]
-    generate_tag_pages(published_blog_posts)
-    generate_author_pages(published_blog_posts)
-    generate_blog_archives(published_blog_posts)
+    generate_tag_pages
+    generate_author_pages
+    generate_blog_archives
   end
 
   mark_items_as_hidden_that_should_be_hidden

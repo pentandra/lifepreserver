@@ -22,12 +22,12 @@
     <% end %>
   </div>
 
-  <% tagged_items = items_with_tag(tag, published_blog_posts) %>
+  <% tagged_items = items_with_tag(tag, published_weblog) %>
   <div property="schema:hasPart" resource="pentandra-website:items_tagged_<%= tag[:tag].to_slug('_') %>" typeof="schema:ItemList">
     <link property="schema:itemListOrder" resource="schema:itemListOrderDescending" />
     <meta property="schema:numberOfItems" content="<%= h tagged_items.length %>" datatype="schema:Integer" />
-    <% tagged_items.each_with_index do |post, index| %>
-      <%= render('/blog/partials/summary.*', item: post, position: index + 1) %>
+    <% tagged_items.each_with_index do |tagged, index| %>
+      <%= render('/blog/partials/summary.*', item: tagged, position: index + 1) %>
     <% end %>
   </div>
 

@@ -4,7 +4,7 @@ description: Is there a subtractable resource in your scholarly commons? Yes, th
 kind: article
 author_name: Chris Chapman
 created_at: 2017-04-20
-updated_at: 2017-05-01
+updated_at: 2017-05-03
 tags:
   - Defining the Commons
 ---
@@ -39,6 +39,8 @@ as such, as it happened in some moment of time and will never happen again. It
 can be subtracted from the set of all potential discoveries that remain within
 that field of study. The knowledge that was revealed by that discovery,
 however, is set free, for example, to become public.
+
+<!--MORE-->
 
 Ocean waves provide a more tangible illustration of this type of subtractable
 resource. Even though it seems like there will be no end to the waves that
@@ -79,8 +81,15 @@ half-baked. They are independent in their own sphere of influence, and come
 with more of a sense of immediate gratification, more feelings of service, and
 many more ways to contribute.
 
-In short: scholarly commons accelerate research because they expose the
-subtractability of discoveries in a more efficient way.
+And just as the surfing commons is not as much about managing the _water_ as it
+is about managing the _waves_, if the subtractable resource of scholarly
+commons is really the discoveries, then the Scholarly Commons is not as much
+about 'managing the outputs of research at every stage of the research process'
+as it is about managing the _process of discovery_. Though this difference may
+seem insignificant, as we will see in [this series of vignettes][this series],
+it changes the entire approach to defining the Scholarly Commons, and will make
+scholarly commons of much greater benefit to mankind.
 
 [collectives]: <https://cybersocialstructure.org/2016/10/03/think-of-science-like-an-incurable-intellectual-disease/> "Think of science like an incurable intellectual disease, by Bruce Caron"
 [surfing commons]: <http://www.onthecommons.org/magazine/surfing-commons-hawaii>
+[this series]: <../>

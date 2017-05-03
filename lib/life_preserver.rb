@@ -13,7 +13,9 @@ include Nanoc::Helpers::CacheBusting
 include Nanoc::Helpers::Filtering
 include ERB::Util
 
+include LifePreserver::Articles
 include LifePreserver::Blogging
+include LifePreserver::Weblog
 include LifePreserver::Dates
 include LifePreserver::Company
 include LifePreserver::UrlShortener

@@ -51,27 +51,5 @@ module LifePreserver
       people = @items.find_all('/company/people/*')
       people.find { |person| full_name(person) == full_name }
     end
-
-    # run during preprocessing
-    def generate_author_uris(item_set)
-      item_set = @items if item_set.nil?
-
-      validate_config
-
-      item_set.each do |item|
-        author = person_by_name(item[:author_name])
-        if author
-          item[:author_uri] ||= "#{@config[:base_url]}#{description_path(author)}"
-        end
-      end
-    end
-
-    protected
-
-    def validate_config
-      if @config[:base_url].nil?
-        raise Nanoc::Int::Errors::GenericTrivial.new('Cannot generate author URIs: site configuration has no base_url')
-      end
-    end
   end
 end

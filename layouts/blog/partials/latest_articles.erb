@@ -6,7 +6,7 @@
     <% published_blog_posts.first(limit).each_with_index do |post, index| %>
       <div property="schema:itemListElement" typeof="schema:ListItem">
         <meta property="schema:position" content="<%= "#{index + 1}" %>" />
-        <article class="excerpt" property="schema:item" resource="<%= path_to(post) %>#blogpost" typeof="schema:BlogPost">
+        <article class="excerpt" property="schema:item" resource="<%= path_to(post) %>#blogpost" typeof="schema:BlogPosting">
           <a href="<%= path_to(post) %>" rel="bookmark" property="schema:url">
             <time class="small bold" property="schema:datePublished" datetime="<%= h publication_date_for(post) %>"><%= ndashed(publication_date_for(post)) %></time>&#8194;<h3 class="normal" property="schema:name"><%= h post[:short_title] || post[:title] %></h3>
           </a>

@@ -1,4 +1,4 @@
-require_relative 'blogging'
+require_relative 'weblog'
 require_relative 'link_to'
 require_relative 'dates'
 
@@ -6,13 +6,13 @@ module LifePreserver
   module AtomFeed
     include LifePreserver::Dates
     include LifePreserver::LinkTo
-    include LifePreserver::Blogging
+    include LifePreserver::Weblog
 
     class AtomFeedBuilder
       attr_accessor :config
 
       attr_accessor :limit
-      attr_accessor :relevant_articles
+      attr_accessor :relevant_entries
       attr_accessor :preserve_order
       attr_accessor :content_proc
       attr_accessor :excerpt_proc
@@ -30,7 +30,7 @@ module LifePreserver
       def validate
         validate_config
         validate_feed_item
-        validate_articles
+        validate_entries
       end
 
       def build
@@ -42,8 +42,8 @@ module LifePreserver
 
       protected
 
-      def sorted_relevant_articles
-        all = @relevant_articles
+      def sorted_relevant_entries
+        all = @relevant_entries
 
         unless @preserve_order
           all = all.sort_by { |a| attribute_to_time(a[:published_at] || a[:created_at]) }
@@ -52,8 +52,8 @@ module LifePreserver
         all.reverse.first(@limit)
       end
 
-      def last_article
-        sorted_relevant_articles.first
+      def last_entry
+        sorted_relevant_entries.first
       end
 
       def validate_config
@@ -74,12 +74,12 @@ module LifePreserver
         end
       end
 
-      def validate_articles
-        if @relevant_articles.empty?
-          raise Nanoc::Int::Errors::GenericTrivial.new('Cannot build Atom feed: no articles')
+      def validate_entries
+        if @relevant_entries.empty?
+          raise Nanoc::Int::Errors::GenericTrivial.new('Cannot build Atom feed: no entries')
         end
-        if @relevant_articles.any? { |a| a[:created_at].nil? }
-          raise Nanoc::Int::Errors::GenericTrivial.new('Cannot build Atom feed: one or more articles lack created_at')
+        if @relevant_entries.any? { |a| a[:created_at].nil? }
+          raise Nanoc::Int::Errors::GenericTrivial.new('Cannot build Atom feed: one or more entries lack created_at')
         end
       end
 
@@ -89,11 +89,11 @@ module LifePreserver
           root_url = @config[:base_url] + '/'
 
           # Add primary attributes
-          xml.id root_url
-          xml.title @title
+          xml.id(root_url)
+          xml.title(@title)
 
           # Add date
-          xml.updated(attribute_to_time(last_article[:published_at] || last_article[:created_at]).__nanoc_to_iso8601_time)
+          xml.updated(attribute_to_time(last_entry[:updated_at]).__nanoc_to_iso8601_time)
 
           # Add links
           xml.link(rel: 'alternate', href: root_url)
@@ -101,40 +101,40 @@ module LifePreserver
 
           # Add author information
           xml.author do
-            xml.name @author_name
-            xml.uri @author_uri
+            xml.name(@author_name)
+            xml.uri(@author_uri)
           end
 
           # Add icon and logo
-          xml.icon @icon if @icon
-          xml.logo @logo if @logo
+          xml.icon(@icon) if @icon
+          xml.logo(@logo) if @logo
 
-          # Add articles
-          sorted_relevant_articles.each do |a|
-            build_for_article(a, xml)
+          # Add entries
+          sorted_relevant_entries.each do |entry|
+            build_for_entry(entry, xml)
           end
         end
       end
 
-      def build_for_article(a, xml)
+      def build_for_entry(entry, xml)
         # Get URL
-        url = public_path_to(a, global: true)
+        url = public_path_to(entry, global: true)
         return if url.nil?
 
         xml.entry do
           # Add primary attributes
-          xml.id atom_tag_for(a)
-          xml.title a[:title], type: 'html'
+          xml.id(atom_tag_for(entry))
+          xml.title(entry[:title], type: 'html')
 
           # Add dates
-          xml.published attribute_to_time(a[:published_at] || a[:created_at]).__nanoc_to_iso8601_time
-          xml.updated attribute_to_time(a[:updated_at] || a[:created_at]).__nanoc_to_iso8601_time
+          xml.published(attribute_to_time(entry[:published_at] || entry[:created_at]).__nanoc_to_iso8601_time)
+          xml.updated(attribute_to_time(entry[:updated_at] || entry[:created_at]).__nanoc_to_iso8601_time)
 
           # Add specific author information
-          if a[:author_name] || a[:author_uri]
+          if entry[:author_name] || entry[:author_uri]
             xml.author do
-              xml.name a[:author_name] || author_name
-              xml.uri a[:author_uri] || author_uri
+              xml.name(entry[:author_name] || author_name)
+              xml.uri(entry[:author_uri] || author_uri)
             end
           end
 
@@ -142,15 +142,15 @@ module LifePreserver
           xml.link(rel: 'alternate', href: url)
 
           # Add content
-          summary = excerpt_proc.call(a)
-          xml.content content_proc.call(a), type: 'html'
-          xml.summary summary, type: 'html' unless summary.nil?
+          summary = excerpt_proc.call(entry)
+          xml.content(content_proc.call(entry), type: 'html')
+          xml.summary(summary, type: 'html') unless summary.nil?
         end
       end
     end
 
     # @option params [Number] :limit
-    # @option params [Array] :articles
+    # @option params [Array] :entries
     # @option params [Boolean] :preserve_order
     # @option params [Proc] :content_proc
     # @option params [Proc] :excerpt_proc
@@ -169,7 +169,7 @@ module LifePreserver
 
       # Fill builder
       builder.limit             = params[:limit] || 5
-      builder.relevant_articles = params[:articles] || articles || []
+      builder.relevant_entries  = params[:entries] || []
       builder.preserve_order    = params.fetch(:preserve_order, false)
       builder.content_proc      = params[:content_proc] || ->(a) { a.compiled_content(snapshot: :pre) }
       builder.excerpt_proc      = params[:excerpt_proc] || ->(a) { a[:excerpt] }
@@ -191,8 +191,9 @@ module LifePreserver
 
     # @return [String]
     def atom_tag_for(item)
-      hostname, base_dir = %r{^.+?://([^/]+)(.*)$}.match(@config[:base_url])[1..2]
+      return item[:entry_id] if item[:entry_id]
 
+      hostname, base_dir = %r{^.+?://([^/]+)(.*)$}.match(@config[:base_url])[1..2]
       formatted_date = attribute_to_time(item[:created_at]).__nanoc_to_iso8601_date
 
       'tag:' + hostname + ',' + formatted_date + ':' + base_dir + path_to(item)

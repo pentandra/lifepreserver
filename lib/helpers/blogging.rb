@@ -1,18 +1,11 @@
-require 'active_support/core_ext/object/blank'
-require_relative 'text'
-require_relative 'link_to'
-
 module LifePreserver
   module Blogging
-    include Text
-    include LinkTo
-
     def blog_post?(item)
-      item[:kind] == 'article' && item.identifier =~ %r{/blog/}
+      item[:kind] == 'message'
     end
 
     def blog_posts
-      blk = -> { @items.find_all('/static/blog/**/*.md') }
+      blk = -> { @items.find_all('/static/blog/posts/**/*.md') }
       if @items.frozen?
         @blog_post_items ||= blk.call
       else
@@ -21,15 +14,7 @@ module LifePreserver
     end
 
     def sorted_blog_posts
-      blk = lambda do
-        unpublished_posts, published_posts = blog_posts.partition { |p| p.unwrap.attributes[:published_at].nil? }
-
-        unpublished_posts = unpublished_posts.sort_by { |a| attribute_to_time(a.unwrap.attributes[:updated_at]) }.reverse
-        published_posts = published_posts.sort_by { |a| attribute_to_time(a.unwrap.attributes[:published_at]) }.reverse
-
-        unpublished_posts + published_posts
-      end
-
+      blk = -> { blog_posts.sort_by { |p| attribute_to_time(p.unwrap.attributes[:created_at]) }.reverse }
       if @items.frozen?
         @sorted_blog_post_items ||= blk.call
       else
@@ -42,20 +27,15 @@ module LifePreserver
       blk = -> { sorted_blog_posts.reject { |a| a.unwrap.attributes[:is_hidden] } }
       if @items.frozen?
         @published_blog_post_items ||= blk.call
-      else
-        blk.call
       end
     end
 
-    def authors(posts = nil)
-      posts ||= blog_posts
-      authors = Set.new
-      posts.each do |post|
-        author_name = post.unwrap.attributes[:author_name]
-        next if author_name.blank?
-        authors << author_name.to_s
+    def link_to_if_published(post, item_set = [], attributes = {})
+      if item_set.include?(post)
+        link_to(post[:short_title] || post[:title], post, attributes)
+      else
+        %(<span class="title">#{post[:short_title] || post[:title]}</span>)
       end
-      authors.to_a
     end
 
     #
@@ -65,96 +45,24 @@ module LifePreserver
       %(<a href="#{@config[:blog][:authors_url]}/#{h author.to_slug}/" title="Articles by #{h author}"#{' rel="author"' if rel_tag}>#{h author}</a>)
     end
 
-    def link_for_authorlist(author)
-      link_for_author(author, rel_tag: false)
-    end
+    # run during preprocessing
+    def generate_author_uris(item_set = nil)
+      item_set ||= blog_posts
+      validate_config
 
-    # Get the all the posts by the given author
-    # Does not create dependencies.
-    #
-    # @param [String] author_name the name of the author
-    # @param [Enumerable] posts the posts to filter
-    #
-    def posts_by_author(author_name, posts = nil)
-      posts ||= published_blog_posts
-      posts.select { |post| post.unwrap.attributes[:author_name] == author_name }
-    end
-
-    # Get the all the posts published during the given year
-    # Does not create dependencies.
-    #
-    # @param [Number] year the year of publication
-    # @param [Enumerable] posts the posts to filter
-    #
-    def posts_by_year(year, posts = nil)
-      posts ||= published_blog_posts
-      posts.select { |post| post.unwrap.attributes.key?(:published_at) && post.unwrap.attributes.fetch(:published_at).year == year }
-    end
-
-    def link_for_archive(year)
-      %(<a rel="archives" href="#{@config[:blog][:archives_url]}/#{h year.to_s}/" title="Articles written in #{h year.to_s}">#{h year.to_s}</a>)
-    end
-
-    def link_to_if_published(post, attributes = {})
-      if published_blog_posts.include?(post)
-        link_to(post[:short_title] || post[:title], post, attributes)
-      else
-        %(<span class="title">#{post[:short_title] || post[:title]}</span>)
+      item_set.each do |item|
+        author = person_by_name(item[:author_name])
+        if author
+          item[:author_uri] ||= "#{@config[:base_url]}#{description_path(author)}"
+        end
       end
     end
 
-    def archive_years(posts = nil)
-      posts ||= published_blog_posts
-      posts
-        .select { |post| post.unwrap.attributes.key?(:published_at) }
-        .map { |post| post.unwrap.attributes.fetch(:published_at).year }
-        .uniq
-        .to_a
-    end
+    protected
 
-    def post_summary(post_rep, read_more_text: 'Read more ⇢', separator: '<!--MORE-->')
-      post_rep = case post_rep
-                 when Nanoc::ItemRepView
-                   post_rep
-                 when Nanoc::ItemWithRepsView
-                   post_rep.reps.fetch(:default)
-                 else
-                   raise ArgumentError, "Cannot summarize #{item_rep.inspect} (expected an item rep or an item, not a #{item_rep.class.name})"
-                 end
-
-      summary, body = post_rep.compiled_content.split(separator)
-      return summary unless body
-
-      link = link_to(post_rep.item.fetch(:read_more, read_more_text), post_rep.item, global: post_rep.name != :default, class: 'readmore', title: 'Read the full article')
-      summary << %(<p class="readmore">#{link}</p>)
-    end
-
-    def article_id(article)
-      article[:article_id] || md5(article[:title].to_slug)
-    end
-
-    # Creates in-memory author pages from partial: layouts/author.html
-    def generate_author_pages(item_set)
-      authors(item_set).each do |author|
-        @items.create(
-          %(<%= render('/blog/author.*', author: '#{author}') %>),
-          { title: "Articles by #{author}", kind: 'author-page', is_hidden: true, description: "All posts written by #{author}" },
-          "#{@config[:static_root]}#{@config[:blog][:authors_url]}/#{author.to_slug}/index.erb",
-          binary: false,
-        )
-      end
-    end
-
-    # Creates in-memory blog archive pages from partial:
-    # layouts/blog_archive.html
-    def generate_blog_archives(item_set)
-      archive_years(item_set).each do |year|
-        @items.create(
-          %(<%= render('/blog/archive.*', year: #{year}) %>),
-          { title: "Articles from #{year}", kind: 'archive-page', is_hidden: true, description: "All posts written in #{year}" },
-          "#{@config[:static_root]}#{@config[:blog][:archives_url]}/#{year}/index.erb",
-          binary: false,
-        )
+    def validate_config
+      if @config[:base_url].nil?
+        raise Nanoc::Int::Errors::GenericTrivial.new('Cannot generate author URIs: site configuration has no base_url')
       end
     end
   end
