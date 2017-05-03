@@ -1,7 +1,7 @@
 ---
 title: "Defining the Scholarly Commons: convergence or divergence?"
 description: How did this all start, and where are we now?
-kind: article
+kind: vignette
 author_name: Chris Chapman
 created_at: 2017-04-21
 updated_at: 2017-04-21
@@ -16,7 +16,6 @@ tags:
 
 <figcaption>--- a quote [misattributed] to [Henry Ford], who improved the process of automobile production such that the automobile became a practical means of conveyance for many more people.</figcaption>
 </figure>
-
 
 It may seem like a shock to you, but this revolution in scholarly communication
 will not happen first within the academy. It will disrupt the academy.

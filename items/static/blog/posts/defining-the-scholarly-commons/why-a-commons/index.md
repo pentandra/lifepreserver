@@ -1,7 +1,7 @@
 ---
 title: "Defining the Scholarly Commons: why a commons?"
 description: Why do we want a commons anyway? Isn't better tech enough?
-kind: article
+kind: vignette
 author_name: Chris Chapman
 created_at: 2017-04-20
 updated_at: 2017-04-20

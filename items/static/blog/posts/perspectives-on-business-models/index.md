@@ -1,7 +1,7 @@
 ---
 title: Perspectives on Sustainable Business Models in Research
 description: Searching for a better business model for a research software company.
-kind: article
+kind: blogpost
 author_name: Chris Chapman
 created_at: 2014-04-21
 updated_at: 2014-04-21

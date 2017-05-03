@@ -1,7 +1,7 @@
 ---
 title: W3C Web Annotation Working Group
 description: Web annotations are really going to happen! Bring on the web.
-kind: article
+kind: blogpost
 author_name: Chris Chapman
 created_at: 2014-08-21
 updated_at: 2014-09-25

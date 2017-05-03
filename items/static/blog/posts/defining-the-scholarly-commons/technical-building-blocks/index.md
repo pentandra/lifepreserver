@@ -1,7 +1,7 @@
 ---
 title: "Defining the Scholarly Commons: technical building blocks"
 description: What types of technologies are needed to support scholarly commons?
-kind: article
+kind: vignette
 author_name: Chris Chapman
 created_at: 2017-04-20
 updated_at: 2017-04-20

@@ -1,7 +1,7 @@
 ---
 title: Our Business is our Product
 description: Our business is a seed that can be planted elsewhere.
-kind: article
+kind: blogpost
 author_name: Chris Chapman
 created_at: 2015-02-02
 updated_at: 2015-02-02

@@ -1,7 +1,7 @@
 ---
 title: Defining the Scholarly Commons
 description: Introducing a series of vignettes to discuss the Scholarly Commons.
-kind: article
+kind: blogpost
 author_name: Chris Chapman
 created_at: 2017-04-20
 updated_at: 2017-05-03

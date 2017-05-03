@@ -1,7 +1,7 @@
 ---
 title: Why the DOI is a Bad Idea for Research
 description: While persistence is a good thing, the DOI is not the future of research.
-kind: article
+kind: blogpost
 author_name: Chris Chapman
 created_at: 2015-01-19
 updated_at: 2015-01-19

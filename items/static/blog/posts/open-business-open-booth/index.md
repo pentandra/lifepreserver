@@ -1,7 +1,7 @@
 ---
 title: Open Business, Open Booth
 description: We're opening our booth this year!
-kind: article
+kind: blogpost
 article_id: open-business-open-booth
 author_name: Katie Chapman
 created_at: 2013-04-25

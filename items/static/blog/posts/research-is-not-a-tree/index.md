@@ -1,7 +1,7 @@
 ---
 title: Research is not a Tree
 description: What's really wrong with the current paradigm?
-kind: article
+kind: blogpost
 author_name: Chris Chapman
 created_at: 2015-01-15
 updated_at: 2015-01-15

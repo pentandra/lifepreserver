@@ -58,7 +58,7 @@ compile '/static/blog/posts/**/*.md', rep: :feed_entry do
   filter :rubypantsunicode
 end
 
-compile '/static/articles/**/*.{jpg,jpeg,png,gif}' do
+compile '/static/blog/posts/**/*.{jpg,jpeg,png,gif}' do
   filter :image_optimizer if @config[:production]
 end
 

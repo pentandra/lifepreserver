@@ -1,7 +1,7 @@
 ---
 title: "Defining the Scholarly Commons: participation"
 description: For whom is the Scholarly Commons? and why to we need participation?
-kind: article
+kind: vignette
 author_name: Chris Chapman
 created_at: 2017-04-20
 updated_at: 2017-04-26
