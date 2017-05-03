@@ -84,8 +84,10 @@ is about managing the _waves_, if the subtractable resource of scholarly
 commons is really the discoveries, then the Scholarly Commons is not as much
 about 'managing the outputs of research at every stage of the research process'
 as it is about managing the _process of discovery_. Though this difference may
-seem insignificant, it changes the entire approach to defining the Scholarly
-Commons, and will make scholarly commons of much greater benefit to mankind.
+seem insignificant, as we will see in [this series of vignettes][this series],
+it changes the entire approach to defining the Scholarly Commons, and will make
+scholarly commons of much greater benefit to mankind.
 
 [collectives]: <https://cybersocialstructure.org/2016/10/03/think-of-science-like-an-incurable-intellectual-disease/> "Think of science like an incurable intellectual disease, by Bruce Caron"
 [surfing commons]: <http://www.onthecommons.org/magazine/surfing-commons-hawaii>
+[this series]: <../>
