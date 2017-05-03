@@ -7,7 +7,7 @@ author_name: Chris Chapman
 created_at: 2017-02-16
 updated_at: 2017-05-01
 published_at: 2017-04-28
-cover_image_id: '/static/blog/putting-the-pieces-together-technology/researcher_journeys.png'
+cover_image_id: '/static/blog/posts/putting-the-pieces-together-technology/researcher_journeys.png'
 tags:
   - Scholarly Commons
   - Holism

@@ -1,54 +1,54 @@
 require 'active_support/core_ext/object/blank'
 require_relative 'text'
 require_relative 'link_to'
+require_relative 'company'
+require_relative 'articles'
+require_relative 'blogging'
 
 module LifePreserver
-  module Blogging
+  module Weblog
     include Text
     include LinkTo
+    include Company
+    include Articles
+    include Blogging
 
-    def blog_post?(item)
-      item[:kind] == 'article' && item.identifier =~ %r{/blog/}
-    end
-
-    def blog_posts
-      blk = -> { @items.find_all('/static/blog/**/*.md') }
+    def weblog
+      blk = -> { articles + blog_posts }
       if @items.frozen?
-        @blog_post_items ||= blk.call
+        @weblog_items ||= blk.call
       else
         blk.call
       end
     end
 
-    def sorted_blog_posts
+    def sorted_weblog
       blk = lambda do
-        unpublished_posts, published_posts = blog_posts.partition { |p| p.unwrap.attributes[:published_at].nil? }
+        unpublished_posts, published_posts = weblog.partition { |p| p.unwrap.attributes[:published_at].nil? }
 
-        unpublished_posts = unpublished_posts.sort_by { |a| attribute_to_time(a.unwrap.attributes[:updated_at]) }.reverse
-        published_posts = published_posts.sort_by { |a| attribute_to_time(a.unwrap.attributes[:published_at]) }.reverse
+        unpublished_posts = unpublished_posts.sort_by { |p| attribute_to_time(p.unwrap.attributes[:updated_at]) }.reverse
+        published_posts = published_posts.sort_by { |p| attribute_to_time(p.unwrap.attributes[:published_at]) }.reverse
 
         unpublished_posts + published_posts
       end
 
       if @items.frozen?
-        @sorted_blog_post_items ||= blk.call
+        @sorted_weblog_items ||= blk.call
       else
         blk.call
       end
     end
 
     # Relies upon Rules preprocessing to set the `:is_hidden` attribute.
-    def published_blog_posts
-      blk = -> { sorted_blog_posts.reject { |a| a.unwrap.attributes[:is_hidden] } }
+    def published_weblog
+      blk = -> { sorted_weblog.reject { |p| p.unwrap.attributes[:is_hidden] } }
       if @items.frozen?
-        @published_blog_post_items ||= blk.call
-      else
-        blk.call
+        @published_weblog_items ||= blk.call
       end
     end
 
     def authors(posts = nil)
-      posts ||= blog_posts
+      posts ||= published_weblog
       authors = Set.new
       posts.each do |post|
         author_name = post.unwrap.attributes[:author_name]
@@ -56,13 +56,6 @@ module LifePreserver
         authors << author_name.to_s
       end
       authors.to_a
-    end
-
-    #
-    # Create a link for the author of this page
-    #
-    def link_for_author(author, rel_tag: true)
-      %(<a href="#{@config[:blog][:authors_url]}/#{h author.to_slug}/" title="Articles by #{h author}"#{' rel="author"' if rel_tag}>#{h author}</a>)
     end
 
     def link_for_authorlist(author)
@@ -76,7 +69,7 @@ module LifePreserver
     # @param [Enumerable] posts the posts to filter
     #
     def posts_by_author(author_name, posts = nil)
-      posts ||= published_blog_posts
+      posts ||= published_weblog
       posts.select { |post| post.unwrap.attributes[:author_name] == author_name }
     end
 
@@ -87,7 +80,7 @@ module LifePreserver
     # @param [Enumerable] posts the posts to filter
     #
     def posts_by_year(year, posts = nil)
-      posts ||= published_blog_posts
+      posts ||= published_weblog
       posts.select { |post| post.unwrap.attributes.key?(:published_at) && post.unwrap.attributes.fetch(:published_at).year == year }
     end
 
@@ -95,16 +88,8 @@ module LifePreserver
       %(<a rel="archives" href="#{@config[:blog][:archives_url]}/#{h year.to_s}/" title="Articles written in #{h year.to_s}">#{h year.to_s}</a>)
     end
 
-    def link_to_if_published(post, attributes = {})
-      if published_blog_posts.include?(post)
-        link_to(post[:short_title] || post[:title], post, attributes)
-      else
-        %(<span class="title">#{post[:short_title] || post[:title]}</span>)
-      end
-    end
-
     def archive_years(posts = nil)
-      posts ||= published_blog_posts
+      posts ||= published_weblog
       posts
         .select { |post| post.unwrap.attributes.key?(:published_at) }
         .map { |post| post.unwrap.attributes.fetch(:published_at).year }
@@ -129,29 +114,26 @@ module LifePreserver
       summary << %(<p class="readmore">#{link}</p>)
     end
 
-    def article_id(article)
-      article[:article_id] || md5(article[:title].to_slug)
-    end
-
-    # Creates in-memory author pages from partial: layouts/author.html
-    def generate_author_pages(item_set)
+    # Creates in-memory author pages from partial: layouts/blog/author.html
+    def generate_author_pages(item_set = nil)
+      item_set ||= published_weblog
       authors(item_set).each do |author|
         @items.create(
           %(<%= render('/blog/author.*', author: '#{author}') %>),
-          { title: "Articles by #{author}", kind: 'author-page', is_hidden: true, description: "All posts written by #{author}" },
+          { title: "Weblog postings by #{author}", kind: 'author-page', is_hidden: true, description: "All posts written by #{author}" },
           "#{@config[:static_root]}#{@config[:blog][:authors_url]}/#{author.to_slug}/index.erb",
           binary: false,
         )
       end
     end
 
-    # Creates in-memory blog archive pages from partial:
-    # layouts/blog_archive.html
-    def generate_blog_archives(item_set)
+    # Creates in-memory blog archive pages from partial: layouts/blog/archive.html
+    def generate_blog_archives(item_set = nil)
+      item_set ||= published_weblog
       archive_years(item_set).each do |year|
         @items.create(
           %(<%= render('/blog/archive.*', year: #{year}) %>),
-          { title: "Articles from #{year}", kind: 'archive-page', is_hidden: true, description: "All posts written in #{year}" },
+          { title: "Weblog postings from #{year}", kind: 'archive-page', is_hidden: true, description: "All posts written in #{year}" },
           "#{@config[:static_root]}#{@config[:blog][:archives_url]}/#{year}/index.erb",
           binary: false,
         )
