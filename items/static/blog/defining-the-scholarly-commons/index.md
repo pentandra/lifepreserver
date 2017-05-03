@@ -12,19 +12,19 @@ tags:
 ---
 
 Almost two years ago, FORCE11 received a grant to try to answer the question,
-_are we ready to define the Scholarly Commons?_ Our intention was to design a
-new system of scholarly communication from scratch as a system explicitly
-designed for machine-based access and networked scholarship. I was invited to
-be on the steering committee of a working group around this program, and we
-held two (and a half) workshops to try to gather consensus on this topic with
-the hopes of answering this question in the affirmative. But perhaps out of
-fear that few would adopt a new system of scholarly communication if it looked
-too different from our current system, we have yet to approach some fundamental
+_are we ready to define the Scholarly Commons?_ I was invited to be on the
+steering committee of a working group around this program, and we held two (and
+a half) workshops to try to gather consensus on this topic with the hopes of
+answering this question in the affirmative. Our intention was to design a new
+system of scholarly communication from scratch as a system explicitly designed
+for machine-based access and networked scholarship. But perhaps out of fear
+that few would adopt a new system of scholarly communication if it looked too
+different from our current system, we have yet to approach some fundamental
 questions and define what it is that we're really talking about.
 
-It's easy in a committee or group setting for dominant voices or agendas, even
-if well-intentioned, to shape a discussion in a way that is not representative
-of the group, especially when confronted with the need to get things done. In a
+It's easy in a group setting for dominant voices or agendas, even if
+well-intentioned, to shape a discussion in a way that is not representative of
+the group, especially when confronted with the need to get things done. In a
 way, this is the very problem we are trying to address with the Scholarly
 Commons.
 
