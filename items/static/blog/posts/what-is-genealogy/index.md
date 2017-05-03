@@ -1,7 +1,7 @@
 ---
 title: What Is Genealogy?
 description: A fresh look at the thing we call genealogy.
-kind: article
+kind: essay
 author_name: Chris Chapman
 created_at: 2014-09-27
 updated_at: 2017-04-03

@@ -10,7 +10,6 @@ tags:
   - Holism
   - Joy
   - Open Access
-  - Essay
   - Open Research
   - Opinionated
   - Enlightenment
