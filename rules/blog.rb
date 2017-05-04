@@ -24,7 +24,7 @@ compile '/static/{tags,authors,archives}/**/*' do
   filter :html5small if @config[:production]
 end
 
-# Blog postings
+# Weblog postings
 
 compile '/static/blog/posts/**/*.md' do
   filter :erb, @config[:erb]
