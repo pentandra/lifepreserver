@@ -1,6 +1,6 @@
-class RobustLinks < Nanoc::Filter
+class RobustAnchors < Nanoc::Filter
 
-  identifier :robust_links
+  identifier :robust_anchors
 
   requires 'nokogiri'
 

@@ -11,8 +11,8 @@ compile '/static/articles/*/*.md' do
   filter :absolutify_paths, type: :html
   filter :spellchecker, type: :html
   filter :abbreviate, type: :html
-  snapshot :pre_robust_links
-  filter :robust_links
+  snapshot :pre_robust_anchors
+  filter :robust_anchors
   layout '/articles/default.*'
   filter :rubypantsunicode
   filter :cache_buster if @config[:production]
