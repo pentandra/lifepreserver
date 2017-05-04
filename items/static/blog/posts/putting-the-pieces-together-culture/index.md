@@ -2,7 +2,7 @@
 title: "Putting the Pieces Together: Culture"
 description: >
   A tense convolution of thoughts from many perspectives, and a great choice.
-kind: article
+kind: essay
 author_name: Chris Chapman
 created_at: 2016-09-29
 updated_at: 2016-10-12
@@ -13,7 +13,6 @@ tags:
   - Connections
   - FORCE11
   - Opinionated
-  - Essay
 has_media: true
 ---
 

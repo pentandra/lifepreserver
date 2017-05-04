@@ -1,0 +1,39 @@
+<% render('/default.*') do %>
+  <article class="group h-entry" prefix="<%= prefix_mappings_for(:sioct) %>" resource="#vignette" typeof="cc:Work schema:BlogPosting sioct:BlogPost ctag:TaggedContent" property="schema:mainEntity">
+    <header class="section">
+      <h1 class="p-name" property="dc:title schema:headline"><%= @item[:title] %></h1>
+      <div class="group meta">
+        <div class="bd up">
+          <ul class="none">
+            <li>By <%= link_for_author(@item[:author_name]) %></li>
+            <li>
+              <% if @item[:published_at] %>
+                <% if @item[:published_at] == @item[:created_at] %>
+                  Written and published on <time class="dt-published" property="dc:created schema:dateCreated schema:datePublished" datetime="<%= simple_date(@item[:created_at]) %>"><%= fancy_date(@item[:created_at]) %></time>
+                <% else %>
+                  Written starting <time property="dc:created schema:dateCreated" datetime="<%= simple_date(@item[:created_at]) %>"><%= fancy_date(@item[:created_at]) %></time> and published on <time class="dt-published" property="schema:datePublished" datetime="<%= simple_date(@item[:published_at]) %>"><%= fancy_date(@item[:published_at]) %></time>
+                <% end %>
+              <% else%>
+                Written starting <time property="dc:created" datetime="<%= simple_date(@item[:created_at]) %>"><%= fancy_date(@item[:created_at]) %></time> and not yet published
+              <% end %>
+            </li>
+            <% if @item[:updated_at] > @item[:created_at] %>
+              <li>
+                Last Updated <time class="dt-updated" property="dc:modified schema:dateModified" datetime="<%= simple_date(@item[:updated_at]) %>"><%= fancy_date(@item[:updated_at]) %></time>
+              </li>
+            <% end %>
+          </ul>
+          <meta property="schema:copyrightYear" datatype="xsd:gYear" content="<%= @item[:created_at].year %>" />
+          <link property="rdfa:copy" resource="pentandra-website:license" />
+          <link property="schema:isPartOf sioc:has_container" resource="pentandra-blog:blog" />
+        </div>
+      </div>
+    </header>
+    <div class="bd">
+      <div class="post section e-content" property="schema:articleBody sioc:content" datatype="rdf:HTML">
+        <%= yield %>
+      </div>
+    </div>
+    <%= render('/blog/partials/sidebar.*') %>
+  </article>
+<% end %>

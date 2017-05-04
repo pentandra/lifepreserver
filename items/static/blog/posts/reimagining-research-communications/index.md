@@ -1,7 +1,7 @@
 ---
 title: Reimagining Research Communications
 description: What if we could start over from scratch?
-kind: article
+kind: blogpost
 author_name: Chris Chapman
 created_at: 2016-04-07
 updated_at: 2016-08-31

@@ -1,0 +1,13 @@
+<div property="schema:itemListElement" typeof="schema:ListItem" class="noted section">
+  <meta property="schema:position" content="<%= "#{position + 1}" %>" />
+  <article property="schema:item" resource="<%= "#{path_to(item)}##{item[:kind]}" %>" typeof="schema:Article" class="excerpt">
+    <div class="bd">
+      <h2 class="bigger">
+        <a property="schema:url" rel="bookmark" title="View full content" href="<%= path_to(item) %>"><span property="dc:title schema:name"><%= item[:title] %></span></a>
+      </h2>
+      <p property="schema:description"><%= item[:description] %></p>
+    </div>
+    <%= render('/blog/partials/published_at.*', item: item) %>
+    <link property="rdfa:copy" resource="pentandra-website:license" />
+  </article>
+</div>

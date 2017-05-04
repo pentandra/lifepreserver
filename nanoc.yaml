@@ -129,9 +129,9 @@ environments:
     server:
       name: 'localhost'
       pid_file: 'logs/nginx.pid'
+      error_log: 'stderr info'
       port: 3125
       port_tls: 4125
-      code_cache: 'off'
       tls_certificate: 'etc/certs/server.crt'
       tls_certificate_key: 'etc/certs/server.key'
       tls_dhparam: 'etc/certs/dhparams.pem'
@@ -157,9 +157,9 @@ environments:
     server:
       name: 'pentandra.com'
       pid_file: '/var/run/nginx.pid'
+      error_log: 'logs/error.log'
       port: 80
       port_tls: 443
-      code_cache: 'on'
       platform: 'linux'
       tls_certificate: '/etc/letsencrypt/live/pentandra.com/fullchain.pem'
       tls_certificate_key: '/etc/letsencrypt/live/pentandra.com/privkey.pem'

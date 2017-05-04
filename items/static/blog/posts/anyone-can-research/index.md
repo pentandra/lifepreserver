@@ -1,7 +1,7 @@
 ---
 title: Anyone Can Research
 description: The culture of scholarship is changing.
-kind: article
+kind: blogpost
 author_name: Chris Chapman
 created_at: 2015-12-23
 updated_at: 2015-12-23
@@ -10,7 +10,6 @@ tags:
   - Holism
   - Joy
   - Open Access
-  - Essay
   - Open Research
   - Opinionated
   - Enlightenment

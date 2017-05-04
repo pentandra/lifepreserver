@@ -9,7 +9,7 @@ description: A collection of our thoughts about Pentandra and the future of rese
     <link property="schema:isPartOf" resource="pentandra-website:website" />
   </header>
 
-  <div property="schema:hasPart" resource="pentandra-blog:articles" typeof="schema:ItemList">
+  <div property="schema:hasPart" resource="pentandra-blog:posts" typeof="schema:ItemList">
     <link property="schema:itemListOrder" resource="schema:itemListOrderDescending" />
     <meta property="schema:numberOfItems" content="<%= h published_weblog.length %>" datatype="schema:Integer" />
     <% published_weblog.each_with_index do |post, index| %>

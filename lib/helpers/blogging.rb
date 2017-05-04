@@ -1,11 +1,11 @@
 module LifePreserver
   module Blogging
     def blog_post?(item)
-      item[:kind] == 'message'
+      item.identifier =~ %r{^/static/blog/posts/.*\.(md|html)}
     end
 
     def blog_posts
-      blk = -> { @items.find_all('/static/blog/posts/**/*.md') }
+      blk = -> { @items.find_all('/static/blog/posts/**/*.{md,html}') }
       if @items.frozen?
         @blog_post_items ||= blk.call
       else

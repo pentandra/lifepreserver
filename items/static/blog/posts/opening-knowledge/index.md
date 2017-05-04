@@ -1,14 +1,13 @@
 ---
 title: Opening Knowledge
 description: We need true open access to knowledge.
-kind: article
+kind: essay
 author_name: Chris Chapman
 created_at: 2015-09-18
 updated_at: 2016-03-05
 published_at: 2015-10-01
 tags:
   - Connections
-  - Essay
   - Joy
   - Open Research
   - Research Cases

@@ -1,7 +1,7 @@
 ---
 title: Heading to OAI8
 description: We're taking a poster to CERN!
-kind: article
+kind: blogpost
 article_id: heading-to-oai8
 author_name: Chris Chapman
 created_at: 2013-04-29

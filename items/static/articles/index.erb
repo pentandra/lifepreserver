@@ -1,0 +1,19 @@
+---
+title: Formal Articles
+description: A collection of formal articles about the future of research.
+---
+<div class="group">
+
+  <header>
+    <h1>Formal Articles</h1>
+  </header>
+
+  <div property="schema:hasPart" resource="pentandra-website:articles" typeof="schema:ItemList">
+    <link property="schema:itemListOrder" resource="schema:itemListOrderDescending" />
+    <meta property="schema:numberOfItems" content="<%= h published_articles.length %>" datatype="schema:Integer" />
+    <% published_articles.each_with_index do |article, index| %>
+      <%= render('/articles/partials/summary.*', item: article, position: index + 1) %>
+    <% end %>
+  </div>
+
+</div>

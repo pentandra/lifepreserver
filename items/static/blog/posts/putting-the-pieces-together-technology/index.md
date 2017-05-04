@@ -2,7 +2,7 @@
 title: "Putting the Pieces Together: Technology"
 description: >
   What needs to be enabled by technology to allow for scholarly commoning.
-kind: article
+kind: essay
 author_name: Chris Chapman
 created_at: 2017-02-16
 updated_at: 2017-05-01
@@ -15,7 +15,6 @@ tags:
   - FORCE11
   - Technology
   - Open Standards
-  - Essay
   - Opinionated
   - Review
 ---

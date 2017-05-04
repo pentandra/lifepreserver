@@ -1,7 +1,7 @@
 ---
 title: "Introducing Research Cases"
 description: Some background motivations for research cases.
-kind: article
+kind: essay
 author_name: Chris Chapman
 created_at: 2015-01-14
 updated_at: 2015-03-02
@@ -9,7 +9,6 @@ published_at: 2015-02-14
 tags:
   - Citizen Science
   - Open Research
-  - Essay
   - Republic of Letters
   - Phil Trans
   - Open Standards
