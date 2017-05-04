@@ -36,10 +36,10 @@ foundations upon which we are building our ideas and company.
 
 ---
 
-<div property="schema:image" typeof="schema:ImageObject" class="aside img">
+<figure property="schema:sharedContent" typeof="schema:ImageObject" class="aside img">
   <link property="schema:representativeOfPage" resource="schema:True" />
   <img property="schema:contentUrl" class="static" alt="Open Access logo" data-no-retina src="open_access.jpg" />
-</div>
+</figure>
 
 I have been thinking a lot about open access[^oa-overview] lately and how it
 relates to what we are trying to accomplish at Pentandra. I want to discuss
