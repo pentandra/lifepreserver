@@ -193,14 +193,6 @@ li p {
   text-decoration: none;
 }
 
-a.permalink {
-  color: desaturate(lighten($link-color, 50%), 20%);
-
-  &:hover {
-    text-decoration: none;
-  }
-}
-
 //
 // Classes
 
@@ -795,6 +787,24 @@ main {
 
 .persistent-links input {
   cursor: pointer;
+}
+
+a.anchor {
+  position: absolute;
+  margin-left: 0.25em;
+  text-decoration: none;
+  font-size: 75%;
+  visibility: hidden;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover, p:hover, li:hover, figure:hover {
+  a.anchor {
+    visibility: visible;
+  }
 }
 
 //
