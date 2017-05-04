@@ -23,7 +23,7 @@ class IdentifierLinks < Nanoc::Filter
 
       # Add link to figcaption
       figcaption = figure.css('figcaption').first
-      figcaption << link_to_figure(figure_id)
+      figcaption << link_to_figure(figure_id) if figcaption
     end
 
     doc.css('p').each_with_index do |paragraph, index|
