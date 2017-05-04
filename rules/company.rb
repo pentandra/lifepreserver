@@ -10,6 +10,7 @@ compile %r{/static/company/benefit-reports/\d{4}/index\.md} do
   ]
   filter :spellchecker, type: :html
   filter :abbreviate, type: :html
+  filter :identifier_links
   layout '/benefit_reports/default.*'
   filter :rubypantsunicode
   filter :cache_buster if @config[:production]

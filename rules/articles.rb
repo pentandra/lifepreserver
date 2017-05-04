@@ -9,9 +9,10 @@ compile '/static/articles/*/*.md' do
     :smart,
   ]
   filter :absolutify_paths, type: :html
-  filter :identifier_links
   filter :spellchecker, type: :html
   filter :abbreviate, type: :html
+  snapshot :pre_identifier_links
+  filter :identifier_links
   layout '/articles/default.*'
   filter :rubypantsunicode
   filter :cache_buster if @config[:production]

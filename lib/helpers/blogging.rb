@@ -42,7 +42,7 @@ module LifePreserver
       end
     end
 
-    def post_summary(post_rep, read_more_text: 'Read more ⇢', separator: '<!--MORE-->')
+    def post_summary(post_rep, snapshot: nil, read_more_text: 'Read more ⇢', separator: '<!--MORE-->')
       post_rep = case post_rep
                  when Nanoc::ItemRepView
                    post_rep
@@ -52,7 +52,7 @@ module LifePreserver
                    raise ArgumentError, "Cannot summarize #{item_rep.inspect} (expected an item rep or an item, not a #{item_rep.class.name})"
                  end
 
-      summary, body = post_rep.compiled_content.split(separator)
+      summary, body = post_rep.compiled_content(snapshot: snapshot).split(separator)
       return summary unless body
 
       link = link_to(post_rep.item.fetch(:read_more, read_more_text), post_rep.item, global: post_rep.name != :default, class: 'readmore', title: 'Read the full article')
