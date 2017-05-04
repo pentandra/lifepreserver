@@ -9,6 +9,7 @@ compile '/static/articles/*/*.md' do
     :smart,
   ]
   filter :absolutify_paths, type: :html
+  filter :identifier_links
   filter :spellchecker, type: :html
   filter :abbreviate, type: :html
   layout '/articles/default.*'
