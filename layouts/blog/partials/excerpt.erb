@@ -8,7 +8,7 @@
       </h2>
       <p class="em">By <%= link_for_author(item[:author_name]) %></p>
     </header>
-    <%= post_summary(item, snapshot: :pre_identifier_links) %>
+    <%= post_summary(item, snapshot: :pre_robust_links) %>
   </div>
   <%= render('/blog/partials/published_at.*', item: item) %>
   <footer class="aside section">

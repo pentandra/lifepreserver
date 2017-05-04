@@ -1,6 +1,6 @@
-class IdentifierLinks < Nanoc::Filter
+class RobustLinks < Nanoc::Filter
 
-  identifier :identifier_links
+  identifier :robust_links
 
   requires 'nokogiri'
 
@@ -31,7 +31,9 @@ class IdentifierLinks < Nanoc::Filter
       paragraph << link_to_paragraph(paragraph['id'])
     end
 
-    doc.css(':not(.footnotes) > * > li').each_with_index do |list_item, index|
+    doc.css('li').each_with_index do |list_item, index|
+      next if list_item.children.none? { |child| child.text? }
+
       list_item['id'] ||= robust_anchor(list_item, index)
       list_item << link_to_list_item(list_item['id'])
     end

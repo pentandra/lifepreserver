@@ -38,8 +38,8 @@ compile '/static/blog/posts/**/*.md' do
   filter :absolutify_paths, type: :html
   filter :spellchecker, type: :html
   filter :abbreviate, type: :html
-  snapshot :pre_identifier_links
-  filter :identifier_links
+  snapshot :pre_robust_links
+  filter :robust_links
   layout "/blog/#{@item[:kind]}.*"
   filter :rubypantsunicode
   filter :cache_buster if @config[:production]
