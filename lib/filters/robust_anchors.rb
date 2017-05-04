@@ -5,6 +5,8 @@ class RobustAnchors < Nanoc::Filter
   requires 'nokogiri'
 
   def run(content, params = {})
+    links = params.fetch(:links, true)
+
     klass = Nokogiri::HTML
     doc = content =~ /<html[\s>]/ ? klass.parse(content) : klass.fragment(content)
 
@@ -14,7 +16,7 @@ class RobustAnchors < Nanoc::Filter
 
       # Add link to header
       section_header = section.css((1..6).map { |i| "h#{i}" }.join(', ')).first
-      section_header << link_to_section(section_id)
+      section_header << link_to_element(section_id, message_for(section)) if links
     end
 
     doc.css('figure').each do |figure|
@@ -23,19 +25,14 @@ class RobustAnchors < Nanoc::Filter
 
       # Add link to figcaption
       figcaption = figure.css('figcaption').first
-      figcaption << link_to_figure(figure_id) if figcaption
+      figcaption << link_to_element(figure_id, message_for(figure)) if figcaption && links
     end
 
-    doc.css('p').each_with_index do |paragraph, index|
-      paragraph['id'] ||= robust_anchor(paragraph, index)
-      paragraph << link_to_paragraph(paragraph['id'])
-    end
+    doc.css('p li dt dd').each_with_index do |element, index|
+      next if element.children.none? { |child| child.text? }
 
-    doc.css('li').each_with_index do |list_item, index|
-      next if list_item.children.none? { |child| child.text? }
-
-      list_item['id'] ||= robust_anchor(list_item, index)
-      list_item << link_to_list_item(list_item['id'])
+      element['id'] ||= robust_anchor(element, index)
+      element << link_to_element(element['id'], message_for(element)) if links
     end
 
     doc.to_s
@@ -48,23 +45,21 @@ class RobustAnchors < Nanoc::Filter
     "#{element.name}[#{index}]"
   end
 
-  def link_to_element(id, message = 'Link to this element')
+  def message_for(element)
+    elem_name = case element.name
+                when 'section' then 'section'
+                when 'figure' then 'figure'
+                when 'p' then 'paragraph'
+                when 'li' then 'list item'
+                when 'dt' then 'description term'
+                when 'dd' then 'description definition'
+                else 'element'
+                end
+
+    "Link to this #{elem_name}"
+  end
+
+  def link_to_element(id, message)
     %(<a class="anchor" href="##{id}" title="#{message}"><span class="icon-link"></span></a>)
-  end
-
-  def link_to_section(id)
-    link_to_element(id, 'Link to this section')
-  end
-
-  def link_to_paragraph(id)
-    link_to_element(id, 'Link to this paragraph')
-  end
-
-  def link_to_list_item(id)
-    link_to_element(id, 'Link to this list item')
-  end
-
-  def link_to_figure(id)
-    link_to_element(id, 'Link to this figure')
   end
 end
