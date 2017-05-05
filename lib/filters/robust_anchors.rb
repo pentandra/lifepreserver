@@ -4,6 +4,12 @@ class RobustAnchors < Nanoc::Filter
 
   requires 'nokogiri'
 
+  # Create robust anchors and links for HTML documents.
+  #
+  # Currently uses the same robust anchoring algorithm as the New York Times
+  # Emphasis project.
+  #
+  # @return [String] The robustly anchored content
   def run(content, params = {})
     with_links = params.fetch(:with_links, true)
 
@@ -15,8 +21,10 @@ class RobustAnchors < Nanoc::Filter
       next if section_id.nil?
 
       # Add link to header
-      section_header = section.css((1..6).map { |i| "h#{i}" }.join(', ')).first
-      section_header << link_to_element(section_id, message_for(section)) if with_links
+      if with_links
+        section_header = section.at_css((1..6).map { |i| "h#{i}" }.join(', '))
+        section_header << link_to_element(section_id, message_for(section_id, 'section')) if section_header
+      end
     end
 
     doc.css('figure').each do |figure|
@@ -24,15 +32,21 @@ class RobustAnchors < Nanoc::Filter
       next if figure_id.nil?
 
       # Add link to figcaption
-      figcaption = figure.css('figcaption').first
-      figcaption << link_to_element(figure_id, message_for(figure)) if figcaption && with_links
+      if with_links
+        figcaption = figure.at_css('figcaption')
+        figcaption << link_to_element(figure_id, message_for(figure_id, 'figure')) if figcaption
+      end
     end
 
     doc.css('p, li, dt, dd').each_with_index do |element, index|
-      next if element.children.none? { |child| child.text? }
+      #next if element.children.all? { |child| child.block? }
 
       element['id'] ||= robust_anchor(element, index)
-      element << link_to_element(element['id'], message_for(element)) if with_links
+
+      if with_links
+        element_desc = element.description
+        element << link_to_element(element['id'], message_for(element['id'], element_desc.description))
+      end
     end
 
     doc.to_s
@@ -45,18 +59,8 @@ class RobustAnchors < Nanoc::Filter
     "#{element.name}[#{index}]"
   end
 
-  def message_for(element)
-    elem_name = case element.name
-                when 'section' then 'section'
-                when 'figure' then 'figure'
-                when 'p' then 'paragraph'
-                when 'li' then 'list item'
-                when 'dt' then 'description term'
-                when 'dd' then 'description definition'
-                else 'element'
-                end
-
-    "Link to #{elem_name} ##{element['id']}"
+  def message_for(id, description)
+    "Link to #{description.strip} ##{id}"
   end
 
   def link_to_element(id, message)
