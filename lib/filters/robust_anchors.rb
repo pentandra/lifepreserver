@@ -56,7 +56,7 @@ class RobustAnchors < Nanoc::Filter
                 else 'element'
                 end
 
-    "Link to this #{elem_name}"
+    "Link to #{elem_name} ##{element['id']}"
   end
 
   def link_to_element(id, message)
