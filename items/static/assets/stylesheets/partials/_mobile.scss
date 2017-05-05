@@ -9,13 +9,15 @@ px      68    160    252    */
 $less-outer-margin: 34px;
 
 @media only screen and (max-width: 767px) {
-
   //
   // HTML Elements
 
-  h1 { 
+  h1 {
     font-size: 47px;
-    line-height: 68px; // 1.61/2 * .huge line-height
+
+    // 1.61/2 * .huge line-height
+    line-height: 68px;
+
     letter-spacing: normal;
   }
 
@@ -23,17 +25,18 @@ $less-outer-margin: 34px;
     line-height: 39px;
   }
 
-  blockquote, .bq { 
+  blockquote, .bq {
     margin: 0 0 $base-line-height;
   }
 
   //
-  // 
+  //
 
   .content {
-    @include grid(3); 
+    @include grid(3);
+
     padding: 0 $less-outer-margin;
-  } 
+  }
 
   .ext {
     margin-left: -$less-outer-margin;
@@ -54,9 +57,9 @@ $less-outer-margin: 34px;
     .inner {
       width: 100%;
       padding-right: $less-gutter-width / 2;
+
       @include box-sizing(border-box);
     }
-
   }
 
   .banner {
@@ -95,6 +98,7 @@ $less-outer-margin: 34px;
 
   .static {
     display: block;
+
     @include grid(3);
   }
 
@@ -105,7 +109,7 @@ $less-outer-margin: 34px;
   .excerpt .pubdate {
     padding-top: 0;
   }
-  
+
   .normal.flush {
     line-height: $base-line-height;
   }
@@ -113,7 +117,7 @@ $less-outer-margin: 34px;
   .numbered {
     #{append-selector("h2, h3, h4, h5, h6", ":before")} {
       position: static;
-      margin: 0 (1em/4) 0 0;
+      margin: 0 (1em / 4) 0 0;
     }
   }
 
@@ -139,7 +143,6 @@ $less-outer-margin: 34px;
   }
 
   .montage {
-
     .aside {
       float: none;
     }
@@ -158,21 +161,21 @@ $less-outer-margin: 34px;
   .theteam {
     $theteam-height: $base-line-height * 7;
     $theteam-image-height: 168px;
+
     @include grid(3);
+
     height: $theteam-image-height;
     margin-top: $theteam-height - $theteam-image-height;
-    background-image: url('/images/team-252x336.jpg');
+    background-image: url("/images/team-252x336.jpg");
     background-position: 0 0;
     position: static;
 
     &:hover {
       background-position: 0 #{-$theteam-image-height};
     }
-
   }
 
   #banner {
-
     .logotype {
       float: none;
     }
@@ -197,7 +200,6 @@ $less-outer-margin: 34px;
   }
 
   .contentinfo {
-
     .bd .aside {
       width: auto;
     }
@@ -211,33 +213,37 @@ $less-outer-margin: 34px;
     }
   }
 
-
   //
   // Background-image classes
-  
+
   .geungle-logo {
     $logo-height: 74px;
+
     @include grid(3);
+
     height: $logo-height;
-    background-image: url('/images/geungle-logo_3col.png');
-    padding-bottom: ($base-line-height * 3) - $logo-height;
+    background-image: url("/images/geungle-logo_3col.png");
+    padding-bottom: $base-line-height * 3 - $logo-height;
   }
 
   .process {
     @include grid(3);
+
     height: 240px;
-    background-image: url('/images/research-process_3col.png');
+    background-image: url("/images/research-process_3col.png");
     margin-top: 0;
   }
 
   .zeugma {
     @include grid(3);
-    height: 252px; //197px;
-    background-image: url('/images/zeugma_3col.jpg?v2');
+
+    //197px;
+    height: 252px;
+
+    background-image: url("/images/zeugma_3col.jpg?v2");
   }
 
   .zeugma-collab {
     margin-top: 0;
   }
-    
 }

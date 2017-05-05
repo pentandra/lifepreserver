@@ -9,7 +9,6 @@ px      68    160    252    344    436    528    620    712    */
 $less-outer-margin: 28px;
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-
   // 
   // HTML elements
 
@@ -17,9 +16,10 @@ $less-outer-margin: 28px;
   //
 
   .content {
-    @include grid(8); 
+    @include grid(8);
+
     padding: 0 $less-outer-margin;
-  } 
+  }
 
   .ext {
     margin-left: -$less-outer-margin;
@@ -45,6 +45,7 @@ $less-outer-margin: 28px;
     .inner {
       width: 100%;
       padding-right: $less-gutter-width / 2;
+
       @include box-sizing(border-box);
     }
   }
@@ -57,7 +58,6 @@ $less-outer-margin: 28px;
   }
 
   .aside {
-
     .banner {
       margin-left: -$less-outer-margin;
       padding-left: $less-outer-margin;
@@ -73,6 +73,7 @@ $less-outer-margin: 28px;
 
   .bl {
     @include grid(6);
+
     float: none;
     margin: 0 auto;
 
@@ -83,7 +84,6 @@ $less-outer-margin: 28px;
     .bd {
       @include grid(4);
     }
-
   }
 
   .static {
@@ -92,12 +92,13 @@ $less-outer-margin: 28px;
 
   //
   // Layout classes
-  
+
   $theteam-height: $base-line-height * 9;
   $theteam-image-height: 229px;
 
   .theteam {
     @include grid(4);
+
     height: $theteam-image-height;
     margin-top: $theteam-height - $theteam-image-height;
     background-size: 100%;
@@ -106,7 +107,7 @@ $less-outer-margin: 28px;
       background-position: 0 #{-$theteam-image-height};
     }
   }
-    
+
   .montage .bd {
     @include grid(4);
   }
@@ -115,6 +116,7 @@ $less-outer-margin: 28px;
   // Background-image classes
   .geungle-logo {
     @include grid(5);
+
     height: 130px;
     background-size: 100%;
   }
@@ -124,7 +126,6 @@ $less-outer-margin: 28px;
   }
 
   .question {
-
     &:before {
       left: 140px;
     }
@@ -132,6 +133,7 @@ $less-outer-margin: 28px;
 
   .zeugma {
     @include grid(5);
+
     background-size: 100%;
   }
 
@@ -139,9 +141,8 @@ $less-outer-margin: 28px;
   .icons .normal {
     display: none;
   }
-    
-  .contentinfo {
 
+  .contentinfo {
     .contact {
       @include grid(2);
     }
@@ -160,9 +161,9 @@ $less-outer-margin: 28px;
 
       .menu {
         margin-left: $less-gutter-width;
+
         @include grid(3);
       }
     }
   }
-
 }

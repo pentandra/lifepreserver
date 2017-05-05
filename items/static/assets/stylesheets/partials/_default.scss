@@ -17,12 +17,14 @@ $less-outer-margin: 48px;
 // Block structures
 
 .content {
-  @include grid(10); 
+  @include grid(10);
+
   padding: 0 $less-outer-margin;
 }
 
 .aside {
   @include grid(3);
+
   float: left;
 
   // ? move this into the parent class?
@@ -35,6 +37,7 @@ $less-outer-margin: 48px;
     padding-right: 0;
     margin-left: -$less-outer-margin;
     padding-left: $less-outer-margin;
+
     @include border-radius(0 $default-radius $default-radius 0);
 
     .fancy {
@@ -49,7 +52,6 @@ $less-outer-margin: 48px;
       padding-left: $less-gutter-width;
     }
   }
-
 }
 
 .banner {
@@ -57,6 +59,7 @@ $less-outer-margin: 48px;
   padding-right: $less-outer-margin;
   margin-left: -($less-gutter-width + $less-column-width);
   padding-left: $less-gutter-width + $less-column-width;
+
   @include border-radius($default-radius 0 0 $default-radius);
 
   .fancy {
@@ -69,8 +72,9 @@ $less-outer-margin: 48px;
 
 .bd {
   @include grid(7);
+
   float: right;
-  
+
   .aside {
     margin-left: $less-gutter-width;
     float: right;
@@ -83,13 +87,13 @@ $less-outer-margin: 48px;
   .other {
     margin-right: $less-gutter-width;
     float: left;
+
     @include grid(3);
   }
-    
+
   .inner {
     @include grid(4);
   }
-
 }
 
 .inner, .aside {
@@ -108,6 +112,7 @@ $less-outer-margin: 48px;
 .menu3 {
   li {
     @include grid(3);
+
     margin-right: 65px;
 
     &.last {
@@ -119,6 +124,7 @@ $less-outer-margin: 48px;
 .bd .menu3 {
   li {
     @include grid(2);
+
     margin-right: $less-gutter-width;
   }
 }
@@ -131,8 +137,10 @@ $less-outer-margin: 48px;
 .numbered {
   #{append-selector("h2, h3, h4, h5, h6", ":before")} {
     position: absolute;
+
     @include grid(3);
-    margin-left: -(($less-column-width * 3) + ($less-gutter-width * 3));
+
+    margin-left: -($less-column-width * 3 + $less-gutter-width * 3);
     text-align: right;
   }
 }
@@ -156,23 +164,22 @@ $less-outer-margin: 48px;
 
   .aside {
     @include grid(2);
+
     margin-right: $less-gutter-width;
   }
 }
-
 
 //
 // Layout classes
 
 .excerpt {
-
   // Line up the published date with the article title horizontally
   .pubdate {
     $offset: 2px;
 
     padding-top: $base-line-height - $offset;
     margin-bottom: $base-line-height / 2 + $offset;
-  
+
     .big {
       line-height: $base-line-height * 1.5;
     }
@@ -180,13 +187,13 @@ $less-outer-margin: 48px;
 }
 
 .montage {
-
   .aside {
     float: right;
   }
 
   .bd {
     float: left;
+
     @include grid(6);
   }
 }
@@ -195,16 +202,19 @@ $theteam-height: $base-line-height * 12;
 
 .teamintro {
   @include grid(4);
+
   min-height: $theteam-height;
   padding: $base-line-height 0;
 }
 
 .theteam {
   $theteam-image-height: 290px;
+
   @include grid(5);
+
   height: $theteam-image-height;
   margin-top: $theteam-height - $theteam-image-height;
-  background: transparent right bottom no-repeat url('/images/team-436x580.jpg');
+  background: transparent right bottom no-repeat url("/images/team-436x580.jpg");
   background-position: 0 0;
   position: absolute;
   bottom: 0;
@@ -220,32 +230,37 @@ $theteam-height: $base-line-height * 12;
 
 .geungle-logo {
   @include grid(7);
+
   height: $base-line-height * 7;
-  background: transparent left top no-repeat url('/images/geungle-logo.png');
+  background: transparent left top no-repeat url("/images/geungle-logo.png");
 }
 
 .aside .geungle-logo {
   $logo-height: 74px;
+
   @include grid(3);
+
   height: $logo-height;
-  background-image: url('/images/geungle-logo_3col.png');
-  padding-bottom: ($base-line-height * 3) - $logo-height;
+  background-image: url("/images/geungle-logo_3col.png");
+  padding-bottom: $base-line-height * 3 - $logo-height;
 }
 
-.logotype { 
+.logotype {
   @include grid(3);
+
   height: $base-line-height * 1.5;
-  background: transparent left top no-repeat url('/images/pentandra-logotype_252x33.png');
+  background: transparent left top no-repeat url("/images/pentandra-logotype_252x33.png");
 }
 
 .rev .logotype, .grab .logotype {
-  background: transparent left top no-repeat url('/images/pentandra-logotype-reverse_252x33.png');
+  background: transparent left top no-repeat url("/images/pentandra-logotype-reverse_252x33.png");
 }
 
 .process {
   @include grid(4);
+
   height: $base-line-height * 12;
-  background: $pentandra-white center center no-repeat url('/images/research-process.png');
+  background: $pentandra-white center center no-repeat url("/images/research-process.png");
   margin-top: -#{$base-line-height};
 }
 
@@ -276,9 +291,10 @@ $theteam-height: $base-line-height * 12;
 
 #fig\3A journey img {
   $image-height: 372px;
+
   height: $image-height;
   width: 204px;
-  margin-bottom: ($base-line-height * 15) - $image-height;
+  margin-bottom: $base-line-height * 15 - $image-height;
 }
 
 #fig\3A phases img {
@@ -286,7 +302,7 @@ $theteam-height: $base-line-height * 12;
 }
 
 #fig\3A processtree img {
-  margin-bottom: ($base-line-height * 9) - 217px;
+  margin-bottom: $base-line-height * 9 - 217px;
 }
 
 .zeugma-collab {
@@ -295,8 +311,9 @@ $theteam-height: $base-line-height * 12;
 
 .zeugma {
   @include grid(6);
+
   height: $base-line-height * 16;
-  background: transparent right center no-repeat url('/images/zeugma.jpg?v2');
+  background: transparent right center no-repeat url("/images/zeugma.jpg?v2");
 }
 
 //
@@ -304,7 +321,6 @@ $theteam-height: $base-line-height * 12;
 //
 
 .contentinfo {
-
   .excerpt h3 {
     display: inline;
   }
@@ -317,8 +333,7 @@ $theteam-height: $base-line-height * 12;
     $border-height: 1px;
 
     h2 {
-      margin: $base-line-height - $border-height 0 $base-line-height;
+      margin: ($base-line-height - $border-height) 0 $base-line-height;
     }
   }
-
 }
