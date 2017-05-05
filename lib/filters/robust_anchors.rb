@@ -25,20 +25,20 @@ class RobustAnchors < Nanoc::Filter
 
       # Add link to figcaption
       figcaption = figure.css('figcaption').first
-      figcaption << link_to_element(figure_id, message_for(figure)) if figcaption && links
+      figcaption << link_to_element(figure_id, message_for(figure)) if figcaption && with_links
     end
 
-    doc.css('p li dt dd').each_with_index do |element, index|
+    doc.css('p, li, dt, dd').each_with_index do |element, index|
       next if element.children.none? { |child| child.text? }
 
       element['id'] ||= robust_anchor(element, index)
-      element << link_to_element(element['id'], message_for(element)) if links
+      element << link_to_element(element['id'], message_for(element)) if with_links
     end
 
     doc.to_s
   end
 
-  private
+  protected
 
   # TODO: Come up with something better.
   def robust_anchor(element, index)
