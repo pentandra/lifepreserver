@@ -5,7 +5,7 @@ class RobustAnchors < Nanoc::Filter
   requires 'nokogiri'
 
   def run(content, params = {})
-    links = params.fetch(:links, true)
+    with_links = params.fetch(:with_links, true)
 
     klass = Nokogiri::HTML
     doc = content =~ /<html[\s>]/ ? klass.parse(content) : klass.fragment(content)
@@ -16,7 +16,7 @@ class RobustAnchors < Nanoc::Filter
 
       # Add link to header
       section_header = section.css((1..6).map { |i| "h#{i}" }.join(', ')).first
-      section_header << link_to_element(section_id, message_for(section)) if links
+      section_header << link_to_element(section_id, message_for(section)) if with_links
     end
 
     doc.css('figure').each do |figure|
