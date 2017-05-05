@@ -1,4 +1,12 @@
 GIT
+  remote: https://github.com/FLEWID-AB/shortly
+  revision: 3401882c1f21f265dab13441c67d01850cf07dff
+  specs:
+    shortly (0.3.6)
+      httparty (= 0.13.0)
+      json (> 1.8.1)
+
+GIT
   remote: https://github.com/cdchapman/ffi-hunspell
   revision: e320f86c67057121cc9e16b1d224e4674e79d70b
   specs:
@@ -16,12 +24,12 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (5.0.2)
+    activesupport (5.1.0)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (~> 0.7)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
-    addressable (2.5.0)
+    addressable (2.5.1)
       public_suffix (~> 2.0, >= 2.0.2)
     adsf (1.2.1)
       rack (>= 1.0.0)
@@ -45,12 +53,12 @@ GEM
     compass-import-once (1.0.5)
       sass (>= 3.2, < 3.5)
     concurrent-ruby (1.0.5)
-    cri (2.7.1)
+    cri (2.8.0)
       colored (~> 1.2)
     ddplugin (1.0.1)
     diff-lcs (1.3)
     docile (1.1.5)
-    domain_name (0.5.20170223)
+    domain_name (0.5.20170404)
       unf (>= 0.0.5, < 1.0.0)
     ebnf (1.1.0)
       rdf (~> 2.0)
@@ -108,10 +116,10 @@ GEM
       multi_xml (>= 0.5.2)
     i18n (0.8.1)
     image_optimizer (1.7.0)
-    json (1.8.1)
-    json-ld (2.1.2)
+    json (1.8.6)
+    json-ld (2.1.3)
       multi_json (~> 1.12)
-      rdf (~> 2.1)
+      rdf (~> 2.2)
     ld-patch (0.3.1)
       ebnf (~> 1.0, >= 1.0.1)
       rdf (~> 2.0)
@@ -155,8 +163,8 @@ GEM
     minitest (5.10.1)
     multi_json (1.12.1)
     multi_xml (0.6.0)
-    nanoc (4.7.3)
-      cri (~> 2.3)
+    nanoc (4.7.9)
+      cri (~> 2.8)
       ddplugin (~> 1.0)
       hamster (~> 3.0)
       ref (~> 2.0)
@@ -177,19 +185,20 @@ GEM
       method_source (~> 0.8.1)
       slop (~> 3.4)
     public_suffix (2.0.5)
-    pygments.rb (1.1.1)
+    pygments.rb (1.1.2)
       multi_json (>= 1.0.0)
     rack (2.0.1)
-    rainbow (2.2.1)
+    rainbow (2.2.2)
+      rake
     rainpress (1.0.1)
     rake (12.0.0)
     rb-fsevent (0.9.8)
     rb-inotify (0.9.8)
       ffi (>= 0.5.0)
-    rdf (2.2.5)
+    rdf (2.2.6)
       hamster (~> 3.0)
       link_header (~> 0.0, >= 0.0.8)
-    rdf-aggregate-repo (2.1.0)
+    rdf-aggregate-repo (2.2.0)
       rdf (~> 2.0)
     rdf-isomorphic (2.0.0)
       rdf (~> 2.0)
@@ -202,12 +211,12 @@ GEM
       rdf-xsd (~> 2.0)
     rdf-n3 (2.1.0)
       rdf (~> 2.0)
-    rdf-rdfa (2.1.1)
+    rdf-rdfa (2.2.0)
       haml (~> 4.0)
       htmlentities (~> 4.3)
-      rdf (~> 2.0)
-      rdf-aggregate-repo (~> 2.0)
-      rdf-xsd (~> 2.0)
+      rdf (~> 2.2)
+      rdf-aggregate-repo (~> 2.2)
+      rdf-xsd (~> 2.1)
     rdf-rdfxml (2.0.0)
       htmlentities (~> 4.3)
       rdf (~> 2.0)
@@ -238,26 +247,26 @@ GEM
     rdf-xsd (2.1.0)
       rdf (~> 2.1)
     ref (2.0.0)
-    rest-client (2.0.1)
+    rest-client (2.0.2)
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
     rqrcode (0.10.1)
       chunky_png (~> 1.0)
-    rspec (3.5.0)
-      rspec-core (~> 3.5.0)
-      rspec-expectations (~> 3.5.0)
-      rspec-mocks (~> 3.5.0)
-    rspec-core (3.5.4)
-      rspec-support (~> 3.5.0)
-    rspec-expectations (3.5.0)
+    rspec (3.6.0)
+      rspec-core (~> 3.6.0)
+      rspec-expectations (~> 3.6.0)
+      rspec-mocks (~> 3.6.0)
+    rspec-core (3.6.0)
+      rspec-support (~> 3.6.0)
+    rspec-expectations (3.6.0)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.5.0)
-    rspec-mocks (3.5.0)
+      rspec-support (~> 3.6.0)
+    rspec-mocks (3.6.0)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.5.0)
-    rspec-support (3.5.0)
-    rubocop (0.48.0)
+      rspec-support (~> 3.6.0)
+    rspec-support (3.6.0)
+    rubocop (0.48.1)
       parser (>= 2.3.3.1, < 3.0)
       powerpack (~> 0.1)
       rainbow (>= 1.99.1, < 3.0)
@@ -268,9 +277,6 @@ GEM
     rubypants-unicode (0.2.5)
     sass (3.4.23)
     shellany (0.0.1)
-    shortly (0.3.6)
-      httparty (= 0.13.0)
-      json (= 1.8.1)
     simplecov (0.14.1)
       docile (~> 1.1.0)
       json (>= 1.8, < 3)
@@ -295,12 +301,12 @@ GEM
     tilt (2.0.7)
     tzinfo (1.2.3)
       thread_safe (~> 0.1)
-    uglifier (3.1.10)
+    uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
     unf (0.1.4)
       unf_ext
-    unf_ext (0.0.7.2)
-    unicode-display_width (1.1.3)
+    unf_ext (0.0.7.4)
+    unicode-display_width (1.2.1)
     vcardigan (0.0.9)
 
 PLATFORMS
@@ -338,10 +344,10 @@ DEPENDENCIES
   rspec-mocks
   rubocop
   rubypants-unicode
-  shortly
+  shortly!
   simplecov
   uglifier
   vcardigan
 
 BUNDLED WITH
-   1.13.6
+   1.14.6
