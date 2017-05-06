@@ -63,17 +63,6 @@
     </ul>
   </nav>
   <% if @item[:published_at] %>
-    <div class="section banner persistent-links">
-      <h3 class="big">Persistent links</h3>
-      <p>Use these identifiers to cite or link back to this post.</p>
-      <label>
-        <abbr title="Persistent link to this post as a Uniform Resource Locator">URL</abbr>
-        <input readonly="readonly" class="bookmark u-uid u-url uri" type="url" value="<%= path_to(@item, global: true) %>">
-      </label>
-      <label>
-        <abbr title="Cite this post with this HyperText Markup Language">HTML</abbr>
-        <input readonly="readonly" type="text" class="code" value="<%= h %[<span class="h-cite"><a class="u-url p-name" href="#{path_to(@item, global: true)}"><cite>#{@item[:title]}</cite></a> (<abbr class="p-author h-card" title="#{@item[:author_name]}">#{author[:last_name]}</abbr> <time class="dt-published">#{date_for(@item)}</time>)</span>] %>">
-      </label>
-    </div>
+    <%= render('/blog/partials/citations.*', item: item) %>
   <% end %>
 </aside>

@@ -1,0 +1,21 @@
+<% author = person_by_name(@item[:author_name]) %>
+<div class="section banner citations">
+  <h3 class="big">Citations</h3>
+  <p>If you're into copy and paste, use these snippets to cite or link back to this post, listed in order of decreasing universality.</p>
+  <label>
+    <abbr title="Uniform Resource Locator">URL</abbr>
+    <input readonly="readonly" class="bookmark u-uid u-url uri" type="url" value="<%= path_to(item, global: true) %>">
+  </label>
+  <label>
+    <abbr title="HyperText Markup Language">HTML</abbr><span class="math">+</span><abbr title="Resource Description Framework in attributes">RDFa</abbr>
+    <input readonly="readonly" type="text" class="code" value="<%= h %[<span class="h-cite"><a class="u-url p-name" href="#{path_to(@item, global: true)}"><cite>#{@item[:title]}</cite></a> (<abbr class="p-author h-card" title="#{@item[:author_name]}">#{author[:last_name]}</abbr> <time class="dt-published">#{date_for(@item)}</time>)</span>] %>">
+  </label>
+  <label>
+    <abbr title="HyperText Markup Language">HTML</abbr><span class="math">+</span>microformats
+    <input readonly="readonly" type="text" class="code" value="<%= h %[<span class="h-cite"><a class="u-url p-name" href="#{path_to(@item, global: true)}"><cite>#{@item[:title]}</cite></a> (<abbr class="p-author h-card" title="#{@item[:author_name]}">#{author[:last_name]}</abbr> <time class="dt-published">#{date_for(@item)}</time>)</span>] %>">
+  </label>
+  <label>
+    <abbr title="A Tex extension package for bibliographic citations">BibTeX</abbr>
+    <input readonly="readonly" type="text" class="code" value="<%= h %[<span class="h-cite"><a class="u-url p-name" href="#{path_to(@item, global: true)}"><cite>#{@item[:title]}</cite></a> (<abbr class="p-author h-card" title="#{@item[:author_name]}">#{author[:last_name]}</abbr> <time class="dt-published">#{date_for(@item)}</time>)</span>] %>">
+  </label>
+</div>
