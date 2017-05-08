@@ -912,10 +912,15 @@ section:hover {
     }
   }
 }
+
+figure:hover {
+  figcaption a.anchor {
+    visibility: visible;
   }
 }
 
-  p:hover a.anchor, figure:hover a.anchor {
+p:hover, li:hover, dt:hover, dd:hover {
+  a.anchor {
     visibility: visible;
   }
 }
