@@ -872,14 +872,48 @@ a.anchor {
   }
 }
 
-h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover, p:hover, li:hover, figure:hover, dt:hover, dd:hover {
-  a.anchor {
-    visibility: visible;
+section:hover {
+
+  h2 {
+    a.anchor {
+      visibility: visible;
+    }
   }
 
-  p a.anchor, figure a.anchor {
-    visibility: hidden;
+  section:hover {
+    h3 {
+      a.anchor {
+        visibility: visible;
+      }
+    }
+
+    section:hover {
+      h4 {
+        a.anchor {
+          visibility: visible;
+        }
+      }
+
+      section:hover {
+        h5 {
+          a.anchor {
+            visibility: visible;
+          }
+        }
+
+        section:hover {
+          h6 {
+            a.anchor {
+              visibility: visible;
+            }
+          }
+        }
+      }
+    }
   }
+}
+  }
+}
 
   p:hover a.anchor, figure:hover a.anchor {
     visibility: visible;
