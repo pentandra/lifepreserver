@@ -80,7 +80,7 @@ class RobustAnchors < Nanoc::Filter
       sentences = ps.segment
 
       unless sentences.empty?
-        key_words = [sentences.first, sentences.last].map { |s| s.split[0, key_length / 2] }
+        key_words = [sentences.first, sentences.last].flat_map { |s| s.split[0, key_length / 2] }
         key = key_words.map { |w| w[0] }.join
 
         "#{name}[#{key}]"
