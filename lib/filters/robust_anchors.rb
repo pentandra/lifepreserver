@@ -46,12 +46,13 @@ class RobustAnchors < Nanoc::Filter
     if fine_grained
       selectors.map { |sel| "descendant-or-self::#{sel}" }.each do |selector|
         doc.xpath(selector).each do |element|
-          element['id'] ||= robust_anchor(element, key_length)
-          next unless element['id']
+          element_id = element['id'] || robust_anchor(element, key_length)
+          next if element_id.nil?
 
+          # Add link to element
           if generate_links
             element_desc = element.description
-            element << link_to_element(element['id'], message_for(element['id'], element_desc.description))
+            element << link_to_element(element_id, message_for(element_id, element_desc.description))
           end
         end
       end
