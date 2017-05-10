@@ -4,7 +4,7 @@ class RobustAnchors < Nanoc::Filter
 
   requires 'nokogiri', 'locale', 'pragmatic_segmenter'
 
-  FINE_SELECTORS ||= ['p', 'dd', 'dt'].freeze
+  FINE_SELECTORS ||= ['p', 'dd', 'dt', 'li[not(ancestor::nav) and not(ancestor::section[contains(@class, "footnotes")])]'].freeze
 
   # Create robust anchors and links for HTML documents.
   #
