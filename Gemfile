@@ -22,6 +22,7 @@ gem 'rubypants-unicode'
 gem 'shortly',           git: 'https://github.com/FLEWID-AB/shortly' # for URL shortening
 gem 'uglifier'           # for compact JavaScript
 gem 'vcardigan'          # for vCards
+gem 'pragmatic_segmenter'
 
 group :development, optional: true do
   gem 'adsf'              # for nanoc view

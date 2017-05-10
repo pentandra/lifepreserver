@@ -180,6 +180,8 @@ GEM
     parser (2.4.0.0)
       ast (~> 2.2)
     powerpack (0.1.1)
+    pragmatic_segmenter (0.3.13)
+      unicode
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -306,6 +308,7 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.4)
+    unicode (0.4.4.4)
     unicode-display_width (1.2.1)
     vcardigan (0.0.9)
 
@@ -336,6 +339,7 @@ DEPENDENCIES
   nanoc-cachebuster!
   nokogiri
   pandoc-ruby
+  pragmatic_segmenter
   rainpress
   rake
   rest-client
