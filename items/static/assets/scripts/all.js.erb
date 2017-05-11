@@ -138,7 +138,7 @@ var Pentandra = (function($) {
   var social = (function() {
 
     var setupCitations = function() {
-      $(".citations input").focus(function(e) {
+      $(".citations input, .citations textarea").focus(function(e) {
         $(this)
           .select()
           .one('mouseup', function(e) { e.preventDefault(); });
