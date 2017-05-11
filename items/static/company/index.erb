@@ -344,35 +344,15 @@ priority: 0.6
             <aside class="nav menu rev">
               <ul class="sp framed icons">
                 <% if member[:gplus] %>
-                <li>
-                  <a class="url" title="<%= full_name(member) %> on Google+" href="https://plus.google.com/<%= member[:gplus] %>?prsrc=3">
-                    <span aria-hidden="true" class="button icon-googleplus"></span>
-                    <span class="visuallyhidden"><%= full_name(member) %> on Google+</span>
-                  </a>
-                </li>
+                  <li><a class="url" title="<%= full_name(member) %> on Google+" href="https://plus.google.com/<%= member[:gplus] %>?prsrc=3"><span aria-hidden="true" class="button icon-googleplus"></span><span class="visuallyhidden"><%= full_name(member) %> on Google+</span></a></li>
                 <% end %>
                 <% if member[:twitter] %>
-                <li>
-                  <a class="url" href="https://twitter.com/<%= member[:twitter] %>" title="Follow @<%= member[:twitter] %>">
-                    <span aria-hidden="true" class="button icon-twitter"></span>
-                    <span class="visuallyhidden">Follow <span class="handle">@<%= member[:twitter] %></span></span>
-                  </a>
-                </li>
+                  <li><a class="url" href="https://twitter.com/<%= member[:twitter] %>" title="Follow @<%= member[:twitter] %>"><span aria-hidden="true" class="button icon-twitter"></span><span class="visuallyhidden">Follow <span class="handle">@<%= member[:twitter] %></span></span></a></li>
                 <% end %>
                 <% if member[:github] %>
-                <li>
-                  <a class="url" href="https://github.com/<%= member[:github] %>" title="Check out <%= member[:first_name] %> on GitHub">
-                    <span aria-hidden="true" class="button icon-github"></span>
-                    <span class="visuallyhidden">Check out <%= member[:first_name] %> on GitHub</span>
-                  </a>
-                </li>
+                  <li><a class="url" href="https://github.com/<%= member[:github] %>" title="Check out <%= member[:first_name] %> on GitHub"><span aria-hidden="true" class="button icon-github"></span><span class="visuallyhidden">Check out <%= member[:first_name] %> on GitHub</span></a></li>
                 <% end %>
-                <li>
-                  <a property="schema:email foaf:mbox vcard:hasEmail" class="email" href="mailto:<%= member[:email] %>" title="mailto:<%= member[:email] %>">
-                    <span aria-hidden="true" class="button icon-mail"></span>
-                    <span class="visuallyhidden">Email <%= member[:first_name] %></span>
-                  </a>
-                </li>
+                <li><a property="schema:email foaf:mbox vcard:hasEmail" class="email" href="mailto:<%= member[:email] %>" title="mailto:<%= member[:email] %>"><span aria-hidden="true" class="button icon-mail"></span><span class="visuallyhidden">Email <%= member[:first_name] %></span></a></li>
               </ul>
             </aside>
           </div>
