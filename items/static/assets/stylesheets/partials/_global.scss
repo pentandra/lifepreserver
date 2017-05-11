@@ -862,6 +862,8 @@ main {
 
 .citations input, .citations textarea {
   cursor: pointer;
+  // this seems like a hack. Fix after designing form elements
+  margin-bottom: $base-line-height / 2;
 }
 
 a.anchor {
