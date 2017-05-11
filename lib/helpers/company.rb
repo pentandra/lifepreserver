@@ -37,7 +37,12 @@ module LifePreserver
     #
     # @return [Hash]
     def company
-      @items['/company/_'].attributes
+      blk = -> { @items['/company/_'].attributes }
+      if @items.frozen?
+        @company_attributes ||= blk.call
+      else
+        blk.call
+      end
     end
 
     def sorted_people
