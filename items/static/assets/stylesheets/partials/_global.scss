@@ -6,7 +6,7 @@
 @include selection-color($selected-font-color, $selected-background-color);
 
 //
-// Default HTML Styles
+// Default element styles
 
 body, button, input, select, textarea {
   color: $font-color;
@@ -218,9 +218,7 @@ li p {
 }
 
 //
-// Classes
-
-// Block Structures
+// Block structure classes
 
 .mod {
   margin-top: $base-line-height / 2;
@@ -258,7 +256,8 @@ li p {
   padding: ($base-line-height * 2) 0;
 }
 
-// Block Skins
+//
+// Block skins
 
 .simple {
   border: 1px solid $pentandra-brown;
@@ -316,6 +315,7 @@ li p {
   margin-bottom: $base-line-height * 7 - $photo-width;
 }
 
+//
 // Content classes
 
 .centered {
@@ -408,7 +408,8 @@ input.button {
   padding-left: 0.5em;
 }
 
-// Document statuses
+//
+// Document status classes
 
 .unpublished, .unsubmitted {
   background-color: $pentandra-cyan;
@@ -437,6 +438,9 @@ input.button {
 .status {
   line-height: $base-line-height * 2;
 }
+
+//
+// Document tag classes
 
 .tags {
   $tag-height: 20px;
