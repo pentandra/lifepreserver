@@ -1,4 +1,4 @@
-<% author = person_by_name(@item[:author_name]) %>
+<% author = person_by_name(item[:author_name]) %>
 <div class="section banner citations">
   <h3 class="big">Citations</h3>
   <p>If you're into copy and paste, use these snippets to cite or link back to this post, listed in order of decreasing universality.</p>
@@ -7,8 +7,8 @@
     <input readonly="readonly" class="bookmark u-uid u-url uri" type="url" value="<%= path_to(item, global: true) %>">
   </label>
   <label>
-    <abbr title="HyperText Markup Language">HTML</abbr><span class="math">+</span><abbr title="Resource Description Framework in attributes">RDFa</abbr>
-    <input readonly="readonly" type="text" class="code" value="<%= h %[<span class="h-cite"><a class="u-url p-name" href="#{path_to(@item, global: true)}"><cite>#{@item[:title]}</cite></a> (<abbr class="p-author h-card" title="#{@item[:author_name]}">#{author[:last_name]}</abbr> <time class="dt-published">#{date_for(@item)}</time>)</span>] %>">
+    <abbr title="HyperText Markup Language">HTML</abbr><span class="math">+</span><abbr title="Resource Description Framework in Attributes">RDFa</abbr>
+    <input readonly="readonly" type="text" class="code" value="<%= h %[<span vocab="http://schema.org/" property="citation" typeof="WebPage"><a property="title" rel="url" href="#{path_to(item, global: true)}"><cite>#{item[:title]}</cite></a> (<span property="author" typeof="Person"><abbr property="name" content="#{item[:author_name]}" title="#{item[:author_name]}">#{author[:last_name]}</abbr></span> <time property="datePublished">#{publication_date_for(item)}</time>)</span>] %>">
   </label>
   <label>
     <abbr title="HyperText Markup Language">HTML</abbr><span class="math">+</span>microformats
