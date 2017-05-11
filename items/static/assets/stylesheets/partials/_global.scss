@@ -879,44 +879,9 @@ a.anchor {
   }
 }
 
-section:hover {
-
-  h2 {
-    a.anchor {
-      visibility: visible;
-    }
-  }
-
-  section:hover {
-    h3 {
-      a.anchor {
-        visibility: visible;
-      }
-    }
-
-    section:hover {
-      h4 {
-        a.anchor {
-          visibility: visible;
-        }
-      }
-
-      section:hover {
-        h5 {
-          a.anchor {
-            visibility: visible;
-          }
-        }
-
-        section:hover {
-          h6 {
-            a.anchor {
-              visibility: visible;
-            }
-          }
-        }
-      }
-    }
+#{append-selector("h1, h2, h3, h4, h5, h6", ":hover")} {
+  a.anchor {
+    visibility: visible;
   }
 }
 
