@@ -548,7 +548,7 @@ displace existing systems.
 
 [proprietary approaches]: <https://scholarlykitchen.sspnet.org/2017/02/09/cobbling-together-workflow-businesses/>
 [earlier definition]: </blog/putting-the-pieces-together-culture/#def:the-scholarly-commons> "The Scholarly Commons is the opportunity to come together and create a new culture of commoning on scholarly and scientific knowledge."
-[vision]: </#research-experience> "We envision a better research experience"
+[vision]: </#a-better-research-experience> "We envision a better research experience"
 [the logo]: <https://docs.google.com/document/d/1YIxxMpcOni7alThkdVvvrnc_edKay2Ow4kiRwBDTQrs/edit> "Branding the Scholarly Commons"
 [black box]: <https://en.wikipedia.org/wiki/Black_box> "Black box on Wikipedia"
 [decision trees]: <decision_trees_proposal.jpg> "Click to see the original decision trees proposal"
