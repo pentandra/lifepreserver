@@ -332,11 +332,11 @@ priority: 0.6
 
       <h3 property="foaf:name">Core Team</h3>
 
-      <% sorted_people.select {|person| person[:member_of].include?("Core Team") }.each_with_index do |member, i| %>
+      <% sorted_people.select {|person| person[:member_of].include?('Core Team') }.each_with_index do |member, index| %>
       <section resource="pentandra:<%= full_name(member).to_slug %>"
         property="foaf:member vcard:hasMember" typeof="schema:Person foaf:Person vcard:Individual"
         id="<%= full_name(member).to_slug %>"
-        class="teammember vcard bl<%= i.odd? ? ' ock' : '' %> item">
+        class="teammember vcard bl<%= index.odd? ? ' ock' : '' %> item">
         <meta property="vcard:rev" datatype="xsd:date" content="<%= simple_date(company[:mtime]) %>" />
         <link rev="schema:employee" resource="pentandra:company" />
         <link property="foaf:isPrimaryTopicOf" href="#<%= full_name(member).to_slug %>" />
