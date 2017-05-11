@@ -37,7 +37,7 @@ Quoting from their charter:
 </div>
 
 I am curious to explore the relationship between _research objects_ and what we
-are working on with [_research cases_](/research/process/#sec:research-case).
+are working on with [_research cases_](/research/process/#the-research-case).
 
 While this group has explicitly stated that they will not be publishing
 specifications, it is exciting to see this kind of dialog starting to happen.

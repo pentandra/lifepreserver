@@ -216,4 +216,4 @@ then please check out our Conferences page through the week of NGS in Las
 Vegas. If you have any other ideas that you think we should be thinking about,
 please drop us a note or drop by our booth to chat. Really—please do.
 
-[mission]: </company/#sec:mission>
+[mission]: </company/#mission>

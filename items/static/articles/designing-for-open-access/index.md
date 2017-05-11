@@ -1252,8 +1252,8 @@ research systems.
 
 [^colquhoun]: <http://www.michaeleisen.org/blog/?p=694#comment-359363>
 
-[clarity]: </research/#sec:clarity> "Pentandra → The Future of Research → Clarity"
-[context]: </research/#sec:context> "Pentandra → The Future of Research → Context"
+[clarity]: </research/#clarity> "Pentandra → The Future of Research → Clarity"
+[context]: </research/#context> "Pentandra → The Future of Research → Context"
 [clearly show]: </research/#p[RsbOsr],h[RsbOsr,3]> "The Future of Research → Clarity (part of)"
 [obama_directive]: http://www.whitehouse.gov/blog/2013/02/22/expanding-public-access-results-federally-funded-research
 [oa_week]: http://openaccessweek.org/ "A global event promoting Open Access as a new norm in scholarship and research"
@@ -1283,7 +1283,7 @@ research systems.
 [Clayton Christensen]: http://www.claytonchristensen.com/
 [illuminated]: <http://en.wikipedia.org/wiki/Illuminated_manuscript> "Illuminated Manuscript on Wikipedia"
 [booktext]: http://shikan.org/bjones/Books/booktext.html
-[mission]: </company/#sec:mission> "Pentandra → Our Mission"
+[mission]: </company/#mission> "Pentandra → Our Mission"
 [scientific priority]: http://en.wikipedia.org/wiki/Scientific_priority
 [lone genius]: http://en.wikipedia.org/wiki/Heroic_theory_of_invention_and_scientific_development
 [multiple discovery]: http://en.wikipedia.org/wiki/Multiple_discovery
@@ -1325,7 +1325,7 @@ research systems.
 [domain-specific]: </research/#p[WtrHwt],h[WtrHwt,2]> "Pentandra → The Future of Research → To be most effective, research software must be domain specific"
 [copy it]: <http://kk.org/thetechnium/2008/01/better-than-fre/> "Better Than Free, by Kevin Kelly"
 [research cases]: </blog/introducing-research-cases/> "Introducing Research Cases"
-[economics]: </blog/introducing-research-cases/#sec:publish-or-perish> "Introducing Research Cases → Publish Or Perish"
+[economics]: </blog/introducing-research-cases/#publish-or-perish> "Introducing Research Cases → Publish Or Perish"
 [canada-tri-agency]: <http://poeticeconomics.blogspot.com/2015/02/canadas-tri-agency-open-access-policy.html> "Canada's tri-agency open access policy, by Heather Morrison"
 [tag-list]: <http://lists.w3.org/Archives/Public/www-tag/2002Jul/0090.html>
 [GNN]: <https://en.wikipedia.org/wiki/Global_Network_Navigator> "Global Network Navigator on Wikipedia"
@@ -1333,7 +1333,7 @@ research systems.
 [Wavelab]: <http://statweb.stanford.edu/~donoho/Reports/1995/wavelab.pdf>
 [Farkas Bolyai]: <http://en.wikipedia.org/wiki/Farkas_Bolyai> "Farkas Bolyai on Wikipedia"
 [János]: <http://en.wikipedia.org/wiki/J%C3%A1nos_Bolyai> "János Bolyai on Wikipedia"
-[unit of research]: </research/process/#sec:unit-of-research>
+[unit of research]: </research/process/#a-unit-of-research>
 [financing open access]: <http://en.wikipedia.org/wiki/Open_access#Methods_of_financing_gold_open_access_publishing>
 [DOI]: <http://www.doi.org/>
 [aap]: <http://en.wikipedia.org/wiki/Federal_Research_Public_Access_Act#Opposition>

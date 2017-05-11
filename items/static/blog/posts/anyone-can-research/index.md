@@ -197,14 +197,14 @@ application in the world, we're missing the dartboard entirely.
 [tcp/ip]: http://cameronneylon.net/blog/github-for-science-shouldnt-we-perhaps-build-tcpip-first/ "Github for science? Shouldn’t we perhaps build TCP/IP first? by Cameron Neylon"
 [basic research]: http://en.wikipedia.org/wiki/Basic_research "Basic Research on Wikipedia"
 [Knowledge Age]: http://www.shiftingthinking.org/?page_id=58 "The Knowledge Age, from the Shiftingthinking community"
-[increase in understanding]: </company/#sec:mission> "Pentandra → Our Mission"
+[increase in understanding]: </company/#mission> "Pentandra → Our Mission"
 [PubMed]: http://www.ncbi.nlm.nih.gov/pmc/ "PubMed Central"
 [Andraka TEDx]: <http://www.ted.com/talks/jack_andraka_a_promising_test_for_pancreatic_cancer_from_a_teenager> "Jack Andraka's TEDx speech"
 [biotech_whiz]: http://www.forbes.com/sites/matthewherper/2014/01/08/why-biotech-whiz-kid-jack-andraka-is-not-on-the-forbes-30-under-30-list/
 [hairdresser]: /blog/the-hairdresser-and-the-archaeologist/ "The Pentandra Blog → The Hairdresser and the Archaeologist"
 [Chordoma]: <http://en.wikipedia.org/wiki/Chordoma> "Chordoma on Wikipedia"
 [Chordoma Foundation]: http://www.chordomafoundation.org/
-[collaboration]: </research/#sec:collaboration> "Pentandra → The Future of Research → Collaboration"
+[collaboration]: </research/#collaboration> "Pentandra → The Future of Research → Collaboration"
 [opening knowledge]: </blog/opening-knowledge/> "The Pentandra Blog → Opening Knowledge"
 [Freon]: <https://en.wikipedia.org/wiki/Freon> "Freon on Wikipedia"
 [Charles F. Kettering]: <https://en.wikipedia.org/wiki/Charles_F._Kettering> "Charles F. Kettering on Wikipedia"

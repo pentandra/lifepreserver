@@ -192,8 +192,8 @@ As a social business, one of our goals is to lower the barriers for people of
 all disciplines, subjects, and skill levels to be able to contribute to the
 world's knowledge in meaningful ways. We envision the future of research being
 based upon open Web standards and [open, domain-specific collaborative research
-platforms](/research/#sec:future). We see the publishers of the future as the
-developers and providers of these platforms.
+platforms](/research/#the-future-of-research). We see the publishers of the
+future as the developers and providers of these platforms.
 
 What would this future look like? Here are some principles that we think should
 be part of the future of research:

@@ -188,11 +188,11 @@ prospect of becoming a benefit corporation in the future, so stay tuned!
 You may argue, "But is research good for society?" If you're reading this post,
 I probably don't have to convince you of that.[^goodforsociety]
 
-[mission]: </company/#sec:mission> "Pentandra's mission"
+[mission]: </company/#mission> "Pentandra's mission"
 [The Open University]: <http://www.open.ac.uk/>
 [parable]: <http://chronicle.com/blogs/wiredcampus/david-wiley-the-parable-of-the-inventorthe-trucker/7244>
 [swindle]: <http://blog.okfn.org/2012/10/22/the-great-open-access-swindle/>
-[future]: </research/#sec:future> "Pentandra → The Future of Research: A Manifesto"
+[future]: </research/#the-future-of-research> "Pentandra → The Future of Research: A Manifesto"
 [social enterprise]: <http://en.wikipedia.org/wiki/Social_enterprise> "Social Enterprise on Wikipedia"
 [social business]: <http://en.wikipedia.org/wiki/Social_business> "Social Business on Wikipedia"
 [nytimes article on Google.org]: <http://news.blogs.nytimes.com/2006/09/14/philanthropy-googles-way-not-the-usual/>

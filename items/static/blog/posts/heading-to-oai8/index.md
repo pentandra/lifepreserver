@@ -52,7 +52,7 @@ now.
 
 Thank you, all!
 
-[case]: </research/process/#sec:unit-of-research> "Pentandra → Research 101 → Unit of Research"
+[case]: </research/process/#a-unit-of-research> "Pentandra → Research 101 → Unit of Research"
 [www]: <http://en.wikipedia.org/wiki/World_Wide_Web> "World Wide Web on Wikipedia"
 [proposal]: <http://www.w3.org/Proposal.html> "Proposal for the World Wide Web"
 

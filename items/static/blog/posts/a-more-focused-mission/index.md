@@ -100,6 +100,6 @@ before.
 
 Now, all that's left is to get a lot done!
 
-[mission]: </company/#sec:mission> "Pentandra's mission"
-[research cases]: </research/process/#sec:research-case>
+[mission]: </company/#mission> "Pentandra's mission"
+[research cases]: </research/process/#the-research-case>
 [OAI8]: </blog/heading-to-oai8/> "Heading to OAI8"

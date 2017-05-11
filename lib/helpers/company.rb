@@ -26,7 +26,7 @@ module LifePreserver
 
     # Relative path to a document section describing a person
     def description_path(person)
-      "#{@config[:company][:page_url]}/#sec:#{full_name(person).to_slug}"
+      "#{@config[:company][:page_url]}/##{full_name(person).to_slug}"
     end
 
     def photo_url(person)
