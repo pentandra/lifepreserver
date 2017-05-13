@@ -80,7 +80,7 @@ module LifePreserver
     end
 
     def bibtex_key(item, author)
-      item[:bibtex_key] || [author.fetch(:last_name), author.fetch(:first_name)[0], attribute_to_time(item[:published_at]).strftime('%Y:%j')].join.downcase
+      item[:bibtex_key] || [author.fetch(:last_name), author.fetch(:first_name)[0], attribute_to_time(item[:published_at]).year, Digest::SHA1.hexdigest(item[:title])[0..6]].join(':').downcase
     end
 
     protected
