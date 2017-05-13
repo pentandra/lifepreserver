@@ -16,7 +16,7 @@
   </label>
   <label>
     <abbr title="A TeX extension package for bibliographic citations">BibTeX</abbr>
-    <textarea rows="10" readonly="readonly" class="code" wrap="off">
+    <textarea rows="9" readonly="readonly" class="code" wrap="off">
 <% if %w(article essay vignette blogpost).include?(item[:kind]) %>
 @article{<%= bibtex_key(item, author) %>,
   journal = {<%= @config[:site][:name] %>},
@@ -31,7 +31,6 @@
   year = {<%= attribute_to_time(item[:published_at]).year %>},
   type = {<%= item[:kind].capitalize %>},
   url = {<%= path_to(item, global: true) %>},
-}
-    </textarea>
+}</textarea>
   </label>
 </div>
