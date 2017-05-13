@@ -79,6 +79,10 @@ module LifePreserver
       end
     end
 
+    def bibtex_key(item, author)
+      item[:bibtex_key] || [author.fetch(:last_name), author.fetch(:first_name)[0], attribute_to_time(item[:published_at]).strftime('%Y:%j')].join.downcase
+    end
+
     protected
 
     def validate_config

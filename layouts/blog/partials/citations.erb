@@ -15,7 +15,23 @@
     <input readonly="readonly" type="text" class="code" value="<%= h %[<span class="h-cite"><a class="u-url p-name" href="#{path_to(item, global: true)}"><cite>#{item[:title]}</cite></a> (<abbr class="p-author h-card" title="#{item[:author_name]}">#{author[:last_name]}</abbr> <time class="dt-published">#{publication_date_for(item)}</time>)</span>] %>">
   </label>
   <label>
-    <abbr title="A Tex extension package for bibliographic citations">BibTeX</abbr>
-    <input readonly="readonly" type="text" class="code" value="<%= h %[<span class="h-cite"><a class="u-url p-name" href="#{path_to(@item, global: true)}"><cite>#{@item[:title]}</cite></a> (<abbr class="p-author h-card" title="#{@item[:author_name]}">#{author[:last_name]}</abbr> <time class="dt-published">#{date_for(@item)}</time>)</span>] %>">
+    <abbr title="A TeX extension package for bibliographic citations">BibTeX</abbr>
+    <textarea rows="10" readonly="readonly" class="code" wrap="off">
+<% if %w(article essay vignette blogpost).include?(item[:kind]) %>
+@article{<%= bibtex_key(item, author) %>,
+  journal = {<%= @config[:site][:name] %>},
+<% elsif item[:kind] == 'note' %>
+@misc{<%= bibtex_key(item, author) %>,
+<% elsif item[:kind] == 'presentation' %>
+@inproceedings{<%= bibtex_key(item, author) %>,
+<% end %>
+  title = {<%= item[:title] %>},
+  author = {<%= [author.fetch(:last_name), author.fetch(:first_name)].join(', ') %>},
+  month = <%= attribute_to_time(item[:published_at]).strftime('%b').downcase %>,
+  year = {<%= attribute_to_time(item[:published_at]).year %>},
+  type = {<%= item[:kind].capitalize %>},
+  url = {<%= path_to(item, global: true) %>},
+}
+    </textarea>
   </label>
 </div>
