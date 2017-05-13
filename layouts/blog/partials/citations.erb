@@ -3,8 +3,8 @@
   <h3 class="big">Citations</h3>
   <p>If you're into copy and paste, use these snippets, listed here in order of decreasing universality, to link to or cite this post.</p>
   <label>
-    <abbr title="Uniform Resource Locator">URL</abbr>
-    <input readonly="readonly" class="bookmark u-uid u-url uri" type="url" value="<%= path_to(item, global: true) %>">
+    <span class="newthought">direct link</span> to this <%= item.fetch(:kind) %>
+    <input readonly="readonly" class="bookmark u-uid u-url uri" type="url" value="<%= "#{path_to(item, global: true)}##{item.fetch(:kind)}" %>">
   </label>
   <label>
     <abbr title="HyperText Markup Language">HTML</abbr><span class="math">+</span><abbr title="Resource Description Framework in Attributes">RDFa</abbr>
