@@ -2,7 +2,6 @@
 title: DORA and Research Assessment
 description: An uphill battle in assessing research quality.
 kind: blogpost
-article_id: dora-and-research-assessment
 author_name: Chris Chapman
 created_at: 2013-05-16
 updated_at: 2013-05-16

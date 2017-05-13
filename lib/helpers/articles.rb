@@ -37,9 +37,5 @@ module LifePreserver
         blk.call
       end
     end
-
-    def article_id(article)
-      article[:article_id] || md5(article[:title].to_slug)
-    end
   end
 end

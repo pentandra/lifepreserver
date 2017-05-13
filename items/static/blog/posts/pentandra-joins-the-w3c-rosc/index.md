@@ -2,7 +2,6 @@
 title: Pentandra Joins the W3C ROSC
 description: A great step forward for the scholarly community.
 kind: blogpost
-article_id: pentandra-joins-the-w3c-rosc
 author_name: Chris Chapman
 created_at: 2013-04-19
 updated_at: 2016-03-04

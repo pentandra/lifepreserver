@@ -2,7 +2,6 @@
 title: Thoughts About RootsTech 2012
 description: Classifications of the future of genealogical software.
 kind: essay
-article_id: thoughts-about-rootstech-2012
 author_name: Chris Chapman
 created_at: 2012-02-07
 updated_at: 2012-04-17
