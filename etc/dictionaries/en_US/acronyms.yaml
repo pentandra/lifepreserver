@@ -4,6 +4,7 @@ ALICE: A Large Ion Collider Experiment
 API: Application Programming Interface
 ARC: Australian Research Council
 ARIA: Accessible Rich Internet Applications
+ASCII: American Standard Code for Information Interchange
 B2B: Business To Business
 BCG: Board for Certification of Genealogists
 BMW: Bayerische MotorWerke (Bavarian Motor Works)
@@ -20,6 +21,7 @@ DCMI: Dublin Core Metadata Initiative
 DIO: Design Intent Ontology
 DMI: Dynamic Machine Interface
 DMI: Dynamic Machine Interface
+DNS: Domain Name System
 DOAP: Description Of A Project
 DOI: Digital Object Identifier (DOI®)
 DSL: Domain Specific Language
@@ -43,9 +45,11 @@ HTML5: HyperText Markup Language (5th major revision)
 HTML: HyperText Markup Language
 HTTP: HyperText Transfer Protocol
 IBIS: Issue-Based Information System
+ICANN: Internet Corporation for Assigned Names and Numbers
 IEC: International Electrotechnical Commission
 IETF: Internet Engineering Task Force
 IP: Internet Protocol
+IPFS: Inter-Planetary File System
 IRI: Internationalized Resource Identifier
 ISBN: International Standard Book Number
 ISO: International Organization for Standardization
@@ -69,6 +73,7 @@ PDF: Portable Document Format
 PNG: Portable Network Graphics
 PROV: W3C PROVenance Interchange
 PS: PostScript
+PURL: Persistent URL
 PhD: Doctor of Philosophy
 RDF11: RDF 1.1
 RDF: Resource Description Framework
@@ -101,6 +106,8 @@ URI: Uniform Resource Identifier
 URL: Uniform Resource Locator
 US: United States
 USA: United States of America
+UTF-8: Unicode Transformation Format-8
+UTF: Unicode Transformation Format
 VANN: Vocabulary for ANNotating vocabulary descriptions
 VCS: Version Control System
 VoID: Vocabulary of Interlinked Datasets
