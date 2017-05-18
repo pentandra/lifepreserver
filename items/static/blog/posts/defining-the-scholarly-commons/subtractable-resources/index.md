@@ -32,13 +32,17 @@ fill.
 The subtractable resource around which a scholarly commons forms is the moments
 of discovery that reveal, bit by bit, the latent knowledge within that field of
 study. In this definition, I'm using the term <dfn>discovery</dfn> very loosely
-to mean any new insight or understanding to the collective that aids in further
-discovery. I'm also separating the discovery from the knowledge that has been
-discovered. The discovery is the subtractable resource, and can be catalogued
-as such, as it happened in some moment of time and will never happen again. It
-can be subtracted from the set of all potential discoveries that remain within
-that field of study. The knowledge that was revealed by that discovery,
-however, is set free, for example, to become public.
+here to mean any new insight or understanding to the collective that aids in
+further discovery. A discovery could be the enlightening answer to a
+long-standing research question that changes our understanding of how the world
+works. A discovery could also be something as subtle as finding the right
+question to ask. I'm also separating the discovery from the knowledge that has
+been discovered. The discovery---that enlightening moment of [eureka!]---is the
+subtractable resource of the Scholarly Commons, and can be catalogued as such,
+as it happened in some moment of time and will never happen again. It can be
+subtracted from the set of all potential discoveries that remain within that
+field of study. The knowledge that was revealed by that discovery, however, is
+set free, for example, to become public.
 
 <!--MORE-->
 
@@ -77,19 +81,26 @@ something away from you or claiming they have discovered something before you,
 but a trust that others will come to help uncover that which was before hidden.
 
 Though these contributions are smaller and more fine-grained, they are not
-half-baked. They are independent in their own sphere of influence, and come
-with more of a sense of immediate gratification, more feelings of service, and
-many more ways to contribute.
+half-baked. Each contribution is identifiable universally and independent in
+its own sphere of influence, the only barrier of entry being access to the
+Internet and an ability to contribute in some way. Participating in the
+Scholarly Commons comes with more of a sense of immediate gratification, more
+opportunities of service, and many more ways to contribute.
 
 And just as the surfing commons is not as much about managing the _water_ as it
 is about managing the _waves_, if the subtractable resource of scholarly
 commons is really the discoveries, then the Scholarly Commons is not as much
 about 'managing the outputs of research at every stage of the research process'
 as it is about managing the _process of discovery_. Though this difference may
-seem insignificant, as we will see in [this series of vignettes][this series],
-it changes the entire approach to defining the Scholarly Commons, and will make
-scholarly commons of much greater benefit to mankind.
+seem subtle and insignificant, this change in focus _exposes the
+subtractability of discoveries in a more efficient way_, meaning that
+discoveries will happen in the open for everyone to watch unfold in realtime,
+rather than happening privately and only hearing about them later on. At any
+point in time, anyone that desires to contribute will have the option to
+participate directly in the unfolding. Not only will this accelerate research
+in an unprecedented way, it will also affect the entire approach to defining
+the Scholarly Commons, distributing power from the hands of a few to the hands
+of many, and making scholarly commons of much greater benefit to mankind.
 
 [collectives]: <https://cybersocialstructure.org/2016/10/03/think-of-science-like-an-incurable-intellectual-disease/> "Think of science like an incurable intellectual disease, by Bruce Caron"
 [surfing commons]: <http://www.onthecommons.org/magazine/surfing-commons-hawaii>
-[this series]: <../>
