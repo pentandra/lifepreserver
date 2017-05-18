@@ -133,7 +133,7 @@ been lost)---_a different logic_ around which a new system could be shaped. To
 explain what I'm looking for here, allow me to share a similar fallacy and
 resulting struggle in the practice of medicine:
 
-<figure id="systems-vs-components" class="bq grab">
+<figure id="systems_vs_components" class="bq grab">
 
 > One essential characteristic of modern life is that we all depend on
 > systems---on assemblages of people or technologies or both---and among our
@@ -176,7 +176,7 @@ and I spent most of the day bobbing between the discussions going on, observing
 and trying to understand the participants' various perspectives, so my
 understanding of some of the discussions may be incomplete.
 
-<figure class="img" resource="#scholarly_commons_backbone_using_existing_stuff_as_parts" property="schema:sharedContent" typeof="schema:ImageObject">
+<figure id="scholarly_commons_backbone_using_existing_stuff_as_parts" class="img" resource="#scholarly_commons_backbone_using_existing_stuff_as_parts" property="schema:sharedContent" typeof="schema:ImageObject">
   <link property="schema:representativeOfPage" resource="schema:True"/>
   <a property="schema:url" href="scholarly_commons_backbone_using_existing_stuff.jpg" title="Click for the whole board"><img property="schema:thumbnail" src="scholarly_commons_backbone_using_existing_stuff_620x.jpg"/></a>
   <figcaption class="schema:caption">Some thoughts that emerged during the main track of the workshop, which was followed through to completion thanks to [Björn Brembs]{lang=nl}, [Jeroen Bosman]{lang=nl}, and [Bianca Kramer]{lang=nl}, on practical pathways toward a scholarly commons using existing tools, organizations, and services.</figcaption>
@@ -304,7 +304,7 @@ but I think we lost something in the transition to more 'modern' scholarly
 communication. I am reminded of a quote that I've [shared before][research
 cases]:
 
-<figure class="bq grab" lang="en-GB">
+<figure id="participatory_science_quote_by_rusnock" class="bq grab" lang="en-GB">
 
 > While publication and distribution of the Philosophical Transactions
 > certainly contributed to the diffusion of knowledge, it did not provide for
@@ -380,7 +380,7 @@ are now: publishing _about_ the research, instead of publishing _research_, and
 our ability to effectively collaborate deeper into the research process will be
 impeded.
 
-<figure class="bq grab">
+<figure id="the_advertising_of_scholarship" class="bq grab">
 
 > An article about computational science in a scientific publication is *not*
 > the scholarship itself, it is merely *advertising* of the scholarship. The
@@ -434,7 +434,7 @@ quote, substituting the practice of research or scholarship for the practice of
 typography, since what is described could be applied to many types of practices
 and we're talking here about the practice of research:
 
-<figure class="bq grab">
+<figure id="paths_of_scholarship_derived_from_bringhurst" class="bq grab">
 
 > One question, nevertheless, has been often in my mind. When all
 > right-thinking human beings are struggling to remember that other men and
@@ -481,11 +481,11 @@ freely to improve the lives of everyone!? If we can approach this in a very
 general way, this idea has the potential to make a real difference in how we
 practice, not just as researchers but as practitioners in many other fields,
 and may even blur the line between researchers and practitioners. Continuing
-from his [previous quote](#systems-vs-components) about the focus on components
+from his [previous quote](#systems_vs_components) about the focus on components
 that has led to a lack of systemic excellence in the practice of medicine,
 Gawande provides some direction for the future:
 
-<figure class="bq grab">
+<figure id="the_ultimate_point" class="bq grab">
 
 > Nonetheless, in medicine that's exactly what we have done. We have a
 > thirty-billion-dollar-a-year National Institutes of Health, which has been a
@@ -548,7 +548,7 @@ displace existing systems.
 
 [proprietary approaches]: <https://scholarlykitchen.sspnet.org/2017/02/09/cobbling-together-workflow-businesses/>
 [earlier definition]: </blog/putting-the-pieces-together-culture/#def:the-scholarly-commons> "The Scholarly Commons is the opportunity to come together and create a new culture of commoning on scholarly and scientific knowledge."
-[vision]: </#sec:research-experience> "We envision a better research experience"
+[vision]: </#a-better-research-experience> "We envision a better research experience"
 [the logo]: <https://docs.google.com/document/d/1YIxxMpcOni7alThkdVvvrnc_edKay2Ow4kiRwBDTQrs/edit> "Branding the Scholarly Commons"
 [black box]: <https://en.wikipedia.org/wiki/Black_box> "Black box on Wikipedia"
 [decision trees]: <decision_trees_proposal.jpg> "Click to see the original decision trees proposal"

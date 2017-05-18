@@ -1,49 +1,72 @@
 .gigantic {
-	font-size: 123px;
-	line-height: $base-line-height * 5.5; // 132px
-	letter-spacing: -2px;
-  margin: $base-line-height * 2.25 0;
+  font-size: 123px;
+
+  // 132px
+  line-height: $base-line-height * 5.5;
+
+  letter-spacing: -2px;
+  margin: ($base-line-height * 2.25) 0;
 }
 
 .huge, h1 {
-	font-size: 76px;
-	line-height: $base-line-height * 3.5; // 84px
-	letter-spacing: -1px;
-  margin: $base-line-height * 1.75 0;
+  font-size: 76px;
+
+  // 84px
+  line-height: $base-line-height * 3.5;
+
+  letter-spacing: -1px;
+  margin: ($base-line-height * 1.75) 0;
 }
 
 .large, h2 {
-	font-size: 47px;
-	line-height: $base-line-height * 2; // 48px
-	letter-spacing: normal;
+  font-size: 47px;
+
+  // 48px
+  line-height: $base-line-height * 2;
+
+  letter-spacing: normal;
   margin: 0 0 $base-line-height 0;
 }
 
 .bigger, h3 {
-	font-size: 29px;
-	line-height: $base-line-height * 1.5; // 36px
-	letter-spacing: normal;
-  margin: 0 0 $base-line-height * 1.5 0;
+  font-size: 29px;
+
+  // 36px
+  line-height: $base-line-height * 1.5;
+
+  letter-spacing: normal;
+  margin: 0 0 ($base-line-height * 1.5) 0;
 }
 
 .big, h4 {
-	font-size: 25px;
-	line-height: $base-line-height * 1.25; // 30px (4:5 incremental leading)
-	letter-spacing: normal;
-  margin: 0 0 $base-line-height * 1.25 0;
+  font-size: 25px;
+
+  // 30px (4:5 incremental leading)
+  line-height: $base-line-height * 1.25;
+
+  letter-spacing: normal;
+  margin: 0 0 ($base-line-height * 1.25) 0;
+
   //margin: 0 0 $base-line-height * 2 - ($base-line-height * 1.25);
 }
 
 .normal {
-  font-size: $base-font-size;  // 18px
-  line-height: $base-line-height; // 26px
-	letter-spacing: normal;
+  // 18px
+  font-size: $base-font-size;
+
+  // 26px
+  line-height: $base-line-height;
+
+  letter-spacing: normal;
 }
 
 .small, h5 {
-	font-size: 14px;
-	line-height: $base-line-height * 0.75; // 18px (5:4 incremental leading)
-	letter-spacing: normal;
+  font-size: 14px;
+
+  // 18px (5:4 incremental leading)
+  line-height: $base-line-height * 0.75;
+
+  letter-spacing: normal;
 }
 
 .symbol {

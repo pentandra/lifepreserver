@@ -3,18 +3,25 @@
 // Less astute browsers will use this layout, so keep it limited.
 //
 
-
 @include selection-color($selected-font-color, $selected-background-color);
 
 //
-// Default HTML Styles
+// Default element styles
 
-body, button, input, select, textarea { color: $font-color; }
+body, button, input, select, textarea {
+  color: $font-color;
+}
 
 a {
   color: $link-color;
-  &:visited { color: $link-visited-color; }
-  &:hover { color: $link-hover-color; }
+
+  &:visited {
+    color: $link-visited-color;
+  }
+
+  &:hover {
+    color: $link-hover-color;
+  }
 }
 
 a, a:visited, a:active {
@@ -46,12 +53,14 @@ header {
 
 .normal.flush {
   $height: 13px;
+
   line-height: $height;
 }
 
 .small {
   &.flush {
     $height: 11px;
+
     line-height: $height;
     margin-bottom: $base-line-height - $height;
   }
@@ -60,7 +69,6 @@ header {
     margin-bottom: $base-line-height * 0.75;
   }
 }
-
 
 .shaved {
   margin-bottom: 0;
@@ -72,13 +80,13 @@ small, figcaption {
 
 body {
   @extend .normal;
+
   background: $page-background;
   color: $font-color;
   text-rendering: optimizeLegibility;
 }
 
 a {
-
   &:hover {
     text-decoration: underline;
   }
@@ -87,7 +95,6 @@ a {
     color: $font-color;
     text-decoration: none;
   }
-
 }
 
 address {
@@ -98,10 +105,12 @@ address, p, pre, figure {
   margin: 0 0 $base-line-height 0;
 }
 
-blockquote, .bq { margin: $base-line-height * 1.5 0; }
+blockquote, .bq {
+  margin: ($base-line-height * 1.5) 0;
+}
 
-.bq { // blockquote
-
+// blockquote
+.bq {
   padding: $base-line-height * 1.5;
 
   blockquote {
@@ -118,16 +127,31 @@ hr {
   margin: $base-line-height 0;
 }
 
-dl, menu, ul, ol { margin: 0 0 $base-line-height 0; padding: 0; }
+dl, menu, ul, ol {
+  margin: 0 0 $base-line-height 0;
+  padding: 0;
+}
 
-dt { margin-top: $base-line-height; }
-dd { margin: 0; }
+dt {
+  margin-top: $base-line-height;
+}
 
-dt.aside { margin-top: 0; }
+dd {
+  margin: 0;
+}
 
-.nav ul, .nav ol { list-style: none; list-style-image: none; }
+dt.aside {
+  margin-top: 0;
+}
 
-nav ol, .nav ol, nav ul, .nav ul { margin: 0 }
+.nav ul, .nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+nav ol, .nav ol, nav ul, .nav ul {
+  margin: 0;
+}
 
 ul {
   list-style-type: square;
@@ -193,19 +217,8 @@ li p {
   text-decoration: none;
 }
 
-a.permalink {
-  color: desaturate(lighten($link-color, 50%), 20%);
-
-  &:hover {
-    text-decoration: none;
-  }
-}
-
 //
-// Classes
-
-
-// Block Structures
+// Block structure classes
 
 .mod {
   margin-top: $base-line-height / 2;
@@ -215,16 +228,19 @@ a.permalink {
 .pod {
   padding-left: $less-gutter-width / 2;
   padding-right: $less-gutter-width / 2;
+
   @include box-sizing(border-box);
 }
 
-.mmod { //TODO fix
+.mmod {
+  //TODO fix
   margin-top: $base-line-height / 4;
   margin-bottom: $base-line-height / 4;
 }
 
 .section {
   @extend .group;
+
   margin: 0 0 $base-line-height;
 }
 
@@ -237,11 +253,11 @@ a.permalink {
 }
 
 .loud {
-  padding: $base-line-height * 2 0;
+  padding: ($base-line-height * 2) 0;
 }
 
-
-// Block Skins
+//
+// Block skins
 
 .simple {
   border: 1px solid $pentandra-brown;
@@ -249,31 +265,34 @@ a.permalink {
 
 .noted {
   $border-height: 1px;
+
   border-top: $border-height solid $pentandra-brown;
 
   h2 {
-    margin: $base-line-height - $border-height 0 $base-line-height * 2;
+    margin: ($base-line-height - $border-height) 0 ($base-line-height * 2);
   }
 
   h2.bigger {
     margin-bottom: $base-line-height / 2;
   }
-
 }
 
 .pop {
   $border-height: 3px;
-  border-top: $border-height solid $pentandra-brown;
 
   // header
+  border-top: $border-height solid $pentandra-brown;
+
   .big {
     $margin: $base-line-height * 0.75;
-    margin: $margin - $border-height 0 $margin;
+
+    margin: ($margin - $border-height) 0 $margin;
   }
 }
 
 .meta {
   $border-height: 1px;
+
   border-bottom: $border-height solid $pentandra-brown;
   margin-bottom: 0 - $border-height;
 }
@@ -282,6 +301,7 @@ a.permalink {
   $border-width: 11px;
 
   border: $border-width solid $pentandra-brown;
+
   @include box-sizing(border-box);
 }
 
@@ -289,10 +309,13 @@ a.permalink {
   $photo-width: 160px;
 
   width: $photo-width;
-  height: $photo-width; // For IE8
-  margin-bottom: ($base-line-height * 7) - $photo-width;
+  height: $photo-width;
+
+  // For IE8
+  margin-bottom: $base-line-height * 7 - $photo-width;
 }
 
+//
 // Content classes
 
 .centered {
@@ -300,20 +323,17 @@ a.permalink {
 }
 
 a.button, input.button, .tags a {
-
   text-align: center;
-
   color: $pentandra-white;
   background-color: $pentandra-brown;
-
   cursor: pointer;
 
   &:hover, &:focus {
-   background-color: $pentandra-red;
+    background-color: $pentandra-red;
   }
 
   &:hover {
-   text-decoration: none;
+    text-decoration: none;
   }
 }
 
@@ -325,7 +345,9 @@ a.button, input.button {
   @include border-radius($default-radius);
 }
 
-.bold { font-weight: bold; }
+.bold {
+  font-weight: bold;
+}
 
 input.button {
   border: 0;
@@ -333,28 +355,61 @@ input.button {
 }
 
 .numbered {
-
   counter-reset: h2;
 
-  h2 { counter-reset: h3; }
-  h3 { counter-reset: h4; }
-  h4 { counter-reset: h5; }
-  h5 { counter-reset: h6; }
+  h2 {
+    counter-reset: h3;
+  }
 
-  h2:before { counter-increment: h2; content: counter(h2); }
-  h3:before { counter-increment: h3; content: counter(h2) "." counter(h3); }
-  h4:before { counter-increment: h4; content: counter(h2) "." counter(h3) "." counter(h4); }
-  h5:before { counter-increment: h5; content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5); }
-  h6:before { counter-increment: h6; content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6); }
+  h3 {
+    counter-reset: h4;
+  }
 
-  h2.nocount:before, h3.nocount:before, h4.nocount:before, h5.nocount:before, h6.nocount:before { content: ""; counter-increment: none; }
+  h4 {
+    counter-reset: h5;
+  }
+
+  h5 {
+    counter-reset: h6;
+  }
+
+  h2:before {
+    counter-increment: h2;
+    content: counter(h2);
+  }
+
+  h3:before {
+    counter-increment: h3;
+    content: counter(h2) "." counter(h3);
+  }
+
+  h4:before {
+    counter-increment: h4;
+    content: counter(h2) "." counter(h3) "." counter(h4);
+  }
+
+  h5:before {
+    counter-increment: h5;
+    content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5);
+  }
+
+  h6:before {
+    counter-increment: h6;
+    content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6);
+  }
+
+  h2.nocount:before, h3.nocount:before, h4.nocount:before, h5.nocount:before, h6.nocount:before {
+    content: "";
+    counter-increment: none;
+  }
 }
 
 [rel="reference"] {
   padding-left: 0.5em;
 }
 
-// Document statuses
+//
+// Document status classes
 
 .unpublished, .unsubmitted {
   background-color: $pentandra-cyan;
@@ -384,15 +439,18 @@ input.button {
   line-height: $base-line-height * 2;
 }
 
+//
+// Document tag classes
+
 .tags {
-  $tag-height: 20px; //$base-line-height * 0.8;
+  $tag-height: 20px;
+
+  //$base-line-height * 0.8;
   $tag-space: 10px;
   $hole-diameter: 4px;
 
   li, a {
-
     position: relative;
-
     height: $tag-height;
     line-height: $tag-height;
     font-size: 13px;
@@ -401,9 +459,10 @@ input.button {
   a {
     font-weight: bold;
     display: inline-block;
-    padding: 0 $tag-space + $hole-diameter 0 $tag-space;
+    padding: 0 ($tag-space + $hole-diameter) 0 $tag-space;
     margin-right: $tag-space * 1.25;
-    @include border-radius($default-radius / 2 0 0 $default-radius / 2);
+
+    @include border-radius(($default-radius / 2) 0 0 ($default-radius / 2));
 
     &:hover, &:focus {
       &:before {
@@ -431,12 +490,13 @@ input.button {
       width: $hole-diameter;
       height: $hole-diameter;
       background: $pentandra-white;
+
       @include border-radius(2px);
     }
   }
 
   li {
-    padding: ($base-line-height - $tag-height) / 2 0;
+    padding: (($base-line-height - $tag-height) / 2) 0;
   }
 }
 
@@ -446,7 +506,9 @@ input.button {
 }
 
 .small .tags {
-  $tag-height: 16px; //$base-line-height * 0.75 * 0.8;
+  $tag-height: 16px;
+
+  //$base-line-height * 0.75 * 0.8;
   $tag-space: 8px;
   $hole-diameter: 3px;
 
@@ -456,7 +518,7 @@ input.button {
   }
 
   a {
-    padding: 0 $tag-space + $hole-diameter 0 $tag-space;
+    padding: 0 ($tag-space + $hole-diameter) 0 $tag-space;
     margin-right: $tag-space * 1.25;
 
     &:before {
@@ -470,7 +532,7 @@ input.button {
   }
 
   li {
-    padding: ($base-line-height - $tag-height) / 2 0;
+    padding: (($base-line-height - $tag-height) / 2) 0;
   }
 }
 
@@ -478,7 +540,7 @@ input.button {
   position: relative;
 }
 
-.img img {
+.img img, figure img {
   display: block;
   max-width: 100%;
 }
@@ -507,7 +569,9 @@ input.button {
   display: inline;
 }
 
-.none { list-style: none; }
+.none {
+  list-style: none;
+}
 
 .parenthesis {
   position: relative;
@@ -516,6 +580,11 @@ input.button {
 
 .tel .parenthesis {
   top: -0.15em;
+}
+
+.math {
+  position: relative;
+  bottom: -0.16em;
 }
 
 .ndash {
@@ -547,7 +616,6 @@ input.button {
 }
 
 .rev, .grab {
-
   a {
     text-decoration: underline;
 
@@ -563,7 +631,6 @@ input.button {
   .wrapper {
     padding-top: $base-line-height;
   }
-
 }
 
 .rev, .rev a {
@@ -577,7 +644,6 @@ input.button {
 }
 
 .rev a.button, .rev input.button, .grab a.button, .rev .tags a, .grab .tags a {
-
   color: $pentandra-brown;
   background-color: $pentandra-white;
   text-decoration: none;
@@ -593,34 +659,36 @@ input.button {
 }
 
 .grab a.button, .grab .tags a {
-
   &:hover, &:focus {
     background-color: $pentandra-brown;
   }
 }
 
 // The next three specifiers for icon fonts
-.grab .icons a, .rev .icons a { // Needs this specificity
+// Needs this specificity
+.grab .icons a, .rev .icons a {
   text-decoration: none;
 }
 
 .rev span.button {
-  &:hover, &:focus { color: $link-hover-color; }
+  &:hover, &:focus {
+    color: $link-hover-color;
+  }
 }
 
 .grab span.button {
-  &:hover, &:focus { color: $pentandra-lime; }
+  &:hover, &:focus {
+    color: $pentandra-lime;
+  }
 }
 
 .rev .tags a, .grab .tags a {
-
   &:before {
     border-color: transparent transparent transparent $pentandra-white;
   }
 }
 
 .rev .tags a {
-
   &:hover, &:focus {
     &:before {
       border-color: transparent transparent transparent $pentandra-red;
@@ -633,7 +701,6 @@ input.button {
 }
 
 .grab .tags a {
-
   &:hover, &:focus {
     &:before {
       border-color: transparent transparent transparent $pentandra-brown;
@@ -655,7 +722,8 @@ input.button {
 //
 // Grid classes
 
-.item { // List semantics
+// List semantics
+.item {
   float: left;
 }
 
@@ -664,7 +732,6 @@ input.button {
 }
 
 .expo {
-
   height: $base-line-height * 5;
 
   li {
@@ -681,6 +748,7 @@ input.button {
 
 .content {
   @extend .group;
+
   margin: 0 auto;
 }
 
@@ -690,7 +758,6 @@ input.button {
 }
 
 #banner {
-
   background-color: $pentandra-white;
   margin-top: $base-line-height * 2;
 
@@ -721,7 +788,6 @@ input.button {
 }
 
 .contentinfo {
-
   a {
     text-decoration: none;
   }
@@ -735,24 +801,23 @@ input.button {
     padding-top: $base-line-height * 1.5;
     padding-bottom: $base-line-height * 3.5;
   }
-
 }
 
 main {
-  border-top: $base-line-height * 1.5 solid $pentandra-brown;
+  border-top: ($base-line-height * 1.5) solid $pentandra-brown;
 }
 
 .motto {
-
   p {
     font-size: 20px;
   }
 
   h1 {
-
     // Group the lines of the motto closer together
     line-height: 45px;
-    margin-bottom: 21px; // Get back on the baseline
+
+    // Get back on the baseline
+    margin-bottom: 21px;
 
     // Line up words along column
     .char1 {
@@ -770,7 +835,8 @@ main {
 
     // Shape the heading
     .word1 {
-      letter-spacing: 3px; // Draw attention to BREAKING
+      // Draw attention to BREAKING
+      letter-spacing: 3px;
     }
   }
 }
@@ -782,7 +848,8 @@ main {
 }
 
 #vcard {
-  padding-bottom: 3px; // Get back onto baseline. Based on 186px² qrcode.
+  // Get back onto baseline. Based on 186px² qrcode.
+  padding-bottom: 3px;
 }
 
 //
@@ -793,8 +860,41 @@ main {
   margin-bottom: 13px;
 }
 
-.permalinks input {
+.citations input, .citations textarea {
   cursor: pointer;
+  // this seems like a hack. Fix after designing form elements
+  margin-bottom: $base-line-height / 2;
+}
+
+a.anchor {
+  position: relative;
+  left: 0.25em;
+  text-decoration: none;
+  font-size: 75%;
+  vertical-align: text-top;
+  visibility: hidden;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+#{append-selector("h1, h2, h3, h4, h5, h6", ":hover")} {
+  a.anchor {
+    visibility: visible;
+  }
+}
+
+figure:hover {
+  figcaption a.anchor {
+    visibility: visible;
+  }
+}
+
+p:hover, li:hover, dt:hover, dd:hover {
+  a.anchor {
+    visibility: visible;
+  }
 }
 
 //
@@ -813,7 +913,6 @@ main {
     width: 100%;
     height: 100%;
   }
-
 }
 
 // 16:9 aspect ratio

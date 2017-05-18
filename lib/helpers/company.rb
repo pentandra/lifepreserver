@@ -26,7 +26,7 @@ module LifePreserver
 
     # Relative path to a document section describing a person
     def description_path(person)
-      "#{@config[:company][:page_url]}/#sec:#{full_name(person).to_slug}"
+      "#{@config[:company][:page_url]}/##{full_name(person).to_slug}"
     end
 
     def photo_url(person)
@@ -37,7 +37,12 @@ module LifePreserver
     #
     # @return [Hash]
     def company
-      @items['/company/_'].attributes
+      blk = -> { @items['/company/_'].attributes }
+      if @items.frozen?
+        @company_attributes ||= blk.call
+      else
+        blk.call
+      end
     end
 
     def sorted_people

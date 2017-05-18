@@ -2,7 +2,6 @@
 title: Pentandra Joins the W3C ROSC
 description: A great step forward for the scholarly community.
 kind: blogpost
-article_id: pentandra-joins-the-w3c-rosc
 author_name: Chris Chapman
 created_at: 2013-04-19
 updated_at: 2016-03-04
@@ -37,7 +36,7 @@ Quoting from their charter:
 </div>
 
 I am curious to explore the relationship between _research objects_ and what we
-are working on with [_research cases_](/research/process/#sec:research-case).
+are working on with [_research cases_](/research/process/#the-research-case).
 
 While this group has explicitly stated that they will not be publishing
 specifications, it is exciting to see this kind of dialog starting to happen.

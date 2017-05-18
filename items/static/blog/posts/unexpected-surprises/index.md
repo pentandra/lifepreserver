@@ -2,7 +2,6 @@
 title: Unexpected Surprises
 description: There are angels out there!
 kind: blogpost
-article_id: unexpected-surprises
 author_name: Katie Chapman
 created_at: 2012-06-08
 updated_at: 2012-09-27

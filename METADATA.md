@@ -70,10 +70,11 @@ The kind of document. Currently we have the following kinds of documents:
 * `vignette`: similar to an essay, but with more of an artistic approach
 * `blogpost`: an informal document with one author
 * `note`: a short statement by one author, like a tweet
+* `presentation`
 * `proposal`
 * `project`
 * `benefit-report`
-* `tag`
+* `tag`: the tag itself (a controlled concept)
 * `tag-page` (distinct from tag as a concept)
 * `author-page`
 * `archive-page`

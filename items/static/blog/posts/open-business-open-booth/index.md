@@ -2,7 +2,6 @@
 title: Open Business, Open Booth
 description: We're opening our booth this year!
 kind: blogpost
-article_id: open-business-open-booth
 author_name: Katie Chapman
 created_at: 2013-04-25
 updated_at: 2013-04-25
@@ -216,4 +215,4 @@ then please check out our Conferences page through the week of NGS in Las
 Vegas. If you have any other ideas that you think we should be thinking about,
 please drop us a note or drop by our booth to chat. Really—please do.
 
-[mission]: </company/#sec:mission>
+[mission]: </company/#mission>

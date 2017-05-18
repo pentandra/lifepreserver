@@ -1,6 +1,5 @@
 require 'active_support/core_ext/object/blank'
 require_relative 'text'
-require_relative 'link_to'
 require_relative 'company'
 require_relative 'articles'
 require_relative 'blogging'
@@ -8,7 +7,6 @@ require_relative 'blogging'
 module LifePreserver
   module Weblog
     include Text
-    include LinkTo
     include Company
     include Articles
     include Blogging
@@ -95,23 +93,6 @@ module LifePreserver
         .map { |post| post.unwrap.attributes.fetch(:published_at).year }
         .uniq
         .to_a
-    end
-
-    def post_summary(post_rep, read_more_text: 'Read more ⇢', separator: '<!--MORE-->')
-      post_rep = case post_rep
-                 when Nanoc::ItemRepView
-                   post_rep
-                 when Nanoc::ItemWithRepsView
-                   post_rep.reps.fetch(:default)
-                 else
-                   raise ArgumentError, "Cannot summarize #{item_rep.inspect} (expected an item rep or an item, not a #{item_rep.class.name})"
-                 end
-
-      summary, body = post_rep.compiled_content.split(separator)
-      return summary unless body
-
-      link = link_to(post_rep.item.fetch(:read_more, read_more_text), post_rep.item, global: post_rep.name != :default, class: 'readmore', title: 'Read the full article')
-      summary << %(<p class="readmore">#{link}</p>)
     end
 
     # Creates in-memory author pages from partial: layouts/blog/author.html

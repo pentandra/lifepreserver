@@ -1,5 +1,9 @@
+require_relative 'link_to'
+
 module LifePreserver
   module Blogging
+    include LinkTo
+
     def blog_post?(item)
       item.identifier =~ %r{^/static/blog/posts/.*\.(md|html)}
     end
@@ -38,6 +42,23 @@ module LifePreserver
       end
     end
 
+    def post_summary(post_rep, snapshot: nil, read_more_text: 'Read more ⇢', separator: '<!--MORE-->')
+      post_rep = case post_rep
+                 when Nanoc::ItemRepView
+                   post_rep
+                 when Nanoc::ItemWithRepsView
+                   post_rep.reps.fetch(:default)
+                 else
+                   raise ArgumentError, "Cannot summarize #{item_rep.inspect} (expected an item rep or an item, not a #{item_rep.class.name})"
+                 end
+
+      summary, body = post_rep.compiled_content(snapshot: snapshot).split(separator)
+      return summary unless body
+
+      link = link_to(post_rep.item.fetch(:read_more, read_more_text), post_rep.item, global: post_rep.name != :default, class: 'readmore', title: 'Read the full article')
+      summary << %(<p class="readmore">#{link}</p>)
+    end
+
     #
     # Create a link for the author of this page
     #
@@ -56,6 +77,10 @@ module LifePreserver
           item[:author_uri] ||= "#{@config[:base_url]}#{description_path(author)}"
         end
       end
+    end
+
+    def bibtex_key(item, author)
+      item[:bibtex_key] || [author.fetch(:last_name), author.fetch(:first_name)[0], attribute_to_time(item[:published_at]).year, Digest::SHA1.hexdigest(item[:title])[0..6]].join(':').downcase
     end
 
     protected

@@ -70,7 +70,7 @@ priority: 0.6
 
   </div>
 
-  <section id="ourvalues" class="noted group">
+  <section id="our-values" class="noted group">
 
     <h2>Our Values</h2>
 
@@ -171,7 +171,7 @@ priority: 0.6
 
     </section>
   </section>
-  <section id="sec:mission" class="noted section">
+  <section id="mission" class="noted section">
 
     <h2>Our Mission</h2>
 
@@ -185,15 +185,15 @@ priority: 0.6
           research</a> into the mainstream, so that human, enterprise, and
         organizational <a href="/blog/opening-knowledge/"
           title="Pentandra → Opening Knowledge">silos will be opened</a> and <a
-          href="/research/#sec:collaboration"
+          href="/research/#collaboration"
           title="Pentandra → The Future of Research → Collaboration"
           >true research collaboration</a> will take
         place, making it easier for anyone to participate in the research
         process, seeking truth in a spirit of mutual cooperation, across
         disciplines, subjects, and skill levels, allowing knowledge to be
-        shared with <a href="/research/#sec:clarity"
+        shared with <a href="/research/#clarity"
           title="Pentandra → The Future of Research → Clarity">clarity</a> and in <a
-          href="/research/#sec:context"
+          href="/research/#context"
           title="Pentandra → The Future of Research → Context">context</a>,
         so that the bringing together and organization of the knowledge of the
         world will be accelerated.
@@ -214,36 +214,39 @@ priority: 0.6
       </p>
       <ul>
 
-        <li property="essglobal:objective">Developing open-source
-          infrastructures and tools that preserve the process of knowledge
-          creation and make open, transparent, real-time, collaborative,
-          cross-discipline research possible.</li>
-
-        <li property="essglobal:objective">Promoting, creating, and
-          implementing open standards that further open research and help
+        <li id="means:open-standards" property="essglobal:objective">Creating, implementing,
+          and promoting open standards that further open research and help
           transition research to the <a
             href="http://en.wikipedia.org/wiki/World_Wide_Web" title="World
             Wide Web on Wikipedia">World Wide Web</a>.</li>
 
-        <li property="essglobal:objective">Helping researchers, organizations,
+        <li id="means:open-source-software"
+          property="essglobal:objective">Developing open-source infrastructures
+          and tools that preserve the process of knowledge creation and make
+          open, transparent, real-time, collaborative, cross-discipline
+          research possible.</li>
+
+        <li id="means:policies-and-incentives"
+          property="essglobal:objective">Helping researchers, organizations,
           and funding agencies discover and transition to policies and
           incentives that reward collaborative open research, providing
           consulting services and technical or moral support when needed.</li>
 
-        <li property="essglobal:objective">Educating interest groups,
+        <li id="means:education" property="essglobal:objective">Educating interest groups,
           governments, and the general public about the short- and long-term
           benefits of open research, and supporting their efforts as they work
           to expand the influence of open research on the world.</li>
  
-        <li property="essglobal:objective">Lowering the barrier of entry for
-          the common man and practitioners to participate meaningfully in
+        <li id="means:lowering-barriers"
+          property="essglobal:objective">Lowering the barrier of entry for the
+          common man and practitioners to participate meaningfully in
           high-quality research projects, throughout the entire research
           process.</li>
 
       </ul>
     </div>
   </section>
-  <section class="noted group" id="sec:socialbusiness">
+  <section class="noted group" id="a-social-business">
 
     <h2>A Social Business</h2>
 
@@ -295,48 +298,50 @@ priority: 0.6
           If you're interested in investing, keep in mind that as a social
           business, dividends come in the form of social benefits to the world,
           not personal financial gain. If you're still interested after that
-          disclaimer, feel free to <a href="#sec:contact">contact us</a>.
+          disclaimer, feel free to <a href="#contact">contact us</a>.
 
         </p>
       </div>
     </section>
-    <section id="donating" class="section" property="schema:potentialAction" resource="pentandra:donate" typeof="schema:DonateAction">
-      <link property="schema:recipient" resource="pentandra:company" />
-      <div class="bd">
-        <h3 class="flush" property="schema:name">Donating</h3>
-      </div>
-      <div class="bd" property="schema:description">
-        <p>
+    <section id="donating" class="section" about="">
+      <div property="schema:potentialAction" resource="#donating" typeof="schema:DonateAction">
+        <link property="schema:recipient" resource="pentandra:company" />
+        <div class="bd">
+          <h3 class="flush" property="schema:name">Donating</h3>
+        </div>
+        <div class="bd" property="schema:description">
+          <p>
 
-          If you like what <a href="#sec:mission">we're doing</a>, but are not
-          interested in the technicalities of investing, please consider
-          donating. As we've started out, we've relied on <a
-            href="/company/funders/">the generous contributions of many</a> to
-          keep us going while we work to reach sustained profitability.
+            If you like what <a href="#mission">we're doing</a>, but are not
+            interested in the technicalities of investing, please consider
+            donating. As we've started out, we've relied on <a
+              href="/company/funders/">the generous contributions of many</a> to
+            keep us going while we work to reach sustained profitability.
 
-        </p>
-      </div>
-      <div class="section aside">
-        <a class="button" property="schema:target" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MP56WPL8KFLH8">Donate via <b>PayPal</b></a>
+          </p>
+        </div>
+        <div class="section aside">
+          <a class="button" property="schema:target" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MP56WPL8KFLH8">Donate via <b>PayPal</b></a>
+        </div>
       </div>
     </section>
   </section>
-  <section class="noted group" id="sec:roster">
+  <section class="noted group" id="our-roster">
 
     <h2>Our Roster</h2>
 
-    <section id="sec:coreteam" class="section" resource="pentandra:coreteam" typeof="foaf:Group">
+    <section id="core-team" class="section" resource="pentandra:core-team" typeof="foaf:Group">
 
       <h3 property="foaf:name">Core Team</h3>
 
-      <% sorted_people.select {|person| person[:member_of].include?("Core Team") }.each_with_index do |member, i| %>
+      <% sorted_people.select {|person| person[:member_of].include?('Core Team') }.each_with_index do |member, index| %>
       <section resource="pentandra:<%= full_name(member).to_slug %>"
         property="foaf:member vcard:hasMember" typeof="schema:Person foaf:Person vcard:Individual"
-        id="sec:<%= full_name(member).to_slug %>"
-        class="teammember vcard bl<%= i.odd? ? ' ock' : '' %> item">
+        id="<%= full_name(member).to_slug %>"
+        class="teammember vcard bl<%= index.odd? ? ' ock' : '' %> item">
         <meta property="vcard:rev" datatype="xsd:date" content="<%= simple_date(company[:mtime]) %>" />
         <link rev="schema:employee" resource="pentandra:company" />
-        <link property="foaf:isPrimaryTopicOf" href="#sec:<%= full_name(member).to_slug %>" />
+        <link property="foaf:isPrimaryTopicOf" href="#<%= full_name(member).to_slug %>" />
         <link property="vcard:hasGender" resource="vcard:<%= member[:gender].capitalize %>" />
         <div class="group">
           <div class="section aside">
@@ -344,35 +349,15 @@ priority: 0.6
             <aside class="nav menu rev">
               <ul class="sp framed icons">
                 <% if member[:gplus] %>
-                <li>
-                  <a class="url" title="<%= full_name(member) %> on Google+" href="https://plus.google.com/<%= member[:gplus] %>?prsrc=3">
-                    <span aria-hidden="true" class="button icon-googleplus"></span>
-                    <span class="visuallyhidden"><%= full_name(member) %> on Google+</span>
-                  </a>
-                </li>
+                  <li><a class="url" title="<%= full_name(member) %> on Google+" href="https://plus.google.com/<%= member[:gplus] %>?prsrc=3"><span aria-hidden="true" class="button icon-googleplus"></span><span class="visuallyhidden"><%= full_name(member) %> on Google+</span></a></li>
                 <% end %>
                 <% if member[:twitter] %>
-                <li>
-                  <a class="url" href="https://twitter.com/<%= member[:twitter] %>" title="Follow @<%= member[:twitter] %>">
-                    <span aria-hidden="true" class="button icon-twitter"></span>
-                    <span class="visuallyhidden">Follow <span class="handle">@<%= member[:twitter] %></span></span>
-                  </a>
-                </li>
+                  <li><a class="url" href="https://twitter.com/<%= member[:twitter] %>" title="Follow @<%= member[:twitter] %>"><span aria-hidden="true" class="button icon-twitter"></span><span class="visuallyhidden">Follow <span class="handle">@<%= member[:twitter] %></span></span></a></li>
                 <% end %>
                 <% if member[:github] %>
-                <li>
-                  <a class="url" href="https://github.com/<%= member[:github] %>" title="Check out <%= member[:first_name] %> on GitHub">
-                    <span aria-hidden="true" class="button icon-github"></span>
-                    <span class="visuallyhidden">Check out <%= member[:first_name] %> on GitHub</span>
-                  </a>
-                </li>
+                  <li><a class="url" href="https://github.com/<%= member[:github] %>" title="Check out <%= member[:first_name] %> on GitHub"><span aria-hidden="true" class="button icon-github"></span><span class="visuallyhidden">Check out <%= member[:first_name] %> on GitHub</span></a></li>
                 <% end %>
-                <li>
-                  <a property="schema:email foaf:mbox vcard:hasEmail" class="email" href="mailto:<%= member[:email] %>" title="mailto:<%= member[:email] %>">
-                    <span aria-hidden="true" class="button icon-mail"></span>
-                    <span class="visuallyhidden">Email <%= member[:first_name] %></span>
-                  </a>
-                </li>
+                <li><a property="schema:email foaf:mbox vcard:hasEmail" class="email" href="mailto:<%= member[:email] %>" title="mailto:<%= member[:email] %>"><span aria-hidden="true" class="button icon-mail"></span><span class="visuallyhidden">Email <%= member[:first_name] %></span></a></li>
               </ul>
             </aside>
           </div>
@@ -389,7 +374,7 @@ priority: 0.6
       <% end %>
     </section>
   </section>
-  <footer id="sec:contact" class="group ext grab" resource="pentandra:contact" typeof="schema:ContactPage">
+  <footer id="contact" class="group ext grab" resource="pentandra:contact" typeof="schema:ContactPage">
     <div class="wrapper" about="pentandra:company">
       <h2>Give Us A Holler!</h2>
       <div class="bd">

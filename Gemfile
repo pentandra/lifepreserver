@@ -19,9 +19,10 @@ gem 'rainpress'          # for compact CSS
 gem 'rest-client'        # for downloads of external resources
 gem 'rqrcode'            # for qrcodes
 gem 'rubypants-unicode'
-gem 'shortly'            # for URL shortening
+gem 'shortly',           git: 'https://github.com/FLEWID-AB/shortly' # for URL shortening
 gem 'uglifier'           # for compact JavaScript
 gem 'vcardigan'          # for vCards
+gem 'pragmatic_segmenter'
 
 group :development, optional: true do
   gem 'adsf'              # for nanoc view

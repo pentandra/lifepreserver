@@ -20,8 +20,8 @@ tags:
 ---
 
 All that we do in this company is motivated by our [mission], which is, '<q
-cite="/company/#sec:mission">to open up the knowledge of the world, so that
-light and understanding will be more accessible to everyone.</q>'
+cite="/company/#mission">to open up the knowledge of the world, so that light
+and understanding will be more accessible to everyone.</q>'
 
 _We live in the information age. Why does knowledge need to be opened up?_
 
@@ -182,10 +182,10 @@ share knowledge!
 And if we're serious about sharing knowledge, we need to be willing to expose
 our minds to the world.
 
-[mission]: </company/#sec:mission> "Pentandra → Our Mission"
+[mission]: </company/#mission> "Pentandra → Our Mission"
 [our mission a couple years ago]: </blog/a-more-focused-mission/> "Pentandra → A More Focused Mission"
 [graph]: <https://en.wikipedia.org/wiki/Graph_(mathematics)> "Graph on Wikipedia"
 [diminishing attention spans]: <http://www.theguardian.com/media-network/media-network-blog/2012/mar/19/attention-span-internet-consumer> "Say it quick, say it well – the attention span of a modern internet consumer (on theguardian)"
 [Republic of Letters]: </blog/introducing-research-cases/> "Pentandra → Introducing Research Cases"
-[In the future]: </research/#sec:future> "Pentandra → The Future of Research"
+[In the future]: </research/#the-future-of-research> "Pentandra → The Future of Research"
 [Sacha Sosno]: <http://www.sosno.com/>

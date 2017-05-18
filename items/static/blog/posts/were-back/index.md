@@ -2,7 +2,6 @@
 title: We're Back
 description: Been through the wringer, but coming back stronger.
 kind: blogpost
-article_id: we-re-back
 author_name: Katie Chapman
 created_at: 2013-02-08
 updated_at: 2013-02-08

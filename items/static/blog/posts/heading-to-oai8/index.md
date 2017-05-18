@@ -2,7 +2,6 @@
 title: Heading to OAI8
 description: We're taking a poster to CERN!
 kind: blogpost
-article_id: heading-to-oai8
 author_name: Chris Chapman
 created_at: 2013-04-29
 updated_at: 2017-02-15
@@ -52,7 +51,7 @@ now.
 
 Thank you, all!
 
-[case]: </research/process/#sec:unit-of-research> "Pentandra → Research 101 → Unit of Research"
+[case]: </research/process/#a-unit-of-research> "Pentandra → Research 101 → Unit of Research"
 [www]: <http://en.wikipedia.org/wiki/World_Wide_Web> "World Wide Web on Wikipedia"
 [proposal]: <http://www.w3.org/Proposal.html> "Proposal for the World Wide Web"
 
