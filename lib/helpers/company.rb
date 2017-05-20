@@ -30,7 +30,7 @@ module LifePreserver
     end
 
     def photo_url(person)
-      "#{@config[:site][:images_url]}/#{full_name(person).to_slug}-150x150.jpg"
+      "#{@config[:site][:images_url]}/#{full_name(person).to_slug}.jpg"
     end
 
     # Fetch all the attributes of the company item.
