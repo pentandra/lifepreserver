@@ -232,7 +232,7 @@ Here's a tiny example:
     rdfs:label "<%= full_name(me) %>"@en ;
     foaf:familyName "<%= me[:last_name] %>"@en ;
     foaf:givenName "<%= me[:first_name] %>"@en ;
-    foaf:img &lt;<%= photo_url(me) %>&gt; ;
+    foaf:img &lt;<%= photo_url(me, global: true) %>&gt; ;
     foaf:mbox &lt;mailto:<%= me[:email] %>&gt; ;
     foaf:name "<%= full_name(me) %>"@en ;
     cc:license &lt;https://creativecommons.org/licenses/by/4.0/&gt; .

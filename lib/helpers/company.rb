@@ -29,8 +29,8 @@ module LifePreserver
       "#{@config[:company][:page_url]}/##{full_name(person).to_slug}"
     end
 
-    def photo_url(person)
-      "#{@config[:site][:images_url]}/#{full_name(person).to_slug}.jpg"
+    def photo_url(person, global: false)
+      "#{@config[:base_url] if global}#{@config[:site][:images_url]}/#{full_name(person).to_slug}.jpg"
     end
 
     # Fetch all the attributes of the company item.
