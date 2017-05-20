@@ -105,7 +105,7 @@ environments:
       name: Pentandra
       motto: Breaking Research Barriers
       recent_thoughts_limit: 5
-      generate_blogmeta: true
+      generate_meta: true
       base_url: *base_url
       images_url: /images
 
@@ -115,7 +115,7 @@ environments:
     site: # Simplify dependencies for quicker compilation during development
       <<: *site
       recent_thoughts_limit: 0
-      generate_blogmeta: false
+      generate_meta: false
 
     context2pdf:
       debug: true
