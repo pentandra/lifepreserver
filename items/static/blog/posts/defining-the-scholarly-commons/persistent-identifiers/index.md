@@ -4,15 +4,33 @@ description: To be or not to be. Is persistent identification really the questio
 kind: vignette
 author_name: Chris Chapman
 created_at: 2017-05-11
-updated_at: 2017-05-17
+updated_at: 2017-05-18
 part_of_series_id: '/static/blog/posts/defining-the-scholarly-commons/index.*'
 tags:
   - Defining the Commons
   - Technology
+  - World Wide Web
 ---
 
+A lot of scholarly infrastructure is set up right now around DOIs, and they
+have, and are gaining momentum as mechanisms of citability. But do we
+explicitly design a system around _coolness factor_ when it introduces barriers
+to use and does not offer any non-proprietary technical advantage? DOIs have
+some significant barriers to use, and I'm not yet convinced that they fit in
+the culture of the commons.
+
 I want to look at persistent identifiers here through the lens of barriers to
-participation.
+participation. As we try to create this new culture of open scholarship, the
+DOI system becomes more and more of a visible misfit and barrier to progress.
+It was not designed for open scholarship or scholarly commoning, and is a poor
+fit for it because it was designed to centralize power and decision-making,
+making it difficult for just anyone to participate in the system.
+
+I apologize in advance for the number of acronyms in this post.
+
+<!--MORE-->
+
+# A question of control
 
 Of course its really easy to get a DOI. All you have to do is go drop your
 stuff in a repository! What's so bad about that? This isn't an issue of owning
@@ -27,34 +45,24 @@ Both are currently dependent on DNS for resolution. Either could support
 multiple resolution mechanisms, and URIs have a native resolution mechanism.
 DOI doesn't have a native mechanism, and according to Larry Stone, it
 'currently needs the crutch of HTTP proxies which have the same DNS naming
-problem'. [Stone's evaluation][stone evaluation] was largely based on
-contemporary and now largely irrelevant implementation details. And some things
-he mentions are just plain wrong. He is right in saying that we shouldn't rely
-on PURLs to attach truly archival, long-lived names to network-accessible
-resources. Let's just archive the resources and use the URIs to identify them
-directly!
+problem'.[^stone-evaluation]
 
-But there is a deeper problem with DOI that wasn't seen in these early days of
-the Web, and one which DNS miraculously managed to escape (in large part thanks
-to [David Holtzman]), one that I think is much more subtle and sinister, and
-more of a barrier to a free and open culture of scholarship. DOIs were created
-with an explicit barrier to entry, one that was placed high deliberately. The
-DOI System was designed in order [for publishers to interoperate with other
-publishers][crossref] to unambiguously identify PDF products. This is not
+But there is a deeper problem with DOI that wasn't as apparent in these early
+days of the Web, one that I think is much more subtle and sinister, and more of
+a barrier to a free and open culture of scholarship. DOIs were created with an
+explicit barrier to entry, one that was placed high deliberately. The DOI
+System was designed in order [for publishers to interoperate with other
+publishers][crossref] to unambiguously identify business products. This is not
 intrinsically bad, and as a system of identification, it is a nice system for
-for what it was designed. The DOI created a centralized, proprietary Web of
-research products. Even though it wasn't designed for this, the DOI has turned
-into a proprietary lock-in mechanism that keeps publishers in control.
-
-All of this makes sense if you understand that the DOI system was [designed for
-proprietary B2B interactions][crossref] and not as something that just anyone
-could create and use in a global context.
-
-But as we try to create this new culture of open scholarship, the DOI system
-becomes more and more of a visible misfit and barrier to progress. It was not
-designed for open scholarship or scholarly commoning, and is a poor fit for it
-because it was designed to centralize power and decision-making, making it
-difficult for just anyone to participate in the system.
+for what it was designed. The DOI created a centralized, proprietary registry
+of research products. It was never designed to be a researcher-facing
+identification scheme or something that just anyone could create and use in a
+global context. As it has become more visible to researchers and even the
+public however, the DOI has taken on the ad hoc role of saying what counts as
+scholarship and delineating the scholarly record,[^herbert-doi-comment] and
+with the rise of publisher-supported SaaS products where DOIs can be created
+for free, the DOI is quickly becoming a proprietary lock-in mechanism to keep
+publishers in control.
 
 The [ISO 26324][DOI standard] is a standard, but not an open standard, as the
 last time I checked it costs 88 CHF to purchase it directly if you are not an
@@ -69,24 +77,90 @@ find any information on how to become a member of the DOI system on
 Wikipedia](https://en.wikipedia.org/wiki/Digital_object_identifier), so if any
 registrars would like to fill me in, I'd love to know.
 
+The DOI System was designed for a closed, centralized world, in which it made
+more sense to have resources on the Web located at only one point of reference
+to eliminate unneeded duplication and maximize efficiency of storage. This
+approach also played well with need to induce artificial scarcity through the
+use of paywalls.
+
+In fact, the DOI System is already being brilliantly repurposed by ImpactStory,
+who has set up [a DOI resolver service][oadoi] that redirects DOIs to
+alternative, open versions of research papers.
+
+# Inversion of control
+
+In my vision of the Scholarly Commons, I see parallels between where we are now
+to what the Scholarly Commons could be and the transition of a tiny, centrally
+administered [ARPANET][] to a colossal, open, distributed Internet. At the time
+of the [depiction below](#arpanet-in-1977), there were less than
+[200]{.oldstyle} nodes on the network. In these early days, if you wanted to
+add a host to the network, you had to call [Elizabeth Feinler][] at the Network
+Information Center at Stanford University during business hours. If your host
+was eligible to connect to the ARPANET, your host's name and assigned IP
+address were then added to a centralized text file. To discover and communicate
+with your host, every other computer on the ARPANET periodically downloaded
+this file via FTP.
+
+<figure id="arpanet-in-1977" property="schema:sharedContent" resource="#arpanet-in-1977" typeof="schema:ImageObject">
+  <img alt="A diagram of the ARPANET in March 1977, composed of nodes, depicted as rectangular labeled boxes, connected together by lines, representing networked circuits." class="simple" src="Arpanet_logical_map,_march_1977.png" />
+  <figcaption>A top-down logical map of ARPANET, the predecessor of the Internet, forty years ago this year.</figcaption>
+</figure>
+
+It did not take long for this centralized approach to become unwieldy. By
+[1983]{.oldstyle}, [Jon Postel][] and [Paul Mockapetris][] had come up with a
+solution. It was bold and forward-thinking---quite different than the status
+quo. Here is some of the language of the proposal:
+
+<figure id="the-need-for-a-consistent-name-space" class="bq grab">
+
+> The basic need is for a consistent name space which will be used for
+> referring to resources. ... The sheer size of the database and frequency of
+> updates suggest that it must be maintained in a distributed manner, with
+> local caching to improve performance. Approaches that attempt to collect a
+> consistent copy of the entire database will become more and more expensive
+> and difficult, and hence should be avoided. The same principle holds for the
+> structure of the name space, and in particular mechanisms for creating and
+> deleting names; these should also be distributed.
+
+<figcaption>From RFC [882]{.oldstyle}: <cite>Domain Names -- Concepts and Facilities</cite>, [1983]{.oldstyle}</figcaption>
+</figure>
+
+It is a little hard to understand, from our perspective in time, what this
+proposal meant to Paul and Jon, or to those that worked in the Network
+Information Center. They were essentially handing over control of the network
+_to the network_, hoping that this would help it grow. This was hardly
+anarchy---the proposal for the Domain Name System was quite prescriptive in how
+it would work and interoperate, but it was very deliberate in its approach to
+distributing authority and power.
+
 DOIs are centrally maintained by a trusted third party, whereas DNS is
-decentralized and is trusted because no one controls it. The social problem is
-bigger and harder to overcome than the technical one. The issue is less about
-how well the system will persist into the future than what that system is
-enabling or disabling _right now_.
+decentralized and is trusted because no one controls it.
+
+The social problem is bigger and harder to overcome than the technical one. The
+issue is less about how well the system will persist into the future than what
+that system is enabling or disabling _right now_.
+
+<figure id="the-second-rule-of-linked-data" class="bq grab">
+
+> The second rule, to use HTTP URIs, is also widely understood. The only
+> deviation has been, since the web started, a constant tendency for people to
+> invent new URI schemes (and sub-schemes within the `urn:`{.code} scheme) such
+> as LSIDs and handles and XRIs and DOIs and so on, for various reasons.
+> Typically, these involve not wanting to commit to the established Domain Name
+> System (DNS) for delegation of authority but to construct something under
+> separate control. Sometimes it has to do with not understanding that HTTP
+> URIs are names (not addresses) and that HTTP name lookup is a complex,
+> powerful and evolving set of standards. This issue discussed at length
+> elsewhere, and time does not allow us to delve into it here.
+
+<figcaption>The second rule (or expectation of behavior) of Linked Data, by Tim Berners-Lee, [2006]{.oldstyle}</figcaption>
+</figure>
 
 The DOI people may have had some form of intellectual foresight when it came to
 not relying on the Web, but they lacked foresight or understanding of the
 social aspect of research, because they thought of research in the paper
 paradigm, as controlled by institutions. Whatever the intellectual shortcomings
 of DNS, they got the social aspect right.
-
-The DOI System was designed for a world in which it made more sense to have
-resources on the Web located at only one point of reference to eliminate
-unneeded duplication and maximize efficiency of storage. This approach also
-played well with the artificial scarcity enforced by paywalls. IPFS does not
-eliminate this 'unneeded' duplication of resources. It only calls it by a
-different name.
 
 ICANN has a lower barrier to entry.
 
@@ -100,59 +174,100 @@ approaches such as using the PDF as the container for scholarly communication.
 All of the benefits of using the DOI system for scholarship---object
 identification, metadata model, and social infrastructure---are more openly,
 universally, and robustly provided by the W3C's open linked data
-infrastructure. Why do something else?
+infrastructure.
 
 DOI is not specific to the needs of scholarship, and is not a full solution to
 the requirements of the scholarly record. While resolution is open to all,
 creation of the identifiers is not.
 
-While the answers are most likely multi-faceted, and dependent on the
-situation, I think that there are some principles and rationale to think about,
-what should help direct the best path forward. I know there is a lot of
-infrastructure set up right now around DOIs, and that they have, and are
-gaining momentum as mechanisms of citability. But do we explicitly design a
-system around 'coolness factor' when it introduces barriers to use and does not
-offer any non-proprietary technical advantage? DOIs have some significant
-barriers to use, and I'm not yet convinced that they fit in the culture of the
-commons. Here are a few reasons why:
+# A deeper look at persistence
 
-- They do not preserve, at least for humans, the structure of the information
-  that they represent.
-- Technically, there is nothing special about a DOI over a URI.
-- Sarven Capadisli has a few other good things to say about this.
-- From a good annotation by Herbert Van de Sompel on the above article:
-  'Somehow, DOIs have taken on the role of delineating the scholarly record,
-  making recognizable what is and what is not part of the record. They were not
-  intended to provide that functionality but they somehow have taken on that
-  role in an ad-hoc manner.' I think we need a more robust solution for
-  delineating the scholarly record, and that DOIs are not it.
-- The scholarly record needs to include more than citations to large-grain
-  articles, and the various implementations of the DOI are not reliable when it
-  comes to passing parameters or fragment identifiers, and component DOIs are
-  not a solution for this either. Hypothes.is and the W3C have a more
-  universally working approach for fine-grained identification of annotated
-  fragments with robust anchors and direct links.
-- There is an element here of social ownership, and the Social Web community is
-  quick to point out that POSSE (Publish on Own Site, Syndicate Elsewhere)
-  preserves the canonical origin of digital content, and makes sense to
-  preserve this ownership conceptually and technically if possible. Without
-  this we lose the implicit trust built into the Web architecture. (For
-  example, right now, what is stopping anyone from publishing something with a
-  DOI and impersonating you using your ORCiD id? This would be much harder to
-  do if they had to publish it under a domain that you controlled.)
-- Distributed web archiving is a simpler, more universal, and more stable
-  solution than relying on the publisher-maintained citation indirection
-  architecture of DOIs.
+We need to embrace the Wild World Web with all its inconsistency and
+unavailability if we are going to find a real solution to this universal
+problem. If we look at the World Wide Web as a vast [distributed data store],
+we can then apply Eric Brewer's [CAP theorem] to the problem, which essentially
+states that _in the presence of a network partition, one has to choose between
+consistency and availability_. Framing the Web this way would allow us to
+define a broken link as an information resource with an availability problem.
+And as far as consistency goes, with a state that constantly fluxing between
+convergence and divergence, I don't have much hope that the Web will ever
+achieve perfect global consistency, perhaps not even _eventually_. I'm not even
+sure that's what we want.
 
-However, I also understand that there are times to be pragmatic. Researchers
-choose DOIs because they provide a solution to two problems: persistence and
-identification.
+To this problem, the DOI system offers a naive solution because it assumes that
+these resources will always be available in a consistent form somewhere on the
+Internets. It tries to solve the availability problem using a redirection
+layer, but this does not solve the problem---it only shifts the responsibility
+for the problem and control to the entities that meet the contractual
+obligations of the DOI system, with the side effect of adding another potential
+(technical) point of failure that must be maintained: the redirection links. We
+are putting ourselves in the situation where we are tying ourselves to the
+publishers, committing to play by their rules because we don't want all our
+links to break. Beyond that, the DOI system does not address the consistency
+guarantee, but just makes the assumption that these resources don't change
+after they receive an identifier, which is often not the case, and will
+increasingly _not_ be the case as scholarly communication becomes more dynamic.
 
-that not everyone has a namespace on the Web that is under their control. So my
-opinion on this is that it is better to create your own identifiers using a
-namespace under your control if you have it, and if you don't have control of a
-namespace or if you need a DOI for compatibility with a legacy tool, fall back
-to DOI (yes, I'm seeing a decision tree for this in the future ;-).
+So what do we do? Is there any hope for the Web as a stable medium for research
+or scholarly communication? I think that the answer to this question is _yes_,
+but we need to look deeper here at what is really going on. In the context of
+research and scholarly communication, availability and consistency should be
+thought of as having ready access to see what the researcher saw at the time
+she did her research.
+
+The solution here is simple: get rid of the network partition. Linked Data
+resources already do this for data. Unlike the Web of Documents where web pages
+are hosted by servers partitioned by namespaces, and availability of each web
+server is needed to access each resource, Linked Data is able to represent
+useful data and relationships across multiple namespaces within one resource.
+Here's a tiny example:
+
+<% me = person_by_name(@item[:author_name]) %>
+``` {#tiny-web-of-data .turtle}
+@prefix cc: &lt;https://creativecommons.org/ns#&gt; .
+@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+&lt;<%= iri_for(me) %>&gt; a foaf:Person ;
+    rdfs:label "<%= full_name(me) %>"@en ;
+    foaf:familyName "<%= me[:last_name] %>"@en ;
+    foaf:givenName "<%= me[:first_name] %>"@en ;
+    foaf:img &lt;<%= photo_url(me) %>&gt; ;
+    foaf:mbox &lt;mailto:<%= me[:email] %>&gt; ;
+    foaf:name "<%= full_name(me) %>"@en ;
+    cc:license &lt;https://creativecommons.org/licenses/by/4.0/&gt; .
+```
+
+If I have access to [this example resource](#tiny-web-of-data) from this one
+server, I can see linked data described in four different namespaces without
+needing access to four separate servers. If I use a reasoner which has some
+knowledge of the data within this tiny web of data, it can make inferences and
+create more knowledge without needing ready access to any other remotely hosted
+resources directly---the data is independent of the hosts that describe the
+data. The server hosting the <https://creativecommons.org/ns#> resource could
+be down and the ontology unavailable, and the data would still be interoperable
+(the <abbr>I</abbr> in FAIR) as long as I had a local copy of the data file.
+For the reusability (and reproducibility) aspect of research (the
+<abbr>R</abbr> in FAIR), the need for preservation enters the picture here. We
+need a way to preserve the sources upon which the researcher is basing claims.
+If we can preserve not only the research, but the blocks upon which that
+research builds, we will always have access to all the resources, whether or
+not they are currently available at their original locations. If we remove the
+network partition and preserve the sources locally as the research dependencies
+are created, all of those resources will be guaranteed to be locally consistent
+and available. The [PACELC theorem], which builds upon the CAP theorem, states
+that _a high availability requirement implies that the system must replicate
+data_. How to actually do this replicating is a different topic (and relates to
+the <abbr>F</abbr> and <abbr>A</abbr> of FAIR), and could happen in various
+ways, from web archiving to IPFS. But it should be obvious by now that mere
+citations of resources are not enough, irrespective of the 'archival quality'
+of the identifier scheme. We need to realize that citation systems originated
+in the scarcity of the paper publication paradigm, where it really was not
+feasible to distribute all of the research dependencies alongside each research
+paper. With the technologies that exist and are emerging, we have an amazing
+opportunity _and responsibility_ to do this better.
+
+# The need for resolution
 
 It is the resolution aspect of this that researchers really care about, and
 that offers any advantage over URI. But the DOI web is also unwieldy and prone
@@ -173,11 +288,6 @@ low-maintenance way: distributed web archiving.
 
 What is more important is to have persistent identifiers, which any
 identification system should provide.
-
-The DOI system was made for a perfect world that is closed and centrally
-managed. It was made at a time when the idea of a World Wide Web was a bit more
-unstable. It was made at a time when web archiving wasn't even a thing, let
-alone a possible solution.
 
 social infrastructure (DOI names are backed by an organization dedicated to
 their growth and survival) is good, but not enough.
@@ -212,6 +322,60 @@ original location, with the only sacrifice being a little more disk space. A
 great living example of this is <https://via.hypothes.is>, which creates an
 archival snapshot of each page before it is annotated.
 
+---
+
+- They do not preserve, at least for humans, the structure of the information
+  that they represent.
+- Technically, there is nothing special about a DOI over a URI.
+- Sarven Capadisli has a few other good things to say about this.
+- From a good annotation by Herbert Van de Sompel on the above article:
+  'Somehow, DOIs have taken on the role of delineating the scholarly record,
+  making recognizable what is and what is not part of the record. They were not
+  intended to provide that functionality but they somehow have taken on that
+  role in an ad-hoc manner.' I think we need a more robust solution for
+  delineating the scholarly record, and that DOIs are not it.
+- The scholarly record needs to include more than citations to large-grain
+  articles, and the various implementations of the DOI are not reliable when it
+  comes to passing parameters or fragment identifiers, and component DOIs are
+  not a solution for this either. Hypothes.is and the W3C have a more
+  universally working approach for fine-grained identification of annotated
+  fragments with robust anchors and direct links.
+- There is an element here of social ownership, and the Social Web community is
+  quick to point out that POSSE (Publish on Own Site, Syndicate Elsewhere)
+  preserves the canonical origin of digital content, and makes sense to
+  preserve this ownership conceptually and technically if possible. Without
+  this we lose the implicit trust built into the Web architecture. (For
+  example, right now, what is stopping anyone from publishing something with a
+  DOI and impersonating you using your ORCiD id? This would be much harder to
+  do if they had to publish it under a domain that you controlled.)
+- Distributed web archiving is a simpler, more universal, and more stable
+  solution than relying on the publisher-maintained citation indirection
+  architecture of DOIs.
+
+---
+
+# In all practicality...
+
+However, I also understand that there are times to be pragmatic. Researchers
+choose DOIs because they provide a solution to two problems: persistence and
+identification.
+
+that not everyone has a namespace on the Web that is under their control. So my
+opinion on this is that it is better to create your own identifiers using a
+namespace under your control if you have it, and if you don't have control of a
+namespace or if you need a DOI for compatibility with a legacy tool, fall back
+to DOI (yes, I'm seeing a decision tree for this in the future ;-).
+
+If the publishers are able to provide a quick and easy way to do this, it
+should be possible to do this in an open way as well.
+
+# Conclusion
+
+The DOI system was made for a perfect world that is closed and centrally
+managed. It was made at a time when the idea of a World Wide Web was a bit more
+unstable. It was made at a time when web archiving wasn't even a thing, let
+alone a possible solution.
+
 In the Commons, whatever you are building on should be available, so that as
 you build on it, you retain an archived representation. Think of the things you
 build upon as dependencies. Most often when trying to view a resource that has
@@ -222,18 +386,11 @@ not necessitating all of this stuff to perpetually remain available at its
 original location. It will never break. There is still work to be done in this
 area, but it seems like what the Commons should enable.
 
-Content format becomes more important than ready resolution. So we need to pick
-formats that are ubiquitous to allow the most likelihood that these types will
-be supported into the future.
-
 It's not that the Scholarly Commons prefers one system over another. But it is
 that the Scholarly Commons prefers that which provides the least barriers to
 participation. The other end of the stick is that the Scholarly Commons should
 support whatever identifiers exist from whatever identification schemes exist.
 Preferring and supporting are two different things.
-
-If the publishers are able to provide a quick and easy way to do this, it
-should be possible to do this in an open way as well.
 
 [DOI standard]: <https://www.iso.org/standard/43506.html> "Digital object identifier system ISO standard"
 [DOI standardization announcement]: <https://www.iso.org/news/2012/05/Ref1561.html>
@@ -244,3 +401,21 @@ should be possible to do this in an open way as well.
 [David Holtzman]: <http://www.pittmag.pitt.edu/spring2005/feature3.html>
 [bad boys]: <http://www.nytimes.com/2001/04/23/business/technology-Internet-bad-boy-takes-on-a-new-challenge.html>
 [stone evaluation]: <http://web.mit.edu/handle/www/purl-eval.html>
+[distributed data store]: <https://en.wikipedia.org/wiki/Distributed_data_store> "Distributed data store on Wikipedia"
+[cap theorem]: <https://en.wikipedia.org/wiki/CAP_theorem> "CAP theorem on Wikipedia"
+[pacelc theorem]: <https://en.wikipedia.org/wiki/PACELC_theorem> "PACELC theorem on Wikipedia"
+[Paul Mockapetris]: <https://en.wikipedia.org/wiki/Paul_Mockapetris> "Paul Mockapetris on Wikipedia"
+[Linked Data]: <https://www.w3.org/DesignIssues/LinkedData.html> "Linked Data, by Tim Berners-Lee"
+[oadoi]: <https://oadoi.org>
+[Elizabeth Feinler]: <https://en.wikipedia.org/wiki/Elizabeth_J._Feinler> "Elizabeth Feinler was the director of the Network Information Center during the ARPANET"
+[Jon Postel]: <https://en.wikipedia.org/wiki/Jon_Postel>
+[arpanet]: <https://en.wikipedia.org/wiki/ARPANET> "ARPANET on Wikipedia"
+
+[^herbert-doi-comment]: See <http://csarven.ca/web-science-from-404-to-200#1186379419> for an excellent comment by Herbert Van de Sompel.
+
+[^stone-evaluation]:  [Stone's evaluation][stone evaluation] was largely based
+  on contemporary and now largely irrelevant implementation details. And some
+  things he mentions are just plain wrong. He is right in saying that we
+  shouldn't rely on PURLs to attach truly archival, long-lived names to
+  network-accessible resources. Let's just archive the resources and use the
+  URIs to identify them directly!
