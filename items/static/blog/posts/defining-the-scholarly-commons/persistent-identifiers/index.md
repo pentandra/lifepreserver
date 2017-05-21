@@ -4,7 +4,7 @@ description: To be or not to be. Is persistent identification really the questio
 kind: vignette
 author_name: Chris Chapman
 created_at: 2017-05-11
-updated_at: 2017-05-18
+updated_at: 2017-05-20
 part_of_series_id: '/static/blog/posts/defining-the-scholarly-commons/index.*'
 tags:
   - Defining the Commons
@@ -131,7 +131,9 @@ Information Center. They were essentially handing over control of the network
 _to the network_, hoping that this would help it grow. This was hardly
 anarchy---the proposal for the Domain Name System was quite prescriptive in how
 it would work and interoperate, but it was very deliberate in its approach to
-distributing authority and power.
+distributing authority and power. Can you imagine what the Internet would be
+like today if they hung onto that control, even out of good intentions, and you
+had to request a domain name through the US Department of Defense?
 
 DOIs are centrally maintained by a trusted third party, whereas DNS is
 decentralized and is trusted because no one controls it.
