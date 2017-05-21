@@ -133,7 +133,7 @@ anarchy---the proposal for the Domain Name System was quite prescriptive in how
 it would work and interoperate, but it was very deliberate in its approach to
 distributing authority and power. Can you imagine what the Internet would be
 like today if they hung onto that control, even out of good intentions, and you
-had to request a domain name through the US Department of Defense?
+had to request a domain name through the United States Department of Defense?
 
 DOIs are centrally maintained by a trusted third party, whereas DNS is
 decentralized and is trusted because no one controls it.
