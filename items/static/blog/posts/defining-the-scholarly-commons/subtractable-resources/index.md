@@ -4,7 +4,7 @@ description: Is there a subtractable resource in your scholarly commons? Yes, th
 kind: vignette
 author_name: Chris Chapman
 created_at: 2017-04-20
-updated_at: 2017-05-03
+updated_at: 2017-05-22
 tags:
   - Defining the Commons
 ---
@@ -92,15 +92,17 @@ is about managing the _waves_, if the subtractable resource of scholarly
 commons is really the discoveries, then the Scholarly Commons is not as much
 about 'managing the outputs of research at every stage of the research process'
 as it is about managing the _process of discovery_. Though this difference may
-seem subtle and insignificant, this change in focus _exposes the
-subtractability of discoveries in a more efficient way_, meaning that
-discoveries will happen in the open for everyone to watch unfold in realtime,
-rather than happening privately and only hearing about them later on. At any
-point in time, anyone that desires to contribute will have the option to
-participate directly in the unfolding. Not only will this accelerate research
-in an unprecedented way, it will also affect the entire approach to defining
-the Scholarly Commons, distributing power from the hands of a few to the hands
-of many, and making scholarly commons of much greater benefit to mankind.
+seem subtle and insignificant, the Scholarly Commons exposes the
+_subtractability of discoveries_ in a more efficient way than does the current
+sytem, meaning that there will be opportunity that did not exist before for
+anyone who desires to participate openly in the unfolding of discoveries.
+Discoveries will happen in the open, for anyone to to watch unfold in realtime,
+unlike how they happen now: privately, behind closed doors, and only hearing
+about them later on. If we can understand the implications of what this means,
+it will change our entire understanding of what the Scholarly Commons is, as
+well as direct our approach to defining it. Not only will scholarly commons
+accelerate research in an unprecedented way, distributing power from the hands
+of a few to the hands of many, they will be of much greater benefit to mankind.
 
 [collectives]: <https://cybersocialstructure.org/2016/10/03/think-of-science-like-an-incurable-intellectual-disease/> "Think of science like an incurable intellectual disease, by Bruce Caron"
 [surfing commons]: <http://www.onthecommons.org/magazine/surfing-commons-hawaii>
