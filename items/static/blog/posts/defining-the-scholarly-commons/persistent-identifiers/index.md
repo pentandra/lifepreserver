@@ -409,9 +409,10 @@ Preferring and supporting are two different things.
 [Paul Mockapetris]: <https://en.wikipedia.org/wiki/Paul_Mockapetris> "Paul Mockapetris on Wikipedia"
 [Linked Data]: <https://www.w3.org/DesignIssues/LinkedData.html> "Linked Data, by Tim Berners-Lee"
 [oadoi]: <https://oadoi.org>
-[Elizabeth Feinler]: <https://en.wikipedia.org/wiki/Elizabeth_J._Feinler> "Elizabeth Feinler was the director of the Network Information Center during the ARPANET"
+[Elizabeth Feinler]: <https://en.wikipedia.org/wiki/Elizabeth_J._Feinler> "Elizabeth Feinler was the director of the Network Information Center during the ARPANET era"
 [Jon Postel]: <https://en.wikipedia.org/wiki/Jon_Postel>
 [arpanet]: <https://en.wikipedia.org/wiki/ARPANET> "ARPANET on Wikipedia"
+[LOCKSS]: <https://en.wikipedia.org/wiki/LOCKSS> "LOCKSS on Wikipedia"
 
 [^herbert-doi-comment]: See <http://csarven.ca/web-science-from-404-to-200#1186379419> for an excellent comment by Herbert Van de Sompel.
 
