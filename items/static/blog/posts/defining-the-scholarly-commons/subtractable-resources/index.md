@@ -4,7 +4,7 @@ description: Is there a subtractable resource in your scholarly commons? Yes, th
 kind: vignette
 author_name: Chris Chapman
 created_at: 2017-04-20
-updated_at: 2017-05-22
+updated_at: 2017-05-24
 tags:
   - Defining the Commons
 ---
@@ -90,19 +90,23 @@ opportunities of service, and many more ways to contribute.
 And just as the surfing commons is not as much about managing the _water_ as it
 is about managing the _waves_, if the subtractable resource of scholarly
 commons is really the discoveries, then the Scholarly Commons is not as much
-about 'managing the outputs of research at every stage of the research process'
-as it is about managing the _process of discovery_. Though this difference may
-seem subtle and insignificant, the Scholarly Commons exposes the
-_subtractability of discoveries_ in a more efficient way than does the current
-sytem, meaning that there will be opportunity that did not exist before for
-anyone who desires to participate openly in the unfolding of discoveries.
-Discoveries will happen in the open, for anyone to to watch unfold in realtime,
-unlike how they happen now: privately, behind closed doors, and only hearing
-about them later on. If we can understand the implications of what this means,
-it will change our entire understanding of what the Scholarly Commons is, as
-well as direct our approach to defining it. Not only will scholarly commons
-accelerate research in an unprecedented way, distributing power from the hands
-of a few to the hands of many, they will be of much greater benefit to mankind.
+about _managing the outputs of research at every stage of the research process_
+as it is about managing the _process of discovery_. If we can understand the
+implications of this subtle difference, it will change our entire understanding
+of what the Scholarly Commons is, as well as direct our approach to defining
+it. This understanding makes the Scholarly Commons much more of a game changer
+than many of us are currently imagining. It is not as much about the flow of
+scholarly objects---the Scholarly Commons changes the nature of the hunt. The
+Scholarly Commons _exposes the subtractability of discoveries in a more
+efficient way_ than does the current system, meaning that opportunity exists
+that did not exist before, for anyone who desires to play, to participate
+openly in the unfolding of discoveries. Discoveries will happen in the open,
+for anyone to to watch unfold in realtime, unlike how they happen now:
+privately, behind closed doors, and we only hearing about them later on. If we
+approach the definition of the Scholarly Commons in this way, it will
+accelerate research in an unprecedented way, distribute power from the hands of
+a few to the hands of many, and ultimately will be of much greater benefit to
+mankind.
 
 [collectives]: <https://cybersocialstructure.org/2016/10/03/think-of-science-like-an-incurable-intellectual-disease/> "Think of science like an incurable intellectual disease, by Bruce Caron"
 [surfing commons]: <http://www.onthecommons.org/magazine/surfing-commons-hawaii>
