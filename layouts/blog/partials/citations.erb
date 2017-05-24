@@ -3,7 +3,7 @@
   <h3 class="big">Citations</h3>
   <p>If you're into copy and paste, use these snippets, listed here in order of decreasing universality, to link to or cite this post.</p>
   <label>
-    <span class="newthought">direct link</span> to this <%= item.fetch(:kind) %>
+    <abbr title="Universal Resource Identifier">URI</abbr> of this <%= item.fetch(:kind) %>
     <input readonly="readonly" class="bookmark u-uid u-url uri" type="url" value="<%= "#{path_to(item, global: true)}##{item.fetch(:kind)}" %>">
   </label>
   <label>
