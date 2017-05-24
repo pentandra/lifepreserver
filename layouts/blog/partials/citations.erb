@@ -17,13 +17,13 @@
   <label>
     <abbr title="A TeX extension package for bibliographic citations">BibTeX</abbr>
     <textarea rows="10" readonly="readonly" class="code" wrap="off">
-<% if %w(article essay vignette blogpost).include?(item[:kind]) %>
-@article{<%= bibtex_key(item, author) %>,
-  journal = {<%= @config[:site][:name] %>},
-<% elsif item[:kind] == 'note' %>
+<% if item[:kind] == 'note' %>
 @misc{<%= bibtex_key(item, author) %>,
 <% elsif item[:kind] == 'presentation' %>
 @inproceedings{<%= bibtex_key(item, author) %>,
+<% else %>
+@article{<%= bibtex_key(item, author) %>,
+  journal = {<%= @config[:site][:name] %>},
 <% end %>
   title = {<%= item[:title] %>},
   author = {<%= [author.fetch(:last_name), author.fetch(:first_name)].join(', ') %>},
