@@ -4,7 +4,7 @@ description: To be or not to be. Is persistent identification really the questio
 kind: vignette
 author_name: Chris Chapman
 created_at: 2017-05-11
-updated_at: 2017-05-24
+updated_at: 2017-05-25
 part_of_series_id: '/static/blog/posts/defining-the-scholarly-commons/index.*'
 tags:
   - Defining the Commons
@@ -119,8 +119,8 @@ DOI doesn't have a native mechanism, and according to Larry Stone, it
 problem'.[^stone-evaluation] [Stone's evaluation][stone evaluation] was largely
 based on contemporary and now largely irrelevant implementation details. He did
 not foresee Web-scale archiving initiatives, and some things he mentions are
-just plain wrong. If you want to look at the arguments in favor of HTTP URIs,
-check out [this article][myRI].
+just plain wrong. If you want to look at the arguments to which Berners-Lee was
+referring, check out [this article][myRI].
 
 A DOI, like a URI, is a just unique name, and can be reused in other contexts.
 There is nothing that requires a DOI to resolve to some normative document, so
@@ -193,9 +193,10 @@ had to request a domain name through the United States Department of Defense?
 
 DOIs are centrally maintained by a trusted third party, which is fine if you
 actually trust (and continue to trust) the third party. DNS is decentralized
-and is trusted because no one controls it, leading to this idea of
-_trustlessness_. In the DOI system, the institutions and publishers are in
-control; in the DNS, the control is distributed.
+and is trusted because no one controls it. This is the basic idea behind the
+word <dfn id="def:trustlessness">trustlessness</dfn>. In the DOI system, the
+institutions and publishers are in control; in the DNS, the control is
+distributed.
 
 Whatever the intellectual shortcomings of DNS, they got the social aspect
 right. The social problem is bigger and harder to overcome than the technical
@@ -227,18 +228,18 @@ convergence and divergence, I don't have much hope that the Web will ever
 achieve perfect global consistency, perhaps not even _eventually_. I'm not even
 sure that's what we want.
 
-To this problem, the DOI system offers a naive solution because it assumes that
-these resources will always be available in a consistent form somewhere on the
-Internets. It tries to solve the availability problem using a redirection
-layer, but this does not solve the problem---it only shifts the responsibility
-for the problem and control to the entities that meet the contractual
-obligations of the DOI system, with the side effect of adding another potential
-(technical) point of failure that must be maintained: the redirection links. We
-are putting ourselves in the situation where we are tying ourselves to the
-publishers, committing to play by their rules because we don't want all our
-links to break. Beyond that, the DOI system does not address the consistency
-guarantee, but just makes the assumption that these resources don't change
-after they receive an identifier, which is often not the case, and will
+In answer to this problem, the DOI system offers a naive solution because it
+assumes that these resources will always be available in a consistent form
+somewhere on the Internets. It tries to solve the availability problem using a
+redirection layer, but this does not solve the problem---it only shifts the
+responsibility for the problem and control to the entities that meet the
+contractual obligations of the DOI system, with the side effect of adding
+another potential (technical) point of failure that must be maintained: the
+redirection links. We are putting ourselves in the situation where we are tying
+ourselves to the publishers, committing to play by their rules because we don't
+want all our links to break. Beyond that, the DOI system does not address the
+consistency guarantee, but just makes the assumption that these resources don't
+change after they receive an identifier, which is often not the case, and will
 increasingly _not_ be the case as scholarly communication becomes more dynamic.
 
 So what do we do? Is there any hope for the Web as a stable medium for research
@@ -361,7 +362,6 @@ archival snapshot of each page before it is annotated.
 
 - They do not preserve, at least for humans, the structure of the information
   that they represent.
-- Technically, there is nothing special about a DOI over a URI.
 - Sarven Capadisli has a few other good things to say about this.
 - From a good annotation by Herbert Van de Sompel on the above article:
   'Somehow, DOIs have taken on the role of delineating the scholarly record,
@@ -406,6 +406,26 @@ should be possible to do this in an open way as well.
 
 # Conclusion
 
+To sum up...
+
+* Both DOIs and HTTP URIs are names that can be used to identify objects.
+Technically, there is nothing special about a DOI over a URI.
+* Both DOIs and HTTP URIs currently rely on DNS to resolve objects, but could
+use any other type of resolution mechanism if desired. Neither depends on any
+underlying infrastructure or technology (HTTP URIs do not depend on HTTP).
+* The DOI system was designed with centralization in mind, and with an explicit
+barrier to participation. The DNS was designed to distribute authority and
+control.
+* In current practice, DOIs are resolved locally in a centralized way, and then
+delegate to DNS to do the actual global HTTP resolution. This is redundant
+infrastructure and just adds another layer of links to maintain and keep from
+breaking.
+* We need an effective and robust mechanism to manage research dependencies,
+because it is possible to resolve any type of object locally, in a distributed
+way.
+* We need institutions and publishers to act in a supporting, not controlling
+manner.
+
 The DOI system was made for a perfect world that is closed and centrally
 managed. It was made at a time when the idea of a World Wide Web was a bit more
 unstable. It was made at a time when web archiving wasn't even a thing, let
@@ -425,7 +445,8 @@ It's not that the Scholarly Commons prefers one system over another. But it is
 that the Scholarly Commons prefers that which provides the least barriers to
 participation. The other end of the stick is that the Scholarly Commons should
 support whatever identifiers exist from whatever identification schemes exist.
-Preferring and supporting are two different things.
+Preferring and supporting are two different things. In short, the Scholarly
+Commons follows the robustness principle.
 
 [DOI]: <https://en.wikipedia.org/wiki/Digital_object_identifier> "Digital Object Identifier on Wikipedia"
 [The DOI Website]: <www.doi.org>
