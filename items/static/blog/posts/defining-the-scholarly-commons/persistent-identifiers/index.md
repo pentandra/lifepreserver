@@ -242,9 +242,18 @@ consistency guarantee, but just makes the assumption that these resources don't
 change after they receive an identifier, which is often not the case, and will
 increasingly _not_ be the case as scholarly communication becomes more dynamic.
 
+The DOI system also offers only a partial solution to the problem, because DOIs
+are only created for scholarly _outputs_, and not for the inputs, unless those
+inputs also happen to also be outputs of some earlier scholarly process, and
+they have previously received a DOI. If you happen to build on inputs that are
+_not_ also scholarly outputs, the integrity of the system breaks. You have a
+guarantee that only _some_ of the objects will persist, and as for the rest,
+they are at risk of eventually rotting away, leaving future generations with an
+incomplete picture of your intellectual achievements.[^doi-pressure]
+
 So what do we do? Is there any hope for the Web as a stable medium for research
 or scholarly communication? I think that the answer to this question is _yes_,
-but we need to look deeper here at what is really going on. In the context of
+but we need to look deeper at what is really going on here. In the context of
 research and scholarly communication, availability and consistency should be
 thought of as having ready access to see what the researcher saw at the time
 she did her research.
@@ -408,18 +417,18 @@ should be possible to do this in an open way as well.
 
 To sum up...
 
-* Both DOIs and HTTP URIs are names that can be used to identify objects.
-Technically, there is nothing special about a DOI over a URI.
-* Both DOIs and HTTP URIs currently rely on DNS to resolve objects, but could
-use any other type of resolution mechanism if desired. Neither depends on any
-underlying infrastructure or technology (HTTP URIs do not depend on HTTP).
 * The DOI system was designed with centralization in mind, and with an explicit
 barrier to participation. The DNS was designed to distribute authority and
 control.
-* In current practice, DOIs are resolved locally in a centralized way, and then
-delegate to DNS to do the actual global HTTP resolution. This is redundant
-infrastructure and just adds another layer of links to maintain and keep from
-breaking.
+* Both DOIs and HTTP URIs are names that can be used to identify objects.
+Technically, there is nothing special about a DOI over a URI.
+* Neither DOIs or HTTP URIs depend on any underlying infrastructure or
+technology, including HTTP or DNS, to function as unique identifiers. They both
+currently rely on DNS to resolve objects, but could use any other type of
+resolution mechanism if desired.
+* In current practice, DOIs are resolved centrally, and then delegate to DNS to
+do the resolution of the actual HTTP URI. This redundant infrastructure adds
+another layer of links to maintain and keep from breaking.
 * We need an effective and robust mechanism to manage research dependencies,
 because it is possible to resolve any type of object locally, in a distributed
 way.
@@ -476,4 +485,8 @@ Commons follows the robustness principle.
 [^stone-evaluation]:  He is right in saying that we shouldn't rely on PURLs to
   attach truly archival, long-lived names to network-accessible resources.
   Let's just archive the resources and use the URIs to identify them directly,
-  as is shown in the rest of this essay!
+  as is shown further on in this essay!
+
+[^doi-pressure]:  There is subtle pressure here then to only build upon
+  scholarly outputs that boast a DOI, limiting the scope of the conversation in
+  a way that is very closed and exclusive.
