@@ -61,12 +61,12 @@ you are not an ISO member. This is a one-time purchase. Once I have bought the
 [17]{.oldstyle}-page PDF that provides 'a structured, extensible means of
 identification, description and resolution' of digital objects, I can implement
 a DOI registry myself, but it will not be part of the scholarly DOI web (i.e.
-resolvable at the <http://dx.dio.org> HTTP proxy) until I meet the contractual
-obligations of the DOI system and am willing to pay to become a member. I could
-not find any information on how to become a member of the DOI system on [the
-DOI website][]. The most helpful information about this I found [on
-Wikipedia][doi], so if any registrars would like to fill me in, I'd love to
-know.
+resolvable at <http://doi.org>) until I meet the contractual obligations of the
+DOI system and am willing to pay to become a member. I spent some time looking
+on [the DOI website][], but could not find any information on how to become a
+member or registrar of the DOI system. The most helpful information about this
+I found [on Wikipedia][doi], so if any registrars would like to fill me in, I'd
+love to know.
 
 Of course its really easy to get a DOI. All you have to do is go drop your
 stuff in an institutional repository! What's so bad about that? This isn't an
@@ -249,7 +249,12 @@ they have previously received a DOI. If you happen to build on inputs that are
 _not_ also scholarly outputs, the integrity of the system breaks. You have a
 guarantee that only _some_ of the objects will persist, and as for the rest,
 they are at risk of eventually rotting away, leaving future generations with an
-incomplete picture of your intellectual achievements.[^doi-pressure]
+incomplete picture of your intellectual achievements.[^doi-pressure] It is
+precisely because the DOI system is tied to the current publishing paradigm
+that the DOI system has this quality of onesidedness. It was never designed to
+be a complete solution to the problem of persistence of scholarly objects, just
+the publishers' side of it, which, in the past, only included the scholarly
+output.
 
 So what do we do? Is there any hope for the Web as a stable medium for research
 or scholarly communication? I think that the answer to this question is _yes_,
@@ -262,7 +267,7 @@ The solution here is simple: get rid of the network partition. Linked Data
 resources already do this for data. Unlike the Web of Documents where web pages
 are hosted by servers partitioned by namespaces, and availability of each web
 server is needed to access each resource, Linked Data is able to represent
-useful data and relationships across multiple namespaces within one resource.
+useful data and relationships across multiple namespaces within one document.
 Here's a tiny example:
 
 <% me = person_by_name(@item[:author_name]) %>
@@ -458,7 +463,7 @@ Preferring and supporting are two different things. In short, the Scholarly
 Commons follows the robustness principle.
 
 [DOI]: <https://en.wikipedia.org/wiki/Digital_object_identifier> "Digital Object Identifier on Wikipedia"
-[The DOI Website]: <www.doi.org>
+[The DOI Website]: <http://www.doi.org>
 [DOI standard]: <https://www.iso.org/standard/43506.html> "Digital object identifier system ISO standard"
 [DOI standardization announcement]: <https://www.iso.org/news/2012/05/Ref1561.html>
 [crossref]: <https://www.crossref.org/blog/dois-unambiguously-and-persistently-identify-published-trustworthy-citable-online-scholarly-literature-right/>
@@ -482,11 +487,45 @@ Commons follows the robustness principle.
 
 [^herbert-doi-comment]: See <http://csarven.ca/web-science-from-404-to-200#1186379419> for an excellent comment by Herbert Van de Sompel.
 
-[^stone-evaluation]:  He is right in saying that we shouldn't rely on PURLs to
-  attach truly archival, long-lived names to network-accessible resources.
-  Let's just archive the resources and use the URIs to identify them directly,
-  as is shown further on in this essay!
+[^stone-evaluation]:
 
-[^doi-pressure]:  There is subtle pressure here then to only build upon
-  scholarly outputs that boast a DOI, limiting the scope of the conversation in
-  a way that is very closed and exclusive.
+    He is right in saying that we shouldn't rely on PURLs to attach truly
+    archival, long-lived names to network-accessible resources. Let's just
+    archive the resources and use the URIs to identify them directly, as is
+    shown further on in this essay!
+
+[^doi-pressure]:
+
+    There is subtle pressure here to then only build upon scholarly outputs
+    that can claim a DOI, limiting the scope of the scholarly conversation in a
+    way that is very closed and exclusive. If this is perpetuated to the
+    extreme, scholarship will never be able to transcend current scholarly
+    circles. To an [open email list](https://groups.google.com/a/force11.org/forum/#!forum/f11discussion)
+    Leslie Chan posted [the following insightful comment](https://groups.google.com/a/force11.org/d/msg/f11discussion/_jE0D4ns_RQ/f_yE86vFCQAJ):
+
+    <div class="bq grab">
+
+    > Thank you for putting into words so succinctly why I have been feeling
+    > uncomfortable about the ORCID/DOI bandwagon. I was not able to put my
+    > fingers on exactly why I felt uneasy when I see that some publishers are
+    > demanding that authors acquired an ORCID before they can submit. While
+    > ORCID is technically free to obtain, the social cost or fear of exclusion
+    > is, I suspect, what drives many authors to sign up. This is not unlike FB
+    > membership.
+    >
+    > This is a hypothesis only, but worth asking whether the growth in adoption
+    > of ORCID is due to perceived advantages of ORCID, or perceived fear of
+    > exclusion from being “counted”. Social pressure is indeed powerful,
+    > especially when big publishers are behind driving up the pressure, and
+    > institutions are addicted to auditing.
+    >
+    > I also think that the more these technologies (ORCID, DOI, Altmetrics, et.)
+    > are bundled, the more we are locked in a dependent path of development and
+    > dependency. I don’t have any technical background so I may be way off,
+    > though I am speaking from a science and technology studies perspective,
+    > where we can find many examples over time how “standards” are adopted not
+    > because of technical superiority, but because of social and other community
+    > norms. The web is supposed to be decentralized. Why do we want to keep
+    > giving power to a small number of centralized entities?
+
+    </div>
