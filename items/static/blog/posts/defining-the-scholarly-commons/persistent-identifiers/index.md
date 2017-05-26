@@ -254,7 +254,7 @@ precisely because the DOI system is tied to the current publishing paradigm
 that the DOI system has this quality of onesidedness. It was never designed to
 be a complete solution to the problem of persistence of scholarly objects, just
 the publishers' side of it, which, in the past, only included the scholarly
-output.
+outputs.
 
 So what do we do? Is there any hope for the Web as a stable medium for research
 or scholarly communication? I think that the answer to this question is _yes_,
