@@ -74,7 +74,7 @@ OMB: Office of Management and Budget
 OSS: Open-Source Software
 OWL2: Web Ontology Language 2
 OWL: Web Ontology Language
-PACELC: In case of network partitioning (P) in a distributed computer system, one has to choose between availability (A) and consistency (C) (as per the CAP theorem), but else (E), even when the system is running normally in the absense of partitions, one has to choose between latency (L) and consistency (C).
+PACELC: In case of network partitioning (P) in a distributed computer system, one has to choose between availability (A) and consistency (C) (as per the CAP theorem), but else (E), even when the system is running normally in the absence of partitions, one has to choose between latency (L) and consistency (C).
 PDF: Portable Document Format
 PNG: Portable Network Graphics
 PROV: W3C PROVenance Interchange
