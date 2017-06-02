@@ -2,7 +2,7 @@ class Abbreviate < Nanoc::Filter
   require_relative '../helpers/dictionaries'
   include LifePreserver::Dictionaries
 
-  ABBREVIATION_REGEX ||= /([[:alnum:]]+(?:[\-;][[[:upper:]][[:digit:]]]+)*)/
+  ABBREVIATION_REGEX ||= /([[:alnum:]]+(?:[\-;][[[:upper:]][[:digit:]]]+)*[[[:alnum:]]&&[^s]])/
 
   identifier :abbreviate
 
