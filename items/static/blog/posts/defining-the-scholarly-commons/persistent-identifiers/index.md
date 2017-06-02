@@ -55,18 +55,27 @@ with the rise of publisher-supported SaaS products where DOIs can be created
 for free, the DOI is quickly becoming a proprietary lock-in mechanism to keep
 publishers in control.
 
+I can understand why a publisher would jump on the DOI bandwagon: it gives them
+a proprietary advantage. The DOI website [has whitepapers][doi whitepapers]
+praising the economic benefits of the DOI system for publishers that invest in
+it. But researchers have their own, different priorities, and need to
+understand the implications of their choices, and that there all alternatives,
+some of which would give them greater freedom and autonomy. They give up that
+freedom when they give others control. And this choice may be acceptable to
+many. But they need to know what they are choosing.
+
 The [ISO [26324]{.oldstyle}][DOI standard] is a standard, but not an open
-standard, as the last time I checked it costs 88 CHF to purchase it directly if
-you are not an ISO member. This is a one-time purchase. Once I have bought the
-[17]{.oldstyle}-page PDF that provides 'a structured, extensible means of
-identification, description and resolution' of digital objects, I can implement
-a DOI registry myself, but it will not be part of the scholarly DOI web (i.e.
-resolvable at <http://doi.org>) until I meet the contractual obligations of the
-DOI system and am willing to pay to become a member. I spent some time looking
-on [the DOI website][], but could not find any information on how to become a
-member or registrar of the DOI system. The most helpful information about this
-I found [on Wikipedia][doi], so if any registrars would like to fill me in, I'd
-love to know.
+standard, as the last time I checked it costs [88]{.oldstyle} CHF to purchase
+it directly if you are not an ISO member. This is a one-time purchase. Once I
+have bought the [17]{.oldstyle}-page PDF that provides 'a structured,
+extensible means of identification, description and resolution' of digital
+objects, I can implement a DOI registry myself, but it will not be part of the
+scholarly DOI web (i.e. resolvable at <http://doi.org>) until I meet the
+contractual obligations of the DOI system and am willing to pay to become a
+member. I spent some time looking on [the DOI website][], but could not find
+any information on how to become a member or registrar of the DOI system. The
+most helpful information about this I found [on Wikipedia][doi], so if any
+registrars would like to fill me in, I'd love to know.
 
 Of course its really easy to get a DOI. All you have to do is go drop your
 stuff in an institutional repository! What's so bad about that? This isn't an
@@ -466,6 +475,7 @@ Commons follows the robustness principle.
 [The DOI Website]: <http://www.doi.org>
 [DOI standard]: <https://www.iso.org/standard/43506.html> "Digital object identifier system ISO standard"
 [DOI standardization announcement]: <https://www.iso.org/news/2012/05/Ref1561.html>
+[DOI whitepapers]: <http://www.doi.org/publications.html>
 [crossref]: <https://www.crossref.org/blog/dois-unambiguously-and-persistently-identify-published-trustworthy-citable-online-scholarly-literature-right/>
 [sarven-doi]: <http://csarven.ca/web-science-from-404-to-200#doi>
 [doi-purl]: <http://www.doi.org/factsheets/DOI_PURL.html> "DOI® System and Persistent URLs (PURLs)"
