@@ -55,8 +55,8 @@ with the rise of publisher-supported SaaS products where DOIs can be created
 for free, the DOI is quickly becoming a proprietary lock-in mechanism to keep
 publishers in control.
 
-I can understand why a publisher would jump on the DOI bandwagon: it gives them
-a proprietary advantage. The DOI website [has whitepapers][doi whitepapers]
+I can understand why a publisher would jump on the DOI bandwagon: it offers a
+proprietary advantage. The DOI website [has whitepapers][doi whitepapers]
 praising the economic benefits of the DOI system for publishers that invest in
 it. But researchers have their own, different priorities, and need to
 understand the implications of their choices, and that there all alternatives,
@@ -120,16 +120,16 @@ infrastructure.
 </figure>
 
 HTTP URIs as identifiers are just as separable from the underlying technology
-as are DOI URIs. I can represent either in ASCII, and HTTP IRIs support UTF-8!
-Both are currently dependent on DNS for resolution. Either could support
-multiple resolution mechanisms, and URIs have a native resolution mechanism.
-DOI doesn't have a native mechanism, and according to Larry Stone, it
-'currently needs the crutch of HTTP proxies which have the same DNS naming
-problem'.[^stone-evaluation] [Stone's evaluation][stone evaluation] was largely
-based on contemporary and now largely irrelevant implementation details. He did
-not foresee Web-scale archiving initiatives, and some things he mentions are
-just plain wrong. If you want to look at the arguments to which Berners-Lee was
-referring, check out [this article][myRI].
+as are DOI URIs. Either could support multiple resolution mechanisms, though in
+practice, both currently depend upon DNS for resolution. ~~DOI doesn't have a
+native mechanism, and according to Larry Stone, it 'currently needs the crutch
+of HTTP proxies which have the same DNS naming problem'.[^stone-evaluation]~~
+[Stone's evaluation][stone evaluation] was largely based on contemporary and
+now largely irrelevant implementation details. He did not foresee Web-scale
+archiving initiatives, and some things he mentions are just plain wrong. If you
+want to look more in-depth at the arguments in favor of HTTP URIs to which
+Berners-Lee was referring, check out [this article][myRI] from
+[2006]{.oldstyle}.
 
 A DOI, like a URI, is a just unique name, and can be reused in other contexts.
 There is nothing that requires a DOI to resolve to some normative document, so
