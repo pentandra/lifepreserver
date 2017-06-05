@@ -872,28 +872,21 @@ a.anchor {
   text-decoration: none;
   font-size: 75%;
   vertical-align: text-top;
-  visibility: hidden;
 
   &:hover {
     text-decoration: none;
   }
 }
 
-#{append-selector("h1, h2, h3, h4, h5, h6", ":hover")} {
+p, li, dt, dd {
   a.anchor {
-    visibility: visible;
+    visibility: hidden;
   }
-}
 
-figure:hover {
-  figcaption a.anchor {
-    visibility: visible;
-  }
-}
-
-p:hover, li:hover, dt:hover, dd:hover {
-  a.anchor {
-    visibility: visible;
+  &:hover {
+    a.anchor {
+      visibility: visible;
+    }
   }
 }
 

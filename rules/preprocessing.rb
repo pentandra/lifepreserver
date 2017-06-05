@@ -53,7 +53,7 @@ preprocess do
 
   generate_author_uris(weblog)
 
-  if @config[:site][:generate_blogmeta]
+  if @config[:site][:generate_meta]
     generate_tag_pages
     generate_author_pages
     generate_blog_archives

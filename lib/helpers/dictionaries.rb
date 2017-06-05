@@ -110,7 +110,7 @@ module LifePreserver
     def supplementary_dictionaries_for(base_dic)
       identifier = base_dic.identifier
       dependencies = @items.find_all(File.dirname(identifier.to_s) + '/*')
-      dependencies.keep_if { |d| d.unwrap.attributes[:kind] =~ /(?<!base)-dictionary/ }
+      dependencies.keep_if { |d| d.unwrap.attributes[:kind] =~ /(personal|extra)-dictionary/ }
       dependencies << base_dic
     end
   end
