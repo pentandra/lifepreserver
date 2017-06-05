@@ -23,18 +23,32 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.small [class^="icon-"], .small [class*=" icon-"] {
-  //  margin-right: 0.15em;
+.small {
+  [class^="icon-"], [class*=" icon-"] {
+    //  margin-right: 0.15em;
+  }
 }
 
-.icons [class^="icon-"], .icons [class*=" icon-"] {
-  font-size: $base-line-height;
-  vertical-align: middle;
+.icons {
+  [class^="icon-"], [class*=" icon-"] {
+    font-size: $base-line-height;
+    vertical-align: middle;
+  }
 }
 
-.big.icons [class^="icon-"], .big.icons [class*=" icon-"] {
-  font-size: $base-line-height * 2;
-  line-height: 1.1;
+.big.icons {
+  [class^="icon-"], [class*=" icon-"] {
+    font-size: $base-line-height * 2;
+    line-height: 1.1;
+  }
+}
+
+a.anchor {
+  [class^="icon-"], [class*=" icon-"] {
+    position: relative;
+    left: 0.25em;
+    font-size: 75%;
+  }
 }
 
 .icon-phone:before {
