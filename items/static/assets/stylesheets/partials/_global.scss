@@ -866,15 +866,19 @@ main {
   margin-bottom: $base-line-height / 2;
 }
 
+// Robust anchors
+
 a.anchor {
-  position: relative;
-  left: 0.25em;
   text-decoration: none;
-  font-size: 75%;
-  vertical-align: text-top;
 
   &:hover {
     text-decoration: none;
+  }
+}
+
+#{headings(all)} {
+  a.anchor {
+    color: $font-color;
   }
 }
 

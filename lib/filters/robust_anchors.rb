@@ -28,7 +28,7 @@ class RobustAnchors < Nanoc::Filter
       # Add link to header
       if generate_links
         section_header = section.at_css((1..6).map { |i| "h#{i}" }.join(', '))
-        section_header << link_to_element(section_id, message_for(section_id, 'section')) if section_header
+        section_header.inner_html = link_to_element(section_id, message_for(section_id, 'section'), section_header.inner_html) if section_header
       end
     end
 
@@ -91,7 +91,7 @@ class RobustAnchors < Nanoc::Filter
     "Link to #{description.strip} ##{id}"
   end
 
-  def link_to_element(id, message)
-    %(<a class="anchor" href="##{id}" title="#{message}"><span class="icon-link"></span></a>)
+  def link_to_element(id, message, content = '<span class="icon-link"></span>')
+    %(<a class="anchor" href="##{id}" title="#{message}">#{content}</a>)
   end
 end
