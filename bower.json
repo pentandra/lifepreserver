@@ -4,7 +4,7 @@
     "Chris Chapman <chris@pentandra.com>"
   ],
   "description": "Philosophical company website for Pentandra Research Solutions, Inc.",
-  "homepage": "https://pentandra.com",
+  "homepage": "https://pentandra.com/",
   "private": true,
   "dependencies": {
     "letteringjs": "Lettering.js#^0.7.0",
