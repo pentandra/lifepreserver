@@ -8,14 +8,14 @@
   "private": true,
   "dependencies": {
     "letteringjs": "Lettering.js#^0.7.0",
-    "jquery-smooth-scroll": "^1.7.2",
-    "jquery-hashchange": "jquery-sapzxc-hashchange#*",
+    "jquery-smooth-scroll": "~2",
+    "jquery-hashchange": "GerHobbelt/jquery-hashchange",
     "accessifyhtml5": "*",
     "Emphasis": "NYTimes/Emphasis",
     "mediaelement": "^2.20.1",
     "jquery": "~1",
-    "retina.js": "^1.3.0",
-    "pygments": "^2.1.3",
+    "retina.js": "~2",
+    "pygments": "*",
     "js-url": "^2.3.0",
     "txtinput": "Alex1990/txtinput#^0.1.1",
     "jsonld": "^0.4.11"
