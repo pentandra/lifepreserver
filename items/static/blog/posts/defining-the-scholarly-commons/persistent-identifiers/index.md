@@ -4,7 +4,7 @@ description: To be or not to be. Is persistent identification really the questio
 kind: vignette
 author_name: Chris Chapman
 created_at: 2017-05-11
-updated_at: 2017-05-25
+updated_at: 2017-06-07
 part_of_series_id: '/static/blog/posts/defining-the-scholarly-commons/index.*'
 tags:
   - Defining the Commons
@@ -26,7 +26,10 @@ It was not designed for open scholarship or scholarly commoning, and is a poor
 fit for it because it was designed to centralize power and decision-making,
 making it difficult for just anyone to participate in the system.
 
-I apologize in advance for the number of acronyms in this post.
+The aim of this essay is not as much to present solutions, as it is to paint a
+picture of a way to think about a problem and point out some directions that we
+could move forward towards solving it. Call it a pattern if you wish. Either
+way, I apologize in advance for the number of acronyms in this post.
 
 <!--MORE-->
 
@@ -60,9 +63,12 @@ proprietary advantage. The DOI website [has whitepapers][doi whitepapers]
 praising the economic benefits of the DOI system for publishers that invest in
 it. But researchers have their own, different priorities, and need to
 understand the implications of their choices, and that there all alternatives,
-some of which would give them greater freedom and autonomy. They give up that
+some of which would give them greater freedom and autonomy. We give up that
 freedom when they give others control. And this choice may be acceptable to
-many. But they need to know what they are choosing.
+many. But we need to know what we are choosing. We need to understand that the
+issue is not between decentralization or centralization, but is nothing more
+than an age-old argument in disguise: the question of individual agency and
+accountability versus compulsion; the question of who is in control.
 
 The [ISO [26324]{.oldstyle}][DOI standard] is a standard, but not an open
 standard, as the last time I checked it costs [88]{.oldstyle} CHF to purchase
@@ -215,13 +221,15 @@ than what that system is enabling or disabling _right now_.
 In all of what I'm saying, I'm not recommending that we get rid of institutions
 and publishers. We need them, but not as the controllers of what counts as
 scholarship. We need institutions and publishers to act in a supportive role,
-using Postel's law, taking the archiving approach of LOCKSS and contributing to
-and enhancing the experience of researchers while they are traveling on their
-journeys. As for what counts in the Scholarly Commons, EVERYTHING COUNTS!
-Whatever you build on or produce during your research should be as FAIR as is
-reasonably possible, whether it is something that another researcher published,
-or something that was found on some blog post published by some enthusiastic,
-science-crazed high-school student.
+following Postel's law (otherwise known as the [robustness principle]), which
+is to be conservative in what you do, and be liberal in what you accept from
+others. We need institutions and publishers to take the archiving approach of
+LOCKSS, contributing to and enhancing the experience of researchers while they
+are traveling on their journeys. As for what counts in the Scholarly Commons,
+EVERYTHING COUNTS! Whatever you build on or produce during your research should
+be as FAIR as is reasonably possible, whether it is something that another
+researcher published, or something that was found on some blog post published
+by some enthusiastic, science-crazed high-school student.
 
 # A deeper look at persistence
 
@@ -314,15 +322,15 @@ network partition and preserve the sources locally as the research dependencies
 are created, all of those resources will be guaranteed to be locally consistent
 and available. The [PACELC theorem], which builds upon the CAP theorem, states
 that _a high availability requirement implies that the system must replicate
-data_. How to actually do this replicating is a different topic (and relates to
-the <abbr>F</abbr> and <abbr>A</abbr> of FAIR), and could happen in various
-ways, from web archiving to IPFS. But it should be obvious by now that mere
-citations of resources are not enough, irrespective of the 'archival quality'
-of the identifier scheme. We need to realize that citation systems originated
-in the scarcity of the paper publication paradigm, where it really was not
-feasible to distribute all of the research dependencies alongside each research
-paper. With the technologies that exist and are emerging, we have an amazing
-opportunity _and responsibility_ to do this better.
+data_. How to actually do this replicating is a topic for another time (and
+relates to the <abbr>F</abbr> and <abbr>A</abbr> of FAIR), and could happen in
+various ways, from web archiving to IPFS. But it should be obvious by now that
+mere citations of resources are not enough, irrespective of the 'archival
+quality' of the identifier scheme. We need to realize that citation systems
+originated in the scarcity of the paper publication paradigm, where it really
+was not feasible to distribute all of the research dependencies alongside each
+research paper. With the technologies that exist and are emerging, we have an
+amazing opportunity _and responsibility_ to do this better.
 
 # The need for resolution
 
@@ -494,6 +502,7 @@ Commons follows the robustness principle.
 [arpanet]: <https://en.wikipedia.org/wiki/ARPANET> "ARPANET on Wikipedia"
 [LOCKSS]: <https://en.wikipedia.org/wiki/LOCKSS> "LOCKSS on Wikipedia"
 [myRI]: <http://www.w3.org/2001/tag/doc/URNsAndRegistries-50>
+[robustness principle]: <https://en.wikipedia.org/wiki/Robustness_principle> "Robustness Principle on Wikipedia"
 
 [^herbert-doi-comment]: See <http://csarven.ca/web-science-from-404-to-200#1186379419> for an excellent comment by Herbert Van de Sompel.
 
