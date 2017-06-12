@@ -42,7 +42,7 @@ Elizabeth Shown Mills describes three types of genealogists in her paper
 [<cite>Genealogy in the "Information Age": History's New
 Frontier?</cite>][mills' paper]:
 
-<figure class="bq grab" id="fig:typology-of-genealogists">
+<figure class="bq grab" id="typology-of-genealogists">
 
 > <dfn id="def:family-tree-climbers">Family Tree Climbers</dfn>
 >

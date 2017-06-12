@@ -14,7 +14,7 @@ tags:
   - Phil Trans
 ---
 
-<figure property="schema:image" id="fig:julia-domna" resource="#julia_domna" class="aside img" typeof="schema:ImageObject">
+<figure property="schema:image" id="julia-domna" resource="#julia-domna" class="aside img" typeof="schema:ImageObject">
   <link property="schema:representativeOfPage" resource="schema:True" />
   <meta property="schema:width" content="399 px" datatype="schema:Distance" />
   <meta property="schema:height" content="395 px" datatype="schema:Distance" />

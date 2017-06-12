@@ -16,7 +16,7 @@ tags:
 has_media: true
 ---
 
-<figure id="fig:journey-of-defining" property="schema:sharedContent" class="img" resource="#journey_of_defining" typeof="schema:ImageObject">
+<figure id="journey-of-defining-the-commons" property="schema:sharedContent" class="img" resource="#journey-of-defining-the-commons" typeof="schema:ImageObject">
   <link property="schema:representativeOfPage" resource="schema:True" />
   <link property="rdfa:copy" resource="pentandra-website:license" />
   <meta property="schema:width" content="832 px" datatype="schema:Distance" />
@@ -82,8 +82,8 @@ Several of us on the steering committee thought it was a cool coincidence that
 these first two workshops has been Spanish themed. We started in Madrid, and
 now we're in San Diego, and were able to use the colors of each city flag in
 designing the workshop logos, and it just worked. But looking at [the map
-above](#fig:journey-of-defining) from more of an _evil_ point of view, our
-journey from Madrid to San Diego could be thought of as a journey of
+above](#journey-of-defining-the-commons) from more of an _evil_ point of view,
+our journey from Madrid to San Diego could be thought of as a journey of
 _conquest_. Isn't this the same path that [Juan Rodríguez Cabrillo][cabrillo]
 and [others][vizcaino] took as they claimed land for Spain? Obviously, this is
 not what we have in mind. The difference is that we are not
@@ -156,7 +156,7 @@ an opportunity to do something that very few of their Old World predecessors
 had ever had the opportunity to do: deliberately coming together and _creating
 their own government_.
 
-<figure id="fig:the-mayflower-compact" class="img" property="schema:sharedContent" typeof="schema:ImageObject">
+<figure id="the-mayflower-compact" class="img" resource="#the-mayflower-compact" property="schema:sharedContent" typeof="schema:ImageObject">
   <img alt="Passengers of the Mayflower signing the 'Mayflower Compact' including Carver, Winston, Alden, Myles Standish, Howland, Bradford, Allerton, and Fuller." src="The_Mayflower_Compact.jpg" />
   <figcaption>The depiction in <i property="schema:title">Signing the Mayflower Compact 1620</i>, by <a href="https://en.wikipedia.org/wiki/Jean_Leon_Gerome_Ferris">Jean Leon Gerome Ferris</a>, resembles the journey we have undertaken to converge upon the principles of the Scholarly Commons.</figcaption>
 </figure>
@@ -245,7 +245,7 @@ constitution for the same region, more than <span class="oldstyle">160</span>
 years after the initial compact was signed on board the Mayflower, describing a
 situation eerily similar to that earlier time, just on a much bigger scale.
 
-<figure id="fig:hamilton" class="bq grab">
+<figure id="establishing-good-governance-from-reflection-and-choice" class="bq grab">
 
 > It has been frequently remarked that it seems to have been reserved to the
 > people of this country, to decide by their conduct and example, the important
@@ -284,7 +284,7 @@ the professional researchers, but will open up opportunities for many more
 people to become involved in knowledge work, and make knowledge itself more
 free and abundant.
 
-<figure id="fig:jefferson" class="bq grab">
+<figure id="ideas-should-freely-spread-like-the-air" class="bq grab">
 
 > That ideas should freely spread from one to another over the globe, for the
 > moral and mutual instruction of man, and improvement of his condition, seems

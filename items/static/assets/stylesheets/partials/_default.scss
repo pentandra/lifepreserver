@@ -280,16 +280,15 @@ $theteam-height: $base-line-height * 12;
   }
 }
 
-// #fig:proof img
-#fig\3A proof img {
+figure#proof img {
   margin-bottom: $base-line-height / 2;
 }
 
-#fig\3A io img {
+figure#io img {
   margin-bottom: $base-line-height * 0.75;
 }
 
-#fig\3A journey img {
+figure#the-journey-of-research img {
   $image-height: 372px;
 
   height: $image-height;
@@ -297,11 +296,11 @@ $theteam-height: $base-line-height * 12;
   margin-bottom: $base-line-height * 15 - $image-height;
 }
 
-#fig\3A phases img {
+figure#phases img {
   margin-bottom: $base-line-height * 0.25;
 }
 
-#fig\3A processtree img {
+figure#the-process-tree img {
   margin-bottom: $base-line-height * 9 - 217px;
 }
 
