@@ -209,5 +209,5 @@ more.
 
 [NGSQ]: http://www.ngsgenealogy.org/cs/ngsq
 [TG]: http://www.fasg.org/TheGenealogist.html
-[gen_hist]: /blog/thoughts-about-rootstech-2012/#def:generational-historians
+[gen_hist]: /blog/thoughts-about-rootstech-2012/#generational-historians
 [typology]: /blog/thoughts-about-rootstech-2012/#typology-of-genealogists

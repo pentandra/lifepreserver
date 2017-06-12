@@ -92,11 +92,11 @@ We need more people of all types involved in research.
 
 ## What is Research Anyways?
 
-<dfn id="dfn:research">Research</dfn> is what someone with a question does to
-find an answer to that question. Often, the question is highly contextual, and
-the answer is only useful to the original questioner, but many times the
-question or the answer (or something in-between) could be useful to others. It
-is important in this new world that we are creating that we make it as easy as
+<dfn id="research">Research</dfn> is what someone with a question does to find
+an answer to that question. Often, the question is highly contextual, and the
+answer is only useful to the original questioner, but many times the question
+or the answer (or something in-between) could be useful to others. It is
+important in this new world that we are creating that we make it as easy as
 possible for anyone to research and *create* new knowledge---and that we make
 it as easy as possible for anyone to [*learn from others*][opening knowledge].
 
@@ -169,7 +169,7 @@ but a great researcher can come from _anywhere_. But like Remy and
 Linguini, we each have different talents and abilities, and can accomplish much
 more if we work together rather than on our own.
 
-I would define a <dfn id="dfn:scholar">scholar</dfn> as someone who values
+I would define a <dfn id="scholar">scholar</dfn> as someone who values
 knowledge and seeks after it for understanding and to create _new knowledge_.
 
 # Towards a Scholarly Commons

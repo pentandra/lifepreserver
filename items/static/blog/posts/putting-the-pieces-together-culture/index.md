@@ -416,9 +416,9 @@ I would say:
 
 <div class="big">
 
-<dfn id="def:the-scholarly-commons">The Scholarly Commons</dfn> is the
-opportunity to come together and create a new culture of commoning on scholarly
-and scientific knowledge.
+<dfn id="the-scholarly-commons">The Scholarly Commons</dfn> is the opportunity
+to come together and create a new culture of commoning on scholarly and
+scientific knowledge.
 
 </div>
 

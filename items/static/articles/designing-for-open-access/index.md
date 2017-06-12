@@ -181,7 +181,7 @@ This is when open access became a thing. Before that, it existed, but not as a
 thing.
 
 In the lingua franca of the current open access movement, <dfn
-id="def:openaccess">open access</dfn> means allowing unrestricted access to the
+id="open-access">open access</dfn> means allowing unrestricted access to the
 results of publicly funded research (journal articles and sometimes the
 underlying data as well) to the public over the Internet for free.
 
@@ -396,7 +396,7 @@ only discovered it[^Vespucci] to the Old World. It had been waiting there all
 along. Likewise, knowledge, or truth, is already there, waiting for us to
 discover it! The knowledge that this completely new land mass existed was new
 to the Europeans. It is in this sense that we talk about knowledge creation.
-<dfn id="def:knowledge_creation">Knowledge creation</dfn> is the process of
+<dfn id="knowledge-creation">Knowledge creation</dfn> is the process of
 discovering something that we, as a society, did not know about before, the
 acceptance of which has now reached critical mass, meaning that it has been
 tested sufficiently and is now generally accepted as truth.[^knowledge_creation]
@@ -426,7 +426,7 @@ has worked up to this point, but it's easy for the research context to get lost
 or never get published in the first place. The Web can let us look _into_ or
 _behind_ a bit of knowledge to see where it came from, where it is now, and
 will allow us to take knowledge new places in the future. This is what we call
-[<dfn id="def:opening-knowledge">opening up knowledge</dfn>][mission].
+[<dfn id="opening-knowledge">opening up knowledge</dfn>][mission].
 
 ### Knowledge on the World Wide Web
 
@@ -868,7 +868,7 @@ than knowledge.'
 I'm not suggesting that the world is full of thousands of untapped Einsteins,
 but that we need to check our motivations for pursuing science and research as
 a society in general. We need to do more of, what I would call, <dfn
-id="def:little_research">little research</dfn>. We need to create a world
+id="little-research">little research</dfn>. We need to create a world
 where, as Chargaff put it, science and research are dominated by '<q
 id="q:amateurship"
 cite="https://en.wikipedia.org/wiki/Citizen_science#History">amateurship

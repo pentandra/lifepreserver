@@ -104,7 +104,7 @@ Commons is more about _enabling interactions_ and the _contributions_ that
 result from those interactions. In what we're trying to do, there is this idea
 about lowering barriers and reducing friction. The things we're working with
 either fit together or they don't. A better word for this type of interactivity
-might be <dfn id="def:compatibility">compatibility</dfn>, which, in a
+might be <dfn id="compatibility">compatibility</dfn>, which, in a
 telecommunications context, means 'the capability of two or more items or
 components of equipment or material to exist or function in the same system or
 environment without mutual interference.'[^compatibility] We use and build upon
@@ -546,7 +546,7 @@ different logic_, the Scholarly Commons will eventually have the ability to
 displace existing systems.
 
 [proprietary approaches]: <https://scholarlykitchen.sspnet.org/2017/02/09/cobbling-together-workflow-businesses/>
-[earlier definition]: </blog/putting-the-pieces-together-culture/#def:the-scholarly-commons> "The Scholarly Commons is the opportunity to come together and create a new culture of commoning on scholarly and scientific knowledge."
+[earlier definition]: </blog/putting-the-pieces-together-culture/#the-scholarly-commons> "The Scholarly Commons is the opportunity to come together and create a new culture of commoning on scholarly and scientific knowledge."
 [vision]: </#a-better-research-experience> "We envision a better research experience"
 [the logo]: <https://docs.google.com/document/d/1YIxxMpcOni7alThkdVvvrnc_edKay2Ow4kiRwBDTQrs/edit> "Branding the Scholarly Commons"
 [black box]: <https://en.wikipedia.org/wiki/Black_box> "Black box on Wikipedia"

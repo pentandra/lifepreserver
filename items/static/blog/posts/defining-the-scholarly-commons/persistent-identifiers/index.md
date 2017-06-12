@@ -209,7 +209,7 @@ had to request a domain name through the United States Department of Defense?
 DOIs are centrally maintained by a trusted third party, which is fine if you
 actually trust (and continue to trust) the third party. DNS is decentralized
 and is trusted because no one controls it. This is the basic idea behind the
-word <dfn id="def:trustlessness">trustlessness</dfn>. In the DOI system, the
+word <dfn id="trustlessness">trustlessness</dfn>. In the DOI system, the
 institutions and publishers are in control; in the DNS, the control is
 distributed.
 
