@@ -504,14 +504,23 @@ Commons follows the robustness principle.
 [myRI]: <http://www.w3.org/2001/tag/doc/URNsAndRegistries-50>
 [robustness principle]: <https://en.wikipedia.org/wiki/Robustness_principle> "Robustness Principle on Wikipedia"
 
-[^herbert-doi-comment]: See <http://csarven.ca/web-science-from-404-to-200#1186379419> for an excellent comment by Herbert Van de Sompel.
+[^herbert-doi-comment]:
+
+    In response to <a href="http://csarven.ca/web-science-from-404-to-200#1186379419">a
+    statement</a> in <a href="http://csarven.ca/web-science-from-404-to-200"><cite>Where is Web
+    Science? From 404 to 200</cite></a> by Sarven Capadisli, Herbert Van de
+    Sompel observed: <q cite="https://linkedresearch.org/annotation/csarven.ca/web-science-from-404-to-200/11ed0985-80ba-4763-b692-b268a38e7e7b">Somehow,
+    DOIs have taken on the role of delineating the scholarly record, making
+    recognizable what is and what is not part of the record. They were not
+    intended to provide that functionality but they somehow have taken on that
+    role in an ad-hoc manner.</q>
 
 [^stone-evaluation]:
 
     He is right in saying that we shouldn't rely on PURLs to attach truly
-    archival, long-lived names to network-accessible resources. Let's just
-    archive the resources and use the URIs to identify them directly, as is
-    shown further on in this essay!
+    archival, long-lived names to network-accessible resources. With some few
+    exceptions, let's just archive the resources and use the URIs to identify
+    them directly, as is shown further on in this essay!
 
 [^doi-pressure]:
 
