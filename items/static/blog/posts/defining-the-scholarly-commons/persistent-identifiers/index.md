@@ -509,11 +509,11 @@ Commons follows the robustness principle.
     In response to <a href="http://csarven.ca/web-science-from-404-to-200#1186379419">a
     statement</a> in <a href="http://csarven.ca/web-science-from-404-to-200"><cite>Where is Web
     Science? From 404 to 200</cite></a> by Sarven Capadisli, Herbert Van de
-    Sompel observed: <q cite="https://linkedresearch.org/annotation/csarven.ca/web-science-from-404-to-200/11ed0985-80ba-4763-b692-b268a38e7e7b">Somehow,
+    Sompel observed, '<q cite="https://linkedresearch.org/annotation/csarven.ca/web-science-from-404-to-200/11ed0985-80ba-4763-b692-b268a38e7e7b">Somehow,
     DOIs have taken on the role of delineating the scholarly record, making
     recognizable what is and what is not part of the record. They were not
     intended to provide that functionality but they somehow have taken on that
-    role in an ad-hoc manner.</q>
+    role in an ad-hoc manner.</q>'
 
 [^stone-evaluation]:
 
