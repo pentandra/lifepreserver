@@ -47,7 +47,7 @@ and the rest, as they say, [has been history][Andraka TEDx].
   <meta property="schema:width" content="854" />
   <meta property="schema:duration" content="PT3M59S" typeof="schema:Duration" />
   <meta property="schema:thumbnail" content="Cancer_Breakthrough.jpg" />
-  <video id="video:cancer-breakthrough" style="width:100%;height:100%;" poster="Cancer_Breakthrough.jpg" controls="controls" preload="none">
+  <video style="width:100%;height:100%;" poster="Cancer_Breakthrough.jpg" controls="controls" preload="none">
     <source property="schema:contentUrl" type="video/mp4" src="Cancer_Breakthrough.mp4" />
     <source property="schema:contentUrl" type="video/webm" src="Cancer_Breakthrough.webm" />
     <source property="schema:contentUrl" type="video/ogg" src="Cancer_Breakthrough.ogv" />
@@ -139,7 +139,7 @@ boy named Linguini---in becoming the cook of their collective dreams.
   <meta property="schema:width" content="720" />
   <meta property="schema:duration" content="PT47S" typeof="schema:Duration" />
   <meta property="schema:thumbnail" content="remy_finds_linguini.jpg" />
-  <video id="video:remy_finds_linguini" style="width:100%;height:100%;" poster="remy_finds_linguini.jpg" controls="controls" preload="none">
+  <video style="width:100%;height:100%;" poster="remy_finds_linguini.jpg" controls="controls" preload="none">
     <source property="schema:contentUrl" type="video/mp4" src="remy_finds_linguini.mp4" />
     <source property="schema:contentUrl" type="video/webm" src="remy_finds_linguini.webm" />
     <source property="schema:contentUrl" type="video/ogg" src="remy_finds_linguini.ogv" />
@@ -215,9 +215,8 @@ application in the world, we're missing the dartboard entirely.
 <% content_for :javascripts do %>
 <script>
 $(document).ready(function() {
-  $(document.getElementById('video:cancer-breakthrough')).mediaelementplayer();
-  $(document.getElementById('video:remy_finds_linguini')).mediaelementplayer();
-  $(document.getElementById('video:you_are_amateurs')).mediaelementplayer();
+  $('#cancer-breakthrough video').mediaelementplayer();
+  $('#remy-finds-linguini video').mediaelementplayer();
 });
 </script>
 <% end %>

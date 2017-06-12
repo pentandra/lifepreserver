@@ -460,7 +460,7 @@ Likewise, they don't fit the Web architecture or take advantage of the power of
 the Web. Not only that, but once they are there, it is all too easy to lose
 them.
 
-<figure id="quote:web_models_society" resource="#web_models_society" class="bq grab">
+<figure id="the-web-models-society" resource="#the-web-models-society" class="bq grab">
 
 > I don't want the Web to constrain what people do: the Web is not there to
 > constrain society. It's there to model society in its completeness, in its
@@ -764,7 +764,7 @@ least a passionate desire to *know* how our world works. Instead, researchers
 are forced to push research forward relentlessly, all the time pushing other
 researchers down in a selfish scramble to survive.
 
-<figure id="quote:institutionalization_chargaff" resource="#institutionalization_of_science" class="bq grab">
+<figure id="institutionalization-of-science" resource="#institutionalization-of-science" class="bq grab">
 
 > The institutionalization of science as a mass occupation, which began during
 > my lifetime, has brought with it the necessity of its continual
@@ -828,13 +828,13 @@ for free at your nearest Internet connection. We need researchers that are
 motivated by a [passion for discovery][passion]---that want to serve humanity
 without hidden agendas or selfish motivations.
 
-<figure resource="#you_are_amateurs" typeof="schema:VideoObject">
+<figure id="you-are-amateurs" resource="#you-are-amateurs" typeof="schema:VideoObject">
   <meta property="schema:bitrate" content="649k" />
   <meta property="schema:height" content="384" />
   <meta property="schema:width" content="512" />
   <meta property="schema:duration" content="PT5M22S" typeof="schema:Duration" />
   <meta property="schema:thumbnail" content="you_are_amateurs.jpg" />
-  <video id="video:you_are_amateurs" style="width:100%;height:100%;" poster="you_are_amateurs.jpg" controls="controls" preload="none">
+  <video style="width:100%;height:100%;" poster="you_are_amateurs.jpg" controls="controls" preload="none">
     <source property="schema:contentUrl" type="video/mp4" src="you_are_amateurs.mp4" />
     <source property="schema:contentUrl" type="video/webm" src="you_are_amateurs.webm" />
     <source property="schema:contentUrl" type="video/ogg" src="you_are_amateurs.ogv" />
@@ -1409,7 +1409,7 @@ research systems.
 }());
 
 $(document).ready(function() {
-  $(document.getElementById('video:you_are_amateurs')).mediaelementplayer();
+  $('#you-are-amateurs video').mediaelementplayer();
 
   $("audio").mediaelementplayer({
     alwaysShowControls: true,
