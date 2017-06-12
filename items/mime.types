@@ -129,6 +129,7 @@ types {
     text/vnd.sun.j2me.app-descriptor      jad;
     text/vnd.wap.wml                      wml;
     text/vtt                              vtt;
+    text/srt                              srt;
     text/x-component                      htc;
 
 }

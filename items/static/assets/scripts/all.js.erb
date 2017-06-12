@@ -1,41 +1,41 @@
 // Avoid `console` errors in browsers that lack a console.
 (function() {
-    var method;
-    var noop = function () {};
-    var methods = [
-        'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
-        'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
-        'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
-        'timeline', 'timelineEnd', 'timeStamp', 'trace', 'warn'
-    ];
-    var length = methods.length;
-    var console = (window.console = window.console || {});
+  var method;
+  var noop = function () {};
+  var methods = [
+    'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
+    'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
+    'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
+    'timeline', 'timelineEnd', 'timeStamp', 'trace', 'warn'
+  ];
+  var length = methods.length;
+  var console = (window.console = window.console || {});
 
-    while (length--) {
-        method = methods[length];
+  while (length--) {
+    method = methods[length];
 
-        // Only stub undefined methods.
-        if (!console[method]) {
-            console[method] = noop;
-        }
+    // Only stub undefined methods.
+    if (!console[method]) {
+      console[method] = noop;
     }
+  }
 }());
 
 // Place any jQuery/helper plugins in here.
-<%= @items['/static/assets/components/jquery/dist/jquery.js'].compiled_content(snapshot: :raw) %>
-<%= @items['/static/assets/components/txtinput/txtinput.js'].compiled_content(snapshot: :raw) %>
-<%= @items['/static/assets/components/js-url/url.js'].compiled_content(snapshot: :raw) %>
-<%= @items['/static/assets/components/letteringjs/jquery.lettering.js'].compiled_content(snapshot: :raw) %>
-<%= @items['/static/assets/components/jquery-smooth-scroll/jquery.smooth-scroll.js'].compiled_content(snapshot: :raw) %>
-<%= @items['/static/assets/components/jquery-hashchange/jquery.ba-hashchange.js'].compiled_content(snapshot: :raw) %>
-<%= @items['/static/assets/components/accessifyhtml5/accessifyhtml5.jquery.js'].compiled_content(snapshot: :raw) %>
-<%= @items['/static/assets/components/Emphasis/js/emphasis-src.js'].compiled_content(snapshot: :raw) %>
-<%= @items['/static/assets/components/retina.js/dist/retina.js'].compiled_content(snapshot: :raw) %>
+<%= @items['/static/assets/components/jquery/dist/jquery.js'].raw_content %>
+<%= @items['/static/assets/components/txtinput/txtinput.js'].raw_content %>
+<%= @items['/static/assets/components/js-url/url.js'].raw_content %>
+<%= @items['/static/assets/components/letteringjs/jquery.lettering.js'].raw_content %>
+<%= @items['/static/assets/components/jquery-smooth-scroll/jquery.smooth-scroll.js'].raw_content %>
+<%= @items['/static/assets/components/jquery-hashchange/jquery.ba-hashchange.js'].raw_content %>
+<%= @items['/static/assets/components/accessifyhtml5/accessifyhtml5.jquery.js'].raw_content %>
+<%= @items['/static/assets/components/Emphasis/js/emphasis-src.js'].raw_content %>
+<%= @items['/static/assets/components/retina.js/dist/retina.js'].raw_content %>
 
 var Pentandra = (function($) {
 
   var kerning = (function() {
-    
+
     var setupKerning = function() {
       $('#ourvalues h2').lettering();
       $('.motto h1').lettering('words').children('span').lettering();
@@ -96,9 +96,7 @@ var Pentandra = (function($) {
         }
 
         return false;
-
       });
-
     };
 
     var setupScrollingToTop = function() {
@@ -130,9 +128,7 @@ var Pentandra = (function($) {
       trigger: function() {
         $(window).hashchange();
       }
-
     };
-
   }());
 
   var social = (function() {
@@ -160,7 +156,7 @@ var Pentandra = (function($) {
       label: for (var i = 0; i < arrayName.length; i++) {
         for (var j = 0; j < newArray.length; j++) {
           if (newArray[j] == arrayName[i])
-          continue label;
+            continue label;
         }
 
         newArray[newArray.length] = arrayName[i];
