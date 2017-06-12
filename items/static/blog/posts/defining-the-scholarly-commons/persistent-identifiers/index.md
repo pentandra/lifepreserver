@@ -48,8 +48,8 @@ placed high deliberately. This makes more sense when you understand that the
 DOI system was designed in order [for publishers to interoperate with other
 publishers][crossref] to unambiguously identify business products. This is not
 intrinsically bad, and as a system of identification, it is a nice system for
-for what it was designed. The DOI created a centralized, proprietary registry
-of research products. It was never designed to be a researcher-facing
+for what it was designed. The DOI system created a centralized, proprietary
+registry of research products. It was never designed to be a researcher-facing
 identification scheme or something that just anyone could create and use in a
 global context. As it has become more visible to researchers and even the
 public however, the DOI has taken on the ad hoc role of saying what counts as
@@ -64,10 +64,10 @@ praising the economic benefits of the DOI system for publishers that invest in
 it. But researchers have their own, different priorities, and need to
 understand the implications of their choices, and that there all alternatives,
 some of which would give them greater freedom and autonomy. We give up that
-freedom when they give others control. And this choice may be acceptable to
-many. But we need to know what we are choosing. We need to understand that the
-issue is not between decentralization or centralization, but is nothing more
-than an age-old argument in disguise: the question of individual agency and
+freedom when we give others control. And this choice may be acceptable to many.
+But we need to know what we are choosing. We need to understand that the issue
+is not between decentralization or centralization, but is nothing more than an
+age-old argument in disguise: the question of individual agency and
 accountability versus compulsion; the question of who is in control.
 
 The [ISO [26324]{.oldstyle}][DOI standard] is a standard, but not an open
