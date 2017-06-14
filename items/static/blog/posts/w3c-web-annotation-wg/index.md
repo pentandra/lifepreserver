@@ -128,9 +128,9 @@ means for genealogy. Bring on the Web!
 [oai8]: /blog/heading-to-oai8/#p[TsrKoa],h[TsrKoa] "A little about the beginnings of the WWW"
 [mission]: /company/#mission
 [vision]: /blog/a-social-business/#p[OvoObm],h[OvoObm,1,2]
-[S]: /research/process/#dfn:data
-[I]: /research/process/#dfn:information
-[Q]: /research/process/#dfn:question
+[S]: /research/process/#data
+[I]: /research/process/#information
+[Q]: /research/process/#question
 [C]: /research/#p[RifNmw],h[RifNmw,3]
 [LHC]: http://home.web.cern.ch/topics/large-hadron-collider "Expensive information"
 [weak-force]: http://en.wikipedia.org/wiki/Weak_interaction

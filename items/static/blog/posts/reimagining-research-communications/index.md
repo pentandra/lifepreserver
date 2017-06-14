@@ -159,7 +159,7 @@ contribution is how important that contribution is in some particular context.
 Anything can be of value in the right context! The emphasis, therefore, is on
 discoverability, participation, and reuse.
 
-<figure id="fig:workshop_participants" property="schema:image" resource="#workshop_participants" typeof="schema:ImageObject" class="img">
+<figure id="workshop-participants" property="schema:image" resource="#workshop-participants" typeof="schema:ImageObject" class="img">
   <link property="schema:representativeOfPage" resource="schema:True"/>
   <img property="schema:url" class="static" alt="A portrait of all the participants of the Redefining the Scholarly Commons workshop in Madrid, Spain, February 2016" src="reimagining_research_communications_force11_everyone.jpg" />
   <figcaption property="schema:caption">Participants of the workshop <i>Reimagining Scholarly Communications</i>, held in <span property="schema:contentLocation">Madrid, Spain</span>, <span property="schema:dateCreated" content="2016-02-27" datatype="schema:Date">February 2016</span>. I'm hiding (but smiling) in the back right. Thanks to <span property="schema:creator" typeof="schema:Person"><a property="schema:url" href="https://twitter.com/radicevslobodan"><span property="schema:name">Slobodan Radicev</span></a></span> for the photo.</figcaption>

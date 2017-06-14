@@ -41,7 +41,7 @@ accessible in whatever way people think.
 <!--MORE-->
 
 A library in France is a good metaphor for how knowledge is trapped and
-inaccessible right now. If you look at <a href="#fig:squarehead">the picture
+inaccessible right now. If you look at <a href="#squarehead">the picture
 below</a>, you notice that this library, officially named [La Tête au
 Carré]{lang=fr} (The Square Head), looks like a well-formed classical bust, up
 to the bottom lip. The rest is obscured by the opaque aluminum block that is
@@ -51,7 +51,7 @@ people inside can see out. It's hard to tell whether the library is depicting
 someone male or female, old or young, happy or sad. Neither can you tell what
 is in his or her mind, nor what he or she is thinking.
 
-<figure id="fig:squarehead" class="img" property="schema:image" resource="#squarehead" typeof="schema:ImageObject">
+<figure id="squarehead" class="img" property="schema:image" resource="#squarehead" typeof="schema:ImageObject">
   <link property="schema:representativeOfPage" resource="schema:True"/>
   <img property="schema:contentUrl" src="square_head.jpg" class="static" alt="Tête carrée, or Square Head, a library in Nice, France" />
   <figcaption property="schema:caption"><a href="https://www.flickr.com/photos/14382098@N03/4300141401/" lang="fr" title="Une tête au carré à Nice on Flickr"><b>Une tête au carré à Nice</b></a> (A square head in Nice) by <a lang="fr" property="cc:attributionName" rel="cc:attributionURL" href="https://www.flickr.com/photos/14382098@N03/">Benoît Lesquerbault</a>, licensed under a <a rel="cc:license" href="https://creativecommons.org/licenses/by/2.0/">CC-BY</a> license, is actually the seven-story administration building of the municipal library in <span property="schema:contentLocation">Nice, France</span>. The sculptor, Sacha Sosno, uses the art of obliteration to invite the viewer to imagine the rest the sculpture. <span class="icon-cc"></span><span class="icon-cc-by"></span></figcaption>
@@ -152,7 +152,7 @@ permission. Anyone---a curious student to a professional scholar or a seasoned
 entrepreneur to an aspiring researcher in a third-world country---should be
 able to share their journey of discovery in a simple, open way. This mechanism
 should be simple enough to track elementary questions and answers, and powerful
-enough to handle <a href="#fig:alice">complex, data-intensive research</a>. It
+enough to handle <a href="#alice">complex, data-intensive research</a>. It
 needs to open doors for collaboration within a research field and bridge fields
 of knowledge that have traditionally been isolated. We need something that
 allows anyone to publish every bit of the journey, from the most random piece
@@ -160,7 +160,7 @@ of evidence to the most profound analysis in real time, as the research is
 progressing. And all this research needs to be accessible not only to people,
 but to machines as well.
 
-<figure id="fig:alice" class="img" property="schema:image" resource="#alice" typeof="schema:ImageObject">
+<figure id="alice" class="img" property="schema:image" resource="#alice" typeof="schema:ImageObject">
   <a property="schema:contentUrl" href="LRsaba_CERN_0212_00676.jpg" title="Click for maximum coolness"><img property="schema:thumbnail" src="LHR_alice.jpg" class="static" alt="People working on the ALICE detector at the Large Hadron Collider" /></a>
   <figcaption property="schema:caption">The <a href="http://cds.cern.ch/record/1436153">ALICE detector</a>, part of the Large Hadron Collider at <span property="schema:contentLocation">CERN</span>. Detectors along the LHC can produce <em>a lot</em> of data for research, <a href="https://en.wikipedia.org/wiki/Worldwide_LHC_Computing_Grid" title= "Worldwide LHC Computing Grid on Wikipedia">about <span class="oldstyle">300</span> gigabytes per second</a>. Image copyright <span class="oldstyle">© <span property="schema:copyrightYear">2012</span>--2015</span> <span property="schema:copyrightHolder" resource="http://home.web.cern.ch/">CERN</span>. <a href="http://copyright.cern.ch" rel="schema:publishingPrinciples">Used by permission</a>.</figcaption>
 </figure>

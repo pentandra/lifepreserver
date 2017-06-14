@@ -9,7 +9,7 @@ tags:
   - Defining the Commons
 ---
 
-<figure id="fig:surfing-commons" class="img" property="schema:sharedContent" resource="#surfing_commons" typeof="schema:ImageObject">
+<figure id="surfing-commons" class="img" property="schema:sharedContent" resource="#surfing-commons" typeof="schema:ImageObject">
   <link property="schema:representativeOfPage" resource="schema:True" />
   <img property="schema:contentUrl" class="static" data-no-retina alt="Waves coming in off Banzai Pipeline beach in Hawaii, with bystanders watching from the shore" src="Hawaii-Pipeline.jpg" />
   <figcaption property="schema:caption"><span property="schema:description">Waves are the subtractable resource of a surfing commons at the <span property="schema:contentLocation">Banzai Pipeline, off the coast of Oahu, Hawaii</span>.</span> Photo by <span property="cc:attributionName" class="sic">MUrra</span>, via <a rel="prov:hadPrimarySource" href="https://commons.wikimedia.org/wiki/File%3AHawaii-Pipeline.jpg">Wikimedia Commons</a>, and licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0">CC-BY-SA</a> license. <span class="icon-cc"></span><span class="icon-cc-by"></span><span class="icon-cc-sa"></span></figcaption>

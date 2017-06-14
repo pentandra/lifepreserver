@@ -114,7 +114,7 @@ were not separate things, but were designed as one and flowed together into a un
 whole.
 
 
-<figure id="fig:illuminated-scientific-manuscript" class="img" property="schema:image" resource="#illuminated_scientific_manuscript" typeof="schema:ImageObject">
+<figure id="illuminated-scientific-manuscript" class="img" property="schema:image" resource="#illuminated-scientific-manuscript" typeof="schema:ImageObject">
   <a title="View manuscript at the British Library" property="prov:wasDerivedFrom" href="http://www.bl.uk/catalogues/illuminatedmanuscripts/ILLUMIN.ASP?Size=mid&IllID=21739">
     <img property="schema:contentUrl" class="static" data-no-retina src="illuminated_scientific_manuscript.jpg" alt="Illuminated manuscript depicting canons for Toledan tables (c. 1292)" />
   </a>
@@ -123,7 +123,7 @@ whole.
 
 ### Access to Knowledge
 
-<figure id="fig:galileo" class="bq grab">
+<figure id="a-sinster-and-revolutionary-attitude" class="bq grab">
 
 > The _leitmotif_ that I recognize in Galileo's work is the passionate fight
 > against any kind of dogma based on authority. Only experience and careful
@@ -167,7 +167,7 @@ published thanks to economics.
 the of the present Undertakings, Studies, and Labours of the Ingenious in many
 considerable parts of the World</cite>
 
-<figure id="fig:printing-press" class="img" property="schema:image" resource="#printing_press" typeof="schema:ImageObject">
+<figure id="a-gutenberg-style-printing-press" class="img" property="schema:image" resource="#a-gutenberg-style-printing-press" typeof="schema:ImageObject">
   <a property="schema:contentUrl" href="printing_press.jpg">
     <img property="schema:thumbnail" class="static retina" src="printing_press_620x442.jpg" alt="An 18th-century reconstructed Gutenberg-style printing press" />
   </a>
@@ -181,7 +181,7 @@ This is when open access became a thing. Before that, it existed, but not as a
 thing.
 
 In the lingua franca of the current open access movement, <dfn
-id="def:openaccess">open access</dfn> means allowing unrestricted access to the
+id="open-access">open access</dfn> means allowing unrestricted access to the
 results of publicly funded research (journal articles and sometimes the
 underlying data as well) to the public over the Internet for free.
 
@@ -396,12 +396,12 @@ only discovered it[^Vespucci] to the Old World. It had been waiting there all
 along. Likewise, knowledge, or truth, is already there, waiting for us to
 discover it! The knowledge that this completely new land mass existed was new
 to the Europeans. It is in this sense that we talk about knowledge creation.
-<dfn id="def:knowledge_creation">Knowledge creation</dfn> is the process of
+<dfn id="knowledge-creation">Knowledge creation</dfn> is the process of
 discovering something that we, as a society, did not know about before, the
 acceptance of which has now reached critical mass, meaning that it has been
 tested sufficiently and is now generally accepted as truth.[^knowledge_creation]
 
-<figure id="fig:jefferson" class="bq grab">
+<figure id="ideas-should-freely-spread-like-air" class="bq grab">
 
 > That ideas should freely spread from one to another over the globe, for the
 > moral and mutual instruction of man, and improvement of his condition, seems
@@ -426,7 +426,7 @@ has worked up to this point, but it's easy for the research context to get lost
 or never get published in the first place. The Web can let us look _into_ or
 _behind_ a bit of knowledge to see where it came from, where it is now, and
 will allow us to take knowledge new places in the future. This is what we call
-[<dfn id="def:opening-knowledge">opening up knowledge</dfn>][mission].
+[<dfn id="opening-knowledge">opening up knowledge</dfn>][mission].
 
 ### Knowledge on the World Wide Web
 
@@ -440,7 +440,7 @@ The World Wide Web has spurred a world-wide collaboration of knowledge. Spirit
 of egalitarianism. Yet knowledge is put on the Web, but loses its context---its
 past and its future. We can't keep taking knowledge at face value.
 
-<figure id="fig:johnson" class="bq grab">
+<figure id="integrity-and-knowledge" class="bq grab">
 
 >  Integrity without knowledge is weak and useless, and knowledge without
 >  integrity is dangerous and dreadful.
@@ -460,7 +460,7 @@ Likewise, they don't fit the Web architecture or take advantage of the power of
 the Web. Not only that, but once they are there, it is all too easy to lose
 them.
 
-<figure id="quote:web_models_society" resource="#web_models_society" class="bq grab">
+<figure id="the-web-models-society" resource="#the-web-models-society" class="bq grab">
 
 > I don't want the Web to constrain what people do: the Web is not there to
 > constrain society. It's there to model society in its completeness, in its
@@ -764,7 +764,7 @@ least a passionate desire to *know* how our world works. Instead, researchers
 are forced to push research forward relentlessly, all the time pushing other
 researchers down in a selfish scramble to survive.
 
-<figure id="quote:institutionalization_chargaff" resource="#institutionalization_of_science" class="bq grab">
+<figure id="institutionalization-of-science" resource="#institutionalization-of-science" class="bq grab">
 
 > The institutionalization of science as a mass occupation, which began during
 > my lifetime, has brought with it the necessity of its continual
@@ -828,13 +828,13 @@ for free at your nearest Internet connection. We need researchers that are
 motivated by a [passion for discovery][passion]---that want to serve humanity
 without hidden agendas or selfish motivations.
 
-<figure resource="#you_are_amateurs" typeof="schema:VideoObject">
+<figure id="you-are-amateurs" resource="#you-are-amateurs" typeof="schema:VideoObject">
   <meta property="schema:bitrate" content="649k" />
   <meta property="schema:height" content="384" />
   <meta property="schema:width" content="512" />
   <meta property="schema:duration" content="PT5M22S" typeof="schema:Duration" />
   <meta property="schema:thumbnail" content="you_are_amateurs.jpg" />
-  <video id="video:you_are_amateurs" style="width:100%;height:100%;" poster="you_are_amateurs.jpg" controls="controls" preload="none">
+  <video style="width:100%;height:100%;" poster="you_are_amateurs.jpg" controls="controls" preload="none">
     <source property="schema:contentUrl" type="video/mp4" src="you_are_amateurs.mp4" />
     <source property="schema:contentUrl" type="video/webm" src="you_are_amateurs.webm" />
     <source property="schema:contentUrl" type="video/ogg" src="you_are_amateurs.ogv" />
@@ -868,7 +868,7 @@ than knowledge.'
 I'm not suggesting that the world is full of thousands of untapped Einsteins,
 but that we need to check our motivations for pursuing science and research as
 a society in general. We need to do more of, what I would call, <dfn
-id="def:little_research">little research</dfn>. We need to create a world
+id="little-research">little research</dfn>. We need to create a world
 where, as Chargaff put it, science and research are dominated by '<q
 id="q:amateurship"
 cite="https://en.wikipedia.org/wiki/Citizen_science#History">amateurship
@@ -920,7 +920,7 @@ look at the technology that was available for scientific publications during
 the [17]{.oldstyle}th century. It can serve as sort of a loose metaphor for how
 to proceed in the future.
 
-<figure id="fig:movable-type" class="img" property="schema:image" resource="#movable_type" typeof="schema:ImageObject">
+<figure id="movable-type" class="img" property="schema:image" resource="#movable-type" typeof="schema:ImageObject">
   <link property="rdfa:copy" resource="pentandra-website:license" />
   <a property="schema:contentUrl" href="movable_type_in_typecase.jpg">
     <img property="schema:thumbnail" class="retina static" src="movable_type_in_typecase_620x442.jpg" alt="Movable type" />
@@ -931,7 +931,7 @@ to proceed in the future.
 Movable type worked really well for alphabets that had relatively few
 characters in them.
 
-<figure id="fig:composing-stick" class="img" property="schema:image" resource="#composing_stick" typeof="schema:ImageObject">
+<figure id="composing-stick" class="img" property="schema:image" resource="#composing-stick" typeof="schema:ImageObject">
   <a title="View original image on Wikimedia Commons" property="prov:wasDerivedFrom" href="http://upload.wikimedia.org/wikipedia/commons/a/ae/Metal_movable_type.jpg">
     <img property="schema:contentUrl" class="static" src="Metal_movable_type.jpg" alt="Metal movable type in a composing stick" />
   </a>
@@ -1293,7 +1293,7 @@ research systems.
 [Latin]: <https://en.wikipedia.org/wiki/Latin> "Latin on Wikipedia"
 [parchment]: <https://en.wikipedia.org/wiki/Parchment> "Parchment on Wikipedia"
 [clerk]: <https://en.wikipedia.org/wiki/Clerk#History_and_etymology> "The word clerk is derived from the Latin clericus meaning &quot;cleric&quot; or &quot;clergyman&quot;, which is the latinisation of the Greek κληρικός (klērikos), &quot;of the clergy&quot;."
-[passion]: </research/#fig:passion> "The sense of mystery that drives a true scientist"
+[passion]: </research/#the-sense-of-mystery-that-drives> "The sense of mystery that drives a true scientist"
 [funding]: <https://en.wikipedia.org/wiki/Funding_of_science> "Funding of Science on Wikipedia"
 [Manhattan Project]: <https://en.wikipedia.org/wiki/Manhattan_Project> "Manhattan Project on Wikipedia"
 [Big Science]: <https://en.wikipedia.org/wiki/Big_Science> "Big Science on Wikipedia"
@@ -1409,7 +1409,7 @@ research systems.
 }());
 
 $(document).ready(function() {
-  $(document.getElementById('video:you_are_amateurs')).mediaelementplayer();
+  $('#you-are-amateurs video').mediaelementplayer();
 
   $("audio").mediaelementplayer({
     alwaysShowControls: true,

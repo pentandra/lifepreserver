@@ -56,7 +56,7 @@ detail the most recent thoughts, conveying the results of the latest
 experiments, and hunches.[^franklin] This correspondence proceeded in a very
 piecemeal, informal fashion---thought upon thought.
 
-<figure id="fig:vanLeeuwenhoek" class="img" property="schema:image" resource="#leeuwenhoek" typeof="schema:ImageObject">
+<figure id="antonie-van-leeuwenhoek" class="img" property="schema:image" resource="#antonie-van-leeuwenhoek" typeof="schema:ImageObject">
   <img property="schema:contentUrl" src="Jan_Verkolje_-_Antonie_van_Leeuwenhoek.jpg" class="static" alt="A portrait of Antonie van Leeuwenhoek by Jan Verkolje" />
   <figcaption><b lang="nl">Antonie van Leeuwenhoek</b>, here posing with his favored device of scientific communication: the letter. Portrait by the Dutch <a href="http://en.wikipedia.org/wiki/Jan_Verkolje"><span lang="nl">Jan Verkolje</span></a>.</figcaption>
 </figure>
@@ -113,7 +113,7 @@ until they have everything figured out to increase their chances of getting
 published. The commercialization of research and the journal publication
 industry have only exacerbated the problem.
 
-<figure id="fig:ivorytowers" class="img" property="schema:image" resource="#ivorytowers" typeof="schema:ImageObject">
+<figure id="ivorytowers" class="img" property="schema:image" resource="#ivorytowers" typeof="schema:ImageObject">
   <img property="schema:contentUrl" src="ivory_towers.jpg" class="static" alt="The Hawksmoor Towers of All Souls College, University of Oxford" />
   <figcaption><b>The formidable Hawksmoor Towers</b> of <a href="https://en.wikipedia.org/wiki/All_Souls_College,_Oxford">All Souls College</a>, University of Oxford, which have become a symbol of the ivory towers of research, or the disconnection between research and the public. Photo by <a property="cc:attributionName" rel="cc:attributionURL" href="https://commons.wikimedia.org/wiki/User:Godot13">Andrew Shiva</a>, licensed under a <a rel="cc:license" href="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA license</a>. <span class="icon-cc"></span><span class="icon-cc-by"></span><span class="icon-cc-sa"></span></figcaption>
 </figure>

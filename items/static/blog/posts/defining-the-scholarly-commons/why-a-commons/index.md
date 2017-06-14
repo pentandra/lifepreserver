@@ -33,8 +33,8 @@ if we avoid some bumps by trying to apply what we learn from commoning theory,
 I'm sure that we'll still experience enough trial and error and growing pains
 throughout this process.
 
- A commons is an active, living process---a dynamic, evolving social activity,
- more deliberately known as <dfn id="def:commoning">commoning</dfn>.
+A commons is an active, living process---a dynamic, evolving social activity,
+more deliberately known as <dfn id="ommoning">commoning</dfn>.
 
 Bollier says that a commons consists not just of a resource, but of a
 _community_ that manages a _resource_ by devising its own _rules, traditions,

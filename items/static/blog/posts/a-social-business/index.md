@@ -173,7 +173,7 @@ commercialism?
 </div>
 
 A non-profit by the name of [B Lab][blab intro] has created a certification
-called a <dfn id="def:b-corp-certification">B Corp Certification</dfn>, and is
+called a <dfn id="b-corp-certification">B Corp Certification</dfn>, and is
 spearheading legislation in some states to create a related business entity
 called a benefit corporation. They say, "By voluntarily meeting higher
 standards of transparency, accountability, and performance, Certified B Corps

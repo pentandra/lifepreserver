@@ -42,15 +42,15 @@ Elizabeth Shown Mills describes three types of genealogists in her paper
 [<cite>Genealogy in the "Information Age": History's New
 Frontier?</cite>][mills' paper]:
 
-<figure class="bq grab" id="fig:typology-of-genealogists">
+<figure class="bq grab" id="typology-of-genealogists">
 
-> <dfn id="def:family-tree-climbers">Family Tree Climbers</dfn>
+> <dfn id="family-tree-climbers">Family Tree Climbers</dfn>
 >
 > : Many are avid toilers, but they _collect_ rather than _conduct
 > investigations_. Typically, they spurn documentation \[and\] evidence
 > standards...because they are "just doing this for fun."
 >
-> <dfn id="def:traditional-genealogists">Traditional Genealogists</dfn>
+> <dfn id="traditional-genealogists">Traditional Genealogists</dfn>
 >
 > : As serious compilers of family data, most strive to meet the standards set
 > forth by the Jacobus School in the <span class="oldstyle">1930</span>s...Their
@@ -59,7 +59,7 @@ Frontier?</cite>][mills' paper]:
 > members as possible, with vital statistics but little or no historical
 > context.
 >
-> <dfn id="def:generational-historians">Generational Historians</dfn>
+> <dfn id="generational-historians">Generational Historians</dfn>
 >
 > : Individuals of this mindset thirst for historical knowledge in all its
 > cultural, economic, legal, religious, and social contexts...They value the

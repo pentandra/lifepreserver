@@ -40,14 +40,14 @@ he made a breakthrough during biology class. He took his discovery to the <span
 class="oldstyle">2012</span> Intel International Science and Engineering Fair,
 and the rest, as they say, [has been history][Andraka TEDx].
 
-<figure id="fig:cancer-breakthrough" resource="#cancer_breakthrough" typeof="schema:VideoObject">
+<figure id="cancer-breakthrough" resource="#cancer-breakthrough" typeof="schema:VideoObject">
   <meta property="schema:bitrate" content="500k" />
   <meta property="schema:videoFrameSize" content="854x480" />
   <meta property="schema:height" content="480" />
   <meta property="schema:width" content="854" />
   <meta property="schema:duration" content="PT3M59S" typeof="schema:Duration" />
   <meta property="schema:thumbnail" content="Cancer_Breakthrough.jpg" />
-  <video id="video:cancer-breakthrough" style="width:100%;height:100%;" poster="Cancer_Breakthrough.jpg" controls="controls" preload="none">
+  <video style="width:100%;height:100%;" poster="Cancer_Breakthrough.jpg" controls="controls" preload="none">
     <source property="schema:contentUrl" type="video/mp4" src="Cancer_Breakthrough.mp4" />
     <source property="schema:contentUrl" type="video/webm" src="Cancer_Breakthrough.webm" />
     <source property="schema:contentUrl" type="video/ogg" src="Cancer_Breakthrough.ogv" />
@@ -92,11 +92,11 @@ We need more people of all types involved in research.
 
 ## What is Research Anyways?
 
-<dfn id="dfn:research">Research</dfn> is what someone with a question does to
-find an answer to that question. Often, the question is highly contextual, and
-the answer is only useful to the original questioner, but many times the
-question or the answer (or something in-between) could be useful to others. It
-is important in this new world that we are creating that we make it as easy as
+<dfn id="research">Research</dfn> is what someone with a question does to find
+an answer to that question. Often, the question is highly contextual, and the
+answer is only useful to the original questioner, but many times the question
+or the answer (or something in-between) could be useful to others. It is
+important in this new world that we are creating that we make it as easy as
 possible for anyone to research and *create* new knowledge---and that we make
 it as easy as possible for anyone to [*learn from others*][opening knowledge].
 
@@ -132,14 +132,14 @@ belief that *anyone can cook*. A talented rat named Remy is convinced that even
 he can be a great chef, so he finds a willing human to partner with---a garbage
 boy named Linguini---in becoming the cook of their collective dreams.
 
-<figure id="fig:remy_finds_linguini" resource="#remy_finds_linguini" typeof="schema:VideoObject">
+<figure id="remy-finds-linguini" resource="#remy-finds-linguini" typeof="schema:VideoObject">
   <meta property="schema:bitrate" content="512k" />
   <meta property="schema:videoFrameSize" content="720x352" />
   <meta property="schema:height" content="352" />
   <meta property="schema:width" content="720" />
   <meta property="schema:duration" content="PT47S" typeof="schema:Duration" />
   <meta property="schema:thumbnail" content="remy_finds_linguini.jpg" />
-  <video id="video:remy_finds_linguini" style="width:100%;height:100%;" poster="remy_finds_linguini.jpg" controls="controls" preload="none">
+  <video style="width:100%;height:100%;" poster="remy_finds_linguini.jpg" controls="controls" preload="none">
     <source property="schema:contentUrl" type="video/mp4" src="remy_finds_linguini.mp4" />
     <source property="schema:contentUrl" type="video/webm" src="remy_finds_linguini.webm" />
     <source property="schema:contentUrl" type="video/ogg" src="remy_finds_linguini.ogv" />
@@ -153,7 +153,7 @@ chef. He is greatly impressed, and remains until after the restaurant closes to
 find out the chef's true identity. The following is a quotation from his
 review:
 
-<figure id="fig:ego" class="bq grab">
+<figure id="a-great-artist-can-come-from-anywhere" class="bq grab">
 
 > In the past, I have made no secret of my disdain for [Chef
 > Gusteau]{lang=fr}'s famous motto, 'Anyone can cook.' But I realize, only now
@@ -169,7 +169,7 @@ but a great researcher can come from _anywhere_. But like Remy and
 Linguini, we each have different talents and abilities, and can accomplish much
 more if we work together rather than on our own.
 
-I would define a <dfn id="dfn:scholar">scholar</dfn> as someone who values
+I would define a <dfn id="scholar">scholar</dfn> as someone who values
 knowledge and seeks after it for understanding and to create _new knowledge_.
 
 # Towards a Scholarly Commons
@@ -215,9 +215,8 @@ application in the world, we're missing the dartboard entirely.
 <% content_for :javascripts do %>
 <script>
 $(document).ready(function() {
-  $(document.getElementById('video:cancer-breakthrough')).mediaelementplayer();
-  $(document.getElementById('video:remy_finds_linguini')).mediaelementplayer();
-  $(document.getElementById('video:you_are_amateurs')).mediaelementplayer();
+  $('#cancer-breakthrough video').mediaelementplayer();
+  $('#remy-finds-linguini video').mediaelementplayer();
 });
 </script>
 <% end %>
