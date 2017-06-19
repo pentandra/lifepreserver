@@ -4,7 +4,7 @@ description: Introducing a series of vignettes to discuss the Scholarly Commons.
 kind: blogpost
 author_name: Chris Chapman
 created_at: 2017-04-20
-updated_at: 2017-05-24
+updated_at: 2017-06-19
 tags:
   - Scholarly Commons
   - Holism
@@ -28,12 +28,6 @@ run the risk of not achieving what we could have achieved, and all our work
 ending up insignificant and unhelpful in answering the really important
 questions of how to actually do this.
 
-It's easy in a group setting for dominant voices or agendas, even if
-well-intentioned, to shape a discussion in a way that is not representative of
-the group, especially when confronted with the need to get things done. In a
-way, this is the very problem we are trying to address with the Scholarly
-Commons.
-
 It is with the hope that we can stir up the discussion that I am announcing
 here a series of vignettes, to prompt the many fundamental discussions that
 have not yet happened around this important topic, and to paint the picture of
@@ -43,7 +37,11 @@ necessarily reflect the consensus of the SCWG steering committee. The intent is
 to raise questions, open the discussion, and broaden our collective horizons,
 with the hope that through this exercise, we can come to some consensus as to
 which questions we need to be asking, and, not any less important, how best to
-find answers to those questions.
+find answers to those questions. We may not agree on all the answers to those
+questions, and I think that is okay. I'm not sure that is even what we would
+want, even if it was possible. But it is in our best interest to find agreement
+on what the important questions are that we should be asking, because it is the
+search for truth that will hold us together.
 
 Here are a few questions that we're starting with. If you have other ideas that
 you would like to discuss or see discussed, we invite you to share them. We
