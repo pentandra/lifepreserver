@@ -38,15 +38,14 @@ to raise questions, open the discussion, and broaden our collective horizons,
 with the hope that through this exercise, we can come to some consensus as to
 which questions we need to be asking, and, not any less important, how best to
 find answers to those questions. We may not agree on all the answers to those
-questions or even how to go about obtaining them, and I think that is okay. I'm
-not sure that is even what we would want, even if it was possible. We all have
-different motivations for doing what we do, and different desires for the
-outcomes of it all. But it is in our best interest to come together, to come to
-an agreement on what the important questions are, and to find shared practices
-and values with which to build a foundation that would bring us together. Maybe
-the Scholarly Commons is not something that any one of us can define, but is
-truth that needs to be discovered---and it is the search for that truth that
-will hold us together.
+questions or even how to go about obtaining them, and I think that is okay. We
+all have different motivations for doing what we do, and different desires for
+the outcomes of it all. But it is in our best interest to come together, to
+come to an agreement on what the important questions are, and to find shared
+practices and values with which to build a foundation that would bring us
+together. Maybe the Scholarly Commons is not something that any one of us can
+define, but is truth that needs to be discovered---and it is the search for
+that truth that will hold us together.
 
 <!--MORE-->
 
