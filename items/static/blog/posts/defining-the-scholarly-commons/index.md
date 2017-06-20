@@ -4,7 +4,7 @@ description: Introducing a series of vignettes to discuss the Scholarly Commons.
 kind: blogpost
 author_name: Chris Chapman
 created_at: 2017-04-20
-updated_at: 2017-06-19
+updated_at: 2017-06-20
 tags:
   - Scholarly Commons
   - Holism
@@ -13,20 +13,20 @@ tags:
 
 Almost two years ago, FORCE[11]{.oldstyle} received a grant to try to answer
 the question, _are we ready to define the Scholarly Commons?_ I was invited to
-be on the steering committee of a working group around this program, and we
-held two (and a half) workshops to try to gather consensus on this topic with
-the hopes of answering this question in the affirmative. Our intention was to
-design a new system of scholarly communication from scratch as a system
-explicitly designed for machine-based access and networked scholarship. But
-perhaps out of fear that few would adopt a new system of scholarly
-communication if it looked too different from our current system, we have yet
-to approach some fundamental questions and define what it is that we're really
-talking about. Perhaps because there is [so much at stake here][f11 discussion]
-and so many ways to do things wrong, it is tempting to avoid risk and leave the
-responsibility on others to figure out the details. But then we run the risk of
-not achieving what we could have achieved, and all our work ending up
-insignificant and unhelpful in answering the really important questions of how
-to actually do this.
+be on the steering committee of a working group around this program, and to
+date we have held four workshops in various parts of the world to try to gather
+consensus on this topic with the hopes of answering this question in the
+affirmative. Our intention was to design a new system of scholarly
+communication from scratch as a system explicitly designed for machine-based
+access and networked scholarship. But perhaps out of fear that few would adopt
+a new system of scholarly communication if it looked too different from our
+current system, we have yet to approach some fundamental questions and define
+what it is that we're really talking about. Perhaps because there is [so much
+at stake here][f11 discussion] and so many ways to do things wrong, it is
+tempting to avoid risk and leave the responsibility on others to figure out the
+details. But then we run the risk of not achieving what we could have achieved,
+and all our work ending up insignificant and unhelpful in answering the really
+important questions of how to actually do this.
 
 It is with the hope that we can stir up the discussion that I am announcing
 here a series of vignettes, to prompt the many fundamental discussions that
