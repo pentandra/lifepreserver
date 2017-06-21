@@ -28,8 +28,11 @@ making it difficult for just anyone to participate in the system.
 
 The aim of this essay is not as much to present solutions, as it is to paint a
 picture of a way to think about a problem and point out some directions that we
-could move forward towards solving it. Call it a pattern if you wish. Either
-way, I apologize in advance for the number of acronyms in this post.
+could move forward towards solving it. Call it a pattern (or the beginnings of
+one) if you wish. Either way, I apologize in advance for the number of acronyms
+in this post. And I need to be specific in that I am using the words <dfn
+id="institution">institution</dfn> and <dfn id="publisher">publisher</dfn> in
+this essay to refer to visible organizations.
 
 I would be remiss if I did not mention [some excellent comments][dat-pid] on
 this topic from Maxwell Ogden of the Dat Project, or PIDapalooza, the first
@@ -45,23 +48,24 @@ within an information resource, the need to describe metadata about that
 resource, and a contractual agreement to care for the resources for which the
 institution was responsible (i.e. the social infrastructure).
 
-But there is a deeper problem with DOI that wasn't as apparent in these early
-days of the Web, one that I think is much more subtle and sinister, and more of
-a barrier to a free and open culture of scholarship. The social infrastructure
-of the DOI system created an explicit barrier to participation---one that was
-placed high deliberately. This makes more sense when you understand that the
-DOI system was designed in order [for publishers to interoperate with other
-publishers][crossref] to unambiguously identify business products. This is not
-intrinsically bad, and as a system of identification, it is a nice system for
-for what it was designed. The DOI system created a centralized, proprietary
-registry of research products. It was never designed to be a researcher-facing
-identification scheme or something that just anyone could create and use in a
-global context. As it has become more visible to researchers and even the
-public however, the DOI has taken on the ad hoc role of saying what counts as
-scholarship and delineating the scholarly record,[^herbert-doi-comment] and
-with the rise of publisher-supported SaaS products where DOIs can be created
-for free, the DOI is quickly becoming a proprietary lock-in mechanism to keep
-publishers in control.
+But there is a deeper problem with DOI that may not have been as apparent in
+these early days of the Web, one that I think is much more subtle and sinister,
+and more of a barrier to a free and open culture of scholarship. The social
+infrastructure of the DOI system created an explicit barrier to
+participation---one that was placed high deliberately. This makes more sense
+when you understand that the DOI system was designed in order [for publishers
+to interoperate with other publishers][crossref] to unambiguously identify
+business products. This is not intrinsically bad, and as a system of
+identification, it is a nice system for for what it was designed. The DOI
+system created a centralized, proprietary registry of research products. It was
+never designed to be a researcher-facing identification scheme or something
+that just anyone could create and use in a global context. As it has become
+more visible to researchers and even the public however, the DOI has taken on
+the ad hoc role of saying what counts as scholarship and delineating the
+scholarly record,[^herbert-doi-comment] and with the rise of
+publisher-supported SaaS products where DOIs can be created for free, the DOI
+is quickly becoming a proprietary lock-in mechanism to keep publishers in
+control.
 
 I can understand why a publisher would jump on the DOI bandwagon: it offers a
 proprietary advantage. The DOI website [has whitepapers][doi whitepapers]
@@ -84,35 +88,40 @@ objects, I can implement a DOI registry myself, but it will not be part of the
 scholarly DOI web (i.e. resolvable at <http://doi.org>) until I meet the
 contractual obligations of the DOI system and am willing to pay to become a
 member. I spent some time looking on [the DOI website][], but could not find
-any information on how to become a member or registrar of the DOI system. The
-most helpful information about this I found [on Wikipedia][doi], so if any
-registrars would like to fill me in, I'd love to know.
+any information on how to become a member or registrar of the DOI system, or
+even a DOI-issuing organization. The most helpful information about this I
+found [on Wikipedia][doi], so if any registrars would like to fill me in, I'd
+love to know. And I've also heard that it costs around [$1]{.oldstyle} for an
+organization to issue each DOI. _Each DOI_! No wonder the culture of DOIs is
+built around coarse-grained research outputs.
 
-Of course its really easy to get a DOI. All you have to do is go drop your
-stuff in an institutional repository! What's so bad about that? This isn't an
+Of course, for a researcher, it is really easy to get a DOI. All you have to do
+is go drop your stuff in a repository! What's so bad about that? This isn't an
 issue of owning your own stuff as it is about missed opportunities. I think
-besides the trust issues, researchers are missing a big opportunity here by
-allowing the institutions to control the situation. In business, such a thing
-is called a _natural monopoly_. Utility companies are a good example of this.
-It doesn't currently make a lot of sense to allow open competition in providing
-electricity to households. It is usually easier to select one company ahead of
-time that will provide the infrastructure, it, and they run the poles, wire,
-transformers, etc. to all the houses in the neighborhood. Sure, this provides
-stability and minimizes the amount of hardware, but innovation slows in such an
-economy because of the lack of competition.
+researchers are missing a big opportunity here by allowing the institutions and
+publishers to control the situation. In business, such a thing is called a
+_natural monopoly_. Utility companies are a good example of this. It doesn't
+make a lot of sense, at least using legacy technologies, to allow open
+competition in providing electricity to households. It is usually easier to
+select one company ahead of time that will provide the infrastructure, it, and
+they run the poles, wire, transformers, etc. to all the houses in the
+neighborhood. Sure, this provides stability and minimizes the amount of
+hardware needed, but innovation slows in such an economy because of the lack of
+competition.
 
-The DOI system was designed for a closed, centralized world, in which it made
-more sense to have resources on the Web located at only one point of reference
-to eliminate unneeded duplication and maximize efficiency of storage. This
-approach also played well with need to induce artificial scarcity through the
-use of paywalls.
-
-Using the DOI system for scholarship seems to fit better with pre-Web legacy
-approaches such as using the PDF as the container for scholarly communication.
-All of the benefits of using the DOI system for scholarship---object
-identification, metadata model, and social infrastructure---are more openly,
-universally, and robustly provided by the W3C's open linked data
-infrastructure.
+As I will discuss further on in this essay, there is no need for a natural
+monopoly based around the DOI system, at least not in this new culture. Using
+the DOI system for scholarship seems to fit better with pre-Web legacy
+approaches that used paper or its digital counterpart, the PDF, as the
+container for scholarly communication. The DOI system was designed for a
+closed, centralized world, in which it made more sense to have resources on the
+Web located at only one point of reference to eliminate unneeded duplication
+and maximize efficiency of storage. This approach provided additional benefit
+for these publishers as a mechanism to induce artificial scarcity by the means
+of paywalls. All of the benefits of using the DOI system for
+scholarship---object identification, metadata model, and social
+infrastructure---can be more openly, universally, and robustly provided by the
+W3C's open linked data infrastructure and Web archiving.
 
 <figure id="the-second-rule-of-linked-data" class="bq grab">
 
@@ -132,16 +141,16 @@ infrastructure.
 
 HTTP URIs as identifiers are just as separable from the underlying technology
 as are DOI URIs. Either could support multiple resolution mechanisms, though in
-practice, both currently depend upon DNS for resolution. ~~DOI doesn't have a
-native mechanism, and according to Larry Stone, it 'currently needs the crutch
-of HTTP proxies which have the same DNS naming problem'.[^stone-evaluation]~~
-[Stone's evaluation][stone evaluation] was largely based on contemporary and
-now largely irrelevant implementation details. He did not foresee Web-scale
-archiving initiatives, and some things he mentions are just plain wrong. As
-things currently look to me, if there is anything in danger of becoming
-obsolete, it is the Handle System, not the World Wide Web. If you want to look
+practice, both currently depend upon DNS for resolution. If you want to look
 more in-depth at the arguments in favor of HTTP URIs to which Berners-Lee was
-referring, check out [this article][myRI] from [2006]{.oldstyle}.
+referring, check out [this article][myRI] from [2006]{.oldstyle}. [Larry
+Stone's independent evaluation][stone evaluation] of DOIs versus PURLs, which
+is linked to from [the DOI website][doi-purl] to portray one of the benefits of
+the DOI system, was largely based on contemporary and now largely irrelevant
+implementation details. Stone did not foresee sustainable Web-scale archiving
+initiatives, and some things he mentions are just plain wrong. As things
+currently look to me, if there is anything in danger of becoming obsolete, it
+is the Handle System, not the World Wide Web.
 
 A DOI, like a URI, is a just unique name, and can be reused in other contexts.
 There is nothing that requires a DOI to resolve to some normative document, so
@@ -150,10 +159,8 @@ anything actually. In fact, the DOI system is already being brilliantly
 repurposed by ImpactStory, who has set up [a DOI resolver service][oadoi] that
 redirects DOIs to alternative, open versions of research papers.
 
-ICANN has a lower barrier to entry.
-
 DOI is not specific to the needs of scholarship, and is not a full solution to
-the requirements of the scholarly record. While resolution is open to all,
+the archival requirements of scholarship. While resolution is open to all,
 creation of the identifiers is not.
 
 # Inversion of control
@@ -227,15 +234,16 @@ than what that system is enabling or disabling _right now_.
 In all of what I'm saying, I'm not recommending that we get rid of institutions
 and publishers. We need them, but not as the controllers of what counts as
 scholarship. We need institutions and publishers to act in a supportive role,
-following Postel's law (otherwise known as the [robustness principle]), which
+to follow Postel's law (otherwise known as the [robustness principle]), which
 is to be conservative in what you do, and be liberal in what you accept from
 others. We need institutions and publishers to take the archiving approach of
 LOCKSS, contributing to and enhancing the experience of researchers while they
-are traveling on their journeys. As for what counts in the Scholarly Commons,
-EVERYTHING COUNTS! Whatever you build on or produce during your research should
-be as FAIR as is reasonably possible, whether it is something that another
-researcher published, or something that was found on some blog post published
-by some enthusiastic, science-crazed high-school student.
+are traveling on their journeys. Many institutions may already act this way. As
+for what counts in the Scholarly Commons, EVERYTHING COUNTS! Whatever you build
+on or produce during your research should be as FAIR as is reasonably possible,
+whether it is something that another researcher published, or something that
+was found on some blog post published by some enthusiastic, science-crazed
+high-school student.
 
 # A deeper look at persistence
 
@@ -521,13 +529,6 @@ Commons follows the robustness principle.
     recognizable what is and what is not part of the record. They were not
     intended to provide that functionality but they somehow have taken on that
     role in an ad-hoc manner.</q>'
-
-[^stone-evaluation]:
-
-    He is right in saying that we shouldn't rely on PURLs to attach truly
-    archival, long-lived names to network-accessible resources. With some few
-    exceptions, let's just archive the resources and use the URIs to identify
-    them directly, as is shown further on in this essay!
 
 [^doi-pressure]:
 
