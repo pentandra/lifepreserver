@@ -137,10 +137,11 @@ native mechanism, and according to Larry Stone, it 'currently needs the crutch
 of HTTP proxies which have the same DNS naming problem'.[^stone-evaluation]~~
 [Stone's evaluation][stone evaluation] was largely based on contemporary and
 now largely irrelevant implementation details. He did not foresee Web-scale
-archiving initiatives, and some things he mentions are just plain wrong. If you
-want to look more in-depth at the arguments in favor of HTTP URIs to which
-Berners-Lee was referring, check out [this article][myRI] from
-[2006]{.oldstyle}.
+archiving initiatives, and some things he mentions are just plain wrong. As
+things currently look to me, if there is anything in danger of becoming
+obsolete, it is the Handle System, not the World Wide Web. If you want to look
+more in-depth at the arguments in favor of HTTP URIs to which Berners-Lee was
+referring, check out [this article][myRI] from [2006]{.oldstyle}.
 
 A DOI, like a URI, is a just unique name, and can be reused in other contexts.
 There is nothing that requires a DOI to resolve to some normative document, so
