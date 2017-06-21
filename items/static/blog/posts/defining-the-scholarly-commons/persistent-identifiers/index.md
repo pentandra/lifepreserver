@@ -110,18 +110,17 @@ hardware needed, but innovation slows in such an economy because of the lack of
 competition.
 
 As I will discuss further on in this essay, there is no need for a natural
-monopoly based around the DOI system, at least not in this new culture. Using
-the DOI system for scholarship seems to fit better with pre-Web legacy
-approaches that used paper or its digital counterpart, the PDF, as the
-container for scholarly communication. The DOI system was designed for a
-closed, centralized world, in which it made more sense to have resources on the
-Web located at only one point of reference to eliminate unneeded duplication
-and maximize efficiency of storage. This approach provided additional benefit
-for these publishers as a mechanism to induce artificial scarcity by the means
-of paywalls. All of the benefits of using the DOI system for
-scholarship---object identification, metadata model, and social
-infrastructure---can be more openly, universally, and robustly provided by the
-W3C's open linked data infrastructure and Web archiving.
+monopoly based around the DOI system. Using the DOI system for scholarship
+seems to fit better with pre-Web legacy approaches that used paper or its
+digital counterpart, the PDF, as the container for scholarly communication. The
+DOI system was designed for a closed, centralized world, in which it made more
+sense to have resources on the Web located at only one point of reference to
+eliminate unneeded duplication and maximize efficiency of storage. This
+approach provided additional benefit for these publishers as a mechanism to
+induce artificial scarcity by the means of paywalls. All of the benefits of
+using the DOI system for scholarship---object identification, metadata model,
+and social infrastructure---can be more openly, universally, and robustly
+provided by the W3C's open linked data infrastructure and Web archiving.
 
 <figure id="the-second-rule-of-linked-data" class="bq grab">
 
