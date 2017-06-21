@@ -73,7 +73,7 @@ freedom when we give others control. And this choice may be acceptable to many.
 But we need to know what we are choosing. We need to understand that the issue
 is not between decentralization or centralization, but is nothing more than an
 age-old argument in disguise: the question of individual agency and
-accountability versus compulsion; the question of who is in control.
+accountability versus compulsion---the question of who is in control.
 
 The [ISO [26324]{.oldstyle}][DOI standard] is a standard, but not an open
 standard, as the last time I checked it costs [88]{.oldstyle} CHF to purchase
