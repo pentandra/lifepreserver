@@ -4,7 +4,7 @@ description: To be or not to be. Is persistent identification really the questio
 kind: vignette
 author_name: Chris Chapman
 created_at: 2017-05-11
-updated_at: 2017-06-07
+updated_at: 2017-06-21
 part_of_series_id: '/static/blog/posts/defining-the-scholarly-commons/index.*'
 tags:
   - Defining the Commons
@@ -30,6 +30,11 @@ The aim of this essay is not as much to present solutions, as it is to paint a
 picture of a way to think about a problem and point out some directions that we
 could move forward towards solving it. Call it a pattern if you wish. Either
 way, I apologize in advance for the number of acronyms in this post.
+
+I would be remiss if I did not mention [some excellent comments][dat-pid] on
+this topic from Maxwell Ogden of the Dat Project, or PIDapalooza, the first
+community conference explicitly dedicated to the topic of persistent
+identifiers, held last year in Reykjavik, Iceland.
 
 <!--MORE-->
 
@@ -503,6 +508,7 @@ Commons follows the robustness principle.
 [LOCKSS]: <https://en.wikipedia.org/wiki/LOCKSS> "LOCKSS on Wikipedia"
 [myRI]: <http://www.w3.org/2001/tag/doc/URNsAndRegistries-50>
 [robustness principle]: <https://en.wikipedia.org/wiki/Robustness_principle> "Robustness Principle on Wikipedia"
+[dat-pid]: <http://blog.datproject.org/2016/11/11/pidapalooza/> "An Introduction to Persistent Identifiers, by Maxwell Ogden"
 
 [^herbert-doi-comment]:
 
