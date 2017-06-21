@@ -138,18 +138,19 @@ provided by the W3C's open linked data infrastructure and Web archiving.
 <figcaption>The second rule (or expectation of behavior) of Linked Data, by Tim Berners-Lee, [2006]{.oldstyle}</figcaption>
 </figure>
 
-HTTP URIs as identifiers are just as separable from the underlying technology
-as are DOI URIs. Either could support multiple resolution mechanisms, though in
-practice, both currently depend upon DNS for resolution. If you want to look
-more in-depth at the arguments in favor of HTTP URIs to which Berners-Lee was
-referring, check out [this article][myRI] from [2006]{.oldstyle}. [Larry
-Stone's independent evaluation][stone evaluation] of DOIs versus PURLs, which
-is linked to from [the DOI website][doi-purl] to portray one of the benefits of
-the DOI system, was largely based on contemporary and now largely irrelevant
-implementation details. Stone did not foresee sustainable Web-scale archiving
-initiatives, and some things he mentions are just plain wrong. As things
-currently look to me, if there is anything in danger of becoming obsolete, it
-is the Handle System, not the World Wide Web.
+In other words, HTTP URIs as identifiers are just as separable from the
+underlying technology and as capable of being archived as are DOIs. Either
+could support multiple resolution mechanisms, though in practice, both
+currently depend upon DNS for resolution. If you want to look more in-depth at
+the arguments in favor of HTTP URIs to which Berners-Lee was referring, check
+out [this article][myRI] from [2006]{.oldstyle}. [Larry Stone's independent
+evaluation][stone evaluation] of DOIs versus PURLs, which is linked to from
+[the DOI website][doi-purl] to portray one of the benefits of the DOI system,
+was largely based on contemporary and now largely irrelevant implementation
+details. Stone did not foresee sustainable Web-scale archiving initiatives, and
+some things he mentions are just plain wrong. As things currently look to me,
+if there is anything in danger of becoming obsolete, it is the Handle System,
+not the World Wide Web.
 
 A DOI, like a URI, is a just unique name, and can be reused in other contexts.
 There is nothing that requires a DOI to resolve to some normative document, so
