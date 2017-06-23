@@ -56,7 +56,7 @@ your voice openly. We're working on a mechanism to allow people to contribute
 to this discussion without needing to ask for our permission :joy:.
 
 <dl>
-<% items_with_tag('Defining the Commons', sorted_blog_posts).reverse_each do |post| %>
+<% children_of(@item).sort_by { |c| c.identifier }.each do |post| %>
   <dt><%= link_to_if_published(post, published_blog_posts) %></dt>
   <dd><%= post[:description] %></dd>
 <% end %>

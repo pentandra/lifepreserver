@@ -7,7 +7,7 @@ created_at: 2017-05-11
 updated_at: 2017-06-21
 part_of_series_id: '/static/blog/posts/defining-the-scholarly-commons/index.*'
 tags:
-  - Defining the Commons
+  - Scholarly Commons
   - Technology
   - World Wide Web
 ---
