@@ -21,6 +21,7 @@ include LifePreserver::Company
 include LifePreserver::UrlShortener
 include LifePreserver::Search
 include LifePreserver::Functional
+include Breadcrumbs
 include LifePreserver::Text
 include LifePreserver::Vocabulary
 include LifePreserver::Tagging
