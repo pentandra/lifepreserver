@@ -165,7 +165,7 @@ GEM
     minitest (5.10.2)
     multi_json (1.12.1)
     multi_xml (0.6.0)
-    nanoc (4.7.11)
+    nanoc (4.7.10)
       cri (~> 2.8)
       ddplugin (~> 1.0)
       hamster (~> 3.0)
