@@ -31,3 +31,4 @@ include LifePreserver::AtomFeed
 include LifePreserver::Dictionaries
 include LifePreserver::Dependencies
 include LifePreserver::Proposals
+include LifePreserver::ChildParent
