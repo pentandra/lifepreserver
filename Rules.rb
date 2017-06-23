@@ -20,5 +20,3 @@ include_rules 'rules/dynamic'
 
 # This should always be last
 include_rules 'rules/catch_all'
-
-# vi: ft=ruby
