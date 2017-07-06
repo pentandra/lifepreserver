@@ -21,7 +21,7 @@ compile '/static/solutions/proposals/*/index\.md', rep: :pdf_letter do
   filter :erb
   filter :pandoc, args: [
     { from: :markdown, to: :context },
-    :chapters,
+    { top_level_division: :chapter },
   ]
   filter :abbreviate, type: :context
   filter :absolutify_paths, type: :context
@@ -35,7 +35,7 @@ compile '/static/solutions/proposals/*/index\.md', rep: :pdf_a4 do
   filter :erb
   filter :pandoc, args: [
     { from: :markdown, to: :context },
-    :chapters,
+    { top_level_division: :chapter },
   ]
   filter :abbreviate, type: :context
   filter :absolutify_paths, type: :context
