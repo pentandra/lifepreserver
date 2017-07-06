@@ -12,7 +12,7 @@ The following external dependencies or system packages need to be installed and
 in scope before compiling:
 
 * Ruby (with [bundler], i.e. `gem install bundler`)
-* [pandoc] for markdown processing
+* [pandoc] (>= 2.0) for markdown processing
 * [ConTeXt] for PDF generation of reports
 * [hunspell] _(>= 1.3.4)_ for spell-checking
 * [git] for version tagging and history management

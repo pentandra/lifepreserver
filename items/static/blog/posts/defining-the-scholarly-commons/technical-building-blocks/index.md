@@ -6,7 +6,7 @@ author_name: Chris Chapman
 created_at: 2017-04-20
 updated_at: 2017-06-19
 tags:
-  - Defining the Commons
+  - Scholarly Commons
   - Technology
 ---
 

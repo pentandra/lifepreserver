@@ -6,7 +6,7 @@ author_name: Chris Chapman
 created_at: 2017-04-20
 updated_at: 2017-04-20
 tags:
-  - Defining the Commons
+  - Scholarly Commons
 ---
 
 We don't want to create a commons for a commons sake. First we need to know

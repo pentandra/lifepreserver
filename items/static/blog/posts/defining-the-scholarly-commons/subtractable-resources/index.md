@@ -6,7 +6,7 @@ author_name: Chris Chapman
 created_at: 2017-04-20
 updated_at: 2017-05-24
 tags:
-  - Defining the Commons
+  - Scholarly Commons
 ---
 
 <figure id="surfing-commons" class="img" property="schema:sharedContent" resource="#surfing-commons" typeof="schema:ImageObject">

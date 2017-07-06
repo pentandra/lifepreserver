@@ -6,7 +6,6 @@ compile %r{/static/company/benefit-reports/\d{4}/index\.md} do
     { from: :markdown, to: :html5 },
     { base_header_level: 2 },
     :section_divs,
-    :smart,
   ]
   filter :spellchecker, type: :html
   filter :abbreviate, type: :html

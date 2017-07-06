@@ -6,7 +6,7 @@ author_name: Chris Chapman
 created_at: 2017-04-20
 updated_at: 2017-04-26
 tags:
-  - Defining the Commons
+  - Scholarly Commons
 ---
 
 Inclusivity is not an intrinsic quality of the Scholarly Commons---it is a just
