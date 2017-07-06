@@ -6,8 +6,6 @@ compile '/static/solutions/proposals/*/index\.md' do
     { from: :markdown, to: :html5 },
     { base_header_level: 2 },
     :section_divs,
-    :normalize,
-    :smart,
   ]
   filter :spellchecker, type: :html
   filter :abbreviate, type: :html
@@ -24,8 +22,6 @@ compile '/static/solutions/proposals/*/index\.md', rep: :pdf_letter do
   filter :pandoc, args: [
     { from: :markdown, to: :context },
     :chapters,
-    :normalize,
-    :smart,
   ]
   filter :abbreviate, type: :context
   filter :absolutify_paths, type: :context
@@ -40,8 +36,6 @@ compile '/static/solutions/proposals/*/index\.md', rep: :pdf_a4 do
   filter :pandoc, args: [
     { from: :markdown, to: :context },
     :chapters,
-    :normalize,
-    :smart,
   ]
   filter :abbreviate, type: :context
   filter :absolutify_paths, type: :context

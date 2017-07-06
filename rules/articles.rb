@@ -5,8 +5,6 @@ compile '/static/articles/*/*.md' do
     { from: :"markdown+emoji", to: :html5 },
     { base_header_level: 2 },
     :section_divs,
-    :normalize,
-    :smart,
   ]
   filter :absolutify_paths, type: :html
   filter :spellchecker, type: :html
@@ -25,8 +23,6 @@ compile '/static/articles/*/*.md', rep: :feed_entry do
     { from: :"markdown+emoji", to: :html5 },
     { base_header_level: 2 },
     :section_divs,
-    :normalize,
-    :smart,
   ]
   filter :absolutify_paths, type: :html, global: true
   filter :rubypantsunicode
