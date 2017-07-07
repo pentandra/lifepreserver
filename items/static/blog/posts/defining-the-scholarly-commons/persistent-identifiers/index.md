@@ -4,7 +4,7 @@ description: To be or not to be. Is persistent identification really the questio
 kind: vignette
 author_name: Chris Chapman
 created_at: 2017-05-11
-updated_at: 2017-06-21
+updated_at: 2017-07-06
 part_of_series_id: '/static/blog/posts/defining-the-scholarly-commons/index.*'
 tags:
   - Scholarly Commons
@@ -247,17 +247,20 @@ high-school student.
 
 # A deeper look at persistence
 
-We need to embrace the Wild World Web with all its inconsistency and
-unavailability if we are going to find a real solution to this universal
-problem. If we look at the World Wide Web as a vast [distributed data store],
-we can then apply Eric Brewer's [CAP theorem] to the problem, which essentially
-states that _in the presence of a network partition, one has to choose between
-consistency and availability_. Framing the Web this way would allow us to
-define a broken link as an information resource with an availability problem.
-And as far as consistency goes, with a state that constantly fluxing between
-convergence and divergence, I don't have much hope that the Web will ever
-achieve perfect global consistency, perhaps not even _eventually_. I'm not even
-sure that's what we want.
+In order to step forward we need to let go of the utopian vision of a perfectly
+consistent and always available World Wide Web. We need to embrace the Wild
+World Web with all its inconsistency and unavailability if we are going to find
+a real solution to this universal problem. If we look at the World Wide Web as
+a vast [distributed data store], we can then apply Eric Brewer's [CAP theorem]
+to the problem, which essentially states that _in the presence of a network
+partition, one has to choose between consistency and availability_. Framing the
+Web this way would allow us to define a broken link as an information resource
+with an availability problem. And as far as consistency goes, with a state that
+constantly fluxing between convergence and divergence, I don't have much hope
+that the Web will ever achieve perfect global consistency, perhaps not even
+_eventually_. I'm not even sure that's what we want.
+
+## Weakness of the DOI solution
 
 In answer to this problem, the DOI system offers a naive solution because it
 assumes that these resources will always be available in a consistent form
@@ -287,12 +290,14 @@ be a complete solution to the problem of persistence of scholarly objects, just
 the publishers' side of it, which, in the past, only included the scholarly
 outputs.
 
+## Ways forward
+
 So what do we do? Is there any hope for the Web as a stable medium for research
 or scholarly communication? I think that the answer to this question is _yes_,
 but we need to look deeper at what is really going on here. In the context of
-research and scholarly communication, availability and consistency should be
-thought of as having ready access to see what the researcher saw at the time
-she did her research.
+research communication, availability and consistency should be thought of as
+having ready access to see what the researcher saw at the time she did her
+research.
 
 The solution here is simple: get rid of the network partition. Linked Data
 resources already do this for data. Unlike the Web of Documents where web pages
@@ -318,33 +323,68 @@ Here's a tiny example:
 ```
 
 If I have access to [this example resource](#tiny-web-of-data) from this one
-server, I can see linked data described in four different namespaces without
+server, I can see linked data represented by four different namespaces without
 needing access to four separate servers. If I use a reasoner which has some
 knowledge of the data within this tiny web of data, it can make inferences and
 create more knowledge without needing ready access to any other remotely hosted
 resources directly---the data is independent of the hosts that describe the
-data. The server hosting the <https://creativecommons.org/ns#> resource could
-be down and the ontology unavailable, and the data would still be interoperable
-(the <abbr>I</abbr> in FAIR) as long as I had a local copy of the data file.
+data. The server hosting the <https://creativecommons.org/ns#> vocabulary could
+be down, and the data would still be interoperable (the <abbr>I</abbr> in FAIR)
+as long as I had local copies of the data file and the files containing the
+vocabularies which describe the data.
+
 For the reusability (and reproducibility) aspect of research (the
-<abbr>R</abbr> in FAIR), the need for preservation enters the picture here. We
-need a way to preserve the sources upon which the researcher is basing claims.
-If we can preserve not only the research, but the blocks upon which that
-research builds, we will always have access to all the resources, whether or
-not they are currently available at their original locations. If we remove the
-network partition and preserve the sources locally as the research dependencies
-are created, all of those resources will be guaranteed to be locally consistent
-and available. The [PACELC theorem], which builds upon the CAP theorem, states
-that _a high availability requirement implies that the system must replicate
-data_. How to actually do this replicating is a topic for another time (and
-relates to the <abbr>F</abbr> and <abbr>A</abbr> of FAIR), and could happen in
-various ways, from web archiving to IPFS. But it should be obvious by now that
-mere citations of resources are not enough, irrespective of the 'archival
-quality' of the identifier scheme. We need to realize that citation systems
-originated in the scarcity of the paper publication paradigm, where it really
-was not feasible to distribute all of the research dependencies alongside each
-research paper. With the technologies that exist and are emerging, we have an
-amazing opportunity _and responsibility_ to do this better.
+<abbr>R</abbr> in FAIR), the need for preservation enters the picture.
+
+## Research data consistency
+
+We need ways to preserve the sources upon which the researcher is basing
+claims. If we can preserve not only the research, but the blocks upon which
+that research builds, we will always have access to all the resources, whether
+or not they are currently available at their original locations. If we remove
+the network partition and preserve the sources locally as the research
+dependencies are created, all of those resources will be guaranteed to be
+locally consistent and available. The [PACELC theorem], which builds upon the
+CAP theorem, states that _a high availability requirement implies that the
+system must replicate data_. This point was touched upon by Tim Berners-Lee in
+his [vision of Linked Data][Linked Data]:
+
+<figure id="limitations-on-browseable-data" class="bq grab">
+
+> So statements which relate things in two documents must be repeated in each.
+> This is clearly against the first rule of data storage: don't store the same
+> data in two different places: you will have problems keeping it consistent.
+> This is indeed an issue with browsable data. A set of completely browsable
+> data with links in both directions has to be completely consistent, and that
+> takes coordination, especially if different authors or different programs are
+> involved.
+
+<figcaption>First paragraph from <cite>Limitations on browseable data</cite></figcaption>
+</figure>
+
+While these concerns are valid for the normal runtime needs of the Web, they
+are not as much a concern for research. Research communications are more
+concerned with sharing what happened in the past, rather than the current state
+of the resources are that were involved in the past. Whether a resource has
+changed from what it was in the past is a separate question, and if it has
+changed, will likely require further analysis and consideration. Much more
+value is to be had by being consistent with what the researcher was looking at
+and used at the time the analyses and conclusions were built, than by trying to
+guarantee any intrinsic consistency between current and past representations of
+the resources. The needs for research are different than the normal runtime
+needs of the Web, and some common sense here shows us a simple solution to the
+difficult problem of preservation, resolution, and consistency.
+
+How to actually do this replicating is a topic for another time (and relates to
+the <abbr>F</abbr> and <abbr>A</abbr> of FAIR), and could happen in various
+ways, from web archiving to IPFS. But it should be obvious by now that
+archiving mere citations of resources are not enough, irrespective of the
+'archival quality' of the identifier scheme. We need to realize that citation
+systems originated in the scarcity of the paper publication paradigm, where it
+really was not feasible to distribute all of the research dependencies
+alongside each research paper. With the technologies that exist and are
+emerging, we have an amazing opportunity _and responsibility_ to do this
+better.
 
 # The need for resolution
 
@@ -536,7 +576,7 @@ Commons follows the robustness principle.
     that can claim a DOI, limiting the scope of the scholarly conversation in a
     way that is very closed and exclusive. If this is perpetuated to the
     extreme, scholarship will never be able to transcend current scholarly
-    circles. To an [open email list](https://groups.google.com/a/force11.org/forum/#!forum/f11discussion)
+    circles. To the [FORCE[11]{.oldstyle} email list](https://groups.google.com/a/force11.org/forum/#!forum/f11discussion)
     Leslie Chan posted [the following insightful comment](https://groups.google.com/a/force11.org/d/msg/f11discussion/_jE0D4ns_RQ/f_yE86vFCQAJ):
 
     <div class="bq grab">
