@@ -219,26 +219,29 @@ distributing authority and control. Can you imagine what the Internet would be
 like today if they hung onto that control, even out of good intentions, and you
 had to request a domain name through the United States Department of Defense?
 
-DOIs are centrally maintained by a trusted third party, which is fine if you
-actually trust (and continue to trust) the third party. DNS is decentralized
-and is trusted because no one controls it. This is the basic idea behind the
-word <dfn id="trustlessness">trustlessness</dfn>. In the DOI system, the
-institutions and publishers are in control; in the DNS, the control is
-distributed.
-
 Whatever the intellectual shortcomings of DNS, they got the control aspect
-right. It may be interesting to note that, while DNS is a global distributed
-application, it is does not use a technical P2P architecture. Technically, it
-was architected as a client-server system, with name servers and name resolvers
-functioning as clients. The difference in between the DNS and its predecesor,
-the `hosts` file, or even the DOI system, lies in who is controlling what. You
-could say that socially, DNS is a peer-to-peer system in the sense that anyone
-is welcome to participate for the same nominal fee, and that there is no
-heirarchy among the participants. BGP peering is similar to DNS in these
-respects. We need players to work together on an even playing field, as peers.
-The social problem is bigger and harder to overcome than the technical one. The
-issue is less about how well the system will persist into the future than what
-that system is enabling or disabling _right now_.
+right. DOIs are centrally maintained by a trusted third party, which is fine if
+you actually trust (and continue to trust) the third party. DNS is
+decentralized and is trusted because it is controlled by those that have
+responsibility and accountability for the pieces that they own. In the DOI
+system, the institutions and publishers are in control; in the DNS, the control
+is distributed. The social problem is bigger and harder to overcome than the
+technical one. The issue is less about how well the system will persist into
+the future than what that system is enabling or disabling _right now_.
+Socially, there is a shared interest in keeping the DNS system functioning
+properly, because everyone depends upon it.
+
+It may be interesting to note that, while DNS is a global distributed
+application, it does not use a technical P2P architecture, but was designed as
+a client-server system, with name servers and clients functioning as name
+resolvers. The difference between the DNS and its predecessor, the `hosts`
+file, or even the DOI system, lies in who is controlling what. Even though it
+describes a consistent namespace of domains and subdomains, you could say that
+socially, DNS is a peer-to-peer system in the sense that anyone is welcome to
+participate (for a nominal fee) and there is no hierarchy among the
+participants in how the system works. This is the kind of culture that we need
+for the Scholarly Commons, where players come together as peers and work on an
+even playing field.
 
 In all of what I'm saying, I'm not recommending that we get rid of institutions
 and publishers. We need them, but not as the controllers of what counts as
