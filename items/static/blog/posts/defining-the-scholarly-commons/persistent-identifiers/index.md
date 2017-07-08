@@ -1,7 +1,7 @@
 ---
 title: "Defining the Scholarly Commons: persistent identifiers"
 description: To be or not to be. Is persistent identification really the question?
-kind: vignette
+kind: essay
 author_name: Chris Chapman
 created_at: 2017-05-11
 updated_at: 2017-07-08
