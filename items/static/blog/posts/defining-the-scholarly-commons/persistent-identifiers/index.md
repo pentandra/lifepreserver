@@ -4,7 +4,7 @@ description: To be or not to be. Is persistent identification really the questio
 kind: vignette
 author_name: Chris Chapman
 created_at: 2017-05-11
-updated_at: 2017-07-06
+updated_at: 2017-07-08
 part_of_series_id: '/static/blog/posts/defining-the-scholarly-commons/index.*'
 tags:
   - Scholarly Commons
@@ -226,10 +226,19 @@ word <dfn id="trustlessness">trustlessness</dfn>. In the DOI system, the
 institutions and publishers are in control; in the DNS, the control is
 distributed.
 
-Whatever the intellectual shortcomings of DNS, they got the social aspect
-right. The social problem is bigger and harder to overcome than the technical
-one. The issue is less about how well the system will persist into the future
-than what that system is enabling or disabling _right now_.
+Whatever the intellectual shortcomings of DNS, they got the control aspect
+right. It may be interesting to note that, while DNS is a global distributed
+application, it is does not use a technical P2P architecture. Technically, it
+was architected as a client-server system, with name servers and name resolvers
+functioning as clients. The difference in between the DNS and its predecesor,
+the `hosts` file, or even the DOI system, lies in who is controlling what. You
+could say that socially, DNS is a peer-to-peer system in the sense that anyone
+is welcome to participate for the same nominal fee, and that there is no
+heirarchy among the participants. BGP peering is similar to DNS in these
+respects. We need players to work together on an even playing field, as peers.
+The social problem is bigger and harder to overcome than the technical one. The
+issue is less about how well the system will persist into the future than what
+that system is enabling or disabling _right now_.
 
 In all of what I'm saying, I'm not recommending that we get rid of institutions
 and publishers. We need them, but not as the controllers of what counts as
