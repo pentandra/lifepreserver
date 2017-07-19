@@ -4,7 +4,7 @@ description: Introducing a series of vignettes to discuss the Scholarly Commons.
 kind: blogpost
 author_name: Chris Chapman
 created_at: 2017-04-20
-updated_at: 2017-07-15
+updated_at: 2017-07-18
 tags:
   - Scholarly Commons
   - Holism
@@ -17,7 +17,7 @@ tags:
   <meta property="schema:height" content="449 px" datatype="schema:Distance" />
   <meta property="schema:contentSize" content="50KB" />
   <img property="schema:contentUrl" class="static" alt="Eight blind Buddhist monks are depicted examining different parts of an elephant" src="Blind_monks_examining_an_elephant.jpg" />
-  <figcaption property="schema:caption"><b>Blind monks examining an elephant</b>, by Itcho Hanabusa, illustrates the Buddhist parable in which each man reaches a different conclusion based upon which part of the elephant he examined. Via <a href="https://commons.wikimedia.org/wiki/File:Blind_monks_examining_an_elephant.jpg">Wikimedia Commons</a>.</figcaption>
+  <figcaption property="schema:caption"><b>Blind monks examining an elephant</b>, by Itcho Hanabusa, illustrates the parable in which each man reaches a different conclusion based upon which part of the elephant he examined. Via <a href="https://commons.wikimedia.org/wiki/File:Blind_monks_examining_an_elephant.jpg">Wikimedia Commons</a>.</figcaption>
 </figure>
 
 Almost two years ago, FORCE[11]{.oldstyle} received a grant to try to answer
