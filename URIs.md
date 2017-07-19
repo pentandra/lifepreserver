@@ -6,8 +6,11 @@ resolves. A fragment identifier created by a hash following a slash
 part of that information resource.
 
 Any URI that does not end in a `/` does not refer to an information resource,
-but to some other resource, such as a concept. A few concepts that are listed
-as prefixes in the base layout (in Turtle notation) are:
+but to some other resource, such as a concept.
+
+## Available prefixes
+
+A few concepts that are listed as prefixes in the base layout are:
 
 ```turtle
 # To refer to the company (Pentandra) as an entity
