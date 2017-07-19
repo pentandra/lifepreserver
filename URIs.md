@@ -19,7 +19,7 @@ A few concepts that are listed as prefixes in the base layout are:
 # To refer to the blog as a concept
 @prefix pentandra-blog: <https://pentandra.com/blog#> . 
 
-# To refer to the website (located at https://pentandra.com/) as a concept
+# To refer to the website (located at https://pentandra.com) as a concept
 @prefix pentandra-website: <https://pentandra.com#> .
 ```
 *[URI]: Uniform Resource Identifier
