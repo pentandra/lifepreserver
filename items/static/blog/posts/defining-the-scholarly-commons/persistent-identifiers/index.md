@@ -234,7 +234,7 @@ properly, because everyone depends upon it.
 It may be interesting to note that, while DNS is a global distributed
 application, it does not use a technical P2P architecture, but was designed as
 a client-server system, with name servers and clients functioning as name
-resolvers. The difference between the DNS and its predecessor, the `hosts`
+resolvers. A major difference between the DNS and its predecessor, the `hosts`
 file, or even the DOI system, lies in who is controlling what. Even though it
 describes a consistent namespace of domains and subdomains, you could say that
 socially, DNS is a peer-to-peer system in the sense that anyone is welcome to
