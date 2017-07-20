@@ -4,7 +4,7 @@ description: To be or not to be. Is persistent identification really the questio
 kind: essay
 author_name: Chris Chapman
 created_at: 2017-05-11
-updated_at: 2017-07-08
+updated_at: 2017-07-19
 part_of_series_id: '/static/blog/posts/defining-the-scholarly-commons/index.*'
 tags:
   - Scholarly Commons
@@ -256,6 +256,50 @@ on or produce during your research should be as FAIR as is reasonably possible,
 whether it is something that another researcher published, or something that
 was found on some blog post published by some enthusiastic, science-crazed
 high-school student.
+
+An alternative to DNS that uses P2P technology launched in May of this year.
+Using a distributed application that runs on top of the Ethereum blockchain,
+[ENS] offers a secure and decentralized way to address resources using simple,
+human-readable names. These names look exactly like the domain names we are
+used to, except that right now they all end in `.eth`{.sic}. The implications
+for this approach are very interesting from several perspectives. From the
+perspective of control, the creators of ENS learned from TheDAO---that even in
+a distributed architecture it is good to have some amount of central control,
+especially in the early years of this nascent technology. Distributed
+technologies are not created in a vacuum, and it makes sense for those who are
+putting them into place retain some amount of ability to help them reach the
+ends for which they were created. This happened with DNS, but mostly behind the
+scenes as Jon Postel and others worked to maintain the distributed nature of
+their creation. As it became more successful, however, Jon thought that it
+would be good to divide up control of the DNS root servers from the government.
+He tried to switch it, but the government stepped in a reversed his decision.
+The difference with blockchain technology is that the governance can be
+expressed explicitly, and is not a implicit social contract. Much care and
+effort has and will be put into thinking about governance and responsibility in
+[managing the ENS root][ENS root].
+
+<a class="address" href="https://etherscan.io/address/0x314159265dd8dbb310642f98f50c066173c1259b">0x314159265dd8dbb310642f98f50c066173c1259b</a>
+
+Instead of having individual ownership of each piece of the web, blockchain
+provides a common base layer that anyone can own. Responsibility and
+accountability then shift from a more capitalistic mindset, to one of the group
+managing a common-pool resource. DNS is trusted because it is assumed that
+those that have responsibility and accountability for their little piece will
+act appropriately, and contribute to the whole, but blockchain makes the
+situation more explicit and strong: each of us own the whole, and it is in
+everyone's best interest for everyone else to act appropriately. Whereas in the
+DNS, you control your little part---your domain names and whatever they map to,
+a blockchain is a community investment, not necessarily in the financial sense,
+but in the sense that a people gather together around a common-pool resource
+to do something together that was not possible to do alone.
+
+The other aspect we'll look at next has to do with the idea of a common data
+layer that blockchain provides, and the need for a more robust and reliable
+web. Blockchain is an explicit expression of persistence and sustainability.
+The current Internet, while exceedingly useful, is a brittle and unstable
+runtime that relies on constant node uptime to function. If a node is down,
+that part of the Internet just doesn't work. A blockchain in a sense is a
+virtualized network that anyone can run.
 
 # A deeper look at persistence
 
@@ -570,6 +614,8 @@ Commons follows the robustness principle.
 [myRI]: <http://www.w3.org/2001/tag/doc/URNsAndRegistries-50>
 [robustness principle]: <https://en.wikipedia.org/wiki/Robustness_principle> "Robustness Principle on Wikipedia"
 [dat-pid]: <http://blog.datproject.org/2016/11/11/pidapalooza/> "An Introduction to Persistent Identifiers, by Maxwell Ogden"
+[ENS]: <http://ens.domains>
+[ENS root]: <http://ens.domains/#section-root>
 
 [^herbert-doi-comment]:
 

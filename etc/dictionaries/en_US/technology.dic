@@ -9,6 +9,7 @@ DNS/M
 DOI/S
 DSL
 DecisionML/M
+Ethereum/M
 Feinler/M
 GNN/M
 HATEOAS
@@ -49,6 +50,7 @@ WebMention
 XRI/S
 affordance/S
 backend/MS
+blockchain/GDS
 buildtime/M
 codebase/SM
 dataset/SM
@@ -68,4 +70,5 @@ subdomain/SM
 syntaxes
 trustlessness
 vCard/MS
+virtualize/DB
 zipfile
