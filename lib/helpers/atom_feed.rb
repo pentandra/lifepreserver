@@ -36,7 +36,7 @@ module LifePreserver
       end
 
       def build
-        buffer = ''
+        buffer = String.new
         xml = Builder::XmlMarkup.new(target: buffer, indent: 2)
         build_for_feed(xml)
         buffer
