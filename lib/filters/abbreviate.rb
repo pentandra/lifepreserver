@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Abbreviate < Nanoc::Filter
   require_relative '../helpers/dictionaries'
   include LifePreserver::Dictionaries

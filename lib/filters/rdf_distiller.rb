@@ -1,6 +1,9 @@
-require_relative '../helpers/link_to'
+# frozen_string_literal: true
 
 class RdfDistiller < Nanoc::Filter
+  require_relative '../helpers/link_to'
+  include LifePreserver::LinkTo
+
   identifiers :rdf_distiller
 
   requires 'linkeddata', 'active_support/core_ext/string/inflections'

@@ -1,6 +1,9 @@
-require_relative '../helpers/link_to'
+# frozen_string_literal: true
 
 class Vcard < Nanoc::Filter
+  require_relative '../helpers/link_to'
+  include LifePreserver::LinkTo
+
   identifier :vcard
 
   requires 'vcardigan'

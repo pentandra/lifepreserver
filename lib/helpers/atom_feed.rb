@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'weblog'
 require_relative 'link_to'
 require_relative 'dates'

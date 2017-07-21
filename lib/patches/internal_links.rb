@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'uri'
 
 module Nanoc::Extra::Checking::Checks

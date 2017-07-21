@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module LifePreserver
   module ChildParent
     def parent_of(item, parent_pattern: 'index.*')

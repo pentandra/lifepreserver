@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Based on https://gist.github.com/fracai/1597618 and the
 # `Nanoc::Filters::RelativizePaths filter, with improvements
 class AbsolutifyPaths < Nanoc::Filter
