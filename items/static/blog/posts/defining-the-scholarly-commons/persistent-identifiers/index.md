@@ -442,7 +442,7 @@ alongside each research paper. With the technologies that exist and are
 emerging, we have an amazing opportunity _and responsibility_ to do this
 better.
 
-# The need for resolution
+## What about global resolution?
 
 It is the resolution aspect of this that researchers really care about, and
 that offers any advantage over URI. But the DOI web is also unwieldy and prone
