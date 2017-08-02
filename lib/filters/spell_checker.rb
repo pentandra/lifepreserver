@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class SpellChecker < Nanoc::Filter
   require_relative '../helpers/dictionaries'
   include LifePreserver::Dictionaries
@@ -6,7 +8,7 @@ class SpellChecker < Nanoc::Filter
 
   requires 'set', 'nokogiri'
 
-  IGNORE_CLASSES ||= Set.new(%w(domainname filename foreign handle identifier prefix projectname sic uri)).freeze
+  IGNORE_CLASSES ||= Set.new(%w(address domainname filename foreign handle identifier prefix projectname sic uri)).freeze
 
   def run(content, params = {})
     case params[:type]
@@ -48,6 +50,7 @@ class SpellChecker < Nanoc::Filter
     doc = content =~ /<html[\s>]/ ? klass.parse(content) : klass.fragment(content)
     doc.traverse do |node|
       next unless node.text?
+      next if node.path['/pre']
 
       parent = node.parent
       if parent.element?

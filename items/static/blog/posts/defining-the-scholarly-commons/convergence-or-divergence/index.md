@@ -1,7 +1,7 @@
 ---
 title: "Defining the Scholarly Commons: convergence or divergence?"
 description: How did we get to this point, and where do we go from here?
-kind: vignette
+kind: essay
 author_name: Chris Chapman
 created_at: 2017-04-21
 updated_at: 2017-06-19

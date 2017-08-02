@@ -8,6 +8,7 @@ ARPANET: Advanced Research Projects Agency Network
 ASCII: American Standard Code for Information Interchange
 B2B: Business To Business
 BCG: Board for Certification of Genealogists
+BGP: Border Gateway Protocol
 BMW: Bayerische MotorWerke (Bavarian Motor Works)
 CAP: Consistency, Availability, Partition tolerance
 CC-BY-NC: Creative Commons Attribution-NonCommercial
@@ -29,6 +30,7 @@ DOAP: Description Of A Project
 DOI: Digital Object Identifier (DOI®)
 DSL: Domain Specific Language
 DoCO: Document Components Ontology
+ENS: Ethereum Name Service
 EU: European Union
 FAIR: Findable, Accessible, Interoperable, Reusable
 FB: Facebook
@@ -74,6 +76,7 @@ OMB: Office of Management and Budget
 OSS: Open-Source Software
 OWL2: Web Ontology Language 2
 OWL: Web Ontology Language
+P2P: Peer-to-Peer
 PACELC: In case of network partitioning (P) in a distributed computer system, one has to choose between availability (A) and consistency (C) (as per the CAP theorem), but else (E), even when the system is running normally in the absence of partitions, one has to choose between latency (L) and consistency (C).
 PDF: Portable Document Format
 PNG: Portable Network Graphics

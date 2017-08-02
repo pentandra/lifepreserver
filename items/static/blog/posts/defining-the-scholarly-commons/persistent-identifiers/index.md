@@ -1,10 +1,10 @@
 ---
 title: "Defining the Scholarly Commons: persistent identifiers"
 description: To be or not to be. Is persistent identification really the question?
-kind: vignette
+kind: essay
 author_name: Chris Chapman
 created_at: 2017-05-11
-updated_at: 2017-06-21
+updated_at: 2017-07-19
 part_of_series_id: '/static/blog/posts/defining-the-scholarly-commons/index.*'
 tags:
   - Scholarly Commons
@@ -219,17 +219,29 @@ distributing authority and control. Can you imagine what the Internet would be
 like today if they hung onto that control, even out of good intentions, and you
 had to request a domain name through the United States Department of Defense?
 
-DOIs are centrally maintained by a trusted third party, which is fine if you
-actually trust (and continue to trust) the third party. DNS is decentralized
-and is trusted because no one controls it. This is the basic idea behind the
-word <dfn id="trustlessness">trustlessness</dfn>. In the DOI system, the
-institutions and publishers are in control; in the DNS, the control is
-distributed.
+Whatever the intellectual shortcomings of DNS, they got the control aspect
+right. DOIs are centrally maintained by a trusted third party, which is fine if
+you actually trust (and continue to trust) the third party. DNS is
+decentralized and is trusted because it is controlled by those that have
+responsibility and accountability for the pieces that they own. In the DOI
+system, the institutions and publishers are in control; in the DNS, the control
+is distributed. The social problem is bigger and harder to overcome than the
+technical one. The issue is less about how well the system will persist into
+the future than what that system is enabling or disabling _right now_.
+Socially, there is a shared interest in keeping the DNS system functioning
+properly, because everyone depends upon it.
 
-Whatever the intellectual shortcomings of DNS, they got the social aspect
-right. The social problem is bigger and harder to overcome than the technical
-one. The issue is less about how well the system will persist into the future
-than what that system is enabling or disabling _right now_.
+It may be interesting to note that, while DNS is a global distributed
+application, it does not use a technical P2P architecture, but was designed as
+a client-server system, with name servers and clients functioning as name
+resolvers. A major difference between the DNS and its predecessor, the `hosts`
+file, or even the DOI system, lies in who is controlling what. Even though it
+describes a consistent namespace of domains and subdomains, you could say that
+socially, DNS is a peer-to-peer system in the sense that anyone is welcome to
+participate (for a nominal fee) and there is no hierarchy among the
+participants in how the system works. This is the kind of culture that we need
+for the Scholarly Commons, where players come together as peers and work on an
+even playing field.
 
 In all of what I'm saying, I'm not recommending that we get rid of institutions
 and publishers. We need them, but not as the controllers of what counts as
@@ -245,19 +257,66 @@ whether it is something that another researcher published, or something that
 was found on some blog post published by some enthusiastic, science-crazed
 high-school student.
 
+An alternative to DNS that uses P2P technology launched in May of this year.
+Using a distributed application that runs on top of the Ethereum blockchain,
+[ENS] offers a secure and decentralized way to address resources using simple,
+human-readable names. These names look exactly like the domain names we are
+used to, except that right now they all end in `.eth`{.sic}. The implications
+for this approach are very interesting from several perspectives. From the
+perspective of control, the creators of ENS learned from TheDAO---that even in
+a distributed architecture it is good to have some amount of central control,
+especially in the early years of this nascent technology. Distributed
+technologies are not created in a vacuum, and it makes sense for those who are
+putting them into place retain some amount of ability to help them reach the
+ends for which they were created. This happened with DNS, but mostly behind the
+scenes as Jon Postel and others worked to maintain the distributed nature of
+their creation. As it became more successful, however, Jon thought that it
+would be good to divide up control of the DNS root servers from the government.
+He tried to switch it, but the government stepped in a reversed his decision.
+The difference with blockchain technology is that the governance can be
+expressed explicitly, and is not a implicit social contract. Much care and
+effort has and will be put into thinking about governance and responsibility in
+[managing the ENS root][ENS root].
+
+<a class="address" href="https://etherscan.io/address/0x314159265dd8dbb310642f98f50c066173c1259b">0x314159265dd8dbb310642f98f50c066173c1259b</a>
+
+Instead of having individual ownership of each piece of the web, blockchain
+provides a common base layer that anyone can own. Responsibility and
+accountability then shift from a more capitalistic mindset, to one of the group
+managing a common-pool resource. DNS is trusted because it is assumed that
+those that have responsibility and accountability for their little piece will
+act appropriately, and contribute to the whole, but blockchain makes the
+situation more explicit and strong: each of us own the whole, and it is in
+everyone's best interest for everyone else to act appropriately. Whereas in the
+DNS, you control your little part---your domain names and whatever they map to,
+a blockchain is a community investment, not necessarily in the financial sense,
+but in the sense that a people gather together around a common-pool resource
+to do something together that was not possible to do alone.
+
+The other aspect we'll look at next has to do with the idea of a common data
+layer that blockchain provides, and the need for a more robust and reliable
+web. Blockchain is an explicit expression of persistence and sustainability.
+The current Internet, while exceedingly useful, is a brittle and unstable
+runtime that relies on constant node uptime to function. If a node is down,
+that part of the Internet just doesn't work. A blockchain in a sense is a
+virtualized network that anyone can run.
+
 # A deeper look at persistence
 
-We need to embrace the Wild World Web with all its inconsistency and
-unavailability if we are going to find a real solution to this universal
-problem. If we look at the World Wide Web as a vast [distributed data store],
-we can then apply Eric Brewer's [CAP theorem] to the problem, which essentially
-states that _in the presence of a network partition, one has to choose between
-consistency and availability_. Framing the Web this way would allow us to
-define a broken link as an information resource with an availability problem.
-And as far as consistency goes, with a state that constantly fluxing between
-convergence and divergence, I don't have much hope that the Web will ever
-achieve perfect global consistency, perhaps not even _eventually_. I'm not even
-sure that's what we want.
+In order to step forward we need to let go of the utopian vision of a perfectly
+consistent and always available World Wide Web. We need to embrace the Wild
+World Web with all its inconsistency and unavailability if we are going to find
+a real solution to this universal problem. If we look at the World Wide Web as
+a vast [distributed data store], we can then apply Eric Brewer's [CAP theorem]
+to the problem, which essentially states that _in the presence of a network
+partition, one has to choose between consistency and availability_. Framing the
+Web this way would allow us to define a broken link as an information resource
+with an availability problem. And as far as consistency goes, with a state that
+constantly fluxing between convergence and divergence, I don't have much hope
+that the Web will ever achieve perfect global consistency, perhaps not even
+_eventually_. I'm not even sure that's what we want.
+
+## Weakness of the DOI solution
 
 In answer to this problem, the DOI system offers a naive solution because it
 assumes that these resources will always be available in a consistent form
@@ -287,12 +346,14 @@ be a complete solution to the problem of persistence of scholarly objects, just
 the publishers' side of it, which, in the past, only included the scholarly
 outputs.
 
+## Ways forward
+
 So what do we do? Is there any hope for the Web as a stable medium for research
 or scholarly communication? I think that the answer to this question is _yes_,
 but we need to look deeper at what is really going on here. In the context of
-research and scholarly communication, availability and consistency should be
-thought of as having ready access to see what the researcher saw at the time
-she did her research.
+research communication, availability and consistency should be thought of as
+having ready access to see what the researcher saw at the time she did her
+research.
 
 The solution here is simple: get rid of the network partition. Linked Data
 resources already do this for data. Unlike the Web of Documents where web pages
@@ -302,7 +363,7 @@ useful data and relationships across multiple namespaces within one document.
 Here's a tiny example:
 
 <% me = person_by_name(@item[:author_name]) %>
-``` {#tiny-web-of-data .turtle}
+``` {#tiny-web-of-data .turtle .numberLines}
 @prefix cc: &lt;https://creativecommons.org/ns#&gt; .
 @prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
@@ -318,35 +379,70 @@ Here's a tiny example:
 ```
 
 If I have access to [this example resource](#tiny-web-of-data) from this one
-server, I can see linked data described in four different namespaces without
+server, I can see linked data represented by four different namespaces without
 needing access to four separate servers. If I use a reasoner which has some
 knowledge of the data within this tiny web of data, it can make inferences and
 create more knowledge without needing ready access to any other remotely hosted
 resources directly---the data is independent of the hosts that describe the
-data. The server hosting the <https://creativecommons.org/ns#> resource could
-be down and the ontology unavailable, and the data would still be interoperable
-(the <abbr>I</abbr> in FAIR) as long as I had a local copy of the data file.
-For the reusability (and reproducibility) aspect of research (the
-<abbr>R</abbr> in FAIR), the need for preservation enters the picture here. We
-need a way to preserve the sources upon which the researcher is basing claims.
-If we can preserve not only the research, but the blocks upon which that
-research builds, we will always have access to all the resources, whether or
-not they are currently available at their original locations. If we remove the
-network partition and preserve the sources locally as the research dependencies
-are created, all of those resources will be guaranteed to be locally consistent
-and available. The [PACELC theorem], which builds upon the CAP theorem, states
-that _a high availability requirement implies that the system must replicate
-data_. How to actually do this replicating is a topic for another time (and
-relates to the <abbr>F</abbr> and <abbr>A</abbr> of FAIR), and could happen in
-various ways, from web archiving to IPFS. But it should be obvious by now that
-mere citations of resources are not enough, irrespective of the 'archival
-quality' of the identifier scheme. We need to realize that citation systems
-originated in the scarcity of the paper publication paradigm, where it really
-was not feasible to distribute all of the research dependencies alongside each
-research paper. With the technologies that exist and are emerging, we have an
-amazing opportunity _and responsibility_ to do this better.
+data. The server hosting the <https://creativecommons.org/ns#> vocabulary could
+be down, and the data would still be interoperable (the <abbr>I</abbr> in FAIR)
+as long as I had local copies of the data file and the files containing the
+vocabularies which describe the data.
 
-# The need for resolution
+For the reusability (and reproducibility) aspect of research (the
+<abbr>R</abbr> in FAIR), the need for preservation enters the picture.
+
+## Research data consistency
+
+We need ways to preserve the sources upon which the researcher is basing
+claims. If we can preserve not only the research, but the blocks upon which
+that research builds, we will always have access to all the resources, whether
+or not they are currently available at their original locations. If we remove
+the network partition and preserve the sources locally as the research
+dependencies are created, all of those resources will be guaranteed to be
+locally consistent and available. The [PACELC theorem], which builds upon the
+CAP theorem, states that _a high availability requirement implies that the
+system must replicate data_. This point was touched upon by Tim Berners-Lee in
+his [vision of Linked Data][Linked Data]:
+
+<figure id="limitations-on-browseable-data" class="bq grab">
+
+> So statements which relate things in two documents must be repeated in each.
+> This is clearly against the first rule of data storage: don't store the same
+> data in two different places: you will have problems keeping it consistent.
+> This is indeed an issue with browsable data. A set of completely browsable
+> data with links in both directions has to be completely consistent, and that
+> takes coordination, especially if different authors or different programs are
+> involved.
+
+<figcaption>First paragraph from <cite>Limitations on browseable data</cite></figcaption>
+</figure>
+
+While these concerns are valid for the normal runtime needs of the Web, they
+are not as much a concern for research. Research communications are more
+concerned with sharing what happened in the past, rather than the current state
+of the resources are that were involved in the past. Whether a resource has
+changed from what it was in the past is a separate question, and if it has
+changed, will likely require further analysis and consideration. Much more
+value is to be had by being consistent with what the researcher was looking at
+and used at the time the analyses and conclusions were built, than by trying to
+guarantee any intrinsic consistency between current and past representations of
+the resources. The needs for research are different than the normal runtime
+needs of the Web, and some common sense here shows us a simple solution to the
+difficult problem of preservation, resolution, and consistency.
+
+How to actually do this replicating is a topic for another time (and relates to
+the <abbr>F</abbr> and <abbr>A</abbr> of FAIR), and could happen in various
+ways, from web archiving to IPFS. But it should be obvious by now that
+archiving mere citations of resources are not enough, irrespective of the
+'archival quality' of the identifier scheme. We need to realize that citation
+systems originated in the scarcity of the paper publication paradigm, where it
+really was not feasible to distribute all of the research dependencies
+alongside each research paper. With the technologies that exist and are
+emerging, we have an amazing opportunity _and responsibility_ to do this
+better.
+
+## What about global resolution?
 
 It is the resolution aspect of this that researchers really care about, and
 that offers any advantage over URI. But the DOI web is also unwieldy and prone
@@ -518,6 +614,8 @@ Commons follows the robustness principle.
 [myRI]: <http://www.w3.org/2001/tag/doc/URNsAndRegistries-50>
 [robustness principle]: <https://en.wikipedia.org/wiki/Robustness_principle> "Robustness Principle on Wikipedia"
 [dat-pid]: <http://blog.datproject.org/2016/11/11/pidapalooza/> "An Introduction to Persistent Identifiers, by Maxwell Ogden"
+[ENS]: <http://ens.domains>
+[ENS root]: <http://ens.domains/#section-root>
 
 [^herbert-doi-comment]:
 
@@ -536,7 +634,7 @@ Commons follows the robustness principle.
     that can claim a DOI, limiting the scope of the scholarly conversation in a
     way that is very closed and exclusive. If this is perpetuated to the
     extreme, scholarship will never be able to transcend current scholarly
-    circles. To an [open email list](https://groups.google.com/a/force11.org/forum/#!forum/f11discussion)
+    circles. To the [FORCE[11]{.oldstyle} email list](https://groups.google.com/a/force11.org/forum/#!forum/f11discussion)
     Leslie Chan posted [the following insightful comment](https://groups.google.com/a/force11.org/d/msg/f11discussion/_jE0D4ns_RQ/f_yE86vFCQAJ):
 
     <div class="bq grab">

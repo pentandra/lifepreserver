@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class RobustAnchors < Nanoc::Filter
 
   identifier :robust_anchors

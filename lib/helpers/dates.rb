@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module LifePreserver
   module Dates
     # @param [String, Time, Date, DateTime] arg

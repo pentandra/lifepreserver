@@ -1,7 +1,7 @@
 ---
 title: "Defining the Scholarly Commons: subtractable resources"
 description: Is there a subtractable resource in your scholarly commons? Yes, there should be.
-kind: vignette
+kind: essay
 author_name: Chris Chapman
 created_at: 2017-04-20
 updated_at: 2017-05-24
@@ -29,6 +29,18 @@ into multiple layers, either imitating the structure of the knowledge around
 which it was created, or more likely, around the type of need it is trying to
 fill.
 
+In this essay, I will discuss a framework for describing the extremely complex
+resource that we call _knowledge_, starting with the work of Charlotte Hess and
+Elinor Ostrom, including several conflated concepts that have even seeped into
+our own discussions. I will then take this framework further and bring in the
+idea of _potential and prior discoveries_.
+
+<!--MORE-->
+
+# Information as a common-pool resource
+
+# The nature of discoveries
+
 The subtractable resource around which a scholarly commons forms is the moments
 of discovery that reveal, bit by bit, the latent knowledge within that field of
 study. In this definition, I'm using the term <dfn>discovery</dfn> very loosely
@@ -43,8 +55,6 @@ as it happened in some moment of time and will never happen again. It can be
 subtracted from the set of all potential discoveries that remain within that
 field of study. The knowledge that was revealed by that discovery, however, is
 set free, for example, to become public.
-
-<!--MORE-->
 
 Ocean waves provide a more tangible illustration of this type of subtractable
 resource. Even though it seems like there will be no end to the waves that

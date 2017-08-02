@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class QRCode < Nanoc::Filter
   identifier :qrcode
   type :text => :binary

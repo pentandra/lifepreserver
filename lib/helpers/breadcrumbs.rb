@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Breadcrumbs
   def breadcrumbs_trail
     components = @item.identifier.components

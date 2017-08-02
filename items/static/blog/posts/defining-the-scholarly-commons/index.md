@@ -4,12 +4,21 @@ description: Introducing a series of vignettes to discuss the Scholarly Commons.
 kind: blogpost
 author_name: Chris Chapman
 created_at: 2017-04-20
-updated_at: 2017-07-05
+updated_at: 2017-07-18
 tags:
   - Scholarly Commons
   - Holism
   - FORCE11
 ---
+
+<figure id="blind-monks-examining-an-elephant" property="schema:sharedContent" class="img" resource="#blind-monks-examining-an-elephant" typeof="schema:ImageObject">
+  <link property="schema:representativeOfPage" resource="schema:True" />
+  <meta property="schema:width" content="620 px" datatype="schema:Distance" />
+  <meta property="schema:height" content="449 px" datatype="schema:Distance" />
+  <meta property="schema:contentSize" content="50KB" />
+  <img property="schema:contentUrl" class="static" alt="Eight blind Buddhist monks are depicted examining different parts of an elephant" src="Blind_monks_examining_an_elephant.jpg" />
+  <figcaption property="schema:caption"><b>Blind monks examining an elephant</b>, by Itcho Hanabusa, illustrates the parable in which each man reaches a different conclusion based upon which part of the elephant he examined. Via <a href="https://commons.wikimedia.org/wiki/File:Blind_monks_examining_an_elephant.jpg">Wikimedia Commons</a>.</figcaption>
+</figure>
 
 Almost two years ago, FORCE[11]{.oldstyle} received a grant to try to answer
 the question, _are we ready to define the Scholarly Commons?_ I was invited to
@@ -33,21 +42,21 @@ here a series of vignettes, to prompt the many fundamental discussions that
 have not yet happened around this important topic, and to paint the picture of
 the Scholarly Commons from various perspectives. Of course, we are painting
 here with the broad stroke of our own opinion, and these vignettes do not
-necessarily reflect the consensus of the SCWG steering committee. For many of
-these subjects, these vignettes should be viewed as the first foray onto the
-subject, and most definitely should _not_ be viewed as the last word on any.
-The intent is to raise questions, open the discussion, and broaden our
+necessarily reflect the consensus of the Scholarly Commons Working Group. For
+many of these subjects, these vignettes should be viewed as the first foray
+onto the subject, and most definitely should _not_ be viewed as the last word
+on any. The intent is to raise questions, open the discussion, and broaden our
 collective horizons, with the hope that through this exercise, we can come to
-some consensus as to which questions we need to be asking, and, not any less
-important, how best to find answers to those questions. We may not agree on all
-the answers to those questions or even how to go about obtaining them, and I
-think that is okay. We all have different motivations for doing what we do, and
-different desires for the outcomes of it all. But it is in our best interest to
-come together, to come to an agreement on what the important questions are, and
-to find shared practices and values with which to build a foundation that would
-bring us together. Maybe the Scholarly Commons is not something that any one of
-us can define, but is truth that needs to be discovered---and it is the search
-for that truth that will hold us together.
+some understanding as to which questions we need to be asking, and, not any
+less important, how best to find answers to those questions. We may not agree
+on all the answers to those questions or even how to go about obtaining them,
+and I think that is okay. We all have different motivations for doing what we
+do, and different desires for the outcomes of it all. But it is in our best
+interest to come together, to come to an agreement on what the important
+questions are, and to find shared practices and values with which to build a
+foundation that would bring us together. Maybe the Scholarly Commons is not
+something that any one of us can define, but is truth that needs to be
+discovered---and it is the search for that truth that will hold us together.
 
 <!--MORE-->
 

@@ -67,7 +67,6 @@ The kind of document. Currently we have the following kinds of documents:
 
 * `article`: a formal, scholarly document that can have multiple authors
 * `essay`: a semiformal document with one author, higher quality
-* `vignette`: similar to an essay, but with more of an artistic approach
 * `blogpost`: an informal document with one author
 * `note`: a short statement by one author, like a tweet
 * `presentation`

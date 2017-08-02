@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # A few functional helpers, mostly borrowed from
 # http://www.randomhacks.net/2007/02/01/some-useful-closures-in-ruby/
 

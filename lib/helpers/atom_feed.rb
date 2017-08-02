@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'weblog'
 require_relative 'link_to'
 require_relative 'dates'
@@ -34,7 +36,7 @@ module LifePreserver
       end
 
       def build
-        buffer = ''
+        buffer = String.new
         xml = Builder::XmlMarkup.new(target: buffer, indent: 2)
         build_for_feed(xml)
         buffer
@@ -84,9 +86,9 @@ module LifePreserver
       end
 
       def build_for_feed(xml)
-        xml.instruct!
-        xml.feed(xmlns: 'http://www.w3.org/2005/Atom') do
           root_url = @config[:base_url] + '/'
+        xml.instruct!
+        xml.feed(xmlns: 'http://www.w3.org/2005/Atom', 'xml:base' => root_url) do
 
           # Add primary attributes
           xml.id(root_url)
