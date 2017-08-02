@@ -40,7 +40,7 @@ class AbsolutifyPaths < Nanoc::Filter
       absolutify_css(content, params)
     when :context
       absolutify_context(content, params)
-    when :html, :xml, :xhtml
+    when :html, :html5, :xml, :xhtml
       absolutify_html_like(content, params)
     else
       raise 'The absolutify_paths filter needs to know the type of content to ' \
@@ -131,7 +131,7 @@ class AbsolutifyPaths < Nanoc::Filter
 
     case type
     when :html5
-      doc.to_html
+      doc.to_html.force_encoding(Encoding::UTF_8)
     else
       doc.send("to_#{type}")
     end

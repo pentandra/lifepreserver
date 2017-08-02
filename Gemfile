@@ -14,6 +14,7 @@ gem 'locale'
 gem 'nanoc'              # for compiling the site
 gem 'nanoc-cachebuster', git: 'https://github.com/cdchapman/nanoc-cachebuster', branch: 'nanoc-4'
 gem 'nokogiri'           # for parsing HTML
+gem 'nokogumbo'          # for parsing HTML5
 gem 'pandoc-ruby'        # for benefit reports in ConTeXt
 gem 'rainpress'          # for compact CSS
 gem 'rest-client'        # for downloads of external resources
