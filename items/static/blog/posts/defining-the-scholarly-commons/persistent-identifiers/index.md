@@ -363,7 +363,7 @@ useful data and relationships across multiple namespaces within one document.
 Here's a tiny example:
 
 <% me = person_by_name(@item[:author_name]) %>
-``` {#tiny-web-of-data .turtle}
+``` {#tiny-web-of-data .turtle .numberLines}
 @prefix cc: &lt;https://creativecommons.org/ns#&gt; .
 @prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
