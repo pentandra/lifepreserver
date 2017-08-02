@@ -8,7 +8,7 @@ part of that information resource.
 Any URI that does not end in a `/` does not refer to an information resource,
 but to some other resource, such as a concept.
 
-## Available prefixes
+## RDFa prefixes
 
 A few concepts that are listed as prefixes in the base layout are:
 
