@@ -8,7 +8,7 @@ types {
     application/rss+xml                   rss;
     application/vnd.geo+json              geojson;
     application/xml                       xml;
-    application/rdf+xml                   rdf;
+    application/rdf+xml                   rdf owl;
     text/turtle                           ttl; 
     text/n3                               n3;
   
