@@ -7,6 +7,7 @@ created_at: 2017-04-20
 updated_at: 2017-05-24
 tags:
   - Scholarly Commons
+  - Holism
 ---
 
 <figure id="surfing-commons" class="img" property="schema:sharedContent" resource="#surfing-commons" typeof="schema:ImageObject">
@@ -28,6 +29,14 @@ commons can form around any type of knowledge. Scholarly commons can be nested
 into multiple layers, either imitating the structure of the knowledge around
 which it was created, or more likely, around the type of need it is trying to
 fill.
+
+<figure class="grab bq">
+
+> The right boundary for thinking about a problem rarly coincides with the
+> boundary of an academic discipline, or with a political boundary.
+
+<figcaption>--- <cite>Thinking in Systems: A Primer</cite>, by Donella H. Meadows, p. <span class="oldstyle">98</span></figcaption>
+</figure>
 
 In this essay, I will discuss a framework for describing the extremely complex
 resource that we call _knowledge_, starting with the work of Charlotte Hess and
