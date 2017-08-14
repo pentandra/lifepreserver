@@ -43,9 +43,17 @@ fill.
 <figure class="grab bq">
 
 > The right boundary for thinking about a problem rarly coincides with the
-> boundary of an academic discipline, or with a political boundary.
+> boundary of an academic discipline, or with a political boundary. ...
+> Ideally, we would have the mental flexibility to find the appropriate
+> boundary for thinking about each new problem. We are rarely that flexible.
+> ... It's a great art to remember that _boundaries are of our own making, and
+> that they can and should be reconsidered for each new discussion, problem, or
+> purpose._ It's a challenge to stay creative enough to drop the boundaries
+> that worked for the last problem and to find the most appropriate set of
+> boundaries for the next question. It's also a necessity, if problems are to
+> be solved well.
 
-<figcaption>--- <cite>Thinking in Systems: A Primer</cite>, by Donella H. Meadows, p. <span class="oldstyle">98</span></figcaption>
+<figcaption>--- <cite>Thinking in Systems: A Primer</cite>, by Donella H. Meadows, pp. <span class="oldstyle">98--99</span></figcaption>
 </figure>
 
 # Information as a common-pool resource
