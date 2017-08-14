@@ -16,6 +16,16 @@ tags:
   <figcaption property="schema:caption"><span property="schema:description">Waves are the subtractable resource of a surfing commons at the <span property="schema:contentLocation">Banzai Pipeline, off the coast of Oahu, Hawaii</span>.</span> Photo by <span property="cc:attributionName" class="sic">MUrra</span>, via <a rel="prov:hadPrimarySource" href="https://commons.wikimedia.org/wiki/File%3AHawaii-Pipeline.jpg">Wikimedia Commons</a>, and licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0">CC-BY-SA</a> license. <span class="icon-cc"></span><span class="icon-cc-by"></span><span class="icon-cc-sa"></span></figcaption>
 </figure>
 
+In this essay, I will discuss a framework for describing the extremely complex
+resource that we call _knowledge_, starting with the work of Charlotte Hess and
+Elinor Ostrom, including several conflated concepts that have even seeped into
+our own discussions. I will then take this framework further and bring in the
+idea of _potential and prior discoveries_.
+
+<!--MORE-->
+
+# System boundaries of a commons
+
 My thoughts on this, which I believe are consistent with commons theory and are
 touched upon in [a blog post by Bruce Caron][collectives], is that a scholarly
 commons will form because of a need---a need for understanding. People that
@@ -37,14 +47,6 @@ fill.
 
 <figcaption>--- <cite>Thinking in Systems: A Primer</cite>, by Donella H. Meadows, p. <span class="oldstyle">98</span></figcaption>
 </figure>
-
-In this essay, I will discuss a framework for describing the extremely complex
-resource that we call _knowledge_, starting with the work of Charlotte Hess and
-Elinor Ostrom, including several conflated concepts that have even seeped into
-our own discussions. I will then take this framework further and bring in the
-idea of _potential and prior discoveries_.
-
-<!--MORE-->
 
 # Information as a common-pool resource
 
