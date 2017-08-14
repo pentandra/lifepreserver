@@ -46,8 +46,9 @@ fill.
 > boundary of an academic discipline, or with a political boundary. ...
 > Ideally, we would have the mental flexibility to find the appropriate
 > boundary for thinking about each new problem. We are rarely that flexible.
-> ... It's a great art to remember that _boundaries are of our own making, and
-> that they can and should be reconsidered for each new discussion, problem, or
+> ... Too often, universities are living monuments to boundary rigidity. ...
+> It's a great art to remember that _boundaries are of our own making, and that
+> they can and should be reconsidered for each new discussion, problem, or
 > purpose._ It's a challenge to stay creative enough to drop the boundaries
 > that worked for the last problem and to find the most appropriate set of
 > boundaries for the next question. It's also a necessity, if problems are to
