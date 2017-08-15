@@ -8,7 +8,17 @@ part of that information resource.
 Any URI that does not end in a `/` does not refer to an information resource,
 but to some other resource, such as a concept.
 
-## RDFa prefixes
+## Fragment identifier design
+
+Use rich, descriptive fragment identifiers comprised of lower case letters
+(unless there is some important reason to do otherwise), separated by the `-`
+character. Resource identifiers using hashes should follow the same pattern.
+
+When a resource identifier identifies a document fragment, the resource
+identifier may be the same as the fragment identifier. This arrangement makes
+logical sense and satisfies [httpRange-14].
+
+## Concept-specific RDFa context
 
 A few concepts that are listed as prefixes in the base layout are:
 
@@ -22,3 +32,5 @@ A few concepts that are listed as prefixes in the base layout are:
 # To refer to the website (located at https://pentandra.com) as a concept
 @prefix pentandra-website: <https://pentandra.com#> .
 ```
+
+[httpRange-14]: <http://lists.w3.org/Archives/Public/www-tag/2005Jun/0039.html>
