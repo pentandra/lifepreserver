@@ -23,6 +23,7 @@
               </li>
             <% end %>
           </ul>
+          <%= render('/partials/part_of_series.*') if @item[:part_of_id] %>
           <meta property="schema:copyrightYear" datatype="xsd:gYear" content="<%= @item[:created_at].year %>" />
           <link property="rdfa:copy" resource="pentandra-website:license" />
           <link property="schema:isPartOf sioc:has_container" resource="pentandra-blog:blog" />
