@@ -4,7 +4,7 @@ description: Is there a subtractable resource in your scholarly commons? Yes, th
 kind: essay
 author_name: Chris Chapman
 created_at: 2017-04-20
-updated_at: 2017-05-24
+updated_at: 2017-08-14
 tags:
   - Scholarly Commons
   - Holism
