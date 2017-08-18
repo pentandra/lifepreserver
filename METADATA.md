@@ -83,6 +83,8 @@ The kind of document. Currently we have the following kinds of documents:
 * `base-dictionary`
 * `extra-dictionary`
 * `acronym-dictionary`
+* `concept`
+* `feed`
 
 ## Metadata relating to relationships between documents
 
@@ -100,3 +102,11 @@ This document is part of another document.
 
 The item to which this proposal is in reply. Most of the time, this should
 resolve to a document in the archive.
+
+### `redirect_to_id`
+
+An item that needs a redirection to an information resource.
+
+### `previous_path`
+
+The previous path of an item.
