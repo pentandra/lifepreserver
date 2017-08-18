@@ -18,6 +18,14 @@ When a resource identifier identifies a document fragment, the resource
 identifier may be the same as the fragment identifier. This arrangement makes
 logical sense and satisfies [httpRange-14].
 
+### Common fragment identifiers in document structure
+
+```
+#title
+#document-context
+#content
+```
+
 ## Concept-specific RDFa context
 
 A few concepts that are listed as prefixes in the base layout are:
