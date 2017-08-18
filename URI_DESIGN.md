@@ -21,9 +21,15 @@ logical sense and satisfies [httpRange-14].
 ### Common fragment identifiers in document structure
 
 ```
-#title
-#document-context
-#content
+#title: the title of the document
+#document-context: the context of the document
+#content: the content of the document
+```
+
+### Other fragment identifiers
+
+```
+#series: to identify a resource that represents a series of something
 ```
 
 ## Concept-specific RDFa context
