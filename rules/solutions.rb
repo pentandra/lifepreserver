@@ -48,6 +48,7 @@ end
 # Specification documents
 
 compile '/static/solutions/specifications/**/*.html' do
+  filter :erb
 end
 
 layout '/specifications/vocabulary.*', :rdf_distiller, format: :html

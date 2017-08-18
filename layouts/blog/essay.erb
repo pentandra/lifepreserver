@@ -1,8 +1,8 @@
 <% render('/default.*') do %>
   <article class="group h-entry" resource="#essay" typeof="cc:Work schema:BlogPosting ctag:TaggedContent" property="schema:mainEntity">
     <header class="section">
-      <h1 class="p-name" property="dc:title schema:headline"><%= @item[:title] %></h1>
-      <div class="group meta">
+      <h1 class="p-name" property="dc:title schema:headline" id="title"><%= @item[:title] %></h1>
+      <div class="group meta" id="document-context">
         <div class="bd up">
           <ul class="none">
             <li>By <%= link_for_author(@item[:author_name]) %></li>
@@ -23,6 +23,7 @@
               </li>
             <% end %>
           </ul>
+          <%= render('/partials/part_of_series.*') if @item[:part_of_id] %>
           <meta property="schema:copyrightYear" datatype="xsd:gYear" content="<%= @item[:created_at].year %>" />
           <link property="rdfa:copy" resource="pentandra-website:license" />
           <link property="schema:isPartOf sioc:has_container" resource="pentandra-blog:blog" />
@@ -30,7 +31,7 @@
       </div>
     </header>
     <div class="bd">
-      <div class="post section e-content" property="schema:articleBody sioc:content" datatype="rdf:HTML">
+      <div id="content" class="post section e-content" property="schema:articleBody sioc:content" datatype="rdf:HTML">
         <%= yield %>
       </div>
     </div>

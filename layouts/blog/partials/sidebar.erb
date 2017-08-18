@@ -63,6 +63,6 @@
     </ul>
   </nav>
   <% if @item[:published_at] %>
-    <%= render('/blog/partials/citations.*', item: item) %>
+    <%= render('/blog/partials/citations.*', item: @item) %>
   <% end %>
 </aside>

@@ -151,7 +151,7 @@ environments:
       code: UA-26002603-1
       site: pentandra.com
 
-    hypothesis: true
+    hypothesis: false
     production: true
 
     server:
