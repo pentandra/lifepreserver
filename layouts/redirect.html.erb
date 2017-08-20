@@ -1,0 +1,14 @@
+<% redirect_to_item = @items[@item.fetch(:redirect_to_id)] %>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title><%= @item[:full_title] || "#{@item[:title]} ← #{@config[:site][:name]}" %></title>
+    <meta name="description" content="<%= @item[:meta_description] || @item[:description] || @item[:title] %>">
+    <meta name="generator" content="Nanoc <%= @config[:nanoc_version] %>">
+    <meta http-equiv="refresh" content="0;url=<%= path_to(redirect_to_item) %>">
+  </head>
+  <body>
+    <p>This <%= @item.fetch(:kind, 'page') %> is taking you to <a href="<%= path_to(redirect_to_item) %>" class="uri"><%= path_to(redirect_to_item) %></a>.</p>
+  </body>
+</html>

@@ -85,6 +85,7 @@ The kind of document. Currently we have the following kinds of documents:
 * `acronym-dictionary`
 * `concept`
 * `feed`
+* `redirect`
 
 ## Metadata relating to relationships between documents
 
@@ -106,7 +107,3 @@ resolve to a document in the archive.
 ### `redirect_to_id`
 
 An item that needs a redirection to an information resource.
-
-### `previous_path`
-
-The previous path of an item.
