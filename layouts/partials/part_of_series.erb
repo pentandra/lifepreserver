@@ -1,1 +1,1 @@
-<p>This <%= item.fetch(:kind) %> is part of the series <cite><%= link_to_id(item[:part_of_id], fragment_id: 'series', property: 'schema:partOfSeries', typeof: 'schema:CreativeWorkSeries') %></cite>.</p>
+<p>This <%= item.fetch(:kind) %> is part of the series <cite><%= link_to_id(item[:part_of_id], fragment_id: 'series', concept_uri: true, property: 'schema:partOfSeries', typeof: 'schema:CreativeWorkSeries') %></cite>.</p>
