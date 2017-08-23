@@ -10,9 +10,8 @@
 
         <% if @item.key?(:part_of_id) %>
           <dl id="document-is-part-of" class="group">
-            <% part_of = @items[@item.fetch(:part_of_id)] %>
             <dt class="aside"><div class="close">Is part of</div></dt>
-            <dd class="bd"><%= link_to_id(part_of, property: :'schema:isPartOf') %></a></dd>
+            <dd class="bd"><%= link_to_id(@item.fetch(:part_of_id), property: :'schema:isPartOf') %></a></dd>
           </dl>
         <% end %>
 
