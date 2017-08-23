@@ -1,6 +1,6 @@
 # Solutions
 
-compile '/static/solutions/proposals/*/index\.md' do
+compile '/static/solutions/proposals/**/index.md' do
   filter :erb, @config[:erb]
   filter :pandoc, args: [
     { from: :markdown, to: :html5 },
@@ -17,7 +17,7 @@ compile '/static/solutions/proposals/*/index\.md' do
   write item.identifier.without_ext.sub('/proposals', '') + '.html'
 end
 
-compile '/static/solutions/proposals/*/index\.md', rep: :pdf_letter do
+compile '/static/solutions/proposals/**/index.md', rep: :pdf_letter do
   filter :erb
   filter :pandoc, args: [
     { from: :markdown, to: :context },
@@ -31,7 +31,7 @@ compile '/static/solutions/proposals/*/index\.md', rep: :pdf_letter do
   write File.dirname(item.identifier.to_s).sub('/proposals', '') + "/#{@item.fetch(:title).to_slug('_')}_proposal.pdf"
 end
 
-compile '/static/solutions/proposals/*/index\.md', rep: :pdf_a4 do
+compile '/static/solutions/proposals/**/index.md', rep: :pdf_a4 do
   filter :erb
   filter :pandoc, args: [
     { from: :markdown, to: :context },
