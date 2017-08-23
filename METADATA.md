@@ -70,7 +70,8 @@ The kind of document. Currently we have the following kinds of documents:
 * `blogpost`: an informal document with one author
 * `note`: a short statement by one author, like a tweet
 * `presentation`
-* `proposal`
+* `proposal`: a formal proposal from the company
+* `abstract`: a short proposal
 * `project`
 * `benefit-report`
 * `tag`: the tag itself (a controlled concept)
