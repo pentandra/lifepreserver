@@ -62,7 +62,5 @@
       <% end %>
     </ul>
   </nav>
-  <% if @item[:published_at] %>
-    <%= render('/blog/partials/citations.*', item: @item) %>
-  <% end %>
+  <%= render('/blog/partials/citations.*', item: @item) if @item[:published_at] %>
 </aside>

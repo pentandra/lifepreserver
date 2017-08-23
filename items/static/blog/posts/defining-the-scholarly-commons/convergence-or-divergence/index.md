@@ -5,6 +5,7 @@ kind: essay
 author_name: Chris Chapman
 created_at: 2017-04-21
 updated_at: 2017-06-19
+part_of_id: '/static/blog/posts/defining-the-scholarly-commons/index.*'
 tags:
   - Scholarly Commons
 ---

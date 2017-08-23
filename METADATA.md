@@ -83,6 +83,9 @@ The kind of document. Currently we have the following kinds of documents:
 * `base-dictionary`
 * `extra-dictionary`
 * `acronym-dictionary`
+* `concept`
+* `feed`
+* `redirect`: a permanent (301) redirect
 
 ## Metadata relating to relationships between documents
 
@@ -100,3 +103,7 @@ This document is part of another document.
 
 The item to which this proposal is in reply. Most of the time, this should
 resolve to a document in the archive.
+
+### `redirect_to_id`
+
+The item to which this item should be redirected in some way.

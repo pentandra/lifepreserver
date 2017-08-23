@@ -20,6 +20,9 @@ module LifePreserver
       # Pull out the global flag
       global = attributes.delete(:global)
 
+      path = public_path_to(target, global: global)
+      path.chop! if attributes.delete(:concept_uri) && path.end_with?('/')
+
       # Pull out fragment identifier, if given
       fragment = '#' + attributes.delete(:fragment_id) if attributes[:fragment_id]
 
@@ -29,7 +32,7 @@ module LifePreserver
       end
 
       # Create link
-      %(<a #{attributes}href="#{h public_path_to(target, global: global)}#{h fragment}">#{html_escape_once(text)}</a>)
+      %(<a #{attributes}href="#{h path}#{h fragment}">#{html_escape_once(text)}</a>)
     end
 
     alias link_to public_link_to
