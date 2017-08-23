@@ -55,7 +55,7 @@ class AbsolutifyPaths < Nanoc::Filter
   def absolutify_css(content, params)
     global = params.fetch(:global, false)
 
-    content.gsub(%r{url\((?<quote>['"]?)(?<path>/(?:[^/].*?)?)\k<quote>\)}) do
+    content.gsub(%r{url\((?<quote>['"]?)(?<path>(?:\.\.)?/(?:[^/].*?)?)\k<quote>\)}) do
       quote = Regexp.last_match(:quote)
       path = Regexp.last_match(:path)
       'url(' + quote + public_path_to(path, global: global) + quote + ')'
@@ -66,10 +66,10 @@ class AbsolutifyPaths < Nanoc::Filter
   def absolutify_context(content, params)
     global = params.fetch(:global, true)
 
-    content.gsub(%r{\\useURL\s*(?<identifier>\[.*?\]){1}\s*\[(?<target>/(?:[^/].*?)?)\]}) do
+    content.gsub(%r{\\useURL\s*(?<identifier>\[.*?\]){1}\s*\[(?<path>(?:\.\.)?/(?:[^/].*?)?)\]}) do
       identifier = Regexp.last_match(:identifier)
-      target = Regexp.last_match(:target)
-      '\useURL' + identifier + '[' + public_path_to(target, global: global) + ']'
+      path = Regexp.last_match(:path)
+      '\useURL' + identifier + '[' + public_path_to(path, global: global) + ']'
     end
   end
 
