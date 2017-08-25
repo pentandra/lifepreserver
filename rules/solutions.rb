@@ -26,6 +26,7 @@ compile '/static/solutions/proposals/**/index.md', rep: :pdf_letter do
   filter :abbreviate, type: :context
   filter :absolutify_paths, type: :context
   layout '/proposals/default.tex'
+  filter :fix_context_attribution
   snapshot :context, path: File.dirname(item.identifier.to_s).sub('/proposals', '') + "/#{@item.fetch(:title).to_slug('_')}_proposal.tex" unless @config[:production]
   filter :context2pdf, @config.fetch(:context2pdf, {}).merge(mode: ['identifiable', proposal_status(@item), @item[:kind]])
   write File.dirname(item.identifier.to_s).sub('/proposals', '') + "/#{@item.fetch(:title).to_slug('_')}_proposal.pdf"
@@ -40,6 +41,7 @@ compile '/static/solutions/proposals/**/index.md', rep: :pdf_a4 do
   filter :abbreviate, type: :context
   filter :absolutify_paths, type: :context
   layout '/proposals/default.tex'
+  filter :fix_context_attribution
   snapshot :context, path: File.dirname(item.identifier.to_s).sub('/proposals', '') + "/#{@item.fetch(:title).to_slug('_')}_proposal_a4.tex" unless @config[:production]
   filter :context2pdf, @config.fetch(:context2pdf, {}).merge(mode: ['identifiable', proposal_status(@item), @item[:kind], 'european'])
   write File.dirname(item.identifier.to_s).sub('/proposals', '') + "/#{@item.fetch(:title).to_slug('_')}_proposal_a4.pdf"
@@ -72,6 +74,10 @@ compile '/static/solutions/specifications/**/*.ttl', rep: :html do
   filter :cache_buster if @config[:production]
   filter :html5small if @config[:production]
   write item.identifier.without_ext.sub('/specifications', '') + '.html'
+end
+
+route %r{/static/solutions(/(proposals|projects|specifications))/.*\.erb$} do |solution_type, _|
+  item.identifier.without_ext.sub(solution_type, '') + '.html'
 end
 
 route %r{/static/solutions(/(proposals|projects|specifications))/.*} do |solution_type, _|

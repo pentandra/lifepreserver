@@ -129,6 +129,20 @@
     align=middle,
   ]
 
+\setupdelimitedtext[blockquote]
+  [
+    spacebefore=medium,
+    style={\sl},
+  ]
+
+\definedelimitedtext
+  [attribution][blockquote]
+
+\setupdelimitedtext[attribution]
+  [
+    style=normal,
+  ]
+
 \definesymbol[1][${\tfx \blacksquare}$]
 
 \setupitemize[1][inmargin,packed]
