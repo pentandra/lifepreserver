@@ -1,0 +1,11 @@
+<div property="schema:itemListElement" typeof="schema:ListItem" class="section">
+  <meta property="schema:position" content="<%= "#{position + 1}" %>" />
+  <article property="schema:item" resource="<%= "#{path_to(item)}##{item[:kind]}" %>" typeof="schema:BlogPosting" class="excerpt">
+    <div class="bd">
+      <h2 class="bigger">
+        <a property="schema:url" title="View <%= item.fetch(:kind, 'item') %>" href="<%= path_to(item) %>"><span property="dc:title schema:name"><%= item[:title] %></span></a>
+      </h2>
+    </div>
+    <link property="rdfa:copy" resource="pentandra-website:license" />
+  </article>
+</div>
