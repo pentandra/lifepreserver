@@ -9,7 +9,10 @@
 \startfrontmatter
 
 <%= render('/proposals/partials/st-titlepage.*') %>
+
+\startmode[proposal]
 <%= render('/proposals/partials/st-contents.*') %>
+\stopmode
 
 \stopfrontmatter
 
@@ -20,7 +23,10 @@
 \stopbodymatter
 
 \startappendices
-  \completelistofabbreviations
+  \doifmodeelse{proposal}
+    {\completelistofabbreviations}
+    {\placelistofabbreviations}
+
   %\completepublications
 \stopappendices
 
