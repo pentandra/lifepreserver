@@ -20,7 +20,7 @@ module LifePreserver
       elsif obj.respond_to?(:to_uri)
         obj.to_uri
       elsif obj.respond_to?(:identifier) && obj.identifier =~ '/company/people/*'
-        RDF::IRI.new("#{@config[:base_url]}#{@config[:company][:page_url]}##{full_name(obj).to_slug}")
+        RDF::IRI.new("#{@config[:base_url]}#{@config[:company][:page_path]}##{full_name(obj).to_slug}")
       else
         raise ArgumentError, "Not sure how to get an IRI for an object of type `#{obj.class}`."
       end
@@ -28,11 +28,11 @@ module LifePreserver
 
     # Relative path to a document section describing a person
     def description_path(person)
-      "#{@config[:company][:page_url]}/##{full_name(person).to_slug}"
+      "#{@config[:company][:page_path]}/##{full_name(person).to_slug}"
     end
 
     def photo_url(person, global: false)
-      "#{@config[:base_url] if global}#{@config[:site][:images_url]}/#{full_name(person).to_slug}.jpg"
+      "#{@config[:base_url] if global}#{@config[:site][:images_path]}/#{full_name(person).to_slug}.jpg"
     end
 
     # Fetch all the attributes of the company item.

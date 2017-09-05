@@ -85,7 +85,7 @@ module LifePreserver
     end
 
     def link_for_archive(year)
-      %(<a rel="archives" href="#{@config[:blog][:archives_url]}/#{h year.to_s}/" title="Articles written in #{h year.to_s}">#{h year.to_s}</a>)
+      %(<a rel="archives" href="#{@config[:blog][:archives_path]}/#{h year.to_s}/" title="Articles written in #{h year.to_s}">#{h year.to_s}</a>)
     end
 
     def archive_years(posts = nil)
@@ -104,7 +104,7 @@ module LifePreserver
         @items.create(
           %(<%= render('/blog/author.*', author: '#{author}') %>),
           { title: "Weblog postings by #{author}", kind: 'author-page', is_hidden: true, description: "All posts written by #{author}" },
-          "#{@config[:static_root]}#{@config[:blog][:authors_url]}/#{author.to_slug}/index.erb",
+          "#{@config[:static_root]}#{@config[:blog][:authors_path]}/#{author.to_slug}/index.erb",
           binary: false,
         )
       end
@@ -117,7 +117,7 @@ module LifePreserver
         @items.create(
           %(<%= render('/blog/archive.*', year: #{year}) %>),
           { title: "Weblog postings from #{year}", kind: 'archive-page', is_hidden: true, description: "All posts written in #{year}" },
-          "#{@config[:static_root]}#{@config[:blog][:archives_url]}/#{year}/index.erb",
+          "#{@config[:static_root]}#{@config[:blog][:archives_path]}/#{year}/index.erb",
           binary: false,
         )
       end

@@ -64,9 +64,9 @@ module LifePreserver
       end
 
       if rel_tag && tag[:semantic]
-        %(<a href="#{@config[:blog][:tags_url]}/#{h tag[:tag].to_slug}/" rel="tag ctag:tagged" resource="##{h tag[:tag].to_slug('_')}_tag" typeof="ctag:AuthorTag"><link property="ctag:means" resource="#{RDF::URI.new(tag[:uri]).pname}" typeof="#{RDF::URI.new(tag.fetch(:type, RDF::OWL.Thing)).pname}" /><span property="ctag:label">#{h tag[:tag]}</span></a>)
+        %(<a href="#{@config[:blog][:tags_path]}/#{h tag[:tag].to_slug}/" rel="tag ctag:tagged" resource="##{h tag[:tag].to_slug('_')}_tag" typeof="ctag:AuthorTag"><link property="ctag:means" resource="#{RDF::URI.new(tag[:uri]).pname}" typeof="#{RDF::URI.new(tag.fetch(:type, RDF::OWL.Thing)).pname}" /><span property="ctag:label">#{h tag[:tag]}</span></a>)
       else
-        %(<a href="#{@config[:blog][:tags_url]}/#{h tag[:tag].to_slug}/"#{' rel="tag"' if rel_tag}>#{h tag[:tag]}</a>)
+        %(<a href="#{@config[:blog][:tags_path]}/#{h tag[:tag].to_slug}/"#{' rel="tag"' if rel_tag}>#{h tag[:tag]}</a>)
       end
     end
 
@@ -89,7 +89,7 @@ module LifePreserver
         @items.create(
           %(<%= render('/blog/tag.*', tag: @items['#{tag.identifier}']) %>),
           { title: "Tag: #{tag.fetch(:label, tag[:tag])}", kind: 'tag-page', is_hidden: true, description: "All posts having to do with the tag '#{tag[:tag]}'" },
-          "#{@config[:static_root]}#{@config[:blog][:tags_url]}/#{tag[:tag].to_slug}/index.erb",
+          "#{@config[:static_root]}#{@config[:blog][:tags_path]}/#{tag[:tag].to_slug}/index.erb",
           binary: false,
         )
       end
