@@ -72,17 +72,17 @@ environments:
       title: The Pentandra Blog
       author_name: Pentandra
       author_uri: *base_url
-      url: /blog
-      tags_url: /tags
-      archives_url: /archives
-      authors_url: /authors
-      feed_url: /blog/feed
+      path: /blog
+      tags_path: /tags
+      archives_path: /archives
+      authors_path: /authors
+      feed_path: /blog/feed
 
     cache:
       short_urls: 'var/short_urls.yaml'
 
     company:
-      page_url: /company
+      page_path: /company
       logo_uri: &logo_uri "https://pentandra.com/images/pentandra-logo.png"
       photo_uri: *logo_uri
       kind: org
@@ -107,7 +107,7 @@ environments:
       recent_thoughts_limit: 5
       generate_meta: true
       base_url: *base_url
-      images_url: /images
+      images_path: /images
 
   development: &development
     <<: *default
