@@ -34,6 +34,14 @@ div.sourceCode {
   overflow-x: auto;
 }
 
+pre {
+  white-space: pre-wrap;
+}
+
+.numberLines pre {
+  white-space: pre;
+}
+
 code {
 
   // Keyword token (built-in language keywords)
