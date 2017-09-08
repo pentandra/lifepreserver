@@ -14,11 +14,11 @@ class GenVocabs < ::Nanoc::CLI::CommandRunner
 
     validate_options_and_arguments
 
-    load_site
+    @site = load_site(preprocess: false)
 
     template = File.read('etc/vocabs.yaml')
 
-    context = Nanoc::Int::Context.new(config: Nanoc::ConfigView.new(site.config, nil))
+    context = Nanoc::Int::Context.new(env)
 
     vocabs = YAML.safe_load(ERB.new(template).result(context.get_binding)).deep_symbolize_keys
 
@@ -70,6 +70,38 @@ class GenVocabs < ::Nanoc::CLI::CommandRunner
     puts 'Available vocabularies:'
     puts
     puts vocabs.map { |id, v| "#{v.fetch(:class_name, id.to_s.upcase)}: #{v[:uri]}" }.sort.join("\n")
+  end
+
+  def env
+    self.class.env_for_site(@site)
+  end
+
+  def self.reps_for(site)
+    Nanoc::Int::ItemRepRepo.new.tap do |reps|
+      action_provider = Nanoc::Int::ActionProvider.named(:rule_dsl).for(site)
+      builder = Nanoc::Int::ItemRepBuilder.new(site, action_provider, reps)
+      builder.run
+    end
+  end
+
+  def self.view_context_for(site)
+    Nanoc::ViewContext.new(
+      reps: reps_for(site),
+      items: site.items,
+      dependency_tracker: Nanoc::Int::DependencyTracker::Null.new,
+      compilation_context: nil,
+      snapshot_repo: nil,
+    )
+  end
+
+  def self.env_for_site(site)
+    view_context = view_context_for(site)
+
+    {
+      items: Nanoc::ItemCollectionWithRepsView.new(site.items, view_context),
+      layouts: Nanoc::LayoutCollectionView.new(site.layouts, view_context),
+      config: Nanoc::ConfigView.new(site.config, view_context),
+    }
   end
 end
 
