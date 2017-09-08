@@ -7,6 +7,9 @@ article:
 adms:
   uri: "http://www.w3.org/ns/adms#"
 
+bibo:
+  uri: "http://purl.org/ontology/bibo/"
+
 biro:
   uri: "http://purl.org/spar/biro/"
   source: "http://www.sparontologies.net/ontologies/biro/source.ttl"
@@ -18,6 +21,10 @@ c4o:
 co:
   uri: "http://purl.org/co/"
   source: "etc/vocabs/collections.owl"
+
+cro:
+  uri: "http://purl.obolibrary.org/obo/cro.owl#"
+  source: "https://github.com/openrif/contribution-ontology/raw/master/src/cro.owl"
 
 ctag:
   uri: "http://commontag.org/ns#"
@@ -96,6 +103,9 @@ sioct:
 vann:
   uri: "http://purl.org/vocab/vann/"
   source: "etc/vocabs/vann.ttl"
+
+vivo:
+  uri: "http://vivoweb.org/ontology/core#"
 
 voaf:
   uri: "http://purl.org/vocommons/voaf#"
