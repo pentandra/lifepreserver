@@ -23,7 +23,7 @@ module Vocab
               The DBpedia ontology provides the classes and properties used in the DBpedia data set.
             ).freeze,
       :"dc:issued" => %(2008-11-17T12:00Z).freeze,
-      :"dc:modified" => %(2016-09-01T18:29Z).freeze,
+      :"dc:modified" => %(2017-09-08T02:15Z).freeze,
       :"dc:publisher" => %(DBpedia Maintainers).freeze,
       :"dc:source" => %(http://mappings.dbpedia.org).freeze,
       :"dc:title" => %(The DBpedia Ontology).freeze,
@@ -43,6 +43,7 @@ module Vocab
       type: "owl:Class".freeze
     term :AcademicConference,
       label: "academic conference".freeze,
+      :"owl:equivalentClass" => %(http://www.wikidata.org/entity/Q2020153).freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyClass:AcademicConference).freeze,
       subClassOf: "dbo:SocietalEvent".freeze,
       type: "owl:Class".freeze
@@ -77,7 +78,7 @@ module Vocab
     term :AdministrativeRegion,
       comment: %(A PopulatedPlace under the jurisdiction of an administrative body. This body may administer either a whole region or one or more adjacent Settlements \(town administration\)).freeze,
       label: "administrative region".freeze,
-      :"owl:equivalentClass" => [%(http://dbpedia.org/ontology/%3Chttp://purl.org/dc/terms/Jurisdiction%3E).freeze, %(http://www.wikidata.org/entity/Q3455524).freeze, %(schema:AdministrativeArea).freeze],
+      :"owl:equivalentClass" => [%(http://www.wikidata.org/entity/Q3455524).freeze, %(schema:AdministrativeArea).freeze],
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyClass:AdministrativeRegion).freeze,
       subClassOf: "dbo:Region".freeze,
       type: "owl:Class".freeze
@@ -92,7 +93,7 @@ module Vocab
       comment: %(Analogous to a foaf:Agent, an agent is an entity that acts. This is intended to be the super class of Person and Organisation.).freeze,
       label: "agent".freeze,
       :"owl:disjointWith" => %(dbo:Place).freeze,
-      :"owl:equivalentClass" => %(http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent).freeze,
+      :"owl:equivalentClass" => [%(http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent).freeze, %(http://www.wikidata.org/entity/Q24229398).freeze],
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyClass:Agent).freeze,
       subClassOf: "owl:Thing".freeze,
       type: "owl:Class".freeze
@@ -277,6 +278,7 @@ module Vocab
       type: "owl:Class".freeze
     term :Artery,
       label: "artery".freeze,
+      :"owl:equivalentClass" => %(http://www.wikidata.org/entity/Q9655).freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyClass:Artery).freeze,
       subClassOf: "dbo:AnatomicalStructure".freeze,
       type: "owl:Class".freeze
@@ -546,6 +548,7 @@ module Vocab
     term :BoardGame,
       comment: %(come from http://en.wikipedia.org/wiki/Category:Board_games).freeze,
       label: "board game".freeze,
+      :"owl:equivalentClass" => %(http://www.wikidata.org/entity/Q131436).freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyClass:BoardGame).freeze,
       subClassOf: "dbo:Game".freeze,
       type: "owl:Class".freeze
@@ -735,6 +738,7 @@ module Vocab
     term :CardGame,
       comment: %(come from http://en.wikipedia.org/wiki/Category:Card_games).freeze,
       label: "card game".freeze,
+      :"owl:equivalentClass" => %(http://www.wikidata.org/entity/Q142714).freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyClass:CardGame).freeze,
       subClassOf: "dbo:Game".freeze,
       type: "owl:Class".freeze
@@ -880,6 +884,7 @@ module Vocab
     term :Church,
       comment: %(This is used for church buildings, not any other meaning of church.).freeze,
       label: "church".freeze,
+      :"owl:equivalentClass" => %(http://www.wikidata.org/entity/Q16970).freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyClass:Church).freeze,
       subClassOf: "dbo:ReligiousBuilding".freeze,
       type: "owl:Class".freeze
@@ -999,6 +1004,7 @@ module Vocab
       type: "owl:Class".freeze
     term :Company,
       label: "company".freeze,
+      :"owl:equivalentClass" => %(http://www.wikidata.org/entity/Q4830453).freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyClass:Company).freeze,
       subClassOf: "dbo:Organisation".freeze,
       type: "owl:Class".freeze
@@ -1355,7 +1361,7 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
       type: "owl:Class".freeze
     term :EducationalInstitution,
       label: "educational institution".freeze,
-      :"owl:equivalentClass" => %(schema:EducationalOrganization).freeze,
+      :"owl:equivalentClass" => [%(http://www.wikidata.org/entity/Q2385804).freeze, %(schema:EducationalOrganization).freeze],
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyClass:EducationalInstitution).freeze,
       subClassOf: "dbo:Organisation".freeze,
       type: "owl:Class".freeze
@@ -1499,7 +1505,7 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
       label: "fictional character".freeze,
       :"owl:equivalentClass" => %(http://www.wikidata.org/entity/Q95074).freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyClass:FictionalCharacter).freeze,
-      subClassOf: "dbo:Person".freeze,
+      subClassOf: "dbo:Agent".freeze,
       type: "owl:Class".freeze
     term :Fiefdom,
       comment: %(The territory under the authority of a feudal lord).freeze,
@@ -1532,7 +1538,7 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
       type: "owl:Class".freeze
     term :Film,
       label: "movie".freeze,
-      :"owl:equivalentClass" => [%(http://dbpedia.org/ontology/Wikidata:Q11424).freeze, %(schema:Movie).freeze],
+      :"owl:equivalentClass" => [%(http://www.wikidata.org/entity/Q11424).freeze, %(schema:Movie).freeze],
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyClass:Film).freeze,
       subClassOf: "dbo:Work".freeze,
       type: "owl:Class".freeze
@@ -1934,6 +1940,13 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
       label: "hollywood cartoon".freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyClass:HollywoodCartoon).freeze,
       subClassOf: "dbo:Cartoon".freeze,
+      type: "owl:Class".freeze
+    term :Hormone,
+      comment: %(A hormone is any member of a class of signaling molecules produced by glands in multicellular organisms that are transported by the circulatory system to target distant organs to regulate physiology and behaviour.).freeze,
+      label: "Hormone".freeze,
+      :"owl:equivalentClass" => %(http://www.wikidata.org/entity/Q8047).freeze,
+      :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyClass:Hormone).freeze,
+      subClassOf: "dbo:Biomolecule".freeze,
       type: "owl:Class".freeze
     term :Horse,
       label: "horse".freeze,
@@ -2345,6 +2358,7 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
     term :Medicine,
       comment: %(The science and art of healing the human body and identifying the causes of disease).freeze,
       label: "Medicine".freeze,
+      :"owl:equivalentClass" => %(http://www.wikidata.org/entity/Q11190).freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyClass:Medicine).freeze,
       subClassOf: "owl:Thing".freeze,
       type: "owl:Class".freeze
@@ -2719,7 +2733,7 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
     term :NaturalEvent,
       label: "natural event".freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyClass:NaturalEvent).freeze,
-      subClassOf: "dbo:Event".freeze,
+      subClassOf: "owl:Thing".freeze,
       type: "owl:Class".freeze
     term :NaturalPlace,
       comment: %(The natural place encompasses all places occurring naturally in universe.).freeze,
@@ -2913,9 +2927,8 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
       type: "owl:Class".freeze
     term :PenaltyShootOut,
       label: "penalty shoot-out".freeze,
-      :"owl:equivalentClass" => %(http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event).freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyClass:PenaltyShootOut).freeze,
-      subClassOf: "owl:Thing".freeze,
+      subClassOf: ["dbo:Event".freeze, "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event".freeze],
       type: "owl:Class".freeze
     term :PeriodOfArtisticStyle,
       label: "period of artistic style".freeze,
@@ -3075,7 +3088,6 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
     term :PopulatedPlace,
       comment: %(As defined by the United States Geological Survey, a populated place is a place or area with clustered or scattered buildings and a permanent human population \(city, settlement, town, or village\) referenced with geographic coordinates \(http://en.wikipedia.org/wiki/Populated_place\).).freeze,
       label: "populated place".freeze,
-      :"owl:equivalentClass" => %(http://www.wikidata.org/entity/Q486972).freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyClass:PopulatedPlace).freeze,
       subClassOf: "dbo:Place".freeze,
       type: "owl:Class".freeze
@@ -3311,6 +3323,11 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyClass:RallyDriver).freeze,
       subClassOf: "dbo:RacingDriver".freeze,
       type: "owl:Class".freeze
+    term :Ratio,
+      label: "Ratio".freeze,
+      :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyClass:Ratio).freeze,
+      subClassOf: "dbo:Relationship".freeze,
+      type: "owl:Class".freeze
     term :Rebellion,
       label: "rebellion".freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyClass:Rebellion).freeze,
@@ -3349,6 +3366,11 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
       :"owl:equivalentClass" => %(http://www.wikidata.org/entity/Q3455524).freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyClass:Region).freeze,
       subClassOf: "dbo:PopulatedPlace".freeze,
+      type: "owl:Class".freeze
+    term :Relationship,
+      label: "Relationship".freeze,
+      :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyClass:Relationship).freeze,
+      subClassOf: "owl:Thing".freeze,
       type: "owl:Class".freeze
     term :Religious,
       label: "religious".freeze,
@@ -3852,7 +3874,7 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
       type: "owl:Class".freeze
     term :SportsTeam,
       label: "sports team".freeze,
-      :"owl:equivalentClass" => %(schema:SportsTeam).freeze,
+      :"owl:equivalentClass" => [%(http://www.wikidata.org/entity/Q12973014).freeze, %(schema:SportsTeam).freeze],
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyClass:SportsTeam).freeze,
       subClassOf: "dbo:Organisation".freeze,
       type: "owl:Class".freeze
@@ -3899,6 +3921,7 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
       type: "owl:Class".freeze
     term :State,
       label: "state".freeze,
+      :"owl:equivalentClass" => %(http://www.wikidata.org/entity/Q7275).freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyClass:State).freeze,
       subClassOf: "dbo:PopulatedPlace".freeze,
       type: "owl:Class".freeze
@@ -4027,6 +4050,7 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
     term :TeamSport,
       comment: %(A team sport is commonly defined as a sport that is being played by competing teams).freeze,
       label: "team sport".freeze,
+      :"owl:equivalentClass" => %(http://www.wikidata.org/entity/Q216048).freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyClass:TeamSport).freeze,
       subClassOf: "dbo:Sport".freeze,
       type: "owl:Class".freeze
@@ -4372,7 +4396,7 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
       type: "owl:Class".freeze
     term :Website,
       label: "website".freeze,
-      :"owl:equivalentClass" => %(schema:WebPage).freeze,
+      :"owl:equivalentClass" => %(schema:WebSite).freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyClass:Website).freeze,
       subClassOf: "dbo:Work".freeze,
       type: "owl:Class".freeze
@@ -4451,6 +4475,7 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
     term :WrittenWork,
       comment: %(Written work is any text written to read it \(e.g.: books, newspaper, articles\)).freeze,
       label: "written work".freeze,
+      :"owl:equivalentClass" => %(http://www.wikidata.org/entity/Q234460).freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyClass:WrittenWork).freeze,
       subClassOf: "dbo:Work".freeze,
       type: "owl:Class".freeze
@@ -4475,7 +4500,7 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
     # Property definitions
     property :"Astronaut/timeInSpace",
       domain: "dbo:Astronaut".freeze,
-      label: "time in space (m)".freeze,
+      label: "total time person has spent in space (m)".freeze,
       range: "http://dbpedia.org/datatype/minute".freeze,
       type: "owl:DatatypeProperty".freeze
     property :"Automobile/fuelCapacity",
@@ -5055,7 +5080,7 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
       type: "owl:DatatypeProperty".freeze
     property :"SpaceShuttle/timeInSpace",
       domain: "dbo:SpaceShuttle".freeze,
-      label: "time in space (μ)".freeze,
+      label: "total time person has spent in space (μ)".freeze,
       range: "http://dbpedia.org/datatype/day".freeze,
       type: "owl:DatatypeProperty".freeze
     property :"SpaceStation/volume",
@@ -5280,12 +5305,6 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
       range: "dbo:Person".freeze,
       subPropertyOf: "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#coparticipatesWith".freeze,
       type: ["owl:ObjectProperty".freeze, "rdf:Property".freeze]
-    property :activeYear,
-      domain: "dbo:Person".freeze,
-      label: "active year".freeze,
-      :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:activeYear).freeze,
-      range: "xsd:string".freeze,
-      type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
     property :activeYears,
       comment: %(Also called "floruit". Use this if the active years are in one field that can't be split. Else use activeYearsStartYear and activeYearsEndYear).freeze,
       domain: "dbo:Person".freeze,
@@ -6875,6 +6894,11 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:boilingPoint).freeze,
       range: "xsd:double".freeze,
       type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
+    property :book,
+      label: "name".freeze,
+      :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:book).freeze,
+      range: "xsd:string".freeze,
+      type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
     property :booster,
       domain: "dbo:SpaceMission".freeze,
       label: "booster".freeze,
@@ -7125,6 +7149,10 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:cableCar).freeze,
       range: "xsd:nonNegativeInteger".freeze,
       type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
+    property :calculationNeeds,
+      label: "its calculation needs".freeze,
+      :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:calculationNeeds).freeze,
+      type: ["owl:ObjectProperty".freeze, "rdf:Property".freeze]
     property :callSign,
       comment: %(A call sign is not the name of a broadcaster! In broadcasting and radio communications, a call sign \(also known as a call name or call letters, or abbreviated as a call\) is a unique designation for a transmitting station.).freeze,
       label: "call sign".freeze,
@@ -8266,7 +8294,7 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
       type: ["owl:ObjectProperty".freeze, "rdf:Property".freeze]
     property :competitionTitle,
       domain: "dbo:Person".freeze,
-      label: "death place".freeze,
+      label: "competition title".freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:competitionTitle).freeze,
       range: "dbo:SportsEvent".freeze,
       type: ["owl:ObjectProperty".freeze, "rdf:Property".freeze]
@@ -8592,6 +8620,12 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
       domain: "dbo:GrandPrix".freeze,
       label: "course (μ)".freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:course).freeze,
+      range: "xsd:double".freeze,
+      type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
+    property :courseArea,
+      comment: %(The area of courses in square meters.).freeze,
+      label: "course area (m2)".freeze,
+      :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:courseArea).freeze,
       range: "xsd:double".freeze,
       type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
     property :cousurper,
@@ -9207,7 +9241,7 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
       range: "rdf:langString".freeze,
       type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
     property :denomination,
-      domain: "dbo:School".freeze,
+      comment: %(Religious denomination of a church, religious school, etc. Examples: Haredi_Judaism, Sunni_Islam, Seventh-day_Adventist_Church, Non-Denominational, Multi-denominational, Non-denominational_Christianity).freeze,
       label: "denomination".freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:denomination).freeze,
       subPropertyOf: "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isExpressedBy".freeze,
@@ -9551,6 +9585,12 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
       domain: "dbo:Settlement".freeze,
       label: "distance to London (μ)".freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:distanceToLondon).freeze,
+      range: "xsd:double".freeze,
+      type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
+    property :distanceToNearestCity,
+      domain: "dbo:Settlement".freeze,
+      label: "distance to nearest city (μ)".freeze,
+      :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:distanceToNearestCity).freeze,
       range: "xsd:double".freeze,
       type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
     property :distanceTraveled,
@@ -10012,9 +10052,10 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
       comment: %(The end date of the event.).freeze,
       domain: "dbo:Event".freeze,
       label: "end date".freeze,
-      :"owl:equivalentProperty" => [%(http://www.wikidata.org/entity/P582).freeze, %(schema:endDate).freeze],
+      :"owl:equivalentProperty" => %(http://www.wikidata.org/entity/P582).freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:endDate).freeze,
       range: "xsd:date".freeze,
+      subPropertyOf: "schema:endDate".freeze,
       type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
     property :endDateTime,
       comment: %(The end date and time of the event.).freeze,
@@ -10042,7 +10083,7 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
       range: "skos:Concept".freeze,
       type: ["owl:ObjectProperty".freeze, "rdf:Property".freeze]
     property :endYear,
-      label: "start year".freeze,
+      label: "end year".freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:endYear).freeze,
       range: "xsd:gYear".freeze,
       type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
@@ -10872,9 +10913,9 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
     property :firstPublisher,
       domain: "dbo:WrittenWork".freeze,
       label: "first publisher".freeze,
-      :"owl:equivalentProperty" => %(schema:publisher).freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:firstPublisher).freeze,
-      range: "dbo:Company".freeze,
+      range: "dbo:Agent".freeze,
+      subPropertyOf: "dbo:publisher".freeze,
       type: ["owl:ObjectProperty".freeze, "rdf:Property".freeze]
     property :firstRace,
       domain: "dbo:FormulaOneRacer".freeze,
@@ -12067,6 +12108,13 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:hgncid).freeze,
       range: "xsd:string".freeze,
       type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
+    property :highestAltitude,
+      domain: "dbo:Place".freeze,
+      label: "highest altitude".freeze,
+      :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:highestAltitude).freeze,
+      range: "dbo:Altitude".freeze,
+      subPropertyOf: "dbo:altitude".freeze,
+      type: ["owl:ObjectProperty".freeze, "rdf:Property".freeze]
     property :highestBreak,
       domain: "dbo:SnookerPlayer".freeze,
       label: "highest break".freeze,
@@ -13231,7 +13279,7 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
       type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
     property :lastProMatch,
       domain: "dbo:Athlete".freeze,
-      label: "first pro match".freeze,
+      label: "last pro match".freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:lastProMatch).freeze,
       range: "xsd:string".freeze,
       type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
@@ -13400,7 +13448,7 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
       type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
     property :lchfDraftTeam,
       domain: "dbo:IceHockeyPlayer".freeze,
-      label: "lchf draft year".freeze,
+      label: "lchf draft team".freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:lchfDraftTeam).freeze,
       range: "dbo:HockeyTeam".freeze,
       type: ["owl:ObjectProperty".freeze, "rdf:Property".freeze]
@@ -13828,6 +13876,13 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:lowest).freeze,
       range: "xsd:string".freeze,
       type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
+    property :lowestAltitude,
+      domain: "dbo:Place".freeze,
+      label: "lowest altitude".freeze,
+      :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:lowestAltitude).freeze,
+      range: "dbo:Altitude".freeze,
+      subPropertyOf: "dbo:altitude".freeze,
+      type: ["owl:ObjectProperty".freeze, "rdf:Property".freeze]
     property :lowestMountain,
       domain: "dbo:Place".freeze,
       label: "lowest mountain".freeze,
@@ -14685,7 +14740,6 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
       range: "xsd:nonNegativeInteger".freeze,
       type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
     property :mission,
-      domain: "dbo:Aircraft".freeze,
       label: "mission".freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:mission).freeze,
       range: "dbo:SpaceMission".freeze,
@@ -14768,6 +14822,13 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:mostDownPoint).freeze,
       range: "dbo:Place".freeze,
       subPropertyOf: "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart".freeze,
+      type: ["owl:ObjectProperty".freeze, "rdf:Property".freeze]
+    property :mostSuccessfulPlayer,
+      comment: %(the best player in a certain sport competition. E.g, in a football competition, the player that scored more goals.).freeze,
+      domain: "dbo:SportsEvent".freeze,
+      label: "most successful player".freeze,
+      :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:mostSuccessfulPlayer).freeze,
+      range: "dbo:Athlete".freeze,
       type: ["owl:ObjectProperty".freeze, "rdf:Property".freeze]
     property :mostWins,
       domain: "dbo:Race".freeze,
@@ -15194,7 +15255,7 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
       type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
     property :nationalTournament,
       domain: "dbo:Person".freeze,
-      label: "continental tournament".freeze,
+      label: "National tournament".freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:nationalTournament).freeze,
       range: "dbo:Tournament".freeze,
       type: ["owl:ObjectProperty".freeze, "rdf:Property".freeze]
@@ -15238,7 +15299,7 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
       type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
     property :ncaaTeam,
       domain: "dbo:Athlete".freeze,
-      label: "ncaa season".freeze,
+      label: "ncaa team".freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:ncaaTeam).freeze,
       range: "dbo:SportsTeam".freeze,
       type: ["owl:ObjectProperty".freeze, "rdf:Property".freeze]
@@ -15372,9 +15433,8 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
       label: "NIS code".freeze,
       :"owl:equivalentProperty" => %(http://www.wikidata.org/entity/P1567).freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:nisCode).freeze,
-      range: "dbo:PopulatedPlace".freeze,
-      subPropertyOf: "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isClassifiedBy".freeze,
-      type: ["owl:ObjectProperty".freeze, "rdf:Property".freeze]
+      range: "xsd:string".freeze,
+      type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
     property :nlaId,
       comment: %(NLA Trove’s People and Organisation view allows the discovery of biographical and other contextual information about people and organisations. Search also available via VIAF.).freeze,
       label: "NLA Id".freeze,
@@ -15796,6 +15856,13 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:numberOfLawyers).freeze,
       range: "xsd:nonNegativeInteger".freeze,
       type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
+    property :numberOfLifts,
+      comment: %(Number of lifts.).freeze,
+      domain: "dbo:SkiArea".freeze,
+      label: "number of lifts".freeze,
+      :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:numberOfLifts).freeze,
+      range: "xsd:nonNegativeInteger".freeze,
+      type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
     property :numberOfLines,
       comment: %(Number of lines in the transit system.).freeze,
       domain: "dbo:PublicTransitSystem".freeze,
@@ -15919,6 +15986,12 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
       domain: "dbo:Olympics".freeze,
       label: "number of participating nations".freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:numberOfParticipatingNations).freeze,
+      range: "xsd:nonNegativeInteger".freeze,
+      type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
+    property :numberOfPassengers,
+      domain: "dbo:Ship".freeze,
+      label: "number of passengers".freeze,
+      :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:numberOfPassengers).freeze,
       range: "xsd:nonNegativeInteger".freeze,
       type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
     property :numberOfPeopleAttending,
@@ -16112,6 +16185,13 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
       domain: "dbo:Infrastructure".freeze,
       label: "number of tracks".freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:numberOfTracks).freeze,
+      range: "xsd:nonNegativeInteger".freeze,
+      type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
+    property :numberOfTrails,
+      comment: %(Number of trails in ski area.).freeze,
+      domain: "dbo:SkiArea".freeze,
+      label: "number of trails".freeze,
+      :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:numberOfTrails).freeze,
       range: "xsd:nonNegativeInteger".freeze,
       type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
     property :numberOfTurns,
@@ -16419,12 +16499,6 @@ Includes concentration, extermination, transit, detention, internment, \(forced\
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:openingYear).freeze,
       range: "xsd:gYear".freeze,
       type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
-    property :operatedBy,
-      comment: %(Organisation or city who is the operator of an ArchitecturalStructure, PublicTransitSystem, etc. Not to confuse with maintainer or the owner.).freeze,
-      label: "operated by".freeze,
-      :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:operatedBy).freeze,
-      subPropertyOf: "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#coparticipatesWith".freeze,
-      type: ["owl:ObjectProperty".freeze, "rdf:Property".freeze]
     property :operatingIncome,
       domain: "dbo:Company".freeze,
       label: "operating income ($)".freeze,
@@ -16990,8 +17064,9 @@ Domain is unrestricted since Organization is Agent but City is Place. Range is u
       range: "xsd:string".freeze,
       type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
     property :pdb,
+      comment: %(gene entry for 3D structural data as per the PDB \(Protein Data Bank\) database).freeze,
       domain: "dbo:Protein".freeze,
-      label: "PDB".freeze,
+      label: "PDB ID".freeze,
       :"owl:equivalentProperty" => %(http://www.wikidata.org/entity/P638).freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:pdb).freeze,
       range: "xsd:string".freeze,
@@ -17421,12 +17496,6 @@ Domain is unrestricted since Organization is Agent but City is Place. Range is u
       domain: "dbo:PopulatedPlace".freeze,
       label: "population as of".freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:populationAsOf).freeze,
-      range: "xsd:date".freeze,
-      type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
-    property :populationDate,
-      domain: "dbo:Place".freeze,
-      label: "population date".freeze,
-      :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:populationDate).freeze,
       range: "xsd:date".freeze,
       type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
     property :populationDensity,
@@ -19245,6 +19314,12 @@ http://rkd.nl/explore/artists/$1).freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:scientificName).freeze,
       range: "xsd:string".freeze,
       type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
+    property :score,
+      comment: %(Score or points of something \(eg a SportCompetitionResult\)).freeze,
+      label: "score".freeze,
+      :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:score).freeze,
+      range: "xsd:double".freeze,
+      type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
     property :screenActorsGuildAward,
       domain: "dbo:Actor".freeze,
       label: "Screen Actors Guild Award".freeze,
@@ -20204,6 +20279,7 @@ http://rkd.nl/explore/artists/$1).freeze,
       domain: "dbo:Species".freeze,
       label: "species".freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:species).freeze,
+      range: "dbo:Species".freeze,
       subPropertyOf: "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#specializes".freeze,
       type: ["owl:ObjectProperty".freeze, "rdf:Property".freeze]
     property :speedLimit,
@@ -20357,9 +20433,10 @@ http://rkd.nl/explore/artists/$1).freeze,
       comment: %(The start date of the event.).freeze,
       domain: "dbo:Event".freeze,
       label: "start date".freeze,
-      :"owl:equivalentProperty" => [%(http://www.wikidata.org/entity/P580).freeze, %(schema:startDate).freeze],
+      :"owl:equivalentProperty" => %(http://www.wikidata.org/entity/P580).freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:startDate).freeze,
       range: "xsd:date".freeze,
+      subPropertyOf: "schema:startDate".freeze,
       type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
     property :startDateTime,
       comment: %(The start date and time of the event.).freeze,
@@ -20553,7 +20630,7 @@ http://rkd.nl/explore/artists/$1).freeze,
       type: ["owl:ObjectProperty".freeze, "rdf:Property".freeze]
     property :student,
       domain: "dbo:Person".freeze,
-      label: "diploma".freeze,
+      label: "student".freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:student).freeze,
       range: "dbo:Person".freeze,
       subPropertyOf: "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#coparticipatesWith".freeze,
@@ -20827,6 +20904,11 @@ http://www.idref.fr/$1).freeze,
       label: "surface gravity (g)".freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:surfaceGravity).freeze,
       range: "xsd:double".freeze,
+      type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
+    property :surfaceType,
+      label: "type of surface".freeze,
+      :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:surfaceType).freeze,
+      range: "xsd:string".freeze,
       type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
     property :swimmingStyle,
       domain: "dbo:Swimmer".freeze,
@@ -21113,7 +21195,7 @@ http://www.idref.fr/$1).freeze,
       range: "xsd:string".freeze,
       type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
     property :timeInSpace,
-      label: "time in space (s)".freeze,
+      label: "total time person has spent in space (s)".freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:timeInSpace).freeze,
       range: "xsd:double".freeze,
       type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
@@ -21173,7 +21255,7 @@ http://www.idref.fr/$1).freeze,
       type: ["owl:ObjectProperty".freeze, "rdf:Property".freeze]
     property :topFloorHeight,
       domain: "dbo:Skyscraper".freeze,
-      label: "tor floor height".freeze,
+      label: "top floor height".freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:topFloorHeight).freeze,
       range: "xsd:nonNegativeInteger".freeze,
       type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
@@ -21639,6 +21721,12 @@ http://vocab.getty.edu/ulan/$1).freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:valvetrain).freeze,
       range: "http://dbpedia.org/datatype/valvetrain".freeze,
       type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
+    property :vaporPressure,
+      domain: "dbo:ChemicalSubstance".freeze,
+      label: "vapor pressure".freeze,
+      :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:vaporPressure).freeze,
+      range: "xsd:float".freeze,
+      type: ["owl:DatatypeProperty".freeze, "rdf:Property".freeze]
     property :variantOf,
       comment: %(variant or variation of something, for example the variant of a car).freeze,
       label: "variant or variation".freeze,
@@ -21743,10 +21831,9 @@ http://vocab.getty.edu/ulan/$1).freeze,
       subPropertyOf: "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#sameSettingAs".freeze,
       type: ["owl:ObjectProperty".freeze, "rdf:Property".freeze]
     property :victim,
-      comment: %(Specific \(eg notable\) victim of a ConcentrationCamp, Criminal, SerialKiller, or some other atrocity).freeze,
+      comment: %(Specific \(eg notable\) person, or specific class of people \(eg Romani\) that are victim of a ConcentrationCamp, Criminal, SerialKiller, or some other atrocity).freeze,
       label: "victim (resource)".freeze,
       :"prov:wasDerivedFrom" => %(http://mappings.dbpedia.org/index.php/OntologyProperty:victim).freeze,
-      range: "dbo:Person".freeze,
       type: ["owl:ObjectProperty".freeze, "rdf:Property".freeze]
     property :victims,
       comment: %(Type, description, or name\(s\) of victims of a ConcentrationCamp, Criminal, SerialKiller, or some other atrocity).freeze,

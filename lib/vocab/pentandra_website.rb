@@ -16,6 +16,7 @@ module Vocab
       :"cc:license" => %(http://creativecommons.org/licenses/by/4.0/).freeze,
       :"cc:useGuidelines" => %(https://pentandra.com/policy/).freeze,
       :"og:description" => %(A high-level overview of who we are and what we do.).freeze,
+      :"og:image" => %(https://pentandra.com/images/pentandra-logo.png).freeze,
       :"og:locale" => %(en_US).freeze,
       :"og:site_name" => %(Pentandra).freeze,
       :"og:title" => %(Overview).freeze,
@@ -23,20 +24,9 @@ module Vocab
       :"og:url" => %(https://pentandra.com/).freeze,
       :"schema:copyrightHolder" => %(https://pentandra.com/company#company).freeze,
       :"schema:copyrightYear" => %(2011).freeze,
-      :"schema:description" => %(
-
-    <p class="big">
-
-      We are a small company of research addicts trying to promote quality
-      research and make collaboration possible throughout the research process.
-      
-    </p>
-
-  ).freeze,
-      :"schema:hasPart" => [%(pentandrawebsite:the-research-experience).freeze, %(pentandrawebsite:who-we-are).freeze],
+      :"schema:hasPart" => %(pentandra-blog:latest-articles).freeze,
       :"schema:headline" => %(Breaking Research Barriers).freeze,
       :"schema:isPartOf" => %(pentandra-website:website).freeze,
-      :"schema:name" => [%(We Envision a Better Research Experience).freeze, %(Who We Are).freeze],
       :"schema:publisher" => %(https://pentandra.com/company#company).freeze,
       type: ["cc:Work".freeze, "prov:Entity".freeze, "schema:WebPage".freeze]
   end
