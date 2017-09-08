@@ -21,6 +21,7 @@ co:
 
 ctag:
   uri: "http://commontag.org/ns#"
+  source: "etc/vocabs/ctag_2009-06-08.n3"
 
 dbo:
   uri: "http://dbpedia.org/ontology/"
