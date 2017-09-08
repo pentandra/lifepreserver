@@ -86,6 +86,9 @@ mp:
   uri: "http://purl.org/mp/"
   source: "https://raw.githubusercontent.com/timclark001/mp/master/mp.owl"
 
+pav:
+  uri: "http://purl.org/pav/"
+
 profile:
   uri: "http://ogp.me/ns/profile#"
   source: "etc/vocabs/profile.ttl"
