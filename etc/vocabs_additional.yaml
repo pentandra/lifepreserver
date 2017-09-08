@@ -42,9 +42,16 @@ deo:
 deps:
   uri: "http://ontologi.es/doap-deps#"
 
+dio:
+  uri: "https://w3id.org/dio#"
+  source: "etc/vocabs/dio.owl"
+
 doco:
   uri: "http://purl.org/spar/doco/"
   source: "http://www.sparontologies.net/ontologies/doco/source.ttl"
+
+dul:
+  uri: "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
 
 essglobal:
   uri: "http://purl.org/essglobal/vocab/"
@@ -81,6 +88,9 @@ fabio:
 fea:
   uri: "http://vocab.data.gov/def/fea#"
   source: "etc/vocabs/fea.ttl"
+
+ipo:
+  uri: "http://purl.org/ipo/core#"
 
 mp:
   uri: "http://purl.org/mp/"

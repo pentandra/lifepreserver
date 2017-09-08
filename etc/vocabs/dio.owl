@@ -1,0 +1,661 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="https://w3id.org/dio"
+     xml:base="https://w3id.org/dio"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="https://w3id.org/dio#">
+        <owl:versionInfo rdf:datatype="&xsd;decimal">1.1.000</owl:versionInfo>
+        <dc:description rdf:datatype="&xsd;decimal">The Design Intent Ontology (DIO) is a generic ontology that provides the conceptualisation needed to capture the knowledge generated during various phases of the overall design lifecycle. 
+
+It provides definitions for design artifacts such as requirements, designs, design issues, solutions, justifications and evidence and relationships between them to represent the design process and how these things lead to design outcomes.  It draws upon the paradigms of IBIS(Interactive Intent-Based Illustration), argumentation and design rationale. It is linked to W3C PROV by defining the actors in the design process as PROV agents and the design artifacts themselves are PROV entities. However DIO uses a modualrised version of PROV-O, based on Syntactic locality.
+
+DIO makes few assumptions about the design process used as the definitions of these activities properly belongs in the software lifecycle and data lifecycle models. The Figure below illustrates the conceptual entities in DIO and their relationships.</dc:description>
+        <rdfs:seeAlso rdf:datatype="&xsd;decimal">http://ceur-ws.org/Vol-1461/WOP2015_pattern_abstract_6.pdf</rdfs:seeAlso>
+        <dc:title>The Design Intent Ontology - A content ontology design pattern</dc:title>
+        <dc:date>04-01-2016</dc:date>
+        <dc:creator xml:lang="en">Monika Solanki (monika.solanki@cs.ox.ac.uk)</dc:creator>
+        <dc:description rdf:resource="http://aligned.cs.ox.ac.uk/images/dio.jpg"/>
+        <owl:imports rdf:resource="http://aligned.cs.ox.ac.uk/ontologies/prov_dio"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasAttributedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasAttributedTo"/>
+    
+
+
+    <!-- https://w3id.org/dio#addressedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dio#addressedBy">
+        <rdfs:label>addressedBy</rdfs:label>
+        <rdfs:comment>A relationship stating the design intent addressing a requirement.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/dio#captureMethodology -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dio#captureMethodology">
+        <rdfs:label>captureMethodology</rdfs:label>
+        <rdfs:comment>A relationship identifying the capture methodology for a design issue</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/dio#contradicts -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dio#contradicts">
+        <rdfs:label>contradicts</rdfs:label>
+        <rdfs:comment>A relationship indicating contradictory issues.</rdfs:comment>
+        <rdfs:range rdf:resource="https://w3id.org/dio#Solution"/>
+        <rdfs:domain rdf:resource="https://w3id.org/dio#Solution"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/dio#fulfillsRequirement -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dio#fulfillsRequirement">
+        <rdfs:label>fullfillsRequirements</rdfs:label>
+        <rdfs:comment>A relationship between the design and its requirement.</rdfs:comment>
+        <rdfs:domain rdf:resource="https://w3id.org/dio#Design"/>
+        <rdfs:domain rdf:resource="https://w3id.org/dio#DesignIntentArtifact"/>
+        <rdfs:range rdf:resource="https://w3id.org/dio#DesignRequirement"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/dio#requirementFulfilledBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/dio#generatedByIntent -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dio#generatedByIntent">
+        <rdfs:label>generatedByIntent</rdfs:label>
+        <rdfs:comment>A relationship between the design issue and intent.</rdfs:comment>
+        <owl:inverseOf rdf:resource="https://w3id.org/dio#generatesIssue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/dio#generatesIssue -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dio#generatesIssue">
+        <rdfs:label>generatesIssue</rdfs:label>
+        <rdfs:comment>A relationship between the design intent and issue.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/dio#governsDesign -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dio#governsDesign">
+        <rdfs:label>governsDesign</rdfs:label>
+        <rdfs:comment>The design decision governing the design.</rdfs:comment>
+        <rdfs:range rdf:resource="https://w3id.org/dio#Design"/>
+        <rdfs:domain rdf:resource="https://w3id.org/dio#DesignDecision"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/dio#hasAlternativeSolution -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dio#hasAlternativeSolution">
+        <rdfs:label>hasAlternativeSolution</rdfs:label>
+        <rdfs:comment>The realtionship between the issue and an alternative solution for it.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:range rdf:resource="https://w3id.org/dio#AlternativeSolution"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/dio#hasArgument -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dio#hasArgument">
+        <rdfs:label>hasArgument</rdfs:label>
+        <rdfs:comment>The relationship between a solution and an argument made against it.</rdfs:comment>
+        <rdfs:range rdf:resource="https://w3id.org/dio#Argument"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/dio#hasComment -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dio#hasComment">
+        <rdfs:label>hasComment</rdfs:label>
+        <rdfs:comment>The relationship between a comment and a design intent artifact for which the comment is made.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/dio#hasConstraint -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dio#hasConstraint">
+        <rdfs:label>hasConstraint</rdfs:label>
+        <rdfs:comment>A relationship between a solution and a constarint on it.</rdfs:comment>
+        <rdfs:range rdf:resource="https://w3id.org/dio#Constraint"/>
+        <rdfs:domain rdf:resource="https://w3id.org/dio#Solution"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/dio#hasEvidence -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dio#hasEvidence">
+        <rdfs:label>hasEvidence</rdfs:label>
+        <rdfs:comment>A relationship between a solution and an evidence for it.</rdfs:comment>
+        <rdfs:domain rdf:resource="https://w3id.org/dio#Argument"/>
+        <rdfs:range rdf:resource="https://w3id.org/dio#Evidence"/>
+        <rdfs:domain rdf:resource="https://w3id.org/dio#Justification"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/dio#hasJustification -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dio#hasJustification">
+        <rdfs:label>hasJustification</rdfs:label>
+        <rdfs:comment>A relationship between a solution and the justification for it.</rdfs:comment>
+        <rdfs:range rdf:resource="https://w3id.org/dio#Justification"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/dio#hasMandatedSolution -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dio#hasMandatedSolution">
+        <rdfs:label>hasMandatedSolution</rdfs:label>
+        <rdfs:comment>A relationship between the issue and its mandated solution.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:range rdf:resource="https://w3id.org/dio#MandatedSolution"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/dio#hasStatus -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dio#hasStatus">
+        <rdfs:label>hasStatus</rdfs:label>
+        <rdfs:comment>The relationship between an issue and its status.</rdfs:comment>
+        <rdfs:domain rdf:resource="https://w3id.org/dio#DesignIssue"/>
+        <rdfs:range rdf:resource="https://w3id.org/dio#Status"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/dio#identifiedByRequirement -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dio#identifiedByRequirement">
+        <rdfs:label>identifiedByRequirement</rdfs:label>
+        <rdfs:comment>The relationship between an issue and the requirement that identifies it.</rdfs:comment>
+        <owl:inverseOf rdf:resource="https://w3id.org/dio#identifies"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/dio#identifies -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dio#identifies">
+        <rdfs:comment>A relationship between the requirement and the issue it identifies.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/dio#implementedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dio#implementedBy"/>
+    
+
+
+    <!-- https://w3id.org/dio#leadsTo -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dio#leadsTo">
+        <rdfs:label>leadsTo</rdfs:label>
+        <rdfs:comment>A relationship between a mandated solution and design decision made based on it.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:range rdf:resource="https://w3id.org/dio#DesignDecision"/>
+        <rdfs:domain rdf:resource="https://w3id.org/dio#MandatedSolution"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/dio#providesAlternativeSolution -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dio#providesAlternativeSolution">
+        <rdfs:label>providesAlternativeSolution</rdfs:label>
+        <rdfs:comment>A relationship between an alternative solution and the issue.</rdfs:comment>
+        <owl:inverseOf rdf:resource="https://w3id.org/dio#hasAlternativeSolution"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/dio#providesMandatedSolution -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dio#providesMandatedSolution">
+        <rdfs:label>providesMandatedSolution</rdfs:label>
+        <rdfs:comment>A relationship between a mandated solution and the issue.</rdfs:comment>
+        <owl:inverseOf rdf:resource="https://w3id.org/dio#hasMandatedSolution"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/dio#rationaleCapturedUsing -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dio#rationaleCapturedUsing">
+        <rdfs:label>rationaleCapturedUsing</rdfs:label>
+        <rdfs:comment>A relationship between the design rationale and its capture methodology.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/dio#refines -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dio#refines">
+        <rdfs:label>refines</rdfs:label>
+        <rdfs:comment>A relationship between two requirememts when one refines the other.</rdfs:comment>
+        <rdfs:range rdf:resource="https://w3id.org/dio#Solution"/>
+        <rdfs:domain rdf:resource="https://w3id.org/dio#Solution"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/dio#requirementFulfilledBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dio#requirementFulfilledBy">
+        <rdfs:label>requirementFulfilledBy</rdfs:label>
+        <rdfs:comment>A relationship between the design and its originating requirements</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/dio#supports -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dio#supports">
+        <rdfs:label>supports</rdfs:label>
+        <rdfs:comment>A relationship between an agent and a design solution argument or justification.</rdfs:comment>
+        <rdfs:range rdf:resource="https://w3id.org/dio#Argument"/>
+        <rdfs:range rdf:resource="https://w3id.org/dio#Justification"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/dio#usesAssumption -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dio#usesAssumption">
+        <rdfs:label>usesAssumption</rdfs:label>
+        <rdfs:comment>A relationship between a solution and the Assumption it makes.</rdfs:comment>
+        <rdfs:range rdf:resource="https://w3id.org/dio#Assumption"/>
+        <rdfs:domain rdf:resource="https://w3id.org/dio#Solution"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/dio#usesHeuristic -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dio#usesHeuristic">
+        <rdfs:label>usesHeuristic</rdfs:label>
+        <rdfs:comment>A relationship between a solution and the heuristic iy uses.</rdfs:comment>
+        <rdfs:range rdf:resource="https://w3id.org/dio#Heuristic"/>
+        <rdfs:domain rdf:resource="https://w3id.org/dio#Solution"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/ns/prov#generatedAtTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/prov#generatedAtTime"/>
+    
+
+
+    <!-- https://w3id.org/dio#version -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/dio#version">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/dio#AlternativeSolution -->
+
+    <owl:Class rdf:about="https://w3id.org/dio#AlternativeSolution">
+        <rdfs:label>Alternative Solution</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dio#Solution"/>
+        <rdfs:comment>An entity representing the proposed solution.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/dio#Argument -->
+
+    <owl:Class rdf:about="https://w3id.org/dio#Argument">
+        <rdfs:label>Argument</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dio#DesignIntentArtifact"/>
+        <rdfs:comment>A reason presented against a proposed solution.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/dio#Assumption -->
+
+    <owl:Class rdf:about="https://w3id.org/dio#Assumption">
+        <rdfs:label>Assumption</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dio#DesignIntentArtifact"/>
+        <rdfs:comment>The assumption on which a proposed solution is based.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/dio#Comment -->
+
+    <owl:Class rdf:about="https://w3id.org/dio#Comment">
+        <rdfs:label>Comment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dio#DesignIntentArtifact"/>
+        <rdfs:comment>A comment made by an agent in response to an argument, a justification or another comment</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/dio#Constraint -->
+
+    <owl:Class rdf:about="https://w3id.org/dio#Constraint">
+        <rdfs:label>Constraint</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dio#DesignIntentArtifact"/>
+        <rdfs:comment>A constraint that underlies the proposed solution.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/dio#Design -->
+
+    <owl:Class rdf:about="https://w3id.org/dio#Design">
+        <rdfs:label>Design</rdfs:label>
+        <rdfs:comment>A design is a specification of an object, manifested by an agent, intended to accomplish goals, in a particular environment, using a set of  components, satisfying a set of requirements, subject to constraints.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/dio#DesignArtifact -->
+
+    <owl:Class rdf:about="https://w3id.org/dio#DesignArtifact">
+        <rdfs:label>Design Artifact</rdfs:label>
+        <rdfs:comment>The concrete artifact that is implemented or developed following the design that emerges from the design decisions.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/dio#DesignDecision -->
+
+    <owl:Class rdf:about="https://w3id.org/dio#DesignDecision">
+        <rdfs:label>Design Decision</rdfs:label>
+        <rdfs:comment>The final design decision made based on the various alternative solutions proposed. A design decision is driven by a mandated solution.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/dio#DesignGoal -->
+
+    <owl:Class rdf:about="https://w3id.org/dio#DesignGoal">
+        <rdfs:label>Design Goal</rdfs:label>
+        <owl:equivalentClass rdf:resource="https://w3id.org/dio#DesignIssue"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/dio#DesignIntentArtifact"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/dio#hasAlternativeSolution"/>
+                        <owl:allValuesFrom rdf:resource="https://w3id.org/dio#AlternativeSolution"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/dio#hasMandatedSolution"/>
+                        <owl:allValuesFrom rdf:resource="https://w3id.org/dio#MandatedSolution"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/dio#hasMandatedSolution"/>
+                        <owl:onClass rdf:resource="https://w3id.org/dio#MandatedSolution"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>An entity representing the problem, goal, question or issue the design intent aims to address.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/dio#DesignIntent -->
+
+    <owl:Class rdf:about="https://w3id.org/dio#DesignIntent">
+        <rdfs:label>Design Intent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dio#DesignIntentArtifact"/>
+        <rdfs:comment>A entity defining the notion of a design intent, i.e., the rationale underpinning the choices that are made from the alternatives available during various phases of the overall design lifecycle.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/dio#DesignIntentArtifact -->
+
+    <owl:Class rdf:about="https://w3id.org/dio#DesignIntentArtifact">
+        <rdfs:label>Design Intent Artifact</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasAttributedTo"/>
+                        <owl:onClass rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#generatedAtTime"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="&xsd;dateTime"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/dio#version"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="&xsd;string"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>An entity representing any artifact that plays a part in capturing the design intent. The minimum ontological commitment required for this entity is a brief description of the artifact, the version info and the date.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/dio#DesignIssue -->
+
+    <owl:Class rdf:about="https://w3id.org/dio#DesignIssue">
+        <rdfs:label>Design Issue</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dio#DesignIntentArtifact"/>
+        <rdfs:comment>An entity representing the problem, goal, question or issue the design intent aims to address.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/dio#DesignRequirement -->
+
+    <owl:Class rdf:about="https://w3id.org/dio#DesignRequirement">
+        <rdfs:label>Design Requirements</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dio#DesignIntentArtifact"/>
+        <rdfs:comment>An entity capturing the requirements that result in the design intent</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/dio#Evaluation -->
+
+    <owl:Class rdf:about="https://w3id.org/dio#Evaluation">
+        <rdfs:label>Evaluation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dio#DesignIntentArtifact"/>
+        <rdfs:comment>An entity representing the evaluation that supports the solution.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/dio#Evidence -->
+
+    <owl:Class rdf:about="https://w3id.org/dio#Evidence">
+        <rdfs:label>Evidence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dio#DesignIntentArtifact"/>
+        <rdfs:comment>An entity representing an evidence that supports a proposed solution.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/dio#Heuristic -->
+
+    <owl:Class rdf:about="https://w3id.org/dio#Heuristic">
+        <rdfs:label>Heuristic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dio#DesignIntentArtifact"/>
+        <rdfs:comment>An entity representing the requirements to be fulfilled for realising the solution</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/dio#Justification -->
+
+    <owl:Class rdf:about="https://w3id.org/dio#Justification">
+        <rdfs:label>Justification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dio#DesignIntentArtifact"/>
+        <rdfs:comment>A reason supporting the proposed solution.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/dio#MandatedSolution -->
+
+    <owl:Class rdf:about="https://w3id.org/dio#MandatedSolution">
+        <rdfs:label>Mandated Solution</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dio#Solution"/>
+        <rdfs:comment>An entity representing the solution accepted as a result of the design deliberation process.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/dio#RationaleCaptureMethod -->
+
+    <owl:Class rdf:about="https://w3id.org/dio#RationaleCaptureMethod">
+        <rdfs:label>Rationale Capture Methodology</rdfs:label>
+        <rdfs:comment>An entity representing the methodology used to capture the design intent artifact</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/dio#Solution -->
+
+    <owl:Class rdf:about="https://w3id.org/dio#Solution">
+        <rdfs:label>Solution</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dio#DesignIntentArtifact"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/dio#Status -->
+
+    <owl:Class rdf:about="https://w3id.org/dio#Status">
+        <rdfs:label>Status</rdfs:label>
+        <rdfs:comment>An entity representing the status of a design issue.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/dio#Active -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dio#Active">
+        <rdf:type rdf:resource="https://w3id.org/dio#Status"/>
+        <rdfs:label>Active</rdfs:label>
+        <rdfs:comment>The status of an issue when it is active.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dio#OnHold -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dio#OnHold">
+        <rdf:type rdf:resource="https://w3id.org/dio#Status"/>
+        <rdfs:label>onHold</rdfs:label>
+        <rdfs:comment>The status of an issue when it is onHold</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dio#Resolved -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dio#Resolved">
+        <rdf:type rdf:resource="https://w3id.org/dio#Status"/>
+        <rdfs:comment>The status of an issue when it is resolved.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dio#Terminated -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dio#Terminated">
+        <rdf:type rdf:resource="https://w3id.org/dio#Status"/>
+        <rdfs:comment>The status of an issue when it is terminated.</rdfs:comment>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
+
