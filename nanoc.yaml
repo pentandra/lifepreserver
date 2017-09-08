@@ -49,10 +49,10 @@ data_sources:
   - type: vocabularies
     items_root: *meta_items_root
     prefixes_used:
-      standard:   [ cc, ctag, dc, foaf, owl, prov, rdf, rdfs, schema, sioc, skos, xhv ]
+      standard:   [ cc, ctag, dc, foaf, owl, pav, prov, rdf, rdfs, schema, sioc, skos, xhv ]
       business:   [ essglobal, fea, rov, vcard ]
       open_graph: [ article, og, profile ]
-      document:   [ deo, doco, fabio ]
+      document:   [ bibo, deo, doco, fabio ]
       instances:  [ dbo, dbr, yago ]
       technical:  [ deps, doap, vann, voaf, void ]
       pentandra:  [ pentandra, pentandra-blog, pentandra-website ]
