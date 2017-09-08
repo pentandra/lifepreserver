@@ -7,9 +7,6 @@ article:
 adms:
   uri: "http://www.w3.org/ns/adms#"
 
-bibo:
-  uri: "http://purl.org/ontology/bibo/"
-
 biro:
   uri: "http://purl.org/spar/biro/"
   source: "http://www.sparontologies.net/ontologies/biro/source.ttl"
