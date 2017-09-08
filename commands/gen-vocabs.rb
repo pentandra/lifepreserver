@@ -16,7 +16,7 @@ class GenVocabs < ::Nanoc::CLI::CommandRunner
 
     @site = load_site(preprocess: false)
 
-    template = File.read('etc/vocabs.yaml')
+    template = File.read('etc/vocabs_additional.yaml')
 
     context = Nanoc::Int::Context.new(env)
 
