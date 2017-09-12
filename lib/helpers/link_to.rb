@@ -20,7 +20,11 @@ module LifePreserver
       # Pull out the global flag
       global = attributes.delete(:global)
 
-      path = public_path_to(target, global: global)
+      # Pull out rep and snapshot
+      rep = attributes.delete(:rep)
+      snapshot = attributes.delete(:snapshot)
+
+      path = public_path_to(target, rep: rep, snapshot: snapshot, global: global)
       path.chop! if attributes.delete(:concept_uri) && path.end_with?('/')
 
       # Pull out fragment identifier, if given
