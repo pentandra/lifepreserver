@@ -12,6 +12,9 @@ tags:
   - World Wide Web
 ---
 
+We need persistent identifiers for many resources of the commons: people,
+objects, outputs, inputs, etc.
+
 A lot of scholarly infrastructure is set up right now around DOIs, and they
 have, and are gaining momentum as mechanisms of citability. But do we
 explicitly design a system around _coolness factor_ when it introduces barriers
@@ -91,9 +94,10 @@ member. I spent some time looking on [the DOI website][], but could not find
 any information on how to become a member or registrar of the DOI system, or
 even a DOI-issuing organization. The most helpful information about this I
 found [on Wikipedia][doi], so if any registrars would like to fill me in, I'd
-love to know. And I've also heard that it costs around [$1]{.oldstyle} for an
-organization to issue each DOI. _Each DOI_! No wonder the culture of DOIs is
-built around coarse-grained research outputs.
+love to know. CrossRef is open with [thier fee structures][crossref fees], and
+annual membership ranges from $275--$50,000, with incremental costs of at most
+$1 for each member to issue each DOI. _Each DOI_! No wonder the culture of DOIs
+is built around coarse-grained research outputs.
 
 Of course, for a researcher, it is really easy to get a DOI. All you have to do
 is go drop your stuff in a repository! What's so bad about that? This isn't an
@@ -589,6 +593,7 @@ support whatever identifiers exist from whatever identification schemes exist.
 Preferring and supporting are two different things. In short, the Scholarly
 Commons follows the robustness principle.
 
+[CrossRef fees]: <https://www.crossref.org/fees/>
 [DOI]: <https://en.wikipedia.org/wiki/Digital_object_identifier> "Digital Object Identifier on Wikipedia"
 [The DOI Website]: <http://www.doi.org>
 [DOI standard]: <https://www.iso.org/standard/43506.html> "Digital object identifier system ISO standard"
