@@ -287,10 +287,20 @@ with [`sioc:Item`{.term}](http://rdfs.org/sioc/ns#Item), so let's look there
 next.
 
 * [`sioc:Item`{.term}](http://rdfs.org/sioc/ns#Item) is described as "something
-which can be in a Container." I guess you could look at a workshop propasal
+which can be in a Container." I guess you could look at a workshop proposal
 this way, but describing a bunch of proposals that fit in a container is
-somewhat bibliographic in nature and really is not applicable to the problem at
-hand.
+somewhat bibliographic or at least grouping in nature and really is not
+applicable to the problem at hand.
+
+* PSO
+
+``` {.turtle}
+@prefix workshop: <http://example.org/workshop/> .
+@prefix pso: <http://purl.org/spar/pso/> .
+
+workshop:1
+  pso:holdsStatusInTime workshop
+```
 
 * The Federal Enterprise Architecture Vocabulary, is fairly general and
   limited, but still allows us to say something important, but not about the
@@ -341,6 +351,19 @@ to scholarly communications might be great for certain things, such as current
 libraries and archives, and that there is so much more potential if we look at
 things differently.
 
+Not only must you think about how to model what you are trying to say, you must
+also think about what sort of machine clients you are writing for. Going
+through this exercise has made me question the fundamental premise of basing
+our scholarly ecosystem primarily around publication workflows. What did I gain
+by exposing the data this way? What sort of clients would use this kind of
+information? What would they do with it? What affordances or connections could
+be created from it? These questions all seem to elicit the wrong kind of
+answers. It seems that if we could take a step back and really ask ourselves
+what it is that is essential, we could truly reimagine research and come up
+with a system that would foster collaboration, cooperation, and synergy,
+ultimately helping us to focus more on what the whole scholarly or scientific
+enterprise is about: inquiry and discovery.
+
 Another is that we have to start applying these ideas to our work. Questions
 will arise and insights will come as we are in the thick of it that we would
 not have otherwise. Only after we figure out what needs to be happening on a
@@ -349,7 +372,7 @@ easier.
 
 The scholarship of the future must be purposeful. The scholarship of the future
 must bring people together. The scholarship of the future must go deep enough
-to cross all sorts of boundaries and see things in a different way.
+to cross all sorts of boundaries and help us see things in a different way.
 
 Link to this page in another representation.
 
