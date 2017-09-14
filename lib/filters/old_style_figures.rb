@@ -4,7 +4,6 @@ class OldStyleFigures < Nanoc::Filter
 
   identifier :old_style_figures
 
-  SELECTORS ||= ['p', 'li'].freeze
   IGNORE_CLASSES ||= Set.new(%w(oldstyle titling uri)).freeze
 
   def run(content, params = {})
@@ -21,7 +20,6 @@ class OldStyleFigures < Nanoc::Filter
   protected
 
   def old_style_html_like(content, params)
-    #selectors  = params.fetch(:select, SELECTORS)
     ignore_classes = params.fetch(:ignore, IGNORE_CLASSES)
     namespaces = params.fetch(:namespaces, {})
     type       = params.fetch(:type)
