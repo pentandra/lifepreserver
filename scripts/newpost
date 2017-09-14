@@ -14,7 +14,7 @@ read AUTHOR
 
 TITLE=$(echo "$RAW_TITLE" | sed -e 's/[ _]/-/g' -e 's/[^a-zA-Z0-9-]//g' -e 's/-$//g' -e 's/\(.*\)/\L\1/')
 
-mkdir $SCRIPT_PATH/../items/static/blog/$TITLE
+mkdir $SCRIPT_PATH/../items/static/blog/posts/$TITLE
 
 echo "---
 title: $RAW_TITLE
@@ -25,6 +25,6 @@ created_at: $YEAR-$MONTH-$DAY
 updated_at: $YEAR-$MONTH-$DAY
 tags: []
 ---
-This is your new post." > "$SCRIPT_PATH/../items/static/blog/$TITLE/index.md"
+This is your new post." > "$SCRIPT_PATH/../items/static/blog/posts/$TITLE/index.md"
 
-echo "Created items/static/blog/$TITLE/index.md"
+echo "Created items/static/blog/posts/$TITLE/index.md"

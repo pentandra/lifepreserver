@@ -1,10 +1,11 @@
-<div property="schema:itemListElement" typeof="schema:ListItem" class="section">
-  <meta property="schema:position" content="<%= "#{position + 1}" %>" />
-  <article property="schema:item" resource="<%= "#{path_to(item)}##{item[:kind]}" %>" typeof="schema:BlogPosting" class="excerpt">
+<div property="schema:itemListElement" typeof="schema:ListItem" class="noted section">
+  <meta property="schema:position" content="<%= "#{position}" %>" />
+  <article property="schema:item" resource="<%= "#{path_to(item)}##{item.fetch(:kind)}" %>" typeof="<%= typeof(item) %>" class="excerpt">
     <div class="bd">
       <h2 class="bigger">
-        <a property="schema:url" title="View <%= item.fetch(:kind, 'item') %>" href="<%= path_to(item) %>"><span property="dc:title schema:name"><%= item[:title] %></span></a>
+        <a property="schema:url" title="View <%= rdfs_label(typeof(item)) %>" href="<%= path_to(item) %>"><span property="dc:title schema:name"><%= item[:title] %></span></a>
       </h2>
+      <p property="schema:description"><%= item[:description] %></p>
     </div>
     <link property="rdfa:copy" resource="pentandra-website:license" />
   </article>

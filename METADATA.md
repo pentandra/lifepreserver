@@ -87,6 +87,7 @@ The kind of document. Currently we have the following kinds of documents:
 * `concept`
 * `feed`
 * `redirect`: a permanent (301) redirect
+* `specification`
 
 ## Metadata relating to relationships between documents
 
