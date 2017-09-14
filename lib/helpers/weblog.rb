@@ -44,6 +44,8 @@ module LifePreserver
       blk = -> { sorted_weblog.reject { |p| p.unwrap.attributes[:is_hidden] } }
       if @items.frozen?
         @published_weblog_items ||= blk.call
+      else
+        blk.call
       end
     end
 
