@@ -4,7 +4,7 @@ class OldStyleFigures < Nanoc::Filter
 
   identifier :old_style_figures
 
-  IGNORE_CLASSES ||= Set.new(%w(oldstyle titling uri)).freeze
+  IGNORE_CLASSES ||= Set.new(%w(address handle identifier prefix oldstyle tel titling uri)).freeze
 
   def run(content, params = {})
     case params[:type]
