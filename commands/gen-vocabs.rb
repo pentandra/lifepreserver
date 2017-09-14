@@ -30,30 +30,30 @@ class GenVocabs < ::Nanoc::CLI::CommandRunner
     vocabs.each do |id, v|
       next if v[:alias]
 
-      puts "Generate lib/vocab/#{id}.rb"
+      puts "Generate lib/vocabs/#{id}.rb"
 
       cmd = 'bundle exec rdf'
       if v[:patch]
-        File.open("lib/vocab/#{id}.rb_p", 'w') { |f| f.write v[:patch] }
-        cmd += " patch --patch-file lib/vocab/#{id}.rb_p"
+        File.open("lib/vocabs/#{id}.rb_p", 'w') { |f| f.write v[:patch] }
+        cmd += " patch --patch-file lib/vocabs/#{id}.rb_p"
       end
       cmd += " serialize --uri '#{v[:uri]}' --output-format vocabulary"
       cmd += " --module-name #{v.fetch(:module_name, 'RDF::Vocab')}"
       cmd += " --class-name #{v[:class_name] ? v[:class_name] : id.to_s.upcase}"
       cmd += ' --strict' if v.fetch(:strict, true)
       cmd += " --extra #{URI.encode v[:extra].to_json}" if v[:extra]
-      cmd += " -o lib/vocab/#{id}.rb_t"
+      cmd += " -o lib/vocabs/#{id}.rb_t"
       cmd += ' "' + v.fetch(:source, v[:uri]) + '"'
 
       puts "  #{cmd}"
 
       begin
-        `#{cmd} && mv lib/vocab/#{id}.rb_t lib/vocab/#{id}.rb`
+        `#{cmd} && mv lib/vocabs/#{id}.rb_t lib/vocabs/#{id}.rb`
       rescue
         require 'English'
         puts "Failed to load #{id}: #{$ERROR_INFO.message}"
       ensure
-        `rm -f lib/vocab/#{id}.rb_t lib/vocab/#{id}.rb_p`
+        `rm -f lib/vocabs/#{id}.rb_t lib/vocabs/#{id}.rb_p`
       end
     end
   end
