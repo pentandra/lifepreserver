@@ -39,10 +39,10 @@ ahead of us that are helping to guide future action, instead of after-the-fact
 summarizations.
 
 So here's my journey of discovery in trying to find a way to represent these
-ideas in a machine-readable way. I'm doing this from the perspective of a
-machine vocabulary user, not a ontologist or ontology designer. One of the
+ideas in a machine-readable way. I will be doing this exercise wearing the hat
+of a machine vocabulary user, not a ontologist or ontology designer. One of the
 principles of Linked Data is to build upon anything that is already there that
-fits, so I want to see whether there is anything I can use that already exists
+fits, and I want to see whether there is anything I can use that already exists
 and is available.
 
 # Initial candidates
@@ -357,12 +357,14 @@ through this exercise has made me question the fundamental premise of basing
 our scholarly ecosystem primarily around publication workflows. What did I gain
 by exposing the data this way? What sort of clients would use this kind of
 information? What would they do with it? What affordances or connections could
-be created from it? These questions all seem to elicit the wrong kind of
-answers. It seems that if we could take a step back and really ask ourselves
+be created from it? These questions all seem to elicit the wrong kinds of
+answers. I understand the point of it for the publications of the legacy
+system, but it seems that if we could take a step back and really ask ourselves
 what it is that is essential, we could truly reimagine research and come up
-with a system that would foster collaboration, cooperation, and synergy,
-ultimately helping us to focus more on what the whole scholarly or scientific
-enterprise is about: inquiry and discovery.
+with an alternative system that would encourage collaboration, cooperation, and
+synergy across many boundaries, ultimately helping many more of us to focus on
+what the whole scholarly or scientific enterprise should really be about:
+inquiry and discovery.
 
 Another is that we have to start applying these ideas to our work. Questions
 will arise and insights will come as we are in the thick of it that we would
