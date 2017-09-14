@@ -36,19 +36,32 @@ class Abbreviate < Nanoc::Filter
   def abbreviate_html_like(content, params, abbreviations)
     type = params.fetch(:type)
 
+    parser = parser_for(type)
+    content = fix_content(content, type)
+
+    nokogiri_process(content, parser, type, abbreviations)
+  end
+
+  def parser_for(type)
     case type
     when :html
-      klass = ::Nokogiri::HTML
+      ::Nokogiri::HTML
+    when :xml, :xhtml
+      ::Nokogiri::XML
+    end
+  end
+
+  def fix_content(content, type)
+    case type
     when :xhtml
-      klass = ::Nokogiri::XML
       # FIXME: cleanup because it is ugly
       # this cleans the XHTML namespace to process fragments and full
       # documents in the same way. At least, Nokogiri adds this namespace
       # if detects the `html` element.
       content = content.sub(%r{(<html[^>]+)xmlns="http://www.w3.org/1999/xhtml"}, '\1')
+    else
+      content
     end
-
-    nokogiri_process(content, klass, type, abbreviations)
   end
 
   def nokogiri_process(content, klass, type, abbreviations)
