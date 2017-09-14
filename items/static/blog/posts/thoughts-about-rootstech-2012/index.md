@@ -14,7 +14,7 @@ tags:
 
 <div class="aside img">
 
-![Futuristic branding of RootsTech [2012]{.oldstyle}](rootstech.320x480-75.2012.jpg){.static}
+![Futuristic branding of RootsTech 2012](rootstech.320x480-75.2012.jpg){.static}
 
 </div>
 
@@ -23,10 +23,10 @@ Lake City. For those not familiar with RootsTech: it is a conference hosted by
 [FamilySearch International][familysearch] to bring together genealogical
 software creators and users.
 
-Since I never wrote about my experiences with RootsTech [2011]{.oldstyle}, I will
-try to summarize my thoughts about RootsTech in general in this article. Some
-of my thoughts may not be specifically about RootsTech, but more of a response
-to the current state of the genealogical software industry.
+Since I never wrote about my experiences with RootsTech 2011, I will try to
+summarize my thoughts about RootsTech in general in this article. Some of my
+thoughts may not be specifically about RootsTech, but more of a response to the
+current state of the genealogical software industry.
 
 <!--MORE-->
 
@@ -53,11 +53,10 @@ Frontier?</cite>][mills' paper]:
 > <dfn id="traditional-genealogists">Traditional Genealogists</dfn>
 >
 > : As serious compilers of family data, most strive to meet the standards set
-> forth by the Jacobus School in the <span class="oldstyle">1930</span>s...Their
-> goal is likely to produce "compiled genealogies" that are _reference_ works
-> rather than _family histories_, so they try to identify as many family
-> members as possible, with vital statistics but little or no historical
-> context.
+> forth by the Jacobus School in the 1930s...Their goal is likely to produce
+> "compiled genealogies" that are _reference_ works rather than _family
+> histories_, so they try to identify as many family members as possible, with
+> vital statistics but little or no historical context.
 >
 > <dfn id="generational-historians">Generational Historians</dfn>
 >
@@ -126,11 +125,10 @@ accurate."[^email-source] This type of software integrates openly with software 
 domains, such as history and other social sciences.
 
 Some software companies are just starting to scratch the surface of Genealogy
-[2.0]{.oldstyle}. As [more tools][Geungle] become available that support
-traditional genealogists and generational historians, we will see the gap
-between new and professional genealogists narrow. Tools that work the way
-research works will help new genealogists comprehend the research process
-better and faster.
+2.0. As [more tools][Geungle] become available that support traditional
+genealogists and generational historians, we will see the gap between new and
+professional genealogists narrow. Tools that work the way research works will
+help new genealogists comprehend the research process better and faster.
 
 # Users at RootsTech
 
@@ -176,4 +174,4 @@ next step.
 [bcg]: <http://bcgcertification.org/>
 [Havorka lecture]: <http://s3.amazonaws.com/rootstech/original/Advocating%20Genealogy.docx?1322717131> "Click for Syllabus"
 
-[^email-source]: Elizabeth Shown Mills taught me this principle through email correspondence during June, [2011]{.oldstyle}.
+[^email-source]: Elizabeth Shown Mills taught me this principle through email correspondence during June, 2011.

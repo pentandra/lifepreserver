@@ -86,23 +86,22 @@ need the ability to share what is in our heads more directly.
 
 In the current scholarly ecosystem the situation is more bleak. The paper
 publication process is too slow and isolated, not having changed much from what
-it was [350]{.oldstyle} years ago. Commercial publishers put research articles
-behind paywalls, charging consumers [$30--40]{.oldstyle} for access to each.
-And the original authors or researchers get none of the profits. Even with
-access to an article, very few of the underlying connections in logic are ever
-published, especially when page limits constrain how much a researcher can
-share in the first place. This makes it hard for others to reproduce or build
-upon the research results. Even further, research that doesn't turn out as
-hoped is normally _not_ published at all. While the researcher may remember the
-result, the world doesn't. For all intents and purposes the research is
-_obliterated_, which leads to a lot of duplication of work and wasted efforts.
-Talk about a communications nightmare! In some ways, [the way scholarly
-information used to be shared (in the Republic of Letters)][Republic of
-Letters] is better than our current situation---at least the culture
-accommodated a more open and participative approach. In present scholarly
-communications, even in the best of circumstances, we're only publishing a part
-of the picture, like Sosno's sculpture above, leaving the rest up to the
-imagination.
+it was 350 years ago. Commercial publishers put research articles behind
+paywalls, charging consumers $30--40 for access to each. And the original
+authors or researchers get none of the profits. Even with access to an article,
+very few of the underlying connections in logic are ever published, especially
+when page limits constrain how much a researcher can share in the first place.
+This makes it hard for others to reproduce or build upon the research results.
+Even further, research that doesn't turn out as hoped is normally _not_
+published at all. While the researcher may remember the result, the world
+doesn't. For all intents and purposes the research is _obliterated_, which
+leads to a lot of duplication of work and wasted efforts. Talk about a
+communications nightmare! In some ways, [the way scholarly information used to
+be shared (in the Republic of Letters)][Republic of Letters] is better than our
+current situation---at least the culture accommodated a more open and
+participative approach. In present scholarly communications, even in the best
+of circumstances, we're only publishing a part of the picture, like Sosno's
+sculpture above, leaving the rest up to the imagination.
 
 Stepping back a bit, I think it's interesting that the World Wide Web is [a
 graph of nodes and edges][graph], but we as humans extract knowledge from it
@@ -144,25 +143,25 @@ other people are better at finding answers. Everyone knows different things and
 can bring a unique perspective to a question. In general, we want to change how
 research is done and perceived. A new research culture is growing, and we want
 to help it grow. You could compare what we are trying to achieve to the
-beginnings of the World Wide Web. In the early [90]{.oldstyle}'s, the Web was
-the domain of technical futurists. Now the Web is cool, and everyone seems to
-be on the Web in some form or fashion. Anyone can become a web developer,
-blogger, or contribute something in some way, without anyone else for
-permission. Anyone---a curious student to a professional scholar or a seasoned
-entrepreneur to an aspiring researcher in a third-world country---should be
-able to share their journey of discovery in a simple, open way. This mechanism
-should be simple enough to track elementary questions and answers, and powerful
-enough to handle <a href="#alice">complex, data-intensive research</a>. It
-needs to open doors for collaboration within a research field and bridge fields
-of knowledge that have traditionally been isolated. We need something that
-allows anyone to publish every bit of the journey, from the most random piece
-of evidence to the most profound analysis in real time, as the research is
-progressing. And all this research needs to be accessible not only to people,
-but to machines as well.
+beginnings of the World Wide Web. In the early 90's, the Web was the domain of
+technical futurists. Now the Web is cool, and everyone seems to be on the Web
+in some form or fashion. Anyone can become a web developer, blogger, or
+contribute something in some way, without anyone else for permission.
+Anyone---a curious student to a professional scholar or a seasoned entrepreneur
+to an aspiring researcher in a third-world country---should be able to share
+their journey of discovery in a simple, open way. This mechanism should be
+simple enough to track elementary questions and answers, and powerful enough to
+handle <a href="#alice">complex, data-intensive research</a>. It needs to open
+doors for collaboration within a research field and bridge fields of knowledge
+that have traditionally been isolated. We need something that allows anyone to
+publish every bit of the journey, from the most random piece of evidence to the
+most profound analysis in real time, as the research is progressing. And all
+this research needs to be accessible not only to people, but to machines as
+well.
 
 <figure id="alice" class="img" property="schema:image" resource="#alice" typeof="schema:ImageObject">
   <a property="schema:contentUrl" href="LRsaba_CERN_0212_00676.jpg" title="Click for maximum coolness"><img property="schema:thumbnail" src="LHR_alice.jpg" class="static" alt="People working on the ALICE detector at the Large Hadron Collider" /></a>
-  <figcaption property="schema:caption">The <a href="http://cds.cern.ch/record/1436153">ALICE detector</a>, part of the Large Hadron Collider at <span property="schema:contentLocation">CERN</span>. Detectors along the LHC can produce <em>a lot</em> of data for research, <a href="https://en.wikipedia.org/wiki/Worldwide_LHC_Computing_Grid" title= "Worldwide LHC Computing Grid on Wikipedia">about <span class="oldstyle">300</span> gigabytes per second</a>. Image copyright <span class="oldstyle">© <span property="schema:copyrightYear">2012</span>--2015</span> <span property="schema:copyrightHolder" resource="http://home.web.cern.ch/">CERN</span>. <a href="http://copyright.cern.ch" rel="schema:publishingPrinciples">Used by permission</a>.</figcaption>
+  <figcaption property="schema:caption">The <a href="http://cds.cern.ch/record/1436153">ALICE detector</a>, part of the Large Hadron Collider at <span property="schema:contentLocation">CERN</span>. Detectors along the LHC can produce <em>a lot</em> of data for research, <a href="https://en.wikipedia.org/wiki/Worldwide_LHC_Computing_Grid" title= "Worldwide LHC Computing Grid on Wikipedia">about 300 gigabytes per second</a>. Image copyright <span class="oldstyle">© <span property="schema:copyrightYear">2012</span>--2015</span> <span property="schema:copyrightHolder" resource="http://home.web.cern.ch/">CERN</span>. <a href="http://copyright.cern.ch" rel="schema:publishingPrinciples">Used by permission</a>.</figcaption>
 </figure>
 
 So why does knowledge need to be opened up? And what would be the benefit of

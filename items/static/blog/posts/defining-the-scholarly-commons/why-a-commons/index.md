@@ -35,7 +35,7 @@ I'm sure that we'll still experience enough trial and error and growing pains
 throughout this process.
 
 A commons is an active, living process---a dynamic, evolving social activity,
-more deliberately known as <dfn id="ommoning">commoning</dfn>.
+more deliberately known as <dfn id="commoning">commoning</dfn>.
 
 Bollier says that a commons consists not just of a resource, but of a
 _community_ that manages a _resource_ by devising its own _rules, traditions,
@@ -43,6 +43,7 @@ and values_.[^Bollier-community]
 
 [^Bollier-community]:
 
-    Bollier, David. <a href="https://hyp.is/m-y5CiShEeeVrhfwB2Ooww/thenextsystem.org/commoning-as-a-transformative-social-paradigm/">
-    <cite>Commoning as a Transformative Social Paradigm</cite></a>,
-    Nov. [2015]{.oldstyle}, p. [6]{.oldstyle}.
+    Bollier, David. <a
+    href="https://hyp.is/m-y5CiShEeeVrhfwB2Ooww/thenextsystem.org/commoning-as-a-transformative-social-paradigm/">
+    <cite>Commoning as a Transformative Social Paradigm</cite></a>, Nov. 2015,
+    p. 6.

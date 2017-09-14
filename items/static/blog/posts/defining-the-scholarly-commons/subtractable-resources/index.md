@@ -55,7 +55,7 @@ fill.
 > boundaries for the next question. It's also a necessity, if problems are to
 > be solved well.
 
-<figcaption>--- <cite>Thinking in Systems: A Primer</cite>, by Donella H. Meadows, pp. <span class="oldstyle">98--99</span></figcaption>
+<figcaption>--- <cite>Thinking in Systems: A Primer</cite>, by Donella H. Meadows, pp. 98--99</figcaption>
 </figure>
 
 # Information as a common-pool resource

@@ -36,20 +36,19 @@ efforts. I want to share some of my impressions from both perspectives.
 <!--MORE-->
 
 Before doing so, I wanted to express how fortunate we feel to be involved in
-<span class="oldstyle">FORCE11</span>! When we started this company, we mainly
-focused on solving these problems with technology. It did not take long to
-realize that "if you build it, they will come" is really _not_ how it works in
-large-scale systemic migrations like this! While the right technology is surely
-needed, the social challenges are at least <span class="oldstyle">1000</span>
-times more difficult to overcome than the technical ones! But we also
-discovered that they are not impossible to overcome either. Actually, in a way,
-I think that helping people become united in a common purpose and heading in a
-common direction is the only _real_ challenge that there is. Once we're there
-we will have a shared vision of what needs to be built, and once it is built we
-will all be able to gauge how well it embodies that collective vision (or what
-still needs to be improved). <span class="oldstyle">FORCE11</span> is taking
-this challenge by the horns, and is trying to doing so in a domain-agnostic
-way.
+FORCE11! When we started this company, we mainly focused on solving these
+problems with technology. It did not take long to realize that "if you build
+it, they will come" is really _not_ how it works in large-scale systemic
+migrations like this! While the right technology is surely needed, the social
+challenges are at least 1000 times more difficult to overcome than the
+technical ones! But we also discovered that they are not impossible to overcome
+either. Actually, in a way, I think that helping people become united in a
+common purpose and heading in a common direction is the only _real_ challenge
+that there is. Once we're there we will have a shared vision of what needs to
+be built, and once it is built we will all be able to gauge how well it
+embodies that collective vision (or what still needs to be improved). FORCE11
+is taking this challenge by the horns, and is trying to doing so in a
+domain-agnostic way.
 
 # The premise
 
@@ -193,7 +192,7 @@ publishing a report of the workshop. Please [check it out][workshop-report] to
 learn more, and please take the opportunity to go through the exercise on your
 own, or with your group.
 
-[FORCE11]: <https://force11.org> {.oldstyle}
+[FORCE11]: <https://force11.org>
 [helmsley]: <http://helmsleytrust.org>
 [commons group]: <https://www.force11.org/group/scholarly-commons-working-group> "Scholarly Commons Working Group @FORCE11"
 [announcement]: <https://www.force11.org/article/helmsley-charitable-trust-funds-force11-develop-scholarly-commons-future> "Program announcement @FORCE11"

@@ -9,6 +9,7 @@ compile '/static/solutions/proposals/**/index.md' do
   ]
   filter :spellchecker, type: :html
   filter :abbreviate, type: :html
+  filter :old_style_figures, type: :html
   filter :robust_anchors
   layout '/proposals/default.erb'
   filter :rubypantsunicode

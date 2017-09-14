@@ -31,8 +31,7 @@ We have a [mission] that is the most important reason that we are doing all
 this to begin with---and we believe in it. We are so excited about it. But at
 the same time we have some great business ideas to promote this new paradigm of
 research. We don't want to have to deal with the funding limitations and red
-tape of the [501]{.oldstyle}(c)[(3)]{.oldstyle}. We just want to focus on our
-mission.
+tape of the 501(c)(3). We just want to focus on our mission.
 
 On the other hand, we don't want the fact that we are a for-profit company to
 deter people from supporting what we are doing. As a for-profit company, how
@@ -100,10 +99,9 @@ business can be. They are good companies started by good people that think
 businesses can be more than heartless profit machines. They have what is
 sometimes referred to as a double or triple bottom line (people, planet, and
 profit). One such business, Ben & Jerry's Homemade, Inc. (you know, the yummy
-ice cream), gives [7.5]{.oldstyle} percent of their before-tax profits to
-charity and purchases brownies from a bakery that hires people from prison.
-Newman's Own Inc. contributes all profits to charity. How can we be more like
-them?
+ice cream), gives 7.5 percent of their before-tax profits to charity and
+purchases brownies from a bakery that hires people from prison. Newman's Own
+Inc. contributes all profits to charity. How can we be more like them?
 
 In a way, it's funny to think about this right now. We are still
 [pre-revenue]{.sic}. Yet, I think _now_ is the time to make these decisions.

@@ -241,9 +241,9 @@ to transform the current systems of scholarship. We need something more,
 something that is so amazing that it would transform the world, something that
 others will see and say, "That's awesome! Why don't we work like that?" I think
 of the words of Alexander Hamilton in discussing the need for a new
-constitution for the same region, more than <span class="oldstyle">160</span>
-years after the initial compact was signed on board the Mayflower, describing a
-situation eerily similar to that earlier time, just on a much bigger scale.
+constitution for the same region, more than 160 years after the initial compact
+was signed on board the Mayflower, describing a situation eerily similar to
+that earlier time, just on a much bigger scale.
 
 <figure id="establishing-good-governance-from-reflection-and-choice" class="bq grab">
 
@@ -257,7 +257,7 @@ situation eerily similar to that earlier time, just on a much bigger scale.
 > and a wrong election of the part we shall act may, in this view, deserve to
 > be considered as the general misfortune of mankind.
 
-<figcaption>--- Alexander Hamilton, <cite>The Federalist Papers</cite>, No. [1]{.oldstyle}</figcaption>
+<figcaption>--- Alexander Hamilton, <cite>The Federalist Papers</cite>, No. 1</figcaption>
 </figure>
 
 Now a scholarly commons is not a civil body, it's a commons---a middle ground
@@ -408,11 +408,10 @@ If we took away the current incentives, why would anyone do it?
 # TL;DR
 
 So this essay started out as an assignment to write my thoughts in less than
-[400]{.oldstyle} words as to what the Scholarly Commons _is_ and the direction
-that we go next for the principles. If you've made it this far in this post,
-you have realized how far I have failed. But if I was to sum up my thoughts
-into a very high-level statement of what the Scholarly Commons is, here's what
-I would say:
+400 words as to what the Scholarly Commons _is_ and the direction that we go
+next for the principles. If you've made it this far in this post, you have
+realized how far I have failed. But if I was to sum up my thoughts into a very
+high-level statement of what the Scholarly Commons is, here's what I would say:
 
 <div class="big">
 
@@ -470,17 +469,17 @@ creating scholarly and scientific commons for the good of all mankind.
     These quotations from the Mayflower Compact and other circumstances
     relating to these early colonists can be found on [the Wikipedia
     page][Mayflower Compact] (with spelling modernized), or in [Bradford's
-    History "Of [Plimoth]{.sic} Plantation"](http://archive.org/stream/historyplymouth01socigoog#page/n246/mode/2up),
-    Book [2]{.oldstyle} [Anno]{.sic} [1620]{.oldstyle}, written by William
-    Bradford in the years from [1630]{.oldstyle} to [1651]{.oldstyle}, and
-    printed in entirety for the first time in [1854]{.oldstyle}.
+    History "Of [Plimoth]{.sic}
+    Plantation"](http://archive.org/stream/historyplymouth01socigoog#page/n246/mode/2up),
+    Book 2 [Anno]{.sic} 1620, written by William Bradford in the years from
+    1630 to 1651, and printed in entirety for the first time in 1854.
 
 [^cultural-affordances]:
 
     In a footnote of a later edition of Bradford's history, a quotation from
-    Gardiner's <cite>History of England</cite>, [1603--1642, [IV]{.roman}.
-    163]{.oldstyle} is particularly relevant to the analogy I am making here
-    with the Scholarly Commons:
+    Gardiner's <cite>History of England</cite>, 1603--1642, [IV]{.roman}. 163
+    is particularly relevant to the analogy I am making here with the Scholarly
+    Commons:
 
     <div class="bq grab" lang="en-GB">
 
@@ -499,8 +498,8 @@ creating scholarly and scientific commons for the good of all mankind.
 
     </div>
 
-    In [1776]{.oldstyle}, another philosopher, Adam Smith, wrote in <cite>The
-    Wealth of Nations, Book [IV]{.roman}, Chapter [VII]{.roman}, Part
+    In 1776, another philosopher, Adam Smith, wrote in <cite>The Wealth of
+    Nations, Book [IV]{.roman}, Chapter [VII]{.roman}, Part
     [II]{.roman}</cite>:
 
     <div class="bq grab" lang="en-GB">
@@ -555,8 +554,7 @@ creating scholarly and scientific commons for the good of all mankind.
 
     The Plymouth colonists show this determination to bridge differences with
     courage and their great fortune later on in their treaty with [Massasoit],
-    the great chief of the Wampanoag Indians, on March [22]{.oldstyle} the next
-    year.
+    the great chief of the Wampanoag Indians, on March 22 the next year.
 
 [^disclaimer]:
 
