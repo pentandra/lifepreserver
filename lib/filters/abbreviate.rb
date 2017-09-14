@@ -60,7 +60,7 @@ class Abbreviate < Nanoc::Filter
       # if detects the `html` element.
       content = content.sub(%r{(<html[^>]+)xmlns="http://www.w3.org/1999/xhtml"}, '\1')
     else
-      content
+      content.dup.force_encoding(Encoding::UTF_8)
     end
   end
 
