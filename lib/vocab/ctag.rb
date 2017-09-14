@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 # This file generated automatically using rdf vocabulary format from http://commontag.org/ns#
 require 'rdf'
-module Vocab
+module RDF::Vocab
   # @!parse
   #   # Vocabulary for <http://commontag.org/ns#>
   #   class CTAG < RDF::StrictVocabulary

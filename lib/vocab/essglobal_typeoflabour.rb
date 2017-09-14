@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 # This file generated automatically using rdf vocabulary format from http://purl.org/essglobal/standard/type-of-labour/
 require 'rdf'
-module Vocab
+module RDF::Vocab
   # @!parse
   #   # Vocabulary for <http://purl.org/essglobal/standard/type-of-labour/>
   #   class ESSGLOBALTypeoflabour < RDF::Vocabulary

@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 # This file generated automatically using rdf vocabulary format from http://ontologi.es/doap-deps#
 require 'rdf'
-module Vocab
+module RDF::Vocab
   # @!parse
   #   # Vocabulary for <http://ontologi.es/doap-deps#>
   #   class DEPS < RDF::StrictVocabulary

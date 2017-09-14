@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 # This file generated automatically using rdf vocabulary format from http://purl.org/vocab/vann/
 require 'rdf'
-module Vocab
+module RDF::Vocab
   # @!parse
   #   # Vocabulary for <http://purl.org/vocab/vann/>
   #   class VANN < RDF::StrictVocabulary

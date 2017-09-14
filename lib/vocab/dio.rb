@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 # This file generated automatically using rdf vocabulary format from https://w3id.org/dio#
 require 'rdf'
-module Vocab
+module RDF::Vocab
   # @!parse
   #   # Vocabulary for <https://w3id.org/dio#>
   #   class DIO < RDF::StrictVocabulary

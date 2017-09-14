@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 # This file generated automatically using rdf vocabulary format from http://vivoweb.org/ontology/core#
 require 'rdf'
-module Vocab
+module RDF::Vocab
   # @!parse
   #   # Vocabulary for <http://vivoweb.org/ontology/core#>
   #   class VIVO < RDF::StrictVocabulary

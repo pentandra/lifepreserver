@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 # This file generated automatically using rdf vocabulary format from http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#
 require 'rdf'
-module Vocab
+module RDF::Vocab
   # @!parse
   #   # Vocabulary for <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#>
   #   class DUL < RDF::StrictVocabulary

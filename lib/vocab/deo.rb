@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 # This file generated automatically using rdf vocabulary format from http://purl.org/spar/deo/
 require 'rdf'
-module Vocab
+module RDF::Vocab
   # @!parse
   #   # Vocabulary for <http://purl.org/spar/deo/>
   #   class DEO < RDF::StrictVocabulary

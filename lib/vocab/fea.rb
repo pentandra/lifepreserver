@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 # This file generated automatically using rdf vocabulary format from http://vocab.data.gov/def/fea#
 require 'rdf'
-module Vocab
+module RDF::Vocab
   # @!parse
   #   # Vocabulary for <http://vocab.data.gov/def/fea#>
   #   class FEA < RDF::StrictVocabulary

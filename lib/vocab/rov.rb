@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 # This file generated automatically using rdf vocabulary format from http://www.w3.org/ns/regorg#
 require 'rdf'
-module Vocab
+module RDF::Vocab
   # @!parse
   #   # Vocabulary for <http://www.w3.org/ns/regorg#>
   #   class ROV < RDF::StrictVocabulary

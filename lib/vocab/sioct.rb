@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 # This file generated automatically using rdf vocabulary format from http://rdfs.org/sioc/types#
 require 'rdf'
-module Vocab
+module RDF::Vocab
   # @!parse
   #   # Vocabulary for <http://rdfs.org/sioc/types#>
   #   class SIOCT < RDF::StrictVocabulary

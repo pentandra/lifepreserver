@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 # This file generated automatically using rdf vocabulary format from http://ogp.me/ns/article#
 require 'rdf'
-module Vocab
+module RDF::Vocab
   # @!parse
   #   # Vocabulary for <http://ogp.me/ns/article#>
   #   class ARTICLE < RDF::Vocabulary
