@@ -4,7 +4,7 @@ description: Or why the current Web is still so difficult.
 kind: blogpost
 author_name: Chris Chapman
 created_at: 2017-09-06
-updated_at: 2017-09-06
+updated_at: 2017-09-13
 tags:
   - Scholarly Commons
   - Technology
