@@ -23,7 +23,7 @@ module RDF::Vocab
       :"og:url" => %(https://pentandra.com/blog/).freeze,
       :"schema:copyrightHolder" => %(https://pentandra.com/company#company).freeze,
       :"schema:copyrightYear" => %(2011).freeze,
-      :"schema:hasPart" => [%(pentandra-blog:latest-articles).freeze, %(pentandra-blog:posts).freeze],
+      :"schema:hasPart" => %(pentandra-blog:latest-articles).freeze,
       :"schema:isPartOf" => %(pentandra-website:website).freeze,
       :"schema:publisher" => %(https://pentandra.com/company#company).freeze,
       type: ["cc:Work".freeze, "prov:Entity".freeze, "schema:WebPage".freeze]
