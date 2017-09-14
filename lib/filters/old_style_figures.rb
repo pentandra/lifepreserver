@@ -5,7 +5,7 @@ class OldStyleFigures < Nanoc::Filter
   identifier :old_style_figures
 
   SELECTORS ||= ['p', 'li'].freeze
-  IGNORE_CLASSES ||= Set.new(%w(oldstyle titling)).freeze
+  IGNORE_CLASSES ||= Set.new(%w(oldstyle titling uri)).freeze
 
   def run(content, params = {})
     case params[:type]
