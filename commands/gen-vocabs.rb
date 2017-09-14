@@ -14,7 +14,7 @@ class GenVocabs < ::Nanoc::CLI::CommandRunner
 
     validate_options_and_arguments
 
-    @site = load_site(preprocess: false)
+    @site = load_site
 
     template = File.read('etc/vocabs_additional.yaml')
 
