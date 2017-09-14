@@ -33,7 +33,7 @@ module LifePreserver
     def run
       require 'open3'
 
-      load_site
+      @site = load_site
 
       c = Nanoc::CLI::ANSIStringColorizer
 
@@ -41,7 +41,7 @@ module LifePreserver
       directives = options[:global] || 'daemon off;'
 
       nginx = find_nginx
-      output_dir = site.config[:output_dir]
+      output_dir = @site.config[:output_dir]
       config_file = File.join(output_dir, conf)
       cmd = [nginx, '-p', output_dir, '-c', conf, '-g', directives]
 

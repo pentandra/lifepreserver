@@ -18,12 +18,12 @@ module LifePreserver
       load_adsf
       require 'rack'
 
-      load_site
+      @site = load_site
 
       # Set options
       options_for_rack = {
         Port: (options[:port] || 3000).to_i,
-        Host: (options[:host] || '0.0.0.0'),
+        Host: (options[:host] || '127.0.0.1'),
       }
 
       # Get handler
@@ -38,17 +38,23 @@ module LifePreserver
       end
 
       # Build app
-      site = self.site
-      site_root = site.config[:output_dir] + view_config_root
+      site_root = @site.config[:output_dir] + view_config_root
+      index_filenames = @site.config[:index_filenames]
 
       app = Rack::Builder.new do
         use Rack::CommonLogger
         use Rack::ShowExceptions
         use Rack::Lint
         use Rack::Head
-        use Adsf::Rack::IndexFileFinder, root: site_root
+        use Adsf::Rack::IndexFileFinder,
+          root: site_root,
+          index_filenames: index_filenames
         run Rack::File.new(site_root)
       end.to_app
+
+      # Print a link
+      url = "http://#{options_for_rack[:Host]}:#{options_for_rack[:Port]}/"
+      puts "View the site at #{url}"
 
       # Run autocompiler
       handler.run(app, options_for_rack)
@@ -56,12 +62,12 @@ module LifePreserver
 
     protected
 
-    def view_config
+    def self.view_config_for(site)
       site.config[:view] || {}
     end
 
     def view_config_root
-      view_config[:static_root]
+      self.class.view_config_for(@site)[:static_root]
     end
   end
 end
