@@ -11,11 +11,6 @@ Class.new(Nanoc::DataSource) do
     @additional_tag_data = YAML.load_file('var/additional_tag_data.yaml')
   end
 
-  def down
-    #@tags = nil
-    #@additional_tag_data = nil
-  end
-
   def items
     items = []
 
