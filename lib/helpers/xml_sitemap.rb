@@ -17,7 +17,7 @@ module Nanoc::Helpers
       select_proc = params.fetch(:rep_select, nil)
 
       # Create builder
-      buffer = ''
+      buffer = String.new
       xml = Builder::XmlMarkup.new(target: buffer, indent: 2)
 
       # Check for required attributes

@@ -27,7 +27,7 @@ module LifePreserver
     # space between.
     def parse_abstract(abstract)
       paragraphs = abstract.split(/((?<=[a-z0-9])[.!?]['"]?(?=[A-Z0-9]))/)
-      paragraphs.reduce('') do |acc, p|
+      paragraphs.reduce(String.new) do |acc, p|
         acc << (p =~ /^[.!?'"]+$/ ? p + '</p>' : '<p>' + p)
       end
     end
