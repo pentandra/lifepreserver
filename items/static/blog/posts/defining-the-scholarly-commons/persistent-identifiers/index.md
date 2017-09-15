@@ -12,6 +12,9 @@ tags:
   - World Wide Web
 ---
 
+We need persistent identifiers for many resources of the commons: people,
+objects, outputs, inputs, etc.
+
 A lot of scholarly infrastructure is set up right now around DOIs, and they
 have, and are gaining momentum as mechanisms of citability. But do we
 explicitly design a system around _coolness factor_ when it introduces barriers
@@ -79,10 +82,10 @@ is not between decentralization or centralization, but is nothing more than an
 age-old argument in disguise: the question of individual agency and
 accountability versus compulsion---the question of who is in control.
 
-The [ISO [26324]{.oldstyle}][DOI standard] is a standard, but not an open
-standard, as the last time I checked it costs [88]{.oldstyle} CHF to purchase
+The [ISO 26324][DOI standard] is a standard, but not an open
+standard, as the last time I checked it costs 88 CHF to purchase
 it directly if you are not an ISO member. This is a one-time purchase. Once I
-have bought the [17]{.oldstyle}-page PDF that provides 'a structured,
+have bought the 17-page PDF that provides 'a structured,
 extensible means of identification, description and resolution' of digital
 objects, I can implement a DOI registry myself, but it will not be part of the
 scholarly DOI web (i.e. resolvable at <http://doi.org>) until I meet the
@@ -91,9 +94,10 @@ member. I spent some time looking on [the DOI website][], but could not find
 any information on how to become a member or registrar of the DOI system, or
 even a DOI-issuing organization. The most helpful information about this I
 found [on Wikipedia][doi], so if any registrars would like to fill me in, I'd
-love to know. And I've also heard that it costs around [$1]{.oldstyle} for an
-organization to issue each DOI. _Each DOI_! No wonder the culture of DOIs is
-built around coarse-grained research outputs.
+love to know. CrossRef is open with [thier fee structures][crossref fees], and
+annual membership ranges from $275--$50,000, with incremental costs of at most
+$1 for each member to issue each DOI. _Each DOI_! No wonder the culture of DOIs
+is built around coarse-grained research outputs.
 
 Of course, for a researcher, it is really easy to get a DOI. All you have to do
 is go drop your stuff in a repository! What's so bad about that? This isn't an
@@ -135,7 +139,7 @@ provided by the W3C's open linked data infrastructure and Web archiving.
 > powerful and evolving set of standards. This issue discussed at length
 > elsewhere, and time does not allow us to delve into it here.
 
-<figcaption>The second rule (or expectation of behavior) of Linked Data, by Tim Berners-Lee, [2006]{.oldstyle}</figcaption>
+<figcaption>The second rule (or expectation of behavior) of Linked Data, by Tim Berners-Lee, 2006</figcaption>
 </figure>
 
 In other words, HTTP URIs as identifiers are just as separable from the
@@ -143,7 +147,7 @@ underlying technology and as capable of being archived as are DOIs. Either
 could support multiple resolution mechanisms, though in practice, both
 currently depend upon DNS for resolution. If you want to look more in-depth at
 the arguments in favor of HTTP URIs to which Berners-Lee was referring, check
-out [this article][myRI] from [2006]{.oldstyle}. [Larry Stone's independent
+out [this article][myRI] from 2006. [Larry Stone's independent
 evaluation][stone evaluation] of DOIs versus PURLs, which is linked to from
 [the DOI website][doi-purl] to portray one of the benefits of the DOI system,
 was largely based on contemporary and now largely irrelevant implementation
@@ -176,24 +180,23 @@ publishers.
 In my vision of the Scholarly Commons, I see parallels between where we are now
 to what the Scholarly Commons could be and the transition of a tiny, centrally
 administered [ARPANET][] to a colossal, open, distributed Internet. At the time
-of the [depiction below](#arpanet-in-1977), there were less than
-[200]{.oldstyle} nodes on the network. In these early days, if you wanted to
-add a host to the network, you had to call [Elizabeth Feinler][] at the Network
-Information Center at Stanford University during business hours. If your host
-was eligible to connect to the ARPANET, your host's name and assigned IP
-address were then added to a centralized text file. To discover and communicate
-with your host, every other computer on the ARPANET periodically downloaded
-this file via FTP.
+of the [depiction below](#arpanet-in-1977), there were less than 200 nodes on
+the network. In these early days, if you wanted to add a host to the network,
+you had to call [Elizabeth Feinler][] at the Network Information Center at
+Stanford University during business hours. If your host was eligible to connect
+to the ARPANET, your host's name and assigned IP address were then added to a
+centralized text file. To discover and communicate with your host, every other
+computer on the ARPANET periodically downloaded this file via FTP.
 
 <figure id="arpanet-in-1977" property="schema:sharedContent" resource="#arpanet-in-1977" typeof="schema:ImageObject">
   <img alt="A diagram of the ARPANET in March 1977, composed of nodes, depicted as rectangular labeled boxes, connected together by lines, representing networked circuits." class="simple" src="Arpanet_logical_map,_march_1977.png" />
   <figcaption>A top-down logical map of ARPANET, the predecessor of the Internet, forty years ago this year. At this point in time, ARPANET was centrally administered, and this approach was nearing its limits of manageability.</figcaption>
 </figure>
 
-It did not take long for this centralized approach to become unwieldy. By
-[1983]{.oldstyle}, [Jon Postel][] and [Paul Mockapetris][] had come up with a
-solution. It was bold and forward-thinking---quite different than the status
-quo. Here is some of the language of the proposal:
+It did not take long for this centralized approach to become unwieldy. By 1983,
+[Jon Postel][] and [Paul Mockapetris][] had come up with a solution. It was
+bold and forward-thinking---quite different than the status quo. Here is some
+of the language of the proposal:
 
 <figure id="the-need-for-a-consistent-name-space" class="bq grab">
 
@@ -206,7 +209,7 @@ quo. Here is some of the language of the proposal:
 > structure of the name space, and in particular mechanisms for creating and
 > deleting names; these should also be distributed.
 
-<figcaption>From RFC [882]{.oldstyle}: <cite>Domain Names -- Concepts and Facilities</cite>, [1983]{.oldstyle}</figcaption>
+<figcaption>From RFC 882: <cite>Domain Names -- Concepts and Facilities</cite>, 1983</figcaption>
 </figure>
 
 It is a little hard to understand, from our perspective in time, what this
@@ -589,6 +592,7 @@ support whatever identifiers exist from whatever identification schemes exist.
 Preferring and supporting are two different things. In short, the Scholarly
 Commons follows the robustness principle.
 
+[CrossRef fees]: <https://www.crossref.org/fees/>
 [DOI]: <https://en.wikipedia.org/wiki/Digital_object_identifier> "Digital Object Identifier on Wikipedia"
 [The DOI Website]: <http://www.doi.org>
 [DOI standard]: <https://www.iso.org/standard/43506.html> "Digital object identifier system ISO standard"
@@ -634,7 +638,7 @@ Commons follows the robustness principle.
     that can claim a DOI, limiting the scope of the scholarly conversation in a
     way that is very closed and exclusive. If this is perpetuated to the
     extreme, scholarship will never be able to transcend current scholarly
-    circles. To the [FORCE[11]{.oldstyle} email list](https://groups.google.com/a/force11.org/forum/#!forum/f11discussion)
+    circles. To the [FORCE11 email list](https://groups.google.com/a/force11.org/forum/#!forum/f11discussion)
     Leslie Chan posted [the following insightful comment](https://groups.google.com/a/force11.org/d/msg/f11discussion/_jE0D4ns_RQ/f_yE86vFCQAJ):
 
     <div class="bq grab">

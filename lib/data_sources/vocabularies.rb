@@ -12,10 +12,6 @@ Class.new(Nanoc::DataSource) do
     @voaf_metadata ||= YAML.load_file('var/voaf_metadata.yaml')
   end
 
-  def down
-    #@voaf_metadata = nil
-  end
-
   def items
     items = []
 

@@ -1,13 +1,12 @@
 --- 
 title: Blog
 description: A collection of our thoughts about Pentandra and the future of research.
+is_hidden: true
 ---
-<div class="group">
+<div class="group" prefix="<%= prefix_mappings_for(:sioct) %>" resource="pentandra-blog:blog" typeof="schema:Blog sioct:Weblog">
 
-  <header prefix="<%= prefix_mappings_for(:sioct) %>" resource="pentandra-blog:blog" typeof="schema:Blog sioct:Weblog">
-    <h1 property="schema:name sioc:name"><%= @config[:blog][:title] %></h1>
-    <link property="schema:isPartOf" resource="pentandra-website:website" />
-  </header>
+  <h1 property="schema:name sioc:name"><%= @config[:blog][:title] %></h1>
+  <link property="schema:isPartOf" resource="pentandra-website:website" />
 
   <div property="schema:hasPart" resource="pentandra-blog:posts" typeof="schema:ItemList">
     <link property="schema:itemListOrder" resource="schema:itemListOrderDescending" />

@@ -1,7 +1,7 @@
 <% render('/blog/default.*') do %>
   <h1>Posts from <%= year.to_s %></h1>
 
-  <% year_posts = posts_by_year(year, postings) %>
+  <% year_posts = posts_by_year(year, published_weblog) %>
   <div property="schema:hasPart" resource="pentandra-blog:posts_from_<%= year.to_s %>" typeof="schema:ItemList">
     <link property="schema:itemListOrder" resource="schema:itemListOrderDescending" />
     <meta property="schema:numberOfItems" content="<%= h year_posts.length %>" datatype="schema:Integer" />

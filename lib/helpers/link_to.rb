@@ -17,16 +17,20 @@ module LifePreserver
     end
 
     def public_link_to(text, target, attributes = {})
-      # Pull out the global flag
-      global = attributes.delete(:global)
-
-      path = public_path_to(target, global: global)
+      # Pull out main path attributes
+      path_attributes = {
+        rep: attributes.delete(:rep),
+        snapshot: attributes.delete(:snapshot),
+        global: attributes.delete(:global)
+      }.compact
+      
+      path = public_path_to(target, path_attributes)
       path.chop! if attributes.delete(:concept_uri) && path.end_with?('/')
 
       # Pull out fragment identifier, if given
       fragment = '#' + attributes.delete(:fragment_id) if attributes[:fragment_id]
 
-      # Join attributes
+      # Join the rest of the attributes
       attributes = attributes.reduce('') do |memo, (key, value)|
         memo + key.to_s + '="' + h(value) + '" '
       end

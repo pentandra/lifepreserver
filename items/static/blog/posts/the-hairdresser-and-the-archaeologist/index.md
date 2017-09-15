@@ -22,11 +22,11 @@ tags:
   <figcaption><a href="https://commons.wikimedia.org/wiki/File:Julia-domna.jpg" rel="prov:wasDerivedFrom" property="schema:name dc:title"><cite>Coin of Julia Domna</cite></a> by <a href="http://en.wikipedia.org/wiki/User:Rasiel" property="cc:attributionName" rel="cc:attributionURL dc:creator">Rasiel Suarez</a>, licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA license</a>. <span class="icon-cc"></span><span class="icon-cc-by"></span><span class="icon-cc-sa"></span></figcaption>
 </figure>
 
-I don't know much about hairdos, especially those that were in vogue
-[1500]{.oldstyle} years ago. But it turns out that the experts may not have
-known everything there is to know about them either. A couple weeks ago, on the
-front page of the Wall Street Journal was [a story][story][^story-citation]
-about a very unusual hairdresser named Janet Stephens.
+I don't know much about hairdos, especially those that were in vogue 1500 years
+ago. But it turns out that the experts may not have known everything there is
+to know about them either. A couple weeks ago, on the front page of the Wall
+Street Journal was [a story][story][^story-citation] about a very unusual
+hairdresser named Janet Stephens.
 
 <!--MORE-->
 
@@ -74,7 +74,7 @@ which can also be applied to research:
 > process of observing what is going on, and contributing our unique
 > interpretations...
 
-<figcaption>--- Margaret J. Wheatley, from <cite>Leadership and the New Science</cite>, pp. [66--7]{.oldstyle}</figcaption>
+<figcaption>--- Margaret J. Wheatley, from <cite>Leadership and the New Science</cite>, pp. 66--7</figcaption>
 </figure>
 
 While practitioners discover new things every day, few take the time (or would

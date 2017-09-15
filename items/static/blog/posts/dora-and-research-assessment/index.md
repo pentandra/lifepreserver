@@ -23,10 +23,10 @@ That is a surprisingly difficult question to answer.
 
 The naive approach to research assessment is to boil everything down to a
 number---a metric. But you cannot reduce quality or impact down to a simple
-quantitative singularity, unless it happens to be [the number
-[42]{.oldstyle}][42]. Shortcuts to research assessment [don't work][shortcuts].
-Our current degenerative system of research assessment is an outstanding
-example of the need _not_ to do assessments this way.
+quantitative singularity, unless it happens to be [the number 42][42].
+Shortcuts to research assessment [don't work][shortcuts]. Our current
+degenerative system of research assessment is an outstanding example of the
+need _not_ to do assessments this way.
 
 Last December, a forward-thinking group of editors and publishers met to
 discuss some of the problems with research assessment and came up with a

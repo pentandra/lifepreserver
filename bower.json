@@ -18,6 +18,7 @@
     "pygments": "*",
     "js-url": "^2.3.0",
     "txtinput": "Alex1990/txtinput#^0.1.1",
-    "jsonld": "^0.4.11"
+    "jsonld": "^0.4.11",
+    "respec": "w3c/respec#^16.2.0"
   }
 }

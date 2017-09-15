@@ -9,9 +9,12 @@ ASCII: American Standard Code for Information Interchange
 B2B: Business To Business
 BCG: Board for Certification of Genealogists
 BGP: Border Gateway Protocol
+BIBFRAME: Bibliographic Framework
+BIBO: Bibliographic Ontology
 BMW: Bayerische MotorWerke (Bavarian Motor Works)
 BYOS: Bring Your Own System
 CAP: Consistency, Availability, Partition tolerance
+CASRAI: Consortium Advancing Standards in Research Administration Information
 CC-BY-NC: Creative Commons Attribution-NonCommercial
 CC-BY-SA: Creative Commons Attribution-ShareAlike
 CC-BY: Creative Commons Attribution
@@ -21,6 +24,7 @@ CERN: 'Organisation européenne pour la recherche nucléaire (English: European 
 CHF: Swiss Francs
 CSS3: Cascading Style Sheets Level 3
 CSS: Cascading Style Sheets
+CV: curriculum vitae
 DARPA: Defence Advanced Research Projects Agency
 DCMI: Dublin Core Metadata Initiative
 DIO: Design Intent Ontology
@@ -79,8 +83,10 @@ OWL2: Web Ontology Language 2
 OWL: Web Ontology Language
 P2P: Peer-to-Peer
 PACELC: In case of network partitioning (P) in a distributed computer system, one has to choose between availability (A) and consistency (C) (as per the CAP theorem), but else (E), even when the system is running normally in the absence of partitions, one has to choose between latency (L) and consistency (C).
+PAV: Provenance, Authoring and Versioning
 PDF: Portable Document Format
 PNG: Portable Network Graphics
+PROV-O: The PROV Ontology
 PROV: W3C PROVenance Interchange
 PS: PostScript
 PURL: Persistent URL
@@ -122,6 +128,7 @@ UTF-8: Unicode Transformation Format-8
 UTF: Unicode Transformation Format
 VANN: Vocabulary for ANNotating vocabulary descriptions
 VCS: Version Control System
+VIVO-ISF: VIVO-Integrated Semantic Framework
 VoID: Vocabulary of Interlinked Datasets
 W3C: World Wide Web Consortium
 XHTML: eXtensible HyperText Markup Language

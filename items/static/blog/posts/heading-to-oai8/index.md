@@ -33,10 +33,10 @@ of research][case]: the _case_.
 <!--MORE-->
 
 The second reason is that CERN is the birthplace of the [World Wide Web][www].
-In [1990]{.oldstyle}, Tim Berners-Lee and [Robert Cailliau]{lang=fr},
-[proposed][proposal] to develop a system that would use hypertext as "a way to
-link and access information of various kinds as a web of nodes in which the
-user can browse at will."[^first-website] Kind of a cool idea, isn't it?
+In 1990, Tim Berners-Lee and [Robert Cailliau]{lang=fr}, [proposed][proposal]
+to develop a system that would use hypertext as "a way to link and access
+information of various kinds as a web of nodes in which the user can browse at
+will."[^first-website] Kind of a cool idea, isn't it?
 
 While their original idea included linking _web pages_ together using hypertext
 (which is what we are used to thinking of when we think of the Web, and is

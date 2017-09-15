@@ -65,7 +65,7 @@ module LifePreserver
     # Create a link for the author of this page
     #
     def link_for_author(author, rel_tag: true)
-      %(<a href="#{@config[:blog][:authors_url]}/#{h author.to_slug}/" title="Articles by #{h author}"#{' rel="author"' if rel_tag}>#{h author}</a>)
+      %(<a href="#{@config[:blog][:authors_path]}/#{h author.to_slug}/" title="Articles by #{h author}"#{' rel="author"' if rel_tag}>#{h author}</a>)
     end
 
     # run during preprocessing
