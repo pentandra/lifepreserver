@@ -74,7 +74,7 @@ class SpellChecker < Nanoc::Filter
         depend_on_attributes(dic.dependencies)
 
         checked_text = node.text.dup.gsub(/([[:word:]]+(?:['’][[:word:]]+)?)/) do |word|
-          if dic.valid?(word) || (node.previous && dic.valid?(node.previous.text + word))
+          if dic.valid?(word) || (node.previous && dic.valid?(node.previous.text + word)) || /\d+['’]?s\z/.match(word)
             word
           else
             "<mark class=\"misspelled\">#{word}</mark>"
