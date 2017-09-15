@@ -1,0 +1,40 @@
+---
+title: "The Scholarly Commons: a systems perspective"
+created_at: 2017-08-21
+updated_at: 2017-08-23
+tags:
+  - Scholarly Commons
+  - FORCE11
+  - Holism
+---
+
+<div class="group" resource="#workshop" typeof="schema:Event">
+
+  <h1><%= @item[:title] %></h1>
+
+  <div class="bd">
+
+    <p class="big">
+
+      A workshop made of three parts that looks at scholarship and scholarly
+      commons from a systems perspective. It reaches from the past to the
+      future, and finishes with practical steps to get from here to there.
+
+    </p>
+
+  </div>
+
+</div>
+
+<section about="#workshop" class="section" id="proposed-sessions">
+
+  <div class="numbered" resource="#sessions" typeof="schema:ItemList">
+    <% sessions = children_of(@item) %>
+    <link property="schema:itemListOrder" resource="schema:itemListOrderAscending" />
+    <meta property="schema:numberOfItems" content="<%=h sessions.length %>" datatype="schema:Integer" />
+    <% sessions.sort_by { |s| s.identifier }.each_with_index do |session, index| %>
+      <%= render('/proposals/partials/summary.*', item: session, position: index + 1) %>
+    <% end %>
+  </div>
+
+</section>
