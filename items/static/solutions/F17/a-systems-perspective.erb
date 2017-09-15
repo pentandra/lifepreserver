@@ -29,7 +29,7 @@ tags:
 <section about="#workshop" class="section" id="proposed-sessions">
 
   <div class="numbered" resource="#sessions" typeof="schema:ItemList">
-    <% sessions = children_of(@item) %>
+    <% sessions = @items.find_all('/static/solutions/proposals/F17/a-systems-perspective/**/index.md') %>
     <link property="schema:itemListOrder" resource="schema:itemListOrderAscending" />
     <meta property="schema:numberOfItems" content="<%=h sessions.length %>" datatype="schema:Integer" />
     <% sessions.sort_by { |s| s.identifier }.each_with_index do |session, index| %>
