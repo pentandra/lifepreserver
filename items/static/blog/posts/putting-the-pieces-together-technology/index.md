@@ -21,24 +21,24 @@ tags:
 
 This post started as a follow-on to a post I am writing about the _culture_ of
 the Scholarly Commons in response to the [Scholarly Commons San Diego
-workshop][san diego workshop] held last September by [FORCE11]{.oldstyle}. But,
-as it sometimes turns out in this funny thing we call life, it is time to
-release this post, and I am still working on the one about culture. Don't
-worry---this post is not about specific technologies, but about what needs to
-be enabled by technology to allow for what I'm calling, for purposes of this
-discussion, _scholarly commoning_.
+workshop][san diego workshop] held last September by FORCE11. But, as it
+sometimes turns out in this funny thing we call life, it is time to release
+this post, and I am still working on the one about culture. Don't worry---this
+post is not about specific technologies, but about what needs to be enabled by
+technology to allow for what I'm calling, for purposes of this discussion,
+_scholarly commoning_.
 
 ![Researcher journeys, personal and context specific, overlapping and intertwining over time.](researcher_journeys.png)
 
 As this is my own response to the San Diego workshop and to our discovery
 process so far relating to the Scholarly Commons, it represents my own views
-only, and not necessarily the views of those in [FORCE11]{.oldstyle}'s
-Scholarly Commons Working Group or even its steering committee. Each of us
-involved in this project are coming at this from different perspectives, so it
-is no surprise that we are not always in complete agreement about what we would
-like the Scholarly Commons to be. We are each a product of our own experiences
-and backgrounds, and each of our backgrounds is quite dissimilar. Even though
-this makes things difficult sometimes, I view this as a good thing in general,
+only, and not necessarily the views of those in FORCE11's Scholarly Commons
+Working Group or even its steering committee. Each of us involved in this
+project are coming at this from different perspectives, so it is no surprise
+that we are not always in complete agreement about what we would like the
+Scholarly Commons to be. We are each a product of our own experiences and
+backgrounds, and each of our backgrounds is quite dissimilar. Even though this
+makes things difficult sometimes, I view this as a good thing in general,
 because it has brought more perspectives to the table and has forced us to look
 at what we're doing from many different angles.
 
@@ -52,17 +52,16 @@ course of us working on this, however, it has become evident that 'from
 scratch' and 'networked scholarship' mean different things to different people.
 For some on this steering committee (and likely others), these terms convey
 more of an idea of an incremental realignment of existing platforms and
-services, some of which have been studied in the [[101]{.oldstyle} Scholarly
-Innovations project][101 innovations]. But there are also those, myself
-included, that have been thinking of these terms on a more foundational level,
-of open approaches and emerging technologies that could actually change the
-conversation, such as distributed affordances, HATEOAS, and machine-based
-ontologies that could help connect researchers and research across tools and
-platforms, providing new interactions for scholarship that would open up the
-research process and give us the ability to do things that we have never been
-able to do before. In trying to reconcile these two approaches, I have wondered
-whether it is possible that the idea of the Scholarly Commons could encompass
-both.
+services, some of which have been studied in the [101 Scholarly Innovations
+project][101 innovations]. But there are also those, myself included, that have
+been thinking of these terms on a more foundational level, of open approaches
+and emerging technologies that could actually change the conversation, such as
+distributed affordances, HATEOAS, and machine-based ontologies that could help
+connect researchers and research across tools and platforms, providing new
+interactions for scholarship that would open up the research process and give
+us the ability to do things that we have never been able to do before. In
+trying to reconcile these two approaches, I have wondered whether it is
+possible that the idea of the Scholarly Commons could encompass both.
 
 There is a general consensus among us, I am pretty sure, that the Scholarly
 Commons is scholarly communication in a modern setting, one in which we are not
@@ -156,7 +155,7 @@ resulting struggle in the practice of medicine:
 > Volvo. "What we get, of course, is nothing close to a great car; we get a
 > pile of very expensive junk."
 
-<figcaption>--- Atul Gawande, <cite>The Checklist Manifesto</cite>, [2009]{.oldstyle}, pp. [184--5]{.oldstyle}</figcaption>
+<figcaption>--- Atul Gawande, <cite>The Checklist Manifesto</cite>, 2009, pp. 184--5</figcaption>
 </figure>
 
 Research or scholarship, just like medicine, is not simply a matter of lining
@@ -311,7 +310,7 @@ cases]:
 > interaction that correspondence did. In short, the Society’s correspondence
 > encouraged a more participatory science.
 
-<figcaption>--- [Andrea Rusnock]{lang=en-US}, <a href="http://www.jstor.org/stable/4028081">Correspondence networks and the Royal Society, <span class="oldstyle">1700--1750</span></a></figcaption>
+<figcaption>--- [Andrea Rusnock]{lang=en-US}, <a href="http://www.jstor.org/stable/4028081">Correspondence networks and the Royal Society, 1700--1750</a></figcaption>
 </figure>
 
 I would argue that what we have lost we need to revive and reintroduce into our
@@ -460,7 +459,7 @@ and we're talking here about the practice of research:
 > beautifully, deliberately and well. That is one of the ends for which they
 > exist.
 
-<figcaption>--- Robert Bringhurst, <cite>The Elements of Typographic Style</cite>, version [3.2 (2008)]{.oldstyle}</figcaption>
+<figcaption>--- Robert Bringhurst, <cite>The Elements of Typographic Style</cite>, version 3.2 (2008)</figcaption>
 </figure>
 
 Instead of writing these rules or guides in prose and sticking them in a book,
@@ -499,7 +498,7 @@ Gawande provides some direction for the future:
 >
 > But we could, and that is the ultimate point.
 
-<figcaption>--- Atul Gawande, <cite>The Checklist Manifesto</cite>, p. [185]{.oldstyle}</figcaption>
+<figcaption>--- Atul Gawande, <cite>The Checklist Manifesto</cite>, p. 185</figcaption>
 </figure>
 
 Sharing our patterns of practice is part of the answer to [increasing the
@@ -562,7 +561,7 @@ displace existing systems.
 [they just don't get it]: <http://cameronneylon.net/blog/they-just-dont-get-it/> "They. Just. Don't. Get. It..., by Cameron Neylon"
 [101 innovations]: <http://101innovations.wordpress.com> "101 Innovations in Scholarly Communication, by Jeroen Bosman and Bianca Kramer"
 
-[^constellation]: Bollier, David. <a href="https://hyp.is/upj6uiSeEee-Q6M26eFALg/thenextsystem.org/commoning-as-a-transformative-social-paradigm/"><cite>Commoning as a Transformative Social Paradigm</cite></a>, Nov. [2015]{.oldstyle}, p. [9]{.oldstyle}.
+[^constellation]: Bollier, David. <a href="https://hyp.is/upj6uiSeEee-Q6M26eFALg/thenextsystem.org/commoning-as-a-transformative-social-paradigm/"><cite>Commoning as a Transformative Social Paradigm</cite></a>, Nov. 2015, p. 9.
 
 [^compatibility]: From Wiktionary.
 
@@ -570,25 +569,25 @@ displace existing systems.
 
     <div class="bq rev">
 
-    > The first workshop would take up a [1K]{.sic} challenge idea by
-    > Dr. Sarah Callahan from FORCE[2015]{.oldstyle}: What would research
-    > communication look like after a clean start? A common theme that emerges
-    > from FORCE meetings in that many of our ideas for reforming scholarly
-    > communications spring from [350]{.oldstyle} years of tradition around
-    > scientific dissemination. As shown by the discussion on credit systems at
-    > FORCE[2015]{.oldstyle}, we don’t question the basic assumptions behind
-    > our current systems which are often electronic implementations of old
-    > practices that [pre-date]{.sic} machine-based access to information.
+    > The first workshop would take up a [1K]{.sic} challenge idea by Dr. Sarah
+    > Callahan from FORCE2015: What would research communication look like
+    > after a clean start? A common theme that emerges from FORCE meetings in
+    > that many of our ideas for reforming scholarly communications spring from
+    > 350 years of tradition around scientific dissemination. As shown by the
+    > discussion on credit systems at FORCE2015, we don’t question the basic
+    > assumptions behind our current systems which are often electronic
+    > implementations of old practices that [pre-date]{.sic} machine-based
+    > access to information.
     >
     > This workshop will re-imagine scholarly communication starting from
     > scratch as a system explicitly designed for machine-based access and
     > networked scholarship, and not simply adapted from the paper-based
     > system. For example, what would scientific discourse look like if we
-    > didn't have a [350]{.oldstyle} year old tradition of describing data
-    > rather than publishing it? What if the Ingelfinger rule stating that all
-    > articles must present new research had never been adopted? If the impact
-    > factor built around coarse citation systems hadn't taken hold? If science
-    > had always involved the work of large teams?
+    > didn't have a 350 year old tradition of describing data rather than
+    > publishing it? What if the Ingelfinger rule stating that all articles
+    > must present new research had never been adopted? If the impact factor
+    > built around coarse citation systems hadn't taken hold? If science had
+    > always involved the work of large teams?
 
     </div>
 

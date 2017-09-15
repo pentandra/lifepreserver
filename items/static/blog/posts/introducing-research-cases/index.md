@@ -33,19 +33,18 @@ Cases](https://researchcases.org).
 # Motives of Correspondence
 
 The [Republic of Letters] was an international network of collaborators that
-existed during the [17]{.oldstyle}th and [18]{.oldstyle}th centuries. In this
-metaphysical Republic, letters about natural philosophy (science), religion,
-politics, or really any intellectual topic were exchanged in a quasi-public
-manner between interested parties. Leisure time, money for postage, and a
-curious mind were the only barriers for entry into this
-network.[^barriers-to-entry]
+existed during the 17th and 18th centuries. In this metaphysical Republic,
+letters about natural philosophy (science), religion, politics, or really any
+intellectual topic were exchanged in a quasi-public manner between interested
+parties. Leisure time, money for postage, and a curious mind were the only
+barriers for entry into this network.[^barriers-to-entry]
 
 The Republic of Letters was part of a bigger movement: the [Enlightenment], or
 the Age of Reason, an exciting time when old ideas were being overturned,
 experimentation was being emphasized, and long-entrenched authority was being
 challenged. This was the age of [sapere aude]---dare to know---as discussed by
 [Immanuel Kant] in his essay <cite>[Answering the Question: What Is
-Enlightenment?]</cite> in [1784]{.oldstyle}.
+Enlightenment?]</cite> in 1784.
 
 This was a time before our overspecialization and compartmentalization of
 research into our tidy little boxes. Ideas were discussed freely, and flowed
@@ -65,36 +64,35 @@ This happy-looking gentleman, [Antonie van Leeuwenhoek], is regarded by many as
 the father of microbiology. Among other things, he discovered bacteria and a
 method to drastically improve the power of a microscope. Yet he published zero
 papers or books. He relied on the open and effective method of scientific
-communication and collaboration, correspondence by letter, exchanging over
-[560]{.oldstyle} letters with the Royal Society during the course of his life.
-Leeuwenhoek is widely regarded as an amateur, and I believe that he would
-appreciate that designation, because he researched to satisfy his
-curiosity---he researched for the love of it.
+communication and collaboration, correspondence by letter, exchanging over 560
+letters with the Royal Society during the course of his life. Leeuwenhoek is
+widely regarded as an amateur, and I believe that he would appreciate that
+designation, because he researched to satisfy his curiosity---he researched for
+the love of it.
 
 ## Publish or Perish
 
-For the last [350]{.oldstyle} or so years we have relied on journals for the
-dissemination of scholarly news. Yet journals were only a complement to the
-communications method already in use at the time: _correspondence by letter_.
-The journal was a labor-saving device to distribute the latest research news en
-masse to the public. However, as a communications medium, journals allow only
-one-way discourse and lack many of the advantages of interaction and
-collaboration that correspondence provided.
+For the last 350 or so years we have relied on journals for the dissemination
+of scholarly news. Yet journals were only a complement to the communications
+method already in use at the time: _correspondence by letter_. The journal was
+a labor-saving device to distribute the latest research news en masse to the
+public. However, as a communications medium, journals allow only one-way
+discourse and lack many of the advantages of interaction and collaboration that
+correspondence provided.
 
 If those involved in the Republic of Letters had something that worked so well,
 namely correspondence by letter, what were the motives for creating the
 journal?
 
-In early [1665]{.oldstyle}, Henry Oldenburg obtained a copy of the newly
-published [Journal des sçavans], published out of Paris, France. It prompted a
-business idea. If he could publish a journal entirely devoted to natural
-philosophy, he would be able to more easily promote new scientific ideas,
-broaden the reach of the Royal Society, and perhaps even make a little bit of
-money on the side. From a systems perspective, Oldenburg wanted to maximize the
-scale of dissemination of scientific news by minimizing the friction that
-existed in the system.[^neylon] Thus started the Philosophical Transactions.
-His plan worked except for the money part, though he generally made just enough
-to cover his rent.
+In early 1665, Henry Oldenburg obtained a copy of the newly published [Journal
+des sçavans], published out of Paris, France. It prompted a business idea. If
+he could publish a journal entirely devoted to natural philosophy, he would be
+able to more easily promote new scientific ideas, broaden the reach of the
+Royal Society, and perhaps even make a little bit of money on the side. From a
+systems perspective, Oldenburg wanted to maximize the scale of dissemination of
+scientific news by minimizing the friction that existed in the system.[^neylon]
+Thus started the Philosophical Transactions. His plan worked except for the
+money part, though he generally made just enough to cover his rent.
 
 As it turns out, many of these early decisions to create the journal and
 centralize scientific communications were driven simply by economics. It was
@@ -155,7 +153,7 @@ Andrea Rusnock said,
 > interaction that correspondence did. In short, the Society’s correspondence
 > encouraged a more participatory science.
 
-<figcaption>--- <a href="http://www.jstor.org/stable/4028081">Correspondence networks and the Royal Society, <span class="oldstyle">1700--1750</span></a></figcaption>
+<figcaption>--- <a href="http://www.jstor.org/stable/4028081">Correspondence networks and the Royal Society, 1700--1750</a></figcaption>
 </figure>
 
 Is there some way we could craft modern technology to reinforce the motives
@@ -184,7 +182,7 @@ used to be.
 
 Research cases is a vision for a new kind of research---a research that is more
 participative, similar in spirit to the networks of correspondence that existed
-during the [17]{.oldstyle}th and [18]{.oldstyle}th centuries.
+during the 17th and 18th centuries.
 
 # The future
 
@@ -239,20 +237,19 @@ We invite anyone interested [to participate](https://researchcases.org "Help out
     After Henry Oldenburg's prolific tenure as secretary of the Royal Society,
     several subsequent secretaries could not keep up with the volume and
     diversity of correspondence, so correspondence stagnated. James Jurin came
-    along in the [1720]{.oldstyle}s, and revived the society's correspondence.
-    He was so successful at this revival that he increasingly couldn't handle
-    the volume of correspondence. In [1752]{.oldstyle} the Committee of Papers
-    was established to spread the load across the institution. Thus were the
-    beginnings of peer review as we know it today.
+    along in the 1720s, and revived the society's correspondence. He was so
+    successful at this revival that he increasingly couldn't handle the volume
+    of correspondence. In 1752 the Committee of Papers was established to
+    spread the load across the institution. Thus were the beginnings of peer
+    review as we know it today.
 
-    [^rusnock]: Rusnock, Andrea. <a href="http://www.jstor.org/stable/4028081">Correspondence Networks and the Royal Society, [1700--1750]{.oldstyle}</a>. <cite>The British Journal for the History of Science</cite> vol. [32]{.oldstyle}, no. [2]{.oldstyle}, Did the Royal Society Matter in the Eighteenth Century? (June [1999]{.oldstyle}), pp. [155--69]{.oldstyle}.
+    [^rusnock]: Rusnock, Andrea. <a href="http://www.jstor.org/stable/4028081">Correspondence Networks and the Royal Society, 1700--1750</a>. <cite>The British Journal for the History of Science</cite> vol. 32, no. 2, Did the Royal Society Matter in the Eighteenth Century? (June 1999), pp. 155--69.
 
 [^neylon]:
 
     Cameron Neylon wrote [an excellent blog
     post](http://cameronneylon.net/blog/network-enabled-research/) about the
-    future of research that parallels Oldenburg's experience [350]{.oldstyle}
-    years earlier.
+    future of research that parallels Oldenburg's experience 350 years earlier.
 
 [^franklin]:
 
@@ -260,7 +257,7 @@ We invite anyone interested [to participate](https://researchcases.org "Help out
     beginning of the [Enlightenment], even to the open sharing of ideas,
     preliminary data, and thoughts that were not completely thought out, here's
     an excerpt from a letter from [Benjamin Franklin] to [Peter Collinson] in
-    [1753]{.oldstyle}:
+    1753:
 
     <figure class="bq grab" lang="en-GB">
 

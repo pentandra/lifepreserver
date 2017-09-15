@@ -34,11 +34,11 @@ surprising places. Let me share a few examples.
 
 # Some Good Examples
 
-When Jack Andraka was [15]{.oldstyle}, he set out to discover a way to detect
-early-stage pancreatic cancer. After reading hundreds of papers from [PubMed],
-he made a breakthrough during biology class. He took his discovery to the <span
-class="oldstyle">2012</span> Intel International Science and Engineering Fair,
-and the rest, as they say, [has been history][Andraka TEDx].
+When Jack Andraka was 15, he set out to discover a way to detect early-stage
+pancreatic cancer. After reading hundreds of papers from [PubMed], he made a
+breakthrough during biology class. He took his discovery to the 2012 Intel
+International Science and Engineering Fair, and the rest, as they say, [has
+been history][Andraka TEDx].
 
 <figure id="cancer-breakthrough" resource="#cancer-breakthrough" typeof="schema:VideoObject">
   <meta property="schema:bitrate" content="500k" />
@@ -116,9 +116,9 @@ systems, said the following about research:
 > something you wish to do, so simple that anyone can do research anywhere at
 > any time.
 
-<figcaption>--- Charles F. Kettering, from <a href="http://www.daytonhistorybooks.com/page/page/4920708.htm"><cite>Research is a State of Mind</cite></a>, from a series of talks given during the intermission of the General Motors Symphony of the Air radio show, December [5, 1943]{.oldstyle}.</span></figcaption>
+<figcaption>--- Charles F. Kettering, from <a href="http://www.daytonhistorybooks.com/page/page/4920708.htm"><cite>Research is a State of Mind</cite></a>, from a series of talks given during the intermission of the General Motors Symphony of the Air radio show, December 5, 1943.</span></figcaption>
 </figure>
-  
+
 Charles Kettering was an inventor with a practical focus---an applied
 researcher, but the same thing could be applied to [basic research] if we say
 that research is a simple, organized way of trying to discover something that

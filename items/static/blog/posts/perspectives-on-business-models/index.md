@@ -27,8 +27,8 @@ increasingly unsustainable.
 It's not that it doesn't cost businesses to host and disseminate these
 images---it's just that copying bits doesn't really provide lasting value to
 the customer.[^bits] At least not anymore. In this day and age it's
-commoditized and expected to be free. In the [90]{.oldstyle}'s, [when
-ancestry.com was founded](http://corporate.ancestry.com/about-ancestry/company-info/company-history/),
+commoditized and expected to be free. In the 90's, [when ancestry.com was
+founded](http://corporate.ancestry.com/about-ancestry/company-info/company-history/),
 the Internet was a great new thing, and companies could get away with charging
 people for access to things. Copies of software were sold, even though the
 incremental cost of copying the software was essentially zero.[^buy-software]
