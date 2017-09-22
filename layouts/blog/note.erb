@@ -9,17 +9,17 @@
             <li>
               <% if @item[:published_at] %>
                 <% if @item[:published_at] == @item[:created_at] %>
-                  Written and published on <time class="dt-published" property="dc:created schema:dateCreated schema:datePublished" datetime="<%= simple_date(@item[:created_at]) %>"><%= fancy_date(@item[:created_at]) %></time>
+                  Written and published on <time class="dt-published" property="dc:created schema:dateCreated schema:datePublished" datetime="<%= simple_date(:created_at) %>"><%= fancy_date(:created_at) %></time>
                 <% else %>
-                  Written starting <time property="dc:created schema:dateCreated" datetime="<%= simple_date(@item[:created_at]) %>"><%= fancy_date(@item[:created_at]) %></time> and published on <time class="dt-published" property="schema:datePublished" datetime="<%= simple_date(@item[:published_at]) %>"><%= fancy_date(@item[:published_at]) %></time>
+                  Written starting <time property="dc:created schema:dateCreated" datetime="<%= simple_date(:created_at) %>"><%= fancy_date(:created_at) %></time> and published on <time class="dt-published" property="schema:datePublished" datetime="<%= simple_date(:published_at) %>"><%= fancy_date(:published_at) %></time>
                 <% end %>
               <% else%>
-                Written starting <time property="dc:created" datetime="<%= simple_date(@item[:created_at]) %>"><%= fancy_date(@item[:created_at]) %></time> and not yet published
+                Written starting <time property="dc:created" datetime="<%= simple_date(:created_at) %>"><%= fancy_date(:created_at) %></time> and not yet published
               <% end %>
             </li>
             <% if @item[:updated_at] > @item[:created_at] %>
               <li>
-                Last Updated <time class="dt-updated" property="dc:modified schema:dateModified" datetime="<%= simple_date(@item[:updated_at]) %>"><%= fancy_date(@item[:updated_at]) %></time>
+                Last Updated <time class="dt-updated" property="dc:modified schema:dateModified" datetime="<%= simple_date(:updated_at) %>"><%= fancy_date(:updated_at) %></time>
               </li>
             <% end %>
           </ul>

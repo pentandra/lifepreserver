@@ -64,7 +64,7 @@ class OldStyleFigures < Nanoc::Filter
     doc = content =~ /<html[\s>]/ ? klass.parse(content) : klass.fragment(content)
     doc.traverse do |node|
       next unless node.text?
-      next if node.path[/\/(h|pre)/]
+      next if node.path[/\/(h[1-6]|pre)/]
 
       parent = node.parent
       next if ignore_classes.include?(parent['class'])

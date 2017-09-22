@@ -18,24 +18,24 @@ module LifePreserver
       end
     end
 
-    def date_for(item)
-      simple_date(item.fetch(:created_at))
+    def simple_date(date_sym, item: nil)
+      item ||= @item
+      strftime(date_sym, format: '%F', item: item)
     end
 
-    def last_modified_date_for(item)
-      simple_date(item.fetch(:updated_at))
+    def fancy_date(date_sym, item: nil)
+      item ||= @item
+      strftime(date_sym, format: '%B %d, %Y', item: item)
     end
 
-    def publication_date_for(item)
-      simple_date(item.fetch(:published_at))
+    def strftime(date_sym, format: '%FT%T%:z', item: nil)
+      item ||= @item
+      attribute_to_time(item.fetch(date_sym)).strftime(format)
     end
 
-    def simple_date(date)
-      attribute_to_time(date).strftime('%F')
-    end
-
-    def fancy_date(date)
-      attribute_to_time(date).strftime('%B %d, %Y')
+    def iso8601(date_sym, item: nil)
+      item ||= @item
+      attribute_to_time(@item.fetch(date_sym)).iso8601
     end
   end
 end
