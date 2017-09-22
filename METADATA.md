@@ -88,6 +88,7 @@ The kind of document. Currently we have the following kinds of documents:
 * `feed`
 * `redirect`: a permanent (301) redirect
 * `specification`
+* `event`
 
 ## Metadata relating to relationships between documents
 
