@@ -22,7 +22,7 @@ tags:
 The following is an expanded version of a presentation I prepared for the
 [FORCE2015]{.abbr} conference at the University of Oxford to give an
 introduction and background to what we are trying to accomplish with [Research
-Cases](https://researchcases.org).
+Cases].
 
 </div>
 
@@ -223,7 +223,7 @@ be part of the future of research:
   reasonings should be left to the judgement of the [Publick]{.sic}, to whom
   indeed it properly belongs.</q>'[^jurin]
 
-We invite anyone interested [to participate](https://researchcases.org "Help out with Research Cases").
+We invite anyone interested [to participate][research cases].
 
 [^codrington]: 
 
@@ -294,3 +294,4 @@ We invite anyone interested [to participate](https://researchcases.org "Help out
 [Immanuel Kant]: http://en.wikipedia.org/wiki/Immanuel_Kant "Immanuel Kant on Wikipedia"
 [not a paper]: http://faculty.education.illinois.edu/burbules/papers/paper.1.html "This is Not a Paper, written in 1995"
 [skywriting]: http://cogprints.org/1581/1/harnad90.skywriting.html
+[research cases]: /solutions/research-cases/
