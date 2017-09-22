@@ -258,7 +258,7 @@ product or service we are offering to the FORCE11 community? We could bring in
 the Good Relations ontology. 
 
 ``` {.turtle}
-<> a gr:Offer .
+<> a gr:Offer, schema:Offer .
 ```
 
 This gets across the idea that this proposal is something that is being freely
@@ -273,7 +273,7 @@ be included in the conference program, and that they will see as we see the
 value as we see it and place these things in a representative manner in the
 program.
 
-* schema.org
+* schema:Event
 
 * PAV
 
