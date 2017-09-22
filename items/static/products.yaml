@@ -1,0 +1,5 @@
+---
+title: Products
+kind: redirect
+redirect_to_id: '/static/solutions/index.*'
+---

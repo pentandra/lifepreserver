@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Based on https://gist.github.com/fracai/1597618 and the
 # `Nanoc::Filters::RelativizePaths filter, with improvements
 class AbsolutifyPaths < Nanoc::Filter
@@ -5,8 +7,6 @@ class AbsolutifyPaths < Nanoc::Filter
   include LifePreserver::LinkTo
 
   identifier :absolutify_paths
-
-  requires 'nokogiri'
 
   SELECTORS ||= ['*/@href', '*/@src', 'object/@data', 'param[@name="movie"]/@content', 'form/@action', 'video/@poster', 'comment()'].freeze
 
@@ -40,7 +40,7 @@ class AbsolutifyPaths < Nanoc::Filter
       absolutify_css(content, params)
     when :context
       absolutify_context(content, params)
-    when :html, :xml, :xhtml
+    when :html, :html5, :xml, :xhtml
       absolutify_html_like(content, params)
     else
       raise 'The absolutify_paths filter needs to know the type of content to ' \
@@ -55,7 +55,7 @@ class AbsolutifyPaths < Nanoc::Filter
   def absolutify_css(content, params)
     global = params.fetch(:global, false)
 
-    content.gsub(%r{url\((?<quote>['"]?)(?<path>/(?:[^/].*?)?)\k<quote>\)}) do
+    content.gsub(%r{url\((?<quote>['"]?)(?<path>(?:\.\.)?/(?:[^/].*?)?)\k<quote>\)}) do
       quote = Regexp.last_match(:quote)
       path = Regexp.last_match(:path)
       'url(' + quote + public_path_to(path, global: global) + quote + ')'
@@ -66,10 +66,10 @@ class AbsolutifyPaths < Nanoc::Filter
   def absolutify_context(content, params)
     global = params.fetch(:global, true)
 
-    content.gsub(%r{\\useURL\s*(?<identifier>\[.*?\]){1}\s*\[(?<target>/(?:[^/].*?)?)\]}) do
+    content.gsub(%r{\\useURL\s*(?<identifier>\[.*?\]){1}\s*\[(?<path>(?:\.\.)?/(?:[^/].*?)?)\]}) do
       identifier = Regexp.last_match(:identifier)
-      target = Regexp.last_match(:target)
-      '\useURL' + identifier + '[' + public_path_to(target, global: global) + ']'
+      path = Regexp.last_match(:path)
+      '\useURL' + identifier + '[' + public_path_to(path, global: global) + ']'
     end
   end
 
@@ -79,21 +79,40 @@ class AbsolutifyPaths < Nanoc::Filter
     type       = params.fetch(:type)
     global     = params.fetch(:global, false)
 
+    parser = parser_for(type)
+    content = fix_content(content, type)
+
+    nokogiri_process(content, selectors, namespaces, parser, type, global)
+  end
+
+  def parser_for(type)
     case type
     when :html
-      klass = ::Nokogiri::HTML
+      require 'nokogiri'
+      ::Nokogiri::HTML
+    when :html5
+      require 'nokogumbo'
+      ::Nokogiri::HTML5
     when :xml
-      klass = ::Nokogiri::XML
+      require 'nokogiri'
+      ::Nokogiri::XML
     when :xhtml
-      klass = ::Nokogiri::XML
+      require 'nokogiri'
+      ::Nokogiri::XML
+    end
+  end
+
+  def fix_content(content, type)
+    case type
+    when :xhtml
       # FIXME: cleanup because it is ugly
       # this cleans the XHTML namespace to process fragments and full
       # documents in the same way. At least, Nokogiri adds this namespace
       # if detects the `html` element.
       content = content.sub(%r{(<html[^>]+)xmlns="http://www.w3.org/1999/xhtml"}, '\1')
+    else
+      content
     end
-
-    nokogiri_process(content, selectors, namespaces, klass, type, global)
   end
 
   def nokogiri_process(content, selectors, namespaces, klass, type, global)
@@ -101,16 +120,21 @@ class AbsolutifyPaths < Nanoc::Filter
     namespaces = namespaces.reduce({}) { |new, (prefix, uri)| new.merge(prefix.to_s => uri) }
 
     doc = content =~ /<html[\s>]/ ? klass.parse(content) : klass.fragment(content)
-    selectors.map { |sel| "descendant-or-self::#{sel}" }.each do |selector|
-      doc.xpath(selector, namespaces).each do |node|
-        if node.name == 'comment'
-          nokogiri_process_comment(node, doc, selectors, namespaces, klass, type, global)
-        elsif path_is_absolutifiable?(node.content)
-          node.content = public_path_to(node.content, global: global)
-        end
+    selector = selectors.map { |sel| "descendant-or-self::#{sel}" }.join('|')
+    doc.xpath(selector, namespaces).each do |node|
+      if node.name == 'comment'
+        nokogiri_process_comment(node, doc, selectors, namespaces, klass, type, global)
+      elsif path_is_absolutifiable?(node.content)
+        node.content = public_path_to(node.content, global: global)
       end
     end
-    doc.send("to_#{type}")
+
+    case type
+    when :html5
+      doc.to_html.force_encoding(Encoding::UTF_8)
+    else
+      doc.send("to_#{type}")
+    end
   end
 
   def nokogiri_process_comment(node, doc, selectors, namespaces, klass, type, global)
@@ -126,6 +150,6 @@ class AbsolutifyPaths < Nanoc::Filter
   end
 
   def path_is_absolutifiable?(s)
-    !s.include?('://'.freeze)
+    !s.include?('://')
   end
 end

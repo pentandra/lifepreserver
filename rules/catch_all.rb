@@ -4,6 +4,8 @@ compile '/**/*.erb' do
   filter :erb, @config[:erb]
   filter :spellchecker, type: :html
   filter :abbreviate, type: :html
+  filter :old_style_figures, type: :html
+  filter :robust_anchors
   layout '/default.*'
   filter :rubypantsunicode
   filter :cache_buster if @config[:production]
@@ -13,6 +15,8 @@ end
 compile '/**/*.html' do
   filter :spellchecker, type: :html
   filter :abbreviate, type: :html
+  filter :old_style_figures, type: :html
+  filter :robust_anchors
   layout '/default.*'
   filter :rubypantsunicode
   filter :cache_buster if @config[:production]

@@ -65,11 +65,16 @@ The name of the author.
 
 The kind of document. Currently we have the following kinds of documents:
 
-* `article`
-* `proposal`
+* `article`: a formal, scholarly document that can have multiple authors
+* `essay`: a semiformal document with one author, higher quality
+* `blogpost`: an informal document with one author
+* `note`: a short statement by one author, like a tweet
+* `presentation`
+* `proposal`: a formal proposal from the company
+* `abstract`: a short proposal
 * `project`
 * `benefit-report`
-* `tag`
+* `tag`: the tag itself (a controlled concept)
 * `tag-page` (distinct from tag as a concept)
 * `author-page`
 * `archive-page`
@@ -79,6 +84,11 @@ The kind of document. Currently we have the following kinds of documents:
 * `base-dictionary`
 * `extra-dictionary`
 * `acronym-dictionary`
+* `concept`
+* `feed`
+* `redirect`: a permanent (301) redirect
+* `specification`
+* `event`
 
 ## Metadata relating to relationships between documents
 
@@ -96,3 +106,7 @@ This document is part of another document.
 
 The item to which this proposal is in reply. Most of the time, this should
 resolve to a document in the archive.
+
+### `redirect_to_id`
+
+The item to which this item should be redirected in some way.

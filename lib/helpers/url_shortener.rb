@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'shortly'
 require 'yaml/store'
 require_relative 'text'

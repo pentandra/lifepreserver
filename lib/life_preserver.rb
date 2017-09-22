@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module LifePreserver
 end
 
@@ -13,7 +15,9 @@ include Nanoc::Helpers::CacheBusting
 include Nanoc::Helpers::Filtering
 include ERB::Util
 
+include LifePreserver::Articles
 include LifePreserver::Blogging
+include LifePreserver::Weblog
 include LifePreserver::Dates
 include LifePreserver::Company
 include LifePreserver::UrlShortener
@@ -30,3 +34,4 @@ include LifePreserver::AtomFeed
 include LifePreserver::Dictionaries
 include LifePreserver::Dependencies
 include LifePreserver::Proposals
+include LifePreserver::ChildParent

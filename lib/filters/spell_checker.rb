@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class SpellChecker < Nanoc::Filter
   require_relative '../helpers/dictionaries'
   include LifePreserver::Dictionaries
@@ -6,7 +8,7 @@ class SpellChecker < Nanoc::Filter
 
   requires 'set', 'nokogiri'
 
-  IGNORE_CLASSES ||= Set.new(%w(domainname filename foreign handle identifier prefix projectname sic uri))
+  IGNORE_CLASSES ||= Set.new(%w(address domainname filename foreign handle identifier prefix projectname sic term uri)).freeze
 
   def run(content, params = {})
     case params[:type]
@@ -26,19 +28,32 @@ class SpellChecker < Nanoc::Filter
     namespaces = params.fetch(:namespaces, {})
     type       = params.fetch(:type)
 
+    parser = parser_for(type)
+    content = fix_content(content, type)
+
+    nokogiri_process(content, ignore_classes, namespaces, parser, type)
+  end
+
+  def parser_for(type)
     case type
     when :html
-      klass = ::Nokogiri::HTML
+      ::Nokogiri::HTML
+    when :xml, :xhtml
+      ::Nokogiri::XML
+    end
+  end
+
+  def fix_content(content, type)
+    case type
     when :xhtml
-      klass = ::Nokogiri::XML
       # FIXME: cleanup because it is ugly
       # this cleans the XHTML namespace to process fragments and full
       # documents in the same way. At least, Nokogiri adds this namespace
       # if detects the `html` element.
       content = content.sub(%r{(<html[^>]+)xmlns="http://www.w3.org/1999/xhtml"}, '\1')
+    else
+      content
     end
-
-    nokogiri_process(content, ignore_classes, namespaces, klass, type)
   end
 
   def nokogiri_process(content, ignore_classes, namespaces, klass, type)
@@ -48,6 +63,7 @@ class SpellChecker < Nanoc::Filter
     doc = content =~ /<html[\s>]/ ? klass.parse(content) : klass.fragment(content)
     doc.traverse do |node|
       next unless node.text?
+      next if node.path['/pre']
 
       parent = node.parent
       if parent.element?
@@ -58,7 +74,7 @@ class SpellChecker < Nanoc::Filter
         depend_on_attributes(dic.dependencies)
 
         checked_text = node.text.dup.gsub(/([[:word:]]+(?:['’][[:word:]]+)?)/) do |word|
-          if dic.valid?(word) || (node.previous && dic.valid?(node.previous.text + word))
+          if dic.valid?(word) || (node.previous && dic.valid?(node.previous.text + word)) || /\d+['’]?s\z/.match(word)
             word
           else
             "<mark class=\"misspelled\">#{word}</mark>"

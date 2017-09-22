@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'active_support/core_ext/hash/keys'
 require 'active_support/core_ext/string/inflections'
 require 'rdf'
@@ -8,10 +10,6 @@ Class.new(Nanoc::DataSource) do
 
   def up
     @voaf_metadata ||= YAML.load_file('var/voaf_metadata.yaml')
-  end
-
-  def down
-    #@voaf_metadata = nil
   end
 
   def items

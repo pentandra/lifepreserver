@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'active_support/core_ext/string/output_safety'
 
 require_relative 'url_shortener'
@@ -15,16 +17,26 @@ module LifePreserver
     end
 
     def public_link_to(text, target, attributes = {})
-      # Pull out the global flag
-      global = attributes.delete(:global)
+      # Pull out main path attributes
+      path_attributes = {
+        rep: attributes.delete(:rep),
+        snapshot: attributes.delete(:snapshot),
+        global: attributes.delete(:global)
+      }.compact
+      
+      path = public_path_to(target, path_attributes)
+      path.chop! if attributes.delete(:concept_uri) && path.end_with?('/')
 
-      # Join attributes
+      # Pull out fragment identifier, if given
+      fragment = '#' + attributes.delete(:fragment_id) if attributes[:fragment_id]
+
+      # Join the rest of the attributes
       attributes = attributes.reduce('') do |memo, (key, value)|
         memo + key.to_s + '="' + h(value) + '" '
       end
 
       # Create link
-      %(<a #{attributes}href="#{h public_path_to(target, global: global)}">#{html_escape_once(text)}</a>)
+      %(<a #{attributes}href="#{h path}#{h fragment}">#{html_escape_once(text)}</a>)
     end
 
     alias link_to public_link_to

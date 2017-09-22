@@ -6,10 +6,10 @@ compile %r{/static/company/benefit-reports/\d{4}/index\.md} do
     { from: :markdown, to: :html5 },
     { base_header_level: 2 },
     :section_divs,
-    :smart,
   ]
   filter :spellchecker, type: :html
   filter :abbreviate, type: :html
+  filter :robust_anchors
   layout '/benefit_reports/default.*'
   filter :rubypantsunicode
   filter :cache_buster if @config[:production]
@@ -20,7 +20,7 @@ compile %r{/static/company/benefit-reports/(\d{4})/index\.md}, rep: :pdf_letter 
   filter :erb
   filter :pandoc, args: [
     { from: :markdown, to: :context },
-    :chapters,
+    { top_level_division: :chapter },
   ]
   filter :absolutify_paths, type: :context
   layout '/benefit_reports/report.*'
@@ -33,7 +33,7 @@ compile %r{/static/company/benefit-reports/(\d{4})/index\.md}, rep: :pdf_a4 do |
   filter :erb
   filter :pandoc, args: [
     { from: :markdown, to: :context },
-    :chapters
+    { top_level_division: :chapter },
   ]
   filter :absolutify_paths, type: :context
   layout '/benefit_reports/report.*'

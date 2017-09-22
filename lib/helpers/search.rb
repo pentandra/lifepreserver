@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'json'
 require 'nokogiri'
 require_relative 'link_to'

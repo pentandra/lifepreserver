@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ImageOptimizerFilter < Nanoc::Filter
   identifier :image_optimizer
   type :binary

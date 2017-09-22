@@ -4,25 +4,38 @@ ALICE: A Large Ion Collider Experiment
 API: Application Programming Interface
 ARC: Australian Research Council
 ARIA: Accessible Rich Internet Applications
+ARPANET: Advanced Research Projects Agency Network
+ASCII: American Standard Code for Information Interchange
+B2B: Business To Business
 BCG: Board for Certification of Genealogists
+BGP: Border Gateway Protocol
+BIBFRAME: Bibliographic Framework
+BIBO: Bibliographic Ontology
 BMW: Bayerische MotorWerke (Bavarian Motor Works)
+BYOS: Bring Your Own System
+CAP: Consistency, Availability, Partition tolerance
+CASRAI: Consortium Advancing Standards in Research Administration Information
 CC-BY-NC: Creative Commons Attribution-NonCommercial
 CC-BY-SA: Creative Commons Attribution-ShareAlike
 CC-BY: Creative Commons Attribution
 CC0: Creative Commons Zero (Public Domain Dedication)
 CC: Creative Commons
 CERN: 'Organisation européenne pour la recherche nucléaire (English: European Organization for Nuclear Research)'
+CHF: Swiss Francs
 CSS3: Cascading Style Sheets Level 3
 CSS: Cascading Style Sheets
+CV: curriculum vitae
 DARPA: Defence Advanced Research Projects Agency
 DCMI: Dublin Core Metadata Initiative
 DIO: Design Intent Ontology
 DMI: Dynamic Machine Interface
 DMI: Dynamic Machine Interface
+DNS: Domain Name System
 DOAP: Description Of A Project
-DOI: Digital Object Identifier
+DOI: Digital Object Identifier (DOI®)
 DSL: Domain Specific Language
 DoCO: Document Components Ontology
+ENS: Ethereum Name Service
 EU: European Union
 FAIR: Findable, Accessible, Interoperable, Reusable
 FB: Facebook
@@ -32,6 +45,7 @@ FHISO: Family History International Standards Organization
 FOAF: Friend Of A Friend
 FRBR: Functional Requirements for Bibliographic Records
 FRPAA: Federal Research Public Access Act
+FTP: File Transfer Protocol
 FaBiO: FRBR-aligned Bibliographic Ontology
 GEDCOM: Genealogical Data Communication
 GNN: Global Network Navigator
@@ -42,9 +56,11 @@ HTML5: HyperText Markup Language (5th major revision)
 HTML: HyperText Markup Language
 HTTP: HyperText Transfer Protocol
 IBIS: Issue-Based Information System
+ICANN: Internet Corporation for Assigned Names and Numbers
 IEC: International Electrotechnical Commission
 IETF: Internet Engineering Task Force
 IP: Internet Protocol
+IPFS: Inter-Planetary File System
 IRI: Internationalized Resource Identifier
 ISBN: International Standard Book Number
 ISO: International Organization for Standardization
@@ -52,6 +68,8 @@ JSON-LD: JavaScript Object Notation for Linked Data
 JSON: JavaScript Object Notation
 LD: Linked Data
 LHC: Large Hadron Collider
+LOCKSS: Lots Of Copies Keeps Stuff Safe
+LSID: Life Science Identifier
 NASA: National Aeronautics and Space Administration
 NGS: National Genealogical Society
 NHMRC: National Health and Medical Research Council (Australia)
@@ -63,10 +81,15 @@ OMB: Office of Management and Budget
 OSS: Open-Source Software
 OWL2: Web Ontology Language 2
 OWL: Web Ontology Language
+P2P: Peer-to-Peer
+PACELC: In case of network partitioning (P) in a distributed computer system, one has to choose between availability (A) and consistency (C) (as per the CAP theorem), but else (E), even when the system is running normally in the absence of partitions, one has to choose between latency (L) and consistency (C).
+PAV: Provenance, Authoring and Versioning
 PDF: Portable Document Format
 PNG: Portable Network Graphics
+PROV-O: The PROV Ontology
 PROV: W3C PROVenance Interchange
 PS: PostScript
+PURL: Persistent URL
 PhD: Doctor of Philosophy
 RDF11: RDF 1.1
 RDF: Resource Description Framework
@@ -76,6 +99,7 @@ REST: REpresentational State Transfer
 RFC1738: RFC 1738
 RFC2119: RFC 2119
 RFC3987: RFC 3987
+RFC: Request For Comments
 RIO: Research Intent Ontology
 ROC: Open Research Core
 ROSC: Research Object for Scholarly Communication
@@ -89,20 +113,25 @@ SPAR: Semantic Publishing and Referencing Ontologies
 SPARC: Scholarly Publishing and Academic Resources Coalition
 SSE: Social and Solidarity Economy
 SVG: Scalable Vector Graphics
+SaaS: Software as a Service
 SciELO: Scientific Electronic Library Online
 TBD: To Be Determined
 TCP: Transmission Control Protocol
-TL;DR: Too Long; Didn't Read
+TL;DR: "Too Long; Didn't Read"
 UIDAN: Utah Individual Development Account Network
 UK: United Kingdom
-URI: Uniform Resource Identifier
+URI: Universal Resource Identifier
 URL: Uniform Resource Locator
 US: United States
 USA: United States of America
+UTF-8: Unicode Transformation Format-8
+UTF: Unicode Transformation Format
 VANN: Vocabulary for ANNotating vocabulary descriptions
 VCS: Version Control System
+VIVO-ISF: VIVO-Integrated Semantic Framework
 VoID: Vocabulary of Interlinked Datasets
 W3C: World Wide Web Consortium
 XHTML: eXtensible HyperText Markup Language
 XML: eXtensible Markup Language
 XMLSCHEMA11: XML Schema 1.1
+XRI: Extensible Resource Identifier

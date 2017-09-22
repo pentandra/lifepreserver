@@ -5,12 +5,12 @@ types {
     application/atom+xml                  atom;
     application/json                      json map topojson;
     application/ld+json                   jsonld;
+    application/rdf+xml                   rdf owl;
     application/rss+xml                   rss;
     application/vnd.geo+json              geojson;
     application/xml                       xml;
-    application/rdf+xml                   rdf;
-    text/turtle                           ttl; 
     text/n3                               n3;
+    text/turtle                           ttl;
   
   # JavaScript
 
@@ -129,6 +129,7 @@ types {
     text/vnd.sun.j2me.app-descriptor      jad;
     text/vnd.wap.wml                      wml;
     text/vtt                              vtt;
+    text/srt                              srt;
     text/x-component                      htc;
 
 }

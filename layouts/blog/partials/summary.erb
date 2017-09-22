@@ -1,9 +1,9 @@
 <div property="schema:itemListElement" typeof="schema:ListItem" class="noted section">
-  <meta property="schema:position" content="<%= "#{position + 1}" %>" />
-  <article property="schema:item" resource="<%= path_to(item) %>#blogpost" typeof="schema:BlogPost" class="excerpt">
+  <meta property="schema:position" content="<%= "#{position}" %>" />
+  <article property="schema:item" resource="<%= "#{path_to(item)}##{item.fetch(:kind)}" %>" typeof="<%= typeof(item) %>" class="excerpt">
     <div class="bd">
       <h2 class="bigger">
-        <a property="schema:url" rel="bookmark" title="Full article" href="<%= path_to(item) %>"><span property="dc:title schema:name"><%= item[:title] %></span></a>
+        <a property="schema:url" rel="bookmark" title="View <%= rdfs_label(typeof(item)) %>" href="<%= path_to(item) %>"><span property="dc:title schema:name"><%= item[:title] %></span></a>
       </h2>
       <p property="schema:description"><%= item[:description] %></p>
     </div>

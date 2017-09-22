@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CompassWithSass < Nanoc::Filter
   identifier :compass
 

@@ -9,11 +9,11 @@ px      68    160    252    344    436    */
 $less-outer-margin: 22px;
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-
   .content {
-    @include grid(5); 
+    @include grid(5);
+
     padding: 0 $less-outer-margin;
-  } 
+  }
 
   .ext {
     margin-left: -$less-outer-margin;
@@ -30,7 +30,6 @@ $less-outer-margin: 22px;
   }
 
   .aside {
-
     .banner {
       margin-left: -$less-outer-margin;
       padding-left: $less-outer-margin;
@@ -38,7 +37,6 @@ $less-outer-margin: 22px;
   }
 
   .menu2 {
-
     ul li {
       width: (436px - $less-gutter-width) / 2;
       float: left;
@@ -50,7 +48,6 @@ $less-outer-margin: 22px;
   }
 
   .bl {
-
     .aside {
       float: left;
     }
@@ -73,16 +70,19 @@ $less-outer-margin: 22px;
   // Layout classes
 
   .motto {
-
     h1 {
       float: right;
+
       @include grid(3);
+
       margin-top: 0;
     }
 
     p {
       float: left;
+
       @include grid(2);
+
       text-align: right;
       margin-top: 5px;
     }
@@ -91,10 +91,12 @@ $less-outer-margin: 22px;
   .theteam {
     $theteam-height: $base-line-height * 12;
     $theteam-image-height: 290px;
+
     @include grid(5);
+
     height: $theteam-image-height;
     margin-top: $theteam-height - $theteam-image-height;
-    background-image: url('/images/team-436x580.jpg');
+    background-image: url("/images/team-436x580.jpg");
     background-position: 0 0;
 
     &:hover {
@@ -114,13 +116,12 @@ $less-outer-margin: 22px;
   .icons .normal {
     display: none;
   }
-    
-  .contentinfo {
 
+  .contentinfo {
     .bd {
-      
       .aside {
         @include grid(2);
+
         float: right;
       }
 
@@ -130,36 +131,37 @@ $less-outer-margin: 22px;
     }
   }
 
-
   //
   // Background-image classes
 
   .geungle-logo {
     @include grid(5);
+
     height: 130px;
-    background-image: url('/images/geungle-logo.png');
+    background-image: url("/images/geungle-logo.png");
     background-size: 100%;
   }
 
   .logotype {
     @include grid(5);
+
     height: 58px;
-    background-image: url('/images/pentandra-logotype_436x58.png');
+    background-image: url("/images/pentandra-logotype_436x58.png");
   }
 
   .rev .logotype, .grab .logotype {
-    background-image: url('/images/pentandra-logotype-reverse_436x58.png');
+    background-image: url("/images/pentandra-logotype-reverse_436x58.png");
   }
 
   .process {
     @include grid(5);
+
     height: 328px;
-    background-image: url('/images/research-process_3col@2x.png');
+    background-image: url("/images/research-process_3col@2x.png");
     background-size: auto 100%;
   }
 
   .question {
-
     &:before {
       left: 125px;
     }
@@ -167,8 +169,9 @@ $less-outer-margin: 22px;
 
   .zeugma {
     @include grid(5);
+
     height: 412px;
-    background-image: url('/images/zeugma.jpg?v2');
+    background-image: url("/images/zeugma.jpg?v2");
     background-size: 100%;
   }
 }

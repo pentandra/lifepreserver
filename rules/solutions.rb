@@ -1,16 +1,16 @@
 # Solutions
 
-compile '/static/solutions/proposals/*/index\.md' do
+compile '/static/solutions/proposals/**/index.md' do
   filter :erb, @config[:erb]
   filter :pandoc, args: [
     { from: :markdown, to: :html5 },
     { base_header_level: 2 },
     :section_divs,
-    :normalize,
-    :smart,
   ]
   filter :spellchecker, type: :html
   filter :abbreviate, type: :html
+  filter :old_style_figures, type: :html
+  filter :robust_anchors
   layout '/proposals/default.erb'
   filter :rubypantsunicode
   filter :cache_buster if @config[:production]
@@ -18,41 +18,40 @@ compile '/static/solutions/proposals/*/index\.md' do
   write item.identifier.without_ext.sub('/proposals', '') + '.html'
 end
 
-compile '/static/solutions/proposals/*/index\.md', rep: :pdf_letter do
+compile '/static/solutions/proposals/**/index.md', rep: :pdf_letter do
   filter :erb
   filter :pandoc, args: [
     { from: :markdown, to: :context },
-    :chapters,
-    :normalize,
-    :smart,
+    { top_level_division: :chapter },
   ]
   filter :abbreviate, type: :context
   filter :absolutify_paths, type: :context
   layout '/proposals/default.tex'
+  filter :fix_context_attribution
   snapshot :context, path: File.dirname(item.identifier.to_s).sub('/proposals', '') + "/#{@item.fetch(:title).to_slug('_')}_proposal.tex" unless @config[:production]
-  filter :context2pdf, @config.fetch(:context2pdf, {}).merge(mode: ['identifiable', proposal_status(@item)])
+  filter :context2pdf, @config.fetch(:context2pdf, {}).merge(mode: ['identifiable', proposal_status(@item), @item[:kind]])
   write File.dirname(item.identifier.to_s).sub('/proposals', '') + "/#{@item.fetch(:title).to_slug('_')}_proposal.pdf"
 end
 
-compile '/static/solutions/proposals/*/index\.md', rep: :pdf_a4 do
+compile '/static/solutions/proposals/**/index.md', rep: :pdf_a4 do
   filter :erb
   filter :pandoc, args: [
     { from: :markdown, to: :context },
-    :chapters,
-    :normalize,
-    :smart,
+    { top_level_division: :chapter },
   ]
   filter :abbreviate, type: :context
   filter :absolutify_paths, type: :context
   layout '/proposals/default.tex'
+  filter :fix_context_attribution
   snapshot :context, path: File.dirname(item.identifier.to_s).sub('/proposals', '') + "/#{@item.fetch(:title).to_slug('_')}_proposal_a4.tex" unless @config[:production]
-  filter :context2pdf, @config.fetch(:context2pdf, {}).merge(mode: ['identifiable', proposal_status(@item), 'european'])
+  filter :context2pdf, @config.fetch(:context2pdf, {}).merge(mode: ['identifiable', proposal_status(@item), @item[:kind], 'european'])
   write File.dirname(item.identifier.to_s).sub('/proposals', '') + "/#{@item.fetch(:title).to_slug('_')}_proposal_a4.pdf"
 end
 
 # Specification documents
 
 compile '/static/solutions/specifications/**/*.html' do
+  filter :erb
 end
 
 layout '/specifications/vocabulary.*', :rdf_distiller, format: :html
@@ -76,6 +75,10 @@ compile '/static/solutions/specifications/**/*.ttl', rep: :html do
   filter :cache_buster if @config[:production]
   filter :html5small if @config[:production]
   write item.identifier.without_ext.sub('/specifications', '') + '.html'
+end
+
+route %r{/static/solutions(/(proposals|projects|specifications))/.*\.erb$} do |solution_type, _|
+  item.identifier.without_ext.sub(solution_type, '') + '.html'
 end
 
 route %r{/static/solutions(/(proposals|projects|specifications))/.*} do |solution_type, _|

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'active_support/core_ext/hash/keys'
 require 'active_support/core_ext/string/inflections'
 
@@ -7,11 +9,6 @@ Class.new(Nanoc::DataSource) do
   def up
     @tags = YAML.load_file('etc/tags.yaml').map(&:symbolize_keys)
     @additional_tag_data = YAML.load_file('var/additional_tag_data.yaml')
-  end
-
-  def down
-    #@tags = nil
-    #@additional_tag_data = nil
   end
 
   def items

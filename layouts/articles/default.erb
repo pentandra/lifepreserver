@@ -1,0 +1,39 @@
+<% render('/default.*') do %>
+  <article class="group proposal" resource="#article" typeof="schema:ScholarlyArticle" property="schema:mainEntity">
+    <header class="section">
+      <h1 property="dc:title schema:headline"><%= @item[:title] %></h1>
+      <div class="meta">
+        <dl id="document-id" class="group">
+          <dt class="aside"><div class="close">Document ID</div></dt>
+          <dd class="bd"><a class="uri" href="<%= path_to(@item, global: true) %>"><%= path_to(@item, global: true) %></a></dd>
+        </dl>
+
+        <% if @item.key?(:in_reply_to_id) %>
+          <dl id="document-in-reply-to" class="group">
+            <% in_reply_to = @items[@item.fetch(:in_reply_to_id)] %>
+            <dt class="aside"><div class="close">In reply to</div></dt>
+            <dd class="bd"><a property="sioc:reply_of" href="<%= in_reply_to.fetch(:uri) %>"><%= in_reply_to.fetch(:title) %></a></dd>
+          </dl>
+        <% end %>
+
+        <dl id="document-published" class="group">
+          <dt class="aside"><div class="close">Published</div></dt>
+          <dd class="bd"><time property="schema:datePublished" datetime="<%= simple_date(:created_at) %>"><%= ndashed(simple_date(:created_at)) %></time></dd>
+        </dl>
+
+        <% if @item[:updated_at] > @item[:created_at] then %>
+          <dl id="document-modified" class="group">
+            <dt class="aside"><div class="close">Modified</div></dt>
+            <dd class="bd"><time property="schema:dateModified" datetime="<%= simple_date(:updated_at) %>"><%= ndashed(simple_date(:updated_at)) %></time></dd>
+          </dl>
+        <% end %>
+
+      </div>
+      <meta property="schema:copyrightYear" datatype="xsd:gYear" content="<%= @item[:created_at].year %>" />
+      <link property="rdfa:copy" resource="pentandra-website:license" />
+    </header>
+    <div class="bd numbered">
+      <%= yield %>
+    </div>
+  </article>
+<% end %>

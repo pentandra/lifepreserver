@@ -8,16 +8,11 @@
 - tag: Decisions
   uri: http://dbpedia.org/resource/Decision-making
 
-- tag: Defining the Commons
-
 - tag: Design
   uri: http://dbpedia.org/resource/Design
 
 - tag: Enlightenment
   uri: http://dbpedia.org/resource/Age_of_Enlightenment
-
-- tag: Essay
-  uri: http://dbpedia.org/resource/Essay
 
 - tag: FORCE11
 

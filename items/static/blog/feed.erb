@@ -1,10 +1,12 @@
 ---
+title: The Pentandra Blog
 is_hidden_from_human_search: true
+kind: feed
 ---
 <%= atom_feed title:         @config[:blog][:title],
               author_name:   @config[:blog][:author_name],
               author_uri:    @config[:blog][:author_uri],
-              articles:      published_blog_posts,
+              entries:       published_weblog,
               content_proc:  ->(post) { post.compiled_content(rep: :feed_entry) },
               excerpt_proc:  ->(post) { post_summary(post.reps.fetch(:feed_entry)) },
               limit:         10

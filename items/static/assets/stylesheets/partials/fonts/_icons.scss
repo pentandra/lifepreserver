@@ -1,10 +1,7 @@
 @font-face {
   font-family: $icon-font-family;
-  src: url('/fonts/lifepreserver.eot?ad7kd0');
-  src: url('/fonts/lifepreserver.eot?ad7kd0#iefix') format('embedded-opentype'),
-    url('/fonts/lifepreserver.ttf?ad7kd0') format('truetype'),
-    url('/fonts/lifepreserver.woff?ad7kd0') format('woff'),
-    url('/fonts/lifepreserver.svg?ad7kd0#lifepreserver') format('svg');
+  src: url("/fonts/lifepreserver.eot?ad7kd0");
+  src: url("/fonts/lifepreserver.eot?ad7kd0#iefix") format("embedded-opentype"), url("/fonts/lifepreserver.ttf?ad7kd0") format("truetype"), url("/fonts/lifepreserver.woff?ad7kd0") format("woff"), url("/fonts/lifepreserver.svg?ad7kd0#lifepreserver") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -26,476 +23,638 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.small [class^="icon-"], .small [class*=" icon-"] {
-  //  margin-right: 0.15em;
+.small {
+  [class^="icon-"], [class*=" icon-"] {
+    //  margin-right: 0.15em;
+  }
 }
 
-.icons [class^="icon-"], .icons [class*=" icon-"] {
-  font-size: $base-line-height;
-  vertical-align: middle;
+.icons {
+  [class^="icon-"], [class*=" icon-"] {
+    font-size: $base-line-height;
+    vertical-align: middle;
+  }
 }
 
-.big.icons [class^="icon-"], .big.icons [class*=" icon-"] {
-  font-size: $base-line-height * 2;
-  line-height: 1.1;
+.big.icons {
+  [class^="icon-"], [class*=" icon-"] {
+    font-size: $base-line-height * 2;
+    line-height: 1.1;
+  }
+}
+
+a.anchor {
+  [class^="icon-"], [class*=" icon-"] {
+    position: relative;
+    left: 0.25em;
+    font-size: 75%;
+  }
 }
 
 .icon-phone:before {
   content: "\e922";
 }
+
 .icon-directions:before {
   content: "\e900";
 }
+
 .icon-mail:before {
   content: "\e605";
 }
+
 .icon-vcard:before {
   content: "\e901";
 }
+
 .icon-export:before {
   content: "\e606";
 }
+
 .icon-compass:before {
   content: "\e902";
 }
+
 .icon-target:before {
   content: "\e903";
 }
+
 .icon-share:before {
   content: "\e904";
 }
+
 .icon-heart {
-  font-size: 1.1em; // bust out with love
+  font-size: 1.1em;
+
+  // bust out with love
 
   &:before {
     content: "\e607";
   }
 }
+
 .icon-heart2:before {
   content: "\e929";
 }
+
 .icon-star:before {
   content: "\e608";
 }
+
 .icon-star2:before {
   content: "\e928";
 }
+
 .icon-thumbsup:before {
   content: "\e92a";
 }
+
 .icon-thumbsdown:before {
   content: "\e92b";
 }
+
 .icon-chat:before {
   content: "\e609";
 }
+
 .icon-comment:before {
   content: "\e60a";
 }
+
 .icon-popup:before {
   content: "\e907";
 }
+
 .icon-search:before {
   content: "\e60b";
 }
+
 .icon-link:before {
   content: "\e908";
 }
+
 .icon-cog:before {
   content: "\e909";
 }
+
 .icon-megaphone:before {
   content: "\e90a";
 }
+
 .icon-graduation:before {
   content: "\e60c";
 }
+
 .icon-book:before {
   content: "\e60d";
 }
+
 .icon-newspaper:before {
   content: "\e90b";
 }
+
 .icon-eye:before {
   content: "\e90c";
 }
+
 .icon-clock:before {
   content: "\e90d";
 }
+
 .icon-microphone:before {
   content: "\e90e";
 }
+
 .icon-calendar:before {
   content: "\e90f";
 }
+
 .icon-bolt:before {
   content: "\e910";
 }
+
 .icon-thunder:before {
   content: "\e911";
 }
+
 .icon-network:before {
   content: "\e923";
 }
+
 .icon-rocket:before {
   content: "\e912";
 }
+
 .icon-earth:before {
   content: "\e905";
 }
+
 .icon-keyboard:before {
   content: "\e906";
 }
+
 .icon-code:before {
   content: "\e913";
 }
+
 .icon-screen:before {
   content: "\e92c";
 }
+
 .icon-light-bulb:before {
   content: "\e60e";
 }
+
 .icon-rss:before {
   content: "\e600";
 }
+
 .icon-signal:before {
   content: "\e60f";
 }
+
 .icon-info:before {
   content: "\e610";
 }
+
 .icon-help:before {
   content: "\e611";
 }
+
 .icon-warning:before {
   content: "\e914";
 }
+
 .icon-layout:before {
   content: "\e924";
 }
+
 .icon-list:before {
   content: "\e925";
 }
+
 .icon-text:before {
   content: "\e915";
 }
+
 .icon-text2:before {
   content: "\e916";
 }
+
 .icon-document:before {
   content: "\e926";
 }
+
 .icon-install:before {
   content: "\e917";
 }
+
 .icon-cloud:before {
   content: "\e612";
 }
+
 .icon-upload:before {
   content: "\e918";
 }
+
 .icon-book2:before {
   content: "\e919";
 }
+
 .icon-resize-enlarge:before {
   content: "\e91a";
 }
+
 .icon-resize-shrink:before {
   content: "\e91b";
 }
+
 .icon-flow-cascade:before {
   content: "\e91c";
 }
+
 .icon-flow-branch:before {
   content: "\e91d";
 }
+
 .icon-flow-tree:before {
   content: "\e91e";
 }
+
 .icon-flow-line:before {
   content: "\e91f";
 }
+
 .icon-flow-parallel:before {
   content: "\e920";
 }
+
 .icon-cc:before {
   content: "\e614";
 }
+
 .icon-cc-by:before {
   content: "\e615";
 }
+
 .icon-cc-nc:before {
   content: "\e616";
 }
+
 .icon-cc-sa:before {
   content: "\e617";
 }
+
 .icon-cc-nd:before {
   content: "\e618";
 }
+
 .icon-cc-pd:before {
   content: "\e619";
 }
+
 .icon-cc-zero:before {
   content: "\e61a";
 }
+
 .icon-cc-share:before {
   content: "\e61e";
 }
+
 .icon-cc-share2:before {
   content: "\e61f";
 }
+
 .icon-github2:before {
   content: "\e921";
 }
+
 .icon-github:before {
   content: "\e61b";
 }
+
 .icon-flickr:before {
   content: "\e927";
 }
+
 .icon-twitter:before {
   content: "\e601";
 }
+
 .icon-facebook:before {
   content: "\e602";
 }
+
 .icon-googleplus:before {
   content: "\e603";
 }
+
 .icon-pinterest:before {
   content: "\e61c";
 }
+
 .icon-linkedin:before {
   content: "\e604";
 }
 
 .lt-ie8 {
-
   .icon-phone {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe922;');
   }
+
   .icon-directions {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe900;');
   }
+
   .icon-mail {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe605;');
   }
+
   .icon-vcard {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe901;');
   }
+
   .icon-export {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe606;');
   }
+
   .icon-compass {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe902;');
   }
+
   .icon-target {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe903;');
   }
+
   .icon-share {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe904;');
   }
+
   .icon-heart {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe607;');
   }
+
   .icon-heart2 {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe929;');
   }
+
   .icon-star {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe608;');
   }
+
   .icon-star2 {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe928;');
   }
+
   .icon-thumbsup {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe92a;');
   }
+
   .icon-thumbsdown {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe92b;');
   }
+
   .icon-chat {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe609;');
   }
+
   .icon-comment {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe60a;');
   }
+
   .icon-popup {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe907;');
   }
+
   .icon-search {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe60b;');
   }
+
   .icon-link {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe908;');
   }
+
   .icon-cog {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe909;');
   }
+
   .icon-megaphone {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe90a;');
   }
+
   .icon-graduation {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe60c;');
   }
+
   .icon-book {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe60d;');
   }
+
   .icon-newspaper {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe90b;');
   }
+
   .icon-eye {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe90c;');
   }
+
   .icon-clock {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe90d;');
   }
+
   .icon-microphone {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe90e;');
   }
+
   .icon-calendar {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe90f;');
   }
+
   .icon-bolt {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe910;');
   }
+
   .icon-thunder {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe911;');
   }
+
   .icon-network {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe923;');
   }
+
   .icon-rocket {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe912;');
   }
+
   .icon-earth {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe905;');
   }
+
   .icon-keyboard {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe906;');
   }
+
   .icon-code {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe913;');
   }
+
   .icon-screen {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe92c;');
   }
+
   .icon-light-bulb {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe60e;');
   }
+
   .icon-rss {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe600;');
   }
+
   .icon-signal {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe60f;');
   }
+
   .icon-info {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe610;');
   }
+
   .icon-help {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe611;');
   }
+
   .icon-warning {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe914;');
   }
+
   .icon-layout {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe924;');
   }
+
   .icon-list {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe925;');
   }
+
   .icon-text {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe915;');
   }
+
   .icon-text2 {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe916;');
   }
+
   .icon-document {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe926;');
   }
+
   .icon-install {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe917;');
   }
+
   .icon-cloud {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe612;');
   }
+
   .icon-upload {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe918;');
   }
+
   .icon-book2 {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe919;');
   }
+
   .icon-resize-enlarge {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe91a;');
   }
+
   .icon-resize-shrink {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe91b;');
   }
+
   .icon-flow-cascade {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe91c;');
   }
+
   .icon-flow-branch {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe91d;');
   }
+
   .icon-flow-tree {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe91e;');
   }
+
   .icon-flow-line {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe91f;');
   }
+
   .icon-flow-parallel {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe920;');
   }
+
   .icon-cc {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe614;');
   }
+
   .icon-cc-by {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe615;');
   }
+
   .icon-cc-nc {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe616;');
   }
+
   .icon-cc-sa {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe617;');
   }
+
   .icon-cc-nd {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe618;');
   }
+
   .icon-cc-pd {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe619;');
   }
+
   .icon-cc-zero {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe61a;');
   }
+
   .icon-cc-share {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe61e;');
   }
+
   .icon-cc-share2 {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe61f;');
   }
+
   .icon-github2 {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe921;');
   }
+
   .icon-github {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe61b;');
   }
+
   .icon-flickr {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe927;');
   }
+
   .icon-twitter {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe601;');
   }
+
   .icon-facebook {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe602;');
   }
+
   .icon-googleplus {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe603;');
   }
+
   .icon-pinterest {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe61c;');
   }
+
   .icon-linkedin {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe604;');
   }
-
 }

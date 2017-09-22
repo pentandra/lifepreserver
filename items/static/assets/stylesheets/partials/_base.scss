@@ -1,10 +1,10 @@
 // This file must be imported before loading html5-boilerplate
 
 // default font-family
-$icon-font-family: unquote('lifepreserver');
+$icon-font-family: unquote("lifepreserver");
 
 // Golden ratio
-$phi: (1 + sqrt(5))/2;
+$phi: (1 + sqrt(5)) / 2;
 
 //
 // colors
@@ -21,7 +21,8 @@ $pentandra-cyan: #4edbfc;
 $pentandra-lime: #8bfc4e;
 $pentandra-mango: #fc804e;
 
-$page-background: $pentandra-white; // #f8f6f4;
+$page-background: $pentandra-white;
+
 $footer-background: $pentandra-brown;
 $footer-font-color: $pentandra-white;
 
@@ -42,4 +43,4 @@ $selected-background-color: $pentandra-red;
 //
 $default-radius: 12px;
 
-$pie-behavior: unquote('url(/css/PIE.htc)');
+$pie-behavior: unquote("url(/css/PIE.htc)");

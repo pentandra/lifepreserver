@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class RubyPantsUnicode < Nanoc::Filter
   identifier :rubypantsunicode
 

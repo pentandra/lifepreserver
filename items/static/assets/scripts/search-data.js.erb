@@ -1,3 +1,3 @@
 window.Pentandra = window.Pentandra || {};
 
-Pentandra.index = <%= search_index.to_json %>;
+Pentandra.index = <%= @config[:site][:generate_meta] ? search_index.to_json : '{}' %>;
