@@ -7,6 +7,8 @@ description: >
 kind: event
 created_at: 2017-08-21
 updated_at: 2017-08-23
+starts_on: 2017-10-25T12:00+02
+ends_on:   2017-10-25T16:00+02
 tags:
   - Scholarly Commons
   - FORCE11
@@ -21,6 +23,10 @@ tags:
 
     <p class="big" property="schema:description"><%= @item[:description] %></p>
 
+    <p class="bigger">
+      <time property="schema:startDate" datetime="<%= iso8601(:starts_on) %>"><%= strftime(:starts_on, format: '%B %d, %Y %R') %></time>--<time property="schema:endDate" datetime="<%= iso8601(:ends_on) %>"><%= strftime(:ends_on, format: '%R') %></time>
+      in <span property="schema:location" typeof="schema:Place"><span property="schema:name">Berlin, Germany</span></span>,
+      in conjunction with <span property="schema:superEvent" resource="#force2017" typeof="schema:Event"><a property="schema:url" href="http://force2017.org/"><span property="schema:name">FORCE2017</span></a></span>
     </p>
 
   </div>
