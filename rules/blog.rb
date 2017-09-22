@@ -32,6 +32,7 @@ compile '/static/blog/posts/**/*.md' do
     { from: :"markdown+emoji", to: :html5 },
     { base_header_level: 2 },
     { syntax_definition: 'etc/syntax/n3.xml' },
+    { syntax_definition: 'etc/syntax/turtle.xml' },
     :section_divs,
   ]
   filter :absolutify_paths, type: :html
