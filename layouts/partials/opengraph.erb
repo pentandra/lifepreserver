@@ -10,9 +10,9 @@
 <% if article?(@item) %>
   <meta property="og:type" content="article" />
   <% if @item.key?(:published_at) %>
-    <meta property="article:published_time" content="<%= h publication_date_for(@item) %>" />
+    <meta property="article:published_time" content="<%= h simple_date(:published_at) %>" />
   <% end %>
-  <meta property="article:modified_time" content="<%= h last_modified_date_for(@item) %>" />
+  <meta property="article:modified_time" content="<%= h simple_date(:updated_at) %>" />
   <%# TODO: article:author %>
   <% Array(@item[:tags]).each do |tag| %>
     <meta property="article:tag" content="<%= h tag %>" />

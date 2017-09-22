@@ -30,13 +30,22 @@
 
         <dl id="document-submitted" class="group">
           <dt class="aside"><div class="close">Submitted</div></dt>
-          <dd class="bd"><time property="schema:datePublished" datetime="<%= date_for(@item) %>"><%= ndashed(date_for(@item)) %></time></dd>
+          <dd class="bd"><time property="schema:datePublished" datetime="<%= simple_date(:created_at) %>"><%= ndashed(simple_date(:created_at)) %></time></dd>
         </dl>
+
+        <% if @item.key?(:submitted_by) %>
+          <dl id="document-submitted-by" class="group">
+            <dt class="aside"><div class="close">Submitted by</div></dt>
+            <% @item.fetch(:submitted_by).map { |n| person_by_name(n) }.each do |submitter| %>
+              <dd class="bd"><a href="<%= iri_for(submitter) %>" property="schema:organizer" typeof="schema:Person"><span class="schema:name"><%= full_name(submitter) %></span></a></dd>
+            <% end %>
+          </dl>
+        <% end %>
 
         <% if @item[:updated_at] > @item[:created_at] then %>
           <dl id="document-modified" class="group">
             <dt class="aside"><div class="close">Modified</div></dt>
-            <dd class="bd"><time property="schema:dateModified" datetime="<%= simple_date(@item[:updated_at]) %>"><%= ndashed(simple_date(@item[:updated_at])) %></time></dd>
+            <dd class="bd"><time property="schema:dateModified" datetime="<%= simple_date(:updated_at) %>"><%= ndashed(simple_date(:updated_at)) %></time></dd>
           </dl>
         <% end %>
 
