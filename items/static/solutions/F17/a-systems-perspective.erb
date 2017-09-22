@@ -33,14 +33,16 @@ tags:
 
 </div>
 
-<section about="#workshop" class="section" id="proposed-sessions">
+<section about="#workshop" class="noted section" id="sessions">
 
-  <div class="numbered" resource="#sessions" typeof="schema:ItemList">
+  <h2>Sessions</h2>
+
+  <div class="numbered" property="schema:subEvents" resource="#sessions" typeof="schema:ItemList">
     <% sessions = @items.find_all('/static/solutions/proposals/F17/a-systems-perspective/**/index.md') %>
     <link property="schema:itemListOrder" resource="schema:itemListOrderAscending" />
     <meta property="schema:numberOfItems" content="<%=h sessions.length %>" datatype="schema:Integer" />
     <% sessions.sort_by { |s| s.identifier }.each_with_index do |session, index| %>
-      <%= render('/proposals/partials/summary.*', item: session, position: index + 1) %>
+      <%= render('/partials/event.*', item: session, position: index + 1) %>
     <% end %>
   </div>
 
