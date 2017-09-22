@@ -28,8 +28,8 @@
 \setlayer[logo]{\externalfigure[pentandra-logotype-reverse.pdf]}
 
 \startcolor[white]
-{\bfc \setupinterlinespace <%= @item.fetch(:title) %>\\ Proposal\par\blank[line]}
-{\bfb <%= ndashed(simple_date(:updated_at), type: :plain) %>}
+{\bfd \setupinterlinespace <%= @item.fetch(:title) %>\par\blank[line]}
+{\bfb \setupinterlinespace <%= ndashed(simple_date(:updated_at), type: :plain) %>}
 \stopcolor
 
 \startviewerlayer[forprinter]
@@ -38,7 +38,7 @@
 
 \setlayer[monochrome]{\framed[frame=off,width=\paperwidth,height=\paperheight,background={color,logo},backgroundcolor=white]{}}
 
-\setlayer[monochrome]{\framed[frame=off,align=right,top=\vss,bottom=\vss,loffset=\backspace,width=\dimexpr(\backspace+\textwidth),height=\paperheight]{{\bfc \setupinterlinespace <%= @item.fetch(:title) %>\\ Proposal\par\blank[line]}{\bfb <%= ndashed(simple_date(:updated_at), type: :plain) %>}}}
+\setlayer[monochrome]{\framed[frame=off,align=right,top=\vss,bottom=\vss,loffset=\backspace,width=\dimexpr(\backspace+\textwidth),height=\paperheight]{{\bfc \setupinterlinespace <%= @item.fetch(:title) %>\par\blank[line]}{\bfb \setupinterlinespace <%= ndashed(simple_date(:updated_at), type: :plain) %>}}}
 
 \setlayer[monochrome]{\framed[frame=off,align=right,loffset=\dimexpr(\backspace-6pt)\relax,width=\dimexpr(\backspace+\textwidth)\relax,height=\paperheight,top=\vss,bottom=]{\tfx {\inframed[background=color,backgroundcolor=white,frame=off,offset=5pt]{\tt <%= path_to(@item, global: true) %>}}\blank[2*big]}}
 
