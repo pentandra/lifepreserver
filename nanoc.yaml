@@ -134,7 +134,7 @@ environments:
       port_tls: 4125
       tls_certificate: 'etc/certs/server.crt'
       tls_certificate_key: 'etc/certs/server.key'
-      tls_dhparam: 'etc/certs/dhparams.pem'
+      tls_dhparam: 'etc/certs/dhparam.pem'
 
   static_only:
     <<: *development
@@ -163,7 +163,8 @@ environments:
       platform: 'linux'
       tls_certificate: '/etc/letsencrypt/live/pentandra.com/fullchain.pem'
       tls_certificate_key: '/etc/letsencrypt/live/pentandra.com/privkey.pem'
-      tls_dhparam: '/etc/letsencrypt/live/pentandra.com/dhparams.pem'
+      tls_trusted_certificate: '/etc/letsencrypt/live/pentandra.com/chain.pem'
+      tls_dhparam: '/etc/letsencrypt/live/pentandra.com/dhparam.pem'
 
   staging:
     <<: *production
