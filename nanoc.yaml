@@ -163,6 +163,7 @@ environments:
       platform: 'linux'
       tls_certificate: '/etc/letsencrypt/live/pentandra.com/fullchain.pem'
       tls_certificate_key: '/etc/letsencrypt/live/pentandra.com/privkey.pem'
+      tls_trusted_certificate: '/etc/letsencrypt/live/pentandra.com/chain.pem'
       tls_dhparam: '/etc/letsencrypt/live/pentandra.com/dhparam.pem'
 
   staging:
