@@ -15,7 +15,7 @@ deploy:
   public:
     kind: rsync
     dst: "lifepreserver@pentandra.com:/srv/http/lifepreserver"
-    options: [ '-gplPrtvz', '--delete-after', '--exclude=/logs', '--rsync-path="sudo rsync"' ]
+    options: [ '-gplPrtvz', '--delete-after', '--exclude=/logs', '--rsync-path=sudo rsync' ]
   staging:
     kind: rsync
     dst: "vlad@rebikov.process.tree:/srv/http/lifepreserver"
