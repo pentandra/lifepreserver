@@ -1,3 +1,5 @@
+#frozen_string_literal: true
+
 usage     'fetch-tag-data'
 aliases   :fetchtags, :ft
 summary   'fetches additional data about semantic tags from the Web'

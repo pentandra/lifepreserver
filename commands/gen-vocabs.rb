@@ -1,3 +1,5 @@
+#frozen_string_literal: true
+
 usage 'gen-vocabs'
 aliases :gv
 summary 'generate Ruby::RDF vocabularies from ontologies on the Web'

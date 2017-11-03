@@ -1,13 +1,15 @@
+#frozen_string_literal: true
+
 usage 'view [options]'
 summary 'start the web server that serves static files'
-description <<-EOS
-Start the static web server. Unless specified, the web server will run on port
-3000 and listen on all IP addresses. Running this static web server requires
-`adsf` (not `asdf`!).
+description <<~EOS
+  Start the static web server. Unless specified, the web server will run on port
+  3000 and listen on all IP addresses. Running this static web server requires
+  `adsf` (not `asdf`!).
 EOS
 
 required :H, :handler, 'specify the handler to use (webrick/mongrel/...)'
-required :o, :host,    'specify the host to listen on (default: 0.0.0.0)'
+required :o, :host,    'specify the host to listen on (default: 127.0.0.1)'
 required :p, :port,    'specify the port to listen on (default: 3000)'
 
 module LifePreserver
@@ -18,7 +20,7 @@ module LifePreserver
       load_adsf
       require 'rack'
 
-      @site = load_site
+      config = Nanoc::Int::ConfigLoader.new.new_from_cwd
 
       # Set options
       options_for_rack = {
@@ -38,8 +40,9 @@ module LifePreserver
       end
 
       # Build app
-      site_root = @site.config[:output_dir] + view_config_root
-      index_filenames = @site.config[:index_filenames]
+      view_config = config.fetch(:view, {})
+      site_root = config[:output_dir] + view_config.fetch(:static_root, String.new)
+      index_filenames = config[:index_filenames]
 
       app = Rack::Builder.new do
         use Rack::CommonLogger
@@ -58,16 +61,6 @@ module LifePreserver
 
       # Run autocompiler
       handler.run(app, options_for_rack)
-    end
-
-    protected
-
-    def self.view_config_for(site)
-      site.config[:view] || {}
-    end
-
-    def view_config_root
-      self.class.view_config_for(@site)[:static_root]
     end
   end
 end

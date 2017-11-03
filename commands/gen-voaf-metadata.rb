@@ -1,3 +1,5 @@
+#frozen_string_literal: true
+
 usage     'gen-voaf-metadata'
 aliases   :gvm, :voaf
 summary   'generates curated metadata for voaf vocabularies from the voaf dataset'

@@ -42,8 +42,8 @@ module LifePreserver
     # Return true if an item has a specified tag
     # Does not create a dependency.
     #
-    # @param [Nanoc::ItemWithoutRepsView] item the item to check
-    # @param [String, Nanoc::ItemWithoutRepsView] tag the tag, either a string or tag item
+    # @param [Nanoc::BasicItemView] item the item to check
+    # @param [String, Nanoc::BasicItemView] tag the tag, either a string or tag item
     #
     # @return true if item is tagged such, otherwise false
     def tag?(item, tag)
