@@ -3,6 +3,7 @@
 usage     'fetch-tag-data'
 aliases   :fetchtags, :ft
 summary   'fetches additional data about semantic tags from the Web'
+description 'Runs a SPARQL query on DBpedia to fetch additional data about semantic tags'
 
 run do |_opts, _args, _cmd|
   require 'sparql/client'
@@ -19,7 +20,7 @@ run do |_opts, _args, _cmd|
 
   tags.select { |t| t.key?(:uri) }.each do |tag|
     uri = tag[:uri]
-    query = <<-QUERY
+    query = <<~QUERY
       PREFIX dbo: <http://dbpedia.org/ontology/>
       PREFIX foaf: <http://xmlns.com/foaf/0.1/>
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
