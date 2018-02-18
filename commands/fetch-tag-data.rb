@@ -5,59 +5,65 @@ aliases   :fetchtags, :ft
 summary   'fetches additional data about semantic tags from the Web'
 description 'Runs a SPARQL query on DBpedia to fetch additional data about semantic tags'
 
-run do |_opts, _args, _cmd|
-  require 'sparql/client'
-  require 'yaml'
-  require 'active_support/core_ext/hash/keys'
+class FetchTagData < ::Nanoc::CLI::CommandRunner
 
-  tags = YAML.load_file('etc/tags.yaml').map(&:symbolize_keys)
+  def run
+    require 'sparql/client'
+    require 'yaml'
+    require 'active_support/core_ext/hash/keys'
 
-  FileUtils.mkdir_p('var')
+    tags = YAML.load_file('etc/tags.yaml').map(&:symbolize_keys)
 
-  data = []
+    FileUtils.mkdir_p('var')
 
-  sparql = SPARQL::Client.new('http://dbpedia.org/sparql')
+    data = []
 
-  tags.select { |t| t.key?(:uri) }.each do |tag|
-    uri = tag[:uri]
-    query = <<~QUERY
-      PREFIX dbo: <http://dbpedia.org/ontology/>
-      PREFIX foaf: <http://xmlns.com/foaf/0.1/>
-      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-      PREFIX owl: <http://www.w3.org/2002/07/owl#>
+    sparql = SPARQL::Client.new('http://dbpedia.org/sparql')
 
-      SELECT ?abstract ?primaryTopicOf ?label ?type
-      WHERE
-      {
-        <#{uri}> rdfs:label ?label ;
-                 dbo:abstract ?abstract ;
-                 foaf:isPrimaryTopicOf ?primaryTopicOf .
-          FILTER (langMatches(lang(?label), \"en\"))
-          FILTER (langMatches(lang(?abstract), \"en\"))
+    tags.select { |t| t.key?(:uri) }.each do |tag|
+      uri = tag[:uri]
+      query = <<~QUERY
+        PREFIX dbo: <http://dbpedia.org/ontology/>
+        PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        PREFIX owl: <http://www.w3.org/2002/07/owl#>
 
-        OPTIONAL {
-          <#{uri}> a ?type .
-          #FILTER (strStarts(str(?type), \"http://dbpedia.org/ontology/\"))
-          FILTER (?type != owl:Thing) # Let's get something more specific
-          FILTER NOT EXISTS {
-            <#{uri}> a ?other .
-            ?other rdfs:subClassOf ?type .
-            FILTER (?other != ?type)
+        SELECT ?abstract ?primaryTopicOf ?label ?type
+        WHERE
+        {
+          <#{uri}> rdfs:label ?label ;
+                   dbo:abstract ?abstract ;
+                   foaf:isPrimaryTopicOf ?primaryTopicOf .
+            FILTER (langMatches(lang(?label), \"en\"))
+            FILTER (langMatches(lang(?abstract), \"en\"))
+
+          OPTIONAL {
+            <#{uri}> a ?type .
+            #FILTER (strStarts(str(?type), \"http://dbpedia.org/ontology/\"))
+            FILTER (?type != owl:Thing) # Let's get something more specific
+            FILTER NOT EXISTS {
+              <#{uri}> a ?other .
+              ?other rdfs:subClassOf ?type .
+              FILTER (?other != ?type)
+            }
           }
         }
-      }
-    QUERY
+      QUERY
 
-    $stderr.puts "Querying remote endpoint for <#{uri}>…"
+      $stderr.print "Querying remote endpoint for <#{uri}>… "
+      sparql.query(query).each do |solution|
+        $stderr.puts solution.inspect if debug?
+        solution.each_binding { |name, v| tag[name] = v.value }
+      end
+      $stderr.puts 'done'
 
-    sparql.query(query).each { |solution| solution.each_binding { |name, v| tag[name] = v.value } }
+      data << tag
+    end
 
-    data << tag
+    $stderr.print 'Writing tag data… '
+    File.open('var/additional_tag_data.yaml', 'w+') { |io| io.write(YAML.dump(data)) }
+    $stderr.puts 'done'
   end
-
-  $stderr.puts 'Writing tag data…'
-
-  File.open('var/additional_tag_data.yaml', 'w+') { |io| io.write(YAML.dump(data)) }
-
-  $stderr.puts 'Finished!'
 end
+
+runner FetchTagData
