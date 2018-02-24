@@ -1,4 +1,38 @@
 ---
+- :tag: Business Models
+  :uri: http://dbpedia.org/resource/Business_model
+  :abstract: A business model is an "abstract representation of an organization, be
+    it conceptual, textual, and/or graphical, of all core interrelated architectural,
+    co-operational, and financial arrangements designed and developed by an organization
+    presently and in the future, as well as all core products and/or services the
+    organization offers, or will offer, based on these arrangements that are needed
+    to achieve its strategic goals and objectives." This definition by Al-Debei, El-Haddadeh
+    and Avison (2008) indicates that value proposition, value architecture (the organizational
+    infrastructure and technological architecture that allows the movement of products,
+    services, and information), value finance (modeling information related to total
+    cost of ownership, pricing methods, and revenue structure), and value network
+    articulate the primary constructs or dimensions of business models. A business
+    model describes the rationale of how an organization creates, delivers, and captures
+    value, in economic, social, cultural or other contexts. The process of business
+    model construction is part of business strategy. In theory and practice, the term
+    business model is used for a broad range of informal and formal descriptions to
+    represent core aspects of a business, including purpose, business process, target
+    customers, offerings, strategies, infrastructure, organizational structures, sourcing,
+    trading practices, and operational processes and policies including culture. The
+    literature has provided very diverse interpretations and definitions of a business
+    model. A systematic review and analysis of manager responses to a survey defines
+    business models as the design of organizational structures to enact a commercial
+    opportunity. Further extensions to this design logic emphasize the use of narrative
+    or coherence in business model descriptions as mechanisms by which entrepreneurs
+    create extraordinarily successful growth firms. Business models are used to describe
+    and classify businesses, especially in an entrepreneurial setting, but they are
+    also used by managers inside companies to explore possibilities for future development.
+    Well-known business models can operate as "recipes" for creative managers. Business
+    models are also referred to in some instances within the context of accounting
+    for purposes of public reporting.
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Business_model
+  :label: Business model
+  :type: http://dbpedia.org/class/yago/WikicatBusinessModels
 - :tag: Citizen Science
   :uri: http://dbpedia.org/resource/Citizen_science
   :abstract: Citizen science (also known as crowd science, crowd-sourced science,
@@ -11,89 +45,172 @@
     research", participatory monitoring and participatory action research.
   :primaryTopicOf: http://en.wikipedia.org/wiki/Citizen_science
   :label: Citizen science
+  :type: http://dbpedia.org/class/yago/WikicatScientificDisciplines
 - :tag: Connections
   :uri: http://dbpedia.org/resource/Interdependence
-  :abstract: Interdependence is the mutual reliance between two or more groups.In
-    relationships, interdependence is the degree to which members of the group are
-    mutually dependent on the others. This concept differs from a dependent relationship,
-    where some members are dependent and some are not.In an interdependent relationship,
-    participants may be emotionally, economically, ecologically and/or morally reliant
-    on and responsible to each other. An interdependent relationship can arise between
-    two or more cooperative autonomous participants (e.g. a co-op). Some people advocate
-    freedom or independence as the ultimate good; others do the same with devotion
-    to one's family, community, or society. Interdependence can be a common ground
-    between these aspirations.
+  :abstract: Interdependence is the mutual reliance between two or more groups. This
+    concept differs from the reliance in a dependent relationship, where some members
+    are dependent and some are not. There can be various degrees of interdependence.
+    In an interdependent relationship, participants may be emotionally, economically,
+    ecologically and/or morally reliant on and responsible to each other. An interdependent
+    relationship can arise between two or more cooperative autonomous participants
+    (e.g. a co-op). Some people advocate freedom or independence as the ultimate good;
+    others do the same with devotion to one's family, community, or society. Interdependence
+    can be a common ground between these aspirations.
   :primaryTopicOf: http://en.wikipedia.org/wiki/Interdependence
   :label: Interdependence
+- :tag: Culture
+  :uri: http://dbpedia.org/resource/Culture
+  :abstract: Culture (/ˈkʌltʃər/) can be defined in numerous ways. In the words of
+    anthropologist E.B. Tylor it is "that complex whole which includes knowledge,
+    belief, art, morals, law, custom and any other capabilities and habits acquired
+    by man as a member of society." Alternatively, in a contemporary variant, "Culture
+    is defined as a social domain that emphasizes the practices, discourses, and material
+    expressions, which, over time, express the continuities and discontinuities of
+    social meaning of a life held in common." Cambridge English Dictionary states
+    that culture is "the way of life, especially the general customs and beliefs,
+    of a particular group of people at a particular time."Terror Management Theory
+    posits that culture is a series of activities and worldviews that provide humans
+    with the basis for perceiving themselves as "person[s] of worth within the world
+    of meaning"—raising themselves above the merely physical aspects of existence,
+    in order to deny the animal insignificance and death that Homo Sapiens became
+    aware of when they acquired a larger brain. As a defining aspect of what it means
+    to be human, culture is a central concept in anthropology, encompassing the range
+    of phenomena that are transmitted through social learning in human societies.
+    The word is used in a general sense as the evolved ability to categorize and represent
+    experiences with symbols and to act imaginatively and creatively. This ability
+    arose with the evolution of behavioral modernity in humans around 50,000 years
+    ago. This capacity is often thought to be unique to humans, although some other
+    species have demonstrated similar, though much less complex, abilities for social
+    learning. It is also used to denote the complex networks of practices and accumulated
+    knowledge and ideas that is transmitted through social interaction and exist in
+    specific human groups, or cultures, using the plural form. Some aspects of human
+    behavior, such as language, social practices such as kinship, gender and marriage,
+    expressive forms such as art, music, dance, ritual, religion, and technologies
+    such as cooking, shelter, clothing are said to be cultural universals, found in
+    all human societies. The concept material culture covers the physical expressions
+    of culture, such as technology, architecture and art, whereas the immaterial aspects
+    of culture such as principles of social organization (including, practices of
+    political organization and social institutions), mythology, philosophy, literature
+    (both written and oral), and science make up the intangible cultural heritage
+    of a society. In the humanities, one sense of culture, as an attribute of the
+    individual, has been the degree to which they have cultivated a particular level
+    of sophistication, in the arts, sciences, education, or manners. The level of
+    cultural sophistication has also sometimes been seen to distinguish civilizations
+    from less complex societies. Such hierarchical perspectives on culture are also
+    found in class-based distinctions between a high culture of the social elite and
+    a low culture, popular culture or folk culture of the lower classes, distinguished
+    by the stratified access to cultural capital. In common parlance, culture is often
+    used to refer specifically to the symbolic markers used by ethnic groups to distinguish
+    themselves visibly from each other such as body modification, clothing or jewelry.
+    Mass culture refers to the mass-produced and mass mediated forms of consumer culture
+    that emerged in the 20th century. Some schools of philosophy, such as Marxism
+    and critical theory, have argued that culture is often used politically as a tool
+    of the elites to manipulate the lower classes and create a false consciousness,
+    such perspectives common in the discipline of cultural studies. In the wider social
+    sciences, the theoretical perspective of cultural materialism holds that human
+    symbolic culture arises from the material conditions of human life, as humans
+    create the conditions for physical survival, and that the basis of culture is
+    found in evolved biological dispositions. When used as a count noun, "a culture"
+    is the set of customs, traditions, and values of a society or community, such
+    as an ethnic group or nation. In this sense, multiculturalism is a concept that
+    values the peaceful coexistence and mutual respect between different cultures
+    inhabiting the same territory. Sometimes "culture" is also used to describe specific
+    practices within a subgroup of a society, a subculture (e.g. "bro culture"), or
+    a counter culture. Within cultural anthropology, the ideology and analytical stance
+    of cultural relativism holds that cultures cannot easily be objectively ranked
+    or evaluated because any evaluation is necessarily situated within the value system
+    of a given culture.
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Culture
+  :label: Culture
 - :tag: Decisions
   :uri: http://dbpedia.org/resource/Decision-making
-  :abstract: This article deals with decision-making as analyzed in psychology. See
-    also Decision theory.In psychology, decision-making is regarded as the cognitive
-    process resulting in the selection of a belief or a course of action among several
-    alternative possibilities. Every decision-making process produces a final choice
-    that may or may not prompt action. Decision-making is the process of identifying
-    and choosing alternatives based on the values and preferences of the decision-maker.
+  :abstract: In psychology, decision-making is regarded as the cognitive process resulting
+    in the selection of a belief or a course of action among several alternative possibilities.
+    Every decision-making process produces a final choice; it may or may not prompt
+    action. Decision-making is the process of identifying and choosing alternatives
+    based on the values and preferences of the decision-maker.
   :primaryTopicOf: http://en.wikipedia.org/wiki/Decision-making
   :label: Decision-making
+  :type: http://dbpedia.org/class/yago/WikicatUnsolvedProblemsInNeuroscience
 - :tag: Design
   :uri: http://dbpedia.org/resource/Design
   :abstract: Design is the creation of a plan or convention for the construction of
-    an object or a system (as in architectural blueprints, engineering drawings, business
-    processes, circuit diagrams and sewing patterns).  Design has different connotations
-    in different fields (see design disciplines below). In some cases the direct construction
-    of an object (as in pottery, engineering, management, cowboy coding and graphic
-    design) is also considered to be design.Designing often necessitates considering
-    the aesthetic, functional, economic and sociopolitical dimensions of both the
-    design object and design process. It may involve considerable research, thought,
-    modeling, interactive adjustment, and re-design. Meanwhile, diverse kinds of objects
-    may be designed, including clothing, graphical user interfaces, skyscrapers, corporate
-    identities, business processes and even methods of designing.Thus "design" may
-    be a substantive referring to a categorical abstraction of a created thing or
-    things (the design of something), or a verb for the process of creation, as is
-    made clear by grammatical context.
+    an object, system or measurable human interaction (as in architectural blueprints,
+    engineering drawings, business processes, circuit diagrams, and sewing patterns).
+    Design has different connotations in different fields (see  below). In some cases,
+    the direct construction of an object (as in pottery, engineering, management,
+    coding, and graphic design) is also considered to be design. Designing often necessitates
+    considering the aesthetic, functional, economic, and sociopolitical dimensions
+    of both the design object and design process. It may involve considerable research,
+    thought, modeling, interactive adjustment, and re-design. Meanwhile, diverse kinds
+    of objects may be designed, including clothing, graphical user interfaces, skyscrapers,
+    corporate identities, business processes, and even methods of designing. Thus
+    "design" may be a substantive referring to a categorical abstraction of a created
+    thing or things (the design of something), or a verb for the process of creation,
+    as is made clear by grammatical context.
   :primaryTopicOf: http://en.wikipedia.org/wiki/Design
   :label: Design
 - :tag: Enlightenment
   :uri: http://dbpedia.org/resource/Age_of_Enlightenment
-  :abstract: The Age of Enlightenment or simply the Enlightenment or Age of Reason
-    is an era from the 1620s to the 1780s in which cultural and intellectual forces
-    in Western Europe emphasized reason, analysis, and individualism rather than traditional
-    lines of authority. It was promoted by philosophes and local thinkers in urban
-    coffee houses, salons, and Masonic lodges.  It challenged the authority of institutions
-    that were deeply rooted in society, especially the Roman Catholic Church; there
-    was much talk of ways to reform society with toleration, science and skepticism.Philosophers
-    including Francis Bacon (1562–1626), René Descartes (1596–1650), John Locke (1632–1704),
-    Baruch Spinoza (1632–77), Pierre Bayle (1647–1706), Giambattista Vico (1668–1744),
-    Voltaire (1694–1778), David Hume (1711–76), Immanuel Kant (1724–1804), Cesare
-    Beccaria (1738–94), Francesco Mario Pagano (1748–99) and Sir Isaac Newton (1642–1727)
-    influenced society by publishing widely read works.  Upon learning about enlightened
-    views, some rulers met with intellectuals and tried to apply their reforms, such
-    as allowing for toleration, or accepting multiple religions, in what became known
-    as enlightened absolutism. Coinciding with the Age of Enlightenment was the Scientific
-    revolution, spearheaded by Newton.New ideas and beliefs spread around the continent
-    and were fostered by an increase in literacy due to a departure from solely religious
-    texts. Publications include Encyclopédie (1751–72) that was edited by Denis Diderot
-    and (until 1759) Jean le Rond d'Alembert. Some 25,000 copies of the 35 volume
-    encyclopedia were sold, half of them outside France. The Dictionnaire philosophique
-    (Philosophical Dictionary, 1764) and Letters on the English (1733) written by
-    Voltaire (1694–1778) were revolutionary texts that spread the ideals of the Enlightenment.
-    Some of these ideals proved influential and decisive in the course of the French
-    Revolution, which began in 1789. After the Revolution, the Enlightenment was followed
-    by an opposing intellectual movement known as Romanticism.
+  :abstract: 'The Enlightenment (also known as the Age of Enlightenment; in French:
+    le Siècle des Lumières, lit. ''the Century of Lights''; and in German: Aufklärung,
+    ''Enlightenment'') was an intellectual movement which dominated the world of ideas
+    in Europe in the 18th century. The Enlightenment included a range of ideas centered
+    on reason as the primary source of authority and legitimacy, and came to advance
+    ideals such as liberty, progress, tolerance, fraternity, constitutional government,
+    and separation of church and state. In France, the central doctrines of les Lumières
+    were individual liberty and religious tolerance in opposition to an absolute monarchy
+    and the fixed dogmas of the Roman Catholic Church. The Enlightenment was marked
+    by an emphasis on the scientific method and reductionism along with increased
+    questioning of religious orthodoxy - an attitude captured by the phrase Sapere
+    aude, "Dare to know". French historians traditionally place the Enlightenment
+    between 1715, the year that Louis XIV died, and 1789, the beginning of the French
+    Revolution. Some recent historians begin the period in the 1620s, with the start
+    of the scientific revolution. Les philosophes (French for ''the philosophers'')
+    of the period widely circulated their ideas through meetings at scientific academies,
+    Masonic lodges, literary salons, coffee houses, and through printed books and
+    pamphlets. The ideas of the Enlightenment undermined the authority of the monarchy
+    and the Church, and paved the way for the political revolutions of the 18th and
+    19th centuries. A variety of 19th-century movements, including liberalism and
+    neo-classicism, trace their intellectual heritage back to the Enlightenment. The
+    Age of Enlightenment was preceded by and closely associated with the scientific
+    revolution. Earlier philosophers whose work influenced the Enlightenment included
+    Francis Bacon, René Descartes, John Locke, and Baruch Spinoza. The major figures
+    of the Enlightenment included Cesare Beccaria, Voltaire, Denis Diderot, Jean-Jacques
+    Rousseau, David Hume, Adam Smith, and Immanuel Kant. Some European rulers, including
+    Catherine II of Russia, Joseph II of Austria and Frederick II of Prussia, tried
+    to apply Enlightenment thought on religious and political tolerance, which became
+    known as enlightened absolutism.  Benjamin Franklin visited Europe repeatedly
+    and contributed actively to the scientific and political debates there and brought
+    the newest ideas back to Philadelphia. Thomas Jefferson closely followed European
+    ideas and later incorporated some of the the ideals of the Enlightenment into
+    the Declaration of Independence (1776). Others like James Madison incorporated
+    them into the Constitution in 1787. The most influential publication of the Enlightenment
+    was the Encyclopédie (Encyclopaedia). Published between 1751 and 1772 in thirty-five
+    volumes, it was compiled by Denis Diderot, Jean le Rond d''Alembert (until 1759),
+    and a team of 150 scientists and philosophers and it helped spread the ideas of
+    the Enlightenment across Europe and beyond. Other landmark publications were Voltaire''s
+    Dictionnaire philosophique (Philosophical Dictionary; 1764) and Letters on the
+    English (1733); Rousseau''s Discourse on Inequality (1754) and The Social Contract
+    (1762); Adam Smith''s The Wealth of Nations (1776); and Montesquieu''s Spirit
+    of the Laws (1748). The ideas of the Enlightenment played a major role in inspiring
+    the French Revolution, which began in 1789. After the Revolution, the Enlightenment
+    was followed by an opposing intellectual movement known as Romanticism.'
   :primaryTopicOf: http://en.wikipedia.org/wiki/Age_of_Enlightenment
   :label: Age of Enlightenment
-  :type: http://dbpedia.org/class/yago/HistoricalEras
+  :type: http://dbpedia.org/class/yago/WikicatPhilosophicalMovements
 - :tag: Funding
   :uri: http://dbpedia.org/resource/Funding
-  :abstract: '"Funding" is the act of providing financial resources, usually in the
-    form of money, or other values such as effort or time, to finance a need, program,
+  :abstract: Funding is the act of providing financial resources, usually in the form
+    of money, or other values such as effort or time, to finance a need, program,
     and project, usually by an organisation or government. Generally, this word is
     used when a firm uses its internal reserves to satisfy its necessity for cash,
     while the term ‘financing‘ is used when the firms acquires capital from external
     sources.Sources of funding include credit, venture capital, donations, grants,
     savings, subsidies, and taxes. Fundings such as donations, subsidies, and grants
     that have no direct requirement for return of investment are described as "soft
-    funding" or "crowdfunding".  Funding that facilitates the exchange of equity ownership
+    funding" or "crowdfunding". Funding that facilitates the exchange of equity ownership
     in a company for capital investment via an online funding portal as per the Jumpstart
     Our Business Startups Act (alternately, the "JOBS Act of 2012") (U.S.) is known
     as equity crowdfunding.Funds can be allocated for either short-term or long-term
@@ -136,10 +253,19 @@
   :label: Holism
 - :tag: Joy
   :uri: http://dbpedia.org/resource/Joy
+  :abstract: Joy is an emotion in response to a pleasant observation or a remembrance
+    thereof. The reason for a joyful reaction is usually that someexpectation or need
+    has been satisfied. Joy is usually expressed as a smile, a laughter or exclamation
+    of joy. Joy differs from happiness in that it is an emotion. Happiness, on the
+    other hand, is what we might think of as a feeling, which is more fleeting. Joy
+    may be thought of as "the emotional dimension of the good life, of a life that
+    is both going well and is being lived well."
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Joy
+  :label: Joy
 - :tag: NGS
   :uri: http://dbpedia.org/resource/National_Genealogical_Society
   :abstract: The National Genealogical Society is a genealogical interest group founded
-    in 1903 in Washington, D.C..  Its headquarters are in Arlington, Virginia.The
+    in 1903 in Washington, D.C.. Its headquarters are in Arlington, Virginia. The
     goals of the organization are to promote genealogical skill development, establish
     high standards of genealogical research, and increase awareness of and interest
     in family history. To accomplish this, the National Genealogical Society provides
@@ -153,6 +279,49 @@
   :type: http://dbpedia.org/class/yago/OrganizationsBasedInVirginia
 - :tag: Open Access
   :uri: http://dbpedia.org/resource/Open_access
+  :abstract: 'Open access (OA) refers to online research outputs that are free of
+    all restrictions on access (e.g. access tolls) and free of many restrictions on
+    use (e.g. certain copyright and license restrictions). Open access can be applied
+    to all forms of published research output, including peer-reviewed and non peer-reviewed
+    academic journal articles, conference papers, theses, book chapters, and monographs.
+    Two degrees of open access can be distinguished: gratis open access, which is
+    online access free of charge, and libre open access, which is online access free
+    of charge plus various additional usage rights. These additional usage rights
+    are often granted through the use of various specific Creative Commons licenses.
+    Libre open access is equivalent to the definition of open access in the Budapest
+    Open Access Initiative, the Bethesda Statement on Open Access Publishing and the
+    Berlin Declaration on Open Access to Knowledge in the Sciences and Humanities.
+    There are multiple ways authors can provide open access to their work. One way
+    is to publish it and then self-archive it in a repository where it can be accessed
+    for free, such as their institutional repository, or a central repository such
+    as PubMed Central. This is known as ''green'' open access. Some publishers require
+    delays, or an embargo, on when a research output in a repository may be made open
+    access. Several initiatives provide an alternative to the American and English
+    language dominance of existing publication indexing systems, including Index Copernicus,
+    SciELO and Redalyc. A second way authors can make their work open access is by
+    publishing it in such a way that makes their research output immediately available
+    from the publisher. This is known as ''gold'' open access, and within the sciences
+    this often takes the form of publishing an article in either an open access journal,
+    or a hybrid open access journal. The latter is a journal whose business model
+    is at least partially based on subscriptions, and only provide Gold open access
+    for those individual articles for which their authors (or their author''s institution
+    or funder) pay a specific fee for publication, often referred to as an article
+    processing charge. Pure open access journals do not charge subscription fees,
+    and may have one of a variety of business models. Many, however, do charge an
+    article processing fee. Widespread public access to the World Wide Web in the
+    late 1990s and early 2000s fueled the open access movement, and prompted both
+    the green open access way (self-archiving of non-open access journal articles)
+    and the creation of open access journals (gold way). Conventional non-open access
+    journals cover publishing costs through access tolls such as subscriptions, site
+    licenses or pay-per-view charges. Some non-open access journals provide open access
+    after an embargo period of 6–12 months or longer (see delayed open access journals).
+    Active debate over the economics and reliability of various ways of providing
+    open access continues among researchers, academics, librarians, university administrators,
+    funding agencies, government officials, commercial publishers, editorial staff
+    and society publishers.'
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Open_access
+  :label: Open access
+  :type: http://dbpedia.org/class/yago/WikicatOpenMethodologies
 - :tag: Open Business
   :uri: http://dbpedia.org/resource/Open_business
   :abstract: Open business is an approach to enterprise that draws on ideas from openness
@@ -180,9 +349,9 @@
   :uri: http://dbpedia.org/resource/Open_standard
   :abstract: An open standard is a standard that is publicly available and has various
     rights to use associated with it, and may also have various properties of how
-    it was designed (e.g. open process).  There is no single definition and interpretations
-    vary with usage.The terms open and standard have a wide range of meanings associated
-    with their usage.  There are a number of definitions of open standards which emphasize
+    it was designed (e.g. open process). There is no single definition and interpretations
+    vary with usage. The terms open and standard have a wide range of meanings associated
+    with their usage. There are a number of definitions of open standards which emphasize
     different aspects of openness, including the openness of the resulting specification,
     the openness of the drafting process, and the ownership of rights in the standard.
     The term "standard" is sometimes restricted to technologies approved by formalized
@@ -215,11 +384,11 @@
     Group which promotes UNIX and the like, and the Internet Engineering Task Force
     (IETF) which created the first standards of SMTP and TCP/IP. Buyers tend to prefer
     open standards which they believe offer them cheaper products and more choice
-    for access due to network effects and increased competition between vendors.Open
-    standards which specify formats are sometimes referred to as open formats.Many
+    for access due to network effects and increased competition between vendors. Open
+    standards which specify formats are sometimes referred to as open formats. Many
     specifications that are sometimes referred to as standards are proprietary and
     only available under restrictive contract terms (if they can be obtained at all)
-    from the organization that owns the copyright on the specification.  As such these
+    from the organization that owns the copyright on the specification. As such these
     specifications are not considered to be fully open. Joel West has argued that
     "open" standards are not black and white but have many different levels of "openness".
     Ultimately a standard needs to be open enough that it will become adopted and
@@ -244,17 +413,17 @@
   :label: Opinion piece
 - :tag: Phil Trans
   :uri: http://dbpedia.org/resource/Philosophical_Transactions_of_the_Royal_Society
-  :abstract: Philosophical Transactions later Philosophical Transactions of the Royal
-    Society (Phil. Trans.) is a scientific journal published by the Royal Society.
-    In its earliest days, it was a private venture of the Royal Society's secretary.
-    It became an official society publication in the eighteenth century. It was established
+  :abstract: Philosophical Transactions, titled Philosophical Transactions of the
+    Royal Society (Phil. Trans.) from 1776, is a scientific journal published by the
+    Royal Society. In its earliest days, it was a private venture of the Royal Society's
+    secretary. It became an official society publication in 1752. It was established
     in 1665, making it the first journal in the world exclusively devoted to science,
     and therefore also the world's longest-running scientific journal. The use of
     the word "Philosophical" in the title refers to "natural philosophy", which was
     the equivalent of what would now be generally called "science".
   :primaryTopicOf: http://en.wikipedia.org/wiki/Philosophical_Transactions_of_the_Royal_Society
   :label: Philosophical Transactions of the Royal Society
-  :type: http://dbpedia.org/class/yago/MultidisciplinaryScientificJournals
+  :type: http://dbpedia.org/class/yago/WikicatPublicationsEstablishedIn1665
 - :tag: Republic of Letters
   :uri: http://dbpedia.org/resource/Republic_of_Letters
   :abstract: 'The Republic of Letters (Respublica literaria) is the long-distance  intellectual
@@ -311,7 +480,43 @@
     Developers Conference.'
   :primaryTopicOf: http://en.wikipedia.org/wiki/RootsTech
   :label: RootsTech
-  :type: http://dbpedia.org/class/yago/TradeShowsInTheUnitedStates
+  :type: http://dbpedia.org/class/yago/Convention108309086
+- :tag: Social Business
+  :uri: http://dbpedia.org/resource/Social_business
+  :abstract: "Social business was defined by Nobel Peace Prize laureate Professor
+    Muhammad Yunus and is described in his books Creating a world without poverty—Social
+    Business and the future of capitalism and Building Social Business—The new kind
+    of capitalism that serves humanity's most pressing needs. In these books, Yunus
+    defined a social business as a business: \n*  Created and designed to address
+    a social problem \n*  A non-loss, non-dividend company, i.e. 1.  \n*  It is financially
+    self-sustainable and 2.  \n*  Profits realized by the business are reinvested
+    in the business itself (or used to start other social businesses), with the aim
+    of increasing social impact, for example expanding the company’s reach, improving
+    the products or services or in other ways subsidizing the social mission. Unlike
+    a profit-maximizing business, the prime aim of a social business is not to maximize
+    profits (although generating profits is desired). Furthermore, business owners
+    are not receiving any dividend out of the business profits, if any. On the other
+    hand, unlike a non-profit, a social business is not dependent on donations or
+    on private or public grants to survive and to operate, because, as any other business,
+    it is self-sustainable. Furthermore, unlike a non-profit, where funds are spent
+    only once on the field, funds in a social business are invested to increase and
+    improve the business' operations on the field on an indefinite basis. Per Yunus'
+    quote: \"A charity dollar has only one life; a social business dollar can be invested
+    over and over again.\" Philosophically, social business is based on what Yunus
+    identifies as the two basic motives of human beings, selfishness and selflessness.
+    Selfishly, people do seek profit through business; however, social business is
+    also based on the latter motive people by performing philanthropic services, like
+    establishing churches, mosques, synagogues, art museums, public parks, health
+    clinics or community centers. For Yunus, the profits made through a social business's
+    operations are less important than the beneficial effects it has on society. Muhammad
+    Yunus has more recently founded  Yunus Social Business (YSB) to study, support,
+    and invest in young social businesses. A Social business is sometimes used interchangeably
+    or in comparison to a Social Enterprise - some have described this as a spectrum,
+    ranging from profit-first corporations to non-profits or charities, with Social
+    Enterprises closer to non-profits and social Businesses closer to for-profits."
+  :primaryTopicOf: http://en.wikipedia.org/wiki/Social_business
+  :label: Social business
+  :type: http://dbpedia.org/class/yago/WikicatEconomicSystems
 - :tag: Technology
   :uri: http://dbpedia.org/resource/Technology
   :abstract: Technology (from Greek τέχνη, techne, "art, skill, cunning of hand";
@@ -360,12 +565,12 @@
     organization for the World Wide Web (abbreviated WWW or W3).Founded and currently
     led by Tim Berners-Lee, the consortium is made up of member organizations which
     maintain full-time staff for the purpose of working together in the development
-    of standards for the World Wide Web. As of 11 August 2015, the World Wide Web
-    Consortium (W3C) had 391 members.The W3C also engages in education and outreach,
-    develops software and serves as an open forum for discussion about the Web.
+    of standards for the World Wide Web. As of 2 June 2016, the World Wide Web Consortium
+    (W3C) has 423 members. The W3C also engages in education and outreach, develops
+    software and serves as an open forum for discussion about the Web.
   :primaryTopicOf: http://en.wikipedia.org/wiki/World_Wide_Web_Consortium
   :label: World Wide Web Consortium
-  :type: http://dbpedia.org/class/yago/InternationalNongovernmentalOrganizations
+  :type: http://dbpedia.org/class/yago/WikicatOrganizationsEstablishedIn1994
 - :tag: World Wide Web
   :uri: http://dbpedia.org/resource/World_Wide_Web
   :abstract: The World Wide Web (www, W3) is an information space where documents
@@ -386,4 +591,4 @@
     for entertainment, or largely for commercial purposes.
   :primaryTopicOf: http://en.wikipedia.org/wiki/World_Wide_Web
   :label: World Wide Web
-  :type: http://dbpedia.org/class/yago/Merchandise103748886
+  :type: http://dbpedia.org/class/yago/WikicatPrefixes

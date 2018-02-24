@@ -1,9 +1,15 @@
 ---
+- tag: Business Models
+  uri: http://dbpedia.org/resource/Business_model
+
 - tag: Citizen Science
   uri: http://dbpedia.org/resource/Citizen_science
 
 - tag: Connections
   uri: http://dbpedia.org/resource/Interdependence
+
+- tag: Culture
+  uri: http://dbpedia.org/resource/Culture
 
 - tag: Decisions
   uri: http://dbpedia.org/resource/Decision-making
@@ -72,6 +78,7 @@
 - tag: Scholarly Commons
 
 - tag: Social Business
+  uri: http://dbpedia.org/resource/Social_business
 
 - tag: Technology
   uri: http://dbpedia.org/resource/Technology
