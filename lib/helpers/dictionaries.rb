@@ -61,6 +61,11 @@ module LifePreserver
 
       hunspell_lang = find_closest_lang(lang.to_s)
 
+      unless hunspell_lang
+        warn "Unable to resolve a locale for language '#{lang}' from the following candidates: #{Locale.app_language_tags.map(&:to_s).join(', ')}. Spellchecking not enabled for this language."
+        return
+      end
+
       if @@dictionaries.key?(hunspell_lang)
         return @@dictionaries[hunspell_lang]
       end
@@ -78,11 +83,7 @@ module LifePreserver
       lang_tag = Locale::Tag.parse(lang).to_simple
       locale = Locale.app_language_tags.find { |c| c.to_s.start_with?(lang_tag.to_s) }
 
-      unless locale
-        raise "Unable to resolve a locale for language '#{lang}' from the following candidates: #{Locale.app_language_tags.map(&:to_s).join(', ')}"
-      end
-
-      locale.to_s
+      locale&.to_s
     end
 
     def dictionaries

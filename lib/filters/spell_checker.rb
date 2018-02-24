@@ -71,6 +71,8 @@ class SpellChecker < Nanoc::Filter
 
         node_lang = find_node_lang(node)
         dic = dictionary(node_lang)
+        next unless dic
+
         depend_on_attributes(dic.dependencies)
 
         checked_text = node.text.dup.gsub(/([[:word:]]+(?:['’][[:word:]]+)?)/) do |word|
