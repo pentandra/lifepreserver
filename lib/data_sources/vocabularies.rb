@@ -68,9 +68,17 @@ Class.new(Nanoc::DataSource) do
     # HACK: until we have better handling of ontology definitions at a
     # different uri than the namespace uri.
     if vocab == RDF::Vocab::VOID
-      return 'http://vocab.deri.ie/void'
+      'http://vocab.deri.ie/void'
+    elsif vocab == RDF::Vocab::CC
+      'http://creativecommons.org/ns'
+    elsif vocab == RDF::Vocab::SKOS
+      'http://www.w3.org/2004/02/skos/core'
+    elsif vocab == RDF::Vocab::XHV
+      'http://www.w3.org/1999/xhtml/vocab'
+    elsif vocab == RDF::Vocab::VCARD
+      'http://www.w3.org/2006/vcard/ns'
+    else
+      vocab.ontology ? vocab.ontology.value : vocab.to_uri.value
     end
-
-    vocab.ontology ? vocab.ontology.value : vocab.to_uri.value
   end
 end
