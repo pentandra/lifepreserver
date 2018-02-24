@@ -5,7 +5,8 @@ description: >
 kind: essay
 author_name: Chris Chapman
 created_at: 2016-09-29
-updated_at: 2016-10-12
+updated_at: 2017-11-17
+cover_image_id: '/static/blog/posts/putting-the-pieces-together-culture/Sanctuary_-_Berlin_Wall.JPG'
 tags: 
   - Scholarly Commons
   - Holism
@@ -13,42 +14,51 @@ tags:
   - Connections
   - FORCE11
   - Opinionated
+  - Culture
+  - Enlightenment
+  - Joy
+  - Review
 has_media: true
 ---
 
-<figure id="journey-of-defining-the-commons" property="schema:sharedContent" class="img" resource="#journey-of-defining-the-commons" typeof="schema:ImageObject">
-  <link property="schema:representativeOfPage" resource="schema:True" />
-  <link property="rdfa:copy" resource="pentandra-website:license" />
-  <meta property="schema:width" content="832 px" datatype="schema:Distance" />
-  <meta property="schema:height" content="624 px" datatype="schema:Distance" />
-  <meta property="schema:contentSize" content="63KB" />
-  <img property="schema:contentUrl" class="static" alt="A map of the world that depicts a journey by sea, starting near Madrid, Spain, then heading southward through the Atlantic Ocean to the Southern Ocean, around Cape Horn, and up the coast of South America, arriving finally at San Diego, California, with a few squiggly detours along the way" src="journey_of_defining_the_scholarly_commons.jpg" />
-  <figcaption property="schema:caption">A map of our journey so far of defining the Scholarly Commons, from Madrid, Spain, to San Diego, California. <span property="schema:hasPart" typeof="schema:ImageObject"><a property="schema:url" href="watercolor_HdLwglsB1l0.png">Map tiles</a> by <a property="cc:attributionName" rel="cc:attributionURL" href="http://stamen.com/">Stamen Design</a>, licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/3.0/">CC-BY</a> license. <span class="icon-cc"></span><span class="icon-cc-by"></span></span></figcaption>
-</figure>
+This is actually the prequel to [a post][technology] that was published earlier
+this year about putting the pieces of technology together. Many of the ideas
+about technology for scholarly commoning are much more simple and
+straightforward, and I've really struggled with knowing how to express some of
+the complex thoughts about the culture of the Scholarly Commons in this piece.
+Several metaphors I want to share are politically charged, or at least they
+were in their time. My motivation for sharing them is not to advocate for or
+against any nation-state or political philosophy, but to illustrate the
+diversity of the issues that we must face and come to understand on our journey
+towards a scholarly commons, which is something hard to describe and much, much
+bigger than any of us. Again, keep in mind that these are my own thoughts, and
+do not necessarily represent the views of the [Scholarly Commons Working
+Group][SCWG] of FORCE11.
 
-Last week I had the opportunity to participate in the second workshop of the
-Defining the Scholarly Commons project (I covered the first workshop in <%=
-link_to('an earlier blog posting', '/blog/reimagining-research-communications/',
-title: 'Pentandra Blog → Reimagining Research Communications') %>).
-As you can tell from the squiggly line above, our course has not been straight,
-neither has it been smooth sailing. We have learned a lot, however, and even
-made some progress in the meantime.
+<% render('/partials/image.*', id: 'clash-of-cultures', image: @items[@item[:cover_image_id]], representative_of_page: true) do %>
+The Scholarly Commons explores the intersection and convergence of many tensions, including: individuality and society, human and machine, capitalism and socialism, global and local, east and west, north and south, left and right, top and bottom, love and fear, public and private, past and future, tradition and modernity, amateur and professional, formality and informality, open and closed, anarchy and academy, prestige and participation, exclusivity and inclusivity, priority and sharing, knowledge and ignorance. <span resource="#vrubel-street-art" rev="schema:photo" typeof="schema:Painting">Annotated street art by <a property="cc:attributionName" rel="cc:attributionURL" href="https://en.wikipedia.org/wiki/Dmitri_Vrubel">Dmitri Vrubel</a>, painted circa <time property="schema:dateCreated">1989</time> on the <span property="schema:locationCreated" typeof="schema:LandmarksOrHistoricalBuildings"><a rel="schema:sameAs" href="https://en.wikipedia.org/wiki/East_Side_Gallery">East Side Gallery</a> of the Berlin Wall</span>. The Russian caption can be translated loosely as "<a property="schema:name" rel="schema:sameAs" href="https://en.wikipedia.org/wiki/My_God,_Help_Me_to_Survive_This_Deadly_Love">My God, Help Me to Survive This Mortal Love</a>"</span>. <a rel="pav:retrievedFrom" href="https://commons.wikimedia.org/wiki/File:Sanctuary_-_Berlin_Wall.JPG">Photographed</a> in <time property="schema:dateCreated">2005</time> by <a property="cc:attributionName" rel="cc:attributionURL" href="https://en.wikipedia.org/wiki/User:Victorgrigas">Victor Grigas</a>. <span rel="license" resource="http://creativecommons.org/publicdomain/mark/1.0/" class="icon-cc-pd" title="Public Domain"></span>
+<% end %>
+
+Last year I had the opportunity to participate in the second workshop of the
+Defining the Scholarly Commons project. For many of us, this workshop was one
+we have been truly anticipating, the culmination of a lot of thought and
+discussion of some very fundamental matters. As can be expected, we each
+embarked upon this project from different places and with different
+expectations, and it seems that all of our diverse streams of thought converged
+on the inputs and outputs of this one workshop. It was good that the workshop
+was held on the top floor of a fifteen-story building, with many windows,
+plenty of fresh air, and a nice balcony upon which to exercise [the law of two
+feet].
 
 <!--MORE-->
 
-For our steering committee, this workshop was one we have been truly
-anticipating, the culmination of a lot of thought and discussion of some very
-fundamental matters. As can be expected, many of us embarked upon this project
-from different places and with different expectations, and it seems that all of
-our diverse streams of thought converged on the inputs and outputs of this one
-workshop. It was good that the workshop was held on the top floor of a
-fifteen-story building, with many windows, plenty of fresh air, and a nice
-balcony upon which to exercise [the law of two feet].
-
-During this workshop there was a main track that was needed to fulfill some of
-the original Helmsley grant requirements, which [Jeroen Bosman]{lang=nl} and
-[Bianca Kramer]{lang=nl} expertly designed to fit the theme of _putting the
-pieces together_. At many points in the program, participants also had the
+The workshop was originally organized around a main track designed to fulfill
+some of the original Helmsley grant requirements. [Jeroen Bosman]{lang=nl} and
+[Bianca Kramer]{lang=nl} expertly designed this track to fit the theme of
+_putting the pieces together_, using some of the existing tools aggregated as
+part of the [Innovations in Scholarly Communication][101 innovations] project
+as the pieces. I have tried to describe this exercise in [the earlier
+post][main track]. At many points in the program, participants also had the
 opportunity to propose or join an unworkshop session to discuss any related
 topic or perspective that they desired. Despite a somewhat rocky beginning, I
 am happy that people were able to share and participate in what mattered to
@@ -78,10 +88,20 @@ problems, yet the ultimate prize is to have an article published in a northern
 journal. All this imbalance and inequity has lead to serious pressures and real
 problems for researchers of all kinds.
 
-Several of us on the steering committee thought it was a cool coincidence that
-these first two workshops has been Spanish themed. We started in Madrid, and
-now we're in San Diego, and were able to use the colors of each city flag in
-designing the workshop logos, and it just worked. But looking at [the map
+<figure id="journey-of-defining-the-commons" property="schema:sharedContent" class="img" resource="#journey-of-defining-the-commons" typeof="schema:ImageObject">
+  <link property="schema:representativeOfPage" resource="schema:True" />
+  <link property="rdfa:copy" resource="pentandra-website:license" />
+  <meta property="schema:width" content="832 px" datatype="schema:Distance" />
+  <meta property="schema:height" content="624 px" datatype="schema:Distance" />
+  <meta property="schema:contentSize" content="63KB" />
+  <img property="schema:contentUrl" class="static" alt="A map of the world that depicts a journey by sea, starting near Madrid, Spain, then heading southward through the Atlantic Ocean to the Southern Ocean, around Cape Horn, and up the coast of South America, arriving finally at San Diego, California, with a few squiggly detours along the way" src="journey_of_defining_the_scholarly_commons.jpg" />
+  <figcaption property="schema:caption">Is the Scholarly Commons a repetition of the Spanish colonialization of old? <span property="schema:hasPart" typeof="schema:ImageObject"><a property="schema:url" href="watercolor_HdLwglsB1l0.png">Map tiles</a> by <a property="cc:attributionName" rel="cc:attributionURL" href="http://stamen.com/">Stamen Design</a>, licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/3.0/">CC-BY</a> license. <span class="icon-cc"></span><span class="icon-cc-by"></span></span></figcaption>
+</figure>
+
+Several of us thought it was a cool coincidence that these first two workshops
+has been Spanish themed. We started in Madrid, and now we're in San Diego, and
+were able to use the colors of each city flag in designing the workshop logos,
+and it just worked. But looking at [the map
 above](#journey-of-defining-the-commons) from more of an _evil_ point of view,
 our journey from Madrid to San Diego could be thought of as a journey of
 _conquest_. Isn't this the same path that [Juan Rodríguez Cabrillo][cabrillo]
@@ -90,43 +110,181 @@ not what we have in mind. The difference is that we are not
 [conquistadores]{lang=es} and we are not trying to create an
 [[encomienda]{lang=es}][encomienda] system[^citizen_science] here! In fact, the
 struggles and inequities of the current system are the very things from which
-we are trying to get away. I think there's a lesson from history here from
+we are trying to get away.
+
+As April Hathcock has [clearly articulated][april], the Scholarly Commons has
+to be more than "paid lip service to plurality and global contexts---indeed, to
+the heart of commoning". We need to face some difficult questions and
+acknowledge the fact that many are stuck in a system where they don't have
+freedom to practice they way they would like to. We need to be open to the
+possibility that the Northern system we're so used to thinking about may
+actually be local and that the culture of a global system for scholarship and
+science may actually look and feel very different than anything that we have
+ever imagined. If what we're calling the "Scholarly Commons" looks too much
+like the existing Northern system, it is probably an indicator that we have not
+thought about this enough. I think there are lessons from history here from
 which we should learn---and things we should not repeat. Groundbreaking
 opportunities exist to try to do things a different way. We have a chance to do
-something good here, and it is critical that we do it right.
+something good here, and it is critical that we do it right. We need _real
+conversation_ to take place to take advantage of this opportunity.
+
+Because this essay is not a review exclusively of the San Diego workshop but is
+trying to put the pieces of the culture of the Scholarly Commons together (at
+least for myself), I'm going to bring in a few other thoughts and sources as I
+work through some of my thinking. As part of the diversity panel at OpenCon
+this year, [Thomas Hervé]{lang=fr} [Mboa Nkoudou]{lang=ewo}
+
+As I see it, the Scholarly Commons needs to disrupt these centers of power and
+displace existing value structures, or we will never get to the point that
+things are fair and equitable. If it doesn't, we will be forever trying to play
+catch-up with an incumbent system which has a 350 year head start. We will get
+nowhere trying to fight it. We need an alternative system that is 'driven by a
+different logic.'
+
+different trading unit. If we can create 'a constellation of working
+alternatives driven by a different logic', we may have an opportunity to
+
+![A slide from [Thomas Hervé]{lang=fr} [Mboa Nkoudou's]{lang=ewo} presentation at OpenCon 2017 depicting how current practices around Open Access are entrenching incumbent centers of power and enabling a culture of cognitive injustice and epistemic alienation.](centers_of_power.svg){.simple #centers-of-power}
+
+Each of us comes with bias. It is useful to acknowledge it for what it is, but
+it is nothing to be ashamed of! If we took away our bias, what would be left?
+With it would go our conscience and our ability to act.
+
+During {} session she had invited several
+I do not remember having a choice in being born where I was.
+
+None of us like to be labelled. Any label is an oversimplification and
+objectification of who we are. We are complex beings.
+
+Even though the Madrid workshop quickly did away with in the old system, in the
+real world, however, we can't just start from scratch. Once we collectively
+know where it is that we need to go together, each of us will have to
+_transition smoothly_ from where we are to where to where we want to be.
+Nobody---I don't care whether you are located in the North, South, East, West,
+the Moon, or on Mars---will be there already.
+
+I have already talked about the reaction to the main track of the workshop. In
+saying what I'm about to say here, I do not discount the motivations for doing
+What I have not talked about was the intent of the exercise, and I think that
+was lost on those that left the exercise. I also left the exercise to join the
+Southern discussion, because I felt like there was something for me to learn
+there. But I was involved in some of the pre-workshop discussions. We talked
+about focusing on more abstract practices instead, but felt like using more
+concrete tools would help facilitate the discussion. But I think we
+underestimated either how local some of these tools were, or perhaps how much
+of the world had rejected these practices.
+
+April called the main track of the workshop a colonialization of the world from
+the North. I would agree that that is how it was presented. However, I think it
+is more complicated than that. People from the North are also not satisfied
+with the current system. It is an aging system that even 70 years ago was
+[totally inadequate for its purpose][manifesto]. It is inequitable in many
+dimensions, not just from North to South. So if there was one thing I could say
+to April (or to any others that are struggling with what we're trying to do
+here) it would be: don't give up. We're all learning. I think any of us would
+readily admit that we don't understand every aspect of what this will be or
+look like. I don't even think that we yet know all of what needs to be known or
+considered. I don't think really anyone can or will, or even whether it is
+necessary that any one person does need to know and understand this from every
+possible perspective. I'm not even sure any one person can. None of us are
+there yet. We can only do the best that we know how to do. The important thing
+for each of us to know is that there is something here worth pursuing. And we
+shouldn't give up on this until we get there. And we can only get there
+together. We can't get there alone.
+
+Science and scholarship must move beyond this esoteric culture and become an
+integrated part of societies.
+
+For the last year I have had very limited access to the Internet. I am not
+affiliated with a university. All any of us can do is to act in the position in
+which we have been placed. Is there anything else any of us could do?
+
+As as a colonialization of the world by the Global North, the Scholarly Commons
+would be an epic failure. The only ones that would be happy with that
+arrangement would be those who are currently at the center of Wallerstein's
+[world-systems theory]. [Juan Pablo Alperin]{lang=es} has depicted what that
+world would look like for scholarship:
+
+<figure id="world-according-to-the-web-of-science">
+<img class="simple" alt="The world distorted by the number of documents published by author's country. The more papers published, the bigger and more distorted the country." src="isi_articles_cartogram.png" />
+<figcaption>Our World according to the [Web of Science]. Compare this [distorted world] with [the Mercator-projected][mercator] [map above](#journey-of-defining-the-commons).</figcaption>
+</figure>
+
+We also need to acknowledge that all of the diversity discussion is not an end
+in itself. There is a purpose for it! People just want to feel needed. They
+want to feel valued. They want to feel understood. They want to feel connected
+to community. They want to feel that they have something special that only they
+can offer---that they have some meaningful contribution to society. But many
+people do not feel this right now.
+
+This is the heart of commoning.
 
 [I want to put forward here an alternative approach]{.newthought} to explaining
 where I think we are right now by comparing our situation with a few
 experiences of several early groups that encountered challenges similar in
-principle to what we're facing at this time. Maybe it's that Cameron Neylon has
-me [thinking about groups][groups] lately, but these particular groups stick
-out in history to me[^disclaimer] because of their unique accomplishments and
-the effects of their shared culture despite the fact that they came together
-from such distinctly divergent backgrounds and points of view.
+principle to what we're facing at this time. Perhaps exploring some of these
+ideas in a more concrete setting can help us see things as they are more
+clearly. Maybe it's that Cameron Neylon has me [thinking about groups][groups]
+lately, but these particular groups stick out in history to me because of their
+unique accomplishments, the manner in which their shared culture came about,
+and the lasting effects their culture had on a developing society, despite the
+fact that they came together from such distinctly divergent backgrounds and
+points of view.
+
+As I share these stories with you, I ask that you try to not look at them
+through your lens of [presentism]. It is hard to understand truly what it was
+like during this time for these people. It is far distant not only temporally
+but culturally from the experience of any person now alive. This difficultly is
+compounded by the fact that very few records exist from this time period, and
+those that do exist carry their own biases. That said, I'm trying to dig a
+little deeper here. I'm using Nathaniel Philbrick's book [<cite>Mayflower: A
+Story of Courage, Community, and War</cite>][Mayflower] as inspiration, and I
+have taken a few brief forays into Bradford's [<cite>History Of
+[Plimmoth]{.sic} Plantation</cite>][Bradford's History]. What I've discovered
+is that things were a lot more complicated than the stories I heard growing up
+reveal. I would not be surprised to learn that similar stories of disparate
+groups coming together are found in the histories of many cultures around the
+world, though I am biased and love the stories of the founding of the United
+States. I picked these specific examples from history because they are familiar
+to me (I knew about them), and they seemed to fit my conception of the
+Scholarly Commons as a break from the old ways: something completely new, not
+an incremental redesign of our current system of scholarly communication.
+
+I'm not using this story to bring up how fairly or not fairly these people were
+being treated. I'm also not bringing it up to extoll the virtues of democracy
+or my own political position. So please don't fall into these traps. I'm
+bringing up this story to illustrate a very visible and almost iconic situation
+in which many disparate and diverse peoples came together to create a unified
+culture. There was something there that was bigger than any of them that made
+working together to find it worthwhile.
 
 What we're trying to accomplish with the Scholarly Commons has some striking
 similarities to what we know of the circumstances surrounding the venture of
 the [Plymouth Colony] and specifically the signing of the [Mayflower Compact].
 As I contemplate where we are with the Scholarly Commons, I see this early
 venture with new eyes. I see groups of people with significant differences (in
-the colonists' case significant religious differences, in our case the
-differences are more diverse) coming together for a common purpose. They had
-the opportunity to leave it all---to run away from their differences, but they
-chose not to.
+the colonists' case significant religious and cultural differences, in our case
+the differences are more diverse) coming together for a common purpose. They
+had many opportunities to run away from their differences, but they chose not
+to. They "did not live in a static idyll of mutual support. Instead, it was
+fifty-five years of struggle and compromise---a dynamic, often harrowing
+process of give and take. As long as both sides recognized that they needed
+each other, there was peace." They needed each other, and as long as they
+recognized that fact, they stuck together and there was peace.
 
-First for some background. Two groups were on board the Mayflower: those who
-commissioned the ship, and those who were commissioned to manage the ship and
-help setup a colony (the crew). According to language of the former (who kept
-the only records we have of this experience), these two groups were referred to
-respectively as the Saints and the Strangers. (These labels may give some
-insight into the obvious tensions between the two groups.) Unlike most of their
-contemporaries headed to the New World, these colonists were not entrepreneurs
-or [conquistadores]{lang=es} determined to conquer indigenous peoples, but came
-seeking freedom to practice religion the way they believed. This difference
-obviously changed how they approached problems, and with much patience and
-determination they were able to develop relationships of trust and mutual
-respect with each other as well as with the indigenous tribes of the New
-World.[^massasoit] They learned from each other. They helped each other. Their
+First for some background. Two groups started together on board the Mayflower:
+those who commissioned the ship, and those who were commissioned to manage the
+ship and help setup a colony (the crew). According to language of the former
+(who kept the only records we have of this experience), these two groups were
+referred to respectively as the Saints and the Strangers. (These labels may
+give some insight into the obvious tensions between the two groups.) Unlike
+most of their contemporaries headed to the New World, these colonists were not
+entrepreneurs or [conquistadores]{lang=es} determined to conquer indigenous
+peoples, but came seeking freedom to practice religion the way they believed.
+This difference obviously changed how they approached problems, and with much
+patience and determination they were able to develop relationships of trust and
+mutual respect with each other as well as with the indigenous tribes of the New
+World. They learned from each other. They helped each other. Their
 circumstances were not perfect, nor was every choice that was made. People
 goofed up on both sides. But they kept trying, got some things right, and they
 did something that had never been done before. They showed the world that what
@@ -148,17 +306,18 @@ they "would use their own liberty; for none had power to command
 them."[^bradford] They were wanting to go at it in the new place on their own,
 every man for himself. Others, in what I see as a moment of inspiration,
 thought it would be better to cooperate and help each other, especially as they
-arrived in this cold place in late November. They drafted a compact that they
-hoped everyone would agree to and sign before they left the ship. Thankfully,
-and after some persuasion, they all consented to sign for the sake of order and
+arrived in this cold place in late November in a part of the world that would
+eventually be called New England. They drafted a compact that they hoped
+everyone would agree to and sign before they left the ship. Thankfully, and
+after some persuasion, they all consented to sign for the sake of order and
 survival. I like to think that they also may have signed to take advantage of
 an opportunity to do something that very few of their Old World predecessors
-had ever had the opportunity to do: deliberately coming together and _creating
-their own government_.
+had ever had the opportunity to do: deliberately coming together and _taking a
+part_ in creating their own government.
 
 <figure id="the-mayflower-compact" class="img" resource="#the-mayflower-compact" property="schema:sharedContent" typeof="schema:ImageObject">
   <img alt="Passengers of the Mayflower signing the 'Mayflower Compact' including Carver, Winston, Alden, Myles Standish, Howland, Bradford, Allerton, and Fuller." src="The_Mayflower_Compact.jpg" />
-  <figcaption>The depiction in <i property="schema:title">Signing the Mayflower Compact 1620</i>, by <a href="https://en.wikipedia.org/wiki/Jean_Leon_Gerome_Ferris">Jean Leon Gerome Ferris</a>, resembles the journey we have undertaken to converge upon the principles of the Scholarly Commons.</figcaption>
+  <figcaption>A traditional depiction of this formative experience in <i property="schema:title">Signing the Mayflower Compact 1620</i>, by <a href="https://en.wikipedia.org/wiki/Jean_Leon_Gerome_Ferris">Jean Leon Gerome Ferris</a>. The situation in which these people found themselves parallels our current situation as we consider the Scholarly Commons (though in this new culture, the women will do more than knit :sparkles:).</figcaption>
 </figure>
 
 The compact was simple enough. They covenanted to "combine \[them\]selves
@@ -176,55 +335,149 @@ that point about deciding on specifics such as laws; those details could be
 worked out later as the need arose. With the possibility of mutiny hanging over
 their heads, these two groups effectively said on that cold November day in New
 England: _for our own survival, we need to be and to move forward together_. A
-brilliant example of self-organization to meet a critical need.[^rough-winter]
+brilliant example of self-organization to meet a critical need.
 
 ## A clash of cultures
 
+And it was good they did this too, because they needed everyone that was able
+to help to make it through that first winter. More than half of the colonists
+died that winter, and the rest needed that unity to survive.
+
+Before preparing this essay, I did not realize how fortunate these people were
+in landing where they did, when they did.
+
+The Plymouth colonists show this determination to bridge differences with
+courage and their great fortune later on in their treaty with [Massasoit], the
+great chief of the Wampanoag Indians, on March 22 the next year.
+
 The next spring, the colonists had the opportunity to enter into an agreement
 with a group from another culture: Massasoit, the well-respected leader of the
-Wampanoag Indian tribe. 
+Wampanoag Indian tribe.
+
+What I want to point out here is that the colonists could have tried to go down
+the path of viewing this other culture as the enemy and trying to destroy or
+enslave them. Thanks to good leadership they did not go down this path, but
+respected the indigenous peoples, and sought out opportunities to learn from
+them. The group was very weak at this point. Over half would not survive this
+first winter. William Bradford thought that sharing knowledge might be the key
+to their survival.
+
+Massasoit had tried everything he knew to get rid of the settlers.... But in
+the end he too realized that it was better to get along than to not. Culture
+change was in the air.
 
 Squanto and his friend.
 
+When things broke down in the end, "it was not because relentless and faceless
+forces had given the Indians no other choice. Those forces had existed from the
+very beginning. War came to New England because two leaders---Philip and his
+English counterpart, Josiah Winslow---allowed it to happen. For Indians and
+English alike, there was nothing inevitable about King Philip's War, and the
+outbreak of fighting caught almost everyone by surprise." "After fifty-five
+years of peace, the lives of the Native and English peoples had become so
+intimately intertwined that when fighting broke out, many of the region's
+Indians found themselves, in the words of a contemporary chronicler, 'in a kind
+of maze, not knowing what to do.' Some Indians chose to support Philip; others
+joined the colonial forces; still others attempted to stay out of the conflict
+altogether." It was the ultimate tragedy of the commons that caused the
+outbreak of King Phillip's War. I can't explain it all---if you want to know
+more, read the book. ;-)
+
 ## A new land of opportunity
 
-{::comment}
-Now what we're doing here is not religious in nature, but I do see similarities
-in the motivations and desires between the two experiences. Many are stuck in a
-system where they don't have freedom to practice they way they would like to.
-In saying this, I'm not trying to say that being able to publish something open
-access is as important as the free practice of religion, or that professional
-researchers have suffered as much as those early Christians, or that I'm trying
-to cast people into stereotypes, which I'm not.
-{:/comment}
+The Scholarly Commons needs to
+be rather a [_colonization_][colonization] of _a new land of shared practice_
+by people from all parts of the world, nations, cultures, and languages, that
+are willing to say that we can do better, and we will do it together. It is a
+space where we can bring together the best of our cultures. We need the
+widespread open culture of the South (which is exemplified in efforts such as
+[SciELO]). We need to leave behind the ego or prestige culture of the North. It
+may be that the North has further to travel, and that the South may not have as
+far to go. Whichever way you see it, we need to continue these conversations.
+The fact that these conversations are happening at all is a good thing. We're
+all coming at this from where we are. But is there any other place from which
+we _could_ come? I see these conversations, however uncomfortable, candid, or
+mind-blowing as the beginning of the commons! They have to happen, and the
+important thing is that we create a culture of learning: that we're willing to
+learn and grow and change as we go. This new land that we have embarked upon is
+full of ripe possibility. What is important is that we commit to come together
+to do something greater than any of us, and that we involve as many voices as
+would like to be heard so we can create something well-rounded and balanced. We
+need something that everyone can touch.
 
-Now, as April Hathcock has [so nicely articulated][april], we need _real
-conversation_ to take place to take advantage of this opportunity. We need to
-learn from each other, the North from the South, the West from the East, and
-vice versa. This can't be a colonialization of the world by the Global North.
-This would be an epic failure. The Scholarly Commons needs to be rather a
-[_colonization_][colonization] of _a new land of shared practice_ by people
-from all parts of the world, nations, cultures, and languages, that are willing
-to say that we can do better, and we will do it together. It is a space where
-we can bring together the best of our cultures. We need the widespread open
-culture of the South (which is exemplified in efforts such as [SciELO]). We
-need to leave behind the ego or prestige culture of the North. It may be that
-the North has further to travel, and that the South may not have as far to go.
-Whichever way you see it, we need to continue these conversations. The fact
-that these conversations are happening at all is a good thing. We're all coming
-at this from where we are. But is there any other place from which we _could_
-come? I see these conversations, however uncomfortable, candid, or mind-blowing
-as the beginning of the commons! They have to happen, and the important thing
-is that we create a culture of learning: that we're willing to learn and grow
-and change as we go. This new land that we have embarked upon is full of ripe
-possibility. What is important is that we commit to come together to do
-something greater than any of us, and that we involve as many voices as would
-like to be heard so we can create something well-rounded and balanced. We need
-something that everyone can touch.
+de-Westernization. Anti anything is not the answer.
+
+Wallerstein's theory and my thought that we need a new value, something that
+will help us move forward without all the baggage from the past. A new market
+unit for research.
+
+DIY science and scholarship marks a rejection of the traditional academic
+system as a way forward. But they are struggling with funding, and it has
+essentially turned into something that is done on a volunteer basis alone. They
+need their day jobs.
+
+We don't want to be stuck with this same stupid system either! Why are you
+leaving the North out? We have all these people from around the world that are
+not happy with the current system. So why don't we get together and make
+something better?
+
+In his book, [Mvé-Ondo]{lang=ewo} states:
+
+<figure id="to-a-truly-shared-science" class="bq grab">
+
+> The whole question, then, is how to move from a Westernization of science to
+> a truly shared science, undergirded by a "multiplicity of epistemologies".
+
+<figcaption>--- [Bonaventure Mvé-Ondo]{lang=ewo}, from <cite>Africa: The Scientific Divide</cite> p. 48</figcaption>
+</figure>
+
+The Scholarly Commons is not something that will be finished any more than
+democracy is ever finished or perfected. It is something that needs to be built
+into the mind and heart of each person---each commoner. It is a work in
+progress. "Culture is not an absolute, but a movement enabling human beings to
+respond to the promptings and challenges of life."
+
+Because the Scholarly Commons is not simply an extension of the North or of any
+other corner of the Earth, it is hard to tell what this shared system will look
+like or how it will behave. As we incorporate more diverse viewpoints and
+perspectives into this new system, we will get a clearer and clearer vision of
+what it is, and what is local will be better and better understood as such.
+
+This vision has to be much bigger than equitable work conditions and
+opportunities. It has to be much bigger than research methodologies or
+technologies. It must go beyond open, FAIR, and citable. While it certainly
+will address these things, the Scholarly Commons must transcend institution and
+state. The Scholarly Commons must reshape our understanding of knowledge and
+the relationships that knowledge has with societies. While encouraging local,
+home-grown knowledge, it must scale to the other end of the spectrum and supply
+something as fundamental as oxygen---a universal element that gives breath to
+new ideas and from which individual societies can maintain life and grow.
+
+<figure id="ideas-should-freely-spread-like-the-air" class="bq grab">
+
+> That ideas should freely spread from one to another over the globe, for the
+> moral and mutual instruction of man, and improvement of his condition, seems
+> to have been peculiarly and benevolently designed by nature, when she made
+> them, like fire, expansible over all space, without lessening their density
+> at any point, and like the air in which we breathe, move, and have our
+> physical being, incapable of confinement or exclusive appropriation.
+
+<figcaption>--- Thomas Jefferson</figcaption>
+</figure>
+
+We need to move beyond the idea that research is the domain of academic
+institutions. The Scholarly Commons is not _for_ researchers. It is for a
+demographic that has been largely absent from these discussions: everyone else.
+It is a renaissance that reorients researchers to the true purpose of
+scholarship and science: to help others and to make the world a better place.
+However, the Scholarly Commons has to be more cheery thoughts and wishful
+thinking. We have to be able to survive out here. The Scholarly Commons must be
+a complete, sustainable system for the future of scholarship and science---a
+new land of opportunity.
 
 # Our great decision
 
-We also face a critical decision at this point in time. Our choice is not about
+We face a critical decision at this point in time. Our choice is not about
 winter survival in a cold bay in New England, but the Scholarly Commons _could
 be thought of_ as a new land or frontier, a place that we don't fully
 understand yet, but full of promise and potential. There is certainly a need
@@ -232,9 +485,9 @@ for _better ordering_ and _preservation_, and plenty of _ends aforesaid_. We
 may ask ourselves, what's wrong with just going at this on our own? There is so
 much potential out there, and people and organizations are already staking out
 their ground! Why not just let things go as they have done up to this point in
-time, and hope that it all works out? Isn't the <span
-lang="fr">laissez-faire</span> approach good enough? It has gotten us here,
-hasn't it!? _Why is it so important that we do this together?_
+time, and hope that it all works out? Isn't the [laissez-faire]{lang=fr}
+approach good enough? It has gotten us here, hasn't it!? _Why is it so
+important that we do this together?_
 
 Quite frankly, I don't think any of our current approaches have had the power
 to transform the current systems of scholarship. We need something more,
@@ -261,21 +514,25 @@ that earlier time, just on a much bigger scale.
 </figure>
 
 Now a scholarly commons is not a civil body, it's a commons---a middle ground
-somewhere between the grassroots level of people and the institutions of
-state.[^commons] A commons has no prescribed structure; it is whatever the
-people decide for it to be. It is a coming together of people for some greater
-purpose. In our case, the greater purpose is _the
-contributions_[^contributions] that further our understanding of who we are,
-the world, and everything else associated. The great decision we collectively
-face is whether to come together and establish a commons for scholarly and
-scientific research, or to continue doing things the way they have been done
-for so long, having some vague hope for positive change. We need to decide by
-our conduct and example whether societies of researchers are really capable or
-not of establishing good governance from reflection and choice, or whether we
-are forever destined to depend for their scholarly communications on accident
-and market forces. Without that choice, there is no Scholarly Commons nor
-indeed can there be, or at least not anything that will bring together and
-unite the researchers of the world in such a way.
+somewhere between the grassroots level of people and the institutions of state.
+A commons has no prescribed structure; it is whatever the people decide for it
+to be. It is a coming together of people for some greater purpose. In our case,
+the greater purpose is _the contributions_[^contributions] that further our
+understanding of who we are, the world, and everything else associated. The
+great decision we collectively face is whether to come together and establish a
+commons for scholarly and scientific research, or to continue doing things the
+way they have been done for so long, having some vague hope for positive
+change. Adapting [Hamilton's thought] to our current situation, we need to
+decide by our conduct and example whether societies of researchers are really
+capable or not of establishing good governance from reflection and choice, or
+whether they are forever destined to depend for their cognitive constitutions
+on accident and market forces. Without that choice, there is no Scholarly
+Commons nor indeed can there be, or at least not anything that will bring
+together and unite the people of the world in such a way.
+
+This intense awareness that we truly need each other to overcome the problems
+that we collectively face is the force that draws us together into a scholarly
+commons.
 
 [I see here an opportunity to do something]{.newthought} that has never been
 done before---something that would improve the lives of everyone, and to do it
@@ -284,16 +541,11 @@ the professional researchers, but will open up opportunities for many more
 people to become involved in knowledge work, and make knowledge itself more
 free and abundant.
 
-<figure id="ideas-should-freely-spread-like-the-air" class="bq grab">
-
-> That ideas should freely spread from one to another over the globe, for the
-> moral and mutual instruction of man, and improvement of his condition, seems
-> to have been peculiarly and benevolently designed by nature, when she made
-> them, like fire, expansible over all space, without lessening their density
-> at any point, and like the air in which we breathe, move, and have our
-> physical being, incapable of confinement or exclusive appropriation.
-
-<figcaption>--- Thomas Jefferson</figcaption>
+<figure id="reimagine-the-future">
+  <video class="simple" poster="Re-Imagine2.jpg" style="width: 100%; height: 100%;" preload="none" controls="controls">
+    <source type="video/youtube" src="https://www.youtube.com/watch?v=uA1Ri3LvIRs" />
+  </video>
+  <figcaption>[David Bollier and Anna Grear][commons-video] that explain why commons are so important, especially for the global problems that we now face.</figcaption>
 </figure>
 
 I see the Scholarly Commons as one of the most wonderful opportunities that has
@@ -308,6 +560,8 @@ expanding. Thinking more about it, though, isn't this what [the Web was
 originally intended][heading to oai8] to accomplish?
 
 # How can it be done?
+
+Not only diversity of the researchers, but the diversity of the research.
 
 I'm going to step forward through time and back down to reality for a minute,
 and face this question of diversity. Our diversity is an opportunity but it is
@@ -327,6 +581,8 @@ in this I think we can find some clues as to how we move forward. There are
 communities that are ready to work in new ways. We need to find these early
 adopters and experiment with new ways of working together.
 
+## One big thing or lots of little things?
+
 The Scholarly Commons is a _culture_ of the same sort as the culture of Open,
 or the spirit of freedom. It is not a software platform any more than GitHub is
 the Open Source Software culture. The Scholarly Commons will need software with
@@ -336,9 +592,15 @@ is with this culture, the less people will find fault with it.
 
 ## The necessity of a *counter*culture
 
+The Scholarly Commons does not carry as its leitmotif the top-down imposition
+of current academic norms, penetrating ever more deeply into society, and this
+has to go beyond equal opportunities for professional researchers. On the
+contrary, the Scholarly Commons calls for scholarship and science to occupy a
+new position in society.
+
 Using the language of Christopher Alexander's book <cite>[Notes on the
 Synthesis of Form]</cite>, this problem could be viewed as a problem of
-_fitness_. The old form that [Henry Oldenburg designed][PhilTrans venture] has
+_fitness_. The old form initiated by [Henry Oldenburg][PhilTrans venture] has
 outlived its purpose, and does not fit the needs of our situation anymore. We
 need a new form or _culture_ of scholarship that fits the current context.
 
@@ -400,6 +662,21 @@ based the <cite>[Tragedy of the Commons]</cite>.
 This new kind of researcher is one that is human, and willing to work outside
 of these stereotypes. One that cares about humanity.
 
+This new kind of researcher is what [Thomas Hervé]{lang=fr} [Mboa
+Nkoudou]{lang=ewo} [calls][humain-scientifique] the <dfn
+lang="fr">humain-scientifique</dfn> or the human-scientist. He separates the
+idea of a person (the scientist) that who acts like a machine in a laboratory,
+executing protocols without worrying about the existence of the world around
+him; and this new person (the human-scientist) who first poses ethical bases
+and questions the needs of society before undertaking a scientific project.
+
+In the _ session at FORCE2017, _ mentioned that she doesn't really like being
+labeled as a _Southerner_. I feel the same way in that I don't particularly
+like the term _Northerner_. While I think it is important to acknowledge my
+biases, I am a multifaced being. I am more than my biases. I am more than where
+I live. I want to be seen and valued for the contributions that only _I_ can
+make. And I want to see others the same way.
+
 The Scholarly Commons is an opportunity to forgive, move forward, and overcome
 the effects of colonialism. Greed vs
 
@@ -411,24 +688,42 @@ So this essay started out as an assignment to write my thoughts in less than
 400 words as to what the Scholarly Commons _is_ and the direction that we go
 next for the principles. If you've made it this far in this post, you have
 realized how far I have failed. But if I was to sum up my thoughts into a very
-high-level statement of what the Scholarly Commons is, here's what I would say:
+high-level, concise statement of what the Scholarly Commons is (even though I'm
+not sure that I should), here is what I would say:
 
 <div class="big">
 
 <dfn id="the-scholarly-commons">The Scholarly Commons</dfn> is the opportunity
-to come together and create a new culture of commoning on scholarly and
-scientific knowledge.
+to come together and take part in creating a shared culture of commoning that
+changes the way that society interacts with knowledge.
 
 </div>
 
-Bear in mind that these are my own thoughts, and do not necessarily represent
-the thoughts of our group. See this for some more perspectives.
+Why is this so important? [Mvé-Ondo]{lang=ewo} concludes, "The future ... does
+not depend on the battle against illiteracy or the conquest of poverty, but
+primarily on overcoming the scientific divide. By sharing [our] resources
+within the framework of formative projects with shared responsibilities and
+benefits, by taking advantage of digital tools to do so, by gaining and
+producing knowledge together, [we] can drive out scientific apartheid, modify
+the terms of the exchange, enrich certain paradigms and construct others, and
+contribute to a situation in which science---preceding the economy in
+this---will be perhaps the first place where human beings will tomorrow live in
+a truly shared global community."[^scientific-divide]
 
-As for the direction to go next with the principles, I think we need to create
-ways to preserve and continue these conversations. We need to find ways to
-broaden the conversations, and to invite more diverse groups to take part in
-them. Then we need to take what we discover and put it into practice, thereby
-creating scholarly and scientific commons for the good of all mankind.
+Even though [Mvé-Ondo]{lang=ewo} was specifically talking about Africa in this
+text, I feel that this is a common problem in culture and society, and that his
+statement could be applied in any context where a scientific or knowledge
+divide exists. We're not truly going to overcome poverty and other social
+injustices until [we can develop a culture where knowledge is used to lift each
+other instead of as a tool of alienation or repression, or even where it is
+used to divide and delineate], that the barriers not only to access, but to
+participation, are removed.
+
+As for the direction to go next, I think we need to create ways to preserve and
+continue these conversations. We need to find ways to broaden the
+conversations, and to invite more diverse groups to take part in them. Then we
+need to take what we discover and put it into practice, thereby creating
+scholarly and scientific commons for the good of all mankind.
 
 [the law of two feet]: <https://en.wikipedia.org/w/index.php?title=Open_Space_Technology&oldid=737741556#Law_of_two_feet> "The Law of Two Feet on Wikipedia"
 [vizcaino]: <https://en.wikipedia.org/wiki/Sebasti%C3%A1n_Vizca%C3%ADno> "Sebastián Vizcaíno on Wikipedia"
@@ -437,7 +732,7 @@ creating scholarly and scientific commons for the good of all mankind.
 [thanksgiving]: <https://en.wikipedia.org/wiki/Thanksgiving> "Thanksgiving on Wikipedia"
 [encomienda]: <https://en.wikipedia.org/wiki/Encomienda> "a labor system, rewarding conquerors with the labor of particular groups of people"
 [cabrillo]: <https://en.wikipedia.org/wiki/Juan_Rodr%C3%ADguez_Cabrillo> "Juan Rodríguez Cabrillo en Wikipedia" {lang=es}
-[new-video]: <http://bollier.org/blog/new-video-%E2%80%9Cre-imagine-future%E2%80%9D> "View more info on David Bollier's site"
+[commons-video]: <http://bollier.org/blog/new-video-%E2%80%9Cre-imagine-future%E2%80%9D> "View more info on David Bollier's site"
 [april]: <https://aprilhathcock.wordpress.com/2016/09/27/making-the-local-global-the-colonialism-of-scholarly-communication/> "Making the Local Global: The Colonialism of Scholarly Communication"
 [colonization]: <http://wikidiff.com/colonialization/colonization> "Colonization vs colonialization"
 [ravi]: <https://twitter.com/ravimurugesan> "Ravi on Twitter"
@@ -456,13 +751,28 @@ creating scholarly and scientific commons for the good of all mankind.
 [Tragedy of the Commons]: <https://en.wikipedia.org/wiki/Tragedy_of_the_commons> "Tragedy of the commons on Wikipedia"
 [open]: <http://cameronneylon.net/blog/not-what-not-who-or-how-but-why-is-open/> "Not what, not who, or how, but Why is Open? by Cameron Neylon"
 [heading to oai8]: </blog/heading-to-oai8/#p[WtoIaw],h[WtoIaw,1]> "Pentandra Blog → Heading to OAI8"
+[humain-scientifique]: <http://www.projetsoha.org/?p=1357> "Le Web et la production scientifique africaine : visibilité réelle ou inhibée? by Thomas Hervé Mboa Nkoudou"
+[world-systems theory]: <https://en.wikipedia.org/wiki/World-systems_theory> "World-systems theory on Wikipedia"
+[distorted world]: <http://jalperin.github.io/d3-cartogram/> "World scaled by number of documents in Web of Science by Authors Living There by Juan Pablo Alperin"
+[Web of Science]: <https://en.wikipedia.org/wiki/Web_of_Science> "Web of Science on Wikipedia"
+[presentism]: <https://en.wikipedia.org/wiki/Presentism_(literary_and_historical_analysis)> "Presentism on Wikipedia"
+[Mayflower]: <https://books.google.com/books?id=aw4MbnSCfnMC> "Mayflower: A Story of Courage, Community, and War"
+[Bradford's History]: <https://books.google.com/books?id=mGcOAAAAYAAJ> "History of Plymouth Plantation, 1620-1647, Volume 1"
+[technology]: <../putting-the-pieces-together-technology/> "The Pentandra Blog → Putting the Pieces Together: Technology"
+[SCWG]: <https://www.force11.org/group/scholarly-commons-working-group> "Scholarly Commons Working Group of FORCE11"
+[manifesto]: </research/#the-future-of-research> "Pentandra → The Future of Research: A Manifesto"
+[Mercator]: <https://en.wikipedia.org/wiki/Web_Mercator> "Web Mercator on Wikipedia"
+[main track]: </blog/putting-the-pieces-together-technology/#the-exercise> "The Pentandra Blog → Putting the Pieces Together: Technology → The Exercise"
+[101 innovations]: <https://101innovations.wordpress.com/>
+[hamilton's thought]: <#establishing-good-governance-from-reflection-and-choice>
 
 [^citizen_science]:
 
     Actually I've been thinking more and more that the term _citizen science_
     doesn't go far enough, and sometimes I worry that the practice ends up
     resembling an [[encomienda]{lang=es}][encomienda] system more than I would
-    like.
+    like. I am not alone in these thoughts. Lucy Patterson describes this
+    system as DIY science.
 
 [^bradford]:
 
@@ -522,24 +832,16 @@ creating scholarly and scientific commons for the good of all mankind.
     My point here does not have to do with North versus South or America versus
     Europe _per se_, and is certainly not meant to disparage or make light of
     any persons or groups from our collective past, but only to say that some
-    colonies were created not to establish dominion over other peoples, but for
-    higher, nobler motivations, for example: to escape the injustices or
-    tyrannies of an incumbent system. So from this point of view, the Scholarly
-    Commons is about a [_culture of open_][open], and about the _affordance_
-    that that new culture and sociality provides. The Scholarly Commons is a
-    new sociality or culture distinct from the traditional culture of
-    scholarship in much the same way that America was separate and distinct
-    from the social and political world of England.
-
-[^commons]:
-
-    Here's a recent video [from David Bollier and Anna Grear][new-video] that
-    explains why commons are so important, especially for the global problems
-    that we now face:
-
-    <video class="simple" poster="Re-Imagine2.jpg" width="100%" height="100%" style="width: 100%; height: 100%;" id="reimagine-the-future" preload="none" controls="controls">
-      <source type="video/youtube" src="https://www.youtube.com/watch?v=uA1Ri3LvIRs" />
-    </video>
+    colonies were created not to establish dominion over other peoples, but out
+    of necessity, for example: to escape the injustices or tyrannies of an
+    incumbent system. So from this point of view, the Scholarly Commons is
+    about a [_culture of open_][open], and about the _affordance_ that that new
+    culture and sociality provides. The Scholarly Commons is a new sociality or
+    culture distinct from the traditional culture of scholarship in much the
+    same way that America was separate and distinct from the social and
+    political world of England. Likewise, it could be said that it is precisely
+    the failure of the current systems of research communications that is
+    driving the cultivation of the new system of the Scholarly Commons.
 
 [^contributions]:
 
@@ -547,37 +849,17 @@ creating scholarly and scientific commons for the good of all mankind.
     cultural processes of creating knowledge and sharing it with others, not
     just technical resources.
 
-[^massasoit]: 
+[^scientific-divide]:
 
-    Before preparing this essay, I did not realize how fortunate these people
-    were in landing where they did, when they did.
-
-    The Plymouth colonists show this determination to bridge differences with
-    courage and their great fortune later on in their treaty with [Massasoit],
-    the great chief of the Wampanoag Indians, on March 22 the next year.
-
-[^disclaimer]:
-
-    I would not be surprised to learn that similar stories of disparate groups
-    coming together are found in the histories of many cultures around the
-    world, though I am biased and love the stories of the founding of the
-    United States. I picked these specific examples from history because they
-    are familiar to me (I knew about them), and they seemed to fit my
-    conception of the Scholarly Commons as a break from the old ways: something
-    completely new, not an incremental redesign of our current system of
-    scholarly communication.
-
-[^rough-winter]:
-
-    And it was good they did this too, because they needed everyone that was
-    able to help to make it through that first winter. More than half of the
-    colonists died that winter, and the rest needed that unity to survive.
+    [Bonaventure Mvé-Ondo]{lang=ewo}, <cite>[Afrique: la fracture
+    scientifique]{lang=fr} / Africa: The Scientific Divide</cite>,
+    [Futuribles]{lang=fr}, 2005, p 65.
 
 <% content_for :javascripts do %>
 <script>
 
   $(document).ready(function() {
-    $("#reimagine-the-future").mediaelementplayer();
+    $("#reimagine-the-future video").mediaelementplayer();
   });
 
 </script>
