@@ -4,7 +4,7 @@ description: We need true open access to knowledge.
 kind: essay
 author_name: Chris Chapman
 created_at: 2015-09-18
-updated_at: 2016-03-05
+updated_at: 2017-11-13
 published_at: 2015-10-01
 tags:
   - Connections
@@ -54,7 +54,7 @@ is in his or her mind, nor what he or she is thinking.
 <figure id="squarehead" class="img" property="schema:image" resource="#squarehead" typeof="schema:ImageObject">
   <link property="schema:representativeOfPage" resource="schema:True"/>
   <img property="schema:contentUrl" src="square_head.jpg" class="static" alt="Tête carrée, or Square Head, a library in Nice, France" />
-  <figcaption property="schema:caption"><a href="https://www.flickr.com/photos/14382098@N03/4300141401/" lang="fr" title="Une tête au carré à Nice on Flickr"><b>Une tête au carré à Nice</b></a> (A square head in Nice) by <a lang="fr" property="cc:attributionName" rel="cc:attributionURL" href="https://www.flickr.com/photos/14382098@N03/">Benoît Lesquerbault</a>, licensed under a <a rel="cc:license" href="https://creativecommons.org/licenses/by/2.0/">CC-BY</a> license, is actually the seven-story administration building of the municipal library in <span property="schema:contentLocation">Nice, France</span>. The sculptor, Sacha Sosno, uses the art of obliteration to invite the viewer to imagine the rest the sculpture. <span class="icon-cc"></span><span class="icon-cc-by"></span></figcaption>
+  <figcaption property="schema:caption"><a href="https://www.flickr.com/photos/14382098@N03/4300141401/" lang="fr" title="Une tête au carré à Nice on Flickr"><b>Une tête au carré à Nice</b></a> (A square head in Nice) by <a lang="fr" property="cc:attributionName" rel="cc:attributionURL" href="https://www.flickr.com/photos/14382098@N03/">Benoît Lesquerbault</a>, licensed under a <a rel="cc:license" href="https://creativecommons.org/licenses/by/2.0/">CC-BY</a> license, is actually the seven-story administration building of the municipal library in <span property="schema:contentLocation">Nice, France</span>. The sculptor, Sacha Sosno, uses the art of obliteration to invite the viewer to imagine the rest the sculpture. This might work for art, but not for research. <span class="icon-cc"></span><span class="icon-cc-by"></span></figcaption>
 </figure>
 
 Libraries are repositories of knowledge. You could think of books, the Web, and

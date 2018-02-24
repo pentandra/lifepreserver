@@ -12,14 +12,10 @@ Class.new(Nanoc::DataSource) do
   end
 
   def items
-    items = []
-
-    @tags.each do |tag|
+    @tags.map do |tag|
       tag.update(@additional_tag_data.find { |a| a[:tag] == tag[:tag] } || {})
-      items << tag_to_item(tag)
+      tag_to_item(tag)
     end
-
-    items
   end
 
   protected
