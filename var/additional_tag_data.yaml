@@ -202,7 +202,7 @@
   :type: http://dbpedia.org/class/yago/WikicatPhilosophicalMovements
 - :tag: Funding
   :uri: http://dbpedia.org/resource/Funding
-  :abstract: Funding is the act of providing financial resources, usually in the form
+  :abstract: 'Funding is the act of providing financial resources, usually in the form
     of money, or other values such as effort or time, to finance a need, program,
     and project, usually by an organisation or government. Generally, this word is
     used when a firm uses its internal reserves to satisfy its necessity for cash,
