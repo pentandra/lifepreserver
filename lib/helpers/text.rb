@@ -26,7 +26,7 @@ module LifePreserver
     # is concatenated to the last sentence of the previous paragraph without a
     # space between.
     def parse_abstract(abstract)
-      paragraphs = abstract.scan(/.+?(?<=[a-z0-9])[\.!\?]['"]?(?:(?=[A-Z0-9])|\z)/)
+      paragraphs = abstract.scan(/.+?(?<=[[[:lower:]][[:digit:]]\)'"])[\.!\?]['"]?(?:(?=[[[:upper:]][[:digit:]]])|\z)/)
       paragraphs.map { |p| "<p>#{p.strip}</p>\n" }.join
     end
   end
