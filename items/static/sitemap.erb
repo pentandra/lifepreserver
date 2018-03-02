@@ -1,4 +1,4 @@
 ---
 is_hidden: true
 ---
-<%= xml_sitemap(items: @items.reject { |i| i.unwrap.attributes[:is_hidden] || i.binary? }) if @config[:site][:generate_meta] %>
+<%= xml_sitemap(items: @items.reject { |i| i._unwrap.attributes[:is_hidden] || i.binary? }) if @config[:site][:generate_meta] %>

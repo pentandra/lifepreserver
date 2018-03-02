@@ -24,10 +24,10 @@ module LifePreserver
 
     def sorted_weblog
       blk = lambda do
-        unpublished_posts, published_posts = weblog.partition { |p| p.unwrap.attributes[:published_at].nil? }
+        unpublished_posts, published_posts = weblog.partition { |p| p._unwrap.attributes[:published_at].nil? }
 
-        unpublished_posts = unpublished_posts.sort_by { |p| attribute_to_time(p.unwrap.attributes[:updated_at]) }.reverse
-        published_posts = published_posts.sort_by { |p| attribute_to_time(p.unwrap.attributes[:published_at]) }.reverse
+        unpublished_posts = unpublished_posts.sort_by { |p| attribute_to_time(p._unwrap.attributes[:updated_at]) }.reverse
+        published_posts = published_posts.sort_by { |p| attribute_to_time(p._unwrap.attributes[:published_at]) }.reverse
 
         unpublished_posts + published_posts
       end
@@ -41,7 +41,7 @@ module LifePreserver
 
     # Relies upon Rules preprocessing to set the `:is_hidden` attribute.
     def published_weblog
-      blk = -> { sorted_weblog.reject { |p| p.unwrap.attributes[:is_hidden] } }
+      blk = -> { sorted_weblog.reject { |p| p._unwrap.attributes[:is_hidden] } }
       if @items.frozen?
         @published_weblog_items ||= blk.call
       else
@@ -53,7 +53,7 @@ module LifePreserver
       posts ||= published_weblog
       authors = Set.new
       posts.each do |post|
-        author_name = post.unwrap.attributes[:author_name]
+        author_name = post._unwrap.attributes[:author_name]
         next if author_name.blank?
         authors << author_name.to_s
       end
@@ -72,7 +72,7 @@ module LifePreserver
     #
     def posts_by_author(author_name, posts = nil)
       posts ||= published_weblog
-      posts.select { |post| post.unwrap.attributes[:author_name] == author_name }
+      posts.select { |post| post._unwrap.attributes[:author_name] == author_name }
     end
 
     # Get the all the posts published during the given year
@@ -83,7 +83,7 @@ module LifePreserver
     #
     def posts_by_year(year, posts = nil)
       posts ||= published_weblog
-      posts.select { |post| post.unwrap.attributes.key?(:published_at) && post.unwrap.attributes.fetch(:published_at).year == year }
+      posts.select { |post| post._unwrap.attributes.key?(:published_at) && post.unwrap.attributes.fetch(:published_at).year == year }
     end
 
     def link_for_archive(year)
@@ -93,8 +93,8 @@ module LifePreserver
     def archive_years(posts = nil)
       posts ||= published_weblog
       posts
-        .select { |post| post.unwrap.attributes.key?(:published_at) }
-        .map { |post| post.unwrap.attributes.fetch(:published_at).year }
+        .select { |post| post._unwrap.attributes.key?(:published_at) }
+        .map { |post| post._unwrap.attributes.fetch(:published_at).year }
         .uniq
         .to_a
     end

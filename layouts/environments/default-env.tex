@@ -100,7 +100,7 @@
 \setupexternalfigures
   [
     location=global,
-    directory={<%= Pathname.new(@item[:filename]).realpath.dirname %>, <%= Pathname.new(@items['/static/assets/images/*'].unwrap.attributes[:filename]).realpath.dirname %>},
+    directory={<%= Pathname.new(@item[:filename]).realpath.dirname %>, <%= Pathname.new(@items['/static/assets/images/*']._unwrap.attributes[:filename]).realpath.dirname %>},
   ]
 
 \definecolor[pentandrabrown][h=544233]
