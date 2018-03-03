@@ -4,7 +4,7 @@ description: Introducing a series of vignettes to gain insight into the Scholarl
 kind: blogpost
 author_name: Chris Chapman
 created_at: 2017-04-20
-updated_at: 2018-03-02
+updated_at: 2018-03-03
 cover_image_id: '/static/blog/posts/defining-the-scholarly-commons/1-Thierry-Noir-Howard-Griffin-Gallery_742_560_80_s_c1_smart_scale.jpg'
 tags:
   - Scholarly Commons
@@ -86,9 +86,9 @@ are willing to consider [a well-known parable][parable] that involves some
 blind monks from Indostan. Just as did the blind monks in this parable, people
 bring their own perspectives to the idea. The Scholarly Commons attracts people
 for so many different reasons that it is easy to wonder whether the Scholarly
-Commons can possibly accommodate such seemingly divergent views. And just like
-the elephant in this parable, the Scholarly Commons is something very specific.
-Yet it is a complex vision that cannot be defined by [a few
+Commons can possibly accommodate such seemingly divergent views. In addition,
+just like the elephant in this parable, the Scholarly Commons is something very
+specific. Yet it is a complex vision that cannot be defined by [a few
 principles][principles] any more than an elephant can be defined by a small set
 of superficial features or functions. The Scholarly Commons is the convergence
 of all of these perspectives _and more_. But this does not mean it is
@@ -107,21 +107,28 @@ open and honest about this the better! Many facets and perspectives need to be
 considered and consolidated. Assumptions need to be brought to the surface.
 Differences need to be reconciled in a spirit of mutual respect, kindness, and
 understanding. This is a design problem and should be approached in an open,
-rational way. "A logical picture is easier to criticize than a vague picture
-since the assumptions it is based on are brought out into the open."[^notes]
-The key to all of this is a willingness to ask the questions that need to be
-asked and to accept the answers to those questions, whatever they may be.
+rational way because "a logical picture is easier to criticize than a vague
+picture since the assumptions it is based on are brought out into the
+open."[^notes] The key to all of this is a willingness to ask the questions
+that need to be asked and to accept the answers to those questions, whatever
+they may be.
 
-This convergence will (hopefully) not result in one universal or
-one-size-fits-all technical solution for scholarship and science, but should
-lead to the condition that we can work together effectively across a
-"multiplicity of epistemologies"[^bonaventure] without it being rigid or
-confining.
+We are not alone in thinking these things. [Bonaventure Mvé-Ondo]{lang=ewo}, in
+his book <cite>[Africa: The Scientific Divide][scientific divide]</cite>, calls
+for a modern renaissance which encompasses a completely new culture and
+approach to science. One statement he makes in particular hints at the
+direction of this transformation: "The whole question, then, is how to move
+from a Westernization of science to a truly shared science, undergirded by a
+'multiplicity of epistemologies'."[^bonaventure] The Scholarly Commons, as a
+convergence into "a truly shared science", will (hopefully) not result in one
+universal or one-size-fits-all technical solution, but should lead to the
+condition that we can work together effectively across a "multiplicity of
+epistemologies" without it being rigid or confining.
 
 While many things are needed to bring about this convergence, it is with the
 hope that we can contribute to that process that I am announcing here a series
-of vignettes, to prompt the many fundamental discussions that have not yet
-happened around this important topic, and to paint the picture of the Scholarly
+of vignettes, to prompt the many fundamental discussions that have yet to
+happen around this important topic, and to paint the picture of the Scholarly
 Commons from various perspectives. Of course, we are painting here with the
 broad stroke of our own opinion, and these vignettes do not reflect any formal
 process of consensus, though they might be stepping stones that will lead in
@@ -141,15 +148,16 @@ together.
 [principles]: <https://www.force11.org/group/scholarly-commons-working-group-wp2principles/principles-scholarly-commons-open-comments> "About the principles of the Scholarly Commons"
 [scwg]: <https://www.force11.org/group/scholarly-commons-working-group> "The Scholarly Commons Working Group at FORCE11"
 [opening knowledge]: <../opening-knowledge/> "The Pentandra Blog → Opening Knowledge"
+[scientific divide]:  <https://www.futuribles.com/en/bibliographie/notice/afrique-la-fracture-scientifique-africa-the-scient/>
 
-[^notes]: Alexander, Christopher. <cite>Notes on the Synthesis of Form</cite>, p. 8.
+[^notes]:
+
+    Alexander, Christopher. <cite>[Notes on the Synthesis of
+    Form](https://books.google.com/books?id=Kh3T3XFUfPQC)</cite>, Harvard
+    University Press, 1964, p. 8.
 
 [^bonaventure]:
 
-    [Bonaventure Mvé-Ondo]{lang=ewo}, in his book <cite>[Africa: The Scientific
-    Divide](https://www.futuribles.com/en/bibliographie/notice/afrique-la-fracture-scientifique-africa-the-scient/)</cite>,
-    describes the need for a modern renaissance which encompasses a completely
-    new culture and approach to science. One statement in particular hints at
-    the magnitude and direction of this transformation: "The whole question,
-    then, is how to move from a Westernization of science to a truly shared
-    science, undergirded by a 'multiplicity of epistemologies'" (p. 48).
+    [Mvé-Ondo, Bonaventure.]{lang=ewo} <cite>[[Afrique : la fracture
+    scientifique]{lang=fr} / Africa: The Scientific Divide][scientific
+    divide]</cite>, [Futuribles]{lang=fr}, 2005, p. 48.
