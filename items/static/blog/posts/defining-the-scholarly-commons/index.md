@@ -4,7 +4,7 @@ description: Introducing a series of vignettes to gain insight into the Scholarl
 kind: blogpost
 author_name: Chris Chapman
 created_at: 2017-04-20
-updated_at: 2018-02-23
+updated_at: 2018-03-02
 cover_image_id: '/static/blog/posts/defining-the-scholarly-commons/1-Thierry-Noir-Howard-Griffin-Gallery_742_560_80_s_c1_smart_scale.jpg'
 tags:
   - Scholarly Commons
@@ -13,122 +13,143 @@ tags:
   - Connections
   - Culture
   - Technology
-  - Open Research
   - Enlightenment
-  - World Wide Web
 ---
-
 <figure id="the-key-to-success" property="schema:sharedContent" class="img" resource="#the-key-to-success" typeof="schema:ImageObject">
   <link property="schema:representativeOfPage" resource="schema:True" />
   <meta property="schema:width" content="742 px" datatype="schema:Distance" />
   <meta property="schema:height" content="560 px" datatype="schema:Distance" />
   <meta property="schema:contentSize" content="51KB" />
-  <img property="schema:contentUrl" class="static" alt="An elephant made of various parts with a large key in the middle representing the key to success" src="1-Thierry-Noir-Howard-Griffin-Gallery_742_560_80_s_c1_smart_scale.jpg" />
-  <figcaption property="schema:caption"><b><a href="https://howardgriffinprints.com/print/thierry-noir/elephant-key-dark-grey/">Elephant Key</a></b>, a repainting of one of the first cartoons that <span lang="fr">Thierry Noir</span> painted in protest of (and on) the Berlin Wall during the 1980s, represents the key to success: hard work every day. Also brings to mind the well-known parable of <a href="https://en.wikipedia.org/wiki/Blind_men_and_an_elephant">the blind monks examining an elephant</a>, in which each monk reaches a different conclusion based upon which part of the elephant he examined. Image copyright © <span lang="fr">Thierry Noir</span> and the <a property="pav:retrievedFrom" href="http://howardgriffingallery.com/images/made/uploads/images/1-Thierry-Noir-Howard-Griffin-Gallery_742_560_80_s_c1_smart_scale.jpg">Howard Griffin Gallery</a>. Used by permission.</figcaption>
+  <img property="schema:contentUrl" class="static" alt="An elephant made of various brightly colored components and a large key in the middle" src="1-Thierry-Noir-Howard-Griffin-Gallery_742_560_80_s_c1_smart_scale.jpg" />
+  <figcaption property="schema:caption"><b><a href="https://howardgriffinprints.com/print/thierry-noir/elephant-key-dark-grey/">Elephant Key</a></b>, a repainting of one of the first cartoons that <span lang="fr">Thierry Noir</span> painted in protest of (and on) the Berlin Wall during the 1980s, represents the key to success: hard work every day. Also brings to mind the well-known parable of <a href="https://en.wikipedia.org/wiki/Blind_men_and_an_elephant">the blind monks examining an elephant</a>, in which each monk reaches a different conclusion based upon which part of the elephant he examined. (Image copyright © <a property="pav:retrievedFrom" href="http://howardgriffingallery.com/images/made/uploads/images/1-Thierry-Noir-Howard-Griffin-Gallery_742_560_80_s_c1_smart_scale.jpg">Howard Griffin Gallery</a> and used by the kind permission of <span lang="fr">Thierry Noir</span> and Howard Griffin.)</figcaption>
 </figure>
 
-A little over two years ago, FORCE11 received a grant to try to answer the
-question, _are we ready to define the Scholarly Commons?_ I was invited to be
-on the steering committee of a working group created for this program, and to
-date we have held several workshops in various parts of the world to try to
-gather consensus on this topic with the hopes of answering this question in the
-affirmative, or at least to gain a better understand what this question
-actually means.
+For more than twenty years, or at least ever since the World Wide Web enabled
+new possibilities for sharing knowledge, there has been a discontent among the
+research community around how scholarly and scientific knowledge is shared.
+Researchers freely give the results of their research (in the form of papers)
+to publishers, the publishers enlist other researchers without compensation to
+review these papers, and then the publishers turn around and sell these papers
+to research libraries and the public for $30--40 apiece. Researchers who
+realize what is going on feel trapped, as the current system incentivizes
+researchers to keep knowledge to oneself until publication for fear of being
+scooped and publish in the most prestigious (and expensive) journals in order
+to keep their jobs. Others researchers are either not aware of these problems
+or turn a blind eye to them because they think this is just how the system
+works and there is nothing that they can do to change it.
 
-Our intention was to re-imagine scholarly communication starting from scratch
-as a system explicitly designed for machine-based access and networked
-scholarship, and not simply adapted from the paper-based system. But perhaps
-because of the enormous scope of this challenge, it has been hard for people
-(even those who have been involved in this for some time) to wrap our heads
-around the idea, let alone get to the point where we understand what is needed
-and how to move forward. It is often easier to point out problems than it is to
-design solutions or even come up with new ways of thinking about old problems.
-Perhaps out of fear that few would adopt a new system of scholarly
-communication if it looked too different from our current system, we have yet
-to approach some fundamental questions, the answers to which would go far in
-helping us understand what it is that we're really talking about. It is my
-intent in this post to affirm our need to sharpen our understanding of what we
-are really asking here and provide an additional means by which we can move
-forward along our path towards the Scholarly Commons.
+Over the years researchers have led resistance movements of various kinds,
+including boycotts of certain publishers. Many of these approaches have been
+successful at raising awareness and support for the cause, they have not led to
+any real change of the system as a whole. By pointing out these things, my
+intention is not to bash publishers in general. Many publishers play a critical
+part in the functioning of the current system and feel just as trapped by their
+position in it. We all want and need something better. I am not against
+capitalism, commerce, or free markets in general. I think there are many
+business models that provide an equitable exchange of value. I am against the
+inequities of the current systems of scholarship and science that take unfair
+advantage of the researchers and the public, and often leave critical
+information, sometimes needed in life and death situations, unavailable to
+those who need it the most. It doesn't have to be that way.
 
 <!--MORE-->
 
-The Scholarly Commons is a completely different system, not just the next step
-or a more "open" version of the current system. The purpose of this new system
-is different. While some elements may be the same, the relationships between
-those elements is different. They occupy a different position and must be
-thought of in a different way. It is the context of a sea change of ideas,
-something that hundreds of manifestos and declarations have pointed to---and
-the hope of thousands and hundreds of thousands over hundreds of years. Many
-efforts have been and currently are preparing the way for this new system,
-including the Internet and the World Wide Web.
+So a couple years ago [some of us got together][scwg] to define an alternative
+system, which we are calling the Scholarly Commons. We are engaged in a battle
+to open up the knowledge of the world---to build bridges between society and
+the type of knowledge that is currently being held behind paywalls or [trapped
+in researchers' minds][opening knowledge]. The walls of the old system are
+cracking and there are holes in some places, but we need a viable alternative
+before people will feel comfortable enough to venture into new territory. We
+are trying to define an alternative system that would allow anyone the ability
+to access and participate in science and scholarship.
 
-Perhaps because there is so much at stake here and [so many ways to do things
-wrong][f11 discussion], it would seem so much easier to avoid risk and leave
-the responsibility on others to figure out the details. There is a temptation
-to leave it vague and indistinct, as if we could retain our innocence or feign
-inclusivity if we approached it that way. And surely the complexity of this
-problem gives us sufficient cause to retreat! But then we run the risk of not
-achieving what we could have achieved; of all our work ending up insignificant
-and unhelpful in answering the really important questions of what this actually
-means and how to go about doing it.
+I am using the [Thierry Noir]{lang=fr}'s [Elephant Key](#the-key-to-success) as
+the mascot of this post, even though it is not [his most well-known
+work][mutations] and tearing down the wall is not enough. In a sense, the
+painting of the Berlin Wall is representative of the modern-day resistance
+movement that has led to the situation in which we now find ourselves. In the
+minds of people, the act of painting the Berlin Wall created an alternative way
+of looking at and thinking about it, an alternative system so to speak. It
+changed the wall from a "killing machine" to something that could be
+transcended, if only in thought. It threw out the assumption that the wall was
+unapproachable and proved that it was possible _to think_ about the wall and
+provided the revelation that there might be more than one way to think about
+it.
 
-One of the things I have noticed over the course of my own journey on this path
-is that people bring their own perspectives to this idea. Just like [the
-elephant in the well-known parable](#the-key-to-success), the Scholarly Commons
-is something very specific, even though it is is hard to conceptualize or
-define in one concise statement or short paragraph. It cannot be reduced to a
-few simple principles. But that does not mean that it is indefinable. On the
-contrary, if we are ever going to get anywhere, we're going to need to be more
-explicit. A vague picture benefits no one except the guilty or naive, and there
-are many facets and perspectives that need to be considered and consolidated.
-"A logical picture is easier to criticize than a vague picture since the
-assumptions it is based on are brought out into the open."[^notes] We need to
-be willing to expose our assumptions and open ourselves to criticism in order
-to achieve real convergence.
+And just as with the [reunification of Germany], realizing the Scholarly
+Commons is not simply a matter of removing a wall and getting on with life as
+usual. It will take new ways of thinking, new approaches, and reconstruction
+that will include a whole lot of work. In this sense, the mascot of this post
+can serve a dual purpose (and make a higher contribution to the future) if we
+are willing to consider [a well-known parable][parable] that involves some
+blind monks from Indostan. Just as did the blind monks in this parable, people
+bring their own perspectives to the idea. The Scholarly Commons attracts people
+for so many different reasons that it is easy to wonder whether the Scholarly
+Commons can possibly accommodate such seemingly divergent views. And just like
+the elephant in this parable, the Scholarly Commons is something very specific.
+Yet it is a complex vision that cannot be defined by [a few
+principles][principles] any more than an elephant can be defined by a small set
+of superficial features or functions. The Scholarly Commons is the convergence
+of all of these perspectives _and more_. But this does not mean it is
+undefinable or unknowable! The point is that we need to define it.
 
-It is with the hope that we can stir up the discussion that I am announcing
-here a series of vignettes, to prompt the many fundamental discussions that
-have not yet happened around this important topic, and to paint the picture of
-the Scholarly Commons from various perspectives. Of course, we are painting
-here with the broad stroke of our own opinion, and these vignettes do not
-necessarily reflect any formal process of consensus, though they may be a
-stepping stone towards that. Some of these thoughts may have originated in
-internal discussions of the steering committee of the Scholarly Commons Working
-Group and we just have not had the chance to get the ideas out there. In many
-cases these vignettes are the first foray onto a topic, though in all cases
-they most definitely should _not_ be viewed as the last word on any. The intent
-is to raise questions, open the discussion, and broaden our collective
+So the question that we must ask is: _how do we define what this system should
+be?_ It is easy to fall into the trap of thinking of what a system _is not_
+than what it _is_. We could innocently try to avoid this trap by not saying
+anything at all, but underspecifying this new system does not eliminate bias or
+make it more inclusive---it only makes it more vague and useless. The whole
+premise of the Scholarly Commons is that the "chaotic innovation" that is going
+on in scholarly communications should eventually lead to convergence on some
+level. If we are ever going to reach that convergence, we are going to need to
+be explicit about _what exactly this new system is_, and the sooner we can be
+open and honest about this the better! Many facets and perspectives need to be
+considered and consolidated. Assumptions need to be brought to the surface.
+Differences need to be reconciled in a spirit of mutual respect, kindness, and
+understanding. This is a design problem and should be approached in an open,
+rational way. "A logical picture is easier to criticize than a vague picture
+since the assumptions it is based on are brought out into the open."[^notes]
+The key to all of this is a willingness to ask the questions that need to be
+asked and to accept the answers to those questions, whatever they may be.
+
+This convergence will (hopefully) not result in one universal or
+one-size-fits-all technical solution for scholarship and science, but should
+lead to the condition that we can work together effectively across a
+"multiplicity of epistemologies"[^bonaventure] without it being rigid or
+confining.
+
+While many things are needed to bring about this convergence, it is with the
+hope that we can contribute to that process that I am announcing here a series
+of vignettes, to prompt the many fundamental discussions that have not yet
+happened around this important topic, and to paint the picture of the Scholarly
+Commons from various perspectives. Of course, we are painting here with the
+broad stroke of our own opinion, and these vignettes do not reflect any formal
+process of consensus, though they might be stepping stones that will lead in
+that direction. In many cases these vignettes are the first foray onto a topic,
+though they most definitely should _not_ be viewed as the last word on any. The
+intent is to raise questions, open the discussion, and broaden our collective
 horizons, with the hope that through this exercise, we can come to some
 understanding as to which questions we need to be asking, and, not any less
-important, how best to find answers to those questions. We may not agree on all
-the answers to those questions or even how to go about obtaining them, and I
-think that is okay. Surely there is room for rationality in this process. We
-all have different motivations for doing what we do, and different desires for
-the outcomes of it all. But it is in our best interest to come together, to
-come to an agreement on what the important questions are, and to find shared
-practices and values with which to build a foundation that would bring us
-together. Maybe the Scholarly Commons is not something that any one of us can
-define alone, but is truth that needs to be discovered---and it is the search
-for that truth that will hold us together.
+important, how best to find answers to those questions. Maybe the Scholarly
+Commons is not something that any one of us can define alone, but is truth that
+needs to be discovered---and it is the search for truth that will hold us
+together.
 
-These vignettes are not meant to stand in isolation, but are meant to
-contribute to the ongoing discussions that are being had across several
-communities and initiatives, including the [CommonsPatterns] group and the
-ongoing efforts of the [Scholarly Commons Working Group][scwg] (and subgroups)
-at FORCE11, and, for those that are more technical in nature, perhaps
-especially the [Topics Project] of (Sub) Working Group 4 and the [Linked
-Research] initiative. Many of these vignettes are, at this point, nascent
-thoughts or preliminary sketches. We'll publish each as soon as it feels that
-it captures the essence of what we feel needs to be expressed. Here are a few
-we're considering starting with. If you have ideas that you would like to
-discuss or see discussed, we invite you to join in the conversation in
-whichever way you're able.
-
-[f11 discussion]: <https://groups.google.com/a/force11.org/forum/#!topic/f11discussion/_jE0D4ns_RQ>
-[Linked Research]: <https://linkedresearch.org>
-[scwg]: <https://www.force11.org/group/scholarly-commons-working-group>
-[Topics project]: <https://www.force11.org/group/scholarly-commons-working-group/wg4enabling-technologies-and-infrastructures#topics-project>
-[CommonsPatterns]: <https://commonspatterns.blog>
+[mutations]: <https://www.independent.co.uk/arts-entertainment/art/features/thierry-noir-the-street-artist-who-mutated-the-berlin-wall-in-protest-9316814.html> "Meet Thierry Noir: The street artist who 'mutated' the Berlin Wall in protest, on The Independent"
+[reunification of Germany]: <https://en.wikipedia.org/wiki/German_reunification> "German Reunification, on Wikipedia"
+[parable]: <https://en.wikipedia.org/wiki/Blind_men_and_an_elephant> "Blind Men and an Elephant, on Wikipedia"
+[principles]: <https://www.force11.org/group/scholarly-commons-working-group-wp2principles/principles-scholarly-commons-open-comments> "About the principles of the Scholarly Commons"
+[scwg]: <https://www.force11.org/group/scholarly-commons-working-group> "The Scholarly Commons Working Group at FORCE11"
+[opening knowledge]: <../opening-knowledge/> "The Pentandra Blog → Opening Knowledge"
 
 [^notes]: Alexander, Christopher. <cite>Notes on the Synthesis of Form</cite>, p. 8.
+
+[^bonaventure]:
+
+    [Bonaventure Mvé-Ondo]{lang=ewo}, in his book <cite>[Africa: The Scientific
+    Divide](https://www.futuribles.com/en/bibliographie/notice/afrique-la-fracture-scientifique-africa-the-scient/)</cite>,
+    describes the need for a modern renaissance which encompasses a completely
+    new culture and approach to science. One statement in particular hints at
+    the magnitude and direction of this transformation: "The whole question,
+    then, is how to move from a Westernization of science to a truly shared
+    science, undergirded by a 'multiplicity of epistemologies'" (p. 48).
