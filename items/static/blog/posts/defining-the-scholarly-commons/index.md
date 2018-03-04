@@ -74,8 +74,8 @@ of looking at and thinking about it, an alternative system so to speak. It
 changed the wall from a "killing machine" to something that could be
 transcended, if only in thought. It threw out the assumption that the wall was
 unapproachable and proved that it was possible _to think_ about the wall and
-provided the revelation that there might be more than one way to think about
-it.
+made way for the revelation that there might be more than one way to think
+about it.
 
 And just as with the [reunification of Germany], realizing the Scholarly
 Commons is not simply a matter of removing a wall and getting on with life as
@@ -86,29 +86,31 @@ are willing to consider [a well-known parable][parable] that involves some
 blind monks from Indostan. Just as did the blind monks in this parable, people
 bring their own perspectives to the idea. The Scholarly Commons attracts people
 for so many different reasons that it is easy to wonder whether the Scholarly
-Commons can possibly accommodate such seemingly divergent views. In addition,
-just like the elephant in this parable, the Scholarly Commons is something very
-specific. Yet it is a complex vision that cannot be defined by [a few
+Commons can possibly accommodate such seemingly divergent views. And just like
+the elephant in this parable, the Scholarly Commons is something very specific.
+Yet it is a complex vision that cannot be defined by [a few
 principles][principles] any more than an elephant can be defined by a small set
-of superficial features or functions. The Scholarly Commons is the convergence
-of all of these perspectives _and more_. But this does not mean it is
-undefinable or unknowable! The point is that we need to define it.
+of superficial features or functions. It is the convergence of all of these
+perspectives _and more_. But this does not mean it is undefinable or
+unknowable!
 
-So the question that we must ask is: _how do we define what this system should
-be?_ It is easy to fall into the trap of thinking of what a system _is not_
-than what it _is_. We could innocently try to avoid this trap by not saying
-anything at all, but underspecifying this new system does not eliminate bias or
-make it more inclusive---it only makes it more vague and useless. The whole
-premise of the Scholarly Commons is that the "chaotic innovation" that is going
-on in scholarly communications should eventually lead to convergence on some
-level. If we are ever going to reach that convergence, we are going to need to
-be explicit about _what exactly this new system is_, and the sooner we can be
-open and honest about this the better! Many facets and perspectives need to be
-considered and consolidated. Assumptions need to be brought to the surface.
-Differences need to be reconciled in a spirit of mutual respect, kindness, and
-understanding. This is a design problem and should be approached in an open,
-rational way because "a logical picture is easier to criticize than a vague
-picture since the assumptions it is based on are brought out into the
+The point is that we need to define it.
+
+So the question that we must then ask is: _how do we define what this system
+should be?_ It is easy to fall into the trap of thinking of what a system _is
+not_ than what it _is_. We could innocently try to avoid this trap by not
+saying anything at all, but underspecifying this new system does not eliminate
+bias or make it more inclusive---it only makes it more vague and useless. The
+whole premise of the Scholarly Commons is that the "chaotic innovation" that is
+going on in scholarly communications should eventually lead to convergence on
+some level. If we are ever going to reach that convergence, we are going to
+need to be explicit about _what exactly this new system is_, and the sooner we
+can be open and honest about this the better! Many facets and perspectives need
+to be considered and consolidated. Assumptions need to be brought to the
+surface. Differences need to be reconciled in a spirit of mutual respect,
+kindness, and understanding. This is a design problem and should be approached
+in an open, rational way because "a logical picture is easier to criticize than
+a vague picture since the assumptions it is based on are brought out into the
 open."[^notes] The key to all of this is a willingness to ask the questions
 that need to be asked and to accept the answers to those questions, whatever
 they may be.
@@ -120,27 +122,27 @@ approach to science. One statement he makes in particular hints at the
 direction of this transformation: "The whole question, then, is how to move
 from a Westernization of science to a truly shared science, undergirded by a
 'multiplicity of epistemologies'."[^bonaventure] The Scholarly Commons, as a
-convergence into "a truly shared science", will (hopefully) not result in one
+convergence into "a truly shared science", will likely not result in one
 universal or one-size-fits-all technical solution, but should lead to the
 condition that we can work together effectively across a "multiplicity of
 epistemologies" without it being rigid or confining.
 
 While many things are needed to bring about this convergence, it is with the
 hope that we can contribute to that process that I am announcing here a series
-of vignettes, to prompt the many fundamental discussions that have yet to
-happen around this important topic, and to paint the picture of the Scholarly
-Commons from various perspectives. Of course, we are painting here with the
-broad stroke of our own opinion, and these vignettes do not reflect any formal
-process of consensus, though they might be stepping stones that will lead in
-that direction. In many cases these vignettes are the first foray onto a topic,
-though they most definitely should _not_ be viewed as the last word on any. The
-intent is to raise questions, open the discussion, and broaden our collective
-horizons, with the hope that through this exercise, we can come to some
-understanding as to which questions we need to be asking, and, not any less
-important, how best to find answers to those questions. Maybe the Scholarly
-Commons is not something that any one of us can define alone, but is truth that
-needs to be discovered---and it is the search for truth that will hold us
-together.
+of vignettes, to prompt a few of the many fundamental discussions that have yet
+to happen around this important topic, and to paint the picture of the
+Scholarly Commons from various perspectives. Of course, we are painting here
+with the broad stroke of our own opinion, and these vignettes do not reflect
+any formal process of consensus, though they might be stepping stones that will
+lead in that direction. In many cases these vignettes are the first foray onto
+a topic, though they most definitely should _not_ be viewed as the last word on
+any. The intent is to raise questions, open the discussion, and broaden our
+collective horizons, with the hope that through this exercise, we can come to
+some understanding as to which questions we need to be asking, and, not any
+less important, how best to find answers to those questions. Maybe the
+Scholarly Commons is not something that any one of us can define alone, but is
+truth that needs to be discovered---and it is the search for truth that will
+hold us together.
 
 [mutations]: <https://www.independent.co.uk/arts-entertainment/art/features/thierry-noir-the-street-artist-who-mutated-the-berlin-wall-in-protest-9316814.html> "Meet Thierry Noir: The street artist who 'mutated' the Berlin Wall in protest, on The Independent"
 [reunification of Germany]: <https://en.wikipedia.org/wiki/German_reunification> "German Reunification, on Wikipedia"
