@@ -83,7 +83,7 @@ module LifePreserver
     #
     def posts_by_year(year, posts = nil)
       posts ||= published_weblog
-      posts.select { |post| post._unwrap.attributes.key?(:published_at) && post.unwrap.attributes.fetch(:published_at).year == year }
+      posts.select { |post| post._unwrap.attributes.key?(:published_at) && post._unwrap.attributes.fetch(:published_at).year == year }
     end
 
     def link_for_archive(year)
