@@ -4,7 +4,7 @@ description: Introducing a series of vignettes to gain insight into the Scholarl
 kind: blogpost
 author_name: Chris Chapman
 created_at: 2017-04-20
-updated_at: 2018-03-03
+updated_at: 2018-03-05
 cover_image_id: '/static/blog/posts/defining-the-scholarly-commons/1-Thierry-Noir-Howard-Griffin-Gallery_742_560_80_s_c1_smart_scale.jpg'
 tags:
   - Scholarly Commons
@@ -95,21 +95,21 @@ But this does not mean it is undefinable or unknowable!
 
 The point is that we need to define it.
 
-So the question that we must then ask is: _how do we define what this system
-should be?_ It is easy to fall into the trap of thinking of what a system _is
-not_ than what it _is_. We could innocently try to avoid this trap by not
-saying anything at all, but underspecifying this new system does not eliminate
-bias or make it more inclusive---it only makes it more vague and useless. The
-whole premise of the Scholarly Commons is that the "chaotic innovation" that is
-going on in scholarly communications should eventually lead to convergence on
-some level. If we are ever going to reach that convergence, we are going to
-need to be explicit about _what exactly this new system is_, and the sooner we
-can be open and honest about this the better! Many facets and perspectives need
-to be considered and consolidated. Assumptions need to be brought to the
-surface. Differences need to be reconciled in a spirit of mutual respect,
-kindness, and understanding. This is a design problem and should be approached
-in an open, rational way because "a logical picture is easier to criticize than
-a vague picture since the assumptions it is based on are brought out into the
+_But what does that mean, and how do we do it?_ It is easy to fall into the
+trap of thinking of what a system _is not_ than what it _is_. We could
+innocently try to avoid this trap by not saying anything at all, but
+underspecifying this new system does not eliminate bias or make it more
+inclusive---it only makes it more vague and useless. The whole premise of the
+Scholarly Commons is that the "chaotic innovation" that is going on in
+scholarly communications should eventually lead to convergence on some level.
+If we are ever going to reach that convergence, we are going to need to be
+explicit about _what exactly this new system is_, and the sooner we can be open
+and honest about this the better! Many facets and perspectives need to be
+considered and consolidated. Assumptions need to be brought to the surface.
+Differences need to be reconciled in a spirit of mutual respect, kindness, and
+understanding. This is a design problem and should be approached in an open,
+rational way because "a logical picture is easier to criticize than a vague
+picture since the assumptions it is based on are brought out into the
 open."[^notes] The key to all of this is a willingness to ask the questions
 that need to be asked and to accept the answers to those questions, whatever
 they may be.
@@ -133,8 +133,8 @@ to happen around this important topic, and to paint the picture of the
 Scholarly Commons from various perspectives. Of course, we are painting here
 with the broad stroke of our own opinion, and these vignettes do not reflect
 any formal process of consensus, though they might be stepping stones that will
-lead in that direction. In many cases these vignettes are the first foray onto
-a topic, though they most definitely should _not_ be viewed as the last word on
+lead in that direction. In many cases, these vignettes are the first foray onto
+a topic and they most definitely should _not_ be viewed as the last word on
 any. The intent is to raise questions, open the discussion, and broaden our
 collective horizons, with the hope that through this exercise, we can come to
 some understanding as to which questions we need to be asking, and, not any
