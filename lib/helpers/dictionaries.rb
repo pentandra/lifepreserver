@@ -96,7 +96,7 @@ module LifePreserver
     end
 
     def abbreviation_dictionaries
-      blk = -> { dictionaries.select { |d| d.unwrap.attributes[:kind] == 'acronym-dictionary' } }
+      blk = -> { dictionaries.select { |d| d._unwrap.attributes[:kind] == 'acronym-dictionary' } }
       if @items.frozen?
         @abbreviation_dictionary_items ||= blk.call
       else
@@ -113,7 +113,7 @@ module LifePreserver
     def supplementary_dictionaries_for(base_dic)
       identifier = base_dic.identifier
       dependencies = @items.find_all(File.dirname(identifier.to_s) + '/*')
-      dependencies.keep_if { |d| d.unwrap.attributes[:kind] =~ /(personal|extra)-dictionary/ }
+      dependencies.keep_if { |d| d._unwrap.attributes[:kind] =~ /(personal|extra)-dictionary/ }
       dependencies << base_dic
     end
   end
