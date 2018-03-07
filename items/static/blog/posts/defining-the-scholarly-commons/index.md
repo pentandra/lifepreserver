@@ -88,10 +88,11 @@ bring their own perspectives to the idea. The Scholarly Commons attracts people
 for so many different reasons that it is easy to wonder whether the Scholarly
 Commons can possibly accommodate such seemingly divergent views. Yet just like
 the elephant in this parable, the Scholarly Commons is something very specific.
-It is a complex vision that cannot be defined by [a few principles][principles]
-any more than an elephant can be defined by a small set of superficial features
-or functions. It is the convergence of all of these perspectives _and more_.
-But this does not mean it is undefinable or unknowable!
+It is not simply a catch-all bag for anything Open or FAIR. It is a complex
+vision that cannot be defined by [a few principles][principles] any more than
+an elephant can be defined by a small set of superficial features or functions.
+It is the convergence of all of these perspectives _and more_. But this does
+not mean it is undefinable or unknowable!
 
 The point is that we need to define it.
 
