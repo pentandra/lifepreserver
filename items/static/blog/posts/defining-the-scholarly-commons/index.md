@@ -67,15 +67,15 @@ to access and participate in science and scholarship.
 I am using the [Thierry Noir]{lang=fr}'s [Elephant Key](#the-key-to-success) as
 the mascot of this post, even though it is not [his most well-known
 work][mutations] and tearing down the wall is not enough. In a sense, the
-painting of the Berlin Wall is representative of the modern-day resistance
-movement that has led to the situation in which we now find ourselves. In the
-minds of people, the act of painting the Berlin Wall created an alternative way
-of looking at and thinking about it, an alternative system so to speak. It
-changed the wall from a "killing machine" to something that could be
-transcended, if only in thought. It threw out the assumption that the wall was
-unapproachable and proved that it was possible _to think_ about the wall and
-made way for the revelation that there might be more than one way to think
-about it.
+painting of the Berlin Wall during the 1980s is representative of the
+modern-day resistance movement that has led to the situation in which we now
+find ourselves. In the minds of the people at that time, the act of painting
+the Wall created an alternative way of looking at and thinking about it, an
+alternative system so to speak. It changed the Wall from a "killing machine" to
+something that could be transcended, if only in thought. It threw out the
+assumption that the Wall was unapproachable and proved that it was possible _to
+think_ about it. And not just to think about it. The more sublime revelation
+was that there might be more than one way to think about it.
 
 And just as with the [reunification of Germany], realizing the Scholarly
 Commons is not simply a matter of removing a wall and getting on with life as
@@ -83,16 +83,18 @@ usual. It will take new ways of thinking, new approaches, and reconstruction
 that will include a whole lot of work. In this sense, the mascot of this post
 can serve a dual purpose (and make a higher contribution to the future) if we
 are willing to consider [a well-known parable][parable] that involves some
-blind monks from Indostan. Just as did the blind monks in this parable, people
-bring their own perspectives to the idea. The Scholarly Commons attracts people
+blind monks from Indostan. Like the blind monks in this parable, people bring
+their own perspectives to the idea of the Scholarly Commons. It attracts people
 for so many different reasons that it is easy to wonder whether the Scholarly
-Commons can possibly accommodate such seemingly divergent views. Yet just like
-the elephant in this parable, the Scholarly Commons is something very specific.
-It is not simply a catch-all bag for anything Open or FAIR. It is a complex
-vision that cannot be defined by [a few principles][principles] any more than
-an elephant can be defined by a small set of superficial features or functions.
-It is the convergence of all of these perspectives _and more_. But this does
-not mean it is undefinable or unknowable!
+Commons can possibly accommodate such seemingly divergent views. Yet like the
+elephant in this parable, the Scholarly Commons is something very specific. It
+is not simply a catch-all bag for anything FAIR or Open. It is a complex vision
+that cannot be defined by [a few principles][principles] any more than an
+elephant can be defined by a small set of superficial features or functions.
+And if that were not enough, it is all too easy for us to be blinded by our own
+interpretations of the pieces that we think we see. The Scholarly Commons is
+the convergence of all of these perspectives _and more_. But this does not mean
+it is undefinable or unknowable!
 
 The point is that we need to define it.
 
@@ -100,12 +102,12 @@ _But what does that mean, and how do we do it?_ It is easy to fall into the
 trap of thinking of what a system _is not_ than what it _is_. We could
 innocently try to avoid this trap by not saying anything at all, but
 underspecifying this new system does not eliminate bias or make it more
-inclusive---it only makes it more vague and useless. The whole premise of the
-Scholarly Commons is that the "chaotic innovation" that is going on in
-scholarly communications should eventually lead to convergence on some level.
-If we are ever going to reach that convergence, we are going to need to be
-explicit about _what exactly this new system is_, and the sooner we can be open
-and honest about this the better! Many facets and perspectives need to be
+inclusive---it only makes it more vague, useless, and unattainable. The whole
+premise of the Scholarly Commons is that the "chaotic innovation" that is going
+on in scholarly communications should eventually lead to convergence on some
+level. If we are ever going to reach that convergence, we are going to need to
+be explicit about _what exactly this new system is_, and the sooner we can be
+open and honest about this the better! Many facets and perspectives need to be
 considered and consolidated. Assumptions need to be brought to the surface.
 Differences need to be reconciled in a spirit of mutual respect, kindness, and
 understanding. This is a design problem and should be approached in an open,
