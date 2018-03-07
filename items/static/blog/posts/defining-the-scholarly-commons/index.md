@@ -40,17 +40,17 @@ works and there is nothing that they can do to change it.
 
 Over the years researchers have led resistance movements of various kinds,
 including boycotts of certain publishers. Many of these approaches have been
-successful at raising awareness and support for the cause, they have not led to
-any real change of the system as a whole. By pointing out these things, my
-intention is not to bash publishers in general. Many publishers play a critical
-part in the functioning of the current system and feel just as trapped by their
-position in it. We all want and need something better. I am not against
-capitalism, commerce, or free markets in general. I think there are many
-business models that provide an equitable exchange of value. I am against the
-inequities of the current systems of scholarship and science that take unfair
-advantage of the researchers and the public, and often leave critical
-information, sometimes needed in life and death situations, unavailable to
-those who need it the most. It doesn't have to be that way.
+successful at raising awareness and support for the cause, but they have not
+led to any real change of the system as a whole. By pointing out these things,
+my intention is not to bash publishers in general. Many publishers play a
+critical part in the functioning of the current system and feel just as trapped
+by their position in it. We all want and need something better. I am not
+against capitalism, commerce, or free markets in general. I am not against the
+state or government in general. I am against the inequities of the current
+systems of scholarship and science that take unfair advantage of the
+researchers and the public, and often leave critical information, sometimes
+needed in life and death situations, unavailable to those who need it the most.
+It doesn't have to be that way.
 
 <!--MORE-->
 
