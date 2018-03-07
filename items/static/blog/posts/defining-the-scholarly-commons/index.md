@@ -92,7 +92,7 @@ is not simply a catch-all bag for anything FAIR or Open. It is a complex vision
 that cannot be defined by [a few principles][principles] any more than an
 elephant can be defined by a small set of superficial features or functions.
 And if that were not enough, it is all too easy for us to be blinded by our own
-interpretations of the pieces that we think we see. The Scholarly Commons is
+interpretations of the features that we think we see. The Scholarly Commons is
 the convergence of all of these perspectives _and more_. But this does not mean
 it is undefinable or unknowable!
 
