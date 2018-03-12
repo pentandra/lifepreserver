@@ -4,7 +4,7 @@ description: Introducing a series of vignettes to gain insight into the Scholarl
 kind: blogpost
 author_name: Chris Chapman
 created_at: 2017-04-20
-updated_at: 2018-03-10
+updated_at: 2018-03-12
 cover_image_id: '/static/blog/posts/defining-the-scholarly-commons/1-Thierry-Noir-Howard-Griffin-Gallery_742_560_80_s_c1_smart_scale.jpg'
 tags:
   - Scholarly Commons
@@ -65,7 +65,7 @@ before people will feel comfortable enough to venture into new territory. We
 are trying to define an alternative system that would allow anyone the ability
 to access and participate in science and scholarship.
 
-In order to paint some comparisons, I am using some early street art protesting
+In order to draw some comparisons, I am using some early street art protesting
 the Berlin Wall [as the mascot](#the-key-to-success) of this post, even though
 it is not [Thierry Noir]{lang=fr}'s [most well-known work][mutations] and
 tearing down a wall is not enough. In a sense, the painting of the Berlin Wall
@@ -102,44 +102,55 @@ conclusion based upon the part of the elephant he examined. The first felt the
 trunk and thought the elephant was like a snake. Another felt the tusk and
 thought it was like a spear. Yet another felt the tail and thought it was like
 a rope. The blind monk who felt the leg thought it was like a tree. The one who
-felt the ear thought it was like a fan. The last felt the side and thought it
-was like a wall. Each was right about what he perceived, but all were wrong
-about the elephant! Not one had a correct understanding of the whole. Like the
-blind monks in this parable, people bring their own unique perspectives to the
-idea of the Scholarly Commons. But it is precisely because of the unavoidable
-fact that we each occupy a unique position in the world that we inherit
-fragmented understanding and blind spots as to what others see from their own
-respective vantage points. And it is all too easy for us to be blinded by our
-own interpretations of the features that we think we see. The Scholarly Commons
-attracts people for so many different reasons that it is easy to wonder whether
-it can possibly accommodate such seemingly divergent views. But this does not
-mean that there is no hope for the future or that the Scholarly Commons is
-forever undefinable and unknowable! Like the elephant in this parable, the
-Scholarly Commons is something very specific. It is not simply a catch-all bag
-for anything FAIR, Open, or Citable. It is a complex vision that cannot be
-defined by [a few principles][principles] any more than an elephant can be
-defined by a small set of superficial features or functions. The Scholarly
-Commons is the convergence of all of these perspectives _and more_.
+felt the ear thought it was like a fan. The last felt the side and thought the
+elephant was like a wall. Each was right about what he perceived, but all were
+wrong about the elephant! Not one had a correct understanding of the whole.
+
+Like the blind monks in this parable, people bring their own unique
+perspectives to the idea of the Scholarly Commons. But it is precisely because
+of the unavoidable fact that we each occupy a unique position in the world that
+we inherit fragmented understanding and blind spots as to what others see from
+their own respective vantage points. And it is all too easy for us to be
+blinded by our own interpretations of the features that we think we see. The
+Scholarly Commons attracts people for so many different reasons that it is easy
+to wonder whether it can possibly accommodate such seemingly divergent views.
+But this does not mean that there is no hope for the future or that the
+Scholarly Commons is forever undefinable and unknowable! Like the elephant in
+this parable, the Scholarly Commons is something very specific. It is not
+simply a catch-all bag for anything FAIR, Open, or Citable. It is a complex
+vision that cannot be defined by [a few principles][principles] any more than
+an elephant can be defined by a small set of superficial features or functions.
+The Scholarly Commons is the convergence of all of these perspectives _and
+more_.
 
 The point is that we need to define it.
 
-_But what does that mean, and how do we do it?_ It is easy to fall into the
-trap of trying to define what a system _is not_ rather than what it _is_. We
-could innocently try to avoid this trap by not saying anything at all, but
-underspecifying this new system does not eliminate bias or make it more
-inclusive---it only makes it more vague, useless, and unattainable. The whole
-premise of the Scholarly Commons is that the "chaotic innovation" that is and
-has been going on in scholarly communications should eventually lead to
-convergence on some level. If we are ever going to reach that convergence, we
-are going to need to be explicit about _what exactly this new system is_. This
-is a design problem at its heart and will require more than "a vague picture"
-to ensure that "the assumptions it is based on are brought out into the
-open."[^notes] We need to approach this rationally in an open, direct, and
-participatory manner. Many facets and perspectives need to be considered and
-consolidated. Assumptions need to be brought to the surface. Differences need
-to be reconciled in a spirit of mutual respect, kindness, and understanding.
-The key to all of this is a willingness to honestly ask the questions that need
-to be asked and to accept the answers to those questions, whatever they may be.
+_But what does that mean, and how do we do it?_ A general discontent with the
+current system may have been enough to bring people together into some sort of
+tacit agreement that things need to change, but this will not be enough to
+carry us as we seek to move towards the future. It is easy to fall into the
+trap of trying to define something new in terms of what it is _not_ rather than
+in terms of what it _is_. We could innocently try to avoid this trap by not
+saying anything at all, but underspecifying this new system does not eliminate
+bias or make it more inclusive---it only makes it more vague, useless, and
+unattainable. We don't want to err by overspecifying it either---we need to
+leave room for local adaptation. We need a middle road between these two
+extremes, a road paved with a shared understanding of what we want to be doing
+and how we want to get there. If we are ever going to reach this convergence,
+we will need to be explicit about _what exactly this new system is_. This is a
+design problem at its heart and will require more than "a vague picture" to
+ensure that "the assumptions it is based on are brought out into the
+open."[^notes] It is not as simple as [taking stock of current centers][gaps
+and systems] of "chaotic innovation" since many current innovations are
+extensions of the current system and grounded in its logic. We need to approach
+this rationally in an open, direct, and collaborative manner, keeping in mind
+that the Scholarly Commons is something that we need to discover as much as we
+need to define, not something that we can define blindly or willfully. Many
+facets and perspectives need to be considered and consolidated. Differences
+need to be reconciled in a spirit of mutual respect, kindness, and
+understanding. The key to all of this is a willingness to honestly ask the
+questions that need to be asked and to accept the answers to those questions
+whatever they may be.
 
 While many things are needed to bring about this convergence, it is with the
 hope that we can contribute to that process that I am announcing here a series
@@ -154,10 +165,7 @@ hope that they may be stepping stones that lead in that direction. The intent
 is to raise questions, open the discussion, and broaden our collective
 horizons, with the hope that through this exercise, we can come to some
 understanding as to which questions we need to be asking, and, not any less
-important, how best to find answers to those questions. Perhaps the Scholarly
-Commons is not something that any one of us can define alone, but is truth that
-needs to be discovered---and it is the search for truth that will hold us
-together.
+important, how best to find answers to those questions.
 
 [mutations]: <https://www.independent.co.uk/arts-entertainment/art/features/thierry-noir-the-street-artist-who-mutated-the-berlin-wall-in-protest-9316814.html> "Meet Thierry Noir: The street artist who 'mutated' the Berlin Wall in protest, on The Independent"
 [reunification of Germany]: <https://en.wikipedia.org/wiki/German_reunification> "German Reunification, on Wikipedia"
@@ -165,7 +173,7 @@ together.
 [principles]: <https://www.force11.org/group/scholarly-commons-working-group-wp2principles/principles-scholarly-commons-open-comments> "About the principles of the Scholarly Commons"
 [scwg]: <https://www.force11.org/group/scholarly-commons-working-group> "The Scholarly Commons Working Group at FORCE11"
 [opening knowledge]: <../opening-knowledge/> "The Pentandra Blog → Opening Knowledge"
-[scientific divide]:  <https://www.futuribles.com/en/bibliographie/notice/afrique-la-fracture-scientifique-africa-the-scient/>
+[gaps and systems]: <../putting-the-pieces-together-technology/#on-gaps-and-systems> "The Pentandra Blog → Putting the Pieces Together: Technology → On Gaps and Systems"
 
 [^notes]:
 

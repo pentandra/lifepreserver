@@ -49,6 +49,7 @@ to tie them together, so that they are mutually interoperable and beneficial.
 
 [misattributed]: <http://quoteinvestigator.com/2011/07/28/ford-faster-horse/> "'My Customers Would Have Asked For a Faster Horse' on Quote Investigator"
 [Henry Ford]: <https://en.wikipedia.org/wiki/Henry_Ford> "Henry Ford on Wikipedia"
+[scientific divide]:  <https://www.futuribles.com/en/bibliographie/notice/afrique-la-fracture-scientifique-africa-the-scient/>
 
 [^bonaventure]:
 
