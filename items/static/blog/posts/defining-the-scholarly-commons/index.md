@@ -4,7 +4,7 @@ description: Introducing a series of vignettes to gain insight into the Scholarl
 kind: essay
 author_name: Chris Chapman
 created_at: 2017-04-20
-updated_at: 2018-03-12
+updated_at: 2018-03-13
 cover_image_id: '/static/blog/posts/defining-the-scholarly-commons/1-Thierry-Noir-Howard-Griffin-Gallery_742_560_80_s_c1_smart_scale.jpg'
 tags:
   - Scholarly Commons
@@ -31,53 +31,53 @@ Researchers freely give the results of their research (in the form of papers)
 to publishers, the publishers enlist other researchers without compensation to
 review these papers, and then the publishers turn around and sell expensive
 subscriptions to these papers to research libraries and to the public for
-$30--40 apiece. Researchers who realize what is going on feel trapped by the
-need to keep things to themselves until publication for fear of being scooped
-and to publish in the most prestigious (and often most expensive) journals in
-order to keep their jobs. Other researchers are either not aware of these
-problems or turn a blind eye to them because they think this is just how the
-system works and there is nothing that they can do to change it.
+$30--40 apiece. Researchers who realize what is going on feel trapped by a need
+to keep things to themselves until publication for fear of being scooped and to
+publish in the most prestigious (and often most expensive) journals in order to
+keep their jobs. Other researchers are either not aware of these problems or
+turn a blind eye to them because they think this is just how the system works
+and there is nothing that they can do to change it.
 
 Over the years, impassioned researchers have led resistance movements of
-various kinds, including boycotts of certain publishers. Many of these
-approaches have been successful at raising awareness and support for the cause,
-but they have not led to any real change of the system as a whole. By pointing
-out these things, my intention is not to discount those efforts or to bash
-publishers in general. Many publishers play a critical part in the functioning
-of the current system and feel just as trapped by their position in it. We all
-need something better. I am not against capitalism, commerce, or free markets
-in general. I am not against researchers trying to affect change in whichever
-way they feel empowered to do so. I am against the inequities of the systems of
-scholarship and science that take unfair advantage of the researchers and the
-public, and often leave critical information, sometimes needed in life and
-death situations, unavailable to those who need it the most. It doesn't have to
-be that way.
+various kinds, including [boycotts of certain publishers][boycotts]. Many of
+these approaches have been successful at raising awareness and support for the
+cause, but they have not led to any real change of the system as a whole. By
+pointing out these things, my intention is not to discount those efforts or to
+bash publishers in general. Many publishers play a critical part in the
+functioning of the current system and feel just as trapped by their position in
+it. We all need something better. We need something that will provide a cure
+for the inequities of current systems of scholarship and science that take
+unfair advantage of the researchers and the public and often leave critical
+information, sometimes needed in life and death situations, unavailable to
+those who need it the most. It doesn't have to be that way.
 
 <!--MORE-->
 
-So a couple years ago [some of us got together][scwg] to define an alternative
-system, which we are calling the Scholarly Commons. We are engaged in a battle
-to open up the knowledge of the world---to build bridges between society and
-the type of knowledge that is currently being held behind paywalls or [trapped
-in researchers' minds][opening knowledge]. The walls of the old system are
-cracking and there are holes in some places, but we need a viable alternative
-before people will feel comfortable enough to venture into new territory. We
-are trying to define an alternative system that would allow anyone the ability
-to access and participate in science and scholarship.
+R. Buckminster Fuller has said "to change something, build a new model that
+makes the existing model obsolete." So a couple years ago [some of us got
+together][scwg] to define an alternative system, which we are calling the
+Scholarly Commons. We are engaged in a battle to open up the knowledge of the
+world---to build bridges between society and the type of knowledge that is
+currently being held behind paywalls or [trapped in researchers' minds][opening
+knowledge]. The walls of the old system are cracking and there are holes in
+some places, but we need a viable alternative before people will feel
+comfortable enough to venture into new territory. We are trying to define an
+alternative system that would allow anyone the ability to access and
+participate in science and scholarship.
 
-In order to draw some comparisons, I am using some early street art protesting
-the Berlin Wall [as the mascot](#the-key-to-success) of this post, even though
-it is not [Thierry Noir]{lang=fr}'s [most well-known work][mutations] and
-tearing down a wall is not enough. In a sense, the painting of the Berlin Wall
-during the 1980s is representative of the modern-day resistance movement in
-scholarly communications that has led to the situation in which we now find
-ourselves. In the minds of the people at that time, the act of painting the
-Berlin Wall created an alternative way of looking at and thinking about the
-Wall, an alternative system so to speak. It changed the Wall from a "killing
-machine" to something that could be transcended, if only in thought. It threw
-out the assumption that the Wall was unapproachable and proved that it was
-possible _to think_ about it and the more sublime revelation that there might
-be more than one way to think about it.
+In order to draw some comparisons, I am using a piece of early street art, made
+by [Thierry Noir]{lang=fr} in protest of the Berlin Wall, [as the
+mascot](#the-key-to-success) of this post, even though it is not his [most
+well-known work][mutations] and tearing down a wall is not enough. In a sense,
+the painting of the Berlin Wall during the 1980s is representative of the
+modern-day resistance movement in scholarly communications that has led to the
+situation in which we now find ourselves. In the minds of the people at that
+time, the act of painting the Berlin Wall created an alternative way of looking
+at and thinking about the Wall, an alternative system so to speak. It changed
+the Wall from a "killing machine" to something that could be transcended, if
+only in thought. It threw out the assumption that the Wall was unapproachable
+and proved that it was possible _to think_ about it and the more sublime
+revelation that there might be more than one way to think about it.
 
 The Scholarly Commons provides us an similar opportunity to step back and
 deeply consider the direction we want to go with science and scholarship. In
@@ -85,10 +85,11 @@ the daily struggle against the paywalls of closed scholarship and science,
 there is much that the current system can teach us as we seek to repurpose our
 swords as plowshares. We need a new mindset---not one of naivete or innocence,
 but one that leverages our collective understanding of the past to help us
-avoid the all too familiar mind traps and rabbit holes as we move forward.
-Could any greater reason exist to distribute bits of the Berlin Wall as
-souvenirs other than to keep in our collective memory the things we have
-learned from the experience?
+avoid the all too familiar mind traps and rabbit holes as we move forward. In
+the weeks and months after the fall of the Berlin Wall, could any greater
+reason exist for the [Mauerspechte] to use hammers and pickaxes to break off
+bits of the Wall as souvenirs other than to keep in our collective memory the
+things we have learned from the experience?
 
 And just as with the [reunification of Germany], realizing the Scholarly
 Commons is not simply a matter of removing a wall and getting on with life as
@@ -145,28 +146,30 @@ and systems] of "chaotic innovation" since many current innovations are
 extensions of the current system and grounded in its logic. We need to approach
 this rationally in an open, direct, and collaborative manner, keeping in mind
 that the Scholarly Commons is something that we need to discover as much as we
-need to define, not something that we can define blindly or willfully. Many
-facets and perspectives need to be considered and consolidated. Differences
-need to be reconciled in a spirit of mutual respect, kindness, and
+need to define. It is not something that we can define blindly or willfully.
+Many facets and perspectives need to be considered and consolidated.
+Differences need to be reconciled in a spirit of mutual respect, kindness, and
 understanding. The key to all of this is a willingness to honestly ask the
 questions that need to be asked and to accept the answers to those questions
 whatever they may be.
 
-While many things are needed to bring about this convergence, it is with the
-hope that we can contribute to that process that I am announcing here a series
-of vignettes, to prompt a few of the many fundamental discussions that need to
-happen around this important topic and to paint the picture of the Scholarly
-Commons from various perspectives. Although we are painting here with the broad
-stroke of our own opinion, we are making every effort to base our opinion on
-sound reasoning and common sense. In many cases, these vignettes are the first
-foray onto a topic and they most definitely should _not_ be viewed as the last
-word on any. They do not reflect any formal process of consensus, though we
-hope that they may be stepping stones that lead in that direction. The intent
-is to raise questions, open the discussion, and broaden our collective
-horizons, with the hope that through this exercise, we can come to some
-understanding as to which questions we need to be asking, and, not any less
-important, how best to find answers to those questions.
+[While many things are needed]{.newthought} to bring about this convergence, it
+is with the hope that we can contribute to that process that I am announcing
+here a series of vignettes, to prompt a few of the many fundamental discussions
+that need to happen around this important topic and to paint the picture of the
+Scholarly Commons from various perspectives. Although we are painting here with
+the broad stroke of our own opinion, we are making every effort to base our
+opinion on sound reasoning and common sense. In many cases, these vignettes are
+the first foray onto a topic and they most definitely should _not_ be viewed as
+the last word on any. They do not reflect any formal process of consensus,
+though we hope that they may be stepping stones that lead in that direction.
+The intent is to raise questions, open the discussion, and broaden our
+collective horizons, with the hope that through this exercise, we can come to
+some understanding as to which questions we need to be asking, and, not any
+less important, how best to find answers to those questions.
 
+[boycotts]: <https://organizationsandsocialchange.wordpress.com/2016/02/15/to-all-academics-lets-boycott-commercial-publishers/>
+[Buckminster]: <http://www.davidmcelroy.org/?p=18991> "We can’t defeat the existing system; we must build a better one instead, by David McElroy"
 [mutations]: <https://www.independent.co.uk/arts-entertainment/art/features/thierry-noir-the-street-artist-who-mutated-the-berlin-wall-in-protest-9316814.html> "Meet Thierry Noir: The street artist who 'mutated' the Berlin Wall in protest, on The Independent"
 [reunification of Germany]: <https://en.wikipedia.org/wiki/German_reunification> "German Reunification, on Wikipedia"
 [parable]: <https://en.wikipedia.org/wiki/Blind_men_and_an_elephant> "Blind Men and an Elephant, on Wikipedia"
@@ -174,6 +177,7 @@ important, how best to find answers to those questions.
 [scwg]: <https://www.force11.org/group/scholarly-commons-working-group> "The Scholarly Commons Working Group at FORCE11"
 [opening knowledge]: <../opening-knowledge/> "The Pentandra Blog → Opening Knowledge"
 [gaps and systems]: <../putting-the-pieces-together-technology/#on-gaps-and-systems> "The Pentandra Blog → Putting the Pieces Together: Technology → On Gaps and Systems"
+[Mauerspechte]: <https://de.wikipedia.org/wiki/Mauerspecht> "Mauerspecht (wall woodpecker) on the German Wikipedia" {lang=de}
 
 [^notes]:
 
