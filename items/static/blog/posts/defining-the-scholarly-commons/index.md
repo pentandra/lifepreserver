@@ -82,7 +82,7 @@ revelation that there might be more than one way to think about it.
 The Scholarly Commons provides us an similar opportunity to step back and
 deeply consider the direction we want to go with science and scholarship. While
 it is in part a reaction to the inequities of the current system, the Scholarly
-Commons calls for a new mindset---not one of naivete or innocence, but one that
+Commons is also a new mindset---not one of naivete or innocence, but one that
 leverages our collective understanding of the past to help us avoid the all too
 familiar mind traps and rabbit holes as we move forward. In the daily struggle
 against the paywalls of closed scholarship and science, there is much that the
