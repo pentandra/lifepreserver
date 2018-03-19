@@ -4,7 +4,7 @@ description: Introducing a series of vignettes to gain insight into the Scholarl
 kind: essay
 author_name: Chris Chapman
 created_at: 2017-04-20
-updated_at: 2018-03-13
+updated_at: 2018-03-19
 cover_image_id: '/static/blog/posts/defining-the-scholarly-commons/1-Thierry-Noir-Howard-Griffin-Gallery_742_560_80_s_c1_smart_scale.jpg'
 tags:
   - Scholarly Commons
@@ -53,8 +53,8 @@ those who need it the most. It doesn't have to be that way.
 
 <!--MORE-->
 
-R. Buckminster Fuller has said "to change something, build a new model that
-makes the existing model obsolete." So a couple years ago [some of us got
+R. Buckminster Fuller has said that "to change something, build a new model
+that makes the existing model obsolete." So a couple years ago [some of us got
 together][scwg] to define an alternative system, which we are calling the
 Scholarly Commons. We are engaged in a battle to open up the knowledge of the
 world---to build bridges between society and the type of knowledge that is
@@ -65,8 +65,8 @@ comfortable enough to venture into new territory. We are trying to define an
 alternative system that would allow anyone the ability to access and
 participate in science and scholarship.
 
-In order to draw some comparisons, I am using a piece of early street art, made
-by [Thierry Noir]{lang=fr} in protest of the Berlin Wall, [as the
+In order to draw some comparisons, I am using a piece of early street art made
+by [Thierry Noir]{lang=fr} in protest of the Berlin Wall [as the
 mascot](#the-key-to-success) of this post, even though it is not his [most
 well-known work][mutations] and tearing down a wall is not enough. In a sense,
 the painting of the Berlin Wall during the 1980s is representative of the
@@ -80,13 +80,14 @@ and proved that it was possible _to think_ about it and the more sublime
 revelation that there might be more than one way to think about it.
 
 The Scholarly Commons provides us an similar opportunity to step back and
-deeply consider the direction we want to go with science and scholarship. In
-the daily struggle against the paywalls of closed scholarship and science,
-there is much that the current system can teach us as we seek to repurpose our
-swords as plowshares. We need a new mindset---not one of naivete or innocence,
-but one that leverages our collective understanding of the past to help us
-avoid the all too familiar mind traps and rabbit holes as we move forward. In
-the weeks and months after the fall of the Berlin Wall, could any greater
+deeply consider the direction we want to go with science and scholarship. While
+it is in part a reaction to the inequities of the current system, the Scholarly
+Commons calls for a new mindset---not one of naivete or innocence, but one that
+leverages our collective understanding of the past to help us avoid the all too
+familiar mind traps and rabbit holes as we move forward. In the daily struggle
+against the paywalls of closed scholarship and science, there is much that the
+current system can teach us as we seek to repurpose our swords as plowshares.
+In the weeks and months after the fall of the Berlin Wall, could any greater
 reason exist for the [Mauerspechte] to use hammers and pickaxes to break off
 bits of the Wall as souvenirs other than to keep in our collective memory the
 things we have learned from the experience?
@@ -111,18 +112,17 @@ Like the blind monks in this parable, people bring their own unique
 perspectives to the idea of the Scholarly Commons. But it is precisely because
 of the unavoidable fact that we each occupy a unique position in the world that
 we inherit fragmented understanding and blind spots as to what others see from
-their own respective vantage points. And it is all too easy for us to be
-blinded by our own interpretations of the features that we think we see. The
-Scholarly Commons attracts people for so many different reasons that it is easy
-to wonder whether it can possibly accommodate such seemingly divergent views.
-But this does not mean that there is no hope for the future or that the
-Scholarly Commons is forever undefinable and unknowable! Like the elephant in
-this parable, the Scholarly Commons is something very specific. It is not
-simply a catch-all bag for anything FAIR, Open, or Citable. It is a complex
-vision that cannot be defined by [a few principles][principles] any more than
-an elephant can be defined by a small set of superficial features or functions.
-The Scholarly Commons is the convergence of all of these perspectives _and
-more_.
+their own respective vantage points. It is all too easy for us to be blinded by
+our own interpretations of the features that we think we see. The Scholarly
+Commons attracts people for so many different reasons that it is easy to wonder
+whether it can possibly accommodate such seemingly divergent views. But this
+does not mean that there is no hope for the future or that the Scholarly
+Commons is forever undefinable and unknowable! Like the elephant in this
+parable, the Scholarly Commons is something very specific. It is not simply a
+catch-all bag for anything FAIR, Open, or Citable. It is a complex vision that
+cannot be defined by [a few principles][principles] any more than an elephant
+can be defined by a small set of superficial features or functions. The
+Scholarly Commons is the convergence of all of these perspectives _and more_.
 
 The point is that we need to define it.
 
@@ -146,12 +146,12 @@ and systems] of "chaotic innovation" since many current innovations are
 extensions of the current system and grounded in its logic. We need to approach
 this rationally in an open, direct, and collaborative manner, keeping in mind
 that the Scholarly Commons is something that we need to discover as much as we
-need to define. It is not something that we can define blindly or willfully.
-Many facets and perspectives need to be considered and consolidated.
-Differences need to be reconciled in a spirit of mutual respect, kindness, and
-understanding. The key to all of this is a willingness to honestly ask the
-questions that need to be asked and to accept the answers to those questions
-whatever they may be.
+need to define. We cannot define it blindly or willfully. There are real
+dynamics here that we need to figure out. Many facets and perspectives need to
+be considered and consolidated. Differences need to be reconciled in a spirit
+of mutual respect, kindness, and understanding. The key to all of this is a
+willingness to honestly ask the questions that need to be asked and to accept
+the answers to those questions whatever they may be.
 
 [While many things are needed]{.newthought} to bring about this convergence, it
 is with the hope that we can contribute to that process that I am announcing
