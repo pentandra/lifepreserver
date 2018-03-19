@@ -102,11 +102,11 @@ blind monks who had never before experienced an elephant. When given the
 opportunity to examine one for the first time, each reached a different
 conclusion based upon the part of the elephant he examined. The first felt the
 trunk and thought the elephant was like a snake. Another felt the tusk and
-thought it was like a spear. Yet another felt the tail and thought it was like
-a rope. The blind monk who felt the leg thought it was like a tree. The one who
-felt the ear thought it was like a fan. The last felt the side and thought the
-elephant was like a wall. Each was right about what he perceived, but all were
-wrong about the elephant! Not one had a correct understanding of the whole.
+thought it was like a spear. The third felt the tail and thought it was like a
+rope. Yet another felt the leg thought it was like a tree. The monk who felt
+the ear thought the elephant was like a fan. The last felt the side and thought
+it was like a wall. Each was right about what he perceived, but all were wrong
+about the elephant! Not one had a correct understanding of the whole.
 
 Like the blind monks in this parable, people bring their own unique
 perspectives to the idea of the Scholarly Commons. But it is precisely because
