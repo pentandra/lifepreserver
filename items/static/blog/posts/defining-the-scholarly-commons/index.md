@@ -4,7 +4,7 @@ description: Introducing a series of vignettes to gain insight into the Scholarl
 kind: essay
 author_name: Chris Chapman
 created_at: 2017-04-20
-updated_at: 2018-03-19
+updated_at: 2018-07-12
 cover_image_id: '/static/blog/posts/defining-the-scholarly-commons/1-Thierry-Noir-Howard-Griffin-Gallery_742_560_80_s_c1_smart_scale.jpg'
 tags:
   - Scholarly Commons
@@ -109,20 +109,21 @@ it was like a wall. Each was right about what he perceived, but all were wrong
 about the elephant! Not one had a correct understanding of the whole.
 
 Like the blind monks in this parable, people bring their own unique
-perspectives to the idea of the Scholarly Commons. But it is precisely because
-of the unavoidable fact that we each occupy a unique position in the world that
-we inherit fragmented understanding and blind spots as to what others see from
-their own respective vantage points. It is all too easy for us to be blinded by
-our own interpretations of the features that we think we see. The Scholarly
-Commons attracts people for so many different reasons that it is easy to wonder
-whether it can possibly accommodate such seemingly divergent views. But this
-does not mean that there is no hope for the future or that the Scholarly
-Commons is forever undefinable and unknowable! Like the elephant in this
-parable, the Scholarly Commons is something very specific. It is not simply a
-catch-all bag for anything FAIR, Open, or Citable. It is a complex vision that
-cannot be defined by [a few principles][principles] any more than an elephant
-can be defined by a small set of superficial features or functions. The
-Scholarly Commons is the convergence of all of these perspectives _and more_.
+perspectives to the idea of the Scholarly Commons. Nobody sees the whole
+picture and it is all too easy for us to be blinded by our own interpretations
+of the features that we think we see. It is precisely because of the
+unavoidable fact that we each occupy a unique position in the world that we
+inherit fragmented understanding and blind spots as to what others see from
+their own respective vantage points. The Scholarly Commons attracts people for
+so many different reasons that it is easy to wonder whether it can possibly
+accommodate such seemingly divergent views. But this does not mean that there
+is no hope for the future or that the Scholarly Commons is forever undefinable
+and unknowable! Like the elephant in this parable, the Scholarly Commons is
+something very specific. It is not simply a catch-all bag for anything FAIR,
+Open, or Citable. It is a complex vision that cannot be defined by [a few
+principles][principles] any more than an elephant can be defined by a small set
+of superficial features or functions. The Scholarly Commons is the convergence
+of all of these perspectives _and more_.
 
 The point is that we need to define it.
 
@@ -135,23 +136,24 @@ in terms of what it _is_. We could innocently try to avoid this trap by not
 saying anything at all, but underspecifying this new system does not eliminate
 bias or make it more inclusive---it only makes it more vague, useless, and
 unattainable. We don't want to err by overspecifying it either---we need to
-leave room for local adaptation. We need a middle road between these two
-extremes, a road paved with a shared understanding of what we want to be doing
-and how we want to get there. If we are ever going to reach this convergence,
-we will need to be explicit about _what exactly this new system is_. This is a
-design problem at its heart and will require more than "a vague picture" to
-ensure that "the assumptions it is based on are brought out into the
-open."[^notes] It is not as simple as [taking stock of current centers][gaps
-and systems] of "chaotic innovation" since many current innovations are
-extensions of the current system and grounded in its logic. We need to approach
-this rationally in an open, direct, and collaborative manner, keeping in mind
-that the Scholarly Commons is something that we need to discover as much as we
-need to define. We cannot define it blindly or willfully. There are real
-dynamics here that we need to figure out. Many facets and perspectives need to
-be considered and consolidated. Differences need to be reconciled in a spirit
-of mutual respect, kindness, and understanding. The key to all of this is a
-willingness to honestly ask the questions that need to be asked and to accept
-the answers to those questions whatever they may be.
+leave room for continuous improvement and local adaptation. We need a middle
+road between these two extremes---overspecifying and underspecifying, a road
+paved with a shared understanding of what we want to be doing and how we want
+to get there. If we are ever going to reach this convergence, we will need to
+be explicit about _what exactly this new system is_. This is a design problem
+at its heart and will require more than "a vague picture" to ensure that "the
+assumptions it is based on are brought out into the open."[^notes] It is not as
+simple as [taking stock of current centers][gaps and systems] of "chaotic
+innovation" since many current innovations are extensions of the current system
+and grounded in its logic. We need to approach this rationally in an open,
+direct, and collaborative manner, keeping in mind that the Scholarly Commons is
+something that we need to discover as much as we need to define. We cannot
+define it blindly or willfully. There are real dynamics here that we need to
+figure out. Many facets and perspectives need to be considered and
+consolidated. Differences need to be reconciled in a spirit of mutual respect,
+kindness, and understanding. The key to all of this is a willingness to
+honestly ask the questions that need to be asked and to accept the answers to
+those questions whatever they may be.
 
 [While many things are needed]{.newthought} to bring about this convergence, it
 is with the hope that we can contribute to that process that I am announcing
@@ -167,6 +169,22 @@ The intent is to raise questions, open the discussion, and broaden our
 collective horizons, with the hope that through this exercise, we can come to
 some understanding as to which questions we need to be asking, and, not any
 less important, how best to find answers to those questions.
+
+I close with the words of Thomas Paine, who said "that the greatest forces that
+can be brought into the field of revolutions, are reason and common interest.
+Where these can have the opportunity of acting, opposition dies with fear, or
+crumbles away by conviction."[^paine] As with the crumbling of the Berlin Wall,
+it is my hope that the walls that currently isolate us in our own knowledge
+cultivation and practice will crumble. It is my hope that these vignettes can
+accelerate the crumbling; that they can eat through the barriers between us
+like acid;[^thierry_noir] that the real issues will surface; and that we can
+see what is really at stake here and what needs to be done about it. Let us see
+these walls for what they really are: relics from [an age of cognitive
+enclosures][opening knowledge]. Let us realize that the opposition is not the
+publishers or any other popular scapegoat, but is rooted in our own selves and
+how we perceive the problem.
+
+_Let us awaken and see the possibilities of the commons!_
 
 [boycotts]: <https://organizationsandsocialchange.wordpress.com/2016/02/15/to-all-academics-lets-boycott-commercial-publishers/>
 [Buckminster]: <http://www.davidmcelroy.org/?p=18991> "We can’t defeat the existing system; we must build a better one instead, by David McElroy"
@@ -184,3 +202,11 @@ less important, how best to find answers to those questions.
     Alexander, Christopher. <cite>[Notes on the Synthesis of
     Form](https://books.google.com/books?id=Kh3T3XFUfPQC)</cite>, Harvard
     University Press, 1964, p. 8.
+
+[^paine]:
+
+    Paine, Thomas. <cite>Rights of Man. Part Second, Combining Principle and
+    Practice</cite>, The Project Gutenberg's Compilation of the Writings of
+    Thomas Paine, E-book #31270, ref. 21.61.
+
+    [^thierry_noir]: [Thierry Noir]{lang=fr} said this about the effect his paintings had on the Berlin Wall.
