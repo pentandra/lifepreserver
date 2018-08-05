@@ -1,0 +1,11 @@
+<figure id="<%=h id %>" property="schema:image" class="img" resource="#<%=h id %>" typeof="schema:ImageObject">
+  <% if representative_of_page %>
+    <link property="schema:representativeOfPage" resource="schema:True" />
+  <% end %>
+  <meta property="schema:width" content="<%= image[:width].to_i %>" datatype="schema:QuantitativeValue" />
+  <meta property="schema:height" content="<%= image[:height].to_i %>" datatype="schema:QuantitativeValue" />
+  <meta property="schema:contentSize" content="<%= image[:size].to_i %>" />
+  <img property="schema:contentUrl" class="static" alt="<%= image[:alt] %>" src="<%= path_to(image) %>" />
+  <figcaption property="schema:caption"><%= yield %></figcaption>
+</figure>
+
