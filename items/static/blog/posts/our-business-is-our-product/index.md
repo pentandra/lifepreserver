@@ -26,3 +26,6 @@ own, and we would like to share it.
 
 <figcaption>--- Muhammad Yunus, <cite>Building Social Business</cite></figcaption>
 </figure>
+
+Like the GPL or Creative Commons licenses, Social Business inverts the purpose
+of a business using existing legal infrastructure.

@@ -4,7 +4,7 @@ description: Introducing a series of vignettes to gain insight into the Scholarl
 kind: essay
 author_name: Chris Chapman
 created_at: 2017-04-20
-updated_at: 2018-07-12
+updated_at: 2018-07-28
 cover_image_id: '/static/blog/posts/defining-the-scholarly-commons/1-Thierry-Noir-Howard-Griffin-Gallery_742_560_80_s_c1_smart_scale.jpg'
 tags:
   - Scholarly Commons
@@ -21,7 +21,7 @@ tags:
   <meta property="schema:height" content="560 px" datatype="schema:Distance" />
   <meta property="schema:contentSize" content="51KB" />
   <img property="schema:contentUrl" class="static" alt="An elephant made of various brightly colored components and a large key in the middle" src="1-Thierry-Noir-Howard-Griffin-Gallery_742_560_80_s_c1_smart_scale.jpg" />
-  <figcaption property="schema:caption"><b><a href="https://howardgriffinprints.com/print/thierry-noir/elephant-key-dark-grey/">Elephant Key</a></b>, a repainting of one of the first cartoons that <span lang="fr">Thierry Noir</span> painted on and in protest of the Berlin Wall during the 1980s, represents the key to success: hard work every day. (Image copyright © <a property="pav:retrievedFrom" href="http://howardgriffingallery.com/images/made/uploads/images/1-Thierry-Noir-Howard-Griffin-Gallery_742_560_80_s_c1_smart_scale.jpg">Howard Griffin Gallery</a> and used by the kind permission of <span lang="fr">Thierry Noir</span> and Howard Griffin.)</figcaption>
+  <figcaption property="schema:caption"><b><a href="https://howardgriffinprints.com/print/thierry-noir/elephant-key-dark-grey/">Elephant Key</a></b>, a repainting of one of the first cartoons that <span lang="fr">Thierry Noir</span> painted on, and in protest of, the Berlin Wall during the 1980s, represents the key to success: hard work every day. (Image copyright © <a property="pav:retrievedFrom" href="http://howardgriffingallery.com/images/made/uploads/images/1-Thierry-Noir-Howard-Griffin-Gallery_742_560_80_s_c1_smart_scale.jpg">Howard Griffin Gallery</a> and used by the kind permission of <span lang="fr">Thierry Noir</span> and Howard Griffin.)</figcaption>
 </figure>
 
 For more than twenty years, or at least ever since the World Wide Web enabled
@@ -45,11 +45,13 @@ cause, but they have not led to any real change of the system as a whole. By
 pointing out these things, my intention is not to discount those efforts or to
 bash publishers in general. Many publishers play a critical part in the
 functioning of the current system and feel just as trapped by their position in
-it. We all need something better. We need something that will provide a cure
-for the inequities of current systems of scholarship and science that take
+it. We all know we need something better. We need something that will provide a
+cure for the inequities of current systems of scholarship and science that take
 unfair advantage of the researchers and the public and often leave critical
 information, sometimes needed in life and death situations, unavailable to
-those who need it the most. It doesn't have to be that way.
+those who need it the most.
+
+It doesn't have to be that way.
 
 <!--MORE-->
 
@@ -69,56 +71,57 @@ In order to draw some comparisons, I am using a piece of early street art made
 by [Thierry Noir]{lang=fr} in protest of the Berlin Wall [as the
 mascot](#the-key-to-success) of this post, even though it is not his [most
 well-known work][mutations] and tearing down a wall is not enough. In a sense,
-the painting of the Berlin Wall during the 1980s is representative of the
-modern-day resistance movement in scholarly communications that has led to the
-situation in which we now find ourselves. In the minds of the people at that
-time, the act of painting the Berlin Wall created an alternative way of looking
-at and thinking about the Wall, an alternative system so to speak. It changed
-the Wall from a "killing machine" to something that could be transcended, if
-only in thought. It threw out the assumption that the Wall was unapproachable
-and proved that it was possible _to think_ about it and the more sublime
-revelation that there might be more than one way to think about it.
+the painting of the many kilometers of the wall that divided East and West
+Berlin is representative of the modern-day resistance movement in scholarly
+communications. In the minds of the people during the 1980s, the act of
+painting the Berlin Wall created an alternative way of looking at and thinking
+about it, an alternative system so to speak. It changed the Wall from a
+"killing machine" to something that could be transcended, if only in thought.
+It threw out the assumption that the Wall was unapproachable and proved that it
+was possible _to think_ about it and the more sublime revelation that there
+might be more than one way to think about it.
 
 The Scholarly Commons provides us an similar opportunity to step back and
 deeply consider the direction we want to go with science and scholarship. While
-it is in part a reaction to the inequities of the current system, the Scholarly
-Commons is also a new mindset---not one of naivete or innocence, but one that
-leverages our collective understanding of the past to help us avoid the all too
-familiar mind traps and rabbit holes as we move forward. In the daily struggle
-against the paywalls of closed scholarship and science, there is much that the
-current system can teach us as we seek to repurpose our swords as plowshares.
-In the weeks and months after the fall of the Berlin Wall, could any greater
+it originated in part as a reaction to the inequities of the current system,
+the Scholarly Commons solicits a new mindset---not one of naivete or innocence,
+but one that leverages our collective understanding of the past to help us
+avoid the all too familiar mind traps and rabbit holes as we move forward. In
+the weeks and months after the fall of the Berlin Wall, could any greater
 reason exist for the [Mauerspechte] to use hammers and pickaxes to break off
 bits of the Wall as souvenirs other than to keep in our collective memory the
-things we have learned from the experience?
+things we have learned from the experience? In the daily struggle against the
+paywalls of closed scholarship and science, there is much that the current
+system can teach us as we seek to repurpose our swords as plowshares. 
 
 And just as with the [reunification of Germany], realizing the Scholarly
 Commons is not simply a matter of removing a wall and getting on with life as
-usual. It will take new ways of thinking, new approaches, and reconstruction
-that will include a whole lot of work. In this sense, the mascot of this post
-can serve a dual purpose (and make a higher contribution to the future) if we
-are willing to consider [a well-known parable][parable] that involves some
-blind monks who had never before experienced an elephant. When given the
-opportunity to examine one for the first time, each reached a different
-conclusion based upon the part of the elephant he examined. The first felt the
-trunk and thought the elephant was like a snake. Another felt the tusk and
-thought it was like a spear. The third felt the tail and thought it was like a
-rope. Yet another felt the leg thought it was like a tree. The monk who felt
-the ear thought the elephant was like a fan. The last felt the side and thought
-it was like a wall. Each was right about what he perceived, but all were wrong
-about the elephant! Not one had a correct understanding of the whole.
+usual. It is a positive step forward that will require new ways of thinking,
+new approaches, and reconstruction that take into account our collective
+desires and visions for the future. In this sense, the mascot of this post can
+serve a dual purpose (and make a higher contribution to the future) if we are
+willing to consider [a well-known parable][parable] that involves six blind
+monks and an elephant. When given the opportunity to examine one for the first
+time, each monk reached a different conclusion based upon the part of the
+elephant he examined. The first felt the trunk and thought the elephant was
+like a snake. Another felt the tusk and thought it was like a spear. The third
+felt the tail and thought it was like a rope. Another felt the leg thought it
+was like a tree. The fifth felt the ear thought the elephant was like a fan.
+The last felt the side and thought it was like a wall. Each was right about
+what he perceived, but all were wrong about the elephant! Not one had a correct
+understanding of the whole.
 
 Like the blind monks in this parable, people bring their own unique
 perspectives to the idea of the Scholarly Commons. Nobody sees the whole
-picture and it is all too easy for us to be blinded by our own interpretations
-of the features that we think we see. It is precisely because of the
-unavoidable fact that we each occupy a unique position in the world that we
-inherit fragmented understanding and blind spots as to what others see from
-their own respective vantage points. The Scholarly Commons attracts people for
-so many different reasons that it is easy to wonder whether it can possibly
-accommodate such seemingly divergent views. But this does not mean that there
-is no hope for the future or that the Scholarly Commons is forever undefinable
-and unknowable! Like the elephant in this parable, the Scholarly Commons is
+picture and it is all too easy to be blinded by our own interpretations of the
+features that we think we see. And it is precisely because of the unavoidable
+fact that we each occupy a unique position in the world that we inherit
+fragmented understanding and blind spots as to what others see from their own
+respective vantage points. The Scholarly Commons attracts people for so many
+different reasons that it is easy to wonder whether it can possibly accommodate
+such seemingly divergent views. But this does not mean that there is no hope
+for the future or that the Scholarly Commons is forever undefinable and
+unknowable! Like the elephant in this parable, the Scholarly Commons is
 something very specific. It is not simply a catch-all bag for anything FAIR,
 Open, or Citable. It is a complex vision that cannot be defined by [a few
 principles][principles] any more than an elephant can be defined by a small set
@@ -130,30 +133,30 @@ The point is that we need to define it.
 _But what does that mean, and how do we do it?_ A general discontent with the
 current system may have been enough to bring people together into some sort of
 tacit agreement that things need to change, but this will not be enough to
-carry us as we seek to move towards the future. It is easy to fall into the
-trap of trying to define something new in terms of what it is _not_ rather than
-in terms of what it _is_. We could innocently try to avoid this trap by not
-saying anything at all, but underspecifying this new system does not eliminate
-bias or make it more inclusive---it only makes it more vague, useless, and
-unattainable. We don't want to err by overspecifying it either---we need to
-leave room for continuous improvement and local adaptation. We need a middle
-road between these two extremes---overspecifying and underspecifying, a road
-paved with a shared understanding of what we want to be doing and how we want
-to get there. If we are ever going to reach this convergence, we will need to
-be explicit about _what exactly this new system is_. This is a design problem
-at its heart and will require more than "a vague picture" to ensure that "the
-assumptions it is based on are brought out into the open."[^notes] It is not as
-simple as [taking stock of current centers][gaps and systems] of "chaotic
-innovation" since many current innovations are extensions of the current system
-and grounded in its logic. We need to approach this rationally in an open,
-direct, and collaborative manner, keeping in mind that the Scholarly Commons is
-something that we need to discover as much as we need to define. We cannot
-define it blindly or willfully. There are real dynamics here that we need to
-figure out. Many facets and perspectives need to be considered and
-consolidated. Differences need to be reconciled in a spirit of mutual respect,
-kindness, and understanding. The key to all of this is a willingness to
-honestly ask the questions that need to be asked and to accept the answers to
-those questions whatever they may be.
+carry us forward as we seek to move towards the future. And it is too easy to
+fall into the trap of trying to define something new in terms of what it is
+_not_ rather than in terms of what it _is_. We could innocently try to avoid
+this trap by not saying anything at all, but underspecifying this new system
+does not eliminate bias or make it more inclusive---it only makes it more
+vague, useless, and unattainable. We don't want to err by overspecifying it
+either---we need to leave room for continuous improvement and local adaptation.
+We need a middle road between these two extremes---overspecifying and
+underspecifying, a road paved with a shared understanding of what we want to be
+doing and how we want to get there. If we are ever going to reach this
+convergence, we will need to be explicit about _what exactly this new system
+is_. This is a design problem at its heart and will require more than "a vague
+picture" to ensure that "the assumptions it is based on are brought out into
+the open."[^notes] It is not as simple as [taking stock of current
+centers][gaps and systems] of "chaotic innovation" since many of these
+innovations are extensions of the current system and grounded in its logic. We
+need to approach this rationally in an open, direct, and collaborative manner,
+keeping in mind that the Scholarly Commons is something that we need to
+discover as much as we need to define. We cannot define it blindly or
+willfully. There are real dynamics here that we need to figure out. Many facets
+and perspectives need to be considered and consolidated. Differences need to be
+reconciled in a spirit of mutual respect, kindness, and understanding. The key
+to all of this is a willingness to honestly ask the questions that need to be
+asked and to accept the answers to those questions whatever they may be.
 
 [While many things are needed]{.newthought} to bring about this convergence, it
 is with the hope that we can contribute to that process that I am announcing
@@ -163,22 +166,22 @@ Scholarly Commons from various perspectives. Although we are painting here with
 the broad stroke of our own opinion, we are making every effort to base our
 opinion on sound reasoning and common sense. In many cases, these vignettes are
 the first foray onto a topic and they most definitely should _not_ be viewed as
-the last word on any. They do not reflect any formal process of consensus,
-though we hope that they may be stepping stones that lead in that direction.
-The intent is to raise questions, open the discussion, and broaden our
-collective horizons, with the hope that through this exercise, we can come to
-some understanding as to which questions we need to be asking, and, not any
-less important, how best to find answers to those questions.
+the last word on any. They are our own thoughts and do not reflect any formal
+process of consensus, though we hope that they may be stepping stones that lead
+in that direction. The intent is to raise questions, open the discussion, and
+broaden our collective horizons, with the hope that through this exercise, we
+can come to some understanding as to which questions we need to be asking, and,
+not any less important, how best to find answers to those questions.
 
 I close with the words of Thomas Paine, who said "that the greatest forces that
 can be brought into the field of revolutions, are reason and common interest.
 Where these can have the opportunity of acting, opposition dies with fear, or
 crumbles away by conviction."[^paine] As with the crumbling of the Berlin Wall,
-it is my hope that the walls that currently isolate us in our own knowledge
-cultivation and practice will crumble. It is my hope that these vignettes can
-accelerate the crumbling; that they can eat through the barriers between us
-like acid;[^thierry_noir] that the real issues will surface; and that we can
-see what is really at stake here and what needs to be done about it. Let us see
+the walls that currently isolate us in our own knowledge cultivation and
+practice will crumble. It is my hope that these vignettes can accelerate the
+crumbling; that they can eat through the barriers between us like
+acid;[^thierry_noir] that the real issues will surface; and that we can see
+what is really at stake here and what needs to be done about it. Let us see
 these walls for what they really are: relics from [an age of cognitive
 enclosures][opening knowledge]. Let us realize that the opposition is not the
 publishers or any other popular scapegoat, but is rooted in our own selves and
@@ -209,4 +212,10 @@ _Let us awaken and see the possibilities of the commons!_
     Practice</cite>, The Project Gutenberg's Compilation of the Writings of
     Thomas Paine, E-book #31270, ref. 21.61.
 
-    [^thierry_noir]: [Thierry Noir]{lang=fr} said this about the effect his paintings had on the Berlin Wall.
+[^thierry_noir]:
+    
+    About the revolutionary act of painting the Berlin Wall, artist [Thierry
+    Noir]{lang=fr}
+    [expressed](http://www.galerie-noir.de/ArchivesEnglish/walleng.html) that
+    "their colors have eaten away the concrete segments like acid, trying to
+    bore enormous holes through it so that the monster will fall down."

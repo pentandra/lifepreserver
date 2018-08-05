@@ -167,6 +167,11 @@ DOI is not specific to the needs of scholarship, and is not a full solution to
 the archival requirements of scholarship. While resolution is open to all,
 creation of the identifiers is not.
 
+The DOI was designed for a world in which scholarly outputs were proprietary,
+held by someone else, and could *not* be distributed freely. Thus the need to
+manage links to whoever held the asset at the moment. It is at odds with the
+spirit of the commons.
+
 # Inversion of control
 
 The DOI people may have had some form of intellectual optimism when it came to
@@ -245,6 +250,11 @@ participate (for a nominal fee) and there is no hierarchy among the
 participants in how the system works. This is the kind of culture that we need
 for the Scholarly Commons, where players come together as peers and work on an
 even playing field.
+
+In P2P systems, the assets are generally not owned by anyone. No one is
+accountable. This breeds a culture of irresponsibility. What we need is
+researchers to be held accountable for the research they produce. Otherwise
+there is nothing that will bring us together.
 
 In all of what I'm saying, I'm not recommending that we get rid of institutions
 and publishers. We need them, but not as the controllers of what counts as
@@ -441,9 +451,10 @@ archiving mere citations of resources are not enough, irrespective of the
 'archival quality' of the identifier scheme. We need to realize that citation
 systems originated in the scarcity of the paper publication paradigm, where it
 really was not feasible to distribute all of the research dependencies
-alongside each research paper. With the technologies that exist and are
-emerging, we have an amazing opportunity _and responsibility_ to do this
-better.
+alongside each research paper. However it is done, these resources need to be
+available _locally_. Why would we again offload this responsibility entirely to
+a third-party? With the technologies that exist and are emerging, we have an
+amazing opportunity _and responsibility_ to do this better.
 
 ## What about global resolution?
 

@@ -12,4 +12,8 @@ tags:
   - Scholarly Commons
   - Technology
 ---
-This is your new post.
+
+Creative projects are independent on their own. Independent statements meant to
+differentiate the artist's own position. While there is some sense of this
+independent positioning in research, I think there is a greater desire to build
+on each others' work.

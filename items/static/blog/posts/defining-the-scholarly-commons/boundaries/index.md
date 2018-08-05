@@ -1,5 +1,5 @@
 ---
-title: "Defining the Scholarly Commons: boundaries"
+title: Boundaries and privatization
 description: In defining the scholarly commons, can we really draw any boundaries?
 kind: essay
 author_name: Chris Chapman
@@ -8,7 +8,11 @@ updated_at: 2017-08-17
 part_of_id: '/static/blog/posts/defining-the-scholarly-commons/index.*'
 tags:
   - Scholarly Commons
+  - Culture
+  - Republic of Letters
 ---
+
+## Scholarly commons
 
 My thoughts on this, which I believe are consistent with commons theory and are
 touched upon in [a blog post by Bruce Caron][collectives], is that a scholarly
