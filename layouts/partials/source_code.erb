@@ -6,7 +6,7 @@
       generously <a rel="doap:browse schema:url" href="<%= @config[:git][:browse_url] %>">hosted by GitHub</a></span>,
     with <span id="versioninfo" property="doap:release" resource="pentandra-website:release" typeof="doap:Version">this release tagged as
       <span class="tags" property="doap:revision"><a href="<%= "#{@config[:git][:tag_url]}/#{@config[:version]}" %>"><%= @config[:version] %></a></span>
-      and compiled <%= @config[:production] ? "on #{render('/partials/generated_at.*', compile_time: DateTime.now)}" : "[in #{@config.unwrap.env_name} mode]" %></span>.
+      and compiled <%= @config[:production] ? "on #{render('/partials/generated_at.*', compile_time: DateTime.now)}" : "[in #{@config._unwrap.env_name} mode]" %></span>.
   </li>
 
   <li>

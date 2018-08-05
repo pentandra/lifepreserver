@@ -15,7 +15,7 @@ module LifePreserver
       res = Set.new
 
       tags.each do |tag|
-        res << tag.unwrap.attributes[:tag] if items_with_tag(tag, items).any?
+        res << tag._unwrap.attributes[:tag] if items_with_tag(tag, items).any?
       end
 
       res.to_a.freeze
@@ -31,7 +31,7 @@ module LifePreserver
     end
 
     def sorted_tags
-      blk = -> { tags.sort_by { |t| t.unwrap.attributes[:tag] } }
+      blk = -> { tags.sort_by { |t| t._unwrap.attributes[:tag] } }
       if @items.frozen?
         @sorted_tag_items ||= blk.call
       else
@@ -42,12 +42,12 @@ module LifePreserver
     # Return true if an item has a specified tag
     # Does not create a dependency.
     #
-    # @param [Nanoc::ItemWithoutRepsView] item the item to check
-    # @param [String, Nanoc::ItemWithoutRepsView] tag the tag, either a string or tag item
+    # @param [Nanoc::BasicItemView] item the item to check
+    # @param [String, Nanoc::BasicItemView] tag the tag, either a string or tag item
     #
     # @return true if item is tagged such, otherwise false
     def tag?(item, tag)
-      Array(item.unwrap.attributes[:tags]).include?(tag.is_a?(String) ? tag : tag[:tag])
+      Array(item._unwrap.attributes[:tags]).include?(tag.is_a?(String) ? tag : tag[:tag])
     end
 
     def items_with_tag(tag, items = nil)

@@ -63,7 +63,7 @@
   [{\it <%= @item[:title] %>}][chapter]
 
 \setupexternalfigures
-  [location=global,directory={<%= Pathname.new(@item[:filename]).realpath.dirname %>, <%= Pathname.new(@items['/static/assets/images/*'].unwrap.attributes[:filename]).realpath.dirname %>}]
+  [location=global,directory={<%= Pathname.new(@item[:filename]).realpath.dirname %>, <%= Pathname.new(@items['/static/assets/images/*']._unwrap.attributes[:filename]).realpath.dirname %>}]
 
 \definecolor[pentandrabrown][h=544233]
 \definecolor[pentandralightbrown][h=B19882]

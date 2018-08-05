@@ -20,7 +20,7 @@ module LifePreserver
     end
 
     def sorted_blog_posts
-      blk = -> { blog_posts.sort_by { |p| attribute_to_time(p.unwrap.attributes[:created_at]) }.reverse }
+      blk = -> { blog_posts.sort_by { |p| attribute_to_time(p._unwrap.attributes[:created_at]) }.reverse }
       if @items.frozen?
         @sorted_blog_post_items ||= blk.call
       else
@@ -30,7 +30,7 @@ module LifePreserver
 
     # Relies upon Rules preprocessing to set the `:is_hidden` attribute.
     def published_blog_posts
-      blk = -> { sorted_blog_posts.reject { |a| a.unwrap.attributes[:is_hidden] } }
+      blk = -> { sorted_blog_posts.reject { |a| a._unwrap.attributes[:is_hidden] } }
       if @items.frozen?
         @published_blog_post_items ||= blk.call
       end
@@ -46,9 +46,9 @@ module LifePreserver
 
     def post_summary(post_rep, snapshot: nil, read_more_text: 'Read more ⇢', separator: '<!--MORE-->')
       post_rep = case post_rep
-                 when Nanoc::ItemRepView
+                 when Nanoc::BasicItemRepView
                    post_rep
-                 when Nanoc::ItemWithRepsView
+                 when Nanoc::CompilationItemView
                    post_rep.reps.fetch(:default)
                  else
                    raise ArgumentError, "Cannot summarize #{item_rep.inspect} (expected an item rep or an item, not a #{item_rep.class.name})"

@@ -48,9 +48,9 @@ module LifePreserver
       path = case target
              when String
                target
-             when Nanoc::ItemWithRepsView, Nanoc::ItemWithoutRepsView
+             when Nanoc::CompilationItemView
                target.path(rep: rep, snapshot: snapshot)
-             when Nanoc::ItemRepView
+             when Nanoc::BasicItemRepView
                target.path(snapshot: snapshot)
              else
                raise ArgumentError, "Cannot link to #{target.inspect} (expected a string or an item, not a #{target.class.name})"

@@ -61,6 +61,11 @@ module LifePreserver
 
       hunspell_lang = find_closest_lang(lang.to_s)
 
+      unless hunspell_lang
+        warn "Unable to resolve a locale for language '#{lang}' from the following candidates: #{Locale.app_language_tags.map(&:to_s).join(', ')}. Spellchecking not enabled for this language."
+        return
+      end
+
       if @@dictionaries.key?(hunspell_lang)
         return @@dictionaries[hunspell_lang]
       end
@@ -78,11 +83,7 @@ module LifePreserver
       lang_tag = Locale::Tag.parse(lang).to_simple
       locale = Locale.app_language_tags.find { |c| c.to_s.start_with?(lang_tag.to_s) }
 
-      unless locale
-        raise "Unable to resolve a locale for language '#{lang}' from the following candidates: #{Locale.app_language_tags.map(&:to_s).join(', ')}"
-      end
-
-      locale.to_s
+      locale&.to_s
     end
 
     def dictionaries
@@ -95,7 +96,7 @@ module LifePreserver
     end
 
     def abbreviation_dictionaries
-      blk = -> { dictionaries.select { |d| d.unwrap.attributes[:kind] == 'acronym-dictionary' } }
+      blk = -> { dictionaries.select { |d| d._unwrap.attributes[:kind] == 'acronym-dictionary' } }
       if @items.frozen?
         @abbreviation_dictionary_items ||= blk.call
       else
@@ -112,7 +113,7 @@ module LifePreserver
     def supplementary_dictionaries_for(base_dic)
       identifier = base_dic.identifier
       dependencies = @items.find_all(File.dirname(identifier.to_s) + '/*')
-      dependencies.keep_if { |d| d.unwrap.attributes[:kind] =~ /(personal|extra)-dictionary/ }
+      dependencies.keep_if { |d| d._unwrap.attributes[:kind] =~ /(personal|extra)-dictionary/ }
       dependencies << base_dic
     end
   end

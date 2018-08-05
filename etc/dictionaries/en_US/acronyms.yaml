@@ -20,7 +20,7 @@ CC-BY-SA: Creative Commons Attribution-ShareAlike
 CC-BY: Creative Commons Attribution
 CC0: Creative Commons Zero (Public Domain Dedication)
 CC: Creative Commons
-CERN: 'Organisation européenne pour la recherche nucléaire (English: European Organization for Nuclear Research)'
+CERN: "European Organization for Nuclear Research (French: Organisation européenne pour la recherche nucléaire)"
 CHF: Swiss Francs
 CSS3: Cascading Style Sheets Level 3
 CSS: Cascading Style Sheets
@@ -28,6 +28,7 @@ CV: curriculum vitae
 DARPA: Defence Advanced Research Projects Agency
 DCMI: Dublin Core Metadata Initiative
 DIO: Design Intent Ontology
+DIY: Do It Yourself
 DMI: Dynamic Machine Interface
 DMI: Dynamic Machine Interface
 DNS: Domain Name System
@@ -47,6 +48,7 @@ FRBR: Functional Requirements for Bibliographic Records
 FRPAA: Federal Research Public Access Act
 FTP: File Transfer Protocol
 FaBiO: FRBR-aligned Bibliographic Ontology
+GDR: "German Democratic Republic (German: Deutsche Demokratische Republik)"
 GEDCOM: Genealogical Data Communication
 GNN: Global Network Navigator
 GPS: Genealogical Proof Standard
@@ -124,6 +126,8 @@ URI: Universal Resource Identifier
 URL: Uniform Resource Locator
 US: United States
 USA: United States of America
+USSR: Union of Soviet Socialist Republics
+UT: Utah
 UTF-8: Unicode Transformation Format-8
 UTF: Unicode Transformation Format
 VANN: Vocabulary for ANNotating vocabulary descriptions

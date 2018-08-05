@@ -71,6 +71,8 @@ class SpellChecker < Nanoc::Filter
 
         node_lang = find_node_lang(node)
         dic = dictionary(node_lang)
+        next unless dic
+
         depend_on_attributes(dic.dependencies)
 
         checked_text = node.text.dup.gsub(/([[:word:]]+(?:['’][[:word:]]+)?)/) do |word|
@@ -93,7 +95,7 @@ class SpellChecker < Nanoc::Filter
   end
 
   def depend_on_attributes(items)
-    items = items.map { |i| i.is_a?(Nanoc::ItemWithRepsView) ? i.unwrap : i }
+    items = items.map { |i| i.class < Nanoc::DocumentViewMixin ? i._unwrap : i }
 
     dependency_tracker = @assigns[:item]._context.dependency_tracker
     items.each { |item| dependency_tracker.bounce(item, attributes: true) }

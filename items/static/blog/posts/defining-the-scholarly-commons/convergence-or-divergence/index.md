@@ -49,7 +49,33 @@ neither possible nor desirable---but it is in our interest to find agreement on
 the crucial questions. After all, morality is not what any one of us decides,
 "it's what holds a group together."]
 
+> The procedure we are pursuing is that of true democracy. Semi-democracy
+> accepts the dictatorship of a majority in establishing its arbitrary, ergo,
+> unnatural, laws. True democracy discovers by patient experiment and unanimous
+> acknowledgement what the laws of nature or universe may be for the physical
+> support and metaphysical satisfaction of the human intellect's function in
+> universe.
+
+<figcaption>---Buckminster Fuller, <cite>Operating Manual for Spaceship Earth</cite>, 1963</figcaption>
+
 # Convergence
+
+---
+
+I have over thirty blog posts that I have been working on over this period that
+I have not yet published. Talk about a self-imposed embargo period! There are
+several excuses for this:
+
+1. A desire to make sure that every thing that I publish is perfect and
+   complete.
+2. Many of these are the beginnings of a thought and I have not considered them
+   worthy of publishing.
+3. I have wanted to stick too much in one post so that it is a complete
+   thought. I need to trust that it is okay to spread things across multiple
+   posts, the same way that it is okay to break thoughts into paragraphs and
+   sections. Just because they have different identifiers does not shard them
+   irreconcilably. I need to be okay with spreading out my thoughts. But I also
+   need to think of ways to connect these pieces together.
 
 ---
 

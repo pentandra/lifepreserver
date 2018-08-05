@@ -22,7 +22,7 @@ module LifePreserver
     end
 
     def sorted_articles
-      blk = -> { articles.sort_by { |a| attribute_to_time(a.unwrap.attributes[:created_at]) }.reverse }
+      blk = -> { articles.sort_by { |a| attribute_to_time(a._unwrap.attributes[:created_at]) }.reverse }
       if @items.frozen?
         @sorted_article_items ||= blk.call
       else
@@ -32,7 +32,7 @@ module LifePreserver
 
     # Relies upon Rules preprocessing to set the `:is_hidden` attribute.
     def published_articles
-      blk = -> { sorted_articles.reject { |a| a.unwrap.attributes[:is_hidden] } }
+      blk = -> { sorted_articles.reject { |a| a._unwrap.attributes[:is_hidden] } }
       if @items.frozen?
         @published_article_items ||= blk.call
       else

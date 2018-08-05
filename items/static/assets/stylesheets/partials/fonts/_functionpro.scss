@@ -39,7 +39,7 @@ $base-line-height: 26px;
 @font-face {
   font-family: $base-font-family;
   src: url("/fonts/FunctionPro-Medium-webfont.eot");
-  src: local("FunctionPro-Bold"), url("/fonts/FunctionPro-Medium-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/FunctionPro-Medium-webfont.woff") format("woff"), url("/fonts/FunctionPro-Medium-webfont.ttf") format("truetype"), url("/fonts/FunctionPro-Medium-webfont.svg#FunctionProBook") format("svg");
+  src: local("FunctionPro-Medium"), url("/fonts/FunctionPro-Medium-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/FunctionPro-Medium-webfont.woff") format("woff"), url("/fonts/FunctionPro-Medium-webfont.ttf") format("truetype"), url("/fonts/FunctionPro-Medium-webfont.svg#FunctionProBook") format("svg");
   font-weight: bold;
   font-style: normal;
 }
@@ -55,7 +55,7 @@ $base-line-height: 26px;
 @font-face {
   font-family: $base-font-family;
   src: url("/fonts/FunctionPro-MediumOblique-webfont.eot");
-  src: local("FunctionPro-BoldOblique"), url("/fonts/FunctionPro-MediumOblique-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/FunctionPro-MediumOblique-webfont.woff") format("woff"), url("/fonts/FunctionPro-MediumOblique-webfont.ttf") format("truetype"), url("/fonts/FunctionPro-MediumOblique-webfont.svg#FunctionProMediumItalic") format("svg");
+  src: local("FunctionPro-MediumOblique"), url("/fonts/FunctionPro-MediumOblique-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/FunctionPro-MediumOblique-webfont.woff") format("woff"), url("/fonts/FunctionPro-MediumOblique-webfont.ttf") format("truetype"), url("/fonts/FunctionPro-MediumOblique-webfont.svg#FunctionProMediumItalic") format("svg");
   font-weight: bold;
   font-style: oblique;
 }

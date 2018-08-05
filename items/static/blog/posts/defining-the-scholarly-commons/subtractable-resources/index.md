@@ -1,6 +1,6 @@
 ---
 title: "Defining the Scholarly Commons: subtractable resources"
-description: Is there a subtractable resource in your scholarly commons? Yes, there should be.
+description: Is there a subtractable resource in your scholarly commons? Yes, there should be or you're thinking about this wrong.
 kind: essay
 author_name: Chris Chapman
 created_at: 2017-04-20
@@ -9,6 +9,8 @@ part_of_id: '/static/blog/posts/defining-the-scholarly-commons/index.*'
 tags:
   - Scholarly Commons
   - Holism
+  - Culture
+  - Republic of Letters
 ---
 
 <figure id="surfing-commons" class="img" property="schema:sharedContent" resource="#surfing-commons" typeof="schema:ImageObject">
@@ -23,42 +25,67 @@ Elinor Ostrom, including several conflated concepts that have even seeped into
 our own discussions. I will then take this framework further and bring in the
 idea of _potential and prior discoveries_.
 
+I want to talk about the commons and enclosures of the commons in a way that
+goes beyond the stereotypical commons versus market and state debate. Or maybe
+not too far beyond if you consider the publish-or-perish environment of the
+current system not too different from the competitive pressures of a predatory
+market. I want to talk about researchers as privateers and exploiters of
+knowledge discovery, and how this mindset and logic originated with the journal
+and is antithetical to the culture of the Scholarly Commons.
+
+A constellation of logic:
+
+1. We are all individuals in our own unique context, with our own unique
+   perspectives, and our own unique contributions to make.
+2. In the Republic of Letters, people were more apt to share and common on the
+   knowledge discovery. People wrote and read letters, but it felt more like a
+   group effort. Ideas were assimilated and scientific priority was not as
+   established. People didn't worry about scooping.
+3. The transition to the journal article privitized research contributions
+   (even before the journals became private) and established scientific
+   priority on the level of the written article. They didn't know how to deal
+   with the attribution! It was easier to privitize, because then you could
+   keep the contributions intact. People don't share with each other because
+   they are worried about scooping and don't want to have to worry about adding
+   people as co-authors and other complex and awkward attribution schemes. But
+   it still doesn't work---it has lead to hiding of the research process and of
+   realistic attribution. Differences in opinion were expressed by publishing
+   papers with opposing viewpoints. Reconciliations were often implicit and
+   disconnected.
+4. In the industrialization of science is an outcropping of this mentality. has
+   made the motivations more perverse especially after the grant money has been
+   awarded. and reinforced the privitization because it is more awkward to
+   bring collaborators in after a grant has been awarded.
+5. Scholarly commons make it possible for individuals to work together and
+   cultivate the same field while maintaining individuality. We need the
+   individuals---there is no commons without the commoners.
+
+The value is in the research, not in the fancy words she put together to
+impress a bunch of academics. Writing it up didn't make her discovery any more
+impressive. ---Katie 
+
 <!--MORE-->
 
-# System boundaries of a commons
-
-My thoughts on this, which I believe are consistent with commons theory and are
-touched upon in [a blog post by Bruce Caron][collectives], is that a scholarly
-commons will form because of a need---a need for understanding. People that
-actually care about a certain knowledge will collect around a need to
-understand and a desire to care for and further that knowledge in order to
-satiate that need for understanding. This collective is the seed of a commons.
-Discussions will ensue that will establish rules, traditions, and values
-pertaining to how to deal with the shared resources of the commons, which will
-include the active and latent knowledge of that field of study. Scholarly
-commons can form around any type of knowledge. Scholarly commons can be nested
-into multiple layers, either imitating the structure of the knowledge around
-which it was created, or more likely, around the type of need it is trying to
-fill.
-
-<figure class="grab bq">
-
-> The right boundary for thinking about a problem rarly coincides with the
-> boundary of an academic discipline, or with a political boundary. ...
-> Ideally, we would have the mental flexibility to find the appropriate
-> boundary for thinking about each new problem. We are rarely that flexible.
-> ... Too often, universities are living monuments to boundary rigidity. ...
-> It's a great art to remember that _boundaries are of our own making, and that
-> they can and should be reconsidered for each new discussion, problem, or
-> purpose._ It's a challenge to stay creative enough to drop the boundaries
-> that worked for the last problem and to find the most appropriate set of
-> boundaries for the next question. It's also a necessity, if problems are to
-> be solved well.
-
-<figcaption>--- <cite>Thinking in Systems: A Primer</cite>, by Donella H. Meadows, pp. 98--99</figcaption>
-</figure>
-
 # Information as a common-pool resource
+
+I'm going to go out on a limb here and say that I do not think that the central
+resource of a scholarly commons are articles or papers, in fact, I do not think
+that it is digital at all. I don't think that is what people "common" around. I
+don't even think a collaborative writing process is what the Scholarly Commons
+is about. While there are good things about Open Access and Creative Commons,
+and there is definite benefit to the dissemination of knowledge that happens
+when papers or any information is open for people to download and read, these
+things as they are now are not enough to create a complete system of scholarly
+commoning.
+
+> Every time man makes a new experiment he always learns more. He cannot learn
+> less. He may learn that what he thought was true was not true. By the
+> elimination of a false premise, his basic capital wealth which in his given
+> lifetime is disembarrassed of further preoccupation with considerations of
+> how to employ a worthless time-consuming hypothesis. Freeing his time for its
+> more effective exploratory investment is to give man increased wealth.
+
+<figcaption>---Buckminster Fuller, <cite>Operating Manual for Spaceship Earth</cite>, 1963</figcaption>
 
 # The nature of discoveries
 

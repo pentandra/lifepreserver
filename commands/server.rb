@@ -1,3 +1,5 @@
+#frozen_string_literal: true
+
 usage 'server [options]'
 summary 'start the dynamic web server (nginx/OpenResty)'
 description <<-EOS
@@ -33,7 +35,7 @@ module LifePreserver
     def run
       require 'open3'
 
-      @site = load_site
+      config = Nanoc::Int::ConfigLoader.new.new_from_cwd
 
       c = Nanoc::CLI::ANSIStringColorizer
 
@@ -41,7 +43,7 @@ module LifePreserver
       directives = options[:global] || 'daemon off;'
 
       nginx = find_nginx
-      output_dir = @site.config[:output_dir]
+      output_dir = config[:output_dir]
       config_file = File.join(output_dir, conf)
       cmd = [nginx, '-p', output_dir, '-c', conf, '-g', directives]
 

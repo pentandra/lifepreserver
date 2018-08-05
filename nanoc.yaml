@@ -1,5 +1,3 @@
-enable_output_diff: true
-
 text_extensions: [ 'atom', 'conf', 'css', 'erb', 'haml', 'htm', 'html', 'js', 'markdown', 'md', 'rb', 'sass', 'scss', 'tex', 'ttl', 'txt', 'xml' ]
 
 # Config for Nanoc commands
@@ -14,8 +12,8 @@ checks: &checks
 deploy:
   public:
     kind: rsync
-    dst: "root@pentandra.com:/srv/http/lifepreserver"
-    options: [ '-gplPrtvz', '--delete-after', '--exclude=/logs' ]
+    dst: "lifepreserver@pentandra.com:/srv/http/lifepreserver"
+    options: [ '-gplPrtvz', '--delete-after', '--exclude=/logs', '--rsync-path=sudo rsync' ]
   staging:
     kind: rsync
     dst: "vlad@rebikov.process.tree:/srv/http/lifepreserver"
@@ -111,6 +109,8 @@ environments:
 
   development: &development
     <<: *default
+
+    enable_output_diff: true
 
     site: # Simplify dependencies for quicker compilation during development
       <<: *site
