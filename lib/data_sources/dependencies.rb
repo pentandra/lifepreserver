@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 require 'active_support/core_ext/string/inflections'
+require 'rubygems'
+require 'bundler'
 
 Class.new(Nanoc::DataSource) do
   identifier :dependencies
