@@ -31,10 +31,6 @@ preprocess do
     end
   end
 
-  def include_hypothesis
-    @items.each { |item| item[:endbody] = Array(item[:endbody]) << 'hypothesis' }
-  end
-
   # We don't want anything nanoc specific in the spec folder, so have to use
   # some trickery to get the information we need for searches.
   def extract_metadata_from_specification_documents
@@ -63,7 +59,6 @@ preprocess do
   mark_items_as_hidden_that_should_be_hidden
 
   include_analytics if @config[:google_analytics]
-  include_hypothesis if @config[:hypothesis]
   include_video_partials_when_has_media
 
   extract_metadata_from_specification_documents
