@@ -38,7 +38,7 @@ data_sources:
   - type : dictionaries
     items_root: *meta_items_root
     directories:
-      - 'etc/dictionaries'
+      - 'var/dictionaries'
     supported_languages: [ 'en_US', 'en_GB', 'es_ES', 'fr_FR', 'nl_NL', 'de_DE', 'it_IT' ]
 
   - type: tags
@@ -57,7 +57,7 @@ data_sources:
       extra:      [ essglobal-activities, essglobal-legalform, essglobal-qualifiers, essglobal-typeoflabour, sioct, xsd ]
 
   - type: company
-    company_metafile: 'etc/company.yaml'
+    company_metafile: 'var/company.yaml'
 
 # Config for Nanoc environments
 

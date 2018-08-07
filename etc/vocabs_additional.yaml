@@ -1,7 +1,7 @@
 ---
 article:
   uri: "http://ogp.me/ns/article#"
-  source: "etc/vocabs/article.ttl"
+  source: "var/vocabs/article.ttl"
   strict: false
 
 adms:
@@ -17,7 +17,7 @@ c4o:
 
 co:
   uri: "http://purl.org/co/"
-  source: "etc/vocabs/collections.owl"
+  source: "var/vocabs/collections.owl"
 
 cro:
   uri: "http://purl.obolibrary.org/obo/cro.owl#"
@@ -25,7 +25,7 @@ cro:
 
 ctag:
   uri: "http://commontag.org/ns#"
-  source: "etc/vocabs/ctag_2009-06-08.n3"
+  source: "var/vocabs/ctag_2009-06-08.n3"
 
 dbo:
   uri: "http://dbpedia.org/ontology/"
@@ -44,7 +44,7 @@ deps:
 
 dio:
   uri: "https://w3id.org/dio#"
-  source: "etc/vocabs/dio.owl"
+  source: "var/vocabs/dio.owl"
 
 doco:
   uri: "http://purl.org/spar/doco/"
@@ -87,7 +87,7 @@ fabio:
 
 fea:
   uri: "http://vocab.data.gov/def/fea#"
-  source: "etc/vocabs/fea.ttl"
+  source: "var/vocabs/fea.ttl"
 
 ipo:
   uri: "http://purl.org/ipo/core#"
@@ -101,7 +101,7 @@ pav:
 
 profile:
   uri: "http://ogp.me/ns/profile#"
-  source: "etc/vocabs/profile.ttl"
+  source: "var/vocabs/profile.ttl"
   strict: false
 
 rov:
@@ -112,7 +112,7 @@ sioct:
 
 vann:
   uri: "http://purl.org/vocab/vann/"
-  source: "etc/vocabs/vann.ttl"
+  source: "var/vocabs/vann.ttl"
 
 vivo:
   uri: "http://vivoweb.org/ontology/core#"

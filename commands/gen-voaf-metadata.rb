@@ -11,7 +11,7 @@ run do |_opts, _args, _cmd|
   require 'yaml'
 
   $stderr.print 'Loading voaf dataset… '
-  repository = RDF::Repository.load('etc/datasets/lov.n3')
+  repository = RDF::Repository.load('var/datasets/lov.n3')
   $stderr.puts 'done'
 
   FileUtils.mkdir_p('var')
