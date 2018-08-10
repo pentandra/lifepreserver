@@ -1,5 +1,9 @@
 # URI Design for pentandra.com
 
+The following are basic design decisions that have been made for consistency
+across this project. See [Cool URIs for the Semantic Web][cooluris] for some
+background information.
+
 ## Information resource identifier design
 
 Any URI that ends in a `/` refers to the information resource to which it
@@ -52,3 +56,4 @@ logical sense and satisfies [httpRange-14].
 ```
 
 [httpRange-14]: <http://lists.w3.org/Archives/Public/www-tag/2005Jun/0039.html>
+[cooluris]: <https://www.w3.org/TR/cooluris/>
