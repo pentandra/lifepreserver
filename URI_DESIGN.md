@@ -1,22 +1,20 @@
-# URI Design for pentandra.com
+# Uniform Resource Identifier design for pentandra.com
 
 The following are basic design decisions that have been made for consistency
 across this project. See [Cool URIs for the Semantic Web][cooluris] for some
-background information.
+background information in URI design.
 
-## Information resource identifier design
-
-Any URI that ends in a `/` refers to the information resource to which it
-resolves. A fragment identifier created by a hash following a slash
+To start off, note that there are two types of URIs in this project: those that
+identify an information resource (i.e. a web page) and those that identify
+something else, such as a concept. Any URI that ends in a `/` refers to the
+information resource to which it resolves. For example, a fragment identifier
+created by a hash following a slash
 (`https://pentandra.com/…/#scholarly-commoning`), refers to a section or other
-part of that information resource.
+fragment of that information resource. Any URI that does not end in a `/` does
+not refer to an information resource, but to some other resource, such as a
+concept.
 
-## Concept identifier design
-
-Any URI that does not end in a `/` does not refer to an information resource,
-but to some other resource, such as a concept.
-
-### Concept-specific RDFa context
+## Pentandra-specific RDFa context
 
 A few concepts that are listed as prefixes in the base layout are:
 
