@@ -2,6 +2,16 @@
 
 This is the website for [Pentandra Research Solutions][pentandra].
 
+> I am enthusiastic over humanity's extraordinary and sometimes very timely
+> ingenuities. If you are in a shipwreck and all the boats are gone, a piano
+> top buoyant enough to keep you afloat that comes along makes a fortuitous
+> life preserver. But this is not to say that the best way to design a life
+> preserver is in the form of a piano top. I think that we are clinging to a
+> great many piano tops in accepting yesterday's fortuitous contrivings as
+> constituting the only means for solving a given problem.
+>
+> <footer>Buckminster Fuller, <cite>Operating Manual for Spaceship Earth</cite></footer>
+
 ## Development
 
 The source for this project is built using [nanoc].
