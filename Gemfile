@@ -41,5 +41,6 @@ group :test, optional: true do
   gem 'rspec'
   gem 'rspec-mocks'
   gem 'rubocop'
+  gem 'watir'
   gem 'simplecov', require: false
 end
