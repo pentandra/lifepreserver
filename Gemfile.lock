@@ -8,9 +8,9 @@ GIT
 
 GIT
   remote: https://github.com/cdchapman/ffi-hunspell
-  revision: e320f86c67057121cc9e16b1d224e4674e79d70b
+  revision: 20c2ebb564245d03eb16a25a7882454af4519d77
   specs:
-    ffi-hunspell (0.3.1)
+    ffi-hunspell (0.4.0)
       ffi (~> 1.0)
 
 GIT
@@ -107,7 +107,7 @@ GEM
     guard-rake (1.0.0)
       guard
       rake
-    haml (5.1.1)
+    haml (5.1.2)
       temple (>= 0.8.0)
       tilt
     hamster (3.0.0)
@@ -134,7 +134,7 @@ GEM
       json-ld (~> 3.0)
       multi_json (~> 1.12)
       rdf (~> 3.0)
-    json_schema (0.20.6)
+    json_schema (0.20.7)
     ld-patch (0.3.3)
       ebnf (~> 1.1)
       rdf (>= 2.2, < 4.0)
@@ -181,18 +181,18 @@ GEM
     minitest (5.11.3)
     multi_json (1.13.1)
     multi_xml (0.6.0)
-    nanoc (4.11.6)
+    nanoc (4.11.8)
       addressable (~> 2.5)
       colored (~> 1.2)
       cri (~> 2.15)
-      nanoc-core (= 4.11.6)
+      nanoc-core (= 4.11.8)
       parallel (~> 1.12)
       tomlrb (~> 1.2)
       tty-command (~> 0.8)
       tty-file (~> 0.7)
       tty-platform (~> 0.2)
       tty-which (~> 0.4)
-    nanoc-core (4.11.6)
+    nanoc-core (4.11.8)
       ddmemoize (~> 1.0)
       ddmetrics (~> 1.0)
       ddplugin (~> 1.0)
@@ -202,14 +202,14 @@ GEM
       zeitwerk (~> 2.1)
     necromancer (0.5.0)
     nenv (0.3.0)
-    net-http-persistent (3.0.1)
+    net-http-persistent (3.1.0)
       connection_pool (~> 2.2)
     netrc (0.11.0)
-    nokogiri (1.10.3)
+    nokogiri (1.10.4)
       mini_portile2 (~> 2.4.0)
     nokogumbo (1.5.0)
       nokogiri
-    notiffany (0.1.1)
+    notiffany (0.1.3)
       nenv (~> 0.1)
       shellany (~> 0.0)
     pandoc-ruby (2.0.2)
@@ -230,7 +230,7 @@ GEM
     rack (2.0.7)
     rainbow (3.0.0)
     rainpress (1.0.1)
-    rake (12.3.2)
+    rake (12.3.3)
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
@@ -310,7 +310,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.8.0)
     rspec-support (3.8.2)
-    rubocop (0.73.0)
+    rubocop (0.74.0)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
       parser (>= 2.6)
@@ -362,7 +362,7 @@ GEM
     tty-command (0.8.2)
       pastel (~> 0.7.0)
     tty-cursor (0.7.0)
-    tty-file (0.7.1)
+    tty-file (0.8.0)
       diff-lcs (~> 1.3)
       pastel (~> 0.7.2)
       tty-prompt (~> 0.18)
@@ -437,4 +437,4 @@ DEPENDENCIES
   watir
 
 BUNDLED WITH
-   2.0.1
+   2.0.2
