@@ -155,7 +155,7 @@ resulting struggle in the practice of medicine:
 > Volvo. "What we get, of course, is nothing close to a great car; we get a
 > pile of very expensive junk."
 
-<figcaption>--- Atul Gawande, <cite>The Checklist Manifesto</cite>, 2009, pp. 184--5</figcaption>
+<figcaption>--- Atul Gawande, <cite>The Checklist Manifesto</cite>, 2009, pp. 184--5\par</figcaption>
 </figure>
 
 Research or scholarship, just like medicine, is not simply a matter of lining
@@ -178,7 +178,7 @@ understanding of some of the discussions may be incomplete.
 <figure id="scholarly-commons-backbone-using-existing-stuff-as-parts" class="img" resource="#scholarly-commons-backbone-using-existing-stuff-as-parts" property="schema:sharedContent" typeof="schema:ImageObject">
   <link property="schema:representativeOfPage" resource="schema:True"/>
   <a property="schema:url" href="scholarly_commons_backbone_using_existing_stuff.jpg" title="Click for the whole board"><img property="schema:thumbnail" src="scholarly_commons_backbone_using_existing_stuff_620x.jpg"/></a>
-  <figcaption class="schema:caption">Some thoughts that emerged during the main track of the workshop, which was followed through to completion thanks to [Björn Brembs]{lang=nl}, [Jeroen Bosman]{lang=nl}, and [Bianca Kramer]{lang=nl}, on practical pathways toward a scholarly commons using existing tools, organizations, and services.</figcaption>
+  <figcaption class="schema:caption">Some thoughts that emerged during the main track of the workshop, which was followed through to completion thanks to [Björn Brembs]{lang=nl}, [Jeroen Bosman]{lang=nl}, and [Bianca Kramer]{lang=nl}, on practical pathways toward a scholarly commons using existing tools, organizations, and services.\par</figcaption>
 </figure>
 
 As for the exercise, after the tools went through the 'compliance checking'
@@ -265,7 +265,7 @@ approaches to global peer-production. Even so, I did not expect the
 participants to react this way, and I think this was an important negative
 result to obtain and from which we should learn.
 
-# Scholarly Commoning
+# Scholarly commoning
 
 Our process as so far in defining the Scholarly Commons, aside from the few
 workshops that we have held, has been mostly limited to seeking feedback when
@@ -310,7 +310,7 @@ cases]:
 > interaction that correspondence did. In short, the Society’s correspondence
 > encouraged a more participatory science.
 
-<figcaption>--- [Andrea Rusnock]{lang=en-US}, <a href="http://www.jstor.org/stable/4028081">Correspondence networks and the Royal Society, 1700--1750</a></figcaption>
+<figcaption>--- [Andrea Rusnock]{lang=en-US}, <a href="http://www.jstor.org/stable/4028081">Correspondence networks and the Royal Society, 1700--1750</a>\par</figcaption>
 </figure>
 
 I would argue that what we have lost we need to revive and reintroduce into our
@@ -385,7 +385,7 @@ impeded.
 > actual scholarship is the complete software development environment, and the
 > complete set of instructions which generated the figures.
 
-<figcaption>--- Jonathan B. Buckheit and David Donoho, <a href="http://statweb.stanford.edu/~donoho/Reports/1995/wavelab.pdf"><cite>Wavelab and Reproducible Research</cite></a>, 1995 (quoted in a <a href="https://www.slideshare.net/carolegoble/ismb2013-keynotecleangoble">presentation</a> by Carole Goble).</figcaption>
+<figcaption>--- Jonathan B. Buckheit and David Donoho, <a href="http://statweb.stanford.edu/~donoho/Reports/1995/wavelab.pdf"><cite>Wavelab and Reproducible Research</cite></a>, 1995 (quoted in a <a href="https://www.slideshare.net/carolegoble/ismb2013-keynotecleangoble">presentation</a> by Carole Goble).\par</figcaption>
 </figure>
 
 But where do we draw the line between implicit and explicit? Is it enough to
@@ -409,7 +409,7 @@ and whenever the feel they have something to contribute. Obviously, doing this
 with a Google Doc is less than ideal, but I hope you can see what I am trying
 to show.
 
-# Shared Practice
+# Shared practice
 
 To me the essence of scholarly commoning is sharing how, why, and what we do.
 To do this, we need a way to explicitly _share_ our practice. I discussed the
@@ -459,7 +459,7 @@ and we're talking here about the practice of research:
 > beautifully, deliberately and well. That is one of the ends for which they
 > exist.
 
-<figcaption>--- Robert Bringhurst, <cite>The Elements of Typographic Style</cite>, version 3.2 (2008)</figcaption>
+<figcaption>--- Robert Bringhurst, <cite>The Elements of Typographic Style</cite>, version 3.2 (2008)\par</figcaption>
 </figure>
 
 Instead of writing these rules or guides in prose and sticking them in a book,
@@ -498,7 +498,7 @@ Gawande provides some direction for the future:
 >
 > But we could, and that is the ultimate point.
 
-<figcaption>--- Atul Gawande, <cite>The Checklist Manifesto</cite>, p. 185</figcaption>
+<figcaption>--- Atul Gawande, <cite>The Checklist Manifesto</cite>, p. 185\par</figcaption>
 </figure>
 
 Sharing our patterns of practice is part of the answer to [increasing the
