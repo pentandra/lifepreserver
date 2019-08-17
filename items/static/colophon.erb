@@ -327,6 +327,23 @@ changefreq: monthly
     </div>
 
   </section>
+  <section id="automated-testing-dependencies" class="section">
+
+    <div class="bd">
+
+      <h3 class="flush">Automated Testing Dependencies</h3>
+
+      <p>
+
+        And we should not forget to thank <span class="foreign"><%= authors_of(dependencies_for(:test)).to_sentence %></span> for the tools that make automated testing enjoyable.
+
+      </p>
+
+      <%= render('/partials/dependency_metadata.*', group: :test) %>
+
+    </div>
+
+  </section>
   <section id="os-gratitude" class="section">
 
     <div class="bd">
