@@ -12,6 +12,6 @@ class CompassWithSass < Nanoc::Filter
     params = params.merge(Compass.sass_engine_options)
 
     # Delegate to Nanoc's sass filter
-    Nanoc::Filters::Sass.new(@assigns).setup_and_run(content, params)
+    Nanoc::Filters::SassFilter.new(@assigns).setup_and_run(content, params)
   end
 end

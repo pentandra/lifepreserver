@@ -71,7 +71,7 @@ Class.new(Nanoc::DataSource) do
     filename = File.expand_path(dic_filename)
     parent_name = File.basename(File.dirname(dic_filename))
     new_item(
-      binary ? filename : Nanoc::Int::TextualContent.new(raw_content, filename: filename),
+      binary ? filename : Nanoc::Core::TextualContent.new(raw_content, filename: filename),
       attributes,
       Nanoc::Identifier.new("/dictionaries/#{parent_name}/#{File.basename(filename)}"),
       binary: binary,
