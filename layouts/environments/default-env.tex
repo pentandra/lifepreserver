@@ -101,6 +101,7 @@
   [
     location=global,
     directory={<%= Pathname.new(@item[:filename]).realpath.dirname %>, <%= Pathname.new(@items['/static/assets/images/*']._unwrap.attributes[:filename]).realpath.dirname %>},
+    maxwidth=\textwidth,
   ]
 
 \definecolor[pentandrabrown][h=544233]
