@@ -2,6 +2,10 @@
 
 This is the website for [Pentandra Research Solutions][pentandra].
 
+Buckminster Fuller provides an apt description of the current situation in
+research communications in the first paragraph of his [Operating Manual for
+Spaceship Earth]:
+
 > I am enthusiastic over humanity's extraordinary and sometimes very timely
 > ingenuities. If you are in a shipwreck and all the boats are gone, a piano
 > top buoyant enough to keep you afloat that comes along makes a fortuitous
@@ -9,8 +13,10 @@ This is the website for [Pentandra Research Solutions][pentandra].
 > preserver is in the form of a piano top. I think that we are clinging to a
 > great many piano tops in accepting yesterday's fortuitous contrivings as
 > constituting the only means for solving a given problem.
->
-> <footer>Buckminster Fuller, <cite>Operating Manual for Spaceship Earth</cite></footer>
+
+We're in a state of intellectual shipwreck but all the lifeboats have been
+taken. We're on the verge of a new era but we're still clinging onto
+yesterday's solutions and thought-forms.
 
 ## Development
 
@@ -66,7 +72,8 @@ $ nanoc server      # if you are dealing with both the static and dynamic aspect
 ```
 
 And view the page in your browser at [port 3000](http://localhost:3000/) for
-`nanoc static-view` or [port 4125](https://localhost:4125/) for `nanoc server`.
+`nanoc static-view` or [port 3125 (http)](http://localhost:3125/) or [port 4125
+(https)](https://localhost:4125/) for `nanoc server`.
 
 ## Contributing
 
@@ -130,3 +137,4 @@ Also, please see [the colophon][colophon] for more raving attributions!
 [bundler]: <http://bundler.io/>
 [colophon]: <https://pentandra.com/colophon/>
 [OpenResty]: <http://openresty.org/>
+[Operating Manual for Spaceship Earth]: <https://en.wikipedia.org/wiki/Operating_Manual_for_Spaceship_Earth>
