@@ -14,9 +14,9 @@ Spaceship Earth]:
 > great many piano tops in accepting yesterday's fortuitous contrivings as
 > constituting the only means for solving a given problem.
 
-We're in a state of intellectual shipwreck but all the lifeboats have been
-taken. We're on the verge of a new era but we're still clinging onto
-yesterday's solutions and thought-forms.
+We're in a state of intellectual shipwreck and all the lifeboats have been
+taken. We're on the verge of a new era of communications but we're still
+clinging onto yesterday's solutions and thought-forms.
 
 ## Development
 
@@ -72,8 +72,9 @@ $ nanoc server      # if you are dealing with both the static and dynamic aspect
 ```
 
 And view the page in your browser at [port 3000](http://localhost:3000/) for
-`nanoc static-view` or [port 3125 (http)](http://localhost:3125/) or [port 4125
-(https)](https://localhost:4125/) for `nanoc server`.
+`nanoc static-view` or, for `nanoc server` [port 3125](http://localhost:3125/)
+for `http` or [port 4125](https://localhost:4125/) for `https` (using a test
+cert).
 
 ## Contributing
 
@@ -82,7 +83,8 @@ starting a new feature, page, blog post, et cetera, please create a new branch
 for it based on the `develop` branch to ease review and integration.
 
 * Do your best to adhere to the existing coding conventions and idioms.
-* Don’t use hard tabs, and don’t leave trailing whitespace on any line. Before committing, run `git diff --check` to make sure of this.
+* Don’t use hard tabs, and don’t leave trailing whitespace on any line. Before
+  committing, run `git diff --check` to make sure of this.
 
 ## Environments
 
