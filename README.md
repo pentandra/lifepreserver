@@ -1,4 +1,4 @@
-# Lifepreserver
+# Life Preserver
 
 This is the website for [Pentandra Research Solutions][pentandra].
 
