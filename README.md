@@ -64,20 +64,17 @@ $ bundle exec nanoc [compile] [--verbose] [--env=development]
 
 ### Start the HTTP server and request the page in your browser
 
-```bash
-# either
-$ nanoc static-view # if you are only dealing with statically generated pages
-# or
-$ nanoc server      # if you are dealing with both the static and dynamic aspects of the site
-```
+Use either the `static-view` command, which starts an [Adsf::Server] instance
+at the static root of the website for simple browsing of statically generated
+pages, or the `server` command, which launches a full-fledged [OpenResty]
+application server which includes the dynamic aspects of the site.
 
-And view the page in your browser at (by default):
+| Command             | scheme                             | port                                                                             |
+|---------------------|------------------------------------|---------------------------------------------------------------------------------:|
+| `nanoc static-view` | HTTP                               | [3000](http://localhost:3000/)                                                   |
+| `nanoc server`      | HTTP and HTTPS (using a test cert) | [3125](http://localhost:3125/) and [4125](https://localhost:4125/), respectively |
 
-| Nanoc command | scheme                    | port                            |
-|---------------|---------------------------|--------------------------------:|
-| `static-view` | HTTP                      | [3000](http://localhost:3000/)  |
-| `server`      | HTTP                      | [3125](http://localhost:3125/)  |
-| `server`      | HTTPS (using a test cert) | [4125](https://localhost:4125/) |
+Then view the page in your browser.
 
 ## Testing
 
@@ -152,3 +149,4 @@ Also, please see [the colophon][colophon] for more raving attributions!
 [OpenResty]: <http://openresty.org/>
 [Operating Manual for Spaceship Earth]: <https://en.wikipedia.org/wiki/Operating_Manual_for_Spaceship_Earth>
 [Test::Nginx]: <https://github.com/openresty/test-nginx>
+[Adsf::Server]: <https://github.com/ddfreyne/adsf>
