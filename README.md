@@ -67,7 +67,7 @@ $ bundle exec nanoc [compile] [--verbose] [--env=development]
 Use either the `static-view` command, which starts an [Adsf::Server] instance
 at the static root of the website for simple browsing of statically generated
 pages, or the `server` command, which launches a full-fledged [OpenResty]
-application server which includes the dynamic aspects of the site.
+application server which includes the dynamic aspects of the site as well.
 
 | bundle exec command | scheme                             | port                                                                             |
 |---------------------|------------------------------------|----------------------------------------------------------------------------------|
