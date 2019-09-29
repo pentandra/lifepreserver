@@ -69,8 +69,8 @@ at the static root of the website for simple browsing of statically generated
 pages, or the `server` command, which launches a full-fledged [OpenResty]
 application server which includes the dynamic aspects of the site.
 
-| Command             | scheme                             | port                                                                             |
-|---------------------|------------------------------------|---------------------------------------------------------------------------------:|
+| bundle exec command | scheme                             | port                                                                             |
+|---------------------|------------------------------------|----------------------------------------------------------------------------------|
 | `nanoc static-view` | HTTP                               | [3000](http://localhost:3000/)                                                   |
 | `nanoc server`      | HTTP and HTTPS (using a test cert) | [3125](http://localhost:3125/) and [4125](https://localhost:4125/), respectively |
 
@@ -103,9 +103,9 @@ line argument to set the current environment before a build, for example:
 ```bash
 $ export NANOC_ENV=development          # before running Nanoc commands
 # or
-$ NANOC_ENV=development nanoc [command] # with each command
+$ NANOC_ENV=development bundle exec nanoc [command] # with each command
 # or
-$ nanoc [command] --env=development     # with each command
+$ bundle exec nanoc [command] --env=development     # with each command
 ```
 
 A `production` build must happen on a git tag, or the build will abort.
