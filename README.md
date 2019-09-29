@@ -67,22 +67,22 @@ $ bundle exec nanoc [compile] [--verbose] [--env=development]
 Use either the `static-view` command, which starts an [Adsf::Server] instance
 at the static root of the website for simple browsing of statically generated
 pages, or the `server` command, which launches a full-fledged [OpenResty]
-application server which includes the dynamic aspects of the site as well.
+application server that integrates the dynamic aspects of the site as well.
 
-| bundle exec command | scheme                             | port                                                                             |
-|---------------------|------------------------------------|----------------------------------------------------------------------------------|
-| `nanoc static-view` | HTTP                               | [3000](http://localhost:3000/)                                                   |
-| `nanoc server`      | HTTP and HTTPS (using a test cert) | [3125](http://localhost:3125/) and [4125](https://localhost:4125/), respectively |
+| bundle exec command | scheme                             | port                            |
+|---------------------|------------------------------------|---------------------------------|
+| `nanoc static-view` | HTTP                               | [3000]                          |
+| `nanoc server`      | HTTP and HTTPS (using a test cert) | [3125] and [4125], respectively |
 
 Then view the page in your browser.
 
 ## Testing
 
-### Before testing...
+### Before testing…
 
 Install test dependencies.
 
-* [Test::Nginx] and Perl for running application server tests
+* Perl and [Test::Nginx] for running application server tests.
 
 ## Contributing
 
@@ -150,3 +150,6 @@ Also, please see [the colophon][colophon] for more raving attributions!
 [Operating Manual for Spaceship Earth]: <https://en.wikipedia.org/wiki/Operating_Manual_for_Spaceship_Earth>
 [Test::Nginx]: <https://github.com/openresty/test-nginx>
 [Adsf::Server]: <https://github.com/ddfreyne/adsf>
+[3000]: <http://localhost:3000/>
+[3125]: <http://localhost:3125/>
+[4125]: <https://localhost:4125/>
