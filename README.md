@@ -20,7 +20,7 @@ clinging onto yesterday's solutions and thought-forms.
 
 ## Development
 
-The source for this project is built using [nanoc].
+The source for this project is built using [Nanoc].
 
 ### Before compiling…
 
@@ -71,10 +71,21 @@ $ nanoc static-view # if you are only dealing with statically generated pages
 $ nanoc server      # if you are dealing with both the static and dynamic aspects of the site
 ```
 
-And view the page in your browser at [port 3000](http://localhost:3000/) for
-`nanoc static-view` or, for `nanoc server` [port 3125](http://localhost:3125/)
-for `http` or [port 4125](https://localhost:4125/) for `https` (using a test
-cert).
+And view the page in your browser at (by default):
+
+| Nanoc command | scheme                    | port                            |
+|---------------|---------------------------|--------------------------------:|
+| `static-view` | HTTP                      | [3000](http://localhost:3000/)  |
+| `server`      | HTTP                      | [3125](http://localhost:3125/)  |
+| `server`      | HTTPS (using a test cert) | [4125](https://localhost:4125/) |
+
+## Testing
+
+### Before testing...
+
+Install test dependencies.
+
+* [Test::Nginx] and Perl for running application server tests
 
 ## Contributing
 
@@ -93,11 +104,11 @@ This project uses Nanoc environments for `development`, `staging`, and
 line argument to set the current environment before a build, for example:
 
 ```bash
-$ export NANOC_ENV=development # before running Nanoc commands
-
-or
-
-$ nanoc [command] --env=development # with each command
+$ export NANOC_ENV=development          # before running Nanoc commands
+# or
+$ NANOC_ENV=development nanoc [command] # with each command
+# or
+$ nanoc [command] --env=development     # with each command
 ```
 
 A `production` build must happen on a git tag, or the build will abort.
@@ -109,7 +120,7 @@ upon which OpenResty runs.
 
 ## Thanks
 
-Thanks to the people that helped me come to grips with the power of nanoc,
+Thanks to the people that helped me come to grips with the power of Nanoc,
 including:
 
 * Dennis Defreyne, of course (https://github.com/ddfreyne/nanoc)
@@ -119,7 +130,7 @@ including:
 Also, please see [the colophon][colophon] for more raving attributions!
 
 [pentandra]: <https://pentandra.com/>
-[nanoc]: <http://nanoc.ws/>
+[Nanoc]: <http://nanoc.ws/>
 [GitFlow]: <http://nvie.com/posts/a-successful-git-branching-model/>
 [Nu HTML]: <https://validator.github.io/validator/>
 [UglifyJS]: <https://validator.github.io/validator/>
@@ -140,3 +151,4 @@ Also, please see [the colophon][colophon] for more raving attributions!
 [colophon]: <https://pentandra.com/colophon/>
 [OpenResty]: <http://openresty.org/>
 [Operating Manual for Spaceship Earth]: <https://en.wikipedia.org/wiki/Operating_Manual_for_Spaceship_Earth>
+[Test::Nginx]: <https://github.com/openresty/test-nginx>
