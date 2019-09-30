@@ -53,7 +53,7 @@ $ cd lifepreserver
 $ git submodule init
 $ git submodule update
 $ bower install
-$ bundle install --with development test
+$ bundle install --with development
 ```
 
 ### And compile!
@@ -82,6 +82,7 @@ Then view the page in your browser.
 
 Install test dependencies.
 
+* `bundle install --with test`
 * Perl and [Test::Nginx] for running application server tests.
 
 ## Contributing
