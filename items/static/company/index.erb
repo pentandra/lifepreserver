@@ -347,9 +347,6 @@ priority: 0.6
             <img property="foaf:img schema:image vcard:hasPhoto" class="photo framed" src="<%= photo_url(member) %>" alt="Photo of <%= full_name(member) %>" />
             <aside class="nav menu rev">
               <ul class="sp framed icons">
-                <% if member[:gplus] %>
-                  <li><a class="url" rel="foaf:account" title="<%= full_name(member) %> on Google+" href="https://plus.google.com/<%= member[:gplus] %>?prsrc=3"><span aria-hidden="true" class="button icon-googleplus"></span><span class="visuallyhidden"><%= full_name(member) %> on Google+</span></a></li>
-                <% end %>
                 <% if member[:twitter] %>
                   <li><a class="url" rel="foaf:account" href="https://twitter.com/<%= member[:twitter] %>" title="Follow @<%= member[:twitter] %>"><span aria-hidden="true" class="button icon-twitter"></span><span class="visuallyhidden">Follow <span class="handle">@<%= member[:twitter] %></span></span></a></li>
                 <% end %>
