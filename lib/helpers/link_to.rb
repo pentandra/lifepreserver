@@ -6,7 +6,7 @@ require_relative 'url_shortener'
 
 module LifePreserver
   module LinkTo
-    include LifePreserver::UrlShortener
+    include UrlShortener
     include ERB::Util
 
     def link_to_id(id, attributes = {})
@@ -16,6 +16,12 @@ module LifePreserver
       link_to(item[:short_title] || item[:title], item, attributes)
     end
 
+    # @param [Hash] attributes the options to create the link with
+    # @option attributes [String] :rep the item rep to link to
+    # @option attributes [String] :snapshot the snapshot to link to
+    # @option attributes [Boolean] :global (false) to return an absolute URI or not
+    # @option attributes [Boolean] :concept (false) return a concept URI
+    # @option attributes [String] :fragment the URI fragment to append
     def public_link_to(text, target, attributes = {})
       # Pull out main path attributes
       path_attributes = {
@@ -23,12 +29,15 @@ module LifePreserver
         snapshot: attributes.delete(:snapshot),
         global: attributes.delete(:global)
       }.compact
-      
-      path = public_path_to(target, path_attributes)
-      path.chop! if attributes.delete(:concept_uri) && path.end_with?('/')
 
-      # Pull out fragment identifier, if given
-      fragment = '#' + attributes.delete(:fragment_id) if attributes[:fragment_id]
+      path = public_path_to(target, path_attributes)
+
+      # Chop off last slash for concept uris
+      # @see URI_DESIGN.md
+      path.chop! if attributes.delete(:concept) && path.end_with?('/')
+
+      # Assemble fragment identifier, if given
+      fragment = '#' + attributes.delete(:fragment) if attributes[:fragment]
 
       # Join the rest of the attributes
       attributes = attributes.reduce('') do |memo, (key, value)|
