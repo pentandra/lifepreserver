@@ -1,8 +1,8 @@
 require 'helpers/link_to'
 
 RSpec.describe LifePreserver::LinkTo, helper: true do
-  describe '#public_link_to' do
-    subject { helper.public_link_to(text, target, attributes) }
+  describe '#link_to' do
+    subject { helper.link_to(text, target, attributes) }
 
     let(:text) { 'Text' }
     let(:target) { raise 'override me' }
@@ -17,8 +17,8 @@ RSpec.describe LifePreserver::LinkTo, helper: true do
         it { is_expected.to eql('<a title="Donkey" href="/foo/">Text</a>') }
       end
 
-      context 'with global flag' do
-        let(:attributes) { { global: true } }
+      context 'with absolute flag' do
+        let(:attributes) { { absolute: true } }
 
         before do
           ctx.config[:base_url] = 'http://url.base'
@@ -91,7 +91,7 @@ RSpec.describe LifePreserver::LinkTo, helper: true do
     end
   end
 
-  describe '#public_path_to' do
-    subject { helper.public_path_to(target, rep, snapshot, global) }
+  describe '#path_to' do
+    subject { helper.path_to(target, rep, snapshot, absolute) }
   end
 end

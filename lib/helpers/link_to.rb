@@ -9,35 +9,43 @@ module LifePreserver
     include UrlShortener
     include ERB::Util
 
+    # @param [String] id the item id
+    #
+    # @return [String]
     def link_to_id(id, attributes = {})
       item = @items[id]
-      raise ArgumentError, "Could not find item to link to with identifier: #{id}" unless item
+
+      unless item
+        raise ArgumentError, "Could not find item to link to with identifier: #{id}"
+      end
 
       link_to(item[:short_title] || item[:title], item, attributes)
     end
 
+    # Generate a hyperlink from text and a target.
+    #
+    # @param [String] text
     # @param [Hash] attributes the options to create the link with
-    # @option attributes [String] :rep the item rep to link to
-    # @option attributes [String] :snapshot the snapshot to link to
-    # @option attributes [Boolean] :global (false) to return an absolute URI or not
-    # @option attributes [Boolean] :concept (false) return a concept URI
-    # @option attributes [String] :fragment the URI fragment to append
-    def public_link_to(text, target, attributes = {})
-      # Pull out main path attributes
+    # @option attributes [Symbol] :rep (:default) the item rep to link to
+    # @option attributes [Symbol] :snapshot (:last) the snapshot to link to
+    # @option attributes [String] :fragment a URI fragment to append
+    # @option attributes [Boolean] :absolute (false) return an absolute URI?
+    # @option attributes [Boolean] :concept (false) is this a concept URI?
+    # @option attributes [Boolean] :internal (false) retain internal static root path?
+    #
+    # @return [String]
+    def link_to(text, target, attributes = {})
+      # Pull out magic path attributes
       path_attributes = {
         rep: attributes.delete(:rep),
         snapshot: attributes.delete(:snapshot),
-        global: attributes.delete(:global)
+        fragment: attributes.delete(:fragment),
+        absolute: attributes.delete(:absolute),
+        concept: attributes.delete(:concept),
+        internal: attributes.delete(:internal)
       }.compact
 
-      path = public_path_to(target, path_attributes)
-
-      # Chop off last slash for concept uris
-      # @see URI_DESIGN.md
-      path.chop! if attributes.delete(:concept) && path.end_with?('/')
-
-      # Assemble fragment identifier, if given
-      fragment = '#' + attributes.delete(:fragment) if attributes[:fragment]
+      path = path_to(target, path_attributes)
 
       # Join the rest of the attributes
       attributes = attributes.reduce('') do |memo, (key, value)|
@@ -45,16 +53,23 @@ module LifePreserver
       end
 
       # Create link
-      %(<a #{attributes}href="#{h path}#{h fragment}">#{html_escape_once(text)}</a>)
+      %(<a #{attributes}href="#{h path}">#{html_escape_once(text)}</a>)
     end
 
-    alias link_to public_link_to
-
-    # Get the public path for an item
+    # Generate a resource path from a target and optional fragment.
     #
-    # Separates the concept of a Nanoc build path from a public Web path.
-    def public_path_to(target, rep: :default, snapshot: :last, global: false)
+    # @param [String, Nanoc::CompilationItemView, Nanoc::BasicItemRepView] target
+    # @param [Symbol] rep (:default) the item rep to link to
+    # @param [Symbol] snapshot (:last) the snapshot to link to
+    # @param [String] fragment a URI fragment to append
+    # @param [Boolean] absolute (false) return an absolute URI?
+    # @param [Boolean] concept (false) is this a concept URI?
+    # @param [Boolean] internal (false) retain internal static root path?
+    #
+    # @return [String]
+    def path_to(target, rep: :default, snapshot: :last, fragment: nil, absolute: false, concept: false, internal: false)
       path = case target
+             # REVIEW: can we remove the String type here or check the given target to make things more deterministic?
              when String
                target
              when Nanoc::CompilationItemView
@@ -72,7 +87,8 @@ module LifePreserver
       nearest_path = find_nearest_path(@item_rep, @item)
       path = unstack(nearest_path, path) if nearest_path
 
-      if global
+      # Append base url, if absolute path is requested
+      if absolute
         if @config[:base_url].nil?
           raise Nanoc::Int::Errors::GenericTrivial.new("Cannot build global path to #{target.inspect}: site configuration has no base_url")
         end
@@ -80,15 +96,27 @@ module LifePreserver
         path = @config.fetch(:base_url) + path
       end
 
-      # Remove static root for public path, if it exists
-      static_root = @config.fetch(:static_root, '')
-      path.sub(static_root, '')
+      # Remove static root for external path, if present
+      unless internal
+        static_root = @config.fetch(:static_root, '')
+        path.sub!(static_root, '')
+      end
+
+      # Chop off last slash for concept URIs
+      # @see URI_DESIGN.md
+      path.chop! if concept && path.end_with?('/')
+
+      # Assemble fragment identifier, if given
+      if fragment
+        fragment = fragment.start_with?('#') ? fragment : '#' + fragment.to_s
+        path += fragment
+      end
+
+      path
     end
 
-    alias path_to public_path_to
-
     def short_url_for(item, rep: :default, snapshot: :last)
-      shorten(public_path_to(item, rep: rep, snapshot: snapshot, global: true))
+      shorten(path_to(item, rep: rep, snapshot: snapshot, absolute: true))
     end
 
     protected

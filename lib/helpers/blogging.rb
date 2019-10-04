@@ -57,7 +57,7 @@ module LifePreserver
       summary, body = post_rep.compiled_content(snapshot: snapshot).split(separator)
       return summary unless body
 
-      link = link_to(post_rep.item.fetch(:read_more, read_more_text), post_rep.item, global: post_rep.name != :default, class: 'readmore', title: 'Read the full article')
+      link = link_to(post_rep.item.fetch(:read_more, read_more_text), post_rep.item, absolute: post_rep.name != :default, class: 'readmore', title: 'Read the full article')
       summary << %(<p class="readmore">#{link}</p>)
     end
 

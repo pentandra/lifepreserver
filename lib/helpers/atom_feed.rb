@@ -120,7 +120,7 @@ module LifePreserver
 
       def build_for_entry(entry, xml)
         # Get URL
-        url = public_path_to(entry, global: true)
+        url = path_to(entry, absolute: true)
         return if url.nil?
 
         xml.entry do
@@ -188,7 +188,7 @@ module LifePreserver
 
     # @return [String]
     def feed_url
-      @item[:feed_url] || path_to(@item, global: true)
+      @item[:feed_url] || path_to(@item, absolute: true)
     end
 
     # @return [String]

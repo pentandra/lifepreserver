@@ -37,7 +37,7 @@ class Vcard < Nanoc::Filter
 
     vcard.fullname(full_name)
 
-    vcard.source(path_to(@item_rep, global: true))
+    vcard.source(path_to(@item_rep, absolute: true))
 
     if kind == 'individual'
       vcard.name(last_name, first_name)

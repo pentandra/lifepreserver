@@ -1,4 +1,4 @@
-<article property="schema:blogPost" typeof="cc:Work schema:BlogPosting ctag:TaggedContent" resource="<%= path_to(item) %>#blogpost" class="noted section excerpt">
+<article property="schema:blogPost" typeof="cc:Work schema:BlogPosting ctag:TaggedContent" resource="<%= path_to(item, fragment: item.fetch(:kind)) %>" class="noted section excerpt">
   <div class="bd">
     <header>
       <h2>

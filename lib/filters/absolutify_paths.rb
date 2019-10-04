@@ -19,7 +19,7 @@ class AbsolutifyPaths < Nanoc::Filter
   # @option params [Symbol] :type The type of content to filter; can be
   # `:html`, `:xhtml`, `:xml`, `:css`, or `:context`.
   #
-  # @option params [Boolean] :global Set true to create an absolute URI based
+  # @option params [Boolean] :absolute Set true to create an absolute URI based
   # on the `@config[:base_url]`. Otherwise this filter only creates a reference
   # to an absolute path.
   #
@@ -31,7 +31,7 @@ class AbsolutifyPaths < Nanoc::Filter
   # namespace you want to use in the XPath expressions. This param is only
   # useful for the `:xml` and `:xhtml` types.
   def run(content, params = {})
-    if params[:global] && @config[:base_url].nil?
+    if params[:absolute] && @config[:base_url].nil?
       raise 'Cannot build absolute path: site configuration has no base_url'
     end
 
@@ -53,23 +53,23 @@ class AbsolutifyPaths < Nanoc::Filter
 
   # http://rubular.com/r/aRKvVMu34O
   def absolutify_css(content, params)
-    global = params.fetch(:global, false)
+    absolute = params.fetch(:absolute, false)
 
     content.gsub(%r{url\((?<quote>['"]?)(?<path>(?:\.\.)?/(?:[^/].*?)?)\k<quote>\)}) do
       quote = Regexp.last_match(:quote)
       path = Regexp.last_match(:path)
-      'url(' + quote + public_path_to(path, global: global) + quote + ')'
+      'url(' + quote + path_to(path, absolute: absolute) + quote + ')'
     end
   end
 
   # http://rubular.com/r/GSkMfZLcyk
   def absolutify_context(content, params)
-    global = params.fetch(:global, true)
+    absolute = params.fetch(:absolute, true)
 
     content.gsub(%r{\\useURL\s*(?<identifier>\[.*?\]){1}\s*\[(?<path>(?:\.\.)?/(?:[^/].*?)?)\]}) do
       identifier = Regexp.last_match(:identifier)
       path = Regexp.last_match(:path)
-      '\useURL' + identifier + '[' + public_path_to(path, global: global) + ']'
+      '\useURL' + identifier + '[' + path_to(path, absolute: absolute) + ']'
     end
   end
 
@@ -77,12 +77,12 @@ class AbsolutifyPaths < Nanoc::Filter
     selectors  = params.fetch(:select, SELECTORS)
     namespaces = params.fetch(:namespaces, {})
     type       = params.fetch(:type)
-    global     = params.fetch(:global, false)
+    absolute   = params.fetch(:absolute, false)
 
     parser = parser_for(type)
     content = fix_content(content, type)
 
-    nokogiri_process(content, selectors, namespaces, parser, type, global)
+    nokogiri_process(content, selectors, namespaces, parser, type, absolute)
   end
 
   def parser_for(type)
@@ -115,7 +115,7 @@ class AbsolutifyPaths < Nanoc::Filter
     end
   end
 
-  def nokogiri_process(content, selectors, namespaces, klass, type, global)
+  def nokogiri_process(content, selectors, namespaces, klass, type, absolute)
     # Ensure that all prefixes are strings
     namespaces = namespaces.reduce({}) { |new, (prefix, uri)| new.merge(prefix.to_s => uri) }
 
@@ -123,9 +123,9 @@ class AbsolutifyPaths < Nanoc::Filter
     selector = selectors.map { |sel| "descendant-or-self::#{sel}" }.join('|')
     doc.xpath(selector, namespaces).each do |node|
       if node.name == 'comment'
-        nokogiri_process_comment(node, doc, selectors, namespaces, klass, type, global)
+        nokogiri_process_comment(node, doc, selectors, namespaces, klass, type, absolute)
       elsif path_is_absolutifiable?(node.content)
-        node.content = public_path_to(node.content, global: global)
+        node.content = path_to(node.content, absolute: absolute)
       end
     end
 
@@ -137,13 +137,13 @@ class AbsolutifyPaths < Nanoc::Filter
     end
   end
 
-  def nokogiri_process_comment(node, doc, selectors, namespaces, klass, type, global)
+  def nokogiri_process_comment(node, doc, selectors, namespaces, klass, type, absolute)
     content = node.content.dup.sub(%r{^(\s*\[.+?\]>\s*)(.+?)(\s*<!\[endif\])}m) do |_m|
       beginning = Regexp.last_match(1)
       body = Regexp.last_match(2)
       ending = Regexp.last_match(3)
 
-      beginning + nokogiri_process(body, selectors, namespaces, klass, type, global) + ending
+      beginning + nokogiri_process(body, selectors, namespaces, klass, type, absolute) + ending
     end
 
     node.replace(Nokogiri::XML::Comment.new(doc, content))

@@ -35,7 +35,7 @@ class RdfDistiller < Nanoc::Filter
     input = params.fetch(:input_format, @item.identifier.ext)
     output = params.fetch(:format, 'turtle')
 
-    base_uri = params[:base_uri] || @item[:base_uri] || path_to(@item, global: true)
+    base_uri = params[:base_uri] || @item[:base_uri] || path_to(@item, absolute: true)
     prefix = params[:prefix] || @item[:prefix] || File.basename(@item.identifier.without_exts).camelize
     prefixes = params.fetch(:prefixes, {})
 

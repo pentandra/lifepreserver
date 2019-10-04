@@ -5,7 +5,7 @@
     <div class="nav">
       <ul>
         <li property="schema:potentialAction" resource="pentandra-website:search" typeof="schema:SearchAction">
-          <meta property="schema:target" content="<%= "#{path_to(@items['/static/search.*'], global: true)}?q={search_term_string}" %>"/>
+          <meta property="schema:target" content="<%= "#{path_to(@items['/static/search.*'], absolute: true)}?q={search_term_string}" %>"/>
           <meta property="schema:query-input" content="required name=search_term_string"/>
           <a property="schema:url" href="<%= h path_to(@items['/static/search.*']) %>">Search</a>
         </li>

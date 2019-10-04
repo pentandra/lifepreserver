@@ -25,6 +25,6 @@ compile '/static/articles/*/*.md', rep: :feed_entry do
     { base_header_level: 2 },
     :section_divs,
   ]
-  filter :absolutify_paths, type: :html, global: true
+  filter :absolutify_paths, type: :html, absolute: true
   filter :rubypantsunicode
 end
