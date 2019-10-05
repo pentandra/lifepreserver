@@ -43,4 +43,5 @@ group :test, optional: true do
   gem 'rubocop'
   gem 'watir'
   gem 'simplecov', require: false
+  gem 'w3c_validators'
 end
