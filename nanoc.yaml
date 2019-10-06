@@ -94,10 +94,6 @@ environments:
       tag_url: "https://github.com/pentandra/lifepreserver/releases/tag"
       version_history_url: "https://github.com/lifepreserver/commits/master"
 
-    qrcode:
-      size: 25
-      module_size: 2
-      color: "#544233"
 
     site: &site
       name: Pentandra
