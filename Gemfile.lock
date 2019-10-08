@@ -21,6 +21,12 @@ GIT
     nanoc-cachebuster (0.3.0)
       nanoc (>= 3.3.0)
 
+GIT
+  remote: https://github.com/muellerj/ruby-git
+  revision: 342e0b7f392a8fd24d76f380536d7df9d1c6b406
+  specs:
+    git (1.5.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -84,7 +90,6 @@ GEM
       ruby-progressbar (~> 1.4)
     ghi (1.2.0)
       pygments.rb
-    git (1.5.0)
     guard (2.15.1)
       formatador (>= 0.2.4)
       listen (>= 2.7, < 4.0)
@@ -394,7 +399,7 @@ DEPENDENCIES
   ffi-hunspell!
   fuubar
   ghi
-  git
+  git!
   guard
   guard-livereload
   guard-nanoc
