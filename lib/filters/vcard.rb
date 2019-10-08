@@ -8,8 +8,6 @@ class Vcard < Nanoc::Filter
 
   requires 'vcardigan'
 
-  # @param [Symbol] :snapshot The snapshot for which the path should be
-  #   returned.
   # @param [String] :kind The kind of object the vCard represents.
   def run(_content, params = {})
     validate params
@@ -34,15 +32,13 @@ class Vcard < Nanoc::Filter
 
     rev = params[:rev] || @item[:rev] || @item[:mtime] || Time.now
 
-    snapshot = params.fetch(:snapshot, :last)
-
     vcard = VCardigan.create(version: '3.0')
 
     vcard.rev(rev.strftime('%F'))
 
     vcard.fullname(full_name)
 
-    vcard.source(path_to(@item_rep, snapshot: snapshot, absolute: true))
+    vcard.source(path_to(@item_rep, absolute: true))
 
     if kind == 'individual'
       vcard.name(last_name, first_name)

@@ -42,9 +42,13 @@ compile %r{/static/company/benefit-reports/(\d{4})/index\.md}, rep: :pdf_a4 do |
   write File.dirname(item.identifier.to_s) + "/UT_Pentandra_report_#{fiscal_year}_a4.pdf"
 end
 
+compile '/company/_', rep: :vcard do
+  filter :vcard, @config[:company]
+  write "/static/company/pentandra#{@config[:production] ? '-' + @item.fetch(:mtime).strftime('%Y%j') : ''}.vcf"
+end
+
 compile '/company/_', rep: :qrcode do
-  filter :vcard, @config.fetch(:company).merge(snapshot: :vcard)
-  snapshot :vcard, path: "/static/company/pentandra#{@config[:production] ? '-' + @item.fetch(:mtime).strftime('%Y%j') : ''}.vcf"
+  filter :vcard, @config[:company]
   filter :qrcode, level: :l, color: '#544233', image_size: 252
   filter :image_optimizer if @config[:production]
   write "/static/images/pentandra-qrcode#{@config[:production] ? '-' + @item.fetch(:mtime).strftime('%Y%j') : ''}.png"
