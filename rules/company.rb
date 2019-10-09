@@ -43,13 +43,18 @@ compile %r{/static/company/benefit-reports/(\d{4})/index\.md}, rep: :pdf_a4 do |
 end
 
 compile '/company/_', rep: :vcard do
-  filter :vcard, @config[:company]
-  write "/static/company/pentandra#{@config[:production] ? '-' + @item.fetch(:mtime).strftime('%Y%j') : ''}.vcf"
+  filter :vcard, kind: :org
+  write '/static/company/pentandra.vcf'
 end
 
 compile '/company/_', rep: :qrcode do
-  filter :vcard, @config[:company]
+  filter :vcard, kind: :org
   filter :qrcode, level: :l, color: '#544233', image_size: 252
   filter :image_optimizer if @config[:production]
   write "/static/images/pentandra-qrcode#{@config[:production] ? '-' + @item.fetch(:mtime).strftime('%Y%j') : ''}.png"
+end
+
+compile '/company/members/_*', rep: :vcard do
+  filter :vcard, kind: :individual
+  write "/static/company/#{@item.fetch(:slug)}.vcf"
 end

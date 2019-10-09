@@ -26,9 +26,9 @@ module LifePreserver
       end
     end
 
-    # Relative path to a document section describing a person
-    def description_path(person)
-      "#{@config[:company][:page_path]}/##{full_name(person).to_slug}"
+    def path_to_logo(absolute: false)
+      logo_item = @items["#{@config[:static_root]}#{@config[:site][:images_path]}/#{company.fetch(:logo)}"]
+      path_to(logo_item, absolute: absolute)
     end
 
     def photo_url(person, global: false)
