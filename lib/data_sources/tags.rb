@@ -7,13 +7,19 @@ Class.new(Nanoc::DataSource) do
   identifier :tags
 
   def up
-    @tags = YAML.load_file('etc/tags.yaml').map(&:symbolize_keys)
-    @additional_tag_data = YAML.load_file('var/additional_tag_data.yaml')
+    @tags = YAML.load_file(@config.fetch(:author_tags)).map(&:symbolize_keys)
+
+    if (tag_metadata = @config[:tag_metadata])
+      @additional_tag_data = YAML.load_file(tag_metadata)
+    end
   end
 
   def items
     @tags.map do |tag|
-      tag.update(@additional_tag_data.find { |a| a[:tag] == tag[:tag] } || {})
+      if @additional_tag_data
+        tag.update(@additional_tag_data.find { |a| a[:tag] == tag[:tag] } || {})
+      end
+
       tag_to_item(tag)
     end
   end

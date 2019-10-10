@@ -43,6 +43,8 @@ data_sources:
 
   - type: tags
     items_root: *meta_items_root
+    author_tags: 'etc/tags.yaml'
+    tag_metadata: 'var/additional_tag_data.yaml'
 
   - type: vocabularies
     items_root: *meta_items_root
