@@ -39,7 +39,7 @@ data_sources:
     items_root: *meta_items_root
     directories:
       - 'var/dictionaries'
-    supported_languages: [ 'en_US', 'en_GB', 'es_ES', 'fr_FR', 'nl_NL', 'de_DE', 'it_IT' ]
+    language_priority: [ 'en_US', 'en_GB', 'es_ES', 'fr_FR', 'nl_NL', 'de_DE', 'it_IT' ]
 
   - type: tags
     items_root: *meta_items_root
