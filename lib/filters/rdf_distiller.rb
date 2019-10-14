@@ -49,7 +49,7 @@ class RdfDistiller < Nanoc::Filter
 
     repository = RDF::Repository.new
 
-    RDF::Reader.for(input.to_sym).new(assigns[:content], options) { |reader| repository << reader }
+    RDF::Reader.for(input.to_sym).new(+assigns[:content], options) { |reader| repository << reader }
 
     if repository.has_statement?(RDF::Statement(RDF::URI.new(base_uri), RDF.type, RDF::OWL.Ontology))
       vocab = RDF::Vocabulary.find(base_uri) || RDF::Vocabulary.from_graph(repository, url: base_uri, class_name: prefix.to_s.upcase)
