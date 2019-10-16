@@ -13,16 +13,30 @@ module LifePreserver
       'concept'  => 'skos:Concept',
     }.freeze
 
-    # Finds all prefix mappings for the given arguments.
+    # Generates a string of prefix mappings for the given arguments.
     #
-    # @param [String, Symbol]
+    # @param (see #vocabularies_for)
     #
-    # @return [String]
+    # @return [String] A prefix attribute value.
     def prefix_mappings_for(*args)
+      vocabularies_for(args)
+        .map { |v| "#{v.fetch(:prefix)}: #{v.fetch(:namespace_uri)}" }.join(' ')
+    end
+
+    # Finds a vocabulary or vocabularies for the given name.
+    #
+    # @param [Array<String, Symbol>] args The vocabulary prefixes or prefix
+    #   groups. If a group name, it should return the group. If a prefix,
+    #   it should return a single vocabulary.
+    #
+    # @return [Array<Nanoc::BasicItemView>] Any applicable items of kind +vocabulary+.
+    def vocabularies_for(*args)
       res = []
 
-      args.each do |arg|
-        vocabs = vocabularies_for(arg)
+      Array(args).flatten.each do |arg|
+        vocabs = @items.find_all("/lifepreserver/vocabularies/#{arg}/*")
+        # Look for a single prefix if no group is found
+        vocabs = vocabs.present? ? vocabs : @items["/lifepreserver/vocabularies/*/#{arg}"]
 
         if vocabs.blank?
           raise ArgumentError, "Unable to find a vocabulary for the argument `#{arg.inspect}`"
@@ -31,21 +45,7 @@ module LifePreserver
         res << vocabs
       end
 
-      res.flatten.map { |vocab| "#{vocab.fetch(:prefix)}: #{vocab.fetch(:namespace_uri)}" }.join(' ')
-    end
-
-    # Finds a vocabulary or vocabularies for the given name.
-    #
-    # Accepts either group names or vocabulary prefixes. If the name is a group
-    # name, it should return the group. If it is a prefix, it should return a
-    # single vocabulary.
-    #
-    # @param [String, Symbol]
-    #
-    # @return [Array, Hash]
-    def vocabularies_for(name)
-      vocabs = @items.find_all("/lifepreserver/vocabularies/#{name}/*")
-      vocabs.present? ? vocabs : @items["/lifepreserver/vocabularies/*/#{name}"]
+      res.flatten
     end
 
     def typeof(item)
