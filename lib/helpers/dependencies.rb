@@ -7,12 +7,7 @@ module LifePreserver
     include LifePreserver::Company
 
     def sorted_dependencies
-      blk = -> { @items.find_all('/lifepreserver/dependencies/**/*').sort_by(&:identifier) }
-      if @items.frozen?
-        @sorted_dependency_items ||= blk.call
-      else
-        blk.call
-      end
+      @items.find_all('/lifepreserver/dependencies/**/*').sort_by(&:identifier)
     end
 
     # Finds all the dependencies for the given Bundler group name.

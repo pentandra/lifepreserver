@@ -14,39 +14,21 @@ module LifePreserver
     include Blogging
 
     def weblog
-      blk = -> { articles + blog_posts }
-      if @items.frozen?
-        @weblog_items ||= blk.call
-      else
-        blk.call
-      end
+      articles + blog_posts
     end
 
     def sorted_weblog
-      blk = lambda do
-        unpublished_posts, published_posts = weblog.partition { |p| p._unwrap.attributes[:published_at].nil? }
+      unpublished_posts, published_posts = weblog.partition { |p| p._unwrap.attributes[:published_at].nil? }
 
-        unpublished_posts = unpublished_posts.sort_by { |p| attribute_to_time(p._unwrap.attributes[:updated_at]) }.reverse
-        published_posts = published_posts.sort_by { |p| attribute_to_time(p._unwrap.attributes[:published_at]) }.reverse
+      unpublished_posts = unpublished_posts.sort_by { |p| attribute_to_time(p._unwrap.attributes[:updated_at]) }.reverse
+      published_posts = published_posts.sort_by { |p| attribute_to_time(p._unwrap.attributes[:published_at]) }.reverse
 
-        unpublished_posts + published_posts
-      end
-
-      if @items.frozen?
-        @sorted_weblog_items ||= blk.call
-      else
-        blk.call
-      end
+      unpublished_posts + published_posts
     end
 
     # Relies upon Rules preprocessing to set the `:is_hidden` attribute.
     def published_weblog
-      blk = -> { sorted_weblog.reject { |p| p._unwrap.attributes[:is_hidden] } }
-      if @items.frozen?
-        @published_weblog_items ||= blk.call
-      else
-        blk.call
-      end
+      sorted_weblog.reject { |p| p._unwrap.attributes[:is_hidden] }
     end
 
     def authors(posts = nil)

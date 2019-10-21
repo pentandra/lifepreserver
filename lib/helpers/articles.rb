@@ -13,31 +13,16 @@ module LifePreserver
     end
 
     def articles
-      blk = -> { @items.find_all('/static/articles/**/*.md') }
-      if @items.frozen?
-        @article_items ||= blk.call
-      else
-        blk.call
-      end
+      @items.find_all('/static/articles/**/*.md')
     end
 
     def sorted_articles
-      blk = -> { articles.sort_by { |a| attribute_to_time(a._unwrap.attributes[:created_at]) }.reverse }
-      if @items.frozen?
-        @sorted_article_items ||= blk.call
-      else
-        blk.call
-      end
+      articles.sort_by { |a| attribute_to_time(a._unwrap.attributes[:created_at]) }.reverse
     end
 
     # Relies upon Rules preprocessing to set the `:is_hidden` attribute.
     def published_articles
-      blk = -> { sorted_articles.reject { |a| a._unwrap.attributes[:is_hidden] } }
-      if @items.frozen?
-        @published_article_items ||= blk.call
-      else
-        blk.call
-      end
+      sorted_articles.reject { |a| a._unwrap.attributes[:is_hidden] }
     end
   end
 end

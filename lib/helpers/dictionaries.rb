@@ -87,21 +87,11 @@ module LifePreserver
     end
 
     def dictionaries
-      blk = -> { @items.find_all('/lifepreserver/dictionaries/**/*') }
-      if @items.frozen?
-        @dictionary_items ||= blk.call
-      else
-        blk.call
-      end
+      @items.find_all('/lifepreserver/dictionaries/**/*')
     end
 
     def abbreviation_dictionaries
-      blk = -> { dictionaries.select { |d| d._unwrap.attributes[:kind] == 'acronym-dictionary' } }
-      if @items.frozen?
-        @abbreviation_dictionary_items ||= blk.call
-      else
-        blk.call
-      end
+      dictionaries.select { |d| d._unwrap.attributes[:kind] == 'acronym-dictionary' }
     end
 
     def supported_abbreviations

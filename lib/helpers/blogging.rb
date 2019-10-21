@@ -11,29 +11,16 @@ module LifePreserver
     end
 
     def blog_posts
-      blk = -> { @items.find_all('/static/blog/posts/**/*.{md,html}') }
-      if @items.frozen?
-        @blog_post_items ||= blk.call
-      else
-        blk.call
-      end
+      @items.find_all('/static/blog/posts/**/*.{md,html}')
     end
 
     def sorted_blog_posts
-      blk = -> { blog_posts.sort_by { |p| attribute_to_time(p._unwrap.attributes[:created_at]) }.reverse }
-      if @items.frozen?
-        @sorted_blog_post_items ||= blk.call
-      else
-        blk.call
-      end
+      blog_posts.sort_by { |p| attribute_to_time(p._unwrap.attributes[:created_at]) }.reverse
     end
 
     # Relies upon Rules preprocessing to set the `:is_hidden` attribute.
     def published_blog_posts
-      blk = -> { sorted_blog_posts.reject { |a| a._unwrap.attributes[:is_hidden] } }
-      if @items.frozen?
-        @published_blog_post_items ||= blk.call
-      end
+      sorted_blog_posts.reject { |a| a._unwrap.attributes[:is_hidden] }
     end
 
     def link_to_if_published(post, item_set = [], attributes = {})

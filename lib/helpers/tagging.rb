@@ -22,21 +22,11 @@ module LifePreserver
     end
 
     def tags
-      blk = -> { @items.find_all('/lifepreserver/tags/*') }
-      if @items.frozen?
-        @tag_items ||= blk.call
-      else
-        blk.call
-      end
+      @items.find_all('/lifepreserver/tags/*')
     end
 
     def sorted_tags
-      blk = -> { tags.sort_by { |t| t._unwrap.attributes[:tag] } }
-      if @items.frozen?
-        @sorted_tag_items ||= blk.call
-      else
-        blk.call
-      end
+      tags.sort_by { |t| t._unwrap.attributes[:tag] }
     end
 
     # Return true if an item has a specified tag

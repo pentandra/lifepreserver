@@ -3,12 +3,7 @@
 module LifePreserver
   module Proposals
     def proposals
-      blk = -> { @items.find_all('/static/solutions/proposals/*/index.md') }
-      if @items.frozen?
-        @proposal_items ||= blk.call
-      else
-        blk.call
-      end
+      @items.find_all('/static/solutions/proposals/*/index.md')
     end
 
     # Get the state of the proposal
