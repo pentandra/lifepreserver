@@ -381,11 +381,11 @@ Here's a tiny example:
 @prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
 
-&lt;<%= iri_for(me) %>&gt; a foaf:Person ;
+&lt;<%= me.fetch(:web_id) %>&gt; a foaf:Person ;
     rdfs:label "<%= full_name(me) %>"@en ;
     foaf:familyName "<%= me[:last_name] %>"@en ;
     foaf:givenName "<%= me[:first_name] %>"@en ;
-    foaf:img &lt;<%= photo_url(me, global: true) %>&gt; ;
+    foaf:img &lt;<%= path_to_photo(me, absolute: true) %>&gt; ;
     foaf:mbox &lt;mailto:<%= me[:email] %>&gt; ;
     foaf:name "<%= full_name(me) %>"@en ;
     cc:license &lt;https://creativecommons.org/licenses/by/4.0/&gt; .

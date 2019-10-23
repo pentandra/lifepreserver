@@ -48,11 +48,13 @@ preprocess do
     end
   end
 
-  generate_author_uris(weblog)
+  populate_people_identifiers
+  populate_member_identifiers
+  populate_author_uris(weblog)
+  generate_personal_profile_pages
 
   if @config[:site][:generate_meta]
     generate_tag_pages
-    generate_author_pages
     generate_blog_archives
   end
 

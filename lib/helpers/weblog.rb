@@ -81,19 +81,6 @@ module LifePreserver
         .to_a
     end
 
-    # Creates in-memory author pages from partial: layouts/blog/author.html
-    def generate_author_pages(item_set = nil)
-      item_set ||= published_weblog
-      authors(item_set).each do |author|
-        @items.create(
-          %(<%= render('/blog/author.*', author: '#{author}') %>),
-          { title: "Weblog postings by #{author}", kind: 'author-page', is_hidden: true, description: "All posts written by #{author}" },
-          "#{@config[:static_root]}#{@config[:blog][:authors_path]}/#{author.to_slug}/index.erb",
-          binary: false,
-        )
-      end
-    end
-
     # Creates in-memory blog archive pages from partial: layouts/blog/archive.html
     def generate_blog_archives(item_set = nil)
       item_set ||= published_weblog

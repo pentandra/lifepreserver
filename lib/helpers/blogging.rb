@@ -1,10 +1,12 @@
 # frozen_string_literal: true
 
 require_relative 'link_to'
+require_relative 'people'
 
 module LifePreserver
   module Blogging
     include LinkTo
+    include People
 
     def blog_post?(item)
       item.identifier =~ %r{^/static/blog/posts/.*\.(md|html)}
@@ -52,32 +54,30 @@ module LifePreserver
     # Create a link for the author of this page
     #
     def link_for_author(author, rel_tag: true)
-      %(<a href="#{@config[:blog][:authors_path]}/#{h author.to_slug}/" title="Articles by #{h author}"#{' rel="author"' if rel_tag}>#{h author}</a>)
+      author = person_by_name(author)
+      %(<a resource="#{author.fetch(:web_id)}" href="#{path_to_profile_page(author)}" title="More about #{h full_name(author)}"#{' rel="author"' if rel_tag}>#{h full_name(author)}</a>)
     end
 
-    # run during preprocessing
-    def generate_author_uris(item_set = nil)
+    # Populates the `author_uri` for the given blog post items. If not set
+    #   specifically, falls back to the WebID of the author.
+    #
+    # @note Run during preprocessing.
+    #
+    # @param [Array<Nanoc::BasicItemView>] item_set An array of blog post items.
+    #
+    # @return [void]
+    def populate_author_uris(item_set = nil)
       item_set ||= blog_posts
-      validate_config
-
       item_set.each do |item|
         author = person_by_name(item[:author_name])
         if author
-          item[:author_uri] ||= "#{@config[:base_url]}#{description_path(author)}"
+          item[:author_uri] ||= author.fetch(:web_id)
         end
       end
     end
 
     def bibtex_key(item, author)
       item[:bibtex_key] || [author.fetch(:last_name), author.fetch(:first_name)[0], attribute_to_time(item[:published_at]).year, Digest::SHA1.hexdigest(item[:title])[0..6]].join(':').downcase
-    end
-
-    protected
-
-    def validate_config
-      if @config[:base_url].nil?
-        raise Nanoc::Int::Errors::GenericTrivial.new('Cannot generate author URIs: site configuration has no base_url')
-      end
     end
   end
 end

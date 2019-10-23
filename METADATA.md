@@ -76,11 +76,12 @@ The kind of document. Currently we have the following kinds of documents:
 * `benefit-report`
 * `tag`: the tag itself (a controlled concept)
 * `tag-page` (distinct from tag as a concept)
-* `author-page`
+* `personal-profile-page`: a foaf personal profile document
 * `archive-page`
 * `vocabulary`
 * `dependency`
 * `person`
+* `member`: A member of the company
 * `base-dictionary`
 * `extra-dictionary`
 * `acronym-dictionary`
@@ -110,3 +111,15 @@ resolve to a document in the archive.
 ### `redirect_to_id`
 
 The item to which this item should be redirected in some way.
+
+## Metadata relating to people (and member) items
+
+### `web_id` {.optional}
+
+The [WebID](https://www.w3.org/2005/Incubator/webid/spec/identity/) of the
+person, if the person has one.
+
+### `hashtag` {.optional}
+
+The fragment identifier to use to identify the person denoted by the WebID. By
+default uses the identifier `me`.

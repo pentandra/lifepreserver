@@ -2,6 +2,7 @@
 
 require 'active_support/core_ext/hash/keys'
 require 'active_support/core_ext/string/inflections'
+require 'digest'
 
 Class.new(Nanoc::DataSource) do
   identifier :company
@@ -13,17 +14,19 @@ Class.new(Nanoc::DataSource) do
   def items
     items = []
 
+    company = @company_info[:company]
     items << new_item(
       '',
       {
         mtime: mtime_of(@config[:company_metafile]),
         is_hidden: true,
-      }.merge(@company_info[:company]),
+      }.merge(company),
       Nanoc::Identifier.new('/company/_'),
+      attributes_checksum_data: Digest::SHA1.digest(Marshal.dump(company)),
     )
 
-    @company_info[:people].each do |person|
-      items << person_to_item(person)
+    @company_info[:members].each do |member|
+      items << member_to_item(member)
     end
 
     items
@@ -31,19 +34,22 @@ Class.new(Nanoc::DataSource) do
 
   protected
 
-  def person_to_item(person)
-    full_name = "#{person[:first_name]} #{person[:last_name]}"
+  def member_to_item(member)
+    full_name = member[:full_name] || "#{member[:first_name]} #{member[:last_name]}"
     slug = full_name.parameterize
 
     attributes = {
-      kind: 'person',
+      kind: 'member',
+      slug: slug,
+      mtime: mtime_of(@config[:company_metafile]),
       is_hidden: true,
     }
 
     new_item(
       full_name,
-      attributes.merge(person),
-      Nanoc::Identifier.new("/company/people/_#{slug}"),
+      attributes.merge(member),
+      Nanoc::Identifier.new("/company/members/_#{slug}"),
+      attributes_checksum_data: Digest::SHA1.digest(Marshal.dump(member)),
     )
   end
 

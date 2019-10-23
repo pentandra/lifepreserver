@@ -61,6 +61,10 @@ data_sources:
   - type: company
     company_metafile: 'var/company.yaml'
 
+  - type: people
+    people_data: 'etc/people.yaml'
+
+
 # Config for Nanoc environments
 
 environments:
@@ -75,7 +79,6 @@ environments:
       path: /blog
       tags_path: /tags
       archives_path: /archives
-      authors_path: /authors
       feed_path: /blog/feed
 
     cache:
@@ -93,6 +96,8 @@ environments:
       tag_url: "https://github.com/pentandra/lifepreserver/releases/tag"
       version_history_url: "https://github.com/lifepreserver/commits/master"
 
+    people:
+      page_path: /people
 
     site: &site
       name: Pentandra
@@ -119,7 +124,7 @@ environments:
     checks:
       <<: *checks
       internal_links:
-        exclude: [ '^/blog/feed', '^/tags', '^/archives', '^/authors' ]
+        exclude: [ '^/blog/feed', '^/tags', '^/archives' ]
 
     server:
       name: 'localhost'

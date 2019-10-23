@@ -8,7 +8,7 @@
   </label>
   <label>
     <abbr title="HyperText Markup Language">HTML</abbr><span class="math">+</span><abbr title="Resource Description Framework in Attributes">RDFa</abbr>
-    <input readonly="readonly" type="text" class="code" value="<%= h %[<span vocab="http://schema.org/" property="citation" typeof="BlogPosting"><a property="title" rel="url" href="#{path_to(item, absolute: true)}##{item.fetch(:kind)}"><cite>#{item[:title]}</cite></a> (<span property="author" resource="#{web_id(author)}" typeof="Person"><abbr property="name" content="#{item[:author_name]}" title="#{item[:author_name]}">#{author[:last_name]}</abbr></span> <time property="datePublished">#{simple_date(:published_at, item: item)}</time>)</span>] %>">
+    <input readonly="readonly" type="text" class="code" value="<%= h %[<span vocab="http://schema.org/" property="citation" typeof="BlogPosting"><a property="title" rel="url" href="#{path_to(item, absolute: true)}##{item.fetch(:kind)}"><cite>#{item[:title]}</cite></a> (<span property="author" resource="#{author.fetch(:web_id)}" typeof="Person"><abbr property="name" content="#{item[:author_name]}" title="#{item[:author_name]}">#{author[:last_name]}</abbr></span> <time property="datePublished">#{simple_date(:published_at, item: item)}</time>)</span>] %>">
   </label>
   <label>
     <abbr title="HyperText Markup Language">HTML</abbr><span class="math">+</span>microformats

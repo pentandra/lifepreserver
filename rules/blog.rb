@@ -15,9 +15,9 @@ compile '/static/**/feed.erb' do
   write item.identifier.without_ext + '.atom'
 end
 
-# Weblog tags, authors, and archives
+# Weblog tags and archives
 
-compile '/static/{tags,authors,archives}/**/*' do
+compile '/static/{tags,archives}/**/*' do
   filter :erb, @config[:erb]
   filter :rubypantsunicode
   filter :cache_buster if @config[:production]

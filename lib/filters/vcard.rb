@@ -100,7 +100,6 @@ class Vcard < Nanoc::Filter
 
       # Last chance property setting for individuals
       photo_uri ||= path_to_photo(@item, absolute: true)
-      uid ||= web_id(@item)
     end
 
     vcard.nickname(nick_name) unless nick_name.nil?

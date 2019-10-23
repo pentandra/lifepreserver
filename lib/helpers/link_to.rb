@@ -103,7 +103,7 @@ module LifePreserver
       end
 
       # Chop off last slash for concept URIs
-      # @see URI_DESIGN.md
+      # @see {file:URI_DESIGN.md}
       path.chop! if concept && path.end_with?('/')
 
       # Assemble fragment identifier, if given

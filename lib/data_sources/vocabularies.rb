@@ -66,7 +66,7 @@ Class.new(Nanoc::DataSource) do
 
   def vocab_uri(vocab)
     # HACK: until we have better handling of ontology definitions at a
-    # different uri than the namespace uri.
+    # different uri than the vocabulary namespace.
     if vocab == RDF::Vocab::VOID
       'http://vocab.deri.ie/void'
     elsif vocab == RDF::Vocab::CC

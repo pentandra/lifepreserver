@@ -86,7 +86,7 @@ module LifePreserver
       end
 
       def build_for_feed(xml)
-          root_url = @config[:base_url] + '/'
+        root_url = @config[:base_url] + '/'
         xml.instruct!
         xml.feed(xmlns: 'http://www.w3.org/2005/Atom', 'xml:base' => root_url) do
 
@@ -151,16 +151,20 @@ module LifePreserver
       end
     end
 
-    # @option params [Number] :limit
-    # @option params [Array] :entries
-    # @option params [Boolean] :preserve_order
+    # Generate an Atom feed.
+    #
+    # @param [Hash] params General parameters for the feed.
+    # @option params [Number] :limit (5) The limiting number of entries for the feed.
+    # @option params [Array] :entries ([]) An array of items to publish.
+    # @option params [Boolean] :preserve_order (false) Whether to preserve the order
+    #   of items as given. Otherwise items will be sorted by published or created date.
     # @option params [Proc] :content_proc
     # @option params [Proc] :excerpt_proc
-    # @option params [String] :title
-    # @option params [String] :author_name
-    # @option params [String] :author_uri
-    # @option params [String] :icon
-    # @option params [String] :logo
+    # @option params [String] :title The title of the feed.
+    # @option params [String] :author_name The default author of the feed.
+    # @option params [String] :author_uri The default author URI of the feed.
+    # @option params [String] :icon The icon associated with the feed.
+    # @option params [String] :logo The logo associated with the feed.
     #
     # @return [String]
     def atom_feed(params = {})
