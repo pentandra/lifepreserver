@@ -1,4 +1,4 @@
-text_extensions: [ 'atom', 'conf', 'css', 'erb', 'haml', 'htm', 'html', 'js', 'markdown', 'md', 'rb', 'sass', 'scss', 'tex', 'ttl', 'txt', 'xml' ]
+text_extensions: [ 'atom', 'conf', 'css', 'erb', 'haml', 'htm', 'html', 'js', 'markdown', 'md', 'rb', 'sass', 'scss', 'svg', 'tex', 'ttl', 'txt', 'xml' ]
 
 # Config for Nanoc commands
 
