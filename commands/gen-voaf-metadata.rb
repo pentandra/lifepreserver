@@ -39,6 +39,6 @@ run do |_opts, _args, _cmd|
   end
 
   $stderr.print 'Writing metadata… '
-  File.open('var/voaf_metadata.yaml', 'w+') { |io| io.write(YAML.dump(data)) }
+  File.open('var/voaf_metadata.yaml', 'w+') { |io| io.write(YAML.dump(data.sort.to_h)) }
   $stderr.puts 'done'
 end
