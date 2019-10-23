@@ -79,7 +79,7 @@ class SpellChecker < Nanoc::Filter
           if dic.valid?(word) || (node.previous && dic.valid?(node.previous.text + word)) || /\d+['’]?s\z/.match(word)
             word
           else
-            "<mark class=\"misspelled\">#{word}</mark>"
+            %(<mark class="misspelled">#{word}</mark>)
           end
         end
         node.replace(checked_text)
@@ -95,9 +95,9 @@ class SpellChecker < Nanoc::Filter
   end
 
   def depend_on_attributes(items)
-    items = items.map { |i| i.class < Nanoc::DocumentViewMixin ? i._unwrap : i }
-
     dependency_tracker = @assigns[:item]._context.dependency_tracker
+
+    items = items.map { |i| i.class < Nanoc::DocumentViewMixin ? i._unwrap : i }
     items.each { |item| dependency_tracker.bounce(item, attributes: true) }
   end
 end
