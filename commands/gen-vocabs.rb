@@ -20,7 +20,7 @@ class GenVocabs < ::Nanoc::CLI::CommandRunner
 
     template = File.read('etc/vocabs_additional.yaml')
 
-    context = Nanoc::Int::Context.new(env)
+    context = Nanoc::Core::Context.new(env)
 
     vocabs = YAML.safe_load(ERB.new(template).result(context.get_binding)).deep_symbolize_keys
 
@@ -43,7 +43,7 @@ class GenVocabs < ::Nanoc::CLI::CommandRunner
       cmd += " --module-name #{v.fetch(:module_name, 'RDF::Vocab')}"
       cmd += " --class-name #{v[:class_name] ? v[:class_name] : id.to_s.upcase}"
       cmd += ' --strict' if v.fetch(:strict, true)
-      cmd += " --extra #{URI.encode v[:extra].to_json}" if v[:extra]
+      cmd += " --extra #{URI.encode(v[:extra].to_json)}" if v[:extra]
       cmd += " -o lib/vocabs/#{id}.rb_t"
       cmd += ' "' + v.fetch(:source, v[:uri]) + '"'
 
@@ -64,7 +64,7 @@ class GenVocabs < ::Nanoc::CLI::CommandRunner
 
   def validate_options_and_arguments
     if arguments.empty? && !options[:all] && !options[:list]
-      raise(Nanoc::Int::Errors::GenericTrivial, 'nothing to do (pass either --all, --list, or a list of prefixes)')
+      raise(Nanoc::Core::Errors::GenericTrivial, 'nothing to do (pass either --all, --list, or a list of prefixes)')
     end
   end
 
@@ -78,21 +78,9 @@ class GenVocabs < ::Nanoc::CLI::CommandRunner
     self.class.env_for_site(@site)
   end
 
-  def self.reps_for(site)
-    Nanoc::Int::ItemRepRepo.new.tap do |reps|
-      action_provider = Nanoc::Int::ActionProvider.named(:rule_dsl).for(site)
-      builder = Nanoc::Int::ItemRepBuilder.new(site, action_provider, reps)
-      builder.run
-    end
-  end
-
   def self.view_context_for(site)
-    Nanoc::ViewContext.new(
-      reps: reps_for(site),
+    Nanoc::Core::ViewContextForPreCompilation.new(
       items: site.items,
-      dependency_tracker: Nanoc::Int::DependencyTracker::Null.new,
-      compilation_context: nil,
-      snapshot_repo: nil,
     )
   end
 
