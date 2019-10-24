@@ -54,19 +54,19 @@ compile '/static/solutions/specifications/**/*.html' do
   filter :erb
 end
 
-layout '/specifications/vocabulary.*', :rdf_distiller, format: :html
+layout '/specifications/vocabulary.*', :rdf_distiller, output: :html
 
 compile '/static/solutions/specifications/**/*.ttl' do
-  filter :rdf_distiller, format: :turtle
+  filter :rdf_distiller, output: :turtle
 end
 
 compile '/static/solutions/specifications/**/*.ttl', rep: :jsonld do
-  filter :rdf_distiller, format: :jsonld
+  filter :rdf_distiller, output: :jsonld
   write item.identifier.without_ext.sub('/specifications', '') + '.jsonld'
 end
 
 compile '/static/solutions/specifications/**/*.ttl', rep: :rdfxml do
-  filter :rdf_distiller, format: :rdfxml
+  filter :rdf_distiller, output: :rdfxml
   write item.identifier.without_ext.sub('/specifications', '') + '.rdf'
 end
 

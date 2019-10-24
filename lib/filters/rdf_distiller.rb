@@ -6,7 +6,10 @@ class RdfDistiller < Nanoc::Filter
 
   identifiers :rdf_distiller
 
-  requires 'linkeddata', 'active_support/core_ext/string/inflections'
+  requires
+    'linkeddata',
+    'active_support/core_ext/string/inflections',
+    'active_support/core_ext/hash/slice'
 
   # Distill the item into different
   # [RDF](https://www.w3.org/TR/rdf11-concepts/) representations.
@@ -25,26 +28,31 @@ class RdfDistiller < Nanoc::Filter
   #     layout '/template.*', :rdf_distiller, format: :html
   #
   # @param [String] _content Ignored. As the filter can be run as a layout,
-  # the value of the `:content` parameter passed to the class at
-  # initialization is used as the content to distill.
+  #   the value of the `:content` parameter passed to the class at
+  #   initialization is used as the content to distill.
   #
   # @param [Hash] params
+  # @options params [String, Symbol] :input (@item.identifier.ext) The input format.
+  # @options params [String, Symbol] :output (:turtle) The output format.
+  # @options params [Hash] :prefixes The URI prefixes to use when generating the output.
+  # @options params [Boolean] :validate (true) Whether to validate the output for correctness.
   #
   # @return [String] The distilled content
   def run(_content, params = {})
-    input = params.fetch(:input_format, @item.identifier.ext)
-    output = params.fetch(:format, 'turtle')
+    input = params.fetch(:input, @item.identifier.ext)
+    output = params.fetch(:output, :turtle)
 
     base_uri = params[:base_uri] || @item[:base_uri] || path_to(@item, absolute: true)
     prefix = params[:prefix] || @item[:prefix] || File.basename(@item.identifier.without_exts).camelize
-    prefixes = params.fetch(:prefixes, {})
+    prefixes = params.fetch(:prefixes, vocabulary_prefixes_for_item)
+    validate = params.fetch(:validate, false)
 
     output_format = RDF::Format.for(output.to_sym).to_sym
 
     options = {
       prefixes: prefixes,
-      base_uri: base_uri,
-      validate: true,
+      base_uri: base_uri.to_s,
+      validate: validate,
     }
 
     repository = RDF::Repository.new
@@ -59,8 +67,11 @@ class RdfDistiller < Nanoc::Filter
         vocab.to_ttl(graph: repository, prefixes: prefixes)
       when :jsonld
         vocab.to_jsonld(graph: repository, prefixes: prefixes)
-      when :rdfa
-        raise 'The HTML/RDFa output format can only be run as a layout' unless assigns[:layout]
+      when :html, :rdfa
+        unless assigns[:layout]
+          raise 'The HTML/RDFa output format can only be run as a layout'
+        end
+
         vocab.to_html(graph: repository, prefixes: prefixes, template: assigns[:layout][:filename])
       else
         repository.dump(output_format, options)
@@ -68,5 +79,35 @@ class RdfDistiller < Nanoc::Filter
     else
       repository.dump(output_format, options)
     end
+  end
+
+  protected
+
+  # @note Uses internal apis, so potentially unstable.
+  def item_dependencies
+    dependency_tracker = @assigns[:item]._context.dependency_tracker
+    dependency_store = dependency_tracker.dependency_store
+    dependency_store.dependencies_causing_outdatedness_of(@assigns[:item])
+  end
+
+  def vocabulary_prefixes_for_item
+    dependencies = item_dependencies
+
+    res = []
+    dependencies.each do |dep|
+      pred = dep.from
+
+      pred_identifier =
+        case pred
+        when Nanoc::Core::Item
+          pred.identifier.to_s
+        end
+
+      if pred_identifier && pred_identifier =~ %r{/lifepreserver/vocabularies/}
+        res << pred.attributes.slice(:prefix, :namespace_uri)
+      end
+    end
+
+    res.reduce(&:merge)
   end
 end
