@@ -58,3 +58,10 @@ compile '/company/members/_*', rep: :vcard do
   filter :vcard, kind: :individual
   write "/static/company/#{@item.fetch(:slug)}.vcf"
 end
+
+compile '/static/people/*/index.erb', rep: :ttl do
+  filter :erb
+  layout '/default.*'
+  filter :rdf_distiller, input: :rdfa, output: :turtle
+  write ext: '.ttl'
+end
