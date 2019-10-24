@@ -11,36 +11,49 @@ module RDF::Vocab
 
     # Ontology definition
     ontology :"http://purl.org/spar/fabio/",
-      comment: %(FaBiO, the FRBR-aligned Bibliographic Ontology, is an ontology for recording and publishing on the Semantic Web bibliographic records of scholarly endeavours. It forms part of SPAR, a suite of Semantic Publishing and Referencing Ontologies.  Other SPAR ontologies are described at http://purl.org/spar/.
+      comment: %(The FRBR-aligned Bibliographic Ontology \(FaBiO\) is an ontology for describing entities that are published or potentially publishable \(e.g., journal articles, conference papers, books\), and that contain or are referred to by bibliographic references.
 
-This ontology is available at http://purl.org/spar/fabio, and uses the namespace prefix fabio.).freeze,
-      :"dc11:contributor" => [%(Paolo Ciccarese).freeze, %(Tim Clark).freeze],
-      :"dc11:creator" => [%(David Shotton).freeze, %(Silvio Peroni).freeze],
-      :"dc11:date" => %(2017-05-29).freeze,
-      :"dc11:description" => [%(FaBiO, the FRBR-aligned Bibliographic Ontology, is an ontology for recording and publishing on the Semantic Web descriptions of entities that are published or potentially publishable, and that contain or are referred to by bibliographic references, or entities used to define such bibliographic references. FaBiO entities are primarily textual publications such as books, magazines, newspapers and journals, and items of their content such as poems, conference papers and editorials.  However, they also include blogs, web pages, datasets, computer algorithms, experimental protocols, formal specifications and vocabularies, legal records, governmental papers, technical and commercial reports and similar publications, and also anthologies, catalogues and similar collections. 
+**URL:** http://purl.org/spar/fabio
 
-FaBiO classes are structured according to the FRBR schema of Works, Expressions, Manifestations and Items. Additional properties have been added to extends the FRBR data model by linking Works and Manifestations \(fabio:hasManifestation and fabio:isManifestationOf\), Works and Items \(fabio:hasPortrayal and fabio:isPortrayedBy\), and Expressions and Items  \(fabio:hasRepresentation and fabio:isRepresentedBy\).).freeze, %(http://svn.code.sf.net/p/sempublishing/code/FaBiO/FRBR%20diagram%20with%20new%20Fabio%20verbs.png).freeze],
-      :"dc11:rights" => %(This work is distributed under a Creative Commons Attribution License \(http://creativecommons.org/licenses/by/3.0/\).).freeze,
-      :"dc11:title" => %(FaBiO, the FRBR-aligned Bibliographic Ontology).freeze,
-      :"http://purl.org/vocab/vann/preferredNamespacePrefix" => %(fabio).freeze,
-      :"http://purl.org/vocab/vann/preferredNamespaceUri" => %(http://purl.org/spar/fabio/).freeze,
-      :"owl:imports" => %(http://purl.org/spar/frbr).freeze,
-      :"owl:priorVersion" => %(https://svn.code.sf.net/p/sempublishing/code/FaBiO/2016-07-11-fabio-1_9_3.owl).freeze,
-      :"owl:versionInfo" => %(1.9.4).freeze,
+**Creators**: [David Shotton]\(http://orcid.org/0000-0001-5506-523X\), [Silvio Peroni]\(http://orcid.org/0000-0003-0530-4305\)
+
+**Contributors:** [Paolo Ciccarese]\(https://orcid.org/0000-0002-5156-2703\), [Tim Clark]\(https://orcid.org/0000-0003-4060-7360\)
+
+**License:** [Creative Commons Attribution 4.0 International]\(https://creativecommons.org/licenses/by/4.0/legalcode\)
+
+**Website:** http://www.sparontologies.net/ontologies/fabio
+
+**Cite as:** Peroni, S., Shotton, D. \(2012\). FaBiO and CiTO: ontologies for describing bibliographic resources and citations. In Journal of Web Semantics, 17: 33-43. https://doi.org/10.1016/j.websem.2012.08.001. Open Access at: http://speroni.web.cs.unibo.it/publications/peroni-2012-fabio-cito-ontologies.pdf).freeze,
+      "dc11:contributor": ["Paolo Ciccarese".freeze, "Tim Clark".freeze],
+      "dc11:creator": ["David Shotton".freeze, "Silvio Peroni".freeze],
+      "dc11:date": "2019-02-19".freeze,
+      "dc11:description": ["FaBiO, the FRBR-aligned Bibliographic Ontology, is an ontology for recording and publishing on the Semantic Web descriptions of entities that are published or potentially publishable, and that contain or are referred to by bibliographic references, or entities used to define such bibliographic references. FaBiO entities are primarily textual publications such as books, magazines, newspapers and journals, and items of their content such as poems, conference papers and editorials.  However, they also include blogs, web pages, datasets, computer algorithms, experimental protocols, formal specifications and vocabularies, legal records, governmental papers, technical and commercial reports and similar publications, and also anthologies, catalogues and similar collections. \n\nFaBiO classes are structured according to the FRBR schema of Works, Expressions, Manifestations and Items. Additional properties have been added to extends the FRBR data model by linking Works and Manifestations (fabio:hasManifestation and fabio:isManifestationOf), Works and Items (fabio:hasPortrayal and fabio:isPortrayedBy), and Expressions and Items  (fabio:hasRepresentation and fabio:isRepresentedBy).".freeze, "fabio:FRBR%20diagram%20with%20new%20Fabio%20verbs.png".freeze],
+      "dc11:rights": "This work is distributed under a Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/legalcode).".freeze,
+      "dc11:title": "FaBiO, the FRBR-aligned Bibliographic Ontology".freeze,
+      "http://purl.org/vocab/vann/preferredNamespacePrefix": "fabio".freeze,
+      "http://purl.org/vocab/vann/preferredNamespaceUri": "http://purl.org/spar/fabio/".freeze,
+      "owl:imports": "http://purl.org/spar/frbr".freeze,
+      "owl:priorVersion": "fabio:2018-05-02".freeze,
+      "owl:versionIRI": "fabio:2019-02-19".freeze,
+      "owl:versionInfo": "2.1".freeze,
       type: "owl:Ontology".freeze
 
     # Class definitions
     term :Abstract,
       comment: %(A brief summary of a work on a particular subject, designed to act as the point-of-entry that will help the reader quickly to obtain an overview of the work's contents.   The abstract may be an integral part of the work itself, written by the same author\(s\) and appearing at the beginning of a work such as a research paper, report, review or thesis.  Alternatively it may be separate from the published work itself, and written by someone other than the author\(s\) of the published work, for example by a member of a professional abstracting service such as CAB Abstracts.).freeze,
       label: "abstract".freeze,
-      :"owl:disjointWith" => %(fabio:StructuredSummary).freeze,
-      :"rdfs:seeAlso" => %(fabio:StructuredSummary).freeze,
+      "owl:disjointWith": "fabio:StructuredSummary".freeze,
+      "rdfs:seeAlso": "fabio:StructuredSummary".freeze,
       subClassOf: "fabio:Expression".freeze,
       type: "owl:Class".freeze
     term :AcademicProceedings,
       comment: %(A document containing the programme and collected papers, or their abstracts, presented at an academic meeting.).freeze,
       label: "academic proceedings".freeze,
-      subClassOf: "fabio:ExpressionCollection".freeze,
+      subClassOf: ["fabio:ExpressionCollection".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#part".freeze,
+          someValuesFrom: "fabio:ProceedingsPaper".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :Addendum,
       comment: %(An item of material added at the end of a book or other publication, typically to include omitted or late-arriving material. ).freeze,
@@ -54,21 +67,37 @@ FaBiO classes are structured according to the FRBR schema of Works, Expressions,
       type: "owl:Class".freeze
     term :AnalogItem,
       comment: %(A real object that is an exemplar of a fabio:Manifestation, such as a particular copy of the book 'Alice's adventures in Wonderland', that a person may own.).freeze,
-      :"dc11:description" => %(An analog item is an exemplar of an analog manifestation only and it is always stored in a storage medium suitable for analog objects, such as paper, vinyl discs and films.).freeze,
+      "dc11:description": "An analog item is an exemplar of an analog manifestation only and it is always stored in a storage medium suitable for analog objects, such as paper, vinyl discs and films.".freeze,
       label: "analog item".freeze,
-      :"owl:disjointWith" => %(fabio:DigitalItem).freeze,
-      subClassOf: "fabio:Item".freeze,
+      "owl:disjointWith": "fabio:DigitalItem".freeze,
+      subClassOf: ["fabio:Item".freeze, term(
+          onProperty: "fabio:isStoredOn".freeze,
+          someValuesFrom: "fabio:AnalogStorageMedium".freeze,
+          type: "owl:Restriction".freeze
+        ), term(
+          onProperty: "http://purl.org/vocab/frbr/core#exemplarOf".freeze,
+          someValuesFrom: "fabio:AnalogManifestation".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :AnalogManifestation,
       comment: %(A manifestation in an analog form.).freeze,
       label: "analog manifestation".freeze,
-      :"owl:disjointWith" => %(fabio:DigitalManifestation).freeze,
-      subClassOf: "fabio:Manifestation".freeze,
+      "owl:disjointWith": "fabio:DigitalManifestation".freeze,
+      subClassOf: ["fabio:Manifestation".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#exemplar".freeze,
+          someValuesFrom: "fabio:AnalogItem".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :AnalogStorageMedium,
       comment: %(A means of storing information in non-digital form, e.g. paper, film \(for analogue photographs or movies\), magnetic tape \(for analogue sound recordings or video recordings\) or vinyl disc.).freeze,
       label: "analog storage medium".freeze,
-      subClassOf: "fabio:StorageMedium".freeze,
+      subClassOf: ["fabio:StorageMedium".freeze, term(
+          allValuesFrom: "fabio:AnalogItem".freeze,
+          onProperty: "fabio:stores".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :Announcement,
       comment: %(A formal statement about something.).freeze,
@@ -90,6 +119,50 @@ FaBiO classes are structured according to the FRBR schema of Works, Expressions,
       label: ["API".freeze, "application programming interface".freeze],
       subClassOf: "fabio:ComputerProgram".freeze,
       type: "owl:Class".freeze
+    term :ArchivalDocument,
+      comment: %(An archival document is a realization of the content related to an archival record. It can be exemplified as a book, a document, a letter, a database, etc.).freeze,
+      label: "archival document".freeze,
+      subClassOf: "fabio:Expression".freeze,
+      type: "owl:Class".freeze
+    term :ArchivalDocumentSet,
+      comment: %(A collection of archival document.).freeze,
+      label: "archival document set".freeze,
+      subClassOf: ["fabio:ExpressionCollection".freeze, term(
+          allValuesFrom: "fabio:ArchivalDocument".freeze,
+          onProperty: "http://purl.org/vocab/frbr/core#part".freeze,
+          type: "owl:Restriction".freeze
+        ), term(
+          onProperty: "http://purl.org/vocab/frbr/core#part".freeze,
+          someValuesFrom: "fabio:ArchivalDocument".freeze,
+          type: "owl:Restriction".freeze
+        )],
+      type: "owl:Class".freeze
+    term :ArchivalRecord,
+      comment: %(An archival record connotes a material created or received by a person, family, or organization, public or private, in the conduct of their affairs that is preserved because of the enduring value contained in the information it contains or as evidence of the function and the responsibilities of its creator.).freeze,
+      label: "archival record".freeze,
+      subClassOf: ["fabio:Work".freeze, term(
+          allValuesFrom: "fabio:ArchivalDocument".freeze,
+          onProperty: "http://purl.org/vocab/frbr/core#realization".freeze,
+          type: "owl:Restriction".freeze
+        )],
+      type: "owl:Class".freeze
+    term :ArchivalRecordSet,
+      comment: %(A collection of archival records.).freeze,
+      label: "archival record set".freeze,
+      subClassOf: ["fabio:WorkCollection".freeze, term(
+          allValuesFrom: "fabio:ArchivalDocumentSet".freeze,
+          onProperty: "http://purl.org/vocab/frbr/core#realization".freeze,
+          type: "owl:Restriction".freeze
+        ), term(
+          allValuesFrom: "fabio:ArchivalRecord".freeze,
+          onProperty: "http://purl.org/vocab/frbr/core#part".freeze,
+          type: "owl:Restriction".freeze
+        ), term(
+          onProperty: "http://purl.org/vocab/frbr/core#part".freeze,
+          someValuesFrom: "fabio:ArchivalRecord".freeze,
+          type: "owl:Restriction".freeze
+        )],
+      type: "owl:Class".freeze
     term :Article,
       comment: %(The realization of a piece of writing on a particular topic, usually published within a periodical publication \(e.g. journal, magazine and newspaper\).).freeze,
       label: "article".freeze,
@@ -103,7 +176,11 @@ FaBiO classes are structured according to the FRBR schema of Works, Expressions,
     term :AudioDocument,
       comment: %(The realization of a sound recording.).freeze,
       label: "audio document".freeze,
-      subClassOf: "fabio:Expression".freeze,
+      subClassOf: ["fabio:Expression".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#realizationOf".freeze,
+          someValuesFrom: "fabio:SoundRecording".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :AuthorityFile,
       comment: %(A controlled vocabulary or official list that establishes, for consistency, the authoritative forms of headings, and the preferred terms or proper names to be used, when creating a catalogue or when indexing and searching a set of entities within a defined domain.).freeze,
@@ -148,7 +225,11 @@ FaBiO classes are structured according to the FRBR schema of Works, Expressions,
     term :BookChapter,
       comment: %(A defined chapter of a book, usually with a separate title or number.).freeze,
       label: "book chapter".freeze,
-      subClassOf: "fabio:Chapter".freeze,
+      subClassOf: ["fabio:Chapter".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#partOf".freeze,
+          someValuesFrom: "fabio:Book".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :BookReview,
       comment: %(A written review and critical analysis of the content, scope and quality of a book or other monographic work.).freeze,
@@ -158,23 +239,38 @@ FaBiO classes are structured according to the FRBR schema of Works, Expressions,
     term :BookSeries,
       comment: %(A sequence of books having certain characteristics in common that are formally identified together as a group - for instance, the books in the Law, Governance and Technology Series published by Springer.).freeze,
       label: "book series".freeze,
-      :"owl:disjointWith" => %(fabio:BookSet).freeze,
-      subClassOf: "fabio:Series".freeze,
+      "owl:disjointWith": "fabio:BookSet".freeze,
+      subClassOf: ["fabio:Series".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#part".freeze,
+          someValuesFrom: "fabio:Book".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :BookSet,
       comment: %(A set of books having certain characteristics in common that informally allow their identification together as a group - for instance, the books of the Harry Potter saga.).freeze,
       label: "book set".freeze,
-      subClassOf: "fabio:ExpressionCollection".freeze,
+      subClassOf: ["fabio:ExpressionCollection".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#part".freeze,
+          someValuesFrom: "fabio:Book".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :BriefReport,
       comment: %(A brief report document.  This term may also be used synonymously with Rapid Communication to mean 'A short rapidly published research article or conference paper, typically reporting significant research results that have been recently discovered, or a brief news item reporting such discoveries.').freeze,
       label: "brief report".freeze,
-      subClassOf: "fabio:Expression".freeze,
+      subClassOf: ["fabio:Expression".freeze, term(
+          type: "owl:Class".freeze,
+          unionOf: list("fabio:RapidCommunication".freeze, "fabio:ReportDocument".freeze)
+        )],
       type: "owl:Class".freeze
     term :CallForApplications,
       comment: %(A document published by a funding agency requesting submission of applications for financial grants to fund projects, for example to enable research investigations in areas specified in the Call.).freeze,
       label: "call for applications".freeze,
-      subClassOf: "fabio:Expression".freeze,
+      subClassOf: ["fabio:Expression".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#realizationOf".freeze,
+          someValuesFrom: "fabio:Proposition".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :CaseForSupport,
       comment: %(A part of a grant application that provides a description of a proposed project and gives reasons why it is worthy of funding. \(See also fabio:GrantApplication\).).freeze,
@@ -184,7 +280,11 @@ FaBiO classes are structured according to the FRBR schema of Works, Expressions,
     term :CaseForSupportDocument,
       comment: %(A document containing the case for support for a particular project, usually contained within a grant application document but sometimes distributed separately, without the financial and organizational information that the grant application document also contains.).freeze,
       label: "case for support document".freeze,
-      subClassOf: "fabio:Expression".freeze,
+      subClassOf: ["fabio:Expression".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#realizationOf".freeze,
+          someValuesFrom: "fabio:CaseForSupport".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :CaseReport,
       comment: %(A report about a particular case or situation.).freeze,
@@ -269,7 +369,11 @@ FaBiO classes are structured according to the FRBR schema of Works, Expressions,
     term :ConferenceProceedings,
       comment: %(A document containing the programme and collected conference papers, or their abstracts, presented at a conference, seminar, symposium or similar event.).freeze,
       label: "conference proceedings".freeze,
-      subClassOf: "fabio:AcademicProceedings".freeze,
+      subClassOf: ["fabio:AcademicProceedings".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#part".freeze,
+          someValuesFrom: "fabio:ConferencePaper".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :ControlledVocabulary,
       comment: %(A collection of selected words and phrases related to a particular domain of knowledge used to permit consistency of metadata annotation and improved retrieval following a search, in which homonyms, synonyms and similar ambiguities of meaning present in natural language are disambiguated.).freeze,
@@ -299,7 +403,11 @@ FaBiO classes are structured according to the FRBR schema of Works, Expressions,
     term :DataFile,
       comment: %(A realisation of a fabio:Dataset \(a frbr:Work\) containing a defined collection of data with specific content and possibly with a specific version number, that can be embodied as a fabio:Digital Manifestation \(a frbr:Manifestation with a specific format\) and be represented by a specific fabio:ComputerFile \(a frbr:Item\) on someone's hard drive.).freeze,
       label: "data file".freeze,
-      subClassOf: "fabio:Expression".freeze,
+      subClassOf: ["fabio:Expression".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#realizationOf".freeze,
+          someValuesFrom: "fabio:Dataset".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :DataManagementPolicy,
       comment: %(A policy that descibes and defines how data should be managed, preserved and shared.).freeze,
@@ -314,7 +422,11 @@ FaBiO classes are structured according to the FRBR schema of Works, Expressions,
     term :DataMangementPlan,
       comment: %(A structured document giving information about how data arising from a research project or other endeavour is to be manages, preserved and shared.).freeze,
       label: "data management plan".freeze,
-      subClassOf: "fabio:Expression".freeze,
+      subClassOf: ["fabio:Expression".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#realizationOf".freeze,
+          someValuesFrom: "fabio:Proposition".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :DataRepository,
       comment: %(A repository for storing data.).freeze,
@@ -349,23 +461,43 @@ FaBiO classes are structured according to the FRBR schema of Works, Expressions,
     term :Diary,
       comment: %(A personal record, in a form of book, with discrete entries \(often handwritten\) arranged by date, reporting what has happened over the course of a day or other period of time.).freeze,
       label: "diary".freeze,
-      subClassOf: "fabio:Notebook".freeze,
+      subClassOf: ["fabio:Notebook".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#part".freeze,
+          someValuesFrom: "fabio:Entry".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :DigitalItem,
       comment: %(A digital object, such as a computer file.).freeze,
-      :"dc11:description" => %(A digital item is an exemplar of a digital manifestation only and it is always stored in a storage medium suitable for digital objects, such as CDs, DVDs, HDs and the Web.).freeze,
+      "dc11:description": "A digital item is an exemplar of a digital manifestation only and it is always stored in a storage medium suitable for digital objects, such as CDs, DVDs, HDs and the Web.".freeze,
       label: "digital item".freeze,
-      subClassOf: "fabio:Item".freeze,
+      subClassOf: ["fabio:Item".freeze, term(
+          onProperty: "fabio:isStoredOn".freeze,
+          someValuesFrom: "fabio:DigitalStorageMedium".freeze,
+          type: "owl:Restriction".freeze
+        ), term(
+          onProperty: "http://purl.org/vocab/frbr/core#exemplarOf".freeze,
+          someValuesFrom: "fabio:DigitalManifestation".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :DigitalManifestation,
       comment: %(A manifestation that represents data in binary form, encoding the data as a series of 0s and 1s.).freeze,
       label: "digital manifestation".freeze,
-      subClassOf: "fabio:Manifestation".freeze,
+      subClassOf: ["fabio:Manifestation".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#exemplar".freeze,
+          someValuesFrom: "fabio:DigitalItem".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :DigitalStorageMedium,
       comment: %(A means of storing information in digital form, involving binary encoding of data in 0s and 1s, e.g. a computer random access memory, hard disc, USB stick, CD, DVD or digital magnetic tape.).freeze,
       label: "digital storage medium".freeze,
-      subClassOf: "fabio:StorageMedium".freeze,
+      subClassOf: ["fabio:StorageMedium".freeze, term(
+          allValuesFrom: "fabio:DigitalItem".freeze,
+          onProperty: "fabio:stores".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :Directory,
       comment: %(A database of information which is heavily optimized for reading.).freeze,
@@ -375,8 +507,12 @@ FaBiO classes are structured according to the FRBR schema of Works, Expressions,
     term :DisciplineDictionary,
       comment: %(A discipline dictionary is a collection of subject disciplines.).freeze,
       label: "discipline dictionary".freeze,
-      :"owl:disjointWith" => %(fabio:TermDictionary).freeze,
-      subClassOf: "skos:ConceptScheme".freeze,
+      "owl:disjointWith": "fabio:TermDictionary".freeze,
+      subClassOf: ["skos:ConceptScheme".freeze, term(
+          allValuesFrom: "fabio:SubjectDiscipline".freeze,
+          onProperty: "fabio:isSchemeOf".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :DoctoralThesis,
       comment: %(A thesis reporting the research undertaken during a period of graduate study leading to a doctoral degree.).freeze,
@@ -396,7 +532,11 @@ FaBiO classes are structured according to the FRBR schema of Works, Expressions,
     term :Editorial,
       comment: %(The realization of an opinion written by an editor.).freeze,
       label: "editorial".freeze,
-      subClassOf: "fabio:Expression".freeze,
+      subClassOf: ["fabio:Expression".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#realizationOf".freeze,
+          someValuesFrom: "fabio:Opinion".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :Email,
       comment: %(A message transmitted over the internet as an item of electronic mail, typically based on the Simple Mail Transfer Protocol \(SMTP\).  Emails can have computer files containing documents, dataset and images attached to them or embedded within them.).freeze,
@@ -432,23 +572,9 @@ FaBiO classes are structured according to the FRBR schema of Works, Expressions,
       comment: %(A segment or passage selected from a larger expression for use in another expression, usually with specific attribution to its original source.
 
 [Note: Use fabio:Excerpt to indicate a segment or passage selected from another expression that is not a passage of speech, and fabio:Quotation to indicate a segment or passage selected from another expression that is a passage of speech.]).freeze,
-      :"dc11:description" => %(An excerpt is more general than a quotation, and is generally used to indicate a re-published extract from a book, instruction manual, film, radio programme, etc, that need not be what someone said.  
-
-For example:
-     Oxford    01865
-     Oxshott   01372
-     Oxted      01883
-     Oxton      01578
-is an excerpt from the UK Dialling Codes section of the Oxford Telephone Directory.  
-
-Similarly, the following concluding passage from William Wordsworth's poem Lines written a Few Miles above Tintern Abbey is an excerpt rather than a quotation:
-                                           Nor wilt thou then forget,    
-    That after many wanderings, many years    
-    Of absence, these steep woods and lofty cliffs,    
-    And this green pastoral landscape, were to me    
-    More dear, both for themselves and for thy sake.).freeze,
+      "dc11:description": "An excerpt is more general than a quotation, and is generally used to indicate a re-published extract from a book, instruction manual, film, radio programme, etc, that need not be what someone said.  \n\nFor example:\n     Oxford    01865\n     Oxshott   01372\n     Oxted      01883\n     Oxton      01578\nis an excerpt from the UK Dialling Codes section of the Oxford Telephone Directory.  \n\nSimilarly, the following concluding passage from William Wordsworth's poem Lines written a Few Miles above Tintern Abbey is an excerpt rather than a quotation:\n                                           Nor wilt thou then forget,    \n    That after many wanderings, many years    \n    Of absence, these steep woods and lofty cliffs,    \n    And this green pastoral landscape, were to me    \n    More dear, both for themselves and for thy sake.".freeze,
       label: "excerpt".freeze,
-      :"rdfs:seeAlso" => %(fabio:Quotation).freeze,
+      "rdfs:seeAlso": "fabio:Quotation".freeze,
       subClassOf: "fabio:Expression".freeze,
       type: "owl:Class".freeze
     term :ExecutiveSummary,
@@ -463,19 +589,46 @@ Similarly, the following concluding passage from William Wordsworth's poem Lines
       type: "owl:Class".freeze
     term :Expression,
       comment: %(A subclass of FRBR expression, restricted to expressions of fabio:Works.  For your latest research paper, the preprint submitted to the publisher, and the final published version to which the publisher assigned a unique digital object identifier, are both expressions of the same work.  ).freeze,
-      :"dc11:description" => %(A fabio:Expression can only have part or be part of another fabio:Expression.  Moreover, it can be a representation only of a fabio:Work, and  it can be embodied only in fabio:Manifestation\(s\).).freeze,
+      "dc11:description": "A fabio:Expression can only have part or be part of another fabio:Expression.  Moreover, it can be a representation only of a fabio:Work, and  it can be embodied only in fabio:Manifestation(s).".freeze,
       label: "expression".freeze,
-      subClassOf: "http://purl.org/vocab/frbr/core#Expression".freeze,
+      subClassOf: ["http://purl.org/vocab/frbr/core#Expression".freeze, term(
+          allValuesFrom: "fabio:Manifestation".freeze,
+          onProperty: "http://purl.org/vocab/frbr/core#embodiment".freeze,
+          type: "owl:Restriction".freeze
+        ), term(
+          allValuesFrom: "fabio:Work".freeze,
+          onProperty: "http://purl.org/vocab/frbr/core#realizationOf".freeze,
+          type: "owl:Restriction".freeze
+        ), term(
+          intersectionOf: list(term(
+            allValuesFrom: "http://purl.org/vocab/frbr/core#Expression".freeze,
+            onProperty: "http://purl.org/vocab/frbr/core#part".freeze,
+            type: "owl:Restriction".freeze
+          ), term(
+            allValuesFrom: "http://purl.org/vocab/frbr/core#Expression".freeze,
+            onProperty: "http://purl.org/vocab/frbr/core#partOf".freeze,
+            type: "owl:Restriction".freeze
+          )),
+          type: "owl:Class".freeze
+        )],
       type: "owl:Class".freeze
     term :ExpressionCollection,
       comment: %(A collection of expressions, for example a periodical or a book series.).freeze,
       label: "expression collection".freeze,
-      subClassOf: "fabio:Expression".freeze,
+      subClassOf: ["fabio:Expression".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#part".freeze,
+          someValuesFrom: "fabio:Expression".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :Figure,
       comment: %(A visual communication object comprising one or more still images on a related theme.  If included within a publication, a figure is typically unaligned with the main body of text, having its own descriptive textual figure legend.).freeze,
       label: "figure".freeze,
-      subClassOf: "fabio:Expression".freeze,
+      subClassOf: ["fabio:Expression".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#realizationOf".freeze,
+          someValuesFrom: "fabio:StillImage".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :Film,
       comment: %(A movie with an accompanying soundtrack, typically created by a professional film studio, designed to communicate a fictional story, record an artistic event, or impart information that is scientific or documentary in nature.).freeze,
@@ -500,7 +653,11 @@ Similarly, the following concluding passage from William Wordsworth's poem Lines
     term :GrantApplicationDocument,
       comment: %(The realization of a grant application, usually containing a case for support document.).freeze,
       label: "grant application document".freeze,
-      subClassOf: "fabio:Expression".freeze,
+      subClassOf: ["fabio:Expression".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#realizationOf".freeze,
+          someValuesFrom: "fabio:GrantApplication".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :Hardback,
       comment: %(A print object bound with rigid protective covers \(typically of cardboard covered with cloth, heavy paper, or sometimes leather\).).freeze,
@@ -515,12 +672,17 @@ Similarly, the following concluding passage from William Wordsworth's poem Lines
     term :InBrief,
       comment: %(An 'In Brief' is a journal or magazine news item that describes all the articles \(or all the important articles\) in that issue of the periodical. The content of an 'In Brief' may be constructed from the abstracts of the articles it highlights, but is more likely to be written by a member of the periodical staff especially for the issue.).freeze,
       label: "in brief".freeze,
-      subClassOf: "fabio:NewsItem".freeze,
+      subClassOf: ["fabio:NewsItem".freeze, term(
+          type: "owl:Class".freeze,
+          unionOf: list("fabio:JournalNewsItem".freeze, "fabio:MagazineNewsItem".freeze)
+        )],
       type: "owl:Class".freeze
     term :InUsePaper,
-      comment: %(A report presenting existing research or technology that is actual use \(or at least plans for deployment\) outside the research group that conducted the research or that developed the technology. ).freeze,
+      comment: %(A scholarly work that describes applied and validated solutions such as software tools, systems or architectures that benefit from the use of the technology of a particular scholarly domain. Usually, papers of this kind should also provide convincing evidence that there is use of the proposed application or tool by the target user group, preferably outside the institution that conducted its development.
+
+E.g. see http://iswc2018.semanticweb.org/call-for-in-use-track-papers/.).freeze,
       label: "in-use paper".freeze,
-      subClassOf: "fabio:Work".freeze,
+      subClassOf: "fabio:ScholarlyWork".freeze,
       type: "owl:Class".freeze
     term :Index,
       comment: %(An alphabetically-ordered list of words and phrases \('headings'\) and associated pointers \('locators'\) to where useful material relating to that heading can be found in a document.).freeze,
@@ -530,7 +692,11 @@ Similarly, the following concluding passage from William Wordsworth's poem Lines
     term :InstructionManual,
       comment: %(An instructional document typically supplied with a technologically advanced consumer product, such as a car or a computer application, or with an item of complex equipment such as a microscope.).freeze,
       label: "instruction manual".freeze,
-      subClassOf: "fabio:Expression".freeze,
+      subClassOf: ["fabio:Expression".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#realizationOf".freeze,
+          someValuesFrom: "fabio:InstructionalWork".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :InstructionalWork,
       comment: %(A work created for the purpose of education or instruction, that may be expressed as a  text book, a lecture, a tutorial or an instruction manual.).freeze,
@@ -539,44 +705,91 @@ Similarly, the following concluding passage from William Wordsworth's poem Lines
       type: "owl:Class".freeze
     term :Item,
       comment: %(A subclass of FRBR item, restricted to exemplars of fabio:Manifestations.  An example of a fabio:Item is a printed copy of a journal article on your desk, or a PDF file of that article that you purchased from a publisher and that now resides in digital form on your computer hard drive.  ).freeze,
-      :"dc11:description" => %(A fabio:Item can only have part or be part of another fabio:Item. Moreover, it can be an exemplar only of a fabio:Manifestation.).freeze,
+      "dc11:description": "A fabio:Item can only have part or be part of another fabio:Item. Moreover, it can be an exemplar only of a fabio:Manifestation.".freeze,
       label: "item".freeze,
-      subClassOf: "http://purl.org/vocab/frbr/core#Item".freeze,
+      subClassOf: ["http://purl.org/vocab/frbr/core#Item".freeze, term(
+          allValuesFrom: "fabio:Manifestation".freeze,
+          onProperty: "http://purl.org/vocab/frbr/core#exemplarOf".freeze,
+          type: "owl:Restriction".freeze
+        ), term(
+          intersectionOf: list(term(
+            allValuesFrom: "http://purl.org/vocab/frbr/core#Item".freeze,
+            onProperty: "http://purl.org/vocab/frbr/core#part".freeze,
+            type: "owl:Restriction".freeze
+          ), term(
+            allValuesFrom: "http://purl.org/vocab/frbr/core#Item".freeze,
+            onProperty: "http://purl.org/vocab/frbr/core#partOf".freeze,
+            type: "owl:Restriction".freeze
+          )),
+          type: "owl:Class".freeze
+        )],
       type: "owl:Class".freeze
     term :ItemCollection,
       comment: %(A collection of items.).freeze,
       label: "item collection".freeze,
-      subClassOf: "fabio:Item".freeze,
+      subClassOf: ["fabio:Item".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#part".freeze,
+          someValuesFrom: "fabio:Item".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :Journal,
       comment: %(A scholarly periodical primarily devoted to the publication of original research papers. [Printed and electronic manifestations of the same journal are usually identified by separate print and electronic International Standard Serial Numbers \(ISSN or eISSN, respectively\), that identifies the journal as a whole, not to individual issues of it.]).freeze,
       label: "journal".freeze,
-      subClassOf: "fabio:Periodical".freeze,
+      subClassOf: ["fabio:Periodical".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#part".freeze,
+          someValuesFrom: "fabio:JournalIssue".freeze,
+          type: "owl:Restriction".freeze
+        ), term(
+          onProperty: "http://purl.org/vocab/frbr/core#part".freeze,
+          someValuesFrom: "fabio:JournalVolume".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :JournalArticle,
       comment: %(An article, typically the realization of a research paper reporting original research findings, published in a journal issue.  ).freeze,
       label: "journal article".freeze,
-      subClassOf: "fabio:Article".freeze,
+      subClassOf: ["fabio:Article".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#partOf".freeze,
+          someValuesFrom: "fabio:JournalIssue".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :JournalEditorial,
       comment: %(An editorial published in an issue of a journal.).freeze,
       label: "journal editorial".freeze,
-      subClassOf: "fabio:Editorial".freeze,
+      subClassOf: ["fabio:Editorial".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#partOf".freeze,
+          someValuesFrom: "fabio:JournalIssue".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :JournalIssue,
       comment: %(A particular published issue of a journal, one or more of which will constitute a volume of the journal.).freeze,
       label: "journal issue".freeze,
-      subClassOf: "fabio:PeriodicalIssue".freeze,
+      subClassOf: ["fabio:PeriodicalIssue".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#partOf".freeze,
+          someValuesFrom: "fabio:JournalVolume".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :JournalNewsItem,
       comment: %(A news report published in a journal issue.).freeze,
       label: "journal news item".freeze,
-      subClassOf: "fabio:NewsItem".freeze,
+      subClassOf: ["fabio:NewsItem".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#partOf".freeze,
+          someValuesFrom: "fabio:JournalIssue".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :JournalVolume,
       comment: %(A particular published volume of a journal, comprising one or more journal issues.).freeze,
       label: "journal volume".freeze,
-      subClassOf: "fabio:PeriodicalVolume".freeze,
+      subClassOf: ["fabio:PeriodicalVolume".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#partOf".freeze,
+          someValuesFrom: "fabio:Journal".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :LaboratoryNotebook,
       comment: %(A notebook used by an individual research scientist as the primary record of his or her research activities. A researcher may use a laboratory notebook to document hypotheses, to describe experiments and to record data in various formats, to provide details of data analysis and interpretation, or to record the validation or invalidation of the original hypotheses. The laboratory notebook serves as an organizational tool and a memory aid.  It may also have a role in recording and protecting any intellectual property created during the research, and may be used in evidence when establishing priority of discoveries, for example in patent applications.  Electronic versions of laboratory notebooks are increasingly being employed by researchers, particularly in chemistry and the pharmaceutical industry.).freeze,
@@ -611,40 +824,83 @@ Similarly, the following concluding passage from William Wordsworth's poem Lines
     term :Magazine,
       comment: %(A periodical, usually devoted to a particular topic or domain of interest, and usually published weekly or monthly, consisting primarily of  non-peer reviewed editorials, journalistic news items and more substantive articles, reviews, book reviews and discussions concerning current or recent events and publications, and matters of interest to the domain served by the magazine.  [Some scientific journals, notably Science and Nature, also secondarily serve as science magazines by containing substantive editorials and news items on vital or controversial issues].).freeze,
       label: "magazine".freeze,
-      subClassOf: "fabio:Periodical".freeze,
+      subClassOf: ["fabio:Periodical".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#part".freeze,
+          someValuesFrom: "fabio:MagazineIssue".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :MagazineArticle,
       comment: %(An article published in a magazine issue.).freeze,
       label: "magazine article".freeze,
-      subClassOf: "fabio:Article".freeze,
+      subClassOf: ["fabio:Article".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#partOf".freeze,
+          someValuesFrom: "fabio:MagazineIssue".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :MagazineEditorial,
       comment: %(An editorial published in an issue of a magazine.).freeze,
       label: "magazine editorial".freeze,
-      subClassOf: "fabio:Editorial".freeze,
+      subClassOf: ["fabio:Editorial".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#partOf".freeze,
+          someValuesFrom: "fabio:MagazineIssue".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :MagazineIssue,
       comment: %(A particular published  issue of a magazine, identified by date, and sometimes also by place \(e.g. 'West Coast edition'\) or language \(e.g. 'Spanish edition'\).).freeze,
       label: "magazine issue".freeze,
-      subClassOf: "fabio:PeriodicalIssue".freeze,
+      subClassOf: ["fabio:PeriodicalIssue".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#partOf".freeze,
+          someValuesFrom: "fabio:Magazine".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :MagazineNewsItem,
       comment: %(A news report published in a magazine issue.).freeze,
       label: "magazine news item".freeze,
-      subClassOf: "fabio:NewsItem".freeze,
+      subClassOf: ["fabio:NewsItem".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#partOf".freeze,
+          someValuesFrom: "fabio:MagazineIssue".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :Manifestation,
       comment: %(A subclass of FRBR manifestation, restricted to manifestations of fabio:Expressions. fabio:Manifestation specifically applies to electronic \(digital\) as well as to physical manifestations of expressions.  
 
 Examples of different manifestations of a single 'version of record' expression of a scholarly work include an article in a print journal or the on-line version of that article as a web page.).freeze,
-      :"dc11:description" => %(A fabio:Manifestation can only have part or be part of another fabio:Manifestation.  Moreover, it can be an embodiment only of a fabio:Expression and it can be exemplified only by fabio:Item\(s\).).freeze,
+      "dc11:description": "A fabio:Manifestation can only have part or be part of another fabio:Manifestation.  Moreover, it can be an embodiment only of a fabio:Expression and it can be exemplified only by fabio:Item(s).".freeze,
       label: "manifestation".freeze,
-      subClassOf: "http://purl.org/vocab/frbr/core#Manifestation".freeze,
+      subClassOf: ["http://purl.org/vocab/frbr/core#Manifestation".freeze, term(
+          allValuesFrom: "fabio:Expression".freeze,
+          onProperty: "http://purl.org/vocab/frbr/core#embodimentOf".freeze,
+          type: "owl:Restriction".freeze
+        ), term(
+          allValuesFrom: "fabio:Item".freeze,
+          onProperty: "http://purl.org/vocab/frbr/core#exemplar".freeze,
+          type: "owl:Restriction".freeze
+        ), term(
+          intersectionOf: list(term(
+            allValuesFrom: "http://purl.org/vocab/frbr/core#Manifestation".freeze,
+            onProperty: "http://purl.org/vocab/frbr/core#part".freeze,
+            type: "owl:Restriction".freeze
+          ), term(
+            allValuesFrom: "http://purl.org/vocab/frbr/core#Manifestation".freeze,
+            onProperty: "http://purl.org/vocab/frbr/core#partOf".freeze,
+            type: "owl:Restriction".freeze
+          )),
+          type: "owl:Class".freeze
+        )],
       type: "owl:Class".freeze
     term :ManifestationCollection,
       comment: %(A collection of manifestations.).freeze,
       label: "manifestation collection".freeze,
-      subClassOf: "fabio:Manifestation".freeze,
+      subClassOf: ["fabio:Manifestation".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#part".freeze,
+          someValuesFrom: "fabio:Manifestation".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :Manuscript,
       comment: %(A textual work prepared 'by hand', such as a typescript or word-processed pre-publication draft of a research paper or a report, or a work not otherwise reproduced in multiple copies.  [Note: fabio:Manuscript is not intended to describe a handwritten historical document on paper or parchment, for which the FRBR distinctions between work, expression, manifestation and item \(individual copy\) becomes blurred.].).freeze,
@@ -669,7 +925,16 @@ Examples of different manifestations of a single 'version of record' expression 
     term :MetadataDocument,
       comment: %(A document that contains metadata information describing one or more characteristics of an entity.).freeze,
       label: "metadata document".freeze,
-      subClassOf: "fabio:Expression".freeze,
+      subClassOf: ["fabio:Expression".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#realizationOf".freeze,
+          someValuesFrom: "fabio:Metadata".freeze,
+          type: "owl:Restriction".freeze
+        )],
+      type: "owl:Class".freeze
+    term :MethodsPaper,
+      comment: %(A scholarly work detailing a method, procedure or experimental protocol employed in a particular scholarly domain.).freeze,
+      label: "methods paper".freeze,
+      subClassOf: "fabio:ScholarlyWork".freeze,
       type: "owl:Class".freeze
     term :Microblog,
       comment: %(A social networking publication medium such as Twitter, Tumblr, FriendFeed, Facebook or MySpace. A microblog differs from a traditional blog in that its individual content items are smaller than a traditional blog posts, typically containing just a short sentence, a single image, or a URI.  These small messages are referred to as microposts.).freeze,
@@ -694,12 +959,16 @@ Examples of different manifestations of a single 'version of record' expression 
     term :Movie,
       comment: %(The realization of a moving image.).freeze,
       label: "movie".freeze,
-      subClassOf: "fabio:Expression".freeze,
+      subClassOf: ["fabio:Expression".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#realizationOf".freeze,
+          someValuesFrom: "fabio:MovingImage".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :MovingImage,
       comment: %(A moving display, either generated dynamically by a computer program or formed from a series of pre-recorded still images imparting an impression of motion when shown in succession.  Examples include animations, cine films, videos, and computational simulations. Expressions of moving images may incorporate synchronized soundtracks.).freeze,
       label: "moving image".freeze,
-      :"owl:disjointWith" => %(fabio:StillImage).freeze,
+      "owl:disjointWith": "fabio:StillImage".freeze,
       subClassOf: "fabio:Image".freeze,
       type: "owl:Class".freeze
     term :MusicalComposition,
@@ -721,7 +990,11 @@ Examples of different manifestations of a single 'version of record' expression 
     term :NewsItem,
       comment: %(A published news report.).freeze,
       label: "news item".freeze,
-      subClassOf: "fabio:Expression".freeze,
+      subClassOf: ["fabio:Expression".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#realizationOf".freeze,
+          someValuesFrom: "fabio:NewsReport".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :NewsReport,
       comment: %(A report of an item of news.).freeze,
@@ -731,27 +1004,47 @@ Examples of different manifestations of a single 'version of record' expression 
     term :Newspaper,
       comment: %(A non-peer reviewed periodical, usually published daily or weekly, consisting primarily of editorials and news items concerning current or recent events and matters of public interest.).freeze,
       label: "newspaper".freeze,
-      subClassOf: "fabio:Periodical".freeze,
+      subClassOf: ["fabio:Periodical".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#part".freeze,
+          someValuesFrom: "fabio:NewspaperIssue".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :NewspaperArticle,
       comment: %(An article written by a journalist and published in a newspaper.).freeze,
       label: "newspaper article".freeze,
-      subClassOf: "fabio:Article".freeze,
+      subClassOf: ["fabio:Article".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#partOf".freeze,
+          someValuesFrom: "fabio:NewspaperIssue".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :NewspaperEditorial,
       comment: %(An editorial published in an issue of a newspaper.).freeze,
       label: "newspaper editorial".freeze,
-      subClassOf: "fabio:Editorial".freeze,
+      subClassOf: ["fabio:Editorial".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#partOf".freeze,
+          someValuesFrom: "fabio:NewspaperIssue".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :NewspaperIssue,
       comment: %(A particular published  issue of a newspaper, identified by date, and sometimes also by place or time \(e.g. 'Late London Edition'\).).freeze,
       label: "newspaper issue".freeze,
-      subClassOf: "fabio:PeriodicalIssue".freeze,
+      subClassOf: ["fabio:PeriodicalIssue".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#partOf".freeze,
+          someValuesFrom: "fabio:Newspaper".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :NewspaperNewsItem,
       comment: %(A news report published in a newspaper issue.).freeze,
       label: "newspaper news item".freeze,
-      subClassOf: "fabio:NewsItem".freeze,
+      subClassOf: ["fabio:NewsItem".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#partOf".freeze,
+          someValuesFrom: "fabio:NewspaperIssue".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :Notebook,
       comment: %(A book containing personal notes, typically created by writing into a physical book with blank pages.).freeze,
@@ -781,7 +1074,11 @@ Examples of different manifestations of a single 'version of record' expression 
     term :OntologyDocument,
       comment: %(A document containing an ontology, for example an OWL \(Web Ontology Language\) file \(http://www.w3.org/TR/owl-features/\).).freeze,
       label: "ontology document".freeze,
-      subClassOf: "fabio:VocabularyDocument".freeze,
+      subClassOf: ["fabio:VocabularyDocument".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#realizationOf".freeze,
+          someValuesFrom: "fabio:Ontology".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :Opinion,
       comment: %(An expression of a personal or professional opinion on an issue or topic.).freeze,
@@ -816,31 +1113,62 @@ Examples of different manifestations of a single 'version of record' expression 
     term :PatentApplicationDocument,
       comment: %(The physical or electronic realization of a patent application.).freeze,
       label: "patent application document".freeze,
-      subClassOf: "fabio:SpecificationDocument".freeze,
+      subClassOf: ["fabio:SpecificationDocument".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#realizationOf".freeze,
+          someValuesFrom: "fabio:PatentApplication".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :PatentDocument,
       comment: %(The physical or electronic realization of a patent.).freeze,
       label: "patent document".freeze,
-      subClassOf: "fabio:SpecificationDocument".freeze,
+      subClassOf: ["fabio:SpecificationDocument".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#realizationOf".freeze,
+          someValuesFrom: "fabio:Patent".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :Periodical,
       comment: %(A publication issued on a regular and ongoing basis as a series of issues, each issue comprising separate periodical items, for example editorials, articles, news items and/or other writings.).freeze,
       label: "periodical".freeze,
-      subClassOf: "fabio:ExpressionCollection".freeze,
+      subClassOf: ["fabio:ExpressionCollection".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#part".freeze,
+          someValuesFrom: "fabio:PeriodicalIssue".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :PeriodicalIssue,
       comment: %(A particular issue of a periodical, identified and distinguished from other issues of the same publication by date and/or issue number and/or volume number, and comprising separate periodical items such as editorials, articles and news items.).freeze,
       label: "periodical issue".freeze,
-      subClassOf: "fabio:Expression".freeze,
+      subClassOf: ["fabio:Expression".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#partOf".freeze,
+          someValuesFrom: "fabio:Periodical".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :PeriodicalItem,
       comment: %(A piece of writing published in a periodical issue, typically accompanied by other items by different authors.).freeze,
+      equivalentClass: term(
+          intersectionOf: list("fabio:Expression".freeze, term(
+            onProperty: "http://purl.org/vocab/frbr/core#partOf".freeze,
+            someValuesFrom: term(
+              type: "owl:Class".freeze,
+              unionOf: list("fabio:PeriodicalIssue".freeze, "fabio:PeriodicalVolume".freeze)
+            ),
+            type: "owl:Restriction".freeze
+          )),
+          type: "owl:Class".freeze
+        ),
       label: "periodical item".freeze,
       type: "owl:Class".freeze
     term :PeriodicalVolume,
       comment: %(A particular published volume of a periodical.).freeze,
       label: "periodical volume".freeze,
-      subClassOf: "fabio:Expression".freeze,
+      subClassOf: ["fabio:Expression".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#partOf".freeze,
+          someValuesFrom: "fabio:Periodical".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :PersonalCommunication,
       comment: %(Information communicated personally by verbal or written means from one individual to one or more another persons or organizations.).freeze,
@@ -870,7 +1198,18 @@ Examples of different manifestations of a single 'version of record' expression 
     term :PolicyDocument,
       comment: %(A document embodying a policy that descibes and defines how something should be done. ).freeze,
       label: "policy document".freeze,
-      subClassOf: "fabio:Expression".freeze,
+      subClassOf: ["fabio:Expression".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#realizationOf".freeze,
+          someValuesFrom: "fabio:Policy".freeze,
+          type: "owl:Restriction".freeze
+        )],
+      type: "owl:Class".freeze
+    term :PositionPaper,
+      comment: %(A scholarly work that reports a particular intellectual position or viewpoint regarding a particular scholarly topic. Usually, these papers are dependent on the author's opinion or interpretation, do not have an evaluation, and need to present relevant and novel discussion points in a thorough manner.
+
+E.g. see https://datasciencehub.net/content/guidelines-authors).freeze,
+      label: "position paper".freeze,
+      subClassOf: ["fabio:Opinion".freeze, "fabio:ScholarlyWork".freeze],
       type: "owl:Class".freeze
     term :PosterPaper,
       comment: %(A paper that typically accompanies a poster describing some preliminary  results of research, usually presented during a conference or a workshop.).freeze,
@@ -931,7 +1270,11 @@ Examples of different manifestations of a single 'version of record' expression 
     term :ProjectReportDocument,
       comment: %(A document containing a project report, intended to be delivered to a customer or funding agency describing the results achieved within a specific project. ).freeze,
       label: "deliverable".freeze,
-      subClassOf: "fabio:ReportDocument".freeze,
+      subClassOf: ["fabio:ReportDocument".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#realizationOf".freeze,
+          someValuesFrom: "fabio:ProjectReport".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :Proof,
       comment: %(In printing and publishing, a proof copy is the preliminary version of a publication, after the inclusion of any author corrections following review, and after copy editing and formatting to bring the manuscript into the house style, intended for final checking prior to publication to detect and eliminate typographical errors, omissions or transpositions of text, incorrect layout or placement of illustrations and tables, or other formatting errors.  Those who check proofs include the editor, possibly the peer-reviewers \(to ensure that their requested modifications have been included to their satisfaction\), possibly an in-house professional proof-reader, and / or the author, who is ultimately responsible for ensuring the published work says what \(s\)he means it to say.  Substantive changes to the text are not permitted once the manuscript has reached proof stage.).freeze,
@@ -952,31 +1295,34 @@ Examples of different manifestations of a single 'version of record' expression 
       comment: %(A passage of speech selected from a larger verbal or written expression for use in another expression, with specific attribution to its original source, and usually demarcated by quotation marks and / or by placing it in a separate indented paragraph. 
 
 [Note: Use fabio:Quotation to indicate a segment or passage selected from another expression that is a passage of speech, and fabio:Excerpt to indicate a segment or passage selected from another expression that is not a passage of speech.]).freeze,
-      :"dc11:description" => %(A quotation is a repetition of what someone has said, and is presented "within quotation marks", for example:
-
-On June 4th 1940, Winston Churchill made a speech on the radio that has since become famous, that included the words:
-       " . . . we shall fight on the beaches, we shall fight on the landing grounds, we shall fight in the fields and in the streets, we shall fight in the hills; we shall never surrender . . ."
-
-Similarly, the words "but Brutus is an honourable man" from Mark Antony's funeral speech in Shakespeare's play Julius Caesar is a quotation, since Mark Antony says these words in the play.).freeze,
+      "dc11:description": "A quotation is a repetition of what someone has said, and is presented \"within quotation marks\", for example:\n\nOn June 4th 1940, Winston Churchill made a speech on the radio that has since become famous, that included the words:\n       \" . . . we shall fight on the beaches, we shall fight on the landing grounds, we shall fight in the fields and in the streets, we shall fight in the hills; we shall never surrender . . .\"\n\nSimilarly, the words \"but Brutus is an honourable man\" from Mark Antony's funeral speech in Shakespeare's play Julius Caesar is a quotation, since Mark Antony says these words in the play.".freeze,
       label: "quotation".freeze,
-      :"rdfs:seeAlso" => %(fabio:Excerpt).freeze,
+      "rdfs:seeAlso": "fabio:Excerpt".freeze,
       subClassOf: "fabio:Expression".freeze,
       type: "owl:Class".freeze
     term :RapidCommunication,
       comment: %(A short rapidly published research article or conference paper, typically reporting significant research results that have been recently discovered, or a brief news item reporting such discoveries.).freeze,
       label: "rapid communication".freeze,
-      :"rdfs:seeAlso" => %(fabio:BriefReport).freeze,
+      "rdfs:seeAlso": "fabio:BriefReport".freeze,
       subClassOf: "fabio:Expression".freeze,
       type: "owl:Class".freeze
     term :ReferenceBook,
       comment: %(A book containing authoritative factual information, such as a dictionary, encyclopaedia, handbook or field guide, which is a realisation of a certain reference work and may contain several reference entries.).freeze,
       label: "reference book".freeze,
-      subClassOf: "fabio:Book".freeze,
+      subClassOf: ["fabio:Book".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#realizationOf".freeze,
+          someValuesFrom: "fabio:ReferenceWork".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :ReferenceEntry,
       comment: %(A particular reference entry containing authoritative factual information on a certain topic, usually contained in a larger expression.).freeze,
       label: "reference entry".freeze,
-      subClassOf: "fabio:Entry".freeze,
+      subClassOf: ["fabio:Entry".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#realizationOf".freeze,
+          someValuesFrom: "fabio:ReferenceWork".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :ReferenceWork,
       comment: %(A work to which people refer for authoritative factual information, such as a dictionary, encyclopaedia, entry, handbook or field guide, or an informative web page such as an institutional, research group or project home page.).freeze,
@@ -1001,7 +1347,11 @@ Similarly, the words "but Brutus is an honourable man" from Mark Antony's funera
     term :ReportDocument,
       comment: %(The realization of a report, usually in printed form.).freeze,
       label: "report document".freeze,
-      subClassOf: "fabio:Expression".freeze,
+      subClassOf: ["fabio:Expression".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#realizationOf".freeze,
+          someValuesFrom: "fabio:Report".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :ReportingStandard,
       comment: %(A set of recommendations for the minimum reporting requirements to be employed when reporting a particular type of investigation or project, for example a randomized clinical trial.  A reporting standard may involve a checklist and a flow diagram, offers a standard way for authors to prepare a complete and transparent report of their findings, and aids their critical appraisal and interpretation of their data. [See also fabio:MinimalInformationStandard.]).freeze,
@@ -1014,9 +1364,18 @@ Similarly, the words "but Brutus is an honourable man" from Mark Antony's funera
       subClassOf: "fabio:Expression".freeze,
       type: "owl:Class".freeze
     term :ResearchPaper,
-      comment: %(A report of original research findings, either published in written form, or delivered orally at a meeting.).freeze,
+      comment: %(A scholarly work that reports original research contributions addressing theoretical, analytical or experimental aspects of a particular scholarly domain.
+
+E.g. see http://iswc2018.semanticweb.org/call-for-research-track-papers/.).freeze,
       label: "research paper".freeze,
-      subClassOf: "fabio:Work".freeze,
+      subClassOf: "fabio:ScholarlyWork".freeze,
+      type: "owl:Class".freeze
+    term :ResourcePaper,
+      comment: %(A scholarly work that describes resources developed to provide experimental materials or facilities, support a research hypothesis, to provide answers to a research question, or that have contributed to the generation of novel scientific work. Examples of such resources include, for experimental sciences, mouse mutant lines and large communally used X-ray or neutron sources, and, for computer sciences, datasets, ontologies, vocabularies, ontology design patterns, evaluation benchmarks or methods, services, APIs and software frameworks, workflows, crowdsourcing task designs, protocols and metrics.
+
+E.g. see http://iswc2018.semanticweb.org/call-for-resources-track-papers/).freeze,
+      label: "resource paper".freeze,
+      subClassOf: "fabio:ScholarlyWork".freeze,
       type: "owl:Class".freeze
     term :Retraction,
       comment: %(A formal statement retracting a statement or publication
@@ -1032,7 +1391,23 @@ A retraction is a public statement made about an earlier statement that withdraw
     term :ReviewArticle,
       comment: %(An article that contains a review.).freeze,
       label: "review article".freeze,
-      subClassOf: "fabio:Article".freeze,
+      subClassOf: ["fabio:Article".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#realizationOf".freeze,
+          someValuesFrom: "fabio:Review".freeze,
+          type: "owl:Restriction".freeze
+        )],
+      type: "owl:Class".freeze
+    term :ReviewPaper,
+      comment: %(A scholarly work that surveys the state of the art of topics central to a particular subject or relating to a specific domain \(e.g. the scope of a certain journal or conference\). Papers of this kind may contain a selective bibliography listing key papers related to the subject or providing advice on information sources, or they may strive to be comprehensive, covering all contributions to the development of a topic and exploring their different findings or views.
+
+E.g. see http://www.emeraldgrouppublishing.com/products/journals/author_guidelines.htm?id=JD).freeze,
+      label: "review paper".freeze,
+      subClassOf: ["fabio:Review".freeze, "fabio:ScholarlyWork".freeze],
+      type: "owl:Class".freeze
+    term :ScholarlyWork,
+      comment: %(A work that reports scholarly activity on a particular topic, either published in written form, or delivered orally at a meeting.).freeze,
+      label: "scholarly work".freeze,
+      subClassOf: "fabio:Work".freeze,
       type: "owl:Class".freeze
     term :Screenplay,
       comment: %(A written work made especially for a film or television program. Screenplays can be original works or adaptations from existing pieces of writing, for example novels. ).freeze,
@@ -1072,7 +1447,11 @@ A retraction is a public statement made about an earlier statement that withdraw
     term :SpecificationDocument,
       comment: %(The realization of a specification \(a standard, a workflow, etc.\).).freeze,
       label: "specification document".freeze,
-      subClassOf: "fabio:Expression".freeze,
+      subClassOf: ["fabio:Expression".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#realizationOf".freeze,
+          someValuesFrom: "fabio:Specification".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :Spreadsheet,
       comment: %(An electronic form of data storage that displays a grid of rows and columns, in which each editable cell can contain alphanumeric text, a numeric value, or a formula that defines how the content of that cell is to be calculated from the content of another cell or cells.).freeze,
@@ -1096,18 +1475,30 @@ A retraction is a public statement made about an earlier statement that withdraw
     term :StructuredSummary,
       comment: %(A structured summary containing essential metadata describing a research investigation and/or the research outputs that have resulted from it, for example datasets and journal articles, structured according to some minimal information standard.  Such a structured summary can be embodied in both human-readable and machine-readable manifestations, e.g. HTML and RDF.  Such a structured summary differs from the Abstract of a journal article, in that the latter is written as a piece of continuous prose, but typically omits vital factual information about the investigation, such as when and where it was conducted, by whom, and on now many specimens or subjects.).freeze,
       label: "structured summary".freeze,
-      :"rdfs:seeAlso" => %(fabio:Abstract).freeze,
-      subClassOf: "fabio:SpecificationDocument".freeze,
+      "rdfs:seeAlso": "fabio:Abstract".freeze,
+      subClassOf: ["fabio:SpecificationDocument".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#realizationOf".freeze,
+          someValuesFrom: "fabio:MinimalInformationStandard".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :SubjectDiscipline,
       comment: %(A concept that identifies a field of knowledge or human activity defined in a controlled vocabulary, such as Computer Science, Biology, Economics, Cookery or Swimming.).freeze,
       label: "subject discipline".freeze,
-      subClassOf: "skos:Concept".freeze,
+      subClassOf: ["skos:Concept".freeze, term(
+          onProperty: "skos:inScheme".freeze,
+          someValuesFrom: "fabio:DisciplineDictionary".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :SubjectTerm,
       comment: %(A concept that defines a term within the controlled vocabulary of a particular classification system, such as the ACM Computing Classification System or MeSH, the Medical Subject Headings, used as an annotation to describe the subject, meaning or content of an entity.).freeze,
       label: "subject term".freeze,
-      subClassOf: "skos:Concept".freeze,
+      subClassOf: ["skos:Concept".freeze, term(
+          onProperty: "skos:inScheme".freeze,
+          someValuesFrom: "fabio:TermDictionary".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :Supplement,
       comment: %(A supplement to a publication such as a book, journal, magazine or newspaper, additional to the main publication.  For example, a colour supplement to a sunday newspaper, or a special supplementary issue of a journal or a journal volume containing invited articles on a special topic, or abstracts or papers presented at a scientific conference.).freeze,
@@ -1151,14 +1542,22 @@ A retraction is a public statement made about an earlier statement that withdraw
       type: "owl:Class".freeze
     term :TermDictionary,
       comment: %(A controlled vocabulary, usually referring to terms within a particular classification system, such as the ACM Computing Classification System or MeSH, the Medical Subject Headings, or a controlled vocabulary of disciplines.).freeze,
-      :"dc11:description" => %(A term dictionary is a collection of subject terms.).freeze,
+      "dc11:description": "A term dictionary is a collection of subject terms.".freeze,
       label: "term dictionary".freeze,
-      subClassOf: "skos:ConceptScheme".freeze,
+      subClassOf: ["skos:ConceptScheme".freeze, term(
+          allValuesFrom: "fabio:SubjectTerm".freeze,
+          onProperty: "fabio:isSchemeOf".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :Textbook,
       comment: %(A book containing instructional material relating to a particular topic of academic study, designed to be read by students.).freeze,
       label: "textbook".freeze,
-      subClassOf: "fabio:Book".freeze,
+      subClassOf: ["fabio:Book".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#realizationOf".freeze,
+          someValuesFrom: "fabio:InstructionalWork".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :Thesaurus,
       comment: %(A type of controlled vocabulary used in information retrieval applications for indexing or tagging purposes, in which relationships between terms are made explicit. These are normally hierarchical relationships \(is-a, subsumption; e.g. a cow is a mammal\), equivalency relationships relating non-preferred terms to preferred terms \(e.g. pitch and frequency\), or associative relationships, in which the relationship that exists is neither one of hierarchy or equivalence, but rather one of similarity \(e.g. sports and leisure pursuits\).).freeze,
@@ -1203,7 +1602,11 @@ A retraction is a public statement made about an earlier statement that withdraw
     term :VocabularyDocument,
       comment: %(A document containing a vocabulary).freeze,
       label: "vocabulary document".freeze,
-      subClassOf: "fabio:Expression".freeze,
+      subClassOf: ["fabio:Expression".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#realizationOf".freeze,
+          someValuesFrom: "fabio:Vocabulary".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :VocabularyMapping,
       comment: %(A mapping of correspondences between two vocabularies.  For controlled vocabularies, such mappings may be expressed using SKOS \(http://www.w3.org/2004/02/skos/\).).freeze,
@@ -1213,7 +1616,11 @@ A retraction is a public statement made about an earlier statement that withdraw
     term :VocabularyMappingDocument,
       comment: %(A document containing a vocabulary mapping).freeze,
       label: "vocabulary mapping document".freeze,
-      subClassOf: "fabio:SpecificationDocument".freeze,
+      subClassOf: ["fabio:SpecificationDocument".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#realizationOf".freeze,
+          someValuesFrom: "fabio:VocabularyMapping".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :WebArchive,
       comment: %(A snapshots of \(part of\) the World Wide Web.).freeze,
@@ -1223,7 +1630,11 @@ A retraction is a public statement made about an earlier statement that withdraw
     term :WebContent,
       comment: %(Information prepared specifically and primarily for manifestation in a web page, comprising text, images, datasets and/or other works.).freeze,
       label: "web content".freeze,
-      subClassOf: "fabio:Expression".freeze,
+      subClassOf: ["fabio:Expression".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#embodiment".freeze,
+          someValuesFrom: "fabio:WebManifestation".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :WebManifestation,
       comment: %(A digital manifestation on the Web, such as a wiki, a web site, a web page or a blog.).freeze,
@@ -1263,14 +1674,33 @@ A retraction is a public statement made about an earlier statement that withdraw
       type: "owl:Class".freeze
     term :Work,
       comment: %(A subclass of FRBR work, restricted to works that are published or potentially publishable, and that contain or are referred to by bibliographic references, or entities used to define bibliographic references. FaBiO works, and their expressions and manifestations, are primarily textual publications such as books, magazines, newspapers and journals, and items of their content.  However, they also include datasets, computer algorithms, experimental protocols, formal specifications and vocabularies, legal records, governmental papers, technical and commercial reports and similar publications, and also bibliographies, reference lists, library catalogues and similar collections. For this reason, fabio:Work is not an equivalent class to frbr:ScholarlyWork.  An example of a fabio:Work is your latest research paper.).freeze,
-      :"dc11:description" => %(A fabio:Work can only have part or be part of another fabio:Work. Moreover, it can be realized only by fabio:Expression\(s\).).freeze,
+      "dc11:description": "A fabio:Work can only have part or be part of another fabio:Work. Moreover, it can be realized only by fabio:Expression(s).".freeze,
       label: "work".freeze,
-      subClassOf: "http://purl.org/vocab/frbr/core#Work".freeze,
+      subClassOf: ["http://purl.org/vocab/frbr/core#Work".freeze, term(
+          allValuesFrom: "fabio:Expression".freeze,
+          onProperty: "http://purl.org/vocab/frbr/core#realization".freeze,
+          type: "owl:Restriction".freeze
+        ), term(
+          intersectionOf: list(term(
+            allValuesFrom: "http://purl.org/vocab/frbr/core#Work".freeze,
+            onProperty: "http://purl.org/vocab/frbr/core#part".freeze,
+            type: "owl:Restriction".freeze
+          ), term(
+            allValuesFrom: "http://purl.org/vocab/frbr/core#Work".freeze,
+            onProperty: "http://purl.org/vocab/frbr/core#partOf".freeze,
+            type: "owl:Restriction".freeze
+          )),
+          type: "owl:Class".freeze
+        )],
       type: "owl:Class".freeze
     term :WorkCollection,
-      :"dc11:creator" => %(A collection of works.).freeze,
+      "dc11:creator": "A collection of works.".freeze,
       label: "work collection".freeze,
-      subClassOf: "fabio:Work".freeze,
+      subClassOf: ["fabio:Work".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#part".freeze,
+          someValuesFrom: "fabio:Work".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
     term :WorkPackage,
       comment: %(A component of the case for support of a grant application, describing a particular aspect of the work to be undertaken.).freeze,
@@ -1295,7 +1725,11 @@ A retraction is a public statement made about an earlier statement that withdraw
     term :WorkshopProceedings,
       comment: %(A document containing the programme and collected workshop papers, or their abstracts, presented at a workshop or similar event.).freeze,
       label: "workshop proceedings".freeze,
-      subClassOf: "fabio:AcademicProceedings".freeze,
+      subClassOf: ["fabio:AcademicProceedings".freeze, term(
+          onProperty: "http://purl.org/vocab/frbr/core#part".freeze,
+          someValuesFrom: "fabio:WorkshopPaper".freeze,
+          type: "owl:Restriction".freeze
+        )],
       type: "owl:Class".freeze
 
     # Property definitions
@@ -1314,14 +1748,14 @@ A retraction is a public statement made about an earlier statement that withdraw
       type: "owl:DatatypeProperty".freeze
     property :hasArXivId,
       comment: %(An identifier used by the preprint repository ArXiv.).freeze,
+      isDefinedBy: "http://arxiv.org/".freeze,
       label: "has ArXiv identifier".freeze,
-      :"rdfs:isDefinedBy" => %(http://arxiv.org/).freeze,
       subPropertyOf: "dc:identifier".freeze,
       type: "owl:DatatypeProperty".freeze
     property :hasCODEN,
       comment: %(A CODEN is a six character, alphanumeric bibliographic identification code, that provides concise, unique and unambiguous identification of the titles of serials and non-serial publications.).freeze,
       label: "has CODEN".freeze,
-      :"rdfs:seeAlso" => %(http://en.wikipedia.org/wiki/CODEN).freeze,
+      "rdfs:seeAlso": "http://en.wikipedia.org/wiki/CODEN".freeze,
       subPropertyOf: "dc:identifier".freeze,
       type: "owl:DatatypeProperty".freeze
     property :hasCharacterCount,
@@ -1377,9 +1811,15 @@ A retraction is a public statement made about an earlier statement that withdraw
       type: "owl:DatatypeProperty".freeze
     property :hasDiscipline,
       comment: %(The discipline to which a subject vocabulary belongs.).freeze,
+      domain: term(
+          type: "owl:Class".freeze,
+          unionOf: list("fabio:TermDictionary".freeze, term(
+            type: "owl:Class".freeze
+          ))
+        ),
+      inverseOf: "fabio:isDisciplineOf".freeze,
       label: "has discipline".freeze,
-      :"owl:inverseOf" => %(fabio:isDisciplineOf).freeze,
-      :"owl:propertyDisjointWith" => %(fabio:isSchemeOf).freeze,
+      "owl:propertyDisjointWith": "fabio:isSchemeOf".freeze,
       range: "fabio:SubjectDiscipline".freeze,
       subPropertyOf: "owl:topObjectProperty".freeze,
       type: "owl:ObjectProperty".freeze
@@ -1409,22 +1849,31 @@ A retraction is a public statement made about an earlier statement that withdraw
     property :hasHandle,
       comment: %(A persistent identifier of the Handel system for digital objects and other resources on the Internet.).freeze,
       domain: "http://purl.org/vocab/frbr/core#Endeavour".freeze,
+      isDefinedBy: "http://www.handle.net/".freeze,
       label: "has handle".freeze,
       range: "xsd:string".freeze,
-      :"rdfs:isDefinedBy" => %(http://www.handle.net/).freeze,
       subPropertyOf: "dc:identifier".freeze,
       type: "owl:DatatypeProperty".freeze
     property :hasIssnL,
       comment: %(A linking International Standard Serial Number.).freeze,
+      isDefinedBy: "http://www.issn.org/2-22637-What-is-an-ISSN-L.php".freeze,
       label: "has ISSN-L".freeze,
-      :"rdfs:isDefinedBy" => %(http://www.issn.org/2-22637-What-is-an-ISSN-L.php).freeze,
       subPropertyOf: "dc:identifier".freeze,
       type: "owl:DatatypeProperty".freeze
     property :hasManifestation,
       comment: %(A property linking a particular work to its manifestations.  This property is additional to the relationships between FRBR endeavours present in the classical FRBR data model.).freeze,
       domain: "http://purl.org/vocab/frbr/core#Work".freeze,
+      inverseOf: "fabio:isManifestationOf".freeze,
       label: "has manifestation".freeze,
-      :"owl:inverseOf" => %(fabio:isManifestationOf).freeze,
+      "owl:propertyChainAxiom": list(term(
+          comment: %(As defined by FRBR \(http://www.ifla.org/VII/s13/frbr/frbr1.htm; http://purl.org/vocab/frbr/core#realization\), a property representing an expression that is an intellectual or artistic realization of a work.).freeze,
+          label: "has realization".freeze,
+          type: "owl:ObjectProperty".freeze
+        ), term(
+          comment: %(As defined by FRBR \(http://www.ifla.org/VII/s13/frbr/frbr1.htm; http://purl.org/vocab/frbr/core#embodiment\), a property representing a manifestation that embodies an expression.).freeze,
+          label: "has embodiment".freeze,
+          type: "owl:ObjectProperty".freeze
+        )),
       range: "http://purl.org/vocab/frbr/core#Manifestation".freeze,
       subPropertyOf: "http://purl.org/vocab/frbr/core#relatedEndeavour".freeze,
       type: "owl:ObjectProperty".freeze
@@ -1436,14 +1885,21 @@ A retraction is a public statement made about an earlier statement that withdraw
     property :hasNationalLibraryOfMedicineJournalId,
       comment: %(An internal identifier for journals available from the National Library of Medicine repository.).freeze,
       domain: "http://purl.org/vocab/frbr/core#Endeavour".freeze,
+      isDefinedBy: "http://www.nlm.nih.gov/".freeze,
       label: "has National Library of Medicine journal identifier".freeze,
-      :"rdfs:isDefinedBy" => %(http://www.nlm.nih.gov/).freeze,
+      range: term(
+          "owl:onDatatype": "xsd:string".freeze,
+          "owl:withRestrictions": list(term(
+            "xsd:pattern": "[0-9]+".freeze
+          )),
+          type: "rdfs:Datatype".freeze
+        ),
       subPropertyOf: "dc:identifier".freeze,
       type: ["owl:DatatypeProperty".freeze, "owl:FunctionalProperty".freeze]
     property :hasPII,
       comment: %(Has Publisher Item Identifier).freeze,
       label: "has PII".freeze,
-      :"rdfs:seeAlso" => %(http://en.wikipedia.org/wiki/Publisher_Item_Identifier).freeze,
+      "rdfs:seeAlso": "http://en.wikipedia.org/wiki/Publisher_Item_Identifier".freeze,
       subPropertyOf: "dc:identifier".freeze,
       type: "owl:DatatypeProperty".freeze
     property :hasPageCount,
@@ -1458,11 +1914,30 @@ A retraction is a public statement made about an earlier statement that withdraw
       label: "has patent number".freeze,
       subPropertyOf: "dc:identifier".freeze,
       type: "owl:DatatypeProperty".freeze
+    property :hasPlaceOfPublication,
+      comment: %(The place \(usually, the city\) where the publisher of a particular bibliographic resource is located.).freeze,
+      domain: "http://purl.org/vocab/frbr/core#Endeavour".freeze,
+      label: "has place of publication".freeze,
+      range: "http://purl.org/vocab/frbr/core#Place".freeze,
+      type: "owl:ObjectProperty".freeze
     property :hasPortrayal,
       comment: %(A property linking a particular work to its items.  This property is additional to the relationships between FRBR endeavours present in the classical FRBR data model.).freeze,
       domain: "http://purl.org/vocab/frbr/core#Work".freeze,
+      inverseOf: "fabio:isPortrayalOf".freeze,
       label: "has portrayal".freeze,
-      :"owl:inverseOf" => %(fabio:isPortrayalOf).freeze,
+      "owl:propertyChainAxiom": list(term(
+          comment: %(As defined by FRBR \(http://www.ifla.org/VII/s13/frbr/frbr1.htm; http://purl.org/vocab/frbr/core#realization\), a property representing an expression that is an intellectual or artistic realization of a work.).freeze,
+          label: "has realization".freeze,
+          type: "owl:ObjectProperty".freeze
+        ), term(
+          comment: %(As defined by FRBR \(http://www.ifla.org/VII/s13/frbr/frbr1.htm; http://purl.org/vocab/frbr/core#embodiment\), a property representing a manifestation that embodies an expression.).freeze,
+          label: "has embodiment".freeze,
+          type: "owl:ObjectProperty".freeze
+        ), term(
+          comment: %(As defined by FRBR \(http://www.ifla.org/VII/s13/frbr/frbr1.htm; http://purl.org/vocab/frbr/core#exemplar\), a property representing an item that exemplifies a manifestation.).freeze,
+          label: "has exemplar".freeze,
+          type: "owl:ObjectProperty".freeze
+        )),
       range: "http://purl.org/vocab/frbr/core#Item".freeze,
       subPropertyOf: "http://purl.org/vocab/frbr/core#relatedEndeavour".freeze,
       type: "owl:ObjectProperty".freeze
@@ -1474,17 +1949,17 @@ A retraction is a public statement made about an earlier statement that withdraw
     property :hasPubMedCentralId,
       comment: %(An identifier for bibliographic entities hosted by the PubMed Central repository.).freeze,
       domain: "http://purl.org/vocab/frbr/core#Endeavour".freeze,
+      isDefinedBy: "http://www.ncbi.nlm.nih.gov/pmc/".freeze,
       label: "has PubMed Central identifier".freeze,
       range: "xsd:string".freeze,
-      :"rdfs:isDefinedBy" => %(http://www.ncbi.nlm.nih.gov/pmc/).freeze,
       subPropertyOf: "dc:identifier".freeze,
       type: ["owl:DatatypeProperty".freeze, "owl:FunctionalProperty".freeze]
     property :hasPubMedId,
       comment: %(An identifier for bibliographic records held by the PubMed repository.).freeze,
       domain: "http://purl.org/vocab/frbr/core#Endeavour".freeze,
+      isDefinedBy: "http://www.ncbi.nlm.nih.gov/pubmed/".freeze,
       label: "has PubMed identifier".freeze,
       range: "xsd:string".freeze,
-      :"rdfs:isDefinedBy" => %(http://www.ncbi.nlm.nih.gov/pubmed/).freeze,
       subPropertyOf: "dc:identifier".freeze,
       type: ["owl:DatatypeProperty".freeze, "owl:FunctionalProperty".freeze]
     property :hasPublicationYear,
@@ -1496,8 +1971,17 @@ A retraction is a public statement made about an earlier statement that withdraw
     property :hasRepresentation,
       comment: %(A property linking a particular expression to its items.  This property is additional to the relationships between FRBR endeavours present in the classical FRBR data model.).freeze,
       domain: "http://purl.org/vocab/frbr/core#Expression".freeze,
+      inverseOf: "fabio:isRepresentationOf".freeze,
       label: "has representation".freeze,
-      :"owl:inverseOf" => %(fabio:isRepresentationOf).freeze,
+      "owl:propertyChainAxiom": list(term(
+          comment: %(As defined by FRBR \(http://www.ifla.org/VII/s13/frbr/frbr1.htm; http://purl.org/vocab/frbr/core#embodiment\), a property representing a manifestation that embodies an expression.).freeze,
+          label: "has embodiment".freeze,
+          type: "owl:ObjectProperty".freeze
+        ), term(
+          comment: %(As defined by FRBR \(http://www.ifla.org/VII/s13/frbr/frbr1.htm; http://purl.org/vocab/frbr/core#exemplar\), a property representing an item that exemplifies a manifestation.).freeze,
+          label: "has exemplar".freeze,
+          type: "owl:ObjectProperty".freeze
+        )),
       range: "http://purl.org/vocab/frbr/core#Item".freeze,
       subPropertyOf: "http://purl.org/vocab/frbr/core#relatedEndeavour".freeze,
       type: "owl:ObjectProperty".freeze
@@ -1515,9 +1999,9 @@ A retraction is a public statement made about an earlier statement that withdraw
     property :hasSICI,
       comment: %(The Serial Item and Contribution Identifier is a code used to uniquely identify specific volumes, articles or other identifiable parts of a periodical. It is intended primarily for use by those members of the bibliographic community involved in the use or management of serial titles and their contributions.).freeze,
       domain: "http://purl.org/vocab/frbr/core#Endeavour".freeze,
+      isDefinedBy: "http://www.niso.org/apps/group_public/project/details.php?project_id=75".freeze,
       label: ["has SICI".freeze, "has Serial Item and Contribution Identifier".freeze],
       range: "xsd:string".freeze,
-      :"rdfs:isDefinedBy" => %(http://www.niso.org/apps/group_public/project/details.php?project_id=75).freeze,
       subPropertyOf: "dc:identifier".freeze,
       type: ["owl:DatatypeProperty".freeze, "owl:FunctionalProperty".freeze]
     property :hasSeason,
@@ -1568,7 +2052,7 @@ A retraction is a public statement made about an earlier statement that withdraw
       subPropertyOf: "dc:title".freeze,
       type: "owl:DatatypeProperty".freeze
     property :hasURL,
-      comment: %(An identifier, in form of a URL, for a particular resource.).freeze,
+      comment: %(An identifier, in form of an HTTP Universal Resource Locator \(URL\), for a particular resource on the World Wide Web.).freeze,
       domain: "http://purl.org/vocab/frbr/core#Endeavour".freeze,
       label: "has URL".freeze,
       range: "xsd:anyURI".freeze,
@@ -1585,13 +2069,28 @@ A retraction is a public statement made about an earlier statement that withdraw
       comment: %(This property relates a subject vocabulary to the discipline to which it belongs.).freeze,
       domain: "fabio:SubjectDiscipline".freeze,
       label: "is discipline of".freeze,
-      :"owl:propertyDisjointWith" => %(skos:inScheme).freeze,
+      "owl:propertyDisjointWith": "skos:inScheme".freeze,
+      range: term(
+          type: "owl:Class".freeze,
+          unionOf: list("fabio:TermDictionary".freeze, term(
+            type: "owl:Class".freeze
+          ))
+        ),
       subPropertyOf: "owl:topObjectProperty".freeze,
       type: "owl:ObjectProperty".freeze
     property :isManifestationOf,
       comment: %(A property linking a particular manifestation to the work it is manifesting.  This property is additional to the relationships between FRBR endeavours present in the classical FRBR data model.).freeze,
       domain: "http://purl.org/vocab/frbr/core#Manifestation".freeze,
       label: "is manifestation of".freeze,
+      "owl:propertyChainAxiom": list(term(
+          comment: %(As defined by FRBR \(http://www.ifla.org/VII/s13/frbr/frbr1.htm; http://purl.org/vocab/frbr/core#embodimentOf\), a property representing an expression that is embodied by a manifestation.).freeze,
+          label: "is embodiment of".freeze,
+          type: "owl:ObjectProperty".freeze
+        ), term(
+          comment: %(As defined by FRBR \(http://www.ifla.org/VII/s13/frbr/frbr1.htm; http://purl.org/vocab/frbr/core#realizationOf\), a property representing the work that has been realized by an expression.).freeze,
+          label: "is realization of".freeze,
+          type: "owl:ObjectProperty".freeze
+        )),
       range: "http://purl.org/vocab/frbr/core#Work".freeze,
       subPropertyOf: "http://purl.org/vocab/frbr/core#relatedEndeavour".freeze,
       type: "owl:ObjectProperty".freeze
@@ -1599,6 +2098,19 @@ A retraction is a public statement made about an earlier statement that withdraw
       comment: %(A property linking a particular item to the work it portrays.  This property is additional to the relationships between FRBR endeavours present in the classical FRBR data model.).freeze,
       domain: "http://purl.org/vocab/frbr/core#Item".freeze,
       label: "is portrayal of".freeze,
+      "owl:propertyChainAxiom": list(term(
+          comment: %(As defined by FRBR \(http://www.ifla.org/VII/s13/frbr/frbr1.htm; http://purl.org/vocab/frbr/core#embodimentOf\), a property representing a manifestation that is exemplified by an item.).freeze,
+          label: "is exemplar of".freeze,
+          type: "owl:ObjectProperty".freeze
+        ), term(
+          comment: %(As defined by FRBR \(http://www.ifla.org/VII/s13/frbr/frbr1.htm; http://purl.org/vocab/frbr/core#embodimentOf\), a property representing an expression that is embodied by a manifestation.).freeze,
+          label: "is embodiment of".freeze,
+          type: "owl:ObjectProperty".freeze
+        ), term(
+          comment: %(As defined by FRBR \(http://www.ifla.org/VII/s13/frbr/frbr1.htm; http://purl.org/vocab/frbr/core#realizationOf\), a property representing the work that has been realized by an expression.).freeze,
+          label: "is realization of".freeze,
+          type: "owl:ObjectProperty".freeze
+        )),
       range: "http://purl.org/vocab/frbr/core#Work".freeze,
       subPropertyOf: "http://purl.org/vocab/frbr/core#relatedEndeavour".freeze,
       type: "owl:ObjectProperty".freeze
@@ -1606,22 +2118,31 @@ A retraction is a public statement made about an earlier statement that withdraw
       comment: %(A property linking a particular item to the expression it represents.  This property is additional to the relationships between FRBR endeavours present in the classical FRBR data model.).freeze,
       domain: "http://purl.org/vocab/frbr/core#Item".freeze,
       label: "is representation of".freeze,
+      "owl:propertyChainAxiom": list(term(
+          comment: %(As defined by FRBR \(http://www.ifla.org/VII/s13/frbr/frbr1.htm; http://purl.org/vocab/frbr/core#embodimentOf\), a property representing a manifestation that is exemplified by an item.).freeze,
+          label: "is exemplar of".freeze,
+          type: "owl:ObjectProperty".freeze
+        ), term(
+          comment: %(As defined by FRBR \(http://www.ifla.org/VII/s13/frbr/frbr1.htm; http://purl.org/vocab/frbr/core#embodimentOf\), a property representing an expression that is embodied by a manifestation.).freeze,
+          label: "is embodiment of".freeze,
+          type: "owl:ObjectProperty".freeze
+        )),
       range: "http://purl.org/vocab/frbr/core#Expression".freeze,
       subPropertyOf: "http://purl.org/vocab/frbr/core#relatedEndeavour".freeze,
       type: "owl:ObjectProperty".freeze
     property :isSchemeOf,
       comment: %(This property expresses the fact that a scheme contains a concept.).freeze,
       domain: "skos:ConceptScheme".freeze,
+      inverseOf: "skos:inScheme".freeze,
       label: "is scheme of".freeze,
-      :"owl:inverseOf" => %(skos:inScheme).freeze,
       range: "skos:Concept".freeze,
       subPropertyOf: "owl:topObjectProperty".freeze,
       type: "owl:ObjectProperty".freeze
     property :isStoredOn,
       comment: %(This property relates a fabio:Item to the medium upon which it is stored.).freeze,
       domain: "fabio:Item".freeze,
+      inverseOf: "fabio:stores".freeze,
       label: "is stored on".freeze,
-      :"owl:inverseOf" => %(fabio:stores).freeze,
       range: "fabio:StorageMedium".freeze,
       subPropertyOf: "owl:topObjectProperty".freeze,
       type: "owl:ObjectProperty".freeze
@@ -1640,8 +2161,7 @@ A retraction is a public statement made about an earlier statement that withdraw
 
     # Extra definitions
     term :SupplementaryInformationFile,
-      comment: %(A file accompanying a published journal article, containing additional information of relevance to the article, typically available from the publisher's web site via a hyperlink from the journal article itself.).freeze,
-      label: "SupplementaryInformationFile".freeze
+      comment: %(A file accompanying a published journal article, containing additional information of relevance to the article, typically available from the publisher's web site via a hyperlink from the journal article itself.).freeze
     term :"analog-magnetic-tape",
       comment: %(An analog medium for magnetic recording of audio and video information, made of a thin magnetizable coating on a long, narrow plastic tape, typically wound on a spool. ).freeze,
       label: "analog magnetic tape".freeze,

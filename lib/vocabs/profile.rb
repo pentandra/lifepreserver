@@ -12,27 +12,27 @@ module RDF::Vocab
     # Property definitions
     property :first_name,
       comment: %(A name normally given to an individual by a parent or self-chosen.).freeze,
+      isDefinedBy: "profile:".freeze,
       label: "first name".freeze,
       range: "ogc:string".freeze,
-      :"rdfs:isDefinedBy" => %(profile:).freeze,
       type: "rdf:Property".freeze
     property :gender,
       comment: %(Their gender.).freeze,
+      isDefinedBy: "profile:".freeze,
       label: "gender".freeze,
       range: "ogc:gender_str".freeze,
-      :"rdfs:isDefinedBy" => %(profile:).freeze,
       type: "rdf:Property".freeze
     property :last_name,
       comment: %(A name inherited from a family or marriage and by which the individual is commonly known.).freeze,
+      isDefinedBy: "profile:".freeze,
       label: "last name".freeze,
       range: "ogc:string".freeze,
-      :"rdfs:isDefinedBy" => %(profile:).freeze,
       type: "rdf:Property".freeze
     property :username,
       comment: %(A short unique string to identify them.).freeze,
+      isDefinedBy: "profile:".freeze,
       label: "username".freeze,
       range: "ogc:string".freeze,
-      :"rdfs:isDefinedBy" => %(profile:).freeze,
       type: "rdf:Property".freeze
   end
 end

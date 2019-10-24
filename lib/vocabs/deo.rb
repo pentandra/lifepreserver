@@ -10,23 +10,33 @@ module RDF::Vocab
   class DEO < RDF::StrictVocabulary("http://purl.org/spar/deo/")
 
     # Ontology definition
-    ontology :"http://purl.org/spar/deo",
-      comment: %(The Discourse Elements Ontology is an ontology for describing the major rhetorical elements of a document such as a journal article.  It is a subsidiary ontology that is imported into the Document Components Ontology, itself part of SPAR, the Semantic Publishing and Referencing Ontologies.  Other SPAR ontologies are described at http://purl.org/spar/.
-).freeze,
-      :"dc11:creator" => [%(David Shotton).freeze, %(Silvio Peroni).freeze],
-      :"dc11:date" => %(2015-07-03).freeze,
-      :"dc11:description" => %(DEO, The Discourse Elements Ontology, is an ontology written in OWL 2 DL that provides a structured vocabulary for rhetorical elements within documents \(e.g. Introduction, Discussion, Acknowledgements, Reference List, Figures, Appendix\), enabling these to be described in RDF.  It uses some of the rhetorical block elements from the SALT Rhetorical Ontology  and the Ontology of Rhetorical Blocks.).freeze,
-      :"dc11:rights" => %(This work is distributed under a Creative Commons Attribution License \(http://creativecommons.org/licenses/by/3.0/\).).freeze,
-      :"dc11:title" => %(The Discourse Elements Ontology
-     \(DEO\)).freeze,
-      :"owl:versionInfo" => %(1.1).freeze,
+    ontology :"http://purl.org/spar/deo/",
+      comment: %(The Discourse Elements Ontology \(DEO\) is an ontology that provides a structured vocabulary for rhetorical elements within documents \(e.g., Introduction, Discussion, Acknowledgements, Reference List, Figures, Appendix\).
+
+**URL:** http://purl.org/spar/deo
+
+**Creators**: [David Shotton]\(http://orcid.org/0000-0001-5506-523X\), [Silvio Peroni]\(http://orcid.org/0000-0003-0530-4305\)
+
+**License:** [Creative Commons Attribution 4.0 International]\(https://creativecommons.org/licenses/by/4.0/legalcode\)
+
+**Website:** http://www.sparontologies.net/ontologies/deo
+
+**Cite as:** Constantin, A., Peroni, S., Pettifer, S., Shotton, D., Vitali, F. \(2016\). The Document Components Ontology \(DoCO\). In Semantic Web, 7 \(2\): 167-181. DOI: http://dx.doi.org/10.3233/SW-150177).freeze,
+      "dc11:creator": ["David Shotton".freeze, "Silvio Peroni".freeze],
+      "dc11:date": "2015-07-03".freeze,
+      "dc11:description": "DEO, The Discourse Elements Ontology, is an ontology written in OWL 2 DL that provides a structured vocabulary for rhetorical elements within documents (e.g. Introduction, Discussion, Acknowledgements, Reference List, Figures, Appendix), enabling these to be described in RDF.  It uses some of the rhetorical block elements from the SALT Rhetorical Ontology  and the Ontology of Rhetorical Blocks.".freeze,
+      "dc11:rights": "This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/3.0/).".freeze,
+      "dc11:title": "The Discourse Elements Ontology\n     (DEO)".freeze,
+      "owl:priorVersion": "https://svn.code.sf.net/p/sempublishing/code/DEO/2011-05-05-deo-1_0.owl".freeze,
+      "owl:versionIRI": "http://purl.org/spar/pso/2015-07-03".freeze,
+      "owl:versionInfo": "1.1".freeze,
       type: "owl:Ontology".freeze
 
     # Class definitions
     term :Acknowledgements,
       comment: %(Usually part of the preface, or a separate section in its own right, often as part of the back matter, it acknowledges those, including funding agencies, who contributed to the undertaking of a research project described in a publication, or to the creation of the work in some way. In scientific articles, the acknowledgements are usually placed as a separated section immediately following the Discussion or Conclusions.).freeze,
+      equivalentClass: "http://purl.org/orb/1.0/Acknowledgements".freeze,
       label: "acknowledgements".freeze,
-      :"owl:equivalentClass" => %(http://purl.org/orb/1.0/Acknowledgements).freeze,
       subClassOf: "deo:DiscourseElement".freeze,
       type: "owl:Class".freeze
     term :AuthorContribution,
@@ -36,8 +46,8 @@ module RDF::Vocab
       type: "owl:Class".freeze
     term :Background,
       comment: %(Presentation of information that is essential for understanding the situation or problem that is the subject of the publication. In a journal article, the background is usually part of the Introduction, but may be present as separated section.).freeze,
+      equivalentClass: "http://salt.semanticauthoring.org/ontologies/sro#Background".freeze,
       label: "background".freeze,
-      :"owl:equivalentClass" => %(http://salt.semanticauthoring.org/ontologies/sro#Background).freeze,
       subClassOf: "deo:DiscourseElement".freeze,
       type: "owl:Class".freeze
     term :BibliographicReference,
@@ -57,14 +67,14 @@ module RDF::Vocab
       type: "owl:Class".freeze
     term :Conclusion,
       comment: %(A reflection on the preceding text, summarizing the evidence, arguments or premises presented in the document and their logical outcomes. Conclusions are a fundamental feature in academic research publications, and may be included in the Discussion section.).freeze,
+      equivalentClass: ["http://purl.org/orb/1.0/Conclusion".freeze, "http://salt.semanticauthoring.org/ontologies/sro#Conclusion".freeze],
       label: "conclusion".freeze,
-      :"owl:equivalentClass" => [%(http://purl.org/orb/1.0/Conclusion).freeze, %(http://salt.semanticauthoring.org/ontologies/sro#Conclusion).freeze],
       subClassOf: "deo:DiscourseElement".freeze,
       type: "owl:Class".freeze
     term :Contribution,
       comment: %(A description of the part that this publication plays in the overall field.).freeze,
+      equivalentClass: "http://salt.semanticauthoring.org/ontologies/sro#Contribution".freeze,
       label: "contribution".freeze,
-      :"owl:equivalentClass" => %(http://salt.semanticauthoring.org/ontologies/sro#Contribution).freeze,
       subClassOf: "deo:DiscourseElement".freeze,
       type: "owl:Class".freeze
     term :Data,
@@ -89,8 +99,8 @@ module RDF::Vocab
       type: "owl:Class".freeze
     term :Discussion,
       comment: %(An interpretation and discussion of the results obtained and an analysis of their significance, in support of conclusions. These conclusions may be part of this discussion or may be included in a separate section of the document.).freeze,
+      equivalentClass: ["http://purl.org/orb/1.0/Discussion".freeze, "http://salt.semanticauthoring.org/ontologies/sro#Discussion".freeze],
       label: "discussion".freeze,
-      :"owl:equivalentClass" => [%(http://purl.org/orb/1.0/Discussion).freeze, %(http://salt.semanticauthoring.org/ontologies/sro#Discussion).freeze],
       subClassOf: "deo:DiscourseElement".freeze,
       type: "owl:Class".freeze
     term :Epilogue,
@@ -100,13 +110,21 @@ module RDF::Vocab
       type: "owl:Class".freeze
     term :Evaluation,
       comment: %(A consideration of the value, meaning and significance of the results obtained.).freeze,
+      equivalentClass: "http://salt.semanticauthoring.org/ontologies/sro#Evaluation".freeze,
       label: "evaluation".freeze,
-      :"owl:equivalentClass" => %(http://salt.semanticauthoring.org/ontologies/sro#Evaluation).freeze,
       subClassOf: "deo:DiscourseElement".freeze,
       type: "owl:Class".freeze
     term :ExternalResourceDescription,
       comment: %(Information describing an external resource and including a reference to that resource.).freeze,
       label: "external resource description".freeze,
+      subClassOf: term(
+          intersectionOf: list("deo:DiscourseElement".freeze, term(
+            onProperty: "dc:hasPart".freeze,
+            someValuesFrom: "deo:Reference".freeze,
+            type: "owl:Restriction".freeze
+          )),
+          type: "owl:Class".freeze
+        ),
       type: "owl:Class".freeze
     term :FutureWork,
       comment: %(A proposal for new investigation to be undertaken in order to continue and advance the work described in the publication.).freeze,
@@ -115,8 +133,8 @@ module RDF::Vocab
       type: "owl:Class".freeze
     term :Introduction,
       comment: %(An initial description which states the purpose and goals of the following writing, and, in the case of journal articles, typically includes background information on the research topic and a review of related work in the area.).freeze,
+      equivalentClass: "http://purl.org/orb/1.0/Introduction".freeze,
       label: "introduction".freeze,
-      :"owl:equivalentClass" => %(http://purl.org/orb/1.0/Introduction).freeze,
       subClassOf: "deo:DiscourseElement".freeze,
       type: "owl:Class".freeze
     term :Legend,
@@ -131,8 +149,8 @@ module RDF::Vocab
       type: "owl:Class".freeze
     term :Methods,
       comment: %(A description in a research paper documenting the specialized methods used in the work described. This description is often combined with a description of the materials used, in a section entitled 'Methods and Materials', 'Experimental' or a related term.).freeze,
+      equivalentClass: "http://purl.org/orb/1.0/Methods".freeze,
       label: "methods".freeze,
-      :"owl:equivalentClass" => %(http://purl.org/orb/1.0/Methods).freeze,
       subClassOf: "deo:DiscourseElement".freeze,
       type: "owl:Class".freeze
     term :Model,
@@ -142,8 +160,8 @@ module RDF::Vocab
       type: "owl:Class".freeze
     term :Motivation,
       comment: %(A description of the justification for undertaking the work described in the publication.).freeze,
+      equivalentClass: "http://salt.semanticauthoring.org/ontologies/sro#Motivation".freeze,
       label: "motivation".freeze,
-      :"owl:equivalentClass" => %(http://salt.semanticauthoring.org/ontologies/sro#Motivation).freeze,
       subClassOf: "deo:DiscourseElement".freeze,
       type: "owl:Class".freeze
     term :Postscript,
@@ -152,7 +170,7 @@ module RDF::Vocab
       subClassOf: "deo:DiscourseElement".freeze,
       type: "owl:Class".freeze
     term :ProblemStatement,
-      :"dc11:description" => %(A concise description of the issues that needed to be addressed by a work described in the document.).freeze,
+      "dc11:description": "A concise description of the issues that needed to be addressed by a work described in the document.".freeze,
       label: "problem statement".freeze,
       subClassOf: "deo:DiscourseElement".freeze,
       type: "owl:Class".freeze
@@ -173,14 +191,14 @@ module RDF::Vocab
       type: "owl:Class".freeze
     term :Results,
       comment: %(The report of the specific findings of an investigation, given without discussion or conclusion being drawn.).freeze,
+      equivalentClass: "http://purl.org/orb/1.0/Results".freeze,
       label: "results".freeze,
-      :"owl:equivalentClass" => %(http://purl.org/orb/1.0/Results).freeze,
       subClassOf: "deo:DiscourseElement".freeze,
       type: "owl:Class".freeze
     term :Scenario,
       comment: %(A presentation of a use case or test, based on a real or hypothetical situation, used to help someone think through a complex problem or system.).freeze,
+      equivalentClass: "http://salt.semanticauthoring.org/ontologies/sro#Scenario".freeze,
       label: "scenario".freeze,
-      :"owl:equivalentClass" => %(http://salt.semanticauthoring.org/ontologies/sro#Scenario).freeze,
       subClassOf: "deo:DiscourseElement".freeze,
       type: "owl:Class".freeze
     term :SupplementaryInformationDescription,
