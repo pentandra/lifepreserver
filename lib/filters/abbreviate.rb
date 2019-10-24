@@ -5,10 +5,11 @@ class Abbreviate < Nanoc::Filter
   include LifePreserver::Dictionaries
 
   ABBREVIATION_REGEX ||= /([[:alnum:]]+(?:[\-;][[[:upper:]][[:digit:]]]+)*[[[:alnum:]]&&[^s]])/
+  IGNORE_CLASSES ||= Set.new(%w(address handle identifier prefix oldstyle tel titling uri)).freeze
 
   identifier :abbreviate
 
-  requires 'nokogiri'
+  requires 'nokogiri', 'set'
 
   def run(content, params = {})
     abbreviations = params[:abbreviations] || supported_abbreviations
@@ -34,12 +35,13 @@ class Abbreviate < Nanoc::Filter
   end
 
   def abbreviate_html_like(content, params, abbreviations)
+    ignore_classes = params.fetch(:ignore, IGNORE_CLASSES)
     type = params.fetch(:type)
 
     parser = parser_for(type)
     content = fix_content(content, type)
 
-    nokogiri_process(content, parser, type, abbreviations)
+    nokogiri_process(content, parser, type, abbreviations, ignore_classes)
   end
 
   def parser_for(type)
@@ -64,7 +66,7 @@ class Abbreviate < Nanoc::Filter
     end
   end
 
-  def nokogiri_process(content, klass, type, abbreviations)
+  def nokogiri_process(content, klass, type, abbreviations, ignore_classes)
     visited_abbreviations = []
 
     doc = content =~ /<html[\s>]/ ? klass.parse(content) : klass.fragment(content)
@@ -75,7 +77,7 @@ class Abbreviate < Nanoc::Filter
       next unless parent.element?
 
       abbreviated_text = node.text.dup.gsub(ABBREVIATION_REGEX) do |word|
-        if abbreviations.key?(word.to_sym) && parent.name != 'abbr'
+        if abbreviations.key?(word.to_sym) && parent.name != 'abbr' && !ignore_classes.include?(parent['class'])
           if visited_abbreviations.include?(word.to_sym)
             "<abbr>#{word}</abbr>"
           else

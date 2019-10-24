@@ -2,9 +2,11 @@
 
 class OldStyleFigures < Nanoc::Filter
 
+  IGNORE_CLASSES ||= Set.new(%w(address handle identifier prefix oldstyle tel titling uri)).freeze
+
   identifier :old_style_figures
 
-  IGNORE_CLASSES ||= Set.new(%w(address handle identifier prefix oldstyle tel titling uri)).freeze
+  requires 'nokogiri', 'set'
 
   def run(content, params = {})
     case params[:type]
