@@ -56,7 +56,7 @@ data_sources:
       instances:  [ dbo, dbr, yago ]
       technical:  [ deps, doap, vann, voaf, void ]
       pentandra:  [ pentandra, pentandra-blog, pentandra-website ]
-      extra:      [ essglobal-activities, essglobal-legalform, essglobal-qualifiers, essglobal-typeoflabour, sioct, xsd ]
+      extra:      [ cert, essglobal-activities, essglobal-legalform, essglobal-qualifiers, essglobal-typeoflabour, sioct, xsd ]
 
   - type: company
     company_metafile: 'var/company.yaml'

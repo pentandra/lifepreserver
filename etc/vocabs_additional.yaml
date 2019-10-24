@@ -15,6 +15,10 @@ c4o:
   uri: "http://purl.org/spar/c4o/"
   source: "http://www.sparontologies.net/ontologies/c4o/source.ttl"
 
+cert:
+  uri: "https://www.w3.org/ns/auth/cert#"
+  source: "http://www.w3.org/ns/auth/cert.n3"
+
 co:
   uri: "http://purl.org/co/"
   source: "var/vocabs/collections.owl"
