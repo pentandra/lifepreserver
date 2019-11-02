@@ -75,7 +75,7 @@ GEM
       nokogiri (>= 1.4.3)
     eventmachine (1.2.5)
     execjs (2.7.0)
-    ffi (1.9.22)
+    ffi (1.11.1)
     formatador (0.2.5)
     fuubar (2.3.1)
       rspec-core (~> 3.0)
