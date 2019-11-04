@@ -24,6 +24,7 @@ gem 'shortly',           git: 'https://github.com/FLEWID-AB/shortly' # for URL s
 gem 'uglifier'           # for compact JavaScript
 gem 'vcardigan'          # for vCards
 gem 'pragmatic_segmenter'
+gem 'net-ldap'
 
 group :development, optional: true do
   gem 'adsf'              # for nanoc view

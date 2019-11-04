@@ -208,6 +208,7 @@ GEM
     nenv (0.3.0)
     net-http-persistent (3.1.0)
       connection_pool (~> 2.2)
+    net-ldap (0.16.1)
     netrc (0.11.0)
     nokogiri (1.10.4)
       mini_portile2 (~> 2.4.0)
@@ -412,6 +413,7 @@ DEPENDENCIES
   minitest
   nanoc
   nanoc-cachebuster!
+  net-ldap
   nokogiri
   nokogumbo
   pandoc-ruby
