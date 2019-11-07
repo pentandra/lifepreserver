@@ -19,8 +19,9 @@ option :b, :base, 'the base of the LDAP tree for searches',
 option :u, :user,
   'the user RDN (appended to the active users and base subsequences) to bind to the LDAP server',
   default: 'uid=admin', argument: :required
-option :c, :company, 'the RDN subsequence (appended to the base) of the company entry',
-  default: 'o=pentandra,cn=organizations', argument: :required
+option :os, :organizations,
+  'the RDN subsequence (appended to the base) at which to locate organizations',
+  default: 'cn=organizations', argument: :required
 option :au, :active_users,
   'the RDN subsequence (appended to base) at which to locate active users',
   default: 'cn=users,cn=accounts', argument: :required
@@ -33,21 +34,24 @@ option :m, :member,
 option :o, :output, 'output LDIF into this file', argument: :required
 no_params
 
+require 'net/ldap'
+
 class UpdateCompanyData < ::Nanoc::CLI::CommandRunner
 
-  COMPANY_ATTRS = %w[
-    c cn description displayName l mail memberOf o ou postalAddress
-    personalTitle postalCode st street telephoneNumber
+  ORGANIZATION_FILTER = Net::LDAP::Filter.eq('objectClass', 'organization')
+  ORGANIZATION_ATTRS = %w[
+    c cn description displayName l labeledURI mail o ou postalCode st street
+    telephoneNumber
   ]
 
   EMPLOYEE_ATTRS ||= %w[
     cn description displayName eduPersonOrcid employeeNumber employeeType
-    generationQualifier givenName initials jpegPhoto mail manager mobile o ou
-    personalTitle preferredLanguage sn telephoneNumber title userCertificate
+    generationQualifier givenName initials jpegPhoto labeledURI mail manager
+    mobile o ou personalTitle preferredLanguage sn telephoneNumber title
+    userCertificate
   ]
 
   def run
-    require 'net/ldap'
 
     ldif_out = String.new(<<~LDIF_PREAMBLE)
 
@@ -79,9 +83,11 @@ class UpdateCompanyData < ::Nanoc::CLI::CommandRunner
 
     ldap.open do |ldap|
       ldap.search(
+        #base: options.fetch_values(:organizations, :base).join(','),
+        base: [options[:organizations], options[:base]].join(','),
         scope: Net::LDAP::SearchScope_SingleLevel,
-        filter: Net::LDAP::Filter.eq('dn', options[:company]),
-        attributes: COMPANY_ATTRS) do |entry|
+        filter: ORGANIZATION_FILTER,
+        attributes: ORGANIZATION_ATTRS) do |entry|
         ldif_out << entry.to_ldif
         ldif_out << "\n"
       end
