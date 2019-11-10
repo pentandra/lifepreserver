@@ -116,7 +116,7 @@ class UpdateCompanyData < ::Nanoc::CLI::CommandRunner
     $stderr.puts 'done'
 
     result = ldap.get_operation_result
-    if result.code == 0
+    if result.code == Net::LDAP::ResultCodeSuccess
       if options[:output]
         $stderr.print 'Updating company data… '
         write(options[:output], ldif_out)
