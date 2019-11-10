@@ -61,7 +61,6 @@ class UpdateCompanyData < ::Nanoc::CLI::CommandRunner
     # changes made to this file will be overwritten when this command is run.
 
     version: 1
-
     LDIF_PREAMBLE
 
     #bind_dn = options.fetch_values(:user, :active_users, :base).join(',')
@@ -88,8 +87,8 @@ class UpdateCompanyData < ::Nanoc::CLI::CommandRunner
         scope: Net::LDAP::SearchScope_SingleLevel,
         filter: ORGANIZATION_FILTER,
         attributes: ORGANIZATION_ATTRS) do |entry|
-        ldif_out << entry.to_ldif
         ldif_out << "\n"
+        ldif_out << entry.to_ldif
       end
 
       ldap.search(
@@ -98,8 +97,8 @@ class UpdateCompanyData < ::Nanoc::CLI::CommandRunner
         scope: Net::LDAP::SearchScope_SingleLevel,
         filter: employee_filter,
         attributes: EMPLOYEE_ATTRS) do |entry|
-        ldif_out << entry.to_ldif
         ldif_out << "\n"
+        ldif_out << entry.to_ldif
       end
 
       ldap.search(
@@ -109,8 +108,8 @@ class UpdateCompanyData < ::Nanoc::CLI::CommandRunner
         filter: employee_filter,
         attributes: EMPLOYEE_ATTRS) do |entry|
         # TODO: differentiate these as deleted users
-        ldif_out << entry.to_ldif
         ldif_out << "\n"
+        ldif_out << entry.to_ldif
       end
     end
 
