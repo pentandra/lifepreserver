@@ -44,11 +44,11 @@ class UpdateCompanyData < ::Nanoc::CLI::CommandRunner
     telephoneNumber
   ]
 
-  EMPLOYEE_ATTRS ||= %w[
+  EMPLOYEE_ATTRS = %w[
     cn description displayName eduPersonOrcid employeeNumber employeeType
-    generationQualifier givenName initials jpegPhoto labeledURI mail manager
-    mobile o ou personalTitle preferredLanguage sn telephoneNumber title
-    userCertificate
+    generationQualifier givenName inetUserHttpURL initials jpegPhoto labeledURI
+    mail manager mobile o ou personalTitle preferredLanguage sn telephoneNumber
+    title userCertificate
   ]
 
   def run
