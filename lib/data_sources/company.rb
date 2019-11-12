@@ -90,13 +90,14 @@ Class.new(Nanoc::DataSource) do
 
         public_key = cert.public_key
 
-        pkey_fpr_seq = OpenSSL::ASN1::Sequence([
+        pkey_seq = OpenSSL::ASN1::Sequence([
           OpenSSL::ASN1::Integer.new(public_key.n),
           OpenSSL::ASN1::Integer.new(public_key.e),
         ])
-        pkey_fpr_md5 = OpenSSL::Digest::MD5.hexdigest(pkey_fpr_seq.to_der)
-        pkey_fpr_sha1 = OpenSSL::Digest::SHA1.hexdigest(pkey_fpr_seq.to_der)
-        pkey_fpr_sha256 = OpenSSL::Digest::SHA256.hexdigest(pkey_fpr_seq.to_der)
+        pkey_seq_der = pkey_seq.to_der
+        pkey_fpr_md5 = OpenSSL::Digest::MD5.hexdigest(pkey_seq_der)
+        pkey_fpr_sha1 = OpenSSL::Digest::SHA1.hexdigest(pkey_seq_der)
+        pkey_fpr_sha256 = OpenSSL::Digest::SHA256.hexdigest(pkey_seq_der)
 
         pkey_attributes << {
           modulus: public_key.n.to_s(16),
