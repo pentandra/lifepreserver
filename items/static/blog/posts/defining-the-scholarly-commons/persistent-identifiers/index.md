@@ -291,7 +291,7 @@ expressed explicitly, and is not a implicit social contract. Much care and
 effort has and will be put into thinking about governance and responsibility in
 [managing the ENS root][ENS root].
 
-<a class="address" href="https://etherscan.io/address/0x314159265dd8dbb310642f98f50c066173c1259b">0x314159265dd8dbb310642f98f50c066173c1259b</a>
+<a class="computer-address" href="https://etherscan.io/address/0x314159265dd8dbb310642f98f50c066173c1259b">0x314159265dd8dbb310642f98f50c066173c1259b</a>
 
 Instead of having individual ownership of each piece of the web, blockchain
 provides a common base layer that anyone can own. Responsibility and
