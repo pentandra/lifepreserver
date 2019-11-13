@@ -9,7 +9,7 @@ module LifePreserver
     include LifePreserver::Text
 
     def shorten(url)
-      hash = md5(url)
+      hash = url.md5
       store.transaction { store[hash] || generate_short_url(hash, url) }
     end
 

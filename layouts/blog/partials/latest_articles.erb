@@ -8,7 +8,7 @@
         <meta property="schema:position" content="<%= "#{index + 1}" %>" />
         <article class="excerpt" property="schema:item" resource="<%= path_to(post) %>#blogpost" typeof="schema:BlogPosting">
           <a href="<%= path_to(post) %>" rel="bookmark" property="schema:url">
-            <time class="small bold" property="schema:datePublished" datetime="<%= h simple_date(:published_at, item: post) %>"><%= ndashed(simple_date(:published_at, item: post)) %></time>&#8194;<h3 class="normal" property="schema:name"><%= h post[:short_title] || post[:title] %></h3>
+            <time class="small bold" property="schema:datePublished" datetime="<%= h simple_date(:published_at, item: post) %>"><%= simple_date(:published_at, item: post).ndashed %></time>&#8194;<h3 class="normal" property="schema:name"><%= h post[:short_title] || post[:title] %></h3>
           </a>
           <link property="schema:isPartOf" resource="pentandra-blog:blog" />
         </article>

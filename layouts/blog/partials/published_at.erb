@@ -1,7 +1,7 @@
 <footer class="aside pubdate section">
   <% if item[:published_at] %>
-    <time class="big" property="schema:datePublished" datetime="<%= h simple_date(:published_at, item: item) %>"><%= ndashed(simple_date(:published_at, item: item)) %></time>
+    <time class="big" property="schema:datePublished" datetime="<%= h simple_date(:published_at, item: item) %>"><%= simple_date(:published_at, item: item).ndashed %></time>
   <% else %>
-    <time class="big draft" property="schema:dateCreated" datetime="<%= h simple_date(:created_at, item: item) %>"><i><%= ndashed(simple_date(:created_at, item: item)) %></i></time>
+    <time class="big draft" property="schema:dateCreated" datetime="<%= h simple_date(:created_at, item: item) %>"><i><%= simple_date(:created_at, item: item).ndashed %></i></time>
   <% end %>
 </footer>
