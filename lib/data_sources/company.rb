@@ -4,6 +4,7 @@ require 'active_support/core_ext/string/inflections'
 require 'net/ldap'
 require 'net/ldap/dn'
 require 'openssl'
+require 'phonelib'
 
 Class.new(Nanoc::DataSource) do
   identifier :company

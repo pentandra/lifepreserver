@@ -36,3 +36,8 @@ include LifePreserver::Dependencies
 include LifePreserver::Proposals
 include LifePreserver::ChildParent
 include LifePreserver::People
+
+require 'phonelib'
+
+Phonelib.extension_separator = ';ext='
+Phonelib.extension_separate_symbols = %w(x ext # ; extension)

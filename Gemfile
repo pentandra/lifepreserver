@@ -25,6 +25,7 @@ gem 'uglifier'           # for compact JavaScript
 gem 'vcardigan'          # for vCards
 gem 'pragmatic_segmenter'
 gem 'net-ldap'
+gem 'phonelib'           # for parsing phone numbers
 
 group :development, optional: true do
   gem 'adsf'              # for nanoc view

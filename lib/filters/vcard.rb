@@ -39,8 +39,6 @@ class Vcard < Nanoc::Filter
   #   represents.
   # @options params [String] :phone The phone number of the object
   #   the vCard represents.
-  # @options params [String] :phone_ext The phone extension of the
-  #   object the vCard represents.
   # @options params [String] :uid A globally unique identifier
   #   corresponding to the entity associated with the vCard.
   # @options params [String] :url A uniform resource locator
@@ -68,10 +66,7 @@ class Vcard < Nanoc::Filter
 
     email = params[:email] || @item[:email]
 
-    ext = params[:phone_ext] || @item[:phone_ext]
-    tel = params[:phone] || @item[:phone] || company[:phone]
-    tel = "tel:#{tel.tr(' ', '-')}" if tel
-    tel = "#{tel};ext=#{ext}" if tel && ext
+    tel = params[:phone] || @item[:telephonenumber] || company[:telephonenumber]
 
     uid = params[:uid] || @item[:uid] || @item[:web_id]
     url = params[:url] || @item[:url] || @config[:base_url]
@@ -109,7 +104,7 @@ class Vcard < Nanoc::Filter
     vcard.url(url) unless url.nil?
     vcard.uid(uid) unless uid.nil?
 
-    vcard.tel(tel, type: 'voice,work,text', value: 'uri') unless tel.nil?
+    vcard.tel("tel:#{tel.strftel(:full_e164)}", type: 'voice,work,text', value: 'uri') unless tel.nil?
 
     vcard.photo(photo_uri, value: 'uri') unless photo_uri.nil?
     vcard.logo(logo_uri, value: 'uri') unless logo_uri.nil?

@@ -395,9 +395,12 @@ priority: 0.6
                   property="schema:addressRegion vcard:region"><%= company[:region] %></span></div>
               <div property="schema:addressCountry vcard:country-name" class="country-name"><%= company[:country] %></div>
             </div>
-            <div>Phone: <a property="schema:telephone vcard:hasTelephone" class="tel" typeof="vcard:Work"
-                href="tel:<%= company[:phone].gsub(/[\s\.-]+/, "") %>"><%= company[:phone] %></a></div>
-            <div>Email: <a class="identifier" property="schema:email vcard:hasEmail" href="mailto:<%= company[:email] %>"><%= company[:email] %></a></div>
+            <div>Phone: <a property="schema:telephone vcard:hasTelephone"
+                           class="tel"
+                           typeof="vcard:Work"
+                           href="tel:<%= company.fetch(:telephonenumber).strftel(:full_e164) %>"
+                           ><%= company.fetch(:telephonenumber).strftel(:full_international).ndashed %></a>
+            <div>Email: <a class="identifier" property="schema:email vcard:hasEmail" href="mailto:<%= company.fetch(:mail) %>"><%= company.fetch(:mail) %></a></div>
           </address>
           <p>
              We support <a href="http://web.archive.org/web/20120615152553/http://www.ccpact.com/">The Company--Customer Pact</a>.
