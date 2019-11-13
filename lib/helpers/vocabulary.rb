@@ -29,7 +29,7 @@ module LifePreserver
     #   groups. If a group name, it should return the group. If a prefix,
     #   it should return a single vocabulary.
     #
-    # @return [Array<Nanoc::BasicItemView>] Any applicable items of kind +vocabulary+.
+    # @return [Array<Nanoc::Core::BasicItemView>] Any applicable items of kind +vocabulary+.
     def vocabularies_for(*args)
       res = []
 

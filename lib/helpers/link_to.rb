@@ -58,7 +58,7 @@ module LifePreserver
 
     # Generate a resource path from a target and optional fragment.
     #
-    # @param [String, Nanoc::CompilationItemView, Nanoc::BasicItemRepView] target
+    # @param [String, Nanoc::Core::CompilationItemView, Nanoc::Core::BasicItemRepView] target
     # @param [Symbol] rep (:default) the item rep to link to
     # @param [Symbol] snapshot (:last) the snapshot to link to
     # @param [String] fragment a URI fragment to append
@@ -72,9 +72,9 @@ module LifePreserver
              # REVIEW: can we remove the String type here or check the given target to make things more deterministic?
              when String
                target
-             when Nanoc::CompilationItemView
+             when Nanoc::Core::CompilationItemView
                target.path(rep: rep, snapshot: snapshot)
-             when Nanoc::BasicItemRepView
+             when Nanoc::Core::BasicItemRepView
                target.path(snapshot: snapshot)
              else
                raise ArgumentError, "Cannot link to #{target.inspect} (expected a string or an item, not a #{target.class.name})"

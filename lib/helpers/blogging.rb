@@ -35,9 +35,9 @@ module LifePreserver
 
     def post_summary(post_rep, snapshot: nil, read_more_text: 'Read more ⇢', separator: '<!--MORE-->')
       post_rep = case post_rep
-                 when Nanoc::BasicItemRepView
+                 when Nanoc::Core::BasicItemRepView
                    post_rep
-                 when Nanoc::CompilationItemView
+                 when Nanoc::Core::CompilationItemView
                    post_rep.reps.fetch(:default)
                  else
                    raise ArgumentError, "Cannot summarize #{item_rep.inspect} (expected an item rep or an item, not a #{item_rep.class.name})"
@@ -63,7 +63,7 @@ module LifePreserver
     #
     # @note Run during preprocessing.
     #
-    # @param [Array<Nanoc::BasicItemView>] item_set An array of blog post items.
+    # @param [Array<Nanoc::Core::BasicItemView>] item_set An array of blog post items.
     #
     # @return [void]
     def populate_author_uris(item_set = nil)

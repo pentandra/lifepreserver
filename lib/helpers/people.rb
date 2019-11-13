@@ -27,7 +27,7 @@ module LifePreserver
     # Looks for the `:full_name` key, then `:name`, then assembles a name using
     # the `:first_name` and `:last_name` keys as a last resort.
     #
-    # @param [Nanoc::BasicItemView] person An item with kind `person`.
+    # @param [Nanoc::Core::BasicItemView] person An item with kind `person`.
     #
     # @return [String] The full name of the person.
     def full_name(person)

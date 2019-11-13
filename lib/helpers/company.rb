@@ -40,7 +40,7 @@ module LifePreserver
 
     # @param [String] full_name
     #
-    # @return [Nanoc::BasicItemView, nil] A member item, if found
+    # @return [Nanoc::Core::BasicItemView, nil] A member item, if found
     def member_by_name(full_name)
       members.find { |member| full_name(member) == full_name }
     end
@@ -63,7 +63,7 @@ module LifePreserver
 
     # Return the path to the profile page of the given member.
     #
-    # @param [Nanoc::CompilationItemView] member The company member.
+    # @param [Nanoc::Core::CompilationItemView] member The company member.
     # @param [Boolean] absolute (false) Whether to return an absolute path or not.
     #
     # @return [String] The path to the profile page, if the item exists.

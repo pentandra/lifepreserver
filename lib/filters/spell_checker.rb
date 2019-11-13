@@ -97,7 +97,7 @@ class SpellChecker < Nanoc::Filter
   def depend_on_attributes(items)
     dependency_tracker = @assigns[:item]._context.dependency_tracker
 
-    items = items.map { |i| i.class < Nanoc::DocumentViewMixin ? i._unwrap : i }
+    items = items.map { |i| i.class < Nanoc::Core::DocumentViewMixin ? i._unwrap : i }
     items.each { |item| dependency_tracker.bounce(item, attributes: true) }
   end
 end

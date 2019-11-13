@@ -35,7 +35,7 @@ module LifePreserver
     def run
       require 'open3'
 
-      config = Nanoc::Int::ConfigLoader.new.new_from_cwd
+      config = Nanoc::Core::ConfigLoader.new.new_from_cwd
 
       c = Nanoc::CLI::ANSIStringColorizer
 
