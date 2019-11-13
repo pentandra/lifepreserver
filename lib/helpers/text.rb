@@ -2,7 +2,6 @@
 
 require 'active_support/core_ext/string/inflections'
 require 'active_support/core_ext/array/conversions'
-require 'digest/md5'
 
 module LifePreserver
   module Text
@@ -12,10 +11,6 @@ module LifePreserver
 
     def to_sentence(options = {})
       Array(self).to_sentence(options)
-    end
-
-    def md5
-      Digest::MD5.hexdigest(self.to_s)
     end
 
     def ndashed(type: :html)

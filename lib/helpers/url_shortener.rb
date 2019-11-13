@@ -2,14 +2,13 @@
 
 require 'shortly'
 require 'yaml/store'
-require_relative 'text'
+require 'digest/md5'
 
 module LifePreserver
   module UrlShortener
-    include LifePreserver::Text
 
     def shorten(url)
-      hash = url.md5
+      hash = Digest::MD5.hexdigest(url)
       store.transaction { store[hash] || generate_short_url(hash, url) }
     end
 
