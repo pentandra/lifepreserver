@@ -131,7 +131,7 @@ Also, please see [the colophon][colophon] for more raving attributions!
 [Nanoc]: <http://nanoc.ws/>
 [GitFlow]: <http://nvie.com/posts/a-successful-git-branching-model/>
 [Nu HTML]: <https://validator.github.io/validator/>
-[UglifyJS]: <https://validator.github.io/validator/>
+[UglifyJS]: <https://github.com/mishoo/UglifyJS2>
 [bower]: <https://bower.io/>
 [ExecJS]: <https://github.com/sstephenson/execjs>
 [node]: <https://nodejs.org/en/>
