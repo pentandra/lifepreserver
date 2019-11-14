@@ -97,6 +97,7 @@ class UpdateCompanyData < ::Nanoc::CLI::CommandRunner
         scope: Net::LDAP::SearchScope_SingleLevel,
         filter: employee_filter,
         attributes: EMPLOYEE_ATTRS) do |entry|
+        entry[:inetuserstatus] = 'active'
         ldif_out << "\n"
         ldif_out << entry.to_ldif
       end
@@ -107,7 +108,7 @@ class UpdateCompanyData < ::Nanoc::CLI::CommandRunner
         scope: Net::LDAP::SearchScope_SingleLevel,
         filter: employee_filter,
         attributes: EMPLOYEE_ATTRS) do |entry|
-        # TODO: differentiate these as deleted users
+        entry[:inetuserstatus] = 'deleted'
         ldif_out << "\n"
         ldif_out << entry.to_ldif
       end
