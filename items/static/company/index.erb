@@ -375,7 +375,7 @@ priority: 0.6
     <div class="wrapper" about="pentandra:company">
       <h2>Give Us A Holler!</h2>
       <div class="bd">
-        <meta property="vcard:rev" datatype="xsd:date" content="<%= simple_date(:mtime, item: company) %>" />
+        <meta property="vcard:rev" datatype="xsd:dateTime" content="<%= company.fetch(:mtime).iso8601 %>" />
         <aside class="aside section">
           <h3 class="flush">Get Social</h3>
           <ul class="none">
