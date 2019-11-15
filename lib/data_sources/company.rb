@@ -11,8 +11,10 @@ Class.new(Nanoc::DataSource) do
   identifier :company
 
   def up
-    company_metafile = File.open(@config.fetch(:company_metafile))
-    @company_meta = Net::LDAP::Dataset.read_ldif(company_metafile)
+    @company_meta =
+      File.open(@config.fetch(:company_metafile)) do |file|
+        Net::LDAP::Dataset.read_ldif(file)
+      end
   end
 
   def items
@@ -36,25 +38,26 @@ Class.new(Nanoc::DataSource) do
 
   def org_to_item(name, entry)
     slug = name.parameterize
+    org = transform(entry)
     new_item(
       name,
       {
         kind: 'organization',
-        name: name,
+        name: org[:cn] || name,
         slug: slug,
         mtime: mtime_of(@config[:company_metafile]),
         is_hidden: true,
-      }.merge(transform(entry)),
+      }.merge(org),
       Nanoc::Identifier.new("/company/_#{slug}"),
-      #attributes_checksum_data: Digest::SHA1.digest(Marshal.dump(entry)),
+      attributes_checksum_data: OpenSSL::Digest::SHA1.digest(Marshal.dump(Hash[entry])),
     )
   end
 
   def member_to_item(name, entry)
     member = transform(entry)
-    slug = name.parameterize
-
     full_name = member[:displayname] || member[:cn] || "#{member[:givenname]} #{member[:sn]}"
+    slug = full_name.parameterize
+
     attributes = {
       kind: 'member',
       name: full_name,
@@ -67,7 +70,7 @@ Class.new(Nanoc::DataSource) do
       name,
       attributes.merge(member),
       Nanoc::Identifier.new("/company/members/_#{slug}"),
-      #attributes_checksum_data: OpenSSL::Digest::SHA1.digest(Marshal.dump(entry)),
+      attributes_checksum_data: OpenSSL::Digest::SHA1.digest(Marshal.dump(Hash[entry])),
     )
   end
 
@@ -79,24 +82,22 @@ Class.new(Nanoc::DataSource) do
     if t.key?(:labeleduri)
       profiles = []
 
-      labeled_uris = Array(t.delete(:labeleduri))
-      labeled_uris.each do |i|
-        i_hash = i.split(' ', 2).zip([:uri, :label]).map(&:reverse).to_h
-
-        uri = URI.parse(i_hash[:uri])
+      Array(t.delete(:labeleduri)).each do |labeleduri|
+        hash = labeleduri.split(' ', 2).zip([:uri, :label]).map(&:reverse).to_h
+        uri = URI.parse(hash[:uri])
         account_name = File.basename(uri.path)
-        if i_hash.fetch(:label)[/profile/i] && account_name.length > 1
-          i_hash[:account_name] = account_name
-          i_hash[:class] = i_hash.fetch(:label).split(' ').first.underscore
-          i_hash[:holder] = t[:displayname] || t[:o]
+        if hash.fetch(:label)[/profile/i] && account_name.length > 1
+          hash[:account_name] = account_name
+          hash[:class] = hash.fetch(:label).split(' ').first.underscore
+          hash[:holder] = t[:displayname] || t[:o]
 
+          # Set URI path to root to get the service homepage
           uri.path = '/'
-          i_hash[:service_homepage] = uri.normalize.to_s
+          hash[:service_homepage] = uri.normalize.to_s
 
-          profiles << i_hash
+          profiles << hash
         end
       end
-
       t[:service_profiles] = profiles
     end
 
