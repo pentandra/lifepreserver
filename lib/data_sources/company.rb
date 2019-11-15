@@ -5,6 +5,7 @@ require 'net/ldap'
 require 'net/ldap/dn'
 require 'openssl'
 require 'phonelib'
+require 'uri'
 
 Class.new(Nanoc::DataSource) do
   identifier :company
@@ -74,11 +75,29 @@ Class.new(Nanoc::DataSource) do
     # If arrays have only one value, pull that value out
     t = entry.transform_values { |v| Array(v).length == 1 ? Array(v).first : v }
 
-    # Recompose labeledURI attribute value assertions
+    # Recompose labeledURI attribute value assertions for all service profiles
     if t.key?(:labeleduri)
-      t[:labeleduri] = Array(t[:labeleduri]).map do |i|
-        i.split(' ', 2).zip([:uri, :label]).map(&:reverse).to_h
+      profiles = []
+
+      labeled_uris = Array(t.delete(:labeleduri))
+      labeled_uris.each do |i|
+        i_hash = i.split(' ', 2).zip([:uri, :label]).map(&:reverse).to_h
+
+        uri = URI.parse(i_hash[:uri])
+        account_name = File.basename(uri.path)
+        if i_hash.fetch(:label)[/profile/i] && account_name.length > 1
+          i_hash[:account_name] = account_name
+          i_hash[:class] = i_hash.fetch(:label).split(' ').first.underscore
+          i_hash[:holder] = t[:displayname] || t[:o]
+
+          uri.path = '/'
+          i_hash[:service_homepage] = uri.normalize.to_s
+
+          profiles << i_hash
+        end
       end
+
+      t[:service_profiles] = profiles
     end
 
     # Extract the public key from user certificates
