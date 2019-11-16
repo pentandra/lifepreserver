@@ -46,4 +46,5 @@ group :test, optional: true do
   gem 'watir'
   gem 'simplecov', require: false
   gem 'w3c_validators'
+  gem 'yard'
 end

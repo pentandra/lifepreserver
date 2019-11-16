@@ -105,10 +105,10 @@ GEM
       guard (~> 2.8)
       guard-compat (~> 1.0)
       multi_json (~> 1.8)
-    guard-nanoc (2.1.6)
+    guard-nanoc (2.1.7)
       guard (~> 2.8)
       guard-compat (~> 1.0)
-      nanoc (>= 4.3.8, < 5.0)
+      nanoc (>= 4.11.13, < 5.0)
     guard-rake (1.0.0)
       guard
       rake
@@ -222,7 +222,7 @@ GEM
       nenv (~> 0.1)
       shellany (~> 0.0)
     pandoc-ruby (2.0.2)
-    parallel (1.18.0)
+    parallel (1.19.0)
     parser (2.6.5.0)
       ast (~> 2.4.0)
     pastel (0.7.3)
@@ -275,7 +275,7 @@ GEM
       rdf (>= 2.2, < 4.0)
       rdf-rdfa (>= 2.2, < 4.0)
       rdf-xsd (>= 2.2, < 4.0)
-    rdf-reasoner (0.5.2)
+    rdf-reasoner (0.5.3)
       rdf (~> 3.0)
       rdf-vocab (~> 3.0)
       rdf-xsd (~> 3.0)
@@ -391,6 +391,7 @@ GEM
     watir (6.16.5)
       regexp_parser (~> 1.2)
       selenium-webdriver (~> 3.6)
+    yard (0.9.20)
     zeitwerk (2.2.1)
 
 PLATFORMS
@@ -438,6 +439,7 @@ DEPENDENCIES
   vcardigan
   w3c_validators
   watir
+  yard
 
 BUNDLED WITH
    2.0.2
