@@ -53,34 +53,34 @@ module LifePreserver
 
     # Get an instance of a dictionary for the given language.
     #
-    # @param
+    # @param lang (Locale.default) The language of the dictionary needed.
     #
-    # @return [SpellChecker::Dictionaries::Dictionary] instance
+    # @return [SpellChecker::Dictionaries::Dictionary] The dictionary instance.
     def dictionary(lang = Locale.default)
-      @@dictionaries ||= {}
+      @@dictionary_cache ||= {}
 
-      hunspell_lang = find_closest_lang(lang.to_s)
+      hunspell_lang = find_closest_lang(lang)
 
       unless hunspell_lang
-        warn "Unable to resolve a locale for language '#{lang}' from the following candidates: #{Locale.app_language_tags.map(&:to_s).join(', ')}. Spellchecking not enabled for this language."
+        warn "Unable to resolve a dictionary for '#{lang}' from the following candidates: #{Locale.app_language_tags.map(&:to_s).join(', ')}."
         return
       end
 
-      if @@dictionaries.key?(hunspell_lang)
-        return @@dictionaries[hunspell_lang]
+      if @@dictionary_cache.key?(hunspell_lang)
+        return @@dictionary_cache[hunspell_lang]
       end
 
-      base_dic = @items["/**/#{hunspell_lang}.dic"]
+      base_dic = @items["/lifepreserver/dictionaries/*/#{hunspell_lang}.dic"]
 
       unless base_dic && base_dic[:kind] =~ /base-dictionary/
         raise "Could not find base dictionary item for language '#{hunspell_lang}'"
       end
 
-      @@dictionaries[hunspell_lang] = Dictionary.new(hunspell_lang, supplementary_dictionaries_for(base_dic))
+      @@dictionary_cache[hunspell_lang] = Dictionary.new(hunspell_lang, dependencies_for(base_dic))
     end
 
     def find_closest_lang(lang)
-      lang_tag = Locale::Tag.parse(lang).to_simple
+      lang_tag = Locale::Tag.parse(lang.to_s).to_simple
       locale = Locale.app_language_tags.find { |c| c.to_s.start_with?(lang_tag.to_s) }
 
       locale&.to_s
@@ -100,9 +100,15 @@ module LifePreserver
 
     protected
 
-    def supplementary_dictionaries_for(base_dic)
-      identifier = base_dic.identifier
-      dependencies = @items.find_all(File.dirname(identifier.to_s) + '/*')
+    # Collect all dependent items of the given base dictionary item. Dependent
+    #   items include supplementary personal and extra dictionaries.
+    #
+    # @param [Nanoc::Core::BasicItemView] base_dic The base dictionary item.
+    #
+    # @return [Array<Nanoc::Core::BasicItemView>] All the item dependencies of the base
+    #   dictionary item, including the base dictionary item itself.
+    def dependencies_for(base_dic)
+      dependencies = @items.find_all(File.dirname(base_dic.identifier.to_s) + '/*')
       dependencies.keep_if { |d| d._unwrap.attributes[:kind] =~ /(personal|extra)-dictionary/ }
       dependencies << base_dic
     end
