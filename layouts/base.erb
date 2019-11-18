@@ -6,9 +6,9 @@
   <head prefix="<%= prefix_mappings_for(:open_graph) %>">
 
     <meta charset="utf-8" />
-    <title><%= @item[:full_title] || "#{@item[:title]} ← #{@config[:site][:name]}" %></title>
-    <meta name="description" content="<%= @item[:meta_description] || @item[:description] || @item[:title] %>" />
-    <meta name="generator" content="Nanoc <%= @config[:nanoc_version] %>" />
+    <title><%=h @item[:full_title] || "#{@item[:title]} ← #{@config[:site][:name]}" %></title>
+    <meta name="description" content="<%=h @item[:meta_description] || @item[:description] || @item[:title] %>" />
+    <meta name="generator" content="Nanoc <%=h @config[:nanoc_version] %>" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
 
     <link rel="stylesheet" href="<%= path_to(@items['/static/assets/stylesheets/main.scss']) %>" />
