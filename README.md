@@ -56,6 +56,15 @@ $ bower install
 $ bundle install --with development
 ```
 
+### Update company data…
+
+```bash
+$ bundle exec nanoc update-company-data
+```
+
+This should create an LDIF file at `var/company.ldif` that is needed to build
+out company and membership information.
+
 ### And compile!
 
 ```bash
