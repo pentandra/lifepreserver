@@ -1,9 +1,11 @@
 # frozen_string_literal: true
 
+require_relative 'link_to'
+
 module Nanoc::Helpers
   # @see http://nanoc.ws/doc/reference/helpers/#xmlsitemap
   module XMLSitemap
-    include LifePreserver::LinkTo
+    include LifePreserver::Helpers::LinkTo
 
     # @option params [Array] :items
     # @option params [Proc] :rep_select

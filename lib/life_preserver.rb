@@ -1,41 +1,48 @@
 # frozen_string_literal: true
 
-module LifePreserver
-end
+# Ruby stdlib
+require 'erb'
+require 'uri'
 
+# External gems
 require 'html5small/nanoc'
 require 'nanoc/cachebuster'
-require 'erb'
 
-# Helpers to include in a global context
+# Ruby stdlib utility functions
+include ERB::Util
+
+# Nanoc helpers to include in a global context
 include Nanoc::Helpers::Capturing
 include Nanoc::Helpers::Rendering
 include Nanoc::Helpers::XMLSitemap
 include Nanoc::Helpers::CacheBusting
 include Nanoc::Helpers::Filtering
-include ERB::Util
 
-include LifePreserver::Articles
-include LifePreserver::Blogging
-include LifePreserver::Weblog
-include LifePreserver::Dates
-include LifePreserver::Company
-include LifePreserver::UrlShortener
-include LifePreserver::Search
-include LifePreserver::Functional
-include Breadcrumbs
-include LifePreserver::Text
-include LifePreserver::Vocabulary
-include LifePreserver::Tagging
-include LifePreserver::LinkTo
-include LifePreserver::Reporting
-include LifePreserver::Meta
-include LifePreserver::AtomFeed
-include LifePreserver::Dictionaries
-include LifePreserver::Dependencies
-include LifePreserver::Proposals
-include LifePreserver::ChildParent
-include LifePreserver::People
+module LifePreserver
+end
+
+# Project helpers to include in a global context
+include LifePreserver::Helpers::Articles
+include LifePreserver::Helpers::Blogging
+include LifePreserver::Helpers::Weblog
+include LifePreserver::Helpers::Dates
+include LifePreserver::Helpers::Company
+include LifePreserver::Helpers::UrlShortener
+include LifePreserver::Helpers::Search
+include LifePreserver::Helpers::Functional
+include LifePreserver::Helpers::Breadcrumbs
+include LifePreserver::Helpers::Text
+include LifePreserver::Helpers::Vocabulary
+include LifePreserver::Helpers::Tagging
+include LifePreserver::Helpers::LinkTo
+include LifePreserver::Helpers::Reporting
+include LifePreserver::Helpers::Meta
+include LifePreserver::Helpers::AtomFeed
+include LifePreserver::Helpers::Dictionaries
+include LifePreserver::Helpers::Dependencies
+include LifePreserver::Helpers::Proposals
+include LifePreserver::Helpers::ChildParent
+include LifePreserver::Helpers::People
 
 require 'phonelib'
 

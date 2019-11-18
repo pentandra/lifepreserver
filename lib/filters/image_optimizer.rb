@@ -1,20 +1,24 @@
 # frozen_string_literal: true
 
-class ImageOptimizerFilter < Nanoc::Filter
-  identifier :image_optimizer
-  type :binary
+module LifePreserver
+  module Filters
+    class ImageOptimizerFilter < Nanoc::Filter
+      identifier :image_optimizer
+      type :binary
 
-  requires 'image_optimizer'
+      requires 'image_optimizer'
 
-  def run(filename, params = {})
-    # first, copy the file to the destination
-    FileUtils.copy_file(filename, output_filename)
+      def run(filename, params = {})
+        # first, copy the file to the destination
+        FileUtils.copy_file(filename, output_filename)
 
-    options = {
-      identify: true,
-    }
+        options = {
+          identify: true,
+        }
 
-    # then optimize in place
-    ImageOptimizer.new(output_filename, options.merge(params)).optimize
+        # then optimize in place
+        ImageOptimizer.new(output_filename, options.merge(params)).optimize
+      end
+    end
   end
 end
