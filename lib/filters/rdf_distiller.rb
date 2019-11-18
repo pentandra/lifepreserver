@@ -46,7 +46,7 @@ module LifePreserver
 
         base_uri = params[:base_uri] || @item[:base_uri] || path_to(@item, absolute: true)
         prefix = params[:prefix] || @item[:prefix] || File.basename(@item.identifier.without_exts).camelize
-        prefixes = params.fetch(:prefixes, vocabulary_prefixes_for_item)
+        prefixes = params.fetch(:prefixes) { vocabulary_prefixes_for_item }
         validate = params.fetch(:validate, false)
 
         output_format = RDF::Format.for(output.to_sym).to_sym
