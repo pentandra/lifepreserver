@@ -53,7 +53,7 @@ class Vcard < Nanoc::Filter
   #   the object the vCard represents.
   # @option params [String] :logo_uri The URI of an image of
   #   the logo associated with the object the vCard represents.
-  # @options params [Time] :rev To specify revision information
+  # @option params [Time] :rev To specify revision information
   #   about the current vCard.
   def run(_content, params = {})
     validate params

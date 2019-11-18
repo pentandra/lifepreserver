@@ -32,10 +32,11 @@ class RdfDistiller < Nanoc::Filter
   #   initialization is used as the content to distill.
   #
   # @param [Hash] params
-  # @options params [String, Symbol] :input (@item.identifier.ext) The input format.
-  # @options params [String, Symbol] :output (:turtle) The output format.
-  # @options params [Hash] :prefixes The URI prefixes to use when generating the output.
-  # @options params [Boolean] :validate (true) Whether to validate the output for correctness.
+  # @option params [String, Symbol] :input The input format. If not provided,
+  #   uses the item's file extension to determine the input format.
+  # @option params [String, Symbol] :output (:turtle) The output format.
+  # @option params [Hash] :prefixes The URI prefixes to use when generating the output.
+  # @option params [Boolean] :validate (true) Whether to validate the output for correctness.
   #
   # @return [String] The distilled content
   def run(_content, params = {})
