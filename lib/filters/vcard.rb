@@ -20,36 +20,38 @@ class Vcard < Nanoc::Filter
   # @param [String] _content Ignored. All structured data is pulled from
   #   the params first and then, if not found, from the item metadata.
   # @param [Hash] params The options for the vCard.
-  # @options params [String] :kind ('individual') The kind of object the
+  # @option params [String] :kind ('individual') The kind of object the
   #   vCard represents. Must be one of the following: "individual", "group",
   #   "org", "location", an x-name, or an iana-token.
-  # @options params [String] :full_name  The full name of the object the
+  # @option params [String] :full_name  The full name of the object the
   #   vCard represents.
-  # @options params [String] :first_name The first name of the object the
+  # @option params [String] :givenname The first name of the object the
   #   vCard represents.
-  # @options params [String] :last_name The last name of the object the
+  # @option params [String] :sn The last name of the object the
   #   vCard represents.
-  # @options params [String] :nick_name The nick-name of the object the
+  # @option params [String] :nick_name The nick-name of the object the
   #   vCard represents.
-  # @options params [String] :gender ('U') The gender of the
+  # @option params [String] :gender ('U') The gender of the
   #   object the vCard represents. According to RFC6350, M stands
   #   for "male", F stands for "female", O stands for "other", N
   #   stands for "none or not applicable", U stands for "unknown".
-  # @options params [String] :email The email of the object the vCard
+  # @option params [String] :mail The email of the object the vCard
   #   represents.
-  # @options params [String] :phone The phone number of the object
+  # @option params [String] :phone The phone number of the object
   #   the vCard represents.
-  # @options params [String] :uid A globally unique identifier
+  # @option params [String] :uid A globally unique identifier
   #   corresponding to the entity associated with the vCard.
-  # @options params [String] :url A uniform resource locator
+  # @option params [String] :url A uniform resource locator
   #   associated with the object to which the vCard refers.
-  # @options params [String] :org The organizational name
+  # @option params [String] :org The organization name
   #   associated with the object to which the vCard refers.
-  # @options params [String] :title The title or position
+  # @option params [String] :ou The organizational unit name
+  #   associated with the object to which the vCard refers.
+  # @option params [String] :title The title or position
   #   on the bus of the object to which the vCard refers.
-  # @options params [String] :photo_uri The URI of a photo of
+  # @option params [String] :photo_uri The URI of a photo of
   #   the object the vCard represents.
-  # @options params [String] :logo_uri The URI of an image of
+  # @option params [String] :logo_uri The URI of an image of
   #   the logo associated with the object the vCard represents.
   # @options params [Time] :rev To specify revision information
   #   about the current vCard.
