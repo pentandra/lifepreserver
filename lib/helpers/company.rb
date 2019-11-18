@@ -51,8 +51,7 @@ module LifePreserver
       #   which states that for "WebIDs with fragment identifiers (e.g. #me), the
       #   URI without the fragment denotes the Profile Document."
       #
-      # @see LifePreserver::People#populate_people_identifiers To compare the
-      #   configuration of identifiers for people (that are not members).
+      # @see People#populate_people_identifiers
       #
       # @todo We should support members having WebIDs at other domains in addition
       #   to their Pentandra WebID. Use an LDAP term for WebIDs and select the one

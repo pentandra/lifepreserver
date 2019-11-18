@@ -37,7 +37,7 @@ module LifePreserver
       #   standard and does not require any redirections.
       #
       # @see #populate_people_identifiers
-      # @see LifePreserver::Company#populate_member_identifiers
+      # @see Company#populate_member_identifiers
       #
       # @param [Nanoc::Core::CompilationItemView] person The person who is the
       #   topic of the profile page. Must have a +:web_id+ attribute.
@@ -60,16 +60,14 @@ module LifePreserver
       end
 
       # Populate identifiers for referenced people without a WebID. If a person
-      #   does not have an external WebID, this creates a local identifier for
-      #   the person that will redirect to the people index document.
+      # does not have an external WebID, this creates a local identifier for
+      # the person that will redirect to the people index document.
       #
       # @note Called during preprocessing before items have been given a path,
       #   so we have to build this public path manually.
       #
       # @see https://github.com/pentandra/lifepreserver/issues/85
-      #
-      # @see LifePreserver::Company#populate_member_identifiers To compare the
-      #   configuration of identifiers for people.
+      # @see Company#populate_member_identifiers
       #
       # @return [void]
       def populate_people_identifiers
