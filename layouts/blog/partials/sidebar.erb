@@ -9,10 +9,10 @@
   <section class="section banner" resource="<%= author.fetch(:web_id) %>" typeof="dc:Agent schema:Person foaf:Person" property="dc:creator schema:author foaf:maker">
     <h3 class="big">The Author</h3>
     <figure id="author">
-      <img class="photo framed" src="<%= path_to_photo(author) %>" alt="Photo of <%= full_name(author) %>" property="schema:image foaf:img" />
+      <img class="photo framed" src="<%= path_to(author, rep: :photo) %>" alt="Photo of <%= author[:name] %>" property="schema:image foaf:img" />
       <figcaption class="small nav">
-        <h4 class="normal shaved" property="rdfs:label schema:name foaf:name"><a href="<%= author.fetch(:web_id) %>" property="schema:url" class="subtle"><%= full_name(author) %></a></h4>
-        <p class="small em flush" property="schema:jobTitle"><%= current_seat(author)&.fetch(:title) %></p>
+        <h4 class="normal shaved" property="rdfs:label schema:name foaf:name"><a href="<%= author.fetch(:web_id) %>" property="schema:url" class="subtle"><%= author[:name] %></a></h4>
+        <p class="small em flush" property="schema:jobTitle"><%= author[:title] %></p>
       </figcaption>
     </figure>
     <link property="schema:worksFor" resource="pentandra:company" typeof="schema:Corporation" />

@@ -55,7 +55,7 @@ module LifePreserver
     #
     def link_for_author(author, rel_tag: true)
       author = person_by_name(author)
-      %(<a resource="#{author.fetch(:web_id)}" href="#{path_to_profile_page(author)}" title="More about #{h full_name(author)}"#{' rel="author"' if rel_tag}>#{h full_name(author)}</a>)
+      %(<a resource="#{author.fetch(:web_id)}" href="#{path_to_profile_page(author)}" title="More about #{h author[:name]}"#{' rel="author"' if rel_tag}>#{h author[:name]}</a>)
     end
 
     # Populates the `author_uri` for the given blog post items. If not set
@@ -77,7 +77,8 @@ module LifePreserver
     end
 
     def bibtex_key(item, author)
-      item[:bibtex_key] || [author.fetch(:last_name), author.fetch(:first_name)[0], attribute_to_time(item[:published_at]).year, Digest::SHA1.hexdigest(item[:title])[0..6]].join(':').downcase
+      item[:bibtex_key] || [author.fetch(:sn), author.fetch(:givenname)[0], attribute_to_time(item[:published_at]).year, Digest::SHA1.hexdigest(item[:title])[0..6]].join(':').downcase
     end
+  end
   end
 end

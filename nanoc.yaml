@@ -59,7 +59,7 @@ data_sources:
       extra:      [ cert, essglobal-activities, essglobal-legalform, essglobal-qualifiers, essglobal-typeoflabour, sioct, xsd ]
 
   - type: company
-    company_metafile: 'var/company.yaml'
+    company_metafile: 'var/company.ldif'
 
   - type: people
     people_data: 'etc/people.yaml'

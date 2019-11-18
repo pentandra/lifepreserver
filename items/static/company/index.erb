@@ -178,9 +178,9 @@ priority: 0.6
 
     <div class="bd" property="essglobal:mission">
 
-      <p class="bigger"><%= company[:mission] %></p>
+      <p class="bigger" property="org:purpose"><%= company[:description] %></p>
       <p>
-        
+
         We hope that the effect of our mission will be to help bring <a
           href="/open/#research" title="Pentandra → Open Research">open
           research</a> into the mainstream, so that human, enterprise, and
@@ -237,7 +237,7 @@ priority: 0.6
           governments, and the general public about the short- and long-term
           benefits of open research, and supporting their efforts as they work
           to expand the influence of open research on the world.</li>
- 
+
         <li id="means:lowering-barriers"
           property="essglobal:objective">Lowering the barrier of entry for the
           common man and practitioners to participate meaningfully in
@@ -334,41 +334,10 @@ priority: 0.6
 
       <h3 property="foaf:name">Core Team</h3>
 
-      <% sorted_people.select {|person| person[:member_of].include?('Core Team') }.each_with_index do |member, index| %>
-      <section resource="pentandra:<%= full_name(member).to_slug %>"
-        property="foaf:member vcard:hasMember" typeof="schema:Person foaf:Person vcard:Individual"
-        id="<%= full_name(member).to_slug %>"
-        class="teammember vcard bl<%= index.odd? ? ' ock' : '' %> item">
-        <meta property="vcard:rev" datatype="xsd:date" content="<%= simple_date(:mtime, item: company) %>" />
-        <link rev="schema:employee" resource="pentandra:company" />
-        <link property="foaf:isPrimaryTopicOf" href="#<%= full_name(member).to_slug %>" />
-        <link property="vcard:hasGender" resource="vcard:<%= member[:gender].capitalize %>" />
-        <div class="group">
-          <div class="section aside">
-            <img property="foaf:img schema:image vcard:hasPhoto" class="photo framed" src="<%= photo_url(member) %>" alt="Photo of <%= full_name(member) %>" />
-            <aside class="nav menu rev">
-              <ul class="sp framed icons">
-                <% if member[:twitter] %>
-                  <li><a class="url" rel="foaf:account" href="https://twitter.com/<%= member[:twitter] %>" title="Follow @<%= member[:twitter] %>"><span aria-hidden="true" class="button icon-twitter"></span><span class="visuallyhidden">Follow <span class="handle">@<%= member[:twitter] %></span></span></a></li>
-                <% end %>
-                <% if member[:github] %>
-                  <li><a class="url" rel="foaf:account" href="https://github.com/<%= member[:github] %>" title="Check out <%= member[:first_name] %> on GitHub"><span aria-hidden="true" class="button icon-github"></span><span class="visuallyhidden">Check out <%= member[:first_name] %> on GitHub</span></a></li>
-                <% end %>
-                <li><a property="schema:email foaf:mbox vcard:hasEmail" class="email" href="mailto:<%= member[:email] %>" title="mailto:<%= member[:email] %>"><span aria-hidden="true" class="button icon-mail"></span><span class="visuallyhidden">Email <%= member[:first_name] %></span></a></li>
-              </ul>
-            </aside>
-          </div>
-          <div class="bd group">
-            <header>
-              <h4 class="big fn flush" property="foaf:name schema:name vcard:fn"><%= full_name(member) %></h4>
-              <p class="em small title flush" property="schema:jobTitle vcard:title"><%= member[:title] %></p>
-            </header>
-            <link property="schema:worksFor" resource="pentandra:company" />
-            <p property="schema:description"><%= member[:summary] %></p>
-          </div>
-        </div>
-      </section>
+      <% sorted_members.select { |member| member.fetch(:ou) == 'Core Team' }.each_with_index do |member, index| %>
+        <%= render('/partials/membercard.*', member: member, index: index) %>
       <% end %>
+
     </section>
   </section>
   <footer id="contact" class="group ext grab" resource="pentandra:contact" typeof="schema:ContactPage">
@@ -379,27 +348,30 @@ priority: 0.6
         <aside class="aside section">
           <h3 class="flush">Get Social</h3>
           <ul class="none">
-            <li class="social-tw"><a href="https://twitter.com/intent/user?screen_name=<%= company[:twitter] %>" class="button">Follow <span class="handle">@<%= company[:twitter] %></span></a></li>
-            <li class="social-fb"><a rel="schema:sameAs" href="http://www.facebook.com/PentandraInc" class="button">Pentandra on FB</a></li>
+            <% company.fetch(:service_profiles).each do |profile| %>
+              <%= render('/partials/account_service_item.*', account: profile, holder_text: 'us', anchor_class: 'mod button') %>
+            <% end %>
           </ul>
-          <link property="schema:sameAs" href="https://twitter.com/PentandraInc"/>
         </aside>
         <div class="inner group">
           <address class="vcard">
             <div property="schema:name schema:legalName" class="fn org" property="vcard:fn"><a
-                property="schema:url foaf:homepage vcard:hasURL" href="<%= company[:url] %>"><%= company[:full_name] %></a></div>
+                property="schema:url foaf:homepage vcard:hasURL" href="<%= URI(@config[:base_url]).normalize.to_s %>"><%= company.fetch(:cn) %></a></div>
             <div property="schema:location vcard:hasAddress" typeof="schema:PostalAddress vcard:Address" class="adr">
-              <div><span class="locality"
-                  property="schema:addressLocality vcard:locality"><%= company[:locality] %></span>, <span
-                  class="region"
-                  property="schema:addressRegion vcard:region"><%= company[:region] %></span></div>
-              <div property="schema:addressCountry vcard:country-name" class="country-name"><%= company[:country] %></div>
+              <div><span class="address" property="schema:streetAddress vcard:street-address"><%= company.fetch(:street) %></span></div>
+              <div>
+                <span class="locality" property="schema:addressLocality vcard:locality"><%= company.fetch(:l) %></span>,
+                <span class="region" property="schema:addressRegion vcard:region"><%= company.fetch(:st) %></span>
+                <span class="address" property="schema:postalCode vcard:postal-code"><%= company.fetch(:postalcode) %></span>
+              </div>
+              <div property="schema:addressCountry vcard:country-name" class="country-name"><%= company.fetch(:c) %></div>
             </div>
             <div>Phone: <a property="schema:telephone vcard:hasTelephone"
                            class="tel"
                            typeof="vcard:Work"
                            href="tel:<%= company.fetch(:telephonenumber).strftel(:full_e164) %>"
                            ><%= company.fetch(:telephonenumber).strftel(:full_international).ndashed %></a>
+            </div>
             <div>Email: <a class="identifier" property="schema:email vcard:hasEmail" href="mailto:<%= company.fetch(:mail) %>"><%= company.fetch(:mail) %></a></div>
           </address>
           <p>
@@ -415,8 +387,8 @@ priority: 0.6
         </div>
       </div>
       <figure class="aside section img" id="vcard">
-        <a href="<%= path_to(@items['/company/_'], rep: :vcard) %>">
-          <img src="<%= path_to(@items['/company/_'], rep: :qrcode) %>" alt="machine-readable QR code with embedded vCard for Pentandra Research Solutions" />
+        <a href="<%= path_to(@items['/company/_pentandra'], rep: :vcard) %>" title="Click to download our vCard">
+          <img src="<%= path_to(@items['/company/_pentandra'], rep: :qrcode) %>" alt="machine-readable QR code with embedded vCard for Pentandra Research Solutions" />
         </a>
         <figcaption class="bold">Our vCard</figcaption>
       </figure>

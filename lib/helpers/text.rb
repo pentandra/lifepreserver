@@ -18,6 +18,10 @@ module LifePreserver
       self.to_s.gsub('-', type == :html ? '<span class="ndash">--</span>': '--')
     end
 
+    def possessive
+      "#{self}'#{'s' unless self.to_s.end_with?('s')}"
+    end
+
     # Format the telephone number according to the method in the given format.
     #
     # @param [Symbol] format (:e164) The symbol of the Phonelib formatting
@@ -26,6 +30,10 @@ module LifePreserver
     def strftel(format = :e164)
       phone = Phonelib.parse(self.to_s)
       phone.method(format.to_sym).call
+    end
+
+    def camelize(first_letter = :upper)
+      self.to_s.camelize(first_letter)
     end
 
     # Uses the convention by DBpedia that the first sentence of a new paragraph

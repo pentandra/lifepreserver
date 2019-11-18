@@ -9,7 +9,7 @@
   </section>
   <section class="noted inner group" property="fea:hasIntent" resource="pentandra:mission" typeof="fea:Mission">
     <h2 class="flush normal">Our Mission</h2>
-    <p property="fea:description"><%= company[:mission] %></p>
+    <p property="fea:description"><%= company.fetch(:description) %></p>
   </section>
 </div>
 <div class="aside section">

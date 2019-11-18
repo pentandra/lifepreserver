@@ -382,12 +382,12 @@ Here's a tiny example:
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
 
 &lt;<%= me.fetch(:web_id) %>&gt; a foaf:Person ;
-    rdfs:label "<%= full_name(me) %>"@en ;
-    foaf:familyName "<%= me[:last_name] %>"@en ;
-    foaf:givenName "<%= me[:first_name] %>"@en ;
-    foaf:img &lt;<%= path_to_photo(me, absolute: true) %>&gt; ;
-    foaf:mbox &lt;mailto:<%= me[:email] %>&gt; ;
-    foaf:name "<%= full_name(me) %>"@en ;
+    rdfs:label "<%= me[:name] %>"@en ;
+    foaf:familyName "<%= me[:sn] %>"@en ;
+    foaf:givenName "<%= me[:givenname] %>"@en ;
+    foaf:img &lt;<%= path_to(me, rep: :photo, absolute: true) %>&gt; ;
+    foaf:mbox &lt;mailto:<%= me[:mail] %>&gt; ;
+    foaf:name "<%= me[:name] %>"@en ;
     cc:license &lt;https://creativecommons.org/licenses/by/4.0/&gt; .
 ```
 

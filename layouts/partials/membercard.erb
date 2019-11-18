@@ -1,0 +1,31 @@
+<section resource="<%= @member.fetch(:web_id) %>"
+         property="foaf:member vcard:hasMember"
+         typeof="schema:Person foaf:Person vcard:Individual"
+         id="<%= @member.fetch(:slug) %>"
+         class="teammember vcard bl<%= @index.odd? ? ' ock' : '' %> item">
+  <div class="group">
+    <div class="bd group">
+      <header>
+        <h4 class="big fn flush" property="foaf:name schema:name vcard:fn"><%= @member[:name] %></h4>
+        <p class="em small title flush" property="schema:jobTitle vcard:title"><%= @member[:title] %></p>
+      </header>
+      <link property="schema:worksFor" resource="pentandra:company" />
+      <p property="schema:description"><%= @member[:description] %></p>
+    </div>
+    <div class="section aside">
+      <img property="foaf:img schema:image vcard:hasPhoto" class="photo framed" src="<%= path_to(@member, rep: :photo) %>" alt="Photo of <%= @member[:name] %>" />
+      <aside class="nav menu rev">
+        <ul class="sp framed icons">
+          <li><a property="foaf:isPrimaryTopicOf" href="<%= path_to_profile_page(@member) %>" title="Personal profile page for <%= @member[:name] %>"><span aria-hidden="true" class="button icon-vcard"></span><span class="visuallyhidden">Personal profile page for <%= @member[:name] %></span></a></li>
+          <li><a property="schema:email foaf:mbox vcard:hasEmail" class="email" href="mailto:<%= @member.fetch(:mail) %>" title="mailto:<%= @member.fetch(:mail) %>"><span aria-hidden="true" class="button icon-mail"></span><span class="visuallyhidden">Email <%= @member[:name] %></span></a></li>
+          <% @member.fetch(:service_profiles).each do |profile| %>
+            <%= render('/partials/account_service_item.*', account: profile, type: :icon) %>
+          <% end %>
+        </ul>
+      </aside>
+    </div>
+  </div>
+  <meta property="vcard:rev" datatype="xsd:dateTime" content="<%= company.fetch(:mtime).iso8601 %>" />
+  <link rev="schema:employee" resource="pentandra:company" />
+  <link property="vcard:hasGender" resource="vcard:<%# @member.fetch(:gender).capitalize %>" />
+</section>

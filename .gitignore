@@ -12,3 +12,4 @@ tmp/
 *.gem
 /coverage/
 /.yardoc/
+var/company.ldif

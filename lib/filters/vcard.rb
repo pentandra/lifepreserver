@@ -60,20 +60,21 @@ class Vcard < Nanoc::Filter
 
     # Extract params
     kind = params[:kind] || @item[:kind] || 'individual'
-    full_name = params[:full_name] || full_name(@item)
-    first_name = params[:first_name] || @item[:first_name]
-    last_name = params[:last_name] || @item[:last_name]
+    full_name = params[:full_name] || @item[:name]
+    givenname = params[:givenname] || @item[:givenname]
+    sn = params[:sn] || @item[:sn]
     nick_name = params[:nick_name] || @item[:nick_name]
     gender = params[:gender] || @item[:gender] || 'U'
 
-    email = params[:email] || @item[:email]
+    email = params[:mail] || @item[:mail]
 
     tel = params[:phone] || @item[:telephonenumber] || company[:telephonenumber]
 
     uid = params[:uid] || @item[:uid] || @item[:web_id]
     url = params[:url] || @item[:url] || @config[:base_url]
 
-    org = params[:org] || @item[:org] || company[:full_name]
+    org = params[:org] || @item[:o] || company[:o]
+    ou = params[:ou] || @item[:ou]
     title = params[:title] || @item[:title]
 
     photo_uri = params[:photo_uri] || @item[:photo_uri]
@@ -90,13 +91,13 @@ class Vcard < Nanoc::Filter
     vcard.fullname(full_name)
 
     if kind.to_s == 'individual'
-      vcard.name(last_name, first_name)
+      vcard.name(sn, givenname)
       vcard.gender(gender.to_s.capitalize.chr)
-      vcard.org(org, current_seat(@item)[:group])
-      vcard.title(title || current_seat(@item)[:title])
+      vcard.org(org, ou)
+      vcard.title(title)
 
       # Last chance property setting for individuals
-      photo_uri ||= path_to_photo(@item, absolute: true)
+      photo_uri ||= path_to(@item, rep: :photo, absolute: true)
     end
 
     vcard.nickname(nick_name) unless nick_name.nil?
@@ -128,8 +129,10 @@ class Vcard < Nanoc::Filter
   end
 
   def validate_required_parameters(params)
-    if full_name(@item).nil?
+    if params[:full_name].nil? && @item[:name].nil?
       raise Nanoc::Errors::GenericTrivial.new('Cannot build vCard: the full_name parameter MUST be present in either the params hash or item rep metadata')
     end
+  end
+end
   end
 end

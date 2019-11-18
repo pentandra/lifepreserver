@@ -12,9 +12,10 @@ module LifePreserver
 
     # Finds all the dependencies for the given Bundler group name.
     #
-    # @param [String, Symbol]
+    # @param [String, Symbol] group_name The name of the dependency group.
     #
-    # @return [Array]
+    # @return [Array<Nanoc::Core::CompilationItemView>] The Ruby dependency
+    #   items of the given group.
     def dependencies_for(group_name)
       @items.find_all("/lifepreserver/dependencies/#{group_name}/*").sort_by(&:identifier)
     end
@@ -24,7 +25,7 @@ module LifePreserver
       authors = dependencies.flat_map { |dep| dep[:authors] }.uniq.sort
 
       if external_only # Take out our people
-        authors -= sorted_people.map { |person| full_name(person) }
+        authors -= members.map { |member| member[:name] }
       end
 
       authors

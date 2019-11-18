@@ -8,11 +8,11 @@
   </label>
   <label>
     <abbr title="HyperText Markup Language">HTML</abbr><span class="math">+</span><abbr title="Resource Description Framework in Attributes">RDFa</abbr>
-    <input readonly="readonly" type="text" class="code" value="<%= h %[<span vocab="http://schema.org/" property="citation" typeof="BlogPosting"><a property="title" rel="url" href="#{path_to(item, absolute: true)}##{item.fetch(:kind)}"><cite>#{item[:title]}</cite></a> (<span property="author" resource="#{author.fetch(:web_id)}" typeof="Person"><abbr property="name" content="#{item[:author_name]}" title="#{item[:author_name]}">#{author[:last_name]}</abbr></span> <time property="datePublished">#{simple_date(:published_at, item: item)}</time>)</span>] %>">
+    <input readonly="readonly" type="text" class="code" value="<%= h %[<span vocab="http://schema.org/" property="citation" typeof="BlogPosting"><a property="title" rel="url" href="#{path_to(item, absolute: true)}##{item.fetch(:kind)}"><cite>#{item[:title]}</cite></a> (<span property="author" resource="#{author.fetch(:web_id)}" typeof="Person"><abbr property="name" content="#{item[:author_name]}" title="#{item[:author_name]}">#{author[:sn]}</abbr></span> <time property="datePublished">#{simple_date(:published_at, item: item)}</time>)</span>] %>">
   </label>
   <label>
     <abbr title="HyperText Markup Language">HTML</abbr><span class="math">+</span>microformats
-    <input readonly="readonly" type="text" class="code" value="<%= h %[<span class="h-cite"><a class="u-url p-name" href="#{path_to(item, absolute: true)}"><cite>#{item[:title]}</cite></a> (<abbr class="p-author h-card" title="#{item[:author_name]}">#{author[:last_name]}</abbr> <time class="dt-published">#{simple_date(:published_at, item: item)}</time>)</span>] %>">
+    <input readonly="readonly" type="text" class="code" value="<%= h %[<span class="h-cite"><a class="u-url p-name" href="#{path_to(item, absolute: true)}"><cite>#{item[:title]}</cite></a> (<abbr class="p-author h-card" title="#{item[:author_name]}">#{author[:sn]}</abbr> <time class="dt-published">#{simple_date(:published_at, item: item)}</time>)</span>] %>">
   </label>
   <label>
     <abbr title="A TeX extension package for bibliographic citations">BibTeX</abbr>
@@ -26,7 +26,7 @@
   journal = {<%= @config[:site][:name] %>},
 <% end %>
   title = {<%= item[:title] %>},
-  author = {<%= [author.fetch(:last_name), author.fetch(:first_name)].join(', ') %>},
+  author = {<%= [author.fetch(:sn), author.fetch(:givenname)].join(', ') %>},
   month = <%= attribute_to_time(item[:published_at]).strftime('%b').downcase %>,
   year = {<%= attribute_to_time(item[:published_at]).year %>},
   version = {<%= simple_date(:updated_at, item: item) %>},

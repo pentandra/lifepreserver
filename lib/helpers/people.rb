@@ -13,42 +13,51 @@ module LifePreserver
       members + @items.find_all('/people/_*')
     end
 
-    # TODO: Fix sorting
+    # Grab all people, sorted first by surname then given name.
     def sorted_people
-      people.sort_by { |p| p.fetch(:name, full_name(p)).split.reverse }
+      people.sort_by { |person| [person[:sn], person[:givenname]] }
     end
 
     def person_by_name(name)
-      people.find { |person| full_name(person) == name }
+      people.find { |person| person.fetch(:name) == name }
     end
 
-    # Fetch the full name of the person.
+    # Return the path to the profile page of the given person.
     #
-    # Looks for the `:full_name` key, then `:name`, then assembles a name using
-    # the `:first_name` and `:last_name` keys as a last resort.
+    # If the person is a member, returns the path to his or her Pentandra
+    # personal profile page. If they do not have a WebID and were assigned a
+    # local id in the people index document, simply returns the value of the
+    # +:web_id+ attribute. If they have an external WebID, returns the part
+    # before the hash (`#`).
     #
-    # @param [Nanoc::Core::BasicItemView] person An item with kind `person`.
+    # @note According to the draft WebID spec (see
+    #   https://www.w3.org/2005/Incubator/webid/spec/identity/), for "WebIDs
+    #   with fragment identifiers (e.g. #me), the URI without the fragment
+    #   denotes the Profile Document" and is silent as to whether it should
+    #   follow HTTP redirections. This implementation keeps to the basic
+    #   standard and does not require any redirections.
     #
-    # @return [String] The full name of the person.
-    def full_name(person)
-      person[:full_name] || person[:name] || "#{person.fetch(:first_name)} #{person.fetch(:last_name)}"
-    end
-
-    # Get path to a person's photo.
+    # @see #populate_people_identifiers
+    # @see LifePreserver::Company#populate_member_identifiers
     #
-    # Assumes and verifies that all photos of people are stored in the
-    # site's images path. (I think this is good practice.) Looks first
-    # for a filename at the `:photo` key, then defaults to the slug if
-    # that key is not found.
+    # @param [Nanoc::Core::CompilationItemView] person The person who is the
+    #   topic of the profile page. Must have a +:web_id+ attribute.
+    # @param [Boolean] absolute (false) Whether to return an absolute path or
+    #   not. If the given person's profile page is not an item for this site,
+    #   it will always return an absolute path.
     #
-    # @param [Nanoc::BasicItemView] person a person item
-    # @param [Boolean] absolute (false) return an absolute URI?
-    #
-    # @return [String] path to photo
-    def path_to_photo(person, absolute: false)
-      photo_filename = person[:photo] || person[:slug] + '.jpg'
-      photo_item = @items["#{@config[:static_root]}#{@config[:site][:images_path]}/#{photo_filename}"]
-      path_to(photo_item, absolute: absolute)
+    # @return [String] The path to the given person's personal profile page or
+    #   path of the local identifier for a person without a WebID.
+    def path_to_profile_page(person, absolute: false)
+      web_id = person.fetch(:web_id).to_s
+      if member?(person)
+        profile_page_item = @items["#{@config[:static_root]}#{@config[:people][:page_path]}/#{person.fetch(:slug)}/index.*"]
+        path_to(profile_page_item, absolute: absolute)
+      elsif web_id.start_with?(@config[:base_url])
+        path_to(web_id, absolute: absolute)
+      else
+        web_id.split('#', 2).first
+      end
     end
 
     # Populate identifiers for referenced people without a WebID. If a person
@@ -66,8 +75,9 @@ module LifePreserver
     # @return [void]
     def populate_people_identifiers
       @items.find_all('/people/_*').each do |person|
-        person[:web_id] ||= "#{@config[:base_url]}#{@config[:people][:page_path]}##{member.fetch(:slug)}"
+        person[:web_id] ||= "#{@config[:base_url]}#{@config[:people][:page_path]}##{person.fetch(:slug)}"
       end
     end
+  end
   end
 end
