@@ -10,9 +10,12 @@ class FetchTagData < ::Nanoc::CLI::CommandRunner
   def run
     require 'sparql/client'
     require 'yaml'
-    require 'active_support/core_ext/hash/keys'
 
-    tags = YAML.load_file('etc/tags.yaml').map(&:symbolize_keys)
+    tags =
+      File.open('etc/tags.yaml') do |file|
+        YAML.safe_load(file.read, filename: file.path, symbolize_names: true)
+      end
+
 
     FileUtils.mkdir_p('var')
 
@@ -61,7 +64,9 @@ class FetchTagData < ::Nanoc::CLI::CommandRunner
     end
 
     $stderr.print 'Writing tag data… '
-    File.open('var/additional_tag_data.yaml', 'w+') { |io| io.write(YAML.dump(data)) }
+    File.open('var/additional_tag_data.yaml', 'w') do |file|
+      file.write(YAML.dump(data.map { |t| t.transform_keys(&:to_s) }))
+    end
     $stderr.puts 'done'
   end
 end

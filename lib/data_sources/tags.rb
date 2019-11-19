@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require 'active_support/core_ext/hash/keys'
 require 'active_support/core_ext/string/inflections'
+require 'yaml'
 
 module LifePreserver
   module DataSources
@@ -9,10 +9,16 @@ module LifePreserver
       identifier :tags
 
       def up
-        @tags = YAML.load_file(@config.fetch(:author_tags)).map(&:symbolize_keys)
+        @tags =
+          File.open(@config.fetch(:author_tags)) do |file|
+            YAML.safe_load(file.read, filename: file.path, symbolize_names: true)
+          end
 
         if (tag_metadata = @config[:tag_metadata])
-          @additional_tag_data = YAML.load_file(tag_metadata)
+          @additional_tag_data =
+            File.open(tag_metadata) do |file|
+              YAML.safe_load(file.read, filename: file.path, symbolize_names: true)
+            end
         end
       end
 

@@ -4,6 +4,7 @@ require 'active_support/core_ext/hash/keys'
 require 'active_support/core_ext/string/inflections'
 require 'rdf'
 require 'rdf/vocab'
+require 'yaml'
 
 module LifePreserver
   module DataSources
@@ -11,7 +12,12 @@ module LifePreserver
       identifier :vocabularies
 
       def up
-        @voaf_metadata ||= YAML.load_file('var/voaf_metadata.yaml')
+        @voaf_metadata =
+          File.open('var/voaf_metadata.yaml') do |file|
+            YAML.safe_load(file.read,
+                           filename: file.path,
+                           permitted_classes: [Symbol])
+          end
       end
 
       def items
