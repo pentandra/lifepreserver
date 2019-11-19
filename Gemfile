@@ -4,7 +4,7 @@ gem 'activesupport'      # for helpful extension methods
 gem 'builder'            # for XML stuff, such as sitemap and atom feeds
 gem 'chunky_png'         # for PNG generation of qrcodes
 gem 'compass'            # for advanced CSS
-gem 'ffi-hunspell',      git: 'https://github.com/cdchapman/ffi-hunspell'
+gem 'ffi-hunspell',      git: 'https://github.com/postmodern/ffi-hunspell' # for spell-checking
 gem 'git',               git: 'https://github.com/muellerj/ruby-git' # for version history and tagging info, temporarily using a fork with fixed options for git describe
 gem 'haml'
 gem 'html5small'         # for compact HTML
