@@ -91,7 +91,7 @@ module LifePreserver
         # Append base url, if absolute path is requested
         base_url = @config[:base_url]
         if base_url.nil?
-          raise Nanoc::Int::Errors::GenericTrivial.new("Cannot build global path to #{target.inspect}: site configuration has no base_url")
+          raise Nanoc::Core::TrivialError.new("Cannot build global path to #{target.inspect}: site configuration has no base_url")
         end
         path = absolute ? base_url + path : path.sub(base_url, '')
 

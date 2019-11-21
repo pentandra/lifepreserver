@@ -126,13 +126,13 @@ module LifePreserver
 
       def validate_config
         if @config[:base_url].nil?
-          raise Nanoc::Errors::GenericTrivial.new('Cannot build vCard: site configuration has no base_url')
+          raise Nanoc::Core::TrivialError.new('Cannot build vCard: site configuration has no base_url')
         end
       end
 
       def validate_required_parameters(params)
         if params[:full_name].nil? && @item[:name].nil?
-          raise Nanoc::Errors::GenericTrivial.new('Cannot build vCard: the full_name parameter MUST be present in either the params hash or item rep metadata')
+          raise Nanoc::Core::TrivialError.new('Cannot build vCard: the full_name parameter MUST be present in either the params hash or item rep metadata')
         end
       end
     end

@@ -64,7 +64,7 @@ class GenVocabs < ::Nanoc::CLI::CommandRunner
 
   def validate_options_and_arguments
     if arguments.empty? && !options[:all] && !options[:list]
-      raise(Nanoc::Core::Errors::GenericTrivial, 'nothing to do (pass either --all, --list, or a list of prefixes)')
+      raise(Nanoc::Core::TrivialError, 'nothing to do (pass either --all, --list, or a list of prefixes)')
     end
   end
 

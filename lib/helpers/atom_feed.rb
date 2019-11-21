@@ -61,28 +61,28 @@ module LifePreserver
 
         def validate_config
           if @config[:base_url].nil?
-            raise Nanoc::Int::Errors::GenericTrivial.new('Cannot build Atom feed: site configuration has no base_url')
+            raise Nanoc::Core::TrivialError.new('Cannot build Atom feed: site configuration has no base_url')
           end
         end
 
         def validate_feed_item
           if @title.nil?
-            raise Nanoc::Int::Errors::GenericTrivial.new('Cannot build Atom feed: no title in params, item or site config')
+            raise Nanoc::Core::TrivialError.new('Cannot build Atom feed: no title in params, item or site config')
           end
           if @author_name.nil?
-            raise Nanoc::Int::Errors::GenericTrivial.new('Cannot build Atom feed: no author_name in params, item or site config')
+            raise Nanoc::Core::TrivialError.new('Cannot build Atom feed: no author_name in params, item or site config')
           end
           if @author_uri.nil?
-            raise Nanoc::Int::Errors::GenericTrivial.new('Cannot build Atom feed: no author_uri in params, item or site config')
+            raise Nanoc::Core::TrivialError.new('Cannot build Atom feed: no author_uri in params, item or site config')
           end
         end
 
         def validate_entries
           if @relevant_entries.empty?
-            raise Nanoc::Int::Errors::GenericTrivial.new('Cannot build Atom feed: no entries')
+            raise Nanoc::Core::TrivialError.new('Cannot build Atom feed: no entries')
           end
           if @relevant_entries.any? { |a| a[:created_at].nil? }
-            raise Nanoc::Int::Errors::GenericTrivial.new('Cannot build Atom feed: one or more entries lack created_at')
+            raise Nanoc::Core::TrivialError.new('Cannot build Atom feed: one or more entries lack created_at')
           end
         end
 
