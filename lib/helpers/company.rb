@@ -21,6 +21,11 @@ module LifePreserver
         path_to(logo_item, absolute: absolute)
       end
 
+      def path_to_logotype(absolute: false)
+        logo_item = @items["#{@config[:static_root]}#{@config[:site][:images_path]}/pentandra-logotype.png"]
+        path_to(logo_item, absolute: absolute)
+      end
+
       # Grab all members.
       #
       # @return [Array<Nanoc::Core::CompilationItemView>] All member items.
