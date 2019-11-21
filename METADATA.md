@@ -292,8 +292,8 @@ The homepage of the service, e.g. "https://twitter.com/".
 
 ### `slug`
 
-A safe (i.e. spaces and non-ASCII characters replaced) version of a person's
-`name` used for building the personal profile page path.
+A safe (i.e. spaces and non-ASCII characters replaced) representation of a
+person's `name` used for building the personal profile page path.
 
 ### [`st`]
 

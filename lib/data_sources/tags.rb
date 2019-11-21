@@ -35,8 +35,6 @@ module LifePreserver
       protected
 
       def tag_to_item(tag)
-        slug = tag[:tag].parameterize
-
         attributes = {
           kind:      'tag',
           semantic:  tag.key?(:abstract),
@@ -46,7 +44,7 @@ module LifePreserver
         new_item(
           tag[:tag],
           attributes.merge(tag),
-          Nanoc::Identifier.new("/tags/#{slug}"),
+          Nanoc::Identifier.new("/tags/#{tag[:tag].parameterize}"),
           checksum_data: "tag=#{tag[:tag]},uri=#{tag[:uri]},abstract=#{tag[:abstract]}",
         )
       end

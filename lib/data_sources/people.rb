@@ -24,7 +24,7 @@ module LifePreserver
       protected
 
       def person_to_item(person)
-        slug = person[:name].parameterize
+        slug = person.fetch(:name).parameterize
 
         attributes = {
           kind: 'person',

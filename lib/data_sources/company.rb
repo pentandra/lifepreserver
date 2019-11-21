@@ -39,18 +39,16 @@ module LifePreserver
       protected
 
       def org_to_item(name, entry)
-        slug = name.parameterize
         org = transform(entry)
         new_item(
           name,
           {
             kind: 'organization',
             name: org[:cn] || name,
-            slug: slug,
             mtime: mtime_of(@config[:company_metafile]),
             is_hidden: true,
           }.merge(org),
-          Nanoc::Identifier.new("/company/_#{slug}"),
+          Nanoc::Identifier.new("/company/_#{name.parameterize}"),
           attributes_checksum_data: OpenSSL::Digest::SHA1.digest(Marshal.dump(Hash[entry])),
         )
       end
