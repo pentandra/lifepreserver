@@ -34,14 +34,10 @@ For the sitemap helper, how often the page is expected to change. See the
 The language of the document, formatted according to [BCP47]. Defaults to
 `Locale.default` if not specified. 
 
-### [`slug`]
+### `mtime`
 
-A safe (i.e. ASCII and spaces and other weird characters replaced) version of a
-item's `title` used for building the item path.
-
-### [`mtime`]
-
-The last modification time of the file upon which an item's data is based.
+The last modification time of the source (e.g. file) upon which an item's data
+is based. Required for most data sources.
 
 ## Metadata relating to document state
 
@@ -73,11 +69,11 @@ the URL!!! If you must, please also add the appropriate HTTP redirection.
 
 If a proposal has been submitted, when it was.
 
-## Metadata relating to document rendering and disposition
+## Metadata relating to inclusion of items in local indices
 
 ### [`is_hidden`]
 
-If true, item is excluded from sitemap, feeds, search, and other indices.
+If true, item is excluded from sitemap, feeds, search, and other local indices.
 
 ### [`is_hidden_from_human_search`]
 
@@ -144,8 +140,8 @@ items with `kind: redirect`.
 
 ## Metadata relating to people, member, and organization items
 
-Many of these come from LDAP and are defined in a bunch of [RFCs][ldap rfcs],
-specifically [RFC2798], [RFC4519], and [RFC4524].
+Many of these terms and descriptions come from LDAP, defined in a bunch of
+[RFCs][ldap rfcs], specifically [RFC2798], [RFC4519], and [RFC4524].
 
 ### `name`
 
@@ -293,6 +289,11 @@ or the `o` of an organization, e.g. "Chris Chapman".
 #### `service_homepage`
 
 The homepage of the service, e.g. "https://twitter.com/".
+
+### `slug`
+
+A safe (i.e. spaces and non-ASCII characters replaced) version of a person's
+`name` used for building the personal profile page path.
 
 ### [`st`]
 
