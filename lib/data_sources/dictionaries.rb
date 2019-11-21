@@ -15,7 +15,6 @@ module LifePreserver
           end
         end
 
-        Locale.default = @config.fetch(:default_lang, 'en_US')
         FFI::Hunspell.lang = Locale.default.to_simple.to_s
         Locale.set_app_language_tags(*@config.fetch(:language_priority, Locale.default))
       end

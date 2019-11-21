@@ -54,13 +54,14 @@ module LifePreserver
 
       # Get an instance of a dictionary for the given language.
       #
-      # @param lang (Locale.default) The language of the dictionary needed.
+      # @param [String] lang (Locale.default) The language tag of the
+      #   dictionary needed.
       #
-      # @return [SpellChecker::Dictionaries::Dictionary] The dictionary instance.
-      def dictionary(lang = Locale.default)
+      # @return [Dictionaries::Dictionary] The dictionary instance, if found.
+      def dictionary(lang = Locale.default.to_s)
         @@dictionary_cache ||= {}
 
-        hunspell_lang = find_closest_lang(lang)
+        hunspell_lang = find_simple_locale(lang)
 
         unless hunspell_lang
           warn "Unable to resolve a dictionary for '#{lang}' from the following candidates: #{Locale.app_language_tags.map(&:to_s).join(', ')}."
@@ -80,10 +81,19 @@ module LifePreserver
         @@dictionary_cache[hunspell_lang] = Dictionary.new(hunspell_lang, dependencies_for(base_dic))
       end
 
-      def find_closest_lang(lang)
-        lang_tag = Locale::Tag.parse(lang.to_s).to_simple
-        locale = Locale.app_language_tags.find { |c| c.to_s.start_with?(lang_tag.to_s) }
-
+      # Find the closest locale for the given language tag. Since the purpose
+      # here is to identify which dictionary to use, we are limiting ourselves
+      # to simple language tags.
+      #
+      # @param [String] lang The language tag.
+      #
+      # @return [String] The locale name of the first Locale.app_language_tag
+      #   which starts with the given language tag.
+      def find_simple_locale(lang)
+        lang_tag = Locale.create_language_tag(lang.to_s).to_simple
+        locale = Locale.app_language_tags.find do |app_tag|
+          app_tag.to_s.start_with?(lang_tag.to_s)
+        end
         locale&.to_s
       end
 

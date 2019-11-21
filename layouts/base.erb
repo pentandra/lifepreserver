@@ -1,11 +1,12 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<% lang = (@item.fetch(:lang) { Locale.default }).to_rfc %>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="<%= lang %>"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="<%= lang %>"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="<%= lang %>"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="<%= lang %>"> <!--<![endif]-->
   <head prefix="<%= prefix_mappings_for(:open_graph) %>">
 
-    <meta charset="utf-8" />
+    <meta charset="<%= @item.fetch(:charset) { Locale.charset } %>" />
     <title><%=h @item[:full_title] || "#{@item[:title]} ← #{@config[:site][:name]}" %></title>
     <meta name="description" content="<%=h @item[:meta_description] || @item[:description] || @item[:title] %>" />
     <meta name="generator" content="Nanoc <%=h @config[:nanoc_version] %>" />

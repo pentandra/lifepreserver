@@ -25,6 +25,10 @@ For the sitemap helper, the relative priority of the page.
 
 For the sitemap helper, how often the page is expected to change.
 
+### `lang`
+
+The document language, formatted according to [BCP47](https://tools.ietf.org/html/bcp47).
+
 ## Metadata relating to document state
 
 ### `created_at`

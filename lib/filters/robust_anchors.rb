@@ -76,10 +76,10 @@ module LifePreserver
         name = element.name
         content = (element.content || '').gsub(/[^[[:alpha:]]\.[[:space:]]]+/i, '')
         lang = find_node_lang(element)
-        tag = lang ? Locale.create_language_tag(lang) : Locale.default
+        locale_tag = lang ? Locale.create_language_tag(lang) : Locale.default
 
         if content
-          ps = PragmaticSegmenter::Segmenter.new(text: content, language: tag.language)
+          ps = PragmaticSegmenter::Segmenter.new(text: content, language: locale_tag.language)
           sentences = ps.segment
 
           unless sentences.empty?
