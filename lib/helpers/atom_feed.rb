@@ -1,11 +1,14 @@
 # frozen_string_literal: true
 
+require 'locale'
+
 require_relative 'weblog'
 require_relative 'link_to'
 require_relative 'dates'
 
 module LifePreserver
   module Helpers
+    # @see Nanoc::Helpers::Blogging
     module AtomFeed
       include LifePreserver::Helpers::Dates
       include LifePreserver::Helpers::LinkTo
@@ -14,16 +17,21 @@ module LifePreserver
       class AtomFeedBuilder
         attr_accessor :config
 
+        attr_accessor :alt_link
+        attr_accessor :alt_link_lang
+        attr_accessor :id
         attr_accessor :limit
         attr_accessor :relevant_entries
         attr_accessor :preserve_order
         attr_accessor :content_proc
         attr_accessor :excerpt_proc
+        attr_accessor :title_proc
         attr_accessor :title
         attr_accessor :author_name
         attr_accessor :author_uri
         attr_accessor :icon
         attr_accessor :logo
+        attr_accessor :rights
 
         def initialize(config, item)
           @config = config
@@ -37,7 +45,7 @@ module LifePreserver
         end
 
         def build
-          buffer = String.new
+          buffer = +''
           xml = Builder::XmlMarkup.new(target: buffer, indent: 2)
           build_for_feed(xml)
           buffer
@@ -55,8 +63,8 @@ module LifePreserver
           all.reverse.first(@limit)
         end
 
-        def last_entry
-          sorted_relevant_entries.first
+        def updated
+          @relevant_entries.map { |a| attribute_to_time(a[:updated_at] || a[:created_at]) }.max
         end
 
         def validate_config
@@ -87,26 +95,29 @@ module LifePreserver
         end
 
         def build_for_feed(xml)
-          root_url = @config[:base_url] + '/'
+          root_url = URI(@config[:base_url]).normalize.to_s
           xml.instruct!
           xml.feed(xmlns: 'http://www.w3.org/2005/Atom', 'xml:base' => root_url) do
 
             # Add primary attributes
-            xml.id(root_url)
+            xml.id(id || root_url)
             xml.title(@title)
 
             # Add date
-            xml.updated(attribute_to_time(last_entry[:updated_at]).__nanoc_to_iso8601_time)
+            xml.updated(updated.__nanoc_to_iso8601_time)
 
             # Add links
-            xml.link(rel: 'alternate', href: root_url)
-            xml.link(rel: 'self',      href: feed_url)
+            xml.link(rel: 'alternate', href: (alt_link || root_url), type: 'text/html', hreflang: alt_link_lang)
+            xml.link(rel: 'self',      href: feed_url,               type: 'application/atom+xml')
 
             # Add author information
             xml.author do
               xml.name(@author_name)
               xml.uri(@author_uri)
             end
+
+            # Add rights information
+            xml.rights(@rights) if @rights
 
             # Add icon and logo
             xml.icon(@icon) if @icon
@@ -124,10 +135,13 @@ module LifePreserver
           url = path_to(entry, absolute: true)
           return if url.nil?
 
+          # Fetch the language of the entry
+          entry_lang = entry.fetch(:lang) { Locale.default.to_rfc.to_s }
+
           xml.entry do
             # Add primary attributes
             xml.id(atom_tag_for(entry))
-            xml.title(entry[:title], type: 'html')
+            xml.title(title_proc.call(entry), type: 'html')
 
             # Add dates
             xml.published(attribute_to_time(entry[:published_at] || entry[:created_at]).__nanoc_to_iso8601_time)
@@ -142,11 +156,11 @@ module LifePreserver
             end
 
             # Add link
-            xml.link(rel: 'alternate', href: url)
+            xml.link(rel: 'alternate', href: url, type: 'text/html', hreflang: entry_lang)
 
             # Add content
             summary = excerpt_proc.call(entry)
-            xml.content(content_proc.call(entry), type: 'html')
+            xml.content(content_proc.call(entry), type: 'html', 'xml:lang' => entry_lang)
             xml.summary(summary, type: 'html') unless summary.nil?
           end
         end
@@ -159,13 +173,19 @@ module LifePreserver
       # @option params [Array] :entries ([]) An array of items to publish.
       # @option params [Boolean] :preserve_order (false) Whether to preserve the order
       #   of items as given. Otherwise items will be sorted by published or created date.
-      # @option params [Proc] :content_proc
-      # @option params [Proc] :excerpt_proc
+      # @option params [Proc] :content_proc (->(a) { a.compiled_content(snapshot: :pre) })
+      # @option params [Proc] :excerpt_proc (->(a) { a[:excerpt] })
+      # @option params [Proc] :title_proc (->(a) { a[:title] })
       # @option params [String] :title The title of the feed.
+      # @option params [String] :id The id of the feed.
+      # @option params [String] :alt_link A link to an alternate representation of the feed.
+      # @option params [String] :alt_link_lang (Locale.default.to_rfc) The language
+      #   of the alternate representation of the feed (i.e. +:alt_link+).
       # @option params [String] :author_name The default author of the feed.
       # @option params [String] :author_uri The default author URI of the feed.
       # @option params [String] :icon The icon associated with the feed.
       # @option params [String] :logo The logo associated with the feed.
+      # @option params [String] :rights The rights associated with the feed.
       #
       # @return [String]
       def atom_feed(params = {})
@@ -175,16 +195,21 @@ module LifePreserver
         builder = AtomFeedBuilder.new(@config, @item)
 
         # Fill builder
-        builder.limit             = params[:limit] || 5
-        builder.relevant_entries  = params[:entries] || []
+        builder.alt_link          = params[:alt_link]
+        builder.alt_link_lang     = params.fetch(:alt_link_lang) { Locale.default.to_rfc.to_s }
+        builder.id                = params[:id]
+        builder.limit             = params.fetch(:limit, 5)
+        builder.relevant_entries  = params.fetch(:entries, [])
         builder.preserve_order    = params.fetch(:preserve_order, false)
-        builder.content_proc      = params[:content_proc] || ->(a) { a.compiled_content(snapshot: :pre) }
-        builder.excerpt_proc      = params[:excerpt_proc] || ->(a) { a[:excerpt] }
+        builder.content_proc      = params.fetch(:content_proc, ->(a) { a.compiled_content(snapshot: :pre) })
+        builder.excerpt_proc      = params.fetch(:excerpt_proc, ->(a) { a[:excerpt] })
+        builder.title_proc        = params.fetch(:title_proc, ->(a) { a[:title] })
         builder.title             = params[:title] || @item[:title] || @config[:title]
         builder.author_name       = params[:author_name] || @item[:author_name] || @config[:author_name]
         builder.author_uri        = params[:author_uri] || @item[:author_uri] || @config[:author_uri]
         builder.icon              = params[:icon]
         builder.logo              = params[:logo]
+        builder.rights            = params[:rights]
 
         # Run
         builder.validate
@@ -203,7 +228,7 @@ module LifePreserver
         hostname, base_dir = %r{^.+?://([^/]+)(.*)$}.match(@config[:base_url])[1..2]
         formatted_date = attribute_to_time(item[:created_at]).__nanoc_to_iso8601_date
 
-        'tag:' + hostname + ',' + formatted_date + ':' + base_dir + path_to(item)
+        "tag:#{hostname},#{formatted_date}:#{base_dir}#{path_to(item)}"
       end
     end
   end
