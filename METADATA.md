@@ -1,5 +1,7 @@
 # Metadata descriptions for Nanoc items in this project
 
+Terms in brackets are optional.
+
 ## Metadata relating to the HTML document
 
 ### `title`
@@ -12,22 +14,23 @@ A description of the content of the HTML `meta[@name="description"]` elements
 as well as a short description of the document that is used as needed on the
 site.
 
-### `meta_description`
+### [`meta_description`]
 
 Overrides `description` when something more specific needs to said on the HTML
 `meta[@name="description"]` element.
 
-### `priority`
+### [`priority`]
 
 For the sitemap helper, the relative priority of the page.
 
-### `change_freq`
+### [`change_freq`]
 
 For the sitemap helper, how often the page is expected to change.
 
-### `lang`
+### [`lang`]
 
-The document language, formatted according to [BCP47](https://tools.ietf.org/html/bcp47).
+The document language, formatted according to [BCP47]. Defaults to
+`Locale.default` if not specified.
 
 ## Metadata relating to document state
 
@@ -39,7 +42,7 @@ When the document was created.
 
 When the document had a meaningful edit.
 
-### `published_at`
+### [`published_at`]
 
 Blog posts are built in this system whether they are published or not, to allow
 for private sharing before publication. Publishing a blog post does not change
@@ -55,9 +58,9 @@ the location of the document, but it does do the following:
 In other words, it _publicates_ the post. After publishing, you may not change
 the URL!!! If you must, please also add the appropriate HTTP redirection.
 
-### `submitted_at`
+### [`submitted_at`]
 
-When a proposal was submitted.
+If a proposal has been submitted, when it was.
 
 ## Metadata relating to document provenance
 
@@ -80,11 +83,11 @@ The kind of document. Currently we have the following kinds of documents:
 * `benefit-report`
 * `tag`: the tag itself (a controlled concept)
 * `tag-page` (distinct from tag as a concept)
-* `personal-profile-page`: a foaf personal profile document
+* `personal-profile-page`: a [foaf] [personal profile document][profile].
 * `archive-page`
 * `vocabulary`
 * `dependency`
-* `person`
+* `person`: A person that's not a member of the company.
 * `member`: A member of the company
 * `base-dictionary`
 * `extra-dictionary`
@@ -97,33 +100,38 @@ The kind of document. Currently we have the following kinds of documents:
 
 ## Metadata relating to relationships between documents
 
-### `cover_image_id`
+### [`cover_image_id`]
 
 An identifier for an image item that serves as a cover image for social media
 sharing using the Open Graph Protocol and Twitter's thing. The image should
 have an associated `yaml` file containing metadata about the image itself.
 
-### `part_of_id`
+### [`part_of_id`]
 
 This document is part of another document.
 
-### `in_reply_to_id`
+### [`in_reply_to_id`]
 
 The item to which this proposal is in reply. Most of the time, this should
 resolve to a document in the archive.
 
 ### `redirect_to_id`
 
-The item to which this item should be redirected in some way.
+The item to which this item should be redirected in some way. Required for
+items with `kind: redirect`.
 
 ## Metadata relating to people (and member) items
 
 ### `web_id` {.optional}
 
-The [WebID](https://www.w3.org/2005/Incubator/webid/spec/identity/) of the
-person, if the person has one.
+The [WebID] of the person, if the person has one.
 
 ### `hashtag` {.optional}
 
 The fragment identifier to use to identify the person denoted by the WebID. By
 default uses the identifier `me`.
+
+[BCP47]: https://tools.ietf.org/html/bcp47
+[WebID]: https://www.w3.org/2005/Incubator/webid/spec/identity/
+[FOAF]: http://xmlns.com/foaf/spec/
+[profile]: http://xmlns.com/foaf/spec/#term_PersonalProfileDocument
