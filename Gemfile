@@ -14,7 +14,7 @@ gem 'locale'
 gem 'nanoc'              # for compiling the site
 gem 'nanoc-cachebuster', git: 'https://github.com/cdchapman/nanoc-cachebuster', branch: 'nanoc-4'
 gem 'nokogiri'           # for parsing HTML
-gem 'nokogumbo'          # for parsing HTML5
+gem 'nokogumbo'          # A Nokogiri extension for parsing HTML5
 gem 'pandoc-ruby'        # for benefit reports in ConTeXt
 gem 'rainpress'          # for compact CSS
 gem 'rest-client'        # for downloads of external resources
@@ -34,6 +34,7 @@ group :development, optional: true do
   gem 'guard-livereload'
   gem 'guard-nanoc'
   gem 'guard-rake'
+  gem 'yard'
 end
 
 group :test, optional: true do
@@ -46,5 +47,4 @@ group :test, optional: true do
   gem 'watir'
   gem 'simplecov', require: false
   gem 'w3c_validators'
-  gem 'yard'
 end
