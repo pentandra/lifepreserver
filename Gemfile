@@ -40,11 +40,18 @@ end
 group :test, optional: true do
   gem 'fuubar'
   gem 'minitest'
+  gem 'nanoc-spec'
   gem 'rake'
   gem 'rspec'
+  gem 'rspec-its'
   gem 'rspec-mocks'
   gem 'rubocop'
+  gem 'rubocop-rspec'
+  gem 'timecop'
+  gem 'tty-command'
+  gem 'vcr'
   gem 'watir'
+  gem 'webmock'
   gem 'simplecov', require: false
   gem 'w3c_validators'
 end
