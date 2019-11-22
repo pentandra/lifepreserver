@@ -1,31 +1,66 @@
+inherit_from: .rubocop_todo.yml
+
+# ----- CONFIGURED -----
+
 AllCops:
+  TargetRubyVersion: 2.4
   Exclude:
-    - 'lib/vocab/**/*'
+    - 'lib/vocabs/*.rb'
   DisplayCopNames: true
 
-FileName:
+require: rubocop-rspec
+
+# We use filenames such as "update-company-data.rb" that translate into method names.
+Naming/FileName:
   Exclude:
     - 'commands/*.rb'
 
 Style/TrailingCommaInArguments:
   EnforcedStyleForMultiline: comma
 
-Style/TrailingCommaInLiteral:
+Style/TrailingCommaInArrayLiteral:
   EnforcedStyleForMultiline: comma
 
-Style/IndentArray:
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma
+
+Layout/IndentFirstArrayElement:
   EnforcedStyle: consistent
 
-# ----- DISABLED (hard) -----
+Naming/UncommunicativeMethodParamName:
+  AllowedNames:
+    - "to" # destination
+    - "e"  # element
+    - "id" # identifier
+    - "io" # IO instance
+    - "y"  # enumerator yielder
 
-# Hash parameters should not have braces, but this cop is unable to distinguish
-# between has parameters and methods that take a hash as a param.
-BracesAroundHashParameters:
-  Enabled: false
+# ----- CONFIGURED (exceptions for tests) -----
 
-# Rubocop trips up on this.
-Style/LeadingCommentSpace:
-  Enabled: false
+# This breaks RSpec on occasion, e.g. `expect { subject }.not_to change { foo }`,
+# and generally does not provide useful warnings
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - 'spec/**/*.rb'
+
+# `rescue nil` is useful in specs where the exception is not important, but
+# the size effects are.
+Style/RescueModifier:
+  Exclude:
+    - 'spec/**/*.rb'
+
+# A common pattern in tests is to define anonymous classes in which methods are defined, which trips
+# up Rubocop’s nested method definition cop.
+Lint/NestedMethodDefinition:
+  Exclude:
+    - 'test/**/*.rb'
+    - 'spec/**/*.rb'
+
+# This is used in tests, to verify the effect of state-changing functions.
+Style/GlobalVars:
+  Exclude:
+    - 'test/**/*.rb'
+    - 'spec/**/*.rb'
 
 # ----- DISABLED (metrics) -----
 
@@ -65,33 +100,42 @@ Metrics/PerceivedComplexity:
 
 # We should embrace UTF-8, not avoid it. Since the Encoding cop is enabled,
 # there’s no point in enforcing ASCII comments.
-AsciiComments:
+Style/AsciiComments:
   Enabled: false
 
 # It does not make sense to enforce everything to have documentation.
-Documentation:
+Style/Documentation:
   Enabled: false
 
 # if/unless at the end of a line makes it too easy to oversee.
-IfUnlessModifier:
+Style/IfUnlessModifier:
   Enabled: false
 
 # Personal preference is to have decent constructors for exceptions rather than
 # just a class and a message.
-RaiseArgs:
-  Enabled: false
-
-# Personal preference is to use `raise` to signal exceptions (normal control
-# flow should not use exceptions anyway).
-SignalException:
+Style/RaiseArgs:
   Enabled: false
 
 # Some methods that appear to be accessors (return a single value or set a
 # single value) should still not be considered to be accessors. This is a purely
 # semantic difference.
-TrivialAccessors:
+Style/TrivialAccessors:
   Enabled: false
 
 # This does not always semantically make sense.
-GuardClause:
+Style/GuardClause:
+  Enabled: false
+
+# Used for "undo work, whatever error happens"
+Style/RescueStandardError:
+  Enabled: false
+
+# For the sake of consistency, it makes the most sense to retain $stderr.puts
+# when used in situations where $stderr.flush, $stderr.print, … are also used.
+Style/StderrPuts:
+  Enabled: false
+
+# This catches too many false positives. A string that contains a % followed by
+# a letter is not always a format string.
+Style/FormatStringToken:
   Enabled: false
