@@ -63,6 +63,7 @@ data_sources:
 
   - type: people
     people_data: 'etc/people.yaml'
+    items_root: &people_root /people
 
 
 # Config for Nanoc environments
@@ -84,8 +85,8 @@ environments:
     cache:
       short_urls: 'var/short_urls.yaml'
 
-    company:
-      page_path: /company
+    company_root: /company
+    people_root: *people_root
 
     erb:
       trim_mode: '>'
@@ -95,9 +96,6 @@ environments:
       browse_url: "https://github.com/pentandra/lifepreserver"
       tag_url: "https://github.com/pentandra/lifepreserver/releases/tag"
       version_history_url: "https://github.com/lifepreserver/commits/master"
-
-    people:
-      page_path: /people
 
     site: &site
       name: Pentandra

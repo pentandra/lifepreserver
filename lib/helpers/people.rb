@@ -50,7 +50,7 @@ module LifePreserver
       def path_to_profile_page(person, absolute: false)
         web_id = person.fetch(:web_id).to_s
         if member?(person)
-          profile_page_item = @items["#{@config[:static_root]}#{@config[:people][:page_path]}/#{person.fetch(:slug)}/index.*"]
+          profile_page_item = @items["#{@config[:static_root]}#{@config[:people_root]}/#{person.fetch(:slug)}/index.*"]
           path_to(profile_page_item, absolute: absolute)
         elsif web_id.start_with?(@config[:base_url])
           path_to(web_id, absolute: absolute)
@@ -72,7 +72,7 @@ module LifePreserver
       # @return [void]
       def populate_people_identifiers
         @items.find_all('/people/_*').each do |person|
-          person[:web_id] ||= "#{@config[:base_url]}#{@config[:people][:page_path]}##{person.fetch(:slug)}"
+          person[:web_id] ||= "#{@config[:base_url]}#{@config[:people_root]}##{person.fetch(:slug)}"
         end
       end
     end

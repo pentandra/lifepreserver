@@ -36,7 +36,7 @@ module LifePreserver
         new_item(
           person[:name],
           attributes.merge(person),
-          Nanoc::Identifier.new("/people/_#{slug}"),
+          Nanoc::Identifier.new("/_#{slug}"),
           attributes_checksum_data: Digest::SHA1.digest(Marshal.dump(person)),
         )
       end

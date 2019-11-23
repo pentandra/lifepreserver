@@ -65,7 +65,7 @@ module LifePreserver
       # @return [void]
       def populate_member_identifiers
         members.each do |member|
-          member[:web_id] ||= "#{@config[:base_url]}#{@config[:people][:page_path]}/#{member.fetch(:slug)}/##{member.fetch(:hashtag, 'me')}"
+          member[:web_id] ||= "#{@config[:base_url]}#{@config[:people_root]}/#{member.fetch(:slug)}/##{member.fetch(:hashtag, 'me')}"
         end
       end
 
@@ -79,7 +79,7 @@ module LifePreserver
           @items.create(
             %(<%= render('/personal_profile.*', person_name: '#{member[:name]}') %>),
             { title: member[:name], kind: 'personal-profile-page', description: "Personal profile of #{member[:name]}" },
-            "#{@config[:static_root]}#{@config[:people][:page_path]}/#{member.fetch(:slug)}/index.erb",
+            "#{@config[:static_root]}#{@config[:people_root]}/#{member.fetch(:slug)}/index.erb",
             binary: false,
           )
         end
