@@ -112,10 +112,10 @@ module LifePreserver
       # @raise [Nanoc::Core::TrivialError] If the dictionaries_root is not set
       #   in site configuration.
       #
-      # @see {file:var/dictionaries/README.md}
+      # @see file:var/dictionaries/README.md Dictionaries README
       #
-      # @param [String] :langtag ('*') The glob pattern of the language tag.
-      # @param [String] :name ('*') The glob pattern with which to search
+      # @param [String] langtag ('*') The glob pattern of the language tag.
+      # @param [String] name ('*') The glob pattern with which to search
       #   for specific dictionary items, under the +:langtag+ parent pattern.
       #
       # @return [Array<Nanoc::Core::BasicItemView>] All dictionary items that
@@ -131,7 +131,7 @@ module LifePreserver
 
       # Find all dictionaries of acronyms.
       #
-      # @see {file:var/dictionaries/README.md}
+      # @see file:var/dictionaries/README.md Dictionaries README
       #
       # @return [Array<Nanoc::Core::BasicItemView>] All custom Hunspell acronym
       #   dictionary items.
