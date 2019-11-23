@@ -6,6 +6,8 @@ require 'locale'
 module LifePreserver
   module Helpers
     module Dictionaries
+      # A helper class to manage an Hunspell dictionary item and its
+      # item dependencies.
       class Dictionary
         attr_reader :dependencies
         attr_reader :lang
@@ -19,9 +21,7 @@ module LifePreserver
         def initialize(lang = FFI::Hunspell.lang, dependencies = [])
           @lang = Locale.create_language_tag(lang).to_s
           @dependencies = []
-
           @dic = FFI::Hunspell.dict(lang)
-          ObjectSpace.define_finalizer(self, self.class.finalize(@dic))
 
           dependencies.each do |item|
             @dependencies << item
@@ -30,25 +30,24 @@ module LifePreserver
               @dic.add_dic(item.raw_filename)
             end
 
-            item.fetch(:entries, []).each { |entry| process_entry(entry) }
+            # process any custom entries
+            item.fetch(:entries, []).each do |entry|
+              if entry.start_with?('*')
+                @dic.delete(entry[1..-1])
+              elsif entry.include?('/')
+                word, example = entry.split('/', 2)
+                @dic.add_with_affix(word, example)
+              else
+                @dic.add(entry)
+              end
+            end
           end
+
+          ObjectSpace.define_finalizer(self, self.class.finalize(@dic))
         end
 
         def valid?(word)
           @dic.valid?(word)
-        end
-
-        protected
-
-        def process_entry(entry)
-          if entry.start_with?('*')
-            @dic.delete(entry[1..-1])
-          elsif entry.include?('/')
-            word, example = entry.split('/', 2)
-            @dic.add_with_affix(word, example)
-          else
-            @dic.add(entry)
-          end
         end
       end
 
@@ -58,7 +57,7 @@ module LifePreserver
       #   dictionary needed.
       #
       # @return [Dictionaries::Dictionary] The dictionary instance, if found.
-      def dictionary(lang = Locale.default.to_s)
+      def dictionary(lang = Locale.default)
         @@dictionary_cache ||= {}
 
         hunspell_lang = find_simple_locale(lang)
@@ -72,7 +71,7 @@ module LifePreserver
           return @@dictionary_cache[hunspell_lang]
         end
 
-        base_dic = @items["/lifepreserver/dictionaries/*/#{hunspell_lang}.dic"]
+        base_dic = @items["/**/#{hunspell_lang}.dic"]
 
         unless base_dic && base_dic[:kind] =~ /base-dictionary/
           raise "Could not find base dictionary item for language '#{hunspell_lang}'"
@@ -87,14 +86,13 @@ module LifePreserver
       #
       # @param [String] lang The language tag.
       #
-      # @return [String] The locale name of the first Locale.app_language_tag
-      #   which starts with the given language tag.
+      # @return [Locale::Tag] The locale of the first +Locale.app_language_tag+
+      #   whos value starts with the value of the given language tag.
       def find_simple_locale(lang)
         lang_tag = Locale.create_language_tag(lang.to_s).to_simple
-        locale = Locale.app_language_tags.find do |app_tag|
+        Locale.app_language_tags.find do |app_tag|
           app_tag.to_s.start_with?(lang_tag.to_s)
         end
-        locale&.to_s
       end
 
       def dictionaries
@@ -111,15 +109,17 @@ module LifePreserver
 
       protected
 
-      # Collect all dependent items of the given base dictionary item. Dependent
-      #   items include supplementary personal and extra dictionaries.
+      # Collect all dependent items of the given base dictionary item.
+      #
+      # @note Dependent items consist of all supplementary personal and extra
+      #   dictionaries located in the same directory as the base dictionary.
       #
       # @param [Nanoc::Core::BasicItemView] base_dic The base dictionary item.
       #
       # @return [Array<Nanoc::Core::BasicItemView>] All the item dependencies of the base
       #   dictionary item, including the base dictionary item itself.
       def dependencies_for(base_dic)
-        dependencies = @items.find_all(File.dirname(base_dic.identifier.to_s) + '/*')
+        dependencies = @items.find_all(File.join(File.dirname(base_dic.identifier.to_s), '*'))
         dependencies.keep_if { |d| d._unwrap.attributes[:kind] =~ /(personal|extra)-dictionary/ }
         dependencies << base_dic
       end
