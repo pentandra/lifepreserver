@@ -1,6 +1,13 @@
+# frozen_string_literal: true
+
 require 'helpers/dates'
 
-RSpec.describe LifePreserver::Dates, helper: true do
+RSpec.describe LifePreserver::Helpers::Dates, helper: true do
+  before do
+    allow(ctx.dependency_tracker).to receive(:enter)
+    allow(ctx.dependency_tracker).to receive(:exit)
+  end
+
   describe '#attribute_to_time' do
     subject { helper.attribute_to_time(arg) }
 
@@ -13,21 +20,25 @@ RSpec.describe LifePreserver::Dates, helper: true do
 
     context 'with Time instance' do
       let(:arg) { around_noon_utc }
+
       it { is_expected.to eql(around_noon_utc) }
     end
 
     context 'with Date instance' do
       let(:arg) { Date.new(2015, 11, 7) }
+
       it { is_expected.to eql(beginning_of_day_utc) }
     end
 
     context 'with DateTime instance' do
       let(:arg) { DateTime.new(2015, 11, 7, 13, 31, 16) }
+
       it { is_expected.to eql(around_noon_utc) }
     end
 
     context 'with string' do
       let(:arg) { '2015-11-7 13:31:16' }
+
       it { is_expected.to eql(around_noon_local) }
     end
   end

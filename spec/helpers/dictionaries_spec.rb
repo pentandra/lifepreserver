@@ -1,8 +1,10 @@
-require 'helpers/dictionaries'
-require 'ffi/hunspell'
+# frozen_string_literal: true
 
-RSpec.describe LifePreserver::Dictionaries, helper: true, chdir: false do
-  let(:directories) { ['etc/dictionaries'] }
+require 'ffi/hunspell'
+require 'helpers/dictionaries'
+
+RSpec.describe LifePreserver::Helpers::Dictionaries, helper: true, chdir: false do
+  let(:directories) { ['var/dictionaries'] }
   let(:default_lang) { 'en_US' }
 
   before do
@@ -20,7 +22,7 @@ RSpec.describe LifePreserver::Dictionaries, helper: true, chdir: false do
 
   after do
     # clear out dictionary cache
-    LifePreserver::Dictionaries.class_variable_set(:@@dictionaries, {})
+    LifePreserver::Helpers::Dictionaries.class_variable_set(:@@dictionary_cache, {})
   end
 
   describe '.dictionary' do
@@ -40,21 +42,21 @@ RSpec.describe LifePreserver::Dictionaries, helper: true, chdir: false do
     end
 
     context 'with a hunspell language code' do
-      subject { helper.dictionary(lang).lang }
+      subject { helper.dictionary(lang) }
 
       context 'with a supported language value' do
         let(:lang) { 'en_US' }
 
         it 'selects the given language' do
-          expect(subject).to eq(lang)
+          expect(subject.lang).to eq(lang)
         end
       end
 
       context 'with an unsupported language value' do
         let(:lang) { 'zz_YY' }
 
-        it 'raises an exception' do
-          expect { subject }.to raise_error(RuntimeError)
+        it 'should be nil' do
+          expect(subject).to be_nil
         end
       end
 
@@ -62,7 +64,7 @@ RSpec.describe LifePreserver::Dictionaries, helper: true, chdir: false do
         let(:lang) { nil }
 
         it 'selects the default dictionary language' do
-          expect(subject).to eq(FFI::Hunspell.lang)
+          expect(subject.lang).to eq(FFI::Hunspell.lang)
         end
       end
 
@@ -70,17 +72,18 @@ RSpec.describe LifePreserver::Dictionaries, helper: true, chdir: false do
         let(:lang) { 'en-Latn-US-x-twain' }
 
         it 'maps to the hunspell value' do
-          expect(subject).to eq('en_US')
+          expect(subject.lang).to eq('en_US')
         end
       end
     end
 
     context 'with a non-existent base dictionary' do
-      let(:lang) { 'en_UK' }
-
       before do
-        ctx.create_item('content', { kind: 'extra-dictionary' }, '/dir1/en_UK.dic')
+        Locale.set_app_language_tags('en_US', 'en_GB', 'fr_FR')
+        ctx.create_item('content', { kind: 'extra-dictionary' }, '/dir3/fr_FR.dic')
       end
+
+      let(:lang) { 'fr_FR' }
 
       it 'does not accept an extra dictionary as a base dictionary' do
         expect { subject }.to raise_error(RuntimeError)
@@ -124,31 +127,36 @@ RSpec.describe LifePreserver::Dictionaries, helper: true, chdir: false do
     end
   end
 
-  describe '.find_closest_lang' do
-    subject { helper.find_closest_lang(arg).to_s }
+  describe '.find_simple_locale' do
+    subject { helper.find_simple_locale(arg).to_s }
 
     context 'using a nil parameter' do
       let(:arg) { nil }
+
       it { is_expected.to eq(default_lang) }
     end
 
     context 'using an empty string' do
       let(:arg) { '' }
+
       it { is_expected.to eq(default_lang) }
     end
 
-    context 'passing a simple BCP 47 language tag' do
+    context 'passing a simple BCP47 language tag' do
       let(:arg) { 'es' }
+
       it { is_expected.to eq('es_ES') }
     end
 
-    context 'passing a full BCP 47 tag' do
+    context 'passing a full BCP47 tag' do
       let(:arg) { 'en-GB' }
+
       it { is_expected.to eq('en_GB') }
     end
 
-    context 'passing an extended BCP 47 tag' do
+    context 'passing an extended BCP47 tag' do
       let(:arg) { 'en-US-x-twain' }
+
       it { is_expected.to eq('en_US') }
     end
   end
