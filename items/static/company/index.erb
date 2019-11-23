@@ -335,7 +335,7 @@ priority: 0.6
       <h3 property="foaf:name">Core Team</h3>
 
       <% sorted_members.select { |member| member.fetch(:ou) == 'Core Team' }.each_with_index do |member, index| %>
-        <%= render('/partials/membercard.*', member: member, index: index) %>
+        <%= render('/partials/personcard.*', person: member, index: index) %>
       <% end %>
 
     </section>
