@@ -112,7 +112,7 @@ module LifePreserver
       # @raise [Nanoc::Core::TrivialError] If the dictionaries_root is not set
       #   in site configuration.
       #
-      # @see file:var/dictionaries/README.md Dictionaries README
+      # @see file:var/dictionaries/README.md Dictionary Naming Conventions
       #
       # @param [String] langtag ('*') The glob pattern of the language tag.
       # @param [String] name ('*') The glob pattern with which to search

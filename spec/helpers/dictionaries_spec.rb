@@ -55,7 +55,7 @@ RSpec.describe LifePreserver::Helpers::Dictionaries, helper: true, chdir: false 
       context 'with an unsupported language value' do
         let(:lang) { 'zz_YY' }
 
-        it 'should be nil' do
+        it 'expect subject to be nil' do
           expect(subject).to be_nil
         end
       end
@@ -130,6 +130,38 @@ RSpec.describe LifePreserver::Helpers::Dictionaries, helper: true, chdir: false 
         it 'supports affixes of the base dictionary' do
           expect(subject.valid?('Pentandra\'s')).to be(true)
         end
+      end
+    end
+  end
+
+  describe '#dictionaries' do
+    subject { helper.dictionaries(langtag: langtag, name: name) }
+
+    let(:langtag) { '*' }
+    let(:name)    { '*' }
+
+    context 'with no site configuration' do
+      before do
+        ctx.config[:dictionaries_root] = nil
+      end
+
+      it 'raises error' do
+        expect { subject }.to raise_error(Nanoc::Core::TrivialError)
+      end
+    end
+
+    context 'with default params' do
+      it 'will return all dictionary items' do
+        expect(subject).to match_array(ctx.items)
+      end
+    end
+
+    context 'with english language tag pattern' do
+      let(:langtag) { 'en_*' }
+
+      it 'will return all dictionary items with english locales' do
+        expect(subject).to contain_exactly(ctx.items['/dicts/en_US/en_US.dic'],
+                                           ctx.items['/dicts/en_GB/en_GB.dic'])
       end
     end
   end
