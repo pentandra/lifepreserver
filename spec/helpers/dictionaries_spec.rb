@@ -5,6 +5,7 @@ require 'helpers/dictionaries'
 
 RSpec.describe LifePreserver::Helpers::Dictionaries, helper: true, chdir: false do
   let(:directories) { ['var/dictionaries'] }
+  let(:dictionaries_root) { '/dicts' }
   let(:default_lang) { 'en_US' }
 
   before do
@@ -13,11 +14,12 @@ RSpec.describe LifePreserver::Helpers::Dictionaries, helper: true, chdir: false 
     FFI::Hunspell.lang = default_lang
     Locale.default = default_lang
     Locale.set_app_language_tags('en_US', 'en_GB', 'es_ES')
+    ctx.config[:dictionaries_root] = dictionaries_root
 
     # create some dictionaries
-    ctx.create_item('content', { kind: 'base-dictionary' }, '/dir1/en_US.dic')
-    ctx.create_item('content', { kind: 'base-dictionary' }, '/dir1/en_GB.dic')
-    ctx.create_item('content', { kind: 'base-dictionary' }, '/dir2/es_ES.dic')
+    ctx.create_item('content', { kind: 'base-dictionary' }, '/dicts/en_US/en_US.dic')
+    ctx.create_item('content', { kind: 'base-dictionary' }, '/dicts/en_GB/en_GB.dic')
+    ctx.create_item('content', { kind: 'base-dictionary' }, '/dicts/es_ES/es_ES.dic')
   end
 
   after do
@@ -25,8 +27,8 @@ RSpec.describe LifePreserver::Helpers::Dictionaries, helper: true, chdir: false 
     LifePreserver::Helpers::Dictionaries.class_variable_set(:@@dictionary_cache, {})
   end
 
-  describe '.dictionary' do
-    subject { helper.dictionary(lang) }
+  describe '#dictionary_for' do
+    subject { helper.dictionary_for(lang) }
 
     context 'with default parameters' do
       let(:lang) { nil }
@@ -36,14 +38,12 @@ RSpec.describe LifePreserver::Helpers::Dictionaries, helper: true, chdir: false 
       end
 
       it 'returns the same object when called again' do
-        dic2 = helper.dictionary
-        expect(subject).to be(dic2)
+        subject2 = helper.dictionary_for(lang)
+        expect(subject).to be(subject2)
       end
     end
 
     context 'with a hunspell language code' do
-      subject { helper.dictionary(lang) }
-
       context 'with a supported language value' do
         let(:lang) { 'en_US' }
 
@@ -71,16 +71,16 @@ RSpec.describe LifePreserver::Helpers::Dictionaries, helper: true, chdir: false 
       context 'with a BCP 47 language tag' do
         let(:lang) { 'en-Latn-US-x-twain' }
 
-        it 'maps to the hunspell value' do
+        it 'maps to the simple Hunspell value' do
           expect(subject.lang).to eq('en_US')
         end
       end
     end
 
-    context 'with a non-existent base dictionary' do
+    context 'with a missing base dictionary' do
       before do
         Locale.set_app_language_tags('en_US', 'en_GB', 'fr_FR')
-        ctx.create_item('content', { kind: 'extra-dictionary' }, '/dir3/fr_FR.dic')
+        ctx.create_item('content', { kind: 'extra-dictionary' }, '/dicts/fr_FR/fr_FR.dic')
       end
 
       let(:lang) { 'fr_FR' }
@@ -92,15 +92,15 @@ RSpec.describe LifePreserver::Helpers::Dictionaries, helper: true, chdir: false 
 
     context 'with dependencies' do
       before do
-        ctx.create_item('content', { kind: 'personal-dictionary', entries: ['figgy/piggy', '*word', 'Nanoc'] }, '/dir1/personal.dic')
-        ctx.create_item('work on this', { kind: 'extra-dictionary' }, '/dir2/extra.dic')
+        ctx.create_item('content', { kind: 'personal-dictionary', entries: ['figgy/piggy', '*word', 'Nanoc'] }, '/dicts/en_US/personal.dic')
+        ctx.create_item('Pentandra/M', { kind: 'extra-dictionary' }, '/dicts/en_GB/extra.dic')
       end
 
-      context 'with a personal dictionary in dir1' do
+      context 'on a personal en_US dictionary' do
         let(:lang) { 'en-US' }
 
         it 'adds the personal dictionary to the dictionary dependencies' do
-          expect(subject.dependencies).to include(ctx.items['/dir1/personal.dic'])
+          expect(subject.dependencies).to include(ctx.items['/dicts/en_US/personal.dic'])
         end
 
         it 'adds entries to the base dictionary' do
@@ -116,18 +116,25 @@ RSpec.describe LifePreserver::Helpers::Dictionaries, helper: true, chdir: false 
         end
       end
 
-      context 'with an extra dictionary in dir2' do
-        let(:lang) { 'es_ES' }
-=begin to work on this at some point
+      xcontext 'on an extra en_GB dictionary' do
+        let(:lang) { 'en_GB' }
+
         it 'adds the extra dictionary to the dictionary dependencies' do
-          expect(subject.dependencies).to include(ctx.items['/dir2/extra.dic'])
+          expect(subject.dependencies).to include(ctx.items['/dicts/en_GB/extra.dic'])
         end
-=end
+
+        it 'adds entries to the base dictionary' do
+          expect(subject.valid?('Pentandra')).to be(true)
+        end
+
+        it 'supports affixes of the base dictionary' do
+          expect(subject.valid?('Pentandra\'s')).to be(true)
+        end
       end
     end
   end
 
-  describe '.find_simple_locale' do
+  describe '#find_simple_locale' do
     subject { helper.find_simple_locale(arg).to_s }
 
     context 'using a nil parameter' do

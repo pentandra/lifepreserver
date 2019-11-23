@@ -6,10 +6,14 @@ require 'locale'
 module LifePreserver
   module Helpers
     module Dictionaries
-      # A helper class to manage an Hunspell dictionary item and its
-      # item dependencies.
-      class Dictionary
+      # A helper class that wraps a Hunspell dictionary and accounts for any
+      # dependent items.
+      class WrappedHunspellDictionary
+        # @return [Array<Nanoc::Core::BasicItemView>] The dependencies of the
+        #   current Hunspell dictionary item.
         attr_reader :dependencies
+
+        # @return [String] The language (locale tag) of the dictionary.
         attr_reader :lang
 
         class << self
@@ -21,43 +25,50 @@ module LifePreserver
         def initialize(lang = FFI::Hunspell.lang, dependencies = [])
           @lang = Locale.create_language_tag(lang).to_s
           @dependencies = []
-          @dic = FFI::Hunspell.dict(lang)
+          @dict = FFI::Hunspell.dict(lang)
 
           dependencies.each do |item|
             @dependencies << item
 
             if item[:kind] == 'extra-dictionary'
-              @dic.add_dic(item.raw_filename)
+              @dict.add_dic(item.raw_filename)
             end
 
             # process any custom entries
             item.fetch(:entries, []).each do |entry|
               if entry.start_with?('*')
-                @dic.delete(entry[1..-1])
+                @dict.delete(entry[1..-1])
               elsif entry.include?('/')
                 word, example = entry.split('/', 2)
-                @dic.add_with_affix(word, example)
+                @dict.add_with_affix(word, example)
               else
-                @dic.add(entry)
+                @dict.add(entry)
               end
             end
           end
 
-          ObjectSpace.define_finalizer(self, self.class.finalize(@dic))
+          ObjectSpace.define_finalizer(self, self.class.finalize(@dict))
         end
 
+        # To check whether the given word is valid.
+        #
+        # @return [Boolean] True if the word is valid, false if not.
         def valid?(word)
-          @dic.valid?(word)
+          @dict.valid?(word)
         end
       end
 
       # Get an instance of a dictionary for the given language.
       #
+      # @note The instances of the dictionary are cached once they have been
+      #   requested and reused for subsequent requests.
+      #
       # @param [String] lang (Locale.default) The language tag of the
       #   dictionary needed.
       #
-      # @return [Dictionaries::Dictionary] The dictionary instance, if found.
-      def dictionary(lang = Locale.default)
+      # @return [Dictionaries::WrappedHunspellDictionary] The dictionary
+      #   instance, if found.
+      def dictionary_for(lang = Locale.default)
         @@dictionary_cache ||= {}
 
         hunspell_lang = find_simple_locale(lang)
@@ -71,13 +82,14 @@ module LifePreserver
           return @@dictionary_cache[hunspell_lang]
         end
 
-        base_dic = @items["/**/#{hunspell_lang}.dic"]
+        base_dic = dictionaries(langtag: hunspell_lang, name: "#{hunspell_lang}.dic").first
 
         unless base_dic && base_dic[:kind] =~ /base-dictionary/
           raise "Could not find base dictionary item for language '#{hunspell_lang}'"
         end
 
-        @@dictionary_cache[hunspell_lang] = Dictionary.new(hunspell_lang, dependencies_for(base_dic))
+        @@dictionary_cache[hunspell_lang] =
+          WrappedHunspellDictionary.new(hunspell_lang, dependencies_for(base_dic))
       end
 
       # Find the closest locale for the given language tag. Since the purpose
@@ -95,16 +107,42 @@ module LifePreserver
         end
       end
 
-      def dictionaries
-        @items.find_all('/lifepreserver/dictionaries/**/*')
+      # Find dictionary items using an optional path glob.
+      #
+      # @raise [Nanoc::Core::TrivialError] If the dictionaries_root is not set
+      #   in site configuration.
+      #
+      # @see {file:var/dictionaries/README.md}
+      #
+      # @param [String] :langtag ('*') The glob pattern of the language tag.
+      # @param [String] :name ('*') The glob pattern with which to search
+      #   for specific dictionary items, under the +:langtag+ parent pattern.
+      #
+      # @return [Array<Nanoc::Core::BasicItemView>] All dictionary items that
+      #   match the given pattern.
+      def dictionaries(langtag: '*', name: '*')
+        dict_root = @config[:dictionaries_root]
+        if dict_root.nil?
+          raise Nanoc::Core::TrivialError.new('Cannot find the root of the dictionary items: site configuration has no dictionaries_root')
+        end
+
+        @items.find_all(File.join(dict_root, langtag, name))
       end
 
-      def abbreviation_dictionaries
+      # Find all dictionaries of acronyms.
+      #
+      # @see {file:var/dictionaries/README.md}
+      #
+      # @return [Array<Nanoc::Core::BasicItemView>] All custom Hunspell acronym
+      #   dictionary items.
+      def acronym_dictionaries
         dictionaries.select { |d| d._unwrap.attributes[:kind] == 'acronym-dictionary' }
       end
 
+      # @return [Hash<Symbol, String>] All abbreviations with the corresponding
+      #   long form value, keyed by the acronym.
       def supported_abbreviations
-        abbreviation_dictionaries.map { |dic| dic[:acronym_mappings] }.reduce(&:merge)
+        acronym_dictionaries.map { |dict| dict[:acronym_mappings] }.reduce(&:merge)
       end
 
       protected

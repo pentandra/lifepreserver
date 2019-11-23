@@ -23,7 +23,7 @@ module LifePreserver
         items = []
 
         FFI::Hunspell.directories.each do |dir|
-          Dir["#{dir}/*.{dic,yaml}"].each do |dic_file|
+          Dir["#{dir}/*.{dic,yaml,yml}"].each do |dic_file|
             items << dic_to_item(dic_file)
 
             # TODO: add affix item for base dictionaries?
@@ -47,7 +47,7 @@ module LifePreserver
                  'personal-dictionary'
                end
 
-        binary = %w(base-dictionary extra-dictionary).include?(kind)
+        binary = %w[base-dictionary extra-dictionary].include?(kind)
 
         entries = case kind
                   when 'personal-dictionary'
@@ -74,7 +74,7 @@ module LifePreserver
         new_item(
           binary ? filename : Nanoc::Core::TextualContent.new(raw_content, filename: filename),
           attributes,
-          Nanoc::Identifier.new("/dictionaries/#{parent_name}/#{File.basename(filename)}"),
+          Nanoc::Identifier.new("/#{parent_name}/#{File.basename(filename)}"),
           binary: binary,
         )
       end

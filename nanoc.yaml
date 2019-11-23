@@ -36,7 +36,7 @@ data_sources:
     items_root: &meta_items_root /lifepreserver
 
   - type : dictionaries
-    items_root: *meta_items_root
+    items_root: &dictionaries_root /lifepreserver/dictionaries
     directories:
       - 'var/dictionaries'
     language_priority: [ 'en_US', 'en_GB', 'es_ES', 'fr_FR', 'nl_NL', 'de_DE', 'it_IT' ]
@@ -87,6 +87,8 @@ environments:
 
     company_root: /company
     people_root: *people_root
+
+    dictionaries_root: *dictionaries_root
 
     erb:
       trim_mode: '>'

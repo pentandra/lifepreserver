@@ -1,10 +1,11 @@
 # frozen_string_literal: true
 
+require_relative '../helpers/dictionaries'
+
 module LifePreserver
   module Filters
     class SpellChecker < Nanoc::Filter
-      require_relative '../helpers/dictionaries'
-      include LifePreserver::Helpers::Dictionaries
+      include Helpers::Dictionaries
 
       identifier :spellchecker
 
@@ -72,7 +73,7 @@ module LifePreserver
             next if ignore_classes.include?(parent['class'])
 
             node_lang = find_node_lang(node)
-            dic = dictionary(node_lang)
+            dic = dictionary_for(node_lang)
             next unless dic
 
             depend_on_attributes(dic.dependencies)
