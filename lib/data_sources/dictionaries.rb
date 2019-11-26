@@ -16,7 +16,7 @@ module LifePreserver
         end
 
         FFI::Hunspell.lang = Locale.default.to_simple.to_s
-        Locale.set_app_language_tags(*@config.fetch(:language_priority, Locale.default))
+        Locale.set_current(*@config.fetch(:language_priority, [Locale.default]))
       end
 
       def items

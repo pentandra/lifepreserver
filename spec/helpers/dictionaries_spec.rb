@@ -13,7 +13,7 @@ RSpec.describe LifePreserver::Helpers::Dictionaries, helper: true, chdir: false 
     FFI::Hunspell.directories = directories.flat_map { |d| Dir["#{d}/*/"] }
     FFI::Hunspell.lang = default_lang
     Locale.default = default_lang
-    Locale.set_app_language_tags('en_US', 'en_GB', 'es_ES')
+    Locale.set_current('en_US', 'en_GB', 'es_ES')
     ctx.config[:dictionaries_root] = dictionaries_root
 
     # create some dictionaries
@@ -23,8 +23,8 @@ RSpec.describe LifePreserver::Helpers::Dictionaries, helper: true, chdir: false 
   end
 
   after do
-    # clear out dictionary cache
-    LifePreserver::Helpers::Dictionaries.class_variable_set(:@@dictionary_cache, {})
+    helper.clear_dictionary_cache
+    Locale.clear
   end
 
   describe '#dictionary_for' do
@@ -79,7 +79,7 @@ RSpec.describe LifePreserver::Helpers::Dictionaries, helper: true, chdir: false 
 
     context 'with a missing base dictionary' do
       before do
-        Locale.set_app_language_tags('en_US', 'en_GB', 'fr_FR')
+        Locale.set_current('en_US', 'en_GB', 'fr_FR')
         ctx.create_item('content', { kind: 'extra-dictionary' }, '/dicts/fr_FR/fr_FR.dic')
       end
 

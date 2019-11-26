@@ -74,7 +74,7 @@ module LifePreserver
         hunspell_lang = find_simple_locale(lang)
 
         unless hunspell_lang
-          warn "Unable to resolve a dictionary for '#{lang}' from the following candidates: #{Locale.app_language_tags.map(&:to_s).join(', ')}."
+          warn "Unable to resolve a dictionary for '#{lang}' from the following candidates: #{Locale.candidates.map(&:to_s).join(', ')}."
           return
         end
 
@@ -92,18 +92,25 @@ module LifePreserver
           WrappedHunspellDictionary.new(hunspell_lang, dependencies_for(base_dic))
       end
 
+      # Clears the dictionary cache.
+      #
+      # @return [void]
+      def clear_dictionary_cache
+        @@dictionary_cache = nil
+      end
+
       # Find the closest locale for the given language tag. Since the purpose
       # here is to identify which dictionary to use, we are limiting ourselves
       # to simple language tags.
       #
       # @param [String] lang The language tag.
       #
-      # @return [Locale::Tag] The locale of the first +Locale.app_language_tag+
-      #   whos value starts with the value of the given language tag.
+      # @return [Locale::Tag] The locale of the first candidate who's value
+      #   starts with the value of the given language tag.
       def find_simple_locale(lang)
         lang_tag = Locale.create_language_tag(lang.to_s).to_simple
-        Locale.app_language_tags.find do |app_tag|
-          app_tag.to_s.start_with?(lang_tag.to_s)
+        Locale.candidates(type: :simple).find do |candidate|
+          candidate.to_s.start_with?(lang_tag.to_s)
         end
       end
 
