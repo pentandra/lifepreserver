@@ -9,14 +9,18 @@ module LifePreserver
       identifier :dictionaries
 
       def up
-        unless @config[:directories].nil?
-          FFI::Hunspell.directories = @config.fetch(:directories).flat_map do |d|
+        unless @config[:search_paths].nil?
+          FFI::Hunspell.directories = @config.fetch(:search_paths).flat_map do |d|
             Dir["#{d}/*/"]
           end
         end
 
-        FFI::Hunspell.lang = Locale.default.to_simple.to_s
-        Locale.set_current(*@config.fetch(:language_priority, [Locale.default]))
+        # Set language tags for available dictionaries
+        available_dictionaries = FFI::Hunspell.directories.map { |d| File.basename(d) }
+        Locale.set_app_language_tags(*available_dictionaries)
+
+        # Set currently supported languages, in order of priority
+        Locale.set_current(*@config.fetch(:supported_locales, [Locale.default]))
       end
 
       def items

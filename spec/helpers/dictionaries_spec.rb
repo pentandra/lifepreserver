@@ -4,16 +4,21 @@ require 'ffi/hunspell'
 require 'helpers/dictionaries'
 
 RSpec.describe LifePreserver::Helpers::Dictionaries, helper: true, chdir: false do
-  let(:directories) { ['var/dictionaries'] }
+  let(:search_paths) { ['var/dictionaries'] }
   let(:dictionaries_root) { '/dicts' }
   let(:default_lang) { 'en_US' }
+  let(:supported_locales) { ['en_US', 'en_GB', 'es_ES'] }
 
   before do
     # set defaults
-    FFI::Hunspell.directories = directories.flat_map { |d| Dir["#{d}/*/"] }
+    FFI::Hunspell.directories = search_paths.flat_map { |d| Dir["#{d}/*/"] }
     FFI::Hunspell.lang = default_lang
-    Locale.default = default_lang
-    Locale.set_current('en_US', 'en_GB', 'es_ES')
+    Locale
+      .set_app_language_tags(*FFI::Hunspell.directories.map { |d| File.basename(d) })
+      .set_default(default_lang)
+      .set_current(*supported_locales)
+
+    # setup dictionary items' root
     ctx.config[:dictionaries_root] = dictionaries_root
 
     # create some dictionaries
@@ -79,10 +84,10 @@ RSpec.describe LifePreserver::Helpers::Dictionaries, helper: true, chdir: false 
 
     context 'with a missing base dictionary' do
       before do
-        Locale.set_current('en_US', 'en_GB', 'fr_FR')
         ctx.create_item('content', { kind: 'extra-dictionary' }, '/dicts/fr_FR/fr_FR.dic')
       end
 
+      let(:supported_locales) { ['en_US', 'en_GB', 'fr_FR'] }
       let(:lang) { 'fr_FR' }
 
       it 'does not accept an extra dictionary as a base dictionary' do
@@ -167,36 +172,75 @@ RSpec.describe LifePreserver::Helpers::Dictionaries, helper: true, chdir: false 
   end
 
   describe '#find_simple_locale' do
-    subject { helper.find_simple_locale(arg).to_s }
+    subject { helper.find_simple_locale(arg) }
 
     context 'using a nil parameter' do
       let(:arg) { nil }
 
-      it { is_expected.to eq(default_lang) }
+      it 'will return the default locale' do
+        expect(subject.to_s).to eq(default_lang)
+      end
     end
 
     context 'using an empty string' do
       let(:arg) { '' }
 
-      it { is_expected.to eq(default_lang) }
+      it 'will return the default locale' do
+        expect(subject.to_s).to eq(default_lang)
+      end
     end
 
-    context 'passing a simple BCP47 language tag' do
+    context 'passing a language-only BCP47 language tag' do
       let(:arg) { 'es' }
 
-      it { is_expected.to eq('es_ES') }
+      it 'should find the matching language_region tag' do
+        expect(subject.to_s).to eq('es_ES')
+      end
     end
 
     context 'passing a full BCP47 tag' do
       let(:arg) { 'en-GB' }
 
-      it { is_expected.to eq('en_GB') }
+      it 'should find a matching tag' do
+        expect(subject.to_s).to eq('en_GB')
+      end
     end
 
     context 'passing an extended BCP47 tag' do
       let(:arg) { 'en-US-x-twain' }
 
-      it { is_expected.to eq('en_US') }
+      it 'should resolve to the simple tag' do
+        expect(subject.to_s).to eq('en_US')
+      end
+    end
+
+    context 'supporting an unavailable language' do
+      let(:supported_locales) { ['en_US', 'en_GB', 'zz_YY'] }
+      let(:arg) { 'zz_YY' }
+
+      it 'should not appear in candidates' do
+        expect(Locale.candidates(type: :simple).map(&:to_s)).to_not include(arg)
+      end
+
+      it 'should not return a matching tag' do
+        expect(subject).to be_nil
+      end
+    end
+
+    context 'passing an available but not supported language' do
+      let(:arg) { 'it_IT' }
+
+      it 'arg should exist in app_language_tags' do
+        expect(Locale.app_language_tags.map(&:to_s)).to include(arg)
+      end
+
+      it 'but arg should not appear in candidates' do
+        expect(Locale.candidates(type: :simple).map(&:to_s)).to_not include(arg)
+      end
+
+      it 'and should return nil' do
+        expect(subject).to be_nil
+      end
     end
   end
 end

@@ -9,8 +9,6 @@ require 'locale'
 require 'html5small/nanoc'
 require 'nanoc/cachebuster'
 
-Locale.init
-
 # Ruby stdlib utility functions
 include ERB::Util
 
