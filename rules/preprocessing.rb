@@ -12,7 +12,7 @@ preprocess do
       ->(item) { item.identifier =~ %r{^/static/assets/components/} },
       ->(item) { item.identifier =~ /(README|LICENSE)/ },
       ->(item) { item.identifier.ext =~ /conf/ },
-      ->(item) { item.identifier.ext =~ /yaml/ },
+      ->(item) { item.identifier.ext =~ /ya?ml/ },
     ]
 
     should_be_hidden = disjoin(*hidden_predicates)
