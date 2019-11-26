@@ -14,6 +14,7 @@ require: rubocop-rspec
 Naming/FileName:
   Exclude:
     - 'commands/*.rb'
+    - 'Rules.rb'
 
 Style/TrailingCommaInArguments:
   EnforcedStyleForMultiline: comma
