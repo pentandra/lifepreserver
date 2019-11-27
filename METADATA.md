@@ -31,29 +31,37 @@ For the sitemap helper, how often the page is expected to change. See the
 
 ### [`lang`]
 
-The language of the document, formatted according to [BCP47]. Defaults to
-`Locale.default` if not specified. 
+The language of the document, formatted according to [BCP47]. Defaults to the
+author's [`preferredlanguage`](#preferredlanguage) (if there is one) and then
+to the `Locale.default` if not specified.
 
 ### `mtime`
 
 The last modification time of the source (e.g. file) upon which an item's data
-is based. Required for most data sources.
+is based. Required for most data sources as a heuristic to know whether or not
+to recompile dependent items.
 
 ## Metadata relating to document state
 
+All time attributes SHOULD be fully qualified according to [RFC3339], either as
+Coordinated Universal Time (UTC) or with a local offset, otherwise the object
+values may be indeterminate, instantiated relative to the arbitrary time zone
+of the current build machine.
+
 ### `created_at`
 
-When the document was created.
+The date or time the document was created.
 
 ### `updated_at`
 
-When the document had a meaningful edit.
+The most recent date or time that the document had a meaningful edit.
 
 ### [`published_at`]
 
-Blog posts are built in this system whether they are published or not, to allow
-for private sharing before publication. Publishing a blog post does not change
-the location of the document, but it does do the following:
+The date or time the document was published. Syndicated items are built in this
+system whether they are published or not, to allow for private sharing before
+publication. Publishing a blog post does not change the location of the
+document, but it does do the following:
 
 1. Adds the post to the blog index
 2. Adds the post to the recent thoughts
@@ -74,6 +82,8 @@ If a proposal has been submitted, when it was.
 ### [`is_hidden`]
 
 If true, item is excluded from sitemap, feeds, search, and other local indices.
+This attribute is set during the [preprocessing
+phase](../rules/preprocessing.rb#L7) for many items that should be hidden.
 
 ### [`is_hidden_from_human_search`]
 
@@ -83,7 +93,8 @@ If true, item is only excluded from the search index.
 
 ### `author_name`
 
-The name of the author.
+The name of the author. Should be equal to the `name` of a [person
+item](#metadata-relating-to-people-member-and-organization-items).
 
 ### `kind`
 
@@ -138,7 +149,7 @@ resolve to a document in the archive.
 The item to which this item should be redirected in some way. Required for
 items with `kind: redirect`.
 
-## Metadata relating to people, member, and organization items
+## Metadata relating to person, member, and organization items
 
 Many of these terms and descriptions come from LDAP, defined in a bunch of
 [RFCs][ldap rfcs], specifically [RFC2798], [RFC4519], and [RFC4524].
@@ -259,6 +270,25 @@ organization.
 
 ### [`preferredlanguage`]
 
+The preferred language of a person. It is generally assumed that, unless
+otherwise specified in the item's [`lang` attribute](#general-metadata),
+syndicated items are written in the author's most preferred language. If the
+person does not have a preferred language, the fallback is the default language
+for the build.
+
+The value should conform to the syntax for HTTP Accept-Language header values
+as defined in [RFC2616], e.g. `fr, en-gb;q=0.8, en;q=0.7`.
+
+### [`preferredtimezone`]
+
+The time zone that a person normally inhabits, i.e. where they call home. It is
+generally assumed that for syndicated items, any date or time will be relative
+to the author's time zone, unless the time zone or UTC offset is explicitly
+specified as part of the value. If the person does not have a preferred time
+zone, the fallback is the default timezone for the build.
+
+The value should conform to a definition in IANA's [Time Zone Database].
+
 ### `service_profiles`
 
 A list of profiles provided for the person or organization by third-party
@@ -331,6 +361,9 @@ default uses the identifier `me`.
 [ISO3166]: https://www.iso.org/iso-3166-country-codes.html
 [E.123]: https://www.itu.int/rec/T-REC-E.123
 [E.164]: https://www.itu.int/rec/T-REC-E.164
+[RFC2616]: https://tools.ietf.org/html/rfc2616
 [RFC2798]: https://tools.ietf.org/html/rfc2798
+[RFC3339]: https://tools.ietf.org/html/rfc3339
 [RFC4519]: https://tools.ietf.org/html/rfc4519
 [RFC4524]: https://tools.ietf.org/html/rfc4524
+[Time Zone Database]: https://www.iana.org/time-zones
