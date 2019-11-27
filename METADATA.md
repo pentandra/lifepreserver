@@ -1,6 +1,10 @@
 # Metadata descriptions for Nanoc items in this project
 
-Terms in brackets are optional.
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD",
+"SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be
+interpreted as described in [RFC2119].
+
+An addition, terms in brackets are optional.
 
 ## General metadata
 
@@ -70,8 +74,9 @@ document, but it does do the following:
 5. Adds the post to the sitemap
 6. Generates short links for sharing the document
 
-In other words, it _publicates_ the post. After publishing, you may not change
-the URL!!! If you must, please also add the appropriate HTTP redirection.
+In other words, it _publicates_ the post. After publishing, the item's public
+path (and Atom tag) SHOULD NOT change. If the situation requires that the URL
+change, an appropriate HTTP redirection SHALL also be added.
 
 ### [`submitted_at`]
 
@@ -83,7 +88,8 @@ If a proposal has been submitted, when it was.
 
 If true, item is excluded from sitemap, feeds, search, and other local indices.
 This attribute is set during the [preprocessing
-phase](../rules/preprocessing.rb#L7) for many items that should be hidden.
+phase](https://github.com/pentandra/lifepreserver/blob/master/rules/preprocessing.rb#L7)
+for many items that should be hidden.
 
 ### [`is_hidden_from_human_search`]
 
@@ -93,8 +99,8 @@ If true, item is only excluded from the search index.
 
 ### `author_name`
 
-The name of the author. Should be equal to the `name` of a [person
-item](#metadata-relating-to-people-member-and-organization-items).
+The name of the author. Should be equal to the [`name`](#name) of a `person` or
+`member` item.
 
 ### `kind`
 
@@ -151,8 +157,9 @@ items with `kind: redirect`.
 
 ## Metadata relating to person, member, and organization items
 
-Many of these terms and descriptions come from LDAP, defined in a bunch of
-[RFCs][ldap rfcs], specifically [RFC2798], [RFC4519], and [RFC4524].
+Many of these terms and descriptions originate from LDAP specifications,
+primarily [RFC2798], [RFC4519], and [RFC4524]. Additional restrictions and/or
+semantics may be expressed for this context.
 
 ### `name`
 
@@ -164,17 +171,25 @@ Obtained, in order, from the LDAP `displayName` or `cn` or joining of the
 
 The full (common) name of the person or organization.
 
+* REQUIRED: `person`, `member`, `organization`
+
 ### `sn`
 
-The surname (or family name) of a person. Required for persons.
+The surname (or family name) of a person.
+
+* REQUIRED: `person`, `member`
 
 ### [`c`]
 
-The two-letter [ISO3166] country code of the organization.
+The two-letter [ISO3166] country code.
+
+* OPTIONAL: `organization`
 
 ### [`description`]
 
 A short description of the person, around 25 words long.
+
+* OPTIONAL: `person`, `member`, `organization`
 
 ### [`displayname`]
 
@@ -271,10 +286,9 @@ organization.
 ### [`preferredlanguage`]
 
 The preferred language of a person. It is generally assumed that, unless
-otherwise specified in the item's [`lang` attribute](#general-metadata),
-syndicated items are written in the author's most preferred language. If the
-person does not have a preferred language, the fallback is the default language
-for the build.
+otherwise specified in the item's [`lang` attribute](#lang), syndicated items
+are written in the author's most preferred language. If the person does not
+have a preferred language, the fallback is the default language for the build.
 
 The value should conform to the syntax for HTTP Accept-Language header values
 as defined in [RFC2616], e.g. `fr, en-gb;q=0.8, en;q=0.7`.
@@ -361,6 +375,7 @@ default uses the identifier `me`.
 [ISO3166]: https://www.iso.org/iso-3166-country-codes.html
 [E.123]: https://www.itu.int/rec/T-REC-E.123
 [E.164]: https://www.itu.int/rec/T-REC-E.164
+[RFC2119]: https://tools.ietf.org/html/rfc2119
 [RFC2616]: https://tools.ietf.org/html/rfc2616
 [RFC2798]: https://tools.ietf.org/html/rfc2798
 [RFC3339]: https://tools.ietf.org/html/rfc3339
