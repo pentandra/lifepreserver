@@ -34,7 +34,11 @@ group :development, optional: true do
   gem 'guard-livereload'
   gem 'guard-nanoc'
   gem 'guard-rake'
+end
+
+group :documentation, optional: true do
   gem 'yard'
+  gem 'redcarpet'
 end
 
 group :test, optional: true do
