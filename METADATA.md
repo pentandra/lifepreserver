@@ -1,45 +1,85 @@
-# Metadata descriptions for Nanoc items in this project
+# Metadata descriptions for Nanoc items in the [LifePreserver Project](README.md)
+
+The key words "REQUIRED_FOR_KINDS" "RECOMMENDED_FOR_KINDS", and
+"OPTIONAL_FOR_KINDS" in this document specify for which [kinds](#kind) of items
+the attribute is REQUIRED, RECOMMENDED, or OPTIONAL, respectively, for the best
+functionality and interoperability of items within the project.
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD",
 "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be
 interpreted as described in [RFC2119].
 
-An addition, terms in brackets are optional.
-
 ## General metadata
 
 ### `title`
+
+REQUIRED_FOR_KINDS: all
 
 The document title.
 
 ### `description`
 
+REQUIRED_FOR_KINDS: all
+
 A description of the content of the HTML `meta[@name="description"]` elements
 as well as a short description of the document that is used as needed on the
 site.
 
-### [`meta_description`]
+### `meta_description`
 
-Overrides `description` when something more specific needs to said on the HTML
-`meta[@name="description"]` element.
+OPTIONAL_FOR_KINDS: all
 
-### [`priority`]
+Overrides [`description`](#description) when something more specific or
+descriptive needs to said on the HTML `meta[@name="description"]` element.
 
-For the sitemap helper, the relative priority of the page. See the [sitemap
-protocol][sitemap] for more information.
+### `priority`
 
-### [`change_freq`]
+OPTIONAL_FOR_KINDS: all
 
-For the sitemap helper, how often the page is expected to change. See the
-[sitemap protocol][sitemap] for more information.
+For the [sitemap helper](lib/helpers/xml_sitemap.rb), the relative priority of
+the page. Valid values range from 0.0 to 1.0, with the default being 0.5.
 
-### [`lang`]
+> This value does not affect how your pages are compared to pages on other
+> sites—it only lets the search engines know which pages you deem most
+> important for the crawlers.
+
+See the [sitemap protocol][sitemap] for more information.
+
+### `change_freq`
+
+OPTIONAL_FOR_KINDS: all
+
+For the [sitemap helper](lib/helpers/xml_sitemap.rb), how often the page is
+expected to change.
+
+> This value provides general information to search engines and may not
+> correlate exactly to how often they crawl the page. Valid values are:
+>
+> * `always`
+> * `hourly`
+> * `daily`
+> * `weekly`
+> * `monthly`
+> * `yearly`
+> * `never`
+>
+> The value `always` should be used to describe documents that change each time
+> they are accessed. The value `never` should be used to describe archived
+> URLs.
+
+See the [sitemap protocol][sitemap] for more information.
+
+### `lang`
+
+OPTIONAL_FOR_KINDS: all
 
 The language of the document, formatted according to [BCP47]. Defaults to the
 author's [`preferredlanguage`](#preferredlanguage) (if there is one) and then
 to the `Locale.default` if not specified.
 
 ### `mtime`
+
+REQUIRED_FOR_KINDS: (depending on the data source)
 
 The last modification time of the source (e.g. file) upon which an item's data
 is based. Required for most data sources as a heuristic to know whether or not
@@ -54,45 +94,56 @@ of the current build machine.
 
 ### `created_at`
 
-The date or time the document was created.
+REQUIRED_FOR_KINDS: `abstract`, `article`, `benefit-report`, `blogpost`, `essay`, `note`, `presentation`, `project`, `proposal`, `specification`
+
+The date or time the item was created.
 
 ### `updated_at`
 
-The most recent date or time that the document had a meaningful edit.
+REQUIRED_FOR_KINDS: `abstract`, `article`, `benefit-report`, `blogpost`, `essay`, `note`, `presentation`, `project`, `proposal`, `specification`
 
-### [`published_at`]
+The most recent date or time that the item had a meaningful edit.
 
-The date or time the document was published. Syndicated items are built in this
+### `published_at`
+
+REQUIRED_FOR_KINDS: `article`, `benefit-report`, `blogpost`, `essay`, `note`, `presentation`
+
+The date or time the item was published. Syndicated items are built in this
 system whether they are published or not, to allow for private sharing before
-publication. Publishing a blog post does not change the location of the
-document, but it does do the following:
+publication. Publishing a item does not change the URL of the output, but it
+does do the following:
 
-1. Adds the post to the blog index
-2. Adds the post to the recent thoughts
-3. Adds the post to the RSS feed
-4. Includes words from the post in the search index
-5. Adds the post to the sitemap
-6. Generates short links for sharing the document
+1. Adds the item to the blog index
+2. Adds the item to the index of recent thoughts
+3. Adds the item to respective Atom syndication feeds
+4. Includes words from the item in the search index
+5. Adds the items to the sitemap
+6. Generates short links for sharing the item
 
-In other words, it _publicates_ the post. After publishing, the item's public
-path (and Atom tag) SHOULD NOT change. If the situation requires that the URL
-change, a `redirect` item SHALL be added at the original location to apply an
-appropriate HTTP redirection.
+In other words, it _publicates_ the item. After publishing, the item's public
+path (and Atom tag identifier) SHOULD NOT change. If the situation requires
+that the URL change, a `redirect` item SHALL be added at the original location
+to apply an appropriate HTTP redirection.
 
-### [`submitted_at`]
+### `submitted_at`
 
-If a proposal has been submitted, when it was.
+REQUIRED_FOR_KINDS: `abstract`, `proposal`
+
+If a proposal has been submitted, the date or time it was.
 
 ## Relating to inclusion of items in local indices
 
-### [`is_hidden`]
+### `is_hidden`
+
+OPTIONAL_FOR_KINDS: all
 
 If true, item is excluded from sitemap, feeds, search, and other local indices.
 This attribute is set during the [preprocessing
-phase](https://github.com/pentandra/lifepreserver/blob/master/rules/preprocessing.rb#L7)
-for many items that should be hidden.
+phase](rules/preprocessing.rb#L7) for many items that should be hidden.
 
-### [`is_hidden_from_human_search`]
+### `is_hidden_from_human_search`
+
+OPTIONAL_FOR_KINDS: all
 
 If true, item is only excluded from the search index.
 
@@ -100,10 +151,14 @@ If true, item is only excluded from the search index.
 
 ### `author_name`
 
+REQUIRED_FOR_KINDS: `article`, `blogpost`, `essay`, `note`, `presentation`
+
 The name of the author. Should be equal to the [`name`](#name) of a `person` or
 `member` item.
 
 ### `kind`
+
+REQUIRED_FOR_KINDS: all
 
 The kind of document. Currently we have the following kinds of documents:
 
@@ -136,25 +191,32 @@ The kind of document. Currently we have the following kinds of documents:
 
 ## Relating to relationships between documents
 
-### [`cover_image_id`]
+### `cover_image_id`
+
+RECOMMENDED_FOR_KINDS: all
 
 An identifier for an image item that serves as a cover image for social media
 sharing using the Open Graph Protocol and Twitter's thing. The image should
 have an associated `yaml` file containing metadata about the image itself.
 
-### [`part_of_id`]
+### `part_of_id`
+
+OPTIONAL_FOR_KINDS: all
 
 This document is part of another document.
 
-### [`in_reply_to_id`]
+### `in_reply_to_id`
+
+OPTIONAL_FOR_KINDS: `abstract`, `proposal`
 
 The item to which this proposal is in reply. Most of the time, this should
 resolve to a document in the archive.
 
-### [`redirect_to_id`]
+### `redirect_to_id`
 
-The item to which this item should be redirected in some way. Required for
-items with `kind: redirect`.
+REQUIRED_FOR_KINDS: `redirect`
+
+The identifier of the item to which this item should be redirected in some way.
 
 ## Relating to person, member, and organization items
 
@@ -164,100 +226,132 @@ semantics may be expressed for this context.
 
 ### `name`
 
+REQUIRED_FOR_KINDS: `person`, `member`, `organization`
+
 The name that is most commonly used to refer to a person or organization.
-Obtained, in order, from the LDAP `displayName` or `cn` or joining of the
-`givenname` and `sn` for persons or the `o` value for organizations.
+Constructed in the [Company][Company data source] or [People][People data
+source] data sources from the LDAP [`displayName` attribute](#displayname) or
+[`cn` attribute](#cn), or by the [`o` attribute](#o) for organizations or the
+joining of the [`givenname` attribute](#givenname) and [`sn` attribute](#sn)
+for persons.
 
 ### `cn`
 
-The full (common) name of the person or organization.
+REQUIRED_FOR_KINDS: `person`, `member`, `organization`
 
-* REQUIRED: `person`, `member`, `organization`
+The full (common) name of the person or organization.
 
 ### `sn`
 
+REQUIRED_FOR_KINDS: `person`, `member`
+
 The surname (or family name) of a person.
 
-* REQUIRED: `person`, `member`
+### `c`
 
-### [`c`]
+RECOMMENDED_FOR_KINDS: `organization`
 
 The two-letter [ISO3166] country code.
 
-* OPTIONAL: `organization`
+### `description`
 
-### [`description`]
+RECOMMENDED_FOR_KINDS: `person`, `member`, `organization`
 
 A short description of the person, around 25 words long.
 
-* OPTIONAL: `person`, `member`, `organization`
+### `displayname`
 
-### [`displayname`]
+RECOMMENDED_FOR_KINDS: `person`, `member`
 
 The preferred name of a person.
 
-### [`drink`]
+### `drink`
+
+OPTIONAL_FOR_KINDS: `person`, `member`
 
 The favorite drink of a person.
 
-### [`edupersonorcid`]
+### `edupersonorcid`
+
+OPTIONAL_FOR_KINDS: `person`, `member`
 
 The [ORCID iD] of a person.
 
-### [`employeenumber`]
+### `generationqualifier`
 
-### [`employeetype`]
-
-### [`generationqualifier`]
+OPTIONAL_FOR_KINDS: `person`, `member`
 
 The suffix of a person's name, e.g. "III", "3rd.", "Jr.".
 
-### [`givenname`]
+### `givenname`
+
+RECOMMENDED_FOR_KINDS: `person`, `member`
 
 The given names of a person, i.e. those names that are not the `sn`.
 
-### [`initials`]
+### `initials`
+
+RECOMMENDED_FOR_KINDS: `person`, `member`
 
 Initial letters of some or all of a person's given names (not the `sn`).
 
-### [`jpegphoto`]
+### `jpegphoto`
+
+RECOMMENDED_FOR_KINDS: `person`, `member`
 
 A binary value that depicts the person in a photo.
 
-### [`l`]
+### `l`
+
+RECOMMENDED_FOR_KINDS: `organization`
 
 The locality of an organization, such as city, county or other geographic
 region.
 
 ### `mail`
 
-The email address of the person.
+RECOMMENDED_FOR_KINDS: `person`, `member`, `organization`
 
-### [`manager`]
+The email address.
+
+### `manager`
+
+OPTIONAL_FOR_KINDS: `person`, `member`
 
 The person's manager.
 
-### [`mobile`]
+### `mobile`
+
+OPTIONAL_FOR_KINDS: `person`, `member`
 
 The person's mobile telephone number.
 
-### [`o`]
+### `o`
+
+RECOMMENDED_FOR_KINDS: `person`, `member`
 
 The primary organization to which the person belongs.
 
-### [`ou`]
+### `ou`
+
+RECOMMENDED_FOR_KINDS: `person`, `member`
 
 The organizational unit to which the person belongs.
 
-### [`personaltitle`]
+### `personaltitle`
+
+OPTIONAL_FOR_KINDS: `person`, `member`
 
 Specifies personal titles for a person, e.g. "Frau", "Dr.", "Herr",
 "Professor".
 
 ### `pkey`
 
-A list of public keys of user certificates. Constructed as an array that could
-be empty.
+RECOMMENDED_FOR_KINDS: `member`
+
+A list of public keys of user certificates. Constructed as an array containing
+`Hash` objects with the following keys, each representing an x509 public key.
+This array could be empty if the member has no user certificates.
 
 #### `modulus`
 
@@ -279,12 +373,16 @@ The SHA1 digest of the DER-encoded RSA public key.
 
 The SHA256 digest of the DER-encoded RSA public key.
 
-### [`postalcode`]
+### `postalcode`
+
+RECOMMENDED_FOR_KINDS: `organization`
 
 Codes used by a postal service to identify postal service zones of an
 organization.
 
-### [`preferredlanguage`]
+### `preferredlanguage`
+
+RECOMMENDED_FOR_KINDS: `person`, `member`
 
 The preferred language of a person. It is generally assumed that, unless
 otherwise specified in the item's [`lang` attribute](#lang), syndicated items
@@ -294,7 +392,9 @@ have a preferred language, the fallback is the default language for the build.
 The value should conform to the syntax for HTTP Accept-Language header values
 as defined in [RFC2616], e.g. `fr, en-gb;q=0.8, en;q=0.7`.
 
-### [`preferredtimezone`]
+### `preferredtimezone`
+
+RECOMMENDED_FOR_KINDS: `person`, `member`
 
 The time zone that a person normally inhabits, i.e. where they call home. It is
 generally assumed that for syndicated items, any date or time will be relative
@@ -306,8 +406,12 @@ The value should conform to a definition in IANA's [Time Zone Database].
 
 ### `service_profiles`
 
+OPTIONAL_FOR_KINDS: `person`, `member`, `organization`
+
 A list of profiles provided for the person or organization by third-party
-services, e.g. twitter. Constructed as an array that could be empty.
+services, e.g. twitter. Constructed as an array containing `Hash` objects with
+the following keys, each representing a service profile. This array could be
+empty if the member has no third-part service profiles.
 
 #### `uri`
 
@@ -337,24 +441,36 @@ The homepage of the service, e.g. "https://twitter.com/".
 
 ### `slug`
 
-A safe (i.e. spaces and non-ASCII characters replaced) representation of a
-person's `name` used for building the personal profile page path.
+REQUIRED_FOR_KINDS: `person`, `member`
 
-### [`st`]
+A safe (i.e. spaces and non-ASCII characters replaced) representation of a
+person's `name` used for building the personal profile page path. Constructed
+in the [Company][Company data source] or [People][People data source] data
+sources from from the item's [`name` attribute](#name).
+
+### `st`
+
+RECOMMENDED_FOR_KINDS: `organization`
 
 Contains the full name of the state or province of an organization.
 
-### [`street`]
+### `street`
+
+RECOMMENDED_FOR_KINDS: `organization`
 
 Site information from a postal address, i.e. the street name, place, avenue,
 and the house number.
 
-### [`telephonenumber`]
+### `telephonenumber`
 
-The telephone number associated wih a person or organization. Should comply
-with ITU Recommendation [E.123] or [E.164].
+OPTIONAL_FOR_KINDS: `person`, `member`, `organization`
 
-### [`title`]
+The telephone number associated wih a person or organization. Format SHOULD
+comply with ITU Recommendation [E.123] or [E.164].
+
+### `title`
+
+RECOMMENDED_FOR_KINDS: `person`, `member`
 
 The title of a person in their organizational context.
 
@@ -383,3 +499,5 @@ default uses the identifier `me`.
 [RFC4519]: https://tools.ietf.org/html/rfc4519
 [RFC4524]: https://tools.ietf.org/html/rfc4524
 [Time Zone Database]: https://www.iana.org/time-zones
+[Company data source]: lib/data_sources/company.rb
+[People data source]: lib/data_sources/people.rb
