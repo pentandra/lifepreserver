@@ -45,7 +45,7 @@ The last modification time of the source (e.g. file) upon which an item's data
 is based. Required for most data sources as a heuristic to know whether or not
 to recompile dependent items.
 
-## Metadata relating to document state
+## Relating to document state
 
 All time attributes SHOULD be fully qualified according to [RFC3339], either as
 Coordinated Universal Time (UTC) or with a local offset, otherwise the object
@@ -76,13 +76,14 @@ document, but it does do the following:
 
 In other words, it _publicates_ the post. After publishing, the item's public
 path (and Atom tag) SHOULD NOT change. If the situation requires that the URL
-change, an appropriate HTTP redirection SHALL also be added.
+change, a `redirect` item SHALL be added at the original location to apply an
+appropriate HTTP redirection.
 
 ### [`submitted_at`]
 
 If a proposal has been submitted, when it was.
 
-## Metadata relating to inclusion of items in local indices
+## Relating to inclusion of items in local indices
 
 ### [`is_hidden`]
 
@@ -95,7 +96,7 @@ for many items that should be hidden.
 
 If true, item is only excluded from the search index.
 
-## Metadata relating to document provenance
+## Relating to document provenance
 
 ### `author_name`
 
@@ -133,7 +134,7 @@ The kind of document. Currently we have the following kinds of documents:
 * `tag`: the tag itself (a controlled concept)
 * `vocabulary`: an item that represents an RDF ontology.
 
-## Metadata relating to relationships between documents
+## Relating to relationships between documents
 
 ### [`cover_image_id`]
 
@@ -155,7 +156,7 @@ resolve to a document in the archive.
 The item to which this item should be redirected in some way. Required for
 items with `kind: redirect`.
 
-## Metadata relating to person, member, and organization items
+## Relating to person, member, and organization items
 
 Many of these terms and descriptions originate from LDAP specifications,
 primarily [RFC2798], [RFC4519], and [RFC4524]. Additional restrictions and/or
