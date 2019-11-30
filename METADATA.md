@@ -1,4 +1,4 @@
-# Metadata descriptions for Nanoc items in the [LifePreserver Project](README.md)
+# Metadata descriptions for items in the [LifePreserver Project](README.md)
 
 The key words "REQUIRED_FOR_KINDS" "RECOMMENDED_FOR_KINDS", and
 "OPTIONAL_FOR_KINDS" in this document specify for which [kinds](#kind) of items
@@ -15,14 +15,14 @@ interpreted as described in [RFC2119].
 
 REQUIRED_FOR_KINDS: all
 
-The document title.
+The item title.
 
 ### `description`
 
 REQUIRED_FOR_KINDS: all
 
 A description of the content of the HTML `meta[@name="description"]` elements
-as well as a short description of the document that is used as needed on the
+as well as a short description of the item that is used as needed on the
 site.
 
 ### `meta_description`
@@ -42,6 +42,16 @@ the page. Valid values range from 0.0 to 1.0, with the default being 0.5.
 > This value does not affect how your pages are compared to pages on other
 > sites—it only lets the search engines know which pages you deem most
 > important for the crawlers.
+>
+> Please note that the priority you assign to a page is not likely to influence
+> the position of your URLs in a search engine's result pages. Search engines
+> may use this information when selecting between URLs on the same site, so you
+> can use this tag to increase the likelihood that your most important pages
+> are present in a search index.
+>
+> Also, please note that assigning a high priority to all of the URLs on your
+> site is not likely to help you. Since the priority is relative, it is only
+> used to select between URLs on your site.
 
 See the [sitemap protocol][sitemap] for more information.
 
@@ -66,6 +76,13 @@ expected to change.
 > The value `always` should be used to describe documents that change each time
 > they are accessed. The value `never` should be used to describe archived
 > URLs.
+>
+> Please note that the value of this tag is considered a hint and not a
+> command. Even though search engine crawlers may consider this information
+> when making decisions, they may crawl pages marked `hourly` less frequently
+> than that, and they may crawl pages marked `yearly` more frequently than
+> that. Crawlers may periodically crawl pages marked `never` so that they can
+> handle unexpected changes to those pages.
 
 See the [sitemap protocol][sitemap] for more information.
 
@@ -85,7 +102,10 @@ The last modification time of the source (e.g. file) upon which an item's data
 is based. Required for most data sources as a heuristic to know whether or not
 to recompile dependent items.
 
-## Relating to document state
+## Relating to item state
+
+Attributes relating to item state MAY use either Date or Time objects, in
+accordance with the [W3C Datetime] format.
 
 All time attributes SHOULD be fully qualified according to [RFC3339], either as
 Coordinated Universal Time (UTC) or with a local offset, otherwise the object
@@ -131,6 +151,18 @@ REQUIRED_FOR_KINDS: `abstract`, `proposal`
 
 If a proposal has been submitted, the date or time it was.
 
+### `starts_at`
+
+REQUIRED_FOR_KINDS: `event`
+
+The date or time of the start of the event.
+
+### `ends_at`
+
+REQUIRED_FOR_KINDS: `event`
+
+The date or time of the end of the event.
+
 ## Relating to inclusion of items in local indices
 
 ### `is_hidden`
@@ -147,7 +179,7 @@ OPTIONAL_FOR_KINDS: all
 
 If true, item is only excluded from the search index.
 
-## Relating to document provenance
+## Relating to item provenance
 
 ### `author_name`
 
@@ -156,11 +188,26 @@ REQUIRED_FOR_KINDS: `article`, `blogpost`, `essay`, `note`, `presentation`
 The name of the author. Should be equal to the [`name`](#name) of a `person` or
 `member` item.
 
+### `author_uri`
+
+REQUIRED_FOR_KINDS: `article`, `blogpost`, `essay`, `note`, `presentation`
+
+The URI of the author. A convenience attribute that, if not set on the item,
+defaults to the [`web_id`] of the author.
+
+### `feed_url`
+
+OPTIONAL_FOR_KINDS: `feed`
+
+Allows the feed URL (the `link[@rel=self]` value of the feed) to be set to some
+other URL, such as an external distribution endpoint. If not set, it defaults
+to the path of the feed item.
+
 ### `kind`
 
 REQUIRED_FOR_KINDS: all
 
-The kind of document. Currently we have the following kinds of documents:
+The kind of item. Currently we have the following kinds:
 
 * `abstract`: a short proposal.
 * `acronym-dictionary`: a key-value lookup dictionary of acronyms.
@@ -172,7 +219,7 @@ The kind of document. Currently we have the following kinds of documents:
 * `concept`: an abstract item (with a URI) denoting a concept.
 * `dependency`: an application dependency.
 * `essay`: a semiformal document with one author, higher quality
-* `event`
+* `event`: a business event that occurs at a specific place and time.
 * `extra-dictionary`: a custom dictionary that extends a Hunspell base dictionary.
 * `feed`: an Atom feed.
 * `member`: a member of the company (Pentandra).
@@ -189,34 +236,68 @@ The kind of document. Currently we have the following kinds of documents:
 * `tag`: the tag itself (a controlled concept)
 * `vocabulary`: an item that represents an RDF ontology.
 
-## Relating to relationships between documents
+## Relating to relationships between items and other resources
 
 ### `cover_image_id`
 
 RECOMMENDED_FOR_KINDS: all
 
 An identifier for an image item that serves as a cover image for social media
-sharing using the Open Graph Protocol and Twitter's thing. The image should
-have an associated `yaml` file containing metadata about the image itself.
+sharing using the Open Graph Protocol. The image item SHOULD have an associated
+`yaml` file containing additional metadata about the image, including:
 
-### `part_of_id`
+#### `width`
 
-OPTIONAL_FOR_KINDS: all
+The width of the image, in pixels.
 
-This document is part of another document.
+#### `height`
+
+The height of the image, in pixels.
+
+#### `size`
+
+The size of the image, in bytes.
+
+#### `alt`
+
+An alternative text description of the image, to be used in the `@alt`
+attribute of the HTML \<img\> element.
+
+### `alternate_url`
+
+RECOMMENDED_FOR_KINDS: `feed`
+
+Allows the alternate URL (the `link[@rel=alternate]` value of the feed) to be
+set to some other URL, such as an HTML representation of the feed. If not set
+explicitly, it will default to the parent directory of the feed and the web
+server will redirect to an index page at the same level of the path component
+of the [`feed URL`](#feed_url).
 
 ### `in_reply_to_id`
 
 OPTIONAL_FOR_KINDS: `abstract`, `proposal`
 
-The item to which this proposal is in reply. Most of the time, this should
-resolve to a document in the archive.
+The item to which this proposal is in reply. It is RECOMMENDED for this value
+to resolve to a document in the archive.
+
+### `part_of_id`
+
+OPTIONAL_FOR_KINDS: all
+
+This item is part of another item.
 
 ### `redirect_to_id`
 
 REQUIRED_FOR_KINDS: `redirect`
 
 The identifier of the item to which this item should be redirected in some way.
+
+### `tags`
+
+OPTIONAL_FOR_KINDS: `article`, `blogpost`, `essay`, `note`, `presentation`
+
+An array of names for authors to tag related items. Uses a controlled set of
+tags defined in [tags.yaml](etc/tags.yaml).
 
 ## Relating to person, member, and organization items
 
@@ -229,8 +310,8 @@ semantics may be expressed for this context.
 REQUIRED_FOR_KINDS: `person`, `member`, `organization`
 
 The name that is most commonly used to refer to a person or organization.
-Constructed in the [Company][Company data source] or [People][People data
-source] data sources from the LDAP [`displayName` attribute](#displayname) or
+Constructed in the [Company][Company data source] or [People][People data source]
+data sources from the LDAP [`displayName` attribute](#displayname) or
 [`cn` attribute](#cn), or by the [`o` attribute](#o) for organizations or the
 joining of the [`givenname` attribute](#givenname) and [`sn` attribute](#sn)
 for persons.
@@ -501,3 +582,4 @@ default uses the identifier `me`.
 [Time Zone Database]: https://www.iana.org/time-zones
 [Company data source]: lib/data_sources/company.rb
 [People data source]: lib/data_sources/people.rb
+[W3C Datetime]: https://www.w3.org/TR/NOTE-datetime
