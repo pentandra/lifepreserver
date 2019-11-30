@@ -6,11 +6,13 @@ require 'uri'
 
 # External gems
 require 'locale'
-require 'html5small/nanoc'
-require 'nanoc/cachebuster'
 
 # Ruby stdlib utility functions
 include ERB::Util
+
+# Third-party Nanoc filters
+require 'html5small/nanoc'
+require 'nanoc/cachebuster'
 
 # Nanoc helpers to include in a global context
 include Nanoc::Helpers::Capturing

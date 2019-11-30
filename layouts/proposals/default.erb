@@ -30,7 +30,7 @@
 
         <dl id="document-submitted" class="group">
           <dt class="aside"><div class="close">Submitted</div></dt>
-          <dd class="bd"><time property="schema:datePublished" datetime="<%= simple_date(:created_at) %>"><%= simple_date(:created_at).ndashed %></time></dd>
+          <dd class="bd"><time property="schema:datePublished" datetime="<%= date_or_time(@item.fetch(:created_at)).iso8601 %>"><%= @item.fetch(:created_at).to_s(:db).ndashed %></time></dd>
         </dl>
 
         <% if @item.key?(:submitted_by) %>
@@ -45,7 +45,7 @@
         <% if @item[:updated_at] > @item[:created_at] then %>
           <dl id="document-modified" class="group">
             <dt class="aside"><div class="close">Modified</div></dt>
-            <dd class="bd"><time property="schema:dateModified" datetime="<%= simple_date(:updated_at) %>"><%= simple_date(:updated_at).ndashed %></time></dd>
+            <dd class="bd"><time property="schema:dateModified" datetime="<%= date_or_time(@item.fetch(:updated_at)).iso8601 %>"><%= @item.fetch(:updated_at).to_s(:db).ndashed %></time></dd>
           </dl>
         <% end %>
 
@@ -55,7 +55,7 @@
           <dd class="bd"><a rel="alternate" type="application/pdf" href="<%= path_to(@item, rep: :pdf_a4) %>"><abbr>PDF</abbr>, size: <abbr>ISO</abbr> <abbr>A4</abbr></a></dd>
         </dl>
       </div>
-      <meta property="schema:copyrightYear" datatype="xsd:gYear" content="<%= @item[:created_at].year %>" />
+      <meta property="schema:copyrightYear" datatype="xsd:gYear" content="<%= @item.fetch(:created_at).year %>" />
       <link property="rdfa:copy" resource="pentandra-website:license" />
     </header>
     <div class="bd numbered">

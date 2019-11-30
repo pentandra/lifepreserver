@@ -104,7 +104,7 @@ module LifePreserver
             xml.title(@title)
 
             # Add date
-            xml.updated(updated.__nanoc_to_iso8601_time)
+            xml.updated(updated.iso8601)
 
             # Add links
             xml.link(rel: 'alternate', href: (alt_link || root_url), type: 'text/html', hreflang: alt_link_lang)
@@ -144,8 +144,8 @@ module LifePreserver
             xml.title(title_proc.call(entry), type: 'html')
 
             # Add dates
-            xml.published(attribute_to_time(entry[:published_at] || entry[:created_at]).__nanoc_to_iso8601_time)
-            xml.updated(attribute_to_time(entry[:updated_at] || entry[:created_at]).__nanoc_to_iso8601_time)
+            xml.published(attribute_to_time(entry[:published_at] || entry[:created_at]).iso8601)
+            xml.updated(attribute_to_time(entry[:updated_at] || entry[:created_at]).iso8601)
 
             # Add specific author information
             if entry[:author_name] || entry[:author_uri]

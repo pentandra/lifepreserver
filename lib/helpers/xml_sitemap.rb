@@ -1,11 +1,13 @@
 # frozen_string_literal: true
 
 require_relative 'link_to'
+require_relative 'dates'
 
 module Nanoc::Helpers
   # @see http://nanoc.ws/doc/reference/helpers/#xmlsitemap
   module XMLSitemap
     include LifePreserver::Helpers::LinkTo
+    include LifePreserver::Helpers::Dates
 
     # @option params [Array] :items
     # @option params [Proc] :rep_select
@@ -19,7 +21,7 @@ module Nanoc::Helpers
       select_proc = params.fetch(:rep_select, nil)
 
       # Create builder
-      buffer = String.new
+      buffer = +''
       xml = Builder::XmlMarkup.new(target: buffer, indent: 2)
 
       # Check for required attributes
@@ -37,7 +39,7 @@ module Nanoc::Helpers
           reps.sort_by { |r| r.name.to_s }.each do |rep|
             xml.url do
               xml.loc URI.escape(path_to(rep, absolute: true))
-              xml.lastmod item[:mtime].__nanoc_to_iso8601_date unless item[:mtime].nil?
+              xml.lastmod date_or_time(item[:mtime]).iso8601 unless item[:mtime].nil?
               xml.changefreq item[:changefreq] unless item[:changefreq].nil?
               xml.priority item[:priority] unless item[:priority].nil?
             end
