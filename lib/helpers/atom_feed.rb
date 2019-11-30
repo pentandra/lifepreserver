@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'locale'
-
 require_relative 'weblog'
 require_relative 'link_to'
 require_relative 'dates'
@@ -10,15 +8,13 @@ module LifePreserver
   module Helpers
     # @see Nanoc::Helpers::Blogging
     module AtomFeed
-      include LifePreserver::Helpers::Dates
-      include LifePreserver::Helpers::LinkTo
-      include LifePreserver::Helpers::Weblog
+      include Dates
+      include LinkTo
+      include Weblog
 
       class AtomFeedBuilder
         attr_accessor :config
 
-        attr_accessor :alt_link
-        attr_accessor :alt_link_lang
         attr_accessor :id
         attr_accessor :limit
         attr_accessor :relevant_entries
@@ -63,6 +59,11 @@ module LifePreserver
           all.reverse.first(@limit)
         end
 
+        def base_url
+          require 'uri'
+          URI(@config[:base_url]).normalize.to_s
+        end
+
         def updated
           @relevant_entries.map { |a| attribute_to_time(a[:updated_at] || a[:created_at]) }.max
         end
@@ -95,20 +96,19 @@ module LifePreserver
         end
 
         def build_for_feed(xml)
-          root_url = URI(@config[:base_url]).normalize.to_s
           xml.instruct!
-          xml.feed(xmlns: 'http://www.w3.org/2005/Atom', 'xml:base' => root_url) do
+          xml.feed(xmlns: 'http://www.w3.org/2005/Atom', 'xml:base' => base_url) do
 
             # Add primary attributes
-            xml.id(id || root_url)
+            xml.id(id || base_url)
             xml.title(@title)
 
             # Add date
             xml.updated(updated.iso8601)
 
             # Add links
-            xml.link(rel: 'alternate', href: (alt_link || root_url), type: 'text/html', hreflang: alt_link_lang)
-            xml.link(rel: 'self',      href: feed_url,               type: 'application/atom+xml')
+            xml.link(rel: 'alternate', href: feed_alternate_url, type: 'text/html')
+            xml.link(rel: 'self',      href: feed_url,           type: 'application/atom+xml')
 
             # Add author information
             xml.author do
@@ -136,11 +136,14 @@ module LifePreserver
           return if url.nil?
 
           # Fetch the language of the entry
-          entry_lang = entry.fetch(:lang) { Locale.default.to_rfc.to_s }
+          entry_lang = entry.fetch(:lang) do
+            require 'locale'
+            Locale.default.to_rfc.to_s
+          end
 
           xml.entry do
             # Add primary attributes
-            xml.id(atom_tag_for(entry))
+            xml.id(entry.fetch(:atom_tag) { tag_uri_for(entry) })
             xml.title(title_proc.call(entry), type: 'html')
 
             # Add dates
@@ -166,7 +169,9 @@ module LifePreserver
         end
       end
 
-      # Generate an Atom feed.
+      # Generate an Atom feed a la RFC4287 and RFC4946.
+      #
+      # @see https://tools.ietf.org/html/rfc4287
       #
       # @param [Hash] params General parameters for the feed.
       # @option params [Number] :limit (5) The limiting number of entries for the feed.
@@ -178,9 +183,6 @@ module LifePreserver
       # @option params [Proc] :title_proc (->(a) { a[:title] })
       # @option params [String] :title The title of the feed.
       # @option params [String] :id The id of the feed.
-      # @option params [String] :alt_link A link to an alternate representation of the feed.
-      # @option params [String] :alt_link_lang (Locale.default.to_rfc) The language
-      #   of the alternate representation of the feed (i.e. +:alt_link+).
       # @option params [String] :author_name The default author of the feed.
       # @option params [String] :author_uri The default author URI of the feed.
       # @option params [String] :icon The icon associated with the feed.
@@ -195,8 +197,6 @@ module LifePreserver
         builder = AtomFeedBuilder.new(@config, @item)
 
         # Fill builder
-        builder.alt_link          = params[:alt_link]
-        builder.alt_link_lang     = params.fetch(:alt_link_lang) { Locale.default.to_rfc.to_s }
         builder.id                = params[:id]
         builder.limit             = params.fetch(:limit, 5)
         builder.relevant_entries  = params.fetch(:entries, [])
@@ -216,19 +216,39 @@ module LifePreserver
         builder.build
       end
 
-      # @return [String]
+      # Fetch the URL of the feed item.
+      #
+      # @note Defaults to the current item's path, but can be overridden with a
+      # +:feed_url+ item attribute.
+      #
+      # @return [String] The URL of the feed.
       def feed_url
-        @item[:feed_url] || path_to(@item, absolute: true)
+        @item.fetch(:feed_url) { path_to(@item, absolute: true) }
       end
 
-      # @return [String]
-      def atom_tag_for(item)
-        return item[:entry_id] if item[:entry_id]
-
-        hostname, base_dir = %r{^.+?://([^/]+)(.*)$}.match(@config[:base_url])[1..2]
-        formatted_date = attribute_to_time(item[:created_at]).__nanoc_to_iso8601_date
-
-        "tag:#{hostname},#{formatted_date}:#{base_dir}#{path_to(item)}"
+      # Fetch an alternate URL of the feed item.
+      #
+      # @note Assumes the existance of an alternate index file with the same
+      #   parent as the feed. Use the +:alternate_url+ item attribute to
+      #   override this default.
+      #
+      # @todo Provide some check to verify that this alternate exists.
+      #
+      # @example A tightly coupled implementation to ensure that item exists
+      #   alternate_id = File.join(File.dirname(path_to(@item)), 'index.*')
+      #   if (alternate_item = @items[alternate_id])
+      #     path_to(alternate_item, absolute: true)
+      #   else
+      #     raise "Please set :alternate_url for #{@item.identifier}"
+      #   end
+      #
+      # @return [String] The alternate URL of the feed.
+      def feed_alternate_url
+        @item.fetch(:alternate_url) do
+          feed_parent = File.dirname(path_to(@item))
+          index_path = File::SEPARATOR
+          path_to(File.join(feed_parent, index_path), absolute: true)
+        end
       end
     end
   end

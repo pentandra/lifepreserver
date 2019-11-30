@@ -3,23 +3,18 @@
 require 'helpers/atom_feed'
 
 RSpec.describe LifePreserver::Helpers::AtomFeed, helper: true do
+  let(:item_attributes) { {} }
+
   before do
-    allow(ctx.dependency_tracker).to receive(:enter)
-    allow(ctx.dependency_tracker).to receive(:exit)
+    ctx.create_item('Feed', item_attributes, '/feed')
+    ctx.create_rep(ctx.items['/feed'], '/feed.xml')
+
+    ctx.item = ctx.items['/feed']
+    ctx.config[:base_url] = base_url
   end
 
   describe '#feed_url' do
     subject { helper.feed_url }
-
-    let(:item_attributes) { {} }
-
-    before do
-      ctx.create_item('Feed', item_attributes, '/feed')
-      ctx.create_rep(ctx.items['/feed'], '/feed.xml')
-
-      ctx.item = ctx.items['/feed']
-      ctx.config[:base_url] = base_url
-    end
 
     context 'without base_url' do
       let(:base_url) { nil }
@@ -50,63 +45,35 @@ RSpec.describe LifePreserver::Helpers::AtomFeed, helper: true do
     end
   end
 
-  describe '#atom_tag_for' do
-    subject { helper.atom_tag_for(ctx.items['/stuff']) }
+  describe '#feed_alternate_url' do
+    subject { helper.feed_alternate_url }
 
-    let(:item_attributes) { { created_at: '2015-05-19 12:34:56' } }
-    let(:item_rep_path) { '/stuff.xml' }
-    let(:base_url) { 'http://url.base' }
-
-    before do
-      ctx.create_item('Stuff', item_attributes, '/stuff')
-      ctx.create_rep(ctx.items['/stuff'], item_rep_path)
-
-      ctx.config[:base_url] = base_url
-    end
-
-    context 'item with path' do
-      let(:item_rep_path) { '/stuff.xml' }
-
-      it { is_expected.to eql('tag:url.base,2015-05-19:/stuff.xml') }
-    end
-
-    context 'item without path' do
-      let(:item_rep_path) { nil }
+    context 'without base_url' do
+      let(:base_url) { nil }
 
       it 'raises' do
-        expect { subject }.to raise_error(RuntimeError)
+        expect { subject }.to raise_error(Nanoc::Error)
       end
     end
 
-    context 'base URL without subdir' do
+    context 'with base_url' do
       let(:base_url) { 'http://url.base' }
 
-      it { is_expected.to eql('tag:url.base,2015-05-19:/stuff.xml') }
-    end
+      context 'with alternate_url' do
+        let(:item_attributes) do
+          { alternate_url: '/alternate.html' }
+        end
 
-    context 'base URL with subdir' do
-      let(:base_url) { 'http://url.base/sub' }
-
-      it { is_expected.to eql('tag:url.base,2015-05-19:/sub/stuff.xml') }
-    end
-
-    context 'created_at is date' do
-      let(:item_attributes) do
-        { created_at: Date.parse('2015-05-19 12:34:56') }
+        it 'returns custom URL' do
+          expect(subject).to eql('/alternate.html')
+        end
       end
 
-      it { is_expected.to eql('tag:url.base,2015-05-19:/stuff.xml') }
-    end
-
-    context 'created_at is time' do
-      let(:item_attributes) do
-        { created_at: Time.parse('2015-05-19 12:34:56') }
+      context 'without feed_url' do
+        it 'returns base URL + path' do
+          expect(subject).to eql('http://url.base/')
+        end
       end
-
-      it { is_expected.to eql('tag:url.base,2015-05-19:/stuff.xml') }
     end
-
-    # TODO: handle missing base_dir
-    # TODO: handle missing created_at
   end
 end

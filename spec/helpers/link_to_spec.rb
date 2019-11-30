@@ -120,4 +120,64 @@ RSpec.describe LifePreserver::Helpers::LinkTo, helper: true do
   describe '#path_to' do
     subject { helper.path_to(target, rep, snapshot, absolute) }
   end
+
+  describe '#tag_uri_for' do
+    subject { helper.tag_uri_for(ctx.items['/stuff']) }
+
+    let(:item_attributes) { { created_at: '2015-05-19 12:34:56' } }
+    let(:item_rep_path) { '/stuff.xml' }
+    let(:base_url) { 'http://url.base' }
+
+    before do
+      ctx.create_item('Stuff', item_attributes, '/stuff')
+      ctx.create_rep(ctx.items['/stuff'], item_rep_path)
+
+      ctx.config[:base_url] = base_url
+    end
+
+    context 'item with path' do
+      let(:item_rep_path) { '/stuff.xml' }
+
+      it { is_expected.to eql('tag:url.base,2015-05-19:/stuff.xml') }
+    end
+
+    context 'item without path' do
+      let(:item_rep_path) { nil }
+
+      it 'raises' do
+        expect { subject }.to raise_error(RuntimeError)
+      end
+    end
+
+    context 'base URL without subdir' do
+      let(:base_url) { 'http://url.base' }
+
+      it { is_expected.to eql('tag:url.base,2015-05-19:/stuff.xml') }
+    end
+
+    context 'base URL with subdir' do
+      let(:base_url) { 'http://url.base/sub' }
+
+      it { is_expected.to eql('tag:url.base,2015-05-19:/sub/stuff.xml') }
+    end
+
+    context 'created_at is date' do
+      let(:item_attributes) do
+        { created_at: Date.parse('2015-05-19 12:34:56') }
+      end
+
+      it { is_expected.to eql('tag:url.base,2015-05-19:/stuff.xml') }
+    end
+
+    context 'created_at is time' do
+      let(:item_attributes) do
+        { created_at: Time.parse('2015-05-19 12:34:56') }
+      end
+
+      it { is_expected.to eql('tag:url.base,2015-05-19:/stuff.xml') }
+    end
+
+    # TODO: handle missing base_dir
+    # TODO: handle missing created_at
+  end
 end

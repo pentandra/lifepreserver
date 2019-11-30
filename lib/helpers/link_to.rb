@@ -2,11 +2,13 @@
 
 require 'active_support/core_ext/string/output_safety'
 
+require_relative 'dates'
 require_relative 'url_shortener'
 
 module LifePreserver
   module Helpers
     module LinkTo
+      include Dates
       include UrlShortener
       include ERB::Util
 
@@ -116,6 +118,23 @@ module LifePreserver
 
       def short_url_for(item, rep: :default, snapshot: :last)
         shorten(path_to(item, rep: rep, snapshot: snapshot, absolute: true))
+      end
+
+      # Create a Tag URI for the given item. Tags, specified in RFC4151, are
+      # permanent, universally unique, non-resolvable identifiers designed
+      # for humans and machines.
+      #
+      # @see https://tools.ietf.org/html/rfc4151
+      # @see https://web.archive.org/web/20110514113830/http://diveintomark.org/archives/2004/05/28/howto-atom-id
+      #
+      # @param item [Nanoc::Core::CompilationItemView] The item to be tagged.
+      #
+      # @return [String] The Tag URI of the given item.
+      def tag_uri_for(item)
+        hostname, base_dir = %r{^.+?://([^/]+)(.*)$}.match(@config[:base_url])[1..2]
+        formatted_date = date_or_time(item.fetch(:created_at)).to_s(:date)
+
+        "tag:#{hostname},#{formatted_date}:#{base_dir}#{path_to(item)}"
       end
 
       protected
