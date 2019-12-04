@@ -12,9 +12,14 @@ module LifePreserver
       include UrlShortener
       include ERB::Util
 
-      # @param [String] id the item id
+      # A convenience method to link to an item using its title as the text
+      # of the link.
       #
-      # @return [String]
+      # @param [String] id the item id
+      # @param attributes (see #link_to)
+      # @option attributes (see #link_to)
+      #
+      # @return [String] The anchor link to the item.
       def link_to_id(id, attributes = {})
         item = @items[id]
 
@@ -27,11 +32,11 @@ module LifePreserver
 
       # Generate a hyperlink from text and a target.
       #
-      # @param [String] text
-      # @param [Hash] attributes the options to create the link with
+      # @param text [String] The text of the anchor element.
+      # @param attributes [Hash]
       # @option attributes [Symbol] :rep (:default) the item rep to link to
       # @option attributes [Symbol] :snapshot (:last) the snapshot to link to
-      # @option attributes [String] :fragment a URI fragment to append
+      # @option attributes [String] :fragment (nil) a URI fragment to append
       # @option attributes [Boolean] :absolute (false) return an absolute URI?
       # @option attributes [Boolean] :concept (false) is this a concept URI?
       # @option attributes [Boolean] :internal (false) retain internal static root path?
@@ -61,15 +66,15 @@ module LifePreserver
 
       # Generate a resource path from a target and optional fragment.
       #
-      # @param [String, Nanoc::Core::CompilationItemView, Nanoc::Core::BasicItemRepView] target
-      # @param [Symbol] rep (:default) the item rep to link to
-      # @param [Symbol] snapshot (:last) the snapshot to link to
-      # @param [String] fragment a URI fragment to append
-      # @param [Boolean] absolute (false) return an absolute URI?
-      # @param [Boolean] concept (false) is this a concept URI?
-      # @param [Boolean] internal (false) retain internal static root path?
+      # @param target [String, Nanoc::Core::CompilationItemView, Nanoc::Core::BasicItemRepView]
+      # @param rep [Symbol] The item rep to link to
+      # @param snapshot [Symbol] The snapshot to link to
+      # @param fragment [String] A URI fragment to append
+      # @param absolute [Boolean] Return an absolute URI?
+      # @param concept [Boolean] Is this a concept URI?
+      # @param internal [Boolean] Retain internal static root path (if it exists)?
       #
-      # @return [String]
+      # @return [String] The path to the target.
       def path_to(target, rep: :default, snapshot: :last, fragment: nil, absolute: false, concept: false, internal: false)
         path = case target
                # REVIEW: can we remove the String type here or check the given target to make things more deterministic?
@@ -91,6 +96,7 @@ module LifePreserver
         path = unstack(nearest_path, path) if nearest_path
 
         # Append base url, if absolute path is requested
+        # TODO: manage dependency on @config[:base_url]
         base_url = @config[:base_url]
         if base_url.nil?
           raise Nanoc::Core::TrivialError.new("Cannot build global path to #{target.inspect}: site configuration has no base_url")
@@ -120,21 +126,36 @@ module LifePreserver
         shorten(path_to(item, rep: rep, snapshot: snapshot, absolute: true))
       end
 
-      # Create a Tag URI for the given item. Tags, specified in RFC4151, are
-      # permanent, universally unique, non-resolvable identifiers designed
-      # for humans and machines.
+      # Create a tag URI for the given item.
       #
-      # @see https://tools.ietf.org/html/rfc4151
-      # @see https://web.archive.org/web/20110514113830/http://diveintomark.org/archives/2004/05/28/howto-atom-id
+      # @note Tags, specified in RFC4151, are permanent, universally unique,
+      #   non-resolvable identifiers designed for humans and machines.
+      #
+      # @see https://tools.ietf.org/html/rfc4151 RFC4151
+      # @see https://web.archive.org/web/20110514113830/http://diveintomark.org/archives/2004/05/28/howto-atom-id How to make a good ID in Atom, by Mark Pilgrim (archived)
       #
       # @param item [Nanoc::Core::CompilationItemView] The item to be tagged.
+      # @param fragment [String] An optional fragment to append.
       #
-      # @return [String] The Tag URI of the given item.
-      def tag_uri_for(item)
-        hostname, base_dir = %r{^.+?://([^/]+)(.*)$}.match(@config[:base_url])[1..2]
-        formatted_date = date_or_time(item.fetch(:created_at)).to_s(:date)
+      # @raise [Nanoc::Core::TrivialError] If the item has no +created_at+
+      #   attribute or the site configuration has no +base_url+.
+      #
+      # @return [String] The tag URI of the given item.
+      def tag_uri_for(item, fragment: nil)
+        base_url = @config[:base_url]
+        if base_url.nil?
+          raise Nanoc::Core::TrivialError.new("Cannot build a tag URI to '#{item.identifier}': site configuration has no base_url")
+        end
 
-        "tag:#{hostname},#{formatted_date}:#{base_dir}#{path_to(item)}"
+        created_at = item[:created_at]
+        if created_at.nil?
+          raise Nanoc::Core::TrivialError.new("Cannot build a tag URI to '#{item.identifier}': item has no created_at")
+        end
+
+        formatted_date = date_or_time(created_at).to_s(:date)
+        hostname, base_dir = %r{^.+?://([^/]+)(.*)$}.match(base_url)[1..2]
+
+        "tag:#{hostname},#{formatted_date}:#{base_dir}#{path_to(item, fragment: fragment)}"
       end
 
       protected

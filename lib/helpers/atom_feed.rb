@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'uri'
+
 require_relative 'weblog'
 require_relative 'link_to'
 require_relative 'dates'
@@ -28,6 +30,8 @@ module LifePreserver
         attr_accessor :icon
         attr_accessor :logo
         attr_accessor :rights
+        attr_accessor :license
+        attr_accessor :license_type
 
         def initialize(config, item)
           @config = config
@@ -60,7 +64,6 @@ module LifePreserver
         end
 
         def base_url
-          require 'uri'
           URI(@config[:base_url]).normalize.to_s
         end
 
@@ -100,7 +103,7 @@ module LifePreserver
           xml.feed(xmlns: 'http://www.w3.org/2005/Atom', 'xml:base' => base_url) do
 
             # Add primary attributes
-            xml.id(id || base_url)
+            xml.id(id || tag_uri_for(@item))
             xml.title(@title)
 
             # Add date
@@ -116,7 +119,8 @@ module LifePreserver
               xml.uri(@author_uri)
             end
 
-            # Add rights information
+            # Add default license and rights information
+            xml.link(rel: 'license', href: @license, type: @license_type)
             xml.rights(@rights) if @rights
 
             # Add icon and logo
@@ -158,8 +162,14 @@ module LifePreserver
               end
             end
 
-            # Add link
+            # Add alternate link
             xml.link(rel: 'alternate', href: url, type: 'text/html', hreflang: entry_lang)
+
+            # Add specific license link and rights, if any
+            xml.rights(entry[:rights]) if entry[:rights]
+            if (license = entry[:license])
+              xml.link(rel: 'license', href: license, type: entry[:license_type])
+            end
 
             # Add content
             summary = excerpt_proc.call(entry)
@@ -172,6 +182,7 @@ module LifePreserver
       # Generate an Atom feed a la RFC4287 and RFC4946.
       #
       # @see https://tools.ietf.org/html/rfc4287
+      # @see https://tools.ietf.org/html/rfc4946
       #
       # @param [Hash] params General parameters for the feed.
       # @option params [Number] :limit (5) The limiting number of entries for the feed.
@@ -188,6 +199,10 @@ module LifePreserver
       # @option params [String] :icon The icon associated with the feed.
       # @option params [String] :logo The logo associated with the feed.
       # @option params [String] :rights The rights associated with the feed.
+      # @option params [String] :license (http://purl.org/atompub/license#unspecified)
+      #   The license associated with the feed, ideally machine-readable.
+      # @option params [String] :license_type (text/plain) The mime type of the
+      #   linked +:license+ resource.
       #
       # @return [String]
       def atom_feed(params = {})
@@ -210,6 +225,8 @@ module LifePreserver
         builder.icon              = params[:icon]
         builder.logo              = params[:logo]
         builder.rights            = params[:rights]
+        builder.license           = params.fetch(:license, 'http://purl.org/atompub/license#unspecified')
+        builder.license_type      = params.fetch(:license_type, 'text/plain')
 
         # Run
         builder.validate

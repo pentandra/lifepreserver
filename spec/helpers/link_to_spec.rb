@@ -122,10 +122,11 @@ RSpec.describe LifePreserver::Helpers::LinkTo, helper: true do
   end
 
   describe '#tag_uri_for' do
-    subject { helper.tag_uri_for(ctx.items['/stuff']) }
+    subject { helper.tag_uri_for(ctx.items['/stuff'], fragment: fragment) }
 
     let(:item_attributes) { { created_at: '2015-05-19 12:34:56' } }
     let(:item_rep_path) { '/stuff.xml' }
+    let(:fragment) { nil }
     let(:base_url) { 'http://url.base' }
 
     before do
@@ -177,7 +178,27 @@ RSpec.describe LifePreserver::Helpers::LinkTo, helper: true do
       it { is_expected.to eql('tag:url.base,2015-05-19:/stuff.xml') }
     end
 
-    # TODO: handle missing base_dir
-    # TODO: handle missing created_at
+    context 'missing base_url' do
+      let(:base_url) { nil }
+
+      it 'raises' do
+        expect { subject }.to raise_error(Nanoc::Error)
+      end
+    end
+
+    context 'missing created_at' do
+      let(:item_attributes) { {} }
+
+      it 'raises' do
+        expect { subject }.to raise_error(Nanoc::Error)
+      end
+    end
+
+    context 'item with path and fragment' do
+      let(:item_rep_path) { '/stuff.xml' }
+      let(:fragment) { 'this' }
+
+      it { is_expected.to eql('tag:url.base,2015-05-19:/stuff.xml#this') }
+    end
   end
 end
