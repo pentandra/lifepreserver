@@ -9,6 +9,8 @@ require 'active_support/core_ext/date_time/conversions'
 
 ::Date::DATE_FORMATS[:date] = '%F'
 ::Time::DATE_FORMATS[:date] = '%F'
+::Time::DATE_FORMATS[:rfc4517] = '%Y%m%d%H%M%S%z'
+::Time::DATE_FORMATS[:rfc6350_timestamp] = '%Y%m%dT%H%M%S%z'
 
 module LifePreserver
   module Helpers

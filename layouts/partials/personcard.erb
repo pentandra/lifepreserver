@@ -25,7 +25,7 @@
       </aside>
     </div>
   </div>
-  <meta property="vcard:rev" datatype="xsd:dateTime" content="<%= company.fetch(:mtime).iso8601 %>" />
+  <meta property="vcard:rev" datatype="xsd:dateTime" content="<%= company.fetch(:updated_at).iso8601 %>" />
   <link rev="schema:employee" resource="pentandra:company" />
   <link property="vcard:hasGender" resource="vcard:<%# @member.fetch(:gender).capitalize %>" />
 </section>

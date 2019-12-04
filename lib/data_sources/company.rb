@@ -6,10 +6,14 @@ require 'net/ldap/dn'
 require 'openssl'
 require 'phonelib'
 require 'uri'
+require 'time'
 
 module LifePreserver
   module DataSources
     class Company < Nanoc::DataSource
+      # @see https://tools.ietf.org/html/rfc4517#section-3.3.13 RFC4517
+      LDAP_GENERALIZED_TIME = '%Y%m%d%H%M%S%z'
+
       identifier :company
 
       def up
@@ -45,11 +49,10 @@ module LifePreserver
           {
             kind: 'organization',
             name: org[:cn] || name,
-            mtime: mtime_of(@config[:company_metafile]),
             is_hidden: true,
           }.merge(org),
           Nanoc::Identifier.new("/company/_#{name.parameterize}"),
-          attributes_checksum_data: OpenSSL::Digest::SHA1.digest(Marshal.dump(Hash[entry])),
+          attributes_checksum_data: "name=#{name},updated_at=#{org.fetch(:updated_at)}"
         )
       end
 
@@ -62,7 +65,6 @@ module LifePreserver
           kind: 'member',
           name: full_name,
           slug: slug,
-          mtime: mtime_of(@config[:company_metafile]),
           is_hidden: true,
         }
 
@@ -70,13 +72,17 @@ module LifePreserver
           name,
           attributes.merge(member),
           Nanoc::Identifier.new("/company/members/_#{slug}"),
-          attributes_checksum_data: OpenSSL::Digest::SHA1.digest(Marshal.dump(Hash[entry])),
+          attributes_checksum_data: "name=#{name},updated_at=#{member.fetch(:updated_at)}"
         )
       end
 
       def transform(entry)
         # If arrays have only one value, pull that value out
         t = entry.transform_values { |v| Array(v).length == 1 ? Array(v).first : v }
+
+        # Parse create and modify timestamps
+        t[:created_at] = ldap_time(t.delete(:createtimestamp))
+        t[:updated_at] = ldap_time(t.delete(:modifytimestamp))
 
         # Recompose labeledURI attribute value assertions for all service profiles
         if t.key?(:labeleduri)
@@ -134,8 +140,10 @@ module LifePreserver
         t
       end
 
-      def mtime_of(meta_filename)
-        File.stat(meta_filename).mtime
+      def ldap_time(arg)
+        Time.strptime(arg, LDAP_GENERALIZED_TIME)
+      rescue ArgumentError
+        Time.parse(arg)
       end
     end
   end

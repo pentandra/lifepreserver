@@ -39,16 +39,17 @@ require 'net/ldap'
 class UpdateCompanyData < ::Nanoc::CLI::CommandRunner
 
   ORGANIZATION_FILTER = Net::LDAP::Filter.eq('objectClass', 'organization')
-  ORGANIZATION_ATTRS = %w[
-    c cn description displayName l labeledURI mail o ou postalCode st street
-    telephoneNumber
-  ]
+  ORGANIZATION_ATTRS = %w[c l postalCode st street]
 
   EMPLOYEE_ATTRS = %w[
-    cn description displayName eduPersonOrcid employeeNumber employeeType
-    generationQualifier givenName inetUserHttpURL initials jpegPhoto labeledURI
-    mail manager mobile o ou personalTitle preferredLanguage sn telephoneNumber
-    title userCertificate
+    eduPersonOrcid employeeNumber employeeType generationQualifier givenName
+    inetUserHttpURL initials jpegPhoto manager mobile personalTitle
+    preferredLanguage preferredTimeZone sn title userCertificate
+  ]
+
+  COMMON_ATTRS = %w[
+    cn createTimestamp description displayName labeledURI mail modifyTimestamp
+    o ou telephoneNumber
   ]
 
   def run
@@ -86,7 +87,7 @@ class UpdateCompanyData < ::Nanoc::CLI::CommandRunner
         base: [options[:organizations], options[:base]].join(','),
         scope: Net::LDAP::SearchScope_SingleLevel,
         filter: ORGANIZATION_FILTER,
-        attributes: ORGANIZATION_ATTRS) do |entry|
+        attributes: COMMON_ATTRS | ORGANIZATION_ATTRS) do |entry|
         ldif_out << "\n"
         ldif_out << entry.to_ldif
       end
@@ -96,7 +97,7 @@ class UpdateCompanyData < ::Nanoc::CLI::CommandRunner
         base: [options[:active_users], options[:base]].join(','),
         scope: Net::LDAP::SearchScope_SingleLevel,
         filter: employee_filter,
-        attributes: EMPLOYEE_ATTRS) do |entry|
+        attributes: COMMON_ATTRS | EMPLOYEE_ATTRS) do |entry|
         entry[:inetuserstatus] = 'active'
         ldif_out << "\n"
         ldif_out << entry.to_ldif

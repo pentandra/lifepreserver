@@ -3,13 +3,15 @@
 require_relative '../helpers/link_to'
 require_relative '../helpers/company'
 require_relative '../helpers/text'
+require_relative '../helpers/dates'
 
 module LifePreserver
   module Filters
     class Vcard < Nanoc::Filter
-      include LifePreserver::Helpers::LinkTo
-      include LifePreserver::Helpers::Company
-      include LifePreserver::Helpers::Text
+      include Helpers::LinkTo
+      include Helpers::Company
+      include Helpers::Text
+      include Helpers::Dates
 
       identifier :vcard
 
@@ -17,7 +19,7 @@ module LifePreserver
 
       # Create a vCard from the given metadata.
       #
-      # @see https://tools.ietf.org/html/rfc6350
+      # @see https://tools.ietf.org/html/rfc6350 RFC6350
       #
       # @param [String] _content Ignored. All structured data is pulled from
       #   the params first and then, if not found, from the item metadata.
@@ -29,34 +31,35 @@ module LifePreserver
       #   vCard represents.
       # @option params [String] :givenname The first name of the object the
       #   vCard represents.
-      # @option params [String] :sn The last name of the object the
-      #   vCard represents.
+      # @option params [String] :sn The last name of the object the vCard
+      #   represents.
       # @option params [String] :nick_name The nick-name of the object the
       #   vCard represents.
       # @option params [String] :gender ('U') The gender of the
-      #   object the vCard represents. According to RFC6350, M stands
-      #   for "male", F stands for "female", O stands for "other", N
-      #   stands for "none or not applicable", U stands for "unknown".
+      #   object the vCard represents. Takes only the first character of the
+      #   value. According to RFC6350, M stands for "male", F stands for
+      #   "female", O stands for "other", N stands for "none or not
+      #   applicable", U stands for "unknown".
       # @option params [String] :mail The email of the object the vCard
       #   represents.
-      # @option params [String] :phone The phone number of the object
-      #   the vCard represents.
-      # @option params [String] :uid A globally unique identifier
-      #   corresponding to the entity associated with the vCard.
-      # @option params [String] :url A uniform resource locator
-      #   associated with the object to which the vCard refers.
-      # @option params [String] :org The organization name
-      #   associated with the object to which the vCard refers.
-      # @option params [String] :ou The organizational unit name
-      #   associated with the object to which the vCard refers.
-      # @option params [String] :title The title or position
-      #   on the bus of the object to which the vCard refers.
-      # @option params [String] :photo_uri The URI of a photo of
-      #   the object the vCard represents.
-      # @option params [String] :logo_uri The URI of an image of
-      #   the logo associated with the object the vCard represents.
-      # @option params [Time] :rev To specify revision information
-      #   about the current vCard.
+      # @option params [String] :phone The phone number of the object the vCard
+      #   represents.
+      # @option params [String] :uid A globally unique identifier corresponding
+      #   to the entity associated with the vCard.
+      # @option params [String] :url A uniform resource locator associated with
+      #   the object to which the vCard refers.
+      # @option params [String] :org The organization name associated with the
+      #   object to which the vCard refers.
+      # @option params [String] :ou The organizational unit name associated
+      #   with the object to which the vCard refers.
+      # @option params [String] :title The title or position on the bus of the
+      #   object to which the vCard refers.
+      # @option params [String] :photo_uri The URI of a photo of the object the
+      #   vCard represents.
+      # @option params [String] :logo_uri The URI of an image of the logo
+      #   associated with the object the vCard represents.
+      # @option params [Time] :rev A timestamp to specify revision information
+      #   for the current vCard.
       def run(_content, params = {})
         validate params
 
@@ -82,11 +85,11 @@ module LifePreserver
         photo_uri = params[:photo_uri] || @item[:photo_uri]
         logo_uri = params[:logo_uri] || @item[:logo_uri] || path_to_logo(absolute: true)
 
-        rev = params[:rev] || @item[:rev] || @item[:mtime] || Time.now
+        rev = params[:rev] || @item[:rev] || @item[:updated_at] || Time.now
 
         vcard = VCardigan.create
 
-        vcard.rev(rev.iso8601)
+        vcard.rev(attribute_to_time(rev).to_s(:rfc6350_timestamp))
         vcard.kind(kind)
         vcard.source(path_to(@item_rep, absolute: true))
 
