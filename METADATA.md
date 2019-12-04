@@ -96,11 +96,10 @@ to the `Locale.default` if not specified.
 
 ### `mtime`
 
-REQUIRED_FOR_KINDS: (depending on the data source)
+REQUIRED_FOR_KINDS: `{base,extra,acronym,personal}-dictionary` and all items from Nanoc's filesystem data source.
 
 The last modification time of the source (e.g. file) upon which an item's data
-is based. Required for most data sources as a heuristic to know whether or not
-to recompile dependent items.
+is based. Required as a heuristic to know when to recompile dependent items.
 
 ## Relating to item state
 
@@ -235,6 +234,31 @@ The kind of item. Currently we have the following kinds:
 * `tag-page` (distinct from tag as a concept)
 * `tag`: the tag itself (a controlled concept)
 * `vocabulary`: an item that represents an RDF ontology.
+
+### `license`
+
+OPTIONAL_FOR_KINDS: all
+
+A URI for a specific machine-readable license for an item. Defaults to
+[Creative Commons Attribution 4.0 International][CC-BY], unless otherwise
+specified.
+
+### `license_type`
+
+OPTIONAL_FOR_KINDS: all
+
+The mimetype of the [`license`](#license) resource.
+
+### `rights`
+
+OPTIONAL_FOR_KINDS: all
+
+A human-readable assertion of rights held over the content of the item.
+Defaults to the following (or similar) unless otherwise specified:
+
+>  Copyright © 2011–2019 Pentandra Research Solutions, Inc. All content, except
+>  where otherwise noted, is licensed under a Creative Commons Attribution 4.0
+>  International license.
 
 ## Relating to relationships between items and other resources
 
@@ -583,3 +607,5 @@ default uses the identifier `me`.
 [Company data source]: lib/data_sources/company.rb
 [People data source]: lib/data_sources/people.rb
 [W3C Datetime]: https://www.w3.org/TR/NOTE-datetime
+[CC-BY]: http://creativecommons.org/licenses/by/4.0/
+[dictionaries]: lib/data_sources/dictionaries.rb
