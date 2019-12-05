@@ -52,6 +52,7 @@ preprocess do
   populate_member_identifiers
   populate_author_uris(weblog)
   generate_personal_profile_pages
+  generate_personal_feeds
 
   if @config[:site][:generate_meta]
     generate_tag_pages

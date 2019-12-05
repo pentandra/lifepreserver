@@ -45,6 +45,10 @@ module LifePreserver
         members.member?(member)
       end
 
+      def member_by_name(name)
+        members.find { |member| member.fetch(:name) == name }
+      end
+
       # Populate identifiers for members without an external WebID.
       #
       # @note Called during preprocessing before items have been given a path,
@@ -82,6 +86,23 @@ module LifePreserver
             "#{@config[:static_root]}#{@config[:people_root]}/#{member.fetch(:slug)}/index.erb",
             binary: false,
           )
+        end
+      end
+
+      def generate_personal_feeds
+        feed_content = "<%= render('/personal_feed.erb', member_name: @item[:member_name]) %>"
+
+        members.each do |member|
+          feed_attributes = {
+            title: "Personal feed for #{member[:name]}",
+            member_name: member[:name],
+            is_hidden_from_human_search: true,
+            kind: 'feed',
+            created_at: member.fetch(:created_at),
+          }
+          feed_id = File.join(@config[:static_root], @config[:people_root], member.fetch(:slug), 'feed.erb')
+
+          @items.create(feed_content, feed_attributes, feed_id)
         end
       end
     end
