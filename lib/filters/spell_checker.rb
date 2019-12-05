@@ -73,7 +73,9 @@ module LifePreserver
             next if ignore_classes.include?(parent['class'])
 
             node_lang = find_node_lang(node)
-            dic = dictionary_for(node_lang)
+
+            dic = nil
+            on_main_fiber { dic = dictionary_for(node_lang) }
             next unless dic
 
             depend_on_attributes(dic.dependencies)

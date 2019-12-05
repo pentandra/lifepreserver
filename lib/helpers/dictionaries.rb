@@ -9,14 +9,15 @@ module LifePreserver
       # A helper class that wraps a Hunspell dictionary and accounts for any
       # dependent items.
       class WrappedHunspellDictionary
-        # @return [Array<Nanoc::Core::BasicItemView>] The dependencies of the
-        #   current Hunspell dictionary item.
+        # @return [Array<Nanoc::Core::BasicItemView>] The item dependencies of
+        #   the current Hunspell dictionary item.
         attr_reader :dependencies
 
         # @return [String] The language (locale tag) of the dictionary.
         attr_reader :lang
 
         class << self
+          # Close the hunspell dictionary at object finalization.
           def finalize(hunspell_dic)
             proc { hunspell_dic.close }
           end
@@ -24,8 +25,8 @@ module LifePreserver
 
         def initialize(lang = FFI::Hunspell.lang, dependencies = [])
           @lang = Locale.create_language_tag(lang).to_s
-          @dependencies = []
           @dict = FFI::Hunspell.dict(lang)
+          @dependencies = []
 
           dependencies.each do |item|
             @dependencies << item
@@ -52,6 +53,8 @@ module LifePreserver
 
         # To check whether the given word is valid.
         #
+        # @param word [String] The word to validate.
+        #
         # @return [Boolean] True if the word is valid, false if not.
         def valid?(word)
           @dict.valid?(word)
@@ -63,8 +66,7 @@ module LifePreserver
       # @note The instances of the dictionary are cached once they have been
       #   requested and reused for subsequent requests.
       #
-      # @param [String] lang (Locale.default) The language tag of the
-      #   dictionary needed.
+      # @param lang [String] The language tag of the dictionary needed.
       #
       # @return [Dictionaries::WrappedHunspellDictionary] The dictionary
       #   instance, if found.
@@ -72,8 +74,7 @@ module LifePreserver
         @@dictionary_cache ||= {}
 
         hunspell_lang = find_simple_locale(lang)
-
-        unless hunspell_lang
+        if hunspell_lang.nil?
           warn "Unable to resolve a dictionary for '#{lang}' from the following candidates: #{Locale.candidates.map(&:to_s).join(', ')}."
           return
         end
@@ -100,13 +101,13 @@ module LifePreserver
       end
 
       # Find the closest locale for the given language tag. Since the purpose
-      # here is to identify which dictionary to use, we are limiting ourselves
-      # to simple language tags.
+      # here is to identify which dictionary to use, we only compare simple
+      # language tags.
       #
-      # @param [String] lang The language tag.
+      # @param lang [String] The language tag with which to find a locale.
       #
-      # @return [Locale::Tag] The locale of the first candidate who's value
-      #   starts with the value of the given language tag.
+      # @return [Locale::Tag, nil] The locale of the first candidate who's
+      #   value starts with the value of the given language tag.
       def find_simple_locale(lang)
         lang_tag = Locale.create_language_tag(lang.to_s).to_simple
         Locale.candidates(type: :simple).find do |candidate|
@@ -121,9 +122,9 @@ module LifePreserver
       #
       # @see file:var/dictionaries/README.md Dictionary Naming Conventions
       #
-      # @param [String] langtag ('*') The glob pattern of the language tag.
-      # @param [String] name ('*') The glob pattern with which to search
-      #   for specific dictionary items, under the +:langtag+ parent pattern.
+      # @param langtag [String] The glob pattern of the language tag.
+      # @param name [String] The glob pattern with which to search for specific
+      #   dictionary items, under the +:langtag+ parent pattern.
       #
       # @return [Array<Nanoc::Core::BasicItemView>] All dictionary items that
       #   match the given pattern.
@@ -159,12 +160,12 @@ module LifePreserver
       # @note Dependent items consist of all supplementary personal and extra
       #   dictionaries located in the same directory as the base dictionary.
       #
-      # @param [Nanoc::Core::BasicItemView] base_dic The base dictionary item.
+      # @param base_dic [Nanoc::Core::BasicItemView] The base-dictionary item.
       #
       # @return [Array<Nanoc::Core::BasicItemView>] All the item dependencies of the base
       #   dictionary item, including the base dictionary item itself.
       def dependencies_for(base_dic)
-        dependencies = @items.find_all(File.join(File.dirname(base_dic.identifier.to_s), '*'))
+        dependencies = @items.find_all(File.join(File.dirname(base_dic.identifier), '*'))
         dependencies.keep_if { |d| d._unwrap.attributes[:kind] =~ /(personal|extra)-dictionary/ }
         dependencies << base_dic
       end

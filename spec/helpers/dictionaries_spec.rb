@@ -104,7 +104,7 @@ RSpec.describe LifePreserver::Helpers::Dictionaries, helper: true, chdir: false 
       context 'on a personal en_US dictionary' do
         let(:lang) { 'en-US' }
 
-        it 'adds the personal dictionary to the dictionary dependencies' do
+        it 'adds the personal dictionary to the list of dependencies' do
           expect(subject.dependencies).to include(ctx.items['/dicts/en_US/personal.dic'])
         end
 
@@ -124,7 +124,7 @@ RSpec.describe LifePreserver::Helpers::Dictionaries, helper: true, chdir: false 
       xcontext 'on an extra en_GB dictionary' do
         let(:lang) { 'en_GB' }
 
-        it 'adds the extra dictionary to the dictionary dependencies' do
+        it 'adds the extra dictionary to the list of dependencies' do
           expect(subject.dependencies).to include(ctx.items['/dicts/en_GB/extra.dic'])
         end
 
@@ -193,7 +193,7 @@ RSpec.describe LifePreserver::Helpers::Dictionaries, helper: true, chdir: false 
     context 'passing a language-only BCP47 language tag' do
       let(:arg) { 'es' }
 
-      it 'should find the matching language_region tag' do
+      it 'finds the matching language_region tag' do
         expect(subject.to_s).to eq('es_ES')
       end
     end
@@ -201,7 +201,7 @@ RSpec.describe LifePreserver::Helpers::Dictionaries, helper: true, chdir: false 
     context 'passing a full BCP47 tag' do
       let(:arg) { 'en-GB' }
 
-      it 'should find a matching tag' do
+      it 'finds a matching tag' do
         expect(subject.to_s).to eq('en_GB')
       end
     end
@@ -209,7 +209,7 @@ RSpec.describe LifePreserver::Helpers::Dictionaries, helper: true, chdir: false 
     context 'passing an extended BCP47 tag' do
       let(:arg) { 'en-US-x-twain' }
 
-      it 'should resolve to the simple tag' do
+      it 'resolves to the simple tag' do
         expect(subject.to_s).to eq('en_US')
       end
     end
@@ -218,11 +218,11 @@ RSpec.describe LifePreserver::Helpers::Dictionaries, helper: true, chdir: false 
       let(:supported_locales) { ['en_US', 'en_GB', 'zz_YY'] }
       let(:arg) { 'zz_YY' }
 
-      it 'should not appear in candidates' do
-        expect(Locale.candidates(type: :simple).map(&:to_s)).to_not include(arg)
+      it 'does not include that language in candidates' do
+        expect(Locale.candidates(type: :simple).map(&:to_s)).not_to include(arg)
       end
 
-      it 'should not return a matching tag' do
+      it 'does not return a matching tag' do
         expect(subject).to be_nil
       end
     end
@@ -235,7 +235,7 @@ RSpec.describe LifePreserver::Helpers::Dictionaries, helper: true, chdir: false 
       end
 
       it 'but arg should not appear in candidates' do
-        expect(Locale.candidates(type: :simple).map(&:to_s)).to_not include(arg)
+        expect(Locale.candidates(type: :simple).map(&:to_s)).not_to include(arg)
       end
 
       it 'and should return nil' do
