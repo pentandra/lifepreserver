@@ -39,7 +39,7 @@ data_sources:
     items_root: &dictionaries_root /lifepreserver/dictionaries
     search_paths:
       - 'var/dictionaries'
-    supported_locales: [ 'en_US', 'en_GB', 'es_ES', 'fr_FR', 'nl_NL', 'de_DE', 'it_IT' ]
+    ordered_locales: [ 'en_US', 'en_GB', 'es_ES', 'fr_FR', 'nl_NL', 'de_DE', 'it_IT' ]
 
   - type: tags
     items_root: *meta_items_root
