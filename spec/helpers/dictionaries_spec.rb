@@ -96,13 +96,16 @@ RSpec.describe LifePreserver::Helpers::Dictionaries, helper: true, chdir: false 
     end
 
     context 'with dependencies' do
-      before do
-        ctx.create_item('content', { kind: 'personal-dictionary', entries: ['figgy/piggy', '*word', 'Nanoc'] }, '/dicts/en_US/personal.dic')
-        ctx.create_item('Pentandra/M', { kind: 'extra-dictionary' }, '/dicts/en_GB/extra.dic')
-      end
-
       context 'on a personal en_US dictionary' do
         let(:lang) { 'en-US' }
+
+        before do
+          item_attrs = {
+            kind: 'personal-dictionary',
+            entries: ['figgy/piggy', '*word', 'Nanoc'],
+          }
+          ctx.create_item('content', item_attrs, '/dicts/en_US/personal.dic')
+        end
 
         it 'adds the personal dictionary to the list of dependencies' do
           expect(subject.dependencies).to include(ctx.items['/dicts/en_US/personal.dic'])
@@ -121,8 +124,17 @@ RSpec.describe LifePreserver::Helpers::Dictionaries, helper: true, chdir: false 
         end
       end
 
-      xcontext 'on an extra en_GB dictionary' do
+      context 'on an extra en_GB dictionary' do
+        include_context 'with tmp dir'
+
         let(:lang) { 'en_GB' }
+
+        before do
+          dic_path = File.join(tmp_dir, 'bar.dic')
+          File.write(dic_path, "1\nPentandra/M")
+          dic_content = Nanoc::Core::Content.create(dic_path, binary: true)
+          ctx.create_item(dic_content, { kind: 'extra-dictionary' }, '/dicts/en_GB/extra.dic')
+        end
 
         it 'adds the extra dictionary to the list of dependencies' do
           expect(subject.dependencies).to include(ctx.items['/dicts/en_GB/extra.dic'])

@@ -123,3 +123,14 @@ end
 
 RSpec::Matchers.alias_matcher :some_textual_content, :be_some_textual_content
 RSpec::Matchers.alias_matcher :some_binary_content, :be_some_binary_content
+
+RSpec.shared_context 'with tmp dir' do
+  around do |example|
+    Dir.mktmpdir('nanoc-test') do |dir|
+      @tmp_dir = dir
+      example.run
+    end
+  end
+
+  attr_reader :tmp_dir
+end
