@@ -7,7 +7,7 @@ RSpec.describe LifePreserver::Helpers::Dictionaries, helper: true, chdir: false 
   let(:search_paths) { ['var/dictionaries'] }
   let(:dictionaries_root) { '/dicts' }
   let(:default_lang) { 'en_US' }
-  let(:supported_locales) { ['en_US', 'en_GB', 'es_ES'] }
+  let(:supported_locales) { %w[en_US en_GB es_ES] }
 
   before do
     # set defaults
@@ -87,7 +87,7 @@ RSpec.describe LifePreserver::Helpers::Dictionaries, helper: true, chdir: false 
         ctx.create_item('content', { kind: 'extra-dictionary' }, '/dicts/fr_FR/fr_FR.dic')
       end
 
-      let(:supported_locales) { ['en_US', 'en_GB', 'fr_FR'] }
+      let(:supported_locales) { %w[en_US en_GB fr_FR] }
       let(:lang) { 'fr_FR' }
 
       it 'does not accept an extra dictionary as a base dictionary' do
@@ -227,7 +227,7 @@ RSpec.describe LifePreserver::Helpers::Dictionaries, helper: true, chdir: false 
     end
 
     context 'supporting an unavailable language' do
-      let(:supported_locales) { ['en_US', 'en_GB', 'zz_YY'] }
+      let(:supported_locales) { %w[en_US en_GB zz_YY] }
       let(:arg) { 'zz_YY' }
 
       it 'does not include that language in candidates' do
