@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'active_support/core_ext/object/blank'
+
 require_relative 'text'
 require_relative 'company'
 require_relative 'articles'
@@ -38,6 +39,7 @@ module LifePreserver
         posts.each do |post|
           author_name = post._unwrap.attributes[:author_name]
           next if author_name.blank?
+
           authors << author_name.to_s
         end
         authors.to_a

@@ -101,6 +101,7 @@ module LifePreserver
         if base_url.nil?
           raise Nanoc::Core::TrivialError.new("Cannot build global path to #{target.inspect}: site configuration has no base_url")
         end
+
         path = absolute ? base_url + path : path.sub(base_url, '')
 
         # Remove static root for external path, if present
