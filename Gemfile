@@ -13,9 +13,12 @@ gem 'linkeddata'
 gem 'locale'
 gem 'nanoc'              # for compiling the site
 gem 'nanoc-cachebuster', git: 'https://github.com/cdchapman/nanoc-cachebuster', branch: 'nanoc-4'
+gem 'net-ldap'
 gem 'nokogiri'           # for parsing HTML
 gem 'nokogumbo'          # A Nokogiri extension for parsing HTML5
 gem 'pandoc-ruby'        # for benefit reports in ConTeXt
+gem 'phonelib'           # for parsing phone numbers
+gem 'pragmatic_segmenter'
 gem 'rainpress'          # for compact CSS
 gem 'rest-client'        # for downloads of external resources
 gem 'rqrcode'            # for qrcodes
@@ -23,9 +26,6 @@ gem 'rubypants-unicode'
 gem 'shortly',           git: 'https://github.com/FLEWID-AB/shortly' # for URL shortening
 gem 'uglifier'           # for compact JavaScript
 gem 'vcardigan'          # for vCards
-gem 'pragmatic_segmenter'
-gem 'net-ldap'
-gem 'phonelib'           # for parsing phone numbers
 
 group :development, optional: true do
   gem 'adsf'              # for nanoc view
@@ -37,8 +37,8 @@ group :development, optional: true do
 end
 
 group :documentation, optional: true do
-  gem 'yard'
   gem 'redcarpet'
+  gem 'yard'
 end
 
 group :test, optional: true do
@@ -51,11 +51,11 @@ group :test, optional: true do
   gem 'rspec-mocks'
   gem 'rubocop'
   gem 'rubocop-rspec'
+  gem 'simplecov', require: false
   gem 'timecop'
   gem 'tty-command'
   gem 'vcr'
+  gem 'w3c_validators'
   gem 'watir'
   gem 'webmock'
-  gem 'simplecov', require: false
-  gem 'w3c_validators'
 end
