@@ -11,9 +11,10 @@ AllCops:
 
 require: rubocop-rspec
 
-# We use filenames such as "update-company-data.rb" that translate into method names.
 Naming/FileName:
   Exclude:
+    # We use command files such as "update-company-data.rb" that translate
+    # into method names.
     - 'commands/*.rb'
     - 'Rules.rb'
 
