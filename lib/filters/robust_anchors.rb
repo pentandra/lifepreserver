@@ -3,7 +3,6 @@
 module LifePreserver
   module Filters
     class RobustAnchors < Nanoc::Filter
-
       identifier :robust_anchors
 
       requires 'nokogiri', 'locale', 'pragmatic_segmenter'

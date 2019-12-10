@@ -37,7 +37,6 @@ no_params
 require 'net/ldap'
 
 class UpdateCompanyData < ::Nanoc::CLI::CommandRunner
-
   ORGANIZATION_FILTER = Net::LDAP::Filter.eq('objectClass', 'organization')
   ORGANIZATION_ATTRS = %w[c l postalCode st street]
 
@@ -53,7 +52,6 @@ class UpdateCompanyData < ::Nanoc::CLI::CommandRunner
   ]
 
   def run
-
     ldif_out = String.new(<<~LDIF_PREAMBLE)
 
     # Company LDAP data describing organizations and employees.

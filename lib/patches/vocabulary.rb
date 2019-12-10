@@ -4,7 +4,6 @@ require 'active_support/core_ext/string/inflections'
 module RDF
   class Vocabulary
     class << self
-
       # Override __prefix__ class method to have better prefixes for some of
       # these longer vocabulary names.
       def __prefix__

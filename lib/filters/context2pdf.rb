@@ -42,7 +42,6 @@ module LifePreserver
             cmd = ['context', '--nonstopmode', "--mode=#{mode}", "--trackers=#{trackers}", f.path]
 
             Open3.popen3(*cmd) do |_stdin, stdout, stderr, thread|
-
               if debug
                 { stdout: stdout, stderr: stderr }.each do |key, stream|
                   Thread.new do

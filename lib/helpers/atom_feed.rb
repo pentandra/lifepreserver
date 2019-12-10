@@ -101,7 +101,6 @@ module LifePreserver
         def build_for_feed(xml)
           xml.instruct!
           xml.feed(xmlns: 'http://www.w3.org/2005/Atom', 'xml:base' => base_url) do
-
             # Add primary attributes
             xml.id(id || tag_uri_for(@item))
             xml.title(@title)

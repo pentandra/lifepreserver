@@ -7,7 +7,6 @@ require 'digest/md5'
 module LifePreserver
   module Helpers
     module UrlShortener
-
       def shorten(url)
         hash = Digest::MD5.hexdigest(url)
         store.transaction { store[hash] || generate_short_url(hash, url) }

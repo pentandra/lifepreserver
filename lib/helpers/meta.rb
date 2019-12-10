@@ -5,7 +5,6 @@ require 'git'
 module LifePreserver
   module Helpers
     module Meta
-
       # Run during preprocessing
       def validate_version_history(config = nil)
         config ||= @config

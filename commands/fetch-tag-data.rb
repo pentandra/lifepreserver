@@ -6,7 +6,6 @@ summary   'fetches additional data about semantic tags from the Web'
 description 'Runs a SPARQL query on DBpedia to fetch additional data about semantic tags'
 
 class FetchTagData < ::Nanoc::CLI::CommandRunner
-
   def run
     require 'sparql/client'
     require 'yaml'
@@ -15,7 +14,6 @@ class FetchTagData < ::Nanoc::CLI::CommandRunner
       File.open('etc/tags.yaml') do |file|
         YAML.safe_load(file.read, filename: file.path, symbolize_names: true)
       end
-
 
     FileUtils.mkdir_p('var')
 
