@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # HTML, ERB, and Markdown files
 
 compile '/**/*.erb' do

@@ -41,7 +41,7 @@ class GenVocabs < ::Nanoc::CLI::CommandRunner
       end
       cmd += " serialize --uri '#{v[:uri]}' --output-format vocabulary"
       cmd += " --module-name #{v.fetch(:module_name, 'RDF::Vocab')}"
-      cmd += " --class-name #{v[:class_name] ? v[:class_name] : id.to_s.upcase}"
+      cmd += " --class-name #{v[:class_name] || id.to_s.upcase}"
       cmd += ' --strict' if v.fetch(:strict, true)
       cmd += " --extra #{URI.encode(v[:extra].to_json)}" if v[:extra]
       cmd += " -o lib/vocabs/#{id}.rb_t"

@@ -6,158 +6,6 @@
 # Note that changes in the inspected code, or installation of new
 # versions of RuboCop, may require this file to be generated again.
 
-# Offense count: 3
-# Cop supports --auto-correct.
-# Configuration parameters: TreatCommentsAsGroupSeparators, Include.
-# Include: **/*.gemfile, **/Gemfile, **/gems.rb
-Bundler/OrderedGems:
-  Exclude:
-    - 'Gemfile'
-
-# Offense count: 15
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle, IndentationWidth.
-# SupportedStyles: with_first_argument, with_fixed_indentation
-Layout/AlignArguments:
-  Exclude:
-    - 'commands/update-company-data.rb'
-    - 'lib/filters/rdf_distiller.rb'
-
-# Offense count: 12
-# Cop supports --auto-correct.
-# Configuration parameters: AllowMultipleStyles, EnforcedHashRocketStyle, EnforcedColonStyle, EnforcedLastArgumentHashStyle.
-# SupportedHashRocketStyles: key, separator, table
-# SupportedColonStyles: key, separator, table
-# SupportedLastArgumentHashStyles: always_inspect, always_ignore, ignore_implicit, ignore_explicit
-Layout/AlignHash:
-  Exclude:
-    - 'lib/data_sources/dependencies.rb'
-    - 'lib/data_sources/tags.rb'
-    - 'lib/helpers/vocabulary.rb'
-
-# Offense count: 3
-# Cop supports --auto-correct.
-Layout/EmptyLineAfterGuardClause:
-  Exclude:
-    - 'lib/helpers/link_to.rb'
-    - 'lib/helpers/weblog.rb'
-    - 'lib/patches/vocabulary.rb'
-
-# Offense count: 2
-# Cop supports --auto-correct.
-Layout/EmptyLines:
-  Exclude:
-    - 'commands/fetch-tag-data.rb'
-    - 'lib/helpers/figures.rb'
-
-# Offense count: 2
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle.
-# SupportedStyles: empty_lines, no_empty_lines
-Layout/EmptyLinesAroundBlockBody:
-  Exclude:
-    - 'lib/filters/context2pdf.rb'
-    - 'lib/helpers/atom_feed.rb'
-
-# Offense count: 5
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle.
-# SupportedStyles: empty_lines, empty_lines_except_namespace, empty_lines_special, no_empty_lines, beginning_only, ending_only
-Layout/EmptyLinesAroundClassBody:
-  Exclude:
-    - 'commands/fetch-tag-data.rb'
-    - 'commands/update-company-data.rb'
-    - 'lib/filters/old_style_figures.rb'
-    - 'lib/filters/robust_anchors.rb'
-    - 'lib/patches/vocabulary.rb'
-
-# Offense count: 3
-# Cop supports --auto-correct.
-Layout/EmptyLinesAroundMethodBody:
-  Exclude:
-    - 'commands/update-company-data.rb'
-    - 'lib/helpers/figures.rb'
-
-# Offense count: 5
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle.
-# SupportedStyles: empty_lines, empty_lines_except_namespace, empty_lines_special, no_empty_lines
-Layout/EmptyLinesAroundModuleBody:
-  Exclude:
-    - 'lib/helpers/dates.rb'
-    - 'lib/helpers/figures.rb'
-    - 'lib/helpers/meta.rb'
-    - 'lib/helpers/url_shortener.rb'
-
-# Offense count: 2
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle.
-# SupportedStyles: squiggly, active_support, powerpack, unindent
-Layout/IndentHeredoc:
-  Exclude:
-    - 'commands/server.rb'
-    - 'commands/update-company-data.rb'
-
-# Offense count: 1
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle.
-# SupportedStyles: normal, indented_internal_methods
-Layout/IndentationConsistency:
-  Exclude:
-    - 'lib/filters/old_style_figures.rb'
-
-# Offense count: 11
-# Cop supports --auto-correct.
-# Configuration parameters: AllowDoxygenCommentStyle.
-Layout/LeadingCommentSpace:
-  Exclude:
-    - 'commands/fetch-tag-data.rb'
-    - 'commands/gen-voaf-metadata.rb'
-    - 'commands/gen-vocabs.rb'
-    - 'commands/server.rb'
-    - 'commands/static-view.rb'
-    - 'commands/update-company-data.rb'
-    - 'lib/data_sources/company.rb'
-
-# Offense count: 3
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle.
-# SupportedStyles: symmetrical, new_line, same_line
-Layout/MultilineMethodCallBraceLayout:
-  Exclude:
-    - 'commands/update-company-data.rb'
-
-# Offense count: 1
-# Cop supports --auto-correct.
-# Configuration parameters: AllowForAlignment.
-Layout/SpaceAroundOperators:
-  Exclude:
-    - 'lib/helpers/text.rb'
-
-# Offense count: 2
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle, EnforcedStyleForEmptyBrackets.
-# SupportedStyles: space, no_space, compact
-# SupportedStylesForEmptyBrackets: space, no_space
-Layout/SpaceInsideArrayLiteralBrackets:
-  Exclude:
-    - 'rules/company.rb'
-
-# Offense count: 1
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle.
-# SupportedStyles: space, no_space
-Layout/SpaceInsideParens:
-  Exclude:
-    - 'rules/company.rb'
-
-# Offense count: 1
-# Cop supports --auto-correct.
-# Configuration parameters: AllowInHeredoc.
-Layout/TrailingWhitespace:
-  Exclude:
-    - 'etc/compass/config.rb'
-
 # Offense count: 2
 Lint/IneffectiveAccessModifier:
   Exclude:
@@ -172,22 +20,6 @@ Lint/ShadowingOuterLocalVariable:
 Lint/UnreachableCode:
   Exclude:
     - 'lib/filters/old_style_figures.rb'
-
-# Offense count: 3
-# Cop supports --auto-correct.
-# Configuration parameters: IgnoreEmptyBlocks, AllowUnusedKeywordArguments.
-Lint/UnusedBlockArgument:
-  Exclude:
-    - 'lib/filters/fix_context_attribution.rb'
-    - 'lib/helpers/functional.rb'
-
-# Offense count: 3
-# Cop supports --auto-correct.
-# Configuration parameters: AllowUnusedKeywordArguments, IgnoreEmptyMethods.
-Lint/UnusedMethodArgument:
-  Exclude:
-    - 'lib/filters/abbreviate.rb'
-    - 'lib/filters/spell_checker.rb'
 
 # Offense count: 3
 Lint/UriEscapeUnescape:
@@ -212,7 +44,6 @@ Naming/FileName:
   Exclude:
     - 'commands/*.rb'
     - 'Rules.rb'
-    - 'lib/filters/rubypants-unicode.rb'
 
 # Offense count: 2
 # Configuration parameters: Blacklist.
@@ -239,26 +70,12 @@ RSpec/ContextWording:
     - 'spec/helpers/dictionaries_spec.rb'
     - 'spec/helpers/link_to_spec.rb'
 
-# Offense count: 1
-# Cop supports --auto-correct.
-# Configuration parameters: SkipBlocks, EnforcedStyle.
-# SupportedStyles: described_class, explicit
-RSpec/DescribedClass:
-  Exclude:
-    - 'spec/helpers/dictionaries_spec.rb'
-
 # Offense count: 2
 # Configuration parameters: CustomIncludeMethods.
 RSpec/EmptyExampleGroup:
   Exclude:
     - 'spec/helpers/dictionaries_spec.rb'
     - 'spec/helpers/link_to_spec.rb'
-
-# Offense count: 5
-# Cop supports --auto-correct.
-RSpec/EmptyLineAfterFinalLet:
-  Exclude:
-    - 'spec/helpers/dictionaries_spec.rb'
 
 # Offense count: 4
 # Configuration parameters: CustomTransform, IgnoreMethods.
@@ -287,39 +104,9 @@ RSpec/ScatteredSetup:
     - 'spec/helpers/link_to_spec.rb'
 
 # Offense count: 1
-# Cop supports --auto-correct.
-Style/BlockComments:
-  Exclude:
-    - 'spec/helpers/dictionaries_spec.rb'
-
-# Offense count: 2
-# Cop supports --auto-correct.
-# Configuration parameters: AutoCorrect, EnforcedStyle.
-# SupportedStyles: nested, compact
-Style/ClassAndModuleChildren:
-  Exclude:
-    - 'lib/helpers/xml_sitemap.rb'
-    - 'lib/patches/internal_links.rb'
-
-# Offense count: 1
 Style/ClassVars:
   Exclude:
     - 'lib/helpers/dictionaries.rb'
-
-# Offense count: 1
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle.
-# SupportedStyles: compact, expanded
-Style/EmptyMethod:
-  Exclude:
-    - 'lib/helpers/figures.rb'
-
-# Offense count: 18
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle.
-# SupportedStyles: always, never
-Style/FrozenStringLiteralComment:
-  Enabled: false
 
 # Offense count: 3
 # Cop supports --auto-correct.
@@ -331,96 +118,7 @@ Style/HashSyntax:
     - 'lib/filters/context2pdf.rb'
     - 'lib/filters/qrcode.rb'
 
-# Offense count: 1
-# Cop supports --auto-correct.
-# Configuration parameters: InverseMethods, InverseBlocks.
-Style/InverseMethods:
-  Exclude:
-    - 'lib/helpers/xml_sitemap.rb'
-
 # Offense count: 27
 Style/MixinUsage:
   Exclude:
     - 'lib/life_preserver.rb'
-
-# Offense count: 3
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle.
-# SupportedStyles: literals, strict
-Style/MutableConstant:
-  Exclude:
-    - 'commands/update-company-data.rb'
-    - 'lib/filters/abbreviate.rb'
-
-# Offense count: 1
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle, MinBodyLength.
-# SupportedStyles: skip_modifier_ifs, always
-Style/Next:
-  Exclude:
-    - 'lib/data_sources/company.rb'
-
-# Offense count: 6
-# Cop supports --auto-correct.
-# Configuration parameters: PreferredDelimiters.
-Style/PercentLiteralDelimiters:
-  Exclude:
-    - 'lib/data_sources/dictionaries.rb'
-    - 'lib/filters/abbreviate.rb'
-    - 'lib/filters/old_style_figures.rb'
-    - 'lib/filters/spell_checker.rb'
-    - 'lib/helpers/search.rb'
-    - 'lib/life_preserver.rb'
-
-# Offense count: 1
-# Cop supports --auto-correct.
-Style/RedundantCondition:
-  Exclude:
-    - 'commands/gen-vocabs.rb'
-
-# Offense count: 1
-# Cop supports --auto-correct.
-Style/RedundantFreeze:
-  Exclude:
-    - 'commands/server.rb'
-
-# Offense count: 5
-# Cop supports --auto-correct.
-Style/RedundantSelf:
-  Exclude:
-    - 'lib/helpers/text.rb'
-
-# Offense count: 4
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle, AllowInnerSlashes.
-# SupportedStyles: slashes, percent_r, mixed
-Style/RegexpLiteral:
-  Exclude:
-    - 'lib/filters/absolutify_paths.rb'
-    - 'lib/filters/old_style_figures.rb'
-    - 'lib/helpers/child_parent.rb'
-
-# Offense count: 2
-# Cop supports --auto-correct.
-# Configuration parameters: ConvertCodeThatCanStartToReturnNil, Whitelist.
-# Whitelist: present?, blank?, presence, try, try!
-Style/SafeNavigation:
-  Exclude:
-    - 'lib/helpers/link_to.rb'
-
-# Offense count: 1
-# Cop supports --auto-correct.
-# Configuration parameters: .
-# SupportedStyles: percent, brackets
-Style/SymbolArray:
-  EnforcedStyle: percent
-  MinSize: 3
-
-# Offense count: 2
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyleForMultiline.
-# SupportedStylesForMultiline: comma, consistent_comma, no_comma
-Style/TrailingCommaInHashLiteral:
-  Exclude:
-    - 'lib/helpers/company.rb'
-    - 'lib/helpers/link_to.rb'

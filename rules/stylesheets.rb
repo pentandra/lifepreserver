@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Stylesheets
 
 compile '/static/assets/stylesheets/**/*.htc' do

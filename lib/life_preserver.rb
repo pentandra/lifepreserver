@@ -50,4 +50,4 @@ include LifePreserver::Helpers::People
 require 'phonelib'
 
 Phonelib.extension_separator = ';ext='
-Phonelib.extension_separate_symbols = %w(x ext # ; extension)
+Phonelib.extension_separate_symbols = %w[x ext # ; extension]

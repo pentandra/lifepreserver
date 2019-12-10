@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Company
 
 compile %r{/static/company/benefit-reports/\d{4}/index\.md} do

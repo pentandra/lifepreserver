@@ -50,7 +50,7 @@ module LifePreserver
           fragment: attributes.delete(:fragment),
           absolute: attributes.delete(:absolute),
           concept: attributes.delete(:concept),
-          internal: attributes.delete(:internal)
+          internal: attributes.delete(:internal),
         }.compact
 
         path = path_to(target, path_attributes)
@@ -173,8 +173,8 @@ module LifePreserver
       end
 
       def find_nearest_path(*path_items)
-        item_with_path = path_items.find { |item| item && item.path }
-        item_with_path && item_with_path.path
+        item_with_path = path_items.find { |item| item&.path }
+        item_with_path&.path
       end
     end
   end

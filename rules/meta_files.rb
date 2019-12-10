@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Sitemap and other meta files
 
 # Fallback HTML files for httpRange-14 redirection of concepts, etc.

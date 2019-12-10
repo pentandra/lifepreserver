@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 include_rules 'rules/preprocessing'
 
 # Things to ignore globally

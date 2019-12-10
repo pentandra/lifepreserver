@@ -3,7 +3,7 @@
 module LifePreserver
   module Filters
     class OldStyleFigures < Nanoc::Filter
-      IGNORE_CLASSES ||= Set.new(%w(address handle identifier prefix oldstyle tel titling uri)).freeze
+      IGNORE_CLASSES ||= Set.new(%w[address handle identifier prefix oldstyle tel titling uri]).freeze
 
       identifier :old_style_figures
 
@@ -67,7 +67,7 @@ module LifePreserver
         doc = content =~ /<html[\s>]/ ? klass.parse(content) : klass.fragment(content)
         doc.traverse do |node|
           next unless node.text?
-          next if node.path[/\/(h[1-6]|pre)/]
+          next if node.path[%r{/(h[1-6]|pre)}]
 
           parent = node.parent
           next if ignore_classes.include?(parent['class'])

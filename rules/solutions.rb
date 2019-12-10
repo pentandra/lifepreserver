@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Solutions
 
 compile '/static/solutions/proposals/**/index.md' do

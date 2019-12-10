@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Formal articles
 compile '/static/articles/*/*.md' do
   filter :erb, @config[:erb]

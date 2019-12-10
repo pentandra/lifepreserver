@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Aggregated JavaScript scripts
 
 compile '/static/assets/scripts/*.js.erb' do

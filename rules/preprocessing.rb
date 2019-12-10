@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 preprocess do
   @config[:google_api_key] = ENV.fetch('LIFEPRESERVER_API_KEY', false)
   @config[:nanoc_version] = Nanoc::VERSION

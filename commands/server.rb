@@ -12,7 +12,7 @@ required :g, :global, 'specify any global directives (default: daemon off;)'
 
 module LifePreserver
   class Server < ::Nanoc::CLI::CommandRunner
-    NGINX_BIN = 'nginx'.freeze
+    NGINX_BIN = 'nginx'
     NGINX_SEARCH_PATHS = [
       '/usr/local/openresty/nginx/sbin/',
       '/usr/local/opt/openresty/bin/',

@@ -140,7 +140,7 @@ module LifePreserver
       end
 
       def nokogiri_process_comment(node, doc, selectors, namespaces, klass, type, absolute)
-        content = node.content.dup.sub(%r{^(\s*\[.+?\]>\s*)(.+?)(\s*<!\[endif\])}m) do |_m|
+        content = node.content.dup.sub(/^(\s*\[.+?\]>\s*)(.+?)(\s*<!\[endif\])/m) do |_m|
           beginning = Regexp.last_match(1)
           body = Regexp.last_match(2)
           ending = Regexp.last_match(3)

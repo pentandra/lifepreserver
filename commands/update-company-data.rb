@@ -38,18 +38,18 @@ require 'net/ldap'
 
 class UpdateCompanyData < ::Nanoc::CLI::CommandRunner
   ORGANIZATION_FILTER = Net::LDAP::Filter.eq('objectClass', 'organization')
-  ORGANIZATION_ATTRS = %w[c l postalCode st street]
+  ORGANIZATION_ATTRS = %w[c l postalCode st street].freeze
 
   EMPLOYEE_ATTRS = %w[
     eduPersonOrcid employeeNumber employeeType generationQualifier givenName
     inetUserHttpURL initials jpegPhoto manager mobile personalTitle
     preferredLanguage preferredTimeZone sn title userCertificate
-  ]
+  ].freeze
 
   COMMON_ATTRS = %w[
     cn createTimestamp description displayName labeledURI mail modifyTimestamp
     o ou telephoneNumber
-  ]
+  ].freeze
 
   def run
     ldif_out = String.new(<<~LDIF_PREAMBLE)

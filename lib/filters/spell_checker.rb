@@ -11,7 +11,7 @@ module LifePreserver
 
       requires 'set', 'nokogiri'
 
-      IGNORE_CLASSES ||= Set.new(%w(address domainname filename foreign handle identifier prefix projectname sic term uri)).freeze
+      IGNORE_CLASSES ||= Set.new(%w[address domainname filename foreign handle identifier prefix projectname sic term uri]).freeze
 
       def run(content, params = {})
         case params[:type]
@@ -59,7 +59,7 @@ module LifePreserver
         end
       end
 
-      def nokogiri_process(content, ignore_classes, namespaces, klass, type)
+      def nokogiri_process(content, ignore_classes, namespaces, klass, _type)
         # Ensure that all prefixes are strings
         namespaces = namespaces.reduce({}) { |new, (prefix, uri)| new.merge(prefix.to_s => uri) }
 

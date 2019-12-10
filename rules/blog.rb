@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Weblog index
 
 compile '/static/blog/{index,recent}.erb' do

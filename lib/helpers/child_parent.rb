@@ -7,7 +7,7 @@ module LifePreserver
         if item.identifier.legacy?
           item.parent
         else
-          path_without_last_component = item.identifier.to_s.sub(/[^\/]+\/[^\/]+$/, '').chop
+          path_without_last_component = item.identifier.to_s.sub(%r{[^/]+/[^/]+$}, '').chop
           @items[path_without_last_component + '/' + parent_pattern]
         end
       end
@@ -16,7 +16,7 @@ module LifePreserver
         if item.identifier.legacy?
           item.children
         else
-          path_without_last_component = item.identifier.to_s.sub(/[^\/]+$/, '').chop
+          path_without_last_component = item.identifier.to_s.sub(%r{[^/]+$}, '').chop
           pattern = path_without_last_component + '/*/' + child_pattern
           @items.find_all(pattern)
         end

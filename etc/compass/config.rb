@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'compass/import-once/activate'
 # Require any additional compass plugins here.
 

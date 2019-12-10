@@ -6,8 +6,8 @@ module LifePreserver
       require_relative '../helpers/dictionaries'
       include LifePreserver::Helpers::Dictionaries
 
-      ABBREVIATION_REGEX ||= /([[:alnum:]]+(?:[\-;][[[:upper:]][[:digit:]]]+)*[[[:alnum:]]&&[^s]])/
-      IGNORE_CLASSES ||= Set.new(%w(address handle identifier prefix oldstyle tel titling uri)).freeze
+      ABBREVIATION_REGEX ||= /([[:alnum:]]+(?:[\-;][[[:upper:]][[:digit:]]]+)*[[[:alnum:]]&&[^s]])/.freeze
+      IGNORE_CLASSES ||= Set.new(%w[address handle identifier prefix oldstyle tel titling uri]).freeze
 
       identifier :abbreviate
 
@@ -30,7 +30,7 @@ module LifePreserver
 
       protected
 
-      def abbreviate_context(content, params, abbreviations)
+      def abbreviate_context(content, _params, abbreviations)
         content.gsub(ABBREVIATION_REGEX) do |word|
           abbreviations.key?(word.to_sym) ? "\\abbr{#{word}}" : word
         end
@@ -68,7 +68,7 @@ module LifePreserver
         end
       end
 
-      def nokogiri_process(content, klass, type, abbreviations, ignore_classes)
+      def nokogiri_process(content, klass, _type, abbreviations, ignore_classes)
         visited_abbreviations = []
 
         doc = content =~ /<html[\s>]/ ? klass.parse(content) : klass.fragment(content)

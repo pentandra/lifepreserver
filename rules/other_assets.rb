@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Favicon and images
 
 compile '/static/assets/images/**/*' do
