@@ -4,7 +4,7 @@ module LifePreserver
   module Filters
     class BinaryAttributeExtractor < Nanoc::Filter
       identifier :bin_attr_extractor
-      type :text => :binary
+      type :text => :binary # rubocop:disable Style/HashSyntax
 
       # Extracts a binary attribute from an textual item and writes it to file.
       #

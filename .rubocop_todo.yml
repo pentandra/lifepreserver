@@ -108,16 +108,6 @@ Style/ClassVars:
   Exclude:
     - 'lib/helpers/dictionaries.rb'
 
-# Offense count: 3
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle, UseHashRocketsWithSymbolValues, PreferHashRocketsForNonAlnumEndingSymbols.
-# SupportedStyles: ruby19, hash_rockets, no_mixed_keys, ruby19_no_mixed_keys
-Style/HashSyntax:
-  Exclude:
-    - 'lib/filters/bin_attr_extractor.rb'
-    - 'lib/filters/context2pdf.rb'
-    - 'lib/filters/qrcode.rb'
-
 # Offense count: 27
 Style/MixinUsage:
   Exclude:

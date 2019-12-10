@@ -4,7 +4,7 @@ module LifePreserver
   module Filters
     class QRCode < Nanoc::Filter
       identifier :qrcode
-      type :text => :binary
+      type :text => :binary # rubocop:disable Style/HashSyntax
 
       requires 'rqrcode', 'chunky_png'
 

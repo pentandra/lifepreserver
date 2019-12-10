@@ -4,7 +4,7 @@ module LifePreserver
   module Filters
     class Context2Pdf < Nanoc::Filter
       identifier :context2pdf
-      type :text => :binary
+      type :text => :binary # rubocop:disable Style/HashSyntax
 
       requires 'open3', 'fileutils'
 
