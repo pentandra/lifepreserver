@@ -15,8 +15,8 @@ module LifePreserver
           old_style_html_like(content, params)
         else
           raise 'The old_style_figures filter needs to know the type of '
-            'content to process. Pass a :type to the filter call (:html ' \
-            'for HTML, :xhtml for XHTML).'
+          'content to process. Pass a :type to the filter call (:html ' \
+          'for HTML, :xhtml for XHTML).'
         end
       end
 

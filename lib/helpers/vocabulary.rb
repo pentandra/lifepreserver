@@ -7,11 +7,11 @@ module LifePreserver
     module Vocabulary
       # Check METADATA.md at the project root for descriptions of these kinds
       TYPEOF_MAPPING ||= {
-        'article'  => 'schema:Article',
-        'essay'    => 'schema:BlogPosting',
+        'article' => 'schema:Article',
+        'essay' => 'schema:BlogPosting',
         'blogpost' => 'schema:BlogPosting',
         'abstract' => 'fabio:Abstract',
-        'concept'  => 'skos:Concept',
+        'concept' => 'skos:Concept',
       }.freeze
 
       # Generates a string of prefix mappings for the given arguments.

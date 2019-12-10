@@ -16,7 +16,7 @@ module LifePreserver
       end
 
       def ndashed(type: :html)
-        self.to_s.gsub('-', type == :html ? '<span class="ndash">--</span>': '--')
+        self.to_s.gsub('-', type == :html ? '<span class="ndash">--</span>' : '--')
       end
 
       def possessive

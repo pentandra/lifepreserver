@@ -113,7 +113,7 @@ module LifePreserver
           pkey_attributes = []
           raw_certs.each do |raw_cert|
             cert = OpenSSL::X509::Certificate.new(raw_cert)
-            #cert_fpr = OpenSSL::Digest::SHA1.hexdigest(cert.to_der)
+            # cert_fpr = OpenSSL::Digest::SHA1.hexdigest(cert.to_der)
 
             public_key = cert.public_key
 

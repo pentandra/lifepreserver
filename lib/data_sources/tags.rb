@@ -36,8 +36,8 @@ module LifePreserver
 
       def tag_to_item(tag)
         attributes = {
-          kind:      'tag',
-          semantic:  tag.key?(:abstract),
+          kind: 'tag',
+          semantic: tag.key?(:abstract),
           is_hidden: true,
         }
 

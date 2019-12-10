@@ -9,8 +9,8 @@ module LifePreserver
       identifiers :rdf_distiller
 
       requires 'linkeddata',
-        'active_support/core_ext/string/inflections',
-        'active_support/core_ext/hash/slice'
+               'active_support/core_ext/string/inflections',
+               'active_support/core_ext/hash/slice'
 
       # Distill the item into different
       # [RDF](https://www.w3.org/TR/rdf11-concepts/) representations.

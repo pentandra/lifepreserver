@@ -1,4 +1,4 @@
-#frozen_string_literal: true
+# frozen_string_literal: true
 
 usage 'view [options]'
 summary 'start the web server that serves static files'

@@ -1,10 +1,10 @@
-#frozen_string_literal: true
+# frozen_string_literal: true
 
 usage 'server [options]'
 summary 'start the dynamic web server (nginx/OpenResty)'
-description <<-EOS
-Start the dynamic web server. Running this web server requires OpenResty
-to be installed and in scope.
+description <<~EOS
+  Start the dynamic web server. Running this web server requires OpenResty
+  to be installed and in scope.
 EOS
 
 required :c, :conf,   'specify the configuration file to use (default: nginx.conf)'
