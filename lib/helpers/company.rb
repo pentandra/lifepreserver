@@ -105,6 +105,11 @@ module LifePreserver
           @items.create(feed_content, feed_attributes, feed_id)
         end
       end
+
+      def service_profile(profile_class, item = nil)
+        item ||= company
+        item.fetch(:service_profiles).find { |p| p[:class] == profile_class.to_s }
+      end
     end
   end
 end

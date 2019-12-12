@@ -5,4 +5,4 @@
   <meta name="twitter:card" content="<%= cover_image[:wide] ? "summary_large_image" : "summary" %>" />
   <meta name="twitter:image:alt" content="<%= h cover_image[:alt] %>" />
 <% end %>
-<meta name="twitter:site" content="@<%= company.fetch(:service_profiles).find { |p| p[:class] == 'twitter' }.fetch(:account_name) %>" />
+<meta name="twitter:site" content="@<%= service_profile(:twitter).fetch(:account_name) %>" />

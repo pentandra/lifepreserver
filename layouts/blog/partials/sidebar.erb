@@ -30,7 +30,7 @@
               </a>
             </li>
             <li>
-              <a href="<%= %[https://twitter.com/share?url=#{short_url_for(@item)}&amp;text=#{u @item[:title]}&amp;via=#{company.fetch(:service_profiles).find { |p| p[:class] == 'twitter' }.fetch(:account_name) }&amp;hashtags=#{u Array(@item[:tags]).join(',')}] %>" title="Share this article on Twitter">
+              <a href="<%= %[https://twitter.com/share?url=#{short_url_for(@item)}&amp;text=#{u @item[:title]}&amp;via=#{service_profile(:twitter).fetch(:account_name) }&amp;hashtags=#{u Array(@item[:tags]).join(',')}] %>" title="Share this article on Twitter">
                 <span aria-hidden="true" class="button icon-twitter"></span>
                 <span class="visuallyhidden">Share on Twitter</span>
               </a>
