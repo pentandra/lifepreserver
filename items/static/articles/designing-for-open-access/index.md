@@ -1,7 +1,7 @@
 ---
 title: Designing For Open Access
 description: What does open access mean to us? And how do we design for it?
-meta_description: >
+meta_description: >-
   A post describing what open access means to us, and our approach to designing
   systems from the bottom up that open access to knowledge.
 kind: article
@@ -91,7 +91,7 @@ existed, and those that did were cloistered away in monasteries---closed to the
 public.
 
 Illiteracy was widespread, but even beyond that, books were normally written in
-[Latin], a language that the common people did not even know. 
+[Latin], a language that the common people did not even know.
 
 Barriers to the spread of knowledge included:
 
@@ -291,7 +291,7 @@ the publishers, in effect, giving publishers complete control to restrict
 public access to all publicly-funded research. Oh---and taking away from the
 government the right to have a say in it. This is complete troll-like behavior.
 The public has paid for this bridge and the publishers want to make a profit
-off of anyone who crosses, and they act as if they are entitled to do it. 
+off of anyone who crosses, and they act as if they are entitled to do it.
 
 <span class="newthought">Recently, the governor of the state of Georgia
 announced</span> that the Georgia State Archives would be closed to the public
@@ -495,7 +495,7 @@ not get published for the same reason.
 </figure>
 
 I would add to that the questions and thoughts that were in the researchers
-mind as the research was designed in the first place. 
+mind as the research was designed in the first place.
 
 The writing process is wonderful. Writing forces you to think, to formulate
 plans and to analyze results. There is a lot of value in it! But there is no
@@ -601,7 +601,7 @@ those research outputs.
 ## Iterating Research
 
 For some research questions, that is a
-good way to go, but for most, 
+good way to go, but for most,
 
 Over the last decade software development processes have evolved from a
 monolithic [waterfall model] to more [iterative]
@@ -698,7 +698,7 @@ the researcher thinks.
 
 ### Forecasting Research Impact
 
-Publishers are notoriously bad at predicting research impact. 
+Publishers are notoriously bad at predicting research impact.
 
 ### Judging Technical Validity
 
@@ -721,7 +721,7 @@ problem with the technical correctness of the research, or a future research
 direction.
 
 Value in the anonymity of the review may necessitate review attributions to
-remain hidden, locked away in individual silos. 
+remain hidden, locked away in individual silos.
 
 ## Democratizing Research
 
@@ -857,7 +857,7 @@ denied, would he have decided to just forget about it? Instead, he pursued his
 passion in simplicity. This was the era of [small science], when science was
 pursued for the love of it. 'Love is a better teacher than a sense of
 duty,'[^violin_practicing] Einstein said, and 'imagination is more important
-than knowledge.' 
+than knowledge.'
 
 I'm not suggesting that the world is full of thousands of untapped Einsteins,
 but that we need to check our motivations for pursuing science and research as
@@ -970,7 +970,7 @@ starting out, trying to make sense of a paradoxical profession.
 In that past (as in before the Internet), high-profile, prestigious journals
 were the best way to get access to the latest research. Nowadays there are
 faster and better ways to communicate and disseminate scholarly research, and
-the big journal publishers are actually getting in the way and bottlenecking 
+the big journal publishers are actually getting in the way and bottlenecking
 research dissemination. When it comes down to it, this is all about freedom.
 There is just no good reason anymore why a third party should stand at the gate
 of publicly-funded research, giving or denying access to whomsoever it wishes.
@@ -988,7 +988,7 @@ research systems.
 # Additional resources
 
 * [The Coming of the Book: The Impact of Printing 1450--1800][febvre], by [Lucien Febvre]{lang=fr} and [Henri-Jean Martin]{lang=fr}.
-* [The Printing Press as an Agent of Change][press_agent], by Elizabeth Eisenstein. 
+* [The Printing Press as an Agent of Change][press_agent], by Elizabeth Eisenstein.
 * [Hypertext as an agent of change][hypertext], by Mandy Brown.
 * [Manuscripts, Books, and Maps: The Printing Press and a Changing World][booktext], by Bruce Jones.
 * [The Funding of Science][funding] on Wikipedia.
@@ -1090,7 +1090,7 @@ research systems.
     research dissemination process.
 
 [^EU-OA]:
-    
+
     The announcement of the mandate from the European Commission came only a
     day after the UK announced their new open access policy. The commission
     [hopes] that open access publishing by member states will reach
@@ -1138,7 +1138,7 @@ research systems.
     * [are publishers confident in their added value?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=21m24s){.publisher-value}
 
     * [will open access put publishers out of business?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=22m43s){.publisher-death}
- 
+
     * [what countries mandate open access right now?](http://www.youtube.com/watch?v=v31zpZ4woOI&t=26m39s){.oa-promoters}
 
     <figure id="ruvr">
@@ -1158,7 +1158,7 @@ research systems.
     <figure id="petersuber">
       <audio id="suberinterview" preload="none" controls="controls">
         <source src="SuberPodcast_mp3.mp3" type="audio/mpeg" />
-        <source src="SuberPodcast_ogg.ogg" type="audio/ogg" /> 
+        <source src="SuberPodcast_ogg.ogg" type="audio/ogg" />
       </audio>
       <figcaption><p>An interview with Peter Suber on the Harvard University campus at the <a href="http://cyber.law.harvard.edu/hoap/Main_Page">Berkman Center for Internet and Society</a>, where Suber is a faculty fellow. <http://dx.doi.org/10.6084/m9.figshare.96368> <span class="icon-cc"></span><span class="icon-cc-by"></span></p></figcaption>
     </figure>
