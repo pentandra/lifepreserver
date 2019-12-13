@@ -1,4 +1,4 @@
-# Metadata descriptions for items in the [LifePreserver Project](README.md)
+# Metadata descriptions for items in the [LifePreserver project](README.md)
 
 The key words "REQUIRED_FOR_KINDS" "RECOMMENDED_FOR_KINDS", and
 "OPTIONAL_FOR_KINDS" in this document specify for which [kinds](#kind) of items
@@ -16,6 +16,12 @@ interpreted as described in [RFC2119].
 REQUIRED_FOR_KINDS: all
 
 The item title.
+
+### `full_title`
+
+Overrides the [`title`](#title) attribute on the [base HTML
+layout](layouts/base.erb) as the full value of the default HTML `title`
+element.
 
 ### `description`
 

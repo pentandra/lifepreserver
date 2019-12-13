@@ -1,7 +1,7 @@
 <%# for the archaic, proprietary, and limited Open Graph Protocol http://ogp.me/ %>
-<meta property="og:title" content="<%= @item[:title] %>" />
-<meta property="og:description" content="<%= @item[:description] %>" />
-<meta property="og:site_name" content="<%= @config[:site][:name] %>" />
+<meta property="og:title" content="<%=h @item[:full_title] || @item[:title] %>" />
+<meta property="og:description" content="<%=h @item[:meta_description] || @item[:description] %>" />
+<meta property="og:site_name" content="<%=h @config.dig(:site, :name) %>" />
 <meta property="og:url" content="<%= path_to(@item, absolute: true) %>" />
 <% locale = Locale.create_language_tag(@item.fetch(:lang) { Locale.default }).to_simple %>
 <meta property="og:locale" content="<%= locale %>" />
