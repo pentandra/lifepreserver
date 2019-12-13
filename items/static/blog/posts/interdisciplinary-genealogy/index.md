@@ -1,6 +1,6 @@
 ---
 title: Interdisciplinary Genealogy
-description: >
+description: >-
   Venturing out of the genealogy bubble: options for integrating with the
   broader scholarly community.
 kind: blogpost
@@ -65,13 +65,13 @@ While we could call it microhistory,[^life] the collection of all of these
 microhistories amount to a large corpus of knowledge, studied from many
 different perspectives. To study and truly understand who these people _were_,
 genealogy requires us to know what they _knew_. In this way, genealogy is an
-amalgamation of all the world's knowledge, set in historical context. 
+amalgamation of all the world's knowledge, set in historical context.
 
 Why, you say, would we need low-density particle physics research to help
 determine the political affiliations of my Civil War ancestor? Well, you never
 know, but we do need the physicist. They're human aren't they?
 
-[^life]: 
+[^life]:
     We've tried telling people that were writing software for [generational
     history](/blog/thoughts-about-rootstech-2012#what-is-a-user) or
     [microhistory](http://en.wikipedia.org/wiki/Microhistory), but we've gotten

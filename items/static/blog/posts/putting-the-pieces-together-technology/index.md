@@ -1,6 +1,6 @@
 ---
 title: "Putting the Pieces Together: Technology"
-description: >
+description: >-
   What needs to be enabled by technology to allow for scholarly commoning.
 kind: essay
 author_name: Chris Chapman

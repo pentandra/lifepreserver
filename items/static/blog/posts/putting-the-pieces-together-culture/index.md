@@ -1,6 +1,6 @@
 ---
 title: "Putting the Pieces Together: Culture"
-description: >
+description: >-
   A tense convolution of thoughts from many perspectives, and a great choice.
 kind: essay
 author_name: Chris Chapman

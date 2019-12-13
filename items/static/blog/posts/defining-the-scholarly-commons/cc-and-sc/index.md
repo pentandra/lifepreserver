@@ -1,6 +1,6 @@
 ---
 title: "Defining the Scholarly Commons: relationships with the Creative Commons"
-description: >
+description: >-
   A brief comparison of the motivations behind art and research, and the
   interplay between the two.
 kind: essay
