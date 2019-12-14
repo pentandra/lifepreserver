@@ -1,10 +1,10 @@
 <li<%= %( class="#{@item_class}") if @item_class %> property="foaf:account" typeof="foaf:OnlineAccount">
-  <a<%= %( class="#{@anchor_class}") if @anchor_class %> property="foaf:accountName" content="<%= @account[:account_name] %>" rel="foaf:accountServiceHomepage" resource="<%= @account[:service_homepage] %>" href="<%= @account[:uri] %>" title="View <%= "#{@account[:holder].possessive} #{@account[:label]}" %>">
+  <a<%= %( class="#{@anchor_class}") if @anchor_class %> property="foaf:accountName" content="<%= @account[:account_name] %>" rel="foaf:accountServiceHomepage" resource="<%= @account[:service_homepage] %>" href="<%= @account[:uri] %>" title="View <%= "#{(@account_holder_text || @item[:displayname] || @item[:o]).possessive} #{@account[:label]}" %>">
     <% if @type == :icon %>
       <span aria-hidden="true" class="button icon-<%= @account[:class] %>"></span>
-      <span class="visuallyhidden">Follow <span class="handle"><%= @holder_text || @account[:holder] %></span> on <%= @account[:class].camelize %></span>
+      <span class="visuallyhidden">Follow <span class="handle"><%= @button_text || @account[:account_name] %></span> on <%= @account[:class].camelize %></span>
     <% else %>
-      Follow <span class="handle"><%= @holder_text || @account[:holder] %></span> on <%= @account[:class].camelize %>
+      Follow <span class="handle"><%= @button_text || @account[:account_name] %></span> on <%= @account[:class].camelize %>
     <% end %>
   </a>
 </li>

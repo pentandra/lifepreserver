@@ -524,6 +524,9 @@ services, e.g. twitter. Constructed as an array containing `Hash` objects with
 the following keys, each representing a service profile. This array could be
 empty if the member has no third-part service profiles.
 
+Composed from LDAP `labeledURI` values that have the word _Profile_ in the
+label.
+
 #### `uri`
 
 The URI of the profile page, e.g. "https://twitter.com/cd_chapman".
@@ -540,11 +543,6 @@ The name of the account, e.g. "cd_chapman".
 
 The class of the service, formed from the first word of the label, e.g.
 "twitter". Used for locating a particular service.
-
-#### `holder`
-
-The name of the holder of the service account, the `display_name` of a person
-or the `o` of an organization, e.g. "Chris Chapman".
 
 #### `service_homepage`
 

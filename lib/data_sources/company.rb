@@ -86,25 +86,8 @@ module LifePreserver
 
         # Recompose labeledURI attribute value assertions for all service profiles
         if t.key?(:labeleduri)
-          profiles = []
-
-          Array(t.delete(:labeleduri)).each do |labeleduri|
-            hash = labeleduri.split(' ', 2).zip([:uri, :label]).map(&:reverse).to_h
-            uri = URI.parse(hash[:uri])
-            account_name = File.basename(uri.path)
-            if hash.fetch(:label)[/profile/i] && account_name.length > 1
-              hash[:account_name] = account_name
-              hash[:class] = hash.fetch(:label).split(' ').first.underscore
-              hash[:holder] = t[:displayname] || t[:o]
-
-              # Set URI path to root to get the service homepage
-              uri.path = '/'
-              hash[:service_homepage] = uri.normalize.to_s
-
-              profiles << hash
-            end
-          end
-          t[:service_profiles] = profiles
+          t[:service_profiles] =
+            Array(t.delete(:labeleduri)).map { |u| compose_service_profile(u) }.compact
         end
 
         # Extract the public key from user certificates
@@ -144,6 +127,27 @@ module LifePreserver
         Time.strptime(arg, LDAP_GENERALIZED_TIME)
       rescue ArgumentError
         Time.parse(arg)
+      end
+
+      # Compose a service profile from an LDAP labeledURI.
+      #
+      # @param labeleduri [String] An LDAP labeledURI.
+      #
+      # @return [Hash] A service profile, as described in {file:METADATA.md}.
+      def compose_service_profile(labeleduri)
+        hash = %i[uri label].zip(labeleduri.split(' ', 2)).to_h
+        uri = URI.parse(hash[:uri])
+        account_name = File.basename(uri.path)
+        if hash.compact.fetch(:label, '')[/profile/i] && account_name.length > 1
+          hash[:account_name] = account_name
+          hash[:class] = hash.fetch(:label).split(' ').first.underscore
+
+          # Set URI path to root to get the service homepage
+          uri.path = '/'
+          hash[:service_homepage] = uri.normalize.to_s
+
+          hash
+        end
       end
     end
   end

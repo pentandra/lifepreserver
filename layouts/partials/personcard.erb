@@ -1,31 +1,38 @@
-<section resource="<%= @member.fetch(:web_id) %>"
+<section resource="<%= @person.fetch(:web_id) %>"
          property="foaf:member vcard:hasMember"
          typeof="schema:Person foaf:Person vcard:Individual"
-         id="<%= @member.fetch(:slug) %>"
-         class="teammember vcard bl<%= @index.odd? ? ' ock' : '' %> item">
+         id="<%= @person.fetch(:slug) %>"
+         class="<%= @person.fetch(:kind) %> vcard bl<%= @index.odd? ? ' ock' : '' %> item">
   <div class="group">
     <div class="bd group">
       <header>
-        <h4 class="big fn flush" property="foaf:name schema:name vcard:fn"><%= @member[:name] %></h4>
-        <p class="em small title flush" property="schema:jobTitle vcard:title"><%= @member[:title] %></p>
+        <h4 class="big fn flush" property="foaf:name schema:name vcard:fn"><%= @person[:name] %></h4>
+        <p class="em small title flush" property="schema:jobTitle vcard:title"><%= @person[:title] %></p>
       </header>
-      <link property="schema:worksFor" resource="pentandra:company" />
-      <p property="schema:description"><%= @member[:description] %></p>
+      <% if member?(@person) %>
+        <link property="schema:worksFor" resource="pentandra:company" />
+      <% end %>
+      <p property="schema:description"><%= @person[:description] %></p>
     </div>
     <div class="section aside">
-      <img property="foaf:img schema:image vcard:hasPhoto" class="photo framed" src="<%= path_to(@member, rep: :photo) %>" alt="Photo of <%= @member[:name] %>" />
+      <img property="foaf:img schema:image vcard:hasPhoto" class="photo framed" src="<%= path_to(@person, rep: :photo) %>" alt="Photo of <%= @person[:name] %>" />
       <aside class="nav menu rev">
         <ul class="sp framed icons">
-          <li><a property="foaf:isPrimaryTopicOf" href="<%= path_to_profile_page(@member) %>" title="Personal profile page for <%= @member[:name] %>"><span aria-hidden="true" class="button icon-vcard"></span><span class="visuallyhidden">Personal profile page for <%= @member[:name] %></span></a></li>
-          <li><a property="schema:email foaf:mbox vcard:hasEmail" class="email" href="mailto:<%= @member.fetch(:mail) %>" title="mailto:<%= @member.fetch(:mail) %>"><span aria-hidden="true" class="button icon-mail"></span><span class="visuallyhidden">Email <%= @member[:name] %></span></a></li>
-          <% @member.fetch(:service_profiles).each do |profile| %>
-            <%= render('/partials/account_service_item.*', account: profile, type: :icon) %>
+          <li><a property="foaf:isPrimaryTopicOf" href="<%= path_to_profile_page(@person) %>" title="View full profile page for <%= @person[:name] %>"><span aria-hidden="true" class="button icon-popup"></span><span class="visuallyhidden">Personal profile page for <%= @person[:name] %></span></a></li>
+          <li><a property="schema:email foaf:mbox vcard:hasEmail" class="email" href="mailto:<%= @person.fetch(:mail) %>" title="mailto:<%= @person.fetch(:mail) %>"><span aria-hidden="true" class="button icon-mail"></span><span class="visuallyhidden">Email <%= @person[:name] %></span></a></li>
+          <% if @person.key?(:telephonenumber) %>
+            <li><a property="foaf:phone schema:telephone" class="phone" href="tel:<%= @person[:telephonenumber].strftel(:full_e164) %>" title="Call <%= @person[:name] %>"><span aria-hidden="true" class="button icon-phone"></span><span class="visuallyhidden">Call <%= @person[:name] %></span></a></li>
+          <% end %>
+          <% @person.fetch(:service_profiles).each do |profile| %>
+            <%= render('/partials/account_service_item.*', account: profile, type: :icon, account_holder_text: @person[:name]) %>
           <% end %>
         </ul>
       </aside>
     </div>
   </div>
   <meta property="vcard:rev" datatype="xsd:dateTime" content="<%= company.fetch(:updated_at).iso8601 %>" />
-  <link rev="schema:employee" resource="pentandra:company" />
-  <link property="vcard:hasGender" resource="vcard:<%# @member.fetch(:gender).capitalize %>" />
+  <% if member?(@person) %>
+    <link rev="schema:employee" resource="pentandra:company" />
+  <% end %>
+  <link property="vcard:hasGender" resource="vcard:<% @person[:gender]&.capitalize %>" />
 </section>
