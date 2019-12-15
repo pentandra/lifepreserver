@@ -4,13 +4,9 @@ require 'helpers/company'
 
 RSpec.describe LifePreserver::Helpers::Company, helper: true do
   let(:company_attrs) { { kind: 'organization' } }
-  let(:member_attrs) { { kind: 'member' } }
 
   before do
     ctx.create_item('', company_attrs, '/biz/orgs/company-one')
-    ctx.create_item('', member_attrs, '/biz/peeps/member-one')
-    ctx.create_item('', member_attrs, '/biz/peeps/member-two')
-    ctx.create_item('', member_attrs, '/biz/peeps/member-three')
 
     ctx.config[:company_root] = '/biz'
     ctx.config[:orgs_root] = '/orgs'
@@ -89,11 +85,50 @@ RSpec.describe LifePreserver::Helpers::Company, helper: true do
     end
   end
 
+  describe '#members' do
+    subject(:members) { helper.members }
+
+    let(:member_attrs) { { kind: 'member' } }
+
+    before do
+      ctx.create_item('', member_attrs, '/biz/peeps/member-1')
+      ctx.create_item('', member_attrs, '/biz/peeps/member-2')
+      ctx.create_item('', member_attrs, '/biz/peeps/member-3')
+    end
+
+    context 'with three members' do
+      it 'returns all members' do
+        expect(members.length).to be(3)
+      end
+    end
+  end
+
+  describe '#sorted_members' do
+    subject(:members) { helper.sorted_members }
+
+    let(:name1) { { givenname: 'Zelf', sn: 'Zwickau' } }
+    let(:name2) { { givenname: 'Hubert', sn: 'Bean' } }
+    let(:name3) { { givenname: 'Alfonso', sn: 'Bechus' } }
+
+    before do
+      ctx.create_item('', name1, '/biz/peeps/member-1')
+      ctx.create_item('', name2, '/biz/peeps/member-2')
+      ctx.create_item('', name3, '/biz/peeps/member-3')
+    end
+
+    context 'with three members' do
+      it 'returns members sorted' do
+        expect(members).to contain_exactly(ctx.items['/biz/peeps/member-3'],
+                                           ctx.items['/biz/peeps/member-1'],
+                                           ctx.items['/biz/peeps/member-2'])
+      end
+    end
+  end
+
   describe '#service_profile' do
     subject(:service_profile) { helper.service_profile(profile_class, item) }
 
     let(:profile_class) { 'service' }
-
     let(:company_attrs) do
       {
         kind: 'organization',
@@ -101,20 +136,6 @@ RSpec.describe LifePreserver::Helpers::Company, helper: true do
           {
             uri: 'https://service.profile/company_account',
             account_name: 'company_account',
-            service_homepage: 'https://service.profile/',
-            class: 'service',
-          },
-        ],
-      }
-    end
-
-    let(:member_attrs) do
-      {
-        kind: 'member',
-        service_profiles: [
-          {
-            uri: 'https://service.profile/my_account',
-            account_name: 'my_account',
             service_homepage: 'https://service.profile/',
             class: 'service',
           },
@@ -151,7 +172,24 @@ RSpec.describe LifePreserver::Helpers::Company, helper: true do
     end
 
     context 'with member item' do
-      let(:item) { ctx.items['/biz/peeps/member-one'] }
+      let(:item) { ctx.items['/biz/peeps/member-1'] }
+      let(:member_attrs) do
+        {
+          kind: 'member',
+          service_profiles: [
+            {
+              uri: 'https://service.profile/my_account',
+              account_name: 'my_account',
+              service_homepage: 'https://service.profile/',
+              class: 'service',
+            },
+          ],
+        }
+      end
+
+      before do
+        ctx.create_item('', member_attrs, '/biz/peeps/member-1')
+      end
 
       it 'finds the service profile' do
         expect(service_profile).not_to be_nil
