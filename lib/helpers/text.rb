@@ -13,7 +13,7 @@ module LifePreserver
         end
 
         def possessive
-          "#{to_s}'#{'s' unless to_s.end_with?('s')}"
+          "#{self}'#{'s' unless to_s.end_with?('s')}"
         end
 
         # Format the telephone number according to the method in the given format.
