@@ -8,7 +8,7 @@ module LifePreserver
       include Company
 
       def sorted_dependencies
-        @items.find_all('/lifepreserver/dependencies/**/*').sort_by(&:identifier)
+        @items.find_all(File.join(@config[:dependencies_root], '**', '*')).sort_by(&:identifier)
       end
 
       # Finds all the dependencies for the given Bundler group name.
@@ -18,7 +18,7 @@ module LifePreserver
       # @return [Array<Nanoc::Core::CompilationItemView>] The Ruby dependency
       #   items of the given group.
       def dependencies_for(group_name)
-        @items.find_all("/lifepreserver/dependencies/#{group_name}/*").sort_by(&:identifier)
+        @items.find_all(File.join(@config[:dependencies_root], group_name.to_s, '*')).sort_by(&:identifier)
       end
 
       def authors_of(dependencies, external_only: true)

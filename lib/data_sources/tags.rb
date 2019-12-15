@@ -44,7 +44,7 @@ module LifePreserver
         new_item(
           tag[:tag],
           attributes.merge(tag),
-          Nanoc::Identifier.new("/tags/#{tag[:tag].parameterize}"),
+          File.join(File::SEPARATOR, tag[:tag].parameterize),
           checksum_data: "tag=#{tag[:tag]},uri=#{tag[:uri]},abstract=#{tag[:abstract]}",
         )
       end

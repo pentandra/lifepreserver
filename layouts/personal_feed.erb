@@ -1,10 +1,10 @@
 <% member = member_by_name(@member_name) %>
 <%= atom_feed(alternate_url: path_to_profile_page(member, absolute: true),
-              author_name: member[:name],
+              author_name: @member_name,
               author_uri: member[:web_id],
               icon: path_to(member, rep: :photo),
               entries: posts_by_author(member[:name]),
               content_proc:  ->(post) { post.compiled_content(rep: :feed_entry) },
               excerpt_proc:  ->(post) { post_summary(post.reps.fetch(:feed_entry)) },
-              limit:         10)
+              limit:         @limit || 10)
               %>

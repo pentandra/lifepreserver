@@ -105,7 +105,7 @@ module LifePreserver
               pred.identifier.to_s
             end
 
-          if pred_identifier && pred_identifier =~ %r{/lifepreserver/vocabularies/}
+          if pred_identifier&.start_with?(@config.fetch(:vocabularies_root))
             res << pred.attributes.slice(:prefix, :namespace_uri)
           end
         end

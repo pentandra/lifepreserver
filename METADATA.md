@@ -460,29 +460,37 @@ Specifies personal titles for a person, e.g. "Frau", "Dr.", "Herr",
 
 RECOMMENDED_FOR_KINDS: `member`
 
-A list of public keys of user certificates. Constructed as an array containing
-`Hash` objects with the following keys, each representing an x509 public key.
-This array could be empty if the member has no user certificates.
+A list of public keys extracted from user certificates. Constructed as an array
+containing `Hash` objects with the following keys, each representing an x509
+public key.
+
+This array could be empty if the member has no valid user certificates.
+
+#### `id`
+
+The URI subject alternative name definitively bound to the public key. The `id`
+of the first element of the [`pkey`](#pkey) is used as the value of the user's
+[`web_id`](#web_id) attribute.
 
 #### `modulus`
 
-The modulus (n) of the RSA public key.
+The modulus (n) of the RSA public key, as a hex binary string.
 
 #### `exponent`
 
-The publicExponent (e) of the RSA public key.
+The publicExponent (e) of the RSA public key, as an integer.
 
 #### `md5`
 
-The MD5 digest of the DER-encoded RSA public key.
+The MD5 digest identifier of the DER-encoded RSA public key.
 
 #### `sha1`
 
-The SHA1 digest of the DER-encoded RSA public key.
+The SHA1 digest identifier of the DER-encoded RSA public key.
 
 #### `sha256`
 
-The SHA256 digest of the DER-encoded RSA public key.
+The SHA256 digest identifier of the DER-encoded RSA public key.
 
 ### `postalcode`
 
@@ -583,9 +591,14 @@ RECOMMENDED_FOR_KINDS: `person`, `member`
 
 The title of a person in their organizational context.
 
-### [`web_id`]
+### `web_id`
 
-The [WebID] of the person, if the person has one.
+REQUIRED_FOR_KINDS: `person`, `member`
+
+The [WebID] of the person, or local Web identifier if not known. For members
+with user certificates, the value is from the URI subject alternative name
+[`id` value](#id) of [the x509 certificate](#pkey). For other people, the
+attibute is added directly to the [people.yaml](var/people.yaml) file.
 
 ### [`hashtag`]
 

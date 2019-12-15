@@ -36,7 +36,7 @@ module LifePreserver
             authors: gem.authors,
             is_hidden: true,
           },
-          Nanoc::Identifier.new("/dependencies/#{group_name.parameterize}/#{gem.name.parameterize}"),
+          File.join(File::SEPARATOR, group_name.parameterize, gem.name.parameterize),
           checksum_data: "name=#{gem.name},version=#{gem.version},group=#{group_name}",
         )
       end

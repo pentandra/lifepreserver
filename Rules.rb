@@ -5,7 +5,6 @@ include_rules 'rules/preprocessing'
 # Things to ignore globally
 ignore '/**/_*'
 ignore '/_*/**/*'
-ignore '/lifepreserver/**/*'
 ignore '/**/README.md'
 ignore '/**/LICENSE'
 

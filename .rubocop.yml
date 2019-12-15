@@ -13,8 +13,7 @@ require: rubocop-rspec
 
 Naming/FileName:
   Exclude:
-    # We use command files such as "update-company-data.rb" that translate
-    # into method names.
+    # We use a naming convention that translates into Nanoc API method names.
     - 'commands/*.rb'
     - 'Rules.rb'
 

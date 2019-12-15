@@ -173,8 +173,7 @@ module LifePreserver
       end
 
       def find_nearest_path(*path_items)
-        item_with_path = path_items.find { |item| item&.path }
-        item_with_path&.path
+        path_items.find { |item| item&.path }&.path
       end
     end
   end

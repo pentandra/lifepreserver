@@ -35,9 +35,10 @@ module LifePreserver
         res = []
 
         Array(args).flatten.each do |arg|
-          vocabs = @items.find_all("/lifepreserver/vocabularies/#{arg}/*")
+          vocabularies_root = @config.fetch(:vocabularies_root)
+          vocabs = @items.find_all(File.join(vocabularies_root, arg.to_s, '*'))
           # Look for a single prefix if no group is found
-          vocabs = vocabs.present? ? vocabs : @items["/lifepreserver/vocabularies/*/#{arg}"]
+          vocabs = vocabs.present? ? vocabs : @items[File.join(vocabularies_root, '*', arg.to_s)]
 
           if vocabs.blank?
             raise ArgumentError, "Unable to find a vocabulary for the argument `#{arg.inspect}`"

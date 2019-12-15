@@ -9,7 +9,7 @@ module LifePreserver
 
       # Grab all the people, including company members.
       def people
-        members + @items.find_all('/people/_*')
+        members + @items.find_all(File.join(@config[:people_root], '*'))
       end
 
       # Grab all people, sorted first by surname then given name.
@@ -36,43 +36,23 @@ module LifePreserver
       #   follow HTTP redirections. This implementation keeps to the basic
       #   standard and does not require any redirections.
       #
-      # @see #populate_people_identifiers
-      # @see Company#populate_member_identifiers
-      #
-      # @param [Nanoc::Core::CompilationItemView] person The person who is the
+      # @param person [Nanoc::Core::CompilationItemView] The person who is the
       #   topic of the profile page. Must have a +:web_id+ attribute.
-      # @param [Boolean] absolute (false) Whether to return an absolute path or
-      #   not. If the given person's profile page is not an item for this site,
-      #   it will always return an absolute path.
+      #
+      # @param absolute [Boolean] Whether to return an absolute path or not. If
+      #   the given person's profile page is not an item for this site, it will
+      #   always return an absolute path.
       #
       # @return [String] The path to the given person's personal profile page or
       #   path of the local identifier for a person without a WebID.
       def path_to_profile_page(person, absolute: false)
         web_id = person.fetch(:web_id).to_s
         if member?(person)
-          profile_page_item = @items["#{@config[:static_root]}#{@config[:people_root]}/#{person.fetch(:slug)}/index.*"]
-          path_to(profile_page_item, absolute: absolute)
+          path_to(person, absolute: absolute)
         elsif web_id.start_with?(@config[:base_url])
           path_to(web_id, absolute: absolute)
         else
           web_id.split('#', 2).first
-        end
-      end
-
-      # Populate identifiers for referenced people without a WebID. If a person
-      # does not have an external WebID, this creates a local identifier for
-      # the person that will redirect to the people index document.
-      #
-      # @note Called during preprocessing before items have been given a path,
-      #   so we have to build this public path manually.
-      #
-      # @see https://github.com/pentandra/lifepreserver/issues/85
-      # @see Company#populate_member_identifiers
-      #
-      # @return [void]
-      def populate_people_identifiers
-        @items.find_all('/people/_*').each do |person|
-          person[:web_id] ||= "#{@config[:base_url]}#{@config[:people_root]}##{person.fetch(:slug)}"
         end
       end
     end

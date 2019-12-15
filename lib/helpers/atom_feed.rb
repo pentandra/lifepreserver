@@ -15,6 +15,8 @@ module LifePreserver
       include Weblog
 
       class AtomFeedBuilder
+        include AtomFeed
+
         attr_accessor :config
 
         attr_accessor :id

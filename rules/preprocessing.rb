@@ -50,11 +50,22 @@ preprocess do
     end
   end
 
-  populate_people_identifiers
-  populate_member_identifiers
   populate_author_uris(weblog)
-  generate_personal_profile_pages
-  generate_personal_feeds
+
+  # Add feed items for members with content
+  members.filter { |m| authors.include?(m[:name]) }.each do |member|
+    feed_content = "<%= render('/personal_feed.erb', member_name: @item[:member_name]) %>"
+    feed_attributes = {
+      title: "Personal feed for #{member.fetch(:name)}",
+      member_name: member.fetch(:name),
+      is_hidden_from_human_search: true,
+      kind: 'feed',
+      created_at: member.attributes.fetch(:created_at),
+    }
+    feed_id = File.join(member.identifier, 'feed')
+
+    @items.create(feed_content, feed_attributes, feed_id)
+  end
 
   if @config[:site][:generate_meta]
     generate_tag_pages

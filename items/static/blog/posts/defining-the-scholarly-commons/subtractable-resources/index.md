@@ -5,7 +5,7 @@ kind: essay
 author_name: Chris Chapman
 created_at: 2017-04-20
 updated_at: 2017-08-14
-part_of_id: '/static/blog/posts/defining-the-scholarly-commons/index.*'
+part_of_id: '/static/blog/posts/defining-the-scholarly-commons/index.md'
 tags:
   - Scholarly Commons
   - Holism

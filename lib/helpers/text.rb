@@ -7,34 +7,23 @@ require 'phonelib'
 module LifePreserver
   module Helpers
     module Text
-      def to_slug(separator = '-')
-        self.to_s.parameterize(separator: separator)
-      end
+      module StringExtensions
+        def ndashed(type: :html)
+          to_s.gsub('-', type == :html ? '<span class="ndash">--</span>' : '--')
+        end
 
-      def to_sentence(options = {})
-        Array(self).to_sentence(options)
-      end
+        def possessive
+          "#{to_s}'#{'s' unless to_s.end_with?('s')}"
+        end
 
-      def ndashed(type: :html)
-        self.to_s.gsub('-', type == :html ? '<span class="ndash">--</span>' : '--')
-      end
-
-      def possessive
-        "#{self}'#{'s' unless self.to_s.end_with?('s')}"
-      end
-
-      # Format the telephone number according to the method in the given format.
-      #
-      # @param [Symbol] format (:e164) The symbol of the Phonelib formatting
-      #   method to call, e.g. :international, :national, :area_code,
-      #   :local_number, :extension, :full_e164, or :full_international.
-      def strftel(format = :e164)
-        phone = Phonelib.parse(self.to_s)
-        phone.method(format.to_sym).call
-      end
-
-      def camelize(first_letter = :upper)
-        self.to_s.camelize(first_letter)
+        # Format the telephone number according to the method in the given format.
+        #
+        # @param [Symbol] format (:e164) The symbol of the Phonelib formatting
+        #   method to call, e.g. :international, :national, :area_code,
+        #   :local_number, :extension, :full_e164, or :full_international.
+        def strftel(format = :e164)
+          Phonelib.parse(to_s).method(format.to_sym).call
+        end
       end
 
       # Uses the convention by DBpedia that the first sentence of a new paragraph
@@ -46,4 +35,8 @@ module LifePreserver
       end
     end
   end
+end
+
+class String
+  include LifePreserver::Helpers::Text::StringExtensions
 end

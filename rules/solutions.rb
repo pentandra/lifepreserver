@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'active_support/core_ext/string/inflections'
+
 # Solutions
 
 compile '/static/solutions/proposals/**/index.md' do
@@ -30,9 +32,9 @@ compile '/static/solutions/proposals/**/index.md', rep: :pdf_letter do
   filter :absolutify_paths, type: :context
   layout '/proposals/default.tex'
   filter :fix_context_attribution
-  snapshot :context, path: File.dirname(item.identifier.to_s).sub('/proposals', '') + "/#{@item.fetch(:title).to_slug('_')}_proposal.tex" unless @config[:production]
+  snapshot :context, path: File.dirname(item.identifier.to_s).sub('/proposals', '') + "/#{@item.fetch(:title).parameterize(separator: '_')}_proposal.tex" unless @config[:production]
   filter :context2pdf, @config.fetch(:context2pdf, {}).merge(mode: ['identifiable', proposal_status(@item), @item[:kind]])
-  write File.dirname(item.identifier.to_s).sub('/proposals', '') + "/#{@item.fetch(:title).to_slug('_')}_proposal.pdf"
+  write File.dirname(item.identifier.to_s).sub('/proposals', '') + "/#{@item.fetch(:title).parameterize(separator: '_')}_proposal.pdf"
 end
 
 compile '/static/solutions/proposals/**/index.md', rep: :pdf_a4 do
@@ -45,9 +47,9 @@ compile '/static/solutions/proposals/**/index.md', rep: :pdf_a4 do
   filter :absolutify_paths, type: :context
   layout '/proposals/default.tex'
   filter :fix_context_attribution
-  snapshot :context, path: File.dirname(item.identifier.to_s).sub('/proposals', '') + "/#{@item.fetch(:title).to_slug('_')}_proposal_a4.tex" unless @config[:production]
+  snapshot :context, path: File.dirname(item.identifier.to_s).sub('/proposals', '') + "/#{@item.fetch(:title).parameterize(separator: '_')}_proposal_a4.tex" unless @config[:production]
   filter :context2pdf, @config.fetch(:context2pdf, {}).merge(mode: ['identifiable', proposal_status(@item), @item[:kind], 'european'])
-  write File.dirname(item.identifier.to_s).sub('/proposals', '') + "/#{@item.fetch(:title).to_slug('_')}_proposal_a4.pdf"
+  write File.dirname(item.identifier.to_s).sub('/proposals', '') + "/#{@item.fetch(:title).parameterize(separator: '_')}_proposal_a4.pdf"
 end
 
 # Specification documents

@@ -21,20 +21,19 @@ module LifePreserver
         end
       end
 
-      protected
-
       def person_to_item(person)
         slug = person.fetch(:name).parameterize
 
         attributes = {
           kind: 'person',
           slug: slug,
+          web_id: local_web_id(slug),
           mtime: mtime_of(@config[:people_data]),
           is_hidden: true,
         }
 
         new_item(
-          person[:name],
+          '-',
           attributes.merge(person),
           Nanoc::Identifier.new("/_#{slug}"),
           attributes_checksum_data: Digest::SHA1.digest(Marshal.dump(person)),
@@ -43,6 +42,18 @@ module LifePreserver
 
       def mtime_of(meta_filename)
         File.stat(meta_filename).mtime
+      end
+
+      # Provide a local Web identifier for a person, a unique reference in the
+      # people index document.
+      #
+      # @see Company#default_web_id
+      #
+      # @param name [String] The name of the person.
+      #
+      # @return [String]
+      def local_web_id(name)
+        File.join(@site_config[:base_url], @config[:items_root] + "##{name.parameterize}")
       end
     end
   end

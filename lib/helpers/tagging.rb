@@ -23,7 +23,7 @@ module LifePreserver
       end
 
       def tags
-        @items.find_all('/lifepreserver/tags/*')
+        @items.find_all(File.join(@config[:tags_root], '*'))
       end
 
       def sorted_tags
@@ -50,14 +50,14 @@ module LifePreserver
       def link_for_tag(tag, rel_tag: true)
         if tag.is_a?(String)
           original_tag = tag
-          tag = @items["/lifepreserver/tags/#{tag.to_slug}"]
+          tag = @items[File.join(@config[:tags_root], tag.parameterize)]
           raise ArgumentError, "Tag metadata does not yet exist in `etc/tags.yaml` for the tag '#{original_tag}'. Please add the tag first and then try again." unless tag
         end
 
         if rel_tag && tag[:semantic]
-          %(<a href="#{@config[:blog][:tags_path]}/#{h tag[:tag].to_slug}/" rel="tag ctag:tagged" resource="##{h tag[:tag].to_slug('_')}_tag" typeof="ctag:AuthorTag"><link property="ctag:means" resource="#{RDF::URI.new(tag[:uri]).pname}" typeof="#{RDF::URI.new(tag.fetch(:type, RDF::OWL.Thing)).pname}" /><span property="ctag:label">#{h tag[:tag]}</span></a>)
+          %(<a href="#{@config.dig(:blog, :tags_path)}/#{h tag[:tag].parameterize}/" rel="tag ctag:tagged" resource="##{h tag[:tag].parameterize(separator: '_')}_tag" typeof="ctag:AuthorTag"><link property="ctag:means" resource="#{RDF::URI.new(tag[:uri]).pname}" typeof="#{RDF::URI.new(tag.fetch(:type, RDF::OWL.Thing)).pname}" /><span property="ctag:label">#{h tag[:tag]}</span></a>)
         else
-          %(<a href="#{@config[:blog][:tags_path]}/#{h tag[:tag].to_slug}/"#{' rel="tag"' if rel_tag}>#{h tag[:tag]}</a>)
+          %(<a href="#{@config.dig(:blog, :tags_path)}/#{h tag[:tag].parameterize}/"#{' rel="tag"' if rel_tag}>#{h tag[:tag]}</a>)
         end
       end
 
@@ -76,11 +76,11 @@ module LifePreserver
       # Creates in-memory tag pages for a collection of items
       def generate_tag_pages(items = nil)
         items = @items if items.nil?
-        tag_set(items).map { |tag_name| @items["/lifepreserver/tags/#{tag_name.to_slug}"] }.each do |tag|
+        tag_set(items).map { |tag_name| @items[File.join(@config[:tags_root], tag_name.parameterize)] }.each do |tag|
           @items.create(
             %(<%= render('/blog/tag.*', tag: @items['#{tag.identifier}']) %>),
             { title: "Tag: #{tag.fetch(:label, tag[:tag])}", kind: 'tag-page', is_hidden: true, description: "All posts having to do with the tag '#{tag[:tag]}'" },
-            "#{@config[:static_root]}#{@config[:blog][:tags_path]}/#{tag[:tag].to_slug}/index.erb",
+            "#{@config[:static_root]}#{@config.dig(:blog, :tags_path)}/#{tag[:tag].parameterize}/index.erb",
             binary: false,
           )
         end

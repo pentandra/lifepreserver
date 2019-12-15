@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'active_support/core_ext/string/inflections'
+
 # Weblog index
 
 compile '/static/blog/{index,recent}.erb' do

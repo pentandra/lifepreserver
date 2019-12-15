@@ -49,7 +49,7 @@ module LifePreserver
         new_item(
           '',
           attributes.merge(metadata),
-          Nanoc::Identifier.new("/vocabularies/#{group_name.to_s.parameterize}/#{prefix.to_s.parameterize}"),
+          File.join(File::SEPARATOR, group_name.to_s.parameterize, prefix.to_s.parameterize),
         )
       end
 

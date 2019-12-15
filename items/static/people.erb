@@ -1,0 +1,38 @@
+---
+title: People
+description: People somehow connected to Pentandra.
+---
+
+<div class="group">
+
+  <h1>People</h1>
+
+  <div class="bd">
+
+    <p class="big">
+
+      Here are listed people that have some sort of connection to our work or
+      that we have mentioned in our writings. Think of this as an index of
+      people at the back of a book. Mentioning does not imply endorsement in
+      either direction.
+
+    </p>
+
+    <p class="bigger">
+
+      If you're only looking for members of our company, please check out
+      <%= link_to('our company roster',
+                  @items['/static/company/index.*'],
+                  fragment: 'our-roster') %>.
+
+    </p>
+
+  </div>
+
+</div>
+
+<div class="loud noted section" resource="pentandra:related-people" typeof="foaf:Group">
+  <% sorted_members.each_with_index do |person, index| %>
+    <%= render('/partials/personcard.*', person: person, index: index) %>
+  <% end %>
+</div>

@@ -33,21 +33,21 @@ data_sources:
     content_dir: items
 
   - type: dependencies
-    items_root: &meta_items_root /lifepreserver
+    items_root: &dependencies_root /_dependencies
 
   - type : dictionaries
-    items_root: &dictionaries_root /lifepreserver/dictionaries
+    items_root: &dictionaries_root /_dictionaries
     search_paths:
       - 'var/dictionaries'
     ordered_locales: [ 'en_US', 'en_GB', 'es_ES', 'fr_FR', 'nl_NL', 'de_DE', 'it_IT' ]
 
   - type: tags
-    items_root: *meta_items_root
+    items_root: &tags_root /_tags
     author_tags: 'etc/tags.yaml'
     tag_metadata: 'var/additional_tag_data.yaml'
 
   - type: vocabularies
-    items_root: *meta_items_root
+    items_root: &vocabularies_root /_vocabularies
     prefixes_used:
       standard:   [ cc, ctag, dc, foaf, owl, pav, prov, rdf, rdfs, schema, sioc, skos, xhv ]
       business:   [ essglobal, fea, rov, vcard ]
@@ -59,56 +59,61 @@ data_sources:
       extra:      [ cert, essglobal-activities, essglobal-legalform, essglobal-qualifiers, essglobal-typeoflabour, sioct, xsd ]
 
   - type: company
+    items_root: &company_root /company
+    organizations_root: &organizations_root /organizations
+    people_root: &people_root /people
     company_metafile: 'var/company.ldif'
 
   - type: people
+    items_root: *people_root
     people_data: 'etc/people.yaml'
-    items_root: &people_root /people
 
+base_url: &base_url "https://pentandra.com"
 
-# Config for Nanoc environments
+blog: &blog
+  title: The Pentandra Blog
+  author_name: Pentandra
+  author_uri: *base_url
+  path: /blog
+  tags_path: /tags
+  archives_path: /archives
+  feed_path: /blog/feed
 
+cache:
+  short_urls: 'var/short_urls.yaml'
+
+company_root: *company_root
+dependencies_root: *dependencies_root
+dictionaries_root: *dictionaries_root
+people_root: *people_root
+orgs_root: *organizations_root
+static_root: *static_root
+tags_root: *tags_root
+vocabularies_root: *vocabularies_root
+
+erb:
+  trim_mode: '>'
+
+git:
+  url: "https://github.com/pentandra/lifepreserver.git"
+  browse_url: "https://github.com/pentandra/lifepreserver"
+  tag_url: "https://github.com/pentandra/lifepreserver/releases/tag"
+  version_history_url: "https://github.com/lifepreserver/commits/master"
+
+site: &site
+  name: Pentandra
+  motto: Breaking Research Barriers
+  recent_thoughts_limit: 5
+  generate_meta: true
+  base_url: *base_url
+  images_path: /assets/images
+  recent_thoughts_limit: 5
+  generate_meta: true
+
+# Environment-specific configuration
 environments:
-  default: &default
-    base_url: &base_url "https://pentandra.com"
-    static_root: *static_root
-
-    blog: &blog
-      title: The Pentandra Blog
-      author_name: Pentandra
-      author_uri: *base_url
-      path: /blog
-      tags_path: /tags
-      archives_path: /archives
-      feed_path: /blog/feed
-
-    cache:
-      short_urls: 'var/short_urls.yaml'
-
-    company_root: /company
-    people_root: *people_root
-
-    dictionaries_root: *dictionaries_root
-
-    erb:
-      trim_mode: '>'
-
-    git:
-      url: "https://github.com/pentandra/lifepreserver.git"
-      browse_url: "https://github.com/pentandra/lifepreserver"
-      tag_url: "https://github.com/pentandra/lifepreserver/releases/tag"
-      version_history_url: "https://github.com/lifepreserver/commits/master"
-
-    site: &site
-      name: Pentandra
-      motto: Breaking Research Barriers
-      recent_thoughts_limit: 5
-      generate_meta: true
-      base_url: *base_url
-      images_path: /images
 
   development: &development
-    <<: *default
 
     enable_output_diff: true
 
@@ -141,7 +146,6 @@ environments:
     ignore_server_items: true
 
   production: &production
-    <<: *default
 
     require_git_tag: true # All production releases must be at a tag
 

@@ -1,0 +1,72 @@
+<link about="" typeof="foaf:PersonalProfileDocument" />
+<article property="foaf:maker foaf:primaryTopic" typeof="foaf:Person" resource="<%= @item.fetch(:web_id) %>">
+  <%# Ideas for this page
+    phone number link
+    personal about me stuff
+    favorite drink
+    rss feeds
+    pgp keys
+    interests, personal drivers, goals
+    longer description
+    CV/resume?
+    roles in other organizations
+    links to social media profiles and other sites or webid profiles
+    nicknames?
+    preferred time zone, language
+  %>
+  <div class="section">
+    <header>
+      <h1 class="flush"><span property="rdfs:label schema:name foaf:name"><%= @item[:name] %></span></h1>
+    </header>
+
+    <div class="bd">
+      <p class="big"><%= @item.fetch(:description) %></p>
+
+      <dl>
+        <dt>Title</dt>
+        <dd><%= @item.fetch(:title) %></dd>
+        <dt>WebID</dt>
+        <dd><a href="<%= @item.fetch(:web_id) %>" class="uri"><%= @item.fetch(:web_id) %></a></dd>
+      </dl>
+
+      <% if @item.key?(:pkey) %>
+      <div id="pkey" prefix="<%= prefix_mappings_for(:cert, :xsd) %>">
+        <% @item[:pkey].each do |pkey| %>
+        <div id="pkey_<%= pkey.fetch(:sha1)[0..8] %>" property="cert:key" typeof="cert:RSAPublicKey">
+          WebID SHA1 fingerprint: <pre class="small"><samp class="identifier"><%= pkey.fetch(:sha1).upcase.scan(/../).join(':') %></samp></pre>
+          <span property="cert:modulus" datatype="xsd:hexBinary" content="<%= pkey.fetch(:modulus) %>"></span>
+          <span property="cert:exponent" datatype="xsd:nonNegativeInteger" content="<%= pkey.fetch(:exponent) %>"></span>
+        </div>
+        <% end %>
+      </div>
+      <% end %>
+
+      <img src="<%# path_to(@item, rep: :fpr_qrcode) %>" />
+
+    </div>
+
+    <aside class="aside">
+      <figure id="photo">
+        <img class="photo framed" src="<%= path_to(@item, rep: :photo) %>" alt="Photo of <%= @item[:name] %>" property="schema:image foaf:img" />
+      </figure>
+
+      <figure class="aside section img" id="vcard">
+        <a href="<%= path_to(@item, rep: :vcard) %>" title="Click to download my vCard">
+          <img src="<%= path_to(@item, rep: :qrcode) %>" alt="machine-readable QR code with embedded vCard for <%= @item[:name] %>" />
+        </a>
+        <figcaption class="bold">My vCard</figcaption>
+      </figure>
+    </aside>
+
+  </div>
+
+  <% author_posts = posts_by_author(@item[:name], published_weblog) %>
+  <section id="my-posts" class="noted group" property="schema:hasPart" resource="pentandra-blog:posts_by_<%= @item[:name].parameterize(separator: '_') %>" typeof="schema:ItemList">
+    <h2>My blog posts</h2>
+    <link property="schema:itemListOrder" resource="schema:itemListOrderDescending" />
+    <meta property="schema:numberOfItems" content="<%= h author_posts.length %>" datatype="schema:Integer" />
+    <% author_posts.each_with_index do |post, index| %>
+      <%= render('/blog/partials/summary.*', item: post, position: index + 1) %>
+    <% end %>
+  </section>
+</article>

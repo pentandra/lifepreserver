@@ -77,6 +77,7 @@ module LifePreserver
         end
       end
 
+      # Provide a unique, stable key for an article for BibTex databases.
       def bibtex_key(item, author)
         item[:bibtex_key] || [author.fetch(:sn), author.fetch(:givenname)[0], attribute_to_time(item[:published_at]).year, Digest::SHA1.hexdigest(item[:title])[0..6]].join(':').downcase
       end
