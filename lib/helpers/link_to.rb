@@ -24,10 +24,16 @@ module LifePreserver
         item = @items[id]
 
         unless item
-          raise ArgumentError, "Could not find item to link to with identifier: #{id}"
+          raise ArgumentError, "Cannot build link to #{id}: could not find item"
         end
 
-        link_to(item[:short_title] || item[:title], item, attributes)
+        title = item[:short_title] || item[:title]
+
+        if title.nil?
+          raise Nanoc::Core::TrivialError.new("Cannot build link to #{item.identifier}: item has no title")
+        end
+
+        link_to(title, item, attributes)
       end
 
       # Generate a hyperlink from text and a target.
@@ -99,7 +105,7 @@ module LifePreserver
         # TODO: manage dependency on @config[:base_url]
         base_url = @config[:base_url]
         if base_url.nil?
-          raise Nanoc::Core::TrivialError.new("Cannot build global path to #{target.inspect}: site configuration has no base_url")
+          raise Nanoc::Core::TrivialError.new("Cannot build path to #{target.inspect}: site configuration has no base_url")
         end
 
         path = absolute ? base_url + path : path.sub(base_url, '')

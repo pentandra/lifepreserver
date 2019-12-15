@@ -85,8 +85,9 @@ cache:
 company_root: *company_root
 dependencies_root: *dependencies_root
 dictionaries_root: *dictionaries_root
-people_root: *people_root
+images_root: /assets/images
 orgs_root: *organizations_root
+people_root: *people_root
 static_root: *static_root
 tags_root: *tags_root
 vocabularies_root: *vocabularies_root
@@ -103,10 +104,6 @@ git:
 site: &site
   name: Pentandra
   motto: Breaking Research Barriers
-  recent_thoughts_limit: 5
-  generate_meta: true
-  base_url: *base_url
-  images_path: /assets/images
   recent_thoughts_limit: 5
   generate_meta: true
 

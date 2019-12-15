@@ -23,6 +23,11 @@ Overrides the [`title`](#title) attribute on the [base HTML
 layout](layouts/base.erb) as the full value of the default HTML `title`
 element.
 
+### `short_title`
+
+Overrides the [`title`](#title) attribute in certain layouts when a shorter
+title is needed, e.g. the search page.
+
 ### `description`
 
 REQUIRED_FOR_KINDS: all

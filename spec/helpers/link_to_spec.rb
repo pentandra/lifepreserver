@@ -3,6 +3,45 @@
 require 'helpers/link_to'
 
 RSpec.describe LifePreserver::Helpers::LinkTo, helper: true do
+  describe '#link_to_id' do
+    subject { helper.link_to_id(target, attributes) }
+
+    let(:base_url) { 'http://url.base' }
+    let(:title) { 'Title' }
+    let(:target) { raise 'override me' }
+    let(:attributes) { {} }
+
+    before do
+      ctx.config[:base_url] = base_url
+
+      ctx.create_item('foo', { title: title }, '/target')
+      ctx.create_rep(ctx.items['/target'], '/target.html')
+    end
+
+    context 'with existing item' do
+      let(:target) { '/target' }
+
+      it { is_expected.to eql('<a href="/target.html">Title</a>') }
+    end
+
+    context 'with existing item but nil title' do
+      let(:target) { '/target' }
+      let(:title) { nil }
+
+      it 'raises' do
+        expect { subject }.to raise_error(Nanoc::Error)
+      end
+    end
+
+    context 'with non-existing item' do
+      let(:target) { '/non-existing' }
+
+      it 'raises' do
+        expect { subject }.to raise_error(ArgumentError)
+      end
+    end
+  end
+
   describe '#link_to' do
     subject { helper.link_to(text, target, attributes) }
 
@@ -76,13 +115,10 @@ RSpec.describe LifePreserver::Helpers::LinkTo, helper: true do
     context 'with item' do
       before do
         ctx.create_item('content', {}, '/target')
+        ctx.create_rep(target, '/target.html')
       end
 
       let(:target) { ctx.items['/target'] }
-
-      before do
-        ctx.create_rep(target, '/target.html')
-      end
 
       it { is_expected.to eql('<a href="/target.html">Text</a>') }
     end
@@ -115,10 +151,6 @@ RSpec.describe LifePreserver::Helpers::LinkTo, helper: true do
         expect { subject }.to raise_error(RuntimeError)
       end
     end
-  end
-
-  describe '#path_to' do
-    subject { helper.path_to(target, rep, snapshot, absolute) }
   end
 
   describe '#tag_uri_for' do
