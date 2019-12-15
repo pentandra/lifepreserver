@@ -602,7 +602,7 @@ REQUIRED_FOR_KINDS: `person`, `member`
 
 The [WebID] of the person, or local Web identifier if not known. For members
 with user certificates, the value is from the URI subject alternative name
-[`id` value](#id) of [the x509 certificate](#pkey). For other people, the
+[URI value](#id) of [the x509 certificate](#pkey). For other people, the
 attibute is added directly to the [people.yaml](var/people.yaml) file.
 
 ### [`hashtag`]
