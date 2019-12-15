@@ -21,7 +21,7 @@ module LifePreserver
       # whenever _every_ function in 'predicates'
       # returns true.
       def conjoin(*predicates)
-        base = ->(*args) { true }
+        base = ->(*_args) { true }
         predicates.inject(base) do |built, pred|
           lambda do |*args|
             built.call(*args) && pred.call(*args)
@@ -33,7 +33,7 @@ module LifePreserver
       # whenever _any_ function in 'predicates'
       # returns true.
       def disjoin(*predicates)
-        base = ->(*args) { false }
+        base = ->(*_args) { false }
         predicates.inject(base) do |built, pred|
           lambda do |*args|
             built.call(*args) || pred.call(*args)
