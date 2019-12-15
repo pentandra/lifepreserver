@@ -15,37 +15,37 @@ require 'html5small/nanoc'
 require 'nanoc/cachebuster'
 
 # Nanoc helpers to include in a global context
-include Nanoc::Helpers::Capturing
-include Nanoc::Helpers::Rendering
-include Nanoc::Helpers::XMLSitemap
-include Nanoc::Helpers::CacheBusting
-include Nanoc::Helpers::Filtering
+use_helper Nanoc::Helpers::Capturing
+use_helper Nanoc::Helpers::Rendering
+use_helper Nanoc::Helpers::XMLSitemap
+use_helper Nanoc::Helpers::CacheBusting
+use_helper Nanoc::Helpers::Filtering
 
 module LifePreserver
 end
 
 # Project helpers to include in a global context
-include LifePreserver::Helpers::Articles
-include LifePreserver::Helpers::Blogging
-include LifePreserver::Helpers::Weblog
-include LifePreserver::Helpers::Dates
-include LifePreserver::Helpers::Company
-include LifePreserver::Helpers::UrlShortener
-include LifePreserver::Helpers::Search
-include LifePreserver::Helpers::Functional
-include LifePreserver::Helpers::Breadcrumbs
-include LifePreserver::Helpers::Text
-include LifePreserver::Helpers::Vocabulary
-include LifePreserver::Helpers::Tagging
-include LifePreserver::Helpers::LinkTo
-include LifePreserver::Helpers::Reporting
-include LifePreserver::Helpers::Meta
-include LifePreserver::Helpers::AtomFeed
-include LifePreserver::Helpers::Dictionaries
-include LifePreserver::Helpers::Dependencies
-include LifePreserver::Helpers::Proposals
-include LifePreserver::Helpers::ChildParent
-include LifePreserver::Helpers::People
+use_helper LifePreserver::Helpers::Articles
+use_helper LifePreserver::Helpers::Blogging
+use_helper LifePreserver::Helpers::Weblog
+use_helper LifePreserver::Helpers::Dates
+use_helper LifePreserver::Helpers::Company
+use_helper LifePreserver::Helpers::UrlShortener
+use_helper LifePreserver::Helpers::Search
+use_helper LifePreserver::Helpers::Functional
+use_helper LifePreserver::Helpers::Breadcrumbs
+use_helper LifePreserver::Helpers::Text
+use_helper LifePreserver::Helpers::Vocabulary
+use_helper LifePreserver::Helpers::Tagging
+use_helper LifePreserver::Helpers::LinkTo
+use_helper LifePreserver::Helpers::Reporting
+use_helper LifePreserver::Helpers::Meta
+use_helper LifePreserver::Helpers::AtomFeed
+use_helper LifePreserver::Helpers::Dictionaries
+use_helper LifePreserver::Helpers::Dependencies
+use_helper LifePreserver::Helpers::Proposals
+use_helper LifePreserver::Helpers::ChildParent
+use_helper LifePreserver::Helpers::People
 
 require 'phonelib'
 
