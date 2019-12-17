@@ -14,8 +14,8 @@ redirections for the two author pages we had at the time.
 [q(GET /authors/chris-chapman/),
  q(GET /authors/katie-chapman/)]
 --- response_headers_like eval
-[q(Location: https?://localhost(?::\\d+)?/people/chris-chapman/),
- q(Location: https?://localhost(?::\\d+)?/people/katie-chapman/)]
+[q(Location: http://localhost(?::\\d+)?/people/chris-chapman/),
+ q(Location: http://localhost(?::\\d+)?/people/katie-chapman/)]
 --- error_code eval
 [301, 301]
 
@@ -23,7 +23,7 @@ redirections for the two author pages we had at the time.
 --- request
 GET /blog/feed
 --- response_headers_like
-Location: https?://localhost(?::\d+)?/blog/feed.atom$
+Location: http://localhost(?::\d+)?/blog/feed.atom$
 --- error_code: 302
 
 === TEST 3: Redirect from members' feeds to Atom resources.
@@ -31,8 +31,8 @@ Location: https?://localhost(?::\d+)?/blog/feed.atom$
 [q(GET /people/chris-chapman/feed),
  q(GET /people/katie-chapman/feed)]
 --- response_headers_like eval
-[q(Location: https?://localhost(?::\\d+)?/people/chris-chapman/feed.atom),
- q(Location: https?://localhost(?::\\d+)?/people/katie-chapman/feed.atom)]
+[q(Location: http://localhost(?::\\d+)?/people/chris-chapman/feed.atom),
+ q(Location: http://localhost(?::\\d+)?/people/katie-chapman/feed.atom)]
 --- error_code eval
 [302, 302]
 
@@ -45,7 +45,7 @@ comprehensive focus.
 --- request
 GET /products/
 --- response_headers_like
-Location: https?://localhost(?::\d+)?/solutions/
+Location: http://localhost(?::\d+)?/solutions/
 --- error_code: 301
 
 === TEST 5: Redirect from funding to funders.
@@ -55,21 +55,21 @@ We changed this to put the focus on the people who have made this possible.
 --- request
 GET /company/funding/
 --- response_headers_like
-Location: https?://localhost(?::\d+)?/company/funders/
+Location: http://localhost(?::\d+)?/company/funders/
 --- error_code: 301
 
 === TEST 6: Redirect from company as a concept to an information resource.
 --- request
 GET /company
 --- response_headers_like
-Location: https?://localhost(?::\d+)?/company/
+Location: http://localhost(?::\d+)?/company/
 --- error_code: 303
 
 === TEST 7: Redirect from the blog as a concept to an information resource.
 --- request
 GET /blog
 --- response_headers_like
-Location: https?://localhost(?::\d+)?/blog/
+Location: http://localhost(?::\d+)?/blog/
 --- error_code: 303
 
 === TEST 8: Return RDF/XML by default for personal profile pages.
@@ -138,11 +138,11 @@ Accept: application/ld+json
  q(GET /solutions/research-intent-ontology/examples/leonardo-oa),
  q(GET /solutions/research-intent-ontology/examples/leonardo-oa-nested)]
 --- response_headers_like eval
-[q(Location: https?://localhost(?::\\d+)?/solutions/scholarly-commons/scearl.rdf),
- q(Location: https?://localhost(?::\\d+)?/solutions/research-intent-ontology/rio.rdf),
- q(Location: https?://localhost(?::\\d+)?/solutions/research-intent-ontology/examples/leonardo.rdf),
- q(Location: https?://localhost(?::\\d+)?/solutions/research-intent-ontology/examples/leonardo-oa.rdf),
- q(Location: https?://localhost(?::\\d+)?/solutions/research-intent-ontology/examples/leonardo-oa-nested.rdf)]
+[q(Location: http://localhost(?::\\d+)?/solutions/scholarly-commons/scearl.rdf),
+ q(Location: http://localhost(?::\\d+)?/solutions/research-intent-ontology/rio.rdf),
+ q(Location: http://localhost(?::\\d+)?/solutions/research-intent-ontology/examples/leonardo.rdf),
+ q(Location: http://localhost(?::\\d+)?/solutions/research-intent-ontology/examples/leonardo-oa.rdf),
+ q(Location: http://localhost(?::\\d+)?/solutions/research-intent-ontology/examples/leonardo-oa-nested.rdf)]
 --- error_code eval
 [303, 303, 303, 303, 303]
 
@@ -156,11 +156,11 @@ Accept: application/ld+json
 --- more_headers
 Accept: application/rdf+xml
 --- response_headers_like eval
-[q(Location: https?://localhost(?::\\d+)?/solutions/scholarly-commons/scearl.rdf),
- q(Location: https?://localhost(?::\\d+)?/solutions/research-intent-ontology/rio.rdf),
- q(Location: https?://localhost(?::\\d+)?/solutions/research-intent-ontology/examples/leonardo.rdf),
- q(Location: https?://localhost(?::\\d+)?/solutions/research-intent-ontology/examples/leonardo-oa.rdf),
- q(Location: https?://localhost(?::\\d+)?/solutions/research-intent-ontology/examples/leonardo-oa-nested.rdf)]
+[q(Location: http://localhost(?::\\d+)?/solutions/scholarly-commons/scearl.rdf),
+ q(Location: http://localhost(?::\\d+)?/solutions/research-intent-ontology/rio.rdf),
+ q(Location: http://localhost(?::\\d+)?/solutions/research-intent-ontology/examples/leonardo.rdf),
+ q(Location: http://localhost(?::\\d+)?/solutions/research-intent-ontology/examples/leonardo-oa.rdf),
+ q(Location: http://localhost(?::\\d+)?/solutions/research-intent-ontology/examples/leonardo-oa-nested.rdf)]
 --- error_code eval
 [303, 303, 303, 303, 303]
 
@@ -174,11 +174,11 @@ Accept: application/rdf+xml
 --- more_headers
 Accept: text/turtle
 --- response_headers_like eval
-[q(Location: https?://localhost(?::\\d+)?/solutions/scholarly-commons/scearl.ttl),
- q(Location: https?://localhost(?::\\d+)?/solutions/research-intent-ontology/rio.ttl),
- q(Location: https?://localhost(?::\\d+)?/solutions/research-intent-ontology/examples/leonardo.ttl),
- q(Location: https?://localhost(?::\\d+)?/solutions/research-intent-ontology/examples/leonardo-oa.ttl),
- q(Location: https?://localhost(?::\\d+)?/solutions/research-intent-ontology/examples/leonardo-oa-nested.ttl)]
+[q(Location: http://localhost(?::\\d+)?/solutions/scholarly-commons/scearl.ttl),
+ q(Location: http://localhost(?::\\d+)?/solutions/research-intent-ontology/rio.ttl),
+ q(Location: http://localhost(?::\\d+)?/solutions/research-intent-ontology/examples/leonardo.ttl),
+ q(Location: http://localhost(?::\\d+)?/solutions/research-intent-ontology/examples/leonardo-oa.ttl),
+ q(Location: http://localhost(?::\\d+)?/solutions/research-intent-ontology/examples/leonardo-oa-nested.ttl)]
 --- error_code eval
 [303, 303, 303, 303, 303]
 
@@ -192,11 +192,11 @@ Accept: text/turtle
 --- more_headers
 Accept: text/html
 --- response_headers_like eval
-[q(Location: https?://localhost(?::\\d+)?/solutions/scholarly-commons/scearl.html),
- q(Location: https?://localhost(?::\\d+)?/solutions/research-intent-ontology/rio.html),
- q(Location: https?://localhost(?::\\d+)?/solutions/research-intent-ontology/examples/leonardo.html),
- q(Location: https?://localhost(?::\\d+)?/solutions/research-intent-ontology/examples/leonardo-oa.html),
- q(Location: https?://localhost(?::\\d+)?/solutions/research-intent-ontology/examples/leonardo-oa-nested.html)]
+[q(Location: http://localhost(?::\\d+)?/solutions/scholarly-commons/scearl.html),
+ q(Location: http://localhost(?::\\d+)?/solutions/research-intent-ontology/rio.html),
+ q(Location: http://localhost(?::\\d+)?/solutions/research-intent-ontology/examples/leonardo.html),
+ q(Location: http://localhost(?::\\d+)?/solutions/research-intent-ontology/examples/leonardo-oa.html),
+ q(Location: http://localhost(?::\\d+)?/solutions/research-intent-ontology/examples/leonardo-oa-nested.html)]
 --- error_code eval
 [303, 303, 303, 303, 303]
 
@@ -210,11 +210,11 @@ Accept: text/html
 --- more_headers
 Accept: application/xhtml+xml
 --- response_headers_like eval
-[q(Location: https?://localhost(?::\\d+)?/solutions/scholarly-commons/scearl.html),
- q(Location: https?://localhost(?::\\d+)?/solutions/research-intent-ontology/rio.html),
- q(Location: https?://localhost(?::\\d+)?/solutions/research-intent-ontology/examples/leonardo.html),
- q(Location: https?://localhost(?::\\d+)?/solutions/research-intent-ontology/examples/leonardo-oa.html),
- q(Location: https?://localhost(?::\\d+)?/solutions/research-intent-ontology/examples/leonardo-oa-nested.html)]
+[q(Location: http://localhost(?::\\d+)?/solutions/scholarly-commons/scearl.html),
+ q(Location: http://localhost(?::\\d+)?/solutions/research-intent-ontology/rio.html),
+ q(Location: http://localhost(?::\\d+)?/solutions/research-intent-ontology/examples/leonardo.html),
+ q(Location: http://localhost(?::\\d+)?/solutions/research-intent-ontology/examples/leonardo-oa.html),
+ q(Location: http://localhost(?::\\d+)?/solutions/research-intent-ontology/examples/leonardo-oa-nested.html)]
 --- error_code eval
 [303, 303, 303, 303, 303]
 
@@ -228,10 +228,10 @@ Accept: application/xhtml+xml
 --- more_headers
 Accept: application/ld+json
 --- response_headers_like eval
-[q(Location: https?://localhost(?::\\d+)?/solutions/scholarly-commons/scearl.jsonld),
- q(Location: https?://localhost(?::\\d+)?/solutions/research-intent-ontology/rio.jsonld),
- q(Location: https?://localhost(?::\\d+)?/solutions/research-intent-ontology/examples/leonardo.jsonld),
- q(Location: https?://localhost(?::\\d+)?/solutions/research-intent-ontology/examples/leonardo-oa.jsonld),
- q(Location: https?://localhost(?::\\d+)?/solutions/research-intent-ontology/examples/leonardo-oa-nested.jsonld)]
+[q(Location: http://localhost(?::\\d+)?/solutions/scholarly-commons/scearl.jsonld),
+ q(Location: http://localhost(?::\\d+)?/solutions/research-intent-ontology/rio.jsonld),
+ q(Location: http://localhost(?::\\d+)?/solutions/research-intent-ontology/examples/leonardo.jsonld),
+ q(Location: http://localhost(?::\\d+)?/solutions/research-intent-ontology/examples/leonardo-oa.jsonld),
+ q(Location: http://localhost(?::\\d+)?/solutions/research-intent-ontology/examples/leonardo-oa-nested.jsonld)]
 --- error_code eval
 [303, 303, 303, 303, 303]
