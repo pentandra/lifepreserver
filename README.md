@@ -92,7 +92,27 @@ Then view the page in your browser.
 Install test dependencies.
 
 * `bundle install --with test`
-* Perl and [Test::Nginx] for running application server tests.
+* Perl and [Test::Nginx] for running application server integration tests.
+
+### Unit and specification testing
+
+This runs the [RSpec] unit tests and [RuboCop] static code analyzer on the Ruby
+code in the [`lib` folder](lib/).
+
+```bash
+bundle exec rake
+```
+
+### Integration testing
+
+This tests the OpenResty application server using the [Test::Nginx] framework
+as a client. Since we're testing the server configuration, first [start up the
+server](#start-the-http-server-and-request-the-page-in-your-browser) and then
+run the following to test using the HTTP scheme:
+
+```bash
+TEST_NGINX_CLIENT_PORT=3125 TEST_NGINX_NO_NGINX_MANAGER=true prove -r t
+```
 
 ## Contributing
 
@@ -163,3 +183,5 @@ Also, please see [the colophon][colophon] for more raving attributions!
 [3000]: <http://localhost:3000/>
 [3125]: <http://localhost:3125/>
 [4125]: <https://localhost:4125/>
+[RSpec]: <https://rspec.info/>
+[RuboCop]: <https://rubocop.readthedocs.io/en/latest/>

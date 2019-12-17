@@ -85,6 +85,13 @@ compile '/company/people/*', rep: :rdfxml do
   write "/static/people/#{@item.fetch(:slug)}/index.rdf"
 end
 
+compile '/company/people/*', rep: :jsonld do
+  layout '/personal_profile.*'
+  layout '/default.*'
+  filter :rdf_distiller, input: :rdfa, output: :jsonld
+  write "/static/people/#{@item.fetch(:slug)}/index.jsonld"
+end
+
 compile '/company/people/*', rep: :photo do
   filter :bin_attr_extractor, bin_attr: :jpegphoto
   filter :image_optimizer if @config[:production]
