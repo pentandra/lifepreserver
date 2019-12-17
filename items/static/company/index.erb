@@ -349,7 +349,7 @@ priority: 0.6
           <h3 class="flush">Get Social</h3>
           <ul class="none">
             <% company.fetch(:service_profiles).each do |profile| %>
-              <%= render('/partials/account_service_item.*', account: profile, holder_text: 'us', anchor_class: 'mod button') %>
+              <%= render('/partials/account_service_item.*', account: profile, account_holder_text: company[:o], button_text: 'us', anchor_class: 'mod button') %>
             <% end %>
           </ul>
         </aside>
