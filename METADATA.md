@@ -600,10 +600,11 @@ The title of a person in their organizational context.
 
 REQUIRED_FOR_KINDS: `person`, `member`
 
-The [WebID] of the person, or local Web identifier if not known. For members
-with user certificates, the value is from the URI subject alternative name
-[URI value](#id) of [the x509 certificate](#pkey). For other people, the
-attibute is added directly to the [people.yaml](var/people.yaml) file.
+The [WebID] of the person, or local Web identifier if a global Web identifier
+is not known. For members with user certificates, the value is from the subject
+alternative name [URI value](#id) of [the member's x509 certificate](#pkey).
+For other people, the attribute is managed directly in the
+[people.yaml](etc/people.yaml) file.
 
 ### [`hashtag`]
 
