@@ -182,15 +182,22 @@ module LifePreserver
 
       # Provide the default WebID for a member.
       #
-      # @note Does not require a WebID Certificate for a member to have a WebID.
+      # @note It does not require public key cryptography for a member to have
+      #   a WebID. This method allows members to be identified on the Web
+      #   without requiring a key to participate. Using a personal key to
+      #   participate in a global Web of relationships (e.g. WebID-TLS), should
+      #   be something that members opt into.
+      #
+      # @see https://www.w3.org/2005/Incubator/webid/spec/identity/ WebID
+      # @see https://www.w3.org/2005/Incubator/webid/spec/tls/ WebID-TLS
       #
       # @note WebID is an exception to the normal URI design for this site (see
       #   {file:URI_DESIGN.md}) in order to conform to the current draft of the
-      #   WebID spec (see https://www.w3.org/2005/Incubator/webid/spec/identity)
-      #   which states that for "WebIDs with fragment identifiers (e.g. #me), the
-      #   URI without the fragment denotes the Profile Document." We're doing it
-      #   this way so as not to rely on WebID-TLS implementations following HTTP
-      #   redirections, since that behavior is currently unspecified.
+      #   WebID spec which states that for "WebIDs with fragment identifiers
+      #   (e.g. #me), the URI without the fragment denotes the Profile
+      #   Document." We're doing it this way so as not to rely on WebID-TLS
+      #   implementations following HTTP redirections, since that behavior is
+      #   currently unspecified.
       #
       # @see People#local_web_id
       #
