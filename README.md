@@ -56,10 +56,10 @@ $ bower install
 $ bundle install --with development
 ```
 
-### Update company data…
+### Fetch company data…
 
 ```bash
-$ bundle exec nanoc update-company-data
+$ bundle exec nanoc fetch-company-data > var/company.ldif
 ```
 
 This should create an LDIF file at `var/company.ldif` that is needed to build

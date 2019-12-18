@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 usage     'fetch-tag-data'
-aliases   :fetchtags, :ft
+aliases   :ftd, :tags
 summary   'fetches additional data about semantic tags from the Web'
 description 'Runs a SPARQL query on DBpedia to fetch additional data about semantic tags'
 

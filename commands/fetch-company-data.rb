@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
-usage     'update-company-data'
-aliases   :ucd
-summary   'Updates company data from LDAP'
+usage     'fetch-company-data'
+aliases   :fcd, :company
+summary   'Fetches company data from LDAP'
 description <<~DESCRIPTION
-  Fetches selected company data from LDAP to be used later on as input to the
-  'company' data source.
+  Fetches selected company data (organizations and members) from LDAP to be
+  used later on as input to the 'company' data source.
 
   The LDIF response is sent to STDOUT unless the the '--output' option is
   given, in which case the response will be written to file.
@@ -36,7 +36,7 @@ no_params
 
 require 'net/ldap'
 
-class UpdateCompanyData < ::Nanoc::CLI::CommandRunner
+class FetchCompanyData < ::Nanoc::CLI::CommandRunner
   ORGANIZATION_FILTER = Net::LDAP::Filter.eq('objectClass', 'organization')
   ORGANIZATION_ATTRS = %w[c l postalCode st street].freeze
 
@@ -56,7 +56,7 @@ class UpdateCompanyData < ::Nanoc::CLI::CommandRunner
 
       # Company LDAP data describing organizations and employees.
       #
-      # This file is generated from the 'update-company-data' Nanoc command. Any
+      # This file is generated from the 'fetch-company-data' Nanoc command. Any
       # changes made to this file will be overwritten when this command is run.
 
       version: 1
@@ -121,7 +121,7 @@ class UpdateCompanyData < ::Nanoc::CLI::CommandRunner
     result = ldap.get_operation_result
     if result.code == Net::LDAP::ResultCodeSuccess
       if options[:output]
-        $stderr.print 'Updating company data… '
+        $stderr.print 'Writing company data… '
         write(options[:output], ldif_out)
         $stderr.puts 'done'
       else
@@ -146,4 +146,4 @@ class UpdateCompanyData < ::Nanoc::CLI::CommandRunner
   end
 end
 
-runner UpdateCompanyData
+runner FetchCompanyData
