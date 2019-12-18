@@ -100,18 +100,18 @@ This runs the [RSpec] unit tests and [RuboCop] static code analyzer on the Ruby
 code in the [`lib` folder](lib/).
 
 ```bash
-bundle exec rake
+$ bundle exec rake
 ```
 
 ### Integration testing
 
 This tests the OpenResty application server using the [Test::Nginx] framework
-as a client. Since we're testing the server configuration, first [start up the
-server](#start-the-http-server-and-request-the-page-in-your-browser) and then
-run the following to test using the HTTP scheme:
+as a client. Since we're testing compiled server configuration, first [start up
+the server](#start-the-http-server-and-request-the-page-in-your-browser) and
+then run the following to test using the HTTP scheme:
 
 ```bash
-TEST_NGINX_CLIENT_PORT=3125 TEST_NGINX_NO_NGINX_MANAGER=true prove -r t
+$ TEST_NGINX_CLIENT_PORT=3125 TEST_NGINX_NO_NGINX_MANAGER=true prove -r t
 ```
 
 ## Contributing
