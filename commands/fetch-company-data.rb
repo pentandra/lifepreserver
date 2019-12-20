@@ -79,8 +79,8 @@ class FetchCompanyData < ::Nanoc::CLI::CommandRunner
     $stderr.puts
     $stderr.print "Opening connection to #{options[:host]} and searching directory… "
 
-    ldap.open do |ldap|
-      ldap.search(
+    ldap.open do |connection|
+      connection.search(
         # base: options.fetch_values(:organizations, :base).join(','),
         base: [options[:organizations], options[:base]].join(','),
         scope: Net::LDAP::SearchScope_SingleLevel,
@@ -91,7 +91,7 @@ class FetchCompanyData < ::Nanoc::CLI::CommandRunner
         ldif_out << entry.to_ldif
       end
 
-      ldap.search(
+      connection.search(
         # base: options.fetch_values(:active_users, :base).join(','),
         base: [options[:active_users], options[:base]].join(','),
         scope: Net::LDAP::SearchScope_SingleLevel,
@@ -103,7 +103,7 @@ class FetchCompanyData < ::Nanoc::CLI::CommandRunner
         ldif_out << entry.to_ldif
       end
 
-      ldap.search(
+      connection.search(
         # base: options.fetch_values(:deleted_users, :base).join(','),
         base: [options[:deleted_users], options[:base]].join(','),
         scope: Net::LDAP::SearchScope_SingleLevel,
