@@ -10,7 +10,7 @@
   <meta property="og:image" content="<%= path_to(@items[@item.fetch(:cover_image_id)], absolute: true) %>" />
   <%# TODO: other image attributes, if they exist %>
 <% end %>
-<% if article?(@item) %>
+<% if blog_post?(@item) %>
   <meta property="og:type" content="article" />
   <% if @item.key?(:published_at) %>
     <meta property="article:published_time" content="<%= attribute_to_time(@item.fetch(:published_at)).iso8601 %>" />

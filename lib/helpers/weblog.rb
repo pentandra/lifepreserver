@@ -4,7 +4,6 @@ require 'active_support/core_ext/object/blank'
 
 require_relative 'text'
 require_relative 'company'
-require_relative 'articles'
 require_relative 'blogging'
 
 module LifePreserver
@@ -12,11 +11,10 @@ module LifePreserver
     module Weblog
       include Text
       include Company
-      include Articles
       include Blogging
 
       def weblog
-        articles + blog_posts
+        blog_posts
       end
 
       def sorted_weblog

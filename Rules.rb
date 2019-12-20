@@ -15,7 +15,6 @@ include_rules 'rules/meta_files'
 include_rules 'rules/company'
 include_rules 'rules/blog'
 include_rules 'rules/solutions'
-include_rules 'rules/articles'
 
 include_rules 'rules/dynamic'
 
