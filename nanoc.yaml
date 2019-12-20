@@ -30,7 +30,12 @@ view:
 
 data_sources:
   - type: filesystem
-    content_dir: items
+    content_dir: app
+    layouts_dir: ~
+
+  - type: filesystem
+    content_dir: static
+    items_root: *static_root
 
   - type: dependencies
     items_root: &dependencies_root /_dependencies
