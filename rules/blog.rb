@@ -30,7 +30,7 @@ end
 
 # Weblog postings
 
-compile '/static/blog/posts/**/*.md' do
+compile '/static/posts/**/*.md' do
   filter :erb, @config[:erb]
   filter :pandoc, args: [
     { from: :"markdown+emoji", to: :html5 },
@@ -52,7 +52,7 @@ compile '/static/blog/posts/**/*.md' do
   write item.identifier.without_ext.sub('/posts', '') + '.html'
 end
 
-compile '/static/blog/posts/**/*.md', rep: :feed_entry do
+compile '/static/posts/**/*.md', rep: :feed_entry do
   filter :erb, @config[:erb]
   filter :pandoc, args: [
     { from: :"markdown+emoji", to: :html5 },
@@ -63,10 +63,10 @@ compile '/static/blog/posts/**/*.md', rep: :feed_entry do
   filter :rubypantsunicode
 end
 
-compile '/static/blog/posts/**/*.{jpg,jpeg,png,gif}' do
+compile '/static/posts/**/*.{jpg,jpeg,png,gif}' do
   filter :image_optimizer if @config[:production]
 end
 
-route '/static/blog/posts/**/*' do
+route '/static/posts/**/*' do
   item.identifier.to_s.sub('/posts', '')
 end
