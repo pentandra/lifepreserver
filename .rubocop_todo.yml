@@ -68,18 +68,6 @@ RSpec/EmptyExampleGroup:
     - 'spec/helpers/blogging_spec.rb'
     - 'spec/helpers/link_to_spec.rb'
 
-# Offense count: 6
-# Configuration parameters: CustomTransform, IgnoreMethods.
-RSpec/FilePath:
-  Exclude:
-    - 'spec/data_sources/company_spec.rb'
-    - 'spec/helpers/atom_feed_spec.rb'
-    - 'spec/helpers/blogging_spec.rb'
-    - 'spec/helpers/company_spec.rb'
-    - 'spec/helpers/dates_spec.rb'
-    - 'spec/helpers/dictionaries_spec.rb'
-    - 'spec/helpers/link_to_spec.rb'
-
 # Offense count: 36
 # Configuration parameters: IgnoreSharedExamples.
 RSpec/NamedSubject:

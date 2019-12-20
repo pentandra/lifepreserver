@@ -64,6 +64,11 @@ Style/GlobalVars:
     - 'test/**/*.rb'
     - 'spec/**/*.rb'
 
+# Exclude the top namespace for tests for the sake of simplicity.
+RSpec/FilePath:
+  CustomTransform:
+    LifePreserver: ''
+
 # ----- DISABLED (metrics) -----
 
 # Cops for metrics are disabled because they should not cause tests to fail.
