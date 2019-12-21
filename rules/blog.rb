@@ -19,13 +19,14 @@ compile '/static/**/feed.erb' do
   write item.identifier.without_ext + '.atom'
 end
 
-# Weblog tags and archives
+# Site tags
 
-compile '/static/{tags,archives}/**/*' do
-  filter :erb, @config[:erb]
+compile '/tags/*' do
+  layout '/blog/tag.*'
   filter :rubypantsunicode
   filter :cache_buster if @config[:production]
   filter :html5small if @config[:production]
+  write File.join(@item.identifier.prefix(@config.fetch(:static_root)), 'index.html')
 end
 
 # Weblog postings

@@ -242,8 +242,7 @@ The kind of item. Currently we have the following kinds:
 * `proposal`: a formal proposal from the company.
 * `redirect`: a permanent (301) redirect.
 * `specification`
-* `tag-page` (distinct from tag as a concept)
-* `tag`: the tag itself (a controlled concept)
+* `tag`: a controlled concept used to group like items.
 * `vocabulary`: an item that represents an RDF ontology.
 
 ### `license`
@@ -342,7 +341,7 @@ semantics may be expressed for this context.
 
 ### `name`
 
-REQUIRED_FOR_KINDS: `person`, `member`, `organization`
+REQUIRED_FOR_KINDS: `person`, `member`, `organization`, `tag`
 
 The name that is most commonly used to refer to a person or organization.
 Constructed in the [Company][Company data source] or [People][People data source]
@@ -350,6 +349,8 @@ data sources from the LDAP [`displayName` attribute](#displayname) or
 [`cn` attribute](#cn), or by the [`o` attribute](#o) for organizations or the
 joining of the [`givenname` attribute](#givenname) and [`sn` attribute](#sn)
 for persons.
+
+For tag items, the display name of the tag.
 
 ### `cn`
 

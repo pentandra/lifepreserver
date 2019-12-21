@@ -47,7 +47,7 @@ data_sources:
     ordered_locales: [ 'en_US', 'en_GB', 'es_ES', 'fr_FR', 'nl_NL', 'de_DE', 'it_IT' ]
 
   - type: tags
-    items_root: &tags_root /_tags
+    items_root: &tags_root /tags
     author_tags: 'etc/tags.yaml'
     tag_metadata: 'var/additional_tag_data.yaml'
 
@@ -131,7 +131,7 @@ environments:
     checks:
       <<: *checks
       internal_links:
-        exclude: [ '^/blog/feed', '^/tags', '^/archives' ]
+        exclude: [ '^/blog/feed', '^/archives' ]
 
     server:
       name: 'localhost'

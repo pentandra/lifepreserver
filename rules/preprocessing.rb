@@ -67,8 +67,7 @@ preprocess do
     @items.create(feed_content, feed_attributes, feed_id)
   end
 
-  if @config[:site][:generate_meta]
-    generate_tag_pages
+  if @config.dig(:site, :generate_meta)
     generate_blog_archives
   end
 

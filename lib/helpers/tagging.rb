@@ -4,86 +4,110 @@ require 'yaml'
 require 'set'
 require 'rdf'
 
+require_relative 'link_to'
+
 module LifePreserver
   module Helpers
     module Tagging
+      include LinkTo
+
       # Returns all the tags present in a collection of items.
-      # There are no duplicates (because this is a set).
       #
-      # When called without parameters, all the items are considered.
+      # @note There are no duplicates (because the underlying storage is a
+      #   {Set}).
+      #
+      # @param items [Array<Nanoc::Core::BasicItemView>, nil] The items from
+      #   which to gather tags. When nil, all items are considered.
+      #
+      # @return [Array<String>] The tags present in the given collection.
       def tag_set(items = nil)
         items = @items if items.nil?
         res = Set.new
 
         tags.each do |tag|
-          res << tag._unwrap.attributes[:tag] if items_with_tag(tag, items).any?
+          res << tag._unwrap.attributes[:name] if items_with_tag(tag, items).any?
         end
 
         res.to_a.freeze
       end
 
+      # @return [Array<Nanoc::Core::BasicItemView>] All tag items.
       def tags
         @items.find_all(File.join(@config[:tags_root], '*'))
       end
 
+      # @return [Array<Nanoc::Core::BasicItemView>] All tag items, in
+      #   tag-alphabetical order.
       def sorted_tags
-        tags.sort_by { |t| t._unwrap.attributes[:tag] }
+        tags.sort_by { |t| t._unwrap.attributes[:name] }
       end
 
-      # Return true if an item has a specified tag
-      # Does not create a dependency.
+      # Return true if an item has the specified tag.
       #
-      # @param [Nanoc::Core::BasicItemView] item the item to check
-      # @param [String, Nanoc::Core::BasicItemView] tag the tag, either a string or tag item
+      # @param item [Nanoc::Core::BasicItemView] The item to check.
+      # @param tag [String, Nanoc::Core::BasicItemView] The tag or tag item.
       #
-      # @return true if item is tagged such, otherwise false
+      # @return [Boolean] True if item is tagged such, otherwise false.
       def tag?(item, tag)
-        Array(item._unwrap.attributes[:tags]).include?(tag.is_a?(String) ? tag : tag[:tag])
+        Array(item._unwrap.attributes[:tags]).include?(tag.is_a?(String) ? tag : tag[:name])
       end
 
+      # Find all items with the given tag.
+      #
+      # @param tag [String] The tag to select by.
+      #
+      # @param items [Array<Nanoc::Core::BasicItemView>, nil] The item
+      #   collection in which to search for the given tag. When nil, all items
+      #   are considered.
+      #
+      # @return [Array<Nanoc::Core::BasicItemView>] All items of the given
+      #   items with the given tag.
       def items_with_tag(tag, items = nil)
         items = @items if items.nil?
-        items.select { |item| tag?(item, tag) }
+        Array(items).select { |item| tag?(item, tag) }
       end
 
-      # Returns a link to the specified tag.
-      def link_for_tag(tag, rel_tag: true)
-        if tag.is_a?(String)
-          original_tag = tag
-          tag = @items[File.join(@config[:tags_root], tag.parameterize)]
-          raise ArgumentError, "Tag metadata does not yet exist in `etc/tags.yaml` for the tag '#{original_tag}'. Please add the tag first and then try again." unless tag
-        end
-
-        if rel_tag && tag[:semantic]
-          %(<a href="#{@config.dig(:blog, :tags_path)}/#{h tag[:tag].parameterize}/" rel="tag ctag:tagged" resource="##{h tag[:tag].parameterize(separator: '_')}_tag" typeof="ctag:AuthorTag"><link property="ctag:means" resource="#{RDF::URI.new(tag[:uri]).pname}" typeof="#{RDF::URI.new(tag.fetch(:type, RDF::OWL.Thing)).pname}" /><span property="ctag:label">#{h tag[:tag]}</span></a>)
-        else
-          %(<a href="#{@config.dig(:blog, :tags_path)}/#{h tag[:tag].parameterize}/"#{' rel="tag"' if rel_tag}>#{h tag[:tag]}</a>)
-        end
-      end
-
-      # Same as link_for_tag, but does not include the `@rel` attribute.
+      # Returns a hyperlink to the page for the specified tag.
       #
-      # To conform with the HTML5 rel="tag" specification, the rel attribute
-      # should apply only to the current document. A tag cloud, by definition,
-      # does not apply to the current document only, but is a summary of many
-      # documents' tags.
+      # @param tag [Nanoc::Core::BasicItemView, String] The tag or tag item.
+      #
+      # @param rel_tag [Boolean] Whether or not to include the HTML +rel+
+      #   attribute with the value of "tag" with the link.
+      #
+      # @param absolute [Boolean] Whether or not to use an absolute path to the
+      #   tag page.
+      #
+      # @return [String] A hyperlink for the given tag.
+      def link_for_tag(tag, rel_tag: true, absolute: false)
+        if tag.is_a?(String)
+          tag_string = tag
+          tag = @items[File.join(@config[:tags_root], tag.parameterize)]
+
+          unless tag
+            raise ArgumentError, "Could not create link for '#{tag_string}': the tag does not exist in the metadata file `etc/tags.yaml`."
+          end
+        end
+
+        if rel_tag && tag[:uri]
+          %(<a href="#{path_to(tag, absolute: absolute)}" rel="tag ctag:tagged" resource="##{h tag[:name].parameterize(separator: '_')}_tag" typeof="ctag:AuthorTag"><link property="ctag:means" resource="#{RDF::URI.new(tag[:uri]).pname}" typeof="#{RDF::URI.new(tag.fetch(:type, RDF::OWL.Thing)).pname}" /><span property="ctag:label">#{h tag[:name]}</span></a>)
+        else
+          %(<a href="#{path_to(tag, absolute: absolute)}"#{' rel="tag"' if rel_tag}>#{h tag[:name]}</a>)
+        end
+      end
+
+      # Same as {#link_for_tag}, without the `@rel` attribute.
+      #
+      # @note To conform with the HTML5 rel="tag" specification, the rel
+      #   attribute should apply only to the current document. A tag cloud, by
+      #   definition, does not apply to the current document only, but is a
+      #   summary of many documents' tags.
+      #
+      # @param absolute [Boolean] Whether or not to use an absolute path to the
+      #   tag page.
       #
       # See http://microformats.org/wiki/rel-tag
-      def link_for_tagcloud(tag)
-        link_for_tag(tag, rel_tag: false)
-      end
-
-      # Creates in-memory tag pages for a collection of items
-      def generate_tag_pages(items = nil)
-        items = @items if items.nil?
-        tag_set(items).map { |tag_name| @items[File.join(@config[:tags_root], tag_name.parameterize)] }.each do |tag|
-          @items.create(
-            %(<%= render('/blog/tag.*', tag: @items['#{tag.identifier}']) %>),
-            { title: "Tag: #{tag.fetch(:label, tag[:tag])}", kind: 'tag-page', is_hidden: true, description: "All posts having to do with the tag '#{tag[:tag]}'" },
-            "#{@config[:static_root]}#{@config.dig(:blog, :tags_path)}/#{tag[:tag].parameterize}/index.erb",
-            binary: false,
-          )
-        end
+      def link_for_tagcloud(tag, absolute: false)
+        link_for_tag(tag, rel_tag: false, absolute: absolute)
       end
     end
   end

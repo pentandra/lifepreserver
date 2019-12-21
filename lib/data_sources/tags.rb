@@ -32,20 +32,24 @@ module LifePreserver
         end
       end
 
-      protected
-
       def tag_to_item(tag)
+        dup_tag = tag.dup
+        tag_name = dup_tag.delete(:tag)
         attributes = {
+          name: tag_name,
           kind: 'tag',
-          semantic: tag.key?(:abstract),
           is_hidden: true,
+
+          # Page-related metadata
+          full_title: "Tag: #{dup_tag.fetch(:label, tag_name)}",
+          meta_description: "All pages tagged with '#{tag_name}'",
         }
 
         new_item(
-          tag[:tag],
-          attributes.merge(tag),
-          File.join(File::SEPARATOR, tag[:tag].parameterize),
-          checksum_data: "tag=#{tag[:tag]},uri=#{tag[:uri]},abstract=#{tag[:abstract]}",
+          '-',
+          attributes.merge(dup_tag),
+          File.join(File::SEPARATOR, tag_name.parameterize),
+          checksum_data: "tag=#{tag_name},uri=#{tag[:uri]},abstract=#{tag[:abstract]}",
         )
       end
     end
