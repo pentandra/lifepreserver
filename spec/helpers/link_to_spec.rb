@@ -68,11 +68,26 @@ RSpec.describe LifePreserver::Helpers::LinkTo, helper: true do
       context 'with absolute flag' do
         let(:attributes) { { absolute: true } }
 
-        before do
-          ctx.config[:base_url] = 'http://url.base'
-        end
-
         it { is_expected.to eql('<a href="http://url.base/foo/">Text</a>') }
+      end
+
+      context 'with absolute flag false and matching base url' do
+        let(:target) { 'http://url.base/foo/' }
+        let(:attributes) { { absolute: false } }
+
+        it { is_expected.to eql('<a href="/foo/">Text</a>') }
+      end
+
+      context 'without absolute flag but matching base url' do
+        let(:target) { 'http://url.base/foo/' }
+
+        it { is_expected.to eql('<a href="/foo/">Text</a>') }
+      end
+
+      context 'without absolute flag or matching base url' do
+        let(:target) { 'http://some.other.base/foo/' }
+
+        it { is_expected.to eql('<a href="http://some.other.base/foo/">Text</a>') }
       end
 
       context 'evil HTML markup in text' do
