@@ -3,15 +3,15 @@
 require 'compass/import-once/activate'
 # Require any additional compass plugins here.
 
-add_import_path 'items/static/assets/components/retina.js/src'
+add_import_path 'static/assets/components/retina.js/src'
 
 http_path             = '/'
 project_path          = File.expand_path(File.join(File.dirname(__FILE__), '../../'))
-css_dir               = 'items/static/assets/stylesheets'
-sass_dir              = 'items/static/assets/stylesheets'
-images_dir            = 'items/static/assets/images'
-javascripts_dir       = 'items/static/assets/scripts'
-fonts_dir             = 'items/static/assets/fonts'
+css_dir               = 'static/assets/stylesheets'
+sass_dir              = 'static/assets/stylesheets'
+images_dir            = 'static/assets/images'
+javascripts_dir       = 'static/assets/scripts'
+fonts_dir             = 'static/assets/fonts'
 http_javascripts_path = 'js'
 http_stylesheets_path = 'css'
 http_images_path      = 'images'
