@@ -45,7 +45,6 @@ module LifePreserver
       # @option attributes [String] :fragment (nil) a URI fragment to append
       # @option attributes [Boolean] :absolute (false) return an absolute URI?
       # @option attributes [Boolean] :concept (false) is this a concept URI?
-      # @option attributes [Boolean] :internal (false) retain internal static root path?
       #
       # @return [String]
       def link_to(text, target, attributes = {})
@@ -56,7 +55,6 @@ module LifePreserver
           fragment: attributes.delete(:fragment),
           absolute: attributes.delete(:absolute),
           concept: attributes.delete(:concept),
-          internal: attributes.delete(:internal),
         }.compact
 
         path = path_to(target, path_attributes)
@@ -78,7 +76,8 @@ module LifePreserver
       # @param fragment [String] A URI fragment to append
       # @param absolute [Boolean] Return an absolute URI?
       # @param concept [Boolean] Is this a concept URI?
-      # @param internal [Boolean] Retain internal static root path (if it exists)?
+      #
+      # @see URI_DESIGN.md
       #
       # @return [String] The path to the target.
       def path_to(target, rep: :default, snapshot: :last, fragment: nil, absolute: false, concept: false, internal: false)
@@ -110,14 +109,10 @@ module LifePreserver
 
         path = absolute ? base_url + path : path.sub(base_url, '')
 
-        # Remove static root for external path, if present
-        unless internal
-          static_root = @config.fetch(:static_root, '')
-          path.sub!(static_root, '')
-        end
+        # if present, remove Nginx static root from public path
+        path.sub!(@config[:static_root].to_s, '')
 
         # Chop off last slash for concept URIs
-        # @see {file:URI_DESIGN.md}
         path.chop! if concept && path.end_with?('/')
 
         # Assemble fragment identifier, if given
