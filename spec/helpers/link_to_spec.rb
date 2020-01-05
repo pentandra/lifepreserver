@@ -50,10 +50,6 @@ RSpec.describe LifePreserver::Helpers::LinkTo, helper: true do
     let(:target) { raise 'override me' }
     let(:attributes) { {} }
 
-    before do
-      ctx.config[:base_url] = base_url
-    end
-
     context 'with string path' do
       let(:target) { '/foo/' }
 
@@ -63,31 +59,6 @@ RSpec.describe LifePreserver::Helpers::LinkTo, helper: true do
         let(:attributes) { { title: 'Donkey' } }
 
         it { is_expected.to eql('<a title="Donkey" href="/foo/">Text</a>') }
-      end
-
-      context 'with absolute flag' do
-        let(:attributes) { { absolute: true } }
-
-        it { is_expected.to eql('<a href="http://url.base/foo/">Text</a>') }
-      end
-
-      context 'with absolute flag false and matching base url' do
-        let(:target) { 'http://url.base/foo/' }
-        let(:attributes) { { absolute: false } }
-
-        it { is_expected.to eql('<a href="/foo/">Text</a>') }
-      end
-
-      context 'without absolute flag but matching base url' do
-        let(:target) { 'http://url.base/foo/' }
-
-        it { is_expected.to eql('<a href="/foo/">Text</a>') }
-      end
-
-      context 'without absolute flag or matching base url' do
-        let(:target) { 'http://some.other.base/foo/' }
-
-        it { is_expected.to eql('<a href="http://some.other.base/foo/">Text</a>') }
       end
 
       context 'evil HTML markup in text' do
@@ -154,7 +125,7 @@ RSpec.describe LifePreserver::Helpers::LinkTo, helper: true do
       end
     end
 
-    context 'with nil path' do
+    context 'with non-routed item' do
       before do
         ctx.create_item('content', {}, '/target')
         ctx.create_rep(ctx.items['/target'], nil)
@@ -164,6 +135,108 @@ RSpec.describe LifePreserver::Helpers::LinkTo, helper: true do
 
       it 'raises' do
         expect { subject }.to raise_error(RuntimeError)
+      end
+    end
+  end
+
+  describe '#path_to' do
+    subject { helper.path_to(target, attributes) }
+
+    let(:base_url) { 'http://url.base' }
+    let(:target) { raise 'override me' }
+    let(:attributes) { {} }
+
+    context 'with string target and base url' do
+      let(:target) { '/foo/' }
+
+      before do
+        ctx.config[:base_url] = base_url
+      end
+
+      it { is_expected.to eql('/foo/') }
+
+      context 'with absolute flag' do
+        let(:attributes) { { absolute: true } }
+
+        it { is_expected.to eql('http://url.base/foo/') }
+      end
+
+      context 'with absolute flag false and matching base url' do
+        let(:target) { 'http://url.base/foo/' }
+        let(:attributes) { { absolute: false } }
+
+        it { is_expected.to eql('/foo/') }
+      end
+
+      context 'without absolute flag but matching base url' do
+        let(:target) { 'http://url.base/foo/' }
+
+        it { is_expected.to eql('/foo/') }
+      end
+
+      context 'without absolute flag or matching base url' do
+        let(:target) { 'http://some.other.base/foo/' }
+
+        it { is_expected.to eql('http://some.other.base/foo/') }
+      end
+    end
+
+    context 'with current item' do
+      before do
+        ctx.create_item('content', {}, '/target')
+        ctx.create_rep(ctx.items['/target'], '/b/c/target.html')
+
+        ctx.item = ctx.items['/target']
+        ctx.item_rep = ctx.item.reps[:default]
+      end
+
+      context 'with relative single dot segment indicating the current hierarchical level' do
+        let(:target) { '.' }
+
+        it { is_expected.to eql('/b/c/') }
+      end
+
+      context 'with relative path indicating another file in the current hierarchical level' do
+        let(:target) { './image.png' }
+
+        it { is_expected.to eql('/b/c/image.png') }
+      end
+
+      context 'with a bare filename indicating another file in the current hierarchical level' do
+        let(:target) { 'image.png' }
+
+        it { is_expected.to eql('/b/c/image.png') }
+      end
+
+      context 'with relative path indicating the level above this hierarchical level' do
+        let(:target) { '..' }
+
+        it { is_expected.to eql('/b/') }
+      end
+
+      context 'with relative path indicating another file in the level above this hierarchical level' do
+        let(:target) { '../file2.txt' }
+
+        it { is_expected.to eql('/b/file2.txt') }
+      end
+
+      context 'with relative path indicating a level above the root level' do
+        let(:target) { '../../../../' }
+
+        it { is_expected.to eql('/') }
+      end
+
+      context 'with a string fragment' do
+        let(:target) { '#this' }
+
+        it { is_expected.to eql('/b/c/target.html#this') }
+      end
+
+      context 'with an attribute fragment' do
+        let(:target) { '' }
+        let(:attributes) { { fragment: '#this' } }
+
+        it { is_expected.to eql('/b/c/target.html#this') }
       end
     end
   end

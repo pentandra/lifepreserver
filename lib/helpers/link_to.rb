@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'active_support/core_ext/string/output_safety'
+require 'uri'
 
 require_relative 'dates'
 require_relative 'url_shortener'
@@ -16,8 +17,8 @@ module LifePreserver
       # of the link.
       #
       # @param [String] id the item id
-      # @param attributes (see #link_to)
-      # @option attributes (see #link_to)
+      # @param attributes (see #path_to)
+      # @option attributes (see #path_to)
       #
       # @return [String] The anchor link to the item.
       def link_to_id(id, attributes = {})
@@ -39,12 +40,8 @@ module LifePreserver
       # Generate a hyperlink from text and a target.
       #
       # @param text [String] The text of the anchor element.
-      # @param attributes [Hash]
-      # @option attributes [Symbol] :rep (:default) the item rep to link to
-      # @option attributes [Symbol] :snapshot (:last) the snapshot to link to
-      # @option attributes [String] :fragment (nil) a URI fragment to append
-      # @option attributes [Boolean] :absolute (false) return an absolute URI?
-      # @option attributes [Boolean] :concept (false) is this a concept URI?
+      # @param attributes (see #path_to)
+      # @option attributes (see #path_to)
       #
       # @return [String]
       def link_to(text, target, attributes = {})
@@ -68,60 +65,68 @@ module LifePreserver
         %(<a #{attributes}href="#{h path}">#{html_escape_once(text)}</a>)
       end
 
-      # Generate a resource path from a target and optional fragment.
+      # Generate a resource path from a target following RFC3986.
       #
       # @param target [String, Nanoc::Core::CompilationItemView, Nanoc::Core::BasicItemRepView]
-      # @param rep [Symbol] The item rep to link to
-      # @param snapshot [Symbol] The snapshot to link to
-      # @param fragment [String] A URI fragment to append
-      # @param absolute [Boolean] Return an absolute URI?
-      # @param concept [Boolean] Is this a concept URI?
+      # @param attributes [Hash]
+      # @option attributes [Symbol] :rep (:default) the item rep to link to
+      # @option attributes [Symbol] :snapshot (:last) the snapshot to link to
+      # @option attributes [String] :fragment (nil) a URI fragment to append
+      # @option attributes [Boolean] :absolute (false) return an absolute URI?
+      # @option attributes [Boolean] :concept (false) is this a concept URI?
       #
-      # @see URI_DESIGN.md
+      # @see file:URI_DESIGN.md
+      # @see https://tools.ietf.org/html/rfc3986 RFC3986
       #
       # @return [String] The path to the target.
-      def path_to(target, rep: :default, snapshot: :last, fragment: nil, absolute: false, concept: false, internal: false)
-        path = case target
-               # REVIEW: can we remove the String type here or check the given target to make things more deterministic?
-               when String
-                 target
-               when Nanoc::Core::CompilationItemView
-                 target.path(rep: rep, snapshot: snapshot)
-               when Nanoc::Core::BasicItemRepView
-                 target.path(snapshot: snapshot)
-               else
-                 raise ArgumentError, "Cannot link to #{target.inspect} (expected a string or item view, not a #{target.class.name})"
-               end
+      def path_to(target, attributes = {})
+        rep = attributes.fetch(:rep, :default)
+        snapshot = attributes.fetch(:snapshot, :last)
+        fragment = attributes[:fragment]
+        absolute = attributes.fetch(:absolute, false)
+        concept = attributes.fetch(:concept, false)
 
-        unless path
+        base_url = @config[:base_url]
+        if absolute && base_url.nil?
+          raise Nanoc::Core::TrivialError.new("Cannot build absolute path to #{target.inspect}: site configuration has no base_url")
+        end
+
+        path =
+          case target
+          # REVIEW: can we remove the String type here or check the given target to make things more deterministic?
+          when String
+            target
+          when Nanoc::Core::CompilationItemView
+            target.path(rep: rep, snapshot: snapshot)
+          when Nanoc::Core::BasicItemRepView
+            target.path(snapshot: snapshot)
+          else
+            raise ArgumentError, "Cannot link to #{target.inspect} (expected a string or item view, not a #{target.class.name})"
+          end
+
+        src_path = [@item_rep, @item].map { |item| item&.path }.compact.first
+
+        unless path || src_path
           raise "Cannot create a path to #{target.inspect} because this target is not outputted (its routing rule returns nil)"
         end
 
-        nearest_path = find_nearest_path(@item_rep, @item)
-        path = unstack(nearest_path, path) if nearest_path
+        target_uri = URI.join(base_url || 'relative-ref:', src_path.to_s, path.to_s)
 
-        # Append base url, if absolute path is requested
-        # TODO: manage dependency on @config[:base_url]
-        base_url = @config[:base_url]
-        if base_url.nil?
-          raise Nanoc::Core::TrivialError.new("Cannot build path to #{target.inspect}: site configuration has no base_url")
+        # If present, remove Nginx root directory from the public path.
+        target_uri.path = target_uri.path.sub(@config[:static_root].to_s, '')
+
+        # Chop off last slash for concept URIs.
+        target_uri.path = target_uri.path.chop if concept && target_uri.path.end_with?('/')
+
+        target_uri.fragment = fragment.delete_prefix('#') if fragment
+        target_uri.normalize!
+
+        if absolute || (base_url && URI(base_url).host != target_uri.host) # target_uri.coerce(base_url.to_s).map { |t| t.select(:scheme, :host) }.reduce(:|).count == 2
+          target_uri.to_s
+        else
+          # target_uri = src_path&.route_to(target_uri)
+          target_uri.select(:path, :fragment).compact.join('#')
         end
-
-        path = absolute ? base_url + path : path.sub(base_url, '')
-
-        # if present, remove Nginx static root from public path
-        path.sub!(@config[:static_root].to_s, '')
-
-        # Chop off last slash for concept URIs
-        path.chop! if concept && path.end_with?('/')
-
-        # Assemble fragment identifier, if given
-        if fragment
-          fragment = fragment.start_with?('#') ? fragment : '#' + fragment.to_s
-          path += fragment
-        end
-
-        path
       end
 
       def short_url_for(item, rep: :default, snapshot: :last)
@@ -137,7 +142,7 @@ module LifePreserver
       # @see https://web.archive.org/web/20110514113830/http://diveintomark.org/archives/2004/05/28/howto-atom-id How to make a good ID in Atom, by Mark Pilgrim (archived)
       #
       # @param item [Nanoc::Core::CompilationItemView] The item to be tagged.
-      # @param fragment [String] An optional fragment to append.
+      # @param fragment [String] An optional URI fragment to append.
       #
       # @raise [Nanoc::Core::TrivialError] If the item has no +created_at+
       #   attribute or the site configuration has no +base_url+.
@@ -158,23 +163,6 @@ module LifePreserver
         hostname, base_dir = %r{^.+?://([^/]+)(.*)$}.match(base_url)[1..2]
 
         "tag:#{hostname},#{formatted_date}:#{base_dir}#{path_to(item, fragment: fragment)}"
-      end
-
-      protected
-
-      def unstack(current, target)
-        if target.start_with?('/')
-          return target
-        end
-
-        p = current.gsub(%r{[^/]*$}, '') + target
-        p = p.gsub(%r{/+}, '/')
-        p = p.gsub(%r{[^/]*/\.\./}, '') while p =~ %r{\.\./}
-        p
-      end
-
-      def find_nearest_path(*path_items)
-        path_items.find { |item| item&.path }&.path
       end
     end
   end
