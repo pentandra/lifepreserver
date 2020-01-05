@@ -85,6 +85,13 @@ RSpec.describe LifePreserver::Helpers::LinkTo, helper: true do
 
         it { is_expected.to eql('<a title="Research &amp; Development" href="/foo/">Text</a>') }
       end
+
+      context 'with mailto href' do
+        let(:target) { 'mailto:mail@example.org' }
+        let(:text) { 'Mail' }
+
+        it { is_expected.to eql('<a href="mailto:mail@example.org">Mail</a>') }
+      end
     end
 
     context 'with rep' do

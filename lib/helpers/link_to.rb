@@ -112,19 +112,20 @@ module LifePreserver
 
         target_uri = URI.join(base_url || 'relative-ref:', src_path.to_s, path.to_s)
 
-        # If present, remove Nginx root directory from the public path.
-        target_uri.path = target_uri.path.sub(@config[:static_root].to_s, '')
+        if target_uri.hierarchical?
+          # If present, remove Nginx root directory from the public path.
+          target_uri.path = target_uri.path.sub(@config[:static_root].to_s, '')
 
-        # Chop off last slash for concept URIs.
-        target_uri.path = target_uri.path.chop if concept && target_uri.path.end_with?('/')
+          # Chop off last slash for concept URIs.
+          target_uri.path = target_uri.path.chop if concept && target_uri.path.end_with?('/')
+        end
 
         target_uri.fragment = fragment.delete_prefix('#') if fragment
         target_uri.normalize!
 
-        if absolute || (base_url && URI(base_url).host != target_uri.host) # target_uri.coerce(base_url.to_s).map { |t| t.select(:scheme, :host) }.reduce(:|).count == 2
+        if absolute || !target_uri.hierarchical? || (base_url && URI(base_url).host != target_uri.host)
           target_uri.to_s
         else
-          # target_uri = src_path&.route_to(target_uri)
           target_uri.select(:path, :fragment).compact.join('#')
         end
       end
