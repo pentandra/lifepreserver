@@ -67,6 +67,9 @@ module LifePreserver
 
       # Generate a resource path from a target following RFC3986.
       #
+      # @note Resolves relative-path references to absolute-path references,
+      #   even when the +:absolute+ attribute is false.
+      #
       # @param target [String, Nanoc::Core::CompilationItemView, Nanoc::Core::BasicItemRepView]
       # @param attributes [Hash]
       # @option attributes [Symbol] :rep (:default) the item rep to link to
@@ -112,6 +115,9 @@ module LifePreserver
 
         target_uri = URI.join(base_url || 'relative-ref:', src_path.to_s, path.to_s)
 
+        target_uri.normalize!
+        target_uri.fragment = fragment.delete_prefix('#') if fragment
+
         if target_uri.hierarchical?
           # If present, remove Nginx root directory from the public path.
           target_uri.path = target_uri.path.sub(@config[:static_root].to_s, '')
@@ -119,9 +125,6 @@ module LifePreserver
           # Chop off last slash for concept URIs.
           target_uri.path = target_uri.path.chop if concept && target_uri.path.end_with?('/')
         end
-
-        target_uri.fragment = fragment.delete_prefix('#') if fragment
-        target_uri.normalize!
 
         if absolute || !target_uri.hierarchical? || (base_url && URI(base_url).host != target_uri.host)
           target_uri.to_s

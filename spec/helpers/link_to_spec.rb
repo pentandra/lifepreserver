@@ -92,6 +92,12 @@ RSpec.describe LifePreserver::Helpers::LinkTo, helper: true do
 
         it { is_expected.to eql('<a href="mailto:mail@example.org">Mail</a>') }
       end
+
+      context 'with blank target' do
+        let(:target) { '' }
+
+        it { is_expected.to eql('<a href="/">Text</a>') }
+      end
     end
 
     context 'with rep' do
@@ -239,11 +245,45 @@ RSpec.describe LifePreserver::Helpers::LinkTo, helper: true do
         it { is_expected.to eql('/b/c/target.html#this') }
       end
 
-      context 'with an attribute fragment' do
+      context 'with an blank target and attribute fragment' do
         let(:target) { '' }
         let(:attributes) { { fragment: '#this' } }
 
         it { is_expected.to eql('/b/c/target.html#this') }
+      end
+    end
+
+    context 'with concept' do
+      let(:target) { '/foo/' }
+
+      context 'true' do
+        let(:attributes) { { fragment: 'this', concept: true } }
+
+        it { is_expected.to eql('/foo#this') }
+      end
+
+      context 'false' do
+        let(:attributes) { { fragment: 'this', concept: false } }
+
+        it { is_expected.to eql('/foo/#this') }
+      end
+
+      context 'with empty path' do
+        let(:target) { '' }
+        let(:attributes) { { fragment: 'this', concept: true } }
+
+        it { is_expected.to eql('#this') }
+      end
+
+      context 'with empty path and absolute flag' do
+        let(:target) { '' }
+        let(:attributes) { { fragment: 'this', concept: true, absolute: true } }
+
+        before do
+          ctx.config[:base_url] = base_url
+        end
+
+        it { is_expected.to eql('http://url.base#this') }
       end
     end
   end
