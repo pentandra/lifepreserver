@@ -211,7 +211,7 @@ GEM
     public_suffix (3.0.2)
     pygments.rb (1.2.1)
       multi_json (>= 1.0.0)
-    rack (2.0.4)
+    rack (2.2.3)
     rainbow (3.0.0)
     rainpress (1.0.1)
     rake (12.3.0)
