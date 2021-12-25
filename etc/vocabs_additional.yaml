@@ -123,7 +123,7 @@ vivo:
 
 voaf:
   uri: "http://purl.org/vocommons/voaf#"
-  source: "http://lov.okfn.org/vocommons/voaf/v2.3/voaf_v2.3.rdf"
+  source: "https://lov.linkeddata.es/vocommons/voaf/v2.3/voaf_v2.3.rdf"
 
 yago:
   uri: "http://dbpedia.org/class/yago/"
