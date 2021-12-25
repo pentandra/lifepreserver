@@ -130,13 +130,13 @@ yago:
   strict: false
 
 pentandra:
-  uri: <%= "#{@config[:base_url]}#{@config[:company][:page_path]}#" %>
-  source: <%= "#{config[:output_dir]}#{@config[:static_root]}#{@config[:company][:page_path]}/index.html" %>
+  uri: <%= "#{@config[:base_url]}#{@config[:company_root]}#" %>
+  source: <%= "#{@config[:output_dir]}#{@config[:static_root]}#{@config[:company_root]}/index.html" %>
   strict: false
 
 "pentandra_blog":
-  uri: <%= "#{@config[:base_url]}#{@config[:blog][:path]}#" %>
-  source: <%= "#{@config[:output_dir]}#{@config[:static_root]}#{@config[:blog][:path]}/index.html" %>
+  uri: <%= "#{@config[:base_url]}#{@config[:blog_root]}#" %>
+  source: <%= "#{@config[:output_dir]}#{@config[:static_root]}#{@config[:blog_root]}/index.html" %>
   strict: false
   class_name: PENTANDRABlog
 
