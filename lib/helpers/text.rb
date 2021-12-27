@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
+# HACK: temporary fix for: https://github.com/rails/rails/issues/43851
+require 'active_support/isolated_execution_state'
+
 require 'active_support/core_ext/string/inflections'
 require 'active_support/core_ext/array/conversions'
 require 'phonelib'

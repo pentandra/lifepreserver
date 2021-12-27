@@ -10,17 +10,17 @@
               <% created_at, updated_at = date_or_time(@item.fetch(:created_at)), date_or_time(@item.fetch(:updated_at)) %>
               <% if (published_at = @item[:published_at]) %>
                 <% if published_at == created_at %>
-                  Written and published on <time class="dt-published" property="dc:created schema:dateCreated schema:datePublished" datetime="<%= created_at.iso8601 %>"><%= created_at.to_s(:long) %></time>
+                  Written and published on <time class="dt-published" property="dc:created schema:dateCreated schema:datePublished" datetime="<%= created_at.iso8601 %>"><%= created_at.to_formatted_s(:long) %></time>
                 <% else %>
-                  Written starting <time property="dc:created schema:dateCreated" datetime="<%= created_at.iso8601 %>"><%= created_at.to_s(:long) %></time> and published on <time class="dt-published" property="schema:datePublished" datetime="<%= published_at.iso8601 %>"><%= published_at.to_s(:long) %></time>
+                  Written starting <time property="dc:created schema:dateCreated" datetime="<%= created_at.iso8601 %>"><%= created_at.to_formatted_s(:long) %></time> and published on <time class="dt-published" property="schema:datePublished" datetime="<%= published_at.iso8601 %>"><%= published_at.to_formatted_s(:long) %></time>
                 <% end %>
               <% else%>
-                Written starting <time property="dc:created" datetime="<%= created_at.iso8601 %>"><%= created_at.to_s(:long) %></time> and not yet published
+                Written starting <time property="dc:created" datetime="<%= created_at.iso8601 %>"><%= created_at.to_formatted_s(:long) %></time> and not yet published
               <% end %>
             </li>
             <% if updated_at > created_at %>
               <li>
-                Last Updated <time class="dt-updated" property="dc:modified schema:dateModified" datetime="<%= updated_at.iso8601 %>"><%= updated_at.to_s(:long) %></time>
+                Last Updated <time class="dt-updated" property="dc:modified schema:dateModified" datetime="<%= updated_at.iso8601 %>"><%= updated_at.to_formatted_s(:long) %></time>
               </li>
             <% end %>
           </ul>

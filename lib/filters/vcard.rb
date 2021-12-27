@@ -89,7 +89,7 @@ module LifePreserver
 
         vcard = VCardigan.create
 
-        vcard.rev(attribute_to_time(rev).to_s(:rfc6350_timestamp))
+        vcard.rev(attribute_to_time(rev).to_formatted_s(:rfc6350_timestamp))
         vcard.kind(kind)
         vcard.source(path_to(@item_rep, absolute: true))
 

@@ -29,7 +29,7 @@
 
 \startcolor[white]
 {\bfd \setupinterlinespace <%= @item.fetch(:title) %>\par\blank[line]}
-{\bfb \setupinterlinespace <%= @item.fetch(:updated_at).to_s(:date).ndashed(type: :plain) %>}
+{\bfb \setupinterlinespace <%= @item.fetch(:updated_at).to_formatted_s(:date).ndashed(type: :plain) %>}
 \stopcolor
 
 \startviewerlayer[forprinter]
@@ -38,7 +38,7 @@
 
 \setlayer[monochrome]{\framed[frame=off,width=\paperwidth,height=\paperheight,background={color,logo},backgroundcolor=white]{}}
 
-\setlayer[monochrome]{\framed[frame=off,align=right,top=\vss,bottom=\vss,loffset=\backspace,width=\dimexpr(\backspace+\textwidth),height=\paperheight]{{\bfc \setupinterlinespace <%= @item.fetch(:title) %>\par\blank[line]}{\bfb \setupinterlinespace <%= @item.fetch(:updated_at).to_s(:date).ndashed(type: :plain) %>}}}
+\setlayer[monochrome]{\framed[frame=off,align=right,top=\vss,bottom=\vss,loffset=\backspace,width=\dimexpr(\backspace+\textwidth),height=\paperheight]{{\bfc \setupinterlinespace <%= @item.fetch(:title) %>\par\blank[line]}{\bfb \setupinterlinespace <%= @item.fetch(:updated_at).to_formatted_s(:date).ndashed(type: :plain) %>}}}
 
 \setlayer[monochrome]{\framed[frame=off,align=right,loffset=\dimexpr(\backspace-6pt)\relax,width=\dimexpr(\backspace+\textwidth)\relax,height=\paperheight,top=\vss,bottom=]{\tfx {\inframed[background=color,backgroundcolor=white,frame=off,offset=5pt]{\tt <%= path_to(@item, absolute: true) %>}}\blank[2*big]}}
 

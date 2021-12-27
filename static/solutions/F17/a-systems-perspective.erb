@@ -24,7 +24,7 @@ tags:
     <p class="big" property="schema:description"><%= @item[:description] %></p>
 
     <p class="bigger">
-      <time property="schema:startDate" datetime="<%= @item.fetch(:starts_at).iso8601 %>"><%= @item.fetch(:starts_at).to_s(:long) %></time>--<time property="schema:endDate" datetime="<%= @item.fetch(:ends_at).iso8601 %>"><%= @item.fetch(:ends_at).to_s(:time) %></time>
+      <time property="schema:startDate" datetime="<%= @item.fetch(:starts_at).iso8601 %>"><%= @item.fetch(:starts_at).to_formatted_s(:long) %></time>--<time property="schema:endDate" datetime="<%= @item.fetch(:ends_at).iso8601 %>"><%= @item.fetch(:ends_at).to_formatted_s(:time) %></time>
       in <span property="schema:location" typeof="schema:Place"><span property="schema:name">Berlin, Germany</span></span>,
       in conjunction with <span property="schema:superEvent" resource="#force2017" typeof="schema:Event"><a property="schema:url" href="http://force2017.org/"><span property="schema:name">FORCE2017</span></a></span>
     </p>

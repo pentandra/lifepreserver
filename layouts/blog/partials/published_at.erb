@@ -1,8 +1,8 @@
 <footer class="aside pubdate section">
   <% if (published_at = @item[:published_at]) %>
-    <time class="big" property="schema:datePublished" datetime="<%= date_or_time(published_at).iso8601 %>"><%= published_at.to_s(:date).ndashed %></time>
+    <time class="big" property="schema:datePublished" datetime="<%= date_or_time(published_at).iso8601 %>"><%= published_at.to_formatted_s(:date).ndashed %></time>
   <% else %>
     <% created_at = @item.fetch(:created_at) %>
-    <time class="big draft" property="schema:dateCreated" datetime="<%= date_or_time(created_at).iso8601 %>"><i><%= created_at.to_s(:date).ndashed %></i></time>
+    <time class="big draft" property="schema:dateCreated" datetime="<%= date_or_time(created_at).iso8601 %>"><i><%= created_at.to_formatted_s(:date).ndashed %></i></time>
   <% end %>
 </footer>

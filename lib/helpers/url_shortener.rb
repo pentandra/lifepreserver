@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'shortly'
+require 'new_base_60'
 require 'yaml/store'
 require 'digest/md5'
 

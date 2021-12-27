@@ -18,13 +18,13 @@
 
         <dl id="document-published" class="group">
           <dt class="aside"><div class="close">Published</div></dt>
-          <dd class="bd"><time property="schema:datePublished" datetime="<%= date_or_time(@item.fetch(:created_at)).iso8601 %>"><%= @item.fetch(:created_at).to_s(:db).ndashed %></time></dd>
+          <dd class="bd"><time property="schema:datePublished" datetime="<%= date_or_time(@item.fetch(:created_at)).iso8601 %>"><%= @item.fetch(:created_at).to_formatted_s(:db).ndashed %></time></dd>
         </dl>
 
         <% if @item[:updated_at] > @item[:created_at] then %>
           <dl id="document-modified" class="group">
             <dt class="aside"><div class="close">Modified</div></dt>
-            <dd class="bd"><time property="schema:dateModified" datetime="<%= date_or_time(@item.fetch(:updated_at)).iso8601 %>"><%= @item.fetch(:updated_at).to_s(:db).ndashed %></time></dd>
+            <dd class="bd"><time property="schema:dateModified" datetime="<%= date_or_time(@item.fetch(:updated_at)).iso8601 %>"><%= @item.fetch(:updated_at).to_formatted_s(:db).ndashed %></time></dd>
           </dl>
         <% end %>
 

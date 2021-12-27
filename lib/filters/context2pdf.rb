@@ -8,7 +8,7 @@ module LifePreserver
 
       requires 'open3', 'fileutils'
 
-      class Error < ::Nanoc::Int::Errors::Generic
+      class Error < ::Nanoc::Core::Error
         def initialize(command, exit_code)
           @command   = command
           @exit_code = exit_code

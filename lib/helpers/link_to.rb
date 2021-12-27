@@ -163,7 +163,7 @@ module LifePreserver
           raise Nanoc::Core::TrivialError.new("Cannot build a tag URI to '#{item.identifier}': item has no created_at")
         end
 
-        formatted_date = date_or_time(created_at).to_s(:date)
+        formatted_date = date_or_time(created_at).to_formatted_s(:date)
         hostname, base_dir = %r{^.+?://([^/]+)(.*)$}.match(base_url)[1..2]
 
         "tag:#{hostname},#{formatted_date}:#{base_dir}#{path_to(item, fragment: fragment)}"

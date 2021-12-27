@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
+# HACK: temporary fix for: https://github.com/rails/rails/issues/43851
+require 'active_support/isolated_execution_state'
+
 require 'active_support/core_ext/numeric/time'
 
 require 'data_sources/company'
