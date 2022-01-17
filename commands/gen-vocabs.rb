@@ -30,7 +30,7 @@ class GenVocabs < ::Nanoc::CLI::CommandRunner
     end
 
     vocabs.each do |id, v|
-      next if v[:alias]
+      next if v[:alias] || v[:skip]
 
       puts "Generate lib/vocabs/#{id}.rb"
 
@@ -39,23 +39,24 @@ class GenVocabs < ::Nanoc::CLI::CommandRunner
         File.open("lib/vocabs/#{id}.rb_p", 'w') { |f| f.write v[:patch] }
         cmd += " patch --patch-file lib/vocabs/#{id}.rb_p"
       end
-      cmd += " serialize --uri '#{v[:uri]}' --output-format vocabulary"
+      cmd += " serialize --uri '#{v[:uri]}' --output-format vocabulary --ordered"
       cmd += " --module-name #{v.fetch(:module_name, 'RDF::Vocab')}"
       cmd += " --class-name #{v[:class_name] || id.to_s.upcase}"
       cmd += ' --strict' if v.fetch(:strict, true)
-      cmd += " --extra #{URI.encode(v[:extra].to_json)}" if v[:extra]
+      cmd += ' --noDoc'
+      cmd += " --extra #{URI.encode_www_form_component(v[:extra].to_json)}" if v[:extra]
       cmd += " -o lib/vocabs/#{id}.rb_t"
       cmd += ' "' + v.fetch(:source, v[:uri]) + '"'
 
       puts "  #{cmd}"
 
       begin
-        `#{cmd} && mv lib/vocabs/#{id}.rb_t lib/vocabs/#{id}.rb`
+        %x{#{cmd} && sed 's/\r//g' lib/vocabs/#{id}.rb_t > lib/vocabs/#{id}.rb}
       rescue
         require 'English'
         puts "Failed to load #{id}: #{$ERROR_INFO.message}"
       ensure
-        `rm -f lib/vocabs/#{id}.rb_t lib/vocabs/#{id}.rb_p`
+        %x{rm -f lib/vocabs/#{id}.rb_t lib/vocabs/#{id}.rb_p}
       end
     end
   end
@@ -88,9 +89,9 @@ class GenVocabs < ::Nanoc::CLI::CommandRunner
     view_context = view_context_for(site)
 
     {
-      items: Nanoc::ItemCollectionWithRepsView.new(site.items, view_context),
-      layouts: Nanoc::LayoutCollectionView.new(site.layouts, view_context),
-      config: Nanoc::ConfigView.new(site.config, view_context),
+      items: Nanoc::Core::ItemCollectionWithRepsView.new(site.items, view_context),
+      layouts: Nanoc::Core::LayoutCollectionView.new(site.layouts, view_context),
+      config: Nanoc::Core::ConfigView.new(site.config, view_context),
     }
   end
 end

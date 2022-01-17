@@ -2,11 +2,7 @@
 # frozen_string_literal: true
 # This file generated automatically using rdf vocabulary format from http://purl.org/essglobal/standard/legal-form/
 require 'rdf'
-module RDF::Vocab
-  # @!parse
-  #   # Vocabulary for <http://purl.org/essglobal/standard/legal-form/>
-  #   class ESSGLOBALLegalform < RDF::Vocabulary
-  #   end
-  class ESSGLOBALLegalform < RDF::Vocabulary("http://purl.org/essglobal/standard/legal-form/")
+module LifePreserver::Vocab
+  ESSGlobalLegalform = Class.new(RDF::Vocabulary("http://purl.org/essglobal/standard/legal-form/")) do
   end
 end

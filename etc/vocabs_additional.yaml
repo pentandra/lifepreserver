@@ -15,10 +15,6 @@ c4o:
   uri: "http://purl.org/spar/c4o/"
   source: "http://www.sparontologies.net/ontologies/c4o/source.ttl"
 
-cert:
-  uri: "https://www.w3.org/ns/auth/cert#"
-  source: "http://www.w3.org/ns/auth/cert.n3"
-
 co:
   uri: "http://purl.org/co/"
   source: "var/vocabs/collections.owl"
@@ -30,10 +26,6 @@ cro:
 ctag:
   uri: "http://commontag.org/ns#"
   source: "var/vocabs/ctag_2009-06-08.n3"
-
-dbo:
-  uri: "http://dbpedia.org/ontology/"
-  source: "http://mappings.dbpedia.org/server/ontology/dbpedia.owl"
 
 dbr:
   uri: "http://dbpedia.org/resource/"
@@ -65,25 +57,25 @@ essglobal:
   uri: "http://purl.org/essglobal/standard/activities/"
   source: "http://www.maltas.org/ess/standard/activities.skos"
   strict: false
-  class_name: "ESSGLOBALActivities"
+  class_name: "ESSGlobalActivities"
 
 "essglobal_legalform":
   uri: "http://purl.org/essglobal/standard/legal-form/"
   source: "http://www.maltas.org/ess/standard/legal-form.skos"
   strict: false
-  class_name: "ESSGLOBALLegalform"
+  class_name: "ESSGlobalLegalform"
 
 "essglobal_qualifiers":
   uri: "http://purl.org/essglobal/standard/qualifiers/"
   source: "http://www.maltas.org/ess/standard/qualifiers.skos"
   strict: false
-  class_name: "ESSGLOBALQualifiers"
+  class_name: "ESSGlobalQualifiers"
 
 "essglobal_typeoflabour":
   uri: "http://purl.org/essglobal/standard/type-of-labour/"
   source: "http://www.maltas.org/ess/standard/type-of-labour.skos"
   strict: false
-  class_name: "ESSGLOBALTypeoflabour"
+  class_name: "ESSGlobalTypeoflabour"
 
 fabio:
   uri: "http://purl.org/spar/fabio/"
@@ -111,9 +103,6 @@ profile:
 rov:
   uri: "http://www.w3.org/ns/regorg#"
 
-sioct:
-  uri: "http://rdfs.org/sioc/types#"
-
 vann:
   uri: "http://purl.org/vocab/vann/"
   source: "var/vocabs/vann.ttl"
@@ -133,16 +122,17 @@ pentandra:
   uri: <%= "#{@config[:base_url]}#{@config[:company_root]}#" %>
   source: <%= "#{@config[:output_dir]}#{@config[:static_root]}#{@config[:company_root]}/index.html" %>
   strict: false
+  class_name: Pentandra
 
 "pentandra_blog":
   uri: <%= "#{@config[:base_url]}#{@config[:blog_root]}#" %>
   source: <%= "#{@config[:output_dir]}#{@config[:static_root]}#{@config[:blog_root]}/index.html" %>
   strict: false
-  class_name: PENTANDRABlog
+  class_name: PentandraBlog
 
 "pentandra_website":
   uri: <%= "#{@config[:base_url]}#" %>
   source: <%= "#{@config[:output_dir]}#{@config[:static_root]}/index.html" %>
   strict: false
-  class_name: PENTANDRAWebsite
+  class_name: PentandraWebsite
 ...

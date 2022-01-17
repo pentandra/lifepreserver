@@ -189,7 +189,7 @@ changefreq: monthly
 
       <h3 class="flush">Standard Vocabularies</h3>
 
-      <%= render('/partials/vocab_metadata.*', group: :standard) %>
+      <%= render('/partials/vocab_metadata.*', category: :standard) %>
 
     </div>
 
@@ -200,7 +200,7 @@ changefreq: monthly
 
       <h3 class="flush">Business Vocabularies</h3>
 
-      <%= render('/partials/vocab_metadata.*', group: :business) %>
+      <%= render('/partials/vocab_metadata.*', category: :business) %>
 
     </div>
 
@@ -211,16 +211,27 @@ changefreq: monthly
 
       <h3 class="flush">Document Vocabularies</h3>
 
-      <%= render('/partials/vocab_metadata.*', group: :document) %>
+      <%= render('/partials/vocab_metadata.*', category: :document) %>
 
     </div>
 
   </section>
-  <section id="technical-vocabularies" class="section">
+  <section id="social-vocabularies" class="section">
 
     <div class="bd">
 
-      <h3 class="flush">Technical Vocabularies</h3>
+      <h3 class="flush">Social Web Vocabularies</h3>
+
+      <%= render('/partials/vocab_metadata.*', category: :social) %>
+
+    </div>
+
+  </section>
+  <section id="meta-vocabularies" class="section">
+
+    <div class="bd">
+
+      <h3 class="flush">Meta Vocabularies</h3>
 
       <p>
 
@@ -231,7 +242,7 @@ changefreq: monthly
 
       </p>
 
-      <%= render('/partials/vocab_metadata.*', group: :technical) %>
+      <%= render('/partials/vocab_metadata.*', category: :meta) %>
 
     </div>
 

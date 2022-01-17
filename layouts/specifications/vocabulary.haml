@@ -13,7 +13,7 @@
     %title
       = ont["rdfs:label"].first['@value']
     %link{rel: "stylesheet", href: "/css/specifications.css"}
-  - pfx = RDF::Vocabulary.find(ont['@id']).__name__.split(':').last.downcase
+  - pfx = ont['vann:preferredNamespacePrefix']&.first['@value'] || RDF::Vocabulary.find(ont['@id']).__name__.split(':').last.downcase
   - pfxs = prefixes.inject([]) {|m, (k,v)| m << "#{k}: #{v}"}.join(' ')
   - typeof = ont['@type'].map {|t| RDF::URI(t).pname}.join(' ')
   %body{resource: ont['@id'], typeof: typeof, prefix: pfxs}

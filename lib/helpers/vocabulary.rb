@@ -27,8 +27,8 @@ module LifePreserver
       # Finds a vocabulary or vocabularies for the given name.
       #
       # @param [Array<String, Symbol>] args The vocabulary prefixes or prefix
-      #   groups. If a group name, it should return the group. If a prefix,
-      #   it should return a single vocabulary.
+      #   categories. If a category name, it should return the entire category of
+      #   vocabularies. If a prefix, it should return a single vocabulary.
       #
       # @return [Array<Nanoc::Core::BasicItemView>] Any applicable items of kind +vocabulary+.
       def vocabularies_for(*args)
@@ -37,7 +37,7 @@ module LifePreserver
         Array(args).flatten.each do |arg|
           vocabularies_root = @config.fetch(:vocabularies_root)
           vocabs = @items.find_all(File.join(vocabularies_root, arg.to_s, '*'))
-          # Look for a single prefix if no group is found
+          # Look for a single prefix if no category is found
           vocabs = vocabs.present? ? vocabs : @items[File.join(vocabularies_root, '*', arg.to_s)]
 
           if vocabs.blank?

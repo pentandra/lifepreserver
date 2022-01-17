@@ -10,22 +10,43 @@ module LifePreserver
     class Vocabularies < Nanoc::DataSource
       identifier :vocabularies
 
-      def up
-        @voaf_metadata =
-          File.open('var/voaf_metadata.yaml') do |file|
-            YAML.safe_load(file.read,
-                           filename: file.path,
-                           permitted_classes: [Symbol])
-          end
+      class UnknownVocabularyPrefix < ::Nanoc::Core::Error
+        def initialize(prefix)
+          super("A vocabulary with the prefix “#{prefix}” (specified in the site's configuration file) was not found.")
+        end
       end
 
+      def up
+        load_extra_metadata(@config[:extra_metadata])
+
+        local_vocabs =
+          LifePreserver::Vocab.constants
+                              .map(&LifePreserver::Vocab.method(:const_get))
+                              .select { |constant| constant.is_a? Class }
+        register_vocabularies(local_vocabs, @config[:prefix_overrides])
+
+        if (categories = @config[:categories])
+          prefixes = categories.values.flatten
+          RDF::Vocabulary.limit_vocabs(*prefixes.map(&:to_sym))
+        end
+      end
+
+      # Returns the collection of Vocabulary items, one per vocabulary prefix.
+      #
+      # @raise [UnknownVocabularyPrefix] if a vocabulary prefix specified in site config
+      #   does not have a mapping to an {RDF::Vocabulary} class.
+      # @return [Enumerable] The collection of items.
       def items
         items = []
 
-        @config[:prefixes_used].each do |group_name, group|
-          group.each do |prefix|
-            vocab = RDF::Vocabulary.find_by_prefix(prefix)
-            items << vocabulary_to_item(vocab, group_name)
+        @config.fetch(:categories, {}).each do |category, prefixes|
+          prefixes.each do |prefix|
+            # TODO: submit patch for RDF::Vocabulary to handle this edge case?
+            vocab = RDF::Vocabulary.vocab_map[prefix == 'rdf' ? :rdfv : prefix.to_sym]
+            raise UnknownVocabularyPrefix.new(prefix) unless vocab
+
+            vocab_class = vocab.fetch(:class, RDF::Vocabulary.from_sym(vocab.fetch(:class_name).to_sym))
+            items << vocabulary_to_item(prefix, vocab_class, category)
           end
         end
 
@@ -34,14 +55,13 @@ module LifePreserver
 
       protected
 
-      def vocabulary_to_item(vocab, group_name)
-        prefix = vocab.__prefix__
-        metadata = extract_metadata_from(vocab)
+      def vocabulary_to_item(prefix, vocab, category)
+        metadata = find_vocab_metadata(vocab, @extra_metadata)
 
         attributes = {
           kind: 'vocabulary',
           prefix: prefix,
-          group: group_name,
+          category: category,
           namespace_uri: vocab.to_uri.value,
           is_hidden: true,
         }
@@ -49,14 +69,49 @@ module LifePreserver
         new_item(
           '',
           attributes.merge(metadata),
-          File.join(File::SEPARATOR, group_name.to_s.parameterize, prefix.to_s.parameterize),
+          File.join(File::SEPARATOR, category.to_s.parameterize, prefix.to_s.parameterize),
         )
       end
 
-      # @return [Hash]
-      def extract_metadata_from(vocab)
+      # Clean up punctuation of given text. Start with capital letter
+      # and end with a full stop if it doesn't already end with some sort of
+      # terminal punctuation.
+      def cleanup(text)
+        text = text.upcase_first
+        text[/[.!?]$/] ? text : text << '.'
+      end
+
+      # Return the URI of the given vocabulary.
+      #
+      # @param vocab [RDF::Vocabulary] The vocabulary.
+      # @return [String]
+      def vocab_uri(vocab)
+        # HACK: until we have better handling of ontology definitions at a
+        # different uri than the vocabulary namespace.
+        if vocab == RDF::Vocab::VOID
+          'http://vocab.deri.ie/void'
+        else
+          vocab.ontology ? vocab.ontology.value : vocab.to_uri.value
+        end
+      end
+
+      # Find the descriptive metadata of the given vocabulary, searching
+      # within the given (normalized) metadata.
+      #
+      # Provided metadata is expected to have the following form:
+      #
+      # @example YAML vocabulary metadata format
+      #   vocab_uri:
+      #     title: Vocab title
+      #     description: Vocab description
+      #
+      # @param vocab [RDF::Vocabulary] The vocabulary.
+      # @return [Hash] Descriptive metadata for the given vocabulary, if found.
+      #   Otherwise, an empty Hash.
+      def find_vocab_metadata(vocab, extra_metadata = {})
         vocab_uri = vocab_uri(vocab)
-        metadata = Hash(@voaf_metadata[vocab_uri.to_sym] || @voaf_metadata[vocab_uri.split(%r{[/#]$})[0].to_sym])
+
+        metadata = Hash(extra_metadata[vocab_uri.to_sym] || extra_metadata[vocab_uri.split(%r{[/#]$})[0].to_sym])
         metadata[:vocab_uri] = vocab_uri
 
         if metadata.key?(:description)
@@ -66,18 +121,46 @@ module LifePreserver
         metadata
       end
 
-      def cleanup(text)
-        text = text.upcase_first
-        text[/[.!?]$/] ? text : text << '.'
+      # Load descriptive metadata for RDF vocabularies into the class.
+      #
+      # @note called by {#up} when the site is loading.
+      # @param metadata [Hash,String] the extra metadata. If a String, a
+      #   relative path to a YAML file, which will be loaded. If Hash, is used
+      #   directly as metadata.
+      # @return [Hash{Symbol=>Symbol}] the extra metadata.
+      def load_extra_metadata(metadata)
+        return if metadata.nil? || metadata.empty?
+
+        @extra_metadata =
+          case metadata
+          when String
+            File.open(metadata) do |file|
+              YAML.safe_load(file.read,
+                             filename: file.path,
+                             permitted_classes: [Symbol])
+            end
+          when Hash
+            metadata
+          end
       end
 
-      def vocab_uri(vocab)
-        # HACK: until we have better handling of ontology definitions at a
-        # different uri than the vocabulary namespace.
-        if vocab == RDF::Vocab::VOID
-          'http://vocab.deri.ie/void'
-        else
-          vocab.ontology ? vocab.ontology.value : vocab.to_uri.value
+      # Register local vocabularies with the Ruby RDF framework.
+      #
+      # Sets the vocabulary class name if specified in the {:prefix_overrides}
+      # key of the data source configuration.
+      #
+      # @note called by {#up} when the site is loading.
+      #
+      # @param vocabs [Array<RDF::Vocabulary>] Vocabulary classes to register.
+      # @param prefixes [Hash{Symbol=>String}] Optional prefixes with to register
+      #   the vocabularies.
+      #
+      # @return [void]
+      def register_vocabularies(vocabs, prefixes = {})
+        Array(vocabs).each do |vocab|
+          class_name = vocab.__name__.to_s.demodulize
+          prefix = prefixes[class_name.to_sym] || class_name.downcase
+          RDF::Vocabulary.register(prefix.to_sym, vocab, class_name: class_name)
         end
       end
     end

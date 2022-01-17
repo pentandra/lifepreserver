@@ -59,7 +59,7 @@ module LifePreserver
 
         repository = RDF::Repository.new
 
-        RDF::Reader.for(input.to_sym).new(+assigns[:content], options) { |reader| repository << reader }
+        RDF::Reader.for(input.to_sym).new(+assigns[:content], **options) { |reader| repository << reader }
 
         if repository.has_statement?(RDF::Statement(RDF::URI.new(base_uri), RDF.type, RDF::OWL.Ontology))
           vocab = RDF::Vocabulary.find(base_uri) || RDF::Vocabulary.from_graph(repository, url: base_uri, class_name: prefix.to_s.upcase)
@@ -76,10 +76,10 @@ module LifePreserver
 
             vocab.to_html(graph: repository, prefixes: prefixes, template: assigns[:layout][:filename])
           else
-            repository.dump(output_format, options)
+            repository.dump(output_format, **options)
           end
         else
-          repository.dump(output_format, options)
+          repository.dump(output_format, **options)
         end
       end
 

@@ -2,51 +2,47 @@
 # frozen_string_literal: true
 # This file generated automatically using rdf vocabulary format from http://purl.org/essglobal/standard/type-of-labour/
 require 'rdf'
-module RDF::Vocab
-  # @!parse
-  #   # Vocabulary for <http://purl.org/essglobal/standard/type-of-labour/>
-  #   class ESSGLOBALTypeoflabour < RDF::Vocabulary
-  #   end
-  class ESSGLOBALTypeoflabour < RDF::Vocabulary("http://purl.org/essglobal/standard/type-of-labour/")
+module LifePreserver::Vocab
+  ESSGlobalTypeoflabour = Class.new(RDF::Vocabulary("http://purl.org/essglobal/standard/type-of-labour/")) do
 
     # Ontology definition
     ontology :"http://purl.org/essglobal/standard/type-of-labour/",
-      "dc11:contributor": ["Alan Tygel (alantygel@gmail.com)".freeze, "Ana Alice Baptista (analice@dsi.uminho.pt)".freeze, "Craig Borowiak (cborowiakhaverford.edu)".freeze, "Daniel Tygel (dtygel@gmail.com)".freeze, "Jason Nardi (jason.nardi@gmail.com)".freeze],
-      "dc11:creator": "Mariana Malta (mariana@iscap.ipp.pt)".freeze,
-      "dc11:description": "SSE Initiative or SSE Network Legal form controlled vocabulary for SSE".freeze,
-      "dc11:language": "en-en".freeze,
-      "dc11:publisher": "http://www.ripess.org/".freeze,
-      "dc11:relation": "http://www.dsi.uminho.pt/".freeze,
-      "dc11:title": "Legal Form".freeze,
-      "dc:created": "2014-02-06".freeze,
-      "dc:publisher": "RIPESS-ESSGlobal".freeze,
-      type: "skos:ConceptScheme".freeze
+      "http://purl.org/dc/elements/1.1/contributor": ["Alan Tygel (alantygel@gmail.com)".freeze, "Ana Alice Baptista (analice@dsi.uminho.pt)".freeze, "Craig Borowiak (cborowiakhaverford.edu)".freeze, "Daniel Tygel (dtygel@gmail.com)".freeze, "Jason Nardi (jason.nardi@gmail.com)".freeze],
+      "http://purl.org/dc/elements/1.1/creator": "Mariana Malta (mariana@iscap.ipp.pt)".freeze,
+      "http://purl.org/dc/elements/1.1/description": "SSE Initiative or SSE Network Legal form controlled vocabulary for SSE".freeze,
+      "http://purl.org/dc/elements/1.1/language": "en-en".freeze,
+      "http://purl.org/dc/elements/1.1/publisher": "http://www.ripess.org/".freeze,
+      "http://purl.org/dc/elements/1.1/relation": "http://www.dsi.uminho.pt/".freeze,
+      "http://purl.org/dc/elements/1.1/title": "Legal Form".freeze,
+      "http://purl.org/dc/terms/created": "2014-02-06".freeze,
+      "http://purl.org/dc/terms/publisher": "RIPESS-ESSGlobal".freeze,
+      type: "http://www.w3.org/2004/02/skos/core#ConceptScheme".freeze
 
     # Extra definitions
     term :"#T1",
-      inScheme: "essglobaltypeoflabour:".freeze,
+      "http://www.w3.org/2004/02/skos/core#scopeNote": "".freeze,
+      inScheme: "http://purl.org/essglobal/standard/type-of-labour/".freeze,
       prefLabel: ["".freeze, "Associative".freeze],
-      "skos:scopeNote": "".freeze,
-      type: "skos:Concept".freeze
+      type: "http://www.w3.org/2004/02/skos/core#Concept".freeze
     term :"#T2",
-      inScheme: "essglobaltypeoflabour:".freeze,
+      "http://www.w3.org/2004/02/skos/core#scopeNote": "".freeze,
+      inScheme: "http://purl.org/essglobal/standard/type-of-labour/".freeze,
       prefLabel: ["".freeze, "Subordinate".freeze],
-      "skos:scopeNote": "".freeze,
-      type: "skos:Concept".freeze
+      type: "http://www.w3.org/2004/02/skos/core#Concept".freeze
     term :"#T3",
-      inScheme: "essglobaltypeoflabour:".freeze,
+      "http://www.w3.org/2004/02/skos/core#scopeNote": "".freeze,
+      inScheme: "http://purl.org/essglobal/standard/type-of-labour/".freeze,
       prefLabel: ["".freeze, "Voluntary Work".freeze],
-      "skos:scopeNote": "".freeze,
-      type: "skos:Concept".freeze
+      type: "http://www.w3.org/2004/02/skos/core#Concept".freeze
     term :"#T4",
-      inScheme: "essglobaltypeoflabour:".freeze,
+      "http://www.w3.org/2004/02/skos/core#scopeNote": "".freeze,
+      inScheme: "http://purl.org/essglobal/standard/type-of-labour/".freeze,
       prefLabel: ["".freeze, "Reproductive Labour/Care Work".freeze],
-      "skos:scopeNote": "".freeze,
-      type: "skos:Concept".freeze
+      type: "http://www.w3.org/2004/02/skos/core#Concept".freeze
     term :"#T5",
-      inScheme: "essglobaltypeoflabour:".freeze,
+      "http://www.w3.org/2004/02/skos/core#scopeNote": "".freeze,
+      inScheme: "http://purl.org/essglobal/standard/type-of-labour/".freeze,
       prefLabel: ["".freeze, "Externally hired ".freeze],
-      "skos:scopeNote": "".freeze,
-      type: "skos:Concept".freeze
+      type: "http://www.w3.org/2004/02/skos/core#Concept".freeze
   end
 end
