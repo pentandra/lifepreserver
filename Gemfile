@@ -17,6 +17,7 @@ gem 'locale'
 gem 'nanoc'              # for compiling the site
 gem 'nanoc-cachebuster', git: 'https://github.com/cdchapman/nanoc-cachebuster', branch: 'nanoc-4'
 gem 'net-ldap'
+gem 'new_base_60'        # for URL shortening
 gem 'nokogiri'           # for parsing HTML
 gem 'pandoc-ruby'        # for benefit reports in ConTeXt
 gem 'phonelib'           # for parsing phone numbers
@@ -25,7 +26,6 @@ gem 'rainpress'          # for compact CSS
 gem 'rest-client'        # for downloads of external resources
 gem 'rqrcode'            # for qrcodes
 gem 'rubypants-unicode'
-gem 'new_base_60'        # for URL shortening
 gem 'uglifier'           # for compact JavaScript
 gem 'vcardigan'          # for vCards
 
