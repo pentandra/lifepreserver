@@ -136,3 +136,9 @@ RSpec.shared_context 'with tmp dir' do
 
   attr_reader :tmp_dir
 end
+
+RSpec.configure do |config|
+  config.expect_with :rspec do |expectations|
+    expectations.syntax = :expect
+  end
+end
