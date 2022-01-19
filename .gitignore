@@ -12,4 +12,5 @@ tmp/
 *.gem
 coverage
 .yardoc
+doc/
 var/company.ldif

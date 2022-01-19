@@ -1,0 +1,5 @@
+--no-private
+--protected
+--title "LifePreserver Project"
+lib/**/*.rb -
+README.md METADATA.md URI_DESIGN.md CONTRIBUTING.md LICENSE 
