@@ -6,7 +6,7 @@ output.diff
 crash.log
 *.autosave
 *.bak
-items/static/assets/components/
+static/assets/components/
 tmp/
 .bundle
 *.gem
