@@ -10,7 +10,13 @@ module LifePreserver
     class Vocabularies < Nanoc::DataSource
       identifier :vocabularies
 
-      class UnknownVocabularyPrefix < ::Nanoc::Core::Error
+      class UnknownVocabulary < ::Nanoc::Core::TrivialError
+        def initialize(uri)
+          super("A vocabulary with the uri “#{uri}” (specified in the site's configuration file) was not found.")
+        end
+      end
+
+      class UnknownVocabularyPrefix < ::Nanoc::Core::TrivialError
         def initialize(prefix)
           super("A vocabulary with the prefix “#{prefix}” (specified in the site's configuration file) was not found.")
         end
@@ -23,7 +29,9 @@ module LifePreserver
           LifePreserver::Vocab.constants
                               .map(&LifePreserver::Vocab.method(:const_get))
                               .select { |constant| constant.is_a? Class }
-        register_vocabularies(local_vocabs, @config[:prefix_overrides])
+        register_vocabularies(local_vocabs)
+
+        register_prefixes(@config[:prefix_overrides])
 
         if (categories = @config[:categories])
           prefixes = categories.values.flatten
@@ -152,15 +160,29 @@ module LifePreserver
       # @note called by {#up} when the site is loading.
       #
       # @param vocabs [Array<RDF::Vocabulary>] Vocabulary classes to register.
-      # @param prefixes [Hash{Symbol=>String}] Optional prefixes with to register
-      #   the vocabularies.
       #
       # @return [void]
-      def register_vocabularies(vocabs, prefixes = {})
+      def register_vocabularies(vocabs)
         Array(vocabs).each do |vocab|
           class_name = vocab.__name__.to_s.demodulize
-          prefix = prefixes[class_name.to_sym] || class_name.downcase
+          prefix = class_name.downcase
           RDF::Vocabulary.register(prefix.to_sym, vocab, class_name: class_name)
+        end
+      end
+
+      # Register prefixes with the Ruby RDF framework.
+      #
+      # @note called by {#up} when the site is loading.
+      #
+      # @raise [UnknownVocabulary] if an {RDF::Vocabulary} with the uri specified in 
+      #   site config is not found.
+      # @param prefixes [Hash{String,Symbol=>String}] Mapping of URI=>prefix pairs.
+      # @return [void]
+      def register_prefixes(prefixes)
+        Hash(prefixes).each do |uri, prefix|
+          vocab = RDF::Vocabulary.find(uri.to_s)
+          raise UnknownVocabulary.new(uri.to_s) unless vocab
+          vocab.__prefix__ = prefix.to_sym
         end
       end
     end

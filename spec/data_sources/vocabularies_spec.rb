@@ -7,6 +7,7 @@ module LifePreserver
   module DataSources
     class Vocabularies
       public :register_vocabularies,
+             :register_prefixes,
              :find_vocab_metadata,
              :load_extra_metadata,
              :cleanup
@@ -20,11 +21,10 @@ RSpec.describe LifePreserver::DataSources::Vocabularies, site: true do
   let(:site) { Nanoc::Core::SiteLoader.new.new_from_cwd }
 
   describe '#register_vocabularies' do
-    subject! { data_source.register_vocabularies(vocabs, prefix_overrides) }
+    subject! { data_source.register_vocabularies(vocabs) }
 
     let(:example_uri) { 'https://example/ns#' }
-    let(:vocabs) { [EXAMPLE = Class.new(RDF::Vocabulary(example_uri))] }
-    let(:prefix_overrides) { {} }
+    let(:vocabs) { [stub_const('EXAMPLE', Class.new(RDF::Vocabulary(example_uri)))] }
 
     context 'with local vocabularies' do
       it 'will register local vocabularies' do
@@ -40,32 +40,16 @@ RSpec.describe LifePreserver::DataSources::Vocabularies, site: true do
       end
     end
 
-    context 'with prefix overrides' do
-      let(:prefix_overrides) { { EXAMPLE: 'ex' } }
-
-      it 'will register local vocabularies' do
-        expect(RDF::Vocabulary.find_term(example_uri)).not_to be_nil
-      end
-
-      it 'will register the overridden prefix in the vocab map' do
-        expect(RDF::Vocabulary.vocab_map.key?(:ex)).to be true
-      end
-
-      xit 'will register the overridden prefix as the vocab default' do
-        expect(RDF::Vocabulary.find_term(example_uri).pname).to start_with('ex:')
-      end
-    end
-
     context 'with vocab that defines a `name` property' do
       let(:vocabs) do
         [
-          TEST = Class.new(RDF::Vocabulary('https://test/ns#')) do
-            property :name,
-              comment: 'This is a data property',
-              label: 'name',
-              range: 'http://www.w3.org/2001/XMLSchema#string',
-              type: 'http://www.w3.org/2002/07/owl#DatatypeProperty'
-          end,
+          stub_const('TEST', Class.new(RDF::Vocabulary('https://test/ns#')) do
+            property(:name,
+                     comment: 'This is a data property',
+                     label: 'name',
+                     range: 'http://www.w3.org/2001/XMLSchema#string',
+                     type: 'http://www.w3.org/2002/07/owl#DatatypeProperty')
+          end),
         ]
       end
 
@@ -73,9 +57,53 @@ RSpec.describe LifePreserver::DataSources::Vocabularies, site: true do
         expect(RDF::Vocabulary.vocab_map.key?(:test)).to be true
       end
 
-      it 'will register the correct prefix as the vocab default' do
+      it 'will locate the property using pname' do
+        expect(RDF::Vocabulary.expand_pname('test:name')).to eq('https://test/ns#name')
+      end
+
+      it 'will set the correct prefix as the vocab default' do
         expect(RDF::Vocabulary.find_term('https://test/ns#name').pname).to eq('test:name')
       end
+    end
+  end
+
+  describe '#register_prefixes' do
+    subject! { data_source.register_prefixes(prefix_overrides) }
+
+    let(:example_uri) { 'https://example/ns#' }
+    let(:vocab) { stub_const('EXAMPLE', Class.new(RDF::Vocabulary(example_uri))) }
+
+    before { RDF::Vocabulary.register(:example, vocab) }
+
+    context 'without prefix overrides' do
+      let(:prefix_overrides) { {} }
+
+      it 'will register vocabulary with default prefix' do
+        expect(RDF::Vocabulary.find_term(example_uri).pname).to start_with('example:')
+      end
+    end
+
+    context 'with prefix overrides' do
+      let(:prefix_overrides) { Hash[example_uri, 'ex'] }
+
+      it 'will register the overridden prefix in the vocab map' do
+        expect(RDF::Vocabulary.vocab_map.key?(:ex)).to be true
+      end
+
+      it 'will retain the default prefix in the vocab map for backwards lookups' do
+        expect(RDF::Vocabulary.vocab_map.key?(:example)).to be true
+      end
+
+      it 'will register the overriding prefix as the vocab prefix' do
+        expect(RDF::Vocabulary.find_term(example_uri).pname).to start_with('ex:')
+      end
+
+      it 'will map to the overriding prefix when given original prefix' do
+        expect(RDF::Vocabulary.expand_pname('example:').pname).to start_with('ex:')
+      end
+    end
+
+    context 'with non-existent URIs' do
     end
   end
 
@@ -83,7 +111,7 @@ RSpec.describe LifePreserver::DataSources::Vocabularies, site: true do
     subject(:metadata) { data_source.find_vocab_metadata(vocab, extra_metadata) }
 
     let(:example_uri) { 'https://example/ns#' }
-    let(:vocab) { EXAMPLE = Class.new(RDF::Vocabulary(example_uri)) }
+    let(:vocab) { stub_const('EXAMPLE', Class.new(RDF::Vocabulary(example_uri))) }
     let(:extra_metadata) { {} }
 
     context 'without extra metadata' do

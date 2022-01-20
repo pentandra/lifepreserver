@@ -54,6 +54,10 @@ data_sources:
   - type: vocabularies
     items_root: &vocabularies_root /_vocabularies
     extra_metadata: 'var/voaf_metadata.yaml'
+    prefix_overrides:
+      :https://pentandra.com#: p5web
+      :https://pentandra.com/company#: p5inc
+      :https://pentandra.com/blog#: p5blog
     categories:
       standard:   [ cc, ctag, dc, foaf, owl, pav, prov, rdf, rdfs, schema, sh, sioc, skos, xhv ]
       business:   [ essglobal, fea, org, rov, vcard ]
