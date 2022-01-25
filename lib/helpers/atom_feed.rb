@@ -104,7 +104,7 @@ module LifePreserver
           xml.instruct!
           xml.feed(xmlns: 'http://www.w3.org/2005/Atom', 'xml:base' => base_url) do
             # Add primary attributes
-            xml.id(id || tag_uri_for(@item))
+            xml.id(@id || tag_uri_for(@item))
             xml.title(@title)
 
             # Add date
@@ -215,7 +215,7 @@ module LifePreserver
         # Fill builder
         builder.id                = params[:id]
         builder.limit             = params.fetch(:limit, 5)
-        builder.relevant_entries  = params.fetch(:entries, [])
+        builder.relevant_entries  = params.fetch(:entries, weblog)
         builder.preserve_order    = params.fetch(:preserve_order, false)
         builder.content_proc      = params.fetch(:content_proc, ->(a) { a.compiled_content(snapshot: :pre) })
         builder.excerpt_proc      = params.fetch(:excerpt_proc, ->(a) { a[:excerpt] })
@@ -241,7 +241,7 @@ module LifePreserver
       #
       # @return [String] The URL of the feed.
       def feed_url
-        @item.fetch(:feed_url) { path_to(@item, absolute: true) }
+        @item[:feed_url] || path_to(@item, absolute: true)
       end
 
       # Fetch an alternate URL of the feed item.
@@ -262,7 +262,7 @@ module LifePreserver
       #
       # @return [String] The alternate URL of the feed.
       def feed_alternate_url
-        @item.fetch(:alternate_url) do
+        @item[:alternate_url] || begin
           feed_parent = File.dirname(path_to(@item))
           index_path = File::SEPARATOR
           path_to(File.join(feed_parent, index_path), absolute: true)

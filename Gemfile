@@ -19,7 +19,7 @@ gem 'nanoc-cachebuster', git: 'https://github.com/cdchapman/nanoc-cachebuster', 
 gem 'net-ldap'
 gem 'new_base_60'        # for URL shortening
 gem 'nokogiri'           # for parsing HTML
-gem 'pandoc-ruby'        # for benefit reports in ConTeXt
+gem 'pandoc-ruby'        # for document conversion and benefit reports in ConTeXt
 gem 'phonelib'           # for parsing phone numbers
 gem 'pragmatic_segmenter'
 gem 'rainpress'          # for compact CSS
@@ -44,6 +44,7 @@ end
 group :test, optional: true do
   gem 'fuubar'
   gem 'minitest'
+  gem 'mocha'
   gem 'nanoc-spec'
   gem 'rake'
   gem 'rspec'
