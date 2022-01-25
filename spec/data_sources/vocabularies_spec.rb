@@ -68,7 +68,7 @@ RSpec.describe LifePreserver::DataSources::Vocabularies, site: true do
   end
 
   describe '#register_prefixes' do
-    subject! { data_source.register_prefixes(prefix_overrides) }
+    subject { data_source.register_prefixes(prefix_overrides) }
 
     let(:example_uri) { 'https://example/ns#' }
     let(:vocab) { stub_const('EXAMPLE', Class.new(RDF::Vocabulary(example_uri))) }
@@ -79,12 +79,15 @@ RSpec.describe LifePreserver::DataSources::Vocabularies, site: true do
       let(:prefix_overrides) { {} }
 
       it 'will register vocabulary with default prefix' do
+        subject
         expect(RDF::Vocabulary.find_term(example_uri).pname).to start_with('example:')
       end
     end
 
     context 'with prefix overrides' do
       let(:prefix_overrides) { Hash[example_uri, 'ex'] }
+
+      before { subject }
 
       it 'will register the overridden prefix in the vocab map' do
         expect(RDF::Vocabulary.vocab_map.key?(:ex)).to be true
@@ -103,7 +106,12 @@ RSpec.describe LifePreserver::DataSources::Vocabularies, site: true do
       end
     end
 
-    context 'with non-existent URIs' do
+    context 'with non-existent vocabularies' do
+      let(:prefix_overrides) { Hash['https://nonexistent/ns#', 'ne'] }
+
+      it 'raises' do
+         expect { subject }.to raise_error(::LifePreserver::DataSources::Vocabularies::UnknownVocabulary)
+      end
     end
   end
 
