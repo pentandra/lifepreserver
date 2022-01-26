@@ -17,7 +17,6 @@ require 'nanoc/cachebuster'
 # Nanoc helpers to include in a global context
 use_helper Nanoc::Helpers::Capturing
 use_helper Nanoc::Helpers::Rendering
-use_helper Nanoc::Helpers::XMLSitemap
 use_helper Nanoc::Helpers::CacheBusting
 use_helper Nanoc::Helpers::Filtering
 
@@ -45,6 +44,7 @@ use_helper LifePreserver::Helpers::Dependencies
 use_helper LifePreserver::Helpers::Proposals
 use_helper LifePreserver::Helpers::ChildParent
 use_helper LifePreserver::Helpers::People
+use_helper LifePreserver::Helpers::XMLSitemap
 
 require 'phonelib'
 
