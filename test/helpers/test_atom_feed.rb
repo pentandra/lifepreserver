@@ -8,7 +8,7 @@ module LifePreserver
   module Helpers
     # Adapted from Nanoc's tests for its blogging helper.
     # @see https://github.com/nanoc/nanoc/blob/main/nanoc/test/helpers/test_blogging.rb Nanoc::Helpers::BloggingTest
-    class AtomFeedTest < LifePreserver::TestCase
+    class AtomFeedTest < Nanoc::TestCase
       include LifePreserver::Helpers::AtomFeed
       include LifePreserver::Helpers::Text
 

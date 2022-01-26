@@ -7,7 +7,7 @@ module LifePreserver
   module Helpers
     # Adapted from Nanoc's tests for its sitemap helper.
     # @see https://github.com/nanoc/nanoc/blob/main/nanoc/test/helpers/test_xml_sitemap.rb Nanoc::Helpers::XMLSitemapTest
-    class XMLSitemapTest < LifePreserver::TestCase
+    class XMLSitemapTest < Nanoc::TestCase
       include LifePreserver::Helpers::XMLSitemap
 
       def setup

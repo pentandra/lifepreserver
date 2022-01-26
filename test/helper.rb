@@ -239,10 +239,8 @@ module Nanoc::TestHelpers
   end
 end
 
-module LifePreserver
-  class TestCase < Minitest::Test
-    include Nanoc::TestHelpers
-  end
+class Nanoc::TestCase < Minitest::Test
+  include Nanoc::TestHelpers
 end
 
 # Unexpected system exit is unexpected
