@@ -2,7 +2,6 @@
 
 require 'uri'
 
-require_relative 'weblog'
 require_relative 'link_to'
 require_relative 'dates'
 
@@ -12,7 +11,6 @@ module LifePreserver
     module AtomFeed
       include Dates
       include LinkTo
-      include Weblog
 
       class AtomFeedBuilder
         include AtomFeed
@@ -215,7 +213,7 @@ module LifePreserver
         # Fill builder
         builder.id                = params[:id]
         builder.limit             = params.fetch(:limit, 5)
-        builder.relevant_entries  = params.fetch(:entries, weblog)
+        builder.relevant_entries  = params.fetch(:entries, [])
         builder.preserve_order    = params.fetch(:preserve_order, false)
         builder.content_proc      = params.fetch(:content_proc, ->(a) { a.compiled_content(snapshot: :pre) })
         builder.excerpt_proc      = params.fetch(:excerpt_proc, ->(a) { a[:excerpt] })
