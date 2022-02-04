@@ -24,7 +24,6 @@ module LifePreserver
 end
 
 # Project helpers to include in a global context
-use_helper LifePreserver::Helpers::Blogging
 use_helper LifePreserver::Helpers::Weblog
 use_helper LifePreserver::Helpers::Dates
 use_helper LifePreserver::Helpers::Company

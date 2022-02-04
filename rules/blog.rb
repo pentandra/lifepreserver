@@ -53,6 +53,35 @@ compile '/static/posts/**/*.md' do
   write item.identifier.without_ext.sub('/posts', '') + '.html'
 end
 
+compile '/static/posts/**/*.erb' do
+  filter :erb, @config[:erb]
+  filter :absolutify_paths, type: :html
+  filter :spellchecker, type: :html
+  filter :abbreviate, type: :html
+  filter :old_style_figures, type: :html
+  snapshot :pre_robust_anchors
+  filter :robust_anchors
+  layout "/blog/#{@item[:kind]}.*"
+  filter :rubypantsunicode
+  filter :cache_buster if @config[:production]
+  filter :html5small if @config[:production]
+  write item.identifier.without_ext.sub('/posts', '') + '.html'
+end
+
+compile '/static/posts/**/*.html' do
+  filter :absolutify_paths, type: :html
+  filter :spellchecker, type: :html
+  filter :abbreviate, type: :html
+  filter :old_style_figures, type: :html
+  snapshot :pre_robust_anchors
+  filter :robust_anchors
+  layout "/blog/#{@item[:kind]}.*"
+  filter :rubypantsunicode
+  filter :cache_buster if @config[:production]
+  filter :html5small if @config[:production]
+  write item.identifier.without_ext.sub('/posts', '') + '.html'
+end
+
 compile '/static/posts/**/*.md', rep: :feed_entry do
   filter :erb, @config[:erb]
   filter :pandoc, args: [
@@ -60,6 +89,17 @@ compile '/static/posts/**/*.md', rep: :feed_entry do
     { base_header_level: 2 },
     :section_divs,
   ]
+  filter :absolutify_paths, type: :html, absolute: true
+  filter :rubypantsunicode
+end
+
+compile '/static/posts/**/*.erb', rep: :feed_entry do
+  filter :erb, @config[:erb]
+  filter :absolutify_paths, type: :html, absolute: true
+  filter :rubypantsunicode
+end
+
+compile '/static/posts/**/*.html', rep: :feed_entry do
   filter :absolutify_paths, type: :html, absolute: true
   filter :rubypantsunicode
 end

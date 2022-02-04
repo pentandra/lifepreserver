@@ -1,4 +1,4 @@
-<% author = person_by_name(@item[:author_name]) %>
+<% author = find_person(@item[:author_name]) %>
 <% kind = @item.fetch(:kind) %>
 <div class="section banner citations">
   <h3 class="big">Citations</h3>

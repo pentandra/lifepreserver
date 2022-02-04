@@ -35,8 +35,10 @@ module LifePreserver
       def tag_to_item(tag)
         dup_tag = tag.dup
         tag_name = dup_tag.delete(:tag)
+        abstract = dup_tag.delete(:abstract)
         attributes = {
-          name: tag_name,
+          title: tag_name,
+          description: abstract,
           kind: 'tag',
           is_hidden: true,
 
@@ -49,7 +51,7 @@ module LifePreserver
           '-',
           attributes.merge(dup_tag),
           File.join(File::SEPARATOR, tag_name.parameterize),
-          checksum_data: "tag=#{tag_name},uri=#{tag[:uri]},abstract=#{tag[:abstract]}",
+          checksum_data: "tag=#{tag_name},uri=#{tag[:uri]},abstract=#{abstract}",
         )
       end
     end

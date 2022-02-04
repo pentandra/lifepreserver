@@ -1,14 +1,14 @@
 <ul>
   <% dependencies_for(group).each do |dependency| %>
     <li property="deps:build-requirement" typeof="deps:Dependency">
-      <span property="deps:on" datatype="deps:GemId" content="<%= "#{h dependency[:name]} #{h dependency[:version]}" %>">
+      <span property="deps:on" datatype="deps:GemId" content="<%= "#{h dependency[:title]} #{h dependency[:version]}" %>">
         <% if dependency[:homepage] %>
-          <a rel="doap:homepage" href="<%= h dependency[:homepage] %>" property="doap:name"><code class="projectname"><%= h dependency[:name] %></code></a>
+          <a rel="doap:homepage" href="<%= h dependency[:homepage] %>" property="doap:name"><code class="projectname"><%= h dependency[:title] %></code></a>
         <% else %>
-          <code class="projectname" property="doap:name"><%= h dependency[:name] %></code>
+          <code class="projectname" property="doap:name"><%= h dependency[:title] %></code>
         <% end %>
         <span class="oldstyle">(<%= h dependency[:version] %>)</span></span>:
-      <span class="foreign" property="doap:shortdesc"><%= h dependency[:summary] %></span>
+      <span class="foreign" property="doap:shortdesc"><%= h dependency[:description] %></span>
     </li>
   <% end %>
 </ul>

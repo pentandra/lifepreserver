@@ -1,11 +1,13 @@
 # frozen_string_literal: true
 
 require_relative 'company'
+require_relative 'link_to'
 
 module LifePreserver
   module Helpers
     module People
       include Company
+      include LinkTo
 
       # Grab all the people, including company members.
       def people
@@ -17,8 +19,23 @@ module LifePreserver
         people.sort_by { |person| [person[:sn], person[:givenname]] }
       end
 
-      def person_by_name(name)
-        people.find { |person| person.fetch(:name) == name }
+      # Find the item representing the given person.
+      #
+      # @param person [String, Nanoc::Core::BasicItemView] The person name or item.
+      # @return [Nanoc::Core::BasicItemView] The person item.
+      def find_person(person)
+        case person
+        when String
+          people.find { |p| p.fetch(:name) == person }
+        when Nanoc::Core::BasicItemView
+          unless ['person', 'member'].any?(person[:kind])
+            raise ArgumentError "Expecting an item of “person” or “member” kind, not kind “#{person[:kind]}”"
+          end
+
+          person
+        else
+          raise ArgumentError "Expecting a String or Nanoc item, not a #{person.class.name}"
+        end
       end
 
       # Return the path to the profile page of the given person.
@@ -29,7 +46,7 @@ module LifePreserver
       # +:web_id+ attribute. If they have an external WebID, returns the part
       # before the hash (`#`).
       #
-      # @note According to the draft WebID spec (see
+      # @note According to the latest draft WebID spec (see
       #   https://www.w3.org/2005/Incubator/webid/spec/identity/), for "WebIDs
       #   with fragment identifiers (e.g. #me), the URI without the fragment
       #   denotes the Profile Document" and is silent as to whether it should

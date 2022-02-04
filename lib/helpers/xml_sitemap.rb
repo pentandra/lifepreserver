@@ -6,10 +6,11 @@ require_relative 'dates'
 module LifePreserver
   module Helpers
     # Adapted from Nanoc's sitemap helper.
+    #
     # @see http://nanoc.ws/doc/reference/helpers/#xmlsitemap
     module XMLSitemap
-      include LifePreserver::Helpers::LinkTo
-      include LifePreserver::Helpers::Dates
+      include LinkTo
+      include Dates
 
       # @option params [Array] :items
       # @option params [Proc] :rep_select

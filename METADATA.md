@@ -19,11 +19,15 @@ The item title.
 
 ### `full_title`
 
+OPTIONAL_FOR_KINDS: all
+
 Overrides the [`title`](#title) attribute on the [base HTML
 layout](layouts/base.erb) as the full value of the default HTML `title`
 element.
 
 ### `short_title`
+
+OPTIONAL_FOR_KINDS: all
 
 Overrides the [`title`](#title) attribute in certain layouts when a shorter
 title is needed, e.g. the search page.
@@ -42,6 +46,46 @@ OPTIONAL_FOR_KINDS: all
 
 Overrides [`description`](#description) when something more specific or
 descriptive needs to said on the HTML `meta[@name="description"]` element.
+
+### `kind`
+
+REQUIRED_FOR_KINDS: all
+
+The kind of item. Currently we have the following kinds:
+
+* `abstract`: a short proposal.
+* `acronym-dictionary`: a key-value lookup dictionary of acronyms.
+* `archive-page`
+* `article`: a formal, scholarly document that reports on some research undertaken.
+* `base-dictionary`: a regular Hunspell dictionary.
+* `benefit-report`: an annual corporate benefit report.
+* `blogpost`: an informal or more personal, potentially less polished or structured, document.
+* `concept`: an abstract item (with a URI) denoting a concept.
+* [`dependency`][dependency terms]: an application dependency.
+* `essay`: a more structured, polished formal document.
+* `event`: a business event that occurs at a specific place and time.
+* `extra-dictionary`: a custom dictionary that extends a Hunspell base dictionary.
+* `feed`: an Atom feed.
+* [`member`][org terms]: a member of the company (Pentandra).
+* `note`: a short statement, like a tweet.
+* [`organization`][org terms]: an organization.
+* [`person`][org terms]: A person that's not a member of the company.
+* `presentation`
+* `project`
+* `proposal`: a formal proposal from the company.
+* `redirect`: a permanent (301) redirect.
+* `specification`
+* [`tag`][tag terms]: a controlled concept used to group like items.
+* [`vocabulary`][vocabulary terms]: an item that represents an RDF ontology.
+
+For syndicated items, the item's [`kind`](#kind) determines the item's layout.
+For example, an item with a kind of 'note' will be laid out using the
+'layouts/blog/note.erb' template. This approach provides some flexibility in
+the presentation of different kinds of syndicated content, but comes with the
+requirement (for now) that when adding a new kind of syndicated content, a new
+layout must be created alongside.
+
+See [`published_at`](#published_at) for more information about syndicated kinds.
 
 ### `priority`
 
@@ -105,6 +149,10 @@ The language of the document, formatted according to [BCP47]. Defaults to the
 author's [`preferredlanguage`](#preferredlanguage) (if there is one) and then
 to the `Locale.default` if not specified.
 
+Use an array of multiple languages if the document is intended for multiple
+audiences (see §14.12 in [RFC2616] for information about the `Content-Language`
+HTTP header).
+
 ### `mtime`
 
 REQUIRED_FOR_KINDS: `{base,extra,acronym,personal}-dictionary` and all items from Nanoc's filesystem data source.
@@ -138,22 +186,29 @@ The most recent date or time that the item had a meaningful edit.
 
 REQUIRED_FOR_KINDS: `article`, `benefit-report`, `blogpost`, `essay`, `note`, `presentation`
 
-The date or time the item was published. Syndicated items are built in this
-system whether they are published or not, to allow for private sharing before
-publication. Publishing a item does not change the URL of the output, but it
-does do the following:
+The date or time the syndicated item was published.
+
+In the editorial sense, to <dfn id="def-syndicate">syndicate</dfn> means to
+"publish or broadcast (material) simultaneously in a number of newspapers,
+television stations, etc." (Oxford Languages). Since the scope of this project
+does not extend beyond this site, for our own purposes, syndicated means only
+that it _publicates_ the item, even though its Atom feeds could be syndicated
+through other means. In truth it means that the item _could be_ syndicated.
+
+In this system, the so called "syndicated items" are built whether they are
+published or not, to allow for private sharing before publication. Publishing a
+item does not change the URL of the output, but it does do the following:
 
 1. Adds the item to the blog index
 2. Adds the item to the index of recent thoughts
-3. Adds the item to respective Atom syndication feeds
+3. Adds the item to relevant Atom syndication feeds
 4. Includes words from the item in the search index
 5. Adds the items to the sitemap
 6. Generates short links for sharing the item
 
-In other words, it _publicates_ the item. After publishing, the item's public
-path (and Atom tag identifier) SHOULD NOT change. If the situation requires
-that the URL change, a `redirect` item SHALL be added at the original location
-to apply an appropriate HTTP redirection.
+After publishing, the item's public path (and Atom tag identifier) SHOULD NOT
+change. If the situation requires that the URL change, a `redirect` item SHALL
+be added at the original location to apply an appropriate HTTP redirection.
 
 ### `submitted_at`
 
@@ -212,38 +267,6 @@ OPTIONAL_FOR_KINDS: `feed`
 Allows the feed URL (the `link[@rel=self]` value of the feed) to be set to some
 other URL, such as an external distribution endpoint. If not set, it defaults
 to the path of the feed item.
-
-### `kind`
-
-REQUIRED_FOR_KINDS: all
-
-The kind of item. Currently we have the following kinds:
-
-* `abstract`: a short proposal.
-* `acronym-dictionary`: a key-value lookup dictionary of acronyms.
-* `archive-page`
-* `article`: a formal, scholarly document that can have multiple authors
-* `base-dictionary`: a regular Hunspell dictionary.
-* `benefit-report`: an annual corporate benefit report.
-* `blogpost`: an informal document with one author
-* `concept`: an abstract item (with a URI) denoting a concept.
-* `dependency`: an application dependency.
-* `essay`: a semiformal document with one author, higher quality
-* `event`: a business event that occurs at a specific place and time.
-* `extra-dictionary`: a custom dictionary that extends a Hunspell base dictionary.
-* `feed`: an Atom feed.
-* `member`: a member of the company (Pentandra).
-* `note`: a short statement by one author, like a tweet
-* `organization`: an organization.
-* `person`: A person that's not a member of the company.
-* `personal-profile-page`: a foaf [personal profile document][foaf:profile].
-* `presentation`
-* `project`
-* `proposal`: a formal proposal from the company.
-* `redirect`: a permanent (301) redirect.
-* `specification`
-* `tag`: a controlled concept used to group like items.
-* `vocabulary`: an item that represents an RDF ontology.
 
 ### `license`
 
@@ -341,7 +364,7 @@ semantics may be expressed for this context.
 
 ### `name`
 
-REQUIRED_FOR_KINDS: `person`, `member`, `organization`, `tag`
+REQUIRED_FOR_KINDS: `person`, `member`, `organization`
 
 The name that is most commonly used to refer to a person or organization.
 Constructed in the [Company][Company data source] or [People][People data source]
@@ -349,8 +372,6 @@ data sources from the LDAP [`displayName` attribute](#displayname) or
 [`cn` attribute](#cn), or by the [`o` attribute](#o) for organizations or the
 joining of the [`givenname` attribute](#givenname) and [`sn` attribute](#sn)
 for persons.
-
-For tag items, the display name of the tag.
 
 ### `cn`
 
@@ -466,17 +487,20 @@ Specifies personal titles for a person, e.g. "Frau", "Dr.", "Herr",
 
 RECOMMENDED_FOR_KINDS: `member`
 
-A list of public keys extracted from user certificates. Constructed as an array
-containing `Hash` objects with the following keys, each representing an x509
-public key.
-
-This array could be empty if the member has no valid user certificates.
+Data about the public key extracted from each of the member's user
+certificates. Constructed as an array of `Hash` objects with the following
+keys, each `Hash` representing an RSA public key.
 
 #### `id`
 
 The URI subject alternative name definitively bound to the public key. The `id`
 of the first element of the [`pkey`](#pkey) is used as the value of the user's
 [`web_id`](#web_id) attribute.
+
+#### `valid_since`
+
+The point in time that marks the start of validity of the primary key. Often
+the time the [public key](#pkey) was created.
 
 #### `modulus`
 
@@ -588,7 +612,7 @@ and the house number.
 
 OPTIONAL_FOR_KINDS: `person`, `member`, `organization`
 
-The telephone number associated wih a person or organization. Format SHOULD
+The telephone number associated with a person or organization. Format SHOULD
 comply with ITU Recommendation [E.123] or [E.164].
 
 ### `title`
@@ -604,17 +628,73 @@ REQUIRED_FOR_KINDS: `person`, `member`
 The [WebID] of the person, or local Web identifier if a global Web identifier
 is not known. For members with user certificates, the value is from the subject
 alternative name [URI value](#id) of [the member's x509 certificate](#pkey).
-For other people, the attribute is managed directly in the
+For members without any user certificates, a default WebID is created by
+combining the URI of the member's profile page with the fragment identifier
+`#me`. For other people, the attribute is managed directly in the
 [people.yaml](etc/people.yaml) file.
 
-### [`hashtag`]
+## Relating to tag items
 
-The fragment identifier to use to identify the person denoted by the WebID. By
-default uses the identifier `me`.
+### `label`
+
+OPTIONAL_FOR_KINDS: `tag`
+
+A human-readable name that identifies this tag concept. Not to be confused with
+[`name`](#name), which provides a site-specific name for the tag. See
+[`rdfs:label`](https://www.w3.org/TR/rdf-schema/#ch_label).
+
+### `primaryTopicOf`
+
+OPTIONAL_FOR_KINDS: `tag`
+
+MUST be a valid URI that denotes a document of which this tag concept is the
+primary topic. See
+[`foaf:isPrimaryTopicOf`](http://xmlns.com/foaf/spec/#term_isPrimaryTopicOf).
+
+### `type`
+
+OPTIONAL_FOR_KINDS: `tag`
+
+MUST be a valid URI that represents the class that this tag is an instance of.
+See [`rdf:type`](https://www.w3.org/TR/rdf-schema/#ch_type).
+
+## Relating to dependency items
+
+Software libraries upon which this project is dependent.
+
+### `homepage`
+
+RECOMMENDED_FOR_KINDS: `dependency`
+
+The Web home for the dependent software project.
+
+### `version`
+
+REQUIRED_FOR_KINDS: `dependency`
+
+The version of the dependent software project currently in use.
+
+### `group`
+
+REQUIRED_FOR_KINDS: `dependency`
+
+For a Ruby dependency, a dependency group as defined in [Gemfile](Gemfile). See
+[How to manage groups of gems][Gem groups].
+
+## Relating to vocabulary items
+
+### `prefix`
+
+The prefix to use with this vocabulary.
+
+### `category`
+
+### `namespace_uri`
+
+### `vocab_uri`
 
 [BCP47]: https://tools.ietf.org/html/bcp47
 [WebID]: https://www.w3.org/2005/Incubator/webid/spec/identity/
-[foaf:profile]: http://xmlns.com/foaf/spec/#term_PersonalProfileDocument
 [sitemap]: https://www.sitemaps.org/protocol.html
 [ldap rfcs]: https://ldap.com/ldap-related-rfcs/
 [ORCID iD]: https://orcid.org/
@@ -633,3 +713,8 @@ default uses the identifier `me`.
 [W3C Datetime]: https://www.w3.org/TR/NOTE-datetime
 [CC-BY]: http://creativecommons.org/licenses/by/4.0/
 [dictionaries]: lib/data_sources/dictionaries.rb
+[org terms]: #relating-to-person-member-and-organization-items
+[tag terms]: #relating-to-tag-items
+[dependency terms]: #relating-to-dependency-items
+[vocabulary terms]: #relating-to-vocabulary-items
+[Gem groups]: https://bundler.io/guides/groups.html

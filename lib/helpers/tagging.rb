@@ -25,7 +25,7 @@ module LifePreserver
         res = Set.new
 
         tags.each do |tag|
-          res << tag._unwrap.attributes[:name] if items_with_tag(tag, items).any?
+          res << tag._unwrap.attributes[:title] if items_with_tag(tag, items).any?
         end
 
         res.to_a.freeze
@@ -39,7 +39,7 @@ module LifePreserver
       # @return [Array<Nanoc::Core::BasicItemView>] All tag items, in
       #   tag-alphabetical order.
       def sorted_tags
-        tags.sort_by { |t| t._unwrap.attributes[:name] }
+        tags.sort_by { |t| t._unwrap.attributes[:title] }
       end
 
       # Return true if an item has the specified tag.
@@ -49,7 +49,7 @@ module LifePreserver
       #
       # @return [Boolean] True if item is tagged such, otherwise false.
       def tag?(item, tag)
-        Array(item._unwrap.attributes[:tags]).include?(tag.is_a?(String) ? tag : tag[:name])
+        Array(item._unwrap.attributes[:tags]).include?(tag.is_a?(String) ? tag : tag[:title])
       end
 
       # Find all items with the given tag.
@@ -72,7 +72,11 @@ module LifePreserver
       # @param tag [Nanoc::Core::BasicItemView, String] The tag or tag item.
       #
       # @param rel_tag [Boolean] Whether or not to include the HTML +rel+
-      #   attribute with the value of "tag" with the link.
+      #   attribute with the value of "tag" with the link. To conform with the HTML5
+      #   rel="tag" specification, the rel   attribute should apply only to the current
+      #   document. A tag cloud, by definition, does not apply to the current document
+      #   only, but is a summary of many documents' tags.
+      #   (see {http://microformats.org/wiki/rel-tag})
       #
       # @param absolute [Boolean] Whether or not to use an absolute path to the
       #   tag page.
@@ -89,25 +93,10 @@ module LifePreserver
         end
 
         if rel_tag && tag[:uri]
-          %(<a href="#{path_to(tag, absolute: absolute)}" rel="tag ctag:tagged" resource="##{h tag[:name].parameterize(separator: '_')}_tag" typeof="ctag:AuthorTag"><link property="ctag:means" resource="#{RDF::URI.new(tag[:uri]).pname}" typeof="#{RDF::URI.new(tag.fetch(:type, RDF::OWL.Thing)).pname}" /><span property="ctag:label">#{h tag[:name]}</span></a>)
+          %(<a href="#{path_to(tag, absolute: absolute)}" rel="tag ctag:tagged" resource="##{h tag[:title].parameterize(separator: '_')}_tag" typeof="ctag:AuthorTag"><link property="ctag:means" resource="#{RDF::URI.new(tag[:uri]).pname}" typeof="#{RDF::URI.new(tag.fetch(:type, RDF::OWL.Thing)).pname}" /><span property="ctag:label">#{h tag[:title]}</span></a>)
         else
-          %(<a href="#{path_to(tag, absolute: absolute)}"#{' rel="tag"' if rel_tag}>#{h tag[:name]}</a>)
+          %(<a href="#{path_to(tag, absolute: absolute)}"#{' rel="tag"' if rel_tag}>#{h tag[:title]}</a>)
         end
-      end
-
-      # Same as {#link_for_tag}, without the `@rel` attribute.
-      #
-      # @note To conform with the HTML5 rel="tag" specification, the rel
-      #   attribute should apply only to the current document. A tag cloud, by
-      #   definition, does not apply to the current document only, but is a
-      #   summary of many documents' tags.
-      #
-      # @param absolute [Boolean] Whether or not to use an absolute path to the
-      #   tag page.
-      #
-      # See http://microformats.org/wiki/rel-tag
-      def link_for_tagcloud(tag, absolute: false)
-        link_for_tag(tag, rel_tag: false, absolute: absolute)
       end
     end
   end

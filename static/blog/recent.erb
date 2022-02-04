@@ -7,7 +7,7 @@ is_hidden: true
 
   <h1>Recent Thoughts</h1>
 
-  <% published_weblog[0, 10].each do |post| %>
+  <% sorted_weblog[0, 10].each do |post| %>
     <%= render('/blog/partials/excerpt.*', item: post) %>
   <% end %>
 

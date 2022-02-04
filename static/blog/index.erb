@@ -10,8 +10,8 @@ is_hidden: true
 
   <div property="schema:hasPart" resource="pentandra-blog:posts" typeof="schema:ItemList">
     <link property="schema:itemListOrder" resource="schema:itemListOrderDescending" />
-    <meta property="schema:numberOfItems" content="<%= h published_weblog.length %>" datatype="schema:Integer" />
-    <% published_weblog.each_with_index do |post, index| %>
+    <meta property="schema:numberOfItems" content="<%= h sorted_weblog.length %>" datatype="schema:Integer" />
+    <% sorted_weblog.each_with_index do |post, index| %>
       <%= render('/blog/partials/summary.*', item: post, position: index + 1) %>
     <% end %>
   </div>

@@ -1,9 +1,9 @@
 <% render('/blog/default.*') do %>
   <div class="group">
 
-    <h1 property="schema:name"><%= "#{h @item[:name]}" %> Articles</h1>
+    <h1 property="schema:name"><%= "#{h @item[:title]}" %> Articles</h1>
 
-    <% if @item[:abstract] %>
+    <% if @item[:description] %>
     <div class="bd">
       <p class="big">
 
@@ -12,8 +12,8 @@
       </p>
       <% filter(:old_style_figures, type: :html) do %>
         <% filter(:abbreviate, type: :html) do %>
-          <figure id="<%= @item[:name].parameterize %>" class="bq rev" resource="#<%= @item[:name].parameterize %>" typeof="schema:CreativeWork">
-            <blockquote property="schema:text" cite="<%= @item[:uri] %>"><%=h parse_abstract(@item[:abstract]) %></blockquote>
+          <figure id="<%= @item[:title].parameterize %>" class="bq rev" resource="#<%= @item[:title].parameterize %>" typeof="schema:CreativeWork">
+            <blockquote property="schema:text" cite="<%= @item[:uri] %>"><%=h parse_abstract(@item[:description]) %></blockquote>
             <figcaption>--- <a property="dc:title" rel="cc:attributionURL prov:wasDerivedFrom" href="<%= @item[:primaryTopicOf] %>"><cite><%=h @item[:label] %></cite> on <b property="cc:attributionName">Wikipedia</b></a>, licensed under a <a property="cc:license" href="http://creativecommons.org/licenses/by-sa/3.0/"><abbr title="Creative Commons Attribution-ShareAlike 3.0 Unported" >CC-BY-SA</abbr> license</a>. <span class="small"><span class="icon-cc"></span><span class="icon-cc-by"></span><span class="icon-cc-sa"></span></span></figcaption>
           </figure>
         <% end %>
@@ -22,8 +22,8 @@
     <% end %>
   </div>
 
-  <% tagged_items = items_with_tag(@item, published_weblog) %>
-  <div property="schema:hasPart" resource="pentandra-website:items-tagged-<%= @item[:name].parameterize %>" typeof="schema:ItemList">
+  <% tagged_items = items_with_tag(@item, sorted_weblog) %>
+  <div property="schema:hasPart" resource="pentandra-website:items-tagged-<%= @item[:title].parameterize %>" typeof="schema:ItemList">
     <link property="schema:itemListOrder" resource="schema:itemListOrderDescending" />
     <meta property="schema:numberOfItems" content="<%= tagged_items.length %>" datatype="schema:Integer" />
     <% tagged_items.each_with_index do |tagged, index| %>

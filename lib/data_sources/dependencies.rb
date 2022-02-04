@@ -28,8 +28,8 @@ module LifePreserver
           '-',
           {
             kind: 'dependency',
-            name: gem.name,
-            summary: gem.summary,
+            title: gem.name,
+            description: gem.summary,
             homepage: gem.homepage,
             version: gem.version.to_s,
             group: group_name,

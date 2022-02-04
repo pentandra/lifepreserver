@@ -3,7 +3,7 @@
   <div class="bd">
     <link property="schema:itemListOrder" resource="schema:itemListOrderDescending" />
     <meta property="schema:numberOfItems" content="<%= @limit %>" datatype="schema:Integer" />
-    <% published_blog_posts.first(@limit).each_with_index do |post, index| %>
+    <% sorted_weblog(:article, :blogpost, :essay).first(@limit).each_with_index do |post, index| %>
       <div property="schema:itemListElement" typeof="schema:ListItem">
         <meta property="schema:position" content="<%= "#{index + 1}" %>" />
         <article class="excerpt" property="schema:item" resource="<%= path_to(post) %>#blogpost" typeof="schema:BlogPosting">

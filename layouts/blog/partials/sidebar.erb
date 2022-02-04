@@ -5,7 +5,7 @@
     <%= @item[:description] %>
   </p>
 
-  <% author = person_by_name(@item[:author_name]) %>
+  <% author = find_person(@item[:author_name]) %>
   <section class="section banner" resource="<%= author.fetch(:web_id) %>" typeof="dc:Agent schema:Person foaf:Person" property="dc:creator schema:author foaf:maker">
     <h3 class="big">The Author</h3>
     <figure id="author">

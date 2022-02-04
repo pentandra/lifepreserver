@@ -45,7 +45,7 @@ module LifePreserver
         kind = dictionary_peek(expanded_dic_path)
 
         attributes = {
-          name: File.basename(dic_path, '.*'),
+          title: File.basename(dic_path, '.*'),
           kind: kind,
           lang: parent_name,
           mtime: File.mtime(expanded_dic_path),

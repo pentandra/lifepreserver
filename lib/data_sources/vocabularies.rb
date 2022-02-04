@@ -12,13 +12,13 @@ module LifePreserver
 
       class UnknownVocabulary < ::Nanoc::Core::TrivialError
         def initialize(uri)
-          super("A vocabulary with the uri “#{uri}” (specified in the site's configuration file) was not found.")
+          super("A vocabulary with the uri “#{uri}” (specified in the data source configuration) was not found.")
         end
       end
 
       class UnknownVocabularyPrefix < ::Nanoc::Core::TrivialError
         def initialize(prefix)
-          super("A vocabulary with the prefix “#{prefix}” (specified in the site's configuration file) was not found.")
+          super("A vocabulary with the prefix “#{prefix}” (specified in the data source configuration) was not found.")
         end
       end
 

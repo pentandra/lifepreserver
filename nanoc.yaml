@@ -99,6 +99,7 @@ dictionaries_root: *dictionaries_root
 images_root: /assets/images
 orgs_root: *organizations_root
 people_root: *people_root
+posts_root: /posts
 static_root: *static_root
 tags_root: *tags_root
 vocabularies_root: *vocabularies_root

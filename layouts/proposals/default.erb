@@ -36,7 +36,7 @@
         <% if @item.key?(:submitted_by) %>
           <dl id="document-submitted-by" class="group">
             <dt class="aside"><div class="close">Submitted by</div></dt>
-            <% @item.fetch(:submitted_by).map { |n| person_by_name(n) }.each do |submitter| %>
+            <% @item.fetch(:submitted_by).map { |n| find_person(n) }.each do |submitter| %>
               <dd class="bd"><a href="<%= submitter.fetch(:web_id) %>" property="schema:organizer" typeof="schema:Person"><span class="schema:name"><%= submitter[:name] %></span></a></dd>
             <% end %>
           </dl>
