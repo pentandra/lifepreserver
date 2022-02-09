@@ -6,11 +6,12 @@ output.diff
 crash.log
 *.autosave
 *.bak
-static/assets/components/
+static/assets/components
+node_modules
 tmp/
 .bundle
 *.gem
 coverage
-.yardoc
+.yardoc/
 doc/
 var/company.ldif

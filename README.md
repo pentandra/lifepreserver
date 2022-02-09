@@ -33,8 +33,8 @@ in scope before compiling:
 * [hunspell] _(>= 1.3.4)_ for spell-checking
 * [git] for version tagging and history management
 * A JavaScript runtime, such as [node] (or any runtime that [ExecJS] supports),
-  for [UglifyJS] and [bower]. _(note: currently you need to install `bower`
-    manually, e.g. `npm install bower -g`)_
+  for [UglifyJS] and [yarn]. _(note: for versions of Node < 16.9, you currently
+  need to install `corepack` manually, e.g. `npm install corepack -g`)_
 
 #### Optional dependencies
 
@@ -43,7 +43,7 @@ in scope before compiling:
 * A Java 8 runtime for running the [Nu HTML] checker.
 * [OpenResty] for running the dynamic parts of the site via `nanoc server`.
 
-### Then clone this repo (including submodules), install bower components and Ruby gems…
+### Then clone this repo (including submodules), install yarn components and Ruby gems…
 
 As follows:
 
@@ -52,7 +52,7 @@ $ git clone https://github.com/pentandra/lifepreserver.git
 $ cd lifepreserver
 $ git submodule init
 $ git submodule update
-$ bower install
+$ yarn install
 $ bundle install --with development
 ```
 
@@ -161,7 +161,7 @@ Also, please see [the colophon][colophon] for more raving attributions!
 [GitFlow]: <http://nvie.com/posts/a-successful-git-branching-model/>
 [Nu HTML]: <https://validator.github.io/validator/>
 [UglifyJS]: <https://github.com/mishoo/UglifyJS2>
-[bower]: <https://bower.io/>
+[yarn]: <https://classic.yarnpkg.com/>
 [ExecJS]: <https://github.com/sstephenson/execjs>
 [node]: <https://nodejs.org/en/>
 [apostrophe fix]: <https://github.com/en-wl/wordlist/issues/122>
